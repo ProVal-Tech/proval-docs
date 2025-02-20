@@ -1,7 +1,7 @@
 ---
 id: '99c03451-d553-4cba-be15-fd19d1a922f4'
-title: 'HyperV - Snapshot Age  3 Days'
-title_meta: 'HyperV - Snapshot Age  3 Days'
+title: 'HyperV - Snapshot Age > 3 Days'
+title_meta: 'HyperV - Snapshot Age > 3 Days'
 keywords: ['hyper-v', 'snapshot', 'alert', 'monitor', 'virtualization']
 description: 'This document outlines the implementation of a remote monitor that alerts on Hyper-V host snapshots that are 3 days old or older. It provides detailed instructions for alert configuration, ticketing, and monitoring to ensure efficient management of VM snapshots.'
 tags: ['alerting', 'hyper-v', 'ticketing', 'virtualization']
@@ -52,7 +52,4 @@ CreationTime: 7/16/2024 2:02 PM
 
 ## Implementation
 
-[Implementation Guide](https://proval.itglue.com/5078775/docs/15601843)
-
-
-
+[Import - Remote Monitor - HyperV - Snapshot Age > 3 Days](./Import%20-%20Remote%20Monitor%20-%20HyperV%20-%20Snapshot%20Age%203%20Days)

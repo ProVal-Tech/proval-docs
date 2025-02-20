@@ -1,7 +1,7 @@
 ---
 id: '62b34638-cf57-4261-8245-20689ac52ce6'
-title: 'EPM - Disk - Monitor - Drive Errors and Raid Failures'
-title_meta: 'EPM - Disk - Monitor - Drive Errors and Raid Failures'
+title: 'Drive Errors and Raid Failures'
+title_meta: 'Drive Errors and Raid Failures'
 keywords: ['monitoring', 'raid', 'errors', 'windows', 'event', 'logs']
 description: 'This document provides a comprehensive overview of a monitor designed to proactively detect drive errors and RAID failure events in managed Windows computers. It details its functionality, limitations, and customization options for alerting based on specific error types.'
 tags: ['raid', 'windows']

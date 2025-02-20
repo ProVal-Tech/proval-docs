@@ -16,7 +16,7 @@ Obtain the group ID(s) of the group(s) that the remote monitor should be applied
 Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-```
+```sql
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
  `groupid` as `GroupID`,
@@ -29,7 +29,7 @@ INSERT INTO groupagents
  '900' as `interval`,
  '127.0.0.1' as `Where`,
  '7' as `What`,
- 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output /\"`nEventid 1102 detected in the last 15 Minutes:`n/\"; $op}"' as `DataOut`,
+  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output \\"`nEventid 1102 detected in the last 15 Minutes:`n\\"; $op}"' as `DataOut`,
  '16' as `Comparor`,
  '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
  '' as `IDField`,
@@ -39,43 +39,7 @@ INSERT INTO groupagents
  '21' as `Category`,
  '0' as `TicketCategory`,
  '1' as `ScriptTarget`,
- CONCAT(
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+ UUID() as `GUID`,
  'root' as `UpdatedBy`,
  (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -86,7 +50,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 3
 An example of a query with group IDs:
 
-```
+```sql
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
  `groupid` as `GroupID`,
@@ -99,7 +63,7 @@ INSERT INTO groupagents
  '900' as `interval`,
  '127.0.0.1' as `Where`,
  '7' as `What`,
- 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output /\"`nEventid 1102 detected in the last 15 Minutes:`n/\"; $op}"' as `DataOut`,
+ 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$op = @(); $op = ((Get-Eventlog security -erroraction silentlycontinue -After (Get-Date).AddMinutes(-15) -InstanceId 1102 | select-object timewritten,message)|foreach-object{$_.timewritten;($_.message -split \'Additional Information:\'|select -first 1)-split \'Account Name:\'|select-object -last 1}); if ($op) { write-output \\"`nEventid 1102 detected in the last 15 Minutes:`n\\"; $op}"' as `DataOut`,
  '16' as `Comparor`,
  '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Eventid 1102 detected in the last 15 Minutes:' as `DataIn`,
  '' as `IDField`,
@@ -109,43 +73,7 @@ INSERT INTO groupagents
  '21' as `Category`,
  '0' as `TicketCategory`,
  '1' as `ScriptTarget`,
- CONCAT(
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- '-',
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
- SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+ UUID() as `GUID`,
  'root' as `UpdatedBy`,
  (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -164,5 +92,3 @@ Limit the remote monitor to a search, if necessary.
 
 ## Step 7
 Apply the appropriate alert template to the remote monitors.
-
-

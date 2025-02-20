@@ -1,33 +1,46 @@
 ---
-id: '95cbe6d6-162e-47e6-a8c9-33cacc0c73e3'
+id: '3a441306-efbc-48a5-8732-06bfd56c9a5f'
 title: 'Volume Space Sampling'
 title_meta: 'Volume Space Sampling'
-keywords: ['monitor', 'volume', 'free', 'space', 'threshold']
-description: 'This document describes the Volume Free Space Monitor, which is dynamically generated from the Volume Free Space - Monitor Creation script. It is designed to gather data points for optional regression-based threshold generation, running at an interval of one hour on Windows machines.'
-tags: ['performance', 'windows']
+keywords: ['monitor', 'disk', 'volume', 'exhaustion', 'estimation']
+description: 'This document details the Predictive Volume Exhaustion Monitor Creation script, which generates a monitor set to assess the remaining days before drive space is fully occupied. It utilizes the Get-VolumeExhaustionEstimate script to gather trend data and provide accurate estimations based on system properties.'
+tags: ['alerting', 'disk', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This monitor is dynamically generated from the script [Volume Free Space - Monitor Creation](https://proval.itglue.com/DOC-5078775). It is used to gather data points for the optional regression-based threshold generation. The monitors are generated to have an interval of one hour.
+The [Predictive Volume Exhaustion Monitor Creation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>) script generates the monitor set. It utilizes the [Get-VolumeExhaustionEstimate](<../../powershell/Get-VolumeExhaustionEstimate.md>) agnostic script to assess and return an estimation of the number of days remaining before the drive space is entirely occupied, utilizing the trend data/samples gathered. The parameters for the script are configured according to the system properties detailed in the [script's documentation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>).
 
-## Details
-
-**Suggested "Limit to"**: N/A  
-**Suggested Alert Style**: N/A  
-**Suggested Alert Template**: Default - Do Nothing  
-
-This monitor has no properties and will only run the script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) to generate data points.
+The data returned by the monitor set is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](<../dataviews/Volume Exhaustion Estimations Remote Monitor.md>) dataview.
 
 ## Dependencies
 
-N/A
+- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>)
+- [EPM - Disk - Dataview - Volume Exhaustion Estimations [Remote Monitor]](<../dataviews/Volume Exhaustion Estimations Remote Monitor.md>)
 
-## Target
+## Monitor
 
-Windows Machines - Should be run on all Windows machines
+#### Status
 
+![Status](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_1.png)
 
+#### Location
 
+![Location](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_2.png)
+
+#### Alerting
+
+![Alerting](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_3.png)
+
+#### Configuration
+
+![Configuration](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_4.png)
+
+**Executable/Arguments:** 
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$WarningPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-VolumeExhaustionEstimate'; $WorkingDirectory = \"C:\ProgramData\_Automation\Script\$ProjectName\"; $scriptpath = \"$($WorkingDirectory)\$($ProjectName).ps1\"; $scripturl = 'https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1'; if (!(Test-Path $WorkingDirectory)) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); $op = & $scriptpath -MinimumSamples 30 -Path $WorkingDirectory -DaysToReport 14 -DaysToLead 7 -Quiet -Force; $exDate = ($op | Where-Object { $_.DriveLetter -eq 'C' }).ExhaustionEstimationDate; if ($exDate) { ($exdate).ToString('yyyy-MM-dd HH:mm:ss') }"
+```
+
+_The parameter values highlighted in the provided example are regulated by the system properties and the Extra Data Fields (EDFs)._

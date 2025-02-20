@@ -1,7 +1,7 @@
 ---
 id: '403cec59-3602-4630-afc8-674d1887046d'
-title: 'EPM - Vendor Specific - Remote Monitor - HP Hardware Monitoring'
-title_meta: 'EPM - Vendor Specific - Remote Monitor - HP Hardware Monitoring'
+title: 'Remote Monitor - HP Hardware Monitoring'
+title_meta: 'Remote Monitor - HP Hardware Monitoring'
 keywords: ['hp', 'monitor', 'event', 'server', 'management']
 description: 'This document outlines the configuration and implementation details for a remote monitor that tracks specific event types and IDs from HP Server management software, ensuring effective monitoring of HP Servers.'
 tags: ['ticketing']
@@ -38,7 +38,7 @@ The monitor set should be limited to the `HP Servers` search.
 
 ## Implementation
 
-[Implement - Remote Monitor - HP Hardware Monitoring](<./Implement - Remote Monitor - HP Hardware Monitoring.md>)
+[Implement - Remote Monitor - HP Hardware Monitoring](<./Implement%20-%20Remote%20Monitor%20-%20HP%20Hardware%20Monitoring.md>)
 
 ## Ticketing
 
@@ -46,6 +46,3 @@ The monitor set should be limited to the `HP Servers` search.
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
-
-
-

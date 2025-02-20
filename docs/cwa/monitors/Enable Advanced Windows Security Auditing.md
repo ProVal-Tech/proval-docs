@@ -21,29 +21,25 @@ The remote monitor will periodically check the system's security settings and tr
 
 **Suggested "Limit to"**: Windows Machines  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: Enable Advanced Windows Security Auditing  
+**Suggested Alert Template**: Enable Advanced Windows Security Auditing 
 
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ('Enable Advanced Windows Security Auditing', 'Enable Advanced Windows Security Auditing', 'PRONOC', '2023-03-20 07:03:53', '', '', '7505b667-bbf8-4907-930a-71a435af94ab');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ((select alertactionid from alerttemplate where `GUID` = '7505b667-bbf8-4907-930a-71a435af94ab'), 127, '00:00:00', '23:59:00', 512, -1, 0, (select scriptid from lt_scripts where scriptguid = '3805ab5d-c70e-11ed-8b06-000c295e5f21'), '', 0, '8954b973-79ad-4e8b-a63e-45a1a038c72d', 512);
-```
-
-**Script `Enable Advanced Windows Security Auditing [Globals, Autofix]` must be imported before creating the alert template.**
+**Script [Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>) must be imported before creating the alert template.**
 
 Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result     |
 |--------------|----------------|------------|---------------|------------|----------|------------|
-| system       | 127.0.0.1      | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) \{if($Audit -NotMatch 'Success and Failure|^/s*$') \{ $psout += $Audit}}; return $psout" | Regex Match | 86400 | ^OK$|^$ |
+| system       | 127.0.0.1      | Run File   | **See Below** | Regex Match | 86400 | ^OK$|^$ |
+
+**Execute Info:** 
+```cmd
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= 'SilentlyContinue';$Auditing = (auditpol /get /category:'Logon/Logoff')[4..30];$psout = @(); foreach ($Audit in $Auditing) {if($Audit -NotMatch 'Success and Failure|^\s*$') { $psout += $Audit}}; return $psout"
+```
 
 ## Dependencies
 
-[CWM - Automate - Script - Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>)
+[Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>)
 
 ## Target
 
 Managed Windows Servers and Workstations
-
-
-
-
