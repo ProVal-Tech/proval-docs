@@ -141,7 +141,4 @@ The user pressed the power button.
 
 ## Implementation
 
-[Import - Remote Monitor - Unexpected Shutdown](<./Unexpected Shutdown.md>)
-
-
-
+[Import - Remote Monitor - Unexpected Shutdown](<./Import-%20Unexpected%20Shutdown.md>)

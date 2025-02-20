@@ -21,13 +21,10 @@ This monitor checks for the Hyper-V integration service and generates tickets if
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Comparator       | Interval | Result                |
-|--------------|----------------|------------|-------------------|----------|-----------------------|
-| System       | 127.0.0.1     | Run File   | Does Not Contain  | 86400    | IntegrationServicesState: |
+| Check Action | Server Address | Check Type | Comparator       | Interval | Execute Info| Result                |
+|--------------|----------------|------------|-------------------|----------|------------|-----------|
+| System       | 127.0.0.1     | Run File   | Does Not Contain  | 86400    | **REDACTED**|IntegrationServicesState: |
 
-| **Execute Info**                                               |
-|---------------------------------------------------------------|
-| C:/Windows/system32/cmd.exe /c powershell.exe "try\{ Get-VM | Where-Object \{($_.IntegrationServicesState -eq 'Update required')} | Foreach-Object \{Write-Host \"$($_.Name) IntegrationServicesState: $($_.IntegrationServicesState)\"}} catch \{}" |
 
 ## Dependencies
 
@@ -40,8 +37,4 @@ Insert the details of the monitor in the table below.
 ## Implementation
 
 Please follow the article below for the implementation:  
-[Implementation Article](https://proval.itglue.com/5078775/docs/15601869)
-
-
-
-
+[Import - Integration Service Out of Date](./Import-Hyper-V-Integration-Service-Out-of-Date.md)

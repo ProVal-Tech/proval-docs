@@ -29,7 +29,7 @@ INSERT INTO groupagents
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$RS=\'RSAT-Feature-Tools-BitLocker\',\'RSAT-Feature-Tools-BitLocker-RemoteAdminTool\',\'RSAT-Feature-Tools-BitLocker-BdeAducExt\';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne \'Installed\') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return \'Failed\'}}}"' as `DataOut`,
+  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$RS=\'RSAT-Feature-Tools-BitLocker\',\'RSAT-Feature-Tools-BitLocker-RemoteAdminTool\',\'RSAT-Feature-Tools-BitLocker-BdeAducExt\';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne \'Installed\') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return \'Failed\'}}}"' as `DataOut`,
   '16' as `Comparor`,
   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|^(()%7C %7C(OK)%7C(\\r\\n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
@@ -63,7 +63,7 @@ INSERT INTO groupagents
   '21600' as `interval`,
   '127.0.0.1' as `Where`,
   '7' as `What`,
-  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$RS=\'RSAT-Feature-Tools-BitLocker\',\'RSAT-Feature-Tools-BitLocker-RemoteAdminTool\',\'RSAT-Feature-Tools-BitLocker-BdeAducExt\';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne \'Installed\') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return \'Failed\'}}}"' as `DataOut`,
+  'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$RS=\'RSAT-Feature-Tools-BitLocker\',\'RSAT-Feature-Tools-BitLocker-RemoteAdminTool\',\'RSAT-Feature-Tools-BitLocker-BdeAducExt\';Foreach($r in $RS){if (((Get-WindowsFeature -Name $r).InstallState) -ne \'Installed\') {try{Install-WindowsFeature -Name $r -erroraction Stop 3>&1 1>$null}catch{return \'Failed\'}}}"' as `DataOut`,
   '16' as `Comparor`,
   '10|^(()%7C %7C(OK)%7C(\\r\\n))$|11|^(()%7C %7C(OK)%7C(\\r\\n))$%7C(Failed)|10|Failed' as `DataIn`,
   '' as `IDField`,
@@ -87,5 +87,3 @@ Now execute your query from a RAWSQL monitor set.
 ## Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
-
-

@@ -21,7 +21,7 @@ The purpose of the remote monitor is to set the Start type for the RemoteAccess 
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference = 'SilentlyContinue';$result = Get-Service -Name 'RemoteAccess' | Select-Object -ExpandProperty Status; if($result -eq 'Running')\{return 'Service Running'} else \{Set-Service -Name 'RemoteAccess' -StartupType Automatic; $result = Get-Service -Name 'RemoteAccess' | Select-Object -ExpandProperty Starttype; if($result -eq 'Automatic')\{Start-Service -Name 'RemoteAccess'; $result = Get-Service -Name 'RemoteAccess' | Select-Object -ExpandProperty Status;if($result -eq 'Running')\{return 'Service Running'} else\{return 'Service not Starting'}} else \{return 'Service Not Starting'}}" | Equals | 300 | Service Running |
+| System       | 127.0.0.1     | Run File   | **REDACTED** | Equals | 300 | Service Running |
 
 ## Target
 
@@ -38,8 +38,4 @@ Limited to Windows machines only.
 ## How To Import
 
 - Follow the document below for import and implementation steps:  
-  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](<./RemoteAccess Service Check.md>)  
-
-
-
-
+  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](<./Import%20-%20Remote%20Monitor%20-%20RemoteAccess%20Service%20Check.md>)  

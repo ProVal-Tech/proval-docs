@@ -1,5 +1,19 @@
-1. Import the Alert Template '△ Custom - Ticket Creation - Computer [Failures Only]'. 
-2. Run this SQL query from a RAWSQL monitor set to import the required search
+---
+id: '6c4f37b4-d460-464b-bc03-fd1d46be2b0a'
+title: 'Import - Unresponsive Huntress Agents'
+title_meta: 'Import - Unresponsive Huntress Agents'
+keywords: ['huntress', 'monitor', 'sql', 'alert', 'setup']
+description: 'This document provides a step-by-step guide on how to set up a monitor for unresponsive Huntress agents within ConnectWise Automate. It includes instructions for importing alert templates, running SQL queries, and configuring monitor settings to ensure effective monitoring of Huntress agents.'
+tags: ['huntress', 'setup', 'sql']
+draft: false
+unlisted: false
+---
+
+## Step 1
+Import the Alert Template `△ Custom - Ticket Creation - Computer [Failures Only]`.
+
+## Step 2
+Run this SQL query from a RAWSQL monitor set to import the required search:
 
 ```sql
 INSERT INTO `sensorchecks` 
@@ -18,12 +32,17 @@ FROM  (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM SensorChecks WHERE `GUID` = 'f7b8ea5a-235d-11ef-9836-8600008a66b7') = 0 ;
 ```
 
-3. Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
-4. Copy the following query and replace 'YOUR COMMA SEPARATED LIST OF GROUPID(S)' with the Groupid(s) of the relevant groups: (The string to replace can be found at the very bottom of the query, right after `WHERE`).
+## Step 3
+Obtain the groupid(s) of the group(s) that the remote monitor should be applied to.
+
+## Step 4
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the groupid(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**).
+
+```
+SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f7b8ea5a-235d-11ef-9836-8600008a66b7');
+```
 
 ```sql
-SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f7b8ea5a-235d-11ef-9836-8600008a66b7');
-
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -46,44 +65,7 @@ INSERT INTO groupagents
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -91,11 +73,14 @@ WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Unresponsive Huntress Agents')
 ```
 
-5. An example of the query with groupids and modified thresholds.
+## Step 5
+An example of the query with groupids and modified thresholds:
+
+```
+SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f7b8ea5a-235d-11ef-9836-8600008a66b7');
+```
 
 ```sql
-SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f7b8ea5a-235d-11ef-9836-8600008a66b7');
-
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -118,47 +103,21 @@ INSERT INTO groupagents
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
-WHERE m.groupid IN (536.421)
+WHERE m.groupid IN (536,421)
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Unresponsive Huntress Agents')
 ```
+
+## Step 6
+Check the concerned groups and ensure the monitor set is created and configured with the correct search.  
+**Limit to:**  ` Machines with Huntress Agent`
+
+![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_1.png)
+
+## Step 7
+Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor 
+
+![Image](../../../static/img/Import---Unresponsive-Huntress-Agents/image_2.png)

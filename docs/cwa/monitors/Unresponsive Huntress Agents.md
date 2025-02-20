@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor is to monitor if Huntress Agent has been Orphaned or not. By Orphaned it means Huntress has not recieved a response from the agent within 30 days and the Agent's key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
+The purpose of this monitor is to monitor if Huntress Agent has been Orphaned or not. By Orphaned it means Huntress has not received a response from the agent within 30 days and the Agent's key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
 
 ## Details
 
@@ -33,13 +33,10 @@ Windows machines, limited to those with Huntress Agents only.
 
 ## Implementation
 
-[Import - Remote Monitor - Unresponsive Huntress Agents](<./Unresponsive Huntress Agents.md>)
+[Import - Remote Monitor - Unresponsive Huntress Agents](<./Import-Unresponsive-Huntress-Agents.md>)
 
 ## Ticketing
 
 **Subject:** `Unresponsive Huntress Agent Detected on %COMPUTERNAME%`  
 
-**Body:** `The machine %computername% located at %clientname%//%locationname% is currently reporting that its Huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days, and its license key has been revoked by Huntress, which may prevent it from performing security functions on the machine. Please validate that the agent is communicating with Huntress, and if it is not, re-install the application to resolve the issue.`
-
-
-
+**Body:** `The machine %computername% located at %clientname%\%locationname% is currently reporting that its Huntress agent has been orphaned. This means the agent has not been able to communicate with Huntress for over 30 days, and its license key has been revoked by Huntress, which may prevent it from performing security functions on the machine. Please validate that the agent is communicating with Huntress, and if it is not, re-install the application to resolve the issue.`

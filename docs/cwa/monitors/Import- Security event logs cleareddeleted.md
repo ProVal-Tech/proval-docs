@@ -1,7 +1,7 @@
 ---
 id: '5e1d98fb-913a-4384-9674-653c57bf610b'
-title: 'Import- Security event logs cleareddeleted'
-title_meta: 'Import- Security event logs cleareddeleted'
+title: 'Import- Security event logs cleared/deleted'
+title_meta: 'Import- Security event logs cleared/deleted'
 keywords: ['remote', 'monitor', 'security', 'event', 'logs', 'setup']
 description: 'This document provides a step-by-step guide to setting up a remote monitor for security event logs in ConnectWise Automate. It includes obtaining group IDs, constructing SQL queries, and applying alert templates for effective monitoring.'
 tags: ['database', 'security', 'setup']

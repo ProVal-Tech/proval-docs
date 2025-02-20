@@ -15,7 +15,7 @@ The purpose of the remote monitor is to check and return the Enabled TLS Client 
 
 **Requirements**: PowerShell v2.0+
 
-**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [EPM - Windows Configuration - Dataview - Security - TLS Status](<../dataviews/Security - TLS Status.md>) dataview. This monitor set should not be used for alerting or ticketing purposes.
+**CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [Security - TLS Status](<../dataviews/Security - TLS Status.md>) dataview. This monitor set should not be used for alerting or ticketing purposes.
 
 ## Details
 
@@ -35,7 +35,7 @@ Managed Windows Servers and Workstations
 
 ## How to Import
 
-[Import - Remote Monitor - TLS Version Check - Client](<./TLS Version Check - Client.md>)
+[Import - Remote Monitor - TLS Version Check - Client](<./Import-%20TLS%20Version%20Check%20-%20Client.md>)
 
 
 

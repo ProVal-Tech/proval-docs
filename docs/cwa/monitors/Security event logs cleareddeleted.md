@@ -46,4 +46,4 @@ Windows Computers
 
 ## Implementation
 
-[Import - Remote Monitor - Security event logs cleared/deleted](./Security%20event%20logs%20cleareddeleted.md)
+[Import - Remote Monitor - Security event logs cleared/deleted](./Import-%20Security%20event%20logs%20cleareddeleted.md)
