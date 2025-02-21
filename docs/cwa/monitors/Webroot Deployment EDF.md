@@ -25,6 +25,3 @@ This monitor checks the online status of agents where the client EDF "Enable Web
 ## Target
 
 - Global
-
-
-

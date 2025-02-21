@@ -11,13 +11,10 @@ unlisted: false
 
 ## Summary
 
-This document checks if the Firewall service (mpssvc) is running for online computers.
+This internal monitor checks if the Firewall service (mpssvc) is running for online computers.
 
 ## Target
 
 The suggested target for the monitor is:
 
 - Server & Workstation Service Plans
-
-
-

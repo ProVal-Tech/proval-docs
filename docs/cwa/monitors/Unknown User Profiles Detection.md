@@ -60,6 +60,3 @@ UserProfile: C:/Users/user2
 ProfileSizeMB: 1237
 UserSid: S-1-5-21-1327865892-1327865892-1327865892-1758
 ```
-
-
-

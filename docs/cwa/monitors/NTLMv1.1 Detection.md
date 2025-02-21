@@ -23,7 +23,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator   | Interval | Result                                       |
 |--------------|----------------|-------------|-------------|---------------|----------|----------------------------------------------|
-| System       | 127.0.0.1     | Run File    | REDACTED    | State Based   | 900      | ![](../../../static/img/NTLMv1.1-Detection/image_1.png) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**    | State Based   | 900      | ![](../../../static/img/NTLMv1.1-Detection/image_1.png) |
 
 ## Target
 
@@ -35,4 +35,4 @@ Managed Windows Computers
 
 ## How to Import
 
-[Import - Remote Monitor - NTLMv1.1 Detection](<./Import- NTLMv1.1 Detection.md>)
+[Import - Remote Monitor - NTLMv1.1 Detection](<./Import-%20NTLMv1.1%20Detection.md>)

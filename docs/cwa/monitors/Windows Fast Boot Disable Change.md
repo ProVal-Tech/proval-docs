@@ -1,7 +1,7 @@
 ---
 id: '1325f458-9c0e-4021-b107-26df4360bbed'
-title: 'Windows Fast Boot Disable Change'
-title_meta: 'Windows Fast Boot Disable Change'
+title: 'Windows Fast Boot Disable [Change]'
+title_meta: 'Windows Fast Boot Disable [Change]'
 keywords: ['monitor', 'fastboot', 'windows', 'registry', 'disable']
 description: 'This document describes a remote monitor designed to detect if Windows Fast Boot is enabled via a registry check, disable it, and validate the change. If the operation fails, a ticket is generated noting the failure; otherwise, it confirms successful disabling of Fast Boot.'
 tags: ['registry', 'ticketing', 'windows']
@@ -21,8 +21,6 @@ This monitor will make a change to all systems it is deployed to.
 
 **What will change?**
 
-![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
-
 This monitor checks if Windows Fast Boot is enabled and then disables it.
 
 **Registry Path:**
@@ -40,7 +38,12 @@ HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power/HiberbootEnabled (S
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|--------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power';if (Test-Path $registryPath) \{$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) \{Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) \{return 'Failed'} else \{return 'Success'}} else \{return 'Success'}} else \{return 'Success'}" | Does Not Contain | 86400 | Failed |
+| System       | 127.0.0.1      | Run File    | **See Below** | Does Not Contain | 86400 | Failed |
+
+**Check Value:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$registryPath = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power';if (Test-Path $registryPath) {$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if($hiberbootEnabled.HiberbootEnabled -eq 1) {Set-ItemProperty -Path $registryPath -Name HiberbootEnabled -Value 0;$hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue;if ($hiberbootEnabled.HiberbootEnabled -ne 0) {return 'Failed'} else {return 'Success'}} else {return 'Success'}} else {return 'Success'}"
+```
 
 ## Target
 

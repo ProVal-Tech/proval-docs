@@ -1,7 +1,7 @@
 ---
 id: 'b0d63a21-0540-43a1-9269-079d3bfaa48d'
-title: 'CWM - Automate - Remote Monitors - Update Orchestrator - Reboot Prevention Change'
-title_meta: 'CWM - Automate - Remote Monitors - Update Orchestrator - Reboot Prevention Change'
+title: 'Update Orchestrator - Reboot Prevention [Change]'
+title_meta: 'Update Orchestrator - Reboot Prevention [Change]'
 keywords: ['monitor', 'windows', 'update', 'orchestrator', 'service']
 description: 'This document describes a monitor that renames the reboot file used by the Windows Update Orchestrator to prevent unwanted reboots. It also ensures that the UsoSvc service is enabled and running, providing a safeguard against interruptions caused by automatic updates.'
 tags: ['security', 'update', 'windows']
@@ -48,7 +48,4 @@ The reboot file at `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrat
 
 ## Implementation
 
-[Implement - Remote Monitor - Windows Update Orchestrator](<./Windows Update Orchestrator.md>)
-
-
-
+[Import - Remote Monitor - Windows Update Orchestrator](<./Import-Remote-Monitor-Update-Orchestrator-Reboot-Prevention-Change.md>)

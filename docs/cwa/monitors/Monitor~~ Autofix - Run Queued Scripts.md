@@ -72,7 +72,3 @@ WHERE
       Tcomp
   )
 ```
-
-
-
-

@@ -30,6 +30,3 @@ Domain Controllers belonging to clients that have the `1a. Enable Domain Admin P
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
-
-
-
