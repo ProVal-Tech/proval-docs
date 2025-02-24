@@ -43,8 +43,4 @@ Insert the details of the monitor in the table below.
 
 ## How to Import
 
-[Import - Remote Monitor - Time Sync Compliance](<./Time Sync Compliance.md>)
-
-
-
-
+[Import - Remote Monitor - Time Sync Compliance](<./Import-%20Time%20Sync%20Compliance.md>)

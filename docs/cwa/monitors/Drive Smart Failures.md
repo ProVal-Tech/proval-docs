@@ -16,6 +16,3 @@ This monitor will look for any "SMART Failure" on a drive that exceeds the manuf
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines.
-
-
-

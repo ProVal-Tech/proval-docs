@@ -23,7 +23,12 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | See Below   | Missing    | 900      | Blank  |
+| System       | 127.0.0.1     | Run File   | **See Below**   | Missing    | 900      | Blank  |
+
+**Check Value:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-Service | Where-Object {$_.Status -ne 'Running' -and $_.Status -match 'ing'} | Select-Object -ExpandProperty Name -ErrorAction SilentlyContinue"
+```
 
 ## Dependencies
 

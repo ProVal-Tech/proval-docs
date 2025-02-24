@@ -18,12 +18,9 @@ Run the provided SQL query using a RAWSQL monitor to establish the `SMB1 Traffic
 INSERT INTO `sensorchecks` (`Name`, `SQL`, `QueryType`, `ListDATA`, `FolderID`, `GUID`) 
 SELECT 
 'SMB1 Server Enabled [Remote Monitor]', 
-'SELECT DISTINCT Computers.ComputerID, [Clients.Name](http://clients.Name) AS `Client Name`, [Computers.Name](http://computers.Name) AS `Computer Name`, Computers.Domain, Computers.UserName AS `Username`, Computers.ComputerID
-FROM Computers, Clients
-WHERE Computers.ClientID = Clients.ClientID
-AND ((Computers.ComputerID IN (SELECT DISTINCT c.computerid FROM computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'/r/n', '') = 'True')))',
+'SELECT DISTINCT Computers.ComputerID, Clients.Name AS `Client Name`, Computers.Name AS `Computer Name`, Computers.Domain, Computers.UserName AS `Username`, Computers.ComputerID FROM Computers, Clients WHERE Computers.ClientID = Clients.ClientID AND ((Computers.ComputerID IN (SELECT DISTINCT c.computerid FROM computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = \'ProVal - Production - SMB1 Detection\' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,\'\\r\\n\', \'\') = \'True\')))',
 '4', 
-'Computer ID||>=|*(SELECT DISTINCT c.computerid FROM computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = 'ProVal - Production - SMB1 Detection' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,'/r/n', '') = 'True')|=||=|^Select|||||||^',
+'Computer ID||>=|*(SELECT DISTINCT c.computerid FROM computers c JOIN agents a ON a.computerid=c.computerid AND a.`Name` = \'ProVal - Production - SMB1 Detection\' JOIN h_agents h ON c.computerid=h.Lastcomputerid AND a.agentid=h.AgentID AND REPLACE(h.LastFailData,\'\\r\\n\', \'\') = \'True\')|=||=|^Select|||||||^',
 '0', 
 'a3890b94-d878-4916-80b3-67b31a8695f4'
 FROM (SELECT MIN(computerid) FROM computers) a
@@ -85,7 +82,7 @@ Details:
 '3600' AS `interval`,
 '127.0.0.1' AS `Where`,
 '7' AS `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return /"Failure Reason: $($Error[0].Exception.Message)/" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = 'Microsoft-Windows-SMBServer*'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match 'No events were found' ) { return 'No events were found that match the specified selection criteria'} else { return /"Complete Failure: $($Error[0].Exception.Message)/" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' AS `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "if ( !( (Get-SmbServerConfiguration).AuditSmb1Access ) ) { try { Set-SmbServerConfiguration –AuditSmb1Access $true -Force -confirm:$false -ErrorAction Stop } catch { return \\"Failure Reason: $($Error[0].Exception.Message)\\" } } else {function Get-SMB1AccessLogs { param([int[]]$Level,[int[]]$EventID,[int]$Hours); $filter = @{LogName = \'Microsoft-Windows-SMBServer*\'; Level = $Level};if ($EventID) {$filter.ID = $EventID};if ($Hours) {$filter.StartTime = (Get-Date).AddHours(-$Hours)};try {Get-WinEvent -FilterHashtable $filter -ErrorAction Stop } catch { if ( $Error[0].Exception.Message -match \'No events were found\' ) { return \'No events were found that match the specified selection criteria\'} else { return /"Complete Failure: $($Error[0].Exception.Message)/" } } }; Get-SMB1AccessLogs -Level 4 -EventID 1001,3000 -Hours 1 | Format-List}"' AS `DataOut`,
 '16' AS `Comparor`,
 '10|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)|11|(^$)%7C^(\\r\\n%7C\\s%7COK)$%7C(No events were found)%7C(Microsoft-Windows-SMBServer)|10|Microsoft-Windows-SMBServer' AS `DataIn`,
 '' AS `IDField`,
@@ -95,63 +92,7 @@ Details:
 '21' AS `Category`,
 '0' AS `TicketCategory`,
 '1' AS `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) AS `GUID`,
+UUID() AS `GUID`,
 'root' AS `UpdatedBy`,
 (NOW()) AS `UpdateDate`
 FROM mastergroups m
@@ -182,6 +123,4 @@ Validate the presence of the `SMB1 Traffic Detection` remote monitor in the grou
 
 ## Step 6
 
-Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script for errors/failures.
-
-
+Apply the `△ Custom - Ticket Creation Computer - Failures Only` alert template to the remote monitor to enable alerting. The alert template should execute the [Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) script for errors/failures.

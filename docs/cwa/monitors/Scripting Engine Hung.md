@@ -45,7 +45,4 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 ## Troubleshooting
 
 Please follow the article below to perform troubleshooting if this issue arises.  
-[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)
-
-
-
+[Scripting Engine Hung - Troubleshooting](https://proval.itglue.com/5078775/docs/16981877)

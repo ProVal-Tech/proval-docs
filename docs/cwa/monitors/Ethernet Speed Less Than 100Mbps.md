@@ -25,6 +25,3 @@ There are no dependencies required for this monitor to work.
 ## Suggested Alert Template
 
 Apply the `△ Custom - Ticket Creation Computer` alert template unless otherwise specified.
-
-
-

@@ -16,9 +16,14 @@ If the backup fails, it will raise a ticket.
 
 ## Details
 
-| Check Action | Server Address | Check Type | Check Value                                                                                               | Comparator | Interval | Result |
-|--------------|----------------|-------------|-----------------------------------------------------------------------------------------------------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-WBSummary | select-object -ExpandProperty LastBackupResultHR" | Equals     | 3600     | 0      |
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
+|--------------|----------------|------------|---------------|-------------|----------|------|
+| System       | 127.0.0.1     | Run File   | **See Below**  | Equals | 3600     | 0 |
+
+**Execute Info:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-WBSummary | select-object -ExpandProperty LastBackupResultHR"
+```
 
 ## Dependencies
 
@@ -27,6 +32,3 @@ If the backup fails, it will raise a ticket.
 ## Target
 
 It should be targeted on the group that is bound with a search via the role "Windows Server Backup."
-
-
-

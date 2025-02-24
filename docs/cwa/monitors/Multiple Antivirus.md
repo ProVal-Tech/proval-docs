@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-Alerts if there are two or more antiviruses present in the AntivirusProduct class.
+Alerts if there are two or more antivirus present in the AntivirusProduct class.
 
 ## Details
 
@@ -23,7 +23,12 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|-------------|-------------|------------|----------|--------|
-| System       | Default        | Run File `C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct).count -gt 1) \{ return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender').count } else \{ return }"` | Less Than | 2 |  |  |
+| System       | Default        | Run File | **See Below** | Less Than | 2 |  | 2 |
+
+**Check Value:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "if ((Get-CimInstance -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct).count -gt 1) { return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct).count } else { return }"
+```
 
 ## Requirements
 
@@ -50,10 +55,6 @@ The intended target of this monitor is Windows-based machines that have had at l
 **Q.** Is there any way to see what this monitor specifically found?  
 **A.** Running the following PowerShell command will display the name of every found item.
 
+```PowerShell
+return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
-return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root/SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
-```
-
-
-
-

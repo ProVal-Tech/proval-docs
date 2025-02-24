@@ -24,6 +24,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Local Admin Group Cleanup`
-
-
-

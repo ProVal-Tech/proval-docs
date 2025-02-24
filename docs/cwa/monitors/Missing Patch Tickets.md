@@ -26,7 +26,7 @@ Global
 **Name:** `△ CUSTOM - Auto Close - Missing Patch Tickets`
 
 **SQL Insert Query:**
-```
+```sql
 INSERT INTO `alerttemplate` (
   `Name`, `Comment`, `Last_User`, `Last_Date`, 
   `GUID`
@@ -90,7 +90,7 @@ WHERE
   ) = '0';
 ```
 
-**Note:** Ensure that the [CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]](../scripts/Client Specific - Auto Close - Missing Patch Tickets Autofix.md) script is imported before creating the alert template.
+**Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](../scripts/Auto%20Close%20-%20Missing%20Patch%20Tickets%20Autofix.md) script is imported before creating the alert template.
 
 
 

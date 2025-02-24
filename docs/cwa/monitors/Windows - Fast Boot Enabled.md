@@ -15,11 +15,8 @@ Using a role definition, this monitor detects machines where Windows Fast Boot i
 
 ## Dependencies
 
-- @Windows Fast Boot Enabled
+- [Windows Fast Boot Enabled](../roles/Windows%20Fast%20Boot%20Enabled.md)
 
 ## Target
 
 Workstations - should be run on non-servers.
-
-
-

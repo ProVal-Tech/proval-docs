@@ -1,17 +1,17 @@
 ---
-id: '5c3fa8f7-2d12-40db-a282-0147525c60b9'
-title: 'Security event logs cleareddeleted'
-title_meta: 'Security event logs cleareddeleted'
-keywords: ['security', 'event', 'monitor', 'logs', 'alert']
-description: 'This document outlines a remote monitor designed to alert users when security events, specifically event 1102, are deleted or cleared within the last 15 minutes. It provides details on setup, dependencies, and ticketing for effective monitoring of security log activities on Windows computers.'
-tags: ['security', 'windows']
+id: '0f6e6262-6a9f-4edf-ab23-1522543de7e2'
+title: 'Security event logs cleared/deleted'
+title_meta: 'Security event logs cleared/deleted'
+keywords: ['security', 'event', 'monitor', 'alert', 'windows']
+description: 'This document outlines the setup and configuration of a Remote Monitor that alerts users when security events, specifically event 1102, are deleted or cleared within the last 15 minutes. It includes implementation details, dependencies, and ticketing information for effective monitoring.'
+tags: ['security', 'ticketing', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This Remote Monitor will alert if security events were deleted or cleared in the last 15 minutes, specifically looking for security event 1102. The remote monitor should be set to run at an interval of 15 minutes or less.
+This Remote Monitor will alert if security events were deleted or cleared in the last 15 minutes, specifically looking for security event 1102. The remote monitor should be set to run at an interval of less than or equal to 15 minutes.
 
 Event 1102 is logged whenever the **Security log is cleared**, regardless of the status of the Audit System Events audit policy. The Account Name and Domain Name fields identify the user who cleared the log.
 
@@ -19,21 +19,21 @@ Event 1102 is logged whenever the **Security log is cleared**, regardless of the
 
 ## Details
 
-**Suggested "Limit to"**: All  
-**Suggested Alert Style**: Continuous  
-**Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only  
+**Suggested "Limit to":** All  
+**Suggested Alert Style:** Continuous  
+**Suggested Alert Template:** △ Custom - Ticket Creation Computer - Failures Only  
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result                   |
-|--------------|----------------|------------|---------------|------------|----------|--------------------------|
-| System       | Default        | Run File   | REDACTED      | State Based| 900      | \<Screenshot Below>       |
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result                |
+|--------------|----------------|------------|---------------|------------|----------|-----------------------|
+| System       | Default        | Run File   | **REDACTED**      | State Based | 900      | \<Screenshot Below\>  |
 
-![Screenshot](../../../static/img/Security-event-logs-cleareddeleted/image_1.png)
+![Screenshot](../../../static/img/EPM---Security-Management---Remote-Monitor---Security-event-logs-cleareddeleted/image_1.png)
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
+[CWM - Automate - Script - Ticket Creation - Computer (Failures Only)](../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md)
 
 ## Target
 
@@ -41,13 +41,9 @@ Windows Computers
 
 ## Ticketing
 
-| Subject         | Security Event Log Cleared on %CLIENTNAME%//%COMPUTERNAME% |
-|------------------|--------------------------------------------------------------|
-| Ticket Summary    | Security Event logs cleared/deleted for %CLIENTNAME%//%COMPUTERNAME%: %Result% |
+**Subject:** `Security Event Log Cleared on %CLIENTNAME%\%COMPUTERNAME%`
+**Ticket Summary:** `Security Event logs cleared/deleted for %CLIENTNAME%\%COMPUTERNAME%: %Result%`
 
 ## Implementation
 
-[Import - Remote Monitor - Security event logs cleared/deleted](<./Security event logs cleareddeleted.md>)
-
-
-
+[Import - Remote Monitor - Security event logs cleared/deleted](./Import-%20Security%20event%20logs%20cleareddeleted.md)

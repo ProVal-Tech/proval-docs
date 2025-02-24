@@ -21,7 +21,12 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result          |
 |--------------|----------------|-------------|-------------|------------|----------|------------------|
-| System       | 127.0.0.1     | Run File    | See below   | Contains    | 900      | Ports are same    |
+| System       | 127.0.0.1     | Run File    | **See below**   | Contains    | 900      | Ports are same    |
+
+**Check Value:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$process = Get-Process -Name "ltsvc" -ErrorAction SilentlyContinue | Select-Object -First 1;if($process){$netstatOut = netstat -ano | Where-Object {$_ -match \" $($process.Id)$\"} | Select-Object -First 1;$netstatFormatted = $netstatOut -split ' ' | Where-Object {$_};$port = ($netstatFormatted[1] -split ':')[1];$TrayPort = Get-ItemProperty -Path 'HKLM:\SOFTWARE\LabTech\Service' | select-object -expandproperty TrayPort -ErrorAction SilentlyContinue;if($port -eq $TrayPort){write-host "Ports are Same"}else{write-host "Ports are not same. Netstat Port is: $Port and Registry Port is: $TrayPort"}}else{write-host "Ltsvc.exe process not detected"}"
+```
 
 ## Dependencies
 
@@ -30,6 +35,3 @@ This remote monitor detects if the port value for the LTTray in the registry mat
 ## Target
 
 Windows machine
-
-
-

@@ -28,7 +28,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Implement Wifi Profile`
-
-
-
-

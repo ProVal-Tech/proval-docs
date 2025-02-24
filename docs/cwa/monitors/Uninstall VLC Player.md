@@ -1,169 +1,45 @@
 ---
-id: 'fbb859fd-ac3c-4cab-9460-6d5260edf65e'
+id: '5e887154-c307-4ac7-9b75-0a85c516dbad'
 title: 'Uninstall VLC Player'
 title_meta: 'Uninstall VLC Player'
-keywords: ['uninstall', 'vlc', 'connectwise', 'monitor', 'ticket']
-description: 'This document provides a step-by-step guide on how to uninstall VLC Player using ConnectWise Automate. It includes instructions for setting up the necessary scripts and alert templates, obtaining group IDs, and executing the SQL query to create a remote monitor that handles ticket creation for the uninstallation process.'
-tags: ['connectwise', 'software', 'uninstallation']
+keywords: ['remote', 'monitor', 'vlc', 'uninstallation', 'windows', 'workstations']
+description: 'This document outlines the setup for a remote monitor designed to uninstall VLC Media Player from Windows workstations, including configuration details, ticketing information, and import instructions.'
+tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
 ---
 
-## Step 1
-Ensure the presence of the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and the `△ Custom - Ticket Creation - Computer` alert template.
+## Summary
 
-## Step 2
-Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
+The purpose of the remote monitor is to remove the `VLC Media Player` from Windows machines.
 
-## Step 3
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Group ID(s) of the relevant groups:  
-(The string to replace can be found at the very bottom of the query, right after **WHERE**)
+## Details
 
-```
-INSERT INTO groupagents 
-SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
-'0' as `SearchID`,
-'ProVal - Dev - Uninstall VLC Player' as `Name`,
-'6' as `CheckAction`,
-'1' as `AlertAction`,
-'VLC Removal Failed - %COMPUTERNAME%~~~Successfully removed VLC Player!!!VLC Removal Failed - %COMPUTERNAME%~~~Failed to remove VLC Player for %COMPUTERNAME%. Please review.' as `AlertMessage`,
-'0' as `ContactID`,
-'604800' as `interval`,
-'127.0.0.1' as `Where`,
-'7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'VLC Media Player\' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'VLC Media Player\' }).UninstallString; if($US) { return \'Failed to remove VLC.\' } else {return \'Successfully removed VLC.\'}} else {return \'VLC player is not installed.\'}"' as `DataOut`,
-'9' as `Comparor`,
-'Failed to remove VLC' as `DataIn`,
-'' as `IDField`,
-'1' as `AlertStyle`,
-'0' as `ScriptID`,
-'' as `datacollector`,
-'21' as `Category`,
-'0' as `TicketCategory`,
-'1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Uninstall VLC Player')
-```
+**Suggested "Limit to"**: Windows Workstations  
+**Suggested Alert Style**: Once  
+**Suggested Alert Template**: △ Custom - Ticket Creation - Computer  
 
-## Step 4
-An example of a query with a group ID:
+Insert the details of the monitor in the table below.
 
-```
-INSERT INTO groupagents 
-SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
-'0' as `SearchID`,
-'ProVal - Dev - Uninstall VLC Player' as `Name`,
-'6' as `CheckAction`,
-'1' as `AlertAction`,
-'VLC Removal Failed - %COMPUTERNAME%~~~Successfully removed VLC Player!!!VLC Removal Failed - %COMPUTERNAME%~~~Failed to remove VLC Player for %COMPUTERNAME%. Please review.' as `AlertMessage`,
-'0' as `ContactID`,
-'604800' as `interval`,
-'127.0.0.1' as `Where`,
-'7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'VLC Media Player\' }).UninstallString; if($US) { foreach ($U in $US) {cmd.exe /c $U /S /V /qn }; $US = (Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -Match \'VLC Media Player\' }).UninstallString; if($US) { return \'Failed to remove VLC.\' } else {return \'Successfully removed VLC.\'}} else {return \'VLC player is not installed.\'}"' as `DataOut`,
-'9' as `Comparor`,
-'Failed to remove VLC' as `DataIn`,
-'' as `IDField`,
-'1' as `AlertStyle`,
-'0' as `ScriptID`,
-'' as `datacollector`,
-'21' as `Category`,
-'0' as `TicketCategory`,
-'1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid IN (2,856)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Uninstall VLC Player')
-```
+| Check Action | Server Address | Check Type | Execute Info    | Comparator       | Interval | Result                 |
+|--------------|----------------|------------|------------------|-------------------|----------|------------------------|
+| System       | 127.0.0.1     | Run File   | _**REDACTED**_   | Does Not Contain   | 604800   | Failed to remove VLC    |
 
-## Step 5
-Now execute your query from a RAWSQL monitor set.
+## Dependencies
 
-## Step 6
-Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
 
+## Target
 
+Windows Workstations
+
+## Ticketing
+
+**Subject:** `VLC Removal Failed - %COMPUTERNAME%`  
+
+**Body:** `Failed to remove VLC Player for %COMPUTERNAME%. Please review.`  
+
+## How to Import
+
+[Import - Remote Monitor - Uninstall VLC Player](<./Import%20-%20Remote%20Monitor%20-%20Uninstall%20VLC%20Player.md>)
+ 

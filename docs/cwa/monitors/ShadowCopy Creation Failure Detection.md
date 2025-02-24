@@ -23,7 +23,12 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | See Below   | Equals     | 43200    | 0      |
+| System       | 127.0.0.1     | Run File   | **See Below**  | Equals     | 43200    | 0      |
+
+**Check Value:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "(Get-EventLog -LogName Application | Where-Object {$_.TimeGenerated -gt (Get-Date).AddHours(-13) -and $_.EventID -eq '12298'}).count"
+```
 
 ## Dependencies
 
@@ -36,6 +41,3 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples**:  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
-
-
-

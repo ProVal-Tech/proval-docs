@@ -16,7 +16,3 @@ The monitor set will identify any service that has a space in the path but is no
 ## Target
 
 **Windows Machines:** The SQL used in the monitor set is limited to Windows machines only.
-
-
-
-

@@ -22,6 +22,3 @@ This monitor looks for tickets within Automate that have failed to sync successf
 ## Target
 
 Global
-
-
-

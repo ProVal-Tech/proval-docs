@@ -62,8 +62,4 @@ TESTDNS01 replication state: Warning
 ## Implementation
 
 Please follow the article below for the implementation:  
-[Implementation Article](https://proval.itglue.com/5078775/docs/15601954)
-
-
-
-
+[Import - Remote Monitor - Hyper-V Replication Status Approved](./Import%20-%20Remote%20Monitor%20-%20Hyper-V%20Replication%20Status%20Approved)

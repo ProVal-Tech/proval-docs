@@ -23,7 +23,7 @@ Obtain the group ID(s) of the group(s) that the remote monitor should be applied
 Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-```
+```sql
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -47,43 +47,7 @@ Reason: %RESULT%' as `AlertMessage`,
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -96,7 +60,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 4
 An example of a query with a group ID:
 
-```
+```sql
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -120,43 +84,7 @@ Reason: %RESULT%' as `AlertMessage`,
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m

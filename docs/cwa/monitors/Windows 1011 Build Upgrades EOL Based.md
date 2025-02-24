@@ -1,7 +1,7 @@
 ---
 id: '03e04bb6-5087-4e71-9d2f-a3596e9c291f'
-title: 'Windows 1011 Build Upgrades EOL Based'
-title_meta: 'Windows 1011 Build Upgrades EOL Based'
+title: 'Windows 10/11 Build Upgrades EOL Based'
+title_meta: 'Windows 10/11 Build Upgrades EOL Based'
 keywords: ['eol', 'windows', 'upgrade', 'monitor', 'alert', 'custom', 'service', 'ticket']
 description: 'This document outlines the internal monitoring setup for identifying Windows 10 and Windows 11 machines that are end-of-life (EOL) or will reach EOL within the next six months. It includes recommendations for scheduling, dependencies, and ticketing processes to ensure efficient management and upgrades.'
 tags: ['ticketing', 'windows']
@@ -33,6 +33,3 @@ Managed Service Plan Groups for Windows Workstations
 The [EPM - Windows Configuration - Script - Install Windows Upgrade](<../scripts/Install Windows Upgrade.md>) script will only create a ticket for failures on the detected machine if a ticket category is selected in the Alerting tab of the monitor set.
 
 ![Ticketing Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based/image_2.png)
-
-
-
