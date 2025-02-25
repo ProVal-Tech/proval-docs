@@ -1,11 +1,11 @@
 ---
-id: ps-invoke-toastnotification
+id: 426118d9-ff83-444e-9744-30a0e26cb490
 title: Invoke-ToastNotification
 title_meta: Invoke-ToastNotification
 keywords: ['toast', 'notification', 'reminder', 'reboot']
 description: A PowerShell script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.
 tags: ['notification', 'reboot', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
