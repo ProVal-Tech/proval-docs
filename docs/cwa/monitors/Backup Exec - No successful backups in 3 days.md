@@ -42,7 +42,4 @@ Backup Management > Backup Exec
 
 ## How to Import
 
-[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](<./Backup Exec - No successful backups in 3 days.md>)  
-
-
-
+[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](<./Import- Backup Exec - No successful backups in 3 days.md>)  

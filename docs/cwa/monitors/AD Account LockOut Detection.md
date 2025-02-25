@@ -1,111 +1,64 @@
 ---
 id: '2549fcf6-30b5-497b-b44d-7329334bb32c'
-title: 'AD Account LockOut Detection'
-title_meta: 'AD Account LockOut Detection'
-keywords: ['alert', 'template', 'monitor', 'sql', 'ticket', 'creation', 'failures', 'detection', 'domain', 'controllers']
-description: 'This document provides a step-by-step guide on how to set up a custom ticket creation process for computer failures in ConnectWise Automate. It includes instructions for importing alert templates, validating scripts, running SQL queries, and configuring monitors specifically for Domain Controllers.'
-tags: ['active-directory', 'sql', 'windows']
+title: 'AD Account Lockout Detection'
+title_meta: 'AD Account Lockout Detection'
+keywords: ['monitoring', 'alert', 'eventid', 'domaincontroller', 'ticketing']
+description: 'This document outlines the setup for monitoring event ID 4740 to detect account lockouts in Active Directory. It includes configuration details for alert generation, dependencies, implementation instructions, and ticketing format for incidents.'
+tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
 ---
 
-### Step 1
-Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only`.
+## Summary
 
----
+The monitoring system is set up to gather data on event ID 4740 that occurred within the last 15 minutes and to generate an alert with the relevant information.
 
-### Step 2
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md) script was imported as well and that the alert template is executing this script for failures only.
+## Details
 
----
+**Suggested "Limit to"**: Primary Domain Controllers of Each Domain `<Distinct Domain Controller Per Client>`
 
-### Step 3
-Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group:
+**Suggested Alert Style**: Continuous
 
-```sql
-SET @Groupid = (SELECT Groupid FROM mastergroups WHERE `GUID` = '3ac455da-f1fb-11e1-b4ec-1231391d2d19');
-SET @Searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
-INSERT INTO groupagents 
-SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
-@Searchid as `SearchID`,
-'ProVal - Production - AD Account Lockout Detection' as `Name`,
-'6' as `CheckAction`,
-'1' as `AlertAction`,
-'AD Account LockOut Detected on %COMPUTERNAME%~~~%RESULT%.!!!AD Account LockOut Detected on %COMPUTERNAME%~~~Here are the details of the user(s) who were locked out:%RESULT%.' as `AlertMessage`,
-'0' as `ContactID`,
-'900' as `interval`,
-'127.0.0.1' as `Where`,
-'7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$st = (Get-Date).AddMinutes(-15); $r = Get-winevent -erroraction silentlycontinue -FilterHashtable @{logname=\'security\'; id=4740; startTime=$st} | ForEach-Object {$ex = ([xml]$_.ToXml()).Event; $e = [ordered]@{EventDate = [DateTime]$ex.System.TimeCreated.SystemTime};$ex.EventData.ChildNodes | ForEach-Object{$e[$_.Name] = $_.'#text'};[PsCustomObject]$e}; if ($r) { $r | Select-Object  @{n=\'EventID\';e={\'4740\'}}, @{n=\'EventDate\';e={$_.eventdate}}, @{n=\'Username\';e={$_.TargetUserName}}, @{n=\'Endpoint\';e={$_.TargetDomainName}}, @{n=\'Domain\';e={$_.SubjectDomainName}}, @{n=\'DC\'; e={$_.SubjectUserName}} | Format-List }"' as `DataOut`,
-'16' as `Comparor`,
-'10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})EventID)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})EventID' as `DataIn`,
-'' as `IDField`,
-'0' as `AlertStyle`,
-'0' as `ScriptID`,
-'' as `datacollector`,
-'11' as `Category`,
-'0' as `TicketCategory`,
-'1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
-'root' as `UpdatedBy`,
-(NOW()) as `UpdateDate`
-FROM mastergroups m
-WHERE m.groupid = @Groupid
-AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Account Lockout Detection');
+**Suggested Alert Template**: △ Custom - Ticket Creation Computer - Failures Only
+
+Insert the details of the monitor in the table below.
+
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result            |
+|--------------|----------------|------------|---------------|------------|----------|-------------------|
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 900      | \<Screenshot Below> |
+
+![Screenshot](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_1.png)
+
+## Dependencies
+
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)
+
+## Target
+
+Domain Controllers  
+![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_2.png)  
+The monitor set should be limited to the `<Server Role - AD - Infrastructure Master>` search.  
+![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_3.png)
+
+## Implementation
+
+Please follow the instructions provided in the implementation article to implement the solution:  
+[Implement - Remote Monitor - AD Account LockOut Detection](./Import%20-%20Remote%20Monitor%20-%20AD%20Account%20LockOut%20Detection.md)
+
+## Ticketing
+
+**Subject:** `<AD Account LockOut Detected on %COMPUTERNAME%>`
+
+**Body:**  
+Here are the details of the user(s) who were locked out:  
+`%RESULT%.`
+
+**Sample %RESULT%:**  
 ```
-
----
-
-### Step 4
-Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.  
-**Limit To:** `Server Role - AD - Infrastructure Master`  
-
-![Image 1](../../../static/img/AD-Account-LockOut-Detection/image_1.png)  
-![Image 2](../../../static/img/AD-Account-LockOut-Detection/image_2.png)  
-
----
-
-### Step 5
-Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
-
-
+EventID    :    4740
+EventDate   :   1/24/2024 7:34:50 AM
+Username    :   TestUser1
+Endpoint    :    DEV-Win11DomainJoined
+Domain      :    provaltestdomain.local
+DC          :    DEV-SERVER-2019$
+```

@@ -20,26 +20,12 @@ Validate that the [Script - Ticket Creation - Computer](<../scripts/Ticket Creat
 ### 3. Run SQL Query
 Run this SQL query from a RAWSQL monitor set to import the required search.
 
-```
+```sql
 INSERT INTO `sensorchecks`
 SELECT
 '' as `SensID`,
 'HP Servers' as `Name`,
-'SSELECT 
-   computers.computerid as `Computer Id`,
-   computers.name as `Computer Name`,
-   clients.name as `Client Name`,
-   computers.domain as `Computer Domain`,
-   computers.username as `Computer User`,
-   IF(INSTR(computers.os, \'server\') > 0, 1, 0) as `Computer.OS.IsServer`,
-   Computers.BiosMFG as `Computer.Hardware.Manufacturer`
-FROM Computers 
-LEFT JOIN inv_operatingsystem ON (Computers.ComputerId = inv_operatingsystem.ComputerId)
-LEFT JOIN Clients ON (Computers.ClientId = Clients.ClientId)
-LEFT JOIN Locations ON (Computers.LocationId = Locations.LocationID)
-WHERE 
-((((IF(INSTR(computers.os, \'server\') > 0, 1, 0) <> 0) AND (((Instr(Computers.BiosMFG, \'HPE\') > 0) OR (Instr(Computers.BiosMFG, \'Hewlett-Packard\') > 0))))))'
- as `SQL`,
+'SELECT \n   computers.computerid as `Computer Id`,\n   computers.name as `Computer Name`,\n   clients.name as `Client Name`,\n   computers.domain as `Computer Domain`,\n   computers.username as `Computer User`,\n   IF(INSTR(computers.os, \'server\')>0, 1, 0) as `Computer.OS.IsServer`,\n   Computers.BiosMFG as `Computer.Hardware.Manufacturer`\nFROM Computers \nLEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)\nLEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)\nLEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)\n WHERE \n((((IF(INSTR(computers.os, \'server\')>0, 1, 0)<>0) AND (((Instr(Computers.BiosMFG,\'HPE\') > 0) OR (Instr(Computers.BiosMFG,\'Hewlett-Packard\') > 0))))))\n' as `SQL`,
 '4' as `QueryType`,
 'READONLY' as `ListData`,
 '3' as `FolderID`,
@@ -57,7 +43,7 @@ Obtain the groupid(s) of the group(s) that the remote monitor should be applied 
 ### 5. Copy and Modify Query
 Copy the following query and replace `YOUR COMMA SEPARATED LIST OF GROUPID(S)` with the groupid(s) of the relevant groups. (The string to replace can be found at the very bottom of the query, right after **WHERE**).
 
-```
+```sql
 Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f96d2c44-49a1-11e0-8c4a-0050568b7d1e');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
@@ -71,7 +57,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\'; $startTime = (Get-Date).AddMinutes(-60);$excludeMessages=\'Connectivity has been lost for the NIC|SNMP trap to the Compaq Remote Insight Board trap due to processing error|A network interface has failed|HP WBEM data was captured|Network Adapter Link\'; $providers = \'Smart Array Events|Storage Agents|Server Agents|Nic Agents|hp|Cissesrv|HPE\'; Get-WinEvent -FilterHashTable @{Logname = \'Application\',\'System\'; StartTime = $StartTime; Level = 1,2 } | Where-Object { $_.ProviderName -match $Providers -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\'; $startTime = (Get-Date).AddMinutes(-60) ;$excludeMessages=\'Connectivity has been lost for the NIC|SNMP trap to the Compaq Remote Insight Board trap due to processing error|A network interface has failed|HP WBEM data was captured|Network Adapter Link\'; $providers = \'Smart Array Events|Storage Agents|Server Agents|Nic Agents|hp|Cissesrv|HPE\'; Get-WinEvent -FilterHashTable @{Logname = \'Application\',\'System\'; StartTime = $StartTime; Level = 1,2 } | Where-Object { $_.ProviderName -match $Providers -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -81,51 +67,7 @@ SELECT '' as `AgentID`,
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -136,7 +78,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ### 6. Example Query
 An example of the query with groupids and modified thresholds.
 
-```
+```sql
 Set @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = 'f96d2c44-49a1-11e0-8c4a-0050568b7d1e');
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
@@ -150,7 +92,7 @@ SELECT '' as `AgentID`,
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference= \'SilentlyContinue\'; $startTime = (Get-Date).AddMinutes(-60);$excludeMessages=\'Connectivity has been lost for the NIC|SNMP trap to the Compaq Remote Insight Board trap due to processing error|A network interface has failed|HP WBEM data was captured|Network Adapter Link\'; $providers = \'Smart Array Events|Storage Agents|Server Agents|Nic Agents|hp|Cissesrv|HPE\'; Get-WinEvent -FilterHashTable @{Logname = \'Application\',\'System\'; StartTime = $StartTime; Level = 1,2 } | Where-Object { $_.ProviderName -match $Providers -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErroractionPreference= \'SilentlyContinue\'; $startTime = (Get-Date).AddMinutes(-60) ;$excludeMessages=\'Connectivity has been lost for the NIC|SNMP trap to the Compaq Remote Insight Board trap due to processing error|A network interface has failed|HP WBEM data was captured|Network Adapter Link\'; $providers = \'Smart Array Events|Storage Agents|Server Agents|Nic Agents|hp|Cissesrv|HPE\'; Get-WinEvent -FilterHashTable @{Logname = \'Application\',\'System\'; StartTime = $StartTime; Level = 1,2 } | Where-Object { $_.ProviderName -match $Providers -and $_.message -notmatch $excludeMessages } | Select-Object Id, TimeCreated, LogName, ProviderName, LevelDisplayName, Message | Group-Object -Property Id | Sort-Object -Property Count -Descending | Select-Object -Property count, group | Foreach-Object {$mostrecent = $_.Group | Sort-Object -Property TimeCreated -Descending | Select-Object -First 1; [pscustomobject]@{Occurrences=$_.Count; EventID=$mostrecent.id; Logname=$Mostrecent.Logname; Source=$MostRecent.ProviderName; MostRecentDate=$mostrecent.TimeCreated; Level=$Mostrecent.LevelDisplayName; Message = $MostRecent.Message }}"' as `DataOut`,
 '16' as `Comparor`,
 '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Occurrences' as `DataIn`,
 '' as `IDField`,
@@ -160,51 +102,7 @@ SELECT '' as `AgentID`,
 '21' as `Category`,
 '0' as `TicketCategory`,
 '1' as `ScriptTarget`,
-CONCAT(
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'-',
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-'SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-) as `GUID`,
+UUID() as `GUID`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
@@ -221,5 +119,3 @@ Check the concerned groups to ensure the monitor set is created and configured w
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
-
-

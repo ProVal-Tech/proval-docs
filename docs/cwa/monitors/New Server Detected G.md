@@ -18,6 +18,3 @@ It is suggested to create a ticket to the Pronoc board for clients requiring bac
 ## Target
 
 Global - Should be run without explicitly defined targets.
-
-
-

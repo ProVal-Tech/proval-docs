@@ -45,6 +45,3 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
-
-
-

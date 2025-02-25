@@ -49,7 +49,4 @@ Details: `
 
 ## Implementation
 
-[Implement - Remote Monitor - SMB1 Traffic Detection](<./SMB1 Traffic Detection.md>)
-
-
-
+[Implement - Remote Monitor - SMB1 Traffic Detection](<./Implement-%20SMB1%20Traffic%20Detection.md>)

@@ -42,8 +42,4 @@ Local Machine
 
 **Body**:  
 `Winget Auto Update Errors detected on %ComputerName%. Failure details:`  
-`\<Failure Reason>`
-
-
-
-
+`<Failure Reason>`

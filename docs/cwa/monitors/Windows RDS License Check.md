@@ -21,9 +21,14 @@ This remote monitor checks if the RDS licensing server has issues with licenses.
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Comparator | Result | Interval |
-|--------------|----------------|-------------|------------|--------|----------|
-| System       | Default        | C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType" | Regex Match | 2 | 4 | Daily |
+| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
+|--------------|----------------|------------|---------------|-------------|----------|------|
+| System       | 127.0.0.1     | Run File   | **See Below**  | Regex Match | Daily     | [2,4] |
+
+**Execute Info:**
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "Get-CimInstance -Namespace 'Root/CIMV2/TerminalServices' -Class Win32_TerminalServiceSetting | Select-Object -ExpandProperty LicensingType"
+```
 
 ## Dependencies
 
@@ -42,6 +47,3 @@ Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Li
 **Failure:** We have detected a licensing issue with your RDS Licensing Server. The possibilities are that either the license is misconfigured or has expired. Please check.  
 
 **Success:** The license issue has been resolved.
-
-
-

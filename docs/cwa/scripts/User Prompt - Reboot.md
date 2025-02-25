@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This script is triggered from the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). The script prompts the user to reboot with a simple yes or no prompt. There are three EDFs that get imported with the script:
+This script is triggered from the monitor [Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). The script prompts the user to reboot with a simple yes or no prompt. There are three EDFs that get imported with the script:
 
 - **Pending Reboot** [Checkbox - Manually Editable]  
   ![](../../../static/img/User-Prompt---Reboot/image_1.png)
@@ -28,7 +28,7 @@ If the user chooses to suppress the prompt by hitting no, it will update the Las
 
 ## Script is Monitor Driven Only
 
-This script is designed to run only when triggered by [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). Manual running of this script will output a log entry into the Scripts tab stating, "This script is designed to run only when triggered by a monitor and should not be run manually. Exiting."
+This script is designed to run only when triggered by [Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). Manual running of this script will output a log entry into the Scripts tab stating, "This script is designed to run only when triggered by a monitor and should not be run manually. Exiting."
 
 ## Dependencies
 
@@ -66,7 +66,3 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDFs outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 id: '5e33196d-a1ce-4a8d-bc78-825c45ce8329'
-title: 'Set-PsRepository PSGallery Change'
-title_meta: 'Set-PsRepository PSGallery Change'
+title: 'Set-PsRepository PSGallery [Change]'
+title_meta: 'Set-PsRepository PSGallery [Change]'
 keywords: ['psgallery', 'repository', 'monitor', 'windows', 'trust']
 description: 'This document provides a summary and details on a remote monitor that sets PSGallery as a trusted PowerShell repository if it is not already configured. It highlights the changes made to the systems, the target environment, and implementation steps, ensuring that users can effectively manage their PowerShell repositories.'
 tags: ['security', 'update', 'windows']
@@ -16,7 +16,6 @@ This remote monitor attempts to set `PSGallery` as a trusted PowerShell reposito
 ![Image](../../../static/img/Set-PsRepository-PSGallery-Change/image_1.png)
 
 This monitor will make changes to all systems it is deployed to.  
-![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)  
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)
 
 **What will change?**  
@@ -44,7 +43,4 @@ Managed Windows Machines
 
 ## Implementation
 
-[Import - Remote Monitor - Set-PsRepository PSGallery](<./Set-PsRepository PSGallery.md>)
-
-
-
+[Import - Remote Monitor - Set-PsRepository PSGallery](<./Import-Remote-Monitor-Set-PsRepository-PSGallery.md>)

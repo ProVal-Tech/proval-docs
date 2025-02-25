@@ -16,11 +16,8 @@ This RAWSQL monitor detects machines where the restore point is currently disabl
 ## Dependencies
 
 - [Restore Point - Enabled](<../roles/Restore Point - Enabled.md>)  
-- @System Restore - Enable [Autofix, Params] (Script)
+- [System Restore - Enable [Autofix, Params]](../scripts/System%20Restore%20-%20Enable.md)
 
 ## Target
 
 Workstations
-
-
-

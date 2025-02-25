@@ -1,97 +1,44 @@
 ---
-id: '2fee5750-3a75-4256-b1b6-fcf2b81dccd6'
+id: 'a0ee778f-854b-4c86-aa0f-192a09019fe3'
 title: 'Windows Cluster Shared Volume Detection'
 title_meta: 'Windows Cluster Shared Volume Detection'
-keywords: ['windows', 'cluster', 'shared', 'volume', 'detection', 'monitoring']
-description: 'This document provides a step-by-step guide for implementing a Windows Cluster Shared Volume Detection monitor in ConnectWise Automate. It includes instructions for obtaining group IDs, executing SQL queries, and validating monitor settings to ensure proper functionality.'
-tags: ['setup', 'sql', 'windows']
+keywords: ['monitor', 'cluster', 'disk', 'space', 'alert']
+description: 'This document outlines the implementation of a monitor that detects cluster volumes with low disk space, triggering alerts based on predefined thresholds. It includes details on suggested alert styles, configurations, and dependencies for effective monitoring.'
+tags: ['cluster', 'disk', 'windows']
 draft: false
 unlisted: false
 ---
 
+## Summary
+
+This monitor will detect the cluster volumes where the cluster disk space is below 10% as an error and between 10-20% as a warning.
+
+## Details
+
+**Suggested "Limit to"**: Workstations, Windows Machines, etc.  
+**Suggested Alert Style**: Once, Twice, etc.  
+**Suggested Alert Template**: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`
+
+Insert the details of the monitor in the table below.
+
+| Check Action | Server Address | Check Type | Check Value   | Comparator   | Interval | Result                |
+|--------------|----------------|------------|---------------|--------------|----------|-----------------------|
+| System       | 127.0.0.1     | Run File   | \<REDACTED\>  | State Based  | 3600     | \<Screenshot below\>  |
+
+![Image](../../../static/img/CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection/image_1.png)
+
+## Dependencies
+
+[CWA Script - Windows Cluster Shared Volume [Autofix, Ticket]](<../scripts/Windows Cluster Shared Volume Autofix,Ticket.md>)
+
+## Target
+
+Should be targeted to a Cluster Detected group.
+
+![Image](../../../static/img/CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection/image_2.png)
+
 ## Implementation
 
-1. Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.
+Please follow the implementation document below to install this content:
 
-2. Copy the following query and execute it as a RAWSQL directly:
-
-   ```sql
-   SET @TicketCategorySet = 0;
-   SET @DefaultCreateTicket = (SELECT alertactionid FROM alerttemplate WHERE NAME = 'Default - Do Nothing');
-   INSERT INTO groupagents 
-   SELECT '' as `AgentID`,
-   `groupid` as `GroupID`,
-   '' as `SearchID`,
-   'Windows Cluster Shared Volume Detection' as `Name`,
-   '6' as `CheckAction`,
-   @DefaultCreateTicket as `AlertAction`,
-   'Windows Cluster Shared Volume - Free Space Under 10 Percent at %computername%~~~Windows Cluster Shared Volume - Free Space Above 10 Percent at %computername%/%clientname%!!!Windows Cluster Shared Volume - Free Space Under 10 Percent at %computername%~~~Windows Cluster Shared Volume - Free Space Under 10 Percent at %computername%/%clientname%' as `AlertMessage`,
-   '0' as `ContactID`,
-   '3600' as `interval`,
-   '127.0.0.1' as `Where`,
-   '7' as `What`,
-   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command \"$ErroractionPreference = ''SilentlyContinue'';$diskStatuses = @();Get-ClusterSharedVolume | ForEach-Object {$freeSpacePercent = [math]::Round((($_.SharedVolumeInfo.Partition.FreeSpace) / ($_.SharedVolumeInfo.Partition.Size) * 100), 2);if ($freeSpacePercent -lt 10) {$diskStatuses += ''Failed''} elseif ($freeSpacePercent -ge 10 -and $freeSpacePercent -le 20) {$diskStatuses += ''Warning''} else {$diskStatuses += ''Success''}};if ($diskStatuses -contains ''Failed'') {''Failed''} elseif ($diskStatuses -contains ''Warning'') {''Warning''} else {''Success''}\"' as `DataOut`,
-   '16' as `Comparor`,
-   '10|(^(//r//n%7COK%7CSuccess))|5|Warning|5|Failed' as `DataIn`,
-   '' as `IDField`,
-   '1' as `AlertStyle`,
-   '0' as `ScriptID`,
-   '' as `datacollector`,
-   '19' as `Category`,
-   '0' as `TicketCategory`,
-   @TicketCategorySet as `ScriptTarget`,
-   CONCAT(
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-   ) as `GUID`,
-   'root' as `UpdatedBy`,
-   (NOW()) as `UpdateDate`
-   FROM mastergroups m
-   WHERE m.groupid IN (SELECT groupid FROM mastergroups WHERE NAME = 'Cluster Detected')
-   AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'Windows Cluster Shared Volume Detection')
-   ```
-
-3. Now execute your query from a RAWSQL monitor set.
-   - Once the query is executed, reload the system cache.
-     - ![Image](../../../static/img/Windows-Cluster-Shared-Volume-Detection/image_1.png)
-
-4. Reopen the group where the monitor is created (It should be the `Cluster Detected` group).
-   - Validate that the monitor is limited to the search 'Windows 10/11 Machines'.
-   - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
-
-
-
+- [Import - Remote Monitor - Windows Cluster Shared Volume Detection](<./Import-Remote-Monitor-Windows-Cluster-Shared-Volume-Detection.md>)

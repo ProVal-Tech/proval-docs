@@ -20,11 +20,3 @@ The monitor set is used to identify computers whose patching schedule ended with
 ## Target
 
 Windows machines with active Automate Patching policies.
-
-## Translated SQL
-
-
-
-
-
-

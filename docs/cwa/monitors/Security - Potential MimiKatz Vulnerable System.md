@@ -15,12 +15,9 @@ This monitor detects potential threats from MimiKatz based on agent roles.
 
 ## Dependencies
 
-- @Mimikatz - Potential Threat - Roles
-- @Mimikatz registry disable - Script
+- [MimiKatz - Potential Threat](../roles/Mimikatz%20-%20Potential%20Threat.md)
+- [Mimikatz registry disable](../scripts/MimiKatz%20Registry%20Disable.md)
 
 ## Target
 
 Windows Agent
-
-
-

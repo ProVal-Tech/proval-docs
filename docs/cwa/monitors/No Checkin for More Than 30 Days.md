@@ -24,6 +24,3 @@ Global
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
 **Note:** The alert template should execute the [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
-
-
-

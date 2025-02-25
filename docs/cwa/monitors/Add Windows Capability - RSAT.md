@@ -40,14 +40,11 @@ Required Group of Machines
 **Subject:** `Failed to add RSAT Features on %computername%`  
 
 **Body:**  
-`Remote Server Administration Tools Features are not enabled on the %ComputerName%. Automate attempted to enable it but failed. Please review manually.`  
-`Command Executed: Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online`  
-`Output: %RESULT%`  
-`How to enable it manually: https://learn.microsoft.com/en-us/troubleshoot/windows-server/system-management-components/remote-server-administration-tools`
+`Remote Server Administration Tools Features are not enabled on the %ComputerName%. Automate attempted to enable it but failed. Please review manually.
+Command Executed: Get-WindowsCapability -Name RSAT* -Online | Where-Object{$_.State -eq 'NotPresent'} | Add-WindowsCapability -Online
+Output: %RESULT%
+How to enable it manually: https://learn.microsoft.com/en-us/troubleshoot/windows-server/system-management-components/remote-server-administration-tools`
 
 ## Implementation
 
-[Implement - Remote Monitor - Add Windows Capability - RSAT](<./Add Windows Capability - RSAT.md>)
-
-
-
+[Implement - Remote Monitor - Add Windows Capability - RSAT](<./Implement-%20Add%20Windows%20Capability%20-%20RSAT.md>)

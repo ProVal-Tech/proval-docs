@@ -39,7 +39,4 @@ Windows Machines
 
 ## How to Import
 
-[Import - Remote Monitor - Reset Local User Password Age](<./Import - Remote Monitor - Reset Local User Password Age.md>)
-
-
-
+[Import - Remote Monitor - Reset Local User Password Age](<./Import%20-%20Remote Monitor%20-%20Reset%20Local%20User%20Password%20Age.md>)

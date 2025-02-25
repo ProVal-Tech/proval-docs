@@ -22,6 +22,3 @@ This monitor will trigger the [Workaround - Microsoft Support Diagnostic Tool Vu
 ## Target
 
 Windows computers
-
-
-

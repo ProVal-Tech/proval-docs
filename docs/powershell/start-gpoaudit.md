@@ -1,7 +1,7 @@
 ---
-id: ps-show-prompt
-title: 'Show-Prompt'
-title_meta: 'Show-Prompt'
+id: ps-start-gpoaudit
+title: 'Start-GPOAudit'
+title_meta: 'Start-GPOAudit'
 keywords: ['prompt', 'user', 'input', 'dialog']
 description: 'Documentation for the Show-Prompt command to display a user prompt for input.'
 tags: ['windows']

@@ -2,12 +2,50 @@
 id: '88f2c503-bd4b-4bb5-83d0-72f5fb6a0137'
 title: 'DNS Service Monitoring'
 title_meta: 'DNS Service Monitoring'
-keywords: ['dns', 'monitoring', 'sql', 'alert', 'service']
-description: 'This document outlines the implementation steps for setting up DNS service monitoring using SQL queries in a RAWSQL monitor. It includes detailed instructions for executing the necessary SQL commands and verifying the configuration in the ConnectWise Automate platform.'
-tags: ['dns', 'sql']
+keywords: ['dns', 'monitor', 'service', 'windows', 'ticketing']
+description: 'This document outlines a PowerShell remote monitor designed to ensure the DNS service is running on Windows servers. It provides details on alert styles, suggested settings, and ticketing information for when the service is not operational.'
+tags: ['windows']
 draft: false
 unlisted: false
 ---
+
+## Summary
+
+This PowerShell remote monitor attempts to run the DNS service if it's not running.
+
+## Details
+
+**Suggested "Limit to"**: `All`  
+**Suggested Alert Style**: `Once`  
+**Suggested Alert Template**: `△ Custom - Ticket Creation - Computer `
+
+Insert the details of the monitor in the table below.
+
+| Check Action | Server Address | Check Type | Check Value | Comparator   | Interval | Result                 |
+|--------------|----------------|-------------|-------------|--------------|----------|------------------------|
+| System       | 127.0.0.1      | Run File    | REDACTED    | State Based  | 600      | \<Screenshot Below\>   |
+
+![Screenshot](../../../static/img/CWM---Automate---Remote-Monitor---DNS-Service-Monitoring/image_1.png)
+
+## Dependencies
+
+[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+
+## Target
+
+Windows DNS Servers  
+![Target Image](../../../static/img/CWM---Automate---Remote-Monitor---DNS-Service-Monitoring/image_2.png)
+
+## Ticketing
+
+**Subject:** `DNS Service Not Running on \<Computer Name>`  
+
+**Body:**  
+`'DNS' service is stopped on \<Computer Name>. Automate attempted to start the service but failed.`  
+
+`\<Failure Reason>`
+
+## Implementation
 
 ## Implementation Steps
 
@@ -23,14 +61,14 @@ unlisted: false
    'ProVal - Production - DNS Service Monitoring' AS `Name`,
    '6' AS `CheckAction`,
    @Alertaction AS `AlertAction`,
-   'DNS Service Not Running on %ComputerName%~~~Service is running now.!!!DNS Service Not Running on %ComputerName%~~~//DNS// service is stopped on %ComputerName%. Automate attempted to start the service but failed.' AS `AlertMessage`,
+   'DNS Service Not Running on %ComputerName%~~~Service is running now.!!!DNS Service Not Running on %ComputerName%~~~\'DNS\' service is stopped on %ComputerName%. Automate attempted to start the service but failed.' AS `AlertMessage`,
    '0' AS `ContactID`,
    '600' AS `interval`,
    '127.0.0.1' AS `Where`,
    '7' AS `What`,
-   'C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -ExecutionPolicy Bypass -Command "$service = (Get-Service -Name //DNS// -ErrorAction SilentlyContinue); if ($Service) { if ($Service.Status -ne //Running//) { try { Restart-Service -Name //DNS// -Force -WarningAction SilentlyContinue -ErrorAction Stop } catch { return /////"Failed to start the //DNS// service. Reason: $($Error[0].Exception.Message)/////"; } } }"' AS `DataOut`,
+   'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$service = (Get-Service -Name \'DNS\' -ErrorAction SilentlyContinue); if ($Service) { if ($Service.Status -ne \'Running\') { try { Restart-Service -Name \'DNS\' -Force -WarningAction SilentlyContinue -ErrorAction Stop } catch { return \\"Failed to start the \'DNS\' service. Reason: $($Error[0].Exception.Message)\\"; } } }"' AS `DataOut`,
    '16' AS `Comparor`,
-   '10|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))|11|((^((OK){0,}(//r//n){0,}[//r//n]{0,}//s{0,})$)%7C(^$))%7C(^((//r//n){0,}[//r//n]{0,}//s{0,})Failed to start the)|10|^((//r//n){0,}[//r//n]{0,}//s{0,})Failed to start the' AS `DataIn`,
+   '10|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))|11|((^((OK){0,}(\\r\\n){0,}[\\r\\n]{0,}\\s{0,})$)%7C(^$))%7C(^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Failed to start the)|10|^((\\r\\n){0,}[\\r\\n]{0,}\\s{0,})Failed to start the' AS `DataIn`,
    '0' AS `IDField`,
    '1' AS `AlertStyle`,
    '0' AS `ScriptID`,
@@ -38,44 +76,7 @@ unlisted: false
    '5' AS `Category`,
    '0' AS `TicketCategory`,
    '1' AS `ScriptTarget`,
-   CONCAT(
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   '-',
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
-   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
-   ) AS `GUID`,
+   UUID() AS `GUID`,
    'root' AS `UpdatedBy`,
    (NOW()) AS `UpdateDate`
    FROM mastergroups m
@@ -88,6 +89,3 @@ unlisted: false
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
    ![Check Remote Monitor](../../../static/img/DNS-Service-Monitoring/image_2.png)
-
-
-

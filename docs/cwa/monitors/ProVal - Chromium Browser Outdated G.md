@@ -29,6 +29,3 @@ Suggested Autofix - [CWM - Automate - Script - Chromium Browser Update](<../scri
 The suggested target for the monitor will be partially generalized, as group names can vary between Automate systems. Examples include:
 
 - Global - Should be run without explicitly defined targets.
-
-
-
