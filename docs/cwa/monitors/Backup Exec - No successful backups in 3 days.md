@@ -36,9 +36,9 @@ Backup Management > Backup Exec
 
 ## Ticketing
 
-**Subject:** Backup Exec - No successful backups in 3 days - <ComputerName>  
+**Subject:** Backup Exec - No successful backups in 3 days - \<ComputerName\>  
 
-**Body:** A successful backup job is not detected on <ComputerName> in 3 days. Please investigate.
+**Body:** A successful backup job is not detected on \<ComputerName\> in 3 days. Please investigate.
 
 ## How to Import
 

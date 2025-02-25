@@ -27,7 +27,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result               |
 |--------------|----------------|------------|---------------|-------------|----------|----------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | <Screenshot Below>   |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | \<Screenshot Below\>   |
 
 ![Image](../../../static/img/Windows-License-Status/image_1.png)
 
