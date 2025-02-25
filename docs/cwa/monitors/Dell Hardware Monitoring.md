@@ -1,10 +1,10 @@
 ---
-id: '5be9ccc8-0317-42e4-ba36-5fa203e9582e'
+id: '77a9ff77-6e7a-474e-8796-d44f2066ff16'
 title: 'Dell Hardware Monitoring'
 title_meta: 'Dell Hardware Monitoring'
 keywords: ['dell', 'event', 'monitor', 'logs', 'server']
 description: 'This document provides a detailed overview of an internal monitor designed to detect critical and error event logs from Dell servers using the Server Administrator event source. It includes instructions on setting up the monitor and utilizing the appropriate alert template for ticket creation.'
-tags: []
+tags: ['networking']
 draft: false
 unlisted: false
 ---
