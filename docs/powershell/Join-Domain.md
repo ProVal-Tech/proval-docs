@@ -1,5 +1,5 @@
 ---
-id: ps-join-domain
+id: 'fb3e4906-6520-4b5b-bc35-db7b79b45f7d'
 title: 'Join-Domain'
 title_meta: 'Join-Domain'
 keywords: ['join', 'domain', 'online', 'offline']

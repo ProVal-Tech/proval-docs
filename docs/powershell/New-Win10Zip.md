@@ -1,5 +1,5 @@
 ---
-id: ps-new-win10zip
+id: '7707aa81-b387-4a31-9f46-372baed60b9f'
 title: 'New-Win10Zip'
 title_meta: 'New-Win10Zip'
 keywords: ['windows', 'iso', 'zip', 'deployment']

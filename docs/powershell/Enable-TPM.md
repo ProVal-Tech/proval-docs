@@ -1,5 +1,5 @@
 ---
-id: ps-enable-tpm
+id: 'cc838fb3-1ff7-4bbd-90b3-48e7fd4afd61'
 title: 'Enable-TPM'
 title_meta: 'Enable-TPM'
 keywords: ['enable', 'tpm', 'provisioning', 'security']

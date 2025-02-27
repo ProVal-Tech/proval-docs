@@ -1,5 +1,5 @@
 ---
-id: ps-set-wallpaper
+id: 'be77cc20-d07b-4cbd-b762-cb20913860b9'
 title: 'Set-Wallpaper'
 title_meta: 'Set-Wallpaper'
 keywords: ['wallpaper', 'desktop', 'background', 'image']

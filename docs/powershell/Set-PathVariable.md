@@ -1,5 +1,5 @@
 ---
-id: ps-set-pathvariable
+id: 'f91caf21-f00c-4459-8b1f-634720a92f4b'
 title: 'Set-PathVariable'
 title_meta: 'Set-PathVariable'
 keywords: ['path', 'environment', 'variable', 'scope']

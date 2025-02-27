@@ -1,5 +1,5 @@
 ---
-id: ps-reset-krbtgtkeys
+id: 'ae748a86-1683-4d69-9c96-17a6a8f79950'
 title: 'Reset-KrbtgtKeys'
 title_meta: 'Reset-KrbtgtKeys'
 keywords: ['krbtgt', 'reset', 'active-directory', 'security']

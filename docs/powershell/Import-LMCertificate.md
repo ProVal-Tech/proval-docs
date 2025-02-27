@@ -1,5 +1,5 @@
 ---
-id: ps-import-lmcertificate
+id: '550036d9-941a-4b10-a550-fd0a81ba3d14'
 title: 'Import-LMCertificate'
 title_meta: 'Import-LMCertificate'
 keywords: ['import', 'certificate', 'localmachine', 'security']

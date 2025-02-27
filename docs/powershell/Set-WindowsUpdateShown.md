@@ -1,5 +1,5 @@
 ---
-id: ps-set-windowsupdateshown
+id: '4dc89662-df52-441a-ae1f-e7482949f566'
 title: 'Set-WindowsUpdateShown'
 title_meta: 'Set-WindowsUpdateShown'
 keywords: ['windows', 'update', 'unhide', 'kbarticles']

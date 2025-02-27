@@ -1,5 +1,5 @@
 ---
-id: ps-get-wifiprofile
+id: '478f97f0-d069-4f50-9b93-2c9ca9ec63cd'
 title: 'Get-WifiProfile'
 title_meta: 'Get-WifiProfile'
 keywords: ['retrieve', 'wifi', 'profile', 'network']

@@ -1,5 +1,5 @@
 ---
-id: ps-set-firefoxhomepage
+id: '09a48350-5bd8-4d4a-8436-d1aa46bcd92e'
 title: 'Set-FirefoxHomepage'
 title_meta: 'Set-FirefoxHomepage'
 keywords: ['homepage', 'firefox', 'browser', 'configuration']

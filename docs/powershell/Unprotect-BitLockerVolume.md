@@ -1,5 +1,5 @@
 ---
-id: ps-unprotect-bitlockervolume
+id: '22114d12-c60e-479e-93a5-50d3450b6631'
 title: 'Unprotect-BitLockerVolume'
 title_meta: 'Unprotect-BitLockerVolume'
 keywords: ['unprotect', 'bitlocker', 'volume', 'disable']

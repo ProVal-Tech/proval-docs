@@ -1,5 +1,5 @@
 ---
-id: ps-install-snapagent
+id: '0cf14533-c145-4a77-8ea7-8c70476768a9'
 title: 'Install-SnapAgent'
 title_meta: 'Install-SnapAgent'
 keywords: ['install', 'snapagent', 'software', 'monitoring']

@@ -1,5 +1,5 @@
 ---
-id: ps-set-userregistryvalue
+id: '08e8fde8-c9e8-4c37-8ae9-1610a4f6be54'
 title: 'Set-UserRegistryValue'
 title_meta: 'Set-UserRegistryValue'
 keywords: ['registry', 'user', 'configuration', 'windows']

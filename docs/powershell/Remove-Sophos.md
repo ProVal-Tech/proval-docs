@@ -1,5 +1,5 @@
 ---
-id: ps-remove-sophos
+id: '3e0adee0-1a8c-476a-aea4-616a66b4de12'
 title: 'Remove-Sophos'
 title_meta: 'Remove-Sophos'
 keywords: ['remove', 'sophos', 'uninstall', 'security']

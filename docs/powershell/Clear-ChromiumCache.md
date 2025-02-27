@@ -1,5 +1,5 @@
 ---
-id: ps-clear-chromiumcache
+id: 'b9e7f45e-b830-44b0-b296-121905ec770f'
 title: 'Clear-ChromiumCache'
 title_meta: 'Clear-ChromiumCache'
 keywords: ['clear', 'cache', 'chromium', 'browser']

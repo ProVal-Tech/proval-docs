@@ -1,5 +1,5 @@
 ---
-id: ps-get-gpresult
+id: 'f5d71bf9-29a7-4aa3-a349-0378cb97575a'
 title: 'Get-GPResult'
 title_meta: 'Get-GPResult'
 keywords: ['gpresult', 'gpo', 'report', 'rsop']

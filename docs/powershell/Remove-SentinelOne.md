@@ -1,5 +1,5 @@
 ---
-id: ps-remove-sentinelone
+id: 'c64c47e7-8da3-46c6-9765-29da85addc2f'
 title: 'Remove-SentinelOne'
 title_meta: 'Remove-SentinelOne'
 keywords: ['remove', 'sentinelone', 'uninstall', 'security']

@@ -1,5 +1,5 @@
 ---
-id: ps-get-desynchronizedsqlreplicas
+id: '37ac5241-5cd4-429b-8aa0-8150173b7cff'
 title: 'Get-DesynchronizedSqlReplicas'
 title_meta: 'Get-DesynchronizedSqlReplicas'
 keywords: ['sql', 'replicas', 'desynchronized', 'database']

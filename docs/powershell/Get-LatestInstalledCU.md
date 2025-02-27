@@ -1,5 +1,5 @@
 ---
-id: ps-get-latestinstalledcu
+id: '81d82975-889b-49e4-b229-36d4f162a4ff'
 title: 'Get-LatestInstalledCU'
 title_meta: 'Get-LatestInstalledCU'
 keywords: ['cumulative', 'update', 'windows', 'patch']

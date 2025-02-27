@@ -1,5 +1,5 @@
 ---
-id: ps-get-dcdiagreport
+id: '7b4d82e8-0234-4757-9c0b-e13146e28212'
 title: 'Get-DCDiagReport'
 title_meta: 'Get-DCDiagReport'
 keywords: ['dcdiag', 'domain', 'controller', 'report']

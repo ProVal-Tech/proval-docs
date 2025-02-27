@@ -1,5 +1,5 @@
 ---
-id: ps-get-powerplan
+id: '4d7993ab-1fa8-4b96-9f19-f503737ea015'
 title: 'Get-PowerPlan'
 title_meta: 'Get-PowerPlan'
 keywords: ['powerplan', 'settings', 'configuration', 'energy']

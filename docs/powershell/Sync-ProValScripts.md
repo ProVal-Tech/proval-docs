@@ -1,5 +1,5 @@
 ---
-id: ps-sync-provalscripts
+id: '8d1c65da-3b2c-4d4e-8d5a-4e3ec665c3d8'
 title: 'Sync-ProValScripts'
 title_meta: 'Sync-ProValScripts'
 keywords: ['sync', 'repository', 'scripts', 'git']

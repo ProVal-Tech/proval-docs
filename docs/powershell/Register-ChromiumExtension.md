@@ -1,5 +1,5 @@
 ---
-id: ps-register-chromiumextension
+id: '481992c0-adcd-4275-bd5c-aa59fd4a7b17'
 title: 'Register-ChromiumExtension'
 title_meta: 'Register-ChromiumExtension'
 keywords: ['register', 'extension', 'chromium', 'browser']

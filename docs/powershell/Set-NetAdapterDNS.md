@@ -1,5 +1,5 @@
 ---
-id: ps-set-netadapterdns
+id: '87596185-93cc-43ae-935b-96f833eea4d2'
 title: 'Set-NetAdapterDNS'
 title_meta: 'Set-NetAdapterDNS'
 keywords: ['dns', 'network', 'adapter', 'configuration']

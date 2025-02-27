@@ -1,5 +1,5 @@
 ---
-id: ps-clear-chromiumhomepage
+id: '8c68f90b-3bd8-4c83-9383-f939460f36df'
 title: 'Clear-ChromiumHomepage'
 title_meta: 'Clear-ChromiumHomepage'
 keywords: ['clear', 'homepage', 'chromium', 'browser']

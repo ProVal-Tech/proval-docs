@@ -1,5 +1,5 @@
 ---
-id: ps-install-perchlogshipper
+id: '41fd7a2b-4604-4ef1-bd74-c7a4325da37e'
 title: 'Install-PerchLogShipper'
 title_meta: 'Install-PerchLogShipper'
 keywords: ['install', 'perch', 'logshipper', 'monitoring']

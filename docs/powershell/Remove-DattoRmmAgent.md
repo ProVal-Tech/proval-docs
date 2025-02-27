@@ -1,5 +1,5 @@
 ---
-id: ps-remove-dattormmagent
+id: '2a4259c9-915e-42de-a5d4-3d92dca5a8a1'
 title: 'Remove-DattoRmmAgent'
 title_meta: 'Remove-DattoRmmAgent'
 keywords: ['remove', 'datto', 'rmm', 'cleanup']

@@ -1,5 +1,5 @@
 ---
-id: ps-install-automateagentgpo
+id: '0163e7d2-d72d-4b31-b0fe-294df333d125'
 title: 'Install-AutomateAgentGPO'
 title_meta: 'Install-AutomateAgentGPO'
 keywords: ['install', 'automate', 'agent', 'gpo']

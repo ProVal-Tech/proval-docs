@@ -1,5 +1,5 @@
 ---
-id: ps-get-userchilditem
+id: '9d83f677-a8c0-4757-b33d-cf35c9ca15f6'
 title: 'Get-UserChildItem'
 title_meta: 'Get-UserChildItem'
 keywords: ['retrieve', 'user', 'files', 'folders']

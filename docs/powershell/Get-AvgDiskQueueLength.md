@@ -1,5 +1,5 @@
 ---
-id: ps-get-avgdiskqueuelength
+id: '662544c5-360c-4348-9e8f-a95b5bb4efd9'
 title: 'Get-AvgDiskQueueLength'
 title_meta: 'Get-AvgDiskQueueLength'
 keywords: ['disk', 'queue', 'length', 'performance']

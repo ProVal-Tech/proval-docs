@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-officescrub
+id: 'e9253255-9a1f-4392-8ec6-9f7fb6e401ed'
 title: 'Invoke-OfficeScrub'
 title_meta: 'Invoke-OfficeScrub'
 keywords: ['uninstall', 'office', 'cleanup', 'remove']

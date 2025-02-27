@@ -1,5 +1,5 @@
 ---
-id: ps-get-diskinfo
+id: '5cba460d-9322-4c3b-9630-55cb46d57b1a'
 title: 'Get-DiskInfo'
 title_meta: 'Get-DiskInfo'
 keywords: ['disk', 'info', 'performance', 'health']

@@ -1,5 +1,5 @@
 ---
-id: ps-disable-dotnet3
+id: '11fe51f7-8d56-485e-9342-3492254ae7ed'
 title: 'Disable-DotNet3'
 title_meta: 'Disable-DotNet3'
 keywords: ['disable', 'dotnet', 'update', 'windows']

@@ -1,5 +1,5 @@
 ---
-id: ps-update-adobecc
+id: 'baddd511-d11a-4d0e-be88-cd8c942b5e39'
 title: 'Update-AdobeCC'
 title_meta: 'Update-AdobeCC'
 keywords: ['adobe', 'creativecloud', 'update', 'software']

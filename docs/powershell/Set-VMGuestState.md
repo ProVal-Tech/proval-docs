@@ -1,5 +1,5 @@
 ---
-id: ps-set-vmgueststate
+id: '63bb684c-e259-46a2-8630-95847705fe6a'
 title: 'Set-VMGuestState'
 title_meta: 'Set-VMGuestState'
 keywords: ['vm', 'guest', 'state', 'hyper-v']

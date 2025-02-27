@@ -1,5 +1,5 @@
 ---
-id: ps-clear-geckocache
+id: '4a400b6b-d468-417f-914b-8094e645fdb4'
 title: 'Clear-GeckoCache'
 title_meta: 'Clear-GeckoCache'
 keywords: ['clear', 'gecko', 'cache', 'firefox']

@@ -1,5 +1,5 @@
 ---
-id: ps-get-windowsupdatereport
+id: 'b5940a1c-0e82-4756-86a2-b49e57d664f1'
 title: 'Get-WindowsUpdateReport'
 title_meta: 'Get-WindowsUpdateReport'
 keywords: ['windows', 'update', 'report', 'patches']

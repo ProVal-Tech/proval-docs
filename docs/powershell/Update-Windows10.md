@@ -1,5 +1,5 @@
 ---
-id: ps-update-windows10
+id: '7fdd2a3b-2dca-43db-8a1d-f350967f1055'
 title: 'Update-Windows10'
 title_meta: 'Update-Windows10'
 keywords: ['update', 'windows', 'upgrade', 'installation']

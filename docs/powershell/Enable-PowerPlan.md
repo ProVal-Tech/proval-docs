@@ -1,5 +1,5 @@
 ---
-id: ps-enable-powerplan
+id: 'a8da2d1c-395e-49ce-b612-75acc9176f3b'
 title: 'Enable-PowerPlan'
 title_meta: 'Enable-PowerPlan'
 keywords: ['enable', 'powerplan', 'profile', 'configuration']

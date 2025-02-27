@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-lsuclientupdate
+id: 'da759e59-6f62-476d-a776-39b09e07ffbe'
 title: 'Invoke-LsuClientUpdate'
 title_meta: 'Invoke-LsuClientUpdate'
 keywords: ['lenovo', 'update', 'firmware', 'driver']
