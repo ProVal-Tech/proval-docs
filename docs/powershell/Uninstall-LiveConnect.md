@@ -1,5 +1,5 @@
 ---
-id: ps-uninstall-liveconnect
+id: '1787ff26-0a78-4f87-8189-31a9363071d6'
 title: 'Uninstall-LiveConnect'
 title_meta: 'Uninstall-LiveConnect'
 keywords: ['uninstall', 'liveconnect', 'remove', 'cleanup']

@@ -1,5 +1,5 @@
 ---
-id: ps-get-bitlockerstate
+id: 'ee75973b-35e0-4698-872b-a8a3d95fc8c6'
 title: 'Get-BitLockerState'
 title_meta: 'Get-BitLockerState'
 keywords: ['bitlocker', 'encryption', 'status', 'drive']

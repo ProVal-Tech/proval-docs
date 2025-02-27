@@ -1,5 +1,5 @@
 ---
-id: ps-get-newlocaladmin
+id: 'a79af7f1-2ef6-4769-bf7f-b0214e198ac1'
 title: 'Get-NewLocalAdmin'
 title_meta: 'Get-NewLocalAdmin'
 keywords: ['new', 'local', 'admin', 'permissions']

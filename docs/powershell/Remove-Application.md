@@ -1,5 +1,5 @@
 ---
-id: ps-remove-application
+id: '8230693f-cf73-479d-8279-d2ff54c4296e'
 title: 'Remove-Application'
 title_meta: 'Remove-Application'
 keywords: ['remove', 'application', 'uninstall', 'cleanup']

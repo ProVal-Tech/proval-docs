@@ -1,5 +1,5 @@
 ---
-id: ps-import-log4jtable
+id: 'a9db2857-d76e-4c63-8916-80ed141dc5b5'
 title: 'Import-Log4JTable'
 title_meta: 'Import-Log4JTable'
 keywords: ['import', 'log4j', 'mysql', 'database']

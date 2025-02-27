@@ -1,5 +1,5 @@
 ---
-id: ps-install-msteams
+id: 'b1410ff8-58df-45cf-a66a-a727f53cc7af'
 title: 'Install-MSTeams'
 title_meta: 'Install-MSTeams'
 keywords: ['install', 'msteams', 'teamsbootstrapper', 'upgrade']

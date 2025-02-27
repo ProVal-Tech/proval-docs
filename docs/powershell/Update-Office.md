@@ -1,5 +1,5 @@
 ---
-id: ps-update-office  
+id: '498075f7-623c-4b92-9fbc-fe0f5e7113a4'  
 title: 'Update-Office'  
 title_meta: 'Update-Office'  
 keywords: ['update', 'office365', 'repair', 'version']  

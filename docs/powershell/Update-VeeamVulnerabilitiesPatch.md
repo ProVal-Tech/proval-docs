@@ -1,5 +1,5 @@
 ---
-id: ps-update-veeamvulnerabilitiespatch
+id: '318fc4d1-a68d-4499-84fe-3bd57d56ca9a'
 title: 'Update-VeeamVulnerabilitiesPatch'
 title_meta: 'Update-VeeamVulnerabilitiesPatch'
 keywords: ['veeam', 'patch', 'vulnerabilities', 'update']

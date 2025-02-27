@@ -1,5 +1,5 @@
 ---
-id: ps-repair-officeautomaticupdate
+id: 'ae9fa5e1-eb5b-45e5-8777-977d50e39c97'
 title: 'Repair-OfficeAutomaticUpdate'
 title_meta: 'Repair-OfficeAutomaticUpdate'
 keywords: ['repair', 'office365', 'update', 'automatic']

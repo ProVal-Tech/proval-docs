@@ -1,5 +1,5 @@
 ---
-id: ps-get-criticaldiskinfo
+id: '880d2a63-b304-40a3-8ec3-1fb13b272fa7'
 title: 'Get-CriticalDiskInfo'
 title_meta: 'Get-CriticalDiskInfo'
 keywords: ['disk', 'health', 'monitoring', 'performance']

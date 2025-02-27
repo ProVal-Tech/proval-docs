@@ -1,5 +1,5 @@
 ---
-id: ps-rename-itgluedocuments
+id: 'bfa72bb7-6a35-497d-9435-758f28c81b39'
 title: 'Rename-ITGlueDocuments'
 title_meta: 'Rename-ITGlueDocuments'
 keywords: ['rename', 'itglue', 'documents', 'bulk']

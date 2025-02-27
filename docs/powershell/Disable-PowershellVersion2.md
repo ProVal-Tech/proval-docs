@@ -1,5 +1,5 @@
 ---
-id: ps-disable-powershellversion2
+id: '41a199c6-33c0-4c76-b882-ac7b9246a3cc'
 title: 'Disable-PowershellVersion2'
 title_meta: 'Disable-PowershellVersion2'
 keywords: ['disable', 'powershell', 'version', 'update']

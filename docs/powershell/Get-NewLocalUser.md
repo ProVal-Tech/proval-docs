@@ -1,5 +1,5 @@
 ---
-id: ps-get-newlocaluser
+id: 'bf4e1dbe-fa6a-48f5-8434-4d6933fa2616'
 title: 'Get-NewLocalUser'
 title_meta: 'Get-NewLocalUser'
 keywords: ['new', 'local', 'user', 'account']

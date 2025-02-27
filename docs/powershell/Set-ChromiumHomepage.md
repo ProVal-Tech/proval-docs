@@ -1,5 +1,5 @@
 ---
-id: ps-set-chromiumhomepage
+id: 'f07dd124-b64e-4906-8f33-5a2109ac73ab'
 title: 'Set-ChromiumHomepage'
 title_meta: 'Set-ChromiumHomepage'
 keywords: ['homepage', 'chromium', 'browser', 'configuration']

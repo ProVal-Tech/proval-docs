@@ -1,5 +1,5 @@
 ---
-id: ps-update-powershell  
+id: '04754010-1cd6-426b-ba7d-55ae36e60f53'  
 title: 'Update-PowerShell'  
 title_meta: 'Update-PowerShell'  
 keywords: ['update', 'powershell', 'installation', 'windows']  

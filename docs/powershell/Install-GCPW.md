@@ -1,5 +1,5 @@
 ---
-id: ps-install-gcpw
+id: '7afab3a2-71ce-4176-8c0e-e088ada0dad6'
 title: 'Install-GCPW'
 title_meta: 'Install-GCPW'
 keywords: ['install', 'gcpw', 'google', 'credential', 'provider']
