@@ -1,7 +1,7 @@
 ---
 id: '69ac0a53-e25a-4e16-b266-b174acf20b3f'
-title: 'Cisco Secure Client'
-title_meta: 'Cisco Secure Client'
+title: 'Cisco Secure Client - Package Installation'
+title_meta: 'Cisco Secure Client - Package Installation'
 keywords: ['cisco', 'secure', 'client', 'installation', 'windows', 'mac', 'vpn']
 description: 'This document provides a comprehensive guide on installing various Cisco Secure Client modules on Windows and MAC machines, including prerequisites, dependencies, user parameters, and detailed instructions for execution and troubleshooting.'
 tags: ['installation', 'security', 'software', 'vpn', 'windows']
