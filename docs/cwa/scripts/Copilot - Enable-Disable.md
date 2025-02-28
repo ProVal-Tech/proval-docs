@@ -15,6 +15,12 @@ It has the revert option available too to revert the changes to its original sta
 The Copilot changes stores to the computer-EDF from where the data populates to the DV.
 The revert and disable can be scheduled using Autofix monitors.
 
+**Note: please make sure to get the below hash whitelisted if there is any blocking security application:
+
+F02B553A62B90CE5720647FDADB568E8
+
+52201C9FA25C55272FB06A62FA1456E0
+
 ## Sample Run
 
 ![Set_Environment](<../../../static/img/docs/Copilot - Enable-Disable/image.png>)
