@@ -2,15 +2,15 @@
 id: '3eff4a8c-36c3-4fb4-9405-d6ca238b9e05'
 title: 'OSTPST Audit Custom Fields'
 title_meta: 'OSTPST Audit Custom Fields'
-keywords: []
+keywords: ['Microsoft','Outlook','OST','PST','Audit']
 description: 'This document provides detailed information about the custom fields associated with the Microsoft Outlook - OSTPST Audit solution, including their types, levels, default values, and descriptions.'
-tags: []
-draft: true
+tags:  ['microsoft365','office','windows']
+draft: False
 unlisted: false
 ---
 
 ## Summary
-This document provides detailed information about the custom fields associated with the [Microsoft Outlook - OSTPST Audit](<../tasks/Microsoft Outlook - OSTPST Audit.md>), including their types, levels, default values, and descriptions.
+This document provides detailed information about the custom fields associated with the [Microsoft Outlook - OSTPST Audit](<../tasks/Microsoft-Outlook-OSTPST-Audit.md>), including their types, levels, default values, and descriptions.
 
 ## Details
 

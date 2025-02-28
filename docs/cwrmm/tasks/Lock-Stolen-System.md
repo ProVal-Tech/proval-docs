@@ -135,7 +135,13 @@ Write-Output $formattedOutput
 ![image10](../../../static/img/CW-RMM-Lock-Stolen-System/image10.png)
 ![image11](../../../static/img/CW-RMM-Lock-Stolen-System/image11.png)
 
-## Row 4 Function: PowerShell Script
+## Row 4 Function: Script Log
+
+- Add another function `Script Log` in the IF section. 
+- In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
+
+## Row 5 Function: PowerShell Script
 
 - Search and select the `PowerShell Script` function.
 - Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
@@ -150,7 +156,7 @@ function Get-IPInfo {
 $returnData = Get-IPInfo
 Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPINFOState=$($returnData['region'])|IPINFOLoc=$($returnData['loc'])"
 ```
-## Row 5 Function: Set Custom Field
+## Row 6 Function: Set Custom Field
 
 - Search and select the `Set Custom Field` function.  
 ![image12](../../../static/img/CW-RMM-Lock-Stolen-System/image12.png)
@@ -158,12 +164,12 @@ Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPIN
 - Search and select the `Current Location and IP Details` Custom Field.  
 - Type `%output%` in the `Value` box and click the Save button. 
 
-## Step 6 Logic: If/Then/Else
+## Step 7 Logic: If/Then/Else
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
 ![image13](../../../static/img/CW-RMM-Lock-Stolen-System/image13.png)
 
-## Row 6a: Get Custom Field
+## Row 7a: Get Custom Field
 In the If section, perform the below steps
 - Replace `Output` with `Custom field`
 - Search and select `System Lockdown` Custom Field from the dropdown
@@ -171,7 +177,7 @@ In the If section, perform the below steps
 - Set `True` in the parameter
 ![image14](../../../static/img/CW-RMM-Lock-Stolen-System/image14.png)
 
-## Row 6b Function: PowerShell Script
+## Row 7b Function: PowerShell Script
 
 - Add another row in the IF section
 - Search and select the `PowerShell Script` function.
@@ -235,13 +241,13 @@ if ($FinalStatus -eq 'Off') {
 }
 ```
 
-## Row 6c Function: Script Log
+## Row 7c Function: Script Log
 
 - Add another function `Script Log` in the IF section. 
 - In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
 
-## Row 6d Function: Create Ticket
+## Row 7d Function: Create Ticket
 - Add another function `Create Ticket` in the IF section.
 - Set below as `Subject`:
 
@@ -285,7 +291,7 @@ The script is using the shutdown command to turn off the machine.
 
 ![image25](../../../static/img/CW-RMM-Lock-Stolen-System/image25.png)
 
-### Row 7 Function: CMD Script
+### Row 8 Function: CMD Script
 
 Search and select the `Command Prompt Script` function.  
 ![CMD Function](../../../static/img/CWRMM-Get-AutopilotHash/image2.png)

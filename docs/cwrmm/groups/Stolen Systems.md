@@ -1,11 +1,11 @@
 ---
 id: 'c5be497c-f3b8-4fd5-8c9d-70b709aef5fb'
-title: 'Lock Stolen System'
-title_meta: 'Lock Stolen System'
-keywords: []
+title: 'Stolen Systems'
+title_meta: 'Stolen Systems'
+keywords: ['Lock','Stolen','System']
 description: 'This is the part of Lock Stolen System'
-tags: []
-draft: true
+tags: ['connectwise']
+draft: False
 unlisted: false
 ---
 
@@ -13,11 +13,29 @@ unlisted: false
 This  group includes the windows machines where custom field `Mark System As Stolen` is set to True. This is the part of Lock Stolen System solution.
 
 ## Dependencies
+[Stolen Systems](<../tasks/Lock-Stolen-System.md>)
 
-## Details
+[Custom Fields](<../custom-fields/ENDPOINT-StolenDevices.md>)
 
-| Field Name | Type of Field (Machine or Organization) | Description |
-| ---------- | --------------------------------------- | ----------- |
+## Group Overview
+![image20](../../../static/img/CW-RMM-Lock-Stolen-System/image20.png)
 
+**Group Type:** Dynamic  
+**Group Name:** Stolen Systems 
+**Description:** This  group includes the windows machines where custom field  `Mark System As Stolen` is set to True.
 
-## Group Creation
+## Criteria
+
+![image21](../../../static/img/CW-RMM-Lock-Stolen-System/image21.png)
+
+- `Mark System As Stolen` should be equal to `True` 
+- OS contains any of windows 10,windows 11 and server
+- Available should be True.
+
+## Saving the Group
+
+Once the above criteria are met, click the Save button to save the group.
+
+![image22](../../../static/img/CW-RMM-Lock-Stolen-System/image22.png)
+
+![image23](../../../static/img/CW-RMM-Lock-Stolen-System/image23.png)
