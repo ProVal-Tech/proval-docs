@@ -1,7 +1,7 @@
 ---
 id: 'e228540f-e4f4-4e67-801f-cdff876f955f'
-title: 'Local Admin Group Cleanup - AddRemove'
-title_meta: 'Local Admin Group Cleanup - AddRemove'
+title: 'Local Admin Group Cleanup - Add/Remove'
+title_meta: 'Local Admin Group Cleanup - Add/Remove'
 keywords: ['local', 'admin', 'cleanup', 'script', 'windows']
 description: 'This document details a script designed to manage local admin group members by removing unauthorized users and adding approved members. It includes execution guidelines, dependencies, and configuration details for effective use in a Windows environment.'
 tags: ['cleanup', 'security', 'windows']
@@ -17,9 +17,9 @@ The local account `Administrator` and the `Domain Admins` group (if the computer
 
 **File Path:** `C:/ProgramData/_Automation/Script/LocalAdminCleanup/LocalAdminCleanup.ps1`
 
-**File Hash (SHA256):** `3CAB234347EC753F83D48E90C7CC1591A3DD0FC1EB4912E42921E5ED1370E200`
+**File Hash (SHA256):** `D4D17978915A5E8C4ACEA920A7E5BD4AF9BDB1A9566B8515D06D0819A1BA4150`
 
-**File Hash (MD5):** `2E1487B8CA868645BFC711D75024E164`
+**File Hash (MD5):** `FD2BD4D384461ECD62562330696630E0`
 
 **Tips:**
 
@@ -78,7 +78,7 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 
 | Name                          | Example                         | Type      | Section                | Description                                                                                                                                                                                                                                       |
 |-------------------------------|---------------------------------|-----------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2a. Local Admin Cleanup       | Enabled for Servers and Workstations | Check-Box | Local Admin Account     | Enabling this EDF will ensure that only the 'Approved Local Admins' shown below are added to the Local Admins Group. This will also disable the New Local Admin Monitor.  **Available Options:** \\<ul>\\<li>Not Enabled\\</li>\\<li>Enabled for Workstations Only\\</li>\\<li>Enabled for Servers Only\\</li>\\<li>Enabled for Servers and Workstations\\</li>\\</ul>  **Default Option:** Not Enabled  Leaving this EDF blank is equivalent to not enabling the solution for the client. ![Client-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_5.png) |
+| 2a. Local Admin Cleanup       | Enabled for Servers and Workstations | Check-Box | Local Admin Account     | Enabling this EDF will ensure that only the 'Approved Local Admins' shown below are added to the Local Admins Group. This will also disable the New Local Admin Monitor.  **Available Options:** <ul><li>Not Enabled</li><li>Enabled for Workstations Only</li><li>Enabled for Servers Only</li><li>Enabled for Servers and Workstations</li></ul>  **Default Option:** Not Enabled  Leaving this EDF blank is equivalent to not enabling the solution for the client. ![Client-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_5.png) |
 | 2b. Approved Local Admins     | ProValDev/New Batman, TiredBatman | Text     | Local Admin Account     | Comma-separated list of the approved local admins for the client. The value stored in this EDF will be added to the approved list along with the value stored in the `Local_Admin_Group_Approved_Members` system property. ![Client-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_6.png) |
 
 ## Location-Level EDF
@@ -114,7 +114,3 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](https://proval.itglue.com/5078775/docs/16783515) monitor set to enable the ticket creation feature of the script.  
 ![Ticketing Note](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_12.png)
-
-
-
-
