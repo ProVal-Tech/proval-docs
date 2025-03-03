@@ -1,7 +1,7 @@
 ---
 id: '1983e46a-da70-4f9a-88f5-1ab908d46893'
-title: 'Windows 1011 Feature Update History - 30 day'
-title_meta: 'Windows 1011 Feature Update History - 30 day'
+title: 'Windows 10/11 Feature Update History - 30 day'
+title_meta: 'Windows 10/11 Feature Update History - 30 day'
 keywords: ['windows', 'upgrade', 'report', 'workstation', 'version', 'build']
 description: 'This document provides a detailed report of Windows workstations that have been upgraded to the new Win10/Win11 version within the last 30 days. It includes essential information such as client names, locations, computer IDs, upgrade dates, and the old and new OS versions.'
 tags: ['performance', 'report', 'software', 'windows']
