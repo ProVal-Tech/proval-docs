@@ -1,5 +1,5 @@
 ---
-id: ps-unregister-chromiumextension
+id: '6910db0c-af2e-4b19-a262-3c3491f01b73'
 title: 'Unregister-ChromiumExtension'
 title_meta: 'Unregister-ChromiumExtension'
 keywords: ['unregister', 'chromium', 'extension', 'remove']

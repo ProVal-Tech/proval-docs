@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-setupdiag
+id: '43e03fcc-e736-4d19-b231-76403f71c4e2'
 title: 'Invoke-SetupDiag'
 title_meta: 'Invoke-SetupDiag'
 keywords: ['setupdiag', 'diagnostics', 'windows', 'troubleshoot']

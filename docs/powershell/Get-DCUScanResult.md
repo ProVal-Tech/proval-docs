@@ -1,5 +1,5 @@
 ---
-id: ps-get-dcuscanresult
+id: '3567c5e7-f5ae-46d6-b15f-4410b0be85d1'
 title: 'Get-DCUScanResult'
 title_meta: 'Get-DCUScanResult'
 keywords: ['dell', 'dcu', 'scan', 'result']

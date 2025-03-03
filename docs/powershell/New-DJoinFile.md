@@ -1,5 +1,5 @@
 ---
-id: ps-new-djoinfile
+id: 'e0acd656-10bc-48d6-9182-41d1ff78007a'
 title: 'New-DJoinFile'
 title_meta: 'New-DJoinFile'
 keywords: ['djoin', 'offline', 'domain', 'join']

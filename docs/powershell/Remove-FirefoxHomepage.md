@@ -1,5 +1,5 @@
 ---
-id: ps-remove-firefoxhomepage  
+id: '615b14aa-fee1-4eeb-9e5f-02ad695317d9'  
 title: 'Remove-FirefoxHomepage'  
 title_meta: 'Remove-FirefoxHomepage'  
 keywords: ['remove', 'homepage', 'firefox', 'browser']  

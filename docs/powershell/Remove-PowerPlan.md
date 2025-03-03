@@ -1,5 +1,5 @@
 ---
-id: ps-remove-powerplan
+id: 'ffac4670-f9ec-4896-8338-78c92669ee53'
 title: 'Remove-PowerPlan'
 title_meta: 'Remove-PowerPlan'
 keywords: ['remove', 'powerplan', 'configuration', 'energy']

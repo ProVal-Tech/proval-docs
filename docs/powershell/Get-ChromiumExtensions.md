@@ -1,5 +1,5 @@
 ---
-id: ps-get-chromiumextensions
+id: '8828a709-4424-48f9-a5bf-dfc81a40bb97'
 title: 'Get-ChromiumExtensions'
 title_meta: 'Get-ChromiumExtensions'
 keywords: ['chromium', 'extensions', 'browser', 'user']

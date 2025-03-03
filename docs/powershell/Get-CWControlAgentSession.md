@@ -1,5 +1,5 @@
 ---
-id: ps-get-cwcontrolagentsession
+id: 'd0a99efa-a256-47ca-b916-6c18581ba434'
 title: 'Get-CWControlAgentSession'
 title_meta: 'Get-CWControlAgentSession'
 keywords: ['connectwise', 'control', 'session', 'api']

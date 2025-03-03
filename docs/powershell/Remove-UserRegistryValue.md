@@ -1,5 +1,5 @@
 ---
-id: ps-remove-userregistryvalue
+id: '63815cdf-e2a3-4ef9-9dc7-0001ba86ca0b'
 title: 'Remove-UserRegistryValue'
 title_meta: 'Remove-UserRegistryValue'
 keywords: ['remove', 'registry', 'user', 'key']

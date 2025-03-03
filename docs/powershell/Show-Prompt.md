@@ -1,5 +1,5 @@
 ---
-id: ps-show-prompt
+id: '9fc4a21d-6ba4-4f20-90fd-b9c148259195'
 title: 'Show-Prompt'
 title_meta: 'Show-Prompt'
 keywords: ['prompt', 'user', 'input', 'dialog']

@@ -1,5 +1,5 @@
 ---
-id: ps-get-adbitlockerstore
+id: 'c3f8637a-bc38-4709-a626-d59d9111d621'
 title: 'Get-ADBitlockerStore'
 title_meta: 'Get-ADBitlockerStore'
 keywords: ['bitlocker', 'ad', 'backup', 'recovery']

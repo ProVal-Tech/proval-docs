@@ -1,5 +1,5 @@
 ---
-id: ps-get-userregistryvalue
+id: '84b7dc1e-6cf8-4c1d-90a3-52cd44171871'
 title: 'Get-UserRegistryValue'
 title_meta: 'Get-UserRegistryValue'
 keywords: ['registry', 'user', 'key', 'value']

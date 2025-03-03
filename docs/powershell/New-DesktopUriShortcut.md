@@ -1,5 +1,5 @@
 ---
-id: ps-new-desktopurishortcut
+id: '56fa7d90-7c83-4c4a-ac0e-c49a6d5701af'
 title: 'New-DesktopUriShortcut'
 title_meta: 'New-DesktopUriShortcut'
 keywords: ['shortcut', 'desktop', 'uri', 'wscript', 'favicon']

@@ -1,5 +1,5 @@
 ---
-id: ps-repair-windowsupdate
+id: '39345bfd-d9e2-4e68-9d7a-3e8b443140cc'
 title: 'Repair-WindowsUpdate'
 title_meta: 'Repair-WindowsUpdate'
 keywords: ['repair', 'windowsupdate', 'reset', 'troubleshoot']

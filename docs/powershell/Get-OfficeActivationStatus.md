@@ -1,5 +1,5 @@
 ---
-id: ps-get-officeactivationstatus
+id: '4a0afa88-7a52-4d25-99b7-551a2c6e9bd0'
 title: 'Get-OfficeActivationStatus'
 title_meta: 'Get-OfficeActivationStatus'
 keywords: ['office', 'activation', 'license', 'status']

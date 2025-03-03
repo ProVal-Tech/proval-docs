@@ -1,5 +1,5 @@
 ---
-id: ps-remove-userprofile
+id: 'af494143-56df-448c-8f30-44cf93a441ac'
 title: 'Remove-UserProfile'
 title_meta: 'Remove-UserProfile'
 keywords: ['remove', 'user', 'profile', 'local']
