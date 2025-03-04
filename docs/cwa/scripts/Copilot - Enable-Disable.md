@@ -45,15 +45,15 @@ F02B553A62B90CE5720647FDADB568E8
 
 ## EDFs
 
-| Name                    | Level    | Type     | Example                       | Description                                                                                                      |
-|-------------------------|----------|----------|-------------------------------|------------------------------------------------------------------------------------------------------------------|
-| Copilot_Status          | Client   | Text     | Disabled -- 2025-02-28 00:00:00 | This stores the Copilot status after script completion with the script ran date and time                         |
-| Exclude Copilot Revert  | Computer | Checkbox | 1 or 0                         | This excludes the copilot revert action for the computer where it is checked                                     |
-| Exclude Copilot Revert  | Location | Checkbox | 1 or 0                         | This excludes the agents of the location where it is checked                                                     |
-| Exclude Copilot Disable | Computer | Checkbox | 1 or 0                         | This excludes the agent from getting its copilot disabled and uninstalled                                        |
-| Exclude Copilot Disable | Location | Checkbox | 1 or 0                         | This excludes the agents of the location from getting its copilot disabled and uninstalled                       |
-| Copilot Revert Enable   | Client   | Checkbox | 1 or 0                         | This check box allows the agents of clients to revert the Copilot disabling and uninstallation                   |
-| Copilot Disable and Uninstall | Client | Checkbox | 1 or 0                         | This checkbox sets the agents of the client to disable its copilot and uninstall it completely                   |
+| Name                    | Level    | Type     | Section    |Example                       | Description                                                                                                      |
+|-------------------------|----------|----------|----------|------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Copilot_Status          | Computer | Text     | Copilot    |Disabled -- 2025-02-28 00:00:00 | This stores the Copilot status after script completion with the script ran date and time                         |
+| Exclude Copilot Revert  | Computer | Checkbox | Exclusions     |1 or 0                         | This excludes the copilot revert action for the computer where it is checked                                     |
+| Exclude Copilot Revert  | Location | Checkbox | Exclusions     |1 or 0                         | This excludes the agents of the location where it is checked                                                     |
+| Exclude Copilot Disable | Computer | Checkbox | Exclusions    |1 or 0                         | This excludes the agent from getting its copilot disabled and uninstalled                                        |
+| Exclude Copilot Disable | Location | Checkbox | Exclusions     |1 or 0                         | This excludes the agents of the location from getting its copilot disabled and uninstalled                       |
+| Copilot Revert Enable   | Client   | Checkbox | Copilot    | 1 or 0                         | This check box allows the agents of clients to revert the Copilot disabling and uninstallation                   |
+| Copilot Disable and Uninstall | Client | Checkbox | Copilot | 1 or 0                         | This checkbox sets the agents of the client to disable its copilot and uninstall it completely                   |
 
 ## Output
 
