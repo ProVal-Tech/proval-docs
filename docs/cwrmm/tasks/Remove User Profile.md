@@ -74,7 +74,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 ![Task Creation Image 2](../../../static/img/Remove-User-Profile/image_6.png)  
 
 **Name:** `Remove User Profile`  
-**Description:** `Remove the installed font from the Windows machines. Accepts the '*' wildcard to remove multiple matching fonts.`  
+**Description:** `Deletes a user profile and removes the user account if local`  
 **Category:** `Custom`  
 ![Task Creation Image 3](../../../static/img/Remove-User-Profile/image_7.png)  
 
