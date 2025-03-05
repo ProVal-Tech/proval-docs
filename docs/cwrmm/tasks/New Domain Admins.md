@@ -172,8 +172,9 @@ When you select `Set Custom Field`, a new window will open.
 
 In this window, search for the `New Domain Admins` field.
 
-**Custom Field:** Crystal Disk Info_Disk Health  
-**Value:** Virtual Machine - Crystal Disk Not Eligible  
+**Custom Field:** New Domain Admins
+
+**Value:** %utput%
 
 ![Set Custom Field](../../../static/img/New-Domain-Admins/image_35.png)  
 
