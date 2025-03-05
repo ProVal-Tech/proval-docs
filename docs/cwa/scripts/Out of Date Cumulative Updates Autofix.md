@@ -21,7 +21,7 @@ Here's an overview of the script's functionalities:
 4. The `Out_of_Date_CU-Autofix_for_Servers` system property can extend the Autofix section to servers if set to `1`.
 5. The script does not force a computer to restart but recommends it. For environments with the [Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>), it marks the `Pending Reboot` EDF to prompt users for a restart and closes the initial ticket upon successful reboot.
 6. If the solution is not in place, the script adds a comment in the initial ticket to prompt a restart at the earliest convenience.
-7. The script tracks post-reboot installations, rescheduling itself every 12 hours to monitor system uptime. If a Cumulative Update is installed within 45 days, it closes the ticket; otherwise, it adds a failure comment or creates a new ticket.
+7. The script tracks post-reboot installations, rescheduling itself every 12 hours to monitor system uptime. If a Cumulative Update is installed within X days (Configured in `Out_of_Date_CU-Autofix_Threshold` system property), it closes the ticket; otherwise, it adds a failure comment or creates a new ticket.
 8. The script handles offline machines, rescheduling itself based on offline duration (4 hours, 12 hours, or terminating after 30 days).
 9. It accommodates machines in maintenance mode, rescheduling an hour after the maintenance window ends or terminating future schedules if the maintenance mode lasts more than 30 days.
 10. Optionally, email alerts can be enabled by setting the value of the system property `Out_of_Date_CU-EmailAlerts` to `1`.
@@ -64,7 +64,6 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 | Out_of_Date_CU-Autofix_for_Servers      | 0       | False    | Assign a value of 1 to enable Autofix for servers; by default, the script will only generate a ticket for servers. |
 | Out_of_Date_CU-Autofix_for_Workstations     | 0       | False    | Assign a value of 1 to disable Autofix for workstations |
 | Out_of_Date_CU-Autofix_Threshold    | 75      | False    | Specify the threshold (in days) for identifying outdated cumulative updates |
-| Out_of_Date_CU-Autofix_Threshold    | 75      | False    | Specify the threshold (in days) for identifying outdated cumulative updates |
 
 ## Script States
 
@@ -80,7 +79,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 
 ## Ticketing
 
-**Subject:**  `UPDATES - \\<Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on \\<Computer Name>`
+**Subject:**  `UPDATES - <Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on <Computer Name>`
 
 **Example:**  `UPDATES - 90+ Days Since Last CU Installed on DEV-Win10-1`
 
@@ -151,7 +150,7 @@ Automate will actively monitor the machine and will send an email alert if the p
 
 If the initial ticket was closed, a new ticket will be generated for the failure; otherwise, a comment will be appended to the existing ticket:
 
-**Subject:**  `UPDATES - \\<Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on \\<Computer Name>`
+**Subject:**  `UPDATES - <Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on <Computer Name>`
 
 **Failed to deploy the Cumulative Update:**
 ```
