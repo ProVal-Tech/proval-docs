@@ -87,6 +87,7 @@ Configure the Auditing section of the solution as follows:
 - Configure the necessary values within the system properties.
   - `Out_of_Date_CU-EmailAlerts`: Configure this system property to 1 to activate Email Alerts in conjunction with the tickets.
   - `Out_of_Date_CU-Autofix_for_Servers`: Assign a value of 1 to this system property to enable Autofix for servers; by default, the script will only generate a ticket for servers.
+  - `Out_of_Date_CU-Disable_Autofix_for_Workstations`: Assign a value of 1 to this system property to Disable Autofix for workstations.
 
 ### 2.
 Configure the Autofix section of the solution as follows:

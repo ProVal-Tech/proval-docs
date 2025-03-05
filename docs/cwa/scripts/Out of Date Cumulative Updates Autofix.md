@@ -25,7 +25,7 @@ Here's an overview of the script's functionalities:
 8. The script handles offline machines, rescheduling itself based on offline duration (4 hours, 12 hours, or terminating after 30 days).
 9. It accommodates machines in maintenance mode, rescheduling an hour after the maintenance window ends or terminating future schedules if the maintenance mode lasts more than 30 days.
 10. Optionally, email alerts can be enabled by setting the value of the system property `Out_of_Date_CU-EmailAlerts` to `1`.
-11. `Out_of_Date_CU-Autofix_for_Workstations` system property determines whether Autofix should be applied to workstations. Setting it to `1` will disable Autofix for workstations.
+11. `Out_of_Date_CU-Disable_Autofix_for_Workstations` system property determines whether Autofix should be applied to workstations. Setting it to `1` will disable Autofix for workstations.
 12. `Out_of_Date_CU-Autofix_Threshold` system property Specifies the threshold (in days) for identifying outdated cumulative updates, replacing the previously hardcoded 75-day limit.
 
 This script comprehensively manages Cumulative Update installations, ensuring efficient handling of various scenarios, including offline status, maintenance mode, and appropriate alerts for non-integrated partners.
@@ -62,7 +62,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 |------------------------------------------|---------|----------|--------------------------------------------------------------------------------------------------|
 | Out_of_Date_CU-EmailAlerts               | 0       | False    | Configure it to 1 to activate email alerts in conjunction with the tickets.                     |
 | Out_of_Date_CU-Autofix_for_Servers      | 0       | False    | Assign a value of 1 to enable Autofix for servers; by default, the script will only generate a ticket for servers. |
-| Out_of_Date_CU-Autofix_for_Workstations     | 0       | False    | Assign a value of 1 to disable Autofix for workstations |
+| Out_of_Date_CU-Disable_Autofix_for_Workstations    | 0       | False    | Assign a value of 1 to disable Autofix for workstations |
 | Out_of_Date_CU-Autofix_Threshold    | 75      | False    | Specify the threshold (in days) for identifying outdated cumulative updates |
 
 ## Script States
