@@ -1,9 +1,9 @@
 ---
 id: 'a835c448-fd00-4807-a3b2-8f1066e1a682'
-title: 'Last Cumulative Update  75 Days ago'
-title_meta: 'Last Cumulative Update  75 Days ago'
+title: 'Last Cumulative Update  X Days ago'
+title_meta: 'Last Cumulative Update  X Days ago'
 keywords: ['computers', 'cumulative', 'updates', 'monitor', 'ticket', 'alert', 'dependencies']
-description: 'This document outlines a method for identifying computers that have not installed a Cumulative Update in the last 75 days, excluding End-of-Life machines. It details the configuration of monitors, dependencies, and alert templates, and provides guidance on adjusting the monitoring period as needed.'
+description: 'This document outlines a method for identifying computers that have not installed a Cumulative Update in the last X days, excluding End-of-Life machines. It details the configuration of monitors, dependencies, and alert templates, and provides guidance on adjusting the monitoring period as needed.'
 tags: ['windows']
 draft: false
 unlisted: false
@@ -11,9 +11,9 @@ unlisted: false
 
 ## Summary
 
-This document identifies computers that have not installed a Cumulative Update in the last 75 days, excluding End-of-Life (EOL) machines.
+This document identifies computers that have not installed a Cumulative Update in the last X days (configurable via the system property `Out_of_Date_CU-Autofix_Threshold`, default: 75 days), excluding End-of-Life (EOL) machines.
 
-If requested, the monitor can easily be adjusted to a lower or higher number of days since the last cumulative update was installed before a ticket was generated.
+Adjust the `Out_of_Date_CU-Autofix_Threshold` system property value to modify the number of days since the last cumulative update before a ticket is generated.
 
 ![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_1.png)
 
