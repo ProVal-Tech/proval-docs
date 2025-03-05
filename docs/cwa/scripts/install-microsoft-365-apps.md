@@ -13,7 +13,9 @@ unlisted: false
 
 This script is an Automate implementation of the agnostic script [Install-Microsoft365](../../powershell/Install-Microsoft365.md). It can be used to install Microsoft 365 Apps for Business or any Microsoft 365 product that supports XML Configuration. Additionally, it will remove the existing version of Microsoft 365 (Microsoft Office) based on the Update and Upgrade settings in the configuration file.
 
-It is advisable to restart the computer after installation. Setting the `Reboot` parameter to `1` will initiate an automatic restart.
+It is advisable to restart the computer after installation. Setting the `Reboot` parameter to `1` will initiate an automatic restart.  
+
+**Note:** This script does not support changing editions between installed Click-To-Run versions (e.g., from Business to Enterprise or Enterprise to Professional). However, it supports upgrading from MSI versions (Office 2013, 2010, 2016) to Microsoft 365 Apps Click-To-Run versions.
 
 ## Creating an .XML configuration file
 
@@ -49,7 +51,9 @@ Open your web browser and navigate to the [Office Customization Tool](https://co
 
 ### Step 5: Configure Update and Upgrade Options
 
-**Upgrade Options:** Select the `Uninstall any MSI versions of Office, including Visio and Project` option to remove existing versions. Deselect the individual components to leave behind.
+**Upgrade Options:** Select the `Uninstall any MSI versions of Office, including Visio and Project` option to remove existing MSI versions. Deselect the individual components to leave behind.
+
+Additional information can be found in the [MSICondition attribute documentation](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#msicondition-attribute-part-of-product-element) and the [MSICondition and RemoveMSI implementation guide (youtube video)](https://youtu.be/7zHi6MRveRc).
 
 ![Upgrade](../../../static/img/cwa-script-install-microsoft-365-apps/Image5.png)
 
