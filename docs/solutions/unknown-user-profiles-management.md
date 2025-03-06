@@ -13,7 +13,11 @@ unlisted: false
 
 The solution is designed to detect and manage unknown or cached user profiles. These unknown user profiles can occupy significant disk space on the computer. The primary objective of this solution is to identify these profiles to free up unnecessarily used drive space. 
 
-Although the solution does not automatically remove the unknown or cached user profiles, it generates a ticket containing the relevant information about the user profiles that need to be removed. The [Unknown User Profiles](../cwrmm/tasks/unknown-user-profiles.md) task can then be utilized to eliminate these unwanted, unknown, or cached user profiles.
+Although the solution does not automatically remove the unknown or cached user profiles, it generates a ticket containing the relevant information about the user profiles that need to be removed. The [Remove User Profile](../cwrmm/tasks/remove%20user%20profile.md) task can then be utilized to eliminate these unwanted, unknown, or cached user profiles.
+
+The [Unknown User Profiles](../cwrmm/tasks/unknown-user-profiles.md) task identifies and returns the Security Identifiers (SIDs) of unknown/cached user profiles, which can then be used as input parameters for the [Remove User Profile](../cwrmm/tasks/remove%20user%20profile.md) task.
+
+![Sample Run](../../static/img/Remove-User-Profile/image5.png) 
 
 <span style="color: red; text-decoration: underline;">**Caution: The [Remove User Profile](../cwrmm/tasks/remove%20user%20profile.md) task is destructive and should only be used after fully understanding the implications.**</span>
 
