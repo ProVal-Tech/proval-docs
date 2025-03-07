@@ -58,7 +58,7 @@ To implement this script, please create a new "PowerShell" style script in the s
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 ![Add  Parameter 1](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
-This screen will appear.
+This screen will appear.  
 ![Add Parameter 2](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-4.png>)
 
 - Set `ListBloatware` in the `Parameter Name` field.
@@ -70,7 +70,7 @@ This screen will appear.
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 ![Add  Parameter 4](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
-This screen will appear.
+This screen will appear.  
 ![Add Parameter 5](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-4.png>)
 
 - Set `Remove` in the `Parameter Name` field.
@@ -82,7 +82,7 @@ This screen will appear.
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 ![Add  Parameter 7](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
-This screen will appear.
+This screen will appear.  
 ![Add Parameter 8](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-4.png>)
 
 - Set `RemoveAll` in the `Parameter Name` field.
@@ -94,7 +94,7 @@ This screen will appear.
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 ![Add  Parameter 10](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
-This screen will appear.
+This screen will appear.  
 ![Add Parameter 11](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-4.png>)
 
 - Set `Category` in the `Parameter Name` field.
@@ -106,7 +106,7 @@ This screen will appear.
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 ![Add  Parameter 13](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
-This screen will appear.
+This screen will appear.  
 ![Add Parameter 14](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-4.png>)
 
 - Set `Except` in the `Parameter Name` field.
@@ -120,7 +120,7 @@ Start by creating three separate rows. You can do this by clicking the "Add Row"
 
 ![Add Row](../../../static/img/CRI-Agent-Deployment/image_5.png)
 
-A blank function will appear.
+A blank function will appear.  
 ![Add Row continued](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-12.png>)
 ### Row 1: Function: PowerShell Script
 
@@ -233,30 +233,30 @@ Get-Content -Path $LogPath
 
 ![Row 1 Image 3](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-14.png>)
 
-### Row 2: Function: Script Log
+### Row 2: Function: Script Log 
 
-Add a new row by clicking the `Add Row` button.
+Add a new row by clicking the `Add Row` button.  
 ![Row 2 Image 1](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-15.png>)
 
-A blank function will appear.
+A blank function will appear.  
 ![Row 2 Image 2](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-16.png>)
 
-Search and select the `Script Log` function.
+Search and select the `Script Log` function.  
 ![Row 2 Image 3](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-17.png>)
 
 ![Row 2 Image 4](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-18.png>)
 
-The following function will pop up on the screen: 
+The following function will pop up on the screen:  
 ![Row 2 Image 5](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-19.png>)
 
-In the script log message, simply type %output% and click the `Save` button
+In the script log message, simply type %output% and click the `Save` button  
 ![Row 2 Image 6](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-20.png>)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![Row 2 Image 7](../../../static/img/CRI-Agent-Deployment/image_13.png)
 
-Click the `Save` button at the top-right corner of the screen to save the script.
+Click the `Save` button at the top-right corner of the screen to save the script.  
 ![Row 2 Image 8](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-21.png>)
 
 ## Row 3: Completed Script
