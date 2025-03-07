@@ -16,8 +16,8 @@ The purpose of the script is to download and configure the [BGInfo](https://lear
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Deploy-BGinfo\Deploy-BGInfo.ps1`  
-**File Hash (Sha256):** `600F3D23379C92226D59F658A4EC57C3B36208DEA896BF6A948B5C8E4403FCA8`  
-**File Hash (MD5):** `884E4526EE28593EE42996A0F5A58412`
+**File Hash (Sha256):** `2186E9DD322B29592686BF6F48A21E116187752AD5A748E40987F6C20B677A34`  
+**File Hash (MD5):** `666A8A1AA66FE746EF224083BA52A737`
 
 ## Implementation
 
