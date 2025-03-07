@@ -28,6 +28,8 @@ It also depends on the following EDFs:
 
 [Script_Copilot_Enable_Disable](<../scripts/Copilot - Enable-Disable.md>)
 
+Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
+
 ## Target
 
 Global
