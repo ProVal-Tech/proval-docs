@@ -46,7 +46,7 @@ Set parameter `CreateTicket` as a flag with `Default Value` set to `False` and d
 
 ![CreateTicket](<../../../static/img/docs/Malicious Software Removal Tool Scanning/image-2.png>)
 
-Add second parameter `MSRTUninstall` as a Number Value with `Default Value` set to `1` and do not turn on the `Required Field`. This is set to uninstall the MSRT patches if already installed, if required to to uninstall the patch change the default value to anything other than 1.
+Add second parameter `MSRTUninstall` as a Number Value with `Default Value` set to `1` and do not turn on the `Required Field`. This is set to uninstall the MSRT patches if already installed, if not required to uninstall the patch change the default value to anything other than 1.
 
 ![MSRTUninstall](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7538EB10-EA8D-47F9-97E9-30F5FE22D3FE}.png>)
 
@@ -221,7 +221,7 @@ In the script exit message, leave it blank.
 
 ### Row 4: Function: Set Custom Field
 
-Add a new row in the else section by clicking on the Add row button and select `Set Custom Field`. 
+Add a new row after `End If` section by clicking on the Add row button and select `Set Custom Field`. 
 
 ![Row 4 Set Custom Field](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{8979F21E-B8E0-494E-A077-DF634424D947}.png>).
 

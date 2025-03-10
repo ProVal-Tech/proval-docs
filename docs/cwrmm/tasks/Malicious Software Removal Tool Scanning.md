@@ -11,8 +11,8 @@ unlisted: false
 
 ## Summary
 
-This script performs the endpoint scanning using the MSRT and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>) if the task ran successfully.
-This script can be on demand as well or by scheduling it to the group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
+This Task performs the endpoint scanning using the MSRT and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>) if the task ran successfully.
+This script can be run on demand as well or by scheduling it to the group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
 
 ## Dependencies
 
@@ -240,9 +240,9 @@ Add a new logic in the Else section and select `If/Then`.
 
 ![Row 3c(i) Logic Continued](../../../static/img/Reboot-Pending-Check-Automation/image_18.png)
 
-### Row 4a: Condition: Output Contains
+### Row 4a: Condition: Output Does Not Contains
 
-In the IF part, enter `No infection found` in the right box of the "Output Contains" part.
+In the IF part, enter `No infection found` in the right box of the "Output Does Not Contains" part.
 
 ![Row 4a Condition](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{B4C8AB73-081E-41E3-83D9-4F9D60571256}.png>)
 

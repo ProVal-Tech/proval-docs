@@ -31,11 +31,11 @@ Group Joins
 
 ![Group Joins](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image-1.png>)
 
+- `Exclude MSRT Scanning` should be `Equal` to `False`
 - `MSRT Scanner Enable` should be `Equal` to `True`
-- `Exclude Scanner Enable` should be `Equal` to `False`
-- `MSRT Scanner Result` should `Does Not Contain any of` to `No Infection Found`
+- `MSRT Scanner Result` should be `Does Not Contain any of` to `No Infection Found`
 - `Available` should be `Equal` to `True`.
-- `OS` should `Contains any of` to `Microsoft Windows 10, Microsoft Windows 11`
+- `OS` should be `Contains any of` to `Microsoft Windows 10, Microsoft Windows 11`
 
 ## Group Creation
 
