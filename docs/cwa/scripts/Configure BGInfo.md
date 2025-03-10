@@ -13,6 +13,8 @@ unlisted: false
 
 The purpose of the script is to download and configure the [BGInfo](https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo) tool with the proper `.bgi` configuration file. `.bgi` file should be placed in the LTshare (WebDAV for hosted partners) at the `Transfer\Tools\BGInfo` directory, and the name of the file should be set in the Script's Global variable `bgiName`.
 
+**Note:** The end machine might need to be restarted for the changes to take place.
+
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Deploy-BGinfo\Deploy-BGInfo.ps1`  
