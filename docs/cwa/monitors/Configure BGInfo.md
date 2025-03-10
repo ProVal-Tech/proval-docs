@@ -41,7 +41,7 @@ Managed Windows Computer (Suggested is workstations but the script can be used f
     SELECT '' as `AgentID`,
     `groupid` as `GroupID`,
     '0' as `SearchID`,
-    'ProVal - Dev - Configure BGInfo' as `Name`,
+    'ProVal - Production - Configure BGInfo' as `Name`,
     '6' as `CheckAction`,
     @AlertAction as `AlertAction`,
     '%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
@@ -64,7 +64,7 @@ Managed Windows Computer (Suggested is workstations but the script can be used f
     (NOW()) as `UpdateDate`
     FROM mastergroups m
     WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
-    AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Configure BGInfo')
+    AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Configure BGInfo')
 ```
 
 - Here is an example of a query with a group ID:
@@ -74,7 +74,7 @@ Managed Windows Computer (Suggested is workstations but the script can be used f
     SELECT '' as `AgentID`,
     `groupid` as `GroupID`,
     '0' as `SearchID`,
-    'ProVal - Dev - Configure BGInfo' as `Name`,
+    'ProVal - Production - Configure BGInfo' as `Name`,
     '6' as `CheckAction`,
     @AlertAction as `AlertAction`,
     '%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!%NAME% %STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
@@ -97,7 +97,7 @@ Managed Windows Computer (Suggested is workstations but the script can be used f
     (NOW()) as `UpdateDate`
     FROM mastergroups m
     WHERE m.groupid IN (2,3)
-    AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Dev - Configure BGInfo')
+    AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Configure BGInfo')
 ```
 - Execute your query from a RAWSQL monitor set.
 - Locate the remote monitor on the group(s) and ensure that it is functioning as required.
