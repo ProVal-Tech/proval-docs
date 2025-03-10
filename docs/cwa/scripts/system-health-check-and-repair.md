@@ -28,11 +28,11 @@ This script is particularly useful for maintaining system integrity and resolvin
 ## Sample Run
 
 **Example 1:** Running with interactive mode  
-This example shows the script execution with the prompt parameter enabled, allowing user confirmation before restart.
+This example shows the script execution with the prompt parameter enabled, allowing user confirmation before restart.  
 ![Image1](../../../static/img/cwa-script-system-health-check-and-repair/Image1.png)
 
 **Example 2:** Running with automatic restart  
-This example demonstrates the default behavior where the script automatically restarts the system after completion.
+This example demonstrates the default behavior where the script automatically restarts the system after completion.  
 ![Image2](../../../static/img/cwa-script-system-health-check-and-repair/Image2.png)
 
 ## User Parameters
@@ -52,7 +52,7 @@ This example demonstrates the default behavior where the script automatically re
 
 ### Sample Output
 
-```
+```Log
 Command: Dism /Online /Cleanup-Image /CheckHealth
 
 Result: 
