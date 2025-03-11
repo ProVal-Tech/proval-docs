@@ -153,7 +153,7 @@ If the `Microsoft365` directory does not exist in `LTShare\Transfer\configs`, cr
 
 | Name    | Example | Required | Description |
 | ------- | ------- | -------- | ----------- |
-| XMLPath | <ul><li>Microsoft365Enterprise</li><li>https://file.yourdomain.com/config/Microsoft365Enterprise.xml</li></ul> | False | The name of the XML file placed in the `LTShare\Transfer\configs\Microsoft365` directory or the public download URL of the file.<br>Leave this blank if the configuration file is saved as `Microsoft365.xml` in the `LTShare\Transfer\configs\Microsoft365` directory. |
+| XMLPath | <ul><li>Microsoft365Enterprise</li><li>https://file.yourdomain.com/config/Microsoft365Enterprise.xml</li></ul> | False | The name of the XML file placed in the `LTShare\Transfer\configs\Microsoft365` directory or the public download URL of the file.<br />Leave this blank if the configuration file is saved as `Microsoft365.xml` in the `LTShare\Transfer\configs\Microsoft365` directory. |
 | Reboot  | 1       | False    | Set this parameter to `1` to automatically restart the computer after the installation. It is advisable to reboot the computer after the Microsoft 365 installation. |
 
 ## Output
