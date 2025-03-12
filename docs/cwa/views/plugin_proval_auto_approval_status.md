@@ -11,13 +11,13 @@ unlisted: false
 
 ## Purpose
 
-This document presents auto-approve category information about approval policies. It is being used to create a dataview, [Approval Policy - Auto Approve/Ignore/Deny Audit](<../dataviews/Approval Policy - Auto ApproveIgnoreDeny Audit.md>). 
+This view presents auto-approve category information about approval policies. It is used to create the [Auto Approval Policies](<../dataviews/auto-approval-policies.md>) dataview.
 
 **Note:** This view cannot be created for clients with MySQL version 5.6 since it contains multiple SELECTs within the FROM section.
 
 ## Dependencies
 
-The script, [Create View plugin_proval_auto_approval_status](<../scripts/View - Create (plugin_proval_auto_approval_status).md>), can be used to import this dataview.
+The script, [MySQL - View - Create (plugin_proval_auto_approval_status)](<../scripts/mysql-view-create-plugin_proval_auto_approval_status.md>), can be used to import this dataview.
 
 ## Views
 
@@ -29,7 +29,7 @@ The script, [Create View plugin_proval_auto_approval_status](<../scripts/View - 
 | ID                                               | int      | The ID of the Approval Policy                                                                              |
 | Approval Policy                                  | varchar  | Name of the Approval Policy.                                                                                |
 | Examined Characteristics - Category Status       | varchar  | Whether category filtering is enabled for the audited characteristic.                                      |
-| Examined Characteristics - Categories            | longtext | List of the categories that are either approved, denied, or ignored. For detailed information on this, refer to the [Patch Approval Category Detailed Info](<../dataviews/Patch Approval Category Detailed Info.md>) dataview documentation. |
+| Examined Characteristics - Categories            | longtext | List of the categories that are either approved, denied, or ignored. For detailed information on this, refer to the [Patch Approval Categories](<../dataviews/patch-approval-categories.md>) dataview documentation. |
 | Examined Characteristics - Severity Status       | varchar  | Whether severity filtering is enabled for the audited characteristic.                                      |
 | Unspecified Severity                             | varchar  | Whether the patches with unspecified severity are approved, ignored, or denied.                           |
 | Low Severity                                    | varchar  | Whether the patches with low severity are approved, ignored, or denied.                                   |
@@ -40,6 +40,3 @@ The script, [Create View plugin_proval_auto_approval_status](<../scripts/View - 
 | Examined Characteristics - By Titles             | text     | List of the titles that are either approved, denied, or ignored.                                          |
 | Examined Characteristics - CVSS Status           | varchar  | Whether the patches are approved on the basis of CVSS score or not.                                      |
 | Examined Characteristics - CVSS >                | varchar  | CVSS score above which auto-approval of patches is applied.                                              |
-
-
-
