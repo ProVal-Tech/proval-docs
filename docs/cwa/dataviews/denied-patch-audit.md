@@ -4,7 +4,7 @@ title: 'Denied Patch Audit'
 title_meta: 'Denied Patch Audit'
 keywords: ['patches', 'denied', 'approval', 'hotfix', 'kb', 'devices']
 description: 'This document provides a detailed overview of the denied patches within the environment, including relevant approval policies, hotfix IDs, and affected devices.'
-tags: []
+tags: ['patching']
 draft: false
 unlisted: false
 ---
@@ -17,18 +17,15 @@ This dataview displays the list of denied patches in the environment.
 
 | Column             | Description                                                      |
 |--------------------|------------------------------------------------------------------|
-| ApprovalPolicyID   | The ID of the approval policies where the patch is denied        |
-| ApprovalPolicies    | Name of the approval policies where the patch is denied          |
-| HotfixID           | Hotfix ID of the patch                                           |
-| KBID               | KB ID of the patch                                              |
+| HotfixID           | Hotfix ID of the patch (Hidden)                                   |
 | Title              | Title of the patch                                             |
+| KB                 | KB ID of the patch                                              |
 | Manufacturer       | Manufacturer of the patch                                       |
 | Category           | Category of the patch                                          |
-| DateAdded          | Date the patch was discovered in the system                     |
-| IsThirdParty       | 1 if it's a third-party patch                                   |
-| Affected Devices    | Number of devices on which this patch is denied                 |
-| SetBy              | Describes who set the patch to denied state                     |
+| Patching Stage     | Current patching stage of the patch (Test/Pilot/Production)    |
+| Set By              | Describes who set the patch to denied state                     |
 | Set Time           | Time of the patch denial                                        |
-
-
-
+| Operating System   | Affected Operating System                                        |
+| Approval Policy Count | Number of Approval Policies it is denied into.                |
+| Approval Policies    | Name of the approval policies where the patch is denied          |
+| Affected computers    | Number of devices on which this patch is denied                 |
