@@ -18,7 +18,7 @@ This script is designed to delete a user profile and remove the user account if 
 The `SID` parameter is specifically intended for removing cached or unknown user profiles.
 Running the [Unknown User Profiles](./unknown-user-profiles.md) script will return the `SID` of the inferred profiles.
 
-<span style="color: Orange;"> **User Agreement: *"I acknowledge that I am using a destructive script. I understand that any typographical errors could result in the removal of production profiles, and I accept full responsibility for any consequences."***
+<span style="color: Orange;"> **User Agreement: *"I acknowledge that I am using a destructive script. I understand that any typographical errors could result in the removal of production profiles, and I accept full responsibility for any consequences."*** </span>
 
 It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
 
@@ -61,7 +61,7 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 |---------------|------------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UserName      | TestAdmin  | Partially | Text String | The username of the user whose profile is to be removed. Valid entries for this parameter are: <ul><li>username</li><li>./username</li><li>domain/username</li></ul> |
 | PreserveUser  | 0/1        | False    | Flag        | Use this switch to preserve the user account after profile deletion. |
-| SID | <ul><li>S-1-5-21-3623811015-3361044348-30300820-1013</li><li>S-1-5-21-1173666872-732068812-3818650923-1004, S-1-5-21-1173666872-732068812-3818650923-1008</li><ul> | Partially | Text String | The SID of the user profile to remove. The PreserveUser parameter cannot be used with SID. This parameter can be used when the UserName is not available.<br><br>**Both UserName and SID cannot be used together** |
+| SID | <ul><li>S-1-5-21-3623811015-3361044348-30300820-1013</li><li>S-1-5-21-1173666872-732068812-3818650923-1004, S-1-5-21-1173666872-732068812-3818650923-1008</li></ul> | Partially | Text String | The SID of the user profile to remove. The PreserveUser parameter cannot be used with SID. This parameter can be used when the UserName is not available.<br /><br />**Both UserName and SID cannot be used together** |
 | I_have_read_the_description_and_agree_to_the_user_agreement  | 0/1  | True    | Flag        | The script will not run without flagging this checkbox. Marking this checkbox indicates that the user has read the warning and is running the script with caution. |
 
 

@@ -40,7 +40,7 @@ This script deletes a user profile and removes the user account if it is local. 
 |--------------|------------|-----------|------------------------------------------------------------------------------------------------------|
 | Username     | testuser   | Partially | The username of the user to remove. Can be in the format 'testuser', './testuser', or 'domain/testuser'. |
 | PreserveUser | 1          | False     | If set to 1, then the user account will not be deleted along with the profile.                     |
-| SID | S-1-5-21-3623811015-3361044348-30300820-1013 | Partially | The SID of the user profile to remove. Preserve User can not be used with SID. This parameter can be used when can be used when UserName is not available.<br><br>**Both UserName and SID can not be used together** |
+| SID | S-1-5-21-3623811015-3361044348-30300820-1013 | Partially | The SID of the user profile to remove. Preserve User can not be used with SID. This parameter can be used when can be used when UserName is not available.<br /><br />**Both UserName and SID can not be used together** |
 
 
 ## Process
