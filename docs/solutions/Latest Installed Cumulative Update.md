@@ -11,7 +11,7 @@ unlisted: false
 
 ## Purpose
 
-The solution conducts audits on Windows 10 and 11 computers to check for the latest installed Cumulative Update. It offers an Autofix option, automatically attempting to install the latest available CU if a CU hasn't been installed on the computer for over 75 days.
+The solution audits Windows 10 and 11 computers to verify the latest installed Cumulative Update. It includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified number of days.
 
 ## Associated Content
 
@@ -28,7 +28,7 @@ The solution conducts audits on Windows 10 and 11 computers to check for the lat
 
 | Content                                                                                   | Type            | Function                                                         |
 |-------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------|
-| [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update 75 Days ago.md>)  | Internal Monitor | Detects computers that haven't received a Cumulative Update installation within the past 75 days, excluding End-of-Life (EOL) machines. |
+| [Internal Monitor - Last Cumulative Update > X Days ago](<../cwa/monitors/Last Cumulative Update X Days ago.md>)  | Internal Monitor | Detects computers that haven't received a Cumulative Update installation within the past 75(Default) days, excluding End-of-Life (EOL) machines. |
 | [Script - Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>)  | Autofix Script   | Initiates the installation of the latest available Cumulative Update. |
 | △ Custom - Autofix - Out of Date Cumulative Updates                                      | Alert Template   | Executes the Autofix script upon the machines detected by the internal monitor. |
 
@@ -51,7 +51,7 @@ Import the following scripts from the `ProSync` plugin:
 ### 2.
 Import the following internal monitors from the `ProSync` plugin:
 - [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](<../cwa/monitors/Execute Script - Get Latest Installed Cumulative Update.md>)
-- [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update 75 Days ago.md>)
+- [Internal Monitor - Last Cumulative Update > X Days ago](<../cwa/monitors/Last Cumulative Update X Days ago.md>)
 
 ### 3.
 Import the [Dataview - Latest Installed Cumulative Update](<../cwa/dataviews/Latest Installed Cumulative Update.md>) dataview from the `ProSync` plugin.
@@ -87,11 +87,12 @@ Configure the Auditing section of the solution as follows:
 - Configure the necessary values within the system properties.
   - `Out_of_Date_CU-EmailAlerts`: Configure this system property to 1 to activate Email Alerts in conjunction with the tickets.
   - `Out_of_Date_CU-Autofix_for_Servers`: Assign a value of 1 to this system property to enable Autofix for servers; by default, the script will only generate a ticket for servers.
+  - `Out_of_Date_CU-Disable_Autofix_for_Workstations`: Assign a value of 1 to this system property to Disable Autofix for workstations.
 
 ### 2.
 Configure the Autofix section of the solution as follows:
 - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-  - [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update 75 Days ago.md>)
+  - [Internal Monitor - Last Cumulative Update > X Days ago](<../cwa/monitors/Last Cumulative Update X Days ago.md>)
     - Configure with the alert template: `△ Custom - Autofix - Out of Date Cumulative Updates`
     - Set the required ticket category as explained in the **Ticket Category** section of the [Out of Date Cumulative Updates [Autofix]*](<../cwa/scripts/Out of Date Cumulative Updates Autofix.md>) script's document.
     - Right-click and Run Now to start the monitor
@@ -101,7 +102,7 @@ Configure the Autofix section of the solution as follows:
 ### 1.
 Configure the Autofix section of the solution as follows:
 - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-  - [Internal Monitor - Last Cumulative Update > 75 Days ago](<../cwa/monitors/Last Cumulative Update 75 Days ago.md>)
+  - [Internal Monitor - Last Cumulative Update > X Days ago](<../cwa/monitors/Last Cumulative Update X Days ago.md>)
     - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
 
