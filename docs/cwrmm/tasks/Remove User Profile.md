@@ -35,19 +35,19 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 
 **Example 1:** Removing a local user account and profile
 
-![Sample Run 2](../../../static/img/Remove-User-Profile/image2.png) 
+![Sample Run 2](../../../static/img/Remove-User-Profile/Image2.png) 
 
 **Example 2:** Removing an user profile and preserving the user
 
-![Sample Run 3](../../../static/img/Remove-User-Profile/image3.png) 
+![Sample Run 3](../../../static/img/Remove-User-Profile/Image3.png) 
 
 **Example 3:** Removing the user profile of a domain user
 
-![Sample Run 4](../../../static/img/Remove-User-Profile/image4.png) 
+![Sample Run 4](../../../static/img/Remove-User-Profile/Image4.png) 
 
 **Example 4:** Removing multiple unknown/cached user profiles using `SID`
 
-![Sample Run 5](../../../static/img/Remove-User-Profile/image5.png) 
+![Sample Run 5](../../../static/img/Remove-User-Profile/Image5.png) 
 
 ![Sample Run 6](../../../static/img/Remove-User-Profile/image_3.png) 
 
@@ -109,7 +109,7 @@ This screen will appear.
 ### SID:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![SID Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![SID Add Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
 ![SID Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
@@ -117,7 +117,7 @@ This screen will appear.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![SID Parameter Image](../../../static/img/Remove-User-Profile/image10.png)  
+![SID Parameter Image](../../../static/img/Remove-User-Profile/Image10.png)  
 
 ### I_have_read_the_description_and_agree_to_the_user_agreement:
 
@@ -131,7 +131,7 @@ This screen will appear.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Image](../../../static/img/Remove-User-Profile/image11.png)  
+![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Image](../../../static/img/Remove-User-Profile/Image11.png)  
 
 ## Task
 
