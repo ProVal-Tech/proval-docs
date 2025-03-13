@@ -11,13 +11,13 @@ unlisted: false
 
 ## Summary
 
-This Task performs the endpoint scanning using the MSRT and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>) if the task ran successfully.
-This script can be run on demand as well or by scheduling it to the group [Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
+This Task performs the endpoint scanning using the MSRT and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic [Group - Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>) if the task ran successfully.
+This script can be run on demand as well or by scheduling it to the [Group - Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
 
 ## Dependencies
 
 - [MSRT Custom fields](<../custom-fields/MSRT Custom Fields.md>)
-- [Malicious software removal tool scanning enable group](<../groups/Malicious Software Removal Tool Scanning Enable.md>)
+- [Group - Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>)
 
 ## Sample Run
 
@@ -327,7 +327,7 @@ In the script log message, simply type `Malicious Software Removal Tool scanner 
 
 ## Deployment
 
-It is suggested to run the Task every 2 hours against the group [Malicious software removal tool scanning enable group](<../groups/Malicious Software Removal Tool Scanning Enable.md>)
+It is suggested to run the Task every 2 hours against the group [Group - Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Malicious Software Removal Tool Scanning` Task.
@@ -349,7 +349,7 @@ Change the number of hours to `2` and click `OK`.
 
 ![Change Hours](../../../static/img/Reboot-Pending-Check-Automation/image_28.png)
 
-Select the target `Device Group` to schedule on the group [Malicious software removal tool scanning enable group](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
+Select the target `Device Group` to schedule on the group [Group - Malicious software removal tool scanning enable](<../groups/Malicious Software Removal Tool Scanning Enable.md>).
 
 ![Select Target](<../../../static/img/docs/Malicious Software Removal Tool Scanning/image-5.png>)
 

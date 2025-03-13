@@ -15,7 +15,7 @@ This group includes the endpoint where the MSRT scanning required to be enable.
 ## Dependencies
 [MSRT Custom fields](<../custom-fields/MSRT Custom Fields.md>)
 
-[Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
+[Task - Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
 
 ## Group Details
 

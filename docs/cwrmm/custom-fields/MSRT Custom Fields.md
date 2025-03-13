@@ -11,14 +11,14 @@ unlisted: false
 
 ## Summary
 
-This document provides a detailed guide on creating a custom fields for the MSRT(Malicious Software Removal Tool) in ConnectWise RMM. It includes instructions on how to set up the field, its properties, and its importance in associating MSRT with their respective organizations. It is utilized by the [Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
-and [Malicious Software Removal Tool Disable/Uninstall](<../tasks/Malicious Software Removal Tool Disable-Uninstall.md>) tasks.
+This document provides a detailed guide on creating a custom fields for the MSRT(Malicious Software Removal Tool) in ConnectWise RMM. It includes instructions on how to set up the field, its properties, and its importance in associating MSRT with their respective organizations. It is utilized by the [Task - Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
+and [Task - Malicious Software Removal Tool Disable/Uninstall](<../tasks/Malicious Software Removal Tool Disable-Uninstall.md>) tasks.
 
 ## Dependencies
 
-[Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
+[Task - Malicious Software Removal Tool Scanning](<../tasks/Malicious Software Removal Tool Scanning.md>)
 
-[Malicious Software Removal Tool Disable/Uninstall](<../tasks/Malicious Software Removal Tool Disable-Uninstall.md>)
+[Task - Malicious Software Removal Tool Disable/Uninstall](<../tasks/Malicious Software Removal Tool Disable-Uninstall.md>)
 
 ## Create the Custom Field
 Create Custom Field
