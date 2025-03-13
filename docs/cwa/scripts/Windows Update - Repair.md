@@ -43,7 +43,8 @@ Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-Win
 
 Note: Please whitelist the below filehash in the security application for the PowerShell successful execution:
 
-`52201C9FA25C55272FB06A62FA1456E0`
+`A85B0B3777A73455459B45262D77FD00`
+`BBEADFA9ED2BA57A5830E23871693F55`
 
 
 
