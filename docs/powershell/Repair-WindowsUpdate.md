@@ -27,8 +27,9 @@ Running the script may not necessarily resolve any issues with Windows updates. 
 1. Stop the services related to Windows updates.
 2. Perform a System File Check.
 3. Rename cache directories for Windows Update.
-4. Start the services related to Windows updates.
-5. Log any failures to the error log.
+4. Reset the Windows Component by installing the PSWindowsUpdate module.
+5. Start the services related to Windows updates.
+6. Log any failures to the error log.
 
 Attempt to reset Windows Update settings as a primary troubleshooting step for Windows Update issues.
 
