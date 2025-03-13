@@ -36,12 +36,12 @@ After the `SetEnvironment` is set, please refer to the sample execution.
 
 ## EDF
 
-| Name                     | Level   | Type  | Editable | Description                                                                                                                                               |
-|--------------------------|---------|-------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MSRT Scanner Enable      | Client  | Flag  | Yes      | This EDF check will enable the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>).           |
-| MSRT Scanner Exclude     | Location| Flag  | Yes      | This EDF check will exclude the location from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
-| MSRT Scanner Exclude     | Computer| Flag  | Yes      | This EDF check will exclude the computer from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
-| MSRT Scanner Result      | Client  | Text  | No       | This EDF stores the scan result, conclusive output, and date when the scanning occurred in the format example: "Infection Not Found -- M/DD/YYYY hh:mm:ss". |
+| Name                     | Level   | Section | Type  | Editable | Description                                                                                                                                               |
+|--------------------------|---------|-------|-------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MSRT Scanner Enable      | Client  |Software | Checkbox | Yes      | This EDF check will enable the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>).           |
+| MSRT Scanner Exclude     | Location| Exclusions | Checkbox  | Yes      | This EDF check will exclude the location from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
+| MSRT Scanner Exclude     | Computer| Exclusions | Checkbox  | Yes      | This EDF check will exclude the computer from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
+| MSRT Scanner Result      | Computer | Software | Text  | No       | This EDF stores the scan result, conclusive output, and date when the scanning occurred in the format example: "Infection Not Found -- M/DD/YYYY hh:mm:ss". |
 
 #### User Parameters
 
