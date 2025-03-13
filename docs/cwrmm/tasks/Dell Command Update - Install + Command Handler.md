@@ -34,7 +34,7 @@ This command will not install any active driver as we are not using the `-forceu
 
 ### Example 3:
 Running the script to forcefully install all available driver updates.  
-<span style="color: Orange;">**Caution:** It is recommended to restart the computer at the earliest convenience after using the `-forceupdate=enable` switch, as this switch updates active drivers as well. An active driver that requires a restart for the update may malfunction if the update is installed without rebooting the computer.</span>  
+<span style={{color: 'Orange'}}>**Caution:** It is recommended to restart the computer at the earliest convenience after using the `-forceupdate=enable` switch, as this switch updates active drivers as well. An active driver that requires a restart for the update may malfunction if the update is installed without rebooting the computer.</span>  
 ![Example3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/Example3.png)  
 
 

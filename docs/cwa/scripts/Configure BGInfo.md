@@ -57,7 +57,7 @@ The conguration file I have saved in the example screenshots will display the fo
 
 ![Image7](../../../static/img/cwa-configure-bginfo/Image7.png)  
 
-<span style="color: skyblue;">**Note:** If the global variable `bgiName` is not set in the script then running the script will display the default information at user's desktop.</span>  
+<span style={{color: 'skyblue'}}>**Note:** If the global variable `bgiName` is not set in the script then running the script will display the default information at user's desktop.</span>
 ![Image8](../../../static/img/cwa-configure-bginfo/Image8.png)  
 
 ## Sample Run  

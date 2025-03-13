@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-### <span style="color: red; text-decoration: underline;">***This script is destructive and should only be used after fully understanding the implications.***</span>
+### <span style={{color: 'red'}}>***This script is destructive and should only be used after fully understanding the implications.***</span>
 
 This script deletes a user profile and removes the user account if it is local. It runs [User Profile - Get Information](<./User Profile - Get Information.md>) after successful deletion.
 

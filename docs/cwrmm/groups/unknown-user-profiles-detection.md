@@ -66,18 +66,18 @@ Fill in the summary as follows:
 
 ![Image5](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image5.png)
 
-<span style="color: green;"> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled`, `Workstations Only` </span>
+<span style={{color: 'green'}}> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled`, `Workstations Only` </span>
 
 **Condition 2:**
 
 - Click the `+ Add Criteria` button.
 - Search and select the `OS` condition.
 - Select the `Contains any of` operator.
-- Select `Microsoft Windows` <span style="color: yellow;">**>>**</span> `10`, and `11` from the dropdown menu.
+- Select `Microsoft Windows` <span style={{color: 'yellow'}}>**>>**</span> `10`, and `11` from the dropdown menu.
 
 ![Image6](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image6.png)
 
-<span style="color: green;"> **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11` </span>
+<span style={{color: 'green'}}> **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11` </span>
 
 **Condition 3:**
 
@@ -95,19 +95,19 @@ Fill in the summary as follows:
 
 ![Image8](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image8.png)
 
-<span style="color: green;"> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled` </span>
+<span style={{color: 'green'}}> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled` </span>
 
 **Condition 5:**
 
 - Click the `+ Add Criteria` button inside the outer block.
 - Search and select the `OS` condition.
 - Select the `Contains any of` operator.
-- Select `Microsoft Windows` <span style="color: yellow;">**>>**</span> `Server` <span style="color: yellow;">**>>**</span> `2016`, `2019`, and `2022` from the dropdown menu.
+- Select `Microsoft Windows` <span style={{color: 'yellow'}}>**>>**</span> `Server` <span style={{color: 'yellow'}}>**>>**</span> `2016`, `2019`, and `2022` from the dropdown menu.
 - Select `2016` and newer servers.
 
 ![Image9](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image9.png)
 
-<span style="color: green;"> **Condition:** `OS` `Contains any of` `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`</span>
+<span style={{color: 'green'}}> **Condition:** `OS` `Contains any of` `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`</span>
 
 ### Step 5
 
