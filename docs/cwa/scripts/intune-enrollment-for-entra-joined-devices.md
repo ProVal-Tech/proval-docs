@@ -13,6 +13,8 @@ unlisted: false
 
 The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.
 
+**Note:** The end machine may require a restart to complete the enrollment process.
+
 ### Requirements
 
 - Windows 10/11 device  
