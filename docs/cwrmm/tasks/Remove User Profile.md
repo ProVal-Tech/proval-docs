@@ -11,14 +11,14 @@ unlisted: false
 
 ## Summary
 
-### <span style="color: red; text-decoration: underline;">***This script is destructive and should only be used after fully understanding the implications.***</span>
+### <span style={{color: 'red'}}>***This script is destructive and should only be used after fully understanding the implications.***</span>
 
 This script is designed to delete a user profile and remove the user account if it is local. Note that the `SID` and `Username` parameters cannot be used simultaneously.
 
 The `SID` parameter is specifically intended for removing cached or unknown user profiles.
 Running the [Unknown User Profiles](./unknown-user-profiles.md) script will return the `SID` of the inferred profiles.
 
-<span style="color: Orange;"> **User Agreement: *"I acknowledge that I am using a destructive script. I understand that any typographical errors could result in the removal of production profiles, and I accept full responsibility for any consequences."*** </span>
+<span style={{color: 'Orange'}}> **User Agreement: *"I acknowledge that I am using a destructive script. I understand that any typographical errors could result in the removal of production profiles, and I accept full responsibility for any consequences."*** </span>
 
 It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
 

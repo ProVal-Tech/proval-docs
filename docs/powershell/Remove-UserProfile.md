@@ -11,7 +11,7 @@ unlisted: false
 
 # Overview
 
-### <span style="color: red; text-decoration: underline;">***This script is destructive and should only be used after fully understanding the implications.***</span>
+### <span style={{color: 'red'}}>***This script is destructive and should only be used after fully understanding the implications.***</span>
 
 Deletes a user profile and removes the user account if local.
 

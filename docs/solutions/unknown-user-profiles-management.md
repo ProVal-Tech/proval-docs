@@ -19,7 +19,7 @@ The [Unknown User Profiles](../cwrmm/tasks/unknown-user-profiles.md) task identi
 
 ![Sample Run](../../static/img/Remove-User-Profile/Image5.png) 
 
-<span style="color: red; text-decoration: underline;">**Caution: The [Remove User Profile](../cwrmm/tasks/Remove%20User%20Profile.md) task is destructive and should only be used after fully understanding the implications.**</span>
+<span style={{color: 'red'}}>**Caution: The [Remove User Profile](../cwrmm/tasks/remove%20user%20profile.md) task is destructive and should only be used after fully understanding the implications.**</span>
 
 ## Associated Content
 

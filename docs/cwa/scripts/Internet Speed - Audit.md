@@ -43,6 +43,12 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 See [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>) for detailed information about the process. The script takes the output from this agnostic script and inserts it into a table: [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
 
+```
+Note: Please get the below MD5 file hash whitelisted for the script to work on the agents where security applications are present.
+
+33998CAE3EA48E30B2045BD1995BF129
+5FF7C683388CC6B45875035BC8C4ACD7
+```
 ## Output
 
 - Script Log
