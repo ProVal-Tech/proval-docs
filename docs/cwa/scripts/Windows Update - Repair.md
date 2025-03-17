@@ -39,7 +39,14 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Process
 
-Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>). Attempts to remove the `SoftwareDistribution.old` and `catroot2.old` directories if new `SoftwareDistribution` and `catroot2` directories are created. Logs successes and failures accordingly. If the script fails to repair the device, it will verify the global variable settings and notify as configured.
+Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>). Attempts to remove the `SoftwareDistribution.old` and `catroot2.old` directories if new `SoftwareDistribution` and `catroot2` directories are created. Reset the Windows update components. Logs successes and failures accordingly. If the script fails to repair the device, it will verify the global variable settings and notify as configured.
+
+Note: Please whitelist the below filehash in the security application for the PowerShell successful execution:
+
+`A85B0B3777A73455459B45262D77FD00`
+`BBEADFA9ED2BA57A5830E23871693F55`
+
+
 
 ## Output
 
