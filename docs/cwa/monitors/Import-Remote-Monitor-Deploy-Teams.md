@@ -2,8 +2,8 @@
 id: '5cc62311-8109-43b8-af64-e0aac4292d19'
 title: 'Import - Remote Monitor - Deploy Teams'
 title_meta: 'Import - Remote Monitor - Deploy Teams'
-keywords: ['bginfo', 'script', 'connectwise', 'monitoring', 'alert']
-description: 'This document provides a detailed guide on how to implement the BGInfo script within ConnectWise Automate. It includes steps for importing the script, creating alert templates, and applying the script to specific groups using SQL queries.'
+keywords: ['teams', 'machine-wide', 'connectwise', 'monitoring', 'alert']
+description: 'This document outlines the implementation process of the Deploy Teams remote monitor.'
 tags: ['connectwise', 'database']
 draft: false
 unlisted: false
