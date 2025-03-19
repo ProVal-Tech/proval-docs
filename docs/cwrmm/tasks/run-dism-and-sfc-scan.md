@@ -1,7 +1,7 @@
 ---
 id: '8ec14581-b7a3-4e68-a4f9-28764e3dc242'
-title: 'run-dism-and-sfc-scan'
-title_meta: 'run-dism-and-sfc-scan'
+title: 'Run DISM and SFC Scan'
+title_meta: 'Run DISM and SFC Scan'
 keywords: ['Diagnostic','SFC','DISM','Scan']
 description: 'CW RMM task to execute a DISM repair followed by a SFC scan. This can be used to fix any potential corruptions'
 tags: ['Diagnostic','Windows']
