@@ -44,7 +44,7 @@ This example demonstrates the default behavior where the script automatically re
 ## Sample Prompt
 
 ![Image3](../../../static/img/cwa-script-system-health-check-and-repair/Image3.png)  
-**Note:** The header image and title displayed in the prompt will vary based on your environment.
+**Note:** The header image and icon displayed in the prompt will vary based on your environment.
 
 ## Output
 
