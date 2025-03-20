@@ -1,3 +1,14 @@
+---
+id: '98773b6a-7986-4df2-90a5-fb559eefc50b'
+title: 'Automate server and CW Manage Plugin Monitoring'
+title_meta: 'Automate server and CW Manage Plugin Monitoring'
+keywords: ['automate', 'monitoring', 'plugins', 'efficiency', 'proactivity']
+description: 'This document outlines a solution aimed at enhancing the efficiency and proactivity of the Automate server and CW Manage plugins monitoring process. It includes important notices, associated content, and implementation steps to ensure seamless monitoring and issue resolution.'
+tags: ['database', 'email']
+draft: false
+unlisted: false
+---
+
 ## Purpose
 
 The goal of this solution's development is to improve the efficiency and proactivity of the Automate server and CW Manage plugins monitoring process. Both of these are essential tools for our partners, so we want to keep a close check on them and resolve any issues before they affect productivity.
