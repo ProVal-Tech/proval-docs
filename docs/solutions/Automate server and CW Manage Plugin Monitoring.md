@@ -1,139 +1,403 @@
----
-id: '98773b6a-7986-4df2-90a5-fb559eefc50b'
-title: 'Automate server and CW Manage Plugin Monitoring'
-title_meta: 'Automate server and CW Manage Plugin Monitoring'
-keywords: ['automate', 'monitoring', 'plugins', 'efficiency', 'proactivity']
-description: 'This document outlines a solution aimed at enhancing the efficiency and proactivity of the Automate server and CW Manage plugins monitoring process. It includes important notices, associated content, and implementation steps to ensure seamless monitoring and issue resolution.'
-tags: ['database', 'email']
-draft: false
-unlisted: false
----
-
 ## Purpose
 
 The goal of this solution's development is to improve the efficiency and proactivity of the Automate server and CW Manage plugins monitoring process. Both of these are essential tools for our partners, so we want to keep a close check on them and resolve any issues before they affect productivity.
 
-**If the "Supported Environment" column says "Both," then the solution can be imported for the "Hosted" partners as well.**
-
-## Important Notice
-
-We are suspending the use of the suggested alerting for a few solutions for the time being. Please heed the following instructions until further notice:
-
-1. Do not schedule the [ConnectWise Manage Plugin Sync/Mapping Audit](<../cwa/scripts/ConnectWise Manage Plugin SyncMapping Audit.md>) script.
-2. Assign the "Default - Create alert" template to the [ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Unwanted Event Logs Monitoring.md>) remote monitor.
-3. Assign the "Default - Do Nothing" template to the [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>) internal monitor.
-
-The deprecated `△ Email ProVal's Autotask` alert template will instead use the `△ Custom - Autofix - Restart Service - Automate Server Monitoring` alert template with the [CWM - Automate - Script - Automate Server Monitoring - Service - Restart [Autofix]](https://proval.itglue.com/5078775/docs/11182312#version=published&documentMode=edit) script to attempt to restart the service before emailing out to [Alerts@provaltech.com](mailto:Alerts@provaltech.com).
+**If the "Supported Environment" column says "Both" then the solution can be imported for the "Hosted" partners as well.**
 
 ## Associated Content
 
-| **Content**                                                                 | Priority | **Type**        | **Supported Environment** | **Function**                                                                                                                                                                                                                                           |
-|-----------------------------------------------------------------------------|----------|-----------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Script - Unsynced Tickets](<../cwa/scripts/Unsynced Tickets.md>) | High     | Client Script    | Both                     | Email the details of the unsynced tickets to the email address(es) set in the system property `Unsynced_Ticket_Email_Address`.                                                                                                                      |
-| △ Autofix - Ticket Sync Failed                                              |          | Alert Template   | Both                     | This alert template should be assigned to the [ProVal - Production - Automate - Ticket Sync Unsuccessful](<../cwa/monitors/Ticket Sync Unsuccessful.md>) monitor set. It will execute the [Ticket Sync Failed [Autofix, Globals]](<../cwa/scripts/Ticket Sync Failed.md>) script. |
-| [ProVal - Development - Automate - Unsynced Ticket Comment](https://proval.itglue.com/DOC-5078775-10390973) | High     | Internal Monitor  | Both                     | The main objective of the monitor set is to alert the partners of any unsynced ticket comments for a ticket that has already been synchronized to CW Manage. Alert Template: ~Custom Email RAWSQL Monitor set results to the Partner. Subject: Ticket Comment Failed to Sync to Manage for %ExternalID% |
-| [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) |          | Autofix Script    | Both                     | It's a replication of a few functions from [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script. Instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor set to the Email address of the alert template. It is to be used by the following Internal Monitors: [ProVal - Development - Automate - Unsynced Ticket Comment](https://proval.itglue.com/DOC-5078775-10390973), [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>), [ProVal - Development - Control - Broken Integration](<../cwa/monitors/Broken Integration.md>) |
-| △ Email RAWSQL Monitor set results to the Partner                          |          | Alert Template    | Both                     | This alert template should be assigned to the [ProVal - Development - Automate - Unsynced Ticket Comment](https://proval.itglue.com/DOC-5078775-10390973) monitor set. It will execute the [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) script to send an email to the selected template contact/user. |
-| [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>) | Medium   | Internal Monitor  | Both                     | The internal monitor is designed to notify [alerts@provaltech.com](mailto:alerts@provaltech.com) of any critical errors and issues with the ConnectWise Manage Plugin. Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor. ~Custom Email RAWSQL Monitor set results to ProVal. Subject: CW Manage Plugin Errors Detected for %Result% e.g., CW Manage Plugin Errors Detected for Contacts on 2022-08-09 |
-| ~Custom Email RAWSQL Monitor set results to ProVal                          |          | Alert Template    | Both                     | This alert template should be assigned to the [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>) and [ProVal - Development - Control - Broken Integration](<../cwa/monitors/Broken Integration.md>) monitor sets. It will execute the [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) script to send an email to [Alerts@provaltech.com](mailto:Alerts@provaltech.com). |
-| [ProVal - Development - Failed Email Monitoring](https://proval.itglue.com/DOC-5078775-10220814) | Medium in CW Manage environments; High in other environments | Internal Monitor  | Both                     | This monitor reports any failed email that is not related to 'Google authenticator', 'Testing Email Flow', or 'Authentication Token' that has occurred within the last hour. It will generate only one ticket per hour with the information of all the emails that failed within that interval. Alert Template: ~Custom Ticket Creation without computer Details. Subject: Automate Failed Email detected |
-| [Ticket Creation - Without Computer Information And Failures Only [Autofix]*](<../cwa/scripts/Ticket Creation - Without Computer Information And Failures Only Autofix.md>) |          | Autofix Script    | Both                     | It's a replication of a few functions from [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script. Instead of creating a ticket with the Computer's Details, it will create a ticket without including the computer's details. Also, no actions are defined in the script for the SUCCESS status of the monitors. It is to be used with the following monitors: [ProVal - Development - Failed Email Monitoring](https://proval.itglue.com/DOC-5078775-10220814) |
-| △ Ticket Creation - without computer Details                                |          | Alert template     | Both                     | This alert template should be assigned to the [ProVal - Development - Failed Email Monitoring](https://proval.itglue.com/DOC-5078775-10220814) monitor set. It will execute the [Ticket Creation - Without Computer Information And Failures Only [Autofix]*](<../cwa/scripts/Ticket Creation - Without Computer Information And Failures Only Autofix.md>) script to create a ticket with the information returned by the monitor set. |
-| [ProVal - Production - Automate - Over 90% Licenses Used [G]](https://proval.itglue.com/DOC-5078775-8063471) | Medium   | Internal Monitor  | Both                     | Check current Automate license availability. Suggested monitor failure is 90% usage. It will notify the partners of the failures. Alert Template: Default Create Automate Ticket. **The Ticket Category of the monitor set should be adjusted as per the requirements. Subject: Automate Server Over Licenses |
-| [ProVal - Production - Automate - Less Than 10 Licenses Remaining [G]](<../cwa/monitors/Automate - Less Than 10 Licenses Remaining.md>) | Medium   | Internal Monitor  | Both                     | Check current Automate license availability. It will notify the partners if only 10 licenses are left. Alert Template: Default Create Automate Ticket. **The Ticket Category of the monitor set should be adjusted as per the requirements. **Better to keep cleaning the duplicate and stale agents to avoid receiving an alert from this monitor set. Subject: Automate Server Over Licenses |
-| [ProVal - Development - Control - Broken Integration](<../cwa/monitors/Broken Integration.md>) | Urgent   | Internal Monitor  | Both                     | The monitor set is designed to create an urgent ticket to our (ProVal's) AutoTask Portal for a broken integration between ConnectWise Automate and Control. Alert Template: ~Custom Email RAWSQL Monitor set results to ProVal. Subject: Urgent - Integration Between Control and Automate is broken |
-| [ProVal - Development - SVC-CWAFileService](<../cwa/monitors/SVC-CWAFileService.md>) | Urgent   | Remote Monitor    | On-Prem                 | Since CWAFileService is one of the important services for the Automate server, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it. Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring. Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%). Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
-| [ProVal - Development - SVC-LTRedirSVC](<../cwa/monitors/SVC-LTRedirSVC.md>) | Urgent   | Remote Monitor    | On-Prem                 | Since LTRedirSVC is one of the important services for the Automate server, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it. Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring. Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%). Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
-| [ProVal - Development - SVC-CWAMessageQueue](<../cwa/monitors/SVC-CWAMessageQueue.md>) | Urgent   | Remote Monitor    | On-Prem                 | Since CWAMessageQueue is one of the important services for the Automate server, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it. Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring. Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%). Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
-| △ Custom - Autofix - Restart Service - Automate Server Monitoring           |          | Alert Template    | On-Prem                 | This alert template should be assigned to the [ProVal - Development - SVC-CWAFileService](<../cwa/monitors/SVC-CWAFileService.md>), [ProVal - Development - SVC-LTRedirSVC](<../cwa/monitors/SVC-LTRedirSVC.md>), [ProVal - Development - SVC-CWAMessageQueue](<../cwa/monitors/SVC-CWAMessageQueue.md>), and monitor sets. It will attempt to restart the service and will send an email for Autofix failure to [Alerts@ProValtech.com](mailto:Alerts@ProValtech.com), which in turn will generate a ticket in our (ProVal's) Autotask portal. Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%). Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
-| [ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Unwanted Event Logs Monitoring.md>) | Medium   | Remote Monitor    | On-Prem                 | The purpose of this remote monitor is to generate an urgent ticket in our (ProVal's) Autotask portal if an error or critical event from either "DBAgent", "ASPWCC2", or "MySQL" event sources is generated more than 10 times within the past 60 minutes on Automate server. Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor. Automate Server - Event Log Monitoring [Autofix]. Subject: Urgent - Automate Server - Unwanted Event Logs Detected |
-| [Automate Server - Event Log Monitoring [Autofix]](<../cwa/scripts/Automate Server - Event Log Monitoring Autofix.md>) |          | Autofix Script    | On-Prem                 | The purpose of the script is to send the information of the event logs detected by the "[ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Unwanted Event Logs Monitoring.md>)" monitor set. The result sometimes crosses the character limit of 100 characters, and hence, the script was needed for the alerting purpose. Also, this is not designed to send any notifications for the Success status of the monitor set. |
-| △ Automate Server - Event Log Monitoring [Autofix]                        |          | Alert Template    | On-Prem                 | This alert template should be assigned to the [ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Unwanted Event Logs Monitoring.md>) monitor set. It will execute the [Automate Server - Event Log Monitoring [Autofix]](<../cwa/scripts/Automate Server - Event Log Monitoring Autofix.md>) script to send the event log's information to [alerts@provaltech.com](mailto:alerts@provaltech.com) as an urgent ticket. |
-| [Database size increased by 5%*[Global]](https://proval.itglue.com/DOC-5078775-10390940) | Medium   | Script           | Both                     | The ultimate goal of this script is to create a ticket in our (ProVal's) AutoTask portal if the overall size of the Labtech Database increases by 5% (threshold is flexible) within the last 24 hours (it depends on the frequency of the schedule). Subject: Database size increased by @SizeToCompare@ Percent within the last @Hours@ Hour e.g., Database size increased by 5 Percent within the last 24 Hour |
-| [Nightly Database Backup Monitoring*[Global]](<../cwa/scripts/Nightly Database Backup Monitoring.md>) | Medium   | Script           | Both                     | This script will create a ticket in our (ProValtech's) Autotask Portal if Labtech's Nightly backup fails. Subject: Nightly Database Backup Failed |
-| [Purge IIS Log Files Older than X days[Param]](<../cwa/scripts/Purge IIS Logs Older than X Days Param.md>) |          | Script           | On-Prem                 | It will remove the IIS logs older than `Days` (Global Variable) days if the size of the "c://inetpub//logs//logfiles//w3svc" folder is greater than `Size` (Global Variable) MB. Preferred to schedule against the "Labtech Server" Group to run once per week. By default, it will remove the logs older than 30 days if the size of the directory is greater than 1024 MB. |
-| [Volume Free Space - Monitor Creation - Automate Server Only](<../cwa/scripts/Volume Free Space - Monitor Creation - Automate Server Only.md>) | Medium   | Script           | On-Prem                 | This is an exact copy of the [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../cwa/scripts/Create Predictive Volume Exhaustion Monitors.md>) script with a few changes. The purpose here is to use the dynamic monitor generated by the [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../cwa/scripts/Create Predictive Volume Exhaustion Monitors.md>) script to monitor the Automate server's drives and to generate a ticket in our (ProVal's) Autotask portal for the failures. We would like to proactively monitor the drive and perform the basic actions (like removing some unnecessary files, logs, or folders) to free up some space for our partners. Subject: Volume Space - %FieldName%: (%ComputerName%-%Computerid%) e.g., Volume Space - C: (CW-Computer-200) |
-| [ConnectWise Manage Plugin Sync/Mapping Audit](<../cwa/scripts/ConnectWise Manage Plugin SyncMapping Audit.md>) | Medium   | Script           | Both                     | This script will send an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) if it finds any necessary component as unsynced or unmapped in the CW Manage plugin. The email will contain all the necessary details to act upon. Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor. Subject: Unmapped/Unsynced entity detected in CW Manage Plugin |
-| [CWM - Automate - Script - Automate Server Monitoring - Service - Restart [Autofix]](https://proval.itglue.com/5078775/docs/11182312#version=published&documentMode=edit) |          | Autofix Script    | On-Prem                 | To be used with remote service monitors to attempt to restart the service before sending an URGENT email to [alerts@provaltech.com](mailto:alerts@provaltech.com). |
-| [CWM - Automation - Monitor - ProVal - Production - SVC-CWAIISMgr](<../cwa/monitors/SVC-CWAIISMgr.md>) | Urgent   | Remote Monitor    | On-Prem                 | Since CWAIISMgr is one of the important services for the Automate server, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it. Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring. Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%). Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
-| [CWM - Automate - Script - Backup Automate Customizations](<../cwa/scripts/Backup ScriptsMonitorsCustomizations.md>) | High     | Script           | Both                     | To perform a scheduled backup of the following customizations: - Scripts - Scriptlets - Internal Monitors - Group Monitors - Remote Monitors - Dataviews - Role Definitions - ExtraData Fields - VirusScanners. Creates an Autotask ticket if the computerid to save the backup is not properly configured. Email Subject: Automate Customizations Backup FAILED |
-| [Internal Monitor - ProVal - Production - Scripting Engine Hung](<../cwa/monitors/Scripting Engine Hung.md>) | Medium   | Internal Monitor  | Both                     | This monitor creates a critical ticket to the board to inform that the script engine is stuck and none of the scripts are running in the environment. It also sends an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) to review it proactively. The monitor detects the X number of scripts stuck in the pending scripts table for longer than Y minutes of the scheduled time. |
-| △ Custom - Email - RAWSQL Monitor set results to ProVal:                     |          | Alert Template    |                          | Apply this alert template with the monitor [Internal Monitor - ProVal - Production - Scripting Engine Hung](<../cwa/monitors/Scripting Engine Hung.md>). It will send an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) for us to review the script engine hung case proactively and also raise a ticket for the client. Refer to the implementation section for the alert template import. |
+| Content                                                                                                                                                                                                                                          | Priority | Type             | Supported Environment | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ---------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Script - Unsynced Tickets](<../cwa/scripts/Unsynced Tickets.md>)                                                                                                                                                                                | High     | Client Script    | Both                  | Email the details of the unsynced tickets to the email address(es) set in the system property `Unsynced_Ticket_Email_Address`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Script - Backup Scripts/Monitors/Customizations](<../cwa/scripts/Backup ScriptsMonitorsCustomizations.md>)                                                                                                                                      | High     | Client Script    | Both                  | To perform a scheduled backup of the following customizations:<br>- Scripts<br>- Scriptlets<br>- Internal Monitors<br>- Group Monitors<br>- Remote Monitors<br>- Dataviews<br>- Role Definitions<br>- ExtraData Fields<br>- VirusScanners<br>Creates an Autotask ticket if the computerid to save the backup is not properly configured.<br>Email Subject: Automate Customizations Backup FAILED                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [Script - Nightly Database Backup Monitoring*](<../cwa/scripts/Nightly Database Backup Monitoring.md>)                                                                                                                                           | Medium   | Script           | Both                  | This script will create a ticket in our (ProValtech's) Autotask Portal if Labtech's Nightly backup Fails.<br>Subject: Nightly Database Backup Failed<br>*Change to two days in a row of failed backups since we now have our backup script                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [ProVal - Production - Failed Email Monitoring](<../cwa/monitors/CWM - Automate - Monitor -Failed Email Monitoring.md>)                                                                                                                          | Medium   | Internal Monitor | Both                  | This Monitor reports any failed email that is not related to 'Google authenticator', 'Testing Email Flow', or 'Authentication Token' that has occurred within the last hour.<br>It will generate only one ticket per hour with the information of all the emails that failed within that interval.<br>Alert Template: ~Custom Ticket Creation without computer Details<br>Subject: Automate Failed Email detected<br>*Convert this to a client script?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| [Internal Monitor -Automate - Over 90% Licenses Used [G]](<../cwa/monitors/Over 90 Percent Licenses Used G.md>) OR [Internal Monitor - Automate - Less Than 10 Licenses Remaining [G]](<../cwa/monitors/Automate - Less Than 10 Licenses Remaining.md>) | Medium   | Internal Monitor | Both                  | Check current Automate license availability. Suggested monitor failure is 90% usage. It will notify the partners of the failures.<br>Alert Template: Default Create Automate Ticket<br>**The Ticket Category of the monitor set should be adjusted as per the requirements.<br>Subject: Automate Server Over Licenses<br>Check current Automate license availability. It will notify the partners if only 10 licenses are left.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [Monitor - ScreenConnect - Broken Integration](<../cwa/monitors/Broken Integration.md>)                                                                                                                                                          | Urgent   | Internal Monitor | Both                  | The monitor set is designed to create an urgent ticket to our (ProVal's) AutoTask Portal for a broken integration between ConnectWise Automate and Control.<br>Alert Template: △ Custom - Email RAWSQL Monitor set results to ProVal<br>Subject: Urgent - Integration Between Control and Automate is broken                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [Internal Monitor - Heartbeat Anomaly Audit](<../cwa/monitors/Heartbeat Anomaly Audit.md>)                                                                                                                                                       | Medium   | Internal Monitor | Both                  | This monitor is intended to create a ticket to our (ProVal's) AutoTask Portal if there are fewer heartbeats than expected from the machines checking in within the environment.<br>Alert Template: △ Custom - Email RAWSQL Monitor set results to ProVal<br>Subject: CWA - Heartbeat Anomaly detected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [Script - Email Creation - Computer [Failure Only]](<../cwa/scripts/Email Creation - Computer Failure Only.md>)                                                                                                                                  |          | Autofix Script   | Both                  | This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the Email address provided in the system property.<br>This script sends email to two different addresses:<br>1. If the script is called by the alert template "△ Custom - Email RAWSQL Monitor set results to ProVal" then it will send an email to the email address set at system property "ProVal_Alerts_Email_Address" which is mostly set to "alerts@provaltech.com".<br>Note: If the property is missing, the script will automatically set it to "alerts@provaltech.com", but if it is set to a different email address then it will not modified.<br>2. If the script is called by any other template then it will fetch the email address from the system property "_sysTicketDefaultEmail". |
+| △ Ticket Creation - without computer Details                                                                                                                                                                                                     |          | Alert Template   | Both                  | This alert template should be assigned to the [ProVal - Development - Failed Email Monitoring](<../cwa/monitors/CWM - Automate - Monitor -Failed Email Monitoring.md>) monitor set. It will execute the [Ticket Creation - Without Computer Information And Failures Only [Autofix]*](<../cwa/scripts/Ticket Creation - Without Computer Information And Failures Only Autofix.md>) script to create a ticket with the information returned by the monitor set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| △ Custom - Email RAWSQL Monitor set results to ProVal                                                                                                                                                                                            |          | Alert Template   | Both                  | This alert template should be assigned to the [Monitor - ProVal - Production - ScreenConnect - Broken Integration](<../cwa/monitors/Broken Integration.md>) monitor sets. It will execute the [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) script to send an email to Alerts@provaltech.com.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [Internal Monitor - ProVal - Production - Scripting Engine Hung](<../cwa/monitors/Scripting Engine Hung.md>)                                                                                                                                     | Medium   | Internal Monitor | Both                  | This monitor creates a critical ticket to the board to inform that the script engine is stuck and none of the scripts is running in the environment.<br>It also sends an email to the alerts@provaltech.com to review it proactively.<br>The monitor detects the X number of scripts stuck in the pendingscripts table for longer than Y minutes of the scheduled time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+### On-Prem Only:
+
+| Content                                                                                                       | Priority | Type           | Supported Environment | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------- | -------- | -------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ProVal - Production - SVC-CWAFileService](<../cwa/monitors/SVC-CWAFileService.md>)                           | Urgent   | Remote Monitor | On-Prem               | Since CWAFileService is one of the important services for the Automate server. So, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it.<br>Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring<br>Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%)<br>Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%)                                                                                                                                                                                                              |
+| [ProVal - Production - SVC-LTRedirSVC](<../cwa/monitors/SVC-LTRedirSVC.md>)                                   | Urgent   | Remote Monitor | On-Prem               | Since LTRedirSVC is one of the important services for the Automate server. So, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it.<br>Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring<br>Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%)<br>Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%)                                                                                                                                                                                                                  |
+| [ProVal - Production - SVC-CWAMessageQueue](<../cwa/monitors/SVC-CWAMessageQueue.md>)                         | Urgent   | Remote Monitor | On-Prem               | Since CWAMessageQueue is one of the important services for the Automate server. So, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it.<br>Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring<br>Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%)<br>Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%)                                                                                                                                                                                                             |
+| [CWA - Remote Monitors - CWAFileService - Invalid Token](<../cwa/monitors/CWAFileService - Invalid Token.md>) | Medium   | Remote Monitor | On-Prem               | This remote monitor restarts the service 'CWAFileService' on the Automate server if it detects the file 'C:\Windows\Temp\FileService.log' where the file contains the message 'HttpRequest is missing or has invalid Authorization Token' in the last 15 minutes.<br>The actual message template is:<br>FileService v24.0 - 3/10/2024 3:08:12 PM - HttpRequest is missing or has invalid Authorization Token:::                                                                                                                                                                                                                                                                                                                                 |
+| [Monitor - ProVal - Production - SVC-CWAIISMgr](<../cwa/monitors/SVC-CWAIISMgr.md>)                           | Urgent   | Remote Monitor | On-Prem               | Since CWAIISMgr is one of the important services for the Automate server. So, this monitor set is designed to create an urgent ticket in our (ProVal's) Autotask portal after attempting to restart it.<br>Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring<br>Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%)<br>Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%)                                                                                                                                                                                                                   |
+| [Purge IIS Log Files Older than X days[Param]](<../cwa/scripts/Purge IIS Logs Older than X Days Param.md>)    |          | Script         | On-Prem               | It will remove the IIS logs older than `Days`(Global Variable) days if the size of the "c:\\inetpub\\logs\\logfiles\\w3svc" folder is greater than `Size`(Global Variable) MB. Preferred is to schedule against the "Labtech Server" Group to run once per week.<br>By default, it will remove the logs older than 30 days if the size of the directory is greater than 1024 MB.<br>*Log Entries need fixing<br>*Change threshold to 16GB? Homefield is always failing because it drops it to 15GB used instead of 19GB.                                                                                                                                                                                                                        |
+| △ Custom - Autofix - Restart Service - Automate Server Monitoring                                             |          | Alert Template | On-Prem               | This alert template should be assigned to the [ProVal - Development - SVC-CWAFileService](<../cwa/monitors/SVC-CWAFileService.md>), [ProVal - Development - SVC-LTRedirSVC](<../cwa/monitors/SVC-LTRedirSVC.md>), [ProVal - Development - SVC-CWAMessageQueue](<../cwa/monitors/SVC-CWAMessageQueue.md>), and monitor sets. It will attempt to restart the service and will send an Email for Autofix failure to Alerts@ProValtech.com which in turn will generate a ticket in our (ProVal's) Autotask portal.<br>Email Subject Success: URGENT - SVC - @FieldName@ - SUCCESS - Automate Server - %ComputerName% (%Computerid%)<br>Email Subject Failure: URGENT - SVC - @FieldName@ - FAILED - Automate Server - %ComputerName% (%Computerid%) |
 
 ## Implementation
 
-Run this SQL query from a RAWSQL monitor before importing any content. This will create a system contact for ['Alerts@provaltech.com'](mailto:alerts@provaltech.com), which will be needed for a few of those alert templates:
+1. Import the following Alert Templates using the ProSync Plugin:
+   - △ Custom - Email RAWSQL Monitor set results to ProVal
+   - △ Custom - Ticket Creation - Without Computer Details
+   - **If the partner is On-Prem** - Import this alert template as well:
+     - △ Custom - Autofix - Restart Service - Automate Server Monitoring
 
-```
-INSERT INTO `contacts` (`ContactID`, `LocationID`, `ClientID`, `Firstname`, `LastName`, `Address1`, `Address2`, `City`, `State`, `Zip`, `Phone`, `Cell`, `Fax`, `Pager`, `Email`, `Emailpassword`, `MSN`, `AIM`, `ICQ`, `NetBiosName`, `Last_Date`, `Last_User`, `ExternalID`, `GUID`, `password`, `WebSecurity`, `PWSetFlag`, `ImageId`, `LoginFailCount`, `LoginLockTime`, `ContactFlags`, `CreationDate`) (SELECT * FROM (SELECT '' as ContactID, 0 as LocationID, 0 as ClientID, 'ProVal Alerts' as Firstname, 'Autotask' as LastName, '' as Address1, '' as Address2, '' as City, '' as State, '' as Zip, '' as Phone, '' as Cell, '' as Fax, '' as Pager, 'alerts@provaltech.com' as Email, '' as Emailpassword, '' as MSN, '' as AIM, '' as ICQ, '' as NetBiosName, '0000-00-00 00:00:00' as Last_Date, '' as Last_User, 0 as ExternalID, '' as GUID, '' as password, 0 as WebSecurity, 0 as PWSetFlag, 0 as ImageId, 0 as LoginFailCount, '0000-00-00 00:00:00' as LoginLockTime, 0 as ContactFlags, NOW() as CreationDate) AS t WHERE NOT EXISTS (SELECT Email FROM contacts WHERE email = 'Alerts@provaltech.com' AND Clientid = 0));
-```
+2. Modify the following System Properties - If any of these values are not provided by the consultant, reach out to clarify:
+   - Unsynced_Ticket_Email_Address - This is where the partner would like alerts for any ticket sync issues to go to.
+   - AutomateBackup_Computerid - This is going to be the AgentID of where the partner would like their content backup to be stored.
+   - _sysTicketDefaultEmail - This is a default email address that is set for sending data in the case where the user wants the email to be sent from the script.
+   - ProVal_Alerts_Email_Address - This email address is used when the script calls from the alert template "△ Custom - Email RAWSQL Monitor set results to ProVal".<br>Note: It is mandatory to use the [alerts@provaltech.com](mailto:alerts@provaltech.com) with this system property as it is intentionally created for the alerts which is required to be passed on to the ProVal support team from the partner environment for proactive fixes.
 
-Import the approved content to the partner's environment. Don't forget to import the alert templates and the associated scripts while importing the monitor sets. Also, kindly refer to the individual documents, which will guide you with the scheduling/implementation process.
+   Optional System Properties:
+   - AutomateBackup_Base_Directory - If the consultant specified any custom value for this, please update it. Otherwise, it will go to the default directory of 'C:\\CWA Solutions Backup'.
 
-Most likely you will be able to find all of these items in the Pro-Sync Plugin. However, here are the SQL queries to import the alert templates if any of these may not make it to the plugin.
+3. Import and set the **approved content** to the partner's environment using the ProSync Plugin. If it is NOT specified to specifically not import certain content, assume it is all approved. The content required for import has been listed below:
+   - [Script - Unsynced Tickets](<../cwa/scripts/Unsynced Tickets.md>)
+   - [Script - Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>)
+   - [CWM - Automate - Script - Email Creation - Computer [Failure Only]](<../cwa/scripts/Email Creation - Computer Failure Only.md>)
+   - [Client Script - Automate - Backup Scripts/Monitors/Customizations](<../cwa/scripts/Backup ScriptsMonitorsCustomizations.md>)
+   - [Client Script - Nightly Database Backup Monitoring*[Global]](<../cwa/scripts/Nightly Database Backup Monitoring.md>)
+   - [Internal Monitor - ProVal - Production - Failed Email Monitoring](<../cwa/monitors/CWM - Automate - Monitor -Failed Email Monitoring.md>)
+   - [Internal Monitor - ProVal - Production - Automate - Less Than 10 Licenses Remaining [G]](<../cwa/monitors/Automate - Less Than 10 Licenses Remaining.md>) OR [Internal Monitor - ProVal - Production - Automate - Over 90% Licenses Used [G]](https://proval.itglue.com/DOC-5078775-8063471)<br>This should be specified by the consultant. If not, reach out to clarify.
+   - [Internal Monitor - ProVal - Production - ScreenConnect - Broken Integration](<../cwa/monitors/Broken Integration.md>)
+   - [Internal Monitor - Heartbeat Anomaly Audit](<../cwa/monitors/Heartbeat Anomaly Audit.md>)
+   - [Internal Monitor - ProVal - Production - Scripting Engine Hung](<../cwa/monitors/Scripting Engine Hung.md>)
 
-~Custom Email RAWSQL Monitor set results to the Partner:
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ( '~Custom Email RAWSQL Monitor set results to the Partner', '~Custom Email RAWSQL Monitor set results to the Partner', 'PRONOC', (NOW()), '', '', '4651ae95-838a-41a8-8cc8-9746a0bd3421');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ((SELECT Alertactionid FROM alerttemplate WHERE GUID = '4651ae95-838a-41a8-8cc8-9746a0bd3421'), 127, '00:00:00', '23:59:00', 512, -1, 0, (SELECT scriptid FROM lt_scripts WHERE scriptGUID = '630b4880-fc6b-11ec-b1be-000c295e5f17'), '', 0, 'ec30c48b-771e-4dff-9e04-126d7d2b5ec7', 512);
-```
+4. Setup the content that was just imported:
+   - Navigate to the System Dashboard screen --> Management --> Scheduled Client Scripts
+     - Schedule [Script - Unsynced Tickets](<../cwa/scripts/Unsynced Tickets.md>) to run every 2 hours
+     - Schedule [Client Script - Automate - Backup Scripts/Monitors/Customizations](<../cwa/scripts/Backup ScriptsMonitorsCustomizations.md>) to run weekly, Every Monday at 5:40 AM
+     - Schedule [Client Script - Nightly Database Backup Monitoring*[Global]](<../cwa/scripts/Nightly Database Backup Monitoring.md>) to run daily at 2:30 PM
+   - Navigate to Automate --> Monitors
+     - Setup [Internal Monitor - ProVal - Production - Failed Email Monitoring](<../cwa/monitors/CWM - Automate - Monitor -Failed Email Monitoring.md>)
+       - **For hosted partners only**, you must modify this client ID variable in the monitor to whatever the partner's client ID is:
+       ![Client ID Variable](5078775/docs/14205181/images/21479033)
+       - Assign the alert template '△ Custom - Ticket Creation - Without Computer Details' to the monitor
+       - Right-click the monitor and select Run Now and Reset Monitor
+     - Setup [Internal Monitor - ProVal - Production - Automate - Less Than 10 Licenses Remaining [G]](<../cwa/monitors/Automate - Less Than 10 Licenses Remaining.md>) OR [Internal Monitor - ProVal - Production - Automate - Over 90% Licenses Used [G]](https://proval.itglue.com/DOC-5078775-8063471) - Depending on what the Consultant has requested
+       - Apply the 'Default - Create Automate Ticket' alert template to the monitor
+       - Right-click the monitor and select Run Now and Reset Monitor
+     - Setup [Internal Monitor - ProVal - Production - ScreenConnect - Broken Integration](<../cwa/monitors/Broken Integration.md>)
+       - Apply the '△ Custom - Email RAWSQL Monitor set results to ProVal' alert template to the monitor
+       - Right-click the monitor and select Run Now and Reset Monitor
+     - Setup [Internal Monitor - Heartbeat Anomaly Audit](<../cwa/monitors/Heartbeat Anomaly Audit.md>)
+       - Apply the '△ Custom - Email RAWSQL Monitor set results to ProVal' alert template to the monitor
+       - Right-click the monitor and select Run Now and Reset Monitor
+     - Setup [Internal Monitor - ProVal - Production - Scripting Engine Hung](<../cwa/monitors/Scripting Engine Hung.md>)
+       - Apply the '△ Custom - Email RAWSQL Monitor set results to ProVal' alert template to the monitor
+       - Right-click the monitor and select Run Now and Reset Monitor
 
-~Custom Email RAWSQL Monitor set results to ProVal:
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ( '~Custom Email RAWSQL Monitor set results to ProVal', '~Custom Email RAWSQL Monitor set results to ProVal', 'PRONOC', (NOW()), '', '', 'bd0bed24-0b36-11ed-b1be-000c295e5f17');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ((SELECT Alertactionid FROM alerttemplate WHERE GUID = 'bd0bed24-0b36-11ed-b1be-000c295e5f17'), 127, '00:00:00', '23:59:00', 512, (SELECT MAX(Contactid) FROM contacts WHERE clientid = 0 AND locationid = 0 AND email = 'alerts@provaltech.com'), 0, (SELECT scriptid FROM lt_scripts WHERE scriptGUID = '630b4880-fc6b-11ec-b1be-000c295e5f17'), '', 0, '89b46dc6-0b38-11ed-b1be-000c295e5f17', 512);
-```
+### On-Prem Only:
 
-△ Custom - Email - RAWSQL Monitor set results to ProVal:
-```
-INSERT INTO `alerttemplate` (`AlertActionID`, `Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ('', '△ Custom - Email - RAWSQL Monitor set results to ProVal', '△ Custom - Email - RAWSQL Monitor set results to ProVal', 'PRONOC', '2024-07-25 05:02:41', '', '', '9ebafbd0-2817-4524-bd15-9ca4b6e30a14');
-INSERT INTO `alerttemplates` (`AlertID`, `AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ('', (SELECT alertactionid FROM alerttemplate where guid = '9ebafbd0-2817-4524-bd15-9ca4b6e30a14'), 127, '00:00:00', '23:59:00', 2, (SELECT MAX(Contactid) FROM contacts WHERE clientid = 0 AND locationid = 0 AND email = 'alerts@provaltech.com'), 0, 0, '', 0, '2781cc77-a32b-4bab-993a-dc98d37bf916', 0);
-INSERT INTO `alerttemplates` (`AlertID`, `AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ('', (SELECT alertactionid FROM alerttemplate where guid = '9ebafbd0-2817-4524-bd15-9ca4b6e30a14'), 127, '00:00:00', '23:59:00', 1024, (SELECT MAX(Contactid) FROM contacts WHERE clientid = 0 AND locationid = 0 AND email = 'alerts@provaltech.com'), 0, 0, '', 0, 'b0780077-dd27-4f3f-a5b6-fec90fdda2e4', 0);
-```
+1. Import and set the following content using the ProSync Plugin:
+   - Script: [Purge IIS Log Files Older than X days[Param]](<../cwa/scripts/Purge IIS Logs Older than X Days Param.md>)
+   - Script: [CWM - Automate - Script - Automate Server Monitoring - Service - Restart [Autofix]](<../cwa/scripts/Automate Server Monitoring - Service - Restart Autofix.md>)
+   - Alert Template: △ Custom - Autofix - Restart Service - Automate Server Monitoring
 
-~Custom Ticket Creation without computer Details:
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ( '~Custom Ticket Creation without computer Details', '~Custom Ticket Creation without computer Details', 'PRONOC', (NOW()), '', '', '55d16cbc-0b57-11ed-b1be-000c295e5f17');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ((SELECT Alertactionid FROM alerttemplate WHERE GUID = '55d16cbc-0b57-11ed-b1be-000c295e5f17'), 127, '00:00:00', '23:59:00', 512, -1, 0, (SELECT scriptid FROM lt_scripts WHERE scriptGUID = 'aa88c91c-fc75-11ec-b1be-000c295e5f17'), '', 0, '6239dcd9-0b57-11ed-b1be-000c295e5f17', 512);
-```
+2. Setup the content that was just imported:
+   - Navigate to the LabTech Server Group (Service Plans --> Server Roles --> MSP Specific Servers --> LabTech Server)
+     - Schedule Script: [Purge IIS Log Files Older than X days[Param]](<../cwa/scripts/Purge IIS Logs Older than X Days Param.md>) to run every Sunday at 10:35 PM
 
-△ Custom - Autofix - Restart Service - Automate Server Monitoring:
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ('△ Custom - Autofix - Restart Service - Automate Server Monitoring', '△ Custom - Autofix - Restart Service - Automate Server Monitoring', 'PRONOC', '2022-10-21 16:48:09', '', '', 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES (((SELECT AlertactionID from AlertTemplate Where `GUID` = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd')), 127, '00:00:00', '23:59:00', 512, -2, 0, (Select scriptid from lt_Scripts where scriptGUID = '745119bf-517f-11ed-91ef-000c295e5f17'), '', 0, '29c88ea5-08e3-4035-a0f6-1579b23ed488', 512);
-```
+3. Import the Remote Monitor using the below SQL statement from a RAWSQL monitor: **ProVal - Production - SVC-CWAFileService:**
+   ```sql
+   SET @Alertaction = (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd');
+   SET @groupid = (SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server');
+   INSERT INTO groupagents
+   SELECT '' as `AgentID`,
+   `groupid` as `GroupID`,
+   '0' as `SearchID`,
+   'ProVal - Production - SVC-CWAFileService' as `Name`,
+   '6' as `CheckAction`,
+   @Alertaction as `AlertAction`,
+   'URGENT - SVC-CWAFileService is Not Running for Automate Server~~~CWAFileService is now Running Fine.!!!URGENT - SVC-CWAFileService is Not Running for Automate Server~~~CWAFileService is not Running for the Automate Server. Please check it out as soon as possible.' as `AlertMessage`,
+   '1' as `ContactID`,
+   '60' as `interval`,
+   '127.0.0.1' as `Where`,
+   '2' as `What`,
+   'CWAFileService' as `DataOut`,
+   '1' as `Comparor`,
+   '1' as `DataIn`,
+   '0' as `IDField`,
+   '1' as `AlertStyle`,
+   '0' as `ScriptID`,
+   '' as `datacollector`,
+   '0' as `Category`,
+   '0' as `TicketCategory`,
+   '1' as `ScriptTarget`,
+   CONCAT(
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
+   ) as `GUID`,
+   'root' as `UpdatedBy`,
+   (NOW()) as `UpdateDate`
+   FROM mastergroups m
+   WHERE m.groupid = @groupid
+   AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - SVC-CWAFileService');
+   ```
 
-Automate Server - Event Log Monitoring [Autofix]:
-```
-INSERT INTO `alerttemplate` (`Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ('Automate Server - Event Log Monitoring [Autofix]', 'Automate Server - Event Log Monitoring [Autofix]', 'PRONOC', (NOW()), '', '', '8c993dac-e4cb-48a3-b8a9-0d6f8a450348');
-INSERT INTO `alerttemplates` (`AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ((SELECT Alertactionid FROM alerttemplate WHERE GUID = '8c993dac-e4cb-48a3-b8a9-0d6f8a450348'), 127, '00:00:00', '23:59:00', 512, -2, 0, (SELECT scriptid FROM lt_scripts WHERE scriptguid = '0d2c9ac7-fc30-11ec-b1be-000c295e5f17'), '', 0, 'bae623a3-1c7f-4c44-90b9-089fd5b5ea57', 512);
-```
+4. Import the Remote Monitor using the below SQL statement from a RAWSQL monitor: **ProVal - Production - SVC-LTRedirSvc:**
+   ```sql
+   SET @Alertaction = (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd');
+   SET @groupid = (SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server');
+   INSERT INTO groupagents
+   SELECT '' as `AgentID`,
+   `groupid` as `GroupID`,
+   '0' as `SearchID`,
+   'ProVal - Production - SVC-LTRedirSvc' as `Name`,
+   '6' as `CheckAction`,
+   @Alertaction as `AlertAction`,
+   'URGENT - SVC-LTRedirSvc is Not Running for Automate Server~~~LTRedirSvc is now Running Fine.!!!URGENT - SVC-LTRedirSvc is Not Running for Automate Server~~~LTRedirSvc is not Running for the Automate Server. Please check it out as soon as possible.' as `AlertMessage`,
+   '1' as `ContactID`,
+   '60' as `interval`,
+   '127.0.0.1' as `Where`,
+   '2' as `What`,
+   'LTRedirSvc' as `DataOut`,
+   '1' as `Comparor`,
+   '1' as `DataIn`,
+   '0' as `IDField`,
+   '1' as `AlertStyle`,
+   '0' as `ScriptID`,
+   '' as `datacollector`,
+   '0' as `Category`,
+   '0' as `TicketCategory`,
+   '1' as `ScriptTarget`,
+   CONCAT(
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
+   ) as `GUID`,
+   'root' as `UpdatedBy`,
+   (NOW()) as `UpdateDate`
+   FROM mastergroups m
+   WHERE m.groupid = @groupid
+   AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - SVC-LTRedirSvc');
+   ```
 
-Most likely you'll be able to find the remote monitors in the Pro-Sync plugin as well. **Please make sure to import the alert templates before importing the remote monitors using SQL queries.**
+5. Import the Remote Monitor using the below SQL statement from a RAWSQL monitor: **ProVal - Production - SVC-CWAMessageQueue:**
+   ```sql
+   SET @Alertaction = (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd');
+   SET @groupid = (SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server');
+   INSERT INTO groupagents
+   SELECT '' as `AgentID`,
+   `groupid` as `GroupID`,
+   '0' as `SearchID`,
+   'ProVal - Production - SVC-CWAMessageQueue' as `Name`,
+   '6' as `CheckAction`,
+   @Alertaction as `AlertAction`,
+   'URGENT - SVC-CWAMessageQueue is Not Running for Automate Server~~~CWAMessageQueue is now Running Fine.!!!URGENT - SVC-CWAMessageQueue is Not Running for Automate Server~~~CWAMessageQueue is not Running for the Automate Server. Please check it out as soon as possible.' as `AlertMessage`,
+   '1' as `ContactID`,
+   '60' as `interval`,
+   '127.0.0.1' as `Where`,
+   '2' as `What`,
+   'CWAMessageQueue' as `DataOut`,
+   '1' as `Comparor`,
+   '1' as `DataIn`,
+   '0' as `IDField`,
+   '1' as `AlertStyle`,
+   '0' as `ScriptID`,
+   '' as `datacollector`,
+   '0' as `Category`,
+   '0' as `TicketCategory`,
+   '1' as `ScriptTarget`,
+   CONCAT(
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
+   ) as `GUID`,
+   'root' as `UpdatedBy`,
+   (NOW()) as `UpdateDate`
+   FROM mastergroups m
+   WHERE m.groupid = @groupid
+   AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - SVC-CWAMessageQueue');
+   ```
 
-ProVal - Production - SVC-CWAFileService:
-```
-INSERT INTO `groupagents` (`GroupID`, `SearchID`, `Name`, `CheckAction`, `AlertAction`, `AlertMessage`, `ContactID`, `interval`, `Where`, `What`, `DataOut`, `Comparor`, `DataIn`, `IDField`, `AlertStyle`, `ScriptID`, `datacollector`, `Category`, `TicketCategory`, `ScriptTarget`, `GUID`, `UpdatedBy`, `UpdateDate`) VALUES ((SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server'), 0, 'ProVal - Production - SVC-CWAFileService', 6, (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd'), 'URGENT - SVC-CWAFileService is Not Running for Automate Server~~~CWAFileService is now Running Fine.!!!URGENT - SVC-CWAFileService is Not Running for Automate Server~~~CWAFileService is not Running for the Automate Server. Please check it out as soon as possible.', 1, 60, '127.0.0.1', '2', 'CWAFileService', 1, '1', '0', 1, 0, '', 0, 0, 1, '51084385-ddc0-4743-b607-115c7bae0d91', 'PRONOC', (Now()));
-```
+6. Import the Remote Monitor using the below SQL statement from a RAWSQL monitor: **ProVal - Production - SVC-CWAIISMgr:**
+   ```sql
+   SET @Alertaction = (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd');
+   SET @groupid = (SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server');
+   INSERT INTO groupagents
+   SELECT '' as `AgentID`,
+   `groupid` as `GroupID`,
+   '0' as `SearchID`,
+   'ProVal - Production - SVC-CWAIISMgr' as `Name`,
+   '6' as `CheckAction`,
+   @Alertaction as `AlertAction`,
+   'URGENT - SVC-CWAIISMgr is Not Running for Automate Server~~~CWAIISMgr is now Running Fine.!!!URGENT - SVC-CWAIISMgr is Not Running for Automate Server~~~CWAIISMgr is not Running for the Automate Server. Please check it out as soon as possible.' as `AlertMessage`,
+   '1' as `ContactID`,
+   '60' as `interval`,
+   '127.0.0.1' as `Where`,
+   '2' as `What`,
+   'CWAIISMgr' as `DataOut`,
+   '1' as `Comparor`,
+   '1' as `DataIn`,
+   '0' as `IDField`,
+   '1' as `AlertStyle`,
+   '0' as `ScriptID`,
+   '' as `datacollector`,
+   '0' as `Category`,
+   '0' as `TicketCategory`,
+   '1' as `ScriptTarget`,
+   CONCAT(
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   '-',
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1),
+   SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
+   ) as `GUID`,
+   'root' as `UpdatedBy`,
+   (NOW()) as `UpdateDate`
+   FROM mastergroups m
+   WHERE m.groupid = @groupid
+   AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - SVC-CWAIISMgr');
+   ```
 
-ProVal - Production - SVC-LTRedirSvc:
-```
-INSERT INTO `groupagents` (`GroupID`, `SearchID`, `Name`, `CheckAction`, `AlertAction`, `AlertMessage`, `ContactID`, `interval`, `Where`, `What`, `DataOut`, `Comparor`, `DataIn`, `IDField`, `AlertStyle`, `ScriptID`, `datacollector`, `Category`, `TicketCategory`, `ScriptTarget`, `GUID`, `UpdatedBy`, `UpdateDate`) VALUES ((SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server'), 0, 'ProVal - Production - SVC-LTRedirSvc', 6, (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd'), 'URGENT - SVC-LTRedirSVC is Not Running for Automate Server~~~LTRedirSVC is now Running Fine.!!!URGENT - SVC-LTRedirSVC is Not Running for Automate Server~~~LTRedirSVC is not Running for the Automate Server. Please check it out as soon as possible.', 1, 300, '127.0.0.1', '2', 'LTRedirSvc', 1, '1', '', 1, 0, '', 5, 0, 1, '3caa0d9c-a89f-4775-9ae0-636e824808cc', 'PRONOC',(NOW()));
-```
+7. Import the Remote Monitor using the documentation below:
+   - [Import - Remote Monitor - CWAFileService - Invalid Token](<../cwa/monitors/CWAFileService - Invalid Token.md>)
+     - Make sure to set the Alert Template on the monitor to 'Default - Create Automate Ticket'
+     - Use the defaults in the SQL unless otherwise stated.
 
-ProVal - Production - SVC-CWAMessageQueue:
-```
-INSERT INTO `groupagents` (`GroupID`, `SearchID`, `Name`, `CheckAction`, `AlertAction`, `AlertMessage`, `ContactID`, `interval`, `Where`, `What`, `DataOut`, `Comparor`, `DataIn`, `IDField`, `AlertStyle`, `ScriptID`, `datacollector`, `Category`, `TicketCategory`, `ScriptTarget`, `GUID`, `UpdatedBy`, `UpdateDate`) VALUES ((SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server'), 0, 'ProVal - Production - SVC-CWAMessageQueue', 6, (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd'), 'URGENT - SVC-CWAMessageQueue is Not Running for Automate Server~~~CWAMessageQueue is now Running Fine.!!!URGENT - SVC-CWAMessageQueue is Not Running for Automate Server~~~ CWAMessageQueue is not Running for the Automate Server. Please check it out as soon as possible.', 1, 60, '127.0.0.1', '2', 'CWAMessageQueue', 1, '1', '0', 1, 0, '', 0, 0, 1, '41c22a30-d341-476a-86f5-7597ef476cf1', 'PRONOC', (NOW()));
-```
+## Deprecated Content - November 2023
 
-ProVal - Production - SVC-CWAIISMgr:
-```
-INSERT INTO `groupagents` (`GroupID`, `SearchID`, `Name`, `CheckAction`, `AlertAction`, `AlertMessage`, `ContactID`, `interval`, `Where`, `What`, `DataOut`, `Comparor`, `DataIn`, `IDField`, `AlertStyle`, `ScriptID`, `datacollector`, `Category`, `TicketCategory`, `ScriptTarget`, `GUID`, `UpdatedBy`, `UpdateDate`) VALUES ((SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server'), 0, 'ProVal - Production - SVC-CWAIISMgr', 6, (SELECT Alertactionid FROM alerttemplate WHERE guid = 'cec8ea1c-dd39-4003-8a18-fa2d6dbddedd'), 'URGENT - SVC-CWAIISMgr is Not Running for Automate Server~~~CWAIISMgr is now Running Fine.!!!URGENT - SVC-CWAIISMgr is Not Running for Automate Server~~~CWAIISMgr is not Running for the Automate Server. Please check it out as soon as possible.', 0, 60, '127.0.0.1', '2', 'CWAIISMgr', 1, '1', '', 1, 0, '', 0, 0, 1, 'd3d7fb51-3c6e-4a73-b25b-65ca4abc0660', 'PRONOC', (NOW()));
-```
-
-ProVal - Production - Automate Server - Unwanted Event Logs Monitoring:
-```
-INSERT INTO `groupagents`(`GroupID`, `SearchID`, `Name`, `CheckAction`, `AlertAction`, `AlertMessage`, `ContactID`, `interval`, `Where`, `What`, `DataOut`, `Comparor`, `DataIn`, `IDField`, `AlertStyle`, `ScriptID`, `datacollector`, `Category`, `TicketCategory`, `ScriptTarget`, `GUID`, `UpdatedBy`, `UpdateDate`) VALUES ((SELECT MIN(Groupid) FROM mastergroups WHERE NAME = 'Labtech Server'), 0, 'ProVal - Production - Automate Server - Unwanted Event Logs Monitoring', 6, (SELECT Alertactionid FROM alerttemplate WHERE guid = '8c993dac-e4cb-48a3-b8a9-0d6f8a450348'), 'Automate Server - Unwanted Event Logs Detected~~~%Result%!!!Automate Server - Unwanted Event Logs Detected~~~%Result%', 0, 3600, '127.0.0.1', '7', 'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -ExecutionPolicy Bypass -Command \"$ErrorActionPreference= /\"SilentlyContinue/\"; $Logs = (Get-winevent -LogName \'Application\',\'RMM System\' |Where-Object {$_.ProviderName -match \'DBAgent|ASPWCC2|MySQL\' -and $_.Level -in (1,2,3) -and $_.TimeCreated -gt (Get-Date).Addhours(-1)}|select-object -Property ProviderName, ID, LevelDisplayName  |Group-Object -Property ID,LevelDisplayName,ProviderName |Sort-Object -Property Count -Descending | Select-Object -Property group, Count |Where-Object {$_.Count -gt 10}); IF($Logs){$OutCome = \"Following Event logs Occurred more than 10 times in the last 60 Minutes`r`n\"; Foreach ($Log in $Logs) {$OutLog= $Log.group | Select-Object  -property ProviderName, ID, LevelDisplayName -Unique; $OutCome += \"`r`nEvent Source: $($OutLog.ProviderName)`r`nEVentID: $($OutLog.ID)`r`nEvent Type: $($OutLog.LevelDisplayName)`r`nNumber Of Occurrences: $($Log.Count)`r`n\"; }; Clear-Host; Write-Host \"$($OutCome)\"} Else {Clear-Host; Write-Host \"OK\"}}', 5, 'OK', '0', 1, 0, '', 0, 0, 1, '8cef3007-6afd-480b-ad66-eeaaa97db62c', 'ccalverley', '2022-07-25 13:39:26');
-```
-
-
+| Content                                                                                                                                                          | Priority | Type             | Supported Environment | Function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Deprecated:** △ Autofix - Ticket Sync Failed                                                                                                                   |          | Alert Template   | Both                  | This alert template should be assigned to the [ProVal - Production - Automate - Ticket Sync Unsuccessful](<../cwa/monitors/Ticket Sync Unsuccessful.md>) monitor set. It will execute the [Ticket Sync Failed [Autofix, Globals]](<../cwa/scripts/Ticket Sync Failed.md>) script.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                  |
+| **Deprecated:** [ProVal - Development - Automate - Unsynced Ticket Content](<../cwa/monitors/CWM - Automate - Automate - Unsynced Ticket Content.md>)                                      | High     | Internal Monitor | Both                  | The main objective of the monitor set is to alert the partners of any unsynced ticket comments for a ticket that has already been synchronized to CW Manage.<br>Alert Template: ~Custom Email RAWSQL Monitor set results to the Partner.<br>Subject: Ticket Comment Failed to Sync to Manage for %ExternalID%                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Deprecated:** △ Email RAWSQL Monitor set results to the Partner                                                                                                |          | Alert Template   | Both                  | This alert template should be assigned to the [ProVal - Development - Automate - Unsynced Ticket Comment](https://proval.itglue.com/DOC-5078775-10390973) monitor set. It will execute the [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) script to send an email to the selected template contact/user.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Deprecated:** [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>)                                                   | Medium   | Internal Monitor | Both                  | The internal monitor is designed to notify [alerts@provaltech.com](mailto:alerts@provaltech.com) of any critical errors and issues with the ConnectWise Manage Plugin.<br>Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor.<br>Subject: CW Manage Plugin Errors Detected for %Result%<br>e.g., CW Manage Plugin Errors Detected for Contacts on 2022-08-09                                                                                                                                                                                                                                                                                                                                                                  |
+| **Deprecated:** ~Custom Email RAWSQL Monitor set results to ProVal                                                                                               |          | Alert Template   | Both                  | This alert template should be assigned to the [ProVal - Development - CW Manage Plugin Errors](<../cwa/monitors/CW Manage Plugin Errors.md>) and [ProVal - Development - Control - Broken Integration](<../cwa/monitors/Broken Integration.md>) monitor sets. It will execute the [Email RAWSQL Monitor Set Failures* [Autofix]](<../cwa/scripts/Email Creation - Computer Failure Only.md>) script to send an email to [Alerts@provaltech.com](mailto:Alerts@provaltech.com).                                                                                                                                                                                                                                                                                                                                           |
+| **Deprecated:** [ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Automate Server - Unwanted Event Logs Monitoring.md>) | Medium   | Remote Monitor   | On-Prem               | The purpose of this remote monitor is to generate an Urgent ticket in our (ProVal's) Autotask portal if an error or critical event from either of "DBAgent", "ASPWCC2", or "MySQL" event sources is generated more than 10 times within the past 60 minutes on Automate server.<br>Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor.<br>Subject: Urgent - Automate Server - Unwanted Event Logs Detected                                                                                                                                                                                                                                                                                                                    |
+| **Deprecated:** [Automate Server - Event Log Monitoring [Autofix]](<../cwa/scripts/Automate Server - Event Log Monitoring Autofix.md>)                           |          | Autofix Script   | On-Prem               | The purpose of the script is to send the information of the event logs detected by the "[ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Automate Server - Unwanted Event Logs Monitoring.md>)" monitor set.<br>The result sometimes crosses the character limit of 100 characters and hence, the script was needed for the alerting purpose. Also, this is not designed to send any notifications for the Success status of the monitor set.                                                                                                                                                                                                                                                                                                                                  |
+| **Deprecated:** △ Automate Server - Event Log Monitoring [Autofix]                                                                                               |          | Alert Template   | On-Prem               | This alert template should be assigned to the [ProVal - Development - Automate Server - Unwanted Event Logs Monitoring](<../cwa/monitors/Automate Server - Unwanted Event Logs Monitoring.md>) monitor set. It will execute the [Automate Server - Event Log Monitoring [Autofix]](<../cwa/scripts/Automate Server - Event Log Monitoring Autofix.md>) script to send the event log's information to [alerts@provaltech.com](mailto:alerts@provaltech.com) as an urgent ticket.                                                                                                                                                                                                                                                                                                                                          |
+| **Deprecated:** [Database size increased by 5%*[Global]](<../cwa/scripts/Database size increased by 5 Percent Global.md>)                                                         | Medium   | Script           | Both                  | The ultimate goal of this script is to create a ticket in our (ProVal's) AutoTask portal if the overall size of the Labtech Database increases by 5% (threshold is flexible) within the last 24 hours (it depends on the frequency of the schedule).<br>Subject: Database size increased by @SizeToCompare@ Percent within the last @Hours@ Hour<br>e.g., Database size increased by 5 Percent within the last 24 Hour                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Deprecated:** [Volume Free Space - Monitor Creation - Automate Server Only](<../cwa/scripts/Volume Free Space - Monitor Creation - Automate Server Only.md>)   | Medium   | Script           | On-Prem               | This is an exact copy of the [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../cwa/scripts/Create Predictive Volume Exhaustion Monitors.md>) script with a few changes. The purpose here is to use the dynamic monitor generated by the [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../cwa/scripts/Create Predictive Volume Exhaustion Monitors.md>) script to monitor the Automate server's drives and to generate a ticket in our (ProVal's) Autotask portal for the failures. We would like to proactively monitor the drive and perform the basic actions (like removing some unnecessary files logs or folders ) to free up some space for our partners.<br>Subject: Volume Space - %FieldName%: (%ComputerName%-%Computerid%)<br>e.g, Volume Space - C: (CW-Computer-200) |
+| **Deprecated:** [ConnectWise Manage Plugin Sync/Mapping Audit](<../cwa/scripts/ConnectWise Manage Plugin SyncMapping Audit.md>)                                  | Medium   | Script           | Both                  | This script will send an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) if it finds any necessary component as unsynced or unmapped in the CW Manage plugin. The Email will contain all the necessary details to act upon.<br>Alert Template: ***** use Default - Do Nothing for now until we have an opportunity to look further into these action items from this monitor.<br>Subject: Unmapped/Unsynced entity detected in CW Manage Plugin                                                                                                                                                                                                                                                                                                                                                           |
