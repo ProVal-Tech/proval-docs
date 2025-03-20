@@ -50,7 +50,7 @@ It is a client script and suggested to run once per day.
 |------|---------|----------|-------------|
 | patch_denial_daily_threshold_percentage |  10  |  True  | Threshold in percentage to create a ticket if the difference between today's and yesterday's unapproved patch percentage exceeds this value. |
 | patch_denial_weekly_threshold_percentage | 20  |  True  | Threshold in percentage to create a ticket if the difference between today's and last week's unapproved patch percentage exceeds this value. |
-| ProVal_Alerts_Email_Address              |  <alerts@provaltech.com>  | True | ProVal's email address |
+| ProVal_Alerts_Email_Address              |  alerts@provaltech.com  | True | ProVal's email address |
 
 ## Script States
 
