@@ -69,7 +69,6 @@ The goal of this solution's development is to improve the efficiency and proacti
    - Navigate to Automate --> Monitors
      - Setup [Internal Monitor - ProVal - Production - Failed Email Monitoring](<../cwa/monitors/CWM - Automate - Monitor -Failed Email Monitoring.md>)
        - **For hosted partners only**, you must modify this client ID variable in the monitor to whatever the partner's client ID is:
-       ![Client ID Variable](5078775/docs/14205181/images/21479033)
        - Assign the alert template '△ Custom - Ticket Creation - Without Computer Details' to the monitor
        - Right-click the monitor and select Run Now and Reset Monitor
      - Setup [Internal Monitor - ProVal - Production - Automate - Less Than 10 Licenses Remaining [G]](<../cwa/monitors/Automate - Less Than 10 Licenses Remaining.md>) OR [Internal Monitor - ProVal - Production - Automate - Over 90% Licenses Used [G]](https://proval.itglue.com/DOC-5078775-8063471) - Depending on what the Consultant has requested
