@@ -57,7 +57,7 @@ Add a new row by clicking the `Add Row` button.
 ![Image11](../../../static/img/cwrmm-task-unknown-user-profiles/Image11.png) 
 
 A blank function will appear.  
-![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/Image7.png)  
+![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/image7.png)  
 
 Search and select the `Powershell Script` function.  
 The following function will pop up on the screen:  

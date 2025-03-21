@@ -58,7 +58,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Image3](../../../static/img/cw-rmm-task-toast-notification/Image3.png)
 
-![Image4](../../../static/img/cw-rmm-task-toast-notification/Image4.png)
+![Image4](../../../static/img/cw-rmm-task-toast-notification/image4.png)
 
 **Name:** `Toast Notification`
 

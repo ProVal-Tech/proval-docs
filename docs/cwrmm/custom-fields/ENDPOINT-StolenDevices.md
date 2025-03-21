@@ -26,4 +26,4 @@ This document provides detailed information about the custom fields associated w
 
 ![Image2](<../../../static/img/CW-RMM-Lock-Stolen-System/image2.png>)
 
-![Image3](<../../../static/img/CW-RMM-Lock-Stolen-System/Image3.png>)
+![Image3](<../../../static/img/CW-RMM-Lock-Stolen-System/image3.png>)
