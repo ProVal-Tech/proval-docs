@@ -310,7 +310,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter14](../../../static/img/cw-rmm-task-toast-notification/Parameter14.png)
+![Parameter14](../../../static/img/cw-rmm-task-toast-notification/parameter14.png)
 
 #### ADPasswordExpirationDays
 
