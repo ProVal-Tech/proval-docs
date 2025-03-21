@@ -88,7 +88,7 @@ This screen will appear. 
 
 - Click the `Save` button.
 
-![Parameter1](../../../static/img/cw-rmm-task-toast-notification/Parameter1.png)
+![Parameter1](../../../static/img/cw-rmm-task-toast-notification/parameter1.png)
 
 It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
 
