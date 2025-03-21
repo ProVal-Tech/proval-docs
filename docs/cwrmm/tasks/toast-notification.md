@@ -58,7 +58,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Image3](../../../static/img/cw-rmm-task-toast-notification/Image3.png)
 
-![Image4](../../../static/img/cw-rmm-task-toast-notification/Image4.png)
+![Image4](../../../static/img/cw-rmm-task-toast-notification/image4.png)
 
 **Name:** `Toast Notification`
 
@@ -88,7 +88,7 @@ This screen will appear. 
 
 - Click the `Save` button.
 
-![Parameter1](../../../static/img/cw-rmm-task-toast-notification/Parameter1.png)
+![Parameter1](../../../static/img/cw-rmm-task-toast-notification/parameter1.png)
 
 It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
 
@@ -310,7 +310,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter14](../../../static/img/cw-rmm-task-toast-notification/Parameter14.png)
+![Parameter14](../../../static/img/cw-rmm-task-toast-notification/parameter14.png)
 
 #### ADPasswordExpirationDays
 
