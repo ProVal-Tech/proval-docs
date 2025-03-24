@@ -1,5 +1,5 @@
 ---
-id: ps-protect-screenlock
+id: '9c89e293-7f28-4e7c-936f-e285b04e8df0'
 title: 'Protect-ScreenLock'
 title_meta: 'Protect-ScreenLock'
 keywords: ['screenlock', 'screensaver', 'timeout', 'security']

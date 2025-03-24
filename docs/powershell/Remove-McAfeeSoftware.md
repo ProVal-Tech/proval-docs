@@ -1,5 +1,5 @@
 ---
-id: ps-remove-mcafeesoftware
+id: '4c93e57c-0959-4f9e-9557-6f5974866782'
 title: 'Remove-McAfeeSoftware'
 title_meta: 'Remove-McAfeeSoftware'
 keywords: ['remove', 'mcafee', 'uninstall', 'cleanup']

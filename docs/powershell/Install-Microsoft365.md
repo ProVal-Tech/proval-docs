@@ -1,5 +1,5 @@
 ---
-id: ps-install-microsoft365
+id: '86520d4a-a325-4771-81dc-04c1ea2db216'
 title: 'Install-Microsoft365'
 title_meta: 'Install-Microsoft365'
 keywords: ['install', 'microsoft365', 'office', 'setup']

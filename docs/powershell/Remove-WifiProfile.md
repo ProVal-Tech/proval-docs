@@ -1,5 +1,5 @@
 ---
-id: ps-remove-wifiprofile
+id: 'd9f38912-7b4a-4da1-a880-210aae4fbb02'
 title: 'Remove-WifiProfile'
 title_meta: 'Remove-WifiProfile'
 keywords: ['remove', 'wifi', 'profile', 'network']

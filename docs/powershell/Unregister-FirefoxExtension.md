@@ -1,5 +1,5 @@
 ---
-id: ps-unregister-firefoxextension
+id: 'e9295813-fbf2-43fe-b6a0-20da0ae7b21d'
 title: 'Unregister-FirefoxExtension'
 title_meta: 'Unregister-FirefoxExtension'
 keywords: ['unregister', 'firefox', 'extension', 'remove']

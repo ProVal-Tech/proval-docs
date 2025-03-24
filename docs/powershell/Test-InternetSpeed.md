@@ -1,5 +1,5 @@
 ---
-id: ps-test-internetspeed
+id: '12946fed-d74f-4977-b59d-85d5c639b56b'
 title: 'Test-InternetSpeed'
 title_meta: 'Test-InternetSpeed'
 keywords: ['speedtest', 'internet', 'network', 'performance']

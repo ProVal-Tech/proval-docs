@@ -1,9 +1,9 @@
 ---
-id: ps-script-name
-title: Script Name
-title_meta: Script Name
+id: 'New-GUID'
+title: 'Script Name'
+title_meta: 'Script Name'
 keywords: []
-description: A description of the script.
+description: 'A description of the script.'
 tags: []
 draft: true
 unlisted: false

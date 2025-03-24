@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-vcredistmodule
+id: '217e0b39-3b42-401b-9531-86e07f2d6a2f'
 title: 'Invoke-VcRedistModule'
 title_meta: 'Invoke-VcRedistModule'
 keywords: ['vcredist', 'visualc++', 'redistributable', 'installation']

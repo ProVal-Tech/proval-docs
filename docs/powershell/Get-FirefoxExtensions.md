@@ -1,5 +1,5 @@
 ---
-id: ps-get-firefoxextensions
+id: 'e45f0be5-66b2-417a-b900-0a6b3b9994f1'
 title: 'Get-FirefoxExtensions'
 title_meta: 'Get-FirefoxExtensions'
 keywords: ['firefox', 'extensions', 'browser', 'user']

@@ -1,5 +1,5 @@
 ---
-id: ps-remove-chromiumhomepage  
+id: '38674bcd-8b19-4072-a58f-314efad2e856'  
 title: 'Remove-ChromiumHomepage'  
 title_meta: 'Remove-ChromiumHomepage'  
 keywords: ['remove', 'homepage', 'chromium', 'browser']  

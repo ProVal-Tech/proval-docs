@@ -1,5 +1,5 @@
 ---
-id: ps-add-wifiprofile
+id: '6e1f420f-5a5a-49e1-a7cc-943e258d2ae5'
 title: 'Add-WifiProfile'
 title_meta: 'Add-WifiProfile'
 keywords: ['networking', 'wireless', 'setup', 'configuration']

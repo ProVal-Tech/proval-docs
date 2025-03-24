@@ -1,5 +1,5 @@
 ---
-id: ps-remove-bitdefenderendpointsecurity
+id: '3037688b-782b-468e-956a-292b3ef33534'
 title: 'Remove-BitDefenderEndpointSecurity'
 title_meta: 'Remove-BitDefenderEndpointSecurity'
 keywords: ['remove', 'bitdefender', 'security', 'cleanup']

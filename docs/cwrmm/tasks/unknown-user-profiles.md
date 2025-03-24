@@ -34,10 +34,10 @@ Create a new `Script Editor` style script in the system to implement this task.
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image6](../../../static/img/cwrmm-task-unknown-user-profiles/Image6.png)  
+![Image6](../../../static/img/cwrmm-task-unknown-user-profiles/image6.png)  
 
 A blank function will appear.  
-![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/Image7.png) 
+![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/image7.png)
 
 ### Row 1 Function: Set Pre-defined Variable
 
@@ -57,7 +57,7 @@ Add a new row by clicking the `Add Row` button.
 ![Image11](../../../static/img/cwrmm-task-unknown-user-profiles/Image11.png) 
 
 A blank function will appear.  
-![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/Image7.png)  
+![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/image7.png)  
 
 Search and select the `Powershell Script` function.  
 The following function will pop up on the screen:  

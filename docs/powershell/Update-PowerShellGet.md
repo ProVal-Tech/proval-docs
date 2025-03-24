@@ -1,5 +1,5 @@
 ---
-id: ps-update-powershellget
+id: '2d70b4e9-8f4b-44f5-9a12-24a1ca67e9e2'
 title: 'Update-PowerShellGet'
 title_meta: 'Update-PowerShellGet'
 keywords: ['update', 'powershellget', 'installation', 'nuget']

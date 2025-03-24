@@ -11,16 +11,16 @@ unlisted: false
 
 ## Summary
 
-This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](https://proval.itglue.com/DOC-5078775). ([Help Document](https://app.myglue.com/help_center/documents/11167373))  
+This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](/docs/powershell/Repair-WindowsUpdate.md)
 The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Update---Repair/image_1.png)
+![Sample Run](<../../../static/img/docs/Windows Update - Repair/image.png>)
 
 ## Dependencies
 
-[Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>)
+[Repair-WindowsUpdate](/docs/powershell/Repair-WindowsUpdate.md)
 
 ## Global Parameters
 
@@ -32,14 +32,22 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## User Parameters
 
-| Name              | Example        | Required | Description                                                              |
-|-------------------|----------------|----------|--------------------------------------------------------------------------|
-| SfcScan           | 1              | False    | 1 to execute SFC Scan as well; leave it blank to skip SFC Scan.       |
-| TicketOnFailure   | 1 or anything else | False    | 1 will enable ticketing on failure; anything else will disable this feature. |
+| Name            | Example            | Required | Description                                                              |
+|-----------------|--------------------|----------|--------------------------------------------------------------------------|
+| SfcScan         | 1                  | False    | 1 to execute SFC Scan as well; leave it blank to skip SFC Scan.          |
+| TicketOnFailure | 1 or anything else | False    | 1 will enable ticketing on failure; anything else will disable this feature. |
+| DISMRepair      | 1                  | False    | 1 to execute the DISM repair task with the windows patch component reset  |
 
 ## Process
 
-Executes the Agnostic script [Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>). Attempts to remove the `SoftwareDistribution.old` and `catroot2.old` directories if new `SoftwareDistribution` and `catroot2` directories are created. Logs successes and failures accordingly. If the script fails to repair the device, it will verify the global variable settings and notify as configured.
+Executes the Agnostic script [Repair-WindowsUpdate](/docs/powershell/Repair-WindowsUpdate.md) Attempts to remove the `SoftwareDistribution.old` and `catroot2.old` directories if new `SoftwareDistribution` and `catroot2` directories are created. Reset the Windows update components. Logs successes and failures accordingly. If the script fails to repair the device, it will verify the global variable settings and notify as configured.
+
+Note: Please whitelist the below filehash in the security application for the PowerShell successful execution:
+
+`1D7C348C9B7C33C0FA677713A19A992E`
+`D056A7921569BF0E637AC8EBF03D0DC5`
+
+
 
 ## Output
 

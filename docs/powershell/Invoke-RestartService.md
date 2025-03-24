@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-restartservice
+id: 'df5d8267-5836-48d8-8971-a5cc8b33722d'
 title: 'Invoke-RestartService'
 title_meta: 'Invoke-RestartService'
 keywords: ['restart', 'service', 'taskkill', 'errorhandling']

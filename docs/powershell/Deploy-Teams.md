@@ -1,5 +1,5 @@
 ---
-id: ps-deploy-teams
+id: '512415ba-2cc0-44bc-b0da-84a5e5d02adf'
 title: 'Deploy-Teams'
 title_meta: 'Deploy-Teams'
 keywords: ['deploy', 'teams', 'installation', 'update']

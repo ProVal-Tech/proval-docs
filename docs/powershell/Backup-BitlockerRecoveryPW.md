@@ -1,5 +1,5 @@
 ---
-id: ps-backup-bitlockerrecoverypw
+id: '7eecbf0c-2b91-4454-ba5c-e1b9605f07fc'
 title: 'Backup-BitlockerRecoveryPW'
 title_meta: 'Backup-BitlockerRecoveryPW'
 keywords: ['bitlocker', 'recovery', 'password', 'backup']

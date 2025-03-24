@@ -1,5 +1,5 @@
 ---
-id: ps-test-weakcredentials  
+id: '9188a8e9-ba15-45aa-9391-d412866b1ebc'  
 title: 'Test-WeakCredentials'  
 title_meta: 'Test-WeakCredentials'  
 keywords: ['weak', 'credentials', 'passwords', 'security']  

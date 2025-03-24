@@ -1,5 +1,5 @@
 ---
-id: ps-get-patchconfig
+id: 'b43fd352-5874-472a-9fd9-02c8aee38515'
 title: 'Get-PatchConfig'
 title_meta: 'Get-PatchConfig'
 keywords: ['windows', 'update', 'patch', 'configuration']

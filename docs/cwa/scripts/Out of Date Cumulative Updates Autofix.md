@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-This Autofix script is designed to initiate the installation of the latest available Cumulative Update on computers identified by the [Internal Monitor - Last Cumulative Update > 75 Days ago](<../monitors/Last Cumulative Update 75 Days ago.md>). The script includes basic troubleshooting steps to ensure a smooth patch installation process.
+This Autofix script is designed to initiate the installation of the latest available Cumulative Update on computers identified by the [Internal Monitor - Last Cumulative Update > X Days ago](<../monitors/Last Cumulative Update X Days ago.md>). The script includes basic troubleshooting steps to ensure a smooth patch installation process.
 
 Here's an overview of the script's functionalities:
 
@@ -21,10 +21,12 @@ Here's an overview of the script's functionalities:
 4. The `Out_of_Date_CU-Autofix_for_Servers` system property can extend the Autofix section to servers if set to `1`.
 5. The script does not force a computer to restart but recommends it. For environments with the [Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>), it marks the `Pending Reboot` EDF to prompt users for a restart and closes the initial ticket upon successful reboot.
 6. If the solution is not in place, the script adds a comment in the initial ticket to prompt a restart at the earliest convenience.
-7. The script tracks post-reboot installations, rescheduling itself every 12 hours to monitor system uptime. If a Cumulative Update is installed within 45 days, it closes the ticket; otherwise, it adds a failure comment or creates a new ticket.
+7. The script tracks post-reboot installations, rescheduling itself every 12 hours to monitor system uptime. If a Cumulative Update is installed within X days (Configured in `Out_of_Date_CU-Autofix_Threshold` system property), it closes the ticket; otherwise, it adds a failure comment or creates a new ticket.
 8. The script handles offline machines, rescheduling itself based on offline duration (4 hours, 12 hours, or terminating after 30 days).
 9. It accommodates machines in maintenance mode, rescheduling an hour after the maintenance window ends or terminating future schedules if the maintenance mode lasts more than 30 days.
 10. Optionally, email alerts can be enabled by setting the value of the system property `Out_of_Date_CU-EmailAlerts` to `1`.
+11. `Out_of_Date_CU-Disable_Autofix_for_Workstations` system property determines whether Autofix should be applied to workstations. Setting it to `1` will disable Autofix for workstations.
+12. `Out_of_Date_CU-Autofix_Threshold` system property Specifies the threshold (in days) for identifying outdated cumulative updates, replacing the previously hardcoded 75-day limit.
 
 This script comprehensively manages Cumulative Update installations, ensuring efficient handling of various scenarios, including offline status, maintenance mode, and appropriate alerts for non-integrated partners.
 
@@ -34,7 +36,7 @@ The script has been adjusted to specifically target the installation of Cumulati
 
 ## Sample Run
 
-This Autofix script is intended for implementation through the [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>) monitor set, using the `△ Custom - Autofix - Out Of Date Cumulative Updates` alert template. However, it can also be manually executed simultaneously.
+This Autofix script is intended for implementation through the [CWM - Automate - Internal Monitor - Patches Not Installing > X Days](<../monitors/Last Cumulative Update X Days ago.md>) monitor set, using the `△ Custom - Autofix - Out Of Date Cumulative Updates` alert template. However, it can also be manually executed simultaneously.
 
 ![Sample Run](../../../static/img/Out-of-Date-Cumulative-Updates-Autofix/image_1.png)
 
@@ -50,7 +52,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Dependencies
 
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<./Get Latest Installed Cumulative Update.md>)
-- [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>)
+- [CWM - Automate - Internal Monitor - Patches Not Installing > X Days](<../monitors/Last Cumulative Update X Days ago.md>)
 - [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
 - [SEC - Windows Update - Agnostic - Repair-WindowsUpdate](<../../powershell/Repair-WindowsUpdate.md>)
 
@@ -60,12 +62,14 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 |------------------------------------------|---------|----------|--------------------------------------------------------------------------------------------------|
 | Out_of_Date_CU-EmailAlerts               | 0       | False    | Configure it to 1 to activate email alerts in conjunction with the tickets.                     |
 | Out_of_Date_CU-Autofix_for_Servers      | 0       | False    | Assign a value of 1 to enable Autofix for servers; by default, the script will only generate a ticket for servers. |
+| Out_of_Date_CU-Disable_Autofix_for_Workstations    | 0       | False    | Assign a value of 1 to disable Autofix for workstations |
+| Out_of_Date_CU-Autofix_Threshold    | 75      | False    | Specify the threshold (in days) for identifying outdated cumulative updates |
 
 ## Script States
 
 | Name                | Example     | Description                                                                                                                                                                                                                                                                     |
 |---------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Out_of_Date_CU_Stage | Validation | To monitor the progress of the validation on the computer, the script state is also utilized in the [Internal Monitor - Last Cumulative Update > 75 Days ago](<../monitors/Last Cumulative Update 75 Days ago.md>) monitor set. This helps prevent duplicate executions of the script for the same computers. |
+| Out_of_Date_CU_Stage | Validation | To monitor the progress of the validation on the computer, the script state is also utilized in the [Internal Monitor - Last Cumulative Update > X Days ago](<../monitors/Last Cumulative Update X Days ago.md>) monitor set. This helps prevent duplicate executions of the script for the same computers. |
 
 ## Output
 
@@ -75,7 +79,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 
 ## Ticketing
 
-**Subject:**  `UPDATES - \\<Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on \\<Computer Name>`
+**Subject:**  `UPDATES - <Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on <Computer Name>`
 
 **Example:**  `UPDATES - 90+ Days Since Last CU Installed on DEV-Win10-1`
 
@@ -146,7 +150,7 @@ Automate will actively monitor the machine and will send an email alert if the p
 
 If the initial ticket was closed, a new ticket will be generated for the failure; otherwise, a comment will be appended to the existing ticket:
 
-**Subject:**  `UPDATES - \\<Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on \\<Computer Name>`
+**Subject:**  `UPDATES - <Days Since the Latest Installed CU was Released>+ Days Since Last CU Installed on <Computer Name>`
 
 **Failed to deploy the Cumulative Update:**
 ```
@@ -170,9 +174,9 @@ The WUA Settings validation has been performed too. The results are:
 
 The ticket category for the tickets generated by the script can be set at the following levels:
 
-- At the group level. The ticket category can be set from the groups where the internal monitor [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>) is enabled. This feature provides the flexibility to move the tickets into different boards based on their Operating System and Service Plans.
+- At the group level. The ticket category can be set from the groups where the internal monitor [CWM - Automate - Internal Monitor - Patches Not Installing > X Days](<../monitors/Last Cumulative Update X Days ago.md>) is enabled. This feature provides the flexibility to move the tickets into different boards based on their Operating System and Service Plans.
   
-- On the global monitor set. The ticket category can be selected at the monitor set ([CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>)). This ticket category will only be picked if the group-level ticket category is not defined.
+- On the global monitor set. The ticket category can be selected at the monitor set ([CWM - Automate - Internal Monitor - Patches Not Installing > X Days](<../monitors/Last Cumulative Update X Days ago.md>)). This ticket category will only be picked if the group-level ticket category is not defined.
 
 - If the ticket category is not set from any of the above places, then the ticket will be generated under the default ticket category.
 

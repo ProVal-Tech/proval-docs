@@ -1,5 +1,5 @@
 ---
-id: ps-get-unificontroller
+id: 'd5d5fe24-6009-48cf-9d51-ac4763a1be7f'
 title: 'Get-UnifiController'
 title_meta: 'Get-UnifiController'
 keywords: ['unifi', 'controller', 'network', 'api']

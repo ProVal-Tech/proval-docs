@@ -1,5 +1,5 @@
 ---
-id: ps-invoke-volumeoptimization
+id: '931ab6f1-d49a-430b-bc21-4d2fc8b228d0'
 title: 'Invoke-VolumeOptimization'
 title_meta: 'Invoke-VolumeOptimization'
 keywords: ['volume', 'optimization', 'defragment', 'trim']

@@ -17,7 +17,7 @@ Its function is to deny those patches present in the [plugin_proval_denied_patch
 ## Sample Run
 
 This is a function script and cannot be executed directly on the computers.  
-![Sample Run Image](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGlue-KBIDs---Function/image_1.png)
+![Sample Run Image](<../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs---Function/image_1.png>)
 
 ## Dependencies
 
