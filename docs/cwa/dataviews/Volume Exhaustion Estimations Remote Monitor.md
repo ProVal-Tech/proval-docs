@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-Displays volume information along with the estimated exhaustion date collected by the [Volume Space Sampling](<../monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) remote monitor.
+Displays volume information along with the estimated exhaustion date collected by the [Volume Space Sampling](<../monitors/Volume Space Sampling.md>) remote monitor.
 
 ## Dependencies
 
