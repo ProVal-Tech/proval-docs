@@ -31,8 +31,6 @@ Recommended steps to use Toast Notification:
 
 ## Variables
 
-## Variables
-
 | Name                        | Description                                                                                                                                         |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `NotificationType`          | The type of notification to send. The accepted values for `NotificationType` are: <ul><li>**Generic:** Enables a static, generic toast notification.</li><li>**PendingRebootUptime:** Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.</li><li>**PendingRebootCheck:** Displays a toast notification when a pending reboot is detected through the system registry or WMI.</li><li>**ADPasswordExpiration:** Sends a toast notification to users when their Active Directory password is nearing expiration.</li></ul> It is a mandatory variable. |

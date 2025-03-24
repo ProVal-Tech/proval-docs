@@ -37,7 +37,7 @@ Navigate to the Script Editor section and start by adding a row. You can do this
 ![Image6](../../../static/img/cwrmm-task-unknown-user-profiles/image6.png)  
 
 A blank function will appear.  
-![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/image7.png) 
+![Image7](../../../static/img/cwrmm-task-unknown-user-profiles/image7.png)
 
 ### Row 1 Function: Set Pre-defined Variable
 
