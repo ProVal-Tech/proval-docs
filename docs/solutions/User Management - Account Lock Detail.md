@@ -17,7 +17,7 @@ The purpose of this document is to outline the user lockout account audit proces
 
 | Content                                                                 | Type          | Function                              |
 |-------------------------------------------------------------------------|---------------|---------------------------------------|
-| [User Management - Account Lockout Audit](<../cwa/Scripts/User Management - Account Lockout Audit.md>) | Script        | Collects the account lockout details   |
+| [User Management - Account Lockout Audit](<../cwa/scripts/User Management - Account Lockout Audit.md>) | Script        | Collects the account lockout details   |
 | [Account LockOut Audit](<../cwa/dataviews/Account LockOut Audit.md>) | Dataview      | Shows the details of account lockouts  |
 | [AD Account Lockout Detection](<../cwa/monitors/Account Lockout Detection.md>) | Remote Monitor | Monitors to detect lockout accounts    |
 | [plugin_proval_account_lock](<../cwa/tables/plugin_proval_account_lock.md>) | Table         | Collects information about lockout accounts |

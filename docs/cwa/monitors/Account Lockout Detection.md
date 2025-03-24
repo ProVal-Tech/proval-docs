@@ -28,7 +28,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
+- [User Management - Account Lockout Audit](<../../cwa/scripts/User Management - Account Lockout Audit.md>)
 
 ## Target
 
