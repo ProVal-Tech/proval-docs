@@ -2,7 +2,7 @@
 id: '39345bfd-d9e2-4e68-9d7a-3e8b443140cc'
 title: 'Repair-WindowsUpdate'
 title_meta: 'Repair-WindowsUpdate'
-keywords: ['repair', 'windowsupdate', 'reset', 'troubleshoot']
+keywords: ['repair', 'windowsupdate', 'reset', 'troubleshoot', 'sfc', 'dism']
 description: 'Documentation for the Repair-WindowsUpdate command to reset Windows Update settings and troubleshoot update issues.'
 tags: ['update', 'windows']
 draft: false
@@ -29,7 +29,8 @@ Running the script may not necessarily resolve any issues with Windows updates. 
 3. Rename cache directories for Windows Update.
 4. Reset the Windows Component by installing the PSWindowsUpdate module.
 5. Start the services related to Windows updates.
-6. Log any failures to the error log.
+6. It provides optional feature of sfcscan and dism repair.
+7. Log any failures to the error log.
 
 Attempt to reset Windows Update settings as a primary troubleshooting step for Windows Update issues.
 
@@ -37,16 +38,25 @@ Attempt to reset Windows Update settings as a primary troubleshooting step for W
 .\Repair-WindowsUpdate.ps1
 ```
 
-Attempt to reset Windows Update settings as a primary troubleshooting step, with an optional SFC scan, for Windows Update issues.
+Attempt to reset Windows Update settings as a primary troubleshooting step, with an optional SFC scan or dism repair or both, for Windows Update issues.
 
 ```powershell
 .\Repair-WindowsUpdate.ps1 -SFCScan
 ```
 
+```powershell
+.\Repair-WindowsUpdate.ps1 -DISMRepair
+```
+
+```powershell
+.\Repair-WindowsUpdate.ps1 -SFCScan -DISMRepair
+```
+
 ## Parameters
-| Parameter         | Alias | Required  | Default   | Type      | Description                               |
-| ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| `-SFCScan`       |       | False     |           | Switch    | Toggles an optional SFC scan as a repair option for Windows updates. |
+| Parameter   | Alias | Required | Default | Type   | Description                                                        |
+|-------------|-------|----------|---------|--------|--------------------------------------------------------------------|
+| `-SFCScan`  |       | False    |         | Switch | Toggles an optional SFC scan as a repair option for Windows updates. |
+| `-DISMRepair` |     | False    |         | Switch | Toggles an optional DISM repair                                     |
 
 ## Output
 Location of output for log, result, and error files:
