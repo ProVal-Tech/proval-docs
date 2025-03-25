@@ -1,5 +1,6 @@
 ---
 id: '9979a839-d375-462c-ae0c-d28038fe5239'
+slug: /9979a839-d375-462c-ae0c-d28038fe5239
 title: 'Google Drive - Uninstall'
 title_meta: 'Google Drive - Uninstall'
 keywords: ['google', 'drive', 'uninstall', 'endpoint', 'procedure']
@@ -34,7 +35,6 @@ This procedure outlines the steps to remove Google Drive from the endpoint.
 ## Output
 
 Agent Log
-
 
 
 

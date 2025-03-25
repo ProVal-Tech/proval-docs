@@ -1,5 +1,6 @@
 ---
 id: '4664a942-cb4f-425a-ae16-4615d2b14cae'
+slug: /4664a942-cb4f-425a-ae16-4615d2b14cae
 title: 'Install Windows 11'
 title_meta: 'Install Windows 11'
 keywords: ['windows', 'installation', 'policy', 'upgrade', 'patching']
@@ -45,7 +46,6 @@ This document provides a policy to enable Windows 11 installation for Windows 10
 ![Image](../../../static/img/Install-Windows-11/image_23.png)
 
 ## Completed Policy
-
 
 
 

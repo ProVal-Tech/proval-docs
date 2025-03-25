@@ -1,5 +1,6 @@
 ---
 id: 'd8bd131a-7d1f-4f8e-8271-40223b825340'
+slug: /d8bd131a-7d1f-4f8e-8271-40223b825340
 title: 'Maintenance Mode - Set - 1 Hour for Dependent VMs Subscript'
 title_meta: 'Maintenance Mode - Set - 1 Hour for Dependent VMs Subscript'
 keywords: ['virtualization', 'maintenance', 'vm', 'automation', 'script']
@@ -23,6 +24,5 @@ This is a function script that is called by the script "VM Host - Maint Mode Dep
 
 - This is a function script.
 - It runs only one command to set the maintenance mode on the machine.
-
 
 

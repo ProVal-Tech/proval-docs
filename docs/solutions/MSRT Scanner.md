@@ -1,5 +1,6 @@
 ---
 id: '20e5cbc7-4882-496d-a818-348e42f644db'
+slug: /20e5cbc7-4882-496d-a818-348e42f644db
 title: 'MSRT Scanner'
 title_meta: 'MSRT Scanner'
 keywords: ['msrt', 'scanner', 'malware', 'audit', 'monitor']
@@ -43,6 +44,5 @@ This solution performs MSRT scanning, auto-fixes detected infections as an optio
      ED06AECD5686944B0A5E5D76C1E7A9EA
      C8759C7E4979819C0BB39DAF4DC64124
      ```
-
 
 

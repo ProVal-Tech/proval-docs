@@ -1,5 +1,6 @@
 ---
 id: 'f375aa2e-d7cd-4974-a8bb-986e95bb47d7'
+slug: /f375aa2e-d7cd-4974-a8bb-986e95bb47d7
 title: 'SWM - Software Uninstall - Component - Pulseway - Uninstall WIN PVAL'
 title_meta: 'SWM - Software Uninstall - Component - Pulseway - Uninstall WIN PVAL'
 keywords: ['uninstallation', 'pulseway', 'cleanup', 'datto', 'rmm']
@@ -36,6 +37,5 @@ A job status of **Success** is expected.
 
 **StdErr**  
 StdErr is not expected.
-
 
 

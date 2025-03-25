@@ -1,5 +1,6 @@
 ---
 id: 'f5a58819-dcc7-4905-a3b5-52ff73751e21'
+slug: /f5a58819-dcc7-4905-a3b5-52ff73751e21
 title: 'Detect SMB1'
 title_meta: 'Detect SMB1'
 keywords: ['smb1', 'windows', 'custom', 'field', 'script', 'task']
@@ -157,6 +158,5 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field - [CW RMM - Custom Field - SMB1 Enabled](<../custom-fields/SMB1 Enabled.md>)
-
 
 

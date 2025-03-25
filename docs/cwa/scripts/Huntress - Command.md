@@ -1,5 +1,6 @@
 ---
 id: '134f8e46-d2b2-4d92-9c3c-d1f8f921bf5d'
+slug: /134f8e46-d2b2-4d92-9c3c-d1f8f921bf5d
 title: 'Huntress - Command'
 title_meta: 'Huntress - Command'
 keywords: ['huntress', 'install', 'uninstall', 'reinstall', 'script']
@@ -58,6 +59,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

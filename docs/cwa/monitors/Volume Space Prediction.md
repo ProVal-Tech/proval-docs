@@ -1,5 +1,6 @@
 ---
 id: 'e928f9f6-f97d-44f3-aad2-26186416fa1f'
+slug: /e928f9f6-f97d-44f3-aad2-26186416fa1f
 title: 'Volume Space Prediction'
 title_meta: 'Volume Space Prediction'
 keywords: ['monitor', 'disk', 'diskspace', 'exhaustion', 'estimate', 'alerting', 'configuration']

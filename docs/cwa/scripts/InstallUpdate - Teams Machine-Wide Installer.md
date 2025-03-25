@@ -1,5 +1,6 @@
 ---
 id: 'b0ea3249-67c2-4ac6-b0f7-3d9ee333701d'
+slug: /b0ea3249-67c2-4ac6-b0f7-3d9ee333701d
 title: 'InstallUpdate - Teams Machine-Wide Installer'
 title_meta: 'InstallUpdate - Teams Machine-Wide Installer'
 keywords: ['software', 'install', 'deploy', 'teams', 'script']
@@ -20,6 +21,5 @@ An implementation of the agnostic script [SWM - Software Install - Agnostic - De
 ## Output
 
 - Script logs
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e7e6a0f4-6d21-4046-89ee-1e9dd5827221'
+slug: /e7e6a0f4-6d21-4046-89ee-1e9dd5827221
 title: 'CW Control - User Audit'
 title_meta: 'CW Control - User Audit'
 keywords: ['connectwise', 'audit', 'user', 'control', 'script']
@@ -39,6 +40,5 @@ It displays information in the dataview **@CW Control - User Audit**.
 
 - Script log
 - Dataview **@CW Control - User Audit**
-
 
 

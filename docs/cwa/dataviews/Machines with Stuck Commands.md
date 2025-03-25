@@ -1,5 +1,6 @@
 ---
 id: '60b06d7b-2357-4fbd-a13c-92288169adf5'
+slug: /60b06d7b-2357-4fbd-a13c-92288169adf5
 title: 'Machines with Stuck Commands'
 title_meta: 'Machines with Stuck Commands'
 keywords: ['machines', 'command', 'execution', 'report', 'status']
@@ -31,6 +32,5 @@ The dataview displays information about machines where a specific command has be
 | Command Parameter        | Parameter of the Stuck Command       |
 | Date Updated             | Start time of the command            |
 | Stuck Since (Hours)     | Duration the command has been stuck   |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c6ea69e0-823f-4090-9894-2faf81ba8c46'
+slug: /c6ea69e0-823f-4090-9894-2faf81ba8c46
 title: 'IdleMon Report Globals'
 title_meta: 'IdleMon Report Globals'
 keywords: ['idle', 'time', 'collection', 'windows', 'script', 'monitor']
@@ -50,6 +51,5 @@ The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be place
 
 - Script log
 - Dataview
-
 
 

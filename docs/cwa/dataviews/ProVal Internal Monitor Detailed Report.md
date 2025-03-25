@@ -1,5 +1,6 @@
 ---
 id: 'ad298109-c6b4-4af4-8ef1-37ba43db737f'
+slug: /ad298109-c6b4-4af4-8ef1-37ba43db737f
 title: 'ProVal Internal Monitor Detailed Report'
 title_meta: 'ProVal Internal Monitor Detailed Report'
 keywords: ['monitors', 'status', 'alert', 'template', 'script', 'failure', 'scan', 'group']
@@ -58,6 +59,5 @@ Color coding is applied to the columns "Monitor Status," "Script Nature," and "M
 **Script Nature:** The "ProVal Script" is highlighted in green to indicate where ProVal scripts are used as autofixes.
 
 **Monitor Synced/Updated:** "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily show whether the monitor is properly synced/updated from the ProVal plugin.
-
 
 

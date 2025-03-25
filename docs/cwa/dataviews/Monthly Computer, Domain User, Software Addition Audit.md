@@ -1,5 +1,6 @@
 ---
 id: '7823e025-efaf-42ab-9fa4-23b0a91190f2'
+slug: /7823e025-efaf-42ab-9fa4-23b0a91190f2
 title: 'Monthly Computer, Domain User, Software Addition Audit'
 title_meta: 'Monthly Computer, Domain User, Software Addition Audit'
 keywords: ['audit', 'computers', 'software', 'domain', 'users', 'client', 'environment']
@@ -31,6 +32,5 @@ This document provides an audit of last month's new computers added to the clien
 | Newly Added Domain User         | List of domain users added in the last month                                 |
 | Newly Added Account Count       | Count of domain users added in the last month                                |
 | Domain Account Creation Date     | Creation dates of domain accounts added in the last month                    |
-
 
 

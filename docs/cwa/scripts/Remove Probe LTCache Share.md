@@ -1,5 +1,6 @@
 ---
 id: '31680e20-afa7-4b6b-9510-13a10193f6a1'
+slug: /31680e20-afa7-4b6b-9510-13a10193f6a1
 title: 'Remove Probe LTCache Share'
 title_meta: 'Remove Probe LTCache Share'
 keywords: ['ltcache', 'probe', 'cleanup', 'database', 'automation']
@@ -39,6 +40,5 @@ This script will remove the current LTCache on the Probe for the target's locati
 ## Output
 
 - Script log
-
 
 

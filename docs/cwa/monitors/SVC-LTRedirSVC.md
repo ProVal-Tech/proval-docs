@@ -1,5 +1,6 @@
 ---
 id: '33120745-9fa1-4864-aff6-b97d083e3fd5'
+slug: /33120745-9fa1-4864-aff6-b97d083e3fd5
 title: 'SVC-LTRedirSVC'
 title_meta: 'SVC-LTRedirSVC'
 keywords: ['automate', 'monitoring', 'service', 'alert', 'ticket']
@@ -30,4 +31,3 @@ It should be created against the "Labtech Server" group for on-prem partners onl
 ## Target
 
 Service plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
-

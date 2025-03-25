@@ -1,5 +1,6 @@
 ---
 id: '7803bfd7-52e0-482d-805a-29aca6cadf04'
+slug: /7803bfd7-52e0-482d-805a-29aca6cadf04
 title: 'Remove Additional ScreenConnect Clients'
 title_meta: 'Remove Additional ScreenConnect Clients'
 keywords: ['screenconnect', 'monitor', 'client', 'edf', 'detection', 'removal']
@@ -26,6 +27,5 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Remove Additional ScreenConnect Clients`
-
 
 

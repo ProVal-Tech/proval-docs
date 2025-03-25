@@ -1,5 +1,6 @@
 ---
 id: '3b41c8a5-cebe-47bd-a829-9b3fa5701b15'
+slug: /3b41c8a5-cebe-47bd-a829-9b3fa5701b15
 title: 'User Management - New Local Account Audit And Disable DV,Autofix,Global'
 title_meta: 'User Management - New Local Account Audit And Disable DV,Autofix,Global'
 keywords: ['account', 'audit', 'disable', 'detection', 'local', 'monitor', 'user']
@@ -45,6 +46,5 @@ This script is a function script and it only runs with the dependent remote moni
 - Script log
 - Custom table
 - Dataview
-
 
 

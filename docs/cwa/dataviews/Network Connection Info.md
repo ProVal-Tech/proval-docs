@@ -1,5 +1,6 @@
 ---
 id: 'a3d15808-2cfc-4703-b1bc-21e9579d90c5'
+slug: /a3d15808-2cfc-4703-b1bc-21e9579d90c5
 title: 'Network Connection Info'
 title_meta: 'Network Connection Info'
 keywords: ['network', 'connections', 'status', 'adapter', 'speed', 'uptime', 'client', 'location']
@@ -30,6 +31,5 @@ The dataview displays detailed information about network connections.
 | DNS Address                | This displays the DNS information of the machine.           |
 | Domain Name                | The domain information of the machine.                      |
 | DHCP State                 | The DHCP state (Static/Dynamic) of the network.            |
-
 
 

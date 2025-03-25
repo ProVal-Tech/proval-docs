@@ -1,5 +1,6 @@
 ---
 id: '0805aaf6-831e-403d-ad41-03fa7573f86b'
+slug: /0805aaf6-831e-403d-ad41-03fa7573f86b
 title: 'SentinelOne Management Server Discrepancy'
 title_meta: 'SentinelOne Management Server Discrepancy'
 keywords: ['sentinelone', 'management', 'discrepancy', 'cw', 'rmm']
@@ -39,6 +40,5 @@ The solution aims to find the computers where the installed SentinelOne Manageme
 
 3. Create and schedule this task:  
    - [SentinelOne Management Console Validation](<../cwrmm/tasks/SentinelOne Management Console Validation.md>)  
-
 
 

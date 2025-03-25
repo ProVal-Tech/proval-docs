@@ -1,5 +1,6 @@
 ---
 id: '11b30dcb-74c1-4736-a495-5908ce17117a'
+slug: /11b30dcb-74c1-4736-a495-5908ce17117a
 title: 'Network Glue Collector - Install'
 title_meta: 'Network Glue Collector - Install'
 keywords: ['network', 'glue', 'collector', 'installation', 'client', 'activation', 'deployment']
@@ -60,6 +61,5 @@ See [SWM - Software Install - Agnostic - Install-NetworkGlueCollector](https://p
 - **Body:**  
   Network Glue Collector installation failed on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%. Please review the log below:  
   @ErrorLog@.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '3fbd3eec-1a64-44d4-a812-fc2ac0e359e0'
+slug: /3fbd3eec-1a64-44d4-a812-fc2ac0e359e0
 title: 'Endpoint - C2R Auto Update'
 title_meta: 'Endpoint - C2R Auto Update'
 keywords: ['c2r', 'office', 'auto', 'update', 'status']
@@ -23,7 +24,6 @@ This document outlines whether the C2R Office Auto Update feature is enabled on 
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Auto-Update/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Auto-Update/image_2.png)
-
 
 
 

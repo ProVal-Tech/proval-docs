@@ -1,5 +1,6 @@
 ---
 id: 'a616e505-d119-4fbd-90eb-6fcd9ebea41e'
+slug: /a616e505-d119-4fbd-90eb-6fcd9ebea41e
 title: 'Set - Chromium Homepage'
 title_meta: 'Set - Chromium Homepage'
 keywords: ['homepage', 'browsers', 'settings', 'enforcement', 'chromium']
@@ -267,5 +268,4 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
 

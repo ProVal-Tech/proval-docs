@@ -1,5 +1,6 @@
 ---
 id: 'e1284347-bbd4-4a41-af4c-f48188468bb6'
+slug: /e1284347-bbd4-4a41-af4c-f48188468bb6
 title: 'Windows Defender ATP'
 title_meta: 'Windows Defender ATP'
 keywords: ['windows', 'defender', 'atp', 'detection', 'security']
@@ -18,6 +19,5 @@ This document outlines a method to determine if the device has Windows Defender 
 | Detection String                                                                 | Comparator | Result | Applicable OS |
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Windows Advanced Threat Protection/Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
-
 
 

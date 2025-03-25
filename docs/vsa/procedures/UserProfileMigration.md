@@ -1,5 +1,6 @@
 ---
 id: '1e52b09d-7a6a-4e7f-8f62-51fd8c961e71'
+slug: /1e52b09d-7a6a-4e7f-8f62-51fd8c961e71
 title: 'UserProfileMigration'
 title_meta: 'UserProfileMigration'
 keywords: ['restore', 'profile', 'active', 'user']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Restore Profile for Active User
-
 
 

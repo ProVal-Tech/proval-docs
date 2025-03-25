@@ -1,5 +1,6 @@
 ---
 id: 'd002ff1b-cb8c-45db-af82-096e7912db2b'
+slug: /d002ff1b-cb8c-45db-af82-096e7912db2b
 title: 'Password Expires This Week G'
 title_meta: 'Password Expires This Week G'
 keywords: ['custom', 'rawsql', 'monitor', 'password', 'expiration', 'notification', 'active', 'directory']
@@ -23,6 +24,5 @@ This Custom RAWSQL monitor detects users whose passwords are going to expire wit
 ## Target
 
 Global
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '8fa8c78e-04a4-4495-8cfe-44aef7b48035'
+slug: /8fa8c78e-04a4-4495-8cfe-44aef7b48035
 title: 'plugin_proval_ad_gposf'
 title_meta: 'plugin_proval_ad_gposf'
 keywords: ['gpo', 'security', 'filtering', 'audit', 'trustee']
@@ -27,6 +28,5 @@ This document displays detailed information about the GPO security filtering of 
 | ComputerID  | INT      | The Automate ComputerID of the supplying domain controller.                |
 | Trustee     | VARCHAR  | The name of the user or group that the security filter is applying to.     |
 | TrusteeType | VARCHAR  | The type of trustee (User, Group, WellKnownGroup, etc.)                   |
-
 
 

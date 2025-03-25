@@ -1,5 +1,6 @@
 ---
 id: '01472480-e16e-4733-86db-382a6a406479'
+slug: /01472480-e16e-4733-86db-382a6a406479
 title: 'SWM - Software Install - Deploy Liongard Agent'
 title_meta: 'SWM - Software Install - Deploy Liongard Agent'
 keywords: ['liongard', 'agent', 'installation', 'upgrade', 'service']
@@ -84,6 +85,5 @@ The script will work as long as this download URL is active:
 ## Output
 
 - Script Logs
-
 
 

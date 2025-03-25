@@ -1,5 +1,6 @@
 ---
 id: '2f324c74-1e32-4c48-b567-abbeebdabe6d'
+slug: /2f324c74-1e32-4c48-b567-abbeebdabe6d
 title: 'Execute Script - Scheduled Task - Create - Winget Update All'
 title_meta: 'Execute Script - Scheduled Task - Create - Winget Update All'
 keywords: ['scheduled', 'task', 'winget', 'update', 'windows']
@@ -31,6 +32,5 @@ Managed Windows Workstations
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](<../scripts/Scheduled Task - Create - Winget Update All Autofix.md>)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '561c4377-7634-4596-9d06-7101e2ef7b65'
+slug: /561c4377-7634-4596-9d06-7101e2ef7b65
 title: 'plugin_proval_wifi_profiles'
 title_meta: 'plugin_proval_wifi_profiles'
 keywords: ['wifi', 'profile', 'storage', 'configuration', 'clientid', 'ssid']
@@ -26,6 +27,5 @@ This document stores information about gathered WiFi profiles from [WiFi Profile
 | clientid | INT     | The ClientID associated with the WiFi profile.   |
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
 | xml      | BLOB    | The configuration information of the WiFi profile. |
-
 
 

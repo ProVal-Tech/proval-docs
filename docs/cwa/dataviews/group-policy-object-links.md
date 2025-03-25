@@ -1,5 +1,6 @@
 ---
 id: '45a9f461-fac0-4e5c-9a5f-819786e8ad21'
+slug: /45a9f461-fac0-4e5c-9a5f-819786e8ad21
 title: 'Group Policy Object Links'
 title_meta: 'Group Policy Object Links'
 keywords: ['gpo', 'audit', 'policy', 'link', 'dc', 'client', 'location', 'enabled', 'enforced', 'computer', 'user', 'created', 'modified', 'read']

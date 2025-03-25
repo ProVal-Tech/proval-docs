@@ -1,5 +1,6 @@
 ---
 id: 'c402434e-1d52-49aa-a797-99b0d2b41f1a'
+slug: /c402434e-1d52-49aa-a797-99b0d2b41f1a
 title: 'SEC - Encryption - Component - Enable Bitlocker and Document Recovery Key'
 title_meta: 'SEC - Encryption - Component - Enable Bitlocker and Document Recovery Key'
 keywords: ['bitlocker', 'encryption', 'recovery', 'endpoint', 'security']
@@ -24,4 +25,3 @@ This document enables BitLocker on the endpoint and saves the recovery key and B
 - stdErr
 ## Attachments
 [_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt](<../../static/attachments/itg/11881196/_Enable_Bitlocker_and_Document_to_UDF_WIN_ProVal.cpt>)
-

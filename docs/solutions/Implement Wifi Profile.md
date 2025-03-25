@@ -1,5 +1,6 @@
 ---
 id: '1b38dbb7-848f-4605-b8c9-80e7ebf069d3'
+slug: /1b38dbb7-848f-4605-b8c9-80e7ebf069d3
 title: 'Implement Wifi Profile'
 title_meta: 'Implement Wifi Profile'
 keywords: ['wifi', 'profiles', 'windows', 'monitor', 'script', 'implementation', 'automation']
@@ -61,7 +62,6 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](<../cwa/monitors/Wifi Profiles - Add.md>)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '1d54d079-e038-46a7-8a03-fe6bad481487'
+slug: /1d54d079-e038-46a7-8a03-fe6bad481487
 title: 'Weak Passwords - AD Test'
 title_meta: 'Weak Passwords - AD Test'
 keywords: ['ad', 'credentials', 'passwords', 'security', 'audit']
@@ -282,5 +283,4 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script Log
-
 

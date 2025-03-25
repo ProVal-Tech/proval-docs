@@ -1,5 +1,6 @@
 ---
 id: '62b1555c-706c-433c-a053-329a63db0dd0'
+slug: /62b1555c-706c-433c-a053-329a63db0dd0
 title: 'Office Update Enable'
 title_meta: 'Office Update Enable'
 keywords: ['office', 'updates', 'registry', 'configuration', 'clicktorun']
@@ -22,6 +23,5 @@ This script enables Office updates by running a PowerShell command.
 ## Process
 
 - Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `True`.
-
 
 

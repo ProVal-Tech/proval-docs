@@ -1,5 +1,6 @@
 ---
 id: '282be91b-f8ee-4ed8-9a1c-1cf9510678f2'
+slug: /282be91b-f8ee-4ed8-9a1c-1cf9510678f2
 title: 'Windows 1011 Feature Update Audit'
 title_meta: 'Windows 1011 Feature Update Audit'
 keywords: ['windows', 'build', 'version', 'listing', 'support', 'eol']
@@ -44,6 +45,5 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 | ------ | ---------- | ----- | ------ |
 | EOL    | Equals     | Yes   | Red    |
 | EOL    | Equals     | No    | Green  |
-
 
 

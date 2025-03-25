@@ -1,5 +1,6 @@
 ---
 id: 'd8ec2315-c425-41f0-a4a9-3f8aa3e61fc4'
+slug: /d8ec2315-c425-41f0-a4a9-3f8aa3e61fc4
 title: 'Monitor OS Build'
 title_meta: 'Monitor OS Build'
 keywords: ['monitor', 'os', 'build', 'update', 'windows']

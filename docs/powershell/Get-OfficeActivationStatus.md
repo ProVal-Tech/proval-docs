@@ -1,5 +1,6 @@
 ---
 id: '4a0afa88-7a52-4d25-99b7-551a2c6e9bd0'
+slug: /4a0afa88-7a52-4d25-99b7-551a2c6e9bd0
 title: 'Get-OfficeActivationStatus'
 title_meta: 'Get-OfficeActivationStatus'
 keywords: ['office', 'activation', 'license', 'status']
@@ -21,6 +22,5 @@ This command uses the SoftwareLicensingProduct CIM class to gather activation de
 
 ## Output
 The output is saved to `.\Get-OfficeActivationStatus-log.txt`.
-
 
 

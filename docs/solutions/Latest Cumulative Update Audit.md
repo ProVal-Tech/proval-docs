@@ -1,5 +1,6 @@
 ---
 id: '8f2741e6-ef04-4a1e-804d-f481469e8beb'
+slug: /8f2741e6-ef04-4a1e-804d-f481469e8beb
 title: 'Latest Cumulative Update Audit'
 title_meta: 'Latest Cumulative Update Audit'
 keywords: ['cumulative', 'update', 'audit', 'microsoft', 'compliance']
@@ -28,7 +29,6 @@ The solution retrieves the computer's build number and compares it with Microsof
 - Create the task: [CW RMM - Task - Cumulative Update Audit](<../cwrmm/tasks/Cumulative Update Audit.md>)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](<../cwrmm/tasks/Cumulative Update Audit.md>)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](<../cwrmm/monitors/Cumulative Update Audit.md>)
-
 
 
 

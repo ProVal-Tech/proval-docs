@@ -1,5 +1,6 @@
 ---
 id: '7356bbb4-4d5f-4c3c-839e-68054255c0d8'
+slug: /7356bbb4-4d5f-4c3c-839e-68054255c0d8
 title: 'EPM - Software Management - Component - PUA Removal Tool'
 title_meta: 'EPM - Software Management - Component - PUA Removal Tool'
 keywords: ['datto', 'rmm', 'pua', 'bloatware', 'implementation']
@@ -34,6 +35,5 @@ Import PUA Removal Tool.cpt into the environment.
 # Output
 
 stdOut & stdError
-
 
 

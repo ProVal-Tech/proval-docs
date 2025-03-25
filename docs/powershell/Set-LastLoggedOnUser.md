@@ -1,5 +1,6 @@
 ---
 id: 'd657bd73-5526-4f27-93bb-9dbae3fe2f6e'
+slug: /d657bd73-5526-4f27-93bb-9dbae3fe2f6e
 title: 'Set-LastLoggedOnUser'
 title_meta: 'Set-LastLoggedOnUser'
 keywords: ['user', 'login', 'session', 'windows']
@@ -71,6 +72,5 @@ Sets the specified user as the last logged-in user and restarts the computer imm
 
 - .\\Set-LastLoggedOnUser-Log.txt
 - .\\Set-LastLoggedOnUser-Error.txt
-
 
 

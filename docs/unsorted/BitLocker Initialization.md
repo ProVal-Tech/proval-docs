@@ -1,5 +1,6 @@
 ---
 id: '8c653432-1811-4651-989e-3c8aae89a7cf'
+slug: /8c653432-1811-4651-989e-3c8aae89a7cf
 title: 'BitLocker Initialization'
 title_meta: 'BitLocker Initialization'
 keywords: ['bitlocker', 'encryption', 'kaseya', 'agent', 'procedure']
@@ -123,7 +124,6 @@ The following logs are created when the agent procedure is run.
 ./Initialize-BitLockerVolume-data.txt
 ./Initialize-BitLockerVolume-error.txt
 ```
-
 
 
 

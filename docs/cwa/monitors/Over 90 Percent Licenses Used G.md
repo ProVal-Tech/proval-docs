@@ -1,5 +1,6 @@
 ---
 id: 'b3d41d1c-e687-4e39-811a-83d6fb99c14d'
+slug: /b3d41d1c-e687-4e39-811a-83d6fb99c14d
 title: 'Over 90 Percent Licenses Used G'
 title_meta: 'Over 90 Percent Licenses Used G'
 keywords: ['automate', 'license', 'monitor', 'alert', 'tickets']
@@ -24,6 +25,5 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 
 The suggested target for the monitor is as follows:  
 Global - Should be run without explicitly defined targets.
-
 
 

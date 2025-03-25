@@ -1,5 +1,6 @@
 ---
 id: 'f43caad6-43d9-4313-83ae-f0607ac15c6c'
+slug: /f43caad6-43d9-4313-83ae-f0607ac15c6c
 title: 'Microsoft Exchange On-Premises Mitigation Tool Execution Global'
 title_meta: 'Microsoft Exchange On-Premises Mitigation Tool Execution Global'
 keywords: ['exchange', 'mitigation', 'cve', 'hafnium', 'script', 'ticket', 'scan']
@@ -33,6 +34,5 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Log file named `msert.log`
-
 
 

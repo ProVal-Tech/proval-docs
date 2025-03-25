@@ -1,5 +1,6 @@
 ---
 id: '8ea82e33-879c-47d6-93a2-e33801126e54'
+slug: /8ea82e33-879c-47d6-93a2-e33801126e54
 title: 'Reboot - Forced with 30 Min or Custom Maintenance Mode'
 title_meta: 'Reboot - Forced with 30 Min or Custom Maintenance Mode'
 keywords: ['maintenance', 'reboot', 'windows', 'script', 'parameter']
@@ -48,6 +49,5 @@ The script will then issue a Windows CLI command to restart the device and exit 
 ## Output
 
 Script log messages
-
 
 

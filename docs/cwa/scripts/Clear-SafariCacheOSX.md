@@ -1,5 +1,6 @@
 ---
 id: '11e2bd71-314c-497f-a22a-814ff2af0d4d'
+slug: /11e2bd71-314c-497f-a22a-814ff2af0d4d
 title: 'Clear-SafariCacheOSX'
 title_meta: 'Clear-SafariCacheOSX'
 keywords: ['safari', 'cache', 'macos', 'clear', 'files', 'folders', 'logs', 'errors']
@@ -48,4 +49,3 @@ Clears all Safari cache files and folders from macOS devices.
 ## Attachments
 [Install-AnyConnect.ps1](<../../../static/attachments/itg/10371995/Install-AnyConnect.ps1>)
 [README.md](<../../../static/attachments/itg/10371995/README.md>)
-

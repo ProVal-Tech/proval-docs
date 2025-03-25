@@ -1,5 +1,6 @@
 ---
 id: '459746c4-f070-40bf-a630-0650e08a2490'
+slug: /459746c4-f070-40bf-a630-0650e08a2490
 title: 'TPM Detail Auditing'
 title_meta: 'TPM Detail Auditing'
 keywords: ['tpm', 'configuration', 'endpoint', 'security', 'management']
@@ -53,6 +54,5 @@ This script provides detailed information about the TPM configuration on the end
 - Script log
 - Script state
 - Dataview
-
 
 

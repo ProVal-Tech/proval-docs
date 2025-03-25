@@ -1,5 +1,6 @@
 ---
 id: 'a89ef3e3-2a5e-4b46-9286-1a2cf054011a'
+slug: /a89ef3e3-2a5e-4b46-9286-1a2cf054011a
 title: 'Microsoft Edge - Remove Extension'
 title_meta: 'Microsoft Edge - Remove Extension'
 keywords: ['edge', 'extension', 'unregister', 'chromium', 'windows']
@@ -68,6 +69,5 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
-
 
 

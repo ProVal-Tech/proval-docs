@@ -1,5 +1,6 @@
 ---
 id: '1986c949-6d8f-40e6-b802-c32195c9a2d3'
+slug: /1986c949-6d8f-40e6-b802-c32195c9a2d3
 title: 'Autofix - Monitor AV Service Status'
 title_meta: 'Autofix - Monitor AV Service Status'
 keywords: ['av', 'monitor', 'process', 'ticketing', 'automation']
@@ -50,6 +51,5 @@ The intended target for this script is the "AV-Disabled" monitor.
 
 - Script log
 - Script state
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '96b91b8c-3c8a-485e-8f33-9a77cf4d190c'
+slug: /96b91b8c-3c8a-485e-8f33-9a77cf4d190c
 title: 'BitDefender Endpoint Security Tools - Uninstall'
 title_meta: 'BitDefender Endpoint Security Tools - Uninstall'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security', 'tools', 'procedure']
@@ -51,6 +52,5 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
-
 
 

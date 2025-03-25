@@ -1,5 +1,6 @@
 ---
 id: 'a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b'
+slug: /a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b
 title: ' SMB1 Detection'
 title_meta: ' SMB1 Detection'
 keywords: ['smb1', 'monitor', 'detection', 'scripting', 'rmm']
@@ -67,6 +68,5 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
    **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '73adabc6-03cb-4979-9c62-97acc98308da'
+slug: /73adabc6-03cb-4979-9c62-97acc98308da
 title: 'New Domain Admin Monitor - Create'
 title_meta: 'New Domain Admin Monitor - Create'
 keywords: ['remote', 'monitors', 'domain', 'administrators', 'windows', 'alerts']
@@ -126,7 +127,6 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
-
 
 
 

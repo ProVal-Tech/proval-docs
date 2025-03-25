@@ -1,5 +1,6 @@
 ---
 id: '4ed8cce5-502c-4207-857f-1dfd64697920'
+slug: /4ed8cce5-502c-4207-857f-1dfd64697920
 title: 'EPM - Data Collection -Solution - OS Install Date'
 title_meta: 'EPM - Data Collection -Solution - OS Install Date'
 keywords: ['custom', 'field', 'install', 'date', 'os']
@@ -23,7 +24,6 @@ This solution allows for a custom field to be populated with the initial install
 ## Implementation
 
 The agent procedure must be run in order for the custom field to be populated.
-
 
 
 

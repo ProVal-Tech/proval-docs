@@ -1,5 +1,6 @@
 ---
 id: '47db6b3a-66e5-4ede-bc9f-7dfd3015608c'
+slug: /47db6b3a-66e5-4ede-bc9f-7dfd3015608c
 title: 'Symantec Agent Install'
 title_meta: 'Symantec Agent Install'
 keywords: ['symantec', 'agent', 'windows', 'installation', 'software']
@@ -31,6 +32,5 @@ The script installs the Symantec Agent on the Windows machine.
 ## Output
 
 - Script log
-
 
 

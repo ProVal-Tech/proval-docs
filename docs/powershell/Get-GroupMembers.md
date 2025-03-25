@@ -1,5 +1,6 @@
 ---
 id: 'ada4b91a-2f1d-406b-b05d-178877c9b0a6'
+slug: /ada4b91a-2f1d-406b-b05d-178877c9b0a6
 title: 'Get-GroupMembers'
 title_meta: 'Get-GroupMembers'
 keywords: ['groups', 'members', 'local', 'ad', 'azuread']
@@ -48,6 +49,5 @@ This returns a system object of all Azure Active Directory groups and all member
 ```
 Group     /      Members
 ```
-
 
 

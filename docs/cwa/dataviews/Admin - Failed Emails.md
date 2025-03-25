@@ -1,5 +1,6 @@
 ---
 id: '525e89d1-335a-4664-920b-0428b827a7ad'
+slug: /525e89d1-335a-4664-920b-0428b827a7ad
 title: 'Admin - Failed Emails'
 title_meta: 'Admin - Failed Emails'
 keywords: ['failed', 'emails', 'dataview', 'automate', 'error']
@@ -28,6 +29,5 @@ None
 | Body      | The body of the email                                                                           |
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
-
 
 

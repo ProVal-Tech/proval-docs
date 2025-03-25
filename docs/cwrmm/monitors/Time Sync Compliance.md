@@ -1,5 +1,6 @@
 ---
 id: 'e6735934-f31f-4993-94b5-c297546ede23'
+slug: /e6735934-f31f-4993-94b5-c297546ede23
 title: 'Time Sync Compliance'
 title_meta: 'Time Sync Compliance'
 keywords: ['time', 'sync', 'monitor', 'ntp', 'compliance']
@@ -95,6 +96,5 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 12. Click the `Save` button to save the monitor set.
 
     ![Image](../../../static/img/Time-Sync-Compliance/image_13.png)
-
 
 

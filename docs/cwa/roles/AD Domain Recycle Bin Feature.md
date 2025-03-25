@@ -1,5 +1,6 @@
 ---
 id: '01cb2977-8f3e-49fa-ad5b-62375c54a39c'
+slug: /01cb2977-8f3e-49fa-ad5b-62375c54a39c
 title: 'AD Domain Recycle Bin Feature'
 title_meta: 'AD Domain Recycle Bin Feature'
 keywords: ['recycle', 'bin', 'domain', 'controller', 'feature', 'detection']
@@ -18,7 +19,6 @@ This document describes how to detect if the Recycle Bin feature is enabled on t
 | Detection String                                                                                                                                                     | Comparator | Result  | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------|----------------|
 | `%\\\{@powershell.exe \"$enabledScopes = Get-ADOptionalFeature -Identity 'Recycle Bin Feature'|select -exp enabledscopes|format-list;if ($enabledScopes)\\\{Write-Output -InputObject 'Enabled'}else\\\{Write-Output -InputObject 'Disabled'}\"@%}` | Equals     | Enabled | Windows        |
-
 
 
 

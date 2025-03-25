@@ -1,5 +1,6 @@
 ---
 id: '3f036a74-e39e-4802-86a3-7087b1f0f7cb'
+slug: /3f036a74-e39e-4802-86a3-7087b1f0f7cb
 title: 'Deploy Teams'
 title_meta: 'Deploy Teams'
 keywords: ['teams', 'installer', 'monitor', 'windows', 'workstations']

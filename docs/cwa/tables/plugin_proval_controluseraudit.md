@@ -1,5 +1,6 @@
 ---
 id: 'ea80aef5-944c-4407-a632-2df65e15b4df'
+slug: /ea80aef5-944c-4407-a632-2df65e15b4df
 title: 'plugin_proval_controluseraudit'
 title_meta: 'plugin_proval_controluseraudit'
 keywords: ['connectwise', 'audit', 'users', 'information', 'roles']
@@ -36,6 +37,5 @@ Stores information from the @CW Control - User Audit script about existing Conne
 | IsApproved                | TINYINT   | 1 or 0 to determine if the audited CWC user is an approved user or not.  |
 | IsLockedOut               | TINYINT   | 1 or 0 to determine if the audited CWC user is locked out.                |
 | 2FAEnabled                | TINYINT   | 1 or 0 to determine if the audited CWC user has 2FA enabled.             |
-
 
 

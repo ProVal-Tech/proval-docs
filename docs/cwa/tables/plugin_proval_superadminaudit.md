@@ -1,5 +1,6 @@
 ---
 id: 'db1adf1f-7ff0-4b43-af21-6dc3d64bd3a9'
+slug: /db1adf1f-7ff0-4b43-af21-6dc3d64bd3a9
 title: 'plugin_proval_superadminaudit'
 title_meta: 'plugin_proval_superadminaudit'
 keywords: ['superadmin', 'audit', 'monitoring', 'information', 'comparison']
@@ -25,6 +26,5 @@ This document relies on the script [Automate - New Super Admin Monitoring](<../s
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
-
 
 

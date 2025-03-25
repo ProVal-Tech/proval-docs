@@ -1,5 +1,6 @@
 ---
 id: 'a9578dd1-1f6b-4932-a614-5ed823656416'
+slug: /a9578dd1-1f6b-4932-a614-5ed823656416
 title: 'Duo Authentication for Windows Logon Deployment'
 title_meta: 'Duo Authentication for Windows Logon Deployment'
 keywords: ['duo', 'authentication', 'windows', 'logon', 'custom', 'fields']
@@ -64,6 +65,5 @@ These custom fields are required for the "Duo Authentication for Windows Logon" 
    Note: The description is mandatory to be filled and it doesn't accept **'NEW LINE'**. Write everything in one phrase to describe the detail of the custom field.
 
 4. Please follow the same steps to create other custom fields.
-
 
 

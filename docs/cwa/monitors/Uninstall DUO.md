@@ -1,5 +1,6 @@
 ---
 id: '0c3523a9-e392-40f6-bc59-173a21001f0d'
+slug: /0c3523a9-e392-40f6-bc59-173a21001f0d
 title: 'Uninstall DUO'
 title_meta: 'Uninstall DUO'
 keywords: ['duo', 'monitor', 'windows', 'exclusion', 'agent']

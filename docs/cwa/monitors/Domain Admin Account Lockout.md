@@ -1,5 +1,6 @@
 ---
 id: 'a24b00c5-49d4-4a2b-9090-a2716b56cf47'
+slug: /a24b00c5-49d4-4a2b-9090-a2716b56cf47
 title: 'Domain Admin Account Lockout'
 title_meta: 'Domain Admin Account Lockout'
 keywords: ['monitor', 'domain', 'admin', 'lockout', 'ticket', 'alert']

@@ -1,5 +1,6 @@
 ---
 id: '31b19c20-52f0-491d-a2d0-7827cf8723a0'
+slug: /31b19c20-52f0-491d-a2d0-7827cf8723a0
 title: 'BSOD Monitoring'
 title_meta: 'BSOD Monitoring'
 keywords: ['BSOD', 'bluescreen', 'crashdump']

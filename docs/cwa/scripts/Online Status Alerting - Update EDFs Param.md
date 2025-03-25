@@ -1,5 +1,6 @@
 ---
 id: '79f11a31-7ae1-4e12-a9d7-581e809aaa2e'
+slug: /79f11a31-7ae1-4e12-a9d7-581e809aaa2e
 title: 'Online Status Alerting - Update EDFs Param'
 title_meta: 'Online Status Alerting - Update EDFs Param'
 keywords: ['alert', 'notification', 'ticket', 'email', 'script', 'machine', 'status', 'offline', 'online']
@@ -46,6 +47,5 @@ The parameters provided will be filled into their respective EDF values:
 | Email           | Online Alert E-mail        |
 | ScriptIDs       | Online Alert Scripts       |
 | AfterNextReboot | Online Alert Restarted Machine |
-
 
 

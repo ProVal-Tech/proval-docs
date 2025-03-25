@@ -1,5 +1,6 @@
 ---
 id: '7876f32c-a5ec-4b58-9f7e-b60b710e19d5'
+slug: /7876f32c-a5ec-4b58-9f7e-b60b710e19d5
 title: 'Reboot Prompter'
 title_meta: 'Reboot Prompter'
 keywords: ['custom', 'fields', 'reboot', 'prompter', 'solution']
@@ -61,7 +62,6 @@ The custom fields listed below are used in the Reboot Prompter Solution.
    ![Save](../../../static/img/Reboot-Prompter/image_6.png)
 
 5. Repeat the above four steps to create all other custom fields based on the Name, Level, Type, Default, Description, and Editable options provided in the table.
-
 
 
 

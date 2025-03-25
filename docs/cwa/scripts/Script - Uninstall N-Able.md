@@ -1,5 +1,6 @@
 ---
 id: '3918a9ca-7721-40d6-9b8b-97a5737d6af6'
+slug: /3918a9ca-7721-40d6-9b8b-97a5737d6af6
 title: 'Script - Uninstall N-Able'
 title_meta: 'Script - Uninstall N-Able'
 keywords: ['uninstallation', 'n-able', 'windows', 'agent', 'script']

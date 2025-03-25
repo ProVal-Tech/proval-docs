@@ -1,5 +1,6 @@
 ---
 id: 'c3e994ea-ed6d-4ae8-a4dc-0200d87208d5'
+slug: /c3e994ea-ed6d-4ae8-a4dc-0200d87208d5
 title: 'New Local Admin Monitor - Create'
 title_meta: 'New Local Admin Monitor - Create'
 keywords: ['remote', 'monitor', 'local', 'administrators', 'windows', 'alerts', 'exclusions']

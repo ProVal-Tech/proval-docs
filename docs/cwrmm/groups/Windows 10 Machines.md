@@ -1,5 +1,6 @@
 ---
 id: '8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a'
+slug: /8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a
 title: 'Windows 10 Machines'
 title_meta: 'Windows 10 Machines'
 keywords: ['windows', 'group', 'dynamic', 'machines', 'criteria']
@@ -46,6 +47,5 @@ This document outlines the process for creating a dynamic group specifically for
 
 ![Image](../../../static/img/Windows-10-Machines/image_11.png)  
 ![Image](../../../static/img/Windows-10-Machines/image_12.png)
-
 
 

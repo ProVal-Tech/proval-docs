@@ -1,5 +1,6 @@
 ---
 id: '414e5b68-23ca-4c24-8aa1-0dc464a4a10a'
+slug: /414e5b68-23ca-4c24-8aa1-0dc464a4a10a
 title: 'Get-NewDomainAdmin'
 title_meta: 'Get-NewDomainAdmin'
 keywords: ['new', 'domain', 'admin', 'permissions']
@@ -31,6 +32,5 @@ If the script has not been run previously, the admin data is saved to the table,
 ## Tables
 - Get-NewDomainAdmin_log
 - Get-NewDomainAdmin_admins
-
 
 

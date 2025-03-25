@@ -1,5 +1,6 @@
 ---
 id: 'c793b2af-4369-4c31-8a56-db1a1728d12d'
+slug: /c793b2af-4369-4c31-8a56-db1a1728d12d
 title: 'Feature CW Control RMM+ API - Offline Agent Remediation Autofix,Global'
 title_meta: 'Feature CW Control RMM+ API - Offline Agent Remediation Autofix,Global'
 keywords: ['offline', 'server', 'monitoring', 'ticket', 'agent', 'remediation']
@@ -97,6 +98,5 @@ The script will clear the **AgentStatus** script state and finish any open offli
 - Script Log
 - Script State
 - Ticket
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0a1033eb-6797-40d4-8049-9e9e4bf0d637'
+slug: /0a1033eb-6797-40d4-8049-9e9e4bf0d637
 title: 'GPO - Create Screen Lock Policy Globals'
 title_meta: 'GPO - Create Screen Lock Policy Globals'
 keywords: ['screen', 'lock', 'timeout', 'domain', 'controllers']
@@ -42,6 +43,5 @@ This script uses global variables to configure the number of seconds before a sc
 ## Output
 
 - Script log
-
 
 

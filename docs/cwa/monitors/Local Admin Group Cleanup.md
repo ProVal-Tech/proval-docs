@@ -1,5 +1,6 @@
 ---
 id: 'd49db584-9380-486d-a179-c014352f8be1'
+slug: /d49db584-9380-486d-a179-c014352f8be1
 title: 'Local Admin Group Cleanup'
 title_meta: 'Local Admin Group Cleanup'
 keywords: ['monitoring', 'cleanup', 'admin', 'windows', 'script']

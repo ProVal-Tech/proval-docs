@@ -1,5 +1,6 @@
 ---
 id: 'c18e0a86-ade5-405a-9fc4-46908a340cf8'
+slug: /c18e0a86-ade5-405a-9fc4-46908a340cf8
 title: 'Log4J Remediation Residue Removal'
 title_meta: 'Log4J Remediation Residue Removal'
 keywords: ['log4j', 'residuals', 'cleanup', 'script']
@@ -20,6 +21,5 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Lo
 ## Dependencies
 
 [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4b15de07-233d-462b-91ce-3ee060457e65'
+slug: /4b15de07-233d-462b-91ce-3ee060457e65
 title: 'Dataview - Email as CSV Param'
 title_meta: 'Dataview - Email as CSV Param'
 keywords: ['email', 'dataview', 'csv', 'report', 'filter', 'client', 'location', 'computer']
@@ -72,6 +73,5 @@ Dataviews can now be filtered by client, location, or computer.
 ## Output
 
 An email with a `@DataviewName@.Csv` file attached.
-
 
 

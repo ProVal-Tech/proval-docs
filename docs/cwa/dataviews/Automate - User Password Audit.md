@@ -1,5 +1,6 @@
 ---
 id: '54997a10-a21b-450a-8c77-f63d5d048190'
+slug: /54997a10-a21b-450a-8c77-f63d5d048190
 title: 'Automate - User Password Audit'
 title_meta: 'Automate - User Password Audit'
 keywords: ['automate', 'password', 'strength', 'security', 'user']
@@ -30,6 +31,5 @@ This document outlines the criteria for determining if an Automate user's passwo
 | Username        | User name                                                   |
 | Email           | Email of the user                                           |
 | Password Error  | The password complexity error indicating whether the password is strong or not. |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b713bbc8-a1d9-4e08-ac77-d02b634569f6'
+slug: /b713bbc8-a1d9-4e08-ac77-d02b634569f6
 title: 'ScreenConnect Client - Command - Execute'
 title_meta: 'ScreenConnect Client - Command - Execute'
 keywords: ['command', 'automation', 'control', 'rmm', 'script']
@@ -40,6 +41,5 @@ This script will execute a command via the default command-line parser on the ta
 ## Output
 
 - Script log
-
 
 

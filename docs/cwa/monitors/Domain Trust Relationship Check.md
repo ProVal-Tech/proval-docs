@@ -1,5 +1,6 @@
 ---
 id: 'bf518e9f-f93c-451b-a38a-5fc3472cc6f4'
+slug: /bf518e9f-f93c-451b-a38a-5fc3472cc6f4
 title: 'Domain Trust Relationship Check'
 title_meta: 'Domain Trust Relationship Check'
 keywords: ['monitor', 'ticket', 'domain', 'trust', 'workstation']

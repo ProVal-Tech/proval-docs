@@ -1,5 +1,6 @@
 ---
 id: '0fd0215c-d6d5-40c8-9ba6-79b69721f4c1'
+slug: /0fd0215c-d6d5-40c8-9ba6-79b69721f4c1
 title: 'Dash - Missing Patch - Count by Machines - Client Filter'
 title_meta: 'Dash - Missing Patch - Count by Machines - Client Filter'
 keywords: ['client', 'patch', 'status', 'machines', 'breakdown']
@@ -30,6 +31,5 @@ This Dataview is the RMM-specific display of the client-level breakdown of machi
 | OS            | Operating System (Server | Workstation)                                                     |
 | Patch Status  | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)         |
 | Machine Count | Number of machines falling under the concerned category/patch status for the client.       |
-
 
 

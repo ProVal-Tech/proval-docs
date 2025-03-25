@@ -1,5 +1,6 @@
 ---
 id: '523b8882-2c51-4f70-ad7d-cb2b4baf7bbf'
+slug: /523b8882-2c51-4f70-ad7d-cb2b4baf7bbf
 title: 'Deploy Huntress Agent Windows, Mac'
 title_meta: 'Deploy Huntress Agent Windows, Mac'
 keywords: ['huntress', 'agent', 'installation', 'windows', 'macintosh', 'ticketing']
@@ -100,6 +101,5 @@ Output of the installation command:
 
 - Script log
 - Ticket (if enabled)
-
 
 

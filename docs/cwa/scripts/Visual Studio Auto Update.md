@@ -1,5 +1,6 @@
 ---
 id: '611414aa-ae0b-46f3-92e4-4a99a42e6719'
+slug: /611414aa-ae0b-46f3-92e4-4a99a42e6719
 title: 'Visual Studio Auto Update'
 title_meta: 'Visual Studio Auto Update'
 keywords: ['visualstudio', 'updates', 'script', 'automation', 'enterprise', 'community']
@@ -43,6 +44,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

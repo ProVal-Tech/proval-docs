@@ -1,5 +1,6 @@
 ---
 id: 'b15d4142-5fc8-4352-8a5c-b039cde54b86'
+slug: /b15d4142-5fc8-4352-8a5c-b039cde54b86
 title: 'CWM - Automate - View - plugin_proval_v_monitoraudit'
 title_meta: 'CWM - Automate - View - plugin_proval_v_monitoraudit'
 keywords: ['monitor', 'audit', 'configuration', 'data', 'alert', 'ticket', 'service', 'frequency']
@@ -38,6 +39,5 @@ This document stores data about monitors and their configuration.
 | Category Name           | VARCHAR     | The category assigned to the alert.              |
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
-
 
 

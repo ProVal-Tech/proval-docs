@@ -1,5 +1,6 @@
 ---
 id: '12946fed-d74f-4977-b59d-85d5c639b56b'
+slug: /12946fed-d74f-4977-b59d-85d5c639b56b
 title: 'Test-InternetSpeed'
 title_meta: 'Test-InternetSpeed'
 keywords: ['speedtest', 'internet', 'network', 'performance']
@@ -38,6 +39,5 @@ result       : @{id=00000000-0000-0000-0000-000000000000; url=https://www.speedt
 downloadMbps : 924.245952
 uploadMbps   : 935.860104
 ```
-
 
 

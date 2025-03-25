@@ -1,5 +1,6 @@
 ---
 id: 'ab811d99-365c-4ad7-84dd-3ff8575d5b15'
+slug: /ab811d99-365c-4ad7-84dd-3ff8575d5b15
 title: 'Unquoted Service Paths Detection'
 title_meta: 'Unquoted Service Paths Detection'
 keywords: ['service', 'path', 'windows', 'monitor', 'autofix']

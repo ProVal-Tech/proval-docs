@@ -1,5 +1,6 @@
 ---
 id: '9fc4a21d-6ba4-4f20-90fd-b9c148259195'
+slug: /9fc4a21d-6ba4-4f20-90fd-b9c148259195
 title: 'Show-Prompt'
 title_meta: 'Show-Prompt'
 keywords: ['prompt', 'user', 'input', 'dialog']
@@ -95,6 +96,5 @@ Display a pop-up with a purple filled title size 25 in yellow writing and a gree
 - As an interactive message, outputs from selected buttons are returned (future development).
 
 - `.\Show-Prompt-log.txt`
-
 
 

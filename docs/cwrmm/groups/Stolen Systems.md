@@ -1,5 +1,6 @@
 ---
 id: 'c5be497c-f3b8-4fd5-8c9d-70b709aef5fb'
+slug: /c5be497c-f3b8-4fd5-8c9d-70b709aef5fb
 title: 'Stolen Systems'
 title_meta: 'Stolen Systems'
 keywords: ['Lock','Stolen','System']

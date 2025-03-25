@@ -1,5 +1,6 @@
 ---
 id: 'a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f'
+slug: /a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f
 title: 'EndPoint - WingetUpdateAll_Task_Result'
 title_meta: 'EndPoint - WingetUpdateAll_Task_Result'
 keywords: ['winget', 'task', 'result', 'scheduled', 'update']
@@ -31,7 +32,6 @@ Possible values:
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_1.png)
 
 ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Result/image_2.png)
-
 
 
 

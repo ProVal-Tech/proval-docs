@@ -1,5 +1,6 @@
 ---
 id: '6442955a-0264-44ce-aad1-9e2f973e40ec'
+slug: /6442955a-0264-44ce-aad1-9e2f973e40ec
 title: 'Bitlocker Status'
 title_meta: 'Bitlocker Status'
 keywords: ['bitlocker', 'audit', 'encryption', 'tpm', 'active-directory']
@@ -58,6 +59,5 @@ This dataview displays the Bitlocker information on all computers that have run 
 | TPM Version            | The TPM Version number.                                                                                             |
 | TPMOwned               | The TPM Owned state of the target.                                                                                  |
 | TPMActivated           | The activation state of the TPM on the target.                                                                      |
-
 
 

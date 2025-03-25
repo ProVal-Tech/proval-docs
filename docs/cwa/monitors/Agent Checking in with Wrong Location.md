@@ -1,5 +1,6 @@
 ---
 id: 'b8313365-d95d-41bd-b2fc-e3e77f4fdcf7'
+slug: /b8313365-d95d-41bd-b2fc-e3e77f4fdcf7
 title: 'Agent Checking in with Wrong Location'
 title_meta: 'Agent Checking in with Wrong Location'
 keywords: ['monitor', 'location', 'router', 'ip', 'address', 'detection']
@@ -34,6 +35,5 @@ To use a single router address without quotes, you can uncomment the line `#ON F
 ## Target
 
 Global
-
 
 

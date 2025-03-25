@@ -1,5 +1,6 @@
 ---
 id: '86520d4a-a325-4771-81dc-04c1ea2db216'
+slug: /86520d4a-a325-4771-81dc-04c1ea2db216
 title: 'Install-Microsoft365'
 title_meta: 'Install-Microsoft365'
 keywords: ['install', 'microsoft365', 'office', 'setup']
@@ -49,6 +50,5 @@ Installs Microsoft 365 using the specified XML configuration from a URL and rest
 ## Output
 - .\\Install-Microsoft365-log.txt
 - .\\Install-Microsoft365-error.txt
-
 
 

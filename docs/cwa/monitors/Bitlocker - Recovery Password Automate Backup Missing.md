@@ -1,5 +1,6 @@
 ---
 id: 'b025f2ba-7f7a-40f2-a742-908dc28d3962'
+slug: /b025f2ba-7f7a-40f2-a742-908dc28d3962
 title: 'Bitlocker - Recovery Password Automate Backup Missing'
 title_meta: 'Bitlocker - Recovery Password Automate Backup Missing'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'audit']
@@ -101,7 +102,6 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Recovery-Password-Automate-Backup-Missing/image_1.png)
-
 
 
 

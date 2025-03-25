@@ -1,5 +1,6 @@
 ---
 id: '0dc22f98-f39e-4d02-9716-19087ff35e03'
+slug: /0dc22f98-f39e-4d02-9716-19087ff35e03
 title: 'Cisco Secure Client Parameter'
 title_meta: 'Cisco Secure Client Parameter'
 keywords: ['cisco', 'secure', 'client', 'installation', 'parameter']
@@ -115,7 +116,6 @@ Different installation parameters can be created by using these parameters from 
 | ISEPosture     | False    |         | String | Custom                | Installs the ISE Posture module.                                                                  |
 | Umbrella       | False    |         | String | Custom                | Installs the Umbrella module. Requires dynamic parameters.                                        |
 | DownloadURL    | True     |         | String | Core, All, Custom, Umbrella | URL to download the [CiscoSecureClient.zip](http://ciscosecureclient.zip/) file.                 |
-
 
 
 

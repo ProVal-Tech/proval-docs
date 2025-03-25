@@ -1,5 +1,6 @@
 ---
 id: '28df6729-15d1-4784-9583-a1a223abb566'
+slug: /28df6729-15d1-4784-9583-a1a223abb566
 title: 'Toggle - Direct Connect to Office365 Feature Param'
 title_meta: 'Toggle - Direct Connect to Office365 Feature Param'
 keywords: ['office365', 'outlook', 'autodiscover', 'migration', 'registry']
@@ -52,6 +53,5 @@ Please ensure that the "ExcludeExplicitO365Endpoint" parameter has the correct v
 ## Output
 
 Script Log
-
 
 

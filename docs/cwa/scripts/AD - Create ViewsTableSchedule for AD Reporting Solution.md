@@ -1,5 +1,6 @@
 ---
 id: 'f0b2fe2b-8bd8-4d9a-9428-2123b332aa49'
+slug: /f0b2fe2b-8bd8-4d9a-9428-2123b332aa49
 title: 'AD - Create ViewsTableSchedule for AD Reporting Solution'
 title_meta: 'AD - Create ViewsTableSchedule for AD Reporting Solution'
 keywords: ['active', 'directory', 'reporting', 'solution', 'setup', 'database']
@@ -40,7 +41,6 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
-
 
 
 

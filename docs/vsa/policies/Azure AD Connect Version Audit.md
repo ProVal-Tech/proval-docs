@@ -1,5 +1,6 @@
 ---
 id: 'c4e6e974-94df-4a7f-940e-6ba95d49d4cd'
+slug: /c4e6e974-94df-4a7f-940e-6ba95d49d4cd
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'audit', 'version', 'scan', 'policy']
@@ -39,7 +40,6 @@ Policy to schedule the scan of server endpoints for Azure AD Connect software an
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 
 

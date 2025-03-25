@@ -1,5 +1,6 @@
 ---
 id: 'eb53c8e9-ec2f-4efe-a36c-eeb3f8487981'
+slug: /eb53c8e9-ec2f-4efe-a36c-eeb3f8487981
 title: 'CWM - Automate - Ticket Creation - Client'
 title_meta: 'CWM - Automate - Ticket Creation - Client'
 keywords: ['ticket', 'client', 'creation', 'alert', 'monitor']
@@ -23,6 +24,5 @@ It is imperative to incorporate the `Client ID` in the SQL query of a RAWSQL mon
 
 - Script Log
 - Client-level Ticket
-
 
 

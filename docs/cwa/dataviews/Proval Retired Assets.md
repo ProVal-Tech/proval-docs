@@ -1,5 +1,6 @@
 ---
 id: 'e02bed1f-3f3d-46bb-8522-2dbfafa9138e'
+slug: /e02bed1f-3f3d-46bb-8522-2dbfafa9138e
 title: 'Proval Retired Assets'
 title_meta: 'Proval Retired Assets'
 keywords: ['dataview', 'retired', 'assets', 'comment']
@@ -20,6 +21,5 @@ All columns are exactly the same as the stock Retired Assets dataview, with the 
 | Column  | Description                                             |
 |---------|---------------------------------------------------------|
 | Comment | The comment associated with the retirement of the agent. |
-
 
 

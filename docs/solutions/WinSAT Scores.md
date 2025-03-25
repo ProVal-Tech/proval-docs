@@ -1,5 +1,6 @@
 ---
 id: '0b82bc57-e8d3-47bf-8e9e-45ca2078499d'
+slug: /0b82bc57-e8d3-47bf-8e9e-45ca2078499d
 title: 'WinSAT Scores'
 title_meta: 'WinSAT Scores'
 keywords: ['winsat', 'custom', 'fields', 'scores', 'endpoint']
@@ -23,7 +24,6 @@ This solution is designed to use an agent procedure to update custom fields to d
 ## Implementation
 
 Custom fields need to be created prior to running the agent procedure.
-
 
 
 

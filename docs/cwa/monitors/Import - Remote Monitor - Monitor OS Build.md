@@ -1,5 +1,6 @@
 ---
 id: '4855070e-17d1-4caa-9ded-793fef9b330d'
+slug: /4855070e-17d1-4caa-9ded-793fef9b330d
 title: 'Import - Remote Monitor - Monitor OS Build.md'
 title_meta: 'Import - Remote Monitor - Monitor OS Build.md'
 keywords: ['remote', 'monitor', 'groupid', 'alert', 'query']

@@ -1,5 +1,6 @@
 ---
 id: '8adcc7b6-d30a-4d7f-ba7a-e2fc3ca6f3c2'
+slug: /8adcc7b6-d30a-4d7f-ba7a-e2fc3ca6f3c2
 title: 'Windows 11 Installation Failed'
 title_meta: 'Windows 11 Installation Failed'
 keywords: ['windows', 'monitor', 'installation', 'failed', 'custom', 'field', 'patch']
@@ -59,7 +60,6 @@ This document detects the computers where the Windows 11 Installer (Beta) task h
 
 7. Click the `Save` button at the top-right corner of the screen to create the monitor set.  
    ![Step 7 Image](../../../static/img/Windows-11-Installation-Failed/image_10.png)
-
 
 
 

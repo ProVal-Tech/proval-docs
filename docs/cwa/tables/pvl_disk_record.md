@@ -1,5 +1,6 @@
 ---
 id: '0b6f4746-2fac-46c7-bfb2-db23e734c9fc'
+slug: /0b6f4746-2fac-46c7-bfb2-db23e734c9fc
 title: 'pvl_disk_record'
 title_meta: 'pvl_disk_record'
 keywords: ['hyper-v', 'disk', 'space', 'record', 'drive', 'data']
@@ -33,6 +34,5 @@ This table stores the drive data of the Hyper-V machines at different schedules 
 | Missing       | TINYINT  | Drive status indicating whether detected in Automate or not |
 | Internal      | TINYINT  | Indicates whether the drive is internal or external/removable |
 | SSD           | TINYINT  | Indicates whether the disk is SSD or not        |
-
 
 

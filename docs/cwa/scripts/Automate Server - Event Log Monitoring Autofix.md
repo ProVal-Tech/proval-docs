@@ -1,5 +1,6 @@
 ---
 id: 'f36b7367-99c7-478b-abc9-6802182431e4'
+slug: /f36b7367-99c7-478b-abc9-6802182431e4
 title: 'Automate Server - Event Log Monitoring Autofix'
 title_meta: 'Automate Server - Event Log Monitoring Autofix'
 keywords: ['event', 'logs', 'monitoring', 'alert', 'script']

@@ -1,5 +1,6 @@
 ---
 id: '7f52c871-523c-44ae-9289-814326207896'
+slug: /7f52c871-523c-44ae-9289-814326207896
 title: 'Windows Restore Point Automation - Gather Only'
 title_meta: 'Windows Restore Point Automation - Gather Only'
 keywords: ['restore', 'point', 'audit', 'workstation', 'dataview']
@@ -32,6 +33,5 @@ This script will create a custom table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
-
 
 

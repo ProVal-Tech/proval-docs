@@ -1,5 +1,6 @@
 ---
 id: '54ed691f-e7be-4709-8967-72a4c9c782f6'
+slug: /54ed691f-e7be-4709-8967-72a4c9c782f6
 title: 'Internet Speed - Audit'
 title_meta: 'Internet Speed - Audit'
 keywords: ['internet', 'speed', 'test', 'ookla', 'cli', 'database', 'email']
@@ -60,6 +61,5 @@ Note: Please get the below MD5 file hash whitelisted for the script to work on t
 ## Sample Email
 
 ![Sample Email Image](../../../static/img/Internet-Speed---Audit/image_4.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '9e0a1ae1-c888-496b-b161-c154fc48466e'
+slug: /9e0a1ae1-c888-496b-b161-c154fc48466e
 title: 'Agent ID assignment discrepancy'
 title_meta: 'Agent ID assignment discrepancy'
 keywords: ['monitor', 'agent', 'discrepancy', 'ticket', 'automate', 'remediation']
@@ -44,6 +45,5 @@ PCs Affected: PC-2, PC-19, PC-3
 ## Target
 
 Global  
-
 
 

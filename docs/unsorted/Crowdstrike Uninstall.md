@@ -1,5 +1,6 @@
 ---
 id: 'd6f905af-3e99-4be4-a6eb-d1aa78410375'
+slug: /d6f905af-3e99-4be4-a6eb-d1aa78410375
 title: 'Crowdstrike Uninstall'
 title_meta: 'Crowdstrike Uninstall'
 keywords: ['uninstall', 'crowdstrike', 'application', 'tool', 'removal']
@@ -46,6 +47,5 @@ This document provides a script to uninstall the CrowdStrike Application.
 ## Output
 
 - Script log
-
 
 

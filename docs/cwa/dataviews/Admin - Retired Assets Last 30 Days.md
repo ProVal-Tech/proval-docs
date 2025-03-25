@@ -1,5 +1,6 @@
 ---
 id: '231e029c-9c15-4a70-ac35-399e73d0d7bb'
+slug: /231e029c-9c15-4a70-ac35-399e73d0d7bb
 title: 'Admin - Retired Assets Last 30 Days'
 title_meta: 'Admin - Retired Assets Last 30 Days'
 keywords: ['retired', 'machines', 'summary', 'comments', 'dataview']
@@ -29,6 +30,5 @@ None
 | Local Address    | Internal IP address of the machine           |
 | Retired Date    | Date when the machine was retired            |
 | Retire Comments  | Comments associated with the retirement      |
-
 
 

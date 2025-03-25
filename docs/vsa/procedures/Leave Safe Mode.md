@@ -1,5 +1,6 @@
 ---
 id: 'c4d65870-8eb5-4320-8bbd-ceeb423cb2e3'
+slug: /c4d65870-8eb5-4320-8bbd-ceeb423cb2e3
 title: 'Leave Safe Mode'
 title_meta: 'Leave Safe Mode'
 keywords: ['reboot', 'endpoint', 'safe', 'mode', 'normal']
@@ -25,6 +26,5 @@ This document outlines the procedure for rebooting an endpoint from safe mode in
 ## Process
 
 This section describes the steps to reboot an endpoint from safe mode into normal mode.
-
 
 

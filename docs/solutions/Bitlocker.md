@@ -1,5 +1,6 @@
 ---
 id: 'f41e4d71-7074-4c28-8246-b8e3036c1212'
+slug: /f41e4d71-7074-4c28-8246-b8e3036c1212
 title: 'Bitlocker'
 title_meta: 'Bitlocker'
 keywords: ['bitlocker', 'encryption', 'security', 'audit', 'monitoring']
@@ -144,7 +145,6 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](<../cwa/scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
-
 
 
 

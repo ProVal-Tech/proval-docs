@@ -1,5 +1,6 @@
 ---
 id: '417bc415-aa42-401f-b748-0f2715e4a239'
+slug: /417bc415-aa42-401f-b748-0f2715e4a239
 title: 'MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions'
 title_meta: 'MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions'
 keywords: ['permissions', 'database', 'users', 'hosted', 'on-prem', 'automation']
@@ -26,7 +27,6 @@ The script is converted to a client script and should be scheduled to run every 
 | Name              | Description                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------|
 | UpdateStatements   | This variable will store the SQL result, which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
-
 
 
 

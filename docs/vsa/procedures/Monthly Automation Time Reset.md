@@ -1,5 +1,6 @@
 ---
 id: '1552dec9-04ae-484f-b217-922542928af3'
+slug: /1552dec9-04ae-484f-b217-922542928af3
 title: 'Monthly Automation Time Reset'
 title_meta: 'Monthly Automation Time Reset'
 keywords: ['monthly', 'cf', 'reset', 'automation', 'procedure']
@@ -31,7 +32,6 @@ Sets the Monthly CF to 0.
 ## Output
 
 None.
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '84d8b11d-aea7-4fe8-9811-2041d0b7eda2'
+slug: /84d8b11d-aea7-4fe8-9811-2041d0b7eda2
 title: 'Remove Stagnant Agents'
 title_meta: 'Remove Stagnant Agents'
 keywords: ['stagnant', 'agents', 'removal', 'vsa', 'automation']
@@ -49,6 +50,5 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
 
 

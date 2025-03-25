@@ -1,5 +1,6 @@
 ---
 id: '918c1a66-54b8-4468-9e4b-5b7db918b77c'
+slug: /918c1a66-54b8-4468-9e4b-5b7db918b77c
 title: 'Get DHCP Server Scope Information'
 title_meta: 'Get DHCP Server Scope Information'
 keywords: ['dhcp', 'server', 'database', 'report', 'information']
@@ -27,6 +28,5 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Output
 
 - Table: `plugin_proval_dhcp_statistics`
-
 
 

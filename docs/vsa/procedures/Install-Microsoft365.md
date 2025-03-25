@@ -1,5 +1,6 @@
 ---
 id: '0c6a208d-d18f-49a5-9244-c5f149c47c0d'
+slug: /0c6a208d-d18f-49a5-9244-c5f149c47c0d
 title: 'Install-Microsoft365'
 title_meta: 'Install-Microsoft365'
 keywords: ['microsoft', '365', 'installation', 'odt', 'xml', 'configuration']
@@ -62,6 +63,5 @@ Location of output for log, result, and error files.
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
-
 
 

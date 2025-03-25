@@ -1,5 +1,6 @@
 ---
 id: 'd53bd821-ed9a-4779-8113-2994eaa7197c'
+slug: /d53bd821-ed9a-4779-8113-2994eaa7197c
 title: 'Set-DisplayScaling'
 title_meta: 'Set-DisplayScaling'
 keywords: ['display', 'scaling', 'resolution', 'windows']
@@ -36,6 +37,5 @@ To set the custom display scaling, use the following command:
 ## Output
 - `.\Set-DisplayScaling-log.txt`
 - `.\Set-DisplayScaling-Error.txt`
-
 
 

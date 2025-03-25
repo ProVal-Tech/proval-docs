@@ -1,5 +1,6 @@
 ---
 id: 'd06a0253-328e-4a80-860f-b1b5055b9dda'
+slug: /d06a0253-328e-4a80-860f-b1b5055b9dda
 title: 'Repair - CW Control Client'
 title_meta: 'Repair - CW Control Client'
 keywords: ['connectwise', 'automate', 'offline', 'repair', 'agent', 'monitor', 'script']
@@ -37,6 +38,5 @@ The ConnectWise Automate autofix script, CWM - Control - Script - CW Control - R
   ![Schedule](../../static/img/Repair---CW-Control-Client/image_1.png)  
 - Update the run time of the [CWM - Control - Monitor - Agent - CW Control Needs Repair](<../cwa/monitors/Agent - CW Control Needs Repair.md>) monitor set to run 20-30 minutes after the scheduled script run.  
   ![Update Run Time](../../static/img/Repair---CW-Control-Client/image_2.png)  
-
 
 

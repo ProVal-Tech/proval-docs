@@ -1,5 +1,6 @@
 ---
 id: '9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5'
+slug: /9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5
 title: 'Sentinel One Settings Verification'
 title_meta: 'Sentinel One Settings Verification'
 keywords: ['sentinelone', 'token', 'verification', 'connectwise', 'automate']
@@ -97,5 +98,4 @@ SentinelOne URL should be: <URL>
 SentinelOne Site key should be: <LicenseKey>
 To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
-
 

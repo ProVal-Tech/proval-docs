@@ -1,5 +1,6 @@
 ---
 id: 'bbeeb6dd-3c9b-49f0-ae6d-ef6f543d2174'
+slug: /bbeeb6dd-3c9b-49f0-ae6d-ef6f543d2174
 title: 'Patch Compliance - CU Audit - Workstations'
 title_meta: 'Patch Compliance - CU Audit - Workstations'
 keywords: ['patch', 'compliance', 'audit', 'workstations', 'report']
@@ -20,6 +21,5 @@ This report is dependent on the following items:
 - Report Center being installed and configured
 - [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
 - [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104)
-
 
 

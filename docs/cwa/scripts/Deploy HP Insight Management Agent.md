@@ -1,5 +1,6 @@
 ---
 id: 'cb0d8de7-88e2-4406-b2fb-7a7ee338ce37'
+slug: /cb0d8de7-88e2-4406-b2fb-7a7ee338ce37
 title: 'Deploy HP Insight Management Agent'
 title_meta: 'Deploy HP Insight Management Agent'
 keywords: ['hpe', 'management', 'agent', 'installation', 'windows']
@@ -51,6 +52,5 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
-
 
 

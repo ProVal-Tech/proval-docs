@@ -1,5 +1,6 @@
 ---
 id: '68e362d9-521f-417b-93e3-81adc169b559'
+slug: /68e362d9-521f-417b-93e3-81adc169b559
 title: 'Microsoft 365 - Set Update Channel - Current'
 title_meta: 'Microsoft 365 - Set Update Channel - Current'
 keywords: ['microsoft', '365', 'update', 'registry', 'channel']
@@ -28,7 +29,6 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](<./
 ## Output
 
 - Script log
-
 
 
 

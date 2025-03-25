@@ -1,5 +1,6 @@
 ---
 id: 'f4a08fe7-fb91-4bfb-9650-fb8da3ebd5b2'
+slug: /f4a08fe7-fb91-4bfb-9650-fb8da3ebd5b2
 title: 'Script Permissions - Set Properties'
 title_meta: 'Script Permissions - Set Properties'
 keywords: ['permissions', 'scripts', 'user-classes', 'access', 'security']
@@ -90,6 +91,5 @@ In essence, this script ensures proper management of permissions for scripts wit
 | `SSP_Script_Folder_Ids`       | 0            | True     | Stores the IDs of the Script Folder(s) of the scripts for which script permissions need to be restricted. |
 | `SSP_View_Permission_User_Classes` | Super Admin | True     | Stores the name(s) of the User Class(es) that require view permissions for the scripts.                  |
 | `SSP_Edit_Permission_User_Classes` | Super Admin | True     | Stores the name(s) of the User Class(es) that require edit permissions for the scripts.                  |
-
 
 

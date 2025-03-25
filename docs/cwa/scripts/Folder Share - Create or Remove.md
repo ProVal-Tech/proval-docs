@@ -1,5 +1,6 @@
 ---
 id: 'a58ee59c-988e-4c12-a97b-c5e97f22905e'
+slug: /a58ee59c-988e-4c12-a97b-c5e97f22905e
 title: 'Folder Share - Create or Remove'
 title_meta: 'Folder Share - Create or Remove'
 keywords: ['shared', 'folders', 'windows', 'script', 'permissions']
@@ -56,6 +57,5 @@ The script will execute a PowerShell script, passing the above parameters. The s
 ## Output
 
 Script log messages.
-
 
 

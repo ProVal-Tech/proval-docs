@@ -1,5 +1,6 @@
 ---
 id: '749e13b3-d289-4622-87fa-5f1bae94b00d'
+slug: /749e13b3-d289-4622-87fa-5f1bae94b00d
 title: 'Agent - Shutdown Unexpected'
 title_meta: 'Agent - Shutdown Unexpected'
 keywords: ['monitor', 'shutdown', 'windows', 'event', 'server']
@@ -23,6 +24,5 @@ Automate must be gathering event logs into the database for this internal monito
 Primarily, this monitor targets servers, but it will work properly for workstations if this data is of value to the MSP.  
 **Servers** - Should be run on servers  
 **Windows Machines** - Should be run on all Windows machines  
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '43d84d2d-f385-4bd4-938a-0989956a8a38'
+slug: /43d84d2d-f385-4bd4-938a-0989956a8a38
 title: 'Power Plan - Remove'
 title_meta: 'Power Plan - Remove'
 keywords: ['automate', 'epm', 'powerplan', 'configuration', 'script']
@@ -49,6 +50,5 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 
 - Script Log
 - Dataview
-
 
 

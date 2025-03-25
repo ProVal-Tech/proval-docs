@@ -1,5 +1,6 @@
 ---
 id: '1935d4ab-345b-46a0-ad2a-167c9a86532c'
+slug: /1935d4ab-345b-46a0-ad2a-167c9a86532c
 title: 'Universal Office Uninstaller'
 title_meta: 'Universal Office Uninstaller'
 keywords: ['uninstall', 'microsoft', 'office', 'corruption', 'shortcut']
@@ -32,6 +33,5 @@ This script downloads the offscrub files from the LTShare and then attempts to u
 ## Output
 
 - Script log
-
 
 

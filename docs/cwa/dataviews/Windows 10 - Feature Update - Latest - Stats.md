@@ -1,5 +1,6 @@
 ---
 id: '37fe5efc-3b1d-45d8-906d-0388baf6caac'
+slug: /37fe5efc-3b1d-45d8-906d-0388baf6caac
 title: 'Windows 10 - Feature Update - Latest - Stats'
 title_meta: 'Windows 10 - Feature Update - Latest - Stats'
 keywords: ['windows', 'update', 'statistics', 'feature', 'install', 'report']
@@ -38,7 +39,6 @@ This document provides statistics regarding the Windows 10 - Feature Update - La
 | Success Count      | Displays the total number of times the Windows 10 Feature Update - Latest script was run and returned a successful result for this version. |
 | Failure Count      | Displays the total number of times the Windows 10 Feature Update - Latest script was run and returned a failed result for this version. |
 | Total Attempts      | Displays the total number of times the Windows 10 Feature Update attempted to push that Windows version on the specific computer. |
-
 
 
 

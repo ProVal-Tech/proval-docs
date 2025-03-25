@@ -1,5 +1,6 @@
 ---
 id: '30298aaf-ef66-4fd2-b5af-25f138e55b71'
+slug: /30298aaf-ef66-4fd2-b5af-25f138e55b71
 title: 'CWA Dataview Documentation Template'
 title_meta: 'CWA Dataview Documentation Template'
 keywords: ['dataview', 'dependencies', 'columns', 'itglue', 'documentation']
@@ -27,6 +28,5 @@ This section should list the ITGlue documents found in the Related Items sidebar
 | Column                                        | Description                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | The display name of the column in the dataview. | Information about what this column is displaying. |
-
 
 

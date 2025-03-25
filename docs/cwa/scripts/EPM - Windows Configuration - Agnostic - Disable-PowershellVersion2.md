@@ -1,5 +1,6 @@
 ---
 id: '1691cc51-ef36-451d-9086-ca69c6ef85d8'
+slug: /1691cc51-ef36-451d-9086-ca69c6ef85d8
 title: 'EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2'
 title_meta: 'EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2'
 keywords: ['disable', 'powershell', 'windows', 'feature', 'installation']
@@ -51,6 +52,5 @@ The content checks for a version of PowerShell greater than v2. If one is presen
 | ConnectWise RMM             |                                           |
 | Kaseya                      |                                           |
 | Datto RMM                   |                                           |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cab8dbad-3675-4e65-863e-dd88a0391fc1'
+slug: /cab8dbad-3675-4e65-863e-dd88a0391fc1
 title: 'Install Webroot SecureAnyWhere'
 title_meta: 'Install Webroot SecureAnyWhere'
 keywords: ['webroot', 'plugin', 'installation', 'deployment', 'automate']
@@ -58,6 +59,5 @@ Document the various variables in the script. Delete any section that is not rel
          - Install for Mac, verify, then exit.
       2. Windows
          - Install for Windows, verify, and exit.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'bd441da7-fe79-4ee5-afbf-d2fd46978885'
+slug: /bd441da7-fe79-4ee5-afbf-d2fd46978885
 title: 'UpdateHostFile'
 title_meta: 'UpdateHostFile'
 keywords: ['hosts', 'ip', 'system', 'update']
@@ -17,7 +18,6 @@ Updates System Hosts File
 
 - **ip**  
 - **host**  
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '6cfe8a08-851e-42fe-8999-c4526007f572'
+slug: /6cfe8a08-851e-42fe-8999-c4526007f572
 title: 'Agent Not Patched  45 Days - Patch History'
 title_meta: 'Agent Not Patched  45 Days - Patch History'
 keywords: ['windows', 'updates', 'monitor', 'patch', 'security']
@@ -62,6 +63,5 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
-
 
 

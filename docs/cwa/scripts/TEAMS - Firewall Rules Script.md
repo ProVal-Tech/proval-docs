@@ -1,5 +1,6 @@
 ---
 id: '12806812-6720-41bc-9b7c-632fe1620db8'
+slug: /12806812-6720-41bc-9b7c-632fe1620db8
 title: 'TEAMS - Firewall Rules Script'
 title_meta: 'TEAMS - Firewall Rules Script'
 keywords: ['teams', 'firewall', 'users', 'rules', 'automation']
@@ -39,6 +40,5 @@ This script executes PowerShell commands that set rules for Teams for all users 
 ## Output
 
 - Script log
-
 
 

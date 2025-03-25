@@ -1,5 +1,6 @@
 ---
 id: '57b02fcd-0a4e-4c90-93d8-f81caa4c0835'
+slug: /57b02fcd-0a4e-4c90-93d8-f81caa4c0835
 title: 'HuntressAgent Service'
 title_meta: 'HuntressAgent Service'
 keywords: ['huntress', 'service', 'monitoring', 'alerts', 'rmm']
@@ -50,6 +51,5 @@ This document provides instructions to set up alerts on machines if the Huntress
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![](../../../static/img/HuntressAgent-Service/image_9.png)  
-
 
 

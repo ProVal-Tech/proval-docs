@@ -1,5 +1,6 @@
 ---
 id: '5e2c781f-761a-42f8-8d0a-d2866c2318b5'
+slug: /5e2c781f-761a-42f8-8d0a-d2866c2318b5
 title: 'Out of Date Cumulative Updates Autofix without Ticketing'
 title_meta: 'Out of Date Cumulative Updates Autofix without Ticketing'
 keywords: ['autofix', 'cumulative', 'update', 'installation', 'monitor']
@@ -48,7 +49,6 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Output
 
 - Script Log
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd7f9015f-0d7c-4bfb-b624-4600f4774b65'
+slug: /d7f9015f-0d7c-4bfb-b624-4600f4774b65
 title: 'SWM - Software - InstallUpdate Sonicwall NetExtender Winget'
 title_meta: 'SWM - Software - InstallUpdate Sonicwall NetExtender Winget'
 keywords: ['sonicwall', 'netextender', 'winget', 'install', 'update']
@@ -35,6 +36,5 @@ This script performs the SonicWall NetExtender install/update using Winget. It c
 ## Output
 
 - Script Log
-
 
 

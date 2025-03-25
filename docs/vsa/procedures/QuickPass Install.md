@@ -1,5 +1,6 @@
 ---
 id: 'be55048c-2522-408a-b4a9-ba42e5fbcbe5'
+slug: /be55048c-2522-408a-b4a9-ba42e5fbcbe5
 title: 'QuickPass Install'
 title_meta: 'QuickPass Install'
 keywords: ['image', 'insertion', 'guide', 'documentation']
@@ -18,6 +19,5 @@ unlisted: false
 <div class='text-section scrollable'>
 
 </div>
-
 
 

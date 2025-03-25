@@ -1,5 +1,6 @@
 ---
 id: '5ec5392b-3704-4969-aab6-7a59a603b3ea'
+slug: /5ec5392b-3704-4969-aab6-7a59a603b3ea
 title: 'plugin_proval_Mapped_Drive_CurrentUser'
 title_meta: 'plugin_proval_Mapped_Drive_CurrentUser'
 keywords: ['mapped', 'drive', 'audit', 'current', 'user']
@@ -40,6 +41,5 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_Mapped_Drive_CurrentUser` (
   CONSTRAINT `plugin_proval_Mapped_Drive_CurrentUser_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
 
 

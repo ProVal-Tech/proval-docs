@@ -1,5 +1,6 @@
 ---
 id: 'a341f9a4-e07e-4417-84fb-06162d7fb52b'
+slug: /a341f9a4-e07e-4417-84fb-06162d7fb52b
 title: 'Log4JLog4Shell Auditing'
 title_meta: 'Log4JLog4Shell Auditing'
 keywords: ['log4shell', 'vulnerabilities', 'automate', 'agents', 'security']
@@ -24,6 +25,5 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>) | Script       | This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. |
 | [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](<../cwa/dataviews/Log4J - Log4Shell - Detections.md>) | Dataview    | Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit. |
 | [CWM - Automate - Script - Log4J Remediation Residue Removal](<../cwa/scripts/Log4J Remediation Residue Removal.md>) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](<../cwa/scripts/Log4J (Log4Shell) File Scan.md>) script, including the `Everything` service. |
-
 
 

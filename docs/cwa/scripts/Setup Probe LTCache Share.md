@@ -1,5 +1,6 @@
 ---
 id: '06ceeffc-d91b-4936-9889-101e02b683ca'
+slug: /06ceeffc-d91b-4936-9889-101e02b683ca
 title: 'Setup Probe LTCache Share'
 title_meta: 'Setup Probe LTCache Share'
 keywords: ['ltcache', 'probe', 'credentials', 'location', 'settings', 'diskspace', 'folder', 'share', 'local', 'account']
@@ -46,6 +47,5 @@ The location must have a probe enabled; otherwise, the script will exit with an 
 ## Output
 
 Script log
-
 
 

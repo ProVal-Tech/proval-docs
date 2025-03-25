@@ -1,5 +1,6 @@
 ---
 id: '72784e6a-7954-4965-871a-ab9a0a13d298'
+slug: /72784e6a-7954-4965-871a-ab9a0a13d298
 title: 'Soji Disk Cleaner'
 title_meta: 'Soji Disk Cleaner'
 keywords: ['disk', 'cleanup', 'utility', 'soji', 'endpoint']
@@ -62,6 +63,5 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - etc.
 
 Attach the content XML VSA Export to this document.
-
 
 

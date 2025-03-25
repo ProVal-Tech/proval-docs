@@ -1,5 +1,6 @@
 ---
 id: 'e7b258e9-436c-499c-8532-3ba7b3d8e6e3'
+slug: /e7b258e9-436c-499c-8532-3ba7b3d8e6e3
 title: 'SentinelOne Deployment'
 title_meta: 'SentinelOne Deployment'
 keywords: ['sentinelone', 'deployment', 'windows', 'linux', 'mac', 'group', 'criteria']
@@ -51,6 +52,5 @@ Once you have added the above criteria, click the Save button to save the Group.
 ![Image](../../../static/img/SentinelOne-Deployment/image_5.png)  
 
 ![Image](../../../static/img/SentinelOne-Deployment/image_6.png)  
-
 
 

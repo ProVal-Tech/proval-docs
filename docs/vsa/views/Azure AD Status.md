@@ -1,5 +1,6 @@
 ---
 id: 'b210a5c3-0c35-4a40-9c04-51fbadd59e8a'
+slug: /b210a5c3-0c35-4a40-9c04-51fbadd59e8a
 title: 'Azure AD Status'
 title_meta: 'Azure AD Status'
 keywords: ['azure', 'ad', 'view', 'machines', 'custom', 'field']
@@ -28,7 +29,6 @@ List all filters applied to this view.
 |----------------------------------|------------------|--------------|
 | cPVAL Azure AD Joined            | Y                | *TRUE*      |
 | cPVAL Azure AD Registered        | Y                | *TRUE*      |
-
 
 
 

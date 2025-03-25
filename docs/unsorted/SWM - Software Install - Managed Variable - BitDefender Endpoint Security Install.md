@@ -1,5 +1,6 @@
 ---
 id: '0026e64a-84c3-4f40-a2c8-07a05359b475'
+slug: /0026e64a-84c3-4f40-a2c8-07a05359b475
 title: 'SWM - Software Install - Managed Variable - BitDefender Endpoint Security Install'
 title_meta: 'SWM - Software Install - Managed Variable - BitDefender Endpoint Security Install'
 keywords: ['data', 'managed', 'variable', 'vsa']
@@ -27,6 +28,5 @@ unlisted: false
 ### Provide an example of the data contained within the variable, including any required syntax.
 
 </div>
-
 
 

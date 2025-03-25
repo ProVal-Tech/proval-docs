@@ -1,5 +1,6 @@
 ---
 id: 'caaedea1-c322-4a36-833a-62e421c95e2a'
+slug: /caaedea1-c322-4a36-833a-62e421c95e2a
 title: 'BitDefender Endpoint Security Install'
 title_meta: 'BitDefender Endpoint Security Install'
 keywords: ['bitdefender', 'endpoint', 'security', 'installation', 'msi']
@@ -45,5 +46,4 @@ This document outlines the installation of BitDefender Endpoint Security Tools o
 ## Output
 
 Agent procedure log.
-
 

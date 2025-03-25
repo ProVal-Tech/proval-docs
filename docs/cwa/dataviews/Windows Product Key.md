@@ -1,5 +1,6 @@
 ---
 id: 'ee8b2ed6-54f5-42fc-8764-d03473eafe4f'
+slug: /ee8b2ed6-54f5-42fc-8764-d03473eafe4f
 title: 'Windows Product Key'
 title_meta: 'Windows Product Key'
 keywords: ['windows', 'product', 'key', 'client', 'location', 'computer', 'operating', 'system', 'lastcontact']
@@ -27,7 +28,6 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | Operating System    | Operating system name of the agent                  |
 | LastContact         | The last contact of the agent with ConnectWise Automate |
 | Windows Product Key  | Windows product key information of the agent        |
-
 
 
 

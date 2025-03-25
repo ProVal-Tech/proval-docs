@@ -1,5 +1,6 @@
 ---
 id: '6a70396e-c7cc-49d4-9a06-620e2bd462e9'
+slug: /6a70396e-c7cc-49d4-9a06-620e2bd462e9
 title: 'Autofix - Out of Date Cumulative Update'
 title_meta: 'Autofix - Out of Date Cumulative Update'
 keywords: ['cumulative', 'update', 'autofix', 'windows', 'reboot']
@@ -85,7 +86,6 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 4. Create and deploy the following tasks:  
    - [Out of Date Cumulative Update (Autofix)](<../cwrmm/tasks/Out of Date Cumulative Update (Autofix).md>)  
    - [Out of Date Cumulative Update (Post Reboot Verification)](<../cwrmm/tasks/Out of Date Cumulative Update (Post Reboot Verification).md>)  
-
 
 
 

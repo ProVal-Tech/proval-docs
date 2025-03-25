@@ -1,5 +1,6 @@
 ---
 id: '02f3c288-d5e4-4b45-9020-e47f41a254af'
+slug: /02f3c288-d5e4-4b45-9020-e47f41a254af
 title: 'Probe Detected Devices Missing Automate Agents'
 title_meta: 'Probe Detected Devices Missing Automate Agents'
 keywords: ['device', 'monitor', 'automate', 'agent', 'deployment', 'readiness', 'network', 'probe']

@@ -1,5 +1,6 @@
 ---
 id: '2750b9e3-6916-4dbc-85a8-2c840d636b32'
+slug: /2750b9e3-6916-4dbc-85a8-2c840d636b32
 title: 'Email Creation - Ping Monitor'
 title_meta: 'Email Creation - Ping Monitor'
 keywords: ['email', 'ping', 'monitor', 'alert', 'ticket']
@@ -67,6 +68,5 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
-
 
 

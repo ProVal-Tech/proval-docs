@@ -1,5 +1,6 @@
 ---
 id: '29949711-0cb3-49fb-b31a-9dbe0ce6b9f6'
+slug: /29949711-0cb3-49fb-b31a-9dbe0ce6b9f6
 title: 'Microsoft Office - Uninstall'
 title_meta: 'Microsoft Office - Uninstall'
 keywords: ['uninstall', 'office', 'silent', 'procedure', 'agent']
@@ -68,6 +69,5 @@ The procedure uses Invoke-OffScrub.
 ## Output
 
 AP Log
-
 
 

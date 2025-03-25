@@ -1,5 +1,6 @@
 ---
 id: '0b85cd78-2ed9-46b0-bf7a-6204226192bb'
+slug: /0b85cd78-2ed9-46b0-bf7a-6204226192bb
 title: 'Automate Database Maintenance - User Class Permission Sync'
 title_meta: 'Automate Database Maintenance - User Class Permission Sync'
 keywords: ['automate', 'database', 'maintenance', 'userclass', 'permissions', 'sync']
@@ -38,6 +39,5 @@ This script is a function script called from [CWM - Automate - Script - Automate
 ## Output
 
 This script will add the logs to the log variable.
-
 
 

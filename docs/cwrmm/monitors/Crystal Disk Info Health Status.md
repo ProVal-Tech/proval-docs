@@ -1,5 +1,6 @@
 ---
 id: '8ceb86c8-23b2-4a95-b920-f78e446d9e59'
+slug: /8ceb86c8-23b2-4a95-b920-f78e446d9e59
 title: 'Crystal Disk Info Health Status'
 title_meta: 'Crystal Disk Info Health Status'
 keywords: ['monitor', 'alert', 'disk', 'health', 'custom', 'field']
@@ -54,6 +55,5 @@ The monitor set will generate an alert for computers in which the custom field [
 
 - [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>)  
 - [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../tasks/Get Crystal Disk Info (Disk Health).md>)
-
 
 

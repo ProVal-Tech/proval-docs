@@ -1,5 +1,6 @@
 ---
 id: '75173959-6166-4520-838a-f960ab0070ea'
+slug: /75173959-6166-4520-838a-f960ab0070ea
 title: 'Set NUMA VM Status'
 title_meta: 'Set NUMA VM Status'
 keywords: ['numa', 'hyper-v', 'resources', 'limits', 'performance']
@@ -31,6 +32,5 @@ The script runs a PowerShell script to get the NumaStatus. The PowerShell then h
 ## Output
 
 - Script state
-
 
 

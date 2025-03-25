@@ -1,5 +1,6 @@
 ---
 id: '1cfbe430-0cbd-4abf-861d-4884632b7705'
+slug: /1cfbe430-0cbd-4abf-861d-4884632b7705
 title: 'Track Repaired Agents'
 title_meta: 'Track Repaired Agents'
 keywords: ['monitor', 'repairs', 'connectwise', 'automate', 'script', 'custom', 'table', 'dataview']
@@ -22,6 +23,5 @@ This is a function script run by the [CWM - Automate - Script - Automate Agent -
 
 - Custom Table
 - Dataview
-
 
 

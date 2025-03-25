@@ -1,5 +1,6 @@
 ---
 id: '6b8a4b4e-4df8-4f97-af11-ee8702e8ccbd'
+slug: /6b8a4b4e-4df8-4f97-af11-ee8702e8ccbd
 title: 'Multiple Antivirus'
 title_meta: 'Multiple Antivirus'
 keywords: ['antivirus', 'monitor', 'windows', 'alert', 'security']

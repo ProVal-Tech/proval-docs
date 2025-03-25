@@ -1,5 +1,6 @@
 ---
 id: 'a36b0952-ad48-4891-b535-c70d0b2e235b'
+slug: /a36b0952-ad48-4891-b535-c70d0b2e235b
 title: 'Agent - Duplicates Based on Serial Number'
 title_meta: 'Agent - Duplicates Based on Serial Number'
 keywords: ['duplicate', 'machines', 'automate', 'dataview', 'licensing']
@@ -27,6 +28,5 @@ The purpose of the dataview is to locate duplicate machines within Automate. The
 | Serial Numbers   | Displays the serial number of the duplicate machines  |
 | Mac Addresses    | Displays the MAC address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
-
 
 

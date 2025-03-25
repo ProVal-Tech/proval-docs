@@ -1,5 +1,6 @@
 ---
 id: '6942d20e-8606-4af2-bae5-7525935a2bfd'
+slug: /6942d20e-8606-4af2-bae5-7525935a2bfd
 title: 'Set-DNSServersScavengingSetting'
 title_meta: 'Set-DNSServersScavengingSetting'
 keywords: ['dns', 'scavenging', 'configuration', 'networking']
@@ -48,6 +49,5 @@ Log Files:
 .\Set-DNSServerScavengingSettings-log.txt
 .\Set-DNSServerScavengingSettings-error.txt
 ```
-
 
 

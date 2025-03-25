@@ -1,5 +1,6 @@
 ---
 id: 'bfcc2aec-a83b-49ac-bfbe-274cbf112a6e'
+slug: /bfcc2aec-a83b-49ac-bfbe-274cbf112a6e
 title: 'DUO Auth Proxy - InstallUpdate Latest Version'
 title_meta: 'DUO Auth Proxy - InstallUpdate Latest Version'
 keywords: ['duo', 'install', 'upgrade', 'authentication', 'proxy', 'script']
@@ -296,7 +297,6 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
-
 
 
 

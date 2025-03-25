@@ -1,5 +1,6 @@
 ---
 id: 'fffa01c1-5e44-4239-a69d-623e4a77e789'
+slug: /fffa01c1-5e44-4239-a69d-623e4a77e789
 title: 'User Session Audit'
 title_meta: 'User Session Audit'
 keywords: ['sql', 'table', 'audit', 'sessions', 'power', 'shell', 'users']
@@ -37,6 +38,5 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Output
 
 - Script log
-
 
 

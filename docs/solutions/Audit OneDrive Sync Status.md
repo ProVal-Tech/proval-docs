@@ -1,5 +1,6 @@
 ---
 id: 'ddfef387-6914-46a5-a805-12dd035abe17'
+slug: /ddfef387-6914-46a5-a805-12dd035abe17
 title: 'Audit OneDrive Sync Status'
 title_meta: 'Audit OneDrive Sync Status'
 keywords: ['onedrive', 'sync', 'status', 'monitor', 'script']
@@ -87,6 +88,5 @@ Configure the solution as outlined below:
   - [Internal Monitor - ProVal - Production - OneDrive Sync Failures](<../cwa/monitors/OneDrive Sync Failures.md>)  
     - Alert Template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
-
 
 

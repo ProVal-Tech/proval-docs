@@ -1,5 +1,6 @@
 ---
 id: '3d96450d-5de8-4157-9ec8-d468e446f51a'
+slug: /3d96450d-5de8-4157-9ec8-d468e446f51a
 title: 'SWM - Software Uninstall - Uninstall Kaseya Agent and Live Connect'
 title_meta: 'SWM - Software Uninstall - Uninstall Kaseya Agent and Live Connect'
 keywords: ['kaseya', 'agent', 'live', 'connect', 'windows', 'uninstallation']
@@ -26,6 +27,5 @@ The purpose of the script is to remove the `Kaseya Agent` and `Live Connect` app
 ## Output
 
 - Script Log
-
 
 

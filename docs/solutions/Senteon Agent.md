@@ -1,5 +1,6 @@
 ---
 id: '5cc5165d-4314-499b-9357-299f3b04f402'
+slug: /5cc5165d-4314-499b-9357-299f3b04f402
 title: 'Senteon Agent'
 title_meta: 'Senteon Agent'
 keywords: ['senteon', 'agent', 'install', 'uninstall', 'endpoint']
@@ -37,6 +38,5 @@ This document allows for the installation and uninstallation of the Senteon Agen
    - [Agent Procedure - Senteon - Install](<../vsa/procedures/Senteon - Install.md>)  
    - [Agent Procedure - Senteon - Uninstall](<../vsa/procedures/Senteon - Uninstall.md>)  
    - [Agent Procedure - Check Senteon Installed CF](<../vsa/procedures/Check Senteon Installed CF.md>)  
-
 
 

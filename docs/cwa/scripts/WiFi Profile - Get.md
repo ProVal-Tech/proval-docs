@@ -1,5 +1,6 @@
 ---
 id: '95ecf8ed-f2ac-46fa-ad7a-05894d0743be'
+slug: /95ecf8ed-f2ac-46fa-ad7a-05894d0743be
 title: 'WiFi Profile - Get'
 title_meta: 'WiFi Profile - Get'
 keywords: ['wifi', 'profile', 'ssid', 'export', 'database']
@@ -40,6 +41,5 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 - Script log
 - Table `plugin_proval_wifi_profiles`
-
 
 

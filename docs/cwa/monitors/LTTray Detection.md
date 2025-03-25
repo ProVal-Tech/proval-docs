@@ -1,5 +1,6 @@
 ---
 id: '28ddee2c-510a-4557-941a-168d155eacdc'
+slug: /28ddee2c-510a-4557-941a-168d155eacdc
 title: 'LTTray Detection'
 title_meta: 'LTTray Detection'
 keywords: ['lttray', 'port', 'registry', 'monitor', 'windows']

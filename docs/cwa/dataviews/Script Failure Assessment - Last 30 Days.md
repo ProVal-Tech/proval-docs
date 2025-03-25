@@ -1,5 +1,6 @@
 ---
 id: '4a4d8ffa-760b-4e17-a377-df522ff0ba34'
+slug: /4a4d8ffa-760b-4e17-a377-df522ff0ba34
 title: 'Script Failure Assessment - Last 30 Days'
 title_meta: 'Script Failure Assessment - Last 30 Days'
 keywords: ['script', 'failure', 'analysis', 'retention', 'dataview']
@@ -41,6 +42,5 @@ This Dataview is similar to the [Script Failure Assessment](<./Script Failure As
 | First Failure Date           | Date of the first failure                                                                            |
 | Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
-
 
 

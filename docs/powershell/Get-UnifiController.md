@@ -1,5 +1,6 @@
 ---
 id: 'd5d5fe24-6009-48cf-9d51-ac4763a1be7f'
+slug: /d5d5fe24-6009-48cf-9d51-ac4763a1be7f
 title: 'Get-UnifiController'
 title_meta: 'Get-UnifiController'
 keywords: ['unifi', 'controller', 'network', 'api']
@@ -37,6 +38,5 @@ Returns a `unifiController` object containing all site data.
 Location of output for log, result, and error files.
 
 `System.Object`
-
 
 

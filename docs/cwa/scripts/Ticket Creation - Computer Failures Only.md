@@ -1,5 +1,6 @@
 ---
 id: 'e14bf501-f10d-44d7-a19a-2284fd5c5cc9'
+slug: /e14bf501-f10d-44d7-a19a-2284fd5c5cc9
 title: 'Ticket Creation - Computer Failures Only'
 title_meta: 'Ticket Creation - Computer Failures Only'
 keywords: ['ticket', 'creation', 'computer', 'failures', 'alert']
@@ -14,6 +15,5 @@ unlisted: false
 This document is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, with the exception that it refrains from executing actions for monitors with `SUCCESS` or `WARNING` statuses.
 
 It should only be executed from an alert template. Currently, it is implemented in the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
-
 
 

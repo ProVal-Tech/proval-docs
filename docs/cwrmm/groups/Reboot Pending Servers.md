@@ -1,5 +1,6 @@
 ---
 id: 'd6235892-7f62-4a75-83ef-c6c01cc43898'
+slug: /d6235892-7f62-4a75-83ef-c6c01cc43898
 title: 'Reboot Pending Servers'
 title_meta: 'Reboot Pending Servers'
 keywords: ['reboot', 'servers', 'windows', 'dynamic', 'group', 'endpoint']
@@ -39,7 +40,6 @@ This group contains the server endpoints where a reboot is pending. It detects o
 - The agent available equals True.
 - The OS contains any of Windows 2016, Windows 2019, or Windows 2022.
 - The Exclude reboot custom field equals False.
-
 
 
 

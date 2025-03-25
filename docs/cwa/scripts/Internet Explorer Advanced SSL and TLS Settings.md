@@ -1,5 +1,6 @@
 ---
 id: '1adb82ca-d3cb-4319-9319-5d22b569ed6f'
+slug: /1adb82ca-d3cb-4319-9319-5d22b569ed6f
 title: 'Internet Explorer Advanced SSL and TLS Settings'
 title_meta: 'Internet Explorer Advanced SSL and TLS Settings'
 keywords: ['ssl', 'tls', 'internet-explorer', 'security', 'registry']
@@ -86,6 +87,5 @@ Various options are:
 - Script log
 - Script state
 - Data view
-
 
 

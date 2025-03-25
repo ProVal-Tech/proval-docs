@@ -1,5 +1,6 @@
 ---
 id: '0bc76dfc-6e84-459d-83a8-306fe625c835'
+slug: /0bc76dfc-6e84-459d-83a8-306fe625c835
 title: 'DUO - Install MFA Authentication For Windows EDFs'
 title_meta: 'DUO - Install MFA Authentication For Windows EDFs'
 keywords: ['duo', 'installation', 'edf', 'monitor', 'agent', 'client']
@@ -47,6 +48,5 @@ Sets all variables from EDFs and Script Globals. The process will exit if requir
 
 - Script Log
 - Ticket - Optional
-
 
 

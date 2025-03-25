@@ -1,5 +1,6 @@
 ---
 id: '77a9ff77-6e7a-474e-8796-d44f2066ff16'
+slug: /77a9ff77-6e7a-474e-8796-d44f2066ff16
 title: 'Remote Monitor - Dell Hardware Monitoring'
 title_meta: 'Remote Monitor - Dell Hardware Monitoring'
 keywords: ['dell', 'servers', 'monitoring', 'event', 'logs', 'alert', 'ticket', 'failure', 'success']

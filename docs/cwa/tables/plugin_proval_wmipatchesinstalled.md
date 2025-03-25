@@ -1,5 +1,6 @@
 ---
 id: '8bc47dfb-e936-4d6d-a7fb-2046f8f2e5b1'
+slug: /8bc47dfb-e936-4d6d-a7fb-2046f8f2e5b1
 title: 'plugin_proval_wmipatchesinstalled'
 title_meta: 'plugin_proval_wmipatchesinstalled'
 keywords: ['patch', 'information', 'computer', 'wmi', 'installation', 'status']
@@ -28,6 +29,5 @@ This document stores individual patch information per computer and their install
 | Title       | VARCHAR  | The title of the audited patch.                      |
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
-
 
 

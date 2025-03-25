@@ -1,5 +1,6 @@
 ---
 id: '8cca4422-d71b-4696-b5d8-8cbc51158b3d'
+slug: /8cca4422-d71b-4696-b5d8-8cbc51158b3d
 title: 'SSL Certificate Audit'
 title_meta: 'SSL Certificate Audit'
 keywords: ['certificates', 'audit', 'expiration', 'status', 'thumbprint', 'issuer', 'subject', 'client', 'computer']
@@ -37,6 +38,5 @@ This report is designed to present a complete list of all certificates found on 
 | CertAdded            | When the certificate was added/installed to the machine.                                         |
 | Data Collection Date  | When the last certification scan was performed.                                                  |
 | Status               | The certificate's current status in text.                                                        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b25a430b-13f9-42b7-86da-6cd7f973301f'
+slug: /b25a430b-13f9-42b7-86da-6cd7f973301f
 title: 'Associate Most Active Username as Contact Workstations'
 title_meta: 'Associate Most Active Username as Contact Workstations'
 keywords: ['automate', 'user', 'contact', 'email', 'association']
@@ -49,6 +50,5 @@ A contact will be linked to the computer if any of the following conditions are 
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
-
 
 

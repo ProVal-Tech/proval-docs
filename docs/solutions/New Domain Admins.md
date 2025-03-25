@@ -1,5 +1,6 @@
 ---
 id: '35a03717-5ade-46fb-b396-10a277043788'
+slug: /35a03717-5ade-46fb-b396-10a277043788
 title: 'New Domain Admins'
 title_meta: 'New Domain Admins'
 keywords: ['domain', 'admin', 'alert', 'monitoring', 'security']
@@ -35,7 +36,6 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the Machine Group: [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>).
 - Create the task: [New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>).
 - Create the deployment schedule as described in this document: [New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>).
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '03e04bb6-5087-4e71-9d2f-a3596e9c291f'
+slug: /03e04bb6-5087-4e71-9d2f-a3596e9c291f
 title: 'Windows 10/11 Build Upgrades EOL Based'
 title_meta: 'Windows 10/11 Build Upgrades EOL Based'
 keywords: ['eol', 'windows', 'upgrade', 'monitor', 'alert', 'custom', 'service', 'ticket']

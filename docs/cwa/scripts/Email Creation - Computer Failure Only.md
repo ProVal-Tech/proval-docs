@@ -1,5 +1,6 @@
 ---
 id: '901470a2-73d2-4d29-b0d3-c5f15cf19c41'
+slug: /901470a2-73d2-4d29-b0d3-c5f15cf19c41
 title: 'Email Creation - Computer Failure Only'
 title_meta: 'Email Creation - Computer Failure Only'
 keywords: ['email', 'rawsql', 'monitor', 'failure', 'notification']
@@ -66,6 +67,5 @@ It's an Autofix script and is currently attached to the "△ Custom - Email RAWS
 ## Output
 
 Email
-
 
 

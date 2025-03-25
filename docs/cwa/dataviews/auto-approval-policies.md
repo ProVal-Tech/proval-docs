@@ -1,5 +1,6 @@
 ---
 id: '1b296878-9915-4c2b-9d2e-f9ee09059cc9'
+slug: /1b296878-9915-4c2b-9d2e-f9ee09059cc9
 title: 'Auto Approval Policies'
 title_meta: 'Auto Approval Policies'
 keywords: ['approval', 'policy', 'settings', 'proval', 'filters']

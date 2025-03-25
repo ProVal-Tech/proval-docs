@@ -1,5 +1,6 @@
 ---
 id: '38b92368-f583-426c-b8f1-5f3b6d56b410'
+slug: /38b92368-f583-426c-b8f1-5f3b6d56b410
 title: 'BitLocker Auditing'
 title_meta: 'BitLocker Auditing'
 keywords: ['bitlocker', 'encryption', 'auditing', 'device', 'group', 'status', 'recovery', 'key']
@@ -121,7 +122,6 @@ This group holds all devices that have been audited for BitLocker and checks the
 This is the scheduled recurrence of the [CW RMM - Task - BitLocker Status and Recovery Key Audit](<../tasks/BitLocker Status and Recovery Key Audit.md>) task.
 
 ![Image](../../../static/img/BitLocker-Auditing/image_11.png)
-
 
 
 

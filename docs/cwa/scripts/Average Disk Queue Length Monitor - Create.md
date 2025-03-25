@@ -1,5 +1,6 @@
 ---
 id: 'a9e12b7a-2e7f-483c-ae50-39b9ff5667bd'
+slug: /a9e12b7a-2e7f-483c-ae50-39b9ff5667bd
 title: 'Average Disk Queue Length Monitor - Create'
 title_meta: 'Average Disk Queue Length Monitor - Create'
 keywords: ['remote', 'monitor', 'disk', 'queue', 'length', 'windows', 'performance']
@@ -141,6 +142,5 @@ If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolong
 ## Output
 
 - Remote Monitors
-
 
 

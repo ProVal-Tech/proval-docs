@@ -1,5 +1,6 @@
 ---
 id: 'baeb3063-b28b-4eae-975d-e55af60c0466'
+slug: /baeb3063-b28b-4eae-975d-e55af60c0466
 title: 'MySQL - View - Create (pvl_v_windows_version_metrics)'
 title_meta: 'MySQL - View - Create (pvl_v_windows_version_metrics)'
 keywords: ['import', 'mysql', 'windows', 'patching', 'view']
@@ -21,6 +22,5 @@ This script can be used to import the [SEC - Windows Patching - MySQL View - pvl
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<./MySQL - Table - Create (plugin_proval_windows_os_support).md>)
-
 
 

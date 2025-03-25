@@ -1,5 +1,6 @@
 ---
 id: '025887c2-41a2-4e85-b706-dc0841a104d9'
+slug: /025887c2-41a2-4e85-b706-dc0841a104d9
 title: 'plugin_proval_gpo_redirection_audit'
 title_meta: 'plugin_proval_gpo_redirection_audit'
 keywords: ['gpo', 'audit', 'dataview', 'redirection', 'settings']
@@ -44,6 +45,5 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 )
 COLLATE='utf8_general_ci';
 ```
-
 
 

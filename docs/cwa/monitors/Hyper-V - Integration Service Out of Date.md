@@ -1,5 +1,6 @@
 ---
 id: 'be36d0c7-d03d-4daf-873b-7ed47c12501a'
+slug: /be36d0c7-d03d-4daf-873b-7ed47c12501a
 title: 'Integration Service Out of Date'
 title_meta: 'Integration Service Out of Date'
 keywords: ['hyper-v', 'monitor', 'integration', 'service', 'ticket']

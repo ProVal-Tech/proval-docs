@@ -1,5 +1,6 @@
 ---
 id: '9d2c62e4-37a5-4d37-867c-c0cda13bdef9'
+slug: /9d2c62e4-37a5-4d37-867c-c0cda13bdef9
 title: 'Get-PNPDevices DV'
 title_meta: 'Get-PNPDevices DV'
 keywords: ['pnp', 'devices', 'windows', 'inventory', 'script']
@@ -44,6 +45,5 @@ This script will collect information about the installed [PnP Devices](https://d
 
 - Script Log
 - Dataview
-
 
 

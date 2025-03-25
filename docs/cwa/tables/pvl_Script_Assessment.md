@@ -1,5 +1,6 @@
 ---
 id: '31e58aae-ce62-4440-8319-b22abec4e842'
+slug: /31e58aae-ce62-4440-8319-b22abec4e842
 title: 'pvl_Script_Assesment'
 title_meta: 'pvl_Script_Assesment'
 keywords: ['script', 'failure', 'analysis', 'retention', 'database']
@@ -38,6 +39,5 @@ This document holds a detailed analysis of script failures over the past 30 days
 | First Failure Date        | DATETIME | First Failure Date                                                                                 |
 | Last Failure Date         | DATETIME | Last Failure Date                                                                                  |
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
-
 
 

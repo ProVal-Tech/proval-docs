@@ -1,5 +1,6 @@
 ---
 id: '40144621-2d0b-4294-b5cb-cec356cf9d74'
+slug: /40144621-2d0b-4294-b5cb-cec356cf9d74
 title: 'Feature Update Install with Tracking (Reset Custom Fields)'
 title_meta: 'Feature Update Install with Tracking (Reset Custom Fields)'
 keywords: ['feature', 'update', 'install', 'custom', 'fields', 'reset', 'tracking']
@@ -123,7 +124,6 @@ Click the `Save` button to save the task.
 ## Output
 
 - Custom Field
-
 
 
 

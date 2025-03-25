@@ -1,5 +1,6 @@
 ---
 id: '864f3eaf-4693-42f5-8852-9e96c451c8e8'
+slug: /864f3eaf-4693-42f5-8852-9e96c451c8e8
 title: 'Lockdown Browsers Password Manager'
 title_meta: 'Lockdown Browsers Password Manager'
 keywords: ['browsers', 'password', 'manager', 'lockdown', 'autofill']

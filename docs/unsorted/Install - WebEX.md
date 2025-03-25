@@ -1,5 +1,6 @@
 ---
 id: 'f1e0d2c9-7afb-4932-b369-be5a631c2c9c'
+slug: /f1e0d2c9-7afb-4932-b369-be5a631c2c9c
 title: 'Install - WebEX'
 title_meta: 'Install - WebEX'
 keywords: ['webex', 'installation', 'script', 'itglue']
@@ -73,6 +74,5 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0f88cca8-1b15-44ba-92dc-ec6e2c72377b'
+slug: /0f88cca8-1b15-44ba-92dc-ec6e2c72377b
 title: 'Lockdown Chromium Browsers Address Autofill'
 title_meta: 'Lockdown Chromium Browsers Address Autofill'
 keywords: ['chromium', 'browsers', 'autofill', 'registry', 'monitor']

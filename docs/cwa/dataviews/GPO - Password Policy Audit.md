@@ -1,5 +1,6 @@
 ---
 id: '28ff3938-c093-47c6-8495-498f407740a7'
+slug: /28ff3938-c093-47c6-8495-498f407740a7
 title: 'GPO - Password Policy Audit'
 title_meta: 'GPO - Password Policy Audit'
 keywords: ['password', 'policy', 'audit', 'domain', 'security']
@@ -36,6 +37,5 @@ This document provides information about the default password policy in a domain
 | Reverse Encryption Enabled           | Yes/No - Indicates if reverse encryption is enabled on the domain                                            |
 
 (Reference documentation: [Password Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy))
-
 
 

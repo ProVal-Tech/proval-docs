@@ -1,5 +1,6 @@
 ---
 id: '1346f6e0-a1cc-42fd-85f2-a43785eee53e'
+slug: /1346f6e0-a1cc-42fd-85f2-a43785eee53e
 title: 'Windows - Local Administrator Process'
 title_meta: 'Windows - Local Administrator Process'
 keywords: ['local', 'administrator', 'password', 'script', 'client']
@@ -47,6 +48,5 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
-
 
 

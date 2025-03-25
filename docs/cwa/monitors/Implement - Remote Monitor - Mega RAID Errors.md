@@ -1,5 +1,6 @@
 ---
 id: '94acea25-1d14-4ccd-8991-045331d05fde'
+slug: /94acea25-1d14-4ccd-8991-045331d05fde
 title: 'Implement - Remote Monitor - Mega RAID Errors'
 title_meta: 'Implement - Remote Monitor - Mega RAID Errors'
 keywords: ['configure', 'alerts', 'monitors', 'sql', 'setup']

@@ -1,5 +1,6 @@
 ---
 id: '0f6e6262-6a9f-4edf-ab23-1522543de7e2'
+slug: /0f6e6262-6a9f-4edf-ab23-1522543de7e2
 title: 'Security event logs cleared/deleted'
 title_meta: 'Security event logs cleared/deleted'
 keywords: ['security', 'event', 'monitor', 'alert', 'windows']

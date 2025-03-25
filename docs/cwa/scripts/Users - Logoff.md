@@ -1,5 +1,6 @@
 ---
 id: '35c948fc-300e-437b-8338-69175b6a4afa'
+slug: /35c948fc-300e-437b-8338-69175b6a4afa
 title: 'Users - Logoff'
 title_meta: 'Users - Logoff'
 keywords: ['logoff', 'users', 'script', 'automation', 'windows']
@@ -33,6 +34,5 @@ Setting the User parameter to "All" will log off all users.
 
 1. Determine the scope.
 2. Log off the desired user or users.
-
 
 

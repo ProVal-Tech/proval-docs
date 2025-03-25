@@ -1,5 +1,6 @@
 ---
 id: '730449e6-1c73-46ca-a93d-d7b9526e1ef9'
+slug: /730449e6-1c73-46ca-a93d-d7b9526e1ef9
 title: 'Ticket Creation - Without Computer Information And Failures Only Autofix'
 title_meta: 'Ticket Creation - Without Computer Information And Failures Only Autofix'
 keywords: ['ticket', 'creation', 'monitor', 'alert', 'sql']
@@ -49,6 +50,5 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
-
 
 

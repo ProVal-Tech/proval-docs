@@ -1,5 +1,6 @@
 ---
 id: '3037688b-782b-468e-956a-292b3ef33534'
+slug: /3037688b-782b-468e-956a-292b3ef33534
 title: 'Remove-BitDefenderEndpointSecurity'
 title_meta: 'Remove-BitDefenderEndpointSecurity'
 keywords: ['remove', 'bitdefender', 'security', 'cleanup']
@@ -48,6 +49,5 @@ Removes all Bitdefender Endpoint Security from an endpoint when BEST cannot be d
 Location of output for log, result, and error files:
 - `Remove-BitdefenderEndpointSecurity-log.txt`
 - `Remove-BitdefenderEndpointSecurity-Error.txt`
-
 
 

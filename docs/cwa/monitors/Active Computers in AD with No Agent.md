@@ -1,5 +1,6 @@
 ---
 id: '29eeae8f-d854-4234-82c5-28b1bbee0fc7'
+slug: /29eeae8f-d854-4234-82c5-28b1bbee0fc7
 title: 'Active Computers in AD with No Agent'
 title_meta: 'Active Computers in AD with No Agent'
 keywords: ['automate', 'agents', 'monitoring', 'ticketing', 'exclusions']
@@ -65,6 +66,5 @@ Last Logon: <Last Logon Date>
 
 Note: The list of machine names, separated by commas, can be configured within the client-level Extra Data Field (EDF) labeled "Excluded Missing Agent Computers" to exclude those machines from this monitoring process.
 ```
-
 
 

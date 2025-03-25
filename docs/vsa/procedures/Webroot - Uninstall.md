@@ -1,5 +1,6 @@
 ---
 id: '728ba6ee-7886-4a56-98c6-40ca55dceeba'
+slug: /728ba6ee-7886-4a56-98c6-40ca55dceeba
 title: 'Webroot - Uninstall'
 title_meta: 'Webroot - Uninstall'
 keywords: ['webroot', 'uninstall', 'endpoint', 'procedure', 'agent']
@@ -39,6 +40,5 @@ This document describes the process for uninstalling the Webroot application on 
 
 - **Failure**  
   ![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)  
-
 
 

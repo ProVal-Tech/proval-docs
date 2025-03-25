@@ -1,5 +1,6 @@
 ---
 id: 'fd0bef13-23d6-40e3-8883-367e0fa6d166'
+slug: /fd0bef13-23d6-40e3-8883-367e0fa6d166
 title: 'Veeam Service Monitor'
 title_meta: 'Veeam Service Monitor'
 keywords: ['veeam', 'monitor', 'service', 'restart', 'alert']

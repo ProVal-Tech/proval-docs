@@ -1,5 +1,6 @@
 ---
 id: 'e5e1f07f-f6ed-41bc-b0f1-b2cc86e059e1'
+slug: /e5e1f07f-f6ed-41bc-b0f1-b2cc86e059e1
 title: 'Service - Restart'
 title_meta: 'Service - Restart'
 keywords: ['restart', 'services', 'error', 'handling', 'windows']
@@ -82,6 +83,5 @@ From Group Monitor:
 - Script log (for detailed information on individual results)
 - Tickets (if enabled)
 - Emails (if enabled)
-
 
 

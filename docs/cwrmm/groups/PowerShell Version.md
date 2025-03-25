@@ -1,5 +1,6 @@
 ---
 id: 'bbb9f958-4fd3-4fda-903f-7d303bf26779'
+slug: /bbb9f958-4fd3-4fda-903f-7d303bf26779
 title: 'PowerShell Version'
 title_meta: 'PowerShell Version'
 keywords: ['device', 'group', 'audit', 'version', 'criteria']
@@ -71,7 +72,6 @@ When adding criteria, please search for the PowerShell Version custom field.
 - **Condition:** "Success"  
 
 This group holds all devices that are on PowerShell version 5 or above.
-
 
 
 

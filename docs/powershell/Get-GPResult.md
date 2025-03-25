@@ -1,5 +1,6 @@
 ---
 id: 'f5d71bf9-29a7-4aa3-a349-0378cb97575a'
+slug: /f5d71bf9-29a7-4aa3-a349-0378cb97575a
 title: 'Get-GPResult'
 title_meta: 'Get-GPResult'
 keywords: ['gpresult', 'gpo', 'report', 'rsop']
@@ -142,5 +143,4 @@ $reportOutput = .\\Get-GPResult.ps1 -ReportType PSObject -ExcludeComputer
 - `./gpresult_user.xml`
 - `./gpresult.sql`
 - Returns a simple INSERT statement string with `tablename` and `idvalue` placeholders that can be replaced.
-
 

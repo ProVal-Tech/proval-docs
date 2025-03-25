@@ -1,5 +1,6 @@
 ---
 id: 'd0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6'
+slug: /d0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6
 title: 'Windows Update History Audit'
 title_meta: 'Windows Update History Audit'
 keywords: ['windows', 'update', 'data', 'epm', 'report']
@@ -38,6 +39,5 @@ This document describes a script that gathers Windows update data and enters it 
 
 - Script Log
 - [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
-
 
 

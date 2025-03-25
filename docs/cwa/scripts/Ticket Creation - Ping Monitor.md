@@ -1,5 +1,6 @@
 ---
 id: '7cd1193a-c796-4545-b707-758e1b651c22'
+slug: /7cd1193a-c796-4545-b707-758e1b651c22
 title: 'Ticket Creation - Ping Monitor'
 title_meta: 'Ticket Creation - Ping Monitor'
 keywords: ['ticket', 'monitor', 'ping', 'alert', 'client']
@@ -67,6 +68,5 @@ The script will generate the tickets utilizing the subject and message stored in
 ## Output
 
 - Ticket
-
 
 

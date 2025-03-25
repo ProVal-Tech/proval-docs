@@ -1,5 +1,6 @@
 ---
 id: '9342283f-7ca1-4df1-85cd-3c3563e7b67e'
+slug: /9342283f-7ca1-4df1-85cd-3c3563e7b67e
 title: 'Windows Installer Properties'
 title_meta: 'Windows Installer Properties'
 keywords: ['applications', 'software', 'dataview', 'properties', 'installation']
@@ -36,6 +37,5 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 - Debug the script against an online Windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '58ce658a-6821-4420-9685-5ed8c963c2b1'
+slug: /58ce658a-6821-4420-9685-5ed8c963c2b1
 title: 'Senteon_Tenant'
 title_meta: 'Senteon_Tenant'
 keywords: ['senteon', 'tenant', 'agent', 'registration', 'managed', 'variable']
@@ -25,6 +26,5 @@ The value for this must be provided by the partner. The partner can obtain the d
 | Managed Variable Name | Managed Variable Type | Description                                                |
 |-----------------------|-----------------------|------------------------------------------------------------|
 | Senteon_Tenant        | Public                | Used by the agent procedure to specify the tenant during installation |
-
 
 

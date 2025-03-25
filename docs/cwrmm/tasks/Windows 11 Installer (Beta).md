@@ -1,5 +1,6 @@
 ---
 id: '96cec9d2-d276-47a5-a1c5-d79d561c192a'
+slug: /96cec9d2-d276-47a5-a1c5-d79d561c192a
 title: 'Windows 11 Installer (Beta)'
 title_meta: 'Windows 11 Installer (Beta)'
 keywords: ['windows', 'upgrade', 'installer', 'script', 'deployment']
@@ -171,6 +172,5 @@ It is suggested to run this task manually for the time being.
 
 - Script Log
 - Custom Field
-
 
 

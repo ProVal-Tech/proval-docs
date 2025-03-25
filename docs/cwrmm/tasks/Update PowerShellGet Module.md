@@ -1,5 +1,6 @@
 ---
 id: 'f17a9912-b0d6-4b48-812d-380a4dc9de90'
+slug: /f17a9912-b0d6-4b48-812d-380a4dc9de90
 title: 'Update PowerShellGet Module'
 title_meta: 'Update PowerShellGet Module'
 keywords: ['powershellget', 'update', 'module', 'script', 'install']
@@ -140,6 +141,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

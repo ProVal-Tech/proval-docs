@@ -1,5 +1,6 @@
 ---
 id: 'c4083ace-8763-4fdd-8d0c-b7fd93e30401'
+slug: /c4083ace-8763-4fdd-8d0c-b7fd93e30401
 title: 'DUO Authentication - Latest Version Detection'
 title_meta: 'DUO Authentication - Latest Version Detection'
 keywords: ['duo', 'authentication', 'version', 'monitor', 'windows', 'winget']
@@ -26,6 +27,5 @@ This script is only targeted to one machine to fetch the application's latest ve
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
-
 
 

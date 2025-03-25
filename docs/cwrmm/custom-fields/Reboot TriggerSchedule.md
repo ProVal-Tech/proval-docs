@@ -1,5 +1,6 @@
 ---
 id: 'c0aece55-4e18-4914-9e43-965c8c9e23a6'
+slug: /c0aece55-4e18-4914-9e43-965c8c9e23a6
 title: 'Reboot TriggerSchedule'
 title_meta: 'Reboot TriggerSchedule'
 keywords: ['reboot', 'schedule', 'custom', 'fields', 'solution']
@@ -60,6 +61,5 @@ The custom fields listed below are used in the Reboot Schedule Solution.
 
 5. Repeat the above four steps to create all other custom fields based on the Name, Level, Type, Default, Description, and Editable values provided in the table.  
    **NOTE:** To exclude this client from the solution, please enter 'Exclude' in the field. This will cause the script to exit and not take any actions on the target device.
-
 
 

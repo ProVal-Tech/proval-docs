@@ -1,5 +1,6 @@
 ---
 id: '3c74153d-7575-485c-bd6d-c5e002384cbd'
+slug: /3c74153d-7575-485c-bd6d-c5e002384cbd
 title: 'Enable Advanced Windows Security Auditing Globals, Autofix'
 title_meta: 'Enable Advanced Windows Security Auditing Globals, Autofix'
 keywords: ['security', 'auditing', 'windows', 'monitor', 'ticket']
@@ -47,6 +48,5 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Enable-Advanced-Windows-Security-Auditing-Globals,-Autofix/image_3.png)
-
 
 

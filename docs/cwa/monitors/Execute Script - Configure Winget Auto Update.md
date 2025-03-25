@@ -1,5 +1,6 @@
 ---
 id: 'a2fa065f-6f76-4442-a0e0-a64365f6c331'
+slug: /a2fa065f-6f76-4442-a0e0-a64365f6c331
 title: 'Execute Script - Configure Winget Auto Update'
 title_meta: 'Execute Script - Configure Winget Auto Update'
 keywords: ['winget', 'update', 'monitor', 'script', 'windows']
@@ -25,7 +26,6 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Configure Winget Auto Update`
-
 
 
 

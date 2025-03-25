@@ -1,5 +1,6 @@
 ---
 id: '81520f8a-9cf5-4255-b159-837c8939b964'
+slug: /81520f8a-9cf5-4255-b159-837c8939b964
 title: 'Screensaver - Set 3D Text'
 title_meta: 'Screensaver - Set 3D Text'
 keywords: ['screensaver', 'windows', 'scheduled', 'task', 'inactivity', 'logon', 'message']
@@ -42,6 +43,5 @@ Please ensure that the message for the `@screensavermessage@` parameter does not
 ## Output
 
 - Script log
-
 
 

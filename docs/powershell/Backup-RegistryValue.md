@@ -1,5 +1,6 @@
 ---
 id: '2e38bff4-a727-4c7e-8c3b-ccf8eee85891'
+slug: /2e38bff4-a727-4c7e-8c3b-ccf8eee85891
 title: 'Backup-RegistryValue'
 title_meta: 'Backup-RegistryValue'
 keywords: ['backup', 'registry', 'windows', 'administration', 'copy']
@@ -61,6 +62,5 @@ Creates a copy of the key `HKLM:\Software\Microsoft\DataAccess` and all its subk
 | ConnectWise RMM                   |                                          |
 | Kaseya                            |                                          |
 | Datto RMM                         |                                          |
-
 
 

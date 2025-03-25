@@ -1,5 +1,6 @@
 ---
 id: 'a4434526-0106-4df4-832c-752519597f82'
+slug: /a4434526-0106-4df4-832c-752519597f82
 title: 'Last Signed in User - Backup'
 title_meta: 'Last Signed in User - Backup'
 keywords: ['backup', 'logon', 'user', 'registry', 'computer']
@@ -30,6 +31,5 @@ This script stores the last signed-in user information from the registry as a ba
 ## Output
 
 - Script log
-
 
 

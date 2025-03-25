@@ -1,5 +1,6 @@
 ---
 id: 'ab5fe07a-d644-4011-96bf-67aa8019216f'
+slug: /ab5fe07a-d644-4011-96bf-67aa8019216f
 title: 'Execute Script - Get Wifi Profile'
 title_meta: 'Execute Script - Get Wifi Profile'
 keywords: ['wifi', 'monitor', 'windows', 'audit', 'script']
@@ -27,6 +28,5 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
-
 
 

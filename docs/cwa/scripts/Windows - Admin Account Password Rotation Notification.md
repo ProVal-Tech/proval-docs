@@ -1,5 +1,6 @@
 ---
 id: '1adeca30-5b12-4218-98c2-ff2806eae27e'
+slug: /1adeca30-5b12-4218-98c2-ff2806eae27e
 title: 'Windows - Admin Account Password Rotation Notification'
 title_meta: 'Windows - Admin Account Password Rotation Notification'
 keywords: ['ticket', 'notification', 'password', 'update', 'client']
@@ -51,6 +52,5 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
   ------------------------------------------------------------------------------------------------------------------------  
 
   Here, @sqlName@, @sqlUsername@, @sqlClientid@, @sqlTitle@, @sqlnotes@, and @sqlLast_Date@ contain the details of the Client Name, Username for which the password was updated, the Client ID of whom the user password was changed, Title name of the username, Notes of the user stored in the table which contains the last modified date, and Last_Date when the password change information was stored respectively.
-
 
 

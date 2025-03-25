@@ -1,5 +1,6 @@
 ---
 id: 'ed9b97af-e0a3-484b-a710-47c34eb61422'
+slug: /ed9b97af-e0a3-484b-a710-47c34eb61422
 title: 'Windows - Security - CVE 2021 1675 Status - PrintNightmare'
 title_meta: 'Windows - Security - CVE 2021 1675 Status - PrintNightmare'
 keywords: ['cve', 'dataview', 'script', 'results', 'vulnerability']
@@ -28,6 +29,5 @@ The script should be imported via the ProVal plugin to ensure the GUID does not 
 | Computer   | The computer associated with the results of the script                      |
 | Status     | This is the Script State "Result" column from the script                   |
 | Last Run   | This is the most recent date that the script was run against the target device |
-
 
 

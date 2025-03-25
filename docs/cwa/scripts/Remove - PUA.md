@@ -1,5 +1,6 @@
 ---
 id: 'dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf'
+slug: /dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf
 title: 'Remove - PUA'
 title_meta: 'Remove - PUA'
 keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
@@ -131,4 +132,3 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.Paint3D                        |                                           |                                       |                                   |                                                         |
 | MicrosoftCorporationII.QuickAssist       |                                           |                                       |                                   |                                                         |
 | Microsoft.SpotifyMusic                   |                                           |                                       |                                   |                                                         |
-

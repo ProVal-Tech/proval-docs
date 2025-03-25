@@ -1,5 +1,6 @@
 ---
 id: 'a79af7f1-2ef6-4769-bf7f-b0214e198ac1'
+slug: /a79af7f1-2ef6-4769-bf7f-b0214e198ac1
 title: 'Get-NewLocalAdmin'
 title_meta: 'Get-NewLocalAdmin'
 keywords: ['new', 'local', 'admin', 'permissions']
@@ -34,6 +35,5 @@ If the script has not been run previously, the admin data is saved to the table,
 
 - `Get-NewLocalAdmin_log`
 - `Get-NewLocalAdmin_admins`
-
 
 

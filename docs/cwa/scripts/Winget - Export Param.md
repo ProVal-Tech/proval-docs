@@ -1,5 +1,6 @@
 ---
 id: 'f9b8a027-e797-49c6-848d-7cb667a16ce0'
+slug: /f9b8a027-e797-49c6-848d-7cb667a16ce0
 title: 'Winget - Export Param'
 title_meta: 'Winget - Export Param'
 keywords: ['export', 'applications', 'winget', 'report', 'json', 'csv', 'email']
@@ -51,6 +52,5 @@ Path to the reports on the local machine:
 
 - Script logs
 - Email(s) (if enabled)
-
 
 

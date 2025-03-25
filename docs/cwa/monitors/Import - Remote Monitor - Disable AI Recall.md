@@ -1,5 +1,6 @@
 ---
 id: '3a5d036a-dcc5-4e6e-9962-92309891a4ec'
+slug: /3a5d036a-dcc5-4e6e-9962-92309891a4ec
 title: 'Import - Remote Monitor - Disable AI Recall'
 title_meta: 'Import - Remote Monitor - Disable AI Recall'
 keywords: ['setup', 'monitor', 'sql', 'remote', 'windows', 'groupid', 'alert']

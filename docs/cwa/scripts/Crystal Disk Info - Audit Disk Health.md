@@ -1,5 +1,6 @@
 ---
 id: 'b6740eae-5c84-4285-994b-eed8b3f22f53'
+slug: /b6740eae-5c84-4285-994b-eed8b3f22f53
 title: 'Crystal Disk Info - Audit Disk Health'
 title_meta: 'Crystal Disk Info - Audit Disk Health'
 keywords: ['hard drive', 'health', 'status', 'script', 'monitoring']
@@ -71,6 +72,5 @@ The status information gets updated in the following places:
 
 - Script Log
 - Hard Drive Status EDF
-
 
 

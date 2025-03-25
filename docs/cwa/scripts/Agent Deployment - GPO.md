@@ -1,5 +1,6 @@
 ---
 id: '4c3c9d4c-cf60-4252-85f3-a4db1510fa49'
+slug: /4c3c9d4c-cf60-4252-85f3-a4db1510fa49
 title: 'Agent Deployment - GPO'
 title_meta: 'Agent Deployment - GPO'
 keywords: ['automate', 'gpo', 'deployment', 'connectwise', 'script', 'policy']
@@ -72,6 +73,5 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 **Q.** Does installing the Scheduled Task GPO remove the existing Startup Script GPO?  
 **A.** No, both `Automate-Deploy` and `Automate-Deploy Scheduled Task` are individual GPOs and do not remove or update each other while being created.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f8b7444f-398c-42a5-8ed8-f83c3491818e'
+slug: /f8b7444f-398c-42a5-8ed8-f83c3491818e
 title: 'Clickshare installation'
 title_meta: 'Clickshare installation'
 keywords: ['clickshare', 'installation', 'script', 'agent', 'taskscheduler']
@@ -34,6 +35,5 @@ This script helps to install ClickShare on the agent. It can install the applica
 ## Output
 
 - Script log
-
 
 

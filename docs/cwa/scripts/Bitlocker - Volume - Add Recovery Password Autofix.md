@@ -1,5 +1,6 @@
 ---
 id: 'c2c817db-9667-4e18-864c-11ef0775282c'
+slug: /c2c817db-9667-4e18-864c-11ef0775282c
 title: 'Bitlocker - Volume - Add Recovery Password Autofix'
 title_meta: 'Bitlocker - Volume - Add Recovery Password Autofix'
 keywords: ['bitlocker', 'recovery', 'tpm', 'encryption', 'monitor']
@@ -42,7 +43,6 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f3e6e1a0-0133-4d84-b0c7-fb02c1e2fca6'
+slug: /f3e6e1a0-0133-4d84-b0c7-fb02c1e2fca6
 title: 'Windows 11 Installation Validation'
 title_meta: 'Windows 11 Installation Validation'
 keywords: ['windows', 'validation', 'upgrade', 'task', 'installer']
@@ -164,6 +165,5 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 
 - Script Log
 - Custom Field
-
 
 

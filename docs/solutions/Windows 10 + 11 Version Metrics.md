@@ -1,5 +1,6 @@
 ---
 id: '0aa84005-5627-496f-9f09-496ef916cff5'
+slug: /0aa84005-5627-496f-9f09-496ef916cff5
 title: 'Windows 10 + 11 Version Metrics'
 title_meta: 'Windows 10 + 11 Version Metrics'
 keywords: ['windows', 'metrics', 'dataview', 'support', 'patching']
@@ -39,6 +40,5 @@ This solution displays well-calculated version metrics with multiple filters.
 **A:** Open a RAWSQL monitor set and execute the following queries one after another to find your answer:  
 - `SELECT * FROM [pvl_v_windows_version_metrics](<../cwa/scripts/MySQL - View - Create (pvl_v_windows_version_metrics).md>);`  
 - `SELECT * FROM [plugin_proval_windows_os_support](<../cwa/tables/plugin_proval_windows_os_support.md>);`
-
 
 

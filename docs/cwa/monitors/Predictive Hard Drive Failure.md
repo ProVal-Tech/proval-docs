@@ -1,5 +1,6 @@
 ---
 id: 'fbd607cd-0450-4fca-9f2c-2567a2af58d3'
+slug: /fbd607cd-0450-4fca-9f2c-2567a2af58d3
 title: 'Predictive Hard Drive Failure'
 title_meta: 'Predictive Hard Drive Failure'
 keywords: ['monitor', 'hard drive', 'failure', 'alert', 'maintenance', 'data', 'system']

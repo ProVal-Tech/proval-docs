@@ -1,5 +1,6 @@
 ---
 id: 'ea558c06-8fef-4c9f-87c7-42a3aa289dad'
+slug: /ea558c06-8fef-4c9f-87c7-42a3aa289dad
 title: 'plugin_proval_v_windows_10_version_metrics'
 title_meta: 'plugin_proval_v_windows_10_version_metrics'
 keywords: ['windows', 'metrics', 'filters', 'dataview', 'support', 'releaseid']
@@ -44,6 +45,5 @@ Unsupported for MySQL version < 5.7
 | % Supported Machines                | varchar(27)     | Either 100 or 0 for the release ID row depending upon whether the concerned release ID is supported till today or not. For the Summary row, it's the percentage of the supported Windows 10 out of all the available Windows 10 machines. |
 | % Unsupported Machines              | varchar(31)     | Either 0 or 100 for the release ID row depending upon whether the concerned release ID is supported till today or not. For the Summary row, it's the percentage of the unsupported Windows 10 out of all the available Windows 10 machines. |
 | Build                               | varchar(60)     | Build Number for the concerned release ID. e.g., 10.0.19044, 10.0.19043. It will show 'Windows 10' for the Summary Row.                                                                                                               |
-
 
 

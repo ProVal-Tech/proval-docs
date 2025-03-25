@@ -1,5 +1,6 @@
 ---
 id: 'a9e0b7ac-4ce2-4376-ac97-8cdee2d122dc'
+slug: /a9e0b7ac-4ce2-4376-ac97-8cdee2d122dc
 title: 'Get-DCDiagReport'
 title_meta: 'Get-DCDiagReport'
 keywords: ['automate', 'wrapper', 'ticket', 'diagnostic', 'report']
@@ -62,6 +63,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/Get-DCDiagReport/image_3.png)  
 **The script will not close or finish any ticket.**
-
 
 

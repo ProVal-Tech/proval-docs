@@ -1,5 +1,6 @@
 ---
 id: '92357c7e-dc65-400a-9d61-4d3243a334d4'
+slug: /92357c7e-dc65-400a-9d61-4d3243a334d4
 title: 'Get - Printer Driver Inventory DV'
 title_meta: 'Get - Printer Driver Inventory DV'
 keywords: ['printer', 'drivers', 'inventory', 'windows', 'collection']
@@ -45,6 +46,5 @@ This script collects information about the printer drivers on the target system 
 - Script Log
 - Custom Table
 - Dataview
-
 
 

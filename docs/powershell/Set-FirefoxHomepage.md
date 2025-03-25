@@ -1,5 +1,6 @@
 ---
 id: '09a48350-5bd8-4d4a-8436-d1aa46bcd92e'
+slug: /09a48350-5bd8-4d4a-8436-d1aa46bcd92e
 title: 'Set-FirefoxHomepage'
 title_meta: 'Set-FirefoxHomepage'
 keywords: ['homepage', 'firefox', 'browser', 'configuration']
@@ -33,6 +34,5 @@ Location of output for log, result, and error files.
 ```
 .\Set-FirefoxHomepage-log.txt
 ```
-
 
 

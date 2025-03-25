@@ -1,5 +1,6 @@
 ---
 id: '53f4f86f-0936-40ef-ac65-7287f74d7f65'
+slug: /53f4f86f-0936-40ef-ac65-7287f74d7f65
 title: 'Activity Logging Reporting DV, Global'
 title_meta: 'Activity Logging Reporting DV, Global'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'data', 'deletion', 'threshold']
@@ -56,6 +57,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Data view
-
 
 

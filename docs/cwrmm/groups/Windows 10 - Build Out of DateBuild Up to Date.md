@@ -1,5 +1,6 @@
 ---
 id: '1b2c0555-1eea-4816-bbfc-bca1e29c9d5c'
+slug: /1b2c0555-1eea-4816-bbfc-bca1e29c9d5c
 title: 'Windows 10 - Build Out of DateBuild Up to Date'
 title_meta: 'Windows 10 - Build Out of DateBuild Up to Date'
 keywords: ['windows', 'device', 'group', 'upgrade', 'assistance']
@@ -72,6 +73,5 @@ When adding criteria, please search for the **OS Version**.
 **Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
-
 
 

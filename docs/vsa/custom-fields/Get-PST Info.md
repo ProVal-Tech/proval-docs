@@ -1,5 +1,6 @@
 ---
 id: '74ed821b-9396-4153-b4f3-b556e777bbd5'
+slug: /74ed821b-9396-4153-b4f3-b556e777bbd5
 title: 'Get-PST Info'
 title_meta: 'Get-PST Info'
 keywords: ['custom', 'field', 'update', 'agent', 'procedure', 'machine', 'organization']
@@ -22,7 +23,6 @@ Custom fields are updated by the agent procedure of this solution.
 | Field Name         | Type of Field (Machine or Organization) | Description            |
 |--------------------|-----------------------------------------|------------------------|
 | cPVAL PST File     | Machine                                 | Used for PST location  |
-
 
 
 

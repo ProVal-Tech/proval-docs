@@ -1,5 +1,6 @@
 ---
 id: 'c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33'
+slug: /c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33
 title: 'MySQL - View - Create (pvl_cu_compliance)'
 title_meta: 'MySQL - View - Create (pvl_cu_compliance)'
 keywords: ['compliance', 'views', 'access', 'automate', 'permissions']
@@ -27,6 +28,5 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
-
 
 

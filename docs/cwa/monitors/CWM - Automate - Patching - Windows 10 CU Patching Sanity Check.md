@@ -1,5 +1,6 @@
 ---
 id: 'bb1b76fb-8c0e-4e73-80b6-f7b445c962a1'
+slug: /bb1b76fb-8c0e-4e73-80b6-f7b445c962a1
 title: 'CWM - Automate - Patching - Windows 10 CU Patching Sanity Check'
 title_meta: 'CWM - Automate - Patching - Windows 10 CU Patching Sanity Check'
 keywords: ['windows', 'patching', 'updates', 'monitor', 'sql']
@@ -19,6 +20,5 @@ The purpose of this monitor is to identify Windows 10 machines that are experien
 ## Target
 
 The SQL query is limited to supported Windows 10 computers.
-
 
 

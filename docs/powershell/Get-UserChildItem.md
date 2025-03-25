@@ -1,5 +1,6 @@
 ---
 id: '9d83f677-a8c0-4757-b33d-cf35c9ca15f6'
+slug: /9d83f677-a8c0-4757-b33d-cf35c9ca15f6
 title: 'Get-UserChildItem'
 title_meta: 'Get-UserChildItem'
 keywords: ['retrieve', 'user', 'files', 'folders']
@@ -62,6 +63,5 @@ Gets all files in the Documents folder and all its subfolders for all users.
 System Array - Including the exact outputs you would receive by running Get-ChildItem.
 
 Log file: `.\Get-UserChildItem-log.txt`
-
 
 

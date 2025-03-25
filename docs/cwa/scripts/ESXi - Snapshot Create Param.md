@@ -1,5 +1,6 @@
 ---
 id: 'a2b7d882-f8a5-4273-b237-cabe1662f195'
+slug: /a2b7d882-f8a5-4273-b237-cabe1662f195
 title: 'ESXi - Snapshot Create Param'
 title_meta: 'ESXi - Snapshot Create Param'
 keywords: ['esxi', 'snapshot', 'vmware', 'powercli', 'automation']
@@ -133,6 +134,5 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to create a snapshot for the virtual machine @VMName@. Please review manually. 
 PowerShell script result: @psout@
 ```
-
 
 

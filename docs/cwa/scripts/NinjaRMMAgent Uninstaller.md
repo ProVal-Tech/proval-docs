@@ -1,5 +1,6 @@
 ---
 id: '52254d14-bc24-4f32-bb3c-7447756ec15f'
+slug: /52254d14-bc24-4f32-bb3c-7447756ec15f
 title: 'NinjaRMMAgent Uninstaller'
 title_meta: 'NinjaRMMAgent Uninstaller'
 keywords: ['uninstall', 'ninjarmagent', 'script', 'ticketing', 'failure']
@@ -27,6 +28,5 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 - Script Log
 - Ticket
-
 
 

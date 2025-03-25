@@ -1,5 +1,6 @@
 ---
 id: 'c9c8a58e-fd25-4596-822c-b6847c782e9c'
+slug: /c9c8a58e-fd25-4596-822c-b6847c782e9c
 title: 'Location Ping Monitors - Create'
 title_meta: 'Location Ping Monitors - Create'
 keywords: ['remote', 'monitors', 'location', 'ping', 'setup', 'alert']
@@ -94,6 +95,5 @@ This document details the procedure for setting up Remote Monitors for Location 
 ## Output
 
 - Remote Monitors
-
 
 

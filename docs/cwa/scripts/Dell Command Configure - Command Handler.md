@@ -1,5 +1,6 @@
 ---
 id: '1f61b913-a45c-41e9-afa4-6cf105cdff86'
+slug: /1f61b913-a45c-41e9-afa4-6cf105cdff86
 title: 'Dell Command Configure - Command Handler'
 title_meta: 'Dell Command Configure - Command Handler'
 keywords: ['dell', 'command', 'configure', 'script', 'automation']
@@ -50,6 +51,5 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
-
 
 

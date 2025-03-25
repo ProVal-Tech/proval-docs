@@ -1,5 +1,6 @@
 ---
 id: '710777f0-5c3f-4582-96e9-3beacaf085eb'
+slug: /710777f0-5c3f-4582-96e9-3beacaf085eb
 title: 'Bitlocker - Remove Volume'
 title_meta: 'Bitlocker - Remove Volume'
 keywords: ['bitlocker', 'encryption', 'volume', 'disable', 'unprotect']
@@ -39,6 +40,5 @@ See process information in the document for [SEC - Encryption - Agnostic - Unpro
 
 - Script log
 - Local file on computer
-
 
 

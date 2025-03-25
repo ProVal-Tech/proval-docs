@@ -1,5 +1,6 @@
 ---
 id: 'c3f83443-09cb-43ef-9c21-501d7f13314e'
+slug: /c3f83443-09cb-43ef-9c21-501d7f13314e
 title: 'Endpoint - Exclude Windows 11 Installation'
 title_meta: 'Endpoint - Exclude Windows 11 Installation'
 keywords: ['endpoint', 'upgrade', 'custom', 'field', 'windows', 'installation']
@@ -23,6 +24,5 @@ Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade
 
 ![Screenshot 1](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Exclude-Windows-11-Installation/image_2.png)
-
 
 

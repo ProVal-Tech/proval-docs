@@ -1,5 +1,6 @@
 ---
 id: '779be395-aeeb-44f8-9a99-2bea8a253a86'
+slug: /779be395-aeeb-44f8-9a99-2bea8a253a86
 title: 'Web Browser - Audit'
 title_meta: 'Web Browser - Audit'
 keywords: ['browsers', 'firefox', 'chrome', 'vivaldi', 'waterfox', 'librewolf', 'opera', 'brave', 'iceweasel', 'tor', 'pale', 'moon', 'safari', 'chromium', 'ie', 'audit']
@@ -23,6 +24,5 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Last Contact        | Last contact with RMM of the agent          |
 | Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
-
 
 

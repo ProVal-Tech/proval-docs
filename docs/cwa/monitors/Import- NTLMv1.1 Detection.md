@@ -1,5 +1,6 @@
 ---
 id: '92ad2db8-528e-4bce-8011-ed0e3563e335'
+slug: /92ad2db8-528e-4bce-8011-ed0e3563e335
 title: 'Import- NTLMv1.1 Detection'
 title_meta: 'Import- NTLMv1.1 Detection'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'alert']

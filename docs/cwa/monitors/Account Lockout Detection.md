@@ -1,5 +1,6 @@
 ---
 id: '52fca59d-2cc0-46b2-ae1e-13d46bd36615'
+slug: /52fca59d-2cc0-46b2-ae1e-13d46bd36615
 title: 'Account Lockout Detection'
 title_meta: 'Account Lockout Detection'
 keywords: ['monitor', 'lockout', 'account', 'detection', 'windows']

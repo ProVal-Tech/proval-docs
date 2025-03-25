@@ -1,5 +1,6 @@
 ---
 id: 'da3a0d43-7bdd-4408-99ce-138337eecb43'
+slug: /da3a0d43-7bdd-4408-99ce-138337eecb43
 title: 'Windows - User Profiles'
 title_meta: 'Windows - User Profiles'
 keywords: ['windows', 'user', 'profile', 'information', 'computer', 'account', 'local', 'admin', 'sid', 'lastlogon']
@@ -35,6 +36,5 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Indicates if the user is a local admin.                                                                  |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
-
 
 

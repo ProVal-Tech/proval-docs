@@ -1,5 +1,6 @@
 ---
 id: 'da0254e3-0958-4ab4-9950-7e35feb12345'
+slug: /da0254e3-0958-4ab4-9950-7e35feb12345
 title: 'SMB1 Status Remote Monitor'
 title_meta: 'SMB1 Status Remote Monitor'
 keywords: ['smb1', 'detection', 'security', 'endpoint', 'monitoring']
@@ -38,6 +39,5 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 
 - Apply and import the remote monitors to the Managed Service Plan groups' Windows machines.
 - Import the dataview.
-
 
 

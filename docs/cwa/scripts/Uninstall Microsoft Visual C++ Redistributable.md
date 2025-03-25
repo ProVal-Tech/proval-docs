@@ -1,5 +1,6 @@
 ---
 id: '13cfc2e0-c088-424a-a1ab-5769b288a3a2'
+slug: /13cfc2e0-c088-424a-a1ab-5769b288a3a2
 title: 'Uninstall Microsoft Visual C++ Redistributable'
 title_meta: 'Uninstall Microsoft Visual C++ Redistributable'
 keywords: ['automate', 'uninstall', 'visual', 'redistributable', 'microsoft', 'script']
@@ -34,6 +35,5 @@ An Automate implementation of the [Invoke-VcRedistModule](<../../powershell/Invo
 ## Output
 
 - Script Log
-
 
 

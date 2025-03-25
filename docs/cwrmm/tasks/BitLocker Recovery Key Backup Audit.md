@@ -1,5 +1,6 @@
 ---
 id: 'b469ea90-0c1b-421b-89e2-be5c91501035'
+slug: /b469ea90-0c1b-421b-89e2-be5c91501035
 title: 'BitLocker Recovery Key Backup Audit'
 title_meta: 'BitLocker Recovery Key Backup Audit'
 keywords: ['bitlocker', 'ad', 'azure', 'backup', 'key', 'recovery', 'status']
@@ -111,6 +112,5 @@ The task should be scheduled to run once. Please see the example in the screensh
 
 - Script Log
 - Custom Field
-
 
 

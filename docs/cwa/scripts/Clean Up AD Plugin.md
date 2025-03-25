@@ -1,5 +1,6 @@
 ---
 id: 'fc26cfc8-33ff-405d-ba3a-bfad02637607'
+slug: /fc26cfc8-33ff-405d-ba3a-bfad02637607
 title: 'Clean Up AD Plugin'
 title_meta: 'Clean Up AD Plugin'
 keywords: ['active-directory', 'cleanup', 'database', 'synchronization']
@@ -32,6 +33,5 @@ Additionally, it removes all rows with `ObjectType` 1 or 2 from `plugin_ad_entri
 
 1. Import the 'Clean Up AD Plugin' script.
 2. Schedule the client script to run.
-
 
 

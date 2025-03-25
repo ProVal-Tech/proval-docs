@@ -1,5 +1,6 @@
 ---
 id: 'ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5'
+slug: /ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5
 title: 'Site - SentinelOne Group Key'
 title_meta: 'Site - SentinelOne Group Key'
 keywords: ['sentinelone', 'group', 'key', 'management', 'endpoints']
@@ -26,7 +27,6 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---SentinelOne-Group-Key/image_1.png)
-
 
 
 

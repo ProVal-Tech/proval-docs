@@ -1,5 +1,6 @@
 ---
 id: 'c7996686-560d-47e2-acbf-99ae88c3102e'
+slug: /c7996686-560d-47e2-acbf-99ae88c3102e
 title: 'User Management - Account Lockout Audit'
 title_meta: 'User Management - Account Lockout Audit'
 keywords: ['audit', 'locked', 'account', 'security', 'event', 'log', 'detection', 'management']
@@ -51,6 +52,5 @@ Examples:
 - Script log
 - plugin_proval_account_lock
 - Dataview
-
 
 

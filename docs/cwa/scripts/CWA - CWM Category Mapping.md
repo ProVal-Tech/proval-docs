@@ -1,5 +1,6 @@
 ---
 id: 'f840d208-1cd4-409a-bf46-b6492790a184'
+slug: /f840d208-1cd4-409a-bf46-b6492790a184
 title: 'CWA - CWM Category Mapping'
 title_meta: 'CWA - CWM Category Mapping'
 keywords: ['mapping', 'categories', 'automate', 'manage', 'query']
@@ -63,6 +64,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '87d846e1-3f32-4e3d-b4f9-4c17d2d2830f'
+slug: /87d846e1-3f32-4e3d-b4f9-4c17d2d2830f
 title: 'Password URL Online Computer Finder'
 title_meta: 'Password URL Online Computer Finder'
 keywords: ['monitor', 'online', 'computer', 'location', 'password', 'unifi', 'health', 'check']
@@ -56,6 +57,5 @@ AND computers.LastContact > DATE_ADD(NOW(), INTERVAL -15 MINUTE)
 AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
-
 
 

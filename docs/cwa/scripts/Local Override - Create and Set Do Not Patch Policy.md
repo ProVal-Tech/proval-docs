@@ -1,5 +1,6 @@
 ---
 id: '72fc5a6e-e66e-4a02-bfef-4419f3c9709c'
+slug: /72fc5a6e-e66e-4a02-bfef-4419f3c9709c
 title: 'Local Override - Create and Set Do Not Patch Policy'
 title_meta: 'Local Override - Create and Set Do Not Patch Policy'
 keywords: ['local', 'overrides', 'patch', 'policy', 'automation']
@@ -33,6 +34,5 @@ The script is useful for setting up local overrides on machines so that they won
 ## Output
 
 - Script log
-
 
 

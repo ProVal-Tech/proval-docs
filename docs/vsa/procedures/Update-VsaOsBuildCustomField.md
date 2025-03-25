@@ -1,5 +1,6 @@
 ---
 id: '9d026118-1651-4000-a908-a31c44c4df09'
+slug: /9d026118-1651-4000-a908-a31c44c4df09
 title: 'Update-VsaOsBuildCustomField'
 title_meta: 'Update-VsaOsBuildCustomField'
 keywords: ['customfield', 'osbuild', 'vsa', 'api', 'audit']
@@ -39,6 +40,5 @@ The output location for log, result, and error files is as follows:
 ```
 ./Update-OsBuildCustomField-log.txt
 ```
-
 
 

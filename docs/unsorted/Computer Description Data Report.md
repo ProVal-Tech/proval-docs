@@ -1,5 +1,6 @@
 ---
 id: '065ba00b-a1d0-4c99-9d2f-e606e60867d8'
+slug: /065ba00b-a1d0-4c99-9d2f-e606e60867d8
 title: 'Computer Description Data Report'
 title_meta: 'Computer Description Data Report'
 keywords: ['computer', 'description', 'audit', 'agent', 'dataview']
@@ -39,6 +40,5 @@ This script will find the computer description information from the agent and st
 - Script log
 - Script state
 - Dataview
-
 
 

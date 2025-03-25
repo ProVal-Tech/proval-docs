@@ -1,5 +1,6 @@
 ---
 id: '588520f3-c262-4b80-8c56-0b9411ab0bdc'
+slug: /588520f3-c262-4b80-8c56-0b9411ab0bdc
 title: 'DUO Auth Proxy'
 title_meta: 'DUO Auth Proxy'
 keywords: ['duo', 'monitor', 'version', 'authentication', 'proxy', 'windows']
@@ -28,7 +29,6 @@ Insert the details of the monitor in the table below.
 ## Target
 
 - Group of Windows machines having the 'DUO Security Authentication Proxy' application installed.
-
 
 
 

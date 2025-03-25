@@ -1,5 +1,6 @@
 ---
 id: '5bfc3175-98f3-4855-9df0-7fb9bf35a954'
+slug: /5bfc3175-98f3-4855-9df0-7fb9bf35a954
 title: 'Set OST Max Size'
 title_meta: 'Set OST Max Size'
 keywords: ['registry', 'outlook', 'pst', 'maxlargesize', 'warnlargesize']
@@ -31,6 +32,5 @@ Strapper Module
 ## Output
 
 - Script log
-
 
 

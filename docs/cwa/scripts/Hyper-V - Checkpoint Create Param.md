@@ -1,5 +1,6 @@
 ---
 id: 'e089e210-d2c5-498a-8c92-496c572ca705'
+slug: /e089e210-d2c5-498a-8c92-496c572ca705
 title: 'Hyper-V - Checkpoint Create Param'
 title_meta: 'Hyper-V - Checkpoint Create Param'
 keywords: ['checkpoint', 'hyper-v', 'virtual-machine', 'script', 'automation']
@@ -39,6 +40,5 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 ## Output
 
 - Script logs
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '163aca22-cc56-45ee-9732-3873c6117e60'
+slug: /163aca22-cc56-45ee-9732-3873c6117e60
 title: 'HP iLO Health Report'
 title_meta: 'HP iLO Health Report'
 keywords: ['ilo', 'health', 'report', 'client', 'status', 'device', 'firmware', 'network', 'memory', 'storage']
@@ -51,7 +52,6 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | Status                  | Overall status of the iLO device.                                                                         |
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTime           | Last run time of the script to gather data.                                                               |
-
 
 
 

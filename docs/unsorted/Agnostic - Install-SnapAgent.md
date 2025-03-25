@@ -1,5 +1,6 @@
 ---
 id: '91f1c2be-4667-4e81-b49a-fbc6f65cb9a4'
+slug: /91f1c2be-4667-4e81-b49a-fbc6f65cb9a4
 title: 'Agnostic - Install-SnapAgent'
 title_meta: 'Agnostic - Install-SnapAgent'
 keywords: ['snapagent', 'installer', 'windows', 'download', 'validation', 'installation', 'logging']

@@ -1,5 +1,6 @@
 ---
 id: '34942020-e99d-4959-892d-78c46a89d574'
+slug: /34942020-e99d-4959-892d-78c46a89d574
 title: 'Uninstall - Sophos'
 title_meta: 'Uninstall - Sophos'
 keywords: ['sophos', 'uninstall', 'script', 'automate', 'management']
@@ -56,6 +57,5 @@ No non-template variables in the script.
 
 - **There are a lot of leftover files on the target computer.**  
   The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
-
 
 

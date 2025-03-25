@@ -1,5 +1,6 @@
 ---
 id: '566fcde7-b6ad-48d5-9909-dbb9cd4da1be'
+slug: /566fcde7-b6ad-48d5-9909-dbb9cd4da1be
 title: 'Windows - Run Service as Specified User'
 title_meta: 'Windows - Run Service as Specified User'
 keywords: ['service', 'user', 'account', 'start', 'domain', 'local', 'authentication']
@@ -34,6 +35,5 @@ This script will start a specified service with a specific user account. It work
 ## Output
 
 - Script log
-
 
 

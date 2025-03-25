@@ -1,5 +1,6 @@
 ---
 id: '6eddbb86-86a9-4812-8a5e-3302933800c9'
+slug: /6eddbb86-86a9-4812-8a5e-3302933800c9
 title: 'EPM - Windows Configuration - Windows Explorer View - List'
 title_meta: 'EPM - Windows Configuration - Windows Explorer View - List'
 keywords: ['windows', 'explorer', 'list', 'view', 'shell', 'registry']
@@ -36,6 +37,5 @@ This script performs the following actions:
 ## Output
 
 - Script log
-
 
 

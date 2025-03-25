@@ -1,5 +1,6 @@
 ---
 id: '6656ef1e-eb6e-4516-840c-20d849c02d5d'
+slug: /6656ef1e-eb6e-4516-840c-20d849c02d5d
 title: 'Windows 10 Feature Update Process'
 title_meta: 'Windows 10 Feature Update Process'
 keywords: ['upgrade', 'windows', 'feature', 'update', 'process']
@@ -145,5 +146,4 @@ $fileStream = [System.IO.File]::OpenRead($zip)
 $hash = $md5.ComputeHash($fileStream)
 $hash -join ','
 ```
-
 

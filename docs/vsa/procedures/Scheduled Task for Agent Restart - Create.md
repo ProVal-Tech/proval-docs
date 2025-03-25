@@ -1,5 +1,6 @@
 ---
 id: '7eb2b58e-9f5e-4732-8457-6518060f0cc3'
+slug: /7eb2b58e-9f5e-4732-8457-6518060f0cc3
 title: 'Scheduled Task for Agent Restart - Create'
 title_meta: 'Scheduled Task for Agent Restart - Create'
 keywords: ['scheduled', 'task', 'vsa', 'agent', 'restart']
@@ -44,6 +45,5 @@ This section describes the location and method by which this script returns data
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 

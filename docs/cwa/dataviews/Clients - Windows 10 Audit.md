@@ -1,5 +1,6 @@
 ---
 id: 'b3dea728-9b29-4d6c-81ee-bf88b38602b7'
+slug: /b3dea728-9b29-4d6c-81ee-bf88b38602b7
 title: 'Clients - Windows 10 Audit'
 title_meta: 'Clients - Windows 10 Audit'
 keywords: ['windows', 'patching', 'compliance', 'support', 'computers', 'clients', 'plugins']
@@ -35,6 +36,5 @@ A thorough examination of Windows 10 computers and their patching status for eac
 | # Missing Patches Windows 10       | Total number of missing patches for Windows 10 computers.                                       |
 | # Failed Patches Windows 10        | Total number of failed patches for Windows 10 computers.                                        |
 | Windows 10 Patch Compliance         | Average patch compliance for all Windows 10 computers.                                          |
-
 
 

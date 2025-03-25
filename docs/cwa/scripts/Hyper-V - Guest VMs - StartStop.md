@@ -1,5 +1,6 @@
 ---
 id: '52d001b4-7152-4616-92de-99a002e2d22c'
+slug: /52d001b4-7152-4616-92de-99a002e2d22c
 title: 'Hyper-V - Guest VMs - StartStop'
 title_meta: 'Hyper-V - Guest VMs - StartStop'
 keywords: ['hyper-v', 'vm', 'control', 'shutdown', 'startup']
@@ -41,6 +42,5 @@ Please see [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870) for 
 
 - Outputs logs to the script log.
 - Outputs logs to log/data files in the script directory.
-
 
 

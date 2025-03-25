@@ -1,5 +1,6 @@
 ---
 id: '9a19342e-1fd7-4e68-b54a-6831f8eef5b8'
+slug: /9a19342e-1fd7-4e68-b54a-6831f8eef5b8
 title: 'Endpoint VPN Configuration'
 title_meta: 'Endpoint VPN Configuration'
 keywords: ['vpn', 'configuration', 'shortcut', 'gateway', 'tunneling', 'credentials', 'network']
@@ -106,5 +107,4 @@ Data must be manually populated in the Managed Variables for the endpoint's grou
 
 - `$env:SystemDrive//Users//Public//Desktop//<VPN_NAME>.lnk`
 - Agent Procedure log
-
 

@@ -1,5 +1,6 @@
 ---
 id: '002e4435-9142-4373-a857-6bf91c16d7af'
+slug: /002e4435-9142-4373-a857-6bf91c16d7af
 title: 'Nightly Database Backup Monitoring'
 title_meta: 'Nightly Database Backup Monitoring'
 keywords: ['ticket', 'backup', 'failure', 'connectwise', 'automate', 'email', 'notification']
@@ -57,6 +58,5 @@ A MySQL backup for ConnectWise Automate was generated last night, but it is lowe
 ## Output
 
 - Email
-
 
 

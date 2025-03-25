@@ -1,5 +1,6 @@
 ---
 id: '89fafb58-91d4-48de-a65d-dafa185bc63b'
+slug: /89fafb58-91d4-48de-a65d-dafa185bc63b
 title: 'Time Zone - Set'
 title_meta: 'Time Zone - Set'
 keywords: ['time', 'zone', 'script', 'windows', 'configuration']
@@ -187,6 +188,5 @@ If the time zone is not accepted, the script will exit with an error message.
 - Tonga Standard Time  
 - Samoa Standard Time  
 - Line Islands Standard Time  
-
 
 

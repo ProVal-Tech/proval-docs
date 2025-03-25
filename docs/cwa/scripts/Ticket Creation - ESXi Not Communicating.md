@@ -1,5 +1,6 @@
 ---
 id: '7e7eb565-3b99-4e6f-89f8-6257f5b4e7d6'
+slug: /7e7eb565-3b99-4e6f-89f8-6257f5b4e7d6
 title: 'Ticket Creation - ESXi Not Communicating'
 title_meta: 'Ticket Creation - ESXi Not Communicating'
 keywords: ['esxi', 'ticket', 'monitor', 'automation', 'network', 'inventory']
@@ -42,6 +43,5 @@ The only dependency for this script is that the monitor triggering the script mu
 >
 > There is 1 reported VM running on this host, which is displayed below:  
 > \<VM Name>
-
 
 

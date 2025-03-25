@@ -1,5 +1,6 @@
 ---
 id: '2029ecbe-c5f8-431e-9643-7aed63bec6d8'
+slug: /2029ecbe-c5f8-431e-9643-7aed63bec6d8
 title: 'Microsoft Outlook - OSTPST - Audit'
 title_meta: 'Microsoft Outlook - OSTPST - Audit'
 keywords: ['ost', 'pst', 'audit', 'collection', 'windows', 'script']
@@ -28,6 +29,5 @@ This script collects all the OST/PST file names and sizes from Windows machines 
 
 - Script log
 - Dataview
-
 
 

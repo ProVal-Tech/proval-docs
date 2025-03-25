@@ -1,5 +1,6 @@
 ---
 id: 'b2d7d16d-ecc3-4c23-b1ce-f05027098fc1'
+slug: /b2d7d16d-ecc3-4c23-b1ce-f05027098fc1
 title: 'Enable AD Recycle Bin'
 title_meta: 'Enable AD Recycle Bin'
 keywords: ['ad', 'recycle', 'bin', 'infrastructure', 'masters']
@@ -30,7 +31,6 @@ The purpose of this solution is to enable the AD Recycle Bin on AD Infrastructur
 - Create the [Device Group - Infrastructure Master - Without Recycle Bin](<../cwrmm/groups/Infrastructure Master - Without Recycle Bin.md>).
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](<../cwrmm/tasks/Enable AD Recycle Bin.md>).
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](<../cwrmm/monitors/Enable AD Recycle Bin - Failure.md>) if the partner wants tickets when the [Task - Enable AD Recycle Bin](<../cwrmm/tasks/Enable AD Recycle Bin.md>) fails to enable the AD Recycle Bin.
-
 
 
 

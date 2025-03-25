@@ -1,5 +1,6 @@
 ---
 id: 'f3c63891-aac1-49f9-a05d-552886c5b6da'
+slug: /f3c63891-aac1-49f9-a05d-552886c5b6da
 title: 'Computer Department AuditingDV'
 title_meta: 'Computer Department AuditingDV'
 keywords: ['ad', 'users', 'department', 'information', 'collection']
@@ -33,6 +34,5 @@ This script collects the department information of AD users. It stores the infor
 - Table `plugin_proval_computer_department`
 - Dataview
 - etc.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '5462a5dd-ba08-475c-b397-a1fb656649ae'
+slug: /5462a5dd-ba08-475c-b397-a1fb656649ae
 title: 'Admin - User Permission Changes or Creation'
 title_meta: 'Admin - User Permission Changes or Creation'
 keywords: ['monitor', 'user', 'activity', 'permissions', 'alert']
@@ -36,6 +37,5 @@ Details of the change are as follows:
 Thank you,  
 
 ![Image](../../../static/img/Admin---User-Permission-Changes-or-Creation/image_1.png)
-
 
 

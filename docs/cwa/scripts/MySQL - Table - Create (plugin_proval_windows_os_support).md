@@ -1,5 +1,6 @@
 ---
 id: '09d6c579-dbce-4876-81aa-0ab7cf5432b1'
+slug: /09d6c579-dbce-4876-81aa-0ab7cf5432b1
 title: 'MySQL - Table - Create (plugin_proval_windows_os_support)'
 title_meta: 'MySQL - Table - Create (plugin_proval_windows_os_support)'
 keywords: ['windows', 'patching', 'custom', 'table', 'plugin']
@@ -22,6 +23,5 @@ The primary purpose of this script is to insert the latest version of the [SEC -
 ## Sample Run
 
 ![Sample Run](../../../static/img/MySQL---Table---Create-(plugin_proval_windows_os_support)/image_1.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '09fb13cb-05b1-4515-8041-128689d933ff'
+slug: /09fb13cb-05b1-4515-8041-128689d933ff
 title: 'Get-AutopilotHash'
 title_meta: 'Get-AutopilotHash'
 keywords:  ['autopilot', 'hash', 'device', 'registration']
@@ -62,4 +63,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Logs
-

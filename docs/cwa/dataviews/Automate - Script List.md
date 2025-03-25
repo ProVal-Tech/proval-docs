@@ -1,5 +1,6 @@
 ---
 id: 'afe8b7a5-442c-415e-9a9a-32a10702c189'
+slug: /afe8b7a5-442c-415e-9a9a-32a10702c189
 title: 'Automate - Script List'
 title_meta: 'Automate - Script List'
 keywords: ['script', 'summary', 'dataview', 'logs', 'permissions', 'performance']
@@ -43,6 +44,5 @@ The script log retention days can be seen at the Automate location below:
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Automate---Script-List/image_2.png)
-
 
 

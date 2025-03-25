@@ -1,5 +1,6 @@
 ---
 id: '54992d2f-f374-41bb-9f61-e4d2fcc93478'
+slug: /54992d2f-f374-41bb-9f61-e4d2fcc93478
 title: '5 Consecutive Patch Jobs Failed'
 title_meta: '5 Consecutive Patch Jobs Failed'
 keywords: ['monitor', 'patch', 'failed', 'microsoft', 'jobs']
@@ -21,6 +22,5 @@ This monitor will detect servers that have had five failed patches in a row for 
 ## Target
 
 The SQL query targets only the servers in a patching group.
-
 
 

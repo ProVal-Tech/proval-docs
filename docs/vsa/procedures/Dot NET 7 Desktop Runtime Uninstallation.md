@@ -1,5 +1,6 @@
 ---
 id: '15acbab3-e89e-4cac-8b1a-8f863911ac99'
+slug: /15acbab3-e89e-4cac-8b1a-8f863911ac99
 title: 'Dot NET 7 Desktop Runtime Uninstallation'
 title_meta: 'Dot NET 7 Desktop Runtime Uninstallation'
 keywords: ['dotnet', 'runtime', 'uninstallation', 'agent', 'procedure']
@@ -45,6 +46,5 @@ Agent Procedure Log
 ## Export Attachment
 
 Attach the XML VSA Export content to this document.
-
 
 

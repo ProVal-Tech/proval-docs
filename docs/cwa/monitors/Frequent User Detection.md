@@ -1,5 +1,6 @@
 ---
 id: '925ec2d0-a4f0-4bff-8482-f0f4137885ce'
+slug: /925ec2d0-a4f0-4bff-8482-f0f4137885ce
 title: 'Frequent User Detection'
 title_meta: 'Frequent User Detection'
 keywords: ['monitor', 'windows', 'workstation', 'agent', 'user', 'detection']
@@ -24,6 +25,5 @@ You can change the number of days in the monitor to set different script run fre
 ## Target
 
 Windows Workstations
-
 
 

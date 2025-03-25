@@ -1,5 +1,6 @@
 ---
 id: 'f162bdc7-8df2-41b7-b473-b98a85cea39e'
+slug: /f162bdc7-8df2-41b7-b473-b98a85cea39e
 title: 'Clear Browser Caches'
 title_meta: 'Clear Browser Caches'
 keywords: ['cache', 'browsers', 'chrome', 'edge', 'brave', 'firefox', 'cleanup']
@@ -39,6 +40,5 @@ This script will clear the caches for the following browsers:
 ## Output
 
 - Script log
-
 
 

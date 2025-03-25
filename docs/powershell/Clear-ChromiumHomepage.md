@@ -1,5 +1,6 @@
 ---
 id: '8c68f90b-3bd8-4c83-9383-f939460f36df'
+slug: /8c68f90b-3bd8-4c83-9383-f939460f36df
 title: 'Clear-ChromiumHomepage'
 title_meta: 'Clear-ChromiumHomepage'
 keywords: ['clear', 'homepage', 'chromium', 'browser']
@@ -29,6 +30,5 @@ Removes enforced homepages in Chrome and Edge. After running, user configuration
 
 ## Output
 `.\\Set-ChromiumHomepage-log.txt`
-
 
 

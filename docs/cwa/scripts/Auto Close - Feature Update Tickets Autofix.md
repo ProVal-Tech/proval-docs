@@ -1,5 +1,6 @@
 ---
 id: '84cd2c82-8c0b-4f7e-9240-6b640add79e0'
+slug: /84cd2c82-8c0b-4f7e-9240-6b640add79e0
 title: 'Auto Close - Feature Update Tickets Autofix'
 title_meta: 'Auto Close - Feature Update Tickets Autofix'
 keywords: ['tickets', 'feature', 'update', 'windows', 'monitor']
@@ -34,6 +35,5 @@ The purpose of the script is to finish the new or open tickets created by the fe
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticket ID to finish/close                       |
-
 
 

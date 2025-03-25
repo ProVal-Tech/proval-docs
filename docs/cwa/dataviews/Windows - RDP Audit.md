@@ -1,5 +1,6 @@
 ---
 id: '6925218d-aa6b-4919-a873-262691c16b9e'
+slug: /6925218d-aa6b-4919-a873-262691c16b9e
 title: 'Windows - RDP Audit'
 title_meta: 'Windows - RDP Audit'
 keywords: ['rdp', 'agents', 'status', 'report', 'windows']
@@ -29,6 +30,5 @@ This dataview provides information about whether RDP is enabled or disabled on a
 | Operating System    | Operating system of an agent                |
 | Agent Status        | Agent status, whether offline or online     |
 | RDP Status          | RDP status, whether enabled or disabled     |
-
 
 

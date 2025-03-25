@@ -1,5 +1,6 @@
 ---
 id: '5a5463d0-0ce3-4c09-bd41-39da28e16d0f'
+slug: /5a5463d0-0ce3-4c09-bd41-39da28e16d0f
 title: 'pvl_network_Adapter'
 title_meta: 'pvl_network_Adapter'
 keywords: ['dns', 'network', 'data', 'storage', 'assignments']
@@ -47,6 +48,5 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | MacAddress           | varchar(32)   | MAC Address of the network interface                           |
 | SettingID            | varchar(64)   | Interface ID of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '36fa496a-be60-416f-87a6-f725a1241540'
+slug: /36fa496a-be60-416f-87a6-f725a1241540
 title: 'Chromium Browsers - Extension - Install'
 title_meta: 'Chromium Browsers - Extension - Install'
 keywords: ['extensions', 'chromium', 'chrome', 'edge', 'brave', 'vivaldi']
@@ -135,7 +136,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 
 

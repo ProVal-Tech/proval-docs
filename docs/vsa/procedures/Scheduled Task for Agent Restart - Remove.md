@@ -1,5 +1,6 @@
 ---
 id: 'b4f78d3c-4c41-46eb-9fee-94b9f7d3caab'
+slug: /b4f78d3c-4c41-46eb-9fee-94b9f7d3caab
 title: 'Scheduled Task for Agent Restart - Remove'
 title_meta: 'Scheduled Task for Agent Restart - Remove'
 keywords: ['vsa', 'agent', 'scheduled', 'task', 'restart', 'remove']
@@ -38,6 +39,5 @@ The location and method by which this script returns data.
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 

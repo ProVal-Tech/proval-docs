@@ -1,5 +1,6 @@
 ---
 id: '19cf3c3f-14e2-40a0-86c3-735b614a9331'
+slug: /19cf3c3f-14e2-40a0-86c3-735b614a9331
 title: 'Deploy - KB5005394 - Out of Band Patch'
 title_meta: 'Deploy - KB5005394 - Out of Band Patch'
 keywords: ['kb5005394', 'patch', 'windows', 'update', 'installation']
@@ -48,6 +49,5 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 - Script log
 - Script state
-
 
 

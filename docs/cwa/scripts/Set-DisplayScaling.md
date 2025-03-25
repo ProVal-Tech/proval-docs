@@ -1,5 +1,6 @@
 ---
 id: 'dc98b12a-e57d-4d58-b8c9-9976d33b2a10'
+slug: /dc98b12a-e57d-4d58-b8c9-9976d33b2a10
 title: 'Set-DisplayScaling'
 title_meta: 'Set-DisplayScaling'
 keywords: ['display', 'scaling', 'windows', 'users', 'script']
@@ -35,6 +36,5 @@ This script sets custom display scaling on existing as well as new users for Win
 ## Output
 
 - Script log
-
 
 

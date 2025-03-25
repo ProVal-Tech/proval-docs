@@ -1,5 +1,6 @@
 ---
 id: '06e1e902-b204-498e-a31f-9de7879c528e'
+slug: /06e1e902-b204-498e-a31f-9de7879c528e
 title: 'Update Orchestrator Bouncer'
 title_meta: 'Update Orchestrator Bouncer'
 keywords: ['update', 'orchestrator', 'bouncer', 'windows', 'script', 'patching']
@@ -64,5 +65,4 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
-
 

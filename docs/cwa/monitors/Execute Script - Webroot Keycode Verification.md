@@ -1,5 +1,6 @@
 ---
 id: '1500f46b-72f9-4194-aafa-2222caf5a649'
+slug: /1500f46b-72f9-4194-aafa-2222caf5a649
 title: 'Execute Script - Webroot Keycode Verification'
 title_meta: 'Execute Script - Webroot Keycode Verification'
 keywords: ['webroot', 'keycode', 'alerts', 'audit', 'endpoint']

@@ -1,5 +1,6 @@
 ---
 id: '50779f68-4329-4d15-b069-c50fcba00614'
+slug: /50779f68-4329-4d15-b069-c50fcba00614
 title: 'Remove - All But My - ScreenConnect Client Installations'
 title_meta: 'Remove - All But My - ScreenConnect Client Installations'
 keywords: ['screenconnect', 'automate', 'script', 'removal', 'edf']
@@ -89,4 +90,3 @@ This script removes all instances of ScreenConnect from the machine except the o
 </div>
 ## Attachments
 [Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml](<../../../static/attachments/itg/14767921/Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml>)
-

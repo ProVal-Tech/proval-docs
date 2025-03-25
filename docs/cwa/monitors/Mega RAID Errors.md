@@ -1,5 +1,6 @@
 ---
 id: 'd2a8f581-37e3-4c27-8e98-2341ec4382ad'
+slug: /d2a8f581-37e3-4c27-8e98-2341ec4382ad
 title: 'Mega RAID Errors'
 title_meta: 'Mega RAID Errors'
 keywords: ['monitor', 'error', 'raid', 'windows', 'server']

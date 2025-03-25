@@ -1,5 +1,6 @@
 ---
 id: '825898ba-8e95-4b71-a8f0-497bca838433'
+slug: /825898ba-8e95-4b71-a8f0-497bca838433
 title: 'BIS Notification Prompter'
 title_meta: 'BIS Notification Prompter'
 keywords: ['notification', 'script', 'task', 'message', 'email', 'phone', 'windows']
@@ -214,5 +215,4 @@ This task can be scheduled manually on-demand to any agent or to a certain group
   Navigate to the right side of the screen and click on the three bars as shown below:  
   ![Three Bars](../../../static/img/BIS-Notification-Prompter/image_33.png)  
   ![Three Bars Step 2](../../../static/img/BIS-Notification-Prompter/image_34.png)  
-
 

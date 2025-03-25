@@ -1,5 +1,6 @@
 ---
 id: '5d7a5b18-9aa8-4892-b70a-908dcfbe0fa2'
+slug: /5d7a5b18-9aa8-4892-b70a-908dcfbe0fa2
 title: 'AD Plugin Bug (Dirty Tables)'
 title_meta: 'AD Plugin Bug (Dirty Tables)'
 keywords: ['cwa', 'active-directory', 'plugin', 'cleanup', 'workaround']
@@ -100,6 +101,5 @@ The script [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plu
 ## FAQ
 
 *No FAQs available at this time.*
-
 
 

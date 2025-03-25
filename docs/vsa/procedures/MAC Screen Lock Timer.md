@@ -1,5 +1,6 @@
 ---
 id: 'b0101ab1-481a-437c-aec0-26e616a66270'
+slug: /b0101ab1-481a-437c-aec0-26e616a66270
 title: 'MAC Screen Lock Timer'
 title_meta: 'MAC Screen Lock Timer'
 keywords: ['mac', 'screensaver', 'display', 'timer', 'settings']
@@ -46,6 +47,5 @@ The agent procedure modifies two settings on the Mac machine via `executeShellCo
 **Note**: While the pmset command actively updates the GUI to reflect the setting (number 2 in the image), modifying the .plist does not update the GUI (number 1 in the image). The setting takes effect actively but does not have its GUI updated to reflect the change. The pmset command cannot change the screensaver, so the .plist file is modified to achieve this.
 
 ![Image](../../../static/img/MAC-Screen-Lock-Timer/image_1.png)
-
 
 

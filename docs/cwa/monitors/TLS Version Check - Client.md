@@ -1,5 +1,6 @@
 ---
 id: 'b0639ecd-38cd-4afd-a764-bcce13fd8ac7'
+slug: /b0639ecd-38cd-4afd-a764-bcce13fd8ac7
 title: 'TLS Version Check - Client'
 title_meta: 'TLS Version Check - Client'
 keywords: ['tls', 'monitor', 'windows', 'security', 'version']
@@ -36,6 +37,5 @@ Managed Windows Servers and Workstations
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Client](<./Import-%20TLS%20Version%20Check%20-%20Client.md>)
-
 
 

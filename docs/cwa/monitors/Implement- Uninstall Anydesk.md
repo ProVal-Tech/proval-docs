@@ -1,5 +1,6 @@
 ---
 id: '8b658a17-cb91-457a-9efc-4b8f676b0fb0'
+slug: /8b658a17-cb91-457a-9efc-4b8f676b0fb0
 title: 'Implement- Uninstall Anydesk'
 title_meta: 'Implement- Uninstall Anydesk'
 keywords: ['uninstall', 'anydesk', 'monitor', 'groupid', 'query']

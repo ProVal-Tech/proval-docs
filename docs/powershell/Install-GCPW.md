@@ -1,5 +1,6 @@
 ---
 id: '7afab3a2-71ce-4176-8c0e-e088ada0dad6'
+slug: /7afab3a2-71ce-4176-8c0e-e088ada0dad6
 title: 'Install-GCPW'
 title_meta: 'Install-GCPW'
 keywords: ['install', 'gcpw', 'google', 'credential', 'provider']
@@ -44,6 +45,5 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 ## Output
 - `.\Install-GCPW-log.txt`
 - `.\Install-GCPW-error.txt`
-
 
 

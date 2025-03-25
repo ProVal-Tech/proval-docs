@@ -1,5 +1,6 @@
 ---
 id: 'c1b906ec-7aea-41f3-8241-358d3d644900'
+slug: /c1b906ec-7aea-41f3-8241-358d3d644900
 title: 'Get Patch Config'
 title_meta: 'Get Patch Config'
 keywords: ['patch', 'config', 'windows', 'update', 'script', 'automation']
@@ -63,6 +64,5 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
-
 
 

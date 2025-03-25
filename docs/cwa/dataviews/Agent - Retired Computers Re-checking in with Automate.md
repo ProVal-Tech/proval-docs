@@ -1,5 +1,6 @@
 ---
 id: '14948a27-bf40-4dd0-9e8c-73dc06c0b972'
+slug: /14948a27-bf40-4dd0-9e8c-73dc06c0b972
 title: 'Agent - Retired Computers Re-checking in with Automate'
 title_meta: 'Agent - Retired Computers Re-checking in with Automate'
 keywords: ['dataview', 'retired', 'computers', 'automate', 'information']
@@ -30,6 +31,5 @@ Dataview displays information about computers that were previously retired and a
 | Serial Number            | Serial Number of Computer             |
 | Last User Name           | Last logged-in user name              |
 | Retire Comments          | Comments added while retiring          |
-
 
 

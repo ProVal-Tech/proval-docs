@@ -1,5 +1,6 @@
 ---
 id: 'f943b29e-998e-48be-8327-c03ee9c0818e'
+slug: /f943b29e-998e-48be-8327-c03ee9c0818e
 title: 'Software - Open DNS - Machines Missing Open DNS W Wireles'
 title_meta: 'Software - Open DNS - Machines Missing Open DNS W Wireles'
 keywords: ['open', 'dns', 'dataview', 'endpoint', 'management']
@@ -28,6 +29,5 @@ None
 | Machine Type   | The type of machine: Server | Workstation | Mac | Linux                                          |
 | Wireless Card   | Checks if any of the cards connected to the endpoint are wireless compatible                   |
 | Umbrella Agent | Indicates if the Open DNS/Umbrella Agent is installed on the endpoint                          |
-
 
 

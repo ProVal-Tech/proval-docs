@@ -1,5 +1,6 @@
 ---
 id: '3990e2f6-344e-4d2a-98ac-bd73b7a6c752'
+slug: /3990e2f6-344e-4d2a-98ac-bd73b7a6c752
 title: 'Deploy DNS Filter Agent'
 title_meta: 'Deploy DNS Filter Agent'
 keywords: ['dns', 'filter', 'agent', 'installation', 'monitor']
@@ -37,6 +38,5 @@ OR
 
 Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
-
 
 

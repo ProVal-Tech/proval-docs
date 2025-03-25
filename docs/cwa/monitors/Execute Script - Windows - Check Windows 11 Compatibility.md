@@ -1,5 +1,6 @@
 ---
 id: '8aa2542c-c61f-43b8-a7ec-ec33558319e4'
+slug: /8aa2542c-c61f-43b8-a7ec-ec33558319e4
 title: 'Execute Script - Windows - Check Windows 11 Compatibility'
 title_meta: 'Execute Script - Windows - Check Windows 11 Compatibility'
 keywords: ['windows', 'monitor', 'compatibility', 'check', 'script']
@@ -27,6 +28,5 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Windows 11 Compatibility Check
-
 
 

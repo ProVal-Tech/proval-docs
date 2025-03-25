@@ -1,5 +1,6 @@
 ---
 id: '1a75efd1-8457-4b11-b9a8-0f7fe1a39db6'
+slug: /1a75efd1-8457-4b11-b9a8-0f7fe1a39db6
 title: 'Company - Weak Password Count'
 title_meta: 'Company - Weak Password Count'
 keywords: ['weak', 'passwords', 'audit', 'count', 'accounts', 'domain']
@@ -26,6 +27,5 @@ This document holds the count of accounts with weak passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Weak-Password-Count/image_1.png)
-
 
 

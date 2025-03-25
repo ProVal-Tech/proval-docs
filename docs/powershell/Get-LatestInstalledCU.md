@@ -1,5 +1,6 @@
 ---
 id: '81d82975-889b-49e4-b229-36d4f162a4ff'
+slug: /81d82975-889b-49e4-b229-36d4f162a4ff
 title: 'Get-LatestInstalledCU'
 title_meta: 'Get-LatestInstalledCU'
 keywords: ['cumulative', 'update', 'windows', 'patch']
@@ -48,6 +49,5 @@ OSBuild         : 10.0.22621.1702
 ReleaseDate     : 2023-05-09
 KBid            : KB5026372
 ```
-
 
 

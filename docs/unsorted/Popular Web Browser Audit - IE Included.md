@@ -1,5 +1,6 @@
 ---
 id: '59c1fe7a-2bb8-420c-bd29-938a615fe37f'
+slug: /59c1fe7a-2bb8-420c-bd29-938a615fe37f
 title: 'Popular Web Browser Audit - IE Included'
 title_meta: 'Popular Web Browser Audit - IE Included'
 keywords: ['audit', 'web', 'browser', 'internet', 'explorer', 'disabled']
@@ -87,6 +88,5 @@ FROM
       c.computerid
   ) AS t
 ```
-
 
 

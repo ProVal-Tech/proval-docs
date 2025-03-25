@@ -1,5 +1,6 @@
 ---
 id: '13151439-b80d-4746-b804-1d55a6206462'
+slug: /13151439-b80d-4746-b804-1d55a6206462
 title: 'Agent - Remote Repair - RMM +'
 title_meta: 'Agent - Remote Repair - RMM +'
 keywords: ['connectwise', 'automate', 'agent', 'offline', 'script', 'rmm', 'ticketing']
@@ -89,6 +90,5 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 
 - The log that comes along with this is very long.  
   - This is by intent; there are many calls to subscripts for RMM+, and having detailed logging is necessary.
-
 
 

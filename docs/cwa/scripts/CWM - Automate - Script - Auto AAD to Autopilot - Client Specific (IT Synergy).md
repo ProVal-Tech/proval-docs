@@ -1,5 +1,6 @@
 ---
 id: 'aeaaded2-8468-4c74-8f46-b6e301dca26a'
+slug: /aeaaded2-8468-4c74-8f46-b6e301dca26a
 title: 'CWM - Automate - Script - Auto AAD to Autopilot - Client Specific (IT Synergy)'
 title_meta: 'CWM - Automate - Script - Auto AAD to Autopilot - Client Specific (IT Synergy)'
 keywords: ['defrag', 'optimize', 'volume', 'script', 'logging']
@@ -75,6 +76,5 @@ Example:
 - Local file on computer
 - Dataview
 - etc.
-
 
 

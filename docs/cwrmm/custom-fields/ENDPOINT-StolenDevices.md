@@ -1,5 +1,6 @@
 ---
 id: 'ff056937-ea5b-48f4-b76d-74566b981da8'
+slug: /ff056937-ea5b-48f4-b76d-74566b981da8
 title: 'Stolen Devices Custom Fields'
 title_meta: 'Stolen Devices Custom Fields'
 keywords: ['Lock','Stolen','System']

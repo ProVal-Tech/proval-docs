@@ -1,5 +1,6 @@
 ---
 id: '953e9fae-c095-4143-bc9b-b02392a04c09'
+slug: /953e9fae-c095-4143-bc9b-b02392a04c09
 title: 'No Patch Inventory'
 title_meta: 'No Patch Inventory'
 keywords: ['monitor', 'patch', 'inventory', 'detection']

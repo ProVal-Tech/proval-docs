@@ -1,5 +1,6 @@
 ---
 id: '46e361b5-3657-4e5b-800a-858f331b3b8b'
+slug: /46e361b5-3657-4e5b-800a-858f331b3b8b
 title: 'Java - Uninstall JDK and JRE'
 title_meta: 'Java - Uninstall JDK and JRE'
 keywords: ['java', 'uninstall', 'script', 'windows', 'software']
@@ -40,6 +41,5 @@ This script checks and uninstalls all installed versions of Java from the target
 ## Output
 
 - Script log
-
 
 

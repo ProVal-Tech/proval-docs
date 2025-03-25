@@ -1,5 +1,6 @@
 ---
 id: 'a7dad4d0-d2dc-44b2-972b-0893d7814f8c'
+slug: /a7dad4d0-d2dc-44b2-972b-0893d7814f8c
 title: 'Certificate Expiration  30 Days'
 title_meta: 'Certificate Expiration  30 Days'
 keywords: ['ssl', 'certificate', 'monitor', 'expiration', 'alert']
@@ -60,6 +61,5 @@ Expiration: 2023-04-20 19:59:59
 ## Example Ticket
 
 ![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
-
 
 

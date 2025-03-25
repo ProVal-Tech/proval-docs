@@ -1,5 +1,6 @@
 ---
 id: '43acf895-0eee-4e39-ac9d-cabc5f23e9a1'
+slug: /43acf895-0eee-4e39-ac9d-cabc5f23e9a1
 title: 'Last Scanned Patch Date  7 days'
 title_meta: 'Last Scanned Patch Date  7 days'
 keywords: ['monitor', 'autofix', 'patch', 'inventory', 'script']
@@ -20,6 +21,5 @@ The monitor set will look for machines where the patch inventory is older than 7
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will target machines with patching policies automatically.
-
 
 

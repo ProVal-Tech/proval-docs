@@ -1,5 +1,6 @@
 ---
 id: '5a4a9091-269e-4921-a7ba-bc87c209a43c'
+slug: /5a4a9091-269e-4921-a7ba-bc87c209a43c
 title: ' Windows 10 - Feature Update - Install Latest'
 title_meta: ' Windows 10 - Feature Update - Install Latest'
 keywords: ['windows', 'update', 'feature', 'installation', 'reboot']
@@ -113,6 +114,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

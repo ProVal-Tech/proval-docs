@@ -1,5 +1,6 @@
 ---
 id: 'c182b594-6dab-4c45-8aca-67807dbd23ab'
+slug: /c182b594-6dab-4c45-8aca-67807dbd23ab
 title: 'Windows 10 Feature Update Process (20H2 Version)'
 title_meta: 'Windows 10 Feature Update Process (20H2 Version)'
 keywords: ['windows', 'upgrade', 'feature', 'build', '20h2', 'installation']
@@ -54,6 +55,5 @@ This script is used to upgrade a Windows 10 operating system to a specific Featu
 ## Output
 
 - Script log
-
 
 

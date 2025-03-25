@@ -1,5 +1,6 @@
 ---
 id: '186ae433-e9bc-46d1-9056-71924879ae6e'
+slug: /186ae433-e9bc-46d1-9056-71924879ae6e
 title: 'Enable IE Mode in Microsoft Edge'
 title_meta: 'Enable IE Mode in Microsoft Edge'
 keywords: ['ie', 'edge', 'integration', 'site', 'mode']
@@ -39,7 +40,6 @@ Once the setting is done, it checks the computer EDFs for logging in the databas
 ## Output
 
 - Script log
-
 
 
 

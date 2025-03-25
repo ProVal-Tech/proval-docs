@@ -1,5 +1,6 @@
 ---
 id: '2f451b19-e8af-4a24-9032-17d65ba2b40d'
+slug: /2f451b19-e8af-4a24-9032-17d65ba2b40d
 title: 'MySQL - View - Create (plugin_proval_auto_approval_status)'
 title_meta: 'MySQL - View - Create (plugin_proval_auto_approval_status)'
 keywords: ['view', 'proval', 'automate', 'permissions', 'script']

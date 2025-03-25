@@ -1,5 +1,6 @@
 ---
 id: '9e2ff280-a904-48c5-b2de-017c77881147'
+slug: /9e2ff280-a904-48c5-b2de-017c77881147
 title: 'Powershell V2 - Disable'
 title_meta: 'Powershell V2 - Disable'
 keywords: ['automate', 'implementation', 'powershell', 'script']
@@ -24,6 +25,5 @@ This document provides an implementation guide for the Disable-PowershellVersion
 ## Process
 
 Please review the agnostic content document for the complete process.
-
 
 

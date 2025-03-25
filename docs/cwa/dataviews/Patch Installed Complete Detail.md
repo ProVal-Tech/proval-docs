@@ -1,5 +1,6 @@
 ---
 id: '0f445886-adfb-4eb2-844f-f945264bebd7'
+slug: /0f445886-adfb-4eb2-844f-f945264bebd7
 title: 'Patch Installed Complete Detail'
 title_meta: 'Patch Installed Complete Detail'
 keywords: ['patching', 'agents', 'installation', 'update', 'computer', 'status']
@@ -26,6 +27,5 @@ This document contains detailed information about patching on the agent, includi
 | Patching Operation   | Indicates whether the patch is installing, uninstalling, or stuck on rollback                 |
 | Patching Result     | The state of the patch, whether it was successfully installed, is running, or has failed       |
 | Operating System    | The operating system of the agent                                                               |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b605b808-7016-4911-8c37-6b950de40919'
+slug: /b605b808-7016-4911-8c37-6b950de40919
 title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'custom', 'field', 'task']
@@ -29,7 +30,6 @@ Create the following custom fields:
 
 Create and schedule this task:
 - [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](<../cwrmm/tasks/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
-
 
 
 

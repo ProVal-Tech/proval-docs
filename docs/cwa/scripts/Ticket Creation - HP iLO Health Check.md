@@ -1,5 +1,6 @@
 ---
 id: '5c6b4bbb-732d-4d97-af38-f10d51a8a96c'
+slug: /5c6b4bbb-732d-4d97-af38-f10d51a8a96c
 title: 'Ticket Creation - HP iLO Health Check'
 title_meta: 'Ticket Creation - HP iLO Health Check'
 keywords: ['automation', 'ticketing', 'monitoring', 'client', 'server']
@@ -27,6 +28,5 @@ The script should be executed from the `△ Custom - Ticket Creation - HP iLO He
 
 - Script Log
 - Ticket
-
 
 

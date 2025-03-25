@@ -1,5 +1,6 @@
 ---
 id: '71b6a39c-0d61-4959-8f1e-69b1cc84d182'
+slug: /71b6a39c-0d61-4959-8f1e-69b1cc84d182
 title: 'Online Status Alerting - Autofix - Update Ticket + Email EDF'
 title_meta: 'Online Status Alerting - Autofix - Update Ticket + Email EDF'
 keywords: ['online', 'status', 'alerting', 'ticket', 'management', 'notification']
@@ -67,6 +68,5 @@ After importing the script, it should either be debugged or run against any comp
 
 - Email
 - Ticket status change to the desired status as per configuration done in the system property "Status_To_Change_To."
-
 
 

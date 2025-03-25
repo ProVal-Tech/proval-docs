@@ -1,5 +1,6 @@
 ---
 id: 'e4a1a60d-1e35-4336-a1a3-28e2ffb12855'
+slug: /e4a1a60d-1e35-4336-a1a3-28e2ffb12855
 title: 'plugin_proval_unifiwireless'
 title_meta: 'plugin_proval_unifiwireless'
 keywords: ['network', 'controller', 'data', 'unifi', 'site', 'security', 'wireless', 'passphrase']
@@ -37,6 +38,5 @@ This document holds network data for each controller listed in [EPM - Data Colle
 | IsGuest       | String | True if the network is a guest network; otherwise, false.                                          |
 | Security      | String | The security platform being used by the network.                                                  |
 | WPAMode       | String | The WPA mode being used by the network.                                                            |
-
 
 

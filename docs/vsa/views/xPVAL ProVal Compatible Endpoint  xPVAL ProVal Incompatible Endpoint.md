@@ -1,5 +1,6 @@
 ---
 id: '2e0182e6-a723-4b9d-a64b-93fbad74b870'
+slug: /2e0182e6-a723-4b9d-a64b-93fbad74b870
 title: 'xPVAL ProVal Compatible Endpoint  xPVAL ProVal Incompatible Endpoint'
 title_meta: 'xPVAL ProVal Compatible Endpoint  xPVAL ProVal Incompatible Endpoint'
 keywords: ['proval', 'endpoint', 'compatibility', 'filter', 'vsa']
@@ -30,6 +31,5 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Incompatible Endpoint | Y                | NOT "Compatible" |
-
 
 

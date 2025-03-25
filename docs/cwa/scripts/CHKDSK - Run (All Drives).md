@@ -1,5 +1,6 @@
 ---
 id: '1bbb16d1-e01f-48c0-8957-1f8b1fc35a83'
+slug: /1bbb16d1-e01f-48c0-8957-1f8b1fc35a83
 title: 'CHKDSK - Run (All Drives)'
 title_meta: 'CHKDSK - Run (All Drives)'
 keywords: ['chkdsk', 'internal', 'drives', 'script', 'automation']
@@ -32,6 +33,5 @@ This script will run CHKDSK for all internal drives on a machine. It first check
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2bd68e4a-6a06-47e0-a1af-b67bf4b7ed41'
+slug: /2bd68e4a-6a06-47e0-a1af-b67bf4b7ed41
 title: 'Unused ExtradataFields'
 title_meta: 'Unused ExtradataFields'
 keywords: ['extradatafields', 'default', 'modification', 'data', 'columns']
@@ -30,6 +31,5 @@ The purpose of this document is to represent the Extradatafields that have eithe
 | IsEditable                | Represents whether the EDF is editable or not                       |
 | IsRestricted              | Represents whether the EDF is restricted or not                     |
 | (Masked/Password)        | Represents whether the EDF is masked or has a password              |
-
 
 

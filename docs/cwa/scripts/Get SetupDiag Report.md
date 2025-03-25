@@ -1,5 +1,6 @@
 ---
 id: '6042c7c0-dd54-4eda-8889-ef2ff879e5a2'
+slug: /6042c7c0-dd54-4eda-8889-ef2ff879e5a2
 title: 'Get SetupDiag Report'
 title_meta: 'Get SetupDiag Report'
 keywords: ['setupdiag', 'execution', 'reporting', 'email', 'results']
@@ -38,6 +39,5 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 Outputs to a variable (`SetupDiagResult`) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](<../../powershell/Invoke-SetupDiag.md>) for additional output information.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f05a636f-889c-4d3a-9eaa-039e0166cb51'
+slug: /f05a636f-889c-4d3a-9eaa-039e0166cb51
 title: 'Install SnapAgent'
 title_meta: 'Install SnapAgent'
 keywords: ['blackpoint', 'snapagent', 'installer', 'script', 'connectwise']
@@ -160,5 +161,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 

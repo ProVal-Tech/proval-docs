@@ -1,5 +1,6 @@
 ---
 id: 'ad02ff16-29f5-484c-9fef-638dfa0342d0'
+slug: /ad02ff16-29f5-484c-9fef-638dfa0342d0
 title: 'Set-OfficeUpdateSchedule'
 title_meta: 'Set-OfficeUpdateSchedule'
 keywords: ['office365', 'update', 'schedule', 'configuration']
@@ -35,5 +36,4 @@ Sets the update schedule to 'Current Channel (Preview)'
 ## Output
 - `.\Set-OfficeUpdateSchedule-log.txt`
 - `.\Set-OfficeUpdateSchedule-error.txt`
-
 

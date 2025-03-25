@@ -1,5 +1,6 @@
 ---
 id: 'a0ee778f-854b-4c86-aa0f-192a09019fe3'
+slug: /a0ee778f-854b-4c86-aa0f-192a09019fe3
 title: 'Windows Cluster Shared Volume Detection'
 title_meta: 'Windows Cluster Shared Volume Detection'
 keywords: ['monitor', 'cluster', 'disk', 'space', 'alert']

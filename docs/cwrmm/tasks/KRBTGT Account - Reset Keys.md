@@ -1,5 +1,6 @@
 ---
 id: '6933151f-2a80-4b27-97dc-046c555a137c'
+slug: /6933151f-2a80-4b27-97dc-046c555a137c
 title: 'KRBTGT Account - Reset Keys'
 title_meta: 'KRBTGT Account - Reset Keys'
 keywords: ['krbtgt', 'active', 'directory', 'reset', 'keys']
@@ -149,6 +150,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

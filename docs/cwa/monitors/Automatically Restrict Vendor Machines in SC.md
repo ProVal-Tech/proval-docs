@@ -1,5 +1,6 @@
 ---
 id: '4a4b5a11-8087-4e0a-b2b1-629d07326dd2'
+slug: /4a4b5a11-8087-4e0a-b2b1-629d07326dd2
 title: 'Automatically Restrict Vendor Machines in SC'
 title_meta: 'Automatically Restrict Vendor Machines in SC'
 keywords: ['monitor', 'vendor', 'access', 'restriction', 'automate']
@@ -33,6 +34,5 @@ All operating systems
 ## Alert Template
 
 - `△ Custom - Execute Script - Update Vendor Restricted Property`
-
 
 

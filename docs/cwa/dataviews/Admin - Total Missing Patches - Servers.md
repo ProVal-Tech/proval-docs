@@ -1,5 +1,6 @@
 ---
 id: '1072321a-dd60-4eb8-b212-f626a3f51eed'
+slug: /1072321a-dd60-4eb8-b212-f626a3f51eed
 title: 'Admin - Total Missing Patches - Servers'
 title_meta: 'Admin - Total Missing Patches - Servers'
 keywords: ['patches', 'servers', 'report', 'automate', 'missing']
@@ -23,6 +24,5 @@ This dataview shows the number of missing patches for each server being patched 
 | OS              | Displays the operating system of the machine     |
 | Agent Type      | Displays the agent type                          |
 | Missing Patches | Displays the number of missing patches on the machine |
-
 
 

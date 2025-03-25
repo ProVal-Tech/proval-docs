@@ -1,5 +1,6 @@
 ---
 id: 'ef826863-c354-4a97-9ba8-8ad2a3c65e40'
+slug: /ef826863-c354-4a97-9ba8-8ad2a3c65e40
 title: 'Execute Script - Shadow Copy - Audit Complete Statistics'
 title_meta: 'Execute Script - Shadow Copy - Audit Complete Statistics'
 keywords: ['monitor', 'shadow', 'copy', 'audit', 'statistics', 'custom', 'rawsql', 'windows']
@@ -20,6 +21,5 @@ This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Au
 ## Target
 
 Windows Group
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c692dfe2-e9ec-4f3d-a7ed-8f4f5da30493'
+slug: /c692dfe2-e9ec-4f3d-a7ed-8f4f5da30493
 title: 'Verify-ShadowProtect-Volume-Backup'
 title_meta: 'Verify-ShadowProtect-Volume-Backup'
 keywords: ['ntfs', 'database', 'drive', 'volume', 'query']
@@ -38,6 +39,5 @@ This script queries the LT database for each drive letter that is an NTFS volume
 ## Output
 
 - Script log
-
 
 

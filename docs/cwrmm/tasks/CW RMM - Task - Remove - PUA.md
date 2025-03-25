@@ -1,5 +1,6 @@
 ---
 id: '5f664f90-26b9-4082-9a99-73954de0c840'
+slug: /5f664f90-26b9-4082-9a99-73954de0c840
 title: 'CW RMM - Task - Remove - PUA'
 title_meta: 'CW RMM - Task - Remove - PUA'
 keywords: ['PUA', 'bloatware', 'application', 'remove']
@@ -319,7 +320,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 | Microsoft.Paint3D                        |                                           |                                       |                                   |                                                         |
 | MicrosoftCorporationII.QuickAssist       |                                           |                                       |                                   |                                                         |
 | Microsoft.SpotifyMusic                   |                                           |                                       |                                   |                                                         |
-
 
 
 

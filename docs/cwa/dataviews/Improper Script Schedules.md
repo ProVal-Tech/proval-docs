@@ -1,5 +1,6 @@
 ---
 id: '1eb426fd-ee56-4e81-9d3e-116e8c4698b4'
+slug: /1eb426fd-ee56-4e81-9d3e-116e8c4698b4
 title: 'Improper Script Schedules'
 title_meta: 'Improper Script Schedules'
 keywords: ['script', 'schedules', 'technician', 'recurring', 'frequency', 'machines', 'environment']
@@ -46,7 +47,6 @@ This Dataview filters the script schedules that are scheduled by a technician, a
 | Targeted Servers Count       | Total servers targeted in the schedule                      |
 | Targeted Workstations Count   | Total workstations targeted in the schedule                 |
 | % Machines Targeted          | Percentage of the machines targeted in the schedule         |
-
 
 
 

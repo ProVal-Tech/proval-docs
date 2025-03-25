@@ -1,5 +1,6 @@
 ---
 id: 'ab580d76-42be-4b34-b38b-3a7e9336c13e'
+slug: /ab580d76-42be-4b34-b38b-3a7e9336c13e
 title: 'OfflineBroken Agents'
 title_meta: 'OfflineBroken Agents'
 keywords: ['offline', 'agent', 'remediation', 'automate', 'connectwise']
@@ -76,6 +77,5 @@ The purpose of this solution is to detect machines that have been offline in Aut
        - Configure with the alert template: `△ CUSTOM - Autofix - Offline Agent Remediation (RMM+)`
        - Set the required ticket category (to alert on broken agents).
        - Right-click and Run Now to start the monitor.
-
 
 

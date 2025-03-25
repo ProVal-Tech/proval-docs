@@ -1,5 +1,6 @@
 ---
 id: 'a518732d-b53b-4f7a-9aa1-1b478f68288f'
+slug: /a518732d-b53b-4f7a-9aa1-1b478f68288f
 title: 'SMBv1 Enable Detection Ticketing - Per Client'
 title_meta: 'SMBv1 Enable Detection Ticketing - Per Client'
 keywords: ['ticket', 'audit', 'remediation', 'client', 'smbv1']
@@ -48,6 +49,5 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit was detected on @VulnerableagentCount@ computer(s) of client "@sqlname@".  
    Please review the dataview for the computer list.
-
 
 

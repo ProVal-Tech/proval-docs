@@ -1,5 +1,6 @@
 ---
 id: '4a0526ef-6e45-4053-9a64-27713b7f4d28'
+slug: /4a0526ef-6e45-4053-9a64-27713b7f4d28
 title: 'Install Windows Upgrade'
 title_meta: 'Install Windows Upgrade'
 keywords: ['windows', 'upgrade', 'feature', 'update', 'installation', 'patching']
@@ -156,6 +157,5 @@ Error Log
 Setup Diag Result  
 ----------------  
 `\\<Outcome of the SetupDiagTool verifying the upgrade process>`
-
 
 

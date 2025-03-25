@@ -1,5 +1,6 @@
 ---
 id: '201f46d7-6511-4e5f-a002-ff7f4b27c8be'
+slug: /201f46d7-6511-4e5f-a002-ff7f4b27c8be
 title: 'Remove Application - Network Glue Collector'
 title_meta: 'Remove Application - Network Glue Collector'
 keywords: ['uninstallation', 'network', 'collector', 'script', 'automation']
@@ -64,6 +65,5 @@ This script is built to perform the uninstallation of the Network Glue Collector
 
 **Example:**  
 ![Example](../../../static/img/Remove-Application---Network-Glue-Collector/image_2.png)
-
 
 

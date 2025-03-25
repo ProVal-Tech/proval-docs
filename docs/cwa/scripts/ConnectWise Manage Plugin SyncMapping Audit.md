@@ -1,5 +1,6 @@
 ---
 id: '474cb433-c577-450c-b214-e7fc6a1c73f3'
+slug: /474cb433-c577-450c-b214-e7fc6a1c73f3
 title: 'ConnectWise Manage Plugin SyncMapping Audit'
 title_meta: 'ConnectWise Manage Plugin SyncMapping Audit'
 keywords: ['email', 'alerts', 'cwmanage', 'unsynced', 'components']
@@ -39,6 +40,5 @@ It is a client script that should be scheduled to run once a week.
 ## Output
 
 - Email
-
 
 

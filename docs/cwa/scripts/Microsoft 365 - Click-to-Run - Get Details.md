@@ -1,5 +1,6 @@
 ---
 id: 'ce16526d-84b5-4e58-928b-13a29195056e'
+slug: /ce16526d-84b5-4e58-928b-13a29195056e
 title: 'Microsoft 365 - Click-to-Run - Get Details'
 title_meta: 'Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'office', 'update', 'channel', 'automation', 'edf']
@@ -52,7 +53,6 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 - Script log
 - Custom Table
 - Dataview
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '46c7d8b6-eefc-4a70-9ecd-54386326f177'
+slug: /46c7d8b6-eefc-4a70-9ecd-54386326f177
 title: 'Domain Watch Configuration'
 title_meta: 'Domain Watch Configuration'
 keywords: ['domain', 'discovery', 'configuration', 'vsa', 'administration']
@@ -74,6 +75,5 @@ Before configuring Domain Watch Discovery, ensure the following prerequisites ar
 ## Conclusion
 
 By following these steps, you will successfully configure Domain Watch Discovery in VSA 9.5. Regular monitoring and adjustment of settings based on discovery results will ensure optimal performance and coverage of your domain environment.
-
 
 

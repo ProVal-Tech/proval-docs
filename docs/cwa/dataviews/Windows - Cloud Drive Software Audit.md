@@ -1,5 +1,6 @@
 ---
 id: '45a5f65f-0f06-40fc-8f7d-fdb6d8762847'
+slug: /45a5f65f-0f06-40fc-8f7d-fdb6d8762847
 title: 'Windows - Cloud Drive Software Audit'
 title_meta: 'Windows - Cloud Drive Software Audit'
 keywords: ['cloud', 'drive', 'audit', 'software', 'version']
@@ -25,6 +26,5 @@ None
 | Computer ID    | The ID of the machine where software is detected     |
 | Software Name   | Name of the cloud drive software present on the machine |
 | Version        | Version of the cloud drive software                   |
-
 
 

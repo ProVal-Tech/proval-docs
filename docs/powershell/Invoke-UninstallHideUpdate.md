@@ -1,5 +1,6 @@
 ---
 id: '79f53096-8353-4935-9343-0a77b74fe052'
+slug: /79f53096-8353-4935-9343-0a77b74fe052
 title: 'Invoke-UninstallHideUpdate'
 title_meta: 'Invoke-UninstallHideUpdate'
 keywords: ['uninstall', 'hide', 'update', 'kbarticles']
@@ -34,6 +35,5 @@ Location of output for log, result, and error files.
 .\Invoke-UninstallHideUpdate-log.txt
 .\Invoke-UninstallHideUpdate-error.txt
 ```
-
 
 

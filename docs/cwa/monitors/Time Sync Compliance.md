@@ -1,5 +1,6 @@
 ---
 id: '021f4d58-3458-4536-96e7-b618960a1e0b'
+slug: /021f4d58-3458-4536-96e7-b618960a1e0b
 title: 'Time Sync Compliance'
 title_meta: 'Time Sync Compliance'
 keywords: ['windows', 'monitor', 'sync', 'time', 'compliance']

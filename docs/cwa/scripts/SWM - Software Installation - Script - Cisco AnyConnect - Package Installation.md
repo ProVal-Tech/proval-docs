@@ -1,5 +1,6 @@
 ---
 id: 'a73e1ac2-01a9-44c4-b153-be7df7009072'
+slug: /a73e1ac2-01a9-44c4-b153-be7df7009072
 title: 'SWM - Software Installation - Script - Cisco AnyConnect - Package Installation'
 title_meta: 'SWM - Software Installation - Script - Cisco AnyConnect - Package Installation'
 keywords: ['cisco', 'anyconnect', 'install', 'script', 'edf']
@@ -92,7 +93,6 @@ Install specific AnyConnect packages.
 ## Output
 
 - Script log
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f281c866-d1a8-44fd-9412-388b5f06200b'
+slug: /f281c866-d1a8-44fd-9412-388b5f06200b
 title: 'DNS Filter Agent - Install'
 title_meta: 'DNS Filter Agent - Install'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
@@ -48,6 +49,5 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 - Script Log
 - Ticket
-
 
 

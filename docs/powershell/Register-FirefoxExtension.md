@@ -1,5 +1,6 @@
 ---
 id: 'db0512b5-70cd-4145-aa69-de84f9b1846d'
+slug: /db0512b5-70cd-4145-aa69-de84f9b1846d
 title: 'Register-FirefoxExtension'
 title_meta: 'Register-FirefoxExtension'
 keywords: ['register', 'extension', 'firefox', 'browser']
@@ -37,6 +38,5 @@ The output log can be found at:
 ```
 .\Register-FirefoxExtension-log.txt
 ```
-
 
 

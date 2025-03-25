@@ -1,5 +1,6 @@
 ---
 id: 'b497ecf7-c8e2-4b6a-b779-94adfd831c98'
+slug: /b497ecf7-c8e2-4b6a-b779-94adfd831c98
 title: 'Malicious Software Removal Tool Scanning Enable'
 title_meta: 'Malicious Software Removal Tool Scanning Enable'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
@@ -48,5 +49,4 @@ Click Save
 Group Created
 
 ![Group Created](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image-3.png>)
-
 

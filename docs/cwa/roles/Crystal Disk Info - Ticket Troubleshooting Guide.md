@@ -1,5 +1,6 @@
 ---
 id: '1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9'
+slug: /1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9
 title: 'Crystal Disk Info - Ticket Troubleshooting Guide'
 title_meta: 'Crystal Disk Info - Ticket Troubleshooting Guide'
 keywords: ['ticket', 'troubleshooting', 'ssd', 'spinning', 'disk', 'replacement']
@@ -129,6 +130,5 @@ Click the section (in the left navigation of this document) where your ticket is
 
 4. If the **machine's warranty has just recently expired**, a replacement drive quote should be sent to the client for approval.
    - **NOTE**: Always recommend an SSD as the replacement. Spinning disks may be cheaper, but they are much slower and not worth the headache.
-
 
 

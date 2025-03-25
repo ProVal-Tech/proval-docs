@@ -1,5 +1,6 @@
 ---
 id: 'f5286dd2-1161-4580-8060-d113b3ab28b7'
+slug: /f5286dd2-1161-4580-8060-d113b3ab28b7
 title: 'Reset - Extra Data Field - Winget_update_all_task_created'
 title_meta: 'Reset - Extra Data Field - Winget_update_all_task_created'
 keywords: ['rawsql', 'monitor', 'sql', 'client', 'environment', 'cache']
@@ -102,7 +103,6 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_6.png)
-
 
 
 

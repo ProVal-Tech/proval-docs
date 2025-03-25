@@ -1,5 +1,6 @@
 ---
 id: '21df19c2-15d2-40da-8810-ef3aa8307784'
+slug: /21df19c2-15d2-40da-8810-ef3aa8307784
 title: 'Win10AvailVer - Stack Content'
 title_meta: 'Win10AvailVer - Stack Content'
 keywords: ['windows', 'update', 'status', 'version']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Gets the latest available Windows 10 version status.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '18432358-9550-4ab9-959e-255196b0ebcf'
+slug: /18432358-9550-4ab9-959e-255196b0ebcf
 title: 'Active Directory - Sync Out of Date'
 title_meta: 'Active Directory - Sync Out of Date'
 keywords: ['active-directory', 'monitor', 'credential', 'sync', 'ticket']

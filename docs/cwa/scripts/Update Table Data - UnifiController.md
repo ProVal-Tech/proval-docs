@@ -1,5 +1,6 @@
 ---
 id: '7a09c023-231a-4574-a367-ef8009537e23'
+slug: /7a09c023-231a-4574-a367-ef8009537e23
 title: 'Update Table Data - UnifiController'
 title_meta: 'Update Table Data - UnifiController'
 keywords: ['unifi', 'data', 'collection', 'automate', 'script']
@@ -106,6 +107,5 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
-
 
 

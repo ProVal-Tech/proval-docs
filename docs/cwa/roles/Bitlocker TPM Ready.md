@@ -1,5 +1,6 @@
 ---
 id: 'e5234598-aaa5-412c-8425-f9d1c95c00b5'
+slug: /e5234598-aaa5-412c-8425-f9d1c95c00b5
 title: 'Bitlocker TPM Ready'
 title_meta: 'Bitlocker TPM Ready'
 keywords: ['tpm', 'machine', 'connectwise', 'database', 'role']
@@ -18,7 +19,6 @@ This role checks if the TPM on the machine is ready to use. If so, this role is 
 | Detection String                                                                                           | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
-
 
 
 

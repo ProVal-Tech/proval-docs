@@ -1,5 +1,6 @@
 ---
 id: '5728c22a-c1bb-4494-b300-c1a8c12e7165'
+slug: /5728c22a-c1bb-4494-b300-c1a8c12e7165
 title: 'Execute Script - Get OneDrive Sync Status DV'
 title_meta: 'Execute Script - Get OneDrive Sync Status DV'
 keywords: ['onedrive', 'sync', 'status', 'windows', 'workstations']
@@ -24,6 +25,5 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get OneDrive Sync Status [DV]`
-
 
 

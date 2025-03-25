@@ -1,5 +1,6 @@
 ---
 id: '1c9a68c5-62c9-4454-a6da-0a7c5fb8089d'
+slug: /1c9a68c5-62c9-4454-a6da-0a7c5fb8089d
 title: 'Internet Explorer Detected Role'
 title_meta: 'Internet Explorer Detected Role'
 keywords: ['monitor', 'internet', 'explorer', 'disable', 'alert']

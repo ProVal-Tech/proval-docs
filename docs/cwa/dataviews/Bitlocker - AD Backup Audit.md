@@ -1,5 +1,6 @@
 ---
 id: '1bd41d12-c68a-4e68-a7eb-ac2d58538187'
+slug: /1bd41d12-c68a-4e68-a7eb-ac2d58538187
 title: 'Bitlocker - AD Backup Audit'
 title_meta: 'Bitlocker - AD Backup Audit'
 keywords: ['bitlocker', 'key', 'protectors', 'active', 'directory', 'backup']
@@ -35,6 +36,5 @@ This document displays Bitlocker key protectors backed up to Active Directory.
 | ParentDN           | The full DN of the parent of the key protector object in AD (generally a computer object). |
 | ParentSID          | The SID of the parent of the key protector object in AD (generally a computer object). |
 | LastScan           | The date and time that the audit was last run.                             |
-
 
 

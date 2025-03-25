@@ -1,5 +1,6 @@
 ---
 id: '5e473149-73a6-4e38-b61e-fd200d9af020'
+slug: /5e473149-73a6-4e38-b61e-fd200d9af020
 title: 'Agent Monitor Creation - Disk Workstations 5 GB'
 title_meta: 'Agent Monitor Creation - Disk Workstations 5 GB'
 keywords: ['remote', 'monitors', 'hard', 'drives', 'disk', 'space', 'alerts']
@@ -62,6 +63,5 @@ The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAP
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
-
 
 

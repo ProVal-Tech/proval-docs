@@ -1,5 +1,6 @@
 ---
 id: '2ce8cbad-6df7-4d57-bb96-50f43f002491'
+slug: /2ce8cbad-6df7-4d57-bb96-50f43f002491
 title: 'Service Start - Routing and Remote Access Autofix'
 title_meta: 'Service Start - Routing and Remote Access Autofix'
 keywords: ['remoteaccess', 'service', 'startup', 'automatic', 'monitor']
@@ -27,6 +28,5 @@ This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal -
 
 - Startup Type: Automatic  
 - Status: Running
-
 
 

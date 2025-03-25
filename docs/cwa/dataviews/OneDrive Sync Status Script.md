@@ -1,5 +1,6 @@
 ---
 id: '61160125-8794-4e01-ba0a-3bf4ec81077e'
+slug: /61160125-8794-4e01-ba0a-3bf4ec81077e
 title: 'OneDrive Sync Status Script'
 title_meta: 'OneDrive Sync Status Script'
 keywords: ['onedrive', 'sync', 'status', 'data', 'view', 'client', 'location', 'computer', 'quota', 'collection']
@@ -39,7 +40,6 @@ The data view presents the OneDrive Sync Status data stored in the [EPM - Data C
 | Last Contact           | Last Contact with Automate                          |
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
-
 
 
 

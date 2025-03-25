@@ -1,5 +1,6 @@
 ---
 id: '38674bcd-8b19-4072-a58f-314efad2e856'  
+slug: /38674bcd-8b19-4072-a58f-314efad2e856  
 title: 'Remove-ChromiumHomepage'  
 title_meta: 'Remove-ChromiumHomepage'  
 keywords: ['remove', 'homepage', 'chromium', 'browser']  
@@ -34,6 +35,5 @@ This will remove all homepage policies for the Google Chrome and Brave browsers.
 ```
 .\Remove-ChromiumHomepage-log.txt  
 ```  
-
 
 

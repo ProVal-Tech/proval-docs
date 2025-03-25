@@ -1,5 +1,6 @@
 ---
 id: '931fbe83-9616-4ae2-b7ae-128538a5fa73'
+slug: /931fbe83-9616-4ae2-b7ae-128538a5fa73
 title: 'Asset Report - Purchase and Expiration Date'
 title_meta: 'Asset Report - Purchase and Expiration Date'
 keywords: ['dataview', 'cwm', 'configurations', 'managed', 'active']
@@ -38,7 +39,6 @@ Dataview displays the information gathered by the [CWM - Automate - Script - Get
 | Model Number             | Computer's Model (From CW Manage)                                                                           |
 | Serial Number            | Serial Number of computer (Hidden)                                                                          |
 | Data Collection Time     | Data Collection Time                                                                                         |
-
 
 
 

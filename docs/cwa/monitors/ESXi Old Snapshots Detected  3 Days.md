@@ -1,5 +1,6 @@
 ---
 id: '7f795515-a2b5-4041-85c8-64b6c6e59470'
+slug: /7f795515-a2b5-4041-85c8-64b6c6e59470
 title: 'ESXi Old Snapshots Detected  3 Days'
 title_meta: 'ESXi Old Snapshots Detected  3 Days'
 keywords: ['esxi', 'monitoring', 'snapshots', 'alerting', 'ticket']

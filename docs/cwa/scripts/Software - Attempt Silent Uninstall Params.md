@@ -1,5 +1,6 @@
 ---
 id: 'd6d1444e-6802-41d1-ae96-cd48c71e2e8b'
+slug: /d6d1444e-6802-41d1-ae96-cd48c71e2e8b
 title: 'Software - Attempt Silent Uninstall Params'
 title_meta: 'Software - Attempt Silent Uninstall Params'
 keywords: ['uninstall', 'application', 'script', 'database', 'automation']
@@ -31,6 +32,5 @@ When the script runs, it will ask for a parameter `AppName`, which needs to be f
 ## Output
 
 - Script log
-
 
 

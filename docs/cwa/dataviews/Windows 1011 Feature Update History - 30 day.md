@@ -1,5 +1,6 @@
 ---
 id: '1983e46a-da70-4f9a-88f5-1ab908d46893'
+slug: /1983e46a-da70-4f9a-88f5-1ab908d46893
 title: 'Windows 10/11 Feature Update History - 30 day'
 title_meta: 'Windows 10/11 Feature Update History - 30 day'
 keywords: ['windows', 'upgrade', 'report', 'workstation', 'version', 'build']
@@ -25,6 +26,5 @@ The dataview displays the Windows workstations that have been upgraded to the ne
 | Old OS Version    | Displays the OS version before the upgrade.      |
 | New OS Version    | Displays the OS version after the upgrade.       |
 | Build Version     | Displays the new build versions such as 22H2, 22H3, etc. |
-
 
 

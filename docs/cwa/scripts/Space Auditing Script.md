@@ -1,5 +1,6 @@
 ---
 id: 'fc919069-1895-4842-9b1e-d13d3f53227b'
+slug: /fc919069-1895-4842-9b1e-d13d3f53227b
 title: 'Space Auditing Script'
 title_meta: 'Space Auditing Script'
 keywords: ['drive', 'scan', 'output', 'script', 'ticket']
@@ -60,6 +61,5 @@ If the script fails to gather the data appropriately, it will exit with an error
 ## Example Output
 
 ![Example Output](../../../static/img/Space-Auditing-Script/image_2.png)
-
 
 

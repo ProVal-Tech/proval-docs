@@ -1,5 +1,6 @@
 ---
 id: 'cb7d4500-3e57-454a-8c47-3c31bf79db80'
+slug: /cb7d4500-3e57-454a-8c47-3c31bf79db80
 title: 'Office Activation Status Audit'
 title_meta: 'Office Activation Status Audit'
 keywords: ['office', 'activation', 'audit', 'status', 'software']
@@ -50,7 +51,6 @@ Runs Agnostic Powershell to perform the audit.
 
 - AP Log
 - xPVAL Office Activation Status CF
-
 
 
 

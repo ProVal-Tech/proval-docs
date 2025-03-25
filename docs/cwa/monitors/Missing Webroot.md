@@ -1,5 +1,6 @@
 ---
 id: 'e50cad02-bc5f-4633-91d6-4f58ba08c215'
+slug: /e50cad02-bc5f-4633-91d6-4f58ba08c215
 title: 'Missing Webroot'
 title_meta: 'Missing Webroot'
 keywords: ['webroot', 'monitor', 'deployment', 'client', 'exclusion', 'location', 'macos', 'windows']
@@ -23,6 +24,5 @@ This internal monitor detects all computers whose associated client has the Enab
 - Should not target Linux-based operating systems.
 - Can target macOS or Windows.
 - Please review the solution document for supported systems.
-
 
 

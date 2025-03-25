@@ -1,5 +1,6 @@
 ---
 id: 'e91935f1-0952-4a1c-a1cb-807be572ed30'
+slug: /e91935f1-0952-4a1c-a1cb-807be572ed30
 title: 'VSA Chocolatey Application Management'
 title_meta: 'VSA Chocolatey Application Management'
 keywords: ['chocolatey', 'application', 'management', 'install', 'uninstall']
@@ -23,6 +24,5 @@ Provide a reliable and accessible solution for application management via Chocol
 ## Implementation
 
 Import both Agent Procedures.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cfba27cd-1b8d-4e4f-810a-0c5885ae840d'
+slug: /cfba27cd-1b8d-4e4f-810a-0c5885ae840d
 title: 'VSS Admin Storage Audit and Resize'
 title_meta: 'VSS Admin Storage Audit and Resize'
 keywords: ['vssadmin', 'shadow', 'copies', 'audit', 'resize']
@@ -29,6 +30,5 @@ The [VSSAdmin List Storage Audit](<../cwa/scripts/Vssadmin List Storage Audit.md
 ## FAQ
 
 *(This section can be filled out with frequently asked questions related to the auditing and resizing of VSSAdmin shadow copies.)*
-
 
 

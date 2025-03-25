@@ -1,5 +1,6 @@
 ---
 id: '9aa26b60-2171-43e5-bb14-8bf274a237a4'
+slug: /9aa26b60-2171-43e5-bb14-8bf274a237a4
 title: 'MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview'
 title_meta: 'MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview'
 keywords: ['import', 'plugin', 'proval', 'patching', 'metrics', 'overview']
@@ -26,6 +27,5 @@ This document outlines the process for importing the [plugin_proval_v_patching_m
 ## Output
 
 - View
-
 
 

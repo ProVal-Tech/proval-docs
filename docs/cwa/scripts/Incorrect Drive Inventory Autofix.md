@@ -1,5 +1,6 @@
 ---
 id: '59079938-6d59-48d6-aa45-b8c003456bc6'
+slug: /59079938-6d59-48d6-aa45-b8c003456bc6
 title: 'Incorrect Drive Inventory Autofix'
 title_meta: 'Incorrect Drive Inventory Autofix'
 keywords: ['upgrade', 'swap', 'agents', 'hard-drives', 'ssds', 'imaged', 'inventory']
@@ -27,6 +28,5 @@ This is an Autofix script and will provide better results when executed by the [
 | Name   | Description                                        |
 |--------|----------------------------------------------------|
 | Drives | Drive ID stored in the database for the computer   |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '57399293-811f-46b8-8672-992c200a4804'
+slug: /57399293-811f-46b8-8672-992c200a4804
 title: 'Enable Num Lock On Sign In'
 title_meta: 'Enable Num Lock On Sign In'
 keywords: ['num-lock', 'windows', 'logon', 'script']
@@ -20,7 +21,6 @@ The script turns on Num-Lock at the log-on screen for Windows machines.
 ## Output
 
 - Script Log
-
 
 
 

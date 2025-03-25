@@ -1,5 +1,6 @@
 ---
 id: 'c7103d81-4170-443a-b460-7522ac99e279'
+slug: /c7103d81-4170-443a-b460-7522ac99e279
 title: 'User Profile Removal'
 title_meta: 'User Profile Removal'
 keywords: ['user', 'profile', 'removal', 'endpoint', 'script']
@@ -44,6 +45,5 @@ This script removes a user profile from an endpoint. It prompts the user for con
 ## Output
 
 AP Log
-
 
 

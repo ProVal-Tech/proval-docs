@@ -1,5 +1,6 @@
 ---
 id: '3cdacc81-3702-454d-b8db-7a1bd6cf5bd9'
+slug: /3cdacc81-3702-454d-b8db-7a1bd6cf5bd9
 title: 'Reboot Pending - Servers - Suppress Reboot Policy'
 title_meta: 'Reboot Pending - Servers - Suppress Reboot Policy'
 keywords: ['ticket', 'reboot', 'patch', 'server', 'alert']
@@ -36,6 +37,5 @@ The server %COMPUTERNAME% is currently reporting that it is pending a reboot. Pl
 
 **Success:**  
 Server %COMPUTERNAME% is no longer reporting that it is pending a reboot. Closing the ticket.
-
 
 

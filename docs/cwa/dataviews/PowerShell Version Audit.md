@@ -1,5 +1,6 @@
 ---
 id: '388b4b61-34b7-4d40-b4de-507032df83d7'
+slug: /388b4b61-34b7-4d40-b4de-507032df83d7
 title: 'PowerShell Version Audit'
 title_meta: 'PowerShell Version Audit'
 keywords: ['agent', 'powershell', 'version', 'audit', 'rmm']
@@ -65,7 +66,6 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
-
 
 
 

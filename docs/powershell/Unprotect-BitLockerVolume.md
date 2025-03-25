@@ -1,5 +1,6 @@
 ---
 id: '22114d12-c60e-479e-93a5-50d3450b6631'
+slug: /22114d12-c60e-479e-93a5-50d3450b6631
 title: 'Unprotect-BitLockerVolume'
 title_meta: 'Unprotect-BitLockerVolume'
 keywords: ['unprotect', 'bitlocker', 'volume', 'disable']
@@ -38,6 +39,5 @@ Disables BitLocker protection on all volumes.
 - `.\Unprotect-BitLockerVolume-log.txt`
 - `.\Unprotect-BitLockerVolume-data.txt`
 - `.\Unprotect-BitLockerVolume-error.txt`
-
 
 

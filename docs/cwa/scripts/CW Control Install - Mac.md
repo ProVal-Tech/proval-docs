@@ -1,5 +1,6 @@
 ---
 id: '6bbf6e1c-3721-488d-b807-9c4b4fc78259'
+slug: /6bbf6e1c-3721-488d-b807-9c4b4fc78259
 title: 'CW Control Install - Mac'
 title_meta: 'CW Control Install - Mac'
 keywords: ['cw', 'control', 'agent', 'mac', 'installation', 'removal', 'reinstallation']
@@ -41,6 +42,5 @@ The script will perform a fresh installation or a removal and reinstallation of 
 ## Output
 
 - Script Logs
-
 
 

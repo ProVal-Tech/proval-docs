@@ -1,5 +1,6 @@
 ---
 id: '3fec514c-c0b2-4b19-92b7-d77c78e678a3'
+slug: /3fec514c-c0b2-4b19-92b7-d77c78e678a3
 title: 'Lock Stolen System'
 title_meta: 'Lock Stolen System'
 keywords: ['stolen', 'bitlocker', 'lockdown', 'security', 'encryption', 'tracking', 'windows']
@@ -87,6 +88,5 @@ WebCamImage:
 
 The script is using the shutdown command, so the machine will become unusable without the BitLocker key.
 ```
-
 
 

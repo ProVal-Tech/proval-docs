@@ -1,5 +1,6 @@
 ---
 id: '5e0e3054-ce35-494b-bdde-c8b0c56305d0'
+slug: /5e0e3054-ce35-494b-bdde-c8b0c56305d0
 title: 'Prevent Saving Browser Passwords (IE.Chrome.FF)'
 title_meta: 'Prevent Saving Browser Passwords (IE.Chrome.FF)'
 keywords: ['browsers', 'passwords', 'registry', 'security', 'automation']
@@ -56,6 +57,5 @@ In the above screenshot, the password saving feature for the browsers will be di
 
 - Script log
 - Script state
-
 
 

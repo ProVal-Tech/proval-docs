@@ -1,5 +1,6 @@
 ---
 id: '21ae27d2-c179-4f26-92cf-15760af6791a'
+slug: /21ae27d2-c179-4f26-92cf-15760af6791a
 title: 'Service StartType Change'
 title_meta: 'Service StartType Change'
 keywords: ['services', 'starttype', 'configuration', 'windows', 'automation']
@@ -62,6 +63,5 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
-
 
 

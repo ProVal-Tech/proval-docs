@@ -1,5 +1,6 @@
 ---
 id: '6489855d-0391-444d-a207-dfbd76152948'
+slug: /6489855d-0391-444d-a207-dfbd76152948
 title: 'Repair Huntress Agent Windows'
 title_meta: 'Repair Huntress Agent Windows'
 keywords: ['huntress', 'agent', 'repair', 'windows', 'script']
@@ -54,6 +55,5 @@ This script can be used to repair the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
 
 

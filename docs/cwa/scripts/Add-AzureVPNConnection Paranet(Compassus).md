@@ -1,5 +1,6 @@
 ---
 id: '7d8df295-577a-4c61-934b-341fcbb37784'
+slug: /7d8df295-577a-4c61-934b-341fcbb37784
 title: 'Add-AzureVPNConnection Paranet(Compassus)'
 title_meta: 'Add-AzureVPNConnection Paranet(Compassus)'
 keywords: ['vpn', 'azure', 'compassus', 'configuration', 'logging', 'error', 'parameters', 'process']
@@ -58,6 +59,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - File in LTSVC/Logs (optional)
-
 
 

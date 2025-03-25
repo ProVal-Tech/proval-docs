@@ -1,5 +1,6 @@
 ---
 id: '2c4a0323-9532-4145-8fca-d9151c20773c'
+slug: /2c4a0323-9532-4145-8fca-d9151c20773c
 title: 'pvl_pua_audit'
 title_meta: 'pvl_pua_audit'
 keywords: ['audit', 'pua', 'data', 'removal', 'script']
@@ -29,7 +30,6 @@ The following dependency is required for this audit data:
 | Name                | VARCHAR  | Primary Key, the name of the bloatware. |
 | Category            | VARCHAR  | The category that the PUA belongs to.   |
 | DataCollectionTime  | DateTime | Data collection time.                    |
-
 
 
 

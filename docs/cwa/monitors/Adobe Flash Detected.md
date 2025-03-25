@@ -1,5 +1,6 @@
 ---
 id: 'f826780d-2024-43c2-a565-0c46e2be1375'
+slug: /f826780d-2024-43c2-a565-0c46e2be1375
 title: 'Adobe Flash Detected'
 title_meta: 'Adobe Flash Detected'
 keywords: ['monitor', 'detection', 'adobe', 'flash', 'agent']
@@ -20,6 +21,5 @@ This internal monitor will detect the agent where Adobe Flash is installed.
 ## Target
 
 Windows OS
-
 
 

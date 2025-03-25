@@ -1,5 +1,6 @@
 ---
 id: 'de971be6-bd0c-432c-a0de-94119ee0da2b'
+slug: /de971be6-bd0c-432c-a0de-94119ee0da2b
 title: 'Desktop Shortcut - Create'
 title_meta: 'Desktop Shortcut - Create'
 keywords: ['desktop', 'shortcut', 'uri', 'icon', 'windows']
@@ -36,6 +37,5 @@ This document explains how to create a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for the process.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '7b939958-3561-471c-971f-c6a667b30d4e'
+slug: /7b939958-3561-471c-971f-c6a667b30d4e
 title: 'Implement TED (Tag Every Desktop)'
 title_meta: 'Implement TED (Tag Every Desktop)'
 keywords: ['schedule', 'task', 'ted', 'application', 'user', 'logon']
@@ -53,7 +54,6 @@ The result on End Machine:
 ## Output
 
 - Script Log
-
 
 
 

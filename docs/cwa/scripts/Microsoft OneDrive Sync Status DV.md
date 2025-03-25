@@ -1,5 +1,6 @@
 ---
 id: '11c05d45-a0fb-4cfb-b388-cdc59362d9a1'
+slug: /11c05d45-a0fb-4cfb-b388-cdc59362d9a1
 title: 'Microsoft OneDrive Sync Status DV'
 title_meta: 'Microsoft OneDrive Sync Status DV'
 keywords: ['onedrive', 'sync', 'status', 'windows', 'script']
@@ -40,6 +41,5 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
-
 
 

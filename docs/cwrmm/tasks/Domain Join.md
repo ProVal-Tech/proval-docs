@@ -1,5 +1,6 @@
 ---
 id: 'a0374bc3-b579-4299-b952-5bb3d0440c52'
+slug: /a0374bc3-b579-4299-b952-5bb3d0440c52
 title: 'Domain Join'
 title_meta: 'Domain Join'
 keywords: ['domain', 'join', 'computer', 'rmm', 'management']
@@ -203,6 +204,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

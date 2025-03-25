@@ -1,5 +1,6 @@
 ---
 id: '80f78f9e-cc1c-4547-9c54-59b0fce02fe3'
+slug: /80f78f9e-cc1c-4547-9c54-59b0fce02fe3
 title: 'GPO - Configure Default Password Policy Globals'
 title_meta: 'GPO - Configure Default Password Policy Globals'
 keywords: ['password', 'policy', 'domain', 'security', 'configuration']
@@ -41,6 +42,5 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
-
 
 

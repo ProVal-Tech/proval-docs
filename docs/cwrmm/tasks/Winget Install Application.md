@@ -1,5 +1,6 @@
 ---
 id: '39d1ff3c-effe-4eee-8a28-d745073c5e0f'
+slug: /39d1ff3c-effe-4eee-8a28-d745073c5e0f
 title: 'Winget Install Application'
 title_meta: 'Winget Install Application'
 keywords: ['winget', 'install', 'application', 'script', 'windows']
@@ -183,6 +184,5 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-
 
 

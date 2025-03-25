@@ -1,5 +1,6 @@
 ---
 id: '75f8c13f-04d5-45fd-b650-3b010353a8c0'
+slug: /75f8c13f-04d5-45fd-b650-3b010353a8c0
 title: 'New Account Detection'
 title_meta: 'New Account Detection'
 keywords: ['monitor', 'user', 'account', 'event', 'log', 'windows', 'server', 'workstation']
@@ -39,4 +40,3 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples:**  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
-

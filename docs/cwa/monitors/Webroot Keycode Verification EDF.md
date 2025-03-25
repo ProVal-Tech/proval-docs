@@ -1,5 +1,6 @@
 ---
 id: '70bf86a4-3ddf-46b1-947d-e2dc580209a5'
+slug: /70bf86a4-3ddf-46b1-947d-e2dc580209a5
 title: 'Webroot Keycode Verification EDF'
 title_meta: 'Webroot Keycode Verification EDF'
 keywords: ['monitor', 'webroot', 'keycode', 'verification', 'agent']

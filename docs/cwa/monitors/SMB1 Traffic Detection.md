@@ -1,5 +1,6 @@
 ---
 id: '7665cb82-1340-4f76-ba0e-e7c277c40f73'
+slug: /7665cb82-1340-4f76-ba0e-e7c277c40f73
 title: 'SMB1 Traffic Detection'
 title_meta: 'SMB1 Traffic Detection'
 keywords: ['smb1', 'monitor', 'server', 'auditing', 'event', 'logs']

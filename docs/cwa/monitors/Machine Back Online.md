@@ -1,5 +1,6 @@
 ---
 id: 'aa42e5cc-e552-4bce-9963-a5531c4d269c'
+slug: /aa42e5cc-e552-4bce-9963-a5531c4d269c
 title: 'Machine Back Online'
 title_meta: 'Machine Back Online'
 keywords: ['tracking', 'computerids', 'machines', 'stolen', 'missing']

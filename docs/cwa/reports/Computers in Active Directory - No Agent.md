@@ -1,5 +1,6 @@
 ---
 id: 'f3651662-8b77-4254-a8b3-8a945e3aab51'
+slug: /f3651662-8b77-4254-a8b3-8a945e3aab51
 title: 'Computers in Active Directory - No Agent'
 title_meta: 'Computers in Active Directory - No Agent'
 keywords: ['active-directory', 'report', 'computers', 'cwa']
@@ -23,6 +24,5 @@ This report is dependent on the following items:
 ## Report Example
 
 ![Report Example](../../../static/img/Computers-in-Active-Directory---No-Agent/image_1.png)
-
 
 

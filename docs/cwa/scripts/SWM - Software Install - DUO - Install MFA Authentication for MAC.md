@@ -1,5 +1,6 @@
 ---
 id: '854ffbbf-6756-48c6-8dc1-85dea08333e8'
+slug: /854ffbbf-6756-48c6-8dc1-85dea08333e8
 title: 'SWM - Software Install - DUO - Install MFA Authentication for MAC'
 title_meta: 'SWM - Software Install - DUO - Install MFA Authentication for MAC'
 keywords: ['duo', '2fa', 'mac', 'authentication', 'installation']
@@ -69,6 +70,5 @@ Call v_Extradatarefresh(3,'Clients');
 ## Output
 
 - Script Logs
-
 
 

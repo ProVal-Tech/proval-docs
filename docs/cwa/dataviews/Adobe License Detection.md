@@ -1,5 +1,6 @@
 ---
 id: 'cf0c479b-fce8-4af8-9ae2-24fd7fc2a7ed'
+slug: /cf0c479b-fce8-4af8-9ae2-24fd7fc2a7ed
 title: 'Adobe License Detection'
 title_meta: 'Adobe License Detection'
 keywords: ['adobe', 'license', 'rmm', 'dataview', 'sql']

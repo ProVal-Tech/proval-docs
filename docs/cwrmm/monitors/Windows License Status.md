@@ -1,5 +1,6 @@
 ---
 id: '32a21209-8991-4302-b40c-e9c16ebe4331'
+slug: /32a21209-8991-4302-b40c-e9c16ebe4331
 title: 'Windows License Status'
 title_meta: 'Windows License Status'
 keywords: ['monitor', 'license', 'windows', 'status', 'alert']
@@ -85,6 +86,5 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/Windows-License-Status/image_18.png)
-
 
 

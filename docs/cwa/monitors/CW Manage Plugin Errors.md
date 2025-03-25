@@ -1,5 +1,6 @@
 ---
 id: 'cc311e32-be16-4133-ae95-fca238aea891'
+slug: /cc311e32-be16-4133-ae95-fca238aea891
 title: 'CW Manage Plugin Errors'
 title_meta: 'CW Manage Plugin Errors'
 keywords: ['monitor', 'notification', 'connectwise', 'alerts', 'plugin', 'error']
@@ -23,6 +24,5 @@ Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template 
 ## Target
 
 Global
-
 
 

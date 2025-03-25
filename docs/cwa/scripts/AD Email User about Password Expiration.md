@@ -1,5 +1,6 @@
 ---
 id: '8ed6ff40-38c6-4e23-b6ea-2627ed9d49a8'
+slug: /8ed6ff40-38c6-4e23-b6ea-2627ed9d49a8
 title: 'AD Email User about Password Expiration'
 title_meta: 'AD Email User about Password Expiration'
 keywords: ['client', 'script', 'monitor', 'ad', 'password', 'expires', 'email', 'notification']
@@ -39,6 +40,5 @@ The script takes the GUID for the user and populates an email to that user, lett
 ## Output
 
 N/A - No output present
-
 
 

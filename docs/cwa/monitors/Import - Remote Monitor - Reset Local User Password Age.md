@@ -1,5 +1,6 @@
 ---
 id: 'adc49b4c-24dc-4bb5-bd88-abddae4a4739'
+slug: /adc49b4c-24dc-4bb5-bd88-abddae4a4739
 title: 'Import - Remote Monitor - Reset Local User Password Age'
 title_meta: 'Import - Remote Monitor - Reset Local User Password Age'
 keywords: ['setup', 'remote', 'monitor', 'sql', 'query', 'groupid']

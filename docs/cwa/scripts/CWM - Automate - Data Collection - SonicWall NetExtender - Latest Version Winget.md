@@ -1,5 +1,6 @@
 ---
 id: '5eca56c8-7035-41f7-b5d0-ef8d58bf532a'
+slug: /5eca56c8-7035-41f7-b5d0-ef8d58bf532a
 title: 'CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget'
 title_meta: 'CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget'
 keywords: ['sonicwall', 'netextender', 'version', 'system', 'properties']
@@ -26,7 +27,6 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 ## Output
 
 - Script log
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'da1f5a89-eab2-4fae-8e49-e98c269cf103'
+slug: /da1f5a89-eab2-4fae-8e49-e98c269cf103
 title: 'Import - Remote Monitor - Reset AD Users Password Age'
 title_meta: 'Import - Remote Monitor - Reset AD Users Password Age'
 keywords: ['ad', 'users', 'password', 'reset', 'monitor']

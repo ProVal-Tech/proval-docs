@@ -1,5 +1,6 @@
 ---
 id: '34205607-a9c5-463b-9a45-9f7ac02c0d71'
+slug: /34205607-a9c5-463b-9a45-9f7ac02c0d71
 title: 'Out of Date Cumulative Update (Post Reboot Verification)'
 title_meta: 'Out of Date Cumulative Update (Post Reboot Verification)'
 keywords: ['cumulative', 'update', 'verification', 'reboot', 'task']
@@ -287,5 +288,4 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script Log
 - Custom Field
-
 

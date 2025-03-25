@@ -1,5 +1,6 @@
 ---
 id: '44048760-bd04-451d-82ea-b6eee6a03552'
+slug: /44048760-bd04-451d-82ea-b6eee6a03552
 title: 'plugin_proval_certs'
 title_meta: 'plugin_proval_certs'
 keywords: ['ssl', 'certificate', 'audit', 'monitoring', 'data']
@@ -35,6 +36,5 @@ This table is used in the [SSL Certificate Audit Solution](<../../solutions/Cert
 | CertAdded      | DATETIME                                  | When was the certificate added to the system                       |
 | Expiration     | DATETIME                                  | What is the expiration date of the SSL certificate                 |
 | DateUpdated    | DATETIME                                  | When did the script actually add the information into the database  |
-
 
 

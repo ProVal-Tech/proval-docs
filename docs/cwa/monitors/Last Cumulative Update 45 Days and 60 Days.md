@@ -1,5 +1,6 @@
 ---
 id: '6a68b349-fa31-41d0-9a6c-80eef1a13fdb'
+slug: /6a68b349-fa31-41d0-9a6c-80eef1a13fdb
 title: 'Last Cumulative Update  45 Days and  60 Days'
 title_meta: 'Last Cumulative Update  45 Days and  60 Days'
 keywords: ['cumulative', 'update', 'monitor', 'alert', 'ticketing']

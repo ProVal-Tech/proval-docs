@@ -1,5 +1,6 @@
 ---
 id: '905d7834-84e6-474a-9dc4-0e34a2e8408a'
+slug: /905d7834-84e6-474a-9dc4-0e34a2e8408a
 title: 'Register - ChromiumExtension'
 title_meta: 'Register - ChromiumExtension'
 keywords: ['chromium', 'chrome', 'edge', 'brave', 'vivaldi', 'extensions', 'policy']
@@ -43,6 +44,5 @@ If setting all available browsers, leave the Target blank.
 ## Output
 
 - Script log
-
 
 

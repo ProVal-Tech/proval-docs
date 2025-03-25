@@ -1,5 +1,6 @@
 ---
 id: '02641c45-1e2e-470a-ae9f-224a754bf9c7'
+slug: /02641c45-1e2e-470a-ae9f-224a754bf9c7
 title: 'Uninstall-LiveConnect'
 title_meta: 'Uninstall-LiveConnect'
 keywords: ['uninstall', 'liveconnect', 'kaseya', 'remote', 'control']
@@ -53,6 +54,5 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM               |                                         |
 | Kaseya VSA                    |                                         |
 | Datto RMM                     |                                         |
-
 
 

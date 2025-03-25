@@ -1,5 +1,6 @@
 ---
 id: 'b2661e46-518b-4a4f-9b4b-21f9b69ff100'
+slug: /b2661e46-518b-4a4f-9b4b-21f9b69ff100
 title: 'Get-VsaTimeSaved.ps1'
 title_meta: 'Get-VsaTimeSaved.ps1'
 keywords: ['csv', 'report', 'time', 'saved', 'vsa', 'automation', 'org', 'total', 'monthly']
@@ -51,4 +52,3 @@ This document generates a CSV report for the end client to show cumulative and m
 `$env:ProgramData/_automation/AgentProcedure/StackContent/TimeSavedByAutomation_$timestamp.csv`
 ## Attachments
 [Get-VsaTimeSaved.ps1](<../../../static/attachments/itg/11262317/Get-VsaTimeSaved.ps1>)
-

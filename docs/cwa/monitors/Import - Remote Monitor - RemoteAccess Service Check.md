@@ -1,5 +1,6 @@
 ---
 id: 'dd99f8a5-83f7-48a5-b8a9-ac68224e543a'
+slug: /dd99f8a5-83f7-48a5-b8a9-ac68224e543a
 title: 'Import - Remote Monitor - RemoteAccess Service Check'
 title_meta: 'Import - Remote Monitor - RemoteAccess Service Check'
 keywords: ['remote', 'access', 'service', 'check', 'setup', 'monitor']

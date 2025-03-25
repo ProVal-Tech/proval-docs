@@ -1,5 +1,6 @@
 ---
 id: '1f78325c-968a-4a73-ba85-2a18c061063e'
+slug: /1f78325c-968a-4a73-ba85-2a18c061063e
 title: 'Patch Manager - WUA Settings Validation'
 title_meta: 'Patch Manager - WUA Settings Validation'
 keywords: ['windows', 'update', 'registry', 'patching', 'service']
@@ -48,6 +49,5 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 ## Output
 
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
-
 
 

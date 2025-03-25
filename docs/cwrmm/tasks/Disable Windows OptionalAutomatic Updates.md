@@ -1,5 +1,6 @@
 ---
 id: '1ce60c7e-e23d-4313-bb00-7e89ae031d7f'
+slug: /1ce60c7e-e23d-4313-bb00-7e89ae031d7f
 title: 'Disable Windows OptionalAutomatic Updates'
 title_meta: 'Disable Windows OptionalAutomatic Updates'
 keywords: ['windows', 'updates', 'registry', 'automation', 'patching']
@@ -127,7 +128,6 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_17.png)  
-
 
 
 

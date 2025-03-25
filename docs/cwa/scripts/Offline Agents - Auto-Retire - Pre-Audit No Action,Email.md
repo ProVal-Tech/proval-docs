@@ -1,5 +1,6 @@
 ---
 id: 'a47f9f1e-356c-4b1c-aa02-47d70788ac05'
+slug: /a47f9f1e-356c-4b1c-aa02-47d70788ac05
 title: 'Offline Agents - Auto-Retire - Pre-Audit No Action,Email'
 title_meta: 'Offline Agents - Auto-Retire - Pre-Audit No Action,Email'
 keywords: ['email', 'offline', 'agents', 'automate', 'script', 'notification']
@@ -103,6 +104,5 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
    - Debug the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for the global property `AutoRetireThreshold_Days`.
      - Validate that the system property was set correctly by navigating to 'System → Configuration → Dashboard → Config → Configurations → Properties' → Check the property 'AutoRetireThreshold_Days'.
    - Run the script against the desired client.
-
 
 

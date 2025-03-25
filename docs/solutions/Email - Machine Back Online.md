@@ -1,5 +1,6 @@
 ---
 id: '1973f30a-c6dc-4725-90f7-ba081cebf2d7'
+slug: /1973f30a-c6dc-4725-90f7-ba081cebf2d7
 title: 'Email - Machine Back Online'
 title_meta: 'Email - Machine Back Online'
 keywords: ['connectwise', 'notification', 'email', 'machine', 'check-in']
@@ -74,6 +75,5 @@ A: Remove the email address(es) from the EDF.
 ## Sample Email
 
 ![Sample Email](../../static/img/Email---Machine-Back-Online/image_4.png)
-
 
 

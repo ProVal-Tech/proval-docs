@@ -1,5 +1,6 @@
 ---
 id: 'ea24f672-d2cd-41bc-8b62-2dcd20085d29'
+slug: /ea24f672-d2cd-41bc-8b62-2dcd20085d29
 title: 'Group Policy Settings'
 title_meta: 'Group Policy Settings'
 keywords: ['gpo', 'audit', 'policy', 'settings', 'active-directory']
@@ -33,6 +34,5 @@ This dataview shows information about GPOs, their applied policies, and settings
 | Extension    | Displays GPO extensions.                          |
 | Property     | Displays properties of the Group policies.       |
 | PropertyData | Displays detailed information for the GPO settings. |
-
 
 

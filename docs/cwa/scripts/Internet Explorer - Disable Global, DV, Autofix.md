@@ -1,5 +1,6 @@
 ---
 id: '60cf67bf-fc28-4461-a2ad-7a32b2461652'
+slug: /60cf67bf-fc28-4461-a2ad-7a32b2461652
 title: 'Internet Explorer - Disable Global, DV, Autofix'
 title_meta: 'Internet Explorer - Disable Global, DV, Autofix'
 keywords: ['internet', 'explorer', 'disable', 'windows', 'script']
@@ -52,6 +53,5 @@ This script disables Internet Explorer on a Windows machine.
 - Script log
 - EDF
 - Dataview
-
 
 

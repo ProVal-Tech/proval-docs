@@ -1,5 +1,6 @@
 ---
 id: 'c5607e81-8d80-4096-a9d8-76b39ba71db3'
+slug: /c5607e81-8d80-4096-a9d8-76b39ba71db3
 title: 'xPVAL Azure AD Connect Version'
 title_meta: 'xPVAL Azure AD Connect Version'
 keywords: ['azure', 'audit', 'connect', 'version', 'endpoint']
@@ -35,7 +36,6 @@ This section lists all filters applied to this view.
 ### Export Attachment
 
 Please attach the content XML VSA export to this document.
-
 
 
 

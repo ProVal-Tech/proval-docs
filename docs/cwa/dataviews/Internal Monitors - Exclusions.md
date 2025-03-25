@@ -1,5 +1,6 @@
 ---
 id: '3bf6b511-2d50-48cc-b199-979bd39c8dca'
+slug: /3bf6b511-2d50-48cc-b199-979bd39c8dca
 title: 'Internal Monitors - Exclusions'
 title_meta: 'Internal Monitors - Exclusions'
 keywords: ['monitoring', 'exclusion', 'computers', 'automate', 'detection', 'autofix']
@@ -33,6 +34,5 @@ You can find this information in Automate in the areas displayed below.
 | Operating System      | Operating System                                     |
 | Last Contact          | Last Contact                                         |
 | Days Since Last Contact| Days Since Last Contact                              |
-
 
 

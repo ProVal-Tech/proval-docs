@@ -1,5 +1,6 @@
 ---
 id: '72c57df5-f535-4d8e-9c04-6acde4c93aef'
+slug: /72c57df5-f535-4d8e-9c04-6acde4c93aef
 title: 'Remind User of Reboot Needed Autofix'
 title_meta: 'Remind User of Reboot Needed Autofix'
 keywords: ['popup', 'reminder', 'reboot', 'user', 'notification']
@@ -24,6 +25,5 @@ It can only be used as an autofix for monitors that check for machines that have
 
 - The script first verifies if the user is logged in. If not, it exits.
 - If the user is logged in, it sends a popup message to remind them to reboot their machine.
-
 
 

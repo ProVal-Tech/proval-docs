@@ -1,5 +1,6 @@
 ---
 id: '317fccab-60e6-4af7-8866-1b4d862d973e'
+slug: /317fccab-60e6-4af7-8866-1b4d862d973e
 title: 'plugin_proval_unificontroller'
 title_meta: 'plugin_proval_unificontroller'
 keywords: ['unifi', 'data', 'collection', 'update', 'table']
@@ -35,6 +36,5 @@ Holds requested Unifi Controller data specific to the controller only.
 | Port         | Int    | The port that the Controller communicates on.                             |
 | UserName     | String | The username for the admin user on the Unifi Controller.                 |
 | Password     | Blob   | Encrypted admin user password for the user on the Unifi Controller.      |
-
 
 

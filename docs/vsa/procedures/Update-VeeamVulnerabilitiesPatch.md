@@ -1,5 +1,6 @@
 ---
 id: 'fdefa9e8-9b20-4f90-a125-949694bf36c6'
+slug: /fdefa9e8-9b20-4f90-a125-949694bf36c6
 title: 'Update-VeeamVulnerabilitiesPatch'
 title_meta: 'Update-VeeamVulnerabilitiesPatch'
 keywords: ['veeam', 'patch', 'vulnerabilities', 'update', 'install']
@@ -48,6 +49,5 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM        |                     |
 | Kaseya VSA            |                     |
 | Datto RMM             |                     |
-
 
 

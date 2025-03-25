@@ -1,5 +1,6 @@
 ---
 id: '9d741648-dc5c-4ff8-884c-99c4072d9f34'
+slug: /9d741648-dc5c-4ff8-884c-99c4072d9f34
 title: 'Automate - Contact Association to Machine'
 title_meta: 'Automate - Contact Association to Machine'
 keywords: ['contact', 'machines', 'association', 'dataview', 'automate']
@@ -29,6 +30,5 @@ This dataview shows which machines are associated with specific contacts in Auto
 | Reboot               | Check whether the contact has reboot permission or not                  |
 | Shutdown             | Check whether the contact has shutdown permission or not                |
 | Wake On Lan          | Check whether the contact has Wake On Lan permission or not.            |
-
 
 

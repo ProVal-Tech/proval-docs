@@ -1,5 +1,6 @@
 ---
 id: 'a4b90ce5-21c6-40c4-9158-ff60bd08a53f'
+slug: /a4b90ce5-21c6-40c4-9158-ff60bd08a53f
 title: 'Office Activation Status'
 title_meta: 'Office Activation Status'
 keywords: ['office', 'activation', 'alert', 'unlicensed', 'endpoint']
@@ -87,6 +88,5 @@ Generates an alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/Office-Activation-Status/image_14.png)
-
 
 

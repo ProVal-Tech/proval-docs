@@ -1,5 +1,6 @@
 ---
 id: 'fdbe1912-b216-4876-b64b-db83eee691a1'
+slug: /fdbe1912-b216-4876-b64b-db83eee691a1
 title: 'Execute Script - Power Plan - Audit'
 title_meta: 'Execute Script - Power Plan - Audit'
 keywords: ['epm', 'script', 'audit', 'power', 'plan', 'collection']
@@ -33,7 +34,6 @@ Managed Workstations
 The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script.  
 
 ![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
-
 
 
 

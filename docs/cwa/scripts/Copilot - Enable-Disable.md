@@ -1,5 +1,6 @@
 ---
 id: '42e9ec1d-84df-11ef-8a0f-8600008a66b7'
+slug: /42e9ec1d-84df-11ef-8a0f-8600008a66b7
 title: 'Copilot - Enable/Disable'
 title_meta: 'Copilot - Enable/Disable'
 keywords: ['Copilot', 'Edge', 'Microsoft', 'Windows', 'Browser']

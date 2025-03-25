@@ -1,5 +1,6 @@
 ---
 id: 'f01cab64-00bf-4f94-92ea-280c87cf06ca'
+slug: /f01cab64-00bf-4f94-92ea-280c87cf06ca
 title: 'Move Agents to Correct Location'
 title_meta: 'Move Agents to Correct Location'
 keywords: ['autofix', 'monitor', 'location', 'computer', 'agent']
@@ -36,6 +37,5 @@ The monitor set will call the script, which will move the computer to the new lo
 ## Output
 
 Removal of agents from the monitor set's detection.
-
 
 

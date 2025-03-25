@@ -1,5 +1,6 @@
 ---
 id: '547c90df-abff-46a8-9e02-aec45b265672'
+slug: /547c90df-abff-46a8-9e02-aec45b265672
 title: 'Senteon_Org'
 title_meta: 'Senteon_Org'
 keywords: ['senteon', 'organization', 'managed', 'variable', 'partner']
@@ -25,6 +26,5 @@ The value for this must be provided by the partner. The partner can get the data
 | Managed Variable Name | Managed Variable Type | Description                                                  |
 |-----------------------|-----------------------|--------------------------------------------------------------|
 | Senteon_Org           | Public                | Used by the agent procedure to specify the organization during installation |
-
 
 

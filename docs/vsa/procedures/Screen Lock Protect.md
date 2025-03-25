@@ -1,5 +1,6 @@
 ---
 id: '7321634c-9259-454e-b7f4-c0ce205a3d8a'
+slug: /7321634c-9259-454e-b7f4-c0ce205a3d8a
 title: 'Screen Lock Protect'
 title_meta: 'Screen Lock Protect'
 keywords: ['screen', 'lock', 'timeout', 'endpoint', 'configuration']
@@ -49,6 +50,5 @@ Uses the ProVal Agnostic Protect-ScreenLock script to set a configurable timeout
 ## Output
 
 Agent Procedure Log
-
 
 

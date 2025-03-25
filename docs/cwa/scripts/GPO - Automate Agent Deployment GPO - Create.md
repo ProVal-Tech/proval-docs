@@ -1,5 +1,6 @@
 ---
 id: '843cb902-2299-4d91-90b9-62bd7788ea6a'
+slug: /843cb902-2299-4d91-90b9-62bd7788ea6a
 title: 'GPO - Automate Agent Deployment GPO - Create'
 title_meta: 'GPO - Automate Agent Deployment GPO - Create'
 keywords: ['gpo', 'automate', 'deployment', 'network', 'agent', 'domain', 'probe']
@@ -48,6 +49,5 @@ This script runs against a domain controller in a location with a network probe 
 ## Output
 
 - Script log
-
 
 

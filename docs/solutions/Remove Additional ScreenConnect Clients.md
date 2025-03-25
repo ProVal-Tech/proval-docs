@@ -1,5 +1,6 @@
 ---
 id: '237065e9-8db3-4932-9ba8-1588cc6a7d3c'
+slug: /237065e9-8db3-4932-9ba8-1588cc6a7d3c
 title: 'Remove Additional ScreenConnect Clients'
 title_meta: 'Remove Additional ScreenConnect Clients'
 keywords: ['screenconnect', 'clients', 'remove', 'windows', 'solution']
@@ -52,7 +53,6 @@ LEFT JOIN clients ON clients.clientid = c.clientid
 WHERE software.name LIKE '%screenconnect%' 
 GROUP BY software.name
 ```
-
 
 
 

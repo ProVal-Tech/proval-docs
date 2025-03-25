@@ -1,5 +1,6 @@
 ---
 id: 'ebe382f4-d3cb-47be-84e1-c82009fd745a'
+slug: /ebe382f4-d3cb-47be-84e1-c82009fd745a
 title: 'Huntress Agent (REPAIR)'
 title_meta: 'Huntress Agent (REPAIR)'
 keywords: ['huntress', 'agent', 'repair', 'script', 'automation']
@@ -244,6 +245,5 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 ## Output
 
 - Script log
-
 
 

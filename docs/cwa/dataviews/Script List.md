@@ -1,5 +1,6 @@
 ---
 id: 'c5c0f740-2981-4557-9fcc-dd2f863a1240'
+slug: /c5c0f740-2981-4557-9fcc-dd2f863a1240
 title: 'Script List'
 title_meta: 'Script List'
 keywords: ['scripts', 'details', 'permissions', 'guid', 'automation', 'maintenance', 'function', 'client', 'update']
@@ -34,6 +35,5 @@ This dataview lists all scripts in the environment with details about their scri
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-List/image_4.png)
-
 
 

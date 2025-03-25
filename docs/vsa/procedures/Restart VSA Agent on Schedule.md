@@ -1,5 +1,6 @@
 ---
 id: 'e028ad3f-fecc-4701-83b8-0537db4e8494'
+slug: /e028ad3f-fecc-4701-83b8-0537db4e8494
 title: 'Restart VSA Agent on Schedule'
 title_meta: 'Restart VSA Agent on Schedule'
 keywords: ['vsa', 'agent', 'restart', 'service', 'failure']
@@ -23,6 +24,5 @@ This document allows VSA Agents to come back online after a service failure on t
 ## Implementation
 
 Import both XML files into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) to point to the correct VSA service name. Use the variable `#serviceName#` for this. Finally, schedule and deploy the procedures.
-
 
 

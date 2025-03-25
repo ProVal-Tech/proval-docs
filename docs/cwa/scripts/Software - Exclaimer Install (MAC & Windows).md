@@ -1,5 +1,6 @@
 ---
 id: '8c3f58b7-7680-45c3-8f40-1e9c27001136'
+slug: /8c3f58b7-7680-45c3-8f40-1e9c27001136
 title: 'Software - Exclaimer Install (MAC & Windows)'
 title_meta: 'Software - Exclaimer Install (MAC & Windows)'
 keywords: ['exclaimer', 'mac', 'windows', 'installation', 'automation']
@@ -41,6 +42,5 @@ This script will install Exclaimer on both MAC and Windows.
 ## Output
 
 - Script log
-
 
 

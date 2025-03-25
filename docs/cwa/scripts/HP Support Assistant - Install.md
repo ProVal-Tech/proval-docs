@@ -1,5 +1,6 @@
 ---
 id: 'f65ad1a0-8f26-40f7-8d72-0e753243c01e'
+slug: /f65ad1a0-8f26-40f7-8d72-0e753243c01e
 title: 'HP Support Assistant - Install'
 title_meta: 'HP Support Assistant - Install'
 keywords: ['hp', 'support', 'assistant', 'installation', 'script']
@@ -34,6 +35,5 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 ## Output
 
 - Script log
-
 
 

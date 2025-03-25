@@ -1,5 +1,6 @@
 ---
 id: '65f8712b-9f2b-48e3-b719-8561453d9ea0'
+slug: /65f8712b-9f2b-48e3-b719-8561453d9ea0
 title: 'CHOCO - Install Application'
 title_meta: 'CHOCO - Install Application'
 keywords: ['chocolatey', 'installer', 'upgrade', 'application', 'automation']
@@ -46,6 +47,5 @@ The script will attempt to install Chocolatey and then install or upgrade the ap
 ## Output
 
 - Script log
-
 
 

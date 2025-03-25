@@ -1,5 +1,6 @@
 ---
 id: 'f64826a7-f9c0-45c5-9d1f-136657fbd875'
+slug: /f64826a7-f9c0-45c5-9d1f-136657fbd875
 title: 'HDD Info Retrieval'
 title_meta: 'HDD Info Retrieval'
 keywords: ['disk', 'drive', 'csv', 'information', 'reporting']
@@ -48,6 +49,5 @@ This procedure runs Get-DiskInfo and creates a CSV file with commonly requested 
 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %ProgramData%/_automation/StackContent/DiskReport/DiskReport.csv
-
 
 

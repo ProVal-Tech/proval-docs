@@ -1,5 +1,6 @@
 ---
 id: 'b5940a1c-0e82-4756-86a2-b49e57d664f1'
+slug: /b5940a1c-0e82-4756-86a2-b49e57d664f1
 title: 'Get-WindowsUpdateReport'
 title_meta: 'Get-WindowsUpdateReport'
 keywords: ['windows', 'update', 'report', 'patches']
@@ -107,6 +108,5 @@ Running this script on Windows 7 and earlier versions is at best unstable and at
 ```
 .\Get-Windows10PatchInfo-log.txt
 ```
-
 
 

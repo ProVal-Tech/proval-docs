@@ -1,5 +1,6 @@
 ---
 id: '9f3efadf-4775-454b-8e56-6b8c5e73ee07'
+slug: /9f3efadf-4775-454b-8e56-6b8c5e73ee07
 title: 'SWM - Software Install - Driver Booster Uninstaller'
 title_meta: 'SWM - Software Install - Driver Booster Uninstaller'
 keywords: ['uninstall', 'driver', 'booster', 'script', 'windows']
@@ -27,6 +28,5 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 ## Output
 
 - Script Logs
-
 
 

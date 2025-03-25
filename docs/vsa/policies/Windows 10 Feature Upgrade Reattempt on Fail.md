@@ -1,5 +1,6 @@
 ---
 id: 'a347ce1a-5ef9-4e07-a42e-629d7d49c620'
+slug: /a347ce1a-5ef9-4e07-a42e-629d7d49c620
 title: 'Windows 10 Feature Upgrade Reattempt on Fail'
 title_meta: 'Windows 10 Feature Upgrade Reattempt on Fail'
 keywords: ['windows', 'feature', 'upgrade', 'failure', 'policy', 'agent', 'procedure']
@@ -23,6 +24,5 @@ Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedu
   - **Policy Object Settings**:  
     - **Policy Object Members**: [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](<../procedures/Windows 10 Feature Upgrade (No Reboot).md>)  
       - **Policy Object Member Settings**: Scheduled Monthly, 1st of the month, Do not skip if offline, at midnight.
-
 
 

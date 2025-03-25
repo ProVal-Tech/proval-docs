@@ -1,5 +1,6 @@
 ---
 id: '904989a6-fe21-4e40-adb6-17d1168c830e'
+slug: /904989a6-fe21-4e40-adb6-17d1168c830e
 title: 'pvl_winget_audit'
 title_meta: 'pvl_winget_audit'
 keywords: ['audit', 'data', 'storage', 'winget', 'application']
@@ -33,7 +34,6 @@ This document stores the audit data fetched by the [Winget App Audit](<../script
 | Level                | varchar   | Installation level of the application (System/User).                                            |
 | AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) script's document for detailed instructions on enabling Auto Update. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
-
 
 
 

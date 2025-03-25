@@ -1,5 +1,6 @@
 ---
 id: 'a7785954-5a6d-4003-9d0e-c919e1a96b0c'
+slug: /a7785954-5a6d-4003-9d0e-c919e1a96b0c
 title: 'BitLocker Status and Recovery Key Audit'
 title_meta: 'BitLocker Status and Recovery Key Audit'
 keywords: ['bitlocker', 'encryption', 'custom', 'field', 'status', 'key']
@@ -25,7 +26,6 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
-
 
 
 

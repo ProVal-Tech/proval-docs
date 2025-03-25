@@ -1,5 +1,6 @@
 ---
 id: 'ed6559df-a8d5-48d9-8a9e-fe26b84a056b'
+slug: /ed6559df-a8d5-48d9-8a9e-fe26b84a056b
 title: 'Get Office Update Channel (Windows) CF'
 title_meta: 'Get Office Update Channel (Windows) CF'
 keywords: ['office', 'update', 'channel', 'cf', 'agent', 'procedure']
@@ -54,6 +55,5 @@ Agent Procedure Log
 
 Custom Field  
 ![Image](../../../static/img/Get-Office-Update-Channel-(Windows)-CF/image_7.png)  
-
 
 

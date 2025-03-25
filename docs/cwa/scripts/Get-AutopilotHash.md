@@ -1,5 +1,6 @@
 ---
 id: '9171549a-070a-4346-be90-393416713806'
+slug: /9171549a-070a-4346-be90-393416713806
 title: 'Get-AutopilotHash'
 title_meta: 'Get-AutopilotHash'
 keywords: ['autopilot', 'hash', 'device', 'registration', 'edf']
@@ -34,6 +35,5 @@ It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal
 ## Output
 
 - Script Logs
-
 
 

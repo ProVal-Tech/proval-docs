@@ -1,5 +1,6 @@
 ---
 id: '830beb63-113a-406e-aef2-046403de9cb9'
+slug: /830beb63-113a-406e-aef2-046403de9cb9
 title: 'CWM - Automate - ESXi - Snapshot Delete Param'
 title_meta: 'CWM - Automate - ESXi - Snapshot Delete Param'
 keywords: ['esxi', 'snapshot', 'delete', 'virtualmachine', 'automation']
@@ -88,6 +89,5 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to delete the Snapshot @SnapShotName@ from the virtual machine @VMName@. Please review manually.
 PowerShell script result: @psout@
 ```
-
 
 

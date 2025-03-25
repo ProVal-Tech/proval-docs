@@ -1,5 +1,6 @@
 ---
 id: 'd4f874ae-e2d5-4a6c-b0c3-14972813012d'
+slug: /d4f874ae-e2d5-4a6c-b0c3-14972813012d
 title: 'Hosts File - Reset'
 title_meta: 'Hosts File - Reset'
 keywords: ['rename', 'host', 'file', 'dns', 'flush', 'default']
@@ -36,6 +37,5 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/Hosts-File---Reset/image_2.png)
-
 
 

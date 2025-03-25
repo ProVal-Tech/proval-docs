@@ -1,5 +1,6 @@
 ---
 id: '770946a6-9399-4001-adc6-9d1eb9f203da'
+slug: /770946a6-9399-4001-adc6-9d1eb9f203da
 title: 'Browser - Homepage - Manage'
 title_meta: 'Browser - Homepage - Manage'
 keywords: ['homepage', 'browsers', 'configuration', 'set', 'remove', 'replace']
@@ -102,6 +103,5 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
-
 
 

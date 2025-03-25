@@ -1,5 +1,6 @@
 ---
 id: '7e520489-d8bc-4282-b147-d0c33f5a7130'
+slug: /7e520489-d8bc-4282-b147-d0c33f5a7130
 title: 'plugin_proval_UpdatesMissingList'
 title_meta: 'plugin_proval_UpdatesMissingList'
 keywords: ['patches', 'audit', 'updates', 'database', 'sql', 'agent', 'proval']
@@ -47,6 +48,5 @@ CREATE TABLE IF NOT EXISTS `plugin_proval_UpdatesMissingList` (
   CONSTRAINT `plugin_proval_UpdatesMissingList_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
 ```
-
 
 

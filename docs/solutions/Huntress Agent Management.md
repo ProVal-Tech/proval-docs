@@ -1,5 +1,6 @@
 ---
 id: 'ec2b3583-4c06-40c2-8f2d-55f46f7aeed1'
+slug: /ec2b3583-4c06-40c2-8f2d-55f46f7aeed1
 title: 'Huntress Agent Management'
 title_meta: 'Huntress Agent Management'
 keywords: ['huntress', 'agent', 'deployment', 'management', 'windows', 'macos']
@@ -65,6 +66,5 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](<../cwa/monitors/Deploy Huntress Agent.md>) internal monitor.  
 ![Image](../../static/img/Huntress-Agent-Management/image_3.png)
-
 
 

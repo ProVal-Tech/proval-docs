@@ -1,5 +1,6 @@
 ---
 id: '9594a7d7-e0e6-4d25-ae0c-80dc889ff049'
+slug: /9594a7d7-e0e6-4d25-ae0c-80dc889ff049
 title: 'VSAGetOSBuildAPI'
 title_meta: 'VSAGetOSBuildAPI'
 keywords: ['update', 'os', 'build', 'custom', 'fields', 'web', 'check', 'win10', 'api']
@@ -18,7 +19,6 @@ Update OS Build Custom Fields with Web Check for Windows 10 via API
 - **url**: URL for our VSA  
 - **user**: Username we will authenticate with  
 - **password**: The authentication string (password or PAT)  
-
 
 
 

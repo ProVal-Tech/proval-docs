@@ -1,5 +1,6 @@
 ---
 id: 'be7bf652-a9eb-46c0-ae71-ffebd38c24b2'
+slug: /be7bf652-a9eb-46c0-ae71-ffebd38c24b2
 title: 'Agent - Agent Check-in Over 45 Days'
 title_meta: 'Agent - Agent Check-in Over 45 Days'
 keywords: ['agents', 'check-in', 'RMM', 'status', 'OS', 'location', 'client', 'contact']
@@ -29,6 +30,5 @@ This dataview shows information about agents that have not checked in for 45 day
 | All Location Details    | This dataview contains complete location details, including address, city, router address, etc. |
 | All Client Details      | This dataview provides details about the client, including a brief description of city, state, country, and time zone. |
 | All Contact Details     | This dataview contains all contact details of the agent, such as email address, phone number, and full name. |
-
 
 

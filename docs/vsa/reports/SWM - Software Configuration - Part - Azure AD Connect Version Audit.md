@@ -1,5 +1,6 @@
 ---
 id: 'af56a1a9-743a-47ac-928a-8bddb0e616ca'
+slug: /af56a1a9-743a-47ac-928a-8bddb0e616ca
 title: 'SWM - Software Configuration - Part - Azure AD Connect Version Audit'
 title_meta: 'SWM - Software Configuration - Part - Azure AD Connect Version Audit'
 keywords: ['cf', 'azure', 'ad', 'connect', 'version', 'audit']
@@ -34,7 +35,6 @@ List the report parts used. If custom report parts were designed during report c
   - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
-
 
 
 

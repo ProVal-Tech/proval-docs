@@ -1,5 +1,6 @@
 ---
 id: '0bcdb6d5-adc1-4122-923c-1bc121f1a146'
+slug: /0bcdb6d5-adc1-4122-923c-1bc121f1a146
 title: 'Uninstall Teams Classic'
 title_meta: 'Uninstall Teams Classic'
 keywords: ['uninstall', 'microsoft', 'teams', 'windows', 'script']
@@ -45,6 +46,5 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N of PC:** @biosver@  
-
 
 

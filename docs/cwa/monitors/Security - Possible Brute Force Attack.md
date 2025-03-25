@@ -1,5 +1,6 @@
 ---
 id: 'd9b666b4-e0b0-4736-94c1-06b430581bad'
+slug: /d9b666b4-e0b0-4736-94c1-06b430581bad
 title: 'Security - Possible Brute Force Attack'
 title_meta: 'Security - Possible Brute Force Attack'
 keywords: ['security', 'event', 'logon', 'failed', 'monitor']

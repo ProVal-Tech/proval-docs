@@ -1,5 +1,6 @@
 ---
 id: 'de67816f-e6ff-4fed-92e1-26fd5ae5359d'
+slug: /de67816f-e6ff-4fed-92e1-26fd5ae5359d
 title: 'SMB1 Detection'
 title_meta: 'SMB1 Detection'
 keywords: ['smb1', 'monitor', 'windows', 'status', 'check']

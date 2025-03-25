@@ -1,5 +1,6 @@
 ---
 id: '46775a5d-7e55-4aec-ad17-aeb43e63b202'
+slug: /46775a5d-7e55-4aec-ad17-aeb43e63b202
 title: 'Patching - Stage Details'
 title_meta: 'Patching - Stage Details'
 keywords: ['patching', 'data', 'view', 'endpoint', 'client', 'location']
@@ -25,6 +26,5 @@ None
 | Location name    | The name of the location                            |
 | Machine name     | The name of the endpoint                            |
 | Patching Stage   | The patching stage of the endpoint (Production | Pilot | Test) |
-
 
 

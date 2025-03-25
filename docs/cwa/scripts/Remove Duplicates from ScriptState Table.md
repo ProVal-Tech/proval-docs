@@ -1,5 +1,6 @@
 ---
 id: '62c75166-da9a-4b8a-ae44-1be7a7076401'
+slug: /62c75166-da9a-4b8a-ae44-1be7a7076401
 title: 'Remove Duplicates from ScriptState Table'
 title_meta: 'Remove Duplicates from ScriptState Table'
 keywords: ['duplicate', 'scriptstate', 'sql', 'cleanup', 'database']
@@ -44,6 +45,5 @@ HAVING NumberofValues > 1;
 **Step 2:** Exit if the total number of results from the above step is zero.  
 
 **Step 3:** Run a loop to delete all the duplicate entries for each script state per computer per script.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '3aa55f3a-a899-41cc-9430-14b29937f8bb'
+slug: /3aa55f3a-a899-41cc-9430-14b29937f8bb
 title: 'ProVal Dataview Audit'
 title_meta: 'ProVal Dataview Audit'
 keywords: ['dataviews', 'proval', 'sync', 'plugin', 'audit']
@@ -31,6 +32,5 @@ This document lists all the dataviews located in the 'ProVal' folder, depicting 
 - plugin_prosync_dataviews
 - dataviews
 - dataviewfolders
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c48b8ff6-9189-49b2-bd2a-442fb26e7bbe'
+slug: /c48b8ff6-9189-49b2-bd2a-442fb26e7bbe
 title: 'Internet Explorer Installed'
 title_meta: 'Internet Explorer Installed'
 keywords: ['internet', 'explorer', 'detection', 'feature', 'windows']
@@ -18,6 +19,5 @@ The purpose of this document is to detect the machines where the Internet Explor
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -Command "Get-WindowsOptionalFeature -Online -FeatureName Internet-Explorer* "@%}` | Contains   | Enable | Windows        |
-
 
 

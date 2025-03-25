@@ -1,5 +1,6 @@
 ---
 id: '9475b189-47c5-4682-b278-de406761113b'
+slug: /9475b189-47c5-4682-b278-de406761113b
 title: 'BitLocker Initialize Failure Detection'
 title_meta: 'BitLocker Initialize Failure Detection'
 keywords: ['bitlocker', 'monitor', 'ticket', 'failure', 'windows']
@@ -64,6 +65,5 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
 
 

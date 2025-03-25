@@ -1,5 +1,6 @@
 ---
 id: '0db68132-d16e-4098-877c-8da269dfe587'
+slug: /0db68132-d16e-4098-877c-8da269dfe587
 title: 'Volume Exhaustion Estimations Remote Monitor'
 title_meta: 'Volume Exhaustion Estimations Remote Monitor'
 keywords: ['volume', 'monitor', 'exhaustion', 'disk', 'space', 'collection']
@@ -37,6 +38,5 @@ Displays volume information along with the estimated exhaustion date collected b
 | Estimated Exhaustion      | The date and time that this volume is estimated to run out of space          |
 | Days Until Exhaustion     | Number of days left before the volume will run out of space                   |
 | Data Collection Time      | The last time data was gathered for this volume                               |
-
 
 

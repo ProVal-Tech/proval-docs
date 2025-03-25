@@ -1,5 +1,6 @@
 ---
 id: '92b2ccf2-534f-46b6-b1d1-dd77dea47ba8'
+slug: /92b2ccf2-534f-46b6-b1d1-dd77dea47ba8
 title: 'Winget Auto Update'
 title_meta: 'Winget Auto Update'
 keywords: ['winget', 'auto', 'update', 'audit', 'monitor']
@@ -78,7 +79,6 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](<../cwa/monitors/Execute Script - Configure Winget Auto Update.md>)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
-
 
 
 

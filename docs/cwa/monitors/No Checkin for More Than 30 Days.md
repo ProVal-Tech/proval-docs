@@ -1,5 +1,6 @@
 ---
 id: '4bc06cc4-3b78-452a-b602-063e57221234'
+slug: /4bc06cc4-3b78-452a-b602-063e57221234
 title: 'No Checkin for More Than 30 Days'
 title_meta: 'No Checkin for More Than 30 Days'
 keywords: ['monitor', 'machines', 'contact', 'action', 'agent', 'ticket', 'maintenance', 'template']

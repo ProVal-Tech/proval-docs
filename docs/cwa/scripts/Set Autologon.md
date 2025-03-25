@@ -1,5 +1,6 @@
 ---
 id: '0e4d033e-85f3-4ca6-bbad-17a7848fb42a'
+slug: /0e4d033e-85f3-4ca6-bbad-17a7848fb42a
 title: 'Set Autologon'
 title_meta: 'Set Autologon'
 keywords: ['autologon', 'login', 'script', 'sysinternals', 'windows']
@@ -38,6 +39,5 @@ This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then 
 ## Output
 
 - Script log messages
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0abb04f1-450d-4185-9ecd-f27a842cf658'
+slug: /0abb04f1-450d-4185-9ecd-f27a842cf658
 title: 'HP iLO - Potentially Missing Credential'
 title_meta: 'HP iLO - Potentially Missing Credential'
 keywords: ['ilo', 'hp', 'credential', 'detection', 'ticket', 'monitoring']
@@ -32,6 +33,5 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 | Operating System   | Operating System                 |
 | Manufacturer      | Manufacturer                     |
 | Last Contact      | Last Contact with RMM           |
-
 
 

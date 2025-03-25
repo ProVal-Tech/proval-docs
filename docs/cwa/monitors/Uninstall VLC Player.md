@@ -1,5 +1,6 @@
 ---
 id: '5e887154-c307-4ac7-9b75-0a85c516dbad'
+slug: /5e887154-c307-4ac7-9b75-0a85c516dbad
 title: 'Uninstall VLC Player'
 title_meta: 'Uninstall VLC Player'
 keywords: ['remote', 'monitor', 'vlc', 'uninstallation', 'windows', 'workstations']

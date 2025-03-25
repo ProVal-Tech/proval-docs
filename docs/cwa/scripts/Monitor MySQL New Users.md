@@ -1,5 +1,6 @@
 ---
 id: '5ca4395e-3e6f-476c-a75e-87751957751f'
+slug: /5ca4395e-3e6f-476c-a75e-87751957751f
 title: 'Monitor MySQL New Users'
 title_meta: 'Monitor MySQL New Users'
 keywords: ['mysql', 'email', 'script', 'users', 'notification']
@@ -43,6 +44,5 @@ unlisted: false
 ## Output
 
 Email
-
 
 

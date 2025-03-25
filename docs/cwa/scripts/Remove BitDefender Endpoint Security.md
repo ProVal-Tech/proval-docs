@@ -1,5 +1,6 @@
 ---
 id: '43a09503-3ebd-440e-a113-8ecd3aaafd39'
+slug: /43a09503-3ebd-440e-a113-8ecd3aaafd39
 title: 'Remove BitDefender Endpoint Security'
 title_meta: 'Remove BitDefender Endpoint Security'
 keywords: ['bitdefender', 'uninstall', 'endpoint', 'security']
@@ -29,6 +30,5 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
-
 
 

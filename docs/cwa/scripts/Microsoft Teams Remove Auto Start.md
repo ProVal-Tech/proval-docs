@@ -1,5 +1,6 @@
 ---
 id: 'c09ed894-03d7-40e3-8cb0-2223bbeec648'
+slug: /c09ed894-03d7-40e3-8cb0-2223bbeec648
 title: 'Microsoft Teams Remove Auto Start'
 title_meta: 'Microsoft Teams Remove Auto Start'
 keywords: ['ms-teams', 'autostart', 'registry', 'login', 'users']
@@ -26,6 +27,5 @@ This script will remove the autostart entry for MS Teams for all users.
 ## Output
 
 - Script log
-
 
 

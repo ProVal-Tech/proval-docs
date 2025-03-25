@@ -1,5 +1,6 @@
 ---
 id: 'e51e1f76-4cc2-4ad5-bc6d-74678c0109a3'
+slug: /e51e1f76-4cc2-4ad5-bc6d-74678c0109a3
 title: 'SentinelOne - Install'
 title_meta: 'SentinelOne - Install'
 keywords: ['sentinelone', 'installation', 'windows', 'endpoint', 'background', 'teams']
@@ -58,4 +59,3 @@ Modify **[background.zip](http://background.zip)** to the name of the ZIP file y
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
 ## Attachments
 [Import-TeamsBackground.ps1](<../../../static/attachments/itg/16303277/Import-TeamsBackground.ps1>)
-

@@ -1,5 +1,6 @@
 ---
 id: '04754010-1cd6-426b-ba7d-55ae36e60f53'  
+slug: /04754010-1cd6-426b-ba7d-55ae36e60f53  
 title: 'Update-PowerShell'  
 title_meta: 'Update-PowerShell'  
 keywords: ['update', 'powershell', 'installation', 'windows']  
@@ -31,6 +32,5 @@ Updates PowerShell Desktop to the latest version.
 .\Update-PowershellV2.ps1  
 ```  
 Updates PowerShell on the target machine to PowerShell V5.  
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '11a27ba4-705e-4bdc-8d09-a166c92d0553'
+slug: /11a27ba4-705e-4bdc-8d09-a166c92d0553
 title: 'Get-VsaAuditReports'
 title_meta: 'Get-VsaAuditReports'
 keywords: ['kaseya', 'audit', 'vsa', 'api', 'excel', 'reporting']
@@ -105,6 +106,5 @@ $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagem
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementDeploymentProfiles.csv
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Users.csv
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '43cfcc23-05a8-4411-a901-65a819894164'
+slug: /43cfcc23-05a8-4411-a901-65a819894164
 title: 'Purge IIS Logs Older than 3 Days'
 title_meta: 'Purge IIS Logs Older than 3 Days'
 keywords: ['iis', 'log', 'purge', 'files', 'cleanup', 'script', 'powershell']
@@ -105,4 +106,3 @@ Script Logs
 ## Attachments
 [Procedure_Purge_IIS_Logs_Older_than_3_Days.xml](<../../../static/attachments/itg/13341572/Procedure_Purge_IIS_Logs_Older_than_3_Days.xml>)
 [Remove-OlderFiles.ps1](<../../../static/attachments/itg/13341572/Remove-OlderFiles.ps1>)
-

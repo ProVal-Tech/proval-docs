@@ -1,5 +1,6 @@
 ---
 id: 'f83e6218-da9e-451c-b8ec-fd57d32690f6'
+slug: /f83e6218-da9e-451c-b8ec-fd57d32690f6
 title: 'VSA Drive Monitoring'
 title_meta: 'VSA Drive Monitoring'
 keywords: ['drive', 'monitoring', 'solution', 'vsa', 'disk']
@@ -31,6 +32,5 @@ A Complete Drive Monitoring Solution for the VSA
 3. Import all Views and ensure the advanced filter is properly set on each.
 4. Import all Monitor Sets.
 5. Import all Policies.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '99c03451-d553-4cba-be15-fd19d1a922f4'
+slug: /99c03451-d553-4cba-be15-fd19d1a922f4
 title: 'HyperV - Snapshot Age > 3 Days'
 title_meta: 'HyperV - Snapshot Age > 3 Days'
 keywords: ['hyper-v', 'snapshot', 'alert', 'monitor', 'virtualization']

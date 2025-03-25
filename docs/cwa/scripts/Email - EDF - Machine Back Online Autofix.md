@@ -1,5 +1,6 @@
 ---
 id: 'c32c5921-0bd1-4e4a-b605-baa0e958fbc0'
+slug: /c32c5921-0bd1-4e4a-b605-baa0e958fbc0
 title: 'Email - EDF - Machine Back Online Autofix'
 title_meta: 'Email - EDF - Machine Back Online Autofix'
 keywords: ['email', 'alert', 'monitor', 'notification', 'machine']
@@ -40,6 +41,5 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 - Email  
   Sample Email:  
   ![Sample Email](../../../static/img/Email---EDF---Machine-Back-Online-Autofix/image_1.png)
-
 
 

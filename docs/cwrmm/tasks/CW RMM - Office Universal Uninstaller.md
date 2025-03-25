@@ -1,5 +1,6 @@
 ---
 id: '88ebc856-6e02-41d2-a6b5-af8cbd37e2c6'
+slug: /88ebc856-6e02-41d2-a6b5-af8cbd37e2c6
 title: 'CW RMM - Office Universal Uninstaller'
 title_meta: 'CW RMM - Office Universal Uninstaller'
 keywords: ['office', 'uninstaller', 'microsoft', 'corruption', 'script']
@@ -122,6 +123,5 @@ Then click on **Schedule** and provide the parameter details as necessary for th
 ## Output
 
 - Script log
-
 
 

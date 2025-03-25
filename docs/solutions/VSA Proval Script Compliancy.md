@@ -1,5 +1,6 @@
 ---
 id: '9ec556eb-e7b8-410d-8f03-0dcb0a8b549b'
+slug: /9ec556eb-e7b8-410d-8f03-0dcb0a8b549b
 title: 'VSA Proval Script Compliancy'
 title_meta: 'VSA Proval Script Compliancy'
 keywords: ['endpoint', 'compatibility', 'proval', 'windows', 'customfield', 'agent', 'view']
@@ -30,6 +31,5 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 - Ensure the AP has the appropriate CF assigned to `updateSystemInfo()`
 - Run the AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
-
 
 

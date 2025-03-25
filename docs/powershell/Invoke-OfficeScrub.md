@@ -1,5 +1,6 @@
 ---
 id: 'e9253255-9a1f-4392-8ec6-9f7fb6e401ed'
+slug: /e9253255-9a1f-4392-8ec6-9f7fb6e401ed
 title: 'Invoke-OfficeScrub'
 title_meta: 'Invoke-OfficeScrub'
 keywords: ['uninstall', 'office', 'cleanup', 'remove']
@@ -47,6 +48,5 @@ Removes all installed versions of Office.
 ## Output
 - .\Invoke-OfficeScrub-log.txt
 - .\Invoke-OfficeScrub-error.txt
-
 
 

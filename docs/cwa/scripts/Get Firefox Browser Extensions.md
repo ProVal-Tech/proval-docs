@@ -1,5 +1,6 @@
 ---
 id: '472a8d13-fd00-4a97-90dd-833a171eac40'
+slug: /472a8d13-fd00-4a97-90dd-833a171eac40
 title: 'Get Firefox Browser Extensions'
 title_meta: 'Get Firefox Browser Extensions'
 keywords: ['automate', 'firefox', 'extensions', 'data', 'collection', 'json', 'sql', 'logging']
@@ -36,6 +37,5 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 - Script logs
 - Custom Table
 - Dataview
-
 
 

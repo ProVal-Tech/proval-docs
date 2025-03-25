@@ -1,5 +1,6 @@
 ---
 id: 'dc431e4b-f1c9-4e63-9653-653a40b22278'
+slug: /dc431e4b-f1c9-4e63-9653-653a40b22278
 title: 'SEC - Automate - Install IdleMon'
 title_meta: 'SEC - Automate - Install IdleMon'
 keywords: ['installation', 'service', 'idlemon']
@@ -16,7 +17,6 @@ This document describes the installation process for the [IdleMon](https://prova
 ## Output
 
 - Script log
-
 
 
 

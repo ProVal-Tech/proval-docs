@@ -1,5 +1,6 @@
 ---
 id: '1a561427-06ea-4c8c-b752-d1ad312007ab'
+slug: /1a561427-06ea-4c8c-b752-d1ad312007ab
 title: 'Agents Migration Monitoring - Client-Level'
 title_meta: 'Agents Migration Monitoring - Client-Level'
 keywords: ['client', 'transfer', 'notification', 'script', 'automate']
@@ -49,6 +50,5 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/Agents-Migration-Monitoring---Client-Level/image_2.png)
-
 
 

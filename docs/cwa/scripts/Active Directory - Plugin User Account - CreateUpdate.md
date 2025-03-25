@@ -1,5 +1,6 @@
 ---
 id: 'ea1aca74-77ee-4387-91f2-57adb5822737'
+slug: /ea1aca74-77ee-4387-91f2-57adb5822737
 title: 'Active Directory - Plugin User Account - CreateUpdate'
 title_meta: 'Active Directory - Plugin User Account - CreateUpdate'
 keywords: ['domain', 'admin', 'account', 'active', 'directory', 'plugin']
@@ -129,6 +130,5 @@ Additionally, there is an option available in the script to set the password as 
 ## Output
 
 - Script Logs
-
 
 

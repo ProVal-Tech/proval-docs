@@ -1,5 +1,6 @@
 ---
 id: 'bb84e821-38c5-4b39-ad4c-894eef47bf79'
+slug: /bb84e821-38c5-4b39-ad4c-894eef47bf79
 title: 'Site - Exclude Windows 11 Installation'
 title_meta: 'Site - Exclude Windows 11 Installation'
 keywords: ['custom', 'field', 'exclude', 'windows', 'upgrade']
@@ -23,6 +24,5 @@ Mark this custom field to exclude the endpoints of this site from the Windows 10
 
 ![Screenshot 1](../../../static/img/Site---Exclude-Windows-11-Installation/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---Exclude-Windows-11-Installation/image_2.png)
-
 
 

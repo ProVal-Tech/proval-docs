@@ -1,5 +1,6 @@
 ---
 id: 'f016ea11-da3b-4834-a5f0-3a55e3e3ad53'
+slug: /f016ea11-da3b-4834-a5f0-3a55e3e3ad53
 title: 'PrintNightMare Detection'
 title_meta: 'PrintNightMare Detection'
 keywords: ['printnightmare', 'vulnerability', 'cve-2021-1675', 'mitigation', 'status']
@@ -31,6 +32,5 @@ This dataview will collectively show all required information about the PrintNig
 | Point And Print Status    | Point and Print Registry check         |
 | CVE-2021-34527 Patch      | CVE patch install status               |
 | Mitigation Status         | Confirms whether mitigation was applied or not. |
-
 
 

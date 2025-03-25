@@ -1,5 +1,6 @@
 ---
 id: 'd8e1d743-88d6-4acb-b149-7fc27c2e1738'
+slug: /d8e1d743-88d6-4acb-b149-7fc27c2e1738
 title: 'Crystal Disk Info Health'
 title_meta: 'Crystal Disk Info Health'
 keywords: ['disk', 'health', 'monitoring', 'crystal', 'info']
@@ -28,6 +29,5 @@ The purpose of this document is to monitor the disk health of physical machines 
 - Create the task: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the deployment schedule as described in this document: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](<../cwrmm/tasks/Get Crystal Disk Info (Disk Health).md>)
 - Create the monitor if necessary: [CW RMM - Monitor - Crystal Disk Info Health Status](<../cwrmm/monitors/Crystal Disk Info Health Status.md>)
-
 
 

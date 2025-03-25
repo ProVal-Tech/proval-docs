@@ -1,5 +1,6 @@
 ---
 id: '19d3cc45-e5bd-4705-b82d-c0657b2e6195'
+slug: /19d3cc45-e5bd-4705-b82d-c0657b2e6195
 title: 'Hosts File - Audit'
 title_meta: 'Hosts File - Audit'
 keywords: ['custom', 'host', 'file', 'entries', 'script']
@@ -27,6 +28,5 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be displayed in a Dataview for monitoring if desired.
-
 
 

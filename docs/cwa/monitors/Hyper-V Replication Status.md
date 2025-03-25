@@ -1,5 +1,6 @@
 ---
 id: 'c768b83d-adcf-4de8-8b4f-ac3d65679161'
+slug: /c768b83d-adcf-4de8-8b4f-ac3d65679161
 title: 'Hyper-V Replication Status'
 title_meta: 'Hyper-V Replication Status'
 keywords: ['hyper-v', 'replication', 'monitoring', 'virtualization', 'backup']

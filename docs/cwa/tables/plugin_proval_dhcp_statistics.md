@@ -1,5 +1,6 @@
 ---
 id: '489fe175-9ac6-420c-be2e-e5faceb956fd'
+slug: /489fe175-9ac6-420c-be2e-e5faceb956fd
 title: 'plugin_proval_dhcp_statistics'
 title_meta: 'plugin_proval_dhcp_statistics'
 keywords: ['dhcp', 'scope', 'statistics', 'ip', 'lease', 'address', 'computer', 'client']
@@ -36,6 +37,5 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | UsedIPCount       | INT     | The number of used IP addresses in the DHCP scope.      |
 | ReservedIPCount    | INT     | The number of reserved IP addresses in the DHCP scope.  |
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
-
 
 

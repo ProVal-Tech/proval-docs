@@ -1,5 +1,6 @@
 ---
 id: '701fd9e6-617a-49a0-8368-531ec189e44c'
+slug: /701fd9e6-617a-49a0-8368-531ec189e44c
 title: 'Get-BatteryReport'
 title_meta: 'Get-BatteryReport'
 keywords: ['workstation', 'battery', 'monitoring', 'report', 'threshold']
@@ -61,7 +62,6 @@ This solution provides information on a workstation's battery state.
      - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '7c336dbd-72cb-4099-8be1-19c78f54cabb'
+slug: /7c336dbd-72cb-4099-8be1-19c78f54cabb
 title: 'Add Windows Capability - RSAT'
 title_meta: 'Add Windows Capability - RSAT'
 keywords: ['rsat', 'windows', 'monitor', 'ticket', 'automation']

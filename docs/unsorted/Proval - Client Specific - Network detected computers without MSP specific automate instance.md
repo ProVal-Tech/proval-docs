@@ -1,5 +1,6 @@
 ---
 id: '13499ef6-0959-4222-9298-a3a36d81f2d3'
+slug: /13499ef6-0959-4222-9298-a3a36d81f2d3
 title: 'Proval - Client Specific - Network detected computers without MSP specific automate instance'
 title_meta: 'Proval - Client Specific - Network detected computers without MSP specific automate instance'
 keywords: ['network', 'devices', 'computers', 'discovery', 'agent']
@@ -20,6 +21,5 @@ Global - This method should be run without explicitly defined targets.
 ## Ticketing
 
 ![Image](../../static/img/Proval---Client-Specific---Network-detected-computers-without-MSP-specific-automate-instance/image_1.png)
-
 
 

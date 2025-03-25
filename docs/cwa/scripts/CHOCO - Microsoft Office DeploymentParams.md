@@ -1,5 +1,6 @@
 ---
 id: 'a89cb4a1-7b45-4bb8-9685-ddf71928acc8'
+slug: /a89cb4a1-7b45-4bb8-9685-ddf71928acc8
 title: 'CHOCO - Microsoft Office DeploymentParams'
 title_meta: 'CHOCO - Microsoft Office DeploymentParams'
 keywords: ['microsoft', 'office', 'chocolatey', 'deployment', 'installation']
@@ -37,6 +38,5 @@ This script can be used to install different versions of Microsoft Office using 
 ## Output
 
 - Script log
-
 
 

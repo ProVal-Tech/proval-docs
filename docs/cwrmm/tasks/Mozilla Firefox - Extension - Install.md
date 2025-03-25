@@ -1,5 +1,6 @@
 ---
 id: 'd1bcd7a6-8544-4f1e-a20a-8470be76820e'
+slug: /d1bcd7a6-8544-4f1e-a20a-8470be76820e
 title: 'Mozilla Firefox - Extension - Install'
 title_meta: 'Mozilla Firefox - Extension - Install'
 keywords: ['firefox', 'extension', 'install', 'script', 'configuration']
@@ -137,7 +138,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 
 

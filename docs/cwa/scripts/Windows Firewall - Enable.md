@@ -1,5 +1,6 @@
 ---
 id: '620de40a-ad15-4449-8022-4af75e319db7'
+slug: /620de40a-ad15-4449-8022-4af75e319db7
 title: 'Windows Firewall - Enable'
 title_meta: 'Windows Firewall - Enable'
 keywords: ['windows', 'firewall', 'profiles', 'security']
@@ -27,6 +28,5 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 ## Output
 
 - Script log
-
 
 

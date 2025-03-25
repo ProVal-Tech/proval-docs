@@ -1,5 +1,6 @@
 ---
 id: '170fedb5-2280-406a-9187-7c353a3cde31'
+slug: /170fedb5-2280-406a-9187-7c353a3cde31
 title: 'Windows 11 Compatibility Check'
 title_meta: 'Windows 11 Compatibility Check'
 keywords: ['hardware', 'windows', 'compatibility', 'tpm', 'secureboot', 'processor', 'memory', 'storage']
@@ -57,6 +58,5 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
-
 
 

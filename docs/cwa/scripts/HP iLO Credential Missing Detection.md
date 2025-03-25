@@ -1,5 +1,6 @@
 ---
 id: '4d27ff0e-704d-47dd-8c07-3008b7fbfafb'
+slug: /4d27ff0e-704d-47dd-8c07-3008b7fbfafb
 title: 'HP iLO Credential Missing Detection'
 title_meta: 'HP iLO Credential Missing Detection'
 keywords: ['client', 'script', 'hp', 'ilo', 'ticketing']
@@ -34,6 +35,5 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 
 - Script log
 - Ticket
-
 
 

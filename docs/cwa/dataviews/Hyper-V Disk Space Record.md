@@ -1,5 +1,6 @@
 ---
 id: 'cc5a2747-6286-4783-b3f6-862aaa19a1c1'
+slug: /cc5a2747-6286-4783-b3f6-862aaa19a1c1
 title: 'Hyper-V Disk Space Record'
 title_meta: 'Hyper-V Disk Space Record'
 keywords: ['hyper-v', 'disk', 'report', 'client', 'location', 'computer', 'os', 'lastcontact', 'volume', 'size', 'filesystem', 'model', 'status', 'internal', 'ssd']
@@ -35,7 +36,6 @@ This dataview shows the report of the Hyper-V disk records from the custom table
 | Missing           | Drive status indicating whether detected in Automate or not |
 | Internal          | Indicates whether the drive is internal or external/removable |
 | SSD               | Indicates whether the disk is SSD or not                |
-
 
 
 

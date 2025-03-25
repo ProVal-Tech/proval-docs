@@ -1,5 +1,6 @@
 ---
 id: 'f8e944d6-28ce-4be8-bf38-6907221544a7'
+slug: /f8e944d6-28ce-4be8-bf38-6907221544a7
 title: 'Fetch Denied Patch List From Centralized ITGLue KBIDs'
 title_meta: 'Fetch Denied Patch List From Centralized ITGLue KBIDs'
 keywords: ['patches', 'script', 'itglue', 'file', 'email', 'denied']
@@ -56,6 +57,5 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 For failure:  
 - Script log  
 - Email  
-
 
 

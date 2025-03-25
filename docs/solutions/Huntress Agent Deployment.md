@@ -1,5 +1,6 @@
 ---
 id: '0c1599a5-7c64-41a2-8900-9eba22b1b0c1'
+slug: /0c1599a5-7c64-41a2-8900-9eba22b1b0c1
 title: 'Huntress Agent Deployment'
 title_meta: 'Huntress Agent Deployment'
 keywords: ['huntress', 'agent', 'deployment', 'management', 'cw', 'rmm']
@@ -53,6 +54,5 @@ Deploy, Repair, Reinstall, Re-register, and Remove the Huntress Agent in CW RMM.
 - Create the deployment schedule for MAC agents as described in this document: [Task - Huntress Agent (Install) - MAC](<../cwrmm/tasks/Huntress Agent (Install) - MAC.md>)
 - Create the group: [Machines with Huntress Agent](<../cwrmm/groups/Machines with Huntress Agent.md>)
 - Create the monitor: [Monitor - HuntressAgent Service](<../cwrmm/monitors/HuntressAgent Service.md>)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '33f561fb-e60a-4240-a4e7-03542a45b347'
+slug: /33f561fb-e60a-4240-a4e7-03542a45b347
 title: 'ThreatLocker LearningMode Set Audit'
 title_meta: 'ThreatLocker LearningMode Set Audit'
 keywords: ['threatlocker', 'dataview', 'learning', 'mode', 'script', 'audit']
@@ -34,6 +35,5 @@ This dataview stores the result of the Threatlocker learning mode setting done v
 | Learning Mode Duration (Hours)   | This shows the learning mode duration in hours                                                            |
 | Learning Mode Set Status         | This stores the learning mode status, indicating whether it was successfully set or failed.               |
 | Learning Mode Log Record         | This stores the learning mode logs of success or failure.                                                 |
-
 
 

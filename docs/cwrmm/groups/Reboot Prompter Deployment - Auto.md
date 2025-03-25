@@ -1,5 +1,6 @@
 ---
 id: '93faad94-8731-4fd5-afd0-0ae2a669fc05'
+slug: /93faad94-8731-4fd5-afd0-0ae2a669fc05
 title: 'Reboot Prompter Deployment - Auto'
 title_meta: 'Reboot Prompter Deployment - Auto'
 keywords: ['dynamic', 'group', 'check', 'agent', 'custom', 'field', 'windows', 'reboot']
@@ -42,7 +43,6 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
    - The agent available equals True.
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
-
 
 
 

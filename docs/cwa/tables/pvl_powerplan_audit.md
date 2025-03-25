@@ -1,4 +1,6 @@
-id: '9560f2db-f58f-4c07-a9da-2828deabc4cf'  
+---
+id: '9560f2db-f58f-4c07-a9da-2828deabc4cf'
+slug: /9560f2db-f58f-4c07-a9da-2828deabc4cf
 title: 'pvl_powerplan_audit'  
 title_meta: 'pvl_powerplan_audit'  
 keywords: ['scripting', 'automation', 'variables', 'functions', 'error handling']  
@@ -6,6 +8,4 @@ description: 'This document explores advanced techniques for script usage in Pow
 tags: ['performance', 'security', 'setup', 'windows']  
 draft: false  
 unlisted: false  
-
-
-
+---

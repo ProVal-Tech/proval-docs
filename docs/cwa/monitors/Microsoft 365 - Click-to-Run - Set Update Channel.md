@@ -1,5 +1,6 @@
 ---
 id: '44e0a674-9e54-47ad-be29-6c93611db0b2'
+slug: /44e0a674-9e54-47ad-be29-6c93611db0b2
 title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'audit', 'click-to-run']
@@ -26,7 +27,6 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
-
 
 
 

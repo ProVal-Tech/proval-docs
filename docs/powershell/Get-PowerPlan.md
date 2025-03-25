@@ -1,5 +1,6 @@
 ---
 id: '4d7993ab-1fa8-4b96-9f19-f503737ea015'
+slug: /4d7993ab-1fa8-4b96-9f19-f503737ea015
 title: 'Get-PowerPlan'
 title_meta: 'Get-PowerPlan'
 keywords: ['powerplan', 'settings', 'configuration', 'energy']
@@ -31,6 +32,5 @@ To retrieve information about available power plans, subgroups, and power settin
 
 ## Output
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
-
 
 

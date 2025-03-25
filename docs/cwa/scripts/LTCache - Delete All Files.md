@@ -1,5 +1,6 @@
 ---
 id: 'e0706097-bc34-4648-b117-8fa1706a21e5'
+slug: /e0706097-bc34-4648-b117-8fa1706a21e5
 title: 'LTCache - Delete All Files'
 title_meta: 'LTCache - Delete All Files'
 keywords: ['cleanup', 'caching', 'script', 'lt', 'folder', 'automation']
@@ -34,6 +35,5 @@ This script will clean up the LT caching folder.
 ## Output
 
 - Script log
-
 
 

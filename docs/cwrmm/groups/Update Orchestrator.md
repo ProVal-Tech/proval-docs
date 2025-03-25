@@ -1,5 +1,6 @@
 ---
 id: 'dc9cd56d-9a0c-4e40-8205-2da48893d825'
+slug: /dc9cd56d-9a0c-4e40-8205-2da48893d825
 title: 'Update Orchestrator'
 title_meta: 'Update Orchestrator'
 keywords: ['device', 'group', 'update', 'orchestrator', 'solution', 'windows']
@@ -47,6 +48,5 @@ When adding criteria, please search for the **OS Type**.
 **AND**
 
 **Site > Contains any of >** "Select the sites you want this to target."
-
 
 

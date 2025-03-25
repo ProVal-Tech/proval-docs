@@ -1,5 +1,6 @@
 ---
 id: '4dc89662-df52-441a-ae1f-e7482949f566'
+slug: /4dc89662-df52-441a-ae1f-e7482949f566
 title: 'Set-WindowsUpdateShown'
 title_meta: 'Set-WindowsUpdateShown'
 keywords: ['windows', 'update', 'unhide', 'kbarticles']
@@ -36,6 +37,5 @@ The location of output for log, result, and error files:
 .\Set-WindowsUpdateShown-data.txt
 .\Set-WindowsUpdateShown-error.txt
 ```
-
 
 

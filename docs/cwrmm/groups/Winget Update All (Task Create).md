@@ -1,5 +1,6 @@
 ---
 id: '22ee8d54-e19d-4b47-9ccd-c45c259f8fb7'
+slug: /22ee8d54-e19d-4b47-9ccd-c45c259f8fb7
 title: 'Winget Update All (Task Create)'
 title_meta: 'Winget Update All (Task Create)'
 keywords: ['winget', 'update', 'task', 'windows', 'group']
@@ -102,6 +103,5 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_27.png)  
 ![Completed Group](../../../static/img/Winget-Update-All-(Task-Create)/image_28.png)
-
 
 

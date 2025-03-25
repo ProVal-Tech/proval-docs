@@ -1,5 +1,6 @@
 ---
 id: '0e873ec4-0fcc-4131-bf33-1f74f8b28c80'
+slug: /0e873ec4-0fcc-4131-bf33-1f74f8b28c80
 title: 'plugin_proval_ad_gp'
 title_meta: 'plugin_proval_ad_gp'
 keywords: ['audit', 'gpo', 'group', 'policy', 'configuration']
@@ -29,6 +30,5 @@ This document displays the list of audited group policies from the script @Group
 | Extension    | VARCHAR  | The parent extension type of the group policy.                                               |
 | Property     | VARCHAR  | The extension property that is being set by the group policy.                                |
 | PropertyData | TEXT     | The additional configuration data relating to the target group policy extension property.     |
-
 
 

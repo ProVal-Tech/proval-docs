@@ -1,5 +1,6 @@
 ---
 id: '0af1bff2-a32a-442b-9322-a8a260d150ff'
+slug: /0af1bff2-a32a-442b-9322-a8a260d150ff
 title: 'Get Autopilot Hash'
 title_meta: 'Get Autopilot Hash'
 keywords: ['hardware', 'autopilot', 'registration', 'device', 'monitor', 'script', 'dataview']
@@ -41,6 +42,5 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
      - [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../cwa/monitors/Get - Autopilot Hash.md>)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
-
 
 

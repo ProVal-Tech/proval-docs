@@ -1,5 +1,6 @@
 ---
 id: '29f53c95-c885-42ef-a24f-8030efc1830f'
+slug: /29f53c95-c885-42ef-a24f-8030efc1830f
 title: 'Auto Services Stopped'
 title_meta: 'Auto Services Stopped'
 keywords: ['monitor', 'services', 'blacklist', 'wildcard', 'windows']
@@ -27,6 +28,5 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
-
 
 

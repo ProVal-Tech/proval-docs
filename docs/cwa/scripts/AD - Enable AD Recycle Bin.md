@@ -1,5 +1,6 @@
 ---
 id: 'e80d5873-304e-4b12-b52c-b608a7715a9f'
+slug: /e80d5873-304e-4b12-b52c-b608a7715a9f
 title: 'AD - Enable AD Recycle Bin'
 title_meta: 'AD - Enable AD Recycle Bin'
 keywords: ['active-directory', 'recycle-bin', 'windows', 'script', 'logging']
@@ -67,6 +68,5 @@ The PC information is outlined below:
 ### Outdated
 
 `The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. The minimum version required is above 3.0, and the current version is @PSVersion@.`  
-
 
 

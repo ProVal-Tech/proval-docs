@@ -1,5 +1,6 @@
 ---
 id: '9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5'
+slug: /9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5
 title: 'Windows 11 Compatible Machines'
 title_meta: 'Windows 11 Compatible Machines'
 keywords: ['windows', 'group', 'dynamic', 'compatibility', 'upgrade']
@@ -59,6 +60,5 @@ This document describes how to identify Windows 10 computers that are compatible
 
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_14.png)  
 ![Image](../../../static/img/Windows-11-Compatible-Machines/image_15.png)
-
 
 

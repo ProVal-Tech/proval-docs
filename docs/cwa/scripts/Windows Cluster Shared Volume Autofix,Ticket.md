@@ -1,5 +1,6 @@
 ---
 id: '0a795741-52b7-4de6-abc2-01b5add80f99'
+slug: /0a795741-52b7-4de6-abc2-01b5add80f99
 title: 'Windows Cluster Shared Volume Autofix,Ticket'
 title_meta: 'Windows Cluster Shared Volume Autofix,Ticket'
 keywords: ['cluster', 'disk', 'space', 'audit', 'monitor']
@@ -34,6 +35,5 @@ This should always run with the [CWA Remote Monitor - Windows Cluster Shared Vol
 
 - Script log
 - Dataview
-
 
 

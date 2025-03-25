@@ -1,5 +1,6 @@
 ---
 id: 'd2983497-492e-4812-ba6c-09ac8998c7b3'
+slug: /d2983497-492e-4812-ba6c-09ac8998c7b3
 title: 'Force Reboot Workstation With Reboot Windows Verification'
 title_meta: 'Force Reboot Workstation With Reboot Windows Verification'
 keywords: ['reboot', 'workstation', 'windows', 'automation', 'script']
@@ -334,7 +335,6 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
-
 
 
 

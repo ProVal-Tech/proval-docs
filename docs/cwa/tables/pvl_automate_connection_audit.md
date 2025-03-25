@@ -1,5 +1,6 @@
 ---
 id: 'ec679801-c86a-4127-9b62-46be10207909'
+slug: /ec679801-c86a-4127-9b62-46be10207909
 title: 'pvl_automate_connection_audit'
 title_meta: 'pvl_automate_connection_audit'
 keywords: ['custom', 'table', 'contact', 'audit', 'automate']
@@ -28,7 +29,6 @@ The custom table records the computer’s last contact time whenever its state c
 | state              | tinyint  | Indicates whether the computer is offline or online (0/1) |
 | lastcontact        | datetime | The last contact time of the computer when the state changed |
 | datacollectiontime  | datetime | The data collection time for the respective entry    |
-
 
 
 

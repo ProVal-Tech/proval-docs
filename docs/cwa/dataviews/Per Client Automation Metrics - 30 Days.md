@@ -1,5 +1,6 @@
 ---
 id: '20485b42-08a2-4906-920e-4f2ba3ceb52f'
+slug: /20485b42-08a2-4906-920e-4f2ba3ceb52f
 title: 'Per Client Automation Metrics - 30 Days'
 title_meta: 'Per Client Automation Metrics - 30 Days'
 keywords: ['billing', 'dataview', 'clients', 'scripts', 'commands', 'alerts', 'tickets', 'automation', 'time-saved']
@@ -24,6 +25,5 @@ The dataview's objective is to present basic billing information for each client
 | Total Monitor Alerts Triggered | Total number of failures detected by the monitor sets in the past 30 days for the client.                      |
 | Total Tickets Generated        | Total number of tickets generated in the past 30 days for the client.                                         |
 | Total Time Saved by Automation | Total amount of time saved by automation in the past 30 days for the client. The logic uses the time saved field of the script and then falls back to the run time interval if it's not filled. Format: Days:Hours:Minutes:Seconds |
-
 
 

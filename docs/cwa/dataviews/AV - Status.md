@@ -1,5 +1,6 @@
 ---
 id: '54f87983-22af-42e1-92a2-b3a8d8a3576a'
+slug: /54f87983-22af-42e1-92a2-b3a8d8a3576a
 title: 'AV - Status'
 title_meta: 'AV - Status'
 keywords: ['antivirus', 'status', 'security', 'agent', 'protection']
@@ -28,6 +29,5 @@ This document provides detailed information about the antivirus installed on the
 | AV Name                    | Antivirus information (Product Name)                         |
 | Protection Status          | Indicates whether antivirus is enabled or not               |
 | AV Definition Status       | Indicates whether antivirus definitions are up to date      |
-
 
 

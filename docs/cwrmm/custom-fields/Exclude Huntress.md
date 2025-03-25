@@ -1,5 +1,6 @@
 ---
 id: 'a65dbf66-6cfe-4136-aba1-0b75b3068485'
+slug: /a65dbf66-6cfe-4136-aba1-0b75b3068485
 title: 'Exclude Huntress'
 title_meta: 'Exclude Huntress'
 keywords: ['huntress', 'deployment', 'custom', 'field', 'site']
@@ -24,6 +25,5 @@ Select this custom field to exclude a site from Huntress Deployment. It is being
 **Level:** Site  
 **Description:** Select to Exclude Site from Huntress Deployment  
 **Editable:** Yes  
-
 
 

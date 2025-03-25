@@ -1,5 +1,6 @@
 ---
 id: '91cc7f02-1c0d-4303-81f2-91fd0d275747'
+slug: /91cc7f02-1c0d-4303-81f2-91fd0d275747
 title: 'Dell Command Update - InstallUpgrade + Command Handler'
 title_meta: 'Dell Command Update - InstallUpgrade + Command Handler'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
@@ -60,6 +61,5 @@ In the same way, driver updates can also be installed. Please refer to [Dell Com
 
 - Script State
 - Script Log
-
 
 

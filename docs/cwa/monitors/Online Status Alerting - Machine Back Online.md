@@ -1,5 +1,6 @@
 ---
 id: '76fa2909-0cc0-4f76-82a0-c067660d52ac'
+slug: /76fa2909-0cc0-4f76-82a0-c067660d52ac
 title: 'Online Status Alerting - Machine Back Online'
 title_meta: 'Online Status Alerting - Machine Back Online'
 keywords: ['monitor', 'alerting', 'ticket', 'email', 'status']
@@ -21,6 +22,5 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
-
 
 

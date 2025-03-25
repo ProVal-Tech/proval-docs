@@ -1,5 +1,6 @@
 ---
 id: 'd56a82d5-2ac2-4edd-b80b-41ccdb885fd7'
+slug: /d56a82d5-2ac2-4edd-b80b-41ccdb885fd7
 title: 'Chromium Forced Homepage Clear'
 title_meta: 'Chromium Forced Homepage Clear'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'clear']
@@ -46,6 +47,5 @@ This document describes how to clear enforced homepages in Chromium-based browse
 
 - Agnostic content logs
 - Agent Procedure Log
-
 
 

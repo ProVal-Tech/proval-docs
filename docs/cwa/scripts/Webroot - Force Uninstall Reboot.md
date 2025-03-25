@@ -1,5 +1,6 @@
 ---
 id: '175431c0-b3d2-436a-bf40-e72710a17c36'
+slug: /175431c0-b3d2-436a-bf40-e72710a17c36
 title: 'Webroot - Force Uninstall Reboot'
 title_meta: 'Webroot - Force Uninstall Reboot'
 keywords: ['webroot', 'uninstallation', 'safe-mode', 'wipe', 'script']
@@ -26,6 +27,5 @@ This script first checks if the Webroot service is running on the machine. If it
 ## Output
 
 - Script log
-
 
 

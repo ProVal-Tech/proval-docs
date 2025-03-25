@@ -1,5 +1,6 @@
 ---
 id: '3eff4a8c-36c3-4fb4-9405-d6ca238b9e05'
+slug: /3eff4a8c-36c3-4fb4-9405-d6ca238b9e05
 title: 'OSTPST Audit Custom Fields'
 title_meta: 'OSTPST Audit Custom Fields'
 keywords: ['Microsoft','Outlook','OST','PST','Audit']

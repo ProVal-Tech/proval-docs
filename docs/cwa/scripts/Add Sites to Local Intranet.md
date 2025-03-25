@@ -1,5 +1,6 @@
 ---
 id: 'df72be26-16b1-452a-b4e7-67e1bf48a86b'
+slug: /df72be26-16b1-452a-b4e7-67e1bf48a86b
 title: 'Add Sites to Local Intranet'
 title_meta: 'Add Sites to Local Intranet'
 keywords: ['intranet', 'windows', 'configuration', 'sites', 'local']
@@ -59,6 +60,5 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
-
 
 

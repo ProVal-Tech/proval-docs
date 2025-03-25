@@ -1,5 +1,6 @@
 ---
 id: '72490aca-9d0d-47b9-88a9-437279e21d7a'
+slug: /72490aca-9d0d-47b9-88a9-437279e21d7a
 title: 'Feature Pack Update - Updated Computers'
 title_meta: 'Feature Pack Update - Updated Computers'
 keywords: ['windows', 'update', 'group', 'criteria', 'custom', 'field', 'install', 'failure', 'reboot', 'pending']
@@ -86,7 +87,6 @@ Click the Save button to save the group.
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_13.png)
 
 ![Image](../../../static/img/Feature-Pack-Update---Updated-Computers/image_14.png)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2fee5750-3a75-4256-b1b6-fcf2b81dccd6'
+slug: /2fee5750-3a75-4256-b1b6-fcf2b81dccd6
 title: 'Import - Remote Monitor - Windows Cluster Shared Volume Detection'
 title_meta: 'Import - Remote Monitor - Windows Cluster Shared Volume Detection'
 keywords: ['windows', 'cluster', 'shared', 'volume', 'detection', 'monitoring']

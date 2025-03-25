@@ -1,5 +1,6 @@
 ---
 id: '18505efc-1e3d-4d75-97d9-6c10e5de540f'
+slug: /18505efc-1e3d-4d75-97d9-6c10e5de540f
 title: 'Windows - Domain Information'
 title_meta: 'Windows - Domain Information'
 keywords: ['domain', 'azure', 'hybrid', 'drs', 'on-prem', 'status']
@@ -34,6 +35,5 @@ This document provides an overview of how a computer is domain joined (or not do
 | Microsoft - Hybrid AD Joined       | Joined | Not Joined if the machine is Hybrid AD joined                 |
 | Microsoft - On-Premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
-
 
 

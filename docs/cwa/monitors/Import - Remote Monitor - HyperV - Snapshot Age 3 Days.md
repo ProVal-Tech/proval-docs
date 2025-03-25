@@ -1,5 +1,6 @@
 ---
 id: 'faf8b7d6-6685-43be-a223-0c6ce7195147'
+slug: /faf8b7d6-6685-43be-a223-0c6ce7195147
 title: 'Import - Remote Monitor - HyperV - Snapshot Age > 3 Days'
 title_meta: 'Import - Remote Monitor - HyperV - Snapshot Age > 3 Days'
 keywords: ['hyper-v', 'snapshot', 'monitoring', 'database', 'alert']

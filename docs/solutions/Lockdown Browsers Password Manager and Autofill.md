@@ -1,5 +1,6 @@
 ---
 id: '6be9039d-e093-4431-8efc-5ec2cc68e64a'
+slug: /6be9039d-e093-4431-8efc-5ec2cc68e64a
 title: 'Lockdown Browsers Password Manager and Autofill'
 title_meta: 'Lockdown Browsers Password Manager and Autofill'
 keywords: ['security', 'browsers', 'autofill', 'monitor', 'lockdown']
@@ -83,6 +84,5 @@ This solution provides a comprehensive approach to managing and monitoring the s
 | Lockdown Browsers Address Autofill | Client | Check Box | Security | Flagging this EDF will activate the [Lockdown Chromium Browsers Address Autofill](<../cwa/monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor for the Windows computers belonging to the client. |
 | Exclude Browser Address Autofill Lockdown | Location | Check Box | Exclusions | Marking this EDF will result in the exclusion of the computers at the specified location from the [Lockdown Chromium Browsers Address Autofill](<../cwa/monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor. |
 | Exclude Browser Address Autofill Lockdown | Computer | Check Box | Exclusions | Flagging this EDF will result in the individual computer being excluded from the [Lockdown Chromium Browsers Address Autofill](<../cwa/monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor. |
-
 
 

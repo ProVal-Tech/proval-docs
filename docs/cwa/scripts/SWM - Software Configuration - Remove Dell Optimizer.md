@@ -1,5 +1,6 @@
 ---
 id: 'b9420698-4c50-42f5-8a9e-6834d03a9ebf'
+slug: /b9420698-4c50-42f5-8a9e-6834d03a9ebf
 title: 'SWM - Software Configuration - Remove Dell Optimizer'
 title_meta: 'SWM - Software Configuration - Remove Dell Optimizer'
 keywords: ['dell', 'optimizer', 'uninstall', 'reboot']
@@ -32,7 +33,6 @@ Leave the parameter blank to restart the computer manually.
 ## Output
 
 - Script Log
-
 
 
 

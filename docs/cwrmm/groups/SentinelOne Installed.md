@@ -1,5 +1,6 @@
 ---
 id: '9bed886f-fa13-4389-932e-47c62482db0d'
+slug: /9bed886f-fa13-4389-932e-47c62482db0d
 title: 'SentinelOne Installed'
 title_meta: 'SentinelOne Installed'
 keywords: ['sentinelone', 'windows', 'group', 'dynamic', 'agent']
@@ -45,6 +46,5 @@ This document outlines the process for creating a dynamic group that includes Wi
 
 ![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
 ![Image](../../../static/img/SentinelOne-Installed/image_11.png)
-
 
 

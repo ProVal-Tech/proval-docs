@@ -1,5 +1,6 @@
 ---
 id: 'e7c04bf5-d525-4755-a883-dd87a0a65909'
+slug: /e7c04bf5-d525-4755-a883-dd87a0a65909
 title: 'Cisco Webex Deployment'
 title_meta: 'Cisco Webex Deployment'
 keywords: ['cisco', 'webex', 'installation', 'windows', 'script']
@@ -33,6 +34,5 @@ Tickets will be generated only if the `TicketCreationCategory` value is greater 
 This occurs when the script fails to download the installer:
 
 `Failed to download Cisco Webex installer. Please ensure that the following download URL is reachable from the computer: [https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi](https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi)`
-
 
 

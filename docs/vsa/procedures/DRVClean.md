@@ -1,5 +1,6 @@
 ---
 id: 'c0e6e1fb-4ff3-465f-9af7-83984cb6b0bf'
+slug: /c0e6e1fb-4ff3-465f-9af7-83984cb6b0bf
 title: 'DRVClean'
 title_meta: 'DRVClean'
 keywords: ['drive', 'cleaning', 'script', 'wmi', 'vsa', 'lt']
@@ -16,6 +17,5 @@ Drive cleaning script for both VSA and LT using WMI.
 ## Parameters:
 
 - **-drive**: Optional. The target drive. If not defined, all drives are processed.
-
 
 

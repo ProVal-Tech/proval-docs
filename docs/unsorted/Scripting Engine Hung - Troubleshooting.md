@@ -1,5 +1,6 @@
 ---
 id: '64cf5b44-11bf-42dc-87bc-f1f93582ed8d'
+slug: /64cf5b44-11bf-42dc-87bc-f1f93582ed8d
 title: 'Scripting Engine Hung - Troubleshooting'
 title_meta: 'Scripting Engine Hung - Troubleshooting'
 keywords: ['query', 'troubleshooting', 'scripts', 'monitor', 'database']
@@ -109,6 +110,5 @@ Please validate the stuck scripts and export that report to Excel to forward to 
 Navigate to **Help >> Server Status >> Restart Database Agent**.
 
 This will remove all queued scripts and will temporarily fix the scripting engine hang if the script queuing issue is not resolved from the above query results.
-
 
 

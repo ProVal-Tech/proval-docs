@@ -1,5 +1,6 @@
 ---
 id: 'd7ad7eb3-8f39-4798-a80c-f0a6cdae7213'
+slug: /d7ad7eb3-8f39-4798-a80c-f0a6cdae7213
 title: 'Execute Script - Get MSSQL Database Version'
 title_meta: 'Execute Script - Get MSSQL Database Version'
 keywords: ['mssql', 'monitor', 'database', 'version', 'script']
@@ -25,6 +26,5 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Ticketing
 
 **Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
-
 
 

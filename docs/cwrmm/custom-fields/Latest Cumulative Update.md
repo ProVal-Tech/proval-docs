@@ -1,5 +1,6 @@
 ---
 id: '67416ac2-2311-43c4-8fbf-c5b0c9a48e71'
+slug: /67416ac2-2311-43c4-8fbf-c5b0c9a48e71
 title: 'Latest Cumulative Update'
 title_meta: 'Latest Cumulative Update'
 keywords: ['custom', 'field', 'audit', 'update', 'cumulative']
@@ -33,7 +34,6 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Latest-Cumulative-Update/image_3.png)
-
 
 
 

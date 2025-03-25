@@ -1,5 +1,6 @@
 ---
 id: '43b35510-f264-429f-a06e-e0ea7822cfc1'
+slug: /43b35510-f264-429f-a06e-e0ea7822cfc1
 title: 'Patch Approval Categories'
 title_meta: 'Patch Approval Categories'
 keywords: ['patches', 'approval', 'policy', 'audit', 'category']

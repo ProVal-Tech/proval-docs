@@ -1,5 +1,6 @@
 ---
 id: 'a8f66140-8915-41fa-805b-64fafbf002fc'
+slug: /a8f66140-8915-41fa-805b-64fafbf002fc
 title: 'Execute Script - HP iLO - Health Report - Get'
 title_meta: 'Execute Script - HP iLO - Health Report - Get'
 keywords: ['hp', 'ilo', 'monitor', 'health', 'report', 'automation']
@@ -72,6 +73,5 @@ The alert template should run the [EPM - Data Collection - Script - HP iLO - Hea
 
 The ticketing feature of the [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) script can be enabled by setting the ticket category in the monitor set.  
 ![Ticketing Feature](../../../static/img/Execute-Script---HP-iLO---Health-Report---Get/image_5.png)
-
 
 

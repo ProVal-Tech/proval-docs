@@ -1,5 +1,6 @@
 ---
 id: 'a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47'
+slug: /a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47
 title: 'Browser Saved Password'
 title_meta: 'Browser Saved Password'
 keywords: ['browser', 'audit', 'clear', 'password', 'endpoints', 'dynamic', 'group']
@@ -70,7 +71,6 @@ Criteria:
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
-
 
 
 

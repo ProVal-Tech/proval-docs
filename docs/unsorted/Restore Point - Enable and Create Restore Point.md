@@ -1,5 +1,6 @@
 ---
 id: '9c77bd8d-5ede-4c26-a9dd-41a5328916a2'
+slug: /9c77bd8d-5ede-4c26-a9dd-41a5328916a2
 title: 'Restore Point - Enable and Create Restore Point'
 title_meta: 'Restore Point - Enable and Create Restore Point'
 keywords: ['system', 'restore', 'storage', 'point', 'ticket']
@@ -68,6 +69,5 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 
 

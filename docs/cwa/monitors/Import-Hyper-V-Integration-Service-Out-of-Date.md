@@ -1,5 +1,6 @@
 ---
 id: '81a45e9e-918b-4848-bcf7-874ee4a6c8a0'
+slug: /81a45e9e-918b-4848-bcf7-874ee4a6c8a0
 title: 'Import - Hyper-V - Integration Service Out of Date.md'
 title_meta: 'Import - Hyper-V - Integration Service Out of Date.md'
 keywords: ['hyper-v', 'monitor', 'integration', 'service', 'setup']

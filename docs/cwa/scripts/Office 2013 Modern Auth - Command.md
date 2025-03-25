@@ -1,5 +1,6 @@
 ---
 id: 'b6a6f79c-ee8a-43f8-8965-98b1ce40a9a0'
+slug: /b6a6f79c-ee8a-43f8-8965-98b1ce40a9a0
 title: 'Office 2013 Modern Auth - Command'
 title_meta: 'Office 2013 Modern Auth - Command'
 keywords: ['modern', 'authentication', 'office', '2013', 'enable', 'disable']
@@ -44,6 +45,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0d5f27c6-fa65-4a98-b32d-61426505aa1c'
+slug: /0d5f27c6-fa65-4a98-b32d-61426505aa1c
 title: 'Reboot Pending Servers per client - Ticket Management'
 title_meta: 'Reboot Pending Servers per client - Ticket Management'
 keywords: ['client', 'script', 'tickets', 'reboot', 'pending', 'servers']
@@ -24,6 +25,5 @@ It is recommended to schedule this client script to run once per day for better 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](<./Reboot Pending Servers per client - Ticket Creation.md>)
-
 
 

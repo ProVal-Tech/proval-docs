@@ -1,5 +1,6 @@
 ---
 id: '1258c674-8d60-446d-a3c6-f3295ee682cf'
+slug: /1258c674-8d60-446d-a3c6-f3295ee682cf
 title: 'pvl_repaired_agents'
 title_meta: 'pvl_repaired_agents'
 keywords: ['custom', 'table', 'repaired', 'computers', 'tracking']
@@ -31,6 +32,5 @@ The custom table stores information about repaired computers.
 | location     | varchar  | Location Name       |
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
-
 
 

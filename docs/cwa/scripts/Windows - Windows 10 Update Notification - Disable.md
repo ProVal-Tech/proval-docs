@@ -1,5 +1,6 @@
 ---
 id: 'cf05b28e-65d3-4d7b-b0e7-be1fe2427e26'
+slug: /cf05b28e-65d3-4d7b-b0e7-be1fe2427e26
 title: 'Windows - Windows 10 Update Notification - Disable'
 title_meta: 'Windows - Windows 10 Update Notification - Disable'
 keywords: ['windows', 'deprecation', 'prompt', 'script', 'notification']
@@ -26,6 +27,5 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
-
 
 

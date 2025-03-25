@@ -1,5 +1,6 @@
 ---
 id: 'creating-a-document'
+slug: /creating-a-document
 title: 'Creating a Document'
 title_meta: 'Creating a Document'
 keywords: [ "document", "create", "new" ]

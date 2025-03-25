@@ -1,5 +1,6 @@
 ---
 id: '399a36e3-da83-4437-914b-71e9b844c0d2'
+slug: /399a36e3-da83-4437-914b-71e9b844c0d2
 title: 'Winget App Audit'
 title_meta: 'Winget App Audit'
 keywords: ['winget', 'audit', 'applications', 'software', 'update']
@@ -41,7 +42,6 @@ This document displays the information of `Winget` supported applications fetche
 | App Level                 | Installation level of the application (System/User).                                                    |
 | Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) document for detailed instructions on enabling Auto Update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
-
 
 
 

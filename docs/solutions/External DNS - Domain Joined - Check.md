@@ -1,5 +1,6 @@
 ---
 id: '324645f2-c11e-4ca8-80b4-4ba1f53bd602'
+slug: /324645f2-c11e-4ca8-80b4-4ba1f53bd602
 title: 'External DNS - Domain Joined - Check'
 title_meta: 'External DNS - Domain Joined - Check'
 keywords: ['endpoints', 'domain', 'dns', 'report', 'custom', 'agent', 'procedure']
@@ -23,7 +24,6 @@ This document checks endpoints to determine if they are domain-joined and report
 ## Implementation
 
 The Agent Procedure requires the Custom Field to be created beforehand.
-
 
 
 

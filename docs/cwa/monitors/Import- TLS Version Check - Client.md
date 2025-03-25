@@ -1,5 +1,6 @@
 ---
 id: 'a2436d9b-83e4-4405-a3e1-dc4019438d3a'
+slug: /a2436d9b-83e4-4405-a3e1-dc4019438d3a
 title: 'Import- TLS Version Check - Client'
 title_meta: 'Import- TLS Version Check - Client'
 keywords: ['remote', 'monitor', 'groupid', 'alert', 'query']

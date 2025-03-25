@@ -1,5 +1,6 @@
 ---
 id: '910bdf04-c4ab-413d-a1a6-aafcd6d583d0'
+slug: /910bdf04-c4ab-413d-a1a6-aafcd6d583d0
 title: 'Get-DellDockStation'
 title_meta: 'Get-DellDockStation'
 keywords: ['dell', 'dockstation', 'workstation', 'monitor', 'installation', 'ticketing']
@@ -48,6 +49,5 @@ Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../moni
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/Get-DellDockStation/image_2.png)
-
 
 

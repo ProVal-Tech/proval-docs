@@ -1,5 +1,6 @@
 ---
 id: 'f6f9a30f-1310-4f65-8daa-3609e9f8510f'
+slug: /f6f9a30f-1310-4f65-8daa-3609e9f8510f
 title: 'Windows - Shadow Copy - Statistics'
 title_meta: 'Windows - Shadow Copy - Statistics'
 keywords: ['shadow', 'copy', 'audit', 'statistics', 'windows']
@@ -50,6 +51,5 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 
 **Q:** What should I do if information for an endpoint is not present in the dataview?  
 **A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](<../cwa/scripts/Shadow Copy - Audit Complete Statistics DV.md>)" against the Windows machine and re-check the dataview after the successful completion of the script.
-
 
 

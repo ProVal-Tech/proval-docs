@@ -1,5 +1,6 @@
 ---
 id: '08cd231a-c14d-4d61-a774-eba3f69e91bf'
+slug: /08cd231a-c14d-4d61-a774-eba3f69e91bf
 title: 'Disk - Space - Cleanup (Mac)'
 title_meta: 'Disk - Space - Cleanup (Mac)'
 keywords: ['cleanup', 'mac', 'disk', 'script', 'maintenance']
@@ -31,6 +32,5 @@ The script can be downloaded from [this link](https://raw.githubusercontent.com/
 ## Output
 
 - Script Logs
-
 
 

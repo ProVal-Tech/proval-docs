@@ -1,5 +1,6 @@
 ---
 id: '18562eaa-d162-4362-98d3-4bbaa2922458'
+slug: /18562eaa-d162-4362-98d3-4bbaa2922458
 title: 'ScreenConnect Client - Connectivity - Audit'
 title_meta: 'ScreenConnect Client - Connectivity - Audit'
 keywords: ['rmm', 'configuration', 'email', 'alerts', 'monitoring']
@@ -57,6 +58,5 @@ Reference: [https://proval.itglue.com/5078775/docs/9770217](https://proval.itglu
 - Script log
 - Script state
 - Email
-
 
 

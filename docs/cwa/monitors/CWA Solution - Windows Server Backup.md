@@ -1,5 +1,6 @@
 ---
 id: '03510207-4f32-44b9-960d-9cad25932e6b'
+slug: /03510207-4f32-44b9-960d-9cad25932e6b
 title: 'CWA Solution - Windows Server Backup'
 title_meta: 'CWA Solution - Windows Server Backup'
 keywords: ['windows', 'backup', 'audit', 'monitor', 'report', 'schedule', 'role']
@@ -32,7 +33,6 @@ Additionally, schedule the remote monitor for the group to detect backup failure
 ## FAQ
 
 * (Add frequently asked questions here)
-
 
 
 

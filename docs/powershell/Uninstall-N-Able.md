@@ -1,5 +1,6 @@
 ---
 id: 'a6048dd1-3c62-4607-86db-d74826c89109'
+slug: /a6048dd1-3c62-4607-86db-d74826c89109
 title: 'Uninstall-N-Able'
 title_meta: 'Uninstall-N-Able'
 keywords: ['uninstall', 'n-able', 'agent', 'remove']

@@ -1,5 +1,6 @@
 ---
 id: '7d13a122-8d62-4c50-b19f-922e6bb37a13'
+slug: /7d13a122-8d62-4c50-b19f-922e6bb37a13
 title: 'Windows - Certificates (My) - Local Machine - Audit'
 title_meta: 'Windows - Certificates (My) - Local Machine - Audit'
 keywords: ['certificates', 'monitoring', 'script', 'repository', 'servers']
@@ -32,6 +33,5 @@ This script is designed to run a PowerShell script and pull any and all certific
 - Script log
 - Custom Table
 - Dataview
-
 
 

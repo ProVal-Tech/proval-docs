@@ -1,5 +1,6 @@
 ---
 id: '28530e35-7416-48c4-b56d-897c7d4727f6'
+slug: /28530e35-7416-48c4-b56d-897c7d4727f6
 title: 'Memory Threshold Violation Monitor - Create'
 title_meta: 'Memory Threshold Violation Monitor - Create'
 keywords: ['remote', 'monitors', 'memory', 'usage', 'windows']
@@ -136,6 +137,5 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 ## Output
 
 - Remote Monitors
-
 
 

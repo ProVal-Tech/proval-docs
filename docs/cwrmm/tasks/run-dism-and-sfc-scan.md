@@ -1,5 +1,6 @@
 ---
 id: '8ec14581-b7a3-4e68-a4f9-28764e3dc242'
+slug: /8ec14581-b7a3-4e68-a4f9-28764e3dc242
 title: 'Run DISM and SFC Scan'
 title_meta: 'Run DISM and SFC Scan'
 keywords: ['Diagnostic','SFC','DISM','Scan']

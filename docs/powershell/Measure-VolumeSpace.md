@@ -1,5 +1,6 @@
 ---
 id: '4d0324cd-a8bc-4278-b906-6a0e54de5314'
+slug: /4d0324cd-a8bc-4278-b906-6a0e54de5314
 title: 'Measure-VolumeSpace'
 title_meta: 'Measure-VolumeSpace'
 keywords: ['volume', 'space', 'threshold', 'disk', 'storage']
@@ -80,6 +81,5 @@ Searches for all fixed volumes with drive letters, suppressing all console outpu
 
 - `.\Measure-VolumeSpace-log.txt`
 - `.\Measure-VolumeSpace-error.txt`
-
 
 

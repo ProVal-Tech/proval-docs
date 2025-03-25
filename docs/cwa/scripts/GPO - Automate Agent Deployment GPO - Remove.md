@@ -1,5 +1,6 @@
 ---
 id: '3404eb65-3992-4cad-9dec-c1426c4656ca'
+slug: /3404eb65-3992-4cad-9dec-c1426c4656ca
 title: 'GPO - Automate Agent Deployment GPO - Remove'
 title_meta: 'GPO - Automate Agent Deployment GPO - Remove'
 keywords: ['gpo', 'group', 'policy', 'automate', 'deployment']
@@ -26,6 +27,5 @@ The script runs the appropriate PowerShell command to remove the "Automate Agent
 ## Output
 
 - Script log
-
 
 

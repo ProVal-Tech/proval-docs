@@ -1,5 +1,6 @@
 ---
 id: '6c9ef438-835d-44a9-bf31-4a1db9253347'
+slug: /6c9ef438-835d-44a9-bf31-4a1db9253347
 title: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
 title_meta: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
 keywords: ['active-directory', 'sync', 'autofix', 'monitor', 'ticketing']
@@ -101,6 +102,5 @@ PC Model: @biosname@
 OS: %os%
 S/N OF PC: @biosver@
 ```
-
 
 

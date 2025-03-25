@@ -1,5 +1,6 @@
 ---
 id: '11c4193c-786a-4477-ae73-9992ff55ea16'
+slug: /11c4193c-786a-4477-ae73-9992ff55ea16
 title: 'User Activity Audit Script'
 title_meta: 'User Activity Audit Script'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'reporting']
@@ -33,7 +34,6 @@ The DataView shows the login/logout audit of the users.
 | Connection Type   | Indicates whether the connection was remote, network, or interactive, etc. |
 | Logon Type        | Indicates whether the user was detected for login or logout |
 | Script Ran Date   | This shows the script's last ran date and time       |
-
 
 
 

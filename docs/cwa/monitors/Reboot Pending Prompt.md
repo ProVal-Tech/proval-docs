@@ -1,5 +1,6 @@
 ---
 id: '8163996f-f8b6-4b7d-b5b1-6b965a9408d4'
+slug: /8163996f-f8b6-4b7d-b5b1-6b965a9408d4
 title: 'Reboot Pending [Prompt]'
 title_meta: 'Reboot Pending [Prompt]'
 keywords: ['monitor', 'reboot', 'windows', 'edf', 'automation', 'prompt', 'pending']

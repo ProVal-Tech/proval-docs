@@ -1,5 +1,6 @@
 ---
 id: 'c8745cde-e56d-4ea5-b4ae-2e213c4e21d2'
+slug: /c8745cde-e56d-4ea5-b4ae-2e213c4e21d2
 title: 'plugin_proval_diskpart_style'
 title_meta: 'plugin_proval_diskpart_style'
 keywords: ['disk', 'information', 'storage', 'diskpart', 'audit']
@@ -32,6 +33,5 @@ This document stores information about disks gathered from Diskpart.
 | PartitionStyle     | VARCHAR | The partition style of the audited disk (RAW, GPT, MBR, etc.) |
 | OperationalStatus   | VARCHAR | Indicates if the disk is offline, online, or disconnected. |
 | HealthStatus       | VARCHAR | Shows the reported health of the audited disk.        |
-
 
 

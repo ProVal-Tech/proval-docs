@@ -1,5 +1,6 @@
 ---
 id: '894ea49f-fc57-49a6-a456-165c6170431f'
+slug: /894ea49f-fc57-49a6-a456-165c6170431f
 title: 'Detailed ScriptInternalRemote Monitor Report'
 title_meta: 'Detailed ScriptInternalRemote Monitor Report'
 keywords: ['auditing', 'dataview', 'proval', 'monitor', 'report']
@@ -34,6 +35,5 @@ This solution contains the dataviews that are used for the detailed auditing of 
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
-
 
 

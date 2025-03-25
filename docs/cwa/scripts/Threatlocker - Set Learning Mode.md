@@ -1,5 +1,6 @@
 ---
 id: '7dedea46-a8d7-4901-93c5-f2bb4c876f83'
+slug: /7dedea46-a8d7-4901-93c5-f2bb4c876f83
 title: 'Threatlocker - Set Learning Mode'
 title_meta: 'Threatlocker - Set Learning Mode'
 keywords: ['threatlocker', 'api', 'learning', 'mode', 'script', 'authentication']
@@ -108,4 +109,3 @@ A: Dependencies and errors are as follows:
 [MAINTENANCEMODEBULK_-_POST_1_.pdf](<../../../static/attachments/itg/16557697/MAINTENANCEMODEBULK_-_POST_1_.pdf>)
 [REPORTS_-_GET_DATA_(1)_(1).pdf](<../../../static/attachments/itg/16557697/REPORTS_-_GET_DATA_(1)_(1).pdf>)
 [REQUESTS_-_GET_(1)_(1).pdf](<../../../static/attachments/itg/16557697/REQUESTS_-_GET_(1)_(1).pdf>)
-

@@ -1,5 +1,6 @@
 ---
 id: '2d70b4e9-8f4b-44f5-9a12-24a1ca67e9e2'
+slug: /2d70b4e9-8f4b-44f5-9a12-24a1ca67e9e2
 title: 'Update-PowerShellGet'
 title_meta: 'Update-PowerShellGet'
 keywords: ['update', 'powershellget', 'installation', 'nuget']
@@ -24,6 +25,5 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 ```powershell
 .\Update-PowerShellGet.ps1
 ```
-
 
 

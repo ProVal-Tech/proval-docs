@@ -1,5 +1,6 @@
 ---
 id: '84ff85b8-06d4-4c2b-abaa-fbd2b05756c2'
+slug: /84ff85b8-06d4-4c2b-abaa-fbd2b05756c2
 title: 'Script Run Time Historical Audit'
 title_meta: 'Script Run Time Historical Audit'
 keywords: ['historical', 'runtime', 'scripts', 'automate', 'performance']
@@ -35,6 +36,5 @@ This dataview displays historical runtime data for scripts in Automate since the
 ## Example Screenshot
 
 ![Screenshot](../../../static/img/Script-Run-Time-Historical-Audit/image_1.png)
-
 
 

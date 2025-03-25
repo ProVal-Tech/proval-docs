@@ -1,5 +1,6 @@
 ---
 id: 'adc83d4e-f34e-4b3c-b8c9-3975a6efb285'
+slug: /adc83d4e-f34e-4b3c-b8c9-3975a6efb285
 title: 'Winget - Import Param'
 title_meta: 'Winget - Import Param'
 keywords: ['winget', 'installation', 'ticketing', 'json', 'deployment', 'software']
@@ -74,6 +75,5 @@ The name of the file without the extension should be set to the user parameter a
 
 **Example:**  
 ![](../../../static/img/Winget---Import-Param/image_5.png)
-
 
 

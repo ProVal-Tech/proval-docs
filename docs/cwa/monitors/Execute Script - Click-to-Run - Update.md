@@ -1,5 +1,6 @@
 ---
 id: '2ed11d29-387b-4b8e-8a8b-b77891fe2b87'
+slug: /2ed11d29-387b-4b8e-8a8b-b77891fe2b87
 title: 'Execute Script - Click-to-Run - Update'
 title_meta: 'Execute Script - Click-to-Run - Update'
 keywords: ['office365', 'update', 'monitor', 'script', 'execution']
@@ -28,7 +29,6 @@ Windows Workstations
 **Name:** `△ Custom - Execute Script - Microsoft Office - Click-to-Run - Update (ScriptState)`
 
 The alert template should execute the "Microsoft Office - Click-to-Run - Update (ScriptState)" script.
-
 
 
 

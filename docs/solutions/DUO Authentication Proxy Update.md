@@ -1,5 +1,6 @@
 ---
 id: '7d1dbc08-c217-455d-b00b-d5d9d40d63b0'
+slug: /7d1dbc08-c217-455d-b00b-d5d9d40d63b0
 title: 'DUO Authentication Proxy Update'
 title_meta: 'DUO Authentication Proxy Update'
 keywords: ['duo', 'authentication', 'proxy', 'update', 'software']
@@ -94,6 +95,5 @@ This solution will update the Duo Authentication Proxy application to the latest
 
 - Create the [CWM - Automate - Internal Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](https://proval.itglue.com/DOC-5078775-12520505) remote monitor on the group created in the second step.
 - Assign the alert template to the monitor.
-
 
 

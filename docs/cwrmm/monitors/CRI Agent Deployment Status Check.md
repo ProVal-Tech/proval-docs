@@ -1,5 +1,6 @@
 ---
 id: '9df5a58f-f44f-4af8-8620-c5670c9d8524'
+slug: /9df5a58f-f44f-4af8-8620-c5670c9d8524
 title: 'CRI Agent Deployment Status Check'
 title_meta: 'CRI Agent Deployment Status Check'
 keywords: ['monitor', 'ticket', 'deployment', 'failure', 'security']
@@ -37,6 +38,5 @@ This monitor is designed to create a ticket for the CRI Agent deployment failure
 ## Target
 
 Dynamic Group: Cyrisma Deployment Failure Check
-
 
 

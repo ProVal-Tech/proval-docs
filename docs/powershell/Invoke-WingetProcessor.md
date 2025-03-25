@@ -1,5 +1,6 @@
 ---
 id: '8496c2e9-0e52-4961-a1f1-4a95296e8cf7'
+slug: /8496c2e9-0e52-4961-a1f1-4a95296e8cf7
 title: 'Invoke-WingetProcessor'
 title_meta: 'Invoke-WingetProcessor'
 keywords: ['winget', 'package', 'install', 'update']
@@ -58,5 +59,4 @@ Location of output for log, result, and error files.
 .\Invoke-WingetProcessor-log.txt
 .\Invoke-WingetProcessor-error.txt
 ```
-
 

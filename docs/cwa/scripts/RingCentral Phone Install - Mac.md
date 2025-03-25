@@ -1,5 +1,6 @@
 ---
 id: '11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd'
+slug: /11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd
 title: 'RingCentral Phone Install - Mac'
 title_meta: 'RingCentral Phone Install - Mac'
 keywords: ['ringcentral', 'installation', 'mac', 'dmg', 'application']
@@ -36,6 +37,5 @@ The script will put the machine into Fast Talk mode, as this makes the script ru
 ## Output
 
 Script log messages
-
 
 

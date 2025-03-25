@@ -1,5 +1,6 @@
 ---
 id: '79256871-2745-4096-8892-c4554926ed18'
+slug: /79256871-2745-4096-8892-c4554926ed18
 title: 'Reset Reboot Pending EDFs'
 title_meta: 'Reset Reboot Pending EDFs'
 keywords: ['monitor', 'reboot', 'windows', 'edf', 'automation']

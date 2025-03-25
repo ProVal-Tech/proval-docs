@@ -1,5 +1,6 @@
 ---
 id: '6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d'
+slug: /6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d
 title: 'Update Table - pvl_automate_connection_audit'
 title_meta: 'Update Table - pvl_automate_connection_audit'
 keywords: ['monitor', 'audit', 'connection', 'database', 'update']

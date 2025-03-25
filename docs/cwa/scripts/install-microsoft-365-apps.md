@@ -1,5 +1,6 @@
 ---
 id: '052256a8-6a8c-4fe4-993e-c0bc86eacd25'
+slug: /052256a8-6a8c-4fe4-993e-c0bc86eacd25
 title: 'Install Microsoft 365 Apps'
 title_meta: 'Install Microsoft 365 Apps'
 keywords: ['install', 'microsoft365', 'office', 'setup']

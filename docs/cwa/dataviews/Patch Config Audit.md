@@ -1,5 +1,6 @@
 ---
 id: '16fd768b-b679-4ad4-92e3-e58e2fb1ed74'
+slug: /16fd768b-b679-4ad4-92e3-e58e2fb1ed74
 title: 'Patch Config Audit'
 title_meta: 'Patch Config Audit'
 keywords: ['patch', 'audit', 'data', 'management', 'windows']
@@ -71,6 +72,5 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Not Equal | 0 | Red   |
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
-
 
 

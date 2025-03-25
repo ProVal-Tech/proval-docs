@@ -1,5 +1,6 @@
 ---
 id: '3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe'
+slug: /3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe
 title: 'Agent Monitor Creation - Disk - WRAPPER'
 title_meta: 'Agent Monitor Creation - Disk - WRAPPER'
 keywords: ['disk', 'monitor', 'creation', 'automation', 'agent', 'exclude']
@@ -45,6 +46,5 @@ This script **must** be called by the Agent Monitor Creation script and the Remo
 ## Output
 
 - Script log
-
 
 

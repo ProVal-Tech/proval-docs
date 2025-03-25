@@ -1,5 +1,6 @@
 ---
 id: 'de574ff4-5a24-4ccd-83d3-499b1b274893'
+slug: /de574ff4-5a24-4ccd-83d3-499b1b274893
 title: 'Import - Remote Monitor - AD Account LockOut Detection'
 title_meta: 'Import - Remote Monitor - AD Account LockOut Detection'
 keywords: ['alert', 'template', 'monitor', 'sql', 'ticket', 'creation', 'failures', 'detection', 'domain', 'controllers']
@@ -68,5 +69,4 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
-
 

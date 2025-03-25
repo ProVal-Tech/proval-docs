@@ -1,5 +1,6 @@
 ---
 id: '1b9f901e-ea4e-4ed0-9b62-01d667196d48'
+slug: /1b9f901e-ea4e-4ed0-9b62-01d667196d48
 title: 'Windows Feature Pack Update Failure Health Check Error'
 title_meta: 'Windows Feature Pack Update Failure Health Check Error'
 keywords: ['windows', 'feature', 'update', 'install', 'failure', 'health', 'check', 'error', 'categorize']
@@ -36,7 +37,6 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_6.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)  
-
 
 
 

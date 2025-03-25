@@ -1,5 +1,6 @@
 ---
 id: '3579d837-d1a4-4186-ba92-4323a27bc367'
+slug: /3579d837-d1a4-4186-ba92-4323a27bc367
 title: 'Frequent Logon User Detection and Set Computer Contact'
 title_meta: 'Frequent Logon User Detection and Set Computer Contact'
 keywords: ['frequent', 'logon', 'user', 'contact', 'workstation']
@@ -38,6 +39,5 @@ This solution is designed to gather the frequent domain logon user on Windows wo
      - [Monitor - Frequent User Detection](<../cwa/monitors/Frequent User Detection.md>)
        - Set up with the "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
-
 
 

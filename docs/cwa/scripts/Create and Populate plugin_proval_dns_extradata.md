@@ -1,5 +1,6 @@
 ---
 id: '4bc996bc-1b11-4819-a7c9-73e7c61aa9db'
+slug: /4bc996bc-1b11-4819-a7c9-73e7c61aa9db
 title: 'Create and Populate plugin_proval_dns_extradata'
 title_meta: 'Create and Populate plugin_proval_dns_extradata'
 keywords: ['create', 'populate', 'table', 'dns', 'extradata']
@@ -54,6 +55,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

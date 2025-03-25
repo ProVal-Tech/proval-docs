@@ -1,5 +1,6 @@
 ---
 id: '20f0ea45-0612-4224-a2c8-210eb51be3c5'
+slug: /20f0ea45-0612-4224-a2c8-210eb51be3c5
 title: 'Admin - Script Engine'
 title_meta: 'Admin - Script Engine'
 keywords: ['scripts', 'metrics', 'environment', 'performance', 'tracking']
@@ -27,6 +28,5 @@ None
 | DaysRunning    | The number of days each script has been running in the environment.                             |
 | TotalRuns     | The count of times each script has run                                                          |
 | LastRunDate   | The most recent time the script was run                                                         |
-
 
 

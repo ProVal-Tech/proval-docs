@@ -1,5 +1,6 @@
 ---
 id: 'e0515cd5-5dab-444c-a7c4-47f1fa80bff4'
+slug: /e0515cd5-5dab-444c-a7c4-47f1fa80bff4
 title: 'SMB1'
 title_meta: 'SMB1'
 keywords: ['smb1', 'monitor', 'disable', 'task', 'custom', 'field']
@@ -35,7 +36,6 @@ To implement a monitor that identifies machines with SMB1 enabled and subsequent
 
 1. Create the monitor: [CW RMM - Monitor - SMB1 Detection](<../cwa/monitors/SMB1 Detection.md>)
 2. Create the task: [CW RMM - Task - Disable SMB1](<../cwrmm/tasks/Disable SMB1.md>)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ce8d5706-137b-4a55-8a8b-5041e35421de'
+slug: /ce8d5706-137b-4a55-8a8b-5041e35421de
 title: 'DHCP Scope(s) < 25% and 20 IP Addresses Available'
 title_meta: 'DHCP Scope(s) < 25% and 20 IP Addresses Available'
 keywords: ['dhcp', 'monitor', 'ip', 'addresses', 'alert']

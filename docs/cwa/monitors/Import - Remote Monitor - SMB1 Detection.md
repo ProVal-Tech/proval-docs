@@ -1,5 +1,6 @@
 ---
 id: 'ec956fa3-ab8c-410c-83d7-9e81f4b1f499'
+slug: /ec956fa3-ab8c-410c-83d7-9e81f4b1f499
 title: 'Import - Remote Monitor - SMB1 Detection'
 title_meta: 'Import - Remote Monitor - SMB1 Detection'
 keywords: ['smb1', 'vulnerability', 'management', 'monitoring', 'database']

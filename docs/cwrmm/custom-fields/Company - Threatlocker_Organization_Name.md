@@ -1,5 +1,6 @@
 ---
 id: 'bf8fac11-d525-4cea-a6e7-f402af581f77'
+slug: /bf8fac11-d525-4cea-a6e7-f402af581f77
 title: 'Company - Threatlocker_Organization_Name'
 title_meta: 'Company - Threatlocker_Organization_Name'
 keywords: ['threatlocker', 'deployment', 'organization', 'portal']
@@ -26,7 +27,6 @@ This document specifies the organization name to be used for Threatlocker deploy
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Threatlocker_Organization_Name/image_1.png)
-
 
 
 

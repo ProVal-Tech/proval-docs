@@ -1,5 +1,6 @@
 ---
 id: 'c413c86c-d168-4809-ab13-a1c19df58773'
+slug: /c413c86c-d168-4809-ab13-a1c19df58773
 title: 'AD - Test for Weak Passwords - PowerShell Script'
 title_meta: 'AD - Test for Weak Passwords - PowerShell Script'
 keywords: ['active-directory', 'password', 'testing', 'infrastructure', 'database']

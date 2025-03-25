@@ -1,5 +1,6 @@
 ---
 id: 'ba9e49ca-2f53-42ca-94a7-373fd4098527'
+slug: /ba9e49ca-2f53-42ca-94a7-373fd4098527
 title: 'Scheduled Task - Winget Update All'
 title_meta: 'Scheduled Task - Winget Update All'
 keywords: ['winget', 'update', 'scheduled', 'tasks', 'windows', '10', '11']
@@ -75,6 +76,5 @@ Create the following device groups:
 Create and deploy the following tasks:  
 - [Scheduled Task Winget Update All (Create)](<../cwrmm/tasks/Scheduled Task Winget Update All (Create).md>)  
 - [Scheduled Task Winget Update All (Delete)](<../cwrmm/tasks/Scheduled Task Winget Update All (Delete).md>)  
-
 
 

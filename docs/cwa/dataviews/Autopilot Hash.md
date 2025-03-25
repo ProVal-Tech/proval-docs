@@ -1,5 +1,6 @@
 ---
 id: 'd7da7b86-19e7-4bad-9936-8687800cee66'
+slug: /d7da7b86-19e7-4bad-9936-8687800cee66
 title: 'Autopilot Hash'
 title_meta: 'Autopilot Hash'
 keywords: ['windows', 'agents', 'hash', 'client', 'location', 'operating', 'system', 'make', 'model', 'serial', 'autopilot']
@@ -30,6 +31,5 @@ This document displays the Hardware Hash details of Windows agents.
 | Model             | Model of the agent within Automate                       |
 | Serial Number     | Serial Number of the agent within Automate               |
 | Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '495df667-0690-48e0-b929-f7671e9fc92c'
+slug: /495df667-0690-48e0-b929-f7671e9fc92c
 title: 'Implement - Active Directory Replication Anomaly Monitoring'
 title_meta: 'Implement - Active Directory Replication Anomaly Monitoring'
 keywords: ['active-directory', 'monitoring', 'replication', 'anomaly', 'sql', 'alert', 'ticket']

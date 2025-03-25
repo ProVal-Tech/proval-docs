@@ -1,5 +1,6 @@
 ---
 id: '0cf14533-c145-4a77-8ea7-8c70476768a9'
+slug: /0cf14533-c145-4a77-8ea7-8c70476768a9
 title: 'Install-SnapAgent'
 title_meta: 'Install-SnapAgent'
 keywords: ['install', 'snapagent', 'software', 'monitoring']
@@ -43,6 +44,5 @@ Installs SnapAgent. A URL is necessary to install it.
 ## Output
 - `.\Install-SnapAgent-Log.txt`
 - `.\Install-SnapAgent-Error.txt`
-
 
 

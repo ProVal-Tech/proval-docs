@@ -1,5 +1,6 @@
 ---
 id: '59fbb11b-df98-46a4-9b97-986b4f8e16f9'
+slug: /59fbb11b-df98-46a4-9b97-986b4f8e16f9
 title: 'CWA - Update Table Data - UnifiController'
 title_meta: 'CWA - Update Table Data - UnifiController'
 keywords: ['unifi', 'connectwise', 'data', 'collection', 'automation']
@@ -36,6 +37,5 @@ To implement this solution, follow these steps. Is there any manual configuratio
 ## FAQ
 
 *(This section can be filled with frequently asked questions related to the implementation or usage of the solution.)*
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '81b5f220-8cfc-4a52-bbf2-e6606eebf822'
+slug: /81b5f220-8cfc-4a52-bbf2-e6606eebf822
 title: '2FA - Duo Auth Audit'
 title_meta: '2FA - Duo Auth Audit'
 keywords: ['duo', 'mfa', 'authentication', 'automate', 'agents']
@@ -74,6 +75,5 @@ FROM
       AND users.userid > 0 
   ) t
 ```
-
 
 

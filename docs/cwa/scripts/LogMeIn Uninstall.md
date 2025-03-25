@@ -1,5 +1,6 @@
 ---
 id: 'f7074631-615e-4b66-80ab-10b9c3a0f8fa'
+slug: /f7074631-615e-4b66-80ab-10b9c3a0f8fa
 title: 'LogMeIn Uninstall'
 title_meta: 'LogMeIn Uninstall'
 keywords: ['uninstall', 'logmein', 'script', 'automation', 'client']
@@ -26,6 +27,5 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ed7fac53-e526-41d5-be5e-7c710b01aed2'
+slug: /ed7fac53-e526-41d5-be5e-7c710b01aed2
 title: 'All Internal Monitor Detailed Report'
 title_meta: 'All Internal Monitor Detailed Report'
 keywords: ['monitors', 'implementation', 'status', 'alert', 'template', 'sync', 'script', 'failure', 'scan', 'group']
@@ -44,6 +45,5 @@ Color coding is applied to the columns "Monitor Nature," "Monitor Status," "Scri
 - **Monitor Status**: The "Disabled" font is bold/italic and highlighted in red to draw attention to disabled monitors.
 - **Script Nature**: The "ProVal Script" is highlighted in green to indicate where "ProVal" scripts are used as autofixes.
 - **Synced/Updated**: "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily indicate whether the monitor is properly synced/updated from the ProVal plugin.
-
 
 

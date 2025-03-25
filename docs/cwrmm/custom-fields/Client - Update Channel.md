@@ -1,5 +1,6 @@
 ---
 id: '656f037b-8dba-4e59-b135-33dcd5b0b7dc'
+slug: /656f037b-8dba-4e59-b135-33dcd5b0b7dc
 title: 'Client - Update Channel'
 title_meta: 'Client - Update Channel'
 keywords: ['update', 'channel', 'microsoft365', 'client', 'computer']
@@ -32,7 +33,6 @@ Available options are:
 
 ![Image](../../../static/img/Client---Update-Channel/image_1.png)
 ![Image](../../../static/img/Client---Update-Channel/image_2.png)
-
 
 
 

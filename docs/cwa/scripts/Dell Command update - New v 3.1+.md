@@ -1,5 +1,6 @@
 ---
 id: '6b58263a-cc4f-45d1-bf29-2e777f0cf644'
+slug: /6b58263a-cc4f-45d1-bf29-2e777f0cf644
 title: 'Dell Command update - New v 3.1+'
 title_meta: 'Dell Command update - New v 3.1+'
 keywords: ['dell', 'command', 'update', 'installation', 'scan']
@@ -40,6 +41,5 @@ This script installs Dell Command Update if it is not present, updates it to ver
 ## Output
 
 - Script log
-
 
 

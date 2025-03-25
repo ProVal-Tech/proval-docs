@@ -1,5 +1,6 @@
 ---
 id: '1e7f2148-6bd5-41ce-a397-9c41054487cf'
+slug: /1e7f2148-6bd5-41ce-a397-9c41054487cf
 title: 'Disk Space Monitoring Process'
 title_meta: 'Disk Space Monitoring Process'
 keywords: ['disk', 'cleanup', 'connectwise', 'automate', 'threshold', 'ticket']
@@ -60,6 +61,5 @@ The following steps are performed:
 
 - Script Log
 - Ticket
-
 
 

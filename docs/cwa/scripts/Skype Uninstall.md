@@ -1,5 +1,6 @@
 ---
 id: '8ada9bce-67c7-4493-b40f-5412933cc16e'
+slug: /8ada9bce-67c7-4493-b40f-5412933cc16e
 title: 'Skype Uninstall'
 title_meta: 'Skype Uninstall'
 keywords: ['uninstall', 'skype', 'script', 'automation', 'software']
@@ -32,6 +33,5 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages.
-
 
 

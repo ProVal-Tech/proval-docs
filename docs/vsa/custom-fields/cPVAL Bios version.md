@@ -1,5 +1,6 @@
 ---
 id: '2da16509-f33b-4a96-b2a4-b30c6f070483'
+slug: /2da16509-f33b-4a96-b2a4-b30c6f070483
 title: 'cPVAL Bios version'
 title_meta: 'cPVAL Bios version'
 keywords: ['dependencies', 'filters', 'itglue', 'view', 'monitoring']
@@ -29,6 +30,5 @@ List all filters applied to this view.
 |---------------------------------|------------------|-----------------------------|
 | OS Info / OS Type               | N                | Server                      |
 | xPVAL Monitoring Managed        | Y                | NOT *1* OR NOT *yes*       |
-
 
 

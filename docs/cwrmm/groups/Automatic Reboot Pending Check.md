@@ -1,5 +1,6 @@
 ---
 id: '1c798d37-8ff8-4e73-ba39-027e025a3551'
+slug: /1c798d37-8ff8-4e73-ba39-027e025a3551
 title: 'Automatic Reboot Pending Check'
 title_meta: 'Automatic Reboot Pending Check'
 keywords: ['reboot', 'automation', 'custom', 'dynamic', 'group']
@@ -38,7 +39,6 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
    - Auto_RebootPendingCheck custom field equal to False.
    - The agent available is equal to True.
    - The OS contains any of Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server, and Windows 2022 Server.
-
 
 
 

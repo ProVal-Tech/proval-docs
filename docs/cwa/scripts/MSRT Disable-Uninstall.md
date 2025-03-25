@@ -1,5 +1,6 @@
 ---
 id: '21c23057-f81d-11ef-87d3-8600008a66b7'
+slug: /21c23057-f81d-11ef-87d3-8600008a66b7
 title: 'Malicious Software Removal Tool Disable/Uninstall'
 title_meta: 'Malicious Software Removal Tool Disable/Uninstall'
 keywords: ['MSRT', 'Scanner', 'Malicious', 'MRT', 'Software' , 'Tool']
@@ -47,4 +48,3 @@ The script can run with the monitor to perform the auto MSRT disabling/uninstall
 - Local file on the computer
 - EDF
 - Dataview
-

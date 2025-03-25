@@ -1,5 +1,6 @@
 ---
 id: '1b34e236-7235-4dc1-b4d2-fdd120e75f47'
+slug: /1b34e236-7235-4dc1-b4d2-fdd120e75f47
 title: 'Import- Backup Exec - No successful backups in 3 days'
 title_meta: 'Import- Backup Exec - No successful backups in 3 days'
 keywords: ['remote', 'monitor', 'backup', 'query', 'groupid']

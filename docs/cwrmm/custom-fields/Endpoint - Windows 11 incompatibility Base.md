@@ -1,5 +1,6 @@
 ---
 id: '7894870c-b7e8-44e0-806c-c948f151fc49'
+slug: /7894870c-b7e8-44e0-806c-c948f151fc49
 title: 'Endpoint - Windows 11 incompatibility Base'
 title_meta: 'Endpoint - Windows 11 incompatibility Base'
 keywords: ['windows', 'incompatibility', 'validation', 'storage', 'endpoint']
@@ -23,6 +24,5 @@ Stores the result returned by the [Windows 11 Compatibility Validation](<../task
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
-
 
 

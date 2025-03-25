@@ -1,5 +1,6 @@
 ---
 id: '663fd322-b49a-49b9-aeb8-2bb621c36388'
+slug: /663fd322-b49a-49b9-aeb8-2bb621c36388
 title: 'Patching - Audit'
 title_meta: 'Patching - Audit'
 keywords: ['patching', 'report', 'compliance', 'status', 'override', 'policy', 'approval', 'installed', 'missing', 'last', 'agent']
@@ -46,7 +47,6 @@ This Dataview is very descriptive and reflects all the relevant information for 
 | Days Since Last Patch Scan             | Displays the number of days since the last patch scan                   |
 | Days Since Last Agent Contact          | Displays the number of days since the last agent contact                |
 | Days Since Last Agent Inventory        | Displays the number of days since the last agent inventory              |
-
 
 
 

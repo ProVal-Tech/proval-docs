@@ -1,5 +1,6 @@
 ---
 id: '6f73dc4e-4ded-4cbb-a62d-7a98e485764b'
+slug: /6f73dc4e-4ded-4cbb-a62d-7a98e485764b
 title: 'Invoke-UserLogout'
 title_meta: 'Invoke-UserLogout'
 keywords: ['logout', 'user', 'session', 'windows']
@@ -35,5 +36,4 @@ Location of output for log, result, and error files.
 - `.\Invoke-UserLogout-log.txt`
 - `.\Invoke-UserLogout-data.txt`
 - `.\Invoke-UserLogout-error.txt`
-
 

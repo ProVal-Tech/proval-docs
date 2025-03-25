@@ -1,5 +1,6 @@
 ---
 id: '30fcf92d-cb2b-4fc6-bc7a-c43d393ce33d'
+slug: /30fcf92d-cb2b-4fc6-bc7a-c43d393ce33d
 title: 'Windows - TLS - EnableDisable'
 title_meta: 'Windows - TLS - EnableDisable'
 keywords: ['tls', 'registry', 'encryption', 'crypto', 'windows']
@@ -40,6 +41,5 @@ To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with str
 ## Output
 
 - Script log
-
 
 

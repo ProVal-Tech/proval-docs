@@ -1,5 +1,6 @@
 ---
 id: 'f1d0dacb-4500-428e-b2ac-c96b30348755'
+slug: /f1d0dacb-4500-428e-b2ac-c96b30348755
 title: 'plugin_proval_scheduled_tasks'
 title_meta: 'plugin_proval_scheduled_tasks'
 keywords: ['scheduled', 'task', 'data', 'storage', 'audit']
@@ -81,6 +82,5 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   CONSTRAINT `plugin_proval_scheduled_tasks_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2f00a1ec-90be-4572-9479-facb7c12cb5c'
+slug: /2f00a1ec-90be-4572-9479-facb7c12cb5c
 title: 'Missing Patches Totals Last 30 Days'
 title_meta: 'Missing Patches Totals Last 30 Days'
 keywords: ['patching', 'dataview', 'devices', 'servers', 'workstations', 'missing', 'total', 'reviewed']
@@ -25,6 +26,5 @@ This Dataview provides patching information for devices online within the last 3
 | Total Per Machine                  | Displays the number of patches per machine that have been online in the last 30 days                 |
 | Total Missing Unfiltered           | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
-
 
 

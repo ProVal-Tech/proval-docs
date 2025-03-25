@@ -1,5 +1,6 @@
 ---
 id: '4c93e57c-0959-4f9e-9557-6f5974866782'
+slug: /4c93e57c-0959-4f9e-9557-6f5974866782
 title: 'Remove-McAfeeSoftware'
 title_meta: 'Remove-McAfeeSoftware'
 keywords: ['remove', 'mcafee', 'uninstall', 'cleanup']
@@ -29,6 +30,5 @@ Runs McAfee's publicly available Removal Tool with parameters to remove all prod
 - .\mccleanup.log
 - .\Remove-McAfeeSoftware-log.txt
 - .\Remove-McAfeeSoftware-error.txt
-
 
 

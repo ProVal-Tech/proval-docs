@@ -1,5 +1,6 @@
 ---
 id: '70d9b103-f73f-4e68-a4aa-d2651e44d09a'
+slug: /70d9b103-f73f-4e68-a4aa-d2651e44d09a
 title: 'SonicWall NetExtender - InstallUpdate'
 title_meta: 'SonicWall NetExtender - InstallUpdate'
 keywords: ['sonicwall', 'netextender', 'installation', 'update', 'winget']
@@ -37,6 +38,5 @@ This solution ensures that the SonicWall NetExtender is installed or updated to 
 6. Run the [SonicWall NetExtender - Latest Version [Winget]](<../cwa/scripts/CWM - Automate - Data Collection - SonicWall NetExtender - Latest Version Winget.md>) script and ensure the script populates the system property.  
    ![Image](../../static/img/SonicWall-NetExtender---InstallUpdate/image_1.png)
 7. Enable the deployment monitor.
-
 
 

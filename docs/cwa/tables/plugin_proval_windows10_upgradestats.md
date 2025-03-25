@@ -1,5 +1,6 @@
 ---
 id: '75c18bf0-9ebc-43c7-a5a3-03510d131af5'
+slug: /75c18bf0-9ebc-43c7-a5a3-03510d131af5
 title: 'plugin_proval_windows10_upgradestats'
 title_meta: 'plugin_proval_windows10_upgradestats'
 keywords: ['windows', 'update', 'installation', 'success', 'failures', 'statistics']
@@ -31,6 +32,5 @@ This document contains data regarding the historical success and failure rates o
 | Successes          | TinyInt   | The count of successful installations for this version.                                        |
 | Failures           | TinyInt   | The count of failed attempts to install this version.                                          |
 | TotalAttempts      | INT       | The total attempts it took to upgrade to this version.                                         |
-
 
 

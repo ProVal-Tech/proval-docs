@@ -1,5 +1,6 @@
 ---
 id: '3e0ab351-497a-4e39-96d7-a7bec5fc92d8'
+slug: /3e0ab351-497a-4e39-96d7-a7bec5fc92d8
 title: 'plugin_proval_scripttimesaved_'
 title_meta: 'plugin_proval_scripttimesaved_'
 keywords: ['queries', 'connectwise', 'automate', 'scripttime', 'database']
@@ -60,6 +61,5 @@ N/A - These tables are populated with the associated triggers.
 ## SQL
 
 [Download SQL Queries](https://proval.itglue.com/attachments/6824289)
-
 
 

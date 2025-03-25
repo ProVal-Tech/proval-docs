@@ -1,5 +1,6 @@
 ---
 id: 'f68801e5-ac94-4219-900c-15f9d2fb92d4'
+slug: /f68801e5-ac94-4219-900c-15f9d2fb92d4
 title: 'Build and Map Information Base Categories from CWM(board-Type-SubType)'
 title_meta: 'Build and Map Information Base Categories from CWM(board-Type-SubType)'
 keywords: ['script', 'manage', 'categories', 'ticket', 'automation']
@@ -43,6 +44,5 @@ This script will create information base categories (ticket categories) for ever
 ## Output
 
 CW Manage Plugin
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a1d8f066-b016-4654-b855-891518d1f1da'
+slug: /a1d8f066-b016-4654-b855-891518d1f1da
 title: 'Soji (Disk Cleanup Utility)'
 title_meta: 'Soji (Disk Cleanup Utility)'
 keywords: ['disk', 'cleanup', 'utility', 'windows', 'rmm']
@@ -250,6 +251,5 @@ Click the `Save` button to save the Task.
 - Script Log
 
 ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
-
 
 

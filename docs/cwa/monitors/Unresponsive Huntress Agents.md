@@ -1,5 +1,6 @@
 ---
 id: '3c75f8e7-6237-4349-97bb-462fe8d70b54'
+slug: /3c75f8e7-6237-4349-97bb-462fe8d70b54
 title: 'Unresponsive Huntress Agents'
 title_meta: 'Unresponsive Huntress Agents'
 keywords: ['monitor', 'huntress', 'agent', 'orphaned', 'security']

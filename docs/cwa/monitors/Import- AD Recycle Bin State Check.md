@@ -1,5 +1,6 @@
 ---
 id: '7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d'
+slug: /7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d
 title: 'Import- AD Recycle Bin State Check'
 title_meta: 'Import- AD Recycle Bin State Check'
 keywords: ['ad', 'recycle', 'bin', 'connectwise', 'automate', 'sql', 'monitor']

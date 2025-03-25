@@ -1,5 +1,6 @@
 ---
 id: '56d0b15a-c899-4bc3-9da5-feeb8c061423'
+slug: /56d0b15a-c899-4bc3-9da5-feeb8c061423
 title: 'plugin_proval_ad_pwd_audit'
 title_meta: 'plugin_proval_ad_pwd_audit'
 keywords: ['active-directory', 'report', 'weak', 'passwords', 'audit']
@@ -42,7 +43,6 @@ Put the SQL to create the custom table here:
 ```
 CREATE TABLE table_name ...
 ```
-
 
 
 

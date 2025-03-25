@@ -1,5 +1,6 @@
 ---
 id: 'f78c8a37-448e-4a52-b475-412b0625edde'
+slug: /f78c8a37-448e-4a52-b475-412b0625edde
 title: 'plugin_proval_log4jsoftwarelist'
 title_meta: 'plugin_proval_log4jsoftwarelist'
 keywords: ['log4j', 'applications', 'vulnerability', 'software', 'security']
@@ -30,6 +31,5 @@ This document stores information from [NCSC-NL's GitHub repository](https://gith
 | Status   | VARCHAR | The current vulnerable status of the application. |
 | Notes    | VARCHAR | Any notes about the application.                  |
 | Links    | VARCHAR | Links regarding the application's vulnerability.  |
-
 
 

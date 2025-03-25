@@ -1,5 +1,6 @@
 ---
 id: '6abb79b5-4638-4d53-b960-f11972f0f96d'
+slug: /6abb79b5-4638-4d53-b960-f11972f0f96d
 title: 'Repair Office Automatic Updates'
 title_meta: 'Repair Office Automatic Updates'
 keywords: ['office', 'updates', 'repair', 'automatic', 'script', 'task']
@@ -140,6 +141,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a11ec2f8-d40c-45ee-952f-aff04c9cf593'
+slug: /a11ec2f8-d40c-45ee-952f-aff04c9cf593
 title: 'Processor Architecture Audit'
 title_meta: 'Processor Architecture Audit'
 keywords: ['processor', 'architecture', 'x86', 'mips', 'alpha', 'powerpc', 'arm', 'itanium', 'amd64', 'arm64']
@@ -39,6 +40,5 @@ The output is:
 | Operating System     | Operating System name of the agent               |
 | Last Contact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
-
 
 

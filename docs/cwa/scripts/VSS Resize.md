@@ -1,5 +1,6 @@
 ---
 id: '0600e89c-06a5-42da-9ed8-41e43d9cfd7d'
+slug: /0600e89c-06a5-42da-9ed8-41e43d9cfd7d
 title: 'VSS Resize'
 title_meta: 'VSS Resize'
 keywords: ['vssadmin', 'resize', 'storage', 'script', 'parameter']
@@ -46,6 +47,5 @@ This script resets the vssadmin size and updates the table with the latest size 
 - Script log
 - Table
 - Dataview
-
 
 

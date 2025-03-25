@@ -1,5 +1,6 @@
 ---
 id: 'f317da6e-0ea2-4c1e-bad9-4d0ad25684d3'
+slug: /f317da6e-0ea2-4c1e-bad9-4d0ad25684d3
 title: 'pvl_wifi_profiles'
 title_meta: 'pvl_wifi_profiles'
 keywords: ['wifi', 'profiles', 'database', 'configuration', 'encryption', 'authentication']
@@ -37,6 +38,5 @@ The purpose of the custom table is to store the WiFi Profiles information for ea
 | IsConnected          | tinyint(4)   | Is the computer actively using it? (0/1)                 |
 | Password             | blob         | Password of the WiFi profile stored in encrypted format   |
 | scriptruntime        | datetime     | Data collection time                                      |
-
 
 

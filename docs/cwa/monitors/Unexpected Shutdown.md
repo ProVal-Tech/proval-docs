@@ -1,5 +1,6 @@
 ---
 id: '80e10bf1-9e98-427a-a5bf-dd8ffb208ce8'
+slug: /80e10bf1-9e98-427a-a5bf-dd8ffb208ce8
 title: 'Unexpected Shutdown'
 title_meta: 'Unexpected Shutdown'
 keywords: ['shutdown', 'monitor', 'windows', 'power', 'event']

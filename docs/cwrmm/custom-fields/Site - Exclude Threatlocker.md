@@ -1,5 +1,6 @@
 ---
 id: 'de2e1944-e0cc-4b5a-8b87-4f09cfafe4a9'
+slug: /de2e1944-e0cc-4b5a-8b87-4f09cfafe4a9
 title: 'Site - Exclude Threatlocker'
 title_meta: 'Site - Exclude Threatlocker'
 keywords: ['threatlocker', 'deployment', 'custom', 'field', 'site']
@@ -26,7 +27,6 @@ Setting this custom field to "Yes" will exclude all the machines under that site
 ## Screenshot
 
 ![Screenshot](../../../static/img/Site---Exclude-Threatlocker/image_1.png)
-
 
 
 

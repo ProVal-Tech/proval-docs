@@ -1,5 +1,6 @@
 ---
 id: '43225bbe-98a0-4352-8fb2-79e7431dea10'
+slug: /43225bbe-98a0-4352-8fb2-79e7431dea10
 title: 'ScreenConnect - Repair RMM+, Autofix, Globals'
 title_meta: 'ScreenConnect - Repair RMM+, Autofix, Globals'
 keywords: ['screenconnect', 'repair', 'client', 'automate', 'rmm']
@@ -75,7 +76,6 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days, b
 Please reinstall the ScreenConnect Client manually on the computer.
 Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 ```
-
 
 
 

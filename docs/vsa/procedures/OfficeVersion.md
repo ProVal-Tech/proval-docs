@@ -1,5 +1,6 @@
 ---
 id: '2045a948-fc2d-42a4-ba22-17ea4bcc99c0'
+slug: /2045a948-fc2d-42a4-ba22-17ea4bcc99c0
 title: 'OfficeVersion'
 title_meta: 'OfficeVersion'
 keywords: ['office', 'version', 'bit', 'ctr', '2019']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Get Default Office Version, Bit, CTR, and 2019
-
 
 

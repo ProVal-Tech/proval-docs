@@ -1,5 +1,6 @@
 ---
 id: 'abc5e9cd-9e2c-4df0-b129-be342008e554'
+slug: /abc5e9cd-9e2c-4df0-b129-be342008e554
 title: 'PowerShell Out of Date'
 title_meta: 'PowerShell Out of Date'
 keywords: ['windows', 'monitor', 'powershell', 'version', 'detection']

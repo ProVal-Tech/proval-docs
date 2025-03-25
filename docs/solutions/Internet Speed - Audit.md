@@ -1,5 +1,6 @@
 ---
 id: 'c5a8578c-c085-438c-acd9-303596067b96'
+slug: /c5a8578c-c085-438c-acd9-303596067b96
 title: 'Internet Speed - Audit'
 title_meta: 'Internet Speed - Audit'
 keywords: ['internet', 'speed', 'audit', 'monitoring', 'network']
@@ -36,7 +37,6 @@ The internet speed audit solution measures the network speed that the machine is
 6. Assign the monitor to whatever groups you would like audited (e.g., Managed Servers 24x7).  
 7. Assign the Alert Template to the Monitor and validate that there are results showing.  
 8. Run the monitor to begin the auditing.
-
 
 
 

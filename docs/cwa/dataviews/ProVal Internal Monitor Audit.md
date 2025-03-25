@@ -1,5 +1,6 @@
 ---
 id: '449ae721-2fbc-413d-b0a2-09efb2f0d9e9'
+slug: /449ae721-2fbc-413d-b0a2-09efb2f0d9e9
 title: 'ProVal Internal Monitor Audit'
 title_meta: 'ProVal Internal Monitor Audit'
 keywords: ['monitor', 'proval', 'custom', 'sync', 'status', 'scan', 'fail', 'group']
@@ -35,6 +36,5 @@ This document lists all the internal monitors that contain 'proval' or 'custom' 
 - plugin_prosync_monitors
 - agents
 - h_agents
-
 
 

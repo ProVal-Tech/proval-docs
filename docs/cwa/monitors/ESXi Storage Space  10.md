@@ -1,5 +1,6 @@
 ---
 id: '9b1477b3-6d88-4a1c-b313-50c638bb84ee'
+slug: /9b1477b3-6d88-4a1c-b313-50c638bb84ee
 title: 'ESXi Storage Space  10'
 title_meta: 'ESXi Storage Space  10'
 keywords: ['esxi', 'monitor', 'storage', 'vmware', 'alert']
@@ -25,6 +26,5 @@ This section should list the ITGlue documents found in the Related Items sidebar
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
-
 
 

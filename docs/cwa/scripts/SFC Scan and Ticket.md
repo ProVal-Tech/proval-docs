@@ -1,5 +1,6 @@
 ---
 id: 'b13054b0-07b2-4416-ba6d-fbe285f89605'
+slug: /b13054b0-07b2-4416-ba6d-fbe285f89605
 title: 'SFC Scan and Ticket'
 title_meta: 'SFC Scan and Ticket'
 keywords: ['sfc', 'scan', 'ticket', 'windows', 'maintenance']
@@ -45,6 +46,5 @@ This script will stop the Windows Update service and clear some folders to ensur
 
 - Script log messages
 - Tickets
-
 
 

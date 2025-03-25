@@ -1,5 +1,6 @@
 ---
 id: '1fef1360-cfd3-4a3f-8444-207c09fb5a78'
+slug: /1fef1360-cfd3-4a3f-8444-207c09fb5a78
 title: 'Offboarding Wrapper'
 title_meta: 'Offboarding Wrapper'
 keywords: ['offboarding', 'script', 'client', 'automation', 'software', 'ticketing']
@@ -78,7 +79,6 @@ If any application fails to uninstall, it is likely that the machine needs to be
 **Location Level Ticketing:**  
 **Subject:** `Offboarding initiated on location - %LocationName%`  
 **Ticket Body:** `It seems like "Offboard Location" EDF has been selected for %LocationName%. %ScriptName% has been initiated to offboard all machines under this location.`
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e8b825c2-919d-4b92-a94a-8d9e01d48428'
+slug: /e8b825c2-919d-4b92-a94a-8d9e01d48428
 title: 'Patching Metrics Overview - Client Filter'
 title_meta: 'Patching Metrics Overview - Client Filter'
 keywords: ['patching', 'windows', 'clients', 'approval', 'metrics']
@@ -43,6 +44,5 @@ The SQL query filters the results for the patch-managed computers only. Removing
 | Patching Policy            | Patching Policy (Managed | Unmanaged). By default, the dataview will display data for the patch-managed computers only.                                     |
 | Client ID                  | Client ID (Hidden)                                                                                                                                     |
 | Sort                       | A custom column to sort the dataview in proper order (Hidden)                                                                                         |
-
 
 

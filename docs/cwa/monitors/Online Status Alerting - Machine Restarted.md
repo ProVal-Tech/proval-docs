@@ -1,5 +1,6 @@
 ---
 id: 'b2fbe440-9d16-41ae-bd52-14037790697f'
+slug: /b2fbe440-9d16-41ae-bd52-14037790697f
 title: 'Online Status Alerting - Machine Restarted'
 title_meta: 'Online Status Alerting - Machine Restarted'
 keywords: ['monitor', 'alerting', 'ticket', 'email', 'status']
@@ -22,6 +23,5 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
-
 
 

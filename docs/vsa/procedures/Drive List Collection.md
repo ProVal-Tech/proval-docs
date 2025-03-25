@@ -1,5 +1,6 @@
 ---
 id: '2b8f8910-5e27-4f1e-8921-65bbe93fb09f'
+slug: /2b8f8910-5e27-4f1e-8921-65bbe93fb09f
 title: 'Drive List Collection'
 title_meta: 'Drive List Collection'
 keywords: ['drives', 'collection', 'physical', 'non-removable', 'capacity', 'disk']
@@ -37,7 +38,6 @@ The script queries the endpoint for physical, non-removable drives with a capaci
 
 Agent Procedure Log  
 [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
-
 
 
 

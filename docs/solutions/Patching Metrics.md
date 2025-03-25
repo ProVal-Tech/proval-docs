@@ -1,5 +1,6 @@
 ---
 id: 'e2d2f876-2e03-4d97-b0a1-eb17b666aad2'
+slug: /e2d2f876-2e03-4d97-b0a1-eb17b666aad2
 title: 'Patching Metrics'
 title_meta: 'Patching Metrics'
 keywords: ['patching', 'metrics', 'mysql', 'dataview', 'overview', 'client', 'computer']
@@ -42,6 +43,5 @@ You can check the database version from the `Server Status` in Control Center.
 
 ![Image1](../../static/img/Patching-Metrics/image_1.png)  
 ![Image2](../../static/img/Patching-Metrics/image_2.png)
-
 
 

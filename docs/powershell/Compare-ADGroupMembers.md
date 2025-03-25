@@ -1,5 +1,6 @@
 ---
 id: 'd05c42d1-0984-4ce7-9b1e-7f144871fe1e'
+slug: /d05c42d1-0984-4ce7-9b1e-7f144871fe1e
 title: 'Compare-ADGroupMembers'
 title_meta: 'Compare-ADGroupMembers'
 keywords: ['compare', 'adgroup', 'members', 'changes']
@@ -39,6 +40,5 @@ Location of output for log, result, and error files.
 - `.\Compare-ADGroupMembers-log.txt`
 - `.\Compare-ADGroupMembers-data.txt`
 - `.\Compare-ADGroupMembers-error.txt`
-
 
 

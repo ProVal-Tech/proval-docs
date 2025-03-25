@@ -1,5 +1,6 @@
 ---
 id: 'f65e32ea-dd71-436e-bb50-5607d23b8adb'
+slug: /f65e32ea-dd71-436e-bb50-5607d23b8adb
 title: 'Local Admin Group Cleanup'
 title_meta: 'Local Admin Group Cleanup'
 keywords: ['local', 'admin', 'cleanup', 'windows', 'monitor']
@@ -50,7 +51,6 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    ![Image](../../static/img/Local-Admin-Group-Cleanup/image_3.png)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](<../cwa/scripts/Local Admin Group Cleanup - AddRemove.md>) document, which should be provided by the consultant.
-
 
 
 

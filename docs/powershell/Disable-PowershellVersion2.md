@@ -1,5 +1,6 @@
 ---
 id: '41a199c6-33c0-4c76-b882-ac7b9246a3cc'
+slug: /41a199c6-33c0-4c76-b882-ac7b9246a3cc
 title: 'Disable-PowershellVersion2'
 title_meta: 'Disable-PowershellVersion2'
 keywords: ['disable', 'powershell', 'version', 'update']
@@ -30,6 +31,5 @@ This command checks for a version of PowerShell greater than v2. If one is prese
 ## Output
 - .\Disable-PowerShellVersion2-log.txt
 - .\Disable-PowerShellVersion2-error.txt
-
 
 

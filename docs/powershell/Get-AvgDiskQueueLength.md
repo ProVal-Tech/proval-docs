@@ -1,5 +1,6 @@
 ---
 id: '662544c5-360c-4348-9e8f-a95b5bb4efd9'
+slug: /662544c5-360c-4348-9e8f-a95b5bb4efd9
 title: 'Get-AvgDiskQueueLength'
 title_meta: 'Get-AvgDiskQueueLength'
 keywords: ['disk', 'queue', 'length', 'performance']
@@ -55,6 +56,5 @@ This example runs the script to calculate the average of the last 5 samples of t
 ## Output
 - `.\Get-AvgDiskQueueLength-log.txt`
 - `.\Get-AvgDiskQueueLength-Error.txt`
-
 
 

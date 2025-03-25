@@ -1,5 +1,6 @@
 ---
 id: 'dc75761e-6b11-40be-973e-e01290c8c134'
+slug: /dc75761e-6b11-40be-973e-e01290c8c134
 title: 'Execute Script - Scheduled Task - Delete - Winget Update All'
 title_meta: 'Execute Script - Scheduled Task - Delete - Winget Update All'
 keywords: ['windows', 'monitor', 'task', 'winget', 'update', 'client']
@@ -29,6 +30,5 @@ Global
 **Name:** △ Custom - Execute Script - Scheduled Task - Delete - Winget Update All
 
 The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](<../scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) against the detected machines.
-
 
 

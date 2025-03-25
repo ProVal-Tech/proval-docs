@@ -1,5 +1,6 @@
 ---
 id: '2e21d3a9-d6c7-4279-895b-ad029fab84b7'
+slug: /2e21d3a9-d6c7-4279-895b-ad029fab84b7
 title: 'VSA_API_ARGS'
 title_meta: 'VSA_API_ARGS'
 keywords: ['vsa', 'api', 'arguments', 'vsatoolbox', 'parameters']
@@ -42,6 +43,5 @@ The personal access token to use for VSA REST API authentication.
 </div>
 </div>
 </div>
-
 
 

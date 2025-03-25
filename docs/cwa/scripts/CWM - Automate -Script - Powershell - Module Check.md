@@ -1,5 +1,6 @@
 ---
 id: '2ae05c30-5cef-42be-8c8a-c39928d85321'
+slug: /2ae05c30-5cef-42be-8c8a-c39928d85321
 title: 'CWM - Automate -Script - Powershell - Module Check'
 title_meta: 'CWM - Automate -Script - Powershell - Module Check'
 keywords: ['connectwise', 'script', 'command', 'endpoint', 'test']
@@ -34,6 +35,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - `failstatus` will be false if this script fails.
-
 
 

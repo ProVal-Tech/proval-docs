@@ -1,5 +1,6 @@
 ---
 id: '099fdbf2-75c5-4c33-958c-9760e51539d4'
+slug: /099fdbf2-75c5-4c33-958c-9760e51539d4
 title: 'DNS Settings Audit - Servers'
 title_meta: 'DNS Settings Audit - Servers'
 keywords: ['windows', 'server', 'dns', 'environment', 'information']
@@ -23,6 +24,5 @@ This dataview displays information for all the Windows servers present in the en
 | DNS_Settings       | DNS addresses.                     |
 | Operating_System    | OS information of the server.      |
 | Last Contact       | Last contact with RMM.             |
-
 
 

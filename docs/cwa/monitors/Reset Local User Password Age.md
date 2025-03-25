@@ -1,5 +1,6 @@
 ---
 id: '68a9870d-25d1-4a65-a917-e48bd941a782'
+slug: /68a9870d-25d1-4a65-a917-e48bd941a782
 title: 'Reset Local User Password Age'
 title_meta: 'Reset Local User Password Age'
 keywords: ['monitor', 'password', 'age', 'local', 'user', 'expire', 'windows', 'policy']

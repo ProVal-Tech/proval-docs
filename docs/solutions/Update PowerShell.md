@@ -1,5 +1,6 @@
 ---
 id: '6196fdb8-de1b-46d2-a19f-2fcb9b676ed8'
+slug: /6196fdb8-de1b-46d2-a19f-2fcb9b676ed8
 title: 'Update PowerShell'
 title_meta: 'Update PowerShell'
 keywords: ['update', 'audit', 'powershell', 'version', 'windows']
@@ -58,6 +59,5 @@ This script will not update if any of the following conditions are true:
 3. Target OS is Windows 7 or Server 2008R2 but not SP2, because SP2 must be installed to install PowerShell V5.
 4. Target OS is Windows 8, because PowerShell V5 is not applicable to this operating system.
 5. Target OS is Windows 7 or Server 2008R2 SP2 but missing .NET Framework 4.5.2 or greater, because .NET 4.5.2 is required.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '8efd9cc2-b054-4dda-a690-bbe1d4bd16b3'
+slug: /8efd9cc2-b054-4dda-a690-bbe1d4bd16b3
 title: 'Enhanced Disk Space Monitoring Process'
 title_meta: 'Enhanced Disk Space Monitoring Process'
 keywords: ['disk', 'monitor', 'autofix', 'cleanup', 'ticket', 'threshold']
@@ -173,5 +174,4 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
 
 ![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
-
 

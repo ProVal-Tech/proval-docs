@@ -1,5 +1,6 @@
 ---
 id: 'afd016fa-315e-4822-8278-0f33863e3fc0'
+slug: /afd016fa-315e-4822-8278-0f33863e3fc0
 title: 'Enable Bitlocker'
 title_meta: 'Enable Bitlocker'
 keywords: ['bitlocker', 'encryption', 'windows', 'tpm', 'gpo']
@@ -25,6 +26,5 @@ The script is located in ProVal VSA at:
 `Shared > PVAL Content Source > BitLocker > Enable Bitlocker`
 
 ![Image](../../../static/img/Enable-Bitlocker/image_1.png)
-
 
 

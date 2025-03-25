@@ -1,5 +1,6 @@
 ---
 id: '35167ba2-2d75-496c-99f0-facc98a07fbb'
+slug: /35167ba2-2d75-496c-99f0-facc98a07fbb
 title: 'Clear Browsers Saved Passwords'
 title_meta: 'Clear Browsers Saved Passwords'
 keywords: ['browsers', 'passwords', 'chrome', 'edge', 'brave', 'firefox', 'security']
@@ -32,6 +33,5 @@ Run with a parameter set to 1 to wipe out the Microsoft Edge Wallet passwords an
 ## Output
 
 - Script Log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4da626c5-0cec-454e-a517-fc7bf22f80f2'
+slug: /4da626c5-0cec-454e-a517-fc7bf22f80f2
 title: 'Microsoft - Azure AD Joined'
 title_meta: 'Microsoft - Azure AD Joined'
 keywords: ['azure', 'ad', 'detection', 'joined', 'status']
@@ -18,6 +19,5 @@ This document describes how to detect machines that are Azure AD joined.
 | Detection String                                                                                                                                                                                                                                           | Comparator | Result | Applicable OS |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe -nologo -noprofile -command \"$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]\"}@%` | Contains   | True   | Windows        |
-
 
 

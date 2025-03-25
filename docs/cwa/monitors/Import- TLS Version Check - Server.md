@@ -1,5 +1,6 @@
 ---
 id: 'b08343d9-9d4b-4edd-92e2-5941c23d8e43'
+slug: /b08343d9-9d4b-4edd-92e2-5941c23d8e43
 title: 'Import- TLS Version Check - Server'
 title_meta: 'Import- TLS Version Check - Server'
 keywords: ['tls', 'monitor', 'setup', 'database', 'query']

@@ -1,5 +1,6 @@
 ---
 id: 'b634da09-7507-466f-be5e-f7a8d62aacf7'
+slug: /b634da09-7507-466f-be5e-f7a8d62aacf7
 title: 'ScreenConnect - Update Custom Property RMM+,Param'
 title_meta: 'ScreenConnect - Update Custom Property RMM+,Param'
 keywords: ['custom', 'property', 'cw', 'control', 'automation']
@@ -59,6 +60,5 @@ User properties for the Custom Property Index and the Property Value need to be 
 ## Output
 
 Script log messages only.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '3a2f4004-624d-47c4-a5d0-c3c43e103e25'
+slug: /3a2f4004-624d-47c4-a5d0-c3c43e103e25
 title: 'Script - Winget - InstallUpdate Autofix,Param'
 title_meta: 'Script - Winget - InstallUpdate Autofix,Param'
 keywords: ['winget', 'install', 'update', 'application', 'script']
@@ -47,6 +48,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

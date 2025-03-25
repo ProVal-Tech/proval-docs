@@ -1,5 +1,6 @@
 ---
 id: '7fbdffc1-7472-4276-914d-1e5b845dcd3c'
+slug: /7fbdffc1-7472-4276-914d-1e5b845dcd3c
 title: 'Ticket Creation - VMWare ESXi Monitoring'
 title_meta: 'Ticket Creation - VMWare ESXi Monitoring'
 keywords: ['esxi', 'ticket', 'monitor', 'alert', 'automation', 'script']
@@ -46,6 +47,5 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ed2dfe8b-99d5-4dac-9f52-77c3f4e0b217'
+slug: /ed2dfe8b-99d5-4dac-9f52-77c3f4e0b217
 title: 'Microsoft Edge Outdated'
 title_meta: 'Microsoft Edge Outdated'
 keywords: ['microsoft', 'edge', 'monitor', 'windows', 'version']

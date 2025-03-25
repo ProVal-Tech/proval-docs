@@ -1,5 +1,6 @@
 ---
 id: '5045def4-0d37-4df2-9605-43762a048fa4'
+slug: /5045def4-0d37-4df2-9605-43762a048fa4
 title: 'xPVAL Feature Upgrade Status REBOOT PENDING'
 title_meta: 'xPVAL Feature Upgrade Status REBOOT PENDING'
 keywords: ['endpoints', 'upgrade', 'reboot', 'status', 'windows']
@@ -20,6 +21,5 @@ The following filters have been applied to this view:
 | Filter Name                                                                                      | Advanced Filter? | Filter Value     |
 |--------------------------------------------------------------------------------------------------|------------------|------------------|
 | [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | "Reboot Pending"  |
-
 
 

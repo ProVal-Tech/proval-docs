@@ -1,5 +1,6 @@
 ---
 id: '630ab5c4-59dd-47cf-8784-b6a9ac8849fa'
+slug: /630ab5c4-59dd-47cf-8784-b6a9ac8849fa
 title: 'Set-TargetUpgradeVersion'
 title_meta: 'Set-TargetUpgradeVersion'
 keywords: ['upgrade', 'version', 'target', 'update']
@@ -43,5 +44,4 @@ Location of output for log, result, and error files.
 .\Set-TargetUpgradeVersion-data.txt
 .\Set-TargetUpgradeVersion-error.txt
 ```
-
 

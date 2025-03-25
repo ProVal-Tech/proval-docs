@@ -1,5 +1,6 @@
 ---
 id: '45c3d0a0-aac8-4794-b40f-c41d7b3b8f43'
+slug: /45c3d0a0-aac8-4794-b40f-c41d7b3b8f43
 title: 'Update Adobe Creative Cloud'
 title_meta: 'Update Adobe Creative Cloud'
 keywords: ['adobe', 'creative', 'cloud', 'update', 'script']
@@ -158,6 +159,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
-
 
 

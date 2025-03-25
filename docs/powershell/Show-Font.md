@@ -1,5 +1,6 @@
 ---
 id: '97aba1f6-ff21-4997-ba2b-7b43c337567a'
+slug: /97aba1f6-ff21-4997-ba2b-7b43c337567a
 title: 'Show-Font'
 title_meta: 'Show-Font'
 keywords: ['fonts', 'registry', 'customobject', 'installed', 'system']
@@ -43,4 +44,3 @@ CustomObject
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10371907/Install-AnyConnect.ps1>)
 [README.md](<../../static/attachments/itg/10371907/README.md>)
-

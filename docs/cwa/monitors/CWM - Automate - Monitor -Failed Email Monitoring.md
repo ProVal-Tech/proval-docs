@@ -1,5 +1,6 @@
 ---
 id: 'f1a15d3d-85d7-4d72-9c08-ad4ca6a7dfbb'
+slug: /f1a15d3d-85d7-4d72-9c08-ad4ca6a7dfbb
 title: 'CWM - Automate - Monitor -Failed Email Monitoring'
 title_meta: 'CWM - Automate - Monitor -Failed Email Monitoring'
 keywords: ['email', 'ticket', 'monitor', 'failure', 'notification']
@@ -52,6 +53,5 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 ## Target
 
 Global - Should be run without explicitly defined targets.
-
 
 

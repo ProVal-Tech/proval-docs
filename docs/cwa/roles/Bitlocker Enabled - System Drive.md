@@ -1,5 +1,6 @@
 ---
 id: '65d800d5-0bb9-4101-a6e9-289ab737557e'
+slug: /65d800d5-0bb9-4101-a6e9-289ab737557e
 title: 'Bitlocker Enabled - System Drive'
 title_meta: 'Bitlocker Enabled - System Drive'
 keywords: ['bitlocker', 'endpoint', 'status', 'protection', 'windows']
@@ -20,7 +21,6 @@ This data is visible in the BitLocker dataviews or the roles tab in Automate.
 | Detection String                                     | Comparator | Result        | Applicable OS |
 |-----------------------------------------------------|------------|---------------|----------------|
 | `\\\{%@manage-bde -status C: | find "Protection Status"@%}` | Contains   | Protection On | Windows OS     |
-
 
 
 

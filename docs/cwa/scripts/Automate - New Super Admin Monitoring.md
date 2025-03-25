@@ -1,5 +1,6 @@
 ---
 id: 'acc57018-b868-4129-b4a5-0f1052dcc1ae'
+slug: /acc57018-b868-4129-b4a5-0f1052dcc1ae
 title: 'Automate - New Super Admin Monitoring'
 title_meta: 'Automate - New Super Admin Monitoring'
 keywords: ['monitor', 'super', 'admins', 'alert', 'ticket']
@@ -40,6 +41,5 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
-
 
 

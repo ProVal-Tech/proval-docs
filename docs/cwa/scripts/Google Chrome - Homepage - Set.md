@@ -1,5 +1,6 @@
 ---
 id: 'eebf8239-a9d5-462b-a7cf-72d9a50e1f14'
+slug: /eebf8239-a9d5-462b-a7cf-72d9a50e1f14
 title: 'Google Chrome - Homepage - Set'
 title_meta: 'Google Chrome - Homepage - Set'
 keywords: ['automate', 'chromium', 'homepage', 'configuration', 'browser']
@@ -32,6 +33,5 @@ Refer to the [SWM - Software Configuration - Set-ChromiumHomepage](<../../powers
 ## Output
 
 - Script Logs
-
 
 

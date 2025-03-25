@@ -1,5 +1,6 @@
 ---
 id: '403139ff-70e7-440d-9683-be915f4ce16f'
+slug: /403139ff-70e7-440d-9683-be915f4ce16f
 title: 'Aging ShadowCopies Detected'
 title_meta: 'Aging ShadowCopies Detected'
 keywords: ['monitor', 'shadow', 'copy', 'windows', 'agents']
@@ -23,6 +24,5 @@ This monitor will detect agents where shadow copies are not present or are older
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines.
-
 
 

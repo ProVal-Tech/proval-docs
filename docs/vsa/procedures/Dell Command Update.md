@@ -1,5 +1,6 @@
 ---
 id: '0867f403-5d79-4284-b471-8df8ac269dfa'
+slug: /0867f403-5d79-4284-b471-8df8ac269dfa
 title: 'Dell Command Update'
 title_meta: 'Dell Command Update'
 keywords: ['dell', 'cmdupdate', 'procedure', 'endpoint']
@@ -32,6 +33,5 @@ This document describes how to download and run DellCMDUpdate from the ProVal Ap
 ## Output
 
 - The log file can be found at: `workingdir/System/DellCMDUpdate-log.txt`
-
 
 

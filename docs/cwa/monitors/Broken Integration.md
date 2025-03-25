@@ -1,5 +1,6 @@
 ---
 id: 'a3e17618-1629-4eca-ae93-e70dd47e3496'
+slug: /a3e17618-1629-4eca-ae93-e70dd47e3496
 title: 'Broken Integration'
 title_meta: 'Broken Integration'
 keywords: ['connectwise', 'integration', 'ticket', 'monitor', 'autotask']
@@ -22,6 +23,5 @@ The "△ Custom - Email RAWSQL Monitor set results to ProVal" alert template sho
 ## Target
 
 Global - This should be run without explicitly defined targets.
-
 
 

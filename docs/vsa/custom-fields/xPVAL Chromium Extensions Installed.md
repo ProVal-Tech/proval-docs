@@ -1,5 +1,6 @@
 ---
 id: 'a53c455b-5dc1-4719-ab77-8df0982a73a8'
+slug: /a53c455b-5dc1-4719-ab77-8df0982a73a8
 title: 'xPVAL Chromium Extensions Installed'
 title_meta: 'xPVAL Chromium Extensions Installed'
 keywords: ['chromium', 'extensions', 'audit', 'endpoint', 'installed']
@@ -23,6 +24,5 @@ This document lists all Chromium extensions installed on the endpoint.
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Machine                                 | Lists all Chromium extensions installed on the endpoint |
-
 
 

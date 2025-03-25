@@ -1,5 +1,6 @@
 ---
 id: '822e9dc0-d455-4706-8482-175b85dbd491'
+slug: /822e9dc0-d455-4706-8482-175b85dbd491
 title: 'Huntress Deploy_Result'
 title_meta: 'Huntress Deploy_Result'
 keywords: ['huntress', 'install', 'task', 'custom', 'field', 'failure']
@@ -24,6 +25,5 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](<../tasks/Huntress Agent (INSTA
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
-
 
 

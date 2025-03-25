@@ -1,5 +1,6 @@
 ---
 id: 'd49af856-de88-46fc-963a-8c7bc0e129ff'
+slug: /d49af856-de88-46fc-963a-8c7bc0e129ff
 title: 'Windows - Windows 10 Versions With Patching Details'
 title_meta: 'Windows - Windows 10 Versions With Patching Details'
 keywords: ['windows', 'machines', 'versions', 'patching', 'information']
@@ -35,6 +36,5 @@ None
 | Reboot Pending   | Indicates if a reboot is pending                         |
 | Last Contact     | Last time the machine checked into Automate              |
 | Uptime          | Time in seconds since the machine has restarted the kernel |
-
 
 

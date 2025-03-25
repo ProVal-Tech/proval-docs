@@ -1,5 +1,6 @@
 ---
 id: 'f9d7bc4e-9cee-4bd6-a471-7910c3068e3d'
+slug: /f9d7bc4e-9cee-4bd6-a471-7910c3068e3d
 title: 'Windows 10/11 Build Upgrades EOL Based [Ticketing]'
 title_meta: 'Windows 10/11 Build Upgrades EOL Based [Ticketing]'
 keywords: ['monitor', 'ticketing', 'windows', 'upgrade', 'failure']

@@ -1,5 +1,6 @@
 ---
 id: 'cdcd950b-9843-4fed-bea8-7a4092c7eadc'
+slug: /cdcd950b-9843-4fed-bea8-7a4092c7eadc
 title: 'Huntress Agent (Reinstall)'
 title_meta: 'Huntress Agent (Reinstall)'
 keywords: ['huntress', 'agent', 'reinstall', 'script', 'powershell']
@@ -243,6 +244,5 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script log
-
 
 

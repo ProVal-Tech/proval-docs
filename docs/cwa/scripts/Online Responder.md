@@ -1,5 +1,6 @@
 ---
 id: '06701525-5649-4693-97dd-915a0f59635a'
+slug: /06701525-5649-4693-97dd-915a0f59635a
 title: 'Online Responder'
 title_meta: 'Online Responder'
 keywords: ['servers', 'online', 'responder', 'feature', 'detection']
@@ -18,7 +19,6 @@ This document will detect the servers with the Online Responder Feature installe
 | Detection String                                                                                                                                             | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
 | `%\{@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Online-Cert' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows        |
-
 
 
 

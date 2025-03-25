@@ -1,5 +1,6 @@
 ---
 id: '3405233d-ead9-4997-b685-c4a90432df3c'
+slug: /3405233d-ead9-4997-b685-c4a90432df3c
 title: 'Lenovo LSUpdate - Wrapper'
 title_meta: 'Lenovo LSUpdate - Wrapper'
 keywords: ['bios', 'lenovo', 'updates', 'firmware', 'driver']
@@ -63,6 +64,5 @@ PowerShell Version 5+
 ## Output
 
 - Script logs
-
 
 

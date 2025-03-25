@@ -1,5 +1,6 @@
 ---
 id: '43bf32a9-8e30-4344-b321-e478ba5b85d8'
+slug: /43bf32a9-8e30-4344-b321-e478ba5b85d8
 title: 'Microsoft Office - Update Status'
 title_meta: 'Microsoft Office - Update Status'
 keywords: ['click', 'run', 'microsoft', 'office', 'update', 'status']
@@ -36,6 +37,5 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
-
 
 

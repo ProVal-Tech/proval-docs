@@ -1,5 +1,6 @@
 ---
 id: '39e9d048-14cc-4614-b47b-c74e0dd18440'
+slug: /39e9d048-14cc-4614-b47b-c74e0dd18440
 title: 'Microsoft - Hybrid AD Joined'
 title_meta: 'Microsoft - Hybrid AD Joined'
 keywords: ['hybrid', 'ad', 'joined', 'machines', 'detection']
@@ -18,6 +19,5 @@ This role detects Hybrid AD Joined Machines.
 | Detection String                                                                                                                                                                              | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell.exe -nologo -noprofile -command \"$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : YES*')]\"}%` | Equals     | True   | Windows        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '74015094-9d3e-49e8-9add-06dfe9c42b5f'
+slug: /74015094-9d3e-49e8-9add-06dfe9c42b5f
 title: 'CW Control Hosted Access Agent Install'
 title_meta: 'CW Control Hosted Access Agent Install'
 keywords: ['install', 'cw', 'control', 'agent', 'edf', 'client', 'msi']
@@ -46,4 +47,3 @@ You can get this string by pressing the ![button](../../../static/img/CW-Control
 ## Output
 
 **Script Log**
-

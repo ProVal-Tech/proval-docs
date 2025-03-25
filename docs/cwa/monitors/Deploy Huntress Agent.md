@@ -1,5 +1,6 @@
 ---
 id: '8888ddb9-ea31-48cb-a88e-56ff970b0e6c'
+slug: /8888ddb9-ea31-48cb-a88e-56ff970b0e6c
 title: 'Deploy Huntress Agent'
 title_meta: 'Deploy Huntress Agent'
 keywords: ['monitor', 'huntress', 'agent', 'deployment', 'windows', 'macintosh']
@@ -42,6 +43,5 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Deploy Huntress Agent`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '8eb03817-eae4-4ac4-b1c6-d7a629d32ecf'
+slug: /8eb03817-eae4-4ac4-b1c6-d7a629d32ecf
 title: 'EPM - Disk - Disk Space Monitoring Process - Client Specific'
 title_meta: 'EPM - Disk - Disk Space Monitoring Process - Client Specific'
 keywords: ['disk', 'cleanup', 'threshold', 'ticket', 'monitor']
@@ -59,6 +60,5 @@ The following steps are performed:
 ## Output
 
 The script logs all messages to the script log.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4f7c1abe-2d4b-4ad3-81a7-48e3111015ac'
+slug: /4f7c1abe-2d4b-4ad3-81a7-48e3111015ac
 title: "ProVal's Denied Patches"
 title_meta: "ProVal's Denied Patches"
 keywords: ['dataview', 'patches', 'itglue', 'denied', 'policy']
@@ -25,6 +26,5 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | KBID   | KBID of the Denied Patch.        |
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch.  |
-
 
 

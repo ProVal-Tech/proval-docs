@@ -1,5 +1,6 @@
 ---
 id: '281f0b52-80f0-4a8c-842d-e6ebc747884a'
+slug: /281f0b52-80f0-4a8c-842d-e6ebc747884a
 title: 'FileFolder - Get'
 title_meta: 'FileFolder - Get'
 keywords: ['search', 'files', 'folders', 'regex', 'path']
@@ -50,6 +51,5 @@ The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Se
 
 - Script Log
 - `@SearchResult@` holds the results.
-
 
 

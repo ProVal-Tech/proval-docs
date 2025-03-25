@@ -1,5 +1,6 @@
 ---
 id: '7a224177-45ff-4f2e-a8fe-a734a642a539'
+slug: /7a224177-45ff-4f2e-a8fe-a734a642a539
 title: 'plugin_proval_cdi_data'
 title_meta: 'plugin_proval_cdi_data'
 keywords: ['disk', 'critical', 'info', 'data', 'monitoring']
@@ -59,7 +60,6 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Dis
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the date of the last check                 |
-
 
 
 

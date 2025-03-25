@@ -1,5 +1,6 @@
 ---
 id: 'e54f4273-60a6-4790-bb8e-8c0a3d2033d5'
+slug: /e54f4273-60a6-4790-bb8e-8c0a3d2033d5
 title: 'OneDrive Sync Status Issue'
 title_meta: 'OneDrive Sync Status Issue'
 keywords: ['onedrive', 'monitor', 'alert', 'sync', 'issue']
@@ -43,6 +44,5 @@ Global
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
-
 
 

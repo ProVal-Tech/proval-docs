@@ -1,5 +1,6 @@
 ---
 id: '47ae12f3-3426-4a5d-b204-07eda11b9eff'
+slug: /47ae12f3-3426-4a5d-b204-07eda11b9eff
 title: 'Crystal Disk Info Report'
 title_meta: 'Crystal Disk Info Report'
 keywords: ['disk', 'info', 'report', 'crystal', 'epm', 'data']
@@ -61,7 +62,6 @@ Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Crystal-Disk-Info-Report/image_1.png)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a8ce29e2-502c-4bb8-a959-c7eb59e38808'
+slug: /a8ce29e2-502c-4bb8-a959-c7eb59e38808
 title: 'Winget Update All (Task Delete)'
 title_meta: 'Winget Update All (Task Delete)'
 keywords: ['winget', 'task', 'windows', 'deletion', 'group']
@@ -101,6 +102,5 @@ This document identifies Windows 10 and 11 computers with the presence of Winget
     **Condition:** `OS` `Contains any of` `Microsoft Windows 10 and 11`
 
 12. Click the `Save` button
-
 
 

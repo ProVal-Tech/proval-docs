@@ -1,5 +1,6 @@
 ---
 id: '23777e5f-2cdd-414c-9938-2293223df3ac'
+slug: /23777e5f-2cdd-414c-9938-2293223df3ac
 title: 'plugin_proval_ad_bitlocker_keyprotectors'
 title_meta: 'plugin_proval_ad_bitlocker_keyprotectors'
 keywords: ['bitlocker', 'active', 'directory', 'key', 'protectors', 'backup', 'audit']
@@ -34,6 +35,5 @@ Stores information about BitLocker key protectors backed up to Active Directory.
 | ParentDistinguishedName | TEXT     | The full DN of the parent of the key protector object in AD (generally a computer object).           |
 | ParentSID               | VARCHAR  | The SID of the parent of the key protector object in AD (generally a computer object).               |
 | Timestamp               | DATETIME | The date and time that the audit was last run.                                                       |
-
 
 

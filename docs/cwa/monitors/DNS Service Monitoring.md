@@ -1,5 +1,6 @@
 ---
 id: '88f2c503-bd4b-4bb5-83d0-72f5fb6a0137'
+slug: /88f2c503-bd4b-4bb5-83d0-72f5fb6a0137
 title: 'DNS Service Monitoring'
 title_meta: 'DNS Service Monitoring'
 keywords: ['dns', 'monitor', 'service', 'windows', 'ticketing']

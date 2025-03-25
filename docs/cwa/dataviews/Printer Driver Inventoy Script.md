@@ -1,5 +1,6 @@
 ---
 id: '899b54a9-001d-4d76-8735-fb436c2fc9c1'
+slug: /899b54a9-001d-4d76-8735-fb436c2fc9c1
 title: 'Printer Driver Inventoy Script'
 title_meta: 'Printer Driver Inventoy Script'
 keywords: ['printer', 'driver', 'inventory', 'dataview', 'script']
@@ -36,7 +37,6 @@ The Dataview displays the installed [Printer Driver](https://www.technipages.com
 | Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](<../scripts/Get - Printer Driver Inventory DV.md>) |
 | Last Contact          | Last Contact with RMM                                |
 | Days Since Last Contact| Days Since Last Contact with RMM                     |
-
 
 
 

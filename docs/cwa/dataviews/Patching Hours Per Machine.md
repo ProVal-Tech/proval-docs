@@ -1,5 +1,6 @@
 ---
 id: '53052ccf-a9de-4036-b000-3b0ad267233e'
+slug: /53052ccf-a9de-4036-b000-3b0ad267233e
 title: 'Patching Hours Per Machine'
 title_meta: 'Patching Hours Per Machine'
 keywords: ['patching', 'jobs', 'hours', 'report', 'machine']
@@ -25,6 +26,5 @@ This document provides a dataview representing the number of patching jobs and t
 | Number of Patch Jobs Last 30 Days       | Number of patch jobs per machine in the last 30 days |
 | Sum of Patching Hours Last 30 Days      | Sum of patching hours per machine in the last 30 days |
 | Total Patch Duration                     | Total patch duration per machine in the last 30 days |
-
 
 

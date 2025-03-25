@@ -1,5 +1,6 @@
 ---
 id: '0d3e8cd2-8055-42bb-8559-098e60a9db42'
+slug: /0d3e8cd2-8055-42bb-8559-098e60a9db42
 title: 'Network Probes'
 title_meta: 'Network Probes'
 keywords: ['network', 'probe', 'scan', 'deployment', 'subnet']
@@ -54,6 +55,5 @@ Information from the following tabs of a Network Probe settings page is displaye
 | Updated By                      | Last user to make changes to the probe.                                                        |
 | Creation Date                   | Date of creation.                                                                                |
 | Last Update Date                | Last update date for the network probe.                                                         |
-
 
 

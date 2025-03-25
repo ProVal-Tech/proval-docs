@@ -1,5 +1,6 @@
 ---
 id: 'ef03b1ec-11f8-438e-a21e-b4a2bdcd4c78'
+slug: /ef03b1ec-11f8-438e-a21e-b4a2bdcd4c78
 title: 'Windows Server Backup Failure Detection'
 title_meta: 'Windows Server Backup Failure Detection'
 keywords: ['backup', 'monitor', 'windows', 'server', 'ticket']

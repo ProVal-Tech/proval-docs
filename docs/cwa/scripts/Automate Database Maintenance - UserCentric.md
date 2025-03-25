@@ -1,5 +1,6 @@
 ---
 id: '983c0f82-09ce-4570-b7dc-55dfc78678fc'
+slug: /983c0f82-09ce-4570-b7dc-55dfc78678fc
 title: 'Automate Database Maintenance - UserCentric'
 title_meta: 'Automate Database Maintenance - UserCentric'
 keywords: ['script', 'cleanup', 'database', 'contacts', 'maintenance']
@@ -35,6 +36,5 @@ This script will add the following section to the log variable:
 ![Output Section](../../../static/img/Automate-Database-Maintenance---UserCentric/image_1.png)
 
 Or data if applicable.
-
 
 

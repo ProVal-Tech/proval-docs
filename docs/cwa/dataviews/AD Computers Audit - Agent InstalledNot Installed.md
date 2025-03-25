@@ -1,5 +1,6 @@
 ---
 id: '64736396-2e06-407f-b83d-2618df0cdd13'
+slug: /64736396-2e06-407f-b83d-2618df0cdd13
 title: 'AD Computers Audit - Agent InstalledNot Installed'
 title_meta: 'AD Computers Audit - Agent InstalledNot Installed'
 keywords: ['active-directory', 'automate', 'machines', 'agent', 'details']
@@ -28,6 +29,5 @@ This dataview displays all AD machines from the AD plugin and provides details a
 | When Changed                       | When agent was last changed in AD plugin            |
 | When Created                       | When agent was created in AD                        |
 | Last Logon                         | Last logon detail of agent in AD                    |
-
 
 

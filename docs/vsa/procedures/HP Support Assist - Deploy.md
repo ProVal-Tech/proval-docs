@@ -1,5 +1,6 @@
 ---
 id: 'bc4737bd-eeb2-4211-b33b-a40c5e416d73'
+slug: /bc4737bd-eeb2-4211-b33b-a40c5e416d73
 title: 'HP Support Assist - Deploy'
 title_meta: 'HP Support Assist - Deploy'
 keywords: ['hp', 'support', 'assist', 'deployment', 'software']
@@ -49,6 +50,5 @@ The procedure requires the shared file "HPSupportAssist.ps1" to run.
 ## Output
 
 Agent Procedure Log
-
 
 

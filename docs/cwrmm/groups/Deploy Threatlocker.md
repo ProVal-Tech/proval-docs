@@ -1,5 +1,6 @@
 ---
 id: '8645a522-a9e3-4755-a498-32c2904e51c6'
+slug: /8645a522-a9e3-4755-a498-32c2904e51c6
 title: 'Deploy Threatlocker'
 title_meta: 'Deploy Threatlocker'
 keywords: ['threatlocker', 'deployment', 'machines', 'group', 'criteria']
@@ -60,7 +61,6 @@ Once the above criteria are set, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Threatlocker/image_4.png)
 
 ![Image](../../../static/img/Deploy-Threatlocker/image_5.png)
-
 
 
 

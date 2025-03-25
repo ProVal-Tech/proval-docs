@@ -1,5 +1,6 @@
 ---
 id: 'c6bc7c56-5ff9-4dad-9743-37076f18864f'
+slug: /c6bc7c56-5ff9-4dad-9743-37076f18864f
 title: 'Scheduled Task Create'
 title_meta: 'Scheduled Task Create'
 keywords: ['scheduledtask', 'endpoint', 'task', 'automation', 'cmd']
@@ -72,6 +73,5 @@ Be sure to enter your actions and arguments exactly as you would when writing a 
 
 1. Set the action to **cmd.exe**
 2. Set the arguments to **/c start notepad.exe**
-
 
 

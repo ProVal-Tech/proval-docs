@@ -1,5 +1,6 @@
 ---
 id: '2d98b419-3d5d-4278-a4ce-f2cacba569c5'
+slug: /2d98b419-3d5d-4278-a4ce-f2cacba569c5
 title: 'Enable AD Recycle Bin - Failure'
 title_meta: 'Enable AD Recycle Bin - Failure'
 keywords: ['monitor', 'ad', 'recycle', 'bin', 'tickets', 'alerts']
@@ -50,7 +51,6 @@ This monitor will create tickets if the [Task - Enable AD Recycle Bin](<../tasks
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/Enable-AD-Recycle-Bin---Failure/image_8.png)  
-
 
 
 

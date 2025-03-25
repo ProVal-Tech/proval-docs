@@ -1,5 +1,6 @@
 ---
 id: '8701c002-7541-4e59-bf39-3aa2ad8d1bd5'
+slug: /8701c002-7541-4e59-bf39-3aa2ad8d1bd5
 title: 'pvl_webp_vulnerable_apps'
 title_meta: 'pvl_webp_vulnerable_apps'
 keywords: ['custom', 'table', 'webp', 'vulnerability', 'report', 'data', 'endpoint']
@@ -34,7 +35,6 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | vulnerable_cve_2023_4863     | varchar(32) | Vulnerable CVE 2023-4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | vulnerable_cve_2023_5217     | varchar(32) | Vulnerable CVE 2023-5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | datetime                     | datetime    | Data collection time from the endpoint                                                          |
-
 
 
 

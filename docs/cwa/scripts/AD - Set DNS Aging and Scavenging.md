@@ -1,5 +1,6 @@
 ---
 id: '90969a29-db33-4332-babb-c2f5be128a3e'
+slug: /90969a29-db33-4332-babb-c2f5be128a3e
 title: 'AD - Set DNS Aging and Scavenging'
 title_meta: 'AD - Set DNS Aging and Scavenging'
 keywords: ['dns', 'scavenging', 'windows', 'server', 'cmdlets', 'management']
@@ -47,6 +48,5 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on the computer
-
 
 

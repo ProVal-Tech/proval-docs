@@ -1,5 +1,6 @@
 ---
 id: '27e27b0e-f21e-4bb0-84e2-518eac8662b1'
+slug: /27e27b0e-f21e-4bb0-84e2-518eac8662b1
 title: 'New Document'
 title_meta: 'New Document'
 keywords: ['vsa', 'agents', 'offline', 'removal', 'api']
@@ -46,6 +47,5 @@ The output location for log, result, and error files is as follows:
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
 
 

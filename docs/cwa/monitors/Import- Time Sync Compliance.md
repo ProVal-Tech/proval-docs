@@ -1,5 +1,6 @@
 ---
 id: 'd0b9c0fa-fe52-412b-a4b9-dee96f9ff58b'
+slug: /d0b9c0fa-fe52-412b-a4b9-dee96f9ff58b
 title: 'Import- Time Sync Compliance'
 title_meta: 'Import- Time Sync Compliance'
 keywords: ['ticket', 'creation', 'monitor', 'query', 'alert', 'template']

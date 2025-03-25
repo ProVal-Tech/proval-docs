@@ -1,5 +1,6 @@
 ---
 id: 'f1bf538d-dcfb-404f-83af-d01aee765067'
+slug: /f1bf538d-dcfb-404f-83af-d01aee765067
 title: 'xPVAL Feature Upgrade Status SUCCESS'
 title_meta: 'xPVAL Feature Upgrade Status SUCCESS'
 keywords: ['endpoints', 'upgrade', 'windows', 'feature', 'status', 'success']
@@ -20,6 +21,5 @@ Below is a list of all filters applied to this view:
 | Filter Name                                                                                      | Advanced Filter? | Filter Value |
 |--------------------------------------------------------------------------------------------------|------------------|--------------|
 | [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | "Success"    |
-
 
 

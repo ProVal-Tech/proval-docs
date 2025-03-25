@@ -1,5 +1,6 @@
 ---
 id: 'bdd9f759-2636-4a76-ae7e-8cae7a4e874b'
+slug: /bdd9f759-2636-4a76-ae7e-8cae7a4e874b
 title: 'Lockdown Chromium Browsers Credit Card Autofill'
 title_meta: 'Lockdown Chromium Browsers Credit Card Autofill'
 keywords: ['lockdown', 'browsers', 'credit', 'card', 'autofill', 'chromium', 'chrome', 'edge', 'brave']

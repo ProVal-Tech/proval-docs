@@ -1,5 +1,6 @@
 ---
 id: '7cf32e9b-c86b-4a97-ba5a-f97139cddf0e'
+slug: /7cf32e9b-c86b-4a97-ba5a-f97139cddf0e
 title: 'Patching Metrics Overview - Computer Filter'
 title_meta: 'Patching Metrics Overview - Computer Filter'
 keywords: ['patching', 'windows', 'statistics', 'approval', 'metrics']
@@ -55,6 +56,5 @@ The approval age is divided into five categories:
 - computerpatchpolicies cpp   
 - InstallSoftwarePolicies isp   
 - rebootpolicies rp
-
 
 

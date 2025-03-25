@@ -1,5 +1,6 @@
 ---
 id: 'b29e07cd-596c-427e-82b5-50d271cea679'
+slug: /b29e07cd-596c-427e-82b5-50d271cea679
 title: 'ScreenConnect Uninstall'
 title_meta: 'ScreenConnect Uninstall'
 keywords: ['uninstall', 'screenconnect', 'endpoint', 'wmic', 'agent']
@@ -50,6 +51,5 @@ Remove-ScreenConnect-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 

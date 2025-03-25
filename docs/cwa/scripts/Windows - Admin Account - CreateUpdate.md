@@ -1,5 +1,6 @@
 ---
 id: 'a3038ecc-f851-4327-b1ca-a4ca485f6f9c'
+slug: /a3038ecc-f851-4327-b1ca-a4ca485f6f9c
 title: 'Windows - Admin Account - CreateUpdate'
 title_meta: 'Windows - Admin Account - CreateUpdate'
 keywords: ['admin', 'user', 'domain', 'password', 'credentials']
@@ -163,5 +164,4 @@ Attempted credentials are saved as <Title> at the passwords tab of the client in
 ```
 Account Creation/Update Output: <Output of the PowerShell Script>
 ```
-
 

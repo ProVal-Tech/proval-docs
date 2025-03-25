@@ -1,5 +1,6 @@
 ---
 id: '7c6678ef-12c5-4e21-a2d2-9fd84a21191e'
+slug: /7c6678ef-12c5-4e21-a2d2-9fd84a21191e
 title: 'Windows License Status'
 title_meta: 'Windows License Status'
 keywords: ['windows', 'license', 'status', 'monitor', 'ciminstance', 'alert', 'ticketing']

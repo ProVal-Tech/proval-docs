@@ -1,5 +1,6 @@
 ---
 id: '5d2957f6-7178-4590-ad98-1508821348d6'
+slug: /5d2957f6-7178-4590-ad98-1508821348d6
 title: 'Initialize-VsaAgentFields'
 title_meta: 'Initialize-VsaAgentFields'
 keywords: ['vsa', 'customfields', 'client', 'environment']
@@ -32,6 +33,5 @@ Uses the VSAAPI module to interface with the client environment, setting new Cus
 ## Output
 - Initialize-VsaAgentFields-Log.txt
 - Initialize-VsaAgentFields-error.txt
-
 
 

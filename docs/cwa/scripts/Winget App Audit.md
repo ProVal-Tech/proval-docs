@@ -1,5 +1,6 @@
 ---
 id: 'd5ea54f9-07c9-443b-acc2-411401cfbe91'
+slug: /d5ea54f9-07c9-443b-acc2-411401cfbe91
 title: 'Winget App Audit'
 title_meta: 'Winget App Audit'
 keywords: ['audit', 'winget', 'applications', 'report', 'script']
@@ -57,6 +58,5 @@ The script conducts an audit of the computer for applications supported by Winge
 - Script log
 - Custom table
 - Dataview
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '6b829669-89a3-4d68-aec7-c7fba9ad8450'
+slug: /6b829669-89a3-4d68-aec7-c7fba9ad8450
 title: 'VHDx Detail - HyperV'
 title_meta: 'VHDx Detail - HyperV'
 keywords: ['hyper-v', 'vhdx', 'audit', 'disk', 'information']
@@ -42,6 +43,5 @@ This script runs only on Hyper-V servers. It collects all VHDX information and s
 - Script log
 - Script state
 - Data view
-
 
 

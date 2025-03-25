@@ -1,5 +1,6 @@
 ---
 id: '81c88531-4918-4d74-ac84-efbc2c3cfe51'
+slug: /81c88531-4918-4d74-ac84-efbc2c3cfe51
 title: 'Import- DHCP Scope(s) < 5 IP Addresses Available'
 title_meta: 'Import- DHCP Scope(s) < 5 IP Addresses Available'
 keywords: ['remote', 'monitor', 'dhcp', 'groupid', 'alert', 'configuration']

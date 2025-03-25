@@ -1,5 +1,6 @@
 ---
 id: 'c3f8637a-bc38-4709-a626-d59d9111d621'
+slug: /c3f8637a-bc38-4709-a626-d59d9111d621
 title: 'Get-ADBitlockerStore'
 title_meta: 'Get-ADBitlockerStore'
 keywords: ['bitlocker', 'ad', 'backup', 'recovery']
@@ -39,5 +40,4 @@ VolumeGUID              : bf089cd1-fd99-4b77-b4f6-f8f2673aa2ae
 ParentDistinguishedName : <redacted>
 ParentSID               : S-1-5-21-3684404077-2748133095-2161390432-2690
 ```
-
 

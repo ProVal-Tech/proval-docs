@@ -1,5 +1,6 @@
 ---
 id: '42fcda71-e3ed-40e2-92e0-c0eb80e42e2d'
+slug: /42fcda71-e3ed-40e2-92e0-c0eb80e42e2d
 title: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
 title_meta: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
 keywords: ['onedrive', 'group', 'policies', 'windows', 'folders', 'redirect', 'configuration']
@@ -27,7 +28,6 @@ This document implements options for group policies to redirect Windows known fo
 
 2. Export the following content from ProVal's VSA and follow the necessary implementation steps within each document:  
    - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../vsa/procedures/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
-
 
 
 

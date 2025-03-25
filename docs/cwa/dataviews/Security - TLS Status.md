@@ -1,5 +1,6 @@
 ---
 id: 'aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f'
+slug: /aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f
 title: 'Security - TLS Status'
 title_meta: 'Security - TLS Status'
 keywords: ['tls', 'audit', 'endpoint', 'version', 'security']
@@ -40,6 +41,5 @@ This dataview is an easy way to audit which versions of TLS are enabled on the e
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Security---TLS-Status/image_1.png)
-
 
 

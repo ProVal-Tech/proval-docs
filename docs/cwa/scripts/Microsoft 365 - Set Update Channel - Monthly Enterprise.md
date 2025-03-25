@@ -1,5 +1,6 @@
 ---
 id: 'a7234fd9-615c-4862-ae0a-b93fd84f7af6'
+slug: /a7234fd9-615c-4862-ae0a-b93fd84f7af6
 title: 'Microsoft 365 - Set Update Channel - Monthly Enterprise'
 title_meta: 'Microsoft 365 - Set Update Channel - Monthly Enterprise'
 keywords: ['microsoft', '365', 'update', 'registry', 'automation']
@@ -35,7 +36,6 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Output
 
 - Script log
-
 
 
 

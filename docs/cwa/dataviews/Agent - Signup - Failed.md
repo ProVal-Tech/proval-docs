@@ -1,5 +1,6 @@
 ---
 id: '3b85c439-e624-4363-aa06-8dee3d15eeb4'
+slug: /3b85c439-e624-4363-aa06-8dee3d15eeb4
 title: 'Agent - Signup - Failed'
 title_meta: 'Agent - Signup - Failed'
 keywords: ['audit', 'computers', 'signup', 'failed', 'installation']
@@ -27,6 +28,5 @@ An audit of the DISTINCT computers that failed to sign up.
 | Remote Address   | Remote/router address of the computer.                                           |
 | Latest Attempt  | The last time the installation attempt was made.                                  |
 | Error Message   | The last error message received from the attempted installation.                  |
-
 
 

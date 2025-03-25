@@ -1,5 +1,6 @@
 ---
 id: 'f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da'
+slug: /f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da
 title: 'Pnp Devices Inventory'
 title_meta: 'Pnp Devices Inventory'
 keywords: ['pnp', 'devices', 'automate', 'information', 'script', 'dataview']
@@ -32,6 +33,5 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script.
-
 
 

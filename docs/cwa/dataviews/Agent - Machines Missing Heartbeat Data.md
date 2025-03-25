@@ -1,5 +1,6 @@
 ---
 id: '43bfc9e1-0fd7-4afb-b66b-5b17c80abfaa'
+slug: /43bfc9e1-0fd7-4afb-b66b-5b17c80abfaa
 title: 'Agent - Machines Missing Heartbeat Data'
 title_meta: 'Agent - Machines Missing Heartbeat Data'
 keywords: ['agents', 'heartbeat', 'status', 'automate', 'data']
@@ -25,6 +26,5 @@ This Dataview shows all the agents with their heartbeat data and status.
 | Last Heartbeat Time       | Displays the agent's last heartbeat time received in Automate   |
 | Heartbeat Status          | Displays the agent's heartbeat status (Found or Missing)       |
 | Days Since Last Heartbeat  | Displays the count of days since the last heartbeat was received |
-
 
 

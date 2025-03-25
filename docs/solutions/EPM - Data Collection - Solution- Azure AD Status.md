@@ -1,5 +1,6 @@
 ---
 id: 'c852661d-3253-466e-ae17-ee2753885920'
+slug: /c852661d-3253-466e-ae17-ee2753885920
 title: 'EPM - Data Collection - Solution- Azure AD Status'
 title_meta: 'EPM - Data Collection - Solution- Azure AD Status'
 keywords: ['azure', 'ad', 'status', 'machine', 'agent', 'procedure', 'custom', 'field']
@@ -26,7 +27,6 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 - A view needs to be created.
 - A custom field needs to be created.
 - The agent procedure needs to be run once these are created.
-
 
 
 

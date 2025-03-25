@@ -1,5 +1,6 @@
 ---
 id: 'd8a124df-ea81-4194-82fc-a082c7a036d8'
+slug: /d8a124df-ea81-4194-82fc-a082c7a036d8
 title: 'Prompter'
 title_meta: 'Prompter'
 keywords: ['prompter', 'script', 'automate', 'user-input', 'date-time', 'header', 'icon']
@@ -49,6 +50,5 @@ This script is a function script and should not be manually executed. Utilize th
 ## Output
 
 - Script Variable
-
 
 

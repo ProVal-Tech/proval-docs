@@ -1,5 +1,6 @@
 ---
 id: '986e2bee-68f3-456a-afd3-8634c26b877f'
+slug: /986e2bee-68f3-456a-afd3-8634c26b877f
 title: 'Sophos Removal'
 title_meta: 'Sophos Removal'
 keywords: ['sophos', 'endpoint', 'uninstall', 'zap', 'agent']
@@ -74,6 +75,5 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../p
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
-
 
 

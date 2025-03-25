@@ -1,5 +1,6 @@
 ---
 id: 'a13e2f1a-70b3-4957-bf21-c528c1b5932c'
+slug: /a13e2f1a-70b3-4957-bf21-c528c1b5932c
 title: 'Solution - Webroot Deployment and Audit EDF'
 title_meta: 'Solution - Webroot Deployment and Audit EDF'
 keywords: ['webroot', 'keycode', 'deployment', 'auditing', 'monitoring']
@@ -75,7 +76,6 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
    **Note:**
    Please read the complete EDF detailing in the script before implementing the solution: [Install Webroot SecureAnywhere [EDF]](<../scripts/Install Webroot SecureAnyWhere Autofix, EDF.md>). Additionally, follow the Other Content sections ([Webroot Site KeyCode](<../scripts/Webroot Site KeyCode.md>) and [Webroot GroupCode and GroupName Fetching](<./Webroot GroupCode and GroupName Fetching.md>)) for steps on how to obtain the Site keycode and Group Code from the Webroot Portal.
-
 
 
 

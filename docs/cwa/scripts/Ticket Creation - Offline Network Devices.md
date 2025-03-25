@@ -1,5 +1,6 @@
 ---
 id: '1634ea10-264c-44df-abd1-ff68edc23391'
+slug: /1634ea10-264c-44df-abd1-ff68edc23391
 title: 'Ticket Creation - Offline Network Devices'
 title_meta: 'Ticket Creation - Offline Network Devices'
 keywords: ['ticket', 'offline', 'network', 'device', 'alert']
@@ -80,5 +81,4 @@ To create this ticket to a specific service board in manage, provide the categor
 
 **Example Ticket:**  
 ![Image](../../../static/img/Ticket-Creation---Offline-Network-Devices/image_5.png)
-
 

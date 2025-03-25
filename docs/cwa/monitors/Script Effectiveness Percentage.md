@@ -1,5 +1,6 @@
 ---
 id: '8c184241-699a-4722-9eca-65221ae35c55'
+slug: /8c184241-699a-4722-9eca-65221ae35c55
 title: 'Script Effectiveness Percentage'
 title_meta: 'Script Effectiveness Percentage'
 keywords: ['monitor', 'scripts', 'effectiveness', 'tickets', 'threshold', 'alerting']
@@ -72,6 +73,5 @@ If you would like to generate the ticket for the minimum client ID of another cl
 ## Target
 
 Global
-
 
 

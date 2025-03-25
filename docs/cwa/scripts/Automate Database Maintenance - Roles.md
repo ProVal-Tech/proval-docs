@@ -1,5 +1,6 @@
 ---
 id: '1d5d4aff-3a10-4bef-8e29-5e3234a1076b'
+slug: /1d5d4aff-3a10-4bef-8e29-5e3234a1076b
 title: 'Automate Database Maintenance - Roles'
 title_meta: 'Automate Database Maintenance - Roles'
 keywords: ['cleanup', 'database', 'maintenance', 'automate', 'script']
@@ -32,6 +33,5 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/Automate-Database-Maintenance---Roles/image_1.png)
-
 
 

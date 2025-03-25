@@ -1,5 +1,6 @@
 ---
 id: '113349eb-9de0-4b42-b773-cf873f87f2f0'
+slug: /113349eb-9de0-4b42-b773-cf873f87f2f0
 title: 'Audit WMI Patch History'
 title_meta: 'Audit WMI Patch History'
 keywords: ['audit', 'dotnet', 'patch', 'history', 'windows']
@@ -32,6 +33,5 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
-
 
 

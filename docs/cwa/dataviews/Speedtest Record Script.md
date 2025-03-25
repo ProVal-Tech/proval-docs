@@ -1,5 +1,6 @@
 ---
 id: 'a15c39f0-c19e-413a-8d21-7ea44529be05'
+slug: /a15c39f0-c19e-413a-8d21-7ea44529be05
 title: 'Speedtest Record Script'
 title_meta: 'Speedtest Record Script'
 keywords: ['speed', 'test', 'dataview', 'latency', 'upload', 'download', 'packet', 'loss', 'jitter', 'performance']
@@ -39,7 +40,6 @@ The information in this Dataview is populated by a script titled "SpeedTest - Oo
 | Upload Speed     | Displays the upload speed                                         |
 | Execute Date     | Displays the date the script was executed against the machine     |
 | Share URL        | Displays the Share URL                                            |
-
 
 
 

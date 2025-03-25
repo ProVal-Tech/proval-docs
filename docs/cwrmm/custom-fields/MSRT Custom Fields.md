@@ -1,5 +1,6 @@
 ---
 id: 'c6a36d73-01c8-4ef9-ace2-e9d6a4bc2363'
+slug: /c6a36d73-01c8-4ef9-ace2-e9d6a4bc2363
 title: 'MSRT custom fields'
 title_meta: 'MSRT custom fields'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']

@@ -1,5 +1,6 @@
 ---
 id: '85f52c7c-84bc-488f-a4de-d3122fec1f42'
+slug: /85f52c7c-84bc-488f-a4de-d3122fec1f42
 title: 'plugin_proval_ad_gpolinks'
 title_meta: 'plugin_proval_ad_gpolinks'
 keywords: ['gpo', 'links', 'audit', 'information', 'proval']
@@ -28,6 +29,5 @@ This document displays detailed information about the GPO links per GPO from the
 | Path         | VARCHAR | The OU path of the link.                                          |
 | Enforced      | VARCHAR | True or False depending on whether the link is being enforced.   |
 | LinkEnabled   | VARCHAR | True or False depending on whether the link is enabled.          |
-
 
 

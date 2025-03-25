@@ -1,5 +1,6 @@
 ---
 id: '18a8b802-bc6a-42a8-859b-89c93fed4257'
+slug: /18a8b802-bc6a-42a8-859b-89c93fed4257
 title: 'Malicious Software Removal Tool Scanner'
 title_meta: 'Malicious Software Removal Tool Scanner'
 keywords: ['download', 'microsoft', 'malicious', 'software', 'removal', 'tool', 'scanner', 'log', 'email', 'autofix']
@@ -61,6 +62,5 @@ After the `SetEnvironment` is set, please refer to the sample execution.
 
 - Script log
 - Local file on the computer: `C:/WINDOWS/debug/mrt.log`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b89a175e-0664-4001-b1d2-2827d74b0c71'
+slug: /b89a175e-0664-4001-b1d2-2827d74b0c71
 title: 'Uninstall SentinelOne'
 title_meta: 'Uninstall SentinelOne'
 keywords: ['sentinelone', 'uninstall', 'windows', 'antitamper', 'agent']
@@ -61,6 +62,5 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
 
 

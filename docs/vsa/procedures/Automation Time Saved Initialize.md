@@ -1,5 +1,6 @@
 ---
 id: '813b9d8d-8c30-4595-a700-740fd65b3942'
+slug: /813b9d8d-8c30-4595-a700-740fd65b3942
 title: 'Automation Time Saved Initialize'
 title_meta: 'Automation Time Saved Initialize'
 keywords: ['customfields', 'automation', 'database', 'implementation', 'tracking']
@@ -31,7 +32,6 @@ The process involves setting both CFs to 0 for ease of implementation, as empty 
 ## Output
 
 The expected output is the updated Custom Fields.
-
 
 
 

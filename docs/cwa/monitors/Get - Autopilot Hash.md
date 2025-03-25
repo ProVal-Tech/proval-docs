@@ -1,5 +1,6 @@
 ---
 id: '3add591b-445e-440d-a7b3-cc85b2ea0674'
+slug: /3add591b-445e-440d-a7b3-cc85b2ea0674
 title: 'Get - Autopilot Hash'
 title_meta: 'Get - Autopilot Hash'
 keywords: ['autopilot', 'hash', 'monitor', 'windows', 'edf', 'client', 'computer']
@@ -36,6 +37,5 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
-
 
 

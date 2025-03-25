@@ -1,5 +1,6 @@
 ---
 id: 'fa9b4535-5711-4cde-ac58-cb9759dbd65a'
+slug: /fa9b4535-5711-4cde-ac58-cb9759dbd65a
 title: 'Get Windows Update Report DV'
 title_meta: 'Get Windows Update Report DV'
 keywords: ['monitor', 'windows', 'update', 'report', 'patching']
@@ -23,7 +24,6 @@ The purpose of this monitor set is to execute the [CWM - Automate - Script - Win
 ## Target
 
 Limited to the Windows machines with Managed Patch Policy via SQL query.
-
 
 
 

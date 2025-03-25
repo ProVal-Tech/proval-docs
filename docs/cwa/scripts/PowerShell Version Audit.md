@@ -1,5 +1,6 @@
 ---
 id: 'da7e6b68-3ac3-4d15-9969-ca843a187d2d'
+slug: /da7e6b68-3ac3-4d15-9969-ca843a187d2d
 title: 'PowerShell Version Audit'
 title_meta: 'PowerShell Version Audit'
 keywords: ['powershell', 'agent', 'version', 'script', 'query']
@@ -42,7 +43,6 @@ This script runs a PowerShell query that is supported by all Windows operating s
 - Script log
 - Script state
 - Dataview
-
 
 
 

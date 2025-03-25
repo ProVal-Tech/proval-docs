@@ -1,5 +1,6 @@
 ---
 id: 'a835c448-fd00-4807-a3b2-8f1066e1a682'
+slug: /a835c448-fd00-4807-a3b2-8f1066e1a682
 title: 'Last Cumulative Update  X Days ago'
 title_meta: 'Last Cumulative Update  X Days ago'
 keywords: ['computers', 'cumulative', 'updates', 'monitor', 'ticket', 'alert', 'dependencies']
@@ -52,7 +53,6 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q1)** What happens if the machine hasn't logged in for several days, or if the interval of the [Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>) is different from the `lastruntime` check in the table "[Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)"?
 
 **Ans)** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.
-
 
 
 

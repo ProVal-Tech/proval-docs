@@ -1,5 +1,6 @@
 ---
 id: 'c3d9eea2-bc5f-40c8-9933-d16163b29f06'
+slug: /c3d9eea2-bc5f-40c8-9933-d16163b29f06
 title: 'Manual Troubleshooting - ScreenConnect Orange Icon'
 title_meta: 'Manual Troubleshooting - ScreenConnect Orange Icon'
 keywords: ['screenconnect', 'troubleshoot', 'client', 'orange', 'issue']
@@ -118,6 +119,5 @@ This should turn the ScreenConnect icon green, thereby resolving the problem.
 ## Note
 
 If the above-mentioned steps fail to resolve the problem, then you will have to access the computer manually and ensure that it is able to reach the ScreenConnect Web Portal.
-
 
 

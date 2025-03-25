@@ -1,5 +1,6 @@
 ---
 id: '3e12ac9e-d141-4011-8ae3-bd0cebe53fc6'
+slug: /3e12ac9e-d141-4011-8ae3-bd0cebe53fc6
 title: 'Deny Patches in Default Policy From Centralized ITGLue KBIDs'
 title_meta: 'Deny Patches in Default Policy From Centralized ITGLue KBIDs'
 keywords: ['kbids', 'patches', 'deny', 'automation', 'approval', 'hotfix']
@@ -42,6 +43,5 @@ The script will gather the KBIDs from the [New Patch Deny Process](<../../unsort
 ## Output
 
 The output can be checked from the Approval section of the patch manager.
-
 
 

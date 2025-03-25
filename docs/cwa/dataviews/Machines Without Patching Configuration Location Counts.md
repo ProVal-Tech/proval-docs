@@ -1,5 +1,6 @@
 ---
 id: '56f0bbc5-b7ae-4d23-a711-40489a9a5603'
+slug: /56f0bbc5-b7ae-4d23-a711-40489a9a5603
 title: 'Machines Without Patching Configuration Location Counts'
 title_meta: 'Machines Without Patching Configuration Location Counts'
 keywords: ['machines', 'location', 'update', 'policy', 'count']
@@ -28,6 +29,5 @@ This dataview displays the count of machines per location where the Microsoft up
 | DoNotPatchCount              | Number of Agents per Location with `Applied Patching Agent Templates` as 'DO NOT PATCH'         |
 | DisabledPatchingCount         | Number of Agents per Location where location EDF `Enable Patching Servers` for servers and `Enable Patching Workstations` for workstations is not enabled |
 | Attention                     | Calculates the difference between `NoPatchPolicyCount` and `NotOnboardedCount` and highlights those rows where the difference is greater than 0. |
-
 
 

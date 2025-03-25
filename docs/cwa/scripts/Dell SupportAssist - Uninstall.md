@@ -1,5 +1,6 @@
 ---
 id: 'c8dbc87a-084e-479d-a790-4b29041b0ba4'
+slug: /c8dbc87a-084e-479d-a790-4b29041b0ba4
 title: 'Dell SupportAssist - Uninstall'
 title_meta: 'Dell SupportAssist - Uninstall'
 keywords: ['dell', 'supportassist', 'uninstall', 'windows', 'software']
@@ -26,6 +27,5 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
-
 
 

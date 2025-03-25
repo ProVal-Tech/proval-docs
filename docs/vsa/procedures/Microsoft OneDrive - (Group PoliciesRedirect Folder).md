@@ -1,5 +1,6 @@
 ---
 id: '2b6977c1-5cd2-477b-9230-150568009b82'
+slug: /2b6977c1-5cd2-477b-9230-150568009b82
 title: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
 title_meta: 'Microsoft OneDrive - (Group PoliciesRedirect Folder)'
 keywords: ['onedrive', 'group', 'policies', 'redirect', 'folder', 'windows']
@@ -70,7 +71,6 @@ A status of Success is expected.
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_6.png)  
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_7.png)  
-
 
 
 

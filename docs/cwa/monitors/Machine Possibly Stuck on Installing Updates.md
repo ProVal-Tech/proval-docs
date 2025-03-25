@@ -1,5 +1,6 @@
 ---
 id: 'e48eba9f-b458-467d-ae55-25467ef2e792'
+slug: /e48eba9f-b458-467d-ae55-25467ef2e792
 title: 'Machine Possibly Stuck on Installing Updates'
 title_meta: 'Machine Possibly Stuck on Installing Updates'
 keywords: ['monitor', 'patching', 'windows', 'detection', 'internal']
@@ -16,6 +17,5 @@ This internal monitor will detect machines that likely have stalled in their pat
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
-
 
 

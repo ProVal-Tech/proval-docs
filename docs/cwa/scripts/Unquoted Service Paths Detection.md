@@ -1,5 +1,6 @@
 ---
 id: '2dd77709-9172-4cbe-94cc-b5f664f2f2ce'
+slug: /2dd77709-9172-4cbe-94cc-b5f664f2f2ce
 title: 'Unquoted Service Paths Detection'
 title_meta: 'Unquoted Service Paths Detection'
 keywords: ['unquoted', 'service', 'paths', 'detection', 'fix']
@@ -30,7 +31,6 @@ The script will fetch the new paths to be set for each unquoted service on the m
 ## Output
 
 Script log
-
 
 
 

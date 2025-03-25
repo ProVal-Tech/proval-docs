@@ -1,5 +1,6 @@
 ---
 id: '9f035f14-972d-487a-a2b4-5927cd67978e'
+slug: /9f035f14-972d-487a-a2b4-5927cd67978e
 title: 'Agent Monitor Creation - Disk Servers Variable Threshold in GB'
 title_meta: 'Agent Monitor Creation - Disk Servers Variable Threshold in GB'
 keywords: ['remote', 'drive', 'monitor', 'disk', 'server']
@@ -52,7 +53,6 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
-
 
 
 

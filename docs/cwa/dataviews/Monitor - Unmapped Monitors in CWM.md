@@ -1,5 +1,6 @@
 ---
 id: 'b1c9c471-676c-4bd6-a2a0-c1417a5b4169'
+slug: /b1c9c471-676c-4bd6-a2a0-c1417a5b4169
 title: 'Monitor - Unmapped Monitors in CWM'
 title_meta: 'Monitor - Unmapped Monitors in CWM'
 keywords: ['monitors', 'tickets', 'connectwise', 'report', 'serviceboard']
@@ -31,6 +32,5 @@ The ConnectWise Manage Plugin must be installed and configured with imported ser
 | Sub Type        | The sub-type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 | Item            | The item the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 | Work Type       | The work type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
-
 
 

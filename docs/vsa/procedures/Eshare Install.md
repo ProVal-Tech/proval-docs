@@ -1,5 +1,6 @@
 ---
 id: '64f26a73-5577-4bfd-b0f0-e8f90ed2904b'
+slug: /64f26a73-5577-4bfd-b0f0-e8f90ed2904b
 title: 'Eshare Install'
 title_meta: 'Eshare Install'
 keywords: ['eshare', 'install', 'silent', 'software', 'installation']
@@ -35,4 +36,3 @@ The **eShare Install** script silently installs the eShare software on the machi
 - Procedure log
 ## Attachments
 [Procedure_Eshare_install.xml](<../../../static/attachments/itg/9818310/Procedure_Eshare_install.xml>)
-

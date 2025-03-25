@@ -1,5 +1,6 @@
 ---
 id: 'd68f1d82-f773-47f2-8c80-994614244646'
+slug: /d68f1d82-f773-47f2-8c80-994614244646
 title: 'Onboarding Audit'
 title_meta: 'Onboarding Audit'
 keywords: ['vsa', 'audit', 'reports', 'kaseya', 'automation']
@@ -50,7 +51,6 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAu
 
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xlsx
-
 
 
 

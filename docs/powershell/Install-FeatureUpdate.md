@@ -1,5 +1,6 @@
 ---
 id: 'b46b5ae2-47fe-43b7-ab91-f6901645b2fd'
+slug: /b46b5ae2-47fe-43b7-ab91-f6901645b2fd
 title: 'Install-FeatureUpdate'
 title_meta: 'Install-FeatureUpdate'
 keywords: ['install', 'featureupdate', 'upgrade', 'windows']
@@ -85,6 +86,5 @@ SetupOperationInfo : {@{OperationName=Start suspended services; OperationStartTi
 ### Tables
 - Install-FeatureUpdate_logs
 - Install-FeatureUpdate_setupdiag
-
 
 

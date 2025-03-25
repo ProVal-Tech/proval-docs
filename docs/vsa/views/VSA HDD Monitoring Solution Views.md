@@ -1,5 +1,6 @@
 ---
 id: '958933a9-35b8-4c70-b5fa-8c858f481b39'
+slug: /958933a9-35b8-4c70-b5fa-8c858f481b39
 title: 'VSA HDD Monitoring Solution Views'
 title_meta: 'VSA HDD Monitoring Solution Views'
 keywords: ['drive', 'monitoring', 'filter', 'views', 'endpoints', 'servers']
@@ -23,6 +24,5 @@ The table below lists all filters applied to this view:
 | [xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>) | Y                | *C:* Each view contains its independent drive letter in its advanced filter.                    |
 | xPVAL Monitoring Managed                                   | Y                | *Managed*                                                                                       |
 | xPVAL Exclude from Monitoring                              | Y                | NOT *1* AND NOT *yes*                                                                           |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '8edbbe65-d1fd-4b22-b80d-da2dc12a01ba'
+slug: /8edbbe65-d1fd-4b22-b80d-da2dc12a01ba
 title: 'VLC Uninstall'
 title_meta: 'VLC Uninstall'
 keywords: ['vlc', 'uninstall', 'silent', 'procedure', 'agent']
@@ -28,7 +29,6 @@ This procedure silently removes VLC.
 ## Output
 
 AP Log
-
 
 
 

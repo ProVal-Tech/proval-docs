@@ -1,5 +1,6 @@
 ---
 id: 'd4d89a22-e41b-4ad6-b0ba-ba78f4968adb'
+slug: /d4d89a22-e41b-4ad6-b0ba-ba78f4968adb
 title: 'AV - Disabled'
 title_meta: 'AV - Disabled'
 keywords: ['monitor', 'antivirus', 'disabled', 'autofix', 'service', 'status']
@@ -24,6 +25,5 @@ None.
 All machines with Antivirus installed and/or the managed service plans. 
 
 This monitor will work for all operating systems, but the available Autofix will only run on Windows devices!
-
 
 

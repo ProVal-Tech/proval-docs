@@ -1,5 +1,6 @@
 ---
 id: 'cc16fc4b-276f-4416-a994-e917421add17'
+slug: /cc16fc4b-276f-4416-a994-e917421add17
 title: 'Update-VsaPatchingSchedule'
 title_meta: 'Update-VsaPatchingSchedule'
 keywords: ['vsa', 'patching', 'configuration', 'scheduling', 'api']
@@ -46,6 +47,5 @@ Pass the parameters to VSAAPI for use in the API call.
 
 # Output
 The output will be saved to `./Update-VsaPatchingSchedule-log.txt`.
-
 
 

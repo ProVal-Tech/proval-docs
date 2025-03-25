@@ -1,5 +1,6 @@
 ---
 id: '1c950fdd-99f2-4943-9617-a1d13a4b87ec'
+slug: /1c950fdd-99f2-4943-9617-a1d13a4b87ec
 title: 'Unknown User Profiles Detection'
 title_meta: 'Unknown User Profiles Detection'
 keywords: ['user','profile','unknown','inferred']

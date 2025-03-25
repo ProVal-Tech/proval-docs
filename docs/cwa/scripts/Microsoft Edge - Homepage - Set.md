@@ -1,5 +1,6 @@
 ---
 id: 'a1ee2dd1-6f31-4da2-bb85-0c52f7a6566e'
+slug: /a1ee2dd1-6f31-4da2-bb85-0c52f7a6566e
 title: 'Microsoft Edge - Homepage - Set'
 title_meta: 'Microsoft Edge - Homepage - Set'
 keywords: ['automate', 'chromium', 'homepage', 'edge', 'configuration']
@@ -32,6 +33,5 @@ This document describes the Automate implementation of the agnostic script [SWM 
 ## Output
 
 - Script Logs
-
 
 

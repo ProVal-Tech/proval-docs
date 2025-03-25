@@ -1,5 +1,6 @@
 ---
 id: '4def3c77-d37b-456a-b3c7-cec341a797b5'
+slug: /4def3c77-d37b-456a-b3c7-cec341a797b5
 title: 'Install New Microsoft Teams'
 title_meta: 'Install New Microsoft Teams'
 keywords: ['teams', 'installation', 'windows', 'mac', 'uninstallation', 'software']
@@ -20,7 +21,6 @@ This document provides a script for installing the New Microsoft Teams on both W
 ## Output
 
 - Script Log
-
 
 
 

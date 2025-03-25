@@ -1,5 +1,6 @@
 ---
 id: '0cbc05b7-cba3-4dd8-a8e9-9a369237362b'
+slug: /0cbc05b7-cba3-4dd8-a8e9-9a369237362b
 title: 'Internet Explorer Advanced Security Status'
 title_meta: 'Internet Explorer Advanced Security Status'
 keywords: ['tls', 'ssl', 'internet', 'explorer', 'audit', 'settings', 'security']
@@ -29,6 +30,5 @@ This data view reflects the audit script, showing which versions of TLS and SSL 
 | Contact                     | Computer's assigned Contact (if any)             |
 | Contact Email               | Computer's assigned Contact Email (if any)       |
 | IE Advanced Security Status  | Lists which versions of TLS and SSL are enabled   |
-
 
 

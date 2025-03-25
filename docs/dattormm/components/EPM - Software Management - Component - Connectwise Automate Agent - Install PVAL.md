@@ -1,5 +1,6 @@
 ---
 id: 'bb088b81-eed8-45bb-861b-2349d3e798fa'
+slug: /bb088b81-eed8-45bb-861b-2349d3e798fa
 title: 'EPM - Software Management - Component - Connectwise Automate Agent - Install PVAL'
 title_meta: 'EPM - Software Management - Component - Connectwise Automate Agent - Install PVAL'
 keywords: ['connectwise', 'automate', 'agent', 'installation', 'variables', 'bulk', 'import']
@@ -92,6 +93,5 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
-
 
 

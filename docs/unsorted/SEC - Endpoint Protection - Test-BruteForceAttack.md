@@ -1,5 +1,6 @@
 ---
 id: 'bcf49d08-bfdc-49d1-9c92-52ce8d878be1'
+slug: /bcf49d08-bfdc-49d1-9c92-52ce8d878be1
 title: 'SEC - Endpoint Protection - Test-BruteForceAttack'
 title_meta: 'SEC - Endpoint Protection - Test-BruteForceAttack'
 keywords: ['brute', 'force', 'attack', 'endpoint', 'security', 'log', 'failures', 'threshold', 'events']
@@ -63,4 +64,3 @@ This command queries the event log from the last time it ran to the current time
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10368007/Install-AnyConnect.ps1>)
 [README.md](<../../static/attachments/itg/10368007/README.md>)
-

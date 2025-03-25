@@ -1,5 +1,6 @@
 ---
 id: '127ea64b-5538-4fd4-92fb-143ff6ce1216'
+slug: /127ea64b-5538-4fd4-92fb-143ff6ce1216
 title: 'Patching - Machines Missing 5+ Patches'
 title_meta: 'Patching - Machines Missing 5+ Patches'
 keywords: ['monitor', 'patches', 'cw', 'automate', 'windows']
@@ -28,6 +29,5 @@ To force update this table, please follow this guide: [CW Automate - Force Updat
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines that patch via CW Automate.
-
 
 

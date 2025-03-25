@@ -1,5 +1,6 @@
 ---
 id: '2be5ccc9-2700-4f5d-9b77-30567de4cfdf'
+slug: /2be5ccc9-2700-4f5d-9b77-30567de4cfdf
 title: 'Implement- Dell Hardware Monitoring'
 title_meta: 'Implement- Dell Hardware Monitoring'
 keywords: ['dell', 'monitoring', 'alert', 'sql', 'setup', 'configuration']

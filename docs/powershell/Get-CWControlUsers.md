@@ -1,5 +1,6 @@
 ---
 id: '29210a5a-f967-488d-992d-e7e8b59c0a15'
+slug: /29210a5a-f967-488d-992d-e7e8b59c0a15
 title: 'Get-CWControlUsers'
 title_meta: 'Get-CWControlUsers'
 keywords: ['connectwise', 'control', 'users', 'properties']
@@ -49,6 +50,5 @@ This command returns all users and their respective properties for the ConnectWi
 - System Object
 - `.\Get-CWControlUsers-Log.txt`
 - `.\Get-CWControlUsers.txt`
-
 
 

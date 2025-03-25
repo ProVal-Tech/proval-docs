@@ -1,5 +1,6 @@
 ---
 id: 'baddd511-d11a-4d0e-be88-cd8c942b5e39'
+slug: /baddd511-d11a-4d0e-be88-cd8c942b5e39
 title: 'Update-AdobeCC'
 title_meta: 'Update-AdobeCC'
 keywords: ['adobe', 'creativecloud', 'update', 'software']
@@ -37,6 +38,5 @@ Update-AdobeCC.ps1 -Mode Update
 - .\Update-AdobeCC-log.txt
 - .\Update-AdobeCC-data.txt
 - .\Update-AdobeCC-error.txt
-
 
 

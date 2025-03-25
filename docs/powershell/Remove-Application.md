@@ -1,5 +1,6 @@
 ---
 id: '8230693f-cf73-479d-8279-d2ff54c4296e'
+slug: /8230693f-cf73-479d-8279-d2ff54c4296e
 title: 'Remove-Application'
 title_meta: 'Remove-Application'
 keywords: ['remove', 'application', 'uninstall', 'cleanup']
@@ -94,6 +95,5 @@ Will attempt to remove Google Chrome using the provided custom switch.
 
 - `.\Remove-Application-log.txt`
 - `.\Remove-Application-error.txt`
-
 
 

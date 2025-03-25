@@ -1,5 +1,6 @@
 ---
 id: '6c30a69a-90c5-4e2d-ba5f-f2a663adbd81'
+slug: /6c30a69a-90c5-4e2d-ba5f-f2a663adbd81
 title: 'Dynamic PowerShell Role'
 title_meta: 'Dynamic PowerShell Role'
 keywords: ['powershell', 'serial', 'version', 'key', 'detection']
@@ -20,4 +21,3 @@ This document describes how the PowerShell version is incorporated into its seri
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference = 'SilentlyContinue'; Write-Host //"$(Get-host).Version.Major).$((Get-Host).Version.Minor).$((Get-Host).version.Build).$((Get-Host).Version.Revision)//" -NoNewLine"@%}` | Exist      | PowerShell Version in Serial Key | Windows        |
 ## Attachments
 [Dynamic_Powershell.sql](<../../../static/attachments/itg/10926872/Dynamic_Powershell.sql>)
-

@@ -1,5 +1,6 @@
 ---
 id: 'b43fd352-5874-472a-9fd9-02c8aee38515'
+slug: /b43fd352-5874-472a-9fd9-02c8aee38515
 title: 'Get-PatchConfig'
 title_meta: 'Get-PatchConfig'
 keywords: ['windows', 'update', 'patch', 'configuration']
@@ -286,6 +287,5 @@ $PatchConfig = [PSCustomObject]@{
 ## Output
 - Get-PatchConfig-log.txt
 - Get-PatchConfig-Error.txt
-
 
 

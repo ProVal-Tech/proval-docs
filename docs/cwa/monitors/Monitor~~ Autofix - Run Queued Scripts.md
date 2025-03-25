@@ -1,5 +1,6 @@
 ---
 id: '41b393a9-cb59-4418-8536-9fe911cb4c9d'
+slug: /41b393a9-cb59-4418-8536-9fe911cb4c9d
 title: 'Monitor~~ Autofix - Run Queued Scripts'
 title_meta: 'Monitor~~ Autofix - Run Queued Scripts'
 keywords: ['monitor', 'queued', 'scripts', 'computers', 'alert']

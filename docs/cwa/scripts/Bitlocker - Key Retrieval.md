@@ -1,5 +1,6 @@
 ---
 id: 'bc22877d-262a-47f7-8d2f-7e69f07c92e5'
+slug: /bc22877d-262a-47f7-8d2f-7e69f07c92e5
 title: 'Bitlocker - Key Retrieval'
 title_meta: 'Bitlocker - Key Retrieval'
 keywords: ['audit', 'recovery', 'keys', 'encrypted', 'drives', 'database']
@@ -44,6 +45,5 @@ This script audits the recovery keys for each encrypted drive on an agent and ad
 - Script log
 - Role
 - Dataview
-
 
 

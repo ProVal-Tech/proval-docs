@@ -1,5 +1,6 @@
 ---
 id: 'ea27a6a7-8b06-4120-b827-745121614aa8'
+slug: /ea27a6a7-8b06-4120-b827-745121614aa8
 title: 'Microsoft Edge - Set Homepage'
 title_meta: 'Microsoft Edge - Set Homepage'
 keywords: ['registry', 'homepage', 'microsoft', 'edge', 'chromium', 'policy', 'enforcement']
@@ -46,6 +47,5 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on the computer
-
 
 

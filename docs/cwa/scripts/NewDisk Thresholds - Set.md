@@ -1,5 +1,6 @@
 ---
 id: '9abc689e-609d-48dc-9f90-802c69ddef9b'
+slug: /9abc689e-609d-48dc-9f90-802c69ddef9b
 title: 'NewDisk Thresholds - Set'
 title_meta: 'NewDisk Thresholds - Set'
 keywords: ['disk', 'thresholds', 'global', 'computer', 'properties']
@@ -41,6 +42,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

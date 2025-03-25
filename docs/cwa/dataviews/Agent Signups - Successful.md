@@ -1,5 +1,6 @@
 ---
 id: 'fba9122c-502f-474b-9238-d256e103e010'
+slug: /fba9122c-502f-474b-9238-d256e103e010
 title: 'Agent Signups - Successful'
 title_meta: 'Agent Signups - Successful'
 keywords: ['audit', 'network', 'probe', 'computers', 'signup']
@@ -32,6 +33,5 @@ An audit of the DISTINCT computers that successfully signed up using the network
 | Computer ID          | Computer ID of the computer.                                    |
 | Location ID          | Location ID of the computer.                                    |
 | Client ID            | Client ID of the computer.                                      |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '63bb684c-e259-46a2-8630-95847705fe6a'
+slug: /63bb684c-e259-46a2-8630-95847705fe6a
 title: 'Set-VMGuestState'
 title_meta: 'Set-VMGuestState'
 keywords: ['vm', 'guest', 'state', 'hyper-v']
@@ -52,6 +53,5 @@ Location of output for log, result, and error files.
 .\Set-VMGuestState-log.txt
 .\Set-VMGuestState-error.txt
 ```
-
 
 

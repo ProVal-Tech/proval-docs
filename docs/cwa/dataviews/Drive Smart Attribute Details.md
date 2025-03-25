@@ -1,5 +1,6 @@
 ---
 id: '301488c5-1c0a-4c73-a295-09e0556513d5'
+slug: /301488c5-1c0a-4c73-a295-09e0556513d5
 title: 'Drive Smart Attribute Details'
 title_meta: 'Drive Smart Attribute Details'
 keywords: ['drive', 'attributes', 'report', 'client', 'machine', 'location', 'os', 'value', 'threshold']
@@ -32,6 +33,5 @@ This document presents information about drive attributes such as Power Cycle Co
 | Threshold             | Threshold set for the Attribute               |
 | Last User Name        | Last user name on the machine                 |
 | Last Contact          | Last contact for the computer with the Automate. |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '765d906e-33c3-4615-9cd6-9c01a9eeaebb'
+slug: /765d906e-33c3-4615-9cd6-9c01a9eeaebb
 title: 'User Profile - Remove'
 title_meta: 'User Profile - Remove'
 keywords: ['user', 'profile', 'delete', 'account', 'local']

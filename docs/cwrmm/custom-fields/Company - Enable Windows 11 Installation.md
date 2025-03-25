@@ -1,5 +1,6 @@
 ---
 id: '2567ed9c-49da-40f2-b566-9d6e8d2f87b8'
+slug: /2567ed9c-49da-40f2-b566-9d6e8d2f87b8
 title: 'Company - Enable Windows 11 Installation'
 title_meta: 'Company - Enable Windows 11 Installation'
 keywords: ['windows', 'installation', 'custom', 'field', 'company']
@@ -23,6 +24,5 @@ Mark this custom field to enable Windows 11 installation for the company's Windo
 
 ![Image 1](../../../static/img/Company---Enable-Windows-11-Installation/image_1.png)  
 ![Image 2](../../../static/img/Company---Enable-Windows-11-Installation/image_2.png)
-
 
 

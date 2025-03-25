@@ -1,5 +1,6 @@
 ---
 id: 'c4cb8f27-762f-4ebc-9840-f5cb7712a05d'
+slug: /c4cb8f27-762f-4ebc-9840-f5cb7712a05d
 title: 'O365 - Audit Users to Custom Table DV'
 title_meta: 'O365 - Audit Users to Custom Table DV'
 keywords: ['o365', 'audit', 'users', 'reporting', 'dashboard']
@@ -51,6 +52,5 @@ Windows OS and PowerShell 5.0 are required.
 ## Output
 
 Script Log
-
 
 

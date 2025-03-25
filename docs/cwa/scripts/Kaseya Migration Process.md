@@ -1,5 +1,6 @@
 ---
 id: 'de4bfced-9152-46ca-ae22-853f9aa756f8'
+slug: /de4bfced-9152-46ca-ae22-853f9aa756f8
 title: 'Kaseya Migration Process'
 title_meta: 'Kaseya Migration Process'
 keywords: ['migrate', 'agent', 'kaseya', 'automate', 'migration']
@@ -40,6 +41,5 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 The script logs the output status (fail/success) in Automate.
-
 
 

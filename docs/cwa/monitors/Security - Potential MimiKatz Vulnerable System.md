@@ -1,5 +1,6 @@
 ---
 id: '1f0cc77f-4d58-4486-a99a-0c276e40b117'
+slug: /1f0cc77f-4d58-4486-a99a-0c276e40b117
 title: 'Security - Potential MimiKatz Vulnerable System'
 title_meta: 'Security - Potential MimiKatz Vulnerable System'
 keywords: ['mimikatz', 'threat', 'monitor', 'agent', 'detection']

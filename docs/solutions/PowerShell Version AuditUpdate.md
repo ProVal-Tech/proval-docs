@@ -1,5 +1,6 @@
 ---
 id: '84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9'
+slug: /84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9
 title: 'PowerShell Version AuditUpdate'
 title_meta: 'PowerShell Version AuditUpdate'
 keywords: ['powershell', 'upgrade', 'rmm', 'windows', 'custom', 'monitor', 'tasks']
@@ -43,7 +44,6 @@ This solution uses custom tasks, device groups, and a custom monitor to manage a
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
-
 
 
 

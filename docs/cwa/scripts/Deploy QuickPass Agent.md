@@ -1,5 +1,6 @@
 ---
 id: 'ab838395-dc94-4ceb-986e-99d00b005198'
+slug: /ab838395-dc94-4ceb-986e-99d00b005198
 title: 'Deploy QuickPass Agent'
 title_meta: 'Deploy QuickPass Agent'
 keywords: ['quickpass', 'agent', 'installation', 'windows', 'deployment']
@@ -91,6 +92,5 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '144d7d52-8764-4aa4-bcce-205c756f6203'
+slug: /144d7d52-8764-4aa4-bcce-205c756f6203
 title: 'Remote Event Log Monitor - Create'
 title_meta: 'Remote Event Log Monitor - Create'
 keywords: ['event', 'monitor', 'log', 'connectwise', 'automate', 'alert', 'configuration', 'remote', 'script']
@@ -131,6 +132,5 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
-
 
 

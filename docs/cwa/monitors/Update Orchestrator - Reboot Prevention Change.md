@@ -1,5 +1,6 @@
 ---
 id: 'b0d63a21-0540-43a1-9269-079d3bfaa48d'
+slug: /b0d63a21-0540-43a1-9269-079d3bfaa48d
 title: 'Update Orchestrator - Reboot Prevention [Change]'
 title_meta: 'Update Orchestrator - Reboot Prevention [Change]'
 keywords: ['monitor', 'windows', 'update', 'orchestrator', 'service']

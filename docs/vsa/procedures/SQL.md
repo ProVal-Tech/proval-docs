@@ -1,5 +1,6 @@
 ---
 id: 'd0694f70-303e-4518-b47c-a796ca73d905'
+slug: /d0694f70-303e-4518-b47c-a796ca73d905
 title: 'SQL'
 title_meta: 'SQL'
 keywords: ['patch', 'sql', 'kb', 'database', 'vsa']
@@ -58,6 +59,5 @@ This document allows you to clear a patch from the Failed Patches list with the 
 
 3. **Run this Query on KSubscribers on SQL Server.**  
    ![](../../../static/img/SQL/image_3.png)
-
 
 

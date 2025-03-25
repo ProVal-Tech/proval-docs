@@ -1,5 +1,6 @@
 ---
 id: '38fbe617-1c50-443b-b69b-07eae7135652'
+slug: /38fbe617-1c50-443b-b69b-07eae7135652
 title: 'plugin_proval_speedtest_audit'
 title_meta: 'plugin_proval_speedtest_audit'
 keywords: ['speedtest', 'audit', 'bandwidth', 'latency', 'jitter', 'packet loss', 'VPN', 'ISP']
@@ -48,7 +49,6 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
-
 
 
 

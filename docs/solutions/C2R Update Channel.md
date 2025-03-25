@@ -1,5 +1,6 @@
 ---
 id: '545750d5-274a-46d9-bf8a-8ad677293458'
+slug: /545750d5-274a-46d9-bf8a-8ad677293458
 title: 'C2R Update Channel'
 title_meta: 'C2R Update Channel'
 keywords: ['microsoft', 'click-to-run', 'update', 'channel', 'configuration', 'windows', 'audit', 'automation']
@@ -103,7 +104,6 @@ Confirm with a consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](<../cwa/monitors/Execute Script - Update Channel - Set - Monthly Enterprise.md>)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
-
 
 
 

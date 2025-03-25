@@ -1,5 +1,6 @@
 ---
 id: 'ae8ce64f-816a-4e84-8052-f8e131dde389'
+slug: /ae8ce64f-816a-4e84-8052-f8e131dde389
 title: 'plugin_proval_auto_approval_status'
 title_meta: 'plugin_proval_auto_approval_status'
 keywords: ['approval', 'audit', 'policy', 'dataview', 'mysql']

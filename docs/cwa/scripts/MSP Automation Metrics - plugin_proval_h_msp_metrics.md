@@ -1,5 +1,6 @@
 ---
 id: '408bb0fc-cfe0-4ea3-8e77-af13c41e054e'
+slug: /408bb0fc-cfe0-4ea3-8e77-af13c41e054e
 title: 'MSP Automation Metrics - plugin_proval_h_msp_metrics'
 title_meta: 'MSP Automation Metrics - plugin_proval_h_msp_metrics'
 keywords: ['custom', 'metrics', 'data', 'table', 'script', 'agents', 'servers', 'workstations', 'tickets', 'automation']
@@ -48,6 +49,5 @@ Please schedule the script to run on the second Monday of each month. This is a 
 
 - Custom Table
 - Dataview
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b6bf288a-a1f5-4d76-9973-1ecfca5521a5'
+slug: /b6bf288a-a1f5-4d76-9973-1ecfca5521a5
 title: 'Security - Stale Bitlocker Data'
 title_meta: 'Security - Stale Bitlocker Data'
 keywords: ['bitlocker', 'audit', 'monitor', 'encryption', 'script']

@@ -1,5 +1,6 @@
 ---
 id: 'c65fa38e-ae23-409b-85b5-c232c3b1fbfa'
+slug: /c65fa38e-ae23-409b-85b5-c232c3b1fbfa
 title: 'Winget - Update All'
 title_meta: 'Winget - Update All'
 keywords: ['winget', 'packages', 'update', 'script', 'endpoint']
@@ -34,6 +35,5 @@ Please reference the agnostic content for the process.
 ## Output
 
 - Script log
-
 
 

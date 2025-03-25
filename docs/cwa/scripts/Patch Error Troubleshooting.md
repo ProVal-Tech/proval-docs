@@ -1,5 +1,6 @@
 ---
 id: '02e56369-332e-4f57-a325-2df8585b0c2c'
+slug: /02e56369-332e-4f57-a325-2df8585b0c2c
 title: 'Patch Error Troubleshooting'
 title_meta: 'Patch Error Troubleshooting'
 keywords: ['windows', 'update', 'reset', 'services', 'network', 'backup']
@@ -49,6 +50,5 @@ Reboot the computer.
 ## Output
 
 **Script logs**
-
 
 

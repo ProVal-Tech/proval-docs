@@ -1,5 +1,6 @@
 ---
 id: '870dc2c7-95ea-494e-aefd-05609925545b'
+slug: /870dc2c7-95ea-494e-aefd-05609925545b
 title: 'Automate Server Monitoring - Service - Restart Autofix'
 title_meta: 'Automate Server Monitoring - Service - Restart Autofix'
 keywords: ['automate', 'monitoring', 'email', 'notification', 'service']
@@ -73,6 +74,5 @@ Please reference the agnostic content documentation for the Service Restart Proc
 
 - Script Log
 - Email
-
 
 

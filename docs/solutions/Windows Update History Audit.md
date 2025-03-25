@@ -1,5 +1,6 @@
 ---
 id: '8c1f89c7-4858-412a-8845-9b063981f3c5'
+slug: /8c1f89c7-4858-412a-8845-9b063981f3c5
 title: 'Windows Update History Audit'
 title_meta: 'Windows Update History Audit'
 keywords: ['windows', 'update', 'audit', 'history', 'endpoint']
@@ -28,7 +29,6 @@ The purpose of this document is to gather and present data about Windows Updates
 The script [Windows Update History Audit](<../cwa/scripts/Windows Update History Audit.md>) should be scheduled against all compliant Windows endpoints on a weekly basis.
 
 If required, implement the [Patches Not Installing > X Days](<../cwa/monitors/Patches Not Installing  X Days.md>) monitor following the instructions in the documentation.
-
 
 
 

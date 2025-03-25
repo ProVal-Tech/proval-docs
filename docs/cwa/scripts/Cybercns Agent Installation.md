@@ -1,5 +1,6 @@
 ---
 id: '15ecac3c-fe43-4d04-9e6c-82099bfa356b'
+slug: /15ecac3c-fe43-4d04-9e6c-82099bfa356b
 title: 'Cybercns Agent Installation'
 title_meta: 'Cybercns Agent Installation'
 keywords: ['cybercns', 'agent', 'installation', 'client', 'edf']
@@ -53,6 +54,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9'
+slug: /ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9
 title: 'SMB1 Traffic Detection Monitor Creation'
 title_meta: 'SMB1 Traffic Detection Monitor Creation'
 keywords: ['smb1', 'monitor', 'traffic', 'detection', 'remote', 'properties', 'edf', 'alert', 'template', 'category']
@@ -94,6 +95,5 @@ Remote monitors will be set up on computers where the [SMB1 Detection](<../monit
 ## Output
 
 - Remote Monitors
-
 
 

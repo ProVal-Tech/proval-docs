@@ -1,5 +1,6 @@
 ---
 id: '73399399-1acc-444b-bf16-73f6b534a35b'
+slug: /73399399-1acc-444b-bf16-73f6b534a35b
 title: 'Patch Not Set - Count'
 title_meta: 'Patch Not Set - Count'
 keywords: ['patches', 'approval', 'policy', 'client', 'automation', 'sql', 'tickets']
@@ -32,6 +33,5 @@ This script runs a SQL query to check for the count of patches that have not bee
 ## Output
 
 - Script log
-
 
 

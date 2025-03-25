@@ -1,5 +1,6 @@
 ---
 id: '14f60d04-7fd3-4e80-ab47-aaa26bbfec8b'
+slug: /14f60d04-7fd3-4e80-ab47-aaa26bbfec8b
 title: 'IPGeolocation Audit'
 title_meta: 'IPGeolocation Audit'
 keywords: ['device', 'location', 'ip', 'city', 'state', 'country', 'timezone']
@@ -38,6 +39,5 @@ This script scans the device to collect information about its current location. 
 - Script log
 - Dataview
 - Custom table plugin_proval_ipinfo
-
 
 

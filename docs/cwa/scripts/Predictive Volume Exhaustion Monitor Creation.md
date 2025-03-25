@@ -1,5 +1,6 @@
 ---
 id: 'd353ba91-e58f-4afb-b5da-1ac2eaeb2006'
+slug: /d353ba91-e58f-4afb-b5da-1ac2eaeb2006
 title: 'Predictive Volume Exhaustion Monitor Creation'
 title_meta: 'Predictive Volume Exhaustion Monitor Creation'
 keywords: ['volume', 'monitor', 'windows', 'disk', 'space', 'prediction', 'setup']
@@ -123,6 +124,5 @@ It is a client script and is suggested to schedule it to run once per day for be
 ## Output
 
 - Remote Monitors
-
 
 

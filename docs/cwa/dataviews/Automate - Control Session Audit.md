@@ -1,5 +1,6 @@
 ---
 id: '4694ab80-7dd2-4997-89d5-cf535e570705'
+slug: /4694ab80-7dd2-4997-89d5-cf535e570705
 title: 'Automate - Control Session Audit'
 title_meta: 'Automate - Control Session Audit'
 keywords: ['audit', 'sessions', 'control', 'tracking', 'participants']
@@ -26,6 +27,5 @@ This dataview helps you audit control sessions by tracking details such as parti
 | Disconnected Time | Displays the time when the participant disconnected        |
 | Computer ID       | Displays the ID of the connected computer                  |
 | Duration          | Displays the duration of the connection                     |
-
 
 

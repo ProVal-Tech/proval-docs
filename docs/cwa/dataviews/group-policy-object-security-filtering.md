@@ -1,5 +1,6 @@
 ---
 id: '337526eb-1aa7-48a3-beab-ab66d2b7aea8'
+slug: /337526eb-1aa7-48a3-beab-ab66d2b7aea8
 title: 'Group Policy Object Security Filtering'
 title_meta: 'Group Policy Object Security Filtering'
 keywords: ['active-directory', 'gpo', 'security', 'audit', 'policy']
@@ -37,6 +38,5 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime     | The time when the GPO was created                                                                |
 | ModifiedTime    | The last time this GPO was modified                                                             |
 | ReadTime        | The last time this GPO was read.                                                                |
-
 
 

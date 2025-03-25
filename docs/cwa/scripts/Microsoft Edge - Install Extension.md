@@ -1,5 +1,6 @@
 ---
 id: '86453c18-b4e1-44ae-ba29-75c55dca7fb9'
+slug: /86453c18-b4e1-44ae-ba29-75c55dca7fb9
 title: 'Microsoft Edge - Install Extension'
 title_meta: 'Microsoft Edge - Install Extension'
 keywords: ['edge', 'extensions', 'chromium', 'installation', 'registry', 'mdm']
@@ -50,6 +51,5 @@ The script takes a single parameter, which is an array of ExtensionIDs to instal
 ## Output
 
 - Script log
-
 
 

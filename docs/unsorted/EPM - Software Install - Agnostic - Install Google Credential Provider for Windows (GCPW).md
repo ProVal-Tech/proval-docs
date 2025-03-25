@@ -1,5 +1,6 @@
 ---
 id: '98a818ba-3aa3-4ff2-af0f-576dde96c488'
+slug: /98a818ba-3aa3-4ff2-af0f-576dde96c488
 title: 'EPM - Software Install - Agnostic - Install Google Credential Provider for Windows (GCPW)'
 title_meta: 'EPM - Software Install - Agnostic - Install Google Credential Provider for Windows (GCPW)'
 keywords: ['gcpw', 'google', 'credential', 'provider', 'windows', 'installation', 'configuration', 'enrollment', 'token']
@@ -60,6 +61,5 @@ The location of output for log, result, and error files is as follows:
 | ConnectWise RMM                               |                                                |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](<../vsa/procedures/Install Google Credential Provider for Windows (GCPW).md>) |
 | Datto RMM                                     |                                                |
-
 
 

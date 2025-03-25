@@ -1,5 +1,6 @@
 ---
 id: '20b0f192-7315-42d9-a575-9e088c15d79c'
+slug: /20b0f192-7315-42d9-a575-9e088c15d79c
 title: 'CPU Threshold Violation Monitor - Create'
 title_meta: 'CPU Threshold Violation Monitor - Create'
 keywords: ['cpu', 'monitoring', 'windows', 'alerts', 'thresholds', 'performance']
@@ -128,6 +129,5 @@ The script creates remote monitors that trigger an alert when the CPU usage on t
 ## Output
 
 - Remote Monitors
-
 
 

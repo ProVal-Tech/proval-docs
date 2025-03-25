@@ -1,5 +1,6 @@
 ---
 id: '6a427581-70ba-456b-8985-f16d9b051c35'
+slug: /6a427581-70ba-456b-8985-f16d9b051c35
 title: 'AD - Offline Domain Join'
 title_meta: 'AD - Offline Domain Join'
 keywords: ['domain', 'join', 'offline', 'dc', 'network']
@@ -35,6 +36,5 @@ This script joins a machine to a domain while it is not connected to the same ne
 ## Output
 
 - Script log
-
 
 

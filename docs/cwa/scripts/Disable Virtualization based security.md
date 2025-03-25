@@ -1,5 +1,6 @@
 ---
 id: '6b28c2d7-01b5-4d5d-aefa-0df7fa1b5718'
+slug: /6b28c2d7-01b5-4d5d-aefa-0df7fa1b5718
 title: 'Disable Virtualization based security'
 title_meta: 'Disable Virtualization based security'
 keywords: ['registry', 'windows', 'defender', 'credential', 'guard', 'reboot']
@@ -32,6 +33,5 @@ Once the registry is set, it will prompt the machine to reboot.
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'df5d8267-5836-48d8-8971-a5cc8b33722d'
+slug: /df5d8267-5836-48d8-8971-a5cc8b33722d
 title: 'Invoke-RestartService'
 title_meta: 'Invoke-RestartService'
 keywords: ['restart', 'service', 'taskkill', 'errorhandling']
@@ -45,6 +46,5 @@ Location of output for log, result, and error files:
 [System.Object]
 .\Invoke-RestartService-log.txt
 ```
-
 
 

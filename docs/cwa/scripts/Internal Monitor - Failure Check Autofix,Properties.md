@@ -1,5 +1,6 @@
 ---
 id: '7afc7157-5254-46ab-8e4d-ea8b7c735f1b'
+slug: /7afc7157-5254-46ab-8e4d-ea8b7c735f1b
 title: 'Internal Monitor - Failure Check Autofix,Properties'
 title_meta: 'Internal Monitor - Failure Check Autofix,Properties'
 keywords: ['monitor', 'failure', 'ticket', 'autofix', 'system', 'properties', 'check']
@@ -97,6 +98,5 @@ Consider scheduling the new client script to execute every two hours.
 ## Sample Ticket
 
 ![Image](../../../static/img/Internal-Monitor---Failure-Check-Autofix,Properties/image_18.png)
-
 
 

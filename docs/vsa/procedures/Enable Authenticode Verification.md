@@ -1,5 +1,6 @@
 ---
 id: '847585fe-5c51-4479-9562-9524ab687330'
+slug: /847585fe-5c51-4479-9562-9524ab687330
 title: 'Enable Authenticode Verification'
 title_meta: 'Enable Authenticode Verification'
 keywords: ['authenticode', 'verification', 'windows', 'script', 'reboot']
@@ -43,6 +44,5 @@ This script is used to enable the Authenticode Verification on Windows machines.
 ## Output
 
 Agent procedure log.
-
 
 

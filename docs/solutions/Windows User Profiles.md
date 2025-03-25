@@ -1,5 +1,6 @@
 ---
 id: '34794e27-c775-4d58-953b-5f8a61132cae'
+slug: /34794e27-c775-4d58-953b-5f8a61132cae
 title: 'Windows User Profiles'
 title_meta: 'Windows User Profiles'
 keywords: ['windows', 'user', 'profile', 'information', 'gathering', 'monitor']
@@ -74,6 +75,5 @@ Gathers and displays information about Windows user profiles.
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
      - Use the mentioned [Remote Monitor](https://proval.itglue.com/5078775/docs/17975723) to exclude any domain trust relationship issues.
-
 
 

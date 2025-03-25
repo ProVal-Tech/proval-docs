@@ -1,5 +1,6 @@
 ---
 id: '070f3e8b-1365-4347-9fcb-43aad1d09d41'
+slug: /070f3e8b-1365-4347-9fcb-43aad1d09d41
 title: 'Windows Server Backup Audit'
 title_meta: 'Windows Server Backup Audit'
 keywords: ['windows', 'backup', 'report', 'sql', 'audit', 'performance']
@@ -81,6 +82,5 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
-
 
 

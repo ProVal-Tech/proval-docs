@@ -1,5 +1,6 @@
 ---
 id: '55e5e8ed-f8a3-40d3-bc9c-8ca5f0059306'
+slug: /55e5e8ed-f8a3-40d3-bc9c-8ca5f0059306
 title: 'OneDrive Disable'
 title_meta: 'OneDrive Disable'
 keywords: ['onedrive', 'security', 'policy', 'disable', 'windows']
@@ -57,4 +58,3 @@ else{
 Attach the content XML VSA Export to this document.
 ## Attachments
 [Procedure_OneDrive_Disable.xml](<../../../static/attachments/itg/10318510/Procedure_OneDrive_Disable.xml>)
-

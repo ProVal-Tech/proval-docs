@@ -1,5 +1,6 @@
 ---
 id: '49b92505-90cb-4c10-9d25-6ec311341f65'
+slug: /49b92505-90cb-4c10-9d25-6ec311341f65
 title: 'LanSweeper - Install'
 title_meta: 'LanSweeper - Install'
 keywords: ['lansweeper', 'agent', 'installation', 'scanning', 'server']
@@ -41,6 +42,5 @@ Once the values are provided during script execution, the LsAgent will be succes
 ## Output
 
 - Script log
-
 
 

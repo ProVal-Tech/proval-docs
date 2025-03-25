@@ -1,5 +1,6 @@
 ---
 id: '689879cc-5cb1-4d77-9149-288b6fc16231'
+slug: /689879cc-5cb1-4d77-9149-288b6fc16231
 title: 'Admin - Tickets by Monitor'
 title_meta: 'Admin - Tickets by Monitor'
 keywords: ['monitor', 'tickets', 'report', 'dataview']
@@ -25,6 +26,5 @@ None
 | Name                      | Name of the Monitor                                 |
 | Internal                  | 1 = internal monitor; 0 = remote monitor           |
 | TicketCountLast30Days     | Total number of tickets generated in the last 30 days |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '475fcc0b-08a9-4118-9436-1bbc4a0c9f2f'
+slug: /475fcc0b-08a9-4118-9436-1bbc4a0c9f2f
 title: 'Windows Firewall - Disable'
 title_meta: 'Windows Firewall - Disable'
 keywords: ['windows', 'firewall', 'disable', 'security', 'script']
@@ -24,6 +25,5 @@ The script will execute if the Windows Firewall is enabled on the machine. It ru
 ## Output
 
 - Script log
-
 
 

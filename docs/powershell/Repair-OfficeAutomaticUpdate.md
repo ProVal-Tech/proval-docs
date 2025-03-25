@@ -1,5 +1,6 @@
 ---
 id: 'ae9fa5e1-eb5b-45e5-8777-977d50e39c97'
+slug: /ae9fa5e1-eb5b-45e5-8777-977d50e39c97
 title: 'Repair-OfficeAutomaticUpdate'
 title_meta: 'Repair-OfficeAutomaticUpdate'
 keywords: ['repair', 'office365', 'update', 'automatic']
@@ -33,5 +34,4 @@ Performs a check and repair of Office 365.
 ## Output
 - `.\Repair-OfficeAutomaticUpdate-log.txt`
 - `.\Repair-OfficeAutomaticUpdate-error.txt`
-
 

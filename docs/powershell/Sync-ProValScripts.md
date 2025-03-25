@@ -1,5 +1,6 @@
 ---
 id: '8d1c65da-3b2c-4d4e-8d5a-4e3ec665c3d8'
+slug: /8d1c65da-3b2c-4d4e-8d5a-4e3ec665c3d8
 title: 'Sync-ProValScripts'
 title_meta: 'Sync-ProValScripts'
 keywords: ['sync', 'repository', 'scripts', 'git']
@@ -52,6 +53,5 @@ Sets up the environment if required and syncs any new or changed scripts from th
 | `GitHubEmail`     | False     | `'support@provaltech.com'`| String    | The email address to use for the SSH key generation. |
 | `ScriptTypes`     | False     | `('.ps1', '.bat', '.py')` | String[]  | List of extensions that should be synced. |
 | `Force`           | False     |                            | Switch    | Use this switch to force a local diff check between the GitHub repo and the file server repo, even if the origin GitHub repo has no pending changes. |
-
 
 

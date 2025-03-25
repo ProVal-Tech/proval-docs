@@ -1,5 +1,6 @@
 ---
 id: 'c9969bad-d2da-45ec-90fe-d6be82479ebc'
+slug: /c9969bad-d2da-45ec-90fe-d6be82479ebc
 title: 'Threatlocker Deployment'
 title_meta: 'Threatlocker Deployment'
 keywords: ['threatlocker', 'deployment', 'windows', 'mac', 'agent', 'customfield', 'dynamicgroup', 'task']
@@ -51,7 +52,6 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
 
 3. Create and deploy the following task:
    - [CW RMM - Task - Threatlocker Deployment](<../cwrmm/tasks/Threatlocker Deployment.md>)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c53e6fd7-f441-4dc6-ab31-5163d39d7d58'
+slug: /c53e6fd7-f441-4dc6-ab31-5163d39d7d58
 title: 'Automate Database Maintenance - Monitors'
 title_meta: 'Automate Database Maintenance - Monitors'
 keywords: ['cleanup', 'database', 'maintenance', 'agenthistory', 'log']
@@ -32,6 +33,5 @@ This script is a function script called from [CWM - Automate - Script - Automate
 This script will add the following section to the log variable:
 
 ![Log Output](../../../static/img/Automate-Database-Maintenance---Monitors/image_1.png)
-
 
 

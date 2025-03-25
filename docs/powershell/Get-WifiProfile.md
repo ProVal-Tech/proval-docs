@@ -1,5 +1,6 @@
 ---
 id: '478f97f0-d069-4f50-9b93-2c9ca9ec63cd'
+slug: /478f97f0-d069-4f50-9b93-2c9ca9ec63cd
 title: 'Get-WifiProfile'
 title_meta: 'Get-WifiProfile'
 keywords: ['retrieve', 'wifi', 'profile', 'network']
@@ -39,6 +40,5 @@ To retrieve Wi-Fi profiles with passwords in plain text:
 ## Output
 - .\Get-WifiProfiles-log.txt
 - .\Get-WifiProfiles-error.txt
-
 
 

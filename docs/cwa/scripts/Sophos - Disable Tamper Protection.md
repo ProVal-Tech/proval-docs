@@ -1,5 +1,6 @@
 ---
 id: 'f7d7af7b-0b1e-463a-bda5-e9d30901e0b6'
+slug: /f7d7af7b-0b1e-463a-bda5-e9d30901e0b6
 title: 'Sophos - Disable Tamper Protection'
 title_meta: 'Sophos - Disable Tamper Protection'
 keywords: ['sophos', 'tamper', 'protection', 'reboot', 'safe', 'mode', 'registry']
@@ -35,6 +36,5 @@ The script will first verify that the target device has Sophos installed. It wil
 ## Output
 
 Script log messages only.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e84b3dd2-284b-4384-b972-4a02feaa7b37'
+slug: /e84b3dd2-284b-4384-b972-4a02feaa7b37
 title: 'CWA Solution - Malicious Software Removal Tool Scanning & Disabling'
 title_meta: 'CWA Solution - Malicious Software Removal Tool Scanning & Disabling'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
@@ -77,5 +78,4 @@ The solution provides feature to run the scanning using Malicious Software Remov
      ```
      8E7513A15FC33B38337976B85C0E8C5C
      ```
-
 

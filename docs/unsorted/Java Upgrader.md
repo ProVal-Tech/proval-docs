@@ -1,5 +1,6 @@
 ---
 id: '0104499d-5a31-465b-b195-db0331b29859'
+slug: /0104499d-5a31-465b-b195-db0331b29859
 title: 'Java Upgrader'
 title_meta: 'Java Upgrader'
 keywords: ['java', 'upgrade', 'latest', 'version', 'script']
@@ -32,6 +33,5 @@ This script upgrades Java to the latest version of Java 8.
 ## Output
 
 - Script log
-
 
 

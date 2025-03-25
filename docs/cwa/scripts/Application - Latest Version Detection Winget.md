@@ -1,5 +1,6 @@
 ---
 id: 'ffb77c6c-8dd7-4ca5-82a2-327b1658cbde'
+slug: /ffb77c6c-8dd7-4ca5-82a2-327b1658cbde
 title: 'Application - Latest Version Detection Winget'
 title_meta: 'Application - Latest Version Detection Winget'
 keywords: ['winget', 'application', 'version', 'packageid', 'script']
@@ -40,6 +41,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c1bece1b-9d48-488b-bc4a-02d8c64fe914'
+slug: /c1bece1b-9d48-488b-bc4a-02d8c64fe914
 title: 'Cumulative Update Compliance - Report'
 title_meta: 'Cumulative Update Compliance - Report'
 keywords: ['windows', 'compliance', 'updates', 'patching', 'dataview']
@@ -61,7 +62,6 @@ The purpose of the dataviews included in this solution is to present the cumulat
 8. Remove the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](<../cwa/scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
    - [MySQL - View - Create (pvl_cu_compliance)](<../cwa/scripts/MySQL - View - Create (pvl_cu_compliance).md>)
-
 
 
 

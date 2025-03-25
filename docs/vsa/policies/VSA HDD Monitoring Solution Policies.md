@@ -1,5 +1,6 @@
 ---
 id: 'b39fe35b-74b3-442d-a977-daef64294297'
+slug: /b39fe35b-74b3-442d-a977-daef64294297
 title: 'VSA HDD Monitoring Solution Policies'
 title_meta: 'VSA HDD Monitoring Solution Policies'
 keywords: ['monitoring', 'storage', 'remediation', 'drive', 'policy']
@@ -38,4 +39,3 @@ This document presents 25 independent policies, one for each drive letter, which
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
 ## Attachments
 [Wokstation_Core_HDD_Monitor_Drive_C.xml](<../../../static/attachments/itg/10793261/Wokstation_Core_HDD_Monitor_Drive_C.xml>)
-

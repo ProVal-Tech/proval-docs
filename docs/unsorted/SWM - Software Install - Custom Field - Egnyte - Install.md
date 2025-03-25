@@ -1,5 +1,6 @@
 ---
 id: '03f423c9-8538-42c0-9822-b7c92befb215'
+slug: /03f423c9-8538-42c0-9822-b7c92befb215
 title: 'SWM - Software Install - Custom Field - Egnyte - Install'
 title_meta: 'SWM - Software Install - Custom Field - Egnyte - Install'
 keywords: ['custom', 'egnyte', 'reboot', 'field', 'agent']
@@ -20,7 +21,6 @@ See the solution for full details: [https://proval.itglue.com/DOC-5078775-127544
 | Field Name                  | Type of Field (Machine or Organization) | Description                                                    |
 |-----------------------------|-----------------------------------------|----------------------------------------------------------------|
 | cPVALEgnyteReboot          | Machine                                 | Designates whether the machine needs to be rebooted following Egnyte installation. |
-
 
 
 

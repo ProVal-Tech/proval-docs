@@ -1,5 +1,6 @@
 ---
 id: '3e90ea38-4ca4-4dd1-b338-d7700bba9742'
+slug: /3e90ea38-4ca4-4dd1-b338-d7700bba9742
 title: 'DRV - Fragmentation  30 %'
 title_meta: 'DRV - Fragmentation  30 %'
 keywords: ['drive', 'fragmentation', 'check', 'workstation']
@@ -16,6 +17,5 @@ This document uses the `v_defragmentation` table to calculate systems with drive
 ## Target
 
 Workstation Service Plans
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e0ec87f6-0624-40db-ac6b-1b7d823e6b37'
+slug: /e0ec87f6-0624-40db-ac6b-1b7d823e6b37
 title: 'pvl_mssql_db_version'
 title_meta: 'pvl_mssql_db_version'
 keywords: ['mssql', 'database', 'custom', 'version', 'table']
@@ -28,7 +29,6 @@ The custom table stores the data gathered by the [Script - Get MSSQL Database Ve
 | Version       | Varchar  | Version of the Database Instance     |
 | PatchLevel    | Varchar  | Patch Level of the Database Instance |
 | ScriptRunTime | DateTime | Data Collection Time                 |
-
 
 
 

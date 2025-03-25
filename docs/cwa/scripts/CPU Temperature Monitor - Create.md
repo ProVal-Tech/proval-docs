@@ -1,5 +1,6 @@
 ---
 id: '7519f655-224b-4c95-b716-773f59cb7314'
+slug: /7519f655-224b-4c95-b716-773f59cb7314
 title: 'CPU Temperature Monitor - Create'
 title_meta: 'CPU Temperature Monitor - Create'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'alerts', 'edfs']
@@ -106,4 +107,3 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 ## Attachments
 [CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
-

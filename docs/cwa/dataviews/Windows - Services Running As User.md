@@ -1,5 +1,6 @@
 ---
 id: '1cb06def-ad6c-4865-b0b9-900f5c23f1e0'
+slug: /1cb06def-ad6c-4865-b0b9-900f5c23f1e0
 title: 'Windows - Services Running As User'
 title_meta: 'Windows - Services Running As User'
 keywords: ['dataview', 'services', 'computers', 'users', 'service-account']
@@ -25,6 +26,5 @@ The dataview displays the services on computers that are logged on as users but 
 | State        | Status of the service                               |
 | Startup      | Displays the startup type of the service            |
 | Log on As    | Service account through which services are running   |
-
 
 

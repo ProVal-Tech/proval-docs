@@ -1,5 +1,6 @@
 ---
 id: 'a6c32cd9-8472-45cc-9260-3aa09510ce20'
+slug: /a6c32cd9-8472-45cc-9260-3aa09510ce20
 title: 'Adobe Flash Player Uninstaller - V2 Autofix,Ticket'
 title_meta: 'Adobe Flash Player Uninstaller - V2 Autofix,Ticket'
 keywords: ['uninstall', 'adobe', 'flash', 'player', 'script']
@@ -38,7 +39,6 @@ If that fails, it will try to uninstall using the Uninstaller Software script wi
 ## Output
 
 - Script log
-
 
 
 

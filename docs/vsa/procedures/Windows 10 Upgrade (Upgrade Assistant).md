@@ -1,5 +1,6 @@
 ---
 id: '65e85bb2-14cc-4c52-bf87-453dc1784bbd'
+slug: /65e85bb2-14cc-4c52-bf87-453dc1784bbd
 title: 'Windows 10 Upgrade (Upgrade Assistant)'
 title_meta: 'Windows 10 Upgrade (Upgrade Assistant)'
 keywords: ['xml', 'procedure', 'import', 'proval', 'managedfiles']
@@ -15,6 +16,5 @@ unlisted: false
 
 1. Import the PS1 to `Managedfiles/Shared/ProValAutomation`
 2. Add Machine Configuration: **xPVAL Windows 10 Build Result**
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '85639729-ba38-4799-8986-6f063069b7e6'
+slug: /85639729-ba38-4799-8986-6f063069b7e6
 title: 'Software Missing Excluding Webroot G'
 title_meta: 'Software Missing Excluding Webroot G'
 keywords: ['monitor', 'antivirus', 'webroot', 'plugin', 'check']

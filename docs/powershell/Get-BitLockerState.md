@@ -1,5 +1,6 @@
 ---
 id: 'ee75973b-35e0-4698-872b-a8a3d95fc8c6'
+slug: /ee75973b-35e0-4698-872b-a8a3d95fc8c6
 title: 'Get-BitLockerState'
 title_meta: 'Get-BitLockerState'
 keywords: ['bitlocker', 'encryption', 'status', 'drive']
@@ -58,6 +59,5 @@ The script generates the following output files in the same directory where it i
 - The script is designed to be run on systems with BitLocker enabled.
 - Administrative rights are required to access BitLocker status information.
 - The script does not modify any system settings or BitLocker configurations.
-
 
 

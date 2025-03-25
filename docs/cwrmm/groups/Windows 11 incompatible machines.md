@@ -1,5 +1,6 @@
 ---
 id: '6b52f66a-4b64-4d36-9f9f-74379510cf68'
+slug: /6b52f66a-4b64-4d36-9f9f-74379510cf68
 title: 'Windows 11 incompatible machines'
 title_meta: 'Windows 11 incompatible machines'
 keywords: ['windows', 'group', 'incompatible', 'machines', 'custom', 'criteria']
@@ -93,6 +94,5 @@ Click the `Save` button to save/create the group.
 
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_15.png)  
 ![Image](../../../static/img/Windows-11-incompatible-machines/image_16.png)
-
 
 

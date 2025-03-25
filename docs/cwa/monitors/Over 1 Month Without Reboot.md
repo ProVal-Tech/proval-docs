@@ -1,5 +1,6 @@
 ---
 id: 'c3b60a6c-fa81-475f-8c96-6b167e32a0f9'
+slug: /c3b60a6c-fa81-475f-8c96-6b167e32a0f9
 title: 'Over 1 Month Without Reboot'
 title_meta: 'Over 1 Month Without Reboot'
 keywords: ['monitor', 'uptime', 'alert', 'system', 'machines']
@@ -23,6 +24,5 @@ Optional Targets:
 - Global - Should be run without explicitly defined targets.
 - Managed 24x7 | 8x5 Servers
 - Managed 24x7 | 8x5 Workstations
-
 
 

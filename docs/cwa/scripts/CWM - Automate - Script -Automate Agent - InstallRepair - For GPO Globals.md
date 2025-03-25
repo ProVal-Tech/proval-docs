@@ -1,5 +1,6 @@
 ---
 id: 'ba82a707-a466-4960-95a9-856d5b67b8ed'
+slug: /ba82a707-a466-4960-95a9-856d5b67b8ed
 title: 'CWM - Automate - Script -Automate Agent - InstallRepair - For GPO Globals'
 title_meta: 'CWM - Automate - Script -Automate Agent - InstallRepair - For GPO Globals'
 keywords: ['automate', 'gpo', 'agent', 'installation', 'deployment', 'token', 'script']
@@ -83,4 +84,3 @@ The generated PowerShell script will install the agent if it is missing, attempt
 <iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>
 ## Attachments
 [Automate_Agent_Deployment_GPO.pdf](<../../../static/attachments/itg/10861684/Automate_Agent_Deployment_GPO.pdf>)
-

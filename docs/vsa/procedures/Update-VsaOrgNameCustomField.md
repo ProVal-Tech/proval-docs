@@ -1,5 +1,6 @@
 ---
 id: '293abe44-923c-4b2e-abf0-a2f35116996a'
+slug: /293abe44-923c-4b2e-abf0-a2f35116996a
 title: 'Update-VsaOrgNameCustomField'
 title_meta: 'Update-VsaOrgNameCustomField'
 keywords: ['vsa', 'custom', 'field', 'organization', 'api']
@@ -44,6 +45,5 @@ The location of output for log, result, and error files is as follows:
 ```
 ./Update-VsaOrgNameCustomField-log.txt
 ```
-
 
 

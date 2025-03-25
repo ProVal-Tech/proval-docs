@@ -1,5 +1,6 @@
 ---
 id: 'a7bcd631-f96c-4443-ae87-e7739407e283'
+slug: /a7bcd631-f96c-4443-ae87-e7739407e283
 title: 'ShadowCopy Creation Failure Detection'
 title_meta: 'ShadowCopy Creation Failure Detection'
 keywords: ['monitor', 'event', 'log', 'check', 'windows', 'server', 'workstation']

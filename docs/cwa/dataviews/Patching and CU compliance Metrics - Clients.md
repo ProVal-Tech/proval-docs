@@ -1,5 +1,6 @@
 ---
 id: 'd7c2fb39-45e1-482f-b58d-5397cbbec1da'
+slug: /d7c2fb39-45e1-482f-b58d-5397cbbec1da
 title: 'Patching and CU compliance Metrics - Clients'
 title_meta: 'Patching and CU compliance Metrics - Clients'
 keywords: ['patch', 'compliance', 'windows', 'update', 'cumulative']
@@ -57,7 +58,6 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
-
 
 
 

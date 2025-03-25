@@ -1,5 +1,6 @@
 ---
 id: '18401e53-6ea1-4d94-a715-c2fc8767383e'
+slug: /18401e53-6ea1-4d94-a715-c2fc8767383e
 title: 'Wipe Computers - Factory Reset'
 title_meta: 'Wipe Computers - Factory Reset'
 keywords: ['factory', 'reset', 'script', 'windows', 'user']
@@ -37,6 +38,5 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
-
 
 

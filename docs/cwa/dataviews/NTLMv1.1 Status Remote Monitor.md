@@ -1,5 +1,6 @@
 ---
 id: '5a6640f6-f0cb-4231-845f-e48c9445aa22'
+slug: /5a6640f6-f0cb-4231-845f-e48c9445aa22
 title: 'NTLMv1.1 Status Remote Monitor'
 title_meta: 'NTLMv1.1 Status Remote Monitor'
 keywords: ['ntlm', 'security', 'endpoint', 'detection', 'protocol']
@@ -38,6 +39,5 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
-
 
 

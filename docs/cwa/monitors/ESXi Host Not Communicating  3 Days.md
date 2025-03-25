@@ -1,5 +1,6 @@
 ---
 id: '905bda70-64aa-4e66-a18f-c5d0eef2b7fd'
+slug: /905bda70-64aa-4e66-a18f-c5d0eef2b7fd
 title: 'ESXi Host Not Communicating  3 Days'
 title_meta: 'ESXi Host Not Communicating  3 Days'
 keywords: ['esxi', 'monitoring', 'report', 'alert', 'virtualization']
@@ -25,6 +26,5 @@ This section should contain a list of ITGlue documents listed in the Related Ite
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
-
 
 

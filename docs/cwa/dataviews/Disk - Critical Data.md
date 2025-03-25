@@ -1,5 +1,6 @@
 ---
 id: '8a8b76b2-aa25-419c-b193-aa98f54ef274'
+slug: /8a8b76b2-aa25-419c-b193-aa98f54ef274
 title: 'Disk - Critical Data'
 title_meta: 'Disk - Critical Data'
 keywords: ['disk', 'information', 'critical', 'data', 'gather', 'client', 'computer', 'drive', 'manufacturer', 'health']
@@ -58,7 +59,6 @@ This Dataview displays the disk information gathered from [EPM - Disk - Agnostic
 | IntegrityErrors      | The number of integrity errors logged on the drive                      |
 | InformationalLogEntries | The number of informational log entries logged on the drive           |
 | DateUpdated          | The date that this information was gathered                             |
-
 
 
 

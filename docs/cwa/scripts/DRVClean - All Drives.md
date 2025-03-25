@@ -1,5 +1,6 @@
 ---
 id: '27940cde-b1b3-4198-863e-b4257aca7b06'
+slug: /27940cde-b1b3-4198-863e-b4257aca7b06
 title: 'DRVClean - All Drives'
 title_meta: 'DRVClean - All Drives'
 keywords: ['cleanup', 'directories', 'files', 'folders', 'automation', 'windows']
@@ -41,6 +42,5 @@ This process cleans well-known directories of aging files and folders on all int
 ## Output
 
 - Script log
-
 
 

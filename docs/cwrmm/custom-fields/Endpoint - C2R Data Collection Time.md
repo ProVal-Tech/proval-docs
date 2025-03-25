@@ -1,5 +1,6 @@
 ---
 id: 'd6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0'
+slug: /d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0
 title: 'Endpoint - C2R Data Collection Time'
 title_meta: 'Endpoint - C2R Data Collection Time'
 keywords: ['c2r', 'update', 'channel', 'custom', 'fields']
@@ -24,6 +25,5 @@ This document outlines the time when the C2R Update Channel, C2R Auto Update, an
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_1.png)
 
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Data-Collection-Time/image_2.png)
-
 
 

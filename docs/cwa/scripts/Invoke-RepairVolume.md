@@ -1,5 +1,6 @@
 ---
 id: '8a19a7a7-454c-44ad-a2b7-6ce9fca32b47'
+slug: /8a19a7a7-454c-44ad-a2b7-6ce9fca32b47
 title: 'Invoke-RepairVolume'
 title_meta: 'Invoke-RepairVolume'
 keywords: ['windows', 'repair', 'volume', 'disk', 'scan']
@@ -41,7 +42,6 @@ Run a scan and repair on all available drives, stopping the drives completely du
 ## Output
 
 - Script log
-
 
 
 

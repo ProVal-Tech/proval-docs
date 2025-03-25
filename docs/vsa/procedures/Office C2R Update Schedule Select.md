@@ -1,5 +1,6 @@
 ---
 id: 'd401a54a-5bff-4d37-8fdf-001220f73fb5'
+slug: /d401a54a-5bff-4d37-8fdf-001220f73fb5
 title: 'Office C2R Update Schedule Select'
 title_meta: 'Office C2R Update Schedule Select'
 keywords: ['microsoft', 'update', 'click2run', 'office', 'installation']
@@ -41,7 +42,6 @@ This document outlines how to set the Microsoft Update Channel for a Click2Run O
 ## Output
 
 Agent Procedure Log
-
 
 
 

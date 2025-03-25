@@ -1,5 +1,6 @@
 ---
 id: '2520190e-2751-45f1-8d60-501027004938'
+slug: /2520190e-2751-45f1-8d60-501027004938
 title: 'Install-Font'
 title_meta: 'Install-Font'
 keywords: ['install', 'font', 'typography', 'setup']
@@ -40,6 +41,5 @@ PowerShell v5
 ## Output
 - `.\Install-Font-log.txt`
 - `.\Install-Font-error.txt`
-
 
 

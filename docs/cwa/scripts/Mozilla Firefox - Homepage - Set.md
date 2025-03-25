@@ -1,5 +1,6 @@
 ---
 id: 'd86f7be6-b88d-4829-8f0e-9b2d6b9dc645'
+slug: /d86f7be6-b88d-4829-8f0e-9b2d6b9dc645
 title: 'Mozilla Firefox - Homepage - Set'
 title_meta: 'Mozilla Firefox - Homepage - Set'
 keywords: ['firefox', 'homepage', 'configuration', 'software', 'browser']
@@ -31,6 +32,5 @@ This document provides an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Logs
-
 
 

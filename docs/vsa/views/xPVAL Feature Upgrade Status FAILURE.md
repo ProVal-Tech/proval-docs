@@ -1,5 +1,6 @@
 ---
 id: '32444489-190b-4dde-846c-d613cb29e409'
+slug: /32444489-190b-4dde-846c-d613cb29e409
 title: 'xPVAL Feature Upgrade Status FAILURE'
 title_meta: 'xPVAL Feature Upgrade Status FAILURE'
 keywords: ['endpoints', 'windows', 'upgrade', 'failure', 'feature']
@@ -20,6 +21,5 @@ The following filters have been applied to this view:
 | Filter Name                                                                                   | Advanced Filter? | Filter Value |
 |-----------------------------------------------------------------------------------------------|------------------|--------------|
 | [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Y                | "Failure"    |
-
 
 

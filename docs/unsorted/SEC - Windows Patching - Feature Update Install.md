@@ -1,5 +1,6 @@
 ---
 id: 'ef761e33-36e7-47d1-aa96-7bed8d18b3ca'
+slug: /ef761e33-36e7-47d1-aa96-7bed8d18b3ca
 title: 'SEC - Windows Patching - Feature Update Install'
 title_meta: 'SEC - Windows Patching - Feature Update Install'
 keywords: ['windows', 'update', 'feature', 'install', 'script']
@@ -65,6 +66,5 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '927ed9c8-98d6-4efa-b22f-a516458ef19c'
+slug: /927ed9c8-98d6-4efa-b22f-a516458ef19c
 title: 'Patching - Approved Recent Updates Audit'
 title_meta: 'Patching - Approved Recent Updates Audit'
 keywords: ['patches', 'updates', 'computers', 'review', 'status']
@@ -36,4 +37,3 @@ The dataview filters the patches that it displays based on the following require
 | Patch Approved on Date    | The date the patch was approved.                         |
 | Patch Last Attempt Date   | The date the patch installation was attempted last.      |
 | Status                    | The status of the computer at this time (Up To Date or Please Review) |
-

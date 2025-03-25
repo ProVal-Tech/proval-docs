@@ -1,5 +1,6 @@
 ---
 id: 'b61566b1-676d-433c-ab86-d7272efe5717'
+slug: /b61566b1-676d-433c-ab86-d7272efe5717
 title: 'Audit Diskpart to Custom DV'
 title_meta: 'Audit Diskpart to Custom DV'
 keywords: ['disk', 'partition', 'database', 'windows', 'script']
@@ -32,6 +33,5 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 ## Output
 
 - Dataview
-
 
 

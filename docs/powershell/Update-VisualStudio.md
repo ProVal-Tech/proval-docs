@@ -1,5 +1,6 @@
 ---
 id: '1c2e90d3-32f7-4439-a0d7-dc1c5ccc19f2'  
+slug: /1c2e90d3-32f7-4439-a0d7-dc1c5ccc19f2  
 title: 'Update-VisualStudio'  
 title_meta: 'Update-VisualStudio'  
 keywords: ['update', 'visualstudio', 'upgrade', 'installation']  
@@ -37,6 +38,5 @@ Supported Visual Studio versions:
 - .\Update-VisualStudio-log.txt  
 - .\Update-VisualStudio-data.txt  
 - .\Update-VisualStudio-error.txt  
-
 
 

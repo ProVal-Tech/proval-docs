@@ -1,5 +1,6 @@
 ---
 id: '0cf62bc5-b926-499c-9f40-57824d293dff'
+slug: /0cf62bc5-b926-499c-9f40-57824d293dff
 title: 'Network Probe - Disable'
 title_meta: 'Network Probe - Disable'
 keywords: ['automate', 'network', 'probe', 'agent', 'disable']
@@ -21,6 +22,5 @@ This script will disable the Network probe on an Automate agent.
 ## Process
 
 - This script runs an LT Command to disable the Network probe on the Automate agent.
-
 
 

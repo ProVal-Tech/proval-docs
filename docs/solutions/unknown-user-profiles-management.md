@@ -1,5 +1,6 @@
 ---
 id: '081dae27-7ac9-4923-9488-24ace9d4e65e'
+slug: /081dae27-7ac9-4923-9488-24ace9d4e65e
 title: 'Unknown User Profiles Management'
 title_meta: 'Unknown User Profiles Management'
 keywords: ['user','profile','unknown','inferred']

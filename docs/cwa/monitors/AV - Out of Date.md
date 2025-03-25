@@ -1,5 +1,6 @@
 ---
 id: '61b41bbe-0c0a-4e24-8d73-c17862eae652'
+slug: /61b41bbe-0c0a-4e24-8d73-c17862eae652
 title: 'AV - Out of Date'
 title_meta: 'AV - Out of Date'
 keywords: ['monitor', 'antivirus', 'outdated', 'definitions', 'connectwise']
@@ -23,6 +24,5 @@ None
 ## Target
 
 Should be run against all machines with managed AntiVirus.
-
 
 

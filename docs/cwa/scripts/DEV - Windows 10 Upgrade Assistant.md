@@ -1,5 +1,6 @@
 ---
 id: 'f9840922-3209-4bd9-b890-2145018bfd56'
+slug: /f9840922-3209-4bd9-b890-2145018bfd56
 title: 'DEV - Windows 10 Upgrade Assistant'
 title_meta: 'DEV - Windows 10 Upgrade Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'script', 'automation']
@@ -43,6 +44,5 @@ This script starts the Windows Upgrade Assistant to upgrade the target system to
 ## Output
 
 - Script log
-
 
 

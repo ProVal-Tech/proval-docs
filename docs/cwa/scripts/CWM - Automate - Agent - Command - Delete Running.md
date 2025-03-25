@@ -1,5 +1,6 @@
 ---
 id: 'c9ae6663-8100-457c-abb8-d210f9fd8f87'
+slug: /c9ae6663-8100-457c-abb8-d210f9fd8f87
 title: 'CWM - Automate - Agent - Command - Delete Running'
 title_meta: 'CWM - Automate - Agent - Command - Delete Running'
 keywords: ['autofix', 'stuck', 'commands', 'monitor', 'database']
@@ -36,7 +37,6 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
-
 
 
 

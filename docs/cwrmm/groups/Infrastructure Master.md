@@ -1,5 +1,6 @@
 ---
 id: 'c2c2d22b-f735-4ec5-91a6-a014ab2e84a8'
+slug: /c2c2d22b-f735-4ec5-91a6-a014ab2e84a8
 title: 'Infrastructure Master'
 title_meta: 'Infrastructure Master'
 keywords: ['infrastructure', 'masters', 'domain', 'controllers', 'group']
@@ -31,6 +32,5 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure Masters
 - Select the `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator, and type `Yes` in the condition box.
 - Click the `Save` button at the top left to create the group.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cef450c6-b649-4bd3-bcde-ed521d38d77f'
+slug: /cef450c6-b649-4bd3-bcde-ed521d38d77f
 title: 'Drive Errors and Raid Failures'
 title_meta: 'Drive Errors and Raid Failures'
 keywords: ['monitor', 'drive', 'raid', 'errors', 'ticket']

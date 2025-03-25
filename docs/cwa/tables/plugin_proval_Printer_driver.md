@@ -1,5 +1,6 @@
 ---
 id: '21b8a07c-6756-415e-93c0-97e7eca8dbae'
+slug: /21b8a07c-6756-415e-93c0-97e7eca8dbae
 title: 'plugin_proval_Printer_driver'
 title_meta: 'plugin_proval_Printer_driver'
 keywords: ['printer', 'inventory', 'data', 'driver', 'connectwise']
@@ -42,6 +43,5 @@ To store the data retrieved by the [CWM - Automate - Script - Get - Printer Driv
 | InfPath            | varchar(256)  | Physical path to the driver's INF file                     |
 | DriverVersion      | varchar(32)   | Driver version                                             |
 | ScriptRunTime      | varchar(25)   | Script run time                                            |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b6225f93-5cce-4939-bc95-1e36ca370e8f'
+slug: /b6225f93-5cce-4939-bc95-1e36ca370e8f
 title: 'AD Sync out of date - Troubleshooting'
 title_meta: 'AD Sync out of date - Troubleshooting'
 keywords: ['ad', 'sync', 'troubleshooting', 'credentials', 'plugin']

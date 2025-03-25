@@ -1,5 +1,6 @@
 ---
 id: '58ddde1a-dfdd-4eb8-9024-608e7c57ad4f'
+slug: /58ddde1a-dfdd-4eb8-9024-608e7c57ad4f
 title: 'BitLocker Status and Recovery Key Audit'
 title_meta: 'BitLocker Status and Recovery Key Audit'
 keywords: ['bitlocker', 'encryption', 'endpoint', 'audit', 'recovery']
@@ -43,6 +44,5 @@ Sample Output:
 - BitLocker Encryption in Progress on Drive X:
 - BitLocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
-
 
 

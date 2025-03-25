@@ -1,5 +1,6 @@
 ---
 id: '2ad8091c-4bbb-4524-abc0-b0f0016ef4a5'
+slug: /2ad8091c-4bbb-4524-abc0-b0f0016ef4a5
 title: 'Windows RDS License Check'
 title_meta: 'Windows RDS License Check'
 keywords: ['rds', 'licensing', 'monitor', 'server', 'windows']

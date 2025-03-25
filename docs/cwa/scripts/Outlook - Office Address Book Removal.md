@@ -1,5 +1,6 @@
 ---
 id: 'a0367fce-be4b-474d-8ea1-259d81a33858'
+slug: /a0367fce-be4b-474d-8ea1-259d81a33858
 title: 'Outlook - Office Address Book Removal'
 title_meta: 'Outlook - Office Address Book Removal'
 keywords: ['offline', 'address', 'books', 'reset', 'remove', 'users']
@@ -30,6 +31,5 @@ The script will remove and reset the 'Offline Address Books' folder located at t
 ## Output
 
 - Script log
-
 
 

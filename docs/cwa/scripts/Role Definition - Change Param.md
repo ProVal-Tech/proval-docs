@@ -1,5 +1,6 @@
 ---
 id: '5c2faf09-3e8f-4dd0-978c-5863b443a3b9'
+slug: /5c2faf09-3e8f-4dd0-978c-5863b443a3b9
 title: 'Role Definition - Change Param'
 title_meta: 'Role Definition - Change Param'
 keywords: ['role', 'monitor', 'agent', 'sql', 'windows']
@@ -56,6 +57,5 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in parameters
   
 - **Exit with Error** - Script failed to execute properly
-
 
 

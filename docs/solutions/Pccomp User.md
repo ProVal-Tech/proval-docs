@@ -1,5 +1,6 @@
 ---
 id: 'aa19f899-568a-489c-be3c-854cc4198667'
+slug: /aa19f899-568a-489c-be3c-854cc4198667
 title: 'Pccomp User'
 title_meta: 'Pccomp User'
 keywords: ['user', 'cf', 'presence', 'script', 'view']
@@ -36,7 +37,6 @@ The script checks whether the desired user is present on the machine and updates
 Moreover, a corresponding script to delete the user is also created.
 
 ## FAQ
-
 
 
 

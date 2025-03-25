@@ -1,5 +1,6 @@
 ---
 id: 'd9803cab-7a01-461b-8121-fc5dee6b0769'
+slug: /d9803cab-7a01-461b-8121-fc5dee6b0769
 title: 'Dash - Missing Patch - Count by Machines'
 title_meta: 'Dash - Missing Patch - Count by Machines'
 keywords: ['backup', 'windows', 'scripting', 'automation', 'files']
@@ -8,6 +9,5 @@ tags: ['backup', 'security', 'windows']
 draft: false
 unlisted: false
 ---
-
 
 

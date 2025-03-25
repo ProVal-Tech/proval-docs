@@ -1,5 +1,6 @@
 ---
 id: '487873f8-4b59-47bc-b938-c64903898d8a'
+slug: /487873f8-4b59-47bc-b938-c64903898d8a
 title: 'RemoteAccess Service Check'
 title_meta: 'RemoteAccess Service Check'
 keywords: ['remoteaccess', 'service', 'monitor', 'windows', 'ticketing']

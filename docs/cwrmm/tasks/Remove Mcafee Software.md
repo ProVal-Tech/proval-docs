@@ -1,5 +1,6 @@
 ---
 id: '87a2b5ad-872c-431c-83a4-618434f03c9a'
+slug: /87a2b5ad-872c-431c-83a4-618434f03c9a
 title: 'Remove Mcafee Software'
 title_meta: 'Remove Mcafee Software'
 keywords: ['mcafee', 'uninstall', 'script', 'endpoint', 'software']
@@ -125,6 +126,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd0a99efa-a256-47ca-b916-6c18581ba434'
+slug: /d0a99efa-a256-47ca-b916-6c18581ba434
 title: 'Get-CWControlAgentSession'
 title_meta: 'Get-CWControlAgentSession'
 keywords: ['connectwise', 'control', 'session', 'api']
@@ -44,6 +45,5 @@ The system object will contain:
 ## Output
 - `.\Get-CWControlAgentSession-log.txt`
 - `.\Get-CWControlAgentSession-error.txt`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '37781bee-b7cd-448e-9d45-53e789a455b8'
+slug: /37781bee-b7cd-448e-9d45-53e789a455b8
 title: 'EPM - Windows Configuration - Component - Huntress Managed EDR - WIN PVAL'
 title_meta: 'EPM - Windows Configuration - Component - Huntress Managed EDR - WIN PVAL'
 keywords: ['huntress', 'edr', 'datto', 'component', 'management']
@@ -58,6 +59,5 @@ StdOut may require you to scroll to view the complete log; you can alternatively
 
 **StdErr**  
 StdErr is not expected.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '860cd3d8-4833-4c29-b87d-ac997816994e'
+slug: /860cd3d8-4833-4c29-b87d-ac997816994e
 title: 'Execute Script - Crystal Disk Info Report'
 title_meta: 'Execute Script - Crystal Disk Info Report'
 keywords: ['monitor', 'crystal', 'disk', 'info', 'report', 'windows', 'script']
@@ -46,7 +47,6 @@ The [EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk In
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_5.png)  
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/Execute-Script---Crystal-Disk-Info-Report/image_6.png)  
-
 
 
 

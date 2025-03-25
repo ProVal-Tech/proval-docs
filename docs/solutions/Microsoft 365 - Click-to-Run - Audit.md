@@ -1,5 +1,6 @@
 ---
 id: '1b9044f2-b871-42c4-8f3f-8a4710299018'
+slug: /1b9044f2-b871-42c4-8f3f-8a4710299018
 title: 'Microsoft 365 - Click-to-Run - Audit'
 title_meta: 'Microsoft 365 - Click-to-Run - Audit'
 keywords: ['microsoft', 'click-to-run', 'audit', 'office', 'version', 'update', 'channel', 'auto-update']
@@ -37,7 +38,6 @@ The solution aims to audit the basic information of the installed Click-to-Run v
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](<../cwrmm/tasks/Microsoft 365 - Click-to-Run - Get Details.md>)
-
 
 
 

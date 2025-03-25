@@ -1,5 +1,6 @@
 ---
 id: 'a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2'
+slug: /a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2
 title: 'Deploy Huntress - Mac'
 title_meta: 'Deploy Huntress - Mac'
 keywords: ['huntress', 'mac', 'agent', 'group', 'filter']
@@ -50,6 +51,5 @@ Once the above criteria are met, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Huntress---Mac/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress---Mac/image_4.png)
-
 
 

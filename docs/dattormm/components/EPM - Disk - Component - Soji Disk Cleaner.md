@@ -1,5 +1,6 @@
 ---
 id: '3e424fbe-30e1-444b-a7c3-cc29793226a6'
+slug: /3e424fbe-30e1-444b-a7c3-cc29793226a6
 title: 'EPM - Disk - Component - Soji Disk Cleaner'
 title_meta: 'EPM - Disk - Component - Soji Disk Cleaner'
 keywords: ['disk', 'cleaner', 'soji', 'endpoint', 'rmm']
@@ -29,4 +30,3 @@ Import the [attached component](/attachments/Soji_Disk_Cleaner.cpt) into Datto R
 - ProgramData/_automation/app/soji/sojilogs/
 ## Attachments
 [Soji_Disk_Cleaner.cpt](<../../../static/attachments/itg/11821769/Soji_Disk_Cleaner.cpt>)
-

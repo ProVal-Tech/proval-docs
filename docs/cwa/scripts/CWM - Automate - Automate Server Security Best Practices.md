@@ -1,5 +1,6 @@
 ---
 id: 'f4ed7a7d-baf0-4aa5-8bbe-413fa024fff3'
+slug: /f4ed7a7d-baf0-4aa5-8bbe-413fa024fff3
 title: 'CWM - Automate - Automate Server Security Best Practices'
 title_meta: 'CWM - Automate - Automate Server Security Best Practices'
 keywords: ['connectwise', 'automate', 'security', 'firewall', 'hardening']
@@ -311,5 +312,4 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 ## Reading View
 
 ![Reading View](../../../static/img/CWM---Automate---Automate-Server-Security-Best-Practices/image_3.png)
-
 

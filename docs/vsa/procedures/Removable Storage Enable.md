@@ -1,5 +1,6 @@
 ---
 id: 'e6349f40-ad92-422c-88d9-654b9bb87b49'
+slug: /e6349f40-ad92-422c-88d9-654b9bb87b49
 title: 'Removable Storage Enable'
 title_meta: 'Removable Storage Enable'
 keywords: ['removable', 'storage', 'endpoint', 'enable', 'devices']
@@ -35,7 +36,6 @@ Sets `HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//De
 ## Output
 
 AP Log
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f1cc450a-82dd-49f9-b720-22983f7b696c'
+slug: /f1cc450a-82dd-49f9-b720-22983f7b696c
 title: 'Edge-Sidebar - EnableDisable'
 title_meta: 'Edge-Sidebar - EnableDisable'
 keywords: ['edge', 'sidebar', 'enable', 'disable', 'ticket', 'script']
@@ -87,6 +88,5 @@ Finishing ticket 77459
 ## Ticket Example
 
 ![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
-
 
 

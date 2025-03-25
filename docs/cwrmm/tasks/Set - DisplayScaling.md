@@ -1,5 +1,6 @@
 ---
 id: '8b3db9bc-3acc-40fb-96e3-9f6c271a2591'
+slug: /8b3db9bc-3acc-40fb-96e3-9f6c271a2591
 title: 'Set - DisplayScaling'
 title_meta: 'Set - DisplayScaling'
 keywords: ['display', 'scaling', 'windows', 'custom', 'script']
@@ -148,6 +149,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cc09c16e-c62b-4001-9226-1b92097a6507'
+slug: /cc09c16e-c62b-4001-9226-1b92097a6507
 title: 'LTTray Port Mapping with System Registry'
 title_meta: 'LTTray Port Mapping with System Registry'
 keywords: ['lttray', 'port', 'netstat', 'registry', 'automation']
@@ -48,6 +49,5 @@ This script maps the port number from netstat and the Windows registry of the LT
 
 - Script log
 - Script state
-
 
 

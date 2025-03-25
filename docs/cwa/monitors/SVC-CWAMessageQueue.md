@@ -1,5 +1,6 @@
 ---
 id: 'a1fb4b3c-b08f-4090-9df7-66e7d80ca93d'
+slug: /a1fb4b3c-b08f-4090-9df7-66e7d80ca93d
 title: 'SVC-CWAMessageQueue'
 title_meta: 'SVC-CWAMessageQueue'
 keywords: ['cwa', 'monitoring', 'service', 'alert', 'ticket']
@@ -26,6 +27,5 @@ CWAMessageQueue is one of the important services for the Automate server. This m
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server  
-
 
 

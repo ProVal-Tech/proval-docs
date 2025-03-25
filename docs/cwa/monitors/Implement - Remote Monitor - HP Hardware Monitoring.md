@@ -1,5 +1,6 @@
 ---
 id: '4e3fc053-3ccd-4262-b8e8-662222500e06'
+slug: /4e3fc053-3ccd-4262-b8e8-662222500e06
 title: 'Implement - Remote Monitor - HP Hardware Monitoring'
 title_meta: 'Implement - Remote Monitor - HP Hardware Monitoring'
 keywords: ['setup', 'monitoring', 'hp', 'hardware', 'alerts']

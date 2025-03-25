@@ -1,5 +1,6 @@
 ---
 id: 'c3342117-53c8-48de-9831-27cd7da77c00'
+slug: /c3342117-53c8-48de-9831-27cd7da77c00
 title: 'Import Log4Shell Table'
 title_meta: 'Import Log4Shell Table'
 keywords: ['log4shell', 'mysql', 'software', 'installation', 'database']
@@ -42,6 +43,5 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell
 - Local file on computer
 - Dataview
 - Custom Table
-
 
 

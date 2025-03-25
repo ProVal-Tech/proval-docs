@@ -1,5 +1,6 @@
 ---
 id: 'e7ef3c95-960a-430c-803e-665b1d7f677c'
+slug: /e7ef3c95-960a-430c-803e-665b1d7f677c
 title: 'plugin_proval_v_windows_10_version_metrics'
 title_meta: 'plugin_proval_v_windows_10_version_metrics'
 keywords: ['auditing', 'windows', 'clientid', 'releaseid', 'metrics']
@@ -34,6 +35,5 @@ This document provides data used for auditing Windows 10 versions. It displays i
 | Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version that have a patching policy. |
 | % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version that have a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
-
 
 

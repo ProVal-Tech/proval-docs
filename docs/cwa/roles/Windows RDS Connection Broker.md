@@ -1,5 +1,6 @@
 ---
 id: 'b3b5abcf-1f0b-440b-89e1-fe37c9ec18eb'
+slug: /b3b5abcf-1f0b-440b-89e1-fe37c9ec18eb
 title: 'Windows RDS Connection Broker'
 title_meta: 'Windows RDS Connection Broker'
 keywords: ['rds', 'connection', 'broker', 'installation', 'windows']
@@ -18,6 +19,5 @@ This document uses PowerShell to confirm if the RDS Connection Broker server rol
 | Detection String                                        | Comparator | Result | Applicable OS |
 |--------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell "(Get-WindowsFeature RDS-Connection-Broker).Installed"@%}` | Equals     | True   | Windows        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '8d741266-521f-4bdf-b921-9fe0c28a0648'
+slug: /8d741266-521f-4bdf-b921-9fe0c28a0648
 title: 'EPM - Software Configuration - Chromium Browsers - Homepage - Remove'
 title_meta: 'EPM - Software Configuration - Chromium Browsers - Homepage - Remove'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'configuration']
@@ -39,6 +40,5 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
-
 
 

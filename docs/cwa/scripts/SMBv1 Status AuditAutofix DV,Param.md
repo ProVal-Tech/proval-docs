@@ -1,5 +1,6 @@
 ---
 id: '4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b'
+slug: /4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b
 title: 'SMBv1 Status AuditAutofix DV,Param'
 title_meta: 'SMBv1 Status AuditAutofix DV,Param'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability', 'monitoring']
@@ -75,6 +76,5 @@ It is required to execute this script after importing it with the setting `SetEn
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the log information below:  
      @SMB1DisableOutput@
-
 
 

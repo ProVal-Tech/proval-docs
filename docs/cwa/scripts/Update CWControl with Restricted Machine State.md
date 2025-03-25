@@ -1,5 +1,6 @@
 ---
 id: '4edbd7bf-3815-4745-9c40-42cef872a4f4'
+slug: /4edbd7bf-3815-4745-9c40-42cef872a4f4
 title: 'Update CWControl with Restricted Machine State'
 title_meta: 'Update CWControl with Restricted Machine State'
 keywords: ['connectwise', 'control', 'restricted', 'machines', 'permissions', 'script']
@@ -73,6 +74,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

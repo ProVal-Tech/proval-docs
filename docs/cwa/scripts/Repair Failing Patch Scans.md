@@ -1,5 +1,6 @@
 ---
 id: '05f60b47-188b-4383-9e9c-98780ba6e488'
+slug: /05f60b47-188b-4383-9e9c-98780ba6e488
 title: 'Repair Failing Patch Scans'
 title_meta: 'Repair Failing Patch Scans'
 keywords: ['autofix', 'monitor', 'patch', 'scan', 'service']
@@ -54,6 +55,5 @@ This Autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only.
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
-
 
 

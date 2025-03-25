@@ -1,5 +1,6 @@
 ---
 id: 'c9cac2f1-7647-41fb-bf13-13f23244ae37'
+slug: /c9cac2f1-7647-41fb-bf13-13f23244ae37
 title: 'Deny Patches in Default Policy From Centralized ITGLue KBIDs - Function'
 title_meta: 'Deny Patches in Default Policy From Centralized ITGLue KBIDs - Function'
 keywords: ['patches', 'policy', 'itglue', 'kbids', 'denied']
@@ -41,6 +42,5 @@ Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 ## Output
 
 Denied patches can be checked from the default approval policy.
-
 
 

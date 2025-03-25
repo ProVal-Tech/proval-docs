@@ -1,5 +1,6 @@
 ---
 id: '4b0ae11f-9850-48ea-87c8-2f538bcb80bd'
+slug: /4b0ae11f-9850-48ea-87c8-2f538bcb80bd
 title: 'Automate Database Maintenance'
 title_meta: 'Automate Database Maintenance'
 keywords: ['database', 'maintenance', 'log', 'tasks', 'cleanup', 'scheduling']
@@ -38,7 +39,6 @@ This solution provides an easy way to maintain and log any desired database main
 3. Schedule the client script [CWM - Automate - Script - Automate Database Maintenance Solution](<../cwa/scripts/Automate Database Maintenance Solution.md>) to run weekly, every Monday at 5:30 AM.
 
 ## FAQ
-
 
 
 

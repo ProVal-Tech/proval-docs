@@ -1,5 +1,6 @@
 ---
 id: '1653896a-517c-4f19-ad8a-affffd6e0bee'
+slug: /1653896a-517c-4f19-ad8a-affffd6e0bee
 title: 'Dell Command  Update - Deploy'
 title_meta: 'Dell Command  Update - Deploy'
 keywords: ['dell', 'update', 'deploy', 'endpoint', 'procedure']
@@ -88,6 +89,5 @@ Dell Command Update Logs: C:/ProgramData/Dell/Logs
 
 - scan.log
 - applyupdates.log
-
 
 

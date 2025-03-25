@@ -1,5 +1,6 @@
 ---
 id: '37ac5241-5cd4-429b-8aa0-8150173b7cff'
+slug: /37ac5241-5cd4-429b-8aa0-8150173b7cff
 title: 'Get-DesynchronizedSqlReplicas'
 title_meta: 'Get-DesynchronizedSqlReplicas'
 keywords: ['sql', 'replicas', 'desynchronized', 'database']
@@ -30,6 +31,5 @@ Returns a list of all SQL replication instances that are not synchronized or syn
 Location of output for log, result, and error files:
 - System Object
 - .\Get-DesynchronizedSqlReplicas-log.txt
-
 
 

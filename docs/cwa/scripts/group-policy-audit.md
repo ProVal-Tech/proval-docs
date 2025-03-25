@@ -1,5 +1,6 @@
 ---
 id: '2e5f5f2b-7c81-4aec-a76a-623a465f959a'
+slug: /2e5f5f2b-7c81-4aec-a76a-623a465f959a
 title: 'Group Policy - Audit'
 title_meta: 'Group Policy - Audit'
 keywords: ['automate', 'active', 'directory', 'gpo', 'audit', 'script', 'implementation']

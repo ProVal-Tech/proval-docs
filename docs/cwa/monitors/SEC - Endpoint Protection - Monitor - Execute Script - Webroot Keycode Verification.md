@@ -1,5 +1,6 @@
 ---
 id: '1c0eae92-6783-4a1c-8c75-6a02571ef9de'
+slug: /1c0eae92-6783-4a1c-8c75-6a02571ef9de
 title: 'SEC - Endpoint Protection - Monitor - Execute Script - Webroot Keycode Verification'
 title_meta: 'SEC - Endpoint Protection - Monitor - Execute Script - Webroot Keycode Verification'
 keywords: ['monitor', 'webroot', 'keycode', 'verification', 'agent', 'deployment']

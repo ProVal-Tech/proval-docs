@@ -1,5 +1,6 @@
 ---
 id: '7fde3cde-75d6-4db5-9e4e-ee8fbce1081b'
+slug: /7fde3cde-75d6-4db5-9e4e-ee8fbce1081b
 title: 'Run Script on Next Patching Schedule'
 title_meta: 'Run Script on Next Patching Schedule'
 keywords: ['monitor', 'patching', 'schedule', 'windows', 'automate']

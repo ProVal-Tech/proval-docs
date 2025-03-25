@@ -1,5 +1,6 @@
 ---
 id: '56c1260c-a689-45e9-a226-49bf31444750'
+slug: /56c1260c-a689-45e9-a226-49bf31444750
 title: 'CPU Temperature Monitor - Manage'
 title_meta: 'CPU Temperature Monitor - Manage'
 keywords: ['client', 'script', 'cpu', 'temperature', 'monitor', 'management']
@@ -29,6 +30,5 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 
 - [EPM - Sensors - Script - CPU Temperature Monitor - Create](<./CPU Temperature Monitor - Create.md>)
 - [EPM - Sensors - Remote Monitor - CPU Temperature Monitoring Process](<../monitors/CPU Temperature Monitoring Process.md>)
-
 
 

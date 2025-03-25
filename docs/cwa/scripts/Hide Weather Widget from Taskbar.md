@@ -1,5 +1,6 @@
 ---
 id: '618c9371-05fa-490e-ba06-20b76a806c72'
+slug: /618c9371-05fa-490e-ba06-20b76a806c72
 title: 'Hide Weather Widget from Taskbar'
 title_meta: 'Hide Weather Widget from Taskbar'
 keywords: ['registry', 'widget', 'windows', 'taskbar', 'automation']
@@ -31,6 +32,5 @@ This script will insert a registry key to hide the weather widget from the taskb
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cwa-email-impact-summary'
+slug: /cwa-email-impact-summary
 title: '2022 Transport Queue Issue Status'
 title_meta: '2022 Transport Queue Issue Status'
 keywords: ['email', 'flow', 'impact', 'exchange', 'server', 'status', 'monitoring']
@@ -30,6 +31,5 @@ Reference:
 | Operating System   | Operating system of the Exchange server               |
 | Last Contact      | Last contact of the server with RMM                   |
 | Email Status      | Script status return: fixed, not fixed, or not impacted |
-
 
 

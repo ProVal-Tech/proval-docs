@@ -1,5 +1,6 @@
 ---
 id: 'cb58d7c6-a83c-4459-b3b1-53871b63d078'
+slug: /cb58d7c6-a83c-4459-b3b1-53871b63d078
 title: 'VM Host Last Inventory 7 Days Ago'
 title_meta: 'VM Host Last Inventory 7 Days Ago'
 keywords: ['monitor', 'inventory', 'alert', 'virtualization', 'host']

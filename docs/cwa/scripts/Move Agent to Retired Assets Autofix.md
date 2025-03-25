@@ -1,5 +1,6 @@
 ---
 id: '960ebb92-13ba-4d19-9b02-5e0ce55db592'
+slug: /960ebb92-13ba-4d19-9b02-5e0ce55db592
 title: 'Move Agent to Retired Assets Autofix'
 title_meta: 'Move Agent to Retired Assets Autofix'
 keywords: ['agent', 'retired', 'assets', 'sql', 'monitor']
@@ -24,6 +25,5 @@ This script will move the agent it is run against to retired assets. This can be
 ## Process
 
 This script runs a SQL query against the machine to retire it.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '91b463bf-7bb2-4c79-98ca-ef556ea093b0'
+slug: /91b463bf-7bb2-4c79-98ca-ef556ea093b0
 title: 'Configure BGInfo'
 title_meta: 'Configure BGInfo'
 keywords: ['bginfo', 'install', 'tool', 'monitor']

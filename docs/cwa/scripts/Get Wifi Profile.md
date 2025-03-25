@@ -1,5 +1,6 @@
 ---
 id: 'd97282c0-4d81-46f9-b821-d553c2d8a596'
+slug: /d97282c0-4d81-46f9-b821-d553c2d8a596
 title: 'Get Wifi Profile'
 title_meta: 'Get Wifi Profile'
 keywords: ['wifi', 'profiles', 'automate', 'script', 'edf']
@@ -41,7 +42,6 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
-
 
 
 

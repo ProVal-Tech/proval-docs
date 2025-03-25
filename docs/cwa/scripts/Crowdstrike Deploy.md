@@ -1,5 +1,6 @@
 ---
 id: '96774e0b-8ce1-4fc6-a465-103b0e478e2c'
+slug: /96774e0b-8ce1-4fc6-a465-103b0e478e2c
 title: 'Crowdstrike Deploy'
 title_meta: 'Crowdstrike Deploy'
 keywords: ['crowdstrike', 'agent', 'installation', 'edf', 'script']
@@ -41,6 +42,5 @@ This script will install Crowdstrike on an agent using the CID key provided in t
 ## Output
 
 - Script log
-
 
 

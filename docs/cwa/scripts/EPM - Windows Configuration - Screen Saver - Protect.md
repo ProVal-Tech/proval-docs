@@ -1,5 +1,6 @@
 ---
 id: '952db509-c813-4225-a53f-7423d174ef24'
+slug: /952db509-c813-4225-a53f-7423d174ef24
 title: 'EPM - Windows Configuration - Screen Saver - Protect'
 title_meta: 'EPM - Windows Configuration - Screen Saver - Protect'
 keywords: ['screen', 'saver', 'timeout', 'ticketing', 'domain', 'configuration']
@@ -51,6 +52,5 @@ See [Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
-
 
 

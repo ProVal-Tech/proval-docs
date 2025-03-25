@@ -1,5 +1,6 @@
 ---
 id: '5721d83a-3303-4dc2-97ca-118683da0690'
+slug: /5721d83a-3303-4dc2-97ca-118683da0690
 title: 'Offboarding'
 title_meta: 'Offboarding'
 keywords: ['offboarding', 'monitor', 'edf', 'client', 'location', 'computer']
@@ -33,6 +34,5 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
-
 
 

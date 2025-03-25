@@ -1,5 +1,6 @@
 ---
 id: '5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2'
+slug: /5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2
 title: 'Copilot Revert Deployment'
 title_meta: 'Copilot Revert Deployment'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
@@ -32,4 +33,3 @@ Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
 ## Target
 
 Global
-

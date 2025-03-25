@@ -1,5 +1,6 @@
 ---
 id: 'b2c83951-fe1d-4d71-b334-223590be3cc4'
+slug: /b2c83951-fe1d-4d71-b334-223590be3cc4
 title: 'Create - Desktop Shortcut'
 title_meta: 'Create - Desktop Shortcut'
 keywords: ['shortcut', 'desktop', 'uri', 'icon', 'management']
@@ -230,6 +231,5 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
 
 

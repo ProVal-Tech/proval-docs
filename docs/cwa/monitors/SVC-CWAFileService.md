@@ -1,5 +1,6 @@
 ---
 id: '5ae52dd7-e476-49dd-823f-582cbf6de17e'
+slug: /5ae52dd7-e476-49dd-823f-582cbf6de17e
 title: 'SVC-CWAFileService'
 title_meta: 'SVC-CWAFileService'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'status']
@@ -26,4 +27,3 @@ CWAFileService is one of the important services for the Automate server. This mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
-

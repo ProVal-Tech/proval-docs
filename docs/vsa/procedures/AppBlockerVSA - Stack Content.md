@@ -1,5 +1,6 @@
 ---
 id: 'd818696a-9347-40bb-9de8-bd7fad7fa782'
+slug: /d818696a-9347-40bb-9de8-bd7fad7fa782
 title: 'AppBlockerVSA - Stack Content'
 title_meta: 'AppBlockerVSA - Stack Content'
 keywords: ['kaseya', 'app', 'blocker', 'ini', 'file', 'update']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Controls Kaseya App Blocker (updates Kaseya INI file)
-
 
 

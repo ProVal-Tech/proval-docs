@@ -1,5 +1,6 @@
 ---
 id: '4ad38519-386a-4645-8cea-a498e0cd0e25'
+slug: /4ad38519-386a-4645-8cea-a498e0cd0e25
 title: 'User Prompt - Reboot Audit'
 title_meta: 'User Prompt - Reboot Audit'
 keywords: ['reboot', 'tracking', 'user', 'prompt', 'dependencies', 'computer', 'system', 'property']
@@ -43,7 +44,6 @@ The dataview tracks the functioning of the [User Prompt for Reboot](<../../solut
 | Global Uptime Days to Send Prompts    | Uptime in days set in the `proval_RebootPromptUptimeDays` system property to automatically send the prompt. (0 --> Disabled) |
 | Global Prompt for Reboot Pending      | Is prompting enabled for computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 5 times and the issue is still not resolved. |
-
 
 
 

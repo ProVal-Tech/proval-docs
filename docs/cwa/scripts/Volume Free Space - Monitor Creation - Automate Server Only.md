@@ -1,5 +1,6 @@
 ---
 id: '8b42e4f9-eb46-4058-b4f9-e0f1ea8840cd'
+slug: /8b42e4f9-eb46-4058-b4f9-e0f1ea8840cd
 title: 'Volume Free Space - Monitor Creation - Automate Server Only'
 title_meta: 'Volume Free Space - Monitor Creation - Automate Server Only'
 keywords: ['monitor', 'volume', 'free', 'space', 'ticket', 'drives', 'autotask']
@@ -37,6 +38,5 @@ Referred to: [CWM - Automate - Script - Volume Free Space - Monitor Creation](<.
 
 - Script log
 - Remote Monitor
-
 
 

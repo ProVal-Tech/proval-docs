@@ -1,5 +1,6 @@
 ---
 id: '34cee8fe-1b6b-4558-a890-2face427ceb8'
+slug: /34cee8fe-1b6b-4558-a890-2face427ceb8
 title: 'OverFlowedVariable - SQL Insert - Execute'
 title_meta: 'OverFlowedVariable - SQL Insert - Execute'
 keywords: ['sql', 'insert', 'json', 'optimize', 'datapoints']
@@ -80,6 +81,5 @@ This is a function script and should not be run manually.
    - `TotalRowsToLimit`
    - `SQLInsert`
 10. Return that object.
-
 
 

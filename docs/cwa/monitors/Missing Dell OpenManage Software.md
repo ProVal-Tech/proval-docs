@@ -1,5 +1,6 @@
 ---
 id: 'e3bc733b-0083-4fbc-bd89-47adbabe738e'
+slug: /e3bc733b-0083-4fbc-bd89-47adbabe738e
 title: 'Missing Dell OpenManage Software'
 title_meta: 'Missing Dell OpenManage Software'
 keywords: ['monitor', 'dell', 'software', 'management', 'alert']
@@ -29,6 +30,5 @@ Managed Servers
 - **Subject:** `SW - Missing Dell OpenManage on %Computername%(%computerid%)`
   
 - **Summary:** To ensure proper monitoring of critical hardware components on this server, it is essential to install Dell OpenManage System Management Software. This software will enable the generation of accurate event log entries in the event of hardware failures. Please proceed with the installation as soon as possible.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a86e30e2-ac59-4c00-957a-f49575ff6027'
+slug: /a86e30e2-ac59-4c00-957a-f49575ff6027
 title: 'Hyper-V VMs Audit Script'
 title_meta: 'Hyper-V VMs Audit Script'
 keywords: ['hyper-v', 'audit', 'virtual', 'machine', 'information']
@@ -31,6 +32,5 @@ This dataview displays auditing information about Hyper-V virtual machines.
 | Automatic Start Action     | Displays the status of the automatic start action of the virtual machine. |
 | Automatic Stop Action      | Displays the status of the automatic stop action of the virtual machine.  |
 | Automatic Start Delay      | Displays the automatic start delay time of the virtual machine.   |
-
 
 

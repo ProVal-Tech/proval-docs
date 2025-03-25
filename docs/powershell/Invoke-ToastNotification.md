@@ -1,5 +1,6 @@
 ---
 id: 426118d9-ff83-444e-9744-30a0e26cb490
+slug: /426118d9-ff83-444e-9744-30a0e26cb490
 title: Invoke-ToastNotification
 title_meta: Invoke-ToastNotification
 keywords: ['toast', 'notification', 'reminder', 'reboot']

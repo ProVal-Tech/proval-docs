@@ -1,5 +1,6 @@
 ---
 id: 'f5668e2a-a631-4d79-aa44-54ad3c9ed4c6'
+slug: /f5668e2a-a631-4d79-aa44-54ad3c9ed4c6
 title: 'Windows Media Player Audit'
 title_meta: 'Windows Media Player Audit'
 keywords: ['media', 'player', 'audit', 'report', 'state', 'feature']
@@ -107,6 +108,5 @@ FROM
 WHERE 
   ss.variable = 'MediaPlayerCheck'
 ```
-
 
 

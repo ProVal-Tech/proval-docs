@@ -1,5 +1,6 @@
 ---
 id: 'a6e179d1-ac12-482b-b315-f0fae1b83353'
+slug: /a6e179d1-ac12-482b-b315-f0fae1b83353
 title: 'Registry contents Removal'
 title_meta: 'Registry contents Removal'
 keywords: ['registry', 'delete', 'pending', 'operations', 'cleanup']
@@ -55,4 +56,3 @@ No
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
 ## Attachments
 [Procedure_Remove_PendingFileRenameOperations.xml](<../../../static/attachments/itg/10533914/Procedure_Remove_PendingFileRenameOperations.xml>)
-

@@ -1,5 +1,6 @@
 ---
 id: '81638d59-3335-4464-af10-25f37ed41402'
+slug: /81638d59-3335-4464-af10-25f37ed41402
 title: 'Disk - Predictive Failure'
 title_meta: 'Disk - Predictive Failure'
 keywords: ['disk', 'health', 'monitor', 'windows', 'status']

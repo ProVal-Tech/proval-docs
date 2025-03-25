@@ -1,5 +1,6 @@
 ---
 id: '362c3958-f97e-4f40-bd1d-89cbfed9b17f'
+slug: /362c3958-f97e-4f40-bd1d-89cbfed9b17f
 title: 'BitLocker Key Backup Status'
 title_meta: 'BitLocker Key Backup Status'
 keywords: ['bitlocker', 'backup', 'active-directory', 'azure', 'custom', 'field']
@@ -24,6 +25,5 @@ This custom field is used to display the results of the [CW RMM - Task - BitLock
 **Level:** Endpoint  
 **Description:** Will display the most recent result after pushing the BitLocker recovery keys into AD/AzureAD.  
 **Editable:** Yes  
-
 
 

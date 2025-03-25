@@ -1,5 +1,6 @@
 ---
 id: '7668ab71-a969-42d2-bf54-6b3cc21e8cda'
+slug: /7668ab71-a969-42d2-bf54-6b3cc21e8cda
 title: 'Network Devices - Remove Older Than 60 Days'
 title_meta: 'Network Devices - Remove Older Than 60 Days'
 keywords: ['network', 'devices', 'inactive', 'sql', 'autofix']
@@ -27,6 +28,5 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
-
 
 

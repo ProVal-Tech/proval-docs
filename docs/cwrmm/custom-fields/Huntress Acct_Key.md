@@ -1,5 +1,6 @@
 ---
 id: 'b8ce44cf-a4a7-4b17-a292-43615b2b192a'
+slug: /b8ce44cf-a4a7-4b17-a292-43615b2b192a
 title: 'Huntress Acct_Key'
 title_meta: 'Huntress Acct_Key'
 keywords: ['huntress', 'custom', 'field', 'account', 'key']
@@ -24,6 +25,5 @@ This custom field is to be filled with the Huntress Account Key by the partner. 
 **Level:** Company  
 **Description:** Huntress Account Key  
 **Editable:** Yes  
-
 
 

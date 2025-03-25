@@ -1,5 +1,6 @@
 ---
 id: '445b29bc-7665-4f85-a6b9-dfb68e75d70f'
+slug: /445b29bc-7665-4f85-a6b9-dfb68e75d70f
 title: 'Windows - Fast Boot Enabled'
 title_meta: 'Windows - Fast Boot Enabled'
 keywords: ['fastboot', 'report', 'status', 'client', 'computer', 'os']
@@ -25,6 +26,5 @@ This document pulls data from the role detection of Fast Boot. It shows all mach
 | Computer Name   | Computer Name                                                                             |
 | OS              | Operating System installed on the machine                                                 |
 | Fast Boot Status| Shows "Fast Boot Enabled" if the role is detected, or "Not Detected" if Fast Boot is disabled |
-
 
 

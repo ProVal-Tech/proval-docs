@@ -1,5 +1,6 @@
 ---
 id: '69ce4eef-6126-486a-9b28-8626f847754e'
+slug: /69ce4eef-6126-486a-9b28-8626f847754e
 title: 'Ethernet Speed Less Than 100Mbps'
 title_meta: 'Ethernet Speed Less Than 100Mbps'
 keywords: ['ethernet', 'monitor', 'network', 'performance', 'ticket']

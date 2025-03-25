@@ -1,5 +1,6 @@
 ---
 id: '59682d1e-d5d7-4cf2-b923-684f6e5c24ce'
+slug: /59682d1e-d5d7-4cf2-b923-684f6e5c24ce
 title: 'Initialize-VsaAgentFields.ps1'
 title_meta: 'Initialize-VsaAgentFields.ps1'
 keywords: ['proval', 'stack', 'machine', 'customfields', 'initialization']
@@ -36,6 +37,5 @@ The VSAAPI module is used to interface with the client environment, setting new 
 - `Initialize-VsaAgentFields-error.txt`
 
 **NOTE:** This can be run from VSA 9.5 by executing the Agent Procedure: Shared > VSA Automation > Stack CF Initialization.
-
 
 

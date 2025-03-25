@@ -1,5 +1,6 @@
 ---
 id: '6357c957-b5b6-42eb-aacc-f4f2a12d3021'
+slug: /6357c957-b5b6-42eb-aacc-f4f2a12d3021
 title: 'ScreenConnect - End Session Command RMM+'
 title_meta: 'ScreenConnect - End Session Command RMM+'
 keywords: ['cwcontrol', 'session', 'guid', 'automation', 'rmm']
@@ -56,6 +57,5 @@ This script will populate several variables required for RMM+ to function proper
 ## Output
 
 **Script log messages only**
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'fff1e6ee-cc28-43da-87ef-cdb121414c76'
+slug: /fff1e6ee-cc28-43da-87ef-cdb121414c76
 title: 'Active Directory Reporting SQL Import Attachment'
 title_meta: 'Active Directory Reporting SQL Import Attachment'
 keywords: ['import', 'ad', 'reports', 'sql', 'active', 'directory']
@@ -24,4 +25,3 @@ Import the file using System → General → Import → SQL File (The SQL file i
 **Note:** Import the SQL file only after importing the script [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>) and executing the script [AD - Create Views/Table/Schedule for AD Reporting Solution](<../../cwa/scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>).
 ## Attachments
 [Import_All_AD_Reports.sql](<../../../static/attachments/itg/15079008/Import_All_AD_Reports.sql>)
-

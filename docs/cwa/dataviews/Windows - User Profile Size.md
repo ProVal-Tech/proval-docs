@@ -1,5 +1,6 @@
 ---
 id: '991ac24f-7c21-48c9-a649-43d17da6a515'
+slug: /991ac24f-7c21-48c9-a649-43d17da6a515
 title: 'Windows - User Profile Size'
 title_meta: 'Windows - User Profile Size'
 keywords: ['user', 'profile', 'sizes', 'windows', 'machine', 'folder', 'size', 'os']
@@ -28,6 +29,5 @@ This document displays all the available user profile sizes on a Windows machine
 | Profile Path     | Displays the user profile folder path.           |
 | Profile Size (MB)| Displays the user profile folder size in MB.    |
 | OS               | Displays the computer operating system.          |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c600a6e2-bd09-4172-8784-d969838eea23'
+slug: /c600a6e2-bd09-4172-8784-d969838eea23
 title: 'Endpoint - S1 Mgmt Server Discrepancy'
 title_meta: 'Endpoint - S1 Mgmt Server Discrepancy'
 keywords: ['sentinelone', 'validation', 'management', 'server', 'client', 'discrepancy']
@@ -27,6 +28,5 @@ Is the SentinelOne Management Server detected at the computer different from wha
 
 ![Screenshot 1](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_2.png)
-
 
 

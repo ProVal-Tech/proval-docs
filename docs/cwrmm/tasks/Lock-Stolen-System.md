@@ -1,5 +1,6 @@
 ---
 id: 'e9b29e34-d570-481f-99db-1a428763c5da'
+slug: /e9b29e34-d570-481f-99db-1a428763c5da
 title: 'Lock Stolen System'
 title_meta: 'Lock Stolen System'
 keywords: ['Lock','Stolen','System']

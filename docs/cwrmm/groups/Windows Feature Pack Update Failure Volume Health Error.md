@@ -1,5 +1,6 @@
 ---
 id: '891dd514-bfc7-4dba-b09c-7597145bb3e2'
+slug: /891dd514-bfc7-4dba-b09c-7597145bb3e2
 title: 'Windows Feature Pack Update Failure Volume Health Error'
 title_meta: 'Windows Feature Pack Update Failure Volume Health Error'
 keywords: ['windows', 'feature', 'update', 'failure', 'volume', 'health', 'error']
@@ -48,7 +49,6 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_9.png)  
 ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_10.png)
-
 
 
 

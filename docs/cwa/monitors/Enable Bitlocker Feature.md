@@ -1,5 +1,6 @@
 ---
 id: '1a32292b-df11-46ef-997f-7ad70f59061f'
+slug: /1a32292b-df11-46ef-997f-7ad70f59061f
 title: 'Enable Bitlocker Feature'
 title_meta: 'Enable Bitlocker Feature'
 keywords: ['bitlocker', 'encryption', 'windows', 'server', 'monitor']

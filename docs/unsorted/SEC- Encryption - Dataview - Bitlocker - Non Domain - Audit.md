@@ -1,5 +1,6 @@
 ---
 id: '95512be1-f340-42dc-b0c2-885396526850'
+slug: /95512be1-f340-42dc-b0c2-885396526850
 title: 'SEC- Encryption - Dataview - Bitlocker - Non Domain - Audit'
 title_meta: 'SEC- Encryption - Dataview - Bitlocker - Non Domain - Audit'
 keywords: ['bitlocker', 'audit', 'encryption', 'active-directory', 'backup', 'security']
@@ -117,6 +118,5 @@ FROM (
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
-
 
 

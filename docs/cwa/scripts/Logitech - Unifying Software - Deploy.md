@@ -1,5 +1,6 @@
 ---
 id: 'b86b8355-39ee-4f0c-8f54-33a21ed603f3'
+slug: /b86b8355-39ee-4f0c-8f54-33a21ed603f3
 title: 'Logitech - Unifying Software - Deploy'
 title_meta: 'Logitech - Unifying Software - Deploy'
 keywords: ['logitech', 'software', 'installation', 'unifying', 'driver']
@@ -39,6 +40,5 @@ This script will install a specified version of the Logitech Unifying Software b
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'be77cc20-d07b-4cbd-b762-cb20913860b9'
+slug: /be77cc20-d07b-4cbd-b762-cb20913860b9
 title: 'Set-Wallpaper'
 title_meta: 'Set-Wallpaper'
 keywords: ['wallpaper', 'desktop', 'background', 'image']
@@ -48,6 +49,5 @@ Downloads the image from the remote server and sets it as the current wallpaper 
 `PSCustomObject`
 
 Returns the registry settings edited by the script.
-
 
 

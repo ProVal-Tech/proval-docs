@@ -1,5 +1,6 @@
 ---
 id: '48349316-f40f-4dd7-a36c-c5121232e9fe'
+slug: /48349316-f40f-4dd7-a36c-c5121232e9fe
 title: 'Admin - Script Queue'
 title_meta: 'Admin - Script Queue'
 keywords: ['audit', 'scripts', 'automate', 'running', 'queued']
@@ -22,6 +23,5 @@ This dataview helps you audit the queued and running scripts in Automate.
 | ScriptID          | Displays the script ID.                               |
 | TotalCount        | Displays the total number of times the script has been executed. |
 | RunningPercentage  | Displays the script's running percentage.             |
-
 
 

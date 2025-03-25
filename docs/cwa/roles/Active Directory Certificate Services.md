@@ -1,5 +1,6 @@
 ---
 id: '72e7fd5f-827f-4b49-86c2-a894036cd4a3'
+slug: /72e7fd5f-827f-4b49-86c2-a894036cd4a3
 title: 'Active Directory Certificate Services'
 title_meta: 'Active Directory Certificate Services'
 keywords: ['adcs', 'servers', 'detection', 'windows', 'feature']
@@ -18,7 +19,6 @@ This document describes how to detect servers with the ADCS role installed.
 | Detection String                                                                                                                                          | Comparator | Result   | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | `\{%@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'AD-Certificate' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |
-
 
 
 

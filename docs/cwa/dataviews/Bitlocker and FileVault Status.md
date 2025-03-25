@@ -1,5 +1,6 @@
 ---
 id: '3a127207-3453-4b55-8e2d-cb179c255cdb'
+slug: /3a127207-3453-4b55-8e2d-cb179c255cdb
 title: 'Bitlocker and FileVault Status'
 title_meta: 'Bitlocker and FileVault Status'
 keywords: ['encryption', 'bitlocker', 'filevault', 'endpoints', 'status', 'automate']
@@ -30,6 +31,5 @@ This dataview will show the encryption status of endpoints in Automate, specific
 | BitLocker Status - System Drive  | The BitLocker status of the system drive for Windows devices                                    |
 | FileVault Status                 | The FileVault status for Mac devices                                                             |
 | Last Logon User                  | The last user that logged into the device based on information gathered by Automate             |
-
 
 

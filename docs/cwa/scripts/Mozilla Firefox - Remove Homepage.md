@@ -1,5 +1,6 @@
 ---
 id: '21929424-6cad-41b0-b039-ee798fc38ff7'
+slug: /21929424-6cad-41b0-b039-ee798fc38ff7
 title: 'Mozilla Firefox - Remove Homepage'
 title_meta: 'Mozilla Firefox - Remove Homepage'
 keywords: ['firefox', 'homepage', 'policy', 'script', 'windows']
@@ -38,6 +39,5 @@ The script will scan for and remove all homepage policies from the Firefox polic
 
 - Script log
 - Local file on the computer
-
 
 

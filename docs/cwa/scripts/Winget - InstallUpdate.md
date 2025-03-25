@@ -1,5 +1,6 @@
 ---
 id: 'dd445ce7-a149-452c-9b35-dc1adbab4e06'
+slug: /dd445ce7-a149-452c-9b35-dc1adbab4e06
 title: 'Winget - InstallUpdate'
 title_meta: 'Winget - InstallUpdate'
 keywords: ['winget', 'package', 'install', 'endpoint']
@@ -41,6 +42,5 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 ## Output
 
 - Script log
-
 
 

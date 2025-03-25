@@ -1,5 +1,6 @@
 ---
 id: '3c87c303-e892-4f6b-889f-acde66928978'
+slug: /3c87c303-e892-4f6b-889f-acde66928978
 title: 'Endpoint - FastBoot_Disabled'
 title_meta: 'Endpoint - FastBoot_Disabled'
 keywords: ['fastboot', 'disabled', 'endpoint', 'flag']
@@ -23,6 +24,5 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/Endpoint---FastBoot_Disabled/image_1.png)
 ![Screenshot 2](../../../static/img/Endpoint---FastBoot_Disabled/image_2.png)
-
 
 

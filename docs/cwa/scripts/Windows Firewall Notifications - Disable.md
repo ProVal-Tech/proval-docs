@@ -1,5 +1,6 @@
 ---
 id: '9b906a5c-919c-4799-85db-c43359bd6a15'
+slug: /9b906a5c-919c-4799-85db-c43359bd6a15
 title: 'Windows Firewall Notifications - Disable'
 title_meta: 'Windows Firewall Notifications - Disable'
 keywords: ['firewall', 'notifications', 'windows', 'script', 'disable']
@@ -28,6 +29,5 @@ This script will disable the firewall notifications for all users on a Windows s
 ## Output
 
 - Script logs
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '25717003-b658-47c5-abdf-978f9c2b5d5c'
+slug: /25717003-b658-47c5-abdf-978f9c2b5d5c
 title: 'Resize partition to install the WinRE update (KB5034441)'
 title_meta: 'Resize partition to install the WinRE update (KB5034441)'
 keywords: ['partition', 'winre', 'update', 'resize', 'windows']
@@ -48,6 +49,5 @@ It creates the primary partition with the size increase, and a label 'Windows RE
 ## Output
 
 - Script log
-
 
 

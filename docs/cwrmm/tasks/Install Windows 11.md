@@ -1,5 +1,6 @@
 ---
 id: '50d6c9a0-11d6-4d2f-bbc3-47411502448e'
+slug: /50d6c9a0-11d6-4d2f-bbc3-47411502448e
 title: 'Install Windows 11'
 title_meta: 'Install Windows 11'
 keywords: ['windows', 'upgrade', 'installation', 'script', 'update']
@@ -441,6 +442,5 @@ The final task should look like the screenshot below.
 - Script logs  
 ![Script Logs](../../../static/img/Install-Windows-11/image_60.png)  
 (**This output is from an incompatible Windows 10 computer.**)
-
 
 

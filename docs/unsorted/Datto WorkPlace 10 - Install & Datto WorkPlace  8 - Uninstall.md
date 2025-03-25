@@ -1,5 +1,6 @@
 ---
 id: '9cd723d7-005b-4d07-a1f5-26d30f6f99da'
+slug: /9cd723d7-005b-4d07-a1f5-26d30f6f99da
 title: 'Datto WorkPlace 10 - Install & Datto WorkPlace  8 - Uninstall'
 title_meta: 'Datto WorkPlace 10 - Install & Datto WorkPlace  8 - Uninstall'
 keywords: ['datto', 'workplace', 'installation', 'uninstallation', 'update']
@@ -31,6 +32,5 @@ This script will install Datto Workplace 10.3.0.281 and uninstall any other vers
 ## Output
 
 - Script log
-
 
 

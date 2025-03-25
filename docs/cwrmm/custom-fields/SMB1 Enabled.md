@@ -1,5 +1,6 @@
 ---
 id: '67da04f5-4170-402a-93b3-7e6236937263'
+slug: /67da04f5-4170-402a-93b3-7e6236937263
 title: 'SMB1 Enabled'
 title_meta: 'SMB1 Enabled'
 keywords: ['cw', 'rmm', 'smb1', 'custom', 'field', 'detection']
@@ -30,6 +31,5 @@ This custom field is used to store and display the results of the task [CW RMM -
 ## Sample Value
 
 ![Sample Value](../../../static/img/SMB1-Enabled/image_2.png)
-
 
 

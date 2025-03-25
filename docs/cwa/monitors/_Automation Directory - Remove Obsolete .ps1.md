@@ -1,5 +1,6 @@
 ---
 id: 'e2c56554-7f1d-4f1a-b1a2-37a0bd343629'
+slug: /e2c56554-7f1d-4f1a-b1a2-37a0bd343629
 title: '_Automation Directory - Remove Obsolete .ps1 Change'
 title_meta: '_Automation Directory - Remove Obsolete .ps1 Change'
 keywords: ['connectwise', 'monitor', 'obsolete', 'powershell', 'automation']

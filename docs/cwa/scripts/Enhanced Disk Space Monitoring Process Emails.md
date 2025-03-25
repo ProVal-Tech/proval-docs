@@ -1,5 +1,6 @@
 ---
 id: 'b7a10884-783a-43e3-b867-a7805932b015'
+slug: /b7a10884-783a-43e3-b867-a7805932b015
 title: 'Enhanced Disk Space Monitoring Process Emails'
 title_meta: 'Enhanced Disk Space Monitoring Process Emails'
 keywords: ['disk', 'monitoring', 'email', 'notifications', 'alert']
@@ -30,7 +31,6 @@ This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Mon
 | Name                     | Example                                                                                         | Required   | Description                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _sysTicketDefaultEmail   | [support@provaltech.com](mailto:support@provaltech.com); [Support@provaltech.com](mailto:Support@provaltech.com); [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | Partially  | Email address to send alerts on failures. Multiple email addresses can be stored by separating them with a semicolon. If the global variable `EmailAddress` is not set, then the script will fall back to this system property. |
-
 
 
 

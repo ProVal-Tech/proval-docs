@@ -1,5 +1,6 @@
 ---
 id: '64da30ad-04ef-486e-b152-855b51be5896'
+slug: /64da30ad-04ef-486e-b152-855b51be5896
 title: 'DUO Auth Proxy Deployment'
 title_meta: 'DUO Auth Proxy Deployment'
 keywords: ['duo', 'proxy', 'deployment', 'group', 'authentication']
@@ -61,7 +62,6 @@ This group adds the agent to the group for the "DUO Security Authentication Prox
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/DUO-Auth-Proxy-Deployment/image_15.png)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
-
 
 
 

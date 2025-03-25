@@ -1,5 +1,6 @@
 ---
 id: '3957a669-2951-43ed-bdaf-1c25cf88ff14'
+slug: /3957a669-2951-43ed-bdaf-1c25cf88ff14
 title: 'Run gpupdate force'
 title_meta: 'Run gpupdate force'
 keywords: ['gpupdate', 'windows', 'script', 'update', 'force']
@@ -26,6 +27,5 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
-
 
 

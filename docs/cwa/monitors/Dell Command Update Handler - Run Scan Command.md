@@ -1,5 +1,6 @@
 ---
 id: 'cbdea50e-32ca-413e-863d-bbf15836cb1b'
+slug: /cbdea50e-32ca-413e-863d-bbf15836cb1b
 title: 'Dell Command Update Handler - Run Scan Command'
 title_meta: 'Dell Command Update Handler - Run Scan Command'
 keywords: ['dell', 'monitor', 'update', 'workstation', 'windows']
@@ -22,6 +23,5 @@ The purpose of the monitor set is to execute the [Script - Dell Command Update -
 ## Target
 
 The SQL query limits the execution to Dell Workstations running Windows 10 or Windows 11.
-
 
 

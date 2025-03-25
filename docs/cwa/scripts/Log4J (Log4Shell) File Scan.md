@@ -1,5 +1,6 @@
 ---
 id: 'a8eab72d-3794-4808-9009-b01bf3c9bcba'
+slug: /a8eab72d-3794-4808-9009-b01bf3c9bcba
 title: 'Log4J (Log4Shell) File Scan'
 title_meta: 'Log4J (Log4Shell) File Scan'
 keywords: ['vulnerability', 'scan', 'log4shell', 'edf', 'reporting']
@@ -51,6 +52,5 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
-
 
 

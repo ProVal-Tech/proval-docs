@@ -1,5 +1,6 @@
 ---
 id: 'e47be58e-d72d-4396-aa0c-edef63f056e8'
+slug: /e47be58e-d72d-4396-aa0c-edef63f056e8
 title: 'plugin_proval_userfoldersizes'
 title_meta: 'plugin_proval_userfoldersizes'
 keywords: ['user', 'folder', 'size', 'information', 'script']
@@ -26,6 +27,5 @@ This script depends on **Get User Folder Sizes**.
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
-
 
 

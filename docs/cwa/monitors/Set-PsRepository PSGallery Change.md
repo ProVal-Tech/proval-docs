@@ -1,5 +1,6 @@
 ---
 id: '5e33196d-a1ce-4a8d-bc78-825c45ce8329'
+slug: /5e33196d-a1ce-4a8d-bc78-825c45ce8329
 title: 'Set-PsRepository PSGallery [Change]'
 title_meta: 'Set-PsRepository PSGallery [Change]'
 keywords: ['psgallery', 'repository', 'monitor', 'windows', 'trust']

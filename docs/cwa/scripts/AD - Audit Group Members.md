@@ -1,5 +1,6 @@
 ---
 id: '20f500f3-77da-48a8-aeb2-4661f1865421'
+slug: /20f500f3-77da-48a8-aeb2-4661f1865421
 title: 'AD - Audit Group Members'
 title_meta: 'AD - Audit Group Members'
 keywords: ['active-directory', 'audit', 'changes', 'ticketing', 'log']
@@ -48,6 +49,5 @@ If [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) return
 - Script Log
 - Log Files
 - Ticketing
-
 
 

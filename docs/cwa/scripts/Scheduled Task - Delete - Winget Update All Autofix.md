@@ -1,5 +1,6 @@
 ---
 id: '23d4e4bf-1a80-4db0-983b-99da88e8ba34'
+slug: /23d4e4bf-1a80-4db0-983b-99da88e8ba34
 title: 'Scheduled Task - Delete - Winget Update All Autofix'
 title_meta: 'Scheduled Task - Delete - Winget Update All Autofix'
 keywords: ['winget', 'tasks', 'windows', 'script', 'scheduled', 'uninstall']
@@ -32,6 +33,5 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
-
 
 

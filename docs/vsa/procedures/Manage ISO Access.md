@@ -1,5 +1,6 @@
 ---
 id: 'ce389f31-cb77-495f-9b20-18003303ae30'
+slug: /ce389f31-cb77-495f-9b20-18003303ae30
 title: 'Manage ISO Access'
 title_meta: 'Manage ISO Access'
 keywords: ['iso', 'mount', 'control', 'windows', 'access']
@@ -30,6 +31,5 @@ Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` t
 ## Output
 
 Agent Procedure Log
-
 
 

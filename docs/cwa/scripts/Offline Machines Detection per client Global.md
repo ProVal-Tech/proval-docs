@@ -1,5 +1,6 @@
 ---
 id: 'cbc62993-0c72-4826-bdfa-bf0aa498891f'
+slug: /cbc62993-0c72-4826-bdfa-bf0aa498891f
 title: 'Offline Machines Detection per client Global'
 title_meta: 'Offline Machines Detection per client Global'
 keywords: ['ticketing', 'offline', 'machines', 'client', 'monitoring']
@@ -144,6 +145,5 @@ PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
-
 
 

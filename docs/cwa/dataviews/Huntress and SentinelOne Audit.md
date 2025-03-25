@@ -1,5 +1,6 @@
 ---
 id: 'ac16bf53-5607-4ea9-8a5f-1f44f732ca1b'
+slug: /ac16bf53-5607-4ea9-8a5f-1f44f732ca1b
 title: 'Huntress and SentinelOne Audit'
 title_meta: 'Huntress and SentinelOne Audit'
 keywords: ['sentinelone', 'huntress', 'installation', 'status', 'report', 'agents']
@@ -30,7 +31,6 @@ This dataview will show the installation status (allowed or not) of Sentinel One
 | Huntress Missing Count      | Count of missing Huntress agents at each location         |
 | SentinelOne Install Count   | Count of SentinelOne agents installed at each location    |
 | SentinelOne Missing Count   | Count of missing SentinelOne agents at each location      |
-
 
 
 

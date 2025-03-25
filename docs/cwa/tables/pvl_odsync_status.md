@@ -1,5 +1,6 @@
 ---
 id: 'e7a826db-104c-4ebb-877f-b44e138067f9'
+slug: /e7a826db-104c-4ebb-877f-b44e138067f9
 title: 'pvl_odsync_status'
 title_meta: 'pvl_odsync_status'
 keywords: ['onedrive', 'sync', 'status', 'storage', 'information']
@@ -32,6 +33,5 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scrip
 | TotalQuota      | float    | Total size of the available quota (GB)         |
 | UsedQuota       | float    | Amount of used quota (GB)                       |
 | Username        | varchar  | Username                                        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c64596dd-b6d0-4afe-8e40-95b838f1b9c9'
+slug: /c64596dd-b6d0-4afe-8e40-95b838f1b9c9
 title: 'BackupTeamTool'
 title_meta: 'BackupTeamTool'
 keywords: ['speedtest', 'restart', 'download', 'files']
@@ -52,6 +53,5 @@ Enter the choice of action to perform:
 ## Output
 - `BackupTeamTool-log.txt`
 - `BackupTeamTool-Error.txt`
-
 
 

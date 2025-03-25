@@ -1,5 +1,6 @@
 ---
 id: '95f64d6e-cb10-4c2c-9d40-c55941a7d7bc'
+slug: /95f64d6e-cb10-4c2c-9d40-c55941a7d7bc
 title: 'Import - Remote Monitor - Update Orchestrator - Reboot Prevention [Change]'
 title_meta: 'Import - Remote Monitor - Update Orchestrator - Reboot Prevention [Change]'
 keywords: ['remote', 'monitor', 'sql', 'query', 'update', 'orchestrator']

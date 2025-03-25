@@ -1,5 +1,6 @@
 ---
 id: '99dc53c5-ca74-4988-815a-0a1ad3fad8eb'
+slug: /99dc53c5-ca74-4988-815a-0a1ad3fad8eb
 title: 'Windows Cluster Volume Space Audit'
 title_meta: 'Windows Cluster Volume Space Audit'
 keywords: ['audit', 'cluster', 'disk', 'space', 'report', 'hyper-v']
@@ -33,6 +34,5 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Cluster Volume Used Space (GB)          | The cluster volume used size on the Hyper-V cluster server               |
 | Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
 | Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
-
 
 

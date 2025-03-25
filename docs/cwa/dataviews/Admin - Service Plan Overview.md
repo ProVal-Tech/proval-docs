@@ -1,5 +1,6 @@
 ---
 id: '50405d6a-03a8-48b5-9299-13584b818829'
+slug: /50405d6a-03a8-48b5-9299-13584b818829
 title: 'Admin - Service Plan Overview'
 title_meta: 'Admin - Service Plan Overview'
 keywords: ['service', 'plan', 'status', 'onboarding', 'patching', 'location', 'client']
@@ -28,6 +29,5 @@ This document provides an overview of the service plan status, onboarding, patch
 | Workstations Patching      | Displays the workstations patching status. [Enabled/Disabled]                                        |
 | Administrator Credentials  | Displays the status of admin credentials set in the Deployment & Default tab on Locations.           |
 | Cache Drive                | Displays the status of the location cache drive.                                                     |
-
 
 

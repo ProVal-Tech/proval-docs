@@ -1,5 +1,6 @@
 ---
 id: 'b6a7c804-693c-4cf5-a60e-61dcb10ddcae'
+slug: /b6a7c804-693c-4cf5-a60e-61dcb10ddcae
 title: 'Is Primary Domain Controller'
 title_meta: 'Is Primary Domain Controller'
 keywords: ['validate', 'primary', 'domain', 'controller', 'machine', 'group']
@@ -36,6 +37,5 @@ The custom field is then used to create the [CW RMM - Machine Group - Infrastruc
 ## Sample Value
 
 ![Sample Value](../../../static/img/Is-Primary-Domain-Controller/image_3.png)
-
 
 

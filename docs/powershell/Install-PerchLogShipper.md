@@ -1,5 +1,6 @@
 ---
 id: '41fd7a2b-4604-4ef1-bd74-c7a4325da37e'
+slug: /41fd7a2b-4604-4ef1-bd74-c7a4325da37e
 title: 'Install-PerchLogShipper'
 title_meta: 'Install-PerchLogShipper'
 keywords: ['install', 'perch', 'logshipper', 'monitoring']
@@ -31,6 +32,5 @@ This command installs Perch Log Shipper. A token is necessary to complete the in
 ## Output
 - .\Install-PerchLogShipper-log.txt
 - .\Install-PerchLogShipper-Error.txt
-
 
 

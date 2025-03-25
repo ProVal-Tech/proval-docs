@@ -1,5 +1,6 @@
 ---
 id: 'ef0eede8-0b3c-4307-8d17-b99e4b80332a'
+slug: /ef0eede8-0b3c-4307-8d17-b99e4b80332a
 title: 'Firefox - Install Extension'
 title_meta: 'Firefox - Install Extension'
 keywords: ['firefox', 'extension', 'installation', 'configuration', 'setup']
@@ -56,6 +57,5 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on the computer
-
 
 

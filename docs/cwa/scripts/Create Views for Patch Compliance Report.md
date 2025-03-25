@@ -1,5 +1,6 @@
 ---
 id: '7174f88a-38fc-4e5a-83cc-1f48a6c29526'
+slug: /7174f88a-38fc-4e5a-83cc-1f48a6c29526
 title: 'Create Views for Patch Compliance Report'
 title_meta: 'Create Views for Patch Compliance Report'
 keywords: ['patch', 'compliance', 'reporting', 'database', 'views']
@@ -36,6 +37,5 @@ Other items depend on this script being run to function, which are listed below:
 ## Output
 
 This is a one-time use script, used to install/create three views. After running it once, this script can be removed from the environment.
-
 
 

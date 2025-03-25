@@ -1,5 +1,6 @@
 ---
 id: '0163e7d2-d72d-4b31-b0fe-294df333d125'
+slug: /0163e7d2-d72d-4b31-b0fe-294df333d125
 title: 'Install-AutomateAgentGPO'
 title_meta: 'Install-AutomateAgentGPO'
 keywords: ['install', 'automate', 'agent', 'gpo']
@@ -111,6 +112,5 @@ Creates a Group Policy Object to run a scheduled task that will immediately run 
   The GPO will execute the deployment script (`Automate-Deploy.ps1`) immediately on the end machines with the help of a scheduled task.
 - **Deployment Script:**  
   The deployment script is placed in the NETLOGON folder.
-
 
 

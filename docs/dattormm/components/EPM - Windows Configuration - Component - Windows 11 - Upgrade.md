@@ -1,5 +1,6 @@
 ---
 id: '8e25f0d8-8a04-4f5b-853a-282b9f005d9c'
+slug: /8e25f0d8-8a04-4f5b-853a-282b9f005d9c
 title: 'EPM - Windows Configuration - Component - Windows 11 - Upgrade'
 title_meta: 'EPM - Windows Configuration - Component - Windows 11 - Upgrade'
 keywords: ['windows', 'rearm', 'license', 'evaluation', 'datto', 'component']

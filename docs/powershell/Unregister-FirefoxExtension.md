@@ -1,5 +1,6 @@
 ---
 id: 'e9295813-fbf2-43fe-b6a0-20da0ae7b21d'
+slug: /e9295813-fbf2-43fe-b6a0-20da0ae7b21d
 title: 'Unregister-FirefoxExtension'
 title_meta: 'Unregister-FirefoxExtension'
 keywords: ['unregister', 'firefox', 'extension', 'remove']
@@ -37,6 +38,5 @@ The output will be logged in:
 ```
 .\Unregister-FirefoxExtension-log.txt
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'dad7ec2a-4998-47f9-bcb2-c886d3bea833'
+slug: /dad7ec2a-4998-47f9-bcb2-c886d3bea833
 title: 'Uninstall New Teams'
 title_meta: 'Uninstall New Teams'
 keywords: ['uninstall', 'teams', 'windows', 'script', 'software']
@@ -47,6 +48,5 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
-
 
 

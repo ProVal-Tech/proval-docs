@@ -1,5 +1,6 @@
 ---
 id: '984edd72-ce3d-4817-9628-74100ef83865'
+slug: /984edd72-ce3d-4817-9628-74100ef83865
 title: 'Windows Firewall Public'
 title_meta: 'Windows Firewall Public'
 keywords: ['firewall', 'windows', 'public', 'security']
@@ -18,7 +19,6 @@ This document outlines the process to determine if the Windows Firewall is enabl
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | `\\\{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |
-
 
 
 

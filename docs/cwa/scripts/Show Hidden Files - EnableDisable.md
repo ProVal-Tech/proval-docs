@@ -1,5 +1,6 @@
 ---
 id: 'be2a3cab-5528-4b53-a636-713198b10fa1'
+slug: /be2a3cab-5528-4b53-a636-713198b10fa1
 title: 'Show Hidden Files - EnableDisable'
 title_meta: 'Show Hidden Files - EnableDisable'
 keywords: ['hidden', 'files', 'script', 'automation', 'parameter']
@@ -36,6 +37,5 @@ The script will hide or unhide hidden files based on the input parameter.
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c'
+slug: /e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c
 title: 'Reset Reboot Pending EDFs'
 title_meta: 'Reset Reboot Pending EDFs'
 keywords: ['edf', 'monitor', 'reboot', 'clear', 'windows', 'configuration']
@@ -35,6 +36,5 @@ This script simply sets the following EDFs to 0 so that the user prompting stops
 ## Output
 
 No logging is performed with this script. It simply zeros out the required EDFs for the dependencies.
-
 
 

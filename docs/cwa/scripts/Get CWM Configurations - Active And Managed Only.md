@@ -1,5 +1,6 @@
 ---
 id: '0b46811b-be88-407b-aa61-6c63a73ff848'
+slug: /0b46811b-be88-407b-aa61-6c63a73ff848
 title: 'Get CWM Configurations - Active And Managed Only'
 title_meta: 'Get CWM Configurations - Active And Managed Only'
 keywords: ['connectwise', 'configurations', 'database', 'custom', 'table', 'dataview', 'sql', 'api']
@@ -51,6 +52,5 @@ How to get clientID: [Request to get a Client ID](https://connectwise20.my.site.
 - Script Log
 - Custom Table
 - Dataview
-
 
 

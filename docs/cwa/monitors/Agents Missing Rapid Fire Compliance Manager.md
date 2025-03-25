@@ -1,5 +1,6 @@
 ---
 id: 'c9e3891e-1588-4dbc-85eb-dc39a861a433'
+slug: /c9e3891e-1588-4dbc-85eb-dc39a861a433
 title: 'Agents Missing Rapid Fire Compliance Manager'
 title_meta: 'Agents Missing Rapid Fire Compliance Manager'
 keywords: ['monitor', 'agent', 'compliance', 'deployment', 'alerting']
@@ -26,7 +27,6 @@ Global
 *To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/Agents-Missing-Rapid-Fire-Compliance-Manager/image_1.png)
-
 
 
 

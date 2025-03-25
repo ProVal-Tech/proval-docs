@@ -1,5 +1,6 @@
 ---
 id: '00b52ce7-d496-4d30-9123-09ae8233fd77'
+slug: /00b52ce7-d496-4d30-9123-09ae8233fd77
 title: 'Configure BGInfo'
 title_meta: 'Configure BGInfo'
 keywords: ['bginfo', 'configuration', 'download', 'tool', 'script']

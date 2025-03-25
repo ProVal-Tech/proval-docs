@@ -1,5 +1,6 @@
 ---
 id: 'dce82a22-77ba-4133-90d9-78a0a1b88412'
+slug: /dce82a22-77ba-4133-90d9-78a0a1b88412
 title: 'Import - Remote Monitor - Veeam Service Monitor'
 title_meta: 'Import - Remote Monitor - Veeam Service Monitor'
 keywords: ['veeam', 'monitor', 'service', 'setup', 'sql', 'alert']

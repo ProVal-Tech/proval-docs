@@ -1,5 +1,6 @@
 ---
 id: 'ff5f6191-df47-49a9-b3ff-de96ee484e39'
+slug: /ff5f6191-df47-49a9-b3ff-de96ee484e39
 title: 'DotNet3 - Disable'
 title_meta: 'DotNet3 - Disable'
 keywords: ['automate', 'implementation', 'dotnet', 'script', 'dependency']
@@ -24,6 +25,5 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 ## Process
 
 Please review the agnostic content documentation for process information.
-
 
 

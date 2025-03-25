@@ -1,5 +1,6 @@
 ---
 id: 'a6e7a255-6d3e-4c00-bea0-636533914cbc'
+slug: /a6e7a255-6d3e-4c00-bea0-636533914cbc
 title: 'KRBTGT Account - Reset Keys'
 title_meta: 'KRBTGT Account - Reset Keys'
 keywords: ['active-directory', 'reset', 'krbtgt', 'account', 'script']
@@ -37,6 +38,5 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Res
 
 - Script log
 - Local file on the computer
-
 
 

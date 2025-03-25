@@ -1,5 +1,6 @@
 ---
 id: '4a93b183-7e52-42a5-b72a-db3abbb973e1'
+slug: /4a93b183-7e52-42a5-b72a-db3abbb973e1
 title: 'Uninstall LiveConnect'
 title_meta: 'Uninstall LiveConnect'
 keywords: ['uninstallation', 'liveconnect', 'agent', 'endpoint', 'procedure']
@@ -60,6 +61,5 @@ Agent Procedure Log
 ## Export Attachment
 
 Attached the content XML VSA Export to this document.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd2d35bf1-52bc-41da-9802-76699c5d29bd'
+slug: /d2d35bf1-52bc-41da-9802-76699c5d29bd
 title: 'Windows - Dell and HP Management Software Status'
 title_meta: 'Windows - Dell and HP Management Software Status'
 keywords: ['dell', 'hp', 'servers', 'management', 'software', 'dataview']
@@ -31,6 +32,5 @@ None
 | Date Installed      | Shows when the software was installed                                        |
 | Size               | Shows the total size of the installed application                             |
 | Version            | Shows the version of the management software installed on the machine        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '959ac6da-8bb3-41ad-abcc-ba5df775624d'
+slug: /959ac6da-8bb3-41ad-abcc-ba5df775624d
 title: 'Uninstall TeamViewer'
 title_meta: 'Uninstall TeamViewer'
 keywords: ['remote', 'monitor', 'teamviewer', 'removal', 'windows']

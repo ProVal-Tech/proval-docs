@@ -1,5 +1,6 @@
 ---
 id: '202e2dde-5865-4035-8410-37dc6cb92a60'
+slug: /202e2dde-5865-4035-8410-37dc6cb92a60
 title: 'BlackPoint - SnapAgent Installer'
 title_meta: 'BlackPoint - SnapAgent Installer'
 keywords: ['snapagent', 'installation', 'monitor', 'edf', 'deployment']
@@ -60,6 +61,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Local files on the computer
-
 
 

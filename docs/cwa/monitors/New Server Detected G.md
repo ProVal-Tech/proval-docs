@@ -1,5 +1,6 @@
 ---
 id: '6279a0e9-f7d6-4bfb-98e5-2572c7d20736'
+slug: /6279a0e9-f7d6-4bfb-98e5-2572c7d20736
 title: 'New Server Detected G'
 title_meta: 'New Server Detected G'
 keywords: ['monitor', 'windows', 'linux', 'server', 'backup']

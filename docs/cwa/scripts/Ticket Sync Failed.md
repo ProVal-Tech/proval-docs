@@ -1,5 +1,6 @@
 ---
 id: 'f490325a-023c-430d-876d-e4d311ff3e89'
+slug: /f490325a-023c-430d-876d-e4d311ff3e89
 title: 'Ticket Sync Failed'
 title_meta: 'Ticket Sync Failed'
 keywords: ['ticket', 'sync', 'email', 'monitor', 'automate']
@@ -42,6 +43,5 @@ The monitor will trigger this script and pass parameters to it. The parameter pa
 ## Output
 
 The only output for this script is an email to the configured email address. If this email fails to send, the data will be visible in the "Failed Emails" section of the system dashboard.
-
 
 

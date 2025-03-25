@@ -1,5 +1,6 @@
 ---
 id: '550036d9-941a-4b10-a550-fd0a81ba3d14'
+slug: /550036d9-941a-4b10-a550-fd0a81ba3d14
 title: 'Import-LMCertificate'
 title_meta: 'Import-LMCertificate'
 keywords: ['import', 'certificate', 'localmachine', 'security']
@@ -56,6 +57,5 @@ System.Security.Cryptography.X509Certificates.X509Certificate2
 ## Log Files
 - .\Import-LMCertificate-log.txt
 - .\Import-LMCertificate-error.txt
-
 
 

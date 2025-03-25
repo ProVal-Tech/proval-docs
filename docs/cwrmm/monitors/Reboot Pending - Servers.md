@@ -1,5 +1,6 @@
 ---
 id: 'b456d0ae-a456-4a35-85c2-c9b44eef2844'
+slug: /b456d0ae-a456-4a35-85c2-c9b44eef2844
 title: 'Reboot Pending - Servers'
 title_meta: 'Reboot Pending - Servers'
 keywords: ['monitor', 'ticket', 'reboot', 'windows', 'servers']
@@ -61,6 +62,5 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
 
 

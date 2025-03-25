@@ -1,5 +1,6 @@
 ---
 id: '81645955-50e9-45e6-b635-e6780aefc390'
+slug: /81645955-50e9-45e6-b635-e6780aefc390
 title: 'Computer Description Audit'
 title_meta: 'Computer Description Audit'
 keywords: ['computer', 'description', 'report', 'sql', 'agent']

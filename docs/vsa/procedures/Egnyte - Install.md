@@ -1,5 +1,6 @@
 ---
 id: '04d18467-ad93-4ed2-8da9-52796031d41c'
+slug: /04d18467-ad93-4ed2-8da9-52796031d41c
 title: 'Egnyte - Install'
 title_meta: 'Egnyte - Install'
 keywords: ['egnyte', 'installation', 'software', 'office', 'reboot']
@@ -43,6 +44,5 @@ The procedure requires the custom field to run: [Custom Field - Egnyte - Install
 ## Output
 
 Agent Logs
-
 
 

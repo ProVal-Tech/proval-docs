@@ -1,5 +1,6 @@
 ---
 id: '12423bcf-17d9-417e-ad6e-b862dd04f184'
+slug: /12423bcf-17d9-417e-ad6e-b862dd04f184
 title: 'Out of Date CU _ Install Failure'
 title_meta: 'Out of Date CU _ Install Failure'
 keywords: ['cumulative', 'update', 'failure', 'detection', 'windows']
@@ -61,6 +62,5 @@ The group will detect the computers where the latest cumulative update installat
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_15.png)
 
 ![Image](../../../static/img/Out-of-Date-CU-_-Install-Failure/image_16.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '9af7383a-7bdd-4ea1-b333-1b35732b1bb7'
+slug: /9af7383a-7bdd-4ea1-b333-1b35732b1bb7
 title: 'SWM - Software Configuration - Component - WinGet Processor Suite'
 title_meta: 'SWM - Software Configuration - Component - WinGet Processor Suite'
 keywords: ['winget', 'export', 'import', 'update', 'uninstall', 'json', 'packages']
@@ -107,6 +108,5 @@ Import the component in this directory into the target environment.
 
 ### Output
 stdOut & stdError
-
 
 

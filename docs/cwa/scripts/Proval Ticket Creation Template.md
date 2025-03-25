@@ -1,5 +1,6 @@
 ---
 id: '9385b560-6005-4a7e-b7f3-de9a9baa5d8a'
+slug: /9385b560-6005-4a7e-b7f3-de9a9baa5d8a
 title: 'Proval Ticket Creation Template'
 title_meta: 'Proval Ticket Creation Template'
 keywords: ['ticket', 'creation', 'standard', 'clients', 'script']
@@ -56,6 +57,5 @@ This document establishes a new standard for creating tickets for our clients.
 ## Output
 
 - Adds to a variable `VarLog` to be displayed in a parent ticket.
-
 
 

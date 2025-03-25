@@ -1,5 +1,6 @@
 ---
 id: 'ca5427f7-0efe-499d-9e80-c06698efa5d0'
+slug: /ca5427f7-0efe-499d-9e80-c06698efa5d0
 title: 'Active Directory Reporting Solution'
 title_meta: 'Active Directory Reporting Solution'
 keywords: ['active-directory', 'report', 'user', 'assessment', 'group', 'computer', 'audit']
@@ -88,7 +89,6 @@ If all of your clients do not have any detected weak passwords, the auditing scr
 If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
 
 ![Plugin Example](../../../static/img/Active-Directory-Reporting-Solution/image_3.png)
-
 
 
 

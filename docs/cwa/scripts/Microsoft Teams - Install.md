@@ -1,5 +1,6 @@
 ---
 id: 'beb1b0d0-511f-46c8-8435-dae853412794'
+slug: /beb1b0d0-511f-46c8-8435-dae853412794
 title: 'Microsoft Teams - Install'
 title_meta: 'Microsoft Teams - Install'
 keywords: ['teams', 'installer', 'scheduled', 'task', 'user']
@@ -29,6 +30,5 @@ Refer to [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723) for det
 
 - Script log
 - Local file on the computer
-
 
 

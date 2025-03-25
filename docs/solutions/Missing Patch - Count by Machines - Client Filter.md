@@ -1,5 +1,6 @@
 ---
 id: 'ab16db00-9f6e-4ea8-974f-8756b3bd2881'
+slug: /ab16db00-9f6e-4ea8-974f-8756b3bd2881
 title: 'Missing Patch - Count by Machines - Client Filter'
 title_meta: 'Missing Patch - Count by Machines - Client Filter'
 keywords: ['dataview', 'patch', 'client', 'machines', 'status']
@@ -27,6 +28,5 @@ This solution provides a dataview of the client-level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
-
 
 

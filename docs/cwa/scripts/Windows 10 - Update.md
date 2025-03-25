@@ -1,5 +1,6 @@
 ---
 id: '3f819775-4c68-4511-ad44-d97a37ca3869'
+slug: /3f819775-4c68-4511-ad44-d97a37ca3869
 title: 'Windows 10 - Update'
 title_meta: 'Windows 10 - Update'
 keywords: ['windows', 'update', 'reboot', 'notification', 'log']
@@ -56,6 +57,5 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
-
 
 

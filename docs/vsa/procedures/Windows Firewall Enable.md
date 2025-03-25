@@ -1,5 +1,6 @@
 ---
 id: '2b875e4d-de3a-40ad-a63d-508a97d20ad9'
+slug: /2b875e4d-de3a-40ad-a63d-508a97d20ad9
 title: 'Windows Firewall Enable'
 title_meta: 'Windows Firewall Enable'
 keywords: ['windows', 'firewall', 'public', 'private', 'enable', 'network']
@@ -64,6 +65,5 @@ If `EnablePublicFirewall` is set to 1, Windows Firewall will be enabled for Publ
 ## Output
 
 AP Log
-
 
 

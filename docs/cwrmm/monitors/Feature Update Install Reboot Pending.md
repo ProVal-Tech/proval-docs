@@ -1,5 +1,6 @@
 ---
 id: '94a786f8-dfa2-416c-aa3b-e57acbba1cb2'
+slug: /94a786f8-dfa2-416c-aa3b-e57acbba1cb2
 title: 'Feature Update Install Reboot Pending'
 title_meta: 'Feature Update Install Reboot Pending'
 keywords: ['notifications', 'feature', 'update', 'install', 'reboot', 'pending', 'monitor']
@@ -51,6 +52,5 @@ Notifications for computers where the `Feature Update Install with Tracking` scr
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the `Save` button.  
     ![Step 10](../../../static/img/Feature-Update-Install-Reboot-Pending/image_10.png)
-
 
 

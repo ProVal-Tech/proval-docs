@@ -1,5 +1,6 @@
 ---
 id: '4203838c-6e42-42a4-9a35-d6e1e9ea41b7'
+slug: /4203838c-6e42-42a4-9a35-d6e1e9ea41b7
 title: 'Win10 Out of Compliance'
 title_meta: 'Win10 Out of Compliance'
 keywords: ['compliance', 'report', 'windows', 'audit', 'count']
@@ -81,4 +82,3 @@ Attach the export XML of the report to this document.
 ## Attachments
 [out_of_complaince_report.xml](<../../../static/attachments/itg/10672467/out_of_complaince_report.xml>)
 [Win10_Out_of_Compliance.xlsx](<../../../static/attachments/itg/10672467/Win10_Out_of_Compliance.xlsx>)
-

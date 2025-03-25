@@ -1,5 +1,6 @@
 ---
 id: '9cd465c4-1fed-40fb-8ac2-0b170c9c50b4'
+slug: /9cd465c4-1fed-40fb-8ac2-0b170c9c50b4
 title: 'Internet Latest Speed - Audit'
 title_meta: 'Internet Latest Speed - Audit'
 keywords: ['speed', 'audit', 'network', 'bandwidth', 'performance', 'latency', 'jitter', 'packet loss', 'ISP']
@@ -51,7 +52,6 @@ This document displays the latest audited speed test information from the last s
 | ResultURL      | The URL of the speed test result.                                            |
 | DownloadMbps   | The download speed detected in Mbps.                                         |
 | UploadMbps     | The upload speed detected in Mbps.                                           |
-
 
 
 

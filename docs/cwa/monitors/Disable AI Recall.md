@@ -1,5 +1,6 @@
 ---
 id: 'c9ef3af9-ea83-467d-a5b7-e34248ab65c5'
+slug: /c9ef3af9-ea83-467d-a5b7-e34248ab65c5
 title: 'Disable AI Recall'
 title_meta: 'Disable AI Recall'
 keywords: ['windows', 'ai', 'recall', 'monitor', 'disable']

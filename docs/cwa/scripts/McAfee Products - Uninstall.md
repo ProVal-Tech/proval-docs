@@ -1,5 +1,6 @@
 ---
 id: '561ad1ae-cf4c-49cf-83ea-c41148e66de8'
+slug: /561ad1ae-cf4c-49cf-83ea-c41148e66de8
 title: 'McAfee Products - Uninstall'
 title_meta: 'McAfee Products - Uninstall'
 keywords: ['mcafee', 'uninstall', 'windows', 'software', 'removal']
@@ -30,6 +31,5 @@ This script is an Automate implementation of the agnostic solution [SWM - Softwa
 ## Output
 
 - Script Log
-
 
 

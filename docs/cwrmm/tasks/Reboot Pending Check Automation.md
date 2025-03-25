@@ -1,5 +1,6 @@
 ---
 id: '509ed97f-105b-47d7-8a66-f7da58da8138'
+slug: /509ed97f-105b-47d7-8a66-f7da58da8138
 title: 'Reboot Pending Check Automation'
 title_meta: 'Reboot Pending Check Automation'
 keywords: ['reboot', 'check', 'automation', 'custom', 'field', 'dynamic', 'group', 'endpoint']
@@ -217,7 +218,6 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-
 
 
 

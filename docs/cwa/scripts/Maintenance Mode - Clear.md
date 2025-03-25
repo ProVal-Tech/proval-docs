@@ -1,5 +1,6 @@
 ---
 id: 'd7f09bd1-6c13-49a4-af0e-87d9ab3f279b'
+slug: /d7f09bd1-6c13-49a4-af0e-87d9ab3f279b
 title: 'Maintenance Mode - Clear'
 title_meta: 'Maintenance Mode - Clear'
 keywords: ['bulk', 'clear', 'maintenance', 'mode', 'script']
@@ -30,6 +31,5 @@ The script will execute the command to remove Maintenance mode from the target m
 ## Output
 
 - Script log
-
 
 

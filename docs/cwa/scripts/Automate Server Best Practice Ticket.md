@@ -1,5 +1,6 @@
 ---
 id: 'd56f260f-2d8c-4cb0-aa97-ea05b1f4755a'
+slug: /d56f260f-2d8c-4cb0-aa97-ea05b1f4755a
 title: 'Automate Server Best Practice Ticket'
 title_meta: 'Automate Server Best Practice Ticket'
 keywords: ['hardening', 'security', 'automation', 'gpo', 'firewall', 'permissions', 'tls', 'audit']
@@ -59,6 +60,5 @@ This script goes through the process of auditing and setting up hardening rules 
 
 - Ticket
 - Script Log
-
 
 

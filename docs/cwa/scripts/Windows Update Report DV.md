@@ -1,5 +1,6 @@
 ---
 id: '41141ff5-ef57-4900-93d4-642b4a9d254f'
+slug: /41141ff5-ef57-4900-93d4-642b4a9d254f
 title: 'Windows Update Report DV'
 title_meta: 'Windows Update Report DV'
 keywords: ['patches', 'report', 'windows', 'update', 'table']
@@ -43,7 +44,6 @@ Get a detailed list of patches that are installed or available on the local mach
 - Script Log
 - Custom Table
 - Dataview
-
 
 
 

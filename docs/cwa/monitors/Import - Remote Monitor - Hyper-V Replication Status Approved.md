@@ -1,5 +1,6 @@
 ---
 id: 'f201b6f8-2844-484b-b3f8-79e1fd76e819'
+slug: /f201b6f8-2844-484b-b3f8-79e1fd76e819
 title: 'Import - Remote Monitor - Hyper-V Replication Status'
 title_meta: 'Import - Remote Monitor - Hyper-V Replication Status'
 keywords: ['hyper-v', 'replication', 'monitoring', 'alerts', 'troubleshooting']

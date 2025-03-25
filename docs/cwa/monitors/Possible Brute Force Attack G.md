@@ -1,5 +1,6 @@
 ---
 id: 'a520b645-036d-45ce-8ca6-8f3d31ee30cc'
+slug: /a520b645-036d-45ce-8ca6-8f3d31ee30cc
 title: 'Possible Brute Force Attack G'
 title_meta: 'Possible Brute Force Attack G'
 keywords: ['brute', 'force', 'attack', 'eventlog', 'security', 'monitor', 'alert']

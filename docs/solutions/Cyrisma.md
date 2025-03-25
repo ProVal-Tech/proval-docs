@@ -1,5 +1,6 @@
 ---
 id: 'f54508ce-319d-48dc-a178-7d3cd35cb021'
+slug: /f54508ce-319d-48dc-a178-7d3cd35cb021
 title: 'Cyrisma'
 title_meta: 'Cyrisma'
 keywords: ['cyrisma', 'sensor', 'deployment', 'monitoring', 'audit']
@@ -32,6 +33,5 @@ Follow the steps below for the implementation:
 - Create Monitor: [CW RMM - Monitor - CRI Agent Deployment Status Check](<../cwrmm/monitors/CRI Agent Deployment Status Check.md>)
 
 Follow the Monitor and Task implementation to complete the solution.
-
 
 

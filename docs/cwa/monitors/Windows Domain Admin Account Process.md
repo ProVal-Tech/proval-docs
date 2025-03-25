@@ -1,5 +1,6 @@
 ---
 id: '6270f7b1-3cf6-433f-b6e9-b1300b545896'
+slug: /6270f7b1-3cf6-433f-b6e9-b1300b545896
 title: 'Windows Domain Admin Account Process'
 title_meta: 'Windows Domain Admin Account Process'
 keywords: ['domain', 'controllers', 'admin', 'account', 'password', 'monitor']

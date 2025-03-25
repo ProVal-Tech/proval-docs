@@ -1,5 +1,6 @@
 ---
 id: 'e0471432-a947-47c6-8453-c2554bacc96f'
+slug: /e0471432-a947-47c6-8453-c2554bacc96f
 title: 'Agent - Out of Date'
 title_meta: 'Agent - Out of Date'
 keywords: ['automate', 'agent', 'update', 'version', 'monitor']
@@ -20,6 +21,5 @@ None
 ## Target
 
 All Agents - This monitor should be run on all machines.
-
 
 

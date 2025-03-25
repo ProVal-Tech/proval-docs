@@ -1,5 +1,6 @@
 ---
 id: '91ac2199-0e91-4cd1-8931-0602ffd7581a'
+slug: /91ac2199-0e91-4cd1-8931-0602ffd7581a
 title: 'Recycle Bin Empty All Users'
 title_meta: 'Recycle Bin Empty All Users'
 keywords: ['recycle', 'bins', 'empty', 'system', 'drive']
@@ -20,6 +21,5 @@ Empties all recycle bins on the system drive.
 | 2:49:36 PM 15-Feb-23     | Recycle Bin Empty        | Success THEN               | provaltech.com/dan.hicks |
 | 2:49:36 PM 15-Feb-23     | Recycle Bin Empty        | Recycle Bin has been cleared. | provaltech.com/dan.hicks |
 | 2:49:28 PM 15-Feb-23     | Run Now - Recycle Bin Empty | Admin provaltech.com/dan.hicks |
-
 
 

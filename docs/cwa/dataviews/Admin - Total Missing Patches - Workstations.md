@@ -1,5 +1,6 @@
 ---
 id: '50b9eb5a-6ef2-4e07-a8a5-93a43b4d038b'
+slug: /50b9eb5a-6ef2-4e07-a8a5-93a43b4d038b
 title: 'Admin - Total Missing Patches - Workstations'
 title_meta: 'Admin - Total Missing Patches - Workstations'
 keywords: ['patches', 'workstations', 'report', 'automate', 'missing']
@@ -23,6 +24,5 @@ This dataview shows the number of missing patches for each workstation managed t
 | OS              | Displays the operating system of the machine     |
 | Agent Type      | Displays the agent type                          |
 | Missing Patches | Displays the number of missing patches on the machine |
-
 
 

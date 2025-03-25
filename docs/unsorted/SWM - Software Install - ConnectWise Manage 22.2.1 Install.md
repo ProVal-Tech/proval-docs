@@ -1,5 +1,6 @@
 ---
 id: '9f2510e4-8cc1-40d6-a7bc-a5098073159c'
+slug: /9f2510e4-8cc1-40d6-a7bc-a5098073159c
 title: 'SWM - Software Install - ConnectWise Manage 22.2.1 Install'
 title_meta: 'SWM - Software Install - ConnectWise Manage 22.2.1 Install'
 keywords: ['connectwise', 'installer', 'upgrade', 'client', 'version', '22.2.1']
@@ -47,6 +48,5 @@ This document outlines the process to install or upgrade the current ConnectWise
 6. Check for the ConnectWise Manage Client 64-bit. If it is not present, delete the temporary file, log the state, and exit with an error.
 7. Delete the temporary file.
 8. Log success and exit.
-
 
 

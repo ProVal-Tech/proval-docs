@@ -1,5 +1,6 @@
 ---
 id: '775e0b37-b55c-47fb-bec6-a01314ac123f'
+slug: /775e0b37-b55c-47fb-bec6-a01314ac123f
 title: 'DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix'
 title_meta: 'DUO Auth Proxy - InstallUpdate Latest Version Global, Autofix'
 keywords: ['duo', 'authentication', 'proxy', 'update', 'script']
@@ -62,6 +63,5 @@ The script to update DUO Security Authentication Proxy has failed - please revie
 Script Logs -
 %PowerShellResult%
 ```
-
 
 

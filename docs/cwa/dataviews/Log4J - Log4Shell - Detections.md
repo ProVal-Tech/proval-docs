@@ -1,5 +1,6 @@
 ---
 id: '59595d20-d1f8-4406-b574-58a4d32b0384'
+slug: /59595d20-d1f8-4406-b574-58a4d32b0384
 title: 'Log4J - Log4Shell - Detections'
 title_meta: 'Log4J - Log4Shell - Detections'
 keywords: ['edf', 'log4j', 'vulnerability', 'scan', 'security']
@@ -31,6 +32,5 @@ This document displays information about the EDFs filled by the [SEC - Endpoint 
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
-
 
 

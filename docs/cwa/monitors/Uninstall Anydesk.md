@@ -1,5 +1,6 @@
 ---
 id: '34d2f7ec-4b5d-43d3-b109-4af2bb24d6be'
+slug: /34d2f7ec-4b5d-43d3-b109-4af2bb24d6be
 title: 'Uninstall Anydesk'
 title_meta: 'Uninstall Anydesk'
 keywords: ['remote', 'monitor', 'anydesk', 'removal', 'windows']

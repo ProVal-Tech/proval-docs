@@ -1,5 +1,6 @@
 ---
 id: 'b4921df9-1b7e-439a-80b9-28ca3d58f506'
+slug: /b4921df9-1b7e-439a-80b9-28ca3d58f506
 title: 'Clear Firefox Cache'
 title_meta: 'Clear Firefox Cache'
 keywords: ['firefox', 'cache', 'gecko', 'script', 'rmm']
@@ -125,6 +126,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Clear-Firefox-Cache/image_19.png)  
-
 
 

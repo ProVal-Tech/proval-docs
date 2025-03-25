@@ -1,5 +1,6 @@
 ---
 id: '3cc9953c-254c-4d50-9520-cbdb7e6ef23c'
+slug: /3cc9953c-254c-4d50-9520-cbdb7e6ef23c
 title: 'Open Hyperlinks From Outlook in Default Browser'
 title_meta: 'Open Hyperlinks From Outlook in Default Browser'
 keywords: ['outlook', 'hyperlink', 'browser', 'registry', 'windows']
@@ -32,6 +33,5 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
-
 
 

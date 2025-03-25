@@ -1,5 +1,6 @@
 ---
 id: '7fc15e41-8b1d-485d-808f-518893b41686'
+slug: /7fc15e41-8b1d-485d-808f-518893b41686
 title: 'Google Chrome - Homepage - Remove'
 title_meta: 'Google Chrome - Homepage - Remove'
 keywords: ['automate', 'chrome', 'configuration', 'registry', 'homepage']
@@ -24,6 +25,5 @@ This document describes an Automate implementation of the [SWM - Software Config
 ## Output
 
 - Script Logs
-
 
 

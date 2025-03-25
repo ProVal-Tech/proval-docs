@@ -1,5 +1,6 @@
 ---
 id: '561f5be7-feb7-4c6a-b7b3-5ca93b39a40c'
+slug: /561f5be7-feb7-4c6a-b7b3-5ca93b39a40c
 title: 'Bitlocker - Encryption Type Incorrect'
 title_meta: 'Bitlocker - Encryption Type Incorrect'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
@@ -73,7 +74,6 @@ AND (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---Encryption-Type-Incorrect/image_1.png)
-
 
 
 

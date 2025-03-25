@@ -1,5 +1,6 @@
 ---
 id: '0f400020-d1ec-40a1-8581-b7f20aacef5d'
+slug: /0f400020-d1ec-40a1-8581-b7f20aacef5d
 title: 'Import LMCertificate'
 title_meta: 'Import LMCertificate'
 keywords: ['certificate', 'import', 'local', 'machine', 'self-signed']
@@ -147,6 +148,5 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 ![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
 
 This
-
 
 

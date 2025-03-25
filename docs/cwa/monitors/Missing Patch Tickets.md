@@ -1,5 +1,6 @@
 ---
 id: '7310b9b3-8209-4067-8b83-81ab9345e2f4'
+slug: /7310b9b3-8209-4067-8b83-81ab9345e2f4
 title: 'Missing Patch Tickets'
 title_meta: 'Missing Patch Tickets'
 keywords: ['monitor', 'tickets', 'patches', 'automation', 'alert']
@@ -91,6 +92,5 @@ WHERE
 ```
 
 **Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](../scripts/Auto%20Close%20-%20Missing%20Patch%20Tickets%20Autofix.md) script is imported before creating the alert template.
-
 
 

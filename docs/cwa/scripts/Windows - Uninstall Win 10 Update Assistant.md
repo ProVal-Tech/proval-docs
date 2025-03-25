@@ -1,5 +1,6 @@
 ---
 id: 'c1f915c9-34cb-4ea1-88fb-5a32ecc66eca'
+slug: /c1f915c9-34cb-4ea1-88fb-5a32ecc66eca
 title: 'Windows - Uninstall Win 10 Update Assistant'
 title_meta: 'Windows - Uninstall Win 10 Update Assistant'
 keywords: ['windows', 'upgrade', 'assistant', 'uninstall', 'software']
@@ -34,6 +35,5 @@ The script will first check if the Windows 10 Upgrade Assistant is installed. If
 ## Output
 
 - Script log messages only
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '43fcbb27-0955-4270-9460-33c5e8ccceef'
+slug: /43fcbb27-0955-4270-9460-33c5e8ccceef
 title: 'Get-BatteryReport'
 title_meta: 'Get-BatteryReport'
 keywords: ['monitor', 'battery', 'report', 'computers', 'script']
@@ -29,7 +30,6 @@ The purpose of this monitor is to select all computers that have returned a vali
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
-
 
 
 

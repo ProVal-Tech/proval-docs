@@ -1,5 +1,6 @@
 ---
 id: 'b493b3e6-8bd3-4578-bb2a-4f7c34a3b6bf'
+slug: /b493b3e6-8bd3-4578-bb2a-4f7c34a3b6bf
 title: 'Update Orchestrator'
 title_meta: 'Update Orchestrator'
 keywords: ['update', 'orchestrator', 'management', 'deployment', 'monitoring']
@@ -35,7 +36,6 @@ This solution uses a custom task, a device group, and a custom monitor to manage
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
-
 
 
 

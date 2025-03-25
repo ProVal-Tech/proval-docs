@@ -1,5 +1,6 @@
 ---
 id: '712b2067-1340-4be0-bf62-54283f15d319'
+slug: /712b2067-1340-4be0-bf62-54283f15d319
 title: 'Automated Offboarding'
 title_meta: 'Automated Offboarding'
 keywords: ['offboarding', 'agent', 'removal', 'script', 'connectwise']
@@ -50,4 +51,3 @@ Ticketing is optional.
 - Ticketing on failure if enabled.
 ## Attachments
 [Automated_Offboarding_Generic.xml](<../../../static/attachments/itg/8984816/Automated_Offboarding_Generic.xml>)
-

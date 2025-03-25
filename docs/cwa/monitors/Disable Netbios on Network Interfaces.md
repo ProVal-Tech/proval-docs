@@ -1,5 +1,6 @@
 ---
 id: '7cd56a9d-67d5-4d67-a8bf-f61497a93059'
+slug: /7cd56a9d-67d5-4d67-a8bf-f61497a93059
 title: 'Disable Netbios on Network Interfaces'
 title_meta: 'Disable Netbios on Network Interfaces'
 keywords: ['netbios', 'remote', 'monitor', 'windows', 'network']

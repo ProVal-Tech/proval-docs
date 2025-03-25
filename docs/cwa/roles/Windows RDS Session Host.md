@@ -1,5 +1,6 @@
 ---
 id: '2383fd5a-aee3-4644-8bea-c05af3f3d320'
+slug: /2383fd5a-aee3-4644-8bea-c05af3f3d320
 title: 'Windows RDS Session Host'
 title_meta: 'Windows RDS Session Host'
 keywords: ['remote', 'desktop', 'service', 'host', 'detection']
@@ -18,7 +19,6 @@ This role detects if the machine is a Remote Desktop Service Session Host and, i
 | Detection String                                   | Comparator | Result | Applicable OS |
 |---------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-RD-Server).Installed"@%} | Equals     | True   | Windows        |
-
 
 
 

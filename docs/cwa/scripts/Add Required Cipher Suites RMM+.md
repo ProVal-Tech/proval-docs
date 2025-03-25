@@ -1,5 +1,6 @@
 ---
 id: 'e65f81b3-f50a-491e-9f87-bf82b9f26329'
+slug: /e65f81b3-f50a-491e-9f87-bf82b9f26329
 title: 'Add Required Cipher Suites RMM+'
 title_meta: 'Add Required Cipher Suites RMM+'
 keywords: ['cipher', 'tls', 'automate', 'agent', 'configuration']
@@ -39,7 +40,6 @@ The goal of this script is to add the [Cipher Suites](https://docs.connectwise.c
 ## Output
 
 Script Log
-
 
 
 

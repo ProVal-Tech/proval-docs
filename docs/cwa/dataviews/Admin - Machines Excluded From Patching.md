@@ -1,5 +1,6 @@
 ---
 id: 'af3ad410-f40b-4245-8473-057ae6814a0e'
+slug: /af3ad410-f40b-4245-8473-057ae6814a0e
 title: 'Admin - Machines Excluded From Patching'
 title_meta: 'Admin - Machines Excluded From Patching'
 keywords: ['audit', 'patching', 'machines', 'excluded', 'automate']
@@ -29,6 +30,5 @@ None
 | Last Contact           | The last check-in time of the detected machine              |
 | Install Policy         | The install policy that is applied to the machine           |
 | Onboarding Completed    | The status of onboarding, indicating whether the machine has completed onboarding or not |
-
 
 

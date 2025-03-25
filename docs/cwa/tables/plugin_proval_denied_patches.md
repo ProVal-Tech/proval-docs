@@ -1,5 +1,6 @@
 ---
 id: '9ee3657f-dff8-4599-a4c3-68ca3ba171f4'
+slug: /9ee3657f-dff8-4599-a4c3-68ca3ba171f4
 title: 'plugin_proval_denied_patches'
 title_meta: 'plugin_proval_denied_patches'
 keywords: ['patch', 'windows', 'table', 'security', 'update']
@@ -26,6 +27,5 @@ This table holds information on patches to deny as per [denied patches](https://
 | KBID   | varchar(20) | KBID of the patch to deny.           |
 | Title  | varchar(2000) | Title of the patch to deny.        |
 | Reason | varchar(2000) | Reason behind denying the patch.    |
-
 
 

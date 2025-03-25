@@ -1,5 +1,6 @@
 ---
 id: '3ccd3348-558b-41c3-8a81-c65fae2cf04e'
+slug: /3ccd3348-558b-41c3-8a81-c65fae2cf04e
 title: 'CWAFileService - Invalid Token'
 title_meta: 'CWAFileService - Invalid Token'
 keywords: ['restart', 'service', 'authorization', 'token', 'monitor']

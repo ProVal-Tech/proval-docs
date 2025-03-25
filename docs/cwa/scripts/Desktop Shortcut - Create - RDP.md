@@ -1,5 +1,6 @@
 ---
 id: '1575f234-039a-4d1c-a4e5-ce0656e82c4f'
+slug: /1575f234-039a-4d1c-a4e5-ce0656e82c4f
 title: 'Desktop Shortcut - Create - RDP'
 title_meta: 'Desktop Shortcut - Create - RDP'
 keywords: ['rdp', 'shortcut', 'desktop', 'windows', 'users']
@@ -30,6 +31,5 @@ This document describes a script that creates an RDP shortcut on the desktop of 
 - RDP shortcut on the user's desktop:
   ![Shortcut Image 1](../../../static/img/Desktop-Shortcut---Create---RDP/image_2.png)
   ![Shortcut Image 2](../../../static/img/Desktop-Shortcut---Create---RDP/image_3.png)
-
 
 

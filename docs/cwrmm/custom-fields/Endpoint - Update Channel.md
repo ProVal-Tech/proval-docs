@@ -1,5 +1,6 @@
 ---
 id: '772c0498-4505-4f1c-afc4-46788294b3e2'
+slug: /772c0498-4505-4f1c-afc4-46788294b3e2
 title: 'Endpoint - Update Channel'
 title_meta: 'Endpoint - Update Channel'
 keywords: ['update', 'channel', 'microsoft', 'click-to-run', 'rmm']
@@ -34,7 +35,6 @@ Available options are:
 
 ![Screenshot 1](../../../static/img/Endpoint---Update-Channel/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Update-Channel/image_2.png)  
-
 
 
 

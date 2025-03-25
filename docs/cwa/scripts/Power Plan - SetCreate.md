@@ -1,5 +1,6 @@
 ---
 id: '8d2a9b84-38b6-460f-9e9e-3992ea6fd448'
+slug: /8d2a9b84-38b6-460f-9e9e-3992ea6fd448
 title: 'Power Plan - SetCreate'
 title_meta: 'Power Plan - SetCreate'
 keywords: ['connectwise', 'powerplan', 'automation', 'script', 'edf']
@@ -198,4 +199,3 @@ Here's a breakdown of the columns in the CSV file:
 ## Attachments
 [PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>)
 [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>)
-

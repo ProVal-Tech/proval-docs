@@ -1,5 +1,6 @@
 ---
 id: '6dc3dd3b-a90b-4841-9923-f458ee8fc65c'
+slug: /6dc3dd3b-a90b-4841-9923-f458ee8fc65c
 title: 'Active Directory - AD Active Users (30 days)'
 title_meta: 'Active Directory - AD Active Users (30 days)'
 keywords: ['active', 'directory', 'report', 'users', 'logon', 'password', 'expiration', 'status']
@@ -34,6 +35,5 @@ This document shows all the active users within the last 30 days using the Activ
 | Password Expiration Date      | Shows the date of the next password expiration for the user|
 | Password Last Set             | Shows the last time the password was set for this user    |
 | Days Since Last Password Change| Total number of days since the last password set date.    |
-
 
 

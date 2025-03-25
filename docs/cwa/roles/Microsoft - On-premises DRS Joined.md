@@ -1,5 +1,6 @@
 ---
 id: 'de9337ff-a8ec-4d42-b182-436178eecbc6'
+slug: /de9337ff-a8ec-4d42-b182-436178eecbc6
 title: 'Microsoft - On-premises DRS Joined'
 title_meta: 'Microsoft - On-premises DRS Joined'
 keywords: ['dsregcmd', 'domain', 'azure', 'join', 'status']
@@ -20,6 +21,5 @@ For more information, visit the official documentation: [Troubleshoot device dsr
 | Detection String                                                                                                                                                                                                 | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : YES*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"}@%` | Equals     | True   | Windows        |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0298665b-0c3d-41de-83ee-bbf3b9d5cd8e'
+slug: /0298665b-0c3d-41de-83ee-bbf3b9d5cd8e
 title: 'Threatlocker Deployment'
 title_meta: 'Threatlocker Deployment'
 keywords: ['threatlocker', 'installation', 'windows', 'mac', 'groupkey']
@@ -37,6 +38,5 @@ Then run the script:
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd7d933e3-9668-4de9-9f44-7452198ab85a'
+slug: /d7d933e3-9668-4de9-9f44-7452198ab85a
 title: 'Bitlocker - Audit'
 title_meta: 'Bitlocker - Audit'
 keywords: ['bitlocker', 'encryption', 'tpm', 'audit', 'recovery']
@@ -68,7 +69,6 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 - Custom table
 - Dataview
 - Backup file under LTShare at `LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>`
-
 
 
 

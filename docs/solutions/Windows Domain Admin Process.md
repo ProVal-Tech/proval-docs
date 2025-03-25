@@ -1,5 +1,6 @@
 ---
 id: '47f6e5ab-064e-4f15-86e6-226a274b73dc'
+slug: /47f6e5ab-064e-4f15-86e6-226a274b73dc
 title: 'Windows Domain Admin Process'
 title_meta: 'Windows Domain Admin Process'
 keywords: ['centralized', 'domain', 'admin', 'security', 'password', 'rotation']
@@ -52,6 +53,5 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
-
 
 

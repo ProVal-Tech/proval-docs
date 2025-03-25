@@ -1,5 +1,6 @@
 ---
 id: '2c887797-e23e-4482-aead-217338b5da53'
+slug: /2c887797-e23e-4482-aead-217338b5da53
 title: 'Active Directory - Domain and Forest Level'
 title_meta: 'Active Directory - Domain and Forest Level'
 keywords: ['dataview', 'domain', 'forest', 'controller', 'functional', 'level']
@@ -25,6 +26,5 @@ The dataview helps to view the domain level and forest level information of the 
 | Domain Level  | Displays the domain functional level of the respective domains.  |
 | Forest Name   | Displays the forest name with respect to the Domain Controller.  |
 | Forest Level  | Displays the forest functional level of the respective domains.  |
-
 
 

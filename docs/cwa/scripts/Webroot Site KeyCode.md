@@ -1,5 +1,6 @@
 ---
 id: 'bde90a61-771c-46ef-98f5-3278febb3278'
+slug: /bde90a61-771c-46ef-98f5-3278febb3278
 title: 'Webroot Site KeyCode'
 title_meta: 'Webroot Site KeyCode'
 keywords: ['webroot', 'site', 'keycode', 'setup', 'client']
@@ -21,6 +22,5 @@ You will set the code in the format `xxxx-xxxx-xxxx-xxxx-xxxx`.
 
 ## Step 3
 Copy the code and paste it into the client EDF 'Webroot Site KeyCode' for the solution to work.
-
 
 

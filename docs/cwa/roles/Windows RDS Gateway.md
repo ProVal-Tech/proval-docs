@@ -1,5 +1,6 @@
 ---
 id: '06dec980-1779-4612-a0cf-83587c6f2157'
+slug: /06dec980-1779-4612-a0cf-83587c6f2157
 title: 'Windows RDS Gateway'
 title_meta: 'Windows RDS Gateway'
 keywords: ['rds', 'gateway', 'server', 'detection', 'windows']
@@ -18,6 +19,5 @@ This document outlines how to determine if the agent is acting as an RDS Gateway
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
-
 
 

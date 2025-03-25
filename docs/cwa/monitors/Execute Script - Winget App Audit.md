@@ -1,5 +1,6 @@
 ---
 id: 'af67ed08-40af-4899-ae8f-5e64f9bfb851'
+slug: /af67ed08-40af-4899-ae8f-5e64f9bfb851
 title: 'Execute Script - Winget App Audit'
 title_meta: 'Execute Script - Winget App Audit'
 keywords: ['winget', 'audit', 'windows', 'script', 'software']
@@ -25,7 +26,6 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`
-
 
 
 

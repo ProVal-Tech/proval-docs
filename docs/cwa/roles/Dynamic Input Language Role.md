@@ -1,5 +1,6 @@
 ---
 id: '6d8e0943-716a-4ebd-b878-1e648a2ddc56'
+slug: /6d8e0943-716a-4ebd-b878-1e648a2ddc56
 title: 'Dynamic Input Language Role'
 title_meta: 'Dynamic Input Language Role'
 keywords: ['windows', 'input', 'language', 'settings', 'keyboard', 'locale']
@@ -26,7 +27,6 @@ For instance, if your system locale is set to English (United States) and your i
 ## Sample
 
 ![Sample Image](../../../static/img/Dynamic-Input-Language-Role/image_1.png)
-
 
 
 

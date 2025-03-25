@@ -1,5 +1,6 @@
 ---
 id: 'f0a2db8c-92b6-4584-a70c-209263d46511'
+slug: /f0a2db8c-92b6-4584-a70c-209263d46511
 title: 'Get Installed Browsers Extensions DV'
 title_meta: 'Get Installed Browsers Extensions DV'
 keywords: ['extensions', 'chrome', 'edge', 'brave', 'firefox', 'inventory']
@@ -39,6 +40,5 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 ## Output
 
 - Dataview
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '975ed6e2-5fb1-49f5-808a-672a42ccd56b'
+slug: /975ed6e2-5fb1-49f5-808a-672a42ccd56b
 title: 'SNMP & Community Configuration'
 title_meta: 'SNMP & Community Configuration'
 keywords: ['snmp', 'windows', 'feature', 'enable', 'optional']
@@ -69,4 +70,3 @@ The agent procedure checks whether the machine has the SNMP feature enabled. If 
 Procedure Logs
 ## Attachments
 [Procedure_SNMP___Community_Configuration.xml](<../../../static/attachments/itg/10996674/Procedure_SNMP___Community_Configuration.xml>)
-

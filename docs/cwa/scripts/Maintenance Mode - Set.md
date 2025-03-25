@@ -1,5 +1,6 @@
 ---
 id: 'cca4abea-2af2-4ea8-b8ea-d6c2342c88a2'
+slug: /cca4abea-2af2-4ea8-b8ea-d6c2342c88a2
 title: 'Maintenance Mode - Set'
 title_meta: 'Maintenance Mode - Set'
 keywords: ['maintenance', 'agent', 'script', 'time', 'automation']
@@ -32,6 +33,5 @@ The script starts maintenance mode with a prompt for how long to set it. Please 
 ## Output
 
 - Script log
-
 
 

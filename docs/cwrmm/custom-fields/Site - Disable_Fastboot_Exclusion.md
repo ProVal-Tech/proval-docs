@@ -1,5 +1,6 @@
 ---
 id: '693eeb66-9fb2-4653-8cf3-e23fb53c0f56'
+slug: /693eeb66-9fb2-4653-8cf3-e23fb53c0f56
 title: 'Site - Disable_Fastboot_Exclusion'
 title_meta: 'Site - Disable_Fastboot_Exclusion'
 keywords: ['fastboot', 'exclusion', 'site', 'solution', 'configuration']
@@ -23,6 +24,5 @@ Check this box to exclude the site from the solution that disables fastboot.
 
 ![Screenshot 1](../../../static/img/Site---Disable_Fastboot_Exclusion/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---Disable_Fastboot_Exclusion/image_2.png)  
-
 
 

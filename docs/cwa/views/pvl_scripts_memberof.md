@@ -1,5 +1,6 @@
 ---
 id: '5b888c11-49da-4fea-9bda-9bffdfbb286d'
+slug: /5b888c11-49da-4fea-9bda-9bffdfbb286d
 title: 'pvl_scripts_memberof'
 title_meta: 'pvl_scripts_memberof'
 keywords: ['dataview', 'scripts', 'automate', 'mysql', 'table']
@@ -30,6 +31,5 @@ Serves as the base table for the [CWM - Automate - Dataview - Scripts - MemberOf
 | Object Description    | Full path of the group, indicating whether the alert template is applied on a computer-level remote monitor group or an internal monitor. |
 | Limited To          | Indicates whether the scheduled group script/remote monitor is limited to a search/internal monitor or any group. |
 | Affected Agents      | Number of computers in the group/number of agents detected in the search if limited to search.                   |
-
 
 

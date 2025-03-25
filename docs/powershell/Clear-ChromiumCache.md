@@ -1,5 +1,6 @@
 ---
 id: 'b9e7f45e-b830-44b0-b296-121905ec770f'
+slug: /b9e7f45e-b830-44b0-b296-121905ec770f
 title: 'Clear-ChromiumCache'
 title_meta: 'Clear-ChromiumCache'
 keywords: ['clear', 'cache', 'chromium', 'browser']
@@ -36,6 +37,5 @@ Clears browser caches for Chromium-based browsers.
 
 ## Output
 `.\Clear-ChromiumCache-log.txt`
-
 
 

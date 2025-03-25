@@ -1,5 +1,6 @@
 ---
 id: 'a2035a6f-bcbc-41a2-ace1-fc08b7ad2511'
+slug: /a2035a6f-bcbc-41a2-ace1-fc08b7ad2511
 title: 'Windows Optional Update Disabled'
 title_meta: 'Windows Optional Update Disabled'
 keywords: ['windows', 'update', 'disabled', 'endpoint', 'task']
@@ -22,6 +23,5 @@ This document stores "Disabled" if the Windows optional update is disabled by th
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
 | Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This field stores "Disabled" if the Windows optional update is disabled by the Disable Windows Optional/Automatic Updates task. |
-
 
 

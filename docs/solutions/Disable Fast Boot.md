@@ -1,5 +1,6 @@
 ---
 id: '1c1eacb7-dd9c-410e-b68a-604622260d6b'
+slug: /1c1eacb7-dd9c-410e-b68a-604622260d6b
 title: 'Disable Fast Boot'
 title_meta: 'Disable Fast Boot'
 keywords: ['disable', 'fastboot', 'windows', 'workstations', 'registry']
@@ -49,7 +50,6 @@ The purpose of this document is to outline the solution to disable the Fast Boot
 
 3. Create the Task and deploy it against the device group:  
    - [Disable FastBoot](<../cwrmm/tasks/Disable FastBoot.md>)  
-
 
 
 

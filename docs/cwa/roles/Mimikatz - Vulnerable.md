@@ -1,5 +1,6 @@
 ---
 id: '58ebf02f-0bcc-458d-bc99-7ee5cc89a6d2'
+slug: /58ebf02f-0bcc-458d-bc99-7ee5cc89a6d2
 title: 'Mimikatz - Vulnerable'
 title_meta: 'Mimikatz - Vulnerable'
 keywords: ['mimikatz', 'vulnerability', 'tracking', 'registry', 'devices']
@@ -18,6 +19,5 @@ This document describes the use of a registry to track devices vulnerable to Mim
 | Detection String                                          | Comparator | Result | Applicable OS |
 |----------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 0      | Windows        |
-
 
 

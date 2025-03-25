@@ -1,5 +1,6 @@
 ---
 id: 'b06ee4ed-7da2-41cd-88f0-e9ddba25e6f7'
+slug: /b06ee4ed-7da2-41cd-88f0-e9ddba25e6f7
 title: 'Agent - CW Control Needs Repair'
 title_meta: 'Agent - CW Control Needs Repair'
 keywords: ['monitor', 'cwcontrol', 'installations', 'agents', 'autofix']
@@ -20,6 +21,5 @@ This monitor will locate broken CWControl installations on agents and optionally
 ## Target
 
 All agents - This should be run on all machines.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '376db2a5-e76b-426f-b696-6791c83ab626'
+slug: /376db2a5-e76b-426f-b696-6791c83ab626
 title: 'New Domain Admins'
 title_meta: 'New Domain Admins'
 keywords: ['custom', 'field', 'domain', 'admins', 'rmm']
@@ -34,7 +35,6 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ![Sample Value 1](../../../static/img/New-Domain-Admins/image_3.png)  
 ![Sample Value 2](../../../static/img/New-Domain-Admins/image_4.png)  
 ![Sample Value 3](../../../static/img/New-Domain-Admins/image_5.png)  
-
 
 
 

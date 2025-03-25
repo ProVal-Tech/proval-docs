@@ -1,5 +1,6 @@
 ---
 id: '9bf4d628-655e-4568-bea6-dfd0544a1a56'
+slug: /9bf4d628-655e-4568-bea6-dfd0544a1a56
 title: 'Import- Unexpected Shutdown'
 title_meta: 'Import- Unexpected Shutdown'
 keywords: ['remote', 'monitor', 'groupid', 'query', 'alert', 'template']

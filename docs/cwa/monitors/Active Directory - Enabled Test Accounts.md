@@ -1,5 +1,6 @@
 ---
 id: 'f1bc732b-7469-4689-aa3e-d0af5161ecc5'
+slug: /f1bc732b-7469-4689-aa3e-d0af5161ecc5
 title: 'Active Directory - Enabled Test Accounts'
 title_meta: 'Active Directory - Enabled Test Accounts'
 keywords: ['active-directory', 'monitor', 'account', 'enabled', 'test']
@@ -20,6 +21,5 @@ Using the Active Directory plugin, this monitor will look for any account with t
 ## Target
 
 Global
-
 
 

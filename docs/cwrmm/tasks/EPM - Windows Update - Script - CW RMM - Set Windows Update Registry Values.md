@@ -1,5 +1,6 @@
 ---
 id: '5e361c08-9ccf-4495-ad7f-fc4caeafcd2d'
+slug: /5e361c08-9ccf-4495-ad7f-fc4caeafcd2d
 title: 'EPM - Windows Update - Script - CW RMM - Set Windows Update Registry Values'
 title_meta: 'EPM - Windows Update - Script - CW RMM - Set Windows Update Registry Values'
 keywords: ['registry', 'windowsupdate', 'patching', 'reboot', 'system']
@@ -35,6 +36,5 @@ Furthermore, the script will ensure that patching access is not disabled for the
 ## Output
 
 - Script log
-
 
 

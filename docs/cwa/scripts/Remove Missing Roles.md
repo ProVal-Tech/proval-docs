@@ -1,5 +1,6 @@
 ---
 id: '14815596-a4d5-4c53-95b8-149c6a043c58'
+slug: /14815596-a4d5-4c53-95b8-149c6a043c58
 title: 'Remove Missing Roles'
 title_meta: 'Remove Missing Roles'
 keywords: ['roles', 'machines', 'sql', 'database', 'automation']
@@ -22,6 +23,5 @@ This document outlines a process to remove roles that are still listed on machin
 ## Process
 
 - The script runs a SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
-
 
 

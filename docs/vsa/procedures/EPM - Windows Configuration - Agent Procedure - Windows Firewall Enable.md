@@ -1,5 +1,6 @@
 ---
 id: '1d629150-fa76-46b9-ade9-875dcc74d5ab'
+slug: /1d629150-fa76-46b9-ade9-875dcc74d5ab
 title: 'EPM - Windows Configuration - Agent Procedure - Windows Firewall Enable'
 title_meta: 'EPM - Windows Configuration - Agent Procedure - Windows Firewall Enable'
 keywords: ['windows', 'firewall', 'enable', 'endpoint', 'procedure']
@@ -89,4 +90,3 @@ The agent procedure checks whether the machine has the firewall enabled. If not,
 Procedure Logs
 ## Attachments
 [Procedure_Windows_Firewall_Enable_.xml](<../../../static/attachments/itg/11281545/Procedure_Windows_Firewall_Enable_.xml>)
-

@@ -1,5 +1,6 @@
 ---
 id: '0df8be67-9e2d-4277-8004-a1bebe1790e9'
+slug: /0df8be67-9e2d-4277-8004-a1bebe1790e9
 title: 'EventChecker_AdminGroup'
 title_meta: 'EventChecker_AdminGroup'
 keywords: ['security', 'events', 'admin', 'memberships']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Checks Security Events for Admin Memberships
-
 
 

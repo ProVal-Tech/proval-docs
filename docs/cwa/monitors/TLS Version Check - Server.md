@@ -1,5 +1,6 @@
 ---
 id: '0a19eb90-ba18-4097-ab12-a76efa8e4b83'
+slug: /0a19eb90-ba18-4097-ab12-a76efa8e4b83
 title: 'TLS Version Check - Server'
 title_meta: 'TLS Version Check - Server'
 keywords: ['tls', 'monitor', 'windows', 'iis', 'exchange', 'file', 'servers', 'audit']

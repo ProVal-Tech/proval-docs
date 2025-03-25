@@ -1,5 +1,6 @@
 ---
 id: '9eee7f2a-78f1-4243-b681-6b36b56c1c9f'
+slug: /9eee7f2a-78f1-4243-b681-6b36b56c1c9f
 title: 'plugin_proval_volume_exhaustion'
 title_meta: 'plugin_proval_volume_exhaustion'
 keywords: ['volume', 'storage', 'monitoring', 'database', 'exhaustion', 'space']
@@ -47,6 +48,5 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
-
 
 

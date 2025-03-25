@@ -1,5 +1,6 @@
 ---
 id: 'f29999e0-121c-4037-92f5-1cce798daa2e'
+slug: /f29999e0-121c-4037-92f5-1cce798daa2e
 title: 'Active Directory - AD Stale Users (over 90 days or no login)'
 title_meta: 'Active Directory - AD Stale Users (over 90 days or no login)'
 keywords: ['active-directory', 'users', 'report', 'login', 'expiration']
@@ -37,7 +38,6 @@ This dataview displays all the stale users in the domain who have not logged in 
 | Domain                           | Shows the domain set up on the domain controller                                                                                                                                                          |
 | Password Expires                 | Similar to the Password Expiration Date column; however, it does not list the date. It simply indicates whether or not the password expires without providing a date                                      |
 | Account Expiration               | Indicates whether the account is set to expire in Active Directory                                                                                                                                      |
-
 
 
 

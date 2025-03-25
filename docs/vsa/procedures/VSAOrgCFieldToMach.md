@@ -1,5 +1,6 @@
 ---
 id: '322cb1d2-e61e-4bee-ba33-6196639335b6'
+slug: /322cb1d2-e61e-4bee-ba33-6196639335b6
 title: 'VSAOrgCFieldToMach'
 title_meta: 'VSAOrgCFieldToMach'
 keywords: ['custom', 'fields', 'update', 'kaseya', 'machine']
@@ -21,6 +22,5 @@ It updates machine records for patching, antivirus, monitoring, and third-party 
 - **user**: required. Username to log into the Kaseya server.  
 - **password**: required. Password/PAT to log into the Kaseya server.  
 - **monfilter**: optional. Group or organization names to exclude from monitoring.  
-
 
 

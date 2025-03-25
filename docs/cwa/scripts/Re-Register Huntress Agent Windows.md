@@ -1,5 +1,6 @@
 ---
 id: '6cf7ba91-b78d-4368-91a2-43095fad952b'
+slug: /6cf7ba91-b78d-4368-91a2-43095fad952b
 title: 'Re-Register Huntress Agent Windows'
 title_meta: 'Re-Register Huntress Agent Windows'
 keywords: ['huntress', 'agent', 'windows', 'script', 'deployment']
@@ -54,6 +55,5 @@ This script can be used to re-register the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
 
 

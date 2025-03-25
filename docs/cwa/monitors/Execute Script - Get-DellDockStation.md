@@ -1,5 +1,6 @@
 ---
 id: '131057f0-24aa-418c-90f7-b0f316a5b9a8'
+slug: /131057f0-24aa-418c-90f7-b0f316a5b9a8
 title: 'Execute Script - Get-DellDockStation'
 title_meta: 'Execute Script - Get-DellDockStation'
 keywords: ['dell', 'monitor', 'windows', 'script', 'execution']
@@ -26,6 +27,5 @@ Windows 10 and 11 machines.
 **Name:** `△ Custom - Execute Script - Get-DellDockStation`
 
 The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) script.
-
 
 

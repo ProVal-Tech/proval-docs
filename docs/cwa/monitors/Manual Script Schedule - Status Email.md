@@ -1,5 +1,6 @@
 ---
 id: '587dab37-7b57-467f-bcde-b112783f5cf1'
+slug: /587dab37-7b57-467f-bcde-b112783f5cf1
 title: 'Manual Script Schedule - Status Email'
 title_meta: 'Manual Script Schedule - Status Email'
 keywords: ['monitor', 'execution', 'alert', 'email', 'status']
@@ -45,6 +46,5 @@ Here, %RESULT% contains the script name: "Scriptname" ran on computer "Computern
 **Email Example:**
 
 ![Email Example](../../../static/img/Manual-Script-Schedule---Status-Email/image_1.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '5cc62311-8109-43b8-af64-e0aac4292d19'
+slug: /5cc62311-8109-43b8-af64-e0aac4292d19
 title: 'Import - Remote Monitor - Deploy Teams'
 title_meta: 'Import - Remote Monitor - Deploy Teams'
 keywords: ['teams', 'machine-wide', 'connectwise', 'monitoring', 'alert']

@@ -1,5 +1,6 @@
 ---
 id: 'dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4'
+slug: /dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4
 title: 'Adobe Creative Cloud - Update'
 title_meta: 'Adobe Creative Cloud - Update'
 keywords: ['adobe', 'update', 'script', 'apps', 'automation']
@@ -43,6 +44,5 @@ This section should list the ITGlue documents found in the Related Items sidebar
 
 - Script log
 - Local log files
-
 
 

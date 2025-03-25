@@ -1,5 +1,6 @@
 ---
 id: 'e711d3f6-7a23-42da-8d60-400318c8b725'
+slug: /e711d3f6-7a23-42da-8d60-400318c8b725
 title: 'Restore MS-MSDT Registry Key G'
 title_meta: 'Restore MS-MSDT Registry Key G'
 keywords: ['vulnerability', 'monitor', 'windows', 'security', 'diagnostic']

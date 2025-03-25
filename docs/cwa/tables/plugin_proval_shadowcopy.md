@@ -1,5 +1,6 @@
 ---
 id: '3003a8ec-6b99-4b7d-ae31-438371e3b4f3'
+slug: /3003a8ec-6b99-4b7d-ae31-438371e3b4f3
 title: 'plugin_proval_shadowcopy'
 title_meta: 'plugin_proval_shadowcopy'
 keywords: ['windows', 'shadowcopy', 'audit', 'statistics', 'endpoint', 'data']
@@ -31,6 +32,5 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy e
 | ShadowCopyCount   | INT     | Indicates the number of Shadow Copies on the machine.                                          |
 | OldestShadowCopy  | VARCHAR | Contains the oldest available Shadow Copy date.                                               |
 | LatestShadowCopy  | VARCHAR | Contains the most recent available Shadow Copy date.                                           |
-
 
 

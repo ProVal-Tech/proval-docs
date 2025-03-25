@@ -1,5 +1,6 @@
 ---
 id: '42c8f9a7-fc2e-4246-8c01-cbcc51068e6f'
+slug: /42c8f9a7-fc2e-4246-8c01-cbcc51068e6f
 title: 'CW RMM Solution - Malicious Software Removal Tool Scanning & Disabling'
 title_meta: 'CW RMM Solution - Malicious Software Removal Tool Scanning & Disabling'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
@@ -37,7 +38,6 @@ The solution provides feature to run the scanning using Malicious Software Remov
 Note: The group will exclude the endpoints where the scanning found no infection.
 6. Similarly we can schedule the disabling uninstall [Task - Malicious Software Removal Tool Disable/Uninstall](<../cwrmm/tasks/Malicious Software Removal Tool Disable-Uninstall.md>) to numerous machines by checking the endpoints from the `Devices` or check the company custom field `MSRT Disable Uninstall` so that endpoints of the company join the group [Group - Malicious Software Removal Tool Uninstall-Disable](<../cwrmm/groups/Malicious Software Removal Tool Uninstall-Disable.md>) and task can be scheduled on it to permanently disable the MSRT patches and scanning.
 Note: The group will automatically remove the endpoints where the MSRT disabled successfully.
-
 
 
 

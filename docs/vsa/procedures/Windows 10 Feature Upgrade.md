@@ -1,5 +1,6 @@
 ---
 id: '5756f649-47ee-4bf0-b8ef-f65eeb4453fe'
+slug: /5756f649-47ee-4bf0-b8ef-f65eeb4453fe
 title: 'Windows 10 Feature Upgrade'
 title_meta: 'Windows 10 Feature Upgrade'
 keywords: ['windows', 'upgrade', 'feature', 'reboot', 'patching']
@@ -51,7 +52,6 @@ Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Sta
 AP Log  
 [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 PSOutput Document
-
 
 
 

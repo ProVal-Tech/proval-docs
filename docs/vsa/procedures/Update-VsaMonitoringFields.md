@@ -1,5 +1,6 @@
 ---
 id: '3a41852e-86f2-4fa6-b874-9ba472c9a223'
+slug: /3a41852e-86f2-4fa6-b874-9ba472c9a223
 title: 'Update-VsaMonitoringFields'
 title_meta: 'Update-VsaMonitoringFields'
 keywords: ['vsa', 'monitoring', 'exclusions', 'agents', 'automation']
@@ -53,5 +54,4 @@ Writes contents of Org CF 'Managed' to 'xPVAL Monitoring Managed' on every endpo
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
-
 

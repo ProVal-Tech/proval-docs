@@ -1,5 +1,6 @@
 ---
 id: '89182385-f98c-4e8b-ab62-1df0c73bbb1c'
+slug: /89182385-f98c-4e8b-ab62-1df0c73bbb1c
 title: 'pvl_crystal_disk_info'
 title_meta: 'pvl_crystal_disk_info'
 keywords: ['disk', 'info', 'report', 'database', 'structure']
@@ -50,7 +51,6 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
-
 
 
 

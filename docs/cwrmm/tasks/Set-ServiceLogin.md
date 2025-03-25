@@ -1,5 +1,6 @@
 ---
 id: '132fbfad-43d9-488b-bf73-343c72424485'
+slug: /132fbfad-43d9-488b-bf73-343c72424485
 title: 'Set-ServiceLogin'
 title_meta: 'Set-ServiceLogin'
 keywords: ['service', 'login', 'account', 'rmm', 'task']
@@ -275,6 +276,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

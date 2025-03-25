@@ -1,5 +1,6 @@
 ---
 id: '567b8db7-a87a-45c1-a81a-b3178090fb52'
+slug: /567b8db7-a87a-45c1-a81a-b3178090fb52
 title: 'Automate Agent - Reinstall'
 title_meta: 'Automate Agent - Reinstall'
 keywords: ['uninstall', 'reinstall', 'cwa', 'agent', 'connectwise']
@@ -41,6 +42,5 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 ## Output
 
 - Script log messages only.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '7d803c02-dd33-4a82-810e-02b4820ae88b'
+slug: /7d803c02-dd33-4a82-810e-02b4820ae88b
 title: 'Windows Sessions DV, Globals'
 title_meta: 'Windows Sessions DV, Globals'
 keywords: ['query', 'session', 'execution', 'database', 'custom', 'table']
@@ -37,6 +38,5 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
-
 
 

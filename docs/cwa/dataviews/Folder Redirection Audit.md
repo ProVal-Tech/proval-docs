@@ -1,5 +1,6 @@
 ---
 id: 'e7d25f05-6d80-4baa-94b8-517f81abc4a5'
+slug: /e7d25f05-6d80-4baa-94b8-517f81abc4a5
 title: 'Folder Redirection Audit'
 title_meta: 'Folder Redirection Audit'
 keywords: ['folder', 'redirection', 'audit', 'data', 'endpoint', 'backup']
@@ -33,6 +34,5 @@ This dataview will display basic information related to folder redirection on en
 | PicturesEnabled           | True/False - Indicates if the user's "Pictures" folder is being redirected                  |
 | Pictures Redirected Path   | If PicturesEnabled is True, this will display the full path to the user's pictures folder    |
 | TimeStamp                 | The last time this data was gathered                                                          |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '44296eb1-9cdc-4833-ac40-7f390eac3a7f'
+slug: /44296eb1-9cdc-4833-ac40-7f390eac3a7f
 title: 'Automate Agent - Duplicate Serial Number - Audit Only Email,Ticket'
 title_meta: 'Automate Agent - Duplicate Serial Number - Audit Only Email,Ticket'
 keywords: ['automate', 'agent', 'duplicate', 'serial', 'audit', 'email', 'ticketing']
@@ -67,6 +68,5 @@ Duplicate Agents are listed below:
 In case there is no duplicate serial number:
 
 `No duplicate machines identified based on Serial Number.`
-
 
 

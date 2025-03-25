@@ -1,5 +1,6 @@
 ---
 id: 'c16a83d6-7845-4478-9b25-c4947aac8f5d'
+slug: /c16a83d6-7845-4478-9b25-c4947aac8f5d
 title: 'Install-Font'
 title_meta: 'Install-Font'
 keywords: ['font', 'installation', 'script', 'zip', 'extract']
@@ -50,7 +51,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd3db4260-b3e9-4ec6-b422-07434a2a239d'
+slug: /d3db4260-b3e9-4ec6-b422-07434a2a239d
 title: 'User Management - Approved New User - Activate DV,Param'
 title_meta: 'User Management - Approved New User - Activate DV,Param'
 keywords: ['enable', 'users', 'script', 'dataview', 'custom', 'table', 'audit']
@@ -51,6 +52,5 @@ Examples:
 - Script log  
 - DataView  
 - Custom table  
-
 
 

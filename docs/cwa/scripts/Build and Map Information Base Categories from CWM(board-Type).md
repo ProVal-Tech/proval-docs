@@ -1,5 +1,6 @@
 ---
 id: '5028b9c1-b787-4e98-801f-efc670c0d662'
+slug: /5028b9c1-b787-4e98-801f-efc670c0d662
 title: 'Build and Map Information Base Categories from CWM(board-Type)'
 title_meta: 'Build and Map Information Base Categories from CWM(board-Type)'
 keywords: ['ticket', 'routing', 'automate', 'categories', 'sql']
@@ -55,6 +56,5 @@ This script only runs SQL against the database. It is set up to dynamically atte
 ## Output
 
 CW Manage Plugin
-
 
 

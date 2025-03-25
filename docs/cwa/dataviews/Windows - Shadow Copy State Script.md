@@ -1,5 +1,6 @@
 ---
 id: '69110f54-d14f-4691-a68f-56bbc88b5fb3'
+slug: /69110f54-d14f-4691-a68f-56bbc88b5fb3
 title: 'Windows - Shadow Copy State Script'
 title_meta: 'Windows - Shadow Copy State Script'
 keywords: ['shadow', 'copy', 'audit', 'dataview', 'windows', 'statistics']
@@ -36,7 +37,6 @@ This DataView displays the Windows Shadow Copy state for endpoints with Shadow C
 | Used Space by Shadow Copy (GB)             | Used space size by the Shadow Copy in GB                               |
 | Allocated Size of Shadow Copy (GB)         | Allocated space size for the Shadow Copy in GB                         |
 | Maximum Space Provided to Shadow Copy (GB) | Maximum space provided to the Shadow Copy in GB                        |
-
 
 
 

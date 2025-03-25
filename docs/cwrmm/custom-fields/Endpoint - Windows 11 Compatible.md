@@ -1,5 +1,6 @@
 ---
 id: '99719e54-ce8f-4b76-93f4-cc832a3b88cf'
+slug: /99719e54-ce8f-4b76-93f4-cc832a3b88cf
 title: 'Endpoint - Windows 11 Compatible'
 title_meta: 'Endpoint - Windows 11 Compatible'
 keywords: ['windows', 'compatibility', 'check', 'requirement', 'install']
@@ -23,6 +24,5 @@ The Windows 11 compatibility check indicates whether the computer meets the requ
 
 ![Screenshot 1](../../../static/img/Endpoint---Windows-11-Compatible/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---Windows-11-Compatible/image_2.png)
-
 
 

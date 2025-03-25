@@ -1,5 +1,6 @@
 ---
 id: 'b91e0ebd-2946-4030-bc43-a8eda4d885b1'
+slug: /b91e0ebd-2946-4030-bc43-a8eda4d885b1
 title: 'SWM - Software Install - Install-Microsoft365'
 title_meta: 'SWM - Software Install - Install-Microsoft365'
 keywords: ['microsoft', 'installation', 'office365', 'xml', 'odt']
@@ -64,6 +65,5 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 | Install Script                 | /repo/script/Install-Microsoft365  |
 | Automate                       |                                    |
 | Kaseya                        | [Kaseya](https://proval.itglue.com/5078775/docs/15402741) |
-
 
 

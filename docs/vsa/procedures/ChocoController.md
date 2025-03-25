@@ -1,5 +1,6 @@
 ---
 id: 'c5375e25-6943-4f2c-b62f-2640e63a856c'
+slug: /c5375e25-6943-4f2c-b62f-2640e63a856c
 title: 'ChocoController'
 title_meta: 'ChocoController'
 keywords: ['chocolatey', 'installation', 'programs', 'upgrade', 'packages']
@@ -66,6 +67,5 @@ Chocolatey Wrapper for installing programs
 - **-packages:** Pipe-separated list of packages. If install=no use [\<pkg>,\<displayname>|\<pkg>,\<displayname>]  
 - **-exception:** Pipe-separated list of library packages not to install/upgrade  
 - **-custom:** Pipe-separated list of packages to add to library packages. If install=no use [\<pkg>,\<displayname>]  
-
 
 

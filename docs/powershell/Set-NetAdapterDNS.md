@@ -1,5 +1,6 @@
 ---
 id: '87596185-93cc-43ae-935b-96f833eea4d2'
+slug: /87596185-93cc-43ae-935b-96f833eea4d2
 title: 'Set-NetAdapterDNS'
 title_meta: 'Set-NetAdapterDNS'
 keywords: ['dns', 'network', 'adapter', 'configuration']
@@ -35,6 +36,5 @@ This command appends the DNS address `1.1.1.1` to the end of all active, physica
 ## Output
 - `.\Set-NetAdapterDNS-log.txt`
 - `.\Set-NetAdapterDNS-data.txt`
-
 
 

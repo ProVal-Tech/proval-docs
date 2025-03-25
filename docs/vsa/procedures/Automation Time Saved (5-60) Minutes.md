@@ -1,5 +1,6 @@
 ---
 id: '6d0aca76-28b6-4a21-9617-75ffd5868977'
+slug: /6d0aca76-28b6-4a21-9617-75ffd5868977
 title: 'Automation Time Saved (5-60) Minutes'
 title_meta: 'Automation Time Saved (5-60) Minutes'
 keywords: ['incremental', 'cf', 'update', 'script', 'automation', 'tracking']
@@ -44,7 +45,6 @@ Uses Global Variables to set incremental values to the Automation Tracking CF.
 ## Output
 
 N/A
-
 
 
 

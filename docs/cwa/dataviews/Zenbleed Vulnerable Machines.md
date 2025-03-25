@@ -1,5 +1,6 @@
 ---
 id: '1d53f921-ce2e-4ce6-9857-d48984b0d231'
+slug: /1d53f921-ce2e-4ce6-9857-d48984b0d231
 title: 'Zenbleed Vulnerable Machines'
 title_meta: 'Zenbleed Vulnerable Machines'
 keywords: ['zenbleed', 'amd', 'vulnerability', 'ryzen', 'epyc', 'cpu', 'data-theft']
@@ -30,6 +31,5 @@ This data view compiles a list of machines that are anticipated to be vulnerable
 | Processor Cache Size      | Cache Size of the Processor                   |
 | Processor Manufacturer     | Manufacturer of the Processor                 |
 | Processor Serial          | Serial Number of the Processor                |
-
 
 

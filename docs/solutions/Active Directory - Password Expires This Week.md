@@ -1,5 +1,6 @@
 ---
 id: 'bd386818-0b93-4bf2-a094-ab09aa030ea5'
+slug: /bd386818-0b93-4bf2-a094-ab09aa030ea5
 title: 'Active Directory - Password Expires This Week'
 title_meta: 'Active Directory - Password Expires This Week'
 keywords: ['alert', 'domain', 'expiration', 'notification', 'password', 'user']
@@ -18,7 +19,7 @@ This document alerts domain users if their domain password is set to expire with
 | Content                                                                                                                                                                      | Type             | Function                                                                                                                                                                                                                                                                                                                                                          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx)                                                                                           | Internal Monitor | This Custom RAWSQL monitor detects the users whose passwords are going to expire within a week.                                                                                                                                                                                                                                                                   |
-| [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx) | Autofix script   | The script covers the alerting section of the [Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx) monitor set.                                                                                                                                                                                                                     |
+| [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx) | Autofix script   | The script covers the alerting section of the [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set.                                                                                                                                                                                                                     |
 | △ Custom - Password Expiration Notification                                                                                                                                  | Alert Template   | The alert template is responsible for executing the [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx) script for each detection of the [Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx) monitor set. |
 
 ## Implementation
@@ -41,7 +42,6 @@ This document alerts domain users if their domain password is set to expire with
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their Active Directory account, the script's global variables are set correctly, and lastly, check that the emails are not failing from Automate.
-
 
 
 

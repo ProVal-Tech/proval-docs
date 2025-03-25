@@ -1,5 +1,6 @@
 ---
 id: 'af1a3bc3-874e-41b8-ae7f-d1b11bb664cc'
+slug: /af1a3bc3-874e-41b8-ae7f-d1b11bb664cc
 title: 'Webroot Deployment EDF'
 title_meta: 'Webroot Deployment EDF'
 keywords: ['monitor', 'webroot', 'deployment', 'agent', 'edf']

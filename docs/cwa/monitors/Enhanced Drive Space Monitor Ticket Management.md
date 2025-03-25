@@ -1,5 +1,6 @@
 ---
 id: '4535820b-8254-4b20-bb7c-f68b2f05494e'
+slug: /4535820b-8254-4b20-bb7c-f68b2f05494e
 title: 'Enhanced Drive Space Monitor Ticket Management'
 title_meta: 'Enhanced Drive Space Monitor Ticket Management'
 keywords: ['monitor', 'drive', 'space', 'tickets', 'configuration', 'alert']
@@ -31,6 +32,5 @@ Simply import this monitor and set the alert template that has been used by the 
 Ensure that the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>) uses the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
 ![Image](../../../static/img/Enhanced-Drive-Space-Monitor-Ticket-Management/image_1.png)
-
 
 

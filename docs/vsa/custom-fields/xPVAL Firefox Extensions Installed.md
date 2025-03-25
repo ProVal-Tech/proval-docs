@@ -1,5 +1,6 @@
 ---
 id: '12fe20c3-a531-4f0c-803c-2cd523342e8b'
+slug: /12fe20c3-a531-4f0c-803c-2cd523342e8b
 title: 'xPVAL Firefox Extensions Installed'
 title_meta: 'xPVAL Firefox Extensions Installed'
 keywords: ['firefox', 'extensions', 'audit', 'endpoint', 'data']
@@ -23,6 +24,5 @@ This document lists all Firefox extensions installed on the endpoint.
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |
-
 
 

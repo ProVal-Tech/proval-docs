@@ -1,5 +1,6 @@
 ---
 id: 'f73d6546-470e-448b-b3db-d7b57d3d8df4'
+slug: /f73d6546-470e-448b-b3db-d7b57d3d8df4
 title: 'SVC-CWAIISMgr'
 title_meta: 'SVC-CWAIISMgr'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'labtech', 'server']

@@ -1,5 +1,6 @@
 ---
 id: '9cc58a6b-0ba0-42c5-a82d-3495dad2bcd7'
+slug: /9cc58a6b-0ba0-42c5-a82d-3495dad2bcd7
 title: 'Microsoft Outlook - OST/PST Audit'
 title_meta: 'Microsoft Outlook - OST/PST Audit'
 keywords: ['Microsoft','Outlook','OST','PST','Audit']
@@ -162,4 +163,3 @@ if ( $files ) {
 
 ## Output
 - Script Logs
-

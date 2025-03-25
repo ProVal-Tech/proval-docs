@@ -1,5 +1,6 @@
 ---
 id: 'd2333f50-c880-4503-8153-12fdf1f7e205'
+slug: /d2333f50-c880-4503-8153-12fdf1f7e205
 title: 'Set Windows Service Login Account'
 title_meta: 'Set Windows Service Login Account'
 keywords: ['service', 'login', 'account', 'modify', 'windows']
@@ -49,7 +50,6 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershel
   - `.//Set-ServiceLogin-log.txt`
   - `.//Set-ServiceLogin-data.txt`
   - `.//Set-ServiceLogin-error.txt`
-
 
 
 

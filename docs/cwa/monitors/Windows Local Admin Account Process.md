@@ -1,5 +1,6 @@
 ---
 id: '3ff4b4be-2bca-4ef2-80d6-8761cebaeb15'
+slug: /3ff4b4be-2bca-4ef2-80d6-8761cebaeb15
 title: 'Windows Local Admin Account Process'
 title_meta: 'Windows Local Admin Account Process'
 keywords: ['monitor', 'local', 'admin', 'account', 'verification', 'password', 'age', 'parameters']

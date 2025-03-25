@@ -1,5 +1,6 @@
 ---
 id: '174939f4-d7d5-4c92-9813-308db2c2b0c3'
+slug: /174939f4-d7d5-4c92-9813-308db2c2b0c3
 title: 'MS-MSDT Registry Key'
 title_meta: 'MS-MSDT Registry Key'
 keywords: ['msdt', 'cve', 'registry', 'vulnerability']
@@ -18,6 +19,5 @@ This document describes a method to detect the existence of the HKEY_CLASSES_ROO
 | Detection String                          | Comparator | Result  | Applicable OS |
 |-------------------------------------------|------------|---------|----------------|
 | \{@%Reg query "HKEY_CLASSES_ROOT/ms-msdt"@%} | Contains   | REG_SZ  | Windows        |
-
 
 

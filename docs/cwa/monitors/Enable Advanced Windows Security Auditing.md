@@ -1,5 +1,6 @@
 ---
 id: '0a012cf5-0ead-442a-bc82-f5c5fe0b13f8'
+slug: /0a012cf5-0ead-442a-bc82-f5c5fe0b13f8
 title: 'Enable Advanced Windows Security Auditing'
 title_meta: 'Enable Advanced Windows Security Auditing'
 keywords: ['windows', 'security', 'auditing', 'monitoring', 'event']

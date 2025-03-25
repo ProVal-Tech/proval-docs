@@ -1,5 +1,6 @@
 ---
 id: '1be24785-d0c7-401c-8e47-833ab82d6c85'
+slug: /1be24785-d0c7-401c-8e47-833ab82d6c85
 title: 'Set Windows Updates to Default'
 title_meta: 'Set Windows Updates to Default'
 keywords: ['registry', 'windows', 'updates', 'settings', 'default']
@@ -20,6 +21,5 @@ This script removes any registry entries that may be preventing Windows updates 
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4611eb6b-e00e-4e38-9935-531f71852e8c'
+slug: /4611eb6b-e00e-4e38-9935-531f71852e8c
 title: 'Office C2R Auditing'
 title_meta: 'Office C2R Auditing'
 keywords: ['microsoft', 'group', 'auditing', 'software', 'dynamic']
@@ -45,6 +46,5 @@ This document outlines the process for creating a dynamic group for computers wi
 
 ![Image](../../../static/img/Office-C2R-Auditing/image_10.png)  
 ![Image](../../../static/img/Office-C2R-Auditing/image_11.png)
-
 
 

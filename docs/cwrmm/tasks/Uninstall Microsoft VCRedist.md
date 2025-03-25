@@ -1,5 +1,6 @@
 ---
 id: '88d3ea21-446e-47ad-9cc8-047df5a70a77'
+slug: /88d3ea21-446e-47ad-9cc8-047df5a70a77
 title: 'Uninstall Microsoft VCRedist'
 title_meta: 'Uninstall Microsoft VCRedist'
 keywords: ['uninstall', 'vcredist', 'microsoft', 'redistributable', 'script']
@@ -156,7 +157,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 
 

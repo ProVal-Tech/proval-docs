@@ -1,5 +1,6 @@
 ---
 id: 'd9f38912-7b4a-4da1-a880-210aae4fbb02'
+slug: /d9f38912-7b4a-4da1-a880-210aae4fbb02
 title: 'Remove-WifiProfile'
 title_meta: 'Remove-WifiProfile'
 keywords: ['remove', 'wifi', 'profile', 'network']
@@ -31,6 +32,5 @@ Removes the Wi-Fi profile named 'MyWifi' from the system.
 ## Output
 - .\Remove-WifiProfile-log.txt
 - .\Remove-WifiProfile-error.txt
-
 
 

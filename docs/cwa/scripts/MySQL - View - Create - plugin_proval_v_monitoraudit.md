@@ -1,5 +1,6 @@
 ---
 id: 'e4221ae7-3cd9-4019-9d65-1f8ae2e58d33'
+slug: /e4221ae7-3cd9-4019-9d65-1f8ae2e58d33
 title: 'MySQL - View - Create - plugin_proval_v_monitoraudit'
 title_meta: 'MySQL - View - Create - plugin_proval_v_monitoraudit'
 keywords: ['view', 'plugin', 'audit', 'dataview', 'monitor']
@@ -26,6 +27,5 @@ This script creates the [View - plugin_proval_v_monitoraudit](<../views/plugin_p
 ## Output
 
 - View
-
 
 

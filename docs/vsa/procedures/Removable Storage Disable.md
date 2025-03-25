@@ -1,5 +1,6 @@
 ---
 id: 'b50eaaf9-9ec6-412b-85a6-44e6e82c43f9'
+slug: /b50eaaf9-9ec6-412b-85a6-44e6e82c43f9
 title: 'Removable Storage Disable'
 title_meta: 'Removable Storage Disable'
 keywords: ['removable', 'storage', 'disable', 'endpoint', 'security']
@@ -39,7 +40,6 @@ Sets HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//Den
 ## Output
 
 AP Log
-
 
 
 

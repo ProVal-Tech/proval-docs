@@ -1,5 +1,6 @@
 ---
 id: 'c0e90b21-943c-4ec9-94c6-68902358fa0d'
+slug: /c0e90b21-943c-4ec9-94c6-68902358fa0d
 title: 'Windows Firewall Stopped'
 title_meta: 'Windows Firewall Stopped'
 keywords: ['firewall', 'service', 'status', 'monitor', 'online', 'computers']

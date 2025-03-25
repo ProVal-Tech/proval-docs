@@ -1,5 +1,6 @@
 ---
 id: '945d88e0-81a9-4253-8406-63fa7430d45a'
+slug: /945d88e0-81a9-4253-8406-63fa7430d45a
 title: 'PowerShell Version'
 title_meta: 'PowerShell Version'
 keywords: ['custom', 'field', 'powershell', 'version', 'information']
@@ -25,6 +26,5 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
-
 
 

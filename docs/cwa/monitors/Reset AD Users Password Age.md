@@ -1,5 +1,6 @@
 ---
 id: 'd0774dcc-9a7f-4f9a-9719-096e90309e2d'
+slug: /d0774dcc-9a7f-4f9a-9719-096e90309e2d
 title: 'Reset AD Users Password Age'
 title_meta: 'Reset AD Users Password Age'
 keywords: ['active-directory', 'password', 'monitor', 'expire', 'domain', 'policy', 'change']

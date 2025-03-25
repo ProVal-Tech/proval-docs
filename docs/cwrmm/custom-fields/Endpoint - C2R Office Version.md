@@ -1,5 +1,6 @@
 ---
 id: '9229f1df-c80a-4333-8184-2c54954b4996'
+slug: /9229f1df-c80a-4333-8184-2c54954b4996
 title: 'Endpoint - C2R Office Version'
 title_meta: 'Endpoint - C2R Office Version'
 keywords: ['c2r', 'office', 'version', 'details', 'microsoft', 'endpoint']
@@ -23,7 +24,6 @@ This document provides details about the C2R Office version installed on the mac
 
 ![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
 ![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '7be1d6f2-7b75-4740-a42b-8e6f66377d15'
+slug: /7be1d6f2-7b75-4740-a42b-8e6f66377d15
 title: 'Patch Compliance - CU Audit - All Machines'
 title_meta: 'Patch Compliance - CU Audit - All Machines'
 keywords: ['report', 'compliance', 'patch', 'audit', 'machines', 'status', 'client']
@@ -20,6 +21,5 @@ This report is dependent on the following items:
 - Report Center being installed and configured
 - [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
 - [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104)
-
 
 

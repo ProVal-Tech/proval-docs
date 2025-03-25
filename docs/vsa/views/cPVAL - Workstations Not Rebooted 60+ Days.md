@@ -1,5 +1,6 @@
 ---
 id: '0f5d99f1-46bb-42f4-8cdd-006f00cbffd9'
+slug: /0f5d99f1-46bb-42f4-8cdd-006f00cbffd9
 title: 'cPVAL - Workstations Not Rebooted 60+ Days'
 title_meta: 'cPVAL - Workstations Not Rebooted 60+ Days'
 keywords: ['workstations', 'reboot', 'filter', 'policy']
@@ -27,6 +28,5 @@ The following filters are applied to this view:
 | Machine Status                  | Yes              | Machines that have not rebooted in the last 60 days        |
 | Operating System                 | Yes              | Not *mac* AND NOT *linux*                                   |
 | cPVAL All Policy Removal         | Yes              | NOT *1*                                                    |
-
 
 

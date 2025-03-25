@@ -1,5 +1,6 @@
 ---
 id: 'd5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc'
+slug: /d5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc
 title: 'Winget - InstallUpdate - Teams'
 title_meta: 'Winget - InstallUpdate - Teams'
 keywords: ['teams', 'installer', 'deployment', 'winget', 'microsoft']
@@ -28,7 +29,6 @@ This document outlines the implementation of the [SWM - Software Installation - 
 ## Output
 
 - Script Logs
-
 
 
 

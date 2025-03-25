@@ -1,5 +1,6 @@
 ---
 id: 'b53066d5-a2f8-4455-b43c-766a927c52f4'
+slug: /b53066d5-a2f8-4455-b43c-766a927c52f4
 title: 'Execute Script - Update Channel - Set - Current Channel'
 title_meta: 'Execute Script - Update Channel - Set - Current Channel'
 keywords: ['microsoft', 'update', 'channel', 'software', 'configuration']
@@ -33,7 +34,6 @@ Windows Machines
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script.
-
 
 
 

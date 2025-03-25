@@ -1,5 +1,6 @@
 ---
 id: '1789b867-61db-436d-ac0b-07d5aac3f4b8'
+slug: /1789b867-61db-436d-ac0b-07d5aac3f4b8
 title: 'User Prompt - Reboot'
 title_meta: 'User Prompt - Reboot'
 keywords: ['reboot', 'prompt', 'edf', 'monitor', 'windows', 'configuration']

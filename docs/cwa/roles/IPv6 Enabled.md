@@ -1,5 +1,6 @@
 ---
 id: 'bfeadced-7753-468a-9119-b2b7f4499cf2'
+slug: /bfeadced-7753-468a-9119-b2b7f4499cf2
 title: 'IPv6 Enabled'
 title_meta: 'IPv6 Enabled'
 keywords: ['ipv6', 'network', 'adapter', 'windows', 'detection']
@@ -23,6 +24,5 @@ The purpose of this document is to identify machines where IPv6 is enabled on an
 
 Use the following document as a guide to implement this role:  
 [https://proval.itglue.com/5078775/docs/17883447](https://proval.itglue.com/5078775/docs/17883447)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '53bcdcef-8942-4602-bc24-7db1b2cf29ae'
+slug: /53bcdcef-8942-4602-bc24-7db1b2cf29ae
 title: 'Group Policy - Gather GPResult Data'
 title_meta: 'Group Policy - Gather GPResult Data'
 keywords: ['gpresult', 'data', 'storage', 'table', 'windows']
@@ -34,6 +35,5 @@ Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershe
 - Script log
 - Local file on the computer
 - Dataview
-
 
 

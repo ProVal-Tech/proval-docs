@@ -1,5 +1,6 @@
 ---
 id: '2ce835a2-3ac1-4291-baaf-8d3cac76869f'
+slug: /2ce835a2-3ac1-4291-baaf-8d3cac76869f
 title: 'Initialize-BitLockerVolume'
 title_meta: 'Initialize-BitLockerVolume'
 keywords: ['initialize', 'bitlocker', 'volume', 'encryption']
@@ -77,7 +78,6 @@ Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256
 - .\\Initialize-BitLockerVolume-log.txt
 - .\\Initialize-BitLockerVolume-data.txt
 - .\\Initialize-BitLockerVolume-error.txt
-
 
 
 

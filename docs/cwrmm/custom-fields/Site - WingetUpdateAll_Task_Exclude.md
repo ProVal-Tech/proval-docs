@@ -1,5 +1,6 @@
 ---
 id: '0c299d28-5fcb-4a1e-a341-1c5e78f74cfb'
+slug: /0c299d28-5fcb-4a1e-a341-1c5e78f74cfb
 title: 'Site - WingetUpdateAll_Task_Exclude'
 title_meta: 'Site - WingetUpdateAll_Task_Exclude'
 keywords: ['winget', 'task', 'exclude', 'site', 'windows']
@@ -25,6 +26,5 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 
 ![Screenshot 1](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_1.png)  
 ![Screenshot 2](../../../static/img/Site---WingetUpdateAll_Task_Exclude/image_2.png)  
-
 
 

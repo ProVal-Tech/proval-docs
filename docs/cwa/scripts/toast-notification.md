@@ -1,5 +1,6 @@
 ---
 id: '3aab837d-cb64-4669-aa35-040cce21c575'
+slug: /3aab837d-cb64-4669-aa35-040cce21c575
 title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot']

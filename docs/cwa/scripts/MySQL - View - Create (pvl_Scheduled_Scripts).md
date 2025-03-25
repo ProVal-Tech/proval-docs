@@ -1,5 +1,6 @@
 ---
 id: '494c2d2c-2f37-45b7-9eb0-130ff3aac45c'
+slug: /494c2d2c-2f37-45b7-9eb0-130ff3aac45c
 title: 'MySQL - View - Create (pvl_Scheduled_Scripts)'
 title_meta: 'MySQL - View - Create (pvl_Scheduled_Scripts)'
 keywords: ['view', 'scripts', 'permissions', 'automate', 'users']
@@ -22,6 +23,5 @@ Run the script on any computer to create the view, and afterward, remove the scr
 ## Output
 
 - Custom View
-
 
 

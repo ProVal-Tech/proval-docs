@@ -1,5 +1,6 @@
 ---
 id: 'f6fe205d-abf5-49ac-a73d-3cc55b758f61'
+slug: /f6fe205d-abf5-49ac-a73d-3cc55b758f61
 title: 'Browsers Extension Management'
 title_meta: 'Browsers Extension Management'
 keywords: ['extensions', 'browsers', 'install', 'remove', 'chrome', 'firefox', 'edge', 'brave', 'vivaldi', 'chromium']
@@ -31,6 +32,5 @@ Create the following tasks:
 - [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)
 - [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)
 - [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)
-
 
 

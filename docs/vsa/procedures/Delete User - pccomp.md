@@ -1,5 +1,6 @@
 ---
 id: 'd9986380-db6d-42c5-82bb-506185756ae1'
+slug: /d9986380-db6d-42c5-82bb-506185756ae1
 title: 'Delete User - pccomp'
 title_meta: 'Delete User - pccomp'
 keywords: ['delete', 'user', 'pccomp', 'agent', 'procedure']
@@ -28,6 +29,5 @@ This Agent procedure is used to delete the user named pccomp.
 ## Output
 
 Agent procedure log.
-
 
 

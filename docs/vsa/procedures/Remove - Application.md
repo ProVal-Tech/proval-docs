@@ -1,5 +1,6 @@
 ---
 id: '5197b52f-294e-4b7d-8956-5bc5afc3f51c'
+slug: /5197b52f-294e-4b7d-8956-5bc5afc3f51c
 title: 'Remove - Application'
 title_meta: 'Remove - Application'
 keywords: ['uninstall', 'application', 'remove', 'software', 'agent']
@@ -19,7 +20,6 @@ This agent procedure is designed as a template and is meant to be exported.
 **Name:** Remove - Application  
 ![Image](../../../static/img/Remove---Application/image_1.png)  
 The agent procedure can be customized to fit the needs of various uninstalls. There are four variables within this agent procedure. See the usage for these below.  
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '670407ad-49d7-407a-bf5c-4bf727dc103b'
+slug: /670407ad-49d7-407a-bf5c-4bf727dc103b
 title: 'Check Point Endpoint Security Removal'
 title_meta: 'Check Point Endpoint Security Removal'
 keywords: ['uninstallation', 'checkpoint', 'security', 'windows', 'reboot']
@@ -56,6 +57,5 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N of PC: @biosver@  
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e3c5aeb1-144d-4c12-9b33-2d56d05804ce'
+slug: /e3c5aeb1-144d-4c12-9b33-2d56d05804ce
 title: 'Update Orchestrator Service Status Detection'
 title_meta: 'Update Orchestrator Service Status Detection'
 keywords: ['monitor', 'service', 'windows', 'alert', 'check']

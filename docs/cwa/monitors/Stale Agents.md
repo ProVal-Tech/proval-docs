@@ -1,5 +1,6 @@
 ---
 id: '8f74652a-f8c3-4321-8fba-76921048c280'
+slug: /8f74652a-f8c3-4321-8fba-76921048c280
 title: 'Stale Agents'
 title_meta: 'Stale Agents'
 keywords: ['webroot', 'agents', 'monitor', 'detection', 'ticketing']
@@ -45,5 +46,4 @@ Last Seen by Automate: %RESULT%
 ```
 The computer %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
-
 

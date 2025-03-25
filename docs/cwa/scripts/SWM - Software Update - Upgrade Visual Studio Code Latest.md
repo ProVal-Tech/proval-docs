@@ -1,5 +1,6 @@
 ---
 id: '6ca0f24e-6a38-47a0-8858-0a47143355ad'
+slug: /6ca0f24e-6a38-47a0-8858-0a47143355ad
 title: 'SWM - Software Update - Upgrade Visual Studio Code Latest'
 title_meta: 'SWM - Software Update - Upgrade Visual Studio Code Latest'
 keywords: ['update', 'visualstudio', 'code', 'installer', 'application']
@@ -38,6 +39,5 @@ This prompt is inevitable for computers with the `User Installer` version of the
 ## Output
 
 - Script logs
-
 
 

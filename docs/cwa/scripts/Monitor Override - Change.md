@@ -1,5 +1,6 @@
 ---
 id: 'ddad0c3b-65e2-436a-bdba-54f696ac5bbb'
+slug: /ddad0c3b-65e2-436a-bdba-54f696ac5bbb
 title: 'Monitor Override - Change'
 title_meta: 'Monitor Override - Change'
 keywords: ['monitor', 'alert', 'override', 'configuration', 'sql']
@@ -30,6 +31,5 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 - Takes input of the Monitor Name and the Alert Template from the user.
 - Executes SQL queries to set the override and the alert template.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '47f53d1e-f609-46f8-b407-ccdf11eeede4'
+slug: /47f53d1e-f609-46f8-b407-ccdf11eeede4
 title: 'Soji - Disk Space Management'
 title_meta: 'Soji - Disk Space Management'
 keywords: ['soji', 'script', 'automate', 'execution', 'logging']
@@ -41,6 +42,5 @@ Please refer to the Soji documentation for argument options.
 - Script log
 - Desired file output to the Soji directory, e.g., JSON, etc.
 - On LabTech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %ComputerId%/SojiLogs.zip`
-
 
 

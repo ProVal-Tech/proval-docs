@@ -1,5 +1,6 @@
 ---
 id: 'c64c47e7-8da3-46c6-9765-29da85addc2f'
+slug: /c64c47e7-8da3-46c6-9765-29da85addc2f
 title: 'Remove-SentinelOne'
 title_meta: 'Remove-SentinelOne'
 keywords: ['remove', 'sentinelone', 'uninstall', 'security']
@@ -47,6 +48,5 @@ Location of output for log and error files:
 .\Remove-SentinelOne-log.txt
 .\Remove-SentinelOne-error.txt
 ```
-
 
 

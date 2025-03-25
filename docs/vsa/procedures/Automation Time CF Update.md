@@ -1,5 +1,6 @@
 ---
 id: 'd4f85104-753b-470e-a620-749cf24a32c2'
+slug: /d4f85104-753b-470e-a620-749cf24a32c2
 title: 'Automation Time CF Update'
 title_meta: 'Automation Time CF Update'
 keywords: ['cf', 'update', 'agent', 'procedure', 'logs', 'tracking']
@@ -45,7 +46,6 @@ This is the main procedure used by all others to perform the CF update logic.
 
 - Agent Procedure Logs  
 - Solution CFs
-
 
 
 

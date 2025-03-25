@@ -1,5 +1,6 @@
 ---
 id: '6d50548e-014d-4bca-aab6-2941f36045e2'
+slug: /6d50548e-014d-4bca-aab6-2941f36045e2
 title: 'Patch Config Audit'
 title_meta: 'Patch Config Audit'
 keywords: ['patch', 'configuration', 'windows', 'audit', 'monitor']
@@ -86,7 +87,6 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) script.
-
 
 
 

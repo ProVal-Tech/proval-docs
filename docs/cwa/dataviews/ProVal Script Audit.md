@@ -1,5 +1,6 @@
 ---
 id: '802ab032-390a-4d67-a0bf-6448baac1af7'
+slug: /802ab032-390a-4d67-a0bf-6448baac1af7
 title: 'ProVal Script Audit'
 title_meta: 'ProVal Script Audit'
 keywords: ['proval', 'sync', 'scripts', 'environment', 'plugin']
@@ -35,6 +36,5 @@ This document lists all the scripts located in the 'proval', 'Proval - client sp
 - lt_scripts
 - h_systemtimings
 - plugin_prosync_scripts
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '6eace5fa-3c7d-45ae-a52c-66aa854ddde7'
+slug: /6eace5fa-3c7d-45ae-a52c-66aa854ddde7
 title: 'User Management - Profile Audit'
 title_meta: 'User Management - Profile Audit'
 keywords: ['user', 'profile', 'information', 'local', 'domain', 'admin', 'password', 'size', 'logon', 'audit']
@@ -46,6 +47,5 @@ This script looks for user profile information at the machine level. It provides
 - Script log
 - [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
 - @Windows – Local Account Audit (Dataview)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '70f5868c-7006-4393-afed-156fbae86ab5'
+slug: /70f5868c-7006-4393-afed-156fbae86ab5
 title: 'Remote Monitor - Emulate Send Fail After Success'
 title_meta: 'Remote Monitor - Emulate Send Fail After Success'
 keywords: ['remote', 'monitor', 'ticket', 'management', 'autofix', 'status']
@@ -50,6 +51,5 @@ If the script determines the monitor is in a "success" state, it will go through
 **Script log messages**
 
 The script will create a ticket if necessary.
-
 
 

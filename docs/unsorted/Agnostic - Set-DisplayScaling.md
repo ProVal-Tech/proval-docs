@@ -1,5 +1,6 @@
 ---
 id: 'ee4d2c2e-9944-4dcc-aaac-ab3c60bb15f6'
+slug: /ee4d2c2e-9944-4dcc-aaac-ab3c60bb15f6
 title: 'Agnostic - Set-DisplayScaling'
 title_meta: 'Agnostic - Set-DisplayScaling'
 keywords: ['windows', 'scaling', 'display', 'dpi', 'registry']

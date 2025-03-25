@@ -1,5 +1,6 @@
 ---
 id: '4e62e216-7a5f-4b35-8ac8-eca9a38bd440'
+slug: /4e62e216-7a5f-4b35-8ac8-eca9a38bd440
 title: 'DUO Authentication - InstallUpdate'
 title_meta: 'DUO Authentication - InstallUpdate'
 keywords: ['duo', 'authentication', 'windows', 'monitor', 'agent', 'edf', 'exclusion']
@@ -52,6 +53,5 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When an argument is missing:**  
 Arguments required to install DUO Authentication for Windows Logon are not set.
-
 
 

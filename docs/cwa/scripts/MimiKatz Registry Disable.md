@@ -1,5 +1,6 @@
 ---
 id: '9b06cea7-e39b-46f2-ac30-3d8b5fc6339b'
+slug: /9b06cea7-e39b-46f2-ac30-3d8b5fc6339b
 title: 'MimiKatz Registry Disable'
 title_meta: 'MimiKatz Registry Disable'
 keywords: ['autofix', 'mimikatz', 'vulnerability', 'registry', 'monitor', 'ticketing']
@@ -40,6 +41,5 @@ This autofix script needs to be set up with the monitor @ProVal - Production - S
 
 - Script log
 - Ticket
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '048bcde3-a1b4-45a9-a86c-ba19c0a40933'
+slug: /048bcde3-a1b4-45a9-a86c-ba19c0a40933
 title: 'plugin_proval_unifidevices'
 title_meta: 'plugin_proval_unifidevices'
 keywords: ['data', 'collection', 'unifi', 'controller', 'table', 'update']
@@ -37,6 +38,5 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Disabled      | String | True if disabled, false if not.                                                              |
 | Model         | String | The model of the device.                                                                     |
 | Type          | String | The type of Unifi device.                                                                    |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b6843bcc-c5e6-4af4-b604-e6d1c5871a44'
+slug: /b6843bcc-c5e6-4af4-b604-e6d1c5871a44
 title: 'Execute Script - Get Patch Config'
 title_meta: 'Execute Script - Get Patch Config'
 keywords: ['patch', 'config', 'execution', 'windows', 'script']
@@ -27,6 +28,5 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
-
 
 

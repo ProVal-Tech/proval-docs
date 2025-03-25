@@ -1,5 +1,6 @@
 ---
 id: '2b97ee5d-c457-4f9d-a61f-6531f7351cf9'
+slug: /2b97ee5d-c457-4f9d-a61f-6531f7351cf9
 title: 'Copy-VsaOrgToMachineCf'
 title_meta: 'Copy-VsaOrgToMachineCf'
 keywords: ['kaseya', 'cf', 'machines', 'copy', 'org', 'fields']
@@ -41,6 +42,5 @@ This command sets 'xPVAL Monitoring Managed' to the org CF value from 'Monitorin
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
-
 
 

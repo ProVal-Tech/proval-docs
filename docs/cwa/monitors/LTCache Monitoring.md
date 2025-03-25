@@ -1,5 +1,6 @@
 ---
 id: '1f389c5d-df7a-49a9-9db4-9e0442afbe7b'
+slug: /1f389c5d-df7a-49a9-9db4-9e0442afbe7b
 title: 'LTCache Monitoring'
 title_meta: 'LTCache Monitoring'
 keywords: ['monitor', 'ltcache', 'windows', 'alert', 'agent']

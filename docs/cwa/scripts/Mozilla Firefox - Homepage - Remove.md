@@ -1,5 +1,6 @@
 ---
 id: 'c09afc4e-2ed0-4e85-9beb-e8b54082568e'
+slug: /c09afc4e-2ed0-4e85-9beb-e8b54082568e
 title: 'Mozilla Firefox - Homepage - Remove'
 title_meta: 'Mozilla Firefox - Homepage - Remove'
 keywords: ['firefox', 'homepage', 'policy', 'configuration', 'software']
@@ -24,6 +25,5 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Logs
-
 
 

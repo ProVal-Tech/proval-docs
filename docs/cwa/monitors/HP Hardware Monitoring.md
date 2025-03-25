@@ -1,5 +1,6 @@
 ---
 id: 'd6b85a77-e6bc-4ff1-9279-9d17487655ba'
+slug: /d6b85a77-e6bc-4ff1-9279-9d17487655ba
 title: 'HP Hardware Monitoring'
 title_meta: 'HP Hardware Monitoring'
 keywords: ['hp', 'event', 'monitoring', 'servers', 'ticketing']
@@ -58,5 +59,4 @@ Event Type: Error
 Message: <Event Message>
 TimeGen: <Time of Generation>
 ```
-
 

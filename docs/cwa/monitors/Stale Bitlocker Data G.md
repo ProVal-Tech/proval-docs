@@ -1,5 +1,6 @@
 ---
 id: '8484cc0a-dc70-40e7-86d2-bd5f3c7ac0a9'
+slug: /8484cc0a-dc70-40e7-86d2-bd5f3c7ac0a9
 title: 'Stale Bitlocker Data G'
 title_meta: 'Stale Bitlocker Data G'
 keywords: ['bitlocker', 'monitor', 'key', 'retrieval', 'date']

@@ -1,5 +1,6 @@
 ---
 id: '6d42adc8-2e3d-4642-9471-327ef96bae1f'
+slug: /6d42adc8-2e3d-4642-9471-327ef96bae1f
 title: 'Patching - No Patch Jobs Run'
 title_meta: 'Patching - No Patch Jobs Run'
 keywords: ['patching', 'monitor', 'connectwise', 'automate', 'status']
@@ -20,6 +21,5 @@ Automate must be upgraded to the "new" patch manager.
 ## Target
 
 Global - This monitor should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by ConnectWise Automate.
-
 
 

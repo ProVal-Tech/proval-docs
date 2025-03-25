@@ -1,5 +1,6 @@
 ---
 id: 'f6186972-e38b-4e2a-952f-b87204915278'
+slug: /f6186972-e38b-4e2a-952f-b87204915278
 title: 'Extradatafield details'
 title_meta: 'Extradatafield details'
 keywords: ['extradatafields', 'edf', 'value', 'details', 'usage']
@@ -40,6 +41,5 @@ The purpose of this document is to represent all the details of the Extradatafie
 | Is Editable               | Represents whether the EDF is editable or not                                                   |
 | Is Restricted             | Represents whether the EDF is restricted or not                                                 |
 | (Masked/Password)         | Represents whether the EDF is masked or has a password                                          |
-
 
 

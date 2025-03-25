@@ -1,5 +1,6 @@
 ---
 id: '7cef0364-5793-4623-b5bc-5e446448cb70'
+slug: /7cef0364-5793-4623-b5bc-5e446448cb70
 title: 'Certification Authority'
 title_meta: 'Certification Authority'
 keywords: ['certification', 'servers', 'feature', 'windows', 'detection']
@@ -18,7 +19,6 @@ This document describes a role used to detect servers with the Certification Aut
 | Detection String                                                                                      | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Cert-Authority' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |
-
 
 
 

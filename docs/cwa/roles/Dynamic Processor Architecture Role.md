@@ -1,5 +1,6 @@
 ---
 id: 'b0c17ff1-73a8-41ae-af16-901eade975b2'
+slug: /b0c17ff1-73a8-41ae-af16-901eade975b2
 title: 'Dynamic Processor Architecture Role'
 title_meta: 'Dynamic Processor Architecture Role'
 keywords: ['architecture', 'processor', 'windows', 'cim', 'system']
@@ -36,6 +37,5 @@ default { Unknown architecture }
 ## Sample
 
 ![Sample Image](../../../static/img/Dynamic-Processor-Architecture-Role/image_1.png)
-
 
 

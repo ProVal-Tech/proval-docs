@@ -1,5 +1,6 @@
 ---
 id: 'ff2827dd-bd64-4437-8783-4b576e6cfb81'
+slug: /ff2827dd-bd64-4437-8783-4b576e6cfb81
 title: 'Get Chromium Browsers Extensions'
 title_meta: 'Get Chromium Browsers Extensions'
 keywords: ['data', 'collection', 'chromium', 'extensions', 'json', 'sql', 'logging']
@@ -36,6 +37,5 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
-
 
 

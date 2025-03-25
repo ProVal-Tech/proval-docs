@@ -1,5 +1,6 @@
 ---
 id: '331d820a-8030-4bcf-9809-c726a85f59f3'
+slug: /331d820a-8030-4bcf-9809-c726a85f59f3
 title: 'Script Permission Standardization Beta'
 title_meta: 'Script Permission Standardization Beta'
 keywords: ['permissions', 'scripts', 'connectwise', 'automate', 'user-classes']
@@ -47,7 +48,6 @@ Set the standard permissions for the stock scripts in ConnectWise Automate.
 
 **Q:** Can we use the solution to set permissions for any script?  
 **A:** The solution allows setting permissions only for the scripts listed in the [Script Permission Alignment [Beta]](<../cwa/dataviews/Script Permission Alignment Beta.md>) dataview, and these permissions cannot be customized. However, the user classes Tier 1 and Tier 2 can be defined in the system properties.
-
 
 
 

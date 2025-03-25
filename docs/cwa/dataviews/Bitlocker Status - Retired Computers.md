@@ -1,5 +1,6 @@
 ---
 id: '2a93ccc8-7de0-4107-9251-747b55905734'
+slug: /2a93ccc8-7de0-4107-9251-747b55905734
 title: 'Bitlocker Status - Retired Computers'
 title_meta: 'Bitlocker Status - Retired Computers'
 keywords: ['bitlocker', 'audit', 'retired', 'computers', 'encryption', 'tpm', 'active-directory']
@@ -58,6 +59,5 @@ This dataview displays the Bitlocker information on all retired computers that h
 | TPM Version              | The TPM Version number.                                                                                                                                                   |
 | TPMOwned                 | The TPM Owned state of the target.                                                                                                                                       |
 | TPMActivated             | The activation state of the TPM on the target.                                                                                                                           |
-
 
 

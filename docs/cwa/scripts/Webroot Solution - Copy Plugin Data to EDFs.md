@@ -1,5 +1,6 @@
 ---
 id: '7ea5c70f-f33b-4cf5-88ca-80e66fa68535'
+slug: /7ea5c70f-f33b-4cf5-88ca-80e66fa68535
 title: 'Webroot Solution - Copy Plugin Data to EDFs'
 title_meta: 'Webroot Solution - Copy Plugin Data to EDFs'
 keywords: ['client', 'edf', 'webroot', 'plugin', 'autodeploy']
@@ -32,6 +33,5 @@ This client script updates the client EDFs value from the Webroot plugin only wh
 ## Output
 
 - EDF
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '929401cd-6977-4389-97fe-29e544dc6b9b'
+slug: /929401cd-6977-4389-97fe-29e544dc6b9b
 title: 'Agnostic - Uninstall N-Able'
 title_meta: 'Agnostic - Uninstall N-Able'
 keywords: ['nable', 'uninstallation', 'windows', 'agent', 'removal']

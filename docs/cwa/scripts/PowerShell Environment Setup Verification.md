@@ -1,5 +1,6 @@
 ---
 id: '8ace140f-74d7-49cb-b9aa-90cf098629fc'
+slug: /8ace140f-74d7-49cb-b9aa-90cf098629fc
 title: 'PowerShell Environment Setup Verification'
 title_meta: 'PowerShell Environment Setup Verification'
 keywords: ['environment', 'verification', 'uac', 'admin', 'powershell', 'path', 'version']
@@ -96,6 +97,5 @@ Environmental tests failed for the following issues -
 
 UAC Status
 ```
-
 
 

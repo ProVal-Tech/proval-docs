@@ -1,5 +1,6 @@
 ---
 id: '998b5859-608f-4c0c-abd2-75356b272102'
+slug: /998b5859-608f-4c0c-abd2-75356b272102
 title: 'Windows Feature Pack Update Failure Installation FailureError'
 title_meta: 'Windows Feature Pack Update Failure Installation FailureError'
 keywords: ['windows', 'feature', 'update', 'failure', 'tracking', 'os', 'build', 'criteria', 'group']
@@ -32,7 +33,6 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_6.png)  
 ![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_7.png)
-
 
 
 

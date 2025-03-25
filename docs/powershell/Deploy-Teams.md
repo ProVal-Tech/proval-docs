@@ -1,5 +1,6 @@
 ---
 id: '512415ba-2cc0-44bc-b0da-84a5e5d02adf'
+slug: /512415ba-2cc0-44bc-b0da-84a5e5d02adf
 title: 'Deploy-Teams'
 title_meta: 'Deploy-Teams'
 keywords: ['deploy', 'teams', 'installation', 'update']
@@ -34,6 +35,5 @@ This script does not require any additional parameters for its execution. To use
 ## Output
 - Deploy-MSTeams-log.txt
 - Deploy-MSTeams-Error.txt
-
 
 

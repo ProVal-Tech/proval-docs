@@ -1,5 +1,6 @@
 ---
 id: '827c282a-8701-42f9-87d3-8dbb7372134d'
+slug: /827c282a-8701-42f9-87d3-8dbb7372134d
 title: 'Weak Passwords Detected'
 title_meta: 'Weak Passwords Detected'
 keywords: ['monitor', 'weak', 'passwords', 'domain', 'controllers', 'ticket']
@@ -56,7 +57,6 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
 
 
 

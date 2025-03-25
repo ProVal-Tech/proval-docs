@@ -1,5 +1,6 @@
 ---
 id: '1a188004-4007-40dc-8c44-d64d3c0d2bb8'
+slug: /1a188004-4007-40dc-8c44-d64d3c0d2bb8
 title: 'Dell Command Update Handler - Audit Script'
 title_meta: 'Dell Command Update Handler - Audit Script'
 keywords: ['html', 'markdown', 'conversion', 'content', 'empty']
@@ -12,4 +13,3 @@ unlisted: false
 It appears that you have provided an empty HTML document. If you have specific HTML content that you would like to convert to Markdown, please provide that content, and I will be happy to assist you with the conversion!
 ## Attachments
 [Sample_Screenshot.png](<../../../static/attachments/itg/11434140/Sample_Screenshot.png>)
-

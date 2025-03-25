@@ -1,5 +1,6 @@
 ---
 id: '619512d1-a535-44c5-9095-b7b310c7d171'
+slug: /619512d1-a535-44c5-9095-b7b310c7d171
 title: 'RSM - Active Directory - Compare - ADGroupMembership'
 title_meta: 'RSM - Active Directory - Compare - ADGroupMembership'
 keywords: ['active-directory', 'membership', 'comparison', 'registry', 'logging']
@@ -55,6 +56,5 @@ This command compares the users found in the last run of `Compare-ADGroupMembers
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
-
 
 

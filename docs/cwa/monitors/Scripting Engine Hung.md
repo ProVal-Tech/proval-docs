@@ -1,5 +1,6 @@
 ---
 id: '9292f135-cca4-4eba-97ff-cd4276ab62e9'
+slug: /9292f135-cca4-4eba-97ff-cd4276ab62e9
 title: 'Scripting Engine Hung'
 title_meta: 'Scripting Engine Hung'
 keywords: ['monitor', 'email', 'alert', 'mysql', 'troubleshooting', 'scripts']

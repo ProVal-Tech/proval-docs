@@ -1,5 +1,6 @@
 ---
 id: '11fad349-3b51-4bfd-8f45-d07db1827543'
+slug: /11fad349-3b51-4bfd-8f45-d07db1827543
 title: 'plugin_proval_account_lock'
 title_meta: 'plugin_proval_account_lock'
 keywords: ['lockout', 'audit', 'user', 'account', 'management']
@@ -32,4 +33,3 @@ This document collects information about locked-out user accounts (both domain a
 | Account Lock Date  | DATETIME | Account lock date                 |
 | Last Logon         | DATETIME | Account last login date           |
 | Script Run Time    | DATETIME | Script last execution date        |
-

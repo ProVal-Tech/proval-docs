@@ -1,5 +1,6 @@
 ---
 id: '615b14aa-fee1-4eeb-9e5f-02ad695317d9'  
+slug: /615b14aa-fee1-4eeb-9e5f-02ad695317d9  
 title: 'Remove-FirefoxHomepage'  
 title_meta: 'Remove-FirefoxHomepage'  
 keywords: ['remove', 'homepage', 'firefox', 'browser']  
@@ -24,6 +25,5 @@ This will remove all homepage policies from the policies.json file.
 ## Output  
 
     .\Remove-FirefoxHomepage-log.txt  
-
 
 

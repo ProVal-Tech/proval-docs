@@ -1,5 +1,6 @@
 ---
 id: 'f699ae53-3ba7-42bd-864d-a670aca7ab0b'
+slug: /f699ae53-3ba7-42bd-864d-a670aca7ab0b
 title: 'Exchange - Reset Scan Engine Version'
 title_meta: 'Exchange - Reset Scan Engine Version'
 keywords: ['exchange', 'email', 'transport', 'queues', 'vulnerability', 'update', 'service']
@@ -59,7 +60,6 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
-
 
 
 

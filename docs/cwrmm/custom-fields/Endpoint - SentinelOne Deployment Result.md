@@ -1,5 +1,6 @@
 ---
 id: '7af6b9e0-bf2f-4705-874e-c58c5fa9171d'
+slug: /7af6b9e0-bf2f-4705-874e-c58c5fa9171d
 title: 'Endpoint - SentinelOne Deployment Result'
 title_meta: 'Endpoint - SentinelOne Deployment Result'
 keywords: ['sentinelone', 'deployment', 'result', 'field', 'endpoint']
@@ -26,7 +27,6 @@ This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](
 ## Screenshot
 
 ![Screenshot](../../../static/img/Endpoint---SentinelOne-Deployment-Result/image_1.png)
-
 
 
 

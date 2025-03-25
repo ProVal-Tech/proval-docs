@@ -1,5 +1,6 @@
 ---
 id: '65815475-a61d-4f0d-b2ba-c7b8368285c9'
+slug: /65815475-a61d-4f0d-b2ba-c7b8368285c9
 title: 'Windows 10 Update Stats - Retrieve'
 title_meta: 'Windows 10 Update Stats - Retrieve'
 keywords: ['windows', 'update', 'monitor', 'registry', 'database', 'event', 'error', 'ticket', 'installation', 'report']
@@ -65,7 +66,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 This is intended to be an auto-fix on a monitor and should be used to populate data after a specific event is thrown on a computer.
-
 
 
 

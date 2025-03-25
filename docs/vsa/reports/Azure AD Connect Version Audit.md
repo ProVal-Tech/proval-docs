@@ -1,5 +1,6 @@
 ---
 id: '04af5f51-5656-4086-b2d2-94cb62388831'
+slug: /04af5f51-5656-4086-b2d2-94cb62388831
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit', 'report', 'software']
@@ -45,7 +46,6 @@ Defaults
 
 ### Export Attachment
 Attach the export XML of the report to this document.
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '9568d3f6-e271-45c8-9554-3a476f7eb5e4'
+slug: /9568d3f6-e271-45c8-9554-3a476f7eb5e4
 title: 'Execute Script - Disk - Gather Critical Data'
 title_meta: 'Execute Script - Disk - Gather Critical Data'
 keywords: ['disk', 'monitor', 'performance', 'data', 'windows', 'mysql']
@@ -41,6 +42,5 @@ Managed Windows Workstations
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
 Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>) script.
-
 
 

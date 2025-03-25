@@ -1,5 +1,6 @@
 ---
 id: '1e8cbc91-0ac5-4b80-b2bd-0b876528148e'
+slug: /1e8cbc91-0ac5-4b80-b2bd-0b876528148e
 title: 'Add Domain Group to Local Administrator'
 title_meta: 'Add Domain Group to Local Administrator'
 keywords: ['connectwise', 'ticket', 'creation', 'computer', 'groupid', 'alert', 'template', 'monitor']
@@ -101,5 +102,4 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
-
 

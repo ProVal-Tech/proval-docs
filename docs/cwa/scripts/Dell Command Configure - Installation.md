@@ -1,5 +1,6 @@
 ---
 id: '964767a7-3de0-4dd4-aa7c-21bf7f6ad926'
+slug: /964767a7-3de0-4dd4-aa7c-21bf7f6ad926
 title: 'Dell Command Configure - Installation'
 title_meta: 'Dell Command Configure - Installation'
 keywords: ['dell', 'configure', 'installation', 'script', 'automation']
@@ -34,6 +35,5 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 ## Output
 
 **Script Log:** Success or Failure
-
 
 

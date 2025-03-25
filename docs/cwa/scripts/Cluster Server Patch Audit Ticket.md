@@ -1,5 +1,6 @@
 ---
 id: '35bce608-7df7-4cc3-bd10-8037198f5025'
+slug: /35bce608-7df7-4cc3-bd10-8037198f5025
 title: 'Cluster Server Patch Audit Ticket'
 title_meta: 'Cluster Server Patch Audit Ticket'
 keywords: ['ticket', 'update', 'cluster', 'patching', 'cumulative', 'automation']
@@ -37,6 +38,5 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank you!
-
 
 

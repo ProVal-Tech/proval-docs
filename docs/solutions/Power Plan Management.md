@@ -1,5 +1,6 @@
 ---
 id: 'e7911ff5-d709-4ba0-b847-16969445c19b'
+slug: /e7911ff5-d709-4ba0-b847-16969445c19b
 title: 'Power Plan Management'
 title_meta: 'Power Plan Management'
 keywords: ['automation', 'windows', 'powerplan', 'audit', 'deployment']
@@ -123,6 +124,5 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
-
 
 

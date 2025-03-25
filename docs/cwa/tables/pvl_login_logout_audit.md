@@ -1,5 +1,6 @@
 ---
 id: 'c62e7bbf-226d-4269-9d12-536e43af5589'
+slug: /c62e7bbf-226d-4269-9d12-536e43af5589
 title: 'pvl_login_logout_audit'
 title_meta: 'pvl_login_logout_audit'
 keywords: ['user', 'login', 'logout', 'data', 'audit']
@@ -30,6 +31,5 @@ This table stores the User login/logout data.
 | ConnectionType    | INT     | An integer value representing the user connection type (e.g., remote, network, or no interaction). |
 | Action            | INT     | Indicates whether the trace found was for login or logout.                                     |
 | ScriptRanDate     | DATETIME| The date when the script last ran.                                                              |
-
 
 

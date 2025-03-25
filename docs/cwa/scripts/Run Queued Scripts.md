@@ -1,5 +1,6 @@
 ---
 id: 'f60f4501-a2ea-43f0-87ee-99fc8ee15031'
+slug: /f60f4501-a2ea-43f0-87ee-99fc8ee15031
 title: 'Run Queued Scripts'
 title_meta: 'Run Queued Scripts'
 keywords: ['script', 'automation', 'queue', 'execution', 'connectwise']
@@ -55,6 +56,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

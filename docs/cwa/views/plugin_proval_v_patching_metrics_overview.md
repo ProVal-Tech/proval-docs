@@ -1,5 +1,6 @@
 ---
 id: '2a7060e4-0b45-4246-a9ea-f39818cc93e8'
+slug: /2a7060e4-0b45-4246-a9ea-f39818cc93e8
 title: 'plugin_proval_v_patching_metrics_overview'
 title_meta: 'plugin_proval_v_patching_metrics_overview'
 keywords: ['patching', 'metrics', 'mysql', 'dataview', 'overview']
@@ -37,7 +38,6 @@ Minimum Requirement: MySQL 5.7.7
 | Total Approved   | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
 | Total Missing    | decimal (23,0)| Number of approved patches that aren't installed                                             |
 | Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |
-
 
 
 

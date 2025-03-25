@@ -1,5 +1,6 @@
 ---
 id: '0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78'
+slug: /0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78
 title: 'System Health Check & Repair [DISM, SFC]'
 title_meta: 'System Health Check & Repair [DISM, SFC]'
 keywords: ['DISM', 'SFC', 'Scan', 'Health', 'Check', 'Scan', 'Restore' ]

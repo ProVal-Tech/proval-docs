@@ -1,5 +1,6 @@
 ---
 id: 'bd6b7507-eccf-4fce-a4e4-62b9b7c97a08'
+slug: /bd6b7507-eccf-4fce-a4e4-62b9b7c97a08
 title: 'Windows - Set Wallpaper'
 title_meta: 'Windows - Set Wallpaper'
 keywords: ['desktop', 'wallpaper', 'enforcement', 'login', 'users', 'local', 'url']
@@ -39,6 +40,5 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ```
 C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
-
 
 

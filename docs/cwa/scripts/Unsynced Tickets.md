@@ -1,5 +1,6 @@
 ---
 id: 'eb434aae-87c4-4315-bf73-202a41ff3a96'
+slug: /eb434aae-87c4-4315-bf73-202a41ff3a96
 title: 'Unsynced Tickets'
 title_meta: 'Unsynced Tickets'
 keywords: ['email', 'ticket', 'sync', 'notification', 'automate']
@@ -83,5 +84,4 @@ Ticket Body: <Ticket Body>
 
 **Sample Screenshot:**
 ![Sample Screenshot](../../../static/img/Unsynced-Tickets/image_5.png)
-
 

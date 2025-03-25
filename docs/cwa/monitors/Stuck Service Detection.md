@@ -1,5 +1,6 @@
 ---
 id: 'be3ca430-f53d-4198-9360-52894e5e6a6a'
+slug: /be3ca430-f53d-4198-9360-52894e5e6a6a
 title: 'Stuck Service Detection'
 title_meta: 'Stuck Service Detection'
 keywords: ['remote', 'powershell', 'monitor', 'stuck', 'services', 'windows']
@@ -37,6 +38,5 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Windows Machine
-
 
 

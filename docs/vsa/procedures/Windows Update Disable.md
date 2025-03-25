@@ -1,5 +1,6 @@
 ---
 id: '23ff7552-2521-43f5-9b6a-bb090a2b5ae6'
+slug: /23ff7552-2521-43f5-9b6a-bb090a2b5ae6
 title: 'Windows Update Disable'
 title_meta: 'Windows Update Disable'
 keywords: ['windows', 'update', 'registry', 'disable', 'configuration']
@@ -38,6 +39,5 @@ This document outlines the procedure to disable Windows Update using the Windows
 ## Output
 
 Agent Procedure Log
-
 
 

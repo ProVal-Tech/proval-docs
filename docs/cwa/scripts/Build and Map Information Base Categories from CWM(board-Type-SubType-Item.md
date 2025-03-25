@@ -1,5 +1,6 @@
 ---
 id: 'ff2075a4-f6a2-4ac1-b548-286276aa35d8'
+slug: /ff2075a4-f6a2-4ac1-b548-286276aa35d8
 title: 'Build and Map Information Base Categories from CWM(board-Type-SubType-Item'
 title_meta: 'Build and Map Information Base Categories from CWM(board-Type-SubType-Item'
 keywords: ['categories', 'manage', 'ticket', 'database', 'insert', 'cw', 'service', 'plugin']
@@ -40,6 +41,5 @@ The script executes several SQL queries.
 ## Output
 
 There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.
-
 
 

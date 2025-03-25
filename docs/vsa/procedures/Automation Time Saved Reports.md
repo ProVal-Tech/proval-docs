@@ -1,5 +1,6 @@
 ---
 id: '52d14c0f-fe3e-4520-bed5-b05db491bf26'
+slug: /52d14c0f-fe3e-4520-bed5-b05db491bf26
 title: 'Automation Time Saved Reports'
 title_meta: 'Automation Time Saved Reports'
 keywords: ['vsa', 'time', 'saved', 'report', 'automation', 'csv']
@@ -58,4 +59,3 @@ Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](
 Agent Procedure Log
 ## Attachments
 [Procedure_Time_Saved_Report.xml](<../../../static/attachments/itg/11262292/Procedure_Time_Saved_Report.xml>)
-

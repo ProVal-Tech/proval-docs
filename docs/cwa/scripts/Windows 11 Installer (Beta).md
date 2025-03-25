@@ -1,5 +1,6 @@
 ---
 id: 'a4668ce4-9788-47a9-bb3b-1997367803ad'
+slug: /a4668ce4-9788-47a9-bb3b-1997367803ad
 title: 'Windows 11 Installer (Beta)'
 title_meta: 'Windows 11 Installer (Beta)'
 keywords: ['windows', 'install', 'upgrade', 'zip', 'iso', 'file', 'repository']
@@ -47,6 +48,5 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 ## Output
 
 - Script log
-
 
 

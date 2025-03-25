@@ -1,5 +1,6 @@
 ---
 id: '999eecab-38a7-41e1-b132-bc4b343e9b65'
+slug: /999eecab-38a7-41e1-b132-bc4b343e9b65
 title: 'Bitlocker Key Retrieval'
 title_meta: 'Bitlocker Key Retrieval'
 keywords: ['bitlocker', 'recovery', 'key', 'endpoint', 'cf']
@@ -39,7 +40,6 @@ This process retrieves Bitlocker recovery keys on the endpoint and prints any th
 ## Output
 
 CF, AP Log
-
 
 
 

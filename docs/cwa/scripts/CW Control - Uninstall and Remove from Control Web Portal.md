@@ -1,5 +1,6 @@
 ---
 id: 'd69c20e1-e605-4cf9-bf35-bbe4c74f134f'
+slug: /d69c20e1-e605-4cf9-bf35-bbe4c74f134f
 title: 'CW Control - Uninstall and Remove from Control Web Portal'
 title_meta: 'CW Control - Uninstall and Remove from Control Web Portal'
 keywords: ['uninstall', 'cw', 'control', 'rmm', 'script']
@@ -36,6 +37,5 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 - Script log
 - Ticket if failure found
-
 
 

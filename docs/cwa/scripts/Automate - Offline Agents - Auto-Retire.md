@@ -1,5 +1,6 @@
 ---
 id: 'a17ec084-ba3c-4a89-9d7a-52e4260af6e1'
+slug: /a17ec084-ba3c-4a89-9d7a-52e4260af6e1
 title: 'Automate - Offline Agents - Auto-Retire'
 title_meta: 'Automate - Offline Agents - Auto-Retire'
 keywords: ['offline', 'agents', 'auto-retire', 'script', 'automate', 'threshold', 'exclusions']
@@ -143,6 +144,5 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
-
 
 

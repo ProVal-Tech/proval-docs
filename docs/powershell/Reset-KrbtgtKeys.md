@@ -1,5 +1,6 @@
 ---
 id: 'ae748a86-1683-4d69-9c96-17a6a8f79950'
+slug: /ae748a86-1683-4d69-9c96-17a6a8f79950
 title: 'Reset-KrbtgtKeys'
 title_meta: 'Reset-KrbtgtKeys'
 keywords: ['krbtgt', 'reset', 'active-directory', 'security']
@@ -51,6 +52,5 @@ The output for log, result, and error files will be located at:
 .\Reset-KrbtgtKeys-log.txt
 .\Reset-KrbtgtKeys-error.txt
 ```
-
 
 

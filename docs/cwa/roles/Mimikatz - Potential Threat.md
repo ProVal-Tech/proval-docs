@@ -1,5 +1,6 @@
 ---
 id: 'd4cae7e3-3abd-44b5-a9d9-7a0668834050'
+slug: /d4cae7e3-3abd-44b5-a9d9-7a0668834050
 title: 'Mimikatz - Potential Threat'
 title_meta: 'Mimikatz - Potential Threat'
 keywords: ['registry', 'credentials', 'security', 'vulnerability', 'threat']
@@ -26,6 +27,5 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |
-
 
 

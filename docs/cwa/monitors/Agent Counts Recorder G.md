@@ -1,5 +1,6 @@
 ---
 id: '62a3e31e-a993-42f9-befe-d6649cea5df6'
+slug: /62a3e31e-a993-42f9-befe-d6649cea5df6
 title: 'Agent Counts Recorder G'
 title_meta: 'Agent Counts Recorder G'
 keywords: ['monitor', 'agent', 'count', 'history', 'custom', 'table']
@@ -20,6 +21,5 @@ The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom ta
 ## Target
 
 Global
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a367bf9d-8782-4500-a1b8-adbb757f23fc'
+slug: /a367bf9d-8782-4500-a1b8-adbb757f23fc
 title: 'Predictive Volume Space Exhaustion Monitoring'
 title_meta: 'Predictive Volume Space Exhaustion Monitoring'
 keywords: ['monitor', 'volume', 'exhaustion', 'forecast', 'utilization']
@@ -60,6 +61,5 @@ The goal of this solution is to monitor the trend of drive space utilization and
 - PVE_Monitoring_Workstation_AuditOnly
 
 Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Sampling.md>) monitors instead of the [Volume Space Prediction](<../cwa/monitors/EPM - Disk - Remote Monitor - Volume Space Prediction.md>). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](<../cwa/dataviews/Volume Exhaustion Estimations Remote Monitor.md>) dataview.
-
 
 

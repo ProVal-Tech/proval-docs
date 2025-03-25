@@ -1,5 +1,6 @@
 ---
 id: '36a13e9c-fd23-4dae-9979-04a99a787ac0'
+slug: /36a13e9c-fd23-4dae-9979-04a99a787ac0
 title: 'Script Failure Analysis - 30 Day Retention'
 title_meta: 'Script Failure Analysis - 30 Day Retention'
 keywords: ['script', 'failure', 'analysis', 'retention', 'data', 'update']
@@ -29,6 +30,5 @@ The purpose of this script is to create the [pvl_Script_Assessment](<../tables/p
 
 Schedule the script to run once per day, preferably around midnight.  
 ![Sample Run](../../../static/img/Script-Failure-Analysis---30-Day-Retention/image_1.png)
-
 
 

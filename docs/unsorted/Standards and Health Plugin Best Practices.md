@@ -1,5 +1,6 @@
 ---
 id: '68729023-fc85-4894-b5b5-d021942bc2a6'
+slug: /68729023-fc85-4894-b5b5-d021942bc2a6
 title: 'Standards and Health Plugin Best Practices'
 title_meta: 'Standards and Health Plugin Best Practices'
 keywords: ['searches', 'custom', 'unique', 'connectwise', 'automate']
@@ -21,6 +22,5 @@ All searches need to be custom and have a unique name to ensure clarity and orga
 
 </div>
 </div>
-
 
 

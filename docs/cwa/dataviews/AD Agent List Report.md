@@ -1,5 +1,6 @@
 ---
 id: '03c01cc8-d3e1-4fcb-b816-3c4292cb747e'
+slug: /03c01cc8-d3e1-4fcb-b816-3c4292cb747e
 title: 'AD Agent List Report'
 title_meta: 'AD Agent List Report'
 keywords: ['active-directory', 'automate', 'dataview', 'integration', 'agent']
@@ -30,6 +31,5 @@ This Dataview displays any machines found within the Active Directory integratio
 | Parent DN                | Displays whether the Parent DN is enabled or disabled |
 | Object Classes           | Displays the object class of the machine            |
 | Object Type              | Displays the object type of the machine             |
-
 
 

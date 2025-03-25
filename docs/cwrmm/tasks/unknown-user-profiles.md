@@ -1,5 +1,6 @@
 ---
 id: '93f21631-9100-46fc-864b-3af17bc91699'
+slug: /93f21631-9100-46fc-864b-3af17bc91699
 title: 'Unknown User Profiles'
 title_meta: 'Unknown User Profiles'
 keywords: ['user','profile','unknown','inferred']

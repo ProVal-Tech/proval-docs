@@ -1,5 +1,6 @@
 ---
 id: '13e225e3-ebab-45f8-ac25-f1a15eb4ac80'
+slug: /13e225e3-ebab-45f8-ac25-f1a15eb4ac80
 title: 'ShadowControl Installer'
 title_meta: 'ShadowControl Installer'
 keywords: ['shadowcontrol', 'client', 'install', 'download', 'subscription']
@@ -34,6 +35,5 @@ This script downloads and installs the ShadowControl client on the target machin
 ## Output
 
 **Script Log**
-
 
 

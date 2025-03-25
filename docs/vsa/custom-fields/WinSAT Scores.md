@@ -1,5 +1,6 @@
 ---
 id: '7fd9d7b3-8cf4-44e8-ac74-c2faf1981f40'
+slug: /7fd9d7b3-8cf4-44e8-ac74-c2faf1981f40
 title: 'WinSAT Scores'
 title_meta: 'WinSAT Scores'
 keywords: ['winsat', 'custom', 'fields', 'procedure', 'score']
@@ -21,6 +22,5 @@ This document uses the agent procedure of the same name and stores the values fr
 | xPVAL Disk Score        | Machine        | Captures the Disk score from WinSAT     |
 | xPVAL Graphics Score     | Machine        | Captures the Graphics score from WinSAT  |
 | xPVAL Memory Score      | Machine        | Captures the Memory score from WinSAT    |
-
 
 

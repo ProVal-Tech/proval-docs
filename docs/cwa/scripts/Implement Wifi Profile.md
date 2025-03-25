@@ -1,5 +1,6 @@
 ---
 id: 'cffbdce7-7390-4b11-9300-6a34799b7d82'
+slug: /cffbdce7-7390-4b11-9300-6a34799b7d82
 title: 'Implement Wifi Profile'
 title_meta: 'Implement Wifi Profile'
 keywords: ['wifi', 'profiles', 'script', 'automate', 'network']
@@ -102,6 +103,5 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
-
 
 

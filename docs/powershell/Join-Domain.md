@@ -1,5 +1,6 @@
 ---
 id: 'fb3e4906-6520-4b5b-bc35-db7b79b45f7d'
+slug: /fb3e4906-6520-4b5b-bc35-db7b79b45f7d
 title: 'Join-Domain'
 title_meta: 'Join-Domain'
 keywords: ['join', 'domain', 'online', 'offline']
@@ -55,5 +56,4 @@ This command will use the provided `.txt` file to offline join the computer to t
 - Console: Domain join results, or nothing on error.
 - `.\\Join-Domain-log.txt`
 - `.\\Join-Domain-error.txt`
-
 

@@ -1,5 +1,6 @@
 ---
 id: '5cb1373f-6cdc-4576-8b3e-e8bfc4d664de'
+slug: /5cb1373f-6cdc-4576-8b3e-e8bfc4d664de
 title: 'Import - Remote Monitor - Set-PsRepository PSGallery'
 title_meta: 'Import - Remote Monitor - Set-PsRepository PSGallery'
 keywords: ['psgallery', 'repository', 'trusted', 'connectwise', 'monitor']

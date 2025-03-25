@@ -1,5 +1,6 @@
 ---
 id: '2e7517b7-3d3c-47b0-a885-bb8293c55263'
+slug: /2e7517b7-3d3c-47b0-a885-bb8293c55263
 title: 'Webroot Keycode Verification EDF'
 title_meta: 'Webroot Keycode Verification EDF'
 keywords: ['webroot', 'keycode', 'license', 'monitor', 'edf']
@@ -34,7 +35,6 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
-
 
 
 

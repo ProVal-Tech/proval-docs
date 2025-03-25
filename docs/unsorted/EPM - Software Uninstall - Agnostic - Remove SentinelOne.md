@@ -1,5 +1,6 @@
 ---
 id: 'd11e39f7-7b6e-426c-87b4-99e263bac943'
+slug: /d11e39f7-7b6e-426c-87b4-99e263bac943
 title: 'EPM - Software Uninstall - Agnostic - Remove SentinelOne'
 title_meta: 'EPM - Software Uninstall - Agnostic - Remove SentinelOne'
 keywords: ['uninstall', 'sentinelone', 'agent', 'windows', 'security']
@@ -45,6 +46,5 @@ Location of output for log, result, and error files:
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
 
 

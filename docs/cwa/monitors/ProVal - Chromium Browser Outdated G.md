@@ -1,5 +1,6 @@
 ---
 id: '432cea29-e0c2-4a8d-b728-08af9446534b'
+slug: /432cea29-e0c2-4a8d-b728-08af9446534b
 title: 'ProVal - Chromium Browser Outdated G'
 title_meta: 'ProVal - Chromium Browser Outdated G'
 keywords: ['browsers', 'chrome', 'edge', 'brave', 'opera', 'monitor', 'update']

@@ -1,5 +1,6 @@
 ---
 id: '58b312bd-f26c-4b05-ab92-c184520d05de'
+slug: /58b312bd-f26c-4b05-ab92-c184520d05de
 title: 'WinFeatUpgradeAttempts'
 title_meta: 'WinFeatUpgradeAttempts'
 keywords: ['windows', 'upgrade', 'tracking', 'feature', 'endpoint']
@@ -27,6 +28,5 @@ This document will keep a record of how many times a Windows 10/11 device has at
 **Level:** Endpoint  
 **Description:** This field will keep a record of how many times a Windows 10/11 device has attempted to install the feature upgrade using the `Feature Update Install With Tracking` task, with the default value set to 0.  
 **Editable:** Yes  
-
 
 

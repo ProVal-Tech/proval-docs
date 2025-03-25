@@ -1,5 +1,6 @@
 ---
 id: '7f7e7d3b-047d-41dc-acc2-5083adcaaf39'
+slug: /7f7e7d3b-047d-41dc-acc2-5083adcaaf39
 title: 'VSSAdmin Storage Audit'
 title_meta: 'VSSAdmin Storage Audit'
 keywords: ['vss', 'storage', 'volume', 'audit', 'agent']
@@ -33,6 +34,5 @@ This dataview stores the details of VSS admin storage for all volumes.
 | VSS Allocated Storage   | VSS storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Date when the script last ran on the agent    |
-
 
 

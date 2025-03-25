@@ -1,5 +1,6 @@
 ---
 id: '7a87abf3-b410-491b-bbc1-534092e61f55'
+slug: /7a87abf3-b410-491b-bbc1-534092e61f55
 title: 'plugin_proval_userprofiles'
 title_meta: 'plugin_proval_userprofiles'
 keywords: ['windows', 'user', 'profile', 'data', 'audit', 'computer', 'local', 'admin']
@@ -33,6 +34,5 @@ This document stores Windows user profile information. Data is filled by [EPM - 
 | TimeStamp   | DATETIME | The date and time of the audit.                           |
 | UserProfile | VARCHAR  | The path to the user profile folder.                      |
 | Enabled     | VARCHAR  | True or False indicating if the local account is enabled. If not a local user, then the field is set to Remote. |
-
 
 

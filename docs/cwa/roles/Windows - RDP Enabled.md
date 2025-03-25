@@ -1,5 +1,6 @@
 ---
 id: '2aa464bf-472c-48db-a3a8-f8fc1aa11091'
+slug: /2aa464bf-472c-48db-a3a8-f8fc1aa11091
 title: 'Windows - RDP Enabled'
 title_meta: 'Windows - RDP Enabled'
 keywords: ['rdp', 'detection', 'agent', 'windows']
@@ -18,7 +19,6 @@ This role is detected on any agent where RDP is enabled.
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-ItemProperty -Path 'HKLM://System//CurrentControlSet//Control//Terminal Server' -name 'fDenyTSConnections').fDenyTSConnections"@%} | Equals     | 0      | Windows        |
-
 
 
 

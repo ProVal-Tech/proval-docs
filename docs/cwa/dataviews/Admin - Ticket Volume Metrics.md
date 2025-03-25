@@ -1,5 +1,6 @@
 ---
 id: 'c5f66e4b-17d7-4ccb-bc27-d992e6031650'
+slug: /c5f66e4b-17d7-4ccb-bc27-d992e6031650
 title: 'Admin - Ticket Volume Metrics'
 title_meta: 'Admin - Ticket Volume Metrics'
 keywords: ['metrics', 'tickets', 'calculation', 'database', 'automate']
@@ -33,6 +34,5 @@ Automate must generate tickets.
 ## Example
 
 ![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
-
 
 

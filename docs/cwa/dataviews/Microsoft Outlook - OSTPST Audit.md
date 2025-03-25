@@ -1,5 +1,6 @@
 ---
 id: '30279ec0-cbb0-40f5-95ea-fb8052cb093a'
+slug: /30279ec0-cbb0-40f5-95ea-fb8052cb093a
 title: 'Microsoft Outlook - OSTPST Audit'
 title_meta: 'Microsoft Outlook - OSTPST Audit'
 keywords: ['dataview', 'outlook', 'audit', 'ost', 'pst', 'windows']
@@ -39,6 +40,5 @@ This Dataview displays the path and size of the OST and PST files for users on a
 | Operating System          | Operating System                                            |
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
-
 
 

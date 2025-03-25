@@ -1,5 +1,6 @@
 ---
 id: '7940894c-700c-442d-b0ba-0f197548a8fd'
+slug: /7940894c-700c-442d-b0ba-0f197548a8fd
 title: 'Symantec Endpoint Protection Uninstaller'
 title_meta: 'Symantec Endpoint Protection Uninstaller'
 keywords: ['uninstall', 'symantec', 'endpoint', 'protection', 'script']
@@ -38,6 +39,5 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 ## Output
 
 - Script log.
-
 
 

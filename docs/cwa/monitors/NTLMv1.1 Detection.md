@@ -1,5 +1,6 @@
 ---
 id: '8e107867-6d8d-4b6c-aa10-20f8da59fdca'
+slug: /8e107867-6d8d-4b6c-aa10-20f8da59fdca
 title: 'NTLMv1.1 Detection'
 title_meta: 'NTLMv1.1 Detection'
 keywords: ['ntlm', 'status', 'windows', 'monitor', 'security']

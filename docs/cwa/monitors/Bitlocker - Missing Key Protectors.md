@@ -1,5 +1,6 @@
 ---
 id: '2609502c-8a9d-4e8d-98cb-e1b6f7fb2fdb'
+slug: /2609502c-8a9d-4e8d-98cb-e1b6f7fb2fdb
 title: 'Bitlocker - Missing Key Protectors'
 title_meta: 'Bitlocker - Missing Key Protectors'
 keywords: ['bitlocker', 'encryption', 'monitor', 'key', 'protectors']
@@ -31,6 +32,5 @@ Global
 **Name:** `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
 
 The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](<../scripts/Bitlocker - Volume - Add Recovery Password Autofix.md>) should be imported before creating or importing the alert template, as the alert template should run this.
-
 
 

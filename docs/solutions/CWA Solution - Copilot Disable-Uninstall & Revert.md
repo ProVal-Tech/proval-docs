@@ -1,5 +1,6 @@
 ---
 id: '00a48929-36d7-4435-8113-deb3b05b5bc2'
+slug: /00a48929-36d7-4435-8113-deb3b05b5bc2
 title: 'CWA Solution - Copilot Disable/Uninstall & Revert'
 title_meta: 'CWA Solution - Copilot Disable/Uninstall & Revert'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']

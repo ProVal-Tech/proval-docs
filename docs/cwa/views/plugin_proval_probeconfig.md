@@ -1,5 +1,6 @@
 ---
 id: 'bd07c1dc-34ff-4f87-aae9-b43dcd1b5057'
+slug: /bd07c1dc-34ff-4f87-aae9-b43dcd1b5057
 title: 'plugin_proval_probeconfig'
 title_meta: 'plugin_proval_probeconfig'
 keywords: ['network', 'probe', 'configuration', 'view', 'audit']
@@ -55,6 +56,5 @@ This view was created to bypass the word count limit of 2500 for the "SQLBody" c
 | Updated By                               | VARCHAR  | Last user to make any changes to the probe                          |
 | Creation Date                            | datetime | Date of creation                                                   |
 | Last Update Date                         | datetime | Last update date for the network probe                              |
-
 
 

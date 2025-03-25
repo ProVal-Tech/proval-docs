@@ -1,5 +1,6 @@
 ---
 id: '9da26821-e8e6-44b4-9310-2495aebd0396'
+slug: /9da26821-e8e6-44b4-9310-2495aebd0396
 title: 'PowerShell Version Audit Role'
 title_meta: 'PowerShell Version Audit Role'
 keywords: ['powershell', 'version', 'role', 'rmm', 'agent']
@@ -27,6 +28,5 @@ This dataview collects information about the PowerShell version based on the rol
 | Operating System     | Operating system of the agent             |
 | Last Contact         | Last contact of the agent with the RMM   |
 | PowerShell Version    | PowerShell version of the agent           |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f583b03a-3b9c-4630-b104-5f32fb5c55b9'
+slug: /f583b03a-3b9c-4630-b104-5f32fb5c55b9
 title: 'SFTP Server - Download Files'
 title_meta: 'SFTP Server - Download Files'
 keywords: ['sftp', 'download', 'file', 'client', 'password', 'entry']
@@ -49,6 +50,5 @@ Setting the required details to execute the script into a client-level password 
 ## Output
 
 - Script Logs
-
 
 

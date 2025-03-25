@@ -1,5 +1,6 @@
 ---
 id: '3f87f890-c2b4-4f01-b9e2-c1828cc164c9'
+slug: /3f87f890-c2b4-4f01-b9e2-c1828cc164c9
 title: 'EPM - Windows Configuration - Dataview - Department Detail of Computer'
 title_meta: 'EPM - Windows Configuration - Dataview - Department Detail of Computer'
 keywords: ['department', 'user', 'computer', 'client', 'location', 'os', 'memory', 'cpu', 'drive', 'sql']
@@ -101,6 +102,5 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
-
 
 

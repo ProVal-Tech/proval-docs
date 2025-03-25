@@ -1,5 +1,6 @@
 ---
 id: 'f4ce0265-0066-42ca-a1d5-c8897cb393f4'
+slug: /f4ce0265-0066-42ca-a1d5-c8897cb393f4
 title: 'Winget Upgrade All'
 title_meta: 'Winget Upgrade All'
 keywords: ['winget', 'upgrade', 'windows', 'packages', 'installation']
@@ -145,6 +146,5 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-
 
 

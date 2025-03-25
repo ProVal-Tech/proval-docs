@@ -1,5 +1,6 @@
 ---
 id: '67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11'
+slug: /67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11
 title: 'Weak Passwords Audit'
 title_meta: 'Weak Passwords Audit'
 keywords: ['weak', 'passwords', 'detection', 'connectwise', 'rmm']
@@ -56,7 +57,6 @@ This solution gathers information on users with potentially compromised password
 
 4. Create and deploy the following task:
    - [CW RMM - Task - Weak Passwords - AD Test](<../cwrmm/tasks/Weak Passwords - AD Test.md>)
-
 
 
 

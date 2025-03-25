@@ -1,5 +1,6 @@
 ---
 id: '86b3fe11-be22-4721-8626-ba34a5bf4419'
+slug: /86b3fe11-be22-4721-8626-ba34a5bf4419
 title: 'Onedrive Uninstallation'
 title_meta: 'Onedrive Uninstallation'
 keywords: ['uninstall', 'onedrive', 'windows', 'ticketing', 'script']
@@ -41,6 +42,5 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
-
 
 

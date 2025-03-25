@@ -1,5 +1,6 @@
 ---
 id: 'bfa72bb7-6a35-497d-9435-758f28c81b39'
+slug: /bfa72bb7-6a35-497d-9435-758f28c81b39
 title: 'Rename-ITGlueDocuments'
 title_meta: 'Rename-ITGlueDocuments'
 keywords: ['rename', 'itglue', 'documents', 'bulk']
@@ -21,6 +22,5 @@ Parses through CSV exports from the conversion and directly from ITGlue to renam
 ## Output
 - `.\editeddocs.csv`
 - `.\skippeddocs.csv`
-
 
 

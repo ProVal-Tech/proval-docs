@@ -1,5 +1,6 @@
 ---
 id: '803b51b1-d17f-429c-835d-55712c49e75e'
+slug: /803b51b1-d17f-429c-835d-55712c49e75e
 title: 'Update Agent - All OS'
 title_meta: 'Update Agent - All OS'
 keywords: ['agent', 'update', 'environment', 'sql', 'version']
@@ -23,6 +24,5 @@ The script pulls the highest agent version in the environment and attempts to up
 
 - The script runs SQL to pull the highest agent version in the environment and attempts to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date.
-
 
 

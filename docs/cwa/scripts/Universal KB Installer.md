@@ -1,5 +1,6 @@
 ---
 id: '424dfd5c-377f-461f-a57f-80001d839af8'
+slug: /424dfd5c-377f-461f-a57f-80001d839af8
 title: 'Universal KB Installer'
 title_meta: 'Universal KB Installer'
 keywords: ['install', 'patch', 'windows', 'kbnumber', 'reboot']
@@ -32,7 +33,6 @@ Set the Reboot parameter to '1' to reboot the machine.
 ## Output
 
 - Script Logs
-
 
 
 

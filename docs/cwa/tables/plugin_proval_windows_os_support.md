@@ -1,5 +1,6 @@
 ---
 id: '938cd822-f6a3-4ee3-add2-62b407e45622'
+slug: /938cd822-f6a3-4ee3-add2-62b407e45622
 title: 'plugin_proval_windows_os_support'
 title_meta: 'plugin_proval_windows_os_support'
 keywords: ['windows', 'support', 'end', 'dates', 'build', 'version']

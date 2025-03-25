@@ -1,5 +1,6 @@
 ---
 id: 'bea56cbb-3761-452a-9493-08a88bc6dbab'
+slug: /bea56cbb-3761-452a-9493-08a88bc6dbab
 title: 'pvl_outlook_pst_ost_audit'
 title_meta: 'pvl_outlook_pst_ost_audit'
 keywords: ['custom', 'table', 'microsoft', 'outlook', 'audit']
@@ -28,6 +29,5 @@ The custom table stores the data gathered by the [EPM - Data Collection - Script
 | Size                | Double   | Size of the file in Megabytes              |
 | ModificationTime    | DateTime | Most recent modification time of the file   |
 | DataCollectionTime  | DateTime | Data Collection Time                        |
-
 
 

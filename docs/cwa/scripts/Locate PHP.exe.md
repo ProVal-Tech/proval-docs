@@ -1,5 +1,6 @@
 ---
 id: '174c59f1-8d7f-44a0-b5de-d69145ab4a43'
+slug: /174c59f1-8d7f-44a0-b5de-d69145ab4a43
 title: 'Locate PHP.exe'
 title_meta: 'Locate PHP.exe'
 keywords: ['php', 'everything', 'script', 'custom', 'table']
@@ -50,6 +51,5 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 - Script Log
 - Dataview
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '46264239-1ea0-467d-a36b-8be9fe5eece8'
+slug: /46264239-1ea0-467d-a36b-8be9fe5eece8
 title: 'Uninstall SentinelOne'
 title_meta: 'Uninstall SentinelOne'
 keywords: ['sentinelone', 'uninstall', 'windows', 'agent', 'reboot']
@@ -26,6 +27,5 @@ This document provides a script designed to uninstall the SentinelOne agent from
 ## Output
 
 - Script log
-
 
 

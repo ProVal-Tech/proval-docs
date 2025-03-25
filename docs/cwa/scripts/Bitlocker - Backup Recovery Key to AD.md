@@ -1,5 +1,6 @@
 ---
 id: '5f31f0b4-b682-4444-bd51-3182a8a2bd39'
+slug: /5f31f0b4-b682-4444-bd51-3182a8a2bd39
 title: 'Bitlocker - Backup Recovery Key to AD'
 title_meta: 'Bitlocker - Backup Recovery Key to AD'
 keywords: ['bitlocker', 'backup', 'recovery', 'ad', 'encryption', 'script']
@@ -45,6 +46,5 @@ The machine must be using BitLocker for encryption.
 ## Output
 
 - Script log
-
 
 

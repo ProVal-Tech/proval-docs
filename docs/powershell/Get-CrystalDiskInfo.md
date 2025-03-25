@@ -1,5 +1,6 @@
 ---
 id: 'b08e9cd3-931f-4c70-a084-6193fe3702fb'
+slug: /b08e9cd3-931f-4c70-a084-6193fe3702fb
 title: 'Get-CrystalDiskInfo'
 title_meta: 'Get-CrystalDiskInfo'
 keywords: ['crystaldiskinfo', 'disk', 'health', 'monitoring']
@@ -44,6 +45,5 @@ Location of output for log, result, and error files.
 .\Get-CrystalDiskInfo-log.txt
 .\Get-CrystalDiskInfo-error.txt
 ```
-
 
 

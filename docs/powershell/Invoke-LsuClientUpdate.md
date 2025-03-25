@@ -1,5 +1,6 @@
 ---
 id: 'da759e59-6f62-476d-a776-39b09e07ffbe'
+slug: /da759e59-6f62-476d-a776-39b09e07ffbe
 title: 'Invoke-LsuClientUpdate'
 title_meta: 'Invoke-LsuClientUpdate'
 keywords: ['lenovo', 'update', 'firmware', 'driver']
@@ -61,6 +62,5 @@ This command will attempt to install all available and silently installable pack
     LogOutput      :
     Runtime        : 00:00:21.3074228
 ```
-
 
 

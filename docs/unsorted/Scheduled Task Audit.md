@@ -1,5 +1,6 @@
 ---
 id: 'c9a84634-8ee6-4484-8aa7-e92bafd4443c'
+slug: /c9a84634-8ee6-4484-8aa7-e92bafd4443c
 title: 'Scheduled Task Audit'
 title_meta: 'Scheduled Task Audit'
 keywords: ['audit', 'scheduled', 'task', 'user', 'account', 'json', 'sql', 'data', 'table']
@@ -44,6 +45,5 @@ This script creates a table named "plugin_proval_scheduled_tasks" to store the s
 - plugin_proval_scheduled_tasks
 - Data view
 - etc.
-
 
 

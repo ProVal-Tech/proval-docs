@@ -1,5 +1,6 @@
 ---
 id: '510f8406-d2d0-4ada-a92d-6837c134f43b'
+slug: /510f8406-d2d0-4ada-a92d-6837c134f43b
 title: 'Get-PowerPlan'
 title_meta: 'Get-PowerPlan'
 keywords: ['power', 'plan', 'settings', 'subgroup', 'configuration']
@@ -38,6 +39,5 @@ The output log can be found at:
 `$env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt`
 
 Agent Procedure Log
-
 
 

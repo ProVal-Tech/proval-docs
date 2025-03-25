@@ -1,5 +1,6 @@
 ---
 id: '32773ed7-c2cc-4be0-ac81-8a3fce722557'
+slug: /32773ed7-c2cc-4be0-ac81-8a3fce722557
 title: 'New Super Admin'
 title_meta: 'New Super Admin'
 keywords: ['monitor', 'permission', 'admin', 'audit', 'user']

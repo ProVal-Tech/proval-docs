@@ -1,5 +1,6 @@
 ---
 id: '588a3c7f-6c79-4f08-9085-cefa06b94d3b'
+slug: /588a3c7f-6c79-4f08-9085-cefa06b94d3b
 title: 'Admin - Fix Service Plan Dropdown Menus'
 title_meta: 'Admin - Fix Service Plan Dropdown Menus'
 keywords: ['monitor', 'service', 'plan', 'dropdown', 'connectwise', 'automate']
@@ -46,6 +47,5 @@ WHERE parentid
     IN(SELECT groupid FROM mastergroups WHERE fullname='Service Plans.Windows Servers') AND `Name` <> 'Server Roles')
 WHERE LtGuid='5ca92306-2d93-11e1-ac0f-3d76979114ae' AND ftype=2;
 ```
-
 
 

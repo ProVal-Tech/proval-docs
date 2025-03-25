@@ -1,5 +1,6 @@
 ---
 id: '3c802520-f292-46e2-bd0e-0dbca86ed0ed'
+slug: /3c802520-f292-46e2-bd0e-0dbca86ed0ed
 title: 'Domain - Join'
 title_meta: 'Domain - Join'
 keywords: ['domain', 'machine', 'join', 'ou', 'restart', 'client', 'location', 'sql', 'credentials']
@@ -32,6 +33,5 @@ This script joins the target machine to a domain based on its current client and
 ## Output
 
 - Script log
-
 
 

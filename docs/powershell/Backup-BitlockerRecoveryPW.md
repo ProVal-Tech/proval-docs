@@ -1,5 +1,6 @@
 ---
 id: '7eecbf0c-2b91-4454-ba5c-e1b9605f07fc'
+slug: /7eecbf0c-2b91-4454-ba5c-e1b9605f07fc
 title: 'Backup-BitlockerRecoveryPW'
 title_meta: 'Backup-BitlockerRecoveryPW'
 keywords: ['bitlocker', 'recovery', 'password', 'backup']
@@ -30,6 +31,5 @@ Attempts to back up any Recovery Password type key protectors to Active Director
 - `Microsoft.BitLocker.Structures.BitLockerVolume`
 - `.\Backup-BitlockerRecoveryPW-log.txt`
 - `.\Backup-BitlockerRecoveryPW-error.txt`
-
 
 

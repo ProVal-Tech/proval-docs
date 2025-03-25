@@ -1,5 +1,6 @@
 ---
 id: '8086f53d-c2db-40df-aa54-ea8590800fd3'
+slug: /8086f53d-c2db-40df-aa54-ea8590800fd3
 title: 'Microsoft Office - Click-to-Run - Update'
 title_meta: 'Microsoft Office - Click-to-Run - Update'
 keywords: ['microsoft', 'update', 'apps', 'office365', 'software']
@@ -23,6 +24,5 @@ Update Microsoft 365 Apps to their latest version.
 - **Location:** /ProgramData/_automation/script/Update-Office/Update-Office-log.txt
 
 *(Add any additional output details here)*
-
 
 

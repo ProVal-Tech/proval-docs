@@ -1,5 +1,6 @@
 ---
 id: '4cc33728-0327-42b5-86d3-e85c91635c71'
+slug: /4cc33728-0327-42b5-86d3-e85c91635c71
 title: 'Get-RecentEventLog'
 title_meta: 'Get-RecentEventLog'
 keywords: ['eventlog', 'recent', 'logs', 'windows']
@@ -63,6 +64,5 @@ Get events from the Windows event log that have triggered since the last run of 
 
 ## Output
 `System.Diagnostics.Eventing.Reader.EventLogRecord`
-
 
 

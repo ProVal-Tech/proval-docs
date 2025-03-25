@@ -1,5 +1,6 @@
 ---
 id: '71ade073-cc5c-4833-bf2c-2d8b13472078'
+slug: /71ade073-cc5c-4833-bf2c-2d8b13472078
 title: 'Active Directory User Assessment'
 title_meta: 'Active Directory User Assessment'
 keywords: ['active-directory', 'report', 'user', 'assessment', 'domain', 'settings']
@@ -19,6 +20,5 @@ This report is dependent on the following items:
 
 - [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9492875)
 - [AD - Create Views/Tables/Schedules for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'b7936e96-423d-4c53-bd95-d10a6c4861f1'
+slug: /b7936e96-423d-4c53-bd95-d10a6c4861f1
 title: 'Execute Script - Microsoft OneDrive Sync Status'
 title_meta: 'Execute Script - Microsoft OneDrive Sync Status'
 keywords: ['monitor', 'onedrive', 'script', 'execution', 'workstations']
@@ -24,6 +25,5 @@ Global
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Microsoft OneDrive Sync Status`
-
 
 

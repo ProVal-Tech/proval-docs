@@ -1,5 +1,6 @@
 ---
 id: '7710c476-c3a8-4432-883c-873c5fd2c4a9'
+slug: /7710c476-c3a8-4432-883c-873c5fd2c4a9
 title: 'StorageCraft ShadowProtect SPX v6.5 and above'
 title_meta: 'StorageCraft ShadowProtect SPX v6.5 and above'
 keywords: ['storagecraft', 'version', 'check', 'automate', 'database']
@@ -18,6 +19,5 @@ This role checks the installed version of StorageCraft. If it matches version 6.
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
-
 
 

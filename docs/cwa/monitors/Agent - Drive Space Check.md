@@ -1,5 +1,6 @@
 ---
 id: '6d2587d3-3839-4f53-92a7-89890936958d'
+slug: /6d2587d3-3839-4f53-92a7-89890936958d
 title: 'Agent - Drive Space Check'
 title_meta: 'Agent - Drive Space Check'
 keywords: ['monitoring', 'drive', 'space', 'endpoints', 'alert', 'thresholds']
@@ -36,6 +37,5 @@ This monitor is primarily designed for server drive space monitoring. It will fu
 The monitor filters out the following drive file systems: 'CDFS', 'UNKFS', 'DVDFS', 'FAT', 'FAT32', and 'NetFS'.
 
 It also filters out drives where the SmartStatus is like USB, in an attempt to exclude USB drives.
-
 
 

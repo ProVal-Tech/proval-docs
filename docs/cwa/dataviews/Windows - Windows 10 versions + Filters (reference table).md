@@ -1,5 +1,6 @@
 ---
 id: 'f459645f-0d19-4a73-ad4c-8ddcb3ce4b13'
+slug: /f459645f-0d19-4a73-ad4c-8ddcb3ce4b13
 title: 'Windows - Windows 10 versions + Filters (reference table)'
 title_meta: 'Windows - Windows 10 versions + Filters (reference table)'
 keywords: ['windows', 'patch', 'policy', 'build', 'support', 'rmm']
@@ -34,6 +35,5 @@ This document contains information about Windows 10 build information and patch 
 | Days Since Last Patched   | Days since last contact with RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
-
 
 

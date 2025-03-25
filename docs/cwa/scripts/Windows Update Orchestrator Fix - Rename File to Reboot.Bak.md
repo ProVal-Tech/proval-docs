@@ -1,5 +1,6 @@
 ---
 id: '8a8349f6-0f93-4e85-9a33-f6c7867f4bf5'
+slug: /8a8349f6-0f93-4e85-9a33-f6c7867f4bf5
 title: 'Windows Update Orchestrator Fix - Rename File to Reboot.Bak'
 title_meta: 'Windows Update Orchestrator Fix - Rename File to Reboot.Bak'
 keywords: ['autofix', 'update', 'orchestrator', 'service', 'status', 'detection', 'rename', 'patches']
@@ -34,6 +35,5 @@ The monitor will check for the condition, and this script will automatically exe
 ## Output
 
 Script log messages only.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '663e3658-c389-4ab6-b7a2-8486f9e237c1'
+slug: /663e3658-c389-4ab6-b7a2-8486f9e237c1
 title: 'Fast Boot - Disable'
 title_meta: 'Fast Boot - Disable'
 keywords: ['windows', 'registry', 'fast', 'boot', 'shutdown']
@@ -45,6 +46,5 @@ If the value did not change in the registry, the script will exit with a failure
 ## Output
 
 Script log messages only.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e1b8cfd0-d42d-4056-ac55-82a30f5bdffd'
+slug: /e1b8cfd0-d42d-4056-ac55-82a30f5bdffd
 title: 'Auto Close - Missing Patch Tickets Autofix'
 title_meta: 'Auto Close - Missing Patch Tickets Autofix'
 keywords: ['tickets', 'patches', 'monitor', 'automation', 'close']
@@ -30,6 +31,5 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticket ID to finish/close                         |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'f2feefc8-66ef-4c25-810c-647e84249e3d'
+slug: /f2feefc8-66ef-4c25-810c-647e84249e3d
 title: 'Install WindowsUpdate PowerShell Module'
 title_meta: 'Install WindowsUpdate PowerShell Module'
 keywords: ['windows', 'update', 'powershell', 'module', 'install']
@@ -76,7 +77,6 @@ PowerShell: 5.1.0
 ## Output
 
 Agent Procedure Logs
-
 
 
 

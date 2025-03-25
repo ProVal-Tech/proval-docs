@@ -1,5 +1,6 @@
 ---
 id: 'dcffd758-d8cc-46a4-b7d7-cd34b7fd4953'
+slug: /dcffd758-d8cc-46a4-b7d7-cd34b7fd4953
 title: 'Firefox - Remove Extension'
 title_meta: 'Firefox - Remove Extension'
 keywords: ['firefox', 'extension', 'remove', 'block', 'addons', 'policies']
@@ -56,6 +57,5 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on computer
-
 
 

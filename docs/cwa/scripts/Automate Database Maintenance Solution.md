@@ -1,5 +1,6 @@
 ---
 id: '6436e6f3-e161-4b64-a4bf-1177cce2f968'
+slug: /6436e6f3-e161-4b64-a4bf-1177cce2f968
 title: 'Automate Database Maintenance Solution'
 title_meta: 'Automate Database Maintenance Solution'
 keywords: ['automate', 'database', 'maintenance', 'cleanup', 'logging', 'scripts']
@@ -115,6 +116,5 @@ This is a client-level script and should be scheduled to run regularly to mainta
 
 The script log represents a log file. This is a representation of the expected log file.  
 ![Expected Log File Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_6.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4e0f7314-bf88-44de-a162-139c191e6e09'
+slug: /4e0f7314-bf88-44de-a162-139c191e6e09
 title: 'Network Glue - Deployment'
 title_meta: 'Network Glue - Deployment'
 keywords: ['monitor', 'deployment', 'network', 'glue', 'collector', 'windows']

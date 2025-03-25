@@ -1,5 +1,6 @@
 ---
 id: '1f1d7e57-764e-4888-bda1-fc0ea45f85c0'
+slug: /1f1d7e57-764e-4888-bda1-fc0ea45f85c0
 title: 'Restore-RegistryValue'
 title_meta: 'Restore-RegistryValue'
 keywords: ['registry', 'restore', 'backup', 'windows', 'administration']

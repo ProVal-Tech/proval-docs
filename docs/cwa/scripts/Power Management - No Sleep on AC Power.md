@@ -1,5 +1,6 @@
 ---
 id: '150f9b38-2ff8-457d-9293-943a2d038d04'
+slug: /150f9b38-2ff8-457d-9293-943a2d038d04
 title: 'Power Management - No Sleep on AC Power'
 title_meta: 'Power Management - No Sleep on AC Power'
 keywords: ['sleep', 'powercfg', 'never', 'exe', 'ac']
@@ -51,6 +52,5 @@ The script will download the EXE file and execute it.
 ## Output
 
 - Script log
-
 
 

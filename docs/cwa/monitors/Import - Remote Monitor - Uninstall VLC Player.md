@@ -1,5 +1,6 @@
 ---
 id: 'fbb859fd-ac3c-4cab-9460-6d5260edf65e'
+slug: /fbb859fd-ac3c-4cab-9460-6d5260edf65e
 title: 'Import - Remote Monitor - Uninstall VLC Player'
 title_meta: 'Import - Remote Monitor - Uninstall VLC Player.md'
 keywords: ['uninstall', 'vlc', 'connectwise', 'monitor', 'ticket']

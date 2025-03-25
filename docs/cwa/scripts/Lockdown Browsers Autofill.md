@@ -1,5 +1,6 @@
 ---
 id: '0fd5ce6e-ad48-4198-a69f-55dc16865b05'
+slug: /0fd5ce6e-ad48-4198-a69f-55dc16865b05
 title: 'Lockdown Browsers Autofill'
 title_meta: 'Lockdown Browsers Autofill'
 keywords: ['lockdown', 'browsers', 'configuration', 'edfs', 'remote', 'monitors']
@@ -357,5 +358,4 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Browsers Password Manager
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
-
 

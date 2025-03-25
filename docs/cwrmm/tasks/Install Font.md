@@ -1,5 +1,6 @@
 ---
 id: 'f3ecbc30-3826-4326-9a9d-4ea6411f22a9'
+slug: /f3ecbc30-3826-4326-9a9d-4ea6411f22a9
 title: 'Install Font'
 title_meta: 'Install Font'
 keywords: ['install', 'font', 'script', 'directory', 'file']
@@ -180,7 +181,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 
 

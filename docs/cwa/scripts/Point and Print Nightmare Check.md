@@ -1,5 +1,6 @@
 ---
 id: 'd65da81c-76ee-429a-a007-9ef788f2ee51'
+slug: /d65da81c-76ee-429a-a007-9ef788f2ee51
 title: 'Point and Print Nightmare Check'
 title_meta: 'Point and Print Nightmare Check'
 keywords: ['registry', 'point', 'print', 'detection', 'safety']
@@ -42,6 +43,5 @@ If the above conditions are not met, then the script will report Point And Print
 - Script log
 - Script state
 - Dataview
-
 
 

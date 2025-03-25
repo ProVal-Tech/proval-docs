@@ -1,5 +1,6 @@
 ---
 id: 'ef14e376-ec97-4f0d-8563-1430fb47e97e'
+slug: /ef14e376-ec97-4f0d-8563-1430fb47e97e
 title: 'Malicious Software Removal Tool Scanning'
 title_meta: 'Malicious Software Removal Tool Scanning'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
@@ -362,7 +363,6 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-
 
 
 

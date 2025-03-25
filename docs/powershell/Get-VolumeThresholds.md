@@ -1,5 +1,6 @@
 ---
 id: 'e36d9583-23da-4dfa-96c8-3467e36e30cf'
+slug: /e36d9583-23da-4dfa-96c8-3467e36e30cf
 title: 'Get-VolumeThresholds'
 title_meta: 'Get-VolumeThresholds'
 keywords: ['volume', 'threshold', 'disk', 'space']
@@ -171,6 +172,5 @@ ThresholdType NoteProperty
 .\Get-VolumeExhaustionEstimate-log.txt
 .\Get-VolumeExhaustionEstimate-error.txt
 ```
-
 
 

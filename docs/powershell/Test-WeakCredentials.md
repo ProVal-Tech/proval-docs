@@ -1,5 +1,6 @@
 ---
 id: '9188a8e9-ba15-45aa-9391-d412866b1ebc'  
+slug: /9188a8e9-ba15-45aa-9391-d412866b1ebc  
 title: 'Test-WeakCredentials'  
 title_meta: 'Test-WeakCredentials'  
 keywords: ['weak', 'credentials', 'passwords', 'security']  
@@ -49,6 +50,5 @@ This will download the 12GB password list, execute that query to compare values,
 
 ## Output  
 PSObject  
-
 
 

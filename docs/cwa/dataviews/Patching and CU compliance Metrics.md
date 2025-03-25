@@ -1,5 +1,6 @@
 ---
 id: '478c4a27-9722-4175-819d-fd4ed1f481f2'
+slug: /478c4a27-9722-4175-819d-fd4ed1f481f2
 title: 'Patching and CU compliance Metrics'
 title_meta: 'Patching and CU compliance Metrics'
 keywords: ['patch', 'compliance', 'update', 'windows', 'cumulative', 'score']
@@ -64,7 +65,6 @@ The dataview is designed to display the patch and cumulative update compliance s
 | CU Score %                           | Green  | Greater than or equal to 75         |
 | Compliant Clients - CU %             | Red    | Less than 75                         |
 | Compliant Clients - CU %             | Green  | Greater than or equal to 75         |
-
 
 
 

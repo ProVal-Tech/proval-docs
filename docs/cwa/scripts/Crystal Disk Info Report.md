@@ -1,5 +1,6 @@
 ---
 id: '651e701f-40d0-4657-817c-b81785d441ea'
+slug: /651e701f-40d0-4657-817c-b81785d441ea
 title: 'Crystal Disk Info Report'
 title_meta: 'Crystal Disk Info Report'
 keywords: ['disk', 'health', 'monitoring', 'report', 'automation']
@@ -204,6 +205,5 @@ Attached **`DiskInfo.txt`** File:
 
 e.g.,  
 ![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
-
 
 

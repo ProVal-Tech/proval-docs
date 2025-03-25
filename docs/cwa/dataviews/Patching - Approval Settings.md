@@ -1,5 +1,6 @@
 ---
 id: 'b084a7f4-6dfa-4ca0-8170-4ab3af73efbd'
+slug: /b084a7f4-6dfa-4ca0-8170-4ab3af73efbd
 title: 'Patching - Approval Settings'
 title_meta: 'Patching - Approval Settings'
 keywords: ['kb', 'patch', 'os', 'approval', 'policy', 'severity', 'category']
@@ -31,6 +32,5 @@ None
 | SetBy           | The user or 'Auto' that set the patch                    |
 | ApprovalSetting | Approved, Denied, Ignored, or Not Set                     |
 | Impact          | Number of policies where this patch is being applied      |
-
 
 

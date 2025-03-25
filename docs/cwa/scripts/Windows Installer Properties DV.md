@@ -1,5 +1,6 @@
 ---
 id: 'd2ceaf24-a522-423a-be42-f0e120ffaba8'
+slug: /d2ceaf24-a522-423a-be42-f0e120ffaba8
 title: 'Windows Installer Properties DV'
 title_meta: 'Windows Installer Properties DV'
 keywords: ['windows', 'installer', 'properties', 'script', 'dataview', 'sql', 'applications', 'management']
@@ -39,6 +40,5 @@ Overall, the "CWM - Automate - Script - Windows Installer Properties [DV]" scrip
 - Custom Table
 - Dataview
 - Script Logs
-
 
 

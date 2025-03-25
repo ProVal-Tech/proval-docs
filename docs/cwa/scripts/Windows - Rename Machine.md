@@ -1,5 +1,6 @@
 ---
 id: 'f88eab26-01ca-479c-9918-25c6c020d240'
+slug: /f88eab26-01ca-479c-9918-25c6c020d240
 title: 'Windows - Rename Machine'
 title_meta: 'Windows - Rename Machine'
 keywords: ['windows', 'rename', 'machine', 'automation', 'configuration']
@@ -60,6 +61,5 @@ If there are errors during the execution of the script, an error file will be ge
 ```
 ./Rename-Machine-error.txt
 ```
-
 
 

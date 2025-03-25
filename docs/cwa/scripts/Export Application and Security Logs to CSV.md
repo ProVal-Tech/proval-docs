@@ -1,5 +1,6 @@
 ---
 id: 'aedee17c-e3b5-4f8e-9565-058318a2009a'
+slug: /aedee17c-e3b5-4f8e-9565-058318a2009a
 title: 'Export Application and Security Logs to CSV'
 title_meta: 'Export Application and Security Logs to CSV'
 keywords: ['event', 'logs', 'csv', 'export', 'upload', 'size', 'critical', 'warning', 'error']
@@ -41,6 +42,5 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 - Script Logs
 - File Upload
-
 
 

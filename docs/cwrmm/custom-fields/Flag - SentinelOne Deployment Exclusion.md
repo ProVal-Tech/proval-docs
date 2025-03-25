@@ -1,5 +1,6 @@
 ---
 id: 'a2967009-ef20-4ce5-823e-8b80349325a0'
+slug: /a2967009-ef20-4ce5-823e-8b80349325a0
 title: 'Flag - SentinelOne Deployment Exclusion'
 title_meta: 'Flag - SentinelOne Deployment Exclusion'
 keywords: ['endpoint', 'deployment', 'exclusion', 'sentinelone', 'flag']
@@ -26,7 +27,6 @@ Set this custom flag to true to exclude an endpoint from SentinelOne deployment.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Flag---SentinelOne-Deployment-Exclusion/image_1.png)
-
 
 
 

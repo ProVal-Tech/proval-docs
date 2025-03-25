@@ -1,5 +1,6 @@
 ---
 id: 'fda5f79b-3e83-4561-af2b-2533f41c7443'
+slug: /fda5f79b-3e83-4561-af2b-2533f41c7443
 title: 'Remove-PUA'
 title_meta: 'Remove-PUA'
 keywords: ['remove', 'bloatware', 'cleanup', 'software']
@@ -77,6 +78,5 @@ I intend to remove all Microsoft-based bloatware except MSPaint and Windows Came
 ## Output
 - `.\Remove-PUA-log.txt`
 - `.\Remove-PUA-error.txt`
-
 
 

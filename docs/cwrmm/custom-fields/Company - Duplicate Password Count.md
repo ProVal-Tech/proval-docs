@@ -1,5 +1,6 @@
 ---
 id: '98a07020-b4e1-4787-a829-9176de0a8b52'
+slug: /98a07020-b4e1-4787-a829-9176de0a8b52
 title: 'Company - Duplicate Password Count'
 title_meta: 'Company - Duplicate Password Count'
 keywords: ['duplicate', 'password', 'count', 'accounts', 'security']
@@ -26,6 +27,5 @@ This document holds the count of accounts with duplicate passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---Duplicate-Password-Count/image_1.png)
-
 
 

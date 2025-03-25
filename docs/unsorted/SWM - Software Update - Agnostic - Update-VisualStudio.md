@@ -1,5 +1,6 @@
 ---
 id: 'ef41c491-27c6-41d4-a478-eb66ca809399'
+slug: /ef41c491-27c6-41d4-a478-eb66ca809399
 title: 'SWM - Software Update - Agnostic - Update-VisualStudio'
 title_meta: 'SWM - Software Update - Agnostic - Update-VisualStudio'
 keywords: ['update', 'visualstudio', 'upgrade', 'enterprise', 'community']
@@ -45,6 +46,5 @@ The output files will be generated as follows:
 ./Update-VisualStudio-data.txt
 ./Update-VisualStudio-error.txt
 ```
-
 
 

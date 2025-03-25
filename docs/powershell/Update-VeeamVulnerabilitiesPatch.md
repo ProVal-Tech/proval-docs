@@ -1,5 +1,6 @@
 ---
 id: '318fc4d1-a68d-4499-84fe-3bd57d56ca9a'
+slug: /318fc4d1-a68d-4499-84fe-3bd57d56ca9a
 title: 'Update-VeeamVulnerabilitiesPatch'
 title_meta: 'Update-VeeamVulnerabilitiesPatch'
 keywords: ['veeam', 'patch', 'vulnerabilities', 'update']
@@ -30,5 +31,4 @@ Location of output for log, result, and error files:
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-log.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-error.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-patchlog.txt`
-
 

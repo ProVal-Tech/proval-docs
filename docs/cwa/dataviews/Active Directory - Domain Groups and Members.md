@@ -1,5 +1,6 @@
 ---
 id: 'becaa382-47f6-414c-8d49-57b8c67b03b5'
+slug: /becaa382-47f6-414c-8d49-57b8c67b03b5
 title: 'Active Directory - Domain Groups and Members'
 title_meta: 'Active Directory - Domain Groups and Members'
 keywords: ['domains', 'groups', 'members', 'active-directory']
@@ -30,6 +31,5 @@ The AD Plugin needs to be installed, enabled, and configured with credentials to
 | Group GUID    | Displays the group GUID             |
 | Members       | Displays the members of the group    |
 | Domain Name   | Displays the Domain Name            |
-
 
 

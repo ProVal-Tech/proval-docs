@@ -1,5 +1,6 @@
 ---
 id: 'd4cbb2a9-7658-4a6c-924d-208827e4e961'
+slug: /d4cbb2a9-7658-4a6c-924d-208827e4e961
 title: 'Bitlocker - Fully Decrypted Detection'
 title_meta: 'Bitlocker - Fully Decrypted Detection'
 keywords: ['bitlocker', 'monitor', 'windows', 'agent']
@@ -20,6 +21,5 @@ This internal monitor detects the agent where the "Bitlocker Fully Decrypted - S
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
-
 
 

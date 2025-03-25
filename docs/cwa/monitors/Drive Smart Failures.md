@@ -1,5 +1,6 @@
 ---
 id: 'db63efa5-209c-4a2a-ad03-aafeada034bb'
+slug: /db63efa5-209c-4a2a-ad03-aafeada034bb
 title: 'Drive Smart Failures'
 title_meta: 'Drive Smart Failures'
 keywords: ['smart', 'failure', 'monitor', 'windows', 'drive']

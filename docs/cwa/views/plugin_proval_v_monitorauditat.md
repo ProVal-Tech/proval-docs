@@ -1,5 +1,6 @@
 ---
 id: '7f064a98-679c-4e7c-a8da-499c269b551f'
+slug: /7f064a98-679c-4e7c-a8da-499c269b551f
 title: 'plugin_proval_v_monitorauditat'
 title_meta: 'plugin_proval_v_monitorauditat'
 keywords: ['monitor', 'autotask', 'view', 'sql', 'audit']
@@ -294,7 +295,6 @@ WHERE
   ) 
   AND (`a`.`ComputerID` < 1)
 ```
-
 
 
 

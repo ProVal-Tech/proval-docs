@@ -1,5 +1,6 @@
 ---
 id: '2cfde48c-aa83-4990-83bd-cb768c882081'
+slug: /2cfde48c-aa83-4990-83bd-cb768c882081
 title: 'DHCP Scope(s) < 25% IP Addresses Available'
 title_meta: 'DHCP Scope(s) < 25% IP Addresses Available'
 keywords: ['remote', 'monitor', 'dhcp', 'groupid', 'alert', 'configuration']

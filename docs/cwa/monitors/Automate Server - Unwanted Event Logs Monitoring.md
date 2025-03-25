@@ -1,5 +1,6 @@
 ---
 id: '88dfd269-1df7-4c57-a898-9445dec162b5'
+slug: /88dfd269-1df7-4c57-a898-9445dec162b5
 title: 'Automate Server - Unwanted Event Logs Monitoring'
 title_meta: 'Automate Server - Unwanted Event Logs Monitoring'
 keywords: ['ticket', 'monitoring', 'automate', 'event', 'error', 'critical']

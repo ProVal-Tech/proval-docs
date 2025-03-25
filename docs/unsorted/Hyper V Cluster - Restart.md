@@ -1,5 +1,6 @@
 ---
 id: 'c9f79a60-a081-47e9-923e-5a00bd36f01f'
+slug: /c9f79a60-a081-47e9-923e-5a00bd36f01f
 title: 'Hyper V Cluster - Restart'
 title_meta: 'Hyper V Cluster - Restart'
 keywords: ['hyper-v', 'cluster', 'reboot', 'drain', 'timeout']
@@ -58,6 +59,5 @@ This command will cycle through all nodes of ClusterName and attempt to drain th
 ./Restart-HyperVCluster-log.txt
 ./Restart-HyperVCluster-error.txt
 ```
-
 
 

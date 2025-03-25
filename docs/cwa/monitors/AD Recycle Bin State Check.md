@@ -1,5 +1,6 @@
 ---
 id: '5041d497-ae6c-4209-a338-60f1da396106'
+slug: /5041d497-ae6c-4209-a338-60f1da396106
 title: 'AD Recycle Bin State Check'
 title_meta: 'AD Recycle Bin State Check'
 keywords: ['active-directory', 'monitor', 'recycle-bin', 'windows', 'dc']

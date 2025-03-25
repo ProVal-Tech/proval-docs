@@ -1,5 +1,6 @@
 ---
 id: 'cc0e382d-4e47-41ab-9252-eec3cc10959e'
+slug: /cc0e382d-4e47-41ab-9252-eec3cc10959e
 title: 'Reset System Restore Disk Space Usage'
 title_meta: 'Reset System Restore Disk Space Usage'
 keywords: ['vss', 'disk', 'space', 'monitor', 'alert']

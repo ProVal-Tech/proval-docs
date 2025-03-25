@@ -1,5 +1,6 @@
 ---
 id: 'b5fa1e24-5582-4c2c-9277-ead30c0f3693'
+slug: /b5fa1e24-5582-4c2c-9277-ead30c0f3693
 title: 'User Management - Account Lock Detail'
 title_meta: 'User Management - Account Lock Detail'
 keywords: ['audit', 'lockout', 'user', 'account', 'monitor']

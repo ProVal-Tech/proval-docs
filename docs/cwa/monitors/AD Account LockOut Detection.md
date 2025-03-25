@@ -1,5 +1,6 @@
 ---
 id: '2549fcf6-30b5-497b-b44d-7329334bb32c'
+slug: /2549fcf6-30b5-497b-b44d-7329334bb32c
 title: 'AD Account Lockout Detection'
 title_meta: 'AD Account Lockout Detection'
 keywords: ['monitoring', 'alert', 'eventid', 'domaincontroller', 'ticketing']

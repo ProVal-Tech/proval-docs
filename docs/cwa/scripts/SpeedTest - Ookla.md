@@ -1,5 +1,6 @@
 ---
 id: '0894c8ab-7630-40fe-81bd-e8af8744c186'
+slug: /0894c8ab-7630-40fe-81bd-e8af8744c186
 title: 'SpeedTest - Ookla'
 title_meta: 'SpeedTest - Ookla'
 keywords: ['speedtest', 'ookla', 'internet', 'performance', 'automation']
@@ -44,6 +45,5 @@ This script downloads the speed test zip file from Ookla and extracts it. After 
 - Script log
 - Script state
 - Dataview
-
 
 

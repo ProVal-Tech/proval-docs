@@ -1,5 +1,6 @@
 ---
 id: '4d3b24f2-a55a-4f57-8cad-1345d1e85060'
+slug: /4d3b24f2-a55a-4f57-8cad-1345d1e85060
 title: 'Webroot Keycode Verification'
 title_meta: 'Webroot Keycode Verification'
 keywords: ['webroot', 'keycode', 'verification', 'audit', 'monitor']
@@ -34,7 +35,6 @@ Webroot SecureAnywhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
-
 
 
 

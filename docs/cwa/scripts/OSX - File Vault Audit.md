@@ -1,5 +1,6 @@
 ---
 id: '6c8b7535-ef72-4635-a968-60261dea67de'
+slug: /6c8b7535-ef72-4635-a968-60261dea67de
 title: 'OSX - File Vault Audit'
 title_meta: 'OSX - File Vault Audit'
 keywords: ['file', 'vault', 'status', 'mac', 'audit', 'edf']
@@ -32,6 +33,5 @@ It is recommended to schedule the script to run daily against the Mac machines t
 ## Output
 
 - EDF
-
 
 

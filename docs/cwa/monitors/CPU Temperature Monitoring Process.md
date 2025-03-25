@@ -1,5 +1,6 @@
 ---
 id: '84d6587b-2bca-4f0e-9176-c0df064f532c'
+slug: /84d6587b-2bca-4f0e-9176-c0df064f532c
 title: 'CPU Temperature Monitoring Process'
 title_meta: 'CPU Temperature Monitoring Process'
 keywords: ['cpu', 'temperature', 'monitoring', 'windows', 'physical']

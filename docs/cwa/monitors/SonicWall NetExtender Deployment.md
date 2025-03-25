@@ -1,5 +1,6 @@
 ---
 id: 'b0ca57d2-351c-4f1d-9d98-954c1d77777e'
+slug: /b0ca57d2-351c-4f1d-9d98-954c1d77777e
 title: 'SonicWall NetExtender Deployment'
 title_meta: 'SonicWall NetExtender Deployment'
 keywords: ['sonicwall', 'netextender', 'monitor', 'upgrade', 'deployment', 'edf', 'version']

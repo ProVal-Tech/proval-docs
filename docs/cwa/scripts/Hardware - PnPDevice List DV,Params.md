@@ -1,5 +1,6 @@
 ---
 id: 'b390d527-f85c-4f74-af2e-3a639bff8a51'
+slug: /b390d527-f85c-4f74-af2e-3a639bff8a51
 title: 'Hardware - PnPDevice List DV,Params'
 title_meta: 'Hardware - PnPDevice List DV,Params'
 keywords: ['device', 'version', 'windows', 'sql', 'automation']
@@ -49,6 +50,5 @@ This script collects information about the device name and version as provided f
 ## Output
 
 - Dataview
-
 
 

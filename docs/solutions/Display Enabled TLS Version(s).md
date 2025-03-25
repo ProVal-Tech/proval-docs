@@ -1,5 +1,6 @@
 ---
 id: '9e4ece73-9d18-410d-9df9-6a9ebf4389c4'
+slug: /9e4ece73-9d18-410d-9df9-6a9ebf4389c4
 title: 'Display Enabled TLS Version(s)'
 title_meta: 'Display Enabled TLS Version(s)'
 keywords: ['tls', 'windows', 'monitor', 'security', 'configuration']
@@ -28,6 +29,5 @@ The purpose of this solution is to display the enabled client and server (if app
 - Import both remote monitors to the applicable groups. (Follow the private articles linked to the remote monitor's documents).
 - Import the dataview.
 - Perform a group refresh or wait for 30 minutes to ensure that the dataview starts displaying the expected data.
-
 
 

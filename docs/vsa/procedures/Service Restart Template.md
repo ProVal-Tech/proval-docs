@@ -1,5 +1,6 @@
 ---
 id: '3718e4a9-a415-450a-ba5f-f68d7bb63277'
+slug: /3718e4a9-a415-450a-ba5f-f68d7bb63277
 title: 'Service Restart Template'
 title_meta: 'Service Restart Template'
 keywords: ['service', 'restart', 'windows', 'update', 'endpoint']
@@ -59,6 +60,5 @@ Calls the agnostic content to force a service restart on the endpoint. Performs 
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-log.txt  
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-UNIXDATE-log.txt (archive of previous log)  
 - Agent Procedure Log  
-
 
 

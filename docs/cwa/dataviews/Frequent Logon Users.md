@@ -1,5 +1,6 @@
 ---
 id: '0dac9234-cf2a-4649-aab5-dfbc08c1765d'
+slug: /0dac9234-cf2a-4649-aab5-dfbc08c1765d
 title: 'Frequent Logon Users'
 title_meta: 'Frequent Logon Users'
 keywords: ['logon', 'user', 'script', 'data', 'workstation']
@@ -29,6 +30,5 @@ This dataview stores the logon username, logon user count, and script run date d
 | Frequent Logon User Name      | Frequent logon user name detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
 | Frequent Logon User Count      | Frequent logon user count number detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
 | Script Ran Date               | Date when the script was last run, indicating when the last user was detected.                                     |
-
 
 

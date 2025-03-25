@@ -1,5 +1,6 @@
 ---
 id: '18fbde09-500a-41a4-bad0-c37b85429926'
+slug: /18fbde09-500a-41a4-bad0-c37b85429926
 title: 'Active Directory - Privilege Escalation Attack Mitigation'
 title_meta: 'Active Directory - Privilege Escalation Attack Mitigation'
 keywords: ['active-directory', 'patches', 'security', 'registry', 'compliance']
@@ -67,7 +68,6 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
-
 
 
 

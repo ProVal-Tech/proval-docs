@@ -1,5 +1,6 @@
 ---
 id: '1d9dbd69-f735-4129-8c9d-e72430313371'
+slug: /1d9dbd69-f735-4129-8c9d-e72430313371
 title: 'Out of Date Cumulative Update (Autofix)'
 title_meta: 'Out of Date Cumulative Update (Autofix)'
 keywords: ['cumulative', 'update', 'autofix', 'patching', 'windows']
@@ -519,7 +520,6 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
-
 
 
 

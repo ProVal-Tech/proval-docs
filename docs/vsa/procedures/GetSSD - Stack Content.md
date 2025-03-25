@@ -1,5 +1,6 @@
 ---
 id: 'f2b32fe9-5a6f-4608-a002-fddf020d526d'
+slug: /f2b32fe9-5a6f-4608-a002-fddf020d526d
 title: 'GetSSD - Stack Content'
 title_meta: 'GetSSD - Stack Content'
 keywords: ['drive', 'ssd', 'mechanical', 'storage', 'disk']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Get Drive SSD or Mech
-
 
 

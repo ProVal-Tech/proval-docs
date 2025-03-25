@@ -1,5 +1,6 @@
 ---
 id: '68a14948-368f-4064-97a3-d1928e122013'
+slug: /68a14948-368f-4064-97a3-d1928e122013
 title: 'Winget Auto Update Errors'
 title_meta: 'Winget Auto Update Errors'
 keywords: ['winget', 'monitor', 'errors', 'ticket', 'update']

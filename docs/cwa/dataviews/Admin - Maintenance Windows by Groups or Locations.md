@@ -1,5 +1,6 @@
 ---
 id: '77b0003b-a908-4fcf-ae9c-71d464db679b'
+slug: /77b0003b-a908-4fcf-ae9c-71d464db679b
 title: 'Admin - Maintenance Windows by Groups or Locations'
 title_meta: 'Admin - Maintenance Windows by Groups or Locations'
 keywords: ['audit', 'maintenance', 'window', 'group', 'location']
@@ -21,6 +22,5 @@ This dataview can be used to audit the Maintenance Window applied to a Group or 
 | Maint Window Name   | The name of the Maintenance Window.                                                           |
 | Maint Window Note   | Displays additional comments for a Maintenance Window.                                        |
 | Number Of Machines   | The total number of machines on which the Maintenance Window is applied.                      |
-
 
 

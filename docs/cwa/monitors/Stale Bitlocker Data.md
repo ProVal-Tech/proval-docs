@@ -1,5 +1,6 @@
 ---
 id: '14ecb842-00fc-40c3-a2b4-01a8939e38c5'
+slug: /14ecb842-00fc-40c3-a2b4-01a8939e38c5
 title: 'Stale Bitlocker Data'
 title_meta: 'Stale Bitlocker Data'
 keywords: ['bitlocker', 'monitoring', 'windows', 'encryption', 'security']
@@ -23,6 +24,5 @@ This script should be run as an autofix.
 ## Target
 
 Windows Machine
-
 
 

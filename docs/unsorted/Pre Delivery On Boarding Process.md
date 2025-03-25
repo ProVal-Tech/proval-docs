@@ -1,5 +1,6 @@
 ---
 id: 'c4dd571c-4519-48ab-9d86-3fc1680847b5'
+slug: /c4dd571c-4519-48ab-9d86-3fc1680847b5
 title: 'Pre Delivery On Boarding Process'
 title_meta: 'Pre Delivery On Boarding Process'
 keywords: ['onboarding', 'configuration', 'checklist', 'implementation', 'client']
@@ -18,6 +19,5 @@ It features pre-check and post-check boxes (EDFs) to ensure that the changes or 
 
 The ProVal Predelivery Process includes the following solutions ready:  
 - [List of solutions will be added here]
-
 
 

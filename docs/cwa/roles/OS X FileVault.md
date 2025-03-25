@@ -1,5 +1,6 @@
 ---
 id: '1e483bae-ad35-437e-a963-fb7fab9f27e1'
+slug: /1e483bae-ad35-437e-a963-fb7fab9f27e1
 title: 'OS X FileVault'
 title_meta: 'OS X FileVault'
 keywords: ['filevault', 'mac', 'status', 'check', 'security']
@@ -18,6 +19,5 @@ This role is used to view the status of FileVault on Mac agents.
 | Detection String         | Comparator | Result               | Applicable OS |
 |-------------------------|------------|----------------------|----------------|
 | `%@fdesetup status@%`   | Contains   | FileVault is On      | Mac            |
-
 
 

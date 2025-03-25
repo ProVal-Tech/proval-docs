@@ -1,5 +1,6 @@
 ---
 id: '6ebd1a73-94e8-46ba-bc58-3cfb794c7ab0'
+slug: /6ebd1a73-94e8-46ba-bc58-3cfb794c7ab0
 title: 'Chromium Homepage Set'
 title_meta: 'Chromium Homepage Set'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'endpoint']
@@ -46,6 +47,5 @@ This procedure utilizes [SWM - Software Configuration - Set-ChromiumHomepage](<.
 ## Output
 
 The output consists of the agent procedure log.
-
 
 

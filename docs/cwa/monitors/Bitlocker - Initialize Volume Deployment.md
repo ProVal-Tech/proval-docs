@@ -1,5 +1,6 @@
 ---
 id: '925adfc5-e119-4c56-937a-a31c3e171371'
+slug: /925adfc5-e119-4c56-937a-a31c3e171371
 title: 'Bitlocker - Initialize Volume Deployment'
 title_meta: 'Bitlocker - Initialize Volume Deployment'
 keywords: ['bitlocker', 'encryption', 'monitor', 'windows', 'workstation']
@@ -23,6 +24,5 @@ The monitor ensures that the [Script - Bitlocker - Volume - Initialize [Autofix,
 ## Target
 
 Global
-
 
 

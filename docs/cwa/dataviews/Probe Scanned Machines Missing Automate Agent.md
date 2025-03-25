@@ -1,5 +1,6 @@
 ---
 id: '54531eb6-553a-4730-8afc-558adbab450d'
+slug: /54531eb6-553a-4730-8afc-558adbab450d
 title: 'Probe Scanned Machines Missing Automate Agent'
 title_meta: 'Probe Scanned Machines Missing Automate Agent'
 keywords: ['probe', 'machines', 'port', 'open', 'agent', 'readiness', 'network', 'device']
@@ -40,6 +41,5 @@ This document shows the list of probe-detected machines with port 139 open that 
 ## Dependency
 
 Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](<../scripts/MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions.md>) script to run every 12-24 hours to provide permission for the `agentdeploymentreadinesscheck` table for both hosted and on-prem clients. Otherwise, the dataview will not provide any results.
-
 
 

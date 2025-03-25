@@ -1,5 +1,6 @@
 ---
 id: 'e1f40d15-13f1-465e-9870-653927ad0434'
+slug: /e1f40d15-13f1-465e-9870-653927ad0434
 title: 'Huntress Agent (INSTALL)'
 title_meta: 'Huntress Agent (INSTALL)'
 keywords: ['huntress', 'agent', 'install', 'windows', 'deployment']
@@ -312,5 +313,4 @@ The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
-
 

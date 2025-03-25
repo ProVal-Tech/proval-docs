@@ -1,5 +1,6 @@
 ---
 id: '5e1d98fb-913a-4384-9674-653c57bf610b'
+slug: /5e1d98fb-913a-4384-9674-653c57bf610b
 title: 'Import- Security event logs cleared/deleted'
 title_meta: 'Import- Security event logs cleared/deleted'
 keywords: ['remote', 'monitor', 'security', 'event', 'logs', 'setup']

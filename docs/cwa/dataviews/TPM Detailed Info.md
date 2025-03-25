@@ -1,5 +1,6 @@
 ---
 id: '3210ea64-6a5d-416d-aea8-8e5399c0e62c'
+slug: /3210ea64-6a5d-416d-aea8-8e5399c0e62c
 title: 'TPM Detailed Info'
 title_meta: 'TPM Detailed Info'
 keywords: ['tpm', 'configuration', 'endpoints', 'security', 'client', 'location', 'computer', 'operating', 'system', 'lastcontact', 'managedauthlevel', 'ownerauth', 'autoprovisioning', 'lockedout', 'version']
@@ -34,6 +35,5 @@ This document displays information about the TPM configuration on endpoints.
 | Auto Provisioning    | Displays whether auto-provisioning is enabled or not         |
 | Locked Out          | Displays whether TPM is locked or not                        |
 | TPM Version         | Displays the TPM version on the endpoint                     |
-
 
 

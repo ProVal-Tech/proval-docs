@@ -1,5 +1,6 @@
 ---
 id: '161f5696-0f6b-46af-ad25-fe942745f099'
+slug: /161f5696-0f6b-46af-ad25-fe942745f099
 title: 'Reinstall Huntress Agent Windows'
 title_meta: 'Reinstall Huntress Agent Windows'
 keywords: ['huntress', 'agent', 'windows', 'reinstall', 'script']
@@ -54,6 +55,5 @@ This script can be used to reinstall the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
 
 

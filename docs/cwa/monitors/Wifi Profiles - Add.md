@@ -1,5 +1,6 @@
 ---
 id: '3a1d1f7d-a655-40bf-a048-5e861aee00ae'
+slug: /3a1d1f7d-a655-40bf-a048-5e861aee00ae
 title: 'Wifi Profiles - Add'
 title_meta: 'Wifi Profiles - Add'
 keywords: ['wifi', 'monitor', 'profiles', 'audit', 'script']

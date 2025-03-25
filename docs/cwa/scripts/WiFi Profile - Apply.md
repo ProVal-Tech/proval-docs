@@ -1,5 +1,6 @@
 ---
 id: '52b6b460-b6bd-48cf-aab1-8484149578f0'
+slug: /52b6b460-b6bd-48cf-aab1-8484149578f0
 title: 'WiFi Profile - Apply'
 title_meta: 'WiFi Profile - Apply'
 keywords: ['wifi', 'configuration', 'ssid', 'profile', 'automation']
@@ -40,6 +41,5 @@ The script applies the WiFi configuration for the desired SSID.
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'abc609cc-f2a2-4a37-94f9-e8e18f6ded31'
+slug: /abc609cc-f2a2-4a37-94f9-e8e18f6ded31
 title: 'Defragment Scan Report'
 title_meta: 'Defragment Scan Report'
 keywords: ['defragmentation', 'report', 'client', 'computer', 'script', 'location', 'drive']
@@ -31,6 +32,5 @@ This dataview publishes the defragmentation scan results by using the script @Wi
 | Script Ran Date      | Displays the date when the script ran                   |
 | Drive Fragmented     | Displays the drive letter of the fragmented drive       |
 | Drive Fragment Report | Displays the full report of fragmentation fetched by the script |
-
 
 

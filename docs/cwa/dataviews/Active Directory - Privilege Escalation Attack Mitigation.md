@@ -1,5 +1,6 @@
 ---
 id: 'b81bd6bd-9266-4c31-adad-9eaad5e90e31'
+slug: /b81bd6bd-9266-4c31-adad-9eaad5e90e31
 title: 'Active Directory - Privilege Escalation Attack Mitigation'
 title_meta: 'Active Directory - Privilege Escalation Attack Mitigation'
 keywords: ['active-directory', 'privilege', 'escalation', 'mitigation', 'patches', 'compliance']
@@ -35,7 +36,6 @@ The dataview is created to verify the workaround applied and the installation of
 | Non-compliant UAC sAMAccountType   | To find computer accounts that have a non-compliant UAC sAMAccountType.                                                                        |
 | Information Update Time             | Run-time of the script.                                                                                                                         |
 | Last Contact                        | Last contact of the Computer.                                                                                                                   |
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '10f4f3f9-dfba-4eee-93b7-0fd1c896206b'
+slug: /10f4f3f9-dfba-4eee-93b7-0fd1c896206b
 title: 'Network Devices - Status'
 title_meta: 'Network Devices - Status'
 keywords: ['network', 'device', 'status', 'probe', 'ip', 'mac', 'uptime', 'sync']
@@ -26,6 +27,5 @@ This document provides an overview of the status of network devices in the envir
 | Device Uptime                      | Displays the uptime of the network device.                              |
 | Device Type                        | Displays the type of the network device.                                |
 | External Sync                      | Indicates whether the external sync is disabled or enabled on the network device. |
-
 
 

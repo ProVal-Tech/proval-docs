@@ -1,5 +1,6 @@
 ---
 id: '3627ba40-ca53-4583-8435-bb09bdb03f20'
+slug: /3627ba40-ca53-4583-8435-bb09bdb03f20
 title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'registry', 'custom', 'field']
@@ -214,6 +215,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

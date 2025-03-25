@@ -1,5 +1,6 @@
 ---
 id: '0afcd1cc-8234-4015-b317-26c3ebd719fc'
+slug: /0afcd1cc-8234-4015-b317-26c3ebd719fc
 title: 'Uninstall Sophos Endpoint Mac, Windows'
 title_meta: 'Uninstall Sophos Endpoint Mac, Windows'
 keywords: ['sophos', 'uninstall', 'endpoint', 'protection', 'mac', 'windows']
@@ -20,6 +21,5 @@ The script is designed to uninstall Sophos Endpoint Protection from both Mac and
 ## Output
 
 - Script logs
-
 
 

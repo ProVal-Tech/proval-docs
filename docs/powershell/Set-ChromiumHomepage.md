@@ -1,5 +1,6 @@
 ---
 id: 'f07dd124-b64e-4906-8f33-5a2109ac73ab'
+slug: /f07dd124-b64e-4906-8f33-5a2109ac73ab
 title: 'Set-ChromiumHomepage'
 title_meta: 'Set-ChromiumHomepage'
 keywords: ['homepage', 'chromium', 'browser', 'configuration']
@@ -37,6 +38,5 @@ This command will set the browser homepage to DuckDuckGo and enforce that page o
 ## Output
 
     .\Set-ChromiumHomepage-log.txt
-
 
 

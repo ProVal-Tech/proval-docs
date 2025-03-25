@@ -1,5 +1,6 @@
 ---
 id: 'd3b1689c-fd8d-492a-91e7-ee5670f4a415'
+slug: /d3b1689c-fd8d-492a-91e7-ee5670f4a415
 title: 'ProVal Production - MSRT Disable/Uninstall'
 title_meta: 'ProVal Production - MSRT Disable/Uninstall'
 keywords: ['Software', 'Malicious', 'MSRT', 'MRT', 'Scanner', 'Security']

@@ -1,5 +1,6 @@
 ---
 id: 'a7a7e04e-384d-4018-87c5-6abf2d2b2fb2'
+slug: /a7a7e04e-384d-4018-87c5-6abf2d2b2fb2
 title: 'Purge IIS Logs Older than X Days Param'
 title_meta: 'Purge IIS Logs Older than X Days Param'
 keywords: ['iis', 'logs', 'purge', 'cleanup', 'directory']
@@ -49,6 +50,5 @@ Step 2: Generates the logs as per the PowerShell script's outcome and exits.
 ## Output
 
 - Script Log
-
 
 

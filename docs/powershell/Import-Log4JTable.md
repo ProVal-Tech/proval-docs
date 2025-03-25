@@ -1,5 +1,6 @@
 ---
 id: 'a9db2857-d76e-4c63-8916-80ed141dc5b5'
+slug: /a9db2857-d76e-4c63-8916-80ed141dc5b5
 title: 'Import-Log4JTable'
 title_meta: 'Import-Log4JTable'
 keywords: ['import', 'log4j', 'mysql', 'database']
@@ -48,6 +49,5 @@ $cred = New-Object System.Management.Automation.PSCredential("MyUsername", (Conv
 - `.\Import-Log4JTable-data.txt`
 - `.\Import-Log4JTable-error.txt`
 - `.\log4jquery.sql`
-
 
 

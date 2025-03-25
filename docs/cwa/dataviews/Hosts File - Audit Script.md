@@ -1,5 +1,6 @@
 ---
 id: 'cfa8fd80-7dc0-4d6b-9861-0467d7e4af94'
+slug: /cfa8fd80-7dc0-4d6b-9861-0467d7e4af94
 title: 'Hosts File - Audit Script'
 title_meta: 'Hosts File - Audit Script'
 keywords: ['audit', 'hostfile', 'uncommented', 'rmm', 'windows']
@@ -30,6 +31,5 @@ The purpose of this dataview is to show the uncommented content of the host file
 | Last Contact              | Last Contact with RMM                         |
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
-
 
 

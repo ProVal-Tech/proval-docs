@@ -1,5 +1,6 @@
 ---
 id: '90d70d69-4264-4ff6-9cd3-d895b838a687'
+slug: /90d70d69-4264-4ff6-9cd3-d895b838a687
 title: 'Kerberos protocol'
 title_meta: 'Kerberos protocol'
 keywords: ['krbtgt', 'registry', 'domain', 'controllers', 'kerberos']
@@ -20,6 +21,5 @@ The role can also be used to create an audit data view if needed.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/System/currentcontrolset/services/kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
-
 
 

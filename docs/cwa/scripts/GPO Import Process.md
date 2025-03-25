@@ -1,5 +1,6 @@
 ---
 id: '6af95203-1e0a-4e2d-8e51-4a3f5a66eba7'
+slug: /6af95203-1e0a-4e2d-8e51-4a3f5a66eba7
 title: 'GPO Import Process'
 title_meta: 'GPO Import Process'
 keywords: ['gpo', 'import', 'link', 'active-directory', 'automation', 'backup']
@@ -53,6 +54,5 @@ Imports a target GPO and optionally links it to the root of the domain.
 ## Output
 
 - Script log
-
 
 

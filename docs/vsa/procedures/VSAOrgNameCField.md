@@ -1,5 +1,6 @@
 ---
 id: 'a1064072-4bd6-47ea-a7c0-cfb5dc6c0999'
+slug: /a1064072-4bd6-47ea-a7c0-cfb5dc6c0999
 title: 'VSAOrgNameCField'
 title_meta: 'VSAOrgNameCField'
 keywords: ['api', 'custom', 'field', 'system', 'org', 'name', 'vsa']
@@ -18,6 +19,5 @@ Put the System's Org Name in a Custom Field via API
 - **user**: User we plan to authenticate with
 - **password**: Authentication string for VSA
 - **url**: URL of our VSA
-
 
 

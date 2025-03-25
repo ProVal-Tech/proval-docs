@@ -1,5 +1,6 @@
 ---
 id: 'c02990b4-9809-497b-9655-d161c1091142'
+slug: /c02990b4-9809-497b-9655-d161c1091142
 title: 'Automate User Account Locked Out'
 title_meta: 'Automate User Account Locked Out'
 keywords: ['automate', 'monitor', 'user', 'lockout']

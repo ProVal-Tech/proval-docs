@@ -1,5 +1,6 @@
 ---
 id: 'f98d734c-7614-4a47-a358-0f6cb1c66b2e'
+slug: /f98d734c-7614-4a47-a358-0f6cb1c66b2e
 title: 'MS Teams Uninstall & Install'
 title_meta: 'MS Teams Uninstall & Install'
 keywords: ['teams', 'uninstall', 'install', 'msi', 'procedure']
@@ -76,4 +77,3 @@ Agent Procedure Log
 Attach the XML VSA export content to this document.
 ## Attachments
 [Procedure_MS_Teams_Uninstall___Install.xml](<../../../static/attachments/itg/18036630/Procedure_MS_Teams_Uninstall___Install.xml>)
-

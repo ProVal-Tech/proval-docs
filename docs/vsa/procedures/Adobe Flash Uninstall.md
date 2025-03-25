@@ -1,5 +1,6 @@
 ---
 id: 'eb1db969-6aef-4e3d-b0fd-b72aaba89084'
+slug: /eb1db969-6aef-4e3d-b0fd-b72aaba89084
 title: 'Adobe Flash Uninstall'
 title_meta: 'Adobe Flash Uninstall'
 keywords: ['uninstall', 'flash', 'adobe', 'utility', 'endpoint']
@@ -82,6 +83,5 @@ Flash is detected by gci on all known Flash directories. If detected, the uninst
 ## Output
 
 Agent Procedure Log
-
 
 

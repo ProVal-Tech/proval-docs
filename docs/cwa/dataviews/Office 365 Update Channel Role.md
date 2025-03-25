@@ -1,5 +1,6 @@
 ---
 id: '246e46a3-3de6-40c4-b5f2-21fea200ab9b'
+slug: /246e46a3-3de6-40c4-b5f2-21fea200ab9b
 title: 'Office 365 Update Channel Role'
 title_meta: 'Office 365 Update Channel Role'
 keywords: ['office365', 'update', 'channel', 'report', 'windows']
@@ -125,6 +126,5 @@ FROM
       c.ComputerID
   ) AS dt
 ```
-
 
 

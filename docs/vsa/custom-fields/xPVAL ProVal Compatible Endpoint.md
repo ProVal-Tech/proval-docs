@@ -1,5 +1,6 @@
 ---
 id: '2606c04a-819a-476f-b91d-c45a92613212'
+slug: /2606c04a-819a-476f-b91d-c45a92613212
 title: 'xPVAL ProVal Compatible Endpoint'
 title_meta: 'xPVAL ProVal Compatible Endpoint'
 keywords: ['custom', 'field', 'compatibility', 'endpoint', 'status']
@@ -22,6 +23,5 @@ All content listed in [EPM - Data Collection - Solution - VSA Proval Script Comp
 | Field Name                               | Type of Field (Machine or Organization) | Description / Syntax:                                                                                                   |
 |------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR 'Windows OS Out of Date.' OR 'PowerShell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ecddbc88-fbef-4678-b02b-2cc19b219fdc'
+slug: /ecddbc88-fbef-4678-b02b-2cc19b219fdc
 title: 'EPM - Data Collection - Custom Field- Azure AD Status'
 title_meta: 'EPM - Data Collection - Custom Field- Azure AD Status'
 keywords: ['azure', 'ad', 'custom', 'field', 'machine']
@@ -24,7 +25,6 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
-
 
 
 

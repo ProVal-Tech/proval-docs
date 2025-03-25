@@ -1,5 +1,6 @@
 ---
 id: 'e39caf58-ccc6-426c-8550-9c874fee49a8'
+slug: /e39caf58-ccc6-426c-8550-9c874fee49a8
 title: 'Bitlocker - Volume - Initialize'
 title_meta: 'Bitlocker - Volume - Initialize'
 keywords: ['bitlocker', 'encryption', 'disk', 'security']
@@ -413,5 +414,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 

@@ -1,5 +1,6 @@
 ---
 id: 'd1d1297e-d50a-47bb-90af-5c70dd32c1d9'
+slug: /d1d1297e-d50a-47bb-90af-5c70dd32c1d9
 title: 'Chrome - Remove Extension'
 title_meta: 'Chrome - Remove Extension'
 keywords: ['chrome', 'extension', 'unregister', 'management', 'registry']
@@ -65,6 +66,5 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
-
 
 

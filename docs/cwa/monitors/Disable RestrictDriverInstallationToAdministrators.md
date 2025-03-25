@@ -1,5 +1,6 @@
 ---
 id: 'e79a2422-0089-451b-9522-a6110976c2f5'
+slug: /e79a2422-0089-451b-9522-a6110976c2f5
 title: 'Disable RestrictDriverInstallationToAdministrators'
 title_meta: 'Disable RestrictDriverInstallationToAdministrators'
 keywords: ['restrict', 'driver', 'installation', 'administrators', 'ticket', 'creation', 'monitor']

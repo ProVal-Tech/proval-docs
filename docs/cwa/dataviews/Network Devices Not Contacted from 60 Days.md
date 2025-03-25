@@ -1,5 +1,6 @@
 ---
 id: 'a54c73f8-ca6b-4adb-988c-705818e804f7'
+slug: /a54c73f8-ca6b-4adb-988c-705818e804f7
 title: 'Network Devices Not Contacted from 60 Days'
 title_meta: 'Network Devices Not Contacted from 60 Days'
 keywords: ['dataview', 'network', 'devices', 'inactive', 'automate', 'monitoring']
@@ -33,6 +34,5 @@ This Dataview is part of the solution to remove network devices that have had no
 | Manufacturer Name   | Displays the name of the manufacturer                |
 | Alert Template     | Indicates if an alert template is applied           |
 | Last Date          | Displays the last contact date of the device in Automate |
-
 
 

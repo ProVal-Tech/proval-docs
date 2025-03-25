@@ -1,5 +1,6 @@
 ---
 id: '46629c59-bae2-49d8-80ac-12267a8ccc5b'
+slug: /46629c59-bae2-49d8-80ac-12267a8ccc5b
 title: 'Network Probe - Enable'
 title_meta: 'Network Probe - Enable'
 keywords: ['network', 'probe', 'monitor', 'automation', 'script']
@@ -26,6 +27,5 @@ The script executes the LT Command to enable the network probe.
 ## Output
 
 No Output - Command Log
-
 
 

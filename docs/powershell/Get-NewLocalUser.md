@@ -1,5 +1,6 @@
 ---
 id: 'bf4e1dbe-fa6a-48f5-8434-4d6933fa2616'
+slug: /bf4e1dbe-fa6a-48f5-8434-4d6933fa2616
 title: 'Get-NewLocalUser'
 title_meta: 'Get-NewLocalUser'
 keywords: ['new', 'local', 'user', 'account']
@@ -30,6 +31,5 @@ If the script has not been run previously, the user data is saved to the table a
 ### Tables
 - Get-NewLocalUser_log
 - Get-NewLocalUser_users
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '904664df-741e-4c18-9667-6bf351b4754c'
+slug: /904664df-741e-4c18-9667-6bf351b4754c
 title: 'Unprotect Bitlocker Volume'
 title_meta: 'Unprotect Bitlocker Volume'
 keywords: ['bitlocker', 'protection', 'disable', 'volumes', 'security']
@@ -202,6 +203,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

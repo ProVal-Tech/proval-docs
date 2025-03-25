@@ -1,5 +1,6 @@
 ---
 id: '30dde7e3-b96b-4e24-bbc5-cfa041aa5648'
+slug: /30dde7e3-b96b-4e24-bbc5-cfa041aa5648
 title: 'Admin - User Permission Changes or Creation G'
 title_meta: 'Admin - User Permission Changes or Creation G'
 keywords: ['monitor', 'dependencies', 'ticketing', 'target', 'itglue']
@@ -45,6 +46,5 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '4545d115-22d7-451c-935b-fe8ca67f17e7'
+slug: /4545d115-22d7-451c-935b-fe8ca67f17e7
 title: 'Get iDRAC Version - Dell Servers DV'
 title_meta: 'Get iDRAC Version - Dell Servers DV'
 keywords: ['idrac', 'dell', 'version', 'fetch', 'server']
@@ -43,6 +44,5 @@ The script will fetch the version of iDRAC from Dell servers. The script output 
 - Script log
 - Script state
 - Dataview
-
 
 

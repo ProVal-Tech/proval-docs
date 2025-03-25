@@ -1,5 +1,6 @@
 ---
 id: '1e713ef3-1378-4601-a00a-c8a8ecd60c01'
+slug: /1e713ef3-1378-4601-a00a-c8a8ecd60c01
 title: 'Crystal Disk Info_Disk Health'
 title_meta: 'Crystal Disk Info_Disk Health'
 keywords: ['custom', 'field', 'disk', 'health', 'crystal', 'info']
@@ -32,6 +33,5 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/Crystal-Disk-Info_Disk-Health/image_3.png)
-
 
 

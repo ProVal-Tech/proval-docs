@@ -1,5 +1,6 @@
 ---
 id: '3a441306-efbc-48a5-8732-06bfd56c9a5f'
+slug: /3a441306-efbc-48a5-8732-06bfd56c9a5f
 title: 'Volume Space Sampling'
 title_meta: 'Volume Space Sampling'
 keywords: ['monitor', 'disk', 'volume', 'exhaustion', 'estimation']

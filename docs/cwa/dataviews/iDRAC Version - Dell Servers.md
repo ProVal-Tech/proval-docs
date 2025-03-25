@@ -1,5 +1,6 @@
 ---
 id: 'd2168fe5-e9f2-4265-ad4d-ce98ee14cf26'
+slug: /d2168fe5-e9f2-4265-ad4d-ce98ee14cf26
 title: 'iDRAC Version - Dell Servers'
 title_meta: 'iDRAC Version - Dell Servers'
 keywords: ['idrac', 'dell', 'servers', 'version', 'rmm']
@@ -28,6 +29,5 @@ This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC 
 | Operating System   | Shows the OS of the concerned server.                      |
 | iDRAC Version     | Shows the iDRAC version of the concerned server.           |
 | Last Contact      | Shows the last contact of the concerned server with RMM.   |
-
 
 

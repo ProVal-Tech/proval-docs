@@ -1,5 +1,6 @@
 ---
 id: '344a3ab5-d05c-41a5-9303-45fc387ec2e8'
+slug: /344a3ab5-d05c-41a5-9303-45fc387ec2e8
 title: 'CRI Agent Deployment'
 title_meta: 'CRI Agent Deployment'
 keywords: ['cyrisma', 'deployment', 'agent', 'installation', 'windows']
@@ -183,7 +184,6 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field
-
 
 
 

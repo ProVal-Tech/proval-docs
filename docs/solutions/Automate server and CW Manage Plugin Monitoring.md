@@ -1,5 +1,6 @@
 ---
 id: '98773b6a-7986-4df2-90a5-fb559eefc50b'
+slug: /98773b6a-7986-4df2-90a5-fb559eefc50b
 title: 'Automate server and CW Manage Plugin Monitoring'
 title_meta: 'Automate server and CW Manage Plugin Monitoring'
 keywords: ['automate', 'monitoring', 'plugins', 'efficiency', 'proactivity']

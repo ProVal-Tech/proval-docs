@@ -1,5 +1,6 @@
 ---
 id: 'e4801a6f-1945-4aee-bd39-1601a185b9eb'
+slug: /e4801a6f-1945-4aee-bd39-1601a185b9eb
 title: 'AD Recycle Bin'
 title_meta: 'AD Recycle Bin'
 keywords: ['active-directory', 'recycle', 'custom', 'field', 'status']
@@ -25,7 +26,6 @@ The [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>) utilizes
 **Default Value:** 0  
 **Description:** This custom field is used by the Enable Recycle Bin Task to store the Recycle Bin status on AD Infrastructure Masters.  
 **Editable:** Yes  
-
 
 
 

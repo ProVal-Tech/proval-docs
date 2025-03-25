@@ -1,5 +1,6 @@
 ---
 id: '8f914719-a7f7-4ed8-99fb-667c8c26237d'
+slug: /8f914719-a7f7-4ed8-99fb-667c8c26237d
 title: 'Windows 11 Compatibility Check with Warranty Status'
 title_meta: 'Windows 11 Compatibility Check with Warranty Status'
 keywords: ['windows', 'upgrade', 'compatibility', 'check', 'machine', 'status', 'client', 'location']
@@ -40,7 +41,6 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Purchase Date              | Purchase date of the device.                                                                        |
 | Expiry Date                | Warranty expiry date of the device.                                                                 |
 | Warranty Status            | Warranty status of the device (Expired/Expiring Soon/In Warranty).                                 |
-
 
 
 

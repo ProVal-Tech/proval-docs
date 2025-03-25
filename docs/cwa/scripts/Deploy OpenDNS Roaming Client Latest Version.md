@@ -1,5 +1,6 @@
 ---
 id: 'c18b026e-7989-4853-b1cb-00517e69adb8'
+slug: /c18b026e-7989-4853-b1cb-00517e69adb8
 title: 'Deploy OpenDNS Roaming Client Latest Version'
 title_meta: 'Deploy OpenDNS Roaming Client Latest Version'
 keywords: ['cisco', 'roaming', 'client', 'installation', 'update', 'mac', 'windows']
@@ -56,6 +57,5 @@ The script will push an update to the Windows device if an out-of-date version i
 | ServiceloopCounter       | Variable used to loop for a set amount of time looking for the service to start.                  |
 | FinishStatus             | This variable is used when checking basic PowerShell for common PowerShell issues, e.g., incorrect version, missing modules, etc. |
 | Message                  | Holds the final log message in the event that we finish the install and need to verify.           |
-
 
 

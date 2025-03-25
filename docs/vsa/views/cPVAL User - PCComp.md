@@ -1,5 +1,6 @@
 ---
 id: 'e08a4d71-9e14-49c1-9ccc-c9ca346e7869'
+slug: /e08a4d71-9e14-49c1-9ccc-c9ca346e7869
 title: 'cPVAL User - PCComp'
 title_meta: 'cPVAL User - PCComp'
 keywords: ['machines', 'user', 'status', 'pccomp', 'view']
@@ -27,6 +28,5 @@ The following filters are applied to this view:
 | cPVAL User Status    | Yes              | *present*    |
 |                      |                  |              |
 |                      |                  |              |
-
 
 

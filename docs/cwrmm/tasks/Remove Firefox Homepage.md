@@ -1,4 +1,6 @@
-id: '321f9e4b-75f6-4951-9848-03d5940cc257'  
+---
+id: '321f9e4b-75f6-4951-9848-03d5940cc257'
+slug: /321f9e4b-75f6-4951-9848-03d5940cc257
 title: 'Remove Firefox Homepage'  
 title_meta: 'Remove Firefox Homepage'  
 keywords: ['powershell', 'configuration', 'system', 'scripting', 'automation']  
@@ -6,6 +8,7 @@ description: 'This document provides an example of a PowerShell script designed 
 tags: ['software', 'windows']  
 draft: false  
 unlisted: false  
+---
 
 ## Example PowerShell Script for System Configuration
 

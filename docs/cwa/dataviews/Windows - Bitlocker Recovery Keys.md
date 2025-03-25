@@ -1,5 +1,6 @@
 ---
 id: '678aae65-bd97-4ec6-812f-47b57018ec21'
+slug: /678aae65-bd97-4ec6-812f-47b57018ec21
 title: 'Windows - Bitlocker Recovery Keys'
 title_meta: 'Windows - Bitlocker Recovery Keys'
 keywords: ['bitlocker', 'recovery', 'keys', 'dataview', 'endpoint']
@@ -27,6 +28,5 @@ This dataview displays Bitlocker recovery keys that have been collected by the [
 | Drive Letter  | The drive letter that has been encrypted with Bitlocker                                         |
 | Recovery Key  | The recovery key for Bitlocker                                                                   |
 | Last Updated  | The last time that the script was run to gather the data. Old Last Updated dates may indicate outdated information. |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e19128db-d2f6-428f-bd78-d833ec4aa952'
+slug: /e19128db-d2f6-428f-bd78-d833ec4aa952
 title: 'SWM - Software Install - New Teams Bulk Client Deploy'
 title_meta: 'SWM - Software Install - New Teams Bulk Client Deploy'
 keywords: ['teams', 'client', 'upgrade', 'installation', 'powershell']
@@ -48,6 +49,5 @@ $updates = Get-LSUpdate -All
 
 GitHub: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
-
 
 

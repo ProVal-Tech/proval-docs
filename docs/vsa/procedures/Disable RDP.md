@@ -1,5 +1,6 @@
 ---
 id: '5c93252c-c3d9-48d7-bc9b-4073c9e49638'
+slug: /5c93252c-c3d9-48d7-bc9b-4073c9e49638
 title: 'Disable RDP'
 title_meta: 'Disable RDP'
 keywords: ['rdp', 'windows', 'registry', 'disable', 'script']
@@ -58,4 +59,3 @@ Script Logs
 Attach the content XML VSA Export to this document.
 ## Attachments
 [Procedure_Disable_RDP.xml](<../../../static/attachments/itg/10932189/Procedure_Disable_RDP.xml>)
-

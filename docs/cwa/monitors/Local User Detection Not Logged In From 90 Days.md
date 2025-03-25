@@ -1,5 +1,6 @@
 ---
 id: '370f7dfe-cf48-40d6-a611-d6a02811393c'
+slug: /370f7dfe-cf48-40d6-a611-d6a02811393c
 title: 'Local User Detection Not Logged In From 90 Days'
 title_meta: 'Local User Detection Not Logged In From 90 Days'
 keywords: ['monitor', 'inactive', 'local', 'users', 'windows', 'servers']
@@ -22,6 +23,5 @@ This monitor will detect local users who have not logged in for the last 90 days
 ## Target
 
 Windows Servers
-
 
 

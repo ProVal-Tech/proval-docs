@@ -1,5 +1,6 @@
 ---
 id: '9bb7d6a2-5e10-47d7-98cc-78b8e5cdd10c'
+slug: /9bb7d6a2-5e10-47d7-98cc-78b8e5cdd10c
 title: 'Software - Open DNS - Machines With Open DNS but no Wirele'
 title_meta: 'Software - Open DNS - Machines With Open DNS but no Wirele'
 keywords: ['audit', 'opendns', 'agent', 'wireless', 'msp']
@@ -26,6 +27,5 @@ Many MSPs set up OpenDNS on the LAN, so all workstations connected via Ethernet 
 | Machine Type    | Displays whether it's a server or a workstation |
 | Wireless Card    | Displays the wireless card status              |
 | Umbrella Agent  | Displays the Umbrella agent status              |
-
 
 

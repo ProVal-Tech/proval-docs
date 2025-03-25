@@ -1,5 +1,6 @@
 ---
 id: '30356d75-6212-4a23-b373-d08aa8f548e0'
+slug: /30356d75-6212-4a23-b373-d08aa8f548e0
 title: 'ProVal - Monitor Restart Service Autofix'
 title_meta: 'ProVal - Monitor Restart Service Autofix'
 keywords: ['service', 'restart', 'autofix', 'monitor', 'labtech']
@@ -37,6 +38,5 @@ This script is intended to be called by the "~Autofix Kill stuck service and res
 ## Output
 
 - Script log
-
 
 

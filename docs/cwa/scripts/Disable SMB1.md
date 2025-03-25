@@ -1,5 +1,6 @@
 ---
 id: '70c7fa58-20bf-47b1-bbeb-aae491390406'
+slug: /70c7fa58-20bf-47b1-bbeb-aae491390406
 title: 'Disable SMB1'
 title_meta: 'Disable SMB1'
 keywords: ['smb1', 'windows', 'protocol', 'disable', 'security']
@@ -24,6 +25,5 @@ Windows OS
 ## Output
 
 - Script log
-
 
 

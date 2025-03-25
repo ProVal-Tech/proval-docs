@@ -1,5 +1,6 @@
 ---
 id: '5ee3b278-2443-42b9-beab-f5c58f360881'
+slug: /5ee3b278-2443-42b9-beab-f5c58f360881
 title: 'Maintenance Mode - Set 60 min'
 title_meta: 'Maintenance Mode - Set 60 min'
 keywords: ['maintenance', 'agent', 'automate', 'connectwise', 'script']
@@ -22,6 +23,5 @@ The script sets maintenance mode for 60 minutes on the agent.
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'dfddb88b-37c2-4d42-b8a0-bb7ebe4da6d0'
+slug: /dfddb88b-37c2-4d42-b8a0-bb7ebe4da6d0
 title: 'plugin_proval_bitlocker'
 title_meta: 'plugin_proval_bitlocker'
 keywords: ['bitlocker', 'recovery', 'key', 'storage', 'audit']
@@ -26,6 +27,5 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](<../scripts/
 | DriveID      | INT     | The associated drive of the recovery key.          |
 | RecoveryKey  | CHAR    | The BitLocker recovery key.                         |
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
-
 
 

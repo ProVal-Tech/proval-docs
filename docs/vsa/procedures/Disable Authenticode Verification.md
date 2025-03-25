@@ -1,5 +1,6 @@
 ---
 id: 'c2cf8ecb-a36e-4180-8503-e3be4d03f9c5'
+slug: /c2cf8ecb-a36e-4180-8503-e3be4d03f9c5
 title: 'Disable Authenticode Verification'
 title_meta: 'Disable Authenticode Verification'
 keywords: ['authenticode', 'windows', 'verification', 'disable', 'reboot']
@@ -43,6 +44,5 @@ This script is used to disable the Authenticode verification on Windows machines
 ## Output
 
 Agent procedure log.
-
 
 

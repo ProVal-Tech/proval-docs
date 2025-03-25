@@ -1,5 +1,6 @@
 ---
 id: '06094f2c-6867-48d7-9a94-1d4b9ad08ec0'
+slug: /06094f2c-6867-48d7-9a94-1d4b9ad08ec0
 title: 'Datto RMM Agent Uninstall'
 title_meta: 'Datto RMM Agent Uninstall'
 keywords: ['datto', 'rmm', 'uninstall', 'windows', 'mac', 'endpoint']
@@ -49,6 +50,5 @@ Runs [sudo bash /Applications/AEM/Agent.app/Contents/Resources/uninstall.sh](htt
 ## Output
 
 Agent procedure log.
-
 
 

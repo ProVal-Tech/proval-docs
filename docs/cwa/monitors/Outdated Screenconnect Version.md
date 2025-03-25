@@ -1,5 +1,6 @@
 ---
 id: 'f3fa89f2-9c7a-44ab-a6d9-14a37b205e7d'
+slug: /f3fa89f2-9c7a-44ab-a6d9-14a37b205e7d
 title: 'Outdated Screenconnect Version'
 title_meta: 'Outdated Screenconnect Version'
 keywords: ['screenconnect', 'monitor', 'version', 'agent', 'update']
@@ -27,6 +28,5 @@ Globally (both on Windows and Mac machines)
 ## Ticketing
 
 The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) script.
-
 
 

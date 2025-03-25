@@ -1,5 +1,6 @@
 ---
 id: '05737947-e8d5-4711-a1d7-91a6db43358f'
+slug: /05737947-e8d5-4711-a1d7-91a6db43358f
 title: 'Set-PowerPlan'
 title_meta: 'Set-PowerPlan'
 keywords: ['powerplan', 'settings', 'configuration', 'energy']

@@ -1,5 +1,6 @@
 ---
 id: '687261c3-e6d7-46bc-84f6-506007d47142'
+slug: /687261c3-e6d7-46bc-84f6-506007d47142
 title: 'Disk - Gather Critical Data'
 title_meta: 'Disk - Gather Critical Data'
 keywords: ['disk', 'critical', 'info', 'data', 'failure', 'custom', 'table']
@@ -102,7 +103,6 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
-
 
 
 

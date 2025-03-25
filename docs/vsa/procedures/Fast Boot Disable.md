@@ -1,5 +1,6 @@
 ---
 id: 'd0e2ff26-8148-47fc-a482-af212c9659db'
+slug: /d0e2ff26-8148-47fc-a482-af212c9659db
 title: 'Fast Boot Disable'
 title_meta: 'Fast Boot Disable'
 keywords: ['fast', 'boot', 'disable', 'windows', 'registry']
@@ -33,6 +34,5 @@ The following command is executed:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e45f0be5-66b2-417a-b900-0a6b3b9994f1'
+slug: /e45f0be5-66b2-417a-b900-0a6b3b9994f1
 title: 'Get-FirefoxExtensions'
 title_meta: 'Get-FirefoxExtensions'
 keywords: ['firefox', 'extensions', 'browser', 'user']
@@ -53,6 +54,5 @@ ExtensionName           NoteProperty string ExtensionName=The best extension
 ExtensionVersion        NoteProperty string ExtensionVersion=1.1.1
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'aa0c7575-d9f1-4c41-98bb-50eab8aa1ade'
+slug: /aa0c7575-d9f1-4c41-98bb-50eab8aa1ade
 title: 'Bitlocker - Enable TPM'
 title_meta: 'Bitlocker - Enable TPM'
 keywords: ['tpm', 'encryption', 'provisioning', 'script', 'implementation']
@@ -36,6 +37,5 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 ## Output
 
 - Script logs
-
 
 

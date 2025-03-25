@@ -1,5 +1,6 @@
 ---
 id: 'ce5e9466-a5c3-487a-a9b7-5d204093e73e'
+slug: /ce5e9466-a5c3-487a-a9b7-5d204093e73e
 title: 'Add Wi-Fi Profile'
 title_meta: 'Add Wi-Fi Profile'
 keywords: ['wifi', 'profile', 'windows', 'script', 'connectwise']
@@ -319,6 +320,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 

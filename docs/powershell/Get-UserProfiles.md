@@ -1,5 +1,6 @@
 ---
 id: 'dee76265-9071-47bb-9262-d656dd8b5c6d'
+slug: /dee76265-9071-47bb-9262-d656dd8b5c6d
 title: 'Get-UserProfiles'
 title_meta: 'Get-UserProfiles'
 keywords: ['user', 'profiles', 'local', 'admin']
@@ -40,6 +41,5 @@ Gathers information about user profiles.
 
 ## Output
 - .\Get-UserProfiles-log.txt
-
 
 

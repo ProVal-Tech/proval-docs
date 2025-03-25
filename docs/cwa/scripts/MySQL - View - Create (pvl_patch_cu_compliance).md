@@ -1,5 +1,6 @@
 ---
 id: 'b1963e10-77b2-444a-80ac-9cfded3ab8a4'
+slug: /b1963e10-77b2-444a-80ac-9cfded3ab8a4
 title: 'MySQL - View - Create (pvl_patch_cu_compliance)'
 title_meta: 'MySQL - View - Create (pvl_patch_cu_compliance)'
 keywords: ['views', 'patch', 'compliance', 'automate', 'permissions']
@@ -30,7 +31,6 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
-
 
 
 

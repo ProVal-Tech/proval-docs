@@ -1,5 +1,6 @@
 ---
 id: '97e53493-0cd3-4b69-91b1-1e3f70111f5f'
+slug: /97e53493-0cd3-4b69-91b1-1e3f70111f5f
 title: 'Incorrect Drive Inventory'
 title_meta: 'Incorrect Drive Inventory'
 keywords: ['upgrade', 'swap', 'agents', 'hard drives', 'ssd', 'connectwise', 'automate', 'monitoring']

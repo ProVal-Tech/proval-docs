@@ -1,5 +1,6 @@
 ---
 id: '86cf6cf1-58cc-404d-ab7a-a80658e7b91f'
+slug: /86cf6cf1-58cc-404d-ab7a-a80658e7b91f
 title: 'Automate - Less Than 10 Licenses Remaining'
 title_meta: 'Automate - Less Than 10 Licenses Remaining'
 keywords: ['automate', 'alert', 'licenses', 'monitor', 'ticket']
@@ -25,6 +26,5 @@ For hosted partners, it will be the minimum `computerid` of `Clientid 1`. If `Cl
 ## Target
 
 Global - Should be run without explicitly defined targets.
-
 
 

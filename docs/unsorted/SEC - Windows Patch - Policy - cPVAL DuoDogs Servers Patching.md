@@ -1,5 +1,6 @@
 ---
 id: 'e1f17f96-4dad-40d5-8801-c0d132456ce8'
+slug: /e1f17f96-4dad-40d5-8801-c0d132456ce8
 title: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Servers Patching'
 title_meta: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Servers Patching'
 keywords: ['patch', 'policy', 'servers', 'management', 'windows', 'reboot']
@@ -38,4 +39,3 @@ Provide the configuration of the profile using the following templates based on 
 - Windows Automatic Update is disabled.
 ## Attachments
 [cPVAL_DuoDogs_Servers_Patching.xml](<../../static/attachments/itg/11112364/cPVAL_DuoDogs_Servers_Patching.xml>)
-

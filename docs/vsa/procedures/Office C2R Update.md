@@ -1,5 +1,6 @@
 ---
 id: 'ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8'
+slug: /ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8
 title: 'Office C2R Update'
 title_meta: 'Office C2R Update'
 keywords: ['update', 'office', 'click2run', 'installation']
@@ -45,6 +46,5 @@ Does this procedure depend on other VSA content? Link the ITGlue article for the
 ## Output
 
 Procedure log files and other outputs.
-
 
 

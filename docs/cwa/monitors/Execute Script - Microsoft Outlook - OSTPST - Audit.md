@@ -1,5 +1,6 @@
 ---
 id: 'd801eb05-05a3-4271-aa8c-a8ea4941f4eb'
+slug: /d801eb05-05a3-4271-aa8c-a8ea4941f4eb
 title: 'Execute Script - Microsoft Outlook - OSTPST - Audit'
 title_meta: 'Execute Script - Microsoft Outlook - OSTPST - Audit'
 keywords: ['monitoring', 'outlook', 'audit', 'windows', 'script']
@@ -24,6 +25,5 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
-
 
 

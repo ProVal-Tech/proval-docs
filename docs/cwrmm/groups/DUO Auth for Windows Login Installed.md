@@ -1,5 +1,6 @@
 ---
 id: '5202450b-3b85-46ff-9f35-6ea804223270'
+slug: /5202450b-3b85-46ff-9f35-6ea804223270
 title: 'DUO Auth for Windows Login Installed'
 title_meta: 'DUO Auth for Windows Login Installed'
 keywords: ['duo', 'windows', 'login', 'group', 'agents']
@@ -46,6 +47,5 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    - Set `Success` in the comparison condition.  
    ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '5f061160-176f-443f-b090-edc43989b5ef'
+slug: /5f061160-176f-443f-b090-edc43989b5ef
 title: 'Configure Winget Auto Update'
 title_meta: 'Configure Winget Auto Update'
 keywords: ['winget', 'update', 'automation', 'applications', 'procedure']
@@ -108,4 +109,3 @@ The following example has been saved in our VSA:
 **File Hash (MD5):** `07DFAD0A66AA5A4B40C946DF727BE3D8`  
 ## Attachments
 [Winget-AutoUpdate.ps1](<../../../static/attachments/itg/18062085/Winget-AutoUpdate.ps1>)
-

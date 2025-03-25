@@ -1,5 +1,6 @@
 ---
 id: 'b29a19e6-c991-4dc3-8b87-81191273eb2c'
+slug: /b29a19e6-c991-4dc3-8b87-81191273eb2c
 title: 'Retire Machines offline for more than 60 days'
 title_meta: 'Retire Machines offline for more than 60 days'
 keywords: ['monitor', 'retire', 'machines', 'offline', 'autofix', 'sql']
@@ -77,6 +78,5 @@ Script 2: "Move Agent to Retired Assets [Autofix]"
 Folder: ".Monitor Autofixes"
 
 </div>
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '49cf7e8f-1462-42c9-829e-9ee3da05049b'
+slug: /49cf7e8f-1462-42c9-829e-9ee3da05049b
 title: 'Microsoft Office - ClickToRun Repair'
 title_meta: 'Microsoft Office - ClickToRun Repair'
 keywords: ['office', 'repair', 'script', 'clicktorun', 'automation']
@@ -42,6 +43,5 @@ This script runs a repair on Office products; by default, it will perform a quic
 ## Output
 
 - Script log
-
 
 

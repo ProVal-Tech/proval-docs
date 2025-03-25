@@ -1,5 +1,6 @@
 ---
 id: 'f04ef005-9203-4967-9bcc-11457c91d2dc'
+slug: /f04ef005-9203-4967-9bcc-11457c91d2dc
 title: 'Move New Agent to Matching Location (DomainRouter)'
 title_meta: 'Move New Agent to Matching Location (DomainRouter)'
 keywords: ['computers', 'location', 'domain', 'router', 'automation']
@@ -39,6 +40,5 @@ This script will move new or unassigned computers from Location ID 1 to the matc
 ## Output
 
 - Script Log.
-
 
 

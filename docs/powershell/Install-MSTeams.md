@@ -1,5 +1,6 @@
 ---
 id: 'b1410ff8-58df-45cf-a66a-a727f53cc7af'
+slug: /b1410ff8-58df-45cf-a66a-a727f53cc7af
 title: 'Install-MSTeams'
 title_meta: 'Install-MSTeams'
 keywords: ['install', 'msteams', 'teamsbootstrapper', 'upgrade']
@@ -49,6 +50,5 @@ Uninstalls and deprovisions the existing Microsoft Teams installation before rei
 ## Output
 - `.\Install-MSTeams-log.txt`
 - `.\Install-MSTeams-error.txt`
-
 
 

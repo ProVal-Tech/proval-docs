@@ -1,5 +1,6 @@
 ---
 id: '6a855fe6-df02-4668-81c3-8cd392595c31'
+slug: /6a855fe6-df02-4668-81c3-8cd392595c31
 title: 'CWM - Automate - Automate - Unsynced Ticket Content'
 title_meta: 'CWM - Automate - Automate - Unsynced Ticket Content'
 keywords: ['monitor', 'tickets', 'alerts', 'synchronization', 'cwmanage']
@@ -27,6 +28,5 @@ Use the "△ Email RAWSQL Monitor set results to the Partner" alert template alo
 ## Target
 
 Global
-
 
 

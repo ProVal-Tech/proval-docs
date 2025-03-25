@@ -1,5 +1,6 @@
 ---
 id: '16acceef-5282-42e0-840c-8b8e5af8058f'
+slug: /16acceef-5282-42e0-840c-8b8e5af8058f
 title: 'Scheduled Tasks - Winget Update All'
 title_meta: 'Scheduled Tasks - Winget Update All'
 keywords: ['winget', 'scheduled', 'tasks', 'windows', 'update']
@@ -105,6 +106,5 @@ The ultimate objective of this solution is to establish and oversee two schedule
 
 **Q:** How to remove the tasks from all machines of a client?  
 **A:** Upon unmarking the Client-Level EDF `Winget Update All Task - Create`, the [Execute Script - Scheduled Task - Delete - Winget Update All](<../cwa/monitors/Execute Script - Scheduled Task - Delete - Winget Update All.md>) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](<../cwa/scripts/Scheduled Task - Delete - Winget Update All Autofix.md>) script to remove the tasks from all Windows 10 and 11 machines of the client.
-
 
 

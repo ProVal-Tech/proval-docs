@@ -1,5 +1,6 @@
 ---
 id: 'e52d302e-56a7-4438-8c4d-e53e5a16f751'
+slug: /e52d302e-56a7-4438-8c4d-e53e5a16f751
 title: 'BitLocker Initialize'
 title_meta: 'BitLocker Initialize'
 keywords: ['windows', 'agents', 'group', 'dynamic']
@@ -34,6 +35,5 @@ This group contains only the Windows 10 and Windows 11 agents.
    - OS contains any of Windows 10 or Windows 11  
    
      ![Criteria](../../../static/img/BitLocker-Initialize/image_3.png)
-
 
 

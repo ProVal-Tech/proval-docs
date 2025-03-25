@@ -1,5 +1,6 @@
 ---
 id: '00ba69e7-ba56-4582-b675-0d6bb9db89dc'
+slug: /00ba69e7-ba56-4582-b675-0d6bb9db89dc
 title: 'Department Detail of AD Users Script'
 title_meta: 'Department Detail of AD Users Script'
 keywords: ['ad', 'users', 'department', 'information', 'database']
@@ -45,6 +46,5 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_computer_department pp ON pp.computerid = c.computerid
 ```
-
 
 

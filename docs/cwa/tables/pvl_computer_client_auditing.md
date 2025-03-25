@@ -1,5 +1,6 @@
 ---
 id: '0030148b-608a-449a-9d52-ff1678fa79c0'
+slug: /0030148b-608a-449a-9d52-ff1678fa79c0
 title: 'pvl_computer_client_auditing'
 title_meta: 'pvl_computer_client_auditing'
 keywords: ['migration', 'monitoring', 'clients', 'temporary', 'table']
@@ -26,6 +27,5 @@ This document describes a temporary table created by the [CWM - Automate - Scrip
 | Computerid  | int(8)  | Unique identifier for the computer |
 | Clientid    | int(8)  | Unique identifier for the client   |
 | Timestamp   | datetime | The time when the script was run   |
-
 
 

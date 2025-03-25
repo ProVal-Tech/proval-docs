@@ -1,5 +1,6 @@
 ---
 id: '36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1'
+slug: /36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1
 title: 'Execute Script - User Profile - Get Information'
 title_meta: 'Execute Script - User Profile - Get Information'
 keywords: ['execute', 'script', 'user', 'profile', 'information', 'windows']
@@ -26,6 +27,5 @@ Windows machines, excluding domain controller servers.
 **Name:** `△ Custom - Execute Script - Windows - User Profile - Get Information`  
 
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
-
 
 

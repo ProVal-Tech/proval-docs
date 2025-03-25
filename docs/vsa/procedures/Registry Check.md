@@ -1,5 +1,6 @@
 ---
 id: 'f0d83724-e8a8-41f8-8f73-fea99d0f34de'
+slug: /f0d83724-e8a8-41f8-8f73-fea99d0f34de
 title: 'Registry Check'
 title_meta: 'Registry Check'
 keywords: ['windows', 'upgrade', 'status', 'feature', 'check']
@@ -30,6 +31,5 @@ The process is scheduled automatically in 1-hour increments. It reacts to the re
 ## Output
 
 AP Log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2487a1f4-6f85-42f3-91d0-4aab8c875021'
+slug: /2487a1f4-6f85-42f3-91d0-4aab8c875021
 title: 'UpdateDeploy Target Application to Latest Version Winget'
 title_meta: 'UpdateDeploy Target Application to Latest Version Winget'
 keywords: ['upgrade', 'winget', 'application', 'monitor', 'script']
@@ -36,6 +37,5 @@ This solution is designed to achieve the appropriate application upgrade to the 
   ![Image](../../static/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_3.png)  
 - Apply the alert template "**△ Custom - Execute Script - Application Latest Version**" with monitor [ProVal - Production - Latest Version Detection](<../cwa/monitors/Application - Latest Version Detection.md>) first and run it once before implementing the other monitor so that the system property gets created.
 - Apply the alert template "**△ CUSTOM - Application Install/Update - Winget**" with monitor [ProVal - Production - Install/Update [Winget]](<../cwa/monitors/Application - InstallUpdate Winget.md>) and make the adjustments as mentioned in the screenshot.
-
 
 

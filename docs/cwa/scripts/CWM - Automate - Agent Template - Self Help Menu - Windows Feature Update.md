@@ -1,5 +1,6 @@
 ---
 id: '0c25060b-1272-449f-af97-64169e636e95'
+slug: /0c25060b-1272-449f-af97-64169e636e95
 title: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
 title_meta: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
 keywords: ['windows', 'feature', 'update', 'self', 'help', 'menu', 'script']
@@ -76,6 +77,5 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
     ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_17.png)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
-
 
 

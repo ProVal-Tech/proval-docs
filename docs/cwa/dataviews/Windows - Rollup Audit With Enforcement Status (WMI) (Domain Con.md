@@ -1,5 +1,6 @@
 ---
 id: '090c6eaa-06b0-4062-a3e1-e00a76fd750c'
+slug: /090c6eaa-06b0-4062-a3e1-e00a76fd750c
 title: 'Windows - Rollup Audit With Enforcement Status (WMI) (Domain Con'
 title_meta: 'Windows - Rollup Audit With Enforcement Status (WMI) (Domain Con'
 keywords: ['rollup', 'installation', 'domain', 'controllers', 'patch', 'audit']
@@ -34,6 +35,5 @@ This document collects the latest rollup installation details on domain controll
 | KB                | Latest rollup KB installed details                     |
 | LastContact       | Agent's last contact with the Automate                 |
 | Enforcement Status | Confirms if enforcement is enabled or not. This information is outdated as it has been fixed with the December 2020 rollup release. |
-
 
 

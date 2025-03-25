@@ -1,5 +1,6 @@
 ---
 id: 'cc9eea15-c829-44a4-b507-23efeb8dcaff'
+slug: /cc9eea15-c829-44a4-b507-23efeb8dcaff
 title: 'SQLHarvest'
 title_meta: 'SQLHarvest'
 keywords: ['sql', 'registry', 'information', 'installed', 'detection']
@@ -12,6 +13,5 @@ unlisted: false
 ## Summary
 
 Detect and Get Information About Installed SQL (Reg key)
-
 
 

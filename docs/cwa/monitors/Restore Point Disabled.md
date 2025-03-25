@@ -1,5 +1,6 @@
 ---
 id: 'fab83c9f-6972-4f29-bf35-175422395d00'
+slug: /fab83c9f-6972-4f29-bf35-175422395d00
 title: 'Restore Point Disabled'
 title_meta: 'Restore Point Disabled'
 keywords: ['monitor', 'restore', 'point', 'disabled', 'workstations']

@@ -1,5 +1,6 @@
 ---
 id: '7532eff4-e724-471e-96fc-ddfd944bf710'
+slug: /7532eff4-e724-471e-96fc-ddfd944bf710
 title: 'PUA Remove'
 title_meta: 'PUA Remove'
 keywords: ['removal', 'pua', 'software', 'uninstall', 'bloatware']
@@ -58,6 +59,5 @@ AP Log
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 

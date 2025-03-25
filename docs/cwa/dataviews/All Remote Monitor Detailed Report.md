@@ -1,5 +1,6 @@
 ---
 id: '180f6e36-1fc1-4d28-a4ca-409f7dd9b9c5'
+slug: /180f6e36-1fc1-4d28-a4ca-409f7dd9b9c5
 title: 'All Remote Monitor Detailed Report'
 title_meta: 'All Remote Monitor Detailed Report'
 keywords: ['remote', 'monitor', 'implementation', 'status', 'alert', 'template']
@@ -39,6 +40,5 @@ Color coding was applied to the columns "Monitor Nature," "Affected Computers," 
 - **Monitor Nature**: The "ProVal Monitor" is highlighted in green to draw attention to the ProVal remote monitors in the environment.
 - **Script Nature**: The "ProVal Script" is highlighted in green to indicate where ProVal scripts are used as an autofix.
 - **Affected Computers**: The "0" is displayed in bold/italic font using red color to indicate remote monitors that are not applied to any computers.
-
 
 

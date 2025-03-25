@@ -1,5 +1,6 @@
 ---
 id: '62ad1299-3e65-4bf7-a415-307fdf9a162c'
+slug: /62ad1299-3e65-4bf7-a415-307fdf9a162c
 title: 'SonicWall NetExtender - Latest Version Detection'
 title_meta: 'SonicWall NetExtender - Latest Version Detection'
 keywords: ['sonicwall', 'netextender', 'monitor', 'version', 'update']
@@ -20,6 +21,5 @@ This monitor schedules the script [SonicWall NetExtender - Latest Version [Winge
 ## Target
 
 Workstations - Only one workstation is needed for this monitor because it is only required to fetch the latest version.
-
 
 

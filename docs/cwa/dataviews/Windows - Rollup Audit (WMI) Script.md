@@ -1,5 +1,6 @@
 ---
 id: '70484928-22c8-4aed-a32b-861646feaaaf'
+slug: /70484928-22c8-4aed-a32b-861646feaaaf
 title: 'Windows - Rollup Audit (WMI) Script'
 title_meta: 'Windows - Rollup Audit (WMI) Script'
 keywords: ['windows', 'update', 'rollup', 'patch', 'client', 'location', 'computer', 'agent', 'os', 'version', 'kb', 'contact']
@@ -31,6 +32,5 @@ This dataview displays information about the latest Windows rollup update that h
 | Latest Rollup   | Latest Rollup patch installed detail                      |
 | KB              | Latest rollup KB installed detail                         |
 | Last Contact     | Agent's Last Contact with Automate                       |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '93829155-7945-440a-bf26-775f090df083'
+slug: /93829155-7945-440a-bf26-775f090df083
 title: 'Restore Point - Enabled'
 title_meta: 'Restore Point - Enabled'
 keywords: ['restore', 'point', 'enabled', 'registry', 'machine']
@@ -18,6 +19,5 @@ This role checks the registry to determine if the Restore Point feature is enabl
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/Microsoft/Windows NT/CurrentVersion/SystemRestore:RPSessionInterval-%} | Equals     | 1      | Windows        |
-
 
 

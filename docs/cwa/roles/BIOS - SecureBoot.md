@@ -1,5 +1,6 @@
 ---
 id: '6a42b3bf-d9f6-4572-a786-84486fd13cb4'
+slug: /6a42b3bf-d9f6-4572-a786-84486fd13cb4
 title: 'BIOS - SecureBoot'
 title_meta: 'BIOS - SecureBoot'
 keywords: ['secure', 'boot', 'detection', 'agents', 'windows']
@@ -20,7 +21,6 @@ Equals
 | Detection String                                                                 | Comparator                                   | Result | Applicable OS |
 |----------------------------------------------------------------------------------|----------------------------------------------|--------|---------------|
 | \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Confirm-SecureBootUEFI"@%} | The expected result of the Detection String | True   | Windows       |
-
 
 
 

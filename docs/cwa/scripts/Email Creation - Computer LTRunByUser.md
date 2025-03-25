@@ -1,5 +1,6 @@
 ---
 id: 'aff3413b-574f-4399-8f4b-85e04d388c5a'
+slug: /aff3413b-574f-4399-8f4b-85e04d388c5a
 title: 'Email Creation - Computer LTRunByUser'
 title_meta: 'Email Creation - Computer LTRunByUser'
 keywords: ['email', 'monitor', 'script', 'status']
@@ -25,6 +26,5 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 - Email
 - Script Log
-
 
 

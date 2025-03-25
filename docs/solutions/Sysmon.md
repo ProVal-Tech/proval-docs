@@ -1,5 +1,6 @@
 ---
 id: '67bf4b52-4294-4773-b4df-7d75c9387954'
+slug: /67bf4b52-4294-4773-b4df-7d75c9387954
 title: 'Sysmon'
 title_meta: 'Sysmon'
 keywords: ['sysmon', 'windows', 'monitor', 'service', 'configuration', 'installation', 'uninstallation', 'endpoint']
@@ -79,6 +80,5 @@ This solution handles the optional application Sysmon.
 ## Output
 
 - Script log
-
 
 

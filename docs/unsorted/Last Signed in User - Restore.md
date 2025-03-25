@@ -1,5 +1,6 @@
 ---
 id: '0865e96c-af9c-48f4-acff-a70525b773ac'
+slug: /0865e96c-af9c-48f4-acff-a70525b773ac
 title: 'Last Signed in User - Restore'
 title_meta: 'Last Signed in User - Restore'
 keywords: ['backup', 'logon', 'restore', 'user']
@@ -32,6 +33,5 @@ This script will restore the backup logon user to the login screen of the machin
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '1d32846e-9a9d-44df-893d-bfdbc361ee35'
+slug: /1d32846e-9a9d-44df-893d-bfdbc361ee35
 title: 'Windows - Latest .Net Version'
 title_meta: 'Windows - Latest .Net Version'
 keywords: ['dataview', 'net', 'windows', 'version', 'clients', 'machines']
@@ -26,6 +27,5 @@ None
 | Computers Name                  | The name of the machine                             |
 | Computers Last Contact          | The time the computer last contacted Automate      |
 | Inv_OperatingSystem Net_Version | The highest .NET version detected by Automate      |
-
 
 

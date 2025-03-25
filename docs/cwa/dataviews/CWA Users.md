@@ -1,5 +1,6 @@
 ---
 id: '794662a0-87d9-4744-be1b-2b72eca8019b'
+slug: /794662a0-87d9-4744-be1b-2b72eca8019b
 title: 'CWA Users'
 title_meta: 'CWA Users'
 keywords: ['automate', 'security', 'users', 'permissions', 'audit']
@@ -27,6 +28,5 @@ This data view shows detailed security information about Automate users.
 | Email                     | Email address of the user                                 |
 | Assigned Groups           | Names of the assigned groups                              |
 | Assigned Clients          | Names of the assigned clients                             |
-
 
 

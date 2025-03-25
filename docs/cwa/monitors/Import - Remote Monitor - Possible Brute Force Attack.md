@@ -1,5 +1,6 @@
 ---
 id: '5099131e-bdc7-470a-8bd1-011dfc54ef4e'
+slug: /5099131e-bdc7-470a-8bd1-011dfc54ef4e
 title: 'Import - Remote Monitor - Possible Brute Force Attack.md'
 title_meta: 'Import - Remote Monitor - Possible Brute Force Attack.md'
 keywords: ['proval', 'security', 'brute', 'force', 'monitor', 'alert']

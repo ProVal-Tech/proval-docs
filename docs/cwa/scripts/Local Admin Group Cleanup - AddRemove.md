@@ -1,5 +1,6 @@
 ---
 id: 'e228540f-e4f4-4e67-801f-cdff876f955f'
+slug: /e228540f-e4f4-4e67-801f-cdff876f955f
 title: 'Local Admin Group Cleanup - Add/Remove'
 title_meta: 'Local Admin Group Cleanup - Add/Remove'
 keywords: ['local', 'admin', 'cleanup', 'script', 'windows']

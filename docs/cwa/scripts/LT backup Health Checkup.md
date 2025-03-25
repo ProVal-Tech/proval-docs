@@ -1,5 +1,6 @@
 ---
 id: '7b0a4072-a682-473a-a708-0b8eecc6d83b'
+slug: /7b0a4072-a682-473a-a708-0b8eecc6d83b
 title: 'LT backup Health Checkup'
 title_meta: 'LT backup Health Checkup'
 keywords: ['backup', 'alert', 'ticket', 'monitoring', 'proval']
@@ -49,6 +50,5 @@ This script detects whether the LT backup ran successfully by checking the backu
 
 - Script log
 - Email
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'eb9d46c0-757b-4630-b6c5-709f708ceec5'
+slug: /eb9d46c0-757b-4630-b6c5-709f708ceec5
 title: 'Update Orchestrator Service - Disable'
 title_meta: 'Update Orchestrator Service - Disable'
 keywords: ['update', 'service', 'disable', 'orchestrator', 'stop']
@@ -32,6 +33,5 @@ It will run as an autofix with a dependent monitor.
 ## Output
 
 - Script log  
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '86ce1f15-d85b-472a-b35f-c4c357036ee2'
+slug: /86ce1f15-d85b-472a-b35f-c4c357036ee2
 title: 'Remove Wifi Profile'
 title_meta: 'Remove Wifi Profile'
 keywords: ['wifi', 'profile', 'remove', 'script', 'connectwise', 'rmm']
@@ -174,7 +175,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 
 

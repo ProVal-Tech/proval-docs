@@ -1,5 +1,6 @@
 ---
 id: '845fe569-12ec-48e3-86f4-34377aba03ec'
+slug: /845fe569-12ec-48e3-86f4-34377aba03ec
 title: 'plugin_proval_windows_update_report'
 title_meta: 'plugin_proval_windows_update_report'
 keywords: ['connectwise', 'windows', 'update', 'report', 'storage', 'script']
@@ -59,7 +60,6 @@ Stores the data captured by the [CWM - Automate - Script - Windows Update Report
 | BrowseOnly                   | varchar(10)    | True | False                                     |
 | PerUser                      | varchar(10)    | True | False                                     |
 | ScriptRunTime                | varchar(50)    | Script run time                                   |
-
 
 
 

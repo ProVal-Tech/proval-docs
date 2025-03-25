@@ -1,5 +1,6 @@
 ---
 id: 'f4687be0-4269-4cec-8e7b-685f56178f27'
+slug: /f4687be0-4269-4cec-8e7b-685f56178f27
 title: 'Disable Update Orchestrator Service Change'
 title_meta: 'Disable Update Orchestrator Service Change'
 keywords: ['monitor', 'service', 'disable', 'windows', 'update', 'orchestrator']

@@ -1,5 +1,6 @@
 ---
 id: '47e125c4-26df-4b47-811b-b856f3395290'
+slug: /47e125c4-26df-4b47-811b-b856f3395290
 title: 'GetRemoveAdd Wifi Profiles'
 title_meta: 'GetRemoveAdd Wifi Profiles'
 keywords: ['wifi', 'profiles', 'management', 'audit', 'removal', 'addition']
@@ -112,6 +113,5 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
-
 
 

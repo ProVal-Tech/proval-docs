@@ -1,5 +1,6 @@
 ---
 id: '706c1dcb-998c-4d1e-a046-ab7538429aa7'
+slug: /706c1dcb-998c-4d1e-a046-ab7538429aa7
 title: 'Internet Speed - Audit'
 title_meta: 'Internet Speed - Audit'
 keywords: ['speed', 'audit', 'network', 'performance', 'bandwidth', 'latency', 'jitter', 'packet loss', 'ISP']
@@ -51,7 +52,6 @@ Displays audited speed test information from the custom table [EPM - Network - C
 | ResultURL        | The URL of the speed test result.                                                           |
 | DownloadMbps     | The download speed detected in Mbps.                                                        |
 | UploadMbps       | The upload speed detected in Mbps.                                                          |
-
 
 
 

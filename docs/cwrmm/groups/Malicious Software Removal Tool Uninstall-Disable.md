@@ -1,5 +1,6 @@
 ---
 id: '5b31977a-2e6d-4647-8c4b-5b1055b31ff4'
+slug: /5b31977a-2e6d-4647-8c4b-5b1055b31ff4
 title: 'Malicious Software Removal Tool Uninstall/Disable'
 title_meta: 'Malicious Software Removal Tool Uninstall/Disable'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
@@ -48,5 +49,4 @@ Click Save
 Group Created
 
 ![Group Created](<../../../static/img/docs/Malicious Software Removal Tool Uninstall-Disable/{A9C86F38-129F-4A35-93A7-3F187EF8AE7E}.png>)
-
 

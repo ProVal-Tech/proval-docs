@@ -1,5 +1,6 @@
 ---
 id: 'f63c0791-3057-4e90-888e-ae6f2ada558a'
+slug: /f63c0791-3057-4e90-888e-ae6f2ada558a
 title: 'Email Creation - Computer'
 title_meta: 'Email Creation - Computer'
 keywords: ['email', 'monitor', 'alerts', 'notification', 'sql']
@@ -59,6 +60,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
-
 
 

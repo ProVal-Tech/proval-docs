@@ -1,5 +1,6 @@
 ---
 id: 'fc20710b-81b8-4383-a3ad-42ebef9dd930'
+slug: /fc20710b-81b8-4383-a3ad-42ebef9dd930
 title: 'Agent ID assignment discrepancy Autofix'
 title_meta: 'Agent ID assignment discrepancy Autofix'
 keywords: ['automate', 'agent', 'ticket', 'reinstall', 'discrepancy']
@@ -63,7 +64,6 @@ Sample Ticket:
 
 - Ticket
 - Script logs
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'ec673596-37f8-4da2-b0ed-fdc347a98dfc'
+slug: /ec673596-37f8-4da2-b0ed-fdc347a98dfc
 title: 'Set-ServiceLogin'
 title_meta: 'Set-ServiceLogin'
 keywords: ['service', 'login', 'account', 'change']
@@ -68,6 +69,5 @@ Location of output for log, result, and error files.
 .\\Set-ServiceLogin-data.txt
 .\\Set-ServiceLogin-error.txt
 ```
-
 
 

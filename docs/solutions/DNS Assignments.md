@@ -1,5 +1,6 @@
 ---
 id: '6b898ed0-2dfd-447c-9a40-5cc9ce05ea9b'
+slug: /6b898ed0-2dfd-447c-9a40-5cc9ce05ea9b
 title: 'DNS Assignments'
 title_meta: 'DNS Assignments'
 keywords: ['dns', 'dataview', 'network', 'epm', 'devices']
@@ -26,7 +27,6 @@ The purpose of this solution is to add to the current NON-Stack dataview [EPM - 
 1. Import the [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](<../cwa/scripts/Create and Populate plugin_proval_dns_extradata.md>) script.
 2. Schedule the script to run against any target groups or endpoints.
 3. Review the data in the dataview for accuracy.
-
 
 
 

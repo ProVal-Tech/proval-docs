@@ -1,5 +1,6 @@
 ---
 id: 'cc6575e1-f95a-495a-ab89-65e165e1c85f'
+slug: /cc6575e1-f95a-495a-ab89-65e165e1c85f
 title: 'Automate - Monitor Failure Counts'
 title_meta: 'Automate - Monitor Failure Counts'
 keywords: ['monitor', 'failure', 'count', 'tickets', 'dataview']
@@ -27,6 +28,5 @@ None
 | Client Name     | Client name                                                         |
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last three days     |
-
 
 

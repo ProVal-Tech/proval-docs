@@ -1,5 +1,6 @@
 ---
 id: 'dafd3948-55e4-4c52-8113-5eae1bbac98c'
+slug: /dafd3948-55e4-4c52-8113-5eae1bbac98c
 title: 'Winget'
 title_meta: 'Winget'
 keywords: ['winget', 'software', 'install', 'update', 'uninstall']
@@ -22,7 +23,6 @@ This solution is designed to uninstall, install, and update software via Winget.
 | [CW RMM - Task - Winget Upgrade All](https://proval.itglue.com/5078775/docs/13473030#version=published&amp;documentMode=view) | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint.                                 |
 
 ## FAQ
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '7fdd2a3b-2dca-43db-8a1d-f350967f1055'
+slug: /7fdd2a3b-2dca-43db-8a1d-f350967f1055
 title: 'Update-Windows10'
 title_meta: 'Update-Windows10'
 keywords: ['update', 'windows', 'upgrade', 'installation']
@@ -72,6 +73,5 @@ The script generates log, result, and error files at the following locations:
 
 - `.\\Update-Windows10-log.txt`
 - `.\\Update-Windows10-Error.txt`
-
 
 

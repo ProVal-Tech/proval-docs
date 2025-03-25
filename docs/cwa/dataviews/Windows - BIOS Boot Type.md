@@ -1,5 +1,6 @@
 ---
 id: '9939d4b0-3332-4990-badc-03d5e7f43e25'
+slug: /9939d4b0-3332-4990-badc-03d5e7f43e25
 title: 'Windows - BIOS Boot Type'
 title_meta: 'Windows - BIOS Boot Type'
 keywords: ['bios', 'boot', 'uefi', 'legacy', 'client', 'location', 'computer', 'manufacturer', 'version']
@@ -28,6 +29,5 @@ This dataview shows the BIOS boot type for machines, indicating whether they are
 | BIOS Name           | The name of the BIOS. This may display the model of the machine as well                        |
 | BIOS Version        | The BIOS version detected by Automate                                                           |
 | BIOS Type           | Using the [BIOS Type - Legacy](<../roles/BIOS Type - Legacy.md>) role, this will determine if the machine has the legacy or UEFI boot type |
-
 
 

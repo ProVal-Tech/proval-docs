@@ -1,5 +1,6 @@
 ---
 id: '1e1a92d4-008b-4b8e-af9d-3ff9579acb24'
+slug: /1e1a92d4-008b-4b8e-af9d-3ff9579acb24
 title: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
 title_meta: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
 keywords: ['duplicate', 'screenconnect', 'custom', 'property', 'vendor', 'restricted', 'access']
@@ -59,6 +60,5 @@ The system property `PropertyIndex` needs to be set before running the script.
 ## Output
 
 Script log messages only.
-
 
 

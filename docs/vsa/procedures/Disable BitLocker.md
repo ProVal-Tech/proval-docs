@@ -1,5 +1,6 @@
 ---
 id: '343354b6-6418-4e44-8544-52fe2fb0851a'
+slug: /343354b6-6418-4e44-8544-52fe2fb0851a
 title: 'Disable BitLocker'
 title_meta: 'Disable BitLocker'
 keywords: ['bitlocker', 'encryption', 'security', 'windows']
@@ -17,6 +18,5 @@ This document provides a script that disables BitLocker on all drives.
 Content is located in: **Shared > PVAL Content Source > BitLocker > Disable BitLocker**
 
 ![Image](../../../static/img/Disable-BitLocker/image_1.png)
-
 
 

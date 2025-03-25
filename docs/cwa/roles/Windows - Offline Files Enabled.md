@@ -1,5 +1,6 @@
 ---
 id: 'e6b2deb3-b9d1-4881-9c1b-192eced5ded7'
+slug: /e6b2deb3-b9d1-4881-9c1b-192eced5ded7
 title: 'Windows - Offline Files Enabled'
 title_meta: 'Windows - Offline Files Enabled'
 keywords: ['offline', 'files', 'windows', 'detection']
@@ -18,7 +19,6 @@ This document outlines a method to detect if offline files are enabled in Window
 | Detection String                                                                                       | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|--------|---------------|
 | \{%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2910ca09-a0c7-4b44-8ea4-ef6e71304df8'
+slug: /2910ca09-a0c7-4b44-8ea4-ef6e71304df8
 title: 'Queue Script Next Checkin'
 title_meta: 'Queue Script Next Checkin'
 keywords: ['script', 'offline', 'automate', 'queue', 'computer']
@@ -56,6 +57,5 @@ Run the [CWM - Automate - Script - Queue Script](<../cwa/scripts/Queue Script.md
 
 6. *I have been running this, and I am noticing that my scripting engine is suffering. What can I do?*  
    A silent parameter is present in the [CWM - Automate - Script - Run Queued Scripts](<../cwa/scripts/Run Queued Scripts.md>) script. Modify the [CWM - Automate - Script - Run Queued Scripts](<../cwa/scripts/Run Queued Scripts.md>) script, setting the script's global silent switch to 'Yes'. This will transfer the running of the queued scripts from the script engine to simply being called directly from the [CWM - Automate - Script - Run Queued Scripts](<../cwa/scripts/Run Queued Scripts.md>) script. Keep in mind this means that your queued scripts will not show up in the script history or on the computer's scripts page, and all logging for any script called in this manner will be displayed under the [CWM - Automate - Script - Run Queued Scripts](<../cwa/scripts/Run Queued Scripts.md>) log on the computer's script page.
-
 
 

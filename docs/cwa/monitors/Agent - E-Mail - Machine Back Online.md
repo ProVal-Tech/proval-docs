@@ -1,5 +1,6 @@
 ---
 id: '82c2d005-f115-4481-8c59-82b22526eafa'
+slug: /82c2d005-f115-4481-8c59-82b22526eafa
 title: 'Agent - E-Mail - Machine Back Online'
 title_meta: 'Agent - E-Mail - Machine Back Online'
 keywords: ['monitor', 'alert', 'connectwise', 'email', 'computer']
@@ -24,6 +25,5 @@ This monitor will alert on any computer that has checked in within the last 5 mi
 ## Target
 
 Global
-
 
 

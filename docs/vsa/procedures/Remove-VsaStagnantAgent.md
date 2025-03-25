@@ -1,5 +1,6 @@
 ---
 id: '94d707f3-894a-4c0d-a83a-e447cb5d83fd'
+slug: /94d707f3-894a-4c0d-a83a-e447cb5d83fd
 title: 'Remove-VsaStagnantAgent'
 title_meta: 'Remove-VsaStagnantAgent'
 keywords: ['vsa', 'agents', 'offline', 'removal', 'exclusion']
@@ -48,4 +49,3 @@ The location of output files for log, result, and error files is as follows:
 ```
 ## Attachments
 [Procedure_Stagnant_Agent_Removal_(Deprecated).xml](<../../../static/attachments/itg/10619887/Procedure_Stagnant_Agent_Removal_(Deprecated).xml>)
-

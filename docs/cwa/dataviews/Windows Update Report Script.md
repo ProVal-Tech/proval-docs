@@ -1,5 +1,6 @@
 ---
 id: '88f63da5-1a24-4545-b322-f6a3dfbc79cf'
+slug: /88f63da5-1a24-4545-b322-f6a3dfbc79cf
 title: 'Windows Update Report Script'
 title_meta: 'Windows Update Report Script'
 keywords: ['patches', 'windows', 'report', 'dataview', 'update', 'installed', 'available']
@@ -58,7 +59,6 @@ This dataview was created to display a detailed list of patches that are install
 | Recommended Memory              | Recommended Memory to install the Patch             |
 
 **Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
-
 
 
 

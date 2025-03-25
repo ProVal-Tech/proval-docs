@@ -1,5 +1,6 @@
 ---
 id: 'ab3118dc-bc06-4443-9af0-78ccfb594844'
+slug: /ab3118dc-bc06-4443-9af0-78ccfb594844
 title: 'ScreenConnect - Offline Agent Remediation Autofix,RMM+'
 title_meta: 'ScreenConnect - Offline Agent Remediation Autofix,RMM+'
 keywords: ['automate', 'agents', 'rmm', 'ticket', 'service', 'monitoring', 'offline', 'control']
@@ -90,6 +91,5 @@ It will clear the `AgentStatus` script state and will finish any open offline se
 - Script Log
 - Script State
 - Ticket
-
 
 

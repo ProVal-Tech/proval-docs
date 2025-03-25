@@ -1,5 +1,6 @@
 ---
 id: 'd6e5e2a7-ecb8-4262-92a1-cc322b4af3b6'
+slug: /d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6
 title: 'plugin_proval_ilo_health_report'
 title_meta: 'plugin_proval_ilo_health_report'
 keywords: ['hp', 'ilo', 'health', 'report', 'device', 'status']
@@ -51,6 +52,5 @@ This table stores health information about HP iLO devices. It is filled by the s
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
 | LastRun                      | DATETIME | The last time the script was run.                     |
 | Computerid                   | INT      | Computer ID.                                          |
-
 
 

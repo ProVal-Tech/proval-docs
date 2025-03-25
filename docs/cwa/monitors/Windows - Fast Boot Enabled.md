@@ -1,5 +1,6 @@
 ---
 id: '0598c4eb-e1c8-4b3a-8e49-7f654622f459'
+slug: /0598c4eb-e1c8-4b3a-8e49-7f654622f459
 title: 'Windows - Fast Boot Enabled'
 title_meta: 'Windows - Fast Boot Enabled'
 keywords: ['monitor', 'fast', 'boot', 'windows', 'disable']

@@ -1,5 +1,6 @@
 ---
 id: 'aaa3f8da-cfd3-454a-808b-d4501f9c2608'
+slug: /aaa3f8da-cfd3-454a-808b-d4501f9c2608
 title: 'Windows Update - Repair'
 title_meta: 'Windows Update - Repair'
 keywords: ['repair', 'windows', 'update', 'settings', 'script']
@@ -52,6 +53,5 @@ Note: Please whitelist the below filehash in the security application for the Po
 ## Output
 
 - Script Logs
-
 
 

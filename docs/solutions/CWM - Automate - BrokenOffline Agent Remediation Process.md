@@ -1,5 +1,6 @@
 ---
 id: '809aa131-6fd4-4016-88d9-795124823603'
+slug: /809aa131-6fd4-4016-88d9-795124823603
 title: 'CWM - Automate - BrokenOffline Agent Remediation Process'
 title_meta: 'CWM - Automate - BrokenOffline Agent Remediation Process'
 keywords: ['connectwise', 'agents', 'remediation', 'report', 'plugin']
@@ -27,7 +28,6 @@ It is essential to note that this solution relies on the CW RMM+ plugin and its 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
-
 
 
 

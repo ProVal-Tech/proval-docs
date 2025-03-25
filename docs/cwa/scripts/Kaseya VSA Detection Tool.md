@@ -1,5 +1,6 @@
 ---
 id: '765eb6aa-cc3a-471e-b11e-d7d8e1972e11'
+slug: /765eb6aa-cc3a-471e-b11e-d7d8e1972e11
 title: 'Kaseya VSA Detection Tool'
 title_meta: 'Kaseya VSA Detection Tool'
 keywords: ['vulnerability', 'scan', 'vsa', 'server', 'audit']
@@ -39,6 +40,5 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 - Script log
 - Script state
 - Dataview
-
 
 

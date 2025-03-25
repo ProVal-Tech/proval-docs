@@ -1,5 +1,6 @@
 ---
 id: '112efa12-e6aa-4086-b235-23b17193e1e0'
+slug: /112efa12-e6aa-4086-b235-23b17193e1e0
 title: 'Senteon - Install'
 title_meta: 'Senteon - Install'
 keywords: ['senteon', 'agent', 'install', 'endpoint', 'procedure']
@@ -44,6 +45,5 @@ Export the agent procedure from the ProVal VSA and import it into the partner VS
 
 **Existing Install**  
 ![Image](../../../static/img/Senteon---Install/image_4.png)  
-
 
 

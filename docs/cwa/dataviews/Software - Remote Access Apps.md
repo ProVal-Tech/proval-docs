@@ -1,5 +1,6 @@
 ---
 id: 'ff05755d-c0eb-4617-82fd-33e74e95b34c'
+slug: /ff05755d-c0eb-4617-82fd-33e74e95b34c
 title: 'Software - Remote Access Apps'
 title_meta: 'Software - Remote Access Apps'
 keywords: ['remote', 'access', 'software', 'installed', 'list']
@@ -59,6 +60,5 @@ The following remote software will be detected:
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
 | Remote Software    | List of remote software installed       |
-
 
 

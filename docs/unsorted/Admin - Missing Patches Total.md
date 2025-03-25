@@ -1,5 +1,6 @@
 ---
 id: 'afca866d-b468-437d-8555-5928d2bed089'
+slug: /afca866d-b468-437d-8555-5928d2bed089
 title: 'Admin - Missing Patches Total'
 title_meta: 'Admin - Missing Patches Total'
 keywords: ['patches', 'count', 'approval', 'missing', 'report', 'connectwise']
@@ -287,7 +288,6 @@ FROM
       approvalpolicycount = 0
   ) AS CountNotSet
 ```
-
 
 
 

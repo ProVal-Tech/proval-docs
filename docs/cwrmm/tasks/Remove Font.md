@@ -1,5 +1,6 @@
 ---
 id: 'c563d6fc-13b1-4cc5-9461-745e2a25b49d'
+slug: /c563d6fc-13b1-4cc5-9461-745e2a25b49d
 title: 'Remove Font'
 title_meta: 'Remove Font'
 keywords: ['remove', 'font', 'windows', 'script', 'uninstall']
@@ -174,5 +175,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 

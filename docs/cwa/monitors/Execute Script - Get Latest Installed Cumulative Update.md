@@ -1,5 +1,6 @@
 ---
 id: '4d2a667d-ba87-4148-ba5d-d6da484acccf'
+slug: /4d2a667d-ba87-4148-ba5d-d6da484acccf
 title: 'Execute Script - Get Latest Installed Cumulative Update'
 title_meta: 'Execute Script - Get Latest Installed Cumulative Update'
 keywords: ['monitor', 'cumulative', 'update', 'script', 'windows']
@@ -28,7 +29,6 @@ The SQL query limits the monitor set to the patch-managed supported Windows mach
 **Name:** △ Custom - Execute Script - Get Latest Installed Cumulative Update
 
 - The alert template should run the [CWM - Automate - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>) script.
-
 
 
 

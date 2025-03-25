@@ -1,5 +1,6 @@
 ---
 id: '5c6739bc-45a2-4011-99e1-f90581fa15ac'
+slug: /5c6739bc-45a2-4011-99e1-f90581fa15ac
 title: 'Windows - `Administrator` account process'
 title_meta: 'Windows - `Administrator` account process'
 keywords: ['administrator', 'account', 'enable', 'disable', 'password', 'script', 'client']
@@ -93,6 +94,5 @@ This script is designed to do the following:
 ## Output
 
 Script log messages
-
 
 

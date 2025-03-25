@@ -1,5 +1,6 @@
 ---
 id: '7b4d82e8-0234-4757-9c0b-e13146e28212'
+slug: /7b4d82e8-0234-4757-9c0b-e13146e28212
 title: 'Get-DCDiagReport'
 title_meta: 'Get-DCDiagReport'
 keywords: ['dcdiag', 'domain', 'controller', 'report']
@@ -44,5 +45,4 @@ Must be run on a domain controller.
 .\Get-DCDiagReport-error.txt
 <Specified Log File Path and fileName>
 ```
-
 

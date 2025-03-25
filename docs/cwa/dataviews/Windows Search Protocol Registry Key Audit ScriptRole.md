@@ -1,5 +1,6 @@
 ---
 id: '838ecfa5-0526-4c5d-845a-be4f21898c86'
+slug: /838ecfa5-0526-4c5d-845a-be4f21898c86
 title: 'Windows Search Protocol Registry Key Audit ScriptRole'
 title_meta: 'Windows Search Protocol Registry Key Audit ScriptRole'
 keywords: ['workaround', 'vulnerability', 'windows', 'search', 'protocol', 'monitor', 'script', 'tracking']
@@ -32,6 +33,5 @@ This dataview tracks the progress of the [Workaround - Windows Search Protocol V
 | lastcontact                   | Last contact time with the computer.                                                                  |
 | Search-MS Registry Status      | Value of the script state; indicates the Search-MS Registry Status.                                   |
 | Search-MS Registry Key Role    | Indicates whether the role is active, inactive, or has never been detected. Active: The registry key is currently present on the computer. Inactive: The registry key was once present on the computer, but the script has removed it. Not Detected: Either the registry key was not present on the computer from the beginning or the computer is not accepting the role. |
-
 
 

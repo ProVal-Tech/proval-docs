@@ -1,5 +1,6 @@
 ---
 id: '21a017d1-11e9-40ea-817f-d5503da5bfc8'
+slug: /21a017d1-11e9-40ea-817f-d5503da5bfc8
 title: 'Proval Maintenance'
 title_meta: 'Proval Maintenance'
 keywords: ['cleanup', 'automate', 'database', 'tickets', 'history', 'network', 'roles', 'contacts', 'events', 'patch']
@@ -54,6 +55,5 @@ This script cleans up many tables in the database, in the following order of ope
 10. Network device cleanup
 11. Inactive ticket status cleanup
 12. Patch manager history cleanup
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '9be930d0-0f3e-40c2-8135-3a77e59a1e9e'
+slug: /9be930d0-0f3e-40c2-8135-3a77e59a1e9e
 title: 'Reboot Pending Servers per client - Ticket Creation'
 title_meta: 'Reboot Pending Servers per client - Ticket Creation'
 keywords: ['ticket', 'server', 'reboot', 'client', 'management', 'pending', 'automation']
@@ -35,6 +36,5 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level Ticket:**  
 ![Computer-Level Ticket](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Creation/image_3.png)
-
 
 

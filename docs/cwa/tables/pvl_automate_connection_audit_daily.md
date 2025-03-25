@@ -1,5 +1,6 @@
 ---
 id: 'da608773-1677-4247-a161-ea62b3b3ba23'
+slug: /da608773-1677-4247-a161-ea62b3b3ba23
 title: 'pvl_automate_connection_audit_daily'
 title_meta: 'pvl_automate_connection_audit_daily'
 keywords: ['connection', 'audit', 'table', 'automate', 'offline', 'online', 'data', 'collection']
@@ -31,7 +32,6 @@ The script will start adding data to this table 24 hours after the first entry i
 | online              | int      | Number of minutes it was online in the last 24 hours |
 | offline             | int      | Number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | Data collection time for the respective entry        |
-
 
 
 

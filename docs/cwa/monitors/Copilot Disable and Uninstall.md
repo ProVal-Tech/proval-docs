@@ -1,5 +1,6 @@
 ---
 id: 'd87e16ae-34f2-43ba-a84d-061abc69d716'
+slug: /d87e16ae-34f2-43ba-a84d-061abc69d716
 title: 'Copilot Disable and Uninstall'
 title_meta: 'Copilot Disable and Uninstall'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
@@ -33,4 +34,3 @@ Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
 ## Target
 
 Global
-

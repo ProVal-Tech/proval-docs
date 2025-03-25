@@ -1,5 +1,6 @@
 ---
 id: '10055a68-f513-4580-bdc1-73272516866f'
+slug: /10055a68-f513-4580-bdc1-73272516866f
 title: 'Disable SMB1'
 title_meta: 'Disable SMB1'
 keywords: ['smb1', 'protocol', 'disable', 'windows', 'security']
@@ -175,7 +176,6 @@ It is suggested to run the task once per week against Windows computers.
 ## Output
 
 - Script log
-
 
 
 

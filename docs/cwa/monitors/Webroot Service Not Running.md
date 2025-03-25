@@ -1,5 +1,6 @@
 ---
 id: '3d7c4b8a-0f64-4af2-a8ef-bf85bb8d7194'
+slug: /3d7c4b8a-0f64-4af2-a8ef-bf85bb8d7194
 title: 'Webroot Service Not Running'
 title_meta: 'Webroot Service Not Running'
 keywords: ['webroot', 'alerts', 'service', 'connectwise', 'monitoring']

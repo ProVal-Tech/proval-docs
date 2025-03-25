@@ -1,5 +1,6 @@
 ---
 id: '7a5a36e2-53b5-4a14-aa2b-0b214ac40767'
+slug: /7a5a36e2-53b5-4a14-aa2b-0b214ac40767
 title: 'Adobe License Detail'
 title_meta: 'Adobe License Detail'
 keywords: ['adobe', 'license', 'edf', 'windows', 'sqlite3']

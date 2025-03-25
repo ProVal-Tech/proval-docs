@@ -1,5 +1,6 @@
 ---
 id: '1909b914-8e27-4487-ae47-0d28ad848a5b'
+slug: /1909b914-8e27-4487-ae47-0d28ad848a5b
 title: 'Chromium Browsers Address Autofill Lockdown - Status'
 title_meta: 'Chromium Browsers Address Autofill Lockdown - Status'
 keywords: ['lockdown', 'browsers', 'autofill', 'status', 'chromium']
@@ -34,6 +35,5 @@ The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer 
 | Last Contact                                  | Last Contact with RMM                                                                           |
 | Last Logged In User                           | Last Logged In User                                                                              |
 | Credit Cards and Addresses Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for addresses in the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
-
 
 

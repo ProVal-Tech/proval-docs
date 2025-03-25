@@ -1,5 +1,6 @@
 ---
 id: '24509826-3f15-4594-8bb2-4f801709720b'
+slug: /24509826-3f15-4594-8bb2-4f801709720b
 title: 'Infrastructure Master - Without Recycle Bin'
 title_meta: 'Infrastructure Master - Without Recycle Bin'
 keywords: ['windows', 'infrastructure', 'recycle', 'bin', 'ad', 'group', 'criteria']
@@ -42,7 +43,6 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_3.png)
 
 ![Image](../../../static/img/Infrastructure-Master---Without-Recycle-Bin/image_4.png)
-
 
 
 

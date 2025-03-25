@@ -1,5 +1,6 @@
 ---
 id: 'ee5b1d9e-eabf-4be4-ad8c-6192b5223cbb'
+slug: /ee5b1d9e-eabf-4be4-ad8c-6192b5223cbb
 title: 'Azure AD Status'
 title_meta: 'Azure AD Status'
 keywords: ['azure', 'ad', 'status', 'check', 'procedure', 'machine']
@@ -46,7 +47,6 @@ Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM 
 ## Output
 
 Procedure log files and custom fields.
-
 
 
 

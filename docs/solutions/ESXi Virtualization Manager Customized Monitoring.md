@@ -1,5 +1,6 @@
 ---
 id: 'deb78496-0147-4a1b-b368-3b3113f9cf5b'
+slug: /deb78496-0147-4a1b-b368-3b3113f9cf5b
 title: 'ESXi Virtualization Manager Customized Monitoring'
 title_meta: 'ESXi Virtualization Manager Customized Monitoring'
 keywords: ['monitors', 'virtualization', 'esxi', 'alert', 'dataview']
@@ -101,7 +102,6 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
 **A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](<../unsorted/VMware Host Not Detected in Virtualization Manager Plugin.md>)
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '5606850a-c68e-4b15-b183-399cded6e601'
+slug: /5606850a-c68e-4b15-b183-399cded6e601
 title: 'Script Effectiveness Performance Audit'
 title_meta: 'Script Effectiveness Performance Audit'
 keywords: ['script', 'log', 'summary', 'retention', 'performance']
@@ -48,6 +49,5 @@ The script log retention days can be seen at the Automate location below:
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/Script-Effectiveness-Performance-Audit/image_2.png)
-
 
 

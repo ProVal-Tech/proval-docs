@@ -1,5 +1,6 @@
 ---
 id: 'ebb1d05a-bb80-45e7-a4be-9cc73b8f308d'
+slug: /ebb1d05a-bb80-45e7-a4be-9cc73b8f308d
 title: 'plugin_proval_restore_points'
 title_meta: 'plugin_proval_restore_points'
 keywords: ['windows', 'restore', 'points', 'information', 'audit']
@@ -28,6 +29,5 @@ This document stores information about Windows restore points.
 | RestorePointDate       | DATETIME | The date that the audited restore point was taken.         |
 | RestorePointDescription | VARCHAR  | The description of the audited restore point.              |
 | SequenceNumber         | INT      | The number of previous sequences that this restore point has been through. |
-
 
 

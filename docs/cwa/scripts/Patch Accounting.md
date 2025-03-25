@@ -1,5 +1,6 @@
 ---
 id: '53163c7a-3281-4825-ba22-4e22c8c5b35e'
+slug: /53163c7a-3281-4825-ba22-4e22c8c5b35e
 title: 'Patch Accounting'
 title_meta: 'Patch Accounting'
 keywords: ['patch', 'tickets', 'billing', 'time', 'jobs']
@@ -31,6 +32,5 @@ This script is called by the default script "Client Scheduled Patch Accounting W
 This script will add the time to the ticket created.
 
 ![Output Image](../../../static/img/Patch-Accounting/image_2.png)
-
 
 

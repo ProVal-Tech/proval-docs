@@ -1,5 +1,6 @@
 ---
 id: 'bdea3d9e-acca-4b87-96a6-632c488fef1f'
+slug: /bdea3d9e-acca-4b87-96a6-632c488fef1f
 title: 'Cyrisma Sensor'
 title_meta: 'Cyrisma Sensor'
 keywords: ['cyrisma', 'sensor', 'deployment', 'audit', 'monitor', 'dynamic', 'groups']
@@ -58,6 +59,5 @@ Create Dynamic Groups:
    Criteria:
 
    - Installed Software contains any of 'CYRISMA'
-
 
 

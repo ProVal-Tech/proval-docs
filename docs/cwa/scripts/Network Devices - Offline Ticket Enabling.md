@@ -1,5 +1,6 @@
 ---
 id: 'c630e0b8-da8d-4188-aa83-4c4c7e421d92'
+slug: /c630e0b8-da8d-4188-aa83-4c4c7e421d92
 title: 'Network Devices - Offline Ticket Enabling'
 title_meta: 'Network Devices - Offline Ticket Enabling'
 keywords: ['alert', 'template', 'offline', 'network', 'devices', 'ticket', 'creation']
@@ -94,6 +95,5 @@ Device-Level EDFs:
 ## Output
 
 - Script log
-
 
 

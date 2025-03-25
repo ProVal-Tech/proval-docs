@@ -1,5 +1,6 @@
 ---
 id: '19787a52-3223-44e1-8670-ecf74f1b415c'
+slug: /19787a52-3223-44e1-8670-ecf74f1b415c
 title: 'Backup ScriptsMonitorsCustomizations'
 title_meta: 'Backup ScriptsMonitorsCustomizations'
 keywords: ['backup', 'customizations', 'export', 'scripts', 'monitoring', 'dataviews', 'role', 'virus']
@@ -80,7 +81,6 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
-
 
 
 

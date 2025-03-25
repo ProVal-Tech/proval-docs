@@ -1,5 +1,6 @@
 ---
 id: '52caa288-ae6c-4047-a2d1-6d34b806d673'
+slug: /52caa288-ae6c-4047-a2d1-6d34b806d673
 title: 'MSRT Scanner Execute'
 title_meta: 'MSRT Scanner Execute'
 keywords: ['monitor', 'msrt', 'scanner', 'windows', 'agents', 'audit']
@@ -39,6 +40,5 @@ OR
 
 MSRT Scan Report Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the logs below:  
 @ScanResult@. The Autofix extended scan of the computer, which automatically cleans any infections that are found, is scheduled.
-
 
 

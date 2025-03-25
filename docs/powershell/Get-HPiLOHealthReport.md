@@ -1,5 +1,6 @@
 ---
 id: '71faa943-e504-4e87-b8d1-39471af44780'
+slug: /71faa943-e504-4e87-b8d1-39471af44780
 title: 'Get-HPiLOHealthReport'
 title_meta: 'Get-HPiLOHealthReport'
 keywords: ['hp', 'ilo', 'health', 'report']
@@ -149,6 +150,5 @@ UUID        Property   string UUID {get;set;}
 .\Get-HPiLOHealthReport-log.txt
 .\Get-HPiLOHealthReport-error.txt
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '6c4f37b4-d460-464b-bc03-fd1d46be2b0a'
+slug: /6c4f37b4-d460-464b-bc03-fd1d46be2b0a
 title: 'Import - Unresponsive Huntress Agents'
 title_meta: 'Import - Unresponsive Huntress Agents'
 keywords: ['huntress', 'monitor', 'sql', 'alert', 'setup']

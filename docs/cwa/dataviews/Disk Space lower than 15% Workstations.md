@@ -1,5 +1,6 @@
 ---
 id: 'bef71b31-db27-419c-aa73-3431b77959f2'
+slug: /bef71b31-db27-419c-aa73-3431b77959f2
 title: 'Disk Space lower than 15% Workstations'
 title_meta: 'Disk Space lower than 15% Workstations'
 keywords: ['machines', 'drive', 'space', 'low', 'monitoring']
@@ -31,6 +32,5 @@ None
 | Drive Type                | Type of drive (virtual drive, physical)         |
 | Operating System          | OS of the machine                                |
 | Agent Last Contact Date   | Last time the agent checked into Automate        |
-
 
 

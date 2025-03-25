@@ -1,5 +1,6 @@
 ---
 id: '2b4f5b7f-0275-4114-8686-0084c1741c9d'
+slug: /2b4f5b7f-0275-4114-8686-0084c1741c9d
 title: 'Webroot'
 title_meta: 'Webroot'
 keywords: ['webroot', 'antivirus', 'endpoint', 'protection', 'installation', 'removal', 'plugin', 'configuration', 'audit', 'deployment']
@@ -92,6 +93,5 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 #### Implementation Setup
 
 Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](<../cwa/scripts/Webroot Keycode Verification.md>) and run it.
-
 
 

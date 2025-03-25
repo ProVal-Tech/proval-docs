@@ -1,5 +1,6 @@
 ---
 id: '372dfa84-9e1d-4e86-9a1b-8c8904d3a489'
+slug: /372dfa84-9e1d-4e86-9a1b-8c8904d3a489
 title: 'Windows Firewall Private'
 title_meta: 'Windows Firewall Private'
 keywords: ['firewall', 'detection', 'private', 'security', 'windows']
@@ -18,7 +19,6 @@ This role detects if the 'Private' firewall is enabled on the machine. If so, th
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | \{%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |
-
 
 
 

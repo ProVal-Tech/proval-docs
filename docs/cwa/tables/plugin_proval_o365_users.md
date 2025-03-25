@@ -1,5 +1,6 @@
 ---
 id: 'b6256c5a-da00-4a11-91b1-819bc770349a'
+slug: /b6256c5a-da00-4a11-91b1-819bc770349a
 title: 'plugin_proval_o365_users'
 title_meta: 'plugin_proval_o365_users'
 keywords: ['o365', 'audit', 'users', 'custom', 'table', 'information', 'baseline']
@@ -29,6 +30,5 @@ The script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Us
 | IsLicensed   | CHAR | Indicates whether the user is licensed (True or False).        |
 | 2FAStatus   | CHAR | A string denoting the type of 2FA set up on the account.       |
 | ContactID   | INT  | The ContactID associated with the O365 user. Will be NULL if a match cannot be found. |
-
 
 

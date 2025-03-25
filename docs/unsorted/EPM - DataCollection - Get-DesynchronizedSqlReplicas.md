@@ -1,5 +1,6 @@
 ---
 id: '4f479c3c-88e1-434c-a66b-5683fe8fbc5f'
+slug: /4f479c3c-88e1-434c-a66b-5683fe8fbc5f
 title: 'EPM - DataCollection - Get-DesynchronizedSqlReplicas'
 title_meta: 'EPM - DataCollection - Get-DesynchronizedSqlReplicas'
 keywords: ['sql', 'replication', 'desynchronized', 'database', 'status']
@@ -51,4 +52,3 @@ This command returns a list of all SQL replication instances that are not synchr
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10361486/Install-AnyConnect.ps1>)
 [README.md](<../../static/attachments/itg/10361486/README.md>)
-

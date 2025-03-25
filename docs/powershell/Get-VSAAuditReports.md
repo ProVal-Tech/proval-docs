@@ -1,5 +1,6 @@
 ---
 id: 'f5181d46-745b-44a0-a154-0f83648e6a50'
+slug: /f5181d46-745b-44a0-a154-0f83648e6a50
 title: 'Get-VSAAuditReports'
 title_meta: 'Get-VSAAuditReports'
 keywords: ['kaseya', 'audit', 'report', 'excel']
@@ -92,6 +93,5 @@ Location of output for log, result, and error files:
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementByAgentStats.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementDeploymentProfiles.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\Users.csv`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'd920b865-7887-41b6-9fcd-b4802832d2a9'
+slug: /d920b865-7887-41b6-9fcd-b4802832d2a9
 title: 'CW RMM Script - BitLocker Initialize C Volume'
 title_meta: 'CW RMM Script - BitLocker Initialize C Volume'
 keywords: ['bitlocker', 'encryption', 'windows', 'security', 'c-volume']
@@ -419,7 +420,6 @@ In this window, search for the `ACP BitLocker INIT Result` field.
 **Custom Field:** `ACP BitLocker INIT Result`  
 **Value:** `%Output%`  
 ![Row 13 Custom Field](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_40.png)  
-
 
 
 

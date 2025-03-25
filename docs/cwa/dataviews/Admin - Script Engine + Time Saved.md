@@ -1,5 +1,6 @@
 ---
 id: '8400474b-2cf7-4edb-a189-58f7e85ddb00'
+slug: /8400474b-2cf7-4edb-a189-58f7e85ddb00
 title: 'Admin - Script Engine + Time Saved'
 title_meta: 'Admin - Script Engine + Time Saved'
 keywords: ['scripts', 'metrics', 'automation', 'performance', 'execution']
@@ -35,6 +36,5 @@ This dataview displays metrics on how scripts are running in the environment. It
 | Total Automation Time Minutes (Hidden by default) | This is the total time in minutes not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                                      |
 | Recent Automation Time Minutes (Hidden by default) | This is the most recent time in minutes not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                                  |
 | Average Daily Time Minutes               | This is the average time per day, in minutes, and is not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                   |
-
 
 

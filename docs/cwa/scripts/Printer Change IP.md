@@ -1,5 +1,6 @@
 ---
 id: '631186de-253a-4bd7-8197-958cb1ed7b68'
+slug: /631186de-253a-4bd7-8197-958cb1ed7b68
 title: 'Printer Change IP'
 title_meta: 'Printer Change IP'
 keywords: ['printer', 'ip', 'change', 'networking']
@@ -41,6 +42,5 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 ## Output
 
 - Script log
-
 
 

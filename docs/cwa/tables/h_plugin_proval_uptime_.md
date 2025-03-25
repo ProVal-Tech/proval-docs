@@ -1,5 +1,6 @@
 ---
 id: 'b3a711f5-7e0f-4b8a-948c-19cf5721539e'
+slug: /b3a711f5-7e0f-4b8a-948c-19cf5721539e
 title: 'h_plugin_proval_uptime_'
 title_meta: 'h_plugin_proval_uptime_'
 keywords: ['connectwise', 'uptime', 'measurement', 'database', 'events']
@@ -34,6 +35,5 @@ These tables are populated by the events `ProvalUptime` and `ProvalUptimeDays`. 
 | ComputerID    | INT      | The ComputerID of the measured agent.                 |
 | PercentOnline  | DOUBLE   | The percentage of time that the agent was online on the specified SampleDate. |
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
-
 
 

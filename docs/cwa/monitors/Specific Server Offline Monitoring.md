@@ -1,5 +1,6 @@
 ---
 id: '83c2cbf7-c495-4e82-9895-133d918e69db'
+slug: /83c2cbf7-c495-4e82-9895-133d918e69db
 title: 'Specific Server Offline Monitoring'
 title_meta: 'Specific Server Offline Monitoring'
 keywords: ['monitor', 'offline', 'servers', 'edf']

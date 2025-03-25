@@ -1,5 +1,6 @@
 ---
 id: '7981530c-3eaa-4030-8382-4f4d812f3d01'
+slug: /7981530c-3eaa-4030-8382-4f4d812f3d01
 title: 'Chromium Extension Audit'
 title_meta: 'Chromium Extension Audit'
 keywords: ['chromium', 'extensions', 'audit', 'endpoint', 'inventory']
@@ -60,6 +61,5 @@ Runs the agnostic script to collect Chromium extensions installed on an endpoint
 
 - Agent Procedure Log  
 - Custom Field: xPVAL Chromium Extensions Installed
-
 
 

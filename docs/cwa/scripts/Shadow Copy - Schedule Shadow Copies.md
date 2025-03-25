@@ -1,5 +1,6 @@
 ---
 id: 'f16b700f-16c7-43f9-8470-84861d7f5c52'
+slug: /f16b700f-16c7-43f9-8470-84861d7f5c52
 title: 'Shadow Copy - Schedule Shadow Copies'
 title_meta: 'Shadow Copy - Schedule Shadow Copies'
 keywords: ['shadow', 'copy', 'task', 'scheduler', 'windows', 'backup']
@@ -42,6 +43,5 @@ Once the global parameters are configured to the desired values, the script will
 ## Output
 
 Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '2fae0a5f-761c-40ac-ab74-6b994f9ee265'
+slug: /2fae0a5f-761c-40ac-ab74-6b994f9ee265
 title: 'Agents Missing Duo G'
 title_meta: 'Agents Missing Duo G'
 keywords: ['duo', 'edfs', 'clients', 'installation', 'mfa']
@@ -20,6 +21,5 @@ This document targets clients with EDFs enabled for the installation of DUO whil
 ## Target
 
 Global - Uses EDFs to scope agents/clients.
-
 
 

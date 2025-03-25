@@ -1,5 +1,6 @@
 ---
 id: 'c03e4def-7efe-4a8b-99e9-d99ac2c65f5a'
+slug: /c03e4def-7efe-4a8b-99e9-d99ac2c65f5a
 title: 'pvl_win_latest_installed_cu'
 title_meta: 'pvl_win_latest_installed_cu'
 keywords: ['cumulative', 'update', 'data', 'installed', 'script']
@@ -29,7 +30,6 @@ Stores the data fetched by the [CWM - Automate - Script - Get Latest Installed C
 | ScriptRunTime  | datetime    | Last run time of the script                       |
 | KBid           | varchar(128)| KBID of the latest installed Cumulative Update    |
 | ReleaseDate    | date        | Release date of the latest installed Cumulative Update |
-
 
 
 

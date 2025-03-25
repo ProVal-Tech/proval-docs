@@ -1,5 +1,6 @@
 ---
 id: '0de90f98-d7ae-4a79-a851-30829a596846'
+slug: /0de90f98-d7ae-4a79-a851-30829a596846
 title: 'Vssadmin List Storage Audit'
 title_meta: 'Vssadmin List Storage Audit'
 keywords: ['vssadmin', 'storage', 'audit', 'volume', 'details']
@@ -40,6 +41,5 @@ The location and method by which this script returns data:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
-
 
 

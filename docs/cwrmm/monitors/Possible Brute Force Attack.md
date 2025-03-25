@@ -1,5 +1,6 @@
 ---
 id: '3691bc36-640e-4d39-8a41-0513d44c7d41'
+slug: /3691bc36-640e-4d39-8a41-0513d44c7d41
 title: 'Possible Brute Force Attack'
 title_meta: 'Possible Brute Force Attack'
 keywords: ['brute', 'force', 'attack', 'monitor', 'security', 'event', 'log', 'id', '4625']
@@ -186,6 +187,5 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
 Action: Please have the issue reviewed by a technician.
-
 
 

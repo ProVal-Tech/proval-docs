@@ -1,5 +1,6 @@
 ---
 id: 'd1791eba-107c-4be0-8048-a1d716dae301'
+slug: /d1791eba-107c-4be0-8048-a1d716dae301
 title: 'pvl_windows_updates'
 title_meta: 'pvl_windows_updates'
 keywords: ['windows', 'update', 'history', 'agents', 'audit']
@@ -56,7 +57,6 @@ Populating script: [EPM - Script - Windows Update History Audit](<../scripts/Win
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
-
 
 
 

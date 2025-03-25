@@ -1,5 +1,6 @@
 ---
 id: '369dac26-3df5-4591-8d51-47fc1cd7204c'
+slug: /369dac26-3df5-4591-8d51-47fc1cd7204c
 title: 'Bitlocker - OS Volume Encryption Disabled'
 title_meta: 'Bitlocker - OS Volume Encryption Disabled'
 keywords: ['bitlocker', 'monitoring', 'encryption', 'security', 'compliance']
@@ -93,7 +94,6 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/Bitlocker---OS-Volume-Encryption-Disabled/image_1.png)
-
 
 
 

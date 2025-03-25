@@ -1,5 +1,6 @@
 ---
 id: '992bde06-574b-4b3a-a442-6962736a18d2'
+slug: /992bde06-574b-4b3a-a442-6962736a18d2
 title: 'Get-BatteryReport'
 title_meta: 'Get-BatteryReport'
 keywords: ['battery', 'report', 'powercfg', 'system']
@@ -105,7 +106,6 @@ Returns a system object containing all data from the generated battery report.
         StartFullChargeCapacity
         StartTimestamp
 ```
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: '9bf78320-a260-41ed-9acc-3b8d31f70174'
+slug: /9bf78320-a260-41ed-9acc-3b8d31f70174
 title: 'CVE 2021 1675 KB Installed and Mitigation Performed Agent Detection'
 title_meta: 'CVE 2021 1675 KB Installed and Mitigation Performed Agent Detection'
 keywords: ['cve', 'monitor', 'agents', 'exploit', 'patch']
@@ -21,6 +22,5 @@ This monitor will detect agents where the CVE-2021-1675 patch has been installed
 ## Target
 
 Global
-
 
 

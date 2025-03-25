@@ -1,5 +1,6 @@
 ---
 id: '1b448856-c7d6-4aed-8080-474f5650a070'
+slug: /1b448856-c7d6-4aed-8080-474f5650a070
 title: 'xPVAL Windows Feature Upgrade Status'
 title_meta: 'xPVAL Windows Feature Upgrade Status'
 keywords: ['windows', 'upgrade', 'status', 'feature', 'script']
@@ -19,6 +20,5 @@ unlisted: false
 | Failure               | Set when installState = 2                                   |
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
-
 
 

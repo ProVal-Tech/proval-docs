@@ -1,5 +1,6 @@
 ---
 id: '8e53a0ed-4b8a-4aec-9d92-99423964f53c'
+slug: /8e53a0ed-4b8a-4aec-9d92-99423964f53c
 title: 'DNS Assignments'
 title_meta: 'DNS Assignments'
 keywords: ['network', 'adapter', 'settings', 'dns', 'ipaddress', 'gateway', 'status']
@@ -44,6 +45,5 @@ This document provides a display of a device's active network adapter and its as
 | MTU             | The found MTU for the adapter.                       |
 | Bytes Sent      | The number of bytes sent as seen on the adapter.     |
 | Bytes Rec       | The number of bytes received on the adapter.         |
-
 
 

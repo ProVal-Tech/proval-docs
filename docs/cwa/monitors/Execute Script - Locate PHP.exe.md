@@ -1,5 +1,6 @@
 ---
 id: '20be21ac-550d-478e-b486-34d2879725e0'
+slug: /20be21ac-550d-478e-b486-34d2879725e0
 title: 'Execute Script - Locate PHP.exe'
 title_meta: 'Execute Script - Locate PHP.exe'
 keywords: ['php', 'execution', 'script', 'windows', 'computers']
@@ -25,6 +26,5 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Find PHP.exe`
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '1530b61c-9bba-406b-9451-0b998c9e8d54'
+slug: /1530b61c-9bba-406b-9451-0b998c9e8d54
 title: 'Solution - Windows Cluster Shared Volume'
 title_meta: 'Solution - Windows Cluster Shared Volume'
 keywords: ['monitoring', 'auditing', 'cluster', 'volume', 'hyperv', 'disk', 'space', 'alert', 'ticket']

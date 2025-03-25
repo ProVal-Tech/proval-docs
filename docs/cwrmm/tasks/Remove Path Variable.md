@@ -1,5 +1,6 @@
 ---
 id: '3d2491ec-2965-4101-8e89-5a51e3fba641'
+slug: /3d2491ec-2965-4101-8e89-5a51e3fba641
 title: 'Remove Path Variable'
 title_meta: 'Remove Path Variable'
 keywords: ['environment', 'path', 'variable', 'remove', 'script', 'machine']
@@ -167,5 +168,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 

@@ -1,5 +1,6 @@
 ---
 id: '3c6d0ec7-4954-4116-b8ba-329c13cd2143'
+slug: /3c6d0ec7-4954-4116-b8ba-329c13cd2143
 title: 'Bitlocker Initialize Failure Audit Script'
 title_meta: 'Bitlocker Initialize Failure Audit Script'
 keywords: ['bitlocker', 'failure', 'records', 'autofix', 'script']
@@ -27,6 +28,5 @@ This dataview contains the computer records where BitLocker initialization faile
 | Operating System          | Operating system name of the agent                    |
 | Last Contact              | Last contact of the agent with the CW Automate       |
 | Number of Failed Attempts  | The count of BitLocker initialization failure attempts |
-
 
 

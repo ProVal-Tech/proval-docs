@@ -1,5 +1,6 @@
 ---
 id: '494f7109-e4b2-4ffa-93f8-e33089b09b4e'
+slug: /494f7109-e4b2-4ffa-93f8-e33089b09b4e
 title: 'Remove Application'
 title_meta: 'Remove Application'
 keywords: ['uninstall', 'software', 'bloatware', 'ticketing', 'error', 'log']
@@ -104,6 +105,5 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 **Example:**  
 ![Ticketing Example](../../../static/img/Remove-Application/image_8.png)
-
 
 

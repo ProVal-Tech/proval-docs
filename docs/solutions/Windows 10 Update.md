@@ -1,5 +1,6 @@
 ---
 id: '16c09937-d57e-4d56-8367-fb5551d1c386'
+slug: /16c09937-d57e-4d56-8367-fb5551d1c386
 title: 'Windows 10 Update'
 title_meta: 'Windows 10 Update'
 keywords: ['windows', 'update', 'installation', 'report', 'alert', 'monitoring']
@@ -64,7 +65,6 @@ For a manual run:
 
 4. **The Windows 10 - Feature Update - Install Latest script is failing at line 13.**
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
-
 
 
 

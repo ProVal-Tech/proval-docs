@@ -1,5 +1,6 @@
 ---
 id: '1045cfa0-257d-41a2-9a3f-a15837939b4f'
+slug: /1045cfa0-257d-41a2-9a3f-a15837939b4f
 title: 'Certificate Audit Solution'
 title_meta: 'Certificate Audit Solution'
 keywords: ['certificate', 'audit', 'monitoring', 'ssl', 'expiration', 'alert', 'dataview']
@@ -98,6 +99,5 @@ The purpose of this solution is to pull meaningful certificate information into 
    - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
-
 
 

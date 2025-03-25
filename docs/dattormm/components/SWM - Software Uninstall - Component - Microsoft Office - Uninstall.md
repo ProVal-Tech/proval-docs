@@ -1,5 +1,6 @@
 ---
 id: 'e2ca200f-885f-412e-b214-f798bb47ea67'
+slug: /e2ca200f-885f-412e-b214-f798bb47ea67
 title: 'SWM - Software Uninstall - Component - Microsoft Office - Uninstall'
 title_meta: 'SWM - Software Uninstall - Component - Microsoft Office - Uninstall'
 keywords: ['uninstall', 'microsoft', 'office', 'utility', 'component']
@@ -48,6 +49,5 @@ StdOut is not expected.
 
 **StdErr**  
 StdErr is not expected.  
-
 
 

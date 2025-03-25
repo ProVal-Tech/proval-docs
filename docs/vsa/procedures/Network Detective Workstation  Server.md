@@ -1,5 +1,6 @@
 ---
 id: '6c3d68e8-61cd-4e74-a13f-d6be1516feec'
+slug: /6c3d68e8-61cd-4e74-a13f-d6be1516feec
 title: 'Network Detective Workstation  Server'
 title_meta: 'Network Detective Workstation  Server'
 keywords: ['network', 'detective', 'scan', 'results', 'procedure', 'admin']
@@ -1722,6 +1723,5 @@ Directory: VSASharedFiles/Procedures/Network Detective
     }
 ]
 ```
-
 
 

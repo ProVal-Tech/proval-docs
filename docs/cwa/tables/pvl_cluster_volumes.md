@@ -1,5 +1,6 @@
 ---
 id: '746629d0-d1de-4a90-840d-135cf1063776'
+slug: /746629d0-d1de-4a90-840d-135cf1063776
 title: 'pvl_cluster_volumes'
 title_meta: 'pvl_cluster_volumes'
 keywords: ['hyperv', 'cluster', 'disk', 'audit', 'report']
@@ -31,6 +32,5 @@ The purpose of this document is to store the audit report of the cluster disk sp
 | UsedSpace     | INT      | The used space on the cluster disk in the Hyper-V cluster server                                  |
 | PercentFree   | INT      | The available space on the cluster disk expressed as a percentage in the Hyper-V cluster server  |
 | ScriptRunTime | DATETIME | The script's last run date, indicating when the latest audit was performed via the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) |
-
 
 

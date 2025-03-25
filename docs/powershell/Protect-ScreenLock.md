@@ -1,5 +1,6 @@
 ---
 id: '9c89e293-7f28-4e7c-936f-e285b04e8df0'
+slug: /9c89e293-7f28-4e7c-936f-e285b04e8df0
 title: 'Protect-ScreenLock'
 title_meta: 'Protect-ScreenLock'
 keywords: ['screenlock', 'screensaver', 'timeout', 'security']
@@ -74,6 +75,5 @@ Location of output for log, result, and error files.
 .\gpresult_computer.html
 .\gpresult_user.html
 ```
-
 
 

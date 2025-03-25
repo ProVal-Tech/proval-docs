@@ -1,5 +1,6 @@
 ---
 id: '454d77d4-5cbf-4773-bad1-63a47cfd4342'
+slug: /454d77d4-5cbf-4773-bad1-63a47cfd4342
 title: 'Import- Windows Fast Boot disable Change'
 title_meta: 'Import- Windows Fast Boot disable Change'
 keywords: ['windows', 'monitor', 'remote', 'fast', 'boot', 'disable', 'groupid', 'alert', 'template']

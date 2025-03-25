@@ -1,5 +1,6 @@
 ---
 id: 'e413063b-7bce-4a4e-99ce-daea264d6ac6'
+slug: /e413063b-7bce-4a4e-99ce-daea264d6ac6
 title: 'ESXi Invalid License Detected'
 title_meta: 'ESXi Invalid License Detected'
 keywords: ['esxi', 'monitoring', 'license', 'ticketing', 'alert']
@@ -34,6 +35,5 @@ Global
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
 **The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) **script on failure.**
-
 
 

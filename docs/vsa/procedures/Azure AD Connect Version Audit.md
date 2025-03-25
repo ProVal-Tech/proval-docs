@@ -1,5 +1,6 @@
 ---
 id: 'ee5f96bd-884f-4b2e-af03-9aece0e37d67'
+slug: /ee5f96bd-884f-4b2e-af03-9aece0e37d67
 title: 'Azure AD Connect Version Audit'
 title_meta: 'Azure AD Connect Version Audit'
 keywords: ['azure', 'ad', 'connect', 'version', 'audit', 'custom', 'field']
@@ -71,7 +72,6 @@ Document the various variables in the script. Delete any section that is not rel
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
-
 
 
 

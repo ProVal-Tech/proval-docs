@@ -1,5 +1,6 @@
 ---
 id: 'c3e9e7df-9e35-46ab-bca6-a182331ca211'
+slug: /c3e9e7df-9e35-46ab-bca6-a182331ca211
 title: 'EPM - Network - Internal Network - Execute Script - Get - DNS Assignments'
 title_meta: 'EPM - Network - Internal Network - Execute Script - Get - DNS Assignments'
 keywords: ['dns', 'network', 'script', 'assignments', 'dataview']
@@ -25,7 +26,6 @@ Managed Windows Servers and Workstations
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get - DNS Assignments`
-
 
 
 

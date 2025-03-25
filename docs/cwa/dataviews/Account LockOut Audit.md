@@ -1,5 +1,6 @@
 ---
 id: '40cf6430-7ec1-496c-8e6e-b92a499120e6'
+slug: /40cf6430-7ec1-496c-8e6e-b92a499120e6
 title: 'Account LockOut Audit'
 title_meta: 'Account LockOut Audit'
 keywords: ['account', 'lock', 'user', 'details', 'local', 'domain']

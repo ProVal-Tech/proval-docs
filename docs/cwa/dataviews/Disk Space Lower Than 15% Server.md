@@ -1,5 +1,6 @@
 ---
 id: '9d50d408-076d-4ed3-9a70-c2ff4f9c980b'
+slug: /9d50d408-076d-4ed3-9a70-c2ff4f9c980b
 title: 'Disk Space Lower Than 15% Server'
 title_meta: 'Disk Space Lower Than 15% Server'
 keywords: ['server', 'drives', 'free', 'space', 'monitoring']
@@ -51,7 +52,6 @@ None
 | DriveID                | The numerical DB value for the drive                                        |
 | LocationID             | The numerical DB value for the location                                     |
 | Operating System       | The name of the operating system on the computer                            |
-
 
 
 

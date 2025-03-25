@@ -1,5 +1,6 @@
 ---
 id: 'd0d38e82-7faf-4e0f-86b3-81b01a9f18fb'
+slug: /d0d38e82-7faf-4e0f-86b3-81b01a9f18fb
 title: 'Plugin_ProVal_PNPDevices'
 title_meta: 'Plugin_ProVal_PNPDevices'
 keywords: ['pnpdevices', 'storage', 'script', 'connectwise', 'inventory']
@@ -30,6 +31,5 @@ Stores the data collected by the [CWM - Automate - Script - Get-PNPDevices [DV]]
 | Status        | varchar(1000) | Current status of the PNP device     |
 | Class         | varchar(1000) | Class of the PNP device               |
 | Date          | datetime     | Script run time                      |
-
 
 

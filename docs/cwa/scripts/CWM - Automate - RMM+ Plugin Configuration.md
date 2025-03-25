@@ -1,5 +1,6 @@
 ---
 id: 'f99ddaae-0cb3-4941-b2aa-dc93671dd246'
+slug: /f99ddaae-0cb3-4941-b2aa-dc93671dd246
 title: 'CWM - Automate - RMM+ Plugin Configuration'
 title_meta: 'CWM - Automate - RMM+ Plugin Configuration'
 keywords: ['rmm', 'plugin', 'session', 'machines', 'checkin']
@@ -72,4 +73,3 @@ Create a session group in the ScreenConnect portal for machines that have not ch
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
 ## Attachments
 [HTTP-GET-POST.dll](<../../../static/attachments/itg/9770217/HTTP-GET-POST.dll>)
-

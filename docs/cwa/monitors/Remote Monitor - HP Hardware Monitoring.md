@@ -1,5 +1,6 @@
 ---
 id: '403cec59-3602-4630-afc8-674d1887046d'
+slug: /403cec59-3602-4630-afc8-674d1887046d
 title: 'Remote Monitor - HP Hardware Monitoring'
 title_meta: 'Remote Monitor - HP Hardware Monitoring'
 keywords: ['hp', 'monitor', 'event', 'server', 'management']

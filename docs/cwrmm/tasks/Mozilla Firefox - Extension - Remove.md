@@ -1,5 +1,6 @@
 ---
 id: 'ac3caa49-5cb4-464b-be99-73433d16ba81'
+slug: /ac3caa49-5cb4-464b-be99-73433d16ba81
 title: 'Mozilla Firefox - Extension - Remove'
 title_meta: 'Mozilla Firefox - Extension - Remove'
 keywords: ['firefox', 'extension', 'remove', 'uninstall', 'script', 'configuration']
@@ -136,7 +137,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
 
 
 

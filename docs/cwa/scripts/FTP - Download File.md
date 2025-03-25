@@ -1,5 +1,6 @@
 ---
 id: '264d107c-e4be-4915-8df1-7be61f8e6f07'
+slug: /264d107c-e4be-4915-8df1-7be61f8e6f07
 title: 'FTP - Download File'
 title_meta: 'FTP - Download File'
 keywords: ['ftp', 'download', 'file', 'script', 'automation']
@@ -44,6 +45,5 @@ This script will download a file from the target FTP server.
 ## Output
 
 - Script log
-
 
 

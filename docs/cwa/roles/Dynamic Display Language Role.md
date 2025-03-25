@@ -1,5 +1,6 @@
 ---
 id: '8d228f8e-c660-4127-a9b4-7f11381b8eec'
+slug: /8d228f8e-c660-4127-a9b4-7f11381b8eec
 title: 'Dynamic Display Language Role'
 title_meta: 'Dynamic Display Language Role'
 keywords: ['locale', 'system', 'windows', 'program', 'output']
@@ -26,6 +27,5 @@ This is helpful to be used in a solution that has dependencies on the system out
 ## Sample
 
 ![Sample Image](../../../static/img/Dynamic-Display-Language-Role/image_1.png)
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '058e4fab-a293-4f8e-b737-7ac47e0fd227'
+slug: /058e4fab-a293-4f8e-b737-7ac47e0fd227
 title: 'Hardware - NIC Info With Firmware Details'
 title_meta: 'Hardware - NIC Info With Firmware Details'
 keywords: ['network', 'adapter', 'information', 'dataview', 'networking']
@@ -24,6 +25,5 @@ This Dataview shows information about existing network adapters.
 | NIC Name        | Displays the Network adapter name.               |
 | Driver Name     | Displays the Network adapter driver name.        |
 | Driver Version  | Displays the Network adapter driver version.     |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '249d5abe-0626-4a9b-bbfe-6a32da52f9ff'
+slug: /249d5abe-0626-4a9b-bbfe-6a32da52f9ff
 title: 'Enable Google Chrome Auto Updates - MacWindows'
 title_meta: 'Enable Google Chrome Auto Updates - MacWindows'
 keywords: ['google', 'chrome', 'update', 'edf', 'script']
@@ -18,6 +19,5 @@ unlisted: false
 | Google Chrome Auto Update (EDF)          | This EDF is checked when the auto-update of Chrome is enabled via the script.                 |
 
 </div>
-
 
 

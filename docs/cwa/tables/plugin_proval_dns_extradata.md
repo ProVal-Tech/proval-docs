@@ -1,5 +1,6 @@
 ---
 id: 'cd3368d8-d0b0-4ca4-972e-4adc8c1cfcfa'
+slug: /cd3368d8-d0b0-4ca4-972e-4adc8c1cfcfa
 title: 'plugin_proval_dns_extradata'
 title_meta: 'plugin_proval_dns_extradata'
 keywords: ['dns', 'data', 'storage', 'computer', 'interface', 'settings', 'table']
@@ -42,6 +43,5 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
-
 
 

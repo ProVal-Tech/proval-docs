@@ -1,5 +1,6 @@
 ---
 id: '9d9148ad-26f7-45c6-ab6a-37e85dc259e8'
+slug: /9d9148ad-26f7-45c6-ab6a-37e85dc259e8
 title: 'Install Windows 11'
 title_meta: 'Install Windows 11'
 keywords: ['windows', 'installation', 'upgrade', 'policy', 'device', 'group']
@@ -56,7 +57,6 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Completed Policy Group
 
 ![](../../../static/img/Install-Windows-11/image_13.png)
-
 
 
 

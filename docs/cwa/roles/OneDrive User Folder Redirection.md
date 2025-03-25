@@ -1,5 +1,6 @@
 ---
 id: 'b412647a-447b-4fd3-a179-87885cdd06f5'
+slug: /b412647a-447b-4fd3-a179-87885cdd06f5
 title: 'OneDrive User Folder Redirection'
 title_meta: 'OneDrive User Folder Redirection'
 keywords: ['onedrive', 'redirection', 'detection', 'user', 'folder']
@@ -18,6 +19,5 @@ This document outlines the detection of machines on which OneDrive User Folder r
 | Detection String                                               | Comparator | Result | Applicable OS |
 |--------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptIn-%}` | Exists     |        | Windows        |
-
 
 

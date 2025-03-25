@@ -1,5 +1,6 @@
 ---
 id: '6347b2d8-1968-4f6e-8d3f-bfeb0b5a304d'  
+slug: /6347b2d8-1968-4f6e-8d3f-bfeb0b5a304d  
 title: 'Get-CWABackup'  
 title_meta: 'Get-CWABackup'  
 keywords: ['labtech', 'backup', 'files', 'retrieve']  
@@ -24,6 +25,5 @@ Returns all Labtech backup files.
 
 ## Output  
 System.Object  
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '12ee4e1c-ebde-43ec-bcc1-ee5388d31010'
+slug: /12ee4e1c-ebde-43ec-bcc1-ee5388d31010
 title: 'Automation Time Saved Tracking'
 title_meta: 'Automation Time Saved Tracking'
 keywords: ['time', 'tracking', 'saved', 'automation', 'client']
@@ -23,7 +24,6 @@ This document keeps a running total of the approximate amount of time saved for 
 |----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
 | xPVAL Automation Time Saved Monthly     | CF                                      | Integer representing the number of minutes saved through automation. Resets monthly. |
 | xPVAL Automation Time Saved Cumulative  | CF                                      | Integer representing the total number of minutes saved through automation.    |
-
 
 
 

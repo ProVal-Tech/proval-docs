@@ -1,5 +1,6 @@
 ---
 id: 'ac098d84-7d28-4b69-933f-74ab861d2b89'
+slug: /ac098d84-7d28-4b69-933f-74ab861d2b89
 title: 'Create View plugin_proval_v_windows_10_version_metrics'
 title_meta: 'Create View plugin_proval_v_windows_10_version_metrics'
 keywords: ['view', 'metrics', 'windows', 'dataview', 'sql']
@@ -26,6 +27,5 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 ## Process
 
 This section executes the SQL query to create the `plugin_proval_v_windows_10_version_metrics` view.
-
 
 

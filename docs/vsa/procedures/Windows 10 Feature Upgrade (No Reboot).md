@@ -1,5 +1,6 @@
 ---
 id: '0ecbf1e1-8947-417c-a3ad-952fcf218140'
+slug: /0ecbf1e1-8947-417c-a3ad-952fcf218140
 title: 'Windows 10 Feature Upgrade (No Reboot)'
 title_meta: 'Windows 10 Feature Upgrade (No Reboot)'
 keywords: ['windows', 'upgrade', 'feature', 'no', 'reboot', 'procedure', 'background', 'job']
@@ -47,7 +48,6 @@ This process starts a job running in the background to execute [SEC - Windows Pa
 - AP Log  
 - [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
 - PSOutput Document
-
 
 
 

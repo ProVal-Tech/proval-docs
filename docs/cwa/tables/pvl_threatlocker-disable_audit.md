@@ -1,5 +1,6 @@
 ---
 id: '7367ea61-b4bf-4449-b7dd-a68569dc7b75'
+slug: /7367ea61-b4bf-4449-b7dd-a68569dc7b75
 title: 'pvl_threatlocker-disable_audit'
 title_meta: 'pvl_threatlocker-disable_audit'
 keywords: ['threatlocker', 'learning', 'data', 'audit', 'logs']
@@ -31,6 +32,5 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LearningModeDuration   | INT      | Stores the number of hours for which the Threatlocker learning mode is set.                                       |
 | Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
 | LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |
-
 
 

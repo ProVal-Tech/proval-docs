@@ -1,5 +1,6 @@
 ---
 id: 'e6f6f344-5f75-4794-84d9-86b110206089'
+slug: /e6f6f344-5f75-4794-84d9-86b110206089
 title: 'Prompter - Template'
 title_meta: 'Prompter - Template'
 keywords: ['template', 'prompter', 'script', 'message', 'client']
@@ -59,6 +60,5 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button selected by the user.                                                                             |
 | dateTimeSelection   | Date and time selected by the user.                                                                      |
 | userResponse       | Input/feedback provided by the user in the user input field.                                            |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'e2e93a31-645d-45d7-8616-ed4df6957710'
+slug: /e2e93a31-645d-45d7-8616-ed4df6957710
 title: 'CWM - Automate - Script-  GIS Deed Maintenance'
 title_meta: 'CWM - Automate - Script-  GIS Deed Maintenance'
 keywords: ['summary', 'script', 'documentation', 'variables', 'process', 'output']
@@ -58,6 +59,5 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 
 

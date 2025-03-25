@@ -1,5 +1,6 @@
 ---
 id: 'a94dc919-d39c-4787-a585-ae2dc9456d12'
+slug: /a94dc919-d39c-4787-a585-ae2dc9456d12
 title: 'Screensaver - Enable Mystify Globals'
 title_meta: 'Screensaver - Enable Mystify Globals'
 keywords: ['screensaver', 'scheduled', 'task', 'login', 'timeout']
@@ -33,6 +34,5 @@ The script runs a PowerShell script to create a scheduled task that enables the 
 ## Output
 
 - Script log
-
 
 

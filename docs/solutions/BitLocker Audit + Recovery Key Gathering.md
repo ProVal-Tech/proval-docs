@@ -1,5 +1,6 @@
 ---
 id: '337848a2-3757-45c9-8142-17abf004a78e'
+slug: /337848a2-3757-45c9-8142-17abf004a78e
 title: 'BitLocker Audit + Recovery Key Gathering'
 title_meta: 'BitLocker Audit + Recovery Key Gathering'
 keywords: ['bitlocker', 'audit', 'recovery', 'key', 'management', 'device', 'groups', 'custom', 'tasks']
@@ -36,7 +37,6 @@ This solution uses custom tasks and device groups to audit and gather informatio
    **Please ensure that the task is run manually!**
 
 ## FAQ
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'a170b385-7464-478e-b1cc-d357a8840e45'
+slug: /a170b385-7464-478e-b1cc-d357a8840e45
 title: 'Power Plan - Enable'
 title_meta: 'Power Plan - Enable'
 keywords: ['automate', 'powerplan', 'script', 'configuration', 'windows']
@@ -48,6 +49,5 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 
 - Script Log
 - Dataview
-
 
 

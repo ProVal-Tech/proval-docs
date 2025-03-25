@@ -1,5 +1,6 @@
 ---
 id: 'e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f'
+slug: /e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f
 title: 'Toast Notification - Template'
 title_meta: 'Toast Notification - Template'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']

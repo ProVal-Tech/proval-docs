@@ -1,5 +1,6 @@
 ---
 id: '64fb8fa3-20f6-4167-8ec1-be322b3d6c07'
+slug: /64fb8fa3-20f6-4167-8ec1-be322b3d6c07
 title: 'Windows Hello for Business - Disable'
 title_meta: 'Windows Hello for Business - Disable'
 keywords: ['windows', 'hello', 'business', 'registry', 'disable']
@@ -25,6 +26,5 @@ This script disables Windows Hello for Business by adding the registry key `HKLM
 ## Output
 
 - Script log  
-
 
 

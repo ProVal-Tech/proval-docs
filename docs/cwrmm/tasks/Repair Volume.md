@@ -1,5 +1,6 @@
 ---
 id: 'e49d58ba-bf8a-437b-8303-ac6266df35e2'
+slug: /e49d58ba-bf8a-437b-8303-ac6266df35e2
 title: 'Repair Volume'
 title_meta: 'Repair Volume'
 keywords: ['chkdsk', 'repair', 'volume', 'drives', 'script']
@@ -213,6 +214,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
 
 

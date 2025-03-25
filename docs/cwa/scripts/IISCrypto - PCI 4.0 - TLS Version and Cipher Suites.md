@@ -1,5 +1,6 @@
 ---
 id: 'bd4671b7-d40d-452a-a41e-0e5451e2bddf'
+slug: /bd4671b7-d40d-452a-a41e-0e5451e2bddf
 title: 'IISCrypto - PCI 4.0 - TLS Version and Cipher Suites'
 title_meta: 'IISCrypto - PCI 4.0 - TLS Version and Cipher Suites'
 ---
@@ -45,4 +46,3 @@ Template applied: PCI 4.0
 ```
 ## Attachments
 [Pci4.0_Template.ictpl](<../../../static/attachments/itg/12486318/Pci4.0_Template.ictpl>)
-

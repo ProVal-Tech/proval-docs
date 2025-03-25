@@ -1,5 +1,6 @@
 ---
 id: '886b7749-ea21-4a48-b4c9-06589fb09a7a'
+slug: /886b7749-ea21-4a48-b4c9-06589fb09a7a
 title: 'Windows - Wallpaper - Set'
 title_meta: 'Windows - Wallpaper - Set'
 keywords: ['wallpaper', 'desktop', 'users', 'enforcement', 'login']
@@ -169,6 +170,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

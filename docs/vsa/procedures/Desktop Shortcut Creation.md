@@ -1,5 +1,6 @@
 ---
 id: '183aecf1-4d22-4373-89b4-14f9dcedef13'
+slug: /183aecf1-4d22-4373-89b4-14f9dcedef13
 title: 'Desktop Shortcut Creation'
 title_meta: 'Desktop Shortcut Creation'
 keywords: ['shortcut', 'desktop', 'link', 'uri', 'windows']
@@ -51,6 +52,5 @@ The custom icon will need to be uploaded to managed files. Once uploaded, point 
 - New-DesktopUriShortcut-log.txt
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
-
 
 

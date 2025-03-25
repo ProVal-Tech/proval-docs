@@ -1,5 +1,6 @@
 ---
 id: '863ba816-8f4f-47e1-aa66-420b428b7188'
+slug: /863ba816-8f4f-47e1-aa66-420b428b7188
 title: 'Execute Script - Internet Speed Test'
 title_meta: 'Execute Script - Internet Speed Test'
 keywords: ['monitor', 'internet', 'speed', 'audit', 'windows']
@@ -26,7 +27,6 @@ This internal monitor detects Windows agents where the script [EPM - Network - S
 ## Target
 
 This monitor can be enabled for all service plan groups, servers only, infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is designed exclusively for Windows.
-
 
 
 

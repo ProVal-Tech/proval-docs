@@ -1,5 +1,6 @@
 ---
 id: '5263a1ab-49c0-49f0-a5b5-9f9062229b86'
+slug: /5263a1ab-49c0-49f0-a5b5-9f9062229b86
 title: 'System Restore - Enable'
 title_meta: 'System Restore - Enable'
 keywords: ['system', 'restore', 'windows', 'workstations', 'script']
@@ -41,6 +42,5 @@ The script will run a PowerShell command that enables System Restore on the targ
 ## Output
 
 - Script log message only
-
 
 

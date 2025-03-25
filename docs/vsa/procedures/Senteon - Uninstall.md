@@ -1,5 +1,6 @@
 ---
 id: '2603fc00-ac56-4466-b220-f2484ceef424'
+slug: /2603fc00-ac56-4466-b220-f2484ceef424
 title: 'Senteon - Uninstall'
 title_meta: 'Senteon - Uninstall'
 keywords: ['senteon', 'uninstall', 'agent', 'endpoint', 'procedure']
@@ -32,6 +33,5 @@ Proval Plug & Play Procedure: The agent procedure requires no configuration.
 Agent Procedure Log Entry  
 **Success**  
 ![Image](../../../static/img/Senteon---Uninstall/image_3.png)  
-
 
 

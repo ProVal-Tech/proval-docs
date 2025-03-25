@@ -1,5 +1,6 @@
 ---
 id: '8022b663-4923-47d5-b8c7-7ba24aae305d'
+slug: /8022b663-4923-47d5-b8c7-7ba24aae305d
 title: 'EndPoint - WingetUpdateAll_UserTask_Disable'
 title_meta: 'EndPoint - WingetUpdateAll_UserTask_Disable'
 keywords: ['scheduled', 'task', 'winget', 'update', 'windows']
@@ -25,6 +26,5 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Schedu
 
 ![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_UserTask_Disable/image_1.png)
 ![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_UserTask_Disable/image_2.png)
-
 
 

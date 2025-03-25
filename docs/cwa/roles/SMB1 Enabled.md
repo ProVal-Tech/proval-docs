@@ -1,5 +1,6 @@
 ---
 id: '618e3275-7c15-44be-90c9-6f17efc56677'
+slug: /618e3275-7c15-44be-90c9-6f17efc56677
 title: 'SMB1 Enabled'
 title_meta: 'SMB1 Enabled'
 keywords: ['smb1', 'security', 'endpoint', 'status', 'check']
@@ -20,6 +21,5 @@ This data is viewable in the dataview: @Security - SMB1 Enabled Status Check [Ro
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe \"(Get-SmbServerConfiguration).EnableSMB1Protocol\"@%}` | Contains   | True   | Windows OS     |
-
 
 

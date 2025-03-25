@@ -1,5 +1,6 @@
 ---
 id: 'be117f3c-0af2-4edb-8fcc-06da1a4db062'
+slug: /be117f3c-0af2-4edb-8fcc-06da1a4db062
 title: 'pvl_wau_config'
 title_meta: 'pvl_wau_config'
 keywords: ['configuration', 'whitelist', 'blacklist', 'notification', 'updateinterval', 'updatetime', 'windows']
@@ -34,7 +35,6 @@ This document stores the current configuration set for the computer from the cli
 | updatesatlogon         | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
 | remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](<../cwa/monitors/Winget Auto Update Errors.md>) remote monitor creation enabled? (0/1) |
-
 
 
 

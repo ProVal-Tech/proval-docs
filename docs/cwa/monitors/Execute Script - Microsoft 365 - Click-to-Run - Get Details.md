@@ -1,5 +1,6 @@
 ---
 id: '66fedeee-80d2-482b-9520-5fdfcab42406'
+slug: /66fedeee-80d2-482b-9520-5fdfcab42406
 title: 'Execute Script - Microsoft 365 - Click-to-Run - Get Details'
 title_meta: 'Execute Script - Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'office', 'monitor', 'click-to-run', 'script']
@@ -27,7 +28,6 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
-
 
 
 

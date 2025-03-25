@@ -1,5 +1,6 @@
 ---
 id: 'cbd9495c-f2a7-44f1-9f84-55cfa1ac1490'
+slug: /cbd9495c-f2a7-44f1-9f84-55cfa1ac1490
 title: 'Windows Cluster Volume Space Audit DV'
 title_meta: 'Windows Cluster Volume Space Audit DV'
 keywords: ['audit', 'cluster', 'report', 'disk', 'space', 'volume']
@@ -41,6 +42,5 @@ Set the value of `Set_Environment` to 1 to create the table and schedule the scr
 
 - Script log
 - Dataview
-
 
 

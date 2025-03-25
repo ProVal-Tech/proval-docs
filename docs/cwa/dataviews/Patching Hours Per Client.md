@@ -1,5 +1,6 @@
 ---
 id: '28461e0d-185e-4c6f-8f34-4b9124abf400'
+slug: /28461e0d-185e-4c6f-8f34-4b9124abf400
 title: 'Patching Hours Per Client'
 title_meta: 'Patching Hours Per Client'
 keywords: ['patching', 'jobs', 'client', 'summary', 'hours']
@@ -23,6 +24,5 @@ This document provides an overview of patching jobs and the total patching hours
 | Number of Patch Jobs Last 30 Days  | Number of patch jobs per client in the last 30 days      |
 | Sum of Patching Hours Last 30 Days | Sum of patching hours per client in the last 30 days     |
 | Total Patch Duration               | Total patch duration per client in the last 30 days      |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '0c224e91-ca6e-49b5-b2e6-3a8fee076690'
+slug: /0c224e91-ca6e-49b5-b2e6-3a8fee076690
 title: 'Latest Installed Cumulative Update'
 title_meta: 'Latest Installed Cumulative Update'
 keywords: ['cumulative', 'update', 'data', 'view', 'installed', 'machine', 'report']
@@ -44,7 +45,6 @@ This document displays the data fetched by the [CWM - Automate - Script - Get La
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/Latest-Installed-Cumulative-Update/image_1.png)
-
 
 
 

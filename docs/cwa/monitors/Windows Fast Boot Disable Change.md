@@ -1,5 +1,6 @@
 ---
 id: '1325f458-9c0e-4021-b107-26df4360bbed'
+slug: /1325f458-9c0e-4021-b107-26df4360bbed
 title: 'Windows Fast Boot Disable [Change]'
 title_meta: 'Windows Fast Boot Disable [Change]'
 keywords: ['monitor', 'fastboot', 'windows', 'registry', 'disable']

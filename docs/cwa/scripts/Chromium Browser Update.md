@@ -1,5 +1,6 @@
 ---
 id: 'a17a9537-62ae-43f8-8212-dbac0a328ca0'
+slug: /a17a9537-62ae-43f8-8212-dbac0a328ca0
 title: 'Chromium Browser Update'
 title_meta: 'Chromium Browser Update'
 keywords: ['chromium', 'update', 'browser', 'ticketing', 'automation']
@@ -47,6 +48,5 @@ Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium 
 
 - Script log
 - Optional ticketing
-
 
 

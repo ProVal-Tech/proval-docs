@@ -1,5 +1,6 @@
 ---
 id: '5ffed5a2-c8d9-4e43-964a-54f1ac563268'
+slug: /5ffed5a2-c8d9-4e43-964a-54f1ac563268
 title: 'Company - ThreatLockerAuthKey'
 title_meta: 'Company - ThreatLockerAuthKey'
 keywords: ['threatlocker', 'authorization', 'key', 'windows', 'company']
@@ -27,7 +28,6 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 ## Screenshot
 
 ![Screenshot](../../../static/img/Company---ThreatLockerAuthKey/image_1.png)
-
 
 
 

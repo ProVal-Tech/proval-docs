@@ -1,5 +1,6 @@
 ---
 id: 'eb059723-1681-49d4-a8df-62aebf3656b2'
+slug: /eb059723-1681-49d4-a8df-62aebf3656b2
 title: 'Office 365 Monthly Channel Update'
 title_meta: 'Office 365 Monthly Channel Update'
 keywords: ['updates', 'office365', 'windows', 'channel', 'detection']
@@ -18,7 +19,6 @@ This role definition helps you track machines where Microsoft 365 updates are se
 | Detection String                                           | Comparator | Result                                                                                               | Applicable OS |
 |-----------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------|----------------|
 | \\\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Contains   | [http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6](http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6) | Windows        |
-
 
 
 

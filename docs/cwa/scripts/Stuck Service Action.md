@@ -1,5 +1,6 @@
 ---
 id: 'bb8f2562-4744-4349-a661-62f64f0d05b2'
+slug: /bb8f2562-4744-4349-a661-62f64f0d05b2
 title: 'Stuck Service Action'
 title_meta: 'Stuck Service Action'
 keywords: ['service', 'detection', 'script', 'automation', 'process']
@@ -53,6 +54,5 @@ This script detects any service that is stuck in a state other than Running or S
 - Script log
 - Script state
 - Ticket
-
 
 

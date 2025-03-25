@@ -1,5 +1,6 @@
 ---
 id: '47da7c82-7c27-4730-987a-2d32e22415fa'
+slug: /47da7c82-7c27-4730-987a-2d32e22415fa
 title: 'DUO Install & Upgrade - Latest Version'
 title_meta: 'DUO Install & Upgrade - Latest Version'
 keywords: ['duo', 'installer', 'update', 'authentication', 'windows']
@@ -643,6 +644,5 @@ Custom Field
 ![Output 1](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_77.png)  
 
 Script Log  
-
 
 

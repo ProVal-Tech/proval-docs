@@ -1,5 +1,6 @@
 ---
 id: 'a76e5cc5-9cc8-4c66-a877-1ab42fed37a3'
+slug: /a76e5cc5-9cc8-4c66-a877-1ab42fed37a3
 title: 'Installed Browsers Extensions'
 title_meta: 'Installed Browsers Extensions'
 keywords: ['browsers', 'extensions', 'chrome', 'firefox', 'edge', 'brave', 'user']
@@ -31,6 +32,5 @@ This document returns information relating to the installed extensions for insta
 2. Import the [Installed Browsers Extensions [Script]](<../cwa/dataviews/Installed Browsers Extensions Script.md>) dataview.
 3. Debug the script against any online Windows machine to create the [plugin_proval_browsers_extensions](<../cwa/tables/Plugin_ProVal_Browsers_Extensions.md>) table.
 4. Check the [Installed Browsers Extensions [Script]](<../cwa/dataviews/Installed Browsers Extensions Script.md>) dataview for the data. If it's empty, you can execute the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<../cwa/scripts/MySQL - Permission - Set Custom Table Permissions.md>) script to grant the table's permissions to all of the Automate users.
-
 
 

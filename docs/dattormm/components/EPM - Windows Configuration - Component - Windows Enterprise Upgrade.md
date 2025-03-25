@@ -1,5 +1,6 @@
 ---
 id: 'e6c76294-af5e-465d-9824-2e5a58734451'
+slug: /e6c76294-af5e-465d-9824-2e5a58734451
 title: 'EPM - Windows Configuration - Component - Windows Enterprise Upgrade'
 title_meta: 'EPM - Windows Configuration - Component - Windows Enterprise Upgrade'
 keywords: ['windows', 'enterprise', 'upgrade', 'kms', 'component']

@@ -1,5 +1,6 @@
 ---
 id: 'bef87782-0d9d-40f0-96c5-d30b589b57b4'
+slug: /bef87782-0d9d-40f0-96c5-d30b589b57b4
 title: 'Detect Frequent Logon User (Set Computer Contact)'
 title_meta: 'Detect Frequent Logon User (Set Computer Contact)'
 keywords: ['loggedin', 'domain', 'users', 'automate', 'contact', 'windows', 'security']
@@ -54,6 +55,5 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user, a
 - Script log
 - EDFs
 - Dataview
-
 
 

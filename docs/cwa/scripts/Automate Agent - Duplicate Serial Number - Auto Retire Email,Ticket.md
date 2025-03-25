@@ -1,5 +1,6 @@
 ---
 id: 'f9a0c7b8-2807-4e08-b1b7-c9342b89a493'
+slug: /f9a0c7b8-2807-4e08-b1b7-c9342b89a493
 title: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
 title_meta: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
 keywords: ['duplicate', 'agents', 'automate', 'retire', 'email', 'ticketing']
@@ -79,6 +80,5 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 In case there are no duplicate serial numbers:
 
 `No duplicate machines identified based on serial number.`
-
 
 

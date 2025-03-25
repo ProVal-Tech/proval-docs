@@ -1,5 +1,6 @@
 ---
 id: 'f1ac2b23-59a0-4dcd-86a2-61901dd551b6'
+slug: /f1ac2b23-59a0-4dcd-86a2-61901dd551b6
 title: 'Patching - Windows 10 Build Upgrades'
 title_meta: 'Patching - Windows 10 Build Upgrades'
 keywords: ['monitor', 'upgrade', 'windows', 'build', 'machines']
@@ -42,6 +43,5 @@ WHERE
     AND computers.computerid IN (SELECT computerid FROM computerpatchpolicies WHERE installpolicy IN (SELECT ID FROM installsoftwarepolicies WHERE updatemode IN (5, 6)))
 LIMIT 10
 ```
-
 
 

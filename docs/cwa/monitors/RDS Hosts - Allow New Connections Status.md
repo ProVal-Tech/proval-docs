@@ -1,5 +1,6 @@
 ---
 id: '18fd9d3f-f0cd-4040-b89f-ec059c405609'
+slug: /18fd9d3f-f0cd-4040-b89f-ec059c405609
 title: 'RDS Hosts - Allow New Connections Status'
 title_meta: 'RDS Hosts - Allow New Connections Status'
 keywords: ['sql', 'rds', 'monitor', 'alert', 'template', 'servers', 'group', 'connections']

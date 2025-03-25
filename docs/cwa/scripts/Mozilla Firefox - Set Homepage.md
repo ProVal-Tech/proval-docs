@@ -1,5 +1,6 @@
 ---
 id: '64cddf50-a662-4745-b9d3-79f625be4ce1'
+slug: /64cddf50-a662-4745-b9d3-79f625be4ce1
 title: 'Mozilla Firefox - Set Homepage'
 title_meta: 'Mozilla Firefox - Set Homepage'
 keywords: ['firefox', 'homepage', 'registry', 'policy', 'windows']
@@ -45,6 +46,5 @@ The script takes a string parameter to define the URL to set the homepage. The a
 
 - Script log
 - Local file on the computer
-
 
 

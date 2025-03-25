@@ -1,5 +1,6 @@
 ---
 id: '296c457d-66d6-4de8-af91-4667c2321e12'
+slug: /296c457d-66d6-4de8-af91-4667c2321e12
 title: 'Internet Speed - Audit'
 title_meta: 'Internet Speed - Audit'
 keywords: ['internet', 'speed', 'test', 'ookla', 'cli']
@@ -130,6 +131,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'cddb5b54-a76e-4d74-8226-8f536d8f0eb4'
+slug: /cddb5b54-a76e-4d74-8226-8f536d8f0eb4
 title: 'Install Webroot SecureAnyWhere Autofix, EDF'
 title_meta: 'Install Webroot SecureAnyWhere Autofix, EDF'
 keywords: ['webroot', 'deployment', 'agents', 'keycode', 'edf', 'uninstall', 'groupname', 'groupcode']
@@ -40,6 +41,5 @@ Please follow the documents below to obtain the Webroot Site Keycode and the Web
 ## Output
 
 - Script log
-
 
 

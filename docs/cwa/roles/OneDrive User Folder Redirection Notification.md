@@ -1,5 +1,6 @@
 ---
 id: '8de9befe-2917-47b3-97e6-23d737a05dfa'
+slug: /8de9befe-2917-47b3-97e6-23d737a05dfa
 title: 'OneDrive User Folder Redirection Notification'
 title_meta: 'OneDrive User Folder Redirection Notification'
 keywords: ['onedrive', 'notifications', 'folder', 'redirection', 'endpoint']
@@ -18,6 +19,5 @@ This document determines whether folder redirection notifications are enabled fo
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptInWithNotification-%}` | Equals     | 1      | Windows OS     |
-
 
 

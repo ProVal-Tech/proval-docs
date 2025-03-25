@@ -1,5 +1,6 @@
 ---
 id: '1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55'
+slug: /1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55
 title: 'Configure Winget Auto Update'
 title_meta: 'Configure Winget Auto Update'
 keywords: ['winget', 'autoupdate', 'configuration', 'monitor', 'script']
@@ -148,6 +149,5 @@ The script's default nature is to compare the existing configuration before runn
   - Winget-AutoUpdate-Notify
   - Winget-AutoUpdate-Policies
   - Winget-AutoUpdate-UserContext
-
 
 

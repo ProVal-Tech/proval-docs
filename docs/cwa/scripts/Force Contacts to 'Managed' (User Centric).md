@@ -1,5 +1,6 @@
 ---
 id: '44840fd1-931c-45e1-aa69-2c52f30117a8'
+slug: /44840fd1-931c-45e1-aa69-2c52f30117a8
 title: "Force Contacts to 'Managed' (User Centric)"
 title_meta: "Force Contacts to 'Managed' (User Centric)"
 keywords: ['user', 'active-directory', 'integration', 'manage', 'plugin']
@@ -30,6 +31,5 @@ This script is for use in conjunction with User-Centric. When users are imported
 ## Output
 
 Manage plugin
-
 
 

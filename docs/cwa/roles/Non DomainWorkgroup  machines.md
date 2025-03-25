@@ -1,5 +1,6 @@
 ---
 id: '00bd8c59-9411-4767-8ac7-348b9115fff5'
+slug: /00bd8c59-9411-4767-8ac7-348b9115fff5
 title: 'Non DomainWorkgroup  machines'
 title_meta: 'Non DomainWorkgroup  machines'
 keywords: ['detection', 'domain', 'windows', 'status', 'machine']
@@ -22,7 +23,6 @@ This role will detect machines that are not joined to a domain.
 ```powershell
 $ErrorActionPreference='SilentlyContinue'; $DSRegStatus = dsregcmd.exe /status; @('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]
 ```
-
 
 
 

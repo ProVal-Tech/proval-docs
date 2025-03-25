@@ -1,5 +1,6 @@
 ---
 id: '4a2bb766-6bdb-43f4-bf79-44d191fbcb59'
+slug: /4a2bb766-6bdb-43f4-bf79-44d191fbcb59
 title: 'Logon Success and Failure Auditing Enabled'
 title_meta: 'Logon Success and Failure Auditing Enabled'
 keywords: ['auditpol', 'logon', 'auditing', 'windows', 'security']
@@ -18,6 +19,5 @@ This document outlines how to run `auditpol.exe` to determine if logon success a
 | Detection String                             | Comparator | Result              | Applicable OS         |
 |----------------------------------------------|------------|---------------------|-----------------------|
 | `auditpol.exe /get /subcategory:logon`     | Contains   | Success and Failure | Windows AD Controller  |
-
 
 

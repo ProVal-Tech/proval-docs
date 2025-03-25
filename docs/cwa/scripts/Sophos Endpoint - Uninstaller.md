@@ -1,5 +1,6 @@
 ---
 id: 'd560e8b6-9195-4bc3-a89a-6939c984d47a'
+slug: /d560e8b6-9195-4bc3-a89a-6939c984d47a
 title: 'Sophos Endpoint - Uninstaller'
 title_meta: 'Sophos Endpoint - Uninstaller'
 keywords: ['sophos', 'uninstall', 'endpoint', 'tamper', 'protection', 'windows']
@@ -47,6 +48,5 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
-
 
 

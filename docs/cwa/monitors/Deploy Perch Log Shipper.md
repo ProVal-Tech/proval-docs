@@ -1,5 +1,6 @@
 ---
 id: 'bc410117-b7b7-4345-967c-965f15acdf07'
+slug: /bc410117-b7b7-4345-967c-965f15acdf07
 title: 'Deploy Perch Log Shipper'
 title_meta: 'Deploy Perch Log Shipper'
 keywords: ['monitor', 'perch', 'log', 'shipper', 'deployment', 'windows']
@@ -30,7 +31,6 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom - Execute Script - Deploy Perch Log Shipper`
-
 
 
 

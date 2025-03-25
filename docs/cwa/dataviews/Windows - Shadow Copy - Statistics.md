@@ -1,5 +1,6 @@
 ---
 id: '1de94554-1057-4e13-99ff-4d9dba02a180'
+slug: /1de94554-1057-4e13-99ff-4d9dba02a180
 title: 'Windows - Shadow Copy - Statistics'
 title_meta: 'Windows - Shadow Copy - Statistics'
 keywords: ['shadow', 'copy', 'statistics', 'windows', 'dataview']
@@ -33,6 +34,5 @@ This dataview displays Windows Shadow Copy statistics for endpoints with Shadow 
 | Shadow Copy Count   | The number of Shadow Copies on the machine                          |
 | Oldest Shadow Copy  | The oldest available Shadow Copy date                               |
 | Latest Shadow Copy  | The most recent available Shadow Copy date                          |
-
 
 

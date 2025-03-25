@@ -1,5 +1,6 @@
 ---
 id: 'b091a26a-23d5-43cc-a00b-0075e2940ad2'
+slug: /b091a26a-23d5-43cc-a00b-0075e2940ad2
 title: 'Move Agent to Retired Assets and Create Ticket'
 title_meta: 'Move Agent to Retired Assets and Create Ticket'
 keywords: ['ticket', 'retire', 'agent', 'automation', 'connectwise']
@@ -26,6 +27,5 @@ This script will create a ticket and move the agent it is run against to retired
 ## Output
 
 - Script log
-
 
 

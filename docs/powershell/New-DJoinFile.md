@@ -1,5 +1,6 @@
 ---
 id: 'e0acd656-10bc-48d6-9182-41d1ff78007a'
+slug: /e0acd656-10bc-48d6-9182-41d1ff78007a
 title: 'New-DJoinFile'
 title_meta: 'New-DJoinFile'
 keywords: ['djoin', 'offline', 'domain', 'join']
@@ -39,6 +40,5 @@ This will create a file named `Dev-Win10-2-OfflineJoin.txt` in the working direc
 
 **Console:**
 - Djoin.exe command results.
-
 
 

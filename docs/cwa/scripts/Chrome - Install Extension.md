@@ -1,5 +1,6 @@
 ---
 id: '894e4ce0-9034-4191-bb3b-7065c23754bc'
+slug: /894e4ce0-9034-4191-bb3b-7065c23754bc
 title: 'Chrome - Install Extension'
 title_meta: 'Chrome - Install Extension'
 keywords: ['chrome', 'extension', 'installation', 'script', 'automation']
@@ -45,6 +46,5 @@ This script is used to enforce the installation of an extension or a list of ext
 
 - Script log
 - Local file on the computer
-
 
 

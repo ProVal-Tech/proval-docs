@@ -1,5 +1,6 @@
 ---
 id: 'cb1ab987-657f-4503-a3e1-f4f6345b6fdf'
+slug: /cb1ab987-657f-4503-a3e1-f4f6345b6fdf
 title: 'SMB1 Autofix'
 title_meta: 'SMB1 Autofix'
 keywords: ['smb1', 'monitor', 'autofix', 'windows', 'agents']

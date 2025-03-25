@@ -1,5 +1,6 @@
 ---
 id: '183d5388-764f-4e39-9ddc-2e4212b579e4'
+slug: /183d5388-764f-4e39-9ddc-2e4212b579e4
 title: 'Import- Enable Bitlocker Feature'
 title_meta: 'Import- Enable Bitlocker Feature'
 keywords: ['bitlocker', 'groupid', 'monitor', 'sql', 'feature']

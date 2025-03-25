@@ -1,5 +1,6 @@
 ---
 id: '8828a709-4424-48f9-a5bf-dfc81a40bb97'
+slug: /8828a709-4424-48f9-a5bf-dfc81a40bb97
 title: 'Get-ChromiumExtensions'
 title_meta: 'Get-ChromiumExtensions'
 keywords: ['chromium', 'extensions', 'browser', 'user']
@@ -67,6 +68,5 @@ IsDefault               NoteProperty bool IsDefault=False
 ExtensionVersion        NoteProperty string ExtensionVersion=1.12.2
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\\Users\\localadmin
 ```
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: '3af8bbf0-532f-43c5-a2ea-980be9031730'
+slug: /3af8bbf0-532f-43c5-a2ea-980be9031730
 title: 'Agent Monitors - Disk - Remove and Rebuild - ProVal'
 title_meta: 'Agent Monitors - Disk - Remove and Rebuild - ProVal'
 keywords: ['disk', 'monitor', 'agent', 'deployment', 'script']
@@ -33,6 +34,5 @@ It should be run against the service plan for servers and workstations as part o
 ## Output
 
 - Script log
-
 
 

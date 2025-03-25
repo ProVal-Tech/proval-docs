@@ -1,5 +1,6 @@
 ---
 id: '48737f29-accd-41ac-a35d-047d7e266e6f'
+slug: /48737f29-accd-41ac-a35d-047d7e266e6f
 title: 'Local Machine Certificate Audit'
 title_meta: 'Local Machine Certificate Audit'
 keywords: ['monitor', 'windows', 'certificates', 'audit', 'servers']

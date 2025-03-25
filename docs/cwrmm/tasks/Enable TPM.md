@@ -1,5 +1,6 @@
 ---
 id: '9cecaa1e-c694-4442-a6a5-948217978e50'
+slug: /9cecaa1e-c694-4442-a6a5-948217978e50
 title: 'Enable TPM'
 title_meta: 'Enable TPM'
 keywords: ['tpm', 'provisioning', 'trusted', 'platform', 'module', 'security']
@@ -196,6 +197,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Enable-TPM/image_26.png)  
-
 
 

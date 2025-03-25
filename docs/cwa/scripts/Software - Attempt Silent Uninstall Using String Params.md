@@ -1,5 +1,6 @@
 ---
 id: '6f37a14e-64e0-4bf1-a840-806cdf2ab2b4'
+slug: /6f37a14e-64e0-4bf1-a840-806cdf2ab2b4
 title: 'Software - Attempt Silent Uninstall Using String Params'
 title_meta: 'Software - Attempt Silent Uninstall Using String Params'
 keywords: ['uninstall', 'application', 'script', 'database', 'silent']
@@ -32,6 +33,5 @@ When the script runs, it will prompt the user for the parameter `AppName`, which
 ## Output
 
 - Script log
-
 
 

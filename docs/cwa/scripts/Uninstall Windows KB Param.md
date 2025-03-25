@@ -1,5 +1,6 @@
 ---
 id: 'fd611b68-7cd6-4a6a-bee1-3d772ecd9a27'
+slug: /fd611b68-7cd6-4a6a-bee1-3d772ecd9a27
 title: 'Uninstall Windows KB Param'
 title_meta: 'Uninstall Windows KB Param'
 keywords: ['uninstall', 'windows', 'update', 'kbid', 'reboot']
@@ -37,6 +38,5 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
-
 
 

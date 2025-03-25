@@ -1,5 +1,6 @@
 ---
 id: 'e6d09f37-fd0f-42a6-98a5-449f65673296'
+slug: /e6d09f37-fd0f-42a6-98a5-449f65673296
 title: 'Implement- SMB1 Traffic Detection'
 title_meta: 'Implement- SMB1 Traffic Detection'
 keywords: ['smb1', 'monitor', 'remote', 'detection', 'traffic']

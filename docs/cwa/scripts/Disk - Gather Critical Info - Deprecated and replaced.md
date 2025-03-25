@@ -1,5 +1,6 @@
 ---
 id: 'ee31c873-0d1f-42fa-b698-cdfe1cbf75a6'
+slug: /ee31c873-0d1f-42fa-b698-cdfe1cbf75a6
 title: 'Disk - Gather Critical Info - Deprecated and replaced'
 title_meta: 'Disk - Gather Critical Info - Deprecated and replaced'
 keywords: ['disk', 'critical', 'data', 'custom', 'table']
@@ -36,7 +37,6 @@ The location and method by which this script returns data:
 - Script state
 - Local file on computer
 - Dataview
-
 
 
 

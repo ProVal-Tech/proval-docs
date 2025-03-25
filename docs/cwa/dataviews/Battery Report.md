@@ -1,5 +1,6 @@
 ---
 id: 'f79eac19-1ead-42bb-903b-8f3bc7dc4bd1'
+slug: /f79eac19-1ead-42bb-903b-8f3bc7dc4bd1
 title: 'Battery Report'
 title_meta: 'Battery Report'
 keywords: ['battery', 'report', 'health', 'capacity', 'cycle', 'manufacturer', 'client', 'location']
@@ -43,7 +44,6 @@ This document displays the battery report information.
 | ClientID              | Not displayed but used.                                                                                                                                       |
 | LocationID            | Not displayed but used.                                                                                                                                       |
 | ThresholdViolation     | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
-
 
 
 

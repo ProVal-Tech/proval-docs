@@ -1,5 +1,6 @@
 ---
 id: '7985c324-e441-4a65-b739-cebc0b1fb647'
+slug: /7985c324-e441-4a65-b739-cebc0b1fb647
 title: 'VSAUpdateOrgCountTable'
 title_meta: 'VSAUpdateOrgCountTable'
 keywords: ['sqlserver', 'reporting', 'database', 'update', 'table']
@@ -18,6 +19,5 @@ Update the PVALOrgAgentCounts Table for Reporting
 - **sqlserver**: Server address to access  
 - **sqluser**: Username for SQL access  
 - **sqlpassword**: Password for SQL access  
-
 
 

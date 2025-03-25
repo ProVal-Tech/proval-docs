@@ -1,5 +1,6 @@
 ---
 id: '0a1ca2b8-1d0e-4873-83a0-a6d1d79c1683'
+slug: /0a1ca2b8-1d0e-4873-83a0-a6d1d79c1683
 title: 'Script Failure Assessment'
 title_meta: 'Script Failure Assessment'
 keywords: ['script', 'failure', 'analysis', 'logs', 'computers']
@@ -37,7 +38,6 @@ The dataview presents a detailed analysis of script failures over the past 'X' d
 | Kill Command Issued %     | Percentage of failures because the Kill Command was issued                                       |
 | First Failure Date        | First Failure Date                                                                                |
 | Last Failure Date         | Last Failure Date                                                                                 |
-
 
 
 

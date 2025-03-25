@@ -1,5 +1,6 @@
 ---
 id: 'b55634b1-9beb-4bc7-8f30-fdc3ec06cd29'
+slug: /b55634b1-9beb-4bc7-8f30-fdc3ec06cd29
 title: 'EPM - Disk - Agent - Drive Space Check - Client Specific'
 title_meta: 'EPM - Disk - Agent - Drive Space Check - Client Specific'
 keywords: ['monitoring', 'drive', 'space', 'threshold', 'alert']
@@ -75,7 +76,6 @@ WHERE
         )
     )
 ```
-
 
 
 

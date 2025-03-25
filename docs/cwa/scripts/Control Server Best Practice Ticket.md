@@ -1,5 +1,6 @@
 ---
 id: '76867be6-fe44-441a-92ce-e3d1124c361d'
+slug: /76867be6-fe44-441a-92ce-e3d1124c361d
 title: 'Control Server Best Practice Ticket'
 title_meta: 'Control Server Best Practice Ticket'
 keywords: ['auditing', 'hardening', 'gpo', 'security', 'windows', 'iis', 'tls', 'ports', 'automation']
@@ -49,6 +50,5 @@ This document details the process of auditing and establishing hardening rules a
 ## Output
 
 Ticket
-
 
 

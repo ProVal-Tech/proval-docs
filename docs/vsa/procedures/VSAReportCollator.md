@@ -1,5 +1,6 @@
 ---
 id: '972520b0-e025-416c-87e0-f226438414d4'
+slug: /972520b0-e025-416c-87e0-f226438414d4
 title: 'VSAReportCollator'
 title_meta: 'VSAReportCollator'
 keywords: ['csv', 'report', 'email', 'attachment', 'kaseya']
@@ -20,6 +21,5 @@ Collate CSV Report Parts from Kaseya GetFiles Then Send As Attachment
 - **msgsubject**: Required. The email subject line  
 - **msgattach**: Required. The email attachment file name  
 - **days**: Optional. Purge report parts older than X days before run  
-
 
 

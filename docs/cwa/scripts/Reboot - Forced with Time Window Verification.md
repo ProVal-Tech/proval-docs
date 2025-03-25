@@ -1,5 +1,6 @@
 ---
 id: 'c0d649f3-0de3-4928-9f15-19fbfb3f625e'
+slug: /c0d649f3-0de3-4928-9f15-19fbfb3f625e
 title: 'Reboot - Forced with Time Window Verification'
 title_meta: 'Reboot - Forced with Time Window Verification'
 keywords: ['reboot', 'machine', 'time', 'window', 'script']
@@ -39,6 +40,5 @@ This script will reboot a machine, but only if it is within a preconfigured time
 ## Output
 
 - Script log
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c25262f7-50fa-49f1-9d3e-a6b37001f43c'
+slug: /c25262f7-50fa-49f1-9d3e-a6b37001f43c
 title: 'AD - Domain Admin Reporting'
 title_meta: 'AD - Domain Admin Reporting'
 keywords: ['audit', 'active-directory', 'admin', 'group', 'changes']
@@ -56,6 +57,5 @@ The script provides auditing for members of Admin groups in Active Directory and
 - Script log
 - Script state
 - Ticket (optional)
-
 
 

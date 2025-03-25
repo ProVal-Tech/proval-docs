@@ -1,5 +1,6 @@
 ---
 id: '90ad5d20-a081-4027-b8e2-238cbdbe64d3'
+slug: /90ad5d20-a081-4027-b8e2-238cbdbe64d3
 title: 'DHCP Scope(s) < 5 IP Addresses Available'
 title_meta: 'DHCP Scope(s) < 5 IP Addresses Available'
 keywords: ['dhcp', 'monitor', 'ip', 'addresses', 'network', 'alert', 'server']

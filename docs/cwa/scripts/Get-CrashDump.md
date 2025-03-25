@@ -1,5 +1,6 @@
 ---
 id: 'dde000a0-373a-4023-a594-04e532b5ad57'
+slug: /dde000a0-373a-4023-a594-04e532b5ad57
 title: 'Get-CrashDump'
 title_meta: 'Get-CrashDump'
 keywords: ['crash', 'dump', 'information', 'data', 'ticket', 'email', 'custom', 'table']
@@ -95,6 +96,5 @@ This document collects information regarding any existing crash dumps.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
-
 
 

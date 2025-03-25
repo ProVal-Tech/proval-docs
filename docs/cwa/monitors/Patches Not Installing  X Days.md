@@ -1,5 +1,6 @@
 ---
 id: '663a6cf8-f3da-4a44-9725-73aae8d4d954'
+slug: /663a6cf8-f3da-4a44-9725-73aae8d4d954
 title: 'Patches Not Installing  X Days'
 title_meta: 'Patches Not Installing  X Days'
 keywords: ['cumulative', 'patch', 'monitoring', 'updates', 'alerting']
@@ -59,7 +60,6 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c'
+slug: /c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c
 title: 'Office C2R Automatic Update Repair'
 title_meta: 'Office C2R Automatic Update Repair'
 keywords: ['office', 'update', 'repair', 'automatic', 'click2run']
@@ -41,6 +42,5 @@ This document describes the process to repair the Office Click2Run Automatic Upd
 ## Output
 
 Agent Procedure Log
-
 
 

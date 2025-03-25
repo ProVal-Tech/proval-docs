@@ -1,5 +1,6 @@
 ---
 id: '9029e4ae-478e-4f04-8138-b632a2dd5a16'
+slug: /9029e4ae-478e-4f04-8138-b632a2dd5a16
 title: 'Patch Approval Settings Audit'
 title_meta: 'Patch Approval Settings Audi'
 keywords: ['patch', 'patch-manager', 'windows', 'audit', 'alert', 'denied', 'approved', 'ignored', 'unapproved']

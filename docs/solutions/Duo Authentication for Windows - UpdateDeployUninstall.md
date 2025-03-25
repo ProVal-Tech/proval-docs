@@ -1,5 +1,6 @@
 ---
 id: '34f77d1b-342e-49bd-bc31-39894850c7c1'
+slug: /34f77d1b-342e-49bd-bc31-39894850c7c1
 title: 'Duo Authentication for Windows - UpdateDeployUninstall'
 title_meta: 'Duo Authentication for Windows - UpdateDeployUninstall'
 keywords: ['duo', 'update', 'install', 'monitor', 'automation']
@@ -76,7 +77,6 @@ Configure the solution as outlined below:
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](<../cwa/scripts/Uninstall DUO.md>) bonded to it.
     - Right-click and Run Now to start the monitor.
-
 
 
 

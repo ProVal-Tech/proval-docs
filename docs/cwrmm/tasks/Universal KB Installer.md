@@ -1,5 +1,6 @@
 ---
 id: '73342741-22cd-4486-9ef5-d22b714d9105'
+slug: /73342741-22cd-4486-9ef5-d22b714d9105
 title: 'Universal KB Installer'
 title_meta: 'Universal KB Installer'
 keywords: ['kb', 'installer', 'windows', 'patch', 'update']
@@ -168,6 +169,5 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
 
 

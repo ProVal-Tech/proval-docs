@@ -1,5 +1,6 @@
 ---
 id: '77f0982f-1be7-49a7-871e-cfc88705775e'
+slug: /77f0982f-1be7-49a7-871e-cfc88705775e
 title: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 title_meta: 'Microsoft 365 - Click-to-Run - Set Update Channel'
 keywords: ['microsoft', 'update', 'channel', 'registry', 'client', 'computer', 'edf']
@@ -48,7 +49,6 @@ This script will make changes in the registry to set the update channel for Micr
 - Script Log
 - Custom Table
 - Dataview
-
 
 
 

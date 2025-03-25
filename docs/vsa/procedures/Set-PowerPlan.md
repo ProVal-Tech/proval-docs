@@ -1,5 +1,6 @@
 ---
 id: '9aa93802-fded-4dc8-9c58-761410b5755d'
+slug: /9aa93802-fded-4dc8-9c58-761410b5755d
 title: 'Set-PowerPlan'
 title_meta: 'Set-PowerPlan'
 keywords: ['power', 'plan', 'csv', 'settings', 'configuration']

@@ -1,5 +1,6 @@
 ---
 id: 'a56e605b-a1d4-45ea-bebb-4411f3890f7e'
+slug: /a56e605b-a1d4-45ea-bebb-4411f3890f7e
 title: 'ClearAudit - Browser Saved Password'
 title_meta: 'ClearAudit - Browser Saved Password'
 keywords: ['browser', 'password', 'audit', 'clearance', 'windows']
@@ -362,5 +363,4 @@ This screen will appear.
 
 - Script log
 - Custom field
-
 

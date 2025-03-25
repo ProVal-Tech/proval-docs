@@ -1,5 +1,6 @@
 ---
 id: '32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a'
+slug: /32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a
 title: 'User Prompt for Reboot'
 title_meta: 'User Prompt for Reboot'
 keywords: ['automate', 'reboot', 'prompt', 'user', 'monitor', 'script']

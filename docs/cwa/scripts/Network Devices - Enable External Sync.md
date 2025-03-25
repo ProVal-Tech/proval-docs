@@ -1,5 +1,6 @@
 ---
 id: '93a9567a-d04c-449d-b9d9-d2b68ffa3293'
+slug: /93a9567a-d04c-449d-b9d9-d2b68ffa3293
 title: 'Network Devices - Enable External Sync'
 title_meta: 'Network Devices - Enable External Sync'
 keywords: ['network', 'sync', 'devices', 'external', 'automate']
@@ -77,7 +78,6 @@ Device-level EDF
 ## Output
 
 - Script log
-
 
 
 

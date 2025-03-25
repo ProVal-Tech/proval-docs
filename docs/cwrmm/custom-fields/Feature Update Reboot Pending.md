@@ -1,5 +1,6 @@
 ---
 id: '45e14854-ba83-4737-8264-b5cd809fca56'
+slug: /45e14854-ba83-4737-8264-b5cd809fca56
 title: 'Feature Update Reboot Pending'
 title_meta: 'Feature Update Reboot Pending'
 keywords: ['update', 'install', 'tracking', 'custom', 'field']
@@ -27,6 +28,5 @@ The `Feature Update Install With Tracking` script flags a custom field if the in
 **Default Value:** No  
 **Description:** Will be checked only if the machine has not rebooted since running the Feature Update Install task where the Reboot parameter was not set to reboot.  
 **Editable:** Yes  
-
 
 

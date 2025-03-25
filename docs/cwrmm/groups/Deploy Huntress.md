@@ -1,5 +1,6 @@
 ---
 id: 'c19dc248-c6a0-4f9c-88c5-b3058245d74a'
+slug: /c19dc248-c6a0-4f9c-88c5-b3058245d74a
 title: 'Deploy Huntress'
 title_meta: 'Deploy Huntress'
 keywords: ['huntress', 'windows', 'group', 'filter', 'agent']
@@ -50,6 +51,5 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/Deploy-Huntress/image_3.png)
 
 ![Image](../../../static/img/Deploy-Huntress/image_4.png)
-
 
 

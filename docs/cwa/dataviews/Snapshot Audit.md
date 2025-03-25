@@ -1,5 +1,6 @@
 ---
 id: 'fe210a09-4182-4917-9eea-c9e2f028c8ec'
+slug: /fe210a09-4182-4917-9eea-c9e2f028c8ec
 title: 'Snapshot Audit'
 title_meta: 'Snapshot Audit'
 keywords: ['audit', 'snapshots', 'esxi', 'virtual', 'machines']
@@ -50,6 +51,5 @@ This dataview helps you audit snapshots of the virtual machines that exist on an
 | Estimated Disk Max Usage        | Displays the maximum disk usage by the snapshot      |
 | Snapshot Description             | Displays the description of the snapshot             |
 | Is Current Snapshot             | Displays whether the snapshot is current or not      |
-
 
 

@@ -1,5 +1,6 @@
 ---
 id: 'abddfc3a-9f1b-4356-a62c-3475cdb32c96'
+slug: /abddfc3a-9f1b-4356-a62c-3475cdb32c96
 title: 'Backup Exec - No successful backups in 3 days'
 title_meta: 'Backup Exec - No successful backups in 3 days'
 keywords: ['backup', 'exec', 'alert', 'monitoring', 'ticketing']

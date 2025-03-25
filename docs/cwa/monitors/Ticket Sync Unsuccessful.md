@@ -1,5 +1,6 @@
 ---
 id: '1fa27f5d-ca9d-4bff-8776-569a15f772d3'
+slug: /1fa27f5d-ca9d-4bff-8776-569a15f772d3
 title: 'Ticket Sync Unsuccessful'
 title_meta: 'Ticket Sync Unsuccessful'
 keywords: ['ticket', 'sync', 'monitor', 'psa', 'automate']

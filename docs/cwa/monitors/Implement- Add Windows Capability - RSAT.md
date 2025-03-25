@@ -1,5 +1,6 @@
 ---
 id: 'b927b474-abad-4e84-8f39-8995d5ace913'
+slug: /b927b474-abad-4e84-8f39-8995d5ace913
 title: 'Implement- Add Windows Capability - RSAT'
 title_meta: 'Implement- Add Windows Capability - RSAT'
 keywords: ['rsat', 'groupid', 'query', 'monitor', 'alert', 'automation']

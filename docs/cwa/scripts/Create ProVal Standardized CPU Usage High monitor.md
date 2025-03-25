@@ -1,5 +1,6 @@
 ---
 id: '6ddadabd-4b0f-45b0-92d5-51a58eba15a4'
+slug: /6ddadabd-4b0f-45b0-92d5-51a58eba15a4
 title: 'Create ProVal Standardized CPU Usage High monitor'
 title_meta: 'Create ProVal Standardized CPU Usage High monitor'
 keywords: ['cpu', 'monitoring', 'alerting', 'configuration', 'performance', 'group', 'threshold']
@@ -49,6 +50,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
-
 
 

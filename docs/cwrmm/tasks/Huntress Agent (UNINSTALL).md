@@ -1,5 +1,6 @@
 ---
 id: '12b83efc-afab-463a-a26e-d94e9e963d96'
+slug: /12b83efc-afab-463a-a26e-d94e9e963d96
 title: 'Huntress Agent (UNINSTALL)'
 title_meta: 'Huntress Agent (UNINSTALL)'
 keywords: ['uninstall', 'huntress', 'windows', 'agent', 'script']
@@ -164,6 +165,5 @@ Then click on "Schedule" and provide the parameters details as necessary for the
 ## Output
 
 - Script log
-
 
 

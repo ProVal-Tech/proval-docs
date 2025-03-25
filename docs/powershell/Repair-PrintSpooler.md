@@ -1,5 +1,6 @@
 ---
 id: 'e4682e46-5a47-4d8c-8a1a-24e87e11d0b9'
+slug: /e4682e46-5a47-4d8c-8a1a-24e87e11d0b9
 title: 'Repair-PrintSpooler'
 title_meta: 'Repair-PrintSpooler'
 keywords: ['repair', 'printspooler', 'service', 'reset']
@@ -46,6 +47,5 @@ Location of output for log and error files:
 .\Repair-PrintSpooler-log.txt
 .\Repair-PrintSpooler-error.txt
 ```
-
 
 

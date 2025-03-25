@@ -1,5 +1,6 @@
 ---
 id: '9c3ebf70-921b-46e4-bdab-409e06e17a5f'
+slug: /9c3ebf70-921b-46e4-bdab-409e06e17a5f
 title: 'Machines with Login Bug Issue'
 title_meta: 'Machines with Login Bug Issue'
 keywords: ['monitor', 'login', 'issue', 'reboot', 'agent']
@@ -30,6 +31,5 @@ This monitor is a global monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
-
 
 

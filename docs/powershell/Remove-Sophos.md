@@ -1,5 +1,6 @@
 ---
 id: '3e0adee0-1a8c-476a-aea4-616a66b4de12'
+slug: /3e0adee0-1a8c-476a-aea4-616a66b4de12
 title: 'Remove-Sophos'
 title_meta: 'Remove-Sophos'
 keywords: ['remove', 'sophos', 'uninstall', 'security']
@@ -35,6 +36,5 @@ Location of output for log, result, and error files.
 .\Remove-Sophos-Log.txt
 .\Remove-Sophos-Error.txt
 ```
-
 
 
