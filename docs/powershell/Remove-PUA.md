@@ -2,7 +2,7 @@
 
 The Remove-PUA.ps1 script is designed to manage and remove bloatware packages on Windows systems. It provides functionality to list and remove pre-installed packages using curated lists from a [trusted repository](https://raw.githubusercontent.com/ProVal-Tech/proval-docs/main/static/attachments/potentially-unwanted-applications.json).
 
- <span style={{color:red}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
+<span style={{color: 'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
 # Requirements
 
