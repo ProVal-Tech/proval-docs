@@ -20,7 +20,7 @@ This internal monitor detects windows machines selected for Network Adapters Pro
 
 ## Target
 
-Global
+Managed Windows Computers
 
 ## Alert Template
 
