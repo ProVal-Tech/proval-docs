@@ -2,7 +2,7 @@
 id: '9b40d1cd-7886-416f-b56e-11ab3a44befb'
 title: 'Application - InstallUpdate Winget'
 title_meta: 'Application - InstallUpdate Winget'
-keywords: ['monitor', 'update', 'application', 'packageid', 'source', 'dependencies']
+keywords: ['winget', 'monitor', 'update', 'application', 'packageid', 'source', 'dependencies']
 description: 'This document outlines a monitor designed to update applications based on the provided PackageID, Source, and Application Name. It includes setup instructions, dependencies, and target specifications for effective implementation.'
 tags: ['setup', 'software']
 draft: false
