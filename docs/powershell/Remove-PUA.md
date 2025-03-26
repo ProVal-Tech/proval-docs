@@ -1,82 +1,50 @@
----
-id: 'fda5f79b-3e83-4561-af2b-2533f41c7443'
-title: 'Remove-PUA'
-title_meta: 'Remove-PUA'
-keywords: ['remove', 'bloatware', 'cleanup', 'software']
-description: 'Documentation for the Remove-PUA command to remove potentially unwanted applications (PUA) from computers.'
-tags: ['software', 'uninstallation']
-draft: false
-unlisted: false
----
+# Overview
 
-## Description
-Removes bloatware from computers agnostically in a single PowerShell script.
+The Remove-PUA.ps1 script is designed to manage and remove bloatware packages on Windows systems. It provides functionality to list and remove pre-installed packages using curated lists from a [trusted repository](https://content.provaltech.com/attachments/potentially-unwanted-applications.json).
 
-## Requirements
-Parameters are required at minimum. This script contains six system objects, five of which are specific to listing potential bloatware by category. The final object contains potential `.exe` silent switches. As we identify more items to list, this script will need to be modified to add such items.
+ <span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
-## Usage
-1. What initial switch was used
-    1. **RemoveAll**
-        1. There is an additional switch
-            1. Category selected
-                1. Populate a list of all items in that category
-                    1. Is there an additional switch?
-                        1. Except is selected
-                            1. Remove the item(s) excepted from the items list for that category
-                            2. Uninstall all other installed items from that list
-                        2. Except is not selected
-                            1. Filter list down to only installed items
-                            2. Uninstall those items
-            2. Except selected
-                1. Remove the item(s) excepted from the list it belongs to
-                2. Uninstall all other items from that list
-        2. There is no additional switch
-            1. Check all items in all lists
-            2. Filter down to only installed applications
-            3. Uninstall the items
-    2. **Remove**
-        1. Are the item(s) in a list?
-            1. No
-                1. Error out in error log: could not find item
-            2. Yes
-                1. Uninstall item(s) listed in string array
-    3. **ListBloatware**
-        1. Display a list of all potential installed items
+# Requirements
 
-See what potential bloatware is installed:
+This script requires an internet connection to fetch the list of potentially unwanted applications (PUA) from a remote repository. It also requires the `Strapper` module, which will be installed and updated automatically if not already present.
+
+# Process
+
+The script operates by first setting up the necessary environment and fetching the list of PUAs from a [remote URL](https://content.provaltech.com/attachments/potentially-unwanted-applications.json). It then processes the installed packages on the system and performs actions based on the provided parameters. The script can list installed packages, remove all packages from specified categories, exclude specific packages from removal, or remove specific packages by name.
+
+# Payload Usage
+
+The script is executed using PowerShell and requires specific parameters to perform its operations. Below are examples of how to use the script:
+
 ```powershell
-.\Remove-PUA.ps1 -ListBloatware 
-```
-I intend to remove specific software:
-```powershell
-.\Remove-PUA.ps1 -Remove "this software","and that software" 
-```
-I intend to remove all bloatware:
-```powershell
-.\Remove-PUA.ps1 -RemoveAll
-```
-I intend to remove all Microsoft-based bloatware:
-```powershell
+# List all installed Appx packages
+.\Remove-PUA.ps1 -ListBloatware
+
+# Remove all Microsoft bloatware packages
 .\Remove-PUA.ps1 -RemoveAll -Category MsftBloatApps
-```
-I intend to remove all Microsoft-based bloatware except MSPaint and Windows Camera:
-```powershell
-.\Remove-PUA.ps1 -RemoveAll -Category MsftBloatApps -Except "microsoft.mspaint","microsoft.windowscamera"
+
+# Remove all bloatware except Solitaire
+.\Remove-PUA.ps1 -RemoveAll -Except 'Microsoft.SolitaireCollection'
+
+# Remove specific packages by name
+.\Remove-PUA.ps1 -Remove 'Microsoft.BingWeather', 'Microsoft.GetHelp'
 ```
 
-## Parameters
-| Parameter         | Alias | Required  | Default   | Type        | Description                               |
-| ----------------- | ----- | --------- | --------- | ----------- | ----------------------------------------- |
-| `ListBloatware`   |       | True      |           | Switch      | Provides a list of any installed potential bloatware |
-| `Remove`          |       | True      |           | StringArray | The name of the application or applications you wish to uninstall |
-| `RemoveAll`       |       | True      |           | Switch      | Switch required to remove all bloatware by category or all found bloatware with or without exceptions |
-| `Category`        |       | False     |           | ValidateSet | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware |
-| `Except`          |       | False     |           | StringArray | Used with RemoveAll or Category to remove all except some item(s) from a category or all together |
+# Parameters
 
-## Output
+| Parameter         | Alias | Required  | Default   | Type      | Description                               |
+| ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
+| `RemoveAll`       |       | True      |           | Switch    | Remove all packages from specified categories (default: both Microsoft and ThirdParty). |
+| `Category`        |       | False     |           | String    | Filter removal to specific categories (`MsftBloatApps`/`ThirdPartyBloatApps`). |
+| `Except`          |       | False     |           | String[]  | Exclude specific packages from removal operations. |
+| `Remove`          |       | True      |           | String[]  | Remove specific packages by name (bypasses category filters). |
+| `ListBloatware`   |       | True      |           | Switch    | List installed packages without making changes. |
+
+# Output
+
 - `.\Remove-PUA-log.txt`
 - `.\Remove-PUA-error.txt`
 
+# PUA List
 
-
+[PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
