@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 This function script is called from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142).  
-Its function is to deny those patches present in the [plugin_proval_denied_patches](<../tables/plugin_proval_denied_patches.md>) table.
+Its function is to deny those patches present in the [plugin_proval_denied_patches](/docs/9ee3657f-dff8-4599-a4c3-68ca3ba171f4) table.
 
 ## Sample Run
 
@@ -23,7 +23,7 @@ This is a function script and cannot be executed directly on the computers.
 ## Dependencies
 
 - [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142)
-- [plugin_proval_denied_patches](<../tables/plugin_proval_denied_patches.md>)
+- [plugin_proval_denied_patches](/docs/9ee3657f-dff8-4599-a4c3-68ca3ba171f4)
 
 ## Variables
 

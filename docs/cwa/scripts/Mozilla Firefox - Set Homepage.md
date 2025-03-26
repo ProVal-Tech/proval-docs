@@ -24,7 +24,7 @@ This script adds the registry policy for an enforced homepage in Mozilla Firefox
 
 - Windows 10 1703+
 - Mozilla Firefox installed
-- [Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>)
+- [Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)
 
 ## Variables
 

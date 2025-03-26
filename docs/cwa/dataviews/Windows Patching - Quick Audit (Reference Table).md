@@ -19,7 +19,7 @@ Sample Screenshot:
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)  
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)  
 **The updated version of this table must be imported to get better results from the dataview.**  
 
 ## Columns
@@ -48,12 +48,12 @@ Sample Screenshot:
 ## FAQs
 
 **Q: Applying the filter is taking forever?**  
-**A:** This is likely because the dataview is complex and processing a large amount of data. There is no better way to overcome this; however, the [CWM - Automate - Script - Dataview - Email as CSV [Param]](<../scripts/Dataview - Email as CSV Param.md>) script can be used to email the dataview and apply the filters in the CSV rather than in the dataview.  
+**A:** This is likely because the dataview is complex and processing a large amount of data. There is no better way to overcome this; however, the [CWM - Automate - Script - Dataview - Email as CSV [Param]](/docs/4b15de07-233d-462b-91ce-3ee060457e65) script can be used to email the dataview and apply the filters in the CSV rather than in the dataview.  
 
 **Step 1:** Find the ID of the `Windows Patching - Quick Audit (Reference Table)` dataview.  
 ![Step 1](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_2.png)  
 
-**Step 2:** Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](<../scripts/Dataview - Email as CSV Param.md>) script against any online Windows machine with the correct parameters.  
+**Step 2:** Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](/docs/4b15de07-233d-462b-91ce-3ee060457e65) script against any online Windows machine with the correct parameters.  
 ![Step 2](../../../static/img/Windows-Patching---Quick-Audit-(Reference-Table)/image_3.png)  
 
 Once you receive the CSV in your email, you can easily apply the required filters.

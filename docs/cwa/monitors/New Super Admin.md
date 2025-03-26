@@ -16,7 +16,7 @@ This internal monitor detects when a new Super Admin permission is provisioned t
 
 ## Dependencies
 
-[plugin_proval_superadminaudit](../tables/plugin_proval_superadminaudit.md)
+[plugin_proval_superadminaudit](/docs/db1adf1f-7ff0-4b43-af21-6dc3d64bd3a9)
 
 ## Target
 

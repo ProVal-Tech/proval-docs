@@ -16,7 +16,7 @@ This document displays the list of audited group policies from the script @Group
 
 ## Dependencies
 
-- [Group Policy Audit](../scripts/group-policy-audit.md)
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
 
 ## Table
 

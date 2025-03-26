@@ -20,7 +20,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Global Parameters
 
@@ -37,7 +37,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Process
 
-Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>) for the process.
+Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7) for the process.
 
 ## Output
 

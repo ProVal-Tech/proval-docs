@@ -16,7 +16,7 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 
 ## Dependencies
 
-[EPM - Windows Configuration - Remote Monitor - SMB1 Detection](<../monitors/SMB1 Detection.md>)
+[EPM - Windows Configuration - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
 
 ## Columns
 

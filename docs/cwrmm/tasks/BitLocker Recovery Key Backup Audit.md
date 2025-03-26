@@ -20,7 +20,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - BitLocker Key Backup Status](<../custom-fields/BitLocker Key Backup Status.md>)
+[CW RMM - Custom Field - BitLocker Key Backup Status](/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f)
 
 ## Create Script
 

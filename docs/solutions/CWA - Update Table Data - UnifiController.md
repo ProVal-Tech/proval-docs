@@ -18,11 +18,11 @@ This document provides the requested data from the Unifi controller to the Conne
 
 | Content                                                                                           | Type            | Function                                                                                      |
 |---------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------|
-| [EPM - Data Collection - Agnostic - Script - Get-UnifiController](<../powershell/Get-UnifiController.md>) | Agnostic Script  | Returns all available data from the Unifi Controller.                                       |
-| [CWM - Automate - Script - Update Table Data - UnifiController](<../cwa/scripts/Update Table Data - UnifiController.md>) | Script          | 1. Executes Agnostic Script  2. Creates Custom Tables  3. Populates those tables with data |
-| [CWM - Automate - Custom Table - plugin_proval_unificontroller](<../cwa/tables/plugin_proval_unificontroller.md>) | Custom Table    | Holds individual controller to Client / Location Data.                                       |
-| [CWM - Automate - Custom Table - plugin_proval_unifidevices](<../cwa/tables/plugin_proval_unifidevices.md>) | Custom Table    | Each controller has devices; this information is stored here.                               |
-| [CWM - Automate - Custom Table - plugin_proval_unifiwireless](<../cwa/tables/plugin_proval_unifiwireless.md>) | Custom Table    | Each site has wireless information; this information is stored here.                        |
+| [EPM - Data Collection - Agnostic - Script - Get-UnifiController](/docs/d5d5fe24-6009-48cf-9d51-ac4763a1be7f) | Agnostic Script  | Returns all available data from the Unifi Controller.                                       |
+| [CWM - Automate - Script - Update Table Data - UnifiController](/docs/7a09c023-231a-4574-a367-ef8009537e23) | Script          | 1. Executes Agnostic Script  2. Creates Custom Tables  3. Populates those tables with data |
+| [CWM - Automate - Custom Table - plugin_proval_unificontroller](/docs/317fccab-60e6-4af7-8866-1b4d862d973e) | Custom Table    | Holds individual controller to Client / Location Data.                                       |
+| [CWM - Automate - Custom Table - plugin_proval_unifidevices](/docs/048bcde3-a1b4-45a9-a86c-ba19c0a40933) | Custom Table    | Each controller has devices; this information is stored here.                               |
+| [CWM - Automate - Custom Table - plugin_proval_unifiwireless](/docs/e4a1a60d-1e35-4336-a1a3-28e2ffb12855) | Custom Table    | Each site has wireless information; this information is stored here.                        |
 
 ## Implementation
 

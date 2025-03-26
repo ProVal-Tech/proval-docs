@@ -16,7 +16,7 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Audit - GPO Redirection Settings](<../scripts/Audit - GPO Redirection Settings.md>)
+[EPM - Data Collection - Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
 
 ## Tables
 

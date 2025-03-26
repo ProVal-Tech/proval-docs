@@ -21,7 +21,7 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 
 ## Dependencies
 
-- [plugin_proval_diskpart_style](<../tables/plugin_proval_diskpart_style.md>)  
+- [plugin_proval_diskpart_style](/docs/c8745cde-e56d-4ea5-b4ae-2e213c4e21d2)  
 - @Audit Disk Partition Styles - DV
 
 ## Process

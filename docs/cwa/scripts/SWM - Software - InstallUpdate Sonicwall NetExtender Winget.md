@@ -29,7 +29,7 @@ This script attempts to install or update the SonicWall NetExtender application 
 
 ## Process
 
-This script performs the SonicWall NetExtender install/update using Winget. It can be run directly or scheduled with the monitor [SonicWall NetExtender Deployment](<../monitors/SonicWall NetExtender Deployment.md>).
+This script performs the SonicWall NetExtender install/update using Winget. It can be run directly or scheduled with the monitor [SonicWall NetExtender Deployment](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e).
 
 **Note:** This script needs to be scheduled on at least one machine permanently so that the maximum version keeps updating in the database to trigger the monitor for the update of the SonicWall NetExtender on all agents where it is installed.
 

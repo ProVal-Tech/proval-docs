@@ -36,4 +36,4 @@ Windows Servers
 
 ## How to Import
 
-[Import - Remote Monitor - Enable BitLocker Feature](<./Import- Enable Bitlocker Feature.md>)
+[Import - Remote Monitor - Enable BitLocker Feature](/docs/183d5388-764f-4e39-9ddc-2e4212b579e4)

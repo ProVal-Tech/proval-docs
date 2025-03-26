@@ -16,7 +16,7 @@ This custom field is used to determine if the Senteon Agent is installed on the 
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
+[SWM - Software Management - Solution - Senteon Agent](/docs/5cc5165d-4314-499b-9357-299f3b04f402)
 
 ## Details
 

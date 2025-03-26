@@ -25,9 +25,9 @@ To exclude self-signed, Microsoft-generated certificates, and any certificate wi
 ## Dependencies
 
 This monitor is dependent on the following items:
-- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)  
-- [EPM - Network - Custom Table - plugin_proval_certs](<../tables/plugin_proval_certs.md>)  
-- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) (not required, but creates more detailed tickets)
+- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)  
+- [EPM - Network - Custom Table - plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552)  
+- [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) (not required, but creates more detailed tickets)
 
 ## Target
 

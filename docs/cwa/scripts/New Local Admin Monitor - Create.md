@@ -14,9 +14,9 @@ unlisted: false
 
 This document describes the process for creating remote monitors to identify new or elevated local administrators on Windows machines. The creation of these remote monitors is based on system properties, as well as client-level, location-level, and computer-level Extra Data Fields (EDFs), which are further explained in this document.
 
-The script generates remote monitors that trigger an alert when a user or group of users is promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
+The script generates remote monitors that trigger an alert when a user or group of users is promoted as local administrators on the endpoint machine. By default, it excludes the `Domain Admins` ($Env:DOMAIN/Domain Admins) group from generating tickets, as well as local administrators created by the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution. Additionally, the system properties, detailed further in the document, can be used to exclude specific users if necessary.
 
-The generated remote monitor `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>) agnostic script to perform the monitoring.
+The generated remote monitor `ProVal - Production - New Local Admin` will use the [Get-NewLocalAdmin](/docs/a79af7f1-2ef6-4769-bf7f-b0214e198ac1) agnostic script to perform the monitoring.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-NewLocalAdmin/Get-NewLocalAdmin.ps1`
 
@@ -32,7 +32,7 @@ The generated remote monitor `ProVal - Production - New Local Admin` will use th
 
 ## Important Note
 
-The `ProVal - Production - New Local Admin Monitor` remote monitor will not be created for the machines where the [Local Admin Group Cleanup](<../../solutions/Local Admin Group Cleanup.md>) solution is enabled. Additionally, the script will remove the existing monitor after enabling the [Local Admin Group Cleanup](<../../solutions/Local Admin Group Cleanup.md>) solution for the machine.
+The `ProVal - Production - New Local Admin Monitor` remote monitor will not be created for the machines where the [Local Admin Group Cleanup](/docs/f65e32ea-dd71-436e-bb50-5607d23b8adb) solution is enabled. Additionally, the script will remove the existing monitor after enabling the [Local Admin Group Cleanup](/docs/f65e32ea-dd71-436e-bb50-5607d23b8adb) solution for the machine.
 
 ## Update Notice: 27-September-2024
 
@@ -82,7 +82,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Get-NewLocalAdmin](<../../powershell/Get-NewLocalAdmin.md>)
+[EPM - User Management - Agnostic - Get-NewLocalAdmin](/docs/a79af7f1-2ef6-4769-bf7f-b0214e198ac1)
 
 ## User Parameters
 
@@ -119,7 +119,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 8. **Excluded_Users**  
    - This EDF stores the usernames to exclude from generating the new local admin-detected tickets.  
    - The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NLA_Monitoring_Excluded_Users` system property.  
-   - The username stored in the `1c. UserName` EDF will be excluded from the remote monitor if the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution is enabled on the machine and it is using the username stored in the EDF.  
+   - The username stored in the `1c. UserName` EDF will be excluded from the remote monitor if the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution is enabled on the machine and it is using the username stored in the EDF.  
    ![Excluded Users EDF](../../../static/img/New-Local-Admin-Monitor---Create/image_10.png)
 
 ## Computer-Level EDF

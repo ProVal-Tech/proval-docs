@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script that executes the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) and [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) scripts.
+This script gathers all the extensions installed on the Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox browsers. It's a wrapper script that executes the [Get Chromium Browsers Extensions](/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81) and [Get Firefox Browser Extensions](/docs/472a8d13-fd00-4a97-90dd-833a171eac40) scripts.
 
 ## Sample Run
 
@@ -20,9 +20,9 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 ## Dependencies
 
-- [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>)
-- [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>)
-- [CWM - Automate - Dataview - Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>)
+- [Get Chromium Browsers Extensions](/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81)
+- [Get Firefox Browser Extensions](/docs/472a8d13-fd00-4a97-90dd-833a171eac40)
+- [CWM - Automate - Dataview - Installed Browsers Extensions [Script]](/docs/9c095cab-514b-479d-a302-bdb596caefe5)
 
 ## Variables
 
@@ -34,8 +34,8 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 
 - Refresh software inventory.
 - Look for the installed browsers.
-- Execute the [Get Chromium Browsers Extensions](<./Get Chromium Browsers Extensions.md>) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
-- Execute the [Get Firefox Browser Extensions](<./Get Firefox Browser Extensions.md>) script if the `Mozilla Firefox` browser is installed.
+- Execute the [Get Chromium Browsers Extensions](/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81) script if any of the `Google Chrome`, `Brave`, or `Microsoft Edge` browsers are installed.
+- Execute the [Get Firefox Browser Extensions](/docs/472a8d13-fd00-4a97-90dd-833a171eac40) script if the `Mozilla Firefox` browser is installed.
 
 ## Output
 

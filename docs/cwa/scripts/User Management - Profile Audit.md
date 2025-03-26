@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Superseded by [EPM - Accounts - Script - User Profile - Get Information](<./User Profile - Get Information.md>).
+Superseded by [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8).
 
 This script looks for user profile information at the machine level. It provides information about whether a user is local/domain, admin or not, password set or not, profile size, last logon, and the timestamp of the audit.
 
@@ -26,7 +26,7 @@ This script looks for user profile information at the machine level. It provides
 
 - @Windows – Local Account Audit (script)
 - Requires Windows OS
-- [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
+- [custom_proval_computer_accounts](/docs/2d9698ff-636d-4d56-b5d0-4ca308a6b5e5)
 
 ## Variables
 
@@ -35,7 +35,7 @@ This script looks for user profile information at the machine level. It provides
 
 ## Process
 
-1. This script creates the [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>) table if it doesn't exist.
+1. This script creates the [custom_proval_computer_accounts](/docs/2d9698ff-636d-4d56-b5d0-4ca308a6b5e5) table if it doesn't exist.
 2. Runs a PowerShell script to gather the list of users, properties, and sizes.
 3. Logs the output in Automate's script logs.
 4. Trims the PowerShell output via SQL and performs a RegEx to verify data.
@@ -45,7 +45,7 @@ This script looks for user profile information at the machine level. It provides
 ## Output
 
 - Script log
-- [custom_proval_computer_accounts](<../tables/custom_proval_computer_accounts.md>)
+- [custom_proval_computer_accounts](/docs/2d9698ff-636d-4d56-b5d0-4ca308a6b5e5)
 - @Windows – Local Account Audit (Dataview)
 
 

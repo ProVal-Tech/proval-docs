@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This DataView displays the Windows Shadow Copy state for endpoints with Shadow Copy enabled that have run the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) to gather the information.
+This DataView displays the Windows Shadow Copy state for endpoints with Shadow Copy enabled that have run the script [Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766) to gather the information.
 
 ## Dependencies
 
-- [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
-- [Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)
+- [Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)
+- [Custom Table - plugin_proval_shadowcopystats](/docs/59bbf54a-55af-42fa-9e77-cd0b105122de)
 
 ## Columns
 

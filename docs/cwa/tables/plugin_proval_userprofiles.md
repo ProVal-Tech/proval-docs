@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](<../dataviews/Windows - User Profiles.md>).
+This document stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43).
 
 ## Dependencies
 
-- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
+- [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)
 
 ## Tables
 

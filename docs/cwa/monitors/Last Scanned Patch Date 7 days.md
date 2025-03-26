@@ -16,7 +16,7 @@ The monitor set will look for machines where the patch inventory is older than 7
 
 ## Dependencies
 
-[SEC - Windows Patching - Script - Repair Failing Patch Scans](<../scripts/Repair Failing Patch Scans.md>)
+[SEC - Windows Patching - Script - Repair Failing Patch Scans](/docs/05f60b47-188b-4383-9e9c-98780ba6e488)
 
 ## Target
 

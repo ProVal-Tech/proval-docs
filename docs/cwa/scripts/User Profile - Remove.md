@@ -14,7 +14,7 @@ unlisted: false
 
 ### <span style={{color: 'red'}}>***This script is destructive and should only be used after fully understanding the implications.***</span>
 
-This script deletes a user profile and removes the user account if it is local. It runs [User Profile - Get Information](<./User Profile - Get Information.md>) after successful deletion.
+This script deletes a user profile and removes the user account if it is local. It runs [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) after successful deletion.
 
 ## Sample Run
 
@@ -32,8 +32,8 @@ This script deletes a user profile and removes the user account if it is local. 
 
 ## Dependencies
 
-- [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
-- [User Profile - Get Information](<./User Profile - Get Information.md>)
+- [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac)
+- [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)
 
 ### User Parameters
 
@@ -46,7 +46,7 @@ This script deletes a user profile and removes the user account if it is local. 
 
 ## Process
 
-See [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>) for process information.
+See [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac) for process information.
 
 ## Output
 

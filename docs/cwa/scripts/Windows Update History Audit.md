@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes a script that gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](<../tables/pvl_windows_updates.md>) table.
+This document describes a script that gathers Windows update data and enters it into the [EPM - Custom Table - pvl_windows_updates](/docs/d1791eba-107c-4be0-8048-a1d716dae301) table.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This document describes a script that gathers Windows update data and enters it 
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
+- [EPM - Data Collection - Get-WindowsUpdateReport](/docs/b5940a1c-0e82-4756-86a2-b49e57d664f1)
 
 ## Variables
 
@@ -38,6 +38,6 @@ This document describes a script that gathers Windows update data and enters it 
 ## Output
 
 - Script Log
-- [pvl_windows_updates](<../tables/pvl_windows_updates.md>)
+- [pvl_windows_updates](/docs/d1791eba-107c-4be0-8048-a1d716dae301)
 
 

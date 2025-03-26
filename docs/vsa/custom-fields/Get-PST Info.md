@@ -16,7 +16,7 @@ Custom fields are updated by the agent procedure of this solution.
 
 ## Dependencies
 
-[Documentation Link](<../procedures/Get-PST Info.md>)
+[Documentation Link](/docs/5783728e-e3c6-46f2-b8ae-ea3df5c980ec)
 
 ## Details
 

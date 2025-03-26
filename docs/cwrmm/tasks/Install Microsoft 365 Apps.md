@@ -14,7 +14,7 @@ unlisted: false
 
 This guide explains how to install Microsoft 365 Apps for Business or any Microsoft 365 installation using XML configuration. You can use [https://config.office.com/](https://config.office.com/) to help build the configuration file. If no XML is provided, Microsoft 365 Apps for Business will install with a default configuration. XML settings include: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.
 
-CW RMM Implementation of [Install-Microsoft365](<../../unsorted/SWM - Software Install - Install-Microsoft365.md>)
+CW RMM Implementation of [Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8eda4d885b1)
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ CW RMM Implementation of [Install-Microsoft365](<../../unsorted/SWM - Software I
 
 ## Dependencies
 
-[SWM - Software Install - Install-Microsoft365](<../../unsorted/SWM - Software Install - Install-Microsoft365.md>)
+[SWM - Software Install - Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8eda4d885b1)
 
 ## User Parameters
 

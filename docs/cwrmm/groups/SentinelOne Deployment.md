@@ -16,9 +16,9 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Flag - SentinelOne Deployment Exclusion](<../custom-fields/Flag - SentinelOne Deployment Exclusion.md>)  
-- [CW RMM - Custom Field - Site - SentinelOne Site Key](<../custom-fields/Company - SentinelOne Site Key.md>)  
-- [CW RMM - Custom Field - Site - SentinelOne Group Key](<../custom-fields/Site - SentinelOne Group Key.md>)  
+- [CW RMM - Custom Field - Flag - SentinelOne Deployment Exclusion](/docs/a2967009-ef20-4ce5-823e-8b80349325a0)  
+- [CW RMM - Custom Field - Site - SentinelOne Site Key](/docs/0c2128f8-2f99-47e7-a0ff-82b854ff2701)  
+- [CW RMM - Custom Field - Site - SentinelOne Group Key](/docs/ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5)  
 
 ## Overview
 

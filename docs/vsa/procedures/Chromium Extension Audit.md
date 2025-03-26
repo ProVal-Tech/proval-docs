@@ -51,7 +51,7 @@ This document outlines the process of auditing Chromium extensions installed on 
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>)
+- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](/docs/8828a709-4424-48f9-a5bf-dfc81a40bb97)
 
 ## Process
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This document displays information about the EDFs filled by the [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
+This document displays information about the EDFs filled by the [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit.
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<../scripts/Log4J (Log4Shell) File Scan.md>)
+- [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba)
 
 ## Columns
 

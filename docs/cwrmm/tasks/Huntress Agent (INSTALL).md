@@ -16,11 +16,11 @@ Installs the Huntress agent on the Windows machine if it's not already installed
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](<../custom-fields/Huntress Acct_Key.md>)  
-- [CW RMM - Custom Fields - Huntress Org_Key](<../custom-fields/Huntress Org_Key.md>)  
-- [CW RMM - Custom Fields - Huntress Tag](<../custom-fields/Huntress Tag.md>)  
-- [CW RMM - Custom Fields - Huntress Deploy_Result](<../custom-fields/Huntress Deploy_Result.md>)  
-- [CW RMM - Device Group - Deploy Huntress](<../groups/Deploy Huntress.md>)  
+- [CW RMM - Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)  
+- [CW RMM - Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)  
+- [CW RMM - Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)  
+- [CW RMM - Custom Fields - Huntress Deploy_Result](/docs/822e9dc0-d455-4706-8482-175b85dbd491)  
+- [CW RMM - Device Group - Deploy Huntress](/docs/c19dc248-c6a0-4f9c-88c5-b3058245d74a)  
 
 ## Create Script
 

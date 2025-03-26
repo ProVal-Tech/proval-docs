@@ -23,7 +23,7 @@ Computer-level EDF `Unsupported Dell BIOS` will be marked for computers that do 
 
 ## Dependencies
 
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)  
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)  
 
 Note: Since [this installer](https://dl.dell.com/FOLDER11078318M/1/Dell-Command-Monitor_KF06N_WIN_10.10.1.13_A00.EXE) works only with a browser, it can be used in the script to download the installer on the machine. Download the installer on the Client Ltshare and share its path in the script at Line 42.
 
@@ -33,7 +33,7 @@ Windows 10, Windows 11 Workstations
 
 ## Sample Run
 
-This script is designed to be run as an autofix with the [Internal Monitor - Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>).  
+This script is designed to be run as an autofix with the [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8).  
 
 It can also be run manually:  
 ![Sample Run](../../../static/img/Get-DellDockStation/image_1.png)
@@ -45,7 +45,7 @@ It can also be run manually:
 
 ## Ticketing
 
-Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>) monitor to enable ticketing for `Dell Command | Monitor` installation failures.  
+Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8) monitor to enable ticketing for `Dell Command | Monitor` installation failures.  
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/Get-DellDockStation/image_2.png)

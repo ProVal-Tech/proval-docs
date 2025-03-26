@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This table is used in the [SSL Certificate Audit Solution](<../../solutions/Certificate Audit Solution.md>) to gather data on SSL Certificates for general auditing or active monitoring.
+This table is used in the [SSL Certificate Audit Solution](/docs/1045cfa0-257d-41a2-9a3f-a15837939b4f) to gather data on SSL Certificates for general auditing or active monitoring.
 
 ## Dependencies
 
-[Link to EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
+[Link to EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
 
 ## Tables
 

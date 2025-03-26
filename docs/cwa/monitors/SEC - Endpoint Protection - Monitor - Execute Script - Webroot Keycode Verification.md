@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This monitor checks for online agents where the script [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>) has not run in the last 30 days, and ensures that the agent has Webroot installed and deployment enabled.
+This monitor checks for online agents where the script [EPM - Data Collection - Script - Webroot Keycode Verification](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060) has not run in the last 30 days, and ensures that the agent has Webroot installed and deployment enabled.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>)
+- [EPM - Data Collection - Script - Webroot Keycode Verification](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060)
 
 ## Ticketing
 

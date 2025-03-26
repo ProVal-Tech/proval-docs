@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the process for importing the [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>) view into the database.
+This document outlines the process for importing the [plugin_proval_v_patching_metrics_overview](/docs/2a7060e4-0b45-4246-a9ea-f39818cc93e8) view into the database.
 
 ## Sample Run
 
@@ -20,8 +20,8 @@ This document outlines the process for importing the [plugin_proval_v_patching_m
 
 ## Process
 
-- Drop the view [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>) if it already exists.
-- Create the view [plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>).
+- Drop the view [plugin_proval_v_patching_metrics_overview](/docs/2a7060e4-0b45-4246-a9ea-f39818cc93e8) if it already exists.
+- Create the view [plugin_proval_v_patching_metrics_overview](/docs/2a7060e4-0b45-4246-a9ea-f39818cc93e8).
 - Assign permissions for the view to all Automate users.
 
 ## Output

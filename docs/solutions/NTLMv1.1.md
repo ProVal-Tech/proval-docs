@@ -18,19 +18,19 @@ The goal of this solution is to detect and disable NTLMv1.1.
 
 | Content                                                                                     | Type          | Function                                                                                              |
 |---------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------|
-| [Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>)           | Remote Monitor| Check whether NTLMv1.1 is enabled on the end machine.                                               |
-| [Dataview - NTLMv1.1 Status [Remote Monitor]](<../cwa/dataviews/NTLMv1.1 Status Remote Monitor.md>) | Dataview      | Represents whether NTLMv1.1 is enabled or not. It is dependent on the [EPM - Windows Configuration - Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>). |
-| [Script - Disable NTLMv1.1](<../cwa/scripts/Disable NTLMv1.1.md>)                       | Script        | This script disables the NTLMv1.1 protocol on the target machine.                                   |
-| △ Custom - Autofix - Disable NTLMv1.1                                                      | Alert Template| This will execute the [Script - Disable NTLMv1.1](<../cwa/scripts/Disable NTLMv1.1.md>).           |
+| [Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca)           | Remote Monitor| Check whether NTLMv1.1 is enabled on the end machine.                                               |
+| [Dataview - NTLMv1.1 Status [Remote Monitor]](/docs/5a6640f6-f0cb-4231-845f-e48c9445aa22) | Dataview      | Represents whether NTLMv1.1 is enabled or not. It is dependent on the [EPM - Windows Configuration - Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca). |
+| [Script - Disable NTLMv1.1](/docs/2be0669b-3c87-4594-81f4-112c7411f513)                       | Script        | This script disables the NTLMv1.1 protocol on the target machine.                                   |
+| △ Custom - Autofix - Disable NTLMv1.1                                                      | Alert Template| This will execute the [Script - Disable NTLMv1.1](/docs/2be0669b-3c87-4594-81f4-112c7411f513).           |
 
 ## Implementation
 
 - Read the associated documents carefully.
-- Import - [Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>) 
-  - Using: [Import - Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>)
-- Import - [Dataview - NTLMv1.1 Status [Remote Monitor]](<../cwa/dataviews/NTLMv1.1 Status Remote Monitor.md>)
-- Import - [Script - Disable NTLMv1.1](<../cwa/scripts/Disable NTLMv1.1.md>).
-  - This script can be used as an auto-fix with the [Remote Monitor - NTLMv1.1 Detection](<../cwa/monitors/NTLMv1.1 Detection.md>) or can also be executed manually.
+- Import - [Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca) 
+  - Using: [Import - Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca)
+- Import - [Dataview - NTLMv1.1 Status [Remote Monitor]](/docs/5a6640f6-f0cb-4231-845f-e48c9445aa22)
+- Import - [Script - Disable NTLMv1.1](/docs/2be0669b-3c87-4594-81f4-112c7411f513).
+  - This script can be used as an auto-fix with the [Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca) or can also be executed manually.
   - If the auto-fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
 
 

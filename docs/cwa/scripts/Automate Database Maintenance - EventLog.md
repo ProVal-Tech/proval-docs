@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 This script handles the cleanup of the following table(s):  
-Eventlogs - requires the [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) EventLog_Cleanup global variable to be set to 1.
+Eventlogs - requires the [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968) EventLog_Cleanup global variable to be set to 1.
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 ## Variables
 

@@ -16,7 +16,7 @@ This dataview shows the BIOS boot type for machines, indicating whether they are
 
 ## Dependencies
 
-[BIOS Type - UEFI](<../roles/BIOS Type - UEFI.md>) role
+[BIOS Type - UEFI](/docs/6f8f7335-c783-4193-834a-1aa34c9129d6) role
 
 ## Columns
 
@@ -28,6 +28,6 @@ This dataview shows the BIOS boot type for machines, indicating whether they are
 | BIOS Manufacturer    | The manufacturer of the BIOS, based on data collected by Automate                              |
 | BIOS Name           | The name of the BIOS. This may display the model of the machine as well                        |
 | BIOS Version        | The BIOS version detected by Automate                                                           |
-| BIOS Type           | Using the [BIOS Type - Legacy](<../roles/BIOS Type - Legacy.md>) role, this will determine if the machine has the legacy or UEFI boot type |
+| BIOS Type           | Using the [BIOS Type - Legacy](/docs/e880c334-1062-405f-97ba-e80c2752fb28) role, this will determine if the machine has the legacy or UEFI boot type |
 
 

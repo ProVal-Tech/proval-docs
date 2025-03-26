@@ -25,7 +25,7 @@ This script can be used to repair the Huntress Agent for Windows machines.
 ## Dependencies
 
 - [Install Huntress Agent Script](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
-- [Deploy Huntress Agent [Windows, Mac]](<./Deploy Huntress Agent Windows, Mac.md>)
+- [Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf)
 
 ## Variables
 
@@ -42,15 +42,15 @@ This script can be used to repair the Huntress Agent for Windows machines.
 | Huntress Agent - Account Key     | Text  | 1SA2345AASSSS234   | Security Tools | True     | This is the Account Key that determines which Huntress Account an Agent should be associated with.              |
 | Huntress Agent - Org Key         | Text  | Development         | Security Tools | False    | By default, the Huntress Organization key is the name of the client. Set this EDF if it's different for the client. |
 
-**These EDFs can be created by running the [Deploy Huntress Agent [Windows, Mac]](<./Deploy Huntress Agent Windows, Mac.md>) script with the `Set_Environment` parameter set to `1`.**
+**These EDFs can be created by running the [Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf) script with the `Set_Environment` parameter set to `1`.**
 
 ## Location-Level EDF
 
 | Name                             | Type      | Example | Section        | Required | Description                                                                                                       |
 |----------------------------------|-----------|---------|----------------|----------|-------------------------------------------------------------------------------------------------------------------|
-| Huntress Agent Install - Exclude | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the auto deployment of the Huntress Agent from the [Deploy Huntress Agent](<../monitors/Deploy Huntress Agent.md>) monitor set. |
+| Huntress Agent Install - Exclude | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the auto deployment of the Huntress Agent from the [Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) monitor set. |
 
-**This EDF can be created by running the [Deploy Huntress Agent [Windows, Mac]](<./Deploy Huntress Agent Windows, Mac.md>) script with the `Set_Environment` parameter set to `1`.**
+**This EDF can be created by running the [Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf) script with the `Set_Environment` parameter set to `1`.**
 
 ## Output
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring system. This is designed to be used with the [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>) as the auto-fix.
+This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring system. This is designed to be used with the [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c) as the auto-fix.
 
 **Alert Template:** △ Custom - Ticket Creation - ESXi Monitoring
 
@@ -20,7 +20,7 @@ This monitor is intended to report any ESXi hosts in the system that have report
 
 This section should list the ITGlue documents found in the Related Items sidebar on which this monitor depends.
 
-- [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>)
+- [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c)
 - This solution requires that the Virtualization Manager is set up and configured.
 
 ## Target

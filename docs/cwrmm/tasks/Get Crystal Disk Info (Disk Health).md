@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health. The data is then formatted and stored in [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>) Custom Field for further auditing and monitoring purposes.
+The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health. The data is then formatted and stored in [CW RMM - Custom Field - Crystal Disk Info_Disk Health](/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01) Custom Field for further auditing and monitoring purposes.
 
 **Output Syntax:** `Harddisk - \\<Model> (Drives: \\<Drive Letter(s)>): Health Status - \\<Status>`
 
@@ -24,8 +24,8 @@ The script runs the Crystal Disk Info tool on the end machines and fetches the D
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](<../custom-fields/Crystal Disk Info_Disk Health.md>)  
-- [EPM - Disk - Agnostic - Get-CrystalDiskInfo](<../../powershell/Get-CrystalDiskInfo.md>)  
+- [CW RMM - Custom Field - Crystal Disk Info_Disk Health](/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01)  
+- [EPM - Disk - Agnostic - Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb)  
 
 ## Parameters
 

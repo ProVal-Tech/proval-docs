@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document should replace [EPM - Disk - Script - Disk - Gather Critical Info](<./Disk - Gather Critical Info - Deprecated and replaced.md>).
+This document should replace [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6).
 
 An Automate Script designed to retrieve data related to hard drive failures.  
 It creates a custom table called `plugin_proval_cdi_data`.  
@@ -24,9 +24,9 @@ It appends data from that agnostic script to the created table.
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
-- [CWM - Automate - Dataview - Disk - Critical Data](<../dataviews/Disk - Critical Data.md>)
+- [EPM - Disk - Agnostic - Get-DiskInfo](/docs/5cba460d-9322-4c3b-9630-55cb46d57b1a)
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](/docs/7a224177-45ff-4f2e-a8fe-a734a642a539)
+- [CWM - Automate - Dataview - Disk - Critical Data](/docs/8a8b76b2-aa25-419c-b193-aa98f54ef274)
 
 #### User Parameters
 

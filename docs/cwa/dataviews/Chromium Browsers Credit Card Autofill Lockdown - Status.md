@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
+The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Credit Card Autofill](/docs/bdd9f759-2636-4a76-ae7e-8cae7a4e874b) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
 - **Search:** `Lockdown Browsers Credit Card Autofill`
 - **Search:** `Lockdown Browsers Autofill`
 - **Group:** `△ Lockdown Browsers Autofill`
-- **Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Credit Card Autofill](<../monitors/Lockdown Chromium Browsers Credit Card Autofill.md>)
+- **Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Credit Card Autofill](/docs/bdd9f759-2636-4a76-ae7e-8cae7a4e874b)
 
 ## Columns
 

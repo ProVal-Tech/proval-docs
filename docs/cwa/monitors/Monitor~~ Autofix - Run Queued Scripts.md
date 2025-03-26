@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is created by the [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) automate script. It returns a failure if the computer is offline and success when online.
+This monitor is created by the [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721) automate script. It returns a failure if the computer is offline and success when online.
 
 ### Internal Monitor Settings
 
@@ -32,10 +32,10 @@ This monitor is created by the [CWM - Automate - Script - Queue Script](<../scri
 
 ## Dependencies
 
-- [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>)
-- [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>)
-- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
-- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>)
+- [CWM - Automate - Script - Run Queued Scripts](/docs/f60f4501-a2ea-43f0-87ee-99fc8ee15031)
+- [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721)
+- [CWM - Automate - Solution - Queue Script Next Checkin](/docs/2910ca09-a0c7-4b44-8ea4-ef6e71304df8)
+- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](/docs/a20befa8-ecca-4cf9-9d18-c4140f87aafc)
 
 ## Target
 

@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
+This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>)
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
+- [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
 
 ## Columns
 

@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Step 1
-Ensure the presence of the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script and the `△ Custom - Ticket Creation - Computer` alert template.
+Ensure the presence of the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script and the `△ Custom - Ticket Creation - Computer` alert template.
 
 ## Step 2
 Obtain the group ID(s) of the group(s) that the remote monitor should be applied to.

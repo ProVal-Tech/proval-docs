@@ -20,8 +20,8 @@ An additional summarized row per Windows version is included, e.g., Windows 10, 
 
 There are three summarized rows in this Dataview: one for all Windows 10, one for all Windows 11, and the final one for the combined number of Windows 10 and Windows 11 in the environment. The red row indicates that this ReleaseID is no longer supported by Microsoft.
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)  
-[SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics](<./SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics.md>)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)  
+[SEC - Windows Patching - MySQL View - pvl_v_windows_version_metrics](/docs/d7413e1d-56f3-4790-9ae0-45d8a91fc16a)
 
 ## Columns
 

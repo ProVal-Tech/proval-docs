@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script utilizes the agnostic script [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) to test the hashed credentials in Active Directory against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`.  
+This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  ) to test the hashed credentials in Active Directory against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`.  
 
 **File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentials.ps1`
 
@@ -37,9 +37,9 @@ This script utilizes the agnostic script [Test-WeakCredentials](<../../powershel
 3. This script is only supported on Server 2016 and above. Server 2012 may work but has not been tested.
 
 - [EPM - Accounts - Agnostic - Script - Test-Credentials](https://proval.itglue.com/DOC-5078775-9590057)
-- [AD - Create Views/Table/Schedule for AD Reporting Solution](<./AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
-- [EPM - Accounts - Report - Active Directory Reporting Solution](<../reports/Active Directory Reporting Solution.md>)
-- [EPM - Accounts - Report - Active Directory User Assessment](<../reports/Active Directory User Assessment.md>)
+- [AD - Create Views/Table/Schedule for AD Reporting Solution](/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49)
+- [EPM - Accounts - Report - Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
+- [EPM - Accounts - Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
 
 ## User Parameters
 

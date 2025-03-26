@@ -12,19 +12,19 @@ unlisted: false
 
 ## Summary
 
-This company-level custom field stores the parameter to install the Cisco Secure Client package using the [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](<../tasks/Cisco Secure Client Package Installation (Windows).md>) task.
+This company-level custom field stores the parameter to install the Cisco Secure Client package using the [SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4) task.
 
-Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](<../../powershell/Install-CiscoSecureClient.md>).
+Parameters must be set in a manner consistent with the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea).
 
 ## Dependencies
 
-[SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](<../tasks/Cisco Secure Client Package Installation (Windows).md>)
+[SWM - Software Install - Task - Cisco Secure Client Package Installation (Windows)](/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4)
 
 ## Details
 
 | Field Name                      | Type of Field | Description                                                                                                                                                     |
 |---------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](<../../powershell/Install-CiscoSecureClient.md>) |
+| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) |
 
 ## Screenshot
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the recovery key from the script [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>).
+Stores the recovery key from the script [Bitlocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5).
 
 ## Dependencies
 
-[Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)
+[Bitlocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5)
 
 ## Table
 

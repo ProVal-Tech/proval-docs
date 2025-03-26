@@ -20,17 +20,17 @@ The purpose of this document is to guide users on how to install and remove exte
 
 | Content                                                                                     | Type | Function                                                                                          |
 |---------------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------|
-| [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>) | Task | Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium') |
-| [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)  | Task | Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium'). |
-| [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)   | Task | Install Extensions on the Mozilla Firefox Browser.                                               |
-| [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)    | Task | Remove Extensions from the Mozilla Firefox Browser.                                              |
+| [Chromium Browsers - Extension - Install](/docs/36fa496a-be60-416f-87a6-f725a1241540) | Task | Install Extensions on Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium') |
+| [Chromium Browsers - Extension - Remove](/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6)  | Task | Remove Extensions from the Popular Chromium Browsers ('Chrome', 'Edge', 'Brave', 'Vivaldi', 'Chromium'). |
+| [Mozilla Firefox - Extension - Install](/docs/d1bcd7a6-8544-4f1e-a20a-8470be76820e)   | Task | Install Extensions on the Mozilla Firefox Browser.                                               |
+| [Mozilla Firefox - Extension - Remove](/docs/ac3caa49-5cb4-464b-be99-73433d16ba81)    | Task | Remove Extensions from the Mozilla Firefox Browser.                                              |
 
 ## Implementation
 
 Create the following tasks:
-- [Chromium Browsers - Extension - Install](<../cwrmm/tasks/Chromium Browsers - Extension - Install.md>)
-- [Chromium Browsers - Extension - Remove](<../cwrmm/tasks/Chromium Browsers - Extension - Remove.md>)
-- [Mozilla Firefox - Extension - Install](<../cwrmm/tasks/Mozilla Firefox - Extension - Install.md>)
-- [Mozilla Firefox - Extension - Remove](<../cwrmm/tasks/Mozilla Firefox - Extension - Remove.md>)
+- [Chromium Browsers - Extension - Install](/docs/36fa496a-be60-416f-87a6-f725a1241540)
+- [Chromium Browsers - Extension - Remove](/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6)
+- [Mozilla Firefox - Extension - Install](/docs/d1bcd7a6-8544-4f1e-a20a-8470be76820e)
+- [Mozilla Firefox - Extension - Remove](/docs/ac3caa49-5cb4-464b-be99-73433d16ba81)
 
 

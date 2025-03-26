@@ -16,7 +16,7 @@ This field is updated by the agent procedure to show the initial install date of
 
 ## Dependencies
 
-The Agent Procedure is required to populate this field: [OS Install Date Procedure](<../procedures/OS Install Date.md>)
+The Agent Procedure is required to populate this field: [OS Install Date Procedure](/docs/8beb5e09-23af-40e8-8810-ec1a030c600b)
 
 ## Details
 

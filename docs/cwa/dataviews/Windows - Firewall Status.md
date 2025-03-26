@@ -17,9 +17,9 @@ This dataview displays information related to Windows firewall configuration on 
 ## Dependencies
 
 Roles:  
-- [Windows Firewall Public](<../roles/Windows Firewall Public.md>)  
-- [Windows Firewall Domain](<../roles/Windows Firewall Domain.md>)  
-- [Windows Firewall Private](<../roles/Windows Firewall Private.md>)  
+- [Windows Firewall Public](/docs/984edd72-ce3d-4817-9628-74100ef83865)  
+- [Windows Firewall Domain](/docs/ce87a5e8-cc0f-43a5-8cd8-fc551002f618)  
+- [Windows Firewall Private](/docs/372dfa84-9e1d-4e86-9a1b-8c8904d3a489)  
 
 ## Columns
 

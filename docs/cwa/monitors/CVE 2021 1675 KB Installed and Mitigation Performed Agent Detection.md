@@ -16,8 +16,8 @@ This monitor will detect agents where the CVE-2021-1675 patch has been installed
 
 ## Dependencies
 
-- [CVE-2021-1675 - Restore Folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
-- [Windows - Security - CVE 2021 1675 Status - PrintNightmare](<../dataviews/Windows - Security - CVE 2021 1675 Status - PrintNightmare.md>)
+- [CVE-2021-1675 - Restore Folder ACL Permission](/docs/cb79f759-a6a8-41ca-bb55-619cb48d635f)
+- [Windows - Security - CVE 2021 1675 Status - PrintNightmare](/docs/ed9b97af-e0a3-484b-a710-47c34eb61422)
 
 ## Target
 

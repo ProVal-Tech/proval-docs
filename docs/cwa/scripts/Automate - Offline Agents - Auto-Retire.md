@@ -65,11 +65,11 @@ It is suggested to schedule the script to run at regular intervals, preferably w
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](<../../Scripts/CWM - Automate - RMM+ Plugin Configuration.md>)
-[CWM - Automate - Solution - Offline/Broken Agents](<../../solutions/OfflineBroken Agents.md>)
+[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+[CWM - Automate - Solution - Offline/Broken Agents](/docs/ab580d76-42be-4b34-b38b-3a7e9336c13e)
 
 
-**Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair](<./Automate Agent - Auto Repair.md>) script are excluded from retirement.**
+**Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) script are excluded from retirement.**
 
 ## Variables
 

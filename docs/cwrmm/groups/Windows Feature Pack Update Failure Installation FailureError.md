@@ -14,8 +14,8 @@ unlisted: false
 This document categorizes Windows 10 and 11 computers where the `Feature Update Install with Tracking` script failed for an unknown reason.
 
 ## Dependencies
-- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)  
-- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
+- [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)  
+- [CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
 
 ## Criteria
 1. Select `OS Build Number` for the criteria, set the comparator to `Does Not Contain any`, and type `19045` and `22631` in the condition box.  

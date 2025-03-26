@@ -12,15 +12,15 @@ unlisted: false
 
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 This script handles cleanup of the following table(s):
 
-- **Networkdevices** - requires the [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) `NetWorkDevice_Cleanup_days` global variable to be set to a value other than 0.
+- **Networkdevices** - requires the [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968) `NetWorkDevice_Cleanup_days` global variable to be set to a value other than 0.
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 ## Variables
 

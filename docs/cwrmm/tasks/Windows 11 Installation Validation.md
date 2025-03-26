@@ -21,10 +21,10 @@ Check and confirm the Windows 11 installation status after running the Windows 1
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](<../custom-fields/Endpoint - Windows 11 Upgrade RunTime.md>)
-- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](<../custom-fields/Endpoint - Windows 11 Upgrade Failed.md>)
-- [CW RMM - Device Group - Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
-- [CW RMM - Task - Windows 11 Installer (Beta)](<./Windows 11 Installer (Beta).md>)
+- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](/docs/ffce7cd6-7757-4918-bce0-461cf9dce0b4)
+- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](/docs/eb332e7e-77ae-4cc0-82b1-c4f42cc05fac)
+- [CW RMM - Device Group - Windows 11 Upgrade Validation](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96)
+- [CW RMM - Task - Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a)
 
 ## Variables
 
@@ -134,7 +134,7 @@ Click the `Save` button at the top-right corner of the screen to save the task.
 
 ## Deployment
 
-The task should be scheduled to run once per day against the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.
+The task should be scheduled to run once per day against the [Windows 11 Upgrade Validation](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) device group.
 
 - Go to `Automation` > `Tasks`.
 - Search for the `Windows 11 Installation Validation` task.
@@ -153,7 +153,7 @@ The task should be scheduled to run once per day against the [Windows 11 Upgrade
 ![Every Day Recurrence](../../../static/img/Windows-11-Installation-Validation/image_27.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Windows-11-Installation-Validation/image_28.png)  
-- Search and select the [Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) device group.  
+- Search and select the [Windows 11 Upgrade Validation](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) device group.  
 ![Select Device Group](../../../static/img/Windows-11-Installation-Validation/image_29.png)  
 - Now click the `Run` button to initiate the task.  
 ![Run Button](../../../static/img/Windows-11-Installation-Validation/image_30.png)  

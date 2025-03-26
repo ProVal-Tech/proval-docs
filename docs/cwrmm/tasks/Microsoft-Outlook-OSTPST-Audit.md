@@ -11,14 +11,14 @@ unlisted: false
 ---
 
 ## Summary
-This is the RMM implementation of [Microsoft Outlook - OST/PST - Audit](<../../cwa/scripts/Microsoft Outlook - OSTPST - Audit.md>) script. It collects all the OST/PST file names, sizes and last write time from Windows machines and stores them in Custom Fields.
+This is the RMM implementation of [Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8) script. It collects all the OST/PST file names, sizes and last write time from Windows machines and stores them in Custom Fields.
 
 ## Sample Run
 
 ![Sample Run](../../../static/img/CWRMM-OSTPST--Audit/image14.png)
 
 ## Dependencies
-[Endpoint-OSTPSTAudi](<../custom-fields/Endpoint-OSTPSTAudit.md>)
+[Endpoint-OSTPSTAudi](/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05)
 
 ## Task Creation
 Create a new `Script Editor` style script in the system to implement this task.  

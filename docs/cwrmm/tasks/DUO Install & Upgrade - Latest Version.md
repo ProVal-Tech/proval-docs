@@ -21,7 +21,7 @@ This script will install or update DUO if the currently installed instance is ol
 
 ## Dependencies
 
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../custom-fields/Duo Authentication for Windows Logon Deployment.md>) 
+[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](/docs/a9578dd1-1f6b-4932-a614-5ed823656416) 
 
 ## Variables
 

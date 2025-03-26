@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Address Autofill](<../monitors/Lockdown Chromium Browsers Address Autofill.md>) remote monitor. It indicates whether the remote monitor has effectively deactivated the autofilling feature for addresses in the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
+The dataview exhibits the `Addresses Autofill Lockdown Status` for the computer obtained from the [Lockdown Chromium Browsers Address Autofill](/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b) remote monitor. It indicates whether the remote monitor has effectively deactivated the autofilling feature for addresses in the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
 **Search:** `Lockdown Browsers Address Autofill`  
 **Search:** `Lockdown Browsers Autofill`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Address Autofill](<../monitors/Lockdown Chromium Browsers Address Autofill.md>)  
+**Remote Monitor:** [EPM - Remote Monitor - Lockdown Chromium Browsers Address Autofill](/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b)  
 
 ## Columns
 

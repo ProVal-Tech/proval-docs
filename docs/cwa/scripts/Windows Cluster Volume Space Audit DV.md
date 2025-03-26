@@ -24,7 +24,7 @@ Set the value of `Set_Environment` to 1 to create the table and schedule the scr
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Shared Volume](<./Windows Cluster Shared Volume Autofix,Ticket.md>)
+[CWA Script - Windows Cluster Shared Volume](/docs/0a795741-52b7-4de6-abc2-01b5add80f99)
 
 #### Global Parameters
 

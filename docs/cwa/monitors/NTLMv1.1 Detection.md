@@ -32,7 +32,7 @@ Managed Windows Computers
 
 ## Dependencies
 
-[EPM - Windows Configuration - Dataview - NTLMv1.1 Status [Remote Monitor]](<../dataviews/NTLMv1.1 Status Remote Monitor.md>)
+[EPM - Windows Configuration - Dataview - NTLMv1.1 Status [Remote Monitor]](/docs/5a6640f6-f0cb-4231-845f-e48c9445aa22)
 
 ## How to Import
 

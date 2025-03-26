@@ -16,7 +16,7 @@ Schedules the Monthly CF Field Reset AP.
 
 # Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](/docs/81ac366c-a635-4419-9a29-94a1fe7ddac0)
 
 # Details
 
@@ -28,7 +28,7 @@ Schedules the Monthly CF Field Reset AP.
 - **Policy Objects Active**:
   - **Policy Object Name**: Agent Procedure
   - **Policy Object Settings**:
-    - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](<../procedures/Monthly Automation Time Reset.md>)
+    - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](/docs/1552dec9-04ae-484f-b217-922542928af3)
       - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
 
 

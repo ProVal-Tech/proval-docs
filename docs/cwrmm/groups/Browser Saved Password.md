@@ -12,19 +12,19 @@ unlisted: false
 
 ## Summary
 
-The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) and audit the failure endpoints where the browser's saved passwords failed to clear.
+The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) and audit the failure endpoints where the browser's saved passwords failed to clear.
 
 ## Dependencies
 
-[Custom Field - Clear/Audit Browsers Saved Password](<../custom-fields/ClearAudit Browsers Saved Password.md>)
+[Custom Field - Clear/Audit Browsers Saved Password](/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce)
 
 ## Details
 
 | Field Name                        | Type of Field (Machine or Organization) | Description                                                                                                                                                      |
 |-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Clear Browser Saved Password endpoints | Dynamic Group                          | This group contains the list of all endpoints where the browser saved passwords are intended to clear by scheduling [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>). |
-| Browser Saved Password Audit Group | Dynamic Group                          | This group adds the endpoints where the browser saved password is selected for audit only by scheduling [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).            |
-| Browser Saved Password Failure     | Dynamic Group                          | This group contains the endpoints where the browser saved password clearance failed by the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>).                        |
+| Clear Browser Saved Password endpoints | Dynamic Group                          | This group contains the list of all endpoints where the browser saved passwords are intended to clear by scheduling [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e). |
+| Browser Saved Password Audit Group | Dynamic Group                          | This group adds the endpoints where the browser saved password is selected for audit only by scheduling [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e).            |
+| Browser Saved Password Failure     | Dynamic Group                          | This group contains the endpoints where the browser saved password clearance failed by the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e).                        |
 
 ---
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script fetches basic information from ConnectWise Manage configurations and stores it in a custom table [CWM - Automate - Custom Table - pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>), which is further displayed by the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](<../dataviews/Asset Report - Purchase and Expiration Date.md>) dataview.
+The script fetches basic information from ConnectWise Manage configurations and stores it in a custom table [CWM - Automate - Custom Table - pvl_cwm_configurations](/docs/eb24c920-fd51-4441-962b-520c48e9128e), which is further displayed by the [CWM - Automate - Dataview - Asset Report - Purchase and Expiration Date](/docs/931fbe83-9616-4ae2-b7ae-128538a5fa73) dataview.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ The script fetches basic information from ConnectWise Manage configurations and 
 
 ## Sub-Script
 
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Variables
 
@@ -29,9 +29,9 @@ The script fetches basic information from ConnectWise Manage configurations and 
 | ProjectName         | Get-CWMConfiguration                                                                             |
 | WorkingDirectory     | C:/ProgramData/_automation/Script/Get-CWMConfiguration                                          |
 | JsonFileName        | Get-CWMConfiguration.Json                                                                        |
-| TableName           | [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>)                               |
-| SQLDeleteStatement   | Stores SQL query to remove stale data from [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>) table |
-| SQLStartStatement    | Stores SQL query to input new data into [pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>) table |
+| TableName           | [pvl_cwm_configurations](/docs/eb24c920-fd51-4441-962b-520c48e9128e)                               |
+| SQLDeleteStatement   | Stores SQL query to remove stale data from [pvl_cwm_configurations](/docs/eb24c920-fd51-4441-962b-520c48e9128e) table |
+| SQLStartStatement    | Stores SQL query to input new data into [pvl_cwm_configurations](/docs/eb24c920-fd51-4441-962b-520c48e9128e) table |
 
 #### Global Parameters
 

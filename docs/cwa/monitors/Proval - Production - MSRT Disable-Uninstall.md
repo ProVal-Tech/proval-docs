@@ -16,16 +16,16 @@ This monitor detects the online Windows 10/11 where the MSRT disable/uninstall E
 
 ## Dependencies
 
-[Malicious Software Removal Tool Disable/Uninstall](<../scripts/MSRT Disable-Uninstall.md>)
+[Malicious Software Removal Tool Disable/Uninstall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7)
 
 ## Implementation
 
 The monitor can be imported normally.
-Run this internal monitor with the alert template `△ Custom - Execute Script - MSRT Disable/Uninstall` that runs the script [Malicious Software Removal Tool Disable/Uninstall](<../scripts/MSRT Disable-Uninstall.md>) to disable the MSRT and uninstall its patches completely.
+Run this internal monitor with the alert template `△ Custom - Execute Script - MSRT Disable/Uninstall` that runs the script [Malicious Software Removal Tool Disable/Uninstall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7) to disable the MSRT and uninstall its patches completely.
 
 ## EDFs
 
-This monitor depends on the following EDFs that needed to be imported using script [Malicious Software Removal Tool Disable/Uninstall](<../scripts/MSRT Disable-Uninstall.md>) during import by running it with user parameter Set_Environment = 1 on any random machine.
+This monitor depends on the following EDFs that needed to be imported using script [Malicious Software Removal Tool Disable/Uninstall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7) during import by running it with user parameter Set_Environment = 1 on any random machine.
 
 Refer to the script document on how to run it in the sample run screenshot:
 

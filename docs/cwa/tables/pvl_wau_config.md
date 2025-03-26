@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](<../../cwa/monitors/Execute Script - Configure Winget Auto Update.md>) internal monitor to detect the computers after making any changes to the associated EDFs.
+This document stores the current configuration set for the computer from the client-level EDFs defined in the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) script document. The data stored in this custom table is used by the [Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331) internal monitor to detect the computers after making any changes to the associated EDFs.
 
 ## Dependencies
 
-[SWM - Software Update - Script - Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>)
+[SWM - Software Update - Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)
 
 ## Tables
 
@@ -34,7 +34,7 @@ This document stores the current configuration set for the computer from the cli
 | updatetime              | varchar   | Update time as set in the client-level EDF `WAU - UpdatesAtTime`.                                   |
 | updatesatlogon         | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
-| remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](<../cwa/monitors/Winget Auto Update Errors.md>) remote monitor creation enabled? (0/1) |
+| remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](/docs/68a14948-368f-4064-97a3-d1928e122013) remote monitor creation enabled? (0/1) |
 
 
 

@@ -18,8 +18,8 @@ This monitor will detect online machines where Internet Explorer is installed by
 
 ## Dependencies
 
-- [CWM - Automate - Script - Internet Explorer - Disable [Global, DV, Autofix]](<../scripts/Internet Explorer - Disable Global, DV, Autofix.md>)
-- [CWM - Automate - Role - Internet Explorer Installed](<../roles/Internet Explorer Installed.md>)
+- [CWM - Automate - Script - Internet Explorer - Disable [Global, DV, Autofix]](/docs/60cf67bf-fc28-4461-a2ad-7a32b2461652)
+- [CWM - Automate - Role - Internet Explorer Installed](/docs/c48b8ff6-9189-49b2-bd2a-442fb26e7bbe)
 
 ## Target
 

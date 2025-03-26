@@ -24,7 +24,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 - @custom_proval_computer_accounts (Table)
 - @User management - Profile Audit (Script)
-- [Local User Detection Not Logged In From 90 Days](<../monitors/Local User Detection Not Logged In From 90 Days.md>)
+- [Local User Detection Not Logged In From 90 Days](/docs/370f7dfe-cf48-40d6-a611-d6a02811393c)
 
 ## Variables
 

@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The data view presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>) custom table along with the basic information.
+The data view presents the OneDrive Sync Status data stored in the [EPM - Data Collection - Custom Table - pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9) custom table along with the basic information.
 
 ## Dependencies
 
-- [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>)
-- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
+- [EPM - Data Collection - Custom Table - pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9)
+- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece)
 
 ## Columns
 

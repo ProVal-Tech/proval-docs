@@ -28,7 +28,7 @@ This script will attempt to end a matching session in the CW Control portal usin
 - HTTP GET/POST Plugin in CW Automate
 - System properties
 
-**Note:** This script is a subscript of [CW Control - Uninstall and Remove from Control Web Portal](<./CW Control - Uninstall and Remove from Control Web Portal.md>)
+**Note:** This script is a subscript of [CW Control - Uninstall and Remove from Control Web Portal](/docs/d69c20e1-e605-4cf9-bf35-bbe4c74f134f)
 
 ### Variables
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script will collect information about the installed [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) and store it in the custom table [Plugin_ProVal_PnpDevices](<../tables/Plugin_ProVal_PNPDevices.md>).
+This script will collect information about the installed [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) and store it in the custom table [Plugin_ProVal_PnpDevices](/docs/d0d38e82-7faf-4e0f-86b3-81b01a9f18fb).
 
 **Intended Target:** Windows Computers
 
@@ -22,9 +22,9 @@ This script will collect information about the installed [PnP Devices](https://d
 
 ## Dependencies
 
-- [CWM - Automate - Dataview - Get-PNPDevices [Script]](<../dataviews/Get-PNPDevices Script.md>)
-- [CWM - Automate - Solution - PnP Devices Inventory](<../../solutions/Pnp Devices Inventory.md>)
-- [CWM - Automate - Custom Table - plugin_proval_pnpdevices](<../tables/Plugin_ProVal_PNPDevices.md>)
+- [CWM - Automate - Dataview - Get-PNPDevices [Script]](/docs/f0f7231c-f13b-46a0-baa6-aebb8640adaf)
+- [CWM - Automate - Solution - PnP Devices Inventory](/docs/f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da)
+- [CWM - Automate - Custom Table - plugin_proval_pnpdevices](/docs/d0d38e82-7faf-4e0f-86b3-81b01a9f18fb)
 
 ## Variables
 
@@ -34,11 +34,11 @@ This script will collect information about the installed [PnP Devices](https://d
 
 ## Process
 
-1. Create the [Plugin_ProVal_PnpDevices](<../tables/Plugin_ProVal_PNPDevices.md>) table if it does not already exist.
+1. Create the [Plugin_ProVal_PnpDevices](/docs/d0d38e82-7faf-4e0f-86b3-81b01a9f18fb) table if it does not already exist.
 2. Run the PowerShell script to retrieve information about installed [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play).
 3. Verify the outcome.
 4. Parse the outcome to ensure SQL compatibility.
-5. Insert the data into the [Plugin_ProVal_PnpDevices](<../tables/Plugin_ProVal_PNPDevices.md>) table.
+5. Insert the data into the [Plugin_ProVal_PnpDevices](/docs/d0d38e82-7faf-4e0f-86b3-81b01a9f18fb) table.
 6. Log any failures.
 
 ## Output

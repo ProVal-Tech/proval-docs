@@ -16,7 +16,7 @@ This dataview will show the computer description message set on the agent.
 
 ## Dependencies
 
-[Computer Description Data Report](<./Computer Description Data Report.md>)
+[Computer Description Data Report](/docs/065ba00b-a1d0-4c99-9d2f-e606e60867d8)
 
 ## Columns
 

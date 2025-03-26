@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This dataview populates the available Dockstations Inventory for the Dell Workstations that has been gathered by the [Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>).
+This dataview populates the available Dockstations Inventory for the Dell Workstations that has been gathered by the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0).
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>)
-- [CWM - Automate - Internal Monitor - Execute Script - Get-DellDockStation](<../monitors/Execute Script - Get-DellDockStation.md>)
+- [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
+- [CWM - Automate - Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
 
 ## Columns
 
@@ -39,6 +39,6 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Install Date        | Dockstation install date                           |
 | Manufacture Date    | Manufacture date of the dockstation                |
 | Dock Name           | Name of the dockstation                            |
-| Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) executed on the machine |
+| Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) executed on the machine |
 
 

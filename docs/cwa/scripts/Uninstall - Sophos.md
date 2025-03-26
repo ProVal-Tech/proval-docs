@@ -26,7 +26,7 @@ This setup will skip the removal of the Sophos Zap platform.
 
 ## Dependencies
 
-- [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
+- [SWM - Software Uninstall - Agnostic - Remove-Sophos](/docs/3e0adee0-1a8c-476a-aea4-616a66b4de12)
 
 ## Variables
 

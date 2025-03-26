@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The table stores the data gathered by the [EPM - Network - Script - Get - DNS Assignments](<../scripts/Get - DNS Assignments.md>) script.
+The table stores the data gathered by the [EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d) script.
 
 ## Dependencies
 
-[EPM - Network - Script - Get - DNS Assignments](<../scripts/Get - DNS Assignments.md>)
+[EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d)
 
 ## Tables
 

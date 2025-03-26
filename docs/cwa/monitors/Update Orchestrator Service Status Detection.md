@@ -27,7 +27,7 @@ Insert the details of the monitor in the table below.
 
 ## Dependencies
 
-- [Update Orchestrator Service - Disable](<../scripts/Update Orchestrator Service - Disable.md>)
+- [Update Orchestrator Service - Disable](/docs/eb9d46c0-757b-4630-b6c5-709f708ceec5)
 
 ## Target
 

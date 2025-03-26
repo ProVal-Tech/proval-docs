@@ -16,7 +16,7 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 
 ## Dependencies
 
-[Script - Service - Restart](<../scripts/Service - Restart.md>)
+[Script - Service - Restart](/docs/e5e1f07f-f6ed-41bc-b0f1-b2cc86e059e1)
 
 ## Target
 

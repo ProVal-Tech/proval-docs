@@ -16,8 +16,8 @@ This document lists all Firefox extensions installed on the endpoint.
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-FirefoxExtensions](<../../powershell/Get-FirefoxExtensions.md>)
-- [EPM - Data Collection - Agent Procedure - Firefox Extension Audit](<../procedures/Firefox Extension Audit.md>)
+- [EPM - Data Collection - Agnostic - Script - Get-FirefoxExtensions](/docs/e45f0be5-66b2-417a-b900-0a6b3b9994f1)
+- [EPM - Data Collection - Agent Procedure - Firefox Extension Audit](/docs/6b79ea40-3f5f-451f-8b03-b6d93c4b099d)
 
 ## Details
 

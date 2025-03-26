@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to run the Office Click-to-Run client to update Microsoft 365 Apps using the ConnectWise RMM implementation of the agnostic script [Update-Office](<../../powershell/Update-Office.md>).
+This document describes how to run the Office Click-to-Run client to update Microsoft 365 Apps using the ConnectWise RMM implementation of the agnostic script [Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4  ).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document describes how to run the Office Click-to-Run client to update Micr
 
 ## Dependencies
 
-- [SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
+- [SWM - Software Configuration - Agnostic - Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4  )
 
 ## Task Creation
 

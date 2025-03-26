@@ -14,7 +14,7 @@ unlisted: false
 
 A bug exists in the CWA Active Directory plugin where removed user and computer entries are not deleted from the plugin tables. This leads to tables being inflated with inaccurate data. This solution is a temporary workaround until ConnectWise resolves the issue.
 
-The script [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plugin.md>) should be scheduled to run once per day as a client script. The 'Run Full Active Directory Sync' script should be executed immediately against all "Infrastructure Master" AD domain controllers following the run of [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plugin.md>).
+The script [CWM - Automate - Clean up AD plugin](/docs/fc26cfc8-33ff-405d-ba3a-bfad02637607) should be scheduled to run once per day as a client script. The 'Run Full Active Directory Sync' script should be executed immediately against all "Infrastructure Master" AD domain controllers following the run of [CWM - Automate - Clean up AD plugin](/docs/fc26cfc8-33ff-405d-ba3a-bfad02637607).
 
 ## Requirements
 
@@ -24,7 +24,7 @@ The script [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plu
 
 | Content                                                                 | Type   | Function                                                                                                            |
 |-------------------------------------------------------------------------|--------|---------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - Clean up AD plugin](<../cwa/scripts/Clean Up AD Plugin.md>) | Script | Removes all rows from the following tables:  - plugin_ad_computers  - plugin_ad_memberofxrefs  - plugin_ad_userproxyaddresses  - plugin_ad_users. Removes all rows with ObjectType 1 or 2 from plugin_ad_entries. |
+| [CWM - Automate - Clean up AD plugin](/docs/fc26cfc8-33ff-405d-ba3a-bfad02637607) | Script | Removes all rows from the following tables:  - plugin_ad_computers  - plugin_ad_memberofxrefs  - plugin_ad_userproxyaddresses  - plugin_ad_users. Removes all rows with ObjectType 1 or 2 from plugin_ad_entries. |
 | Run Full Active Directory Sync                                           | Built-in Script from ConnectWise relating to their AD plugin. | This is the built-in script that initiates the syncing of data from Active Directory to Automate.                 |
 
 ## Implementation

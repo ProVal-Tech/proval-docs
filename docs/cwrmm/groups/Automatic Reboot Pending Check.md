@@ -17,8 +17,8 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
 ## Dependencies
 
 - Auto_RebootPendingCheck --> Custom field (Endpoint)  
-- [CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)  
-- [CW RMM - Task - Reboot Pending Check Automation](<../tasks/Reboot Pending Check Automation.md>)  
+- [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
+- [CW RMM - Task - Reboot Pending Check Automation](/docs/509ed97f-105b-47d7-8a66-f7da58da8138)  
 
 ## Details
 

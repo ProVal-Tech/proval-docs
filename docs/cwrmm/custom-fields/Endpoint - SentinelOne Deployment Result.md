@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](<../tasks/SentinelOne Deployment.md>).
+This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](/docs/25651d1f-99d6-4906-8666-220994a4862e).
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>).
+[CW RMM - Solution - SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627).
 
 ## Details
 

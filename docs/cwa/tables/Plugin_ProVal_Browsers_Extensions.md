@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>) and [Get Firefox Browser Extensions](<../scripts/Get Firefox Browser Extensions.md>) scripts and is used by the [Installed Browsers Extensions [Script]](<../dataviews/Installed Browsers Extensions Script.md>) dataview.
+This Automate custom table stores the information gathered by the [Get Chromium Browsers Extensions](/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81) and [Get Firefox Browser Extensions](/docs/472a8d13-fd00-4a97-90dd-833a171eac40) scripts and is used by the [Installed Browsers Extensions [Script]](/docs/9c095cab-514b-479d-a302-bdb596caefe5) dataview.
 
 ## Dependencies
 
-- [Get Chromium Browsers Extensions](<../scripts/Get Chromium Browsers Extensions.md>)
-- [Get Firefox Browser Extensions](<../scripts/Get Firefox Browser Extensions.md>)
+- [Get Chromium Browsers Extensions](/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81)
+- [Get Firefox Browser Extensions](/docs/472a8d13-fd00-4a97-90dd-833a171eac40)
 
 ## Tables
 

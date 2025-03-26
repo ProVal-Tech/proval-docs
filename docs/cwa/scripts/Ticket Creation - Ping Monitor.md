@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is a variation of the [Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, designed specifically for ticket management related to remote ping monitors. The key distinction of this script is that it excludes the addition of the computer's information to the ticket.
+This script is a variation of the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script, designed specifically for ticket management related to remote ping monitors. The key distinction of this script is that it excludes the addition of the computer's information to the ticket.
 
 The script automatically closes the ticket upon successful ping.
 

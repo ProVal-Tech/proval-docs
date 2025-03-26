@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document updates all installed Visual Studio versions automatically using the ConnectWise RMM implementation of the agnostic script [Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>).
+This document updates all installed Visual Studio versions automatically using the ConnectWise RMM implementation of the agnostic script [Update-VisualStudio](/docs/ef41c491-27c6-41d4-a478-eb66ca809399).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document updates all installed Visual Studio versions automatically using t
 
 ## Dependencies
 
-Refer to the [SWM - Software Update - Agnostic - Update-VisualStudio](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>) for dependencies.
+Refer to the [SWM - Software Update - Agnostic - Update-VisualStudio](/docs/ef41c491-27c6-41d4-a478-eb66ca809399) for dependencies.
 
 ## Task Creation
 

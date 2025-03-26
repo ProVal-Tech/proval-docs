@@ -24,8 +24,8 @@ This Custom RAWSQL monitor shows the GPO modified time on the computer if the GP
 
 ## Dependencies
 
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
-- [Group Policy Audit](../scripts/group-policy-audit.md)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)  
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
 
 ## Target
 

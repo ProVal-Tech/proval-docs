@@ -47,7 +47,7 @@ Start by creating three separate rows. You can do this by clicking the "Add Row"
 
 ![Row 1 Image 2](../../../static/img/CRI-Agent-Deployment/image_7.png)
 
-This sets the variable `CryismaAgent_URL` with the value of a custom field 'CryismaAgent_URL' [CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>).
+This sets the variable `CryismaAgent_URL` with the value of a custom field 'CryismaAgent_URL' [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418).
 
 ### Row 2: Function: Set Pre-defined Variable
 
@@ -55,7 +55,7 @@ This sets the variable `CryismaAgent_URL` with the value of a custom field 'Cryi
 
 ![Row 2 Image 2](../../../static/img/CRI-Agent-Deployment/image_9.png)
 
-This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>).
+This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418).
 
 ### Row 3: Function: PowerShell Script
 

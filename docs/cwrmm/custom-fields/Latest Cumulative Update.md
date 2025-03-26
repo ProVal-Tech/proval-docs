@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store and display the results of the [CW RMM - Task - Cumulative Update Audit](<../tasks/Cumulative Update Audit.md>) task.
+This custom field is used to store and display the results of the [CW RMM - Task - Cumulative Update Audit](/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb) task.
 
 ## Dependencies
 
-[CW RMM - Task - Cumulative Update Audit](<../tasks/Cumulative Update Audit.md>)
+[CW RMM - Task - Cumulative Update Audit](/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb)
 
 ## Details
 

@@ -16,12 +16,12 @@ The purpose of this group is to filter the MAC machines where the Huntress agent
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](<../custom-fields/Huntress Acct_Key.md>)
-- [CW RMM - Custom Fields - Huntress Org_Key](<../custom-fields/Huntress Org_Key.md>)
-- [CW RMM - Custom Fields - Huntress Tag](<../custom-fields/Huntress Tag.md>)
-- [CW RMM - Custom Fields - Exclude Huntress](<../custom-fields/Exclude Huntress.md>)
-- [CW RMM - Custom Fields - Exclude Huntress Deployment](<../custom-fields/Exclude Huntress Deployment.md>)
-- [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>)
+- [CW RMM - Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)
+- [CW RMM - Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)
+- [CW RMM - Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)
+- [CW RMM - Custom Fields - Exclude Huntress](/docs/a65dbf66-6cfe-4136-aba1-0b75b3068485)
+- [CW RMM - Custom Fields - Exclude Huntress Deployment](/docs/caedfebd-73ec-43cb-a978-02283622f430)
+- [CW RMM - Task - Huntress Agent (INSTALL)](/docs/e1f40d15-13f1-465e-9870-653927ad0434)
 
 ## Group Overview
 

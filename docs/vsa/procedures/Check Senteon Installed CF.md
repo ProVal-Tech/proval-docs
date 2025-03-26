@@ -16,11 +16,11 @@ This agent procedure is used to check for the presence of the Senteon Agent on t
 
 ## Dependencies
 
-Custom Field: [cPVAL Senteon Installed](<../../unsorted/SWM - Software Management - Custom Field - cPVAL Senteon Installed.md>)
+Custom Field: [cPVAL Senteon Installed](/docs/bc1c7f2d-8eb4-41a3-bb12-8150cdeb0241)
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
+[SWM - Software Management - Solution - Senteon Agent](/docs/5cc5165d-4314-499b-9357-299f3b04f402)
 
 ## Implementation
 

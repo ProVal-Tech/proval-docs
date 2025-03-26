@@ -18,7 +18,7 @@ This document presents 25 independent policies, one for each drive letter, which
 
 - **Policy Name**: Server Core HDD Monitor Drive \{LETTER}
 - **Policy Description**: Monitors server drive \{LETTER}.
-- **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
+- **Applied View**: [EPM - Disk - Custom Field - xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
 - **Policy Objects Active**:
@@ -29,7 +29,7 @@ This document presents 25 independent policies, one for each drive letter, which
 
 - **Policy Name**: Workstation Core HDD Monitor Drive C:
 - **Policy Description**: Monitors workstation drive C:.
-- **Applied View**: [xPVAL Drive C](<../custom-fields/xPVAL Drive List.md>)
+- **Applied View**: [xPVAL Drive C](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)
 - **Assigned Organizations / Machine Groups**: Global / Varies
 - **Assigned Machines**: Varies based on client
 - **Policy Objects Active**:

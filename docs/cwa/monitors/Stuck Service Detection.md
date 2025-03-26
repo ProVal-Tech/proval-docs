@@ -33,7 +33,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[Stuck Service Action](<../scripts/Stuck Service Action.md>)
+[Stuck Service Action](/docs/bb8f2562-4744-4349-a661-62f64f0d05b2)
 
 ## Target
 

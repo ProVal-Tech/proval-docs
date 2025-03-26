@@ -20,12 +20,12 @@ This script displays the results of selecting 'Find Script' for all scripts.
 
 ## Dependencies
 
-- [CWM - Automate - Custom View - pvl_scripts_memberof](<../views/pvl_scripts_memberof.md>)
-- [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>)
+- [CWM - Automate - Custom View - pvl_scripts_memberof](/docs/5b888c11-49da-4fea-9bda-9bffdfbb286d)
+- [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](/docs/8c15555e-049e-4bf3-8a29-6446e2b2d05d)
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>) script.
+- Import the [CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](/docs/8c15555e-049e-4bf3-8a29-6446e2b2d05d) script.
 - Import the dataview.
 - Execute/Debug the script against any computer and ensure the presence of data in the dataview.
 - Remove the script.

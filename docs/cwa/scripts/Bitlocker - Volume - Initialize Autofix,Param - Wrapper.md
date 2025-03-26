@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>).
+This script runs as an autofix to deploy the BitLocker initialization to the agents detected by the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](/docs/925adfc5-e119-4c56-937a-a31c3e171371).
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 ## Dependencies
 
-- [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>)
-- [SEC - Encryption - Script - BitLocker - Volume - Initialize](<./Bitlocker - Volume - Initialize.md>)
-- [SEC - Encryption - Script - BitLocker - Audit](<./Bitlocker - Audit.md>)
+- [Internal Monitor - BitLocker - Initialize Volume Deployment](/docs/925adfc5-e119-4c56-937a-a31c3e171371)
+- [SEC - Encryption - Script - BitLocker - Volume - Initialize](/docs/759a5a88-17ef-42e0-9145-4760aff7a3c9)
+- [SEC - Encryption - Script - BitLocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
 
 #### EDFs
 
@@ -43,7 +43,7 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 | Variable Name                     | Value    | Required | Description                                                                                                                                                                                                                     |
 |-----------------------------------|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BitLocker_Enable_Fail_Count       | 1 or 2  | True     | The script records the count of failed attempts of the BitLocker initialization in this script state. If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](<../monitors/Bitlocker - Initialize Volume Deployment.md>). |
+| BitLocker_Enable_Fail_Count       | 1 or 2  | True     | The script records the count of failed attempts of the BitLocker initialization in this script state. If it fails twice (2) times, the computer will be excluded from the monitor [Internal Monitor - BitLocker - Initialize Volume Deployment](/docs/925adfc5-e119-4c56-937a-a31c3e171371). |
 
 ## Output
 

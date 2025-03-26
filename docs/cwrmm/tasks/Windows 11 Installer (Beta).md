@@ -16,7 +16,7 @@ Install Windows 11 on a compatible Windows 10 computer. The default behavior of 
 
 The OS drive should have 20 GB of free space to install the upgrade.
 
-This task can be executed manually against the computers present in the [Windows 11 Compatible Machines](<../groups/Windows 11 Compatible Machines.md>) group.
+This task can be executed manually against the computers present in the [Windows 11 Compatible Machines](/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5) group.
 
 ## Sample Run
 
@@ -26,8 +26,8 @@ This task can be executed manually against the computers present in the [Windows
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](<../custom-fields/Endpoint - Windows 11 Upgrade RunTime.md>)
-- [CW RMM - Device Group - Windows 11 Compatible Machines](<../groups/Windows 11 Compatible Machines.md>)
+- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](/docs/ffce7cd6-7757-4918-bce0-461cf9dce0b4)
+- [CW RMM - Device Group - Windows 11 Compatible Machines](/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5)
 
 ## Variables
 

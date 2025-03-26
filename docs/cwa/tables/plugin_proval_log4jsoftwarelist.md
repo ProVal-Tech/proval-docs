@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-This document stores information from [NCSC-NL's GitHub repository](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md) about applications that may be affected by Log4J vulnerabilities.
+This document stores information from [NCSC-NL's GitHub repository](/docs) about applications that may be affected by Log4J vulnerabilities.
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import Log4Shell Table.md>)
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
+- [SEC - Endpoint Protection - Script - Import Log4Shell Table](/docs/c3342117-53c8-48de-9831-27cd7da77c00)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5)
 
 ## Tables
 

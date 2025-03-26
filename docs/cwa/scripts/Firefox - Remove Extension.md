@@ -24,7 +24,7 @@ This script can be used to remove and optionally block an extension in Mozilla F
 
 - PowerShell v5
 - Mozilla Firefox
-- [Register-FirefoxExtension](<../../powershell/Register-FirefoxExtension.md>)
+- [Register-FirefoxExtension](/docs/db0512b5-70cd-4145-aa69-de84f9b1846d)
 
 ## Variables
 

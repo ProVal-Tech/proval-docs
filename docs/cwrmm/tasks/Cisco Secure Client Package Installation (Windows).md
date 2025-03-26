@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task is a CW RMM implementation of the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](<../../powershell/Install-CiscoSecureClient.md>). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
+This task is a CW RMM implementation of the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secu
 
 ## Dependencies
 
-[SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>)
+[SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03)
 
 ## Sample Run
 
@@ -37,23 +37,23 @@ Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secu
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Install-CiscoSecureClient](<../../powershell/Install-CiscoSecureClient.md>)
+[SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
 
 ## Variables
 
 | Name      | Description                                                                                                                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter | Parameter stored in the [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) custom field for the company.                                            |
+| Parameter | Parameter stored in the [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field for the company.                                            |
 | Output    | Stores the output of the previously executed PowerShell script, and its value changes after each execution of a PowerShell script.                                                                                         |
 
 ## Script Creation
 
-Create the company-level Custom Field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>).
+Create the company-level Custom Field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03).
 
 Create a new `Script Editor` style script in the system to implement this task.
 
 **Name:** `Cisco Secure Client Package Installation (Windows)`  
-**Description:** `How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](<../../powershell/Install-CiscoSecureClient.md>)  
+**Description:** `How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
 Note: To install the Umbrella module, it is required to install the Core VPN module.`  
 **Category:** `Application`
 
@@ -206,7 +206,7 @@ Paste this line in the `Error Message` box and click the `Save` button.
 %Output%`
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-Store the proper parameter at the company-level custom field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](<../custom-fields/Cisco Secure Client Parameter.md>) before scheduling or running the script.
+Store the proper parameter at the company-level custom field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) before scheduling or running the script.
 
 ## Completed Script
 

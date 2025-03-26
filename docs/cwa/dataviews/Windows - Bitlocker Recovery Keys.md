@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview displays Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) script.
+This dataview displays Bitlocker recovery keys that have been collected by the [Bitlocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5) script.
 
 ## Dependencies
 
-[Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)
+[Bitlocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5)
 
 ## Columns
 

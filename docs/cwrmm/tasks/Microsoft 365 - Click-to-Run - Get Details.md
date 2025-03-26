@@ -21,11 +21,11 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - C2R Office Version](<../custom-fields/Endpoint - C2R Office Version.md>)
-- [CW RMM - Custom Field - Endpoint - C2R Auto Update](<../custom-fields/Endpoint - C2R Auto Update.md>)
-- [CW RMM - Custom Field - Endpoint - C2R Update Channel](<../custom-fields/Endpoint - C2R Update Channel.md>)
-- [CW RMM - Custom Field - Endpoint - C2R Data Collection Time](<../custom-fields/Endpoint - C2R Data Collection Time.md>)
-- [CW RMM - Device Group - Office C2R Auditing](<../groups/Office C2R Auditing.md>)
+- [CW RMM - Custom Field - Endpoint - C2R Office Version](/docs/9229f1df-c80a-4333-8184-2c54954b4996)
+- [CW RMM - Custom Field - Endpoint - C2R Auto Update](/docs/3fbd3eec-1a64-44d4-a812-fc2ac0e359e0)
+- [CW RMM - Custom Field - Endpoint - C2R Update Channel](/docs/371c0aa5-4230-4952-b341-f5c58b0b46ad)
+- [CW RMM - Custom Field - Endpoint - C2R Data Collection Time](/docs/d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0)
+- [CW RMM - Device Group - Office C2R Auditing](/docs/4611eb6b-e00e-4e38-9935-531f71852e8c)
 
 ## Task Creation
 

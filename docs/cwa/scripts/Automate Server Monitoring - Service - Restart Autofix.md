@@ -24,7 +24,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 
 ## Dependencies
 
-- [Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
+- [Agnostic - Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
 - [Solution - Automate server and CW Manage Plugin Monitoring](https://proval.itglue.com/5078775/docs/10390988)
 
 ## Variables

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This table stores the Windows Shadow Copy state for endpoints with Shadow Copy enabled, collected from the script [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) result.
+This table stores the Windows Shadow Copy state for endpoints with Shadow Copy enabled, collected from the script [Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766) result.
 
 ## Dependencies
 
-[Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
+[Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)
 
 ## Tables
 

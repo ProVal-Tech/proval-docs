@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to display the results of the [CW RMM - Task - BitLocker Recovery Key Backup Audit](<../tasks/BitLocker Recovery Key Backup Audit.md>) task that pushes BitLocker keys from CW RMM to Active Directory or Azure Active Directory.
+This custom field is used to display the results of the [CW RMM - Task - BitLocker Recovery Key Backup Audit](/docs/b469ea90-0c1b-421b-89e2-be5c91501035) task that pushes BitLocker keys from CW RMM to Active Directory or Azure Active Directory.
 
 ## Create the Custom Field
 

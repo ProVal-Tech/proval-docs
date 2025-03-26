@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is an Autofix and is meant to be called by the monitor [ProVal - Production - Automate - Ticket Sync Unsuccessful](<../monitors/Ticket Sync Unsuccessful.md>). If a ticket has failed to sync to the PSA for more than 2 hours, the monitor will trigger this script. The script will gather the information from the ticket and forward the ticket to a specified email address, ensuring that no tickets are missed.
+This script is an Autofix and is meant to be called by the monitor [ProVal - Production - Automate - Ticket Sync Unsuccessful](/docs/1fa27f5d-ca9d-4bff-8776-569a15f772d3). If a ticket has failed to sync to the PSA for more than 2 hours, the monitor will trigger this script. The script will gather the information from the ticket and forward the ticket to a specified email address, ensuring that no tickets are missed.
 
 **Time Saved by Automation:** 5 Minutes
 
@@ -22,7 +22,7 @@ This script is a function script and will not run successfully if executed manua
 
 ## Dependencies
 
-[ProVal - Production - Automate - Ticket Sync Unsuccessful](<../monitors/Ticket Sync Unsuccessful.md>)  
+[ProVal - Production - Automate - Ticket Sync Unsuccessful](/docs/1fa27f5d-ca9d-4bff-8776-569a15f772d3)  
 Automate must be syncing tickets with a PSA that uses the "ExternalID" field in the "Tickets" table.
 
 ## Variables

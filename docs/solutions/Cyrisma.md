@@ -18,19 +18,19 @@ This solution helps to deploy, monitor, and audit the Cyrisma sensor application
 
 | Content                                                                 | Type          | Function                                                                                      |
 |-------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------|
-| [CW RMM - CRI Agent Deployment](<../cwrmm/tasks/CRI Agent Deployment.md>) | Task          | This task is designed to deploy the Cyrisma Sensor Application.                              |
-| [CW RMM - Cyrisma Custom Fields](<../cwrmm/custom-fields/CW RMM - Cyrisma Custom Fields.md>) | Custom Fields | The custom fields listed below are used in the Cyrisma deployment and audit.                 |
-| [CW RMM - Monitor - CRI Agent Deployment Status Check](<../cwrmm/monitors/CRI Agent Deployment Status Check.md>) | Monitor       | This monitor is designed to create a ticket for the CRI Agent deployment failure.            |
-| [CW RMM - Dynamic Groups - Cyrisma Sensor](<../cwrmm/groups/Cyrisma Sensor.md>) | Dynamic Groups | The groups mentioned in this document are created to deploy and audit the Cyrisma Sensor.    |
+| [CW RMM - CRI Agent Deployment](/docs/344a3ab5-d05c-41a5-9303-45fc387ec2e8) | Task          | This task is designed to deploy the Cyrisma Sensor Application.                              |
+| [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418) | Custom Fields | The custom fields listed below are used in the Cyrisma deployment and audit.                 |
+| [CW RMM - Monitor - CRI Agent Deployment Status Check](/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524) | Monitor       | This monitor is designed to create a ticket for the CRI Agent deployment failure.            |
+| [CW RMM - Dynamic Groups - Cyrisma Sensor](/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f) | Dynamic Groups | The groups mentioned in this document are created to deploy and audit the Cyrisma Sensor.    |
 
 ## Implementation
 
 Follow the steps below for the implementation:
 
-- Create Custom Fields: [CW RMM - Cyrisma Custom Fields](<../cwrmm/custom-fields/CW RMM - Cyrisma Custom Fields.md>)
-- Create Groups: [CW RMM - Dynamic Groups - Cyrisma Sensor](<../cwrmm/groups/Cyrisma Sensor.md>)
-- Create Task: [CW RMM - CRI Agent Deployment](<../cwrmm/tasks/CRI Agent Deployment.md>)
-- Create Monitor: [CW RMM - Monitor - CRI Agent Deployment Status Check](<../cwrmm/monitors/CRI Agent Deployment Status Check.md>)
+- Create Custom Fields: [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418)
+- Create Groups: [CW RMM - Dynamic Groups - Cyrisma Sensor](/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f)
+- Create Task: [CW RMM - CRI Agent Deployment](/docs/344a3ab5-d05c-41a5-9303-45fc387ec2e8)
+- Create Monitor: [CW RMM - Monitor - CRI Agent Deployment Status Check](/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524)
 
 Follow the Monitor and Task implementation to complete the solution.
 

@@ -24,9 +24,9 @@ The system property `PropertyIndex` needs to be set before running the script.
 
 ## Dependencies
 
-- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
+- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 - [Restrict Vendor Access to Clients](https://proval.itglue.com/DOC-5078775-8324532)
-- [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](<../monitors/Automatically Restrict Vendor Machines in SC.md>)
+- [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
 
 #### Variables
 

@@ -16,7 +16,7 @@ Stores battery information for each target.
 
 ## Dependencies
 
-[EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) creates this table.
+[EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) creates this table.
 
 ## Tables
 

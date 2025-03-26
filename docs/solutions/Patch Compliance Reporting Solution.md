@@ -18,9 +18,9 @@ To provide clients with professional-looking patch management reports that they 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Report - Patch Compliance - CU Audit - All Machines](<../cwa/reports/Patch Compliance - CU Audit - All Machines.md>) | Report | Displays a comprehensive summary of all machines at a specific client and their respective patch status. |
-| [Report - Patch Compliance - CU Audit - Servers](<../cwa/reports/Patch Compliance - CU Audit - Servers.md>) | Report | Displays a comprehensive summary of all servers at a specific client and their respective patch status. |
-| [Report - Patch Compliance - CU Audit - Workstations](<../cwa/reports/Patch Compliance - CU Audit - Workstations.md>) | Report | Displays a comprehensive summary of all workstations at a specific client and their respective patch status. |
+| [Report - Patch Compliance - CU Audit - All Machines](/docs/7be1d6f2-7b75-4740-a42b-8e6f66377d15) | Report | Displays a comprehensive summary of all machines at a specific client and their respective patch status. |
+| [Report - Patch Compliance - CU Audit - Servers](/docs/f2a584ea-6b77-4b95-917a-a658da7a6785) | Report | Displays a comprehensive summary of all servers at a specific client and their respective patch status. |
+| [Report - Patch Compliance - CU Audit - Workstations](/docs/bbeeb6dd-3c9b-49f0-ae6d-ef6f543d2174) | Report | Displays a comprehensive summary of all workstations at a specific client and their respective patch status. |
 
 ## Associated Content
 
@@ -77,7 +77,7 @@ At the end, all the machines are totaled and averaged to get the main percentage
 **Q: I am seeing one of my machines reporting a very high age since the last cumulative update has been installed. Where should I start troubleshooting?**  
 A: I have outlined some steps that can be taken to troubleshoot why you may be seeing out-of-date machines:
 1. Open the Computer Management screen of the affected device --> Navigate to the Patching screen --> Look for the latest month's cumulative update.
-   - If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](<../cwa/scripts/Patch Manager - WUA Settings Validation.md>) and scan for patches again. If that does not work, further troubleshooting will need to happen manually on the machine.
+   - If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) and scan for patches again. If that does not work, further troubleshooting will need to happen manually on the machine.
 2. If the latest cumulative update is visible, look for any failure messages on that main screen or when selecting the Patch Job tab.
    - If there are no job logs, there is likely a configuration issue with the assigned patch policy that must be investigated.
    - If you see a failure during the maintenance window, investigate the mentioned error code.
@@ -91,7 +91,7 @@ A: If this is a workstation, you can try to update to the latest feature update 
 - If this is a server, I do not have many additional things to try other than upgrading/reloading the server.
 
 **Q: What does it mean when a machine has 'No Audit Information' provided?**  
-A: The cumulative update data is audited from the [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104). The [Script - Get Latest Installed Cumulative Update](<../cwa/scripts/Get Latest Installed Cumulative Update.md>) should be running against all agents every 7 days. If you see machines in this list, they are most likely offline frequently. If not, you can try running the script manually against the machine and report any errors to ProVal Technologies for further investigation.
+A: The cumulative update data is audited from the [Solution - Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) should be running against all agents every 7 days. If you see machines in this list, they are most likely offline frequently. If not, you can try running the script manually against the machine and report any errors to ProVal Technologies for further investigation.
 
 ## Potential Problems
 

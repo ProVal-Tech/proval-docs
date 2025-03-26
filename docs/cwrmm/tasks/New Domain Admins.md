@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>), facilitating enhanced auditing and monitoring processes.
+The task involves executing a PowerShell script on the domain controllers to retrieve information about recently created domain administrators or users who have been added to an administrative group since the last execution of this task. Subsequently, the acquired data is formatted and stored in [Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626), facilitating enhanced auditing and monitoring processes.
 
 Importantly, this task should be scheduled against the primary domain controller for each domain.
 
@@ -27,11 +27,11 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ## Dependencies
 
-- [CW RMM - Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>)
-- [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>)
-- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
-- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
-- [CW RMM - Task - Validate Primary Domain Controller](<./Validate Primary Domain Controller.md>)
+- [CW RMM - Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626)
+- [CW RMM - Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)
+- [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+- [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
+- [CW RMM - Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
 
 ## Variables
 
@@ -41,7 +41,7 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ### Implementation
 
-Create the Custom Field [CW RMM - Custom Field - New Domain Admins](<../custom-fields/New Domain Admins.md>).
+Create the Custom Field [CW RMM - Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626).
 
 ## Create Script
 

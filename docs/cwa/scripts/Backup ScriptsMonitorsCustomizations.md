@@ -35,7 +35,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 ## Update Notice: 1-Aug-2024
 
 - Added a new system property `Backup_Bitlocker_Audit_Data`.
-- Setting this property to `1` will enable the backup of the [Bitlocker Status](<../dataviews/Bitlocker Status.md>) dataview.
+- Setting this property to `1` will enable the backup of the [Bitlocker Status](/docs/6442955a-0264-44ce-aad1-9e2f973e40ec) dataview.
 - Run the script once against any client with the user parameter `Set_Environment` set to `1` to create the newly introduced system property.
 
 ## Implementations
@@ -55,7 +55,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 
 ## Dependencies
 
-[CWA - Script - Dataview - Save as CSV [Custom Location]](<./Dataview - Save as CSV Custom Location.md>)  
+[CWA - Script - Dataview - Save as CSV [Custom Location]](/docs/ef644f47-8268-43fd-9e8a-ab32f64ec617)  
 
 ## User Parameters
 
@@ -71,7 +71,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 | AutomateBackup_Computerid         | 294                                    | True     | Stores the computer ID of the machine where the backup data will be saved.                          |
 | AutomateBackup_Base_Directory     | C:/CWA Solutions Backup                | False    | Stores the destination path for the backup data. The script will default to `C:/CWA Solutions Backup`. If there is a problem with the path in this variable, it will fall back to using `C:/CWAutomate`. |
 | ProVal_Alerts_Email_Address        | [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | True     | ProVal's email address to notify of the script's configuration issue. It should be `[Alerts@provaltech.com](mailto:Alerts@provaltech.com)`. |
-| Backup_Bitlocker_Audit_Data       | 1                                      | False    | Setting this system property to `1` will enable the backup of the [Bitlocker Status](<../dataviews/Bitlocker Status.md>) dataview. The default value is `1`. |
+| Backup_Bitlocker_Audit_Data       | 1                                      | False    | Setting this system property to `1` will enable the backup of the [Bitlocker Status](/docs/6442955a-0264-44ce-aad1-9e2f973e40ec) dataview. The default value is `1`. |
 
 ## Script States
 

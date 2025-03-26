@@ -29,9 +29,9 @@ The EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data
 
 ## Dependencies
 
-- [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>)  
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)  
-- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)  
+- [EPM - Disk - Script - Disk - Gather Critical Data](/docs/687261c3-e6d7-46bc-84f6-506007d47142)  
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](/docs/7a224177-45ff-4f2e-a8fe-a734a642a539)  
+- [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)  
 
 ## Target
 
@@ -41,6 +41,6 @@ Managed Windows Workstations
 
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
-Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](<../scripts/Disk - Gather Critical Data.md>) script.
+Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](/docs/687261c3-e6d7-46bc-84f6-506007d47142) script.
 
 

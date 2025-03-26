@@ -16,7 +16,7 @@ A thorough examination of Windows 10 computers and their patching status for eac
 
 ## Requirements
 
-1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>) must be present for this dataview to work.
+1. [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) must be present for this dataview to work.
 
 ## Columns
 

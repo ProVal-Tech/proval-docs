@@ -22,7 +22,7 @@ The script applies the WiFi configuration for the desired SSID.
 
 ## Dependencies
 
-- [WiFi Profile - Get](<./WiFi Profile - Get.md>)
+- [WiFi Profile - Get](/docs/95ecf8ed-f2ac-46fa-ad7a-05894d0743be)
 - @plugin_proval_wifi_profiles (Table)
 
 ## Variables
@@ -35,7 +35,7 @@ The script applies the WiFi configuration for the desired SSID.
 
 ## Process
 
-- The script should be used after the WiFi profile has been gathered by running the [WiFi Profile - Get](<./WiFi Profile - Get.md>) script against a machine with the profile already set up.
+- The script should be used after the WiFi profile has been gathered by running the [WiFi Profile - Get](/docs/95ecf8ed-f2ac-46fa-ad7a-05894d0743be) script against a machine with the profile already set up.
 - It retrieves the XML profile from the database based on the ClientID and SSID provided, writes the output to a file, and imports the profile onto the target machine.
 
 ## Output

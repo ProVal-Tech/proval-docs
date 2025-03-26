@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview stores the logon username, logon user count, and script run date data detected via the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>) for Windows Workstations.
+This dataview stores the logon username, logon user count, and script run date data detected via the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4) for Windows Workstations.
 
 ## Dependencies
 
-[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>)
+[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4)
 
 ## Columns
 
@@ -27,8 +27,8 @@ This dataview stores the logon username, logon user count, and script run date d
 | Computer                      | Computer name of the agent.                                                                                          |
 | Operating System              | The operating system name of the agent.                                                                              |
 | Last Contact                  | Last contact of the agent with the CW Automate.                                                                     |
-| Frequent Logon User Name      | Frequent logon user name detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
-| Frequent Logon User Count      | Frequent logon user count number detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>). |
+| Frequent Logon User Name      | Frequent logon user name detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4). |
+| Frequent Logon User Count      | Frequent logon user count number detected by the script [CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4). |
 | Script Ran Date               | Date when the script was last run, indicating when the last user was detected.                                     |
 
 

@@ -16,7 +16,7 @@ This dataview shows the current agent PowerShell versions.
 
 ## Dependencies
 
-[PowerShell Version Audit](<../scripts/PowerShell Version Audit.md>)
+[PowerShell Version Audit](/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d)
 
 ## Columns
 

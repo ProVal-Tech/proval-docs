@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This internal monitor executes the [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script on online Windows machines, excluding servers. It will execute the script on the machines where it has not been executed for more than 7 days.
+This internal monitor executes the [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script on online Windows machines, excluding servers. It will execute the script on the machines where it has not been executed for more than 7 days.
 
 ## Dependencies
 
-[EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
+[EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)
 
 ## Target
 
@@ -26,6 +26,6 @@ Windows machines, excluding domain controller servers.
 
 **Name:** `△ Custom - Execute Script - Windows - User Profile - Get Information`  
 
-The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
+The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script.
 
 

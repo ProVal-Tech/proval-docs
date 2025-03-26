@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The dataview is created to verify the workaround applied and the installation of all necessary patches in order to mitigate and detect Active Directory privilege escalation attacks. It will present the names of the computer accounts with non-compliant sAMAccountNames as well. Essentially, it populates the information fetched by the [Workaround - Active Directory Privilege Escalation Attack [DV]](<../scripts/Active Directory - Privilege Escalation Attack Mitigation.md>) script.
+The dataview is created to verify the workaround applied and the installation of all necessary patches in order to mitigate and detect Active Directory privilege escalation attacks. It will present the names of the computer accounts with non-compliant sAMAccountNames as well. Essentially, it populates the information fetched by the [Workaround - Active Directory Privilege Escalation Attack [DV]](/docs/18fbde09-500a-41a4-bad0-c37b85429926) script.
 
 ## Dependencies
 
-[Workaround - Active Directory Privilege Escalation Attack [DV]](<../scripts/Active Directory - Privilege Escalation Attack Mitigation.md>)
+[Workaround - Active Directory Privilege Escalation Attack [DV]](/docs/18fbde09-500a-41a4-bad0-c37b85429926)
 
 ## Columns
 

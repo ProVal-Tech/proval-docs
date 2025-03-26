@@ -18,8 +18,8 @@ The monitor set will detect Windows machines where the PowerShell version is old
 
 ## Dependencies
 
-- [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
-- [SWM - Software Installation - Script - Update PowerShell](<../scripts/Update PowerShell.md>)
+- [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81)
+- [SWM - Software Installation - Script - Update PowerShell](/docs/a95013e7-7091-4d99-a772-4223230789d9)
 
 ## Target
 

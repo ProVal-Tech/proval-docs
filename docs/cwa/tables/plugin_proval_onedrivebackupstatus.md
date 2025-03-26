@@ -16,7 +16,7 @@ This document stores information about the redirection of Desktop, Documents, an
 
 ## Dependencies
 
-[OneDrive - Backup Status](<../scripts/OneDrive - Backup Status.md>)
+[OneDrive - Backup Status](/docs/bf26e767-9125-4b51-a950-ec3d3dc32f8b)
 
 ## Table
 

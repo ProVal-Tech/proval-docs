@@ -30,8 +30,8 @@ This script cannot be run manually.
 
 ## Dependencies
 
-- [Agent Monitor Creation - Disk Workstations 5 GB*](<./Agent Monitor Creation - Disk Workstations 5 GB.md>)  
-- [Agent Monitor Creation - Disk Servers 5 GB*](<./Agent Monitor Creation - Disk Servers 5 GB.md>)  
+- [Agent Monitor Creation - Disk Workstations 5 GB*](/docs/5e473149-73a6-4e38-b61e-fd200d9af020)  
+- [Agent Monitor Creation - Disk Servers 5 GB*](/docs/9ce297f7-cc65-4fd8-b05b-b25e6088c6fe)  
 
 #### Global Parameters
 

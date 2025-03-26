@@ -18,8 +18,8 @@ Provide a reliable and accessible solution for application management via Chocol
 
 | Content                                                                                               | Type             | Function                                                      |
 |-------------------------------------------------------------------------------------------------------|------------------|---------------------------------------------------------------|
-| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](<../vsa/procedures/Chocolatey Application Install.md>) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to install an application. |
-| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](<../vsa/procedures/Chocolatey Application Uninstall.md>) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to uninstall an application. |
+| [SWM - Software Install - Agent Procedure - Chocolatey Application Install](/docs/8a84e955-77a3-47b7-bd37-9adffb0ee995) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to install an application. |
+| [SWM - Software Uninstall - Agent Procedure - Chocolatey Application Uninstall](/docs/184aa8f9-0119-4f8f-b05e-0f8f74c5bb80) | Agent Procedure   | Utilizes the Foil wrapper for Chocolatey to uninstall an application. |
 
 ## Implementation
 

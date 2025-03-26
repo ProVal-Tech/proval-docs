@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is a version of [SWM - Software Uninstall - Script - Remove Application](<./Remove Application.md>) that is being used to remove DUO specifically.
+This is a version of [SWM - Software Uninstall - Script - Remove Application](/docs/494f7109-e4b2-4ffa-93f8-e33089b09b4e) that is being used to remove DUO specifically.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This is a version of [SWM - Software Uninstall - Script - Remove Application](<.
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-Application](<../../powershell/Remove-Application.md>)
+[SWM - Software Uninstall - Agnostic - Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
 
 #### Global Parameters
 

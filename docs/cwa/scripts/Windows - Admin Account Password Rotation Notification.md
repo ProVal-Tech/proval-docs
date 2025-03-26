@@ -16,7 +16,7 @@ This script will automatically create a ticket or send an email notification if 
 
 ## Update Notification: 11-14-23
 
-Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to ensure that the system properties required for this script are imported.
+Please be advised to promptly synchronize the script [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c). Notably, there have been updates in the `SetEnvironment_Local_Admin_Process` function of the script, focusing on property imports. Additionally, script notes have been adjusted to include the required date for optimal functionality. If updating, please re-run the `SetEnvironment_Local_Admin_Process` function of the script to ensure that the system properties required for this script are imported.
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ Please be advised to promptly synchronize the script [EPM - Windows Configuratio
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>)
+[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c)
 
 ## System Properties
 

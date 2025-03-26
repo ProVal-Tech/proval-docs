@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is intended to be used with the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../monitors/Agent - E-Mail - Machine Back Online.md>) monitor. It will send an email to the addresses mentioned in the computer-level EDF "Online Alert E-mail."
+This script is intended to be used with the [CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](/docs/82c2d005-f115-4481-8c59-82b22526eafa) monitor. It will send an email to the addresses mentioned in the computer-level EDF "Online Alert E-mail."
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](<../monitors/Agent - E-Mail - Machine Back Online.md>)
+[CWM - Automate - Internal Monitor - ProVal - Development - Agent - E-Mail - Machine Back Online](/docs/82c2d005-f115-4481-8c59-82b22526eafa)
 
 ## Variables
 

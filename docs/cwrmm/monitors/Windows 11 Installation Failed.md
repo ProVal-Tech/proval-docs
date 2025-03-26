@@ -16,10 +16,10 @@ This document detects the computers where the Windows 11 Installer (Beta) task h
 
 ## Dependencies
 
-- [CW RMM - Task - Windows 11 Installer (Beta)](<../tasks/Windows 11 Installer (Beta).md>) 
-- [CW RMM - Task - Windows 11 Installation Validation](<../tasks/Windows 11 Installation Validation.md>) 
-- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](<../custom-fields/Endpoint - Windows 11 Upgrade Failed.md>) 
-- [CW RMM - Device Group - Windows 11 Upgrade Validation](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
+- [CW RMM - Task - Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a) 
+- [CW RMM - Task - Windows 11 Installation Validation](/docs/f3e6e1a0-0133-4d84-b0c7-fb02c1e2fca6) 
+- [CW RMM - Custom Field - Endpoint - Windows 11 Upgrade Failed](/docs/eb332e7e-77ae-4cc0-82b1-c4f42cc05fac) 
+- [CW RMM - Device Group - Windows 11 Upgrade Validation](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96)
 
 ## Monitor
 

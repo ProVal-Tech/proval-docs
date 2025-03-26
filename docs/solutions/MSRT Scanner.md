@@ -18,17 +18,17 @@ This solution performs MSRT scanning, auto-fixes detected infections as an optio
 
 | Content                                                                 | Type     | Function                                                                                                                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Malicious Software Removal Tool Scanner](<../cwa/scripts/Malicious Software Removal Tool Scanner.md>) | Script   | This script runs the Malicious Software Removal Tool Scanner and logs the result. It also provides an option to perform an auto-fix of the detected infections by the tool.                                                                                                                                                                                      |
-| [Internal Monitor - MSRT Scanner Execute](<../cwa/monitors/MSRT Scanner Execute.md>) | Monitor  | This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](<../cwa/scripts/Malicious Software Removal Tool Scanner.md>) ran in the past 7 days. |
-| [Dataview - MSRT Scanner Audit](<../cwa/dataviews/MSRT Scanner Audit.md>) | Dataview | This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](<../cwa/scripts/Malicious Software Removal Tool Scanner.md>).                                                                                                                                                                                             |
-| **△ Custom - Execute Script - MSRT Scanner**                          | Alert template | This alert template helps to schedule the script [Script - Malicious Software Removal Tool Scanner](<../cwa/scripts/Malicious Software Removal Tool Scanner.md>) to the detected agents of the monitor [Internal Monitor - MSRT Scanner Execute](<../cwa/monitors/MSRT Scanner Execute.md>).                                                                                       |
+| [Script - Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) | Script   | This script runs the Malicious Software Removal Tool Scanner and logs the result. It also provides an option to perform an auto-fix of the detected infections by the tool.                                                                                                                                                                                      |
+| [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673) | Monitor  | This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) ran in the past 7 days. |
+| [Dataview - MSRT Scanner Audit](/docs/3b6465a0-54e7-45ce-94b2-000ac55c6a26) | Dataview | This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257).                                                                                                                                                                                             |
+| **△ Custom - Execute Script - MSRT Scanner**                          | Alert template | This alert template helps to schedule the script [Script - Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) to the detected agents of the monitor [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673).                                                                                       |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Malicious Software Removal Tool Scanner](<../cwa/scripts/Malicious Software Removal Tool Scanner.md>)
-   - [Internal Monitor - MSRT Scanner Execute](<../cwa/monitors/MSRT Scanner Execute.md>)
-   - [Dataview - MSRT Scanner Audit](<../cwa/dataviews/MSRT Scanner Audit.md>)
+   - [Script - Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257)
+   - [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673)
+   - [Dataview - MSRT Scanner Audit](/docs/3b6465a0-54e7-45ce-94b2-000ac55c6a26)
    - **△ Custom - Execute Script - MSRT Scanner**
 
 2. Reload the system cache:
@@ -36,7 +36,7 @@ This solution performs MSRT scanning, auto-fixes detected infections as an optio
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - MSRT Scanner Execute](<../cwa/monitors/MSRT Scanner Execute.md>)
+     - [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673)
        - Set up with **△ Custom - Execute Script - MSRT Scanner** Alert Template.
        - Right-click and Run Now to start the monitor.
    - Please ensure to whitelist the following hashes for script execution.

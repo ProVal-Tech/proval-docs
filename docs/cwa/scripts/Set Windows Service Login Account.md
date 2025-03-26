@@ -22,7 +22,7 @@ This document is used to change the service login account for a target service.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>)
+- [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-37f8-4da2-b0ed-fdc347a98dfc)
 
 ## Variables
 
@@ -40,7 +40,7 @@ This document is used to change the service login account for a target service.
 
 ## Process
 
-See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>) for process information.
+See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-37f8-4da2-b0ed-fdc347a98dfc) for process information.
 
 ## Output
 

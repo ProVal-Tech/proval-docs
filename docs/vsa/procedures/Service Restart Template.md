@@ -49,7 +49,7 @@ Restarts a service on the endpoint.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Invoke-RestartService](<../../powershell/Invoke-RestartService.md>)
+[EPM - Windows Configuration - Agnostic - Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
 
 ## Process
 

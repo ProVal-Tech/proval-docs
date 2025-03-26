@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This table holds information on patches to deny as per [denied patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records). The [SEC - Windows Patching - Script - Fetch Denied Patch List From Centralized ITGLue KBIDs](<../scripts/Fetch Denied Patch List From Centralized ITGLue KBIDs.md>) script will create and update this table.
+This table holds information on patches to deny as per [denied patches](https://proval.itglue.com/5078775/assets/236189-denied-patches/records). The [SEC - Windows Patching - Script - Fetch Denied Patch List From Centralized ITGLue KBIDs](/docs/f8e944d6-28ce-4be8-bf38-6907221544a7) script will create and update this table.
 
 ## Dependencies
 
-[SEC - Windows Patching - Script - Fetch Denied Patch List From Centralized ITGLue KBIDs](<../scripts/Fetch Denied Patch List From Centralized ITGLue KBIDs.md>)
+[SEC - Windows Patching - Script - Fetch Denied Patch List From Centralized ITGLue KBIDs](/docs/f8e944d6-28ce-4be8-bf38-6907221544a7)
 
 ## Tables
 

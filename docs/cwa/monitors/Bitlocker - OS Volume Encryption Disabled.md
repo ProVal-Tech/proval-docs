@@ -16,8 +16,8 @@ This monitor will return any target machine whose client has the 'Bitlocker Moni
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>)
-- [SEC - Encryption - Solution - Bitlocker](<../../solutions/Bitlocker.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14)
+- [SEC - Encryption - Solution - Bitlocker](/docs/f41e4d71-7074-4c28-8246-b8e3036c1212)
 
 ## Target
 

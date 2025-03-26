@@ -20,7 +20,7 @@ This document ensures that the screen saver settings are enabled and set to the 
 
 ## Dependencies
 
-[Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
+[Protect-ScreenLock](/docs/9c89e293-7f28-4e7c-936f-e285b04e8df0)
 
 ## Variables
 
@@ -41,7 +41,7 @@ This document ensures that the screen saver settings are enabled and set to the 
 
 ## Process
 
-See [Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
+See [Protect-ScreenLock](/docs/9c89e293-7f28-4e7c-936f-e285b04e8df0)
 
 ## Output
 

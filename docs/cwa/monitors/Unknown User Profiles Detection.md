@@ -12,17 +12,17 @@ unlisted: false
 
 ## Summary
 
-The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script.
+The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script.
 
 ![Image](../../../static/img/Unknown-User-Profiles-Detection/image_1.png)
 
-**Note:** The internal monitor does not depend on the [Domain Trust Relationship Check](<./Domain Trust Relationship Check.md>) remote monitor. However, it will not detect the machines identified by the [Domain Trust Relationship Check](<./Domain Trust Relationship Check.md>) remote monitor to prevent identifying machines that have a broken trust relationship with the domain. Since the [User Profile - Get Information](<../scripts/User Profile - Get Information.md>) script cannot properly retrieve accounts for these machines, it will add '(Inferred)' to the remote user names.
+**Note:** The internal monitor does not depend on the [Domain Trust Relationship Check](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) remote monitor. However, it will not detect the machines identified by the [Domain Trust Relationship Check](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) remote monitor to prevent identifying machines that have a broken trust relationship with the domain. Since the [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script cannot properly retrieve accounts for these machines, it will add '(Inferred)' to the remote user names.
 
 ## Dependencies
 
-- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
-- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>)
-- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+- [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)
+- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](/docs/7a87abf3-b410-491b-bbc1-534092e61f55)
+- [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Target
 

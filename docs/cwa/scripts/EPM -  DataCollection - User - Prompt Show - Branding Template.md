@@ -26,7 +26,7 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 
 - [EPM - Agnostic - Prompt-User](https://proval.itglue.com/DOC-5078775-9580402)
 - [Guide - Prompt-User.Ps1](https://proval.itglue.com/DOC-5078775-9580488)
-- [EPM - Data Collection - Script - User Prompt - Show](<./User Prompt - Show.md>)
+- [EPM - Data Collection - Script - User Prompt - Show](/docs/d4406d51-fc3a-46e1-8e25-31a5f43b05e2)
 
 ## Variables
 

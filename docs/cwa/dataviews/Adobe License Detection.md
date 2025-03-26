@@ -16,7 +16,7 @@ This dataview displays Adobe License information.
 
 ## Dependencies
 
-[Adobe License Detail](<../scripts/Adobe License Detail.md>)
+[Adobe License Detail](/docs/7a5a36e2-53b5-4a14-aa2b-0b214ac40767)
 
 ## Columns
 

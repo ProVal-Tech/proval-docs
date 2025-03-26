@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This dataview tracks the progress of the [Workaround - Windows Search Protocol Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and [ProVal - Development - Workaround - Windows Search Protocol Vulnerability [G]](<../monitors/Workaround - Windows Search Protocol VulnerabilityG.md>) monitor set.
+This dataview tracks the progress of the [Workaround - Windows Search Protocol Vulnerability [Param][Autofix][DV]](/docs/af9266ed-a796-49b5-b497-944836e23b8c) script and [ProVal - Development - Workaround - Windows Search Protocol Vulnerability [G]](/docs/d097987d-79c7-4a2f-a57a-ed959c676b20) monitor set.
 
 ## Dependencies
 
-- [Search-MS Registry Key](<../roles/MS-MSDT Registry Key.md>)
-- [ProVal - Development - Workaround - Windows Search Protocol Vulnerability [G]](<../monitors/Workaround - Windows Search Protocol VulnerabilityG.md>)
-- [Workaround - Windows Search Protocol Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Windows Search Protocol Vulnerability.md>)
-- [Windows Search Protocol Vulnerability - Workarounds](<../../solutions/Windows Search Protocol Vulnerability - Workarounds.md>)
+- [Search-MS Registry Key](/docs/174939f4-d7d5-4c92-9813-308db2c2b0c3)
+- [ProVal - Development - Workaround - Windows Search Protocol Vulnerability [G]](/docs/d097987d-79c7-4a2f-a57a-ed959c676b20)
+- [Workaround - Windows Search Protocol Vulnerability [Param][Autofix][DV]](/docs/f6426cb7-b51d-4acb-a602-8fb620474a97)
+- [Windows Search Protocol Vulnerability - Workarounds](/docs/4af66a7d-ddf7-485c-b284-b73a2a5d2de1)
 
 ## Columns
 

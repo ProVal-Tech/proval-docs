@@ -30,7 +30,7 @@ Insert the details of the monitor in the table below.
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Shared Volume [Autofix, Ticket]](<../scripts/Windows Cluster Shared Volume Autofix,Ticket.md>)
+[CWA Script - Windows Cluster Shared Volume [Autofix, Ticket]](/docs/0a795741-52b7-4de6-abc2-01b5add80f99)
 
 ## Target
 
@@ -42,4 +42,4 @@ Should be targeted to a Cluster Detected group.
 
 Please follow the implementation document below to install this content:
 
-- [Import - Remote Monitor - Windows Cluster Shared Volume Detection](<./Import-Remote-Monitor-Windows-Cluster-Shared-Volume-Detection.md>)
+- [Import - Remote Monitor - Windows Cluster Shared Volume Detection](/docs/2fee5750-3a75-4256-b1b6-fcf2b81dccd6)

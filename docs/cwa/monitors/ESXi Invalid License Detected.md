@@ -16,7 +16,7 @@ The purpose of the monitor set is to detect ESXi hosts with expired or trial ver
 
 ## Dependencies
 
-[Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>)
+[Script - Ticket Creation - VMWare ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c)
 
 ## Target
 
@@ -34,6 +34,6 @@ Global
 
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
-**The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](<../scripts/Ticket Creation - VMWare ESXi Monitoring.md>) **script on failure.**
+**The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c) **script on failure.**
 
 

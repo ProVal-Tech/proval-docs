@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-Displays audited speed test information from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
+Displays audited speed test information from the custom table [EPM - Network - Custom Table - plugin_proval_speedtest_audit](/docs/38fbe617-1c50-443b-b69b-07eae7135652).
 
 ## Dependencies
 
-- [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>)  
-- [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>)  
-- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>)  
+- [EPM - Network - Agnostic - Test-InternetSpeed](/docs/12946fed-d74f-4977-b59d-85d5c639b56b)  
+- [EPM - Network - Script - Internet Speed - Audit](/docs/54ed691f-e7be-4709-8967-72a4c9c782f6)  
+- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](/docs/38fbe617-1c50-443b-b69b-07eae7135652)  
 
 ## Columns
 

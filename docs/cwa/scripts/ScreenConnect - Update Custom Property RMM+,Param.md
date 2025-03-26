@@ -28,7 +28,7 @@ User properties for the Custom Property Index and the Property Value need to be 
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
+[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 #### Variables
 

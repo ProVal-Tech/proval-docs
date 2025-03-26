@@ -20,7 +20,7 @@ This document provides an implementation guide for the Disable-PowershellVersion
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2](<./EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2.md>)
+- [EPM - Windows Configuration - Agnostic - Disable-PowershellVersion2](/docs/1691cc51-ef36-451d-9086-ca69c6ef85d8)
 
 ## Process
 

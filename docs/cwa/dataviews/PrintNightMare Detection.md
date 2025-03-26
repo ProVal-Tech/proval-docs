@@ -16,9 +16,9 @@ This dataview will collectively show all required information about the PrintNig
 
 ## Dependencies
 
-- [CVE-2021-1675 - Set Folder ACL (PrintNightmare)](<../scripts/CVE-2021-1675 - Set folder ACL (PrintNightmare).md>)
-- [CVE-2021-1675 - Restore Folder ACL Permission](<../scripts/CVE-2021-1675 - Restore folder ACL Permission.md>)
-- [Point and Print Nightmare Check](<../scripts/Point and Print Nightmare Check.md>)
+- [CVE-2021-1675 - Set Folder ACL (PrintNightmare)](/docs/158a1816-be64-428f-b5fa-f0c6b8b6c1fb)
+- [CVE-2021-1675 - Restore Folder ACL Permission](/docs/cb79f759-a6a8-41ca-bb55-619cb48d635f)
+- [Point and Print Nightmare Check](/docs/d65da81c-76ee-429a-a007-9ef788f2ee51)
 
 ## Columns
 

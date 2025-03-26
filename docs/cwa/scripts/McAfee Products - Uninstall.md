@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is an Automate implementation of the agnostic solution [SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>) to remove McAfee products from Windows machines.
+This script is an Automate implementation of the agnostic solution [SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](/docs/4c93e57c-0959-4f9e-9557-6f5974866782) to remove McAfee products from Windows machines.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This script is an Automate implementation of the agnostic solution [SWM - Softwa
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>)
+[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](/docs/4c93e57c-0959-4f9e-9557-6f5974866782)
 
 ## Process
 

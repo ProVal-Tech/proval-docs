@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store Windows PowerShell version information about the endpoint. These details are gathered by the [CW RMM - PowerShell Version Information](<../tasks/PowerShell Version Information.md>) task.
+This custom field is used to store Windows PowerShell version information about the endpoint. These details are gathered by the [CW RMM - PowerShell Version Information](/docs/a8419e91-9e07-4f16-be4b-769c78f86f1b) task.
 
 # Create the Custom Field
 

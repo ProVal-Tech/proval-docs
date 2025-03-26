@@ -16,8 +16,8 @@ The Dataview audits the monitors in an environment.
 
 ## Dependencies
 
-- [plugin_proval_v_monitoraudit](<../monitors/CWM - Automate - View - plugin_proval_v_monitoraudit.md>)
-- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit](<../scripts/MySQL - View - Create - plugin_proval_v_monitoraudit.md>)
+- [plugin_proval_v_monitoraudit](/docs/b15d4142-5fc8-4352-8a5c-b039cde54b86)
+- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit](/docs/e4221ae7-3cd9-4019-9d65-1f8ae2e58d33)
 
 ## Columns
 

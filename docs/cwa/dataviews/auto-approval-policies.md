@@ -16,7 +16,7 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 
 ## Dependencies
 
-[plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>)
+[plugin_proval_auto_approval_status](/docs/ae8ce64f-816a-4e84-8052-f8e131dde389)
 
 ## Columns
 
@@ -26,7 +26,7 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | ID                                             | The ID of the Approval Policy.                                                                                                                                         |
 | Approval Policy                                | Name of the Approval Policy.                                                                                                                                           |
 | Examined Characteristics - Category Status      | Whether the category filtering is enabled for that examined characteristic. For example, whether approved by category, ignored by category, or denied by category is turned on or not. |
-| Examined Characteristics - Categories           | Group_Concat list of the categories that are either approved, denied, or ignored. For detailed information on this, one can refer to the [Patch Approval Categories](<./patch-approval-categories.md>) dataview. |
+| Examined Characteristics - Categories           | Group_Concat list of the categories that are either approved, denied, or ignored. For detailed information on this, one can refer to the [Patch Approval Categories](/docs/43b35510-f264-429f-a06e-e0ea7822cfc1) dataview. |
 | Examined Characteristics - Severity Status      | Whether the severity filtering is enabled for that examined characteristic. For example, whether approved by severity, ignored by severity, or denied by severity is turned on or not. |
 | Unspecified Severity                           | Whether the patches with unspecified severity are approved, ignored, or denied.                                                                                        |
 | Low Severity                                   | Whether the patches with low severity are approved, ignored, or denied.                                                                                               |

@@ -16,8 +16,8 @@ The DataView shows the login/logout audit of the users.
 
 ## Dependencies
 
-- [Activity Logging Reporting](<../scripts/Activity Logging Reporting DV, Global.md>)
-- [pvl_login_logout_audit](<../tables/pvl_login_logout_audit.md>)
+- [Activity Logging Reporting](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65)
+- [pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
 
 ## Columns
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores information about gathered WiFi profiles from [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>) for later application by the script [WiFi Profile - Apply](<../scripts/WiFi Profile - Apply.md>).
+This document stores information about gathered WiFi profiles from [WiFi Profile - Get](/docs/95ecf8ed-f2ac-46fa-ad7a-05894d0743be) for later application by the script [WiFi Profile - Apply](/docs/52b6b460-b6bd-48cf-aab1-8484149578f0).
 
 ## Dependencies
 
-- [WiFi Profile - Get](<../scripts/WiFi Profile - Get.md>)
+- [WiFi Profile - Get](/docs/95ecf8ed-f2ac-46fa-ad7a-05894d0743be)
 
 ## Table
 

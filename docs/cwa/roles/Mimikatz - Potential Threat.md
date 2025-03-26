@@ -20,7 +20,7 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 ```
 
 - If the flag is set, there is a potential threat associated with using it.
-- If the flag is not set but exists, the system is vulnerable. For more information, see [Mimikatz - Vulnerable](<./Mimikatz - Vulnerable.md>).
+- If the flag is not set but exists, the system is vulnerable. For more information, see [Mimikatz - Vulnerable](/docs/58ebf02f-0bcc-458d-bc99-7ee5cc89a6d2).
 
 ## Settings
 

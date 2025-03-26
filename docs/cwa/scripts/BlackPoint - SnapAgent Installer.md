@@ -20,16 +20,16 @@ This script is designed to install the SnapAgent on the machine.
 
 ## Dependencies
 
-[Install-SnapAgent](<../../powershell/Install-SnapAgent.md>)  
+[Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)  
 
 EDFs
 
 | Name                             | Level   | Type       | Description                                                                                                                                                                                                                                                                                        |
 |----------------------------------|---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlackPoint SnapAgent Deploy      | Client  | Check Box  | This client-level EDF needs to be checked for the SnapAgent installation. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is directly proportional to this EDF.                                                                          |
-| BlackPoint SNAP URL              | Client  | Text       | This client-level EDF must be filled with the installer package URL for downloading and installing the licensed SnapAgent application. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is directly proportional to this EDF.                   |
-| BlackPoint SnapAgent Exclude     | Location| Check Box  | If this location-level EDF is checked, then all agents of the location will be excluded from the monitor for the SnapAgent deployment. The monitor [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) is indirectly proportional to this EDF.              |
-| BlackPoint SnapAgent Exclude     | Computer| Check Box  | If this computer-level EDF is checked, then the agent will be excluded from the monitor for the SnapAgent deployment. The monitor is indirectly [Monitor - BlackPoint SnapAgent Deployment](<../monitors/BlackPoint SnapAgent Deployment.md>) proportional to this EDF.                                 |
+| BlackPoint SnapAgent Deploy      | Client  | Check Box  | This client-level EDF needs to be checked for the SnapAgent installation. The monitor [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) is directly proportional to this EDF.                                                                          |
+| BlackPoint SNAP URL              | Client  | Text       | This client-level EDF must be filled with the installer package URL for downloading and installing the licensed SnapAgent application. The monitor [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) is directly proportional to this EDF.                   |
+| BlackPoint SnapAgent Exclude     | Location| Check Box  | If this location-level EDF is checked, then all agents of the location will be excluded from the monitor for the SnapAgent deployment. The monitor [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) is indirectly proportional to this EDF.              |
+| BlackPoint SnapAgent Exclude     | Computer| Check Box  | If this computer-level EDF is checked, then the agent will be excluded from the monitor for the SnapAgent deployment. The monitor is indirectly [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) proportional to this EDF.                                 |
 
 ## Variables
 

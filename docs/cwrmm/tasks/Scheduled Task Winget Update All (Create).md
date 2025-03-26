@@ -14,7 +14,7 @@ unlisted: false
 
 The ultimate objective of the task is to establish and oversee two scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) designed to update installed applications utilizing Winget on Windows 10 and 11.
 
-The task can only be executed against the companies where the company-level custom field [WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>) is marked.
+The task can only be executed against the companies where the company-level custom field [WingetUpdateAll_Task_Create](/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1) is marked.
 
 ## Sample Run
 
@@ -24,15 +24,15 @@ The task can only be executed against the companies where the company-level cust
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_UserTask_Disable](<../custom-fields/Company - WingetUpdateAll_UserTask_Disable.md>)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](<../custom-fields/Site - WingetUpdateAll_Task_Exclude.md>)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_UserTask_Disable](<../custom-fields/Site - WingetUpdateAll_UserTask_Disable.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](<../custom-fields/EndPoint - WingetUpdateAll_Task_Exclude.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_UserTask_Disable](<../custom-fields/EndPoint - WingetUpdateAll_UserTask_Disable.md>)
-- [CW RMM - Device Group - Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_UserTask_Disable](/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_UserTask_Disable](/docs/280aafc8-9ab0-4cca-b499-d107b47de432)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_UserTask_Disable](/docs/8022b663-4923-47d5-b8c7-7ba24aae305d)
+- [CW RMM - Device Group - Winget Update All (Task Create)](/docs/22ee8d54-e19d-4b47-9ccd-c45c259f8fb7)
 
 ## Variables
 
@@ -537,7 +537,7 @@ Click the `Save` button at the top right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the task once per day against the [Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) device group.
+It is suggested to run the task once per day against the [Winget Update All (Task Create)](/docs/22ee8d54-e19d-4b47-9ccd-c45c259f8fb7) device group.
 
 - Go to `Automation` > `Tasks`.
 - Search for `Scheduled Task Winget Update All (Create) Task`.
@@ -564,7 +564,7 @@ Select the `Device Groups` option in the `Targeted Resources` section.
 
 ![Select Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_48.png)
 
-Search and select the [Winget Update All (Task Create)](<../groups/Winget Update All (Task Create).md>) device group.
+Search and select the [Winget Update All (Task Create)](/docs/22ee8d54-e19d-4b47-9ccd-c45c259f8fb7) device group.
 
 ![Select Device Group](../../../static/img/Scheduled-Task-Winget-Update-All-(Create)/image_49.png)
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script will run as an auto-fix for the [Online Status Alerting - Machine Back Online](<../monitors/Online Status Alerting - Machine Back Online.md>) and [Online Status Alerting - Machine Restarted](<../monitors/Online Status Alerting - Machine Restarted.md>) monitor sets. It uses the system properties `Email_Connector_email_Address` and `Status_To_Change_To` for the email connector's email address and the ticket status to which the client wants to change.
+This script will run as an auto-fix for the [Online Status Alerting - Machine Back Online](/docs/76fa2909-0cc0-4f76-82a0-c067660d52ac) and [Online Status Alerting - Machine Restarted](/docs/b2fbe440-9d16-41ae-bd52-14037790697f) monitor sets. It uses the system properties `Email_Connector_email_Address` and `Status_To_Change_To` for the email connector's email address and the ticket status to which the client wants to change.
 
 The script changes the status of the ticket if the EDF "Online Alert Ticket ID" at the computer level is filled with a Ticket ID, or if the Email ID is filled in the EDF "Online Alert E-mail." It will change the status along with a message. Users can also provide a reason for the notification by filling in the reason in the EDF "Online Alert Reason."
 
@@ -20,7 +20,7 @@ Additionally, filling out the "Online Alert Scripts" will run a list of scripts 
 
 ## Sample Run
 
-The script is designed to run from the [Online Status Alerting - Machine Back Online](<../monitors/Online Status Alerting - Machine Back Online.md>) and [Online Status Alerting - Machine Restarted](<../monitors/Online Status Alerting - Machine Restarted.md>) monitor sets only and should not be executed manually against any machine, except for the first time to set the environment.
+The script is designed to run from the [Online Status Alerting - Machine Back Online](/docs/76fa2909-0cc0-4f76-82a0-c067660d52ac) and [Online Status Alerting - Machine Restarted](/docs/b2fbe440-9d16-41ae-bd52-14037790697f) monitor sets only and should not be executed manually against any machine, except for the first time to set the environment.
 
 After importing the script, it should either be debugged or run against any computer in the environment with `1` in the user parameter `SetEnvironment`, along with the other user parameters `Email_Connector_email_Address` and `Status_To_Change_To`.
 
@@ -30,7 +30,7 @@ After importing the script, it should either be debugged or run against any comp
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](<./Online Status Alerting - Update EDFs Param.md>)
+- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e)
 
 ### System Properties
 

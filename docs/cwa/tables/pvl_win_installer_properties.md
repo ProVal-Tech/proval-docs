@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The "pvl_win_installer_properties" is an SQL custom table that is used in conjunction with the [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script and the "Windows Installer Properties [Script]" dataview. The purpose of this table is to store the gathered information about the properties of the Windows Installer applications installed on a machine. It stores the data fetched by the [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>) script.
+The "pvl_win_installer_properties" is an SQL custom table that is used in conjunction with the [CWM - Automate - Script - Windows Installer Properties [DV]](/docs/d2ceaf24-a522-423a-be42-f0e120ffaba8) script and the "Windows Installer Properties [Script]" dataview. The purpose of this table is to store the gathered information about the properties of the Windows Installer applications installed on a machine. It stores the data fetched by the [CWM - Automate - Script - Windows Installer Properties [DV]](/docs/d2ceaf24-a522-423a-be42-f0e120ffaba8) script.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Windows Installer Properties [DV]](<../scripts/Windows Installer Properties DV.md>)
+- [CWM - Automate - Script - Windows Installer Properties [DV]](/docs/d2ceaf24-a522-423a-be42-f0e120ffaba8)
 
 ## Tables
 

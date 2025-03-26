@@ -35,7 +35,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[Automate Server - Event Log Monitoring [Autofix]](<../scripts/Automate Server - Event Log Monitoring Autofix.md>)
+[Automate Server - Event Log Monitoring [Autofix]](/docs/f36b7367-99c7-478b-abc9-6802182431e4)
 
 ## Target
 

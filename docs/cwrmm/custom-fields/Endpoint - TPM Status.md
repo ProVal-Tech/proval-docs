@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Stores the TPM status of the machine. Updated by the [Get TPM Status](<../tasks/Get TPM Status.md>) task.
+Stores the TPM status of the machine. Updated by the [Get TPM Status](/docs/678a70ca-c156-4568-95bd-f3df413433e3) task.
 
 ## Dependencies
 
-[CW RMM - Task - Get TPM Status](<../tasks/Get TPM Status.md>)
+[CW RMM - Task - Get TPM Status](/docs/678a70ca-c156-4568-95bd-f3df413433e3)
 
 ## Details
 

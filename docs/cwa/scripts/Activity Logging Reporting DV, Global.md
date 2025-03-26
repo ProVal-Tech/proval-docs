@@ -20,7 +20,7 @@ This script is used to perform an audit of the login/logout activities of users.
 
 ## Dependencies
 
-[pvl_login_logout_audit](<../tables/pvl_login_logout_audit.md>)
+[pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
 
 ## Variables
 
@@ -39,7 +39,7 @@ Document the various variables in the script. Delete any section that is not rel
 | Hours               | 24                          | True     | Required to trace user activity over the past hour. Note: The value can be changed and should correlate with the monitor interval to get appropriate data.                                                                                         |
 | Data_Deletion       | 1                           | False    | If set to 1, the older data in the table pvl_login_logout_audit will start getting truncated based on the system property 'ProVal_UserLogIn_Out_Threshold_Days' value. If set to 0, no data deletion will be performed.                          |
 | AuditEvent_Enable   | 1                           | False    | If set to 1, the script will enable the Audit login/logout local policy on the agent for data collection in the event logs. If set to 0, the Audit local policy will not be enabled by the script. Note: By default, the policy is not enabled in the agent. |
-| DataRetention_Threshold | 90                     | False    | The value is set in days. If the value is provided and Data_Deletion is set to 1, then older data in the table [vl_login_logout_audit](<../tables/pvl_login_logout_audit.md>) will be deleted based on the provided value of this parameter.          |
+| DataRetention_Threshold | 90                     | False    | The value is set in days. If the value is provided and Data_Deletion is set to 1, then older data in the table [vl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589) will be deleted based on the provided value of this parameter.          |
 
 #### User Parameters
 

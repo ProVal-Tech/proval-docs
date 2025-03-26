@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This Dataview displays the disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>). This is called from the [Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>) automation script and stores that data in the custom table [plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>).
+This Dataview displays the disk information gathered from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](/docs/880d2a63-b304-40a3-8ec3-1fb13b272fa7). This is called from the [Disk - Gather Critical Info](/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6) automation script and stores that data in the custom table [plugin_proval_cdi_data](/docs/7a224177-45ff-4f2e-a8fe-a734a642a539).
 
 ## Dependencies
 
-- [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)
-- [EPM - Disk - Custom Table - plugin_proval_cdi_data](<../tables/plugin_proval_cdi_data.md>)
-- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)
+- [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6)
+- [EPM - Disk - Custom Table - plugin_proval_cdi_data](/docs/7a224177-45ff-4f2e-a8fe-a734a642a539)
+- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](/docs/880d2a63-b304-40a3-8ec3-1fb13b272fa7)
 
 ## Columns
 

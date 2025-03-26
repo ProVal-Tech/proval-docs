@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>) script.
+Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](/docs/0b46811b-be88-407b-aa61-6c63a73ff848) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>)
+[CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](/docs/0b46811b-be88-407b-aa61-6c63a73ff848)
 
 #### pvl_cwm_configurations
 

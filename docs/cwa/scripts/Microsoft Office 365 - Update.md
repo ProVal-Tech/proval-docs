@@ -20,7 +20,7 @@ This script is an Automate Wrapper to run the Agnostic Update-Office script.
 
 ## Dependencies
 
-- [SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
+- [SWM - Software Configuration - Agnostic - Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4  )
 
 ## Variables
 

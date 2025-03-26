@@ -16,9 +16,9 @@ This dataview shows information about GPOs, their applied policies, and settings
 
 ## Dependencies
 
-- [Group Policy Audit](../scripts/group-policy-audit.md)
-- [plugin_proval_ad_gp](<../tables/plugin_proval_ad_gp.md>)
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
+- [plugin_proval_ad_gp](/docs/0e873ec4-0fcc-4131-bf33-1f74f8b28c80)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)
 
 ## Columns
 

@@ -18,8 +18,8 @@ This solution installs Egnyte on an endpoint. It will update a custom field if a
 
 | Content                                                                 | Type             | Function                                                               |
 |-------------------------------------------------------------------------|------------------|------------------------------------------------------------------------|
-| [Agent Procedure](<../vsa/procedures/Egnyte - Install.md>)     | Agent Procedure   | Installs/updates the Egnyte software on the endpoint.                 |
-| [Custom Field](<../unsorted/SWM - Software Install - Custom Field - Egnyte - Install.md>) | Custom Field      | Designates whether the machine needs a reboot from the software.       |
+| [Agent Procedure](/docs/04d18467-ad93-4ed2-8da9-52796031d41c)     | Agent Procedure   | Installs/updates the Egnyte software on the endpoint.                 |
+| [Custom Field](/docs/03f423c9-8538-42c0-9822-b7c92befb215) | Custom Field      | Designates whether the machine needs a reboot from the software.       |
 
 ## Implementation
 

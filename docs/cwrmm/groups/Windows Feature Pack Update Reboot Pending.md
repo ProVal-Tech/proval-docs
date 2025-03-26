@@ -16,9 +16,9 @@ Categorize the Windows 10 and 11 computers where the `Feature Update Install wit
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](<../tasks/Feature Update Install With Tracking.md>)  
-- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)  
-- [CW RMM - Task - Feature Update Install (Reboot Pending Machines Validation)](<../tasks/Feature Update Install (Reboot Pending Machines Validation).md>)  
+- [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)  
+- [CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)  
+- [CW RMM - Task - Feature Update Install (Reboot Pending Machines Validation)](/docs/0c60dc74-ce8f-4332-b19c-d956287d66a7)  
 
 ## Group Overview
 

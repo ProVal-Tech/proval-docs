@@ -28,7 +28,7 @@ This document details the procedure for setting up Remote Monitors for Location 
 
 2. **Import/Update the following content from the `ProSync` plugin:**
    - [Script - Location Ping Monitors - Create](https://proval.itglue.com/5078775/docs/16050276)
-   - [Script - Ticket Creation - Ping Monitor](<./Ticket Creation - Ping Monitor.md>)
+   - [Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
    - Alert Template - △ Custom - Ticket Creation - Ping Monitor
 
 3. **Run/Debug the Script**
@@ -46,7 +46,7 @@ This document details the procedure for setting up Remote Monitors for Location 
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Ping Monitor](<./Ticket Creation - Ping Monitor.md>)
+[CWM - Automate - Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
 
 ## User Parameters
 

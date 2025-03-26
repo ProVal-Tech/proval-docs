@@ -20,9 +20,9 @@ This script will help audit the VSSAdmin storage details. It will report for all
 
 ## Dependencies
 
-- [VSS Resize](<./VSS Resize.md>)  
-- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>)  
-- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>)  
+- [VSS Resize](/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d)  
+- [plugin_proval_vssadminstorage](/docs/165f6290-8932-459b-9bfe-18c86f7a61d6)  
+- [VSSAdmin Storage Audit](/docs/7f7e7d3b-047d-41dc-acc2-5083adcaaf39)  
 
 ## Variables
 

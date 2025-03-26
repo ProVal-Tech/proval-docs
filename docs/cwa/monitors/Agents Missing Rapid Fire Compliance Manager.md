@@ -16,7 +16,7 @@ This monitor detects the agent where the location of the agent contains the "Com
 
 ## Dependencies
 
-[CWA Script - Deploy Rapid Fire Compliance Management](<../scripts/Deploy Rapid Fire Compliance Management.md>)
+[CWA Script - Deploy Rapid Fire Compliance Management](/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c)
 
 ## Target
 

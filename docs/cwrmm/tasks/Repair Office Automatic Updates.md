@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document checks common failure points in Office automatic updates and automatically resolves them. It provides a ConnectWise RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>).
+This document checks common failure points in Office automatic updates and automatically resolves them. It provides a ConnectWise RMM implementation of the agnostic script [Repair-OfficeAutomaticUpdate](/docs/ae9fa5e1-eb5b-45e5-8777-977d50e39c97).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document checks common failure points in Office automatic updates and autom
 
 ## Dependencies
 
-[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>)
+[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](/docs/ae9fa5e1-eb5b-45e5-8777-977d50e39c97)
 
 ## Task Creation
 

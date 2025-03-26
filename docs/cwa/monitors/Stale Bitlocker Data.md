@@ -16,10 +16,10 @@ This monitor will look for agents where Bitlocker is enabled and data about the 
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>)  
+[SEC - Encryption - Script - Bitlocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5)  
 This script should be run as an autofix.  
 
-[SEC - Encryption - Custom Table - plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)  
+[SEC - Encryption - Custom Table - plugin_proval_bitlocker](/docs/dfddb88b-37c2-4d42-b8a0-bb7ebe4da6d0)  
 
 ## Target
 

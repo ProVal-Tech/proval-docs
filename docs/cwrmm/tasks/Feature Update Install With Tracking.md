@@ -36,11 +36,11 @@ The script compares the current operating system build with the latest available
 
 ## Dependencies
 
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
-- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
-- [CW RMM - Task - Windows Feature Update Attempt Tracking (Subscript)](<./Windows Feature Update Attempt Tracking (Subscript).md>)
-- [CW RMM - Device Group - Feature Pack Update Automation](<../groups/Feature Pack Update Automation.md>)
+- [CW RMM - Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
+- [CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
+- [CW RMM - Task - Windows Feature Update Attempt Tracking (Subscript)](/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c)
+- [CW RMM - Device Group - Feature Pack Update Automation](/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba)
 
 ## Create Script
 

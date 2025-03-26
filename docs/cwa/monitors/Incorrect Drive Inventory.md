@@ -27,7 +27,7 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 
 ## Dependencies
 
-[CWM - Automate - Script - Incorrect Drive Inventory [Autofix]](<../scripts/Incorrect Drive Inventory Autofix.md>)
+[CWM - Automate - Script - Incorrect Drive Inventory [Autofix]](/docs/59079938-6d59-48d6-aa45-b8c003456bc6)
 
 ## Target
 

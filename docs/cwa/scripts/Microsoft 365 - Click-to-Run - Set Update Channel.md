@@ -26,7 +26,7 @@ This script will make changes in the registry to set the update channel for Micr
 
 ## Dependencies
 
-[SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<./Microsoft 365 - Click-to-Run - Get Details.md>)
+[SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e)
 
 ## Client Level EDF
 

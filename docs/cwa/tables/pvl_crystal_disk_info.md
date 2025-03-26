@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The table stores the information returned by the [EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>) script.
+The table stores the information returned by the [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script.
 
 ## Dependencies
 
-[EPM - Disk - Script - Crystal Disk Info Report](<../scripts/Crystal Disk Info Report.md>)
+[EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea)
 
 ## Tables
 

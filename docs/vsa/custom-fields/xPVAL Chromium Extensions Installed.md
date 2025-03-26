@@ -16,8 +16,8 @@ This document lists all Chromium extensions installed on the endpoint.
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](<../../powershell/Get-ChromiumExtensions.md>)
-- [EPM - Data Collection - Agent Procedure - Chromium Extension Audit](<../procedures/Chromium Extension Audit.md>)
+- [EPM - Data Collection - Agnostic - Script - Get-ChromiumExtensions](/docs/8828a709-4424-48f9-a5bf-dfc81a40bb97)
+- [EPM - Data Collection - Agent Procedure - Chromium Extension Audit](/docs/7981530c-3eaa-4030-8382-4f4d812f3d01)
 
 ## Details
 

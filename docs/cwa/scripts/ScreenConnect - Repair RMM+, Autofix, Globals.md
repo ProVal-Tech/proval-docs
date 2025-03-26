@@ -26,8 +26,8 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 ## Dependencies
 
-- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
-- [Manual Troubleshooting - ScreenConnect Orange Icon](<./Manual Troubleshooting - ScreenConnect Orange Icon.md>)
+- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+- [Manual Troubleshooting - ScreenConnect Orange Icon](/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06)
 
 ## Global Parameters
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-A suite of 9 agent procedures which implement agnostic content [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>).
+A suite of 9 agent procedures which implement agnostic content [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f).
 
 All required parameters are prompted and explained at script runtime.
 
@@ -47,7 +47,7 @@ All required parameters are prompted and explained at script runtime.
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>)
+[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
 
 ---
 

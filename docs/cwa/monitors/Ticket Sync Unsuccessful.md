@@ -16,7 +16,7 @@ This monitor looks for tickets within Automate that have failed to sync successf
 
 ## Dependencies
 
-[Ticket Sync Failed](<../scripts/Ticket Sync Failed.md>) - This needs to be tied as an Autofix with this Monitor.  
+[Ticket Sync Failed](/docs/f490325a-023c-430d-876d-e4d311ff3e89) - This needs to be tied as an Autofix with this Monitor.  
 
 - **Autofix**: The Ticket Sync Failed alert template should be used along with this monitor set.
 

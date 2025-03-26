@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Using a role definition, this monitor detects machines where Windows Fast Boot is enabled. There is an available Autofix for Windows-based machines that will attempt to disable Fast Boot. The script is named [Fast Boot - Disable](<../scripts/Fast Boot - Disable.md>).
+Using a role definition, this monitor detects machines where Windows Fast Boot is enabled. There is an available Autofix for Windows-based machines that will attempt to disable Fast Boot. The script is named [Fast Boot - Disable](/docs/663e3658-c389-4ab6-b7a2-8486f9e237c1).
 
 ## Dependencies
 

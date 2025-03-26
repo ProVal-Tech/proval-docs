@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This script is scheduled to run every 3 days on the 'Machines With Queued Scripts' group by the [CWM - Automate - Script - Queue Script](<./Queue Script.md>) script.
+This script is scheduled to run every 3 days on the 'Machines With Queued Scripts' group by the [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721) script.
 
 This script is designed to requeue itself every 3 days to ensure that it never enters the 'Fizzled' state.
 
-The script retrieves stored data from the [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>) table and executes the stored instances of scripts on the target machine.
+The script retrieves stored data from the [CWM - Automate - Custom Table - plugin_proval_queued_scripts](/docs/a20befa8-ecca-4cf9-9d18-c4140f87aafc) table and executes the stored instances of scripts on the target machine.
 
 ## Sample Run
 
@@ -24,9 +24,9 @@ This script should not be run manually.
 
 ## Dependencies
 
-- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
-- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>)
-- [CWM - Automate - Script - Queue Script](<./Queue Script.md>)
+- [CWM - Automate - Solution - Queue Script Next Checkin](/docs/2910ca09-a0c7-4b44-8ea4-ef6e71304df8)
+- [CWM - Automate - Custom Table - plugin_proval_queued_scripts](/docs/a20befa8-ecca-4cf9-9d18-c4140f87aafc)
+- [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721)
 - 'Machines With Queued Scripts' Group
 
 ## Variables
@@ -36,8 +36,8 @@ Document the various variables in the script. Delete any section that is not rel
 | Name               | Description                                                 |
 |--------------------|-------------------------------------------------------------|
 | TableName          | What the variable represents.                               |
-| sqlscriptId        | The script ID gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>). |
-| sqlscriptparameters | The parameters for the script ID to be called, gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](<../tables/plugin_proval_queued_scripts.md>). |
+| sqlscriptId        | The script ID gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](/docs/a20befa8-ecca-4cf9-9d18-c4140f87aafc). |
+| sqlscriptparameters | The parameters for the script ID to be called, gathered from [CWM - Automate - Custom Table - plugin_proval_queued_scripts](/docs/a20befa8-ecca-4cf9-9d18-c4140f87aafc). |
 | GroupID            | The Group ID for the 'Machines With Queued Scripts' Group. |
 
 ## User Parameters

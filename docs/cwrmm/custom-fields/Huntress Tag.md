@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is to be filled with the Huntress Tag. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task, essentially serving as the Location Name.
+This custom field is to be filled with the Huntress Tag. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](/docs/e1f40d15-13f1-465e-9870-653927ad0434) task, essentially serving as the Location Name.
 
 # Create the Custom Field
 

@@ -24,7 +24,7 @@ Disk cleanup will only run against Windows machines. When run as an auto-fix fro
 
 ## Dependencies
 
-[Agent - Drive Space Check - Client Specific](<../../unsorted/EPM - Disk - Agent - Drive Space Check - Client Specific.md>)
+[Agent - Drive Space Check - Client Specific](/docs/b55634b1-9beb-4bc7-8f30-fdc3ec06cd29)
 
 #### User Parameters
 

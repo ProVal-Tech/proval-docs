@@ -17,7 +17,7 @@ This monitor will detect local users who have not logged in for the last 90 days
 ## Dependencies
 
 - @custom_proval_computer_accounts
-- [User Management - Purge Local Account and Profile](<../scripts/User Management - Purge Local Account and Profile.md>)
+- [User Management - Purge Local Account and Profile](/docs/45074a99-85a8-4e7f-bda4-775697504bad)
 - @User Management - Profile Audit
 
 ## Target

@@ -20,8 +20,8 @@ It is essential to note that this solution relies on the CW RMM+ plugin and its 
 
 | Content                                                                                       | Type   | Function                                               |
 |-----------------------------------------------------------------------------------------------|--------|-------------------------------------------------------|
-| [CWM - Automate - Script - Autofix - CWC RMM+ - Offline Agent Remediation](<../cwa/scripts/Autofix - CWC RMM+ - Offline Agent Remediation.md>) | Script | What does this content piece do in the whole of the solution? |
-| [CWM - Control - Script - Control Agent - Connectivity - Audit](<../cwa/scripts/ScreenConnect Client - Connectivity - Audit.md>)          |        |                                                       |
+| [CWM - Automate - Script - Autofix - CWC RMM+ - Offline Agent Remediation](/docs/458b387d-e369-4ea5-bbc6-608e4ea7f993) | Script | What does this content piece do in the whole of the solution? |
+| [CWM - Control - Script - Control Agent - Connectivity - Audit](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)          |        |                                                       |
 
 ## Implementation
 

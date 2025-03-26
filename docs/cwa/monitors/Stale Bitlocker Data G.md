@@ -16,8 +16,8 @@ The monitor runs on BitLocker-enabled machines and checks if the key retrieval d
 
 ## Dependencies
 
-- [BitLocker - Key Retrieval](<../scripts/Bitlocker - Key Retrieval.md>) - This needs to be tied as an autofix with the monitor.
-- [plugin_proval_bitlocker](<../tables/plugin_proval_bitlocker.md>)
+- [BitLocker - Key Retrieval](/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5) - This needs to be tied as an autofix with the monitor.
+- [plugin_proval_bitlocker](/docs/dfddb88b-37c2-4d42-b8a0-bb7ebe4da6d0)
 
 ## Target
 

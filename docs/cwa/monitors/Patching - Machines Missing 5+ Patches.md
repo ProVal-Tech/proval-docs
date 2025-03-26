@@ -14,7 +14,7 @@ unlisted: false
 
 This monitor will look for any machines (excluding EOL) that are patching via CW Automate and are missing five or more patches that are at least 21 days old.
 
-This monitor is designed to work with the '~Custom - Ticket Creation - Computer' Alert Template ([CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)).
+This monitor is designed to work with the '~Custom - Ticket Creation - Computer' Alert Template ([CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)).
 
 **NOTE:** The number of missing patches is adjustable to any threshold required. This monitor may become very noisy during patch approval and denial, so you can schedule it to run around the patching schedule.
 
@@ -24,7 +24,7 @@ CW Automate must have the "new" patch manager enabled. This data uses the Comput
 
 To force update this table, please follow this guide: [CW Automate - Force Update Patch Reporting Statistics](https://proval.itglue.com/DOC-5078775-8038412).
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Target
 

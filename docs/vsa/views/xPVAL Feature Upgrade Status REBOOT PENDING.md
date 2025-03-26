@@ -20,6 +20,6 @@ The following filters have been applied to this view:
 
 | Filter Name                                                                                      | Advanced Filter? | Filter Value     |
 |--------------------------------------------------------------------------------------------------|------------------|------------------|
-| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) | Yes              | "Reboot Pending"  |
+| [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070) | Yes              | "Reboot Pending"  |
 
 

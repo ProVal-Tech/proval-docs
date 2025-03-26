@@ -18,7 +18,7 @@ This Dataview filters the script schedules that are scheduled by a technician, a
 
 ## Dependencies
 
-[CWM - Automate - View - pvl_Scheduled_Scripts](<../views/pvl_Scheduled_Scripts.md>)
+[CWM - Automate - View - pvl_Scheduled_Scripts](/docs/5c02ccad-5b51-46a5-8423-59286adc37ea)
 
 ## Columns
 

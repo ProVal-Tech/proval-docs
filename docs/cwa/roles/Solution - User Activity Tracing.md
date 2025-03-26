@@ -18,14 +18,14 @@ This solution performs the user login/logout activity audit. By default, the scr
 
 | Content                                                                 | Type      | Function                                                   |
 |-------------------------------------------------------------------------|-----------|------------------------------------------------------------|
-| [Activity Logging Reporting [DV, Global]](<../scripts/Activity Logging Reporting DV, Global.md>) | Script    | This script is used to perform the audit of the login/logout of the users. |
-| [User Activity Audit [Script]](<../dataviews/User Activity Audit Script.md>)         | Dataview  | The dataview shows the login/logout audit of the users.   |
-| [pvl_login_logout_audit](<../tables/pvl_login_logout_audit.md>)               | Table     | This table stores the user login/logout data.             |
+| [Activity Logging Reporting [DV, Global]](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65) | Script    | This script is used to perform the audit of the login/logout of the users. |
+| [User Activity Audit [Script]](/docs/11c4193c-786a-4477-ae73-9992ff55ea16)         | Dataview  | The dataview shows the login/logout audit of the users.   |
+| [pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)               | Table     | This table stores the user login/logout data.             |
 
 ## Implementation
 
-- Import the script [Activity Logging Reporting [DV, Global]](<../scripts/Activity Logging Reporting DV, Global.md>).
-- Import the dataview [User Activity Audit [Script]](<../dataviews/User Activity Audit Script.md>).
+- Import the script [Activity Logging Reporting [DV, Global]](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65).
+- Import the dataview [User Activity Audit [Script]](/docs/11c4193c-786a-4477-ae73-9992ff55ea16).
 - Run the script once by setting the User Parameter value 'SetEnvironment' to 1, as shown below:
 
   ![Image](../../../static/img/Solution---User-Activity-Tracing/image_1.png)

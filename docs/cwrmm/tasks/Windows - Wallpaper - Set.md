@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an RMM implementation of the agnostic script [Set-Wallpaper](<../../powershell/Set-Wallpaper.md>) to set the active desktop wallpaper for all users from a local path or a URL. It can optionally be switched to enforce the wallpaper for all users on login.
+This is an RMM implementation of the agnostic script [Set-Wallpaper](/docs/be77cc20-d07b-4cbd-b762-cb20913860b9) to set the active desktop wallpaper for all users from a local path or a URL. It can optionally be switched to enforce the wallpaper for all users on login.
 
 ## Sample Run
 
@@ -29,7 +29,7 @@ This is an RMM implementation of the agnostic script [Set-Wallpaper](<../../powe
 
 ## Dependencies
 
-[Set-Wallpaper](<../../powershell/Set-Wallpaper.md>)
+[Set-Wallpaper](/docs/be77cc20-d07b-4cbd-b762-cb20913860b9)
 
 ## User Parameters
 

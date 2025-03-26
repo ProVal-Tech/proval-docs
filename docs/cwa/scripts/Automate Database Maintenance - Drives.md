@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This script is called from **[CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>)**. 
+This script is called from **[CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968)**. 
 
 This script handles the cleanup of the following table(s):  
-Drives - Requires **[CWM - Automate - Solution - Automate Database Maintenance](<../../solutions/Automate Database Maintenance.md>)** with the MissingDrives_Cleanup global variable set to 1.
+Drives - Requires **[CWM - Automate - Solution - Automate Database Maintenance](/docs/4b0ae11f-9850-48ea-87c8-2f538bcb80bd)** with the MissingDrives_Cleanup global variable set to 1.
 
 ## Sample Run
 
-This script is a function script called from **[CWM - Automate - Solution - Automate Database Maintenance](<../../solutions/Automate Database Maintenance.md>)**.
+This script is a function script called from **[CWM - Automate - Solution - Automate Database Maintenance](/docs/4b0ae11f-9850-48ea-87c8-2f538bcb80bd)**.
 
 ## Variables
 

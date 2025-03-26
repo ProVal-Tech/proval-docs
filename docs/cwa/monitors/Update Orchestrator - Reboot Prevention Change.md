@@ -49,4 +49,4 @@ The reboot file at `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrat
 
 ## Implementation
 
-[Import - Remote Monitor - Windows Update Orchestrator](<./Import-Remote-Monitor-Update-Orchestrator-Reboot-Prevention-Change.md>)
+[Import - Remote Monitor - Windows Update Orchestrator](/docs/95f64d6e-cb10-4c2c-9d40-c55941a7d7bc)

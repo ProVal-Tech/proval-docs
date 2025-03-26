@@ -18,9 +18,9 @@ The purpose of this solution is to display the enabled client and server (if app
 
 | Content                                                                                                           | Type          | Function                                                       |
 |-------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------|
-| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](<../cwa/monitors/TLS Version Check - Client.md>) | Remote Monitor | Gather a comma-separated list of enabled TLS client versions.  |
-| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](<../cwa/monitors/TLS Version Check - Server.md>) | Remote Monitor | Gather a comma-separated list of enabled TLS server versions.  |
-| [EPM - Windows Configuration - Dataview - Security - TLS Status](<../cwa/dataviews/Security - TLS Status.md>) | Dataview      | Display the data gathered by the remote monitors in a human-readable format. |
+| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](/docs/b0639ecd-38cd-4afd-a764-bcce13fd8ac7) | Remote Monitor | Gather a comma-separated list of enabled TLS client versions.  |
+| [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](/docs/0a19eb90-ba18-4097-ab12-a76efa8e4b83) | Remote Monitor | Gather a comma-separated list of enabled TLS server versions.  |
+| [EPM - Windows Configuration - Dataview - Security - TLS Status](/docs/aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f) | Dataview      | Display the data gathered by the remote monitors in a human-readable format. |
 
 ## Implementation
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The internal monitor detects Windows computers where the local admin group cleanup process is enabled, but the [Local Admin Group Cleanup - Add/Remove](<../scripts/Local Admin Group Cleanup - AddRemove.md>) script has not been executed in the past 7 days.
+The internal monitor detects Windows computers where the local admin group cleanup process is enabled, but the [Local Admin Group Cleanup - Add/Remove](/docs/e228540f-e4f4-4e67-801f-cdff876f955f) script has not been executed in the past 7 days.
 
 ## Dependencies
 
-[EPM - User Management - Script - Local Admin Group Cleanup - Add/Remove](<../scripts/Local Admin Group Cleanup - AddRemove.md>)
+[EPM - User Management - Script - Local Admin Group Cleanup - Add/Remove](/docs/e228540f-e4f4-4e67-801f-cdff876f955f)
 
 ## Target
 

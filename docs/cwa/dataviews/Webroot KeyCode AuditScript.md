@@ -16,8 +16,8 @@ This dataview shows the Webroot hashed keycode present on the machine, the statu
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Webroot Keycode Verification](<../scripts/Webroot Keycode Verification.md>)
-- [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](<../scripts/Webroot Keycode Verification EDF.md>)
+- [EPM - Data Collection - Script - Webroot Keycode Verification](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060)
+- [EPM - Data Collection - Script - Webroot Keycode Verification [EDF]](/docs/2e7517b7-3d3c-47b0-a885-bb8293c55263)
 
 ## Columns
 

@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This document displays agents where email flow has been impacted and corrected by the script [RSM - Exchange - Script - Exchange - Reset Scan Engine Version](<../scripts/Exchange - Reset Scan Engine Version.md>).
+This document displays agents where email flow has been impacted and corrected by the script [RSM - Exchange - Script - Exchange - Reset Scan Engine Version](/docs/f699ae53-3ba7-42bd-864d-a670aca7ab0b).
 
 Reference:  
 [Email Stuck in Exchange On-Premises Transport Queues](https://techcommunity.microsoft.com/t5/exchange-team-blog/email-stuck-in-exchange-on-premises-transport-queues/ba-p/3049447)
 
 ## Dependencies
 
-[RSM - Exchange - Script - Exchange - Reset Scan Engine Version](<../scripts/Exchange - Reset Scan Engine Version.md>)
+[RSM - Exchange - Script - Exchange - Reset Scan Engine Version](/docs/f699ae53-3ba7-42bd-864d-a670aca7ab0b)
 
 ## Columns
 

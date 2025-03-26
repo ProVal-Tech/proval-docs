@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-An Automate implementation of the [Invoke-VcRedistModule](<../../powershell/Invoke-VcRedistModule.md>) agnostic script to uninstall Microsoft Visual C++ Redistributable. By default, the script will uninstall the unsupported redistributable unless a user parameter is set.
+An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-401b-9531-86e07f2d6a2f) agnostic script to uninstall Microsoft Visual C++ Redistributable. By default, the script will uninstall the unsupported redistributable unless a user parameter is set.
 
 ## Sample Run
 

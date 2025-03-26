@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-Stores information about BitLocker key protectors backed up to Active Directory. Data gathered by [SEC - Encryption - Script - BitLocker - AD Key Protector - Audit](<../scripts/Bitlocker - AD Key Protector - Audit.md>)
+Stores information about BitLocker key protectors backed up to Active Directory. Data gathered by [SEC - Encryption - Script - BitLocker - AD Key Protector - Audit](/docs/d533538b-8b00-425e-849f-434518296b2d)
 
 ## Dependencies
 

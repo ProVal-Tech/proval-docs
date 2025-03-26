@@ -24,7 +24,7 @@ If the above conditions are not met, then the script will report Point And Print
 
 ## Dependencies
 
-[PrintNightMare Detection](<../dataviews/PrintNightMare Detection.md>) 
+[PrintNightMare Detection](/docs/f016ea11-da3b-4834-a5f0-3a55e3e3ad53) 
 
 #### Script States
 

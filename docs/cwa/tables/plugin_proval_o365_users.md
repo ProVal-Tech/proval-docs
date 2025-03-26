@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>).
+This document stores baseline information about Office 365 users gathered by the script [O365 - Audit Users to Custom Table [DV]](/docs/c4cb8f27-762f-4ebc-9840-f5cb7712a05d).
 
 ## Dependencies
 
-The script [O365 - Audit Users to Custom Table [DV]](<../scripts/O365 - Audit Users to Custom Table DV.md>) is required.
+The script [O365 - Audit Users to Custom Table [DV]](/docs/c4cb8f27-762f-4ebc-9840-f5cb7712a05d) is required.
 
 ## Table
 

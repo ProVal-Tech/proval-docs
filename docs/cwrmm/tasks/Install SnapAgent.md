@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the installation of BlackPoint SnapAgent using the ConnectWise RMM implementation of the agnostic script [Install-SnapAgent](<../../powershell/Install-SnapAgent.md>).
+This document outlines the installation of BlackPoint SnapAgent using the ConnectWise RMM implementation of the agnostic script [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document outlines the installation of BlackPoint SnapAgent using the Connec
 
 ## Dependencies
 
-- [Install-SnapAgent](<../../powershell/Install-SnapAgent.md>)  
+- [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9)  
 
 ## User Parameters
 

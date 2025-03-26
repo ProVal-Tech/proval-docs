@@ -22,7 +22,7 @@ Remove extensions from popular Chromium browsers (Chrome, Edge, Brave, Vivaldi, 
 
 ## Dependencies
 
-[SWM - Software Configuration - Unregister-ChromiumExtension](<../../powershell/Unregister-ChromiumExtension.md>)
+[SWM - Software Configuration - Unregister-ChromiumExtension](/docs/6910db0c-af2e-4b19-a262-3c3491f01b73)
 
 ## User Parameters
 

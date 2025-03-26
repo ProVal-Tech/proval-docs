@@ -16,7 +16,7 @@ This remote monitor checks and returns the Windows License Status via CIMInstanc
 
 ## Dependencies
 
-[Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+[Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Details
 
@@ -195,7 +195,7 @@ Set the alert template to `△ Custom - Ticket Creation Computer - Warning and F
 A: Exclude the End-of-Life machines from monitoring.  
 
 **Q: Not receiving alerts for warnings?**  
-A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script is up-to-date.  
+A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script is up-to-date.  
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.

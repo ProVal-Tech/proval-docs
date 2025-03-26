@@ -20,7 +20,7 @@ This script collects the department information of Active Directory (AD) users.
 
 ## Dependencies
 
-- [plugin_proval_computer_department](<../../unsorted/plugin_proval_computer_department.md>)  
+- [plugin_proval_computer_department](/docs/f00a8cb1-b9db-44f6-9037-1fbe29c372b4)  
 - @Department Detail of AD Users [Script] -- Dataviews  
 - @Department Detail of Computer [Script] -- Dataviews  
 

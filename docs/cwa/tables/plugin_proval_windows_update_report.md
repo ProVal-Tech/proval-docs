@@ -12,14 +12,14 @@ unlisted: false
 
 ## Purpose
 
-Stores the data captured by the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script to feed into the [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>) dataview.
+Stores the data captured by the [CWM - Automate - Script - Windows Update Report [DV]](/docs/41141ff5-ef57-4900-93d4-642b4a9d254f) script to feed into the [CWM - Automate - Dataview - Windows Update Report [Script]](/docs/88f63da5-1a24-4545-b322-f6a3dfbc79cf) dataview.
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
-- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
-- [CWM - Automate - Dataview - Windows Update Report [Script]](<../dataviews/Windows Update Report Script.md>)
-- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
+- [EPM - Data Collection - Get-WindowsUpdateReport](/docs/b5940a1c-0e82-4756-86a2-b49e57d664f1)
+- [CWM - Automate - Solution - Windows Update Report](/docs/affc0b47-f0fe-43f9-95f6-0e0d1205b4d6)
+- [CWM - Automate - Dataview - Windows Update Report [Script]](/docs/88f63da5-1a24-4545-b322-f6a3dfbc79cf)
+- [CWM - Automate - Script - Windows Update Report [DV]](/docs/41141ff5-ef57-4900-93d4-642b4a9d254f)
 
 ## Tables
 

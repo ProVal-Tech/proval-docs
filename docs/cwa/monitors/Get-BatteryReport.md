@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This monitor checks twice a day, targeting only computers where the last battery report scan is greater than 24 hours ago and the last battery report returned data. It runs the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+This monitor checks twice a day, targeting only computers where the last battery report scan is greater than 24 hours ago and the last battery report returned data. It runs the [EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)
-- [EPM - Data Collection - Custom Table - plugin_proval_batteries](<../tables/plugin_proval_batteries.md>)
-- [CWM - Automate - Script - Property - Set](<../scripts/Property - Set.md>)
-- [EPM - Data Collection - Solution - Get-BatteryReport](<../../solutions/Get-BatteryReport.md>)
+- [EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865)
+- [EPM - Data Collection - Custom Table - plugin_proval_batteries](/docs/5507c4d8-9cfc-4d67-9c84-7cbad5a37de1)
+- [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb)
+- [EPM - Data Collection - Solution - Get-BatteryReport](/docs/701fd9e6-617a-49a0-8368-531ec189e44c)
 
 ## Target
 
@@ -29,7 +29,7 @@ The purpose of this monitor is to select all computers that have returned a vali
 
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
-The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](<../scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) script.
+The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) script.
 
 
 

@@ -18,7 +18,7 @@ It suggests restarting the agent, services, and/or the Automate server as potent
 
 ## Dependency
 
-[Agent - Command - Delete Running](<../scripts/CWM - Automate - Agent - Command - Delete Running.md>)
+[Agent - Command - Delete Running](/docs/c9ae6663-8100-457c-abb8-d210f9fd8f87)
 
 ## Target
 

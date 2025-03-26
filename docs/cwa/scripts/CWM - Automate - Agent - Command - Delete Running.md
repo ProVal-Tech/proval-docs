@@ -20,7 +20,7 @@ The script is a function script that cannot run manually.
 
 ## Dependencies
 
-[CWA - Automate - Monitor - Machines With Stuck Commands](<../monitors/Machines With Stuck Commands.md>)
+[CWA - Automate - Monitor - Machines With Stuck Commands](/docs/5630a369-2912-485b-a5f9-0c25b28eb432)
 
 ## Variables
 

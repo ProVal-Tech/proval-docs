@@ -24,7 +24,7 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 
 ## Dependencies
 
-[CWM - Automate - Remote Monitor - Enable Advanced Windows Security Auditing](<../monitors/Enable Advanced Windows Security Auditing.md>)
+[CWM - Automate - Remote Monitor - Enable Advanced Windows Security Auditing](/docs/0a012cf5-0ead-442a-bc82-f5c5fe0b13f8)
 
 ## Variables
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor set is to detect machines that do not have any cumulative or security patches installed in the past X days. It will not detect any end-of-life (EOL) machines and will only identify machines where the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script has been executed at least once over the past 7 days.
+The purpose of this monitor set is to detect machines that do not have any cumulative or security patches installed in the past X days. It will not detect any end-of-life (EOL) machines and will only identify machines where the [CWM - Automate - Script - Windows Update Report [DV]](/docs/41141ff5-ef57-4900-93d4-642b4a9d254f) script has been executed at least once over the past 7 days.
 
 ### Suggested Alert Template: ~Custom - Ticket Creation Computer
 
@@ -37,9 +37,9 @@ The purpose of this monitor set is to detect machines that do not have any cumul
 
 ## Dependencies
 
-- [EPM - Solution - Windows Update History Audit](<../../solutions/Windows Update History Audit.md>)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
-- [CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+- [EPM - Solution - Windows Update History Audit](/docs/8c1f89c7-4858-412a-8845-9b063981f3c5)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
+- [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Target
 

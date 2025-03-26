@@ -16,8 +16,8 @@ This Dataview displays the contents of the `plugin_proval_h_msp_metrics` custom 
 
 ## Dependencies
 
-- [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>)
-- [CWM - Automate - Custom Table - plugin_proval_h_msp_metrics](<../tables/plugin_proval_h_msp_metrics.md>)
+- [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](/docs/408bb0fc-cfe0-4ea3-8e77-af13c41e054e)
+- [CWM - Automate - Custom Table - plugin_proval_h_msp_metrics](/docs/aed83a49-ef72-45bd-bcef-369484754612)
 
 ## Columns
 

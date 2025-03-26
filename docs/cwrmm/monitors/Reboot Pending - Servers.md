@@ -22,7 +22,7 @@ This should target the group as shown below:
 
 ## Dependencies
 
-[CW RMM - Dynamic Group - Reboot Pending Servers](<../groups/Reboot Pending Servers.md>)
+[CW RMM - Dynamic Group - Reboot Pending Servers](/docs/d6235892-7f62-4a75-83ef-c6c01cc43898)
 
 ## Implementation
 

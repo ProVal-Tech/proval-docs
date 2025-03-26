@@ -21,7 +21,7 @@ The encryption methods that will be used to protect the target volume are:
 
 These two options come with custom field dependencies.  
 Refer to the document for the custom field dependencies check:  
-[CW RMM Custom Field - BitLocker Initialize C Volume](<../custom-fields/BitLocker Initialize C Volume.md>)
+[CW RMM Custom Field - BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
 
 ## Sample Run
 
@@ -31,7 +31,7 @@ Refer to the document for the custom field dependencies check:
 
 ## Dependencies
 
-[CW RMM Custom Field - BitLocker Initialize C Volume](<../custom-fields/BitLocker Initialize C Volume.md>)
+[CW RMM Custom Field - BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
 
 ## Variables
 

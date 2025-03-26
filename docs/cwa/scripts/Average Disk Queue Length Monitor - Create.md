@@ -26,7 +26,7 @@ A new Computer-Level EDF `ADQL - Physical Disk Count` has been introduced. Updat
 
 ## Before You Proceed
 
-The remote monitor created by this script utilizes the [Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>) agnostic script, which uses the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
+The remote monitor created by this script utilizes the [Get-AvgDiskQueueLength](/docs/662544c5-360c-4348-9e8f-a95b5bb4efd9) agnostic script, which uses the `//PhysicalDisk(_total)//Avg. Disk Queue Length` performance counter for data collection.
 
 ### Overview
 
@@ -65,7 +65,7 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic Script - Get-AvgDiskQueueLength](<../../powershell/Get-AvgDiskQueueLength.md>)
+[EPM - Data Collection - Agnostic Script - Get-AvgDiskQueueLength](/docs/662544c5-360c-4348-9e8f-a95b5bb4efd9)
 
 ### User Parameters
 

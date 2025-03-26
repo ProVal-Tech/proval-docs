@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-This table will be populated by the [SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>) script.  
+This table will be populated by the [SEC - Encryption - Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) script.  
 It holds all data from the Get-TPM command.
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>)
+[SEC - Encryption - Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
 
 ## Tables
 

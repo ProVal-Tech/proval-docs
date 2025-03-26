@@ -26,9 +26,9 @@ Recommended steps to use Toast Notification:
 **NOTE:** Then Section of this script is intentionally left blank.
 
 ## Dependencies
-[Toast Notification](./toast-notification.md)
+[Toast Notification](/docs/3aab837d-cb64-4669-aa35-040cce21c575)
 
-[Invoke-ToastNotification](../../powershell/Invoke-ToastNotification.md)
+[Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
 
 ## Variables
 

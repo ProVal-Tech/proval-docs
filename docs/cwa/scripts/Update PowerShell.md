@@ -23,7 +23,7 @@ This will update the current PowerShell V2 to PowerShell V5.
 ## Dependencies
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.  
-- [EPM - Windows Configuration - Agnostic - Update-PowerShell](<../../powershell/Update-PowerShell.md>)
+- [EPM - Windows Configuration - Agnostic - Update-PowerShell](/docs/04754010-1cd6-426b-ba7d-55ae36e60f53  )
 
 ## Global Parameters
 

@@ -17,7 +17,7 @@ This agent procedure utilizes the [Remove - Application](https://proval.itglue.c
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Senteon Agent](<../../solutions/Senteon Agent.md>)
+[SWM - Software Management - Solution - Senteon Agent](/docs/5cc5165d-4314-499b-9357-299f3b04f402)
 
 ## Implementation
 

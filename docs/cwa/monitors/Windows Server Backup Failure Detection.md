@@ -28,7 +28,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[Windows Server Backup](<../roles/Windows Server Backup.md>)
+[Windows Server Backup](/docs/5cd09bd8-bf3c-431a-8ee6-e56bff349e50)
 
 ## Target
 

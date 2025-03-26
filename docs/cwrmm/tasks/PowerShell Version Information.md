@@ -22,7 +22,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - PowerShell Version](<../custom-fields/PowerShell Version.md>)
+[CW RMM - Custom Field - PowerShell Version](/docs/945d88e0-81a9-4253-8406-63fa7430d45a)
 
 ## Variables
 

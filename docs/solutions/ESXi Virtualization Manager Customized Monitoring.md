@@ -23,26 +23,26 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 | Content                                                                                       | Type            | Function                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating 3 Days.md>) | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have not checked in with Automate for more than 3 days.                                   |
-| [Internal Monitor - ESXi Bad Sensor](<../cwa/monitors/ESXi Bad Sensor.md>)                  | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring.                                   |
+| [Internal Monitor - ESXi Bad Sensor](/docs/2f8424d7-00aa-4cee-a4fb-56cbc412108b)                  | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring.                                   |
 | [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](<../cwa/monitors/ESXi Old Snapshots Detected 3 Days.md>) | Internal Monitor | This monitor identifies the ESXi host servers that contain one or more snapshots older than three days. Default alerting contains the information of all the virtual machines and the older snapshots grouped by the ESXi host. |
 | [Internal Monitor - ESXi Storage Space < 10%](<../cwa/monitors/ESXi Storage Space 10.md>)   | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a remaining storage space for any disk that is less than 10% within the VMware monitoring. |
-| [Internal Monitor - ESXi Invalid License Detected](<../cwa/monitors/ESXi Invalid License Detected.md>) | Internal Monitor | The purpose of this monitor is to detect the ESXi hosts with expired or trial version license keys.                                                              |
+| [Internal Monitor - ESXi Invalid License Detected](/docs/e413063b-7bce-4a4e-99ce-daea264d6ac6) | Internal Monitor | The purpose of this monitor is to detect the ESXi hosts with expired or trial version license keys.                                                              |
 
 ### Alert Templates
 
 | Content                                                                                               | Type            | Function                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Ticket Creation - VMware ESXi Monitoring](<../cwa/scripts/Ticket Creation - VMware ESXi Monitoring.md>) | Autofix Script  | This script creates a ticket on the related network probe for the detected device. Used by the `△ Custom - Ticket Creation - ESXi Monitoring` alert template.                                                             |
+| [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c) | Autofix Script  | This script creates a ticket on the related network probe for the detected device. Used by the `△ Custom - Ticket Creation - ESXi Monitoring` alert template.                                                             |
 | △ Custom - Ticket Creation - ESXi Monitoring                                                          | Alert Template   | This alert template is designed for generating tickets related to devices identified by the internal monitors mentioned earlier.                                                                                         |
-| [Script - Email Creation - VMware ESXi Monitoring](<../cwa/scripts/Email Creation - VMware ESXi Monitoring.md>) | Autofix Script  | This script sends an email alert for the devices detected by the earlier-mentioned internal monitors. Used by the `△ Custom - Email Creation - ESXi Monitoring` alert template.                                             |
+| [Script - Email Creation - VMware ESXi Monitoring](/docs/642f7615-925c-481f-b4bf-8d6b2c9ad6de) | Autofix Script  | This script sends an email alert for the devices detected by the earlier-mentioned internal monitors. Used by the `△ Custom - Email Creation - ESXi Monitoring` alert template.                                             |
 | △ Custom - Email Creation - VMware ESXi Monitoring                                                   | Alert Template   | This alert template is designed for sending emails related to devices identified by the internal monitors mentioned earlier. This alert template **should be used only if the partner wishes to send an email for alerting instead of a ticket**. |
 
 ### Dataviews
 
 | Content                                                                                   | Type      | Function                                                                                                 |
 |-------------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------|
-| [Dataview - ESXi Hosts](<../cwa/dataviews/ESXi Hosts.md>)                  | Dataview  | This dataview shows useful information about ESXi hosts.                                               |
-| [Dataview - ESXi Snapshots](<../cwa/dataviews/ESXi Snapshots.md>)            | Dataview  | This dataview audits snapshots for virtual machines hosted on the ESXi.                                |
+| [Dataview - ESXi Hosts](/docs/556a609f-b0e6-401b-afc0-17932fde35c7)                  | Dataview  | This dataview shows useful information about ESXi hosts.                                               |
+| [Dataview - ESXi Snapshots](/docs/4afe3dcb-4326-4833-a87a-77a14a882c81)            | Dataview  | This dataview audits snapshots for virtual machines hosted on the ESXi.                                |
 
 ## Implementation
 
@@ -50,14 +50,14 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 2. Import the following internal monitors using the Prosync Plugin:
    - [Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating 3 Days.md>)
-   - [Internal Monitor - ESXi Bad Sensor](<../cwa/monitors/ESXi Bad Sensor.md>)
+   - [Internal Monitor - ESXi Bad Sensor](/docs/2f8424d7-00aa-4cee-a4fb-56cbc412108b)
    - [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](<../cwa/monitors/ESXi Old Snapshots Detected 3 Days.md>)
    - [Internal Monitor - ESXi Storage Space < 10%](<../cwa/monitors/ESXi Storage Space 10.md>)
-   - [Internal Monitor - ESXi Invalid License Detected](<../cwa/monitors/ESXi Invalid License Detected.md>)
+   - [Internal Monitor - ESXi Invalid License Detected](/docs/e413063b-7bce-4a4e-99ce-daea264d6ac6)
 
 3. Import the following dataviews from the Prosync Plugin:
-   - [Dataview - ESXi Hosts](<../cwa/dataviews/ESXi Hosts.md>)
-   - [Dataview - ESXi Snapshots](<../cwa/dataviews/ESXi Snapshots.md>)
+   - [Dataview - ESXi Hosts](/docs/556a609f-b0e6-401b-afc0-17932fde35c7)
+   - [Dataview - ESXi Snapshots](/docs/4afe3dcb-4326-4833-a87a-77a14a882c81)
 
 4. Import the required alert template from the following list using the Prosync plugin.
    - Custom - Ticket Creation - ESXi Monitoring
@@ -66,8 +66,8 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
      - **Only import this one if the partner requires emailing (typically not required).**
 
 5. Import the required autofix script from the following list using the Prosync plugin, if they are not already imported along with the alert template.
-   - [Script - Ticket Creation - VMware ESXi Monitoring](<../cwa/scripts/Ticket Creation - VMware ESXi Monitoring.md>)
-   - [Script - Email Creation - VMware ESXi Monitoring](<../cwa/scripts/Email Creation - VMware ESXi Monitoring.md>)
+   - [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c)
+   - [Script - Email Creation - VMware ESXi Monitoring](/docs/642f7615-925c-481f-b4bf-8d6b2c9ad6de)
 
 6. Reload the System Cache  
    ![Reload System Cache](../../static/img/ESXi-Virtualization-Manager-Customized-Monitoring/image_1.png)
@@ -78,7 +78,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
-     - [Internal Monitor - ESXi Bad Sensor](<../cwa/monitors/ESXi Bad Sensor.md>)
+     - [Internal Monitor - ESXi Bad Sensor](/docs/2f8424d7-00aa-4cee-a4fb-56cbc412108b)
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
@@ -90,7 +90,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
-     - [Internal Monitor - ESXi Invalid License Detected](<../cwa/monitors/ESXi Invalid License Detected.md>)
+     - [Internal Monitor - ESXi Invalid License Detected](/docs/e413063b-7bce-4a4e-99ce-daea264d6ac6)
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
@@ -101,7 +101,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 **A:** The ticket will be created for the identified device and associated with the respective Network Probe.
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
-**A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](<../unsorted/VMware Host Not Detected in Virtualization Manager Plugin.md>)
+**A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](/docs/2dc2bb07-e083-48d0-836e-55e40c05c871)
 
 
 

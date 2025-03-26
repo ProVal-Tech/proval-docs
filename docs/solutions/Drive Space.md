@@ -16,9 +16,9 @@ unlisted: false
 
 | Content                                                                                                           | Type    | Function |
 |-------------------------------------------------------------------------------------------------------------------|---------|----------|
-| [EPM - Disk - Monitor - Agent - Drive Space Check](<../cwa/monitors/Agent - Drive Space Check.md>)               | Monitor |          |
-| [EPM - Disk - Script - Disk Space Monitoring Process](<../cwa/scripts/Disk Space Monitoring Process.md>)            | Script  |          |
-| [CWM - Automate - Script - Agent Monitor Creation - Disk - WRAPPER](<../cwa/scripts/Agent Monitor Creation - Disk - WRAPPER.md>) | Script  |          |
+| [EPM - Disk - Monitor - Agent - Drive Space Check](/docs/6d2587d3-3839-4f53-92a7-89890936958d)               | Monitor |          |
+| [EPM - Disk - Script - Disk Space Monitoring Process](/docs/1e7f2148-6bd5-41ce-a397-9c41054487cf)            | Script  |          |
+| [CWM - Automate - Script - Agent Monitor Creation - Disk - WRAPPER](/docs/3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe) | Script  |          |
 
 ## Implementation
 

@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<./Enhanced Disk Space Monitoring Process.md>) script with an additional feature to send email notifications. It fetches the email address from the default system property `_sysTicketDefaultEmail` if the script's global variable `EmailAddress` is not set.
+This is a client-specific copy of [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) script with an additional feature to send email notifications. It fetches the email address from the default system property `_sysTicketDefaultEmail` if the script's global variable `EmailAddress` is not set.
 
 **The email address should be stored in one place, either in the script's global variable or in the system property.**
 
 ## Dependencies
 
-[EPM - Disk - Solution - Enhanced Drive Space Monitoring](<../../solutions/Enhanced Drive Space Monitoring.md>)
+[EPM - Disk - Solution - Enhanced Drive Space Monitoring](/docs/0757e19d-56e4-4491-83b3-6012fde3b753)
 
 #### Global Parameters
 

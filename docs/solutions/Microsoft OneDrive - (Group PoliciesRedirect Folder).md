@@ -18,16 +18,16 @@ This document implements options for group policies to redirect Windows known fo
 
 | Content                                                                 | Type               | Function                                                                                                                |
 |-------------------------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [M365TenantId](<../vsa/variables/M365TenantId.md>)                    | Managed Variable    | This managed variable is used to store the partner's Microsoft 365 TenantId.                                         |
-| [Microsoft OneDrive - (Group Policies/Redirect Folder)](<../vsa/procedures/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>) | Agent Procedure     | This agent procedure is used to implement group policies to redirect Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to Microsoft OneDrive. |
+| [M365TenantId](/docs/b3141fc4-14f1-41a7-ba67-61b3a4e29fd5)                    | Managed Variable    | This managed variable is used to store the partner's Microsoft 365 TenantId.                                         |
+| [Microsoft OneDrive - (Group Policies/Redirect Folder)](/docs/2b6977c1-5cd2-477b-9230-150568009b82) | Agent Procedure     | This agent procedure is used to implement group policies to redirect Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to Microsoft OneDrive. |
 
 ## Implementation
 
 1. Create the following dependencies in the partner's VSA:  
-   - [Managed Variable - M365TenantId](<../vsa/variables/M365TenantId.md>)
+   - [Managed Variable - M365TenantId](/docs/b3141fc4-14f1-41a7-ba67-61b3a4e29fd5)
 
 2. Export the following content from ProVal's VSA and follow the necessary implementation steps within each document:  
-   - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../vsa/procedures/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
+   - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](/docs/2b6977c1-5cd2-477b-9230-150568009b82)
 
 
 

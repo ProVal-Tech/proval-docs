@@ -16,8 +16,8 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)  
-- [CW RMM - Dynamic Group - Reboot Pending Deployment](<../groups/Reboot Prompter Deployment - Manual.md>)  
+- [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
+- [CW RMM - Dynamic Group - Reboot Pending Deployment](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20)  
 
 ## Sample Run
 
@@ -563,7 +563,7 @@ Once all items are added, please save the task. The final task should look like 
 
 ## Deployment
 
-It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](<../groups/Reboot Prompter Deployment - Manual.md>) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>) at certain intervals as per client requirements to send prompts at regular intervals.
+It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reboot Prompter Deployment - Manual](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20) and [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05) at certain intervals as per client requirements to send prompts at regular intervals.
 
 1. Go to `Automation` > `Tasks`.
 2. Search for `Reboot Prompter` Task.

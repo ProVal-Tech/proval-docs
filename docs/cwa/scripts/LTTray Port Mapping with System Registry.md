@@ -22,7 +22,7 @@ This script maps the port number from netstat and the Windows registry of the LT
 
 ## Dependencies
 
-[LTTray Detection](<../monitors/LTTray Detection.md>)
+[LTTray Detection](/docs/28ddee2c-510a-4557-941a-168d155eacdc)
 
 #### Global Parameters
 

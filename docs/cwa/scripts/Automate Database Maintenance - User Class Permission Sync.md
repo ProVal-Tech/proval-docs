@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>). It handles the user class permission for the clients and requires the "UserClass_Enable_Default_Permission" system property value to be set to 1 to enable synchronization of user class permissions from the Default Client to all other clients.
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968). It handles the user class permission for the clients and requires the "UserClass_Enable_Default_Permission" system property value to be set to 1 to enable synchronization of user class permissions from the Default Client to all other clients.
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 ## Variables
 

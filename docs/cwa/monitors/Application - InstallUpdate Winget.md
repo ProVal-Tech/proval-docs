@@ -16,7 +16,7 @@ This monitor is designed to update the application based on the PackageID, Sourc
 
 ## Dependencies
 
-[Winget - Install/Update [Autofix, Param]](<../scripts/Script - Winget - InstallUpdate Autofix,Param.md>)
+[Winget - Install/Update [Autofix, Param]](/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25)
 
 ## Target
 

@@ -39,9 +39,9 @@ This script can be used to delete a snapshot of a machine hosted on an ESXi host
 
 ## Dependencies
 
-[CWM - Automate - Script - ESXi - Snapshot Create [Param]](<./ESXi - Snapshot Create Param.md>)  
+[CWM - Automate - Script - ESXi - Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195)  
 
-**Note:** This script can be scheduled with proper parameters to remove the snapshot created by the [CWM - Automate - Script - ESXi - Snapshot Create [Param]](<./ESXi - Snapshot Create Param.md>) script after `@Hours_To_Keep@` hours.
+**Note:** This script can be scheduled with proper parameters to remove the snapshot created by the [CWM - Automate - Script - ESXi - Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195) script after `@Hours_To_Keep@` hours.
 
 ## Variables
 

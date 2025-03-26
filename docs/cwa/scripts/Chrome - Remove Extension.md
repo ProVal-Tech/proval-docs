@@ -23,7 +23,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 - Windows 10 1703+
 - Google Chrome 86+
-- [Unregister-ChromeExtension](<../../powershell/Unregister-ChromiumExtension.md>)
+- [Unregister-ChromeExtension](/docs/6910db0c-af2e-4b19-a262-3c3491f01b73)
 
 ## Variables
 

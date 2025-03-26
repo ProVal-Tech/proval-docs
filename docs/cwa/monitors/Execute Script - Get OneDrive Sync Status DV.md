@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Executes the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script once weekly against the Windows workstations with the OneDrive process.
+Executes the [Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece) script once weekly against the Windows workstations with the OneDrive process.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
+[EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece)
 
 ## Target
 

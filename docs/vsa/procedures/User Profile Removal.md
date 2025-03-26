@@ -40,7 +40,7 @@ This script removes a user profile from an endpoint. It prompts the user for con
 
 ## Dependencies
 
-[EPM - Accounts - Agnostic - Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
+[EPM - Accounts - Agnostic - Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac)
 
 ## Output
 

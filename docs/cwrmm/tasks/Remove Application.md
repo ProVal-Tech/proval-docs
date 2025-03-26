@@ -22,7 +22,7 @@ This script is designed to perform the uninstallation of the application provide
 
 ## Dependencies
 
-[CW RMM Custom Field - Remove Application](<../custom-fields/Remove Application.md>)  
+[CW RMM Custom Field - Remove Application](/docs/c893b839-b951-4b0c-b1d0-879361818839)  
 Remove Application Result - Custom Field (Endpoint)
 
 #### User Parameters

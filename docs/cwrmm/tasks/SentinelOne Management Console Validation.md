@@ -13,9 +13,9 @@ unlisted: false
 ## Summary
 
 > The task validates whether the SentinelOne Management Server detected on the computer is different from what is set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
-- [Client Level S1 Mgmt Server](<../custom-fields/Endpoint - Client Level S1 Mgmt Server.md>)
-- [Computer Level S1 Mgmt Server](<../custom-fields/Endpoint - Computer Level S1 Mgmt Server.md>)
-- [S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
+- [Client Level S1 Mgmt Server](/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8)
+- [Computer Level S1 Mgmt Server](/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866)
+- [S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
 
 ## Sample Run
 
@@ -24,11 +24,11 @@ unlisted: false
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
-- [CW RMM - Custom Field - Endpoint - Computer Level S1 Mgmt Server](<../custom-fields/Endpoint - Computer Level S1 Mgmt Server.md>)
-- [CW RMM - Custom Field - Endpoint - Client Level S1 Mgmt Server](<../custom-fields/Endpoint - Client Level S1 Mgmt Server.md>)
-- [CW RMM - Custom Field - Site - SentinelOne Site Key](<../custom-fields/Company - SentinelOne Site Key.md>)
-- [CW RMM - Dynamic Group - SentinelOne Installed](<../groups/SentinelOne Installed.md>)
+- [CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
+- [CW RMM - Custom Field - Endpoint - Computer Level S1 Mgmt Server](/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866)
+- [CW RMM - Custom Field - Endpoint - Client Level S1 Mgmt Server](/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8)
+- [CW RMM - Custom Field - Site - SentinelOne Site Key](/docs/0c2128f8-2f99-47e7-a0ff-82b854ff2701)
+- [CW RMM - Dynamic Group - SentinelOne Installed](/docs/9bed886f-fa13-4389-932e-47c62482db0d)
 
 ## Task Creation
 
@@ -275,7 +275,7 @@ Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` butt
 Click the `Select Targets` button to select the concerned target.  
 ![Select Targets](../../../static/img/SentinelOne-Management-Console-Validation/image_38.png)  
 
-Search and select the [`SentinelOne Installed`](<../groups/SentinelOne Installed.md>) Device Group for the target.
+Search and select the [`SentinelOne Installed`](/docs/9bed886f-fa13-4389-932e-47c62482db0d) Device Group for the target.
 - **If the partner uses a different group for the computers with the `Sentinel Agent` application installed, then use that one.**  
 ![Device Group](../../../static/img/SentinelOne-Management-Console-Validation/image_39.png)  
 

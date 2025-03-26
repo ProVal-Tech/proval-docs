@@ -13,11 +13,11 @@ unlisted: false
 ## Summary
 
 This document completely removes BitDefender Endpoint Security Tools from an endpoint.  
-Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](<../../powershell/Remove-BitDefenderEndpointSecurity.md>).
+Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](/docs/3037688b-782b-468e-956a-292b3ef33534).
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](<../../powershell/Remove-BitDefenderEndpointSecurity.md>).
+[SWM - Software Uninstall - Agnostic - Remove-BitdefenderEndpointSecurity](/docs/3037688b-782b-468e-956a-292b3ef33534).
 
 ## Implementation
 

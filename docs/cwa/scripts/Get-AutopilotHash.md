@@ -16,7 +16,7 @@ This script retrieves the Hardware Hash for Autopilot device registration. It co
 
 ## Sample Run
 
-It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](<../monitors/Get - Autopilot Hash.md>), but it can also be run independently.
+It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](/docs/3add591b-445e-440d-a7b3-cc85b2ea0674), but it can also be run independently.
 
 ![Sample Run](../../../static/img/Get-AutopilotHash/image_1.png)
 

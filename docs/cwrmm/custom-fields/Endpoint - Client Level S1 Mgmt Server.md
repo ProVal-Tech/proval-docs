@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Client Level SentinelOne Management Server. Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
+Client Level SentinelOne Management Server. Updated by [SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079) task.
 
 ## Dependencies
 
-[CW RMM - Task - SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>)
+[CW RMM - Task - SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079)
 
 ## Details
 

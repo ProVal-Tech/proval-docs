@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-Monitors for bad health conditions returned from the script [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) into the custom table [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>).
+Monitors for bad health conditions returned from the script [HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a) into the custom table [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6).
 
 ## Dependencies
 
-- [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>)
-- [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
-- [Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
-- [CWM - Automate - Script - Ticket Creation - HP iLO Health Check](<../scripts/Ticket Creation - HP iLO Health Check.md>)
+- [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6)
+- [HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
+- [Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
+- [CWM - Automate - Script - Ticket Creation - HP iLO Health Check](/docs/5c6b4bbb-732d-4d97-af38-f10d51a8a96c)
 
 ## Target
 
@@ -29,7 +29,7 @@ Global - Should be run without explicitly defined targets.
 
 **Name:** `△ Custom - Ticket Creation - HP iLO Health Check`
 
-The alert template should execute the [CWM - Automate - Script - Ticket Creation - HP iLO Health Check](<../scripts/Ticket Creation - HP iLO Health Check.md>) script.
+The alert template should execute the [CWM - Automate - Script - Ticket Creation - HP iLO Health Check](/docs/5c6b4bbb-732d-4d97-af38-f10d51a8a96c) script.
 
 ## Ticket Category
 

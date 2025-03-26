@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>) utilizes this custom field to store information regarding the AD Recycle Bin status. It will indicate whether it is enabled or if the infrastructure master does not meet the minimum criteria.
+The [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7) utilizes this custom field to store information regarding the AD Recycle Bin status. It will indicate whether it is enabled or if the infrastructure master does not meet the minimum criteria.
 
 ## Create the Custom Field
 

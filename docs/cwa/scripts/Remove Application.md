@@ -60,7 +60,7 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-Application](<../../powershell/Remove-Application.md>)
+[SWM - Software Uninstall - Agnostic - Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
 
 ## Variables
 

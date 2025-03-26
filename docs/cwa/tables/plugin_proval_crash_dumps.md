@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-Optional container to hold data retrieved from [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>).
+Optional container to hold data retrieved from [EPM - Data Collection - Script - Get-CrashDump](/docs/dde000a0-373a-4023-a594-04e532b5ad57).
 
 ## Dependencies
 
-Created by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>) if CreateTable is 1.  
-Modified by: [EPM - Data Collection - Script - Get-CrashDump](<../scripts/Get-CrashDump.md>) if CreateTable is 1.
+Created by: [EPM - Data Collection - Script - Get-CrashDump](/docs/dde000a0-373a-4023-a594-04e532b5ad57) if CreateTable is 1.  
+Modified by: [EPM - Data Collection - Script - Get-CrashDump](/docs/dde000a0-373a-4023-a594-04e532b5ad57) if CreateTable is 1.
 
 ## Tables
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores information about the existing super admins. It is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
+This document stores information about the existing super admins. It is used as a challenge comparison to determine if a new super admin was added by the script [Automate - New Super Admin Monitoring](/docs/acc57018-b868-4129-b4a5-0f1052dcc1ae).
 
 ## Dependencies
 
-This document relies on the script [Automate - New Super Admin Monitoring](<../scripts/Automate - New Super Admin Monitoring.md>).
+This document relies on the script [Automate - New Super Admin Monitoring](/docs/acc57018-b868-4129-b4a5-0f1052dcc1ae).
 
 ## Table
 

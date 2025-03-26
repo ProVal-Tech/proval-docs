@@ -16,7 +16,7 @@ The group will detect the computers where the latest cumulative update installat
 
 ## Dependencies
 
-[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
+[CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
 
 ## Group Creation
 

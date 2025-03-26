@@ -21,21 +21,21 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Out_of_Date_CU_Autofix](<../custom-fields/Company - Out_of_Date_CU_Autofix.md>)
-- [CW RMM Custom Field - Site - Out_of_Date_CU_Autofix](<../custom-fields/Site - Out_of_Date_CU_Autofix.md>)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix.md>)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)
-- [CW RMM - Device Group - Out of Date CU _ Autofix Required](<../groups/Out of Date CU _ Autofix Required.md>)
-- [Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)
+- [CW RMM - Custom Field - Company - Out_of_Date_CU_Autofix](/docs/00c4b9c6-ded8-4cde-ba74-47437724d206)
+- [CW RMM Custom Field - Site - Out_of_Date_CU_Autofix](/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix](/docs/a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
+- [CW RMM - Device Group - Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1)
+- [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
 
 ## Variables
 
 | Name                 | Description                                                                                                               |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Company_Selection     | Value stored in the [Company - Out_of_Date_CU_Autofix](<../custom-fields/Company - Out_of_Date_CU_Autofix.md>) Custom Field.   |
-| Site_Selection        | Value stored in the [Site - Out_of_Date_CU_Autofix](<../custom-fields/Site - Out_of_Date_CU_Autofix.md>) Custom Field.     |
-| Endpoint_Selection    | Value stored in the [EndPoint - Out_of_Date_CU_Autofix](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix.md>) Custom Field. |
+| Company_Selection     | Value stored in the [Company - Out_of_Date_CU_Autofix](/docs/00c4b9c6-ded8-4cde-ba74-47437724d206) Custom Field.   |
+| Site_Selection        | Value stored in the [Site - Out_of_Date_CU_Autofix](/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a) Custom Field.     |
+| Endpoint_Selection    | Value stored in the [EndPoint - Out_of_Date_CU_Autofix](/docs/a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea) Custom Field. |
 | Output                | Output of the previously executed PowerShell script.                                                                     |
 
 ## Task Creation
@@ -489,7 +489,7 @@ Type `%Output%` in the `Script Log Message` field and click the `Save` button.
 
 ## Deployment
 
-It is suggested to run the Task once per week against the [Out of Date CU _ Autofix Required](<../groups/Out of Date CU _ Autofix Required.md>) device group.
+It is suggested to run the Task once per week against the [Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1) device group.
 
 1. Go to `Automation` > `Tasks`.
 2. Search for `Out of Date Cumulative Update (Autofix)` Task.
@@ -508,7 +508,7 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 ![Recurrence Updated](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_74.png)  
 10. Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_75.png)  
-11. Search and Select the [Out of Date CU _ Autofix Required](<../groups/Out of Date CU _ Autofix Required.md>) device group.  
+11. Search and Select the [Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1) device group.  
 ![Select Device Group](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_76.png)  
 12. Now click the `Run` button to initiate the task.  
 ![Run Task](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_77.png)  

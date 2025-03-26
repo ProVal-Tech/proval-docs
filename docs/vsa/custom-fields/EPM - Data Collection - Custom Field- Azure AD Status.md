@@ -17,7 +17,7 @@ This custom field is used to display whether or not a machine is Azure AD joined
 ## Dependencies
 
 This custom field is populated by the agent procedure.  
-Solution: [https://proval.itglue.com/DOC-5078775-12540674](<../../solutions/EPM - Data Collection - Solution- Azure AD Status.md>)
+Solution: [https://proval.itglue.com/DOC-5078775-12540674](/docs/c852661d-3253-466e-ae17-ee2753885920)
 
 ## Details
 

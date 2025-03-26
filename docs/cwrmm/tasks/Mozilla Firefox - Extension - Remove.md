@@ -22,7 +22,7 @@ This document describes how to remove an extension from the Mozilla Firefox brow
 
 ## Dependencies
 
-[SWM - Software Configuration - Unregister-FirefoxExtension](<../../powershell/Unregister-FirefoxExtension.md>)
+[SWM - Software Configuration - Unregister-FirefoxExtension](/docs/e9295813-fbf2-43fe-b6a0-20da0ae7b21d)
 
 ## User Parameters
 

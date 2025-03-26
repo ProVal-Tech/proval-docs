@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](<../groups/Reboot Prompter Deployment - Auto.md>).
+This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05).
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>) 
+- [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5) 
 - Auto_RebootPendingCheck - Custom field (Endpoint)
 
 ## Sample Run

@@ -16,7 +16,7 @@ This dataview collects information about the PowerShell version based on the rol
 
 ## Dependencies
 
-[Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
+[Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81)
 
 ## Columns
 

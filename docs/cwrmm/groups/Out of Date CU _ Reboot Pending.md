@@ -16,8 +16,8 @@ This document groups computers where a Cumulative Update was installed by the Ou
 
 ## Dependencies
 
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)  
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)  
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)  
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)  
 
 ## Group Creation
 

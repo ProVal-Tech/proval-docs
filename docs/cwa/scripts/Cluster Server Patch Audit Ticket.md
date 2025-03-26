@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This client script creates a ticket for all the cluster hosts where the currently installed Cumulative Update is older than 60 days, as indicated in the [Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>).
+This client script creates a ticket for all the cluster hosts where the currently installed Cumulative Update is older than 60 days, as indicated in the [Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a).
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This client script creates a ticket for all the cluster hosts where the currentl
 
 ## Dependencies
 
-[Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
+[Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
 
 ## Output
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores information about DHCP scopes on the target machine gathered by the script [Get DHCP Server Scope Information](<../scripts/Get DHCP Server Scope Information.md>).
+Stores information about DHCP scopes on the target machine gathered by the script [Get DHCP Server Scope Information](/docs/918c1a66-54b8-4468-9e4b-5b7db918b77c).
 
 ## Dependencies
 
-[Get DHCP Server Scope Information](<../scripts/Get DHCP Server Scope Information.md>)
+[Get DHCP Server Scope Information](/docs/918c1a66-54b8-4468-9e4b-5b7db918b77c)
 
 ## Table
 

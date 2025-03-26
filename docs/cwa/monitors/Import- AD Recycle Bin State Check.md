@@ -13,7 +13,7 @@ unlisted: false
 ## Step 1
 Import the Alert Template '△ Custom - Execute Script - AD - Enable AD Recycle Bin'
 
-- Validate that the [AD - Enable AD Recycle Bin](<../scripts/AD - Enable AD Recycle Bin.md>) script was imported as well.
+- Validate that the [AD - Enable AD Recycle Bin](/docs/e80d5873-304e-4b12-b52c-b608a7715a9f) script was imported as well.
 
 ## Step 2
 Run the SQL Query to import the 'AD Domain Recycle Bin Feature' role if it's not already available in the environment.

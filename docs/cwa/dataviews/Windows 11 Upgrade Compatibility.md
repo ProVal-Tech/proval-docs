@@ -16,9 +16,9 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
-- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>)
-- [CWM - Automate - Monitor - Execute Script - Windows - Check Windows 11 Compatibility](<../monitors/Execute Script - Windows - Check Windows 11 Compatibility.md>)
+- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
+- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
+- [CWM - Automate - Monitor - Execute Script - Windows - Check Windows 11 Compatibility](/docs/8aa2542c-c61f-43b8-a7ec-ec33558319e4)
 
 ## Columns
 

@@ -26,7 +26,7 @@ This script will either list the available updates or run updates for the Adobe 
 
 This section should list the ITGlue documents found in the Related Items sidebar that this script depends on.
 
-- [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
+- [Update-AdobeCC](/docs/baddd511-d11a-4d0e-be88-cd8c942b5e39)
 
 ## Variables
 
@@ -38,7 +38,7 @@ This section should list the ITGlue documents found in the Related Items sidebar
 
 ## Process
 
-[Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
+[Update-AdobeCC](/docs/baddd511-d11a-4d0e-be88-cd8c942b5e39)
 
 ## Output
 

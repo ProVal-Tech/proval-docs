@@ -29,17 +29,17 @@ This means the script will automatically reboot itself upon completion with no p
 
 ## Dependencies
 
-- [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>)
+- [SEC - Windows Patching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055)
   - [Document](https://app.myglue.com/help_center/documents/9447713)
-- [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](<../tables/plugin_proval_windows10_upgradestats.md>)
+- [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](/docs/75c18bf0-9ebc-43c7-a5a3-03510d131af5)
   - [Document](https://app.myglue.com/help_center/documents/9746809)
 - [EPM - Agnostic - Prompt-User](https://proval.itglue.com/DOC-5078775-9580402)
   - [Document](https://app.myglue.com/help_center/documents/9580402)
-- [EPM - Data Collection - Script - User-Show-PromptMessage](<./User Prompt - Show.md>)
+- [EPM - Data Collection - Script - User-Show-PromptMessage](/docs/d4406d51-fc3a-46e1-8e25-31a5f43b05e2)
   - [Document](https://app.myglue.com/help_center/documents/9739032)
-- [CWM - Automate - Script - Prompter](<./Prompter.md>)
-- [Prompter](<./Prompter.md>)
-- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](<./Windows 10 Update Stats - Retrieve.md>)
+- [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](/docs/65815475-a61d-4f0d-b2ba-c7b8368285c9)
 
 ## Variables
 

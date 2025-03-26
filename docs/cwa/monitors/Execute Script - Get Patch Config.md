@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-Detects the computers where the [Get Patch Config](<../scripts/Get Patch Config.md>) script has not been executed within the past 7 days.
+Detects the computers where the [Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900) script has not been executed within the past 7 days.
 
 **Limited to:** `Windows 10, 11, Server 2016, 2019, and 2022`
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get Patch Config](<../scripts/Get Patch Config.md>)
-- [EPM - Data Collection - Custom Table - pvl_patch_config](<../tables/pvl_patch_config.md>)
+- [EPM - Data Collection - Script - Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900)
+- [EPM - Data Collection - Custom Table - pvl_patch_config](/docs/c9891eb9-3731-4b0d-9882-dcb4a73229eb)
 
 ## Target
 

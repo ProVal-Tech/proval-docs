@@ -18,24 +18,24 @@ The purpose of this solution is to detect Dell Dockstation on Dell workstations.
 
 | Content                                                                                 | Type          | Function                                                             |
 |-----------------------------------------------------------------------------------------|---------------|----------------------------------------------------------------------|
-| [Script - Get-DellDockStation](<../cwa/scripts/Get-DellDockStation.md>)             | Script        | Detects the Dell Dockstation on the Dell Workstations               |
-| [Internal Monitor - Execute Script - Get-DellDockStation](<../cwa/monitors/Execute Script - Get-DellDockStation.md>) | Monitor       | Executes the [Get-DellDockStation](<../cwa/scripts/Get-DellDockStation.md>) script once every 2 days |
-| [Dataview - Dell Dockstation Inventory](<../cwa/dataviews/Dell Dockstation Inventory.md>) | Dataview      | Populates the available Dockstations Inventory for the Dell Workstations |
-| `△ Custom - Execute Script - Get-DellDockStation`                                     | Alert Template | This alert template is used with the monitor [Execute Script - Get-DellDockStation](<../cwa/monitors/Execute Script - Get-DellDockStation.md>) to run the script [Get-DellDockStation](<../cwa/scripts/Get-DellDockStation.md>) as an autofix. |
+| [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)             | Script        | Detects the Dell Dockstation on the Dell Workstations               |
+| [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8) | Monitor       | Executes the [Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script once every 2 days |
+| [Dataview - Dell Dockstation Inventory](/docs/8551929f-3af4-45ac-9edf-00f733193d56) | Dataview      | Populates the available Dockstations Inventory for the Dell Workstations |
+| `△ Custom - Execute Script - Get-DellDockStation`                                     | Alert Template | This alert template is used with the monitor [Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8) to run the script [Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) as an autofix. |
 
 ## Implementation
 
 1. Import the following contents from the `ProSync` plugin:
-   - [Script - Get-DellDockStation](<../cwa/scripts/Get-DellDockStation.md>)
-   - [Internal Monitor - Execute Script - Get-DellDockStation](<../cwa/monitors/Execute Script - Get-DellDockStation.md>)
-   - [Dataview - Dell Dockstation Inventory](<../cwa/dataviews/Dell Dockstation Inventory.md>)
+   - [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
+   - [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
+   - [Dataview - Dell Dockstation Inventory](/docs/8551929f-3af4-45ac-9edf-00f733193d56)
    - Alert Template - `△ Custom - Execute Script - Get-DellDockStation`
 
 2. ![Image](../../static/img/Dell-DockStation/image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Execute Script - Get-DellDockStation](<../cwa/monitors/Execute Script - Get-DellDockStation.md>)
+     - [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
        - `△ Custom - Execute Script - Get-DellDockStation`
        - Right-click and select "Run Now" to start the monitor.
 

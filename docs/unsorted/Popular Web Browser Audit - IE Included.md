@@ -18,7 +18,7 @@ The list of browsers under audit includes: Mozilla Firefox, Google Chrome, Vival
 
 ## Dependencies
 
-[Internet Explorer - Disable](<../cwa/scripts/Internet Explorer - Disable Global, DV, Autofix.md>)
+[Internet Explorer - Disable](/docs/60cf67bf-fc28-4461-a2ad-7a32b2461652)
 
 ## Columns
 

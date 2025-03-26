@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into the GetFiles directory for client and consultant access.
+Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](/docs/b2661e46-518b-4a4f-9b4b-21f9b69ff100) and places the CSV it generates into the GetFiles directory for client and consultant access.
 
 ## Example Agent Procedure Log
 
@@ -48,11 +48,11 @@ Runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTime
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](/docs/81ac366c-a635-4419-9a29-94a1fe7ddac0)
 
 ## Process
 
-Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](<./Get-VsaTimeSaved.ps1.md>) and places the CSV it generates into the GetFiles directory.
+Downloads and runs [VSA - VSA Host Procedure - Agnostic - Get-VsaTimeSaved.ps1](/docs/b2661e46-518b-4a4f-9b4b-21f9b69ff100) and places the CSV it generates into the GetFiles directory.
 
 ## Output
 

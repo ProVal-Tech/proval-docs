@@ -16,8 +16,8 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 
 ## Dependencies
 
-- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)
-- [CW RMM - Policy - Install Windows 11](<../policies/Install Windows 11.md>)
+- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96)
+- [CW RMM - Policy - Install Windows 11](/docs/4664a942-cb4f-425a-ae16-4615d2b14cae)
 
 ## Package Creation
 
@@ -37,7 +37,7 @@ Enable Windows 11 installation for compatible Windows 10 computers.
    **Description:** `Enable Windows 11 installation for compatible Windows 10 computers.`  
    ![](../../../static/img/Install-Windows-11/image_6.png)
 
-6. Search and select the [Upgrade Enabled Windows 11 Compatible Machines](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) Device group.
+6. Search and select the [Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) Device group.
    ![](../../../static/img/Install-Windows-11/image_7.png)
 
 7. Click the `Assign` button.
@@ -46,7 +46,7 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 8. This screen will appear.
    ![](../../../static/img/Install-Windows-11/image_9.png)
 
-9. Select the [Install Windows 11](<../policies/Install Windows 11.md>) policy and click the `Assign` button.
+9. Select the [Install Windows 11](/docs/4664a942-cb4f-425a-ae16-4615d2b14cae) policy and click the `Assign` button.
    ![](../../../static/img/Install-Windows-11/image_10.png)
 
 10. ![](../../../static/img/Install-Windows-11/image_11.png)

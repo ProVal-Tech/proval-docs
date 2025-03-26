@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>).
+Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](<.
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-FirefoxHomepage](<../../powershell/Set-FirefoxHomepage.md>)  
+[SWM - Software Configuration - Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)  
 
 ## User Parameters
 

@@ -12,13 +12,13 @@ unlisted: false
 
 ## Purpose
 
-This custom table holds the target computer ID, the script ID of a script you wish to queue, and any parameters you wish to pass to that script. The custom table is created by [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>). The custom table is populated by [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>) when you schedule a task on an offline machine. The custom table is read by [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>). The custom table is cleaned by [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>) after executing the script on the target computer.
+This custom table holds the target computer ID, the script ID of a script you wish to queue, and any parameters you wish to pass to that script. The custom table is created by [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721). The custom table is populated by [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721) when you schedule a task on an offline machine. The custom table is read by [CWM - Automate - Script - Run Queued Scripts](/docs/f60f4501-a2ea-43f0-87ee-99fc8ee15031). The custom table is cleaned by [CWM - Automate - Script - Run Queued Scripts](/docs/f60f4501-a2ea-43f0-87ee-99fc8ee15031) after executing the script on the target computer.
 
 ## Dependencies
 
-- [CWM - Automate - Solution - Queue Script Next Checkin](<../../solutions/Queue Script Next Checkin.md>)
-- [CWM - Automate - Script - Queue Script](<../scripts/Queue Script.md>)
-- [CWM - Automate - Script - Run Queued Scripts](<../scripts/Run Queued Scripts.md>)
+- [CWM - Automate - Solution - Queue Script Next Checkin](/docs/2910ca09-a0c7-4b44-8ea4-ef6e71304df8)
+- [CWM - Automate - Script - Queue Script](/docs/c96624e1-038a-45ca-a6d0-645a629af721)
+- [CWM - Automate - Script - Run Queued Scripts](/docs/f60f4501-a2ea-43f0-87ee-99fc8ee15031)
 
 ## Tables
 

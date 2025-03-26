@@ -22,7 +22,7 @@ It will run as an autofix with a dependent monitor.
 
 ## Dependencies
 
-[Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>)  
+[Update Orchestrator Service Status Detection](/docs/e3c5aeb1-144d-4c12-9b33-2d56d05804ce)  
 
 ## Process
 

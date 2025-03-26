@@ -16,7 +16,7 @@ Setting this Custom Field to "Yes" will exclude the machine from Threatlocker De
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
+[CW RMM - Solution - Threatlocker Deployment](/docs/c9969bad-d2da-45ec-90fe-d6be82479ebc)
 
 ## Details
 

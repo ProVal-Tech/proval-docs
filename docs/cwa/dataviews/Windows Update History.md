@@ -16,8 +16,8 @@ This document displays information about Windows Update history for agents.
 
 ## Dependencies
 
-- [pvl_windows_updates](<../../cwa/tables/pvl_windows_updates.md>)
-- [Windows Update History Audit](<../../cwa/scripts/Windows Update History Audit.md>)
+- [pvl_windows_updates](/docs/d1791eba-107c-4be0-8048-a1d716dae301)
+- [Windows Update History Audit](/docs/d0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6)
 
 ## Columns
 

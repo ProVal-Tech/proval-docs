@@ -25,8 +25,8 @@ This script audits the recovery keys for each encrypted drive on an agent and ad
 - @plugin_proval_bitlocker (Table)
 - @BitLocker Enabled (Role)
 - @BitLocker TPM Enabled (Role)
-- [BitLocker TPM Ready](<../roles/Bitlocker TPM Ready.md>)
-- [Windows - BitLocker Eligibility](<../dataviews/Windows - BitLocker Eligibility.md>)
+- [BitLocker TPM Ready](/docs/e5234598-aaa5-412c-8425-f9d1c95c00b5)
+- [Windows - BitLocker Eligibility](/docs/adcd54bb-9909-42c5-8da9-913718f2650f)
 
 ## Variables
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes the Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>), which enforces a homepage for the Microsoft Edge (Chromium) browser.
+This document describes the Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab), which enforces a homepage for the Microsoft Edge (Chromium) browser.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This document describes the Automate implementation of the agnostic script [SWM 
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>)
+[SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
 #### User Parameters
 

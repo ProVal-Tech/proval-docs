@@ -22,7 +22,7 @@ Disable BitLocker protection on one (or all) volumes.
 
 ## Dependencies
 
-- [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](<../../powershell/Unprotect-BitLockerVolume.md>)
+- [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631)
 - PowerShell v5
 
 ### User Parameters
@@ -34,7 +34,7 @@ Disable BitLocker protection on one (or all) volumes.
 
 ## Process
 
-See process information in the document for [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](<../../powershell/Unprotect-BitLockerVolume.md>).
+See process information in the document for [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631).
 
 ## Output
 

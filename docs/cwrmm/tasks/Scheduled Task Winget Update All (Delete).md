@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](<./Scheduled Task Winget Update All (Create).md>) task.
+The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task.
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ The ultimate objective of the task is to remove the scheduled tasks (Winget Upda
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
-- [CW RMM - Device Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
+- [CW RMM - Device Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808)
 
 ## Variables
 
@@ -125,7 +125,7 @@ Click the `Save` button at the top right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the task once per day against the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
+It is suggested to run the task once per day against the [Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Scheduled Task Winget Update All (Delete) Task.`
@@ -154,7 +154,7 @@ Select the `Device Groups` option in the `Targeted Resources` section.
 
 ![Device Groups](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_23.png)
 
-Search and select the [Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) device group.
+Search and select the [Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808) device group.
 
 ![Device Group Selection](../../../static/img/Scheduled-Task-Winget-Update-All-(Delete)/image_24.png)
 

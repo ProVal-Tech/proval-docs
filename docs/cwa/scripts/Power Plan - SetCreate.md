@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the Automate implementation of the agnostic script [Set-PowerPlan](<../../powershell/Set-PowerPlan.md>), which can be used to modify or create a power plan.
+This document outlines the Automate implementation of the agnostic script [Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f), which can be used to modify or create a power plan.
 
 The settings for the power plan are required to create or modify the power plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this ITGlue document. Details regarding the columns of the CSV file are explained later in this document.
 
@@ -22,7 +22,7 @@ The settings for the power plan are required to create or modify the power plan.
 
 ## Sample Run (Set Environment)
 
-Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor.
+Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor.
 
 ![Sample Run](../../../static/img/Power-Plan---SetCreate/image_1.png)
 
@@ -128,7 +128,7 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 **Note:**
 
 - In the example demonstrated above, the `ProVal High Performance` power plan will be set and enabled on all workstations of the `Development` client.
-- The [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor should be running for the automation to work.
+- The [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor should be running for the automation to work.
 
 ## PowerPlanSettingsTemplate.CSV
 
@@ -156,9 +156,9 @@ Here's a breakdown of the columns in the CSV file:
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](<./Power Plan - Audit DV.md>)
-- [EPM - Windows Configuration - Agnostic - Set-PowerPlan](<../../powershell/Set-PowerPlan.md>)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+- [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
+- [EPM - Windows Configuration - Agnostic - Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Variables
 
@@ -174,7 +174,7 @@ Here's a breakdown of the columns in the CSV file:
 | PowerPlan         | Test Power Plan                                                          | True             | Name of the power plan to modify or create.             |
 | Setting           | @\{Subgroup=@\{'Sleep' = @\{ PowerSetting = @\{ 'Sleep after' = @\{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @\{ AC = 1; DC = 100}; 'Hibernate After' = @\{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @\{ AC = 2; DC = 2 }}}}} | Partially        | Hash table of the power plan settings to set.           |
 | CSVPath           | [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv) (if the CSV file of the settings is placed at a downloadable location) OR Test_Power_Plan (if the CSV file of the settings is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory) | Partially        | Download URL of the CSV file if the file is placed at a downloadable location. OR Name of the CSV file if the file is placed in the LTShare (WebDav for the hosted partners) under the `Transfer/PowerPlan` directory. |
-| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](<../monitors/PowerPlan Automation.md>) internal monitor. |
+| Set_Environment    | 1                                                                       | For the first run | Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor. |
 
 ## Client-Level EDF
 

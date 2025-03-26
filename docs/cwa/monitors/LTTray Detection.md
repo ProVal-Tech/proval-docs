@@ -31,7 +31,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[LTTray Port Mapping with System Registry](<../scripts/LTTray Port Mapping with System Registry.md>)
+[LTTray Port Mapping with System Registry](/docs/cc09c16e-c62b-4001-9226-1b92097a6507)
 
 ## Target
 

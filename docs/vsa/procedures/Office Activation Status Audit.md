@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Get activation information on any licensed Office products on the endpoint and save to [SWM - Software Configuration - Custom Field - xPVAL Office Activation Status](<../custom-fields/xPVAL Office Activation Status.md>).
+Get activation information on any licensed Office products on the endpoint and save to [SWM - Software Configuration - Custom Field - xPVAL Office Activation Status](/docs/d4590b95-d3e7-44ab-9aa2-44ef21beafd5).
 
 ## Example Agent Procedure Log
 
@@ -40,8 +40,8 @@ Get activation information on any licensed Office products on the endpoint and s
 
 ## Dependencies
 
-- [https://proval.itglue.com/DOC-5078775-12015988](<../custom-fields/xPVAL Office Activation Status.md>)
-- [SWM - Software Configuration - Agnostic - Get-OfficeActivationStatus](<../../powershell/Get-OfficeActivationStatus.md>)
+- [https://proval.itglue.com/DOC-5078775-12015988](/docs/d4590b95-d3e7-44ab-9aa2-44ef21beafd5)
+- [SWM - Software Configuration - Agnostic - Get-OfficeActivationStatus](/docs/4a0afa88-7a52-4d25-99b7-551a2c6e9bd0)
 
 ## Process
 

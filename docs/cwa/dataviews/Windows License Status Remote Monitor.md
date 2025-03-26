@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This document displays the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](<../monitors/Windows License Status.md>).
+This document displays the status of the Windows License fetched by the remote monitor [EPM - Windows Configuration - Monitor - Windows License Status](/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e).
 
 ## Dependencies
 
-[EPM - Windows Configuration - Monitor - Windows License Status](<../monitors/Windows License Status.md>).
+[EPM - Windows Configuration - Monitor - Windows License Status](/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e).
 
 ## Columns
 

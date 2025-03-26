@@ -25,7 +25,7 @@ Although this script can be run to determine minimum requirements or environment
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Set-PathVariable](<../../powershell/Set-PathVariable.md>)
+- [EPM - Windows Configuration - Agnostic - Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
 
 ## Variables
 
@@ -36,8 +36,8 @@ Although this script can be run to determine minimum requirements or environment
 | Violations                 | A running list of anything found with a violation of true.                                                                                                                                                                   |
 | AdminApprovalModeViolations | Will be true if the local security policy object 'MACHINE/Software/Microsoft/Windows/CurrentVersion/Policies/System/ConsentPromptBehaviorAdmin' is set to either 1 or 3. These settings mean that an admin account, when running an elevated command, will be prompted for credentials to continue. |
 | LUA Enabled                | Will be 1 or 0; 1 for enabled, 0 for disabled, reflecting the UAC setting on the computer. A failure here may not always prevent a script from running but could if the command requires elevation, and the Admin Approval Mode is set to a high enough level. Depending on the script, we may want to verify this, so it is added and will reflect a failure if UAC is turned on. |
-| Scope                      | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](<./Set-Environmental Path Variable.md>) script and is used to add any required path variables to the target. Note: this script will not fail if the required path variable is not present; it will add it if it's not present. |
-| Path                       | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](<./Set-Environmental Path Variable.md>) script and is used to add any required path variables to the target. It is equal to the global parameter RequiredPathVar, which can be set in this global parameter or in any parent script calling this script. |
+| Scope                      | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](/docs/838d8f61-038e-4569-aaf1-c72a1072670a) script and is used to add any required path variables to the target. Note: this script will not fail if the required path variable is not present; it will add it if it's not present. |
+| Path                       | This is a required variable for the [EPM - Windows Configuration - Script - Set-Environmental Path Variable](/docs/838d8f61-038e-4569-aaf1-c72a1072670a) script and is used to add any required path variables to the target. It is equal to the global parameter RequiredPathVar, which can be set in this global parameter or in any parent script calling this script. |
 | SatisfiesPsVersion        | Will be true if the target machine's PowerShell version is equal to or greater than the global parameter PsMinimumVersion, which can be set globally on this script or set in a parent script if a different value is desired. |
 
 #### Global Parameters

@@ -20,42 +20,42 @@ The solution monitors the domain controller for excessive logon failures within 
 
 | Content | Level | Function |
 |---------|-------|----------|
-| [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>) | Endpoint | Used to determine whether a Domain Controller is an infrastructure master or not. |
+| [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Endpoint | Used to determine whether a Domain Controller is an infrastructure master or not. |
 
 ### Groups
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Domain Controllers](<../cwrmm/groups/Domain Controllers.md>) | Dynamic Group | Stores the Domain Controllers in a single place. |
-| [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>) | Dynamic Group | Stores all the available infrastructure masters in a single place. |
+| [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Dynamic Group | Stores the Domain Controllers in a single place. |
+| [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Dynamic Group | Stores all the available infrastructure masters in a single place. |
 
 ### Tasks/Scripts
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>) | Task | Validate whether a computer is an infrastructure master or not and update the custom field [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>). |
+| [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validate whether a computer is an infrastructure master or not and update the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
 
 ### Monitor
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Possible Brute Force Attack](<../cwrmm/monitors/Possible Brute Force Attack.md>) | Monitor | Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. |
+| [Possible Brute Force Attack](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41) | Monitor | Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. |
 
 ## Implementation
 
 1. Create the required Custom Fields (if not exist) using the documentation below:
-   - [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>)
+   - [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
 
 2. Create the following Dynamic Groups (if not exist):
-   - [Domain Controllers](<../cwrmm/groups/Domain Controllers.md>)
-   - [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>)
+   - [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+   - [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)
 
 3. Create and schedule the following Task(s) (if not exist):
-   - [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>)
+   - [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
 
 ### Monitor
 
 4. Create and enable the following monitor:
-   - [Possible Brute Force Attack](<../cwrmm/monitors/Possible Brute Force Attack.md>)
+   - [Possible Brute Force Attack](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41)
 
 

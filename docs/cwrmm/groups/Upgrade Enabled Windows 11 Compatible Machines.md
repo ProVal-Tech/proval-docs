@@ -16,11 +16,11 @@ This document houses the computers where the Windows 11 Installer (Beta) task ha
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Enable Windows 11 Installation](<../custom-fields/Company - Enable Windows 11 Installation.md>)
-- [CW RMM - Custom Field - Site - Exclude Windows 11 Installation](<../custom-fields/Site - Exclude Windows 11 Installation.md>)
-- [CW RMM - Custom Field - Endpoint - Exclude Windows 11 Installation](<../custom-fields/Endpoint - Exclude Windows 11 Installation.md>)
-- [CW RMM - Custom Field - Endpoint - Windows 11 Compatible](<../custom-fields/Endpoint - Windows 11 Compatible.md>)
-- [CW RMM - Task - Windows 11 Compatibility Validation](<../tasks/Windows 11 Compatibility Validation.md>)
+- [CW RMM - Custom Field - Company - Enable Windows 11 Installation](/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8)
+- [CW RMM - Custom Field - Site - Exclude Windows 11 Installation](/docs/bb84e821-38c5-4b39-ad4c-894eef47bf79)
+- [CW RMM - Custom Field - Endpoint - Exclude Windows 11 Installation](/docs/c3f83443-09cb-43ef-9c21-501d7f13314e)
+- [CW RMM - Custom Field - Endpoint - Windows 11 Compatible](/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf)
+- [CW RMM - Task - Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c)
 
 ## Group Creation
 

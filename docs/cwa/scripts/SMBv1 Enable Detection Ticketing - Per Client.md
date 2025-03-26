@@ -20,7 +20,7 @@ This client script creates a ticket for each client with the computer count wher
 
 ## Dependencies
 
-[CWA Script - SMBv1 Status Audit/Autofix [DV,Param]](<./SMBv1 Status AuditAutofix DV,Param.md>)
+[CWA Script - SMBv1 Status Audit/Autofix [DV,Param]](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b)
 
 ## Variables
 

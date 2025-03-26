@@ -16,7 +16,7 @@ This table stores the DNS data for a target machine. This data includes the comp
 
 ## Dependencies
 
-- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](<../scripts/Create and Populate plugin_proval_dns_extradata.md>)
+- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](/docs/4bc996bc-1b11-4819-a7c9-73e7c61aa9db)
 
 ## Tables
 

@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 This document outlines how to set the Microsoft Update Channel for a Click2Run Office installation on an endpoint using an agnostic solution:  
-[SWM - Software Configuration - Agnostic - Set-OfficeUpdateSchedule](<../../powershell/Set-OfficeUpdateSchedule.md>)
+[SWM - Software Configuration - Agnostic - Set-OfficeUpdateSchedule](/docs/ad02ff16-29f5-484c-9fef-638dfa0342d0)
 
 ## Example Agent Procedure Log
 

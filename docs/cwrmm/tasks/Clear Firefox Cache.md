@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines how to clear the Gecko engine (Firefox) browser caches using the ConnectWise RMM implementation of [Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>).
+This document outlines how to clear the Gecko engine (Firefox) browser caches using the ConnectWise RMM implementation of [Clear-GeckoCache](/docs/4a400b6b-d468-417f-914b-8094e645fdb4).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document outlines how to clear the Gecko engine (Firefox) browser caches us
 
 ## Dependencies
 
-[SWM - Software Configuration - Script - Clear-GeckoCache](<../../powershell/Clear-GeckoCache.md>)
+[SWM - Software Configuration - Script - Clear-GeckoCache](/docs/4a400b6b-d468-417f-914b-8094e645fdb4)
 
 ## Task Creation
 

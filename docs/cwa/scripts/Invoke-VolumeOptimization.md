@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-VolumeOptimization](<../../powershell/Invoke-VolumeOptimization.md>).
+This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-VolumeOptimization](/docs/931ab6f1-d49a-430b-bc21-4d2fc8b228d0).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This will run a PowerShell equivalent of defrag on the target machine.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Invoke-VolumeOptimization](<../../powershell/Invoke-VolumeOptimization.md>)
+- [EPM - Windows Configuration - Agnostic - Invoke-VolumeOptimization](/docs/931ab6f1-d49a-430b-bc21-4d2fc8b228d0)
 
 ## Variables
 

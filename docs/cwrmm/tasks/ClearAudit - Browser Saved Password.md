@@ -327,7 +327,7 @@ In the script Exit, leave it empty and save.
 ## Deployment
 
 It is suggested to run the Task daily or weekly on the groups "Clear Browser Saved Password endpoints" and "Browser Saved Password Audit Group."  
-Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](<../groups/Browser Saved Password.md>) on how to create it.
+Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47) on how to create it.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Clear/Audit - Browser Saved Password` Task.

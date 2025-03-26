@@ -18,8 +18,8 @@ The purpose of this solution is to monitor end users to determine how long they 
 
 | Content                                                                                         | Type         | Function                                      |
 |-------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------|
-| [CWM - Automate - Script - IdleMon Report [Globals]](<../cwa/scripts/IdleMon Report Globals.md>) | Script       | Collects the data/samples from the machine    |
-| [CWM - Automate - Custom Table - pvl_report_idlemon](<../cwa/tables/pvl_report_idlemon.md>) | Custom Table | Stores the samples collected by the script     |
+| [CWM - Automate - Script - IdleMon Report [Globals]](/docs/c6ea69e0-823f-4090-9894-2faf81ba8c46) | Script       | Collects the data/samples from the machine    |
+| [CWM - Automate - Custom Table - pvl_report_idlemon](/docs/44909a53-c1ca-4d2d-994a-40fba5a139fa) | Custom Table | Stores the samples collected by the script     |
 | [CWM - Automate - Dataview - IdleMon Report](https://proval.itglue.com/DOC-5078775-12869574) | Dataview     | Displays the data gathered by the script       |
 
 ## Implementation

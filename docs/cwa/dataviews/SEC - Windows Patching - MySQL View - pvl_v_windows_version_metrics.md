@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The purpose of this view is to serve the [SEC - Windows Patching - Dataview - Windows 10 - 11 Version Metrics](<./Windows 10 - 11 Version Metrics.md>) (Clientid = 0) and [SEC - Windows Patching - Dataview - Windows 10 - 11 Version Metrics - Client Filter](<./Windows 10 - 11 Version Metrics - Client Filter.md>) (Clientid > 0) dataviews.
+The purpose of this view is to serve the [SEC - Windows Patching - Dataview - Windows 10 - 11 Version Metrics](/docs/998bc4c8-47ea-410d-8ef0-36491abbd96a) (Clientid = 0) and [SEC - Windows Patching - Dataview - Windows 10 - 11 Version Metrics - Client Filter](/docs/978846f2-c493-4e6b-8084-b8caf1e2a60e) (Clientid > 0) dataviews.
 
 Unsupported for MySQL version < 5.7
 
 ## Dependencies
 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
-- [CWM - Automate - Script - MySQL - View - Create (pvl_v_windows_version_metrics)*](<../scripts/MySQL - View - Create (pvl_v_windows_version_metrics).md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
+- [CWM - Automate - Script - MySQL - View - Create (pvl_v_windows_version_metrics)*](/docs/baeb3063-b28b-4eae-975d-e55af60c0466)
 
 | **Column**                        | **Type**          | **Explanation**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

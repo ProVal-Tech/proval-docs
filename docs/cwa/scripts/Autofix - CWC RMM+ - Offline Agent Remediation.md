@@ -25,10 +25,10 @@ This script is an autofix to a monitor and should not be manually run.
 ## Dependencies
 
 - Agent Install - Generate Location URL
-- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
-- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
-- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
-- [CWM - Automate - Monitor - No Checkin for More Than 30 Days*](<../monitors/No Checkin for More Than 30 Days.md>)
+- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
+- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
+- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](/docs/567b8db7-a87a-45c1-a81a-b3178090fb52)
+- [CWM - Automate - Monitor - No Checkin for More Than 30 Days*](/docs/4bc06cc4-3b78-452a-b602-063e57221234)
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
 - RMM+ Plugin Configured in CW Control portal
 - System Properties (See below)

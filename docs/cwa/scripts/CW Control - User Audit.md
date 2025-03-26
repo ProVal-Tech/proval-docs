@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script runs on the Control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>).
+This script runs on the Control server and audits ConnectWise Control user information to a custom table [plugin_proval_controluseraudit](/docs/ea80aef5-944c-4407-a632-2df65e15b4df).
 
 It displays information in the dataview **@CW Control - User Audit**.  
 **Time Saved by Automation:** 15 Minutes
@@ -24,7 +24,7 @@ It displays information in the dataview **@CW Control - User Audit**.
 ## Dependencies
 
 - Must be run on Control Server
-- [plugin_proval_controluseraudit](<../tables/plugin_proval_controluseraudit.md>)
+- [plugin_proval_controluseraudit](/docs/ea80aef5-944c-4407-a632-2df65e15b4df)
 
 ## Variables
 

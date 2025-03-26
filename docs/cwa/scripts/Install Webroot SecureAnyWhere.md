@@ -14,18 +14,18 @@ unlisted: false
 
 This script is a modification of the Webroot Plugin included installation script, Install Webroot SecureAnywhere. The script has been modified to provide a plugin-exclusive method of automatic deployment through the ConnectWise Automate Application. The script is split into two parts, separated by a condition. If the software is installed, the script will set the active threats registry value on the target. If the software is not installed, then the script will install the software.
 
-At a minimum, this script can be run on a single agent; however, please review the solution document [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) for any necessary prerequisites.
+At a minimum, this script can be run on a single agent; however, please review the solution document [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d) for any necessary prerequisites.
 
 ***Common Usage***
 
-This script is typically set as an autofix on a monitor looking for the installed software. Please reference the solution document for more information: [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>).
+This script is typically set as an autofix on a monitor looking for the installed software. Please reference the solution document for more information: [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d).
 
 ## Dependencies
 
 - ConnectWise Automate Webroot Plugin is required.
 - Client and Location EDFs are required.
 
-Reference [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) for more information on your specific needs.
+Reference [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d) for more information on your specific needs.
 
 ## Variables
 

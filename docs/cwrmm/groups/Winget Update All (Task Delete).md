@@ -16,11 +16,11 @@ This document identifies Windows 10 and 11 computers with the presence of Winget
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](<../custom-fields/Company - WingetUpdateAll_Task_Create.md>)
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](<../custom-fields/Company - WingetUpdateAll_Task_Delete.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](<../custom-fields/EndPoint - WingetUpdateAll_Task_Exclude.md>)
-- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](<../custom-fields/Site - WingetUpdateAll_Task_Exclude.md>)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](<../custom-fields/EndPoint - WingetUpdateAll_Task_Result.md>)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Create](/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1)
+- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Exclude](/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9)
+- [CW RMM - Custom Field - Site - WingetUpdateAll_Task_Exclude](/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb)
+- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
 
 ## Group Creation
 

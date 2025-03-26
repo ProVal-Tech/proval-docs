@@ -18,23 +18,23 @@ The solution is intended to monitor and display the duration machines were onlin
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [Automate Agent Connection Audit](<../cwa/scripts/Automate Agent Connection Audit.md>) | Script | Creates custom tables and keeps the [pvl_automate_connection_audit_daily](<../cwa/tables/pvl_automate_connection_audit_daily.md>) table updated. |
-| [Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>) | Internal Monitor | Keeps the [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) table updated. |
-| [Automate Agent Connection Audit](<../cwa/dataviews/Automate Agent Connection Audit.md>) | Dataview | Displays the information. |
+| [Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929) | Script | Creates custom tables and keeps the [pvl_automate_connection_audit_daily](/docs/da608773-1677-4247-a161-ea62b3b3ba23) table updated. |
+| [Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d) | Internal Monitor | Keeps the [pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909) table updated. |
+| [Automate Agent Connection Audit](/docs/1c5558e1-70a3-4b38-bdc0-e3eb8cf29d43) | Dataview | Displays the information. |
 
 ### Other Content
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) | Custom Table | Records the computer’s last contact time whenever its state changes. |
-| [pvl_automate_connection_audit_daily](<../cwa/tables/pvl_automate_connection_audit_daily.md>) | Custom Table | Records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](<../cwa/tables/pvl_automate_connection_audit.md>) custom table. |
+| [pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909) | Custom Table | Records the computer’s last contact time whenever its state changes. |
+| [pvl_automate_connection_audit_daily](/docs/da608773-1677-4247-a161-ea62b3b3ba23) | Custom Table | Records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909) custom table. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Automate Agent Connection Audit](<../cwa/scripts/Automate Agent Connection Audit.md>)
-   - [Internal Monitor - Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>)
-   - [Dataview - Automate Agent Connection Audit](<../cwa/dataviews/Automate Agent Connection Audit.md>)
+   - [Script - Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929)
+   - [Internal Monitor - Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d)
+   - [Dataview - Automate Agent Connection Audit](/docs/1c5558e1-70a3-4b38-bdc0-e3eb8cf29d43)
 
 2. Reload the system cache:
    ![Reload Cache](../../static/img/Automate-Agent-Connection-Audit/image_2.png)
@@ -46,7 +46,7 @@ The solution is intended to monitor and display the duration machines were onlin
 
 5. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Update Table - pvl_automate_connection_audit](<../cwa/monitors/Update Table - pvl_automate_connection_audit.md>)
+     - [Internal Monitor - Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d)
        - Right-click and Run Now to start the monitor.
 
 ## FAQ

@@ -21,7 +21,7 @@ It has a couple of restrictions:
 
 ## Dependencies
 
-[Email Creation - Computer - LTRunByUser](<../scripts/Email Creation - Computer LTRunByUser.md>)
+[Email Creation - Computer - LTRunByUser](/docs/aff3413b-574f-4399-8f4b-85e04d388c5a)
 
 ## Target
 

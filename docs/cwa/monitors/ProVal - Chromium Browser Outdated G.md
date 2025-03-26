@@ -23,7 +23,7 @@ It will then select computers that are online and have been idle for 1800 second
 
 ## Dependencies
 
-Suggested Autofix - [CWM - Automate - Script - Chromium Browser Update](<../scripts/Chromium Browser Update.md>)
+Suggested Autofix - [CWM - Automate - Script - Chromium Browser Update](/docs/a17a9537-62ae-43f8-8212-dbac0a328ca0)
 
 ## Target
 

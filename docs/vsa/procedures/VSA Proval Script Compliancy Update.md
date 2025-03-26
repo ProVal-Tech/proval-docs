@@ -47,7 +47,7 @@ This document checks compatibility requirements for ProVal content on Mac and PC
 
 ## Dependencies
 
-All content listed in [EPM - Data Collection - Solution - VSA ProVal Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>)
+All content listed in [EPM - Data Collection - Solution - VSA ProVal Script Compliancy](/docs/9ec556eb-e7b8-410d-8f03-0dcb0a8b549b)
 
 ## Process
 
@@ -71,7 +71,7 @@ All content listed in [EPM - Data Collection - Solution - VSA ProVal Script Comp
 
 ## Output
 
-- [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](<../custom-fields/xPVAL ProVal Compatible Endpoint.md>)
+- [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](/docs/2606c04a-819a-476f-b91d-c45a92613212)
 - Agent Procedure Log
 - PSResult
 - CMDResults

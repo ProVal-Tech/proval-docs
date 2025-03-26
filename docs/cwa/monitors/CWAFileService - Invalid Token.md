@@ -42,4 +42,4 @@ The %computername% (Automate) Server is currently reporting %result% occurrences
 ## Implementation
 
 Follow the article below:  
-- [Import - Remote Monitors - CWAFileService - Invalid Token](<./Import- CWAFileService - Invalid Token.md>)
+- [Import - Remote Monitors - CWAFileService - Invalid Token](/docs/c7d4a134-33d0-4598-add3-f41bd187331d)

@@ -21,7 +21,7 @@ This task installs Threatlocker on both Windows and Mac operating systems.
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](<../../solutions/Threatlocker Deployment.md>)
+[CW RMM - Solution - Threatlocker Deployment](/docs/c9969bad-d2da-45ec-90fe-d6be82479ebc)
 
 ## Task Creation
 
@@ -208,7 +208,7 @@ Limit this step to `Mac OS` only.
 
 ## Implementation
 
-This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](<../groups/Deploy Threatlocker.md>)`** group for auto deployment. The script can also be run manually if required.
+This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocker](/docs/8645a522-a9e3-4755-a498-32c2904e51c6)`** group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Threatlocker Deployment.  

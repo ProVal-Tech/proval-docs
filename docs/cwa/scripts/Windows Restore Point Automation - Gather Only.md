@@ -22,8 +22,8 @@ This script helps to gather all restore point information of a workstation and s
 
 ## Dependencies
 
-- [Restore Point Audit - Workstations](<../dataviews/Restore Point Audit - Workstations.md>)
-- [plugin_proval_restore_points](<../tables/plugin_proval_restore_points.md>)
+- [Restore Point Audit - Workstations](/docs/29f1dee2-174e-47e1-ae3a-f233fe55386c)
+- [plugin_proval_restore_points](/docs/ebb1d05a-bb80-45e7-a4be-9cc73b8f308d)
 
 ## Process
 

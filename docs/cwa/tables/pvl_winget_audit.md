@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores the audit data fetched by the [Winget App Audit](<../scripts/Winget App Audit.md>) script.
+This document stores the audit data fetched by the [Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91) script.
 
 ## Dependencies
 
-[SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)
+[SWM - Software Update - Script - Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91)
 
 ## Tables
 
@@ -32,7 +32,7 @@ This document stores the audit data fetched by the [Winget App Audit](<../script
 | Source               | varchar   | Source of the application (Winget/Msstore).                                                    |
 | UptoDate            | tinytext  | Is the application up to date? (0/1)                                                            |
 | Level                | varchar   | Installation level of the application (System/User).                                            |
-| AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) script's document for detailed instructions on enabling Auto Update. |
+| AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) script's document for detailed instructions on enabling Auto Update. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
 
 

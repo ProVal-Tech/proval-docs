@@ -18,9 +18,9 @@ Unsupported for MySQL version < 5.7
 
 ## Dependencies
 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
-- [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](<../dataviews/Windows 10 Version Metrics + Filters + Client Filters.md>)
-- [Create View plugin_proval_v_windows_10_version_metrics*](<../scripts/Create View plugin_proval_v_windows_10_version_metrics.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
+- [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda)
+- [Create View plugin_proval_v_windows_10_version_metrics*](/docs/ac098d84-7d28-4b69-933f-74ab861d2b89)
 
 ## Tables
 

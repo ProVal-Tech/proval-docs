@@ -16,9 +16,9 @@ This solution aims to establish a centralized local admin user for each client o
 
 ## Update Notice: 06-November-2024
 
-A new system property and EDF have been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) script from the `Prosync` plugin.
+A new system property and EDF have been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script from the `Prosync` plugin.
 
-Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](<./Windows Local Admin Process.md>) solution.
+Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.
 
 ![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
 
@@ -26,20 +26,20 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 
 | Content                                                                 | Type            | Function                                                        |
 |-------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------|
-| [Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>) | Internal Monitor | Detects machines with missing or outdated credentials.          |
-| [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) | Script          | Create/Update the user.                                        |
+| [Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15) | Internal Monitor | Detects machines with missing or outdated credentials.          |
+| [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) | Script          | Create/Update the user.                                        |
 | △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update    | Alert Template   | Execute the script against the machines detected by the internal monitor. |
-| [Windows - Admin Account Password Rotation Notification](<../cwa/scripts/Windows - Admin Account Password Rotation Notification.md>) | Client Script    | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update'. |
+| [Windows - Admin Account Password Rotation Notification](/docs/1adeca30-5b12-4218-98c2-ff2806eae27e) | Client Script    | This script sets the Ticket Creation or email sent for the password update made by the script 'Windows - Admin Account - Create/Update'. |
 
 ## Implementation
 
 1. Import/Update the following content from the ProSync Plugin:
-   - [Script - Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>)
-   - [Internal Monitor - Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>)
+   - [Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c)
+   - [Internal Monitor - Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15)
      - If this monitor shows as needing an update, please delete the monitor from the system and re-import it.
    - Alert Template - `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
-2. Run/debug the script [Windows - Admin Account - Create/Update](<../cwa/scripts/Windows - Admin Account - CreateUpdate.md>) against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1`.
+2. Run/debug the script [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1`.
 
    ![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
 
@@ -55,14 +55,14 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Windows Local Admin Account Process](<../cwa/monitors/Windows Local Admin Account Process.md>)
+     - [Internal Monitor - Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15)
        - `Alert Template: △ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
        - Right-click and select Run Now to start the monitor.
 
 ### Optional
 
 1. This step should only be attempted if requested by the consultant:
-   - Import the script [Windows - Admin Account Password Rotation Notification](<../cwa/scripts/Windows - Admin Account Password Rotation Notification.md>).
+   - Import the script [Windows - Admin Account Password Rotation Notification](/docs/1adeca30-5b12-4218-98c2-ff2806eae27e).
      - If the client requested the notification during a password change, then change the value of the system property 'Default_Local_Admin_Password_Change_Notification_Client' to `1`. If the client needs the email for notification, then set the email address in the property 'Default_Local_Admin_Password_Change_Notification_Email'.
    - If this information is not provided clearly, reach out to the consultant for further clarification.
 

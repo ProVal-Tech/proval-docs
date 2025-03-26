@@ -20,7 +20,7 @@ This script obtains the current agent PowerShell version. The script is supporte
 
 ## Dependencies
 
-[PowerShell Version Audit](<../dataviews/PowerShell Version Audit.md>)
+[PowerShell Version Audit](/docs/388b4b61-34b7-4d40-b4de-507032df83d7)
 
 ## Variables
 

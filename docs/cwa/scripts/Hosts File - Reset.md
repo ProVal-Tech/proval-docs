@@ -21,7 +21,7 @@ This script simply renames the current host file to include OLD in the name and 
 ## Dependencies
 
 This script depends on the following items:
-- [Update EDF with Existing Host File Entries](<./Hosts File - Audit.md>)
+- [Update EDF with Existing Host File Entries](/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195)
 - Host File Contents (Extra Data Field)
 
 ## Process

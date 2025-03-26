@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task is used to change the service login account for a target service. This is an RMM version of [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>). Please review the process mentioned in [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>) on how to use USER or SYSTEM mode in the script.
+This task is used to change the service login account for a target service. This is an RMM version of [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-37f8-4da2-b0ed-fdc347a98dfc). Please review the process mentioned in [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-37f8-4da2-b0ed-fdc347a98dfc) on how to use USER or SYSTEM mode in the script.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ Sets the Print Spooler service to run as 'User1'. Grants 'User1' the Logon as a 
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Set-ServiceLogin](<../../powershell/Set-ServiceLogin.md>)
+[EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-37f8-4da2-b0ed-fdc347a98dfc)
 
 ## User Parameters
 

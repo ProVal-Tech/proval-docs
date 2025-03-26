@@ -18,8 +18,8 @@ This dataview is an easy way to audit which versions of TLS are enabled on the e
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](<../monitors/TLS Version Check - Client.md>)
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](<../monitors/TLS Version Check - Server.md>)
+- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](/docs/b0639ecd-38cd-4afd-a764-bcce13fd8ac7)
+- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](/docs/0a19eb90-ba18-4097-ab12-a76efa8e4b83)
 
 ## Columns
 

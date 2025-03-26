@@ -18,16 +18,16 @@ Set the standard permissions for the stock scripts in ConnectWise Automate.
 
 | Content                                                                                   | Type        | Function                                                                                               |
 |-------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| [Script Permission Alignment [Beta]](<../cwa/scripts/Script Permission Alignment Beta.md>)    | Script      | Set the permissions defined in the custom table to the Built-In scripts in ConnectWise Automate.      |
-| [Script Permission Alignment [Beta]](<../cwa/dataviews/Script Permission Alignment Beta.md>)    | Dataview    | Displays the user classes that will be assigned to the stock scripts after running the script.        |
-| [pvl_scripts_permissions](<../cwa/tables/pvl_scripts_permissions.md>)                   | Custom Table| Stores the GUID and the set of user class(es) for Built-In scripts.                                   |
+| [Script Permission Alignment [Beta]](/docs/46412261-f40b-456f-92db-500d166c41ca)    | Script      | Set the permissions defined in the custom table to the Built-In scripts in ConnectWise Automate.      |
+| [Script Permission Alignment [Beta]](/docs/c7532677-9914-419a-b6cc-da381393c68c)    | Dataview    | Displays the user classes that will be assigned to the stock scripts after running the script.        |
+| [pvl_scripts_permissions](/docs/22dabcfc-b55c-4eae-81df-96c01446c3b7)                   | Custom Table| Stores the GUID and the set of user class(es) for Built-In scripts.                                   |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Script Permission Alignment [Beta]](<../cwa/scripts/Script Permission Alignment Beta.md>)
-   - [Dataview - Script Permission Alignment [Beta]](<../cwa/dataviews/Script Permission Alignment Beta.md>)
-   - [Custom Table - pvl_scripts_permissions](<../cwa/tables/pvl_scripts_permissions.md>)
+   - [Script - Script Permission Alignment [Beta]](/docs/46412261-f40b-456f-92db-500d166c41ca)
+   - [Dataview - Script Permission Alignment [Beta]](/docs/c7532677-9914-419a-b6cc-da381393c68c)
+   - [Custom Table - pvl_scripts_permissions](/docs/22dabcfc-b55c-4eae-81df-96c01446c3b7)
 
 2. Reload the system cache:
    ![Reload Cache](../../static/img/Script-Permission-Standardization-Beta/image_1.png)
@@ -39,7 +39,7 @@ Set the standard permissions for the stock scripts in ConnectWise Automate.
 4. Set the Tier 1 and Tier 2 user classes in the system properties. The consultant should provide this information. Check the [script's](https://proval.itglue.com/5078775/docs/16760857) document for more information on the system properties.  
    ![Set User Classes](../../static/img/Script-Permission-Standardization-Beta/image_4.png)
 
-5. It is suggested to ask the partner to review the [Script Permission Alignment [Beta]](<../cwa/dataviews/Script Permission Alignment Beta.md>) before scheduling the script.
+5. It is suggested to ask the partner to review the [Script Permission Alignment [Beta]](/docs/c7532677-9914-419a-b6cc-da381393c68c) before scheduling the script.
 
 6. Schedule the script to run `Daily` after getting the green light from the partner or consultant.  
    ![Schedule Script](../../static/img/Script-Permission-Standardization-Beta/image_5.png)
@@ -47,7 +47,7 @@ Set the standard permissions for the stock scripts in ConnectWise Automate.
 ## FAQ
 
 **Q:** Can we use the solution to set permissions for any script?  
-**A:** The solution allows setting permissions only for the scripts listed in the [Script Permission Alignment [Beta]](<../cwa/dataviews/Script Permission Alignment Beta.md>) dataview, and these permissions cannot be customized. However, the user classes Tier 1 and Tier 2 can be defined in the system properties.
+**A:** The solution allows setting permissions only for the scripts listed in the [Script Permission Alignment [Beta]](/docs/c7532677-9914-419a-b6cc-da381393c68c) dataview, and these permissions cannot be customized. However, the user classes Tier 1 and Tier 2 can be defined in the system properties.
 
 
 

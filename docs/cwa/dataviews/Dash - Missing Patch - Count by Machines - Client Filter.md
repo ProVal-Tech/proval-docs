@@ -19,8 +19,8 @@ This Dataview is the RMM-specific display of the client-level breakdown of machi
 
 ## Dependencies
 
-- [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../views/Plugin_ProVal_V_Patch_Count_Status.md>)  
-- [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](<../scripts/MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status.md>)  
+- [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](/docs/c1fad1cd-7320-472e-b20e-3d8fa620f0db)  
+- [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0)  
 
 ## Columns
 

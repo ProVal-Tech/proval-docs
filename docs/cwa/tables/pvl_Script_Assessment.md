@@ -16,7 +16,7 @@ This document holds a detailed analysis of script failures over the past 30 days
 
 ## Dependencies
 
-[CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](<../scripts/Script Failure Analysis - 30 Day Retention.md>)
+[CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0)
 
 ## Tables
 

@@ -16,9 +16,9 @@ This Dataview displays the path and size of the OST and PST files for users on a
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](<../monitors/Execute Script - Microsoft Outlook - OSTPST - Audit.md>)
-- [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](<../tables/pvl_outlook_pst_ost_audit.md>)
+- [EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](/docs/d801eb05-05a3-4271-aa8c-a8ea4941f4eb)
+- [EPM - Data Collection - Custom Table - pvl_outlook_pst_ost_audit](/docs/bea56cbb-3761-452a-9493-08a88bc6dbab)
 
 ## Columns
 

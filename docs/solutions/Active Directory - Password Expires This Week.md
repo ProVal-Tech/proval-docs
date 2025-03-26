@@ -16,17 +16,17 @@ This document alerts domain users if their domain password is set to expire with
 
 ## Associated Content
 
-| Content                                                                                                                                                                      | Type             | Function                                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx)                                                                                           | Internal Monitor | This Custom RAWSQL monitor detects the users whose passwords are going to expire within a week.                                                                                                                                                                                                                                                                   |
-| [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx) | Autofix script   | The script covers the alerting section of the [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set.                                                                                                                                                                                                                     |
-| △ Custom - Password Expiration Notification                                                                                                                                  | Alert Template   | The alert template is responsible for executing the [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx) script for each detection of the [Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx) monitor set. |
+| Content                                                                                                                                                                      | Type             | Function                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)                                                                                                 | Internal Monitor | This Custom RAWSQL monitor detects the users whose passwords are going to expire within a week.                                                                                                                                                                                                          |
+| [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432x) | Autofix script   | The script covers the alerting section of the [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set.                                                                                                                                                                  |
+| △ Custom - Password Expiration Notification                                                                                                                                  | Alert Template   | The alert template is responsible for executing the [Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432) script for each detection of the [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Internal Monitor - Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx)
-   - [Script - Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](..//cwa//scripts//Active Directory - Alerting - Password Expires This Week Global,Autofix.mdx)
+   - [Internal Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2bx)
+   - [Script - Active Directory - Alerting - Password Expires This Week [Global, Autofix]*](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)
    - Alert Template - △ Custom - Password Expiration Notification
 
 2. Reload the system cache:
@@ -34,7 +34,7 @@ This document alerts domain users if their domain password is set to expire with
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Password Expires This Week [G]](../cwa/monitors/Password Expires This Week G.mdx)
+     - [Internal Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)
        - Alert Template: `△ Custom - Password Expiration Notification`
        - Right-click and select "Run Now" to start the monitor.
 

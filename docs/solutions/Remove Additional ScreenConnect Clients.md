@@ -18,26 +18,26 @@ The objective of this solution is to remove any additional and unwanted ScreenCo
 
 | Content                                                                                             | Type            | Function                                                             |
 |-----------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------|
-| [Script - Remove - All But My - ScreenConnect Client Installations](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>) | Script          | Remove additional ScreenConnect installations from the machines.     |
-| [Internal Monitor - Remove Additional ScreenConnect Clients](<../cwa/monitors/Remove Additional ScreenConnect Clients.md>) | Internal Monitor | Detects the computers with additional ScreenConnect clients where Auto-Removal is enabled. |
+| [Script - Remove - All But My - ScreenConnect Client Installations](/docs/50779f68-4329-4d15-b069-c50fcba00614) | Script          | Remove additional ScreenConnect installations from the machines.     |
+| [Internal Monitor - Remove Additional ScreenConnect Clients](/docs/7803bfd7-52e0-482d-805a-29aca6cadf04) | Internal Monitor | Detects the computers with additional ScreenConnect clients where Auto-Removal is enabled. |
 | △ Custom - Remove Additional ScreenConnect Clients                                                   | Alert Template   | Executes the script against the computers detected by the internal monitor. |
 
 ## Implementation
 
 1. **Import the following content from the `ProSync` plugin:**
-   - Script: [Script - Remove - All But My - ScreenConnect Client Installations](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>)
-   - Internal Monitor: [Internal Monitor - Remove Additional ScreenConnect Clients](<../cwa/monitors/Remove Additional ScreenConnect Clients.md>)
+   - Script: [Script - Remove - All But My - ScreenConnect Client Installations](/docs/50779f68-4329-4d15-b069-c50fcba00614)
+   - Internal Monitor: [Internal Monitor - Remove Additional ScreenConnect Clients](/docs/7803bfd7-52e0-482d-805a-29aca6cadf04)
    - Alert Template: △ Custom - Remove Additional ScreenConnect Clients
 
 2. **Reload the system cache.**  
    ![Reload Cache](../../static/img/Remove-Additional-ScreenConnect-Clients/image_1.png)
 
-3. **Configure the Extra Data Fields as explained in the [script's](<../cwa/scripts/Remove - All But My - ScreenConnect Client Installations.md>) document.**  
+3. **Configure the Extra Data Fields as explained in the [script's](/docs/50779f68-4329-4d15-b069-c50fcba00614) document.**  
    - Auto removal for a client can be enabled by flagging the Client-Level EDF `Remove Additional SC Clients`.
    - A location and computer can be excluded from the Auto-Removal by marking the location-level and computer-level EDF `Exclude - Additional SC Removal`, respectively.
 
 4. **Configure the solution as follows:**
-   - [Internal Monitor - Remove Additional ScreenConnect Clients](<../cwa/monitors/Remove Additional ScreenConnect Clients.md>)  
+   - [Internal Monitor - Remove Additional ScreenConnect Clients](/docs/7803bfd7-52e0-482d-805a-29aca6cadf04)  
      - Configure with the alert template: `△ Custom - Remove Additional ScreenConnect Clients`
      - Right-click and Run Now to start the monitor.
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../views/Plugin_ProVal_V_Patch_Count_Status.md>) view.
+This script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](/docs/c1fad1cd-7320-472e-b20e-3d8fa620f0db) view.
 
 ## Sample Run
 

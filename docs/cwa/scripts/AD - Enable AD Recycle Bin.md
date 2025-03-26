@@ -23,7 +23,7 @@ This script enables the AD Recycle Bin. [Microsoft TechNet Article](https://tech
 
 ## Dependencies
 
-[AD Recycle Bin State Check](<../monitors/AD Recycle Bin State Check.md>)
+[AD Recycle Bin State Check](/docs/5041d497-ae6c-4209-a338-60f1da396106)
 
 ## Process
 

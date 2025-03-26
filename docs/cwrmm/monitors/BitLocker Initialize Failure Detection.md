@@ -16,7 +16,7 @@ This monitor creates a ticket if the BitLocker initialization fails to enable Bi
 
 ## Dependencies
 
-[CW RMM Script - BitLocker Initialize C Volume](<../tasks/CW RMM Script - BitLocker Initialize C Volume.md>)
+[CW RMM Script - BitLocker Initialize C Volume](/docs/d920b865-7887-41b6-9fcd-b4802832d2a9)
 
 ## Target
 

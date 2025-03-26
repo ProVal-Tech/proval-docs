@@ -22,7 +22,7 @@ This script runs PowerShell to fetch the size (in MB) of every user folder found
 
 ## Process
 
-- Creates a custom table [plugin_proval_userfoldersizes](<../tables/plugin_proval_userfoldersizes.md>) in the Labtech Database if it doesn't already exist.
+- Creates a custom table [plugin_proval_userfoldersizes](/docs/e47be58e-d72d-4396-aa0c-edef63f056e8) in the Labtech Database if it doesn't already exist.
 - Runs the PowerShell script to fetch the folder size of every user profile.
 - Inserts the values into the above table.
 

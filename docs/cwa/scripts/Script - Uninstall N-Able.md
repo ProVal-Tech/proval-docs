@@ -20,7 +20,7 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 ## Dependencies
 
-[Uninstall-N-Able](<../../powershell/Uninstall-N-Able.md>)
+[Uninstall-N-Able](/docs/a6048dd1-3c62-4607-86db-d74826c89109)
 
 ## Variables
 

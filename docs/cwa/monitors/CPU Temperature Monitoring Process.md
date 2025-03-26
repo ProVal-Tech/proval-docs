@@ -16,7 +16,7 @@ The remote monitor is responsible for CPU temperature monitoring on physical Win
 
 The remote monitor verifies if the current temperature readings from the sensors exceed the permissible temperature for more than two consecutive executions of the monitor set. If this condition is met, it triggers a failure.
 
-The monitor set is established by the [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>) script, and its configuration is dependent on the system properties and the EDFs, as detailed in the [script's](<../scripts/CPU Temperature Monitor - Create.md>) documentation.
+The monitor set is established by the [EPM - Sensors - Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script, and its configuration is dependent on the system properties and the EDFs, as detailed in the [script's](/docs/7519f655-224b-4c95-b716-773f59cb7314) documentation.
 
 ## Details
 
@@ -28,9 +28,9 @@ The monitor set is established by the [EPM - Sensors - Script - CPU Temperature 
 
 ## Dependencies
 
-- [EPM - Sensors - Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>)
-- [EPM - Sensors - Internal Monitor - Execute Script - CPU Temperature Monitor - Create](<../scripts/CPU Temperature Monitor - Create.md>)
-- [EPM - Sensors - Script - CPU Temperature Monitor - Manage](<../scripts/CPU Temperature Monitor - Manage.md>)
+- [EPM - Sensors - Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)
+- [EPM - Sensors - Internal Monitor - Execute Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)
+- [EPM - Sensors - Script - CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750)
 
 ## Ticketing
 

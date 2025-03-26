@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script operates similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket with the computer's details, it will create a ticket without including them. Additionally, no actions are defined in the script for the SUCCESS status of the monitors.
+This script operates similarly to the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket with the computer's details, it will create a ticket without including them. Additionally, no actions are defined in the script for the SUCCESS status of the monitors.
 
 ## Sample Run
 

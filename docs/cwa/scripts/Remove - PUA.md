@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-A CWA implementation of the agnostic script [Remove-PUA](<../../powershell/Remove-PUA.md>). Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview.
+A CWA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview.
 
 ## File Hash
 
@@ -30,7 +30,7 @@ A CWA implementation of the agnostic script [Remove-PUA](<../../powershell/Remov
 
 ## Sample Run
 
-To fetch the list of installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview:  
+To fetch the list of installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview:  
 ![Sample Run 1](../../../static/img/Remove---PUA/image_1.png)
 
 To fetch the list of installed bloatware and email it to the user running the script:  
@@ -50,14 +50,14 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-PUA](<../../powershell/Remove-PUA.md>)  
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+[SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)  
+[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## User Parameters
 
 | Name          | Example                                          | Accepted Values                                                                                     | Required   | Description                                                                                                                                                                            |
 |---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ListBloatware | 1                                                | - 1- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview. `2`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview and send the list to the user running the script. |
+| ListBloatware | 1                                                | - 1- 2                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview. `2`: Fetch installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview and send the list to the user running the script. |
 | Remove        | Microsoft.BingNews, Microsoft.BingWeather, Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall                                                                                                               |
 | Remove All    | 1                                                |                                                                                                     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions                                                                                   |
 | Category      | XboxFeaturesApps                                | - MsftBloatApps - ThirdPartyBloatApps - WindowsStoreApps - XboxFeaturesApps - NonAppxApps | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware                                                        |

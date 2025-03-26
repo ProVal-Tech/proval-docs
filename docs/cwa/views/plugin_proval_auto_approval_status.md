@@ -12,13 +12,13 @@ unlisted: false
 
 ## Purpose
 
-This view presents auto-approve category information about approval policies. It is used to create the [Auto Approval Policies](<../dataviews/auto-approval-policies.md>) dataview.
+This view presents auto-approve category information about approval policies. It is used to create the [Auto Approval Policies](/docs/1b296878-9915-4c2b-9d2e-f9ee09059cc9) dataview.
 
 **Note:** This view cannot be created for clients with MySQL version 5.6 since it contains multiple SELECTs within the FROM section.
 
 ## Dependencies
 
-The script, [MySQL - View - Create (plugin_proval_auto_approval_status)](<../scripts/mysql-view-create-plugin_proval_auto_approval_status.md>), can be used to import this dataview.
+The script, [MySQL - View - Create (plugin_proval_auto_approval_status)](/docs/2f451b19-e8af-4a24-9032-17d65ba2b40d), can be used to import this dataview.
 
 ## Views
 
@@ -30,7 +30,7 @@ The script, [MySQL - View - Create (plugin_proval_auto_approval_status)](<../scr
 | ID                                               | int      | The ID of the Approval Policy                                                                              |
 | Approval Policy                                  | varchar  | Name of the Approval Policy.                                                                                |
 | Examined Characteristics - Category Status       | varchar  | Whether category filtering is enabled for the audited characteristic.                                      |
-| Examined Characteristics - Categories            | longtext | List of the categories that are either approved, denied, or ignored. For detailed information on this, refer to the [Patch Approval Categories](<../dataviews/patch-approval-categories.md>) dataview documentation. |
+| Examined Characteristics - Categories            | longtext | List of the categories that are either approved, denied, or ignored. For detailed information on this, refer to the [Patch Approval Categories](/docs/43b35510-f264-429f-a06e-e0ea7822cfc1) dataview documentation. |
 | Examined Characteristics - Severity Status       | varchar  | Whether severity filtering is enabled for the audited characteristic.                                      |
 | Unspecified Severity                             | varchar  | Whether the patches with unspecified severity are approved, ignored, or denied.                           |
 | Low Severity                                    | varchar  | Whether the patches with low severity are approved, ignored, or denied.                                   |

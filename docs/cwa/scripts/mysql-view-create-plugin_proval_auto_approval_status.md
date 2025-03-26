@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script creates the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
+This script creates the [plugin_proval_auto_approval_status](/docs/ae8ce64f-816a-4e84-8052-f8e131dde389) view.
 
 ## Sample Run
 
@@ -20,4 +20,4 @@ This script creates the [plugin_proval_auto_approval_status](<../views/plugin_pr
 
 ## Output
 
-The output is the [plugin_proval_auto_approval_status](<../views/plugin_proval_auto_approval_status.md>) view.
+The output is the [plugin_proval_auto_approval_status](/docs/ae8ce64f-816a-4e84-8052-f8e131dde389) view.

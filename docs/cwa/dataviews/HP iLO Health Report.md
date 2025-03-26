@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-Displays iLO health information from the table [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>).
+Displays iLO health information from the table [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6).
 
 ## Dependencies
 
-- [plugin_proval_ilo_health_report](<../tables/plugin_proval_ilo_health_report.md>)
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
-- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
+- [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6)
+- [EPM - Data Collection - Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
+- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
 
 ## Columns
 

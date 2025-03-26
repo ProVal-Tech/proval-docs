@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe` present on the machine and stores the data into a [custom table](<../tables/pvl_php_audit.md>).
+The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe` present on the machine and stores the data into a [custom table](/docs/10712956-11f1-47f6-ab0a-d063d2ca67d1).
 
 ## Sample Run
 
-**First Run**: Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](<../tables/pvl_php_audit.md>) and the EDF being used by the script.  
+**First Run**: Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](/docs/10712956-11f1-47f6-ab0a-d063d2ca67d1) and the EDF being used by the script.  
 ![First Run](../../../static/img/Locate-PHP.exe/image_1.png)
 
 **Regular Execution**:  
@@ -39,7 +39,7 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 | Name            | Example | Required                | Description                                                                                          |
 |-----------------|---------|-------------------------|------------------------------------------------------------------------------------------------------|
-| Set_Environment  | 1       | For the First Run       | Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](<../tables/pvl_php_audit.md>) and the EDF being used by the script. |
+| Set_Environment  | 1       | For the First Run       | Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](/docs/10712956-11f1-47f6-ab0a-d063d2ca67d1) and the EDF being used by the script. |
 
 ## Client Level EDF
 

@@ -16,8 +16,8 @@ This dataview will show the encryption status of endpoints in Automate, specific
 
 ## Dependencies
 
-- [BitLocker Enabled - System Drive](<../roles/Bitlocker Enabled - System Drive.md>) (Role)
-- [OS X FileVault](<../roles/OS X FileVault.md>) (Role)
+- [BitLocker Enabled - System Drive](/docs/65d800d5-0bb9-4101-a6e9-289ab737557e) (Role)
+- [OS X FileVault](/docs/1e483bae-ad35-437e-a963-fb7fab9f27e1) (Role)
 
 ## Columns
 

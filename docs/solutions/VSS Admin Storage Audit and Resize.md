@@ -25,7 +25,7 @@ This solution audits VSSAdmin shadow copies and, if needed, will resize them.
 
 ## Implementation
 
-The [VSSAdmin List Storage Audit](<../cwa/scripts/Vssadmin List Storage Audit.md>) script must be run to start the process. After that, the [VSS Resize](<../cwa/scripts/VSS Resize.md>) script can be used to resize the VSSAdmin storage.
+The [VSSAdmin List Storage Audit](/docs/0de90f98-d7ae-4a79-a851-30829a596846) script must be run to start the process. After that, the [VSS Resize](/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d) script can be used to resize the VSSAdmin storage.
 
 ## FAQ
 

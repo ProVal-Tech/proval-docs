@@ -14,9 +14,9 @@ unlisted: false
 This group includes the endpoint where the MSRT needed to be uninstalled and disabled.
 
 ## Dependencies
-[MSRT Custom fields](<../custom-fields/MSRT Custom Fields.md>)
+[MSRT Custom fields](/docs/c6a36d73-01c8-4ef9-ace2-e9d6a4bc2363)
 
-[Task - Malicious Software Removal Tool Disable/Uninstall](<../tasks/Malicious Software Removal Tool Disable-Uninstall.md>)
+[Task - Malicious Software Removal Tool Disable/Uninstall](/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e)
 
 ## Group Details
 

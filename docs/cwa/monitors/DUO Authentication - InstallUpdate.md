@@ -31,7 +31,7 @@ This monitor detects online Windows agents where outdated DUO Authentication for
 
 ## Dependencies
 
-[Script - DUO Install/Upgrade - Latest Version](<../scripts/DUO InstallUpgrade - Latest Version.md>)
+[Script - DUO Install/Upgrade - Latest Version](/docs/99a31695-f399-4982-989b-5fbc3aada8c6)
 
 ## Target
 

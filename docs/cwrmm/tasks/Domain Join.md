@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to join a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. It covers the CW RMM implementation of the agnostic script [Join-Domain](<../../powershell/Join-Domain.md>).
+This document describes how to join a non-domain joined computer to a domain. The machine will be forcefully rebooted if required. It covers the CW RMM implementation of the agnostic script [Join-Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document describes how to join a non-domain joined computer to a domain. Th
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Script - Join-Domain](<../../powershell/Join-Domain.md>)
+- [RSM - Active Directory - Agnostic - Script - Join-Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
 
 ## User Parameters
 

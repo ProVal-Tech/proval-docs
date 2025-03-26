@@ -16,7 +16,7 @@ This dataview shows the Windows 10 machines with build and patch policy status, 
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Columns
 

@@ -17,7 +17,7 @@ This internal monitor detects all computers whose associated client has the Enab
 ## Dependencies
 
 - [SWM - Software Installation - Script - △ Install Webroot SecureAnywhere](https://proval.itglue.com/DOC-5078775-11623253)
-- [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
+- [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d)
 
 ## Target
 

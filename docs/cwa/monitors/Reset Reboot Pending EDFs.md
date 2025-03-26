@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This internal monitor is designed to detect agents whose reboot was initiated by the script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It identifies these agents and triggers the script [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](<../scripts/Reset Reboot Pending EDFs.md>) to clear the EDFs so they can be re-triggered at a later time.
+This internal monitor is designed to detect agents whose reboot was initiated by the script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644). It identifies these agents and triggers the script [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c) to clear the EDFs so they can be re-triggered at a later time.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](<../scripts/Reset Reboot Pending EDFs.md>)
+- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
 
 ## Target
 

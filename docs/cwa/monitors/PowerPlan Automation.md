@@ -16,7 +16,7 @@ The internal monitor will detect machines where the Power Plan set in the Client
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Power Plan - Set/Create](<../scripts/Power Plan - SetCreate.md>)
+[EPM - Windows Configuration - Script - Power Plan - Set/Create](/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448)
 
 ## Target
 

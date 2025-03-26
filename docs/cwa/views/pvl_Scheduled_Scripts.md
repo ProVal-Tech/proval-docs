@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The view is designed to store and execute the SQL query utilized by the [CWM - Automate - Dataview - Improper Script Schedules](<../dataviews/Improper Script Schedules.md>). It contains the script schedules where a technician scheduled it, is a recurring schedule, and is running at a frequency greater than 2 hours. It will also detect any schedule running at an agent at a frequency of more than once per day.
+The view is designed to store and execute the SQL query utilized by the [CWM - Automate - Dataview - Improper Script Schedules](/docs/1eb426fd-ee56-4e81-9d3e-116e8c4698b4). It contains the script schedules where a technician scheduled it, is a recurring schedule, and is running at a frequency greater than 2 hours. It will also detect any schedule running at an agent at a frequency of more than once per day.
 
 ## Dependencies
 
-[CWM - Automate - Dataview - Improper Script Schedules](<../dataviews/Improper Script Schedules.md>)
+[CWM - Automate - Dataview - Improper Script Schedules](/docs/1eb426fd-ee56-4e81-9d3e-116e8c4698b4)
 
 ## Tables
 

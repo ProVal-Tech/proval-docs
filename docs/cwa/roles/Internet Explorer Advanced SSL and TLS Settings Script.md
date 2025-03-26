@@ -16,7 +16,7 @@ This document contains the SSL and TLS information set by the dependent script f
 
 ## Dependencies
 
-[Internet Explorer Advanced SSL and TLS Settings [Param, DV]](<../scripts/Internet Explorer Advanced SSL and TLS Settings.md>)
+[Internet Explorer Advanced SSL and TLS Settings [Param, DV]](/docs/1adb82ca-d3cb-4319-9319-5d22b569ed6f)
 
 ## Columns
 

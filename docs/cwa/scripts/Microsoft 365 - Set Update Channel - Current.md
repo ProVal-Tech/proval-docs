@@ -14,7 +14,7 @@ unlisted: false
 
 This script will make changes in the registry and allow Microsoft 365 products to update on a regular basis as per current channel updates.
 
-It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](<./Microsoft 365 - Click-to-Run - Get Details.md>) at the end of a successful run to update the information in the [Dataview - C2R Office Version Audit](<../dataviews/C2R Office Version Audit.md>).
+It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) at the end of a successful run to update the information in the [Dataview - C2R Office Version Audit](/docs/d48f4966-b281-4aaa-8bf0-5059221b7ff3).
 
 **Time Saved by Automation:** 5 Minutes
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](<../tasks/Detect SMB1.md>).
+This custom field is used to store and display the results of the task [CW RMM - Task - Detect SMB1](/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21).
 
 ## Dependencies
 
-[CW RMM - Task - Detect SMB1](<../tasks/Detect SMB1.md>)
+[CW RMM - Task - Detect SMB1](/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21)
 
 ## Details
 

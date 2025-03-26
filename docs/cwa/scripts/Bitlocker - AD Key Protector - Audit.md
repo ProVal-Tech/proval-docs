@@ -63,7 +63,7 @@ For additional information about the underlying logic, please see [SEC - Encrypt
 
 ## Output
 
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)
 - Dataview
 
 ## GPO to Automatically Save BitLocker Recovery Key to AD

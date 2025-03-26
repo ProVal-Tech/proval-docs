@@ -33,7 +33,7 @@ The remote monitor attempts to disable the Autofilling feature for addresses in 
 **Suggested Alert Style:** Continuous  
 **Suggested Alert Template:** Default - Do Nothing  
 
-Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Chromium Browsers Address Lockdown - Status](<../dataviews/Chromium Browsers Address Autofill Lockdown - Status.md>) dataview.
+Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Chromium Browsers Address Lockdown - Status](/docs/1909b914-8e27-4487-ae47-0d28ad848a5b) dataview.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
@@ -46,7 +46,7 @@ Using any alert templates is not recommended unless the partner specifically des
 **Search:** `Lockdown Browsers Address Autofill`  
 **Search:** `Lockdown Browsers Autofill`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Dataview:** [EPM - Dataview - Chromium Browsers Address Lockdown - Status](<../dataviews/Chromium Browsers Address Autofill Lockdown - Status.md>)
+**Dataview:** [EPM - Dataview - Chromium Browsers Address Lockdown - Status](/docs/1909b914-8e27-4487-ae47-0d28ad848a5b)
 
 ## Target
 

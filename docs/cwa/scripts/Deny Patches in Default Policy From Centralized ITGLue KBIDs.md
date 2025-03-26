@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script will gather the KBIDs from the [New Patch Deny Process](<../../unsorted/New Patch Deny Process.md>) and deny the patches listed.
+The script will gather the KBIDs from the [New Patch Deny Process](/docs/32fbb820-c16e-464b-b673-5deca6a62a6d) and deny the patches listed.
 
 **Time saved by automation:** 20 minutes
 

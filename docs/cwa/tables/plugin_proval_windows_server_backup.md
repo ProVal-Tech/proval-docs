@@ -16,7 +16,7 @@ The table is built to store the complete Windows Server Backup data.
 
 ## Dependencies
 
-[Windows Server Backup Audit](<../dataviews/Windows Server Backup Audit.md>)
+[Windows Server Backup Audit](/docs/070f3e8b-1365-4347-9fcb-43aad1d09d41)
 
 ## Tables
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document describes a temporary table created by the [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>) script, which is used to track machines transitioning from one client to another.
+This document describes a temporary table created by the [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](/docs/1a561427-06ea-4c8c-b752-d1ad312007ab) script, which is used to track machines transitioning from one client to another.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](<../scripts/Agents Migration Monitoring - Client-Level.md>)
+- [CWM - Automate - Script - Agents Migration Monitoring - Client-Level](/docs/1a561427-06ea-4c8c-b752-d1ad312007ab)
 
 ## Tables
 

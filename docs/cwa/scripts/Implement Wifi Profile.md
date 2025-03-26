@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This script is an Automate implementation of the [Add-WifiProfile](<../../powershell/Add-WifiProfile.md>) and [Remove-WifiProfile](<../../powershell/Remove-WifiProfile.md>) agnostic scripts.
+This script is an Automate implementation of the [Add-WifiProfile](/docs/6e1f420f-5a5a-49e1-a7cc-943e258d2ae5) and [Remove-WifiProfile](/docs/d9f38912-7b4a-4da1-a880-210aae4fbb02) agnostic scripts.
 
 The script can both remove and add Wi-Fi profiles on the targeted machines. To initiate removal, the names of the desired Wi-Fi profiles should be supplied to the script parameter named `Profiles_To_Remove`. Conversely, for adding profiles, the respective profile names should be provided to the `Profiles_To_Add` parameter.
 
 It is important to note that the addition of profiles can also be managed through the Client/Location level EDFs, as further elucidated in this document.
 
-**Note:** Run the [Get Wifi Profile](<./Get Wifi Profile.md>) script with the `Set_Environment` set to `1` to create the system properties and EDFs used by this script.
+**Note:** Run the [Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596) script with the `Set_Environment` set to `1` to create the system properties and EDFs used by this script.
 
 ![Image](../../../static/img/Implement-Wifi-Profile/image_1.png)
 
@@ -43,7 +43,7 @@ It is important to note that the addition of profiles can also be managed throug
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](<./Get Wifi Profile.md>)
+[EPM - Windows Configuration - Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
 
 ## Variables
 
@@ -95,7 +95,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 | Name                | Example                                          | Required | Description                                                                                                                                                                                                                                               |
 |---------------------|--------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](<../monitors/Add - Wifi Profiles.md>) monitor set detections.                              |
+| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](/docs/51eaeefd-b300-4f9a-be28-fa01e6e83b5e) monitor set detections.                              |
 
 ![Image](../../../static/img/Implement-Wifi-Profile/image_14.png)
 

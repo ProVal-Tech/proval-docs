@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The purpose of the custom table is to store the WiFi Profiles information for each computer fetched by the [Get Wifi Profile](<../scripts/Get Wifi Profile.md>) script.
+The purpose of the custom table is to store the WiFi Profiles information for each computer fetched by the [Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596) script.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](<../scripts/Get Wifi Profile.md>)
+[EPM - Windows Configuration - Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
 
 ## Tables
 

@@ -16,7 +16,7 @@ This document describes how to identify Windows 10 computers that are compatible
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](<../custom-fields/Endpoint - Windows 11 Compatible.md>)
+[CW RMM - Custom Field - Endpoint - Windows 11 Compatible](/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf)
 
 ## Group Creation 
 

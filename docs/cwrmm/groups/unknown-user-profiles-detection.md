@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The group manages the supported computers for companies that have enabled the [Unknown User Profiles Detection](../custom-fields/unknown-user-profiles-detection.md) custom field.
+The group manages the supported computers for companies that have enabled the [Unknown User Profiles Detection](/docs/a7ba6a52-18ae-4c71-8545-5a41999fa41b) custom field.
 
 ## Dependencies
 
-[Unknown User Profiles Detection](../custom-fields/unknown-user-profiles-detection.md)
+[Unknown User Profiles Detection](/docs/a7ba6a52-18ae-4c71-8545-5a41999fa41b)
 
 ## Details
 

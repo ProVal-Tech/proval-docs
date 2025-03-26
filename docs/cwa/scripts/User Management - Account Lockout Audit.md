@@ -20,9 +20,9 @@ This script audits locked accounts and stores the information in a table.
 
 ## Dependencies
 
-- [Account LockOut Audit](<../../cwa/dataviews/Account LockOut Audit.md>)
-- [AD Account Lockout Detection](<../../cwa/monitors/Account Lockout Detection.md>)
-- [plugin_proval_account_lock](<../../cwa/tables/plugin_proval_account_lock.md>)
+- [Account LockOut Audit](/docs/40cf6430-7ec1-496c-8e6e-b92a499120e6)
+- [AD Account Lockout Detection](/docs/52fca59d-2cc0-46b2-ae1e-13d46bd36615)
+- [plugin_proval_account_lock](/docs/11fad349-3b51-4bfd-8f45-d07db1827543)
 
 ## Variables
 

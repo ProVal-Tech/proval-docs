@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This Dataview is similar to the [Script Failure Assessment](<./Script Failure Assessment.md>), with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](<./Script Failure Assessment.md>) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
+This Dataview is similar to the [Script Failure Assessment](/docs/0a1ca2b8-1d0e-4873-83a0-a6d1d79c1683), with the key difference being that it provides a detailed analysis of script failures over the past 30 days. In contrast, the [Script Failure Assessment](/docs/0a1ca2b8-1d0e-4873-83a0-a6d1d79c1683) relies on the retention period specified in the `Scripts` property on the dashboard. This Dataview was created to address the limitation of the `Scripts` property retention, which is often set to just `7` days, making it challenging to assess script failures over a month.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](<../scripts/Script Failure Analysis - 30 Day Retention.md>)
-- [CWM - Automate - Custom Table - pvl_Script_Assessment](<../tables/pvl_Script_Assessment.md>)
+- [CWM - Automate - Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0)
+- [CWM - Automate - Custom Table - pvl_Script_Assessment](/docs/31e58aae-ce62-4440-8319-b22abec4e842)
 
 ## Columns
 

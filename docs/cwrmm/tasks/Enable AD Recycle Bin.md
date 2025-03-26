@@ -16,8 +16,8 @@ This document describes how to enable the Active Directory (AD) Recycle Bin on A
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - AD Recycle Bin](<../custom-fields/AD Recycle Bin.md>)
-- [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](<../groups/Infrastructure Master - Without Recycle Bin.md>)
+- [CW RMM - Custom Fields - AD Recycle Bin](/docs/e4801a6f-1945-4aee-bd39-1601a185b9eb)
+- [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b)
 
 ## Create Script
 
@@ -359,7 +359,7 @@ The final task should look like the screenshot below.
 
 ## Script Deployment
 
-This task must be scheduled on the [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](<../groups/Infrastructure Master - Without Recycle Bin.md>) group for auto deployment. The script can also be run manually if required.
+This task must be scheduled on the [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Enable AD Recycle Bin.  

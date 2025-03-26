@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script collects information about the printer drivers on the target system and stores it in the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table.
+This script collects information about the printer drivers on the target system and stores it in the [plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) table.
 
 **Intended Target:** Windows Computers
 
@@ -22,8 +22,8 @@ This script collects information about the printer drivers on the target system 
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>)
-- [CWM - Automate - Solution - Get - Printer Driver Inventory](<../../solutions/Get - Printer Driver Inventory.md>)
+- [CWM - Automate - Custom Table - plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae)
+- [CWM - Automate - Solution - Get - Printer Driver Inventory](/docs/485b0ab5-8ce4-400c-9ba6-dff7967988aa)
 - [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../dataviews/Printer Driver Inventory Script.md>)
 
 ## Variables
@@ -34,11 +34,11 @@ This script collects information about the printer drivers on the target system 
 
 ## Process
 
-1. Create the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table if it does not already exist.
+1. Create the [plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) table if it does not already exist.
 2. Run the PowerShell script to retrieve information about installed printer drivers.
 3. Verify the outcome.
 4. Parse the outcome to ensure SQL compatibility.
-5. Insert the data into the [plugin_proval_Printer_driver](<../tables/plugin_proval_Printer_driver.md>) table.
+5. Insert the data into the [plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) table.
 6. Log any failures.
 
 ## Output

@@ -16,8 +16,8 @@ This report is designed to present a complete list of all certificates found on 
 
 ## Dependencies
 
-- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
-- [EPM - Network - Custom Table - plugin_proval_certs](<../tables/plugin_proval_certs.md>)
+- [EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
+- [EPM - Network - Custom Table - plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552)
 
 ## Columns
 

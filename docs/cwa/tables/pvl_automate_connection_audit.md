@@ -16,8 +16,8 @@ The custom table records the computer’s last contact time whenever its state c
 
 ## Dependencies
 
-- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
-- [CWM - Automate - Script - Automate Agent Connection Audit](<../scripts/Automate Agent Connection Audit.md>)
+- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d)
+- [CWM - Automate - Script - Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929)
 
 ## Tables
 

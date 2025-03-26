@@ -16,9 +16,9 @@ This document alerts administrators if a computer or multiple computers have the
 
 ## Dependencies
 
-- [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
-- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit (Script)](<../dataviews/Webroot KeyCode AuditScript.md>)
-- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval (DV)](<../scripts/Webroot Keycode Verification.md>)
+- [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d)
+- [SEC - Endpoint Protection - Dataview - Webroot KeyCode Audit (Script)](/docs/5ed671db-6295-42ed-9f44-cd0b4203c4e4)
+- [EPM - Data Collection - Script - Webroot Hashed Key Retrieval (DV)](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060)
 
 ## Target
 

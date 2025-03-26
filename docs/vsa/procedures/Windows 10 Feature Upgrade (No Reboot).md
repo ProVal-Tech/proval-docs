@@ -14,7 +14,7 @@ unlisted: false
 
 This document initiates a feature upgrade on the target endpoint without forcing a reboot. 
 
-**WARNING:** All data modified in `%WinDir%` will be lost between the upgrade completion and reboot. This procedure is also initiated by [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](<../policies/Windows 10 Feature Upgrade Reattempt on Fail.md>).
+**WARNING:** All data modified in `%WinDir%` will be lost between the upgrade completion and reboot. This procedure is also initiated by [SEC - Windows Patching - Policy - Windows 10 Feature Upgrade Reattempt on Fail](/docs/a347ce1a-5ef9-4e07-a42e-629d7d49c620).
 
 ## Sample Run
 
@@ -41,12 +41,12 @@ This document initiates a feature upgrade on the target endpoint without forcing
 
 ## Process
 
-This process starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>) on the machine with no reboot. It sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) to [REBOOT PENDING].
+This process starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055) on the machine with no reboot. It sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070) to [REBOOT PENDING].
 
 ## Output
 
 - AP Log  
-- [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
+- [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070)  
 - PSOutput Document
 
 

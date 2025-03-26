@@ -18,7 +18,7 @@ This monitor checks for missing vendor software on Dell machines. It will flag a
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+[CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Target
 

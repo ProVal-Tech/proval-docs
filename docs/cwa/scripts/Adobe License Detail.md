@@ -20,7 +20,7 @@ This script collects the Adobe license key and stores it in the custom EDF "Adob
 
 ## Dependencies
 
-[Adobe License Detection](<./Adobe License Detection.md>)
+[Adobe License Detection](/docs/cf0c479b-fce8-4af8-9ae2-24fd7fc2a7ed)
 
 ## Variables
 

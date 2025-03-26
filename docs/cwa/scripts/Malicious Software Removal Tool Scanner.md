@@ -39,9 +39,9 @@ After the `SetEnvironment` is set, please refer to the sample execution.
 
 | Name                     | Level   | Section | Type  | Editable | Description                                                                                                                                               |
 |--------------------------|---------|-------|-------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MSRT Scanner Enable      | Client  |Software | Checkbox | Yes      | This EDF check will enable the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>).           |
-| MSRT Scanner Exclude     | Location| Exclusions | Checkbox  | Yes      | This EDF check will exclude the location from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
-| MSRT Scanner Exclude     | Computer| Exclusions | Checkbox  | Yes      | This EDF check will exclude the computer from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](<../monitors/MSRT Scanner Execute.md>). |
+| MSRT Scanner Enable      | Client  |Software | Checkbox | Yes      | This EDF check will enable the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673).           |
+| MSRT Scanner Exclude     | Location| Exclusions | Checkbox  | Yes      | This EDF check will exclude the location from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673). |
+| MSRT Scanner Exclude     | Computer| Exclusions | Checkbox  | Yes      | This EDF check will exclude the computer from the MSRT scan automation via the [Internal Monitor - MSRT Scanner Execute](/docs/52caa288-ae6c-4047-a2d1-6d34b806d673). |
 | MSRT Scanner Result      | Computer | Software | Text  | No       | This EDF stores the scan result, conclusive output, and date when the scanning occurred in the format example: "Infection Not Found -- M/DD/YYYY hh:mm:ss". |
 
 #### User Parameters

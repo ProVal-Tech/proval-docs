@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Set-PathVariable](<../../powershell/Set-PathVariable.md>).
+Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope. CW RMM implementation of the agnostic script [Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b).
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Set-PathVariable](<../../powershell/Set-PathVariable.md>)
+[EPM - Windows Configuration - Agnostic - Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
 
 ## User Parameters
 

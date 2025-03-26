@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This document provides detailed information about the custom fields associated with the [Lock Stolen System](<../tasks/Lock-Stolen-System.md>), including their types, levels, default values, and descriptions.
+This document provides detailed information about the custom fields associated with the [Lock Stolen System](/docs/e9b29e34-d570-481f-99db-1a428763c5da), including their types, levels, default values, and descriptions.
 
 ## Details
 

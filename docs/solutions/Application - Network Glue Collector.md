@@ -18,17 +18,17 @@ This solution contains the Network Glue deployment and uninstallation articles.
 
 | Content                                                                                                  | Type          | Function                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Network Glue Collector - Install](<../cwa/scripts/Network Glue Collector - Install.md>)       | Script        | Installs the Network Glue Collector and applies a client-specific token. An Activation Key is necessary and can be found on the Clients' IT Glue page under the networks section.                                             |
-| [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>) | Monitor       | This monitor performs the auto-deployment of the Network Glue Collector. It depends on the EDFs mentioned in the document for the deployment.                                                                               |
-| [Script - Remove Application - Network Glue Collector](<../cwa/scripts/Remove Application - Network Glue Collector.md>)  | Script        | This script is designed to perform the uninstallation of the Network Glue Collector on demand or in conjunction with the offboarding script.                                                                                 |
-| △ Custom - Execute Script - Network Glue Collector - Install                                              | Alert Template | This alert template is scheduled with the [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>) and runs the script [SWM - Software Install - Script - Network Glue Collector - Install](<../cwa/scripts/Network Glue Collector - Install.md>) on the detected endpoints for deployment. |
+| [Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)       | Script        | Installs the Network Glue Collector and applies a client-specific token. An Activation Key is necessary and can be found on the Clients' IT Glue page under the networks section.                                             |
+| [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09) | Monitor       | This monitor performs the auto-deployment of the Network Glue Collector. It depends on the EDFs mentioned in the document for the deployment.                                                                               |
+| [Script - Remove Application - Network Glue Collector](/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be)  | Script        | This script is designed to perform the uninstallation of the Network Glue Collector on demand or in conjunction with the offboarding script.                                                                                 |
+| △ Custom - Execute Script - Network Glue Collector - Install                                              | Alert Template | This alert template is scheduled with the [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09) and runs the script [SWM - Software Install - Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a) on the detected endpoints for deployment. |
 
 ## Implementation
 
 1. **Import the following content using the ProSync Plugin:**
-   - [Script - Network Glue Collector - Install](<../cwa/scripts/Network Glue Collector - Install.md>)  
-   - [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>)  
-   - [Script - Remove Application - Network Glue Collector](<../cwa/scripts/Remove Application - Network Glue Collector.md>)  
+   - [Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)  
+   - [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09)  
+   - [Script - Remove Application - Network Glue Collector](/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be)  
    - △ Custom - Execute Script - Network Glue Collector - Install  
 
 2. **Reload the system cache:**
@@ -36,7 +36,7 @@ This solution contains the Network Glue deployment and uninstallation articles.
 
 3. **Configure the solution as outlined below:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - ProVal Production - Network Glue - Deployment](<../cwa/monitors/ProVal Production - Network Glue - Deployment.md>)  
+     - [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09)  
        - Set up with the "△ Custom - Execute Script - Network Glue Collector - Install" Alert Template
        - Right-click and select "Run Now" to start the monitor.
 

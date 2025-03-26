@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This dataview was created to display a detailed list of patches that are installed or available on the local machine. The data is populated by the [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>) script.
+This dataview was created to display a detailed list of patches that are installed or available on the local machine. The data is populated by the [CWM - Automate - Script - Windows Update Report [DV]](/docs/41141ff5-ef57-4900-93d4-642b4a9d254f) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Get-WindowsUpdateReport](<../../powershell/Get-WindowsUpdateReport.md>)
-- [CWM - Automate - Solution - Windows Update Report](<../../solutions/Windows Update Report.md>)
-- [CWM - Automate - Script - Windows Update Report [DV]](<../scripts/Windows Update Report DV.md>)
-- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](<../tables/plugin_proval_windows_update_report.md>)
+- [EPM - Data Collection - Get-WindowsUpdateReport](/docs/b5940a1c-0e82-4756-86a2-b49e57d664f1)
+- [CWM - Automate - Solution - Windows Update Report](/docs/affc0b47-f0fe-43f9-95f6-0e0d1205b4d6)
+- [CWM - Automate - Script - Windows Update Report [DV]](/docs/41141ff5-ef57-4900-93d4-642b4a9d254f)
+- [CWM - Automate - Custom Table - plugin_proval_windows_update_report](/docs/845fe569-12ec-48e3-86f4-34377aba03ec)
 
 ## Columns
 

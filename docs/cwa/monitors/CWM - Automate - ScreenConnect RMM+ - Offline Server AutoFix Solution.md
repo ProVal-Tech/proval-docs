@@ -18,10 +18,10 @@ The goal of this solution is to provide accurate offline server/critical agent r
 
 | Content                                                                 | Type          | Function                                                                                                                                                                                                                                                                                       |
 |-------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>) | Script        | The script utilizes the ConnectWise Automate RMM+ plugin to reinstall the Automate agent on machines that are showing offline while the ScreenConnect agent is online. This script deprecates the CW Control RMM+ API - Offline Server AutoFix.                                             |
-| [Monitor - Offline Server](<./Offline Server.md>)                      | Monitor       | This internal monitor detects offline servers based on the last contact and last heartbeat time with the RMM.                                                                                                                                                                                |
-| **△ Custom - Autofix - Critical Machine Offline (RMM+)**               | Alert Template | This alert template is used with the [Monitor - Offline Server](<./Offline Server.md>) to run the [Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>) as an autofix. In this template, the script performs the autofix and manages ticket creation/commenting/finishing as well. |
-| **△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)** | Alert Template | This alert template is used with the [Monitor - Offline Server](<./Offline Server.md>) to run the [Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>) as an autofix. In this template, the ticket is created separately using the default create ticket functionality of Alert Template, and the script performs the autofix, along with ticket commenting and finishing based on the autofix status of failure and success respectively. |
+| [Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462) | Script        | The script utilizes the ConnectWise Automate RMM+ plugin to reinstall the Automate agent on machines that are showing offline while the ScreenConnect agent is online. This script deprecates the CW Control RMM+ API - Offline Server AutoFix.                                             |
+| [Monitor - Offline Server](/docs/f0a04369-c67b-49e1-a042-8ca3a343881f)                      | Monitor       | This internal monitor detects offline servers based on the last contact and last heartbeat time with the RMM.                                                                                                                                                                                |
+| **△ Custom - Autofix - Critical Machine Offline (RMM+)**               | Alert Template | This alert template is used with the [Monitor - Offline Server](/docs/f0a04369-c67b-49e1-a042-8ca3a343881f) to run the [Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462) as an autofix. In this template, the script performs the autofix and manages ticket creation/commenting/finishing as well. |
+| **△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)** | Alert Template | This alert template is used with the [Monitor - Offline Server](/docs/f0a04369-c67b-49e1-a042-8ca3a343881f) to run the [Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462) as an autofix. In this template, the ticket is created separately using the default create ticket functionality of Alert Template, and the script performs the autofix, along with ticket commenting and finishing based on the autofix status of failure and success respectively. |
 
 Note: For this solution to work, it is mandatory to have the RMM+ configured in the CW Control.
 
@@ -29,13 +29,13 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 | Content                                                                 | Type          | Function                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - RMM+ Plugin Configuration](<../scripts/CWM - Automate - RMM+ Plugin Configuration.md>) | Document      | This document helps with configuring the RMM+ Plugin and explains how to create sessions for machines that have not checked in for over '**X**' number of days.                                                                                                                                 |
+| [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) | Document      | This document helps with configuring the RMM+ Plugin and explains how to create sessions for machines that have not checked in for over '**X**' number of days.                                                                                                                                 |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - Import the Script [Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>)
-   - Import the monitor [Internal Monitor - Offline Server](<./Offline Server.md>)
+   - Import the Script [Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462)
+   - Import the monitor [Internal Monitor - Offline Server](/docs/f0a04369-c67b-49e1-a042-8ca3a343881f)
    - Import the Alert Template "**△ Custom - Autofix - Critical Machine Offline (RMM+)**"
    - Import the Alert Template "**△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)**"
 
@@ -44,7 +44,7 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 3. Configure the solution as outlined below:
    - Navigate to Automation -> Monitors within the CWA Control Center and set up the following:
-     - [Monitor - ProVal - Production - Agent - Offline Server](<./Offline Server.md>)
+     - [Monitor - ProVal - Production - Agent - Offline Server](/docs/f0a04369-c67b-49e1-a042-8ca3a343881f)
        - Here are two options for the alert template applicability:
          - `△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)` OR
          - `△ Custom - Autofix - Critical Machine Offline (RMM+)`

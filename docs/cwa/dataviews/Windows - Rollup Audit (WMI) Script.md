@@ -17,7 +17,7 @@ This dataview displays information about the latest Windows rollup update that h
 ## Dependencies
 
 - @plugin_proval_wmipatchesinstalled
-- [EPM - Data Collection - Script - Audit WMI Patch History](<../scripts/Audit WMI Patch History.md>)
+- [EPM - Data Collection - Script - Audit WMI Patch History](/docs/113349eb-9de0-4b42-b773-cf873f87f2f0)
 
 ## Columns
 

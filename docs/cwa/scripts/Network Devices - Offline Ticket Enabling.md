@@ -28,7 +28,7 @@ This client script aims to set the alert template "△ Custom - Ticket Creation 
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Offline Network Devices](<./Ticket Creation - Offline Network Devices.md>)  
+[CWM - Automate - Script - Ticket Creation - Offline Network Devices](/docs/1634ea10-264c-44df-abd1-ff68edc23391)  
 △ Custom - Ticket Creation - Offline Network Devices
 
 ## Variables
@@ -65,7 +65,7 @@ Device-Level EDFs:
 ## Implementation
 
 1. Import the contents  
-   - [Script - Ticket Creation - Offline Network Devices](<./Ticket Creation - Offline Network Devices.md>) 
+   - [Script - Ticket Creation - Offline Network Devices](/docs/1634ea10-264c-44df-abd1-ff68edc23391) 
    - Alert Template: "**△ Custom - Ticket Creation - Offline Network Devices**" 
    - Script - Network Devices - Offline Ticket Enabling [Param]
 
@@ -74,7 +74,7 @@ Device-Level EDFs:
 
 3. Configure the solution as follows:  
    - Navigate to Automation --> Scripts within the CWA Control Center.  
-     - Debug the [Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>) on any client with User Parameter 'Set_Environment' = 1  
+     - Debug the [Script - Network Devices - Offline Ticket Enabling](/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92) on any client with User Parameter 'Set_Environment' = 1  
      - It will create the System property required for the script.  
    - Navigate to system dashboard --> Config --> Properties  
      - Fill in the `NetworkDevice_Manufacturer` system property as per partner requirements.  
@@ -88,7 +88,7 @@ Device-Level EDFs:
      - If the partner wants to remove the offline ticketing from the device script synced earlier, put "Disable" in the system property as shown below:  
        ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_11.png)  
    - Navigate to system dashboard --> Management --> Scheduled Client Scripts  
-     - Schedule the [Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>) to run daily.  
+     - Schedule the [Script - Network Devices - Offline Ticket Enabling](/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92) to run daily.  
        ![Image](../../../static/img/Network-Devices---Offline-Ticket-Enabling/image_2.png)  
    - If the partner wants to exclude any particular device, location, or client from external sync, select the `Exclude from Offline Network Device Ticketing` EDF respectively on that device, location, or client.  
 

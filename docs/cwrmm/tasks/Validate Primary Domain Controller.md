@@ -12,9 +12,9 @@ unlisted: false
 
 ## Summary
 
-This task validates whether the endpoint is a primary domain controller. It updates the value of the [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>) group.
+This task validates whether the endpoint is a primary domain controller. It updates the value of the [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) custom field, which is then used to create the [CW RMM - Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) group.
 
-This task should be scheduled to run once per week or month against the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group.
+This task should be scheduled to run once per week or month against the [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) group.
 
 ## Sample Run
 
@@ -24,14 +24,14 @@ This task should be scheduled to run once per week or month against the [CW RMM 
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
-- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
+- [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+- [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
 
 ## Implementation
 
-Create the group [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>).
+Create the group [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68).
 
-Create the Custom Field [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>).
+Create the Custom Field [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae).
 
 ### Create Script
 

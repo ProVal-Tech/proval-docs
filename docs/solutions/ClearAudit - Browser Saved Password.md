@@ -18,17 +18,17 @@ This solution is designed to perform the clearing or auditing of saved passwords
 
 | Content                                                                 | Type           | Function                                                                                                                                                   |
 |-------------------------------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Task - Clear/Audit - Browser Saved Password](<../cwrmm/tasks/ClearAudit - Browser Saved Password.md>) | Task           | This task is designed to perform the browser saved password audit or clearance based on the custom fields selected.                                      |
-| [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) | Dynamic Groups | The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](<../cwrmm/tasks/ClearAudit - Browser Saved Password.md>) and audit the endpoints where the browser's saved passwords failed to clear. |
-| [Custom Field - Clear/Audit Browsers Saved Password](<../cwrmm/custom-fields/ClearAudit Browsers Saved Password.md>) | Custom Fields  | The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>) and in the [Task - Clear/Audit - Browser Saved Password](<../cwrmm/tasks/ClearAudit - Browser Saved Password.md>). |
-| [Monitor - Browser Saved Password Failure Detection](<../cwrmm/monitors/Browser Saved Password Failure Detection.md>) | Monitor (Optional) | This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](<../cwrmm/tasks/ClearAudit - Browser Saved Password.md>) in removing the browser-saved passwords. |
+| [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) | Task           | This task is designed to perform the browser saved password audit or clearance based on the custom fields selected.                                      |
+| [Dynamic Groups - Browser Saved Password](/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47) | Dynamic Groups | The groups below are created to deploy the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) and audit the endpoints where the browser's saved passwords failed to clear. |
+| [Custom Field - Clear/Audit Browsers Saved Password](/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce) | Custom Fields  | The custom fields described here are used in the creation of [Dynamic Groups - Browser Saved Password](/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47) and in the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e). |
+| [Monitor - Browser Saved Password Failure Detection](/docs/62efcaa3-e03b-4500-a48a-f472a82f039f) | Monitor (Optional) | This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) in removing the browser-saved passwords. |
 
 ## Implementation
 
-- Create the [Custom Field - Clear/Audit Browsers Saved Password](<../cwrmm/custom-fields/ClearAudit Browsers Saved Password.md>)
-- Create the [Dynamic Groups - Browser Saved Password](<../cwrmm/groups/Browser Saved Password.md>)
-- Create the [Task - Clear/Audit - Browser Saved Password](<../cwrmm/tasks/ClearAudit - Browser Saved Password.md>) and follow the deployment instructions.
-- (Optional) Create the [Monitor - Browser Saved Password Failure Detection](<../cwrmm/monitors/Browser Saved Password Failure Detection.md>) and follow the deployment instructions. This should be created only if the partner approves it.
+- Create the [Custom Field - Clear/Audit Browsers Saved Password](/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce)
+- Create the [Dynamic Groups - Browser Saved Password](/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47)
+- Create the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) and follow the deployment instructions.
+- (Optional) Create the [Monitor - Browser Saved Password Failure Detection](/docs/62efcaa3-e03b-4500-a48a-f472a82f039f) and follow the deployment instructions. This should be created only if the partner approves it.
 
 ## FAQ
 

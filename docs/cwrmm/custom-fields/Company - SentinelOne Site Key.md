@@ -16,7 +16,7 @@ This custom field at the company level stores the Sentinel Site Key. The Site Ke
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>)
+[CW RMM - Solution - SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627)
 
 ## Details
 

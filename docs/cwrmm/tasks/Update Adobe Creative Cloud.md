@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the agnostic script [Update-AdobeCC](<../../powershell/Update-AdobeCC.md>).
+Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the agnostic script [Update-AdobeCC](/docs/baddd511-d11a-4d0e-be88-cd8c942b5e39).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Lists or updates products for Adobe Creative Cloud. CW RMM implementation of the
 
 ## Dependencies
 
-[Update-AdobeCC](<../../powershell/Update-AdobeCC.md>)
+[Update-AdobeCC](/docs/baddd511-d11a-4d0e-be88-cd8c942b5e39)
 
 ## User Parameters
 

@@ -24,7 +24,7 @@ See parameters in the "User Parameters" section below.
 
 ## Dependencies
 
-[Invoke-OffScrub](<../../powershell/Invoke-OfficeScrub.md>) (PowerShell script)
+[Invoke-OffScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed) (PowerShell script)
 
 ## Variables
 
@@ -32,7 +32,7 @@ See parameters in the "User Parameters" section below.
 - `@Parameters@` - Handles parameters passed to the PowerShell script.
 - `@Versions@` - Handles which versions of Microsoft Office will be attempted to uninstall.
 
-Please see [Invoke-OffScrub](<../../powershell/Invoke-OfficeScrub.md>) to review remaining variables.
+Please see [Invoke-OffScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed) to review remaining variables.
 
 #### User Parameters
 
@@ -44,7 +44,7 @@ Please see [Invoke-OffScrub](<../../powershell/Invoke-OfficeScrub.md>) to review
 
 The script will determine which version(s) of Microsoft Office to uninstall via the user parameter `@Versions@`.
 
-Based on the version input by the technician, the script will jump to the appropriate section and execute the OfficeScrub payload in this Automate script. The script will run through the various versions and report back success/failure information to the Automate script. Additional logs are available on the endpoint (please see the [Invoke-OffScrub](<../../powershell/Invoke-OfficeScrub.md>) documentation for details on log locations).
+Based on the version input by the technician, the script will jump to the appropriate section and execute the OfficeScrub payload in this Automate script. The script will run through the various versions and report back success/failure information to the Automate script. Additional logs are available on the endpoint (please see the [Invoke-OffScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed) documentation for details on log locations).
 
 ## Output
 

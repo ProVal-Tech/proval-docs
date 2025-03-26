@@ -16,8 +16,8 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 ## Dependencies
 
-- [Import - Remote Monitor - NTLMv1.1 Detection](<../monitors/NTLMv1.1 Detection.md>)
-- [EPM - Security - Script - Disable NTLMv1.1](<../scripts/Disable NTLMv1.1.md>)
+- [Import - Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca)
+- [EPM - Security - Script - Disable NTLMv1.1](/docs/2be0669b-3c87-4594-81f4-112c7411f513)
 
 ## Columns
 

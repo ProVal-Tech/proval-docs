@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](<../tables/pvl_winget_audit.md>). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
+The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
 
 ## File Hash
 
@@ -26,7 +26,7 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## Sample Run
 
-**First Run:** Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution.  
+**First Run:** Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) table used by the solution.  
 ![First Run](../../../static/img/Winget-App-Audit/image_1.png)
 
 **Regular Execution:**  
@@ -34,8 +34,8 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## Dependencies
 
-- [SWM - Software Update - Internal Monitor - Execute Script - Winget App Audit](<../monitors/Execute Script - Winget App Audit.md>)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<./OverFlowedVariable - SQL Insert - Execute.md>)
+- [SWM - Software Update - Internal Monitor - Execute Script - Winget App Audit](/docs/af67ed08-40af-4899-ae8f-5e64f9bfb851)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Variables
 
@@ -45,13 +45,13 @@ The script conducts an audit of the computer for applications supported by Winge
 | workingDirectory   | C:/ProgramData/_automation/script/Get-WingetReport |
 | scriptPath        | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.ps1 |
 | jsonPath          | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.json |
-| tableName         | [pvl_winget_audit](<../tables/pvl_winget_audit.md>) |
+| tableName         | [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) |
 
 ## User Parameters
 
 | Name              | Example | Required                      | Description                                                                                          |
 |-------------------|---------|-------------------------------|------------------------------------------------------------------------------------------------------|
-| Set_Environment    | 1       | True (for first execution)    | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table used by the solution. |
+| Set_Environment    | 1       | True (for first execution)    | Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) table used by the solution. |
 
 ## Output
 

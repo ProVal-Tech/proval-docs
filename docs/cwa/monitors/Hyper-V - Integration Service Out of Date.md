@@ -38,4 +38,4 @@ Insert the details of the monitor in the table below.
 ## Implementation
 
 Please follow the article below for the implementation:  
-[Import - Integration Service Out of Date](./Import-Hyper-V-Integration-Service-Out-of-Date.md)
+[Import - Integration Service Out of Date](/docs/81a45e9e-918b-4848-bcf7-874ee4a6c8a0)

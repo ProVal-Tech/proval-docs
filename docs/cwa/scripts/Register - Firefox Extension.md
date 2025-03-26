@@ -25,7 +25,7 @@ Obtain your extension name from the Firefox extension store.
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.
 
-- [SWM - Software Configuration - Register-FirefoxExtension](<../../powershell/Register-FirefoxExtension.md>)
+- [SWM - Software Configuration - Register-FirefoxExtension](/docs/db0512b5-70cd-4145-aa69-de84f9b1846d)
 
 #### User Parameters
 

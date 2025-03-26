@@ -16,7 +16,7 @@ This document holds the count of accounts with weak passwords.
 
 ## Dependencies
 
-[CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
+[CW RMM - Solution - Weak Passwords Audit](/docs/67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11)
 
 ## Details
 

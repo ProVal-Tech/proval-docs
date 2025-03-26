@@ -23,7 +23,7 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Process
 
 - Runs a PowerShell command to gather DHCP information from a target server.
-- Creates the [plugin_proval_dhcp_statistics](<../tables/plugin_proval_dhcp_statistics.md>) table if it does not exist.
+- Creates the [plugin_proval_dhcp_statistics](/docs/489fe175-9ac6-420c-be2e-e5faceb956fd) table if it does not exist.
 
 ## Output
 

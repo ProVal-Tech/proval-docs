@@ -18,15 +18,15 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
 
 | Content                                                                                               | Type            | Function                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Deploy Rapid Fire Compliance Management](<../cwa/scripts/Deploy Rapid Fire Compliance Management.md>)   | Script          | This script deploys the Rapid Fire compliance management application. It first validates that the .NET Framework 4.8 is installed; if installed, then only the deployment is possible.                                     |
-| [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>) | Internal Monitor | This monitor detects agents where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. Excluded computers and locations will not show up in the monitor.            |
-| **△ Custom - Execute Script - Deploy Rapid Fire**                                                   | Alert Template   | It runs as an autofix with the [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>) and schedules the [Script - Deploy Rapid Fire Compliance Management](<../cwa/scripts/Deploy Rapid Fire Compliance Management.md>) to the detected endpoints where deployment is set based on the EDFs. |
+| [Script - Deploy Rapid Fire Compliance Management](/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c)   | Script          | This script deploys the Rapid Fire compliance management application. It first validates that the .NET Framework 4.8 is installed; if installed, then only the deployment is possible.                                     |
+| [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433) | Internal Monitor | This monitor detects agents where the location of the agent contains the "Compliance Management Installer Key" and the deployment is enabled. Excluded computers and locations will not show up in the monitor.            |
+| **△ Custom - Execute Script - Deploy Rapid Fire**                                                   | Alert Template   | It runs as an autofix with the [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433) and schedules the [Script - Deploy Rapid Fire Compliance Management](/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c) to the detected endpoints where deployment is set based on the EDFs. |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - Deploy Rapid Fire Compliance Management](<../cwa/scripts/Deploy Rapid Fire Compliance Management.md>)
-   - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>)
+   - [Script - Deploy Rapid Fire Compliance Management](/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c)
+   - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433)
    - **Alert Template -** `△ Custom - Execute Script - Deploy Rapid Fire`
 
 2. Reload the system cache:
@@ -34,7 +34,7 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../cwa/monitors/Agents Missing Rapid Fire Compliance Manager.md>)
+     - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433)
        - Set up with the "`△ Custom - Execute Script - Deploy Rapid Fire`" alert template.
        - Right-click and select Run Now to start the monitor.
 

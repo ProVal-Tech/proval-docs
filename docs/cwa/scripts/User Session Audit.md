@@ -23,7 +23,7 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Dependencies
 
 - @plugin_proval_usersessions (Table)
-- [Windows - Current User Sessions](<../dataviews/Windows - Current User Sessions.md>)
+- [Windows - Current User Sessions](/docs/ea5d1545-a2d7-4c9e-a61e-b89e43da2b9c)
 
 ## Variables
 

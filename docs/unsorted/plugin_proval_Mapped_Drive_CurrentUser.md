@@ -16,8 +16,8 @@ This table stores the mapped drive details of the currently logged-in users.
 
 ## Dependencies
 
-- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>)
-- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>)
+- [Mapped Drive Audit - Current User](/docs/6e855af4-7a44-4332-a5cf-73b238c6dac7)
+- [Mapped Drive Audit - Current User](/docs/6e855af4-7a44-4332-a5cf-73b238c6dac7)
 
 ## Tables
 

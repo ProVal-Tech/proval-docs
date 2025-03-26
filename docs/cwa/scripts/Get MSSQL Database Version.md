@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script collects the `Version` and `Patch Level` information of the MSSQL Server and then saves this data into a designated [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>).
+The script collects the `Version` and `Patch Level` information of the MSSQL Server and then saves this data into a designated [Custom Table - pvl_mssql_db_version](/docs/e0ec87f6-0624-40db-ac6b-1b7d823e6b37).
 
 ## Sample Run
 
@@ -26,7 +26,7 @@ Execute the script against the online `MSSQL` servers to gather the version.
 
 ## Dependencies
 
-[Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
+[Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
 
 ## Variables
 
@@ -34,7 +34,7 @@ Execute the script against the online `MSSQL` servers to gather the version.
 |-------------------|-------------------------------------------------------|
 | ProjectName       | Get-MSSQLDBVersion                                   |
 | WorkingDirectory   | C:/ProgramData/_automation/script/Get-MSSQLDBVersion |
-| TableName         | [pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>) |
+| TableName         | [pvl_mssql_db_version](/docs/e0ec87f6-0624-40db-ac6b-1b7d823e6b37) |
 
 ## User Parameter
 

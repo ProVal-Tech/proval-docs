@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-Stores GPResult information from the script [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>).
+Stores GPResult information from the script [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](/docs/53bcdcef-8942-4602-bc24-7db1b2cf29ae).
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](<../scripts/Group Policy - Gather GPResult Data.md>)
-- [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>)
+- [EPM - Windows Configuration - Script - Group Policy - Gather GPResult Data](/docs/53bcdcef-8942-4602-bc24-7db1b2cf29ae)
+- [EPM - Windows Configuration - Agnostic - Get-GPResult](/docs/f5d71bf9-29a7-4aa3-a349-0378cb97575a)
 
 ## Tables
 

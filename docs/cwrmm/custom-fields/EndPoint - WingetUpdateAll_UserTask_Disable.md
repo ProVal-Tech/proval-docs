@@ -14,7 +14,7 @@ unlisted: false
 
 Set this custom field to "No" to enable the user-level scheduled task `Winget Update All [Logged on User]` for Windows machines.
 
-The [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) task will not enable the user-level Winget to update all scheduled tasks by default, as it is set to "Yes".
+The [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task will not enable the user-level Winget to update all scheduled tasks by default, as it is set to "Yes".
 
 ## Details
 

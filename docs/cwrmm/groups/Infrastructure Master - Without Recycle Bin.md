@@ -16,7 +16,7 @@ The purpose of this group is to filter Windows Infrastructure Masters where the 
 
 ## Dependencies
 
-[CW RMM - Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>)
+[CW RMM - Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7)
 
 ## Group Details
 

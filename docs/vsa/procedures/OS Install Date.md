@@ -34,7 +34,7 @@ This agent procedure runs PowerShell to determine the initial install date of th
 ## Dependencies
 
 The agent procedure requires the custom field to be created in order to successfully run:  
-[Custom Field Documentation](<../custom-fields/xPVAL OS Install Date.md>)
+[Custom Field Documentation](/docs/0fbf0989-b499-4d26-8cec-29e3d32d0ada)
 
 ## Output
 

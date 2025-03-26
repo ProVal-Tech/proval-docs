@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This document displays potential Log4J/Log4Shell vulnerabilities based on the following list: [NCSC-NL Log4Shell Software List](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md)
+This document displays potential Log4J/Log4Shell vulnerabilities based on the following list: [NCSC-NL Log4Shell Software List](/docs)
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5)
 - [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import%20Log4Shell%20Table.md>)
-- [SEC - Endpoint Protection - Custom Table - plugin_proval_log4jsoftwarelist](<../tables/plugin_proval_log4jsoftwarelist.md>)
+- [SEC - Endpoint Protection - Custom Table - plugin_proval_log4jsoftwarelist](/docs/f78c8a37-448e-4a52-b475-412b0625edde)
 
 ## Columns
 

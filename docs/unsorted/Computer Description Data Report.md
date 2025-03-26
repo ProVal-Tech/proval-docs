@@ -21,7 +21,7 @@ This script will find the computer description information from the agent and st
 
 ## Dependencies
 
-[Computer Description Audit](<./Computer Description Audit.md>)
+[Computer Description Audit](/docs/81645955-50e9-45e6-b635-e6780aefc390)
 
 ## Script State
 

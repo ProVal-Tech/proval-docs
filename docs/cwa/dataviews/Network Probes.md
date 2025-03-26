@@ -27,8 +27,8 @@ Information from the following tabs of a Network Probe settings page is displaye
 
 ## Dependencies
 
-- [CWM - Automate - Custom View - plugin_proval_probeconfig](<../views/plugin_proval_probeconfig.md>)
-- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](../scripts/MySQL - View - Create (plugin_proval_probeconfig).md)
+- [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)
+- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](/docs/5bee0fdf-d4c0-4158-8d69-ba49f43b66c5)
 
 ## Columns
 

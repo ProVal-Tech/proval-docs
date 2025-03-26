@@ -17,11 +17,11 @@ unlisted: false
 This script is designed to delete a user profile and remove the user account if it is local. Note that the `SID` and `Username` parameters cannot be used simultaneously.
 
 The `SID` parameter is specifically intended for removing cached or unknown user profiles.
-Running the [Unknown User Profiles](./unknown-user-profiles.md) script will return the `SID` of the inferred profiles.
+Running the [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) script will return the `SID` of the inferred profiles.
 
 <span style={{color: 'Orange'}}> **User Agreement: *"I acknowledge that I am using a destructive script. I understand that any typographical errors could result in the removal of production profiles, and I accept full responsibility for any consequences."*** </span>
 
-It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](<../../powershell/Remove-UserProfile.md>).
+It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac).
 
 ### Notes
 - The user must accept the `I_have_read_the_description_and_agree_to_the_user_agreement` parameter while running the script.
@@ -54,7 +54,7 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 
 ## Dependencies
 
-[Remove-UserProfile](<../../powershell/Remove-UserProfile.md>)
+[Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac)
 
 ## User Parameters
 

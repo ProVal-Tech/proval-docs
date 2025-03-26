@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The custom table stores the data gathered by the [Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>) script.
+The custom table stores the data gathered by the [Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c) script.
 
 ## Dependencies
 
-[SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>)
+[SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
 
 ## Tables
 

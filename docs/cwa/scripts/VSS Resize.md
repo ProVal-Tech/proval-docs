@@ -20,9 +20,9 @@ This script resets the vssadmin size and updates the table with the latest size 
 
 ## Dependencies
 
-- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>) 
-- [Vssadmin List Storage Audit](<./Vssadmin List Storage Audit.md>) 
-- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>) 
+- [VSSAdmin Storage Audit](/docs/7f7e7d3b-047d-41dc-acc2-5083adcaaf39) 
+- [Vssadmin List Storage Audit](/docs/0de90f98-d7ae-4a79-a851-30829a596846) 
+- [plugin_proval_vssadminstorage](/docs/165f6290-8932-459b-9bfe-18c86f7a61d6) 
 
 ## Variables
 

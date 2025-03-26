@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>), which enforces a homepage for the Google Chrome browser.
+This document outlines the Automate implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab), which enforces a homepage for the Google Chrome browser.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This document outlines the Automate implementation of the agnostic script [SWM -
 
 ## Dependencies
 
-Refer to the [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) for additional details.
+Refer to the [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab) for additional details.
 
 ### User Parameters
 

@@ -16,7 +16,7 @@ Custom field containing either 'Compatible' or the reason for incompatibility.
 
 ## Dependencies
 
-All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](<../../solutions/VSA Proval Script Compliancy.md>).
+All content listed in [EPM - Data Collection - Solution - VSA Proval Script Compliancy](/docs/9ec556eb-e7b8-410d-8f03-0dcb0a8b549b).
 
 ## Details
 

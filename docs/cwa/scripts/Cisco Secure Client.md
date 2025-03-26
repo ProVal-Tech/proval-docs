@@ -47,7 +47,7 @@ It is mandatory to place the file in the specified directory with the specified 
 
 ## Sample Run
 
-It has to be executed as an autofix script with [CWA - Internal Monitor - Missing Cisco Secure Client Modules](<../monitors/Missing Cisco Secure Client Modules.md>), but it can also be executed individually.
+It has to be executed as an autofix script with [CWA - Internal Monitor - Missing Cisco Secure Client Modules](/docs/2936aa3a-b372-4681-8957-e23d5a2631db), but it can also be executed individually.
 
 - For the initial execution of the script, it is essential to set the user parameter `SetEnvironment` to 1. This step is necessary to create the mandatory EDFs (Extra Data Fields) required for the script's execution. It will also transfer the data from old EDFs to new EDFs. Some of the EDFs, like Fingerprint and userid, have just been transferred to the 'Cisco Secure Client' section.  
 ![Image](../../../static/img/Cisco-Secure-Client/image_5.png)

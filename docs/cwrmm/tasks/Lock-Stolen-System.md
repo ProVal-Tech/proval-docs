@@ -14,7 +14,7 @@ unlisted: false
 This is the RMM Implementation of Lock Stolen System Script. This task is used to track and lock down stolen systems.
 
 ## Dependencies
-[Custom Fields](<../custom-fields/ENDPOINT-StolenDevices.md>)
+[Custom Fields](/docs/ff056937-ea5b-48f4-b76d-74566b981da8)
 
 ## User Parameters
 
@@ -310,7 +310,7 @@ shutdown /f /s /t 00
 ![image16](../../../static/img/CW-RMM-Lock-Stolen-System/image16.png)
 
 ## Script Deployment
-This task has to be scheduled on the [Stolen System](<../groups/Stolen Systems.md>) group for auto deployment. The script can also be run manually if required.
+This task has to be scheduled on the [Stolen System](/docs/c5be497c-f3b8-4fd5-8c9d-70b709aef5fb) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.
 Search for Lock Stolen System task.

@@ -18,7 +18,7 @@ This monitor will detect the online machines where the ScreenConnect agent is no
 
 ## Dependencies
 
-[CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) (This script should be run as an autofix with the monitor)  
+[CWM - Control - Script - Update ScreenConnect Version](/docs/b04bc7eb-65ce-4684-b787-3b248fcd44f6) (This script should be run as an autofix with the monitor)  
 Use alert template ~Autofix - Update ScreenConnect Version with the monitor
 
 ## Target
@@ -27,6 +27,6 @@ Globally (both on Windows and Mac machines)
 
 ## Ticketing
 
-The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](<../scripts/Update Screenconnect Version.md>) script.
+The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](/docs/b04bc7eb-65ce-4684-b787-3b248fcd44f6) script.
 
 

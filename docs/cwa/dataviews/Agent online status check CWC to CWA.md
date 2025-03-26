@@ -16,9 +16,9 @@ This Dataview is designed to display comparative results of the online status of
 
 ## Dependencies
 
-- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](<../../solutions/Get - CW-ControlAPI-Online Status.md>)
-- [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../scripts/Get - CW-ControlAPI - Online Status.md>)
-- [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](<../tables/plugin_proval_control_session_status.md>)
+- [EPM - Data Collection - Solution - Get - CW-ControlAPI-Online Status](/docs/55a527b6-7b59-4f67-9b1d-1ed421199363)
+- [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](/docs/71ac312f-e490-4126-bc2d-f9c07f5582cf)
+- [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](/docs/d468b194-6df4-46b0-8dbc-657b623209ff)
 
 ## Columns
 

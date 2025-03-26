@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. It then stores this information in the custom table [pvl_m365_update_channel_audit](<../../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>).
+This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the Update channel. It then stores this information in the custom table [pvl_m365_update_channel_audit](/docs/18823b31-4222-4881-82f8-bc284af806cb).
 
 **File Path:** `C:/ProgramData/_Automation/Script/Get-M365UpdateChannel/Get-M365UpdateChannel.ps1`  
 **File Hash (SHA256):** `1CAED911E914A8F8C9EBA29D244459F4DA2B09780EB8ED720FB55F2519E06D19`  
@@ -36,7 +36,7 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ![Client Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_3.png)
 
-**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](<../monitors/Microsoft 365 - Click-to-Run - Set Update Channel.md>) internal monitor.
+**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](/docs/44e0a674-9e54-47ad-be29-6c93611db0b2) internal monitor.
 
 ## Computer Level EDF
 
@@ -46,7 +46,7 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ![Computer Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_4.png)
 
-**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](<./Microsoft 365 - Set Update Channel - Current.md>) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](<../monitors/Microsoft 365 - Click-to-Run - Set Update Channel.md>) internal monitor.
+**Note:** The EDF is used by the [Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script and the [Microsoft 365 - Click-to-Run - Set Update Channel](/docs/44e0a674-9e54-47ad-be29-6c93611db0b2) internal monitor.
 
 ## Output
 

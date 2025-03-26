@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-A suite of 5 agent procedures to manage WinGet packages on an endpoint using ProVal Agnostic Script [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>):
+A suite of 5 agent procedures to manage WinGet packages on an endpoint using ProVal Agnostic Script [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7):
 
 - WinGet Package Install
 - WinGet Package Uninstall
@@ -81,7 +81,7 @@ The parameter must be passed as an array, so ensure it matches as seen in the sc
 
 ## Process
 
-Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>) to run WinGet as a system user on an endpoint and manage application packages.
+Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7) to run WinGet as a system user on an endpoint and manage application packages.
 
 ## Output
 

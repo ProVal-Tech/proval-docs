@@ -12,9 +12,9 @@ unlisted: false
 
 ## Summary
 
-This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
-This script handles the cleanup of the following table(s) and requires the [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>) `PatchManagerHistory_Cleanup` global variable to be set to 1:
+This script handles the cleanup of the following table(s) and requires the [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968) `PatchManagerHistory_Cleanup` global variable to be set to 1:
 
 - patchapprovalsettings
 - hotfixdata
@@ -24,7 +24,7 @@ This script handles the cleanup of the following table(s) and requires the [CWM 
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](<./Automate Database Maintenance Solution.md>).
+This script is a function script called from [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968).
 
 ## Variables
 

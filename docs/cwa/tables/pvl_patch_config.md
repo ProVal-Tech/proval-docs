@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-The table stores the patch configuration data fetched by the [Get Patch Config](<../scripts/Get Patch Config.md>) script.
+The table stores the patch configuration data fetched by the [Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900) script.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Get Patch Config](<../scripts/Get Patch Config.md>)
+[EPM - Data Collection - Script - Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900)
 
 ## Tables
 

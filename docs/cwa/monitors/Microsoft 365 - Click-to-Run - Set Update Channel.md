@@ -16,9 +16,9 @@ The internal monitor detects computers where the Microsoft 365 update channel is
 
 ## Dependencies
 
-- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>)
-- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](<../../unsorted/SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit.md>)
-- [SWM - Software Configuration - Script - Microsoft 365 - Click-to-Run - Set Update Channel](<../scripts/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
+- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e)
+- [SWM - Software Configuration - Custom Table - pvl_m365_update_channel_audit](/docs/18823b31-4222-4881-82f8-bc284af806cb)
+- [SWM - Software Configuration - Script - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/77f0982f-1be7-49a7-871e-cfc88705775e)
 
 ## Target
 

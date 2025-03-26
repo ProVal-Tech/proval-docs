@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
+The internal monitor identifies machines where an issue with OneDrive sync has been detected within the last 48 hours. It triggers alerts based on data collected by the [Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>)
-- [EPM - Data Collection - Custom Table - pvl_odsync_status](<../tables/pvl_odsync_status.md>)
+- [EPM - Data Collection - Script - Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece)
+- [EPM - Data Collection - Custom Table - pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9)
 
 ## Target
 

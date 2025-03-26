@@ -21,16 +21,16 @@ This task validates whether the Cumulative Update installed by the Out of Date C
 
 ## Dependencies
 
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Result.md>)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>)
-- [CW RMM - Device Group - Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>)
-- [CW RMM - Task - Out of Date Cumulative Update (Autofix)](<./Out of Date Cumulative Update (Autofix).md>)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
+- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
+- [CW RMM - Device Group - Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d)
+- [CW RMM - Task - Out of Date Cumulative Update (Autofix)](/docs/1d9dbd69-f735-4129-8c9d-e72430313371)
 
 ## Variables
 
 | Name         | Description                                                                                                                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TaskRunTime  | Value stored in the [EndPoint - Out_of_Date_CU_Autofix_Date](<../custom-fields/EndPoint - Out_of_Date_CU_Autofix_Date.md>) Custom Field.                                  |
+| TaskRunTime  | Value stored in the [EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4) Custom Field.                                  |
 | Output       | Output of the previously executed PowerShell script.                                                                                                            |
 
 ## Task Creation
@@ -248,7 +248,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the task once per day against the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.
+It is suggested to run the task once per day against the [Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for `Out of Date Cumulative Update (Post Reboot Verification)` task.
@@ -274,7 +274,7 @@ Recurrence will be updated to `Every Day`.
 Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_54.png)  
 
-Search and select the [Out of Date CU _ Reboot Pending](<../groups/Out of Date CU _ Reboot Pending.md>) device group.  
+Search and select the [Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d) device group.  
 ![Device Group Selection](../../../static/img/Out-of-Date-Cumulative-Update-(Post-Reboot-Verification)/image_60.png)  
 
 Now click the `Run` button to initiate the task.  

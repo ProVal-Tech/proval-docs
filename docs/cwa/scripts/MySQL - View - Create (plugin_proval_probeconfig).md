@@ -22,13 +22,13 @@ This script will drop the view if it exists, recreate it, and then call the scri
 
 ## Dependencies
 
-- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](./MySQL - View - Create (plugin_proval_probeconfig).md)  
-- [CWM - Automate - Custom View - plugin_proval_probeconfig](../views/plugin_proval_probeconfig.md)
+- [CWM - Automate - Script - Create View "plugin_proval_probeconfig"](/docs/5bee0fdf-d4c0-4158-8d69-ba49f43b66c5)  
+- [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)
 
 ## Process
 
-1. Drop the view if it exists: [CWM - Automate - Custom View - plugin_proval_probeconfig](../views/plugin_proval_probeconfig.md)  
-2. Create the view: [CWM - Automate - Custom View - plugin_proval_probeconfig](../views/plugin_proval_probeconfig.md)  
+1. Drop the view if it exists: [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)  
+2. Create the view: [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)  
 3. Call the script "CWM - Automate - Script - Update User Permissions for ProVal Custom Tables" to assign the permissions to the Automate users for the Plugin_Proval custom tables and views.
 
 

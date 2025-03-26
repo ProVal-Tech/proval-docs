@@ -35,9 +35,9 @@ To create a ticket, you must change the global parameter value for `TicketCreati
 
 - Windows Exchange Server
 - Intended to be triggered from the following monitor(s):
-  - [ProVal - Production - CVE-2021-26858 Detection](<../monitors/CVE-2021-26858 Detection.md>)
-  - [ProVal - Production - CVE-2021-26857 Detection](<../monitors/CVE-2021-26857 Detection.md>)
-  - [ProVal - Production - CVE-2021-26858 Detection](<../monitors/CVE-2021-26858 Detection.md>)
+  - [ProVal - Production - CVE-2021-26858 Detection](/docs/f0733b7f-b017-4d94-8949-310a737d395a)
+  - [ProVal - Production - CVE-2021-26857 Detection](/docs/54780af1-de8c-4373-bfef-cdcf185fd8de)
+  - [ProVal - Production - CVE-2021-26858 Detection](/docs/f0733b7f-b017-4d94-8949-310a737d395a)
 
 ## Variables
 

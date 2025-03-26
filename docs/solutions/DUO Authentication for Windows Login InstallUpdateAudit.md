@@ -20,37 +20,37 @@ The aim is to perform the DUO Authentication for Windows Login installation and 
 
 | Content | Type | Description |
 |---------|------|-------------|
-| [CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../cwrmm/custom-fields/Duo Authentication for Windows Logon Deployment.md>) | Custom Field | The custom fields in this document are required for the "Duo Authentication for Windows Logon" deployment. |
+| [CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](/docs/a9578dd1-1f6b-4932-a614-5ed823656416) | Custom Field | The custom fields in this document are required for the "Duo Authentication for Windows Logon" deployment. |
 
 #### Groups
 
 | Content | Type | Description |
 |---------|------|-------------|
-| [CW RMM - Group - DUO Auth for Windows Login Deployment](<../cwrmm/groups/DUO Auth for Windows Login Deployment.md>) | Dynamic | This group adds the member where the DUO Deployment is enabled. The agent gets added if the company custom field "DUO Deployment" is checked. |
-| [CW RMM - Group - DUO Auth for Windows Login Installed](<../cwrmm/groups/DUO Auth for Windows Login Installed.md>) | Dynamic | This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version." It is built for auditing purposes. |
-| [CW RMM - Group - DUO Auth for Windows Login Failed](<../cwrmm/groups/DUO Auth for Windows Login Failed.md>) | Dynamic | This group records the agents where the "DUO Install & Upgrade - Latest Version" failed to deploy the "DUO Auth for Windows Login" application. It is built for auditing purposes. |
+| [CW RMM - Group - DUO Auth for Windows Login Deployment](/docs/c598c18f-25a9-43fd-a7b6-86e8f186c38b) | Dynamic | This group adds the member where the DUO Deployment is enabled. The agent gets added if the company custom field "DUO Deployment" is checked. |
+| [CW RMM - Group - DUO Auth for Windows Login Installed](/docs/5202450b-3b85-46ff-9f35-6ea804223270) | Dynamic | This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version." It is built for auditing purposes. |
+| [CW RMM - Group - DUO Auth for Windows Login Failed](/docs/beaa71b6-62a3-4800-9c24-da92d4566965) | Dynamic | This group records the agents where the "DUO Install & Upgrade - Latest Version" failed to deploy the "DUO Auth for Windows Login" application. It is built for auditing purposes. |
 
 #### Task
 
 | Content | Type | Description |
 |---------|------|-------------|
-| [CW RMM - Task - DUO Install & Upgrade - Latest Version](<../cwrmm/tasks/DUO Install & Upgrade - Latest Version.md>) | Script Editor | This script will install or update DUO if the currently installed instance is older than the latest released version. This script matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
+| [CW RMM - Task - DUO Install & Upgrade - Latest Version](/docs/47da7c82-7c27-4730-987a-2d32e22415fa) | Script Editor | This script will install or update DUO if the currently installed instance is older than the latest released version. This script matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe). |
 
 ## Implementation
 
 ### Step 1
 Create the following custom fields:  
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](<../cwrmm/custom-fields/Duo Authentication for Windows Logon Deployment.md>)  
+[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](/docs/a9578dd1-1f6b-4932-a614-5ed823656416)  
 **Note:** The document has multiple custom fields, and it is required to create each one for the solution to work properly.
 
 ### Step 2
 Create the following device groups:  
-[CW RMM - Group - DUO Auth for Windows Login Deployment](<../cwrmm/groups/DUO Auth for Windows Login Deployment.md>)  
-[CW RMM - Group - DUO Auth for Windows Login Installed](<../cwrmm/groups/DUO Auth for Windows Login Installed.md>)  
-[CW RMM - Group - DUO Auth for Windows Login Failed](<../cwrmm/groups/DUO Auth for Windows Login Failed.md>)  
+[CW RMM - Group - DUO Auth for Windows Login Deployment](/docs/c598c18f-25a9-43fd-a7b6-86e8f186c38b)  
+[CW RMM - Group - DUO Auth for Windows Login Installed](/docs/5202450b-3b85-46ff-9f35-6ea804223270)  
+[CW RMM - Group - DUO Auth for Windows Login Failed](/docs/beaa71b6-62a3-4800-9c24-da92d4566965)  
 
 ### Step 3
 Create and deploy the following tasks:  
-[CW RMM - Task - DUO Install & Upgrade - Latest Version](<../cwrmm/tasks/DUO Install & Upgrade - Latest Version.md>)  
+[CW RMM - Task - DUO Install & Upgrade - Latest Version](/docs/47da7c82-7c27-4730-987a-2d32e22415fa)  
 
 

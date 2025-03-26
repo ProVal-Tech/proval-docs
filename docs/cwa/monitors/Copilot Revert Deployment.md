@@ -26,7 +26,7 @@ It also depends on the following EDFs:
 | Copilot Revert Enable   | Client   | Checkbox | 1 or 0                         | This check box allows the agents of clients to revert the Copilot disabling and uninstallation                   |
 ## Dependencies
 
-[Script_Copilot_Enable_Disable](<../scripts/Copilot - Enable-Disable.md>)
+[Script_Copilot_Enable_Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
 
 Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
 

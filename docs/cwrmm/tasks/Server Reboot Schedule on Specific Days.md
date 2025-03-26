@@ -38,7 +38,7 @@ Click 'Run task' to schedule the task immediately.
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -476,7 +476,7 @@ In the script exit message, type `Reboot Schedule Failed with an error %output%.
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 - Go to `Automation` > `Tasks`.
 - Search for `Server Reboot Schedule on Specific Days` task.

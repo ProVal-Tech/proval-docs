@@ -28,15 +28,15 @@ It is important to note that this solution will send an email for every script i
 
 | Content                                                                                   | Type            | Function                                                                                                                                                       |
 |-------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Email Creation - Computer [LTRunByUser]*](<../cwa/scripts/Email Creation - Computer LTRunByUser.md>) | Script          | This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](<../cwa/monitors/Manual Script Schedule - Status Email.md>) to send emails to the user who ran the script manually during its completion. |
-| [Internal Monitor - Manual Script Schedule - Status Email](<../cwa/monitors/Manual Script Schedule - Status Email.md>) | Internal Monitor | This monitor detects the manual script execution by the LT User.                                                                                             |
-| △ Custom - Autofix - Email Send LTRunByUser                                            | Alert Template   | This alert template is required to run the script [Email Creation - Computer [LTRunByUser]*](<../cwa/scripts/Email Creation - Computer LTRunByUser.md>) as an autofix with the monitor [Manual Script Schedule - Status Email](<../cwa/monitors/Manual Script Schedule - Status Email.md>) |
+| [Script - Email Creation - Computer [LTRunByUser]*](/docs/aff3413b-574f-4399-8f4b-85e04d388c5a) | Script          | This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) to send emails to the user who ran the script manually during its completion. |
+| [Internal Monitor - Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) | Internal Monitor | This monitor detects the manual script execution by the LT User.                                                                                             |
+| △ Custom - Autofix - Email Send LTRunByUser                                            | Alert Template   | This alert template is required to run the script [Email Creation - Computer [LTRunByUser]*](/docs/aff3413b-574f-4399-8f4b-85e04d388c5a) as an autofix with the monitor [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) |
 
 ## Implementation
 
 1. Import the following contents from the ProSync plugin:
-   - Script: [Email Creation - Computer [LTRunByUser]*](<../cwa/scripts/Email Creation - Computer LTRunByUser.md>) 
-   - Internal Monitor: [Manual Script Schedule - Status Email](<../cwa/monitors/Manual Script Schedule - Status Email.md>) 
+   - Script: [Email Creation - Computer [LTRunByUser]*](/docs/aff3413b-574f-4399-8f4b-85e04d388c5a) 
+   - Internal Monitor: [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) 
    - Alert Template: `△ Custom - Autofix - Email Send LTRunByUser`
 
 2. Reload the System Cache.  
@@ -44,7 +44,7 @@ It is important to note that this solution will send an email for every script i
 
 3. Configure the solution as follows:
    - Navigate to Automation > Monitors > Internal Monitor
-     - Internal Monitor: [Manual Script Schedule - Status Email](<../cwa/monitors/Manual Script Schedule - Status Email.md>)
+     - Internal Monitor: [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1)
        - Alert Template: `△ Custom - Autofix - Email Send LTRunByUser`
        - Reset and run the monitor to initiate monitoring.
 

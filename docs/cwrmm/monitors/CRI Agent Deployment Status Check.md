@@ -33,7 +33,7 @@ This monitor is designed to create a ticket for the CRI Agent deployment failure
 - Set **Target** as shown below:  
   ![Image 5](../../../static/img/CRI-Agent-Deployment-Status-Check/image_5.png)  
 
-- Once all is done, click **Save**. The monitor will be created, and ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) status check.
+- Once all is done, click **Save**. The monitor will be created, and ticket creation will be set for the [CW RMM - Task - CRI Agent Deployment](/docs/344a3ab5-d05c-41a5-9303-45fc387ec2e8) status check.
 
 ## Target
 

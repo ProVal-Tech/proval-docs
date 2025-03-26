@@ -28,7 +28,7 @@ This script will only work for a Windows-based target.
 
 The machine must have Sophos installed, and Sophos Tamper Protection must be disabled.
 
-**NOTE:** The script will verify if Sophos Tamper Protection is enabled or disabled. If you need to disable Tamper Protection, please check the [Sophos - Disable Tamper Protection](<./Sophos - Disable Tamper Protection.md>) script.
+**NOTE:** The script will verify if Sophos Tamper Protection is enabled or disabled. If you need to disable Tamper Protection, please check the [Sophos - Disable Tamper Protection](/docs/f7d7af7b-0b1e-463a-bda5-e9d30901e0b6) script.
 
 ## Variables
 

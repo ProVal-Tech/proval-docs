@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview gathers the Windows Product Key from the [Role - Windows Product Key](<../roles/Windows Product Key.md>).
+This dataview gathers the Windows Product Key from the [Role - Windows Product Key](/docs/ce712ea7-ef0f-447a-b60b-a2c5891d7585).
 
 ## Dependencies
 
-[Role - Windows Product Key](<../roles/Windows Product Key.md>)
+[Role - Windows Product Key](/docs/ce712ea7-ef0f-447a-b60b-a2c5891d7585)
 
 ## Columns
 

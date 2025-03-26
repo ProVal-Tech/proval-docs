@@ -22,7 +22,7 @@ This script detects any service that is stuck in a state other than Running or S
 
 ## Dependencies
 
-[Stuck Service Detection](<../monitors/Stuck Service Detection.md>)
+[Stuck Service Detection](/docs/be3ca430-f53d-4198-9360-52894e5e6a6a)
 
 ## Variables
 

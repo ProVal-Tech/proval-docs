@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This dataview stores the result of the Threatlocker learning mode setting done via the script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>).
+This dataview stores the result of the Threatlocker learning mode setting done via the script [Script - Threatlocker - Set Learning Mode](/docs/7dedea46-a8d7-4901-93c5-f2bb4c876f83).
 
 ## Dependencies
 
-- [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>)
-- [Custom Table - pvl_threatlocker-disable_audit](<../tables/pvl_threatlocker-disable_audit.md>)
+- [Script - Threatlocker - Set Learning Mode](/docs/7dedea46-a8d7-4901-93c5-f2bb4c876f83)
+- [Custom Table - pvl_threatlocker-disable_audit](/docs/7367ea61-b4bf-4449-b7dd-a68569dc7b75)
 
 ## Columns
 
@@ -28,7 +28,7 @@ This dataview stores the result of the Threatlocker learning mode setting done v
 | Computer                         | Name of the agent                                                                                          |
 | Operating System                 | This displays the OS name of the agent                                                                     |
 | Last Contact                     | It shows the agent's last contact with the Automate control center                                         |
-| LT User Name                     | This stores the LT user name who scheduled the learning mode by executing the script [Script - Threatlocker - Set Learning Mode](<../scripts/Threatlocker - Set Learning Mode.md>) |
+| LT User Name                     | This stores the LT user name who scheduled the learning mode by executing the script [Script - Threatlocker - Set Learning Mode](/docs/7dedea46-a8d7-4901-93c5-f2bb4c876f83) |
 | Learning Mode Reason             | This stores the learning mode reason set by the LT user.                                                  |
 | Learning Mode Start Time         | This shows the learning mode start date and time                                                          |
 | Learning Mode End Time           | This shows the learning mode end date and time                                                            |

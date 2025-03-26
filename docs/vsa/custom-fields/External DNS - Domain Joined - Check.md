@@ -65,7 +65,7 @@ This procedure checks to see if a machine is domain-joined and then verifies the
 
 ## Dependencies
 
-[Documentation Link](<../../solutions/External DNS - Domain Joined - Check.md>)
+[Documentation Link](/docs/324645f2-c11e-4ca8-80b4-4ba1f53bd602)
 
 ## Output
 

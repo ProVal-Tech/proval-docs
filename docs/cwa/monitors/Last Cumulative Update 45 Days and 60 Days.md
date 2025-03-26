@@ -18,10 +18,10 @@ The monitor set will not continue detecting the computers for which a ticket has
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
-- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](<../scripts/Get Latest Installed Cumulative Update.md>)
-- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](<../scripts/Out of Date Cumulative Updates Autofix without Ticketing.md>)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
+- [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+- [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix] [without Ticketing]](/docs/5e2c781f-761a-42f8-8d0a-d2866c2318b5)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Target
 
@@ -31,4 +31,4 @@ Global
 
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
-The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](<../scripts/Out of Date Cumulative Updates Autofix.md>) script.
+The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](/docs/dedb8564-bb1a-47b8-9525-61fc9e690cae) script.

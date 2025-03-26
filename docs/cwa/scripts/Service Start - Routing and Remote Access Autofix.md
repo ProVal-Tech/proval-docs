@@ -18,7 +18,7 @@ This document describes how to set the startup type to Automatic and restart the
 
 - Autofix - Set RemoteAccess Startup Type to Auto
 
-This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](<../monitors/RemoteAccess Service Check.md>).
+This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal - Development - RemoteAccess Service - Set StartType To Auto](/docs/487873f8-4b59-47bc-b938-c64903898d8a).
 
 ## Sample Run
 

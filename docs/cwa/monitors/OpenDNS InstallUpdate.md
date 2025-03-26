@@ -27,7 +27,7 @@ unlisted: false
 
 **Suggested "Limit to"**: Selected Windows Workstations, or all Windows machines, as the monitor is smart enough not to trigger on items that do not satisfy the requirements.  
 **Suggested Alert Style**: Once  
-**Suggested Alert Template**: Create an alert template that on error runs the [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](<../scripts/Deploy OpenDNS Roaming Client Latest Version.md>)
+**Suggested Alert Template**: Create an alert template that on error runs the [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](/docs/c18b026e-7989-4853-b1cb-00517e69adb8)
 
 | Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
 |--------------|----------------|------------|-------------|------------|----------|--------|
@@ -35,7 +35,7 @@ unlisted: false
 
 ## Dependencies
 
-- [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](<../scripts/Deploy OpenDNS Roaming Client Latest Version.md>)
+- [SWM - Software Install - Automate - Script - Deploy OpenDNS Roaming Client Latest Version](/docs/c18b026e-7989-4853-b1cb-00517e69adb8)
 
 ## Target
 

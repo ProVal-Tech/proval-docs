@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 Configurable Removal of Potentially Unwanted Applications  
-Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove-PUA](<../../powershell/Remove-PUA.md>)
+Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 ## Sample Run
 
@@ -50,7 +50,7 @@ Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove
 
 ## Process
 
-Runs the agnostic script [SWM - Software Uninstall - Agnostic - Remove-PUA](<../../powershell/Remove-PUA.md>) with the defined parameters.
+Runs the agnostic script [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443) with the defined parameters.
 
 ## Output
 

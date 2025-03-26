@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script installs the latest feature update on a Windows 10+ machine and provides an option to upgrade from Windows 10 to Windows 11. The script can be executed from the [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](<../monitors/Windows 1011 Build Upgrades EOL Based.md>) monitor set or executed manually.
+This script installs the latest feature update on a Windows 10+ machine and provides an option to upgrade from Windows 10 to Windows 11. The script can be executed from the [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](/docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f) monitor set or executed manually.
 
 **Note:** The script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category.
 
@@ -35,11 +35,11 @@ To install the latest available feature pack on a Windows 10+ machine, without r
 
 ## Dependencies
 
-- [Install-FeatureUpdate](<../../powershell/Install-FeatureUpdate.md>)
-- [Get SetupDiag Report](<./Get SetupDiag Report.md>)
-- [CWM - Automate - Script - Prompter](<./Prompter.md>)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
-- [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](<../monitors/Windows 1011 Build Upgrades EOL Based.md>)
+- [Install-FeatureUpdate](/docs/b46b5ae2-47fe-43b7-ab91-f6901645b2fd)
+- [Get SetupDiag Report](/docs/6042c7c0-dd54-4eda-8889-ef2ff879e5a2)
+- [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
+- [ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](/docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f)
 
 #### User Parameters
 

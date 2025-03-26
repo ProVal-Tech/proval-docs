@@ -20,7 +20,7 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Disable-DotNet3](<../../powershell/Disable-DotNet3.md>)
+- [EPM - Windows Configuration - Agnostic - Disable-DotNet3](/docs/11fe51f7-8d56-485e-9342-3492254ae7ed)
 
 ## Process
 

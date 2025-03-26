@@ -16,7 +16,7 @@ This document targets clients with EDFs enabled for the installation of DUO whil
 
 ## Dependencies
 
-[DUO - Install MFA Authentication For Windows EDFs](<../scripts/DUO - Install MFA Authentication For Windows EDFs.md>) (Can be used as an Autofix Script)
+[DUO - Install MFA Authentication For Windows EDFs](/docs/0bc76dfc-6e84-459d-83a8-306fe625c835) (Can be used as an Autofix Script)
 
 ## Target
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecoveryPW](<../../powershell/Backup-BitlockerRecoveryPW.md>). This script will back up BitLocker Recovery Passwords to the associated Active Directory instance.
+This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecoveryPW](/docs/7eecbf0c-2b91-4454-ba5c-e1b9605f07fc). This script will back up BitLocker Recovery Passwords to the associated Active Directory instance.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ This is a CW RMM implementation of the agnostic script [Backup-BitlockerRecovery
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Backup-BitlockerRecoveryPW](<../../powershell/Backup-BitlockerRecoveryPW.md>)
+[SEC - Encryption - Agnostic - Backup-BitlockerRecoveryPW](/docs/7eecbf0c-2b91-4454-ba5c-e1b9605f07fc)
 
 ## Task Creation
 

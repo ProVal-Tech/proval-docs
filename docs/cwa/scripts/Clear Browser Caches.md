@@ -28,8 +28,8 @@ This script will clear the caches for the following browsers:
 
 ## Sub-Scripts
 
-- [SWM - Software Configuration - Automate - Script - Chromium Caches - Clear](<./Chromium Caches - Clear.md>)
-- [SWM - Software Configuration - Automate - Script - Gecko Cache - Clear](<./Gecko Cache - Clear.md>)
+- [SWM - Software Configuration - Automate - Script - Chromium Caches - Clear](/docs/1edcec5e-4e2d-4edf-b670-1bb81643b4e3)
+- [SWM - Software Configuration - Automate - Script - Gecko Cache - Clear](/docs/b0f8d2f8-6688-4c91-990a-041ad2e9bd3e)
 
 #### User Parameters
 

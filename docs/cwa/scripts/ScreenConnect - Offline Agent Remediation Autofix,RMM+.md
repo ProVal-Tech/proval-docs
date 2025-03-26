@@ -25,9 +25,9 @@ This script also allows for the creation of tickets for offline servers or broke
 
 ## Dependencies
 
-- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
-- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
-- [CWM - Automate - RMM+ Plugin Configuration](<./CWM - Automate - RMM+ Plugin Configuration.md>)
+- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
+- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
+- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 ## Variables
 
@@ -58,19 +58,19 @@ This script also allows for the creation of tickets for offline servers or broke
 
 | Name        | Example                      | Description                                                                                                                                                             |
 |-------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AgentStatus | Broken | Verified Offline | This script state is used for the dataview: [CWM - Automate - Dataview - Agent - Agent Check-in Over 30 Days](<../dataviews/Agent - Agent Check-in Over 30 Days.md>) and will display the results of this autofix. |
+| AgentStatus | Broken | Verified Offline | This script state is used for the dataview: [CWM - Automate - Dataview - Agent - Agent Check-in Over 30 Days](/docs/a326b230-2a55-42c6-a9bd-59ad1b1c3288) and will display the results of this autofix. |
 
 ## Process
 
 ### For Failed Monitor Status: 
 
-This script will first run the [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>) script to determine if the agent is online or not in CW Control. If the agent is offline in both systems, the script will create an offline server ticket if `TicketCreationCategory` is defined; otherwise, it will exit with a log message that the agent is offline in both systems. It will put this output into the `AgentStatus` script state.
+This script will first run the [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458) script to determine if the agent is online or not in CW Control. If the agent is offline in both systems, the script will create an offline server ticket if `TicketCreationCategory` is defined; otherwise, it will exit with a log message that the agent is offline in both systems. It will put this output into the `AgentStatus` script state.
 
-If the agent is found online in CW Control but offline in CW Automate, it will attempt to perform a restart of the Automate agent services on the target device. It will issue the command via the [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>) script. A command depending on the OS type will be issued.
+If the agent is found online in CW Control but offline in CW Automate, it will attempt to perform a restart of the Automate agent services on the target device. It will issue the command via the [CWM - Control - Script - CW Control RMM+ API - Execute Command*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6) script. A command depending on the OS type will be issued.
 
 After the command is issued to restart the services, the script will check for 15 minutes to see if the agent checks back in successfully in Automate. If the agent is found, the script will exit with success. It will also clear the `AgentStatus` script state from the target device.
 
-If it does not find a match, it will create a broken agent ticket if `TicketCreationCategory` is defined; otherwise, it will output a log message stating that the agent is "broken" and needs to be reinstalled manually or reviewed by a technician. The script will update the `AgentStatus` script state to indicate the agent is "broken" and needs to be reinstalled. This data is visible in the [CWM - Automate - Dataview - Agent - Agent Check-in Over 30 Days](<../dataviews/Agent - Agent Check-in Over 30 Days.md>) Info dataview.
+If it does not find a match, it will create a broken agent ticket if `TicketCreationCategory` is defined; otherwise, it will output a log message stating that the agent is "broken" and needs to be reinstalled manually or reviewed by a technician. The script will update the `AgentStatus` script state to indicate the agent is "broken" and needs to be reinstalled. This data is visible in the [CWM - Automate - Dataview - Agent - Agent Check-in Over 30 Days](/docs/a326b230-2a55-42c6-a9bd-59ad1b1c3288) Info dataview.
 
 **Offline Server Ticket Description:**  
 - **Ticket Subject:** LT - Server Offline for %Clientname%/%ComputerName% (%Computerid%)  

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This client script is designed to close the Reboot Pending tickets created by the [CWM - Automate - Script - Reboot Pending Servers per client - Ticket Creation](<./Reboot Pending Servers per client - Ticket Creation.md>) script.
+This client script is designed to close the Reboot Pending tickets created by the [CWM - Automate - Script - Reboot Pending Servers per client - Ticket Creation](/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e) script.
 
 Tickets will automatically close for servers that have already been rebooted and for clients where there are no pending server reboots.
 
@@ -24,6 +24,6 @@ It is recommended to schedule this client script to run once per day for better 
 
 ## Dependencies
 
-[CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](<./Reboot Pending Servers per client - Ticket Creation.md>)
+[CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e)
 
 

@@ -25,7 +25,7 @@ The SQL query filters the results for the patch-managed computers only. Removing
 
 ## Dependencies
 
-[plugin_proval_v_patching_metrics_overview](<../views/plugin_proval_v_patching_metrics_overview.md>)
+[plugin_proval_v_patching_metrics_overview](/docs/2a7060e4-0b45-4246-a9ea-f39818cc93e8)
 
 ## Columns
 

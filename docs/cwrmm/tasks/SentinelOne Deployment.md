@@ -22,7 +22,7 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>)
+[CW RMM - Solution - SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627)
 
 ## Variables
 

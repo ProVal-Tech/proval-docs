@@ -16,7 +16,7 @@ Stores information about Windows Update history for agents.
 
 ## Dependencies
 
-Populating script: [EPM - Script - Windows Update History Audit](<../scripts/Windows Update History Audit.md>)
+Populating script: [EPM - Script - Windows Update History Audit](/docs/d0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6)
 
 ## Tables
 

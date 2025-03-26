@@ -14,7 +14,7 @@ unlisted: false
 
 This script will remove users other than approved members from the Local Admin group. It will also add those from approved members if they are missing in the Local Admins group. This script will exit if run against a Domain Controller; otherwise, it will execute its normal functionality. The approved local admin group members can be set into the system property and EDFs described further in the document.
 
-The local account `Administrator` and the `Domain Admins` group (if the computer is joined to a domain) will be automatically approved. There is no need to add these entries to the system properties or the EDFs. Additionally, if the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) is enabled in the environment, the user created by this solution will also be added to the approved list.
+The local account `Administrator` and the `Domain Admins` group (if the computer is joined to a domain) will be automatically approved. There is no need to add these entries to the system properties or the EDFs. Additionally, if the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) is enabled in the environment, the user created by this solution will also be added to the approved list.
 
 **File Path:** `C:/ProgramData/_Automation/Script/LocalAdminCleanup/LocalAdminCleanup.ps1`
 
@@ -30,7 +30,7 @@ The local account `Administrator` and the `Domain Admins` group (if the computer
 
 ## Update Notice: 27-September-2024
 
-The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](<./Local Admin Group Cleanup - AddRemove.md>) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` as `1` to implement the changes.
+The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](/docs/e228540f-e4f4-4e67-801f-cdff876f955f) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` as `1` to implement the changes.
 
 ![Update Notice](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_1.png)
 
@@ -44,7 +44,7 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 
 ## Dependencies
 
-[EPM - User Management - Internal Monitor - Local Admin Group Cleanup](<../monitors/Local Admin Group Cleanup.md>)
+[EPM - User Management - Internal Monitor - Local Admin Group Cleanup](/docs/d49db584-9380-486d-a179-c014352f8be1)
 
 ## Variables
 

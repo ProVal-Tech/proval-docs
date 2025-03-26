@@ -25,15 +25,15 @@ Sample Ticket:
 
 - Import the script.
 - Create an alert template, such as ~Autofix - Agent ID assignment discrepancy.
-- Assign that alert template to the [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](<../monitors/Agent ID assignment discrepancy.md>) monitor set.
+- Assign that alert template to the [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](/docs/9e0a1ae1-c888-496b-b161-c154fc48466e) monitor set.
 - Import the monitor set if it has not already been imported.
 
 ## Dependencies
 
-- [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](<../monitors/Agent ID assignment discrepancy.md>)
-- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](<./ScreenConnect Client - Connectivity - Audit.md>)
-- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](<./ScreenConnect Client - Command - Execute.md>)
-- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](<./Automate Agent - Reinstall.md>)
+- [CWM - Automate - Internal Monitor - ProVal - Development - Agent ID assignment discrepancy](/docs/9e0a1ae1-c888-496b-b161-c154fc48466e)
+- [CWM - Control - Script - CW Control RMM+ API - Is Online [Properties]*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
+- [CWM - Control - Script - CW Control RMM+ API - Execute Command*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
+- [SWM - Software Install - Script - CW Control RMM+ API - LTPosh Redo-LTService*](/docs/567b8db7-a87a-45c1-a81a-b3178090fb52)
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
 - RMM+ Plugin configured in the CW Control portal
 

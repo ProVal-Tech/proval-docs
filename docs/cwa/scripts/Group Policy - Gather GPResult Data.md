@@ -20,7 +20,7 @@ This document describes a script that generates GPRESULT data and stores it in a
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>)
+- [EPM - Windows Configuration - Agnostic - Get-GPResult](/docs/f5d71bf9-29a7-4aa3-a349-0378cb97575a)
 
 ## Variables
 
@@ -28,7 +28,7 @@ This document describes a script that generates GPRESULT data and stores it in a
 
 ## Process
 
-Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](<../../powershell/Get-GPResult.md>) for detailed process information.
+Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](/docs/f5d71bf9-29a7-4aa3-a349-0378cb97575a) for detailed process information.
 
 ## Output
 

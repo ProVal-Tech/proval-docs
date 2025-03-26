@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](<./Ticket Creation - Ping Monitor.md>). It will manage emails related to remote ping monitors.
+This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22). It will manage emails related to remote ping monitors.
 
 ## Sample Run
 

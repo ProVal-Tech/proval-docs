@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script on online machines with Microsoft Office 365 installed. It will execute the script on machines that meet the criteria outlined below, based on the data stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>) script.
+This internal monitor executes the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script on online machines with Microsoft Office 365 installed. It will execute the script on machines that meet the criteria outlined below, based on the data stored by the [SWM - Script - Microsoft Office - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) script.
 
 - Update Channel should not be equal to "Current Channel"  
 OR  
@@ -22,8 +22,8 @@ AND
 
 ## Dependencies
 
-- [SWM - Script - Microsoft Office - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>)
-- [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>)
+- [SWM - Script - Microsoft Office - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e)
+- [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559)
 
 ## Target
 
@@ -33,7 +33,7 @@ Windows Machines
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
-The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](<../scripts/Microsoft 365 - Set Update Channel - Current.md>) script.
+The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script.
 
 
 

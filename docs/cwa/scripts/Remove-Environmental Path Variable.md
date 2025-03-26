@@ -28,7 +28,7 @@ This document will remove a requested Windows path from the environmental path v
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>)
+- [EPM - Windows Configuration - Agnostic - Remove-PathVariable](/docs/5eccc080-da21-4b13-b21d-df5c985a056a)
 
 ## Variables
 
@@ -43,7 +43,7 @@ Standard agnostic template variables apply.
 
 ## Process
 
-Please see the agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>) for process information.
+Please see the agnostic content document [EPM - Windows Configuration - Agnostic - Remove-PathVariable](/docs/5eccc080-da21-4b13-b21d-df5c985a056a) for process information.
 
 ## Output
 

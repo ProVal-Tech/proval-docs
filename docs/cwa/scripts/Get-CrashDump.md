@@ -28,9 +28,9 @@ This document collects information regarding any existing crash dumps.
 
 ## Dependencies
 
-- [SWM - Software Installation - Script - Winget - Install](<./Winget - InstallUpdate.md>)
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
-- [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](<../tables/plugin_proval_crash_dumps.md>)
+- [SWM - Software Installation - Script - Winget - Install](/docs/dd445ce7-a149-452c-9b35-dc1adbab4e06)
+- [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+- [EPM - Data Collection - Custom Table - plugin_proval_crash_dumps](/docs/e562d1d6-a18e-4941-be1b-95117d0b2fa6)
 
 ## Variables
 

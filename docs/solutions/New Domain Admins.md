@@ -18,24 +18,24 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Machine Group - Domain Controllers](<../cwrmm/groups/Domain Controllers.md>) | Group | Stores the Domain Controllers in a single place. |
-| [Custom Field - Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
-| [Task - Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>). |
-| [Machine Group - Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>) | Group | Stores all the available infrastructure masters in a single place. |
-| [Custom Field - New Domain Admins](<../cwrmm/custom-fields/New Domain Admins.md>) | Custom Field | Stores the information of the new domain admins returned by the [New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>) task. |
-| [Task - New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>) | Task | Checks and returns the newly detected domain admin(s) since the previous execution of the task. |
+| [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Group | Stores the Domain Controllers in a single place. |
+| [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
+| [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
+| [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Group | Stores all the available infrastructure masters in a single place. |
+| [Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626) | Custom Field | Stores the information of the new domain admins returned by the [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82) task. |
+| [Task - New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82) | Task | Checks and returns the newly detected domain admin(s) since the previous execution of the task. |
 
 ## Implementation
 
 - Read all the associated documents carefully.
-- Create the custom field: [Is Primary Domain Controller](<../cwrmm/custom-fields/Is Primary Domain Controller.md>).
-- Create the Machine Group: [Domain Controllers](<../cwrmm/groups/Domain Controllers.md>).
-- Create the task: [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>).
-- Create the deployment schedule as described in this document: [Validate Primary Domain Controller](<../cwrmm/tasks/Validate Primary Domain Controller.md>).
-- Create the custom field: [New Domain Admins](<../cwrmm/custom-fields/New Domain Admins.md>).
-- Create the Machine Group: [Infrastructure Master](<../cwrmm/groups/Infrastructure Master.md>).
-- Create the task: [New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>).
-- Create the deployment schedule as described in this document: [New Domain Admins](<../cwrmm/tasks/New Domain Admins.md>).
+- Create the custom field: [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae).
+- Create the Machine Group: [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68).
+- Create the task: [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168).
+- Create the deployment schedule as described in this document: [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168).
+- Create the custom field: [New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626).
+- Create the Machine Group: [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8).
+- Create the task: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
+- Create the deployment schedule as described in this document: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
 
 
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser](<../../powershell/Set-LastLoggedOnUser.md>) to manage the last logged-in user's information displayed on the Windows login screen.
+This is an Automate implementation of the agnostic script [Set-LastLoggedOnUser](/docs/d657bd73-5526-4f27-93bb-9dbae3fe2f6e) to manage the last logged-in user's information displayed on the Windows login screen.
 
 **Notes:**
 - The user must have logged on to the computer at least once to be set on the login screen by this script.

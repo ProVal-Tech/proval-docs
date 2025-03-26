@@ -16,7 +16,7 @@ This document presents two views that categorize agents based on their compatibi
 
 # Dependencies
 
-All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance](<../../solutions/VSA Proval Script Compliancy.md>)
+All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance](/docs/9ec556eb-e7b8-410d-8f03-0dcb0a8b549b)
 
 # View Filters
 

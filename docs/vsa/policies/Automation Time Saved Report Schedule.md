@@ -12,16 +12,16 @@ unlisted: false
 
 # Summary
 
-Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
+Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](/docs/52d14c0f-fe3e-4520-bed5-b05db491bf26)
 
 # Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](/docs/81ac366c-a635-4419-9a29-94a1fe7ddac0)
 
 # Details
 
 - **Policy Name**: Automation Time Saved Report (VSA Server, API Call)
-- **Policy Description**: Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](<../procedures/Automation Time Saved Reports.md>)
+- **Policy Description**: Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation Time Saved Reports](/docs/52d14c0f-fe3e-4520-bed5-b05db491bf26)
 - **Applied View**: xPVAL VSA Server
 - **Assigned Organizations / Machine Groups**: N/A
 - **Assigned Machines**: N/A

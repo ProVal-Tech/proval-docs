@@ -18,7 +18,7 @@ Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only
 ---
 
 ### 2.
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md) script was imported as well.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9) script was imported as well.
 
 ---
 

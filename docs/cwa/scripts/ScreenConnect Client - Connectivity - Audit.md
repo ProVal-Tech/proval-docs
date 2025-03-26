@@ -51,7 +51,7 @@ Reference: [https://proval.itglue.com/5078775/docs/9770217](https://proval.itglu
 
 | Name                             | Example                   | Description                                                                                                                                                                                                         |
 |----------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [CWM - Automate - Dataview - Agent - Agent Check-in Health](<../dataviews/Agent - Agent Check-in Health.md>) dataview. |
+| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [CWM - Automate - Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642) dataview. |
 
 ## Output
 

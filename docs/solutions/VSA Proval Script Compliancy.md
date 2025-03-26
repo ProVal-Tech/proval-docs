@@ -18,9 +18,9 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 
 | Content                                                                                                                                                                             | Type | Function                                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|--------------------------------------------------|
-| [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](<../vsa/custom-fields/xPVAL ProVal Compatible Endpoint.md>)                                                         | CF   | Contains compatibility data per endpoint         |
+| [EPM - Data Collection - Custom Field - xPVAL ProVal Compatible Endpoint](/docs/2606c04a-819a-476f-b91d-c45a92613212)                                                         | CF   | Contains compatibility data per endpoint         |
 | [EPM - Data Collection - View - xPVAL ProVal Compatible Endpoint xPVAL ProVal Incompatible Endpoint](<../vsa/views/xPVAL ProVal Compatible Endpoint xPVAL ProVal Incompatible Endpoint.md>)                               | View | Views to display compatible/incompatible agents in the VSA |
-| [EPM - Data Collection - Agent Procedure - VSA Proval Script Compliancy Update](<../vsa/procedures/VSA Proval Script Compliancy Update.md>)                                                 | AP   | Adds compatibility data to the CF                |
+| [EPM - Data Collection - Agent Procedure - VSA Proval Script Compliancy Update](/docs/a62d8c2e-ca6e-4f12-98d3-4f26783cb701)                                                 | AP   | Adds compatibility data to the CF                |
 
 ## Implementation
 

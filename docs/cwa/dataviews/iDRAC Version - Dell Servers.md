@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>) should be scheduled to run daily on the "Dell Servers" group to gather the corresponding data.
+This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC Version - Dell Servers [DV]](/docs/4545d115-22d7-451c-935b-fe8ca67f17e7) should be scheduled to run daily on the "Dell Servers" group to gather the corresponding data.
 
 ## Dependencies
 
-[Get iDRAC Version - Dell Servers [DV]](<../scripts/Get iDRAC Version - Dell Servers DV.md>)
+[Get iDRAC Version - Dell Servers [DV]](/docs/4545d115-22d7-451c-935b-fe8ca67f17e7)
 
 ## Columns
 

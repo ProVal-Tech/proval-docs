@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script covers the alerting section of the [Password Expires This Week [G]](<../monitors/Password Expires This Week G.md>) monitor set. Various options for alerting can be configured from Global Variables.
+The script covers the alerting section of the [Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set. Various options for alerting can be configured from Global Variables.
 
 **Note:** The contact must be present in CW Manage to associate with the ticket.
 
@@ -81,7 +81,7 @@ It is an Autofix script to be executed via `△ Custom - Password Expiration Not
 
 ## Dependencies
 
-[RSM - Active Directory - Monitor - Password Expires This Week [G]](<../monitors/Password Expires This Week G.md>)
+[RSM - Active Directory - Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)
 
 ## Variables
 

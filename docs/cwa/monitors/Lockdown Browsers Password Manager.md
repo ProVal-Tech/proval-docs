@@ -40,7 +40,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 **Suggested Alert Style:** Continuous  
 **Suggested Alert Template:** Default - Do Nothing  
 
-**Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Browsers Password Lockdown - Status](<../dataviews/Browsers Password Lockdown - Status.md>) dataview.**
+**Using any alert templates is not recommended unless the partner specifically desires an alert for failures. The remote monitor records both its successes and failures in the [Browsers Password Lockdown - Status](/docs/6f3ffa7f-a21e-416d-ba2f-7450a95f3ad7) dataview.**
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|-------------|----------|--------|
@@ -53,7 +53,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 **Search:** `Lockdown Browsers Autofill`  
 **Search:** `Lockdown Browsers Password Manager`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Dataview:** [EPM - Software Configuration - Dataview - Browsers Password Lockdown - Status](<../dataviews/Browsers Password Lockdown - Status.md>)  
+**Dataview:** [EPM - Software Configuration - Dataview - Browsers Password Lockdown - Status](/docs/6f3ffa7f-a21e-416d-ba2f-7450a95f3ad7)  
 
 ## Target
 

@@ -22,7 +22,7 @@ This script provides detailed information about the TPM configuration on the end
 
 ## Dependencies
 
-[TPM Detailed Info](<../dataviews/TPM Detailed Info.md>)
+[TPM Detailed Info](/docs/3210ea64-6a5d-416d-aea8-8e5399c0e62c)
 
 ## Variables
 
@@ -47,7 +47,7 @@ This script provides detailed information about the TPM configuration on the end
 ## Process
 
 - The PowerShell script gathers the relevant TPM details.
-- It stores the output of the PowerShell script to a script state. This data is then visible in the [TPM Detailed Info](<../dataviews/TPM Detailed Info.md>) dataview.
+- It stores the output of the PowerShell script to a script state. This data is then visible in the [TPM Detailed Info](/docs/3210ea64-6a5d-416d-aea8-8e5399c0e62c) dataview.
 
 ## Output
 

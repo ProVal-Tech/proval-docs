@@ -16,7 +16,7 @@ This internal monitor detects offline servers based on the last contact and last
 
 ## Dependencies
 
-[CWM - Automate - Script - Agent - Remote Repair - RMM +](<../scripts/Agent - Remote Repair - RMM +.md>)
+[CWM - Automate - Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462)
 
 ## Properties
 

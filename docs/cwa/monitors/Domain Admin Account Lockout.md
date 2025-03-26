@@ -29,7 +29,7 @@ This remote monitor is configured to detect when the domain admin account is loc
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>)  
+[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)  
 `△ Custom - Ticket Creation Computer - Failures Only`
 
 ## Target
@@ -58,7 +58,7 @@ Domain Admin Locked Account Detected on %computername%. Refer to the below detai
 Import the alert template '`△ Custom - Ticket Creation Computer - Failures Only`'.
 
 ### 2. Validate the Script
-Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](../scripts/Ticket Creation - Computer Failures Only.md) script was imported as well and that the alert template is executing this script for failures only.
+Validate that the [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9) script was imported as well and that the alert template is executing this script for failures only.
 
 ### 3. Run SQL Query
 Run this SQL query from a RAWSQL monitor set to create and set the remote monitor on the Domain Controllers group and limit it to the server role - AD Infrastructure Master.

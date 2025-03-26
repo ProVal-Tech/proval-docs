@@ -20,38 +20,38 @@ This solution provides information on a workstation's battery state.
 
 | Content                                                                                     | Type             | Function                                                      |
 |---------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------------|
-| [Script - Property - Set](<../cwa/scripts/Property - Set.md>)                             | Automate Script   | Sets Computer or System Property.                             |
-| [Script - Get - Battery Report](<../cwa/scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>) | Automate Script   | Places Battery data in a custom table.                       |
-| [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>) | Internal Monitor   | Checks for any machine that has not reported.                |
+| [Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb)                             | Automate Script   | Sets Computer or System Property.                             |
+| [Script - Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) | Automate Script   | Places Battery data in a custom table.                       |
+| [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](/docs/43fcbb27-0955-4270-9460-33c5e8ccceef) | Internal Monitor   | Checks for any machine that has not reported.                |
 | △ CUSTOM - Execute Script - Get-BatteryReport                                              | Alert Template    | Executes the data collection script on the machines detected by the internal monitor. |
-| [Dataview - Proval - Battery Report](<../cwa/dataviews/Battery Report.md>)               | Dataview         | Displays Battery report information and calculates battery state using global or computer thresholds. |
+| [Dataview - Proval - Battery Report](/docs/f79eac19-1ead-42bb-903b-8f3bc7dc4bd1)               | Dataview         | Displays Battery report information and calculates battery state using global or computer thresholds. |
 
 ### Other Content
 
 | Content                                                                                     | Type             | Function                                                      |
 |---------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------------|
-| [Custom Table - plugin_proval_batteries](<../cwa/tables/plugin_proval_batteries.md>)     | Custom Table      | Stores Battery Information for each target.                  |
+| [Custom Table - plugin_proval_batteries](/docs/5507c4d8-9cfc-4d67-9c84-7cbad5a37de1)     | Custom Table      | Stores Battery Information for each target.                  |
 | [Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)       | Agnostic Script    | Collects Battery report data and returns it as an object.    |
 
 ## Implementation
 
 1. **Import the following scripts using the ProSync Plugin:**
-   - [Script - Property - Set](<../cwa/scripts/Property - Set.md>)
-   - [Script - Get - Battery Report](<../cwa/scripts/EPM - Data Collection - Automate - Script Get - Battery Report.md>)
+   - [Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb)
+   - [Script - Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865)
 
 2. **Import the following Dataview using the ProSync Plugin:**
-   - [Dataview - Proval - Battery Report](<../cwa/dataviews/Battery Report.md>)
+   - [Dataview - Proval - Battery Report](/docs/f79eac19-1ead-42bb-903b-8f3bc7dc4bd1)
 
 3. **Import the following Internal Monitor using the ProSync Plugin:**
-   - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>)
+   - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](/docs/43fcbb27-0955-4270-9460-33c5e8ccceef)
 
 4. **Import the following alert template using the ProSync Plugin:**
    - `△ CUSTOM - Execute Script - Get-BatteryReport`
 
-5. **Using [CWM - Automate - Script - Property - Set](<../cwa/scripts/Property - Set.md>), set up a property named Proval-BatteryThreshold, with a value of your choosing in percent without the percent sign, with a type of Global and overwrite equal to 1.**
+5. **Using [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb), set up a property named Proval-BatteryThreshold, with a value of your choosing in percent without the percent sign, with a type of Global and overwrite equal to 1.**
    - If a custom threshold is not provided by the consultant, please set it to 70.
      - No tickets will be generated from this solution. This is strictly for the dataview to report the threshold violations.
-   - **OPTIONAL:** Using [CWM - Automate - Script - Property - Set](<../cwa/scripts/Property - Set.md>), set up any computer-specific property named Proval-BatteryThreshold, with a value of your choosing in percent without the percent sign, with a type of Computer and overwrite equal to 1.
+   - **OPTIONAL:** Using [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb), set up any computer-specific property named Proval-BatteryThreshold, with a value of your choosing in percent without the percent sign, with a type of Computer and overwrite equal to 1.
      - Only perform this step if instructed to do so by the consultant.
 
 6. **Reload the System Cache:**
@@ -59,7 +59,7 @@ This solution provides information on a workstation's battery state.
 
 7. **Configure the solution as follows:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](<../cwa/monitors/Get-BatteryReport.md>)
+     - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](/docs/43fcbb27-0955-4270-9460-33c5e8ccceef)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
 

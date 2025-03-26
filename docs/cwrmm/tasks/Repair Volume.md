@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines how to run a PowerShell equivalent of chkdsk on any or all drives, with the option to repair if desired. It provides a ConnectWise RMM implementation of the [Invoke-RepairVolume](<../../powershell/Invoke-RepairVolume.md>) agnostic script.
+This document outlines how to run a PowerShell equivalent of chkdsk on any or all drives, with the option to repair if desired. It provides a ConnectWise RMM implementation of the [Invoke-RepairVolume](/docs/5fc50641-00ec-41c0-b4c8-472d93cd8cfe) agnostic script.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document outlines how to run a PowerShell equivalent of chkdsk on any or al
 
 ## Dependencies
 
-[EPM - Disk - Agnostic - Script - Invoke-RepairVolume](<../../powershell/Invoke-RepairVolume.md>)
+[EPM - Disk - Agnostic - Script - Invoke-RepairVolume](/docs/5fc50641-00ec-41c0-b4c8-472d93cd8cfe)
 
 ## User Parameters
 

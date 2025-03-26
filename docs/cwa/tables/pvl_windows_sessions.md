@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the output of the `query session` command returned by the [CWM - Automate - Script - Windows Sessions [DV, Globals]](<../scripts/Windows Sessions DV, Globals.md>) script.
+Stores the output of the `query session` command returned by the [CWM - Automate - Script - Windows Sessions [DV, Globals]](/docs/7d803c02-dd33-4a82-810e-02b4820ae88b) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Windows Sessions [DV, Globals]](<../scripts/Windows Sessions DV, Globals.md>)
+[CWM - Automate - Script - Windows Sessions [DV, Globals]](/docs/7d803c02-dd33-4a82-810e-02b4820ae88b)
 
 ## Tables
 

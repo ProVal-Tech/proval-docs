@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>) script, including the `Everything` service.
+The script removes the residuals left by the [Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba) script, including the `Everything` service.
 
 ## Sample Run
 
@@ -20,6 +20,6 @@ The script removes the residuals left by the [Log4J (Log4Shell) File Scan](<./Lo
 
 ## Dependencies
 
-[SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](<./Log4J (Log4Shell) File Scan.md>)
+[SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba)
 
 

@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>) script and the [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>) monitor set.
+This dataview tracks the progress of the [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](/docs/af9266ed-a796-49b5-b497-944836e23b8c) script and the [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](/docs/74e11590-49e4-445b-a380-18d2914f9f3f) monitor set.
 
 ## Dependencies
 
-- [MS-MSDT Registry Key](<../roles/MS-MSDT Registry Key.md>)
-- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](<../monitors/Microsoft Support Diagnostic Tool Vulnerability G.md>)
-- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](<../scripts/Workaround - Microsoft Support Diagnostic Tool Vulnerability.md>)
-- [CVE-2022-30190 MSDT - Workarounds](<../../solutions/CVE-2022-30190 MSDT Vulnerability - Workarounds.md>)
+- [MS-MSDT Registry Key](/docs/174939f4-d7d5-4c92-9813-308db2c2b0c3)
+- [ProVal - Development - Workaround - Microsoft Support Diagnostic Tool Vulnerability [G]](/docs/74e11590-49e4-445b-a380-18d2914f9f3f)
+- [Workaround - Microsoft Support Diagnostic Tool Vulnerability [Param][Autofix][DV]](/docs/af9266ed-a796-49b5-b497-944836e23b8c)
+- [CVE-2022-30190 MSDT - Workarounds](/docs/7736f421-bfd6-41c0-ba75-5eba3bc82f78)
 
 ## Columns
 

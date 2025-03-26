@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script will uninstall CW Control and call the [Offboarding - CW Control RMM+ API - EndSession Command](<./ScreenConnect - End Session Command RMM+.md>) script to end the session from the CW Control web portal.
+This script will uninstall CW Control and call the [Offboarding - CW Control RMM+ API - EndSession Command](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021) script to end the session from the CW Control web portal.
 
 **Time Saved by Automation:** 10 Minutes
 
@@ -22,7 +22,7 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 ## Dependencies
 
-[Offboarding - CW Control RMM+ API - EndSession Command](<./ScreenConnect - End Session Command RMM+.md>)
+[Offboarding - CW Control RMM+ API - EndSession Command](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021)
 
 ## Process
 

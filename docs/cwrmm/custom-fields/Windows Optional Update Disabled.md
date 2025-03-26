@@ -16,7 +16,7 @@ This document stores "Disabled" if the Windows optional update is disabled by th
 
 ## Dependencies
 
-[CW RMM - Task - Disable Windows Optional/Automatic Updates](<../tasks/Disable Windows OptionalAutomatic Updates.md>)
+[CW RMM - Task - Disable Windows Optional/Automatic Updates](/docs/1ce60c7e-e23d-4313-bb00-7e89ae031d7f)
 
 ## Details
 

@@ -12,14 +12,14 @@ unlisted: false
 
 ## Purpose
 
-Holds populated data from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
-Created from [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)  
+Holds populated data from [EPM - Disk - Agnostic - Get-CriticalDiskInfo](/docs/880d2a63-b304-40a3-8ec3-1fb13b272fa7)  
+Created from [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6)  
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](<../../powershell/Get-CriticalDiskInfo.md>)  
-- [EPM - Disk - Script - Disk - Gather Critical Info](<../scripts/Disk - Gather Critical Info - Deprecated and replaced.md>)  
-- [CWM - Automate - Dataview - Disk - Critical Data](<../dataviews/Disk - Critical Data.md>)  
+- [EPM - Disk - Agnostic - Get-CriticalDiskInfo](/docs/880d2a63-b304-40a3-8ec3-1fb13b272fa7)  
+- [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6)  
+- [CWM - Automate - Dataview - Disk - Critical Data](/docs/8a8b76b2-aa25-419c-b193-aa98f54ef274)  
 
 ## Tables
 

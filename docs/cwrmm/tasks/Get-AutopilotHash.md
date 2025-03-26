@@ -4,14 +4,14 @@ slug: /09fb13cb-05b1-4515-8041-128689d933ff
 title: 'Get-AutopilotHash'
 title_meta: 'Get-AutopilotHash'
 keywords:  ['autopilot', 'hash', 'device', 'registration']
-description: 'This the RMMM version of Automate script [Get-AutopilotHash](<../../cwa/scripts/Get-AutopilotHash.md>)'
+description: 'This the RMMM version of Automate script [Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806)'
 tags: ['setup']
 draft: False
 unlisted: false
 ---
 
 ## Summary
-This the RMM version of Automate script [Get-AutopilotHash](<../../cwa/scripts/Get-AutopilotHash.md>). It retrieves the Hardware Hash required for Autopilot device registration.
+This the RMM version of Automate script [Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806). It retrieves the Hardware Hash required for Autopilot device registration.
 
 Note: The Hardware Hash cannot be stored in a custom field due to character limitations. Check the script logs to view the Hash key of a device.
 

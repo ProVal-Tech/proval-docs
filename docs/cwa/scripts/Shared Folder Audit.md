@@ -22,7 +22,7 @@ This script collects information about shared folder details such as Share Name,
 
 ## Dependencies
 
-[Shared Folder Audit](<../dataviews/Shared Folder Audit.md>)
+[Shared Folder Audit](/docs/1f703da4-d3a2-4a39-9549-58c280665eeb)
 
 ## Variables
 

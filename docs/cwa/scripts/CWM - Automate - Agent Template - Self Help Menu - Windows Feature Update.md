@@ -15,15 +15,15 @@ unlisted: false
 This article outlines the process to add the `Windows Feature Update` option in the `Self Help` menu.  
 ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_1.png)  
 
-The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](<./Install Windows Upgrade.md>) to install the latest available feature pack for the computer.
+The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28) to install the latest available feature pack for the computer.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Install Windows Upgrade](<./Install Windows Upgrade.md>)  
+[EPM - Windows Configuration - Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  
 
 ## Implementation
 
-1. Update/Import the [Install Windows Upgrade](<./Install Windows Upgrade.md>) using the `Prosync` Plugin.
+1. Update/Import the [Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28) using the `Prosync` Plugin.
 
 2. Reload System Cache:  
    ![Image](../../../static/img/CWM---Automate---Agent-Template---Self-Help-Menu---Windows-Feature-Update/image_2.png)  

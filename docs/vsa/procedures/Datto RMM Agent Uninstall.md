@@ -39,7 +39,7 @@ This document outlines the steps to remove Datto RMM from a Mac or Windows endpo
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-DattoRmmAgent](<../../powershell/Remove-DattoRmmAgent.md>)
+[SWM - Software Uninstall - Agnostic - Remove-DattoRmmAgent](/docs/2a4259c9-915e-42de-a5d4-3d92dca5a8a1)
 
 ## Process
 

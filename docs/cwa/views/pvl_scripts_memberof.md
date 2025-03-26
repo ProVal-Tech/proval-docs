@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Serves as the base table for the [CWM - Automate - Dataview - Scripts - MemberOf](<../dataviews/Scripts - MemberOf.md>) dataview.
+Serves as the base table for the [CWM - Automate - Dataview - Scripts - MemberOf](/docs/83b99c1b-d471-41f1-9755-af3a2ab1abf0) dataview.
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](<../scripts/MySQL - View - Create (pvl_scripts_memberof).md>)
+[CWM - Automate - Script - MySQL - View - Create (pvl_scripts_memberof)](/docs/8c15555e-049e-4bf3-8a29-6446e2b2d05d)
 
 ## Tables
 

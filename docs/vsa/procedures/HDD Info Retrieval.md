@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document retrieves useful disk drive information and saves it to a CSV file on the endpoint for client ingestion. It is an agnostic stack implementation of [EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>).
+This document retrieves useful disk drive information and saves it to a CSV file on the endpoint for client ingestion. It is an agnostic stack implementation of [EPM - Disk - Agnostic - Get-DiskInfo](/docs/5cba460d-9322-4c3b-9630-55cb46d57b1a).
 
 ## Example Agent Procedure Log
 
@@ -39,7 +39,7 @@ This document retrieves useful disk drive information and saves it to a CSV file
 
 ## Dependencies
 
-[EPM - Disk - Agnostic - Get-DiskInfo](<../../powershell/Get-DiskInfo.md>)
+[EPM - Disk - Agnostic - Get-DiskInfo](/docs/5cba460d-9322-4c3b-9630-55cb46d57b1a)
 
 ## Process
 

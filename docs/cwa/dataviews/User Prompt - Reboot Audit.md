@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The dataview tracks the functioning of the [User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) solution.
+The dataview tracks the functioning of the [User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a) solution.
 
 ## Dependencies
 
 - [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](<../scripts/Reset Reboot Pending EDFs.md>)
+- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
 
 ## Columns
 

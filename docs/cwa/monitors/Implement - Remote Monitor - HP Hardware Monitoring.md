@@ -16,7 +16,7 @@ unlisted: false
 Import the Alert Template `△ Custom - Ticket Creation Computer`. The alert template should not be performing any action for the `Warning` state.
 
 ### 2. Validate the Script
-Validate that the [Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>) script was imported as well.
+Validate that the [Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script was imported as well.
 
 ### 3. Run SQL Query
 Run this SQL query from a RAWSQL monitor set to import the required search.

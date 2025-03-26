@@ -21,11 +21,11 @@ The script clears the related custom fields on machines where the Feature Update
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](<../custom-fields/WinFeatUpgradeAttempts.md>)
-- [CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)
-- [CW RMM - Device Group - Feature Pack Update - Updated Computers](<../groups/Feature Pack Update - Updated Computers.md>)
+- [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
+- [CW RMM - Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
+- [CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
+- [CW RMM - Device Group - Feature Pack Update - Updated Computers](/docs/72490aca-9d0d-47b9-88a9-437279e21d7a)
 
 ## Create Script
 

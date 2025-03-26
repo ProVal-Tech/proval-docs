@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
+This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
 
 This script sends emails to two different addresses:
 

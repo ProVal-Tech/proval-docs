@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Runs [Install-FeatureUpdate](<../powershell/Install-FeatureUpdate.md>) on the endpoint to install the latest Windows Feature Update.
+Runs [Install-FeatureUpdate](/docs/b46b5ae2-47fe-43b7-ab91-f6901645b2fd) on the endpoint to install the latest Windows Feature Update.
 
 ## Dependencies
 

@@ -21,9 +21,9 @@ Verify if a Windows 10 PC is compatible with Windows 11.
 
 ## Dependencies
 
-- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>)  
-- [CW RMM - Custom Field - Endpoint - Windows 11 incompatibility Base](<../custom-fields/Endpoint - Windows 11 incompatibility Base.md>)  
-- [CW RMM - Device Group - Windows 10 Machines](<../groups/Windows 10 Machines.md>)  
+- [CW RMM - Device Group - Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96)  
+- [CW RMM - Custom Field - Endpoint - Windows 11 incompatibility Base](/docs/7894870c-b7e8-44e0-806c-c948f151fc49)  
+- [CW RMM - Device Group - Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a)  
 
 ## Variables
 
@@ -185,7 +185,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per month against [Windows 10 Machines](<../groups/Windows 10 Machines.md>).
+It is suggested to run the Task once per month against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a).
 
 - Go to `Automation` > `Tasks.`
 - Search for `Windows 10 Machines` Task.
@@ -200,7 +200,7 @@ It is suggested to run the Task once per month against [Windows 10 Machines](<..
 ![Save Schedule Image](../../../static/img/Windows-11-Compatibility-Validation/image_42.png)  
 - Click the `Select Targets` button to select the concerned target.  
 ![Select Targets Image](../../../static/img/Windows-11-Compatibility-Validation/image_43.png)  
-- Search and select the [Windows 10 Machines](<../groups/Windows 10 Machines.md>) Device Group for the target.  
+- Search and select the [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) Device Group for the target.  
 ![Device Group Selection Image](../../../static/img/Windows-11-Compatibility-Validation/image_44.png)  
 - Click the `Run` button to initiate the schedule.  
 ![Run Task Image](../../../static/img/Windows-11-Compatibility-Validation/image_45.png)  

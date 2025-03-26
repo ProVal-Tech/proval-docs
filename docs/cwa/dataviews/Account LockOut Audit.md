@@ -16,8 +16,8 @@ This document provides detailed information about account locks for both local a
 
 ## Dependencies
 
-- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
-- [plugin_proval_account_lock](<../../cwa/tables/plugin_proval_account_lock.md>)
+- [User Management - Account Lockout Audit](/docs/c7996686-560d-47e2-acbf-99ae88c3102e)
+- [plugin_proval_account_lock](/docs/11fad349-3b51-4bfd-8f45-d07db1827543)
 
 ## Columns
 

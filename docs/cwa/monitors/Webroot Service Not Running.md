@@ -16,13 +16,13 @@ Alerts on targets where the Webroot Service is present but not running.
 
 ## Details
 
-Created By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>) document.
+Created By: Follow instructions in the Audit Section of the [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d) document.
 
 ## Dependencies
 
 This section should list the ITGlue documents referenced in the Related Items sidebar on which this monitor depends.
 
-- [SWM - Software Install - Solution - Webroot](<../../solutions/Webroot.md>)
+- [SWM - Software Install - Solution - Webroot](/docs/2b4f5b7f-0275-4114-8686-0084c1741c9d)
 
 ## Target
 

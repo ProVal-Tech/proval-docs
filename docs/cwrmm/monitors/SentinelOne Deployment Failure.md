@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](<../tasks/SentinelOne Deployment.md>) fails to install SentinelOne on the machines.
+This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](/docs/25651d1f-99d6-4906-8666-220994a4862e) fails to install SentinelOne on the machines.
 
 ## Dependencies
 
-- [CW RMM - Task - SentinelOne Deployment](<../tasks/SentinelOne Deployment.md>)
-- [CW RMM - Custom Field - Endpoint - SentinelOne Deployment Result](<../custom-fields/Endpoint - SentinelOne Deployment Result.md>)
+- [CW RMM - Task - SentinelOne Deployment](/docs/25651d1f-99d6-4906-8666-220994a4862e)
+- [CW RMM - Custom Field - Endpoint - SentinelOne Deployment Result](/docs/7af6b9e0-bf2f-4705-874e-c58c5fa9171d)
 
 ## Monitor
 

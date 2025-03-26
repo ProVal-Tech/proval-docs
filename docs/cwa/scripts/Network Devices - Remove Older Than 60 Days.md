@@ -18,7 +18,7 @@ The script removes network devices that have not been online for 60 days. It sho
 
 ## Dependencies
 
-[Network Devices Not Contacted for 60 Days](<../dataviews/Network Devices Not Contacted from 60 Days.md>)  
+[Network Devices Not Contacted for 60 Days](/docs/a54c73f8-ca6b-4adb-988c-705818e804f7)  
 @Network Device Not Contacted From 60 Days Detection
 
 ## Process

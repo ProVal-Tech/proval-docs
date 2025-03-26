@@ -16,7 +16,7 @@ Set this custom flag to true to exclude an endpoint from SentinelOne deployment.
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](<../../solutions/SentinelOne Deployment.md>)
+[CW RMM - Solution - SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627)
 
 ## Details
 

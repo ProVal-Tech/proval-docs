@@ -16,7 +16,7 @@ This dataview pulls information regarding file shares and permissions from the s
 
 ## Dependencies
 
-- [Shared Folder Audit](<../scripts/Shared Folder Audit.md>)
+- [Shared Folder Audit](/docs/dc9e4596-2cce-49b2-9f64-d6dfd46ac1ec)
 
 ## Columns
 

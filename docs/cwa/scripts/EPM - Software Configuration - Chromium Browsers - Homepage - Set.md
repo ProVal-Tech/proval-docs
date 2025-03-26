@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document presents an automated implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) to enforce a homepage for Chromium-based browsers. The supported browsers are `Google Chrome` and `Microsoft Edge`.
+This document presents an automated implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab) to enforce a homepage for Chromium-based browsers. The supported browsers are `Google Chrome` and `Microsoft Edge`.
 
 The `Browser` parameter can be used to specify the browser's name.
 
@@ -29,7 +29,7 @@ The `Browser` parameter can be used to specify the browser's name.
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>)
+[SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
 #### User Parameters
 

@@ -44,4 +44,4 @@ Managed Windows Machines
 
 ## Implementation
 
-[Import - Remote Monitor - Set-PsRepository PSGallery](<./Import-Remote-Monitor-Set-PsRepository-PSGallery.md>)
+[Import - Remote Monitor - Set-PsRepository PSGallery](/docs/5cb1373f-6cdc-4576-8b3e-e8bfc4d664de)

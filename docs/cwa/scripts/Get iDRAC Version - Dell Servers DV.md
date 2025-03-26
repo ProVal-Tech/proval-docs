@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script will fetch the version of iDRAC from Dell servers. The script output will be stored in a script state, which is used by the dataview [iDRAC Version - Dell Servers](<../dataviews/iDRAC Version - Dell Servers.md>).
+The script will fetch the version of iDRAC from Dell servers. The script output will be stored in a script state, which is used by the dataview [iDRAC Version - Dell Servers](/docs/d2168fe5-e9f2-4265-ad4d-ce98ee14cf26).
 
 **Time Saved by Automation:** 5 Minutes
 

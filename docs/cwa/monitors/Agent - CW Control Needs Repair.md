@@ -16,7 +16,7 @@ This monitor will locate broken CWControl installations on agents and optionally
 
 ## Dependencies
 
-[CWM - Control - Script - CW Control - Repair [RMM+, Autofix, Globals]](<../scripts/ScreenConnect - Repair RMM+, Autofix, Globals.md>)
+[CWM - Control - Script - CW Control - Repair [RMM+, Autofix, Globals]](/docs/43225bbe-98a0-4352-8fb2-79e7431dea10)
 
 ## Target
 

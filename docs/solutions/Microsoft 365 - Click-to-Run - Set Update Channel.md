@@ -18,18 +18,18 @@ The purpose of this solution is to set the update channel for Microsoft 365 prod
 
 | Content                                                                                         | Type        | Function                                                                                                      |
 |-------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Custom Field - Client - Update Channel](<../cwrmm/custom-fields/Client - Update Channel.md>) | Custom Field | Select Channel Type from the drop-down menu for all computers within the client.                             |
-| [CW RMM - Custom Field - Endpoint - Update Channel](<../cwrmm/custom-fields/Endpoint - Update Channel.md>) | Custom Field | Select Channel Type from the drop-down menu for that particular computer.                                   |
-| [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](<../cwrmm/tasks/Microsoft 365 - Click-to-Run - Set Update Channel.md>) | Task        | This will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the client or computer-level custom fields `Update Channel`. |
+| [CW RMM - Custom Field - Client - Update Channel](/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc) | Custom Field | Select Channel Type from the drop-down menu for all computers within the client.                             |
+| [CW RMM - Custom Field - Endpoint - Update Channel](/docs/772c0498-4505-4f1c-afc4-46788294b3e2) | Custom Field | Select Channel Type from the drop-down menu for that particular computer.                                   |
+| [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/3627ba40-ca53-4583-8435-bb09bdb03f20) | Task        | This will make changes in the registry to set the update channel for Microsoft 365 products to the value set in the client or computer-level custom fields `Update Channel`. |
 
 ## Implementation
 
 Create the following custom fields:
-- [CW RMM - Custom Field - Client - Update Channel](<../cwrmm/custom-fields/Client - Update Channel.md>)
-- [CW RMM - Custom Field - Endpoint - Update Channel](<../cwrmm/custom-fields/Endpoint - Update Channel.md>)
+- [CW RMM - Custom Field - Client - Update Channel](/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc)
+- [CW RMM - Custom Field - Endpoint - Update Channel](/docs/772c0498-4505-4f1c-afc4-46788294b3e2)
 
 Create and schedule this task:
-- [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](<../cwrmm/tasks/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
+- [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/3627ba40-ca53-4583-8435-bb09bdb03f20)
 
 
 

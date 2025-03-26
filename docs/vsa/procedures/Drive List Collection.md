@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script polls for physical, non-removable drives with a capacity greater than 10GB and places the available drive letters in [EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>).
+This script polls for physical, non-removable drives with a capacity greater than 10GB and places the available drive letters in [EPM - Disk - Custom Field - xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a).
 
 ## Sample Run
 
@@ -37,7 +37,7 @@ The script queries the endpoint for physical, non-removable drives with a capaci
 ## Output
 
 Agent Procedure Log  
-[EPM - Disk - Custom Field - xPVAL Drive List](<../custom-fields/xPVAL Drive List.md>)
+[EPM - Disk - Custom Field - xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)
 
 
 

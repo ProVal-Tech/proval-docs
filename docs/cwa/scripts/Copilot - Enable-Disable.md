@@ -30,11 +30,11 @@ F02B553A62B90CE5720647FDADB568E8
 
 ## Dependencies
 
-[Monitor_Copilot_Disable_&_Uninstall](<../monitors/Copilot Disable and Uninstall.md>)
+[Monitor_Copilot_Disable_&_Uninstall](/docs/d87e16ae-34f2-43ba-a84d-061abc69d716)
 
-[Monitor_Copilot_Revert_Deployment](<../monitors/Copilot Revert Deployment.md>)
+[Monitor_Copilot_Revert_Deployment](/docs/5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2)
 
-[DV_Copilot_Enable_Disable](<../dataviews/Copilot Enable_Disable.md>)
+[DV_Copilot_Enable_Disable](/docs/eaa46853-c09b-439a-a06b-6388c0a758b6)
 
 
 #### User Parameters

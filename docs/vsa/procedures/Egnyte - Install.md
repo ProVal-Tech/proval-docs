@@ -39,7 +39,7 @@ The agent procedure updates and installs the Egnyte software. It kills all Offic
 
 ## Dependencies
 
-The procedure requires the custom field to run: [Custom Field - Egnyte - Install](<../../unsorted/SWM - Software Install - Custom Field - Egnyte - Install.md>)
+The procedure requires the custom field to run: [Custom Field - Egnyte - Install](/docs/03f423c9-8538-42c0-9822-b7c92befb215)
 
 ## Output
 

@@ -29,7 +29,7 @@ It should be run against the service plan for servers and workstations as part o
 ## Process
 
 - Runs a default script, **Agent Monitors - Disk - Remove**, to remove the existing disk monitors.
-- Runs our wrapper script, [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](<./Agent Monitor Creation - Disk - WRAPPER.md>), to create new disk monitors on machines.
+- Runs our wrapper script, [CWM - Automate - Script - Agent Monitor Creation - Disk* - WRAPPER](/docs/3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe), to create new disk monitors on machines.
 
 ## Output
 

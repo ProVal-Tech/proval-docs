@@ -18,14 +18,14 @@ This solution provides a dataview of the client-level breakdown of machines miss
 
 | Content                                                                                                                                           | Type    | Function                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------|
-| [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status.md>)         | Script  | To create the view.                                        |
-| [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](<../cwa/views/Plugin_ProVal_V_Patch_Count_Status.md>)                                 | View    | Stores the data to be displayed by the dataview.          |
-| [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>)       | Dataview| Displays the client-level breakdown of machines missing a certain number of patches. |
+| [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0)         | Script  | To create the view.                                        |
+| [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Status](/docs/c1fad1cd-7320-472e-b20e-3d8fa620f0db)                                 | View    | Stores the data to be displayed by the dataview.          |
+| [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](/docs/0fd0215c-d6d5-40c8-9ba6-79b69721f4c1)       | Dataview| Displays the client-level breakdown of machines missing a certain number of patches. |
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](<../cwa/scripts/MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status.md>) script.
-- Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](<../cwa/dataviews/Dash - Missing Patch - Count by Machines - Client Filter.md>) Dataview.
+- Import the [CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0) script.
+- Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](/docs/0fd0215c-d6d5-40c8-9ba6-79b69721f4c1) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
 

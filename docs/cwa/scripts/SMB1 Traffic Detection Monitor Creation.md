@@ -14,7 +14,7 @@ unlisted: false
 
 This document outlines the process for creating Remote Monitors for SMB1 Traffic Detection. The creation of these remote monitors is governed by system properties and computer-level Extra Data Fields (EDFs). These elements are further detailed within this document.
 
-Remote monitors will be set up on computers where the [SMB1 Detection](<../monitors/SMB1 Detection.md>) remote monitor identifies the SMB1 Server Status as `Enabled`. In the [SMB1 Status [Remote Monitor]](<../dataviews/SMB1 Status Remote Monitor.md>) dataview, the `SMB1 Server Status` column will display `Enabled` for these machines.
+Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d) remote monitor identifies the SMB1 Server Status as `Enabled`. In the [SMB1 Status [Remote Monitor]](/docs/da0254e3-0958-4ab4-9950-7e35feb12345) dataview, the `SMB1 Server Status` column will display `Enabled` for these machines.
 
 **Note of Caution**: The remote monitors created by this script utilize PowerShell for monitoring. Therefore, their functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.
 
@@ -56,8 +56,8 @@ Remote monitors will be set up on computers where the [SMB1 Detection](<../monit
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](<../monitors/SMB1 Detection.md>)
-- [CWA - Remote Monitor - SMB1 Detection](<../monitors/CWA - Remote Monitor - SMB1 Detection.md>)
+- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [CWA - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
 
 ## User Parameters
 

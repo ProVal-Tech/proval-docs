@@ -18,11 +18,11 @@ This document allows VSA Agents to come back online after a service failure on t
 
 | Content                                                                                     | Type            | Function                      |
 |---------------------------------------------------------------------------------------------|-----------------|-------------------------------|
-| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) | Agent Procedure  | Creates the scheduled task    |
-| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](<./Scheduled Task for Agent Restart - Remove.md>) | Agent Procedure  | Removes the scheduled task    |
+| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](/docs/7eb2b58e-9f5e-4732-8457-6518060f0cc3) | Agent Procedure  | Creates the scheduled task    |
+| [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Remove](/docs/b4f78d3c-4c41-46eb-9fee-94b9f7d3caab) | Agent Procedure  | Removes the scheduled task    |
 
 ## Implementation
 
-Import both XML files into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>) to point to the correct VSA service name. Use the variable `#serviceName#` for this. Finally, schedule and deploy the procedures.
+Import both XML files into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](/docs/7eb2b58e-9f5e-4732-8457-6518060f0cc3) to point to the correct VSA service name. Use the variable `#serviceName#` for this. Finally, schedule and deploy the procedures.
 
 

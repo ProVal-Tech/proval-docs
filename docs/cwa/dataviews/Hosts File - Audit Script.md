@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The purpose of this dataview is to show the uncommented content of the host file. Data is being fetched by the [EPM - Windows Configuration - Script - Hosts File - Audit](<../scripts/Hosts File - Audit.md>) script.
+The purpose of this dataview is to show the uncommented content of the host file. Data is being fetched by the [EPM - Windows Configuration - Script - Hosts File - Audit](/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195) script.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Hosts File - Audit](<../scripts/Hosts File - Audit.md>)
+[EPM - Windows Configuration - Script - Hosts File - Audit](/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195)
 
 ## Columns
 

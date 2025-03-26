@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-Displays the list of the installed bloatware fetched by the [Remove - PUA](<../scripts/Remove - PUA.md>) script.
+Displays the list of the installed bloatware fetched by the [Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf) script.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Remove - PUA](<../scripts/Remove - PUA.md>)
-- [CWM - Automate - Custom Table - pvl_pua_audit](<../tables/pvl_pua_audit.md>)
+- [CWM - Automate - Script - Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
+- [CWM - Automate - Custom Table - pvl_pua_audit](/docs/2c4a0323-9532-4145-8fca-d9151c20773c)
 
 ## Columns
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the information returned by the [Get OneDrive Sync Status [DV]](<../scripts/Get OneDrive Sync Status DV.md>) script.
+Stores the information returned by the [Get OneDrive Sync Status [DV]](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece) script.
 
 ## Dependencies
 
-[**EPM - Data Collection - Script - Get OneDrive Sync Status [DV]**](<../scripts/Get OneDrive Sync Status DV.md>)
+[**EPM - Data Collection - Script - Get OneDrive Sync Status [DV]**](/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece)
 
 ## Tables
 

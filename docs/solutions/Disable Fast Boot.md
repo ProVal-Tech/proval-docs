@@ -21,35 +21,35 @@ The purpose of this document is to outline the solution to disable the Fast Boot
 | Content                                                                 | Type  | Level   | Function                                                                                                           |
 |-------------------------------------------------------------------------|-------|---------|--------------------------------------------------------------------------------------------------------------------|
 | [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>)    | Flag  | Company | Check this box to enable the solution to disable Fast Boot on the client's Windows workstations.                  |
-| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Site - Disable_Fastboot_Exclusion.md>) | Flag  | Site    | Check this box to exclude the site from the solution that disables Fast Boot.                                    |
-| [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) | Flag  | Endpoint | Check this box to exclude the computer from the solution that disables Fast Boot.                                 |
-| [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)   | Flag  | Endpoint | Indicates that Fast Boot has been disabled on the computer.                                                       |
+| [Disable_Fastboot_Exclusion](/docs/693eeb66-9fb2-4653-8cf3-e23fb53c0f56) | Flag  | Site    | Check this box to exclude the site from the solution that disables Fast Boot.                                    |
+| [Disable_Fastboot_Exclusion](/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19) | Flag  | Endpoint | Check this box to exclude the computer from the solution that disables Fast Boot.                                 |
+| [FastBoot_Disabled](/docs/3c87c303-e892-4f6b-889f-acde66928978)   | Flag  | Endpoint | Indicates that Fast Boot has been disabled on the computer.                                                       |
 
 ### Device Group
 
 | Content                                                                | Type     | Function                                                                                                                |
 |------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](<../cwrmm/groups/Disable FastBoot.md>)   | Dynamic  | This group contains the computers where the solution to disable Fast Boot is enabled through the Custom Fields.       |
+| [Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a)   | Dynamic  | This group contains the computers where the solution to disable Fast Boot is enabled through the Custom Fields.       |
 
 ### Task
 
 | Content                                                                | Type           | Function                                                                                                                |
 |------------------------------------------------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Disable FastBoot](<../cwrmm/tasks/Disable FastBoot.md>)   | Script Editor  | The script will attempt to modify the registry keys to disable Fast Boot on the Windows workstations if it is not already disabled. |
+| [Disable FastBoot](/docs/f52aada4-6207-4766-9b7c-24d022812e3c)   | Script Editor  | The script will attempt to modify the registry keys to disable Fast Boot on the Windows workstations if it is not already disabled. |
 
 ## Implementation
 
 1. Create the following custom fields:  
    - [Disable_FastBoot](<../cwrmm/custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>)  
-   - [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Site - Disable_Fastboot_Exclusion.md>)  
-   - [Disable_Fastboot_Exclusion](<../cwrmm/custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>)  
-   - [FastBoot_Disabled](<../cwrmm/custom-fields/Endpoint - FastBoot_Disabled.md>)  
+   - [Disable_Fastboot_Exclusion](/docs/693eeb66-9fb2-4653-8cf3-e23fb53c0f56)  
+   - [Disable_Fastboot_Exclusion](/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19)  
+   - [FastBoot_Disabled](/docs/3c87c303-e892-4f6b-889f-acde66928978)  
 
 2. Create the Device Group:  
-   - [Disable FastBoot](<../cwrmm/groups/Disable FastBoot.md>)  
+   - [Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a)  
 
 3. Create the Task and deploy it against the device group:  
-   - [Disable FastBoot](<../cwrmm/tasks/Disable FastBoot.md>)  
+   - [Disable FastBoot](/docs/f52aada4-6207-4766-9b7c-24d022812e3c)  
 
 
 

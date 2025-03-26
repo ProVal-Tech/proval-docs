@@ -12,13 +12,13 @@ unlisted: false
 
 ## Purpose
 
-The custom table stores the data gathered by the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>) and is displayed in the [Dataview - MSSQL Database Version](<../dataviews/MSSQL Database Version.md>).
+The custom table stores the data gathered by the [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee) and is displayed in the [Dataview - MSSQL Database Version](/docs/eb2798dd-20c1-4c57-96c7-56349f2867f1).
 
 ## Dependencies
 
-- [Dataview - MSSQL Database Version](<../dataviews/MSSQL Database Version.md>)
-- [Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
-- [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>)
+- [Dataview - MSSQL Database Version](/docs/eb2798dd-20c1-4c57-96c7-56349f2867f1)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
+- [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee)
 
 ## Table
 

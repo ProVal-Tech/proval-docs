@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The data view displays the power plan settings gathered by the [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>) script.
+The data view displays the power plan settings gathered by the [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](<../scripts/Power Plan - Audit DV.md>)  
-- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](<../tables/pvl_powerplan_audit.md>)  
-- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](<../monitors/Execute Script - Power Plan - Audit.md>)  
+- [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)  
+- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](/docs/9560f2db-f58f-4c07-a9da-2828deabc4cf)  
+- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](/docs/fdbe1912-b216-4876-b64b-db83eee691a1)  
 
 ## Columns
 

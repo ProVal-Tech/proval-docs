@@ -18,18 +18,18 @@ This monitor replicates the functionality of the Internal Monitor: 'Enhanced Dri
 
 ## Dependencies
 
-- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>)
-- [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>)
+- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
+- [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
 
 ## How to Configure
 
-This monitor must be configured the same as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) with the same alert template. It will use the same group and computer-level EDFs.
+This monitor must be configured the same as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) with the same alert template. It will use the same group and computer-level EDFs.
 
-Simply import this monitor and set the alert template that has been used by the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>).
+Simply import this monitor and set the alert template that has been used by the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f).
 
 ## Caution
 
-Ensure that the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>) uses the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](<./Agent - Enhanced Drive Space Monitor.md>) at line 54. Otherwise, both monitors will not be able to detect the tickets.
+Ensure that the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) uses the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
 ![Image](../../../static/img/Enhanced-Drive-Space-Monitor-Ticket-Management/image_1.png)
 

@@ -16,9 +16,9 @@ This dataview shows the complete Windows Server Backup report and is useful for 
 
 ## Dependencies
 
-- [plugin_proval_windows_server_backup](<../tables/plugin_proval_windows_server_backup.md>)
-- [Windows Server Backup Audit](<./Windows Server Backup Audit.md>)
-- [Windows Server Backup](<../roles/Windows Server Backup.md>)
+- [plugin_proval_windows_server_backup](/docs/02ccf50f-d283-43a0-9130-1b3e23b56180)
+- [Windows Server Backup Audit](/docs/070f3e8b-1365-4347-9fcb-43aad1d09d41)
+- [Windows Server Backup](/docs/5cd09bd8-bf3c-431a-8ee6-e56bff349e50)
 
 ## Columns
 

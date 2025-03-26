@@ -22,13 +22,13 @@ It is a client script that has to be set up to run on a regular basis, either da
 
 ## Dependencies
 
-[CWM - Automate - Custom Table - pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)
+[CWM - Automate - Custom Table - pvl_computer_client_auditing](/docs/0030148b-608a-449a-9d52-ff1678fa79c0)
 
 ## Variables
 
 | Name               | Description                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------|
-| Table_Name         | [pvl_computer_client_auditing](<../tables/pvl_computer_client_auditing.md>)                             |
+| Table_Name         | [pvl_computer_client_auditing](/docs/0030148b-608a-449a-9d52-ff1678fa79c0)                             |
 | Count              | Number of detected computers                                                                                 |
 | sqlNew_Clientid    | New client ID of the detected computer                                                                       |
 | sqlcmpid           | Computer ID of the detected computer                                                                          |

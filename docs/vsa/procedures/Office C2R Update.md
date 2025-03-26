@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 Performs an on-demand update for a Click2Run Office installation on an endpoint using an agnostic solution.  
-[SWM - Software Configuration - Agnostic - Update-Office](<../../powershell/Update-Office.md>)
+[SWM - Software Configuration - Agnostic - Update-Office](/docs/498075f7-623c-4b92-9fbc-fe0f5e7113a4  )
 
 ## Example Agent Procedure Log
 

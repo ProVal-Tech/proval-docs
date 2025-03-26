@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>) didn't run in the last 7 days. It is also limited to trigger alerts for 50 agents at a time within an hour.
+This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766) didn't run in the last 7 days. It is also limited to trigger alerts for 50 agents at a time within an hour.
 
 ## Dependencies
 
-[Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)
+[Custom Table - plugin_proval_shadowcopystats](/docs/59bbf54a-55af-42fa-9e77-cd0b105122de)
 
 ## Target
 

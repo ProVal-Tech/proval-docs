@@ -28,11 +28,11 @@ Due to this, results are not guaranteed. If at all possible, the script should a
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>)
+- [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950)
 
 ## Process
 
-See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](<../../powershell/Reset-KrbtgtKeys.md>) for process details.
+See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950) for process details.
 
 ## Output
 

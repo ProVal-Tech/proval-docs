@@ -16,7 +16,7 @@ This document provides instructions to set up alerts on machines if the Huntress
 
 ## Dependencies
 
-[CW RMM - Device Group - Machines with Huntress Agent](<../groups/Machines with Huntress Agent.md>)
+[CW RMM - Device Group - Machines with Huntress Agent](/docs/7fc0874b-154c-49c0-aed4-a89be18798f4)
 
 ## Monitor
 

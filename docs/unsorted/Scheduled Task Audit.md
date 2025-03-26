@@ -31,9 +31,9 @@ This script audits scheduled tasks to identify which user accounts are running t
 
 ## Dependencies
 
-- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
-- [plugin_proval_scheduled_tasks](<./plugin_proval_scheduled_tasks.md>)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](<../cwa/scripts/OverFlowedVariable - SQL Insert - Execute.md>)
+- [Scheduled Task Audit](/docs/c9a84634-8ee6-4484-8aa7-e92bafd4443c)
+- [plugin_proval_scheduled_tasks](/docs/f1d0dacb-4500-428e-b2ac-c96b30348755)
+- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Process
 

@@ -16,7 +16,7 @@ This document stores data about active user sessions on Windows machines.
 
 ## Dependencies
 
-[User Session Audit](<../scripts/User Session Audit.md>)
+[User Session Audit](/docs/fffa01c1-5e44-4239-a69d-623e4a77e789)
 
 ## Table
 

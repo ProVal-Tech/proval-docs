@@ -16,7 +16,7 @@ This document explains how to restore a backed-up registry key property or regis
 
 ## Requirements
 
-1. The [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](<./Backup-RegistryValue.md>) must have been used to back up the registry value.
+1. The [EPM - Windows Configuration - Agnostic - Script - Backup-RegistryValue](/docs/2e38bff4-a727-4c7e-8c3b-ccf8eee85891) must have been used to back up the registry value.
 2. The script must be run with Admin Rights.
 
 ## Process
@@ -68,4 +68,4 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | Datto RMM                            |                                           |
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10441516/Install-AnyConnect.ps1>)
-[README.md](<../../static/attachments/itg/10441516/README.md>)
+[README.md](/docs)

@@ -18,7 +18,7 @@ It also ensures that the script runs once on the agent.
 
 ## Dependencies
 
-[KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) 
+[KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52) 
 
 ## Target
 

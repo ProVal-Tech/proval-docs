@@ -16,7 +16,7 @@ The purpose of this document is to store the audit report of the cluster disk sp
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>)
+[CWA Script - Windows Cluster Volume Space Audit](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490)
 
 ## Tables
 
@@ -31,6 +31,6 @@ The purpose of this document is to store the audit report of the cluster disk sp
 | FreeSpace     | INT      | The available free space on the cluster disk in the Hyper-V cluster server                       |
 | UsedSpace     | INT      | The used space on the cluster disk in the Hyper-V cluster server                                  |
 | PercentFree   | INT      | The available space on the cluster disk expressed as a percentage in the Hyper-V cluster server  |
-| ScriptRunTime | DATETIME | The script's last run date, indicating when the latest audit was performed via the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) |
+| ScriptRunTime | DATETIME | The script's last run date, indicating when the latest audit was performed via the script [CWA Script - Windows Cluster Volume Space Audit](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490) |
 
 

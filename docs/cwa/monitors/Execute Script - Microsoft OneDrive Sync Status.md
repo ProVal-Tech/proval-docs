@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The primary objective of this internal monitor is to perform a daily execution of the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script on Windows workstations. This execution will exclusively target machines that currently have an active user session. Furthermore, it is essential to note that the process will execute the script on a maximum of 200 machines per hour. This approach ensures efficient and controlled utilization of resources during the execution.
+The primary objective of this internal monitor is to perform a daily execution of the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](/docs/11c05d45-a0fb-4cfb-b388-cdc59362d9a1) script on Windows workstations. This execution will exclusively target machines that currently have an active user session. Furthermore, it is essential to note that the process will execute the script on a maximum of 200 machines per hour. This approach ensures efficient and controlled utilization of resources during the execution.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>)
+[EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](/docs/11c05d45-a0fb-4cfb-b388-cdc59362d9a1)
 
 ## Target
 

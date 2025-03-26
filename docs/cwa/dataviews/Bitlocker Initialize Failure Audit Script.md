@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview contains the computer records where BitLocker initialization failed twice due to the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)".
+This dataview contains the computer records where BitLocker initialization failed twice due to the Autofix script "[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](/docs/85513764-8240-40fb-be86-7be910ea62cf)".
 
 ## Dependencies
 
-[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](<../scripts/Bitlocker - Volume - Initialize Autofix,Param - Wrapper.md>)
+[Script - Bitlocker - Volume - Initialize [Autofix, Param] - Wrapper](/docs/85513764-8240-40fb-be86-7be910ea62cf)
 
 ## Columns
 

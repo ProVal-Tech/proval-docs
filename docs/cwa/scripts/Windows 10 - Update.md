@@ -42,7 +42,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Dependencies
 
-- [SEC - WindowsPatching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>)
+- [SEC - WindowsPatching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055)
 
 ### User Parameters
 
@@ -52,7 +52,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Process
 
-Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>).
+Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055).
 
 ## Output
 

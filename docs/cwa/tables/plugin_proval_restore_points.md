@@ -16,7 +16,7 @@ This document stores information about Windows restore points.
 
 ## Dependencies
 
-[Windows Restore Point Automation - Gather Only](<../scripts/Windows Restore Point Automation - Gather Only.md>)  
+[Windows Restore Point Automation - Gather Only](/docs/7f52c871-523c-44ae-9289-814326207896)  
 @Windows Restore Point Automation (Script)
 
 ## Table

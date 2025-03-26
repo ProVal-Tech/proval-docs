@@ -14,11 +14,11 @@ unlisted: false
 
 The purpose of the monitor set is to identify Domain Controllers that do not have the designated Domain admin account and those where the password for the account has not been updated within the specified password age limit. The UserName and Password age parameters are configured in the system properties and client-level Extra Data Fields (EDFs), allowing for customization and adaptability to specific requirements.
 
-Check the [Script's](<../scripts/Windows - Admin Account - CreateUpdate.md>) document for more information on EDFs, Script State, and System Properties used in the monitor set.
+Check the [Script's](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) document for more information on EDFs, Script State, and System Properties used in the monitor set.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>)
+[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c)
 
 ## Target
 
@@ -30,4 +30,4 @@ Domain Controllers belonging to clients that have the `1a. Enable Domain Admin P
 
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
-The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](<../scripts/Windows - Admin Account - CreateUpdate.md>) script on the machines detected by the monitor set.
+The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script on the machines detected by the monitor set.

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This table stores the drive data of the Hyper-V machines at different schedules of the script [Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>).
+This table stores the drive data of the Hyper-V machines at different schedules of the script [Hyper-V Disk Space Record](/docs/cc5a2747-6286-4783-b3f6-862aaa19a1c1).
 
 ## Dependencies
 
-[Hyper-V Disk Space Record](<../dataviews/Hyper-V Disk Space Record.md>)
+[Hyper-V Disk Space Record](/docs/cc5a2747-6286-4783-b3f6-862aaa19a1c1)
 
 ## Tables
 

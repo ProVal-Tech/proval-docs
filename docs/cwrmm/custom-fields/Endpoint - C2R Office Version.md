@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document provides details about the C2R Office version installed on the machine, gathered by the [Microsoft 365 - Click-to-Run - Get Details](<../tasks/Microsoft 365 - Click-to-Run - Get Details.md>) task.
+This document provides details about the C2R Office version installed on the machine, gathered by the [Microsoft 365 - Click-to-Run - Get Details](/docs/f5099dd5-8e47-468f-a623-a245c342eb19) task.
 
 ## Details
 

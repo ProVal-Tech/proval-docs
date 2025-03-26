@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) in removing the browser-saved passwords.
+This monitor is designed to create a ticket for the failure of the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) in removing the browser-saved passwords.
 
 ## Create and Implement Monitor
 
@@ -21,7 +21,7 @@ This monitor is designed to create a ticket for the failure of the [Task - Clear
   ![Image 2](../../../static/img/Browser-Saved-Password-Failure-Detection/image_2.png)  
 
 - **Name**: Browser Saved Password Failure Detection  
-  **Description**: This monitor will detect the agents where the [Task - Clear/Audit - Browser Saved Password](<../tasks/ClearAudit - Browser Saved Password.md>) failed to remove the saved passwords from the browser.  
+  **Description**: This monitor will detect the agents where the [Task - Clear/Audit - Browser Saved Password](/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e) failed to remove the saved passwords from the browser.  
   **Type**: Custom Field  
   **Severity**: Critical Non-Impact Alerts  
   **Family**: RMM Agent  

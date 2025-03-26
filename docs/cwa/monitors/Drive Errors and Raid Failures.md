@@ -40,7 +40,7 @@ Insert the details of the monitor in the table below.
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer](<../scripts/Ticket Creation - Computer.md>)
+[CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
 
 ## Target
 
@@ -72,7 +72,7 @@ Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only
 ---
 
 ### Step 2
-Validate that the [Ticket Creation - Computer [Failures Only]](<../scripts/Ticket Creation - Computer Failures Only.md>) was imported along with the alert template.
+Validate that the [Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9) was imported along with the alert template.
 
 ---
 

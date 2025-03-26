@@ -20,7 +20,7 @@ This script sets custom display scaling on existing as well as new users for Win
 
 ## Dependencies
 
-[Set-DisplayScaling](<../../powershell/Set-DisplayScaling.md>)
+[Set-DisplayScaling](/docs/d53bd821-ed9a-4779-8113-2994eaa7197c)
 
 ## User Parameters
 

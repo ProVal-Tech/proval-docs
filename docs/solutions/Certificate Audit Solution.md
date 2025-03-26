@@ -17,20 +17,20 @@ The purpose of this solution is to pull meaningful certificate information into 
 ## Update Notice 19-Sept-2024
 
 **New Content:**
-- Internal Monitor: [ProVal - Production - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)
+- Internal Monitor: [ProVal - Production - Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f)
 - Alert Template: △ Custom - Local Machine Certificate Audit
 
 **Modified Content:**
-- Script: [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
-- Dataview: [SSL Certificate Audit [Script]](<../cwa/dataviews/SSL Certificate Audit.md>)
+- Script: [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
+- Dataview: [SSL Certificate Audit [Script]](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d)
 - Internal Monitor: [ProVal - Production - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)
 
 **Modifications:**
-- The [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script has been modified to use the Shell function instead of the `Execute PowerShell` function, as Threatlocker was flagging it.
-- With the introduction of the [ProVal - Production - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor, the [Windows - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script no longer needs to be scheduled against the group.
+- The [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script has been modified to use the Shell function instead of the `Execute PowerShell` function, as Threatlocker was flagging it.
+- With the introduction of the [ProVal - Production - Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f) internal monitor, the [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script no longer needs to be scheduled against the group.
 
 **Note:**
-- It is suggested to use the [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor to execute the script instead of scheduling it against groups.
+- It is suggested to use the [Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f) internal monitor to execute the script instead of scheduling it against groups.
 
 ## Associated Content
 
@@ -38,38 +38,38 @@ The purpose of this solution is to pull meaningful certificate information into 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) | Script | Gathers, sorts, and imports SSL certificate information into a custom table in the database. |
-| [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) | Custom Table | Custom table created to hold SSL certificate information. |
-| [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) | Internal Monitor | Detects computers where [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) has not been executed in the past 7 days. |
-| △ Custom - Local Machine Certificate Audit | Alert Template | Executes the [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script against the computers detected by the [Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>) internal monitor. |
-| [SSL Certificate Audit](<../cwa/dataviews/SSL Certificate Audit.md>) | Dataview | Displays a comprehensive list of all certificates found with expiration status. |
+| [Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) | Script | Gathers, sorts, and imports SSL certificate information into a custom table in the database. |
+| [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) | Custom Table | Custom table created to hold SSL certificate information. |
+| [Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f) | Internal Monitor | Detects computers where [Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) has not been executed in the past 7 days. |
+| △ Custom - Local Machine Certificate Audit | Alert Template | Executes the [Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script against the computers detected by the [Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f) internal monitor. |
+| [SSL Certificate Audit](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d) | Dataview | Displays a comprehensive list of all certificates found with expiration status. |
 
 ### Alerting
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>) | Internal Monitor | This monitor checks the [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) table for any SSL certificates that have an expiration date of less than 30 days. |
-| [Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) | Script | Creates a ticket using the alerting information from the monitor and adds more detailed information to the ticket. |
-| △ Custom - Ticket Creation - Computer | Alert Template | Executes the [Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>) script. |
+| [Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>) | Internal Monitor | This monitor checks the [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) table for any SSL certificates that have an expiration date of less than 30 days. |
+| [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) | Script | Creates a ticket using the alerting information from the monitor and adds more detailed information to the ticket. |
+| △ Custom - Ticket Creation - Computer | Alert Template | Executes the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script. |
 
 ## Implementation
 
 1. Import/Update the following content using the `Prosync` plugin:  
    **For Auditing Only:**
-   - [Script - Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
-   - [Internal Monitor - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)
-   - [Dataview - SSL Certificate Audit](<../cwa/dataviews/SSL Certificate Audit.md>)
+   - [Script - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
+   - [Internal Monitor - Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f)
+   - [Dataview - SSL Certificate Audit](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d)
    - Alert Template - △ Custom - Local Machine Certificate Audit
 
    **For Alerting:**
    - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)
-   - [Script - Ticket Creation - Computer](<../cwa/scripts/Ticket Creation - Computer.md>)
+   - [Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
    - Alert Template - △ Custom - Ticket Creation - Computer
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/Certificate-Audit-Solution/image_1.png)
 
-3. Execute the [Certificates (My) - Local Machine - Audit](<../cwa/scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script against any online Windows computer to create the [plugin_proval_certs](<../cwa/tables/plugin_proval_certs.md>) custom table.  
+3. Execute the [Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script against any online Windows computer to create the [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) custom table.  
    ![Execute Script](../../static/img/Certificate-Audit-Solution/image_2.png)
 
 4. Skip this step for new implementations.  
@@ -80,7 +80,7 @@ The purpose of this solution is to pull meaningful certificate information into 
 
 5. Configure the auditing solution as outlined below:  
    Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-   - [Internal Monitor - Local Machine Certificate Audit](<../cwa/monitors/Local Machine Certificate Audit.md>)  
+   - [Internal Monitor - Local Machine Certificate Audit](/docs/48737f29-accd-41ac-a35d-047d7e266e6f)  
      - `Alert Template: △ Custom - Local Machine Certificate Audit`
      - The monitor should target the following groups:
        - Service Plans.Windows Servers.Server Roles.Windows Messaging Servers

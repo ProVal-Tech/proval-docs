@@ -16,11 +16,11 @@ This document implements group policies to redirect Windows known folders (Deskt
 
 ## Dependencies
 
-- [Managed Variable - M365TenantId](<../variables/M365TenantId.md>)
+- [Managed Variable - M365TenantId](/docs/b3141fc4-14f1-41a7-ba67-61b3a4e29fd5)
 
 ## Associated Content
 
-- [SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../../solutions/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
+- [SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](/docs/42fcda71-e3ed-40e2-92e0-c0eb80e42e2d)
 
 ## Implementation
 
@@ -37,7 +37,7 @@ Import this procedure into the partner's VSA instance.
 
 ![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_3.png)  
 
-Ensure the [Managed Variable - M365TenantId](<../variables/M365TenantId.md>) is created prior to usage if folder redirection is desired.
+Ensure the [Managed Variable - M365TenantId](/docs/b3141fc4-14f1-41a7-ba67-61b3a4e29fd5) is created prior to usage if folder redirection is desired.
 
 ## Usage
 

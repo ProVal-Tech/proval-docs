@@ -13,15 +13,15 @@ unlisted: false
 ## Summary
 
 **Issue:** Upgrade/Swap Agents Hard Drives or SSDs with Imaged Drives, and the model number in ConnectWise Automate® still reflects the original hard drive or SSD.  
-This script will perform the mitigation steps for the above issue and is called by the [CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](<../monitors/Incorrect Drive Inventory.md>) remote monitor.
+This script will perform the mitigation steps for the above issue and is called by the [CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f) remote monitor.
 
 ## Sample Run
 
-This is an Autofix script and will provide better results when executed by the [CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](<../monitors/Incorrect Drive Inventory.md>) remote monitor via the `△ Custom - Incorrect Drive Inventory` template.
+This is an Autofix script and will provide better results when executed by the [CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f) remote monitor via the `△ Custom - Incorrect Drive Inventory` template.
 
 ## Dependencies
 
-[CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](<../monitors/Incorrect Drive Inventory.md>)
+[CWM - Automate - Remote Monitor - Proval - Production - Incorrect Drive Inventory](/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f)
 
 ## Variables
 

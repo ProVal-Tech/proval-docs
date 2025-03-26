@@ -55,4 +55,4 @@ Unhealthy - BSOD status %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME
 ## Implementation
 
 Please follow the below document for importing the remote monitor with its pre-requisites.
-- [import-remote-monitor-bsod-monitoring](<./import-remote-monitor-bsod-monitoring.md>)
+- [import-remote-monitor-bsod-monitoring](/docs/a6e9e088-d737-4c9f-8ae8-e643521b4f79)

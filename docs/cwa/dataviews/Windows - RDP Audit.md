@@ -18,7 +18,7 @@ This dataview provides information about whether RDP is enabled or disabled on a
 
 ## Dependencies
 
-[Windows - RDP Enabled](<../roles/Windows - RDP Enabled.md>)
+[Windows - RDP Enabled](/docs/2aa464bf-472c-48db-a3a8-f8fc1aa11091)
 
 ## Columns
 

@@ -16,7 +16,7 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Columns
 

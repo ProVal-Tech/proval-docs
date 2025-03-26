@@ -16,7 +16,7 @@ This document stores the GUID and the set of user class(es) for Built-In scripts
 
 ## Dependencies
 
-[CWM - Automate - Solution - Script Permission Standardization [Beta]](<../../solutions/Script Permission Standardization Beta.md>)
+[CWM - Automate - Solution - Script Permission Standardization [Beta]](/docs/331d820a-8030-4bcf-9809-c726a85f59f3)
 
 ## Tables
 

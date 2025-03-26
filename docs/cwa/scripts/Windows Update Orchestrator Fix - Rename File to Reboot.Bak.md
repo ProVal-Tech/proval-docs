@@ -12,17 +12,17 @@ unlisted: false
 
 ## Summary
 
-This script is set up as the autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor. This script will rename the "reboot" file so the update orchestrator will not issue a reboot to the machine. This will prevent the update orchestrator from installing patches on the endpoint without prior approval. This script is a function script and it will not run manually.
+This script is set up as the autofix for the [Update Orchestrator Service Status Detection](/docs/e3c5aeb1-144d-4c12-9b33-2d56d05804ce) monitor. This script will rename the "reboot" file so the update orchestrator will not issue a reboot to the machine. This will prevent the update orchestrator from installing patches on the endpoint without prior approval. This script is a function script and it will not run manually.
 
 **Time Saved by Automation:** 5 Minutes
 
 ## Sample Run
 
-This script is a function script and cannot be run manually. It should only run as an autofix for the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor.
+This script is a function script and cannot be run manually. It should only run as an autofix for the [Update Orchestrator Service Status Detection](/docs/e3c5aeb1-144d-4c12-9b33-2d56d05804ce) monitor.
 
 ## Dependencies
 
-This script is dependent upon the [Update Orchestrator Service Status Detection](<../monitors/Update Orchestrator Service Status Detection.md>) monitor.
+This script is dependent upon the [Update Orchestrator Service Status Detection](/docs/e3c5aeb1-144d-4c12-9b33-2d56d05804ce) monitor.
 
 ## Variables
 

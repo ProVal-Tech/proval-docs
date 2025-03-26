@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor is to execute the [Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) on Windows 10 and 11 Dell machines where it has not been executed in the last two days.
+The purpose of this monitor is to execute the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) on Windows 10 and 11 Dell machines where it has not been executed in the last two days.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>)
+[CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
 
 ## Target
 
@@ -26,6 +26,6 @@ Windows 10 and 11 machines.
 
 **Name:** `△ Custom - Execute Script - Get-DellDockStation`
 
-The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](<../scripts/Get-DellDockStation.md>) script.
+The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script.
 
 

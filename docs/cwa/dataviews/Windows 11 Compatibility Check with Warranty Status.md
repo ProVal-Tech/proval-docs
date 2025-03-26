@@ -16,8 +16,8 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 ## Dependencies
 
-- [plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
-- [Windows 11 Compatibility Check [DV]](<../scripts/Windows - Check Windows 11 Compatibility.md>)
+- [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
+- [Windows 11 Compatibility Check [DV]](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
 - [Scalepad's Warranty Master Plugin](https://help.scalepad.com/en/articles/5899906-connectwise-automate-integration-instructions)
 
 ## Columns

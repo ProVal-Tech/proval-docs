@@ -24,7 +24,7 @@ The remote monitor will periodically check the system's security settings and tr
 **Suggested Alert Style**: Once  
 **Suggested Alert Template**: Enable Advanced Windows Security Auditing 
 
-**Script [Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>) must be imported before creating the alert template.**
+**Script [Enable Advanced Windows Security Auditing [Globals, Autofix]](/docs/3c74153d-7575-485c-bd6d-c5e002384cbd) must be imported before creating the alert template.**
 
 Insert the details of the monitor in the table below.
 
@@ -39,7 +39,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[Enable Advanced Windows Security Auditing [Globals, Autofix]](<../scripts/Enable Advanced Windows Security Auditing Globals, Autofix.md>)
+[Enable Advanced Windows Security Auditing [Globals, Autofix]](/docs/3c74153d-7575-485c-bd6d-c5e002384cbd)
 
 ## Target
 

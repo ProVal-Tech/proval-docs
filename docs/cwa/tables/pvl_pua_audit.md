@@ -12,13 +12,13 @@ unlisted: false
 
 ## Purpose
 
-This document holds audit data from [CWM - Automate - Script - Remove - PUA](<../scripts/Remove - PUA.md>).
+This document holds audit data from [CWM - Automate - Script - Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf).
 
 ## Dependencies
 
 The following dependency is required for this audit data:
 
-- [CWM - Automate - Script - Remove - PUA](<../scripts/Remove - PUA.md>)
+- [CWM - Automate - Script - Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
 
 ## Tables
 

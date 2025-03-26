@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>). The script can be used to manually encrypt a drive with BitLocker disk encryption.
+This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f). The script can be used to manually encrypt a drive with BitLocker disk encryption.
 
 **Requirement:** PowerShell v5+
 
@@ -26,7 +26,7 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](<../../powershell/Initialize-BitLockerVolume.md>)
+[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
 
 ## User Parameters
 

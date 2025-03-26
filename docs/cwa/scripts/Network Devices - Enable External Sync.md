@@ -51,11 +51,11 @@ Device-level EDF
 ## Implementation
 
 1. Import the script using the ProSync plugin:
-   - [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>)
+   - [CWM - Automate - Script - Network Devices - Enable External Sync](/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293)
 
 2. Configure the solution as follows:
    - Navigate to Automation → Scripts within the CWA Control Center.
-     - Debug the script [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>) on any online machine with the user parameter 'Set_Environment' = 1.
+     - Debug the script [CWM - Automate - Script - Network Devices - Enable External Sync](/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293) on any online machine with the user parameter 'Set_Environment' = 1.
      - It will create the system property required for the script.
    - Navigate to System Dashboard → Config → Properties
      - Fill in the `External_Sync_DeviceType` system property as per partner's requirements.
@@ -67,7 +67,7 @@ Device-level EDF
      - If the partner wants to unsync the device that the script synced earlier, put "Disable" in the system property as shown below:  
        ![Unsync device](../../../static/img/Network-Devices---Enable-External-Sync/image_6.png)
    - Navigate to System Dashboard → Management → Scheduled Client Scripts
-     - Schedule the script [CWM - Automate - Script - Network Devices - Enable External Sync](<./Network Devices - Enable External Sync.md>) to run daily.  
+     - Schedule the script [CWM - Automate - Script - Network Devices - Enable External Sync](/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293) to run daily.  
        ![Schedule daily](../../../static/img/Network-Devices---Enable-External-Sync/image_7.png)
    - If the partner wants to exclude any particular device, location, or client from external sync, select the `Exclude from Automatic Network Device Sync` EDF respectively on that device, location, or client.
 

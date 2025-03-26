@@ -20,9 +20,9 @@ An additional summarized row per client is included in the dataview.
 
 ![Sample Screenshot](../../../static/img/Windows-10-Version-Metrics-+-Filters-+-Client-Filters/image_1.png)
 
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
-- [CWM - Automate - View - plugin_proval_v_windows_10_version_metrics](<../views/plugin_proval_v_windows_10_version_metrics.md>)
-- [Create View plugin_proval_v_windows_10_version_metrics](<../scripts/Create View plugin_proval_v_windows_10_version_metrics.md>)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
+- [CWM - Automate - View - plugin_proval_v_windows_10_version_metrics](/docs/ea558c06-8fef-4c9f-87c7-42a3aa289dad)
+- [Create View plugin_proval_v_windows_10_version_metrics](/docs/ac098d84-7d28-4b69-933f-74ab861d2b89)
 
 ## Columns
 

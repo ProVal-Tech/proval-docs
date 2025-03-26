@@ -16,7 +16,7 @@ The internal monitor detects computers where daytime patching is enabled and one
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Install All Approved Patches [With Prompt]](<../scripts/Install All Approved Patches With Prompt.md>)
+[EPM - Windows Configuration - Script - Install All Approved Patches [With Prompt]](/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15)
 
 ## Target
 

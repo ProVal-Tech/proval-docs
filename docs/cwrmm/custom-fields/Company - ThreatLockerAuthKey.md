@@ -17,7 +17,7 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 
 ## Dependencies
 
-[CW RMM - Solution - ThreatLocker Deployment](<../../solutions/Threatlocker Deployment.md>)
+[CW RMM - Solution - ThreatLocker Deployment](/docs/c9969bad-d2da-45ec-90fe-d6be82479ebc)
 
 ## Details
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script replicates the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script, with the key distinction being that it generates client-level tickets instead of computer-level tickets.
+This script replicates the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script, with the key distinction being that it generates client-level tickets instead of computer-level tickets.
 
 It is imperative to incorporate the `Client ID` in the SQL query of a RAWSQL monitor set when utilizing this script for alerting in conjunction with the monitor set. This ensures that the script functions correctly and aligns with the monitoring and alerting requirements.
 

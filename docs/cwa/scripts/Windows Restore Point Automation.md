@@ -22,7 +22,7 @@ This script runs against a system that does not have the Target Restore Point ED
 
 ## Dependencies
 
-[plugin_proval_restore_points](<../tables/plugin_proval_restore_points.md>)
+[plugin_proval_restore_points](/docs/ebb1d05a-bb80-45e7-a4be-9cc73b8f308d)
 
 ## Variables
 

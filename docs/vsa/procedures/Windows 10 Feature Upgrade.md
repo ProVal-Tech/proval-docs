@@ -43,14 +43,14 @@ Initiates a Windows Feature Upgrade with a mandatory reboot.
 
 ## Process
 
-Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>) on the machine with no reboot.  
-Schedules [SEC - Windows Patching - Agent Procedure - Registry Check](<./Registry Check.md>) for 1 hour from run time.  
-Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>) to [In Progress].
+Starts a job running in the background to execute [SEC - Windows Patching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055) on the machine with no reboot.  
+Schedules [SEC - Windows Patching - Agent Procedure - Registry Check](/docs/f0d83724-e8a8-41f8-8f73-fea99d0f34de) for 1 hour from run time.  
+Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070) to [In Progress].
 
 ## Output
 
 AP Log  
-[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](<../custom-fields/xPVAL Windows Feature Upgrade Status.md>)  
+[SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070)  
 PSOutput Document
 
 

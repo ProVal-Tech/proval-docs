@@ -16,8 +16,8 @@ The custom table stores information about repaired computers.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
-- [CWM - Automate - Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
+- [CWM - Automate - Script - Track Repaired Agents](/docs/1cfbe430-0cbd-4abf-861d-4884632b7705)
+- [CWM - Automate - Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
 
 ## Tables
 

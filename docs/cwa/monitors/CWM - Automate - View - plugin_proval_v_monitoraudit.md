@@ -16,8 +16,8 @@ This document stores data about monitors and their configuration.
 
 ## Dependencies
 
-- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](<../scripts/MySQL - View - Create - plugin_proval_v_monitoraudit.md>)  
-- [CWM - Automate - Dataview - Automate - Monitor Audit [View]](<../dataviews/Automate - Monitor Audit View.md>)  
+- [CWM - Automate - Script - MySQL - View - Create - plugin_proval_v_monitoraudit*](/docs/e4221ae7-3cd9-4019-9d65-1f8ae2e58d33)  
+- [CWM - Automate - Dataview - Automate - Monitor Audit [View]](/docs/414e2b20-92a2-40bf-b003-6b92af4cbd18)  
 
 ## Table
 

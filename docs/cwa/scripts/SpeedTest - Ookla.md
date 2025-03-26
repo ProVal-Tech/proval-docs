@@ -21,7 +21,7 @@ This script gathers an internet speed test record from Ookla.
 
 ## Dependencies
 
-[Speedtest Record (Script)](<../dataviews/Speedtest Record Script.md>)
+[Speedtest Record (Script)](/docs/a15c39f0-c19e-413a-8d21-7ea44529be05)
 
 ## Variables
 

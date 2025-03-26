@@ -16,7 +16,7 @@ Stores information about Windows shadow copies.
 
 ## Dependencies
 
-[Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)
+[Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)
 
 ## Table
 

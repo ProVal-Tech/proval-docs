@@ -14,7 +14,7 @@ unlisted: false
 
 Mark this custom field to delete Winget Update All (System and Logged on User) tasks for Windows 10 and 11 machines in the company.
 
-Marking this custom field will automatically add the machines to the [CW RMM - Machine Group - Winget Update All (Task Delete)](<../groups/Winget Update All (Task Delete).md>) group.
+Marking this custom field will automatically add the machines to the [CW RMM - Machine Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808) group.
 
 ## Details
 

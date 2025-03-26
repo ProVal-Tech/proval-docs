@@ -30,7 +30,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 
 ## Dependencies
 
-[CWM - Automate - Script - Prompter](<./Prompter.md>)
+[CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
 
 ## Prompts
 

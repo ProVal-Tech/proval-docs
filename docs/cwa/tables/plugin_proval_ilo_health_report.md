@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-This table stores health information about HP iLO devices. It is filled by the script [HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>) and is used by the dataview [HP iLO Health Report](<../dataviews/HP iLO Health Report.md>).
+This table stores health information about HP iLO devices. It is filled by the script [HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a) and is used by the dataview [HP iLO Health Report](/docs/163aca22-cc56-45ee-9732-3873c6117e60).
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](<../scripts/HP iLO - Health Report - Get.md>)
-- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](<../../powershell/Get-HPiLOHealthReport.md>)
+- [EPM - Data Collection - Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
+- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
 
 ## Tables
 

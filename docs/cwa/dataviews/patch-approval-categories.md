@@ -16,7 +16,7 @@ This dataview provides detailed information about the patches that are auto-appr
 
 ## Dependencies
 
-The [Auto Approval Policies](<./auto-approval-policies.md>) dataview should be reviewed to understand the exact purpose of this document.
+The [Auto Approval Policies](/docs/1b296878-9915-4c2b-9d2e-f9ee09059cc9) dataview should be reviewed to understand the exact purpose of this document.
 
 ## Columns
 

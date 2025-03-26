@@ -16,7 +16,7 @@ This document displays all installed SQL instances found on an endpoint.
 
 ## Dependencies
 
-- [CWM - Automate - Role - SQL_Instances](<../roles/SQL_Instances.md>)
+- [CWM - Automate - Role - SQL_Instances](/docs/9885cd22-64e9-4269-91e6-e43946430e13)
 
 ## Columns
 

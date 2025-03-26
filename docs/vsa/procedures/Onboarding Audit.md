@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAuditReports.md>) and places the reports into getFiles.
+Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](/docs/f5181d46-745b-44a0-a154-0f83648e6a50) and places the reports into getFiles.
 
 ## Example Agent Procedure Log
 
@@ -39,7 +39,7 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAu
 
 ## Dependencies
 
-[VSA - Kaseya - Agnostic - Get-VSAAuditReports](<../../powershell/Get-VSAAuditReports.md>) and all associated requirements. See linked documentation for more details.
+[VSA - Kaseya - Agnostic - Get-VSAAuditReports](/docs/f5181d46-745b-44a0-a154-0f83648e6a50) and all associated requirements. See linked documentation for more details.
 
 ## Process
 

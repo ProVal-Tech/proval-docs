@@ -25,7 +25,7 @@ Example:  CW-Automate-Temp-Snapshot_20230501_081958
 ### Notes
 
 - The script must be executed from a machine that is reachable to the ESXi Host.
-- [CWM - Automate - ESXi - Snapshot Delete [Param]](<./CWM - Automate - ESXi - Snapshot Delete Param.md>) will be called to remove the generated snapshot after the hours specified in the `@Hours_To_Keep@` user parameter. The schedule depends on the computer's status in Automate. For example, if `@Hours_To_Keep@` is set to 24, then Automate will schedule the deletion script to run on the same machine after 24 hours. However, the deletion script will not work if the machine is offline after that period.
+- [CWM - Automate - ESXi - Snapshot Delete [Param]](/docs/830beb63-113a-406e-aef2-046403de9cb9) will be called to remove the generated snapshot after the hours specified in the `@Hours_To_Keep@` user parameter. The schedule depends on the computer's status in Automate. For example, if `@Hours_To_Keep@` is set to 24, then Automate will schedule the deletion script to run on the same machine after 24 hours. However, the deletion script will not work if the machine is offline after that period.
 - It is suggested to execute the script against servers that are mostly online.
 
 ## Prerequisites
@@ -53,7 +53,7 @@ Example:  CW-Automate-Temp-Snapshot_20230501_081958
 
 ## Dependencies
 
-[CWM - Automate - ESXi - Snapshot Delete [Param]](<./CWM - Automate - ESXi - Snapshot Delete Param.md>)
+[CWM - Automate - ESXi - Snapshot Delete [Param]](/docs/830beb63-113a-406e-aef2-046403de9cb9)
 
 ## Variables
 

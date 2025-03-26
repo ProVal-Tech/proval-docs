@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](<../scripts/Online Status Alerting - Autofix - Update Ticket + Email EDF.md>) once a machine comes back online after a restart and has either a Ticket ID filled in the EDF "Online Alert Ticket ID" or an Email ID filled in the EDF "Online Alert E-mail".
+The objective of this monitor is to run the script [Online Status Alerting - Autofix - Update Ticket + Email [EDF]](/docs/71b6a39c-0d61-4959-8f1e-69b1cc84d182) once a machine comes back online after a restart and has either a Ticket ID filled in the EDF "Online Alert Ticket ID" or an Email ID filled in the EDF "Online Alert E-mail".
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](<../scripts/Online Status Alerting - Update EDFs Param.md>)
+- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e)
 - Alert Template: △ Custom - Autofix - Online Status Alerting
-- [CWM - Internal Monitor - Online Status Alerting - Machine Back Online](<./Online Status Alerting - Machine Back Online.md>)
+- [CWM - Internal Monitor - Online Status Alerting - Machine Back Online](/docs/76fa2909-0cc0-4f76-82a0-c067660d52ac)
 
 ## Target
 

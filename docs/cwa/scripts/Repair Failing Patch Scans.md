@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is an Autofix script meant to be called from the monitor [ProVal - Development - Last scanned patch date > 7 days](<../monitors/Last Scanned Patch Date 7 days.md>).
+This script is an Autofix script meant to be called from the monitor [ProVal - Development - Last scanned patch date > 7 days](/docs/43acf895-0eee-4e39-ac9d-cabc5f23e9a1).
 
 ## Sample Run
 
@@ -34,7 +34,7 @@ This will allow the script to be run manually instead of being called by the mon
 
 ## Dependencies
 
-This Autofix script is called by the monitor [ProVal - Development - Last scanned patch date > 7 days](<../monitors/Last Scanned Patch Date 7 days.md>).
+This Autofix script is called by the monitor [ProVal - Development - Last scanned patch date > 7 days](/docs/43acf895-0eee-4e39-ac9d-cabc5f23e9a1).
 
 ## Variables
 

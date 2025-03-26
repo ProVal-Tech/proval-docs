@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is an Automate implementation of the agnostic script [Install-Microsoft365](../../powershell/Install-Microsoft365.md). It can be used to install Microsoft 365 Apps for Business or any Microsoft 365 product that supports XML Configuration. Additionally, it will remove the existing version of Microsoft 365 (Microsoft Office) based on the Update and Upgrade settings in the configuration file.
+This script is an Automate implementation of the agnostic script [Install-Microsoft365](/docs/86520d4a-a325-4771-81dc-04c1ea2db216). It can be used to install Microsoft 365 Apps for Business or any Microsoft 365 product that supports XML Configuration. Additionally, it will remove the existing version of Microsoft 365 (Microsoft Office) based on the Update and Upgrade settings in the configuration file.
 
 It is advisable to restart the computer after installation. Setting the `Reboot` parameter to `1` will initiate an automatic restart.  
 

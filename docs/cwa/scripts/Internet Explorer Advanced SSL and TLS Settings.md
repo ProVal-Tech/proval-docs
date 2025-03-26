@@ -22,7 +22,7 @@ This script will enable or disable SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1, and TLS 1
 
 ## Dependencies
 
-[Internet Explorer Advanced SSL and TLS Settings [Script]](<../roles/Internet Explorer Advanced SSL and TLS Settings Script.md>)
+[Internet Explorer Advanced SSL and TLS Settings [Script]](/docs/bdc0cb0d-5b88-448b-9568-268d27fdc17d)
 
 ## Variables
 

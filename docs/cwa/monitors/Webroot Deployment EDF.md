@@ -16,7 +16,7 @@ This monitor checks the online status of agents where the client EDF "Enable Web
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Install Webroot SecureAnywhere [EDF]](<../scripts/Install Webroot SecureAnywhere Autofix, EDF.md>)
+[EPM - Data Collection - Script - Install Webroot SecureAnywhere [EDF]](/docs/cddb5b54-a76e-4d74-8226-8f536d8f0eb4)
 
 - EDFs:
   - Enable Webroot Deployment - Client EDF

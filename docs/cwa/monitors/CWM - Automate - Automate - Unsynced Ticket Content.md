@@ -16,7 +16,7 @@ This monitor intends to alert partners of any **unsynced** ticket comments for a
 
 ## Dependencies
 
-- [Email RAWSQL Monitor Set Failures* [Autofix]](<../scripts/Email Creation - Computer Failure Only.md>)  
+- [Email RAWSQL Monitor Set Failures* [Autofix]](/docs/901470a2-73d2-4d29-b0d3-c5f15cf19c41)  
 - CW Manage Plugin  
 
 Use the "△ Email RAWSQL Monitor set results to the Partner" alert template along with the monitor set.

@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The data view displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>) script.
+The data view displays the OneDrive Sync Status gathered by the [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](/docs/11c05d45-a0fb-4cfb-b388-cdc59362d9a1) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](<../scripts/Microsoft OneDrive Sync Status DV.md>)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../monitors/Execute Script - Microsoft OneDrive Sync Status.md>)
+- [EPM - Data Collection - Script - Microsoft OneDrive Sync Status [DV]](/docs/11c05d45-a0fb-4cfb-b388-cdc59362d9a1)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](/docs/b7936e96-423d-4c53-bd95-d10a6c4861f1)
 
 ## Columns
 

@@ -21,7 +21,7 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Dependencies
 
-[CW RMM Custom Fields - DUO Auth Proxy Deployment](<../custom-fields/DUO Auth Proxy Deployment.md>)
+[CW RMM Custom Fields - DUO Auth Proxy Deployment](/docs/94f21e35-d184-4fb5-9215-898bb367a0e9)
 
 ## Task Creation
 

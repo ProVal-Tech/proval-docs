@@ -22,10 +22,10 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 ## Dependencies
 
 - [CW RMM - Custom Field - Company - Disable_FastBoot](<../custom-fields/CW RMM - Custom Field - Company - Disable_FastBoot.md>) 
-- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](<../custom-fields/Endpoint - FastBoot_Disabled.md>) 
-- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](<../custom-fields/Endpoint - Disable_Fastboot_Exclusion.md>) 
-- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](<../custom-fields/Site - Disable_Fastboot_Exclusion.md>) 
-- [CW RMM - Device Group - Disable FastBoot](<../groups/Disable FastBoot.md>) 
+- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](/docs/3c87c303-e892-4f6b-889f-acde66928978) 
+- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19) 
+- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](/docs/693eeb66-9fb2-4653-8cf3-e23fb53c0f56) 
+- [CW RMM - Device Group - Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a) 
 
 ## Task Creation
 
@@ -138,7 +138,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-The task should be scheduled to run once per day against the [Disable FastBoot](<../groups/Disable FastBoot.md>) device group.
+The task should be scheduled to run once per day against the [Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a) device group.
 
 - Go to `Automation` > `Tasks.`
 - Search for the `Disable FastBoot` task.
@@ -157,7 +157,7 @@ The task should be scheduled to run once per day against the [Disable FastBoot](
   ![Recurrence Updated](../../../static/img/Disable-FastBoot/image_47.png)  
 - Select the `Device Groups` option in the `Targeted Resources` section.  
   ![Targeted Resources](../../../static/img/Disable-FastBoot/image_48.png)  
-- Search and select the [Disable FastBoot](<../groups/Disable FastBoot.md>) device group.  
+- Search and select the [Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a) device group.  
   ![Select Device Group](../../../static/img/Disable-FastBoot/image_49.png)  
 - Now click the `Run` button to initiate the task.  
   ![Run Task](../../../static/img/Disable-FastBoot/image_50.png)  

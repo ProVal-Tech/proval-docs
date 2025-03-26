@@ -14,10 +14,10 @@ unlisted: false
 
 This script serves as a wrapper for configuring the homepage of three browsers: Google Chrome, Microsoft Edge, and Mozilla Firefox. It leverages the following scripts:
 
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](<./EPM - Software Configuration - Chromium Browsers - Homepage - Set.md>)
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](<./EPM - Software Configuration - Chromium Browsers - Homepage - Remove.md>)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](<./Mozilla Firefox - Homepage - Set.md>)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](<./Mozilla Firefox - Homepage - Remove.md>)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](/docs/e5c01410-3731-4b1c-b166-235d637c44bb)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](/docs/8d741266-521f-4bdf-b921-9fe0c28a0648)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](/docs/d86f7be6-b88d-4829-8f0e-9b2d6b9dc645)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](/docs/c09afc4e-2ed0-4e85-9beb-e8b54082568e)
 
 The 'Action' parameter can be used to specify the desired action (Set/Remove/Replace), and the 'Browser' parameter indicates the target browser for the operation. If the 'Browser' parameter is left unspecified, the script will perform the specified action on all three browsers.
 
@@ -25,10 +25,10 @@ The 'Action' parameter can be used to specify the desired action (Set/Remove/Rep
 
 Importing this script will also import the following scripts:
 
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](<./EPM - Software Configuration - Chromium Browsers - Homepage - Set.md>)
-- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](<./EPM - Software Configuration - Chromium Browsers - Homepage - Remove.md>)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](<./Mozilla Firefox - Homepage - Set.md>)
-- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](<./Mozilla Firefox - Homepage - Remove.md>)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Set](/docs/e5c01410-3731-4b1c-b166-235d637c44bb)
+- [EPM - Software Configuration - Chromium Browsers - Homepage - Remove](/docs/8d741266-521f-4bdf-b921-9fe0c28a0648)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Set](/docs/d86f7be6-b88d-4829-8f0e-9b2d6b9dc645)
+- [EPM - Software Configuration - Script - Mozilla Firefox - Homepage - Remove](/docs/c09afc4e-2ed0-4e85-9beb-e8b54082568e)
 
 ## User Parameters
 

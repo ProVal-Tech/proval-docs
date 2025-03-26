@@ -21,7 +21,7 @@ This task will disable the Windows optional automatic updates.
 
 ## Dependencies
 
-[CW RMM Custom Field - Windows Optional Update Disabled](<../custom-fields/Windows Optional Update Disabled.md>)
+[CW RMM Custom Field - Windows Optional Update Disabled](/docs/a2035a6f-bcbc-41a2-ace1-fc08b7ad2511)
 
 ## Implementation
 

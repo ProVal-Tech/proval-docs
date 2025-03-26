@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script gathers information about user profiles. The data is stored in the custom table [plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>).
+This script gathers information about user profiles. The data is stored in the custom table [plugin_proval_userprofiles](/docs/7a87abf3-b410-491b-bbc1-534092e61f55).
 
 **Note:** This script is not supported on Windows Domain Controllers or deprecated versions of Windows. An error will be thrown if it is run against one.
 
@@ -32,7 +32,7 @@ This script gathers information about user profiles. The data is stored in the c
 
 ## Dependencies
 
-- [EPM - Accounts - Agnostic - Get-UserProfiles](<../../powershell/Get-UserProfiles.md>)
+- [EPM - Accounts - Agnostic - Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)
 - PowerShell v5
 
 ## Output

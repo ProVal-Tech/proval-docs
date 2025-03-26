@@ -22,7 +22,7 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 
 - [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201)
 - [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661)
-- [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](<./MySQL - Permission - Set Custom Table Permissions.md>)
+- [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](/docs/7819fc75-aeae-457b-a451-59221396e900)
 
 ## Process
 

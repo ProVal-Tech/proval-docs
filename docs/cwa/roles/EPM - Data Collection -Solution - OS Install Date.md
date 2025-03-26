@@ -18,8 +18,8 @@ This solution allows for a custom field to be populated with the initial install
 
 | Content                                                                                          | Type          | Function                                                                                                    |
 |--------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------|
-| [https://proval.itglue.com/DOC-5078775-12637112](<../../vsa/custom-fields/xPVAL OS Install Date.md>) | Custom Field  | The custom field displays the initial install date of the OS based on the agent procedure results           |
-| [https://proval.itglue.com/DOC-5078775-12637113](<../../vsa/procedures/OS Install Date.md>) | Agent Procedure| The agent procedure populates the custom field with the data based on the results run within PowerShell.    |
+| [https://proval.itglue.com/DOC-5078775-12637112](/docs/0fbf0989-b499-4d26-8cec-29e3d32d0ada) | Custom Field  | The custom field displays the initial install date of the OS based on the agent procedure results           |
+| [https://proval.itglue.com/DOC-5078775-12637113](/docs/8beb5e09-23af-40e8-8810-ec1a030c600b) | Agent Procedure| The agent procedure populates the custom field with the data based on the results run within PowerShell.    |
 
 ## Implementation
 

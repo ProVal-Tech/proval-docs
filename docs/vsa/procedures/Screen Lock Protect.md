@@ -41,7 +41,7 @@ Sets the screen lock timeout on an endpoint.
 
 ## Dependencies
 
-[Protect-ScreenLock](<../../powershell/Protect-ScreenLock.md>)
+[Protect-ScreenLock](/docs/9c89e293-7f28-4e7c-936f-e285b04e8df0)
 
 ## Process
 

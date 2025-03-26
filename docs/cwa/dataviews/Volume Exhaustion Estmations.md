@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
+Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4).
 
 ## Dependencies
 
-[CWM - Automate - Script - Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>)
+[CWM - Automate - Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4)
 
 ## Columns
 

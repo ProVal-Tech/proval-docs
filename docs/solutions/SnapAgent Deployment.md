@@ -18,21 +18,21 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
 
 | Content                                                                 | Type            | Function                                                                                                    |
 |-------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|
-| [Script - BlackPoint - SnapAgent Installer](<../cwa/scripts/BlackPoint - SnapAgent Installer.md>) | Script          | This script is designed to install the SnapAgent on the machine.                                          |
-| [Monitor - BlackPoint SnapAgent Deployment](<../cwa/monitors/BlackPoint SnapAgent Deployment.md>) | Internal Monitor | This monitor detects online Windows agents where the SnapAgent is not installed.                           |
-| △ Custom - Execute Script - BlackPoint SnapAgent Install                | Alert Template   | This alert template schedules the script [Script - BlackPoint - SnapAgent Installer](<../cwa/scripts/BlackPoint - SnapAgent Installer.md>) on the detected agents of the monitor [Monitor - BlackPoint SnapAgent Deployment](<../cwa/monitors/BlackPoint SnapAgent Deployment.md>) for SnapAgent deployment. |
+| [Script - BlackPoint - SnapAgent Installer](/docs/202e2dde-5865-4035-8410-37dc6cb92a60) | Script          | This script is designed to install the SnapAgent on the machine.                                          |
+| [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) | Internal Monitor | This monitor detects online Windows agents where the SnapAgent is not installed.                           |
+| △ Custom - Execute Script - BlackPoint SnapAgent Install                | Alert Template   | This alert template schedules the script [Script - BlackPoint - SnapAgent Installer](/docs/202e2dde-5865-4035-8410-37dc6cb92a60) on the detected agents of the monitor [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0) for SnapAgent deployment. |
 
 ## Agnostic Content
 
 | Content                                                                | Type          | Function                                         |
 |------------------------------------------------------------------------|---------------|-------------------------------------------------|
-| [Install-SnapAgent](<../powershell/Install-SnapAgent.md>) | Agnostic Ps1 | Installs SnapAgent on Windows computers.        |
+| [Install-SnapAgent](/docs/0cf14533-c145-4a77-8ea7-8c70476768a9) | Agnostic Ps1 | Installs SnapAgent on Windows computers.        |
 
 ## Implementation
 
 1. Import the following content using the ProSync Plugin:
-   - [Script - BlackPoint - SnapAgent Installer](<../cwa/scripts/BlackPoint - SnapAgent Installer.md>)
-   - [Monitor - BlackPoint SnapAgent Deployment](<../cwa/monitors/BlackPoint SnapAgent Deployment.md>)
+   - [Script - BlackPoint - SnapAgent Installer](/docs/202e2dde-5865-4035-8410-37dc6cb92a60)
+   - [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0)
    - **Alert Template - △ Custom - Execute Script - BlackPoint SnapAgent Install**
 
 2. Reload the system cache:
@@ -40,7 +40,7 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
 
 3. Configure the solution as outlined below:
    - Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
-     - [Monitor - BlackPoint SnapAgent Deployment](<../cwa/monitors/BlackPoint SnapAgent Deployment.md>)
+     - [Monitor - BlackPoint SnapAgent Deployment](/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0)
        - Set up with the "△ Custom - Execute Script - BlackPoint SnapAgent Install" alert template.
        - Right-click and select "Run Now" to start the monitor.
 

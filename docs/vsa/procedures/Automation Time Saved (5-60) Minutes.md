@@ -36,7 +36,7 @@ APs with incremental time values that call the main CF Update Script are designe
 
 ## Dependencies
 
-[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
+[VSA - VSA Configuration - Solution - Automation Time Saved Tracking](/docs/81ac366c-a635-4419-9a29-94a1fe7ddac0)
 
 ## Process
 

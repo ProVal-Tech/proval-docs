@@ -22,7 +22,7 @@ This script audits the target Active Directory (AD) group for changes since the 
 
 ## Dependencies
 
-[Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>)
+[Compare-ADGroupMembers](/docs/d05c42d1-0984-4ce7-9b1e-7f144871fe1e)
 
 ## Variables
 
@@ -40,9 +40,9 @@ This script audits the target Active Directory (AD) group for changes since the 
 
 ## Process
 
-See [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) for details on the underlying script logic.
+See [Compare-ADGroupMembers](/docs/d05c42d1-0984-4ce7-9b1e-7f144871fe1e) for details on the underlying script logic.
 
-If [Compare-ADGroupMembers](<../../powershell/Compare-ADGroupMembers.md>) returns `1` in the `@datalogcontent@` variable, then a ticket will be created if the `@TicketCreationCategory@` variable is set.
+If [Compare-ADGroupMembers](/docs/d05c42d1-0984-4ce7-9b1e-7f144871fe1e) returns `1` in the `@datalogcontent@` variable, then a ticket will be created if the `@TicketCreationCategory@` variable is set.
 
 ## Output
 

@@ -16,9 +16,9 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 
 ## Dependencies
 
-- [CWM - Automate - Script - MySQL - View - Create (pvl_cu_compliance)](<../scripts/MySQL - View - Create (pvl_cu_compliance).md>)
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>)
-- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](<../tables/plugin_proval_windows_os_support.md>)
+- [CWM - Automate - Script - MySQL - View - Create (pvl_cu_compliance)](/docs/c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33)
+- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
+- [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Tables
 
@@ -38,11 +38,11 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 | CU Age - 91-135 %           | Percentage of computers where the installed latest Cumulative Update's release date falls between 91 to 135 days. (`CU Age - 91-135` divided by `Production Computers` multiplied by `100`) |
 | CU Age - 136+ %             | Percentage of computers where the release date of the installed latest Cumulative Update is at least 136 days ago. (`CU Age - 136+` divided by `Production Computers` multiplied by `100`) |
 | EOL %                       | Proportion of outdated machines ineligible for Cumulative Updates.                                                               |
-| Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
-| Total Eligible Clients - CU   | Total number of clients with supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+| Total Eligible Computers - CU | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
+| Total Eligible Clients - CU   | Total number of clients with supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
 | Compliant Clients - CU       | Total number of individual clients where `CU Score %` is greater than or equal to 75.                                            |
 | Non-Compliant Clients - CU    | Total number of individual clients where `CU Score %` is less than 75.                                                          |
 | Compliant Clients - CU %     | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
-| Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](<../tables/pvl_win_latest_installed_cu.md>) table. |
+| Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
 
 

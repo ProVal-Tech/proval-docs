@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-Displays Windows user profile information gathered from the script [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>).
+Displays Windows user profile information gathered from the script [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8).
 
 ## Dependencies
 
-- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](<../tables/plugin_proval_userprofiles.md>)
-- [EPM - Accounts - Script - User Profile - Get Information](<../scripts/User Profile - Get Information.md>)
+- [EPM - Accounts - Custom Table - plugin_proval_userprofiles](/docs/7a87abf3-b410-491b-bbc1-534092e61f55)
+- [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)
 
 ## Columns
 

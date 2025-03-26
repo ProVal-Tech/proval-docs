@@ -12,16 +12,16 @@ unlisted: false
 
 ## Summary
 
-This Automate script will execute the [Prompter](<./Prompter.md>) application. Prompter is a simple application designed to present a prompt on the desktop and optionally display a date and time picker. It supports any number of buttons, as well as optional header images and custom application icons.
+This Automate script will execute the [Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8) application. Prompter is a simple application designed to present a prompt on the desktop and optionally display a date and time picker. It supports any number of buttons, as well as optional header images and custom application icons.
 
 ## Sample Run
 
-This script is a function script and should not be manually executed. Utilize the [CWM - Automate - Script - Prompter - Template](<./Prompter - Template.md>) to get a copy of all potential variables and paste the else section into any script that should use Prompter.
+This script is a function script and should not be manually executed. Utilize the [CWM - Automate - Script - Prompter - Template](/docs/e6f6f344-5f75-4794-84d9-86b110206089) to get a copy of all potential variables and paste the else section into any script that should use Prompter.
 
 ## Dependencies
 
-- [Prompter](<./Prompter.md>)
-- [CWM - Automate - Script - Prompter - Template](<./Prompter - Template.md>)
+- [Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [CWM - Automate - Script - Prompter - Template](/docs/e6f6f344-5f75-4794-84d9-86b110206089)
 
 ## Variables
 

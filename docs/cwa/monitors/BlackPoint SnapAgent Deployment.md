@@ -22,7 +22,7 @@ It also depends on the following EDFs:
 
 ## Dependencies
 
-[CWA - Script - SnapAgent Installer](<../scripts/BlackPoint - SnapAgent Installer.md>)
+[CWA - Script - SnapAgent Installer](/docs/202e2dde-5865-4035-8410-37dc6cb92a60)
 
 ## Target
 

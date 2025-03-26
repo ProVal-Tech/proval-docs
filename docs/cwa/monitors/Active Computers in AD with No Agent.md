@@ -38,7 +38,7 @@ CALL v_ExtraDataRefresh(3, 'Clients');
 
 ## Dependencies
 
-[CWM - Automate - Ticket Creation - Client](<../scripts/CWM - Automate - Ticket Creation - Client.md>)
+[CWM - Automate - Ticket Creation - Client](/docs/eb53c8e9-ec2f-4efe-a36c-eeb3f8487981)
 
 ## Target
 

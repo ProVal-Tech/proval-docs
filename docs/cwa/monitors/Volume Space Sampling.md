@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The [Predictive Volume Exhaustion Monitor Creation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>) script generates the monitor set. It utilizes the [Get-VolumeExhaustionEstimate](<../../powershell/Get-VolumeExhaustionEstimate.md>) agnostic script to assess and return an estimation of the number of days remaining before the drive space is entirely occupied, utilizing the trend data/samples gathered. The parameters for the script are configured according to the system properties detailed in the [script's documentation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>).
+The [Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006) script generates the monitor set. It utilizes the [Get-VolumeExhaustionEstimate](/docs/21bc13d3-b2fb-42d5-8f38-da9b43990e06) agnostic script to assess and return an estimation of the number of days remaining before the drive space is entirely occupied, utilizing the trend data/samples gathered. The parameters for the script are configured according to the system properties detailed in the [script's documentation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006).
 
-The data returned by the monitor set is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](<../dataviews/Volume Exhaustion Estimations Remote Monitor.md>) dataview.
+The data returned by the monitor set is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587) dataview.
 
 ## Dependencies
 
-- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](<../scripts/Predictive Volume Exhaustion Monitor Creation.md>)
-- [EPM - Disk - Dataview - Volume Exhaustion Estimations [Remote Monitor]](<../dataviews/Volume Exhaustion Estimations Remote Monitor.md>)
+- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006)
+- [EPM - Disk - Dataview - Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587)
 
 ## Monitor
 

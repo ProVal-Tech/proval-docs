@@ -26,9 +26,9 @@ The script compares the current operating system build with the latest available
 
 ## Dependencies
 
-[CW RMM - Task - Feature Update Install With Tracking](<./Feature Update Install With Tracking.md>)  
-[CW RMM - Custom Field - Feature Update Install Failure](<../custom-fields/Feature Update Install Failure.md>)  
-[CW RMM - Custom Field - Feature Update Reboot Pending](<../custom-fields/Feature Update Reboot Pending.md>)  
+[CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)  
+[CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)  
+[CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)  
 
 ## Create Script
 

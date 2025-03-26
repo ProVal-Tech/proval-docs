@@ -18,7 +18,7 @@ This script can be used to set or reset global or computer level disk thresholds
 
 ## Dependencies
 
-- [CWM - Automate - Script - Property - Set](<./Property - Set.md>)
+- [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb)
 
 ## Variables
 

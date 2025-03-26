@@ -16,8 +16,8 @@ The table stores the scheduled task data.
 
 ## Dependencies
 
-- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
-- [Scheduled Task Audit](<./Scheduled Task Audit.md>)
+- [Scheduled Task Audit](/docs/c9a84634-8ee6-4484-8aa7-e92bafd4443c)
+- [Scheduled Task Audit](/docs/c9a84634-8ee6-4484-8aa7-e92bafd4443c)
 
 ## Tables
 

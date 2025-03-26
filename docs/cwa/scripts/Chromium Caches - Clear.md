@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-ChromiumCache](<../../powershell/Clear-ChromiumCache.md>).
+This is the Automate implementation of the agnostic script [SWM - Software Configuration - Script - Clear-ChromiumCache](/docs/b9e7f45e-b830-44b0-b296-121905ec770f).
 
 ## Sample Run
 

@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>).
+The data view showcases the version and patch level details of MSSQL Servers, acquired through the [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee).
 
 ## Dependencies
 
-- [Script - Get MSSQL Database Version](<../scripts/Get MSSQL Database Version.md>)
-- [Custom Table - pvl_mssql_db_version](<../tables/pvl_mssql_db_version.md>)
-- [Internal Monitor - Execute Script - Get MSSQL Database Version](<../monitors/Execute Script - Get MSSQL Database Version.md>)
+- [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee)
+- [Custom Table - pvl_mssql_db_version](/docs/e0ec87f6-0624-40db-ac6b-1b7d823e6b37)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
 
 ## Columns
 

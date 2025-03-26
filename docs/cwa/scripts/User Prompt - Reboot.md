@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is triggered from the monitor [Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). The script prompts the user to reboot with a simple yes or no prompt. There are three EDFs that get imported with the script:
+This script is triggered from the monitor [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4). The script prompts the user to reboot with a simple yes or no prompt. There are three EDFs that get imported with the script:
 
 - **Pending Reboot** [Checkbox - Manually Editable]  
   ![](../../../static/img/User-Prompt---Reboot/image_1.png)
@@ -29,15 +29,15 @@ If the user chooses to suppress the prompt by hitting no, it will update the Las
 
 ## Script is Monitor Driven Only
 
-This script is designed to run only when triggered by [Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>). Manual running of this script will output a log entry into the Scripts tab stating, "This script is designed to run only when triggered by a monitor and should not be run manually. Exiting."
+This script is designed to run only when triggered by [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4). Manual running of this script will output a log entry into the Scripts tab stating, "This script is designed to run only when triggered by a monitor and should not be run manually. Exiting."
 
 ## Dependencies
 
 The following items depend on this script to function correctly:
 
-- [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](<../monitors/Reboot Pending Prompt.md>)
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](<./Reset Reboot Pending EDFs.md>)
-- [CWM - Automate - Script - Prompter](<./Prompter.md>)
+- [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4)
+- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
+- [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
 
 ### System Properties
 

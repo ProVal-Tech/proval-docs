@@ -33,11 +33,11 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 ## Dependencies
 
-[RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>)
+[RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](/docs/96b26cf7-01fe-4f69-bb2f-359af6f46933)
 
 ## Target
 
-Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](<../roles/Windows RDS Licensing Server.md>) role installed.
+Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Licensing Server](/docs/96b26cf7-01fe-4f69-bb2f-359af6f46933) role installed.
 
 ## Ticketing
 

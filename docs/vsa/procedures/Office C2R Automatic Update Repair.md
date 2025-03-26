@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 This document describes the process to repair the Office Click2Run Automatic Update on an endpoint using the ProVal Agnostic Solution. For detailed instructions, refer to:  
-[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](<../../powershell/Repair-OfficeAutomaticUpdate.md>)
+[SWM - Software Configuration - Agnostic - Repair-OfficeAutomaticUpdate](/docs/ae9fa5e1-eb5b-45e5-8777-977d50e39c97)
 
 ## Example Agent Procedure Log
 

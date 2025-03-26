@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document explains how to remove the Sophos Endpoint Agent from an endpoint. It utilizes [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>).
+This document explains how to remove the Sophos Endpoint Agent from an endpoint. It utilizes [SWM - Software Uninstall - Agnostic - Remove-Sophos](/docs/3e0adee0-1a8c-476a-aea4-616a66b4de12).
 
 ## Example Agent Procedure Log
 
@@ -62,7 +62,7 @@ This document explains how to remove the Sophos Endpoint Agent from an endpoint.
 ## Dependencies
 
 [SophosZap](https://download.sophos.com/tools/SophosZap.exe) needs to be in the managed files, and the AP needs to be modified to point to it. Otherwise, SkipZap MUST be enabled on run, or the AP will fail.  
-Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](<../../powershell/Remove-Sophos.md>)
+Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](/docs/3e0adee0-1a8c-476a-aea4-616a66b4de12)
 
 ## Process
 

@@ -14,15 +14,15 @@ unlisted: false
 
 Baseline for the following dataviews:
 
-- [Patching Metrics Overview](<../dataviews/Admin - Patching Metrics Overview.md>)
-- [Patching Metrics Overview - Client Filter](<../dataviews/Patching Metrics Overview - Client Filter.md>)
-- [Patching Metrics Overview - Computer Filter](<../dataviews/Patching Metrics Overview - Computer Filter.md>)
+- [Patching Metrics Overview](/docs/aecfbacc-1c55-4a98-8cc3-7a1b753621ed)
+- [Patching Metrics Overview - Client Filter](/docs/e8b825c2-919d-4b92-a94a-8d9e01d48428)
+- [Patching Metrics Overview - Computer Filter](/docs/7cf32e9b-c86b-4a97-ba5a-f97139cddf0e)
 
 Minimum Requirement: MySQL 5.7.7
 
 ## Dependencies
 
-- [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](<../scripts/MySQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview.md>)
+- [MYSQL - View - Create - Plugin_ProVal_v_Patching_Metrics_Overview*](/docs/9aa26b60-2171-43e5-bb14-8bf274a237a4)
 
 ## Tables
 

@@ -16,7 +16,7 @@ This document displays information about the TPM configuration on endpoints.
 
 ## Dependencies
 
-[TPM Detail Auditing](<../scripts/TPM Detail Auditing.md>)
+[TPM Detail Auditing](/docs/459746c4-f070-40bf-a630-0650e08a2490)
 
 ## Columns
 

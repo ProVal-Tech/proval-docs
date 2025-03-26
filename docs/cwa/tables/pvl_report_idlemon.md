@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>) script.
+Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Globals]](/docs/c6ea69e0-823f-4090-9894-2faf81ba8c46) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - IdleMon Report [Globals]](<../scripts/IdleMon Report Globals.md>)
+[CWM - Automate - Script - IdleMon Report [Globals]](/docs/c6ea69e0-823f-4090-9894-2faf81ba8c46)
 
 ## Tables
 

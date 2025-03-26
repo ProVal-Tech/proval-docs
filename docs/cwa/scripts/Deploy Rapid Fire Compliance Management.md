@@ -26,7 +26,7 @@ It first validates that the .NET Framework 4.8 is installed; if it is installed,
 ## Dependencies
 
 Prerequisite: .NET Framework 4.8 should be installed  
-[CWA Script - .NET 4.8 Framework Installation](<.NET 4.8 Framework installation.md>)
+[CWA Script - .NET 4.8 Framework Installation](/docs/bc595922-1293-432f-9b30-4a246d517606)
 
 ## Variables
 
@@ -50,7 +50,7 @@ Prerequisite: .NET Framework 4.8 should be installed
 
 ## Ticketing
 
-To enable ticketing, please set the ticket category at the monitor level: [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](<../monitors/Agents Missing Rapid Fire Compliance Manager.md>).  
+To enable ticketing, please set the ticket category at the monitor level: [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433).  
 
 ![Ticketing](../../../static/img/Deploy-Rapid-Fire-Compliance-Management/image_2.png)
 

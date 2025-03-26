@@ -22,7 +22,7 @@ This task is used to install fonts from a particular directory or file.
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Script - Install-Font](<../../powershell/Install-Font.md>)
+[SWM - Software Install - Agnostic - Script - Install-Font](/docs/2520190e-2751-45f1-8d60-501027004938)
 
 ## User Parameters
 

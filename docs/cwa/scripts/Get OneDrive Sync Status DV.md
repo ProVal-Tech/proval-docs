@@ -16,7 +16,7 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 ## Sample Run
 
-**First Run:** Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](<../tables/pvl_odsync_status.md>).
+**First Run:** Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9).
 
 ![First Run](../../../static/img/Get-OneDrive-Sync-Status-DV/image_1.png)
 
@@ -27,7 +27,7 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 | Name             | Example | Required                | Description                                                                                                                                                       |
 |------------------|---------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set_Environment   | 1       | For First Execution      | Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](<../tables/pvl_odsync_status.md>). |
+| Set_Environment   | 1       | For First Execution      | Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9). |
 
 ## Output
 
@@ -37,7 +37,7 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 ## FAQ
 
-1. Does the OneDrive Sync Status in the [Dataview - OneDrive Sync Status [Script]](<../dataviews/OneDrive Sync Status Script.md>) contain the data for the OneDrive Sync or Script?  
+1. Does the OneDrive Sync Status in the [Dataview - OneDrive Sync Status [Script]](/docs/61160125-8794-4e01-ba0a-3bf4ec81077e) contain the data for the OneDrive Sync or Script?  
    **Answer:** The data in the OneDrive Sync Status is the OneDrive Sync data, not the script data.  
    ![OneDrive Sync Status](../../../static/img/Get-OneDrive-Sync-Status-DV/image_3.png)
 

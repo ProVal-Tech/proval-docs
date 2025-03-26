@@ -16,9 +16,9 @@ This dataview stores the details of VSS admin storage for all volumes.
 
 ## Dependencies
 
-- [VSS Resize](<../scripts/VSS Resize.md>)
-- [Vssadmin List Storage Audit](<../scripts/Vssadmin List Storage Audit.md>)
-- [plugin_proval_vssadminstorage](<../tables/plugin_proval_vssadminstorage.md>)
+- [VSS Resize](/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d)
+- [Vssadmin List Storage Audit](/docs/0de90f98-d7ae-4a79-a851-30829a596846)
+- [plugin_proval_vssadminstorage](/docs/165f6290-8932-459b-9bfe-18c86f7a61d6)
 
 ## Columns
 

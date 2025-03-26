@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script must be run as an Autofix script from the [ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>) monitor set. It will move the computer to the New_Location detected in the monitor set.
+The script must be run as an Autofix script from the [ProVal - Development - Agent Checking in with Wrong Location](/docs/b8313365-d95d-41bd-b2fc-e3e77f4fdcf7) monitor set. It will move the computer to the New_Location detected in the monitor set.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Since `@FieldName@` and `@Result@` are compulsory variables for the script to fu
 
 ## Dependencies
 
-[ProVal - Development - Agent Checking in with Wrong Location](<../monitors/Agent Checking in with Wrong Location.md>)
+[ProVal - Development - Agent Checking in with Wrong Location](/docs/b8313365-d95d-41bd-b2fc-e3e77f4fdcf7)
 
 ## Variables
 

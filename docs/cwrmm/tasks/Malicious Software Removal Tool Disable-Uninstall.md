@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This script disables and uninstalls the MSRT from the endpoint and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic group [Malicious Software Removal Tool Uninstall-Disable group](<../groups/Malicious Software Removal Tool Uninstall-Disable.md>) if the task ran successfully.
-This script can be on demand as well or by scheduling it to the group [Malicious Software Removal Tool Uninstall-Disable group](<../groups/Malicious Software Removal Tool Uninstall-Disable.md>).
+This script disables and uninstalls the MSRT from the endpoint and provided option to creates ticket if failure detected. It also save result to the custom field `MSRT Scanner Result` so that the agent gets excluded from the dynamic group [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4) if the task ran successfully.
+This script can be on demand as well or by scheduling it to the group [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4).
 
 ## Dependencies
 
-- [MSRT Custom fields](<../custom-fields/MSRT Custom Fields.md>)
-- [Malicious Software Removal Tool Uninstall-Disable group](<../groups/Malicious Software Removal Tool Uninstall-Disable.md>)
+- [MSRT Custom fields](/docs/c6a36d73-01c8-4ef9-ace2-e9d6a4bc2363)
+- [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4)
 
 ## Sample Run
 
@@ -247,7 +247,7 @@ In the script log message, simply type `Malicious Software Removal Tool disabled
 
 ## Deployment
 
-It is suggested to run the Task every 2 hours against the group [Malicious Software Removal Tool Uninstall-Disable group](<../groups/Malicious Software Removal Tool Uninstall-Disable.md>)
+It is suggested to run the Task every 2 hours against the group [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Malicious Software Removal Tool Disable/Uninstall` Task.
@@ -268,7 +268,7 @@ Change the number of hours to `2` and click `OK`.
 
 ![Change Hours](../../../static/img/Reboot-Pending-Check-Automation/image_28.png)
 
-Select the target `Device Group` to schedule on the group [Malicious Software Removal Tool Uninstall-Disable group](<../groups/Malicious Software Removal Tool Uninstall-Disable.md>).
+Select the target `Device Group` to schedule on the group [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4).
 
 ![Select Target](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/image-3.png>)
 

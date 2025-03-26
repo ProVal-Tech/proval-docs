@@ -14,7 +14,7 @@ unlisted: false
 
 This script will utilize the LSU Client PowerShell module to install any updates that are both applicable and silently installable on any Lenovo machine whose battery is currently not discharging.
 
-CW RMM implementation of [Invoke-LSUClientUpdate](<../../powershell/Invoke-LsuClientUpdate.md>) agnostic script.
+CW RMM implementation of [Invoke-LSUClientUpdate](/docs/da759e59-6f62-476d-a776-39b09e07ffbe) agnostic script.
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ CW RMM implementation of [Invoke-LSUClientUpdate](<../../powershell/Invoke-LsuCl
 
 ## Dependencies
 
-[EPM - Vendor Specific - Agnostic - Invoke-LSUClientUpdate](<../../powershell/Invoke-LsuClientUpdate.md>)
+[EPM - Vendor Specific - Agnostic - Invoke-LSUClientUpdate](/docs/da759e59-6f62-476d-a776-39b09e07ffbe)
 
 ## Task Creation
 

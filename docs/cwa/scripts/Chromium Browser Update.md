@@ -29,7 +29,7 @@ Ticketing is optional if the global parameter is set to a ticket category above 
 
 ## Dependencies
 
-Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium Browser Outdated [G]](<../monitors/ProVal - Chromium Browser Outdated G.md>)
+Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium Browser Outdated [G]](/docs/432cea29-e0c2-4a8d-b728-08af9446534b)
 
 #### Global Parameters
 

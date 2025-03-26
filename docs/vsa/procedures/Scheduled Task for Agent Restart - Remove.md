@@ -23,12 +23,12 @@ This document outlines the steps to remove the scheduled task that attempts to r
 
 ## Dependencies
 
-- [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>)
-- [Restart VSA Agent on Schedule](<./Restart VSA Agent on Schedule.md>)
+- [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](/docs/7eb2b58e-9f5e-4732-8457-6518060f0cc3)
+- [Restart VSA Agent on Schedule](/docs/e028ad3f-fecc-4701-83b8-0537db4e8494)
 
 ## Process
 
-This process deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](<./Scheduled Task for Agent Restart - Create.md>).
+This process deletes the scheduled task created by [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](/docs/7eb2b58e-9f5e-4732-8457-6518060f0cc3).
 
 ## Output
 

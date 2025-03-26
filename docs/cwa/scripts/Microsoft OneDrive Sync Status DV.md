@@ -20,8 +20,8 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 ## Dependencies
 
-- [EPM - Data Collection - Dataview - Microsoft OneDrive Sync Status [Script]](<../dataviews/Microsoft OneDrive Sync Status Script.md>)
-- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](<../monitors/Execute Script - Microsoft OneDrive Sync Status.md>)
+- [EPM - Data Collection - Dataview - Microsoft OneDrive Sync Status [Script]](/docs/5b97dae1-f82c-4ae4-9e21-a5c4e3b1480c)
+- [EPM - Data Collection - Internal Monitor - Execute Script - Microsoft OneDrive Sync Status](/docs/b7936e96-423d-4c53-bd95-d10a6c4861f1)
 
 #### Global Parameters
 

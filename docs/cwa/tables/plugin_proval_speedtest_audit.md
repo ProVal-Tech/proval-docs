@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores results from speed tests run by the script [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>).
+Stores results from speed tests run by the script [EPM - Network - Script - Internet Speed - Audit](/docs/54ed691f-e7be-4709-8967-72a4c9c782f6).
 
 ## Dependencies
 
-[EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>).
+[EPM - Network - Script - Internet Speed - Audit](/docs/54ed691f-e7be-4709-8967-72a4c9c782f6).
 
 ## Tables
 

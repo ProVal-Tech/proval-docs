@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This document displays the accumulated "Time Saved by Automation" for each script that has the setting configured based on triggers and custom tables created by [Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>).
+This document displays the accumulated "Time Saved by Automation" for each script that has the setting configured based on triggers and custom tables created by [Time Saved By Automation MySQL](/docs/3e0ab351-497a-4e39-96d7-a7bec5fc92d8).
 
 ## Dependencies
 
-[Time Saved By Automation MySQL](<../tables/plugin_proval_scripttimesaved_.md>)
+[Time Saved By Automation MySQL](/docs/3e0ab351-497a-4e39-96d7-a7bec5fc92d8)
 
 ## Columns
 

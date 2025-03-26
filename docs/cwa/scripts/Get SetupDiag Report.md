@@ -20,7 +20,7 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 
 ## Dependencies
 
-- [Invoke-SetupDiag](<../../powershell/Invoke-SetupDiag.md>)
+- [Invoke-SetupDiag](/docs/43e03fcc-e736-4d19-b231-76403f71c4e2)
 
 ## Variables
 
@@ -38,6 +38,6 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 
 Outputs to a variable (`SetupDiagResult`) that can be referenced in parent scripts.
 
-See [Invoke-SetupDiag](<../../powershell/Invoke-SetupDiag.md>) for additional output information.
+See [Invoke-SetupDiag](/docs/43e03fcc-e736-4d19-b231-76403f71c4e2) for additional output information.
 
 

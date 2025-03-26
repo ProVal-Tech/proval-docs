@@ -16,7 +16,7 @@ This document provides data used for auditing Windows 10 versions. It displays i
 
 ## Dependencies
 
-[Windows - Windows 10 Version Metrics + Filters](<../dataviews/Windows - Windows Feature Build Metrics UPDATED.md>)
+[Windows - Windows 10 Version Metrics + Filters](/docs/d78ab24a-3a09-4712-95f5-bb18f4c05f67)
 
 ## Table
 

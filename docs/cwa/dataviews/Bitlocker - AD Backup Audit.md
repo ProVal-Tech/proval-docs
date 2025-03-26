@@ -16,8 +16,8 @@ This document displays Bitlocker key protectors backed up to Active Directory.
 
 ## Dependencies
 
-- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](<../scripts/Bitlocker - AD Key Protector - Audit.md>)  
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../tables/plugin_proval_ad_bitlocker_keyprotectors.md>)  
+- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](/docs/d533538b-8b00-425e-849f-434518296b2d)  
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)  
 
 ## Columns
 

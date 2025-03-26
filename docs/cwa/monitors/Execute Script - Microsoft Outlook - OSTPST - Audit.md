@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The internal monitors run the [Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>) script on a weekly basis for Windows workstations with Outlook installed.
+The internal monitors run the [Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8) script on a weekly basis for Windows workstations with Outlook installed.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](<../scripts/Microsoft Outlook - OSTPST - Audit.md>)
+[EPM - Data Collection - Script - Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8)
 
 ## Target
 

@@ -14,7 +14,7 @@ unlisted: false
 
 The dataview compares the time a computer was online versus offline over the past 30 days. It also provides detailed status updates for the past 7 days and the past 24 hours.
 
-This information is calculated and displayed using data from the [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>) table. Therefore, the `- 7 Days` and `- 30 Days` columns will only be accurate once the `Days Since Data Collection` reaches 7 and 30 days, respectively. Until then, calculations are based on the available data in the [pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>) table.
+This information is calculated and displayed using data from the [pvl_automate_connection_audit_daily](/docs/da608773-1677-4247-a161-ea62b3b3ba23) table. Therefore, the `- 7 Days` and `- 30 Days` columns will only be accurate once the `Days Since Data Collection` reaches 7 and 30 days, respectively. Until then, calculations are based on the available data in the [pvl_automate_connection_audit_daily](/docs/da608773-1677-4247-a161-ea62b3b3ba23) table.
 
 Additionally, the `Days Since Data Collection` column may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information.
 
@@ -22,10 +22,10 @@ As a result, it is normal for the `Online - 30 Days` or other columns to display
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_automate_connection_audit_daily](<../tables/pvl_automate_connection_audit_daily.md>)
-- [CWM - Automate - Custom Table - pvl_automate_connection_audit](<../tables/pvl_automate_connection_audit.md>)
-- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
-- [CWM - Automate - script - Automate Agent Connection Audit](<../scripts/Automate Agent Connection Audit.md>)
+- [CWM - Automate - Custom Table - pvl_automate_connection_audit_daily](/docs/da608773-1677-4247-a161-ea62b3b3ba23)
+- [CWM - Automate - Custom Table - pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909)
+- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d)
+- [CWM - Automate - script - Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929)
 
 ## Columns
 

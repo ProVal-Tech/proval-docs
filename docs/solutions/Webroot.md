@@ -82,7 +82,7 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 
 **Search:** Webroot Installed - Windows
 
-**Scheduled Script:** [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](<../cwa/scripts/Webroot Keycode Verification.md>)
+**Scheduled Script:** [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060)
 
 **Audit Items:**
 
@@ -92,6 +92,6 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 
 #### Implementation Setup
 
-Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](<../cwa/scripts/Webroot Keycode Verification.md>) and run it.
+Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060) and run it.
 
 

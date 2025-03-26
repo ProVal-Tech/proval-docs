@@ -66,7 +66,7 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 
 ## Dependencies
 
-[Proval Documentation](<../custom-fields/Get-PST Info.md>)
+[Proval Documentation](/docs/74ed821b-9396-4153-b4f3-b556e777bbd5)
 
 ## Output
 

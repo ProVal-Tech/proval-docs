@@ -16,7 +16,7 @@ This monitor performs the auto deployment of the Network Glue Collector. It depe
 
 ## Dependencies
 
-[Script - Network Glue Collector - Install](<../scripts/Network Glue Collector - Install.md>)
+[Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)
 
 ## EDFs
 
@@ -35,4 +35,4 @@ Windows Machines
 
 **_To enable ticketing, please set the ticket category in the monitor._**  
 ![Image](../../../static/img/ProVal-Production---Network-Glue---Deployment/image_1.png)  
-**_The script will then handle the ticket creation:_** [ - Network Glue Collector - Install](<../scripts/Network Glue Collector - Install.md>)
+**_The script will then handle the ticket creation:_** [ - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)

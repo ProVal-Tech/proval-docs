@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-This report is used to hold the results of the [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) script run by the [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>) automate script for reporting purposes.
+This report is used to hold the results of the [RSM - Active Directory - Agnostic - Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  ) script run by the [RSM - Active Directory - Script - Weak Passwords - AD Test](/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724) automate script for reporting purposes.
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)
-- [RSM - Active Directory - Script - Weak Passwords - AD Test](<../scripts/Weak Passwords - AD Test.md>)
+- [RSM - Active Directory - Agnostic - Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  )
+- [RSM - Active Directory - Script - Weak Passwords - AD Test](/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724)
 
 ## Tables
 

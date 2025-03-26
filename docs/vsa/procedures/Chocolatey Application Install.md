@@ -32,7 +32,7 @@ Utilizes the Foil wrapper for Chocolatey to install an application. [Foil GitHub
 
 ## Dependencies
 
-[SWM - Software Management - Solution - VSA Chocolatey Application Management](<../../solutions/VSA Chocolatey Application Management.md>)
+[SWM - Software Management - Solution - VSA Chocolatey Application Management](/docs/e91935f1-0952-4a1c-a1cb-807be572ed30)
 
 ## Process
 

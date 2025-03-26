@@ -32,8 +32,8 @@ Recommended steps to use the Prompter:
 
 ## Dependencies
 
-- [Prompter](<./Prompter.md>)
-- [CWM - Automate - Script - Prompter](<./Prompter.md>)
+- [Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
 
 ## Variables
 

@@ -22,7 +22,7 @@ This task will make changes in the registry to set the update channel for Micros
 
 ## Dependencies
 
-[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](<../../solutions/Microsoft 365 - Click-to-Run - Set Update Channel.md>)
+[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/b605b808-7016-4911-8c37-6b950de40919)
 
 ## Task Creation
 

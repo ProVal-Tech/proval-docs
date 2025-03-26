@@ -21,7 +21,7 @@ This script takes user parameters when running the script and places them inside
 ## Dependencies
 
 This script is dependent on the following items:
-- [EPM - Windows Configuration - Script - Hosts File - Audit](<./Hosts File - Audit.md>)
+- [EPM - Windows Configuration - Script - Hosts File - Audit](/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195)
 - Host File Contents (Extra Data Field)
 
 #### User Parameters

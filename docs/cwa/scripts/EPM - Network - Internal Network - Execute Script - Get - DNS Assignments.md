@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The internal monitor executes the [EPM - Network - Script - Get - DNS Assignments](<./Get - DNS Assignments.md>) script once per week to keep the data updated in the [EPM - Network - Dataview - DNS Assignments](<../dataviews/DNS Assignments.md>) dataview.
+The internal monitor executes the [EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d) script once per week to keep the data updated in the [EPM - Network - Dataview - DNS Assignments](/docs/8e53a0ed-4b8a-4aec-9d92-99423964f53c) dataview.
 
 ## Dependencies
 
-- [EPM - Network - Script - Get - DNS Assignments](<./Get - DNS Assignments.md>)  
-- [EPM - Network - Custom Table - pvl_network_Adapter](<../tables/pvl_network_Adapter.md>)  
+- [EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d)  
+- [EPM - Network - Custom Table - pvl_network_Adapter](/docs/5a5463d0-0ce3-4c09-bd41-39da28e16d0f)  
 
 ## Target
 

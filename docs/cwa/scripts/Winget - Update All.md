@@ -20,7 +20,7 @@ This script will update all Winget packages found on an endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - PowerShell - Invoke-WingetProcessor](<../../powershell/Invoke-WingetProcessor.md>)
+- [SWM - Software Management - PowerShell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Global Parameters
 

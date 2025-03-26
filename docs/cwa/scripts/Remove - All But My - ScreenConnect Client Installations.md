@@ -30,7 +30,7 @@ This script removes all instances of ScreenConnect from the machine except the o
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Remove Additional ScreenConnect Clients](<../monitors/Remove Additional ScreenConnect Clients.md>)
+[CWM - Automate - Internal Monitor - Remove Additional ScreenConnect Clients](/docs/7803bfd7-52e0-482d-805a-29aca6cadf04)
 
 ## Importing Script via XML
 

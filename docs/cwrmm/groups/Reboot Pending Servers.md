@@ -16,7 +16,7 @@ This group contains the server endpoints where a reboot is pending. It detects o
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Prompter](<../custom-fields/Reboot Prompter.md>)
+[CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
 
 ## Details
 

@@ -28,7 +28,7 @@ The output is:
 
 ## Dependencies
 
-[Dynamic Processor Architecture Role](<./Dynamic Processor Architecture Role.md>)
+[Dynamic Processor Architecture Role](/docs/b0c17ff1-73a8-41ae-af16-901eade975b2)
 
 ## Columns
 

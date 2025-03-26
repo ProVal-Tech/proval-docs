@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Is the SentinelOne Management Server detected at the computer different from what is set for the Client in CW RMM? Updated by [SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>) task.
+Is the SentinelOne Management Server detected at the computer different from what is set for the Client in CW RMM? Updated by [SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079) task.
 
 ## Dependencies
 
-[CW RMM - Task - SentinelOne Management Console Validation](<../tasks/SentinelOne Management Console Validation.md>)
+[CW RMM - Task - SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079)
 
 ## Details
 

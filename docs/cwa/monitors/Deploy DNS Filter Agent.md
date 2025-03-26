@@ -16,7 +16,7 @@ The internal monitor executes the `DNS Filter Agent - Install` script hourly on 
 
 ## Dependencies
 
-[CWA - Script - DNS Filter Agent - Install](<../scripts/DNS Filter Agent - Install.md>)
+[CWA - Script - DNS Filter Agent - Install](/docs/f281c866-d1a8-44fd-9412-388b5f06200b)
 
 ## Target
 

@@ -22,8 +22,8 @@ This script gathers information about the status of the built-in OneDrive backup
 
 ## Dependencies
 
-- [OneDrive - Backup Status](<../dataviews/OneDrive - Backup Status.md>)  
-- [EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](<../tables/plugin_proval_onedrivebackupstatus.md>)
+- [OneDrive - Backup Status](/docs/b11f38e6-4a69-4f26-9317-46c30f531640)  
+- [EPM - Windows Configuration - Custom Table - plugin_proval_onedrivebackupstatus](/docs/e8a689d5-5075-416d-a38c-c0bb09487825)
 
 ## Output
 

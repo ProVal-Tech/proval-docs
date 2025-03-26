@@ -23,7 +23,7 @@ The script is designed to verify the installation of all necessary patches to mi
 
 ## Dependencies
 
-[Workaround - Active Directory privilege escalation attack [SCRIPT]](<../dataviews/Active Directory - Privilege Escalation Attack Mitigation.md>)
+[Workaround - Active Directory privilege escalation attack [SCRIPT]](/docs/b81bd6bd-9266-4c31-adad-9eaad5e90e31)
 
 ## Variables
 
@@ -62,7 +62,7 @@ The script will save information to the following EDFs based on the output of th
 - Non-compliant UAC sAMAccountType
 - Information Update Time
 
-These EDFs are also presented in the dataview [Workaround - Active Directory privilege escalation attack [SCRIPT]](<../dataviews/Active Directory - Privilege Escalation Attack Mitigation.md>).
+These EDFs are also presented in the dataview [Workaround - Active Directory privilege escalation attack [SCRIPT]](/docs/b81bd6bd-9266-4c31-adad-9eaad5e90e31).
 
 ## Output
 

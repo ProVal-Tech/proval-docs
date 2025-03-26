@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor set is to execute the [Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>) script. This script can either be scheduled against the group, or we can use this monitor set to execute the script.
+The purpose of this monitor set is to execute the [Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c) script. This script can either be scheduled against the group, or we can use this monitor set to execute the script.
 
 The monitor set will execute the script only once against the machines where it has never been executed, and once every six months against the machines where the upgrade was not possible during the previous execution of the script. Additionally, if the script fails to complete successfully, it will re-attempt that check every 30 days.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](<../tables/plugin_proval_windows11_readiness.md>)
-- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](<../scripts/Windows - Check Windows 11 Compatibility.md>)
+- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
+- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
 
 ## Target
 

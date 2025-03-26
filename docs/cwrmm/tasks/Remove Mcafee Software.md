@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the process to remove all McAfee products from an endpoint using the ConnectWise RMM implementation of the agnostic script [Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>).
+This document outlines the process to remove all McAfee products from an endpoint using the ConnectWise RMM implementation of the agnostic script [Remove-McAfeeSoftware](/docs/4c93e57c-0959-4f9e-9557-6f5974866782).
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document outlines the process to remove all McAfee products from an endpoin
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](<../../powershell/Remove-McAfeeSoftware.md>)
+[SWM - Software Uninstall - Agnostic - Remove-McAfeeSoftware](/docs/4c93e57c-0959-4f9e-9557-6f5974866782)
 
 ## Task Creation
 

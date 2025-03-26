@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This document outlines the creation of all necessary items in the database to ensure the [Active Directory Reporting Solution](<../reports/Active Directory Reporting Solution.md>) functions correctly. This script will create the following items:
+This document outlines the creation of all necessary items in the database to ensure the [Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0) functions correctly. This script will create the following items:
 
 1. Table: `plugin_proval_ad_pwd_audit`
 2. View: `plugin_proval_ad`
 3. View: `plugin_proval_ad_compliance`
 4. View: `plugin_proval_ad_groups`
 5. View: `plugin_proval_ad_pcinv`
-6. Schedules the script [RSM - Active Directory - Script - Weak Passwords - AD Test](<./Weak Passwords - AD Test.md>) on the Domain Controllers group, limited by the Infrastructure Masters search.
+6. Schedules the script [RSM - Active Directory - Script - Weak Passwords - AD Test](/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724) on the Domain Controllers group, limited by the Infrastructure Masters search.
 
 ## Sample Run
 
@@ -34,7 +34,7 @@ There are two prerequisites that need to be installed for this script to functio
 
 Other items depend on this script being executed to function, which are listed below:
 
-1. [Report - Active Directory User Assessment](<../reports/Active Directory User Assessment.md>)
+1. [Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
 2. [Report - Active Directory User Groups - Detail](https://proval.itglue.com/DOC-5078775-9493130)
 3. Report - Computers in Active Directory - No Agent
 

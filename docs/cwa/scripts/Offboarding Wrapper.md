@@ -19,8 +19,8 @@ This is a wrapper script that can be used to offboard machines from the client's
 ## Dependencies
 
 - [CWM - Automate - Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996)
-- [SWM - Software Uninstall - Script - Remove Application](<./Remove Application.md>)
-- [CW Control - Uninstall and Remove from Control Web Portal](<./CW Control - Uninstall and Remove from Control Web Portal.md>)
+- [SWM - Software Uninstall - Script - Remove Application](/docs/494f7109-e4b2-4ffa-93f8-e33089b09b4e)
+- [CW Control - Uninstall and Remove from Control Web Portal](/docs/d69c20e1-e605-4cf9-bf35-bbe4c74f134f)
 
 ## Sample Run
 

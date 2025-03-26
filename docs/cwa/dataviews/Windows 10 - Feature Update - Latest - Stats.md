@@ -23,8 +23,8 @@ This document provides statistics regarding the Windows 10 - Feature Update - La
 
 ## Dependencies
 
-- [SEC - Windows Patching - Script - Windows 10 - Feature Update - Install Latest](<../scripts/Windows 10 - Feature Update - Install Latest.md>)
-- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](<../scripts/Windows 10 Update Stats - Retrieve.md>)
+- [SEC - Windows Patching - Script - Windows 10 - Feature Update - Install Latest](/docs/5a4a9091-269e-4921-a7ba-bc87c209a43c)
+- [EPM - Data Collection - Script - Windows 10 Update Stats - Retrieve](/docs/65815475-a61d-4f0d-b2ba-c7b8368285c9)
 
 ## Columns
 

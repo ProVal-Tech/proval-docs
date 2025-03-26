@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This monitor will create tickets if the [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>) fails to enable the AD Recycle Bin on the Infrastructure master for more than three attempts.
+This monitor will create tickets if the [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7) fails to enable the AD Recycle Bin on the Infrastructure master for more than three attempts.
 
 ## Dependencies
 
-- [Task - Enable AD Recycle Bin](<../tasks/Enable AD Recycle Bin.md>)
-- [CW RMM - Custom Fields - AD Recycle Bin](<../custom-fields/AD Recycle Bin.md>)
+- [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7)
+- [CW RMM - Custom Fields - AD Recycle Bin](/docs/e4801a6f-1945-4aee-bd39-1601a185b9eb)
 
 ## Monitor
 

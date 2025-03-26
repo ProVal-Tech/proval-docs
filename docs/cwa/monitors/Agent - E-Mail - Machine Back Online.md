@@ -20,7 +20,7 @@ This monitor will alert on any computer that has checked in within the last 5 mi
 
 ## Dependencies
 
-[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]](../scripts/Email - EDF - Machine Back Online Autofix.md)
+[CWM - Automate - Script - Email - EDF - Machine Back Online [Autofix]](/docs/c32c5921-0bd1-4e4a-b605-baa0e958fbc0)
 
 ## Target
 

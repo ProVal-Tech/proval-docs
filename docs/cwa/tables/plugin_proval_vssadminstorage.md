@@ -16,9 +16,9 @@ This table contains the VSSAdmin storage details.
 
 ## Dependencies
 
-- [VSS Resize](<../scripts/VSS Resize.md>)
-- [Vssadmin List Storage Audit](<../scripts/Vssadmin List Storage Audit.md>)
-- [VSSAdmin Storage Audit](<../dataviews/VSSAdmin Storage Audit.md>)
+- [VSS Resize](/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d)
+- [Vssadmin List Storage Audit](/docs/0de90f98-d7ae-4a79-a851-30829a596846)
+- [VSSAdmin Storage Audit](/docs/7f7e7d3b-047d-41dc-acc2-5083adcaaf39)
 
 ## Tables
 

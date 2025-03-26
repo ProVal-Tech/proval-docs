@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This dataview shows the report of the Hyper-V disk records from the custom table [pvl_disk_record](<../tables/pvl_disk_record.md>).
+This dataview shows the report of the Hyper-V disk records from the custom table [pvl_disk_record](/docs/0b6f4746-2fac-46c7-bfb2-db23e734c9fc).
 
 ## Dependencies
 
-- [pvl_disk_record](<../tables/pvl_disk_record.md>) 
-- [Hyper-V Disk Space Record](<./Hyper-V Disk Space Record.md>) 
+- [pvl_disk_record](/docs/0b6f4746-2fac-46c7-bfb2-db23e734c9fc) 
+- [Hyper-V Disk Space Record](/docs/cc5a2747-6286-4783-b3f6-862aaa19a1c1) 
 
 ## Columns
 

@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This document describes the execution of the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script once per week on online Windows computers.
+This document describes the execution of the [Locate PHP.exe](/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43) script once per week on online Windows computers.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Locate PHP.exe](<../scripts/Locate PHP.exe.md>)
-- [EPM - Data Collection - Custom Table - pvl_php_audit](<../tables/pvl_php_audit.md>)
+- [EPM - Data Collection - Script - Locate PHP.exe](/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43)
+- [EPM - Data Collection - Custom Table - pvl_php_audit](/docs/10712956-11f1-47f6-ab0a-d063d2ca67d1)
 
 ## Target
 

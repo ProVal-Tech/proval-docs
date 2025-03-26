@@ -16,11 +16,11 @@ This monitor looks for any device detected by the Network probe on which the Aut
 
 ## Dependencies
 
-Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](<../scripts/MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions.md>) script to run every 12-24 hours as a client script in the dashboard. This will provide the necessary permissions for the `agentdeploymentreadinesscheck` table for both Hosted and On-Prem Clients. Otherwise, the monitor will not provide any results.
+Schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](/docs/417bc415-aa42-401f-b748-0f2715e4a239) script to run every 12-24 hours as a client script in the dashboard. This will provide the necessary permissions for the `agentdeploymentreadinesscheck` table for both Hosted and On-Prem Clients. Otherwise, the monitor will not provide any results.
 
 ## Implementation
 
-The monitor can be imported normally; just make sure to schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](<../scripts/MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions.md>) script every 12-24 hours. Otherwise, the monitor will not work.
+The monitor can be imported normally; just make sure to schedule the [CWM - Automate - Script - MySQL - Permission - Set agentdeploymentreadinesscheck Table Permissions](/docs/417bc415-aa42-401f-b748-0f2715e4a239) script every 12-24 hours. Otherwise, the monitor will not work.
 
 ## Target
 

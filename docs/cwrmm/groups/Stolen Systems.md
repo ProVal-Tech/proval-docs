@@ -14,9 +14,9 @@ unlisted: false
 This  group includes the windows machines where custom field `Mark System As Stolen` is set to True. This is the part of Lock Stolen System solution.
 
 ## Dependencies
-[Stolen Systems](<../tasks/Lock-Stolen-System.md>)
+[Stolen Systems](/docs/e9b29e34-d570-481f-99db-1a428763c5da)
 
-[Custom Fields](<../custom-fields/ENDPOINT-StolenDevices.md>)
+[Custom Fields](/docs/ff056937-ea5b-48f4-b76d-74566b981da8)
 
 ## Group Overview
 ![image20](../../../static/img/CW-RMM-Lock-Stolen-System/image20.png)

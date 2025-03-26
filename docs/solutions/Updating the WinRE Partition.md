@@ -18,24 +18,24 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 
 | Content                                                                                                 | Type            | Function                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) | Script          | This script automates the updating of WinRE images on supported Windows OS. It updates the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666. Refer to article: [link](https://support.microsoft.com/en-us/topic/kb5034957-updating-the-winre-partition-on-deployed-devices-to-address-security-vulnerabilities-in-cve-2024-20666-0190331b-1ca3-42d8-8a55-7fc406910c10) |
-| [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>) | Dataview        | This dataview contains the status of the WinRE update on the agent stored by the script [CWA Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) at computer-EDF 'Update WinRE Partition KB5034957'. |
-| [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>) | Internal Monitor | This monitor detects the online Windows machines whose OS falls under the supported OS criteria using the query (c.os NOT REGEXP 'Windows.* (XP|20(03|12)|8|7)' AND c.version REGEXP '22(621|631|000)|190(41|42|44|45)|20348'). It also ensures the script runs once on the agent. |
-| **△ Custom - Execute Script - WinRE Partition Updating**                                                | Alert Template   | This executes the script [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) on the detected device of monitor [Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>). |
+| [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52) | Script          | This script automates the updating of WinRE images on supported Windows OS. It updates the WinRE partition on deployed devices to address security vulnerabilities in CVE-2024-20666. Refer to article: [link](https://support.microsoft.com/en-us/topic/kb5034957-updating-the-winre-partition-on-deployed-devices-to-address-security-vulnerabilities-in-cve-2024-20666-0190331b-1ca3-42d8-8a55-7fc406910c10) |
+| [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](/docs/b364da24-ecf9-4237-857b-27de875b898c) | Dataview        | This dataview contains the status of the WinRE update on the agent stored by the script [CWA Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52) at computer-EDF 'Update WinRE Partition KB5034957'. |
+| [Internal Monitor - Update WinRE Partition Detection](/docs/857bac8a-a3f1-408d-9b1f-73b0e5ec6e07) | Internal Monitor | This monitor detects the online Windows machines whose OS falls under the supported OS criteria using the query (c.os NOT REGEXP 'Windows.* (XP|20(03|12)|8|7)' AND c.version REGEXP '22(621|631|000)|190(41|42|44|45)|20348'). It also ensures the script runs once on the agent. |
+| **△ Custom - Execute Script - WinRE Partition Updating**                                                | Alert Template   | This executes the script [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52) on the detected device of monitor [Update WinRE Partition Detection](/docs/857bac8a-a3f1-408d-9b1f-73b0e5ec6e07). |
 
 ## Other Content
 
 | Content                                                                                                 | Type       | Function                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>) | Agnostic   | Download the required CAB file for the endpoint to patch WinRE for CVE-2024-20666.                                                                                                                                         |
+| [KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52) | Agnostic   | Download the required CAB file for the endpoint to patch WinRE for CVE-2024-20666.                                                                                                                                         |
 
 ## Implementation
 
 1. **Import Contents:**
 
-   - [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](<../cwa/scripts/KB5034957 - CVE-2024-20666 - Updating the WinRE partition.md>)
-   - [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>)
-   - [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>)
+   - [Script - KB5034957 - CVE-2024-20666 - Updating the WinRE partition](/docs/e3be5c3e-c492-4ea5-8dbe-1d1c7b546c52)
+   - [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](/docs/b364da24-ecf9-4237-857b-27de875b898c)
+   - [Internal Monitor - Update WinRE Partition Detection](/docs/857bac8a-a3f1-408d-9b1f-73b0e5ec6e07)
    - **△ Custom - Execute Script - WinRE Partition Updating**
 
 2. **Reload the system cache:**
@@ -45,7 +45,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 3. **Enable Solution:**
 
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:  
-     [Internal Monitor - Update WinRE Partition Detection](<../cwa/monitors/Update WinRE Partition Detection.md>)  
+     [Internal Monitor - Update WinRE Partition Detection](/docs/857bac8a-a3f1-408d-9b1f-73b0e5ec6e07)  
      ![Setup Internal Monitor](../../static/img/Updating-the-WinRE-Partition/image_2.png)  
 
    - Set up with the **△ Custom - Execute Script - WinRE Partition Updating** alert template.  
@@ -59,7 +59,7 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 4. **Audit Data:**
 
    The Dataview is designed to store the result of the status for the Update WinRE partition.  
-   [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](<../cwa/dataviews/KB5034957 - CVE-2024-20666 - WinRE Partition Update Status.md>)
+   [Dataview - KB5034957 - CVE-2024-20666 - WinRE Partition Update Status](/docs/b364da24-ecf9-4237-857b-27de875b898c)
 
 5. **Ticket/Email Creation:**
 

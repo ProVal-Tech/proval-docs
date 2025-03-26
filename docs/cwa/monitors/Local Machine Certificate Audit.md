@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The purpose of the internal monitor is to detect the concerned servers where the [Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>) script has not executed in the past 7 days.
+The purpose of the internal monitor is to detect the concerned servers where the [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script has not executed in the past 7 days.
 
 ## Dependencies
 
-[EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](<../scripts/Windows - Certificates (My) - Local Machine - Audit.md>)
+[EPM - Network - Script - Certificate - Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
 
 ## Target
 

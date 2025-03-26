@@ -18,22 +18,22 @@ The solution comprises three dataviews designed to showcase the performance, his
 
 | Content                                                                 | Type      | Function                                                              |
 |-------------------------------------------------------------------------|-----------|----------------------------------------------------------------------|
-| [Dataview - Script List](<../cwa/dataviews/Script List.md>)          | Dataview  | Displays the basic information of the scripts present in the environment. |
-| [Dataview - Script Effectiveness Performance Audit](<../cwa/dataviews/Script Effectiveness Performance Audit.md>) | Dataview  | Displays the performance audit of the scripts present in the environment. |
-| [Dataview - Script Run Time Historical Audit](<../cwa/dataviews/Script Run Time Historical Audit.md>) | Dataview  | Displays the historical run-time data of the scripts present in the environment. |
+| [Dataview - Script List](/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240)          | Dataview  | Displays the basic information of the scripts present in the environment. |
+| [Dataview - Script Effectiveness Performance Audit](/docs/5606850a-c68e-4b15-b183-399cded6e601) | Dataview  | Displays the performance audit of the scripts present in the environment. |
+| [Dataview - Script Run Time Historical Audit](/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2) | Dataview  | Displays the historical run-time data of the scripts present in the environment. |
 
 ## Implementation
 
 1. Remove the following dataviews if they are present in the environment:
-   - Script List (replaced by [Script List](<../cwa/dataviews/Script List.md>))
-   - Script Effectiveness Performance Audit (replaced by [Script Effectiveness Performance Audit](<../cwa/dataviews/Script Effectiveness Performance Audit.md>))
-   - Script Effectiveness Audit (replaced by [Script Effectiveness Performance Audit](<../cwa/dataviews/Script Effectiveness Performance Audit.md>))
-   - Script Engine + Time Saved (replaced by [Script Run Time Historical Audit](<../cwa/dataviews/Script Run Time Historical Audit.md>))
+   - Script List (replaced by [Script List](/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240))
+   - Script Effectiveness Performance Audit (replaced by [Script Effectiveness Performance Audit](/docs/5606850a-c68e-4b15-b183-399cded6e601))
+   - Script Effectiveness Audit (replaced by [Script Effectiveness Performance Audit](/docs/5606850a-c68e-4b15-b183-399cded6e601))
+   - Script Engine + Time Saved (replaced by [Script Run Time Historical Audit](/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2))
 
 2. Import the following dataviews from the `ProSync` plugin:
-   - [Dataview - Script List](<../cwa/dataviews/Script List.md>)
-   - [Dataview - Script Effectiveness Performance Audit](<../cwa/dataviews/Script Effectiveness Performance Audit.md>)
-   - [Dataview - Script Run Time Historical Audit](<../cwa/dataviews/Script Run Time Historical Audit.md>)
+   - [Dataview - Script List](/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240)
+   - [Dataview - Script Effectiveness Performance Audit](/docs/5606850a-c68e-4b15-b183-399cded6e601)
+   - [Dataview - Script Run Time Historical Audit](/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2)
 
 3. Reload the System Cache  
    ![System Cache](../../static/img/Script-Performance-Audit/image_1.png)

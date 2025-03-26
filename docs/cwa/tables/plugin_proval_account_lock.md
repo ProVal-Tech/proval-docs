@@ -16,8 +16,8 @@ This document collects information about locked-out user accounts (both domain a
 
 ## Dependencies
 
-- [Account LockOut Audit](<../../cwa/dataviews/Account LockOut Audit.md>)
-- [User Management - Account Lockout Audit](<../../cwa/Scripts/User Management - Account Lockout Audit.md>)
+- [Account LockOut Audit](/docs/40cf6430-7ec1-496c-8e6e-b92a499120e6)
+- [User Management - Account Lockout Audit](/docs/c7996686-560d-47e2-acbf-99ae88c3102e)
 
 ## Tables
 

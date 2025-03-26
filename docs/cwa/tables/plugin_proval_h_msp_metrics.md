@@ -16,7 +16,7 @@ This custom table serves as a data repository for MSP metrics. It is populated a
 
 ## Dependencies
 
-[CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](<../scripts/MSP Automation Metrics - plugin_proval_h_msp_metrics.md>)
+[CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](/docs/408bb0fc-cfe0-4ea3-8e77-af13c41e054e)
 
 ## Tables
 

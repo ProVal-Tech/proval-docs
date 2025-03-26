@@ -16,7 +16,7 @@ Stores information about BitLocker configuration on target machines.
 
 ## Dependencies
 
-[SEC - Encryption - Script - BitLocker - Audit](<../scripts/Bitlocker - Audit.md>)
+[SEC - Encryption - Script - BitLocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
 
 ## Tables
 

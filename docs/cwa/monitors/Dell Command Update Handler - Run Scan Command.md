@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The purpose of the monitor set is to execute the [Script - Dell Command Update - Install/Upgrade + Command Handler](<../scripts/Dell Command Update - InstallUpgrade + Command Handler.md>) once per week against every Dell Workstation (Windows 10 and 11 only). The script is executed with the /scan command to populate the data in the [Dataview - Dell Command Update Handler - Audit [Script]](<../dataviews/Dell Command Update Handler - Audit Script.md>).
+The purpose of the monitor set is to execute the [Script - Dell Command Update - Install/Upgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747) once per week against every Dell Workstation (Windows 10 and 11 only). The script is executed with the /scan command to populate the data in the [Dataview - Dell Command Update Handler - Audit [Script]](/docs/1a188004-4007-40dc-8c44-d64d3c0d2bb8).
 
 **Alert Template:** Dell Command Update - Run Scan Command
 
 ## Dependencies
 
-[Script - Dell Command Update - Install/Upgrade + Command Handler](<../scripts/Dell Command Update - InstallUpgrade + Command Handler.md>)
+[Script - Dell Command Update - Install/Upgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747)
 
 ## Target
 

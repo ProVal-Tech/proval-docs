@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an RMM implementation of the agnostic script [Set-DisplayScaling](<../../powershell/Set-DisplayScaling.md>) to set custom display scaling on both existing and new users for Windows machines.
+This is an RMM implementation of the agnostic script [Set-DisplayScaling](/docs/d53bd821-ed9a-4779-8113-2994eaa7197c) to set custom display scaling on both existing and new users for Windows machines.
 
 ## Sample Run
 
@@ -23,7 +23,7 @@ To set the display scale to 100%:
 
 ## Dependencies
 
-[Set-DisplayScaling](<../../powershell/Set-DisplayScaling.md>)
+[Set-DisplayScaling](/docs/d53bd821-ed9a-4779-8113-2994eaa7197c)
 
 ## User Parameters
 

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document stores the data collected by the [Locate PHP.exe](<../scripts/Locate PHP.exe.md>) script.
+This document stores the data collected by the [Locate PHP.exe](/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43) script.
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Locate PHP.exe](<../scripts/Locate PHP.exe.md>)
+[EPM - Data Collection - Script - Locate PHP.exe](/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43)
 
 ## Tables
 

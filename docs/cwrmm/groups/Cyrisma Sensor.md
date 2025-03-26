@@ -16,14 +16,14 @@ The groups mentioned below are created to deploy and audit the Cyrisma Sensor.
 
 ## Dependencies
 
-[CW RMM - Cyrisma Custom Fields](<../custom-fields/CW RMM - Cyrisma Custom Fields.md>)
+[CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418)
 
 ## Details
 
 | Field Name                     | Type of Field (Machine or Organization) | Description                                                                                       |
 |--------------------------------|-----------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cyrisma Sensor Deployment       | Dynamic Group                          | This group is created to deploy the task [CW RMM - Task - CRI Agent Deployment](<../tasks/CRI Agent Deployment.md>) |
-| Cyrisma Deployment Failure Check | Dynamic Group                          | This group is designed to schedule the monitor [CW RMM - Monitor - CRI Agent Deployment Status Check](<../monitors/CRI Agent Deployment Status Check.md>) |
+| Cyrisma Sensor Deployment       | Dynamic Group                          | This group is created to deploy the task [CW RMM - Task - CRI Agent Deployment](/docs/344a3ab5-d05c-41a5-9303-45fc387ec2e8) |
+| Cyrisma Deployment Failure Check | Dynamic Group                          | This group is designed to schedule the monitor [CW RMM - Monitor - CRI Agent Deployment Status Check](/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524) |
 | Cyrisma Installed               | Dynamic Group                          | This group contains the agents where the Cyrisma sensor is installed for auditing.               |
 
 ## Create Group

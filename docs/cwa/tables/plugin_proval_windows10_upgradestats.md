@@ -16,8 +16,8 @@ This document contains data regarding the historical success and failure rates o
 
 ## Dependencies
 
-- [SEC - Windows Patching - Agnostic - Update-Windows10](<../../powershell/Update-Windows10.md>)
-- [SEC - Windows Patching - Windows 10 Update](<../../solutions/Windows 10 Update.md>)
+- [SEC - Windows Patching - Agnostic - Update-Windows10](/docs/7fdd2a3b-2dca-43db-8a1d-f350967f1055)
+- [SEC - Windows Patching - Windows 10 Update](/docs/16c09937-d57e-4d56-8367-fb5551d1c386)
 
 ## Tables
 

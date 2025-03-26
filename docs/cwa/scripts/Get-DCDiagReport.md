@@ -24,7 +24,7 @@ A set of specific test names can be passed to the `Excluded_TestNames` parameter
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Get-DCDiagReport.ps1](<../../powershell/Get-DCDiagReport.ps1.md>)
+- [EPM - Data Collection - Agnostic - Get-DCDiagReport.ps1](/docs/3c0d8537-9331-4623-90a0-8d2f724d19af)
 
 ## Variables
 

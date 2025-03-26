@@ -25,7 +25,7 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 ## Dependencies
 
-[EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>)  
+[EPM - Network - Agnostic - Test-InternetSpeed](/docs/12946fed-d74f-4977-b59d-85d5c639b56b)  
 
 ## User Parameter
 
@@ -42,7 +42,7 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 
 ## Process
 
-See [EPM - Network - Agnostic - Test-InternetSpeed](<../../powershell/Test-InternetSpeed.md>) for detailed information about the process. The script takes the output from this agnostic script and inserts it into a table: [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>).
+See [EPM - Network - Agnostic - Test-InternetSpeed](/docs/12946fed-d74f-4977-b59d-85d5c639b56b) for detailed information about the process. The script takes the output from this agnostic script and inserts it into a table: [EPM - Network - Custom Table - plugin_proval_speedtest_audit](/docs/38fbe617-1c50-443b-b69b-07eae7135652).
 
 ```
 Note: Please get the below MD5 file hash whitelisted for the script to work on the agents where security applications are present.

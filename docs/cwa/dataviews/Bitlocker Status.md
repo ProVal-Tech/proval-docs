@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This dataview displays the Bitlocker information on all computers that have run the [Script - Bitlocker - Audit](<../scripts/Bitlocker - Audit.md>). This Bitlocker information consists of the Bitlocker status of machine drives, information about key protectors, TPM status, and the backup status in Active Directory.
+This dataview displays the Bitlocker information on all computers that have run the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a). This Bitlocker information consists of the Bitlocker status of machine drives, information about key protectors, TPM status, and the backup status in Active Directory.
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../tables/plugin_proval_bitlocker_audit.md>)
-- [CWM - Automate - Custom Table - plugin_proval_tpm_audit](<../tables/plugin_proval_tpm_audit.md>)
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14)
+- [CWM - Automate - Custom Table - plugin_proval_tpm_audit](/docs/82144ad7-4cff-4883-8389-1180052ab156)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)
 
 ## Columns
 

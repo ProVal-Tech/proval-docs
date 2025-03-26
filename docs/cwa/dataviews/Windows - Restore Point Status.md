@@ -16,7 +16,7 @@ The dataview displays the status of the Restore Point for workstations.
 
 ## Dependencies
 
-- [Restore Point - Enabled](<../roles/Restore Point - Enabled.md>)
+- [Restore Point - Enabled](/docs/93829155-7945-440a-bf26-775f090df083)
 
 ## Columns
 

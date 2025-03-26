@@ -16,7 +16,7 @@ This dataview displays information about the eligibility status of a machine for
 
 ## Dependencies
 
-- [Bitlocker Enabled - System Drive](<../roles/Bitlocker Enabled - System Drive.md>) -- Role
+- [Bitlocker Enabled - System Drive](/docs/65d800d5-0bb9-4101-a6e9-289ab737557e) -- Role
 - @Bitlocker TPM Present -- Role
 - @Bitlocker TPM Ready -- Role
 

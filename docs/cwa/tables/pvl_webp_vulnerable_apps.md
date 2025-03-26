@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-The custom table serves as a container for the data fetched by the [WebP Vulnerability Report](<../scripts/WebP Vulnerability Report.md>) script.
+The custom table serves as a container for the data fetched by the [WebP Vulnerability Report](/docs/8de16f7d-eb07-4056-a599-1082f70e1ad1) script.
 
 ## Dependencies
 
-- [EPM - Security - Script - WebP Vulnerability Report](<../scripts/WebP Vulnerability Report.md>)
-- [EPM - Security - Internal Monitor - Execute Script - WebP Vulnerability Report](<../monitors/Execute Script - WebP Vulnerability Report.md>)
+- [EPM - Security - Script - WebP Vulnerability Report](/docs/8de16f7d-eb07-4056-a599-1082f70e1ad1)
+- [EPM - Security - Internal Monitor - Execute Script - WebP Vulnerability Report](/docs/5d5a553e-6a1b-41d0-a801-59a61ff8d5bc)
 
 ## Tables
 

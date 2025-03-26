@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>) ran in the past 7 days.
+This monitor detects the online Windows-supported agents (Windows 10, 11, 2016, 2019, and 2022 only) where the client EDF 'MSRT Scanner Enable' is checked and the exclusion location and computer EDFs 'MSRT Scanner Exclude' are not checked. It also excludes the agents where the MSRT scanner script [Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) ran in the past 7 days.
 
 ## Dependencies
 
-[Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>)  
+[Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257)  
 **△ Custom - Execute Script - MSRT Scanner**
 
 ## Target

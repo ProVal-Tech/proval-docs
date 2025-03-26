@@ -22,7 +22,7 @@ Once the registry is set, it will prompt the machine to reboot.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 
 ## Variables
 

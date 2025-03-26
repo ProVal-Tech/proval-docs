@@ -24,7 +24,7 @@ The script should be run against Windows OS machines, and PowerShell v2 or great
 ## Dependencies
 
 - @plugin_proval_wmipatchesinstalled
-- [Windows - Rollup Audit (WMI) [Script]](<../dataviews/Windows - Rollup Audit (WMI) Script.md>)
+- [Windows - Rollup Audit (WMI) [Script]](/docs/70484928-22c8-4aed-a32b-861646feaaaf)
 
 ## Process
 

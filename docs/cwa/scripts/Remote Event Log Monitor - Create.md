@@ -14,7 +14,7 @@ unlisted: false
 
 This Automate Script will create a state-based event log monitor on the specifically requested group. By default, it will set these monitors to the "Default - Do Nothing" alert template, which needs to be modified to fit your desired result after creation.
 
-PowerShell-related issues are addressed in the WARNING state. It is suggested to use the [CWM - Automate - Script - Ticket Creation - Computer](<./Ticket Creation - Computer.md>) script for ERROR state alerting, as the remote monitor truncates the message while creating a default ticket using the alert template.
+PowerShell-related issues are addressed in the WARNING state. It is suggested to use the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script for ERROR state alerting, as the remote monitor truncates the message while creating a default ticket using the alert template.
 
 **Note:** You must review the properties of the event log to determine the name.
 
@@ -51,7 +51,7 @@ The aforementioned monitor will be designed to scan for all events from the Appl
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Script - Get-RecentEventLog](<../../powershell/Get-RecentEventLog.md>)  
+- [EPM - Data Collection - Agnostic - Script - Get-RecentEventLog](/docs/4cc33728-0327-42b5-86d3-e85c91635c71)  
   [Documentation Link](https://app.myglue.com/help_center/documents/9751473)
 
 ## Variables

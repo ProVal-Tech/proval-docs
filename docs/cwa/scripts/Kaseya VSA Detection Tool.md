@@ -22,7 +22,7 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 
 ## Dependencies
 
-[Kaseya Vulnerability Audit](<../dataviews/Kaseya Vulnerability Audit.md>)
+[Kaseya Vulnerability Audit](/docs/4c9692d8-b924-4901-a9c6-81b57d95b898)
 
 ### Script States
 

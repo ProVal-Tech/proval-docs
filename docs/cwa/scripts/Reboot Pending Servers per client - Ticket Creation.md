@@ -23,7 +23,7 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 ## Dependencies
 
-[CWM - Automate - Script - Reboot Pending Servers per Client - Tickets Management](<./Reboot Pending Servers per client - Ticket Management.md>)
+[CWM - Automate - Script - Reboot Pending Servers per Client - Tickets Management](/docs/0d5f27c6-fa65-4a98-b32d-61426505aa1c)
 
 ## Output
 

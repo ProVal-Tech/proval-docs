@@ -24,7 +24,7 @@ Run a scan and repair on all available drives, stopping the drives completely du
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Script - Invoke-RepairVolume](<../../powershell/Invoke-RepairVolume.md>)
+- [EPM - Disk - Agnostic - Script - Invoke-RepairVolume](/docs/5fc50641-00ec-41c0-b4c8-472d93cd8cfe)
 
 #### User Parameters
 

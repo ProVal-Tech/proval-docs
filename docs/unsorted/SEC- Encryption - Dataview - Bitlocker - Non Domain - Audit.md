@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-This document displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>), which is filled by [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>). Additionally, it provides information about the Active Directory backup status of each key protector.
+This document displays information from the table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14), which is filled by [SEC - Encryption - Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a). Additionally, it provides information about the Active Directory backup status of each key protector.
 
 ## Dependencies
 
-- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](<../cwa/tables/plugin_proval_bitlocker_audit.md>)
-- [SEC - Encryption - Script - Bitlocker - Audit](<../cwa/scripts/Bitlocker - Audit.md>)
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](<../cwa/tables/plugin_proval_ad_bitlocker_keyprotectors.md>)
-- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](<../cwa/scripts/Bitlocker - AD Key Protector - Audit.md>)
+- [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14)
+- [SEC - Encryption - Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
+- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)
+- [SEC - Encryption - Script - Bitlocker - Audit AD Key Protector Backups](/docs/d533538b-8b00-425e-849f-434518296b2d)
 
 ## Columns
 

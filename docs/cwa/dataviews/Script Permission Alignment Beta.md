@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The dataview will display the user classes that will be assigned to the stock scripts after running the [Script Permission Alignment [Beta]](<../scripts/Script Permission Alignment Beta.md>) script.
+The dataview will display the user classes that will be assigned to the stock scripts after running the [Script Permission Alignment [Beta]](/docs/46412261-f40b-456f-92db-500d166c41ca) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Script Permission Alignment [Beta]](<../scripts/Script Permission Alignment Beta.md>)
+[CWM - Automate - Script - Script Permission Alignment [Beta]](/docs/46412261-f40b-456f-92db-500d166c41ca)
 
 ## Columns
 

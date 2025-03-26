@@ -22,7 +22,7 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 
 ## Dependencies
 
-[CWM - Internal Monitor - ProVal - Client Specific - Auto Close - Missing Patch Tickets](<../monitors/Missing Patch Tickets.md>)
+[CWM - Internal Monitor - ProVal - Client Specific - Auto Close - Missing Patch Tickets](/docs/7310b9b3-8209-4067-8b83-81ab9345e2f4)
 
 ## Variables
 

@@ -16,7 +16,7 @@ The custom fields listed below are used in the Reboot Prompter Solution.
 
 ## Dependencies
 
-[CW RMM - Task - Reboot Prompter](<../tasks/Reboot Prompter.md>)
+[CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b)
 
 ## Details
 
@@ -30,9 +30,9 @@ The custom fields listed below are used in the Reboot Prompter Solution.
 | Prompter_HeaderImage             | Site     | Text Box | [https://redirhostname/WCC2/Utilities/HeaderImage](https://redirhostname/WCC2/Utilities/HeaderImage) | Yes      | Holds the local path, file, or URL to a desired pop-up header image. The default is set to '[https://redirhostname/WCC2/Utilities/HeaderImage](https://redirhostname/WCC2/Utilities/HeaderImage)'                       |
 | Prompter_RebootPending           | Endpoint | Flag     | No                                                       | Yes      | This flag is manually set at the endpoint level to enable the reboot prompter solution. It will be automatically unchecked if the agent is restarted by the Task 'Reboot Prompter'.                                         |
 | Auto_RebootPendingCheck          | Endpoint | Flag     | No                                                       | No       | This flag is automatically set at the endpoint level via task to enable the reboot prompter solution. It will be automatically unchecked if the agent is restarted by the Task 'Reboot Prompter'.                           |
-| Prompter_Counter                 | Endpoint | Text Box |                                                          | No       | This fetches the number of attempts the reboot prompt made on the user machine from the text file 'Prompter_Counter' created by the task [CW RMM - Task - Reboot Prompter](<../tasks/Reboot Prompter.md>) after complete execution. |
-| Prompter_Logging                 | Endpoint | Text Box |                                                          | No       | This fetches the logging details where the denial and threshold counts are provided. It also contains information on the force reboot log from the text file 'Prompter_Logging' created by the task [CW RMM - Task - Reboot Prompter](<../tasks/Reboot Prompter.md>) after complete execution. |
-| Prompter_UserAction              | Endpoint | Text Box |                                                          | No       | This fetches the user action details indicating whether the user clicked 'No', 'Yes', or 'Time Lapsed', along with the date and time to show when the action was taken from the text file 'Prompter_UserAction' created by the task [CW RMM - Task - Reboot Prompter](<../tasks/Reboot Prompter.md>) after complete execution. |
+| Prompter_Counter                 | Endpoint | Text Box |                                                          | No       | This fetches the number of attempts the reboot prompt made on the user machine from the text file 'Prompter_Counter' created by the task [CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b) after complete execution. |
+| Prompter_Logging                 | Endpoint | Text Box |                                                          | No       | This fetches the logging details where the denial and threshold counts are provided. It also contains information on the force reboot log from the text file 'Prompter_Logging' created by the task [CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b) after complete execution. |
+| Prompter_UserAction              | Endpoint | Text Box |                                                          | No       | This fetches the user action details indicating whether the user clicked 'No', 'Yes', or 'Time Lapsed', along with the date and time to show when the action was taken from the text file 'Prompter_UserAction' created by the task [CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b) after complete execution. |
 | Exclude Reboot                   | Endpoint | Flag     | No                                                       | Yes      | This will exclude the endpoint from the Reboot Prompter solution.                                                                                                                                                             |
 
 ## Steps to Create Custom Fields

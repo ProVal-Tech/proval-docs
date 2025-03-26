@@ -20,7 +20,7 @@ Both Windows and Mac machines
 
 ## Sample Run
 
-The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>), so the agent gets updated automatically.
+The script is intended to run as an auto-fix with the internal monitor [CWC - Internal Monitor - Outdated Screenconnect Version](/docs/f3fa89f2-9c7a-44ab-a6d9-14a37b205e7d), so the agent gets updated automatically.
 
 ## Global Parameters
 
@@ -30,7 +30,7 @@ The script is intended to run as an auto-fix with the internal monitor [CWC - In
 
 ## Dependencies
 
-[CWC - Internal Monitor - Outdated Screenconnect Version](<../monitors/Outdated Screenconnect Version.md>)
+[CWC - Internal Monitor - Outdated Screenconnect Version](/docs/f3fa89f2-9c7a-44ab-a6d9-14a37b205e7d)
 
 ## Output
 

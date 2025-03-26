@@ -14,7 +14,7 @@ unlisted: false
 
 The purpose of this monitor is to detect Windows machines with Duo installed on them, where the EDF `Duo Agent Exclusion` is opted at the client, location, or computer level.
 
-**Note:** *The same EDFs are also being used in the [SWM - Software Install - DUO Install/Upgrade - Latest Version](<../scripts/DUO InstallUpgrade - Latest Version.md>). Selecting these EDFs will exclude the agent from DUO deployment and will also uninstall DUO from the machine if it is already installed.*
+**Note:** *The same EDFs are also being used in the [SWM - Software Install - DUO Install/Upgrade - Latest Version](/docs/99a31695-f399-4982-989b-5fbc3aada8c6). Selecting these EDFs will exclude the agent from DUO deployment and will also uninstall DUO from the machine if it is already installed.*
 
 ## Dependencies
 

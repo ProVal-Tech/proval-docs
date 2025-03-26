@@ -27,7 +27,7 @@ It is compatible with the following applications:
 
 ## Dependencies
 
-[Agnostic - Visual Studio Auto Update](<../../unsorted/SWM - Software Update - Agnostic - Update-VisualStudio.md>)  
+[Agnostic - Visual Studio Auto Update](/docs/ef41c491-27c6-41d4-a478-eb66ca809399)  
 
 ## Variables
 

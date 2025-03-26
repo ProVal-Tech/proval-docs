@@ -22,7 +22,7 @@ References:
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>)
+[CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
 
 ## Table
 
@@ -41,7 +41,7 @@ References:
 ## FAQ
 
 **Q:** I need to add more versions to this list. How do I do that?  
-**A:** Open the [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](<../scripts/MySQL - Table - Create (plugin_proval_windows_os_support).md>) script and modify line 1 to add the new item.
+**A:** Open the [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1) script and modify line 1 to add the new item.
 
 ## For CW RMM
 

@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>).
+The dataview displays the information of the agents repaired by the [Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c).
 
 ## Dependencies
 
-- [Script - Automate Agent - Auto Repair](<../scripts/Automate Agent - Auto Repair.md>)
-- [Custom Table - pvl_repaired_agents](<../tables/pvl_repaired_agents.md>)
-- [Script - Track Repaired Agents](<../scripts/Track Repaired Agents.md>)
+- [Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
+- [Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf)
+- [Script - Track Repaired Agents](/docs/1cfbe430-0cbd-4abf-861d-4884632b7705)
 
 ## Columns
 

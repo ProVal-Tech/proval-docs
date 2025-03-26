@@ -28,7 +28,7 @@ Select `Run Now` and click on `Run Task`:
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](<../../powershell/New-DesktopUriShortcut.md>)
+[EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](/docs/56fa7d90-7c83-4c4a-ac0e-c49a6d5701af)
 
 ## User Parameters
 

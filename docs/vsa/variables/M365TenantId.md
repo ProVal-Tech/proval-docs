@@ -18,7 +18,7 @@ The value for this must be provided by the partner. The partner can get their M3
 
 ## Associated Content
 
-[SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](<../../solutions/Microsoft OneDrive - (Group PoliciesRedirect Folder).md>)
+[SWM - Software Management - Solution - Microsoft OneDrive - (Group Policies/Redirect Folder)](/docs/42fcda71-e3ed-40e2-92e0-c0eb80e42e2d)
 
 ## Details
 

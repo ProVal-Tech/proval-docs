@@ -24,7 +24,7 @@ Windows Machines
 
 ## Sample Run
 
-It must be run with the [SWM - Software Install - Internal Monitor - Agents Missing PerchLogShipper](<../monitors/Deploy Perch Log Shipper.md>) monitor but can also be run individually.
+It must be run with the [SWM - Software Install - Internal Monitor - Agents Missing PerchLogShipper](/docs/bc410117-b7b7-4345-967c-965f15acdf07) monitor but can also be run individually.
 
 ![Sample Run Image](../../../static/img/Deploy-Perch-Log-Shipper/image_4.png)
 

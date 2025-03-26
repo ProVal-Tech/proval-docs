@@ -18,15 +18,15 @@ This solution will gather, store, and display the result of the `query session` 
 
 | Content                                                                 | Type         | Function                                                |
 |-------------------------------------------------------------------------|--------------|---------------------------------------------------------|
-| [CWM - Automate - Script - Windows Sessions [DV, Globals]](<../cwa/scripts/Windows Sessions DV, Globals.md>) | Script       | Executes the `query session` command and fetches the result. |
-| [CWM - Automate - Custom Table - pvl_windows_sessions](<../cwa/tables/pvl_windows_sessions.md>)    | Custom Table | Stores the result fetched by the script.                 |
-| [CWM - Automate - Dataview - Windows Sessions [Script]](<../cwa/dataviews/Windows Sessions Script.md>)   | Dataview     | Displays the result stored in the table.                |
+| [CWM - Automate - Script - Windows Sessions [DV, Globals]](/docs/7d803c02-dd33-4a82-810e-02b4820ae88b) | Script       | Executes the `query session` command and fetches the result. |
+| [CWM - Automate - Custom Table - pvl_windows_sessions](/docs/a5bff446-3e21-42cf-8208-d0de57f497ee)    | Custom Table | Stores the result fetched by the script.                 |
+| [CWM - Automate - Dataview - Windows Sessions [Script]](/docs/7eb288b7-a87b-4f1a-a3a7-7f785f74150a)   | Dataview     | Displays the result stored in the table.                |
 
 ## Implementation
 
-- Import the [CWM - Automate - Script - Windows Sessions [DV, Globals]](<../cwa/scripts/Windows Sessions DV, Globals.md>) script.
-- Import the [CWM - Automate - Dataview - Windows Sessions [Script]](<../cwa/dataviews/Windows Sessions Script.md>) dataview.
-- Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](<../cwa/tables/pvl_windows_sessions.md>) table.
+- Import the [CWM - Automate - Script - Windows Sessions [DV, Globals]](/docs/7d803c02-dd33-4a82-810e-02b4820ae88b) script.
+- Import the [CWM - Automate - Dataview - Windows Sessions [Script]](/docs/7eb288b7-a87b-4f1a-a3a7-7f785f74150a) dataview.
+- Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](/docs/a5bff446-3e21-42cf-8208-d0de57f497ee) table.
 - Reference the dataview for results.
 
 

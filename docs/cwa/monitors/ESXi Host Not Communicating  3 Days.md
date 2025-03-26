@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is intended to report any ESXi hosts in the system that have not checked in with Automate for more than 3 days. It is designed to be used with the [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>) as the auto-fix.
+This monitor is intended to report any ESXi hosts in the system that have not checked in with Automate for more than 3 days. It is designed to be used with the [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c) as the auto-fix.
 
 **Alert Template:** △ Custom - Ticket Creation - ESXi Monitoring
 
@@ -20,7 +20,7 @@ This monitor is intended to report any ESXi hosts in the system that have not ch
 
 This section should contain a list of ITGlue documents listed in the Related Items sidebar on which this monitor depends.
 
-- [Script - Ticket Creation - VMware ESXi Monitoring](<../scripts/Ticket Creation - VMware ESXi Monitoring.md>)
+- [Script - Ticket Creation - VMware ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c)
 - This solution requires that the Virtualization Manager is set up and configured.
 
 ## Target

@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor is to detect Windows machines where the Autopilot hash has not been collected yet. It selects the machines where the client-level EDF "Collect Autopilot Hardware Hash" is enabled, the computer-level EDF "Autopilot Hash" is empty, and the script [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>) has not been successfully executed on the device within the last 7 days.
+The purpose of this monitor is to detect Windows machines where the Autopilot hash has not been collected yet. It selects the machines where the client-level EDF "Collect Autopilot Hardware Hash" is enabled, the computer-level EDF "Autopilot Hash" is empty, and the script [CWA - Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806) has not been successfully executed on the device within the last 7 days.
 
 ## Dependencies
 
-[CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>)
+[CWA - Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806)
 
 ## Client-Level EDF
 
@@ -28,7 +28,7 @@ The purpose of this monitor is to detect Windows machines where the Autopilot ha
 
 | Name          | Type  | Section   | Required | Description                                                                                       |
 |---------------|-------|-----------|----------|---------------------------------------------------------------------------------------------------|
-| Autopilot Hash | Text  | Autopilot | False    | This EDF is filled by [CWA - Script - Get-AutopilotHash](<../scripts/Get-AutopilotHash.md>). It has not been filled manually. |
+| Autopilot Hash | Text  | Autopilot | False    | This EDF is filled by [CWA - Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806). It has not been filled manually. |
 
 ## Target
 

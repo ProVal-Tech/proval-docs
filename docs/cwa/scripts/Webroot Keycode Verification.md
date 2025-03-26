@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script collects the Webroot hashed keycode from the machine and matches it with the keycode set up in the Webroot plugin. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](<../dataviews/Webroot KeyCode AuditScript.md>), or it can create a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](<../monitors/Webroot Keycode Verification EDF.md>) when the monitor has a ticket category set.
+This script collects the Webroot hashed keycode from the machine and matches it with the keycode set up in the Webroot plugin. We can either review the results in the [Dataview - Webroot KeyCode Audit [Script]](/docs/5ed671db-6295-42ed-9f44-cd0b4203c4e4), or it can create a ticket for a keycode mismatch with the [Monitor - Execute Script - Webroot Keycode Verification](/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5) when the monitor has a ticket category set.
 
 ## Sample Run
 

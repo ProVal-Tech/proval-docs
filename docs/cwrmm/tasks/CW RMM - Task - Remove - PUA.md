@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Remove-PUA](</docs/powershell/Remove-PUA.md>). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document. 
+This is a CW RMM implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document. 
 
 ## Sample Run
 
@@ -37,7 +37,7 @@ To remove individual apps supported by the script like `Microsoft.MicrosoftOffic
 
 ## Dependencies
 
-[Remove-PUA](</docs/powershell/Remove-PUA.md>)
+[Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 ## Implementation
 
@@ -48,7 +48,7 @@ To implement this script, please create a new "PowerShell" style script in the s
 ![Create Task](../../../static/img/CRI-Agent-Deployment/image_3.png)
 
 - **Name:** Remove - PUA  
-- **Description:** This is a CW RMM implementation of the agnostic script [Remove-PUA](</docs/powershell/Remove-PUA.md>). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document.   
+- **Description:** This is a CW RMM implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document.   
 - **Category:** Application  
 
 ![Task Detail](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-2.png>)

@@ -16,8 +16,8 @@ This document gathers details of the mapped network drives for the current user 
 
 ## Dependencies
 
-- [Mapped Drive Audit - Current User](<./Mapped Drive Audit - Current User.md>) 
-- [plugin_proval_Mapped_Drive_CurrentUser](<./plugin_proval_Mapped_Drive_CurrentUser.md>) 
+- [Mapped Drive Audit - Current User](/docs/6e855af4-7a44-4332-a5cf-73b238c6dac7) 
+- [plugin_proval_Mapped_Drive_CurrentUser](/docs/5ec5392b-3704-4969-aab6-7a59a603b3ea) 
 
 ## Columns
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script installs or updates the DUO Authentication Proxy application to the latest available version. It can run either manually or as an Autofix from the [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](<../monitors/DUO Auth Proxy.md>) monitor set.
+The script installs or updates the DUO Authentication Proxy application to the latest available version. It can run either manually or as an Autofix from the [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](/docs/588520f3-c262-4b80-8c56-0b9411ab0bdc) monitor set.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Dependencies
 
-- [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](<../monitors/DUO Auth Proxy.md>)
+- [CWM - Automate - Remote Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](/docs/588520f3-c262-4b80-8c56-0b9411ab0bdc)
 
 ## Variables
 

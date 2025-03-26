@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is to be filled with the Huntress Organization Key. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](<../tasks/Huntress Agent (INSTALL).md>) task, which essentially corresponds to the Client Name.
+This custom field is to be filled with the Huntress Organization Key. It is utilized by the [CW RMM - Task - Huntress Agent (INSTALL)](/docs/e1f40d15-13f1-465e-9870-653927ad0434) task, which essentially corresponds to the Client Name.
 
 ## Create the Custom Field
 

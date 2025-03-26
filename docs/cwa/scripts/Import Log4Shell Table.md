@@ -20,7 +20,7 @@ This document installs and populates a table in MySQL with a list of potential L
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>)
+- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5)
 - Must be run on the Automate database server.
 - PowerShell v5
 - `mysql.exe` located in any subdirectory of `$env:ProgramFiles/MySQL`
@@ -35,7 +35,7 @@ This document installs and populates a table in MySQL with a list of potential L
 
 ## Process
 
-See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](<../../powershell/Import-Log4JTable.md>) for process information.
+See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5) for process information.
 
 ## Output
 

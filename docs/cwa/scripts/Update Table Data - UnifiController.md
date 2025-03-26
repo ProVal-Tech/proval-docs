@@ -12,15 +12,15 @@ unlisted: false
 
 ## Child of Solution
 
-[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](<../../solutions/CWA - Update Table Data - UnifiController.md>)  
+[EPM - Data Collection - Solution - CWA - Update Table Data - UnifiController](/docs/59fbb11b-df98-46a4-9b97-986b4f8e16f9)  
 
 ## Summary
 
 This script launches the Get-UnifiController.ps1 file from the registry, filters out the needed information, and populates the following tables with data:
 
-- [CWM - Automate - Custom Table - plugin_proval_unificontroller](<../tables/plugin_proval_unificontroller.md>)
-- [CWM - Automate - Custom Table - plugin_proval_unifidevices](<../tables/plugin_proval_unifidevices.md>)
-- [CWM - Automate - Custom Table - plugin_proval_unifiwireless](<../tables/plugin_proval_unifiwireless.md>)
+- [CWM - Automate - Custom Table - plugin_proval_unificontroller](/docs/317fccab-60e6-4af7-8866-1b4d862d973e)
+- [CWM - Automate - Custom Table - plugin_proval_unifidevices](/docs/048bcde3-a1b4-45a9-a86c-ba19c0a40933)
+- [CWM - Automate - Custom Table - plugin_proval_unifiwireless](/docs/e4a1a60d-1e35-4336-a1a3-28e2ffb12855)
 
 ## Sample Run
 
@@ -30,10 +30,10 @@ This script launches the Get-UnifiController.ps1 file from the registry, filters
 
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this script depends.
 
-- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](<../../powershell/Get-UnifiController.md>)
-- [CWM - Automate - Custom Table - plugin_proval_unificontroller](<../tables/plugin_proval_unificontroller.md>)
-- [CWM - Automate - Custom Table - plugin_proval_unifidevices](<../tables/plugin_proval_unifidevices.md>)
-- [CWM - Automate - Custom Table - plugin_proval_unifiwireless](<../tables/plugin_proval_unifiwireless.md>)
+- [EPM - Data Collection - Agnostic - Script - Get-UnifiController](/docs/d5d5fe24-6009-48cf-9d51-ac4763a1be7f)
+- [CWM - Automate - Custom Table - plugin_proval_unificontroller](/docs/317fccab-60e6-4af7-8866-1b4d862d973e)
+- [CWM - Automate - Custom Table - plugin_proval_unifidevices](/docs/048bcde3-a1b4-45a9-a86c-ba19c0a40933)
+- [CWM - Automate - Custom Table - plugin_proval_unifiwireless](/docs/e4a1a60d-1e35-4336-a1a3-28e2ffb12855)
 
 ## Variables
 
@@ -68,7 +68,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 Describe the steps the script performs to accomplish the desired task. Note that if this script is just a front-end for a piece of Agnostic Content, then you can insert a link to the documentation for that content here instead.
 
-1. Downloads, executes, and formats the results of [EPM - Data Collection - Agnostic - Script - Get-UnifiController](<../../powershell/Get-UnifiController.md>) to accomplish the following:
+1. Downloads, executes, and formats the results of [EPM - Data Collection - Agnostic - Script - Get-UnifiController](/docs/d5d5fe24-6009-48cf-9d51-ac4763a1be7f) to accomplish the following:
    1. Create two files on the target machine: MyUnifiController.json and MyUnifiControllerNetworks.json, containing objects for the Unifi Controller tables.
    2. Read the data and return to Automate the following variables/values:
       - totalRowsToWrite

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to remove the provided path(s) from the Environmental Path variable for a Path at the Machine scope. It covers the ConnectWise RMM implementation of the agnostic script [Remove-PathVariable](<../../powershell/Remove-PathVariable.md>).
+This document describes how to remove the provided path(s) from the Environmental Path variable for a Path at the Machine scope. It covers the ConnectWise RMM implementation of the agnostic script [Remove-PathVariable](/docs/5eccc080-da21-4b13-b21d-df5c985a056a).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document describes how to remove the provided path(s) from the Environmenta
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Remove-PathVariable](<../../powershell/Remove-PathVariable.md>)
+[EPM - Windows Configuration - Agnostic - Remove-PathVariable](/docs/5eccc080-da21-4b13-b21d-df5c985a056a)
 
 ## User Parameters
 

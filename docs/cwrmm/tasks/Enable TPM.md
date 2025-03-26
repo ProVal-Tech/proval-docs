@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. This guide covers the CW RMM implementation of [Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>).
+This document initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. This guide covers the CW RMM implementation of [Enable TPM](/docs/aa0c7575-d9f1-4c41-98bb-50eab8aa1ade).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document initializes TPM as part of the provisioning process for a Trusted 
 
 ## Dependencies
 
-[SEC - Encryption - Script - Bitlocker - Enable TPM](<../../cwa/scripts/Bitlocker - Enable TPM.md>)
+[SEC - Encryption - Script - Bitlocker - Enable TPM](/docs/aa0c7575-d9f1-4c41-98bb-50eab8aa1ade)
 
 ## User Parameters
 

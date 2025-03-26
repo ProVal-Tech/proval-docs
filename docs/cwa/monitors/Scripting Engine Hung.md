@@ -20,7 +20,7 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ## Dependencies
 
-[Scripting Engine Hung - Troubleshooting](<../../unsorted/Scripting Engine Hung - Troubleshooting.md>)  
+[Scripting Engine Hung - Troubleshooting](/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d)  
 **Alert Template:** `△ Custom - Email RAWSQL Monitor set results to ProVal`
 
 ## Target

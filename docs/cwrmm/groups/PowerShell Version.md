@@ -16,8 +16,8 @@ There are three device groups related to the PowerShell version auditing solutio
 
 ## Dependencies
 
-- [CW RMM - Custom Field - PowerShell Version](<../custom-fields/PowerShell Version.md>)  
-- [CW RMM - Task - PowerShell Version Information](<../tasks/PowerShell Version Information.md>)  
+- [CW RMM - Custom Field - PowerShell Version](/docs/945d88e0-81a9-4253-8406-63fa7430d45a)  
+- [CW RMM - Task - PowerShell Version Information](/docs/a8419e91-9e07-4f16-be4b-769c78f86f1b)  
 
 ## Create Device Groups
 

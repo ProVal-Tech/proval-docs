@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores volume exhaustion information from [Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>).
+Stores volume exhaustion information from [Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4).
 
 ## Dependencies
 
-[Volume Free Space - Monitor Creation](<../scripts/Create Predictive Volume Exhaustion Monitors.md>)
+[Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4)
 
 ## Tables
 

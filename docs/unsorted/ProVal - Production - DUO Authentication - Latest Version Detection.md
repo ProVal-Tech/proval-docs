@@ -16,7 +16,7 @@ This monitor is created to fetch the latest version of the DUO Authentication ap
 
 ## Dependencies
 
-[Application - Latest Version Detection [Winget]](../cwa/scripts/Application - Latest Version Detection Winget.md)
+[Application - Latest Version Detection [Winget]](/docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde)
 
 ## Target
 

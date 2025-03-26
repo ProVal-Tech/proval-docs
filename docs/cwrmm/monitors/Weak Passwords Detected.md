@@ -16,9 +16,9 @@ This monitor creates a ticket if accounts with weak passwords are detected on a 
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
-- [CW RMM - Task - Weak Passwords - AD Test](<../tasks/Weak Passwords - AD Test.md>)
-- [CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
+- [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+- [CW RMM - Task - Weak Passwords - AD Test](/docs/1d54d079-e038-46a7-8a03-fe6bad481487)
+- [CW RMM - Solution - Weak Passwords Audit](/docs/67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11)
 
 ## Target
 

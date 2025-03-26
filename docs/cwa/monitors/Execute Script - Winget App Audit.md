@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This document describes the execution of the [Winget App Audit](<../scripts/Winget App Audit.md>) script once per week against Windows machines.
+This document describes the execution of the [Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91) script once per week against Windows machines.
 
 ## Dependencies
 
-- [SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)  
-- [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)  
+- [SWM - Software Update - Script - Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91)  
+- [SWM - Software Update - Custom Table - pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e)  
 
 ## Target
 

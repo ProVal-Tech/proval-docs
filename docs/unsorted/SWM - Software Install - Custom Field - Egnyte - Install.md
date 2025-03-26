@@ -14,7 +14,7 @@ unlisted: false
 
 The custom field is used by the Agent procedure of the same name.
 
-See the solution for full details: [https://proval.itglue.com/DOC-5078775-12754461](<../solutions/Egnyte - Install.md>)
+See the solution for full details: [https://proval.itglue.com/DOC-5078775-12754461](/docs/ddd45f6e-2b41-4b83-a81e-ff3639b462a5)
 
 ## Details
 

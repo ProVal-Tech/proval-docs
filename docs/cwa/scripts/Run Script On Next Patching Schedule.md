@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script will be called as an Autofix script from the [Proval - Production - Run Script on Next Patching Schedule](<../monitors/Run Script on Next Patching Schedule.md>) monitor. The alert template will run the script indicated in the `@Sid@` global variable on the target agent. If `@Sid@` is not passed as a parameter while running the script, the script will attempt to run the script assigned to the install policy. The script will wait for 1 hour after the patching window starts before issuing the script. The script will not be executed if it has already run on the computer in the last 60 minutes or is scheduled to execute in the next 60 minutes. This solution will execute the indicated scripts in the autofix script during the patch window, even when there are no patches to install. Automate does not fire the script from the Microsoft Update Policy unless the device has queued patches.
+The script will be called as an Autofix script from the [Proval - Production - Run Script on Next Patching Schedule](/docs/7fde3cde-75d6-4db5-9e4e-ee8fbce1081b) monitor. The alert template will run the script indicated in the `@Sid@` global variable on the target agent. If `@Sid@` is not passed as a parameter while running the script, the script will attempt to run the script assigned to the install policy. The script will wait for 1 hour after the patching window starts before issuing the script. The script will not be executed if it has already run on the computer in the last 60 minutes or is scheduled to execute in the next 60 minutes. This solution will execute the indicated scripts in the autofix script during the patch window, even when there are no patches to install. Automate does not fire the script from the Microsoft Update Policy unless the device has queued patches.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This script is an autofix and will not function as intended if run manually.
 
 ## Dependencies
 
-[Proval - Production - Run Script on Next Patching Schedule](<../monitors/Run Script on Next Patching Schedule.md>)
+[Proval - Production - Run Script on Next Patching Schedule](/docs/7fde3cde-75d6-4db5-9e4e-ee8fbce1081b)
 
 ## Variables
 

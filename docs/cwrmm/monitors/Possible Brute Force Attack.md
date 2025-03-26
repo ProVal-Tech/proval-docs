@@ -21,14 +21,14 @@ Change this value from 10 to the desired value after creating the monitor.
 
 ## Dependencies
 
-- [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>)
-- [CW RMM - Custom Field - Is Primary Domain Controller](<../custom-fields/Is Primary Domain Controller.md>)
-- [CW RMM - Task - Validate Primary Domain Controller](<../tasks/Validate Primary Domain Controller.md>)
-- [CW RMM - Machine Group - Infrastructure Master](<../groups/Infrastructure Master.md>)
+- [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+- [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
+- [CW RMM - Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
+- [CW RMM - Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)
 
 ## Target
 
-[Infrastructure Master](<../groups/Infrastructure Master.md>)  
+[Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)  
 ![Image](../../../static/img/Possible-Brute-Force-Attack/image_1.png)
 
 ## Implementation
@@ -112,7 +112,7 @@ Change this value from 10 to the desired value after creating the monitor.
    - Click on Select Target:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_6.png)
 
-   - Then click on Device Group and search for the word '[Infrastructure Master](<../groups/Infrastructure Master.md>)', and select the group as shown below:  
+   - Then click on Device Group and search for the word '[Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)', and select the group as shown below:  
    ![Image](../../../static/img/Possible-Brute-Force-Attack/image_7.png)
 
 ## Completed Monitor

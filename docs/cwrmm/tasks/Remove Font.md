@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines how to remove installed fonts from Windows machines. It accepts the '*' wildcard to remove multiple matching fonts. The CW RMM implementation of the agnostic script can be found in [Remove-Font](<../../powershell/Remove-Font.md>).
+This document outlines how to remove installed fonts from Windows machines. It accepts the '*' wildcard to remove multiple matching fonts. The CW RMM implementation of the agnostic script can be found in [Remove-Font](/docs/a88b469b-0384-49f8-b959-16e701c538ad  ).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document outlines how to remove installed fonts from Windows machines. It a
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Script - Remove-Font](<../../powershell/Remove-Font.md>)
+[SWM - Software Uninstall - Agnostic - Script - Remove-Font](/docs/a88b469b-0384-49f8-b959-16e701c538ad  )
 
 ## User Parameters
 

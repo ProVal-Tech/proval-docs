@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to clear enforced homepages in Chromium-based browsers. For implementation details, refer to the agnostic content: [SWM - Software Configuration - Clear-ChromiumHomepage](<../../powershell/Clear-ChromiumHomepage.md>).
+This document describes how to clear enforced homepages in Chromium-based browsers. For implementation details, refer to the agnostic content: [SWM - Software Configuration - Clear-ChromiumHomepage](/docs/8c68f90b-3bd8-4c83-9383-f939460f36df).
 
 ## Example Agent Procedure Log
 

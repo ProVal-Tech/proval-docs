@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>) and also from the script [Malicious Software Removal Tool Disable/Uninstall](<../scripts/MSRT Disable-Uninstall.md>).
+This dataview stores the status of the MSRT scanner result from the script [Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) and also from the script [Malicious Software Removal Tool Disable/Uninstall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7).
 
 ## Dependencies
 
-[Malicious Software Removal Tool Scanner](<../scripts/Malicious Software Removal Tool Scanner.md>)
+[Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257)
 
-[Malicious Software Removal Tool Disable/Uninstall](<../scripts/MSRT Disable-Uninstall.md>)
+[Malicious Software Removal Tool Disable/Uninstall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7)
 
 ## Columns
 

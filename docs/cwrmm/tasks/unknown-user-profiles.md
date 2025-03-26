@@ -296,7 +296,7 @@ Click the `Save` button at the top right corner of the screen to save the task.
 
 ## Deployment
 
-It is suggested to run the Task once per week against [Unknown User Profiles Detection](../groups/unknown-user-profiles-detection.md) group.
+It is suggested to run the Task once per week against [Unknown User Profiles Detection](/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec) group.
 
 - Go to Automation > Tasks.
 - Search for `Unknown User Profiles` Task.
@@ -317,7 +317,7 @@ Select the `Weeks` for the `Repeat`, set `M` for `Day`, and click the `OK` butto
 Click the `Select Targets` button to select the concerned target.  
 ![Image51](../../../static/img/cwrmm-task-unknown-user-profiles/Image51.png)  
 
-Search and select the [Unknown User Profiles Detection](../groups/unknown-user-profiles-detection.md) Device Group for the target.  
+Search and select the [Unknown User Profiles Detection](/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec) Device Group for the target.  
 ![Image52](../../../static/img/cwrmm-task-unknown-user-profiles/Image52.png)  
 
 Click the `Run` button to initiate the schedule.  

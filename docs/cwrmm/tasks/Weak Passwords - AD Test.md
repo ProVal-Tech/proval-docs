@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>) to test the hashed credentials in Active Directory against a known compromised or weak password list.
+This task utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  ) to test the hashed credentials in Active Directory against a known compromised or weak password list.
 
 ## Sample Run
 
@@ -22,8 +22,8 @@ This task utilizes the agnostic script [Test-WeakCredentials](<../../powershell/
 
 ## Dependencies
 
-- [Test-WeakCredentials](<../../powershell/Test-WeakCredentials.md>)  
-- [CW RMM - Solution - Weak Passwords Audit](<../../solutions/Weak Passwords Audit.md>)
+- [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  )  
+- [CW RMM - Solution - Weak Passwords Audit](/docs/67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11)
 
 ## User Parameters
 
@@ -272,7 +272,7 @@ Add a new row by clicking on the Add row button in the ELSE part. Set Custom Fie
 
 ## Implementation
 
-This task has to be scheduled on the [CW RMM - Machine Group - Domain Controllers](<../groups/Domain Controllers.md>) group for auto deployment. The script can also be run manually if required.
+This task has to be scheduled on the [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Weak Passwords - AD Test.  

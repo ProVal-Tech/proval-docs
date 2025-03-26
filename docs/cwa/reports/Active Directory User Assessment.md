@@ -19,6 +19,6 @@ The Active Directory User Assessment report displays a comprehensive list of all
 This report is dependent on the following items:
 
 - [RSM - Active Directory - Script - Weak Passwords - AD Test](https://proval.itglue.com/DOC-5078775-9492875)
-- [AD - Create Views/Tables/Schedules for AD Reporting Solution](<../scripts/AD - Create ViewsTableSchedule for AD Reporting Solution.md>)
+- [AD - Create Views/Tables/Schedules for AD Reporting Solution](/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49)
 
 

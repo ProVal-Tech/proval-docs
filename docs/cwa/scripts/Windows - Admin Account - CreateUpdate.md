@@ -14,7 +14,7 @@ unlisted: false
 
 This script creates or updates a target admin user on a domain controller or local machine and saves the credentials to the passwords list for the Automate client.
 
-The script is executed by the [Windows Local Admin Account Process](<../monitors/Windows Local Admin Account Process.md>) and [Windows Domain Admin Account Process](<../monitors/Windows Domain Admin Account Process.md>) monitor sets or can be executed manually at the same time.  
+The script is executed by the [Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15) and [Windows Domain Admin Account Process](/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896) monitor sets or can be executed manually at the same time.  
 
 **File Path:** `C:/ProgramData/_Automation/Script/Set-AdminAccount/Set-AdminAccount.ps1`  
 **File Hash (SHA256):** `B33EBE5272A3ABDFBF99F1B480D91D4B4EE84503B97B5278684BB387D3D9F651`  
@@ -27,27 +27,27 @@ The script is executed by the [Windows Local Admin Account Process](<../monitors
 
 ## Update Notice: 06-November-2024
 
-A new system property and EDF have been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>) script from the `Prosync` plugin.
+A new system property and EDF have been introduced for setting the password to never expire. Update the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script from the `Prosync` plugin.
 
-Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution.  
+Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.  
 ![Image](https://proval.itglue.com/../../../static/img/Windows---Admin-Account---CreateUpdate/image_1.png)
 
 ## Update Notice: 27-September-2024
 
-The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](<./Windows - Admin Account - CreateUpdate.md>) script from the `Prosync` plugin.
+The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script from the `Prosync` plugin.
 
-Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution.  
+Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.  
 ![Image](../../../static/img/Windows---Admin-Account---CreateUpdate/image_1.png)
 
-Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` set to `1` to implement the changes for the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution.  
+Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` set to `1` to implement the changes for the [Windows Domain Admin Process](/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc) solution.  
 ![Image](../../../static/img/Windows---Admin-Account---CreateUpdate/image_2.png)
 
 ## Sample Run
 
-- Running the script with the user parameter `SetEnvironment_Local_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution.  
+- Running the script with the user parameter `SetEnvironment_Local_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.  
   ![Image](../../../static/img/Windows---Admin-Account---CreateUpdate/image_3.png)
   
-- Running the script with the user parameter `SetEnvironment_Domain_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution.  
+- Running the script with the user parameter `SetEnvironment_Domain_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Domain Admin Process](/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc) solution.  
   ![Image](../../../static/img/Windows---Admin-Account---CreateUpdate/image_2.png)
 
 - During manual script execution, if either the `username` or `title` parameter is not provided, the script will automatically fall back to the Client-Level Extra Data Fields (EDFs) and system properties to retrieve the relevant username and title information. This fallback mechanism ensures seamless functionality and avoids any disruptions caused by missing parameters.  
@@ -57,8 +57,8 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Internal Monitor - Windows Local Admin Account Process](<../monitors/Windows Local Admin Account Process.md>)  
-- [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](<../monitors/Windows Domain Admin Account Process.md>)
+- [EPM - Windows Configuration - Internal Monitor - Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15)  
+- [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896)
 
 ## Global Parameters
 
@@ -74,8 +74,8 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 |------------------------------------|---------|----------|---------------------------------------------------------------------------------------------------------------|
 | Username                           | user1   | False    | The username you want to create or update.                                                                   |
 | Title                              | XYZ local or Domain admin | False    | The title of the password entry in the table to update or create.                                           |
-| SetEnvironment_Local_Admin_Process | 1       |          | To set the environment for the [Solution - Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>). Running the script with the user parameter `SetEnvironment_Local_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Local Admin Process](<../../solutions/Windows Local Admin Process.md>) solution. |
-| SetEnvironment_Domain_Admin_Process| 1       |          | To set the environment for the [Solution - Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>). Running the script with the user parameter `SetEnvironment_Domain_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Domain Admin Process](<../../solutions/Windows Domain Admin Process.md>) solution. |
+| SetEnvironment_Local_Admin_Process | 1       |          | To set the environment for the [Solution - Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b). Running the script with the user parameter `SetEnvironment_Local_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution. |
+| SetEnvironment_Domain_Admin_Process| 1       |          | To set the environment for the [Solution - Windows Domain Admin Process](/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc). Running the script with the user parameter `SetEnvironment_Domain_Admin_Process` set to `1` will import the EDFs and System Properties needed for the implementation of the [Windows Domain Admin Process](/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc) solution. |
 
 **Note:** The script will only import the EDFs and System Properties for one solution at a time. The script needs to be executed twice to import the EDFs and System Properties for both solutions: once with `SetEnvironment_Local_Admin_Process` set to `1` and once with `SetEnvironment_Domain_Admin_Process` set to `1`.
 
@@ -93,7 +93,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 | Default_Local_Admin_Password_Title           | CW-Automate Local Admin       | True     | Default Title of the password entry in the table to update or create. If the user parameter `title` is not set and client-level EDF `1e. Password Title` is blank as well, then the script will use the value set in this system property. |
 | Default_Local_Admin_Password_Change_Days    | 45                            | True     | Default Number of days to update the password after. It can be overridden by the client-level EDF `1f. Change Password After__Days`.                     |
 | Default_Local_Admin_Display_Name              | CW Automate                   | True     | Default Display Name of the user. Displays on the logon screen at the end machine.                                                                              |
-| Default_Local_Admin_Password_Change_Notification_Client | 0                     | False    | Setting this value to 1 will ensure the client receives a notification when the password is automatically rotated. This only works for client-level passwords. This is required for this script to function: [Windows - Admin Account Password Rotation Notification](<./Windows - Admin Account Password Rotation Notification.md>) |
+| Default_Local_Admin_Password_Change_Notification_Client | 0                     | False    | Setting this value to 1 will ensure the client receives a notification when the password is automatically rotated. This only works for client-level passwords. This is required for this script to function: [Windows - Admin Account Password Rotation Notification](/docs/1adeca30-5b12-4218-98c2-ff2806eae27e) |
 | Default_Local_Admin_Password_Change_Notification_Email  | \<blank>              | False    | Setting an email address in this field will ensure an email gets sent out when the password is auto-rotated.                                          |
 | Default_Local_Admin_Password_Never_Expire    | 0                             | False    | Setting the value to 1 will ensure the password never expires for the created user.                                                     |
 
@@ -103,7 +103,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Pr
 
 | Name                                     | Type      | Form    | Description                                                                                                                                                                                                 |
 |------------------------------------------|-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1a. Local Admin Process                  | dropdown  | Client  | Selecting the `Enabled for Servers and Workstations` option will enable the [Windows Local Admin Account Process](<../monitors/Windows Local Admin Account Process.md>) internal monitor for all machines of the client.  Available Options: Not Enabled, Enabled for Workstations Only, Enabled for Servers and Workstations. Default Option: Not Enabled. Leaving it unset is equivalent to not enabling the auto local admin creation for the client. |
+| 1a. Local Admin Process                  | dropdown  | Client  | Selecting the `Enabled for Servers and Workstations` option will enable the [Windows Local Admin Account Process](/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15) internal monitor for all machines of the client.  Available Options: Not Enabled, Enabled for Workstations Only, Enabled for Servers and Workstations. Default Option: Not Enabled. Leaving it unset is equivalent to not enabling the auto local admin creation for the client. |
 | 1b. UserName                             | Text      | Client  | Username of the local admin account to create for the Windows machines of the client. The script will use this username if the `username` parameter is not set during execution. This EDF is used by the internal monitor as well. |
 | 1c. Local Admin Display Name             | Text      | Client  | Display Name of the user to set at the end machine.                                                                                                                                                       |
 | 1d. Password Title                       | Text      | Client  | Title of the password entry to set/update at the client's password tab. The script will use this title if the `title` parameter is not set during execution.                                                   |
@@ -124,7 +124,7 @@ For the configuration shown in the screenshot, the solution will create `Automat
 
 | Name                                     | Type      | Form    | Description                                                                                                                                                                                                 |
 |------------------------------------------|-----------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1a. Enable Domain Admin Process          | CheckBox  | Client  | It is mandatory to mark this EDF to enable the [Internal Monitor - Windows Domain Admin Account Process](<../monitors/Windows Domain Admin Account Process.md>) monitoring for the client. The script can still be executed manually. |
+| 1a. Enable Domain Admin Process          | CheckBox  | Client  | It is mandatory to mark this EDF to enable the [Internal Monitor - Windows Domain Admin Account Process](/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896) monitoring for the client. The script can still be executed manually. |
 | 1b. Domain Admin UserName                | Text      | Client  | Username of the domain admin account to create for the Windows machines of the client. The script will use this username if the `username` parameter is not set during execution. This EDF is used by the internal monitor as well. |
 | 1c. Domain Admin Password Title           | Text      | Client  | Title of the password entry to set/update at the client's password tab. The script will use this title if the `title` parameter is not set during execution.                                                   |
 | 1d. Update Password After_Days           | Text      | Client  | Number of days after the user creation to update/change the password.                                                                                                                                   |

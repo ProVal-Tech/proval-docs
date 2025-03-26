@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-Dataview displays the information gathered by the [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>) script along with some basic information.
+Dataview displays the information gathered by the [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](/docs/0b46811b-be88-407b-aa61-6c63a73ff848) script along with some basic information.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](<../scripts/Get CWM Configurations - Active And Managed Only.md>)
-- [CWM - Automate - Custom Table - pvl_cwm_configurations](<../tables/pvl_cwm_configurations.md>)
+- [CWM - Automate - Script - Get CWM Configurations - Active And Managed Only](/docs/0b46811b-be88-407b-aa61-6c63a73ff848)
+- [CWM - Automate - Custom Table - pvl_cwm_configurations](/docs/eb24c920-fd51-4441-962b-520c48e9128e)
 
 ## Columns
 

@@ -20,7 +20,7 @@ This script disables Internet Explorer on a Windows machine.
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - ProVal - Development - Internet Explorer Detected [Role]](<../monitors/Internet Explorer Detected Role.md>)
+[CWM - Automate - Internal Monitor - ProVal - Development - Internet Explorer Detected [Role]](/docs/1c9a68c5-62c9-4454-a6da-0a7c5fb8089d)
 
 ## Variables
 

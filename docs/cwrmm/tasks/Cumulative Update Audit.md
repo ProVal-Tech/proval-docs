@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document executes a PowerShell script to validate the full version of the OS and compares it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>) for further auditing and monitoring purposes.
+This document executes a PowerShell script to validate the full version of the OS and compares it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71) for further auditing and monitoring purposes.
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document executes a PowerShell script to validate the full version of the O
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>)
+- [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
 
 ## Variables
 
@@ -32,7 +32,7 @@ This document executes a PowerShell script to validate the full version of the O
 
 ## Implementation
 
-Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](<../custom-fields/Latest Cumulative Update.md>).
+Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71).
 
 ### Create Script
 

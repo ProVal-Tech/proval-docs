@@ -16,7 +16,7 @@ This document stores individual patch information per computer and their install
 
 ## Dependencies
 
-[Audit WMI Patch History](<../scripts/Audit WMI Patch History.md>)
+[Audit WMI Patch History](/docs/113349eb-9de0-4b42-b773-cf873f87f2f0)
 
 ## Table
 

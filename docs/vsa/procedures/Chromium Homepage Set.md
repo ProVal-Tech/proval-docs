@@ -42,7 +42,7 @@ This document summarizes the procedure to set the homepage in Chromium-based bro
 
 ## Process
 
-This procedure utilizes [SWM - Software Configuration - Set-ChromiumHomepage](<../../powershell/Set-ChromiumHomepage.md>) to set homepages in Chromium-based browsers on an endpoint. It uses the same parameters as the agnostic script.
+This procedure utilizes [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab) to set homepages in Chromium-based browsers on an endpoint. It uses the same parameters as the agnostic script.
 
 ## Output
 

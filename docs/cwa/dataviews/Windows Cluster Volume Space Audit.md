@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview is built to show the cluster disk space audit report fetched from the table **pvl_cluster_volumes**, where the script [CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>) performs the audit.
+This dataview is built to show the cluster disk space audit report fetched from the table **pvl_cluster_volumes**, where the script [CWA Script - Windows Cluster Volume Space Audit](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490) performs the audit.
 
 ## Dependencies
 
-[CWA Script - Windows Cluster Volume Space Audit](<../scripts/Windows Cluster Volume Space Audit DV.md>)
+[CWA Script - Windows Cluster Volume Space Audit](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490)
 
 ## Columns
 

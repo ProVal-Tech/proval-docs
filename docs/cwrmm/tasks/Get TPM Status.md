@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Fetches the TPM Status of the machine and stores it in the [TPM Status](<../custom-fields/Endpoint - TPM Status.md>) custom field.
+Fetches the TPM Status of the machine and stores it in the [TPM Status](/docs/55cb2f37-6e43-4ae5-bc96-a94b5f2d4144) custom field.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ Fetches the TPM Status of the machine and stores it in the [TPM Status](<../cust
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - TPM Status](<../custom-fields/Endpoint - TPM Status.md>)  
+[CW RMM - Custom Field - Endpoint - TPM Status](/docs/55cb2f37-6e43-4ae5-bc96-a94b5f2d4144)  
 Create the dependent Custom Field before creating the task.
 
 ## Task Creation

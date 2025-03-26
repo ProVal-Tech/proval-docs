@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build. Additionally, it displays the recent execution of the [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script against the machine.
+The dataview will display whether the supported versions of Click To Run `Microsoft 365 Apps / Microsoft Office` are updated to their latest released build. Additionally, it displays the recent execution of the [SWM - Script - Microsoft Office - Click-to-Run - Update](/docs/8086f53d-c2db-40df-aa54-ea8590800fd3) script against the machine.
 
 ## Dependencies
 
-- [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>)  
-- [CWA Monitor - CVE-2023-23397 Detection](<../monitors/CVE-2023-23397 Detection.md>)  
+- [SWM - Script - Microsoft Office - Click-to-Run - Update](/docs/8086f53d-c2db-40df-aa54-ea8590800fd3)  
+- [CWA Monitor - CVE-2023-23397 Detection](/docs/03085c80-db6b-4111-a5d7-fc6adca44901)  
 
 ## Columns
 
@@ -36,6 +36,6 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Current Version      | Current Installed version of the application           |
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated / Out Of Date                                  |
-| Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](<../scripts/Microsoft Office - Click-to-Run - Update.md>) script |
+| Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](/docs/8086f53d-c2db-40df-aa54-ea8590800fd3) script |
 
 

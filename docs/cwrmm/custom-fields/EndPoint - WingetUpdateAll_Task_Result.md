@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field stores the outcome of both [CW RMM - Task - Scheduled Task Winget Update All (Create)](<../tasks/Scheduled Task Winget Update All (Create).md>) and [CW RMM - Task - Scheduled Task Winget Update All (Delete)](<../tasks/Scheduled Task Winget Update All (Delete).md>) tasks. It indicates whether the task succeeded or failed.
+This custom field stores the outcome of both [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) and [CW RMM - Task - Scheduled Task Winget Update All (Delete)](/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95) tasks. It indicates whether the task succeeded or failed.
 
 Possible values:
 - NA

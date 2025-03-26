@@ -16,8 +16,8 @@ This dataview stores the AD Users department information.
 
 ## Dependencies
 
-- [plugin_proval_computer_department](<./plugin_proval_computer_department.md>)
-- [Computer Department Auditing [DV]](<../cwa/scripts/Computer Department AuditingDV.md>)
+- [plugin_proval_computer_department](/docs/f00a8cb1-b9db-44f6-9037-1fbe29c372b4)
+- [Computer Department Auditing [DV]](/docs/f3c63891-aac1-49f9-a05d-552886c5b6da)
 
 ## Columns
 

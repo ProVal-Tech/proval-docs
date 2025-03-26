@@ -12,17 +12,17 @@ unlisted: false
 
 ## Summary
 
-This internal monitor detects Windows agents where the script [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>) has not been run in the last 10 days. It will only detect machines where the PowerShell version is greater than 5.
+This internal monitor detects Windows agents where the script [EPM - Network - Script - Internet Speed - Audit](/docs/54ed691f-e7be-4709-8967-72a4c9c782f6) has not been run in the last 10 days. It will only detect machines where the PowerShell version is greater than 5.
 
 **Important**
 - The monitor target should be applied to a group; otherwise, it will not function.
-- Import the [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>) in the client environment.
+- Import the [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81) in the client environment.
 
 ## Dependencies
 
-- [EPM - Network - Script - Internet Speed - Audit](<../scripts/Internet Speed - Audit.md>)
-- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](<../tables/plugin_proval_speedtest_audit.md>)
-- [Dynamic PowerShell Role](<../roles/Dynamic PowerShell Role.md>)
+- [EPM - Network - Script - Internet Speed - Audit](/docs/54ed691f-e7be-4709-8967-72a4c9c782f6)
+- [EPM - Network - Custom Table - plugin_proval_speedtest_audit](/docs/38fbe617-1c50-443b-b69b-07eae7135652)
+- [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81)
 
 ## Target
 

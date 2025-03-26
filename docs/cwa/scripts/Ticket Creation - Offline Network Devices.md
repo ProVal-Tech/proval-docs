@@ -30,7 +30,7 @@ The `Send Alert when Unit is Down` checkbox on a network device is required for 
 
 ## Dependencies
 
-[CWM - Automate - Script - Network Devices - Offline Ticket Enabling](<./Network Devices - Offline Ticket Enabling.md>)
+[CWM - Automate - Script - Network Devices - Offline Ticket Enabling](/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92)
 
 ## Variables
 

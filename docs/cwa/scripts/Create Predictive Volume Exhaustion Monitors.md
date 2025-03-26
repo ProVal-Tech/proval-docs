@@ -20,8 +20,8 @@ This script is used to generate volume space monitors on the target machine for 
 
 ## Dependencies
 
-- [EPM - Disk - Agnostic - Get-VolumeExhaustionEstimate](<../../powershell/Get-VolumeExhaustionEstimate.md>)
-- [EPM - Disk - Agnostic - Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>)
+- [EPM - Disk - Agnostic - Get-VolumeExhaustionEstimate](/docs/21bc13d3-b2fb-42d5-8f38-da9b43990e06)
+- [EPM - Disk - Agnostic - Get-VolumeThresholds](/docs/e36d9583-23da-4dfa-96c8-3467e36e30cf)
 - PowerShell v5
 
 ## Variables
@@ -59,9 +59,9 @@ This script is used to generate volume space monitors on the target machine for 
 The script writes and passes the required variables to the Execute Script step. The following processes occur in the Execute Script step:
 
 1. Variables are validated and written to a hashtable.
-2. The script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) is downloaded.
+2. The script [Get-VolumeThresholds](/docs/e36d9583-23da-4dfa-96c8-3467e36e30cf) is downloaded.
    - If the script fails to download and an existing copy does not exist, then a failure is logged.
-3. The script [Get-VolumeThresholds](<../../powershell/Get-VolumeThresholds.md>) is executed with the parameter hashtable [splatted](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2) in.
+3. The script [Get-VolumeThresholds](/docs/e36d9583-23da-4dfa-96c8-3467e36e30cf) is executed with the parameter hashtable [splatted](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2) in.
 4. The return object is looped through to create INSERT or UPDATE statements based on the ExistingMonitors variable.
    - If the script would produce an INSERT statement for a monitor that has the same name as an existing monitor, then an UPDATE statement is produced instead.
 5. The set of SQL queries is returned back out to the Automate script.

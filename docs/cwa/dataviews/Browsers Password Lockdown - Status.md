@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed.
+The dataview exhibits the `Password Manager Lockdown Status` for the computer obtained from the [Lockdown Browsers Password Manager](/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8) remote monitor. Essentially, it indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed.
 
 ## Dependencies
 
 **Search:** `Lockdown Browsers Password Manager`  
 **Search:** `Lockdown Browsers Autofill`  
 **Group:** `△ Lockdown Browsers Autofill`  
-**Remote Monitor:** [EPM - Software Configuration - Remote Monitor - Lockdown Browsers Password Manager](<../monitors/Lockdown Browsers Password Manager.md>)
+**Remote Monitor:** [EPM - Software Configuration - Remote Monitor - Lockdown Browsers Password Manager](/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8)
 
 ## Columns
 

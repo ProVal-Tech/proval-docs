@@ -16,8 +16,8 @@ This dataview displays Windows Shadow Copy statistics for endpoints with Shadow 
 
 ## Dependencies
 
-- Script: [Shadow Copy - Audit Complete Statistics [DV]](<../scripts/Shadow Copy - Audit Complete Statistics DV.md>)  
-- Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadowcopystats](<../tables/plugin_proval_shadowcopystats.md>)  
+- Script: [Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)  
+- Custom table: [EPM - Windows Configuration - Custom Table - plugin_proval_shadowcopystats](/docs/59bbf54a-55af-42fa-9e77-cd0b105122de)  
 
 ## Columns
 

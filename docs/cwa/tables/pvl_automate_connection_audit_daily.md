@@ -12,15 +12,15 @@ unlisted: false
 
 ## Purpose
 
-The table records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>) custom table. It saves one entry per machine daily, maintaining this data for 30 days. The table is updated once per day by the [Automate Agent Connection Audit](<../scripts/Automate Agent Connection Audit.md>) script.
+The table records the amount of time, in minutes, that each computer was offline and online over the past 24 hours, using data from the [pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909) custom table. It saves one entry per machine daily, maintaining this data for 30 days. The table is updated once per day by the [Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929) script.
 
-The script will start adding data to this table 24 hours after the first entry is added to the [pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>) table.
+The script will start adding data to this table 24 hours after the first entry is added to the [pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909) table.
 
 ## Dependencies
 
-- [CWM - Automate - Custom Table - pvl_automate_connection_audit](<./pvl_automate_connection_audit.md>)
-- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](<../monitors/Update Table - pvl_automate_connection_audit.md>)
-- [CWM - Automate - script - Automate Agent Connection Audit](<../scripts/Automate Agent Connection Audit.md>)
+- [CWM - Automate - Custom Table - pvl_automate_connection_audit](/docs/ec679801-c86a-4127-9b62-46be10207909)
+- [CWM - Automate - Internal Monitor - Update Table - pvl_automate_connection_audit](/docs/6dfa2f6b-02bb-4ccb-b69f-e23bc8d75b5d)
+- [CWM - Automate - script - Automate Agent Connection Audit](/docs/ef69cef8-da15-46b7-94a4-697431a87929)
 
 ## Tables
 

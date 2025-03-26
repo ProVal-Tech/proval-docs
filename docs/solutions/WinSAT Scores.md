@@ -18,8 +18,8 @@ This solution is designed to use an agent procedure to update custom fields to d
 
 | Content                                                                                     | Type              | Function                                               |
 |---------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------|
-| [Agent Procedure](<../vsa/procedures/WinSAT Scores.md>)                        | Agent Procedure    | Runs WinSAT to determine the scores of the endpoint.  |
-| [Custom Field](<../vsa/custom-fields/WinSAT Scores.md>)                           | Custom Field       | Stores the scores from the procedure in custom fields. |
+| [Agent Procedure](/docs/f716df74-c208-45fd-bff8-2865399e446b)                        | Agent Procedure    | Runs WinSAT to determine the scores of the endpoint.  |
+| [Custom Field](/docs/7fd9d7b3-8cf4-44e8-ac74-c2faf1981f40)                           | Custom Field       | Stores the scores from the procedure in custom fields. |
 
 ## Implementation
 

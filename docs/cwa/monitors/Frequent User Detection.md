@@ -20,7 +20,7 @@ You can change the number of days in the monitor to set different script run fre
 
 ## Dependencies
 
-[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](<../scripts/Detect Frequent Logon User (Set Computer Contact).md>)
+[CWM - Automate - Script - Stitching Frequent Logon User (Set Computer Contact)](/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4)
 
 ## Target
 

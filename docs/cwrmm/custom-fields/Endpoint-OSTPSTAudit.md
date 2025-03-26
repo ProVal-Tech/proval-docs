@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This document provides detailed information about the custom fields associated with the [Microsoft Outlook - OSTPST Audit](<../tasks/Microsoft-Outlook-OSTPST-Audit.md>), including their types, levels, default values, and descriptions.
+This document provides detailed information about the custom fields associated with the [Microsoft Outlook - OSTPST Audit](/docs/9cc58a6b-0ba0-42c5-a82d-3495dad2bcd7), including their types, levels, default values, and descriptions.
 
 ## Details
 

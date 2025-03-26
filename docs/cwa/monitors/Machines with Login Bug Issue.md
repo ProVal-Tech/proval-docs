@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This internal monitor is part of the [EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>) and is designed to detect agents with Login Bug Issues. It has been more than 7 days since the issue was detected, and the machine still has not been rebooted.
+This internal monitor is part of the [EPM - Windows Configuration - Solution - User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a) and is designed to detect agents with Login Bug Issues. It has been more than 7 days since the issue was detected, and the machine still has not been rebooted.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Solution - User Prompt for Reboot](<../../solutions/User Prompt for Reboot.md>)
+[EPM - Windows Configuration - Solution - User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 
 ## Target
 

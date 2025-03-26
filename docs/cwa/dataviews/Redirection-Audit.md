@@ -16,8 +16,8 @@ This document displays all possible redirection registry settings globally and f
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Audit - GPO Redirection Settings](<../scripts/Audit - GPO Redirection Settings.md>)
-- [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](<../tables/plugin_proval_gpo_redirection_audit.md>)
+- [EPM - Data Collection - Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
+- [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](/docs/025887c2-41a2-4e85-b706-dc0841a104d9)
 
 ## Columns
 

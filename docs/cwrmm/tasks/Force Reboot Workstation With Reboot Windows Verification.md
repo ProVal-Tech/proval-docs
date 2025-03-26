@@ -22,7 +22,7 @@ This script is designed to reboot workstation endpoints based on the custom fiel
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -303,7 +303,7 @@ The complete script looks as shown below:
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](<../custom-fields/Reboot TriggerSchedule.md>)
+[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Force Reboot Workstation With Reboot Windows Verification` Task.

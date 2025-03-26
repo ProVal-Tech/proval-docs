@@ -16,7 +16,7 @@ The group contains computers with different SentinelOne management servers as co
 
 ## Dependencies
 
-[CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>)
+[CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
 
 ## Group Creation
 
@@ -39,12 +39,12 @@ The group contains computers with different SentinelOne management servers as co
    This search box will appear.
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_6.png)
 
-5. Search and select the [`S1 Mgmt Server Discrepancy`](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>) custom field from the search box.
+5. Search and select the [`S1 Mgmt Server Discrepancy`](/docs/c600a6e2-bd09-4172-8784-d969838eea23) custom field from the search box.
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_7.png)  
    Set `Yes` in the comparison condition.
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_8.png)  
 
-   **Condition:** [`S1 Mgmt Server Discrepancy`](<../custom-fields/Endpoint - S1 Mgmt Server Discrepancy.md>) `Contains any of` `Yes`
+   **Condition:** [`S1 Mgmt Server Discrepancy`](/docs/c600a6e2-bd09-4172-8784-d969838eea23) `Contains any of` `Yes`
 
 6. Click the `Save` button to save/create the group.
    ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_9.png)

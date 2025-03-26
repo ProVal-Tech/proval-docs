@@ -34,7 +34,7 @@ Windows machines, limited to those with Huntress Agents only.
 
 ## Implementation
 
-[Import - Remote Monitor - Unresponsive Huntress Agents](<./Import-Unresponsive-Huntress-Agents.md>)
+[Import - Remote Monitor - Unresponsive Huntress Agents](/docs/6c4f37b4-d460-464b-bc03-fd1d46be2b0a)
 
 ## Ticketing
 

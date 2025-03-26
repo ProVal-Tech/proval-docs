@@ -12,12 +12,12 @@ unlisted: false
 
 ## Purpose
 
-Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>) script.
+Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) script.
 
 ## Dependencies
 
-- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>)
-- [SWM - Data Collection - Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](<../../cwa/monitors/Execute Script - Microsoft 365 - Click-to-Run - Get Details.md>)
+- [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e)
+- [SWM - Data Collection - Monitor - Execute Script - Microsoft 365 - Click-to-Run - Get Details](/docs/66fedeee-80d2-482b-9520-5fdfcab42406)
 
 ## Tables
 
@@ -29,7 +29,7 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](<..
 | Version           | varchar   | C2R Office version installed on the machine.                                                   |
 | AutoUpdate        | tinyint   | Indicates whether Office Auto Update is enabled on the machine.                                |
 | updateChannel     | varchar   | Update Channel for Office installed on the machine.                                            |
-| dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](<../scripts/Microsoft 365 - Click-to-Run - Get Details.md>) ran on the machine. |
+| dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) ran on the machine. |
 
 
 

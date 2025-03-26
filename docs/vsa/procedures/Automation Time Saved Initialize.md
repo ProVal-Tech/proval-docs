@@ -23,7 +23,7 @@ This document outlines the process of setting both Custom Fields (CFs) to 0.
 
 ## Dependencies
 
-- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](<../../solutions/Automation Time Saved Tracking.md>)
+- [VSA - VSA Configuration - Solution - Automation Time Saved Tracking](/docs/81ac366c-a635-4419-9a29-94a1fe7ddac0)
 
 ## Process
 

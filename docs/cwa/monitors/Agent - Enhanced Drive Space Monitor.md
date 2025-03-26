@@ -44,7 +44,7 @@ Overall, the monitoring system is designed to track drive space and generate ale
 
 ## Dependencies
 
-- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>)
+- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
 
 ## Target
 
@@ -123,7 +123,7 @@ In the above example:
 ## Ticket Category
 
 - Connectwise Manage board, type, and priority for the ticket can be set by setting the proper ticket category.
-- The ticket will be created by the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](<../scripts/Enhanced Disk Space Monitoring Process.md>) script and the ticket category can be set at the following levels:
+- The ticket will be created by the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) script and the ticket category can be set at the following levels:
   - In the script's global variables. Setting the relevant ticket category ID in these global variables will allow the script to create tickets under those categories.  
     ![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_6.png)
   - At the group level. The ticket category can be set from the groups where the internal monitor is applied. This ticket category will only be picked if global variables are set to 0.  
@@ -139,10 +139,10 @@ In the above example:
 **A:** Run or debug the script against a random Windows computer. Set the user parameter `SetEnvironment` to 1 during execution. This step will create the associated EDFs and System Properties.
 
 **Q:** How to limit the monitor set for the workstations to monitor the C: Drive only?  
-**A:** Refer to the Group Level EDF section of the [Internal Monitor's](<./Agent - Enhanced Drive Space Monitor.md>) document.
+**A:** Refer to the Group Level EDF section of the [Internal Monitor's](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) document.
 
 **Q:** How to change the threshold for a computer?  
-**A:** Refer to the Computer Level EDF section of the [Internal Monitor's](<./Agent - Enhanced Drive Space Monitor.md>) document.
+**A:** Refer to the Computer Level EDF section of the [Internal Monitor's](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) document.
 
 **Q:** The custom threshold set at the group/computer level is not working?  
 **A:** The EDF data might not have been synced to the `v_extradatacomputers` or `v_extradatagroups` tables. Automate runs this sync every 20-25 minutes. So, either you need to wait for 20-25 minutes or you can run the following SQL queries from a `RAWSQL` monitor set to force sync the data:
