@@ -1,3 +1,14 @@
+---
+id: 'fda5f79b-3e83-4561-af2b-2533f41c7443'
+title: 'Remove-PUA'
+title_meta: 'Remove-PUA'
+keywords: ['remove', 'bloatware', 'pua', 'appxpackage', 'appxprovisionedpackage']
+description: 'The Remove-PUA.ps1 script is designed to manage and remove bloatware packages on Windows systems.'
+tags: ['windows', 'uninstallation', 'application']
+draft: false
+unlisted: false
+---
+
 # Overview
 
 The Remove-PUA.ps1 script is designed to manage and remove bloatware packages on Windows systems. It provides functionality to list and remove pre-installed packages using curated lists from a [trusted repository](https://content.provaltech.com/attachments/potentially-unwanted-applications.json).
