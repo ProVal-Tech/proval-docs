@@ -46,7 +46,7 @@ To remove all installed bloatware supported by the script:
 ![Sample Run 4](../../../static/img/Remove---PUA/image_4.png)
 
 To remove all installed bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
-![Sample Run 6](../../../static/img/Remove---PUA/image_6.png) 
+![Sample Run 6](../../../static/img/Remove---PUA/image_6.png)
 
 ## Dependencies
 
@@ -57,10 +57,10 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 
 | Name          | Example                                          | Accepted Values                                                                                     | Required   | Description                                                                                                                                                                            |
 |---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ListBloatware | 1                                                | <li>1</li> <li>2</li>                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview.<br>`2`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview and send the list to the user running the script.</br> |
+| ListBloatware | 1                                                | <ul><li>1</li><li>2</li></ul>                                                                                          | Partially  | `1`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview.<br />`2`: Fetch installed bloatware into the [Bloatware Audit](<../dataviews/Bloatware Audit.md>) dataview and send the list to the user running the script. |
 | Remove        | Microsoft.BingNews, Microsoft.BingWeather, Microsoft.People |                                                                                                     | Partially  | The name(s) of the application or applications you wish to uninstall. It can be used to remove any installed AppxPackage on the computer.                                                                                                          |
 | Remove All    | 1                                                |                                                                                                     | Partially  | Set it to 1 to remove all bloatware by category or all found bloatware with or without exceptions.                                                                                   |
-| Category      | MsftBloatApps                                | <li>MsftBloatApps</li> <li>ThirdPartyBloatApps</li> | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware.                                                        |
+| Category      | MsftBloatApps                                | <ul><li>MsftBloatApps</li><li>ThirdPartyBloatApps</li></ul> | False      | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware.                                                        |
 | Except        | Microsoft.Copilot, Microsoft.BingWeather                                |                                                                                                     | False      | Used with RemoveAll or Category to remove all except some item(s) from a category.                                                                                 |
 
 **Note:** `RemoveAll`, `Category`, and `Except` parameters are limited to the [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json).
