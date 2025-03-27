@@ -2,9 +2,9 @@
 id: 'a69cad76-0704-423b-88af-d23c49c9fc79'
 title: 'Remove - PUA'
 title_meta: 'Remove - PUA'
-keywords: []
-description: ''
-tags: []
+keywords: ['PUA', 'bloatware', 'application', 'remove']
+description: 'The script manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.'
+tags: ['uninstallation']
 draft: false
 unlisted: false
 ---
