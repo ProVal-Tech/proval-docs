@@ -64,7 +64,7 @@ It is suggested to schedule the script to run at regular intervals, preferably w
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](<../../Scripts/CWM - Automate - RMM+ Plugin Configuration.md>)
+[CWM - Automate - RMM+ Plugin Configuration](<../../scripts/CWM - Automate - RMM+ Plugin Configuration.md>)
 [CWM - Automate - Solution - Offline/Broken Agents](<../../solutions/OfflineBroken Agents.md>)
 
 

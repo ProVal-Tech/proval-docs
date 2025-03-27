@@ -48,8 +48,7 @@ In essence, this script ensures proper management of permissions for scripts wit
 1. Navigate to System > User and Contacts > User Class Manager to access the `User Class Manager`.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_6.png)
 
-2. Retrieve the name(s) of the user class(es) from the `User Class Manager` to which the script permissions will be restricted.  
-   ![Image](../../../static/img/Script-Permissions---Set-Properties/image_7.png)
+2. Retrieve the name(s) of the user class(es) from the `User Class Manager` to which the script permissions will be restricted.
 
 ## Implementation
 
