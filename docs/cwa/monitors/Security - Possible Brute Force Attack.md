@@ -33,7 +33,7 @@ The threshold can be modified by updating the value of the `$th` variable in the
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](<../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md>)
+[Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)
 
 ## Target
 
@@ -89,4 +89,4 @@ For more detailed information: [Event 4625 Documentation](https://learn.microsof
 
 ## Implementation
 
-[Import - Remote Monitor - Security - Possible Brute Force Attack](<./Import%20-%20Remote%20Monitor%20-%20Possible%20Brute%20Force%20Attack.md>)
+[Import - Possible Brute Force Attack](/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e)

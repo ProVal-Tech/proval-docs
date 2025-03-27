@@ -32,4 +32,4 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Monitor OS Build](<./Import%20-%20Remote%20Monitor%20-%20Monitor%20OS%20Build.md>)
+[Implement - Remote Monitor - Monitor OS Build](/docs/4855070e-17d1-4caa-9ded-793fef9b330d)

@@ -59,7 +59,7 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 | Name            | Value                                                  | Required | Description                                                                                       |
 |------------------|--------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------|
 | TicketSubject    | SEC - Failed Local Admin Group Cleanup on %Computername% | True     | The subject of the tickets that will be generated from the script for failures.                  |
-| MonitorSet       | [ProVal - Production - Local Admin Group Cleanup](../monitors/Local%20Admin%20Group%20Cleanup.md) | True     | Name of the monitor set to check for ticket creation.                                            |
+| MonitorSet       | [ProVal - Production - Local Admin Group Cleanup](/docs/d49db584-9380-486d-a179-c014352f8be1) | True     | Name of the monitor set to check for ticket creation.                                            |
 
 ## User Parameters
 

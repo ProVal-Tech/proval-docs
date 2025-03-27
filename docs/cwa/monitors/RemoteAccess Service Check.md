@@ -39,4 +39,4 @@ Limited to Windows machines only.
 ## How To Import
 
 - Follow the document below for import and implementation steps:  
-  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](<./Import%20-%20Remote%20Monitor%20-%20RemoteAccess%20Service%20Check.md>)  
+  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](/docs/dd99f8a5-83f7-48a5-b8a9-ac68224e543a)  

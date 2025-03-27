@@ -36,7 +36,7 @@ This document outlines the implementation of the agnostic script [Start-GPOAudit
 ## Dependencies
 
 - [Start-GPOAudit](/docs/b070c950-2727-48b3-9226-84468960ee85)
-- [OverFlowedVariable - SQL Insert - Execute](./OverFlowedVariable%20-%20SQL%20Insert%20-%20Execute.md)
+- [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Output
 

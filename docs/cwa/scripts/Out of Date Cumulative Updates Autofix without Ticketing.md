@@ -30,7 +30,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 ## Dependencies
 
 - [EPM - Windows Update - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
-- [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](<../monitors/Last Cumulative Update 75 Days ago.md>)
+- [CWM - Automate - Internal Monitor - Patches Not Installing > 60 Days](/docs/663a6cf8-f3da-4a44-9725-73aae8d4d954)
 - [EPM - Windows Configuration - Solution - User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 - [SEC - Windows Update - Agnostic - Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 
@@ -44,7 +44,7 @@ This Autofix script is intended for implementation through the [CWM - Automate -
 
 | Name                     | Example     | Description                                                                                                                                                                                                                          |
 |--------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Out_of_Date_CU_Stage    | Validation  | To monitor the progress of the validation on the computer, the Script state is also utilized in the [Internal Monitor - Last Cumulative Update > 75 Days ago](<../monitors/Last Cumulative Update 75 Days ago.md>) monitor set. This helps prevent duplicate executions of the script for the same computers. |
+| Out_of_Date_CU_Stage    | Validation  | To monitor the progress of the validation on the computer, the Script state is also utilized in the [Internal Monitor - Last Cumulative Update > 75 Days ago](/docs/a835c448-fd00-4807-a3b2-8f1066e1a682) monitor set. This helps prevent duplicate executions of the script for the same computers. |
 
 ## Output
 

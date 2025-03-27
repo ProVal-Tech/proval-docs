@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The internal Monitor is used for two functions. If a workstation is showing an uptime of over 2 weeks, the monitor automatically triggers the Script [User Prompt - Reboot [Reboot, Param, Autofix]](../scripts/User%20Prompt%20-%20Reboot.md). This script will only run when triggered by a monitor.
+The internal Monitor is used for two functions. If a workstation is showing an uptime of over 2 weeks, the monitor automatically triggers the Script [User Prompt - Reboot [Reboot, Param, Autofix]](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8). This script will only run when triggered by a monitor.
 
 The Monitor has all of the following conditions that must be met before it kicks off the reboot prompting script:
 1. Computers OS is Windows
@@ -28,11 +28,11 @@ The Monitor has all of the following conditions that must be met before it kicks
 
 ## Dependencies
 
-[Script - User Prompt - Reboot [Reboot, Param, Autofix]](../scripts/User%20Prompt%20-%20Reboot.md)
+[Script - User Prompt - Reboot [Reboot, Param, Autofix]](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
 
-[Script - Reset Reboot Pending EDFs](../Scripts/Reset%20Reboot%20Pending%20EDFs.md)
+[Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
 
-[Monitor - Reset Reboot Pending EDFs](./Reset%20Reboot%20Pending%20EDFs.md)
+[Monitor - Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18)
 
 
 ## Target

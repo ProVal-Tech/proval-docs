@@ -92,4 +92,4 @@ The script generates the following output files:
 # Dependencies
 
 - [Windows OS Support](../../static/attachments/windows-os-support.json)
-- [Invoke-WingetProcessor](./Invoke-WingetProcessor.md)
+- [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)

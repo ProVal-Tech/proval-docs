@@ -16,8 +16,8 @@ This monitor detects potential threats from MimiKatz based on agent roles.
 
 ## Dependencies
 
-- [MimiKatz - Potential Threat](../roles/Mimikatz%20-%20Potential%20Threat.md)
-- [Mimikatz registry disable](../scripts/MimiKatz%20Registry%20Disable.md)
+- [MimiKatz - Potential Threat](/docs/d4cae7e3-3abd-44b5-a9d9-7a0668834050)
+- [Mimikatz registry disable](/docs/9b06cea7-e39b-46f2-ac30-3d8b5fc6339b)
 
 ## Target
 

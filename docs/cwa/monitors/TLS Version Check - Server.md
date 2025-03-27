@@ -38,4 +38,4 @@ Wherever you would like to audit the TLS server version.
 
 ## How to Import
 
-[Import - Remote Monitor - TLS Version Check - Server](<./Import-%20TLS%20Version%20Check%20-%20Server.md>)
+[Import - Remote Monitor - TLS Version Check - Server](/docs/b08343d9-9d4b-4edd-92e2-5941c23d8e43)

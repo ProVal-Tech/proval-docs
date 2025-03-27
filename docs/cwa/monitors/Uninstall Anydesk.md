@@ -22,9 +22,9 @@ The purpose of the remote monitor is to remove `Anydesk` from Windows machines.
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator    | Interval | Result |
-|--------------|----------------|-------------|---------------|----------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based     | 3600     | ![Image](../../../static/img/Uninstall-Anydesk/image_1.png) |
+| Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                      |
+| ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ----------------------------------------------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Image](../../../static/img/Uninstall-Anydesk/image_1.png) |
 
 ## Target
 
@@ -38,4 +38,4 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Uninstall Anydesk](<./Implement-%20Uninstall%20Anydesk.md>)
+[Implement - Remote Monitor - Uninstall Anydesk](/docs/8b658a17-cb91-457a-9efc-4b8f676b0fb0)

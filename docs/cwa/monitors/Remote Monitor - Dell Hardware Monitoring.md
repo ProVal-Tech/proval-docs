@@ -49,4 +49,4 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 
 ## Implementation
 
-[Implement - Remote Monitor - Dell Hardware Monitoring](<./Implement-%20Dell%20Hardware%20Monitoring.md>)
+[Implement - Dell Hardware Monitoring](/docs/2be5ccc9-2700-4f5d-9b77-30567de4cfdf)

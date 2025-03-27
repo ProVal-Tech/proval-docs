@@ -41,4 +41,4 @@ Domain Controllers
 
 ## How to Import
 
-[Import - Remote Monitor - Reset AD Users Password Age](<./Import%20-%20Remote%20Monitor%20-%20Reset%20AD%20Users%20Password%20Age.md>)  
+[Import - Remote Monitor - Reset AD Users Password Age](/docs/da1f5a89-eab2-4fae-8e49-e98c269cf103)

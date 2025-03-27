@@ -39,4 +39,4 @@ Windows 11 machines only.
 
 ## How To Import
 
-[Import - Remote Monitor - Disable AI Recall](<./Import%20-%20Remote%20Monitor%20-%20Disable%20AI%20Recall.md>)
+[Import - Remote Monitor - Disable AI Recall](/docs/3a5d036a-dcc5-4e6e-9962-92309891a4ec)

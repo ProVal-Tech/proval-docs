@@ -16,7 +16,7 @@ This internal monitor detects the agent where the "Bitlocker Fully Decrypted - S
 
 ## Dependencies
 
-[Bitlocker Fully Decrypted - System Drive](<../../unsorted/Bitlocker Fully Decrypted - System Drive.md>)
+[Bitlocker Fully Decrypted - System Drive](/docs/7bd935f9-13db-4189-b119-276635e4d5cb)
 
 ## Target
 

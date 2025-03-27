@@ -17,8 +17,8 @@ Use this script with caution. Disabling IPv4 on the machine may result in a netw
 
 ## Dependencies
 
-- [Internal Monitor : ProVal - Production - Manage Network Adapters](<../monitors/Manage-Network-Adapters.md>)
-- [Solution : Manage-NetworkAdapterProtocols](<../../solutions/Manage_Network_Protocols.md>)
+- [Internal Monitor : ProVal - Production - Manage Network Adapters](/docs)
+- [Solution : Manage-NetworkAdapterProtocols](/docs)
 
 
 ## Sample Run

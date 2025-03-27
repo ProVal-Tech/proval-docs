@@ -46,7 +46,7 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 
 ## Dependencies
 
-[Ticket Creation - Without Computer Information And Failures Only [Autofix]](../scripts/Ticket%20Creation%20-%20Without%20Computer%20Information%20And%20Failures%20Only%20Autofix.md)
+[Ticket Creation - Without Computer Information And Failures Only [Autofix]](/docs/730449e6-1c73-46ca-a93d-d7b9526e1ef9)
 
 "△ Custom - Ticket Creation - Without Computer Details" alert template should be applied to the monitor set.
 

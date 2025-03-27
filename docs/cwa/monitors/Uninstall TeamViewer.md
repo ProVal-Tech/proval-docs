@@ -40,4 +40,4 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Uninstall TeamViewer](<./Implement-%20Uninstall%20TeamViewer.md>)
+[Implement - Remote Monitor - Uninstall TeamViewer](/docs/01a3e5aa-d3fd-42a2-9b9f-5f1ca662164c)

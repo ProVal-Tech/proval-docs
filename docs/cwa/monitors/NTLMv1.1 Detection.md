@@ -36,4 +36,4 @@ Managed Windows Computers
 
 ## How to Import
 
-[Import - Remote Monitor - NTLMv1.1 Detection](<./Import-%20NTLMv1.1%20Detection.md>)
+[Import - Remote Monitor - NTLMv1.1 Detection](/docs/92ad2db8-528e-4bce-8011-ed0e3563e335)

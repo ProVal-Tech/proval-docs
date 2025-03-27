@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this script is to create the [pvl_Script_Assessment](<../tables/pvl_Script_Assesment.md>) table, populate data into it, and remove any data older than 30 days from the table.
+The purpose of this script is to create the [pvl_Script_Assessment](/docs/31e58aae-ce62-4440-8319-b22abec4e842) table, populate data into it, and remove any data older than 30 days from the table.
 
 ## Update Notice: 29-November-2024
 
@@ -21,7 +21,7 @@ The purpose of this script is to create the [pvl_Script_Assessment](<../tables/p
 - The logic has been converted from weekly to daily data updates for better accuracy.
 
 **Update Instructions:**
-- Update/import the [`Script Failure Analysis - 30 Day Retention`](https://proval.itglue.com/5078775/docs/16804995) from the `Prosync` plugin.
+- Update/import this script from the `Prosync` plugin.
 - Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
 - Remove the schedule for the `Weekly Script Failure Analysis - 30 Day Retention` script.
 - Schedule the `Script Failure Analysis - 30 Day Retention` to run once per day, preferably around midnight, as demonstrated in the `Sample Run` section of the document.

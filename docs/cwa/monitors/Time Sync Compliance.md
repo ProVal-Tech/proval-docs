@@ -22,9 +22,9 @@ The purpose of the remote monitor is to synchronize the time of Windows workstat
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info          | Comparator              | Interval | Result                                |
-|--------------|----------------|------------|-----------------------|-------------------------|----------|---------------------------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**          | Does Not Regex Match    | 86400    | (The Computer did not resync) (Failed to start) |
+| Check Action | Server Address | Check Type | Execute Info | Comparator           | Interval | Result                                          |
+| ------------ | -------------- | ---------- | ------------ | -------------------- | -------- | ----------------------------------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | Does Not Regex Match | 86400    | (The Computer did not resync) (Failed to start) |
 
 ## Dependencies
 
@@ -44,4 +44,4 @@ Insert the details of the monitor in the table below.
 
 ## How to Import
 
-[Import - Remote Monitor - Time Sync Compliance](<./Import-%20Time%20Sync%20Compliance.md>)
+[Import - Remote Monitor - Time Sync Compliance](/docs/d0b9c0fa-fe52-412b-a4b9-dee96f9ff58b)

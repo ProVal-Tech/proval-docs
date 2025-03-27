@@ -13,7 +13,7 @@ unlisted: false
 ## Implementation Steps
 
 
-- Import [Winget - Install/Update - Teams](..//scripts/Winget%20-%20InstallUpdate%20-%20Teams.md) script.
+- Import [Winget - Install/Update - Teams](/docs/d5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc) script.
 
 - Run this SQL query from a RAWSQL monitor set to create the alert template. 
 

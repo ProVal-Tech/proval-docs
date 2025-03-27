@@ -17,7 +17,7 @@ If the status is False, then it is supposed to create the ticket.
 
 ## Details
 
-**Suggested "Limit to":** `Group bound with a search of servers having role` [Windows RDS Session Host](../roles/Windows%20RDS%20Session%20Host.md)`
+**Suggested "Limit to":** `Group bound with a search of servers having role` [Windows RDS Session Host](/docs/2383fd5a-aee3-4644-8bea-c05af3f3d320)`
 
 **Suggested Alert Style:** `Once`
 
@@ -25,9 +25,9 @@ If the status is False, then it is supposed to create the ticket.
 
 ## Dependencies
 
-[Windows RDS Session Host](../roles/Windows%20RDS%20Session%20Host.md)
+[Windows RDS Session Host](/docs/2383fd5a-aee3-4644-8bea-c05af3f3d320)
 
-[Windows RDS Gateway](../roles/Windows%20RDS%20Gateway.md)
+[Windows RDS Gateway](/docs/06dec980-1779-4612-a0cf-83587c6f2157)
 
 ## Ticketing
 

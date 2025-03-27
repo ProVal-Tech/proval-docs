@@ -42,5 +42,5 @@ Windows Workstations
 
 ## How to Import
 
-[Import - Remote Monitor - Uninstall VLC Player](<./Import%20-%20Remote%20Monitor%20-%20Uninstall%20VLC%20Player.md>)
+[Import - Remote Monitor - Uninstall VLC Player](/docs/fbb859fd-ac3c-4cab-9460-6d5260edf65e)
  

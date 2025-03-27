@@ -14,11 +14,11 @@ unlisted: false
 
 The internal monitor executes the **Cisco Secure Client - Package Installation** script hourly on online machines where Cisco Secure Client's EDFs (For Module Installation) are selected, but the selected modules are not installed for Windows and MAC machines. It verifies if the installed modules are fewer than the chosen modules for the machines. If so, it will run the script on the machine to install the pending modules.
 
-> Note: For more information on these EDFs, visit: [SWM - Software Install - Script - Cisco Secure Client - Package Installation](<../scripts/Cisco%20Secure%20Client.md>)
+> Note: For more information on these EDFs, visit: [Cisco Secure Client - Package Installation](/docs/69ac0a53-e25a-4e16-b266-b174acf20b3f)
 
 ## Dependencies
 
-[SWM - Software Install - Script - Cisco Secure Client - Package Installation](<../scripts/Cisco%20Secure%20Client.md>)
+[Cisco Secure Client - Package Installation](/docs/69ac0a53-e25a-4e16-b266-b174acf20b3f)
 
 ## Target
 

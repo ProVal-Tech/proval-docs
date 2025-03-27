@@ -27,9 +27,9 @@ This remote monitor looks for several event types and IDs coming from the HP Ser
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result                                                                 |
-|--------------|----------------|------------|---------------|--------------|----------|------------------------------------------------------------------------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based  | 3600     | ![Result](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_1.png) |
+| Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                                                                     |
+| ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_1.png) |
 
 ## Target
 
@@ -39,7 +39,7 @@ The monitor set should be limited to the `HP Servers` search.
 
 ## Implementation
 
-[Implement - Remote Monitor - HP Hardware Monitoring](<./Implement%20-%20Remote%20Monitor%20-%20HP%20Hardware%20Monitoring.md>)
+[Implement - Remote Monitor - HP Hardware Monitoring](/docs/4e3fc053-3ccd-4262-b8e8-662222500e06)
 
 ## Ticketing
 

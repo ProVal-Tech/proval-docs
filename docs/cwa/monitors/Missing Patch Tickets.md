@@ -16,7 +16,7 @@ This monitor will trigger a script to resolve any new or existing tickets genera
 
 ## Dependencies
 
-[CWM - Automate - Script - Client Specific - Auto Close - Missing Patch Tickets [Autofix]](../scripts/Client Specific - Auto Close - Missing Patch Tickets Autofix.md)
+[Auto Close - Missing Patch Tickets Autofix](/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd)
 
 ## Target
 
@@ -91,6 +91,6 @@ WHERE
   ) = '0';
 ```
 
-**Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](../scripts/Auto%20Close%20-%20Missing%20Patch%20Tickets%20Autofix.md) script is imported before creating the alert template.
+**Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd) script is imported before creating the alert template.
 
 

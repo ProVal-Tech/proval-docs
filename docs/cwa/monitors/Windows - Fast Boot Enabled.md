@@ -16,7 +16,7 @@ Using a role definition, this monitor detects machines where Windows Fast Boot i
 
 ## Dependencies
 
-- [Windows Fast Boot Enabled](../roles/Windows%20Fast%20Boot%20Enabled.md)
+- [Windows Fast Boot Enabled](/docs/2929d042-dfa6-4721-b60d-9fd78269b942)
 
 ## Target
 

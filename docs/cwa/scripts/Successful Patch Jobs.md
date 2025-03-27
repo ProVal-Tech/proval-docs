@@ -16,7 +16,7 @@ This script is a function script and is the enhanced version of the default "Suc
 
 ## Sample Run
 
-This script is a function script called from [CWM - Automate - Script - Patch Accounting](./Patch%20Accounting.md).
+This script is a function script called from [Patch Accounting](/docs/53163c7a-3281-4825-ba22-4e22c8c5b35e).
 
 ## Dependencies
 

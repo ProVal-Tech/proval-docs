@@ -16,7 +16,7 @@ Import the Alert Template `△ Custom - Ticket Creation Computer - Failures Only
 ---
 
 ### Step 2
-Validate that the [Ticket Creation - Computer [Failures Only]](../scripts/Ticket%20Creation%20-%20Computer%20Failures%20Only.md) script was imported as well and that the alert template is executing this script for failures only.
+Validate that the [Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9) script was imported as well and that the alert template is executing this script for failures only.
 
 ---
 

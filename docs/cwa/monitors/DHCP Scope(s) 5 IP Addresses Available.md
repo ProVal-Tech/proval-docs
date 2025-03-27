@@ -93,4 +93,4 @@ The monitor set is available for import in our (ProVal's) Development environmen
 
 ## How to Import
 
-Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 5 IP Addresses Available](<./Import-%20DHCP%20Scope(s)%205%20IP%20Addresses%20Available.md>)
+Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 5 IP Addresses Available](/docs/81c88531-4918-4d74-ac84-efbc2c3cfe51)

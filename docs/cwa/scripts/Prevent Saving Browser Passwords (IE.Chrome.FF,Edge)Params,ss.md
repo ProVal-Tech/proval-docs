@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is a new version of the [SWM - Software Configuration - Script - Prevent Saving Browser Passwords (IE.Chrome.FF)](./Prevent%20Saving%20Browser%20Passwords%20(IE.Chrome.FF).md) script.
+This is a new version of the [Prevent Saving Browser Passwords (IE.Chrome.FF)](/docs/5e0e3054-ce35-494b-bdde-c8b0c56305d0) script.
 
 This script currently supports Internet Explorer, Chrome, Firefox, and Edge and will lock those browsers from prompting to save passwords by making changes in the registry.
 
@@ -28,21 +28,21 @@ In the above screenshot, the Password Saving Feature for the browsers will be di
 
 ## Variables
 
-| Name   | Description                                                       |
-|--------|-------------------------------------------------------------------|
-| OutCome| Output of the PowerShell script performing the action.           |
+| Name    | Description                                            |
+| ------- | ------------------------------------------------------ |
+| OutCome | Output of the PowerShell script performing the action. |
 
 #### User Parameters
 
-| Name                         | Example | Required | Description                                                                                  |
-|------------------------------|---------|----------|----------------------------------------------------------------------------------------------|
-| Enable_Password_Saving_Feature | 1       | False    | (empty or anything else) = Disables Password Saving; 1 = Enables Password Saving            |
-| Remove_Saved_Passwords       | 1       | False    | (empty or anything else) = Leaves the currently saved password; 1 = Removes the Currently Saved Password |
+| Name                           | Example | Required | Description                                                                                              |
+| ------------------------------ | ------- | -------- | -------------------------------------------------------------------------------------------------------- |
+| Enable_Password_Saving_Feature | 1       | False    | (empty or anything else) = Disables Password Saving; 1 = Enables Password Saving                         |
+| Remove_Saved_Passwords         | 1       | False    | (empty or anything else) = Leaves the currently saved password; 1 = Removes the Currently Saved Password |
 
 #### Script States
 
-| Name                           | Example                 | Description                                                                                     |
-|--------------------------------|------------------------|-------------------------------------------------------------------------------------------------|
+| Name                                  | Example                | Description                                                                                                      |
+| ------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Date Disabled Password Saving Feature | 31/08/2022 02:00:00 AM | Last time the Password Saving Feature was disabled for the computer; can be used to create a dataview if needed. |
 | Date Enabled Password Saving Feature  | 31/08/2022 02:00:00 AM | Last time the Password Saving Feature was enabled for the computer; can be used to create a dataview if needed.  |
 

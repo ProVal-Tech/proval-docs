@@ -13,6 +13,7 @@ foreach ($doc in $docs) {
         $targetLinkItem = $null
         $targetLinkItem = $link | Resolve-Path -ErrorAction SilentlyContinue | Get-Item -ErrorAction SilentlyContinue
         if ($null -eq $targetLinkItem) {
+            Write-Warning "Link $link not resolved. Skipping..."
             continue
         }
         $slug = Get-Content $targetLinkItem.FullName | Select-String -Pattern 'slug: (.*)' | ForEach-Object { $_.Matches } | ForEach-Object { $_.Groups[1].Value }

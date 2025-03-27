@@ -37,9 +37,9 @@ HKLM:/SYSTEM/CurrentControlSet/Control/Session Manager/Power/HiberbootEnabled (S
 
 **Suggested "Limit to"**: Windows Machines
 
-| Check Action | Server Address | Check Type | Check Value | Comparator | Interval | Result |
-|--------------|----------------|-------------|--------------|------------|----------|--------|
-| System       | 127.0.0.1      | Run File    | **See Below** | Does Not Contain | 86400 | Failed |
+| Check Action | Server Address | Check Type | Check Value   | Comparator       | Interval | Result |
+| ------------ | -------------- | ---------- | ------------- | ---------------- | -------- | ------ |
+| System       | 127.0.0.1      | Run File   | **See Below** | Does Not Contain | 86400    | Failed |
 
 **Check Value:**
 ```shell
@@ -65,4 +65,4 @@ FastBoot is successfully disabled.
 ## Implementation
 
 Please follow the document below for the implementation steps:  
-[Import - Remote Monitor - Windows Fast Boot Disable](<./Import-%20Windows%20Fast%20Boot%20Disable%20Change.md>)
+[Import - Remote Monitor - Windows Fast Boot Disable](/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342)

@@ -32,4 +32,4 @@ Windows OS
 
 ## How To Import
 
-[Implement - Remote Monitor - Reset System Restore Disk Space Usage](<./Implement-%20Reset%20System%20Restore%20Disk%20Space%20Usage.md>)
+[Implement - Remote Monitor - Reset System Restore Disk Space Usage](/docs/dcfe094a-b15b-4f06-8c8f-c6e211c7f9b0)

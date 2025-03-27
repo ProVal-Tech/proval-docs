@@ -14,8 +14,8 @@ This internal monitor detects windows machines selected for Network Adapters Pro
 
 ## Dependencies
 
-- [Script: Manage-NetworkAdapterProtocols](<../scripts/Manage-NetworkAdapterProtocols.md>)
-- [Solution : Manage-NetworkAdapterProtocols](<../../solutions/Manage_Network_Protocols.md>)
+- [Script: Manage-NetworkAdapterProtocols](/docs)
+- [Solution : Manage-NetworkAdapterProtocols](/docs)
 
 
 ## Target

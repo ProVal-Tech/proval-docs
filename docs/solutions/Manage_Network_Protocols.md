@@ -15,27 +15,27 @@ This solution manages network protocols on Windows machines, including enabling,
 ## Associated Content
 | Content                                                                                                               | Type           | Function                                           |
 |-----------------------------------------------------------------------------------------------------------------------|----------------|----------------------------------------------------|
-| [Manage-NetworkAdapterProtocols](<../cwa//scripts/Manage-NetworkAdapterProtocols.md>)                                      | Script         | Manages Network Adpater Protocols                  |
-| [ProVal - Production - Manage Network Adapters](<../cwa/monitors/Manage-Network-Adapters.md>) | Internal Monitor | Detects machines selected for Network Adapters Protocol Solution      |
-| `△ Custom - Execute Script - Manage-NetworkAdapterProtocols`                                                                    | Alert Template | Execute the script [Manage-NetworkAdapterProtocols](<../cwa//scripts/Manage-NetworkAdapterProtocols.md>) against the machines detected by the internal monitor. |
+| [Manage-NetworkAdapterProtocols](/docs)                                      | Script         | Manages Network Adpater Protocols                  |
+| [ProVal - Production - Manage Network Adapters](/docs) | Internal Monitor | Detects machines selected for Network Adapters Protocol Solution      |
+| `△ Custom - Execute Script - Manage-NetworkAdapterProtocols`                                                                    | Alert Template | Execute the script [Manage-NetworkAdapterProtocols](/docs) against the machines detected by the internal monitor. |
 
 
 
 ## Implementation
 1. Import the following content using the ProSync Plugin:
-   - [Manage-NetworkAdapterProtocols](<../cwa//scripts/Manage-NetworkAdapterProtocols.md>)   
-   - [ProVal - Production - Manage Network Adapters](<../cwa/monitors/Manage-Network-Adapters.md>) 
+   - [Manage-NetworkAdapterProtocols](/docs)   
+   - [ProVal - Production - Manage Network Adapters](/docs) 
    -  `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
 
 2. Reload the system cache:  
  ![Image](../../static/img/Get-Autopilot-Hash/image_1.png)
 
-3. Run the [Manage-NetworkAdapterProtocols](<../cwa//scripts/Manage-NetworkAdapterProtocols.md>) against any machine with the Set_Environment parameter set to '1':  
+3. Run the [Manage-NetworkAdapterProtocols](/docs) against any machine with the Set_Environment parameter set to '1':  
 ![Image](../../static/img/Manage-NetworkProtocol/image1.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [ProVal - Production - Manage Network Adapters](<../cwa/monitors/Manage-Network-Adapters.md>) 
+     - [ProVal - Production - Manage Network Adapters](/docs) 
        - `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
        - Right-click and Run Now to start the monitor.
 

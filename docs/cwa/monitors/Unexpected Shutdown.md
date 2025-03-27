@@ -24,9 +24,9 @@ The monitor set helps check if the computer had any recent unexpected shutdowns 
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Condition | Interval | Result               |
-|--------------|----------------|------------|---------------|-----------|----------|----------------------|
-| System       | 127.0.0.1      | Run File   | **REDACTED**  | State Based| 3600     | \<Screenshot Below>   |
+| Check Action | Server Address | Check Type | Execute Info | Condition   | Interval | Result              |
+| ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | \<Screenshot Below> |
 
 ![Screenshot](../../../static/img/Unexpected-Shutdown/image_1.png)
 
@@ -142,4 +142,4 @@ The user pressed the power button.
 
 ## Implementation
 
-[Import - Remote Monitor - Unexpected Shutdown](<./Import-%20Unexpected%20Shutdown.md>)
+[Import - Remote Monitor - Unexpected Shutdown](/docs/9bf4d628-655e-4568-bea6-dfd0544a1a56)

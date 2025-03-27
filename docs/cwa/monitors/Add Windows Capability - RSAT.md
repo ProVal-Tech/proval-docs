@@ -48,4 +48,4 @@ How to enable it manually: https://learn.microsoft.com/en-us/troubleshoot/window
 
 ## Implementation
 
-[Implement - Remote Monitor - Add Windows Capability - RSAT](<./Implement-%20Add%20Windows%20Capability%20-%20RSAT.md>)
+[Implement - Remote Monitor - Add Windows Capability - RSAT](/docs/b927b474-abad-4e84-8f39-8995d5ace913)

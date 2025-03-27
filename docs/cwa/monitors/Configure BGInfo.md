@@ -26,7 +26,7 @@ The purpose of the remote monitor is to find the computer where BGInfo is not de
 
 ## Dependencies
 
-[Configure BGInfo](..//scripts/Configure%20BGInfo.md)
+[Configure BGInfo](/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b)
 
 ## Target
 

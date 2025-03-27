@@ -44,7 +44,7 @@ The monitor set should be limited to the `<Server Role - AD - Infrastructure Mas
 ## Implementation
 
 Please follow the instructions provided in the implementation article to implement the solution:  
-[Implement - Remote Monitor - AD Account LockOut Detection](./Import%20-%20Remote%20Monitor%20-%20AD%20Account%20LockOut%20Detection.md)
+[Implement - Remote Monitor - AD Account LockOut Detection](/docs/de574ff4-5a24-4ccd-83d3-499b1b274893)
 
 ## Ticketing
 

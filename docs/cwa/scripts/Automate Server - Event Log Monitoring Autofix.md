@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of the script is to send information about the event logs detected by the [Automate Server - Unwanted Event Logs Monitoring](../monitors/Automate%20Server%20-%20Unwanted%20Event%20Logs%20Monitoring.md) monitor set. The result sometimes exceeds the character limit of 100 characters; hence, the script is needed for alerting purposes. Additionally, this script is not designed to send any notifications for the Success status of the monitor set.
+The purpose of the script is to send information about the event logs detected by the [Automate Server - Unwanted Event Logs Monitoring](/docs/88dfd269-1df7-4c57-a898-9445dec162b5) monitor set. The result sometimes exceeds the character limit of 100 characters; hence, the script is needed for alerting purposes. Additionally, this script is not designed to send any notifications for the Success status of the monitor set.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This is an Autofix script, and it is used within the "Automate Server - Event Lo
 
 ## Dependencies
 
-[Automate Server - Unwanted Event Logs Monitoring](../monitors/Automate%20Server%20-%20Unwanted%20Event%20Logs%20Monitoring.md)
+[Automate Server - Unwanted Event Logs Monitoring](/docs/88dfd269-1df7-4c57-a898-9445dec162b5)
 
 ## Variables
 
@@ -35,7 +35,7 @@ This is an Autofix script, and it is used within the "Automate Server - Event Lo
 ## Process
 
 1. Verifies the monitor status; exits for Success and performs the following steps for Failure.
-2. Runs the same command used within the [Automate Server - Unwanted Event Logs Monitoring](../monitors/Automate%20Server%20-%20Unwanted%20Event%20Logs%20Monitoring.md) monitor set.
+2. Runs the same command used within the [Automate Server - Unwanted Event Logs Monitoring](/docs/88dfd269-1df7-4c57-a898-9445dec162b5) monitor set.
 3. Emails the outcome of the command (%shellresult%) to [alerts@provaltech.com](mailto:alerts@provaltech.com) in order to generate an urgent ticket in our (ProVal's) Autotask board.
 
 ## Output

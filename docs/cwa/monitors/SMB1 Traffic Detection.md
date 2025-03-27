@@ -26,9 +26,9 @@ This monitoring mechanism serves to identify servers or environments where the S
 
 Insert the details of the monitor in the table below.
 
-| Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
-|--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](../../../static/img/SMB1-Traffic-Detection/image_1.png) |
+| Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                            |
+| ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ----------------------------------------------------------------- |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/SMB1-Traffic-Detection/image_1.png) |
 
 ## Dependencies
 
@@ -50,4 +50,4 @@ Details: `
 
 ## Implementation
 
-[Implement - Remote Monitor - SMB1 Traffic Detection](<./Implement-%20SMB1%20Traffic%20Detection.md>)
+[Implement - Remote Monitor - SMB1 Traffic Detection](/docs/e6d09f37-fd0f-42a6-98a5-449f65673296)

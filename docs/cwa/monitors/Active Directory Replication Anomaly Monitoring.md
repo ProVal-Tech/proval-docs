@@ -49,4 +49,4 @@ For a precise understanding of the error codes returned in the `LastError` prope
 
 ## Implementation
 
-[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](<./Implement%20-%20Active%20Directory%20Replication%20Anomaly%20Monitoring.md>) 
+[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/495df667-0690-48e0-b929-f7671e9fc92c) 

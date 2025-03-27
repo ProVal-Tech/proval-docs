@@ -16,21 +16,21 @@ This document displays potential Log4J/Log4Shell vulnerabilities based on the fo
 
 ## Dependencies
 
-- [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5)
-- [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import%20Log4Shell%20Table.md>)
-- [SEC - Endpoint Protection - Custom Table - plugin_proval_log4jsoftwarelist](/docs/f78c8a37-448e-4a52-b475-412b0625edde)
+- [Import-Log4JTable](/docs/a9db2857-d76e-4c63-8916-80ed141dc5b5)
+- [Import Log4Shell Table](/docs/c3342117-53c8-48de-9831-27cd7da77c00)
+- [plugin_proval_log4jsoftwarelist](/docs/f78c8a37-448e-4a52-b475-412b0625edde)
 
 ## Columns
 
-| Column        | Description                                                                                              |
-|---------------|----------------------------------------------------------------------------------------------------------|
-| ComputerID    | The ID of the affected computer.                                                                         |
-| Client        | The name of the computer's client.                                                                       |
-| Computer      | The name of the affected computer.                                                                        |
-| InstalledName | The name of the possibly affected application as it appears in the Automate database.                    |
-| Supplier      | The supplier of the possibly affected application as it appears in the GitHub table.                     |
-| Product       | The name of the possibly affected application as it appears in the GitHub table.                         |
-| Status        | The status of the application as of the last run of [SEC - Endpoint Protection - Script - Import Log4Shell Table](<../scripts/Import%20Log4Shell%20Table.md>) |
-| Links         | Links to information about the affected application.                                                    |
+| Column        | Description                                                                                                              |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| ComputerID    | The ID of the affected computer.                                                                                         |
+| Client        | The name of the computer's client.                                                                                       |
+| Computer      | The name of the affected computer.                                                                                       |
+| InstalledName | The name of the possibly affected application as it appears in the Automate database.                                    |
+| Supplier      | The supplier of the possibly affected application as it appears in the GitHub table.                                     |
+| Product       | The name of the possibly affected application as it appears in the GitHub table.                                         |
+| Status        | The status of the application as of the last run of [Import Log4Shell Table](/docs/c3342117-53c8-48de-9831-27cd7da77c00) |
+| Links         | Links to information about the affected application.                                                                     |
 
 
