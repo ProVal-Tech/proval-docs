@@ -119,7 +119,9 @@ Please follow these instructions carefully to update the information stored in t
 20. Scroll to the top of the document and click the `Publish` button to save the changes.  
    ![](../../../static/img/plugin_proval_windows_os_support/image_17.png)  
 
+## For Install-Windows11FeatureUpdate
 
+- Update the [windows-os-support.json](../../../static/attachments/windows-os-support.json) file with the latest json content.
 
 ## Table data
 
