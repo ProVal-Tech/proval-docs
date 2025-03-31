@@ -51,7 +51,9 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 
 - If using the default file repository, the version of Windows being upgraded must be the US version.
 - file.provaltech.com must be fully whitelisted in all security systems.
-- windows-upgrader.exe must be whitelisted in all security systems.
+- windows-upgrader.exe must be whitelisted in all security systems.  
+- [Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)  
+
 
 #### User Parameters
 

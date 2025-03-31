@@ -10,12 +10,15 @@ unlisted: false
 ---
 
 ## Summary
-The monitor set is configured to execute [Windows 11 Installer](<../scripts/Windows 11 Installer.md>) on compatible Windows 10 machines. The script runs during off-hours, specifically between 6:00 PM and 6:00 AM, to avoid disruptions during working hours, as the process involves a forced computer reboot. For machines where the initial execution fails, the script will retry once per week. A maximum of three attempts will be made per machine.
+The monitor set is configured to execute [Script: Windows 11 installer](../scripts/Windows%20_11_Installer.md) on compatible Windows 10 machines. The script runs during off-hours, specifically between 6:00 PM and 6:00 AM, to avoid disruptions during working hours, as the process involves a forced computer reboot. For machines where the initial execution fails, the script will retry once per week. A maximum of three attempts will be made per machine.
 
 
 ## Dependencies
-[Windows 11 Compatibility Audit](<../../solutions/Windows 11 Compatibility Audit.md>)  
-[Install Windows 11](<../scripts/Install Windows 11.md>)
+[Solution: Windows 11 Compatibility Audit](<../../solutions/Windows 11 Compatibility Audit.md>)  
+[Script: Windows 11 installer](../scripts/Windows%20_11_Installer.md)  
+[Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)  
+Alert Template: △ Custom - Install Windows 11 - Compatible Machines
+
 
 ## Target
 Global

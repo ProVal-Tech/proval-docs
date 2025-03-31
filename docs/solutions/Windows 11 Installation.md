@@ -38,7 +38,7 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
 1. Implement the Windows 11 Compatibility Audit solution as instructed in this document.  
 
 2. Import the following content using the ProSync Plugin:
-    - [Script : Windows 11 Installer](<../cwa/scripts/Windows 11 Installer.md>)  
+    - [Script : Windows 11 Installer](<../cwa/scripts/Windows _11_Installer.md>) 
     - [Internal Monitor : Install Windows 11 - Compatible Machines](<../cwa/monitors/Install Windows 11 - Compatible Machines.md>) 
     - [Dataview : Windows 11 Installation Audit [Compatible Machines]](<../cwa/dataviews//Windows 11 Installation Audit [Compatible Machines].md>) 
     - Alert Template: △ Custom - Install Windows 11 - Compatible Machines
@@ -59,5 +59,5 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
 | Enable Windows 11 Installation   | Check-Box  | Client   | Default     | Enables automation for the client.                                         |
 | Exclude Windows 11 Installation  | Check-Box  | Location | Exclusions  | Exclude location from the automation.                                      |
 | Exclude Windows 11 Installation  | Check-Box  | Computer | Exclusions  | Exclude location from the computer.                                        |
-| Windows 11 Installation Attempts | Text       | Computer | Default     | A non-editable EDF, updated by [Script : Windows 11 Installer](<../cwa/scripts/Windows 11 Installer.md>)  to keep track of the number of scripts run. |
+| Windows 11 Installation Attempts | Text       | Computer | Default     | A non-editable EDF, updated by [Script : Windows 11 Installer](<../cwa/scripts/Windows _11_Installer.md>)  to keep track of the number of scripts run. |
 
