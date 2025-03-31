@@ -157,7 +157,7 @@ begin {
             Where-Object { $_.Installed -and $_.FeatureType -eq 'Role' }).DisplayName
 
     # Add supplemental detections
-    if ($SQLServices) { $InstalledFeatures += 'SQL Server' }
+    if ($SQLServices) { $InstalledFeatures += 'MSSQL Server' }
     if ($ExchangeServices) { $InstalledFeatures += 'Exchange Server' }
     if ($MySQLServer) { $InstalledFeatures += 'MySQL Server' }
     if ($VeeamBDR) { $InstalledFeatures += 'Veeam BDR' }
