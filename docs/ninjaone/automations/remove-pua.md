@@ -237,30 +237,30 @@ In the box, fill in the following details and select `Add` to create the script 
 **Variable Type:** `CheckBox`  
 **Variable Name:** `ListBloatware`  
 **Description:** `Flagging this parameter will list down the installed Bloatware in script logs.`  
-**Set Default Value:** `<Leave it unchecked.>`
+**Set Default Value:** `<Leave it unchecked.>`  
 Click on `ADD`  
 ![Image12](../../../static/img/ninjarmm-automations-remove-pua/image12.png)  
 
 **Variable Type:** `String`  
 **Variable Name:** `Remove`  
 **Description:** `The name(s) of the application or applications you wish to uninstall.`  
-**Set Default Value:** `<Leave it unchecked.>`
-**Mandatory:** `False`
+**Set Default Value:** `<Leave it blank.>`  
+**Mandatory:** `False`  
 Click on `ADD`  
 ![Image13](../../../static/img/ninjarmm-automations-remove-pua/image13.png)  
 
 **Variable Type:** `CheckBox`  
-**Variable Name:** `Remove`  
+**Variable Name:** `RemoveAll`  
 **Description:** `Flag this parameter to remove all bloatware by category or all found bloatware supported by the script with or without exceptions.`  
-**Set Default Value:** `<Leave it unchecked.>`
-Click on `ADD`  
+**Set Default Value:** `<Leave it unchecked>`  
+**Click** on `ADD`  
 ![Image14](../../../static/img/ninjarmm-automations-remove-pua/image14.png)
 
 **Variable Type:** `Drop-Down`  
 **Variable Name:** `Category`  
 **Description:** `Used with RemoveAll will filter bloatware to a certain category allowing you to select just a specific category of bloatware.`  
-**Set Default Value:** `<Leave it unchecked.>`
-**Mandatory:** `False`
+**Set Default Value:** `<Leave it unchecked.>`  
+**Mandatory:** `False`  
 **Option Value:** Click on `+Add` button and add the below options:
 
 - `MsftBloatApps`
@@ -275,8 +275,8 @@ Sample screenshot after creation:
 **Variable Type:** `String`  
 **Variable Name:** `Except`  
 **Description:** `Used with RemoveAll or Category to remove all except some item(s) from a category or all together.`  
-**Set Default Value:** `<Leave it unchecked.>`
-**Mandatory:** `False`
+**Set Default Value:** `<Leave it blank.>`  
+**Mandatory:** `False`  
 Click on `ADD`  
 ![Image17](../../../static/img/ninjarmm-automations-remove-pua/image17.png)  
 
