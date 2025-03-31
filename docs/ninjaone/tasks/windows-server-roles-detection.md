@@ -11,7 +11,7 @@ unlisted: false
 
 ## Summary
 
-Runs the [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation daily to identify the installed Windows Server roles and updates the [cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md) custom field with the retrieved information.
+Runs the [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation daily against [cPVAL - Windows Servers](../groups/cpval-windows-servers.md) group to identify the installed Windows Server roles and updates the [cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md) custom field with the retrieved information.
 
 ## Dependencies
 
@@ -20,7 +20,7 @@ Runs the [Windows Server Roles Detection](../automations/windows-server-roles-de
 
 ## Details
 
-| Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations | 
+| Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
 | Windows Server Roles Detection | Retrieves installed Windows Server roles and stores to the cPVAL Roles Detected custom field. | True | Daily | 1 Days | Current Time | Never | [cPVAL - Windows Servers](../groups/cpval-windows-servers.md) group | [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation |
 
