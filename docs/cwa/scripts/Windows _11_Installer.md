@@ -21,7 +21,7 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
 **File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
-**File Hash (SHA256)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
+**File Hash (MD5)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
 
 **Note**: `When executed without the NoReboot flag, the script reschedules itself to run 30 minutes after completing the upgrade to perform validation.`
 
