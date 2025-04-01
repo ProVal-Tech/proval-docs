@@ -111,7 +111,7 @@ Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
 #### ROW 2a Condition: Output Contains
 
-Type `ERROR:` in the Value box.
+Type `An error occurred` in the Value box.
 
 ![Output Contains](<../../../static/img/docs/Get Specific-Multiple User Audit/{108A9F99-83D8-4019-B4E6-65DE0316DE7B}.png>)
 
