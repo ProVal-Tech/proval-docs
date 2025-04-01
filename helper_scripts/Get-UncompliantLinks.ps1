@@ -5,6 +5,8 @@ foreach($doc in $docs) {
     $content = Get-Content $doc.FullName
     $targetLinks = $null
     $targetLinks = $content | Select-String -Pattern "\[.*?\]\(<?(.*?\.mdx?)>?\)" -AllMatches | ForEach-Object { $_.Matches } | ForEach-Object { $_.Groups[1].Value -replace "\.mdx",".md" } | Sort-Object | Get-Unique
+    $targetLinks += $content | Select-String -Pattern "https://proval\.itglue\.com/\d+/docs/\d+" -AllMatches | ForEach-Object { $_.Matches[0].Value } | Sort-Object | Get-Unique
+    $targetLinks += $content | Select-String -Pattern "https://proval\.itglue\.com/DOC-\d+-\d+" -AllMatches | ForEach-Object { $_.Matches[0].Value } | Sort-Object | Get-Unique
     if($targetLinks.Count -eq 0 -or $null -eq $targetLinks) {
         Pop-Location
         continue
