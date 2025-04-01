@@ -22,10 +22,10 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 | Content                                                                                       | Type            | Function                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating 3 Days.md>) | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have not checked in with Automate for more than 3 days.                                   |
+| [Internal Monitor - ESXi Host Not Communicating > 3 Days](/docs/905bda70-64aa-4e66-a18f-c5d0eef2b7fd) | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have not checked in with Automate for more than 3 days.                                   |
 | [Internal Monitor - ESXi Bad Sensor](/docs/2f8424d7-00aa-4cee-a4fb-56cbc412108b)                  | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a Bad Sensor within the VMware monitoring.                                   |
-| [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](<../cwa/monitors/ESXi Old Snapshots Detected 3 Days.md>) | Internal Monitor | This monitor identifies the ESXi host servers that contain one or more snapshots older than three days. Default alerting contains the information of all the virtual machines and the older snapshots grouped by the ESXi host. |
-| [Internal Monitor - ESXi Storage Space < 10%](<../cwa/monitors/ESXi Storage Space 10.md>)   | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a remaining storage space for any disk that is less than 10% within the VMware monitoring. |
+| [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](/docs/7f795515-a2b5-4041-85c8-64b6c6e59470) | Internal Monitor | This monitor identifies the ESXi host servers that contain one or more snapshots older than three days. Default alerting contains the information of all the virtual machines and the older snapshots grouped by the ESXi host. |
+| [Internal Monitor - ESXi Storage Space < 10%](/docs/9b1477b3-6d88-4a1c-b313-50c638bb84ee)   | Internal Monitor | This monitor is intended to report any ESXi hosts in the system that have reported a remaining storage space for any disk that is less than 10% within the VMware monitoring. |
 | [Internal Monitor - ESXi Invalid License Detected](/docs/e413063b-7bce-4a4e-99ce-daea264d6ac6) | Internal Monitor | The purpose of this monitor is to detect the ESXi hosts with expired or trial version license keys.                                                              |
 
 ### Alert Templates
@@ -49,10 +49,10 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 1. Please verify whether any of the monitor sets listed in the `Monitors` table already exist. If any of the monitor sets are already present, please follow the process outlined in [this document](https://proval.itglue.com/5078775/docs/14731110).
 
 2. Import the following internal monitors using the Prosync Plugin:
-   - [Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating 3 Days.md>)
+   - [Internal Monitor - ESXi Host Not Communicating > 3 Days](/docs/905bda70-64aa-4e66-a18f-c5d0eef2b7fd)
    - [Internal Monitor - ESXi Bad Sensor](/docs/2f8424d7-00aa-4cee-a4fb-56cbc412108b)
-   - [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](<../cwa/monitors/ESXi Old Snapshots Detected 3 Days.md>)
-   - [Internal Monitor - ESXi Storage Space < 10%](<../cwa/monitors/ESXi Storage Space 10.md>)
+   - [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](/docs/7f795515-a2b5-4041-85c8-64b6c6e59470)
+   - [Internal Monitor - ESXi Storage Space < 10%](/docs/9b1477b3-6d88-4a1c-b313-50c638bb84ee)
    - [Internal Monitor - ESXi Invalid License Detected](/docs/e413063b-7bce-4a4e-99ce-daea264d6ac6)
 
 3. Import the following dataviews from the Prosync Plugin:
@@ -74,7 +74,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 7. Configure the solution as follows:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-     - [Internal Monitor - ESXi Host Not Communicating > 3 Days](<../cwa/monitors/ESXi Host Not Communicating 3 Days.md>)
+     - [Internal Monitor - ESXi Host Not Communicating > 3 Days](/docs/905bda70-64aa-4e66-a18f-c5d0eef2b7fd)
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
@@ -82,11 +82,11 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
-     - [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](<../cwa/monitors/ESXi Old Snapshots Detected 3 Days.md>)
+     - [Internal Monitor - ESXi Old Snapshots Detected > 3 Days](/docs/7f795515-a2b5-4041-85c8-64b6c6e59470)
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.
-     - [Internal Monitor - ESXi Storage Space < 10%](<../cwa/monitors/ESXi Storage Space 10.md>)
+     - [Internal Monitor - ESXi Storage Space < 10%](/docs/9b1477b3-6d88-4a1c-b313-50c638bb84ee)
        - Configure with the imported alert template
          - Unless otherwise stated by the consultant, use this: `△ Custom - Ticket Creation - ESXi Monitoring`
        - Right-click and Run Now to start the monitor.

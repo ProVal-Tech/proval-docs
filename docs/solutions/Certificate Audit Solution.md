@@ -23,7 +23,7 @@ The purpose of this solution is to pull meaningful certificate information into 
 **Modified Content:**
 - Script: [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13)
 - Dataview: [SSL Certificate Audit [Script]](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d)
-- Internal Monitor: [ProVal - Production - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)
+- Internal Monitor: [ProVal - Production - Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c)
 
 **Modifications:**
 - The [Windows - Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script has been modified to use the Shell function instead of the `Execute PowerShell` function, as Threatlocker was flagging it.
@@ -48,7 +48,7 @@ The purpose of this solution is to pull meaningful certificate information into 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>) | Internal Monitor | This monitor checks the [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) table for any SSL certificates that have an expiration date of less than 30 days. |
+| [Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c) | Internal Monitor | This monitor checks the [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) table for any SSL certificates that have an expiration date of less than 30 days. |
 | [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) | Script | Creates a ticket using the alerting information from the monitor and adds more detailed information to the ticket. |
 | △ Custom - Ticket Creation - Computer | Alert Template | Executes the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script. |
 
@@ -62,7 +62,7 @@ The purpose of this solution is to pull meaningful certificate information into 
    - Alert Template - △ Custom - Local Machine Certificate Audit
 
    **For Alerting:**
-   - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)
+   - [Internal Monitor - Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c)
    - [Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035)
    - Alert Template - △ Custom - Ticket Creation - Computer
 
@@ -96,7 +96,7 @@ The purpose of this solution is to pull meaningful certificate information into 
 6. Please ensure that the alerting solution is implemented only after the consultant has confirmed it.  
    Configure the alerting solution as outlined below:  
    Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-   - [Internal Monitor - Certificate Expiration < 30 Days](<../cwa/monitors/Certificate Expiration 30 Days.md>)  
+   - [Internal Monitor - Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
 

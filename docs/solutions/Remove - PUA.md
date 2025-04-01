@@ -16,11 +16,11 @@ Remove or audit potentially unwanted applications on Windows systems (PUAs).
 
 ## Associated Content
 
-| Content                                                                                               | Type               | Function                      |
-|-------------------------------------------------------------------------------------------------------|--------------------|-------------------------------|
-| [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)                 | Agnostic Script     | Remove or audit PUAs.        |
-| [SWM - Software Uninstall - Agent Procedure - PUA Remove](<../vsa/procedures/PUA%20Remove.md>)   | Kaseya Procedure    | VSA implementation of Remove-PUA |
-| [CWM - Automate - Script - Remove - PUA - Command](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf) | Automate Script     | CWA implementation of Remove-PUA |
+| Content                                                                                               | Type             | Function                         |
+| ----------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------- |
+| [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)        | Agnostic Script  | Remove or audit PUAs.            |
+| [SWM - Software Uninstall - Agent Procedure - PUA Remove](/docs/7532eff4-e724-471e-96fc-ddfd944bf710) | Kaseya Procedure | VSA implementation of Remove-PUA |
+| [CWM - Automate - Script - Remove - PUA - Command](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)        | Automate Script  | CWA implementation of Remove-PUA |
 
 ## Implementation
 

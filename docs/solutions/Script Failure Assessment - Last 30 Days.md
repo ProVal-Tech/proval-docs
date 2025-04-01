@@ -35,14 +35,14 @@ The purpose of this solution is to present a detailed analysis of script failure
 
 | Content                                                                                       | Type    | Function                                                                                                         |
 |-----------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------|
-| [Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) | Script  | Create [pvl_Script_Assesment](<../cwa/tables/pvl_Script_Assesment.md>) table. Populate data into it and remove any data older than 30 days from the table. |
+| [Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) | Script  | Create [pvl_Script_Assesment](/docs/31e58aae-ce62-4440-8319-b22abec4e842) table. Populate data into it and remove any data older than 30 days from the table. |
 | [Dataview - Script Failure Assessment - Last 30 Days](/docs/4a4d8ffa-760b-4e17-a377-df522ff0ba34) | Dataview | Displays the detailed analysis of script failures over the past 30 days                                         |
 
 ### Dependencies
 
 | Content                                                                                          | Type         | Function                                                                      |
 |--------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------|
-| [Custom Table - pvl_Script_Assesment](<../cwa/tables/pvl_Script_Assesment.md>)          | Custom Table | Holds the detailed analysis of script failures over the past 30 days         |
+| [Custom Table - pvl_Script_Assesment](/docs/31e58aae-ce62-4440-8319-b22abec4e842)          | Custom Table | Holds the detailed analysis of script failures over the past 30 days         |
 
 ## Implementation
 
@@ -53,7 +53,7 @@ The purpose of this solution is to present a detailed analysis of script failure
 2. Reload the system cache:  
    ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_2.png)
 
-3. Execute the [Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) against any client to create the [pvl_Script_Assesment](<../cwa/tables/pvl_Script_Assesment.md>) custom table. This script will automatically provide the necessary table permissions.
+3. Execute the [Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) against any client to create the [pvl_Script_Assesment](/docs/31e58aae-ce62-4440-8319-b22abec4e842) custom table. This script will automatically provide the necessary table permissions.
 
 4. Validate the presence of data in the [Script Failure Assessment - Last 30 Days](/docs/4a4d8ffa-760b-4e17-a377-df522ff0ba34) dataview.
 

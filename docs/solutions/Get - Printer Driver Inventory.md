@@ -19,13 +19,13 @@ This solution will pull installed print driver version information into Automate
 | Content                                                                                       | Type         | Function                                                                                                                                                                                                                     |
 |-----------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) | Script       | This script will collect information about the printer drivers and store it in the [plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) table.                                                 |
-| [CWM - Automate - Custom Table - plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) | Custom Table | To store the data collected by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) script in order to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../cwa/dataviews/Printer Driver Inventory Script.md>) dataview. |
-| [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../cwa/dataviews/Printer Driver Inventory Script.md>) | Dataview     | The dataview is required to display installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information. The data is populated by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) script. |
+| [CWM - Automate - Custom Table - plugin_proval_Printer_driver](/docs/21b8a07c-6756-415e-93c0-97e7eca8dbae) | Custom Table | To store the data collected by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) script in order to feed into the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](/docs/899b54a9-001d-4d76-8735-fb436c2fc9c1) dataview. |
+| [CWM - Automate - Dataview - Printer Driver Inventory [Script]](/docs/899b54a9-001d-4d76-8735-fb436c2fc9c1) | Dataview     | The dataview is required to display installed [Printer Driver](https://www.technipages.com/definition/printer-driver) information. The data is populated by the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) script. |
 
 ## Implementation
 
 - Import the [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) script.
-- Import the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](<../cwa/dataviews/Printer Driver Inventory Script.md>) dataview.
+- Import the [CWM - Automate - Dataview - Printer Driver Inventory [Script]](/docs/899b54a9-001d-4d76-8735-fb436c2fc9c1) dataview.
 - Run the script against an online Windows computer to create the table.
 - Schedule the script to run once per week or bi-weekly against the managed Windows machines.
 

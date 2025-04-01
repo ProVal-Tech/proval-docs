@@ -19,9 +19,9 @@ The purpose of this solution is to provide the client with the ability to have A
 A new Client, Location, and Computer-Level Exclusion EDF `Disable Reboot Prompt` has been introduced. Flagging the EDF will exclude the machines at the respective level.
 
 ### Steps to import the updates:
-- Update the [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md) script from the Prosync plugin.
+- Update the [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) script from the Prosync plugin.
 - Update the [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) internal monitor from the Prosync plugin.
-- Run the script [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md) **once** on any machine with the user parameter `SetEnvironment` set to 1.
+- Run the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) **once** on any machine with the user parameter `SetEnvironment` set to 1.
 
 ![Image](../../static/img/User-Prompt-for-Reboot/image_1.png)
 
@@ -34,11 +34,11 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 | Content | Type | Function |
 |---------|------|----------|
 | [Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) | Internal Monitor | To monitor for machines the client decides need to be rebooted and issue a script to prompt the user. |
-| [Script - User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md) | Script | To physically handle the reboot prompting and execution. |
+| [Script - User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) | Script | To physically handle the reboot prompting and execution. |
 | [Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c) | Script | To clear all flags indicating the machine needs a reboot so they can be set again later. |
-| [Monitor - Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md). It detects the agents and triggers the script [Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c) to clear the EDFs so they can be re-triggered at another time. |
+| [Monitor - Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18) | Internal Monitor | This internal monitor is designed to detect the agents whose reboot was done by the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8). It detects the agents and triggers the script [Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c) to clear the EDFs so they can be re-triggered at another time. |
 | [Monitor - Machines with Login Bug Issue](/docs/9c3ebf70-921b-46e4-bdab-409e06e17a5f) | Internal Monitor | This internal monitor detects the agents with Login Bug Issues that have not been rebooted for more than 7 days since detection. |
-| △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with the monitor [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) to schedule the autofix script [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md). |
+| △ Custom - Autofix - Prompt for Reboot with Forced Reboot | Alert Template | This template is used with the monitor [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) to schedule the autofix script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8). |
 | △ Custom - Autofix - Reset Reboot Pending EDFs | Alert Template | This template is used with the monitor [Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18) to schedule the autofix script [Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c). |
 | △ Custom - Ticket Creation - Computer | Alert Template | This template is used with the monitor [Machines with Login Bug Issue](/docs/9c3ebf70-921b-46e4-bdab-409e06e17a5f). |
 | [Dataview - User Prompt - Reboot [Audit]](/docs/4ad38519-386a-4645-8cea-a498e0cd0e25) | Dataview | This dataview is designed to track the workings of the [User Prompt for the Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a) solution. |
@@ -51,7 +51,7 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 - Remove the monitor [Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18) (if it exists)
 - Remove the Alert Template '~Autofix - Prompt for Reboot and Force' (or whatever is assigned to the monitor presently; we will be importing a new alert template with this solution).
   - If you cannot find any alert templates configured, skip over this step.
-- Update the script [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md)
+- Update the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
 - Update the script [Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
 - Import both alert templates '△ Custom - Autofix - Reset Reboot Pending EDFs' and '△ Custom - Autofix - Prompt for Reboot with Forced Reboot'
 - Delete the Reset Reboot Pending EDFs Script Schedule on the All Agents group
@@ -71,7 +71,7 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 
 ![Image](../../static/img/User-Prompt-for-Reboot/image_3.png)
 
-2. Run the script [User Prompt - Reboot](../cwa/scripts/User%20Prompt%20-%20Reboot.md) **once** on any machine with the user parameter `SetEnvironment` set to 1:
+2. Run the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) **once** on any machine with the user parameter `SetEnvironment` set to 1:
 
 ![Image](../../static/img/User-Prompt-for-Reboot/image_1.png)
 

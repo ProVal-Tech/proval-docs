@@ -16,10 +16,10 @@ The table named: **custom_proval_computer_new_accounts** is built to store all i
 
 ## Dependencies
 
-- [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
-- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](<../../unsorted/User Management - New Local Account Audit And Disable DV, Autofix, Global.md>)  
-- [New Account Audit and Disable For Approve [Script]](https://proval.itglue.com/DOC-5078775-7695146)  
-- [User Management - Approved New User - Activate [DV, Param]](<../scripts/User Management - Approved New User - Activate DV, Param.md>)  
+- [ProVal - Submitted - New Account Detection](/docs/75f8c13f-04d5-45fd-b650-3b010353a8c0)
+- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](/docs/3b41c8a5-cebe-47bd-a829-9b3fa5701b15)  
+- [New Account Audit and Disable For Approve [Script]](/docs/fac82ae1-8f32-40b3-b9b2-a38f1a71e633)  
+- [User Management - Approved New User - Activate [DV, Param]](/docs/d3db4260-b3e9-4ec6-b422-07434a2a239d)  
 
 ## Table
 
