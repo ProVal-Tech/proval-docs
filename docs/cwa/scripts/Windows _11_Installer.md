@@ -17,7 +17,7 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
 **File Hash (SHA256)**: `2BDFE75FFE305F4DD438E82811399BFE3AA8045CE38F5A5162E9832768765237`  
-**File Hash (SHA256)**: `2A6E4342F35BC700D8614CD6ECAD57E2`  
+**File Hash (MD5)**: `2A6E4342F35BC700D8614CD6ECAD57E2`  
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
 **File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
