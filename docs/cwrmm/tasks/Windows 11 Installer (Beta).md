@@ -87,7 +87,7 @@ Search and select the `PowerShell Script` function.
 The following function will pop up on the screen:  
 ![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
 
-Paste in the following PowerShell script and leave the expected time of script execution set to `300` seconds. Click the `Save` button.  
+Paste in the following PowerShell script and leave the expected time of script execution set to `7200` seconds. Click the `Save` button.  
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
@@ -156,7 +156,7 @@ if ( '@NoReboot@' -match '1|Yes|True' ) {
 
 ![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_18.png)  
 
-#### Row 2 Function: Set Custom Field
+#### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
 ![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_19.png)  
@@ -190,4 +190,3 @@ It is suggested to run this task manually for the time being.
 ## Output
 
 - Script Log
-- Custom Field
