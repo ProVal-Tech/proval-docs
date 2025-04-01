@@ -13,7 +13,7 @@ unlisted: false
 
 This script manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The `RemoveSpecific` variable allows bypassing the PUA List to remove any installed AppxPackage.
 
-**PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
+**PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)  
 Implementation of Agnostic Content [Remove-PUA](<../../powershell/Remove-PUA.md>)
 
 ## Sample Run

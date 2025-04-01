@@ -15,7 +15,7 @@ Datto RMM Implementation of the ProVal Agnostic [Remove-PUA](</docs/powershell/R
 
 # Dependencies
 
-[Remove-PUA](https://proval.itglue.com/5078775/docs/9434539)
+[Remove-PUA](</docs/powershell/Remove-PUA.md>)
 
 # Implementation
 
