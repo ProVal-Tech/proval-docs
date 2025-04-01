@@ -25,7 +25,6 @@ This task can be executed manually against the computers present in the [Windows
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Windows 11 Upgrade RunTime](<../custom-fields/Endpoint - Windows 11 Upgrade RunTime.md>)
 - [CW RMM - Device Group - Windows 11 Compatible Machines](<../groups/Windows 11 Compatible Machines.md>)
 
 ## Variables
@@ -34,7 +33,7 @@ This task can be executed manually against the computers present in the [Windows
 |--------|---------------------------------------------------|
 | Output | Output of the previously executed PowerShell script. |
 
-#### User Parameters
+## User Parameters
 
 | Name      | Type  | Required | Description                                                 | Default Value |
 |-----------|-------|----------|-------------------------------------------------------------|---------------|
@@ -91,8 +90,70 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and leave the expected time of script execution set to `300` seconds. Click the `Save` button.  
 
 ```powershell
-( Get-Date ).ToString('yyyy-MM-dd HH:mm:ss')
+[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+
+if ( ( Get-Volume -DriveLetter $env:SystemDrive[0] ).SizeRemaining -le 20GB ) {
+    throw @"
+The Drive Space health check failed. The drive must have 20GB of free space to perform a Feature Update.
+        Current available space on $($env:SystemDrive[0]): $([math]::round($systemVolume.SizeRemaining / 1GB, 2))
+        For more information: https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=%2Fwindows%2Fdeployment%2Ftoc.json&bc=%2Fwindows%2Fdeployment%2Fbreadcrumb%2Ftoc.json#verify-disk-space
+"@
+}
+
+$free = (Get-Partition | Where-Object { $_.IsSystem } | Get-Volume).SizeRemaining / 1MB
+if ($free -gt 15) {
+    Write-Information 'Sufficient Space Available' -InformationAction Continue
+}
+$diskNumber = (Get-Partition | Where-Object { $_.IsSystem }).DiskNumber
+$style = (Get-Disk | Where-Object { $_.Number -eq $diskNumber }).PartitionStyle
+if ($style -eq 'MBR') {
+    throw @'
+15MB of free space on the System Reserved Partition (SRP) is needed for upgrading a Windows 10 to 11.
+Autofix is not recommended for MBR disks.
+Please follow the instructions provided for 'Windows 10 with GPT partition' in the this article:
+https://support.microsoft.com/en-us/topic/-we-couldn-t-update-system-reserved-partition-error-installing-windows-10-46865f3f-37bb-4c51-c69f-07271b6672ac
+'@
+}
+Write-Information 'Clearing unneeded space on the System Reserved Partition' -InformationAction Continue
+cmd.exe /c mountvol y: /s
+Get-ChildItem -Path 'Y:\EFI\Microsoft\Boot\Fonts' -Force -Recurse | Remove-Item -Force -Recurse
+cmd.exe /c mountvol y: /D
+
+$free = (Get-Partition | Where-Object { $_.IsSystem } | Get-Volume).SizeRemaining / 1MB
+if ($free -gt 15) {
+    Write-Information 'Freed Sufficient Space' -InformationAction Continue
+} else {
+    throw @'
+Failed to free up enough space on the System Reserved Partition (SRP).
+15MB of free space on the System Reserved Partition (SRP) is needed for upgrading a Windows 10 to 11.
+Please follow the instructions provided in the this article:
+https://support.microsoft.com/en-us/topic/-we-couldn-t-update-system-reserved-partition-error-installing-windows-10-46865f3f-37bb-4c51-c69f-07271b6672ac
+'@
+}
+
+$appName = 'windows-upgrader'
+$workingDirectory = "C:\ProgramData\_Automation\App\$appName"
+$filePath = "$workingDirectory\$appName.exe"
+$url = 'https://file.provaltech.com/repo/app/windows-upgrader.exe'
+
+Remove-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue
+New-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
+
+try {
+    $webClient = [System.Net.WebClient]::new()
+    $WebClient.DownloadFile( $url, $filePath )
+    Unblock-File -Path $appName -ErrorAction SilentlyContinue
+} catch {
+    throw "Failed to download the installer. Reason: $($Error[0].exception.Message)"
+}
+
+if ( '@NoReboot@' -match '1|Yes|True' ) {
+    & $filepath --noreboot
+} else {
+    & $filepath
+}
 ```
+
 ![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_18.png)  
 
 #### Row 2 Function: Set Custom Field
@@ -103,59 +164,18 @@ Add a new row by clicking the `Add Row` button.
 A blank function will appear.  
 ![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
 
-Search and select the `Set Custom Field` function.  
-![Select Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_20.png)  
+Search and select the `Script Log` function.  
+![Select Script Log](../../../static/img/Windows-11-Installer-(Beta)/image_20.png)  
+![Script Log](../../../static/img/Windows-11-Installer-(Beta)/image_21.png)  
 
-Search for `Windows 11 Upgrade RunTime` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
-![Set Custom Field](../../../static/img/Windows-11-Installer-(Beta)/image_21.png)  
-![Set Custom Field 2](../../../static/img/Windows-11-Installer-(Beta)/image_22.png)  
+The following function will pop up on the screen:  
+![Script Log Blank](../../../static/img/Windows-11-Installer-(Beta)/image_22.png)  
 
-#### Row 3 Function: PowerShell Script
+In the script log message, simply type `%output%` and click the `Save` button  
+![Script Log Set](../../../static/img/Windows-11-Installer-(Beta)/image_25.png)
 
-Add a new row by clicking the `Add Row` button.  
-![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_19.png)  
-
-A blank function will appear.  
-![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
-
-Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](../../../static/img/Windows-11-Installer-(Beta)/image_15.png)  
-![PowerShell Script Selected](../../../static/img/Windows-11-Installer-(Beta)/image_16.png)  
-
-The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
-
-Paste in the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
-
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-if ( ( Get-Volume -DriveLetter $env:SystemDrive[0] ).SizeRemaining -le 20GB ) {
-    throw @"
-The Drive Space health check failed. The drive must have 20GB of free space to perform a Feature Update.
-Current available space on $($env:SystemDrive[0]): $([math]::round($systemVolume.SizeRemaining / 1GB, 2))
-For more information: https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=%2Fwindows%2Fdeployment%2Ftoc.json&bc=%2Fwindows%2Fdeployment%2Fbreadcrumb%2Ftoc.json#verify-disk-space
-"@
-}
-$appName = 'windows-upgrader'
-$workingDirectory = "C:/ProgramData/_Automation/App/$appName"
-$filePath = "$workingDirectory/$appName.exe"
-$url = 'https://file.provaltech.com/repo/app/windows-upgrader.exe'
-New-Item -Path $workingDirectory -Force -ItemType Directory -Confirm:$false -ErrorAction SilentlyContinue | Out-Null
-try {
-    $webClient = [System.Net.WebClient]::new()
-    $WebClient.DownloadFile( $url, $filePath )
-    Unblock-File -Path $filePath -Confirm:$false -ErrorAction SilentlyContinue
-} catch {
-    throw "Failed to download the installer. Reason: $($Error[0].exception.Message)"
-}
-if ( '@NoReboot@' -match '1|Yes|True' ) {
-    & $filepath --noreboot
-} else {
-    & $filepath
-}
-```
-
-![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_23.png)  
+Click the `Save` button at the top right corner of the screen to save the task.  
+![Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_23.png)  
 
 Click the `Save` button at the top right corner of the screen to save the task.
 
@@ -171,6 +191,3 @@ It is suggested to run this task manually for the time being.
 
 - Script Log
 - Custom Field
-
-
-

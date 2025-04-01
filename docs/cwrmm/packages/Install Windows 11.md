@@ -20,43 +20,39 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 
 ## Package Creation
 
-1. Navigate to `Endpoints` > `Packages`.
-   ![](../../../static/img/Install-Windows-11/image_2.png)
+1. Navigate to `Endpoints` > `Packages`.  
+   ![Image1](../../../static/img/Install-Windows-11/image_2.png)
 
-2. Go to `Policy Groups` and select the `OS Patching Desktop` group.
-   ![](../../../static/img/Install-Windows-11/image_3.png)
+2. Go to `Policy Groups` and select the `OS Patching Desktop` group.  
+   ![Image2](../../../static/img/Install-Windows-11/image_3.png)
 
-3. Click the `Add Existing Device Group` button.
-   ![](../../../static/img/Install-Windows-11/image_4.png)
+3. Click the `Add Existing Device Group` button.  
+   ![Image3](../../../static/img/Install-Windows-11/image_4.png)
 
-4. This screen will appear.
-   ![](../../../static/img/Install-Windows-11/image_5.png)
+4. This screen will appear.  
+   ![Image4](../../../static/img/Install-Windows-11/image_5.png)
 
 5. **Policy Group Name:** `Install Windows 11`  
    **Description:** `Enable Windows 11 installation for compatible Windows 10 computers.`  
-   ![](../../../static/img/Install-Windows-11/image_6.png)
+   ![Image5](../../../static/img/Install-Windows-11/image_6.png)
 
 6. Search and select the [Upgrade Enabled Windows 11 Compatible Machines](<../groups/Upgrade Enabled Windows 11 Compatible Machines.md>) Device group.
-   ![](../../../static/img/Install-Windows-11/image_7.png)
+   ![Image6](../../../static/img/Install-Windows-11/image_7.png)  
 
-7. Click the `Assign` button.
-   ![](../../../static/img/Install-Windows-11/image_8.png)
+7. Click the `Assign` button.  
+   ![Image7](../../../static/img/Install-Windows-11/image_8.png)
 
-8. This screen will appear.
-   ![](../../../static/img/Install-Windows-11/image_9.png)
+8. This screen will appear.  
+   ![Image8](../../../static/img/Install-Windows-11/image_9.png)
 
-9. Select the [Install Windows 11](<../policies/Install Windows 11.md>) policy and click the `Assign` button.
-   ![](../../../static/img/Install-Windows-11/image_10.png)
+9. Select the [Install Windows 11](<../policies/Install Windows 11.md>) policy and click the `Assign` button.  
+   ![Image9](../../../static/img/Install-Windows-11/image_10.png)
 
-10. ![](../../../static/img/Install-Windows-11/image_11.png)
+10. ![Image10](../../../static/img/Install-Windows-11/image_11.png)
 
-11. Click the `Save` button to save the `Policy Group`.
-   ![](../../../static/img/Install-Windows-11/image_12.png)
+11. Click the `Save` button to save the `Policy Group`.  
+   ![Image11](../../../static/img/Install-Windows-11/image_12.png)
 
 ## Completed Policy Group
 
-![](../../../static/img/Install-Windows-11/image_13.png)
-
-
-
-
+![Image12](../../../static/img/Install-Windows-11/image_13.png)

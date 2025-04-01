@@ -11,17 +11,17 @@ unlisted: false
 
 ## Summary
 
-This document provides a policy to enable Windows 11 installation for Windows 10 machines.
+Policy to enable Windows 11 installation for Windows 10 machines.
 
 ## Policy Creation
 
-1. Navigate to `Endpoints` > `Policies`.
+1. Navigate to `Endpoints` > `Policies`.  
    ![Image](../../../static/img/Install-Windows-11/image_14.png)
 
-2. Click the `Add Policy` button.
+2. Click the `Add Policy` button.  
    ![Image](../../../static/img/Install-Windows-11/image_15.png)
 
-3. This screen will appear.
+3. This screen will appear.  
    ![Image](../../../static/img/Install-Windows-11/image_16.png)
 
 4. **Type:** `OS Patching Desktop`  
@@ -30,23 +30,18 @@ This document provides a policy to enable Windows 11 installation for Windows 10
 
 5. ![Image](../../../static/img/Install-Windows-11/image_18.png)
 
-6. Enable the `OS Patching Automation`.
+6. Enable the `OS Patching Automation`.  
    ![Image](../../../static/img/Install-Windows-11/image_19.png)
 
-7. Leave the other options in the `Patch Classifications` section set to `Do not deploy` and enable the `OS Upgrade` option.
+7. Leave the other options in the `Patch Classifications` section set to `Do not deploy` and enable the `OS Upgrade` option.  
    ![Image](../../../static/img/Install-Windows-11/image_20.png)
 
-8. Make the necessary changes to the rest of the options as required by the partner.
+8. Make the necessary changes to the rest of the options as required by the partner.  
    ![Image](../../../static/img/Install-Windows-11/image_21.png)
 
-9. Click the `Save` button to save the policy.
+9. Click the `Save` button to save the policy.  
    ![Image](../../../static/img/Install-Windows-11/image_22.png)
-
-![Image](../../../static/img/Install-Windows-11/image_23.png)
 
 ## Completed Policy
 
-
-
-
-
+![Image](../../../static/img/Install-Windows-11/image_23.png)
