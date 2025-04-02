@@ -15,7 +15,6 @@ Note: If the agent is a Domain Controller, it will audit the domain accounts; ot
 
 ## Sample Run
 ![Sample Run 1](<../../../static/img/docs/Get Specific-Multiple User Audit/image.png>)
-![Sample Run 2](<../../../static/img/docs/Get Specific-Multiple User Audit/image-1.png>)
 ![Sample Run 3](<../../../static/img/docs/Get Specific-Multiple User Audit/image-2.png>)
 ![Sample Run 4](<../../../static/img/docs/Get Specific-Multiple User Audit/image-3.png>)
 
