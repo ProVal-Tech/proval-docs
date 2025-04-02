@@ -58,7 +58,7 @@ To implement this script, please create a new "PowerShell" style script in the s
 - **Description:** This script disables and uninstalls the MSRT from the endpoint and provided option to creates ticket if failure detected. Based on the output, it sets the custom field `MSRT Scanning Result`.
 - **Category:** Security
 
-![Task Details]({657F5175-3599-4BCA-BFCE-0D3454EA2931}.png)
+![Task Details](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7BEDCA08-F397-4065-B48F-F794BBC9FCDD}.png>)
 
 ### Script
 
@@ -253,7 +253,7 @@ It is suggested to run the Task every 2 hours against the group [Malicious Softw
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.
 
-![Scheduled Task](image-1.png)
+![Scheduled Task](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{967AFD20-C102-4D7B-AA2C-64EC5198B43B}.png>)
 
 ![Scheduled Task Continued](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7D64A301-7B5B-4740-85C3-84325E447BE7}.png>)
 
