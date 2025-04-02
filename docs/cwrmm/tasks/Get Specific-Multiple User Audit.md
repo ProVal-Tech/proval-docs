@@ -42,6 +42,22 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Task
 
+## Parameter
+
+Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
+
+![Add Parameter](<../../../static/img/docs/Get Specific-Multiple User Audit/{058061B3-5330-41CB-8660-5946EAB2F7C2}.png>)
+
+This screen will appear.  
+![Parameter Screen Image](<../../../static/img/docs/Get Specific-Multiple User Audit/{460F4D51-9C66-4ECD-AEF4-ADE2F4E6E949}.png>)
+
+- Set `UserList_To_Audit` in the `Parameter Name` field.
+- Enable the `Required Field` button.
+- Select `Text String` from the `Parameter Type` dropdown menu.
+- Click the `Save` button.
+
+![Parameter Setup Image](<../../../static/img/docs/Get Specific-Multiple User Audit/image-4.png>)
+
 ### Row 1 Function: PowerShell Script
 
 Add a new `Add Row` button.
