@@ -26,7 +26,7 @@ Note: If the agent is a Domain Controller, it will audit the domain accounts; ot
 
 | Name              | Example  | Accepted Values       | Required | Default | Type       | Description                                                                                      |
 |-------------------|----------|-----------------------|----------|---------|------------|--------------------------------------------------------------------------------------------------|
-| UserList_To_Audit | Test,Pro | Test, Test,Pro,System | True     | Test    | Text String| This parameter should be filled with a pattern to fetch the user list matching the pattern. Multiple user lists can be provided, separated by commas, as shown in the accepted values. |
+| UserList_To_Audit | Test,Pro | Test, Test,Pro,System | True     |     | Text String| This parameter should be filled with a pattern to fetch the user list matching the pattern. Multiple user lists can be provided, separated by commas, as shown in the accepted values. |
 
 ## Task Creation
 Create a new `Script Editor` style script in the system to implement this task.
