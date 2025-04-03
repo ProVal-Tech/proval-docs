@@ -16,7 +16,7 @@ This dataview provides information about an agent's check-in status in CWA and w
 
 ## Dependencies
 
-- [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+- [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 - [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
 - [Script - Automate Agent - Auto Repair*](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
 

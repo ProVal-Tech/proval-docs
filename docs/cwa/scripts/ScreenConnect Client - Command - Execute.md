@@ -22,7 +22,7 @@ This script will execute a command via the default command-line parser on the ta
 
 ## Dependencies
 
-[CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+[CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 #### User Parameters
 

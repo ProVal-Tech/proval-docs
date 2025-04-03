@@ -24,7 +24,7 @@ It will also help to update the dependent DataView and custom table.
 ## Dependencies
 
 - [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](/docs/3b41c8a5-cebe-47bd-a829-9b3fa5701b15)  
-- [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)  
+- [ProVal - Submitted - New Account Detection](/docs/75f8c13f-04d5-45fd-b650-3b010353a8c0)  
 - [New Account Audit and Disable For Approve [Script]](/docs/fac82ae1-8f32-40b3-b9b2-a38f1a71e633)  
 - [New User Account Audit Table](/docs/64d9813f-2eba-4448-8d78-c9a001979ee9)  
 

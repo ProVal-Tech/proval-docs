@@ -16,7 +16,7 @@ This document contains information about Windows 10 build information and patch 
 
 ## Dependencies
 
-[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](https://proval.itglue.com/DOC-5078775-8194868) (table)
+[SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) (table)
 
 ## Columns
 

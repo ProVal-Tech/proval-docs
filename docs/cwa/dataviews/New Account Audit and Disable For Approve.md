@@ -16,8 +16,8 @@ This dataview shows newly created accounts. It can be used for auditing accounts
 
 ## Dependencies
 
-- [ProVal - Submitted - New Account Detection](https://proval.itglue.com/DOC-5078775-7695147)
-- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](https://proval.itglue.com/DOC-5078775-7695148)
+- [ProVal - Submitted - New Account Detection](/docs/75f8c13f-04d5-45fd-b650-3b010353a8c0)
+- [User Management - New Local Account Audit And Disable [DV, Autofix, Global]](/docs/3b41c8a5-cebe-47bd-a829-9b3fa5701b15)
 - [New User Account Audit Table](/docs/64d9813f-2eba-4448-8d78-c9a001979ee9)
 - [User Management - Approved New User - Activate [DV, Param]](/docs/d3db4260-b3e9-4ec6-b422-07434a2a239d)
 

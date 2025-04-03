@@ -16,7 +16,7 @@ The dataview tracks the functioning of the [User Prompt for Reboot](/docs/32d225
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
+- [EPM - Windows Configuration - Script - User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
 - [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
 
 ## Columns

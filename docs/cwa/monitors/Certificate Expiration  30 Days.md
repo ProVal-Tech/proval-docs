@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This monitor looks at the proval_plugin_certs table (generated through the [Import SSL Certificates into CWA [Custom Table]](https://proval.itglue.com/DOC-5078775) script) for any SSL certificates that have an expiration date of fewer than 30 days. This solution is effective for catching machines that may have been missed and do not have active reminders in place for certificate renewals. Additionally, the difference between the certification addition and expiration should be at least 30 days to trigger an alert.
+This monitor looks at the proval_plugin_certs table (generated through the Import SSL Certificates into CWA [Custom Table] script) for any SSL certificates that have an expiration date of fewer than 30 days. This solution is effective for catching machines that may have been missed and do not have active reminders in place for certificate renewals. Additionally, the difference between the certification addition and expiration should be at least 30 days to trigger an alert.
 
 **Alert Template:** △ Custom - Ticket Creation - Computer
 
 ## Implementation
 
-To exclude self-signed, Microsoft-generated certificates, and any certificate with a GUID in the Subject, uncomment the following lines in the Additional Condition. Before adding any exclusions, it is recommended to review the [EPM - Network - Dataview - SSL Certificate Audit](https://proval.itglue.com/5078775/docs/9382198) dataview to ensure that enabling these exclusions will not omit any important certificates.
+To exclude self-signed, Microsoft-generated certificates, and any certificate with a GUID in the Subject, uncomment the following lines in the Additional Condition. Before adding any exclusions, it is recommended to review the [EPM - Network - Dataview - SSL Certificate Audit](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d) dataview to ensure that enabling these exclusions will not omit any important certificates.
 
 ![Image](../../../static/img/Certificate-Expiration--30-Days/image_1.png)
 

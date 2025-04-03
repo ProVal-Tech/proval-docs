@@ -30,7 +30,7 @@ The purpose of this solution is to detect machines that have been offline in Aut
 
 | Content | Type | Function |
 | ------- | ---- | -------- |
-| [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217) | Configuration | A how-to document that explains how to configure RMM+ and ensure this content works as intended. |
+| [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) | Configuration | A how-to document that explains how to configure RMM+ and ensure this content works as intended. |
 | [Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf) | Custom Table | The custom table stores information about agents repaired by the [Script - Automate Agent - Auto Repair*](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) |
 | [Script - Track Repaired Agents](/docs/1cfbe430-0cbd-4abf-861d-4884632b7705) | Sub-Script | Stores information about the agents repaired by the [Script - Automate Agent - Auto Repair*](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) into the [Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf) custom table. |
 | [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458) | Sub-Script | Determines whether the computer is online in the ScreenConnect portal. |
@@ -41,7 +41,7 @@ The purpose of this solution is to detect machines that have been offline in Aut
 ## Implementation
 
 1. Ensure RMM+ is configured correctly using the following documentation:
-   - [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+   - [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 2. If the [Internal Monitor - No Checkin for More Than 30 Days*](/docs/4bc06cc4-3b78-452a-b602-063e57221234) already exists and is running the [Script - Automate Agent - Auto Repair*](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) as an auto-fix, please delete the monitor from the system before proceeding to the next step to ensure you get the latest content installed.
    - Take note of the ticket category before deleting it so we can keep it the same between updates.
@@ -69,7 +69,7 @@ The purpose of this solution is to detect machines that have been offline in Aut
 
 7. Go to system properties and set the required values for the `Agent_Repair_Duplicate_Check_Enabled` and `Agent_Repair_Re_Install_Enabled` properties. Check the `System Properties` table of the [script's document](https://proval.itglue.com/5078775/docs/7761441) for more information on these properties.
 
-8. Pick a random computer that is online in both Automate and ScreenConnect, and debug the [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458) against that computer. Check the value for the internal variable `%pluginresult%`; it should be a positive integer value. If it is not returning a positive integer value and returns the value for the user variable `@Online@` equals `-2`, then the [RMM+ solution](https://proval.itglue.com/5078775/docs/9770217) is not properly configured and needs to be rechecked (Step 1).
+8. Pick a random computer that is online in both Automate and ScreenConnect, and debug the [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458) against that computer. Check the value for the internal variable `%pluginresult%`; it should be a positive integer value. If it is not returning a positive integer value and returns the value for the user variable `@Online@` equals `-2`, then the [RMM+ solution](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) is not properly configured and needs to be rechecked (Step 1).
 
 9. Configure the solution as follows:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:

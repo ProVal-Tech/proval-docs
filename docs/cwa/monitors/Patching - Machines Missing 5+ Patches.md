@@ -22,7 +22,14 @@ This monitor is designed to work with the '~Custom - Ticket Creation - Computer'
 
 CW Automate must have the "new" patch manager enabled. This data uses the ComputerPatchComplianceStats table, which is a calculated metrics table. This process typically runs once per day, so the data may need to be updated before the monitor will display accurate information.
 
-To force update this table, please follow this guide: [CW Automate - Force Update Patch Reporting Statistics](https://proval.itglue.com/DOC-5078775-8038412).
+To force update this table:
+1. From the Control Center window, click on "Help" and then "Server Status". This will open up the server status menu. In the server status menu, there are several available buttons along the bottom of the window.
+
+![image](/static/img/127ea64b-5538-4fd4-92fb-143ff6ce1216/image.png)
+
+2. Click the option for "Do Patch Report Calculations" - this command will tell Automate to run the stored procedure to update the patching metrics. This process may take a few minutes to update the required tables.
+
+![image](/static/img/127ea64b-5538-4fd4-92fb-143ff6ce1216/image2.png)
 
 [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 

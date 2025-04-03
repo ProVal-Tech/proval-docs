@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This function script is called from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142).  
+This function script is called from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](/docs/3e12ac9e-d141-4011-8ae3-bd0cebe53fc6).  
 Its function is to deny those patches present in the [plugin_proval_denied_patches](/docs/9ee3657f-dff8-4599-a4c3-68ca3ba171f4) table.
 
 ## Sample Run
@@ -22,21 +22,21 @@ This is a function script and cannot be executed directly on the computers.
 
 ## Dependencies
 
-- [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142)
+- [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](/docs/3e12ac9e-d141-4011-8ae3-bd0cebe53fc6)
 - [plugin_proval_denied_patches](/docs/9ee3657f-dff8-4599-a4c3-68ca3ba171f4)
 
 ## Variables
 
 | Name               | Description                                                                                                         |
 |--------------------|---------------------------------------------------------------------------------------------------------------------|
-| %sqlHOTFIXID%      | HotFixID passed down from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script. |
+| %sqlHOTFIXID%      | HotFixID passed down from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](/docs/3e12ac9e-d141-4011-8ae3-bd0cebe53fc6) script. |
 | @Count@            | Number of distinct OS for %sqlHOTFIXID%.                                                                          |
 | @sqlOS@            | Operating System of the %sqlHOTFIXID%.                                                                            |
 | @ApprovalPolicyID@ | ID of the default approval policy.                                                                                 |
 
 ## Process
 
-Step 1: Finds the distinct operating systems for the HotFixID passed down from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](https://proval.itglue.com/5078775/docs/9563142) script. Fetches all the operating systems for the denied KBID that is available in the environment.  
+Step 1: Finds the distinct operating systems for the HotFixID passed down from [Deny Patches in Default Policy From Centralized ITGlue KBIDs - Flexible Asset](/docs/3e12ac9e-d141-4011-8ae3-bd0cebe53fc6) script. Fetches all the operating systems for the denied KBID that is available in the environment.  
 Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 
 ## Output

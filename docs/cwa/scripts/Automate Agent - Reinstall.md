@@ -25,7 +25,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 ## Dependencies
 
 - LTPoSH Community Module ([https://bit.ly/LTPoSH](https://bit.ly/LTPoSH))
-- [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+- [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 - [CWM - Control - Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
 - [CWM - Control - Script - ScreenConnect Client - Command - Execute*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
 - Agent - Generate Location Installer URL*

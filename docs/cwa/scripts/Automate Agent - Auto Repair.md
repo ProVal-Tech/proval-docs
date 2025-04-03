@@ -22,7 +22,7 @@ Set the System Property `Agent_Repair_Re_Install_Enabled` to `0` to disable the 
 
 ## Requirements
 
-**[RMM+ solution](https://proval.itglue.com/5078775/docs/9770217)** should be properly configured in the environment.
+**[RMM+ solution](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)** should be properly configured in the environment.
 
 ## Sample Run
 
@@ -39,7 +39,7 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 ## Dependencies
 
 - **[Monitor - No Checkin for More Than 30 Days](/docs/4bc06cc4-3b78-452a-b602-063e57221234)**
-- **[CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)**
+- **[CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)**
 
 ## Sub Scripts
 

@@ -16,11 +16,11 @@ This dataview displays the FileVault Status for the MAC computers present in the
 
 ## Requirements
 
-1. The "[CWM - Automate - Script - OSX - File Vault Audit [DV]](https://proval.itglue.com/5078775/docs/10027994)" script must be scheduled to run daily to keep the dataview up to date.
+1. The "[CWM - Automate - Script - OSX - File Vault Audit [DV]](/docs/6c8b7535-ef72-4635-a968-60261dea67de)" script must be scheduled to run daily to keep the dataview up to date.
 
 ## Dependencies
 
-[CWM - Automate - Script - OSX - File Vault Audit [DV]](https://proval.itglue.com/5078775/docs/10027994)
+[CWM - Automate - Script - OSX - File Vault Audit [DV]](/docs/6c8b7535-ef72-4635-a968-60261dea67de)
 
 ## Columns
 

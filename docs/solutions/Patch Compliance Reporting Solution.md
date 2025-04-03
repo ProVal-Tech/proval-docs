@@ -28,7 +28,7 @@ To provide clients with professional-looking patch management reports that they 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) | Script | This script creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](https://proval.itglue.com/5078775/docs/17889366) functions correctly. |
+| [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) | Script | This script creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](https://proval.itglue.com/5078775/docs/17889366) functions correctly. |
 
 ### Additional Content
 
@@ -40,17 +40,17 @@ To provide clients with professional-looking patch management reports that they 
 
 These reports are dependent on the following items:
 - Report Center being installed and configured
-- [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
-- [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104)
+- [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526)
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2)
 
 ## Implementation
 
-1. Ensure the [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104) is imported and up to date in the environment. The audit script must be running regularly for this report to show accurate data.
+1. Ensure the [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) is imported and up to date in the environment. The audit script must be running regularly for this report to show accurate data.
 
 2. Import the following script from the ProSync Plugin:
-   - [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
+   - [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526)
 
-3. Run the [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) on any machine to create the views necessary for this solution. After running the script once, it can be deleted from the environment.
+3. Run the [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) on any machine to create the views necessary for this solution. After running the script once, it can be deleted from the environment.
 
 4. Follow the instructions outlined in the [Patch Compliance Reporting SQL Import Attachment](https://proval.itglue.com/5078775/docs/17898232) document to import the reports into the report center.
 

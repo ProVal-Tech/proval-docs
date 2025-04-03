@@ -20,6 +20,6 @@ Import the file using **System** → **General** → **Import** → **SQL File**
 
 ![Image](../../../static/img/Patch-Compliance-Reporting-SQL-Import-Attachment/image_1.png)
 
-**Note:** Import the SQL file only after importing the [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696) and running it once.
+**Note:** Import the SQL file only after importing the [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) and running it once.
 ## Attachments
 [PatchComplianceReports.sql](<../../../static/attachments/itg/17898232/PatchComplianceReports.sql>)

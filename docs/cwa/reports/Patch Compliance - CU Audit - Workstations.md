@@ -19,7 +19,7 @@ The Patch Compliance - CU Audit - Workstations report displays a comprehensive s
 This report is dependent on the following items:
 
 - Report Center being installed and configured
-- [Script - Create Views for Patch Compliance Report](https://proval.itglue.com/5078775/docs/17897696)
-- [Solution - Latest Installed Cumulative Update](https://proval.itglue.com/5078775/docs/12850104)
+- [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526)
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2)
 
 

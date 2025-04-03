@@ -23,6 +23,6 @@ The purpose of this document is to identify machines where IPv6 is enabled on an
 ## Implementation
 
 Use the following document as a guide to implement this role:  
-[https://proval.itglue.com/5078775/docs/17883447](https://proval.itglue.com/5078775/docs/17883447)
+[Create a PowerShell-based Role](/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990)
 
 

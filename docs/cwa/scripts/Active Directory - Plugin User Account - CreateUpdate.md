@@ -84,7 +84,7 @@ Additionally, there is an option available in the script to set the password as 
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 ## Variables
 

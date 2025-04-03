@@ -15,7 +15,7 @@ unlisted: false
 This script will return a variable (`@Online@`) as 0, 1, -2, -3, or -4.  
 - **0**: Offline  
 - **1**: Determining if the target machine is online in Control  
-- **-2**: The [CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217) is broken in the environment  
+- **-2**: The [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) is broken in the environment  
 - **-3**: The Machine Error can be anything  
 - **-4**: The Agent GUID was not set appropriately to 32 characters excluding the (-) lengths, i.e., 4.
 
@@ -26,7 +26,7 @@ An email will be sent to `Alerts@provaltech.com` if the RMMPlus solution is not 
 **Body**:
 
 RMM_Plus is not properly configured for %redirhostname%. Please get this fixed as soon as you can.  
-Reference: [https://proval.itglue.com/5078775/docs/9770217](https://proval.itglue.com/5078775/docs/9770217)
+Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 **Time Saved by Automation**: 10 Minutes
 
@@ -36,7 +36,7 @@ Reference: [https://proval.itglue.com/5078775/docs/9770217](https://proval.itglu
 
 ## Dependencies
 
-[CW RMM+ Plugin Configuration](https://proval.itglue.com/5078775/docs/9770217)
+[CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 #### System Properties
 

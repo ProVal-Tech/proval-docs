@@ -16,7 +16,7 @@ This script is designed to be used with the monitor [EPM - Windows Configuration
 
 ## Sample Run
 
-This script clears the EDFs used in the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) and the script [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644).
+This script clears the EDFs used in the monitor [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) and the script [EPM - Windows Configuration - Script - User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8).
 
 ![Sample Run Image](../../../static/img/Reset-Reboot-Pending-EDFs/image_1.png)
 
@@ -25,7 +25,7 @@ This script clears the EDFs used in the monitor [EPM - Windows Configuration - M
 The following items are dependent on this script:
 
 - [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4)
-- [EPM - Windows Configuration - Script - User Prompt - Reboot](https://proval.itglue.com/DOC-5078775-9076644)
+- [EPM - Windows Configuration - Script - User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
 
 ## Process
 

@@ -29,7 +29,7 @@ This document outlines the creation of all necessary items in the database to en
 
 There are two prerequisites that need to be installed for this script to function correctly:
 
-1. Script Added to Environment: [AD - Test for Weak Passwords](https://proval.itglue.com/DOC-5078775-9492875)
+1. Script Added to Environment: [AD - Test for Weak Passwords](/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724)
 2. The Active Directory Plugin needs to be installed and configured.
 
 Other items depend on this script being executed to function, which are listed below:
