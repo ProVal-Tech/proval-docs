@@ -87,12 +87,12 @@ This solution automates the deployment of a standard power plan to Windows machi
 #### Standardize
 
 1. **Follow these steps only if instructed to do so**: More details are provided in the **`Automation`** section of the [Power Plan - Set/Create](<../cwa/scripts/Power Plan - SetCreate.md>) script's document.  
-   You can start by downloading the `ProVal_-_High_Performance.csv` found in the linked document above and placing it on the LTShare under the folder `//LTShare//Transfer//PowerPlan`.  
+   You can start by downloading the `ProVal_-_High_Performance.csv` found in the linked document above and placing it on the LTShare under the folder `\LTShare\Transfer\PowerPlan`.  
    ![Image](../../static/img/Power-Plan-Management/image_3.png)
 
 2. Next, navigate to System Dashboard → Config → Additional Field Defaults → Clients → PowerPlan
    - Fill out the PowerPlan Configuration File to show 'ProVal_-_High_Performance'
-   - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `\\<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
+   - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
    - **IMPORTANT** **Do NOT fill out the PowerPlan Automation EDF**. That will need to be filled out by the partner on a per-client basis.  
    ![Image](../../static/img/Power-Plan-Management/image_4.png)
 
