@@ -90,6 +90,10 @@ A blank function will appear.
 
 ### Row 1 Function: Set Pre-defined Variable
 
+```
+Note: Before setting the Pre-defined Variable please create the custom fields [Rename-Machine custom fields](</docs/cwrmm/custom-fields/Rename-Machine Custom fields.md>)
+```
+
 Select function "Set Pre-Defined Variable"
 
 ![Set Pre-defined Variable](<../../../static/img/docs/Windows - System - Rename/{9310FFA1-E94C-4265-8669-44B4430CE151}.png>)
@@ -169,6 +173,7 @@ $WorkingDirectory = "C:\ProgramData\_automation\script\Rename-Machine"
 $PS1Path = "$WorkingDirectory\Rename-Machine.ps1"
 $PS1Log = "$WorkingDirectory\Rename-Machine-log.txt"
 $PS1ErrorLog = "$WorkingDirectory\Rename-Machine-error.txt"
+$Reboot = '@Reboot@'
 #endregion
 
 #region Setup - Folder Structure
@@ -199,37 +204,9 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
-#region Execution
-$Output = & $PS1Path -NewName '@NewName@' -Username '@Username@' -Password '@Password@'
-#endregion
-if (Test-Path -Path $PS1ErrorLog) {
-    $errorcontent = Get-Content -path $PS1ErrorLog
-    Write-Error -Message "The script encountered an error when running the process. Refer to the log: $errorcontent."
-    return
-}
-$timeout = 60
-$elapsed = 0
-while ($elapsed -lt $timeout -and !(Test-Path -Path $PS1Log)) {
-    Start-Sleep -Seconds 1
-    $elapsed++
-}
-
-if (Test-Path -Path $PS1Log) {
-    $content = Get-Content -path $PS1Log
-    $content[ $($($content.IndexOf($($content -match 'Rename-Machine$')[-1])) + 1)..$($Content.length - 1) ]
-    Write-Output "The system renamed successfully"
-}
-else {
-    Write-Error -Message "The log file was not created within the expected time."
-}
-if($Reboot -eq 'True' -or $Reboot -eq 1) {
-    Write-Output 'Rebooting the agent for the system rename'
-    shutdown -r -t 00
-}
 ```
 
-![PowerShell Script Image](<../../../static/img/docs/Windows - System - Rename/{0E6A478E-7B0B-4395-8C0A-C0FE7CBD813D}.png>)
+![PowerShell Script 1](<../../../static/img/docs/Windows - System - Rename/{6A770FE1-D959-40BB-A551-3A67753A406A}.png>)
 
 
 ### Row 5: Logic: If/Then
@@ -254,11 +231,11 @@ Add a new row in the IF section and select `Script Exit`.
 
 ![Script Exit](<../../../static/img/docs/Windows - System - Rename/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.png>)
 
-In the script exit message, simply type `The system rename failed. Refer to the logs: %output%`.
+In the script exit message, simply type `The Rename-Machine.ps1 download failed. Refer to the logs: %output%`.
 
-![Script Exit Message](<../../../static/img/docs/Windows - System - Rename/{A75EA08E-EB31-4D44-8D68-69EB82FDDE66}.png>)
+![Script Exit Message](<../../../static/img/docs/Windows - System - Rename/{84F02F7A-B1A3-400C-8787-470C7A2AB56E}.png>)
 
-### Row 6 Function: Script Log
+### Row 6 Function: Command Prompt (CMD) Script
 
 Add a new row by clicking the Add Row button.
 
@@ -268,7 +245,29 @@ A blank function will appear.
 
 ![Blank Function](<../../../static/img/docs/Windows - System - Rename/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
 
-Search and select the `Script Log` function.
+Search and select the `Command Prompt` function.
+
+![Command Prompt (CMD) Script](<../../../static/img/docs/Windows - System - Rename/image-7.png>)
+
+Paste the following Command and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
+
+```
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "& 'C:\ProgramData\_automation\script\Rename-Machine\Rename-Machine.ps1' -NewName '@NewName@' -Username '@Username@' -Password '@Password@'"
+```
+
+![Command Prompt Code](<../../../static/img/docs/Windows - System - Rename/{5B4A4BBC-98E8-4D4C-B204-EEBC325D9FC6}.png>)
+
+### Row 7 Function: Script log
+
+Add a new row by clicking the Add Row button.
+
+![Add Row](<../../../static/img/docs/Windows - System - Rename/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+
+A blank function will appear.
+
+![Blank Function](<../../../static/img/docs/Windows - System - Rename/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
+
+Search and select `Script Log`
 
 ![Script Log Selection](../../../static/img/Remove-Font/image_19.png)  
 
@@ -278,16 +277,113 @@ The following function will pop up on the screen:
 
 In the script log message, simply type `The system was renamed from @CurrentName@ to the @NewName@. Refer to the logs: %output%` and click the `Save` button.
 
-![ScripLog Message](<../../../static/img/docs/Windows - System - Rename/{16BCF376-5E8A-45A7-8931-4DB5FBD82F1C}.png>)
+![Script log Message 1](<../../../static/img/docs/Windows - System - Rename/{752892B3-D547-48FF-8C58-4806EC9884A4}.png>)
 
-Click the `Save` button at the top-right corner of the screen to save the script.
+### Row 8 Function: PowerShell Script
+
+Add a new row by clicking the Add Row button.
+
+![Add Row](<../../../static/img/docs/Windows - System - Rename/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+
+Search and select the `PowerShell Script` function.
+
+![PowerShell Function](<../../../static/img/docs/Windows - System - Rename/{E7716EE6-0D0F-4D95-86B7-04C64CEC4A97}.png>)
+
+The following function will pop up on the screen:
+
+![PowerShell Popup](<../../../static/img/docs/Windows - System - Rename/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.png>)
+
+Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
+
+```
+$WorkingDirectory = 'C:\ProgramData\_automation\script\Rename-Machine'
+$PS1Log = "$WorkingDirectory\Rename-Machine-log.txt"
+$PS1ErrorLog = "$WorkingDirectory\Rename-Machine-error.txt"
+$Reboot = '1'
+if (Test-Path -Path $PS1ErrorLog) {
+    $errorcontent = Get-Content -path $PS1ErrorLog
+    Write-Error -Message "An error occurred: The script encountered an error when running the process. Refer to the log: $errorcontent."
+    return
+}
+$timeout = 60
+$elapsed = 0
+while ($elapsed -lt $timeout -and !(Test-Path -Path $PS1Log)) {
+    Start-Sleep -Seconds 1
+    $elapsed++
+}
+
+if (Test-Path -Path $PS1Log) {
+    $content = Get-Content -path $PS1Log
+    $content[ $($($content.IndexOf($($content -match 'Rename-Machine$')[-1])) + 1)..$($Content.length - 1) ]
+    Write-Output "The system renamed successfully. Reboot is required to reflect the new name i.e. @NewName@"
+}
+else {
+    Write-Error -Message "An error occurred: The log file was not created within the expected time."
+}
+if ($Reboot -eq 'True' -or $Reboot -eq 1) {
+    Write-Output 'Rebooting the agent for the system rename'
+    shutdown -r -t 00
+}
+```
+
+![PowerShell Script 2](<../../../static/img/docs/Windows - System - Rename/{22F3D981-636F-4FB1-80B9-5601CC3532D7}.png>)
+
+### Row 9 Logic: If/Then
+
+Add a new logic in the Else section and select `If/Then`.
+
+![If/Then](<../../../static/img/docs/Windows - System - Rename/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.png>)
+
+![If/Then Popup](<../../../static/img/docs/Windows - System - Rename/{04226646-47A0-4BD8-85B6-C9F750B97AF5}.png>)
+
+### Row 9a: Condition: Output Contains
+
+In the IF part, enter `An error occurred` in the right box of the "Output Does Not Contains" part.
+
+![Condition](<../../../static/img/docs/Windows - System - Rename/{D1A3F413-991F-408D-BBCB-838D49E180F9}.png>)
+
+### Row 9b: Function: Script Exit
+
+Add a new row in the IF section and select `Script Exit`.
+
+![Add row](<../../../static/img/docs/Windows - System - Rename/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+
+![Script Exit](<../../../static/img/docs/Windows - System - Rename/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.png>)
+
+In the script exit message, simply type `The error was detected in renaming the machine. Refer to the logs: %Output%`.
+
+![Script Exit Message 2](<../../../static/img/docs/Windows - System - Rename/{54BAFEDC-0015-4611-B3AC-627E0294263D}.png>)
+
+### Row 10: Function: Script Log
+
+Add a new row by clicking the Add Row button.
+
+![Add Row](<../../../static/img/docs/Windows - System - Rename/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+
+A blank function will appear.
+
+![Blank Function](<../../../static/img/docs/Windows - System - Rename/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
+
+Search and select `Script Log`
+
+![Script Log Selection](../../../static/img/Remove-Font/image_19.png)  
+
+The following function will pop up on the screen:
+
+![Script Log Popup](../../../static/img/Remove-Font/image_20.png)  
+
+In the script log message, simply type `%output%` and click the `Save` button.
+
+![Script log Message 2](<../../../static/img/docs/Windows - System - Rename/{986EF4C4-9C56-4EB4-A3BA-0CCD5308D21C}.png>)
+
+Click `Save` at the top right corner of the script
 
 ![Save Script](<../../../static/img/docs/Windows - System - Rename/image-6.png>)
 
 ## Completed Task
 
-![Complete Task](<../../../static/img/docs/Windows - System - Rename/{34F7EE32-FFB9-41E1-A0EC-57B121C08BCD}.png>)
-![Complete Task Continue](<../../../static/img/docs/Windows - System - Rename/{999EFA73-C9E5-4DE4-992E-040A94E8558E}.png>)
+![Complete Task](<../../../static/img/docs/Windows - System - Rename/{09D0A7E7-284F-4CE6-880D-E4495794EDAE}.png>)
+![Complete Task 1](<../../../static/img/docs/Windows - System - Rename/{0E704D7A-E166-46E7-9B3A-49D411AA40B1}.png>)
 
 ## Output
 
