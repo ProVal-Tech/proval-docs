@@ -20,8 +20,6 @@ This custom fields are needed for the task [Windows - System - Rename](</docs/cw
 | Domain_Admin_User  | Company | Text String |               | This stores the domain admin username that can be used for the domain credential validation | Yes      |
 | Domain_Admin_Pwd   | Company | Text String |               | This stores the domain admin password that can be used for the domain credential validation | Yes      |
 
-
-
 ## Screenshots
 
 ### Domain_Admin_User
