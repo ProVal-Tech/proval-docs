@@ -17,8 +17,7 @@ This document holds the current ConnectWise Control agent online status for each
 
 - [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status](<../scripts/Get - CW-ControlAPI - Online Status.md>)
 - [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](<../dataviews/Agent online status check CWC to CWA.md>)
-- [EPM - Data Collection - Solution - Get - CW-ControlAPI - Online Status](<../../solutions/Get - CW-ControlAPI - Online Status.md>)
-
+- [EPM - Data Collection - Solution - Get - CW-ControlAPI - Online Status](<../../solutions/Get - CW-ControlAPI-Online Status.md>)
 ## Tables
 
 #### plugin_proval_control_session_status

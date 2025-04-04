@@ -1,3 +1,14 @@
+---
+id: '837e00a9-4fde-4457-9516-591da7ba4da0'
+title: 'Install-Windows11FeatureUpdate'
+title_meta: 'Install-Windows11FeatureUpdate'
+keywords: ['install', 'featureupdate', 'upgrade', 'windows', 'windows11', 'troubleshooting', 'reboot']
+description: 'The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.'
+tags: ['installation', 'update', 'windows']
+draft: false
+unlisted: false
+---
+
 # Overview
 
 The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.

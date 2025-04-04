@@ -29,7 +29,7 @@ The Monitor has all of the following conditions that must be met before it kicks
 
 [Script - User Prompt - Reboot [Reboot, Param, Autofix]](../scripts/User%20Prompt%20-%20Reboot.md)
 
-[Script - Reset Reboot Pending EDFs](../Scripts/Reset%20Reboot%20Pending%20EDFs.md)
+[Script - Reset Reboot Pending EDFs](../scripts/Reset%20Reboot%20Pending%20EDFs.md)
 
 [Monitor - Reset Reboot Pending EDFs](./Reset%20Reboot%20Pending%20EDFs.md)
 

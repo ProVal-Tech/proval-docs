@@ -114,6 +114,4 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 
 #### 6 - Locate your remote monitor by opening the group(s) remote monitors tab. 
 
-![alt text](../../../static/img/docs/import-bsod-monitoring/image.png)
-
 Make sure the Alert Template and Limit to search is applied correctly.
