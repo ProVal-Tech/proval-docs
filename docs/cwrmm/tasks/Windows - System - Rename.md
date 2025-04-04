@@ -17,7 +17,9 @@ The reboot will be required to complete the renaming process.
 
 ## Dependencies
 
+[Custom Fields Rename-Machine](</docs/cwrmm/custom-fields/Rename-Machine Custom fields.md>)
 
+[Agnostic Rename-Machine](</docs/powershell/Rename-Machine.md>)
 
 ## User Parameters
 
