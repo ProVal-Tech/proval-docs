@@ -130,7 +130,7 @@ OS: <Operating System>
 Serial Number: <Serial Number>
 ```
 
-Refer to the troubleshooting guide at [https://proval.itglue.com/5078775/docs/14394330](https://proval.itglue.com/5078775/docs/14394330).  
+Refer to the troubleshooting guide at [Crystal Disk Info - Ticket Troubleshooting Guide](/docs/1462c9f3-6c6d-4703-a2f5-07a1e1d62fd9).  
 If you're logged into an ITGlue portal, open the URL in a Private Window.
 
 **\<File Upload Comment>** can vary depending on the existence of the disk health report **`DiskInfo.txt`**

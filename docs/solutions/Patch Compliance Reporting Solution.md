@@ -28,7 +28,7 @@ To provide clients with professional-looking patch management reports that they 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) | Script | This script creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](https://proval.itglue.com/5078775/docs/17889366) functions correctly. |
+| [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) | Script | This script creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](/docs/6dd7be85-8983-413b-8f56-1426446f25da) functions correctly. |
 
 ### Additional Content
 

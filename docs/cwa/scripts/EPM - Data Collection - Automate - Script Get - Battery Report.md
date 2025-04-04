@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script runs the agnostic script [EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341) and imports the retrieved data into `plugin_proval_batteries`.
+This script runs the agnostic script [EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](/docs/992bde06-574b-4b3a-a442-6962736a18d2) and imports the retrieved data into `plugin_proval_batteries`.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ The intention of this script is to serve as an autofix for an internal monitor n
 
 ## Dependencies
 
-- [EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)
+- [EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](/docs/992bde06-574b-4b3a-a442-6962736a18d2)
 - [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Variables
@@ -38,7 +38,7 @@ The intention of this script is to serve as an autofix for an internal monitor n
 
 1. Create the custom table if it doesn't exist.
 2. Set up variables for [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8).
-3. Run the agnostic process ([EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)).
+3. Run the agnostic process ([EPM - Data Collection - Agnostic - Get-BatteryReport.ps1](/docs/992bde06-574b-4b3a-a442-6962736a18d2)).
 4. Run the automate script process ([CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)).
 
 

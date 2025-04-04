@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script goes through the process of auditing and setting up hardening rules and policies relating to the recently published CW document [Hardening Automate (on-prem) Servers](https://proval.itglue.com/DOC-5078775-8025389).
+This script goes through the process of auditing and setting up hardening rules and policies relating to the recently published CW document [Hardening Automate](/docs/b356a7ff-5336-480e-830c-476bee44cb98).
 
 **Time Saved by Automation:** 30 Minutes
 

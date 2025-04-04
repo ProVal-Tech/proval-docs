@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used with the remote monitors of the [Solution - Automate server and CW Manage Plugin Monitoring](https://proval.itglue.com/5078775/docs/10390988), which needed to be created due to static Global Variables and a specific `Subject` that had to be used.
+This script is used with the remote monitors of the [Solution - Automate server and CW Manage Plugin Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b), which needed to be created due to static Global Variables and a specific `Subject` that had to be used.
 
 ![Image](../../../static/img/Automate-Server-Monitoring---Service---Restart-Autofix/image_1.png)
 
@@ -25,7 +25,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 ## Dependencies
 
 - [Agnostic - Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
-- [Solution - Automate server and CW Manage Plugin Monitoring](https://proval.itglue.com/5078775/docs/10390988)
+- [Solution - Automate server and CW Manage Plugin Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b)
 
 ## Variables
 

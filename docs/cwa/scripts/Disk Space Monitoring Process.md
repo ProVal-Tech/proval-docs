@@ -14,7 +14,7 @@ unlisted: false
 
 This script checks the disk space against thresholds defined in the Properties of an Automate instance, runs a disk cleanup, and creates a ticket if necessary.
 
-[How to Add/Edit System Properties in ConnectWise Automate](https://proval.itglue.com/DOC-5078775-7604247)
+[How to Add/Edit System Properties in ConnectWise Automate](/docs/a4c1ce0c-c270-49fb-8688-4390482b6395)
 
 Disk cleanup will only run against Windows machines. When executed as an auto-fix from a monitor, the monitor should pass the single drive letter (e.g., C) into the `@fieldname@` variable.
 

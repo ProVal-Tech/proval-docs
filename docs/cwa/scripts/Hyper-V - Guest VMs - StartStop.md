@@ -24,7 +24,7 @@ This script allows for the shutdown or startup of VMs on the target Hyper-V host
 
 ## Dependencies
 
-[Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870)
+[Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a)
 
 ## Variables
 
@@ -36,7 +36,7 @@ This script allows for the shutdown or startup of VMs on the target Hyper-V host
 
 ## Process
 
-Please see [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870) for information on how this script processes the VMs.
+Please see [Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a) for information on how this script processes the VMs.
 
 ## Output
 

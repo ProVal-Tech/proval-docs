@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes the installation process for the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) service.
+This document describes the installation process for the [IdleMon](https://github.com/ProVal-Tech/IdleMon) service.
 
 ## Output
 

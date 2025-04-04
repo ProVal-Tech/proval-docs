@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-The purpose of this view is to serve the [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201) dataview because the "SQLBody" used in the dataview was exceeding the limit of 2048 characters.
+The purpose of this view is to serve the [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda) dataview because the "SQLBody" used in the dataview was exceeding the limit of 2048 characters.
 
 Unsupported for MySQL version < 5.7
 

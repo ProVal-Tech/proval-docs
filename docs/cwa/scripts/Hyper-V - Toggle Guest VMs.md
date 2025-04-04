@@ -22,7 +22,7 @@ This script starts or stops a VM on a Hyper-V system. There is an optional param
 
 ## Dependencies
 
-- [Toggle-VMGuests](https://proval.itglue.com/DOC-5078775-7410870)
+- [Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a)
 - Only works on Hyper-V hosts (the role must be detected)
 
 ## Variables

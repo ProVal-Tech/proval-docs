@@ -22,7 +22,7 @@ This script is used to enforce the installation of an extension or a list of ext
 
 ## Dependencies
 
-- [Register-ChromeExtension](https://proval.itglue.com/DOC-5078775-7267407)
+- [Register-ChromiumExtension](/docs/481992c0-adcd-4275-bd5c-aa59fd4a7b17)
 
 ## Variables
 

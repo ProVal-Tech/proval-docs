@@ -35,7 +35,7 @@ There are two prerequisites that need to be installed for this script to functio
 Other items depend on this script being executed to function, which are listed below:
 
 1. [Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
-2. [Report - Active Directory User Groups - Detail](https://proval.itglue.com/DOC-5078775-9493130)
+2. [Report - Active Directory User Groups - Detail](/docs/e76e5bf4-d80e-4a53-ab39-a116c157e008)
 3. Report - Computers in Active Directory - No Agent
 
 ## Output

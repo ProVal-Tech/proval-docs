@@ -28,7 +28,7 @@ Select `Run Now` and click on `Run Task`:
 
 ## Dependencies
 
-[Set-ChromeHomepage](https://proval.itglue.com/DOC-5078775-7347741)
+[Set-ChromeHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
 ## User Parameters
 

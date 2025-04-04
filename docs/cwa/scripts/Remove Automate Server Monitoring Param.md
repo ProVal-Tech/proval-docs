@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script can be used to remove the content of [Automate Server Monitoring](https://proval.itglue.com/5078775/docs/10390988) from the environment. Only the pieces emailing ProVal will be removed. There is an additional parameter that provides you with the option to remove the ProSyncClient Plugin as well.
+The script can be used to remove the content of [Automate Server Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b) from the environment. Only the pieces emailing ProVal will be removed. There is an additional parameter that provides you with the option to remove the ProSyncClient Plugin as well.
 
 It is developed as a client script to prevent accidental execution against any machine. Execute and Edit permissions are limited to the `Super Admin` only.
 
@@ -35,7 +35,7 @@ A client script can either be debugged or executed against any client. The sugge
 
 ## Process
 
-- Remove the contents of [Automate Server Monitoring](https://proval.itglue.com/5078775/docs/10390988) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
+- Remove the contents of [Automate Server Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
 - Remove the ProSyncClient plugin from the environment if the `ProSyncClientToo?` parameter is set to `Yes`; otherwise, exit.
 - Remove itself from the environment if the `ThisScriptAsWell?` parameter is set to `Yes`; otherwise, exit.
 

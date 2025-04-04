@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the implementation of the [Install-AutomateAgentGPO.ps1](https://proval.itglue.com/DOC-5078775-10798933) agnostic script. The script can create a ConnectWise Automate Agent Deployment Group Policy Object that will generate a startup script (or a Scheduled Task) policy and apply that policy to the root forest in Group Policy Management.
+This document outlines the implementation of the [Install-AutomateAgentGPO.ps1](/docs/0163e7d2-d72d-4b31-b0fe-294df333d125) agnostic script. The script can create a ConnectWise Automate Agent Deployment Group Policy Object that will generate a startup script (or a Scheduled Task) policy and apply that policy to the root forest in Group Policy Management.
 
 **Name of the Startup Script GPO:** `Automate-Deploy`
 
@@ -57,7 +57,7 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 ## Dependencies
 
-[CWM - Automate - Agnostic - Install-AutomateAgentGPO.ps1](https://proval.itglue.com/DOC-5078775-10798933)
+[CWM - Automate - Agnostic - Install-AutomateAgentGPO.ps1](/docs/0163e7d2-d72d-4b31-b0fe-294df333d125)
 
 ## Output
 

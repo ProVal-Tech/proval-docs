@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script will create the view [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661), which is used by the dataview, "[Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201)."
+The script will create the view [plugin_proval_v_windows_10_version_metrics](/docs/ea558c06-8fef-4c9f-87c7-42a3aa289dad), which is used by the dataview, "[Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda)."
 
 ## Sample Run
 
@@ -20,8 +20,8 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](htt
 
 ## Dependencies
 
-- [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](https://proval.itglue.com/5078775/docs/9373201)
-- [plugin_proval_v_windows_10_version_metrics](https://proval.itglue.com/5078775/docs/9373661)
+- [Windows - Windows 10 Version Metrics + Filters + Client Filters (reference table)](/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda)
+- [plugin_proval_v_windows_10_version_metrics](/docs/ea558c06-8fef-4c9f-87c7-42a3aa289dad)
 - [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](/docs/7819fc75-aeae-457b-a451-59221396e900)
 
 ## Process

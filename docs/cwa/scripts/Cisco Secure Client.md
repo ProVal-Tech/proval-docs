@@ -60,7 +60,7 @@ It has to be executed as an autofix script with [CWA - Internal Monitor - Missin
 
 ## Dependencies
 
-- [Install-Anyconnect Agnostic Script](https://proval.itglue.com/5078775/docs/11897620)
+- [Install-Anyconnect Agnostic Script](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
 
 ## Global Parameters
 

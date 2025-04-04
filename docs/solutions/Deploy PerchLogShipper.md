@@ -28,7 +28,7 @@ The goal of this solution is to deploy Perch Log Shipper on Windows machines.
 
 | Content                                                                 | Type           | Function                                                                                           |
 |-------------------------------------------------------------------------|----------------|----------------------------------------------------------------------------------------------------|
-| [Agnostic Script - Install - Perch Log Shipper](https://proval.itglue.com/DOC-5078775-14959900) | Agnostic Script | Agnostic Script used to deploy Perch Log Shipper in [SWM - Software Install - Script - Deploy Perch Log Shipper](/docs/6587bacd-7587-466e-b31d-7291cf11a401) script |
+| [Agnostic Script - Install - Perch Log Shipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e) | Agnostic Script | Agnostic Script used to deploy Perch Log Shipper in [SWM - Software Install - Script - Deploy Perch Log Shipper](/docs/6587bacd-7587-466e-b31d-7291cf11a401) script |
 
 ## Implementation
 

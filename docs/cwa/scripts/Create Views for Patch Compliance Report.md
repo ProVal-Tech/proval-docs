@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](https://proval.itglue.com/5078775/docs/17889366) functions correctly. This script will create the following items:
+This document creates all the necessary items in the database to ensure the [Patch Compliance Reporting Solution](/docs/6dd7be85-8983-413b-8f56-1426446f25da) functions correctly. This script will create the following items:
 
 1. View: `plugin_proval_clientpatchstatsserver`
 2. View: `plugin_proval_clientpatchstatsworkstation`

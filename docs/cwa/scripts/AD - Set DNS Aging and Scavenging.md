@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Old content piece to compare to: [Set-DNSServerScavengingSettings (Deprecate after approved content)](https://proval.itglue.com/DOC-5078775-7516268)  
+Old content piece to compare to: [Set-DNSServerScavengingSettings](/docs/6942d20e-8606-4af2-bae5-7525935a2bfd)  
 Enables DNS scavenging and optionally allows you to set the interval for scavenging, 'no refresh', and refresh.
 
 **Time Saved by Automation:** 5 Minutes

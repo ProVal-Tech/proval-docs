@@ -31,7 +31,7 @@ This solution provides information on a workstation's battery state.
 | Content                                                                                     | Type             | Function                                                      |
 |---------------------------------------------------------------------------------------------|------------------|--------------------------------------------------------------|
 | [Custom Table - plugin_proval_batteries](/docs/5507c4d8-9cfc-4d67-9c84-7cbad5a37de1)     | Custom Table      | Stores Battery Information for each target.                  |
-| [Agnostic - Get-BatteryReport.ps1](https://proval.itglue.com/DOC-5078775-11299341)       | Agnostic Script    | Collects Battery report data and returns it as an object.    |
+| [Agnostic - Get-BatteryReport.ps1](/docs/992bde06-574b-4b3a-a442-6962736a18d2)       | Agnostic Script    | Collects Battery report data and returns it as an object.    |
 
 ## Implementation
 

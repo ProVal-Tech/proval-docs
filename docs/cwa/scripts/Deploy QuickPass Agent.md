@@ -18,10 +18,6 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 ![Sample Run](../../../static/img/Deploy-QuickPass-Agent/image_1.png)
 
-## Dependencies
-
-[SWM - Software Install - Internal Monitor - Agents Missing QuickPass](https://proval.itglue.com/DOC-7339781-14875676)
-
 ## Global Parameters
 
 | Name                    | Required | Example | Description                                                                                                    |

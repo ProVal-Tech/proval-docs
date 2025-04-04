@@ -14,7 +14,7 @@ unlisted: false
 
 The script collects the idle time of the user(s) logged on to a Windows machine. The data is then stored in a custom table for the number of days specified in the global variable `ThresholdDays`.
 
-It uses the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool to fetch the data.
+It uses the [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool to fetch the data.
 
 The tool must be placed in the `Utilities` folder at `LTShare//Transfer` on the Automate Server/WebDav.
 
@@ -28,7 +28,7 @@ Schedule the script to run periodically against the computer to monitor.
 
 ## Dependencies
 
-The [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool must be placed in the `Utilities` folder at `LTShare//Transfer` on the Automate Server/WebDav.
+The [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool must be placed in the `Utilities` folder at `LTShare//Transfer` on the Automate Server/WebDav.
 
 ## Variables
 

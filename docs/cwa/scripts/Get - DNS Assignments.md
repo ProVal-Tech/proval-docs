@@ -22,7 +22,7 @@ The script retrieves details about accessible network adapters from a Windows co
 
 | Name            | Description                                                                                     |
 |-----------------|-------------------------------------------------------------------------------------------------|
-| TableName       | [pvl_network_Adapter](https://proval.itglue.com/5078775/docs/14378279)                       |
+| TableName       | [pvl_network_Adapter](/docs/5a5463d0-0ce3-4c09-bd41-39da28e16d0f)                       |
 | ProjectName     | Get-DNSAssignments                                                                              |
 | WorkingDirectory | C:/ProgramData/_Automation/Script/Get-DNSAssignments                                          |
 | FilePath        | C:/ProgramData/_Automation/Script/Get-DNSAssignments/Get-DNSAssignments.ps1                   |

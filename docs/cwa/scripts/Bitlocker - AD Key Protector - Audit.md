@@ -24,7 +24,7 @@ This document audits the existing backup BitLocker key protectors from an Active
 
 This must be run against an Active Directory server.
 
-[SEC - Encryption - Agnostic - Get-ADBitlockerStores](https://proval.itglue.com/DOC-5078775-9038164)
+[Get-ADBitlockerStore](/docs/c3f8637a-bc38-4709-a626-d59d9111d621)
 
 ## Variables
 
@@ -59,7 +59,7 @@ No additional records are found, so another loop iteration is not processed.
 
 This causes the underlying PowerShell to be run as many loop iterations as necessary to process all records. The overhead of running this is minimal, as the underlying script's average execution time is less than 5 seconds.
 
-For additional information about the underlying logic, please see [SEC - Encryption - Agnostic - Get-ADBitlockerStores](https://proval.itglue.com/DOC-5078775-9038164).
+For additional information about the underlying logic, please see [SEC - Encryption - Agnostic - Get-ADBitlockerStores](/docs/c3f8637a-bc38-4709-a626-d59d9111d621).
 
 ## Output
 

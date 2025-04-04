@@ -64,7 +64,7 @@ To manage Bitlocker protection on endpoints.
 |---------|------|----------|
 | [Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f) | Agnostic | Encrypts a drive with Bitlocker disk encryption. |
 | [Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631) | Agnostic | Disables Bitlocker protection on one (or all) volumes. |
-| [Agnostic - Get-ADBitlockerStores](https://proval.itglue.com/DOC-5078775-9038164) | Agnostic | Returns objects from AD representing backed up Bitlocker key protectors. |
+| [Agnostic - Get-ADBitlockerStores](/docs/c3f8637a-bc38-4709-a626-d59d9111d621) | Agnostic | Returns objects from AD representing backed up Bitlocker key protectors. |
 | [Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14) | Custom Table | Stores information about Bitlocker configuration on target machines. |
 | [Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac) | Custom Table | Stores information about Bitlocker key protectors backed up to Active Directory. |
 | [Custom Table - plugin_proval_tpm_audit](/docs/82144ad7-4cff-4883-8389-1180052ab156) | Custom Table | This table will be populated by the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a). It holds all data from the Get-TPM command. |

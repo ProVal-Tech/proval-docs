@@ -20,7 +20,7 @@ Windows Machines
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Install - PerchLogShipper](https://proval.itglue.com/DOC-5078775-14959900)
+[Install-PerchLogShipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e)
 
 ## Sample Run
 

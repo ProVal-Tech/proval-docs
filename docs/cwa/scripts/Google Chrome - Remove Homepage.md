@@ -22,7 +22,7 @@ This script is used to remove the enforcement of a homepage in the Edge browser.
 
 ## Dependencies
 
-- [Remove-ChromeHomepage](https://proval.itglue.com/DOC-5078775-7347742)
+- [Remove-ChromiumHomepage](/docs/38674bcd-8b19-4072-a58f-314efad2e856)
 
 ## Process
 

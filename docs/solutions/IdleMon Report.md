@@ -24,7 +24,7 @@ The purpose of this solution is to monitor end users to determine how long they 
 
 ## Implementation
 
-- Place the [IdleMon](https://proval.itglue.com/DOC-5078775-12641582) tool in the `Utilities` folder at `LTShare/Transfer` on the Automate Server/WebDav.
+- Place the [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool in the `Utilities` folder at `LTShare/Transfer` on the Automate Server/WebDav.
 - Import the script.
 - Import the dataview.
 - Schedule the script to run periodically against the relevant machines. It is recommended not to schedule the script against a large number of computers simultaneously, as it needs to be executed frequently for optimal output.

@@ -24,7 +24,7 @@ This script takes a string parameter to define the URL to set the homepage and a
 
 - Windows 10 1703+
 - Google Chrome 86+
-- [Set-ChromeHomepage](https://proval.itglue.com/DOC-5078775-7347741)
+- [Set-ChromeHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
 ## Variables
 

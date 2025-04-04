@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document details the process of auditing and establishing hardening rules and policies based on the recently published CW document [Hardening CW Control (on-prem) Servers](https://proval.itglue.com/5078775/docs/8025398).
+This document details the process of auditing and establishing hardening rules and policies based on this document: [Hardening ConnectWise ScreenConnect](/docs/bd187550-7a42-4a72-b872-2a95ce698891).
 
 **Time Saved by Automation:** 30 Minutes
 
@@ -45,7 +45,7 @@ This document details the process of auditing and establishing hardening rules a
 > - Disable HTTP Headers  
 > - Disable HTTP Options  
 
-[View Document](https://proval.itglue.com/5078775/docs/8025398#version=published&documentMode=view)
+[Hardening ConnectWise ScreenConnect](/docs/bd187550-7a42-4a72-b872-2a95ce698891)
 
 ## Output
 

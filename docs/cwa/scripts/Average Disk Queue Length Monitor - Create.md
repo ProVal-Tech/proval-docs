@@ -42,7 +42,7 @@ However, this may be time-consuming and not the root issue. If your disk perform
 
 ## Implementation
 
-1. Import the [Average Disk Queue Length Monitor - Create](https://proval.itglue.com/5078775/docs/16314739) script from the `ProSync` plugin.
+1. Import this script from the `ProSync` plugin.
 
 2. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  

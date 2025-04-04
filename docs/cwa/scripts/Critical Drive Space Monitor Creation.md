@@ -27,7 +27,7 @@ This document outlines the process for creating Remote Monitors for Critical Dri
    SELECT * FROM agents WHERE `Name` LIKE '%Drive Space Critical%' AND checkaction > 0
    ```  
    Retrieve this list of monitor sets and share it with the consultant, providing as much information as possible. It is advisable to proceed with further implementation steps only if the query results in an empty list.
-4. **Import New Script**: Read this document carefully and import the [script](https://proval.itglue.com/5078775/docs/13894321) described in this document.
+4. **Import New Script**: Read this document carefully and import the script described in this document.
 5. **Run/Debug the Script**: Execute or debug the script against a single client, with the `Set_Environment` parameter set to 1. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
    ![Image 1](../../../static/img/Critical-Drive-Space-Monitor-Creation/image_1.png)  
    ![Image 2](../../../static/img/Critical-Drive-Space-Monitor-Creation/image_2.png)

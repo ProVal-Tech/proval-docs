@@ -26,7 +26,6 @@ The purpose of the script is to finish the new or open tickets created by the fe
 ## Dependencies
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
-- [CWM - Automate - Internal Monitor - ProVal - Client Specific - Auto Close - Feature Update Tickets](https://proval.itglue.com/DOC-5078775-12579658)
 
 ## Variables
 
