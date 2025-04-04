@@ -231,7 +231,7 @@ Add a new row in the IF section and select `Script Exit`.
 
 ![Script Exit](<../../../static/img/docs/Windows - System - Rename/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.png>)
 
-In the script exit message, simply type `The Rename-Machine.ps1 download failed. Refer to the logs: %output%`.
+In the script exit message, simply type `The Rename-Machine.ps1 download failed. Refer to the logs: %output%` and click `Save`.
 
 ![Script Exit Message](<../../../static/img/docs/Windows - System - Rename/{84F02F7A-B1A3-400C-8787-470C7A2AB56E}.png>)
 
@@ -294,6 +294,9 @@ The following function will pop up on the screen:
 ![PowerShell Popup](<../../../static/img/docs/Windows - System - Rename/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.png>)
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
+Also, Select the `Continue on Failure`.
+
+![PowerShell Continue on Failure](<../../../static/img/docs/Windows - System - Rename/image-8.png>)
 
 ```
 $WorkingDirectory = 'C:\ProgramData\_automation\script\Rename-Machine'
