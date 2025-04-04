@@ -15,13 +15,13 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\get-WingetReport\Get-WingetReport.ps1`  
-**File Hash (Sha256):** `F25C9E57E5088BB6CCEEB320A1700063D47CD9EE5FB279FB31E7914A3B49F014`  
-**File Hash (MD5):** `69F18BAD33E40B30EAC922BA87DF7752`  
+**File Path:** `C:\ProgramData\_automation\Script\Get-WingetReport\Get-WingetReport.ps1`  
+**File Hash (Sha256):** `0ECF004A270D0EABCB0D89FC9C05CF027709AE541E9D53DC894E309041344B12`  
+**File Hash (MD5):** `26D327FAD52EB73F7AD28A2B72E24ECB`  
 
-**File Path:** `C:\ProgramData\_automation\Script\get-WingetReport\Manage-OverFlowedVariable.ps1`  
+**File Path:** `C:\ProgramData\_automation\Script\Get-WingetReport\Manage-OverFlowedVariable.ps1`  
 **File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
-**File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`
+**File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
 ## Update Notice: 02-April-2025
 
