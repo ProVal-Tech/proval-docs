@@ -153,9 +153,11 @@ The following function will pop up on the screen:
 ![Script Exit Popup Image](../../../static/img/Windows-11-Compatibility-Validation/image_31.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
+
 ```plaintext
 %Output%
 ```
+
 ![Script Exit Error Message Image](../../../static/img/Windows-11-Compatibility-Validation/image_32.png)  
 
 ##### Row 2c(iii) Function: Set Custom Field
@@ -170,9 +172,27 @@ Search and select `Set Custom Field` Function.
 ![Set Custom Field Image 7](../../../static/img/Windows-11-Compatibility-Validation/image_17.png)  
 ![Set Custom Field Image 8](../../../static/img/Windows-11-Compatibility-Validation/image_18.png)  
 
+Search and select `Windows 11 Compatible` in the `Search Custom Field` field and set `No` in the `Value` field and click the `Save` button.
+![Set Custom Field Image 9](../../../static/img/Windows-11-Compatibility-Validation/image_47.png)  
+![Set Custom Field Image 10](../../../static/img/Windows-11-Compatibility-Validation/image_48.png)  
+
+##### Row 2c(iv) Function: Set Custom Field
+
+Add a new row by clicking the `Add Row` button inside the inner `Else` section after the above function.  
+![Add New Row](../../../static/img/Windows-11-Compatibility-Validation/image_46.png)
+
+A blank function will appear.  
+![Blank Function Image](../../../static/img/Windows-11-Compatibility-Validation/image_7.png)  
+
+Search and select `Set Custom Field` Function.  
+![Set Custom Field Image 7](../../../static/img/Windows-11-Compatibility-Validation/image_17.png)  
+![Set Custom Field Image 8](../../../static/img/Windows-11-Compatibility-Validation/image_18.png)  
+
 Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
 ![Set Custom Field Image 9](../../../static/img/Windows-11-Compatibility-Validation/image_34.png)  
-![Set Custom Field Image 10](../../../static/img/Windows-11-Compatibility-Validation/image_35.png)  
+![Set Custom Field Image 10](../../../static/img/Windows-11-Compatibility-Validation/image_35.png)
+
+---
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
 ![Save Script Image](../../../static/img/Windows-11-Compatibility-Validation/image_36.png)  
@@ -208,6 +228,4 @@ It is suggested to run the Task once per month against [Windows 10 Machines](<..
 
 - Script Log
 - Custom Field
-
-
 
