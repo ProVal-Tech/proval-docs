@@ -17,9 +17,9 @@ Refer to [Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate) for
 
 ## File Hash
 
-**File Path:** `C:/ProgramData/_Automation/script/Winget-AutoUpdate/Winget-AutoUpdate.ps1`  
-**File Hash (Sha256):** `DCC8DF84B0145829B31B89BA047A786C42189C4598C4C458E7D575D7DC1985EF`  
-**File Hash (MD5):** `07DFAD0A66AA5A4B40C946DF727BE3D8`
+**File Path:** `C:\ProgramData\_automation\Script\Winget-AutoUpdate\Winget-AutoUpdate.ps1`  
+**File Hash (Sha256):** `40E4DC5C6646EF9E95AB10A98D6483CD64E443F14604DE2A340C2BB9687C27A5`  
+**File Hash (MD5):** `2E8A5542F96BA4A17494FE2AA2EDB7E7`
 
 ## Additional PowerShell Scripts
 
@@ -90,8 +90,9 @@ The script's default nature is to compare the existing configuration before runn
 
 ## Dependencies
 
+[WAU.zip](https://github.com/Romanitho/Winget-AutoUpdate/releases/download/v2.2.0/WAU.zip)  
 [https://github.com/Romanitho/Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate)  
-[SWM - Software Update - Internal Monitor - Execute Script - Configure Winget Auto Update](<../monitors/Execute Script - Configure Winget Auto Update.md>)
+[Execute Script - Configure Winget Auto Update](<../monitors/Execute Script - Configure Winget Auto Update.md>)
 
 ## Variables
 
@@ -113,13 +114,13 @@ The script's default nature is to compare the existing configuration before runn
 
 | Name                       | Example                                                  | Type      | Dropdown Options                                                                                                           | Description                                                                                           |
 |----------------------------|----------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Winget Auto Update          | Enabled for Servers and Workstations                     | Dropdown  | - Disabled - Enabled for Workstations Only - Enabled for Servers and Workstations                                    | Set this EDF to enable the Winget Auto Update solution.                                              |
+| Winget Auto Update          | Enabled for Servers and Workstations                     | Dropdown  | <ul><li>Disabled</li><li>Enabled for Workstations Only</li><li>Enabled for Servers and Workstations</li></ul>                                    | Set this EDF to enable the Winget Auto Update solution.                                              |
 | WAU - Whitelist            | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to update. By default, the solution will enable the Auto-update for all applications unless a whitelist is defined. Specifying this list overrides the blacklisted applications. |
 | WAU-Blacklist              | Ditto.Ditto, Greenshot.Greenshot, HeidiSQL.HeidiSQL... | Text      |                                                                                                                           | A comma-separated list of applications to exclude. Only one of Whitelist or Blacklist can be used at a time. If both are provided, Whitelist will take precedence. |
 | WAU - InstallUserContext   |                                                          | Check-Box |                                                                                                                           | Flag this EDF to enable auto-update for User-level applications, too. By default, only system-level applications are updated.  **Note:** End users may observe a PowerShell window appearing on their screens during the scheduled update if the user context is enabled. |
-| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | - Full - SuccessOnly - None                                                                                          | Specifies the notification level for application updates.  **Default:** None  **Sample Notification:** ![Notification Sample](../../../static/img/Configure-Winget-Auto-Update/image_5.png) |
+| WAU - NotificationLevel     | SuccessOnly                                             | Dropdown  | <ul><li>Full</li><li>SuccessOnly</li><li>None</li></ul>                                                                                          | Specifies the notification level for application updates.  **Default:** None  **Sample Notification:** ![Notification Sample](../../../static/img/Configure-Winget-Auto-Update/image_5.png) |
 | WAU - UpdateInterval       | Daily                                                    | Dropdown  | - Daily - BiDaily - Weekly - BiWeekly - Monthly - Never                                                     | Specifies the frequency of updates for the applications. This EDF defines how frequently the available updates are checked and implemented for the applications.  **Default:** Daily |
-| WAU - UpdatesAtTime        | 06AM                                                    | Dropdown  | - 12AM - 12:30AM - 01AM - 01:30AM - 02AM - 02:30AM - 03AM - 03:30AM - 04AM - 04:30AM - 05AM - 05:30AM - 06AM - 06:30AM - 07AM - 07:30AM - 08AM - 08:30AM - 09AM - 09:30AM - 10AM - 10:30AM - 11AM - 11:30AM - 12PM - 12:30PM - 01PM - 01:30PM - 02PM - 02:30PM - 03PM - 03:30PM - 04PM - 04:30PM - 05PM - 05:30PM - 06PM - 06:30PM - 07PM - 07:30PM - 08PM - 08:30PM - 09PM - 09:30PM - 10PM - 10:30PM - 11PM - 11:30PM | Specifies the time for updates in 12-hour format for updating the applications.  **Default:** 06AM |
+| WAU - UpdatesAtTime        | 06AM                                                    | Dropdown  | <ul><li>12AM</li><li>12:30AM</li><li>01AM</li><li>01:30AM</li><li>02AM</li><li>02:30AM</li><li>03AM</li><li>03:30AM</li><li>04AM</li><li>04:30AM</li><li>05AM</li><li>05:30AM</li><li>06AM</li><li>06:30AM</li><li>07AM</li><li>07:30AM</li><li>08AM</li><li>08:30AM</li><li>09AM</li><li>09:30AM</li><li>10AM</li><li>10:30AM</li><li>11AM</li><li>11:30AM</li><li>12PM</li><li>12:30PM</li><li>01PM</li><li>01:30PM</li><li>02PM</li><li>02:30PM</li><li>03PM</li><li>03:30PM</li><li>04PM</li><li>04:30PM</li><li>05PM</li><li>05:30PM</li><li>06PM</li><li>06:30PM</li><li>07PM</li><li>07:30PM</li><li>08PM</li><li>08:30PM</li><li>09PM</li><li>09:30PM</li><li>10PM</li><li>10:30PM</li><li>11PM</li><li>11:30PM</li></ul> | Specifies the time for updates in 12-hour format for updating the applications.  **Default:** 06AM |
 | WAU - updatesAtLogon      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to configure WAU to run at user logon. Both UpdatesAtTime and UpdatesAtLogon can be used together. |
 | WAU - doNotRunAfterInstallation |                                                  | Check-Box |                                                                                                                           | Flag this EDF to prevent Winget-AutoUpdate from running immediately after installation. By default, it runs after installation. |
 | WAU - MonitorFailures      |                                                          | Check-Box |                                                                                                                           | Flag this EDF to create the [Winget Auto Update Errors](<../monitors/Winget Auto Update Errors.md>) remote monitor on the computer to alert on Winget AutoUpdate failures. |
@@ -140,14 +141,14 @@ The script's default nature is to compare the existing configuration before runn
 
 ## Output
 
-- Script logs
-- Custom Table 
-- Remote Monitor
-- Scheduled tasks created under `/WAU/`:
-  - Winget-AutoUpdate
-  - Winget-AutoUpdate-Notify
-  - Winget-AutoUpdate-Policies
-  - Winget-AutoUpdate-UserContext
+- Script logs  
+- Custom Table  
+- Remote Monitor  
+- Scheduled tasks created under `/WAU/`:  
+  - Winget-AutoUpdate  
+  - Winget-AutoUpdate-Notify  
+  - Winget-AutoUpdate-Policies  
+  - Winget-AutoUpdate-UserContext  
 
 
 

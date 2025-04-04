@@ -15,8 +15,8 @@ This document displays the information of `Winget` supported applications fetche
 
 ## Dependencies
 
-- [SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)
-- [SWM - Software Update - Custom Table - pvl_winget_audit](<../tables/pvl_winget_audit.md>)
+- [Winget App Audit](<../scripts/Winget App Audit.md>)
+- [pvl_winget_audit](<../tables/pvl_winget_audit.md>)
 
 ## Columns
 
@@ -40,9 +40,6 @@ This document displays the information of `Winget` supported applications fetche
 | Is Updated                | Is the application up to date? (0/1)                                                                     |
 | App Level                 | Installation level of the application (System/User).                                                    |
 | Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) document for detailed instructions on enabling Auto Update. |
+| Auto Update RunTime | The last run time of the scheduled task that executes the Winget Auto Update application to check for and update outdated applications. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
-
-
-
-
 
