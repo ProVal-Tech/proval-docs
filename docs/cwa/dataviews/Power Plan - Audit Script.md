@@ -1,7 +1,7 @@
 ---
 id: '3c11e893-b78e-4dc9-a8c2-c80060da203b'
-title: 'Power Plan - Audit Script'
-title_meta: 'Power Plan - Audit Script'
+title: 'Power Plan - Audit [Script]'
+title_meta: 'Power Plan - Audit [Script]'
 keywords: ['power', 'plan', 'audit', 'data', 'view', 'settings', 'collection']
 description: 'This document provides a summary of the Power Plan Audit Data View, detailing the power plan settings gathered by the EPM Data Collection script. It includes information about dependencies, columns, and a sample screenshot for visualization.'
 tags: ['performance', 'report', 'windows']
@@ -43,10 +43,3 @@ The data view displays the power plan settings gathered by the [EPM - Data Colle
 | On Direct Power Setting (AC) | Value for the Power Setting on the machine when directly connected to electricity. |
 | On Battery Power Setting (DC) | Value for the Power Setting on the machine when running on Battery/UPS power. |
 | Script Run Time           | Data Collection Time                                    |
-
-## Sample Screenshot
-
-<iframe src="https://proval.itglue.com/attachments/14048242?preview=1" width="100%" height="1000px" frameborder="0"></iframe>
-## Attachments
-[sample_powerplan_dataview.png](<../../../static/attachments/itg/15053779/sample_powerplan_dataview.png>)
-

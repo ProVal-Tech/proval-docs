@@ -36,50 +36,50 @@ This is a function script and should not be run manually.
 
 ## Process
 
-1. In any script where you expect that a variable overflow is likely:
-   1. Add a variable named `JsonFileName`, and set it to the name of the temporary JSON file you wish to create.
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_1.png)
-   2. Add a variable named `SQLStartStatement`, and set it to the SQL Insert Statement from "Insert Into" to "Values".
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_2.png)
-      Note the space between "Values" and the trailing quotation.
-   3. Add a variable named `SQLTailString`, and set it to the SQL Insert Statement from "On Duplicate" to the end of the string.
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_3.png)
-      Note the space between the leading quotation and "ON".
-   4. Add a variable named `DataPointNames` and set it to a comma-separated list of the individual saved object names.
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_4.png)
-      You will use these here; notice the similar naming in the class.
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)
-   5. Modify the PowerShell script and store results in `@psout@`:
-      1. Create a class.
-         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)
-      2. Populate your class with items.
-         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_6.png)
-      3. Export your data to JSON.
-         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_7.png)
-   6. Call the Parse - OverflowedVariable script after the PowerShell run.
-      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_8.png)
+1. In any script where you expect that a variable overflow is likely:  
+   1. Add a variable named `JsonFileName`, and set it to the name of the temporary JSON file you wish to create.  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_1.png)  
+   2. Add a variable named `SQLStartStatement`, and set it to the SQL Insert Statement from "Insert Into" to "Values".  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_2.png)  
+      Note the space between "Values" and the trailing quotation.  
+   3. Add a variable named `SQLTailString`, and set it to the SQL Insert Statement from "On Duplicate" to the end of the string.  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_3.png)  
+      Note the space between the leading quotation and "ON".  
+   4. Add a variable named `DataPointNames` and set it to a comma-separated list of the individual saved object names.  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_4.png)  
+      You will use these here; notice the similar naming in the class.  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)  
+   5. Modify the PowerShell script and store results in `@psout@`:  
+      1. Create a class.  
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_5.png)  
+      2. Populate your class with items.  
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_6.png)  
+      3. Export your data to JSON.  
+         ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_7.png)  
+   6. Call the Parse - OverflowedVariable script after the PowerShell run.  
+      ![Image](../../../static/img/OverFlowedVariable---SQL-Insert---Execute/image_8.png)  
 
 ## PowerShell Procedure
 
-1. Gather all data from the JSON file you designated.
-2. Take in all necessary variables from Automate:
-   - `DataPointNames`
-   - `SQLTailString`
-   - `SQLStartStatement`
-3. For every data point in the JSON file:
-   - Get every DataPoint Name and populate `\"'$($DataPoint.($DataPointName))'\"}) -join ','`, count each DataPoint's character count, and return the average DataPoint count.
-4. Calculate the available space:
-   - `= 60000 - (The length of the SQLStartStatement plus the length of the SQLTailString)`
-5. Calculate the total DataPoints that can be listed before running out of characters:
-   - The available space divided by the average characters, rounded down.
-6. Re-gather the data from the JSON file, but this time select the first total DataPoints that can be written from step 5.
-7. Populate the SQL Statement.
-8. Overwrite the JSON file with the original data, only this time skip the total DataPoints that can be written from step 5.
-9. Populate an object containing the following data:
-   - `TotalRowsToWrite`
-   - `TotalRowsToLimit`
-   - `SQLInsert`
-10. Return that object.
+1. Gather all data from the JSON file you designated.  
+2. Take in all necessary variables from Automate:  
+   - `DataPointNames`  
+   - `SQLTailString`  
+   - `SQLStartStatement`  
+3. For every data point in the JSON file:  
+   - Get every DataPoint Name and populate `\"'$($DataPoint.($DataPointName))'\"}) -join ','`, count each DataPoint's character count, and return the average DataPoint count.  
+4. Calculate the available space:  
+   - `= 60000 - (The length of the SQLStartStatement plus the length of the SQLTailString)`  
+5. Calculate the total DataPoints that can be listed before running out of characters:  
+   - The available space divided by the average characters, rounded down.  
+6. Re-gather the data from the JSON file, but this time select the first total DataPoints that can be written from step 5.  
+7. Populate the SQL Statement.  
+8. Overwrite the JSON file with the original data, only this time skip the total DataPoints that can be written from step 5.  
+9. Populate an object containing the following data:  
+   - `TotalRowsToWrite`  
+   - `TotalRowsToLimit`  
+   - `SQLInsert`  
+10. Return that object.  
 
 
 
