@@ -20,7 +20,7 @@ This script is built to perform the uninstallation of the Network Glue Collector
 
 ## Dependencies
 
-[Documentation Link](https://proval.itglue.com/5078775/docs/12578871)
+[Remove Application CWA Script](/docs/494f7109-e4b2-4ffa-93f8-e33089b09b4e)
 
 ## Variables
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is a duplicate of [Script - ScreenConnect - Update Custom Property* [RMM+,Param]](https://proval.itglue.com/DOC-5078775), which has been specifically designed to set the "`Vendor Restricted`" custom property in the CW Control Portal. It will set the custom property value to "`Restricted`" to restrict the machine to the vendor and "`Unrestricted`" to remove its restriction.
+This script is a duplicate of [Script - ScreenConnect - Update Custom Property* [RMM+,Param]](/docs/b634da09-7507-466f-be5e-f7a8d62aacf7), which has been specifically designed to set the "`Vendor Restricted`" custom property in the CW Control Portal. It will set the custom property value to "`Restricted`" to restrict the machine to the vendor and "`Unrestricted`" to remove its restriction.
 
 The system property `PropertyIndex` needs to be set before running the script.
 
@@ -25,7 +25,7 @@ The system property `PropertyIndex` needs to be set before running the script.
 ## Dependencies
 
 - [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
-- [Restrict Vendor Access to Clients](https://proval.itglue.com/DOC-5078775-8324532)
+- [Restrict Vendor Access to Clients](/docs/48cd317b-4188-4881-b9c3-411cd0323508)
 - [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
 
 #### Variables
@@ -44,7 +44,7 @@ The system property `PropertyIndex` needs to be set before running the script.
 
 | Name                    | Example | Required                              | Description                                                                                                                                                                                                                  |
 |-------------------------|---------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Set_Environment`       | 1       | True (for first time run only)       | Set its value to '1' to create "`Restrict Vendor Access`" EDFs, "`PropertyIndex`" System Properties, "`Vendor Restricted - Super Admin`" user class, "`Restricted Vendor Access`" search, and "`Restrict Vendor Access`" group. These are all required for [Restrict Vendor Access to Clients](https://proval.itglue.com/DOC-5078775-8324532). |
+| `Set_Environment`       | 1       | True (for first time run only)       | Set its value to '1' to create "`Restrict Vendor Access`" EDFs, "`PropertyIndex`" System Properties, "`Vendor Restricted - Super Admin`" user class, "`Restricted Vendor Access`" search, and "`Restrict Vendor Access`" group. These are all required for [Restrict Vendor Access to Clients](/docs/48cd317b-4188-4881-b9c3-411cd0323508). |
 | `Set_Client_Permissions` | 1       | True (for first time after creating the `Super Admin - Restricted Vendor Access` user class) | Set its value to '1' in order to add `Super Admin - Restricted Vendor Access` full permissions to the selected client.                                                                                                       |
 
 ## System Properties

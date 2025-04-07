@@ -52,7 +52,7 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 
 2. Import the `△ Custom - Ticket Creation - Computer` alert template from the `ProSync` plugin if it's missing in the environment.
 
-3. Import the [Memory Threshold Violation Monitor - Create](https://proval.itglue.com/5078775/docs/16245029) script from the `ProSync` plugin.
+3. Import the [Memory Threshold Violation Monitor - Create](/docs/28530e35-7416-48c4-b56d-897c7d4727f6) script from the `ProSync` plugin.
 
 4. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.

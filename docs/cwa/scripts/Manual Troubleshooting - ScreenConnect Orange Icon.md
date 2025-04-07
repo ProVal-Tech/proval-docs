@@ -99,7 +99,7 @@ Wait for the command to complete and then restart the computer. It is not mandat
 
 ## Step 10
 
-After the computer starts, check back with Automate post-restart; run the [`ScreenConnect - Repair [RMM+, Autofix, Globals]*`](https://proval.itglue.com/5078775/docs/8216334) script, and wait for the script to complete.  
+After the computer starts, check back with Automate post-restart; run the [`ScreenConnect - Repair [RMM+, Autofix, Globals]*`](/docs/43225bbe-98a0-4352-8fb2-79e7431dea10) script, and wait for the script to complete.  
 ![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_11.png)  
 ![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_12.png)
 

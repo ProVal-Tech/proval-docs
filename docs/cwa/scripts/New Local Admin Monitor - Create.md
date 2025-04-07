@@ -59,7 +59,7 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 
 1. Import the `△ Custom - Ticket Creation - Computer - Failures Only` alert template from the `ProSync` plugin if it's missing in the environment.
 
-2. Import the [New Local Admin Monitor - Create](https://proval.itglue.com/5078775/docs/16548726) script from the `ProSync` plugin.
+2. Import the [New Local Admin Monitor - Create](/docs/c3e994ea-ed6d-4ae8-a4dc-0200d87208d5) script from the `ProSync` plugin.
 
 3. **Run/Debug the Script**  
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  

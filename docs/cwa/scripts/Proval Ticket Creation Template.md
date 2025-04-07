@@ -46,7 +46,7 @@ This document establishes a new standard for creating tickets for our clients.
 ## Example Script
 
 - The Proval Ticket Creation Template example can be referenced to see how to use this script.
-- [SWM - Software Configuration - Script - Sentinel One Settings Verification](https://proval.itglue.com/DOC-5078775-12183318) uses this script.
+- [Sentinel One Settings Verification](/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5) uses this script.
 
 ## Variables
 

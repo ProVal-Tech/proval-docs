@@ -44,12 +44,12 @@ Additionally, the script will send an email to [alerts@provaltech.com](mailto:al
 
 **Subject:** `ScreenConnect - Failed - %ClientName%//%ComputerName%`
 
-**Ticket Body for Session GUID issue:**  
+**Ticket Body for Session GUID issue:**
 ```
 Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
 Reason: Script was unable to set the session GUID on the machine post-installation.
 Please reinstall the ScreenConnect Client manually on the computer.
-Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
+Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
 
 **Ticket Body for installation failure:**  
@@ -58,7 +58,7 @@ Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
 Reason: Script was unable to install the ScreenConnect Client on the machine.
 Install Command Result: @InstallResult@
 Please reinstall the application manually.
-Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
+Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
 
 **Ticket Body for uninstallation failure:**  
@@ -66,7 +66,7 @@ Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
 Reason: Automate has executed the autofix script 3 times over the last 7 days, but the problem still persists.
 Please reinstall the ScreenConnect Client manually on the computer.
-Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
+Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
 
 **Ticket Body for more than 3 attempts in a week:**  
@@ -74,7 +74,7 @@ Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
 Autofix failed to fix ScreenConnect's issue for %ClientName%\\%ComputerName%
 Reason: Automate has executed the autofix script 3 times over the last 7 days, but the problem still persists.
 Please reinstall the ScreenConnect Client manually on the computer.
-Manual Troubleshooting guide: https://proval.itglue.com/DOC-5078775-13282507
+Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
 
 

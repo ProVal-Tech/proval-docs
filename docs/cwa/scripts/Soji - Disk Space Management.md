@@ -22,13 +22,13 @@ Please refer to the Soji documentation for argument options.
 
 ## Dependencies
 
-- [Soji](https://proval.itglue.com/DOC-5078775-10338558)
+- [Soji](https://github.com/ProVal-Tech/Soji)
 
 ### User Parameters
 
 | Name      | Example                | Required | Description                                                                 |
 |-----------|------------------------|----------|-----------------------------------------------------------------------------|
-| Arguments | --drives c,f --json    | False    | Please refer to [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argument usage. |
+| Arguments | --drives c,f --json    | False    | Please refer to [Soji](https://github.com/ProVal-Tech/Soji) for argument usage. |
 
 ## Process
 

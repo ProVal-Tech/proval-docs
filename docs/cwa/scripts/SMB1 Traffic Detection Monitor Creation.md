@@ -30,7 +30,7 @@ Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de6
    - Take note of the Alert Template and Ticket Category applied to it.
      ![Image](../../../static/img/SMB1-Traffic-Detection-Monitor-Creation/image_3.png)
 
-2. **Import the** [**`SMB1 Traffic Detection Monitor Creation`**](https://proval.itglue.com/5078775/docs/17454586#version=draft&documentMode=edit) **script from the** `ProSync` **plugin.**
+2. **Import the** [**`SMB1 Traffic Detection Monitor Creation`**](/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9) **script from the** `ProSync` **plugin.**
 
 3. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.

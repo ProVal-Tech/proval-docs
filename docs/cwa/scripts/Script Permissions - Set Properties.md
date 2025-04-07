@@ -54,7 +54,7 @@ In essence, this script ensures proper management of permissions for scripts wit
 
 ## Implementation
 
-1. Import the [Script Permissions - Set [Properties]](https://proval.itglue.com/5078775/docs/15204546) script from the `ProSync` plugin.
+1. Import the [Script Permissions - Set [Properties]](/docs/f4a08fe7-fb91-4bfb-9650-fb8da3ebd5b2) script from the `ProSync` plugin.
 
 2. Execute the script against any client with the `Set_Environment` parameter set to `1` to create the associated system properties.  
    ![Image](../../../static/img/Script-Permissions---Set-Properties/image_8.png)

@@ -48,7 +48,7 @@ This script can be used to reinstall the Huntress Agent for Windows machines.
 
 | Name                             | Type      | Example | Section        | Required | Description                                                                                                                                                                  |
 | -------------------------------- | --------- | ------- | -------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Huntress Agent Install - Exclude | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the auto deployment of the Huntress Agent from the [Deploy Huntress Agent](../monitors/Deploy%20Huntress%20Agent.md) monitor set. |
+| Huntress Agent Install - Exclude | Check-Box | 0/1     | Security Tools | False    | Mark this EDF to exclude the location from the auto deployment of the Huntress Agent from the [Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) monitor set. |
 
 **This EDF can be created by running the [Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf) script with the `Set_Environment` parameter set to `1`.**
 

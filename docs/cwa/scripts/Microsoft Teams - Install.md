@@ -20,11 +20,11 @@ This document describes the installation of the Teams Machine-wide Installer and
 
 ## Dependencies
 
-- [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723)
+- [Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf)
 
 ## Process
 
-Refer to [Deploy-MSTeams](https://proval.itglue.com/DOC-5078775-8204723) for detailed process information.
+Refer to [Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf) for detailed process information.
 
 ## Output
 

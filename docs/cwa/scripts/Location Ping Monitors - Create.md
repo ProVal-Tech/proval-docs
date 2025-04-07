@@ -27,7 +27,7 @@ This document details the procedure for setting up Remote Monitors for Location 
 1. **Remove the `NTW - Ping Monitor \<Client Name> - \<Location Name>` if it exists from the environment to avoid duplicate alerts.**
 
 2. **Import/Update the following content from the `ProSync` plugin:**
-   - [Script - Location Ping Monitors - Create](https://proval.itglue.com/5078775/docs/16050276)
+   - [Script - Location Ping Monitors - Create](/docs/c9c8a58e-fd25-4596-822c-b6847c782e9c)
    - [Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
    - Alert Template - △ Custom - Ticket Creation - Ping Monitor
 

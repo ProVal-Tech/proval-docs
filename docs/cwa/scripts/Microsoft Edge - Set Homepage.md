@@ -24,7 +24,7 @@ This script adds the registry policy for an enforced homepage in Microsoft Edge 
 
 - Windows 10 1703+
 - Microsoft Edge
-- [Set-EdgeHomepage](https://proval.itglue.com/DOC-5078775-7348072)
+- [Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
 ## Variables
 

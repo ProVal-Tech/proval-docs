@@ -19,7 +19,7 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
 | Content                                                                 | Type            | Function                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CWM - Automate - Script - Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78) | Script          | This is a wrapper script that can be used to offboard machines from the client's environment by defining the scripts to be run before offboarding the machine.                                                                                 |
-| [CWM - Automate - Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996) | Template Script  | Template script to be used with [CWM - Automate - Script - Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78) to run Child scripts. This script needs to be duplicated and modified as per the client's requirements.               |
+| [CWM - Automate - Template - Offboarding Scripts - Partner](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c) | Template Script  | Template script to be used with [CWM - Automate - Script - Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78) to run Child scripts. This script needs to be duplicated and modified as per the client's requirements.               |
 | [CWM - Automate - Internal Monitor - Offboarding](/docs/5721d83a-3303-4dc2-97ca-118683da0690) | Internal Monitor | The purpose of this monitor is to detect the clients, locations, or machines opted for offboarding.                                                                                                                                           |
 | `△ Custom - Execute Script - Offboarding Wrapper`                       | Alert Template   | Executes the script [CWM - Automate - Script - Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78) against the computers detected in the monitor set [CWM - Automate - Internal Monitor - Offboarding](/docs/5721d83a-3303-4dc2-97ca-118683da0690). |
 
@@ -39,8 +39,8 @@ The purpose of this solution is to facilitate the Offboarding Process as per the
 
 5. Configure the solution as follows:
    - Go to Automation → Scripts → View Scripts → 'ProVal/Client Specific' folder
-     - Duplicate [Script - Offboarding Scripts - Partner [Template]](https://proval.itglue.com/DOC-5078775-15281996)
-       - Update the duplicated script as per the client's requirements as defined in [Template - Offboarding Scripts - Partner](https://proval.itglue.com/DOC-5078775-15281996).
+     - Duplicate [Script - Offboarding Scripts - Partner [Template]](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c)
+       - Update the duplicated script as per the client's requirements as defined in [Template - Offboarding Scripts - Partner](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c).
      - Under 'ProVal/Automate' - Open the [Script - Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78)
      - Update the script to use this updated script instead of the template one.
    - Ask the consultant if the client would like to set up a 'Failed Uninstall Process'.

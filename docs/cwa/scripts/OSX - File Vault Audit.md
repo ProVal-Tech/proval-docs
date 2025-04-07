@@ -22,7 +22,7 @@ It is recommended to schedule the script to run daily against the Mac machines t
 
 ## Dependencies
 
-[CWM - Automate - Dataview - OSX - File Vault Audit [Script]](https://proval.itglue.com/5078775/docs/10027996)
+[File Vault Audit](/docs/e64d9e93-4fd1-4643-8ffe-bc62492ed6cc)
 
 ## Process
 
