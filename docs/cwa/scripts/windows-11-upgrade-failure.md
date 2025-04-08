@@ -1,5 +1,5 @@
 ---
-id: '27f8240b-603a-4af2-b9d9-480a560f8747'
+id: 'ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52'
 title: 'Windows 11 Upgrade Failure [Ticket]'
 title_meta: 'Windows 11 Upgrade Failure [Ticket]'
 keywords: ['upgrade', 'windows', 'windows-11', 'window-10', 'failure', 'ticket', 'reporting']
