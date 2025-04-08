@@ -10,14 +10,14 @@ unlisted: false
 ---
 
 ## Summary
+
 Displays the status of compatible Windows 10 computers upgraded by the [Install Windows 11 - Compatible Machines](<../monitors/Install Windows 11 - Compatible Machines.md>) monitor and [Windows 11 installer](../scripts/Windows%20_11_Installer.md) script.
 
-
 ## Dependencies
-[Install Windows 11 - Compatible Machines](<../monitors/Install Windows 11 - Compatible Machines.md>)   
-[Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)   
-[Solution - Windows 11 Compatibility Audit ](<../../solutions/Windows 11 Compatibility Audit.md>)
 
+[Install Windows 11 - Compatible Machines](<../monitors/Install Windows 11 - Compatible Machines.md>)  
+[Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)  
+[Solution - Windows 11 Compatibility Audit ](<../../solutions/Windows 11 Compatibility Audit.md>)
 
 ## Columns
 
