@@ -15,7 +15,6 @@ foreach ($doc in $docs) {
             if($content[$i] -match "id: (.*)") {
                 $slug = "/" + ($matches[1] -replace "'|""", "")
                 $idIndex = $i
-                break
             }
             if($content[$i] -match "slug:") {
                 $slugIndex = $i
