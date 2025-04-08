@@ -1,5 +1,6 @@
 ---
 id: 'e9ec73dd-98b1-4436-a027-4ee8906f7cba'
+slug: /e9ec73dd-98b1-4436-a027-4ee8906f7cba
 title: 'cPVAL Roles Detected'
 title_meta: 'cPVAL Roles Detected'
 keywords: ['roles', 'custom-fields']

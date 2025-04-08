@@ -1,5 +1,6 @@
 ---
 id: '27f8240b-603a-4af2-b9d9-480a560f8747'
+slug: /27f8240b-603a-4af2-b9d9-480a560f8747
 title: 'Install Windows 11 Feature Update [Beta, Reboot]'
 title_meta: 'Install Windows 11 Feature Update [Beta, Reboot]'
 keywords: ['install', 'feature update', 'upgrade', 'windows', 'windows 11', 'troubleshooting', 'reboot']

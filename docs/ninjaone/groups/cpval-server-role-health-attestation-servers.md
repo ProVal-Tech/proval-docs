@@ -1,5 +1,6 @@
 ---
 id: '017bdfd2-819f-4927-b932-0a9d901269fa'
+slug: /017bdfd2-819f-4927-b932-0a9d901269fa
 title: 'cPVAL - Server Role - Health Attestation Servers'
 title_meta: 'cPVAL - Server Role - Health Attestation Servers'
 keywords: ['windows', 'servers', 'role', 'dhs', 'device-health-attestation']

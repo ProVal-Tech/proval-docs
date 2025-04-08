@@ -1,5 +1,6 @@
 ---
 id: 'be3e8ffa-2c72-44d0-ad0f-d540621297bd'
+slug: /be3e8ffa-2c72-44d0-ad0f-d540621297bd
 title: 'cPVAL - Server Role - Essentials Servers'
 title_meta: 'cPVAL - Server Role - Essentials Servers'
 keywords: ['windows', 'servers', 'role', 'essential-experience']

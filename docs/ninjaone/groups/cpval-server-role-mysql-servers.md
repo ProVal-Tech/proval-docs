@@ -1,5 +1,6 @@
 ---
 id: '6775c1f0-69b0-42e7-bdec-1fb373c976a3'
+slug: /6775c1f0-69b0-42e7-bdec-1fb373c976a3
 title: 'cPVAL - Server Role - MySQL Servers'
 title_meta: 'cPVAL - Server Role - MySQL Servers'
 keywords: ['windows', 'servers', 'role', 'mysql']

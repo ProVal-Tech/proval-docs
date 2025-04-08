@@ -1,5 +1,6 @@
 ---
 id: '0a0787f3-c7e8-4cf2-8522-3253ec7d915b'
+slug: /0a0787f3-c7e8-4cf2-8522-3253ec7d915b
 title: 'cPVAL - Server Role - Veeam BDR'
 title_meta: 'cPVAL - Server Role - Veeam BDR'
 keywords: ['windows', 'servers', 'role', 'veeam', 'bdr']

@@ -1,5 +1,6 @@
 ---
 id: '4f82968d-8ba6-4548-a7c4-76df6e08fc1e'
+slug: /4f82968d-8ba6-4548-a7c4-76df6e08fc1e
 title: 'cPVAL - Server Role - LDS Servers'
 title_meta: 'cPVAL - Server Role - LDS Servers'
 keywords: ['windows', 'servers', 'role', 'lds', 'lightweight-directory-services', 'domain']

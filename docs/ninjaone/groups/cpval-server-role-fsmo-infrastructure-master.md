@@ -1,5 +1,6 @@
 ---
 id: '2457d317-b37a-46e4-9f1d-c8687ed8ef62'
+slug: /2457d317-b37a-46e4-9f1d-c8687ed8ef62
 title: 'cPVAL - Server Role - FSMO - Infrastructure Master'
 title_meta: 'cPVAL - Server Role - FSMO - Infrastructure Master'
 keywords: ['windows', 'servers', 'role', 'infrastructure-master', 'domain-controller', 'fsmo']

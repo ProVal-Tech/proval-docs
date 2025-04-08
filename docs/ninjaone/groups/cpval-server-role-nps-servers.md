@@ -1,5 +1,6 @@
 ---
 id: 'd743519c-45d0-4adb-80c9-775e4b5273d2'
+slug: /d743519c-45d0-4adb-80c9-775e4b5273d2
 title: 'cPVAL - Server Role - NPS Servers'
 title_meta: 'cPVAL - Server Role - NPS Servers'
 keywords: ['windows', 'servers', 'role', 'nps', 'network-policy']

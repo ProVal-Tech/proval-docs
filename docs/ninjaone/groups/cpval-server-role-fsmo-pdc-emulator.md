@@ -1,5 +1,6 @@
 ---
 id: '4cccc5a2-14f6-4fb0-aa05-1697b09b71f3'
+slug: /4cccc5a2-14f6-4fb0-aa05-1697b09b71f3
 title: 'cPVAL - Server Role - FSMO - PDC Emulator'
 title_meta: 'cPVAL - Server Role - FSMO - PDC Emulator'
 keywords: ['windows', 'servers', 'role', 'pdc-emulator', 'domain-controller', 'fsmo']

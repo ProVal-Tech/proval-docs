@@ -1,5 +1,6 @@
 ---
 id: '837e00a9-4fde-4457-9516-591da7ba4da0'
+slug: /837e00a9-4fde-4457-9516-591da7ba4da0
 title: 'Install-Windows11FeatureUpdate'
 title_meta: 'Install-Windows11FeatureUpdate'
 keywords: ['install', 'featureupdate', 'upgrade', 'windows', 'windows11', 'troubleshooting', 'reboot']

@@ -1,5 +1,6 @@
 ---
 id: 'adafb1f3-2479-4e1a-97cf-def85bf8d569'
+slug: /adafb1f3-2479-4e1a-97cf-def85bf8d569
 title: 'cPVAL - Server Role - Exchange Servers'
 title_meta: 'cPVAL - Server Role - Exchange Servers'
 keywords: ['windows', 'servers', 'role', 'exchange-server', 'mail-server']

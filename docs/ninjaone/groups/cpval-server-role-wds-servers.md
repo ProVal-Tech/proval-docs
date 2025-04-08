@@ -1,5 +1,6 @@
 ---
 id: '97d48d7a-a94f-4fd8-bc43-e4b3b10c79c5'
+slug: /97d48d7a-a94f-4fd8-bc43-e4b3b10c79c5
 title: 'cPVAL - Server Role - WDS Servers'
 title_meta: 'cPVAL - Server Role - WDS Servers'
 keywords: ['windows', 'servers', 'role', 'wds', 'windows-deployment-services']

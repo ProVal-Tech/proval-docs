@@ -1,5 +1,6 @@
 ---
 id: '98db2e18-5f75-429f-a714-170025450b63'
+slug: /98db2e18-5f75-429f-a714-170025450b63
 title: 'cPVAL - Server Role - DNS Servers'
 title_meta: 'cPVAL - Server Role - DNS Servers'
 keywords: ['windows', 'servers', 'role', 'dns']

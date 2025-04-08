@@ -1,5 +1,6 @@
 ---
 id: '61a7e090-eceb-475b-9080-16e288327411'
+slug: /61a7e090-eceb-475b-9080-16e288327411
 title: 'cPVAL - Server Role - FSMO - Domain Naming Master'
 title_meta: 'cPVAL - Server Role - FSMO - Domain Naming Master'
 keywords: ['windows', 'servers', 'role', 'domain-controller', 'domain-naming-master', 'fsmo']

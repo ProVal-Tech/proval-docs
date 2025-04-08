@@ -1,5 +1,6 @@
 ---
 id: '421f9858-2a1c-4f38-b788-8b38e979095e'
+slug: /421f9858-2a1c-4f38-b788-8b38e979095e
 title: 'cPVAL - Server Role - WSUS Servers'
 title_meta: 'cPVAL - Server Role - WSUS Servers'
 keywords: ['windows', 'servers', 'role', 'wsus', 'windows-server-update-services']

@@ -1,5 +1,6 @@
 ---
 id: 'bd7972f7-1175-463f-8b6f-3cf1d5fdbf99'
+slug: /bd7972f7-1175-463f-8b6f-3cf1d5fdbf99
 title: 'cPVAL - Server Role - SharePoint Servers'
 title_meta: 'cPVAL - Server Role - SharePoint Servers'
 keywords: ['windows', 'servers', 'role', 'sharepoint']

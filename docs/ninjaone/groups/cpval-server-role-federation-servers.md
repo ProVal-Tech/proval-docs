@@ -1,5 +1,6 @@
 ---
 id: '18b85f9f-084b-4862-a58c-3de6996ebf52'
+slug: /18b85f9f-084b-4862-a58c-3de6996ebf52
 title: 'cPVAL - Server Role - Federation Servers'
 title_meta: 'cPVAL - Server Role - Federation Servers'
 keywords: ['windows', 'servers', 'role', 'adfs', 'federation-server']

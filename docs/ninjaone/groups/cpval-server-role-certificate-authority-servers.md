@@ -1,5 +1,6 @@
 ---
 id: '2b5f6e75-c2d7-4c48-b147-dee2527d9922'
+slug: /2b5f6e75-c2d7-4c48-b147-dee2527d9922
 title: 'cPVAL - Server Role - Certificate Authority Servers'
 title_meta: 'cPVAL - Server Role - Certificate Authority Servers'
 keywords: ['windows', 'servers', 'role', 'active-directory', 'domain', 'certificate']

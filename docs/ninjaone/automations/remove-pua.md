@@ -1,5 +1,6 @@
 ---
 id: 'a69cad76-0704-423b-88af-d23c49c9fc79'
+slug: /a69cad76-0704-423b-88af-d23c49c9fc79
 title: 'Remove - PUA'
 title_meta: 'Remove - PUA'
 keywords: ['PUA', 'bloatware', 'application', 'remove']

@@ -1,5 +1,6 @@
 ---
 id: 'e06f0af4-33e6-4a5a-93eb-5e56e8b06e0d'
+slug: /e06f0af4-33e6-4a5a-93eb-5e56e8b06e0d
 title: 'cPVAL - Server Role - Web Servers'
 title_meta: 'cPVAL - Server Role - Web Servers'
 keywords: ['windows', 'servers', 'role', 'iis', 'web-server']

@@ -1,5 +1,6 @@
 ---
 id: 'f04b8cf8-4dd2-4d7e-b9ea-5971d2168ffe'
+slug: /f04b8cf8-4dd2-4d7e-b9ea-5971d2168ffe
 title: 'Manage Network Adapter Protocols'
 title_meta: 'Manage Network Adapter Protocols'
 keywords: ['DHCP','windows','networking','Protocol','IPV4','IPv6','Script','Automate']
@@ -38,7 +39,6 @@ This solution manages network protocols on Windows machines, including enabling,
      - [ProVal - Production - Manage Network Adapters](/docs) 
        - `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
        - Right-click and Run Now to start the monitor.
-
 
 
 

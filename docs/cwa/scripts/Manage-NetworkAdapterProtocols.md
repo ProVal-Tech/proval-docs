@@ -1,5 +1,6 @@
 ---
 id: 'c5d35def-c815-4d69-b015-9b083ec05edd'
+slug: /c5d35def-c815-4d69-b015-9b083ec05edd
 title: 'Manage - Network Adapter Protocols'
 title_meta: 'Manage - Network Adapter Protocols'
 keywords: ['DHCP','windows','networking','Protocol','IPV4','IPv6','Script','Automate']

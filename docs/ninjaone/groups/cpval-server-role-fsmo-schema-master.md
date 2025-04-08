@@ -1,5 +1,6 @@
 ---
 id: 'c5dffd43-67a3-47af-83ef-68e24c4e6c07'
+slug: /c5dffd43-67a3-47af-83ef-68e24c4e6c07
 title: 'cPVAL - Server Role - FSMO - Schema Master'
 title_meta: 'cPVAL - Server Role - FSMO - Schema Master'
 keywords: ['windows', 'servers', 'role', 'fsmo', 'schema-master', 'domain-controller']

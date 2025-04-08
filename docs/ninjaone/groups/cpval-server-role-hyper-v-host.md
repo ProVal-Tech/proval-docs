@@ -1,5 +1,6 @@
 ---
 id: 'cf5d5ac8-bc9c-400d-a130-2e19866df942'
+slug: /cf5d5ac8-bc9c-400d-a130-2e19866df942
 title: 'cPVAL - Server Role - Hyper-V Host'
 title_meta: 'cPVAL - Server Role - Hyper-V Host'
 keywords: ['windows', 'servers', 'role', 'host', 'hyper-v']

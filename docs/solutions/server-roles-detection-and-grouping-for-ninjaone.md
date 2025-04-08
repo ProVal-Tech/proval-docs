@@ -1,5 +1,6 @@
 ---
 id: '56ed4b40-11ce-4f8d-b1ca-c897d2c496e6'
+slug: /56ed4b40-11ce-4f8d-b1ca-c897d2c496e6
 title: 'Server Roles Detection and Grouping for NinjaOne'
 title_meta: 'Server Roles Detection and Grouping for NinjaOne'
 keywords: ['ninja', 'roles', 'server-roles']

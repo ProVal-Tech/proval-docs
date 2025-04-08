@@ -1,5 +1,6 @@
 ---
 id: '58235f08-f095-4242-955f-d369947fb512'
+slug: /58235f08-f095-4242-955f-d369947fb512
 title: 'cPVAL - Server Role - File Servers'
 title_meta: 'cPVAL - Server Role - File Servers'
 keywords: ['windows', 'servers', 'role', 'file', 'storage', 'file-server']

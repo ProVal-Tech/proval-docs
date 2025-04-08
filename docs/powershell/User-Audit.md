@@ -1,5 +1,6 @@
 ---
 id: 'b2914f30-25ee-4d74-ac6a-77260b88ddcb'
+slug: /b2914f30-25ee-4d74-ac6a-77260b88ddcb
 title: 'User-Audit'
 title_meta: 'User-Audit'
 keywords: ['user', 'test', 'audit', 'logs', 'SID']
@@ -38,6 +39,5 @@ This will fetch any users containing a "Test" or "Pro" string. If the agent is a
 
 ## Output
 - Script Log
-
 
 

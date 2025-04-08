@@ -1,5 +1,6 @@
 ---
 id: '5cda8c79-bcd0-4226-b5a4-db846b9b35a9'
+slug: /5cda8c79-bcd0-4226-b5a4-db846b9b35a9
 title: 'Windows Server Roles Detection'
 title_meta: 'Windows Server Roles Detection'
 keywords: ['roles', 'server-roles', 'powershell', 'custom-fields']

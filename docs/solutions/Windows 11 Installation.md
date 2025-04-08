@@ -1,5 +1,6 @@
 ---
 id: '00b08a60-f202-42db-9f67-a76ea29289fa'
+slug: /00b08a60-f202-42db-9f67-a76ea29289fa
 title: 'Windows 11 Installation'
 title_meta: 'Windows 11 Installation'
 keywords: ['windows', 'readiness', 'plugin', 'compatibility', 'upgrade']
@@ -60,4 +61,3 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
 | Exclude Windows 11 Installation  | Check-Box  | Location | Exclusions  | Exclude location from the automation.                                      |
 | Exclude Windows 11 Installation  | Check-Box  | Computer | Exclusions  | Exclude location from the computer.                                        |
 | Windows 11 Installation Attempts | Text       | Computer | Default     | A non-editable EDF, updated by [Script : Windows 11 Installer](<../cwa/scripts/Windows _11_Installer.md>)  to keep track of the number of scripts run. |
-

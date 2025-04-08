@@ -1,5 +1,6 @@
 ---
 id: 'f54e6bdd-85a5-4f32-8dae-1f20874bd8c9'
+slug: /f54e6bdd-85a5-4f32-8dae-1f20874bd8c9
 title: 'cPVAL - Server Role - MSSQL Servers'
 title_meta: 'cPVAL - Server Role - MSSQL Servers'
 keywords: ['windows', 'servers', 'role', 'mssql', 'sql-server']

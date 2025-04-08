@@ -1,5 +1,6 @@
 ---
 id: '0a1bc9ec-0905-4070-894a-99c8527222fa'
+slug: /0a1bc9ec-0905-4070-894a-99c8527222fa
 title: 'cPVAL - Server Role - DHCP Servers'
 title_meta: 'cPVAL - Server Role - DHCP Servers'
 keywords: ['windows', 'servers', 'role', 'dhcp']

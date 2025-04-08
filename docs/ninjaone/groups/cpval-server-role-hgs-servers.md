@@ -1,5 +1,6 @@
 ---
 id: '4e0d2ac4-0cfd-4b77-8714-10d7e82d9f3f'
+slug: /4e0d2ac4-0cfd-4b77-8714-10d7e82d9f3f
 title: 'cPVAL - Server Role - HGS Servers'
 title_meta: 'cPVAL - Server Role - HGS Servers'
 keywords: ['windows', 'servers', 'role', 'hgs', 'host-guardian-service']

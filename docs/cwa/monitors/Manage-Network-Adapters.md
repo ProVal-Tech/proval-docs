@@ -1,5 +1,6 @@
 ---
 id: '3a35f74d-113e-4e0f-83b2-f3c3daacccb1'
+slug: /3a35f74d-113e-4e0f-83b2-f3c3daacccb1
 title: 'Manage Network Adapters'
 title_meta: 'Manage Network Adapters'
 keywords: ['DHCP','windows','networking','Protocol','IPV4','IPv6','Script','Automate']

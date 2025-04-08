@@ -1,5 +1,6 @@
 ---
 id: '89562472-df5d-4440-a6b8-fafb0a722276'
+slug: /89562472-df5d-4440-a6b8-fafb0a722276
 title: 'cPVAL - Server Role - RMS Servers'
 title_meta: 'cPVAL - Server Role - RMS Servers'
 keywords: ['windows', 'servers', 'role', 'rms', 'right-management-servers', 'domain']

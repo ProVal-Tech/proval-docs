@@ -1,5 +1,6 @@
 ---
 id: 'ef8d1997-f627-4f48-84ad-4408821023bc'
+slug: /ef8d1997-f627-4f48-84ad-4408821023bc
 title: 'cPVAL - Server Role - Remote Access Servers'
 title_meta: 'cPVAL - Server Role - Remote Access Servers'
 keywords: ['windows', 'servers', 'role', 'remote-access']

@@ -1,5 +1,6 @@
 ---
 id: '95fa08c8-b695-49ea-b966-ec19d35f1530'
+slug: /95fa08c8-b695-49ea-b966-ec19d35f1530
 title: 'cPVAL - Server Role - RDS Servers'
 title_meta: 'cPVAL - Server Role - RDS Servers'
 keywords: ['windows', 'servers', 'role', 'rds', 'remote-desktop-services']

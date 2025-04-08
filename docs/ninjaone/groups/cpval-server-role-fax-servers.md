@@ -1,5 +1,6 @@
 ---
 id: '20beea1d-11fc-45c4-a09f-26b7ae45f362'
+slug: /20beea1d-11fc-45c4-a09f-26b7ae45f362
 title: 'cPVAL - Server Role - Fax Servers'
 title_meta: 'cPVAL - Server Role - Fax Servers'
 keywords: ['windows', 'servers', 'role', 'fax']

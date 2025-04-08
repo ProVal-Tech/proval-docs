@@ -1,5 +1,6 @@
 ---
 id: '8190880d-75c3-40cb-b6b0-4b417091fea3'
+slug: /8190880d-75c3-40cb-b6b0-4b417091fea3
 title: 'cPVAL - Server Role - Domain Controllers'
 title_meta: 'cPVAL - Server Role - Domain Controllers'
 keywords: ['windows', 'servers', 'role', 'active-directory', 'domain', 'domain-controller']

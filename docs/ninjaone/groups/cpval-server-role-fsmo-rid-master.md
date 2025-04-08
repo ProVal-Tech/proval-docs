@@ -1,5 +1,6 @@
 ---
 id: '06def974-103d-4c54-b227-08ac5c6f2b17'
+slug: /06def974-103d-4c54-b227-08ac5c6f2b17
 title: 'cPVAL - Server Role - FSMO - RID Master'
 title_meta: 'cPVAL - Server Role - FSMO - RID Master'
 keywords: ['windows', 'servers', 'role', 'rid-master', 'domain-controller', 'fsmo']

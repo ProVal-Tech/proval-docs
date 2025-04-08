@@ -1,5 +1,6 @@
 ---
 id: '77a5bf0c-9f6e-49ca-aec3-dc22671bc5ac'
+slug: /77a5bf0c-9f6e-49ca-aec3-dc22671bc5ac
 title: 'cPVAL - Server Role - Volume Activation Servers'
 title_meta: 'cPVAL - Server Role - Volume Activation Servers'
 keywords: ['windows', 'servers', 'role', 'volume-activation-services']

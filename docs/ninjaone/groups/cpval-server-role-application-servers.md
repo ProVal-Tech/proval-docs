@@ -1,5 +1,6 @@
 ---
 id: '9316845d-5924-4397-80eb-7ecd6b27a1e1'
+slug: /9316845d-5924-4397-80eb-7ecd6b27a1e1
 title: 'cPVAL - Server Role - Application Servers'
 title_meta: 'cPVAL - Server Role - Application Servers'
 keywords: ['windows', 'servers', 'role','app-server', 'application-server']

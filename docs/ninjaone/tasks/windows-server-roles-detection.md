@@ -1,5 +1,6 @@
 ---
 id: '8bbf34f6-8c05-4776-9f8c-c589944b4042'
+slug: /8bbf34f6-8c05-4776-9f8c-c589944b4042
 title: 'Windows Server Roles Detection'
 title_meta: 'Windows Server Roles Detection'
 keywords: ['task', 'scheduled-task', 'roles']

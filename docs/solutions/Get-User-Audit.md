@@ -1,5 +1,6 @@
 ---
 id: '2d1e82e1-7c9e-460b-83e9-d333471376d3'
+slug: /2d1e82e1-7c9e-460b-83e9-d333471376d3
 title: 'Get User Audit'
 title_meta: 'Get User Audit'
 keywords: ['user', 'test', 'audit', 'logs', 'SID']
@@ -52,5 +53,4 @@ Pronoc
 Suprotech
 
 Protest
-
 

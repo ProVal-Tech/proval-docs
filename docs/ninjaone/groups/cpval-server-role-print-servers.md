@@ -1,5 +1,6 @@
 ---
 id: '3dc58c7d-f2b2-42f1-9417-c075a8e268d7'
+slug: /3dc58c7d-f2b2-42f1-9417-c075a8e268d7
 title: 'cPVAL - Server Role - Print Servers'
 title_meta: 'cPVAL - Server Role - Print Servers'
 keywords: ['windows', 'servers', 'role', 'print', 'document', 'print-server']

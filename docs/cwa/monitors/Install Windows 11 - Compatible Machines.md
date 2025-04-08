@@ -1,5 +1,6 @@
 ---
 id: 'db122f12-3d6b-48ae-8c8b-e9de9797ecad'
+slug: /db122f12-3d6b-48ae-8c8b-e9de9797ecad
 title: 'Install Windows 11 - Compatible Machines'
 title_meta: 'Install Windows 11 - Compatible Machines'
 keywords: ['windows','monitor', 'readiness','compatibility', 'upgrade']
