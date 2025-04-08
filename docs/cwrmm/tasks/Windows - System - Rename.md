@@ -211,7 +211,7 @@ if (!(Test-Path -Path $PS1Path)) {
 
 ### Row 5: Logic: If/Then
 
-Add a new logic in the Else section and select `If/Then`.
+Add a new logic and select `If/Then`.
 
 ![If/Then](<../../../static/img/docs/Windows - System - Rename/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.png>)
 
@@ -219,7 +219,7 @@ Add a new logic in the Else section and select `If/Then`.
 
 ### Row 5a: Condition: Output Contains
 
-In the IF part, enter `An error occurred` in the right box of the "Output Does Not Contains" part.
+In the IF part, enter `An error occurred` in the right box of the "Output Contains" part.
 
 ![Condition](<../../../static/img/docs/Windows - System - Rename/{D1A3F413-991F-408D-BBCB-838D49E180F9}.png>)
 
@@ -333,7 +333,7 @@ if ($Reboot -eq 'True' -or $Reboot -eq 1) {
 
 ### Row 9 Logic: If/Then
 
-Add a new logic in the Else section and select `If/Then`.
+Add a new logic and select `If/Then`.
 
 ![If/Then](<../../../static/img/docs/Windows - System - Rename/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.png>)
 
@@ -341,7 +341,7 @@ Add a new logic in the Else section and select `If/Then`.
 
 ### Row 9a: Condition: Output Contains
 
-In the IF part, enter `An error occurred` in the right box of the "Output Does Not Contains" part.
+In the IF part, enter `An error occurred` in the right box of the "Output Contains" part.
 
 ![Condition](<../../../static/img/docs/Windows - System - Rename/{D1A3F413-991F-408D-BBCB-838D49E180F9}.png>)
 
