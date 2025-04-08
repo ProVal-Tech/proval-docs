@@ -22,7 +22,7 @@ This custom field stores the list of roles detected on a Windows server.
 
 ## Dependencies
 
-[Windows Server Roles Detection](../custom-fields/cpval-roles-detected.md)
+[Windows Server Roles Detection](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## Custom Field Creation
 

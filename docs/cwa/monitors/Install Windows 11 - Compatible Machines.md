@@ -15,7 +15,7 @@ The monitor set is configured to execute [Script: Windows 11 installer](../scrip
 
 
 ## Dependencies
-[Solution: Windows 11 Compatibility Audit](<../../solutions/Windows 11 Compatibility Audit.md>)  
+[Solution: Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)  
 [Script: Windows 11 installer](../scripts/Windows%20_11_Installer.md)  
 [Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)  
 Alert Template: △ Custom - Install Windows 11 - Compatible Machines

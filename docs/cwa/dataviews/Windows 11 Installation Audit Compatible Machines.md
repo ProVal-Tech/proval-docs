@@ -1,5 +1,6 @@
 ---
 id: 'a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce'
+slug: /a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce
 title: 'Windows 11 Installation Audit [Compatible Machines]'
 title_meta: 'Windows 11 Installation Audit [Compatible Machines]'
 keywords: ['windows', 'readiness', 'report', 'compatibility', 'upgrade']
@@ -10,13 +11,13 @@ unlisted: false
 ---
 
 ## Summary
-Displays the status of compatible Windows 10 computers upgraded by the [Install Windows 11 - Compatible Machines](<../monitors/Install Windows 11 - Compatible Machines.md>) monitor and [Windows 11 installer](../scripts/Windows%20_11_Installer.md) script.
+Displays the status of compatible Windows 10 computers upgraded by the [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad) monitor and [Windows 11 installer](../scripts/Windows%20_11_Installer.md) script.
 
 
 ## Dependencies
-[Install Windows 11 - Compatible Machines](<../monitors/Install Windows 11 - Compatible Machines.md>)   
+[Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)   
 [Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)   
-[Solution - Windows 11 Compatibility Audit ](<../../solutions/Windows 11 Compatibility Audit.md>)
+[Solution - Windows 11 Compatibility Audit ](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)
 
 
 ## Columns

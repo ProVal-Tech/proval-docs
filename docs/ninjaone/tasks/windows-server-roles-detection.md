@@ -12,18 +12,18 @@ unlisted: false
 
 ## Summary
 
-Runs the [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation daily against [cPVAL - Windows Servers](../groups/cpval-windows-servers.md) group to identify the installed Windows Server roles and updates the [cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md) custom field with the retrieved information.
+Runs the [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9) automation daily against [cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) group to identify the installed Windows Server roles and updates the [cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) custom field with the retrieved information.
 
 ## Dependencies
 
-[cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md)
-[Windows Server Roles Detection](../automations/windows-server-roles-detection.md)
+[cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
+[Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)
 
 ## Details
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
-| Windows Server Roles Detection | Retrieves installed Windows Server roles and stores to the cPVAL Roles Detected custom field. | True | Daily | 1 Days | Current Time | Never | [cPVAL - Windows Servers](../groups/cpval-windows-servers.md) group | [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation |
+| Windows Server Roles Detection | Retrieves installed Windows Server roles and stores to the cPVAL Roles Detected custom field. | True | Daily | 1 Days | Current Time | Never | [cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) group | [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9) automation |
 
 ## Task Creation
 
@@ -64,12 +64,12 @@ Set the following details in the `Schedule` section.
 
 ### Step 5
 
-Click the `Add` button in the `Automations` section to add the [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation.  
+Click the `Add` button in the `Automations` section to add the [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9) automation.  
 ![Image3](../../../static/img/ninja-one-tasks-windows-server-roles-detection/image3.png)
 
 ### Step 6
 
-Search and select the [Windows Server Roles Detection](../automations/windows-server-roles-detection.md) automation in the `Automation Library`, that will appear after clicking the `Add` button.  
+Search and select the [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9) automation in the `Automation Library`, that will appear after clicking the `Add` button.  
 ![Image4](../../../static/img/ninja-one-tasks-windows-server-roles-detection/image4.png)
 
 ### Step 7
@@ -94,7 +94,7 @@ In the `Targets` window that appears, select the `Group` option from the dropdow
 
 ### Step 11
 
-Search for `cPVAL` and select the [cPVAL - Windows Servers](../groups/cpval-windows-servers.md) group.  
+Search for `cPVAL` and select the [cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) group.  
 ![Image9](../../../static/img/ninja-one-tasks-windows-server-roles-detection/image9.png)
 
 ### Step 12

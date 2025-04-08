@@ -19,6 +19,6 @@ foreach ($doc in $docs) {
         $slug = Get-Content $targetLinkItem.FullName | Select-String -Pattern 'slug: (.*)' | ForEach-Object { $_.Matches } | ForEach-Object { $_.Groups[1].Value }
         $content = $content -replace "<?$([regex]::Escape($link))>?", "/docs$slug"
     }
-    $content | Out-File $doc.FullName
+    $content -join "`n" | Out-File $doc.FullName -NoNewline
     Pop-Location
 }

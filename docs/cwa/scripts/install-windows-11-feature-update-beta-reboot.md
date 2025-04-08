@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](../../powershell/Install-Windows11FeatureUpdate.md).
+This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
 
 **Important Notes:**
 
@@ -36,7 +36,7 @@ This document describes the Automate implementation of the agnostic script [Inst
 
 ## Dependencies
 
-[Install-WindowsFeatureUpdate](../../powershell/Install-Windows11FeatureUpdate.md).
+[Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
 
 ## User Parameters
 

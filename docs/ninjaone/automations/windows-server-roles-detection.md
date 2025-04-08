@@ -32,7 +32,7 @@ Search and select `Windows Server Roles Detection`
 
 ## Dependencies
 
-[cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md)
+[cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## Parameters
 
