@@ -11,9 +11,11 @@ unlisted: false
 ---
 
 ## Description
+
 Retrieves information about power plans, their subgroups, and power settings.
 
 ## Usage
+
 - Executes the `powercfg /list` command to get a list of available power plans.
 - Iterates through each power plan in the list obtained from the previous step.
 - For each power plan, extracts the GUID and queries its settings using `powercfg /query`.
@@ -27,10 +29,11 @@ Retrieves information about power plans, their subgroups, and power settings.
 To retrieve information about available power plans, subgroups, and power settings, run the following command:
 
 ```powershell
-.\\Get-PowerPlansInfo.ps1
+PS C:> .\Get-PowerPlansInfo.ps1
 ```
 
 ## Output
+
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
 
 

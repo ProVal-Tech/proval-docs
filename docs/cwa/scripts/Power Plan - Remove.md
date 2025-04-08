@@ -14,9 +14,9 @@ unlisted: false
 
 This is an Automate implementation of the agnostic script [EPM - Windows Configuration - Agnostic - Remove-PowerPlan](/docs/ffac4670-f9ec-4896-8338-78c92669ee53).
 
-- **File Path:** C:/ProgramData/_Automation/script/Remove-PowerPlan/Remove-PowerPlan.ps1
-- **File Hash (Sha256):** 5CA9E22892E872DE4020E41E6BB4840CD47BBDBBFB4002D6D622E7828D63E64F
-- **File Hash (MD5):** D1A1BB2B61D2507BF59E10CB23D140E8
+- **File Path:** `C:/ProgramData/_Automation/script/Remove-PowerPlan/Remove-PowerPlan.ps1`
+- **File Hash (Sha256):** `5CA9E22892E872DE4020E41E6BB4840CD47BBDBBFB4002D6D622E7828D63E64F`
+- **File Hash (MD5):** `D1A1BB2B61D2507BF59E10CB23D140E8`
 
 ## Sample Run
 
@@ -40,7 +40,7 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 | ProjectName       | Remove-PowerPlan                                   |
 | WorkingDirectory   | C:/ProgramData/_Automation/Script/Remove-PowerPlan |
 
-#### User Parameters
+## User Parameters
 
 | Name        | Example          | Required | Description                        |
 |-------------|------------------|----------|------------------------------------|

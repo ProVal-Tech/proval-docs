@@ -39,7 +39,7 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 | ProjectName       | Enable-PowerPlan                             |
 | WorkingDirectory   | C:/ProgramData/_Automation/Script/Enable-PowerPlan |
 
-#### User Parameters
+## User Parameters
 
 | Name        | Example   | Required | Description                             |
 |-------------|-----------|----------|-----------------------------------------|

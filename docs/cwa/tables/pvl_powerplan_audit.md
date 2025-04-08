@@ -7,5 +7,5 @@ keywords: ['scripting', 'automation', 'variables', 'functions', 'error handling'
 description: 'This document explores advanced techniques for script usage in PowerShell, including the use of variables, functions, and error handling to create efficient and robust scripts for various tasks.'  
 tags: ['performance', 'security', 'setup', 'windows']  
 draft: false  
-unlisted: false  
+unlisted: false
 ---

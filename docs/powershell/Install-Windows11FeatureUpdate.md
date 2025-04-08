@@ -9,11 +9,11 @@ draft: false
 unlisted: false
 ---
 
-# Overview
+## Overview
 
 The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
 
-# Requirements
+## Requirements
 
 - Windows 11
 - Administrative privileges
@@ -21,7 +21,7 @@ The script automates the installation of the Windows 11 Feature Update. It perfo
 - 64GB+ free space on the system drive
 - [Windows 11 Compatible Machine](https://www.microsoft.com/en-us/windows/windows-11-specifications)
 
-# Process
+## Process
 
 The script operates in multiple phases to accomplish the upgrade:
 
@@ -50,13 +50,13 @@ The script also schedules tasks to run itself after restarting the system to com
 1. **Primary Task**: Initiates the upgrade process.
 2. **Post-Reboot Task**: Handles post-install cleanup and validation after the system restarts.
 
-## Points Where the Computer Can Be Restarted
+### Points Where the Computer Can Be Restarted
 
 - **Driver Updates**: If driver updates require a reboot, the script will restart the computer unless the `-NoReboot` parameter is used. The computer might be restarted multiple times during the driver updates.
 - **System Health Check**: If the SFC scan finds and repairs issues, the script will restart the computer unless the `-NoReboot` parameter is used.
 - **Primary Task Execution**: After initiating the upgrade process, the script may restart the computer to complete the installation. The computer can be restarted multiple times during the upgrade process.
 
-# Payload Usage
+## Payload Usage
 
 To execute the script, use the following command:
 
@@ -70,26 +70,26 @@ To run the script without automatic reboots, use the `-NoReboot` parameter:
 .\Install-Windows11FeatureUpdate.ps1 -NoReboot
 ```
 
-# Parameters
+## Parameters
 
 | Parameter  | Alias | Required | Default | Type   | Description                                                                 |
 |------------|-------|----------|---------|--------|-----------------------------------------------------------------------------|
 | `NoReboot` |       | False    |         | Switch | Prevents automatic reboots, allowing manual control over restarts.          |
 
-# Output
+## Output
 
 The script generates the following output files:
 
 - `.\Install-Windows11FeatureUpdate-log.txt`
 - `.\Install-Windows11FeatureUpdate-Error.txt`
 
-# Cautions
+## Cautions
 
 - The machine may restart up to 7 times to complete the upgrade process.
 - Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
 - Even with the `-NoReboot` parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.
 
-# Dependencies
+## Dependencies
 
 - [Windows OS Support](../../static/attachments/windows-os-support.json)
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)

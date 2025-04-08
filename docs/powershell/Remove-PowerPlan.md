@@ -11,12 +11,15 @@ unlisted: false
 ---
 
 ## Description
+
 Removes the specified Power Plan from the computer.
 
 ## Requirements
+
 The Power Plan should exist on the computer.
 
 ## Usage
+
 - The script expects a mandatory parameter `Name`, which specifies the desired Power Plan's name.
 - Retrieves a list of available Power Plans using `powercfg /list`.
 - Creates an array of Power Plans, including their names, GUIDs, and active status.
@@ -32,11 +35,13 @@ PS C:> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 ```
 
 ## Parameters
+
 | Parameter         | Alias | Required  | Default   | Type      | Description                                    |
 | ----------------- | ----- | --------- | --------- | --------- | ---------------------------------------------- |
 | `Name`            |       | True      |           | String    | Name of the existing Power Plan to be removed. |
 
 ## Output
+
 - .\Remove-PowerPlan-log.txt
 - .\Remove-PowerPlan-Error.txt
 

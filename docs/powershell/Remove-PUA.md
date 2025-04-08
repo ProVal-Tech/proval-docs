@@ -10,21 +10,21 @@ draft: false
 unlisted: false
 ---
 
-# Overview
+## Overview
 
 The Remove-PUA.ps1 script is designed to manage and remove bloatware packages on Windows systems. It provides functionality to list and remove pre-installed packages using curated lists from a [trusted repository](https://content.provaltech.com/attachments/potentially-unwanted-applications.json).
 
  <span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
-# Requirements
+## Requirements
 
 This script requires an internet connection to fetch the list of potentially unwanted applications (PUA) from a remote repository. It also requires the `Strapper` module, which will be installed and updated automatically if not already present.
 
-# Process
+## Process
 
 The script operates by first setting up the necessary environment and fetching the list of PUAs from a [remote URL](https://content.provaltech.com/attachments/potentially-unwanted-applications.json). It then processes the installed packages on the system and performs actions based on the provided parameters. The script can list installed packages, remove all packages from specified categories, exclude specific packages from removal, or remove specific packages by name.
 
-# Payload Usage
+## Payload Usage
 
 The script is executed using PowerShell and requires specific parameters to perform its operations. Below are examples of how to use the script:
 
@@ -42,7 +42,7 @@ The script is executed using PowerShell and requires specific parameters to perf
 .\Remove-PUA.ps1 -Remove 'Microsoft.BingWeather', 'Microsoft.GetHelp'
 ```
 
-# Parameters
+## Parameters
 
 | Parameter         | Alias | Required  | Default   | Type      | Description                               |
 | ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
@@ -52,11 +52,11 @@ The script is executed using PowerShell and requires specific parameters to perf
 | `Remove`          |       | True      |           | String[]  | Remove specific packages by name (bypasses category filters). |
 | `ListBloatware`   |       | True      |           | Switch    | List installed packages without making changes. |
 
-# Output
+## Output
 
 - `.\Remove-PUA-log.txt`
 - `.\Remove-PUA-error.txt`
 
-# PUA List
+## PUA List
 
 [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)

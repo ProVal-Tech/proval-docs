@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This script will uninstall and disable the Windows Copilot application as well as its functionality in the Edge browser.
+This script will uninstall and disable the Microsoft Copilot and Microsoft 365 copilot as well as its functionality in the Edge browser.
 It has the revert option available too to revert the changes to its original state.
 The Copilot changes stores to the computer-EDF from where the data populates to the DV.
 The revert and disable can be scheduled using Autofix monitors.
@@ -20,7 +20,7 @@ The revert and disable can be scheduled using Autofix monitors.
 
 F02B553A62B90CE5720647FDADB568E8
 
-52201C9FA25C55272FB06A62FA1456E0
+EEE454AAB028DE1528935E8962FBD775
 
 ## Sample Run
 

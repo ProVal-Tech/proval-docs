@@ -3,7 +3,7 @@ id: 'dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf'
 slug: /dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf
 title: 'Remove - PUA'
 title_meta: 'Remove - PUA'
-keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit']
+keywords: ['cwa', 'bloatware', 'script', 'uninstall', 'audit', 'pua']
 description: 'This document provides a detailed overview of the CWA implementation of the Remove-PUA script, including file hashes, sample runs, user parameters, and supported bloatware for the effective uninstallation of unwanted applications.'
 tags: ['uninstallation']
 draft: false
@@ -16,17 +16,17 @@ A CWA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-456
 
 ## File Hash
 
-**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Manage-OverFlowedVariable.ps1`  
+**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Manage-OverFlowedVariable.ps1`  
 **File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
 **File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
-**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Remove-PUA-AI.ps1`  
-**File Hash (Sha256):** `EAAB382CA77CA8FD229655E8D0D5C6886B7BA98E46B3061A9038BF06336C3B5F`  
-**File Hash (MD5):** `397F58E10753F16DB925B599A7AA9F09`  
+**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Remove-PUA-AI.ps1`  
+**File Hash (Sha256):** `193A1F83B0DE6B329C536DF02B3744C368E9247394C237103BC24DEF7267864E`  
+**File Hash (MD5):** `01957AAF757A1B88704D4A3BB6DAAF29`  
 
-**File Path:** `C:/ProgramData/_Automation/script/Remove-PUA/Remove-PUA.ps1`  
-**File Hash (Sha256):** `92BE1EB0A4480C2C6045F541539ABC7D58C114DE7DA186628632AE53C0D50E59`  
-**File Hash (MD5):** `7889293F23B73B76D95B8B533E1455DD`  
+**File Path:** `C:\ProgramData\_automation\Script\Remove-PUA\Remove-PUA.ps1`  
+**File Hash (Sha256):** `84D43EDF2E800A1056ECE01B13C199F4F4900F58D2B0C5070A023936B098C84B`  
+**File Hash (MD5):** `B20CBE9B008988A5991DE61DB1042BF3`  
 
 ## Sample Run
 
@@ -41,9 +41,6 @@ To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather`, and 
 
 To remove all installed bloatware supported by the script:  
 ![Sample Run 4](../../../static/img/Remove---PUA/image_4.png)
-
-To remove all Xbox feature apps, except `xboxGameOverlay`:  
-![Sample Run 5](../../../static/img/Remove---PUA/image_5.png)
 
 To remove all installed bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
 ![Sample Run 6](../../../static/img/Remove---PUA/image_6.png)

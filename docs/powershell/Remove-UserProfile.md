@@ -10,16 +10,16 @@ draft: false
 unlisted: false
 ---
 
-# Overview
+## Overview
 
 ### <span style={{color: 'red'}}>***This script is destructive and should only be used after fully understanding the implications.***</span>
 
 Deletes a user profile and removes the user account if local.
 
-# Requirements
+## Requirements
 PowerShell v5
 
-# Process
+## Process
 1. Refactors the user account to `computername\username` if the account passed appears to be a local user (starts with `.\` or no `\`)
     - `username` becomes `computername\username`
     - `.\username` becomes `computername\username`
@@ -53,7 +53,7 @@ PowerShell v5
                 3. If the user folder still exists, then an error message is generated and the script exits.
 
 
-# Payload Usage
+## Payload Usage
 Removes the user profile for the local user 'testing123' and deletes the user account.
 ```powershell
 .\Remove-UserProfile.ps1 -Username "testing123"
@@ -74,13 +74,13 @@ Removes the user profile associated with the SID "S-1-5-21-3623811015-3361044348
 Remove-UserProfile.ps1 -SID "S-1-5-21-3623811015-3361044348-30300820-1013"
 ```
 
-# Parameters
+## Parameters
 | Parameter         | Parameter Set | Required  | Default   | Type          | Description                               |
 | ----------------- | ------------- | --------- | --------- | ---------     | ----------------------------------------- |
 | `-Username`       | username      | True      |           | String        | The username of the user to remove the profile for. Validated by the following regex: `^(((\.\\)\|(\w\|\-\|\.)+\\)\|)(\w\|\.\|\-)+$` |
 | `-SID`            | sid           | True      |           | String        | The SID of the user to remove the profile for. Validated by the following regex: `^S-\d-\d+-(\d+-){1,14}\d+$` |
 | `-PreserveUser`   | username      | False     | False     | Switch (bool) | Use this switch to preserve the user account after profile deletion. |
 
-# Output
+## Output
     ./Remove-UserProfile-log.txt
     ./Remove-UserProfile-error.txt

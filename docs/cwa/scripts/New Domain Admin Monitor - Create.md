@@ -58,7 +58,6 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 5. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
-   ![Reload System Cache](../../../static/img/New-Domain-Admin-Monitor---Create/image_6.png)
 
 6. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard -> Config -> Configurations -> Properties**.
