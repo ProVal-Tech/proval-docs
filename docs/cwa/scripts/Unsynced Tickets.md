@@ -22,7 +22,7 @@ The purpose of the script is to send an email with information about all the tic
 - All locations and clients that are 'Ignored' within the Manage Plugin will NOT report unsynced tickets for those locations/clients.
 - It will detect the tickets that were generated at least 15 minutes ago to avoid false positives.
 
-Remove the internal monitor [**ProVal - Production - Automate - Ticket Sync Unsuccessful**](https://proval.itglue.com/5078775/docs/8030159) from the partner's environment before implementing this script.
+Remove the internal monitor [**Ticket Sync Unsuccessful**](/docs/1fa27f5d-ca9d-4bff-8776-569a15f772d3) from the partner's environment before implementing this script.
 
 ## Sample Run
 

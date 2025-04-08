@@ -34,22 +34,22 @@ The `Send Alert when Unit is Down` checkbox on a network device is required for 
 
 ## Variables
 
-| Name    | Description                                     |
-|---------|-------------------------------------------------|
+| Name    | Description                                           |
+| ------- | ----------------------------------------------------- |
 | Status  | Success/Failed/Warning returned by the alert template |
-| Message | Alert Message returned by the Network Device     |
+| Message | Alert Message returned by the Network Device          |
 
 ## System Properties
 
-| Name                                                                 | Example | Required | Description                                                                                                                                                                                                                     |
-|----------------------------------------------------------------------|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NetworkDeviceTicketCategory                                          | 5       | False    | This will determine the service board where the offline network device ticket should be created.                                                                                                                               |
-| ScriptTicketCategory                                                 | 8       | False    | This is a default system property that is set at the CW Manage plugin to create tickets via script to this service board if no ticket category is defined in the script.                                                         |
+| Name                        | Example | Required | Description                                                                                                                                                              |
+| --------------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| NetworkDeviceTicketCategory | 5       | False    | This will determine the service board where the offline network device ticket should be created.                                                                         |
+| ScriptTicketCategory        | 8       | False    | This is a default system property that is set at the CW Manage plugin to create tickets via script to this service board if no ticket category is defined in the script. |
 
 ## Implementation
 
 Refer to the client-script document. This will guide you on how to enable ticketing on manufacturer-based network devices or apply it to all network devices with specific exclusions of the device IDs.  
-[Documentation Link](https://proval.itglue.com/5078775/docs/16290414)
+[Documentation Link](/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92)
 
 ## Output
 
