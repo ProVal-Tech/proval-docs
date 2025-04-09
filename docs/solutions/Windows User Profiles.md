@@ -16,28 +16,28 @@ Gathers and displays information about Windows user profiles.
 
 ## Associated Content
 
-| Content                                                                                         | Type           | Function                                                                                                   |
-|-------------------------------------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------|
-| [Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8)      | Script         | Gathers information about user profiles.                                                                    |
-| [Dataview - Windows - User Profiles](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43)          | Dataview       | Displays Windows user profile information gathered from the [Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8). |
-| [Script - User Profile - Remove](/docs/765d906e-33c3-4615-9cd6-9c01a9eeaebb)              | Script         | Deletes a user profile and removes the user account if local. Runs the [Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) after successful deletion. |
-| [Internal Monitor - Execute Script - User Profile - Get Information](/docs/36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1) | Internal Monitor | Executes the [Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) once every 7 days. |
-| `△ Custom - Execute Script - Windows - User Profile - Get Information`                       | Alert Template  | This alert template is used with [Internal Monitor - Execute Script - User Profile - Get Information](/docs/36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1) to run [Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) as an autofix. |
+| Content                                                                      | Type             | Function                                                                                                                                                                  |
+| ---------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) | Script           | Gathers information about user profiles.                                                                                                                                  |
+| [Windows - User Profiles](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43)        | Dataview         | Displays Windows user profile information gathered from [the script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8).                                                         |
+| [User Profile - Remove](/docs/765d906e-33c3-4615-9cd6-9c01a9eeaebb)          | Script           | Deletes a user profile and removes the user account if local. Runs the [script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) after successful deletion.                    |
+| [User Profile - Get Information](/docs/36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1) | Internal Monitor | Executes the [script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) once every 7 days.                                                                                      |
+| `User Profile - Get Information`                                             | Alert Template   | This alert template is used with [the monitor](/docs/36a5ce5d-5c24-4fe0-9dc7-bc6fc429f4a1) to run [the script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) as an autofix. |
 
 ## Optional Content
 
-| Content                                                                                                         | Type           | Function                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - Unknown User Profiles Detection](/docs/ba7bb64b-e12b-4d21-a86f-572ce95b78d7)         | Internal Monitor | Identifies machines that have unknown user profiles.                                                               |
-| [Remote Monitor - Domain Trust Relationship Check](https://proval.itglue.com/5078775/docs/17974580)         | Remote Monitor   | This monitor generates a ticket whenever the trust relationship between the domain and the workstation is broken. The results of this monitor are used to exclude results from the Unknown User Profiles Detection monitor. |
+| Content                                                                       | Type             | Function                                                                                                                                                                       |
+| ----------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Unknown User Profiles Detection](/docs/ba7bb64b-e12b-4d21-a86f-572ce95b78d7) | Internal Monitor | Identifies machines that have unknown user profiles.                                                                                                                           |
+| [Domain Trust Relationship Check](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) | Remote Monitor   | Generates a ticket whenever the trust relationship between the domain and the workstation is broken. Used to exclude results from the Unknown User Profiles Detection monitor. |
 
 ## Other Content
 
-| Content                                                                                                       | Type         | Function                                                                                                           |
-|---------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------|
-| [EPM - Accounts - Agnostic - Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)              | Agnostic     | Gathers information about user profiles and is used in the script [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8). |
-| [EPM - Accounts - Agnostic - Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac)            | Agnostic     | Deletes a user profile and removes the user account if local.                                                     |
-| [EPM - Accounts - Custom Table - plugin_proval_userprofiles](/docs/7a87abf3-b410-491b-bbc1-534092e61f55) | Custom Table | Stores Windows user profile information. Data is filled by [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) and displayed in [EPM - Accounts - Dataview - Windows - User Profiles](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43). |
+| Content                                                                  | Type         | Function                                                                                                                                                                                         |
+| ------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)           | Agnostic     | Gathers information about user profiles and is used in the [the script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8).                                                                             |
+| [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac)         | Agnostic     | Deletes a user profile and removes the user account if local.                                                                                                                                    |
+| [plugin_proval_userprofiles](/docs/7a87abf3-b410-491b-bbc1-534092e61f55) | Custom Table | Stores Windows user profile information. Data is filled by [the script](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) and displayed in [the dataview](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43). |
 
 ## Implementation
 
@@ -74,6 +74,6 @@ Gathers and displays information about Windows user profiles.
      - [Internal Monitor - Unknown User Profiles Detection](/docs/ba7bb64b-e12b-4d21-a86f-572ce95b78d7)
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
-     - Use the mentioned [Remote Monitor](https://proval.itglue.com/5078775/docs/17975723) to exclude any domain trust relationship issues.
+     - Use the mentioned [monitor](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) to exclude any domain trust relationship issues.
 
 

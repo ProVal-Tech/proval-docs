@@ -53,7 +53,7 @@ Create the company-level Custom Field [SWM - Software Install - Custom Field - C
 Create a new `Script Editor` style script in the system to implement this task.
 
 **Name:** `Cisco Secure Client Package Installation (Windows)`  
-**Description:** `How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
+**Description:** `How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
 Note: To install the Umbrella module, it is required to install the Core VPN module.`  
 **Category:** `Application`
 

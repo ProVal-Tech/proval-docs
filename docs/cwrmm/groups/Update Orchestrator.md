@@ -16,8 +16,8 @@ There is one device group related to the Update Orchestrator solution. Please se
 
 ## Dependencies
 
-- [CW RMM - Task - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=edit)
-- [CW RMM - Custom Monitor - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460540#version=published&documentMode=edit)
+- [CW RMM - Task - Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)
+- [CW RMM - Custom Monitor - Update Orchestrator Bouncer](/docs/a88678ef-dc82-4837-802c-e77573277504)
 
 ## Create Device Group
 

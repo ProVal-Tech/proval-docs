@@ -20,7 +20,7 @@ Note: If the agent is a Domain Controller, it will audit the domain accounts; ot
 ![Sample Run 4](<../../../static/img/docs/Get Specific-Multiple User Audit/image-3.png>)
 
 ## Dependencies
-[Agnostic-User-Audit](</docs/powershell/User-Audit.md>)
+[Agnostic-User-Audit](/docs/b2914f30-25ee-4d74-ac6a-77260b88ddcb)
 
 ## User Parameters
 

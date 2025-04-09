@@ -41,7 +41,7 @@ The solution aims to keep winget-supported applications updated and report their
 
 The `Exclude From Winget Auto Update` checkbox is available in the location and computer-level EDF section `Exclusions` to exclude the location and computer, respectively.
 
-**Note:** Refer to the [Client-Level EDF section](https://proval.itglue.com/5078775/docs/17973896#section-32120357) in the [script's document](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) for comprehensive details on EDFs.
+**Note:** Refer to the `Client-Level EDF` section in the [script's document](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) for comprehensive details on EDFs.
 
 ## Implementation
 

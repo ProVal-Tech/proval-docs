@@ -16,12 +16,12 @@ This solution audits VSSAdmin shadow copies and, if needed, will resize them.
 
 ## Associated Content
 
-| Content                                                                                 | Type      | Function                                                                                             |
-|-----------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------|
-| [VSSAdmin Storage Report](https://proval.itglue.com/5078775/docs/10728930)           | Dataview  | This shows the report of VSSAdmin storage of the agent                                              |
-| [VSSAdmin Data Table](https://proval.itglue.com/5078775/docs/10728928)               | Table     | `plugin_proval_vssadminstorage`, this table stores the VSSAdmin data                                 |
-| [VSSAdmin Auditing Script](https://proval.itglue.com/5078775/docs/10728929)          | Script    | This script helps to perform the VSSAdmin auditing using PowerShell                                 |
-| [VSSAdmin Resize Script](https://proval.itglue.com/5078775/docs/10728931)            | Script    | This script helps to resize the VSSAdmin MAX value and modify the data in the table as well.       |
+| Content                                                                | Type     | Function                                                                                     |
+| ---------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------- |
+| [VSSAdmin Storage Report](/docs/7f7e7d3b-047d-41dc-acc2-5083adcaaf39)  | Dataview | This shows the report of VSSAdmin storage of the agent                                       |
+| [VSSAdmin Data Table](/docs/165f6290-8932-459b-9bfe-18c86f7a61d6)      | Table    | `plugin_proval_vssadminstorage`, this table stores the VSSAdmin data                         |
+| [VSSAdmin Auditing Script](/docs/0de90f98-d7ae-4a79-a851-30829a596846) | Script   | This script helps to perform the VSSAdmin auditing using PowerShell                          |
+| [VSSAdmin Resize Script](/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d)   | Script   | This script helps to resize the VSSAdmin MAX value and modify the data in the table as well. |
 
 ## Implementation
 

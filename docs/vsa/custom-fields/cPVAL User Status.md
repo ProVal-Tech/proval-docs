@@ -16,13 +16,12 @@ The custom field contains the user status on the machines.
 
 ## Dependencies
 
-- [Dependency Document 1](https://proval.itglue.com/5078775/docs/18178737)  
-- [Dependency Document 2](https://proval.itglue.com/5078775/docs/18178739)
+- [Dependency Document 1](/docs/ea55f0eb-9011-436a-bbd9-1795fc206f81)
 
 ## Details
 
-| Field Name           | Type of Field (Machine or Organization) | Description                                                     |
-|----------------------|-----------------------------------------|-----------------------------------------------------------------|
-| cPVAL User Status    | Machine                                 | It shows the status of the user on the machines: "PCComp is Present / Not Present." |
+| Field Name        | Type of Field (Machine or Organization) | Description                                                                         |
+| ----------------- | --------------------------------------- | ----------------------------------------------------------------------------------- |
+| cPVAL User Status | Machine                                 | It shows the status of the user on the machines: "PCComp is Present / Not Present." |
 
 

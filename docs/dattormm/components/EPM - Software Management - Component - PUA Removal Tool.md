@@ -12,11 +12,11 @@ unlisted: false
 
 # Overview
 
-Datto RMM Implementation of the ProVal Agnostic [Remove-PUA](</docs/powershell/Remove-PUA.md>)
+Datto RMM Implementation of the ProVal Agnostic [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 # Dependencies
 
-[Remove-PUA](</docs/powershell/Remove-PUA.md>)
+[Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 # Implementation
 
@@ -24,13 +24,13 @@ Import PUA Removal Tool.cpt into the environment.
 
 # Datto Variables
 
-| Variable Name      | Type     | Default | Description                                                                                                                                                              |
-|--------------------|----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ListBloatware`    | `Boolean`| `True`  | `Non-destructive. Lists applicable bloatware detected on the endpoint, but does not remove. Cannot be set simultaneously with any other parameter.`                     |
-| `RemoveAll`        | `Boolean`| `False` | `Remove all detected bloatware listed in the PUA List from the endpoint. PUA List: https://content.provaltech.com/attachments/potentially-unwanted-applications.json. USE WITH CAUTION.`                                                                                                   |
-| `Remove`           | `String` |         | `Remove the provided package(s) from the endpoint. Cannot be set simultaneously with RemoveAll.`                                                                        |
-| `DParameter`       | `String` |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps'` |
-| `EParameter`       | `String` |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.`                                                        |
+| Variable Name   | Type      | Default | Description                                                                                                                                                                              |
+| --------------- | --------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ListBloatware` | `Boolean` | `True`  | `Non-destructive. Lists applicable bloatware detected on the endpoint, but does not remove. Cannot be set simultaneously with any other parameter.`                                      |
+| `RemoveAll`     | `Boolean` | `False` | `Remove all detected bloatware listed in the PUA List from the endpoint. PUA List: https://content.provaltech.com/attachments/potentially-unwanted-applications.json. USE WITH CAUTION.` |
+| `Remove`        | `String`  |         | `Remove the provided package(s) from the endpoint. Cannot be set simultaneously with RemoveAll.`                                                                                         |
+| `DParameter`    | `String`  |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps'`                |
+| `EParameter`    | `String`  |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.`                                                                          |
 
 # Output
 

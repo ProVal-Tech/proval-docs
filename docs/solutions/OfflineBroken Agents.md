@@ -67,7 +67,7 @@ The purpose of this solution is to detect machines that have been offline in Aut
 
 6. Run the [Script - Automate Agent - Auto Repair*](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) against a random computer with the `Set Environment = 1`. This will create the system properties used by the script.
 
-7. Go to system properties and set the required values for the `Agent_Repair_Duplicate_Check_Enabled` and `Agent_Repair_Re_Install_Enabled` properties. Check the `System Properties` table of the [script's document](https://proval.itglue.com/5078775/docs/7761441) for more information on these properties.
+7. Go to system properties and set the required values for the `Agent_Repair_Duplicate_Check_Enabled` and `Agent_Repair_Re_Install_Enabled` properties. Check the `System Properties` table of the [script's document](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) for more information on these properties.
 
 8. Pick a random computer that is online in both Automate and ScreenConnect, and debug the [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458) against that computer. Check the value for the internal variable `%pluginresult%`; it should be a positive integer value. If it is not returning a positive integer value and returns the value for the user variable `@Online@` equals `-2`, then the [RMM+ solution](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) is not properly configured and needs to be rechecked (Step 1).
 

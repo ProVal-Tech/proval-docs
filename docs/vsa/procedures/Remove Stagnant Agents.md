@@ -17,7 +17,7 @@ Remove stagnant agents based on a set of filters passed in via a JSON file. Logs
 - .NET 8
 
 # Dependencies
-- [VSAToolbox](https://proval.itglue.com/5078775/docs/15281068)
+- [VSAToolbox](https://github.com/Proval-tech/VSAToolbox)
 
 # Process
 Gets a list of agents that meet the set criteria (offline for `$OfflineDays` days, not in `$MachineGroupException` groups, etc.) and runs the VSAAPI function `Remove-VsaAgent`, removing them from the VSA without first uninstalling the agent. Exclusion filters can be applied for `OsType`, `OsInfo` (Build caption), `IPAddress`, `Mac Address`, `Country`, `Domain`, and `Workgroup`. Filters are individually applied; applying more than one filter will remove BOTH pools from the removal list. For example, providing `-OsTypeExclusion '10'` and `-DomainWorkgroupExclusion 'proval'` will retain ALL Windows 10 machines from the list, **AND** ALL machines on the ProVal domain or Workgroup.

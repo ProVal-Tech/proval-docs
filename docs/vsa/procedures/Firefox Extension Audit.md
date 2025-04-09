@@ -57,7 +57,7 @@ This document describes how to collect Firefox extensions installed on an endpoi
 
 ## Dependencies
 
-[Get-FireFoxExtension.ps1](https://proval.itglue.com/5078775/docs/11791154)
+[Get-FireFoxExtension.ps1](/docs/e45f0be5-66b2-417a-b900-0a6b3b9994f1)
 
 ## Process
 

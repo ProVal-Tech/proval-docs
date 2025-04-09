@@ -9,7 +9,7 @@ description: 'This document provides a comprehensive guide on retrieving a detai
 
 ## Summary
 
-Get a detailed list of patches that are installed or available on the local machine and store it in the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) custom table.
+Get a detailed list of patches that are installed or available on the local machine and store it in the [plugin_proval_windows_update_report](/docs/845fe569-12ec-48e3-86f4-34377aba03ec) custom table.
 
 ## Sample Run
 
@@ -31,12 +31,12 @@ Get a detailed list of patches that are installed or available on the local mach
 
 ## Process
 
-1. Creating the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table if it does not already exist.
+1. Creating the [plugin_proval_windows_update_report](/docs/845fe569-12ec-48e3-86f4-34377aba03ec) table if it does not already exist.
 2. Changing the structure of the table if the partner is still using the older structure. This step also removes duplicate entries from the table.
 3. Running the PowerShell script to retrieve the Windows Update Report.
 4. Verifying the outcome.
 5. Parsing the outcome to ensure SQL compatibility.
-6. Inserting the data into the [plugin_proval_windows_update_report](https://proval.itglue.com/5078775/docs/10861700) table.
+6. Inserting the data into the [plugin_proval_windows_update_report](/docs/845fe569-12ec-48e3-86f4-34377aba03ec) table.
 7. Logging any failures.
 
 ## Output

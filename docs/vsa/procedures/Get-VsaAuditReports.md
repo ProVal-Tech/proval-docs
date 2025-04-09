@@ -17,7 +17,7 @@ This script performs much of the Kaseya Onboarding Audit and outputs the results
 # Requirements
 
 - Requires an API User account with both REST and Data Warehouse access configured in the VSA.
-- On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared/ProVal Content Repository/Vsa/Onboarding Audit." Implementation instructions for this procedure are located at [ProVal Documentation](https://proval.itglue.com/5078775/docs/9739268).
+- On-Prem Audit requires IP whitelisting to access. In lieu of whitelisting, the script can be run on the client's VSA server via the Agent Procedure "Shared/ProVal Content Repository/Vsa/Onboarding Audit." Implementation instructions for this procedure are located at [ProVal Documentation](/docs/9c83a72d-2971-411f-84a9-d0211ffc6a4c).
 - The REST API requires a native VSA user. If "UserName must be an email address" is enabled in System > Configuration > Default Settings, this must be temporarily disabled during API account creation.
 
 # Process

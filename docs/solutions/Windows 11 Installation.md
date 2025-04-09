@@ -23,17 +23,17 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
     - Runs during off-hours (6:00 PM to 6:00 AM) to prevent disruptions during working hours, as the installation process involves forced computer reboots.
     - For machines where the script fails during the initial execution, it will retry once per week, up to a maximum of three attempts per machine.
 
-3. [Dataview : Windows 11 Installation Audit [Compatible Machines]](<../cwa/dataviews//Windows 11 Installation Audit [Compatible Machines].md>) 
+3. [Dataview : Windows 11 Installation Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) 
     - Provides an overview of the automation process, enabling administrators to track the progress and status of the upgrade across all machines.
 
 ## Associated Content
-| Content                                | Type             | Function                                                                 |
-|----------------------------------------|------------------|-------------------------------------------------------------------------|
-| [Solution - Windows 11 Compatibility Audit ](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)         | Solution         | Determine the compatibility of Windows 10 machines for the Windows 11 installation. |
-| [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)                  | Script           | Executes windows-upgrader.exe on Windows 10.                           |
-| [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)   | Internal Monitor  | Executes Windows 11 Installer script on compatible Windows 10 machines. |
-| [Dataview - Windows 11 Installation Audit [Compatible Machines]](<../cwa/dataviews//Windows 11 Installation Audit [Compatible Machines].md>)  | Dataview        | Displays the outcome of automation.                                    |
-| △ Custom - Install Windows 11 - Compatible Machines | Alert Template  | Executes the script detected by the internal monitor.                  |
+| Content                                                                                                      | Type             | Function                                                                            |
+| ------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------------------------------------------------------------------- |
+| [Solution - Windows 11 Compatibility Audit ](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)                     | Solution         | Determine the compatibility of Windows 10 machines for the Windows 11 installation. |
+| [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)                                           | Script           | Executes windows-upgrader.exe on Windows 10.                                        |
+| [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)                       | Internal Monitor | Executes Windows 11 Installer script on compatible Windows 10 machines.             |
+| [Dataview - Windows 11 Installation Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) | Dataview         | Displays the outcome of automation.                                                 |
+| △ Custom - Install Windows 11 - Compatible Machines                                                          | Alert Template   | Executes the script detected by the internal monitor.                               |
 
 ## Implementation
 1. Implement the Windows 11 Compatibility Audit solution as instructed in this document.  
@@ -41,7 +41,7 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
 2. Import the following content using the ProSync Plugin:
     - [Script : Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) 
     - [Internal Monitor : Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad) 
-    - [Dataview : Windows 11 Installation Audit [Compatible Machines]](<../cwa/dataviews//Windows 11 Installation Audit [Compatible Machines].md>) 
+    - [Dataview : Windows 11 Installation Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) 
     - Alert Template: △ Custom - Install Windows 11 - Compatible Machines
 
 3. Reload the system cache:  
@@ -55,9 +55,9 @@ This solution is designed to automate the upgrade from Windows 10 to Windows 11,
 
 ## EDF
 
-| Name                             | Type       | Level    | Section     | Description                                                                 |
-|----------------------------------|------------|----------|-------------|-----------------------------------------------------------------------------|
-| Enable Windows 11 Installation   | Check-Box  | Client   | Default     | Enables automation for the client.                                         |
-| Exclude Windows 11 Installation  | Check-Box  | Location | Exclusions  | Exclude location from the automation.                                      |
-| Exclude Windows 11 Installation  | Check-Box  | Computer | Exclusions  | Exclude location from the computer.                                        |
-| Windows 11 Installation Attempts | Text       | Computer | Default     | A non-editable EDF, updated by [Script : Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  to keep track of the number of scripts run. |
+| Name                             | Type      | Level    | Section    | Description                                                                                                                                             |
+| -------------------------------- | --------- | -------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enable Windows 11 Installation   | Check-Box | Client   | Default    | Enables automation for the client.                                                                                                                      |
+| Exclude Windows 11 Installation  | Check-Box | Location | Exclusions | Exclude location from the automation.                                                                                                                   |
+| Exclude Windows 11 Installation  | Check-Box | Computer | Exclusions | Exclude location from the computer.                                                                                                                     |
+| Windows 11 Installation Attempts | Text      | Computer | Default    | A non-editable EDF, updated by [Script : Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  to keep track of the number of scripts run. |

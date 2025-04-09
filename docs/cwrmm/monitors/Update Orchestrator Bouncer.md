@@ -43,7 +43,7 @@ Click "Add Monitor"
   Test-Path 'C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot'
   ```
 - **Criteria:** Contains > AND > "True"
-- **Run Automated Task:** [Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=view)
+- **Run Automated Task:** [Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)
 
 ![Conditions](../../../static/img/Update-Orchestrator-Bouncer/image_3.png)
 

@@ -16,7 +16,7 @@ This component will run the Office Scrub utility and remove all or specified Mic
 
 ## Dependencies
 
-- [Invoke-Offscrub](https://proval.itglue.com/5078775/docs/7593306)
+- [Invoke-Offscrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
 
 ## Implementation
 

@@ -16,7 +16,7 @@ unlisted: false
 Exports a JSON file containing a list of WinGet software packages on the endpoint. Uses ProVal's `Invoke-WinGetProcessor.ps1` agnostic content.
 
 ### Dependencies
-[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+[ProVal WinGet Processor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Implementation
 Import the component in this directory into the target environment.
@@ -36,7 +36,7 @@ stdOut & stdError
 Imports a JSON file containing a list of WinGet software packages (generated using WinGet Export) and installs all contained packages.
 
 ### Dependencies
-[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+[ProVal WinGet Processor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Implementation
 Import the component in this directory into the target environment.
@@ -57,7 +57,7 @@ stdOut & stdError
 Updates all compatible software packages using WinGet on an endpoint.
 
 ### Dependencies
-[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+[ProVal WinGet Processor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Implementation
 Import the component in this directory into the target environment.
@@ -74,7 +74,7 @@ stdOut & stdError
 Uninstalls a software package using WinGet on an endpoint.
 
 ### Dependencies
-[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+[ProVal WinGet Processor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Implementation
 Import the component in this directory into the target environment.
@@ -95,7 +95,7 @@ stdOut & stdError
 Uninstalls a software package using WinGet on an endpoint.
 
 ### Dependencies
-[ProVal WinGet Processor](https://proval.itglue.com/5078775/docs/11310973#version=published&documentMode=view)
+[ProVal WinGet Processor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ### Implementation
 Import the component in this directory into the target environment.

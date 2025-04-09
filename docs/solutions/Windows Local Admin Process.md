@@ -77,7 +77,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 **A:** Removing the password entry from the client-level password tab will force a reset of the password at the endpoints.
 
 **Q:** The solution saves the password at the client-level password tab in Automate; is there any way to sync these credentials to ITGlue?  
-**A:** Yes, the [StickySync](https://proval.itglue.com/5078775/docs/8842775) plugin can be used and configured to sync those passwords to ITGlue.
+**A:** Yes, the [StickySync](/docs/fa3bbc1f-9ceb-4578-bf19-487a619536df) plugin can be used and configured to sync those passwords to ITGlue.
 
 **Q:** What do the new EDFs look like?  
 **A:** The new EDF structure is shown below:

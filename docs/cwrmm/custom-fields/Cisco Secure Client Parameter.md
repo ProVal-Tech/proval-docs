@@ -24,7 +24,7 @@ Parameters must be set in a manner consistent with the agnostic script [SWM - So
 
 | Field Name                      | Type of Field | Description                                                                                                                                                     |
 |---------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [https://proval.itglue.com/DOC-5078775-11897620](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) |
+| Cisco Secure Client Parameter    | Company        | Stores the parameter to install the Cisco Secure Client package using the Cisco Secure Client Package Installation (Windows) task. How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea) |
 
 ## Screenshot
 

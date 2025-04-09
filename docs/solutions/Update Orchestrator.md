@@ -16,23 +16,23 @@ This solution uses a custom task, a device group, and a custom monitor to manage
 
 ## Associated Content
 
-| Content                                                                                          | Type         | Function                                                                                                                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Device Groups - Update Orchestrator](https://proval.itglue.com/5078775/docs/13460376#version=published&documentMode=view) | Device Group | The device group is designed to slowly deploy the Update Orchestrator in the environment.                                                                                                                                                                        |
-| [CW RMM - Task - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=view) | Task         | Will attempt to "neuter" the Update Orchestrator solution on endpoints by renaming/removing a directory.                                                                                                                                                        |
-| [CW RMM - Custom Monitor - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460540#version=published&documentMode=edit) | Monitor      | This solution will monitor the `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the Update Orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM. |
+| Content                                                                                             | Type         | Function                                                                                                                                                                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [CW RMM - Device Groups - Update Orchestrator](/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825)          | Device Group | The device group is designed to slowly deploy the Update Orchestrator in the environment.                                                                                                                                                                                                                     |
+| [CW RMM - Task - Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)           | Task         | Will attempt to "neuter" the Update Orchestrator solution on endpoints by renaming/removing a directory.                                                                                                                                                                                                      |
+| [CW RMM - Custom Monitor - Update Orchestrator Bouncer](/docs/a88678ef-dc82-4837-802c-e77573277504) | Monitor      | This solution will monitor the `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrator/Reboot` path. If the folder for "reboot" exists, it will be renamed to `reboot.bak`. This prevents the Update Orchestrator from side loading Microsoft patches on endpoints that are not approved via the RMM. |
 
 ## Implementation
 
 1. Create the device groups. This step is required before creating the tasks; otherwise, they will not have a proper target.  
-   Follow the documentation here: [CW RMM - Device Groups - Update Orchestrator](https://proval.itglue.com/5078775/docs/13460376#version=published&documentMode=view)
+   Follow the documentation here: [CW RMM - Device Groups - Update Orchestrator](/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825)
 
 2. Create the Update Orchestrator task.  
-   Follow the documentation here: [CW RMM - Task - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460454#version=published&documentMode=view)  
+   Follow the documentation here: [CW RMM - Task - Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)  
    **Please ensure that the task is scheduled per the above documentation!**
 
 3. Create the custom monitor.  
-   Follow the documentation here: [CW RMM - Custom Monitor - Update Orchestrator Bouncer](https://proval.itglue.com/5078775/docs/13460540#version=published&documentMode=edit)  
+   Follow the documentation here: [CW RMM - Custom Monitor - Update Orchestrator Bouncer](/docs/a88678ef-dc82-4837-802c-e77573277504)  
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ

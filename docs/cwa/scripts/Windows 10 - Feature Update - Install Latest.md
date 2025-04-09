@@ -33,7 +33,7 @@ This means the script will automatically reboot itself upon completion with no p
   - [Document](https://app.myglue.com/help_center/documents/9447713)
 - [CWM - Automate - Custom Table - plugin_proval_windows10_upgradestats](/docs/75c18bf0-9ebc-43c7-a5a3-03510d131af5)
   - [Document](https://app.myglue.com/help_center/documents/9746809)
-- [EPM - Agnostic - Prompt-User](https://proval.itglue.com/DOC-5078775-9580402)
+- [EPM - Agnostic - Prompt-User](/docs/9fc4a21d-6ba4-4f20-90fd-b9c148259195)
   - [Document](https://app.myglue.com/help_center/documents/9580402)
 - [EPM - Data Collection - Script - User-Show-PromptMessage](/docs/d4406d51-fc3a-46e1-8e25-31a5f43b05e2)
   - [Document](https://app.myglue.com/help_center/documents/9739032)

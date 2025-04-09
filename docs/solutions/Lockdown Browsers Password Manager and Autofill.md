@@ -53,7 +53,7 @@ This solution provides a comprehensive approach to managing and monitoring the s
    - [Chromium Browsers Address Autofill Lockdown - Status](/docs/1909b914-8e27-4487-ae47-0d28ad848a5b)
 
 2. Import/Implement the EDFs, Searches, Groups, and Remote monitors by following the implementation steps:  
-   - [Implement - Group Monitors - △ Lockdown Browsers Autofill](https://proval.itglue.com/DOC-5078775-15025130)  
+   - [Implement - Group Monitors - △ Lockdown Browsers Autofill](/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2)  
    The remote monitors will be created in the `△ Lockdown Browsers Autofill` group and will be limited to the `Lockdown Browsers Autofill` search as outlined in the implementation documents.
 
 3. Properly set the EDFs as desired: (**Do NOT enable any EDFs unless specifically stated by the consultant**)  

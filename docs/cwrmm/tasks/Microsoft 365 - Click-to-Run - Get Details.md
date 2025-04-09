@@ -336,7 +336,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 It is suggested to run the task once per month against computers with the `Microsoft 365 Apps` installed.
 
 - Go to `Automation` > `Tasks`.
-- Search for [Microsoft 365 - Click-to-Run - Get Details](https://proval.itglue.com/5078775/docs/17917390#version=draft&documentMode=edit) task.
+- Search for [Microsoft 365 - Click-to-Run - Get Details](/docs/f5099dd5-8e47-468f-a623-a245c342eb19) task.
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Button](../../../static/img/Microsoft-365---Click-to-Run---Get-Details/image_44.png)  

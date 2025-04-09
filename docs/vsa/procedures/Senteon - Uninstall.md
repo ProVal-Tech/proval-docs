@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 This document outlines the steps to uninstall the Senteon Agent from the endpoint.  
-This agent procedure utilizes the [Remove - Application](https://proval.itglue.com/5078775/docs/11259375) agent procedure template to perform the uninstall.
+This agent procedure utilizes the [Remove - Application](/docs/5197b52f-294e-4b7d-8956-5bc5afc3f51c) agent procedure template to perform the uninstall.
 
 ## Associated Content
 

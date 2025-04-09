@@ -42,7 +42,7 @@ This procedure queries the machine to determine if it is Azure AD joined or regi
 ## Dependencies
 
 The Agent Procedure relies upon views and custom fields in order to update properly.  
-Solution: [https://proval.itglue.com/DOC-5078775-12540674](/docs/c852661d-3253-466e-ae17-ee2753885920)
+Solution: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 
 ## Output
 

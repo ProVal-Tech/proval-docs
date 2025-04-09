@@ -17,7 +17,7 @@ VSA_API_ARGS are the necessary parameters required for using VSAToolbox, a set o
 
 <div class='text-section scrollable'>
 What VSA content relies on this Managed Variable?  
-[VSAToolbox](https://proval.itglue.com/5078775/docs/15281068)
+[VSAToolbox](https://github.com/Proval-tech/VSAToolbox)
 
 ## Example Data
 

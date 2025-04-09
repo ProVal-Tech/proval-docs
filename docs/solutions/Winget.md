@@ -16,14 +16,8 @@ This solution is designed to uninstall, install, and update software via Winget.
 
 ## Associated Content
 
-| Content                                                                                                   | Type | Function                                                                                                      |
-|-----------------------------------------------------------------------------------------------------------|------|---------------------------------------------------------------------------------------------------------------|
-| [CW RMM - Task - Winget Install Application](https://proval.itglue.com/5078775/docs/13472474#version=published&amp;documentMode=view) | Task | Attempts to install an application via Winget                                                                 |
-| [CW RMM - Task - Winget Uninstall Application](https://proval.itglue.com/5078775/docs/13473023#version=published&amp;documentMode=view) | Task | Attempts to uninstall an application via Winget                                                               |
-| [CW RMM - Task - Winget Upgrade All](https://proval.itglue.com/5078775/docs/13473030#version=published&amp;documentMode=view) | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint.                                 |
-
-## FAQ
-
-
-
-
+| Content                                                                                    | Type | Function                                                                     |
+| ------------------------------------------------------------------------------------------ | ---- | ---------------------------------------------------------------------------- |
+| [CW RMM - Task - Winget Install Application](/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f)   | Task | Attempts to install an application via Winget                                |
+| [CW RMM - Task - Winget Uninstall Application](/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89) | Task | Attempts to uninstall an application via Winget                              |
+| [CW RMM - Task - Winget Upgrade All](/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4)           | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint. |

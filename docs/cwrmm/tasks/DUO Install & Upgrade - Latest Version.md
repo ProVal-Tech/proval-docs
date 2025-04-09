@@ -632,7 +632,7 @@ This screen will appear.
 - Click the `Select Targets` button to select the concerned target.  
 ![Implementation Step 5](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_74.png)  
 
-- Search and select the [`Duo Auth for Windows Login Deployment`](https://proval.itglue.com/5078775/docs/17914126) Device Group for the target.  
+- Search and select the [`Duo Auth for Windows Login Deployment`](/docs/c598c18f-25a9-43fd-a7b6-86e8f186c38b) Device Group for the target.  
 ![Implementation Step 6](../../../static/img/DUO-Install-&-Upgrade---Latest-Version/image_75.png)  
 
 - Click the `Run` button to initiate the schedule.  

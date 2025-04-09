@@ -33,7 +33,7 @@ The purpose of this document is to monitor the disk health of physical machines 
 - **Before moving forward, remove all the contents related to the [EPM - Disk - Solution - Disk - Critical Data](/docs/7907bbc0-a161-47b4-bd24-64aa3ccca910) solution from the environment.**
 - Import the [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script.
 - Execute the script against an online physical Windows machine with PowerShell v5 to create the [EPM - Disk - Custom Table - pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c) table.
-- Execute the script "[MySQL - Permission - Set Custom Table Permissions](https://proval.itglue.com/5078775/docs/8056027)" (make sure this script is updated).
+- Execute the script "[MySQL - Permission - Set Custom Table Permissions](/docs/7819fc75-aeae-457b-a451-59221396e900)" (make sure this script is updated).
 - Import the [EPM - Disk - Dataview - Crystal Disk Info Report](/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff) dataview.
 - Ensure that the dataview is displaying the data for the computer you just executed the script on.
 - Import the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) internal monitor.

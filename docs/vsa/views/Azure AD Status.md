@@ -19,7 +19,7 @@ This view displays machines that are Azure AD joined or registered based on a cu
 This should be a list of ITGlue documents listed in the Related Items sidebar on which this view depends.
 
 - The view relies upon the custom field and the agent procedure.  
-  - Solution Doc: [https://proval.itglue.com/DOC-5078775-12540674](/docs/c852661d-3253-466e-ae17-ee2753885920)
+  - Solution Doc: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 
 # View Filters
 

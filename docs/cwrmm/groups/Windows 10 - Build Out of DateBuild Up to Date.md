@@ -16,9 +16,9 @@ There are two device groups related to the Windows 10 Upgrade Assistance solutio
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Win10UpgradeAttempts](https://proval.itglue.com/5078775/docs/12949095#version=published&documentMode=edit)
-- [CW RMM - Task - Feature Update Install (Windows 10) With Tracking](https://proval.itglue.com/5078775/docs/12947845#version=published&documentMode=edit)
-- [CW RMM - Task - Windows 10 Feature Update Attempt Tracking (Subscript)](https://proval.itglue.com/5078775/docs/12949193#version=published&documentMode=view)
+- [CW RMM - Custom Field - Win10UpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [CW RMM - Task - Feature Update Install (Windows 10) With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
+- [CW RMM - Task - Windows 10 Feature Update Attempt Tracking (Subscript)](/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c)
 
 ## Create Device Groups
 
@@ -73,5 +73,3 @@ When adding criteria, please search for the **OS Version**.
 **Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
-
-

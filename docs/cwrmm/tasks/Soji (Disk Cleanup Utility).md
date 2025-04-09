@@ -18,7 +18,7 @@ Check out Soji on GitHub: [https://github.com/ProVal-Tech/Soji](https://github.c
 
 This document provides a guide on creating the Soji disk cleanup Task in CW RMM. The task is versatile and can serve as an Autofix/Automation Task alongside `Monitors` or `Intelligent Alerts`. When employed as an Autofix, the task executes the tool with the `--All` argument.
 
-Please reference [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argument usage.
+Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
 
 ## Sample Run
 
@@ -30,7 +30,7 @@ Please reference [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argu
 
 ## Dependencies
 
-[Soji](https://proval.itglue.com/DOC-5078775-10338558)
+[Soji](https://github.com/ProVal-Tech/Soji)
 
 ## Variables
 
@@ -43,7 +43,7 @@ Please reference [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argu
 
 | Name       | Example  | Required | Description                                                                 |
 |------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference [Soji](https://proval.itglue.com/DOC-5078775-10338558) for argument usage. |
+| Arguments  | --all    | False    | Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage. |
 
 **Note:** Arguments are case sensitive.
 

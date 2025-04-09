@@ -14,19 +14,10 @@ unlisted: false
 
 This document provides a view that shows all machines with a PCComp user present on the machine.
 
-# Dependencies
-
-Below is the link to the document for the script created to check the user status:
-- [User Status Script Documentation](https://proval.itglue.com/5078775/docs/18178737)
-
 # View Filters
 
 The following filters are applied to this view:
 
-| Filter Name           | Advanced Filter? | Filter Value |
-|----------------------|------------------|--------------|
-| cPVAL User Status    | Yes              | *present*    |
-|                      |                  |              |
-|                      |                  |              |
-
-
+| Filter Name       | Advanced Filter? | Filter Value |
+| ----------------- | ---------------- | ------------ |
+| cPVAL User Status | Yes              | *present*    |

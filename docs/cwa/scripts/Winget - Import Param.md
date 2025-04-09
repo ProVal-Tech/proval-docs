@@ -22,7 +22,7 @@ Additionally, it includes an option to create a ticket with the list of applicat
 
 1. Import the following scripts from the `ProSync` plugin:  
    - [Winget - Export [Param]](/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0)  
-   - [Winget - Import [Param]](https://proval.itglue.com/5078775/docs/15522130)  
+   - [Winget - Import [Param]](/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285)  
 
 2. Run the [Winget - Export [Param]](/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0) on the preferred computer to export the list of installed applications. Ensure to set the parameter `Email_Report` to `1`. This will send the list of installed applications to your email address, saved as `SoftwareList.Json`.
 

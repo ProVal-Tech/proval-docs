@@ -46,10 +46,10 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 
 ### Parameters
 
-| Parameter     | Alias | Required | Default  | Type   | Description                      |
-|---------------|-------|----------|----------|--------|----------------------------------|
-| `-XMLPath`    |       | False    |          | String | The URL/path to the XML config file |
-| `-Restart`    |       | False    | $False   | Switch | Restart after the installation    |
+| Parameter  | Alias | Required | Default | Type   | Description                         |
+| ---------- | ----- | -------- | ------- | ------ | ----------------------------------- |
+| `-XMLPath` |       | False    |         | String | The URL/path to the XML config file |
+| `-Restart` |       | False    | $False  | Switch | Restart after the installation      |
 
 ## Output
 
@@ -57,13 +57,4 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
-
-## Locations
-
-| Payload                        | Location                           |
-|--------------------------------|------------------------------------|
-| Install Script                 | /repo/script/Install-Microsoft365  |
-| Automate                       |                                    |
-| Kaseya                        | [Kaseya](https://proval.itglue.com/5078775/docs/15402741) |
-
 

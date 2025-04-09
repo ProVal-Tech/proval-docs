@@ -11,12 +11,12 @@ unlisted: false
 ---
 
 ## Summary
-Displays the status of compatible Windows 10 computers upgraded by the [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad) monitor and [Windows 11 installer](../scripts/Windows%20_11_Installer.md) script.
+Displays the status of compatible Windows 10 computers upgraded by the [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad) monitor and [Windows 11 installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) script.
 
 
 ## Dependencies
 [Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)   
-[Solution : Windows 11 Installation](../../solutions/Windows%2011%20Installation.md)   
+[Solution : Windows 11 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)   
 [Solution - Windows 11 Compatibility Audit ](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)
 
 

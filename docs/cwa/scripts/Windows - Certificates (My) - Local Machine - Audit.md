@@ -24,9 +24,9 @@ This script is designed to run a PowerShell script and pull any and all certific
 
 #### Global Parameters
 
-| Name      | Example                                                                 | Required | Description                                                                                                                                         |
-|-----------|-------------------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| TableName | [plugin_proval_certs](https://proval.itglue.com/5078775/docs/9262931) | True     | This indicates what the table name will be created to dump the data to. **This must not be changed.**                                            |
+| Name      | Example                                                           | Required | Description                                                                                           |
+| --------- | ----------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| TableName | [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) | True     | This indicates what the table name will be created to dump the data to. **This must not be changed.** |
 
 ## Output
 

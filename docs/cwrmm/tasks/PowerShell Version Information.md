@@ -89,7 +89,7 @@ Please write %output% to the "PowerShell Version" custom field. This will write 
 
 ## Script Deployment
 
-ProVal recommends scheduling this task using a monitor and a machine group. Please review the [Solutions](https://proval.itglue.com/5078775/docs/12824365#version=published&documentMode=view) document here for best practice implementation.
+ProVal recommends scheduling this task using a monitor and a machine group. Please review the [solution](/docs/84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9) document here for best practice implementation.
 
 ## Output
 

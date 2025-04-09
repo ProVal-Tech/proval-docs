@@ -16,22 +16,22 @@ The purpose of this document is to update and audit the PowerShell version for o
 
 ## Associated Content
 
-| Content                                                                                     | Type          | Function                                                                                                         |
-|---------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------|
-| [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81)                     | Role          | Detect the current PowerShell version of the machine.                                                          |
-| [ProVal - Production - PowerShell Out of Date](https://proval.itglue.com/5078775/docs/11623739) | Internal Monitor | The monitor set will detect the Windows machines where PowerShell Version is older than 5.0.                    |
-| [PowerShell Version Audit [Role]](https://proval.itglue.com/5078775/docs/10923267)       | Dataview      | This dataview collects information on PowerShell Version based on the [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81). |
-| [Update PowerShell](https://proval.itglue.com/5078775/docs/11313612)                     | Script        | Updates PowerShell Desktop to the latest version.                                                               |
-| △ Custom - Autofix - PowerShell Out of Date                                                | Alert Template | Executes the [Update PowerShell](https://proval.itglue.com/5078775/docs/11313612) script against the machines detected by the [ProVal - Production - PowerShell Out of Date](https://proval.itglue.com/5078775/docs/11623739) monitor set. |
+| Content                                                                | Type             | Function                                                                                                                                               |
+| ---------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81)  | Role             | Detect the current PowerShell version of the machine.                                                                                                  |
+| [PowerShell Out of Date](/docs/abc5e9cd-9e2c-4df0-b129-be342008e554)   | Internal Monitor | The monitor set will detect the Windows machines where PowerShell Version is older than 5.0.                                                           |
+| [PowerShell Version Audit](/docs/9da26821-e8e6-44b4-9310-2495aebd0396) | Dataview         | This dataview collects information on PowerShell Version based on the [role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81).                              |
+| [Update PowerShell](/docs/a95013e7-7091-4d99-a772-4223230789d9)        | Script           | Updates PowerShell Desktop to the latest version.                                                                                                      |
+| PowerShell Out of Date                                                 | Alert Template   | Executes the [script](/docs/a95013e7-7091-4d99-a772-4223230789d9) against the detections of [the monitor](/docs/abc5e9cd-9e2c-4df0-b129-be342008e554). |
 
 ## Implementation
 
 1. Import the [Dynamic PowerShell Role](/docs/6c30a69a-90c5-4e2d-ba5f-f2a663adbd81) Role.
 2. Execute the Update Config command against all agents.
-3. Import the [ProVal - Production - PowerShell Out of Date](https://proval.itglue.com/5078775/docs/11623739) Internal monitor.
-4. Import the [Update PowerShell](https://proval.itglue.com/5078775/docs/11313612) script.
+3. Import the [ProVal - Production - PowerShell Out of Date](/docs/abc5e9cd-9e2c-4df0-b129-be342008e554) Internal monitor.
+4. Import the [Update PowerShell](/docs/a95013e7-7091-4d99-a772-4223230789d9) script.
 5. Configure the Global Parameter of the script as needed.
-6. Import the [PowerShell Version Audit [Role]](https://proval.itglue.com/5078775/docs/10923267) dataview.
+6. Import the [PowerShell Version Audit [Role]](/docs/9da26821-e8e6-44b4-9310-2495aebd0396) dataview.
 7. Import the `△ Custom - Autofix - PowerShell Out of Date` Alert Template.
 8. Reload the system cache.
 9. Assign the alert template to the internal monitor.

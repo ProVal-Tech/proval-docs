@@ -45,7 +45,7 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 ## FAQ
 
 **Q:** The solution saves the password at the client-level password tab in Automate; is there any way to sync these credentials to ITGlue?  
-**A:** Yes, the [StickySync](https://proval.itglue.com/5078775/docs/8842775) plugin can be used and configured to sync those passwords to ITGlue.
+**A:** Yes, the [StickySync](/docs/fa3bbc1f-9ceb-4578-bf19-487a619536df) plugin can be used and configured to sync those passwords to ITGlue.
 
 **Q:** Marking an EDF is not making the expected change/exclusion?  
 **A:** The EDF data might not have been synced to the `v_extradatacomputers` or `v_extradatagroups` tables. Automate runs this sync every 20-25 minutes. So, either you need to wait for 20-25 minutes, or you can run the following SQL queries from a `RAWSQL` monitor to force sync the data:

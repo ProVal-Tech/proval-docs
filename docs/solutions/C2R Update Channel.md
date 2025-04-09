@@ -94,7 +94,7 @@ Confirm with a consultant before enabling the Automation.
        - Set up with `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel` Alert Template
        - Right-click and Run Now to start the monitor
 
-4. Set the appropriate value for the Client or Computer Level EDF [Update Channel](https://proval.itglue.com/5078775/docs/17164646#version=published&documentMode=edit:~:text=Run%20%2D%20Get%20Details-,Client%20Level%20EDF,-Name) to initiate the Automation.
+4. Set the appropriate value for the Client or Computer Level EDF [Update Channel](/docs/77f0982f-1be7-49a7-871e-cfc88705775e) to initiate the Automation.
 
 ## Deprecated Content
 

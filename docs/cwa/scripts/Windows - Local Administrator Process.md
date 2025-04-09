@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Feb 2023 - See Updated Script - [https://proval.itglue.com/5078775/docs/7742920#version=published&documentMode=view](https://proval.itglue.com/5078775/docs/7742920#version=published&documentMode=view)
+Feb 2023 - See Updated Script - [Windows - Administrator account process](/docs/5c6739bc-45a2-4011-99e1-f90581fa15ac)
 
 This script is used to create and set a local Administrator password for a client.
 

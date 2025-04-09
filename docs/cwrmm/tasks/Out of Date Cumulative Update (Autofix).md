@@ -231,20 +231,7 @@ The following function will pop up on the screen:
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
 ```powershell
-#requires -RunAsAdministrator
-#requires -Version 5
-$ProgressPreference = 'SilentlyContinue'
-$WarningPreference = 'SilentlyContinue'
-[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-$url = 'https://proval.itglue.com/DOC-5078775-15739309'
-$iwr = Invoke-WebRequest -Uri $url -UseBasicParsing
-$json = $($iwr.content -split '' -split '' ) -match 'plugin_proval_windows_os_support'
-$json = $json -replace '', "`n" -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'" -replace '&amp;#x2014;', ' ' -replace '&amp;nbsp;', ''
-$rows = ($json | ConvertFrom-Json).rows
-$os = Get-CimInstance -ClassName Win32_OperatingSystem
-if (!( $os.caption -match '(Windows 1[01])|(Server 20(1[69]|22))' )) \{
-    return 'Unsupported OS'
-}
+# Needs update to JSON format
 ```
 
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_39.png)  

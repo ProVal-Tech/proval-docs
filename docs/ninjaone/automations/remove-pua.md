@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This is a Ninja RMM implementation of the agnostic script [Remove-PUA](</docs/powershell/Remove-PUA.md>). It manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
+This is a Ninja RMM implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). It manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
 
 **PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
 
@@ -34,7 +34,7 @@ The below attempts to remove all detected bloatware listed in the [PUA List](htt
 
 ## Dependencies
 
-[Remove-PUA](</docs/powershell/Remove-PUA.md>)
+[Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
 ## User Parameters
 

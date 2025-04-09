@@ -34,7 +34,7 @@ To provide clients with professional-looking patch management reports that they 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Patch Compliance Reporting SQL Import Attachment](https://proval.itglue.com/5078775/docs/17898232) | Document | Implementation instructions on how to import these patch compliance reports into a partner's environment. |
+| [Patch Compliance Reporting SQL Import Attachment](/docs/d031272f-71dd-46c3-af06-327cac5c648a) | Document | Implementation instructions on how to import these patch compliance reports into a partner's environment. |
 
 ## Dependencies
 
@@ -52,7 +52,7 @@ These reports are dependent on the following items:
 
 3. Run the [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) on any machine to create the views necessary for this solution. After running the script once, it can be deleted from the environment.
 
-4. Follow the instructions outlined in the [Patch Compliance Reporting SQL Import Attachment](https://proval.itglue.com/5078775/docs/17898232) document to import the reports into the report center.
+4. Follow the instructions outlined in the [Patch Compliance Reporting SQL Import Attachment](/docs/d031272f-71dd-46c3-af06-327cac5c648a) document to import the reports into the report center.
 
 5. Reload the system cache:  
    ![Reload Cache](../../static/img/Patch-Compliance-Reporting-Solution/image_1.png)

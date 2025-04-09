@@ -18,17 +18,9 @@ The end goal of the solution is to check the presence of User - pccomp on the ma
 
 - For cPVAL User - PCComp
 
-| Content                                                                                      | Type         | Function                                                                                                   |
-|----------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------|
-| [https://proval.itglue.com/5078775/docs/18178737](https://proval.itglue.com/5078775/docs/18178737) | Script       | The script populates the information to the CF if the desired user is present on the machine.              |
-| [https://proval.itglue.com/5078775/docs/18178752](https://proval.itglue.com/5078775/docs/18178752) | Custom field | The CF stores the information in the format "pccomp is present/Not Present".                               |
-| [https://proval.itglue.com/5078775/docs/18178739](https://proval.itglue.com/5078775/docs/18178739) | View         | The view is updated based on the above CF and displays the machines that have the desired user present on them. |
-
-- Delete User - pccomp
-
-| Content                                                                                      | Type         | Function                                                                                                   |
-|----------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------|
-| [https://proval.itglue.com/5078775/docs/18178736](https://proval.itglue.com/5078775/docs/18178736) | Script       | The script deletes the User - pccomp if it is present on the machine.                                    |
+| Content                                                                                            | Type         | Function                                                                                      |
+| -------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------- |
+| [Vsa HDD Monitoring Solution](/docs/ea55f0eb-9011-436a-bbd9-1795fc206f81)                          | Script       | The script populates the information to the CF if the desired user is present on the machine. |
 
 ## Implementation
 

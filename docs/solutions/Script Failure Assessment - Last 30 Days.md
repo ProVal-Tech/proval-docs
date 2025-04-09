@@ -60,7 +60,7 @@ The purpose of this solution is to present a detailed analysis of script failure
 5. Schedule the [Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) to run daily:
    1. Go to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
    2. Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
-   3. Schedule the [Script Failure Analysis - 30 Day Retention](https://proval.itglue.com/5078775/docs/16804995) to run once per day, preferably around midnight, as demonstrated in the `Sample Run` section of the document.  
+   3. Schedule the [Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) to run once per day, preferably around midnight, as demonstrated in the `Sample Run` section of the document.  
       ![Image](../../static/img/Script-Failure-Assessment---Last-30-Days/image_3.png)
 
 

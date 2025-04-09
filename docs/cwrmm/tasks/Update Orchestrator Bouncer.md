@@ -58,7 +58,7 @@ if (Test-Path $RebootPath) {
 
 ## Script Deployment
 
-The script is intended to run from the ["CW RMM - Custom Monitor - Update Orchestrator Bouncer"](https://proval.itglue.com/5078775/docs/13460540#version=published&amp;documentMode=edit) monitor as the "Run Automated Task."
+The script is intended to run from the ["CW RMM - Custom Monitor - Update Orchestrator Bouncer"](/docs/a88678ef-dc82-4837-802c-e77573277504) monitor as the "Run Automated Task."
 
 This script can also run manually against any Windows-based device.
 
