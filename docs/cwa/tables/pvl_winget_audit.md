@@ -15,7 +15,7 @@ This document stores the audit data fetched by the [Winget App Audit](<../script
 
 ## Dependencies
 
-[SWM - Software Update - Script - Winget App Audit](<../scripts/Winget App Audit.md>)
+[Winget App Audit](<../scripts/Winget App Audit.md>)
 
 ## Tables
 
@@ -32,6 +32,7 @@ This document stores the audit data fetched by the [Winget App Audit](<../script
 | UptoDate            | tinytext  | Is the application up to date? (0/1)                                                            |
 | Level                | varchar   | Installation level of the application (System/User).                                            |
 | AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](<../scripts/Configure Winget Auto Update.md>) script's document for detailed instructions on enabling Auto Update. |
+| AutoUpdateRunTime | datetime | The last run time of the scheduled task that executes the Winget Auto Update application to check for and update outdated applications. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
 
 
