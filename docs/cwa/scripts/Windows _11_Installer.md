@@ -27,12 +27,10 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 
 ## Update Notice: 15 January, 2024
 
-The script has been updated to address the `InsufficientSystemPartitionDiskSpaceHardblock` issue. 
+The script has been updated to address the `InsufficientSystemPartitionDiskSpaceHardblock` issue.
 
-**Reference**: https://support.microsoft.com/en-us/help/3086249/-we-couldn-t-update-system-reserved-partition-error-installing-windows
-Special Thanks: Hunter Line (Aptica, LLC)
-
-
+**Reference**: [InsufficientSystemPartitionDiskSpaceHardblock](https://support.microsoft.com/en-us/help/3086249/-we-couldn-t-update-system-reserved-partition-error-installing-windows)  
+**Acknowledgment:** `Hunter Line (Aptica, LLC) for their valuable contributions.`
 
 ## Sample Run
 
