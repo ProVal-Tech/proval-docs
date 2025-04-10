@@ -20,7 +20,6 @@ This document resolves the stuck email issue in Microsoft Exchange based on the 
 
 ## Dependencies
 
-- [Email Stuck in Exchange On-prem Detection](/docs/cwa-email-impact-summary)  
 - [Email Stuck in Exchange On-Premises Transport Queues](https://techcommunity.microsoft.com/t5/exchange-team-blog/email-stuck-in-exchange-on-premises-transport-queues/ba-p/3049447)
 
 ## Variables
