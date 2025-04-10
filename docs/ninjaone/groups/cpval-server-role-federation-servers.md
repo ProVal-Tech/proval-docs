@@ -1,5 +1,6 @@
 ---
 id: '18b85f9f-084b-4862-a58c-3de6996ebf52'
+slug: /18b85f9f-084b-4862-a58c-3de6996ebf52
 title: 'cPVAL - Server Role - Federation Servers'
 title_meta: 'cPVAL - Server Role - Federation Servers'
 keywords: ['windows', 'servers', 'role', 'adfs', 'federation-server']
@@ -21,9 +22,9 @@ A group tailored for Windows Servers that have the `Active Directory Federation 
 
 ## Dependencies
 
-[cPVAL - Windows Servers](./cpval-windows-servers.md)  
-[cPVAL - Roles Detected](../custom-fields/cpval-roles-detected.md)  
-[Windows Server Roles Detection](../automations/windows-server-roles-detection.md)
+[cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256)  
+[cPVAL - Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)  
+[Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)
 
 ## Group Creation
 

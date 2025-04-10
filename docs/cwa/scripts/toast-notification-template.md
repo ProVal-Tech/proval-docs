@@ -1,10 +1,11 @@
 ---
 id: 'e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f'
+slug: /e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f
 title: 'Toast Notification - Template'
 title_meta: 'Toast Notification - Template'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']
 description: 'This is a copy-only template for clients to use to set up toast notifications. The script is a template with example variables. Ensure each variable is reviewed and adjusted as needed before incorporating them into a production script.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
@@ -25,9 +26,9 @@ Recommended steps to use Toast Notification:
 **NOTE:** Then Section of this script is intentionally left blank.
 
 ## Dependencies
-[Toast Notification](./toast-notification.md)
+[Toast Notification](/docs/3aab837d-cb64-4669-aa35-040cce21c575)
 
-[Invoke-ToastNotification](../../powershell/Invoke-ToastNotification.md)
+[Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
 
 ## Variables
 

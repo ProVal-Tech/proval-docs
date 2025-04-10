@@ -1,5 +1,6 @@
 ---
 id: 'c5dffd43-67a3-47af-83ef-68e24c4e6c07'
+slug: /c5dffd43-67a3-47af-83ef-68e24c4e6c07
 title: 'cPVAL - Server Role - FSMO - Schema Master'
 title_meta: 'cPVAL - Server Role - FSMO - Schema Master'
 keywords: ['windows', 'servers', 'role', 'fsmo', 'schema-master', 'domain-controller']
@@ -21,9 +22,9 @@ A group tailored for Windows Servers that have the `Schema Master` role installe
 
 ## Dependencies
 
-[cPVAL - Windows Servers](./cpval-windows-servers.md)  
-[cPVAL - Roles Detected](../custom-fields/cpval-roles-detected.md)  
-[Windows Server Roles Detection](../automations/windows-server-roles-detection.md)
+[cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256)  
+[cPVAL - Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)  
+[Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)
 
 ## Group Creation
 
