@@ -7,7 +7,7 @@ keywords: ['vmware', 'detection', 'configuration', 'probe', 'credentials']
 description: 'This document provides a comprehensive guide to troubleshooting VMware host detection failures, including configuration checks for network probes and credential settings. It outlines step-by-step instructions to ensure proper setup and resolution of common issues.'
 tags: ['networking', 'security', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 <div class='text-section scrollable'>
@@ -77,5 +77,4 @@ If none of the above steps help, please reach out to us at [Support@provaltech.c
 &nbsp;
 
 </div>
-
 

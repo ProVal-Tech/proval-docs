@@ -6,8 +6,8 @@ title_meta: 'Popular Web Browser Audit - IE Included'
 keywords: ['audit', 'web', 'browser', 'internet', 'explorer', 'disabled']
 description: 'This document provides a detailed dataview of the web browsers installed on agents, specifically focusing on the audit status of Internet Explorer, which has been decommissioned since June 15, 2022. It lists various browsers under audit and includes SQL representation for querying the relevant data.'
 tags: ['security', 'software', 'web-browser', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -88,5 +88,4 @@ FROM
       c.computerid
   ) AS t
 ```
-
 

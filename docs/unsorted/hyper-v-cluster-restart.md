@@ -6,8 +6,8 @@ title_meta: 'Hyper V Cluster - Restart'
 keywords: ['hyper-v', 'cluster', 'reboot', 'drain', 'timeout']
 description: 'This document provides a detailed overview of a PowerShell script designed to reboot all nodes of a Hyper-V cluster sequentially, ensuring each node is fully operational before proceeding to the next. It includes requirements, process steps, parameters, and output logs for monitoring the script execution.'
 tags: ['cluster', 'hyper-v', 'performance', 'reboot']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview
@@ -59,5 +59,4 @@ This command will cycle through all nodes of ClusterName and attempt to drain th
 ./Restart-HyperVCluster-log.txt
 ./Restart-HyperVCluster-error.txt
 ```
-
 

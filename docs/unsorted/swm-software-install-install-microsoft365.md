@@ -7,7 +7,7 @@ keywords: ['microsoft', 'installation', 'office365', 'xml', 'odt']
 description: 'This document provides a detailed guide on installing Microsoft 365 Apps for Business using PowerShell, including requirements, process steps, and example usage with XML configuration support.'
 tags: ['installation', 'office365', 'software', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Overview
@@ -57,4 +57,3 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
-

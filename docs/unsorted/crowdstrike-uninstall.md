@@ -6,8 +6,8 @@ title_meta: 'Crowdstrike Uninstall'
 keywords: ['uninstall', 'crowdstrike', 'application', 'tool', 'removal']
 description: 'This document provides a detailed guide on how to uninstall the CrowdStrike Application using the CSUninstallTool.exe. It includes requirements, dependencies, process steps, and output information to ensure a successful uninstallation.'
 tags: ['security', 'software', 'uninstallation', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -47,5 +47,4 @@ This document provides a script to uninstall the CrowdStrike Application.
 ## Output
 
 - Script log
-
 

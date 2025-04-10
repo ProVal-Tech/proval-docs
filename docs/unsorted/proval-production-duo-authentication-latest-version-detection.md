@@ -7,7 +7,7 @@ keywords: ['duo', 'authentication', 'version', 'monitor', 'windows']
 description: 'This document outlines the implementation of a monitor designed to fetch the latest version of the DUO Authentication application for Windows. It updates a system property with the latest version available through WinGet, ensuring that systems can identify outdated installations. The monitor is set to update monthly and is intended for global deployment.'
 tags: ['software', 'update', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
@@ -27,5 +27,4 @@ This script is specifically targeted to one machine to fetch the application's l
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
-
 

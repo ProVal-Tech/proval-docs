@@ -6,8 +6,8 @@ title_meta: 'Computer Description Audit'
 keywords: ['computer', 'description', 'report', 'sql', 'agent']
 description: 'This document provides a detailed overview of the Computer Description Data Report, including its dependencies, columns, and SQL representation for fetching computer description messages set on agents within the RMM.'
 tags: ['database', 'report', 'sql']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary

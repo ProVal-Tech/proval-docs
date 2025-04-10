@@ -6,8 +6,8 @@ title_meta: 'Remote Domain Join - RemoteADJoin'
 keywords: ['kaseya', 'domain', 'join', 'api', 'remote']
 description: 'This document outlines a program pair that facilitates remote domain joining of machines without direct domain access by utilizing the Kaseya API. It details the processes involved, parameters required, and output generated during the execution of the program.'
 tags: ['kaseya', 'networking', 'security', 'setup', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview
@@ -68,5 +68,4 @@ Output files for the endpoint are located in the same directory as the executabl
 | Automate                                                                                               | N/A                                                                                                    |
 | Kaseya endpoint procedure                                                                               | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
 | Kaseya DC procedure                                                                                   | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
-
 

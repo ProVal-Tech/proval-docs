@@ -6,8 +6,8 @@ title_meta: 'Processor Architecture Audit'
 keywords: ['processor', 'architecture', 'x86', 'mips', 'alpha', 'powerpc', 'arm', 'itanium', 'amd64', 'arm64']
 description: 'This document provides a detailed overview of various processor architectures, including x86, MIPS, Alpha, PowerPC, ARM, Itanium, AMD64, and ARM64. It also includes information on dependencies and a structured dataview for better understanding.'
 tags: ['report']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -40,5 +40,4 @@ The output is:
 | Operating System     | Operating System name of the agent               |
 | Last Contact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
-
 

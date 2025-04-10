@@ -6,8 +6,8 @@ title_meta: 'IPGeolocation Audit'
 keywords: ['device', 'location', 'ip', 'city', 'state', 'country', 'timezone']
 description: 'This document provides an overview of a script designed to collect the current location details of a device. It utilizes the ipinfo.io website to gather information such as device IP, city, state, country, map location, postal address, and timezone, along with a timestamp of when the data was collected.'
 tags: ['timezone']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -39,5 +39,4 @@ This script scans the device to collect information about its current location. 
 - Script log
 - Dataview
 - Custom table plugin_proval_ipinfo
-
 

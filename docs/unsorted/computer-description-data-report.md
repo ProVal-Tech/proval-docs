@@ -6,8 +6,8 @@ title_meta: 'Computer Description Data Report'
 keywords: ['computer', 'description', 'audit', 'agent', 'dataview']
 description: 'This document outlines a script designed to retrieve computer description information from agents and store it in a dependent dataview. The script enhances efficiency by saving approximately 10 minutes of manual effort. It includes sample output, dependencies, and detailed processing steps.'
 tags: []
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -40,5 +40,4 @@ This script will find the computer description information from the agent and st
 - Script log
 - Script state
 - Dataview
-
 

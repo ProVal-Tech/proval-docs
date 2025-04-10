@@ -6,12 +6,11 @@ title_meta: 'Alarm - SSL Cert Troubleshooting'
 keywords: ['guide', 'step', 'process', 'instructions']
 description: 'This document provides a detailed guide for Step 1 of the process, outlining the necessary actions and considerations to ensure successful execution.'
 tags: ['installation', 'setup']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Step 1
 
 This section will provide a detailed overview of Step 1, including the necessary actions and considerations for successful execution. Please follow the instructions carefully to ensure a smooth process.
-
 

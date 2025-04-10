@@ -6,8 +6,8 @@ title_meta: 'SWM - Software Install - Client Specific - Vuln Scanner - Install'
 keywords: ['install', 'scanner', 'nessus', 'vulnerability', 'agent']
 description: 'This document provides a comprehensive guide on installing the NESSUS vulnerability scanner, including sample runs, variable definitions, global parameters, and a detailed process for successful installation.'
 tags: ['installation', 'security', 'setup', 'software']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -49,5 +49,4 @@ This script installs the NESSUS vulnerability scanner.
 9. If "Nessus Agent (x64)" is a valid software in the software list, go to step 11.
 10. Log an error and exit with an error.
 11. Log success and exit.
-
 

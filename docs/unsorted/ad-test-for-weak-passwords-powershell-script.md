@@ -6,8 +6,8 @@ title_meta: 'AD - Test for Weak Passwords - PowerShell Script'
 keywords: ['active-directory', 'password', 'testing', 'infrastructure', 'database']
 description: 'This document provides an overview of a PowerShell script designed to run on an Active Directory Infrastructure Master server. The script outputs data in a comma-separated format for database insertion and includes steps for checking directory existence, downloading necessary files, and testing password quality against user accounts.'
 tags: ['active-directory', 'database', 'security', 'setup']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

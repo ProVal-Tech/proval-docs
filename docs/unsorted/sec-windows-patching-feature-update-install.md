@@ -6,8 +6,8 @@ title_meta: 'SEC - Windows Patching - Feature Update Install'
 keywords: ['windows', 'update', 'feature', 'install', 'script']
 description: 'This document outlines the process for running the Install-FeatureUpdate script to install the latest Windows Feature Update on an endpoint. It includes sample runs, dependencies, and detailed documentation of variables, parameters, and output methods.'
 tags: ['security', 'update', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -66,5 +66,4 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 

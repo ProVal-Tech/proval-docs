@@ -7,7 +7,7 @@ keywords: ['ad', 'users', 'department', 'domain', 'servers', 'sql', 'database']
 description: 'This document outlines the process for listing the Active Directory users department information from Domain servers, including the necessary SQL commands to create custom tables for auditing purposes.'
 tags: ['active-directory', 'database', 'report', 'setup']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Purpose
@@ -45,5 +45,4 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_computer_department` (
   CONSTRAINT `plugin_proval_computer_department_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`computerid`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
 

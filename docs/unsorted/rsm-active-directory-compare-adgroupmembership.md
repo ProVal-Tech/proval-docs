@@ -6,8 +6,8 @@ title_meta: 'RSM - Active Directory - Compare - ADGroupMembership'
 keywords: ['active-directory', 'membership', 'comparison', 'registry', 'logging']
 description: 'This document provides an overview of a script that compares the membership of an Active Directory group by analyzing previous runs and logging any changes detected. It is intended to be run on an Active Directory Domain Controller and details the process, parameters, and output of the script.'
 tags: ['active-directory', 'logging', 'registry', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview
@@ -56,5 +56,4 @@ This command compares the users found in the last run of `Compare-ADGroupMembers
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
-
 

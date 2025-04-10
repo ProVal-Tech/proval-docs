@@ -6,8 +6,8 @@ title_meta: 'SWM - Software Configuration - Component - WinGet Processor Suite'
 keywords: ['winget', 'export', 'import', 'update', 'uninstall', 'json', 'packages']
 description: 'This document provides an overview of various WinGet functionalities including exporting a list of software packages to a JSON file, importing packages from a JSON file, updating all compatible software packages, and uninstalling specific software packages using WinGet on endpoints. It includes dependencies, implementation details, and Datto variable configurations for each process.'
 tags: ['installation', 'software', 'uninstallation', 'update']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## WinGet Export
@@ -108,5 +108,4 @@ Import the component in this directory into the target environment.
 
 ### Output
 stdOut & stdError
-
 

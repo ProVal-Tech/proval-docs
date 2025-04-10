@@ -6,8 +6,8 @@ title_meta: 'plugin_proval_Mapped_Drive_CurrentUser'
 keywords: ['mapped', 'drive', 'audit', 'current', 'user']
 description: 'This document outlines the structure and purpose of the table that stores mapped drive details for the currently logged-in users, including dependencies and SQL table creation instructions.'
 tags: ['database', 'setup', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Purpose
@@ -41,5 +41,4 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_Mapped_Drive_CurrentUser` (
   CONSTRAINT `plugin_proval_Mapped_Drive_CurrentUser_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
 

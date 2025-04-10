@@ -6,8 +6,8 @@ title_meta: 'Enable Google Chrome Auto Updates - MacWindows'
 keywords: ['google', 'chrome', 'update', 'edf', 'script']
 description: 'This document provides an overview of the variables used in the Google Chrome Auto Update script, specifically focusing on the EDF that checks the status of Chrome auto-update functionality.'
 tags: ['chrome', 'software', 'update']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Variables
@@ -19,5 +19,4 @@ unlisted: false
 | Google Chrome Auto Update (EDF)          | This EDF is checked when the auto-update of Chrome is enabled via the script.                 |
 
 </div>
-
 

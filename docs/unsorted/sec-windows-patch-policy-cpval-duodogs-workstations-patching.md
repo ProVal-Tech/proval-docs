@@ -6,8 +6,8 @@ title_meta: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Workstations Patching'
 keywords: ['patch', 'workstation', 'policy', 'maintenance', 'reboot']
 description: 'This document outlines the organization-level patch policy for workstations, detailing the procedures for patch management, including scheduling maintenance reminders, disabling Windows Automatic Updates, and managing reboot actions based on user activity.'
 tags: ['windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 # Summary

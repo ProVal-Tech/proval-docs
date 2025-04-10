@@ -6,8 +6,8 @@ title_meta: 'SEC - Endpoint Protection - Test-BruteForceAttack'
 keywords: ['brute', 'force', 'attack', 'endpoint', 'security', 'log', 'failures', 'threshold', 'events']
 description: 'This document outlines a script designed to detect brute force attacks on an endpoint by monitoring login failures in the security log. The script can be scheduled to run periodically, checking for failed login attempts and alerting if the count exceeds a specified threshold. It also supports outputting the results to a file in various formats.'
 tags: ['report', 'security', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

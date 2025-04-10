@@ -6,8 +6,8 @@ title_meta: 'Retire Machines offline for more than 60 days'
 keywords: ['monitor', 'retire', 'machines', 'offline', 'autofix', 'sql']
 description: 'This document outlines the process for creating a monitor to retire machines that have been offline for more than 60 days, including necessary prerequisites, configurations, and autofix scripts to ensure proper removal of agents from the environment.'
 tags: ['database', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 <div class='text-section scrollable'>
@@ -78,5 +78,4 @@ Script 2: "Move Agent to Retired Assets [Autofix]"
 Folder: ".Monitor Autofixes"
 
 </div>
-
 

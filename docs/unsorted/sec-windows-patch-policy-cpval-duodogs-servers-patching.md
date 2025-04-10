@@ -6,8 +6,8 @@ title_meta: 'SEC - Windows Patch - Policy - cPVAL DuoDogs Servers Patching'
 keywords: ['patch', 'policy', 'servers', 'management', 'windows', 'reboot']
 description: 'This document outlines the organization-level patch policy for servers, detailing the configuration for patch management, including the scheduling of updates and reboot actions. It emphasizes the disabling of Windows Automatic Update and the conditions under which server reboots occur.'
 tags: ['reboot', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 # Summary

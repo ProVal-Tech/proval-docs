@@ -6,8 +6,8 @@ title_meta: 'New Document'
 keywords: ['vsa', 'agents', 'offline', 'removal', 'api']
 description: 'This document provides an overview of a script that removes VSA agents from the environment that have been offline for a specified number of days. It details the requirements, process, payload usage, parameters, and output location for logs, results, and errors.'
 tags: ['api']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 # Overview
@@ -47,5 +47,4 @@ The output location for log, result, and error files is as follows:
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-
 

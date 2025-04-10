@@ -6,8 +6,8 @@ title_meta: 'AD Sync out of date - Troubleshooting'
 keywords: ['ad', 'sync', 'troubleshooting', 'credentials', 'plugin']
 description: 'This document provides a step-by-step guide to troubleshoot issues related to Active Directory Sync being out of date in ConnectWise Automate. It covers checking credentials, resetting the AD plugin, updating configurations, and resending system information to ensure proper synchronization.'
 tags: ['active-directory', 'security', 'software', 'update']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## AD Sync Out of Date Troubleshooting

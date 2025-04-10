@@ -6,8 +6,8 @@ title_meta: 'SWM - Software Install - Managed Variable - BitDefender Endpoint Se
 keywords: ['data', 'managed', 'variable', 'vsa']
 description: 'This document provides an overview of the data held by Managed Variables in Kaseya VSA, including dependencies on other content and examples of the data format and syntax used.'
 tags: []
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 <div class='text-section scrollable'>
@@ -28,5 +28,4 @@ unlisted: false
 ### Provide an example of the data contained within the variable, including any required syntax.
 
 </div>
-
 

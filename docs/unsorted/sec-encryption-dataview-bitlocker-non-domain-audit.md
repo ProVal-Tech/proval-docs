@@ -6,8 +6,8 @@ title_meta: 'SEC- Encryption - Dataview - Bitlocker - Non Domain - Audit'
 keywords: ['bitlocker', 'audit', 'encryption', 'active-directory', 'backup', 'security']
 description: 'This document provides a comprehensive Bitlocker audit report, detailing the encryption status and key protector backups for each audited volume. It includes SQL representation and dependencies for accurate data retrieval and analysis.'
 tags: ['active-directory', 'backup', 'encryption', 'security', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -118,5 +118,4 @@ FROM (
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
-
 

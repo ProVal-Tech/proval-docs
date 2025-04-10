@@ -6,8 +6,8 @@ title_meta: 'Java Upgrader'
 keywords: ['java', 'upgrade', 'latest', 'version', 'script']
 description: 'This document outlines a script designed to upgrade Java to the latest version of Java 8, detailing the process, expected outputs, and handling of old Java installations.'
 tags: ['software', 'update', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -33,5 +33,4 @@ This script upgrades Java to the latest version of Java 8.
 ## Output
 
 - Script log
-
 

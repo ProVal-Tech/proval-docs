@@ -6,8 +6,8 @@ title_meta: 'Agnostic - Uninstall N-Able'
 keywords: ['nable', 'uninstallation', 'windows', 'agent', 'removal']
 description: 'This document provides a comprehensive guide on how to uninstall the N-Able Windows Agent using a PowerShell script. It details the requirements, process, and expected output files for successful uninstallation.'
 tags: ['report', 'software', 'uninstallation', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

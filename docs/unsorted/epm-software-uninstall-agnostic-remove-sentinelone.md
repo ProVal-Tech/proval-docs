@@ -6,8 +6,8 @@ title_meta: 'EPM - Software Uninstall - Agnostic - Remove SentinelOne'
 keywords: ['uninstall', 'sentinelone', 'agent', 'windows', 'security']
 description: 'This document provides a comprehensive guide on how to uninstall the SentinelOne agent from a Windows system, including requirements, process steps, and usage examples. It also addresses the need for a passphrase if Anti-Tamper is enabled during the uninstallation.'
 tags: ['security', 'uninstallation', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 # Overview
@@ -46,5 +46,4 @@ Location of output for log, result, and error files:
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
 

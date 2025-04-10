@@ -6,8 +6,8 @@ title_meta: 'EPM - Disk - Agent - Drive Space Check - Client Specific'
 keywords: ['monitoring', 'drive', 'space', 'threshold', 'alert']
 description: 'This document provides a comprehensive overview of a drive space monitoring solution designed for endpoints. It details the configured thresholds for alerts, dependencies, default values for disk space monitoring, and the SQL query used for monitoring drive space. The monitor is tailored for server environments and includes filtering for specific file systems and USB drives.'
 tags: ['disk']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -76,6 +76,5 @@ WHERE
         )
     )
 ```
-
 
 

@@ -6,8 +6,8 @@ title_meta: 'plugin_proval_scheduled_tasks'
 keywords: ['scheduled', 'task', 'data', 'storage', 'audit']
 description: 'This document outlines the structure and dependencies of the scheduled task data storage, detailing the table schema and SQL commands necessary for implementation. It provides insights into the scheduled tasks managed by the system, including their statuses, run times, and management options.'
 tags: ['database', 'report', 'software', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Purpose
@@ -82,5 +82,4 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   CONSTRAINT `plugin_proval_scheduled_tasks_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
 

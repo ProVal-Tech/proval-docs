@@ -6,8 +6,8 @@ title_meta: 'Clickshare installation'
 keywords: ['clickshare', 'installation', 'script', 'agent', 'taskscheduler']
 description: 'This document provides a comprehensive guide on how to install ClickShare using a script. It covers the installation options for all users or the logged-in user, along with dependencies and global parameters.'
 tags: ['installation', 'setup', 'software']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -35,5 +35,4 @@ This script helps to install ClickShare on the agent. It can install the applica
 ## Output
 
 - Script log
-
 

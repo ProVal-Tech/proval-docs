@@ -6,8 +6,8 @@ title_meta: 'Standards and Health Plugin Best Practices'
 keywords: ['searches', 'custom', 'unique', 'connectwise', 'automate']
 description: 'This document provides an overview of how to create custom searches in ConnectWise Automate, emphasizing the importance of unique naming conventions for each search to ensure clarity and organization.'
 tags: ['connectwise', 'software']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 <div class='text-section scrollable'>
@@ -22,5 +22,4 @@ All searches need to be custom and have a unique name to ensure clarity and orga
 
 </div>
 </div>
-
 

@@ -6,8 +6,8 @@ title_meta: 'Admin - Missing Patches Total'
 keywords: ['patches', 'count', 'approval', 'missing', 'report', 'connectwise']
 description: 'This document provides a detailed overview of patch counts in ConnectWise Automate, including missing patches and those without approval. It includes SQL representation for generating the report and insights into the status of Microsoft patches across servers and workstations.'
 tags: ['connectwise', 'report', 'software', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -288,6 +288,5 @@ FROM
       approvalpolicycount = 0
   ) AS CountNotSet
 ```
-
 
 

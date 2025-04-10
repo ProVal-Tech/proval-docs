@@ -6,8 +6,8 @@ title_meta: 'Restore Point - Enable and Create Restore Point'
 keywords: ['system', 'restore', 'storage', 'point', 'ticket']
 description: 'This script checks if system restore is enabled on the system drive and enables it if not. It sets the maximum storage space for system restore to 5% and verifies if a restore point has been created within the last 30 days. If no restore point exists, it creates one and can generate a ticket if the creation fails, based on the global parameters.'
 tags: ['backup', 'performance', 'security', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -69,5 +69,4 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 

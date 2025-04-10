@@ -6,8 +6,8 @@ title_meta: 'Mapped Drive Audit - Current User'
 keywords: ['mapped', 'network', 'drives', 'current', 'user']
 description: 'This document provides a detailed overview of the mapped network drives for the currently logged-in user on a machine, including SQL representation and relevant dependencies.'
 tags: []
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -53,5 +53,4 @@ FROM
   JOIN clients cl ON cl.ClientID = c.ClientID 
   JOIN plugin_proval_Mapped_Drive_CurrentUser ppc ON ppc.computerid = c.ComputerID
 ```
-
 

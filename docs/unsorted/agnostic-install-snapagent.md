@@ -6,8 +6,8 @@ title_meta: 'Agnostic - Install-SnapAgent'
 keywords: ['snapagent', 'installer', 'windows', 'download', 'validation', 'installation', 'logging']
 description: 'This document provides a comprehensive guide on installing SnapAgent on Windows computers using a PowerShell script. It outlines the requirements, process, parameters, and expected outputs, ensuring users can successfully install SnapAgent by providing the necessary URL.'
 tags: ['installation', 'logging', 'software', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

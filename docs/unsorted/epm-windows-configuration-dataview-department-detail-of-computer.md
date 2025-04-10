@@ -6,8 +6,8 @@ title_meta: 'EPM - Windows Configuration - Dataview - Department Detail of Compu
 keywords: ['department', 'user', 'computer', 'client', 'location', 'os', 'memory', 'cpu', 'drive', 'sql']
 description: 'This document provides a detailed view of the department information for the last logged in user on each machine within the client environment. It includes dependencies, column descriptions, and an SQL representation to help retrieve the relevant data efficiently.'
 tags: ['database', 'performance', 'report', 'security', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -102,5 +102,4 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
-
 

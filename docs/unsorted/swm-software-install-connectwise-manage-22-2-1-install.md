@@ -6,8 +6,8 @@ title_meta: 'SWM - Software Install - ConnectWise Manage 22.2.1 Install'
 keywords: ['connectwise', 'installer', 'upgrade', 'client', 'version', '22.2.1']
 description: 'This document provides a detailed guide on installing or upgrading the ConnectWise Manager Internet Client to version 22.2.1, including dependencies, variables, and the process to follow for successful installation.'
 tags: ['connectwise', 'installation', 'software', 'update']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -48,5 +48,4 @@ This document outlines the process to install or upgrade the current ConnectWise
 6. Check for the ConnectWise Manage Client 64-bit. If it is not present, delete the temporary file, log the state, and exit with an error.
 7. Delete the temporary file.
 8. Log success and exit.
-
 

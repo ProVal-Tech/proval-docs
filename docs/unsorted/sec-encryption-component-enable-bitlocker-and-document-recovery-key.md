@@ -6,8 +6,8 @@ title_meta: 'SEC - Encryption - Component - Enable Bitlocker and Document Recove
 keywords: ['bitlocker', 'encryption', 'recovery', 'endpoint', 'security']
 description: 'This document provides a guide on enabling BitLocker on endpoints, including saving the recovery key and BitLocker status to User Defined Fields (UDF) in Datto RMM. It outlines the implementation steps required to import the component and modify UDF parameters for proper configuration.'
 tags: ['datto', 'encryption', 'recovery', 'security']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary

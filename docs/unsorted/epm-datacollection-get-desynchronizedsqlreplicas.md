@@ -6,8 +6,8 @@ title_meta: 'EPM - DataCollection - Get-DesynchronizedSqlReplicas'
 keywords: ['sql', 'replication', 'desynchronized', 'database', 'status']
 description: 'This document provides a guide on how to return a list of all desynchronized SQL replicas. It includes requirements, process steps, usage, and output details for executing the script on an SQL server.'
 tags: ['database', 'report', 'sql', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

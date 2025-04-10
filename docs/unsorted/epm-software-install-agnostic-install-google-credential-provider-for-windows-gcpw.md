@@ -6,8 +6,8 @@ title_meta: 'EPM - Software Install - Agnostic - Install Google Credential Provi
 keywords: ['gcpw', 'google', 'credential', 'provider', 'windows', 'installation', 'configuration', 'enrollment', 'token']
 description: 'This document outlines the automated process for installing and configuring the Google Credential Provider for Windows (GCPW). It details the requirements, process steps, and parameters for setting allowed domains and enrollment tokens, ensuring a smooth setup for users.'
 tags: ['installation', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 # Overview
@@ -61,5 +61,4 @@ The location of output for log, result, and error files is as follows:
 | ConnectWise RMM                               |                                                |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](/docs/2e080c81-a143-4fcb-939a-57ada1fae059) |
 | Datto RMM                                     |                                                |
-
 

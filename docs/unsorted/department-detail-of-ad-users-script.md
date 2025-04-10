@@ -6,8 +6,8 @@ title_meta: 'Department Detail of AD Users Script'
 keywords: ['ad', 'users', 'department', 'information', 'database']
 description: 'This document provides an overview of the dataview that stores department information for Active Directory (AD) users, including its dependencies, columns, and SQL representation for querying the data.'
 tags: ['active-directory', 'database', 'report']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -46,5 +46,4 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_computer_department pp ON pp.computerid = c.computerid
 ```
-
 

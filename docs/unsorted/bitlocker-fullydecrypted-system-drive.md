@@ -7,7 +7,7 @@ keywords: ['bitlocker', 'decrypt', 'windows', 'security']
 description: 'This document provides a summary and settings for fully decrypting machines using BitLocker. It includes a detection string and applicable operating system information.'
 tags: ['bitlocker', 'security', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
@@ -19,5 +19,4 @@ This document provides information on fully decrypting machines using BitLocker.
 | Detection String                                                                                                                                       | Comparator | Result        | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------------|----------------|
 | `%@powershell.exe -nologo -noprofile -command "Get-BitLockerVolume -MountPoint "C:" | Select-Object -ExpandProperty VolumeStatus"@% | Contains    | FullyDecrypted | Windows        |
-
 

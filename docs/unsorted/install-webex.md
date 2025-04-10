@@ -6,8 +6,8 @@ title_meta: 'Install - WebEX'
 keywords: ['webex', 'installation', 'script', 'itglue']
 description: 'This document provides a detailed guide on how to install WebEx from the Webex website using a script. It includes dependencies, variable documentation, global and user parameters, system properties, script states, and the process involved in the installation.'
 tags: ['installation', 'webex']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -74,5 +74,4 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-
 

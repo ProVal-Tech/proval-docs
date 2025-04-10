@@ -6,8 +6,8 @@ title_meta: 'Agnostic - Set-DisplayScaling'
 keywords: ['windows', 'scaling', 'display', 'dpi', 'registry']
 description: 'This document provides a step-by-step guide on how to set custom display scaling for Windows machines using PowerShell. It covers the necessary requirements, the process to modify registry keys for DPI scaling, and details on how to use the provided script with examples of parameters and expected output.'
 tags: ['performance', 'setup', 'windows']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Overview

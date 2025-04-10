@@ -6,8 +6,8 @@ title_meta: 'Scheduled Task Audit'
 keywords: ['audit', 'scheduled', 'task', 'user', 'account', 'json', 'sql', 'data', 'table']
 description: 'This document provides an overview of a script that audits scheduled tasks to identify which user accounts are executing them. It details the variables used, dependencies required, and the process for creating and storing task details in a database table. The output includes logs and data views for further analysis.'
 tags: ['database', 'report', 'sql']
-draft: true
-unlisted: false
+draft: false
+unlisted: true
 ---
 
 ## Summary
@@ -45,5 +45,4 @@ This script creates a table named "plugin_proval_scheduled_tasks" to store the s
 - plugin_proval_scheduled_tasks
 - Data view
 - etc.
-
 
