@@ -5,7 +5,7 @@ title: 'Manage - Network Adapter Protocols'
 title_meta: 'Manage - Network Adapter Protocols'
 keywords: ['DHCP','windows','networking','Protocol','IPV4','IPv6','Script','Automate']
 description: 'This script allows you to manage network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.'
-tags: ['DHCP', 'windows','networking']
+tags: ['dhcp', 'windows','networking']
 draft: False
 unlisted: false
 ---
@@ -18,8 +18,8 @@ Use this script with caution. Disabling IPv4 on the machine may result in a netw
 
 ## Dependencies
 
-- [Internal Monitor : ProVal - Production - Manage Network Adapters](/docs)
-- [Solution : Manage-NetworkAdapterProtocols](/docs)
+- Internal Monitor : ProVal - Production - Manage Network Adapters
+- Solution : Manage-NetworkAdapterProtocols
 
 
 ## Sample Run

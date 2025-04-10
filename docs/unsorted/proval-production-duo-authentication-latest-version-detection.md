@@ -6,7 +6,7 @@ title_meta: 'ProVal - Production - DUO Authentication - Latest Version Detection
 keywords: ['duo', 'authentication', 'version', 'monitor', 'windows']
 description: 'This document outlines the implementation of a monitor designed to fetch the latest version of the DUO Authentication application for Windows. It updates a system property with the latest version available through WinGet, ensuring that systems can identify outdated installations. The monitor is set to update monthly and is intended for global deployment.'
 tags: ['software', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

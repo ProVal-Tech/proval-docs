@@ -5,7 +5,7 @@ title: 'Malicious Software Removal Tool Scanning Enable'
 title_meta: 'Malicious Software Removal Tool Scanning Enable'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This group includes the endpoint where the MSRT scanning required to be enable.'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

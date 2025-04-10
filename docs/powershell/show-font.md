@@ -43,4 +43,3 @@ CustomObject
 | Datto RMM            |                              |
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10371907/Install-AnyConnect.ps1>)
-[README.md](/docs)

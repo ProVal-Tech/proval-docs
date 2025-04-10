@@ -5,7 +5,7 @@ title: 'Patch Approval Settings Audit'
 title_meta: 'Patch Approval Settings Audi'
 keywords: ['patch', 'patch-manager', 'windows', 'audit', 'alert', 'denied', 'approved', 'ignored', 'unapproved']
 description: 'This document outlines the process of implementing the content to keep track of patches approval and denials.'
-tags: ['patch', 'database',]
+tags: ['database',]
 draft: false
 unlisted: false
 ---

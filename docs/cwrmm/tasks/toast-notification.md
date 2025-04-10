@@ -5,7 +5,7 @@ title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']
 description: 'This task is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---

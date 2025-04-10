@@ -37,7 +37,7 @@ Please have the following file hash whitelisted in your security environment to 
 `BCEC14B37F7DF39D1F9D74AC14B7D526`
 
 ## Sample Run
-![Sample Run](/static/img/21ae27d2-c179-4f26-92cf-15760af6791a/data.png)
+![Sample Run](/img/21ae27d2-c179-4f26-92cf-15760af6791a/data.png)
 
 ## Variables
 

@@ -5,7 +5,7 @@ title: 'Copilot Revert Deployment'
 title_meta: 'Copilot Revert Deployment'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
 description: 'This monitor revert the copilot changes and ensures to enable and install the copilot on the agents where the script has disabled and uninstalled it'
-tags: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
+tags: ['api', 'edge', 'browsers', 'windows']
 draft: false
 unlisted: false
 ---

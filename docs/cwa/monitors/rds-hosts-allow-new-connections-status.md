@@ -3,8 +3,8 @@ id: 'ffcdc2ca-7c63-4226-b7b5-090f241f0bba'
 slug: /ffcdc2ca-7c63-4226-b7b5-090f241f0bba
 title: 'RDS Hosts - Allow New Connections Status'
 title_meta: 'RDS Hosts - Allow New Connections Status'
-keywords: []
-description: ''
+keywords: ['rds', 'remote', 'desktop', 'session', 'host', 'allow', 'new', 'connections']
+description: 'This document provides a detailed overview of a remote monitor that checks the Allow New Connections status of Remote Desktop Host servers. It includes the check action, server address, check type, and other relevant details.'
 tags: []
 draft: false
 unlisted: false

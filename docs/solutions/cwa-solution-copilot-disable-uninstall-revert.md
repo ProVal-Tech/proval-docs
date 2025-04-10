@@ -5,7 +5,7 @@ title: 'CWA Solution - Copilot Disable/Uninstall & Revert'
 title_meta: 'CWA Solution - Copilot Disable/Uninstall & Revert'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
 description: 'This solution contains Copilot disabling/uninstall and revert optional addition to revert the copilot back if required'
-tags: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

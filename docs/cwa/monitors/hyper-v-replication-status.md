@@ -63,4 +63,4 @@ TESTDNS01 replication state: Warning
 ## Implementation
 
 Please follow the article below for the implementation:  
-[Import - Remote Monitor - Hyper-V Replication Status Approved](./Import%20-%20Remote%20Monitor%20-%20Hyper-V%20Replication%20Status%20Approved)
+[Import - Remote Monitor - Hyper-V Replication Status Approved](/docs/f201b6f8-2844-484b-b3f8-79e1fd76e819)

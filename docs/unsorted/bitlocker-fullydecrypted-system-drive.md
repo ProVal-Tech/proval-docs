@@ -6,7 +6,7 @@ title_meta: 'Bitlocker FullyDecrypted - System Drive'
 keywords: ['bitlocker', 'decrypt', 'windows', 'security']
 description: 'This document provides a summary and settings for fully decrypting machines using BitLocker. It includes a detection string and applicable operating system information.'
 tags: ['bitlocker', 'security', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

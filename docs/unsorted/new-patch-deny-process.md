@@ -6,7 +6,7 @@ title_meta: 'New Patch Deny Process'
 keywords: ['patches', 'deny', 'windows', 'update', 'security']
 description: 'This document provides guidance on which Windows patches should be denied, including specific patch IDs and the rationale behind denying them. Learn how to manage your updates effectively to maintain system stability and security.'
 tags: ['performance', 'security', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

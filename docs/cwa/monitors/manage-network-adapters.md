@@ -5,8 +5,8 @@ title: 'Manage Network Adapters'
 title_meta: 'Manage Network Adapters'
 keywords: ['DHCP','windows','networking','Protocol','IPV4','IPv6','Script','Automate']
 description: 'This internal monitor detects windows machines selected for Network Adapters Protocol Solution'
-tags: ['DHCP', 'windows','networking']
-draft: False
+tags: ['dhcp', 'windows','networking']
+draft: false
 unlisted: false
 ---
 
@@ -15,8 +15,8 @@ This internal monitor detects windows machines selected for Network Adapters Pro
 
 ## Dependencies
 
-- [Script: Manage-NetworkAdapterProtocols](/docs)
-- [Solution : Manage-NetworkAdapterProtocols](/docs)
+- Script: Manage-NetworkAdapterProtocols
+- Solution : Manage-NetworkAdapterProtocols
 
 
 ## Target

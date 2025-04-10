@@ -5,7 +5,7 @@ title: 'Copilot - Enable/Disable'
 title_meta: 'Copilot - Enable/Disable'
 keywords: ['Copilot', 'Edge', 'Microsoft', 'Windows', 'Browser']
 description: 'This script will uninstall and disable the Windows Copilot application as well as its functionality in the Edge browser. It has the revert option available too.'
-tags: ['Copilot', 'Edge', 'Microsoft', 'Browser', 'pilot']
+tags: ['api', 'edge', 'windows', 'browsers']
 draft: false
 unlisted: false
 ---

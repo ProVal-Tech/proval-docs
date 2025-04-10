@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-This document stores information from [NCSC-NL's GitHub repository](/docs) about applications that may be affected by Log4J vulnerabilities.
+This document stores information from NCSC-NL's GitHub repository about applications that may be affected by Log4J vulnerabilities.
 
 ## Dependencies
 

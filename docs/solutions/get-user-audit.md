@@ -5,7 +5,7 @@ title: 'Get User Audit'
 title_meta: 'Get User Audit'
 keywords: ['user', 'test', 'audit', 'logs', 'SID']
 description: 'Documentation for the User-Audit to retrieve specific or multiple users auditing for information username, sids, and status using the string pattern match'
-tags: ['user', 'test', 'audit', 'logs', 'SID']
+tags: ['security']
 draft: false
 unlisted: false
 ---

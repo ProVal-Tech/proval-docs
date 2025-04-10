@@ -5,7 +5,7 @@ title: 'Malicious Software Removal Tool Scanning'
 title_meta: 'Malicious Software Removal Tool Scanning'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This script performs the endpoint scanning using the MSRT and provided option to creates ticket if failure detected.'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

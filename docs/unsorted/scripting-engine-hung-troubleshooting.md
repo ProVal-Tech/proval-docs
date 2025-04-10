@@ -6,7 +6,7 @@ title_meta: 'Scripting Engine Hung - Troubleshooting'
 keywords: ['query', 'troubleshooting', 'scripts', 'monitor', 'database']
 description: 'This document outlines the steps to troubleshoot and run queries in ConnectWise Automate, specifically focusing on managing running scripts and addressing scripting engine issues. It includes detailed instructions on navigating the system, running specific SQL queries, and exporting results for further analysis.'
 tags: ['database', 'report']
-draft: true
+draft: false
 unlisted: false
 ---
 

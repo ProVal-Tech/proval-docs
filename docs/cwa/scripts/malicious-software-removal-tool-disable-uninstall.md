@@ -5,7 +5,7 @@ title: 'Malicious Software Removal Tool Disable/Uninstall'
 title_meta: 'Malicious Software Removal Tool Disable/Uninstall'
 keywords: ['MSRT', 'Scanner', 'Malicious', 'MRT', 'Software' , 'Tool']
 description: 'This script will block the MSRT patches to be enrolled to the Windows and also provides feature to Uninstall it completely.'
-tags: ['MSRT', 'Scanner', 'Malicious', 'MRT', 'Software' , 'Tool']
+tags: ['security']
 draft: false
 unlisted: false
 ---

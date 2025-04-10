@@ -26,7 +26,7 @@ The script conducts an audit of the computer for applications supported by Winge
 
 ## Update Notice: 02-April-2025
 
-A new column has been introduced to [pvl_winget_audit](<../tables/pvl_winget_audit.md>) table. To update the table's structure, run the script with the Set_Environment parameter set to 1 after importing it.  
+A new column has been introduced to pvl_winget_audit table. To update the table's structure, run the script with the Set_Environment parameter set to 1 after importing it.  
 ![First Run](../../../static/img/Winget-App-Audit/image_1.png)
 
 ## Sample Run

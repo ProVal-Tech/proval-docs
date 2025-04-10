@@ -5,7 +5,7 @@ title: 'MSRT custom fields'
 title_meta: 'MSRT custom fields'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This document provides a detailed guide on creating a custom fields for the MSRT(Malicious Software Removal Tool) in ConnectWise RMM. It includes instructions on how to set up the field, its properties, and its importance in associating MSRT with their respective organizations.'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

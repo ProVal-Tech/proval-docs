@@ -5,7 +5,7 @@ title: 'User-Audit'
 title_meta: 'User-Audit'
 keywords: ['user', 'test', 'audit', 'logs', 'SID']
 description: 'Documentation for the User-Audit command to retrieve specific or multiple users auditing for information username, sids, and status'
-tags: ['user', 'test', 'audit', 'logs', 'SID']
+tags: ['security']
 draft: false
 unlisted: false
 ---

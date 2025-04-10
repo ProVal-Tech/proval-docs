@@ -5,7 +5,7 @@ title: 'Copilot Enable/Disable'
 title_meta: 'Copilot Enable/Disable'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
 description: 'This dataview contains the detail of action taken on the agent by the script at Copilot'
-tags: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
+tags: ['api', 'edge', 'browsers', 'windows']
 draft: false
 unlisted: false
 ---

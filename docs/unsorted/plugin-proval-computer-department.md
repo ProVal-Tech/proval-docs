@@ -6,7 +6,7 @@ title_meta: 'plugin_proval_computer_department'
 keywords: ['ad', 'users', 'department', 'domain', 'servers', 'sql', 'database']
 description: 'This document outlines the process for listing the Active Directory users department information from Domain servers, including the necessary SQL commands to create custom tables for auditing purposes.'
 tags: ['active-directory', 'database', 'report', 'setup']
-draft: true
+draft: false
 unlisted: false
 ---
 

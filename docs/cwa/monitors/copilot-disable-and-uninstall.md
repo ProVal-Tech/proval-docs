@@ -5,7 +5,7 @@ title: 'Copilot Disable and Uninstall'
 title_meta: 'Copilot Disable and Uninstall'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
 description: 'This monitor disables the copilot and uninstall it from the detected agents'
-tags: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
+tags: ['api', 'edge', 'browsers', 'windows']
 draft: false
 unlisted: false
 ---

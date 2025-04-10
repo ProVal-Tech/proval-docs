@@ -3,9 +3,9 @@ id: 6ba96e6b-21df-4d96-9200-3bdb7d79aae2
 slug: /6ba96e6b-21df-4d96-9200-3bdb7d79aae2
 title: 'AV Exclusions - ProVal Standard'
 title_meta: 'AV Exclusions - ProVal Standard'
-keywords: [ 'exclusions', 'antivirus', 'security', 'proval' ]
+keywords: [ 'antivirus', 'security', 'proval' ]
 description: 'This document provides a list of recommended exclusions for various AV/security products to ensure the proper functioning of ProVal scripts and tools.'
-tags: [ 'exclusions', 'antivirus', 'security' ]
+tags: [ 'antivirus', 'security' ]
 draft: false
 unlisted: false
 ---

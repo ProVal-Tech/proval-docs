@@ -6,7 +6,7 @@ title_meta: 'SWM - Software Update - Agnostic - Update-VisualStudio'
 keywords: ['update', 'visualstudio', 'upgrade', 'enterprise', 'community']
 description: 'This document provides an overview of the script that automatically updates all installed versions of Visual Studio, including VS 2022, 2019, and 2017 for both Enterprise and Community editions. It details the process of checking for installed applications, downloading updates, performing upgrades, and logging the results.'
 tags: ['installation', 'report', 'software', 'update', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

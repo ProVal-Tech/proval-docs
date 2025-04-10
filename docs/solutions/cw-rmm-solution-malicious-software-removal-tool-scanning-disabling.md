@@ -5,7 +5,7 @@ title: 'CW RMM Solution - Malicious Software Removal Tool Scanning & Disabling'
 title_meta: 'CW RMM Solution - Malicious Software Removal Tool Scanning & Disabling'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This solution details the deployment and removal solution of the Malicious Software Removal Tool and provide its implementation process'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

@@ -6,7 +6,7 @@ title_meta: 'User Management - New Local Account Audit And Disable DV,Autofix,Gl
 keywords: ['account', 'audit', 'disable', 'detection', 'local', 'monitor', 'user']
 description: 'This script detects newly created accounts within the last 15 minutes, logging details about the user who created the account and the new account itself, including its type and login status. It helps in automating the auditing process and can disable newly detected local users based on a configurable parameter.'
 tags: ['security', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

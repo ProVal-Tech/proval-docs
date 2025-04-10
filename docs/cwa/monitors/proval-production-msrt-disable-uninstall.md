@@ -5,7 +5,7 @@ title: 'ProVal Production - MSRT Disable/Uninstall'
 title_meta: 'ProVal Production - MSRT Disable/Uninstall'
 keywords: ['Software', 'Malicious', 'MSRT', 'MRT', 'Scanner', 'Security']
 description: 'This monitor detects the online Windows 10/11 where the MSRT disable/uninstall EDF is checked and exclusions are not checked and ignores the agent where the disable/uninstall was already done.'
-tags: ['Software', 'Malicious', 'MSRT', 'MRT', 'Scanner', 'Security']
+tags: ['security']
 draft: false
 unlisted: false
 ---

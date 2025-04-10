@@ -6,7 +6,7 @@ title_meta: 'SWM - Software Install - Custom Field - Egnyte - Install'
 keywords: ['custom', 'egnyte', 'reboot', 'field', 'agent']
 description: 'This document provides details about a custom field used by the Agent procedure related to Egnyte installations. It includes a summary of the field and its specific purpose in determining whether a machine requires a reboot after installing Egnyte.'
 tags: ['installation', 'software']
-draft: true
+draft: false
 unlisted: false
 ---
 

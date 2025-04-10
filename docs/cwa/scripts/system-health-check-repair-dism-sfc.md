@@ -5,7 +5,7 @@ title: 'System Health Check & Repair [DISM, SFC]'
 title_meta: 'System Health Check & Repair [DISM, SFC]'
 keywords: ['DISM', 'SFC', 'Scan', 'Health', 'Check', 'Scan', 'Restore' ]
 description: 'A comprehensive Windows system repair script that checks and restores system image integrity using DISM and repairs system files using SFC.'
-tags: ['windows', 'recovery', 'diagnostic', 'maintenance', 'cleanup']
+tags: ['windows', 'recovery', 'diagnostic', 'cleanup']
 draft: false
 unlisted: false
 ---

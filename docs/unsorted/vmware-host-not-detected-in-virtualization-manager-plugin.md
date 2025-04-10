@@ -6,7 +6,7 @@ title_meta: 'VMware Host Not Detected in Virtualization Manager Plugin'
 keywords: ['vmware', 'detection', 'configuration', 'probe', 'credentials']
 description: 'This document provides a comprehensive guide to troubleshooting VMware host detection failures, including configuration checks for network probes and credential settings. It outlines step-by-step instructions to ensure proper setup and resolution of common issues.'
 tags: ['networking', 'security', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

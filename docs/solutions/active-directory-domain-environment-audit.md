@@ -191,7 +191,7 @@ This article encompasses multiple components and contents. Please import and imp
      - [RSM - Active Directory - Dataview - Windows - Group Policy Settings](/docs/ea24f672-d2cd-41bc-8b62-2dcd20085d29)
      - [RSM - Active Directory - Dataview - Windows - Group Policy Object Links](/docs/45a9f461-fac0-4e5c-9a5f-819786e8ad21)
      - [RSM - Active Directory - Dataview - Windows - Group Policy Object Security Filtering](/docs/337526eb-1aa7-48a3-beab-ab66d2b7aea8)
-   - Schedule the [RSM - Active Directory - Script - Group Policy - Audit](/2e5f5f2b-7c81-4aec-a76a-623a465f959a) script to run once per day against the domain controllers group.
+   - Schedule the [RSM - Active Directory - Script - Group Policy - Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a) script to run once per day against the domain controllers group.
    - Import the [RSM - Active Directory - Monitor - GPO Modified](/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae) internal monitor from the `ProSync` plugin.
    - Implement the monitor set as explained in the **`Implementation`** section of the [monitor's](/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae) document.
    - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.

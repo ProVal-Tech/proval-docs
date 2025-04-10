@@ -5,7 +5,7 @@ title: 'Toast Notification - Template'
 title_meta: 'Toast Notification - Template'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']
 description: 'This is a copy-only template for clients to use to set up toast notifications. The script is a template with example variables. Ensure each variable is reviewed and adjusted as needed before incorporating them into a production script.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---

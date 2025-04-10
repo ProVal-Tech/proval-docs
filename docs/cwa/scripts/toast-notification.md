@@ -5,7 +5,7 @@ title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot']
 description: 'This script downloads and executes the New-ToastNotification.ps1, providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---

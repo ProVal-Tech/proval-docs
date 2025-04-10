@@ -5,7 +5,7 @@ title: 'CWA Solution - Malicious Software Removal Tool Scanning & Disabling'
 title_meta: 'CWA Solution - Malicious Software Removal Tool Scanning & Disabling'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This solution details the deployment and removal solution of the Malicious Software Removal Tool and its implementation'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

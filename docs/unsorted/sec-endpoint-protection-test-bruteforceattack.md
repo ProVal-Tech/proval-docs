@@ -63,4 +63,3 @@ This command queries the event log from the last time it ran to the current time
 | Datto RMM                    |                                          |
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10368007/Install-AnyConnect.ps1>)
-[README.md](/docs)

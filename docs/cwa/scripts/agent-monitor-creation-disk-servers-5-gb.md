@@ -22,24 +22,24 @@ This script creates remote monitors for detected hard drives at the agent level 
 
 ## Dependencies
 
-@Agent Monitor Creation - Disk* - WRAPPER [Globals]
+Agent Monitor Creation - Disk* - WRAPPER Globals
 
 ## Variables
 
-| Variable Name    | Description                                                                                         |
-|-------------------|-----------------------------------------------------------------------------------------------------|
-| interval          | Sets the interval, and as per ProVal standard, it is set to 300                                   |
-| MinMBytesFree     | Threshold set for the monitor. In this case, it is 5000 MB                                        |
-| MinSizeMB         | The minimum size of the drive should be at least 16 GB                                            |
-| reportcategory     | The report category for the alerts.                                                                |
-| ticketcategory     | The ticket category will be set on the monitor so the tickets/alerts will go to the defined board |
-| alerttemplate      | The alert template will be set on the remote monitor.                                              |
+| Variable Name  | Description                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------- |
+| interval       | Sets the interval, and as per ProVal standard, it is set to 300                                   |
+| MinMBytesFree  | Threshold set for the monitor. In this case, it is 5000 MB                                        |
+| MinSizeMB      | The minimum size of the drive should be at least 16 GB                                            |
+| reportcategory | The report category for the alerts.                                                               |
+| ticketcategory | The ticket category will be set on the monitor so the tickets/alerts will go to the defined board |
+| alerttemplate  | The alert template will be set on the remote monitor.                                             |
 
 #### Script States
 
-| Name                                                      | Example | Description                                                                                   |
-|-----------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------|
-| [MonitorIDDiskSpace-@sqldriveid@](MonitorIDDiskSpace-@sqldriveid@) |         | To note that the SensorID already has a monitor assigned to it                               |
+| Name                            | Example | Description                                                    |
+| ------------------------------- | ------- | -------------------------------------------------------------- |
+| MonitorIDDiskSpace-@sqldriveid@ |         | To note that the SensorID already has a monitor assigned to it |
 
 ## Process
 

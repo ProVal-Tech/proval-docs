@@ -5,7 +5,7 @@ title: 'Lockdown Browsers Autofill - Implement'
 title_meta: 'Lockdown Browsers Autofill - Implement'
 keywords: ['lockdown', 'browsers', 'autofill', 'monitor', 'implementation']
 description: 'This document provides a step-by-step guide for implementing the Lockdown Browsers Autofill solution, including SQL queries for creating and configuring necessary components such as EDFs, searches, groups, and remote monitors.'
-tags: ['monitors', 'implementation']
+tags: []
 draft: false
 unlisted: false
 ---
@@ -458,16 +458,16 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 ## Step 7.
 Reload System Cache
 
-![Image](..\..\..\static\img\lockdown-browsers-autofill-implement\image_1.png)
+![Image](/img/lockdown-browsers-autofill-implement/image_1.png)
 
 ---
 
 ## Step 8.
 Refresh Searches and Groups.
 
-![Image](..\..\..\static\img\lockdown-browsers-autofill-implement\image_2.png)
+![Image](/img/lockdown-browsers-autofill-implement/image_2.png)
 
-![Image](..\..\..\static\img\lockdown-browsers-autofill-implement\image_3.png)
+![Image](/img/lockdown-browsers-autofill-implement/image_3.png)
 
 ---
 
@@ -478,6 +478,6 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
 
-![Image](..\..\..\static\img\lockdown-browsers-autofill-implement\image_4.png)
+![Image](/img/lockdown-browsers-autofill-implement/image_4.png)
 
-![Image](..\..\..\static\img\lockdown-browsers-autofill-implement\image_5.png)
+![Image](/img/lockdown-browsers-autofill-implement/image_5.png)

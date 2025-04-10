@@ -6,7 +6,7 @@ title_meta: 'SWM - Software Install - Install-Microsoft365'
 keywords: ['microsoft', 'installation', 'office365', 'xml', 'odt']
 description: 'This document provides a detailed guide on installing Microsoft 365 Apps for Business using PowerShell, including requirements, process steps, and example usage with XML configuration support.'
 tags: ['installation', 'office365', 'software', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 

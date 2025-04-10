@@ -5,7 +5,7 @@ title: 'Get Specific/Multiple User Audit'
 title_meta: 'Get Specific/Multiple User Audit'
 keywords: ['user', 'test', 'audit', 'logs', 'SID']
 description: 'This script is designed to get the specific or multiple user(s) information (Username, SIDs, and Status).'
-tags: ['user', 'test', 'audit', 'logs', 'SID']
+tags: []
 draft: false
 unlisted: false
 ---

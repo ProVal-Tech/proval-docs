@@ -22,26 +22,26 @@ This script collects the device name and version information as provided for the
 
 ## Dependencies
 
-@Hardware - PnPDevice List [Script]
+@Hardware - PnPDevice List Script
 
 ## Variables
 
-| Variable Name | Description                                                                 |
-|---------------|-----------------------------------------------------------------------------|
+| Variable Name | Description                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------- |
 | NameLoop      | This variable will hold the result of the SQL query `SELECT CONCAT('@','DriverVersion',@loopcounter,'@')` |
 | DriverLoop    | This variable will hold the result of the SQL query `SELECT CONCAT('@','DriverVersion',@loopcounter,'@')` |
 
 ### Global Parameters
 
-| Name   | Example      | Required | Description                                                                                                     |
-|--------|--------------|----------|-----------------------------------------------------------------------------------------------------------------|
-| Device | HP Printer   | True     | Provide the device name for which you need version information on all of your Windows agents to show in the Dataview. |
+| Name   | Example    | Required | Description                                                                                                           |
+| ------ | ---------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| Device | HP Printer | True     | Provide the device name for which you need version information on all of your Windows agents to show in the Dataview. |
 
 ## Script States
 
-| Script State Name        | Description                          |
-|--------------------------|--------------------------------------|
-| [DeviceList@loopcounter@](DeviceList@loopcounter@) | This script state will hold the `@NameLoop@` and `@DriverLoop@` values. |
+| Script State Name         | Description                                                             |
+| ------------------------- | ----------------------------------------------------------------------- |
+| `DeviceList@loopcounter@` | This script state will hold the `@NameLoop@` and `@DriverLoop@` values. |
 
 ## Process
 

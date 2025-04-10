@@ -5,7 +5,7 @@ title: 'Run DISM and SFC Scan'
 title_meta: 'Run DISM and SFC Scan'
 keywords: ['Diagnostic','SFC','DISM','Scan']
 description: 'CW RMM task to execute a DISM repair followed by a SFC scan. This can be used to fix any potential corruptions'
-tags: ['Diagnostic','Windows']
+tags: ['windows']
 draft: false
 unlisted: false
 ---

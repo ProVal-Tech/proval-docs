@@ -60,8 +60,8 @@ It's an Autofix script and is currently attached to the "△ Custom - Email RAWS
 
 1. Check the status of the monitor set and do not act for Success.
 2. For failures, proceed accordingly.
-3. Store the SQL query used in the monitor set to the [@Dataout@](the%C2%A0@Dataout@) variable. Also, replace 'from tcomp' with 'from computers', if it exists in the SQL query. To perform this replacement, convert the whole query to lowercase.
-4. Find the FieldName, [TicketSubject, SuccessMSG](http://TicketSubject,SuccessMSG), [FailedMSG](http://FailedMSG), and Email.
+3. Store the SQL query used in the monitor set to the @Dataout@ variable. Also, replace 'from tcomp' with 'from computers', if it exists in the SQL query. To perform this replacement, convert the whole query to lowercase.
+4. Find the FieldName, TicketSubject, SuccessMSG, FailedMSG, and Email.
 5. Email the outcome to the email address of the user/contact of the alert template.
 
 ## Output

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document displays potential Log4J/Log4Shell vulnerabilities based on the following list: [NCSC-NL Log4Shell Software List](/docs)
+This document displays potential Log4J/Log4Shell vulnerabilities based on the following list: NCSC-NL Log4Shell Software List
 
 ## Dependencies
 

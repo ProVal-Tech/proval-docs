@@ -5,7 +5,7 @@ title: 'Malicious Software Removal Tool Uninstall/Disable'
 title_meta: 'Malicious Software Removal Tool Uninstall/Disable'
 keywords: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
 description: 'This group includes the endpoint where the MSRT needed to be uninstalled and disabled.'
-tags: ['MSRT', 'Malicious', 'field', 'key', 'security', 'software', 'Tool']
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---

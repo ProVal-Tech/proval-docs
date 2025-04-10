@@ -32,29 +32,29 @@ Dataviews can now be filtered by client, location, or computer.
 
 ## Variables
 
-| Name             | Description                                                                                  |
-|------------------|----------------------------------------------------------------------------------------------|
-| Dataview ID      | One of the Dataview IDs passed to the Dataview IDs parameter.                              |
-| Email            | Email address passed as a parameter.                                                         |
-| Check            | For the verification of the existence of that [Dataview ID](Dataviewid@.)                   |
-| Cnt              | Row number to be used in the loop.                                                          |
-| SQL_Query        | To store the modified SQL query for that dataview.                                         |
-| To_csv           | To store the output of the [SQL_Query](SQL_Query@.)                                        |
-| DVName           | Name of the dataview with Dataview ID = [Dataview ID](Dataviewid@.). Its main purpose is to serve as the Subject line of the email. |
-| DVNameFile       | [DVName](DVName@) with a few special characters replaced in order to use that as the name of the CSV file. |
-| Count            | Row number to be used in the inner loop applying filters.                                   |
-| Offset           | To be used along with SQL Query to find the IDs passed in the loop.                         |
-| Filter ID        | Level ID (Client ID/Computer ID/Location ID) to generate the report for.                   |
-| Loop Verification | (Global/Filtered), to check whether the script is generating a global/unfiltered report or a filtered report. |
+| Name              | Description                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Dataview ID       | One of the Dataview IDs passed to the Dataview IDs parameter.                                                       |
+| Email             | Email address passed as a parameter.                                                                                |
+| Check             | For the verification of the existence of that Dataview ID                                                           |
+| Cnt               | Row number to be used in the loop.                                                                                  |
+| SQL_Query         | To store the modified SQL query for that dataview.                                                                  |
+| To_csv            | To store the output of the SQL_Query                                                                                |
+| DVName            | Name of the dataview with Dataview ID = Dataview ID. Its main purpose is to serve as the Subject line of the email. |
+| DVNameFile        | DVName with a few special characters replaced in order to use that as the name of the CSV file.                     |
+| Count             | Row number to be used in the inner loop applying filters.                                                           |
+| Offset            | To be used along with SQL Query to find the IDs passed in the loop.                                                 |
+| Filter ID         | Level ID (Client ID/Computer ID/Location ID) to generate the report for.                                            |
+| Loop Verification | (Global/Filtered), to check whether the script is generating a global/unfiltered report or a filtered report.       |
 
 ### User Parameters
 
-| Name           | Example                                         | Required | Description                                                                                                                                                     |
-|----------------|-------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dataview IDs    | 1,2,3,4,5,6,819,111,765,15,61,55,123          | True     | IDs of the dataview to be emailed. It can be a single integer for emailing just one dataview or multiple IDs separated by a comma.                         |
-| Email          | [someone@somewhere.something](mailto:someone@somewhere.something) | True     | Email address to receive the CSV file or the content of the dataview. To input multiple addresses, each email must be separated by a semicolon ';' without any space. |
-| Filter Level    | Client                                        | False    | Supported values are Client, Location, and Computer. This can be used to define the level of filter you would like to apply to the dataviews. Leaving it blank will generate an unfiltered report. |
-| Filter ID      | 1,2,3,5                                       | False    | ID of the level defined in the Filter Level. e.g., Client ID(s), to filter the report against if Client is set as Filter Level. It can be a single integer for emailing all the [Dataview IDs](Dataviewids@) filtered by that single ID or multiple IDs separated by a comma. Any special characters or spaces are prohibited. A space here will not yield the expected result. |
+| Name         | Example                                                           | Required | Description                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------ | ----------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dataview IDs | 1,2,3,4,5,6,819,111,765,15,61,55,123                              | True     | IDs of the dataview to be emailed. It can be a single integer for emailing just one dataview or multiple IDs separated by a comma.                                                                                                                                                                                                                                              |
+| Email        | [someone@somewhere.something](mailto:someone@somewhere.something) | True     | Email address to receive the CSV file or the content of the dataview. To input multiple addresses, each email must be separated by a semicolon ';' without any space.                                                                                                                                                                                                           |
+| Filter Level | Client                                                            | False    | Supported values are Client, Location, and Computer. This can be used to define the level of filter you would like to apply to the dataviews. Leaving it blank will generate an unfiltered report.                                                                                                                                                                              |
+| Filter ID    | 1,2,3,5                                                           | False    | ID of the level defined in the Filter Level. e.g., Client ID(s), to filter the report against if Client is set as Filter Level. It can be a single integer for emailing all the Dataview IDs filtered by that single ID or multiple IDs separated by a comma. Any special characters or spaces are prohibited. A space here will not yield the expected result. |
 
 ## Process
 
