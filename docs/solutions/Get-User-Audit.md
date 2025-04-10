@@ -16,10 +16,10 @@ This solution is designed to perform user audits by allowing users to set patter
 Note: If the agent is a Domain Controller, it will audit domain accounts; otherwise, it will audit local accounts.
 
 ## Associated Content
-| Content                  | Type             | Function                                                                                          |
-|--------------------------|------------------|---------------------------------------------------------------------------------------------------|
-| [Agnostic-User-Audit](/docs/powershell/User-Audit.md)     | Agnostic Script  | This agnostic script is built to retrieve specific or multiple users auditing for information such as username, SID, and status. |
-| [Task-Get Specific/Multiple User Audit](/docs/359dfd23-db61-4c14-99e5-16e3b723ace4) | Task     | This script is designed to get the specific or multiple user(s) information (Username, SIDs, and Status). Note: If the agent is a Domain Controller, it will audit the domain accounts; otherwise, it will audit the local accounts. |
+| Content                                                                             | Type            | Function                                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Agnostic-User-Audit](/docs/b2914f30-25ee-4d74-ac6a-77260b88ddcb)                   | Agnostic Script | This agnostic script is built to retrieve specific or multiple users auditing for information such as username, SID, and status.                                                                                                     |
+| [Task-Get Specific/Multiple User Audit](/docs/359dfd23-db61-4c14-99e5-16e3b723ace4) | Task            | This script is designed to get the specific or multiple user(s) information (Username, SIDs, and Status). Note: If the agent is a Domain Controller, it will audit the domain accounts; otherwise, it will audit the local accounts. |
 
 ## Implementation
 

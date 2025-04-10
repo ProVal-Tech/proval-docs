@@ -45,9 +45,7 @@ Being able to monitor drive space using specifically assigned thresholds elimina
 
 4. Run or debug the [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) against a random Windows computer. **Set the user parameter** `SetEnvironment` to 1 during execution. This step will create the associated EDFs and System Properties.
 
-5. Reload the System Cache  
-   ![Reload the System Cache](https://proval.itglue.com/5078775/docs/14876168/images/21622864)
-
+5. Reload the System Cache
 6. **If custom thresholds have been requested**:  
    Use the instructions in the [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) and the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) to configure System Properties and EDFs as per the partner's requirements. If nothing was specified by the consultant, assume the defaults are what is requested:
    - **If you configured any custom thresholds**, please run the following to get the monitor to update its results quickly. (Or wait 25 minutes)

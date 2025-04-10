@@ -46,7 +46,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 ## Implementation
 
-1. Please verify whether any of the monitor sets listed in the `Monitors` table already exist. If any of the monitor sets are already present, please follow the process outlined in [this document](https://proval.itglue.com/5078775/docs/14731110).
+1. Please verify whether any of the monitor sets listed in the `Monitors` table already exist. If any of the monitor sets are already present, please follow the process outlined in [this document](/docs/b6eac8f7-222b-4c72-8bed-0b81c138074a).
 
 2. Import the following internal monitors using the Prosync Plugin:
    - [Internal Monitor - ESXi Host Not Communicating > 3 Days](/docs/905bda70-64aa-4e66-a18f-c5d0eef2b7fd)
@@ -102,6 +102,3 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
 **A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](/docs/2dc2bb07-e083-48d0-836e-55e40c05c871)
-
-
-

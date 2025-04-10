@@ -55,7 +55,6 @@ This solution provides information on a workstation's battery state.
      - Only perform this step if instructed to do so by the consultant.
 
 6. **Reload the System Cache:**
-   ![Reload the System Cache](https://proval.itglue.com/5078775/docs/14876168/images/21622864)
 
 7. **Configure the solution as follows:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
