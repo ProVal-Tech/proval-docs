@@ -12,17 +12,6 @@ unlisted: false
 
 ## Summary
 
+## Dependencies
 
-## Settings
-
-
-### Detection String
-
-
-### Comparator
-
-
-### Result
-
-
-### Applicable OS
+## Output

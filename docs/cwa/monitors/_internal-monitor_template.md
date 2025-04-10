@@ -12,14 +12,8 @@ unlisted: false
 
 ## Summary
 
-
-
 ## Dependencies
 
+## Target
 
-
-## Columns
-
-| Column | Description |
-| ------ | ----------- |
-|        |             |
+## Implementation

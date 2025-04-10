@@ -12,8 +12,6 @@ unlisted: false
 
 ## Summary
 
-
-
 ## Details
 
 **Suggested "Limit to"**: 
@@ -27,6 +25,6 @@ unlisted: false
 
 ## Dependencies
 
-
-
 ## Target
+
+## Implementation
