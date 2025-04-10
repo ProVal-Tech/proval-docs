@@ -5,7 +5,7 @@ title: 'Rename Machine Custom fields'
 title_meta: 'Rename Machine Custom fields'
 keywords: ['Rename', 'Windows']
 description: ''
-tags: ['Rename', 'Windows']
+tags: ['windows']
 draft: false
 unlisted: false
 ---

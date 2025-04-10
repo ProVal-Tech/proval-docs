@@ -5,7 +5,7 @@ title: 'Windows - System - Rename'
 title_meta: 'Windows - System - Rename'
 keywords: ['Rename', 'Windows']
 description: 'This script can be used to rename a machine and validate the success or failure of the rename. The script will first check if the machine is domain-joined or not. If it is, then it will attempt to create a PSCredential object to pass into the Rename-Computer cmdlet. This will use the Username and Password parameters. It then attempts the rename the computer and stores the success status in $computerChangeInfo. The reboot will be required to complete the renaming process.'
-tags: ['Rename', 'Windows']
+tags: ['windows']
 draft: false
 unlisted: false
 ---
