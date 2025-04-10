@@ -20,7 +20,7 @@ This document outlines the process for creating Remote Monitors for Critical Dri
 
 1. **Remove Existing Monitors**: Eliminate any `Critical Drive Space Monitors` currently present in the environment.
 2. **Modify Scheduled Scripts**: Halt the scheduled runs of all existing `Critical Drive Space Monitor` creation scripts.  
-   **Note:** Check the [Remove Existing Monitors and Modify Scheduled Scripts](#section-26859118) section of the document for comprehensive instructions on steps 1 and 2.
+   **Note:** Check the Remove Existing Monitors and Modify Scheduled Scripts section of the document for comprehensive instructions on steps 1 and 2.
 3. **Stale Monitors Verification**: Follow the instructions provided in steps 1 and 2 to remove the default critical drive space monitor and the monitor sets created by ProVal's legacy critical drive space monitor creation script. However, be aware that there may be other existing `Drive Space Critical` monitors with slightly different naming conventions or different logic from other sources.  
    To identify such monitor sets, execute the following query in a RAWSQL monitor set:  
    ```sql

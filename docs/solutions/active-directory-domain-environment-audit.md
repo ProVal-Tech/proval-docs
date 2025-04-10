@@ -197,7 +197,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the **`△ Custom - Ticket Creation - Computer`** alert template from the `ProSync` plugin, if it's not already present in the environment.
    - Import the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script from the `ProSync` plugin, if it's not already present in the environment.
    - Reload the System Cache.
-   - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Script - Group Policy - Audit](/2e5f5f2b-7c81-4aec-a76a-623a465f959a) monitor set.
+   - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Script - Group Policy - Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a) monitor set.
 
    ![](../../static/img/Active-Directory-&-Domain-Environment-Audit/image_11.png)
 

@@ -54,4 +54,4 @@ Run the [Script - MySQL - View - Create (plugin_proval_auto_approval_status)](/d
 
 ### Step 4
 
-Schedule the [Unapproved Patches Count Audit](/docs/595e85de-299d-4242-a569-f5367be6b1c9) script to run once per day as demonstrated in the [script's](/docs/595e85de-299d-4242-a569-f5367be6b1c9#sample-run>) document.
+Schedule the [Unapproved Patches Count Audit](/docs/595e85de-299d-4242-a569-f5367be6b1c9) script to run once per day as demonstrated in the [script's](/docs/595e85de-299d-4242-a569-f5367be6b1c9) document.

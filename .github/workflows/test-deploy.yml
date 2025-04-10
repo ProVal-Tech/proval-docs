@@ -28,5 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test document standards
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          . tests/DocumentStandards.Tests.ps1
+
       - name: Test build website
         run: npm run build

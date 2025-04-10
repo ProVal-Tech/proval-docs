@@ -1,5 +1,5 @@
 ---
-id: "978846f2-c493-4e6b-8084-b8caf1e2a60e"
+id: 978846f2-c493-4e6b-8084-b8caf1e2a60e
 slug: /978846f2-c493-4e6b-8084-b8caf1e2a60e
 title: "Windows Version Metrics Dataview"
 title_meta: "Windows Version Metrics Dataview for Windows 10 and Windows 11 Machines"

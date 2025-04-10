@@ -1,6 +1,6 @@
 ---
-id: 'cwa-email-impact-summary'
-slug: /cwa-email-impact-summary
+id: 7479e987-3a7d-455d-a912-d5cfddb71c06
+slug: /7479e987-3a7d-455d-a912-d5cfddb71c06
 title: '2022 Transport Queue Issue Status'
 title_meta: '2022 Transport Queue Issue Status'
 keywords: ['email', 'flow', 'impact', 'exchange', 'server', 'status', 'monitoring']
