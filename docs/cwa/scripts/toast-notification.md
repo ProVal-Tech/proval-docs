@@ -1,16 +1,17 @@
 ---
 id: '3aab837d-cb64-4669-aa35-040cce21c575'
+slug: /3aab837d-cb64-4669-aa35-040cce21c575
 title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot']
 description: 'This script downloads and executes the New-ToastNotification.ps1, providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Summary
-It is the CW Automate implementation of the agnostic script [Invoke-ToastNotification.ps1](../../powershell/Invoke-ToastNotification.md). 
+It is the CW Automate implementation of the agnostic script [Invoke-ToastNotification.ps1](/docs/426118d9-ff83-444e-9744-30a0e26cb490). 
 
 This script downloads and executes the New-ToastNotification.ps1, providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.
 
@@ -23,12 +24,12 @@ This script downloads and executes the New-ToastNotification.ps1, providing a cu
 
 ## Sample Run
 This script is a function script and should not be manually executed.
-Utilize the [Toast Notification - Template](./toast-notification-template.md) to get a copy of all potential variables and paste the else section into any script that should use Prompter.
+Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f) to get a copy of all potential variables and paste the else section into any script that should use Prompter.
 
 ## Dependencies
-[Toast Notification - Template](./toast-notification-template.md)
+[Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f)
 
-[Invoke-ToastNotification](../../powershell/Invoke-ToastNotification.md)
+[Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
 
 ## Variables
 

@@ -1,5 +1,6 @@
 ---
 id: 'New-GUID'
+slug: /New-GUID
 title: 'Script Name'
 title_meta: 'Script Name'
 keywords: []
@@ -33,6 +34,5 @@ Describe how the script is executed and if it requires any parameters. Delete th
 
 ## Output
 Describe the output of the content. Delete if not needed.
-
 
 

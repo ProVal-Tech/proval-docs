@@ -1,5 +1,6 @@
 ---
 id: '61a7e090-eceb-475b-9080-16e288327411'
+slug: /61a7e090-eceb-475b-9080-16e288327411
 title: 'cPVAL - Server Role - FSMO - Domain Naming Master'
 title_meta: 'cPVAL - Server Role - FSMO - Domain Naming Master'
 keywords: ['windows', 'servers', 'role', 'domain-controller', 'domain-naming-master', 'fsmo']
@@ -21,9 +22,9 @@ A group tailored for Windows Servers that have the `Domain Naming Master` role i
 
 ## Dependencies
 
-[cPVAL - Windows Servers](./cpval-windows-servers.md)  
-[cPVAL - Roles Detected](../custom-fields/cpval-roles-detected.md)  
-[Windows Server Roles Detection](../automations/windows-server-roles-detection.md)
+[cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256)  
+[cPVAL - Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)  
+[Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)
 
 ## Group Creation
 

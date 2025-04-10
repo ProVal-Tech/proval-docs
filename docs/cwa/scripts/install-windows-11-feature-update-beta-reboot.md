@@ -1,5 +1,6 @@
 ---
 id: '27f8240b-603a-4af2-b9d9-480a560f8747'
+slug: /27f8240b-603a-4af2-b9d9-480a560f8747
 title: 'Install Windows 11 Feature Update [Beta, Reboot]'
 title_meta: 'Install Windows 11 Feature Update [Beta, Reboot]'
 keywords: ['install', 'feature update', 'upgrade', 'windows', 'windows 11', 'troubleshooting', 'reboot']
@@ -11,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](../../powershell/Install-Windows11FeatureUpdate.md).
+This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
 
 **Important Notes:**
 
@@ -35,7 +36,7 @@ This document describes the Automate implementation of the agnostic script [Inst
 
 ## Dependencies
 
-[Install-WindowsFeatureUpdate](../../powershell/Install-Windows11FeatureUpdate.md).
+[Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
 
 ## User Parameters
 
