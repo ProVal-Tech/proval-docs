@@ -16,8 +16,8 @@ The script installs the latest version of FileZilla on a Windows computer. If th
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Update-FileZilla\Update-FileZilla.ps1`  
-**File Hash (Sha256):** `376517CB05FF7FF8C5221E7BC1A71A9AA41A68D52637FDFBA822711BF9FFE63A`  
-**File Hash (MD5):** `C266CC972F27F56435C30B09518A563C`
+**File Hash (Sha256):** `052FCB4A5726EE426AA825ACE364D225D350C8A65829F6693E1527E974D8F168`  
+**File Hash (MD5):** `C3C3A88EBC04B3D4E821187ABFEDBF7B`
 
 ## Sample Run
 
