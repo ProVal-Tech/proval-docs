@@ -1,5 +1,6 @@
 ---
 id: 'e575739f-77a8-481a-bae3-3abb18447b92'
+slug: /e575739f-77a8-481a-bae3-3abb18447b92
 title: 'Patch Approval Count'
 title_meta: 'Patch Approval Count'
 keywords: ['patches', 'denied', 'approval', 'ignored', 'patch-manager', 'unapproved']

@@ -1,5 +1,6 @@
 ---
 id: '43b35510-f264-429f-a06e-e0ea7822cfc1'
+slug: /43b35510-f264-429f-a06e-e0ea7822cfc1
 title: 'Patch Approval Categories'
 title_meta: 'Patch Approval Categories'
 keywords: ['patches', 'approval', 'policy', 'audit', 'category']
@@ -15,7 +16,7 @@ This dataview provides detailed information about the patches that are auto-appr
 
 ## Dependencies
 
-The [Auto Approval Policies](<./auto-approval-policies.md>) dataview should be reviewed to understand the exact purpose of this document.
+The [Auto Approval Policies](/docs/1b296878-9915-4c2b-9d2e-f9ee09059cc9) dataview should be reviewed to understand the exact purpose of this document.
 
 ## Columns
 

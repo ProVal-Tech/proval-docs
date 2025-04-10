@@ -1,5 +1,6 @@
 ---
 id: '2e5f5f2b-7c81-4aec-a76a-623a465f959a'
+slug: /2e5f5f2b-7c81-4aec-a76a-623a465f959a
 title: 'Group Policy - Audit'
 title_meta: 'Group Policy - Audit'
 keywords: ['automate', 'active', 'directory', 'gpo', 'audit', 'script', 'implementation']
@@ -11,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines the implementation of the agnostic script [Start-GPOAudit](../../powershell/start-gpoaudit.md) within ConnectWise Automate.
+This document outlines the implementation of the agnostic script [Start-GPOAudit](/docs/b070c950-2727-48b3-9226-84468960ee85) within ConnectWise Automate.
 
 ## File Hash
 
@@ -22,10 +23,10 @@ This document outlines the implementation of the agnostic script [Start-GPOAudit
 ## Sample Run
 
 **First Execution:** Execute the script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will create the following necessary tables: 
-- [plugin_proval_ad_gpo](../tables/plugin_proval_ad_gpo.md)
-- [plugin_proval_ad_gp](../tables/plugin_proval_ad_gp.md)
-- [plugin_proval_ad_gpolinks](../tables/plugin_proval_ad_gpolinks.md)
-- [plugin_proval_ad_gposf](../tables/plugin_proval_ad_gposf.md)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)
+- [plugin_proval_ad_gp](/docs/0e873ec4-0fcc-4131-bf33-1f74f8b28c80)
+- [plugin_proval_ad_gpolinks](/docs/85f52c7c-84bc-488f-a4de-d3122fec1f42)
+- [plugin_proval_ad_gposf](/docs/8fa8c78e-04a4-4495-8cfe-44aef7b48035)
 
 ![Image](../../../static/img/Group-Policy---Audit/image_1.png)
 
@@ -34,8 +35,8 @@ This document outlines the implementation of the agnostic script [Start-GPOAudit
 
 ## Dependencies
 
-- [Start-GPOAudit](../../powershell/start-gpoaudit.md)
-- [OverFlowedVariable - SQL Insert - Execute](./OverFlowedVariable%20-%20SQL%20Insert%20-%20Execute.md)
+- [Start-GPOAudit](/docs/b070c950-2727-48b3-9226-84468960ee85)
+- [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Output
 

@@ -1,5 +1,6 @@
 ---
 id: '5cda8c79-bcd0-4226-b5a4-db846b9b35a9'
+slug: /5cda8c79-bcd0-4226-b5a4-db846b9b35a9
 title: 'Windows Server Roles Detection'
 title_meta: 'Windows Server Roles Detection'
 keywords: ['roles', 'server-roles', 'powershell', 'custom-fields']
@@ -31,7 +32,7 @@ Search and select `Windows Server Roles Detection`
 
 ## Dependencies
 
-[cPVAL Roles Detected](../custom-fields/cpval-roles-detected.md)
+[cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## Parameters
 

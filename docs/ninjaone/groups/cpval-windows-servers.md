@@ -1,5 +1,6 @@
 ---
 id: 'c73e004e-6a9c-40e4-8e74-babb4b729256'
+slug: /c73e004e-6a9c-40e4-8e74-babb4b729256
 title: 'cPVAL Windows Servers'
 title_meta: 'cPVAL Windows Servers'
 keywords: ['windows', 'servers', 'role']

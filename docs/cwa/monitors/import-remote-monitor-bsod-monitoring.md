@@ -1,3 +1,15 @@
+---
+id: a6e9e088-d737-4c9f-8ae8-e643521b4f79
+slug: /a6e9e088-d737-4c9f-8ae8-e643521b4f79
+title: 'Import Remote Monitor - BSOD Monitoring'
+title_meta: 'Import Remote Monitor - BSOD Monitoring'
+keywords: ['bsod']
+description: 'This document outlines the steps to import a remote monitor that detects BSOD (Blue Screen of Death) events on Windows machines. It includes the associated content, implementation steps, and troubleshooting FAQs to ensure the monitor is correctly set up.'
+tags: ['bluescreen', 'windows', 'alerting']
+draft: false
+unlisted: false
+---
+
 #### 1 - Import alert template
 
 △ Custom - Ticket Creation - Computer
