@@ -1,5 +1,6 @@
 ---
 id: 'a556909a-ff2f-489f-ab3a-6e928722c09c'
+slug: /a556909a-ff2f-489f-ab3a-6e928722c09c
 title: 'Rename-Machine'
 title_meta: 'Rename-Machine'
 keywords: ['Rename', 'Windows']

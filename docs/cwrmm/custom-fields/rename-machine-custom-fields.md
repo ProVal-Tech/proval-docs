@@ -1,5 +1,6 @@
 ---
 id: 'ba3c12eb-f166-4982-ab21-a2337a989614'
+slug: /ba3c12eb-f166-4982-ab21-a2337a989614
 title: 'Rename Machine Custom fields'
 title_meta: 'Rename Machine Custom fields'
 keywords: ['Rename', 'Windows']
@@ -11,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom fields are needed for the task [Windows - System - Rename](</docs/cwrmm/tasks/Windows - System - Rename.md>) to be executed on the endpoints that is domain joined to renamed using domain admin privileges.
+This custom fields are needed for the task [Windows - System - Rename](/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de) to be executed on the endpoints that is domain joined to renamed using domain admin privileges.
 
 ## Details
 

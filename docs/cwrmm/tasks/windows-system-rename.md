@@ -1,5 +1,6 @@
 ---
 id: 'cd9905c4-ec7d-45ac-818f-f56ec85357de'
+slug: /cd9905c4-ec7d-45ac-818f-f56ec85357de
 title: 'Windows - System - Rename'
 title_meta: 'Windows - System - Rename'
 keywords: ['Rename', 'Windows']
@@ -17,9 +18,9 @@ The reboot will be required to complete the renaming process.
 
 ## Dependencies
 
-[Custom Fields Rename-Machine](</docs/cwrmm/custom-fields/Rename-Machine Custom fields.md>)
+[Custom Fields Rename-Machine](/docs/ba3c12eb-f166-4982-ab21-a2337a989614)
 
-[Agnostic Rename-Machine](</docs/powershell/Rename-Machine.md>)
+[Agnostic Rename-Machine](/docs/a556909a-ff2f-489f-ab3a-6e928722c09c)
 
 ## User Parameters
 
@@ -91,7 +92,7 @@ A blank function will appear.
 ### Row 1 Function: Set Pre-defined Variable
 
 ```
-Note: Before setting the Pre-defined Variable please create the custom fields [Rename-Machine custom fields](</docs/cwrmm/custom-fields/Rename-Machine Custom fields.md>)
+Note: Before setting the Pre-defined Variable please create the custom fields [Rename-Machine custom fields](/docs/ba3c12eb-f166-4982-ab21-a2337a989614)
 ```
 
 Select function "Set Pre-Defined Variable"
