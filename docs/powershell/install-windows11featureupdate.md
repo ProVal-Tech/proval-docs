@@ -12,11 +12,16 @@ unlisted: false
 
 ## Overview
 
-The script automates the installation of the Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
+The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
+
+The script supports both Windows 10 and Windows 11:
+
+- For Windows 10, it attempts to upgrade to the latest available version of Windows 11.  
+- For Windows 11, it ensures the system is updated to the latest available feature update.
 
 ## Requirements
 
-- Windows 11
+- Windows 10 or Windows 11
 - Administrative privileges
 - Internet connectivity
 - 64GB+ free space on the system drive
@@ -27,7 +32,7 @@ The script automates the installation of the Windows 11 Feature Update. It perfo
 The script operates in multiple phases to accomplish the upgrade:
 
 1. **System Validation**:
-   - **OS Compatibility**: Verifies the system is running Windows 11.
+   - **OS Compatibility**: Verifies the system is running Windows 10 or Windows 11.
    - **Internet Connectivity**: Checks for an active internet connection.
    - **Power Status**: Ensures laptops are connected to power.
    - **Disk Space**: Confirms at least 64GB of free space on the system drive.
@@ -49,7 +54,7 @@ The script operates in multiple phases to accomplish the upgrade:
 The script also schedules tasks to run itself after restarting the system to complete the upgrade process. It creates two scheduled tasks:
 
 1. **Primary Task**: Initiates the upgrade process.
-2. **Post-Reboot Task**: Handles post-install cleanup and validation after the system restarts.
+2. **Post-Reboot Task**: Resumes the upgrade process after restarting the system.
 
 ### Points Where the Computer Can Be Restarted
 
