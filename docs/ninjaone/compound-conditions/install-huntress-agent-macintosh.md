@@ -28,7 +28,7 @@ Triggers the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-
 
 - [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f)  
 - [cPVAL Huntress Deployment](/docs/67554954-e8da-48af-bda9-13a6a37c8295)  
-- [cPVAL Huntress Install - Exclude](/docs//bdb92684-f093-49f8-9568-09874f9f79d5)
+- [cPVAL Huntress Install - Exclude](/docs/bdb92684-f093-49f8-9568-09874f9f79d5)
 
 ## Compound Condition Creation
 
