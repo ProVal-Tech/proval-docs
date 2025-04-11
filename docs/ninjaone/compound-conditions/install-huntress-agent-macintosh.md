@@ -1,6 +1,6 @@
 ---
-id: 'd60d6991-2083-487e-9e35-9675e91720bf
-slug: /d60d6991-2083-487e-9e35-9675e91720bf
+id: '6e7c65c3-3a14-433e-9cbb-617674c1aff0'
+slug: /6e7c65c3-3a14-433e-9cbb-617674c1aff0
 title: 'Install Huntress Agent - Macintosh'
 title_meta: 'Install Huntress Agent - Macintosh'
 keywords: ['huntress', 'antivirus', 'auto-deploy', 'agent-policy', 'mac']

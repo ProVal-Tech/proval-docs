@@ -1,6 +1,6 @@
 ---
-id: 'd60d6991-2083-487e-9e35-9675e91720bf
-slug: /d60d6991-2083-487e-9e35-9675e91720bf
+id: '73daf0e3-7d35-415b-ab69-386ddd7377e0'
+slug: /73daf0e3-7d35-415b-ab69-386ddd7377e0
 title: 'Install Huntress Agent - Windows'
 title_meta: 'Install Huntress Agent - Windows'
 keywords: ['huntress', 'antivirus', 'auto-deploy', 'agent-policy']
