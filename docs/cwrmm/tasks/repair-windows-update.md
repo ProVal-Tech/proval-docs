@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used to reset Windows update settings. Running the script does not guarantee resolution of any issues with Windows updates; it simply attempts to reset the settings. This is a ConnectWise RMM implementation of the [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc) agnostic script.
+This script is used to reset Windows update settings. Running the script does not guarantee resolution of any issues with Windows updates; it simply attempts to reset the settings. This is a ConnectWise RMM implementation of the [Repair-WindowsUpdate](</docs/powershell/repair-windowsupdate.md>) agnostic script.
 
 ## Sample Run
 
@@ -24,7 +24,7 @@ This script is used to reset Windows update settings. Running the script does no
 
 ## Dependencies
 
-[SEC - Windows Update - Agnostic - Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
+[Repair-WindowsUpdate](</docs/powershell/repair-windowsupdate.md>)
 
 ## User Parameters
 
