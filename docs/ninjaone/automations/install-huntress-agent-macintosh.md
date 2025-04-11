@@ -32,9 +32,9 @@ Click the `Run` button to run the script.
 
 ## Dependencies
 
-- [cPVAl Huntress Account Key](../custom-fields/cpval-huntress-account-key.md)  
-- [cPVAl Huntress org Key](../custom-fields/cpval-huntress-org-key.md)  
-- [cPVAl Huntress Tags](../custom-fields/cpval-huntress-tags.md)
+- [cPVAl Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a)  
+- [cPVAl Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4)  
+- [cPVAl Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6)
 - [InstallHuntress-macOS-NinjaRMM.sh](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
 
 ## Automation Setup/Import

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Triggers the [Install Huntress Agent - Windows](../automations/install-huntress-agent-windows.md) automation on Windows machines where deployment is enabled.
+Triggers the [Install Huntress Agent - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) automation on Windows machines where deployment is enabled.
 
 ## Details
 
@@ -26,9 +26,9 @@ Triggers the [Install Huntress Agent - Windows](../automations/install-huntress-
 
 ## Dependencies
 
-- [Install Huntress Agent - Windows](../automations/install-huntress-agent-windows.md)  
-- [cPVAL Huntress Deployment](../custom-fields/cpval-huntress-deployment.md)  
-- [cPVAL Huntress Install - Exclude](../custom-fields/cpval-huntress-install-exclude.md)
+- [Install Huntress Agent - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da)  
+- [cPVAL Huntress Deployment](/docs/67554954-e8da-48af-bda9-13a6a37c8295)  
+- [cPVAL Huntress Install - Exclude](/docs//bdb92684-f093-49f8-9568-09874f9f79d5)
 
 ## Compound Condition Creation
 
@@ -138,7 +138,7 @@ Click the `+ Add automation` button.
 `Automation Library` will appear upon clicking the `+ Add Automation` button. Note that existing automation library may vary across different environments. The provided screenshot is for demonstration purposes only.  
 ![AutomationLibrary](../../../static/img/ninja-one-compound-conditions-common-screenshots/automationlibrary.png)
 
-Search and select the [Install Huntress Agent - Windows](../automations/install-huntress-agent-windows.md) script.  
+Search and select the [Install Huntress Agent - Windows](/docs/518bff20-44d4-4206-9336-bb6922d959da) script.  
 ![Image6](../../../static/img/ninja-one-compound-condition-install-huntress-agent-windows/image6.png)
 
 Click the `Apply` button to add the automation.  
