@@ -25,9 +25,9 @@ Search and select `Install Huntress Agent - Windows`
 Set the required arguments and click the `Run` button to run the script.  
 **Run As:** `System`  
 **Preset Parameter:** `<Leave it Blank>`  
-**Huntress Account Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAl Huntress Account Key'`  
-**Huntress Org Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAl Huntress Org Key'`  
-**Huntress Tags:**  `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAl Huntress Tags'`  
+**Huntress Account Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Account Key'`  
+**Huntress Org Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Org Key'`  
+**Huntress Tags:**  `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Tags'`  
 **Action:** `Install`  
 ![Image2](../../../static/img/ninja-one-automation-install-huntress-agent-windows/image2.png)
 
@@ -36,18 +36,18 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Dependencies
 
-- [cPVAl Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a)  
-- [cPVAl Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4)  
-- [cPVAl Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6)
+- [cPVAL Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a)  
+- [cPVAL Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4)  
+- [cPVAL Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6)
 - [InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
 
 ## Parameters
 
 | Name | Required | Accepted Values | Default | Type | Description |
 | ---- | -------- | --------------- | ------- | ---- | ----------- |
-| Huntress Account Key | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAl Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a) |
-| Huntress Org Key | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAl Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4) |
-| Huntress Tags | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAl Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6) |
+| Huntress Account Key | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAL Huntress Account Key](/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a) |
+| Huntress Org Key | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAL Huntress org Key](/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4) |
+| Huntress Tags | False | | | String/Text | Set this variable to override the value stored in the organization-level custom field [cPVAL Huntress Tags](/docs/ac9bd64b-0327-4879-931d-128936bc43a6) |
 | Action | False | `Install`, `Reregister`, `Reinstall`, `Uninstall`, `Repair` | `Install` | Drop-Down | Choose the action to perform. By default, the script is set to perform installation |
 
 ## Automation Setup/Import
@@ -287,7 +287,7 @@ The `Add String/Text Variable` window will open.
 In the box, fill in the following details and select `Add` to create the script variable.  
 
 **Name:** `Huntress Account Key`  
-**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAl Huntress Account Key`  
+**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAL Huntress Account Key`  
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
@@ -307,7 +307,7 @@ The `Add String/Text Variable` window will open.
 In the box, fill in the following details and select `Add` to create the script variable.  
 
 **Name:** `Huntress Org Key`  
-**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAl Huntress Org Key`  
+**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAL Huntress Org Key`  
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
@@ -327,7 +327,7 @@ The `Add String/Text Variable` window will open.
 In the box, fill in the following details and select `Add` to create the script variable.  
 
 **Name:** `Huntress Tags`  
-**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAl Huntress Tags`  
+**Description:** `Set this variable to override the value stored in the organization-level custom field cPVAL Huntress Tags`  
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
