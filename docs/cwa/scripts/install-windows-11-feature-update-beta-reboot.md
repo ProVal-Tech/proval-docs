@@ -4,7 +4,7 @@ slug: /27f8240b-603a-4af2-b9d9-480a560f8747
 title: 'Install Windows 11 Feature Update [Beta, Reboot]'
 title_meta: 'Install Windows 11 Feature Update [Beta, Reboot]'
 keywords: ['install', 'feature update', 'upgrade', 'windows', 'windows 11', 'troubleshooting', 'reboot']
-description: 'This document outlines the script that automates the installation of the Windows 11 Feature Update. It includes comprehensive pre-checks, maintenance, and validation to ensure a seamless upgrade process.'
+description: 'The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.'
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
@@ -13,6 +13,13 @@ unlisted: false
 ## Summary
 
 This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
+
+The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
+
+The script supports both Windows 10 and Windows 11:
+
+- For Windows 10, it attempts to upgrade to the latest available version of Windows 11.  
+- For Windows 11, it ensures the system is updated to the latest available feature update.
 
 **Important Notes:**
 
@@ -24,7 +31,7 @@ This document describes the Automate implementation of the agnostic script [Inst
 
 ## Requirements
 
-- Windows 11
+- Windows 10 or Windows 11
 - Administrative privileges
 - Internet connectivity
 - At least 64GB of free space on the system drive
