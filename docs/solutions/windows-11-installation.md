@@ -49,7 +49,7 @@ The following scripts have been incorporated into the solution:
 
 | Content                                | Type             | Function                                                                 |
 |----------------------------------------|------------------|-------------------------------------------------------------------------|
-| [Windows 11 Upgrade Failure [Ticket]](../cwa/scripts/windows-11-upgrade-failure.md) | Script | Generates a ticket for the erroneous machines |
+| [Windows 11 Upgrade Failure [Ticket]](/docs/ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52) | Script | Generates a ticket for the erroneous machines |
 | [Install Windows 11 Feature Update [Beta, Reboot]](/docs/27f8240b-603a-4af2-b9d9-480a560f8747) | Script | Workaround script for erroneous machines |
 
 ## Implementation

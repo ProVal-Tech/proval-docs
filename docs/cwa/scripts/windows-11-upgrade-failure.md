@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script generates a ticket for computers where the [Windows 11 Installer](./Windows%20_11_Installer.md) script has failed more than three times. It leverages the computer-level EDF `Windows 11 Installation Attempts` to track the number of installation attempts.
+This script generates a ticket for computers where the [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) script has failed more than three times. It leverages the computer-level EDF `Windows 11 Installation Attempts` to track the number of installation attempts.
 
 ## Sample Run
 
