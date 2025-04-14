@@ -1,5 +1,6 @@
 ---
 id: 'ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52'
+slug: /ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52
 title: 'Windows 11 Upgrade Failure [Ticket]'
 title_meta: 'Windows 11 Upgrade Failure [Ticket]'
 keywords: ['upgrade', 'windows', 'windows-11', 'window-10', 'failure', 'ticket', 'reporting']
@@ -20,7 +21,7 @@ This is a client script and is recommended to be scheduled to run daily.
 
 ## Dependencies
 
-[Windows 11 Installer](./Windows%20_11_Installer.md)
+[Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)
 
 ## Output
 
