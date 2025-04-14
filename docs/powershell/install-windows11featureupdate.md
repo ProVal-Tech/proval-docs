@@ -59,7 +59,7 @@ The script also schedules tasks to run itself after restarting the system to com
 ### Points Where the Computer Can Be Restarted
 
 - **Driver Updates**: If driver updates require a reboot, the script will restart the computer unless the `-NoReboot` parameter is used. The computer might be restarted multiple times during the driver updates.
-- **System Health Check**: If the SFC scan finds and repairs issues, the script will restart the computer unless the `-NoReboot` parameter is used.
+- **System Health Check**: The script will reboot the computer following the Health Check Scan and Repair process, unless the `-NoReboot` parameter is specified.
 - **Primary Task Execution**: After initiating the upgrade process, the script may restart the computer to complete the installation. The computer can be restarted multiple times during the upgrade process.
 
 ## Payload Usage
