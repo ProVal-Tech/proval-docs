@@ -1,5 +1,6 @@
 ---
 id: '1da4d5e9-4168-4c21-94cf-9b52fc565bf7'
+slug: /1da4d5e9-4168-4c21-94cf-9b52fc565bf7
 title: 'Group Policy Objects'
 title_meta: 'Group Policy Objects'
 keywords: ['gpo', 'audit', 'policy', 'trustee', 'linked', 'information', 'output']
@@ -15,8 +16,8 @@ This dataview shows information about GPOs, their applied policies, where they a
 
 ## Dependencies
 
-- [Group Policy Audit](../scripts/group-policy-audit.md)
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)
 
 ## Columns
 
@@ -34,7 +35,6 @@ This dataview shows information about GPOs, their applied policies, where they a
 | Modified Time   | GPO last modified date and time                 |
 | Read Time       | GPO last check time                              |
 | OU Links        | Created OUs path                                 |
-
 
 
 

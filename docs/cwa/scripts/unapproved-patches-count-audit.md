@@ -1,5 +1,6 @@
 ---
 id: '595e85de-299d-4242-a569-f5367be6b1c9'
+slug: /595e85de-299d-4242-a569-f5367be6b1c9
 title: 'Unapproved Patches Count Audit'
 title_meta: 'Unapproved Patches Count Audit'
 keywords: ['patches', 'approval', 'policy', 'audit', 'unapproved', 'email', 'proval', 'urgent']

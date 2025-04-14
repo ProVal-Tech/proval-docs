@@ -1,5 +1,6 @@
 ---
 id: 'New GUID'
+slug: /New GUID
 title: 'Filename'
 title_meta: 'Filename'
 keywords: []
@@ -19,4 +20,3 @@ unlisted: false
 
 
 ## FAQ
-

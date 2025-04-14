@@ -1,24 +1,25 @@
 ---
 id: 'e34e18bc-efe5-4d35-90cc-968ab1bf2912'
+slug: /e34e18bc-efe5-4d35-90cc-968ab1bf2912
 title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']
 description: 'This task is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.'
-tags: ['notification', 'reboot', 'windows']
+tags: ['reboot', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This task is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases. It is CW RMM implementation of the agnostic script [Invoke-ToastNotification.ps1](../../powershell/Invoke-ToastNotification.md).
+This task is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases. It is CW RMM implementation of the agnostic script [Invoke-ToastNotification.ps1](/docs/426118d9-ff83-444e-9744-30a0e26cb490).
 
 ## Sample Run
 ![Image1](../../../static/img/cw-rmm-task-toast-notification/Image1.png)
 ![Image2](../../../static/img/cw-rmm-task-toast-notification/Image2.png)
 
 ## Dependencies
-[Invoke-ToastNotification](../../powershell/Invoke-ToastNotification.md)
+[Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
 
 ## User Parameters
 | Parameter                  | Example                         | Accepted Values             | Required | Default       | Type        | Description              |

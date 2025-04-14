@@ -1,5 +1,6 @@
 ---
 id: '337526eb-1aa7-48a3-beab-ab66d2b7aea8'
+slug: /337526eb-1aa7-48a3-beab-ab66d2b7aea8
 title: 'Group Policy Object Security Filtering'
 title_meta: 'Group Policy Object Security Filtering'
 keywords: ['active-directory', 'gpo', 'security', 'audit', 'policy']
@@ -15,9 +16,9 @@ This dataview displays information related to Group Policy Objects in Active Dir
 
 ## Dependencies
 
-- [Group Policy Audit](../scripts/group-policy-audit.md)
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)  
-- [plugin_proval_ad_gposf](<../tables/plugin_proval_ad_gposf.md>)  
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)  
+- [plugin_proval_ad_gposf](/docs/8fa8c78e-04a4-4495-8cfe-44aef7b48035)  
 
 
 ## Columns
@@ -37,6 +38,5 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime     | The time when the GPO was created                                                                |
 | ModifiedTime    | The last time this GPO was modified                                                             |
 | ReadTime        | The last time this GPO was read.                                                                |
-
 
 
