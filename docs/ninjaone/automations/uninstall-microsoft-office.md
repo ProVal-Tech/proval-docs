@@ -5,7 +5,7 @@ title: 'Uninstall Microsoft Office'
 title_meta: 'Uninstall Microsoft Office'
 keywords: ["Microsoft", "Office", "C2R"]
 description: 'The script allows the uninstallation of Microsoft Office products via OffScrub. Accepted Versions: All, 2003, 2007, 2010, 2013, 2016, and C2R. Leaving the parameter blank will remove all installed versions.'
-tags: ['Microsoft365','Office','Software','Uninstallation']
+tags: ['Microsoft 365','Office','Software','Uninstallation']
 draft: false
 unlisted: false
 ---
