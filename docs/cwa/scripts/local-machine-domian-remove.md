@@ -5,7 +5,7 @@ title: 'Local Machine - Domain - Remove'
 title_meta: 'Local Machine - Domain - Remove'
 keywords: ['remove','domain']
 description: 'This script will attempt to remove the computer from its domain. The script will make use of the domain admin credentials stored in the clients tab. While running the script, the password title should be supplied as a parameter. This script will check the reboot pending flag before execution as was as force a reboot after domain removal.'
-tags: ['Active Directory','Domain','Windows']
+tags: ['active-directory','domain','windows']
 draft: false
 unlisted: false
 ---
