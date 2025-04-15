@@ -1,5 +1,6 @@
 ---
 id: '4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1'
+slug: /4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1
 title: 'Local Machine - Domain - Remove'
 title_meta: 'Local Machine - Domain - Remove'
 keywords: ['remove','domain']
