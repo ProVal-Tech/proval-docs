@@ -1,5 +1,6 @@
 ---
 id: '71141737-d88f-43d3-9e75-e3f5468f888f'
+slug: /71141737-d88f-43d3-9e75-e3f5468f888f
 title: 'FileZilla - Fetch Latest Version'
 title_meta: 'FileZilla - Fetch Latest Version'
 keywords: ['filezilla', 'latest-version', 'fetch-version', 'useragent']
@@ -22,7 +23,7 @@ This is a client script and is recommended to be scheduled to run daily during w
 
 | Name | Example | Required | Description |
 | ---- | ------- | -------- | ----------- |
-| Filezilla_Latest_Version | 3.68.1 | True | Stores the latest available version of FileZilla, which is utilized by the [Update FileZilla](../monitors/update-filezilla.md). *Modifying it is not recommended.* |
+| Filezilla_Latest_Version | 3.68.1 | True | Stores the latest available version of FileZilla, which is utilized by the [Update FileZilla](/docs/ea7ef637-8620-499a-a982-a805a11e14c7). *Modifying it is not recommended.* |
 
 ## Output
 

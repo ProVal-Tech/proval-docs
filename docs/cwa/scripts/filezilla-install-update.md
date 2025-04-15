@@ -1,5 +1,6 @@
 ---
 id: '154e2b72-d73f-4693-a316-7a296e4793ec'
+slug: /154e2b72-d73f-4693-a316-7a296e4793ec
 title: 'FileZilla - Install/Update'
 title_meta: 'FileZilla - Install/Update'
 keywords: ['filezilla', 'latest-version', 'install-update', 'useragent']
@@ -41,5 +42,5 @@ Output:
 <Output of the PowerShell script>
 ```
 
-**Note:** The script does not create tickets by default. Tickets are generated only when the script is executed as an Autofix from an internal monitor with a configured ticket category. It is used as an Autofix for the [Update FileZilla](../monitors/update-filezilla.md) monitor set. To enable ticketing, assign a ticket category to this monitor set.  
+**Note:** The script does not create tickets by default. Tickets are generated only when the script is executed as an Autofix from an internal monitor with a configured ticket category. It is used as an Autofix for the [Update FileZilla](/docs/ea7ef637-8620-499a-a982-a805a11e14c7) monitor set. To enable ticketing, assign a ticket category to this monitor set.  
 ![Image2](../../../static/img/cwa-script-filezilla-install-update/image2.png)
