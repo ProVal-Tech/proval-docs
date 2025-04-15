@@ -1,5 +1,6 @@
 ---
-id: 'creating-a-document'
+id: ec75b585-912e-4269-a676-3e21be5d5153
+slug: /ec75b585-912e-4269-a676-3e21be5d5153
 title: 'Creating a Document'
 title_meta: 'Creating a Document'
 keywords: [ "document", "create", "new" ]

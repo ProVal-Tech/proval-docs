@@ -1,9 +1,10 @@
 ---
-id: ps-script-name
-title: Script Name
-title_meta: Script Name
+id: 'New-GUID'
+slug: /New-GUID
+title: 'Script Name'
+title_meta: 'Script Name'
 keywords: []
-description: A description of the script.
+description: 'A description of the script.'
 tags: []
 draft: true
 unlisted: false
@@ -33,6 +34,5 @@ Describe how the script is executed and if it requires any parameters. Delete th
 
 ## Output
 Describe the output of the content. Delete if not needed.
-
 
 
