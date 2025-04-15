@@ -1,6 +1,6 @@
 ---
-id: 'c61453e58-57fd-425e-aa68-0a1e003784d5'
-slug: /c61453e58-57fd-425e-aa68-0a1e003784d5
+id: '61453e58-57fd-425e-aa68-0a1e003784d5'
+slug: /61453e58-57fd-425e-aa68-0a1e003784d5
 title: 'cPVAL DUO UAC_PROTECTMODE'
 title_meta: 'cPVAL DUO UAC_PROTECTMODE'
 keywords: ['duo', 'mfa', 'security', 'auto-deploy']
