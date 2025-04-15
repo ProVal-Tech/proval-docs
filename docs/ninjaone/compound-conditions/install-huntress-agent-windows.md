@@ -37,7 +37,7 @@ Compound conditions can be configured within an `Agent Policy`. This document pr
 Navigate to `Administration` `>` `Policies` `>` `Agent Policies`.  
 ![Navigate](../../../static/img/ninja-one-compound-conditions-common-screenshots/agentpolicies.png)
 
-Search for `Windows Workstation` and select the default `Windows Workstations [Default]` policy.  
+Search for `Windows Workstation` and select the default `Windows Workstation [Default]` policy.  
 ![DefaultWindowsWorkstation](../../../static/img/ninja-one-compound-conditions-common-screenshots/defaultwindowsworkstations.png)
 
 This will navigate you to the policy's landing page, which is the `Conditions` section. Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  

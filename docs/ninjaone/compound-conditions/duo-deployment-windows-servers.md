@@ -1,50 +1,46 @@
 ---
-id: '6e7c65c3-3a14-433e-9cbb-617674c1aff0'
-slug: /6e7c65c3-3a14-433e-9cbb-617674c1aff0
-title: 'Install Huntress Agent - Macintosh'
-title_meta: 'Install Huntress Agent - Macintosh'
-keywords: ['huntress', 'antivirus', 'auto-deploy', 'agent-policy', 'mac']
-description: 'Triggers the auto-deployment script for the Huntress Agent on Macintosh machines where deployment is enabled.'
-tags: ['antivirus', 'software']
+id: '1f8e6ed3-ac24-40a5-8238-4c52f259c157'
+slug: /1f8e6ed3-ac24-40a5-8238-4c52f259c157
+title: 'Duo Deployment - Windows Servers'
+title_meta: 'Duo Deployment - Windows Servers'
+keywords: ['duo', 'mfa', 'security', 'auto-deploy', 'agent-policy']
+description: 'Triggers the auto-deployment script for Duo on Windows servers where deployment is enabled.'
+tags: ['security', 'software']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-Triggers the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f) automation on Macintosh machines where deployment is enabled.
+Triggers the [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65) automation on Windows servers where deployment is enabled.
 
 ## Details
 
-**Name:** `Install Huntress Agent - Macintosh`  
-**Description:** `Triggers the auto-deployment script for the Huntress Agent on Macintosh machines where deployment is enabled.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Mac Server [Default]`
-- `Mac [Default]`
+**Name:** `Duo Deployment - Windows Servers`  
+**Description:** `Triggers the auto-deployment script for Duo on Windows servers where deployment is enabled.`  
+**Recommended Agent Policy:** `Windows Server [Default]`
 
 ## Dependencies
 
-- [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f)  
-- [cPVAL Huntress Deployment](/docs/67554954-e8da-48af-bda9-13a6a37c8295)  
-- [cPVAL Huntress Install - Exclude](/docs/bdb92684-f093-49f8-9568-09874f9f79d5)
+- [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65)  
+- [cPVAL DUO Deployment](/docs/22469c4c-79f2-4a87-9650-f418f4327e07)  
+- [cPVAL DUO Deployment - Exclude](/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa)
 
 ## Compound Condition Creation
 
-Compound conditions can be configured within an `Agent Policy`. This document provides an example using the default `Mac [Default]` policy for demonstration purposes.
+Compound conditions can be configured within an `Agent Policy`. This document provides an example using the default `Windows Server [Default]` policy for demonstration purposes.
 
 Navigate to `Administration` `>` `Policies` `>` `Agent Policies`.  
 ![Navigate](../../../static/img/ninja-one-compound-conditions-common-screenshots/agentpolicies.png)
 
-Search for `Mac` and select the default `Mac [Default]` policy.  
-![DefaultMac](../../../static/img/ninja-one-compound-conditions-common-screenshots/defaultmac.png)
+Search for `Windows Server` and select the default `Windows Server [Default]` policy.  
+![DefaultWindowsServer](../../../static/img/ninja-one-compound-conditions-common-screenshots/defaultwindowsservers.png)
 
 This will navigate you to the policy's landing page, which is the `Conditions` section. Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
-![Conditions](../../../static/img/ninja-one-compound-conditions-common-screenshots/macconditionssection.png)
+![Conditions](../../../static/img/ninja-one-compound-conditions-common-screenshots/windowsserversconditionssection.png)
 
 Navigate to the `Compound Conditions` section. Note that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
-![CompoundConditions](../../../static/img/ninja-one-compound-conditions-common-screenshots/macworkstationscompoundconditionssection.png)
+![CompoundConditions](../../../static/img/ninja-one-compound-conditions-common-screenshots/windowsserverscompoundconditionssection.png)
 
 Click the `+ Add` button to add a compound condition.  
 ![AddButton](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbutton.png)
@@ -67,10 +63,10 @@ Select the `Software` option from the list that will appear after clicking the `
 
 Configure the `Add Software Condition` as follow:  
 
-**Software Name:** `Huntress`  
+**Software Name:** `Duo Authentication for Windows Logon x64`  
 **Trigger when:** `Any Software` `Doesn't exist`  
 
-![Image1](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image1.png)
+![Image1](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image1.png)
 
 **Note:** The Return key must be pressed after pasting the name to set the `Software Name`.
 
@@ -94,26 +90,50 @@ Click the `+ Add` button within the upper section labeled `Custom field value mu
 A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
 
-Search and select the `cPVAL Huntress Install - Exclude` custom field.
+Search and select the `cPVAL DUO Deployment - Exclude` custom field.
 
-**Condition:** `cPVAL Huntress Install - Exclude` `does not equal` `Yes`
+**Condition:** `cPVAL DUO Deployment - Exclude` `does not equal` `Yes`
 
-![Image2](../../../static/img/ninja-one-compound-condition-install-huntress-agent-windows/image2.png)
+![Image2](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image2.png)
 
-Click the `+ Add` button within the upper section labeled `Custom field value must meet ALL conditions`.  
+Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
 ![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
 
 A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
 
-Search and select the `cPVAL Huntress Deployment` custom field.
+Search and select the `cPVAL DUO Deployment` custom field.
 
-**Condition:** `cPVAL Huntress Deployment` `equals` `Windows and Macintosh`
+**Condition:** `cPVAL DUO Deployment` `equals` `All`
 
-![Image4](../../../static/img/ninja-one-compound-condition-install-huntress-agent-windows/image4.png)
+![Image3](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image3.png)
+
+Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
+![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
+
+A new row will be added upon clicking the `+ Add` button.  
+![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
+
+Search and select the `cPVAL DUO Deployment` custom field.
+
+**Condition:** `cPVAL DUO Deployment` `equals` `Windows`
+
+![Image4](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image4.png)
+
+Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
+![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
+
+A new row will be added upon clicking the `+ Add` button.  
+![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
+
+Search and select the `cPVAL DUO Deployment` custom field.
+
+**Condition:** `cPVAL DUO Deployment` `equals` `Windows Servers`
+
+![Image1](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-servers/image1.png)
 
 Click the `Apply` button to save the `custom field` condition.  
-![Image2](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image2.png)
+![Image2](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-servers/image2.png)
 
 ## Automations
 
@@ -124,16 +144,16 @@ Click the `+ Add automation` button.
 ![AddAutomation](../../../static/img/ninja-one-compound-conditions-common-screenshots/addautomations.png)
 
 `Automation Library` will appear upon clicking the `+ Add Automation` button. Note that existing automation library may vary across different environments. The provided screenshot is for demonstration purposes only.  
-![AutomationLibrary](../../../static/img/ninja-one-compound-conditions-common-screenshots/automationlibrarymac.png)
+![AutomationLibrary](../../../static/img/ninja-one-compound-conditions-common-screenshots/automationlibrary.png)
 
-Search and select the [Install Huntress Agent - Macintosh](/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f) script.  
-![Image3](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image3.png)
+Search and select the [Duo Deployment - Windows](/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65) script.  
+![Image7](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image7.png)
 
 Click the `Apply` button to add the automation.  
-![Image4](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image4.png)
+![Image8](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image8.png)
 
 Completed Automation Section:  
-![Image5](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image5.png)
+![Image9](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image9.png)
 
 ## Settings
 
@@ -142,7 +162,7 @@ Navigate to `Settings` section.
 
 Set the `Settings` section as follows:  
 
-**Name:** `Install Huntress Agent - Macintosh`  
+**Name:** `Duo Deployment - Windows Servers`  
 **Auto Reset:**
 
 - **After:** `True` `1 hour`
@@ -151,7 +171,7 @@ Set the `Settings` section as follows:
 **Run Every:** `30 Minutes`  
 **Trigger uptime:** `False`  
 
-![Image6](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image6.png)
+![Image3](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-servers/image3.png)
 
 ## Notifications
 
@@ -162,7 +182,7 @@ Leave the `Notifications` section untouched.
 Click the `Apply` button at the bottom to save the compound condition.  
 ![Apply](../../../static/img/ninja-one-compound-conditions-common-screenshots/apply.png)
 
-![Image7](../../../static/img/ninja-one-compound-condition-install-huntress-agent-macintosh/image7.png)
+![Image4](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-servers/image4.png)
 
 ## Saving Agent Policy
 

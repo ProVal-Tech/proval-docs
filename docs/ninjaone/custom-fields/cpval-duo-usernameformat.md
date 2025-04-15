@@ -1,10 +1,10 @@
 ---
-id: 'f7519fa5-6ffd-49a1-aab2-d63e3d1c1d3e'
-slug: /f7519fa5-6ffd-49a1-aab2-d63e3d1c1d3e
-title: 'cPVAL DUO WRAPSMARTCARD'
-title_meta: 'cPVAL DUO WRAPSMARTCARD'
+id: 'ca662111-e0a5-4318-8615-a00341257a1c'
+slug: /ca662111-e0a5-4318-8615-a00341257a1c
+title: 'cPVAL DUO USERNAMEFORMAT'
+title_meta: 'cPVAL DUO USERNAMEFORMAT'
 keywords: ['duo', 'mfa', 'security', 'auto-deploy']
-description: 'Enable this custom property to require Duo after smart card primary logon, or not to allow smart card logon without Duo approval afterward.'
+description: 'The username format sent to Duo. One of: 0 for sAMAccountName (narroway), 1 for the NTLM domain and username (ACME\narroway), or 2 for the userPrincipalName (narroway@acme.corp)'
 tags: ['security', 'software']
 draft: false
 unlisted: false
@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-Enable this custom property to require Duo after smart card primary logon, or not to allow smart card logon without Duo approval afterward.
+The username format sent to Duo. One of: 0 for sAMAccountName (narroway), 1 for the NTLM domain and username (ACME\narroway), or 2 for the userPrincipalName (narroway@acme.corp)
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL DUO WRAPSMARTCARD | cpvalDuoWrapsmartcard | Organization | drop-down | `Windows`, `Windows Workstations`, `Windows Servers`, `Disabled` | `Disabled` | False | Editable | Read/Write | Read/Write | Enable this custom property to require Duo after smart card primary logon, or not to allow smart card logon without Duo approval afterward. | Select the platform to require Duo after smart card primary logon | DUO WRAPSMARTCARD |
+| cPVAL DUO USERNAMEFORMAT | cpvalDuoUsernameformat | Organization | drop-down | `0`, `1`, `2` | `1` | False | Editable | Read/Write | Read/Write | The username format sent to Duo. One of: 0 for sAMAccountName (narroway), 1 for the NTLM domain and username (ACME\narroway), or 2 for the userPrincipalName (narroway@acme.corp) | Select the username format to send to DUO. Default is 1 | DUO USERNAMEFORMAT |
 
 ## Custom Field Creation
 
@@ -54,12 +54,12 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Overview` section and click the `Next` button.
 
-**Label:** `cPVAL DUO WRAPSMARTCARD`  
-**Name:** `cpvalDuoWrapsmartcard`  
+**Label:** `cPVAL DUO USERNAMEFORMAT`  
+**Name:** `cpvalDuoUsernameformat`  
 **Definition Scope:** `Organization`  
 **Custom field is required:** `<Leave it unchecked>`
 
-![Image1](../../../static/img/ninja-one-custom-field-cpval-duo-wrapsmartcard/image1.png)
+![Image1](../../../static/img/ninja-one-custom-field-cpval-duo-usernameformat/image1.png)
 
 Clicking the `Next` button will take you to the `Permission` section.  
 ![Permission](../../../static/img/ninja-one-custom-fields-common-screenshots/advancedpermissions.png)
@@ -81,11 +81,11 @@ Clicking the `Next` button will take you to the details tab.
 
 Fill in the following information in the `Details` section and click the `Next` button.
 
-**Description:** `Enable this custom property to require Duo after smart card primary logon, or not to allow smart card logon without Duo approval afterward.`  
-**Tooltip Text:** `Select the platform to require Duo after smart card primary logon`  
-**Footer Text:** `DUO WRAPSMARTCARD`
+**Description:** `The username format sent to Duo. One of: 0 for sAMAccountName (narroway), 1 for the NTLM domain and username (ACME\narroway), or 2 for the userPrincipalName (narroway@acme.corp)`  
+**Tooltip Text:** `Select the username format to send to DUO. Default is 1`  
+**Footer Text:** `DUO USERNAMEFORMAT`
 
-![Image2](../../../static/img/ninja-one-custom-field-cpval-duo-wrapsmartcard/image2.png)
+![Image2](../../../static/img/ninja-one-custom-field-cpval-duo-usernameformat/image2.png)
 
 Clicking the `Next` button will take you to the `Advanced Settings` tab.  
 ![AdvancedSettings](../../../static/img/ninja-one-custom-fields-common-screenshots/advancedsettings.png)
@@ -94,18 +94,17 @@ Clicking the `Next` button will take you to the `Advanced Settings` tab.
 
 Configure the following options in the specified order. To add an option, paste it and click the `Add` button:
 
-- Windows  
-- Windows Workstations
-- Windows Servers
-- Disabled
+- 0  
+- 1
+- 2
 
 Click the `Create` button to create the `Custom Field`.  
-![Image3](../../../static/img/ninja-one-custom-field-cpval-duo-enableoffline/image3.png)
+![Image3](../../../static/img/ninja-one-custom-field-cpval-duo-usernameformat/image3.png)
 
 ## Completed Custom Field
 
-![Image4](../../../static/img/ninja-one-custom-field-cpval-duo-wrapsmartcard/image4.png)
+![Image4](../../../static/img/ninja-one-custom-field-cpval-duo-usernameformat/image4.png)
 
 ## Example
 
-![Image5](../../../static/img/ninja-one-custom-field-cpval-duo-wrapsmartcard/image5.png)
+![Image5](../../../static/img/ninja-one-custom-field-cpval-duo-usernameformat/image5.png)
