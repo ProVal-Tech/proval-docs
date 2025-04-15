@@ -31,6 +31,7 @@ This script is used to reset Windows update settings. Running the script does no
 | Name     | Example | Required | Type  | Description                                                                 |
 |----------|---------|----------|-------|-----------------------------------------------------------------------------|
 | SfcScan  | 0/1     | False    | Flag  | This flag toggles an optional SFC scan.                                    |
+| DISMRepair  | 0/1     | False    | Flag  | This flag toggles an optional DISM Repair.                                    |
 
 ![User Parameter Image](../../../static/img/docs/repair-windows-update/{902A43AB-6450-48E4-A3E6-ED4FCC57C4C3}.png)
 
@@ -43,7 +44,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 ![Task Creation Image 2](../../../static/img/Repair-Windows-Update/image_6.png)
 
 **Name:** `Repair Windows Update`  \
-**Description:** `Script used to reset Windows update settings. Running the script does not guarantee resolution of any issues with Windows updates; it simply attempts to reset the settings.`  \
+**Description:** `Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.`  \
 **Category:** `Patching`  
 
 ![Task Creation Image 3](../../../static/img/Repair-Windows-Update/image_7.png)
