@@ -1,6 +1,6 @@
 ---
-id: '868d35d1-fe4e-4e65-b7a5-7661d0d33405'
-slug: /868d35d1-fe4e-4e65-b7a5-7661d0d33405
+id: 'ca460823-862e-4c38-8a30-72474f2b1b5a'
+slug: /ca460823-862e-4c38-8a30-72474f2b1b5a
 title: 'cPVAL DUO IKEY'
 title_meta: 'cPVAL DUO IKEY'
 keywords: ['duo', 'mfa', 'security', 'auto-deploy']
