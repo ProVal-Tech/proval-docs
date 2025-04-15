@@ -1,5 +1,6 @@
 ---
 id: '485b29e0-cf9e-4933-846c-bb83b52b115d'
+slug: /485b29e0-cf9e-4933-846c-bb83b52b115d
 title: 'Denied Patch Audit'
 title_meta: 'Denied Patch Audit'
 keywords: ['patches', 'denied', 'approval', 'hotfix', 'kb', 'devices']

@@ -20,8 +20,8 @@ const config: Config = {
   organizationName: 'proval-tech', // Usually your GitHub org/user name.
   projectName: 'proval-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -38,7 +38,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           tags: 'tags.yml',
-          onInlineTags: 'warn',
+          onInlineTags: 'throw',
           editUrl:
             'https://github.com/proval-tech/proval-docs/tree/main/',
         },

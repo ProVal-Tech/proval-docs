@@ -1,5 +1,6 @@
 ---
 id: '45a9f461-fac0-4e5c-9a5f-819786e8ad21'
+slug: /45a9f461-fac0-4e5c-9a5f-819786e8ad21
 title: 'Group Policy Object Links'
 title_meta: 'Group Policy Object Links'
 keywords: ['gpo', 'audit', 'policy', 'link', 'dc', 'client', 'location', 'enabled', 'enforced', 'computer', 'user', 'created', 'modified', 'read']
@@ -15,9 +16,9 @@ This dataview shows information about GPOs, their applied policies, and where th
 
 ## Dependencies
 
-- [Group Policy Audit](../scripts/group-policy-audit.md)
-- [plugin_proval_ad_gpo](<../tables/plugin_proval_ad_gpo.md>)
-- [plugin_proval_ad_gpolinks](<../tables/plugin_proval_ad_gpolinks.md>)
+- [Group Policy Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a)
+- [plugin_proval_ad_gpo](/docs/c7cf649a-dd80-4e9d-8c80-eb95b813b7c9)
+- [plugin_proval_ad_gpolinks](/docs/85f52c7c-84bc-488f-a4de-d3122fec1f42)
 
 ## Columns
 

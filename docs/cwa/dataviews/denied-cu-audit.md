@@ -1,5 +1,6 @@
 ---
 id: '63ec0e5f-417c-452b-88fd-1c95969ac25c'
+slug: /63ec0e5f-417c-452b-88fd-1c95969ac25c
 title: 'Denied CU Audit'
 title_meta: 'Denied CU Audit'
 keywords: ['cu', 'cumulative', 'patches', 'denied', 'approval', 'hotfix', 'kb', 'devices']

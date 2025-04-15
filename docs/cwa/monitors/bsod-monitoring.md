@@ -1,5 +1,6 @@
 ---
 id: '31b19c20-52f0-491d-a2d0-7827cf8723a0'
+slug: /31b19c20-52f0-491d-a2d0-7827cf8723a0
 title: 'BSOD Monitoring'
 title_meta: 'BSOD Monitoring'
 keywords: ['BSOD', 'bluescreen', 'crashdump']
@@ -54,4 +55,4 @@ Unhealthy - BSOD status %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME
 ## Implementation
 
 Please follow the below document for importing the remote monitor with its pre-requisites.
-- [import-remote-monitor-bsod-monitoring](<./import-remote-monitor-bsod-monitoring.md>)
+- [import-remote-monitor-bsod-monitoring](/docs/a6e9e088-d737-4c9f-8ae8-e643521b4f79)

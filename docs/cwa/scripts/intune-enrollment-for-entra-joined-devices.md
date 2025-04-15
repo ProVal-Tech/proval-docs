@@ -1,5 +1,6 @@
 ---
 id: '9ea6eea1-814c-4642-bcad-fa34b361eb42'
+slug: /9ea6eea1-814c-4642-bcad-fa34b361eb42
 title: 'Intune Enrollment for Entra Joined Devices'
 title_meta: 'Intune Enrollment for Entra Joined Devices'
 keywords: ['intune', 'enrollment', 'entra', 'mdm', 'autoenrollmdm', 'deviceenroller']
