@@ -24,7 +24,7 @@ This script is used to reset Windows update settings. Running the script does no
 
 ## Dependencies
 
-[Repair-WindowsUpdate](</docs/powershell/repair-windowsupdate.md>)
+[Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 
 ## User Parameters
 
