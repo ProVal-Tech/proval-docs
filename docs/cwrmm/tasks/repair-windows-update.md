@@ -5,7 +5,7 @@ title: 'Repair Windows Update'
 title_meta: 'Repair Windows Update'
 keywords: ['windows', 'update', 'repair', 'script', 'settings', 'dism', 'sfc']
 description: 'This document provides a comprehensive guide on using a script to reset Windows update settings. It outlines the steps necessary to implement the script within the ConnectWise RMM platform, including user parameters, task creation, and execution details. The script aims to reset Windows update settings, though it may not resolve all update-related issues.'
-tags: ['patching', 'update', 'windows', 'dism', 'repair', 'sfc']
+tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
 ---
