@@ -26,6 +26,7 @@ This is used to reset Windows update settings. It is not necessary that running 
 |------------|---------|-----------------|----------|---------|----------|---------------------------------------------------------------|
 | SfcScan    | -       | -               | False    | False   | Checkbox | Toggles an optional SFC scan as a repair option for Windows updates |
 | DISMRepair | -       | -               | False    | False   | Checkbox | Toggles an optional DISM repair                               |
+| Reboot | -       | -               | False    | False   | Checkbox | If enabled, the script will forcefully restart the computer after completing the repair operations.                               |
 
 ## Automation Setup/Import
 
@@ -133,6 +134,12 @@ Add another Script variable and Select the `Checkbox` option. `Add Checkbox Vari
 **Mandatory:** `<Leave it Unchecked>`  
 ![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image6.png)
 
+Add another Script variable and Select the `Checkbox` option. `Add Checkbox Variable` window will open. In the box, fill in the following details and select `Add` to create the script variable.
+
+**Name:** `Reboot`  
+**Description:** `If enabled, the script will forcefully restart the computer after completing the repair operations.`  
+**Mandatory:** `<Leave it Unchecked>`  
+![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image8.png)
 
 ## Saving the Automation
 
