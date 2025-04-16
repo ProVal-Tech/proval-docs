@@ -11,11 +11,13 @@ unlisted: false
 ---
 
 ## Summary
+
 It is the CW Automate implementation of the agnostic script [Invoke-ToastNotification.ps1](/docs/426118d9-ff83-444e-9744-30a0e26cb490). 
 
 This script downloads and executes the New-ToastNotification.ps1, providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.
 
 ## File Hash
+
 **File Path:** `C:\ProgramData\_automation\Script\New-ToastNotification\New-ToastNotification\New-ToastNotification.ps1`
 
 **File Hash (Sha256):** `C0F7E5A29D59E1946B65648CF59661B49779252D5F9DA2DFA020D44762B74CA4`
@@ -23,10 +25,12 @@ This script downloads and executes the New-ToastNotification.ps1, providing a cu
 **File Hash (MD5):** `6ABAC1DE688E93CD27001887A3F92B27`
 
 ## Sample Run
+
 This script is a function script and should not be manually executed.
 Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f) to get a copy of all potential variables and paste the else section into any script that should use Prompter.
 
 ## Dependencies
+
 [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f)
 
 [Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
@@ -56,9 +60,10 @@ Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c
 | MaxUptimeDays               | @MaxUptimeDays@ stores the maximum uptime (in days) for the PendingRebootUptime parameter. The default is 30 days. @MaxUptimeDays@ is available for the `PendingRebootUptime` notification type. Delete the variable or leave it blank to fall back to the default value. |
 | ADPasswordExpirationDays    | @ADPasswordExpirationDays@ stores the number of days before password expiration when reminders should start. The default is 7 days. The default is 30 days. @ADPasswordExpirationDays@ is available for the `ADPasswordExpiration` notification type. Delete the variable or leave it blank to fall back to the default value. |
 | Repeat                      | @Repeat@ specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. Delete the variable or leave it blank to fall back to the default value. The default is `Once`.      |
-
+| MaxOccurrences              | @MaxOccurrences@ specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the @Repeat@ parameter, except when @Repeat@ is set to `Once`.      |
 
 **These variables should be set in the script running/calling this script.
 
 ## Output
+
 - Script logs

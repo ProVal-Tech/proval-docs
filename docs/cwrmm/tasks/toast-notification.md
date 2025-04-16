@@ -15,13 +15,16 @@ unlisted: false
 This task is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases. It is CW RMM implementation of the agnostic script [Invoke-ToastNotification.ps1](/docs/426118d9-ff83-444e-9744-30a0e26cb490).
 
 ## Sample Run
+
 ![Image1](../../../static/img/cw-rmm-task-toast-notification/Image1.png)
 ![Image2](../../../static/img/cw-rmm-task-toast-notification/Image2.png)
 
 ## Dependencies
+
 [Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
 
 ## User Parameters
+
 | Parameter                  | Example                         | Accepted Values             | Required | Default       | Type        | Description              |
 |----------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------|---------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NotificationType           | Generic                         | Generic<br /> PendingRebootUptime<br /> PendingRebootCheck<br /> ADPasswordExpiration                      | True     |               | Text        | The type of notification to send. The accepted values for NotificationType are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable.<br /><br />**Generic**: Enables a static, generic toast notification.<br /><br />**PendingRebootUptime**: Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.<br /><br />**PendingRebootCheck**: Displays a toast notification when a pending reboot is detected through the system registry or WMI.<br /><br />**ADPasswordExpiration**: Sends a toast notification to users when their Active Directory password is nearing expiration. |
@@ -41,7 +44,7 @@ This task is to create and manage toast notifications with customizable options,
 | ADPasswordExpirationDays   | 7                               |                             | False    | 7             | NumberValue | Number of days before password expiration when reminders should start. It is available for the `ADPasswordExpiration` NotificationType parameter. Default is 7 days.   |
 | Repeat                     | Once                            | Once, Hourly, XXMinutes, XXHours, Daily, XXDays.                  | False    | Once          | Text        | Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. |
 | NotificationAppName        | Connectwise RMM  |  | False    | Windows PowerShell          | Text        | Specifies the name of the application that will display the notification. |
-
+| MaxOccurrences        | 5  |  | False    |  | Number Values   | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once`. |
 
 **NOTE: For All String Parameters (Specifically for TitleText, BodyText1, and BodyText2)  
 Keep the message under 300 characters.  
@@ -363,7 +366,24 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![Parameter17](../../../static/img/cw-rmm-task-toast-notification/Parameter17.png)
 
-#### Parameters block: 
+#### MaxOccurrences
+
+Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
+
+![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+
+- Set `MaxOccurrences` in the `Parameter Name` field.
+
+- Select `Number Value` from the `Parameter Type` dropdown menu.
+
+- Click the `Save` button.
+
+- Click the `Confirm` button to create the parameter.
+
+![Parameter18](../../../static/img/cw-rmm-task-toast-notification/Parameter18.png)
+
+### Parameters block
+
 ![ParameterBlock](../../../static/img/cw-rmm-task-toast-notification/ParameterBlock.png)
 
 ### Task
@@ -382,7 +402,7 @@ Search and select the `PowerShell Script` function.
 
 ![F1Image1](../../../static/img/cw-rmm-task-toast-notification/F1Image1.png)
 
-The following function will pop up on the screen: 
+The following function will pop up on the screen:
 
 ![F1Image2](../../../static/img/cw-rmm-task-toast-notification/F1Imag2.png)
 
@@ -491,6 +511,12 @@ if ('@NotificationAppName@' -match '[0-9A-z]{1,}' -and (('@NotificationAppName@'
     $NotificationAppName = ''
 }
 
+if ('@MaxOccurrences@' -match '[0-9]{1,}' -and (('@MaxOccurrences@').length -ge 1) -and ('@MaxOccurrences@' -notmatch 'MaxOccurrences')) {
+    $MaxOccurrences = '@MaxOccurrences@'
+} else {
+    $MaxOccurrences = ''
+}
+
 $Parameters = @{
     TitleText = $TitleText
     BodyText1 = $BodyText1
@@ -510,6 +536,7 @@ if ($Deadline -ne '') { $parameters.Add('Deadline', $Deadline) }
 if ($MaxUptimeDays -ne '') { $parameters.Add('MaxUptimeDays', $MaxUptimeDays) }
 if ($ADPasswordExpirationDays -ne '') { $parameters.Add('ADPasswordExpirationDays', $ADPasswordExpirationDays) }
 if ($NotificationAppName -ne '') { $parameters.Add('NotificationAppName', $NotificationAppName) }
+if ($MaxOccurrences -ne '') { $parameters.Add('MaxOccurrences', $MaxOccurrences) }
 
 #region Setup - Variables
 $ProjectName = 'Invoke-ToastNotification'
@@ -562,7 +589,8 @@ if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     return $ErrorContent
 }
-Get-Content -Path $LogPath
+$logContent = Get-Content -path $LogPath
+$logContent[ $($($logContent.IndexOf($($logContent -match "$($ProjectName)$")[-1])) + 1)..$($logContent.length-1) ]
 ```
 
 ![F1Image3](../../../static/img/cw-rmm-task-toast-notification/F1Image3.png)

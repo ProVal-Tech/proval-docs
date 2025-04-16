@@ -11,21 +11,26 @@ unlisted: false
 ---
 
 ## Summary
+
 This is a copy-only template for clients to use to set up toast notifications. The script is a template with example variables. Ensure each variable is reviewed and adjusted as needed before incorporating them into a production script.
 
 ## Sample Run
+
 This Script is not intended to be run, it is intended to be a template that can be copied to any script that a toast notification is desired.
 
 ## Use Case
+
 Recommended steps to use Toast Notification:
-1. Open the `Toast Notification - Template` script in ConnectWise Automate
-2. Select all lines in the ELSE section of that script
-3. Paste these lines in any script where a toast notification is desired
-4. Enable any required lines and set the desired values.
+
+1. Open the `Toast Notification - Template` script in ConnectWise Automate  
+2. Select all lines in the ELSE section of that script  
+3. Paste these lines in any script where a toast notification is desired  
+4. Enable any required lines and set the desired values.  
 
 **NOTE:** Then Section of this script is intentionally left blank.
 
 ## Dependencies
+
 [Toast Notification](/docs/3aab837d-cb64-4669-aa35-040cce21c575)
 
 [Invoke-ToastNotification](/docs/426118d9-ff83-444e-9744-30a0e26cb490)
@@ -51,6 +56,7 @@ Recommended steps to use Toast Notification:
 | `MaxUptimeDays`             | `MaxUptimeDays` stores the maximum uptime (in days) for the PendingRebootUptime parameter. The default is 30 days. `MaxUptimeDays` is available for the `PendingRebootUptime` notification type. Delete the variable or leave it blank to fall back to the default value. |
 | `ADPasswordExpirationDays`  | `ADPasswordExpirationDays` stores the number of days before password expiration when reminders should start. The default is 7 days. `ADPasswordExpirationDays` is available for the `ADPasswordExpiration` notification type. Delete the variable or leave it blank to fall back to the default value. |
 | `Repeat`                    | `Repeat` specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. Delete the variable or leave it blank to fall back to the default value. The default is `Once`.      |
+| `MaxOccurrences`                    | `MaxOccurrences` specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once`.      |
 
 ## Example
 
@@ -75,8 +81,9 @@ Recommended steps to use Toast Notification:
 | 15  | MaxUptimeDays            | 0                                                                                                                                                   |
 | 16  | ADPasswordExpirationDays | 0                                                                                                                                                   |
 | 17  | Repeat                   | 60Minutes                                                                                                                                           |
+| 18  | MaxOccurrences           |                                                                                                                   |
 
-## Outcome
+### Outcome
 
 #### Notification
 
