@@ -4,7 +4,7 @@ slug: /685d8bef-ebda-40cb-a997-a7f9a208c837
 title: 'cPVAL Vulscan Discovery Agent - Exclude'
 title_meta: 'cPVAL Vulscan Discovery Agent - Exclude'
 keywords: ['rapid-fire', 'vulscan', 'discovery-agent', 'security', 'auto-deploy']
-description: 'Choose 'Yes' to exclude the Location/Device from the automatic Vulscan Discovery Agent deployment setup.'
+description: 'Choose Yes to exclude the Location/Device from the automatic Vulscan Discovery Agent deployment setup.'
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
