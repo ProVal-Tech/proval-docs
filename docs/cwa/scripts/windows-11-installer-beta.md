@@ -1,8 +1,8 @@
 ---
 id: 'a4668ce4-9788-47a9-bb3b-1997367803ad'
 slug: /a4668ce4-9788-47a9-bb3b-1997367803ad
-title: 'Windows 11 Installer (Beta)'
-title_meta: 'Windows 11 Installer (Beta)'
+title: 'Windows 11 Installer'
+title_meta: 'Windows 11 Installer'
 keywords: ['windows', 'install', 'upgrade', 'zip', 'iso', 'file', 'repository']
 description: 'This document provides a detailed guide on how to install Windows 11 from a target ZIP file or ISO, including sample runs and user parameters. It covers necessary dependencies and provides download links for the required files.'
 tags: ['installation', 'security', 'update', 'windows']
@@ -49,12 +49,11 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 ## Dependencies
 
 - If using the default file repository, the version of Windows being upgraded must be the US version.
-- file.provaltech.com must be fully whitelisted in all security systems.
-- windows-upgrader.exe must be whitelisted in all security systems.  
+- [file.provaltech.com](https://file.provaltech.com) must be fully whitelisted in all security systems.
+- [windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe) must be whitelisted in all security systems.  
 - [Solution : Windows 11 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)  
 
-
-#### User Parameters
+## User Parameters
 
 | Name        | Example                                                            | Required | Description                                                                                       |
 |-------------|--------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------|
@@ -66,4 +65,3 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 ## Output
 
 - Script log
-
