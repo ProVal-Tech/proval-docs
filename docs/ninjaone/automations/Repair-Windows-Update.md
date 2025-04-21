@@ -1,6 +1,6 @@
 ---
-id: 'e332f62-ee7a-4559-9672-ac936f5efb88'
-slug: /e332f62-ee7a-4559-9672-ac936f5efb88
+id: 'af4803eb-1542-42b3-9cbd-70353ec517ad'
+slug: /af4803eb-1542-42b3-9cbd-70353ec517ad
 title: 'Repair Windows Update'
 title_meta: 'Repair Windows Update'
 keywords:  ['Repair','Update','windows','DISM','SFCScan']
@@ -17,8 +17,11 @@ This is used to reset Windows update settings. It is not necessary that running 
 
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun](../../../static/img/NinjaOne-Repair-Windows-Update/image9.png)
 
 ## Dependencies
+[Repair-WindowsUpdate](<../../powershell/remove-pathvariable.md>)
+
 
 ## Parameters
 

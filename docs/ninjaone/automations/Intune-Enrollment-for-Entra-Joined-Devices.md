@@ -17,6 +17,12 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image4.png)
+
+## Requirements
+- Windows 10/11 device
+- PowerShell 5.1 or later
+- Azure AD joined status
 
 
 ## Automation Setup/Import
