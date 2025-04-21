@@ -57,7 +57,7 @@ The scripting window will open.
 Configure the `Create Script` section as follows:
 
 **Name:** `Deploy Vulscan Discovery Agent - Macintosh`  
-**Description:** `Vulscan Discovery Agent Installation Script for macOS via NinjaRMM.`
+**Description:** `Vulscan Discovery Agent Installation Script for macOS via NinjaRMM.`  
 **Categories:** `ProVal`  
 **Language:** `ShellScript`  
 **Operating System:** `Mac`  

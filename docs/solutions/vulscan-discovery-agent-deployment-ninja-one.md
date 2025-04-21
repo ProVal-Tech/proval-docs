@@ -70,7 +70,7 @@ Create the [Deploy Vulscan Discovery Agent - Windows Servers](/docs/256083db-4ee
 
 ### Step 5
 
-Create the [Deploy Vulscan Discovery Agent - Macintosh](/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0)illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
+Create the [Deploy Vulscan Discovery Agent - Macintosh](/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0) illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
 ![Image2](../../static/img/ninja-one-solution-vulscan-discovery-agent-deployment-ninja-one/image2.png)
 
 ## FAQ
