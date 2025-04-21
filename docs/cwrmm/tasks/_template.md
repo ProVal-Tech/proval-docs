@@ -66,6 +66,10 @@ A blank function will appear:
 
 #### Row 1 Function: `<Function Name>`
 
+## Save Task
+
+Click the `Save` button at the top-right corner of the screen to save the script.  
+![SaveButton](../../../static/img/cw-rmm-tasks-common-screenshots/savebutton.png)
 
 ## Completed Task
 
