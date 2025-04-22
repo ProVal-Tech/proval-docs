@@ -20,7 +20,7 @@ This is used to reset Windows update settings. It is not necessary that running 
 ![SampleRun](../../../static/img/NinjaOne-Repair-Windows-Update/image9.png)
 
 ## Dependencies
-[Repair-WindowsUpdate](<../../powershell/remove-pathvariable.md>)
+[Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 
 
 ## Parameters
