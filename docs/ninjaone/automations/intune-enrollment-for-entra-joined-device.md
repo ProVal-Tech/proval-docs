@@ -1,29 +1,32 @@
 ---
-id: 'd4be971c-ae79-4b69-bf32-0423e941f8e9'
-slug: /d4be971c-ae79-4b69-bf32-0423e941f8e9
+id: 'cb7d4be3-4602-4821-b41e-99fb22a63daa'
+slug: /cb7d4be3-4602-4821-b41e-99fb22a63daa
 title: 'Intune Enrollment for Entra Joined Devices'
 title_meta: 'Intune Enrollment for Entra Joined Devices'
-keywords: ['Intune','Entra','windows']
+keywords: ['intune', 'enrollment', 'entra', 'mdm', 'autoenrollmdm', 'deviceenroller']
 description: 'The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.'
-tags: ['windows']
-draft: False
+tags: ['azure', 'registry']
+draft: false
 unlisted: false
 ---
 
 ## Overview
-The script automates the Microsoft Intune enrollment process for Entra joined Windows devices
+
+The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.
+
+**Note:** The end machine may require a restart to complete the enrollment process.
 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)  
 ![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image4.png)
 
 ## Requirements
+
 - Windows 10/11 device
 - PowerShell 5.1 or later
 - Azure AD joined status
-
 
 ## Automation Setup/Import
 
@@ -40,7 +43,6 @@ Locate the `Add` button on the right-hand side of the screen, click on it and cl
 The scripting window will open.  
 ![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
 
-
 **Name:** `Intune Enrollment for Entra Joined Devices`  
 **Description:** `This automates the Microsoft Intune enrollment process for Entra joined Windows devices.`  
 **Categories:** `ProVal`  
@@ -51,8 +53,8 @@ The scripting window will open.
 
 ![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image3.png)
 
-
 Paste in the following PowerShell script into the Ninja One editor
+
 ```powershell
 #requires -Version 5
 #requires -RunAsAdministrator
@@ -142,7 +144,6 @@ return 'Success: Enrollment process completed. Please allow up to 15 minutes for
 
 ![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image1.png)
 
-
 ## Saving the Automation
 
 Click the Save button in the top-right corner of the screen to save your automation.  
@@ -152,8 +153,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
 
 ## Completed Automation
+
 ![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image2.png)
 
 ## Output
 
-- Activity Details  
+- Activity Details

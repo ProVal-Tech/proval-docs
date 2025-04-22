@@ -1,17 +1,19 @@
 ---
-id: 'af4803eb-1542-42b3-9cbd-70353ec517ad'
-slug: /af4803eb-1542-42b3-9cbd-70353ec517ad
+id: '03fadcab-9971-4d09-9acf-ea1e697133ef'
+slug: /03fadcab-9971-4d09-9acf-ea1e697133ef
 title: 'Repair Windows Update'
 title_meta: 'Repair Windows Update'
-keywords:  ['Repair','Update','windows','DISM','SFCScan']
-description: 'This is used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.'
-tags: ['windows']
-draft: False
+keywords: ['repair', 'windows', 'update', 'settings', 'script', 'dism', 'sfcscan']
+description: 'This document outlines a script designed to repair and reset Windows update settings, aiming to resolve potential patching issues on Windows devices. It details the script’s dependencies, global and user parameters, process, and expected output, including logging of successes and failures.'
+tags: ['performance', 'software', 'update', 'windows']
+draft: false
 unlisted: false
 ---
 
-## Overview
-This is used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.
+## Summary
+
+This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)  
+The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Sample Run
 
@@ -20,8 +22,8 @@ This is used to reset Windows update settings. It is not necessary that running 
 ![SampleRun](../../../static/img/NinjaOne-Repair-Windows-Update/image9.png)
 
 ## Dependencies
-[Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 
+[Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 
 ## Parameters
 
@@ -55,6 +57,7 @@ The scripting window will open.
 **Run As:** `System`  
 
 ![ScriptLogic](../../../static/img/NinjaOne-Repair-Windows-Update/image1.png)
+
 ```powershell
 #region parameters
 $SfcScan = $env:SfcScan
@@ -66,7 +69,7 @@ if ( $SfcScan -match '1|Yes|True' ) {
     $Parameters.Add('SfcScan', $true)
 }
 if ( $DISMRepair -match '1|Yes|True' ) {
-	$Parameters.Add('DISMRepair', $true)
+    $Parameters.Add('DISMRepair', $true)
 }
 #endregion
 #region Setup - Variables
@@ -111,7 +114,9 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 #endregion
 ```
+
 ![ScriptLogic](../../../static/img/NinjaOne-Repair-Windows-Update/image2.png)
+
 ## Script Variables
 
 Click the `Add` button next to `Script Variables`.  
@@ -153,6 +158,7 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
 
 ## Completed Automation
+
 ![CompleteTask](../../../static/img/NinjaOne-Repair-Windows-Update/image7.png)
 
 ## Output
