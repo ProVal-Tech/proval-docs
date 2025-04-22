@@ -1,6 +1,6 @@
 ---
-id: '03fadcab-9971-4d09-9acf-ea1e697133ef'
-slug: /03fadcab-9971-4d09-9acf-ea1e697133ef
+id: 'd7bb77e6-e7b8-45d2-9fa7-f109574aa887'
+slug: /d7bb77e6-e7b8-45d2-9fa7-f109574aa887
 title: 'Repair Windows Update'
 title_meta: 'Repair Windows Update'
 keywords: ['repair', 'windows', 'update', 'settings', 'script', 'dism', 'sfcscan']
