@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-The script automates the Microsoft Intune enrollment process for Entra joined Windows devices.
+The script automates the Microsoft Intune enrollment process for Entra joined Windows devices
 
 ## Sample Run
 
