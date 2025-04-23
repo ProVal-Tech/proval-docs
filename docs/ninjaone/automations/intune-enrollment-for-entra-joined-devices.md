@@ -17,10 +17,16 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 **Note:** The end machine may require a restart to complete the enrollment process.
 
 ## Sample Run
-
+Select any computer where you want to run the script. Then go to 
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)  
-![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image4.png)
+Search the script name and click on it:
+![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image4.png)  
+Click on `Run`:  
+![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image5.png)  
+Click on `Yes` to run the script
+![SampleRun](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+
 
 ## Requirements
 
@@ -149,7 +155,7 @@ return 'Success: Enrollment process completed. Please allow up to 15 minutes for
 Click the Save button in the top-right corner of the screen to save your automation.  
 ![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
 
-You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
+If you are prompted to enter your MFA code, provide the code and press the `Continue` button to finalize the process.   
 ![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
 
 ## Completed Automation
