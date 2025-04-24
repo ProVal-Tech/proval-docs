@@ -18,7 +18,7 @@ This monitor is also set up to grab the latest version of SonicWall NetExtender 
 
 ## Dependencies
 
-- [SWM - Software - Install/Update SonicWall NetExtender [Winget]](/docs/d7f9015f-0d7c-4bfb-b624-4600f4774b65)
+- [Script - SonicWall NetExtender - Install/Update](/docs/823c8e22-0b24-4cf9-9e25-4048d2973b98)
 - [SonicWall NetExtender - Latest Version [Winget]](/docs/5eca56c8-7035-41f7-b5d0-ef8d58bf532a)
 - [SonicWall NetExtender - Latest Version Detection](/docs/62ad1299-3e65-4bf7-a415-307fdf9a162c)
 
