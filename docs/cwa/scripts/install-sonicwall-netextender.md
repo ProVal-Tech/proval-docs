@@ -15,11 +15,13 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 ## Sample Run
 
-![SonicWall NetExtender Deployment](../../../static/img/docs/install-sonicwall-netextender/{C0E356E5-50CE-4121-91FA-86413384177B}.png)
+ [Monitor - SonicWall NetExtender - Install/Update](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e)
 
 ## Process
 
-This script installs/updates the latest version of the SonicWall NetExtender dynamically by fetching the latest version from the winget manifest and download that latest version from the URL.
+This script installs/updates the latest version of the SonicWall NetExtender dynamically by Winget using [Script - Winget - Install/Update](/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25) if the fresh installation is being performed on the agent.
+If the agent already have the SonicWall NetExtender installed then it first check if it is deployed using MSI or EXE.
+If installed using MSI then it updates using [Script - Winget - Install/Update](/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25) else if it is deployed using EXE then it perform installation by downloading the latest exe package from the site `https://www.sonicwall.com/products/remote-access/vpn-clients` by fetching the latest version from the winget manifest and download it.
 It has proper error handling to report success and failure.
 
 ## Output
