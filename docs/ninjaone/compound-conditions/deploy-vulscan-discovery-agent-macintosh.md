@@ -1,10 +1,10 @@
 ---
-id: 'efef6d5d-b853-46a5-8b7b-3d248a55e7a0'
-slug: /efef6d5d-b853-46a5-8b7b-3d248a55e7a0
-title: 'Duo Deployment - Macintosh'
-title_meta: 'Duo Deployment - Macintosh'
-keywords: ['duo', 'mfa', 'security', 'auto-deploy', 'agent-policy']
-description: 'Triggers the auto-deployment script for Duo on Macintosh machines where deployment is enabled.'
+id: '6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0'
+slug: /6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0
+title: 'Deploy Vulscan Discovery Agent - Macintosh'
+title_meta: 'Deploy Vulscan Discovery Agent - Macintosh'
+keywords: ['rapid-fire', 'vulscan', 'discovery-agent', 'security', 'auto-deploy', 'macintosh']
+description: 'Triggers the auto-deployment script for Vulscan Discovery Agent on Macintosh machines where deployment is enabled.'
 tags: ['security', 'software']
 draft: false
 unlisted: false
@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-Triggers the [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e864a0) automation on Macintosh machines where deployment is enabled.
+Triggers the [Deploy Vulscan Discovery Agent - Macintosh](/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7) automation on Macintosh machines where deployment is enabled.
 
 ## Details
 
-**Name:** `Duo Deployment - Macintosh`  
-**Description:** `Triggers the auto-deployment script for Duo on Macintosh machines where deployment is enabled.`  
+**Name:** `Deploy Vulscan Discovery Agent - Macintosh`  
+**Description:** `Triggers the auto-deployment script for the Vulscan Discovery Agent on Macintosh machines where deployment is enabled.`  
 
 **Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
 
@@ -26,9 +26,9 @@ Triggers the [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e8
 
 ## Dependencies
 
-- [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e864a0)
-- [cPVAL DUO Deployment](/docs/22469c4c-79f2-4a87-9650-f418f4327e07)  
-- [cPVAL DUO Deployment - Exclude](/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa)
+- [cPVAL Vulscan Discovery Agent Deployment](/docs/317af03f-eb40-4f3f-a0e7-0b1433f2c2e1)
+- [cPVAL Vulscan Discovery Agent - Exclude](/docs/685d8bef-ebda-40cb-a997-a7f9a208c837)
+- [Deploy Vulscan Discovery Agent - Macintosh](/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7)
 
 ## Compound Condition Creation
 
@@ -67,10 +67,10 @@ Select the `Software` option from the list that will appear after clicking the `
 
 Configure the `Add Software Condition` as follow:  
 
-**Software Name:** `Duo Authentication for macOS`  
+**Software Name:** `DiscoveryAgent`  
 **Trigger when:** `Any Software` `Doesn't exist`  
 
-![Image1](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image1.png)
+![Image1](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image1.png)
 
 **Note:** The Return key must be pressed after pasting the name to set the `Software Name`.
 
@@ -94,23 +94,11 @@ Click the `+ Add` button within the upper section labeled `Custom field value mu
 A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
 
-Search and select the `cPVAL DUO Deployment - Exclude` custom field.
+Search and select the `cPVAL Vulscan Discovery Agent - Exclude` custom field.
 
-**Condition:** `cPVAL DUO Deployment - Exclude` `does not equal` `Yes`
+**Condition:** `cPVAL Vulscan Discovery Agent - Exclude` `does not equal` `Yes`
 
-![Image2](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image2.png)
-
-Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
-![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
-
-A new row will be added upon clicking the `+ Add` button.  
-![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
-
-Search and select the `cPVAL DUO Deployment` custom field.
-
-**Condition:** `cPVAL DUO Deployment` `equals` `All`
-
-![Image3](../../../static/img/ninja-one-compound-condition-duo-deployment-windows-workstations/image3.png)
+![Image2](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-windows-workstations/image2.png)
 
 Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
 ![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
@@ -118,14 +106,26 @@ Click the `+ Add` button within the lower section labeled `Custom field value mu
 A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
 
-Search and select the `cPVAL DUO Deployment` custom field.
+Search and select the `cPVAL Vulscan Discovery Agent Deployment` custom field.
 
-**Condition:** `cPVAL DUO Deployment` `equals` `Macintosh`
+**Condition:** `cPVAL Vulscan Discovery Agent Deployment` `equals` `All`
 
-![Image2](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image2.png)
+![Image3](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-windows-workstations/image3.png)
+
+Click the `+ Add` button within the lower section labeled `Custom field value must meet ANY conditions`.  
+![AddButtonCustomFields](../../../static/img/ninja-one-compound-conditions-common-screenshots/addbuttoncustomfields.png)
+
+A new row will be added upon clicking the `+ Add` button.  
+![NewRow](../../../static/img/ninja-one-compound-conditions-common-screenshots/searchcustomfield.png)
+
+Search and select the `cPVAL Vulscan Discovery Agent Deployment` custom field.
+
+**Condition:** `cPVAL Vulscan Discovery Agent Deployment` `equals` `Macintosh`
+
+![Image2](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image2.png)
 
 Click the `Apply` button to save the `custom field` condition.  
-![Image3](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image3.png)
+![Image3](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image3.png)
 
 ## Automations
 
@@ -138,14 +138,14 @@ Click the `+ Add automation` button.
 `Automation Library` will appear upon clicking the `+ Add Automation` button. Note that existing automation library may vary across different environments. The provided screenshot is for demonstration purposes only.  
 ![AutomationLibrary](../../../static/img/ninja-one-compound-conditions-common-screenshots/automationlibrarymac.png)
 
-Search and select the [Duo Deployment - Macintosh](/docs/059819a5-8b95-40d1-ac89-b33858e864a0) script.  
-![Image4](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image4.png)
+Search and select the [Deploy Vulscan Discovery Agent - Macintosh](/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7) script.  
+![Image4](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image4.png)
 
 Click the `Apply` button to add the automation.  
-![Image5](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image5.png)
+![Image5](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image5.png)
 
 Completed Automation Section:  
-![Image8](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image8.png)
+![Image6](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image6.png)
 
 ## Settings
 
@@ -154,7 +154,7 @@ Navigate to `Settings` section.
 
 Set the `Settings` section as follows:  
 
-**Name:** `Duo Deployment - Macintosh`  
+**Name:** `Deploy Vulscan Discovery Agent - Macintosh`  
 **Auto Reset:**
 
 - **After:** `True` `1 hour`
@@ -163,7 +163,7 @@ Set the `Settings` section as follows:
 **Run Every:** `30 Minutes`  
 **Trigger uptime:** `False`  
 
-![Image6](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image6.png)
+![Image7](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image7.png)
 
 ## Notifications
 
@@ -174,7 +174,7 @@ Leave the `Notifications` section untouched.
 Click the `Apply` button at the bottom to save the compound condition.  
 ![Apply](../../../static/img/ninja-one-compound-conditions-common-screenshots/apply.png)
 
-![Image7](../../../static/img/ninja-one-compound-condition-duo-deployment-macintosh/image7.png)
+![Image8](../../../static/img/ninja-one-compound-condition-deploy-vulscan-discovery-agent-macintosh/image8.png)
 
 ## Saving Agent Policy
 
