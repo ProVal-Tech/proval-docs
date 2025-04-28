@@ -26,7 +26,7 @@ This is a CW RMM implementation of the agnostic script [Add-WifiProfile](/docs/6
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic Script - Add-WifiProfile](/docs/6e1f420f-5a5a-49e1-a7cc-943e258d2ae5)
+[Add-WifiProfile](/docs/6e1f420f-5a5a-49e1-a7cc-943e258d2ae5)
 
 ## User Parameters
 
@@ -203,9 +203,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```powershell
 [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingConvertToSecureStringWithPlainText', '')]
 [CmdletBinding()]
-Param()
 # # Parameters and Globals
-# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $profileName = '@profileName@'
 if ( '@ConnectionMode@' -notin ( 'Manual', 'Auto' ) ) {
     throw "ConnectionMode can either be 'Manual' or 'Auto'."
@@ -233,7 +231,6 @@ if ( '@overwrite@' -match '1|Yes|True|Y') {
 } else {
     $overwrite = $false
 }
-
 $Parameters = @{
     ProfileName = $profileName
     ConnectionMode = $ConnectionMode
@@ -243,7 +240,6 @@ $Parameters = @{
     connectHiddenSSID = $connectHiddenSSID
     overwrite = $overwrite
 }
-
 #region Setup - Variables
 $ProjectName = 'Add-WifiProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
@@ -275,7 +271,6 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-
 if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
