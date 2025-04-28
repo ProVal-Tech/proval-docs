@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
+This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)  
 The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Sample Run
