@@ -16,7 +16,11 @@ The solution aims to identify Windows 10 computers that are compatible with Wind
 
 **Note:** The solution employs a policy and package to automatically upgrade compatible Windows 10 computers. In cases where the upgrade policy fails, the [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a) task can serve as a backup script to facilitate the upgrade.
 
-## Upgrade Notice: 9-November-2024
+## Update Notice: 21-April-2024
+
+The [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a) task has been added as an alternative solution for machines where the primary upgrade process encounters failures.
+
+## Update Notice: 9-November-2024
 
 The solution has been updated to use a policy for the Windows 10 to Windows 11 upgrade. Remove the following content before going through the solution:
 
@@ -28,7 +32,7 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 
 ## Associated Content
 
-#### Custom Fields
+### Custom Fields
 
 | Content | Type | Level | Function |
 | ------- | ---- | ----- | -------- |
@@ -38,7 +42,7 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 | [Windows 11 Compatible](/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf) | Dropdown | Endpoint | `Yes`: Compatible. `No`: Incompatible. `NA`: Not Checked yet. Updated by the [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task. |
 | [Windows 11 Incompatibility Base](/docs/7894870c-b7e8-44e0-806c-c948f151fc49) | Text Box | Endpoint | Stores the result returned by the [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task for the incompatible machines. |
 
-#### Device Groups
+### Device Groups
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
@@ -47,29 +51,30 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 | [Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) | Dynamic | A group of Windows 10 machines that are compatible with Windows 11 installation and upgrade, enabled through the custom fields. |
 | [Windows 11 Incompatible Machines](/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68) | Dynamic | A group of Windows 10 computers that are not compatible with Windows 11. |
 
-#### Tasks
+### Tasks
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
 | [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) | Script Editor | Verifies if a Windows 10 PC is compatible with Windows 11. Scheduled to run monthly against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a). |
 
-#### Policies
+### Policies
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
 | [Install Windows 11](/docs/4664a942-cb4f-425a-ae16-4615d2b14cae) | OS Patching Desktop | Policy to enable Windows 11 installation for Windows 10 machines. |
 
-#### Packages
+### Packages
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
 | [Install Windows 11](/docs/9d9148ad-26f7-45c6-ab6a-37e85dc259e8) | Policy Group | Enables Windows 11 installation for compatible Windows 10 computers. |
 
-#### Optional Tasks
+### Optional Tasks
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
 | [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a) | Script Editor | This task can be used as a backup plan in case of Windows 11 installation policy failure. Installs Windows 11 on a compatible Windows 10 computer. The default nature of the script is to restart the computer to complete the upgrade. However, the `NoReboot` parameter provides an option to suppress the reboot. The computer should be rebooted at the earliest convenience to complete the upgrade. |
+| [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a) | Script Editor | This task has been added as an alternative solution for machines where the primary upgrade process encounters failures. |
 
 ## Implementation
 
@@ -89,8 +94,9 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 3. Create and deploy the following task:
    - [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c)
 
-4. Create the following optional task:
+4. Create the following optional tasks:
    - [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a)
+   - [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a)
 
 5. Create the following policy:
    - [Install Windows 11](/docs/4664a942-cb4f-425a-ae16-4615d2b14cae)
