@@ -205,6 +205,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 [CmdletBinding()]
 Param()
 # # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $profileName = '@profileName@'
 if ( '@ConnectionMode@' -notin ( 'Manual', 'Auto' ) ) {
     throw "ConnectionMode can either be 'Manual' or 'Auto'."
@@ -242,16 +243,17 @@ $Parameters = @{
     connectHiddenSSID = $connectHiddenSSID
     overwrite = $overwrite
 }
+
 #region Setup - Variables
 $ProjectName = 'Add-WifiProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -273,6 +275,7 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
+
 if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }

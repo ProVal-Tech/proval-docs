@@ -66,24 +66,23 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the expected time of script execution set to `900` seconds. Click the `Save` button.
 
-```
+```powershell
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 #region Setup - Variables
 $URL = 'https://file.provaltech.com/repo/app/BISNotification.exe'
-$WorkingDirectory = 'C:\\ProgramData\\_automation\\app\\BISNotification'
-$EXEPath = "$WorkingDirectory\\BISNotification.exe"
+$WorkingDirectory = 'C:\ProgramData\_automation\app\BISNotification'
+$EXEPath = "$WorkingDirectory\BISNotification.exe"
 #endregion
 
 #region Setup - Folder Structure
-if (!(Test-Path $WorkingDirectory)) {
+if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
         return "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
-}
-if (-not ((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl') {
-    $Acl = Get-Acl $WorkingDirectory
+} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
@@ -113,8 +112,8 @@ if ($Phone -match '[0-9]') {
 $TaskName = 'BIS Notification'
 $Description = 'Running BIS Notification app to send the prompt'
 $ProjectName = 'BISNotification'
-$WorkingDirectory = "C:\\ProgramData\\_automation\\app\\$ProjectName"
-$TaskFile = "$WorkingDirectory\\$ProjectName.exe"
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+$TaskFile = "$WorkingDirectory\$ProjectName.exe"
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
 
 if ($TaskCheck) {
@@ -122,7 +121,7 @@ if ($TaskCheck) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 
-if ($Parameter -notmatch '-') {
+if ($Parameter -notmatch '-' ) {
     $Action = New-ScheduledTaskAction -Execute $TaskFile
 } else {
     $Action = New-ScheduledTaskAction -Execute $TaskFile -Argument $Parameter
