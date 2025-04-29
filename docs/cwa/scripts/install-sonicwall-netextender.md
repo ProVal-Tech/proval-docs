@@ -5,7 +5,7 @@ title: 'SonicWall NetExtender - Install/Update'
 title_meta: 'SonicWall NetExtender - Install/Update'
 keywords: ['SonicWall', 'NetExtender', 'Application']
 description: 'This script installs/updates the latest version of the SonicWall NetExtender dynamically.'
-tags: ['SonicWall', 'NetExtender', 'Application']
+tags: ['SonicWall', 'NetExtender', 'Application', 'Deployment', 'Update', 'Install']
 draft: false
 unlisted: false
 ---
