@@ -53,8 +53,9 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 4. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_5.png)
-   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
+   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_5.png)  
+
+     ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
 
 5. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
@@ -96,11 +97,11 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 | Name                                     | Type      | Section             | Description                                                                                                                                                                                                                                        |
 |------------------------------------------|-----------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2a. Exclude from New Domain Admin Monitor | Check Box | Domain Admin Account | Selecting this Extra Data Field (EDF) will exclude the client from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the domain controllers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the client. |
+| 2a. Exclude from New Domain Admin Monitor | Check Box | Domain Admin Account | Selecting this Extra Data Field (EDF) will exclude the client from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the domain controllers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the client.  <br/><br/>  ![Client](../../../static/img/New-Domain-Admin-Monitor---Create/image29.png) |
 | 2b. Excluded_Users                       | Check Box | Domain Admin Account | This EDF stores the usernames to exclude from generating the new domain admin-detected tickets.  <br/><br/> The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NDA_Monitoring_Excluded_Users` system property.  <br/> <br/> The username stored in the  `1b. Domain Admin UserName` EDF will be excluded from the remote monitor if the Windows Domain Admin Process solution is enabled on the DC and it is using the username stored in the EDF. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image24.png)  <br/> <br/> <u>**Note:**</u> Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`|
 
 
-![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image25.png)
+![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image30.png)
 
 ## Computer-Level EDF
 
@@ -115,11 +116,11 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 **Name:** `ProVal - Production - New Domain Admin Monitor`
 
-**Ticket Subject:** `New Domain Admin Detected at \\<DOMAIN NAME>`
+**Ticket Subject:** `New Domain Admin Detected at <DOMAIN NAME>`
 
 **Alert Message on Failure:**  
-`New Domain Admin(s) Detected at \\<DOMAIN NAME> for %CLIENTNAME%.`  
-`\\<Newly Created Domain Admin(s)>`
+`New Domain Admin(s) Detected at <DOMAIN NAME> for %CLIENTNAME%.`  
+`<Newly Created Domain Admin(s)>`
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/New-Domain-Admin-Monitor---Create/image_9.png)  
@@ -127,7 +128,9 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 **Sample Remote Monitor:**  
 ![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_10.png)  
+
 ![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_11.png)  
+
 ![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_12.png)  
 
 ## Output
