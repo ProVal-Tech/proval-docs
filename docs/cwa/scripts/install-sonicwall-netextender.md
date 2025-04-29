@@ -21,7 +21,8 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 ## Dependencies
 
- [Monitor - SonicWall NetExtender - Install/Update](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e)
+ [Monitor - SonicWall NetExtender - Update](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e)  
+ [Solution - SonicWall NetExtender - Install/Update](/docs/70d9b103-f73f-4e68-a4aa-d2651e44d09a)
 
 ## Process
 
