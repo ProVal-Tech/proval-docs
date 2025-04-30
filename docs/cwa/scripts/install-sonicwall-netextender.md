@@ -3,9 +3,9 @@ id: '823c8e22-0b24-4cf9-9e25-4048d2973b98'
 slug: /823c8e22-0b24-4cf9-9e25-4048d2973b98
 title: 'SonicWall NetExtender - Install/Update'
 title_meta: 'SonicWall NetExtender - Install/Update'
-keywords: ['SonicWall', 'NetExtender', 'Application']
+keywords: ['sonicwall', 'netextender', 'application']
 description: 'This script installs/updates the latest version of the SonicWall NetExtender dynamically.'
-tags: ['SonicWall', 'NetExtender', 'Application', 'Deployment', 'Update', 'Install']
+tags: ['sonicwall', 'application', 'deployment', 'update', 'install']
 draft: false
 unlisted: false
 ---

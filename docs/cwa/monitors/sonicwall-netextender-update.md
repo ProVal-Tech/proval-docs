@@ -5,7 +5,7 @@ title: 'SonicWall NetExtender - Update'
 title_meta: 'ProVal - Production - SonicWall NetExtender - Update'
 keywords: ['sonicwall', 'netextender', 'monitor', 'upgrade', 'deployment', 'edf', 'version']
 description: 'This document outlines the setup of an internal monitor for detecting the online Windows agent with SonicWall NetExtender installed, facilitating upgrades and excluding specific locations or agents as needed. It details dependencies and integration with other monitors for effective management.'
-tags: ['deployment', 'sonicwall', 'netextender']
+tags: ['deployment', 'sonicwall']
 draft: false
 unlisted: false
 ---

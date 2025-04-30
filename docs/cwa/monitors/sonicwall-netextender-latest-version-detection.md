@@ -5,7 +5,7 @@ title: 'SonicWall NetExtender - Latest Version Detection'
 title_meta: 'SonicWall NetExtender - Latest Version Detection'
 keywords: ['sonicwall', 'netextender', 'monitor', 'version', 'update']
 description: 'This document outlines a monitor that schedules a script to collect the latest version details of the SonicWall NetExtender application monthly, updating the system properties without deploying the application itself. It is designed for Windows 10/11 workstations with a patch policy.'
-tags: ['software', 'update', 'windows', 'sonicwall', 'netextender']
+tags: ['software', 'update', 'windows', 'sonicwall']
 draft: false
 unlisted: false
 ---
