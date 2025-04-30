@@ -31,7 +31,7 @@ This DataView will display basic information related to folder redirection on en
 | Operating System            | This stores the operating system name of the agent                   |
 | LastContact    | This shows the agent LastContact status with the CW Automate      |
 | FolderName          | Stores the name of the folder that was redirected                 |
-| Redirected_Path  | Stores the path where the folder was redirected for a user on the computer   |
+| Redirection_Path  | Stores the path where the folder was redirected for a user on the computer   |
 | ScriptRanDate           | Stores the date and time when the folder redirection was last detected by the [Script - Folder Redirection Detection [DV]](/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69)                  |
 
 
