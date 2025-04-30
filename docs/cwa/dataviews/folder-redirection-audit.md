@@ -16,8 +16,9 @@ This DataView will display basic information related to folder redirection on en
 
 ## Dependencies
 
-[Script - Folder Redirection Detection [DV]](/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69)
-[Table - pvl_folder_redirection_audit](/docs/1c5bd6c3-ed3e-49df-884c-b3cd6c90f629)
+[Script - Folder Redirection Detection [DV]](/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69)  
+[Table - pvl_folder_redirection_audit](/docs/1c5bd6c3-ed3e-49df-884c-b3cd6c90f629)  
+[Solution - Folder Redirection Audit](/docs/37f95f1c-ee3e-43d5-a530-ab5023fec2c5) 
 
 ## Columns
 
