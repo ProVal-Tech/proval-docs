@@ -146,7 +146,7 @@ Add a logic If/Else/Then by clicking the Add Logic button:
 
 #### Row 6a Condition: Custom Field Contains
 
-In the IF part, enter **-** in the right box for the Custom Field "Ninja_Org_ID" contains part.  
+In the IF part, enter `-` in the right box for the Custom Field "Ninja_Org_ID" contains part.  
 
 ![Row 6 A](../../../static/img/docs/rmm-ninja-migration-mac/{F6C604B8-5412-4AC6-AD7F-1B4A9876FFE8}.png)
 
@@ -203,7 +203,7 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 #### Row 6c(iii) Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row in the `IF` part by clicking on the Add row button.  
 
 ![Add Row 3](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}-1.png)
 
@@ -231,7 +231,7 @@ In the script log message, simply type `%Output%` and click the `Save` button.
 
 #### Row 6e Function: Set Custom Field
 
-Add a new row by clicking the `Add Row` button.
+Add a new row by clicking the `Add Row` button after `END IF`.
 
 ![Add Row 7](../../../static/img/docs/rmm-ninja-migration-mac/image-24.png)
 
@@ -257,7 +257,7 @@ In the script exit message, leave blank
 
 #### Row 6g - Else Section
 
-#### Row 6g Logic: If/Else
+#### Row 6g Logic: If/Then
 
 Add a logic If/Then by clicking the Add Logic button:
 
@@ -297,7 +297,7 @@ Limit the bash file to run on `Mac` machines only.
 
 #### Row 6h Logic: If/Then
 
-Add a logic If/Else by clicking the Add Logic button
+Add a logic If/Then by clicking the Add Logic button
 
 ![Logic If/Then](../../../static/img/docs/rmm-ninja-migration-mac/image-14.png)
 
@@ -337,7 +337,7 @@ In the script exit message, simply type `The Ninja Deployment failed on the Mac 
 
 #### Row 6i Function: Script Log
 
-Add a new row by clicking the `Add Row` button.
+After `END IF` add a new row by clicking the `Add Row` button.
 
 ![Add Row 5](../../../static/img/docs/rmm-ninja-migration-mac/image-20.png)
 
@@ -381,7 +381,7 @@ In the script exit message, leave blank
 
 #### Row 7 Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the `Add row` after `END IF` button.  
 
 ![Add Row 8](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}.png)
 

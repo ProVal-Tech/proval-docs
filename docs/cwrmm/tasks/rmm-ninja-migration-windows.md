@@ -242,7 +242,7 @@ In the IF part, enter `An error occurred` in the right box of the "Output Contai
 
 #### Row 7b Function: Set Custom Field
 
-Add a new row by clicking the `Add Row` button.
+Add a new row in the IF part by clicking the `Add Row` button.
 
 ![Add Row 1](../../../static/img/docs/rmm-ninja-migration-windows/image-8.png)
 
@@ -258,7 +258,7 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 #### Row 7c Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+In the IF part, add a new row by clicking on the Add row button.  
 
 ![Add Row 3](../../../static/img/docs/rmm-ninja-migration-windows/image-11.png)
 
@@ -268,7 +268,7 @@ In the script exit message, simply type `The Ninja deployment failed. Refer to t
 
 #### Row 8 Function: Script Log
 
-Add a new row by clicking the `Add Row` button.
+Add a new row by clicking the `Add Row` button after `END IF`
 
 ![Add Row 5](../../../static/img/docs/rmm-ninja-migration-windows/image-12.png)
 
