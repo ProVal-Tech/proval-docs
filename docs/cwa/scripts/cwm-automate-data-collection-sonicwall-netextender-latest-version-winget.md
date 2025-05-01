@@ -22,7 +22,7 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 
 | Name                          | Example   | Required | Description                                                                                      |
 |-------------------------------|-----------|----------|--------------------------------------------------------------------------------------------------|
-| SonicWall_Netextender_Version | 10.2.331 | True     | This system property stores the latest version of SonicWall NetExtender, which was fetched by this script. |
+| SonicWall.NetExtender | 10.3.2 | True     | This system property stores the latest version of SonicWall NetExtender, which was fetched by this script. |
 
 ## Output
 
