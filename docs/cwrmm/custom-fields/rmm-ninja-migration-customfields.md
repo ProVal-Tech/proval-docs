@@ -5,7 +5,7 @@ title: 'CW RMM - Ninja Migration Custom fields'
 title_meta: 'CW RMM - Ninja Migration Custom fields'
 keywords: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
 description: 'This document contains the custom fields that are used in the CW RMM to Ninja migration'
-tags: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
+tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
 ---
@@ -42,4 +42,4 @@ Provide the values as provided in the details section to the custom fields requi
 
 ## Completed Custom Field
 
-![Complete custom field](../../../static/img/docs/rmm-ninja-migration-customfields/{146463ED-7592-4A4D-AD9E-F7C31CA94E1F}.png)
+![Complete](../../../static/img/docs/rmm-ninja-migration-customfields/image.png)

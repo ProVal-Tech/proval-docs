@@ -5,14 +5,14 @@ title: 'NinjaRMM Deployment - [MAC]'
 title_meta: 'NinjaRMM Deployment - [MAC]'
 keywords: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Agent', 'Install']
 description: 'This script deploys the NinjaRMMAgent to MAC OS, based on the article provided below: https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization. It depends on the Authorization token, which will be kept in the company or site custom fields.'
-tags: ['RMM', 'Ninja', 'Migration', 'MAC']
+tags: ['macos', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 This script deploys the NinjaRMMAgent to MAC OS, based on the article provided below:
-https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization.
+[Agent Installation Tokenization](https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization).
 It depends on the Authorization token, which will be kept in the company or site custom fields.
 
 ## Sample Run
@@ -52,7 +52,7 @@ https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Ins
 It depends on the Authorization token, which will be kept in the company or site custom fields.`  
 **Category:** `Application`
 
-![Script Detail](../../../static/img/docs/rmm-ninja-migration-mac/{68CAB065-F31D-4848-8ADD-C903E8AC7E5A}.png)
+![Detail](../../../static/img/docs/rmm-ninja-migration-mac/image-27.png)
 
 ### Script Editor
 
@@ -78,7 +78,7 @@ Custom Field: `Ninja Deployment Enable`
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Enable](../../../static/img/docs/rmm-ninja-migration-mac/{4D4F7827-9FC7-4DAB-9637-A8988CCDFF86}.png)
+![Deployment](../../../static/img/docs/rmm-ninja-migration-mac/image-28.png)
 
 #### Row 2 Function: `Pre-defined Variable`
 
@@ -92,7 +92,7 @@ Custom Field: `Ninja Deployment Exclude`
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Exclude Location](../../../static/img/docs/rmm-ninja-migration-mac/{091347DA-7E7A-4B4D-94DC-FF4F96770323}.png)
+![Deployment ExL](../../../static/img/docs/rmm-ninja-migration-mac/image-30.png)
 
 #### Row 3 Function: `Pre-defined Variable`
 
@@ -106,7 +106,7 @@ Custom Field: `Ninja Deployment Exclude`
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Exclude Computer](../../../static/img/docs/rmm-ninja-migration-mac/{7A2DC246-22CD-4E4E-B394-5706ED070FC3}.png)
+![Deployment ExC](../../../static/img/docs/rmm-ninja-migration-mac/image-29.png)
 
 #### Row 4 Function: `Pre-defined Variable`
 
@@ -120,7 +120,7 @@ Custom Field: `Ninja_Org_ID`
 
 After clicking on Save the Pre-defined will show data as:
 
-![Org ID](../../../static/img/docs/rmm-ninja-migration-mac/{02576813-CB67-4DAE-B36C-9DF030BBD9AB}.png)
+![Org ID](../../../static/img/docs/rmm-ninja-migration-mac/image-31.png)
 
 #### Row 5 Function: `Pre-defined Variable`
 
@@ -134,7 +134,7 @@ Custom Field: `Ninja_Site_ID`
 
 After clicking on Save the Pre-defined will show data as:
 
-![Loc ID](../../../static/img/docs/rmm-ninja-migration-mac/{1682DB43-4D8B-456E-B06A-5859FBCECF90}.png)
+![Loc ID](../../../static/img/docs/rmm-ninja-migration-mac/image-32.png)
 
 
 #### Row 6 Logic: If/Then/Else
@@ -148,14 +148,14 @@ Add a logic If/Else/Then by clicking the Add Logic button:
 
 In the IF part, enter `-` in the right box for the Custom Field "Ninja_Org_ID" contains part.  
 
-![Row 6 A](../../../static/img/docs/rmm-ninja-migration-mac/{F6C604B8-5412-4AC6-AD7F-1B4A9876FFE8}.png)
+![Row 6A](../../../static/img/docs/rmm-ninja-migration-mac/image-33.png)
 
 
 #### Row 6b Function: Bash Script
 
 Add another row and select the `Bash Script` function.
 
-![Bash Script 1](../../../static/img/docs/rmm-ninja-migration-mac/{FB2AF02D-5D99-47FF-80A9-4F90813EFADE}.png)
+![Bash](../../../static/img/docs/rmm-ninja-migration-mac/image-34.png)
 
 The following function will pop up on the screen:
 
@@ -167,11 +167,11 @@ Paste in the following Bash script and leave the expected time of script executi
 sudo curl https://app.ninjarmm.com/ws/api/v2/generic-installer/NinjaOneAgent-x64.pkg -L --output /tmp/NinjaOneAgent-x64.pkg && sudo sh -c 'echo "@OrgID@" > /tmp/.~' && sudo installer -pkg /tmp/NinjaOneAgent-x64.pkg -target / && echo "Installation successful." || { echo "Failed to install Ninja RMM agent."; exit 1; }
 ```
 
-![Bash Script Execution](../../../static/img/docs/rmm-ninja-migration-mac/{05DCEBF5-00D8-41A9-81D3-8513035108C9}.png)
+![Bash Script](../../../static/img/docs/rmm-ninja-migration-mac/image-35.png)
 
 Limit the bash file to run on `Mac` machines only.
 
-![Bash Script Limit](../../../static/img/docs/rmm-ninja-migration-mac/{E558E5F7-50AC-459D-880F-373D8E6922EC}.png)
+![Limit](../../../static/img/docs/rmm-ninja-migration-mac/image-36.png)
 
 #### Row 6c Logic: If/Then
 
@@ -183,7 +183,7 @@ Limit the bash file to run on `Mac` machines only.
 
 In the IF part, enter `Failed to install Ninja` in the right box of the "Output Contains" part.  
 
-![Condition](../../../static/img/docs/rmm-ninja-migration-mac/{425E65C8-546A-4145-8BEE-86EBF572C03E}.png)
+![Condition](../../../static/img/docs/rmm-ninja-migration-mac/image-37.png)
 
 #### Row 6c(ii) Function: Set Custom Field
 
@@ -199,17 +199,17 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 ![Set Custom field 2](../../../static/img/docs/rmm-ninja-migration-mac/image-18.png)
 
-![Set Custom field 3](../../../static/img/docs/rmm-ninja-migration-mac/{23A1DB78-B0FD-495C-AD61-5D7D46C84D1A}.png)
+![Custom field 3](../../../static/img/docs/rmm-ninja-migration-mac/image-38.png)
 
 #### Row 6c(iii) Function: Script Exit
 
 Add a new row in the `IF` part by clicking on the Add row button.  
 
-![Add Row 3](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}-1.png)
+![Add Row 3](../../../static/img/docs/rmm-ninja-migration-mac/image-39.png)
 
 In the script exit message, simply type `The Ninja Deployment failed on the Mac Agent. Refer to the logs: %output%`  
 
-![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/{386A99AF-7A9D-416D-9ED0-68DFFA267F44}.png)
+![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/image-40.png)
 
 #### Row 6d Function: Script Log
 
@@ -219,7 +219,7 @@ Add a new row by clicking the `Add Row` button.
 
 Search and select the `Script Log` function.
 
-![Script Log](../../../static/img/docs/rmm-ninja-migration-mac/{4F78BEC9-CE53-4E42-9DF8-C01F78995CA1}.png)
+![Script Log](../../../static/img/docs/rmm-ninja-migration-mac/image-41.png)
 
 The following function will pop up on the screen:
 
@@ -243,17 +243,16 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 ![Set custom field value](../../../static/img/docs/rmm-ninja-migration-mac/image-25.png)
 
-![Set Custom field 3](../../../static/img/docs/rmm-ninja-migration-mac/{2F2A720E-6FEB-43E2-9265-B35FED4E2ADB}.png)
-
+![Success](../../../static/img/docs/rmm-ninja-migration-mac/image-42.png)
 #### Row 6f Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
 
-![Add Row 8](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}.png)
+![6f Image](../../../static/img/docs/rmm-ninja-migration-mac/image-43.png)
 
 In the script exit message, leave blank
 
-![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/{46958F1E-BF78-4BAA-BF5D-7C91D98965B1}.png)
+![Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/image-44.png)
 
 #### Row 6g - Else Section
 
@@ -270,14 +269,14 @@ Add a logic If/Then by clicking the Add Logic button:
 
 In the IF part, enter **-** in the right box for the Custom Field "Ninja_Site_ID" contains part.  
 
-![Site ID](../../../static/img/docs/rmm-ninja-migration-mac/{94761431-A533-48D8-A7BA-D3EC4D672383}.png)
+![Site ID](../../../static/img/docs/rmm-ninja-migration-mac/image-45.png)
 
 
 #### Row 6g (ii) Function: Bash Script
 
 Add another row and select the `Bash Script` function.
 
-![Bash Script 1](../../../static/img/docs/rmm-ninja-migration-mac/{FB2AF02D-5D99-47FF-80A9-4F90813EFADE}.png)
+![Bash Script](../../../static/img/docs/rmm-ninja-migration-mac/image-46.png)
 
 The following function will pop up on the screen:
 
@@ -289,11 +288,11 @@ Paste in the following Bash script and leave the expected time of script executi
 sudo curl https://app.ninjarmm.com/ws/api/v2/generic-installer/NinjaOneAgent-x64.pkg -L --output /tmp/NinjaOneAgent-x64.pkg && sudo sh -c 'echo "@LocID@" > /tmp/.~' && sudo installer -pkg /tmp/NinjaOneAgent-x64.pkg -target / && echo "Installation successful." || { echo "Failed to install Ninja RMM agent."; exit 1; }
 ```
 
-![Bash Script Execution](../../../static/img/docs/rmm-ninja-migration-mac/{4C9909C8-60CF-4517-9F66-F7C0A55893AD}.png)
+![Bash cmd](../../../static/img/docs/rmm-ninja-migration-mac/image-47.png)
 
 Limit the bash file to run on `Mac` machines only.
 
-![Bash Script Limit](../../../static/img/docs/rmm-ninja-migration-mac/{E558E5F7-50AC-459D-880F-373D8E6922EC}.png)
+![LimitMac](../../../static/img/docs/rmm-ninja-migration-mac/image-48.png)
 
 #### Row 6h Logic: If/Then
 
@@ -307,7 +306,7 @@ Add a logic If/Then by clicking the Add Logic button
 
 In the IF part, enter `Failed to install Ninja` in the right box of the "Output Contains" part.  
 
-![Condition](../../../static/img/docs/rmm-ninja-migration-mac/{425E65C8-546A-4145-8BEE-86EBF572C03E}.png)
+![Condition](../../../static/img/docs/rmm-ninja-migration-mac/image-49.png)
 
 #### Row 6h(ii) Function: Set Custom Field
 
@@ -323,17 +322,17 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 ![Set Custom field 2](../../../static/img/docs/rmm-ninja-migration-mac/image-18.png)
 
-![Set Custom field 3](../../../static/img/docs/rmm-ninja-migration-mac/{23A1DB78-B0FD-495C-AD61-5D7D46C84D1A}.png)
+![Failed Value](../../../static/img/docs/rmm-ninja-migration-mac/image-50.png)
 
 #### Row 6h(iii) Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
 
-![Add Row 3](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}-1.png)
+![Add Row 5](../../../static/img/docs/rmm-ninja-migration-mac/image-51.png)
 
 In the script exit message, simply type `The Ninja Deployment failed on the Mac Agent. Refer to the logs: %output%`  
 
-![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/{386A99AF-7A9D-416D-9ED0-68DFFA267F44}.png)
+![Exit Msg](../../../static/img/docs/rmm-ninja-migration-mac/image-52.png)
 
 #### Row 6i Function: Script Log
 
@@ -343,7 +342,7 @@ After `END IF` add a new row by clicking the `Add Row` button.
 
 Search and select the `Script Log` function.
 
-![Script Log](../../../static/img/docs/rmm-ninja-migration-mac/{4F78BEC9-CE53-4E42-9DF8-C01F78995CA1}.png)
+![Script Log Function](../../../static/img/docs/rmm-ninja-migration-mac/image-53.png)
 
 The following function will pop up on the screen:
 
@@ -367,27 +366,27 @@ Search and select `Ninja Deployment Result` in the `Search Custom Field` field, 
 
 ![Set custom field value](../../../static/img/docs/rmm-ninja-migration-mac/image-25.png)
 
-![Set Custom field 3](../../../static/img/docs/rmm-ninja-migration-mac/{2F2A720E-6FEB-43E2-9265-B35FED4E2ADB}.png)
+![Success CF](../../../static/img/docs/rmm-ninja-migration-mac/image-54.png)
 
 #### Row 6k Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
 
-![Add Row 8](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}.png)
+![Script Exit](../../../static/img/docs/rmm-ninja-migration-mac/image-55.png)
 
 In the script exit message, leave blank
 
-![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/{46958F1E-BF78-4BAA-BF5D-7C91D98965B1}.png)
+![Blank](../../../static/img/docs/rmm-ninja-migration-mac/image-56.png)
 
 #### Row 7 Function: Script Exit
 
 Add a new row by clicking on the `Add row` after `END IF` button.  
 
-![Add Row 8](../../../static/img/docs/rmm-ninja-migration-mac/{9695FBD5-5278-402C-AB6E-DED5523C7353}.png)
+![Row 8](../../../static/img/docs/rmm-ninja-migration-mac/image-57.png)
 
 In the script exit message write, `The Ninja_Org_ID and Ninja_Site_ID both are empty. The script needs the authorization token for its working.`
 
-![Script Exit Message](../../../static/img/docs/rmm-ninja-migration-mac/{4F9F8FEB-4FD7-4DBB-9B7F-2706EED18802}.png)
+![Script Exit Msg](../../../static/img/docs/rmm-ninja-migration-mac/image-58.png)
 
 
 ## Save Task
@@ -397,9 +396,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Completed Task
 
-![Complete Task 1](../../../static/img/docs/rmm-ninja-migration-mac/{19FFB6BB-554C-4F2F-9483-EE6E0847964B}.png)
-![Complete Task 2](../../../static/img/docs/rmm-ninja-migration-mac/{0DF1F0E0-0CC1-4E3B-AACD-8E57ABACC4C3}.png)
-![Complete Task 3](../../../static/img/docs/rmm-ninja-migration-mac/{3A86EBA6-CBB6-4676-9423-F12C1A8AA307}.png)
+![Complete Task 1](../../../static/img/docs/rmm-ninja-migration-mac/image-59.png)
+![Complete Task 2](../../../static/img/docs/rmm-ninja-migration-mac/image-60.png)
+![Complete Task 3](../../../static/img/docs/rmm-ninja-migration-mac/image-61.png)
 
 ## Deployment
 
@@ -425,7 +424,7 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 
 - Click on Schedule option, and set the time and click on Repeat to set it to run every hour
 
-![Repeat Every 1 Hour](../../../static/img/docs/rmm-ninja-migration-windows/{379014B5-A273-42CD-8892-475FE52D7346}.png)
+![Repeat](../../../static/img/docs/rmm-ninja-migration-mac/image-62.png)
 
 ![Schedule Task](../../../static/img/docs/rmm-ninja-migration-windows/image-18.png)
 

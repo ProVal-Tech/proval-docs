@@ -4,15 +4,15 @@ slug: /905f38b9-492e-43d8-b687-7b4df48c3b97
 title: 'NinjaRMM Deployment - [Windows]'
 title_meta: 'NinjaRMM Deployment - [Windows]'
 keywords: ['RMM', 'Ninja', 'Migration', 'Windows', 'Agent', 'Install']
-description: 'This script deploys the NinjaRMMAgent to Windows-supported OS, based on the article provided below: https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization. It depends on the Authorization token, which will be kept in the company or site custom fields.'
-tags: ['RMM', 'Ninja', 'Migration', 'Windows']
+description: 'This script deploys the NinjaRMMAgent to Windows-supported OS. It depends on the Authorization token, which will be kept in the company or site custom fields.'
+tags: ['windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 This script deploys the NinjaRMMAgent to Windows-supported OS, based on the article provided below:
-https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization.
+[Agent Installation Tokenization](https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization).
 It depends on the Authorization token, which will be kept in the company or site custom fields.
 
 ## Sample Run
@@ -52,7 +52,7 @@ https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Ins
 It depends on the Authorization token, which will be kept in the company or site custom fields.`  
 **Category:** `Application`
 
-![Script Detail](../../../static/img/docs/rmm-ninja-migration-windows/{D67F5434-6571-4758-B4E3-8927774B14D1}.png)
+![Script Detail](../../../static/img/docs/rmm-ninja-migration-windows/image-21.png)
 
 ### Script Editor
 
@@ -74,11 +74,11 @@ Variable: `Deployment`
 
 Custom Field: `Ninja Deployment Enable`
 
-![Set Pre-defined 1](../../../static/img/docs/rmm-ninja-migration-windows/{6D1A9CF8-491A-468B-814E-CE4D0F0A4D4F}.png)
+![Set Pre-defined 1](../../../static/img/docs/rmm-ninja-migration-windows/image-22.png)
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Enable](../../../static/img/docs/rmm-ninja-migration-windows/{B6493CE0-6772-447A-B8A4-05078B4D0D2F}.png)
+![Deployment Enable](../../../static/img/docs/rmm-ninja-migration-windows/image-23.png)
 
 #### Row 2 Function: `Pre-defined Variable`
 
@@ -88,11 +88,11 @@ Variable: `DeploymentExL`
 
 Custom Field: `Ninja Deployment Exclude`
 
-![Set Pre-defined 2](../../../static/img/docs/rmm-ninja-migration-windows/{0669F0B4-1AF8-425D-B20F-67CE6EECCF53}.png)
+![Pre-defined 2](../../../static/img/docs/rmm-ninja-migration-windows/image-24.png)
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Exclude Location](../../../static/img/docs/rmm-ninja-migration-windows/{28BC1FB3-64AD-4BCC-8A29-7B5F7C4B3063}.png)
+![Deployment Exclude](../../../static/img/docs/rmm-ninja-migration-windows/image-25.png)
 
 #### Row 3 Function: `Pre-defined Variable`
 
@@ -102,11 +102,11 @@ Variable: `DeploymentExC`
 
 Custom Field: `Ninja Deployment Exclude`
 
-![Set Pre-defined 3](../../../static/img/docs/rmm-ninja-migration-windows/{8F84361F-5BCE-4581-BC94-2AAEDDE7759B}.png)
+![Pre-defined 3](../../../static/img/docs/rmm-ninja-migration-windows/image-26.png)
 
 After clicking on Save the Pre-defined will show data as:
 
-![Deployment Exclude Computer](../../../static/img/docs/rmm-ninja-migration-windows/{AC705BD3-F770-44AF-874D-907D69404C0F}.png)
+![Deployment Exclude](../../../static/img/docs/rmm-ninja-migration-windows/image-27.png)
 
 #### Row 4 Function: `Pre-defined Variable`
 
@@ -116,11 +116,11 @@ Variable: `OrgID`
 
 Custom Field: `Ninja_Org_ID`
 
-![Set Pre-defined 4](../../../static/img/docs/rmm-ninja-migration-windows/{43557D2D-BFA2-4477-9626-B73ED12BFA0F}.png)
+![Pre-defined 4](../../../static/img/docs/rmm-ninja-migration-windows/image-28.png)
 
 After clicking on Save the Pre-defined will show data as:
 
-![Org ID](../../../static/img/docs/rmm-ninja-migration-windows/{1C0C0E82-9353-4C60-BD11-73A7D8B2919B}.png)
+![Org ID](../../../static/img/docs/rmm-ninja-migration-windows/image-29.png)
 
 #### Row 5 Function: `Pre-defined Variable`
 
@@ -130,11 +130,11 @@ Variable: `LocID`
 
 Custom Field: `Ninja_Site_ID`
 
-![Set Pre-defined 5](../../../static/img/docs/rmm-ninja-migration-windows/{AA7418D1-D334-42A4-8337-23055A77EBDE}.png)
+![pre-defined 5](../../../static/img/docs/rmm-ninja-migration-windows/image-30.png)
 
 After clicking on Save the Pre-defined will show data as:
 
-![Loc ID](../../../static/img/docs/rmm-ninja-migration-windows/{6E8E85B6-841E-43E6-8675-37F7ECA4BC85}.png)
+![Loc ID](../../../static/img/docs/rmm-ninja-migration-windows/image-31.png)
 
 
 #### Row 6 Function: PowerShell Script
@@ -227,7 +227,7 @@ else {
 #endregion
 ```
 
-![PowerShell Script](../../../static/img/docs/rmm-ninja-migration-windows/{3C09873E-FD09-444A-8784-4038845446E0}.png)
+![PowerShell Script](../../../static/img/docs/rmm-ninja-migration-windows/image-32.png)
 
 #### Row 7 Logic: If/Then
 
@@ -252,9 +252,9 @@ Search and select the `Set Custom Field` function.
 
 Search and select `Ninja Deployment Result` in the `Search Custom Field` field, set `Failed` in the `Value` field, and click the `Save` button.
 
-![Set Custom field 2](../../../static/img/docs/rmm-ninja-migration-windows/{F2031C84-1F90-4B1A-AC79-B5542960F765}.png)
+![Custom field 2](../../../static/img/docs/rmm-ninja-migration-windows/image-33.png)
 
-![Set Custom field 3](../../../static/img/docs/rmm-ninja-migration-windows/{905B7362-95C7-4A1F-A92F-804AF252FF1E}.png)
+![Custom field 3](../../../static/img/docs/rmm-ninja-migration-windows/image-34.png)
 
 #### Row 7c Function: Script Exit
 
@@ -264,7 +264,7 @@ In the IF part, add a new row by clicking on the Add row button.
 
 In the script exit message, simply type `The Ninja deployment failed. Refer to the logs: %Output%`  
 
-![Script Exit](../../../static/img/docs/rmm-ninja-migration-windows/{4349013D-846A-4A02-9DB7-C052BEE2A3AB}.png)
+![Script Exit](../../../static/img/docs/rmm-ninja-migration-windows/image-35.png)
 
 #### Row 8 Function: Script Log
 
@@ -296,9 +296,9 @@ Search and select the `Set Custom Field` function.
 
 Search and select `Ninja Deployment Result` in the `Search Custom Field` field, set `Success` in the `Value` field, and click the `Save` button.
 
-![Set Custom field 6](../../../static/img/docs/rmm-ninja-migration-windows/{5654A45B-832E-4EDE-B937-2D7413A97E7B}.png)
+![Custom field 6](../../../static/img/docs/rmm-ninja-migration-windows/image-36.png)
 
-![Set Custom field 7](../../../static/img/docs/rmm-ninja-migration-windows/{08226894-0E9F-416B-8BCA-49289F8860F6}.png)
+![Custom field 7](../../../static/img/docs/rmm-ninja-migration-windows/image-37.png)
 
 ## Save Task
 
@@ -307,7 +307,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Completed Task
 
-![Complete Task](../../../static/img/docs/rmm-ninja-migration-windows/{45854EA3-C808-4981-A6E6-A50237CB31D0}.png)
+![Complete Task](../../../static/img/docs/rmm-ninja-migration-windows/image-38.png)
 
 ## Deployment
 
@@ -333,7 +333,7 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 
 - Click on Schedule option, and set the time and click on Repeat to set it to run every hour
 
-![Repeat Every 1 Hour](../../../static/img/docs/rmm-ninja-migration-windows/{379014B5-A273-42CD-8892-475FE52D7346}.png)
+![Repeat](../../../static/img/docs/rmm-ninja-migration-windows/image-39.png)
 
 ![Schedule Task](../../../static/img/docs/rmm-ninja-migration-windows/image-18.png)
 
