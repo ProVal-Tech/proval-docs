@@ -5,7 +5,7 @@ title: 'Patch Complete Solution'
 title_meta: 'Patch Complete Solution'
 keywords: ['windows', 'updates', 'cumulative', 'audit', 'autofix', 'repair', 'kbnumber', 'reboot', 'install', 'patch', 'kbid', 'uninstall']
 description: 'This solution is targeted to compute all the patch management automation together for better understanding.'
-tags: ['windows', 'updates', 'cumulative', 'audit', 'autofix', 'repair', 'kbnumber', 'reboot', 'install', 'patch', 'kbid', 'uninstall']
+tags: ['windows', 'update', 'auditing', 'reboot', 'installation', 'patching', 'uninstallation']
 draft: false
 unlisted: false
 ---
