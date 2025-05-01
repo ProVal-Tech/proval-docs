@@ -32,7 +32,7 @@ This solution is targeted to compute all the patch management automation togethe
 
 | Content                       | Type     | Function                                                                                                                             |
 |-------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Solution - Latest Installed Cumulative Update](docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
+| [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
 
 ### Windows Update - Repair
 
@@ -51,7 +51,7 @@ This solution is targeted to compute all the patch management automation togethe
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
-| [Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  | Script | This script installs the latest feature update on a Windows 10+ machine and provides an option to upgrade from Windows 10 to Windows 11. The script can be executed from the [Monitor - ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f) set or executed manually. Note: The script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category. |
+| [Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  | Script | This script installs the latest feature update on a Windows 10+ machine and provides an option to upgrade from Windows 10 to Windows 11. The script can be executed from the [Monitor - ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](/docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f) set or executed manually. Note: The script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category. |
 
 ### Upgrade Windows 10 to 11
 
@@ -63,7 +63,7 @@ This solution is targeted to compute all the patch management automation togethe
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
-| [Script - Install Windows 11 Feature Update [Beta, Reboot]](/docs/27f8240b-603a-4af2-b9d9-480a560f8747)  | Script | This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](docs/837e00a9-4fde-4457-9516-591da7ba4da0). The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script supports both Windows 10 and Windows 11. For Windows 10, it attempts to upgrade to the latest available version of Windows 11. For Windows 11, it ensures the system is updated to the latest available feature update. |
+| [Script - Install Windows 11 Feature Update [Beta, Reboot]](/docs/27f8240b-603a-4af2-b9d9-480a560f8747)  | Script | This document describes the Automate implementation of the agnostic script [Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0). The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script supports both Windows 10 and Windows 11. For Windows 10, it attempts to upgrade to the latest available version of Windows 11. For Windows 11, it ensures the system is updated to the latest available feature update. |
 
 
 ## Implementation
