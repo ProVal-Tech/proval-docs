@@ -5,7 +5,7 @@ title: 'Ninja Deployment Success'
 title_meta: 'Ninja Deployment Success'
 keywords: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
 description: 'This group contains the endpoint where the Ninja Deployment succeeded.'
-tags: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
+tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
 ---
@@ -40,7 +40,7 @@ This page will appear after clicking on the `Dynamic Group` button:
 **Group Name:** `Ninja Deployment Success`  
 **Description:** `This group contains the endpoint where the Ninja Deployment succeeded.`
 
-![Summary](../../../static/img/docs/ninja-rmm-deployment-success/{E3114071-6E8D-415C-95E2-7BAF369BB2AA}.png)
+![Summary](../../../static/img/docs/ninja-rmm-deployment-success/image-1.png)
 
 ### Step 4
 
@@ -56,7 +56,7 @@ Search for `Ninja Deployment Enable` and select it and set it `Equal` to `True`
 
 ![Ninja Deployment Enable](../../../static/img/docs/ninja-rmm-deployment/image-1.png)
 
-![Add 1](../../../static/img/docs/ninja-rmm-deployment/{D52026EA-DE53-423B-95BE-0CBD968E30A7}.png)
+![Add 1](../../../static/img/docs/ninja-rmm-deployment-success/image-2.png)
 
 ### Step 6
 
@@ -68,7 +68,7 @@ Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False
 
 ![Exclude Site](../../../static/img/docs/ninja-rmm-deployment/image-2.png)
 
-![Add 2](../../../static/img/docs/ninja-rmm-deployment/{B52F2A31-8E1E-4E53-8465-0A03FE494417}.png)
+![Add 2](../../../static/img/docs/ninja-rmm-deployment-success/image-3.png)
 
 ### Step 7
 
@@ -80,7 +80,7 @@ Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False
 
 ![Exclude Endpoint](../../../static/img/docs/ninja-rmm-deployment/image-3.png)
 
-![Add 2](../../../static/img/docs/ninja-rmm-deployment/{B52F2A31-8E1E-4E53-8465-0A03FE494417}.png)
+![Add 3](../../../static/img/docs/ninja-rmm-deployment-success/image-4.png)
 
 ### Step 8
 
@@ -92,11 +92,11 @@ Search for `Ninja Deployment Result` and select it and set it `Contains any of` 
 
 ![Result](../../../static/img/docs/ninja-rmm-deployment/image-5.png)
 
-![Add 4](../../../static/img/docs/ninja-rmm-deployment-success/{62CA2540-FA8A-4BCA-8100-35D35ED3B372}.png)
+![Add 4](../../../static/img/docs/ninja-rmm-deployment-success/image-5.png)
 
 
 ## Completed Group
 
-![Complete](../../../static/img/docs/ninja-rmm-deployment-success/{26611B1C-C240-40F2-8EFA-7FA18CED9765}.png)
+![Complete](../../../static/img/docs/ninja-rmm-deployment-success/image-6.png)
 
 ![Complete 1](../../../static/img/docs/ninja-rmm-deployment-success/image.png)

@@ -5,7 +5,7 @@ title: 'CW RMM to Ninja Migration Solution'
 title_meta: 'CW RMM to Ninja Migration Solution'
 keywords: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
 description: 'This solution is built to perform the CW RMM to Ninja migration.'
-tags: ['RMM', 'Ninja', 'Migration', 'MAC', 'Macintosh', 'Windows', 'Agent', 'Install']
+tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
 ---
