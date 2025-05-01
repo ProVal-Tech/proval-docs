@@ -5,7 +5,7 @@ title: 'Folder Redirection Audit [Script]'
 title_meta: 'Folder Redirection Audit [Script]'
 keywords: ['folder', 'redirection', 'audit', 'data', 'endpoint', 'backup']
 description: 'This document provides an overview of the Folder Redirection Audit, detailing the information displayed related to folder redirection on endpoints, including dependencies, columns, and their descriptions.'
-tags: ['backup', 'report', 'security', 'windows']
+tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
 ---

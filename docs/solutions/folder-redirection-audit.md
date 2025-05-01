@@ -5,7 +5,7 @@ title: 'Folder Redirection Audit'
 title_meta: 'Folder Redirection Audit'
 keywords: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop', 'backup']
 description: 'This solution shows the folder redirection auditing of the active user folders on the computer'
-tags: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop', 'backup']
+tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
 ---

@@ -5,8 +5,8 @@ title: 'pvl_folder_redirection_audit'
 title_meta: 'pvl_folder_redirection_audit'
 keywords: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop']
 description: 'This table is build to store the folder redirection of users of the computers obtained from the script'
-tags: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop']
-draft: true
+tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
+draft: false
 unlisted: false
 ---
 

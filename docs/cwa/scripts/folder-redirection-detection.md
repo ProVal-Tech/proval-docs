@@ -5,7 +5,7 @@ title: 'Folder Redirection Detection [DV]'
 title_meta: 'Folder Redirection Detection [DV]'
 keywords: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop']
 description: 'This script performs the folder redirection audit for the redirected folders of all users of the Windows machines. The folders which are used for audit are (Desktop, Document, Download, My Picture, My Video,  My Pictures,  Local AppData,  History,  Cookies,  Cache,  AppData,  Favorites,  Fonts,  CD Burning,  Administrative Tools,  NetHood,  Personal,  PrintHood,  Programs,  Recent,  SentTo,  Start Menu,  StartUp,  Templates)'
-tags: ['redirection', 'folder', 'sharing', 'fileshare', 'document', 'picture', 'desktop']
+tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
 ---
