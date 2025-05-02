@@ -16,8 +16,8 @@ This document describes how to enable the Active Directory (AD) Recycle Bin on A
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - AD Recycle Bin](/docs/e4801a6f-1945-4aee-bd39-1601a185b9eb)
-- [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b)
+- [Custom Fields - AD Recycle Bin](/docs/e4801a6f-1945-4aee-bd39-1601a185b9eb)
+- [Device Group - Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b)
 
 ## Create Script
 
@@ -37,17 +37,17 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```
+```PowerShell
 $result = (Get-Host | Select -exp Version).ToString()
 if($result -ge 3)
 {
-    Write-Host "Supported: $result"
+Write-Host "Supported: $result"
 }
 else
 {
-    Write-Host "Outdated: $result"
+Write-Host "OutDated: $result"
 }
 ```
 
@@ -84,7 +84,7 @@ Add a new row in the If Section by clicking the Add Row button.
 - Search and select the `Script Exit` function.
 - Input the following:
 
-```
+```PlainText
 The AD Recycle Bin failed to be enabled on the DC server as the PowerShell version is outdated. Minimum version required is above 3.0 and the current version is %output%
 ```
 
@@ -95,9 +95,9 @@ The AD Recycle Bin failed to be enabled on the DC server as the PowerShell versi
 
 ![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```
+```PowerShell
 $adwsService = Get-Service -Name ADWS -ErrorAction SilentlyContinue
 if ($adwsService -eq $null) {
     Write-Output "ADWS service is not installed."
@@ -115,9 +115,9 @@ if ($adwsService -eq $null) {
 
 ![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```
+```PowerShell
 Import-Module ActiveDirectory
 $DomainCheck = (Get-ADDomain).DomainMode
 $ForestCheck = (Get-ADForest).ForestMode
@@ -165,7 +165,7 @@ Add another row by selecting the `ADD ROW` button in the `If` section of the `If
 - Search and select the `Script Exit` function.
 - Input the following:
 
-```
+```PlainText
 The AD Recycle Bin failed to be enabled on the DC server. The DomainMode or ForestMode is not eligible for the AD Recycle Bin to be enabled.
 
 Logs:
@@ -180,37 +180,31 @@ Logs:
 
 ![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```
+```PowerShell
 Import-Module ActiveDirectory
+
+# Check the domain and forest modes
 $DomainCheck = (Get-ADDomain).DomainMode
 $ForestCheck = (Get-ADForest).ForestMode
 
-if($DomainCheck -eq 'Windows2008Domain' -or $ForestCheck -eq 'Windows2008Forest' -or $DomainCheck -match '2003' -or $ForestCheck -match '2003')
-{
-    Write-Host "Minimum criteria for AD Recycle Bin enable is: Above 2008R2 Domain and Forest mode required."
-}
-else
-{
+if ($DomainCheck -eq 'Windows2008Domain' -or $ForestCheck -eq 'Windows2008Forest' -or $DomainCheck -match '2003' -or $ForestCheck -match '2003') {
+    Write-Host "Minimum criteria for enabling the AD Recycle Bin: Domain and Forest modes must be above 2008R2."
+} else {
+    # Check if the Recycle Bin feature is already enabled
     $Result = Get-ADOptionalFeature -Filter * -ErrorAction SilentlyContinue | Select-Object -ExpandProperty EnabledScopes
-    if($Result)
-    {
-        Write-Host "Recycle Bin already enabled in the AD."
-    }
-    else 
-    {
-        Write-Host "AD Recycle Bin not enabled. Proceeding to enable it."
+    if ($Result) {
+        Write-Host "The AD Recycle Bin is already enabled."
+    } else {
+        Write-Host "The AD Recycle Bin is not enabled. Proceeding to enable it."
         $Domain = Get-ADForest | Select-Object -ExpandProperty RootDomain
         Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target $Domain -Confirm:$false
         $Result = Get-ADOptionalFeature -Filter * -ErrorAction SilentlyContinue | Select-Object -ExpandProperty EnabledScopes
-        if($Result)
-        {
-            Write-Host "Recycle Bin enabled in AD successfully."
-        }
-        else
-        {
-            Write-Host "Failed to enable the Recycle Bin."
+        if ($Result) {
+            Write-Host "The AD Recycle Bin has been successfully enabled."
+        } else {
+            Write-Host "Failed to enable the AD Recycle Bin."
         }
     }
 }
@@ -297,9 +291,9 @@ Add another row by selecting the `ADD ROW` button in the `IF` section of the int
 
 ![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
-```
+```PowerShell
 if ('@AD_RecycleBin_Result@' -eq '2'){return 'failed more than 3 times'} 
 elseif ('@AD_RecycleBin_Result@' -eq '0'){return '1'} 
 elseif ('@AD_RecycleBin_Result@' -eq '1'){return '2'} 
@@ -328,7 +322,7 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 - Search and select the `Script Exit` function.
 - Input the following:
 
-```
+```PlainText
 Script failed to enable AD Recycle Bin on the DC server.
 
 Logs:
@@ -359,7 +353,7 @@ The final task should look like the screenshot below.
 
 ## Script Deployment
 
-This task must be scheduled on the [CW RMM - Device Group - Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b) group for auto deployment. The script can also be run manually if required.
+This task must be scheduled on the [Infrastructure Master - Without Recycle Bin](/docs/24509826-3f15-4594-8bb2-4f801709720b) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.  
 Search for Enable AD Recycle Bin.  
@@ -370,5 +364,3 @@ Then click on Schedule and provide the necessary parameters for script completio
 ## Output
 
 - Script log
-
-

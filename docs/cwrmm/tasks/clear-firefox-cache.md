@@ -58,11 +58,12 @@ $ProjectName = 'Clear-GeckoCache'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+#endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -83,14 +84,11 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```powershell
-if (!(Test-Path $LogPath)) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

@@ -47,7 +47,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### AllowClear:
+### AllowClear
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![AllowClear Image 1](../../../static/img/Enable-TPM/image_8.png)  
@@ -60,7 +60,7 @@ This screen will appear.
 - Click the `Save` button.  
 ![AllowClear Image 3](../../../static/img/Enable-TPM/image_10.png)  
 
-### AllowPhysicalPresence:
+### AllowPhysicalPresence
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![AllowPhysicalPresence Image 1](../../../static/img/Enable-TPM/image_8.png)  
@@ -73,7 +73,7 @@ This screen will appear.
 - Click the `Save` button.  
 ![AllowPhysicalPresence Image 3](../../../static/img/Enable-TPM/image_11.png)  
 
-### AllowRestart:
+### AllowRestart
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![AllowRestart Image 1](../../../static/img/Enable-TPM/image_8.png)  
@@ -128,13 +128,12 @@ $ProjectName = 'Enable-TPM'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -148,7 +147,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -197,5 +195,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
 ![Output Image](../../../static/img/Enable-TPM/image_26.png)  
-
-

@@ -11,6 +11,7 @@ unlisted: false
 ---
 
 ## Summary
+
 This the RMM version of Automate script [Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806). It retrieves the Hardware Hash required for Autopilot device registration.
 
 Note: The Hardware Hash cannot be stored in a custom field due to character limitations. Check the script logs to view the Hash key of a device.
@@ -20,6 +21,7 @@ Note: The Hardware Hash cannot be stored in a custom field due to character limi
 ![Sample Run](../../../static/img/CWRMM-Get-AutopilotHash/image5.png)
 
 ## Task Creation
+
 Create a new `Script Editor` style script in the system to implement this task.  
 ![Create Script](../../../static/img/Set---DisplayScaling/image_3.png)  
 ![Script Creation](../../../static/img/Set---DisplayScaling/image_4.png)
@@ -45,10 +47,9 @@ Search and select the `Command Prompt Script` function.
 The following function will pop up on the screen:  
 ![Function Popup](../../../static/img/CWRMM-Get-AutopilotHash/image3.png)
 
-Paste in the following CMD script and set the expected time of script execution to 300 seconds. Click the `Save` button.
+Paste in the following Command and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
-```powershell
-
+```Shell
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "try {$session = New-CimSession;$devDetail = Get-CimInstance -CimSession $session -Namespace root/cimv2/mdm/dmmap -Class MDM_DevDetail_Ext01 -Filter \"InstanceID='Ext' AND ParentID='./DevDetail'\";if ($devDetail) {$hash = $devDetail.DeviceHardwareData } else {$hash = ''};if ($hash -match '^[A-Za-z0-9+/=,.\-\s]+$') {$hash} else { throw 'Failed to fetch Autopilot Hash'}}catch { return 'Failed to fetch Autopilot Hash'}"
 ```
 
@@ -58,6 +59,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
 
 ## Completed Task
+
 ![Completed Task](../../../static/img/CWRMM-Get-AutopilotHash/image4.png)
 
 ## Output

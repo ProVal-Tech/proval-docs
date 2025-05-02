@@ -1,8 +1,8 @@
 ---
 id: '88ebc856-6e02-41d2-a6b5-af8cbd37e2c6'
 slug: /88ebc856-6e02-41d2-a6b5-af8cbd37e2c6
-title: 'CW RMM - Office Universal Uninstaller'
-title_meta: 'CW RMM - Office Universal Uninstaller'
+title: 'Office Universal Uninstaller'
+title_meta: 'Office Universal Uninstaller'
 keywords: ['office', 'uninstaller', 'microsoft', 'corruption', 'script']
 description: 'This document provides a comprehensive guide on using the Office Universal Uninstaller script, which downloads offscrub files and uninstalls all versions of Microsoft Office from 2007 to 2016 & O365, handling machine or software corruption and removing app shortcuts.'
 tags: ['setup', 'software', 'uninstallation', 'windows']
@@ -22,7 +22,7 @@ This script downloads the offscrub files from the repository and then attempts t
 
 [SWM - Software Uninstall - Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
 
-#### User Parameters
+### User Parameters
 
 | Name       | Example    | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------|------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -65,14 +65,14 @@ Input the following:
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
-```
+```PowerShell
 #region Setup - Variables
 $ProjectName = 'Invoke-OffScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 #endregion
 
 #region Setup - Folder Structure
@@ -94,6 +94,7 @@ if (!(Test-Path -Path $PS1Path)) {
 #region Execution
     & $PS1Path @Arguments@
 #endregion
+
 ```
 
 ![Row 2 Function Output](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_8.png)

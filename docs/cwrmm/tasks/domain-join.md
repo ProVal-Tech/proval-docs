@@ -22,7 +22,7 @@ This document describes how to join a non-domain joined computer to a domain. Th
 
 ## Dependencies
 
-- [RSM - Active Directory - Agnostic - Script - Join-Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
+- [Join-Domain](/docs/fb3e4906-6520-4b5b-bc35-db7b79b45f7d)
 
 ## User Parameters
 
@@ -47,7 +47,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### DomainName:
+### DomainName
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/Domain-Join/image_8.png)  
 
@@ -61,7 +62,8 @@ This screen will appear.
 
 ![Add Parameter Step 3](../../../static/img/Domain-Join/image_10.png)  
 
-### DomainAdmin:
+### DomainAdmin
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/Domain-Join/image_8.png)  
 
@@ -75,7 +77,8 @@ This screen will appear.
 
 ![Add Parameter Step 3](../../../static/img/Domain-Join/image_11.png)  
 
-### Password:
+### Password
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/Domain-Join/image_8.png)  
 
@@ -98,6 +101,7 @@ A blank function will appear.
 ![Blank Function](../../../static/img/Domain-Join/image_14.png)  
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.  
 ![PowerShell Function Step 1](../../../static/img/Domain-Join/image_15.png)  
 ![PowerShell Function Step 2](../../../static/img/Domain-Join/image_16.png)  
@@ -117,13 +121,13 @@ $Admin = '@DomainAdmin@'
 $password = @'
 @Password@
 '@
-if ( ($DomainName -match '/SDomainName/S') -or ([String]::IsNullOrWhiteSpace($DomainName)) ) {
+if ( ($DomainName -match '\SDomainName\S') -or ([String]::IsNullOrWhiteSpace($DomainName)) ) {
     throw 'Invalid domain name. Please provide a valid domain name.'
 }
-if ( ($Admin -match '/SDomainAdmin/S') -or ([String]::IsNullOrWhiteSpace($Admin)) ) {
+if ( ($Admin -match '\SDomainAdmin\S') -or ([String]::IsNullOrWhiteSpace($Admin)) ) {
     throw 'Invalid domain admin account. Please provide a valid domain admin account.'
 }
-if ( ($password -match '/SPassword/S') -or ([String]::IsNullOrWhiteSpace($password)) ) {
+if ( ($password -match '\SPassword\S') -or ([String]::IsNullOrWhite($password)) ) {
     throw 'Invalid password. Please provide a valid password.'
 }
 $securePwd = ConvertTo-SecureString -String $password -AsPlainText -Force
@@ -138,11 +142,11 @@ $ProjectName = 'Invoke-OfficeScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -165,11 +169,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -179,6 +183,7 @@ Get-Content -Path $LogPath
 ![PowerShell Script Completion](../../../static/img/Domain-Join/image_18.png)  
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Add Row Step 2](../../../static/img/Domain-Join/image_19.png)  
 

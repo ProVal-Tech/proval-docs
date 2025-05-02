@@ -1,8 +1,8 @@
 ---
 id: 'bfcc2aec-a83b-49ac-bfbe-274cbf112a6e'
 slug: /bfcc2aec-a83b-49ac-bfbe-274cbf112a6e
-title: 'DUO Auth Proxy - InstallUpdate Latest Version'
-title_meta: 'DUO Auth Proxy - InstallUpdate Latest Version'
+title: 'DUO Auth Proxy - Install/Update Latest Version'
+title_meta: 'DUO Auth Proxy - Install/Update Latest Version'
 keywords: ['duo', 'install', 'upgrade', 'authentication', 'proxy', 'script']
 description: 'This document provides a comprehensive guide on how to install or update the DUO Authentication Proxy application to the latest version. It includes sample runs, dependencies, task creation steps, and implementation guidance to ensure successful deployment.'
 tags: ['application', 'deployment', 'update']
@@ -56,59 +56,56 @@ Paste the following PowerShell script and set the `Expected time of script execu
 
 ```powershell
 $ProgressPreference = 'SilentlyContinue'
-$ErrorActionPreference = 'SilentlyContinue'
+$ErrorActionPreference = 'Silentlycontinue'
 $URL = 'https://dl.duosecurity.com/duoauthproxy-latest.exe'
-$WorkingDirectory = 'C:/ProgramData/_Automation/Script/DuoAuthProxy'
-$Path = "$WorkingDirectory/DuoAuthProxyInstaller.exe"
-$File = (Invoke-WebRequest -uri https://dl.duosecurity.com/duoauthproxy-latest.exe -UseBasicParsing -Method Head).headers.'Content-Disposition'
-$DuoVersion = "$(($File -replace '.*duoauthproxy-','' -replace '/.exe"$',''))"
-
+$WorkingDirectory = 'C:\ProgramData\_Automation\Script\DuoAuthProxy'
+$Path = "$WorkingDirectory\DuoAuthProxyInstaller.exe"
+$File = (Invoke-WebRequest -uri https://dl.duosecurity.com/duoauthproxy-latest.exe -UseBasicParsing -Method Head).headers.'Content-Disposition' 
+$DuoVersion = "$(($File -replace '.*duoauthproxy-','' -replace '\.exe"$',''))"
 #region Setup - Folder Structure
-if (!(Test-Path $WorkingDirectory)) {
+if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     }
     catch {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
-}
-if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
-    $Acl = Get-Acl $WorkingDirectory
+} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
-#endregion
-
+#region write script
 $response = Invoke-WebRequest -Uri $URL -OutFile $Path -UseBasicParsing
 if (!(Test-Path -Path $Path)) {
     return 'ERROR: An error occurred and the script was unable to be downloaded. Exiting.'
 }
-
-$DUOCurrentVersion = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
+#endregion
+$DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
 if ($DuoVersion -eq $DUOCurrentVersion) {
     return 'DUO Security Authentication Proxy is already up to date.'
 }
 elseif ($DUOCurrentVersion -match '[0-9]') {
     & $Path /S
     Start-Sleep -Seconds 120
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
+    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
     if ($DuoVersion -eq $DUOCurrentVersion) {
         Write-Output 'DUO Security Authentication Proxy is successfully updated.'
     }
     else {
-        return 'ERROR: DUO Security Authentication Proxy failed to update.'
+        return 'ERROR: DUO Security Authentication Proxy is failed to update.'
     }
 }
 else {
     & $Path /S
     Start-Sleep -Seconds 120
-    $DUOCurrentVersion = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
+    $DUOCurrentVersion = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DUO Security Authentication Proxy' } | Select-Object -ExpandProperty DisplayVersion
     if ($DuoVersion -eq $DUOCurrentVersion) {
         Write-Output 'DUO Security Authentication Proxy is successfully installed.'
     }
     else {
-        return 'ERROR: DUO Security Authentication Proxy failed to install.'
+        return 'ERROR: DUO Security Authentication Proxy is failed to install.'
     }
 }
 ```
@@ -167,9 +164,9 @@ The following function will pop up on the screen:
 
 ![Script Exit Function](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_19.png)  
 
-In the script exit message, simply type:
+In the script exit message, type:
 
-```
+```PlainText
 Failed to install the "DUO Security Authentication Proxy" application. Refer to the logs:
 %Output%
 ```
@@ -199,7 +196,7 @@ The following function will pop up on the screen:
 
 In the script log message, type:
 
-```
+```PlainText
 Successfully installed the "DUO Security Authentication Proxy" application. Refer to the logs:
 %Output%
 ```
@@ -297,6 +294,3 @@ Script log
 Custom field  
 
 ![Output](../../../static/img/DUO-Auth-Proxy---InstallUpdate-Latest-Version/image_37.png)  
-
-
-

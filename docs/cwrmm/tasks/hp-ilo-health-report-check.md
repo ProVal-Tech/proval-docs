@@ -24,7 +24,7 @@ The script will check and return the health status of the HP iLO devices, writin
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
+[Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
 
 ## User Parameters
 
@@ -52,7 +52,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### Address:
+### Address
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Add Parameter Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_8.png)
@@ -68,7 +69,8 @@ This screen will appear.
 
 ![Add Parameter Image 3](../../../static/img/HP-iLO---Health-Report---Check/image_10.png)
 
-### Username:
+### Username
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Add Parameter Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_8.png)
@@ -84,7 +86,8 @@ This screen will appear.
 
 ![Add Parameter Image 3](../../../static/img/HP-iLO---Health-Report---Check/image_11.png)
 
-### Password:
+### Password
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Add Parameter Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_8.png)
@@ -111,6 +114,7 @@ A blank function will appear.
 ![Blank Function Image](../../../static/img/HP-iLO---Health-Report---Check/image_14.png)
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.
 
 ![PowerShell Script Selection Image 1](../../../static/img/HP-iLO---Health-Report---Check/image_15.png)
@@ -127,24 +131,25 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingConvertToSecureStringWithPlainText', '')]
 [CmdletBinding()]
 Param()
+
 ### parameters
 $Address = '@Address@'
 $Username = '@Username@'
 $Password = '@Password@'
 
-if ( $Address -match '/SAddress/S' -or ( $null -eq $Address ) )  {
+if ( $Address -match '\SAddress\S' -or ( $null -eq $Address ) )  {
     throw 'Address is not set correctly.'
 } elseif ( $Address.Length -lt 2 ) {
     throw 'Address is not set correctly.'
 }
 
-if ( $Username -match '/SUsername/S' -or ( $null -eq $Username ) )  {
+if ( $Username -match '\SUsername\S' -or ( $null -eq $Username ) )  {
     throw 'Username is not set.'
 } elseif ( $Username.Length -lt 2 ) {
     throw 'Username is not set.'
 }
 
-if ( $Password -match '/SPassword/S' -or ( $null -eq $Password ) )  {
+if ( $Password -match '\SPassword\S' -or ( $null -eq $Password ) )  {
     throw 'Password is not set.'
 } elseif ( $Password.Length -lt 2 ) {
     throw 'Password is not set.'
@@ -167,8 +172,8 @@ function Write-Script {
     [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
     $BaseURL = 'https://file.provaltech.com/repo'
     $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-    $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-    $PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+    $WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+    $PS1Path = "$WorkingDirectory\$ProjectName.ps1"
     #endregion
     #region Setup - Folder Structure
     New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -190,34 +195,36 @@ function Confirm-Output {
     param (
         [Parameter()][String]$ProjectName
     )
-    $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-    $LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-    $ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+    $WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+    $LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+    $ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 
-    if (!(Test-Path $LogPath)) {
-        throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+    if ( !(Test-Path $LogPath) ) {
+        throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
     }
-    if (Test-Path $ErrorLogPath) {
-        $ErrorContent = (Get-Content -Path $ErrorLogPath)
+    if ( Test-Path $ErrorLogPath ) {
+        $ErrorContent = ( Get-Content -Path $ErrorLogPath )
         throw $ErrorContent
     }
 }
 
-foreach ($ProjectName in ('Update-PowerShellGet', 'Get-HPiLOHealthReport')) {
+foreach ( $ProjectName in ( 'Update-PowerShellGet', 'Get-HPiLOHealthReport' ) ) {
     $Workingpath = Write-Script -ProjectName $ProjectName
-    $PS1Path = "$Workingpath/$ProjectName.ps1"
-    if ($ProjectName -eq 'Update-PowerShellGet') {
+    $PS1Path = "$Workingpath\$ProjectName.ps1"
+    if ( $ProjectName -eq 'Update-PowerShellGet' ) {
         & $PS1Path
     } else {
         & $PS1Path @Parameters
     }
     Confirm-Output -ProjectName $ProjectName
 }
+
 ```
 
 ![Row 1 Image](../../../static/img/HP-iLO---Health-Report---Check/image_18.png)
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.
 
 ![Add Row Image](../../../static/img/HP-iLO---Health-Report---Check/image_19.png)
@@ -245,5 +252,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-

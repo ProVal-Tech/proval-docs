@@ -24,20 +24,22 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 
 ![Sample Run Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_1.png)  
 
-### Example 1:
+### Example 1
+
 Running the script with basic `/scan` command to return the available updates.  
 ![Sample Run Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_2.png)  
 
-### Example 2:
+### Example 2
+
 Running the script to install available `bios`, `firmaware`, and `driver` updates.  
 This command will not install any active driver as we are not using the `-forceupdate` switch.  
 ![Example2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/Example2.png)  
 
-### Example 3:
+### Example 3
+
 Running the script to forcefully install all available driver updates.  
 <span style={{color: 'Orange'}}>**Caution:** It is recommended to restart the computer at the earliest convenience after using the `-forceupdate=enable` switch, as this switch updates active drivers as well. An active driver that requires a restart for the update may malfunction if the update is installed without rebooting the computer.</span>  
 ![Example3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/Example3.png)  
-
 
 ![Sample Run Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_3.png)
 
@@ -367,4 +369,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Output
 
-- Script log 
+- Script log

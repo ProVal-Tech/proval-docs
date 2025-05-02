@@ -27,7 +27,7 @@ Please create a new "PowerShell" style script to implement this process.
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_3.png)  
 
-# Script
+## Script
 
 ## Row 1 Function: Bash Script
 
@@ -35,7 +35,7 @@ Please create a new "PowerShell" style script to implement this process.
 
 Paste the following Bash script and set the expected script execution time to 900 seconds.
 
-```
+```Bash
 #!/bin/bash
 
 # Check if Huntress is installed
@@ -59,11 +59,11 @@ fi
 
 ## Step 2 Function: Script Log
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
-- Search and select the `Script Log` function.
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.  
+- Search and select the `Script Log` function.  
 - Input the following:  
 
-```
+```Shell
 %Output%
 ```
 
@@ -84,11 +84,11 @@ fi
 
 ## Row 3b Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
-- Search and select the `Script Exit` function.
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.  
+- Search and select the `Script Exit` function.  
 - Input the following:  
 
-```
+```Shell
 Huntress failed to uninstall. Refer to the logs: %Output%
 ```
 
@@ -97,11 +97,11 @@ Huntress failed to uninstall. Refer to the logs: %Output%
 
 ## Step 4 Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button.
-- Search and select the `Script Exit` function.
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button.  
+- Search and select the `Script Exit` function.  
 - Leave it blank  
 
-```
+```Shell
 ```
 
 ![Image](../../../static/img/Huntress-Agent-(Uninstall)---MAC/image_10.png)  
@@ -123,5 +123,3 @@ Then click on Schedule and provide the necessary parameters for script completio
 ## Output
 
 - Script log
-
-

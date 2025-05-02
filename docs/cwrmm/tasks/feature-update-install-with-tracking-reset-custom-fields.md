@@ -21,11 +21,11 @@ The script clears the related custom fields on machines where the Feature Update
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
-- [CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
-- [CW RMM - Device Group - Feature Pack Update - Updated Computers](/docs/72490aca-9d0d-47b9-88a9-437279e21d7a)
+- [Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
+- [Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
+- [Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
+- [Device Group - Feature Pack Update - Updated Computers](/docs/72490aca-9d0d-47b9-88a9-437279e21d7a)
 
 ## Create Script
 
@@ -47,6 +47,7 @@ Start by adding a row. You can do this by clicking the `Add Row` button at the b
 ![Add Row](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_6.png)  
 
 ### Row 1 Function: Set Custom Field  
+
 ![Row 1](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_7.png)  
 Search and select the `Set Custom Field` function in the new row.  
 ![Set Custom Field 1](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_8.png)  
@@ -59,6 +60,7 @@ Type ` ` (there is a single space) in the `Value` box and click the Save button.
 ![Save Button](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_12.png)  
 
 ### Row 2 Function: Set Custom Field  
+
 Insert a new row by clicking the `Add Row` button.  
 ![Row 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_13.png)  
 ![Row 2 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_7.png)  
@@ -73,6 +75,7 @@ Type `False` in the `Value` box and click the Save button.
 ![Save Button 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_15.png)  
 
 ### Row 3 Function: Set Custom Field  
+
 Insert a new row by clicking the `Add Row` button.  
 ![Row 3](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_13.png)  
 ![Row 3 2](../../../static/img/Feature-Update-Install-with-Tracking-(Reset-Custom-Fields)/image_7.png)  
@@ -124,6 +127,4 @@ Click the `Save` button to save the task.
 ## Output
 
 - Custom Field
-
-
 

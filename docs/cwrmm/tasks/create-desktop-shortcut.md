@@ -28,7 +28,7 @@ Select `Run Now` and click on `Run Task`:
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - New-DesktopUriShortcut](/docs/56fa7d90-7c83-4c4a-ac0e-c49a6d5701af)
+[New-DesktopUriShortcut](/docs/56fa7d90-7c83-4c4a-ac0e-c49a6d5701af)
 
 ## User Parameters
 
@@ -129,24 +129,22 @@ The following function will pop up on the screen:
 
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
-```
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+```PowerShell
+# # Parameters and Globals
+# # Parameters and Globals # # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 
 $TargetUri = '@TargetUri@'
 $ShortcutName = '@ShortcutName@'
 $IconLocation = '@IconLocation@'
-$Parameters = @\{}
+$Parameters = @{}
 
-if (($IconLocation -match '\\.ico$')) \{
-    $Parameters['IconLocation'] = $IconLocation
-}
+if (( $IconLocation -match '\.ico$') ) 
+{$Parameters['IconLocation'] = $IconLocation}
 
-if ($TargetUri -match ':') \{
-    $Parameters['TargetUri'] = $TargetUri
-} else \{
-    throw 'Invalid Target'
-}
+if ($TargetUri -match ':') {
+$Parameters['TargetUri'] = $TargetUri
+} else {
+throw 'Invalid Target'}
 
 $Parameters['ShortcutName'] = $ShortcutName
 
@@ -155,40 +153,39 @@ $ProjectName = 'New-DesktopUriShortcut'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) \{
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
     throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) \{
+} elseif ($response.StatusCode -eq 200) {
     Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
-if (!(Test-Path -Path $PS1Path)) \{
+if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
-if ($Parameters) \{
+if ($Parameters) {
     & $PS1Path @Parameters
-} else \{
+} else {
     & $PS1Path
 }
 #endregion
 
-if (!(Test-Path $LogPath)) \{
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) \{
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -231,5 +228,3 @@ The Script Editor should look like this:
 ## Output
 
 - Script log
-
-

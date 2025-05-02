@@ -1,8 +1,8 @@
 ---
 id: 'a56e605b-a1d4-45ea-bebb-4411f3890f7e'
 slug: /a56e605b-a1d4-45ea-bebb-4411f3890f7e
-title: 'ClearAudit - Browser Saved Password'
-title_meta: 'ClearAudit - Browser Saved Password'
+title: 'Clear/Audit - Browser Saved Password'
+title_meta: 'Clear/Audit - Browser Saved Password'
 keywords: ['browser', 'password', 'audit', 'clearance', 'windows']
 description: 'This document outlines the steps to perform a Browser Saved Password Audit or Clearance using a custom PowerShell script. It includes sample runs, implementation details, and deployment instructions to ensure secure management of saved passwords across different web browsers.'
 tags: ['security', 'software', 'windows']
@@ -85,6 +85,14 @@ if ($SyncDisabled) {
 ```
 
 ```powershell
+$regPath = 'HKLM:\Software\Policies\Microsoft\Edge'
+$name = 'SyncDisabled'
+$SyncDisabled = (Get-ItemProperty -Path $regPath -Name $name -ErrorAction SilentlyContinue).SyncDisabled
+if ($SyncDisabled) {
+    Write-Output 'MSEdge Password Wallet Sync Disabled '
+} else {
+    Write-Output 'MSEdge Password Wallet Sync Enabled '
+}
 # Function to count and log password files
 function Log-PasswordFiles {
     param (
@@ -95,7 +103,7 @@ function Log-PasswordFiles {
     )
     $count = 0
     foreach ($item in $items) {
-        if (Test-Path -Path "$path\\$item") {
+        if (Test-Path -Path "$path\$item") {
             $count++
         }
     }
@@ -103,48 +111,40 @@ function Log-PasswordFiles {
         Write-Information "-- $count Passwords saved in $browserName for $userName" -InformationAction Continue
     }
 }
-```
-
-```powershell
 # Chrome and Brave
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Google\\Chrome', 'BraveSoftware\\Brave-Browser') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Google\Chrome', 'BraveSoftware\Brave-Browser') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
 # Microsoft Edge
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Microsoft\\Edge') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Microsoft\Edge') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
 # Firefox
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        if (Test-Path -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles") {
-            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        if (Test-Path -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles") {
+            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
                 Log-PasswordFiles -browserName 'Firefox' -userName $path.Name -path $profile -items @('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqllite', 'logins.json', 'logins-backup.json')
             }
         }
     }
 }
+
 ```
 
 ##### Row 2c: Function: Script Log
@@ -215,19 +215,15 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 # Ensure that Microsoft Edge is not running
 Stop-Process -Name "msedge" -Force -ErrorAction SilentlyContinue > $null 2>&1
-
 # Define the registry path for Edge sync settings
-$regPath = "HKLM:\\Software\\Policies\\Microsoft\\Edge"
-
+$regPath = "HKLM:\Software\Policies\Microsoft\Edge"
 # Create the registry key if it doesn't exist
 if (-not (Test-Path $regPath)) {
     New-Item -Path $regPath -Force > $null 2>&1
 }
-
 # Disable password sync by setting the policy
 New-ItemProperty -Path $regPath -Name "SyncDisabled" -Value 1 -PropertyType DWORD -Force > $null 2>&1
 Write-Output "Password sync from Microsoft Edge cloud has been disabled for Edge Wallet"
-
 # Function to count and log password files
 function Log-PasswordFiles {
     param (
@@ -239,9 +235,9 @@ function Log-PasswordFiles {
     $successCount = 0
     $failureCount = 0
     foreach ($item in $items) {
-        if (Test-Path -Path "$path\\$item") {
+        if (Test-Path -Path "$path\$item") {
             try {
-                Remove-Item -Path "$path\\$item" -Force -Confirm:$False -ErrorAction Stop
+                Remove-Item -Path "$path\$item" -Force -Confirm:$False -ErrorAction Stop
                 $successCount++
             }
             catch {
@@ -257,31 +253,38 @@ function Log-PasswordFiles {
         Write-Information "-- $failureCount passwords failed to remove in $browserName for $userName " -InformationAction Continue
     }
 }
-```
-
-```powershell
-# Chromium
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave|Edge' }).DisplayName) {
-    Get-Process -Name chrome, msedge, brave -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
+# Chrome and Brave
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
+    Get-Process -Name chrome, brave -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Google\\Chrome', 'Microsoft\\Edge', 'BraveSoftware\\Brave-Browser') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Google\Chrome', 'BraveSoftware\Brave-Browser') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
+# Microsoft Edge
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
+    Get-Process -Name msedge -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
+    Start-Sleep -Seconds 10
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Microsoft\Edge') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
+                Remove-Item -Path "$($path.FullName)\Appdata\Local\$Browser\User Data\Edge Wallet" -Force -Recurse -Confirm:$False -ErrorAction SilentlyContinue
+            }
+        }
+    }
+}
 # Firefox
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
     Get-Process -Name firefox -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        if (Test-Path -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles") {
-            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        if (Test-Path -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles") {
+            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
                 Log-PasswordFiles -browserName 'Firefox' -userName $($path.Name) -path $profile -items @('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqllite', 'logins.json', 'logins-backup.json')
             }
         }
@@ -349,7 +352,7 @@ This screen will appear.
 
 ![Change Hours 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_32.png)
 
-- Search for `Cyrisma Sensor Deployment` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
+- Search for `Browser Saved Password Audit Group` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
 ![Search Group](../../../static/img/ClearAudit---Browser-Saved-Password/image_33.png)
 

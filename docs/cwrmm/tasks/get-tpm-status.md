@@ -63,7 +63,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 try {
     $tpmResults = Get-Tpm -ErrorAction Stop
 } catch {
@@ -138,5 +138,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Custom Field  
 ![Custom Field Output](../../../static/img/Get-TPM-Status/image_24.png)  
 Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: True | RestartPending: False`
-
-

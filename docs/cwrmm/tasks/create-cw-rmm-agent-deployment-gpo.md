@@ -39,7 +39,7 @@ The results of the script execution will be stored on the endpoint in either the
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_7.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_8.png)
 
-#### User Parameters
+### User Parameters
 
 | Name  | Example                             | Required | Description                                                                                                          |
 |-------|-------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ Select the `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
+```PowerShell
 $Token = '@Token@'
 #region Strapper
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force -Erroraction SilentlyContinue
@@ -116,19 +116,19 @@ Set-StrapperEnvironment
 
 #Working Directory
 $ProjectName = 'Install-RMMAgentGPO'
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$StrapperSession.LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$StrapperSession.ErrorPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$StrapperSession.LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$StrapperSession.ErrorPath = "$WorkingDirectory\$ProjectName-Error.txt"
 
 if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
     } catch {
-        Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
+        Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
     }
 }
 
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
+if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
     $ACl = Get-ACL $WorkingDirectory 
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
@@ -157,72 +157,72 @@ Function New-ScriptFile {
         Update-Module -Name Strapper -ErrorAction Stop
     } catch {
         Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-        Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
+        Get-Module -Name Strapper -ListAvailable | Where-Object { `$_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion `$_.Version }
     }
-    Import-Module -Name Strapper 3>&1 2>&1 1>$null
+    Import-Module -Name Strapper 3>&1 2>&1 1>`$null
     Set-StrapperEnvironment
     #endregion
     
-    $ProjectName = 'Install-RMMAgent'
-    $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-    $StrapperSession.LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-    $StrapperSession.ErrorPath = "$WorkingDirectory/$ProjectName-Error.txt"
-    $Installer = "$WorkingDirectory/Agent_TKN$($Token).msi"
+    `$ProjectName = 'Install-RMMAgent'
+    `$WorkingDirectory = "C:\ProgramData\_automation\script\`$ProjectName"
+    `$StrapperSession.LogPath = "`$WorkingDirectory\`$ProjectName-log.txt"
+    `$StrapperSession.ErrorPath = "`$WorkingDirectory\`$ProjectName-Error.txt"
+    `$Installer = "`$WorkingDirectory\Agent_TKN$($Token).msi"
     
-    if ( !(Test-Path $WorkingDirectory) ) {
+    if ( !(Test-Path `$WorkingDirectory) ) {
         try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
+            New-Item -Path `$WorkingDirectory -ItemType Directory -Force -Erroraction Stop| Out-Null
         } catch {
-            Write-Log -Level Error -Text "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
+            Write-Log -Level Error -Text "Failed to Create `$WorkingDirectory. Reason: `$(`$Error[0].Excpection.Message)"
         }
     }
     
-    if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
-        $ACl = Get-ACL $WorkingDirectory 
-        $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-        $Acl.AddAccessRule($AccessRule)
-        Set-Acl  $WorkingDirectory $Acl
+    if (-not ( ( ( Get-Acl `$WorkingDirectory ).Access | Where-Object { `$_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+        `$ACl = Get-ACL `$WorkingDirectory 
+        `$AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
+        `$Acl.AddAccessRule(`$AccessRule)
+        Set-Acl  `$WorkingDirectory `$Acl
     }
     
-    $DesktopURL = "https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup/"
-    $ServerURL = "https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup/"
+    `$DesktopURL = "https://prod.setup.itsupport247.net/windows/DPMA/32/Agent_TKN$($Token)/MSI/setup"
+    `$ServerURL = "https://prod.setup.itsupport247.net/windows/MSMA/32/Agent_TKN$($Token)/MSI/setup"
     
-    $url = if ( ( Get-CimInstance -Class Win32_OperatingSystem ).Caption -match 'Server' ) { $ServerURL } else { $DesktopURL }
+    `$url = if ( ( Get-Ciminstance -Class Win32_OperatingSystem ).Caption -match 'Server' ) { `$ServerURL } else { `$DesktopURL }
     
     try { 
-        $webClient = [System.Net.WebClient]::new()
-        $WebClient.DownloadFile($url, $installer) 
-        Unblock-File -Path $Installer -Confirm:$false -ErrorAction SilentlyContinue
+        `$webClient = [System.Net.WebClient]::new()
+        `$WebClient.DownloadFile(`$url, `$installer) 
+        Unblock-File -Path `$Installer -Confirm:`$false -ErrorAction SilentlyContinue
     } catch {
-        Write-Log -Level Error -Text "Failed to download the installer. Reason: $($Error[0].Exception.Message)"
+        Write-Log -Level Error -Text "Failed to download the installer. Reason: `$(`$Error[0].exception.Message)"
     }
     
-    $ExitCode = (Start-Process 'C:/Windows/System32/msiexec.exe' -ArgumentList "/i `"$($installer)`" /qn" -Wait -PassThru).ExitCode
+    `$ExitCode = (Start-Process 'C:\Windows\System32\msiexec.exe' -ArgumentList "/i ""`$(`$installer)"" /qn" -Wait -PassThru).ExitCode
     
     do {
-        try {$connection = Test-Connection 8.8.8.8 -Erroraction Stop} catch {$connection = 'down'}
-    } until ($connection -ne 'Down')
+        try {`$connection = test-connection 8.8.8.8 -Erroraction Stop} catch {`$connection = 'down'}
+    } until (`$connection -ne 'Down' )
     
     Start-Sleep -Seconds 30
-    $serviceRestartTimeout = 1
+    `$serviceRestartTimeout = 1
     do {
         Write-Log -Level Information -Text 'Waiting for the ITPSPlatform Service to appear.'
         Start-Sleep -Seconds 1
-        $serviceRestartTimeout++
-    } until ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) -or $serviceRestartTimeout -gt 120 )
+        `$serviceRestartTimeout++
+    } until ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) -or `$serviceRestartTimeout -gt 120 )
     
     if ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' -ErrorAction SilentlyContinue ) {
         Write-Log -Level Information -Text 'Successfully installed CW RMM agent.'
         Start-Sleep -Seconds 30
-        foreach ( $service in ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' | Where-Object { $_.Status -ne 'Running' } ).Name) ) {
-            Restart-Service -Name $service -Force -Confirm:$false -ErrorAction SilentlyContinue
+        foreach ( `$service in ( ( Get-Service -Name 'ITSPlatform','ITSPlatformManager' | Where-Object { `$_.Status -ne 'Running' } ).Name) ) {
+            Restart-Service -Name `$service -Force -Confirm:`$false -ErrorAction SilentlyContinue
         }
     } else {
-        Write-Log -Level Error -Text "CW RMM Agent Installation Failed with exit code $ExitCode."
+        Write-Log -Level Error -Text "CW RMM Agent Installation Failed with exit code `$ExitCode."
     }
 "@
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
-    [System.IO.File]::WriteAllLines("$($WorkingDirectory)/$($ProjectName).ps1", $ScriptText, $Utf8NoBomEncoding)
+    [System.IO.File]::WriteAllLines("$($WorkingDirectory)\$($ProjectName).ps1", $ScriptText, $Utf8NoBomEncoding)
 }
 
 Import-Module GroupPolicy
@@ -238,8 +238,8 @@ If ( !$ExistingGPO ) {
     Write-Log -Level Information -Text "Group Policy Created: $guid"
     $Target = $forest.Split('.')
     $GPO | New-GPLink -Target "dc=$($Target[0]),dc=$($Target[1])" -LinkEnabled Yes
-    mkdir "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force | Out-Null
-    Copy-Item "$($WorkingDirectory)/$($ProjectName).ps1" "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force
+    mkdir "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force | Out-Null
+    Copy-Item "$($WorkingDirectory)\$($ProjectName).ps1" "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force
 
     $pshellscript = @"
 [Startup]
@@ -247,7 +247,7 @@ If ( !$ExistingGPO ) {
 0Parameters=
 "@
 
-    $psfilename = "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/psscripts.ini"
+    $psfilename = "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\psscripts.ini"
     $pshellscript | Out-File $psfilename -Encoding unicode
     $psfile = Get-Item $psfilename -Force
     $psfile.attributes = 'Hidden'
@@ -258,10 +258,10 @@ Version=2
 displayName=New Group Policy Object
 '@
 
-    $gptinifilename = "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/GPT.ini"
+    $gptinifilename = "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\GPT.ini"
     $gptini | Out-File $gptinifilename -Encoding utf8
     $gPCMachineExtensionNames = '[{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B6664F-4972-11D1-A7CA-0000F87571E3}]'
-    $adgpo = ([adsisearcher]"(&amp;(objectCategory=groupPolicyContainer)(name={$guid}))").FindAll().Item(0)
+    $adgpo = ([adsisearcher]"(&(objectCategory=groupPolicyContainer)(name={$guid}))").FindAll().Item(0)
     $gpoentry = $adgpo.GetDirectoryEntry()
     $gpoentry.Properties['gPCMachineExtensionNames'].Value = $gPCMachineExtensionNames
     $gpoentry.Properties['versionNumber'].Value = '2'
@@ -270,14 +270,14 @@ displayName=New Group Policy Object
     Write-Log -Level Information -Text 'CW RMM Agent Deployment Group Policy Object exists'
     Write-Log -Level Information -Text $ExistingGPO
     $Guid = $ExistingGPO.ID.ToString().ToUpper()
-    $oldscript = Get-Content -Path "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$Guid}/Machine/Scripts/Startup/$ProjectName.ps1" -ErrorAction SilentlyContinue
+    $oldscript = Get-Content -Path "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$Guid}\Machine\Scripts\Startup\$ProjectName.ps1" -ErrorAction SilentlyContinue
     if ($oldscript -match $token) {
         Write-Log -Level Information -Text 'Token matches'
         return
     } else {
-        Write-Log -Level Information -Text 'Token doesn’t match, applying new token'
+        Write-Log -Level Information -Text 'token doesnt match, applying new token'
         New-ScriptFile -Token $Token
-        Copy-Item "$($WorkingDirectory)/$($ProjectName).ps1" "C:/Windows/SYSVOL/sysvol/$forest/Policies/{$guid}/Machine/Scripts/Startup" -Force
+        Copy-Item "$($WorkingDirectory)\$($ProjectName).ps1" "C:\Windows\SYSVOL\sysvol\$forest\Policies\{$guid}\Machine\Scripts\Startup" -Force
     }
 }
 ```
@@ -311,9 +311,10 @@ Select the `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
+```PowerShell
+Get-Content -Path "C:\ProgramData\_automation\script\Install-RMMAgentGPO\Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
 ```
-Get-Content -Path "C:/ProgramData/_automation/script/Install-RMMAgentGPO/Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
-```
+
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_29.png)  
 ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
 

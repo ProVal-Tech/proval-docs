@@ -27,7 +27,7 @@ Please create a new PowerShell style script to implement this task.
 
 ![Image](../../../static/img/Huntress-Agent-(Reinstall)/image_3.png)  
 
-# Script
+## Script
 
 ## Row 1 Function: Script Log
 
@@ -36,14 +36,15 @@ Please create a new PowerShell style script to implement this task.
 Input the following:
 
 The script will detect the required keys for the Huntress reinstallation:  
-```plaintext
+
+```Shell
+The script will detect the required keys for the huntress reinstallation:
 acct_key : @acct_key@
 org_key: @ORG_Key@
-tags: ['installation', 'security', 'windows']
+Tags: @Tags@
+Attempting to download the ps1 from the below link:
+https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be attempted to reinstall.
 ```
-
-Attempting to download the PS1 file from the following link:  
-[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1). Once downloaded, the agent will attempt to reinstall.
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -90,53 +91,52 @@ Attempting to download the PS1 file from the following link:
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
-```powershell
+```PowerShell
 #region Setup - Variables
 $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-$WorkingDirectory = 'C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand'
-$PS1Path = "$WorkingDirectory/Invoke-HuntressAgentCommand.ps1"
+$WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
+$PS1Path =  "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
 $AcctKey = '@acctkey@'
 $OrgKey = '@orgkey@'
 $Tags = '@tags@'
 $Parameters = @{}
 
-if ($AcctKey -ne '' -and $AcctKey -notmatch '@acct_key') {
-    $Parameters['reinstall'] = $true
-    $Parameters['acctkey'] = $AcctKey
-} else {
-    return 'Account Key Missing'
-}
+    if ($AcctKey -ne '' -and $AcctKey -notmatch '@acct_key') {
+        $Parameters['reinstall'] = $true
+        $Parameters['acctkey'] = $AcctKey
+    } else {
+        return 'Account Key Missing'
+    }
 
-if ($OrgKey -ne '' -and $OrgKey -notmatch '@Org_key') {
-    $Parameters['orgkey'] = $OrgKey
-} else {
-    $Parameters['orgkey'] = ''
-}
+    if ($OrgKey -ne '' -and $OrgKey -notmatch '@Org_key') {
+        $Parameters['orgkey'] = $OrgKey
+    } else {
+        $Parameters['orgkey'] = ''
+    }
 
-if ($Tags -ne '' -and $Tags -notmatch '@tags') {
-    $Parameters['tags'] = $Tags
-} else {
-    $Parameters['tags'] = ''
-}
-#endregion
+    if ($Tags -ne '' -and $Tags -notmatch '@tags') {
+        $Parameters['tags'] = $Tags
+    } else {
+        $Parameters['tags'] = ''
+    }
+
+    #endregion
 
 #region Setup - Folder Structure
-if (!(Test-Path $WorkingDirectory)) {
+if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
-}
-if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
+} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
     $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
-#endregion
 
-#region Write Script
+#region write script
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
 if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
@@ -146,7 +146,7 @@ if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
 if (!(Test-Path -Path $PS1Path)) {
-    return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
+    return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
 }
 #endregion
 
@@ -244,5 +244,3 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script log
-
-

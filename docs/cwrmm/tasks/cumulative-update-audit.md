@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document executes a PowerShell script to validate the full version of the OS and compares it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71) for further auditing and monitoring purposes.
+This document executes a PowerShell script to validate the full version of the OS and compares it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the [Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71) for further auditing and monitoring purposes.
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This document executes a PowerShell script to validate the full version of the O
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
+- [Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
 
 ## Variables
 
@@ -32,7 +32,7 @@ This document executes a PowerShell script to validate the full version of the O
 
 ## Implementation
 
-Create the Custom Field [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71).
+Create the Custom Field [Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71).
 
 ### Create Script
 
@@ -65,13 +65,70 @@ The script will return `Failed` in the Custom Field if the most recently install
 ![PowerShell Script](../../../static/img/Cumulative-Update-Audit/image_18.png) 
 ![PowerShell Script 2](../../../static/img/Cumulative-Update-Audit/image_19.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
+Paste in the following PowerShell script, set the expected time of script execution to `600` seconds and click the `Save` button. 
 
 ```powershell
-# Needs rewriting to use the latest version that targets the JSON file
+#requires -RunAsAdministrator
+#requires -Version 5
+
+#region Global Variables
+$ErrorActionPreference = 'silentlycontinue'
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+#endRegion
+
+#region CW RMM parameter
+$ThresholdDays = '@ThresholdDays@'
+$ThresholdDays = if ( -not ($ThresholdDays -match '^[0-9]{1,}$') ) { '75' } else { $ThresholdDays }
+#endRegion
+
+#region Setup - Variables
+$ProjectName = 'Get-LatestInstalledCU'
+$BaseURL = 'https://file.provaltech.com/repo'
+$PS1URL = "$BaseURL/script/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+#endregion
+
+#region Setup - Folder Structure
+if ( !(Test-Path $WorkingDirectory ) ) {
+    New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
+}
+
+[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
+    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
+    return
+} elseif ($response.StatusCode -eq 200) {
+    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
+    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
+}
+if (!(Test-Path -Path $PS1Path)) {
+    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+    return
+}
+#endregion
+
+#region Execution
+$CUInfo = & $ps1path
+#endregion
+
+if ( $Cuinfo -match 'Failed to gather build number|Unsupported Operating System' ) {
+    throw "Failure Reason: $($Cuinfo)"
+} else {
+    $Today = Get-Date
+    $FormattedDate = $Today.ToString('yyyy-MM-dd')
+    $CompareFormat = [DateTime]$FormattedDate
+    $ReleaseDate = $CUInfo.ReleaseDate
+    $comparereleasedate = [DateTime]$ReleaseDate
+    $Difference = New-TimeSpan -Start $comparereleasedate -End $CompareFormat
+    $status = if ($Difference.Days -ge $ThresholdDays) { 'Failed' } else { 'Success' }
+    return "$($status). $($CUInfo.LastInstalledCU). Version: $($CUInfo.OSBuild). Date Audited: $FormattedDate"
+}
 ```
 
-Save and move to the next row.
+![Select Custom Field](../../../static/img/Cumulative-Update-Audit/image_39.png)
 
 #### Row 3 Function: Script Log
 
@@ -131,7 +188,7 @@ This pop-up box will appear.
 
 Change the Repeat interval to once per month. Here, I am selecting the 15th of every month since Microsoft releases the patches on the second Tuesday of every month.
 
-![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png) 
+![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png)  
 ![Repeat Interval Confirmation](../../../static/img/Cumulative-Update-Audit/image_32.png)
 
 Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.
@@ -144,15 +201,15 @@ Now click the `Run` button to initiate the task.
 
 The task will start appearing in the Scheduled Tasks.
 
-![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png) 
+![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png)  
 ![Scheduled Tasks 2](../../../static/img/Cumulative-Update-Audit/image_36.png)
 
 ## Output
 
-- **Script log**
+- **Script log**  
 ![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_37.png)
 
-- **Custom Field**
+- **Custom Field**  
 ![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
 
 

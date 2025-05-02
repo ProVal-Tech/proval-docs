@@ -1,8 +1,8 @@
 ---
 id: 'd920b865-7887-41b6-9fcd-b4802832d2a9'
 slug: /d920b865-7887-41b6-9fcd-b4802832d2a9
-title: 'CW RMM Script - BitLocker Initialize C Volume'
-title_meta: 'CW RMM Script - BitLocker Initialize C Volume'
+title: 'BitLocker Initialize C Volume'
+title_meta: 'BitLocker Initialize C Volume'
 keywords: ['bitlocker', 'encryption', 'windows', 'security', 'c-volume']
 description: 'This document outlines the procedure for enabling BitLocker on the system volume, detailing the encryption methods used, dependencies, and step-by-step implementation instructions for creating a task in ConnectWise RMM.'
 tags: ['encryption', 'security', 'setup', 'windows']
@@ -21,7 +21,7 @@ The encryption methods that will be used to protect the target volume are:
 
 These two options come with custom field dependencies.  
 Refer to the document for the custom field dependencies check:  
-[CW RMM Custom Field - BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
+[BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
 
 ## Sample Run
 
@@ -31,7 +31,7 @@ Refer to the document for the custom field dependencies check:
 
 ## Dependencies
 
-[CW RMM Custom Field - BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
+[BitLocker Initialize C Volume](/docs/25f75989-92a9-49f9-b99b-a241b9f7d6ef)
 
 ## Variables
 
@@ -39,7 +39,7 @@ Refer to the document for the custom field dependencies check:
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Parameter  | This stores the parameter based on the combination of encryption methods that came from custom field options and allows reboot with TPM initialization based on the Allow_TPM/Reboot user parameter settings.                                                       |
 
-#### User Parameters
+## User Parameters
 
 | Name               | Default Value | Required | Description                                                                                                                                                                                                                                           |
 |--------------------|---------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -124,9 +124,9 @@ In the script log message, type `Checking OS.` so that the script will send the 
 ### Row 4: Function: PowerShell Script
 
 ![Row 4 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 4 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_17.png)  
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
+
 ```powershell
 $os = Get-WmiObject -Class Win32_OperatingSystem
 if ($os.Caption -like "*Windows 10*") {
@@ -136,9 +136,11 @@ elseif ($os.Caption -like "*Windows 11*") {
     return 'The operating system is Windows 11.'
 }
 else {
-    return 'The operating system is not a Windows workstation.'
+    return 'The operating system is not a Windows workstations.'
 }
 ```  
+
+![Row 4 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_17.png)  
 
 ### Row 5: Function: Script Log
 
@@ -340,20 +342,19 @@ In the script log message, type `Executing BitLocker initialization` so that the
 ### Row 9: Function: PowerShell Script
 
 ![Row 9 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 9 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_38.png)  
 
-Paste the following PowerShell script and set the expected script execution time to 1800 seconds.  
+Paste the following PowerShell script and set the expected script execution time to `1800` seconds.  
+
 ```powershell
 #region Setup - Variables
 $ProjectName = 'Initialize-BitLockerVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -369,11 +370,12 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
 #region Execution
 & $PS1Path @Parameter@
 #endregion
 ```  
+
+![Row 9 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_38.png)  
 
 ### Row 10: Function: Script Log
 
@@ -385,12 +387,12 @@ In the script log message, type `%output%` so that the script will send the resu
 ### Row 11: Function: PowerShell Script
 
 ![Row 11 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 11 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_39.png)  
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
+
 ```powershell
-$logFilePath = 'C:/ProgramData/_automation/script/Initialize-BitLockerVolume/Initialize-BitLockerVolume-log.txt'
-$errorFilePath = 'C:/ProgramData/_automation/script/Initialize-BitLockerVolume/Initialize-BitLockerVolume-error.txt'
+$logFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-log.txt'
+$errorFilePath = 'C:\ProgramData\_automation\script\Initialize-BitLockerVolume\Initialize-BitLockerVolume-error.txt'
 if (Test-Path $logFilePath) {
     if (Test-Path $errorFilePath) {
         return 'Failure'
@@ -404,6 +406,8 @@ else {
 }
 ```  
 
+![Row 11 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_39.png)  
+
 ### Row 12: Function: Script Log
 
 ![Row 12 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
@@ -416,10 +420,8 @@ In the script log message, type `%output%` so that the script will send the resu
 Add a new row by clicking on the Add Row button.  
 Select Function 'Set Custom Field'. When you select `Set Custom Field`, it will open up a new window.  
 
-In this window, search for the `ACP BitLocker INIT Result` field.  
-**Custom Field:** `ACP BitLocker INIT Result`  
+In this window, search for the `BitLocker INIT Result` field.  
+**Custom Field:** `BitLocker INIT Result`  
 **Value:** `%Output%`  
 ![Row 13 Custom Field](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_40.png)  
-
-
 
