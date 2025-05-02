@@ -37,13 +37,13 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 #### Step 3
 
-Fill in the following details in the `Description` section:  
+- Fill in the following details in the `Description` section:  
 
-**Name:** `Domain Admin Account Lockout`  
-**Description:** `This task is configured to run as an autofix with `Domain Admin Account LockOut` monitor to generate tickets.`  
-**Category:** `Custom`
+- **Name:** `Domain Admin Account Lockout`  
+- **Description:** `This task is configured to run as an autofix with "Domain Admin Account LockOut" monitor to generate tickets.`  
+- **Category:** `Custom`
 
-![step3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image1.png)
+  ![step3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image1.png)
 
 
 ### Script Editor
@@ -68,9 +68,9 @@ The following function will pop up on the screen:
 
 #### Row 2 Function: `Powershell Script`  
 
-Add a new row by clicking the Add Row button.  
-Search and select the PowerShell Script function.  
-The following function will pop up on the screen: 
+- Add a new row by clicking the Add Row button.  
+- Search and select the PowerShell Script function.  
+- The following function will pop up on the screen: 
 ![Row2](../../../static/img/cwrmm-task-domain-admin-account-lockout/image5.png)
 
 Paste in the following PowerShell script and set the Expected time of script execution in seconds to 900 seconds. Click the Save button.
@@ -101,12 +101,12 @@ Type `Username` in the Value box.
 ![Row3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image7.png)
 
 #### Row 3b Function: Create Ticket
-Add a new row in the `if/then` section by clicking the Add Row button.    
-Search and select the `create ticket` function.  
-Fill in the Following details in the pop up:  
-Subject : `Domain Admin Locked Account Detected on @ComputerName@`  
-Description : `Domain Admin Locked Account Detected on @ComputerName@. Refer to the below detail:
-%Output%.`
+- Add a new row in the `if/then` section by clicking the Add Row button.    
+- Search and select the `create ticket` function.  
+- Fill in the Following details in the pop up:  
+- Subject : `Domain Admin Locked Account Detected on @ComputerName@`  
+- Description : `Domain Admin Locked Account Detected on @ComputerName@. Refer to the below detail:
+%Output%.`  
 Priority : `Medium` 
 ![Row3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image8.png)
 

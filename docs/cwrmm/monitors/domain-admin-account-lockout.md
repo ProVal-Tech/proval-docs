@@ -18,7 +18,7 @@ This event monitor checks every 15 minutes for a domain admin account lockout. I
 
 ## Target
 
-Domain Controllers.  
+`Domain Controllers`  
 This should target the group 'Domain Controllers' as shown below:
 ![Target](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image6.png)
 
@@ -40,26 +40,26 @@ This page will appear after clicking on the `Create Monitor` button:
 
 ### Step 3
 
-Fill in the mandatory columns on the left side  
-Name: `Domain Admin Account LockOut`  
-Description: `This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the 'Domain Admin Account Lockout' task to generate a ticket.`  
-Type: `Event`  
-Severity: `Critical Impact Results`  
-Family: `Active Directory`  
+- Fill in the mandatory columns on the left side  
+- Name: `Domain Admin Account LockOut`  
+- Description: `This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the 'Domain Admin Account Lockout' task to generate a ticket.`  
+- Type: `Event`  
+- Severity: `Critical Impact Results`  
+- Family: `Active Directory`  
 ![Step3](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image1.png)
 
-
+ 
 ### Step 4
 
-Fill in the condition on the right side.  
-Follow the screenshot:  
+- Fill in the condition on the right side.  
+- Follow the screenshot:  
 ![Step3](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image2.png)
 
-Click on automation and select `Domain Admin Account Lockout` task. 
+- Click on `Add Automation` and select `Domain Admin Account Lockout` task. 
 ![Step3](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image3.png)
 ![Step3](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image4.png)
 
-Turn Off Ticket Resolution
+- Turn Off Ticket Resolution
 And Select `Do not Generate Ticket` from the monitor Output DropDown.
 ![Step3](../../../static/img/cwrmm-monitor-domain-admin-account-lockout/image5.png)
 
