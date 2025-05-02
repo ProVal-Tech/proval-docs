@@ -62,11 +62,55 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
 ```powershell
+<#
+.SYNOPSIS
+    This script checks the compatibility of a Windows system (Windows 10 or Windows 11) for upgrading to Windows 11.
+
+.DESCRIPTION
+    The script performs the following steps:
+    1. Sets the `$ProgressPreference` to 'SilentlyContinue' to suppress progress messages.
+    2. Configures the .NET ServicePointManager to use TLS 1.2 for secure web requests.
+    3. Temporarily sets the PowerShell execution policy to 'Unrestricted' for the current process.
+    4. Checks if the operating system is Windows 10 or Windows 11. If not, it exits with a message indicating an unsupported OS.
+    5. Downloads the `HardwareReadiness.ps1` script from Microsoft's official website to a working directory.
+    6. Ensures the working directory exists and creates it if necessary.
+    7. Executes the downloaded `HardwareReadiness.ps1` script to perform the compatibility check.
+    8. Parses the results of the compatibility check:
+        - If the system is compatible, it returns a success message with all required components marked as compatible.
+        - If the system is not compatible, it parses the detailed results and converts the status of each component (CPU, TPM, OS Drive Size, Secure Boot, and Memory) into string values:
+            - Pass
+            - Fail
+            - Failed to Run
+            - Undetermined
+        - Returns a detailed string summarizing the compatibility status of each component and the overall result.
+
+.NOTES
+    - This script is intended for use on Windows 10 and Windows 11 systems only.
+    - The `HardwareReadiness.ps1` script is downloaded from Microsoft's official website.
+    - Ensure that the system has internet access to download the readiness script.
+
+.EXAMPLE
+    Run the script to check Windows 11 compatibility:
+    ```powershell
+    .\CWRMMImp-CheckWindows11Compatibility.ps1
+    ```
+
+.OUTPUTS
+    - If compatible: `Compatible`
+    - If not compatible: `CPU=(Exception from HRESULT: 0x80284008)|TPM=UNDETERMINED|OSDriveSize=PASS|Secureboot=PASS|Memory=PASS|Result=UNDETERMINED`
+    - If unsupported OS: `Unsupported OS`
+#>
+$ProgressPreference = 'SilentlyContinue'
+$ConfirmPreference = 'None'
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force -Confirm:$false
 if ( [System.Environment]::OSVersion.Version.Major -eq 10 ) {
     $DownloadUrl = 'https://download.microsoft.com/download/e/1/e/e1e682c2-a2ee-46c7-ad1e-d0e38714a795/HardwareReadiness.ps1'
-    $ScriptPath = "$Env:Temp/HardwareReadiness.ps1"
+    $workingDirectory = 'C:\ProgramData\_Automation\Script\Check-Windows11Compatibility'
+    $ScriptPath = "$workingDirectory\HardwareReadiness.ps1"
+    if (!(Test-Path -Path $workingDirectory)) {
+        New-Item -Path $workingDirectory -ItemType Directory -Force | Out-Null
+    }
     Invoke-WebRequest -Uri $DownloadUrl -UseBasicParsing -OutFile $ScriptPath -ErrorAction SilentlyContinue
     if (!(Test-Path -Path $ScriptPath)) {
         return 'An error occurred and the script was unable to be downloaded. Exiting.'
@@ -76,7 +120,13 @@ if ( [System.Environment]::OSVersion.Version.Major -eq 10 ) {
     if ( $Obj.returnResult -eq 'CAPABLE' ) {
         return 'Compatible'
     } else {
-        return $Obj.logging
+        $logging = ($obj.logging -split ';(?![^{}]*\})').trim()
+        $Storage = (($logging -match '^Storage:') -split '\. ')[-1].Trim()
+        $Memory = (($logging -match '^Memory:') -split '\. ')[-1].Trim()
+        $TPM = (($logging -match 'TPM:') -split '\. ')[-1].Trim()
+        $Processor = (($logging -match 'Processor:') -split '\. ')[-1].Trim()
+        $secureBoot = (($logging -match 'SecureBoot:') -split '\. ')[-1].Trim()
+        return "CPU=$Processor|TPM=$TPM|OSDriveSize=$Storage|Secureboot=$secureBoot|Memory=$Memory|Result=$($Obj.returnResult)"
     }
 } else {
     return 'Unsupported OS'
