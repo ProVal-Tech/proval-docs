@@ -22,7 +22,7 @@ This script removes the specified Wifi profile from the system. It provides a br
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic Script - Remove-WifiProfile](/docs/d9f38912-7b4a-4da1-a880-210aae4fbb02)
+[Remove-WifiProfile](/docs/d9f38912-7b4a-4da1-a880-210aae4fbb02)
 
 ## User Parameters
 
@@ -47,7 +47,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### ProfileName:
+### ProfileName
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -90,7 +90,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```powershell
 #region parameters
 $ProfileName = '@ProfileName@'
-if ( [String]::IsNullOrWhiteSpace($ProfileName) -or $Title -match '/SProfileName/S' ) {
+if ( [String]::IsNullOrWhiteSpace($ProfileName) -or $Title -match '\SProfileName\S' ) {
     throw 'ProfileName is a mandatory parameter.'
 }
 $Parameters = @{
@@ -102,11 +102,11 @@ $ProjectName = 'Remove-WifiProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -129,11 +129,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -175,7 +175,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-
-

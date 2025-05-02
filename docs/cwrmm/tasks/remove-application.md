@@ -22,10 +22,9 @@ This script is designed to perform the uninstallation of the application provide
 
 ## Dependencies
 
-[CW RMM Custom Field - Remove Application](/docs/c893b839-b951-4b0c-b1d0-879361818839)  
-Remove Application Result - Custom Field (Endpoint)
+[Custom Field - Remove Application Result](/docs/c893b839-b951-4b0c-b1d0-879361818839)  
 
-#### User Parameters
+## User Parameters
 
 | Name             | Example                                                                                           | Required | Description                                                                                                                                                                                                                                                                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,10 +69,10 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*', 'HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*' | Get-ItemProperty).DisplayName);
-    $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
-    if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
-} else {
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Get-ItemProperty).DisplayName); $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } }; 
+    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
+}
+else {
     return 'Parameter missing'
 }
 ```
@@ -108,9 +107,10 @@ Paste the highlighted text:
 #### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
+![Image](../../../static/img/Remove-Application/image_48.png)  
 
 In the script exit message, leave it blank.  
-
+![Image](../../../static/img/Remove-Application/image_49.png)  
 
 ### Row 5: Function: Script Log
 
@@ -118,31 +118,30 @@ In the script exit message, leave it blank.
 
 Paste the highlighted text:  
 `Executing the PowerShell script to perform the uninstallation of the @ApplicationName@.`  
- 
+
+![Image](../../../static/img/Remove-Application/image_50.png)  
 
 ### Row 6: Function: PowerShell Script
 
 ![Row 6 PowerShell](../../../static/img/Remove-Application/image_22.png)  
- 
 
-Paste in the following PowerShell script and set the expected time of script execution to **3600** seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `3600` seconds.
 
 ```powershell
 #region Setup - Variables
 $ProjectName = 'Remove-Application'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $Parameters = @{
      Name = @ApplicationName@
-}
+ }
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -158,7 +157,6 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
 #region Execution
 & $PS1Path @Parameters
 #endregion
@@ -176,7 +174,7 @@ In the script log message, simply type `%output%` so that the script will send t
 ![Row 8 PowerShell](../../../static/img/Remove-Application/image_22.png)  
 ![Row 8 PowerShell Image](../../../static/img/Remove-Application/image_23.png)  
 
-Paste in the following PowerShell script and set the expected time of script execution to **300** seconds.
+Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
 $ErrorActionPreference = 'SilentlyContinue'
@@ -184,10 +182,10 @@ $to_Remove = @ApplicationName@
 if ($to_Remove) {
     $Applications = @()
     $for_removal = @()
-    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*', 'HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\*' | Get-ItemProperty).DisplayName);
-    $for_removal = foreach ($application in $applications) { if ($to_remove -contains $application) { $application } };
-    if ($for_removal) { return "'$($for_removal -join ''',''')'" } else { return 'Not Installed' }
-} else {
+    $Applications = [string[]]($(Get-AppxPackage).Name) + [string[]]((Get-AppxProvisionedPackage -online).DisplayName) + [string[]]((Get-ChildItem 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Get-ItemProperty).DisplayName); $for_removal = foreach ($application in $applications) { if ( $to_remove -contains $application) { $application } }; 
+    if ($for_removal) { return " '$($for_removal -join ''',''')' " } else { return 'Not Installed' }
+}
+else {
     return 'Parameter missing'
 }
 ```
@@ -222,18 +220,24 @@ Select Function 'Set Custom Field'. When you select `set custom field`, it will 
 In this window, search for the **Remove Application Result** field.  
 **Custom Field:** Remove Application Result  
 **Value:** `Success`  
- 
+
+![Image](../../../static/img/Remove-Application/image_36.png)  
 
 #### Row 10d: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-In the script exit message, leave it blank.    
+![Image](../../../static/img/Remove-Application/image_48.png)  
+
+In the script exit message, leave it blank.  
+![Image](../../../static/img/Remove-Application/image_49.png)  
 
 ### Row 11: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
+![Image](../../../static/img/Remove-Application/image_48.png)  
+  
 In the script exit message, write `@ApplicationName@ failed to uninstall. Exiting script with error.`  
-![Row 11 Exit](../../../static/img/Remove-Application/image_37.png)  
+![Row 11 Exit](../../../static/img/Remove-Application/image_51.png)  
 
 ### Row 12: Function: Set Custom Field
 
@@ -282,7 +286,5 @@ The task will start appearing in the Scheduled Tasks.
 
 ## Output
 
-- Task log
-- Custom field 'Remove Application Result'
-
-
+- Task log  
+- Custom field [Remove Application Result](/docs/c893b839-b951-4b0c-b1d0-879361818839)

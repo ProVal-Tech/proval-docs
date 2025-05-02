@@ -20,7 +20,7 @@ The reboot will be required to complete the renaming process.
 
 [Custom Fields Rename-Machine](/docs/ba3c12eb-f166-4982-ab21-a2337a989614)
 
-[Agnostic Rename-Machine](/docs/a556909a-ff2f-489f-ab3a-6e928722c09c)
+[Rename-Machine](/docs/a556909a-ff2f-489f-ab3a-6e928722c09c)
 
 ## User Parameters
 
@@ -28,7 +28,6 @@ The reboot will be required to complete the renaming process.
 |---------|-----------|----------|---------|------------|--------------------------------------------------|
 | NewName | COMPUTER2 | True     |         | Text String| The new name to be set for the Windows System    |
 | Reboot  | True or False | False |         | Flag       | If this is checked, the system will be rebooted after the renaming of the system |
-
 
 ![User Parameters](<../../../static/img/docs/Windows - System - Rename/{02C97121-7F43-4EB9-BB5C-C0979E633563}.png>)
 
@@ -165,7 +164,7 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
 
-```
+```powershell
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 #region Setup - Variables
 $BaseURL = 'https://file.provaltech.com/repo'
@@ -252,7 +251,7 @@ Search and select the `Command Prompt` function.
 
 Paste the following Command and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
-```
+```shell
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "& 'C:\ProgramData\_automation\script\Rename-Machine\Rename-Machine.ps1' -NewName '@NewName@' -Username '@Username@' -Password '@Password@'"
 ```
 
@@ -299,7 +298,7 @@ Also, Select the `Continue on Failure`.
 
 ![PowerShell Continue on Failure](<../../../static/img/docs/Windows - System - Rename/image-8.png>)
 
-```
+```powershell
 $WorkingDirectory = 'C:\ProgramData\_automation\script\Rename-Machine'
 $PS1Log = "$WorkingDirectory\Rename-Machine-log.txt"
 $PS1ErrorLog = "$WorkingDirectory\Rename-Machine-error.txt"

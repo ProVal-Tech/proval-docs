@@ -1,8 +1,8 @@
 ---
 id: 'c893b839-b951-4b0c-b1d0-879361818839'
 slug: /c893b839-b951-4b0c-b1d0-879361818839
-title: 'Remove Application'
-title_meta: 'Remove Application'
+title: 'Remove Application Result'
+title_meta: 'Remove Application Result'
 keywords: ['customfield', 'application', 'result', 'status']
 description: 'This document provides a detailed overview of the custom field used in the "Remove Application" script to track the success or failure status of application removal. It includes steps for creating the custom field and its specific attributes.'
 tags: ['software']

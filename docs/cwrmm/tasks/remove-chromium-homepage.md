@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to remove homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). It includes the CW RMM implementation of [Remove-ChromiumHomepage](/docs/38674bcd-8b19-4072-a58f-314efad2e856  ).
+This document describes how to remove homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave). It includes the CW RMM implementation of [Remove-ChromiumHomepage](/docs/38674bcd-8b19-4072-a58f-314efad2e856).
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This document describes how to remove homepage settings from popular Chromium-ba
 
 ## Dependencies
 
-[SWM - Software Configuration - Remove-ChromiumHomepage](/docs/38674bcd-8b19-4072-a58f-314efad2e856  )
+[Remove-ChromiumHomepage](/docs/38674bcd-8b19-4072-a58f-314efad2e856)
 
 ## User Parameters
 
@@ -86,11 +86,11 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $Target = '@Target@'
 $Browser = @()
-if ( $Target -match '/STarget/S' -or ($null -eq $Target) ) {
+if ( $Target -match '\STarget\S' -or ($null -eq $Target) ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
 } elseif ( $target.Length -lt 2  ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
@@ -108,19 +108,16 @@ if ( $Target -match '/STarget/S' -or ($null -eq $Target) ) {
 $parameters = @{
     Target = $Browser
 }
-```
-
-```
 #region Setup - Variables
 $ProjectName = 'Remove-ChromiumHomepage'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -142,9 +139,6 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```
 if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
@@ -191,6 +185,4 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
-![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
-
-
+    ![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  

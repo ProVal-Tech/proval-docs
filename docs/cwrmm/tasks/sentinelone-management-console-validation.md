@@ -12,7 +12,8 @@ unlisted: false
 
 ## Summary
 
-> The task validates whether the SentinelOne Management Server detected on the computer is different from what is set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
+The task validates whether the SentinelOne Management Server detected on the computer is different from what is set for the Client in CW RMM. Information gathered by this task is stored in the following custom fields:
+
 - [Client Level S1 Mgmt Server](/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8)
 - [Computer Level S1 Mgmt Server](/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866)
 - [S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
@@ -24,11 +25,11 @@ unlisted: false
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
-- [CW RMM - Custom Field - Endpoint - Computer Level S1 Mgmt Server](/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866)
-- [CW RMM - Custom Field - Endpoint - Client Level S1 Mgmt Server](/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8)
-- [CW RMM - Custom Field - Site - SentinelOne Site Key](/docs/0c2128f8-2f99-47e7-a0ff-82b854ff2701)
-- [CW RMM - Dynamic Group - SentinelOne Installed](/docs/9bed886f-fa13-4389-932e-47c62482db0d)
+- [Custom Field - Endpoint - S1 Mgmt Server Discrepancy](/docs/c600a6e2-bd09-4172-8784-d969838eea23)
+- [Custom Field - Endpoint - Computer Level S1 Mgmt Server](/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866)
+- [Custom Field - Endpoint - Client Level S1 Mgmt Server](/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8)
+- [Custom Field - Site - SentinelOne Site Key](/docs/0c2128f8-2f99-47e7-a0ff-82b854ff2701)
+- [Dynamic Group - SentinelOne Installed](/docs/9bed886f-fa13-4389-932e-47c62482db0d)
 
 ## Task Creation
 
@@ -89,7 +90,7 @@ if ( ($clientLevelKey -match [Regex]::Escape('clientSiteKey@')) -or ($null -eq $
 }
 $json = [System.Text.Encoding]::UTF8.GetString($([System.Convert]::FromBase64String($clientLevelKey)))
 $obj = $json | ConvertFrom-Json
-$url = $obj.url -replace '/"', ''
+$url = $obj.url -replace '"', ''
 return $url
 ```
 
@@ -145,17 +146,17 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
-$regPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SentinelAgent'
+$regPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\SentinelAgent'
 if ( Test-Path -Path $regPath ) {
-    $ctlPath = \"$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))\\.exe', 'SentinelCtl.exe' -Replace '/"','')\"
+    $ctlPath = "$((Get-ItemProperty -Path $regPath).ImagePath -Replace 'Sentinel((Agent)|(ServiceHost))\.exe', 'SentinelCtl.exe' -Replace '"','')"
     if ( !(Test-Path -Path $ctlPath) ) {
         throw 'SentinelCtl.exe not found.'
     }
 } else {
     throw 'Sentinel Agent not found.'
 }
-$mgmtServer = cmd.exe /c \"$ctlPath\" config server.mgmtServer
-$mgmtServer = $mgmtServer -replace '/"', ''
+$mgmtServer = cmd.exe /c "$ctlPath" config server.mgmtServer
+$mgmtServer = $mgmtServer -replace '"', ''
 return $mgmtServer
 ```
 
@@ -214,9 +215,9 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 $clientMgmtSvr = '@clientMgmtSvr@'
 $computerMgmtSvr = '@computerMgmtSvr@'
 if ( ($clientMgmtSvr -match [Regex]::Escape('clientMgmtSvr@')) -or ($null -eq $clientMgmtSvr) ) {
-    throw 'Invalid Client Level Management Server.'
+    throw 'Invlaid Client Level Management Server.'
 } elseif ( ($computerMgmtSvr -match [Regex]::Escape('computerMgmtSvr@')) -or ($null -eq $computerMgmtSvr) ) {
-    throw 'Invalid Computer Level Management Server.'
+    throw 'Invlaid Client Level Management Server.'
 } elseif ( $clientMgmtSvr -eq $computerMgmtSvr ) {
     return 'No'
 } elseif ( $clientMgmtSvr -ne $computerMgmtSvr ) {
@@ -286,5 +287,3 @@ Click the `Run` button to initiate the schedule.
 
 - Custom Fields  
 ![Custom Fields](../../../static/img/SentinelOne-Management-Console-Validation/image_41.png)  
-
-

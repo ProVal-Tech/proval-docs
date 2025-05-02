@@ -38,7 +38,7 @@ Click 'Run task' to schedule the task immediately.
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -74,7 +74,7 @@ Paste the highlighted text: `Checking OS`
 
 Paste in the following PowerShell script and set the expected time of script execution to 600 seconds.
 
-```
+```powershell
 $os = Get-CimInstance -ClassName Win32_OperatingSystem
 if ($os.ProductType -eq 1) {
     return 'Workstation'
@@ -87,7 +87,11 @@ if ($os.ProductType -eq 1) {
 
 ### Row 3: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image.png)
+
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-1.png)
 
 ### Row 4: Logic: If/Then
 
@@ -101,13 +105,19 @@ In the IF part, enter `Workstation` in the right box of the "Output Does Not Con
 
 ### Row 4b: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-2.png)
+
 In the script log message, type `The OS detected is confirmed not a Workstation. Please try the script 'Force Reboot Server with Reboot Windows Verification'. Exiting script without any action.`
 
 ![Row 4b Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_12.png)
 
 ### Row 4c: Function: Script Exit
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
 
 ### Row 5: Logic: If/Then
 
@@ -121,6 +131,8 @@ In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ### Row 5b: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-5.png)
+
 In the script log message, type `Force Reboot is approved on the endpoint via Reboot Scripts. Proceeding for reboot schedule without reboot window validation.`
 
 ![Row 5b Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_14.png)
@@ -129,7 +141,7 @@ In the script log message, type `Force Reboot is approved on the endpoint via Re
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
-```
+```powershell
 function Restart-ComputerOnSchedule {
     [CmdletBinding()]
     param (
@@ -177,13 +189,16 @@ function Restart-ComputerOnSchedule {
     
     Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
 }
-
 Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
 ```
 
 ### Row 5d: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-6.png)
+
 In the script log message, simply type `%output%`.
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-7.png)
 
 ### Row 5e: Logic: If/Then
 
@@ -197,11 +212,15 @@ In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not 
 
 ### Row 5e.2: Function: Script Exit
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-8.png)
+
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` This will end the task with failure.
 
 ![Row 5e.2 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_16.png)
 
 ### Row 5f: Function: Script Log
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-6.png)
 
 In the script log message, type `Reboot successfully scheduled on %output%.`
 
@@ -209,7 +228,11 @@ In the script log message, type `Reboot successfully scheduled on %output%.`
 
 ### Row 5g: Function: Script Exit
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
 
 ### Row 6: Function: Set Pre-defined Variable
 
@@ -217,17 +240,23 @@ Select the custom field 'WorkstationRebootWindowStart' and set the variable 'Reb
 
 ![Row 6 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_18.png)
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-9.png)
+
 ### Row 7: Function: Set Pre-defined Variable
 
 Select the custom field 'WorkstationRebootWindowEnd' and set the variable 'RebootWindowEnd'.
 
 ![Row 7 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_19.png)
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-10.png)
+
 ### Row 8: Function: Set Pre-defined Variable
 
 Select the custom field 'WorkstationRebootWindowDay' and set the variable 'RebootWindowDay'.
 
 ![Row 8 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_20.png)
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-11.png)
 
 ### Row 9: Logic: If/Then
 
@@ -241,15 +270,23 @@ In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ### Row 9b: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+
 In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.`
 
 ![Row 9b Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_22.png)
 
 ### Row 9c: Function: Script Exit
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+
 ### Row 10: Function: Script Log
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
 
 In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.`
 
@@ -259,27 +296,32 @@ In the script log message, type `Verifying that machine is in approved window be
 
 Paste in the following PowerShell script and set the expected time of script execution to 600 seconds.
 
-```
+```powershell
 $hour = [int](get-date -Format "HH");
 $currentDay = (get-date).DayOfWeek
 $Day = @RebootWindowDay@
 $minHour = @RebootWindowStart@
 $maxHour = @RebootWindowEnd@
-
 if ($Day -contains $currentDay) {
     if (($hour -ge $minHour) -and ($hour -lt $maxHour)) {
         return 'Machine is in reboot window'
-    } else {
+    }
+    else {
         return 'Time is not in approved window'
     }
-} else {
+}
+else {
     return 'Day is not in approved window'
 }
 ```
 
 ### Row 12: Function: Script Log
 
-In the script log message, simply type `%output%`.
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+
+In the script log message, simply type %output% so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-13.png)
 
 ### Row 13: Logic: If/Then
 
@@ -293,6 +335,8 @@ In the IF part, enter `Machine is in reboot window` in the right box of the "Out
 
 ### Row 13b: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+
 In the script log message, type `Scheduling the reboot as the reboot schedule falls under the reboot window set on the company level.`
 
 ![Row 13b Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_25.png)
@@ -301,7 +345,7 @@ In the script log message, type `Scheduling the reboot as the reboot schedule fa
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
-```
+```powershell
 function Restart-ComputerOnSchedule {
     [CmdletBinding()]
     param (
@@ -349,17 +393,22 @@ function Restart-ComputerOnSchedule {
     
     Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
 }
-
 Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
+
 ```
 
 ### Row 13d: Function: Script Log
 
-In the script log message, simply type `%output%`.
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
 
-### Row 13e: Function: Script Log
+In the script log message, simply type %output% so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device
 
-![Row 13e Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_10.png)
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-13.png)
+
+### Row 13e: Logic: If/Then
+
+![Row 13e Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_10.png)  
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-14.png)
 
 ### Row 13e.1: Condition: Output Contains
 
@@ -369,15 +418,23 @@ In the IF part, enter `RebootDateTime` in the right box of the "Output Contains"
 
 ### Row 13e.2: Function: Script Log
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+
 In the script log message, type `Reboot successfully scheduled on %output%.`
 
 ![Row 13e.2 Image](../../../static/img/Workstation-Reboot-Schedule-on-Specific-Days/image_17.png)
 
 ### Row 13e.3: Function: Script Exit
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+
 ### Row 13f: Function: Script Exit
+
+![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` This will end the task with failure.
 
@@ -399,7 +456,7 @@ The complete script looks as shown below:
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 - Go to `Automation` > `Tasks`.
 - Search for `Workstation Reboot Schedule on Specific Days` Task.
@@ -429,5 +486,3 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
-
-

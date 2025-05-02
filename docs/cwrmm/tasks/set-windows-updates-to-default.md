@@ -68,57 +68,52 @@ try {
 (Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
 Set-StrapperEnvironment
 #endregion
-
 $failures = @()
 $properties = @(
     'NoAutoUpdate',
     'NoWindowsUpdate',
     'DisableWindowsUpdateAccess',
-    'SetDisableUXWUAccess'
+    'SetDisableUXWUAccess' 
 )
-
-# For Computer and System account
+#For Computer and System account
 $pathArray = @(
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
-    'HKLM:\\SYSTEM\\Internet Communication Management\\Internet Communication',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU',
+    'HKLM:\SYSTEM\Internet Communication Management\Internet Communication',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
 )
-
-foreach ($regPath in $pathArray) {
-    foreach ($property in $properties) {
-        if (Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
+foreach ( $regPath in $pathArray ) {
+    foreach ( $property in $properties ) {
+        if ( Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
             try {
-                Set-ItemProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
+                Set-ItemProperty -Path $regPath -Name $property -value 0 -Force -ErrorAction Stop
             } catch {
                 $failure = [pscustomobject]@{
                     RegistryPath = $regPath
                     PropertyName = $property
-                    FailureMessage = "Failed to set property: $($Error[0].Exception.Message)"
+                    FailureMessage = "Failed to Set property: $($Error[0].Exception.Message)"
                 }
                 $failures += $failure
             }
         }
     }
 }
-
-# For User Account
+#For User Account
 $pathArray = @(
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer'
+    'Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
 )
-
-foreach ($regPath in $pathArray) {
-    foreach ($property in $properties) {
-        if (Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
+foreach ( $regPath in $pathArray ) {
+    foreach ( $property in $properties ) {
+        if ( Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
             try {
                 Set-UserRegistryKeyProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
             } catch {
@@ -132,13 +127,15 @@ foreach ($regPath in $pathArray) {
         }
     }
 }
-
-if ($failures) {
-    throw ($failures | Out-String)
+if ( $failures ) {
+    throw ( $failures | Out-String )
 } else {
     return 'Success'
 }
+
 ```
+
+![alt text](../../../static/img/docs/set-windows-updates-to-default/image.png)
 
 ### Row 2: Function: Script Log
 
@@ -154,4 +151,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-

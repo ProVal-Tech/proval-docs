@@ -22,7 +22,7 @@ Disable Bitlocker protection on one (or all) volumes.
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631)
+[Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631)
 
 ## User Parameters
 
@@ -31,7 +31,8 @@ Disable Bitlocker protection on one (or all) volumes.
 | MountPoint | C:            | Partially  | The target volume to remove Bitlocker protection from.             |
 | All        | True / False  | Partially  | Use this switch to remove Bitlocker protection from all volumes.   |
 
-**Note:**  
+**Note:**
+
 - The `All` parameter will take precedence if both parameters are specified.
 - If no parameters are set, the script will attempt to disable BitLocker on the system drive.
 
@@ -105,33 +106,30 @@ The following function will pop up on the screen:
 ![PowerShell Function](../../../static/img/Unprotect-Bitlocker-Volume/image_16.png)  
 
 ```powershell
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $mountPoint = '@MountPoint@'
 $all = '@All@'
 $Parameters = @{}
-
-if ($all -match '1|Yes|True') {
-    $Parameters.Add('All', $true)
+if ( $all -match '1|Yes|True' ) {
+    $Parameters.Add( 'All', $true )
 } else {
-    if ($mountPoint -notmatch '^[A-z]{1}:{0,1}$') {
-        $mountPoint = $env:SystemDrive
-    }
-    $Parameters.Add('MountPoint', $mountPoint)
+    if ( $mountPoint -notmatch '^[A-z]{1}:{0,1}$' ) {
+    $mountPoint = $env:SystemDrive
+    } 
+    $Parameters.Add( 'MountPoint', $mountPoint )
 }
-
 #region Setup - Variables
 $ProjectName = 'Unprotect-BitLockerVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -145,7 +143,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -153,14 +150,11 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```powershell
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

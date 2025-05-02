@@ -59,8 +59,6 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`
 
-[https://github.com/ProVal-Tech/Soji](https://github.com/ProVal-Tech/Soji)
-
 **Category:** `Maintenance`
 
 ![Parameters](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_6.png)
@@ -117,7 +115,7 @@ Select `Set User Variable` function.
 
 ![Set User Variable 6](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_13.png)
 
-Type `WorkingDirectory` in the `Variable Name` field and `C:/ProgramData/_automation/app/@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
+Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
 
 ![User Variable 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_17.png) ![User Variable 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_18.png)
 
@@ -133,8 +131,8 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
-$WorkingDirectory = '@WorkingDirectory@/@ProjectName@'
+```Powershell
+$WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 
 if ( !(Test-Path $WorkingDirectory) ) {
     try {
@@ -152,7 +150,8 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
 }
 ```
 
-![PowerShell Script 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_22.png) ![PowerShell Script 5](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_23.png)
+![PowerShell Script 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_22.png)  
+![PowerShell Script 5](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_23.png)
 
 #### Row 4 Function: PowerShell Script
 
@@ -166,16 +165,16 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
-```
+```PowerShell
 $ErrorActionPreference = 'silentlycontinue'
-try {$dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join ' '} catch {}
+try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
 
-if(!($dotNetVersions -match '(WindowsDesktop/.App 6)|(Microsoft/.NetCore/.App 6)')) {
+if(!($dotNetVersions -match '(WindowsDesktop\.App 6)|(Microsoft\.NetCore\.App 6)')) {
     [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    (New-Object System.Net.WebClient).DownloadFile('https://download.visualstudio.microsoft.com/download/pr/62bf9f50-dcd9-4e4c-ac02-4d355efb914d/a56b37b98cb07899cd8c44fa7d50dff3/dotnet-runtime-6.0.24-win-x64.exe','@WorkingDirectory@/windowsdesktop-runtime-6.0.24-win-x64.exe')
-    Start-Process -FilePath '@WorkingDirectory@/windowsdesktop-runtime-6.0.24-win-x64.exe' -ArgumentList '/quiet','/norestart' -NoNewWindow -Wait
-    try {$dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join ' '} catch {}
-    if(($dotNetVersions -match '(WindowsDesktop/.App 6)|(Microsoft/.NetCore/.App 6)')) {
+    (New-Object System.Net.WebClient).DownloadFile('https://download.visualstudio.microsoft.com/download/pr/62bf9f50-dcd9-4e4c-ac02-4d355efb914d/a56b37b98cb07899cd8c44fa7d50dff3/dotnet-runtime-6.0.24-win-x64.exe', '@WorkingDirectory@\windowsdesktop-runtime-6.0.24-win-x64.exe')
+    Start-Process -FilePath '@WorkingDirectory@\windowsdesktop-runtime-6.0.24-win-x64.exe' -ArgumentList '/quiet','/norestart' -NoNewWindow -Wait
+    try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
+    if(($dotNetVersions -match '(WindowsDesktop\.App 6)|(Microsoft\.NetCore\.App 6)')) {
         return 'Successfully installed.'
     } else {
         throw 'Installation failed.'
@@ -199,23 +198,23 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
-```
+```powershell
 #region Setup - Variables
 $ProjectName = '@ProjectName@'
 $BaseURL = 'https://file.provaltech.com/repo'
 $EXEURL = "$BaseURL/app/$ProjectName.exe"
 $WorkingDirectory = '@WorkingDirectory@'
-$EXEPath = "$WorkingDirectory/$ProjectName.exe"
+$EXEPath = "$WorkingDirectory\$ProjectName.exe"
 #endregion
 
 #region Download - soji
 if (! (Test-Path $ExePath)) {
-    [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
-    if (!(Test-Path -Path $EXEPath)) {
-        Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
-    }
-}  
+  [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+  Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
+  if (!(Test-Path -Path $EXEPath)) {
+      Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
+  }
+} 
 
 #endregion
 cmd.exe /c $EXEPath @Arguments@
@@ -248,8 +247,5 @@ Click the `Save` button to save the Task.
 
 ## Output
 
-- Script Log
-
-![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
-
-
+- Script Log  
+    ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)

@@ -38,7 +38,7 @@ Click 'Run task' to schedule the task immediately.
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -48,9 +48,9 @@ To implement this script, please create a new "Script Editor" style script in th
 
 ![Create Task](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_4.png)
 
-- Name: Server Reboot Schedule on Specific Days
-- Description: This schedules the forced reboot of the server on the scheduled days based on the approved window check.
-- Category: Maintenance
+- **Name:** `Server Reboot Schedule on Specific Days`
+- **Description:** `This schedules the forced reboot of the server on the scheduled days based on the approved window check.`
+- **Category:** `Maintenance`
 
 ![Create Task Details](../../../static/img/Server-Reboot-Schedule-on-Specific-Days/image_5.png)
 
@@ -195,9 +195,8 @@ function Restart-ComputerOnSchedule {
         & shutdown $rebootArgs 2>&1 | Out-Null
     }
     
-    Write-Output "RebootDateTime=$($rebootDate.tostring('yyyy-MM-dd hh:mm:ss'))"
+    Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
 }
-
 Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
 ```
 
@@ -322,10 +321,12 @@ $maxHour = @RebootWindowEnd@
 if ($Day -contains $currentDay) {
     if (($hour -ge $minHour) -and ($hour -lt $maxHour)) {
         return 'Machine is in reboot window'
-    } else {
+    }
+    else {
         return 'Time is not in approved window'
     }
-} else {
+}
+else {
     return 'Day is not in approved window'
 }
 ```
@@ -410,9 +411,8 @@ function Restart-ComputerOnSchedule {
         & shutdown $rebootArgs 2>&1 | Out-Null
     }
     
-    Write-Output "RebootDateTime=$($rebootDate.tostring('yyyy-MM-dd hh:mm:ss'))"
+    Write-Output "RebootDateTime=$($rebootDate.tostring("yyyy-MM-dd hh:mm:ss"))"
 }
-
 Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute @MinutesToReboot@
 ```
 
@@ -507,4 +507,7 @@ For example:
 
 - The task will start appearing in the Scheduled Tasks.
 
+## Output
 
+- Custom Field
+- Script Log

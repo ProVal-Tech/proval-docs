@@ -51,7 +51,6 @@ A blank function will appear.
 ![Image9](../../../static/img/cwrmm-task-unknown-user-profiles/Image9.png)  
 ![Image10](../../../static/img/cwrmm-task-unknown-user-profiles/Image10.png) 
 
-
 ### Row 2 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
@@ -222,7 +221,7 @@ A blank logic will appear
 
 ### Row 3c(iv)(1) Condition: Output Contains
 
-Set the condition to: 
+Set the condition to:
 
 `Output` `Contains` `Unknown user profiles detected on`  
 ![Image33](../../../static/img/cwrmm-task-unknown-user-profiles/Image33.png)
@@ -240,13 +239,16 @@ The following function will pop up on the screen:
 ![Image28](../../../static/img/cwrmm-task-unknown-user-profiles/Image28.png)  
 
 - **Subject:** `Unknown user profiles detected on @Computer@`  
-- **Description:**  
-```
+- **Description:**
+
+```Shell
     %Output%
 
     Please confirm that the identified user profiles are safe to remove from the computer.
 ```  
+
 - **Priority:** `Medium`  
+
 - Click the `Save` button to save the function.  
 
 ![Image36](../../../static/img/cwrmm-task-unknown-user-profiles/Image36.png)  
@@ -283,7 +285,6 @@ The following function will pop up on the screen:
 Type `%Output%` in the `Script Log Message` and click the `Save` button to save the function.  
 ![Image39](../../../static/img/cwrmm-task-unknown-user-profiles/Image39.png)  
 ![Image40](../../../static/img/cwrmm-task-unknown-user-profiles/Image40.png)  
-
 
 ### Save Task
 

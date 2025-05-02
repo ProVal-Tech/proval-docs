@@ -45,26 +45,28 @@ This monitor will identify computers where the license key is reported as inacti
    ![Step 8](../../../static/img/Windows-License-Status/image_9.png)
 
 9. Paste this PowerShell script in the `Script` box.  
+
    ```powershell
    $ErrorActionPreference = 'SilentlyContinue';
 
-   (Get-CimInstance -Class SoftwareLicensingProduct -Filter "Name LIKE 'Windows%'" |
-       Where-Object { $_.PartialProductKey } |
-       Select-Object @{
-           label = 'LStatus';
-           expression = {
-               switch ($_.LicenseStatus) {
-                   0 { 'Unlicensed' }
-                   1 { 'Licensed' }
-                   2 { 'OOBGrace' }
-                   3 { 'OOTGrace' }
-                   4 { 'NonGenuineGrace' }
-                   5 { 'Notification' }
-                   6 { 'ExtendedGrace' }
-               }
-           }
-       }).LStatus
+    (Get-CimInstance -Class SoftwareLicensingProduct -Filter "Name LIKE 'Windows%'" |
+        Where-Object { $_.PartialProductKey } |
+        Select-Object @{
+            label = 'LStatus';
+            expression = {
+                switch ($_.LicenseStatus) {
+                    0 { 'Unlicensed' }
+                    1 { 'Licensed' }
+                    2 { 'OOBGrace' }
+                    3 { 'OOTGrace' }
+                    4 { 'NonGenuineGrace' }
+                    5 { 'Notification' }
+                    6 { 'ExtendedGrace' }
+                }
+            }
+        }).LStatus
    ```
+
    ![Step 9](../../../static/img/Windows-License-Status/image_10.png)
 
 10. Change the comparator to `OR` from `AND`  
@@ -86,5 +88,3 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/Windows-License-Status/image_18.png)
-
-

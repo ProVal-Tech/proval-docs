@@ -24,7 +24,7 @@ CW RMM implementation of [Invoke-LSUClientUpdate](/docs/da759e59-6f62-476d-a776-
 
 ## Dependencies
 
-[EPM - Vendor Specific - Agnostic - Invoke-LSUClientUpdate](/docs/da759e59-6f62-476d-a776-39b09e07ffbe)
+[Invoke-LSUClientUpdate](/docs/da759e59-6f62-476d-a776-39b09e07ffbe)
 
 ## Task Creation
 
@@ -66,19 +66,18 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region Setup - Variables
 $ProjectName = 'Invoke-LsuClientUpdate'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -92,7 +91,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -100,13 +98,12 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-
 #region log verification
-if (!(Test-Path $LogPath)) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

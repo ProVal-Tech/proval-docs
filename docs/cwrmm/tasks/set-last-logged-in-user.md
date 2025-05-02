@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an RMM implementation of the agnostic script [EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](/docs/d657bd73-5526-4f27-93bb-9dbae3fe2f6e) to manage the last logged-in user's information displayed on the Windows login screen.
+This is an RMM implementation of the agnostic script [Set-LastLoggedOnUser](/docs/d657bd73-5526-4f27-93bb-9dbae3fe2f6e) to manage the last logged-in user's information displayed on the Windows login screen.
 
 ## Sample Run
 
@@ -33,7 +33,7 @@ This is an RMM implementation of the agnostic script [EPM - User Management - Ag
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Script - Set-LastLoggedOnUser](/docs/d657bd73-5526-4f27-93bb-9dbae3fe2f6e)
+[Set-LastLoggedOnUser](/docs/d657bd73-5526-4f27-93bb-9dbae3fe2f6e)
 
 ## User Parameters
 
@@ -121,12 +121,11 @@ $Clear = "@Clear@"
 $UserName = "@UserName@"
 $DisplayName = "@DisplayName@"
 $Reboot = "@Reboot@"
-
 #region Setup - Variables
 $ProjectName = 'Set-LastLoggedOnUser'
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
-if ($Clear -eq 1) {
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+if ( $Clear -eq 1 ) {
     $parameters = @{
         Clear = $true
         Restart = $Reboot -eq 1
@@ -134,21 +133,19 @@ if ($Clear -eq 1) {
 } else {
     $parameters = @{
         UserName = $UserName
-        DisplayName = if ($DisplayName -match '[0-9A-z_]') { $DisplayName } else { $($UserName -split '\\\\')[-1] }
+        DisplayName = if ( $DisplayName -match '[0-9A-z_]' ) { $DisplayName } else { $($UserName -split '\\')[-1] }
         Restart = $Reboot -eq 1
     }
 }
-
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -164,7 +161,6 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -173,15 +169,13 @@ if ($Parameters) {
 }
 #endregion
 
-if (!(Test-Path $LogPath)) {
-    Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+if ( !(Test-Path $LogPath) ) {
+  Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
-    throw $ErrorContent
+if ( Test-Path $ErrorLogPath ) {
+  $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+  throw $ErrorContent
 }
-
 Get-Content -Path $LogPath
 ```
 

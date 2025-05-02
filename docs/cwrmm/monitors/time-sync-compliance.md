@@ -17,7 +17,7 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 ## Monitor
 
 1. Navigate to `Endpoints` > `Alerts` > `Monitors`
-   
+
    ![Image](../../../static/img/Time-Sync-Compliance/image_1.png)
 
 2. Click the `Create Monitor` button.
@@ -55,27 +55,18 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    $peerList = 'us.pool.ntp.org';
    $syncOutput = '';
    if ((Get-Service $S).Status -ne 'Running') 
-   {
-       Try
-       {
-           Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null
-       }
-       catch 
-       {
-           return "Failed to start $S Service. Reason: $($Error.Exception.Message)"
-       };
-   }
+   {Try
+      {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}
+   catch 
+      {return "Failed to start $S Service. Reason: $($Error.Exception.Message)"}
+      };
    $syncOutput += w32tm /config /manualpeerlist:$peerList;
    Start-Sleep -Seconds 5;
    $syncOutput += "`n" + (W32tm /resync /force);
    if ($syncOutput -match 'The computer did not resync') 
-   {
-       return 'Failed: The computer did not resync.'
-   } 
+      {return 'Failed: The computer did not resync.'} 
    else 
-   {
-       return 'Success: The computer resynced successfully.'
-   }
+      {return 'Success: The computer resynced successfully.'}
    ```
 
    ![Image](../../../static/img/Time-Sync-Compliance/image_8.png)

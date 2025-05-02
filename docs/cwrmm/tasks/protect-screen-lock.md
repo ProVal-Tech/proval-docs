@@ -47,7 +47,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### ScreensaverPath:
+### ScreensaverPath
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![ScreensaverPath Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
 
@@ -59,7 +60,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![ScreensaverPath Step 3](../../../static/img/Protect-Screen-Lock/image_10.png)  
 
-### Timeout:
+### Timeout
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Timeout Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
 
@@ -74,7 +76,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![Timeout Step 3](../../../static/img/Protect-Screen-Lock/image_11.png)  
 
-### Domain Exception:
+### Domain Exception
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Domain Exception Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
 
@@ -86,7 +89,7 @@ This screen will appear.
 - Click the `Save` button.  
 ![Domain Exception Step 3](../../../static/img/Protect-Screen-Lock/image_12.png)  
 
-## Task Creation
+## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Task Creation Row Step 1](../../../static/img/Protect-Screen-Lock/image_13.png)  
@@ -95,6 +98,7 @@ A blank function will appear.
 ![Task Creation Row Step 2](../../../static/img/Protect-Screen-Lock/image_14.png)  
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.  
 ![Row 1 Step 1](../../../static/img/Protect-Screen-Lock/image_15.png)  
 ![Row 1 Step 2](../../../static/img/Protect-Screen-Lock/image_16.png)  
@@ -109,7 +113,7 @@ $ScreensaverPath = '@ScreensaverPath@'
 $Timeout = '@Timeout@'
 $DomainException = '@DomainException@'
 $Parameters = @{}
-if ( $ScreensaverPath -match '/.scr' ) {
+if ( $ScreensaverPath -match '\.scr' ) {
     $Parameters.add('ScreensaverPath', $ScreensaverPath)
 }
 if ( $Timeout -match '^[0-9]{1,}$' ) {
@@ -126,11 +130,11 @@ $ProjectName = 'Protect-Screenlock'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -163,9 +167,11 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 #endregion
 ```
+
 ![Row 1 Step 4](../../../static/img/Protect-Screen-Lock/image_18.png)  
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Row 2 Step 1](../../../static/img/Protect-Screen-Lock/image_19.png)  
 
@@ -191,5 +197,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-

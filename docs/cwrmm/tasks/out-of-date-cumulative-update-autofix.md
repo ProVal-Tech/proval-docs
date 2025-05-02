@@ -21,12 +21,12 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Out_of_Date_CU_Autofix](/docs/00c4b9c6-ded8-4cde-ba74-47437724d206)
-- [CW RMM Custom Field - Site - Out_of_Date_CU_Autofix](/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix](/docs/a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
-- [CW RMM - Device Group - Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1)
+- [Custom Field - Company - Out_of_Date_CU_Autofix](/docs/00c4b9c6-ded8-4cde-ba74-47437724d206)
+- [Custom Field - Site - Out_of_Date_CU_Autofix](/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a)
+- [Custom Field - EndPoint - Out_of_Date_CU_Autofix](/docs/a9e84f5a-0afa-44ef-98b7-c5a70f6a25ea)
+- [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
+- [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
+- [Device Group - Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1)
 - [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
 
 ## Variables
@@ -142,29 +142,29 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 ```powershell
 $os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption
-if ( '@EndPoint_Selection@' -eq 'Enable' ) \{
+if ( '@EndPoint_Selection@' -eq 'Enable' ) {
     'Enable'
-} elseif ( '@EndPoint_Selection@' -eq 'Disable' ) \{
+} elseif ( '@EndPoint_Selection@' -eq 'Disable' ) {
     'Disable'
-} elseif ( $os -match 'Server' ) \{
-    if ( '@Site_Selection@' -eq 'Enable for Server' ) \{
+} elseif ( $os -match 'Server' ) {
+    if ( '@Site_Selection@' -eq 'Enable for Server' ) {
         'Enable'
-    } elseif ( '@Site_Selection@' -eq 'Disable for Server' ) \{
+    } elseif ( '@Site_Selection@' -eq 'Disable for Server' ) {
         'Disable'
-    } elseif ( '@Company_Selection@' -eq 'Servers as well' ) \{
+    } elseif ( '@Company_Selection@' -eq 'Servers as well' ) {
         'Enable'
-    } else \{
+    } else {
         'Disable'
     }
-} elseif ( '@Site_Selection@' -eq 'Enable' ) \{
+} elseif ( '@Site_Selection@' -eq 'Enable' ) {
     'Enable'
-} elseif ( '@Site_Selection@' -eq 'Disable' ) \{
+} elseif ( '@Site_Selection@' -eq 'Disable' ) {
     'Disable'
-} elseif ( '@Company_Selection@' -eq 'Enable' ) \{
+} elseif ( '@Company_Selection@' -eq 'Enable' ) {
     'Enable'
-} elseif ( '@Company_Selection@' -eq 'Disable' ) \{
+} elseif ( '@Company_Selection@' -eq 'Disable' ) {
     'Disable'
-} else \{
+} else {
     'Disable'
 }
 ```
@@ -231,7 +231,47 @@ The following function will pop up on the screen:
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
 ```powershell
-# Needs update to JSON format
+#requires -Version 5
+
+#region Setup - Variables
+$ProjectName = 'Deploy-AvailableCumulativeUpdate'
+[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+$BaseURL = 'https://file.provaltech.com/repo'
+$PS1URL = "$BaseURL/script/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+#endregion
+#region Setup - Folder Structure
+New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
+$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
+    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
+} elseif ($response.StatusCode -eq 200) {
+    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
+    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
+}
+if (!(Test-Path -Path $PS1Path)) {
+    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+}
+#endregion
+#region Execution
+& $PS1Path
+#endregion
+#region log verification
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+}
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+    Write-Information 'Failed to install the available Cumulative Update.' -InformationAction Continue
+    throw ($ErrorContent | Out-String)
+}
+$content = Get-Content -Path $LogPath
+$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
+Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
+#endregion
 ```
 
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_39.png)  
@@ -272,10 +312,12 @@ The following function will pop up on the screen:
 ![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
+
 ```plaintext
 Script Failed.  
 Output: %Output%
 ```
+
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
 
 ### Row 7d Logic: If/Then/Else
@@ -328,7 +370,7 @@ Add a new `If/Then/Else` logic inside the `Else` section.
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_49.png)  
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_50.png)  
 
-### Row 7d(iv)\<1> Condition: Output Does Not Contain
+### Row 7d(iv)<1> Condition: Output Does Not Contain
 
 Change the comparator to `Does Not Contain`.  
 ![Change Comparator](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_51.png)  
@@ -336,7 +378,7 @@ Change the comparator to `Does Not Contain`.
 Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
 ![Input Value](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_52.png)  
 
-### Row 7d(iv)\<2> Function: Set Custom Field
+### Row 7d(iv)<2> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -349,7 +391,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_46.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_47.png)  
 
-### Row 7d(iv)\<3> Function: Script Exit
+### Row 7d(iv)<3> Function: Script Exit
 
 Click the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -362,13 +404,14 @@ The following function will pop up on the screen:
 ![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
+
 ```plaintext
 Script Failed.  
 Output: %Output%
 ```
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
 
-### Row 7d(iv)\<4> Function: Set Custom Field
+### Row 7d(iv)<4> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_57.png)  
@@ -384,7 +427,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_58.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_59.png)  
 
-### Row 7d(iv)\<5> Function: PowerShell Script
+### Row 7d(iv)<5> Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -404,9 +447,10 @@ Paste the following PowerShell script and leave the expected time of script exec
 ```powershell
 (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
 ```
+
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_60.png)  
 
-### Row 7d(iv)\<6> Function: Set Custom Field
+### Row 7d(iv)<6> Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -422,7 +466,7 @@ Search and select `Out_of_Date_CU_Autofix_Date` in the `Search Custom Field` fie
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_61.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_62.png)  
 
-### Row 7d(iv)\<7> Function: PowerShell Script
+### Row 7d(iv)<7> Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -441,15 +485,16 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 ```powershell
 $os = ( Get-CimInstance -ClassName Win32_OperatingSystem ).Caption; 
-if ( $os -match 'Server' ) \{ 
+if ( $os -match 'Server' ) { 
     'This is a Server Operating System. It should be restarted manually. Exiting the Script.' 
-} else \{ 
+} else { 
     'Initiating the reboot pending prompt solution on the machine.' 
 }
 ```
+
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_63.png)  
 
-### Row 7d(iv)\<8> Function: Script Log
+### Row 7d(iv)<8> Function: Script Log
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -466,6 +511,52 @@ The following function will pop up on the screen:
 
 Type `%Output%` in the `Script Log Message` field and click the `Save` button.  
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_64.png)  
+
+### Row 7d(v) Logic: If/Then
+
+Add a new `If/Then` logic inside the `Else` section of the previous logic.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_80.png)  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_81.png)
+
+### Row 7d(v)<1> Condition: Custom Field Equal
+
+Select the `Custom Field` option from the `DropDown` button.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_82.png)
+
+Search and select the `Out_of_Date_CU_Autofix_Result` custom field.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_83.png)
+
+Change the operator to `Equals` , type `Reboot Pending` in the comparator and press `Enter`.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_84.png)
+
+Add another Condition by clicking the `Add Condition` button.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_85.png)  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_86.png)
+
+Type `Initiating the reboot pending prompt solution on the machine` in the `Input value or variable` field and press `Enter`.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_87.png)
+
+### Row 7d(v)<2> Function: Set Custom Field
+
+Add a new row by clicking the `Add Row` button inside the `Else` section.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_88.png)
+
+A blank function will appear.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_89.png)
+
+Search and select `Set Custom Field` Function.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_90.png)  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_91.png)
+
+Search and select `Prompter_RebootPending` in the `Search Custom Field` field and set `True` in the `Value` field and click the `Save` button.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_92.png)  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_94.png)
+
+Mark the `Continue on Failure` Check-Box.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_95.png)
+
+Click the `Save` button at the top-right corner of the screen to save the script.  
+![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_96.png)
 
 ## Completed Script
 
@@ -491,7 +582,7 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 ![Pop-up Box](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_72.png)  
 8. Change the Repeat interval to `Week(s)`, select an appropriate day; I have selected `Monday` in the attached screenshot. Click the `OK` button to save the changes.  
 ![Change Repeat Interval](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_73.png)  
-9. Recurrence will be updated to `Every Week on \<Selected Weekday>`.  
+9. Recurrence will be updated to `Every Week on <Selected Weekday>`.  
 ![Recurrence Updated](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_74.png)  
 10. Select the `Device Groups` option in the `Targeted Resources` section.  
 ![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_75.png)  
@@ -507,6 +598,3 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
-
-
-

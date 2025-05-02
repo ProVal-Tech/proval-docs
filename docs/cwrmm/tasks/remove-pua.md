@@ -12,7 +12,9 @@ unlisted: false
 
 ## Summary
 
-This is a CW RMM implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document. 
+This script manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
+
+PUA List: [https://content.provaltech.com/attachments/potentially-unwanted-applications.json](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
 
 ## Sample Run
 
@@ -45,14 +47,22 @@ To implement this script, please create a new "PowerShell" style script in the s
 ![Create Task](../../../static/img/CRI-Agent-Deployment/image_3.png)
 
 - **Name:** Remove - PUA  
-- **Description:** This is a CW RMM implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). This script removes bloatware from a Windows computer. Use the “ListBloatware” parameter to generate a log of installed bloatware from the supported applications. For a list of supported applications, refer to the “Supported Bloatware” section at the very bottom of this document.   
+- **Description:**
+
+```Shell
+This script manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage. 
+
+PUA List: https://content.provaltech.com/attachments/potentially-unwanted-applications.json
+```
+
 - **Category:** Application  
 
 ![Task Detail](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-2.png>)
 
-## Parameters
+### Parameters
 
-#### ListBloatware:  
+#### ListBloatware
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add  Parameter 1](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
@@ -64,7 +74,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![Add Parameter 3](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-5.png>)
 
-#### Remove: 
+#### Remove
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add  Parameter 4](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
@@ -76,7 +87,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![Add Parameter 6](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-7.png>)
 
-#### RemoveAll:  
+#### RemoveAll
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add  Parameter 7](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
@@ -88,7 +100,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![Add Parameter 9](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-8.png>)
 
-#### Category:  
+#### Category
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add  Parameter 10](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
@@ -100,7 +113,8 @@ This screen will appear.
 - Click the `Save` button.  
 ![Add Parameter 12](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-9.png>)
 
-#### Except:  
+#### Except
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add  Parameter 13](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-3.png>)
 
@@ -262,7 +276,6 @@ The following function will pop up on the screen:
 In the script log message, simply type %output% and click the `Save` button  
 ![Row 2 Image 6](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-20.png>)
 
-
 Click the `Save` button at the top-right corner of the screen to save the script.  
 ![Row 2 Image 8](<../../../static/img/docs/CW RMM - Task - Remove - PUA/image-21.png>)
 
@@ -273,61 +286,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-## Supported Bloatware
-
-| MsftBloatApps                            | ThirdPartyBloatApps                       | WindowsStoreApps                       | XboxFeaturesApps                   | NonAppxApps                                             |
-|------------------------------------------|-------------------------------------------|---------------------------------------|-----------------------------------|---------------------------------------------------------|
-| Microsoft.3DBuilder                       | 46928bounde.EclipseManager                | Microsoft.DesktopAppInstaller         | Microsoft.Xbox.TCUI               | Clean Your Device                                       |
-| Microsoft.AppConnector                    | 4DF9E0F8.Netflix                          | Microsoft.WindowsStore                 | Microsoft.XboxApp                 | Dell Optimizer Service                                  |
-| Microsoft.BingFinance                     | 828B5831.HiddenCityMysteryofShadows      |                                       | Microsoft.XboxGameOverlay         | Dell Power Manager Service                               |
-| Microsoft.BingNews                        | 89006A2E.AutodeskSketchBook               |                                       | Microsoft.XboxIdentityProvider    | Dell SupportAssist OS Recovery Plugin for Dell Update   |
-| Microsoft.BingSports                      | 9E2F88E3.Twitter                          |                                       | Microsoft.XboxSpeechToTextOverlay | HP Notifications                                         |
-| Microsoft.BingWeather                     | A278AB0D.DisneyMagicKingdoms             |                                       |  Microsoft.XboxLive                | HP TechPulse                                           |
-| Microsoft.CommsPhone                      | A278AB0D.MarchofEmpires                  |                                       | Microsoft.XboxGamingOverlay        | Lenovo Quick Clean                                      |
-| Microsoft.ConnectivityStore               | ActiproSoftwareLLC.562882FEEB491         |                                       |  Microsoft.GamingApp               | Lenovo Vantage Service                                   |
-| Microsoft.Getstarted                       | AD2F1837.HPPCHardwareDiagnosticsWindows   |                                       |                                   |                                                         |
-| Microsoft.Messaging                        | AD2F1837.HPPowerManager                   |                                       |                                   |                                                         |
-| Microsoft.Microsoft3DViewer               | AD2F1837.HPPrivacySettings                |                                       |                                   |                                                         |
-| Microsoft.MicrosoftOfficeHub               | AD2F1837.HPQuickDrop                      |                                       |                                   |                                                         |
-| Microsoft.MicrosoftPowerBIForWindows      | AD2F1837.HPSupportAssistant               |                                       |                                   |                                                         |
-| Microsoft.MicrosoftSolitaireCollection     | AD2F1837.HPSystemInformation              |                                       |                                   |                                                         |
-| Microsoft.MicrosoftStickyNotes             | AD2F1837.myHP                             |                                       |                                   |                                                         |
-| Microsoft.MinecraftUWP                    | AdobeSystemsIncorporated.AdobePhotoshopExpress |                                   |                                   |                                                         |
-| Microsoft.MixedReality.Portal              | CAF9E577.Plex                             |                                       |                                   |                                                         |
-| Microsoft.MSPaint                         | D52A8D61.FarmVille2CountryEscape          |                                       |                                   |                                                         |
-| Microsoft.NetworkSpeedTest                | D5EA27B7.Duolingo-LearnLanguagesforFree  |                                       |                                   |                                                         |
-| Microsoft.Office.OneNote                  | Drawboard.DrawboardPDF                    |                                       |                                   |                                                         |
-| Microsoft.Office.OneNote                  | E046963F.cameraSettings                   |                                       |                                   |                                                         |
-| Microsoft.Office.Sway                     | E046963F.LenovoCompanion                  |                                       |                                   |                                                         |
-| Microsoft.OneConnect                       | E046963F.LenovoSettingsforEnterprise      |                                       |                                   |                                                         |
-| Microsoft.People                          | Facebook.Facebook                          |                                       |                                   |                                                         |
-| Microsoft.Print3D                         | flaregamesGmbH.RoyalRevolt2              |                                       |                                   |                                                         |
-| Microsoft.RemoteDesktop                    | GAMELOFTSA.Asphalt8Airborne               |                                       |                                   |                                                         |
-| Microsoft.SkypeApp                        | KeeperSecurityInc.Keeper                  |                                       |                                   |                                                         |
-| Microsoft.Windows.Photos                  | king.com.BubbleWitch3Saga                 |                                       |                                   |                                                         |
-| Microsoft.WindowsAlarms                   | king.com.CandyCrushSodaSaga               |                                       |                                   |                                                         |
-| Microsoft.WindowsCamera                   | laregamesGmbH.RoyalRevolt2                |                                       |                                   |                                                         |
-| microsoft.windowscommunicationsapps       | WhatsApp.WhatsAppDesktop                  |                                       |                                   |                                                         |
-| Microsoft.WindowsFeedbackHub              | Clipchamp.Clipchamp                       |                                       |                                   |                                                         |
-| Microsoft.WindowsMaps                     | LinkedIn.LinkedIn                         |                                       |                                   |                                                         |
-| Microsoft.WindowsPhone                    | HPInc.MyHP                                |                                       |                                   |                                                         |
-| Microsoft.WindowsSoundRecorder            | SpotifyAB.SpotifyMusic                    |                                       |                                   |                                                         |
-| Microsoft.ZuneMusic                       |                                           |                                       |                                   |                                                         |
-| Microsoft.ZuneVideo                       |                                           |                                       |                                   |                                                         |
-| Microsoft.OneDrive                        |                                           |                                       |                                   |                                                         |
-| Microsoft.GetHelp                         |                                           |                                       |                                   |                                                         |
-| Microsoft.PowerAutomateDesktop            |                                           |                                       |                                   |                                                         |
-| Microsoft.QuickAssist                     |                                           |                                       |                                   |                                                         |
-| Microsoft.LinkedIn                        |                                            |                                       |                                   |                                                         |
-| Microsoft.WindowsCopilot                  |                                           |                                       |                                   |                                                         |
-| Microsoft.549981C3F5F10                  |                                           |                                       |                                   |                                                         |
-| Microsoft.WhatsAppDesktop                |                                           |                                       |                                   |                                                         |
-| Microsoft.Todos                          |                                           |                                       |                                   |                                                         |
-| Microsoft.OneDriveSync                   |                                           |                                       |                                   |                                                         |
-| Microsoft.Paint3D                        |                                           |                                       |                                   |                                                         |
-| MicrosoftCorporationII.QuickAssist       |                                           |                                       |                                   |                                                         |
-| Microsoft.SpotifyMusic                   |                                           |                                       |                                   |                                                         |
-
-
-

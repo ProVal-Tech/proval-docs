@@ -45,7 +45,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### List:
+### List
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter](../../../static/img/Update-Adobe-Creative-Cloud/image_8.png)  
 
@@ -58,7 +59,7 @@ This screen will appear.
 
 ![Parameter Example](../../../static/img/Update-Adobe-Creative-Cloud/image_10.png)  
 
-## Task Creation
+## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/Update-Adobe-Creative-Cloud/image_11.png)  
@@ -67,6 +68,7 @@ A blank function will appear.
 ![Blank Function](../../../static/img/Update-Adobe-Creative-Cloud/image_12.png)  
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.  
 ![PowerShell Script Step 1](../../../static/img/Update-Adobe-Creative-Cloud/image_13.png)  
 ![PowerShell Script Step 2](../../../static/img/Update-Adobe-Creative-Cloud/image_14.png)  
@@ -76,7 +78,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```
+```powershell
 #region parameters
 $List = '@List@'
 if ( $List -match '1|Yes|True' ) {
@@ -93,11 +95,11 @@ $ProjectName = 'Update-AdobeCC'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -129,11 +131,13 @@ if ( Test-Path $ErrorLogPath ) {
 }
 Get-Content -Path $LogPath
 #endregion
+
 ```
 
 ![PowerShell Script Execution](../../../static/img/Update-Adobe-Creative-Cloud/image_16.png)  
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Add Row for Script Log](../../../static/img/Update-Adobe-Creative-Cloud/image_17.png)  
 
@@ -159,5 +163,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
-
-

@@ -68,6 +68,7 @@ Start by creating a separate row. You can do this by clicking the "Add Row" butt
 ![Set Pre-defined Variable](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{4DBC89D7-5D08-4A6C-830A-1B97E7EEAB8D}.png>)
 
 Paste the highlighted text:  
+
 ```plaintext
 Variable Name: Systemname
 System Variable: Drop down Endpoint>Asset>Friendlyname

@@ -42,6 +42,7 @@ Generates an alert for any unlicensed Office products on the endpoint.
    ![Disable Ticket Resolution](../../../static/img/Office-Activation-Status/image_7.png)
 
 8. Paste this PowerShell script in the `Script` box.  
+
    ```powershell
    $ErrorActionPreference = 'SilentlyContinue'
    #region Setup - Variables
@@ -49,29 +50,30 @@ Generates an alert for any unlicensed Office products on the endpoint.
    [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
    $BaseURL = 'https://file.provaltech.com/repo'
    $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-   $WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-   $PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+   $WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+   $PS1Path = "$WorkingDirectory\$ProjectName.ps1"
    $Workingpath = $WorkingDirectory
-   $LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-   $ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+   $LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+   $ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
    #endregion
    #region Setup - Folder Structure
    New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
    $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
    if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-       throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
+      throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
    } elseif ($response.StatusCode -eq 200) {
-       Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-       [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
+      Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
+      [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
    }
    if (!(Test-Path -Path $PS1Path)) {
-       throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+      throw 'An error occurred and the script was unable to be downloaded. Exiting.'
    }
    #endregion
    #region Execution
    $licenseInfo = & $PS1Path
    return $licenseInfo.LicenseStatus
    ```
+
    ![PowerShell Script](../../../static/img/Office-Activation-Status/image_8.png)
 
 9. Set `Unlicensed`, `Non_Genuine_Grace_Period`, and `Out_Of_Tolerance_Grace_Period` to the `Script Output` box.  

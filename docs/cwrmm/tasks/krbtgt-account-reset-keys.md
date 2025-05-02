@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an RMM implementation of the agnostic script [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950). This task is used to reset the KRBTGT Active Directory account. Adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
+This is an RMM implementation of the agnostic script [Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950). This task is used to reset the KRBTGT Active Directory account. Adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1).
 
 This script is provided "without warranty".
 
@@ -31,7 +31,7 @@ In order to run without DryRun, do not select DryRun.
 
 ## Dependencies
 
-[RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950)
+[Reset-KrbtgtKeys](/docs/ae748a86-1683-4d69-9c96-17a6a8f79950)
 
 ## User Parameters
 
@@ -92,18 +92,18 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region Setup - Variables
 $DryRun = "@DryRun@"
 $ProjectName = 'Reset-krbtgtkeys'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -119,20 +119,17 @@ if (!(Test-Path -Path $PS1Path)) {
 }
 #endregion
 #region Execution
-if ($DryRun -match '1|Y|Yes|True') {
+if ($DryRun -match '1|Y|Yes|True' ) {
     & $PS1Path -DryRun
 } else {
     & $PS1Path
 }
 #endregion
-```
-
-```
-if (!(Test-Path $LogPath)) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -150,5 +147,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-

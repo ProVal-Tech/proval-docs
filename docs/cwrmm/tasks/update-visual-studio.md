@@ -21,7 +21,7 @@ This document updates all installed Visual Studio versions automatically using t
 
 ## Dependencies
 
-Refer to the [SWM - Software Update - Agnostic - Update-VisualStudio](/docs/ef41c491-27c6-41d4-a478-eb66ca809399) for dependencies.
+[Update-VisualStudio](/docs/ef41c491-27c6-41d4-a478-eb66ca809399)
 
 ## Task Creation
 
@@ -58,17 +58,17 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region Setup - Variables
 $ProjectName = 'Update-VisualStudio'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -91,11 +91,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -137,5 +137,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-

@@ -22,7 +22,7 @@ This script is designed to deliver a one-time, customized message to the partner
 
 ![Image 3](../../../static/img/Simple-Notification-App/image_3.png)
 
-## Requirements
+## Mandatory Variables
 
 | Name      | Example                                                                                                       | Required | Description                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------|
@@ -43,9 +43,13 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 **Name:** `Simple Notification App [Param]`
 
-**Description:** This script is designed to send a one-time customized message to the partner with the company's branding using the image URL option.  
-`It is required to use the PNG or JPEG image URL for it to work.`  
-`Note: This script will trigger the message within a minute to the logged-in user screen once the script runs.`
+**Description:**
+
+```shell
+This script is designed to send a one-time customized message to the partner with the company's branding using the image URL option.  
+It is required to use the PNG or JPEG image URL for it to work.
+Note: This script will trigger the message within a minute to the logged-in user screen once the script runs.
+```
 
 **Category:** `Maintenance`
 
@@ -121,8 +125,9 @@ A pop-up box will appear. Set them as follows:
 
 - Set `Variable Name` as `Phone`
 - Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Phone Number provided by the partner. If not provided, leave it as it is.)
-
 - Click the `Save` button.
+
+![alt text](../../../static/img/docs/simple-notification-app/image.png)
 
 ### Row 5 Function: PowerShell Script
 
@@ -144,38 +149,36 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 if ( '@ImageURL@' -match 'ENTER YOUR VALUE HERE') {
    $Image = ''
 } else {
-   $Image = '@ImageURL@'
+    $Image = '@ImageURL@'
 }
-
-if ( '@Message@' -match 'ENTER YOUR VALUE HERE') {
-   throw 'Message is required to run the task.'
+if ( '@Message@' -match '(?i)ENTER THE MESSAGE HERE') {
+    Throw 'Error: Message is required to run the task.'
+} elseif (('@Message@').Length -gt '300'){
+    Throw 'Error: Message exceeds the 300-character limit.'
 } else {
-   $Message = '@Message@'
+    $Message = '@Message@'
 }
-
 if ( '@Email@' -match 'ENTER YOUR VALUE HERE') {
-   $Email = ''
-} elseif ('@Email@' -notmatch '.+@.+\\..+') {
-   $Email = ''
-} else {
-   $Email = '@Email@'
+    $Email = ''
+} elseif ('@Email@' -notmatch '.+@.+\..+') {
+     $Email = ''
+}else{
+  $Email = '@Email@'
 }
-
 if ( '@Phone@' -match 'ENTER YOUR VALUE HERE') {
-   $Phone = ''
+    $Email = ''
 } elseif ('@Phone@' -notmatch '[0-9]') {
-   $Phone = ''
-} else {
-   $Phone = '@Phone@'
+     $Phone = ''
+}else{
+  $Phone = '@Phone@'
 }
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $URL = 'https://github.com/ProVal-Tech/SimpleNotification/releases/latest/download/SimpleNotification.exe'
-$WorkingDirectory = 'C:\\ProgramData\\_automation\\script\\SimpleNotification'
+$WorkingDirectory = 'C:\ProgramData\_automation\script\SimpleNotification'
 $EXEPath = Join-Path -Path $WorkingDirectory -ChildPath 'SimpleNotification.exe'
 $ConfigFile = Join-Path -Path $WorkingDirectory -ChildPath 'config.toml'
-
 if (-not (Test-Path -Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
@@ -212,14 +215,12 @@ try {
     Write-Error "ERROR: Failed to download file. Reason: $($_.Exception.Message)"
     return
 }
-
 $content = @"
 message = '$Message'
 image_url = '$Image'
 email = '$Email'
 phone = '$Phone'
 "@
-
 $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
 try {
     [System.IO.File]::WriteAllLines($ConfigFile, $content, $Utf8NoBomEncoding)
@@ -227,18 +228,15 @@ try {
     Write-Error "ERROR: Failed to write config file. Reason: $($_.Exception.Message)"
     return
 }
-
 $TaskName = 'Simple Notification'
 $Description = 'Running Simple Notification app to send the prompt'
 $Parameter = "-c `"$ConfigFile`""
-
 # Unregister existing task if it exists
 if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 
 $Action = New-ScheduledTaskAction -Execute $EXEPath -Argument $Parameter
-
 # Create task trigger (run once 1 minute from now)
 $TriggerTime = (Get-Date).AddMinutes(1)
 $Trigger = New-ScheduledTaskTrigger -Once -At $TriggerTime
@@ -390,4 +388,3 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Script log
-

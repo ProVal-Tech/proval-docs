@@ -20,7 +20,7 @@ This script downloads the offscrub files from the repository and then attempts t
 
 ## Dependencies
 
-[SWM - Software Uninstall - Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
+[Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
 
 ### User Parameters
 
@@ -44,10 +44,10 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Parameter](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_4.png)
 
-**Parameter Names:** Arguments  
-**Required Field:** Selected  
-**Parameter Type:** Text String  
-**Default Value:** -All  
+**Parameter Names:** `Arguments`  
+**Required Field:** `Selected`  
+**Parameter Type:** `Text String`  
+**Default Value:** `-All`  
 
 ### Script
 
@@ -92,9 +92,8 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 
 #region Execution
-    & $PS1Path @Arguments@
+& $PS1Path @Arguments@
 #endregion
-
 ```
 
 ![Row 2 Function Output](../../../static/img/CW-RMM---Office-Universal-Uninstaller/image_8.png)
@@ -124,5 +123,3 @@ Then click on **Schedule** and provide the parameter details as necessary for th
 ## Output
 
 - Script log
-
-

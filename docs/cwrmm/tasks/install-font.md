@@ -22,18 +22,17 @@ This task is used to install fonts from a particular directory or file.
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Script - Install-Font](/docs/2520190e-2751-45f1-8d60-501027004938)
+[Install-Font](/docs/2520190e-2751-45f1-8d60-501027004938)
 
 ## User Parameters
 
 | Name  | Example                        | Required  | Description                                                              |
 |-------|--------------------------------|-----------|--------------------------------------------------------------------------|
-| Path  | - C:/Fonts/times.ttf          | Mandatory | This will contain the file path or a folder where multiple files are located.  - C:/Fonts |
+| Path  |   `C:/Fonts/times.ttf`         | Mandatory | This will contain the file path or a folder where multiple files are located. |
 
 ![User Parameters](../../../static/img/Install-Font/image_5.png)
 
-**Note:**  
-- If the parameter is set to NULL, the script will throw an error.
+**Note:** If the parameter is set to NULL, the script will throw an error.
 
 ## Task Creation
 
@@ -88,12 +87,14 @@ The following function will pop up on the screen:
 ![PowerShell Function](../../../static/img/Install-Font/image_16.png)  
 
 ```powershell
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+
 $Path = '@Path@'
+
 $Parameters = @{}
 
-if ($Path -notmatch ":\") {
+if ($Path -notmatch ":\\") {
     throw "Invalid Path."
 } else {
     $Parameters["Path"] = $Path
@@ -104,13 +105,12 @@ $ProjectName = 'Install-Font'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -124,7 +124,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -132,14 +131,11 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```powershell
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -181,6 +177,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-
-
-

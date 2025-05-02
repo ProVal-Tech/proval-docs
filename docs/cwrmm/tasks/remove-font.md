@@ -22,7 +22,7 @@ This document outlines how to remove installed fonts from Windows machines. It a
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Script - Remove-Font](/docs/a88b469b-0384-49f8-b959-16e701c538ad  )
+[Remove-Font](/docs/a88b469b-0384-49f8-b959-16e701c538ad  )
 
 ## User Parameters
 
@@ -47,7 +47,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### Title:
+### Title
 
 Add a new parameter by clicking the `Add Parameter` button located at the top-right corner of the screen.
 
@@ -87,10 +87,10 @@ The following function will pop up on the screen:
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $Title = '@Title@'
-if ( [String]::IsNullOrWhiteSpace($Title) -or $Title -match '\\STitle\\S' ) {
+if ( [String]::IsNullOrWhiteSpace($Title) -or $Title -match '\STitle\S' ) {
     throw 'Title is a mandatory parameter.'
 }
 $Parameters = @{
@@ -102,11 +102,11 @@ $ProjectName = 'Remove-Font'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -129,11 +129,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
@@ -175,4 +175,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
-

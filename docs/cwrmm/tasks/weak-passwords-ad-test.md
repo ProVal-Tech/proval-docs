@@ -23,7 +23,7 @@ This task utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-ba1
 ## Dependencies
 
 - [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  )  
-- [CW RMM - Solution - Weak Passwords Audit](/docs/67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11)
+- [Weak Passwords Audit](/docs/67f4ab8a-5eb0-49f6-ae41-4b3a308b1f11)
 
 ## User Parameters
 
@@ -107,13 +107,13 @@ if ( '@PWDictSize@' -notin ( 'Tiny', 'Small', 'Medium', 'Large' ) ) {
 } else {
     $PWDictSize = '@PWDictSize@'
 }
-
+ 
 if ( '@Cleanup@' -notin ( 'All', 'Text', 'Zipped' ) ) {
     $Cleanup = $null
 } else {
     $Cleanup = '@Cleanup@'
 }
-
+ 
 if (!($Cleanup)) {
     $Parameters = @{
         PWDictSize = $PWDictSize
@@ -121,21 +121,22 @@ if (!($Cleanup)) {
 } else {
     $Parameters = @{
         PWDictSize = $PWDictSize
-        Cleanup = $Cleanup
+        Cleanup = $cleanup
     }
 }
-
 #region Setup - Variables
 $ProjectName = 'Test-WeakCredentials'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$Workingpath = $WorkingDirectory
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
+ 
+ 
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -149,30 +150,33 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
+ 
 #region Execution
 $TheseResults = & "$PS1Path" @Parameters 2>$Null 6>$Null
-
+ 
 if (!$TheseResults) {
-    if ($ErrorLogPath) {
+    if ( $ErrorLogPath ) {
         $errorContent = Get-Content $ErrorLogPath -ErrorAction SilentlyContinue
         throw $($errorContent | Out-String)
     }
     throw 'The underlying script failed to return any data. Please review script logs for additional information.'
 }
-
-$weakpw = $($TheseResults.WeakPasswords -replace '\\', '\\' -replace "'", "\\'" -replace "$([char]0x2018)|$([char]0x2019)", "\\'")
-$DuplicatePW = $($TheseResults.DuplicatePasswords -replace '\\', '\\' -replace "'", "\\'" -replace "$([char]0x2018)|$([char]0x2019)", "\\'")
+ 
+$weakpw = $($TheseResults.WeakPasswords -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
+$DuplicatePW = $($TheseResults.DuplicatePasswords -replace '\\', '\\' -replace "'", "\'" -replace "$([char]0x2018)|$([char]0x2019)", "\'")
 $weakpwcount = $TheseResults.WeakPasswords.Count
 $DuplicatePWCount = $TheseResults.DuplicatePasswords.Count
-
+ 
 return "DuplicatePasswordCount:$($DuplicatePWCount)|WeakPasswordCount:$($weakpwcount)|DuplicatePassword:$($DuplicatePW)|WeakPassword:$($weakpw)"
-#endregion
 ```
+
+![alt text](../../../static/img/docs/weak-passwords-ad-test/image.png)
 
 ### Row 2: Function: Script Log
 
-In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+![alt text](../../../static/img/docs/weak-passwords-ad-test/image-1.png)  
+In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
+![alt text](../../../static/img/docs/weak-passwords-ad-test/image-2.png)
 
 ### Row 3: Function: PowerShell Script
 
@@ -234,8 +238,8 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 ```powershell
 $output = '%output%'
-$duplicatePasswordCount = $($($output -split '/|')[0] -split ':')[1]
-if ($duplicatePasswordCount -match '[1-9]') { return $duplicatePasswordCount } else { return 'No duplicate password found' }
+$duplicatePasswordCount = $($($output -split '\|')[0] -split ':')[1]
+if ($duplicatePasswordCount  -match '[1-9]'  ){return $duplicatePasswordCount } else {return 'No Duplicate Password found'}
 ```
 
 ![Row 5 Result](../../../static/img/Weak-Passwords---AD-Test/image_24.png)
@@ -283,4 +287,3 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script Log
-

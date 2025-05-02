@@ -24,6 +24,7 @@ Running the [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) 
 It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac).
 
 ### Notes
+
 - The user must accept the `I_have_read_the_description_and_agree_to_the_user_agreement` parameter while running the script.
 - `SID` and `Username` parameters cannot be used simultaneously.
 - `PreserveUser` parameter can only be used with the `Username` parameter.
@@ -65,7 +66,6 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 | SID | <ul><li>S-1-5-21-3623811015-3361044348-30300820-1013</li><li>S-1-5-21-1173666872-732068812-3818650923-1004, S-1-5-21-1173666872-732068812-3818650923-1008</li></ul> | Partially | Text String | The SID of the user profile to remove. The PreserveUser parameter cannot be used with SID. This parameter can be used when the UserName is not available.<br /><br />**Both UserName and SID cannot be used together** |
 | I_have_read_the_description_and_agree_to_the_user_agreement  | 0/1  | True    | Flag        | The script will not run without flagging this checkbox. Marking this checkbox indicates that the user has read the warning and is running the script with caution. |
 
-
 ![User Parameters Image](../../../static/img/Remove-User-Profile/image_4.png)
 
 ## Task Creation
@@ -81,39 +81,42 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### Username:
+### Username
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Username Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
 ![Username Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+
 - Set `Username` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
 ![Username Parameter Image](../../../static/img/Remove-User-Profile/image_10.png)  
 
-### PreserveUser:
+### PreserveUser
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
 ![PreserveUser Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+
 - Set `PreserveUser` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
 ![PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_11.png)  
 
-### SID:
+### SID
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![SID Add Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
 
 This screen will appear.  
 ![SID Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+
 - Set `SID` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
@@ -127,6 +130,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 This screen will appear.  
 ![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+
 - Set `I_have_read_the_description_and_agree_to_the_user_agreement` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Flag` from the `Parameter Type` dropdown menu.

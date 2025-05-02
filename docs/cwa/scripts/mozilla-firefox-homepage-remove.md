@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document outlines an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9  ) to remove the policy for an enforced homepage in Mozilla Firefox.
+This document outlines an Automate implementation of the agnostic script [SWM - Software Configuration - Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9) to remove the policy for an enforced homepage in Mozilla Firefox.
 
 ## Sample Run
 
@@ -20,10 +20,8 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 
 ## Dependencies
 
-- [SWM - Software Configuration - Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9  )
+- [SWM - Software Configuration - Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9)
 
 ## Output
 
 - Script Logs
-
-

@@ -32,7 +32,7 @@ CW RMM implementation of [Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7f
 
 ## Dependencies
 
-[SWM - Software Uninstall - Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
+[Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
 
 ## User Parameters
 
@@ -100,11 +100,11 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $version = '@version@'
 $parameters = @{}
-if ( ($version -match 'All|\\SVersion\\S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
+if ( ($version -match 'All|\SVersion\S') -or ([String]::IsNullOrWhiteSpace($version)) ) {
     $parameters.Add('All', $true)
 } else {
     if ( $version -match '2003' ) {
@@ -123,7 +123,7 @@ if ( ($version -match 'All|\\SVersion\\S') -or ([String]::IsNullOrWhiteSpace($ve
         $parameters.Add('Office16', $true)
     }
     if ( $version -match 'C2R' ) {
-        $parameters.Add('OfficeC2R', $true)
+        $parameters.Add('Officec2r', $true)
     }
 }
 if ( !($parameters) ) {
@@ -135,11 +135,11 @@ $ProjectName = 'Invoke-OfficeScrub'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -163,7 +163,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )

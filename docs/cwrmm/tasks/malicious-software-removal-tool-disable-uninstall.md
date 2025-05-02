@@ -72,6 +72,7 @@ Start by creating a row. You can do this by clicking the "Add Row" button at the
 ![Set Pre-defined Variable](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{4DBC89D7-5D08-4A6C-830A-1B97E7EEAB8D}.png>)
 
 Paste the highlighted text:  
+
 ```plaintext
 Variable Name: Systemname
 System Variable: Drop down Endpoint>Asset>Friendlyname
@@ -213,7 +214,7 @@ In this window, set the `Subject` as `Malicious Software Removal Tool Disable fa
 Add a new row in the If section and select `Script Exit`.
 
 In the script exit message, simply type `Script failed to disable the Malicious Software Removal Tool. Exiting script with error.
-Refer to the logs: 
+Refer to the logs:  
 %Output%`.
 
 In the script exit message, leave it blank.
@@ -281,6 +282,4 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-
-
 

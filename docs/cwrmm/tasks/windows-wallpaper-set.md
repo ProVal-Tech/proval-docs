@@ -112,16 +112,16 @@ $AllUsers = "@AllUsers@"
 $Reset = "@Reset@"
 #region Setup - Variables
 $ProjectName = 'Set-Wallpaper'
+
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -137,26 +137,26 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
-if ($AllUsers -match '1|Y|Yes|True') {
-    & $PS1Path -uri $Path -Enforce
-} elseif ($Reset -match '1|Y|Yes|True') {
-    & $PS1Path -Reset
-} else {
-    & $PS1Path -uri $Path
+if ($AllUsers -match '1|Y|Yes|True' ) {
+  & $PS1Path -uri $Path -Enforce
+} 
+elseif ($Reset -match '1|Y|Yes|True' ){
+  & $PS1Path -Reset
 }
-
-if (!(Test-Path $LogPath)) {
-    Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+else{
+  & $PS1Path -uri $Path
 }
-
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
-    throw $ErrorContent
+if ( !(Test-Path $LogPath) ) {
+  Throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-
+if ( Test-Path $ErrorLogPath ) {
+  $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+  throw $ErrorContent
+}
 Get-Content -Path $LogPath
 ```
+
+![alt text](../../../static/img/docs/windows-wallpaper-set/image.png)
 
 ### Row 2: Function: Script Log
 
@@ -170,5 +170,3 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
-
-
