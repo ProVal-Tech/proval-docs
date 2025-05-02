@@ -399,7 +399,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Completed Task
 
 ![Complete Task 1](../../../static/img/docs/rmm-ninja-migration-mac/image-59.png)
-![Complete Task 2](../../../static/img/docs/rmm-ninja-migration-mac/image-60.png)
+![Complete Task 2](../../../static/img/docs/rmm-ninja-migration-mac/image-63.png)
 ![Complete Task 3](../../../static/img/docs/rmm-ninja-migration-mac/image-61.png)
 
 ## Deployment
