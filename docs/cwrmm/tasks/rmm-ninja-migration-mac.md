@@ -83,6 +83,7 @@ After clicking on Save the Pre-defined will show data as:
 #### Row 2 Function: `Pre-defined Variable`
 
 Select the Pre-defined Variable and provide the details and click on Save.
+Make sure to select the `Ninja Deployment Exclude` site level custom field.
 
 Variable: `DeploymentExL`
 
@@ -97,6 +98,7 @@ After clicking on Save the Pre-defined will show data as:
 #### Row 3 Function: `Pre-defined Variable`
 
 Select the Pre-defined Variable and provide the details and click on Save.
+Make sure to select the `Ninja Deployment Exclude` endpoint level custom field.
 
 Variable: `DeploymentExC`
 
@@ -406,9 +408,9 @@ This task is required to be deployed using a dynamic group.
 
 It can be scheduled to run every 1 hour. Follow the below deployment step to schedule it.
 
-- Go to Automations > Tasks.
+- Go to Automation > Tasks.
 
-- Search for `NinjaRMM Deployment - [Windows]`
+- Search for `NinjaRMM Deployment - [MAC]`
 
 - Then click on Schedule
 

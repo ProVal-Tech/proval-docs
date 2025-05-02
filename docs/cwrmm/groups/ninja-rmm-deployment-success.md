@@ -64,7 +64,8 @@ Click `Add Criteria`
 
 ![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
 
-Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`
+Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`.
+Make sure to select the `Ninja Deployment Exclude` site level custom field.
 
 ![Exclude Site](../../../static/img/docs/ninja-rmm-deployment/image-2.png)
 
@@ -76,7 +77,8 @@ Click `Add Criteria`
 
 ![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
 
-Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`
+Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`.
+Make sure to select the `Ninja Deployment Exclude` endpoint level custom field.
 
 ![Exclude Endpoint](../../../static/img/docs/ninja-rmm-deployment/image-3.png)
 
