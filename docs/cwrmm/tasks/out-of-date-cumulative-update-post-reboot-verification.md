@@ -24,7 +24,7 @@ This task validates whether the Cumulative Update installed by the Out of Date C
 - [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
 - [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
 - [Device Group - Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d)
-- [Task - Out of Date Cumulative Update (Autofix)](/docs/1d9dbd69-f735-4129-8c9d-e72430313371)
+- [Task - Out of Date Cumulative Update (Autofix)](/docs/5170978d-feb6-455c-8806-20224e27d923)
 
 ## Variables
 

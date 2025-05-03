@@ -91,12 +91,10 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 .EXAMPLE
     Run the script to check Windows 11 compatibility:
-    ```powershell
     .\CWRMMImp-CheckWindows11Compatibility.ps1
-    ```
 
 .OUTPUTS
-    - If compatible: `Compatible`
+    - If compatible: ``Compatible``
     - If not compatible: `CPU=(Exception from HRESULT: 0x80284008)|TPM=UNDETERMINED|OSDriveSize=PASS|Secureboot=PASS|Memory=PASS|Result=UNDETERMINED`
     - If unsupported OS: `Unsupported OS`
 #>

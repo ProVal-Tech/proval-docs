@@ -1,6 +1,6 @@
 ---
-id: '1d9dbd69-f735-4129-8c9d-e72430313371'
-slug: /1d9dbd69-f735-4129-8c9d-e72430313371
+id: '5170978d-feb6-455c-8806-20224e27d923'
+slug: /5170978d-feb6-455c-8806-20224e27d923
 title: 'Out of Date Cumulative Update (Autofix)'
 title_meta: 'Out of Date Cumulative Update (Autofix)'
 keywords: ['cumulative', 'update', 'autofix', 'patching', 'windows']
@@ -409,6 +409,7 @@ Paste the following lines in the `Error Message` field and click the `Save` butt
 Script Failed.  
 Output: %Output%
 ```
+
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
 
 ### Row 7d(iv)<4> Function: Set Custom Field
