@@ -1,6 +1,6 @@
 ---
-id: '007d88ec-68b1-45fa-8d95-9c279218ac3c'
-slug: /007d88ec-68b1-45fa-8d95-9c279218ac3c
+id: '676de0c3-b6a2-4a82-bf87-6d00395a7dff'
+slug: /676de0c3-b6a2-4a82-bf87-6d00395a7dff
 title: 'Windows 11 Compatibility Validation'
 title_meta: 'Windows 11 Compatibility Validation'
 keywords: ['windows', 'compatibility', 'validation', 'upgrade', 'task']

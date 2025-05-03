@@ -35,14 +35,14 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 | [Enable Windows 11 Installation](/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8) | Flag | Company | Mark this custom field to enable Windows 11 installation for the Windows 10 machines of the company. |
 | [Exclude Windows 11 Installation](/docs/bb84e821-38c5-4b39-ad4c-894eef47bf79) | Flag | Site | Mark this custom field to exclude the endpoints of this site from the Windows 10 to 11 upgrade. |
 | [Exclude Windows 11 Installation](/docs/c3f83443-09cb-43ef-9c21-501d7f13314e) | Flag | Endpoint | Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade process. |
-| [Windows 11 Compatible](/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf) | Dropdown | Endpoint | `Yes`: Compatible. `No`: Incompatible. `NA`: Not Checked yet. Updated by the [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task. |
-| [Windows 11 Incompatibility Base](/docs/7894870c-b7e8-44e0-806c-c948f151fc49) | Text Box | Endpoint | Stores the result returned by the [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task for the incompatible machines. |
+| [Windows 11 Compatible](/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf) | Dropdown | Endpoint | `Yes`: Compatible. `No`: Incompatible. `NA`: Not Checked yet. Updated by the [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff) task. |
+| [Windows 11 Incompatibility Base](/docs/7894870c-b7e8-44e0-806c-c948f151fc49) | Text Box | Endpoint | Stores the result returned by the [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff) task for the incompatible machines. |
 
 ### Device Groups
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) | Dynamic | Windows 10 machines. The [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task will be scheduled against this group. |
+| [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) | Dynamic | Windows 10 machines. The [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff) task will be scheduled against this group. |
 | [Windows 11 Compatible Machines](/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5) | Dynamic | Houses the Windows 10 computers that are compatible with the Windows 11 upgrade. It is a view-only group. |
 | [Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) | Dynamic | A group of Windows 10 machines that are compatible with Windows 11 installation and upgrade, enabled through the custom fields. |
 | [Windows 11 Incompatible Machines](/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68) | Dynamic | A group of Windows 10 computers that are not compatible with Windows 11. |
@@ -51,7 +51,7 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 
 | Content | Type | Description |
 | ------- | ---- | ----------- |
-| [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) | Script Editor | Verifies if a Windows 10 PC is compatible with Windows 11. Scheduled to run monthly against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a). |
+| [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff) | Script Editor | Verifies if a Windows 10 PC is compatible with Windows 11. Scheduled to run monthly against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a). |
 
 ### Policies
 
@@ -87,7 +87,7 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - [Windows 11 Incompatible Machines](/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68)
 
 3. Create and deploy the following task:
-   - [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c)
+   - [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff)
 
 4. Create the following optional task:
    - [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a)
