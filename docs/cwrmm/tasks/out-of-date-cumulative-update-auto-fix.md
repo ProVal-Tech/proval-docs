@@ -370,7 +370,7 @@ Add a new `If/Then/Else` logic inside the `Else` section.
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_49.png)  
 ![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_50.png)  
 
-### Row 7d(iv)<1> Condition: Output Does Not Contain
+### Row 7d(iv){1} Condition: Output Does Not Contain
 
 Change the comparator to `Does Not Contain`.  
 ![Change Comparator](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_51.png)  
@@ -378,7 +378,7 @@ Change the comparator to `Does Not Contain`.
 Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
 ![Input Value](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_52.png)  
 
-### Row 7d(iv)<2> Function: Set Custom Field
+### Row 7d(iv){2} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -391,7 +391,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_46.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_47.png)  
 
-### Row 7d(iv)<3> Function: Script Exit
+### Row 7d(iv){3} Function: Script Exit
 
 Click the `Add Row` button inside the `If` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -412,7 +412,7 @@ Output: %Output%
 
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
 
-### Row 7d(iv)<4> Function: Set Custom Field
+### Row 7d(iv){4} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_57.png)  
@@ -428,7 +428,7 @@ Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` f
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_58.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_59.png)  
 
-### Row 7d(iv)<5> Function: PowerShell Script
+### Row 7d(iv){5} Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -451,7 +451,7 @@ Paste the following PowerShell script and leave the expected time of script exec
 
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_60.png)  
 
-### Row 7d(iv)<6> Function: Set Custom Field
+### Row 7d(iv){6} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -467,7 +467,7 @@ Search and select `Out_of_Date_CU_Autofix_Date` in the `Search Custom Field` fie
 ![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_61.png)  
 ![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_62.png)  
 
-### Row 7d(iv)<7> Function: PowerShell Script
+### Row 7d(iv){7} Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -495,7 +495,7 @@ if ( $os -match 'Server' ) {
 
 ![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_63.png)  
 
-### Row 7d(iv)<8> Function: Script Log
+### Row 7d(iv){8} Function: Script Log
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
@@ -519,7 +519,7 @@ Add a new `If/Then` logic inside the `Else` section of the previous logic.
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_80.png)  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_81.png)
 
-### Row 7d(v)<1> Condition: Custom Field Equal
+### Row 7d(v){1} Condition: Custom Field Equal
 
 Select the `Custom Field` option from the `DropDown` button.  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_82.png)
@@ -537,7 +537,7 @@ Add another Condition by clicking the `Add Condition` button.
 Type `Initiating the reboot pending prompt solution on the machine` in the `Input value or variable` field and press `Enter`.  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_87.png)
 
-### Row 7d(v)<2> Function: Set Custom Field
+### Row 7d(v){2} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_88.png)
