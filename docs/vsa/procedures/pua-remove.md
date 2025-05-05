@@ -12,8 +12,11 @@ unlisted: false
 
 ## Summary
 
-Configurable Removal of Potentially Unwanted Applications  
-Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
+This is a VSA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). It manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
+
+**PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
+
+<span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
 
 ## Sample Run
 
@@ -50,14 +53,8 @@ Implementation of Agnostic Content [SWM - Software Uninstall - Agnostic - Remove
 
 ## Process
 
-Runs the agnostic script [SWM - Software Uninstall - Agnostic - Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443) with the defined parameters.
+Runs the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443) with the defined parameters.
 
 ## Output
 
 AP Log
-
-## Export Attachment
-
-Attach the content XML VSA Export to this document.
-
-

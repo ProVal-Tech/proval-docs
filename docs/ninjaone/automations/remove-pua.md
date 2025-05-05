@@ -16,6 +16,8 @@ This is a Ninja RMM implementation of the agnostic script [Remove-PUA](/docs/fda
 
 **PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
 
+<span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
+
 ## Sample Run
 
 Select any target, such as a computer or a group.  
