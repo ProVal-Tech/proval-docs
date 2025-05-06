@@ -173,7 +173,8 @@ $Parameters = @{
 
 if (-not [String]::IsNullOrEmpty($optionalParameter) -and $optionalParameter -notmatch 'OptionalParameter' ) {
     $optionalParameter = $optionalParameter -replace '\s{1,}', ' '
-    $optionalParameter = $optionalParameter -split '\s'
+    $pattern = '("[^"]+"|\S+)'
+    $optionalParameter = ([regex]::matches($optionalParameter, $pattern)).Value
     $Parameters.Add('OptionalParameter', $optionalParameter)
 }
 #endRegion
