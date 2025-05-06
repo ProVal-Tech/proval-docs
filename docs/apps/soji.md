@@ -27,7 +27,7 @@ Soji is an intelligent yet simple disk cleanup utility that uses both native `Sy
 
 ### Built With
 
-* [.NET Desktop Runtime 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/)
+- [.NET Desktop Runtime 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/)
 
 ### Important Note
 
@@ -139,7 +139,7 @@ Soji outputs logs in a folder under the current working directory called `SojiLo
 
 Log and Report Files:
 
-```
+```plainText
 .\SojiLogs\soji.log                 # General purpose log file
 
 .\SojiLogs\soji-files.csv           # CSV report of files that were processed
@@ -155,7 +155,7 @@ Log and Report Files:
 
 ## Acknowledgments
 
-* [Serilog](https://github.com/serilog/serilog) - General logging and JSON report output
-* [CommandlineParser](https://github.com/commandlineparser/commandline) - Parsing arguments
-* [CSVHelper](https://github.com/JoshClose/CsvHelper) - CSV Report output
-* [BurnBytes](https://github.com/builtbybel/burnbytes) - Base logic for cleanmgr hooks
+- [Serilog](https://github.com/serilog/serilog) - General logging and JSON report output
+- [CommandlineParser](https://github.com/commandlineparser/commandline) - Parsing arguments
+- [CSVHelper](https://github.com/JoshClose/CsvHelper) - CSV Report output
+- [BurnBytes](https://github.com/builtbybel/burnbytes) - Base logic for cleanmgr hooks

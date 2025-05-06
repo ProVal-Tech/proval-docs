@@ -14,11 +14,11 @@ unlisted: false
 
 Soji is a smart yet straightforward disk cleanup utility designed to enhance system cleanliness on Windows. It utilizes both native System.IO file and directory management along with COM references to the deprecated cleanmgr tool.
 
-Check out Soji on GitHub: [https://github.com/ProVal-Tech/Soji](https://github.com/ProVal-Tech/Soji)
+Soji Document: [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
 
 This document provides a guide on creating the Soji disk cleanup Task in CW RMM. The task is versatile and can serve as an Autofix/Automation Task alongside `Monitors` or `Intelligent Alerts`. When employed as an Autofix, the task executes the tool with the `--All` argument.
 
-Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
+Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage.
 
 ## Sample Run
 
@@ -30,7 +30,7 @@ Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
 
 ## Dependencies
 
-[Soji](https://github.com/ProVal-Tech/Soji)
+[Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
 
 ## Variables
 
@@ -43,7 +43,7 @@ Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
 
 | Name       | Example  | Required | Description                                                                 |
 |------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage. |
+| Arguments  | --all    | False    | Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage. |
 
 **Note:** Arguments are case sensitive.
 
@@ -59,7 +59,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`
 
-[https://github.com/ProVal-Tech/Soji](https://github.com/ProVal-Tech/Soji)
+[/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
 
 **Category:** `Maintenance`
 
