@@ -16,7 +16,7 @@ Soji is a smart yet straightforward disk cleanup utility designed to enhance sys
 
 This document provides a guide on creating the Soji disk cleanup Task in CW RMM. The task is versatile and can serve as an Autofix/Automation Task alongside `Monitors` or `Intelligent Alerts`. When employed as an Autofix, the task executes the tool with the `--All` argument.
 
-Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage.
+Please reference Soji for argument usage.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 
 ## Dependencies
 
-- [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
+- Soji
 
 ## Variables
 
@@ -41,7 +41,7 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 
 | Name       | Example  | Required | Description                                                                 |
 |------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage. |
+| Arguments  | --all    | False    | Please reference Soji for argument usage. |
 
 **Note:** Arguments are case sensitive.
 
