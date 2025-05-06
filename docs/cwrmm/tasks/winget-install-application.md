@@ -39,7 +39,7 @@ To get the PackageId and source, you can search in cmd using **"winget search ap
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | PackageId | `AgileBits.1Password` | | Yes |  | Text String | winget application ID |
 | Source | `winget` | `winget`, `msstore` | Yes | | Text String | Specifies winget or msstore as the source for package install |
-| OptionalParameter | `--Scope machine` | | No | | Text String | Specifies option parameters to deploy the application |
+| OptionalParameter | `--Scope machine --Override "/qn /norestart MANAGED_UPDATE=1"` | | No | | Text String | Specifies option parameters to deploy the application |
 
 ## Task Creation
 
