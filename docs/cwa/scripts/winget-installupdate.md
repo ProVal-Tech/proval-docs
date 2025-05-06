@@ -16,7 +16,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Winget---InstallUpdate/image_1.png)
+![Sample Run](../../../static/img/docs/winget-installupdate/image.png)
 
 ## Dependencies
 
@@ -34,6 +34,7 @@ This document explains how to install a Winget package on a target endpoint.
 |-----------|----------------------------------|----------|--------------------------------------------|
 | PackageId | Cisco.CiscoWebexMeetings        | True     | The Winget package you wish to install.   |
 | Scope     | msstorewinget                   | True     | The source to use when obtaining the package. |
+| OptionalParameter     | --Scope Machine                   | False     | Specifies option parameters to deploy/update/remove the application(s) |
 
 ## Process
 
@@ -41,6 +42,10 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 
 ## Output
 
-- Script log
+- Script 
 
+## FAQ
 
+For auto-deployment of application we have monitor [Application - InstallUpdate - Winget](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optionalparameter needed?
+
+No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.
