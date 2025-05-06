@@ -16,7 +16,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/winget-installupdate/image.png)
+![Sample Run](../../../static/img/docs/winget-installupdate/image-1.png)
 
 ## Dependencies
 
