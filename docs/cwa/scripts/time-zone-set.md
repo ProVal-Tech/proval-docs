@@ -18,7 +18,7 @@ This script will set the time zone to the user-specified time zone.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/89fafb58-91d4-48de-a65d-dafa185bc63b/image_1.png)
+![Sample Run](../../../static/img/docs/89fafb58-91d4-48de-a65d-dafa185bc63b/image_1.webp)
 
 ## Dependencies
 
@@ -188,4 +188,3 @@ If the time zone is not accepted, the script will exit with an error message.
 - Tonga Standard Time  
 - Samoa Standard Time  
 - Line Islands Standard Time  
-

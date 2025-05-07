@@ -32,4 +32,3 @@ This dataview helps you audit restore point details on workstations with the hel
 | Restore Sequence        | Displays the sequence number of the restore point detected |
 | Restore Point Date      | Displays the date of the restore point detected           |
 | Restore Point Description| Displays the name of the restore point detected           |
-

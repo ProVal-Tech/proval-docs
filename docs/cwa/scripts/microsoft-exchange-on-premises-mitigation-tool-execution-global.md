@@ -18,7 +18,7 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f43caad6-43d9-4313-83ae-f0607ac15c6c/image_1.png)
+![Sample Run](../../../static/img/docs/f43caad6-43d9-4313-83ae-f0607ac15c6c/image_1.webp)
 
 #### Global Parameters
 
@@ -34,4 +34,3 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Log file named `msert.log`
-

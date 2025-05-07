@@ -20,7 +20,7 @@ The purpose of this group is to filter Windows Infrastructure Masters where the 
 
 ## Group Details
 
-![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_1_1.png)
+![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_1_1.webp)
 
 **Group Type:** Dynamic  
 **Group Name:** Infrastructure Master - Without Recycle Bin  
@@ -28,7 +28,7 @@ The purpose of this group is to filter Windows Infrastructure Masters where the 
 
 ### Criteria
 
-![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_2_1.png)
+![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_2_1.webp)
 
 - Is Primary Domain Controller should be equal to `Yes`
 - AD Recycle Bin does not contain any of `Does not meet minimum Criteria`
@@ -40,8 +40,7 @@ The purpose of this group is to filter Windows Infrastructure Masters where the 
 ## Group Creation
 
 Once you have added the above criteria, click the Save button to save the group.  
-![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_3.png)
+![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_3.webp)
 
-![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_4.png)
-
+![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_4.webp)
 

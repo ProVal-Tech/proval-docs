@@ -16,7 +16,7 @@ This script runs a standard shell command to disable the Windows Firewall for al
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/475fcc0b-08a9-4118-9436-1bbc4a0c9f2f/image_1.png)
+![Sample Run](../../../static/img/docs/475fcc0b-08a9-4118-9436-1bbc4a0c9f2f/image_1.webp)
 
 ## Process
 
@@ -25,4 +25,3 @@ The script will execute if the Windows Firewall is enabled on the machine. It ru
 ## Output
 
 - Script log
-

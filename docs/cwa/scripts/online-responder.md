@@ -20,4 +20,3 @@ This document will detect the servers with the Online Responder Feature installe
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
 | `%\{@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Online-Cert' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows        |
 
-

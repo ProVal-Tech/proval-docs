@@ -18,9 +18,9 @@ The script runs the Crystal Disk Info tool on the end machines and fetches the D
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_1.png)  
-![Sample Run 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_2.png)  
-![Sample Run 3](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_3.png)  
+![Sample Run 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_3.webp)  
 
 ## Dependencies
 
@@ -33,20 +33,20 @@ The script runs the Crystal Disk Info tool on the end machines and fetches the D
 |---------------------|---------|----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ReallocatedSector    | 65      | False    | Number Value  | The threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs). The default threshold is 50.            |
 
-![Parameter Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_4.png)
+![Parameter Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_5.png)  
-![Task Creation Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_6.png)  
+![Task Creation Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_5.webp)  
+![Task Creation Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_6.webp)  
 
 **Name:** `Get Crystal Disk Info (Disk Health)`  
 **Description:** `The script runs the Crystal Disk Info tool on the end machines and fetches the Disk Health.`  
 **Category:** `Data Collection`  
 
-![Task Creation Icon](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_7.png)
+![Task Creation Icon](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_7.webp)
 
 ## Parameters
 
@@ -54,35 +54,35 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_8.png)  
+![Add Parameter Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_8.webp)  
 
 This screen will appear.  
-![Add Parameter Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_9.png)  
+![Add Parameter Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_9.webp)  
 
 - Set `ReallocatedSector` in the `Parameter Name` field.
 - Select `Number Value` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Save Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_10.png)
+![Parameter Save Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_10.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Step](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_11.png)  
+![Add Row Step](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_11.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_12.png)  
+![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_12.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Function Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_13.png)  
-![PowerShell Function Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_14.png)  
+![PowerShell Function Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_13.webp)  
+![PowerShell Function Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_14.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_15.png)  
+![PowerShell Function Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_15.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -150,53 +150,53 @@ if ( Test-Path $ErrorLogPath ) {
 }
 ```
 
-![Script Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_16.png)  
+![Script Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_16.webp)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.png)  
+![Add Row Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.png)  
+![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_19.png)  
-![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.png)  
+![Script Log Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_19.webp)  
+![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.webp)  
 
 The following function will pop up on the screen:  
-![Script Log Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_21.png)  
+![Script Log Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_21.webp)  
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Script Log Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_22.png)  
+![Script Log Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_22.webp)  
 
 ### Row 3 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.png)  
+![Add Row Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.png)  
+![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_23.png)  
+![Set Custom Field Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_23.webp)  
 
 The following function will pop up on the screen:  
-![Set Custom Field Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_24.png)  
+![Set Custom Field Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_24.webp)  
 
 - Search and select the Computer-Level Custom Field `Crystal Disk Info_Disk Health` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.
 
-![Set Custom Field Save 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_25.png)  
-![Set Custom Field Save 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_26.png)  
+![Set Custom Field Save 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_25.webp)  
+![Set Custom Field Save 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_26.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Final Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_27.png)  
+![Final Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_27.webp)  
 
 ## Completed Script
 
-![Completed Script](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_28.png)  
+![Completed Script](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_28.webp)  
 
 ## Deployment
 
@@ -206,36 +206,35 @@ It is suggested to run the task once per week against Windows computers.
 - Search for the `Crystal Disk Info` Task.
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.  
-![Schedule Task](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_29.png)  
+![Schedule Task](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_29.webp)  
 
 This screen will appear.  
-![Schedule Screen](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_30.png)  
+![Schedule Screen](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_30.webp)  
 
 - Select the relevant time to run the script and click the "Does not repeat" button.  
-![Does Not Repeat](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_31.png)  
+![Does Not Repeat](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_31.webp)  
 
 This pop-up box will appear.  
-![Pop-up Box](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_32.png)  
+![Pop-up Box](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_32.webp)  
 
 - Change the number of days to `7` and click `OK`.  
-![Change Days](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_33.png)  
-![Confirm Days](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_34.png)  
+![Change Days](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_33.webp)  
+![Confirm Days](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_34.webp)  
 
 - Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.  
-![Select Groups](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_35.png)  
+![Select Groups](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_35.webp)  
 
 - Now click the `Run` button to initiate the task.  
-![Run Task](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_36.png)  
+![Run Task](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_36.webp)  
 
 - The task will start appearing in the Scheduled Tasks.  
-![Scheduled Tasks](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_37.png)  
-![Scheduled Tasks Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_38.png)  
+![Scheduled Tasks](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_37.webp)  
+![Scheduled Tasks Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_38.webp)  
 
 ## Output
 
 - Script log  
-![Script Log Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_39.png)  
+![Script Log Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_39.webp)  
 - Custom Field  
-![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.png)  
-
+![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.webp)  
 

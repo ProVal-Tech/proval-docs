@@ -18,7 +18,7 @@ This script is part of our GPO deployment process but can also be run standalone
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/babcfa7d-a4cd-404f-9375-e2498856ff24/image_1.png)
+![Sample Run](../../../static/img/docs/babcfa7d-a4cd-404f-9375-e2498856ff24/image_1.webp)
 
 ## Dependencies
 
@@ -42,4 +42,3 @@ This script is part of our GPO deployment process but can also be run standalone
 ## Output
 
 - Script log -> Logs the silent install URL to the script logs.
-

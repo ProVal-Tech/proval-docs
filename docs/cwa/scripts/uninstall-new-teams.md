@@ -22,7 +22,7 @@ The script uninstalls `New Teams` from Windows machines. It will only work on co
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/dad7ec2a-4998-47f9-bcb2-c886d3bea833/image_1.png)
+![Sample Run](../../../static/img/docs/dad7ec2a-4998-47f9-bcb2-c886d3bea833/image_1.webp)
 
 #### Global Parameters
 
@@ -48,4 +48,3 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
-

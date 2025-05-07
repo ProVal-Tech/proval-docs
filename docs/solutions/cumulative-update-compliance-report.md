@@ -47,7 +47,7 @@ The purpose of the dataviews included in this solution is to present the cumulat
 3. Follow the implementation steps provided in the [Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) solution document and ensure that at least the `Auditing` portion of the solution is installed in the environment.
 
 4. Reload the System Cache  
-   ![Reload the System Cache](../../static/img/docs/c1bece1b-9d48-488b-bc4a-02d8c64fe914/image_1.png)
+   ![Reload the System Cache](../../static/img/docs/c1bece1b-9d48-488b-bc4a-02d8c64fe914/image_1.webp)
 
 5. Execute the [MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1) script against any computer to create/update the [plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) custom table if it is not available in the environment.
 
@@ -62,5 +62,4 @@ The purpose of the dataviews included in this solution is to present the cumulat
 8. Remove the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
    - [MySQL - View - Create (pvl_cu_compliance)](/docs/c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33)
-
 

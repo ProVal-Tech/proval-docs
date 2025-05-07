@@ -48,4 +48,3 @@ This document covers the dataview audit snapshots for virtual machines hosted on
 | Estimated Disk Max Usage        | Displays the maximum disk usage by the snapshot        |
 | Snapshot Description             | Displays the description of the snapshot               |
 | Is Current Snapshot             | Displays whether the snapshot is current or not        |
-

@@ -24,6 +24,5 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_1.png)  
-![Screenshot 2](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_2.png)  
-
+![Screenshot 1](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_2.webp)  

@@ -16,7 +16,7 @@ This script takes user parameters when running the script and places them inside
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_1.png)
+![Sample Run](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_1.webp)
 
 ## Dependencies
 
@@ -44,5 +44,4 @@ This script is dependent on the following items:
 This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
-  - ![Output 1](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_2.png) OR ![Output 2](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_3.png)
-
+  - ![Output 1](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_2.webp) OR ![Output 2](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_3.webp)

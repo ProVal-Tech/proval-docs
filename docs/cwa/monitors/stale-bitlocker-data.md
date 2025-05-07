@@ -24,4 +24,3 @@ This script should be run as an autofix.
 ## Target
 
 Windows Machine
-

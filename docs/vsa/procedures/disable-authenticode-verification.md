@@ -44,4 +44,3 @@ This script is used to disable the Authenticode verification on Windows machines
 ## Output
 
 Agent procedure log.
-

@@ -24,7 +24,7 @@ This script will enable extensions for the following Chromium-based browsers:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/905d7834-84e6-474a-9dc4-0e34a2e8408a/image_1.png)
+![Sample Run](../../../static/img/docs/905d7834-84e6-474a-9dc4-0e34a2e8408a/image_1.webp)
 
 Installs the N-Able Passportal extension for the Chrome browser.  
 When selecting multiple browsers, use 'Chrome', 'Edge', 'Brave', etc.  
@@ -44,4 +44,3 @@ If setting all available browsers, leave the Target blank.
 ## Output
 
 - Script log
-

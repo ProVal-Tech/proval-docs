@@ -52,4 +52,3 @@ Create the following device groups:
 ### Step 3
 Create and deploy the following tasks:  
 [CW RMM - Task - DUO Install & Upgrade - Latest Version](/docs/47da7c82-7c27-4730-987a-2d32e22415fa)  
-

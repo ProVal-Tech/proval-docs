@@ -27,9 +27,9 @@ None. This script can be run on any Windows device.
 
 To implement this script, please create a new PowerShell-style script in the system.
 
-![Winget Install Application](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_1.png)
+![Winget Install Application](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_1.webp)
 
-![Description](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_2.png)
+![Description](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_2.webp)
 
 **Name:** Winget Install Application  
 **Description:** Attempts to install an application via Winget  
@@ -38,11 +38,11 @@ ID = Winget application ID (Example: Google.Chrome)
 To get the ID, you can search in the command prompt using `winget search appname` or by browsing to [winget.run](https://winget.run)  
 **Category:** Custom
 
-![Category](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_3.png)
+![Category](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_3.webp)
 
 ### Parameter
 
-![Parameter](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_4.png)
+![Parameter](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_4.webp)
 
 - **Parameter Name:** id  
 - **Required Field:** Selected  
@@ -52,15 +52,15 @@ To get the ID, you can search in the command prompt using `winget search appname
 
 #### Row 1 Function: Script Log
 
-![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.png)
+![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.webp)
 
 Input the following:
 
-![Input](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_6.png)
+![Input](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_6.webp)
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_7.png)
+![PowerShell Script](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_7.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 600 seconds.
 
@@ -163,19 +163,19 @@ Write-Log -Text 'Installing @id@.' -Type LOG
 & $wingetPath install --accept-package-agreements -e --id @id@ 
 ```
 
-![Final Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_8.png)
+![Final Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_8.webp)
 
 #### Row 3 Function: Script Log
 
-![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.png)
+![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_9.png)
+![Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_9.webp)
 
 The final task should look like the screenshot below.
 
-![Final Task](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_10.png)
+![Final Task](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_10.webp)
 
 ## Script Deployment
 
@@ -184,4 +184,3 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-

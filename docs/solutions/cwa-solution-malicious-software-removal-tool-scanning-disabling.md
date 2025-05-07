@@ -44,7 +44,7 @@ The solution provides feature to run the scanning using Malicious Software Remov
    - Run the script [Script - Malicious Software Removal Tool Scanner](/docs/18a8b802-bc6a-42a8-859b-89c93fed4257) with SetEnvironment = 1 on any random machine so that required EDFs get imported.
 2. Reload the system cache:
 
-   ![Reload Cache](../../static/img/docs/e84b3dd2-284b-4384-b972-4a02feaa7b37/image_1.png)
+   ![Reload Cache](../../static/img/docs/e84b3dd2-284b-4384-b972-4a02feaa7b37/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -67,7 +67,7 @@ The solution provides feature to run the scanning using Malicious Software Remov
    - Run the script [Script - Malicious Software Removal Tool Disable/Unistall](/docs/21c23057-f81d-11ef-87d3-8600008a66b7) with Set_Environment = 1 on any random machine so that required EDFs get imported.
 2. Reload the system cache:
 
-   ![Reload Cache](../../static/img/docs/e84b3dd2-284b-4384-b972-4a02feaa7b37/image_1.png)
+   ![Reload Cache](../../static/img/docs/e84b3dd2-284b-4384-b972-4a02feaa7b37/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:

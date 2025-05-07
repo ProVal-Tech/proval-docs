@@ -47,4 +47,3 @@ Location of output for log and error files:
 .\Repair-PrintSpooler-log.txt
 .\Repair-PrintSpooler-error.txt
 ```
-

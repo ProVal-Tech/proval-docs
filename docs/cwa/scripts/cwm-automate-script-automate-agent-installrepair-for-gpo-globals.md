@@ -20,19 +20,19 @@ The generated PowerShell script will install the agent if it is missing, attempt
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_1.png)
+![Sample Run](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_1.webp)
 
 ## Implementation
 
 **Step 1:** Create a computer-level EDF "Automate Agent Deployment GPO Enabled."
 
-![Step 1](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_2.png)
+![Step 1](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_2.webp)
 
 **Step 2:** Create an Auto-Join Group for the machines where the EDF is checked.
 
 **Step 3:** Schedule the script to run once per day against the group.
 
-![Step 3](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_3.png)
+![Step 3](../../../static/img/docs/ba82a707-a466-4960-95a9-856d5b67b8ed/image_3.webp)
 
 **Step 4:** Mark the EDF of the Domain Controllers where you would like to create the Agent Deployment GPO.
 

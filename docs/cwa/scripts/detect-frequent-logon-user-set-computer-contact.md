@@ -24,7 +24,7 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user, a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4/image_1.png)
+![Sample Run](../../../static/img/docs/bef87782-0d9d-40f0-96c5-d30b589b57b4/image_1.webp)
 
 ## Variables
 
@@ -55,4 +55,3 @@ The user who was detected most in `@DaysToCheck@` is set as the Frequent user, a
 - Script log
 - EDFs
 - Dataview
-

@@ -18,7 +18,7 @@ This script will enable or disable SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1, and TLS 1
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/1adb82ca-d3cb-4319-9319-5d22b569ed6f/image_1.png)
+![Sample Run](../../../static/img/docs/1adb82ca-d3cb-4319-9319-5d22b569ed6f/image_1.webp)
 
 ## Dependencies
 
@@ -87,4 +87,3 @@ Various options are:
 - Script log
 - Script state
 - Data view
-

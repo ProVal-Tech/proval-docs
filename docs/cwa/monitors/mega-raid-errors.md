@@ -24,12 +24,12 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result                                           |
 |--------------|----------------|-------------|---------------|--------------|----------|--------------------------------------------------|
-| System       | 127.0.0.1      | Run File    | **REDACTED**  | State Based  | 3600     | ![Result Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_1.png) |
+| System       | 127.0.0.1      | Run File    | **REDACTED**  | State Based  | 3600     | ![Result Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_1.webp) |
 
 ## Target
 
 Managed Windows Servers  
-![Target Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_2.png)
+![Target Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_2.webp)
 
 ## Implementation
 
@@ -45,4 +45,4 @@ Managed Windows Servers
 `%RESULT%`  
 
 **Sample RESULT:**  
-![Sample Result Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_3.png)
+![Sample Result Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_3.webp)

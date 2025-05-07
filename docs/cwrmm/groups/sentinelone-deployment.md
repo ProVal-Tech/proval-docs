@@ -22,7 +22,7 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 
 ## Overview
 
-![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_1.png)
+![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_1.webp)
 
 **Group Type:** Dynamic  
 **Group Name:** SentinelOne Deployment  
@@ -30,7 +30,7 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 
 ### Criteria
 
-![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_2.png)
+![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_2.webp)
 
 - Installed Software does not contain any of `Sentinel Agent, Sentinelone`
 - Endpoint type is not equal to `Vmware-ESXi`
@@ -39,9 +39,9 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 - Available should be True.
 - OS does not include any of the out-of-support machines like `Windows 7, 8, and Server 2003, 2008, 2012`  
   Click on the Dropdown --> expand Microsoft --> Click on 7, 8 Pro, 8.1  
-  ![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_3.png)  
+  ![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_3.webp)  
   Now expand Server and click on 2003 R2 Service Pack 2, 2008, and 2012  
-  ![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_4.png)  
+  ![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_4.webp)  
 
 - SentinelOne Group Key should not equal `NA`
 - SentinelOne Site Key should not equal `NA`
@@ -49,7 +49,6 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 ## Group
 
 Once you have added the above criteria, click the Save button to save the Group.  
-![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_5.png)  
+![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_5.webp)  
 
-![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_6.png)  
-
+![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_6.webp)  

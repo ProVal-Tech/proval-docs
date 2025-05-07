@@ -26,4 +26,3 @@ unlisted: false
 ## Dependencies
 
 This data is populated by the Windows 10 Upgrade Assistant script as well as a secondary Windows 10 Upgrade Assistant Follow-Up script. Without these scripts, this data view will not be able to effectively display the data.
-

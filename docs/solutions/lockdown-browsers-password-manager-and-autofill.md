@@ -84,4 +84,3 @@ This solution provides a comprehensive approach to managing and monitoring the s
 | Lockdown Browsers Address Autofill | Client | Check Box | Security | Flagging this EDF will activate the [Lockdown Chromium Browsers Address Autofill](/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b) remote monitor for the Windows computers belonging to the client. |
 | Exclude Browser Address Autofill Lockdown | Location | Check Box | Exclusions | Marking this EDF will result in the exclusion of the computers at the specified location from the [Lockdown Chromium Browsers Address Autofill](/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b) remote monitor. |
 | Exclude Browser Address Autofill Lockdown | Computer | Check Box | Exclusions | Flagging this EDF will result in the individual computer being excluded from the [Lockdown Chromium Browsers Address Autofill](/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b) remote monitor. |
-

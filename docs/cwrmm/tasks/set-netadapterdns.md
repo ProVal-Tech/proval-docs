@@ -16,11 +16,11 @@ This task **appends a DNS server address to all physical, active network adapter
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_1.png)
+![Sample Run Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_1.webp)
 
 Add the DNS server address and select **Force** if you would like to force DNS address updates to DHCP-enabled adapters.
 
-![Sample Run Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_2.png)
+![Sample Run Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_2.webp)
 
 ## Dependencies
 
@@ -37,40 +37,40 @@ Add the DNS server address and select **Force** if you would like to force DNS a
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_3.png)
+![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_3.webp)
 
-![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_4.png)
+![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_4.webp)
 
 **Name:** Set-NetAdapterDNS  
 **Description:** This task is used to append a DNS server address to all physical, active network adapters.  
 **Category:** Custom  
 
-![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_5.png)
+![Task Creation Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_5.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_6.png)
+![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_6.webp)
 
 This screen will appear.
 
-![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_7.png)
+![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_7.webp)
 
 - Set `DNSServer` in the `Parameter Name` field.
 - Select `String` from the `Parameter Type` dropdown menu.
 - Toggle the Required Field.
 - Click the `Save` button.
 
-![Save Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_8.png)
+![Save Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_8.webp)
 
 It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
-![Confirm Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_9.png)
+![Confirm Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_9.webp)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_10.png)
+![Add Parameter Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_10.webp)
 
 - Set `Force` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -79,31 +79,31 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Save` button.
 - Click the `Confirm` button to create the parameter.
 
-![Confirm Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_11.png)
+![Confirm Button Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_11.webp)
 
 Parameters will look like as shown below:
 
-![Parameters Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_12.png)
+![Parameters Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_12.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_13.png)
+![Add Row Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_13.webp)
 
 A blank function will appear.
 
-![Blank Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_14.png)
+![Blank Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_14.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_15.png)
+![PowerShell Script Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_15.webp)
 
 The following function will pop up on the screen:
 
-![Function Popup Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_16.png)
+![Function Popup Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_16.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -173,13 +173,12 @@ Get-Content -Path $LogPath
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_17.png)
+![Script Log Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_17.webp)
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_18.png)
+![Completed Task Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_18.webp)
 
 ## Output
 
 - Script Log
-

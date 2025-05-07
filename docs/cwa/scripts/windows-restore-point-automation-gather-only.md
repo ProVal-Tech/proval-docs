@@ -18,7 +18,7 @@ This script helps to gather all restore point information of a workstation and s
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7f52c871-523c-44ae-9289-814326207896/image_1_1.png)
+![Sample Run](../../../static/img/docs/7f52c871-523c-44ae-9289-814326207896/image_1_1.webp)
 
 ## Dependencies
 
@@ -33,4 +33,3 @@ This script will create a custom table `plugin_proval_restore_points` if it does
 
 - Script log
 - Dataview
-

@@ -16,7 +16,7 @@ This script runs the agnostic [EPM - Windows Configuration - Agnostic - Invoke-V
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7f9d57ed-b09d-4db5-8ca7-ab0a6034c07c/image_1.png)  
+![Sample Run](../../../static/img/docs/7f9d57ed-b09d-4db5-8ca7-ab0a6034c07c/image_1.webp)  
 This will run a PowerShell equivalent of defrag on the target machine.
 
 ## Dependencies
@@ -66,6 +66,5 @@ If the script/monitor is intended to create tickets, please note the Subject and
 %computername%'s results:  
 @psout@  
 
-![Ticket Example](../../../static/img/docs/7f9d57ed-b09d-4db5-8ca7-ab0a6034c07c/image_2.png)
-
+![Ticket Example](../../../static/img/docs/7f9d57ed-b09d-4db5-8ca7-ab0a6034c07c/image_2.webp)
 

@@ -14,11 +14,11 @@ unlisted: false
 
 This client script aims to set the alert template "△ Custom - Ticket Creation - Offline Network Devices" on the network devices in bulk and also checks the `Send Alert when Unit is Down` EDF based on a global system property specifying which network device manufacturer(s) are requested.
 
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_1.png)
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_1.webp)
 
 ## Sample Run
 
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_2.png)
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_2.webp)
 
 ## User Parameter
 
@@ -53,14 +53,14 @@ This client script aims to set the alert template "△ Custom - Ticket Creation 
 | Automate Offline Network Device Ticketing Enabled | NetworkDevice-EDF | Flag  | 0       | Yes      | This EDF was checked via a script after performing the offline ticket enabling and the alert template set to "△ Custom - Ticket Creation - Offline Network Devices". |
 
 Client-Level EDF:  
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_3.png)  
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_3.webp)  
 
 Location-Level EDF:  
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_4.png)  
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_4.webp)  
 
 Device-Level EDFs:  
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_5.png)  
-![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_6.png)  
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_5.webp)  
+![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_6.webp)  
 
 ## Implementation
 
@@ -70,7 +70,7 @@ Device-Level EDFs:
    - Script - Network Devices - Offline Ticket Enabling [Param]
 
 2. Reload the system cache  
-   ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_7.png)  
+   ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_7.webp)  
 
 3. Configure the solution as follows:  
    - Navigate to Automation --> Scripts within the CWA Control Center.  
@@ -80,19 +80,18 @@ Device-Level EDFs:
      - Fill in the `NetworkDevice_Manufacturer` system property as per partner requirements.  
      - **Important:** Do not proceed with implementing this script unless the consultant provides the type of network devices the partner wants to sync. Contact the consultant to obtain this information.  
      - By default, it remains empty  
-       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_8.png)  
+       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_8.webp)  
      - If the partner wants to set offline ticketing for all devices, put "ALL" in the `NetworkDevice_Manufacturer` system property as shown below:  
-       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_9.png)  
+       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_9.webp)  
      - If the partner wants to set offline ticketing for a particular manufacturer type of network device like Meraki, Ubiquiti, etc., fill in the system property as shown below. Separate each type with a pipe (|).  
-       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_10.png)  
+       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_10.webp)  
      - If the partner wants to remove the offline ticketing from the device script synced earlier, put "Disable" in the system property as shown below:  
-       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_11.png)  
+       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_11.webp)  
    - Navigate to system dashboard --> Management --> Scheduled Client Scripts  
      - Schedule the [Script - Network Devices - Offline Ticket Enabling](/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92) to run daily.  
-       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_2.png)  
+       ![Image](../../../static/img/docs/c630e0b8-da8d-4188-aa83-4c4c7e421d92/image_2.webp)  
    - If the partner wants to exclude any particular device, location, or client from external sync, select the `Exclude from Offline Network Device Ticketing` EDF respectively on that device, location, or client.  
 
 ## Output
 
 - Script log
-

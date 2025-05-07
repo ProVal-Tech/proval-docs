@@ -19,13 +19,13 @@ The EPM - Disk - Internal Monitor - Execute Script - Disk - Gather Critical Data
 - Replace the `\\<MONITORID>` in the Additional Condition with the ID of the monitor set.  
 
   Before:  
-  ![Before](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_1.png)  
+  ![Before](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_1.webp)  
 
   After:  
-  ![After](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_2.png)  
+  ![After](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_2.webp)  
 
 - Set the appropriate groups under the monitor target section. Suggested are Managed Windows Workstations group(s).  
-  ![Groups](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_3.png)  
+  ![Groups](../../../static/img/docs/9568d3f6-e271-45c8-9554-3a476f7eb5e4/image_3.webp)  
 
 ## Dependencies
 
@@ -42,4 +42,3 @@ Managed Windows Workstations
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
 Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](/docs/687261c3-e6d7-46bc-84f6-506007d47142) script.
-

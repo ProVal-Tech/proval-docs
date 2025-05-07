@@ -16,7 +16,7 @@ This script downloads the offscrub files from the repository and then attempts t
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/fc97a0b8-b73a-4de0-be9a-c735ece7f43f/image_1.png)
+![Sample Run](../../../static/img/docs/fc97a0b8-b73a-4de0-be9a-c735ece7f43f/image_1.webp)
 
 ## Dependencies
 
@@ -42,4 +42,3 @@ This script is designed to run manually on Windows machines as per requirement. 
 
 - Script log  
 - Local file on computer
-

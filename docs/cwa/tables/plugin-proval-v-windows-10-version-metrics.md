@@ -35,4 +35,3 @@ This document provides data used for auditing Windows 10 versions. It displays i
 | Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version that have a patching policy. |
 | % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version that have a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
-

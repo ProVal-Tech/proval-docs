@@ -48,4 +48,3 @@ The view is designed to store and execute the SQL query utilized by the [CWM - A
 | Total Workstations      | Total workstations targeted in the schedule                              |
 | Percent Targeted       | Percentage of the machines targeted in the schedule                     |
 
-

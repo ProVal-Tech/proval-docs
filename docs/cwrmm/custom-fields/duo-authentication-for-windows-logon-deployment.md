@@ -45,24 +45,23 @@ These custom fields are required for the "Duo Authentication for Windows Logon" 
 ## Steps to Create Custom Fields
 
 1. Go to Settings > Custom Fields  
-   ![Step 1](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_1.png)
+   ![Step 1](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_1.webp)
 
 2. Click Add option  
-   ![Step 2](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_2.png)
+   ![Step 2](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_2.webp)
 
 3. Create Custom Field  
    Provide Name: DUO Windows Login Host  
    Select Level: Company  
-   ![Step 3](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_3.png)  
+   ![Step 3](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_3.webp)  
    Then check the Type option:  
    Type: Text Box  
-   ![Step 3 Type](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_4.png)  
+   ![Step 3 Type](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_4.webp)  
    Then provide Default Value and Description:  
    Default:  
    Description: HOST for Duo Deployment  
    Editable: Yes  
-   ![Step 3 Default Value](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_5.png)  
+   ![Step 3 Default Value](../../../static/img/docs/a9578dd1-1f6b-4932-a614-5ed823656416/image_5.webp)  
    Note: The description is mandatory to be filled and it doesn't accept **'NEW LINE'**. Write everything in one phrase to describe the detail of the custom field.
 
 4. Please follow the same steps to create other custom fields.
-

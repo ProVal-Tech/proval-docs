@@ -105,8 +105,8 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'S
 
 Perform `Refresh Searches` and `Do Group Refresh` from the `MySQL Server Status` tool.
 
-![Image 1](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_1.png)
-![Image 2](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_2.png)
+![Image 1](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_1.webp)
+![Image 2](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_2.webp)
 
 ## Step 3
 
@@ -120,7 +120,7 @@ Refresh Groups and look for the `SMB1 Server Enabled [Remote Monitor]` group.
 
 Validate the presence of the `SMB1 Traffic Detection` remote monitor in the group.
 
-![Image](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_3.png)
+![Image](../../../static/img/docs/e6d09f37-fd0f-42a6-98a5-449f65673296/image_3.webp)
 
 ## Step 6
 

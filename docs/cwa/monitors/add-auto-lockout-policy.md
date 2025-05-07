@@ -31,8 +31,8 @@ Windows Machines - It can be run on all Windows machines.
 
 ## Screenshots/Detail Info
 
-![Screenshot 1](../../../static/img/docs/65644f6f-922e-40e5-91fe-6063c5de2018/image_1.png)  
-![Screenshot 2](../../../static/img/docs/65644f6f-922e-40e5-91fe-6063c5de2018/image_2.png)  
+![Screenshot 1](../../../static/img/docs/65644f6f-922e-40e5-91fe-6063c5de2018/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/65644f6f-922e-40e5-91fe-6063c5de2018/image_2.webp)  
 
 PowerShell code:
 

@@ -20,11 +20,10 @@ Domain Controllers
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/2be0669b-3c87-4594-81f4-112c7411f513/image_1.png)
+![Sample Run](../../../static/img/docs/2be0669b-3c87-4594-81f4-112c7411f513/image_1.webp)
 
 ## Output
 
 - Script log
-
 
 

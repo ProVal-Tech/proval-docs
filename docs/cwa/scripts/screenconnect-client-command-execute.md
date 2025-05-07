@@ -18,7 +18,7 @@ This script will execute a command via the default command-line parser on the ta
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6/image_1.png)
+![Sample Run](../../../static/img/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ This script will execute a command via the default command-line parser on the ta
 ## Output
 
 - Script log
-

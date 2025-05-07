@@ -27,24 +27,23 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_1.png)
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_2.png)  
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_2.webp)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_3.png)
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_3.webp)
 
 3. Set the group name to `DUO Auth for Windows Login Failed`.  
    Description: `This group records the agents where the "DUO Install & Upgrade - Latest Version" failed to deploy the "DUO Auth for Windows Login" application.`  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_4.png)
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_4.webp)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_5.png)  
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_5.webp)  
    This search box will appear.  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_6.png)
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_6.webp)
 
 5. - Search and select the `Duo Deployment Result` custom field from the search box.  
    - Set `Failed` in the comparison condition.  
-   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_7.png)  
+   ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_7.webp)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
-

@@ -29,8 +29,7 @@ Possible values:
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_1.png)
+![Screenshot 1](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_1.webp)
 
-![Screenshot 2](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_2.png)
-
+![Screenshot 2](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_2.webp)
 

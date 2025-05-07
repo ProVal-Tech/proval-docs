@@ -26,9 +26,8 @@ This custom field is used to store and display the results of the task [CW RMM -
 
 ## Screenshot
 
-![Screenshot](../../../static/img/docs/67da04f5-4170-402a-93b3-7e6236937263/image_1.png)
+![Screenshot](../../../static/img/docs/67da04f5-4170-402a-93b3-7e6236937263/image_1.webp)
 
 ## Sample Value
 
-![Sample Value](../../../static/img/docs/67da04f5-4170-402a-93b3-7e6236937263/image_2.png)
-
+![Sample Value](../../../static/img/docs/67da04f5-4170-402a-93b3-7e6236937263/image_2.webp)

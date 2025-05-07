@@ -16,7 +16,7 @@ This document outlines the process for importing the [plugin_proval_v_patching_m
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/9aa26b60-2171-43e5-bb14-8bf274a237a4/image_1.png)
+![Sample Run](../../../static/img/docs/9aa26b60-2171-43e5-bb14-8bf274a237a4/image_1.webp)
 
 ## Process
 
@@ -27,4 +27,3 @@ This document outlines the process for importing the [plugin_proval_v_patching_m
 ## Output
 
 - View
-

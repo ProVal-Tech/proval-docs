@@ -23,18 +23,18 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 
 1. Export the procedure from the ProVal VSA.  
    **Procedure Name:** Bitdefender Endpoint Security Tools - Uninstall  
-   ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_1.png)
+   ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_1.webp)
 
 2. Import the procedure from step 1 into the client's VSA.  
-   ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_2.png)
+   ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_2.webp)
 
 3. There are no managed files or managed variables required for this procedure.
 
 4. There are two optional variables within the procedure:  
    - **Key:** This parameter allows you to enter an uninstall password/key in plaintext or encoded in base64 UTF-8.  
-     ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_3.png)  
+     ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_3.webp)  
    - **Destructive:** This variable allows the Bitdefender tool to remove the application in certain circumstances where it cannot be detected by the Bitdefender tool.  
-     ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_4.png)
+     ![Image](../../../static/img/docs/96b91b8c-3c8a-485e-8f33-9a77cf4d190c/image_4.webp)
 
 ## Process
 
@@ -52,4 +52,3 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
-

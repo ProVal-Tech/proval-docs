@@ -16,7 +16,7 @@ The script checks the version of .NET. If version 4.8 is not installed on the ma
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/bc595922-1293-432f-9b30-4a246d517606/image_1.png)
+![Sample Run](../../../static/img/docs/bc595922-1293-432f-9b30-4a246d517606/image_1.webp)
 
 ## Variables
 
@@ -33,4 +33,3 @@ The script checks the version of .NET. If version 4.8 is not installed on the ma
 ## Output
 
 - Script log
-

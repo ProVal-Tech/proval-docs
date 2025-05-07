@@ -31,11 +31,10 @@ The purpose of this solution is to detect Dell Dockstation on Dell workstations.
    - [Dataview - Dell Dockstation Inventory](/docs/8551929f-3af4-45ac-9edf-00f733193d56)
    - Alert Template - `△ Custom - Execute Script - Get-DellDockStation`
 
-2. ![Image](../../static/img/docs/2e4ec512-945a-4b3d-ba18-53553b08f4ca/image_1.png)
+2. ![Image](../../static/img/docs/2e4ec512-945a-4b3d-ba18-53553b08f4ca/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
        - `△ Custom - Execute Script - Get-DellDockStation`
        - Right-click and select "Run Now" to start the monitor.
-

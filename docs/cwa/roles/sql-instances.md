@@ -22,4 +22,3 @@ This document describes a method to gather all SQL instances installed on an end
 
 
 
-

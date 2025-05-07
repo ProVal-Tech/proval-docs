@@ -15,13 +15,13 @@ unlisted: false
 This script utilizes the BISNotification.exe from the ProVal file repository and sends a custom message to the logged-in user on their machine if detected.  
 Note: The user parameters are not mandatory. If the user parameters are not set, a default pop-up is displayed for the logged-in user, as shown below:
 
-![Default Pop-up](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_1.png)
+![Default Pop-up](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_1.webp)
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_2.png)  
-![Sample Run 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_3.png)  
-![Sample Run 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_4.png)
+![Sample Run 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_2.webp)  
+![Sample Run 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_3.webp)  
+![Sample Run 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_4.webp)
 
 ## User Parameters
 
@@ -34,35 +34,35 @@ Note: The user parameters are not mandatory. If the user parameters are not set,
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation Step 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_5.png)  
-![Task Creation Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_6.png)  
+![Task Creation Step 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_5.webp)  
+![Task Creation Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_6.webp)  
 
 **Name:** BIS Notification Prompter  
 **Description:** This script utilizes the BISNotification.exe from the ProVal file repository and sends a custom message to the logged-in user on their machine if detected.  
 **Category:** Maintenance  
-![Task Creation Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_7.png)  
+![Task Creation Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_7.webp)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_8.png)  
+![Add Row](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_8.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_9.png)  
+![Blank Function](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_9.webp)  
 
 ## Row 1 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_10.png)  
+![Add Row Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_10.webp)  
 
 A blank function will appear.  
-![Blank Function Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_11.png)  
+![Blank Function Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_11.webp)  
 
 Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_12.png)  
+![Select PowerShell Script](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_12.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_13.png)  
+![PowerShell Function](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_13.webp)  
 
 Paste in the following PowerShell script and leave the expected time of script execution set to `900` seconds. Click the `Save` button.
 
@@ -141,46 +141,46 @@ try {
 }
 ```
 
-![PowerShell Function Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_14.png)  
+![PowerShell Function Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_14.webp)  
 
 Limit this PowerShell function to run on `Windows` machines only.
 
 ## Row 2 Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_15.png)  
-![Script Log Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_16.png)  
+![Script Log](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_15.webp)  
+![Script Log Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_16.webp)  
 
 ## Row 3 Logic: If/Then
 
-![If/Then Logic 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_17.png)  
-![If/Then Logic 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_18.png)  
+![If/Then Logic 1](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_17.webp)  
+![If/Then Logic 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_18.webp)  
 
 ## Row 3a Condition: Output Contains
 
 In the IF part, enter `An error occurred and the script was unable to be downloaded` in the right box of the "Output Contains" part.  
 Add another condition with the Or operator and enter `Failed to create task` in the right box of the "Output Contains" part.  
-![Output Contains Condition](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_19.png)  
+![Output Contains Condition](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_19.webp)  
 
 ## Row 3b Function: Script Exit
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_20.png)  
+![Add Row Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_20.webp)  
 
 In the script exit message, simply type `%Output%`.  
-![Script Exit](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_21.png)  
+![Script Exit](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_21.webp)  
 
 ## Row 4 Function: Script Exit
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row Step 4](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_20.png)  
+![Add Row Step 4](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_20.webp)  
 
 In the script exit message, leave it empty.  
-![Script Exit Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_22.png)  
+![Script Exit Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_22.webp)  
 
 ## Completed Task
 
-![Completed Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_23.png)  
+![Completed Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_23.webp)  
 
 ## Implementation
 
@@ -190,28 +190,28 @@ This task can be scheduled manually on-demand to any agent or to a certain group
 2. Search for `BIS Notification Prompter` Task.
 3. Select the concerned task.
 4. Click on the `Schedule` button to schedule the task/script.  
-   ![Schedule Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_24.png)
+   ![Schedule Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_24.webp)
 5. This screen will appear.  
-   ![Schedule Task Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_25.png)  
+   ![Schedule Task Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_25.webp)  
    Please set the parameters as required to customize the notification:  
-   ![Schedule Task Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_26.png)
+   ![Schedule Task Step 3](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_26.webp)
 6. Select the `Schedule` button and click the calendar icon present in front of the `Recurrence` option.  
-   ![Recurrence Option](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_27.png)
+   ![Recurrence Option](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_27.webp)
 7. Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.  
-   ![Save Schedule](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_28.png)
+   ![Save Schedule](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_28.webp)
 8. Click the `Select Targets` button to select the concerned target.  
-   ![Select Targets](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_29.png)
+   ![Select Targets](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_29.webp)
 9. Search and select the Sites, Device Groups, or Devices for the target.  
-   ![Select Devices](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_30.png)
+   ![Select Devices](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_30.webp)
 10. Click the `Run` button to initiate the schedule.  
-    ![Run Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_31.png)
+    ![Run Task](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_31.webp)
 
 ## Output
 
 - **Script log**  
   To view the logs, follow the steps below:  
   Navigate to the Endpoints -> Devices  
-  ![Devices](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_32.png)  
+  ![Devices](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_32.webp)  
   Navigate to the right side of the screen and click on the three bars as shown below:  
-  ![Three Bars](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_33.png)  
-  ![Three Bars Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_34.png)  
+  ![Three Bars](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_33.webp)  
+  ![Three Bars Step 2](../../../static/img/docs/825898ba-8e95-4b71-a8f0-497bca838433/image_34.webp)  

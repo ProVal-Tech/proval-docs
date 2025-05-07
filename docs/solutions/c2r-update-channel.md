@@ -32,7 +32,7 @@ This solution aims to acquire the Click-to-Run Configuration on a Windows machin
 
 Update the [Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) script from the `ProSync` plugin and execute it against any online Windows machine with the `Set_Environment` parameter set to `1` to create the newly introduced custom table and EDFs used by the solution.
 
-![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_1.png)
+![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_1.webp)
 
 ## Associated Content
 
@@ -65,10 +65,10 @@ Update the [Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58
    - Alert Template - `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
 
 2. Reload the system cache:
-   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_2.png)
+   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_2.webp)
 
 3. Execute the script [Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table and EDFs used by the solution.
-   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_1.png)
+   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_1.webp)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -86,7 +86,7 @@ Confirm with a consultant before enabling the Automation.
    - `△ Custom - Microsoft 365 - Click-to-Run - Set Update Channel`
 
 2. Reload the system cache:
-   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_3.png)
+   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_3.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -104,5 +104,4 @@ Confirm with a consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](/docs/a17fd169-876b-4de8-b01c-d396ec4899cf)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
-
 

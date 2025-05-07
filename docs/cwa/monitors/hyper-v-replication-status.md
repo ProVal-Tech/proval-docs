@@ -33,7 +33,7 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Windows Hyper-V Host  
-![Hyper-V Host](../../../static/img/docs/c768b83d-adcf-4de8-8b4f-ac3d65679161/image_1.png)
+![Hyper-V Host](../../../static/img/docs/c768b83d-adcf-4de8-8b4f-ac3d65679161/image_1.webp)
 
 ## Ticketing
 

@@ -61,4 +61,3 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the date of the last check                 |
 
-

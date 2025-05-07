@@ -28,14 +28,14 @@ This solution handles the optional application Sysmon.
 1. Import the Sysmon Install Script.
 2. Set the optional config file as a user parameter, or leave it blank if you do not have a specified config file.
 
-![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_1.png) or ![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_2.png)
+![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_1.webp) or ![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_2.webp)
 
 ## Uninstall Sysmon From an Endpoint (Sysmon - Uninstall)
 
 1. Import the Sysmon Uninstall Script.
 2. Run the script.
 
-![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_3.png)
+![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_3.webp)
 
 ### Optional Script Enhancement Suggestions
 
@@ -53,7 +53,7 @@ This solution handles the optional application Sysmon.
    8. Condition: Missing
    9. Interval: 300
 
-![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_4.png) ![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_5.png)
+![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_4.webp) ![Image](../../static/img/docs/67bf4b52-4294-4773-b4df-7d75c9387954/image_5.webp)
 
 ## Variables
 
@@ -80,4 +80,3 @@ This solution handles the optional application Sysmon.
 ## Output
 
 - Script log
-

@@ -35,4 +35,3 @@ Stores information about BitLocker key protectors backed up to Active Directory.
 | ParentDistinguishedName | TEXT     | The full DN of the parent of the key protector object in AD (generally a computer object).           |
 | ParentSID               | VARCHAR  | The SID of the parent of the key protector object in AD (generally a computer object).               |
 | Timestamp               | DATETIME | The date and time that the audit was last run.                                                       |
-

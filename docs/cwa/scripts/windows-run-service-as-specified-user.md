@@ -18,7 +18,7 @@ This script will start a specified service with a specific user account. It work
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/566fcde7-b6ad-48d5-9909-dbb9cd4da1be/image_1.png)
+![Sample Run](../../../static/img/docs/566fcde7-b6ad-48d5-9909-dbb9cd4da1be/image_1.webp)
 
 #### User Parameters
 
@@ -35,4 +35,3 @@ This script will start a specified service with a specific user account. It work
 ## Output
 
 - Script log
-

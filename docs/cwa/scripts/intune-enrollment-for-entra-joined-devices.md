@@ -30,7 +30,7 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 
 ## Sample Run
 
-![Image1](../../../static/img/docs/9ea6eea1-814c-4642-bcad-fa34b361eb42/Image1.png)
+![Image1](../../../static/img/docs/9ea6eea1-814c-4642-bcad-fa34b361eb42/Image1.webp)
 
 ## Variables
 

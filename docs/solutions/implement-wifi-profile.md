@@ -51,7 +51,7 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
 4. Import the [Dataview - Wi-Fi Profile - Audit [Script]](/docs/40d25f32-9014-44ea-8332-0ab24d59ab43) dataview using the Prosync plugin.
 
 5. Reload the system cache:
-   ![Reload System Cache](../../static/img/docs/cffbdce7-7390-4b11-9300-6a34799b7d82/image_15.png)
+   ![Reload System Cache](../../static/img/docs/cffbdce7-7390-4b11-9300-6a34799b7d82/image_15.webp)
 
 6. Configure the solution as outlined below:
    - Enable the desired monitors in the Workstation Service Plan groups.
@@ -62,5 +62,4 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](/docs/3a1d1f7d-a655-40bf-a048-5e861aee00ae)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
-
 

@@ -24,4 +24,3 @@ This monitor will detect agents where shadow copies are not present or are older
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines.
-

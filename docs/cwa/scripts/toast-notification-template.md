@@ -87,12 +87,12 @@ Recommended steps to use Toast Notification:
 
 #### Notification
 
-![Image1](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image1.png)
+![Image1](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image1.webp)
 
 #### Scheduled Task
 
-![Image2](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image2.png)
+![Image2](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image2.webp)
 
 ### Affected Areas on Prompt Based on Example Variables
 
-![Image3](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image3.png)
+![Image3](../../../static/img/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c2e559f/Image3.webp)

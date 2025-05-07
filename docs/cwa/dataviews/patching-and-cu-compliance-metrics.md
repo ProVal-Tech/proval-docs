@@ -66,4 +66,3 @@ The dataview is designed to display the patch and cumulative update compliance s
 | Compliant Clients - CU %             | Red    | Less than 75                         |
 | Compliant Clients - CU %             | Green  | Greater than or equal to 75         |
 
-

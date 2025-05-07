@@ -30,4 +30,3 @@ The [VSSAdmin List Storage Audit](/docs/0de90f98-d7ae-4a79-a851-30829a596846) sc
 ## FAQ
 
 *(This section can be filled out with frequently asked questions related to the auditing and resizing of VSSAdmin shadow copies.)*
-

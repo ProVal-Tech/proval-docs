@@ -21,4 +21,3 @@ This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Au
 ## Target
 
 Windows Group
-

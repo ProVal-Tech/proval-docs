@@ -34,4 +34,3 @@ This dataview displays the FileVault Status for the MAC computers present in the
 | File Vault Script Run Time | File Vault Script Run Time                  |
 | Last Contact              | Last Contact                                |
 | Last Logon User           | Last Logon User                            |
-

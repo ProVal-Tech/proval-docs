@@ -55,11 +55,11 @@ The solution aims to retrieve and display the OneDrive Sync Status using the [Ge
 
 ### 3.
 Reload the system cache:  
-![Reload Cache](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_1.png)
+![Reload Cache](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_1.webp)
 
 ### 4.
 Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9).  
-![Run Script](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_2.png)
+![Run Script](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_2.webp)
 
 ### 5.
 Configure the solution as outlined below:
@@ -80,7 +80,7 @@ The following steps to import and implement the Alerting section should only be 
 
 ### 2.
 Reload the system cache:  
-![Reload Cache](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_1.png)
+![Reload Cache](../../static/img/docs/ddfef387-6914-46a5-a805-12dd035abe17/image_1.webp)
 
 ### 3.
 Configure the solution as outlined below:
@@ -88,4 +88,3 @@ Configure the solution as outlined below:
   - [Internal Monitor - ProVal - Production - OneDrive Sync Failures](/docs/8437ea68-5f49-4e76-ba19-52001cd178ef)  
     - Alert Template: `△ Custom - Ticket Creation - Computer`
     - Right-click and Run Now to start the monitor
-

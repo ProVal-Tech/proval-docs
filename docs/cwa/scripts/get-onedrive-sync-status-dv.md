@@ -18,10 +18,10 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 **First Run:** Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table [pvl_odsync_status](/docs/e7a826db-104c-4ebb-877f-b44e138067f9).
 
-![First Run](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_1.png)
+![First Run](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_1.webp)
 
 **Regular Execution:**  
-![Regular Execution](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_2.png)
+![Regular Execution](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_2.webp)
 
 ## User Parameters
 
@@ -39,10 +39,9 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 
 1. Does the OneDrive Sync Status in the [Dataview - OneDrive Sync Status [Script]](/docs/61160125-8794-4e01-ba0a-3bf4ec81077e) contain the data for the OneDrive Sync or Script?  
    **Answer:** The data in the OneDrive Sync Status is the OneDrive Sync data, not the script data.  
-   ![OneDrive Sync Status](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_3.png)
+   ![OneDrive Sync Status](../../../static/img/docs/ed03ad47-d4f8-4917-8ecc-0505b6172ece/image_3.webp)
 
 2. Can this script be run in an environment where a security application is applied?  
    **Answer:** Yes, you just need to whitelist the following hashes:  
    - C:/ProgramData/_Automation/Script/ODSync/ODSyncUtility.ps1: **A5EBD70394BA53B0D3A093FB47C94985**  
    - C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: **4626F936E0BABCE79F350E096671A19F**  
-

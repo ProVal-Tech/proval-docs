@@ -85,8 +85,8 @@ This article encompasses multiple components and contents. Please import and imp
 ## Implementation (Plugin)
 
 1. The solutions presented in this section rely on the functionality provided by the **`Active Directory`** plugin. Therefore, it is imperative to verify that both the **`Active Directory`** and **`Active Directory Remote`** plugins are correctly installed and operational within the environment.
-   ![Image 1](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_1.png)
-   ![Image 2](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_2.png)
+   ![Image 1](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_1.webp)
+   ![Image 2](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_2.webp)
 
 2. Ensure that the RMM+ Plugin is correctly configured and operational within the environment, as this solution relies on the proper configuration of the [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246).
 
@@ -125,7 +125,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Active Directory Reporting SQL Import Attachment](/docs/fff1e6ee-cc28-43da-87ef-cdb121414c76)
 
 4. Import the file using System → General → Import → SQL File (The SQL file is too large for a remote monitor).
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_3.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_3.webp)
    - Doing this will configure the following reports:
      - [Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
      - [Report - Active Directory User Groups - Detail](/docs/e76e5bf4-d80e-4a53-ab39-a116c157e008)
@@ -140,7 +140,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Alert Template - **`△ Custom - Autofix - AD Plugin Sync Out of Date`**
 
 2. Reload the system cache.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_4.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_4.webp)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - Sync Out of Date](/docs/18432358-9550-4ab9-959e-255196b0ebcf).
@@ -152,7 +152,7 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Active Directory - Enabled Test Accounts](/docs/f1bc732b-7469-4689-aa3e-d0af5161ecc5)
 
 2. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - Enabled Test Accounts](/docs/f1bc732b-7469-4689-aa3e-d0af5161ecc5).
@@ -166,13 +166,13 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Domain Computers Missing Automate Agent](/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7)
 
 2. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 3. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Domain Computers Missing Automate Agent](/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7).
      - Assign the **`△ Custom - Ticket Creation - Client`** alert template.
      - If the partner requires an Email Creation - Client alert template, this will need to be built by development.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_6.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_6.webp)
 
 ### ADPluginUser - Create
 
@@ -183,9 +183,9 @@ This article encompasses multiple components and contents. Please import and imp
 
 2. Run the script against any online computer with **`Set Environment`** parameter set to **`1`**.
    - Set the required values for the rest of the user parameters. (This should be specified by the consultant).
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_7.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_7.webp)
    - *Note: There are default values for all the main parameters (Shown Below).*
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_8.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_8.webp)
 
 3. Validate the system property values within the System Dashboard.
 
@@ -195,17 +195,17 @@ This article encompasses multiple components and contents. Please import and imp
    - [Internal Monitor - Active Directory - User Last Logon > X Days](/docs/2a260035-6023-4b23-ad58-4dbc38d9c819)
 
 2. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 3. Edit the monitor with the last login value specified by the consultant; if this has not been specified, then reach out to the consultant to clarify:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_9.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_9.webp)
 
 4. Navigate to Automation → Monitors → Internal Monitors and configure the following:
    - Find the [Internal Monitor - Active Directory - User Last Logon > X Days](/docs/2a260035-6023-4b23-ad58-4dbc38d9c819).
      - Assign the **`△ Custom - Ticket Creation - Computer`** alert template.
      - OR
      - Assign the **`△ Custom - Email Creation - Computer`** alert template.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_10.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_10.webp)
 
 ## Implementation (No Plugin)
 
@@ -223,11 +223,11 @@ The solutions presented in this section do not rely on any plugin.
      - *Note: This is optional. Only import this if specifically requested.*
 
 2. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 3. Schedule the [Script - Group Policy - Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a) to run once per day against the domain controllers group.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_11.png)
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_12.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_11.webp)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_12.webp)
 
 4. **Only perform this step if requested by the consultant:**
    - Navigate to Automation → Monitors → Internal Monitors and configure the following:
@@ -235,7 +235,7 @@ The solutions presented in this section do not rely on any plugin.
        - Assign the **`△ Custom - Ticket Creation - Computer`** alert template.
        - OR
        - Assign the **`△ Custom - Email Creation - Computer`** alert template.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_13.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_13.webp)
 
 ### Enable AD Recycle Bin
 
@@ -248,7 +248,7 @@ The solutions presented in this section do not rely on any plugin.
 3. Import the [CWM - Automate - Remote Monitor - AD Recycle Bin State Check](/docs/5041d497-ae6c-4209-a338-60f1da396106) using the following instructions outlined here: [Import - Remote Monitor - AD Recycle Bin State Check](/docs/5041d497-ae6c-4209-a338-60f1da396106).
 
 4. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 5. Locate the [EPM - User Management - Remote Monitor - Reset AD Users Password Age](/docs/d0774dcc-9a7f-4f9a-9719-096e90309e2d) remote monitor.
    - By opening the **`Domain Controllers`** group.
@@ -259,7 +259,7 @@ The solutions presented in this section do not rely on any plugin.
 1. Import the [Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690) using the following instructions outlined here: [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690).
 
 2. Reload the System Cache:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_5.webp)
 
 3. Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690) remote monitor.
    - By opening the **`Domain Controllers`** group.
@@ -276,34 +276,34 @@ The solutions presented in this section do not rely on any plugin.
      ```
 
 2. Open the **`Server Status`** tool by navigating to **`Help`** → **`Server Status`**.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_14.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_14.webp)
 
 3. Click the **`Do Group Refresh`** button to refresh and apply the changes made.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_15.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_15.webp)
 
 4. Click **`OK`** to the popup message and wait for a minute to allow the changes to take effect.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_16.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_16.webp)
 
 5. Import the following script from the ProSync Plugin:
    - [Script - New Domain Admin Monitor - Create](/docs/73adabc6-03cb-4979-9c62-97acc98308da)
 
 6. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the **`Set_Environment`** parameter set to **`1`**. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_17.png)
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_18.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_17.webp)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_18.webp)
 
 7. Reload System Cache.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_19.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_19.webp)
 
 8. Configure System Properties and EDFs.
    - Navigate to the **System Dashboard → Config → Configurations → Properties**.
    - Find the properties beginning with **`NDA_Monitoring`**.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_20.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_20.webp)
      - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations. You can find that [here](/docs/73adabc6-03cb-4979-9c62-97acc98308da).
 
 9. Schedule the Script.
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_21.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_21.webp)
 
 ### Domain Admin Lockout
 
@@ -311,10 +311,9 @@ The solutions presented in this section do not rely on any plugin.
    - [Implement - Remote Monitor - Domain Admin Account Lockout](/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47).
 
 2. **_If the partner does not have any PSA integration_**, then navigate to the Domain Controllers group:
-   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_22.png)
+   ![Image](../../static/img/docs/4ec048e3-de36-477a-ad95-31cb5aa83cde/image_22.webp)
    - Then adjust the alert template for this monitor to be:
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
-
 

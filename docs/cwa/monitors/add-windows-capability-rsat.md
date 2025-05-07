@@ -26,7 +26,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Condition    | Interval | Result |
 |--------------|----------------|------------|---------------|--------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 604800   | ![Image](../../../static/img/docs/7c336dbd-72cb-4099-8be1-19c78f54cabb/image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 604800   | ![Image](../../../static/img/docs/7c336dbd-72cb-4099-8be1-19c78f54cabb/image_1.webp) |
 
 ## Dependencies
 

@@ -24,13 +24,13 @@ This script has been updated to remove the limit of the `%FieldName%` and `%Resu
 
 The only dependency for this script is that the Alerting tab must be filled out on the monitor to which you are applying this ticket creation script.
 
-![Alerting Tab](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_1.png)
+![Alerting Tab](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_1.webp)
 
 ### Things to Note:
 1. The 'Alert Message Subject...' for both success and failure MUST be the same; otherwise, there may be issues.
 2. The following variables can be used for these messages:
    1. `%FIELDNAME%` - This is the 'Identity Field' value that you assign in the **Configuration Tab** of the monitor (shown in the picture below).
-      ![Identity Field](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_2.png)
+      ![Identity Field](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_2.webp)
    2. `%clientname%` - Displays the client name of the affected machine.
    3. `%locationname%` - Displays the current location of the affected machine.
    4. `%computername%` - Displays the computer name of the affected machine.
@@ -49,9 +49,8 @@ This script outputs logging information into the script log in the scripting tab
 
 ## Example Ticket
 
-![Example Ticket](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_3.png)
+![Example Ticket](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_3.webp)
 
 What the Alerting Tab looks like:
 
-![Alerting Tab Example](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_4.png)
-
+![Alerting Tab Example](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_4.webp)

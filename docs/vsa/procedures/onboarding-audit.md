@@ -52,4 +52,3 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](/docs/f5181d46-745b-44a0-a1
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xlsx
 
-

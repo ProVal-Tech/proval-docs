@@ -32,4 +32,3 @@ This dataview publishes the defragmentation scan results by using the script @Wi
 | Script Ran Date      | Displays the date when the script ran                   |
 | Drive Fragmented     | Displays the drive letter of the fragmented drive       |
 | Drive Fragment Report | Displays the full report of fragmentation fetched by the script |
-

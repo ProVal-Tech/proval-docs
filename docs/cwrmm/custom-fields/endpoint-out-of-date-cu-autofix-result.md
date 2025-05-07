@@ -28,7 +28,6 @@ This document stores the output of the Out of Date Cumulative Update (Autofix) t
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_1.png)
+![Screenshot 1](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_1.webp)
 
-![Screenshot 2](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_2.png)
-
+![Screenshot 2](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_2.webp)

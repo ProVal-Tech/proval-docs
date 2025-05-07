@@ -31,4 +31,3 @@ This document outlines the criteria for determining if an Automate user's passwo
 | Username        | User name                                                   |
 | Email           | Email of the user                                           |
 | Password Error  | The password complexity error indicating whether the password is strong or not. |
-

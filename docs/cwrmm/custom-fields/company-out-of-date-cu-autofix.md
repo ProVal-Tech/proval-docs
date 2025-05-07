@@ -30,7 +30,6 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_1.png)
+![Screenshot 1](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_1.webp)
 
-![Screenshot 2](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_2.png)
-
+![Screenshot 2](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_2.webp)

@@ -31,4 +31,3 @@ The following dependency is required for this audit data:
 | Category            | VARCHAR  | The category that the PUA belongs to.   |
 | DataCollectionTime  | DateTime | Data collection time.                    |
 
-

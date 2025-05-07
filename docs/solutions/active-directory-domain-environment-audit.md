@@ -78,8 +78,8 @@ This article encompasses multiple components and contents. Please import and imp
 
 1. The solutions presented in this section rely on the functionality provided by the **`Active Directory`** plugin. Therefore, it is imperative to verify that both the **`Active Directory`** and **`Active Directory Remote`** plugins are correctly installed and operational within the environment.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_1.png)
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_2.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_1.webp)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_2.webp)
 
 2. ### Active Directory Reporting Solution
 
@@ -99,7 +99,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Ensure that the RMM+ Plugin is correctly configured and operational within the environment, as this solution relies on the proper configuration of the [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246).
    - Assign the **`△ Custom - Autofix - AD Plugin Sync Out of Date`** alert template to the [CWM - Automate - Internal Monitor - Active Directory - Sync Out of Date](/docs/18432358-9550-4ab9-959e-255196b0ebcf) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_3.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_3.webp)
 
 4. ### Active Directory - New User Account
 
@@ -109,7 +109,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - New User Account Created](/docs/e04e673a-5340-47af-9536-28788ffd37ae) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_4.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_4.webp)
 
 5. ### Active Directory - Password Expires This Week
 
@@ -120,7 +120,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Go through the [script's](/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432) document and perform the customization if necessary.
    - Assign the **`△ Custom - Password Expiration Notification`** alert template to the [RSM - Active Directory - Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_5.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_5.webp)
 
 6. ### Active Directory - Enabled Test Accounts
 
@@ -130,7 +130,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - Enabled Test Accounts](/docs/f1bc732b-7469-4689-aa3e-d0af5161ecc5) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_6.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_6.webp)
 
 7. ### Active Directory - Account Disabled
 
@@ -140,7 +140,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Account Disabled](/docs/b357e9c8-3b17-47ec-a508-0cfe345c0c41) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_7.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_7.webp)
 
 8. ### Active Directory - User Last Logon > X Days
 
@@ -150,7 +150,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Monitor - Active Directory - User Last Logon > X Days](/docs/2a260035-6023-4b23-ad58-4dbc38d9c819) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_8.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_8.webp)
 
 9. ### Active Directory - Domain Computers Missing Automate Agent
 
@@ -160,7 +160,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Client`** alert template to the [CWM - Automate - Internal Monitor - Domain Computers Missing Automate Agent](/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_9.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_9.webp)
 
 10. ### Active Directory - ADPluginUser - Create/Update
 
@@ -169,7 +169,7 @@ This article encompasses multiple components and contents. Please import and imp
     - Import the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template from the `ProSync` plugin, if it's not already present in the environment.
     - Assign the **`△ Custom - Autofix - AD Plugin User - Create/Update`** alert template to the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) monitor set.
 
-    ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_10.png)
+    ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_10.webp)
 
 11. ### Active Directory - AD Users
 
@@ -199,7 +199,7 @@ This article encompasses multiple components and contents. Please import and imp
    - Reload the System Cache.
    - Assign the **`△ Custom - Ticket Creation - Computer`** alert template to the [RSM - Active Directory - Script - Group Policy - Audit](/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a) monitor set.
 
-   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_11.png)
+   ![](../../static/img/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3/image_11.webp)
 
 3. ### Reset AD Users Password Age
 
@@ -240,5 +240,4 @@ This article encompasses multiple components and contents. Please import and imp
    - Import the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690) remote monitor by following the instructions outlined in the [Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690) document.
    - Reload the System Cache.
    - Locate the [RSM - Active Directory - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690) remote monitor by opening the **`Domain Controllers`** group and apply the **`△ Custom - Ticket Creation - Computer`** alert template to the group monitor.
-
 

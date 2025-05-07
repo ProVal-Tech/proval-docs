@@ -18,7 +18,7 @@ This script scans your main drive (C: for Windows and everything for Linux) and 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/fc919069-1895-4842-9b1e-d13d3f53227b/image_1.png)
+![Sample Run](../../../static/img/docs/fc919069-1895-4842-9b1e-d13d3f53227b/image_1.webp)
 
 ## Dependencies
 
@@ -60,5 +60,4 @@ If the script fails to gather the data appropriately, it will exit with an error
 
 ## Example Output
 
-![Example Output](../../../static/img/docs/fc919069-1895-4842-9b1e-d13d3f53227b/image_2.png)
-
+![Example Output](../../../static/img/docs/fc919069-1895-4842-9b1e-d13d3f53227b/image_2.webp)

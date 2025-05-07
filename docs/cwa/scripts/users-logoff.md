@@ -16,11 +16,11 @@ This script will log off a user, multiple users, or all users.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/35c948fc-300e-437b-8338-69175b6a4afa/image_1.png)
+![Sample Run 1](../../../static/img/docs/35c948fc-300e-437b-8338-69175b6a4afa/image_1.webp)
 
 Setting the User parameter to this will log off the user named 'calve' and the user named 'test'.
 
-![Sample Run 2](../../../static/img/docs/35c948fc-300e-437b-8338-69175b6a4afa/image_2.png)
+![Sample Run 2](../../../static/img/docs/35c948fc-300e-437b-8338-69175b6a4afa/image_2.webp)
 
 Setting the User parameter to "All" will log off all users.
 
@@ -34,4 +34,3 @@ Setting the User parameter to "All" will log off all users.
 
 1. Determine the scope.
 2. Log off the desired user or users.
-

@@ -27,4 +27,3 @@ This document contains detailed information about patching on the agent, includi
 | Patching Operation   | Indicates whether the patch is installing, uninstalling, or stuck on rollback                 |
 | Patching Result     | The state of the patch, whether it was successfully installed, is running, or has failed       |
 | Operating System    | The operating system of the agent                                                               |
-

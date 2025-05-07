@@ -16,7 +16,7 @@ This script collects the Adobe license key and stores it in the custom EDF "Adob
 
 ## Sample Run
 
-![Sample Run](<../../../static/img/docs/7a5a36e2-53b5-4a14-aa2b-0b214ac40767/image_1.png>)
+![Sample Run](<../../../static/img/docs/7a5a36e2-53b5-4a14-aa2b-0b214ac40767/image_1.webp>)
 
 ## Dependencies
 

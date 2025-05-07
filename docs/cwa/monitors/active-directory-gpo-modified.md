@@ -17,10 +17,10 @@ This Custom RAWSQL monitor shows the GPO modified time on the computer if the GP
 ## Implementation
 
 - Replace `\\<MonitorID>` in the additional condition with the ID of the monitor set.  
-  ![Image 1](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_1.png)  
-  ![Image 2](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_2.png)  
+  ![Image 1](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_1.webp)  
+  ![Image 2](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_2.webp)  
 - Ensure that the monitor set is targeted on the Domain Controllers group.  
-  ![Image 3](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_3.png)  
+  ![Image 3](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_3.webp)  
 
 ## Dependencies
 
@@ -52,5 +52,4 @@ Details:
 **%FIELDNAME%:** GPO: `\\<Name of GPO>` (Modified Time: `\\<Modification Time of GPO>`)  
 
 **Sample Ticket:**  
-![Sample Ticket Image](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_4.png)  
-
+![Sample Ticket Image](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_4.webp)  

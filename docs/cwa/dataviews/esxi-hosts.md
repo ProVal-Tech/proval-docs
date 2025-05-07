@@ -41,4 +41,3 @@ This dataview shows useful information about ESXi hosts.
 | Is SSD                          | Indicates whether the attached storage device is SSD or not.    |
 | Storage Last Update             | Displays the last time the storage information of the host was updated in Automate. |
 | Last Update                     | Displays the last time the host's information was updated in Automate. |
-

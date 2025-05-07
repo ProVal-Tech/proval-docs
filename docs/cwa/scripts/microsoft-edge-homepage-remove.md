@@ -16,7 +16,7 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/e5ed994d-5538-4f5f-ad3c-96a6ae542d0f/image_1.png)
+![Sample Run](../../../static/img/docs/e5ed994d-5538-4f5f-ad3c-96a6ae542d0f/image_1.webp)
 
 ## Dependencies
 
@@ -25,6 +25,5 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Log
-
 
 

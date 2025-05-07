@@ -29,4 +29,3 @@ This document stores the GUID and the set of user class(es) for Built-In scripts
 | Developer            | varchar | Creator of the script (Stock or ProVal). The beta version of the solution is limited to the stock scripts. |
 | InitialPermission    | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission| varchar | Existing edit permission of the script.                                                           |
-

@@ -19,15 +19,15 @@ It creates the primary partition with the size increase, and a label 'Windows RE
 
 ## Caution
 
-![Image 1](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_1.png)
+![Image 1](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_1.webp)
 
-![Image 2](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_2.png)
+![Image 2](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_2.webp)
 
-![Image 3](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_3.png)
+![Image 3](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_3.webp)
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_4.png)
+![Sample Run](../../../static/img/docs/25717003-b658-47c5-abdf-978f9c2b5d5c/image_4.webp)
 
 ## Variables
 
@@ -49,4 +49,3 @@ It creates the primary partition with the size increase, and a label 'Windows RE
 ## Output
 
 - Script log
-

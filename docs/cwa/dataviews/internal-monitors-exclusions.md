@@ -19,7 +19,7 @@ You can find this information in Automate in the areas displayed below.
 1. "Excluded From Detection" - indicates that the computer is added to the "Disabled Computers" section.
 2. "Excluded From Autofix" - indicates the presence of the computer in the "Script Disable" section.
 
-![Image](../../../static/img/docs/3bf6b511-2d50-48cc-b199-979bd39c8dca/image_1.png)
+![Image](../../../static/img/docs/3bf6b511-2d50-48cc-b199-979bd39c8dca/image_1.webp)
 
 ## Columns
 
@@ -34,4 +34,3 @@ You can find this information in Automate in the areas displayed below.
 | Operating System      | Operating System                                     |
 | Last Contact          | Last Contact                                         |
 | Days Since Last Contact| Days Since Last Contact                              |
-

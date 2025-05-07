@@ -18,7 +18,7 @@ This script runs against a system that does not have the Target Restore Point ED
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7f52c871-523c-44ae-9289-814326207896/image_1.png)
+![Sample Run](../../../static/img/docs/7f52c871-523c-44ae-9289-814326207896/image_1.webp)
 
 ## Dependencies
 
@@ -37,4 +37,3 @@ This script will create a Custom Table `plugin_proval_restore_points` if it does
 ## Output
 
 - Script log
-

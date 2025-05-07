@@ -14,7 +14,7 @@ unlisted: false
 
 This monitor will alert on any computer that has checked in within the last 5 minutes and has the 'Online Alert E-mail' ConnectWise Automate computer-level EDF filled out with a valid email address.
 
-![Image](../../../static/img/docs/82c2d005-f115-4481-8c59-82b22526eafa/image_1.png)
+![Image](../../../static/img/docs/82c2d005-f115-4481-8c59-82b22526eafa/image_1.webp)
 
 **Alert Template:** △ Custom - E-Mail - Machine Back Online
 
@@ -25,4 +25,3 @@ This monitor will alert on any computer that has checked in within the last 5 mi
 ## Target
 
 Global
-

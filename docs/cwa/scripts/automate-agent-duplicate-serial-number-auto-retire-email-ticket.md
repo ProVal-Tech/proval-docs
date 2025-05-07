@@ -24,7 +24,7 @@ Introduced the following system properties:
 
 Run the script with the `Set_Environment` parameter to import the newly introduced properties.
 
-![Update Notice Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_1.png)
+![Update Notice Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_1.webp)
 
 Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exists.
 
@@ -32,17 +32,17 @@ Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exis
 
 Set the parameter `Set_Environment` for the first execution.
 
-![Sample Run Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_2.png)
+![Sample Run Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_2.webp)
 
 Specify the email address where you would like to receive the output of the result.
 
-![Email Specification Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_3.png)
+![Email Specification Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_3.webp)
 
 ## Schedule
 
 It is suggested to run the script once per schedule.
 
-![Schedule Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_4.png)
+![Schedule Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_4.webp)
 
 ## System Property
 
@@ -80,4 +80,3 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 In case there are no duplicate serial numbers:
 
 `No duplicate machines identified based on serial number.`
-

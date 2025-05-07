@@ -22,4 +22,3 @@ This document uses the agent procedure of the same name and stores the values fr
 | xPVAL Disk Score        | Machine        | Captures the Disk score from WinSAT     |
 | xPVAL Graphics Score     | Machine        | Captures the Graphics score from WinSAT  |
 | xPVAL Memory Score      | Machine        | Captures the Memory score from WinSAT    |
-

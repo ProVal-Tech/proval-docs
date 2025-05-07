@@ -24,4 +24,3 @@ The monitor ensures that the [Script - Bitlocker - Volume - Initialize [Autofix,
 ## Target
 
 Global
-

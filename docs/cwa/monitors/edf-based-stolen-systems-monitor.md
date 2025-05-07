@@ -22,5 +22,4 @@ This document executes the [SEC - Encryption - Script - Lock Stolen System](/doc
 
 - `Marked as Stolen` Group
 
-![Image](../../../static/img/docs/c528df82-8309-4fc8-898e-db75e13a594d/image_1.png)
-
+![Image](../../../static/img/docs/c528df82-8309-4fc8-898e-db75e13a594d/image_1.webp)

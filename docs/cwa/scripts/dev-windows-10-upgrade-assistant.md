@@ -17,7 +17,7 @@ This script starts the Windows Upgrade Assistant to upgrade the target system to
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f9840922-3209-4bd9-b890-2145018bfd56/image_1.png)
+![Sample Run](../../../static/img/docs/f9840922-3209-4bd9-b890-2145018bfd56/image_1.webp)
 
 ## Dependencies
 
@@ -44,4 +44,3 @@ This script starts the Windows Upgrade Assistant to upgrade the target system to
 ## Output
 
 - Script log
-

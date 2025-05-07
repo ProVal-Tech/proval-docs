@@ -17,10 +17,10 @@ This script automates the installation, repair, uninstallation, or reinstallatio
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Install Huntress Agent - Windows`
-![Image1](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image1_1.png)
+![Image1](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image1_1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
 **Run As:** `System`  
@@ -29,10 +29,10 @@ Set the required arguments and click the `Run` button to run the script.
 **Huntress Org Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Org Key'`  
 **Huntress Tags:**  `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Tags'`  
 **Action:** `Install`  
-![Image2](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image2_1.png)
+![Image2](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image2_1.webp)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 
@@ -55,15 +55,15 @@ Set the required arguments and click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
 
@@ -76,7 +76,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Windows`  
 **Architecture:** `All`  
 **Run As:** `System`  
-![Image4](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image4_1.png)
+![Image4](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image4_1.webp)
 
 ## Step 4
 
@@ -269,20 +269,20 @@ Process {
 End {}
 ```
 
-![Image5](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image5_1.png)
+![Image5](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image5_1.webp)
 
 ## Script Variables
 
 ### Huntress Account Key
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -291,18 +291,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image6](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image6_1.png)
+![Image6](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image6_1.webp)
 
 ### Huntress Org Key
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -311,18 +311,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image7](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image7_1.png)
+![Image7](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image7_1.webp)
 
 ### Huntress Tags
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -331,18 +331,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image8](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image8.png)
+![Image8](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image8.webp)
 
 ### Action
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-Down` option.  
-![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-Down Variable` window will open.  
-![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -360,19 +360,19 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`
 
-![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image9_1.png)
+![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image9_1.webp)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image10_1.png)
+![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image10_1.webp)
 
 ## Output
 

@@ -18,7 +18,7 @@ This script goes through the process of auditing and setting up hardening rules 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/d56f260f-2d8c-4cb0-aa97-ea05b1f4755a/image_1.png)
+![Sample Run](../../../static/img/docs/d56f260f-2d8c-4cb0-aa97-ea05b1f4755a/image_1.webp)
 
 ## Variables
 
@@ -60,4 +60,3 @@ This script goes through the process of auditing and setting up hardening rules 
 
 - Ticket
 - Script Log
-

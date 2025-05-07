@@ -18,7 +18,7 @@ This script gathers information about the status of the built-in OneDrive backup
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/bf26e767-9125-4b51-a950-ec3d3dc32f8b/image_1.png)
+![Sample Run](../../../static/img/docs/bf26e767-9125-4b51-a950-ec3d3dc32f8b/image_1.webp)
 
 ## Dependencies
 
@@ -30,5 +30,4 @@ This script gathers information about the status of the built-in OneDrive backup
 - Script log
 - Custom table
 - Dataview
-
 

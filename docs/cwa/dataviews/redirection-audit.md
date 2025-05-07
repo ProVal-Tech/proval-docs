@@ -66,4 +66,3 @@ LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)
 LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
 LEFT JOIN locations l ON (l.LocationID = c.LocationID)
 ```
-

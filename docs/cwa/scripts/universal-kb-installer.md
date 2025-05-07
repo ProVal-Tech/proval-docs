@@ -17,11 +17,11 @@ The purpose of this script is to install the desired patch on Windows machines.
 ## Sample Run
 
 Leave the Reboot parameter blank or set it to '0' to prevent the machine from rebooting.  
-![Image](../../../static/img/docs/424dfd5c-377f-461f-a57f-80001d839af8/image_1.png)  
+![Image](../../../static/img/docs/424dfd5c-377f-461f-a57f-80001d839af8/image_1.webp)  
 
 Set the Reboot parameter to '1' to reboot the machine.  
 
-![Image](../../../static/img/docs/424dfd5c-377f-461f-a57f-80001d839af8/image_2.png)  
+![Image](../../../static/img/docs/424dfd5c-377f-461f-a57f-80001d839af8/image_2.webp)  
 
 ### User Parameters
 
@@ -33,6 +33,5 @@ Set the Reboot parameter to '1' to reboot the machine.
 ## Output
 
 - Script Logs
-
 
 

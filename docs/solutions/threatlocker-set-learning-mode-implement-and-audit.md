@@ -34,17 +34,17 @@ This solution is built to set ThreatLocker to learning mode using the API. It al
 
 The client needs to obtain report keys and maintenance auth keys from ThreatLocker support for each organization where they want to enable the learning mode setup via the script. *Note: The user needs to have the phone associated with their profile on hand.*
 
-![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data.png)
+![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data.webp)
 
-![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data1.png)
+![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data1.webp)
 
 Support will send an SMS to validate the user, after which they will provide the auth keys.
 
-![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data2.png)
+![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data2.webp)
 
 Once the keys are provided, they need to be entered into the client's password tab with the title as shown below:
 
-![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data3.png)
+![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data3.webp)
 
 After setting the keys, it is necessary to whitelist the file hash `9FA61A436668967C26CB76858275EC17` to allow the script to execute the PowerShell script (.ps1) and perform the learning mode setup in ThreatLocker for the specified duration.
 
@@ -58,6 +58,5 @@ After setting the keys, it is necessary to whitelist the file hash `9FA61A436668
 
 **Answer:** Possible error messages include the following:
 
-![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data4.png)
-
+![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data4.webp)
 

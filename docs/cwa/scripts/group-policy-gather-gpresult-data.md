@@ -16,7 +16,7 @@ This document describes a script that generates GPRESULT data and stores it in a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/53bcdcef-8942-4602-bc24-7db1b2cf29ae/image_1.png)
+![Sample Run](../../../static/img/docs/53bcdcef-8942-4602-bc24-7db1b2cf29ae/image_1.webp)
 
 ## Dependencies
 
@@ -35,4 +35,3 @@ Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](/docs/f5d71bf9-
 - Script log
 - Local file on the computer
 - Dataview
-

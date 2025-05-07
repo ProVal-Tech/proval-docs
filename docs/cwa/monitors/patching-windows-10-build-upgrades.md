@@ -43,4 +43,3 @@ WHERE
     AND computers.computerid IN (SELECT computerid FROM computerpatchpolicies WHERE installpolicy IN (SELECT ID FROM installsoftwarepolicies WHERE updatemode IN (5, 6)))
 LIMIT 10
 ```
-

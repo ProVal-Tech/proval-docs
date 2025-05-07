@@ -24,22 +24,22 @@ This component is used to manage the Huntress EDR agent and includes options to 
 
 Export the component from ProVal's Datto RMM instance.  
 **Name:** Huntress Managed EDR - [WIN] [PVAL]  
-![Export Component](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_1.png)  
+![Export Component](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_1.webp)  
 The export will download the necessary component (cpt) file.  
-![Component Download](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_2.png)  
+![Component Download](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_2.webp)  
 Import this component file into the partner's Datto RMM instance.  
-![Import Component](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_3.png)  
+![Import Component](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_3.webp)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
 ## Usage
 
 The component will prompt for several variables during a job.  
-![Job Prompt](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_4.png)  
+![Job Prompt](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_4.webp)  
 
 **acctkey:** Enter your account secret key (from your Huntress portal's "download agent" section).  
 This can be pre-filled for the partner by providing a default value for the variable within the component in the partner's RMM.  
-![Account Key](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_5.png)  
+![Account Key](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_5.webp)  
 
 - **reregister:** Force the agent to re-register (useful if previously deployed with the incorrect account key, orphaned agent, or performing a full repair).
 - **reinstall:** Reinstall the agent (useful for a quick repair of an agent).
@@ -49,14 +49,13 @@ This can be pre-filled for the partner by providing a default value for the vari
 ## Output
 
 A job status of Success is expected.  
-![Job Status](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_6.png)  
+![Job Status](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_6.webp)  
 
 **StdOut**  
-![StdOut](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_7.png)  
-![StdOut Log](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_8.png)  
+![StdOut](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_7.webp)  
+![StdOut Log](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_8.webp)  
 StdOut may require you to scroll to view the complete log; you can alternatively download the txt.  
-![Download Log](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_9.png)  
+![Download Log](../../../static/img/docs/37781bee-b7cd-448e-9d45-53e789a455b8/image_9.webp)  
 
 **StdErr**  
 StdErr is not expected.
-

@@ -34,4 +34,3 @@ This document displays the list of audited group policy objects from the script 
 | ModifiedTime      | DATETIME  | Last time this GPO was modified.                                |
 | ReadTime          | DATETIME  | Last time this GPO was read.                                    |
 | LinksTo           | TEXT      | Comma-separated list of OUs that this GPO links to.            |
-

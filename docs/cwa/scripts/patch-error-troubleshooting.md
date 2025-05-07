@@ -32,7 +32,7 @@ Reboot the computer.
 **Target:** Windows Device  
 **Note:** This script will forcefully reboot the target device. It may not be ideal to run this script during business hours.
 
-![Sample Run](../../../static/img/docs/02e56369-332e-4f57-a325-2df8585b0c2c/image_1.png)
+![Sample Run](../../../static/img/docs/02e56369-332e-4f57-a325-2df8585b0c2c/image_1.webp)
 
 ## Process
 
@@ -50,4 +50,3 @@ Reboot the computer.
 ## Output
 
 **Script logs**
-

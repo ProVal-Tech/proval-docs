@@ -27,4 +27,3 @@ Windows 10 and 11 machines.
 **Name:** `△ Custom - Execute Script - Get-DellDockStation`
 
 The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script.
-

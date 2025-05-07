@@ -24,7 +24,7 @@ It is recommended to set the ticket category in the global variables before inte
 
 ## Sample Run
 
-![Sample Run](../../static/img/docs/c793b2af-4369-4c31-8a56-db1a1728d12d/image_1.png)
+![Sample Run](../../static/img/docs/c793b2af-4369-4c31-8a56-db1a1728d12d/image_1.webp)
 
 ## Dependencies
 

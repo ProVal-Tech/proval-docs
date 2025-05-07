@@ -96,4 +96,3 @@ Display a pop-up with a purple filled title size 25 in yellow writing and a gree
 - As an interactive message, outputs from selected buttons are returned (future development).
 
 - `.\Show-Prompt-log.txt`
-

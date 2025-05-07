@@ -24,24 +24,24 @@ The default for Winget-AutoUpdate is to perform a check daily at 6 AM.
 
 1. Export the procedure from ProVal's VSA instance:  
    **Name:** Winget Auto Update  
-   ![Export Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_7.png)  
+   ![Export Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_7.webp)  
    The export will download the necessary XML file.  
-   ![Download XML](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_8.png)  
+   ![Download XML](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_8.webp)  
 
 2. Import this procedure into the partner's VSA instance.  
-   ![Import Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_9.png)  
+   ![Import Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_9.webp)  
 
 3. Upload the PS1 to the partner's VSA. A copy is located in this document in addition to our VSA.  
-   ![Upload PS1](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_10.png)  
+   ![Upload PS1](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_10.webp)  
 
 4. Ensure the procedure is updated to point to the PS1 file uploaded to the partner's VSA.  
-   ![Update Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_11.png)  
+   ![Update Procedure](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_11.webp)  
 
    After selecting the PS1 file, the path will default back to the Kaseya default:  
    `#vAgentConfiguration.agentTempSecureDir#/Winget-AutoUpdate.ps1`  
 
    Ensure the portion on the right reads: `#directory#//#ScriptName#.ps1`  
-   ![Check Path](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_12.png)  
+   ![Check Path](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_12.webp)  
 
 ## Usage
 
@@ -49,7 +49,7 @@ The Winget AutoUpdate solution can be configured via the `#PowerShellCommand#` v
 
 As this solution requires an import of a PS1 managed file, it is recommended to configure the `#PowerShellCommand#` variable to match the partner's needs at the time of import.
 
-![PowerShell Command](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_13.png)  
+![PowerShell Command](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_13.webp)  
 
 The default for Winget Auto Update is to:  
 - Update System Level Applications  
@@ -81,7 +81,7 @@ The following example has been saved in our VSA:
 |---------------------------|----------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -InstallUserContext       | -InstallUserContext              |                                                                         | Add this parameter to enable auto-update for User-level applications. By default, only system-level applications are updated. **Note:** End users may observe a PowerShell window appearing on their screens during the scheduled update if the user context is enabled. |
 | -updatesAtLogon           | -updatesAtLogon                  |                                                                         | Add this parameter to configure WAU to run at user logon. Both UpdatesAtTime and UpdatesAtLogon can be used together.                                                                                                                        |
-| -NotificationLevel        | -NotificationLevel None          | Full, SuccessOnly, None                                                | Specifies the notification level for application updates. **Default:** None. **Sample Notification:** ![Sample Notification](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_14.png)                                                                                     |
+| -NotificationLevel        | -NotificationLevel None          | Full, SuccessOnly, None                                                | Specifies the notification level for application updates. **Default:** None. **Sample Notification:** ![Sample Notification](../../../static/img/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55/image_14.webp)                                                                                     |
 | -UpdateInterval           | -UpdateInterval Daily            | Daily, BiDaily, Weekly, BiWeekly, Monthly, Never                       | Specifies the frequency of updates for the applications. This parameter defines how frequently the available updates are checked and implemented for the applications. **Default:** Daily                                                                             |
 | -UpdatesAtTime            | -UpdatesAtTime 06AM              | 12AM, 12:30AM, 01AM, 01:30AM, 02AM, 02:30AM, 03AM, 03:30AM, 04AM, 04:30AM, 05AM, 05:30AM, 06AM, 06:30AM, 07AM, 07:30AM, 08AM, 08:30AM, 09AM, 09:30AM, 10AM, 10:30AM, 11AM, 11:30AM, 12PM, 12:30PM, 01PM, 01:30PM, 02PM, 02:30PM, 03PM, 03:30PM, 04PM, 04:30PM, 05PM, 05:30PM, 06PM, 06:30PM, 07PM, 07:30PM, 08PM, 08:30PM, 09PM, 09:30PM, 10PM, 10:30PM, 11PM, 11:30PM | Specifies the time for updates in 12-hour format for updating the applications. **Default:** 06 AM                                                                                                       |
 | -doNotRunAfterInstallation | -doNotRunAfterInstallation       |                                                                         | Add this parameter to prevent Winget-AutoUpdate from running immediately after installation. By default, it runs after installation.                                                                                                                                               |

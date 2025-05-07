@@ -16,9 +16,8 @@ This script will remove a Winget package.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/a7948b43-d26f-4f00-a2d8-346b9d445153/image_1.png)
+![Sample Run](../../../static/img/docs/a7948b43-d26f-4f00-a2d8-346b9d445153/image_1.webp)
 
 ## Dependencies
 
 - [SWM - Software Management - Powers
-

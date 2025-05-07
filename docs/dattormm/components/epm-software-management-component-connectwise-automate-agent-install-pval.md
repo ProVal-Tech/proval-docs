@@ -18,7 +18,7 @@ Import the Connectwise Automate Agent - Install PVAL.cpt into the environment.
 
 This component does not require any modifications, but it does require three site variables to function. If these variables are not present, the component will error out and log the error.
 
-![Image](../../../static/img/docs/bb088b81-eed8-45bb-861b-2349d3e798fa/image_1.png)
+![Image](../../../static/img/docs/bb088b81-eed8-45bb-861b-2349d3e798fa/image_1.webp)
 
 # Datto Site Variables
 
@@ -39,7 +39,7 @@ One or more of the managed sites' existing variables can be modified, or new var
 
 > **NOTE:** Sites with OnDemand devices cannot be updated with variables.
 
-![Image](../../../static/img/docs/bb088b81-eed8-45bb-861b-2349d3e798fa/image_3.png)
+![Image](../../../static/img/docs/bb088b81-eed8-45bb-861b-2349d3e798fa/image_3.webp)
 
 Use the pre-populated CSV template from the partner's Datto RMM portal. This template contains every site in the Datto RMM account. It is useful for quickly adding a single variable or for adding multiple variables at once to any number of sites. Complete the following steps to download, edit, and upload the site variables CSV template:
 
@@ -93,4 +93,3 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
-

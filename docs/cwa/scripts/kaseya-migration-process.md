@@ -21,7 +21,7 @@ Note that this requires configuration outside of Automate in Kaseya and Bitbucke
 ## Sample Run
 
 **Target:** Windows Agent  
-![Image](../../../static/img/docs/de4bfced-9152-46ca-ae22-853f9aa756f8/image_1.png)
+![Image](../../../static/img/docs/de4bfced-9152-46ca-ae22-853f9aa756f8/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 The script logs the output status (fail/success) in Automate.
-

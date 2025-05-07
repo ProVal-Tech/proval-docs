@@ -36,5 +36,4 @@ default { Unknown architecture }
 
 ## Sample
 
-![Sample Image](../../../static/img/docs/b0c17ff1-73a8-41ae-af16-901eade975b2/image_1.png)
-
+![Sample Image](../../../static/img/docs/b0c17ff1-73a8-41ae-af16-901eade975b2/image_1.webp)

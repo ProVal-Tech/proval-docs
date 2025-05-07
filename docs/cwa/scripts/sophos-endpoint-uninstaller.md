@@ -20,7 +20,7 @@ Time Saved by Automation: 15 Minutes
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/d560e8b6-9195-4bc3-a89a-6939c984d47a/image_1.png)
+![Sample Run](../../../static/img/docs/d560e8b6-9195-4bc3-a89a-6939c984d47a/image_1.webp)
 
 ## Dependencies
 
@@ -48,4 +48,3 @@ If the services are no longer present, then the script was successful and will e
 ## Output
 
 - Script log messages only
-

@@ -18,7 +18,7 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/765eb6aa-cc3a-471e-b11e-d7d8e1972e11/image_1.png)
+![Sample Run](../../../static/img/docs/765eb6aa-cc3a-471e-b11e-d7d8e1972e11/image_1.webp)
 
 ## Dependencies
 
@@ -40,4 +40,3 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 - Script log
 - Script state
 - Dataview
-

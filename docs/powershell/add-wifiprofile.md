@@ -38,4 +38,3 @@ Create a new WiFi profile named 'MyWiFi' with the password 'MyPassword', using t
 ## Output
 - .\Add-WifiProfile-log.txt
 - .\Add-WifiProfile-error.txt
-

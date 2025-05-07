@@ -22,13 +22,13 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](/do
 ## Monitor
 
 1. Go to **Alert Management > Monitors**.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_1.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_1.webp)  
 
 2. Click the **Create Monitor** button.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_2.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_2.webp)  
 
 3. This screen will appear.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_3.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_3.webp)  
 
 4. Fill in the following details:  
    **Name:** SentinelOne Deployment Failure  
@@ -36,29 +36,28 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](/do
    **Type:** Custom Fields  
    **Severity:** Critical Non-Impact Alerts  
    **Family:** Desktop Security  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_4.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_4.webp)  
 
 5. Select **Text Box** in the Custom Field Type.  
    Select **SentinelOne Deployment Result** from the Custom Field Name drop-down.  
    Add **Error** in the Value.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_5.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_5.webp)  
 
 6. Click the **Select Targets** button to select the clients to monitor.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_6.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_6.webp)  
 
 7. Select all companies and click the **Save Selection** button.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_7.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_7.webp)  
 
 8. In Ticket Resolution,  
    Set **Text Box** as the Custom Field Type.  
    Select **SentinelOne Deployment Result** from the Custom Field Name drop-down.  
    Replace **Equals** with **Does not Contain**.  
    Add **Error** in the Value.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_8.png)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_8.webp)  
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_9.png)  
-
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_9.webp)  
 
 
 

@@ -24,7 +24,7 @@ Check the [Script's](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) document for mo
 
 With the exception of Domain Controllers, only Windows machines belonging to clients that have the `Enabled for Servers and Workstations` option selected for the `1a. Local Admin Process` EDF will be targeted. Selecting the `Enabled for Workstations Only` option will limit the local admin creation to workstations only.
 
-![Image](../../../static/img/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15/image_1.png)
+![Image](../../../static/img/docs/3ff4b4be-2bca-4ef2-80d6-8761cebaeb15/image_1.webp)
 
 ## Alert Template
 

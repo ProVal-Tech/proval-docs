@@ -16,7 +16,7 @@ This document will guide you through the process of registering a given extensio
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/9e2b2dfa-acae-49a0-9f71-0df914c81a8b/image_1.png)  
+![Sample Run](../../../static/img/docs/9e2b2dfa-acae-49a0-9f71-0df914c81a8b/image_1.webp)  
 This will install the N-Able Passportal extension and make that extension protected from deletion.  
 Leaving the Mandate blank will not protect the extension from deletion.  
 Obtain your extension name from the Firefox extension store.
@@ -41,4 +41,3 @@ Please review the agnostic content for specifics on the process.
 ## Output
 
 - Script log
-

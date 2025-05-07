@@ -55,7 +55,7 @@ Gathers and displays information about Windows user profiles.
    - [Dataview - Windows - User Profiles](/docs/da3a0d43-7bdd-4408-99ce-138337eecb43)
 
 5. Reload the System Cache  
-   ![Reload System Cache](../../static/img/docs/34794e27-c775-4d58-953b-5f8a61132cae/image_1.png)
+   ![Reload System Cache](../../static/img/docs/34794e27-c775-4d58-953b-5f8a61132cae/image_1.webp)
 
 6. Configure the solution as follows:
    - Navigate to Automation → Scripts to perform the following task:
@@ -75,4 +75,3 @@ Gathers and displays information about Windows user profiles.
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
      - Use the mentioned [monitor](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) to exclude any domain trust relationship issues.
-

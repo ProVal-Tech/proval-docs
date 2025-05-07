@@ -32,4 +32,3 @@ None
 | SetBy           | The user or 'Auto' that set the patch                    |
 | ApprovalSetting | Approved, Denied, Ignored, or Not Set                     |
 | Impact          | Number of policies where this patch is being applied      |
-

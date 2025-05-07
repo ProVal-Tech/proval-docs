@@ -25,13 +25,13 @@ This script installs the latest feature update on a Windows 10+ machine and prov
 ## Sample Run
 
 To upgrade a computer from Windows 10 to Windows 11, forcefully reboot it, skipping the Free Drive Space Check, and using a custom image/icon in the user's prompt:  
-![Upgrade Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_1.png)
+![Upgrade Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_1.webp)
 
 To install the latest available feature pack on a Windows 10+ machine, without restarting and using the default image/icon in the user's prompt:  
-![Install Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_2.png)
+![Install Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_2.webp)
 
 ### Example Prompt
-![Example Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_3.png)
+![Example Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_3.webp)
 
 ## Dependencies
 
@@ -46,8 +46,8 @@ To install the latest available feature pack on a Windows 10+ machine, without r
 | Name           | Example                                                        | Required | Description                                                                                                                                                                                                 |
 |----------------|----------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reboot         | 1                                                              | False    | If set to 1, the script will reboot upon successful installation without prompting any currently logged-in user. Note: A reboot will be performed, ignoring this parameter, if no user is logged in. Set to 0 to disable. |
-| HeaderImage    | [Header Image](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.png) | False    | The header image to display in the user prompt. Defaults to: [Default Header Image](https://winaero.com/blog/wp-content/uploads/2015/05/Windows-10-banner-logo-nodevs-01.png)                         |
-| Icon           | [Icon](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.png)            | False    | The icon to use for the user prompt. Defaults to: [Default Icon](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.png)                                                  |
+| HeaderImage    | [Header Image](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.webp) | False    | The header image to display in the user prompt. Defaults to: [Default Header Image](https://winaero.com/blog/wp-content/uploads/2015/05/Windows-10-banner-logo-nodevs-01.webp)                         |
+| Icon           | [Icon](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.webp)            | False    | The icon to use for the user prompt. Defaults to: [Default Icon](https://icons.iconarchive.com/icons/martz90/circle-addon2/512/windows-update-icon.webp)                                                  |
 | SkipDriveCheck | 1                                                              | False    | If set to 1, the script will not check the free space available on the computer before performing the update/upgrade. Note: By default, the script does not perform an update/upgrade if free space is less than 20 GB. |
 | upgrade        | 1                                                              | False    | If set to 1 for Windows 10 computers, the script will attempt to upgrade the computer to Windows 11.                                                                                                       |
 
@@ -157,4 +157,3 @@ Error Log
 Setup Diag Result  
 ----------------  
 `\\<Outcome of the SetupDiagTool verifying the upgrade process>`
-

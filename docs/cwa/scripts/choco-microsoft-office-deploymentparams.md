@@ -18,7 +18,7 @@ This script can be used to install different versions of Microsoft Office using 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/a89cb4a1-7b45-4bb8-9685-ddf71928acc8/image_1.png)
+![Sample Run](../../../static/img/docs/a89cb4a1-7b45-4bb8-9685-ddf71928acc8/image_1.webp)
 
 ## Dependencies
 
@@ -38,4 +38,3 @@ This script can be used to install different versions of Microsoft Office using 
 ## Output
 
 - Script log
-

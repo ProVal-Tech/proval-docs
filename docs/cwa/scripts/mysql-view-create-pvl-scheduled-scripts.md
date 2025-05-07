@@ -18,9 +18,8 @@ Run the script on any computer to create the view, and afterward, remove the scr
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/494c2d2c-2f37-45b7-9eb0-130ff3aac45c/image_1.png)
+![Sample Run](../../../static/img/docs/494c2d2c-2f37-45b7-9eb0-130ff3aac45c/image_1.webp)
 
 ## Output
 
 - Custom View
-

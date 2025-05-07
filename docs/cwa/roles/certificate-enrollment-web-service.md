@@ -20,4 +20,3 @@ This document describes a role used to detect servers with the Certificate Enrol
 |--------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Enroll-Web-Svc' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"%}` | Contains    | Installed | Windows        |
 
-

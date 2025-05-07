@@ -18,7 +18,7 @@ This script downloads Autologon.exe from the Sysinternals website and passes the
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/0e4d033e-85f3-4ca6-bbad-17a7848fb42a/image_1.png)
+![Sample Run](../../../static/img/docs/0e4d033e-85f3-4ca6-bbad-17a7848fb42a/image_1.webp)
 
 ## Dependencies
 
@@ -39,4 +39,3 @@ This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then 
 ## Output
 
 - Script log messages
-

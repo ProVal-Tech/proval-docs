@@ -16,7 +16,7 @@ This script will create the `plugin_proval_dns_extradata` table and populate it 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/4bc996bc-1b11-4819-a7c9-73e7c61aa9db/image_1.png)
+![Sample Run](../../../static/img/docs/4bc996bc-1b11-4819-a7c9-73e7c61aa9db/image_1.webp)
 
 ## Dependencies
 
@@ -55,4 +55,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-

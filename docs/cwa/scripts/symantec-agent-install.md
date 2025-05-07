@@ -18,7 +18,7 @@ The script installs the Symantec Agent on the Windows machine.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/47db6b3a-66e5-4ede-bc9f-7dfd3015608c/image_1.png)
+![Sample Run](../../../static/img/docs/47db6b3a-66e5-4ede-bc9f-7dfd3015608c/image_1.webp)
 
 ## Dependencies
 
@@ -32,4 +32,3 @@ The script installs the Symantec Agent on the Windows machine.
 ## Output
 
 - Script log
-

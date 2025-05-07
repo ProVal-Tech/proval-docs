@@ -45,5 +45,4 @@ Here, %RESULT% contains the script name: "Scriptname" ran on computer "Computern
 
 **Email Example:**
 
-![Email Example](../../../static/img/docs/587dab37-7b57-467f-bcde-b112783f5cf1/image_1.png)
-
+![Email Example](../../../static/img/docs/587dab37-7b57-467f-bcde-b112783f5cf1/image_1.webp)

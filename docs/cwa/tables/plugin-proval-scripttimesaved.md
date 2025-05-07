@@ -61,4 +61,3 @@ N/A - These tables are populated with the associated triggers.
 ## SQL
 
 [Download SQL Queries](https://proval.itglue.com/attachments/6824289)
-

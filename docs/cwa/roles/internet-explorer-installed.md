@@ -19,4 +19,3 @@ The purpose of this document is to detect the machines where the Internet Explor
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe -Command "Get-WindowsOptionalFeature -Online -FeatureName Internet-Explorer* "@%}` | Contains   | Enable | Windows        |
-

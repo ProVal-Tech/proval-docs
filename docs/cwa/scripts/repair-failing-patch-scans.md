@@ -20,7 +20,7 @@ This script was designed to be called from a monitor.
 
 To run this script manually, please see the screenshots below.
 
-![Screenshot](../../../static/img/docs/05f60b47-188b-4383-9e9c-98780ba6e488/image_1.png)
+![Screenshot](../../../static/img/docs/05f60b47-188b-4383-9e9c-98780ba6e488/image_1.webp)
 
 In the Advanced Settings → Parameters area, please enter the following string of text:
 
@@ -28,7 +28,7 @@ In the Advanced Settings → Parameters area, please enter the following string 
 @status@=FAILED
 ```
 
-![Screenshot](../../../static/img/docs/05f60b47-188b-4383-9e9c-98780ba6e488/image_2.png)
+![Screenshot](../../../static/img/docs/05f60b47-188b-4383-9e9c-98780ba6e488/image_2.webp)
 
 This will allow the script to be run manually instead of being called by the monitor.
 
@@ -55,4 +55,3 @@ This Autofix script is called by the monitor [ProVal - Development - Last scanne
 
 - Script log messages only.
 - Please reach out to [support@provaltech.com](mailto:support@provaltech.com) if you would like this solution to begin ticketing.
-

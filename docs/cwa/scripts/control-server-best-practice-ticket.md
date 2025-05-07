@@ -18,7 +18,7 @@ This document details the process of auditing and establishing hardening rules a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/76867be6-fe44-441a-92ce-e3d1124c361d/image_1.png)
+![Sample Run](../../../static/img/docs/76867be6-fe44-441a-92ce-e3d1124c361d/image_1.webp)
 
 ## Variables
 
@@ -50,4 +50,3 @@ This document details the process of auditing and establishing hardening rules a
 ## Output
 
 Ticket
-

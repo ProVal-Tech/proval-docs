@@ -20,7 +20,7 @@ This procedure requires the following template to be completed:
 
 This file is located in the attachments as well as the agent procedure.
 
-![Image](../../../static/img/docs/9aa93802-fded-4dc8-9c58-761410b5755d/image_1.png)
+![Image](../../../static/img/docs/9aa93802-fded-4dc8-9c58-761410b5755d/image_1.webp)
 
 The values that can be modified are the **Direct Power Settings** and **Battery Power Settings** within this template. The maximum and minimum values are shown for reference along with any other important information.
 

@@ -50,4 +50,3 @@ Runs [sudo bash /Applications/AEM/Agent.app/Contents/Resources/uninstall.sh](htt
 ## Output
 
 Agent procedure log.
-

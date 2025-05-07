@@ -27,24 +27,23 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_1.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_2.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_2.webp)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_3.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_3.webp)
 
 3. Set the group name to `DUO Auth for Windows Login Installed`.  
    Description: `This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version."`  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_4.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_4.webp)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_5.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_5.webp)  
    This search box will appear.  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_6.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_6.webp)
 
 5. - Search and select the `Duo Deployment Result` custom field from the search box.
    - Set `Success` in the comparison condition.  
-   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_7.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_7.webp)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
-

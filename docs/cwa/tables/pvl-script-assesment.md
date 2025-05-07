@@ -39,4 +39,3 @@ This document holds a detailed analysis of script failures over the past 30 days
 | First Failure Date        | DATETIME | First Failure Date                                                                                 |
 | Last Failure Date         | DATETIME | Last Failure Date                                                                                  |
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
-

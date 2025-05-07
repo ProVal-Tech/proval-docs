@@ -32,7 +32,6 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 This script will add the following section to the log variable:
 
-![Output](../../../static/img/docs/a961622e-18fd-4e0d-9f43-8c1b9f6beea3/image_1.png)
+![Output](../../../static/img/docs/a961622e-18fd-4e0d-9f43-8c1b9f6beea3/image_1.webp)
 
 or results if not skipped.
-

@@ -42,4 +42,3 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Expiry Date                | Warranty expiry date of the device.                                                                 |
 | Warranty Status            | Warranty status of the device (Expired/Expiring Soon/In Warranty).                                 |
 
-

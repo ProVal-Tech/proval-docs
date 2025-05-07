@@ -40,13 +40,13 @@ This script ensures that the `External Sync` EDF is checked on the network devic
 | Automate enabled External Sync              | Device | CheckBox | The script uses this EDF to store information about devices whose external sync is enabled by the script.                  |
 
 Client-level EDF  
-![Client-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_1.png)
+![Client-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_1.webp)
 
 Location-level EDF  
-![Location-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_2.png)  
+![Location-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_2.webp)  
 
 Device-level EDF  
-![Device-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_3.png)
+![Device-level EDF](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_3.webp)
 
 ## Implementation
 
@@ -61,14 +61,14 @@ Device-level EDF
      - Fill in the `External_Sync_DeviceType` system property as per partner's requirements.
      - **Do not proceed with implementing this script if the consultant does not provide the type of network devices the partner wants to sync. Reach out to the consultant for this information.**
      - If the partner wants to sync all devices, put "ALL" in the `External_Sync_DeviceType` system property as shown below:  
-       ![Sync all devices](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_4.png)
+       ![Sync all devices](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_4.webp)
      - If the partner wants to sync particular types of network devices like Router, Network Devices, Printer, fill in the system property as shown below. Separate each type with a pipe (|):  
-       ![Particular types](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_5.png)
+       ![Particular types](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_5.webp)
      - If the partner wants to unsync the device that the script synced earlier, put "Disable" in the system property as shown below:  
-       ![Unsync device](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_6.png)
+       ![Unsync device](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_6.webp)
    - Navigate to System Dashboard → Management → Scheduled Client Scripts
      - Schedule the script [CWM - Automate - Script - Network Devices - Enable External Sync](/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293) to run daily.  
-       ![Schedule daily](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_7.png)
+       ![Schedule daily](../../../static/img/docs/93a9567a-d04c-449d-b9d9-d2b68ffa3293/image_7.webp)
    - If the partner wants to exclude any particular device, location, or client from external sync, select the `Exclude from Automatic Network Device Sync` EDF respectively on that device, location, or client.
 
 3. Requirements from Consultants:
@@ -78,5 +78,4 @@ Device-level EDF
 ## Output
 
 - Script log
-
 

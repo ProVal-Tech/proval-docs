@@ -19,10 +19,10 @@ The purpose of the script is to remove the `Dell Optimizer` application from Del
 ## Sample Run
 
 Set the value for the user parameter `Reboot` to `1` to forcefully restart the computer after uninstalling the application.  
-![Sample Run 1](../../../static/img/docs/b9420698-4c50-42f5-8a9e-6834d03a9ebf/image_1.png)  
+![Sample Run 1](../../../static/img/docs/b9420698-4c50-42f5-8a9e-6834d03a9ebf/image_1.webp)  
 
 Leave the parameter blank to restart the computer manually.  
-![Sample Run 2](../../../static/img/docs/b9420698-4c50-42f5-8a9e-6834d03a9ebf/image_2.png)  
+![Sample Run 2](../../../static/img/docs/b9420698-4c50-42f5-8a9e-6834d03a9ebf/image_2.webp)  
 
 #### User Parameters
 
@@ -33,5 +33,4 @@ Leave the parameter blank to restart the computer manually.
 ## Output
 
 - Script Log
-
 

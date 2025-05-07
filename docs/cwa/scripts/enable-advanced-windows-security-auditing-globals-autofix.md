@@ -16,11 +16,11 @@ The script is designed to fully enable Advanced Windows Security Auditing on a c
 
 In addition to enabling Advanced Windows Security Auditing, the script is also capable of creating a ticket for failure if configured in the global variables. This ticket will alert the system administrator of the failure to enable security auditing and prompt them to take corrective action.
 
-![Fully Enabled Advanced Windows Security Auditing](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_1.png)
+![Fully Enabled Advanced Windows Security Auditing](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_1.webp)
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_2.png)
+![Sample Run](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_2.webp)
 
 ## Dependencies
 
@@ -47,5 +47,4 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 
 ## Sample Ticket
 
-![Sample Ticket](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_3.png)
-
+![Sample Ticket](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_3.webp)

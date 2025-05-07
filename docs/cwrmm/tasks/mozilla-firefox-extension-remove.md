@@ -16,9 +16,9 @@ This document describes how to remove an extension from the Mozilla Firefox brow
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_1.png)  
-![Sample Run 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_2.png)  
-![Sample Run 3](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_3.png)  
+![Sample Run 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_3.webp)  
 
 ## Dependencies
 
@@ -34,60 +34,60 @@ This document describes how to remove an extension from the Mozilla Firefox brow
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_4.png)  
-![Task Creation 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_5.png)  
+![Task Creation 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_4.webp)  
+![Task Creation 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_5.webp)  
 
 **Name:** Mozilla Firefox - Extension - Remove  
 **Description:** Removes an extension from the Mozilla Firefox browser.  
 **Category:** Application  
-![Task Creation 3](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_6.png)  
+![Task Creation 3](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_6.webp)  
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_7.png)  
+![Add Parameter](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_7.webp)  
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_8.png)  
+![Parameter Screen](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_8.webp)  
 
 - Set `ExtensionName` in the `Parameter Name` field.
 - Enable the `Required Field` option.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Button](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_9.png)  
+![Save Button](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_9.webp)  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Button](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_10.png)  
+![Confirm Button](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_10.webp)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_7.png)  
+![Add Parameter Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_7.webp)  
 
 This screen will appear.  
-![Parameter Screen Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_8.png)  
+![Parameter Screen Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_8.webp)  
 
 - Set `Mandate` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Button Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_11.png)  
+![Save Button Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_11.webp)  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Button Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_10.png)  
-![Final Parameter Screen](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_12.png)  
+![Confirm Button Again](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_10.webp)  
+![Final Parameter Screen](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_12.webp)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_13.png)  
+![Add Row](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_14.png)  
+![Blank Function](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_14.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_15.png)  
-![PowerShell Script Selection 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_16.png)  
+![PowerShell Script Selection 1](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_15.webp)  
+![PowerShell Script Selection 2](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_16.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Function](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_17.png)  
+![PowerShell Script Function](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_17.webp)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.  
 
@@ -125,18 +125,17 @@ if (Test-Path $ErrorLogPath) {
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script Save](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_18.png)  
+![PowerShell Script Save](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_18.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Final Save](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_19.png)  
+![Final Save](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_19.webp)  
 
 ## Completed Task
 
-![Completed Task](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_20.png)  
+![Completed Task](../../../static/img/docs/ac3caa49-5cb4-464b-be99-73433d16ba81/image_20.webp)  
 
 ## Output
 
 - Script Log
-
 
 

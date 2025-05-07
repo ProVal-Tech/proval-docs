@@ -16,7 +16,7 @@ This client script updates the client EDFs value from the Webroot plugin only wh
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7ea5c70f-f33b-4cf5-88ca-80e66fa68535/image_1.png)
+![Sample Run](../../../static/img/docs/7ea5c70f-f33b-4cf5-88ca-80e66fa68535/image_1.webp)
 
 ## Dependencies
 
@@ -33,4 +33,3 @@ This client script updates the client EDFs value from the Webroot plugin only wh
 ## Output
 
 - EDF
-

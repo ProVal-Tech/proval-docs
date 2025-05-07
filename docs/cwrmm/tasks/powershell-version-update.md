@@ -26,18 +26,18 @@ None. This script can be run against any Windows device.
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Image 1](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_1.png)
-![Image 2](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_2.png)
+![Image 1](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_1.webp)
+![Image 2](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_2.webp)
 
 **Name:** PowerShell Update  
 **Description:** This task will update the PowerShell version to PowerShell 5 if it is not already updated.  
 **Category:** Updates  
 
-![Image 3](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_3.png)
+![Image 3](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_3.webp)
 
 ### Script
 
-![Image 4](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_4.png)
+![Image 4](../../../static/img/docs/2aa9b667-3d41-4fa3-b44b-7d4389e8dd6c/image_4.webp)
 
 Paste the PowerShell script below directly into the "Script" field.
 
@@ -166,5 +166,4 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
-
 

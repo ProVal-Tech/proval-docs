@@ -31,4 +31,3 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Incompatible Endpoint | Y                | NOT "Compatible" |
-

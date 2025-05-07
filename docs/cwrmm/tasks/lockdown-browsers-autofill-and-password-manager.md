@@ -21,16 +21,16 @@ It's important to know that for browsers based on Chromium (like Google Chrome, 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_1.png)
+![Google Chrome Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_1.webp)
 
 **Affected Setting for Brave:**  
-![Brave Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_2.png)
+![Brave Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_2.webp)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_3.png)
+![Microsoft Edge Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_3.webp)
 
 **Affected Settings for Mozilla Firefox:**  
-![Mozilla Firefox Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_4.png)
+![Mozilla Firefox Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_4.webp)
 
 **Note:**
 - The changes will only take effect once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
@@ -38,13 +38,13 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Lockdown Chromium Browsers Credit Card Autofill
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_5.png)
+![Google Chrome Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_5.webp)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_6.png)
+![Microsoft Edge Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_6.webp)
 
 **Affected Setting for Brave:**  
-![Brave Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_7.png)
+![Brave Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_7.webp)
 
 **Note:**
 - The changes will only take effect once the browser is restarted if it's currently open.
@@ -52,13 +52,13 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Lockdown Chromium Browsers Address Autofill
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_8.png)
+![Google Chrome Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_8.webp)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_9.png)
+![Microsoft Edge Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_9.webp)
 
 **Affected Setting for Brave:**  
-![Brave Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_10.png)
+![Brave Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_10.webp)
 
 **Note:**
 - The changes will only take effect once the browser is restarted if it's currently open.
@@ -77,16 +77,16 @@ The task is designed to remove saved passwords from the following browsers:
 ## Disable Edge Wallet
 
 The task can disable the sync between Edge Wallet and the cloud. It should be disabled to remove the saved passwords from Microsoft Edge.  
-![Edge Wallet](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_11.png)
+![Edge Wallet](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_11.webp)
 
 **Note:**  
 - If Microsoft Edge is running, it will be forcefully closed.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_12.png)  
-![Sample Run 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_13.png)  
-![Sample Run 3](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_14.png)  
+![Sample Run 1](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_12.webp)  
+![Sample Run 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_13.webp)  
+![Sample Run 3](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_14.webp)  
 
 ## User Parameters
 
@@ -99,27 +99,27 @@ The task can disable the sync between Edge Wallet and the cloud. It should be di
 | RemoveSavedPassword       | False                       | True or False                                     | False   | Text  | False    | Setting this to true will remove the saved passwords from the browser(s). Browser(s) will be forcefully closed if they are running. |
 | DisableEdgeWallet         | False                       | True or False                                     | False   | Text  | False    | Setting this to true will disable the Microsoft Edge Wallet's sync. Microsoft Edge will be forcefully closed if it is running. It is mandatory to set this parameter to True to remove the saved password from Microsoft Edge. |
 
-![User Parameters](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_15.png)
+![User Parameters](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_15.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Create Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_16.png)  
-![Create Script Step 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_17.png)
+![Create Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_16.webp)  
+![Create Script Step 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_17.webp)
 
 **Name:** Lockdown Browsers Autofill and Password Manager  
 **Description:** The script can disable the password manager and autofill address and credit card information for the Edge, Chrome, Brave, and Firefox browsers. Moreover, it can delete the saved passwords, but it will forcefully close the browsers. Microsoft Edge will also be closed if the script is used to disable the Edge Wallet.  
 **Category:** Application  
-![Category](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_18.png)
+![Category](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_18.webp)
 
 ## Parameters
 
 ### Browsers:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_19.png)
+![Add Parameter](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_19.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_20.png)
+![Parameter Screen](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_20.webp)
 
 - Set `Browser` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -127,39 +127,39 @@ This screen will appear.
 - Set `All` in the `Default Value` field.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_21.png)
+![Save Parameter](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_21.webp)
 
 Create the rest of the parameters described in the `User Parameters` section of the document in the same way.
 
 ### DisablePasswordManager:
-![Disable Password Manager](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_22.png)
+![Disable Password Manager](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_22.webp)
 
 ### DisableAutofillAddress:
-![Disable Autofill Address](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_23.png)
+![Disable Autofill Address](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_23.webp)
 
 ### DisableAutofillCreditCard:
-![Disable Autofill Credit Card](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_24.png)
+![Disable Autofill Credit Card](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_24.webp)
 
 ### RemoveSavedPassword:
-![Remove Saved Password](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_25.png)
+![Remove Saved Password](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_25.webp)
 
 ### DisableEdgeWallet:
-![Disable Edge Wallet](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_26.png)
+![Disable Edge Wallet](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_26.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_27.png)
+![Add Row](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_27.webp)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_28.png)
+![Blank Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_28.webp)
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_29.png)  
-![PowerShell Script Step 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_30.png)
+![PowerShell Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_29.webp)  
+![PowerShell Script Step 2](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_30.webp)
 
 The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_31.png)
+![PowerShell Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_31.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -473,35 +473,34 @@ $parameters = @{
 & $scriptPath @parameters
 ```
 
-![Script Execution](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_32.png)
+![Script Execution](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_32.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row for Log](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_33.png)
+![Add Row for Log](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_33.webp)
 
 A blank function will appear.  
-![Blank Function for Log](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_34.png)
+![Blank Function for Log](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_34.webp)
 
 Search and select the `Script Log` function.  
-![Script Log Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_35.png)
+![Script Log Function](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_35.webp)
 
 The following function will pop up on the screen:  
-![Script Log Pop Up](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_36.png)
+![Script Log Pop Up](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_36.webp)
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Script Log Save](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_37.png)
+![Script Log Save](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_37.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_38.png)
+![Save Script](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_38.webp)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_39.png)
+![Completed Task](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_39.webp)
 
 ## Output
 
 - Script Log
-
 
 

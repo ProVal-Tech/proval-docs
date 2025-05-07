@@ -28,4 +28,3 @@ None
 | Client Name     | Client name                                                         |
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last three days     |
-

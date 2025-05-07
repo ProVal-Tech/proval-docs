@@ -14,7 +14,7 @@ unlisted: false
 
 The internal monitor identifies machines that have unknown user profiles. The data is collected by the [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script.
 
-![Image](../../../static/img/docs/ba7bb64b-e12b-4d21-a86f-572ce95b78d7/image_1.png)
+![Image](../../../static/img/docs/ba7bb64b-e12b-4d21-a86f-572ce95b78d7/image_1.webp)
 
 **Note:** The internal monitor does not depend on the [Domain Trust Relationship Check](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) remote monitor. However, it will not detect the machines identified by the [Domain Trust Relationship Check](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) remote monitor to prevent identifying machines that have a broken trust relationship with the domain. Since the [User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script cannot properly retrieve accounts for these machines, it will add '(Inferred)' to the remote user names.
 

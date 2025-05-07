@@ -45,4 +45,3 @@ Location of output for log, result, and error files.
 .\Get-CrystalDiskInfo-log.txt
 .\Get-CrystalDiskInfo-error.txt
 ```
-

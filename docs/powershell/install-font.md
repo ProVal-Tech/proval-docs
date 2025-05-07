@@ -41,4 +41,3 @@ PowerShell v5
 ## Output
 - `.\Install-Font-log.txt`
 - `.\Install-Font-error.txt`
-

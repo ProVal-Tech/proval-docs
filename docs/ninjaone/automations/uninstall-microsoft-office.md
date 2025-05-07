@@ -17,14 +17,14 @@ This is a Ninja RMM implementation of the agnostic script [Invoke-OfficeScrub](/
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.png)   
-![SampleRun2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)   
+![SampleRun2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image.webp)
 
 Sample run to uninstall all versions of Microsoft Office:  
-![SampleRun3](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-1.png)
+![SampleRun3](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-1.webp)
 
 Sample run to uninstall Office 2016:   
-![SampleRun4](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-2.png)
+![SampleRun4](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-2.webp)
 
 ## Dependencies
 
@@ -41,15 +41,15 @@ Sample run to uninstall Office 2016:
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 **Name:** `Uninstall Microsoft Office`  
 **Description:** `Allows the uninstallation of Microsoft Office products via OffScrub. Accepted Versions: All, 2003, 2007, 2010, 2013, 2016, and C2R. Leaving the parameter blank will remove all installed versions.`  
@@ -59,7 +59,7 @@ The scripting window will open.
 **Architecture:** `All`  
 **Run As:** `System`  
 
-![ScriptDetails](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-3.png)
+![ScriptDetails](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-3.webp)
 
 Paste in the following PowerShell script into the Ninja One editor
 ```powershell
@@ -135,12 +135,12 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![ScriptLogic](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-5.png)
+![ScriptLogic](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-5.webp)
 
 ## Script Variables
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Fill in the values as required (referenced below)
 
@@ -155,14 +155,14 @@ Click on `ADD`
 ## Saving the Automation
 
 Click the Save button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![CompleteAutomation](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-4.png)
+![CompleteAutomation](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image-4.webp)
 
 ## Output
 

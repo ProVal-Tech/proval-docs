@@ -46,4 +46,3 @@ The dataview tracks the functioning of the [User Prompt for Reboot](/docs/32d225
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 5 times and the issue is still not resolved. |
 
 
-

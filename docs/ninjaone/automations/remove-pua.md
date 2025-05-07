@@ -20,17 +20,17 @@ This is a Ninja RMM implementation of the agnostic script [Remove-PUA](/docs/fda
 
 Select any target, such as a computer or a group.  
 Go to `Run` > `Run Automation` > `Script`  
-![Image1](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image1.png)  
-![Image2](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image2.png)  
+![Image1](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image1.webp)  
+![Image2](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image2.webp)  
 
 Sample run to List Bloatware. This lists the bloatware detected on the endpoint that the script can remove:  
-![Image3](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image3.png)
+![Image3](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image3.webp)
 
 Below attempts to remove the Microsoft.XboxApp:  
-![Image4](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image4.png)
+![Image4](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image4.webp)
 
 The below attempts to remove all detected bloatware listed in the [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json) from the endpoint:  
-![Image5](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image5.png)
+![Image5](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image5.webp)
 
 ## Dependencies
 
@@ -50,7 +50,7 @@ The below attempts to remove all detected bloatware listed in the [PUA List](htt
 
 Navigate to `Administration` > `Library` > `Automation` > `Add` > `New Script`  
 Add a New Script to the Automation library for this automation.  
-![Image6](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image6.png)
+![Image6](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image6.webp)
 
 **Name:** `Remove - PUA`  
 **Description:** `This script manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing.`  
@@ -60,10 +60,10 @@ Add a New Script to the Automation library for this automation.
 **Architecture:** `All`  
 **Run As:** `System`  
 
-![Image7](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image7.png)
+![Image7](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image7.webp)
 
 Paste in the following PowerShell script into the Ninja One editor  
-![Image8](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image8.png)
+![Image8](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image8.webp)
 
 ```powershell
 <#
@@ -221,15 +221,15 @@ End {
 #endregion
 ```
 
-![Image9](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image9.png)
+![Image9](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image9.webp)
 
 ## Script Variables
 
 Click the `Add` button next to `Script Variables`.  
-![Image10](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image10.png)
+![Image10](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image10.webp)
 
 Select the appropriate variable type (referenced below)  
-![Image11](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image11.png)  
+![Image11](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image11.webp)  
 
 Fill in the values as required (referenced below)
 
@@ -240,7 +240,7 @@ In the box, fill in the following details and select `Add` to create the script 
 **Description:** `Flagging this parameter will list down the installed Bloatware in script logs.`  
 **Set Default Value:** `<Leave it unchecked.>`  
 Click on `ADD`  
-![Image12](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image12.png)  
+![Image12](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image12.webp)  
 
 **Variable Type:** `String`  
 **Variable Name:** `Remove`  
@@ -248,14 +248,14 @@ Click on `ADD`
 **Set Default Value:** `<Leave it blank.>`  
 **Mandatory:** `False`  
 Click on `ADD`  
-![Image13](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image13.png)  
+![Image13](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image13.webp)  
 
 **Variable Type:** `CheckBox`  
 **Variable Name:** `RemoveAll`  
 **Description:** `Flag this parameter to remove all bloatware by category or all found bloatware supported by the script with or without exceptions.`  
 **Set Default Value:** `<Leave it unchecked>`  
 **Click** on `ADD`  
-![Image14](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image14.png)
+![Image14](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image14.webp)
 
 **Variable Type:** `Drop-Down`  
 **Variable Name:** `Category`  
@@ -267,11 +267,11 @@ Click on `ADD`
 - `MsftBloatApps`
 - `ThirdPartyBloatApps`  
 
-![Image15](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image15.png)  
+![Image15](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image15.webp)  
 
 Click on `Add`
 Sample screenshot after creation:  
-![Image16](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image16.png)  
+![Image16](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image16.webp)  
 
 **Variable Type:** `String`  
 **Variable Name:** `Except`  
@@ -279,18 +279,18 @@ Sample screenshot after creation:
 **Set Default Value:** `<Leave it blank.>`  
 **Mandatory:** `False`  
 Click on `ADD`  
-![Image17](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image17.png)  
+![Image17](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image17.webp)  
 
 Click the `Save` button to save the Automation.  
-![Image18](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image18.png)  
+![Image18](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image18.webp)  
 
 ## Completed Automation
 
-![Image19](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image19.png)
+![Image19](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image19.webp)
 
 ## Output
 
 - Activity Details
 
-![Image20](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image20.png)  
-![Image21](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image21.png)
+![Image20](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image20.webp)  
+![Image21](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image21.webp)

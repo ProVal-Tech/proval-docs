@@ -47,4 +47,3 @@ This document describes how to clear enforced homepages in Chromium-based browse
 
 - Agnostic content logs
 - Agent Procedure Log
-

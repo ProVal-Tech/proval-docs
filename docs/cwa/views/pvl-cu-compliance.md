@@ -44,4 +44,3 @@ The view is designed to store and execute the SQL query utilized by the 'CU Comp
 | Non-Compliant Clients - CU    | Total number of individual clients where `CU Score %` is less than 75.                                                          |
 | Compliant Clients - CU %     | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`) |
 | Data Missing                 | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
-

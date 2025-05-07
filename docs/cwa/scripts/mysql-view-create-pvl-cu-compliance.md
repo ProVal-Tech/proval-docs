@@ -18,7 +18,7 @@ Run the script on any computer to create the views, and afterward, remove the sc
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33/image_1.png)
+![Sample Run](../../../static/img/docs/c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33/image_1.webp)
 
 ## Dependencies
 
@@ -28,4 +28,3 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
-

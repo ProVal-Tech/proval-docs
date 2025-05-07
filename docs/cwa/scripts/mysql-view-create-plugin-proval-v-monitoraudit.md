@@ -16,7 +16,7 @@ This script creates the plugin_proval_v_monitoraudit View, which populates the d
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/e4221ae7-3cd9-4019-9d65-1f8ae2e58d33/image_1.png)
+![Sample Run](../../../static/img/docs/e4221ae7-3cd9-4019-9d65-1f8ae2e58d33/image_1.webp)
 
 ## Process
 
@@ -27,4 +27,3 @@ This script creates the plugin_proval_v_monitoraudit View, which populates the d
 ## Output
 
 - View
-

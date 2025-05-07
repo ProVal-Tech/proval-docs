@@ -18,7 +18,7 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/aedee17c-e3b5-4f8e-9565-058318a2009a/image_1.png)
+![Sample Run](../../../static/img/docs/aedee17c-e3b5-4f8e-9565-058318a2009a/image_1.webp)
 
 ## Variables
 
@@ -42,4 +42,3 @@ The script checks the size of the generated CSV file. If the file size is less t
 
 - Script Logs
 - File Upload
-

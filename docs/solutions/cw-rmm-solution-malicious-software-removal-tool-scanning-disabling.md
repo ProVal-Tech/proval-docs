@@ -39,4 +39,3 @@ Note: The group will exclude the endpoints where the scanning found no infection
 6. Similarly we can schedule the disabling uninstall [Task - Malicious Software Removal Tool Disable/Uninstall](/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e) to numerous machines by checking the endpoints from the `Devices` or check the company custom field `MSRT Disable Uninstall` so that endpoints of the company join the group [Group - Malicious Software Removal Tool Uninstall-Disable](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4) and task can be scheduled on it to permanently disable the MSRT patches and scanning.
 Note: The group will automatically remove the endpoints where the MSRT disabled successfully.
 
-

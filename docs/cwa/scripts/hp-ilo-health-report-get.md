@@ -32,19 +32,19 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
   It is recommended to utilize this method for saving the password. The second method should be reserved for situations where unique networking configurations restrict other devices from accessing the iLO.
 
-  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_1.png)
+  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_1.webp)
 
 - **iLO Automation Password - /\<iLO Device Name/> (/\<Computer ID to connect to the device/>)**
 
   Example: `iLO Automation Password - DeviceName3 (670)`; When saving the password in this format, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set will execute the script against the computer ID 670 to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
 
-  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_2.png)
+  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_2.webp)
 
   **Note:** If the iLO IP is bound to a port, it is mandatory to provide the IP with its port in the URL section of the password tab. This applies to both options.
 
   Please refer to the screenshot:
 
-  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_3.png)
+  ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_3.webp)
 
   **Warning:** Notes should not be added manually; the script stores the last run time in the Notes of the password entry.
 
@@ -52,11 +52,11 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
 **RecreateTable:** Set the value to 1 to recreate the [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6) table. It is suggested to run the script for the first time with 1 for this parameter.
 
-![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_4.png)
+![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_4.webp)
 
 **ILO_Password_Title:** Title of the password entry stored at the client level to reach the iLO Device.
 
-![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_5.png)
+![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_5.webp)
 
 **Note:** Both parameters cannot be used together.
 
@@ -99,7 +99,7 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
 The script is capable of generating tickets for five distinct failures. However, it will only create tickets at the client level. The ticketing feature of the script can be enabled by setting the ticket category in the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set.
 
-![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_6.png)
+![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_6.webp)
 
 **Subject:** `HP iLO - Health Report - Get Script - Failed - %ClientName%`
 
@@ -122,4 +122,3 @@ The script is capable of generating tickets for five distinct failures. However,
 
 5. If the script is executed by the internal monitor and the computer ID is not specified in the password entry or the monitor set cannot locate any online computer on the client's network that matches the network of the IP address specified in the `URL` field of the password entry for the HP iLO device.  
    **Body:** Unable to find a computer online at %clientname% within the network(s) @Network@. Automate will not be able to gather details for the HP iLO device(s) based on the provided password entry(ies) @Title@.
-

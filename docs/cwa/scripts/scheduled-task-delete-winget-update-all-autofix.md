@@ -16,7 +16,7 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/23d4e4bf-1a80-4db0-983b-99da88e8ba34/image_1.png)
+![Sample Run](../../../static/img/docs/23d4e4bf-1a80-4db0-983b-99da88e8ba34/image_1.webp)
 
 ## Dependencies
 
@@ -33,4 +33,3 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
-

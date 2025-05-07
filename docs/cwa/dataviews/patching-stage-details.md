@@ -26,4 +26,3 @@ None
 | Location name    | The name of the location                            |
 | Machine name     | The name of the endpoint                            |
 | Patching Stage   | The patching stage of the endpoint (Production | Pilot | Test) |
-

@@ -26,4 +26,3 @@ This document relies on the script [Automate - New Super Admin Monitoring](/docs
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
-

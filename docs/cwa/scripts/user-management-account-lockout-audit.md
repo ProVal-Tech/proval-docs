@@ -16,7 +16,7 @@ This script audits locked accounts and stores the information in a table.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c7996686-560d-47e2-acbf-99ae88c3102e/image_1.png)
+![Sample Run](../../../static/img/docs/c7996686-560d-47e2-acbf-99ae88c3102e/image_1.webp)
 
 ## Dependencies
 
@@ -52,4 +52,3 @@ Examples:
 - Script log
 - plugin_proval_account_lock
 - Dataview
-

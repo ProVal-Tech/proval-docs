@@ -20,15 +20,15 @@ This script will be called from a remote monitor to target only machines missing
 
 In the event that the configuration file must change, you will need to reset the global parameter and run this script manually on each machine.
 
-![Sample Run](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_1.png)
+![Sample Run](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_1.webp)
 
 Manual run.
 
-![Manual Run](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_2.png)
+![Manual Run](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_2.webp)
 
 On a single manual run, you can expect to see the following files in every registered user's profile.
 
-![Expected Files](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_3.png)
+![Expected Files](../../../static/img/docs/7d8df295-577a-4c61-934b-341fcbb37784/image_3.webp)
 
 ## Variables
 
@@ -59,4 +59,3 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - File in LTSVC/Logs (optional)
-

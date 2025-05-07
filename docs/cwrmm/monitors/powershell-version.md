@@ -22,7 +22,7 @@ This monitor will detect the status of the custom field PS Version, and if the P
 
 Navigate to Automation > Monitors  
 Click "Add Monitor"  
-![Monitor Creation Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_11.png)
+![Monitor Creation Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_11.webp)
 
 ---
 
@@ -34,7 +34,7 @@ Click "Add Monitor"
 - **Family:** Windows Services
 - **Severity:** Other
 
-![Monitor Configuration Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_12.png)
+![Monitor Configuration Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_12.webp)
 
 ### Conditions:
 
@@ -53,7 +53,7 @@ Click "Add Monitor"
 
 *Note: The custom field and device groups will need to be created before the monitor can be established.*  
 This monitor is intentionally aimed at the PowerShell Version \< 5 device group.  
-![Resources Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_13.png)
+![Resources Image](../../../static/img/docs/da7e6b68-3ac3-4d15-9969-ca843a187d2d/image_13.webp)
 
 ## Dependencies
 
@@ -64,5 +64,4 @@ This monitor is intentionally aimed at the PowerShell Version \< 5 device group.
 ## Ticketing
 
 This solution does technically create tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
-
 

@@ -14,7 +14,7 @@ unlisted: false
 
 The purpose of the script is to fetch the latest installed Cumulative Update and the Full Build Number of a Windows computer.  
 e.g.,  
-![Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_1.png)  
+![Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_1.webp)  
 
 The data is then stored in the custom table [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a).  
 
@@ -22,7 +22,7 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 ## Sample Run
 
-![Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_2.png)  
+![Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_2.webp)  
 
 ## Variables
 
@@ -39,5 +39,4 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 - Custom Table
 - Dataview
-
 

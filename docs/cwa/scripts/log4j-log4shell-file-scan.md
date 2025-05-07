@@ -20,7 +20,7 @@ The script has been updated to remove the leftovers along with the `Everything` 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba/image_1.png)
+![Sample Run](../../../static/img/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba/image_1.webp)
 
 ## Dependencies
 
@@ -52,4 +52,3 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
-

@@ -40,4 +40,3 @@ The script takes the GUID for the user and populates an email to that user, lett
 ## Output
 
 N/A - No output present
-

@@ -16,11 +16,10 @@ This document provides a script for installing the New Microsoft Teams on both W
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/4def3c77-d37b-456a-b3c7-cec341a797b5/image_1.png)
+![Sample Run](../../../static/img/docs/4def3c77-d37b-456a-b3c7-cec341a797b5/image_1.webp)
 
 ## Output
 
 - Script Log
-
 
 

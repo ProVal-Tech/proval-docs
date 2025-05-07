@@ -40,15 +40,14 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
    - Alert Template - `△ Custom - Execute Script - Get MSSQL Database Version`
 
 2. Reload the System Cache  
-   ![Reload Cache](../../static/img/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb/image_1.png)
+   ![Reload Cache](../../static/img/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb/image_1.webp)
 
 3. Execute the [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee) against an online `Windows Machine` with the `Set_Environment` parameter set to `1`, to create the [Custom Table - pvl_mssql_db_version](/docs/e0ec87f6-0624-40db-ac6b-1b7d823e6b37)  
-   ![Execute Script](../../static/img/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb/image_2.png)
+   ![Execute Script](../../static/img/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb/image_2.webp)
 
 4. Configure the solution as follows:  
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - Execute Script - Get MSSQL Database](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
-
 

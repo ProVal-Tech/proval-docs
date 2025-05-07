@@ -35,7 +35,7 @@ Download and configure the [BGInfo](https://download.sysinternals.com/files/BGIn
 
 ### Step 3:
 Reload the system cache to ensure all changes are applied.  
-![Image10](../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image10.png)
+![Image10](../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image10.webp)
 
 ### Step 4:
 Execute the [Configure BGInfo](/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b) script on a few online Windows computers to verify its functionality.

@@ -24,4 +24,3 @@ Get SQL Data and Send as Report
 - **filename**: Required. The filename of the CSV.  
 - **sqluser**: Required if using SQL credtype. The username to log in to the SQL server.  
 - **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.  
-

@@ -26,11 +26,11 @@ Updating the critical drive space monitoring threshold for all `MS SQL Servers`.
 Gather the ids of `MS SQL Server` groups.  
 **GroupIds:** `832, 834, 833, 1135, 1132`
 
-![Image1](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image1.png)
+![Image1](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image1.webp)
 
 **Step 2**  
 Run the script against any client with appropriate arguments.  
-![Image2](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image2.png)
+![Image2](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image2.webp)
 
 ### Example 2
 
@@ -42,11 +42,11 @@ Updating the detection threshold of high CPU usage monitoring for `Exchange Serv
 Gather the ids of `Exchange Server` groups.  
 **GroupIds:** `829, 830, 831, 1131`
 
-![Image3](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image3.png)
+![Image3](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image3.webp)
 
 **Step 2**  
 Run the script against any client with appropriate arguments.  
-![Image4](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image4.png)
+![Image4](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image4.webp)
 
 ### Example 3
 
@@ -58,11 +58,11 @@ Updating the detection threshold of high Memory usage monitoring for `MySQL Serv
 Gather the ids of `MySQL Server` groups.  
 **GroupIds:** `835`
 
-![Image5](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image5.png)
+![Image5](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image5.webp)
 
 **Step 2**  
 Run the script against any client with appropriate arguments.  
-![Image6](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image6.png)
+![Image6](../../../static/img/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0/image6.webp)
 
 ## User Parameters
 

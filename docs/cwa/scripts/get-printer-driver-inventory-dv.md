@@ -18,7 +18,7 @@ This script collects information about the printer drivers on the target system 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/92357c7e-dc65-400a-9d61-4d3243a334d4/image_1.png)
+![Sample Run](../../../static/img/docs/92357c7e-dc65-400a-9d61-4d3243a334d4/image_1.webp)
 
 ## Dependencies
 
@@ -46,4 +46,3 @@ This script collects information about the printer drivers on the target system 
 - Script Log
 - Custom Table
 - Dataview
-

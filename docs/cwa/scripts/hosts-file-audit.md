@@ -18,7 +18,7 @@ This script runs a PowerShell command to pull any custom entries that exist in t
 
 This script can be run on a single agent or scheduled on a batch of computers on a recurring basis to keep data in Automate up to date. There are no variables needed for this script.
 
-![Sample Run](../../../static/img/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195/image_1.png)
+![Sample Run](../../../static/img/docs/19d3cc45-e5bd-4705-b82d-c0657b2e6195/image_1.webp)
 
 ## Process
 
@@ -28,4 +28,3 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Output
 
 This script outputs information into the Host File Contents EDF and can be displayed in a Dataview for monitoring if desired.
-

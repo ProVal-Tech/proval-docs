@@ -19,7 +19,7 @@ This  group includes the windows machines where custom field `Mark System As Sto
 [Custom Fields](/docs/ff056937-ea5b-48f4-b76d-74566b981da8)
 
 ## Group Overview
-![image20](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image20.png)
+![image20](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image20.webp)
 
 **Group Type:** Dynamic  
 **Group Name:** Stolen Systems 
@@ -27,7 +27,7 @@ This  group includes the windows machines where custom field `Mark System As Sto
 
 ## Criteria
 
-![image21](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image21.png)
+![image21](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image21.webp)
 
 - `Mark System As Stolen` should be equal to `True` 
 - OS contains any of windows 10,windows 11 and server
@@ -37,6 +37,6 @@ This  group includes the windows machines where custom field `Mark System As Sto
 
 Once the above criteria are met, click the Save button to save the group.
 
-![image22](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image22.png)
+![image22](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image22.webp)
 
-![image23](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image23.png)
+![image23](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image23.webp)

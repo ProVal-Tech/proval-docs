@@ -37,4 +37,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
-

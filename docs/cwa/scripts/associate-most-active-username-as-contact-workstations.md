@@ -27,11 +27,11 @@ A contact will be linked to the computer if any of the following conditions are 
 ## Implementation
 
 1. Debug/Run the script against any client with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_1.png)  
-   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_2.png)
+   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_1.webp)  
+   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_2.webp)
 
 2. Schedule the script to run once per day.  
-   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_3.png)
+   ![Image](../../../static/img/docs/b25a430b-13f9-42b7-86da-6cd7f973301f/image_3.webp)
 
 ## Client-Level EDF
 
@@ -50,4 +50,3 @@ A contact will be linked to the computer if any of the following conditions are 
 | Name                           | Type      | Example | Section | Required | Description                                                                                     |
 |--------------------------------|-----------|---------|---------|----------|-------------------------------------------------------------------------------------------------|
 | Auto Associate Contacts - Exclude | Check-Box | 0/1     | Default | True     | Mark this EDF to exclude the computer from the contact auto association.                       |
-

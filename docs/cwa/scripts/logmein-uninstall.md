@@ -17,7 +17,7 @@ This script will fetch the uninstall string from the database and attempt to uni
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f7074631-615e-4b66-80ab-10b9c3a0f8fa/image_1.png)
+![Sample Run](../../../static/img/docs/f7074631-615e-4b66-80ab-10b9c3a0f8fa/image_1.webp)
 
 ## Process
 
@@ -27,4 +27,3 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
-

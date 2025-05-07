@@ -25,4 +25,3 @@ This will remove all homepage policies from the policies.json file.
 ## Output  
 
     .\Remove-FirefoxHomepage-log.txt  
-

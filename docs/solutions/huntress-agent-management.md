@@ -50,11 +50,11 @@ Import the optional content using the ProSync Plugin if needed:
 
 ### 3.
 Execute the [Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf) script against any online machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_1.png)
+![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_1.webp)
 
 ### 4.
 Reload the system cache:  
-![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_2.png)
+![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_2.webp)
 
 ### 5.
 Configure the solution as outlined below:
@@ -65,5 +65,4 @@ Configure the solution as outlined below:
 
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) internal monitor.  
-![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_3.png)
-
+![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_3.webp)

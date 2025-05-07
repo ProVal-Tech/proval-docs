@@ -22,7 +22,7 @@ This script is built to create or remove shared folders on the target device.
 
 Please see the user parameters section below for additional information!
 
-![Sample Run](../../../static/img/docs/a58ee59c-988e-4c12-a97b-c5e97f22905e/image_1.png)
+![Sample Run](../../../static/img/docs/a58ee59c-988e-4c12-a97b-c5e97f22905e/image_1.webp)
 
 ## Dependencies
 
@@ -57,4 +57,3 @@ The script will execute a PowerShell script, passing the above parameters. The s
 ## Output
 
 Script log messages.
-

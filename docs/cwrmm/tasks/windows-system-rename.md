@@ -30,20 +30,20 @@ The reboot will be required to complete the renaming process.
 | Reboot  | True or False | False |         | Flag       | If this is checked, the system will be rebooted after the renaming of the system |
 
 
-![User Parameters](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{02C97121-7F43-4EB9-BB5C-C0979E633563}.png>)
+![User Parameters](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{02C97121-7F43-4EB9-BB5C-C0979E633563}.webp>)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Add Task](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{62909443-EE1C-4D44-9DB9-07031A56039B}.png>)
-![Add Task Continue](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D06E43E9-D65E-484B-B8E3-A22078F74E72}.png>)
+![Add Task](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{62909443-EE1C-4D44-9DB9-07031A56039B}.webp>)
+![Add Task Continue](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D06E43E9-D65E-484B-B8E3-A22078F74E72}.webp>)
 
 **Name:** `Windows - System - Rename`  
 **Description:** `This script can be used to rename a machine and validate the success or failure of the rename. The script will first check if the machine is domain-joined or not. If it is, then it will attempt to create a PSCredential object to pass into the Rename-Computer cmdlet. This will use the Username and Password parameters. It then attempts the rename the computer and stores the success status in $computerChangeInfo. The reboot will be required to complete the renaming process.`  
 **Category:** `Management`  
 
-![Task Creation](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{DAFB92CF-A0BA-4C41-86E1-8E66C3DAAACE}.png>)
+![Task Creation](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{DAFB92CF-A0BA-4C41-86E1-8E66C3DAAACE}.webp>)
 
 ## Parameters
 
@@ -51,43 +51,43 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button located at the top-right corner of the screen.
 
-![Add Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-1.png>)
+![Add Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-1.webp>)
 
 This screen will appear.  
 
-![Add New Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{8B47709B-6F3E-4946-8D90-A4AC648FBF4D}.png>)
+![Add New Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{8B47709B-6F3E-4946-8D90-A4AC648FBF4D}.webp>)
 
 - Set `NewName` in the `Parameter Name` field.
 - Enable the `Required Field` option.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![NewName Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image.png>)
+![NewName Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image.webp>)
 
 Add another new parameter by clicking the `Add Parameter` button located at the top-right corner of the screen.
 
-![Add Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-1.png>)
+![Add Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-1.webp>)
 
 This screen will appear.  
 
-![Add New Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{8B47709B-6F3E-4946-8D90-A4AC648FBF4D}.png>)
+![Add New Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{8B47709B-6F3E-4946-8D90-A4AC648FBF4D}.webp>)
 
 - Set `Reboot` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Select the Default Value to 'False'
 - Click the `Save` button.
 
-![Reboot Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-2.png>)
+![Reboot Parameter](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-2.webp>)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{89348762-7718-4887-97F7-EB15B2A6AC8D}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{89348762-7718-4887-97F7-EB15B2A6AC8D}.webp>)
 
 A blank function will appear.
 
-![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9E86F789-D67F-42C9-854F-47C90F55BE14}.png>)  
+![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9E86F789-D67F-42C9-854F-47C90F55BE14}.webp>)  
 
 ### Row 1 Function: Set Pre-defined Variable
 
@@ -97,7 +97,7 @@ Note: Before setting the Pre-defined Variable please create the custom fields [R
 
 Select function "Set Pre-Defined Variable"
 
-![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.png>)
+![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.webp>)
 
 Variable Name: `UserName`
 
@@ -107,17 +107,17 @@ Select `Domain_Admin_User`
 
 Click Save
 
-![Username](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-3.png>)
+![Username](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-3.webp>)
 
 ### Row 2 Function: Set Pre-defined Variable
 
 Add a new row by clicking the Add Row button.
 
-![alt text](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![alt text](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 Select function "Set Pre-Defined Variable"
 
-![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.png>)
+![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.webp>)
 
 Variable Name: `Password`
 
@@ -127,17 +127,17 @@ Select `Domain_Admin_Pws`
 
 Click Save
 
-![Password](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-4.png>)
+![Password](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-4.webp>)
 
 ### Row 3 Function: Set Pre-defined Variable
 
 Add a new row by clicking the Add Row button.
 
-![alt text](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![alt text](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 Select function "Set Pre-Defined Variable"
 
-![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.png>)
+![Set Pre-defined Variable](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{9310FFA1-E94C-4265-8669-44B4430CE151}.webp>)
 
 Variable Name: `CurrentName`
 
@@ -147,21 +147,21 @@ Select `friendlyName`
 
 Click Save
 
-![CurrentName](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-5.png>)
+![CurrentName](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-5.webp>)
 
 ### Row 4 Function: PowerShell Script
 
 Add a new row by clicking the Add Row button.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{E7716EE6-0D0F-4D95-86B7-04C64CEC4A97}.png>)
+![PowerShell Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{E7716EE6-0D0F-4D95-86B7-04C64CEC4A97}.webp>)
 
 The following function will pop up on the screen:
 
-![PowerShell Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.png>)
+![PowerShell Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.webp>)
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
 
@@ -207,48 +207,48 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 ```
 
-![PowerShell Script 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{6A770FE1-D959-40BB-A551-3A67753A406A}.png>)
+![PowerShell Script 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{6A770FE1-D959-40BB-A551-3A67753A406A}.webp>)
 
 
 ### Row 5: Logic: If/Then
 
 Add a new logic and select `If/Then`.
 
-![If/Then](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.png>)
+![If/Then](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.webp>)
 
-![If/Then Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{04226646-47A0-4BD8-85B6-C9F750B97AF5}.png>)
+![If/Then Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{04226646-47A0-4BD8-85B6-C9F750B97AF5}.webp>)
 
 ### Row 5a: Condition: Output Contains
 
 In the IF part, enter `An error occurred` in the right box of the "Output Contains" part.
 
-![Condition](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D1A3F413-991F-408D-BBCB-838D49E180F9}.png>)
+![Condition](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D1A3F413-991F-408D-BBCB-838D49E180F9}.webp>)
 
 ### Row 5b: Function: Script Exit
 
 Add a new row in the IF section and select `Script Exit`.
 
-![Add row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
-![Script Exit](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.png>)
+![Script Exit](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.webp>)
 
 In the script exit message, simply type `The Rename-Machine.ps1 download failed. Refer to the logs: %output%` and click `Save`.
 
-![Script Exit Message](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{84F02F7A-B1A3-400C-8787-470C7A2AB56E}.png>)
+![Script Exit Message](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{84F02F7A-B1A3-400C-8787-470C7A2AB56E}.webp>)
 
 ### Row 6 Function: Command Prompt (CMD) Script
 
 Add a new row by clicking the Add Row button.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 A blank function will appear.
 
-![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
+![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.webp>)
 
 Search and select the `Command Prompt` function.
 
-![Command Prompt (CMD) Script](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-7.png>)
+![Command Prompt (CMD) Script](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-7.webp>)
 
 Paste the following Command and set the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
 
@@ -256,48 +256,48 @@ Paste the following Command and set the `Expected time of script execution in se
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "& 'C:\ProgramData\_automation\script\Rename-Machine\Rename-Machine.ps1' -NewName '@NewName@' -Username '@Username@' -Password '@Password@'"
 ```
 
-![Command Prompt Code](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{5B4A4BBC-98E8-4D4C-B204-EEBC325D9FC6}.png>)
+![Command Prompt Code](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{5B4A4BBC-98E8-4D4C-B204-EEBC325D9FC6}.webp>)
 
 ### Row 7 Function: Script log
 
 Add a new row by clicking the Add Row button.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 A blank function will appear.
 
-![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
+![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.webp>)
 
 Search and select `Script Log`
 
-![Script Log Selection](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_19.png)  
+![Script Log Selection](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_19.webp)  
 
 The following function will pop up on the screen:
 
-![Script Log Popup](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_20.png)  
+![Script Log Popup](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_20.webp)  
 
 In the script log message, simply type `The system was renamed from @CurrentName@ to the @NewName@. Refer to the logs: %output%` and click the `Save` button.
 
-![Script log Message 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{752892B3-D547-48FF-8C58-4806EC9884A4}.png>)
+![Script log Message 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{752892B3-D547-48FF-8C58-4806EC9884A4}.webp>)
 
 ### Row 8 Function: PowerShell Script
 
 Add a new row by clicking the Add Row button.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{E7716EE6-0D0F-4D95-86B7-04C64CEC4A97}.png>)
+![PowerShell Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{E7716EE6-0D0F-4D95-86B7-04C64CEC4A97}.webp>)
 
 The following function will pop up on the screen:
 
-![PowerShell Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.png>)
+![PowerShell Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0DD9AB77-6B2B-48E3-9DBD-012408B8A443}.webp>)
 
 Paste the following PowerShell script and set the `Expected time of script execution in seconds` to `600`. Click the `Save` button.
 Also, Select the `Continue on Failure`.
 
-![PowerShell Continue on Failure](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-8.png>)
+![PowerShell Continue on Failure](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-8.webp>)
 
 ```
 $WorkingDirectory = 'C:\ProgramData\_automation\script\Rename-Machine'
@@ -330,64 +330,64 @@ if ($Reboot -eq 'True' -or $Reboot -eq 1) {
 }
 ```
 
-![PowerShell Script 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{22F3D981-636F-4FB1-80B9-5601CC3532D7}.png>)
+![PowerShell Script 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{22F3D981-636F-4FB1-80B9-5601CC3532D7}.webp>)
 
 ### Row 9 Logic: If/Then
 
 Add a new logic and select `If/Then`.
 
-![If/Then](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.png>)
+![If/Then](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{74BC6F28-5F11-4050-91A6-9A9ABE9408AB}.webp>)
 
-![If/Then Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{04226646-47A0-4BD8-85B6-C9F750B97AF5}.png>)
+![If/Then Popup](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{04226646-47A0-4BD8-85B6-C9F750B97AF5}.webp>)
 
 ### Row 9a: Condition: Output Contains
 
 In the IF part, enter `An error occurred` in the right box of the "Output Contains" part.
 
-![Condition](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D1A3F413-991F-408D-BBCB-838D49E180F9}.png>)
+![Condition](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{D1A3F413-991F-408D-BBCB-838D49E180F9}.webp>)
 
 ### Row 9b: Function: Script Exit
 
 Add a new row in the IF section and select `Script Exit`.
 
-![Add row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
-![Script Exit](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.png>)
+![Script Exit](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{656227CF-E1BC-43D3-BD1F-7C8C1B1AC88D}.webp>)
 
 In the script exit message, simply type `The error was detected in renaming the machine. Refer to the logs: %Output%`.
 
-![Script Exit Message 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{54BAFEDC-0015-4611-B3AC-627E0294263D}.png>)
+![Script Exit Message 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{54BAFEDC-0015-4611-B3AC-627E0294263D}.webp>)
 
 ### Row 10: Function: Script Log
 
 Add a new row by clicking the Add Row button.
 
-![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.png>)
+![Add Row](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{61A07D5E-2D1F-467E-AEE8-1835B0F82EF6}.webp>)
 
 A blank function will appear.
 
-![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.png>)
+![Blank Function](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{64F1B31B-C151-44EA-8068-0D39ADB59767}.webp>)
 
 Search and select `Script Log`
 
-![Script Log Selection](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_19.png)  
+![Script Log Selection](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_19.webp)  
 
 The following function will pop up on the screen:
 
-![Script Log Popup](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_20.png)  
+![Script Log Popup](../../../static/img/docs/c563d6fc-13b1-4cc5-9461-745e2a25b49d/image_20.webp)  
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script log Message 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{986EF4C4-9C56-4EB4-A3BA-0CCD5308D21C}.png>)
+![Script log Message 2](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{986EF4C4-9C56-4EB4-A3BA-0CCD5308D21C}.webp>)
 
 Click `Save` at the top right corner of the script
 
-![Save Script](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-6.png>)
+![Save Script](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/image-6.webp>)
 
 ## Completed Task
 
-![Complete Task](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{09D0A7E7-284F-4CE6-880D-E4495794EDAE}.png>)
-![Complete Task 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0E704D7A-E166-46E7-9B3A-49D411AA40B1}.png>)
+![Complete Task](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{09D0A7E7-284F-4CE6-880D-E4495794EDAE}.webp>)
+![Complete Task 1](<../../../static/img/docs/cd9905c4-ec7d-45ac-818f-f56ec85357de/{0E704D7A-E166-46E7-9B3A-49D411AA40B1}.webp>)
 
 ## Output
 

@@ -288,4 +288,3 @@ FROM
       approvalpolicycount = 0
   ) AS CountNotSet
 ```
-

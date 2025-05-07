@@ -20,7 +20,7 @@ It should be run against the service plan for servers and workstations as part o
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3af8bbf0-532f-43c5-a2ea-980be9031730/image_1.png)
+![Sample Run](../../../static/img/docs/3af8bbf0-532f-43c5-a2ea-980be9031730/image_1.webp)
 
 ## Dependencies
 
@@ -34,4 +34,3 @@ It should be run against the service plan for servers and workstations as part o
 ## Output
 
 - Script log
-

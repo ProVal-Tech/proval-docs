@@ -68,4 +68,3 @@ Otherwise, the script will fall back to the local Documents folder.
 ## Output
 
 Procedure log files and other outputs.
-

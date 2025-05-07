@@ -20,7 +20,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 
 **Target:** Windows and Mac agents
 
-![Sample Run](../../../static/img/docs/567b8db7-a87a-45c1-a81a-b3178090fb52/image_1.png)
+![Sample Run](../../../static/img/docs/567b8db7-a87a-45c1-a81a-b3178090fb52/image_1.webp)
 
 ## Dependencies
 
@@ -42,4 +42,3 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 ## Output
 
 - Script log messages only.
-

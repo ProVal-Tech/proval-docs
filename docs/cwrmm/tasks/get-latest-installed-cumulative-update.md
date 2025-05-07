@@ -16,9 +16,9 @@ The purpose of this task is to fetch the latest installed Cumulative Update and 
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_3.png)
+![Sample Run Image 1](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_3.webp)
 
-![Sample Run Image 2](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_4.png)
+![Sample Run Image 2](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_4.webp)
 
 ## Dependencies
 
@@ -28,9 +28,9 @@ The purpose of this task is to fetch the latest installed Cumulative Update and 
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_5.png)
+![Task Creation Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_5.webp)
 
-![Task Creation Image 2](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_6.png)
+![Task Creation Image 2](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_6.webp)
 
 **Name:** Get Latest Installed Cumulative Update
 
@@ -38,27 +38,27 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 **Category:** Custom
 
-![Task Creation Image 3](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_7.png)
+![Task Creation Image 3](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_7.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_8.png)
+![Add Row Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_8.webp)
 
 A blank function will appear.
 
-![Blank Function Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_9.png)
+![Blank Function Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_9.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell Script Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_10.png)
+![Select PowerShell Script Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_10.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Function Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_11.png)
+![PowerShell Function Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_11.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -101,13 +101,12 @@ return "LastInstalledCU: $($output.LastInstalledCU). Version: $($output.OSBuild)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_12.png)
+![Script Log Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_12.webp)
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_13.png)
+![Completed Task Image](../../../static/img/docs/bd99d6b2-2d31-4611-9682-3c8518c53998/image_13.webp)
 
 ## Output
 
 - Script Log
-

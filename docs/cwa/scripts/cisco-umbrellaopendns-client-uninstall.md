@@ -16,7 +16,7 @@ This script can be used to silently remove the OpenDNS Umbrella Roaming Client.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/98d2c1fc-cac4-41a6-b0e4-29f7eb813197/image_1.png)
+![Sample Run](../../../static/img/docs/98d2c1fc-cac4-41a6-b0e4-29f7eb813197/image_1.webp)
 
 #### Global Parameters
 
@@ -33,4 +33,3 @@ This script can be used to silently remove the OpenDNS Umbrella Roaming Client.
 
 - Script log
 - Ticket
-

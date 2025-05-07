@@ -36,29 +36,28 @@ The custom fields listed below are used in the Reboot Schedule Solution.
 ## Steps to Create Custom Fields
 
 1. Go to **Settings > Custom Fields**  
-   ![Step 1 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_1.png)
+   ![Step 1 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_1.webp)
 
 2. Click the **Add** option  
-   ![Step 2 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_2.png)
+   ![Step 2 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_2.webp)
 
 3. Create a Custom Field  
    Provide Name: `ServerRebootWindowEnd`  
    Select Level: `Company`  
-   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_3.png)  
+   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_3.webp)  
    Then check the Type option:  
    Type: `Text Box`  
-   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_4.png)  
+   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_4.webp)  
    Then provide Default Value and Description:  
    Default: `5`  
    Description: This sets the maximum time until the reboot can end. Set the numeric value in 24-hour format. For example: 0 = Midnight, 1 = 1:00 AM, 5 = 5:00 AM, 11 = 11:00 AM, 23 = 11:00 PM.  
    Editable: `Yes`  
-   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_5.png)  
+   ![Step 3 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_5.webp)  
    **Note:** The description is mandatory and must be written in one phrase. It does not accept **'NEW LINE'.**
 
 4. Click **Save**  
    Once all details are filled, click **Save**, and the custom field will be created.  
-   ![Step 4 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_6.png)
+   ![Step 4 Image](../../../static/img/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6/image_6.webp)
 
 5. Repeat the above four steps to create all other custom fields based on the Name, Level, Type, Default, Description, and Editable values provided in the table.  
    **NOTE:** To exclude this client from the solution, please enter 'Exclude' in the field. This will cause the script to exit and not take any actions on the target device.
-

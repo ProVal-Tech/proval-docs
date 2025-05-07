@@ -18,7 +18,7 @@ This script downloads and installs the ShadowControl client on the target machin
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/13e225e3-ebab-45f8-ac25-f1a15eb4ac80/image_1.png)
+![Sample Run](../../../static/img/docs/13e225e3-ebab-45f8-ac25-f1a15eb4ac80/image_1.webp)
 
 #### Global Parameters
 
@@ -35,4 +35,3 @@ This script downloads and installs the ShadowControl client on the target machin
 ## Output
 
 **Script Log**
-

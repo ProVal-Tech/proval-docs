@@ -20,4 +20,4 @@ Global - This method should be run without explicitly defined targets.
 
 ## Ticketing
 
-![Image](../../static/img/docs/13499ef6-0959-4222-9298-a3a36d81f2d3/image_1.png)
+![Image](../../static/img/docs/13499ef6-0959-4222-9298-a3a36d81f2d3/image_1.webp)

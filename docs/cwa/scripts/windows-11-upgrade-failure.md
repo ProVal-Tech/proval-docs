@@ -17,7 +17,7 @@ This script generates a ticket for computers where the [Windows 11 Installer](/d
 ## Sample Run
 
 This is a client script and is recommended to be scheduled to run daily.  
-![Image1](../../../static/img/docs/ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52/image1.png)
+![Image1](../../../static/img/docs/ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52/image1.webp)
 
 ## Dependencies
 

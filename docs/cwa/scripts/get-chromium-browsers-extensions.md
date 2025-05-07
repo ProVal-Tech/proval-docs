@@ -16,7 +16,7 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81/image_1.png)
+![Sample Run](../../../static/img/docs/ff2827dd-bd64-4437-8783-4b576e6cfb81/image_1.webp)
 
 ## Dependencies
 
@@ -37,4 +37,3 @@ This script is an Automate implementation of the agnostic script [EPM - Data Col
 - Script Log
 - Custom Table
 - Dataview
-

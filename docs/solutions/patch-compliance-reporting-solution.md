@@ -55,13 +55,13 @@ These reports are dependent on the following items:
 4. Follow the instructions outlined in the [Patch Compliance Reporting SQL Import Attachment](/docs/d031272f-71dd-46c3-af06-327cac5c648a) document to import the reports into the report center.
 
 5. Reload the system cache:  
-   ![Reload Cache](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_1.png)
+   ![Reload Cache](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_1.webp)
 
 6. After the reports have been imported, they can be viewed instantly by going into the Report Center --> Report List --> View the reports mentioned in this document:  
-   ![View Reports](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_2.png)  
+   ![View Reports](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_2.webp)  
    
    To view them from the Right-Click menu (Reports --> Health --> Patch Compliance - CU Audit - XXXX), the control center must be restarted before they become visible. If the partner does not need to access them right away, this is typically not an issue.  
-   ![Right-Click Menu](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_3.png)
+   ![Right-Click Menu](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_3.webp)
 
 ## FAQ
 
@@ -96,6 +96,5 @@ A: The cumulative update data is audited from the [Solution - Latest Installed C
 ## Potential Problems
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and cannot be referenced. If they are all present, verify that you have full permissions to the table and views.  
-![Potential Problems](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_4.png)
-
+![Potential Problems](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_4.webp)
 

@@ -34,4 +34,3 @@ This table stores the drive data of the Hyper-V machines at different schedules 
 | Missing       | TINYINT  | Drive status indicating whether detected in Automate or not |
 | Internal      | TINYINT  | Indicates whether the drive is internal or external/removable |
 | SSD           | TINYINT  | Indicates whether the disk is SSD or not        |
-

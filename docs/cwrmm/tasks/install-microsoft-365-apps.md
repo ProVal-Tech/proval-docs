@@ -18,9 +18,9 @@ CW RMM Implementation of [Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_1.png)  
-![Sample Run 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_2.png)  
-![Sample Run 3](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_3.png)
+![Sample Run 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_3.webp)
 
 ## Dependencies
 
@@ -33,65 +33,65 @@ CW RMM Implementation of [Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8
 | XMLPath   | - [https://pathtoxml.com](https://pathtoxml.com)  - C:/temp/fileName.xml | False    | Text String  | Installs Microsoft 365 with the specified XML path. Supports local file path or URL. If not provided, a default configuration will be used.                                                                                                                                                                                                                         |
 | Restart   | 0/1                                               | False    | Flag         | Optional: A restart is performed after installation.                                                                                                                                                                                                                                                                                                                                                                          |
 
-![User Parameters Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_4.png)
+![User Parameters Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_5.png)  
-![Task Creation Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_6.png)  
+![Task Creation Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_5.webp)  
+![Task Creation Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_6.webp)  
 
 **Name:** `Install Microsoft 365 Apps`  
 **Description:** `Installs Microsoft 365 Apps for Business or any Microsoft 365 install with XML config. You can use [https://config.office.com/](https://config.office.com/) to help build the config file. If no XML is provided, Microsoft 365 Apps for Business will install with a default configuration. XML Settings: 64-bit, Current Channel, Updates Enabled, Exclude Groove/Skype for Business, English, Silent, AcceptEULA.`  
 **Category:** Application  
-![Task Creation Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_7.png)  
+![Task Creation Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_7.webp)  
 
 ## Parameters
 
 ### XMLPath:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.png)  
+![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.webp)  
 
 This screen will appear.  
-![Add Parameter Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_9.png)  
+![Add Parameter Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_9.webp)  
 
 - Set `XMLPath` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Add Parameter Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_10.png)
+![Add Parameter Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_10.webp)
 
 ### Restart:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.png)  
+![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.webp)  
 
 This screen will appear.  
-![Add Parameter Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_9.png)  
+![Add Parameter Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_9.webp)  
 
 - Set `Restart` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Add Parameter Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_11.png)
+![Add Parameter Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_11.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_12.png)  
+![Add Row Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_12.webp)  
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_13.png)  
+![Blank Function Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_13.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_14.png)  
-![PowerShell Script Selection Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_15.png)  
+![PowerShell Script Selection Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_14.webp)  
+![PowerShell Script Selection Step 2](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_15.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Function](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_16.png)  
+![PowerShell Script Function](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_16.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
@@ -150,31 +150,31 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_17.png)
+![PowerShell Script Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_17.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_18.png)  
+![Add Row Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_18.webp)  
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_19.png)  
+![Blank Function Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_19.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Selection Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_20.png)  
+![Script Log Selection Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_20.webp)  
 
 The following function will pop up on the screen:  
-![Script Log Function](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_21.png)  
+![Script Log Function](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_21.webp)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Script Log Save Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_22.png)  
+![Script Log Save Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_22.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_23.png)  
+![Save Script Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_23.webp)  
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_24.png)
+![Completed Task Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_24.webp)
 
 ## Output
 

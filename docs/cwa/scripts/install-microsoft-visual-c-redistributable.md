@@ -16,7 +16,7 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3c808094-5ad4-4e14-9c57-0abc9fbc8ae2/image_1.png)
+![Sample Run](../../../static/img/docs/3c808094-5ad4-4e14-9c57-0abc9fbc8ae2/image_1.webp)
 
 ## Variables
 
@@ -31,5 +31,4 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 |----------|-----------------------|----------|-----------------------------------------------------------------------------------------------|
 | Release  | 20192012, 2013, 2022 | False    | Set the release id(s) of the Redistributable to install.                                   |
 | Purge    | 1                     | False    | Setting this parameter to 1 will remove the unsupported Redistributable and install the supported Redistributable. |
-
 

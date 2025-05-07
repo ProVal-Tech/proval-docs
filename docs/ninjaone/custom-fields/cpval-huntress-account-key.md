@@ -25,30 +25,30 @@ This is the Account Key that determines which Huntress Account an Agent should b
 ### Step 1
 
 Navigate to the `Administration` menu, then proceed to `Devices` and select `Global Custom Fields`.  
-![Step1](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/step1.png)
+![Step1](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen and click on it.  
-![AddButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/addbutton.png)  
+![AddButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/addbutton.webp)  
 
 ### Step 3
 
 After clicking the `Add` button, select the `Field` button that appears.  
-![FieldButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/fieldbutton.png)
+![FieldButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/fieldbutton.webp)
 
 The following Pop-up screen will appear:  
-![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.png)
+![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.webp)
 
 ### Step 4
 
 **Custom Field Type:** `Text`
 
 Select `Text` for the `Custom field type` and click `Continue` to proceed.  
-![Text](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/text.png)
+![Text](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/text.webp)
 
 The following Pop-up screen will appear:  
-![Overview](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/overview.png)
+![Overview](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/overview.webp)
 
 ### Step 5
 
@@ -59,10 +59,10 @@ Set the following details in the `Overview` section and click the `Next` button.
 **Definition Scope:** `Organization`  
 **Custom field is required:** `<Leave it unchecked>`
 
-![Image1](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image1.png)
+![Image1](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image1.webp)
 
 Clicking the `Next` button will take you to the `Permission` section.  
-![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/permissions.png)
+![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/permissions.webp)
 
 ### Step 6
 
@@ -72,10 +72,10 @@ Set the following details in the `Permission` section and click the `Next` butto
 **Automation:** `Read/Write`  
 **API:** `Read/Write`
 
-![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/genericpermissions.png)
+![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/genericpermissions.webp)
 
 Clicking the `Next` button will take you to the details tab.  
-![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/details.png)
+![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/details.webp)
 
 ### Step 7
 
@@ -85,12 +85,12 @@ Fill in the following information in the `Details` section and click the `Create
 **Tooltip Text:** `Paste your account secret key (from your Huntress portal's "download agent" section)`  
 **Footer Text:** `Huntress Agent Account Key`
 
-![Image2](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image2.png)
+![Image2](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image2.webp)
 
 ## Completed Custom Field
 
-![Image3](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image3.png)
+![Image3](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image3.webp)
 
 ## Example
 
-![Image4](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image4.png)
+![Image4](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image4.webp)

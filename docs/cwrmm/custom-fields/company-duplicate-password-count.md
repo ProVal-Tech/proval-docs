@@ -26,5 +26,4 @@ This document holds the count of accounts with duplicate passwords.
 
 ## Screenshot
 
-![Screenshot](../../../static/img/docs/98a07020-b4e1-4787-a829-9176de0a8b52/image_1.png)
-
+![Screenshot](../../../static/img/docs/98a07020-b4e1-4787-a829-9176de0a8b52/image_1.webp)

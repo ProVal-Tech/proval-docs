@@ -24,31 +24,31 @@ A suite of 5 agent procedures to manage WinGet packages on an endpoint using Pro
 
 The series of scripts have several parameters that can be set.
 
-![Image 1](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_1.png)
+![Image 1](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_1.webp)
 
 `#packageID#` - Ensure this matches capitalization.
 
-![Image 2](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_2.png)
+![Image 2](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_2.webp)
 
 If you are unsure, use `winget search` to find the proper name.
 
-![Image 3](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_3.png)
+![Image 3](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_3.webp)
 
 `#AllowUpdate#` - Leave this as `1`, unless there's a need to disable updates.
 
-![Image 4](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_4.png)
+![Image 4](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_4.webp)
 
 `#specifysource#` - Leave this as `0`, unless there's a specific need for a particular package.
 
-![Image 5](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_5.png)
+![Image 5](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_5.webp)
 
 `#optionalparameter#` - This is set to `0` by default, but a common option that may be needed is machine-wide installation packages.
 
-![Image 6](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_6.png)
+![Image 6](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_6.webp)
 
 If we want to install a package machine-wide, we use this `optionalparameter` to specify so.
 
-![Image 7](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_7.png)
+![Image 7](../../../static/img/docs/5a44d7ca-14a4-4a51-baaf-7697be8836dc/image_7.webp)
 
 The parameter must be passed as an array, so ensure it matches as seen in the screenshot or copy it as shown below:
 

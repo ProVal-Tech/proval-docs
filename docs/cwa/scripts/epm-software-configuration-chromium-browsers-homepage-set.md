@@ -19,13 +19,13 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Sample Run
 
 - Setting [https://www.provaltech.com](https://www.provaltech.com) as Google Chrome's homepage:  
-  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_1.png)
+  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_1.webp)
 
 - Setting [https://www.provaltech.com](https://www.provaltech.com) as Microsoft Edge's homepage:  
-  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_2.png)
+  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_2.webp)
 
 - Setting [https://www.provaltech.com](https://www.provaltech.com) as the homepage for both Microsoft Edge and Google Chrome:  
-  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_3.png)
+  ![Image](../../../static/img/docs/e5c01410-3731-4b1c-b166-235d637c44bb/image_3.webp)
 
 ## Dependencies
 
@@ -43,6 +43,5 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
-
 
 

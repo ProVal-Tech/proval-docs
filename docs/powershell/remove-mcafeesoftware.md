@@ -30,4 +30,3 @@ Runs McAfee's publicly available Removal Tool with parameters to remove all prod
 - .\mccleanup.log
 - .\Remove-McAfeeSoftware-log.txt
 - .\Remove-McAfeeSoftware-error.txt
-

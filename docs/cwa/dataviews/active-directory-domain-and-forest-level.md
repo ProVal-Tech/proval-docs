@@ -26,4 +26,3 @@ The dataview helps to view the domain level and forest level information of the 
 | Domain Level  | Displays the domain functional level of the respective domains.  |
 | Forest Name   | Displays the forest name with respect to the Domain Controller.  |
 | Forest Level  | Displays the forest functional level of the respective domains.  |
-

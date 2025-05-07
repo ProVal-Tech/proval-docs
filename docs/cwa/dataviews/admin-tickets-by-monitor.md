@@ -26,4 +26,3 @@ None
 | Name                      | Name of the Monitor                                 |
 | Internal                  | 1 = internal monitor; 0 = remote monitor           |
 | TicketCountLast30Days     | Total number of tickets generated in the last 30 days |
-

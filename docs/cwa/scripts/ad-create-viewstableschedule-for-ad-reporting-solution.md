@@ -23,7 +23,7 @@ This document outlines the creation of all necessary items in the database to en
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49/image_1.png)
+![Sample Run](../../../static/img/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49/image_1.webp)
 
 ## Dependencies
 
@@ -41,5 +41,4 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
-
 

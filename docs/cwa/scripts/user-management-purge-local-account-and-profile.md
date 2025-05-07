@@ -18,7 +18,7 @@ This script can be used to completely remove/purge local accounts (including Use
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/45074a99-85a8-4e7f-bda4-775697504bad/image_1.png)
+![Sample Run](../../../static/img/docs/45074a99-85a8-4e7f-bda4-775697504bad/image_1.webp)
 
 ## Dependencies
 
@@ -56,4 +56,3 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
-

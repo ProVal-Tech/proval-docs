@@ -18,7 +18,7 @@ This script can be used to remove and optionally block an extension in Mozilla F
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/dcffd758-d8cc-46a4-b7d7-cd34b7fd4953/image_1.png)
+![Sample Run](../../../static/img/docs/dcffd758-d8cc-46a4-b7d7-cd34b7fd4953/image_1.webp)
 
 ## Dependencies
 
@@ -57,4 +57,3 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on computer
-

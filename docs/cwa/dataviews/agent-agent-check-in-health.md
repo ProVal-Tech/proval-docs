@@ -36,4 +36,3 @@ This dataview provides information about an agent's check-in status in CWA and w
 | Clientid                     | Client ID (Hidden)                                                                                                   |
 | Locationid                   | Location ID (Hidden)                                                                                                 |
 | Computerid                   | Computer ID (Hidden)                                                                                                 |
-

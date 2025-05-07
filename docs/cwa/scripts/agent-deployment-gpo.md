@@ -22,27 +22,27 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 ## Automate-Deploy GPO
 
-![Automate-Deploy GPO Image 1](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_1.png)
+![Automate-Deploy GPO Image 1](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_1.webp)
 
-![Automate-Deploy GPO Image 2](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_2.png)
+![Automate-Deploy GPO Image 2](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_2.webp)
 
 ## Automate-Deploy Scheduled Task GPO
 
-![Automate-Deploy Scheduled Task GPO Image 1](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_3.png)
+![Automate-Deploy Scheduled Task GPO Image 1](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_3.webp)
 
-![Automate-Deploy Scheduled Task GPO Image 2](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_4.png)
+![Automate-Deploy Scheduled Task GPO Image 2](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_4.webp)
 
-![Automate-Deploy Scheduled Task GPO Image 3](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_5.png)
+![Automate-Deploy Scheduled Task GPO Image 3](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_5.webp)
 
 ## Sample Run
 
 **To Create a Startup Script GPO:**
 
-![Create Startup Script GPO](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_6.png)
+![Create Startup Script GPO](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_6.webp)
 
 **To Create a Scheduled Task GPO:**
 
-![Create Scheduled Task GPO](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_7.png)
+![Create Scheduled Task GPO](../../../static/img/docs/4c3c9d4c-cf60-4252-85f3-a4db1510fa49/image_7.webp)
 
 ## Implementation
 
@@ -73,4 +73,3 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 **Q.** Does installing the Scheduled Task GPO remove the existing Startup Script GPO?  
 **A.** No, both `Automate-Deploy` and `Automate-Deploy Scheduled Task` are individual GPOs and do not remove or update each other while being created.
-

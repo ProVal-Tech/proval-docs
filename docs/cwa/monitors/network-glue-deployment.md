@@ -34,5 +34,5 @@ Windows Machines
 ## Ticketing
 
 **_To enable ticketing, please set the ticket category in the monitor._**  
-![Image](../../../static/img/docs/4e0f7314-bf88-44de-a162-139c191e6e09/image_1.png)  
+![Image](../../../static/img/docs/4e0f7314-bf88-44de-a162-139c191e6e09/image_1.webp)  
 **_The script will then handle the ticket creation:_** [ - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)

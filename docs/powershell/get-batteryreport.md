@@ -107,4 +107,3 @@ Returns a system object containing all data from the generated battery report.
         StartTimestamp
 ```
 
-

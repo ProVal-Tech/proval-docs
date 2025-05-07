@@ -28,4 +28,3 @@ The output log can be found at:
 ```
 .\\Clear-GeckoCache-log.txt
 ```
-

@@ -15,7 +15,7 @@ unlisted: false
 This view provides a client-level breakdown of machines missing a certain number of patches.
 
 Sample data:  
-![Sample Data](../../../static/img/docs/c1fad1cd-7320-472e-b20e-3d8fa620f0db/image_1.png)
+![Sample Data](../../../static/img/docs/c1fad1cd-7320-472e-b20e-3d8fa620f0db/image_1.webp)
 
 ## Dependencies
 
@@ -31,4 +31,3 @@ Sample data:
 | os            | varchar(11)| Operating System (Workstation | Server)                                                     |
 | category      | varchar(18)| Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)      |
 | Machine Count | int(5)     | Number of machines falling under the concerned category for the client.                      |
-

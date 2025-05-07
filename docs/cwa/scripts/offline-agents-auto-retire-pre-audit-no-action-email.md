@@ -20,15 +20,15 @@ For initial execution:
 
 Set the `Set_Environment` value to 1 and set the `Set_Global_Threshold_Days` value as per the client's requirement, suppose it's '180' days.
 
-![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_1.png)
+![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_1.webp)
 
 Leave all parameters except `Email_address` blank for an email regarding all the obsolete workstations.
 
-![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_2.png)
+![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_2.webp)
 
 Set the `Server` value to `1` for an email regarding all the obsolete workstations as well as servers.
 
-![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_3.png)
+![Sample Run](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_3.webp)
 
 **Note: Since this is a client script, it must be executed on the client.**
 
@@ -54,7 +54,7 @@ Set the `Server` value to `1` for an email regarding all the obsolete workstatio
 |-----------------------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AutoRetireThreshold_Days    | 180     | True     | Threshold days to retire the offline computers. The default is 90. It can either be set during the first execution of the script or manually from the dashboard.                                                                 |
 
-![System Properties](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_4.png)
+![System Properties](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_4.webp)
 
 ### Extra Data Fields
 
@@ -70,25 +70,25 @@ Set the `Server` value to `1` for an email regarding all the obsolete workstatio
 
 Client-Level EDF: "AutoRetire Threshold Days"
 
-![Client-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_5.png)
+![Client-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_5.webp)
 
 Location-Level EDF: "AutoRetireThreshold_Days"
 
-![Location-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_6.png)
+![Location-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_6.webp)
 
 **Following EDFs can be used to exclude a client/location/computer from retirement:**
 
 Client-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Client-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_7.png)
+![Client-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_7.webp)
 
 Location-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Location-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_8.png)
+![Location-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_8.webp)
 
 Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
-![Computer-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_9.png)
+![Computer-Level EDF](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_9.webp)
 
 ## Implementation
 
@@ -96,7 +96,7 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
 
 2. Reload the System Cache.
 
-   ![Reload Cache](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_10.png)
+   ![Reload Cache](../../../static/img/docs/a47f9f1e-356c-4b1c-aa02-47d70788ac05/image_10.webp)
 
 3. Configure the script as follows:
 
@@ -104,4 +104,3 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
    - Debug the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for the global property `AutoRetireThreshold_Days`.
      - Validate that the system property was set correctly by navigating to 'System → Configuration → Dashboard → Config → Configurations → Properties' → Check the property 'AutoRetireThreshold_Days'.
    - Run the script against the desired client.
-

@@ -27,4 +27,3 @@ This dataview detects if the machine allows local caching of files for offline a
 | Computer             | Computer Name                                               |
 | OS                   | OS installed on the agent                                   |
 | Offline Files Status  | Enabled / Disabled for offline file status (based on role detection) |
-

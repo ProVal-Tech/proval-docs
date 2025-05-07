@@ -16,11 +16,11 @@ This document explains how to create a desktop shortcut for all users.
 
 ## Sample Run
 
-![Image 1](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_1.png)  
-![Image 2](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_2.png)  
-![Image 3](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_3.png)  
-![Image 4](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_4.png)  
-![Image 5](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_5.png)  
+![Image 1](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_1.webp)  
+![Image 2](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_2.webp)  
+![Image 3](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_3.webp)  
+![Image 4](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_4.webp)  
+![Image 5](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_5.webp)  
 
 ## Dependencies
 
@@ -37,4 +37,3 @@ This document explains how to create a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for the process.
-

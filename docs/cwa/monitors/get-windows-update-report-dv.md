@@ -25,4 +25,3 @@ The purpose of this monitor set is to execute the [CWM - Automate - Script - Win
 
 Limited to the Windows machines with Managed Patch Policy via SQL query.
 
-

@@ -20,7 +20,7 @@ It appends data from that agnostic script to the created table.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/687261c3-e6d7-46bc-84f6-506007d47142/image_1.png)
+![Sample Run](../../../static/img/docs/687261c3-e6d7-46bc-84f6-506007d47142/image_1.webp)
 
 ## Dependencies
 
@@ -103,5 +103,4 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
-
 

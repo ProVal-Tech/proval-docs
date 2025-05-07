@@ -40,4 +40,3 @@ The table is built to store the complete Windows Server Backup data.
 | SystemState Backup                         | VARCHAR  | Contains critical system components, including the registry, Active Directory, and system files required for recovery |
 | Overwrite Old Format VHD                   | VARCHAR  | If enabled, the old VHD files will be overwritten during subsequent backups                           |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
-

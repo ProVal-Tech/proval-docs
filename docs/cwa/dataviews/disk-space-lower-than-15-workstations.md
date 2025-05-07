@@ -32,4 +32,3 @@ None
 | Drive Type                | Type of drive (virtual drive, physical)         |
 | Operating System          | OS of the machine                                |
 | Agent Last Contact Date   | Last time the agent checked into Automate        |
-

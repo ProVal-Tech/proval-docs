@@ -29,5 +29,4 @@ The purpose of this script is to create the [pvl_Script_Assessment](/docs/31e58a
 ## Sample Run
 
 Schedule the script to run once per day, preferably around midnight.  
-![Sample Run](../../../static/img/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0/image_1.png)
-
+![Sample Run](../../../static/img/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0/image_1.webp)

@@ -25,7 +25,7 @@ This agent procedure checks whether the user "pccomp" exists or not.
 | 6:05:35 am 30-Dec-24    | Check User: pccomp                              | Checking for the pccomp user | vaibhav.arora     |
 | 6:05:27 am 30-Dec-24    | Run Now - Check User: pccomp                    | Admin vaibhav.arora scheduled procedure Run Now - Check User: pccomp to run at Dec 30, 2024, 6:05 AM |                   |
 
-![Image](../../../static/img/docs/779a0d48-5fcd-4353-a457-14565e602085/image_1.png)
+![Image](../../../static/img/docs/779a0d48-5fcd-4353-a457-14565e602085/image_1.webp)
 
 ## Dependencies
 
@@ -34,4 +34,3 @@ Custom Field: cPVAL User Status
 ## Output
 
 Agent procedure log.
-

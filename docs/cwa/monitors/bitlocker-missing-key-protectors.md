@@ -32,4 +32,3 @@ Global
 **Name:** `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
 
 The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/c2c817db-9667-4e18-864c-11ef0775282c) should be imported before creating or importing the alert template, as the alert template should run this.
-

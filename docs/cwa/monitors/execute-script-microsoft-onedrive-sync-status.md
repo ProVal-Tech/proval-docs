@@ -25,4 +25,3 @@ Global
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Microsoft OneDrive Sync Status`
-

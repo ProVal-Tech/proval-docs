@@ -35,4 +35,3 @@ If the script has not been run previously, the admin data is saved to the table,
 
 - `Get-NewLocalAdmin_log`
 - `Get-NewLocalAdmin_admins`
-

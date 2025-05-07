@@ -16,7 +16,7 @@ The script installs or updates the DUO Authentication Proxy application to the l
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/775e0b37-b55c-47fb-bec6-a01314ac123f/image_1_1.png)
+![Sample Run](../../../static/img/docs/775e0b37-b55c-47fb-bec6-a01314ac123f/image_1_1.webp)
 
 ## Dependencies
 
@@ -63,4 +63,3 @@ The script to update DUO Security Authentication Proxy has failed - please revie
 Script Logs -
 %PowerShellResult%
 ```
-

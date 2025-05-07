@@ -24,4 +24,3 @@ This dataview displays information for all the Windows servers present in the en
 | DNS_Settings       | DNS addresses.                     |
 | Operating_System    | OS information of the server.      |
 | Last Contact       | Last contact with RMM.             |
-

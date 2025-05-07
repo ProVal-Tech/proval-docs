@@ -19,4 +19,3 @@ This role is used to view the status of FileVault on Mac agents.
 | Detection String         | Comparator | Result               | Applicable OS |
 |-------------------------|------------|----------------------|----------------|
 | `%@fdesetup status@%`   | Contains   | FileVault is On      | Mac            |
-

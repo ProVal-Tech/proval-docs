@@ -30,7 +30,7 @@ Monitor set details:
 
 Please use the configuration below or modify it as per client requirements:
 
-![Monitor Set Configuration](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_1.png)
+![Monitor Set Configuration](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_1.webp)
 
 Verify by clicking on the build and viewing the query to see these machines.
 
@@ -47,11 +47,11 @@ The autofix script to remove the machines should consist of two parts:
 
 The first script can be as follows:
 
-![Autofix Script 1](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_2.png)
+![Autofix Script 1](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_2.webp)
 
 The second script can be as follows:
 
-![Autofix Script 2](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_3.png)
+![Autofix Script 2](../../static/img/docs/b29a19e6-c991-4dc3-8b87-81191273eb2c/image_3.webp)
 
 SQL:
 

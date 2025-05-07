@@ -32,5 +32,4 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 This script will add the following section to the log variable:
 
-![Log Output](../../../static/img/docs/c53e6fd7-f441-4dc6-ab31-5163d39d7d58/image_1.png)
-
+![Log Output](../../../static/img/docs/c53e6fd7-f441-4dc6-ab31-5163d39d7d58/image_1.webp)

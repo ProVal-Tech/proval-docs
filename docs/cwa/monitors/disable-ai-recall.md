@@ -25,7 +25,7 @@ For more details on this feature, visit the following link:
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 1800     | ![Image](../../../static/img/docs/c9ef3af9-ea83-467d-a5b7-e34248ab65c5/image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 1800     | ![Image](../../../static/img/docs/c9ef3af9-ea83-467d-a5b7-e34248ab65c5/image_1.webp) |
 
 ## Target
 

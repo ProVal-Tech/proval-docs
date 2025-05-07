@@ -18,7 +18,7 @@ This script will create a ticket and move the agent it is run against to retired
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/b091a26a-23d5-43cc-a00b-0075e2940ad2/image_1.png)
+![Sample Run](../../../static/img/docs/b091a26a-23d5-43cc-a00b-0075e2940ad2/image_1.webp)
 
 ## Process
 
@@ -27,4 +27,3 @@ This script will create a ticket and move the agent it is run against to retired
 ## Output
 
 - Script log
-

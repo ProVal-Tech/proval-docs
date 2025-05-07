@@ -20,4 +20,3 @@ This role detects if the machine is a Remote Desktop Service Session Host and, i
 |---------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-RD-Server).Installed"@%} | Equals     | True   | Windows        |
 
-

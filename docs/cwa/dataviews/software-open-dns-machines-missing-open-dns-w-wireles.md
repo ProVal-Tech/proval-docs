@@ -29,4 +29,3 @@ None
 | Machine Type   | The type of machine: Server | Workstation | Mac | Linux                                          |
 | Wireless Card   | Checks if any of the cards connected to the endpoint are wireless compatible                   |
 | Umbrella Agent | Indicates if the Open DNS/Umbrella Agent is installed on the endpoint                          |
-

@@ -22,7 +22,7 @@ The logged-in user must re-login after installing the tool. The script will inst
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c6ea69e0-823f-4090-9894-2faf81ba8c46/image_1.png)
+![Sample Run](../../../static/img/docs/c6ea69e0-823f-4090-9894-2faf81ba8c46/image_1.webp)
 
 Schedule the script to run periodically against the computer to monitor.
 
@@ -51,4 +51,3 @@ The [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool must be placed in the
 
 - Script log
 - Dataview
-

@@ -23,10 +23,10 @@ This document allows you to clear a patch from the Failed Patches list with the 
 ## Implementation
 
 1. **Take a Backup of the VSA Database.**  
-   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_1.png)
+   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_1.webp)
 
 2. **Update the KB Number in the SQL Query Below.**  
-   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_2.png)  
+   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_2.webp)  
    ```sql
    -- clears "failed" patches on all agents for a specific KB article ID
    DECLARE @kbArticleId AS VARCHAR(10) = '5034441', -- enter KB article ID here
@@ -58,5 +58,4 @@ This document allows you to clear a patch from the Failed Patches list with the 
    ```
 
 3. **Run this Query on KSubscribers on SQL Server.**  
-   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_3.png)
-
+   ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_3.webp)

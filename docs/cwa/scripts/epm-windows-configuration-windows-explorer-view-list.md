@@ -16,7 +16,7 @@ This script will set the Windows Explorer view to List View.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/6eddbb86-86a9-4812-8a5e-3302933800c9/image_1.png)
+![Sample Run](../../../static/img/docs/6eddbb86-86a9-4812-8a5e-3302933800c9/image_1.webp)
 
 ## Variables
 
@@ -37,4 +37,3 @@ This script performs the following actions:
 ## Output
 
 - Script log
-

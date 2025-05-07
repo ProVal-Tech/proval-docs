@@ -16,7 +16,7 @@ This document resolves the stuck email issue in Microsoft Exchange based on the 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f699ae53-3ba7-42bd-864d-a670aca7ab0b/image_1.png)
+![Sample Run](../../../static/img/docs/f699ae53-3ba7-42bd-864d-a670aca7ab0b/image_1.webp)
 
 ## Dependencies
 
@@ -59,5 +59,4 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
-
 

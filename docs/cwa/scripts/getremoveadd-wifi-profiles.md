@@ -31,24 +31,24 @@ It is important to note that the addition of profiles can also be managed throug
 ## Sample Run
 
 - For the first execution of the script, the value of the user parameter `Set_Environment` should be set to `1`. This will create the EDF, System property, and custom table used by the script:  
-![Sample Run](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_1.png)
+![Sample Run](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_1.webp)
 
 - The Wi-Fi Profile/SSID to remove from the computer should be provided within the `Profiles_To_Remove` parameter. Each SSID should be enclosed in double quotes and separated by a comma. If there is a comma (,) in the SSID, it should be replaced by a double semi-colon (;;).
     - Example 1: To remove a single Wi-Fi Profile  
-    ![Example 1](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_2.png)
+    ![Example 1](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_2.webp)
     - Example 2: To remove multiple Wi-Fi Profiles  
-    ![Example 2](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_3.png)
+    ![Example 2](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_3.webp)
     - Example 3: If there is a comma in the Wi-Fi Profile Name, e.g., `SSID with a , Comma` or `SSID , with multiple , Commas`  
-    ![Example 3](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_4.png)
+    ![Example 3](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_4.webp)
 
 - The Wi-Fi Profile/SSID to be added from the computer should be provided within the `Profiles_To_Add` parameter. Each SSID should be enclosed in single quotes and separated by commas. Additionally, along with the names of the profiles, the `Primary_Computerid` parameter should be set to specify the computer ID from which the profile information is to be copied. While adding an SSID with a single quotation in the name itself, a backslash should be added before the quotation. The complete name should always be enclosed between single quotations.  
   For example:  
   To add `Bob's Wifi` in the parameter, it should be passed as `'Bob\'s Wifi'`.  
   To add `Bob's Wifi`, `HR's Wifi`, and `Wifi Network X` in the parameter, it should be passed as `'Bob\'s Wifi', 'HR\'s Wifi', 'Wifi Network X'`.  
     - Example 1: To add a single Wi-Fi Profile  
-    ![Example 1](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_5.png)
+    ![Example 1](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_5.webp)
     - Example 2: To add multiple Wi-Fi Profiles  
-    ![Example 2](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_6.png)
+    ![Example 2](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_6.webp)
 
 ## Variables
 
@@ -78,7 +78,7 @@ It is important to note that the addition of profiles can also be managed throug
 |-------------------------|---------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Safe_Wifi_Networks      | "Safe Network", "Another Safe Network", "Safe Network With a ;; Comma"  | False    | Stores the list of globally whitelisted/safe Wi-Fi profiles. The script will not accidentally remove the profile(s) if mentioned here. Each Name/SSID should be enclosed in double quotation marks and separated by a comma.                      |
 
-![Safe Wifi Networks](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_7.png)
+![Safe Wifi Networks](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_7.webp)
 
 ## Client-Level EDFs
 
@@ -88,7 +88,7 @@ It is important to note that the addition of profiles can also be managed throug
 | Primary ComputerID      | Computer Name (Computerid)                            | True (if Client-level EDF `Wifi Profiles To Add` is set) | To store the name and ID of the computer to fetch the information of the Wi-Fi Profiles to add to the end machines of the client. It's a dropdown field with the `Name (Computerid)` of the computers of the client.                                                                                  |
 | Wifi Profiles To Add    | 'SSID1', 'SSID2', 'SSID3'                            | False                                 | SSID or Name of the Wi-Fi Profile(s) to add to the end machines of the client. These Wi-Fi Profiles should be available on the computer selected in the `Primary ComputerID` EDF. Each SSID should be enclosed in single quotes and separated by commas. While adding an SSID with a single quotation in the name itself, a backslash should be added before the quotation. The complete name should always be enclosed between the single quotations. |
 
-![Client-Level EDFs](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_8.png)
+![Client-Level EDFs](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_8.webp)
 
 ## Location-Level EDFs
 
@@ -99,7 +99,7 @@ It is important to note that the addition of profiles can also be managed throug
 
 Location-Level EDFs can be used to override the Client-Level EDFs. The syntax used to store data in the location-level EDF `Wifi Profiles To Add` is the same as that of the client-level EDF `Wifi Profiles To Add`.
 
-![Location-Level EDFs](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_9.png)
+![Location-Level EDFs](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_9.webp)
 
 ## Computer-Level EDF
 
@@ -107,10 +107,9 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 |------------------------------------|--------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exclude From Wifi Profile Addition   | Check Box    | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](/docs/51eaeefd-b300-4f9a-be28-fa01e6e83b5e) monitor set detections.                     |
 
-![Computer-Level EDF](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_10.png)
+![Computer-Level EDF](../../../static/img/docs/47e125c4-26df-4b47-811b-b856f3395290/image_10.webp)
 
 ## Output
 
 - Script Log
 - Dataview
-

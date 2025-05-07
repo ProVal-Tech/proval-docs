@@ -50,4 +50,3 @@ Uses the ProVal Agnostic Protect-ScreenLock script to set a configurable timeout
 ## Output
 
 Agent Procedure Log
-

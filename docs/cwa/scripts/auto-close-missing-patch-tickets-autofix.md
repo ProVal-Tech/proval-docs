@@ -18,7 +18,7 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd/image_1.png)
+![Sample Run](../../../static/img/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd/image_1.webp)
 
 ## Dependencies
 
@@ -31,4 +31,3 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticket ID to finish/close                         |
-

@@ -21,10 +21,10 @@ This dataview lists all scripts in the environment with details about their scri
 | Script Name                  | The name of the script.                                                                                                                                                                                                    |
 | Script Parent Folder         | The name of the parent folder of the script.                                                                                                                                                                               |
 | Script Folder                | The full path to the script.                                                                                                                                                                                               |
-| View Permission              | A comma-separated list of user classes that can execute or view the script; `EveryOne` stands for all users with the basic permission for scripts. ![View Permission](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_1.png)          |
+| View Permission              | A comma-separated list of user classes that can execute or view the script; `EveryOne` stands for all users with the basic permission for scripts. ![View Permission](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_1.webp)          |
 | Edit Permission              | A comma-separated list of user classes that can edit the script; `EveryOne` stands for all users with the basic permission for scripts.                                                                                     |
-| Script GUID                  | The GUID of the script. ![Script GUID](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_2.png)                                                                                                                                      |
-| Offline Computer Script      | Can this script be executed against offline machines as well? (0/1) ![Offline Computer Script](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_3.png)                                                                               |
+| Script GUID                  | The GUID of the script. ![Script GUID](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_2.webp)                                                                                                                                      |
+| Offline Computer Script      | Can this script be executed against offline machines as well? (0/1) ![Offline Computer Script](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_3.webp)                                                                               |
 | Maintenance Script           | Can this script be executed against computers in maintenance mode as well? (0/1)                                                                                                                                         |
 | Function Script              | Is this a function script? (0/1) (Function scripts can be called from an alert template or another script but cannot be executed directly against a computer/client.)                                                       |
 | Client Script                | Is this a client script? (0/1)                                                                                                                                                                                             |
@@ -34,5 +34,4 @@ This dataview lists all scripts in the environment with details about their scri
 
 ## Example Screenshot
 
-![Example Screenshot](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_4.png)
-
+![Example Screenshot](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_4.webp)

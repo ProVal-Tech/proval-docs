@@ -16,7 +16,7 @@ This script downloads the offscrub files from the repository and then attempts t
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_1.png)
+![Sample Run](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_1.webp)
 
 ## Dependencies
 
@@ -32,17 +32,17 @@ This script downloads the offscrub files from the repository and then attempts t
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Implementation](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_2.png)
+![Implementation](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_2.webp)
 
 **Name:** Office Universal Uninstaller  
 **Description:** This task will download the offscrub files from the repository and then attempt to uninstall all versions of Microsoft Office from 2007 to 2016 & O365. It can handle machine or software corruption and completely removes Office app shortcuts for the version.  
 **Category:** Custom  
 
-![Implementation Category](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_3.png)
+![Implementation Category](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_3.webp)
 
 ### Parameter
 
-![Parameter](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_4.png)
+![Parameter](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_4.webp)
 
 **Parameter Names:** Arguments  
 **Required Field:** Selected  
@@ -53,15 +53,15 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 #### Row 1 Function: Script Log
 
-![Row 1 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_5.png)
+![Row 1 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_5.webp)
 
 Input the following:
 
-![Input](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_6.png)
+![Input](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_6.webp)
 
 #### Row 2 Function: PowerShell Script
 
-![Row 2 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_7.png)
+![Row 2 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_7.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -96,19 +96,19 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 ```
 
-![Row 2 Function Output](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_8.png)
+![Row 2 Function Output](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_8.webp)
 
 #### Row 3 Function: Script Log
 
-![Row 3 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_9.png)
+![Row 3 Function](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_9.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 3 Function Output](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_10.png)
+![Row 3 Function Output](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_10.webp)
 
 The final task should look like the screenshot below.
 
-![Final Task Screenshot](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_11.png)
+![Final Task Screenshot](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_11.webp)
 
 ### Script Deployment
 
@@ -118,9 +118,8 @@ Go to **Automations > Tasks.**
 Search for **Office Universal Uninstaller.**  
 Then click on **Schedule** and provide the parameter details as necessary for the script completion.
 
-![Script Deployment](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_12.png)
+![Script Deployment](../../../static/img/docs/88ebc856-6e02-41d2-a6b5-af8cbd37e2c6/image_12.webp)
 
 ## Output
 
 - Script log
-

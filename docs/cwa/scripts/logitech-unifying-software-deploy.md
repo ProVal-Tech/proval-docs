@@ -21,7 +21,7 @@ This document provides a guide for installing the Logitech Unifying Software.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/b86b8355-39ee-4f0c-8f54-33a21ed603f3/image_1.png)
+![Sample Run](../../../static/img/docs/b86b8355-39ee-4f0c-8f54-33a21ed603f3/image_1.webp)
 
 ## Global Parameter
 
@@ -40,4 +40,3 @@ This script will install a specified version of the Logitech Unifying Software b
 ## Output
 
 - Script log
-

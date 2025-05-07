@@ -27,4 +27,3 @@ This document provides an overview of the status of network devices in the envir
 | Device Uptime                      | Displays the uptime of the network device.                              |
 | Device Type                        | Displays the type of the network device.                                |
 | External Sync                      | Indicates whether the external sync is disabled or enabled on the network device. |
-

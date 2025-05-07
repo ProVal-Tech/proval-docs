@@ -17,17 +17,17 @@ This document provides a guide for installing the ThreatLocker application on bo
 ## Sample Run
 
 You will need to enter your ThreatLocker group key here for Windows operating systems:  
-![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_1.png)
+![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_1.webp)
 
 For Mac deployment, you will need to follow these steps:
 
 - Follow the instructions to obtain the group key for the desired machine. [MAC Agent Group Key Location | ThreatLocker Help Center (kb.help)](https://threatlocker.kb.help/mac-agent-group-key-location/)
 - Copy the group key and set this EDF for the client.  
 
-![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_2.png)
+![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_2.webp)
 
 Then run the script:  
-![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_3.png)
+![Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_3.webp)
 
 #### Global Parameters
 
@@ -38,4 +38,3 @@ Then run the script:
 ## Output
 
 - Script log
-

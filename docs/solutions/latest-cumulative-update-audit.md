@@ -30,4 +30,3 @@ The solution retrieves the computer's build number and compares it with Microsof
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368)
 
-

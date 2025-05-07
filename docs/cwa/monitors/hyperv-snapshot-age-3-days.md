@@ -25,7 +25,7 @@ This remote monitor will provide alerts on Hyper-V host snapshots that have turn
 |--------------|----------------|------------|-------------|------------|----------|--------|
 | System       | Default        | Run File   | **REDACTED**| State Based | 3600     | Screenshot attached below |
 
-![Screenshot](../../../static/img/docs/99c03451-d553-4cba-be15-fd19d1a922f4/image_1.png)
+![Screenshot](../../../static/img/docs/99c03451-d553-4cba-be15-fd19d1a922f4/image_1.webp)
 
 ## Target
 

@@ -18,11 +18,10 @@ The script generates two custom tables: [pvl_automate_connection_audit](/docs/ec
 
 - Debug the script against any random client to import the custom tables.  
 - Schedule the script to run once per day around midnight:  
-  ![Sample Run Image](../../../static/img/docs/ef69cef8-da15-46b7-94a4-697431a87929/image_1.png)  
+  ![Sample Run Image](../../../static/img/docs/ef69cef8-da15-46b7-94a4-697431a87929/image_1.webp)  
 
 ## Output
 
 - Script Log
-
 
 

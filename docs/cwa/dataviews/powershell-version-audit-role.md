@@ -28,4 +28,3 @@ This dataview collects information about the PowerShell version based on the rol
 | Operating System     | Operating system of the agent             |
 | Last Contact         | Last contact of the agent with the RMM   |
 | PowerShell Version    | PowerShell version of the agent           |
-

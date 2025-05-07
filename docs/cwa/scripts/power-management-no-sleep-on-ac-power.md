@@ -18,7 +18,7 @@ This script sets the computer to not sleep when plugged in.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/150f9b38-2ff8-457d-9293-943a2d038d04/image_1.png)
+![Sample Run](../../../static/img/docs/150f9b38-2ff8-457d-9293-943a2d038d04/image_1.webp)
 
 ## Dependencies
 
@@ -52,4 +52,3 @@ The script will download the EXE file and execute it.
 ## Output
 
 - Script log
-

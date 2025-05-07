@@ -52,4 +52,3 @@ The content checks for a version of PowerShell greater than v2. If one is presen
 | ConnectWise RMM             |                                           |
 | Kaseya                      |                                           |
 | Datto RMM                   |                                           |
-

@@ -31,4 +31,3 @@ Stores the data collected by the [CWM - Automate - Script - Get-PNPDevices [DV]]
 | Status        | varchar(1000) | Current status of the PNP device     |
 | Class         | varchar(1000) | Class of the PNP device               |
 | Date          | datetime     | Script run time                      |
-

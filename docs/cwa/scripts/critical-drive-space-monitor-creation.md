@@ -19,8 +19,8 @@ This document outlines the process for creating Remote Monitors for Critical Dri
 ## Update Notice: 07-June-2024
 
 Renamed the Client and Computer Level EDF Section to `Critical Drive Space Monitor` from `Critical Drive Space Monitorin`. To implement the modification, execute or debug the script against a single client with the `Set_Environment` parameter set to `1`.  
-![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_1.png)  
-![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_2.png)
+![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_1.webp)  
+![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_2.webp)
 
 ## Update Notice: 06-June-2024
 
@@ -39,10 +39,10 @@ The script has been updated to create a stack drive space monitor for the unsupp
 - Any Windows Operating System older than Windows 10
 
 **Sample Remote Monitor for the unsupported OS:**  
-![Image1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image1.png)  
-![Image2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image2.png)  
-![Image3](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image3.png)  
-![Image4](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image4.png)  
+![Image1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image1.webp)  
+![Image2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image2.webp)  
+![Image3](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image3.webp)  
+![Image4](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image4.webp)  
 
 ## Implementation
 
@@ -59,15 +59,15 @@ The script has been updated to create a stack drive space monitor for the unsupp
    Retrieve this list of monitor sets and share it with the consultant, providing as much information as possible. It is advisable to proceed with further implementation steps only if the query results in an empty list.
 4. **Import New Script**: Read this document carefully and import the script described in this document.
 5. **Run/Debug the Script**: Execute or debug the script against a single client, with the `Set_Environment` parameter set to 1. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.  
-   ![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_1.png)  
-   ![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_2.png)
+   ![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_1.webp)  
+   ![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_2.webp)
 6. **Reload System Cache**: Refresh the system cache to ensure all changes are updated.  
-    ![Image5](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image5.png)  
+    ![Image5](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image5.webp)  
 7. **Configure System Properties and EDFs**: Input the required values in the system properties and EDFs to manage the remote monitors effectively.  
-    ![Image6](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image6.png)  
+    ![Image6](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image6.webp)  
     - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations
 8. **Schedule the Script**: Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_3.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_3.webp)
 
 ## User Parameters
 
@@ -80,20 +80,20 @@ The script has been updated to create a stack drive space monitor for the unsupp
 
 | Name                                   | Example | Required | Description                                                                                                                                                                                                                                                                                                                                                                           |
 |----------------------------------------|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CDS_Monitoring_Interval                | 900     | True     | Controls the generated Remote Monitor run time interval. Default is 900 seconds. <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_4.png) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_5.png) |
-| CDS_Monitoring_MinSize                 | 25600   | True     | The minimum drive size, in megabytes (MB), required to create a remote monitor is specified by this property. The default value is set at 10240 MB. This means that the script will not create a remote monitor for any drive smaller than 10240 MB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_6.png)                                                                                   |
-| CSD_Monitoring_Server_AlertTemplate    | 3       | True     | ID of the alert template to apply to the remote monitors created for the servers. Default is 3, i.e., `Default - Create Automate Ticket` <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_7.png) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_8.png) <br /><br />To find the ID of the Alert Templates: <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_9.png) |
-| CSD_Monitoring_Workstation_AlertTemplate| 3       | True     | ID of the alert template to apply to the remote monitors created for the workstations. Default is 3, i.e., `Default - Create Automate Ticket` <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_10.png)                                                                                                                                                                                                                     |
-| CSD_Monitoring_Server_TicketCategory    | 102     | True     | ID of the ticket category to apply to the remote monitors created for the servers. Default is 102, i.e., `Disk Drive` <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_11.png) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_12.png) <br /><br />To find the ID of the Ticket Categories: <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_13.png) **Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate.** |
-| CSD_Monitoring_Workstation_TicketCategory| 102    | True     | ID of the ticket category to apply to the remote monitors created for the workstations. Default is 102, i.e., `Disk Drive` <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_14.png)                                                                                                                                                                                                                     |
-| CDS_Monitoring_Server_C_DriveOnly      | 0       | False    | If this property is set to 1, for the servers; the script will create remote monitors for the C: Drive only. By default, this property is set to 0, which means that remote monitors will be created for all applicable drives. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_15.png)                                                                                     |
-| CDS_Monitoring_Workstation_C_DriveOnly  | 0       | False    | If this property is set to 1, for the workstations; the script will create remote monitors for the C: Drive only. By default, this property is set to 0, which means that remote monitors will be created for all applicable drives. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_16.png)                                                                                     |
-| CDS_Monitoring_Server_Low_ThresholdGB   | 5       | True     | This property sets the Lower Threshold value in gigabytes (GB) for the critical drive space remote monitors on the servers. These monitors will trigger an alert when the available space on the respective drive falls below this threshold. The default value is set at 5 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_17.png) |
-| CDS_Monitoring_Workstation_Low_ThresholdGB| 5      | True     | This property sets the Lower Threshold value in gigabytes (GB) for the critical drive space remote monitors on the workstations. These monitors will trigger an alert when the available space on the respective drive falls below this threshold. The default value is set at 5 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_18.png) |
-| CDS_Monitoring_Server_High_ThresholdGB  | 6       | True     | This property establishes the Upper Threshold value in gigabytes (GB) for the critical drive space remote monitors on servers. The ticket generated by these monitors will be closed when the free drive space exceeds this upper threshold. The default value is set at 6 GB. In other words, by default, the monitor set will generate a ticket if the free drive space falls below 5 GB and will only close that ticket when the free drive space exceeds 6 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_19.png) |
-| CDS_Monitoring_Workstation_High_ThresholdGB| 6     | True     | This property establishes the Upper Threshold value in gigabytes (GB) for the critical drive space remote monitors on Workstations. The ticket generated by these monitors will be closed when the free drive space exceeds this upper threshold. The default value is set at 6 GB. In other words, by default, the monitor set will generate a ticket if the drive space falls below 5 GB and will only close that ticket when the drive space exceeds 6 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_20.png) |
+| CDS_Monitoring_Interval                | 900     | True     | Controls the generated Remote Monitor run time interval. Default is 900 seconds. <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_4.webp) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_5.webp) |
+| CDS_Monitoring_MinSize                 | 25600   | True     | The minimum drive size, in megabytes (MB), required to create a remote monitor is specified by this property. The default value is set at 10240 MB. This means that the script will not create a remote monitor for any drive smaller than 10240 MB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_6.webp)                                                                                   |
+| CSD_Monitoring_Server_AlertTemplate    | 3       | True     | ID of the alert template to apply to the remote monitors created for the servers. Default is 3, i.e., `Default - Create Automate Ticket` <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_7.webp) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_8.webp) <br /><br />To find the ID of the Alert Templates: <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_9.webp) |
+| CSD_Monitoring_Workstation_AlertTemplate| 3       | True     | ID of the alert template to apply to the remote monitors created for the workstations. Default is 3, i.e., `Default - Create Automate Ticket` <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_10.webp)                                                                                                                                                                                                                     |
+| CSD_Monitoring_Server_TicketCategory    | 102     | True     | ID of the ticket category to apply to the remote monitors created for the servers. Default is 102, i.e., `Disk Drive` <br />![Image 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_11.webp) <br />![Image 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_12.webp) <br /><br />To find the ID of the Ticket Categories: <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_13.webp) **Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate.** |
+| CSD_Monitoring_Workstation_TicketCategory| 102    | True     | ID of the ticket category to apply to the remote monitors created for the workstations. Default is 102, i.e., `Disk Drive` <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_14.webp)                                                                                                                                                                                                                     |
+| CDS_Monitoring_Server_C_DriveOnly      | 0       | False    | If this property is set to 1, for the servers; the script will create remote monitors for the C: Drive only. By default, this property is set to 0, which means that remote monitors will be created for all applicable drives. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_15.webp)                                                                                     |
+| CDS_Monitoring_Workstation_C_DriveOnly  | 0       | False    | If this property is set to 1, for the workstations; the script will create remote monitors for the C: Drive only. By default, this property is set to 0, which means that remote monitors will be created for all applicable drives. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_16.webp)                                                                                     |
+| CDS_Monitoring_Server_Low_ThresholdGB   | 5       | True     | This property sets the Lower Threshold value in gigabytes (GB) for the critical drive space remote monitors on the servers. These monitors will trigger an alert when the available space on the respective drive falls below this threshold. The default value is set at 5 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_17.webp) |
+| CDS_Monitoring_Workstation_Low_ThresholdGB| 5      | True     | This property sets the Lower Threshold value in gigabytes (GB) for the critical drive space remote monitors on the workstations. These monitors will trigger an alert when the available space on the respective drive falls below this threshold. The default value is set at 5 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_18.webp) |
+| CDS_Monitoring_Server_High_ThresholdGB  | 6       | True     | This property establishes the Upper Threshold value in gigabytes (GB) for the critical drive space remote monitors on servers. The ticket generated by these monitors will be closed when the free drive space exceeds this upper threshold. The default value is set at 6 GB. In other words, by default, the monitor set will generate a ticket if the free drive space falls below 5 GB and will only close that ticket when the free drive space exceeds 6 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_19.webp) |
+| CDS_Monitoring_Workstation_High_ThresholdGB| 6     | True     | This property establishes the Upper Threshold value in gigabytes (GB) for the critical drive space remote monitors on Workstations. The ticket generated by these monitors will be closed when the free drive space exceeds this upper threshold. The default value is set at 6 GB. In other words, by default, the monitor set will generate a ticket if the drive space falls below 5 GB and will only close that ticket when the drive space exceeds 6 GB. <br />![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_20.webp) |
 
-![Image7](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_57.png)
+![Image7](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_57.webp)
 
 ## Client-Level EDFs
 
@@ -114,7 +114,7 @@ The script has been updated to create a stack drive space monitor for the unsupp
 | Servers Upper Threshold GB        | 12      | Text       | This Extra Data Field (EDF) allows for a client-level override of the Higher/Upper threshold (in GB) at which the servers remote monitor will close the generated ticket. If not specified in this EDF, the script will default to using the value stored in the `CDS_Monitoring_Server_High_ThresholdGB` system property. This provides flexibility in setting the alert threshold based on individual client requirements. |
 | Workstations Upper Threshold GB    | 3       | Text       | This Extra Data Field (EDF) allows for a client-level override of the Higher/Upper threshold (in GB) at which the workstations remote monitor will close the generated ticket. If not specified in this EDF, the script will default to using the value stored in the `CDS_Monitoring_Workstation_High_ThresholdGB` system property. This provides flexibility in setting the alert threshold based on individual client requirements. |
 
-![Image8](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image8.png)
+![Image8](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image8.webp)
 
 **These Extra Data Fields are located in the `Critical Drive Space Monitoring` section.**
 
@@ -128,7 +128,7 @@ The script has been updated to create a stack drive space monitor for the unsupp
 | Lower Threshold GB            | 3       | Text       | This Extra Data Field (EDF) allows for a computer-level override of the lower threshold (in GB) at which the servers remote monitor will generate a ticket. |
 | Upper Threshold GB            | 5       | Text       | This Extra Data Field (EDF) allows for a computer-level override of the Upper/Higher threshold (in GB) at which the servers remote monitor will close the generated ticket. |
 
-![Image9](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image9.png)
+![Image9](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image9.webp)
 
 **These Extra Data Fields are located in the `Critical Drive Space Monitoring` section.**
 
@@ -138,7 +138,7 @@ The script has been updated to create a stack drive space monitor for the unsupp
 |-------------------------------|---------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CDS Monitoring Exclude | 1/0 | Check Box | Selecting this Extra Data Field (EDF) will exclude the location from critical drive space monitoring. As a result, the script will not create any remote monitors for any machine in this location. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for this location's machines. |
 
-![Image10](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image10.png)
+![Image10](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image10.webp)
 
 ## Remote Monitor Example
 
@@ -151,13 +151,13 @@ The script has been updated to create a stack drive space monitor for the unsupp
 **Alert Message on Success:** `<Drive Letter>: on <Client Name>\<Location Name>\<Computer Name> has returned to over <Higher Threshold>GB of free space.`  
 
 **Sample Ticket:**  
-![Sample Ticket](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_38.png)  
+![Sample Ticket](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_38.webp)  
 
 **Sample Remote Monitor:**  
-![Sample Remote Monitor 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_39.png)  
-![Sample Remote Monitor 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_40.png)  
-![Sample Remote Monitor 3](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_41.png)  
-![Sample Remote Monitor 4](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_42.png)  
+![Sample Remote Monitor 1](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_39.webp)  
+![Sample Remote Monitor 2](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_40.webp)  
+![Sample Remote Monitor 3](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_41.webp)  
+![Sample Remote Monitor 4](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_42.webp)  
 
 ## Output
 
@@ -167,7 +167,7 @@ The script has been updated to create a stack drive space monitor for the unsupp
 
 1. **Launch RAWSQL Monitor**  
     Launch a fresh RAWSQL monitor, wherein a RAWSQL monitor set is an internal monitor featuring the string 'RAWSQL' in both the 'Table to Check' and 'Field to Check' fields.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_43.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_43.webp)
 
 2. **Build and View Query**  
     Run the provided SQL query using the RAWSQL monitor. Paste the query into the `Additional Condition` field and click the `Build and View Query` button to execute it.  
@@ -176,11 +176,11 @@ The script has been updated to create a stack drive space monitor for the unsupp
    SELECT * From agents where checkaction = 6 and `Name` REGEXP '^Disk - [A-z]: Drive Space Critical'
    ```  
 
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_44.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_44.webp)
 
 3. **Build and View Query**  
     Verify the query results to confirm that it exclusively returns monitor sets labeled as 'Drive Space Critical' remote monitors.  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_45.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_45.webp)
 
 4. If unexpected results are being returned, revise the query to exclude those specific outcomes.
 5. **Build and View Query**  
@@ -190,12 +190,12 @@ The script has been updated to create a stack drive space monitor for the unsupp
    DELETE From agents where checkaction = 6 and `Name` REGEXP '^Disk - [A-z]: Drive Space Critical'
    ```  
 
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_46.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_46.webp)
 
 6. **Validation for Deleted Monitors Success**
     Please be aware that executing this query will not yield any results. You can confirm its effectiveness by rerunning the SELECT query. If the SELECT query returns nothing, it indicates that the existing remote monitors have been successfully removed.  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_47.png)  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_48.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_47.webp)  
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_48.webp)
 
 ## Modify Scripts Schedule
 
@@ -203,83 +203,83 @@ The script has been updated to create a stack drive space monitor for the unsupp
 
 2. **View Script**  
     Navigate to the scripts section and search for the script labeled `Agent Maintenance - Contract*`.  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_49.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_49.webp)
 
 3. Access the script by double-clicking on it.  
-   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_50.png)
+   ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_50.webp)
 
 4. Navigate to the 'Find Script' section within the script and respond affirmatively by clicking 'Yes' when prompted.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_51.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_51.webp)
 
 5. **Find Group List**  
     Make a note of the 'Groups' listed in the 'Find Script' section. These groups indicate where the script is currently scheduled. To facilitate future updates to these schedules, it's advisable to take note of these groups, and you may find it helpful to capture a screenshot for reference.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_52.png)  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_53.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_52.webp)  
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_53.webp)
 
 6. **Note Script ID**
     Note down the script ID as well; in my environment, it is identified as `5131`. This information will be useful for subsequent modifications.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_54.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_54.webp)
 
 7. Close the script.
 
 8. **Duplicate the script**
     Create a duplicate of the script by right-clicking on the script's name and selecting the 'Duplicate' option.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_55.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_55.webp)
 
 9. **Rename the Script**  
     Provide a meaningful name for the duplicated script, such as `Agent Maintenance - Contract [Modified]*`, and then click the 'Save' button to confirm.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_56.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_56.webp)
 
 10. Close the duplicated script, modifications to this script will be addressed in subsequent steps.
 
 11. Look for the script labeled `Agent Monitor Creation*`.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_57.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_57.webp)
 
 12. Duplicate the `Agent Monitor Creation*` script.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_58.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_58.webp)
 
 13. **Rename the Duplicate Script**  
     Provide a new name for the duplicated script; for instance, you can name it `Agent Monitor Creation - [Modified]*`.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_59.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_59.webp)
 
 14. **Modify the Script**  
     Eliminate Step `7` and Step `8` from the 'Then' section of the duplicated script. You can do this by right-clicking on the respective steps and selecting the 'Remove' option. Keep in mind that this script may execute either `Agent Monitor Creation - Disk` or `Agent Monitor Creation - Disk* - WRAPPER`.  
     Before removing the steps:  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_60.png)  
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_60.webp)  
     OR  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_61.png)  
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_61.webp)  
     After removing the steps:  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_62.png)  
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_62.webp)  
     The objective is to remove the script responsible for creating the 'Drive Space Critical' monitor set from the duplicated script.
 
 15. **Save the Changes**  
     Click the 'Save' button to save the changes you made to the duplicated script.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_63.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_63.webp)
 
 16. Close the modified script.
 
 17. **Reload System Cache**  
     Refresh the system cache to ensure all changes are updated.
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image11.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image11.webp)
 
 18. Open the script saved in Step 15, named `Agent Maintenance - Contract [Modified]*`.
 
 19. **Adjust the Script Run**  
     Around Step 14 in the 'Then' section of this script, it's likely executing the `Agent Monitor Creation*` script.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_64.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_64.webp)
     Open the step that runs the `Agent Monitor Creation*` script by double-clicking on it. In my case, it is Step 14.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_65.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_65.webp)
     From the drop-down menu, choose the script saved in Step 21, which is `Agent Monitor Creation - [Modified]*`.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_66.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_66.webp)
     Click the 'Save Step' button to save the modifications made to the step.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_67.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_67.webp)
 
 20. Click the 'Save' button to save the changes made to the modified script (`Agent Maintenance - Contract [Modified]*`).  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_68.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_68.webp)
 
 21. **Note Script ID**  
     Take note of the ID of this script; in my environment, it is identified as `9319`. Ensure to keep this ID. This information will be useful for subsequent modifications.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_69.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_69.webp)
 
 22. **RAWSQL Monitor**
     Return to the RAWSQL monitor.
@@ -290,10 +290,10 @@ The script has been updated to create a stack drive space monitor for the unsupp
     ```  
 
     **Note:** Replace `5131` with the actual ID of your original script, as it may differ.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_70.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_70.webp)
 
 23. Make a note of the results, and it's recommended to take a screenshot for reference.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_71.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_71.webp)
 
 24. Execute the following SQL query to replace the schedule of the original script (`Agent Maintenance - Contract*`) with the duplicate script (`Agent Maintenance - Contract [Modified]*`):  
 
@@ -304,34 +304,34 @@ The script has been updated to create a stack drive space monitor for the unsupp
     ```  
 
     **Note:** Replace `5131` with the actual ID of your original script and `9319` with the actual ID of your duplicate script, as they may differ.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_72.png)  
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_72.webp)  
     If the query executes successfully without returning any errors or results, it indicates that the update was applied as expected. The schedules for the original script (`Agent Maintenance - Contract*`) should now be associated with the duplicate script (`Agent Maintenance - Contract [Modified]*`).  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_73.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_73.webp)
 
 25. Open the `Server Status` tool by navigating to `Help` > `Server Status`.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_74.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_74.webp)
 
 26. Click the 'Do Group Refresh' button to refresh and apply the changes made.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_75.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_75.webp)
 
 27. Click 'OK' to the popup message and wait for a minute to allow the changes to take effect.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_76.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_76.webp)
 
 28. **Reload System Cache**  
     Refresh the system cache to ensure all changes are updated.
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image11.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image11.webp)
 
 29. Navigate to the `Groups` section from the `Browse` tab.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_77.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_77.webp)
 
 30. Search for the groups in the `Groups` section using the information from the screenshot stored in previous steps.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_78.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_78.webp)
 
 31. Open one of the groups.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_79.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_79.webp)
 
 32. Navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing here.  
-    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_80.png)
+    ![Image](../../../static/img/docs/80abd1fa-a278-4e08-a6aa-0dc8840ad103/image_80.webp)
 
 33. For each group identified in the screenshot from Step 33, navigate to the 'Scheduled Scripts' section from the 'Computers' tab and verify that the duplicated script (`Agent Maintenance - Contract [Modified]*`) is appearing. Repeat this process for all relevant groups.
 

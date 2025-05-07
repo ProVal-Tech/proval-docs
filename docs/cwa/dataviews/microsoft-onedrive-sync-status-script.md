@@ -35,4 +35,3 @@ The data view displays the OneDrive Sync Status gathered by the [EPM - Data Coll
 | Sync Status            | OneDrive Sync Status                                 |
 | One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
 | Script_Run_Time        | Data Collection Time                                  |
-

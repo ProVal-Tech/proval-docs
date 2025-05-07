@@ -16,7 +16,7 @@ This script will help audit the VSSAdmin storage details. It will report for all
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/0de90f98-d7ae-4a79-a851-30829a596846/image_1.png)
+![Sample Run](../../../static/img/docs/0de90f98-d7ae-4a79-a851-30829a596846/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ The location and method by which this script returns data:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
-

@@ -21,7 +21,7 @@ This script will adjust the local registry on the target device and disable the 
 **Target:** Windows Device  
 **Note:** This script is part of the ProVal @Fast Boot Solution. This solution can be run manually and not as an autofix.
 
-![Sample Run](../../../static/img/docs/663e3658-c389-4ab6-b7a2-8486f9e237c1/image_1.png)
+![Sample Run](../../../static/img/docs/663e3658-c389-4ab6-b7a2-8486f9e237c1/image_1.webp)
 
 ## Dependencies
 
@@ -46,4 +46,3 @@ If the value did not change in the registry, the script will exit with a failure
 ## Output
 
 Script log messages only.
-

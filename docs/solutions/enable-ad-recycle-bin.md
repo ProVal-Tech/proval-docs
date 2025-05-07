@@ -32,4 +32,3 @@ The purpose of this solution is to enable the AD Recycle Bin on AD Infrastructur
 - Create the deployment schedule as described in this document: [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7).
 - Create [CW RMM - Monitor - Enable AD Recycle Bin - Failure](/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5) if the partner wants tickets when the [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7) fails to enable the AD Recycle Bin.
 
-

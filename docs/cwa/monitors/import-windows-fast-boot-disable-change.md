@@ -131,12 +131,12 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'W
 ### Step 4
 Now execute your query from a RAWSQL monitor set. Once the query is executed, relaunch the control center.
 
-![Control Center](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_1.png)
+![Control Center](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_1.webp)
 
 Then re-open the group where the monitor is created. The monitor will come up with the search 'Windows 10/11 Machines' added to the LIMIT.
 
 ### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
 
-![Remote Monitor Tab 1](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_2.png)  
-![Remote Monitor Tab 2](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_3.png)
+![Remote Monitor Tab 1](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_2.webp)  
+![Remote Monitor Tab 2](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_3.webp)

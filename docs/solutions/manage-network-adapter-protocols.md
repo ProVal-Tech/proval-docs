@@ -29,15 +29,14 @@ This solution manages network protocols on Windows machines, including enabling,
    -  `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
 
 2. Reload the system cache:  
- ![Image](../../static/img/docs/0af1bff2-a32a-442b-9322-a8a260d150ff/image_1.png)
+ ![Image](../../static/img/docs/0af1bff2-a32a-442b-9322-a8a260d150ff/image_1.webp)
 
 1. Run the Manage-NetworkAdapterProtocols against any machine with the Set_Environment parameter set to '1':  
-![Image](../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image1.png)
+![Image](../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image1.webp)
 
 1. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - ProVal - Production - Manage Network Adapters
        - `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
        - Right-click and Run Now to start the monitor.
-
 

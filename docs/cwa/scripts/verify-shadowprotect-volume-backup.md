@@ -18,7 +18,7 @@ This script queries the LT database for each drive letter that is an NTFS volume
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c692dfe2-e9ec-4f3d-a7ed-8f4f5da30493/image_1.png)
+![Sample Run](../../../static/img/docs/c692dfe2-e9ec-4f3d-a7ed-8f4f5da30493/image_1.webp)
 
 ## Dependencies
 
@@ -39,4 +39,3 @@ This script queries the LT database for each drive letter that is an NTFS volume
 ## Output
 
 - Script log
-

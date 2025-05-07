@@ -18,7 +18,7 @@ It is a client script that can be scheduled to run once per day.
 ## Sample Run
 
 This script is to be scheduled as a client script.  
-![Sample Run Image](../../../static/img/docs/62c75166-da9a-4b8a-ae44-1be7a7076401/image_1.png)
+![Sample Run Image](../../../static/img/docs/62c75166-da9a-4b8a-ae44-1be7a7076401/image_1.webp)
 
 ## Variables
 
@@ -45,4 +45,3 @@ HAVING NumberofValues > 1;
 **Step 2:** Exit if the total number of results from the above step is zero.  
 
 **Step 3:** Run a loop to delete all the duplicate entries for each script state per computer per script.
-

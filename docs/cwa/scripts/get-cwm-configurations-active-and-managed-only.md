@@ -16,7 +16,7 @@ The script fetches basic information from ConnectWise Manage configurations and 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/0b46811b-be88-407b-aa61-6c63a73ff848/image_1.png)
+![Sample Run](../../../static/img/docs/0b46811b-be88-407b-aa61-6c63a73ff848/image_1.webp)
 
 ## Sub-Script
 
@@ -38,7 +38,7 @@ The script fetches basic information from ConnectWise Manage configurations and 
 | Name          | Example                                         | Required | Description                                                                                      |
 |---------------|-------------------------------------------------|----------|--------------------------------------------------------------------------------------------------|
 | serverurl     | [stage.cwmanage.com](http://stage.cwmanage.com) | True     | ConnectWise Manage Instance URL without http or https.                                          |
-| CompanyID     | CWManage                                       | True     | CompanyID used to access the CW Manage instance. ![CompanyID](../../../static/img/docs/0b46811b-be88-407b-aa61-6c63a73ff848/image_2.png) |
+| CompanyID     | CWManage                                       | True     | CompanyID used to access the CW Manage instance. ![CompanyID](../../../static/img/docs/0b46811b-be88-407b-aa61-6c63a73ff848/image_2.webp) |
 | PublicKey     | abC1dEFg23HIjk45L                             | True     | Public API Key                                                                                   |
 | PrivateKey    | L54kjIH32gFEd1ae87                            | True     | Private API Key                                                                                  |
 | CWMClientid   | 97e76471-52b5-43c9-a5ec-0153ec905881         | True     | ClientID provided by ConnectWise for API development                                             |
@@ -52,4 +52,3 @@ How to get clientID: [Request to get a Client ID](https://connectwise20.my.site.
 - Script Log
 - Custom Table
 - Dataview
-

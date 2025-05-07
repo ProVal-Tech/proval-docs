@@ -89,4 +89,3 @@ Dell Command Update Logs: C:/ProgramData/Dell/Logs
 
 - scan.log
 - applyupdates.log
-

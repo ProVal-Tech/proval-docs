@@ -28,4 +28,3 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 - A custom field needs to be created.
 - The agent procedure needs to be run once these are created.
 
-

@@ -32,4 +32,3 @@ This document returns information relating to the installed extensions for insta
 2. Import the [Installed Browsers Extensions [Script]](/docs/9c095cab-514b-479d-a302-bdb596caefe5) dataview.
 3. Debug the script against any online Windows machine to create the [plugin_proval_browsers_extensions](/docs/0a6370b4-7944-4483-86d5-ecbfd58f5376) table.
 4. Check the [Installed Browsers Extensions [Script]](/docs/9c095cab-514b-479d-a302-bdb596caefe5) dataview for the data. If it's empty, you can execute the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](/docs/7819fc75-aeae-457b-a451-59221396e900) script to grant the table's permissions to all of the Automate users.
-

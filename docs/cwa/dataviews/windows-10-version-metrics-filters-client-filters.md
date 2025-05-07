@@ -18,7 +18,7 @@ An additional summarized row per client is included in the dataview.
 
 ### Sample Screenshot:
 
-![Sample Screenshot](../../../static/img/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda/image_1.png)
+![Sample Screenshot](../../../static/img/docs/13b8b937-0d9f-44b7-a7e5-5abf38ab9cda/image_1.webp)
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 - [CWM - Automate - View - plugin_proval_v_windows_10_version_metrics](/docs/ea558c06-8fef-4c9f-87c7-42a3aa289dad)
@@ -45,6 +45,5 @@ An additional summarized row per client is included in the dataview.
 | % Supported Machines              | varchar(27)     | Either 100 or 0 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the supported Windows 10 machines out of all the available Windows 10 machines. |
 | % Unsupported Machines            | varchar(31)     | Either 0 or 100 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the unsupported Windows 10 machines out of all the available Windows 10 machines. |
 | Build                             | varchar(60)     | Build Number for the concerned ReleaseID. e.g., 10.0.19044, 10.0.19043. It will show 'Windows 10' for the Summary Row.                                                                                     |
-
 
 

@@ -18,7 +18,7 @@ This script attempts to unpack and install the RingCentral Phone application on 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd/image_1.png)
+![Sample Run](../../../static/img/docs/11eb5fe8-c4ce-43cf-81ff-0021b5cb3bbd/image_1.webp)
 
 **Note:** This script will only run on OSX machines. If this script is not working, please notify ProVal at [support@provaltech.com](mailto:support@provaltech.com).
 
@@ -37,4 +37,3 @@ The script will put the machine into Fast Talk mode, as this makes the script ru
 ## Output
 
 Script log messages
-

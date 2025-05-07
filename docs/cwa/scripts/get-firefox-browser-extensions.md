@@ -16,7 +16,7 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/472a8d13-fd00-4a97-90dd-833a171eac40/image_1.png)
+![Sample Run](../../../static/img/docs/472a8d13-fd00-4a97-90dd-833a171eac40/image_1.webp)
 
 ## Dependencies
 
@@ -37,4 +37,3 @@ An Automate implementation of the agnostic script [EPM - Data Collection - Agnos
 - Script logs
 - Custom Table
 - Dataview
-

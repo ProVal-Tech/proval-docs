@@ -15,4 +15,3 @@ unlisted: false
 | Field Name         | Type of Field (Machine or Organization) | Description                                                                                     | Syntax                     |
 |--------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|----------------------------|
 | xPVAL Drive List   | Machine                                  | Contains all physical non-removable drives with a maximum capacity of over 10GB on the endpoint. | DriveLetter: C: D: E:      |
-

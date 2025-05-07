@@ -28,11 +28,11 @@ This group contains the server endpoints where a reboot is pending. It detects o
 
 ### 1. Create Dynamic Groups:
 
-![Create Dynamic Groups](../../../static/img/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e/image_1.png)
+![Create Dynamic Groups](../../../static/img/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e/image_1.webp)
 
 ### 2. Reboot Pending Servers
 
-![Reboot Pending Servers](../../../static/img/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e/image_2.png)
+![Reboot Pending Servers](../../../static/img/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e/image_2.webp)
 
 **Criteria:**
 
@@ -40,5 +40,4 @@ This group contains the server endpoints where a reboot is pending. It detects o
 - The agent available equals True.
 - The OS contains any of Windows 2016, Windows 2019, or Windows 2022.
 - The Exclude reboot custom field equals False.
-
 

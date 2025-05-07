@@ -16,9 +16,9 @@ The script attempts to remove a computer from the domain it is currently connect
 
 ## Sample Run
 
-![Sample Run](<../../../static/img/docs/4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1/image_1.png>)
+![Sample Run](<../../../static/img/docs/4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1/image_1.webp>)
 
-![Password Location](<../../../static/img/docs/4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1/image_2.png>)
+![Password Location](<../../../static/img/docs/4bd0cdb9-f90e-4ffb-b880-52e4ff1c28c1/image_2.webp>)
 
 ## Dependencies
 

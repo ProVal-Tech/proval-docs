@@ -21,7 +21,7 @@ This monitor checks for online agents where the script [EPM - Data Collection - 
 ## Ticketing
 
 - To set up ticketing for keycode mismatch detection, it is mandatory to set the ticket category in the monitor.  
-  ![Ticket Category Setup](../../../static/img/docs/1c0eae92-6783-4a1c-8c75-6a02571ef9de/image_1.png)
+  ![Ticket Category Setup](../../../static/img/docs/1c0eae92-6783-4a1c-8c75-6a02571ef9de/image_1.webp)
 
 ## Target
 

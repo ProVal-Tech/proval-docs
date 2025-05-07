@@ -23,5 +23,4 @@ This report is dependent on the following items:
 
 ## Report Example
 
-![Report Example](../../../static/img/docs/f3651662-8b77-4254-a8b3-8a945e3aab51/image_1.png)
-
+![Report Example](../../../static/img/docs/f3651662-8b77-4254-a8b3-8a945e3aab51/image_1.webp)

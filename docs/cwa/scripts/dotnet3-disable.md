@@ -16,7 +16,7 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/ff5f6191-df47-49a9-b3ff-de96ee484e39/image_1.png)
+![Sample Run](../../../static/img/docs/ff5f6191-df47-49a9-b3ff-de96ee484e39/image_1.webp)
 
 ## Dependencies
 
@@ -25,4 +25,3 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 ## Process
 
 Please review the agnostic content documentation for process information.
-

@@ -42,9 +42,8 @@ List the report parts used. If custom report parts were designed during report c
 Defaults
 
 ### Sample Report
-![Sample Report](../../../static/img/docs/04af5f51-5656-4086-b2d2-94cb62388831/image_1.png)
+![Sample Report](../../../static/img/docs/04af5f51-5656-4086-b2d2-94cb62388831/image_1.webp)
 
 ### Export Attachment
 Attach the export XML of the report to this document.
-
 

@@ -17,7 +17,7 @@ This script disables Windows Hello for Business.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/64fb8fa3-20f6-4167-8ec1-be322b3d6c07/image_1.png)  
+![Sample Run](../../../static/img/docs/64fb8fa3-20f6-4167-8ec1-be322b3d6c07/image_1.webp)  
 
 ## Process
 
@@ -26,4 +26,3 @@ This script disables Windows Hello for Business by adding the registry key `HKLM
 ## Output
 
 - Script log  
-

@@ -28,10 +28,10 @@ This document outlines the implementation of the agnostic script [Start-GPOAudit
 - [plugin_proval_ad_gpolinks](/docs/85f52c7c-84bc-488f-a4de-d3122fec1f42)
 - [plugin_proval_ad_gposf](/docs/8fa8c78e-04a4-4495-8cfe-44aef7b48035)
 
-![Image](../../../static/img/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a/image_1.png)
+![Image](../../../static/img/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a/image_1.webp)
 
 **Regular Execution:**  
-![Image](../../../static/img/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a/image_2.png)
+![Image](../../../static/img/docs/2e5f5f2b-7c81-4aec-a76a-623a465f959a/image_2.webp)
 
 ## Dependencies
 

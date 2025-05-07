@@ -24,7 +24,7 @@ Check the [Script's](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) document for mo
 
 Domain Controllers belonging to clients that have the `1a. Enable Domain Admin Process` EDF marked.
 
-![Image](../../../static/img/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896/image_1.png)
+![Image](../../../static/img/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896/image_1.webp)
 
 ## Alert Template
 

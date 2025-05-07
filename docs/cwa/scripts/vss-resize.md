@@ -16,7 +16,7 @@ This script resets the vssadmin size and updates the table with the latest size 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d/image_1.png)
+![Sample Run](../../../static/img/docs/0600e89c-06a5-42da-9ed8-41e43d9cfd7d/image_1.webp)
 
 ## Dependencies
 
@@ -47,4 +47,3 @@ This script resets the vssadmin size and updates the table with the latest size 
 - Script log
 - Table
 - Dataview
-

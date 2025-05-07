@@ -21,7 +21,7 @@ The purpose of the script is to finish the new or open tickets created by the fe
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/84cd2c82-8c0b-4f7e-9240-6b640add79e0/image_1.png)
+![Sample Run](../../../static/img/docs/84cd2c82-8c0b-4f7e-9240-6b640add79e0/image_1.webp)
 
 ## Dependencies
 
@@ -34,4 +34,3 @@ The purpose of the script is to finish the new or open tickets created by the fe
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticket ID to finish/close                       |
-

@@ -29,4 +29,3 @@ This Agent procedure is used to delete the user named pccomp.
 ## Output
 
 Agent procedure log.
-

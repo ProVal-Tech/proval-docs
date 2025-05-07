@@ -24,10 +24,9 @@ The script can also be used to update the monitor set installed on the machines 
 
 For optimal results and to keep the CPU Temperature Monitoring solution up-to-date, it is recommended to schedule the script to run once per day.
 
-![Sample Run](../../../static/img/docs/56c1260c-a689-45e9-a226-49bf31444750/image_1.png)
+![Sample Run](../../../static/img/docs/56c1260c-a689-45e9-a226-49bf31444750/image_1.webp)
 
 ## Dependencies
 
 - [EPM - Sensors - Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)
 - [EPM - Sensors - Remote Monitor - CPU Temperature Monitoring Process](/docs/84d6587b-2bca-4f0e-9176-c0df064f532c)
-

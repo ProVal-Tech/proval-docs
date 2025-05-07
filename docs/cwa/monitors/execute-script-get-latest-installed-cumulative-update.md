@@ -30,4 +30,3 @@ The SQL query limits the monitor set to the patch-managed supported Windows mach
 
 - The alert template should run the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
 
-

@@ -17,7 +17,7 @@ The script fetches the latest version of FileZilla from its official website and
 ## Sample Run
 
 This is a client script and is recommended to be scheduled to run daily during working hours.  
-![Image1](../../../static/img/docs/71141737-d88f-43d3-9e75-e3f5468f888f/image1.png)
+![Image1](../../../static/img/docs/71141737-d88f-43d3-9e75-e3f5468f888f/image1.webp)
 
 ## Properties
 

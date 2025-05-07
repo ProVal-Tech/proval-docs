@@ -18,7 +18,7 @@ This script collects information about shared folder details such as Share Name,
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/dc9e4596-2cce-49b2-9f64-d6dfd46ac1ec/image_1.png)
+![Sample Run](../../../static/img/docs/dc9e4596-2cce-49b2-9f64-d6dfd46ac1ec/image_1.webp)
 
 ## Dependencies
 
@@ -50,5 +50,4 @@ The script will run a PowerShell script to gather data from the endpoint. It wil
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
-
 

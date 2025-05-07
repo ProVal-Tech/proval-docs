@@ -59,4 +59,3 @@ The data is grouped by client.
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
 
-

@@ -31,30 +31,30 @@ A group tailored for Windows Servers that have the `Remote Desktop Services` rol
 ### Step 1
 
 Navigate to `Administration` > `Devices` > `Groups`  
-![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.png)
+![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.webp)
 
 ### Step 2
 
 Locate the `Create New Group` button on the right-hand side of the screen, click on it.  
-![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.png)
+![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.webp)
 
 ### Step 3
 
 **Condition:** `More filters` `=>` `Custom Fields`
 
 Search and select the `Custom Fields` from the `More filters` button.  
-![MoreFiltersCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/morefilterscustomfields.png)
+![MoreFiltersCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/morefilterscustomfields.webp)
 
 `Filter by: Custom Fields` windows will appear on the screen.  
-![FilterByCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/filterbycustomfields.png)
+![FilterByCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/filterbycustomfields.webp)
 
 ### Step 4
 
 Click the `Add` button located in the front of `Has all conditions`.  
-![HasAllConditionsAdd](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/hasallconditionsadd.png)
+![HasAllConditionsAdd](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/hasallconditionsadd.webp)
 
 The `Add Custom Field` screen will appear.  
-![AddCustomField](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/addcustomfield.png)
+![AddCustomField](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/addcustomfield.webp)
 
 ### Step 5
 
@@ -64,20 +64,20 @@ Fill in the following conditions and click the `Add` button to proceed.
 **Condition:** `Contains`  
 **Text:** `Remote Desktop Services`  
 
-![Image1](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image1.png)
+![Image1](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image1.webp)
 
 ### Step 6
 
 Click the `Apply` button to proceed.  
-![Image2](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image2.png)
+![Image2](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image2.webp)
 
 ### Step 7
 
 Click the `Save group` button to save changes.  
-![SaveGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savegroup.png)
+![SaveGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savegroup.webp)
 
 `Save device group` window will appear on the screen.  
-![SaveDeviceGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savedevicegroup.png)
+![SaveDeviceGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savedevicegroup.webp)
 
 ### Step 8
 
@@ -87,8 +87,8 @@ Fill in the following details and click the `Save` button to create the group.
 **Description:** `A group tailored for Windows Servers that have the Remote Desktop Services role installed`  
 **Permission Type:** `Self (Private) - default`
 
-![Image3](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image3.png)
+![Image3](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image3.webp)
 
 ## Completed Group
 
-![Image4](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image4.png)
+![Image4](../../../static/img/docs/95fa08c8-b695-49ea-b966-ec19d35f1530/image4.webp)

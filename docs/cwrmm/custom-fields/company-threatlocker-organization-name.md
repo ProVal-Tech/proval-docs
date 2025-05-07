@@ -26,6 +26,5 @@ This document specifies the organization name to be used for Threatlocker deploy
 
 ## Screenshot
 
-![Screenshot](../../../static/img/docs/bf8fac11-d525-4cea-a6e7-f402af581f77/image_1.png)
-
+![Screenshot](../../../static/img/docs/bf8fac11-d525-4cea-a6e7-f402af581f77/image_1.webp)
 

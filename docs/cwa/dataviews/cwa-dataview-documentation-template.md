@@ -28,4 +28,3 @@ This section should list the ITGlue documents found in the Related Items sidebar
 | Column                                        | Description                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | The display name of the column in the dataview. | Information about what this column is displaying. |
-

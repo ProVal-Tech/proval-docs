@@ -21,4 +21,3 @@ This document targets clients with EDFs enabled for the installation of DUO whil
 ## Target
 
 Global - Uses EDFs to scope agents/clients.
-

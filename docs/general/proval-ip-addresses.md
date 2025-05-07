@@ -10,7 +10,7 @@ draft: false
 unlisted: false
 ---
 
-![diagram](/img/docs/794c9b95-df88-4b63-8605-b7c9b138532b/data.png)
+![diagram](/img/docs/794c9b95-df88-4b63-8605-b7c9b138532b/data.webp)
 
 ## allow6.provaltech.com
 - **IPv4**: 68.183.18.58

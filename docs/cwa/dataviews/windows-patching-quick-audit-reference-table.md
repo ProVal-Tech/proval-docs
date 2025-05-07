@@ -15,7 +15,7 @@ unlisted: false
 This dataview displays basic patching-related information for all the Windows machines present in the environment. This can be helpful while troubleshooting patching-related issues.  
 
 Sample Screenshot:  
-![Sample Screenshot](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_1.png)  
+![Sample Screenshot](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_1.webp)  
 
 ## Dependencies
 
@@ -51,10 +51,9 @@ Sample Screenshot:
 **A:** This is likely because the dataview is complex and processing a large amount of data. There is no better way to overcome this; however, the [CWM - Automate - Script - Dataview - Email as CSV [Param]](/docs/4b15de07-233d-462b-91ce-3ee060457e65) script can be used to email the dataview and apply the filters in the CSV rather than in the dataview.  
 
 **Step 1:** Find the ID of the `Windows Patching - Quick Audit (Reference Table)` dataview.  
-![Step 1](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_2.png)  
+![Step 1](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_2.webp)  
 
 **Step 2:** Run the [CWM - Automate - Script - Dataview - Email as CSV [Param]](/docs/4b15de07-233d-462b-91ce-3ee060457e65) script against any online Windows machine with the correct parameters.  
-![Step 2](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_3.png)  
+![Step 2](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_3.webp)  
 
 Once you receive the CSV in your email, you can easily apply the required filters.
-

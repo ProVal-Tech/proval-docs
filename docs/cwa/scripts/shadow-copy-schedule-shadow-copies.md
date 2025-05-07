@@ -18,7 +18,7 @@ The script uses PowerShell to enable shadow copies (similar to the older "previo
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f16b700f-16c7-43f9-8470-84861d7f5c52/image_1.png)
+![Sample Run](../../../static/img/docs/f16b700f-16c7-43f9-8470-84861d7f5c52/image_1.webp)
 
 ## Dependencies
 
@@ -43,4 +43,3 @@ Once the global parameters are configured to the desired values, the script will
 ## Output
 
 Script log
-

@@ -23,4 +23,3 @@ The custom field contains the user status on the machines.
 | Field Name        | Type of Field (Machine or Organization) | Description                                                                         |
 | ----------------- | --------------------------------------- | ----------------------------------------------------------------------------------- |
 | cPVAL User Status | Machine                                 | It shows the status of the user on the machines: "PCComp is Present / Not Present." |
-

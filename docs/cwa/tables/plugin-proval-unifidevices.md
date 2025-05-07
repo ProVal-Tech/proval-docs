@@ -38,4 +38,3 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Disabled      | String | True if disabled, false if not.                                                              |
 | Model         | String | The model of the device.                                                                     |
 | Type          | String | The type of Unifi device.                                                                    |
-

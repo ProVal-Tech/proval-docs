@@ -20,4 +20,3 @@ This document describes how to detect if the Recycle Bin feature is enabled on t
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------|----------------|
 | `%\\\{@powershell.exe \"$enabledScopes = Get-ADOptionalFeature -Identity 'Recycle Bin Feature'|select -exp enabledscopes|format-list;if ($enabledScopes)\\\{Write-Output -InputObject 'Enabled'}else\\\{Write-Output -InputObject 'Disabled'}\"@%}` | Equals     | Enabled | Windows        |
 
-

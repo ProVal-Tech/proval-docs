@@ -16,15 +16,15 @@ This document describes how to create a shortcut in the Public Desktop folder.
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_1.webp)
 
 To add a desktop shortcut for [https://chatgpt.com/](https://chatgpt.com/):
 
-![Sample Run Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_2.webp)
 
 Select `Run Now` and click on `Run Task`:
 
-![Sample Run Image 3](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_3.png)
+![Sample Run Image 3](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_3.webp)
 
 ## Dependencies
 
@@ -38,31 +38,31 @@ Select `Run Now` and click on `Run Task`:
 | ShortcutName  | Google                                          | False    | The optional name of the shortcut being set. If not provided, the file name or DnsSafeHost property will be used as the shortcut name. |
 | IconLocation   | --                                             | False    | Optionally set an *.ico file as the shortcut icon.                                            |
 
-![User Parameters Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_4.png)
+![User Parameters Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_4.webp)
 
 ## Implementation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Implementation Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_5.png)
+![Implementation Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_5.webp)
 
-![Implementation Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_6.png)
+![Implementation Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_6.webp)
 
 **Name:** Create - Desktop Shortcut  \
 **Description:** Creates a shortcut in the Public Desktop folder.  \
 **Category:** Management  
 
-![Implementation Image 3](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_7.png)
+![Implementation Image 3](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_7.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameters Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_8.png)
+![Parameters Image 1](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_8.webp)
 
 This screen will appear.
 
-![Parameters Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_9.png)
+![Parameters Image 2](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_9.webp)
 
 ### TargetUri
 
@@ -71,11 +71,11 @@ This screen will appear.
 - Toggle ON the `Required Field` button.
 - Click the `Save` button.
 
-![TargetUri Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_10.png)
+![TargetUri Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_10.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![TargetUri Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_11.png)
+![TargetUri Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_11.webp)
 
 ### ShortcutName
 
@@ -83,11 +83,11 @@ Click the `Confirm` button to save the parameter.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![ShortcutName Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_12.png)
+![ShortcutName Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_12.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![ShortcutName Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_13.png)
+![ShortcutName Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_13.webp)
 
 ### IconLocation
 
@@ -95,15 +95,15 @@ Click the `Confirm` button to save the parameter.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![IconLocation Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_14.png)
+![IconLocation Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_14.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![IconLocation Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_15.png)
+![IconLocation Confirm Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_15.webp)
 
 Once all the parameters are created, it should look like this:
 
-![Parameters Created Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_16.png)
+![Parameters Created Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_16.webp)
 
 Proceed with the following steps to create a task.
 
@@ -111,21 +111,21 @@ Proceed with the following steps to create a task.
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Task Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_17.png)
+![Task Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_17.webp)
 
 A blank function will appear.
 
-![Task Blank Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_18.png)
+![Task Blank Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_18.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_19.png)
+![PowerShell Script Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_19.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_20.png)
+![PowerShell Script Popup Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_20.webp)
 
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
@@ -194,41 +194,40 @@ if (Test-Path $ErrorLogPath) \{
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script Editor Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_21.png)
+![PowerShell Script Editor Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_21.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Script Log Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_22.png)
+![Script Log Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_22.webp)
 
 A blank function will appear.
 
-![Script Log Blank Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_18.png)
+![Script Log Blank Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_18.webp)
 
 Search and select the `Script Log` function.
 
-![Script Log Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_23.png)
+![Script Log Function Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_23.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Popup Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_24.png)
+![Script Log Popup Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_24.webp)
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script Log Save Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_25.png)
+![Script Log Save Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_25.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Script Log Save Confirmation Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_26.png)
+![Script Log Save Confirmation Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_26.webp)
 
 ## Completed Task
 
 The Script Editor should look like this:
 
-![Completed Task Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_27.png)
+![Completed Task Image](../../../static/img/docs/b2c83951-fe1d-4d71-b334-223590be3cc4/image_27.webp)
 
 ## Output
 
 - Script log
-

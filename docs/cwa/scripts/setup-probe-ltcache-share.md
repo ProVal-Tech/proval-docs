@@ -20,7 +20,7 @@ It will then set the location settings to use the new LTCache settings.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/06ceeffc-d91b-4936-9889-101e02b683ca/image_1.png)
+![Sample Run](../../../static/img/docs/06ceeffc-d91b-4936-9889-101e02b683ca/image_1.webp)
 
 ## Dependencies
 
@@ -47,4 +47,3 @@ The location must have a probe enabled; otherwise, the script will exit with an 
 ## Output
 
 Script log
-

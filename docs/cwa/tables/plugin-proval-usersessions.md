@@ -30,4 +30,3 @@ This document stores data about active user sessions on Windows machines.
 | LogonDate     | DATETIME | The date and time that the session was started.  |
 | SessionLength | INT      | The length in minutes of the audited session.    |
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
-

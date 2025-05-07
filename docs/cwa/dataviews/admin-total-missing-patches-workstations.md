@@ -24,4 +24,3 @@ This dataview shows the number of missing patches for each workstation managed t
 | OS              | Displays the operating system of the machine     |
 | Agent Type      | Displays the agent type                          |
 | Missing Patches | Displays the number of missing patches on the machine |
-

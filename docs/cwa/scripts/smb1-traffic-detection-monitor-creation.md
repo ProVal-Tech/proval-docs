@@ -22,19 +22,19 @@ Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de6
 
 1. **Gather existing ticket category and alert template ID:**
    - Look for the `SMB1 Server Enabled [Remote Monitor]` group. Skip this step if the group does not exist.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_1.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_1.webp)
    - Double-click to open the group.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_2.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_2.webp)
    - Navigate to `Computers` > `Remote Monitors`.
    - Select the `SMB1 Traffic Detection` remote monitor.
    - Take note of the Alert Template and Ticket Category applied to it.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_3.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_3.webp)
 
 2. **Import the** [**`SMB1 Traffic Detection Monitor Creation`**](/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9) **script from the** `ProSync` **plugin.**
 
 3. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_4.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_4.webp)
      Additionally, it will remove the following:
      - Group Remote Monitor: `SMB1 Traffic Detection`
      - Search: `SMB1 Server Enabled [Remote Monitor]`
@@ -42,17 +42,17 @@ Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de6
 
 4. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_5.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_5.webp)
 
 5. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.
    - Set the appropriate alert template and ticket category in their respective system properties for the monitor set.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_6.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_6.webp)
    - Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 6. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_7.png)
+     ![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_7.webp)
 
 ## Dependencies
 
@@ -87,12 +87,11 @@ Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de6
 **Alert Message on Failure:** `SMB1 Traffic detected on %CLIENTNAME%/%COMPUTERNAME% in the past 1 hour. Details: %RESULT%`
 
 **Sample Remote Monitor:**
-![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_8.png)
-![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_9.png)
-![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_10.png)
-![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_11.png)
+![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_8.webp)
+![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_9.webp)
+![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_10.webp)
+![Image](../../../static/img/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9/image_11.webp)
 
 ## Output
 
 - Remote Monitors
-

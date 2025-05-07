@@ -15,9 +15,9 @@ This script performs the folder redirection audit for the redirected folders of 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69/image.png)
+![Sample Run](../../../static/img/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69/image.webp)
 
-![Sample Run 1](../../../static/img/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69/image-1.png)
+![Sample Run 1](../../../static/img/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69/image-1.webp)
 
 ## Dependencies
 

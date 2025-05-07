@@ -24,12 +24,12 @@ unlisted: false
 ### Step 1
 
 Navigate to `Settings` ➞ `Custom Fields`  
-![Step1](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step1.png)
+![Step1](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen and click on it.  
-![Step2](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step2.png)
+![Step2](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step2.webp)
 
 
 ## Completed Custom Field

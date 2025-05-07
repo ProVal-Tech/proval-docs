@@ -20,7 +20,7 @@ This script will audit the endpoint and output the Drive and Recovery key, if av
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_1.png)
+![Sample Run](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_1.webp)
 
 ## Dependencies
 
@@ -44,4 +44,3 @@ Sample Output:
 - BitLocker Encryption in Progress on Drive X:
 - BitLocker enabled on Drive X, No recovery key available
 - Drive X: recovery key: dm9ij30d-k4i30jf0-moqiw4oid-oijqwoeij-0qiwjeoqiwj
-

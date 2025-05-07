@@ -41,4 +41,3 @@ The data view presents the OneDrive Sync Status data stored in the [EPM - Data C
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
 
-

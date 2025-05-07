@@ -16,7 +16,7 @@ This script installs the NESSUS vulnerability scanner.
 
 ## Sample Run
 
-![Sample Run](../../static/img/docs/9468021f-816b-4d40-8915-e58a238eff8f/image_1.png)
+![Sample Run](../../static/img/docs/9468021f-816b-4d40-8915-e58a238eff8f/image_1.webp)
 
 ## Variables
 

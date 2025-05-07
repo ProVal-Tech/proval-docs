@@ -30,4 +30,3 @@ Run the procedure.
 
 - Agent Procedure Log:  
   `c:/kworking/System/Get-SCDrive-data.txt`
-

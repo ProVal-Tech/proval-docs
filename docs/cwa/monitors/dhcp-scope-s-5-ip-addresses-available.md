@@ -32,7 +32,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | REDACTED      | Regex Match | 3600     | \<Screenshot below\> |
 
-![Monitor Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_1.png)
+![Monitor Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_1.webp)
 
 ## Dependencies
 
@@ -42,7 +42,7 @@ Insert the details of the monitor in the table below.
 
 Service Plans. Windows Servers. Server Roles. Windows Servers Core Services. Windows DHCP Servers
 
-![Target Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_2.png)
+![Target Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_2.webp)
 
 ## Ticketing
 
@@ -84,12 +84,12 @@ Reserved   : 4
 
 The monitor set is available for import in our (ProVal's) Development environment within the `ProVal - Remote Monitors` Group.
 
-![Note Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_3.png)
+![Note Screenshot](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_3.webp)
 
 ## Monitor's Screenshot
 
-![Monitor Screenshot 1](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_4.png)  
-![Monitor Screenshot 2](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_5.png)
+![Monitor Screenshot 1](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_4.webp)  
+![Monitor Screenshot 2](../../../static/img/docs/90ad5d20-a081-4027-b8e2-238cbdbe64d3/image_5.webp)
 
 ## How to Import
 

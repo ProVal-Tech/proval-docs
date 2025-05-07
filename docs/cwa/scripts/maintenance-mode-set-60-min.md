@@ -18,9 +18,8 @@ The script sets maintenance mode for 60 minutes on the agent.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/5ee3b278-2443-42b9-beab-f5c58f360881/image_1_1.png)
+![Sample Run](../../../static/img/docs/5ee3b278-2443-42b9-beab-f5c58f360881/image_1_1.webp)
 
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
-

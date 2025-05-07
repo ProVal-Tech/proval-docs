@@ -24,7 +24,7 @@ Due to this, results are not guaranteed. If at all possible, the script should a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_1.png)
+![Sample Run](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_1.webp)
 
 ## Dependencies
 
@@ -38,4 +38,3 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4
 
 - Script log
 - Local file on the computer
-

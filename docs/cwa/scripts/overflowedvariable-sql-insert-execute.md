@@ -39,26 +39,26 @@ This is a function script and should not be run manually.
 
 1. In any script where you expect that a variable overflow is likely:  
    1. Add a variable named `JsonFileName`, and set it to the name of the temporary JSON file you wish to create.  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_1.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_1.webp)  
    2. Add a variable named `SQLStartStatement`, and set it to the SQL Insert Statement from "Insert Into" to "Values".  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_2.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_2.webp)  
       Note the space between "Values" and the trailing quotation.  
    3. Add a variable named `SQLTailString`, and set it to the SQL Insert Statement from "On Duplicate" to the end of the string.  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_3.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_3.webp)  
       Note the space between the leading quotation and "ON".  
    4. Add a variable named `DataPointNames` and set it to a comma-separated list of the individual saved object names.  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_4.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_4.webp)  
       You will use these here; notice the similar naming in the class.  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_5.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_5.webp)  
    5. Modify the PowerShell script and store results in `@psout@`:  
       1. Create a class.  
-         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_5.png)  
+         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_5.webp)  
       2. Populate your class with items.  
-         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_6.png)  
+         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_6.webp)  
       3. Export your data to JSON.  
-         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_7.png)  
+         ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_7.webp)  
    6. Call the Parse - OverflowedVariable script after the PowerShell run.  
-      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_8.png)  
+      ![Image](../../../static/img/docs/34cee8fe-1b6b-4558-a890-2face427ceb8/image_8.webp)  
 
 ## PowerShell Procedure
 
@@ -81,4 +81,3 @@ This is a function script and should not be run manually.
    - `TotalRowsToLimit`  
    - `SQLInsert`  
 10. Return that object.  
-

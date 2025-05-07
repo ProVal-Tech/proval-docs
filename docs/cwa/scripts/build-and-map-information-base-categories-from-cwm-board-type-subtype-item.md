@@ -18,7 +18,7 @@ This script will create information base categories (ticket categories) for ever
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/ff2075a4-f6a2-4ac1-b548-286276aa35d8/image_1.png)
+![Sample Run](../../../static/img/docs/ff2075a4-f6a2-4ac1-b548-286276aa35d8/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ The script executes several SQL queries.
 ## Output
 
 There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.
-

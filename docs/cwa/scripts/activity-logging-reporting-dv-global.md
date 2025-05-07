@@ -16,7 +16,7 @@ This script is used to perform an audit of the login/logout activities of users.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65/image_1.png)
+![Sample Run](../../../static/img/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65/image_1.webp)
 
 ## Dependencies
 
@@ -57,4 +57,3 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Data view
-

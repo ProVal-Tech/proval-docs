@@ -16,7 +16,7 @@ This script retrieves the File Vault Status of a Mac machine and stores it in a 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/6c8b7535-ef72-4635-a968-60261dea67de/image_1.png)
+![Sample Run](../../../static/img/docs/6c8b7535-ef72-4635-a968-60261dea67de/image_1.webp)
 
 It is recommended to schedule the script to run daily against the Mac machines to keep the data view up-to-date.
 
@@ -33,4 +33,3 @@ It is recommended to schedule the script to run daily against the Mac machines t
 ## Output
 
 - EDF
-

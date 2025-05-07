@@ -20,7 +20,7 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/43d84d2d-f385-4bd4-938a-0989956a8a38/image_1.png)
+![Sample Run](../../../static/img/docs/43d84d2d-f385-4bd4-938a-0989956a8a38/image_1.webp)
 
 **Notes:**
 - Ensure that the name of the `PowerPlan` matches exactly with the `Power Plan` column in the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview.
@@ -50,4 +50,3 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 
 - Script Log
 - Dataview
-

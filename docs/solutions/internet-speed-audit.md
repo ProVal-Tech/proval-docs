@@ -38,4 +38,3 @@ The internet speed audit solution measures the network speed that the machine is
 7. Assign the Alert Template to the Monitor and validate that there are results showing.  
 8. Run the monitor to begin the auditing.
 
-

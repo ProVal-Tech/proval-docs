@@ -16,7 +16,7 @@ The script will remove the Intel L1TF and Intel Meltdown solutions from the Auto
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/e49f2098-c95e-49d6-9626-fecbe89f9306/image_1.png)
+![Sample Run](../../../static/img/docs/e49f2098-c95e-49d6-9626-fecbe89f9306/image_1.webp)
 
 ## Process
 
@@ -32,5 +32,4 @@ The script will remove the Intel L1TF and Intel Meltdown solutions from the Auto
 ## Output
 
 Script Log
-
 

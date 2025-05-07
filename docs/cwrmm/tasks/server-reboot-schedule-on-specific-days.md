@@ -18,15 +18,15 @@ This document outlines the process for scheduling a forced reboot of the server 
 
 Select the device and search for 'Workstation Re' in the search box, then click.
 
-![Sample Run Step 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_1.png)
+![Sample Run Step 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_1.webp)
 
 Provide the user parameter value as per the requirement and then click 'Continue to scheduling'.
 
-![Sample Run Step 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_2.png)
+![Sample Run Step 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_2.webp)
 
 Click 'Run task' to schedule the task immediately.
 
-![Sample Run Step 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_3.png)
+![Sample Run Step 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_3.webp)
 
 ## User Parameters
 
@@ -46,33 +46,33 @@ Click 'Run task' to schedule the task immediately.
 
 To implement this script, please create a new "Script Editor" style script in the system.
 
-![Create Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_4.png)
+![Create Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_4.webp)
 
 - Name: Server Reboot Schedule on Specific Days
 - Description: This schedules the forced reboot of the server on the scheduled days based on the approved window check.
 - Category: Maintenance
 
-![Create Task Details](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_5.png)
+![Create Task Details](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_5.webp)
 
 ### Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_6.png)
+![Add Row](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_6.webp)
 
 ### Row 1: Function: Script Log
 
-![Row 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_7.png)
+![Row 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_7.webp)
 
 Paste the highlighted text: `Checking OS`
 
-![Row 1 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_8.png)
+![Row 1 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_8.webp)
 
 ### Row 2: Function: PowerShell Script
 
-![Row 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.png)
+![Row 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.webp)
 
-![Row 2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_10.png)
+![Row 2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_10.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
@@ -89,63 +89,63 @@ if ($os.ProductType -eq 1) {
 
 ### Row 3: Function: Script Log
 
-![Row 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 3 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.png)
+![Row 3 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.webp)
 
 ### Row 4: Logic: If/Then
 
-![Row 4](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 4](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
 ### Row 4a: Condition: Output Contains
 
 In the IF part, enter `Server` in the right box of the "Output Does Not Contain" part.
 
-![Row 4a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_14.png)
+![Row 4a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_14.webp)
 
 ### Row 4b: Function: Script Log
 
-![Row 4b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 4b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `The OS detected is confirmed not a Server. Please try the script 'Force Reboot Workstation with Reboot Windows Verification'. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 4b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_15.png)
+![Row 4b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_15.webp)
 
 ### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.
 
-![Row 4c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.png)
+![Row 4c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.webp)
 
 In the script exit message, leave it blank.
 
-![Row 4c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.png)
+![Row 4c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.webp)
 
 ### Row 5: Logic: If/Then
 
-![Row 5](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 5](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
 ### Row 5a: Condition: Custom Field Equals
 
 In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
-![Row 5a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_18.png)
+![Row 5a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_18.webp)
 
 ### Row 5b: Function: Script Log
 
-![Row 5b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 5b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `Force Reboot is approved on the endpoint via Reboot Scripts. Proceeding for reboot schedule without reboot window validation.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_19.png)
+![Row 5b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_19.webp)
 
 ### Row 5c: Function: PowerShell Script
 
-![Row 5c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.png)
+![Row 5c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.webp)
 
-![Row 5c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_20.png)
+![Row 5c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_20.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
@@ -203,113 +203,113 @@ Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute 
 
 ### Row 5d: Function: Script Log
 
-![Row 5d](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 5d](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5d Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.png)
+![Row 5d Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.webp)
 
 ### Row 5e: Logic: If/Then
 
-![Row 5e](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 5e](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
 ### Row 5e.1: Condition: Output Does Not Contain
 
 In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not Contain" part.
 
-![Row 5e.1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_21.png)
+![Row 5e.1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_21.webp)
 
 ### Row 5e.2: Function: Script Exit
 
-![Row 5e.2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_22.png)
+![Row 5e.2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_22.webp)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device. This will end the task with failure.
 
-![Row 5e.2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_23.png)
+![Row 5e.2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_23.webp)
 
 ### Row 5f: Function: Script Log
 
-![Row 5f](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 5f](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `Reboot successfully scheduled on %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5f Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_24.png)
+![Row 5f Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_24.webp)
 
 ### Row 5g: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.
 
-![Row 5g](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.png)
+![Row 5g](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.webp)
 
 In the script exit message, leave it blank.
 
-![Row 5g Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.png)
+![Row 5g Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.webp)
 
 ### Row 6: Function: Set Pre-defined Variable
 
-![Row 6](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_25.png)
+![Row 6](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_25.webp)
 
 Select the custom field 'ServerRebootWindowStart' and set the variable 'RebootWindowStart'.
 
-![Row 6 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_26.png)
+![Row 6 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_26.webp)
 
 ### Row 7: Function: Set Pre-defined Variable
 
-![Row 7](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_27.png)
+![Row 7](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_27.webp)
 
 Select the custom field 'ServerRebootWindowEnd' and set the variable 'RebootWindowEnd'.
 
-![Row 7 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_28.png)
+![Row 7 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_28.webp)
 
 ### Row 8: Function: Set Pre-defined Variable
 
-![Row 8](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_29.png)
+![Row 8](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_29.webp)
 
 Select the custom field 'ServerRebootWindowDay' and set the variable 'RebootWindowDay'.
 
-![Row 8 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_30.png)
+![Row 8 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_30.webp)
 
 ### Row 9: Logic: If/Then
 
-![Row 9](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 9](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
 ### Row 9a: Condition: Custom Field Equals
 
 In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
-![Row 9a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_31.png)
+![Row 9a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_31.webp)
 
 ### Row 9b: Function: Script Log
 
-![Row 9b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 9b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 9b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_32.png)
+![Row 9b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_32.webp)
 
 ### Row 9c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.
 
-![Row 9c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.png)
+![Row 9c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.webp)
 
 In the script exit message, leave it blank.
 
-![Row 9c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.png)
+![Row 9c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.webp)
 
 ### Row 10: Function: Script Log
 
-![Row 10](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 10](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 10 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_33.png)
+![Row 10 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_33.webp)
 
 ### Row 11: Function: PowerShell Script
 
-![Row 11](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.png)
+![Row 11](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.webp)
 
-![Row 11 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_34.png)
+![Row 11 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_34.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **600 seconds**.
 
@@ -332,35 +332,35 @@ if ($Day -contains $currentDay) {
 
 ### Row 12: Function: Script Log
 
-![Row 12](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 12](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 12 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.png)
+![Row 12 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.webp)
 
 ### Row 13: Logic: If/Then
 
-![Row 13](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 13](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
 ### Row 13a: Condition: Output Contains
 
 In the IF part, enter `Machine is in reboot window` in the right box of the "Output Does Not Contain" part.
 
-![Row 13a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_35.png)
+![Row 13a](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_35.webp)
 
 ### Row 13b: Function: Script Log
 
-![Row 13b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 13b](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `Scheduling the reboot as the reboot schedule falls under the reboot window set on the company level.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_36.png)
+![Row 13b Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_36.webp)
 
 ### Row 13c: Function: PowerShell Script
 
-![Row 13c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.png)
+![Row 13c](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_9.webp)
 
-![Row 13c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_20.png)
+![Row 13c Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_20.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
@@ -418,59 +418,59 @@ Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute 
 
 ### Row 13d: Function: Script Log
 
-![Row 13d](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 13d](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13d Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.png)
+![Row 13d Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_12.webp)
 
 ### Row 13e: Function: Script Log
 
-![Row 13e](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.png)
+![Row 13e](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_13.webp)
 
-![Row 13e Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_37.png)
+![Row 13e Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_37.webp)
 
 ### Row 13e.1: Condition: Output Contains
 
 In the IF part, enter `RebootDateTime` in the right box of the "Output Contains" part.
 
-![Row 13e.1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_38.png)
+![Row 13e.1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_38.webp)
 
 ### Row 13e.2: Function: Script Log
 
-![Row 13e.2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.png)
+![Row 13e.2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_11.webp)
 
 In the script log message, type `Reboot successfully scheduled on %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 13e.2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_24.png)
+![Row 13e.2 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_24.webp)
 
 ### Row 13e.3: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.
 
-![Row 13e.3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.png)
+![Row 13e.3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_16.webp)
 
 In the script exit message, leave it blank.
 
-![Row 13e.3 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.png)
+![Row 13e.3 Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_17.webp)
 
 ### Row 13f: Function: Script Exit
 
-![Row 13f](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_22.png)
+![Row 13f](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_22.webp)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device. This will end the task with failure.
 
-![Row 13f Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_23.png)
+![Row 13f Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_23.webp)
 
 ### Row 14: Complete
 
-![Row 14](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_39.png)
+![Row 14](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_39.webp)
 
-![Row 14 Detail 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_40.png)
+![Row 14 Detail 1](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_40.webp)
 
-![Row 14 Detail 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_41.png)
+![Row 14 Detail 2](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_41.webp)
 
-![Row 14 Detail 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_42.png)
+![Row 14 Detail 3](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_42.webp)
 
 ## Deployment
 
@@ -483,27 +483,26 @@ This task can be run manually or in a group. It will only reboot endpoints if th
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.
 
-![Schedule Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_5.png)
+![Schedule Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_5.webp)
 
 This screen will appear.
 
-![Schedule Task Screen](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_43.png)
+![Schedule Task Screen](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_43.webp)
 
 - Select the relevant time to run the script and click the 'Does not repeat' button.
 
-![Select Time](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_44.png)
+![Select Time](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_44.webp)
 
-![Select Time Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_45.png)
+![Select Time Detail](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_45.webp)
 
 - Select the target to schedule the 'Server Reboot Schedule on Specific Days'.
 
 For example:
 
-![Select Target](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_46.png)
+![Select Target](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_46.webp)
 
 - Now click the `Run` button once all customization is set to initiate the task.
 
-![Run Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_47.png)
+![Run Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_47.webp)
 
 - The task will start appearing in the Scheduled Tasks.
-

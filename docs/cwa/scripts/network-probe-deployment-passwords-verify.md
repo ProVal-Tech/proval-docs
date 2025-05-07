@@ -14,7 +14,7 @@ unlisted: false
 
 The script determines whether the credentials given to a Network Probe for installing agents are accurate. All the credentials will be tested against the Network Probe. If a username is saved without the "//" symbol, it will be treated as a domain credential and will be checked as 'Domain/Username'.
 
-![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_1.png)
+![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_1.webp)
 
 This script can be helpful while troubleshooting agent installation issues from a Network Probe.
 
@@ -22,7 +22,7 @@ This script can be helpful while troubleshooting agent installation issues from 
 
 ## Sample Run
 
-![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_2.png)
+![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_2.webp)
 
 ## Variables
 
@@ -74,5 +74,4 @@ This script can be helpful while troubleshooting agent installation issues from 
 
 **Sample:**
 
-![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_3.png)
-
+![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_3.webp)

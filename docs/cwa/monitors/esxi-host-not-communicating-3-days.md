@@ -26,4 +26,3 @@ This section should contain a list of ITGlue documents listed in the Related Ite
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
-

@@ -16,9 +16,9 @@ This document is used to change the service login account for a target service.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/d2333f50-c880-4503-8153-12fdf1f7e205/image_1.png)
+![Sample Run 1](../../../static/img/docs/d2333f50-c880-4503-8153-12fdf1f7e205/image_1.webp)
 
-![Sample Run 2](../../../static/img/docs/d2333f50-c880-4503-8153-12fdf1f7e205/image_2.png)
+![Sample Run 2](../../../static/img/docs/d2333f50-c880-4503-8153-12fdf1f7e205/image_2.webp)
 
 ## Dependencies
 
@@ -50,5 +50,4 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-3
   - `.//Set-ServiceLogin-log.txt`
   - `.//Set-ServiceLogin-data.txt`
   - `.//Set-ServiceLogin-error.txt`
-
 

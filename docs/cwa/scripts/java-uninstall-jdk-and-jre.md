@@ -18,7 +18,7 @@ This script checks and uninstalls all installed versions of Java from the target
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/46e361b5-3657-4e5b-800a-858f331b3b8b/image_1.png)
+![Sample Run](../../../static/img/docs/46e361b5-3657-4e5b-800a-858f331b3b8b/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ This script checks and uninstalls all installed versions of Java from the target
 ## Output
 
 - Script log
-

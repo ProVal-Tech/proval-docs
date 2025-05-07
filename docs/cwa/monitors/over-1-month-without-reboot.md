@@ -24,4 +24,3 @@ Optional Targets:
 - Global - Should be run without explicitly defined targets.
 - Managed 24x7 | 8x5 Servers
 - Managed 24x7 | 8x5 Workstations
-

@@ -19,7 +19,7 @@ It will also help to update the dependent DataView and custom table.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/d3db4260-b3e9-4ec6-b422-07434a2a239d/image_1.png)
+![Sample Run](../../../static/img/docs/d3db4260-b3e9-4ec6-b422-07434a2a239d/image_1.webp)
 
 ## Dependencies
 
@@ -52,4 +52,3 @@ Examples:
 - Script log  
 - DataView  
 - Custom table  
-

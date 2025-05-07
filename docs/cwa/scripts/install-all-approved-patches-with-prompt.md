@@ -26,7 +26,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_1.png)
+![Sample Run](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_1.webp)
 
 ## Dependencies
 
@@ -37,42 +37,41 @@ While the script can be executed from Automate, it is recommended to utilize it 
 #### Pre-Patch Installation Prompt
 
 **CASE 1:** If the approved production patches are available on the computer to install  
-![Case 1](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_2.png)
+![Case 1](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_2.webp)
 
 **CASE 2:** If there are no patches available to install. The script will exit if there are no approved production patches missing on the computer.  
-![Case 2](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_3.png)
+![Case 2](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_3.webp)
 
 #### Post Patch Reboot Confirmation
 
 **First Prompt:**  
-![First Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_4.png)
+![First Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_4.webp)
 
 **Second Prompt:** This prompt will only be sent if the user fails to select a convenient time in the first prompt between the next 48 hours to restart the computer.  
-![Second Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_5.png)
+![Second Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_5.webp)
 
 **Final Prompt:** The script will be scheduled to restart the computer after 48 hours if the user fails to select a convenient time between the next 48 hours to restart their computer.  
-![Final Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_6.png)
+![Final Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_6.webp)
 
 #### Pre Reboot Prompt
 
 This prompt will be sent solely if an automatic restart is scheduled after 48 hours.  
-![Pre Reboot Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_7.png)
+![Pre Reboot Prompt](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_7.webp)
 
 ## Post Reboot Prompt
 
 **CASE 1:** If the patch job was successful and there are no approved production patches left to install.  
-![Post Reboot Case 1](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_8.png)
+![Post Reboot Case 1](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_8.webp)
 
 **CASE 2:** If Automate fails to install any patch(es).  
-![Post Reboot Case 2](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_9.png)
+![Post Reboot Case 2](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_9.webp)
 
 #### Windows Reboot Schedule Notification
 
 A pop-up message will appear at the bottom right corner of the screen to remind the end user of the scheduled reboot.  
-![Windows Reboot Schedule Notification](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_10.png)
+![Windows Reboot Schedule Notification](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_10.webp)
 
 ## Output
 
 - Script Log
 - Prompt on End Machine
-

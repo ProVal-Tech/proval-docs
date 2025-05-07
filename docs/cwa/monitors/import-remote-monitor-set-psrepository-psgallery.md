@@ -81,7 +81,7 @@ unlisted: false
 ```
 
 4. Now execute your query using a RAWSQL monitor set. Once the query is executed, reload the control center.  
-   ![Image](../../../static/img/docs/5cb1373f-6cdc-4576-8b3e-e8bfc4d664de/image_1.png)  
+   ![Image](../../../static/img/docs/5cb1373f-6cdc-4576-8b3e-e8bfc4d664de/image_1.webp)  
    Then re-open the group where the monitor is created.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.

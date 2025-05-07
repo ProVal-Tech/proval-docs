@@ -24,4 +24,3 @@ Fully removes Datto RMM from an endpoint.
 
 ## Output
 .\Remove-DattoRmmAgent-log.txt
-

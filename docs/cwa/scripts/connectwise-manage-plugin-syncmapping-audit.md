@@ -17,7 +17,7 @@ This script is intended to email [alerts@provaltech.com](mailto:alerts@provaltec
 ## Sample Run
 
 It is a client script that should be scheduled to run once a week.  
-![Sample Run](../../../static/img/docs/474cb433-c577-450c-b214-e7fc6a1c73f3/image_1.png)
+![Sample Run](../../../static/img/docs/474cb433-c577-450c-b214-e7fc6a1c73f3/image_1.webp)
 
 ## Dependencies
 
@@ -40,4 +40,3 @@ It is a client script that should be scheduled to run once a week.
 ## Output
 
 - Email
-

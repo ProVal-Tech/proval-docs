@@ -37,4 +37,3 @@ The server %COMPUTERNAME% is currently reporting that it is pending a reboot. Pl
 
 **Success:**  
 Server %COMPUTERNAME% is no longer reporting that it is pending a reboot. Closing the ticket.
-

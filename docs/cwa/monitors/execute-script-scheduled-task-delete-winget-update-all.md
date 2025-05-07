@@ -30,4 +30,3 @@ Global
 **Name:** △ Custom - Execute Script - Scheduled Task - Delete - Winget Update All
 
 The alert template executes the [Script - Scheduled Task - Delete - Winget Update All [Autofix]](/docs/23d4e4bf-1a80-4db0-983b-99da88e8ba34) against the detected machines.
-

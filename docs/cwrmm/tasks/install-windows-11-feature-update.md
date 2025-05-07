@@ -39,9 +39,9 @@ The script supports both Windows 10 and Windows 11:
 
 ## Sample Run
 
-![Image5](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image5.png)  
-![Image6](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image6.png)  
-![Image7](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image7.png)
+![Image5](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image5.webp)  
+![Image6](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image6.webp)  
+![Image7](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image7.webp)
 
 ## Dependencies
 
@@ -60,15 +60,15 @@ The script supports both Windows 10 and Windows 11:
 #### Step 1
 
 Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.png)
+![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.webp)
 
 #### Step 2
 
 Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.png)
+![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.webp)
 
 The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.png)
+![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.webp)
 
 #### Step 3
 
@@ -78,40 +78,40 @@ Fill in the following details in the `Description` section:
 **Description:** `The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script can restart the computer up to seven times.`  
 **Category:** `Custom`
 
-![Image1](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image1.png)
+![Image1](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image1.webp)
 
 ### Parameters
 
 #### NoReboot
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.png)
+![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.png)
+![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `NoReboot` in the `Parameter Name` field.  
 - Select `Flag` from the `Parameter Type` dropdown menu.  
 - Click the `Save` button.
 
-![Image2](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image2.png)
+![Image2](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image2.webp)
 
 ### Script Editor
 
 Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)
 
 A blank function will appear:  
-![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
 
 #### Row 1 Function: PowerShell
 
 Search and select the `PowerShell Script` function.  
-![AddPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addpowershellfunction.png)  
-![AddedPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.png)  
+![AddPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addpowershellfunction.webp)  
+![AddedPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.webp)  
 
 The following function will pop up on the screen:  
-![BlankPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.png)
+![BlankPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `7200` seconds. Click the `Save` button.
 
@@ -168,33 +168,33 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Image3](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image3.png)
+![Image3](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image3.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)
 
 A blank function will appear.  
-![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
 
 Search and select the `Script Log` function.  
-![AddScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.png)
+![AddScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.webp)
 
 The following function will pop up on the screen:  
-![BlankScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankscriptlogfunction.png)
+![BlankScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankscriptlogfunction.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![OutputScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.png)
+![OutputScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp)
 
 ## Save Task
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.png)
+![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.webp)
 
 ## Completed Task
 
-![Image4](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image4.png)
+![Image4](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image4.webp)
 
 ## Output
 

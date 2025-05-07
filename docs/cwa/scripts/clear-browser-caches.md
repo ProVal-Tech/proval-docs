@@ -24,7 +24,7 @@ This script will clear the caches for the following browsers:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f162bdc7-8df2-41b7-b473-b98a85cea39e/image_1.png)
+![Sample Run](../../../static/img/docs/f162bdc7-8df2-41b7-b473-b98a85cea39e/image_1.webp)
 
 ## Sub-Scripts
 
@@ -40,4 +40,3 @@ This script will clear the caches for the following browsers:
 ## Output
 
 - Script log
-

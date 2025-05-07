@@ -31,4 +31,3 @@ The AD Plugin needs to be installed, enabled, and configured with credentials to
 | Group GUID    | Displays the group GUID             |
 | Members       | Displays the members of the group    |
 | Domain Name   | Displays the Domain Name            |
-

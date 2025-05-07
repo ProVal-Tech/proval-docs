@@ -24,11 +24,11 @@ The system property `Winget_Disable_User_Level_Scheduled_Task` can be used to en
 
 For the initial execution of the script, target any online Windows 10 or Windows 11 computer. Set the `SetEnvironment` parameter to `1` to create the system property and the EDF.
 
-![Initial Execution](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_1.png)
+![Initial Execution](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_1.webp)
 
 Regular execution of the script:
 
-![Regular Execution](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_2.png)
+![Regular Execution](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_2.webp)
 
 ## User Parameters
 
@@ -42,7 +42,7 @@ Regular execution of the script:
 |-----------------------------------------------|---------|-----------|-----------------------------------------------------------------------------------------------------------------------|
 | Winget_Disable_User_Level_Scheduled_Task     | 1       | False     | Set the `Winget_Disable_User_Level_Scheduled_Task` system property to `0` to enable the `Winget Update All [Logged on User]` task on the endpoints. |
 
-![System Properties](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_3.png)
+![System Properties](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_3.webp)
 
 ## Client Level EDF
 
@@ -51,7 +51,7 @@ Regular execution of the script:
 | Winget Update All Task - Create    | Check-Box | Winget Task | Marking this EDF will enable the Winget Upgrade All Tasks creation on the endpoints of the client.   |
 | Winget User Level Task - Disable    | Check-Box | Winget Task | Mark this EDF to disable the `Winget Update All [Logged on User]` task on the endpoints of the client. |
 
-![Client Level EDF](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_4.png)
+![Client Level EDF](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_4.webp)
 
 ## Location Level EDF
 
@@ -59,7 +59,7 @@ Regular execution of the script:
 |------------------------------------|-----------|-------------|------------------------------------------------------------------------------------------------------|
 | Winget Update All Task - Exclude    | Check-Box | Exclusions  | Marking this EDF will exclude the computers from the Winget Update - All task creation solution.     |
 
-![Location Level EDF](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_5.png)
+![Location Level EDF](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_5.webp)
 
 ## Computer Level EDF
 
@@ -72,10 +72,9 @@ Regular execution of the script:
 
 When the `Winget Update All [Logged on User]` task is enabled, a command window will briefly appear on the user's screen within a few minutes after they log in. This window will continue to pop up every time the task runs, i.e., when the user logs in again after logging out or restarting the computer. The total time it will be on the screen is a second or two, but it might create questions from certain clients.
 
-![Additional Notes](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_6.png)
+![Additional Notes](../../../static/img/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1/image_6.webp)
 
 ## Output
 
 - Script log
 - Extra Data Field
-

@@ -26,5 +26,4 @@ This document holds the count of accounts with weak passwords.
 
 ## Screenshot
 
-![Screenshot](../../../static/img/docs/1a75efd1-8457-4b11-b9a8-0f7fe1a39db6/image_1.png)
-
+![Screenshot](../../../static/img/docs/1a75efd1-8457-4b11-b9a8-0f7fe1a39db6/image_1.webp)

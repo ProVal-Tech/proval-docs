@@ -41,4 +41,3 @@ Policy to schedule the scan of server endpoints for Azure AD Connect software an
 
 Attach the content XML VSA Export to this document.
 
-

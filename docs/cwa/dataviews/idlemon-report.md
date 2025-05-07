@@ -40,5 +40,4 @@ The purpose of the dataview is to display the historical data of the user's idle
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/a9dabf31-db77-49f9-9403-22f1a259678e/image_1.png)
-
+![Sample Screenshot](../../../static/img/docs/a9dabf31-db77-49f9-9403-22f1a259678e/image_1.webp)

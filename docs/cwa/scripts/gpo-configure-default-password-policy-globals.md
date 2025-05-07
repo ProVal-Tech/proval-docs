@@ -18,7 +18,7 @@ The script modifies the properties of the default password policy for a domain. 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/80f78f9e-cc1c-4547-9c54-59b0fce02fe3/image_1.png)
+![Sample Run](../../../static/img/docs/80f78f9e-cc1c-4547-9c54-59b0fce02fe3/image_1.webp)
 
 #### Global Parameters
 
@@ -42,4 +42,3 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
-

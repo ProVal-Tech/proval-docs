@@ -28,11 +28,11 @@ Set the System Property `Agent_Repair_Re_Install_Enabled` to `0` to disable the 
 
 The script must be run with the `Set Environment = 1` setting for the first time after the update. This will create the system properties used by the script.
 
-![Sample Run 1](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_1.png)
+![Sample Run 1](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_1.webp)
 
 For Regular Execution:
 
-![Sample Run 2](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_2.png)
+![Sample Run 2](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_2.webp)
 
 By default, the script will be called by the **[Monitor - No Checkin for More Than 30 Days](/docs/4bc06cc4-3b78-452a-b602-063e57221234)**.
 
@@ -104,11 +104,11 @@ By default, the script will be called by the **[Monitor - No Checkin for More Th
 To enable ticketing on failure, the ticket category must be set in the alerting tab of the monitor set calling the script, or at the group level if the monitor set is enabled on the group. Also, the script will not create any tickets for manual executions.
 
 From Monitor Set:  
-![Monitor Set](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_3.png)
+![Monitor Set](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_3.webp)
 
 From Group:  
-![Group 1](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_4.png)  
-![Group 2](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_5.png)  
+![Group 1](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_4.webp)  
+![Group 2](../../../static/img/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c/image_5.webp)  
 
 **Ticket Subject:** `Agent Reinstall Failed/Broken Agent - \\<clientname>//\\<computername>`
 
@@ -152,4 +152,3 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
-

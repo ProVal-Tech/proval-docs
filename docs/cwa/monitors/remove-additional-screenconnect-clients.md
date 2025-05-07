@@ -27,4 +27,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Remove Additional ScreenConnect Clients`
-

@@ -16,7 +16,7 @@ This script audits scheduled tasks to identify which user accounts are running t
 
 ## Sample Run
 
-![Sample Run](../../static/img/docs/c9a84634-8ee6-4484-8aa7-e92bafd4443c/image_1.png)
+![Sample Run](../../static/img/docs/c9a84634-8ee6-4484-8aa7-e92bafd4443c/image_1.webp)
 
 ## Variables
 

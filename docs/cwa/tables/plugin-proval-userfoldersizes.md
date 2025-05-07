@@ -27,4 +27,3 @@ This script depends on **Get User Folder Sizes**.
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
-

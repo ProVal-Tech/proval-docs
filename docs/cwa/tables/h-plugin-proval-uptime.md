@@ -35,4 +35,3 @@ These tables are populated by the events `ProvalUptime` and `ProvalUptimeDays`. 
 | ComputerID    | INT      | The ComputerID of the measured agent.                 |
 | PercentOnline  | DOUBLE   | The percentage of time that the agent was online on the specified SampleDate. |
 | SampleDate    | DATE     | The date of the measurements used to calculate the PercentOnline. |
-

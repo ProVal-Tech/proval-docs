@@ -37,4 +37,3 @@ This monitor is primarily designed for server drive space monitoring. It will fu
 The monitor filters out the following drive file systems: 'CDFS', 'UNKFS', 'DVDFS', 'FAT', 'FAT32', and 'NetFS'.
 
 It also filters out drives where the SmartStatus is like USB, in an attempt to exclude USB drives.
-

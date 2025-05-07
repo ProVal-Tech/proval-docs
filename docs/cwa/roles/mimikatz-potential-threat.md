@@ -27,4 +27,3 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |
-

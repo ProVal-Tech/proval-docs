@@ -22,7 +22,7 @@ Categorize the Windows 10 and 11 computers where the `Feature Update Install wit
 
 ## Group Overview
 
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_1.png)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_1.webp)  
 **Group Type:** Dynamic  
 **Group Name:** Windows Feature Pack Update: Reboot Pending  
 **Description:** Categorize the Windows 10 and 11 computers where the `Feature Update Install with Tracking` script is completed but a reboot is pending.
@@ -30,21 +30,20 @@ Categorize the Windows 10 and 11 computers where the `Feature Update Install wit
 ## Criteria
 
 - Select `OS Build Number` for the criteria, use `Does Not Contain any` for the comparator, and type `19045` and `22631` in the condition box.  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_2.png)  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_3.png)  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_4.png)  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_5.png)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_2.webp)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_3.webp)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_4.webp)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_5.webp)  
 
 - Click the `Add Criteria` button to add another criterion.  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_6.png)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_6.webp)  
 
 - Select the `Feature Update Reboot Pending` custom field for criteria, use `Equal` for the comparator, and type `True` in the condition box.  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_7.png)  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_8.png)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_7.webp)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_8.webp)  
 
 ## Group Creation
 
 Click the Save button to save the group.  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_9.png)  
-![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_10.png)  
-
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_9.webp)  
+![Image](../../../static/img/docs/72a7b834-70a2-4b4f-becb-bb77fa83a28d/image_10.webp)  

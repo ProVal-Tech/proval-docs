@@ -45,4 +45,3 @@ This document displays the battery report information.
 | LocationID            | Not displayed but used.                                                                                                                                       |
 | ThresholdViolation     | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
 
-

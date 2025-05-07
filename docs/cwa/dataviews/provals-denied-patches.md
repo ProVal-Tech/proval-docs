@@ -26,4 +26,3 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | KBID   | KBID of the Denied Patch.        |
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch. |
-

@@ -18,16 +18,16 @@ Dataviews can now be filtered by client, location, or computer.
 
 ## Sample Run
 
-1. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_1.png)  
+1. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_1.webp)  
    Each Dataview ID provided will be filtered for each client ID in the Filter_ID variable, converted into a CSV report, and emailed out.  
 
-2. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_2.png)  
+2. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_2.webp)  
    Each Dataview ID provided will be filtered for each computer ID in the Filter_ID variable, converted into a CSV report, and emailed out.  
 
-3. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_3.png)  
+3. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_3.webp)  
    Four reports will be generated here, one report each for the current client. The reports will be filtered for the client ID of the computer on which the script is running.
 
-4. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_4.png)  
+4. ![Image](../../../static/img/docs/4b15de07-233d-462b-91ce-3ee060457e65/image_4.webp)  
    Four unfiltered reports will be sent to all provided email addresses. These CSV files will contain all the data from the dataviews defined in the Dataview IDs.
 
 ## Variables
@@ -73,4 +73,3 @@ Dataviews can now be filtered by client, location, or computer.
 ## Output
 
 An email with a `@DataviewName@.Csv` file attached.
-

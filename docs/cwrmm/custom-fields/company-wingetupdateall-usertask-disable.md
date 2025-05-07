@@ -24,7 +24,6 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-2
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_1.png)
+![Screenshot 1](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_1.webp)
 
-![Screenshot 2](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_2.png)
-
+![Screenshot 2](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_2.webp)

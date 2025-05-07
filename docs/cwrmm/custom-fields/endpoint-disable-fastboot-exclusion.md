@@ -22,6 +22,5 @@ Check this box to exclude the computer from the solution that disables fastboot.
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_1.png)
-![Screenshot 2](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_1.webp)
+![Screenshot 2](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_2.webp)

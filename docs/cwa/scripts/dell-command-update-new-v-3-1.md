@@ -18,7 +18,7 @@ This script installs and runs a scan for Dell Command Update.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/6b58263a-cc4f-45d1-bf29-2e777f0cf644/image_1.png)
+![Sample Run](../../../static/img/docs/6b58263a-cc4f-45d1-bf29-2e777f0cf644/image_1.webp)
 
 ## Variables
 
@@ -41,4 +41,3 @@ This script installs Dell Command Update if it is not present, updates it to ver
 ## Output
 
 - Script log
-

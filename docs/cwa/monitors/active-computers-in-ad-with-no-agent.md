@@ -16,11 +16,11 @@ The monitor set generates a client-level ticket containing details of domain-joi
 
 Client-level EDF `Excluded Missing Agent Computers` can be used to exclude the computer(s) from monitoring. Multiple computer names should be separated by commas (without any spaces).
 
-![Image](../../../static/img/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7/image_1.png)
+![Image](../../../static/img/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7/image_1.webp)
 
 Example: Adding `Computer1,Computer2,Computer3` to the EDF will exclude these machines from monitoring and from being fetched in the ticket.
 
-![Image](../../../static/img/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7/image_2.png)
+![Image](../../../static/img/docs/29eeae8f-d854-4234-82c5-28b1bbee0fc7/image_2.webp)
 
 ## Additional Notes
 
@@ -66,4 +66,3 @@ Last Logon: <Last Logon Date>
 
 Note: The list of machine names, separated by commas, can be configured within the client-level Extra Data Field (EDF) labeled "Excluded Missing Agent Computers" to exclude those machines from this monitoring process.
 ```
-

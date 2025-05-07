@@ -16,10 +16,9 @@ Login to the Webroot Portal.
 ## Step 2
 Go to the Site List --> Sites --> Details.
 
-![Image](../../../static/img/docs/bde90a61-771c-46ef-98f5-3278febb3278/image_1.png)
+![Image](../../../static/img/docs/bde90a61-771c-46ef-98f5-3278febb3278/image_1.webp)
 
 You will set the code in the format `xxxx-xxxx-xxxx-xxxx-xxxx`.
 
 ## Step 3
 Copy the code and paste it into the client EDF 'Webroot Site KeyCode' for the solution to work.
-

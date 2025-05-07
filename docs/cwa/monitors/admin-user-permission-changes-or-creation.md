@@ -36,5 +36,4 @@ Details of the change are as follows:
 
 Thank you,  
 
-![Image](../../../static/img/docs/5462a5dd-ba08-475c-b397-a1fb656649ae/image_1.png)
-
+![Image](../../../static/img/docs/5462a5dd-ba08-475c-b397-a1fb656649ae/image_1.webp)

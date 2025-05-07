@@ -16,7 +16,7 @@ The purpose of the script is to remove the `Kaseya Agent` and `Live Connect` app
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3d96450d-5de8-4157-9ec8-d468e446f51a/image_1.png)
+![Sample Run](../../../static/img/docs/3d96450d-5de8-4157-9ec8-d468e446f51a/image_1.webp)
 
 ## Variables
 
@@ -27,4 +27,3 @@ The purpose of the script is to remove the `Kaseya Agent` and `Live Connect` app
 ## Output
 
 - Script Log
-

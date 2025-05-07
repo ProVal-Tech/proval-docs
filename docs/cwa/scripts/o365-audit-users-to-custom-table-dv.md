@@ -21,7 +21,7 @@ Windows OS and PowerShell 5.0 are required.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c4cb8f27-762f-4ebc-9840-f5cb7712a05d/image_1.png)
+![Sample Run](../../../static/img/docs/c4cb8f27-762f-4ebc-9840-f5cb7712a05d/image_1.webp)
 
 ## Dependencies
 
@@ -52,4 +52,3 @@ Windows OS and PowerShell 5.0 are required.
 ## Output
 
 Script Log
-

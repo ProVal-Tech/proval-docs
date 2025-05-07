@@ -28,7 +28,7 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c/image_1.png)
+![Sample Run](../../../static/img/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c/image_1.webp)
 
 ## Variables
 
@@ -43,4 +43,3 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 Dataview: [Windows 11 Upgrade Compatibility](/docs/36ca4c95-af9e-443b-8fe5-33e910107650)  
 Custom table: [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
-

@@ -36,4 +36,3 @@ List the report parts used. If custom report parts were designed during report c
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
 
-

@@ -22,6 +22,5 @@ Indicates that FastBoot has been disabled on the computer.
 
 ## Screenshot
 
-![Screenshot 1](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_1.png)
-![Screenshot 2](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_1.webp)
+![Screenshot 2](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_2.webp)

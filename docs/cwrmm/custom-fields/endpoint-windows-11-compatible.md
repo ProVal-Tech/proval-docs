@@ -22,6 +22,5 @@ The Windows 11 compatibility check indicates whether the computer meets the requ
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_1.png)  
-![Screenshot 2](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_2.webp)

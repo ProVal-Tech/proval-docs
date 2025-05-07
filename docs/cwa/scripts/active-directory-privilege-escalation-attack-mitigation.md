@@ -19,7 +19,7 @@ The script is designed to verify the installation of all necessary patches to mi
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/18fbde09-500a-41a4-bad0-c37b85429926/image_1.png)
+![Sample Run](../../../static/img/docs/18fbde09-500a-41a4-bad0-c37b85429926/image_1.webp)
 
 ## Dependencies
 
@@ -68,5 +68,4 @@ These EDFs are also presented in the dataview [Workaround - Active Directory pri
 
 - Extra Data Fields
 - Dataview
-
 

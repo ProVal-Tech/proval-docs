@@ -19,14 +19,14 @@ This document assists with configuring the RMM+ Plugin and explains how to creat
 1. Log in to the client's control portal and check if the extension for RMM+ has been updated.
 
 2. Go to `Edit Settings` for the RMM+ plugin.  
-   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_1.png)
+   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_1.webp)
 
 3. Navigate to RMMPlus.AccessKey and select the `Custom` option. Create a random password as the custom value.
 
 4. Go to AllowedOrigin and select the `Custom` option. Enter the FQDN of the client's environment.  
    The FQDN should not contain `https://`.  
    For example, Origin: [labtech.provaltech.com](http://labtech.provaltech.com)  
-   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_2.png)
+   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_2.webp)
 
 5. Save the settings.
 
@@ -40,36 +40,36 @@ This document assists with configuring the RMM+ Plugin and explains how to creat
    | RMMPlus_Headers                 | Origin: FQDN as entered in Step 4 (For example - Origin: [labtech.provaltech.com](http://labtech.provaltech.com)) |
    | RMMPlus_StaleAgentThreshold     | 30                                                                                         |
    | RMMPlus_Timeout                 | 10000                                                                                      |  
-   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_3.png)
+   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_3.webp)
 
 8. Add the Get Post Plugin in the client's environment. Follow the steps below:  
    - Open Plugin Manager. Navigate to Advanced > Manage Plugins > Add Plugin.  
-     ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_4.png)  
+     ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_4.webp)  
    - Select the .dll file for the Get Post Plugin. See attachment.  
    - Check the box for a remote agent.  
    - Enable the plugin. This will restart the DB agent.  
    - Reload DB agent plugins.
 
 9. Reload the System Cache.  
-   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_5.png)
+   ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_5.webp)
 
 10. Open the `ScreenConnect Client - Command - Execute` script and check if you can see the `Plugin Function DataComm - HTTP GET/POST` step.  
-    ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_6.png)
+    ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_6.webp)
 
 ## Optional
 
 Create a session group in the ScreenConnect portal for machines that have not checked into Control for over **`X`** days.  
 - Go to the ScreenConnect Web Portal.  
 - Navigate to the `Access` portal.  
-  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_7.png)  
+  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_7.webp)  
 - Click on the `+ Create Session Group` option available at the bottom of the screen.  
-  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_8.png)  
+  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_8.webp)  
 - Enter the name for the session and add the filter as below. You can customize it as per your requirements by clicking on the **`+`** icon in front of the `Session Filter` option. You can also select the `Show Reference` option for more clarity.  
   ```
   GuestConnectedCount = 0 AND LastEventTime < $30DAYSAGO
   ```  
   Change the number of days in `$30DAYSAGO` as per your requirement.  
-  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_9.png)  
+  ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_9.webp)  
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
 ## Attachments
 [HTTP-GET-POST.dll](<../../../static/attachments/itg/9770217/HTTP-GET-POST.dll>)

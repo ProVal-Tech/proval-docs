@@ -34,25 +34,24 @@ Custom Field: **cPVAL Office Update Channel**
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
    Name: Get Office Update Channel (Windows) [CF]  
-   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_1.png)  
+   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_1.webp)  
    The export will download the necessary XML file.  
-   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_2.png)  
+   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_2.webp)  
    
 2. Import this XML file into the partner's VSA RMM instance.  
-   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_3.png)  
+   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_3.webp)  
 
 3. Once imported, create a custom field in the partner environment.  
    Name: cPVAL Office Update Channel  
    Custom Field Type: String  
-   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_4.png)  
+   ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_4.webp)  
 
 ## Output
 
 A Last Exec Status of success is expected.  
-![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_5.png)  
+![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_5.webp)  
 Agent Procedure Log  
-![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_6.png)  
+![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_6.webp)  
 
 Custom Field  
-![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_7.png)  
-
+![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_7.webp)  

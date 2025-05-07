@@ -16,7 +16,7 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5/image_2_2.png)
+![Sample Run](../../../static/img/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5/image_2_2.webp)
 
 ## Dependencies
 
@@ -35,5 +35,4 @@ This script collects the machine's Webroot hashed keycode and matches it with th
 - Script log
 - EDF
 - Dataview
-
 

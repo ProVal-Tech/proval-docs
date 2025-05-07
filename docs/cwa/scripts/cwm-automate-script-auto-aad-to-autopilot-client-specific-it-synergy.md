@@ -18,7 +18,7 @@ This script will run the Optimize-Volume PowerShell command to defragment a driv
 
 \< This should be a screenshot of a manual run of the script >
 
-![Screenshot](../../../static/img/docs/aeaaded2-8468-4c74-8f46-b6e301dca26a/image_1.png)
+![Screenshot](../../../static/img/docs/aeaaded2-8468-4c74-8f46-b6e301dca26a/image_1.webp)
 
 ## Dependencies
 
@@ -76,4 +76,3 @@ Example:
 - Local file on computer
 - Dataview
 - etc.
-

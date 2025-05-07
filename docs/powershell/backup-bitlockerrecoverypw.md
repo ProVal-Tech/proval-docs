@@ -31,4 +31,3 @@ Attempts to back up any Recovery Password type key protectors to Active Director
 - `Microsoft.BitLocker.Structures.BitLockerVolume`
 - `.\Backup-BitlockerRecoveryPW-log.txt`
 - `.\Backup-BitlockerRecoveryPW-error.txt`
-

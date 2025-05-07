@@ -18,7 +18,7 @@ This script will run CHKDSK for all internal drives.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/1bbb16d1-e01f-48c0-8957-1f8b1fc35a83/image_1.png)
+![Sample Run](../../../static/img/docs/1bbb16d1-e01f-48c0-8957-1f8b1fc35a83/image_1.webp)
 
 ## Global Parameters
 
@@ -33,4 +33,3 @@ This script will run CHKDSK for all internal drives on a machine. It first check
 ## Output
 
 - Script log
-

@@ -35,4 +35,3 @@ This document shows all the active users within the last 30 days using the Activ
 | Password Expiration Date      | Shows the date of the next password expiration for the user|
 | Password Last Set             | Shows the last time the password was set for this user    |
 | Days Since Last Password Change| Total number of days since the last password set date.    |
-

@@ -26,7 +26,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|-------------|-------------|--------------|----------|------------------------|
 | System       | 127.0.0.1      | Run File    | REDACTED    | State Based  | 600      | \<Screenshot Below\>   |
 
-![Screenshot](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_1.png)
+![Screenshot](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_1.webp)
 
 ## Dependencies
 
@@ -35,7 +35,7 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Windows DNS Servers  
-![Target Image](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_2.png)
+![Target Image](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_2.webp)
 
 ## Ticketing
 
@@ -86,7 +86,7 @@ Windows DNS Servers
    ```
 
 2. Open the `Windows DNS Servers` group  
-   ![Windows DNS Servers](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_1_1.png)
+   ![Windows DNS Servers](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_1_1.webp)
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
-   ![Check Remote Monitor](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_2_1.png)
+   ![Check Remote Monitor](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_2_1.webp)

@@ -70,7 +70,7 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
    - [Script - Email Creation - VMware ESXi Monitoring](/docs/642f7615-925c-481f-b4bf-8d6b2c9ad6de)
 
 6. Reload the System Cache  
-   ![Reload System Cache](../../static/img/docs/deb78496-0147-4a1b-b368-3b3113f9cf5b/image_1.png)
+   ![Reload System Cache](../../static/img/docs/deb78496-0147-4a1b-b368-3b3113f9cf5b/image_1.webp)
 
 7. Configure the solution as follows:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:

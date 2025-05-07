@@ -16,5 +16,4 @@ The purpose of the script is to create the MySQL View [CWM - Automate - Custom V
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/8c15555e-049e-4bf3-8a29-6446e2b2d05d/image_1.png)
-
+![Sample Run](../../../static/img/docs/8c15555e-049e-4bf3-8a29-6446e2b2d05d/image_1.webp)

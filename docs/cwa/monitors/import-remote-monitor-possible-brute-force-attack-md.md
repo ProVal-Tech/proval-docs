@@ -33,9 +33,9 @@ DELETE FROM agents WHERE `Name` = 'ProVal - Production - Security - Possible Bru
 
 Navigate to `Help` > `Server Status` and select `Do Group Refresh`.
 
-![Image 1](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_1.png)
+![Image 1](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_1.webp)
 
-![Image 2](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_2.png)
+![Image 2](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_2.webp)
 
 ---
 
@@ -81,14 +81,14 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 ## Step 4
 Locate your remote monitor by navigating to the `Domain Controller`.
 
-![Image](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_3.png)
+![Image](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_3.webp)
 
 ---
 
 ## Step 5
 Ensure that the monitor set is limited to the `Server Role - AD - Infrastructure Master` search.
 
-![Image](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_4.png)
+![Image](../../../static/img/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e/image_4.webp)
 
 ---
 

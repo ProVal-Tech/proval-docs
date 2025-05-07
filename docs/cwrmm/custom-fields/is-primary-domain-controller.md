@@ -29,12 +29,11 @@ The custom field is then used to create the [CW RMM - Machine Group - Infrastruc
 
 ## Screenshot
 
-![Screenshot 1](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_1.png)  
-![Screenshot 2](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_2.png)  
+![Screenshot 1](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_2.webp)  
 **Name:** Is Primary Domain Controller  
 **Description:** To validate whether the computer is a primary domain controller or not.
 
 ## Sample Value
 
-![Sample Value](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_3.png)
-
+![Sample Value](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_3.webp)

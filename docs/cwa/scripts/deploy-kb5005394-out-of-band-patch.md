@@ -18,7 +18,7 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/19cf3c3f-14e2-40a0-86c3-735b614a9331/image_1.png)
+![Sample Run](../../../static/img/docs/19cf3c3f-14e2-40a0-86c3-735b614a9331/image_1.webp)
 
 ## Variables
 
@@ -49,4 +49,3 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 - Script log
 - Script state
-

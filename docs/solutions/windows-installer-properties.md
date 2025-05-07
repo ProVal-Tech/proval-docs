@@ -37,4 +37,3 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 - Debug the script against an online Windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
-

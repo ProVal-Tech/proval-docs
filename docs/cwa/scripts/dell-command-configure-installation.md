@@ -18,7 +18,7 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/964767a7-3de0-4dd4-aa7c-21bf7f6ad926/image_1.png)
+![Sample Run](../../../static/img/docs/964767a7-3de0-4dd4-aa7c-21bf7f6ad926/image_1.webp)
 
 ## Variables
 
@@ -35,4 +35,3 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 ## Output
 
 **Script Log:** Success or Failure
-

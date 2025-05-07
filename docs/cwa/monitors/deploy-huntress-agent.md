@@ -43,4 +43,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Deploy Huntress Agent`
-

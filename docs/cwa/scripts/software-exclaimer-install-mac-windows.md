@@ -18,7 +18,7 @@ This script will install Exclaimer on both MAC and Windows.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/8c3f58b7-7680-45c3-8f40-1e9c27001136/image_1.png)
+![Sample Run](../../../static/img/docs/8c3f58b7-7680-45c3-8f40-1e9c27001136/image_1.webp)
 
 ## Dependencies
 
@@ -42,4 +42,3 @@ This script will install Exclaimer on both MAC and Windows.
 ## Output
 
 - Script log
-

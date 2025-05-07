@@ -29,4 +29,3 @@ This document displays all the available user profile sizes on a Windows machine
 | Profile Path     | Displays the user profile folder path.           |
 | Profile Size (MB)| Displays the user profile folder size in MB.    |
 | OS               | Displays the computer operating system.          |
-

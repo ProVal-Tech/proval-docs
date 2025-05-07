@@ -14,8 +14,8 @@ unlisted: false
 
 This solution is designed to audit the complete Shadow Copy statistics and size information on all machines set to audit. The data is populated into a dataview and can be reviewed manually. There is currently no alerting for this solution, but it can easily be added if requested.
 
-![Image 1](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_1.png)
-![Image 2](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_2.png)
+![Image 1](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_1.webp)
+![Image 2](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_2.webp)
 
 ## Associated Content
 
@@ -35,7 +35,7 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
    - [Monitor - Execute Script - Shadow Copy - Audit Complete Statistics](/docs/ef826863-c354-4a97-9ba8-8ad2a3c65e40)
 
 2. Reload the system cache:
-   ![Image](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_3.png)
+   ![Image](../../static/img/docs/f6f9a30f-1310-4f65-8daa-3609e9f8510f/image_3.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -51,4 +51,3 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 
 **Q:** What should I do if information for an endpoint is not present in the dataview?  
 **A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)" against the Windows machine and re-check the dataview after the successful completion of the script.
-

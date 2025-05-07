@@ -62,8 +62,8 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.  
 **Limit To:** `Server Role - AD - Infrastructure Master`  
 
-![Image 1](../../../static/img/docs/de574ff4-5a24-4ccd-83d3-499b1b274893/image_1.png)  
-![Image 2](../../../static/img/docs/de574ff4-5a24-4ccd-83d3-499b1b274893/image_2.png)  
+![Image 1](../../../static/img/docs/de574ff4-5a24-4ccd-83d3-499b1b274893/image_1.webp)  
+![Image 2](../../../static/img/docs/de574ff4-5a24-4ccd-83d3-499b1b274893/image_2.webp)  
 
 ---
 

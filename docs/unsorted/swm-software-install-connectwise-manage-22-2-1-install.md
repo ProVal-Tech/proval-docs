@@ -16,7 +16,7 @@ This document outlines the process to install or upgrade the current ConnectWise
 
 ## Sample Run
 
-![Sample Run](../../static/img/docs/9f2510e4-8cc1-40d6-a7bc-a5098073159c/image_1.png)
+![Sample Run](../../static/img/docs/9f2510e4-8cc1-40d6-a7bc-a5098073159c/image_1.webp)
 
 ## Dependencies
 

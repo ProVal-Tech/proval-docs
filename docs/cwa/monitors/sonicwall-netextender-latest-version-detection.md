@@ -21,4 +21,3 @@ This monitor schedules the [Script - Application - Latest Version [Winget]](/doc
 ## Target
 
 Windows Workstation - Only one workstation is needed for this monitor because it is only required to fetch the latest version.
-

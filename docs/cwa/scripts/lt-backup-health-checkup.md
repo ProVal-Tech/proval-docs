@@ -16,7 +16,7 @@ This script detects the health of LT Backups in the client environment and alert
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/7b0a4072-a682-473a-a708-0b8eecc6d83b/image_1.png)
+![Sample Run](../../../static/img/docs/7b0a4072-a682-473a-a708-0b8eecc6d83b/image_1.webp)
 
 **Schedule it to run once per day.**  
 **Remove "Nightly Database Backup Monitoring [Global]" script from the schedule as we don't want two emails for the same issue.**
@@ -50,4 +50,3 @@ This script detects whether the LT backup ran successfully by checking the backu
 
 - Script log
 - Email
-

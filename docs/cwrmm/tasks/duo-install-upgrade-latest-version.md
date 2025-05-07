@@ -16,8 +16,8 @@ This script will install or update DUO if the currently installed instance is ol
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_1.png)  
-![Sample Run 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_2.png)  
+![Sample Run 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_2.webp)  
 
 ## Dependencies
 
@@ -49,302 +49,302 @@ This script will install or update DUO if the currently installed instance is ol
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_3.png)  
-![Task Creation 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_4.png)  
+![Task Creation 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_3.webp)  
+![Task Creation 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_4.webp)  
 
 **Name:** `DUO Install & Upgrade - Latest Version`  
 **Description:** `This script will install or update DUO if the currently installed instance is older than the latest released version. This script matches the hash of the installer from the official website before deploying it. This script downloads the latest installer from [https://dl.duosecurity.com/duo-win-login-latest.exe](https://dl.duosecurity.com/duo-win-login-latest.exe).`  
 **Category:** `Application`  
-![Task Creation 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_5.png)  
+![Task Creation 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_5.webp)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Step 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_6.png)  
+![Task Step 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_6.webp)  
 
 A blank function will appear.  
-![Task Step 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_7.png)  
+![Task Step 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_7.webp)  
 
 ### Row 1 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `DUOHost` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO Windows Login Host` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_10.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_11.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_10.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_11.webp)  
 
 ### Row 2 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `DUOSKEY` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `Duo Windows Login SKEY` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_12.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_13.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_12.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_13.webp)  
 
 ### Row 3 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `DUOIKEY` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `Duo Windows Login IKEY` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_14.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_15.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_14.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_15.webp)  
 
 ### Row 4 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `AutopushOvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO Autopush Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_16.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_17.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_16.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_17.webp)  
 
 ### Row 5 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `AutopushSvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO Autopush Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_18.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_19.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_18.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_19.webp)  
 
 ### Row 6 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `AutopushWks` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO Autopush Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_20.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_21.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_20.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_21.webp)  
 
 ### Row 7 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `EnableOfflineOvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO EnableOffline Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_22.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_23.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_22.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_23.webp)  
 
 ### Row 8 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `EnableOfflineSvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO EnableOffline Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_24.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_25.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_24.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_25.webp)  
 
 ### Row 9 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `EnableOfflineWks` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO EnableOffline Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_26.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_27.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_26.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_27.webp)  
 
 ### Row 10 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `FailOpenOvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO FailOpen Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_28.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_29.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_28.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_29.webp)  
 
 ### Row 11 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `FailOpenSvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO FailOpen Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_30.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_31.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_30.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_31.webp)  
 
 ### Row 12 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `FailOpenWks` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO FailOpen Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_32.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_33.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_32.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_33.webp)  
 
 ### Row 13 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `RDPOnlyOvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO RDPOnly Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_34.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_35.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_34.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_35.webp)  
 
 ### Row 14 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `RDPOnlySvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO RDPOnly Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_36.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_37.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_36.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_37.webp)  
 
 ### Row 15 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `RDPOnlyWks` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO RDPOnly Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_38.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_39.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_38.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_39.webp)  
 
 ### Row 16 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `SmartCardOvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO SmartCard Ovrr` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_40.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_41.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_40.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_41.webp)  
 
 ### Row 17 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `SmartCardSvr` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO SmartCard Server` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_42.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_43.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_42.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_43.webp)  
 
 ### Row 18 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_8.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_9.webp)  
 
 - Select the `Custom Field` radio button.
 - Set `SmartCardWks` in the `Variable Name` field.
 - Search and select the Client-Level Custom Field `DUO SmartCard Wks` from the Custom Field dropdown menu.
 - Click the `Save` button.  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_44.png)  
-![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_45.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_44.webp)  
+![Task Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_45.webp)  
 
 ### Row 19 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.png)  
+![Task Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.webp)  
 
 Search and select the `PowerShell Script` function.  
-![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_47.png)  
+![Task Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_47.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_48.png)  
+![Task Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_48.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -470,45 +470,45 @@ else {
 }
 ```
 
-![Task Step 7](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_49.png)  
+![Task Step 7](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_49.webp)  
 
 ## Row 20 Logic: If/Then
 
 Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
-![Task Step 8](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_50.png)  
+![Task Step 8](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_50.webp)  
 
 ### Row 20a Condition: Output Contains
 
 Type `ERROR:` in the Value box.  
-![Task Step 9](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_51.png)  
+![Task Step 9](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_51.webp)  
 
 ### Row 20b Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 10](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.png)  
+![Task Step 10](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Task Step 11](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_52.png)  
+![Task Step 11](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_52.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 12](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_53.png)  
+![Task Step 12](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_53.webp)  
 
 - Search and select the Computer-Level Custom Field `DUO Deployment Result` from the Custom Field dropdown menu.
 - Set `Failed` in the `Value` field.  
 - Click the `Save` button.  
-![Task Step 13](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_54.png)  
-![Task Step 14](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_55.png)  
+![Task Step 13](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_54.webp)  
+![Task Step 14](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_55.webp)  
 
 ### Row 20c Function: Script Exit
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 15](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.png)  
+![Task Step 15](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.webp)  
 
 Search and select the `Script Exit` function.  
-![Task Step 16](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_56.png)  
+![Task Step 16](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_56.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 17](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_57.png)  
+![Task Step 17](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_57.webp)  
 
 In the script exit message, simply type  
 ```
@@ -516,21 +516,21 @@ Failed to install the DUO Authentication for Windows Login application. Refer to
 %Output%
 ```
 and click the `Save` button.  
-![Task Step 18](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_58.png)  
+![Task Step 18](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_58.webp)  
 
 ## Row 21 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 19](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_59.png)  
+![Task Step 19](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_59.webp)  
 
 A blank function will appear.  
-![Task Step 20](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_60.png)  
+![Task Step 20](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_60.webp)  
 
 Search and select the `Script Log` function.  
-![Task Step 21](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_61.png)  
+![Task Step 21](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_61.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 22](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_62.png)  
+![Task Step 22](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_62.webp)  
 
 In the script log message, type  
 ```
@@ -538,44 +538,44 @@ Successfully installed the DUO Authentication for Windows Login application. Ref
 %Output%
 ```
 and click the `Save` button.  
-![Task Step 23](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_63.png)  
+![Task Step 23](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_63.webp)  
 
 ## Row 22 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 24](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.png)  
+![Task Step 24](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Task Step 25](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_52.png)  
+![Task Step 25](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_52.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 26](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_53.png)  
+![Task Step 26](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_53.webp)  
 
 - Search and select the Computer-Level Custom Field `DUO Deployment Result` from the Custom Field dropdown menu.
 - Set `Success` in the `Value` field.  
 - Click the `Save` button.  
-![Task Step 27](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_64.png)  
-![Task Step 28](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_65.png)  
+![Task Step 27](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_64.webp)  
+![Task Step 28](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_65.webp)  
 
 ## Row 23 Function: Script Exit
 
 Add a new row by clicking the `Add Row` button.  
-![Task Step 29](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.png)  
+![Task Step 29](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_46.webp)  
 
 Search and select the `Script Exit` function.  
-![Task Step 30](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_56.png)  
+![Task Step 30](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_56.webp)  
 
 The following function will pop up on the screen:  
-![Task Step 31](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_66.png)  
+![Task Step 31](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_66.webp)  
 
 In the script exit message, leave it blank  
 and click the `Save` button.  
-![Task Step 32](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_67.png)  
+![Task Step 32](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_67.webp)  
 
 ## Completed Task
 
-![Completed Task 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_68.png)  
-![Completed Task 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_69.png)  
+![Completed Task 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_68.webp)  
+![Completed Task 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_69.webp)  
 
 ## Implementation
 
@@ -585,30 +585,29 @@ It is suggested to run the task once per week against the group `DUO Auth for Wi
 - Search for `DUO Install & Upgrade - Latest Version` Task.
 - Select the concerned task.
 - Click on `Schedule` to schedule the task/script.  
-![Implementation Step 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_70.png)  
+![Implementation Step 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_70.webp)  
 
 This screen will appear.  
-![Implementation Step 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_71.png)  
+![Implementation Step 2](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_71.webp)  
 
 - Select the `Schedule` button and click the calendar-looking button present in front of the `Recurrence` option.  
-![Implementation Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_72.png)  
+![Implementation Step 3](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_72.webp)  
 
 - Select the `Month(s)` for the `Repeat`, `1` for `Dates`, and click the `OK` button to save the schedule.  
-![Implementation Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_73.png)  
+![Implementation Step 4](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_73.webp)  
 
 - Click the `Select Targets` button to select the concerned target.  
-![Implementation Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_74.png)  
+![Implementation Step 5](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_74.webp)  
 
 - Search and select the [`Duo Auth for Windows Login Deployment`](/docs/c598c18f-25a9-43fd-a7b6-86e8f186c38b) Device Group for the target.  
-![Implementation Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_75.png)  
+![Implementation Step 6](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_75.webp)  
 
 - Click the `Run` button to initiate the schedule.  
-![Implementation Step 7](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_76.png)  
+![Implementation Step 7](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_76.webp)  
 
 ## Output
 
 Custom Field  
-![Output 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_77.png)  
+![Output 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_77.webp)  
 
 Script Log  
-

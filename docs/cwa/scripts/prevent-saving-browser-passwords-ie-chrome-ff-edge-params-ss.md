@@ -22,7 +22,7 @@ There's an additional feature available to remove/delete the currently saved pas
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/5c889aef-ed96-405b-b44f-511436105f2c/image_1.png)
+![Sample Run](../../../static/img/docs/5c889aef-ed96-405b-b44f-511436105f2c/image_1.webp)
 
 In the above screenshot, the Password Saving Feature for the browsers will be disabled for the computer. Additionally, currently saved passwords will be removed, but the concerned browser will also be closed.
 
@@ -57,4 +57,3 @@ In the above screenshot, the Password Saving Feature for the browsers will be di
 
 - Script Log
 - Script State
-

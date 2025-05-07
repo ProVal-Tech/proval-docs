@@ -40,5 +40,4 @@ This dataview is an easy way to audit which versions of TLS are enabled on the e
 
 ## Sample Screenshot
 
-![Sample Screenshot](../../../static/img/docs/aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f/image_1.png)
-
+![Sample Screenshot](../../../static/img/docs/aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f/image_1.webp)

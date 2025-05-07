@@ -18,7 +18,7 @@ The script will attempt to install Chocolatey and then install or upgrade the ap
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/65f8712b-9f2b-48e3-b719-8561453d9ea0/image_1.png)
+![Sample Run](../../../static/img/docs/65f8712b-9f2b-48e3-b719-8561453d9ea0/image_1.webp)
 
 ## Dependencies
 
@@ -47,4 +47,3 @@ The script will attempt to install Chocolatey and then install or upgrade the ap
 ## Output
 
 - Script log
-

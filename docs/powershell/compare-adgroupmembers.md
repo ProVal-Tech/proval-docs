@@ -40,4 +40,3 @@ Location of output for log, result, and error files.
 - `.\Compare-ADGroupMembers-log.txt`
 - `.\Compare-ADGroupMembers-data.txt`
 - `.\Compare-ADGroupMembers-error.txt`
-

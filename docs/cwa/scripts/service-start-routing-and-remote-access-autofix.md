@@ -22,10 +22,9 @@ This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal -
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/2ce8cbad-6df7-4d57-bb96-50f43f002491/image_1.png)
+![Sample Run](../../../static/img/docs/2ce8cbad-6df7-4d57-bb96-50f43f002491/image_1.webp)
 
 ## Output
 
 - Startup Type: Automatic  
 - Status: Running
-

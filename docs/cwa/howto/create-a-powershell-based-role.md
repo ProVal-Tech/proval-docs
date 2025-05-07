@@ -18,11 +18,11 @@ This document outlines the process of creating roles in ConnectWise Automate usi
 
 1. Navigate to `System` > `Configuration` > `Dashboard`
 
-![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image1.png)
+![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image1.webp)
 
 2. Navigate to `Config` > `Configurations` > `Role Definitions` in `System Dashboard`.
 
-![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image2.png)
+![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image2.webp)
 
 3. Create a simple PowerShell command that you want to use.
 
@@ -49,7 +49,7 @@ This document outlines the process of creating roles in ConnectWise Automate usi
     **Sub-Type**: Role
     **Applicable OS**: Windows
 
-    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image3.png)
+    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image3.webp)
 
 5. Convert the PowerShell string into the Detection string to be used.
     
@@ -66,14 +66,14 @@ This document outlines the process of creating roles in ConnectWise Automate usi
     **Operator**: `Equals`
     **Comparator**: `1`
 
-    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image4.png)
+    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image4.webp)
 
 7. Click the `Add` button to create the role.
 
-    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image5.png)
+    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image5.webp)
 
 8. Reload the system cache.
 
-    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image6.png)
+    ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image6.webp)
 
 9. The role will take two to three hours to be detected on the computers. 

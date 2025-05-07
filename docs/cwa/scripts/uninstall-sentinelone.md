@@ -16,7 +16,7 @@ This document provides a script designed to uninstall the SentinelOne agent from
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_1.png)
+![Sample Run](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_1.webp)
 
 ## Global Variables
 
@@ -27,4 +27,3 @@ This document provides a script designed to uninstall the SentinelOne agent from
 ## Output
 
 - Script log
-

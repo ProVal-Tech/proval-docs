@@ -30,4 +30,3 @@ Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - 
 | PurchaseDate       | datetime | Purchase Date of the Computer/Configuration returned from CW Manage.                         |
 | ExpirationDate     | datetime | Warranty Expiration Date of the Computer/Configuration returned from CW Manage.              |
 | ScriptRunTime      | datetime | Data Collection Time.                                                                         |
-

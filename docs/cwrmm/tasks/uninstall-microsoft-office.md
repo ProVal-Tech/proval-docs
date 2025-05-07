@@ -18,17 +18,17 @@ CW RMM implementation of [Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7f
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_1.png)
+![Sample Run](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_1.webp)
 
 **To remove all installed versions:**
 
-![Remove All](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_2.png)
+![Remove All](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_2.webp)
 
 **To remove selected versions:**
 
-![Remove Selected 1](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_3.png)
+![Remove Selected 1](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_3.webp)
 
-![Remove Selected 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_4.png)
+![Remove Selected 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_4.webp)
 
 ## Dependencies
 
@@ -40,15 +40,15 @@ CW RMM implementation of [Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7f
 |---------|--------------------------------|-------------------------------------------------------------|----------|---------|---------------|-----------------------------------------------------------------------------------------------|
 | Version | - All                          | - 2003 - 2007 - 2010 - 2013 - 2016 - C2R - All             | True     | All     | Text String   | Office Version to remove. Leaving it blank is equivalent to `All`.                          |
 
-![User Parameters](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_5.png)
+![User Parameters](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_5.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation 1](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_6.png)
+![Task Creation 1](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_6.webp)
 
-![Task Creation 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_7.png)
+![Task Creation 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_7.webp)
 
 **Name:** `Uninstall Microsoft Office`
 
@@ -56,7 +56,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 **Category:** `Application`
 
-![Task Creation 3](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_8.png)
+![Task Creation 3](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_8.webp)
 
 ## Parameters
 
@@ -64,39 +64,39 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_9.png)
+![Add Parameter](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_9.webp)
 
 This screen will appear.
 
-![Parameter Screen](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_10.png)
+![Parameter Screen](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_10.webp)
 
 - Set `Version` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_11.png)
+![Save Parameter](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_11.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_12.png)
+![Add Row](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_12.webp)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_13.png)
+![Blank Function](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_13.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_14.png)
+![Select PowerShell](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_14.webp)
 
-![PowerShell Function](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_15.png)
+![PowerShell Function](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_15.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Function Popup](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_16.png)
+![PowerShell Function Popup](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_16.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
@@ -173,37 +173,37 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Execution](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_17.png)
+![Execution](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_17.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_18.png)
+![Add Row 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_18.webp)
 
 A blank function will appear.
 
-![Blank Function 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_19.png)
+![Blank Function 2](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_19.webp)
 
 Search and select the `Script Log` function.
 
-![Select Script Log](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_20.png)
+![Select Script Log](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_20.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Popup](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_21.png)
+![Script Log Popup](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_21.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_22.png)
+![Script Log Save](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_22.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_23.png)
+![Save Script](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_23.webp)
 
 ## Completed Script
 
-![Completed Script](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_24.png)
+![Completed Script](../../../static/img/docs/3ebba7bf-e121-40d0-b06e-2090ebdb9780/image_24.webp)
 
 ## Output
 

@@ -18,7 +18,7 @@ This script audits the recovery keys for each encrypted drive on an agent and ad
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5/image_1.png)
+![Sample Run](../../../static/img/docs/bc22877d-262a-47f7-8d2f-7e69f07c92e5/image_1.webp)
 
 ## Dependencies
 
@@ -45,4 +45,3 @@ This script audits the recovery keys for each encrypted drive on an agent and ad
 - Script log
 - Role
 - Dataview
-

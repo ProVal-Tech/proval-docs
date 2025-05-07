@@ -30,11 +30,11 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
 
 1. **Create Dynamic Groups:**
 
-   ![Dynamic Groups](../../../static/img/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05/image_1.png)
+   ![Dynamic Groups](../../../static/img/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05/image_1.webp)
 
 2. **Reboot Prompter Deployment - Auto**
 
-   ![Reboot Prompter Deployment](../../../static/img/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05/image_2.png)
+   ![Reboot Prompter Deployment](../../../static/img/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05/image_2.webp)
 
    **Criteria:**
 
@@ -43,5 +43,4 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
    - The agent available equals True.
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
-
 

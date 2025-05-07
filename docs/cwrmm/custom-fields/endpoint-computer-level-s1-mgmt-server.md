@@ -26,6 +26,5 @@ Computer Level SentinelOne Management Server. Updated by the [SentinelOne Manage
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_1.png)  
-![Screenshot 2](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_2.webp)

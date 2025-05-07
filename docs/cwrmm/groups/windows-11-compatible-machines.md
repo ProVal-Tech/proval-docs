@@ -21,43 +21,42 @@ This document describes how to identify Windows 10 computers that are compatible
 ## Group Creation 
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_1.png)
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_2.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_2.webp)  
    This page will appear after clicking the `Dynamic Group` button:  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_3.png)
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_3.webp)
 
 3. Set the group name to `Windows 11 Compatible Machines`.  
    Description: `Windows 10 computers that are compatible with the Windows 11 upgrade.`  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_4.png)
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_4.webp)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_5.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_5.webp)  
    This search box will appear.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_6.png)
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_6.webp)
 
 5. Search and select the `Windows 11 compatible` custom field from the search box.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_7.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_7.webp)  
    Set `Yes` in the comparison condition.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_8.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_8.webp)  
    **Condition:** `Enable Windows 11 Compatible` `Contains any of` `Yes`
 
 6. Click the `+ Add Criteria` button.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_9.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_9.webp)  
    A new search box will appear.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_10.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_10.webp)  
    Search and select the `OS` criteria.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_11.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_11.webp)  
    Select `Microsoft Windows 10` in the comparison condition.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_12.png)  
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_12.webp)  
    **Condition:** `OS` `Contains any of` `Microsoft Windows 10`
 
 7. Click the `Save` button to save/create the group.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_13.png)
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_13.webp)
 
 ## Completed Group 
 
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_14.png)  
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_15.png)
-
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_14.webp)  
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_15.webp)

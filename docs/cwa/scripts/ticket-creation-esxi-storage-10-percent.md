@@ -22,7 +22,7 @@ This script is designed to be monitor-driven only and should never be manually r
 
 The only dependency for this script is that the monitor triggering the script must have the network deviceID reported as the field name. The script will gather all other necessary information.
 
-![Image](../../../static/img/docs/61158e8d-5349-418a-9cd8-81685d622846/image_1.png)
+![Image](../../../static/img/docs/61158e8d-5349-418a-9cd8-81685d622846/image_1.webp)
 
 ## Process
 

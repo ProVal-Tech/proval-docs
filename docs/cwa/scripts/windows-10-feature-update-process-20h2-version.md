@@ -18,7 +18,7 @@ This script is used to upgrade a Windows 10 operating system to a specific Featu
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/c182b594-6dab-4c45-8aca-67807dbd23ab/image_1_1.png)
+![Sample Run](../../../static/img/docs/c182b594-6dab-4c45-8aca-67807dbd23ab/image_1_1.webp)
 
 ## Variables
 
@@ -55,4 +55,3 @@ This script is used to upgrade a Windows 10 operating system to a specific Featu
 ## Output
 
 - Script log
-

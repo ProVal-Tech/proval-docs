@@ -17,18 +17,18 @@ This document is crafted to walk you through the utilization of the `Template - 
 1. Export the `Template - MSI Deployment` script from our environment and import it to the client environment.
 
 2. Right-click on the script and select Duplicate.  
-   ![Duplicate Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_1.png)
+   ![Duplicate Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_1.webp)
 
 3. Rename the copied script to something pertaining to what you are installing, as shown below:  
-   ![Rename Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_2.png)  
-   ![Rename Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_3.png)
+   ![Rename Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_2.webp)  
+   ![Rename Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_3.webp)
 
 4. Right-click the newly renamed software install script and select Send To → Script Folder → Send to the 'ProVal - Client Specific' folder.  
-   ![Send to Script Folder](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_4.png)  
-   ![Send to ProVal Folder](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_5.png)
+   ![Send to Script Folder](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_4.webp)  
+   ![Send to ProVal Folder](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_5.webp)
 
 5. Delete the template script from the environment to ensure we do not have any issues with the script getting updated and replacing the modifications done.  
-   ![Delete Template Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_6.png)
+   ![Delete Template Script](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_6.webp)
 
 6. Figure out the complete command to silently deploy the application.
 
@@ -37,7 +37,7 @@ This document is crafted to walk you through the utilization of the `Template - 
 8. Verify the authenticity of the download URL for the application. The download URL may either be the custom link generated to retrieve a file from LTShare or the direct download link for the .msi package.
 
 9. Set the required values in the Dynamic Properties of the script.  
-   ![Dynamic Properties](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_7.png)  
+   ![Dynamic Properties](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_7.webp)  
 
    - `ticketcreationcategory`: **(Step 3)**: This is used to set an ID for a ticket category, which is necessary to activate the ticketing system for any failures. Setting it to 0 will disable the ticketing feature of the script.
    - `DownloadURL`: **(Step 5)**: This is the URL from which the .msi package can be downloaded.
@@ -69,10 +69,9 @@ With this information at hand, we are now equipped to deploy the application. So
    **SoftwareName**: `An Msi Application`  
    **AppName**: `msipackage`  
    **AdditionalParameters**: `/noreboot /Allowsomething=1 /AllUsers AcceptEULA`  
-   ![Dynamic Variables](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_8.png)  
+   ![Dynamic Variables](../../../static/img/docs/58020b8e-e16f-433c-8dad-e10b59e2d8d7/image_8.webp)  
    **You do not need to convert the symbols. The conversion portrayed in the screenshot is performed by Automate itself.**
 
 6. Save the script and test it.
 
 7. After the script is prepared, please verify with the partner or consultant whether they would like the script to also generate a ticket in case of failure. If needed, assign the appropriate ticket category ID to the `ticketcreationcategory` variable.
-

@@ -18,7 +18,7 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f65ad1a0-8f26-40f7-8d72-0e753243c01e/image_1.png)
+![Sample Run](../../../static/img/docs/f65ad1a0-8f26-40f7-8d72-0e753243c01e/image_1.webp)
 
 ## Dependencies
 
@@ -35,4 +35,3 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 ## Output
 
 - Script log
-

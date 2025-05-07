@@ -53,4 +53,3 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTime           | Last run time of the script to gather data.                                                               |
 
-

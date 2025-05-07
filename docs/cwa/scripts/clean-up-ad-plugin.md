@@ -33,4 +33,3 @@ Additionally, it removes all rows with `ObjectType` 1 or 2 from `plugin_ad_entri
 
 1. Import the 'Clean Up AD Plugin' script.
 2. Schedule the client script to run.
-

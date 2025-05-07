@@ -28,7 +28,7 @@ This script gathers information about user profiles. The data is stored in the c
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/91d80bf6-68c8-4025-b285-d07390b860c8/image_1.png)
+![Sample Run](../../../static/img/docs/91d80bf6-68c8-4025-b285-d07390b860c8/image_1.webp)
 
 ## Dependencies
 
@@ -40,4 +40,3 @@ This script gathers information about user profiles. The data is stored in the c
 - Script log
 - Local file on computer
 - Dataview
-

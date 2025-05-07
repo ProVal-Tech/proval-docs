@@ -27,15 +27,15 @@ The script conducts an audit of the computer for applications supported by Winge
 ## Update Notice: 02-April-2025
 
 A new column has been introduced to pvl_winget_audit table. To update the table's structure, run the script with the Set_Environment parameter set to 1 after importing it.  
-![First Run](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_1.png)
+![First Run](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_1.webp)
 
 ## Sample Run
 
 **First Run:** Run the script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) table used by the solution.  
-![First Run](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_1.png)
+![First Run](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_1.webp)
 
 **Regular Execution:**  
-![Regular Execution](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_2.png)
+![Regular Execution](../../../static/img/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91/image_2.webp)
 
 ## Dependencies
 
@@ -63,4 +63,3 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 - Script log
 - Custom table
 - Dataview
-

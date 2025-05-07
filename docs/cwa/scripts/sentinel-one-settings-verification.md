@@ -16,7 +16,7 @@ This document outlines how to obtain the site key and URL associated with the ta
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_1.png)
+![Sample Run](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_1.webp)
 
 ## Variables
 
@@ -63,11 +63,11 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 **Incorrect Configuration:**
 
-![Incorrect Configuration](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_2.png)
+![Incorrect Configuration](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_2.webp)
 
 **Correct Configuration:**
 
-![Correct Configuration](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_3.png)
+![Correct Configuration](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_3.webp)
 
 ## Output
 
@@ -75,11 +75,11 @@ Do not encrypt the EDF used in the Global Variable `Client_Level_Sentinel_One_To
 
 The script will use the ticket creation category mentioned in the monitor [CWM - Automate - Internal Monitor - Execute Script - Sentinel One Settings Verification](/docs/a115d376-6bc5-4392-8407-a6a5448445cf).
 
-![TicketCreationCategory](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_4.png)
+![TicketCreationCategory](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_4.webp)
 
 ### Ticket
 
-![Ticket](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_5.png)
+![Ticket](../../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_5.webp)
 
 ### Example: 
 

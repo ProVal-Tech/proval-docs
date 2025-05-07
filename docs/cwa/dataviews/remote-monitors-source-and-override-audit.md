@@ -27,4 +27,3 @@ This dataview shows all the Remote Monitor Sources and their Override status.
 | Monitor Source           | Displays the source of the monitor, whether it's coming from a group, Ignite, Local, or Override. |
 | Monitor Override Status   | Displays the Monitor Override status: Override or Normal.                 |
 | Alert Template           | Displays the name of the Alert template applied to the monitor set.       |
-

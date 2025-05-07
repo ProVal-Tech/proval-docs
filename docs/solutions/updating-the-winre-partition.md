@@ -40,19 +40,19 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 
 2. **Reload the system cache:**
 
-   ![Reload System Cache](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_1.png)
+   ![Reload System Cache](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_1.webp)
 
 3. **Enable Solution:**
 
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:  
      [Internal Monitor - Update WinRE Partition Detection](/docs/857bac8a-a3f1-408d-9b1f-73b0e5ec6e07)  
-     ![Setup Internal Monitor](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_2.png)  
+     ![Setup Internal Monitor](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_2.webp)  
 
    - Set up with the **△ Custom - Execute Script - WinRE Partition Updating** alert template.  
-     ![Setup Custom Alert Template](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_3.png)  
+     ![Setup Custom Alert Template](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_3.webp)  
 
    - Right-click and select Run Now to start the monitor.  
-     ![Run Now](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_4.png)  
+     ![Run Now](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_4.webp)  
 
    - The automation will automatically update the WinRE partition on all supported OS.
 
@@ -64,13 +64,12 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
 5. **Ticket/Email Creation:**
 
    - The script has a feature to enable ticketing or sending emails. To set ticketing, it is required to set the ticket category in the monitor itself:  
-     ![Set Ticket Category](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_5.png)  
+     ![Set Ticket Category](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_5.webp)  
 
    - Once the ticket category is set, adjust the global parameter value to 1 in the script for EnableTicketing:  
-     ![Set Enable Ticketing](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_6.png)  
+     ![Set Enable Ticketing](../../static/img/docs/c0aa9260-1daa-4614-9daf-1c898315b3c8/image_6.webp)  
 
    - To send emails, it is mandatory to set the email address. Multiple email addresses can be set, separated by semicolons:  
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](mailto:ghi@jkl.com); [mno@pqr.com](mailto:mno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failure email if you need an email only on failure, set 1 for success email if you want an email for success, or set 1 for both for emails on both success and failure.
-
 

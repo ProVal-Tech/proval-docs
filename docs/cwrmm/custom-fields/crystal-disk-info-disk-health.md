@@ -26,11 +26,10 @@ This custom field is used to store and display the results of the [CW RMM - Task
 
 ## Screenshot
 
-![Screenshot](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_1.png)
+![Screenshot](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_1.webp)
 
-![Screenshot](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_2.png)
+![Screenshot](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_2.webp)
 
 ## Sample Value
 
-![Sample Value](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_3.png)
-
+![Sample Value](../../../static/img/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01/image_3.webp)

@@ -22,12 +22,12 @@ This component will run the Office Scrub utility and remove all or specified Mic
 
 1. Export the component from ProVal's Datto RMM instance.  
    **Name:** Microsoft Office - Uninstall  
-   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_1.png)  
+   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_1.webp)  
    The export will download the necessary component (cpt) file.  
-   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_2.png)  
+   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_2.webp)  
    
 2. Import this component file into the partner's Datto RMM instance.  
-   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_3.png)  
+   ![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_3.webp)  
 
 **Proval Plug & Play:** This component requires no configuration once imported.
 
@@ -35,12 +35,12 @@ This component will run the Office Scrub utility and remove all or specified Mic
 
 The component will prompt with several options during a job.  
 Select the versions you wish to uninstall.  
-![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_4.png)  
+![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_4.webp)  
 
 ## Output
 
 A job status of **Success** is expected.  
-![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_5.png)  
+![Image](../../../static/img/docs/e2ca200f-885f-412e-b214-f798bb47ea67/image_5.webp)  
 
 A job status of **Expired** may also occur. If "Expired" is displayed, verification will be required to determine if the uninstall was successful.  
 
@@ -49,4 +49,3 @@ StdOut is not expected.
 
 **StdErr**  
 StdErr is not expected.  
-

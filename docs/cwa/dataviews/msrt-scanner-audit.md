@@ -31,4 +31,3 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | Last Contact           | The last contact of the agent with the RMM          |
 | MSRT Scanner Result     | MSRT tool scanner or tool disabling result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
-

@@ -25,34 +25,34 @@ This document will help in identifying incorrect configurations that can cause V
 
 &nbsp;
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_9.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_9.webp)  
 
 3. Confirm that the VMware host's IP address appears under the **Network Devices** section for the client in the **Control Center**.  
 
 &nbsp;
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_10.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_10.webp)  
 
 4. If it does not, correct the IP range being scanned by the probe from the **Network Probe** tile > **Settings**. Once these settings have been modified, click **Save** and then click **Rescan Network**.  
 
 &nbsp;
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_11.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_11.webp)  
 
 ### Credential Configuration
 
 5. Confirm that you have configured the proper credentials for the VMware host. This can be done from the **Global Settings**.  
    The Global Credentials are for instances where you have an ESXi password that you share between multiple clients (not recommended).
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_12.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_12.webp)  
 
 The recommended option is to manually set the credentials through the Local Credentials section and select the appropriate password from the client or location:
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_13.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_13.webp)  
 
 If you do not have credentials saved at the client or location, you can add them quickly by hitting the dropdown and selecting "New Credential":
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_14.png) ![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_15.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_14.webp) ![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_15.webp)  
 
 If the above steps are fine, please check the following:
 
@@ -68,9 +68,9 @@ If the above steps are fine, please check the following:
 
 4. Try to manually apply the credentials to the network device itself and run a test through the network device.  
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_16.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_16.webp)  
 
-![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_17.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_17.webp)  
 
 If none of the above steps help, please reach out to us at [Support@provaltech.com](mailto:Support@provaltech.com).  
 

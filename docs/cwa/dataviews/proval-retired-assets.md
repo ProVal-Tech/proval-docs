@@ -21,4 +21,3 @@ All columns are exactly the same as the stock Retired Assets dataview, with the 
 | Column  | Description                                             |
 |---------|---------------------------------------------------------|
 | Comment | The comment associated with the retirement of the agent. |
-

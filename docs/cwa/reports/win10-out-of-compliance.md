@@ -75,7 +75,7 @@ List the report parts used. If custom report parts were designed during report c
 Header, footer
 
 ### Sample Report
-![Sample Report](../../../static/img/docs/4203838c-6e42-42a4-9a35-d6e1e9ea41b7/image_1.png)
+![Sample Report](../../../static/img/docs/4203838c-6e42-42a4-9a35-d6e1e9ea41b7/image_1.webp)
 
 ### Export Attachment
 Attach the export XML of the report to this document.

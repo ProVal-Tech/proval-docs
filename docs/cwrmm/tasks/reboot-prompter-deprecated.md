@@ -16,9 +16,9 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_1.png)
+![Sample Run 1](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_1.webp)
 
-![Sample Run 2](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_2.png)
+![Sample Run 2](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_2.webp)
 
 ## Implementation
 
@@ -26,34 +26,34 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_3.png)
+![Create Task](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_3.webp)
 
 **Name:** Reboot Prompter  
 **Description:** Shows a Popup on the user's screen  
 **OS Supported:** Windows  
 **Category:** Custom
 
-![Task Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_4.png)
+![Task Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_4.webp)
 
 ## Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_5.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_5.webp)
 
 ### Row 1: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `Creating the working directory for the prompter script`.
 
-![Script Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_7.png)
+![Script Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_7.webp)
 
 ### Row 2: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_9.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_9.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -79,17 +79,17 @@ if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityRefere
 
 ### Row 3: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `Installing the supported .NET version`.
 
-![Installation Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_10.png)
+![Installation Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_10.webp)
 
 ### Row 4: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_11.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_11.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -119,90 +119,90 @@ if (!($dotNetVersions -match "WindowsDesktop/.App 6")) {
 
 ### Row 5: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 5a: Condition: Output Contains
 
 In the IF part, enter `Installation failed` in the right box of the "Output Contains" part.
 
-![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_14.png)
+![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_14.webp)
 
 ### Row 5b: Condition: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_15.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_15.webp)
 
 In the script exit message, simply type `The supported .NET version has failed to install.`
 
-![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_16.png)
+![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_16.webp)
 
 ### Row 6: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `%Output% Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler.`
 
-![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_17.png)
+![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_17.webp)
 
 ### Row 7: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_18.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_18.webp)
 
 Click on Custom Field > Choose `RebootForceTimeDelaySeconds`. Then set the variable name as `RebootForceTimeDelaySeconds`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_19.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_19.webp)
 
 ### Row 8: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_20.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_20.webp)
 
 Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name as `RebootPromptCount`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_21.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_21.webp)
 
 ### Row 9: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_22.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_22.webp)
 
 Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as `Prompter_Title`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_23.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_23.webp)
 
 ### Row 10: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_24.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_24.webp)
 
 Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as `Prompter_Timeout`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_25.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_25.webp)
 
 ### Row 11: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_26.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_26.webp)
 
 Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable name as `Prompter_HeaderImage`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_27.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_27.webp)
 
 ### Row 12: Function: Set Pre-Defined Variable
 
-![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_28.png)
+![Set Pre-Defined Variable](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_28.webp)
 
 Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as `Prompter_Icon`.
 
-![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_29.png)
+![Variable Name](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_29.webp)
 
 ### Row 13: Function: Create File
 
-![Create File](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_30.png)
+![Create File](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_30.webp)
 
 Create a file.  
 **Path:** `C:/ProgramData/_Automation/app/Prompter/Prompter.ps1`
 
-![Create File Path](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_31.png)
+![Create File Path](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_31.webp)
 
 ```powershell
 $ProjectName = 'Prompter'
@@ -281,17 +281,17 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
 
 ### Row 14: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `Checking the status of Prompter file creation in the working directory`.
 
-![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_32.png)
+![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_32.webp)
 
 ### Row 15: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_33.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_33.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -307,39 +307,39 @@ if ((Test-Path -Path $file) -eq 'True') {
 
 ### Row 16: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `%output%`.
 
-![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.png)
+![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.webp)
 
 ### Row 17: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 17a: Condition: Output Contains
 
 In the IF part, enter `file failed to create` in the right box of the "Output Contains" part.
 
-![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_35.png)
+![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_35.webp)
 
 ### Row 17b: Condition: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_15.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_15.webp)
 
 In the script exit message, simply type `%output%`.
 
-![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_36.png)
+![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_36.webp)
 
 ### Row 18: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_37.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_37.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -372,29 +372,29 @@ try {
 
 ### Row 19: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `%output%`.
 
-![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.png)
+![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.webp)
 
 ### Row 20: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 20a: Condition: Custom Field
 
 In the IF part, enter `@RebootPromptCount@` in the right box of the "Custom Field" part where the custom field is `Prompter_Counter`.
 
-![Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_38.png)
+![Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_38.webp)
 
 ### Row 20b: Condition: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 1200 seconds.
 
@@ -406,7 +406,7 @@ start-sleep -Seconds 900
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -428,47 +428,47 @@ In this window, search for the `Prompter_Counter` field.
 **Custom Field:** `Prompter_Counter`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_39.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_39.webp)
 
 ### Row 23: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 23a: Condition: Output Contains
 
 In the IF part, enter `Task created successfully` in the right box of the "Output Contains" part.
 
-![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_40.png)
+![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_40.webp)
 
 ### Row 23b: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 23b.1: Condition: Custom Field
 
 In the IF part, enter `0` in the right box of the "Custom Field" part where the custom field is `Prompter_Counter`.
 
-![Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_41.png)
+![Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_41.webp)
 
 ### Row 23b.2: Condition: Script Log
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_42.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_42.webp)
 
 In the script exit message, simply type `The system will be rebooting in @RebootForceTimeDelaySeconds@.`
 
-![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_43.png)
+![Script Exit Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_43.webp)
 
 ### Row 23b.3: Condition: PowerShell Script
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -492,13 +492,13 @@ In this window, search for the `Prompter_Logging` field.
 **Custom Field:** `Prompter_Logging`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.webp)
 
 ### Row 23b.5: Condition: PowerShell Script
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -522,13 +522,13 @@ In this window, search for the `Prompter_UserAction` field.
 **Custom Field:** `Prompter_UserAction`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.webp)
 
 ### Row 23b.7: Condition: PowerShell Script
 
 Add a new row by clicking on the Add row button. Set Function to command prompt.
 
-![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_45.png)
+![Add Row](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_45.webp)
 
 Paste in the following Command Prompt script and set the expected time of script execution to 1800 seconds.
 
@@ -545,7 +545,7 @@ In this window, search for the `Prompter_RebootPending` field.
 **Custom Field:** `Prompter_RebootPending`  
 **Value:** `False`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_46.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_46.webp)
 
 ### Row 23b.9: Conditions: Script Exit
 
@@ -553,13 +553,13 @@ Add a new row by clicking on the Add row button.
 
 Set Function Script Exit and keep it empty so that the script exits normally.
 
-![Script Exit](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_47.png)
+![Script Exit](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_47.webp)
 
 ### Row 23c: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_48.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_48.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 3600 seconds.
 
@@ -608,29 +608,29 @@ for ($j = 0; $j -lt 3; $j++) {
 
 ### Row 23d: Function: Script Log
 
-![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.png)
+![Script Log](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_6.webp)
 
 In the script log message, simply type `%output%`.
 
-![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.png)
+![Log Message](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_34.webp)
 
 ### Row 23e: Logic: If/Then
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_12.webp)
 
-![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.png)
+![If/Then Logic](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_13.webp)
 
 ### Row 23e.1: Condition: Output Contains
 
 In the IF part, enter `is not running and has been deleted` in the right box of the "Output Contains" part.
 
-![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_49.png)
+![Output Contains](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_49.webp)
 
 ### Row 23e.2: Condition: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_50.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_50.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -652,13 +652,13 @@ In this window, search for the `Prompter_Counter` field.
 **Custom Field:** `Prompter_Counter`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.webp)
 
 ### Row 23e.4: Condition: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_51.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_51.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -680,13 +680,13 @@ In this window, search for the `Prompter_Logging` field.
 **Custom Field:** `Prompter_Logging`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.webp)
 
 ### Row 23e.6: Condition: PowerShell Script
 
-![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.png)
+![PowerShell Script](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_8.webp)
 
-![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_52.png)
+![PowerShell Script Details](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_52.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
 
@@ -708,15 +708,14 @@ In this window, search for the `Prompter_UserAction` field.
 **Custom Field:** `Prompter_UserAction`  
 **Value:** `%output%`
 
-![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.png)
+![Set Custom Field](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_44.webp)
 
 ### Row 24: Complete
 
 Once all items are added, please save the task. The final task should look like the below screenshots.
 
-![Final Task 1](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_53.png)
+![Final Task 1](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_53.webp)
 
-![Final Task 2](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_54.png)
+![Final Task 2](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_54.webp)
 
-![Final Task 3](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_55.png)
-
+![Final Task 3](../../../static/img/docs/1aae141d-3854-4dde-b35f-69db58204fed/image_55.webp)

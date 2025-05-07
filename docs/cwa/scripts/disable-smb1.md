@@ -20,9 +20,8 @@ Windows OS
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/70c7fa58-20bf-47b1-bbeb-aae491390406/image_1.png)
+![Sample Run](../../../static/img/docs/70c7fa58-20bf-47b1-bbeb-aae491390406/image_1.webp)
 
 ## Output
 
 - Script log
-

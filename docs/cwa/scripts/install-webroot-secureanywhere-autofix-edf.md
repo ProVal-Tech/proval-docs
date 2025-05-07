@@ -16,7 +16,7 @@ This script deploys Webroot to the agents using the "Webroot site keycode" clien
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/cddb5b54-a76e-4d74-8226-8f536d8f0eb4/image_1.png)
+![Sample Run](../../../static/img/docs/cddb5b54-a76e-4d74-8226-8f536d8f0eb4/image_1.webp)
 
 ## Dependencies
 
@@ -41,4 +41,3 @@ Please follow the documents below to obtain the Webroot Site Keycode and the Web
 ## Output
 
 - Script log
-

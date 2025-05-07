@@ -16,9 +16,8 @@ This script disables the Sign-In option for all user accounts. It removes the re
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/9272a9b1-8715-461a-9638-99b4c5967a03/image_1.png)
+![Sample Run](../../../static/img/docs/9272a9b1-8715-461a-9638-99b4c5967a03/image_1.webp)
 
 ## Output
 
 - Script log
-

@@ -18,11 +18,11 @@ This document will guide you through the process of adding a requested Windows p
 
 - Setting a user-scoped path variable
 
-![User Scoped Path Variable](../../../static/img/docs/838d8f61-038e-4569-aaf1-c72a1072670a/image_1.png)
+![User Scoped Path Variable](../../../static/img/docs/838d8f61-038e-4569-aaf1-c72a1072670a/image_1.webp)
 
 - Setting more than one machine-scoped path variable.
 
-![Machine Scoped Path Variables](../../../static/img/docs/838d8f61-038e-4569-aaf1-c72a1072670a/image_2.png)
+![Machine Scoped Path Variables](../../../static/img/docs/838d8f61-038e-4569-aaf1-c72a1072670a/image_2.webp)
 
 **NOTE:** The scope is not mandatory; if left blank, the scope will default to the machine-scoped variable.
 
@@ -48,4 +48,3 @@ Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](/do
 ## Output
 
 - Script log
-

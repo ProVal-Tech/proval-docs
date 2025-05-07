@@ -25,15 +25,14 @@ CW Automate must have the "new" patch manager enabled. This data uses the Comput
 To force update this table:
 1. From the Control Center window, click on "Help" and then "Server Status". This will open up the server status menu. In the server status menu, there are several available buttons along the bottom of the window.
 
-![image](/img/docs/127ea64b-5538-4fd4-92fb-143ff6ce1216/image.png)
+![image](/img/docs/127ea64b-5538-4fd4-92fb-143ff6ce1216/image.webp)
 
 2. Click the option for "Do Patch Report Calculations" - this command will tell Automate to run the stored procedure to update the patching metrics. This process may take a few minutes to update the required tables.
 
-![image](/img/docs/127ea64b-5538-4fd4-92fb-143ff6ce1216/image2.png)
+![image](/img/docs/127ea64b-5538-4fd4-92fb-143ff6ce1216/image2.webp)
 
 [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines that patch via CW Automate.
-

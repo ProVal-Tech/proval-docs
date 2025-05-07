@@ -28,9 +28,9 @@ This should target the group 'Domain Controllers.'
 ## Implementation
 
 1. From the left bar, select **Alert Management** -> **Monitor**  
-   ![Step 1 Image 1](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_1.png)  
+   ![Step 1 Image 1](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_1.webp)  
    Then click **Create Monitor**  
-   ![Step 1 Image 2](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_2.png)  
+   ![Step 1 Image 2](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_2.webp)  
 
 2. Fill in the mandatory fields on the left side.  
    - **Name:** Weak Passwords Detected  
@@ -38,17 +38,17 @@ This should target the group 'Domain Controllers.'
    - **Type:** Custom Field  
    - **Severity:** Critical Non-Impact Alerts  
    - **Family:** Active Directory  
-   ![Step 2 Image](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_3.png)  
+   ![Step 2 Image](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_3.webp)  
 
 3. Fill in the condition on the right side.  
    Follow the screenshot:  
-   ![Step 3 Image](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_4.png)  
+   ![Step 3 Image](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_4.webp)  
 
 4. Select the target.  
    Click on **Select Target:**  
-   ![Step 4 Image 1](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_5.png)  
+   ![Step 4 Image 1](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_5.webp)  
    Then click on **Device Group**, search for the word **Domain**, and select the 'Domain Controllers' group as shown below:  
-   ![Step 4 Image 2](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_6.png)  
+   ![Step 4 Image 2](../../../static/img/docs/827c282a-8701-42f9-87d3-8dbb7372134d/image_6.webp)  
 
 ## Ticketing
 
@@ -57,5 +57,4 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
 

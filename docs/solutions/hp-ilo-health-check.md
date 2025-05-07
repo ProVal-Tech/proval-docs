@@ -69,10 +69,10 @@ To gather information about and monitor the health status of HP iLO devices.
    - [Dataview - HP iLO Checks Not Running](/docs/90498d55-eb8d-45cb-8ea0-90e1729fefc4)
 
 5. Reload the System Cache.  
-   ![Reload System Cache](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_1.png)
+   ![Reload System Cache](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_1.webp)
 
 6. Execute the [Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a) script against an online Windows machine with the `RecreateTable` parameter set to `1` to create the [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6) custom table.  
-   ![Execute Script](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_2.png)
+   ![Execute Script](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_2.webp)
 
 7. Configure the client-level password entries labeled as `iLO Automation Password` for the iLO Devices to be audited. See the documentation for the internal monitor [Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) for more information on how to set up this password entry.
 
@@ -92,5 +92,4 @@ To gather information about and monitor the health status of HP iLO devices.
     Configure the **Optional** content as follows:
     - Navigate to System > Configuration > Dashboard > Management > Scheduled Client Scripts
       - Schedule the [HP iLO Credential Missing Detection](/docs/4d27ff0e-704d-47dd-8c07-3008b7fbfafb) script to run once per week.  
-      ![Schedule Script](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_3.png)
-
+      ![Schedule Script](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_3.webp)

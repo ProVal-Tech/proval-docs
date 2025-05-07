@@ -30,11 +30,11 @@ This script is particularly useful for maintaining system integrity and resolvin
 
 **Example 1:** Running with interactive mode  
 This example shows the script execution with the prompt parameter enabled, allowing user confirmation before restart.  
-![Image1](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image1.png)
+![Image1](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image1.webp)
 
 **Example 2:** Running with automatic restart  
 This example demonstrates the default behavior where the script automatically restarts the system after completion.  
-![Image2](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image2.png)
+![Image2](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image2.webp)
 
 ## User Parameters
 
@@ -44,7 +44,7 @@ This example demonstrates the default behavior where the script automatically re
 
 ## Sample Prompt
 
-![Image3](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image3.png)  
+![Image3](../../../static/img/docs/0377d58a-ff6a-4e1c-8e7f-55b7f9dd2c78/Image3.webp)  
 **Note:** The header image and icon displayed in the prompt will vary based on your environment.
 
 ## Output

@@ -18,9 +18,8 @@ This script disables Office updates by running a PowerShell command.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/e868b055-6f03-438c-a4d3-33a100317fb5/image_1.png)
+![Sample Run](../../../static/img/docs/e868b055-6f03-438c-a4d3-33a100317fb5/image_1.webp)
 
 ## Process
 
 - Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `False`.
-

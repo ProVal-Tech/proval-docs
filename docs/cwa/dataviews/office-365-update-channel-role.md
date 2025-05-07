@@ -126,4 +126,3 @@ FROM
       c.ComputerID
   ) AS dt
 ```
-

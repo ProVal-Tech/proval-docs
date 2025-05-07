@@ -27,7 +27,7 @@ The purpose of this solution is to present a detailed analysis of script failure
 - Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
 - Remove the schedule of the old script if it is scheduled (it may be named the same since it was just updated, but the interval needs to be updated).
 - Schedule the `Script Failure Analysis - 30 Day Retention` to run once per day, preferably around midnight.  
-  ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_1.png)
+  ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_1.webp)
 
 ## Associated Content
 
@@ -51,7 +51,7 @@ The purpose of this solution is to present a detailed analysis of script failure
    - [Dataview - Script Failure Assessment - Last 30 Days](/docs/4a4d8ffa-760b-4e17-a377-df522ff0ba34)
 
 2. Reload the system cache:  
-   ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_2.png)
+   ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_2.webp)
 
 3. Execute the [Script - Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) against any client to create the [pvl_Script_Assesment](/docs/31e58aae-ce62-4440-8319-b22abec4e842) custom table. This script will automatically provide the necessary table permissions.
 
@@ -61,6 +61,5 @@ The purpose of this solution is to present a detailed analysis of script failure
    1. Go to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
    2. Navigate to `System` > `Configuration` > `Dashboard` > `Management` > `Scheduled Client Script`.
    3. Schedule the [Script Failure Analysis - 30 Day Retention](/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0) to run once per day, preferably around midnight, as demonstrated in the `Sample Run` section of the document.  
-      ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_3.png)
-
+      ![Image](../../static/img/docs/9cf10fd3-a3e6-4e85-8eca-f6dd08fb47d5/image_3.webp)
 

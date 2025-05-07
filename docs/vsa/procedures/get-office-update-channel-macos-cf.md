@@ -31,25 +31,24 @@ The data this procedure gathers does not exist by default on macOS. To populate 
 
 1. Export the agent procedure from ProVal's VSA RMM instance  
    - Name: Get Office Update Channel (macOS) [CF]  
-   ![Export Image 1](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_1.png)  
+   ![Export Image 1](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_1.webp)  
    The export will download the necessary XML file.  
-   ![Export Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_2.png)  
+   ![Export Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_2.webp)  
    
 2. Import this XML file into the partner's VSA RMM instance  
-   ![Import Image](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_3.png)  
+   ![Import Image](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_3.webp)  
 
 3. Once imported, create a custom field in the partner environment  
    - Name: cPVAL Office Update Channel  
    - Custom Field Type: String  
-   ![Custom Field Image](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_4.png)  
+   ![Custom Field Image](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_4.webp)  
 
 ## Output
 
 The expected result is a Last Exec Status of success.  
-![Output Image 1](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_5.png)  
+![Output Image 1](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_5.webp)  
 Agent Procedure Log  
-![Output Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_6.png)  
+![Output Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_6.webp)  
 
 Custom Field  
-![Custom Field Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_7.png)  
-
+![Custom Field Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_7.webp)  

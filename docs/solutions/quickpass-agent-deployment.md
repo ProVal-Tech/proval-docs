@@ -34,7 +34,7 @@ The purpose of this document is to install the QuickPass agent on Windows machin
    - `△ Custom - Execute Script - Deploy QuickPass Agent`
 
 4. Reload the System Cache  
-   ![System Cache](../../static/img/docs/65d0dbb6-29c1-4242-841c-1da9b92edab6/image_1.png)
+   ![System Cache](../../static/img/docs/65d0dbb6-29c1-4242-841c-1da9b92edab6/image_1.webp)
 
 5. Configure the solution as follows:
    - Navigate to Automation → Scripts within the CWA Control Center.
@@ -45,4 +45,3 @@ The purpose of this document is to install the QuickPass agent on Windows machin
        - Configure with the alert template: `△ Custom - Execute Script - Deploy QuickPass Agent`.
        - Right-click and Run Now to start the monitor.
    - The following EDFs and System Property should be populated by the client to ensure the solution works. For more details, refer to the document [SWM - Software Install - Script - Deploy QuickPass
-

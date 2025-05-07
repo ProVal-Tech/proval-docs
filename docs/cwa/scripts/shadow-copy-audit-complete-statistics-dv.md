@@ -21,7 +21,7 @@ MD5 File Hash: `E69A5AD2CDCF7B20C7205D4A7BEC08C4`
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766/image_1.png)
+![Sample Run](../../../static/img/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766/image_1.webp)
 
 ## Dependencies
 
@@ -51,4 +51,3 @@ Finally, the script will run the SQL statement against the Automate server to in
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](/docs/59bbf54a-55af-42fa-9e77-cd0b105122de).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](/docs/69110f54-d14f-4691-a68f-56bbc88b5fb3).
-

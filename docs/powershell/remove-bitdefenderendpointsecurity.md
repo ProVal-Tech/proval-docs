@@ -49,4 +49,3 @@ Removes all Bitdefender Endpoint Security from an endpoint when BEST cannot be d
 Location of output for log, result, and error files:
 - `Remove-BitdefenderEndpointSecurity-log.txt`
 - `Remove-BitdefenderEndpointSecurity-Error.txt`
-

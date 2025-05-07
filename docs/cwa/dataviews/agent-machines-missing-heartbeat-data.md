@@ -26,4 +26,3 @@ This Dataview shows all the agents with their heartbeat data and status.
 | Last Heartbeat Time       | Displays the agent's last heartbeat time received in Automate   |
 | Heartbeat Status          | Displays the agent's heartbeat status (Found or Missing)       |
 | Days Since Last Heartbeat  | Displays the count of days since the last heartbeat was received |
-

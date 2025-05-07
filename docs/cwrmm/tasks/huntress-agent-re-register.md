@@ -18,20 +18,20 @@ This task re-registers the Huntress Agent in the portal for the endpoint.
 
 Please create a new "PowerShell" style script to implement this task.
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_1.png)
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_2.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_1.webp)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_2.webp)
 
 **Name:** Huntress Agent (Re-Register)  
 **Description:** This task re-registers the Huntress Agent in the portal for the endpoint.  
 **Category:** Custom
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_3.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_3.webp)
 
 # Script
 
 ## Row 1 Function: Script Log
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_4.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_4.webp)
 
 Input the following:
 
@@ -46,44 +46,44 @@ Input the following:
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.webp)
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
 - Select `Huntress Acct_Key` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_6.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_6.webp)
 
 ## Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.webp)
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
 - Select `Huntress Org_Key` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_7.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_7.webp)
 
 ## Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_5.webp)
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
 - Select `Huntress Tag` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_8.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_8.webp)
 
 ## Row 5 Function: PowerShell Script
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_9.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_9.webp)
 
 Paste in the following PowerShell script and set the expected script execution time to 1800 seconds.
 
@@ -155,7 +155,7 @@ if ($Parameters) {
 #endregion
 ```
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_10.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_10.webp)
 
 ## Step 6 Function: Script Log
 
@@ -167,14 +167,14 @@ if ($Parameters) {
 %Output%
 ```
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.png)
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_12.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.webp)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_12.webp)
 
 ## Step 7 Logic: If/Then
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_13.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_13.webp)
 
 ## ROW 7a Condition: Output Contains
 
@@ -182,7 +182,7 @@ if ($Parameters) {
 - Add another condition with the OR operator and type `ERROR:` in the Value box.
 - Add another condition with the OR operator and type `Account Key Missing` in the Value box.
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_14.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_14.webp)
 
 ## ROW 7b Function: Script Exit
 
@@ -194,8 +194,8 @@ if ($Parameters) {
 Failed to repair Huntress Agent. Command Result: %Output%
 ```
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_15.png)
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_16.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_15.webp)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_16.webp)
 
 ## Step 8 Function: Script Log
 
@@ -207,8 +207,8 @@ Failed to repair Huntress Agent. Command Result: %Output%
 Successfully repaired Huntress Agent.
 ```
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.png)
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_17.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_11.webp)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_17.webp)
 
 ## Step 9 Function: Script Exit
 
@@ -220,12 +220,12 @@ Successfully repaired Huntress Agent.
 
 ```
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_15.png)
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_18.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_15.webp)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_18.webp)
 
 ## Step 10: Complete Script
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_19.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_19.webp)
 
 ## Script Deployment
 
@@ -235,9 +235,8 @@ Go to Automations > Tasks.
 Search for Huntress Agent (Re-Register).  
 Then click on Schedule and provide the parameters details as necessary for the script completion.
 
-![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_20.png)
+![Image](../../../static/img/docs/91408668-745e-49f8-8ed3-020c68faf754/image_20.webp)
 
 ## Output
 
 - Script log
-
