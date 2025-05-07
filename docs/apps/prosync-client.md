@@ -12,11 +12,11 @@ unlisted: false
 
 ## Overview
 
-The **ProSync Client** is a ConnectWise Automate plugin designed to connect to a centrally managed Automate instance via REST API calls. The plugin will download and synchronize content from the central instance to the installed instance. Developed by [ProVal Tech](https://www.provaltech.com/), the plugin is written in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) and is a piece of the ProSync solution, along with the [ProSync Server](https://github.com/ProVal-Tech/prosync-cw) and the [ProSync API](https://github.com/ProVal-Tech/prosync-cwapi).
+The **ProSync Client** is a ConnectWise Automate plugin designed to connect to a centrally managed Automate instance via REST API calls. The plugin will download and synchronize content from the central instance to the installed instance. Developed by [ProVal Tech](https://www.provaltech.com/), the plugin is written in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) and is a piece of the ProSync solution, along with the [ProSync Server](/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb) and the `ProSync API`.
 
 ## Installation
 
-To install the **ProSync Client** plugin, first download the latest DLL binary from this [Link](../../static/attachments/ProSyncClient.dll). Once you have the `ProSyncClient.dll` downloaded, use the following steps to perform the initial setup of the plugin:
+To install the **ProSync Client** plugin, first download the latest DLL binary from this [Link](https://file.provaltech.com/repo/app/ProSyncClient.dll). Once you have the `ProSyncClient.dll` downloaded, use the following steps to perform the initial setup of the plugin:
 
 1. Open the **ConnectWise Automate Control Center** and navigate to **System > Solutions > Plugin Manager**.
 2. In the top left corner, click **Advanced > Manage Plugins > Add Plugin**.
@@ -31,7 +31,7 @@ The **ProSync Client** is *currently* separated into two sections, **Content** a
 
 ### API Connection
 
-The **API Connection** section is where you will enter the **Client Name** and **Secret** for the **ProSync Client** to connect to the [ProSync API](https://github.com/ProVal-Tech/prosync-cwapi). Refer to the documentation for the [ProSync Server](https://github.com/ProVal-Tech/prosync-cw) on creating API Clients. No other functions will be available in the **ProSync Client** without valid API connection information.
+The **API Connection** section is where you will enter the **Client Name** and **Secret** for the **ProSync Client** to connect to the `ProSync API`. Refer to the documentation for the [ProSync Server](/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb) on creating API Clients. No other functions will be available in the **ProSync Client** without valid API connection information.
 
 ![image-20201214164329311](../../static/img/apps-prosync-client/image-20201214164329311.png)
 
@@ -39,7 +39,7 @@ The **API Connection** section is where you will enter the **Client Name** and *
 2. **Client Secret** - Enter the API client secret here.
     - Once the Name and Secret are filled in, click **Apply** to save the credentials into the ProSync Client API table for future authentication.
 3. **Client Name Label** - Shows the currently configured client name in the API table.
-4. **Test Connection Button** - Uses the currently configured API credentials to test the connection to the [ProSync API](https://github.com/ProVal-Tech/prosync-cwapi). Presents a pop-up window with the results.
+4. **Test Connection Button** - Uses the currently configured API credentials to test the connection to the `ProSync API`. Presents a pop-up window with the results.
 
 ### Content
 
