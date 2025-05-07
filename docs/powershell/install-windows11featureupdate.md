@@ -27,6 +27,14 @@ The script supports both Windows 10 and Windows 11:
 - 64GB+ free space on the system drive
 - [Windows 11 Compatible Machine](https://www.microsoft.com/en-us/windows/windows-11-specifications)
 
+## Change Log (2025-05-07)
+
+- Added a 60-second delay after the `Restart-Computer -Force` command to ensure the script doesn't proceed to the next step too soon.
+- Removed unnecessary `/Scan` commands from the Dell Command Update section.
+- Modified the handling of exit codes 3000 and 3005 in Dell Command Update to generate warnings instead.
+- Added a check to limit driver update attempts to a maximum of three times or three reboots.
+- Included a check to reset the `Windows11LatestFeatureUpdate` table if the `$workingDirectory` does not exist. This indicates that the script might have previously executed but failed, and if someone is trying to re-run it, they just need to remove the `$workingDirectory`.
+
 ## Process
 
 The script operates in multiple phases to accomplish the upgrade:
