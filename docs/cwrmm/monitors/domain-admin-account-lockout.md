@@ -5,7 +5,7 @@ title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
 keywords: ['Domain','Admin','Account','Lockout']
 description: 'This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the `Domain Admin Account Lockout` task to generate a ticket'
-tags: ['Domain','Active Directory','Accounts']
+tags: ['domain','active-directory']
 draft: False
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
 keywords: ['Domain','Admin','Account','Lockout']
 description: 'This task is configured to run as an autofix with `Domain Admin Account LockOut` to generate tickets.'
-tags: ['Domain','Active Directory','Accounts']
+tags: ['domain','active-directory']
 draft: False
 unlisted: false
 ---
