@@ -55,26 +55,26 @@ Top Script IDs shown below:
 
 ## Troubleshooting
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image1.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image1.png)
 
 When you see a ticket like the above for any partner please follow the below troubleshooting steps.
 
 1. Navigate to the System >> VNC / Ticket Priority >> MAX Running Scripts. Look for the "MAX Running Scripts" and ensure its value is at least 1/3 of the value of its agent count. This applies only to the environment where you have seen frequent Scripting Engine Hung issues. This is not a stated statement; rather, it is being assumed to prevent situations in the partner environment if they continuously encounter Scripting engine crash issues. Navigate to the System >> Configuration >> Dashboard >> Config >> Configuration >> Properties. Look for the property "LT_MAXRunningScripts" and ensure its value is reflected
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image2.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image2.png)
 
 2. Navigate to the Automation >> Monitor >> Internal Monitor
 3. Right-click and select the "New Monitor"
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image3.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image3.png)
 
 4. Start Fresh >> Next
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image4.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image4.png)
 
 5. Run the query as mentioned below. Export the list to share with the consultant. Check for the top scripts whose running count is too much figure out why it has been running like that and fix it if found irrelevant. Bring the concern to the consultant with the note point and screenshots.
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image5.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image5.png)
 
 ```sql
 SELECT 
@@ -103,9 +103,9 @@ ORDER BY
 
 6. Run another query. Follow steps 2-4, then run the below query. Please validate the stuck scripts and get that report exported to Excel to forward to the consultant with your feedback and review analysis reporting.
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image6.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image6.png)
 
-![image](/img/9292f135-cca4-4eba-97ff-cd4276ab62e9/image7.png)
+![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image7.png)
 
 ```sql
 SELECT 

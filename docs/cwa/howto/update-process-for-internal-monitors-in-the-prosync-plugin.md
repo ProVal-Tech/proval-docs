@@ -41,7 +41,7 @@ unlisted: false
 2. **Review Exclusion Tab**
    - Please review the exclusion tab for any exclusions on an old monitor before importing the modified monitor from the plugin.
 
-   ![Image](/img/b6eac8f7-222b-4c72-8bed-0b81c138074a/data1.png)
+   ![Image](/img/docs/b6eac8f7-222b-4c72-8bed-0b81c138074a/data1.png)
 
    **Take note of anything found in this tab.** This will need to be moved over to the newly imported/updated monitor to ensure the same functionality after the update.
 

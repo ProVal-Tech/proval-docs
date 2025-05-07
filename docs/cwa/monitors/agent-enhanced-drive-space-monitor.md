@@ -153,4 +153,4 @@ In the above example:
 
 **Q:** Should we expect any possible problems or errors on systems running PowerShell versions earlier than 5.0?  
 **A:** For systems with PowerShell versions older than 5.0, you may encounter PowerShell errors similar to the one in this screenshot for the Soji failure notes.  
-![image](/img/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image.png)
+![image](/img/docs/e2c56554-7f1d-4f1a-b1a2-37a0bd343629/image.png)

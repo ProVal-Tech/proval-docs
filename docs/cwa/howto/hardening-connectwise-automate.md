@@ -188,6 +188,6 @@ TCP Ports 8040 and 8041 must be forwarded to the ConnectWise Control server (for
 
 Accessing features of the ConnectWise Control solution requires the user to be associated with a user class with the following permissions.
 
-![image](/img/b356a7ff-5336-480e-830c-476bee44cb98/image1.png)
+![image](/img/docs/b356a7ff-5336-480e-830c-476bee44cb98/image1.png)
 
 *Original CW Documentation: [Automate Comprehensive Best Practice Guide](https://university.connectwise.com/content/userdocs/business_knowledge/Automate_Comprehensive_Best_Practice_Guide.pdf)*
