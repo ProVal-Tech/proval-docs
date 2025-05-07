@@ -27,7 +27,7 @@ The remote monitor is designed to clean up any `*.ps1` files older than 1 day lo
 ## Step 1
 Obtain the group ID(s) of the group(s) that the remote monitor should be applied to. It is suggested to apply this monitor set to the Managed Windows Servers and Workstations groups.
 
-![Image](../../../static/img/Import---Remote-Monitor---_Automation-Directory---Remove-Obsolete-.ps1-Change/image_1.png)
+![Image](../../../static/img/e2c56554-7f1d-4f1a-b1a2-37a0bd343629/image_1.webp)
 
 ## Step 2
 Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the Group ID(s) of the relevant groups:  
