@@ -24,10 +24,10 @@ Due to this, results are not guaranteed, and if at all possible, it should alway
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_2.png)
+![Sample Run Image 1](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_2.webp)
 
 In order to run without DryRun, do not select DryRun.  
-![Sample Run Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_3.png)
+![Sample Run Image 2](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_3.webp)
 
 ## Dependencies
 
@@ -43,52 +43,52 @@ In order to run without DryRun, do not select DryRun.
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_4.png)
+![Task Creation Image 1](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_4.webp)
 
-![Task Creation Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_5.png)
+![Task Creation Image 2](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_5.webp)
 
 **Name:** KRBTGT Account - Reset Keys  
 **Description:** This task is used to reset the KRBTGT Active Directory account. Adapted from [New-KrbtgtKeys.ps1](https://github.com/microsoft/New-KrbtgtKeys.ps1/blob/master/New-KrbtgtKeys.ps1)  
 **Category:** Custom  
-![Task Creation Image 3](../../../static/img/KRBTGT-Account---Reset-Keys/image_6.png)
+![Task Creation Image 3](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_6.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameters Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_7.png)
+![Parameters Image 1](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_7.webp)
 
 This screen will appear.  
-![Parameters Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_8.png)
+![Parameters Image 2](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_8.webp)
 
 - Set `DryRun` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Toggle Default Value.
 - Set its default value to `False`.
 - Click the `Save` button.  
-![Parameters Image 3](../../../static/img/KRBTGT-Account---Reset-Keys/image_9.png)
+![Parameters Image 3](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_9.webp)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Parameters Image 4](../../../static/img/KRBTGT-Account---Reset-Keys/image_10.png)
+![Parameters Image 4](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_10.webp)
 
 Parameters will look as shown below:  
-![Parameters Image 5](../../../static/img/KRBTGT-Account---Reset-Keys/image_11.png)
+![Parameters Image 5](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_11.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Image 1](../../../static/img/KRBTGT-Account---Reset-Keys/image_12.png)
+![Task Image 1](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_12.webp)
 
 A blank function will appear.  
-![Task Image 2](../../../static/img/KRBTGT-Account---Reset-Keys/image_13.png)
+![Task Image 2](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_13.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Task Image 3](../../../static/img/KRBTGT-Account---Reset-Keys/image_14.png)
+![Task Image 3](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_14.webp)
 
 The following function will pop up on the screen:  
-![Task Image 4](../../../static/img/KRBTGT-Account---Reset-Keys/image_15.png)
+![Task Image 4](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_15.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -141,14 +141,12 @@ Get-Content -Path $LogPath
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Task Image 5](../../../static/img/KRBTGT-Account---Reset-Keys/image_16.png)
+![Task Image 5](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_16.webp)
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/KRBTGT-Account---Reset-Keys/image_17.png)
+![Completed Task Image](../../../static/img/docs/a6e7a255-6d3e-4c00-bea0-636533914cbc/image_17.webp)
 
 ## Output
 
 - Script Log
-
-

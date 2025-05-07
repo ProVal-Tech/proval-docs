@@ -39,5 +39,3 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
-
-

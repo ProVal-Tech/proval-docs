@@ -25,9 +25,9 @@ Refer to the document for the custom field dependencies check:
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_1.png)  
-![Sample Run 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_2.png)  
-![Sample Run 3](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_2.png)  
+![Sample Run 1](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_2.webp)  
 
 ## Dependencies
 
@@ -50,81 +50,81 @@ Refer to the document for the custom field dependencies check:
 ### Create Task
 
 BitLocker Initialize C Volume: To implement this script, please create a new "Script Editor" style script in the system.  
-![Create Task](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_3.png)  
+![Create Task](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_3.webp)  
 
 **Name:** BitLocker Initialize C Volume  
 **Description:** This script will perform the BitLocker initialization on the endpoint for the C: volume using the AES256 or XTSAES256 encryption method chosen based on the custom fields.  
 **Category:** Security  
-![Task Category](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_4.png)  
+![Task Category](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_4.webp)  
 
 ### Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.  
-![Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_5.png)  
+![Add Row](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_5.webp)  
 
 ### Row 1: Logic: If/Then
 
-![Row 1 Logic](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_6.png)  
-![Row 1 Logic 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_7.png)  
+![Row 1 Logic](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_6.webp)  
+![Row 1 Logic 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_7.webp)  
 
 ### Row 1a: Condition: Custom Field
 
 In the IF part,  
 Enter `false` in the right box of the "Custom Field Equals" part.  
-![Row 1a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_8.png)  
+![Row 1a Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_8.webp)  
 
 ### Row 1b: Function: Script Log
 
-![Row 1b Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 1b Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `The BitLocker Monitoring custom field is not set at the company level. Exiting script.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 1b Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_10.png)  
+![Row 1b Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_10.webp)  
 
 ### Row 1c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Row 1c Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
+![Row 1c Add Row](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_11.webp)  
 
 In the script exit message, please leave it blank.  
-![Row 1c Exit](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_12.png)  
+![Row 1c Exit](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_12.webp)  
 
 ### Row 2: Logic: If/Then
 
-![Row 2 Logic](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_6.png)  
-![Row 2 Logic 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_7.png)  
+![Row 2 Logic](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_6.webp)  
+![Row 2 Logic 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_7.webp)  
 
 ### Row 2a: Condition: Custom Field
 
 In the IF part,  
 Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
-![Row 2a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_13.png)  
+![Row 2a Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_13.webp)  
 
 ### Row 2b: Function: Script Log
 
-![Row 2b Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 2b Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `The BitLocker exclusion is applied to the endpoint. Exiting script.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 2b Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_14.png)  
+![Row 2b Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_14.webp)  
 
 ### Row 2c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Row 2c Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
+![Row 2c Add Row](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_11.webp)  
 
 In the script exit message, please leave it blank.  
-![Row 2c Exit](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_12.png)  
+![Row 2c Exit](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_12.webp)  
 
 ### Row 3: Function: Script Log
 
-![Row 3 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 3 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `Checking OS.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 3 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_15.png)  
+![Row 3 Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_15.webp)  
 
 ### Row 4: Function: PowerShell Script
 
-![Row 4 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 4 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_17.png)  
+![Row 4 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_16.webp)  
+![Row 4 Function 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_17.webp)  
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
 ```powershell
@@ -142,76 +142,76 @@ else {
 
 ### Row 5: Function: Script Log
 
-![Row 5 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 5 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 5 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_18.png)  
+![Row 5 Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_18.webp)  
 
 ### Row 6: Logic: If/Then
 
-![Row 6 Logic](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_6.png)  
-![Row 6 Logic 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_7.png)  
+![Row 6 Logic](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_6.webp)  
+![Row 6 Logic 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_7.webp)  
 
 ### Row 6a: Condition: Output Contains
 
 In the IF part,  
 Enter `The operating system is not a Windows workstation` in the right box of the "Output Contains" part.  
-![Row 6a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_19.png)  
+![Row 6a Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_19.webp)  
 
 ### Row 6b: Function: Script Log
 
 Add a new row by clicking on the Add Row button.  
-![Row 6b Add Row](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_11.png)  
+![Row 6b Add Row](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_11.webp)  
 
 In the script exit message, please leave it blank.  
-![Row 6b Exit](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_12.png)  
+![Row 6b Exit](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_12.webp)  
 
 ### Row 7: Logic: If/Then
 
-![Row 7 Logic](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_20.png)  
-![Row 7 Logic 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_21.png)  
+![Row 7 Logic](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_20.webp)  
+![Row 7 Logic 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_21.webp)  
 
 ### Row 7a: Condition: Custom Field
 
 In the IF part,  
 Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
-![Row 7a Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_22.png)  
+![Row 7a Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_22.webp)  
 
 ### Row 7b: Condition: Custom Field
 
 In the IF part, click:  
-![Row 7b Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_23.png)  
+![Row 7b Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_23.webp)  
 
 Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
-![Row 7b Condition 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_24.png)  
+![Row 7b Condition 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_24.webp)  
 
 ### Row 7c: Function: Script Log
 
-![Row 7c Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 7c Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `Both custom fields 'BitLocker Monitoring' and 'BitLocker XTSAES 256' are true. Setting encryption method to 'XtsAes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 7c Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_25.png)  
+![Row 7c Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_25.webp)  
 
 ### Row 7d: Function: Set User Variable
 
 Enter the `Encryption Method` in the Variable Name box and provide the Value as `XtsAes256`.  
-![Row 7d Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_26.png)  
+![Row 7d Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_26.webp)  
 
 ### Row 7e: Logic: If/Then
 
-![Row 7e Logic](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_6.png)  
-![Row 7e Logic 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_7.png)  
+![Row 7e Logic](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_6.webp)  
+![Row 7e Logic 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_7.webp)  
 
 ### Row 7e.1: Condition: Value
 
 In the IF part,  
 Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7e.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_27.png)  
+![Row 7e.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_27.webp)  
 
 ### Row 7e.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7e.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_28.png)  
+![Row 7e.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_28.webp)  
 
 ### Row 7f: Logic: If/Then
 
@@ -219,12 +219,12 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7f.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_29.png)  
+![Row 7f.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_29.webp)  
 
 ### Row 7f.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowTPMInit -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7f.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_30.png)  
+![Row 7f.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_30.webp)  
 
 ### Row 7g: Logic: If/Then
 
@@ -232,12 +232,12 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7g.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_31.png)  
+![Row 7g.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_31.webp)  
 
 ### Row 7g.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowRestart -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7g.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_32.png)  
+![Row 7g.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_32.webp)  
 
 ### Row 7h: Logic: If/Then
 
@@ -245,12 +245,12 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7h.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_33.png)  
+![Row 7h.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_33.webp)  
 
 ### Row 7h.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowTPMInit -AllowRestart -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7h.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_34.png)  
+![Row 7h.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_34.webp)  
 
 ### Row 7: Condition: Else  
 
@@ -258,38 +258,38 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `false` in the right box of the "Custom Field Does Not Equal" part.  
-![Row 7i Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_22.png)  
+![Row 7i Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_22.webp)  
 
 ### Row 7j: Condition: Custom Field
 
 In the IF part, click:  
-![Row 7j Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_23.png)  
+![Row 7j Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_23.webp)  
 
 Enter `false` in the right box of the "Custom Field Equals" part.  
-![Row 7j Condition 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_35.png)  
+![Row 7j Condition 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_35.webp)  
 
 ### Row 7k: Function: Script Log
 
-![Row 7k Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 7k Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `The 'BitLocker Monitoring' custom fields are true and 'BitLocker XTSAES 256' are false. Setting encryption method to 'Aes256'.` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 7k Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_36.png)  
+![Row 7k Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_36.webp)  
 
 ### Row 7l: Function: Set User Variable
 
 Enter the `Encryption Method` in the Variable Name box and provide the Value as `Aes256`.  
-![Row 7l Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_12.png)  
+![Row 7l Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_12.webp)  
 
 ### Row 7l.1: Condition: Value
 
 In the IF part,  
 Enter `0 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7l.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_27.png)  
+![Row 7l.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_27.webp)  
 
 ### Row 7l.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7l.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_28.png)  
+![Row 7l.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_28.webp)  
 
 ### Row 7m: Logic: If/Then
 
@@ -297,12 +297,12 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `1 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7m.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_29.png)  
+![Row 7m.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_29.webp)  
 
 ### Row 7m.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowTPMInit -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7m.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_30.png)  
+![Row 7m.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_30.webp)  
 
 ### Row 7n: Logic: If/Then
 
@@ -310,12 +310,12 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `2 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7n.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_31.png)  
+![Row 7n.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_31.webp)  
 
 ### Row 7n.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowRestart -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7n.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_32.png)  
+![Row 7n.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_32.webp)  
 
 ### Row 7o: Logic: If/Then
 
@@ -323,24 +323,24 @@ Enter the `Parameter` in the Variable Name box and provide the Value as `-Recove
 
 In the IF part,  
 Enter `3 Equals @Allow_TPM/Reboot@` in the right box of the Value part.  
-![Row 7o.1 Condition](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_33.png)  
+![Row 7o.1 Condition](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_33.webp)  
 
 ### Row 7o.2: Function: Set User Variable
 
 Enter the `Parameter` in the Variable Name box and provide the Value as `-RecoveryPasswordProtector -AllowTPMInit -AllowRestart -EncryptionMethod @EncryptionMethod@ -SkipHardwareTest`.  
-![Row 7o.2 Variable](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_34.png)  
+![Row 7o.2 Variable](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_34.webp)  
 
 ### Row 8: Function: Script Log
 
-![Row 8 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 8 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `Executing BitLocker initialization` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 8 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_37.png)  
+![Row 8 Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_37.webp)  
 
 ### Row 9: Function: PowerShell Script
 
-![Row 9 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 9 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_38.png)  
+![Row 9 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_16.webp)  
+![Row 9 Function 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_38.webp)  
 
 Paste the following PowerShell script and set the expected script execution time to 1800 seconds.  
 ```powershell
@@ -377,15 +377,15 @@ if (!(Test-Path -Path $PS1Path)) {
 
 ### Row 10: Function: Script Log
 
-![Row 10 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 10 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 10 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_18.png)  
+![Row 10 Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_18.webp)  
 
 ### Row 11: Function: PowerShell Script
 
-![Row 11 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_16.png)  
-![Row 11 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_39.png)  
+![Row 11 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_16.webp)  
+![Row 11 Function 2](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_39.webp)  
 
 Paste the following PowerShell script and set the expected script execution time to 300 seconds.  
 ```powershell
@@ -406,10 +406,10 @@ else {
 
 ### Row 12: Function: Script Log
 
-![Row 12 Function](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_9.png)  
+![Row 12 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Row 12 Log](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_18.png)  
+![Row 12 Log](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_18.webp)  
 
 ### Row 13: Function: Set Custom Field
 
@@ -419,7 +419,5 @@ Select Function 'Set Custom Field'. When you select `Set Custom Field`, it will 
 In this window, search for the `ACP BitLocker INIT Result` field.  
 **Custom Field:** `ACP BitLocker INIT Result`  
 **Value:** `%Output%`  
-![Row 13 Custom Field](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_40.png)  
-
-
+![Row 13 Custom Field](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_40.webp)  
 

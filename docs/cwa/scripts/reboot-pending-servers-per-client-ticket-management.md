@@ -20,10 +20,8 @@ Tickets will automatically close for servers that have already been rebooted and
 
 It is recommended to schedule this client script to run once per day for better results.
 
-![Sample Run](../../../static/img/Reboot-Pending-Servers-per-client---Ticket-Management/image_1.png)
+![Sample Run](../../../static/img/docs/0d5f27c6-fa65-4a98-b32d-61426505aa1c/image_1.webp)
 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e)
-
-

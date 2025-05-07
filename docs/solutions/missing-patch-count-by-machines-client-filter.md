@@ -28,5 +28,3 @@ This solution provides a dataview of the client-level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](/docs/0fd0215c-d6d5-40c8-9ba6-79b69721f4c1) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
-
-

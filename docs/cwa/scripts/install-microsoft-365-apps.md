@@ -24,7 +24,7 @@ It is advisable to restart the computer after installation. Setting the `Reboot`
 
 Open your web browser and navigate to the [Office Customization Tool](https://config.office.com/deploymentsettings).
 
-![Office Customization Tool Home](../../../static/img/cwa-script-install-microsoft-365-apps/Image1.png)
+![Office Customization Tool Home](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image1.webp)
 
 ### Step 2: Configure the Products and Releases
 
@@ -36,19 +36,19 @@ Open your web browser and navigate to the [Office Customization Tool](https://co
 
 **Apps:** Review the selected applications and deselect any if not needed.
 
-![Products and releases](../../../static/img/cwa-script-install-microsoft-365-apps/Image2.png)
+![Products and releases](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image2.webp)
 
 ### Step 3: Languages
 
 **Primary Language:** Choose the languages you want to include in the installation. Additional languages can be selected if required.
 
-![Languages](../../../static/img/cwa-script-install-microsoft-365-apps/Image3.png)
+![Languages](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image3.webp)
 
 ### Step 4: Configure Installation Options
 
 **Installation Options:** Specify the installation path, whether to display the installation experience to users, and other preferences. Leave it untouched if not required.
 
-![Installation](../../../static/img/cwa-script-install-microsoft-365-apps/Image4.png)
+![Installation](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image4.webp)
 
 ### Step 5: Configure Update and Upgrade Options
 
@@ -56,7 +56,7 @@ Open your web browser and navigate to the [Office Customization Tool](https://co
 
 Additional information can be found in the [MSICondition attribute documentation](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#msicondition-attribute-part-of-product-element) and the [MSICondition and RemoveMSI implementation guide (youtube video)](https://youtu.be/7zHi6MRveRc).
 
-![Upgrade](../../../static/img/cwa-script-install-microsoft-365-apps/Image5.png)
+![Upgrade](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image5.webp)
 
 ### Step 6: Configure Licensing and Activation Options
 
@@ -64,39 +64,39 @@ Additional information can be found in the [MSICondition attribute documentation
 
 **Product activation:** Select the appropriate product activation option.
 
-![Licensing](../../../static/img/cwa-script-install-microsoft-365-apps/Image6.png)
+![Licensing](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image6.webp)
 
 ### Step 7: General Settings
 
 **General:** Configure the general settings if required.
 
-![General](../../../static/img/cwa-script-install-microsoft-365-apps/Image9.png)
+![General](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image9.webp)
 
 ### Step 8: Configure Application Preferences
 
 **Application Preferences:** Configure specific settings for each application, such as default file locations and user preferences.
 
-![Application Preferences](../../../static/img/cwa-script-install-microsoft-365-apps/Image7.png)
+![Application Preferences](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image7.webp)
 
 ### Step 9: Review Configured Settings
 
 **Review:** Check all the settings you have configured to ensure they meet your requirements.
 
-![Review](../../../static/img/cwa-script-install-microsoft-365-apps/Image8.png)
+![Review](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image8.webp)
 
 ### Step 10: Export
 
 **Export:** Click on the Export button to generate the .XML configuration file.
 
-![Export](../../../static/img/cwa-script-install-microsoft-365-apps/Image10.png)
+![Export](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image10.webp)
 
 **Default File Format:** Choose either `Keep Current Settings` or `Office Open XML formats` options for the default file format. It is recommended to use the `Keep Current Settings` option.
 
-![Default File Format](../../../static/img/cwa-script-install-microsoft-365-apps/Image11.png)
+![Default File Format](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image11.webp)
 
 **Export configuration to XML:** Accept the license agreement, set an appropriate file name, and click the `Export` button to export the configuration file. *Do not use any special characters or spaces in the file name.*
 
-![Export configuration to XML](../../../static/img/cwa-script-install-microsoft-365-apps/Image12.png)
+![Export configuration to XML](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image12.webp)
 
 ### Note
 
@@ -108,7 +108,7 @@ It is recommended to save the configuration file on LTShare (WebDav for the host
 
 If the `Microsoft365` directory does not exist in `LTShare\Transfer\configs`, create the directory and place the downloaded XML file.
 
-![LTshare](../../../static/img/cwa-script-install-microsoft-365-apps/Image13.png)
+![LTshare](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image13.webp)
 
 **Notes:**
 
@@ -127,17 +127,17 @@ If the `Microsoft365` directory does not exist in `LTShare\Transfer\configs`, cr
 
 **Example 1:** The configuration file is saved as `Microsoft365.XML` in the `LTShare\Transfer\configs\Microsoft365` directory:
 
-![SampleRun1](../../../static/img/cwa-script-install-microsoft-365-apps/Image14.png)
+![SampleRun1](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image14.webp)
 
 **Example 2:** The configuration file is saved with a different name in the `LTShare\Transfer\configs\Microsoft365` directory:
 
-![SampleRun2](../../../static/img/cwa-script-install-microsoft-365-apps/Image15.png)
+![SampleRun2](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image15.webp)
 
 **Note:** *The computer will be automatically rebooted in this example as the `Reboot` parameter is set to `1`.*
 
 **Example 3:** The configuration file is saved at a remote location and is accessible via a public download URL:
 
-![SampleRun3](../../../static/img/cwa-script-install-microsoft-365-apps/Image16.png)
+![SampleRun3](../../../static/img/docs/052256a8-6a8c-4fe4-993e-c0bc86eacd25/Image16.webp)
 
 ## Variables
 

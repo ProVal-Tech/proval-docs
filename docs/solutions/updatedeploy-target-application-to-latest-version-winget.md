@@ -31,11 +31,9 @@ This solution is designed to achieve the appropriate application upgrade to the 
 - Import monitors [ProVal - Production - Latest Version Detection](/docs/f5315643-b01b-48e6-ae4c-b89e5c0f20d6) and [ProVal - Production - Install/Update [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb).
 - Import the alert templates "**△ Custom - Execute Script - Application Latest Version**" and "**△ CUSTOM - Application Install/Update - Winget**".
 - Create a duplicate of both monitors and remove the imported monitors to avoid confusion:  
-  ![Image](/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_1.png)  
+  ![Image](/img/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021/image_1.webp)  
 - Remove the 'Copy of' from the monitor names and modify the new monitors with the required details below:  
-  ![Image](/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_2.png)  
-  ![Image](/img/UpdateDeploy-Target-Application-to-Latest-Version-Winget/image_3.png)  
+  ![Image](/img/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021/image_2.webp)  
+  ![Image](/img/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021/image_3.webp)  
 - Apply the alert template "**△ Custom - Execute Script - Application Latest Version**" with monitor [ProVal - Production - Latest Version Detection](/docs/f5315643-b01b-48e6-ae4c-b89e5c0f20d6) first and run it once before implementing the other monitor so that the system property gets created.
 - Apply the alert template "**△ CUSTOM - Application Install/Update - Winget**" with monitor [ProVal - Production - Install/Update [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb) and make the adjustments as mentioned in the screenshot.
-
-

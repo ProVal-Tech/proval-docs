@@ -38,24 +38,24 @@ This is a client-level script and should be scheduled to run regularly to mainta
 - Run the script with the user parameter "Set_Environment" value set to 1, in order to set the system properties.
 - It will set the system properties to the default value as shown in the screenshot below. You can change the values of these parameters as per the client's requirement by modifying the system properties directly.
   
-  ![System Properties Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_1.png)
+  ![System Properties Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_1.webp)
 
 - Open your system dashboard and navigate to Management / Scheduled Client Scripts.
   
-  ![Scheduled Client Scripts Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_2.png)
+  ![Scheduled Client Scripts Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_2.webp)
 
 - Add a new scheduled script, setting it up the same way that Proval Maintenance is set up. Instead of calling ProvalMaintenance, we will call Automate Database Maintenance Solution.
   
-  ![New Scheduled Script Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_3.png)
+  ![New Scheduled Script Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_3.webp)
 
 - It can be manually run if desired by selecting a client and picking the client script.
   
-  ![Manual Run Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_4.png)
+  ![Manual Run Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_4.webp)
 
 **UPDATING THE EXISTING SOLUTION**:
 - Take a screenshot of the global parameters of the script before updating it as shown below:
   
-  ![Global Parameters Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_5.png)
+  ![Global Parameters Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_5.webp)
 
 - Follow all the steps as a fresh installation with `set_environment = 1` for the first run after the update and schedule the script if it's not already scheduled.
 - Now compare all the global parameters from the old script with the new system properties and change the values in the system properties that are different from the old global properties.
@@ -115,6 +115,4 @@ This is a client-level script and should be scheduled to run regularly to mainta
 ## Output
 
 The script log represents a log file. This is a representation of the expected log file.  
-![Expected Log File Screenshot](../../../static/img/Automate-Database-Maintenance-Solution/image_6.png)
-
-
+![Expected Log File Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_6.webp)

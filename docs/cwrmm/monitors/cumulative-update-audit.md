@@ -19,44 +19,42 @@ The monitor set will generate an alert for computers in which the custom field [
 ## Monitor
 
 1. Go to **Alert Management > Monitors**.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_1.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_1.webp)
 
 2. Click the **Add Monitor** button.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_2.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_2.webp)
 
 3. This screen will appear.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_3.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_3.webp)
 
 4. Fill in the Name and Description boxes.  
    **Name:** Cumulative Update Audit  
    **Description:** The monitor set will generate an alert for computers in which the custom field `Latest Cumulative Update` contains 'Failed.' Furthermore, it will automatically resolve the associated ticket if 'Success' is present in the aforementioned custom field.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_4.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_4.webp)
 
 5. Select the **Custom Field** in the Type dropdown.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_5.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_5.webp)
 
 6. Select **Text Box** from the **Custom Field Type** dropdown and **Latest Cumulative Update** from the **Custom Field Name** dropdown for both **Conditions** and **Ticket Resolution** sections.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_6.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_6.webp)
 
 7. Add **Failed** in the **Enter Value Field** of the **Conditions** section and **Success** in the **Enter Value Field** of the **Ticket Resolution** section.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_7.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_7.webp)
 
 8. Select the Resources/Clients to apply the monitor set against.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_8.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_8.webp)
 
 9. Select **Patch Management** for the **Family** and **Others** or any relevant option for the **Severity**.  
-   ![Image](../../../static/img/Cumulative-Update-Audit/image_9.png)
+   ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_9.webp)
 
 10. This is how the monitor set should look before saving it.  
-    ![Image](../../../static/img/Cumulative-Update-Audit/image_10.png)
+    ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_10.webp)
 
 11. Click the **Save** button to save the monitor set.  
-    ![Image](../../../static/img/Cumulative-Update-Audit/image_11.png)
+    ![Image](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_11.webp)
 
 ## Dependencies
 
 - [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
 - [CW RMM - Task - Cumulative Update Audit](/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368)
-
-
 

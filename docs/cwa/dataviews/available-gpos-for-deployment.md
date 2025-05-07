@@ -23,5 +23,3 @@ This dataview provides a complete list of available GPOs for deployment via the 
 | Column | Description |
 |--------|-------------|
 | GPOs   | List of GPOs available for deployment via [GPO Import Process](/docs/6af95203-1e0a-4e2d-8e51-4a3f5a66eba7). |
-
-

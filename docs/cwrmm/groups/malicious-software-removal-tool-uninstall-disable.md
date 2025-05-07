@@ -20,7 +20,7 @@ This group includes the endpoint where the MSRT needed to be uninstalled and dis
 
 ## Group Details
 
-![Summary](<../../../static/img/docs/Malicious Software Removal Tool Uninstall-Disable/image.png>)
+![Summary](<../../../static/img/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4/image.webp>)
 
 **Group Type:** Dynamic  
 **Group Name:** Malicious Software Removal Tool Uninstall/Disable  
@@ -30,7 +30,7 @@ This group includes the endpoint where the MSRT needed to be uninstalled and dis
 
 Group Joins
 
-![Group Joins](<../../../static/img/docs/Malicious Software Removal Tool Uninstall-Disable/image-1.png>)
+![Group Joins](<../../../static/img/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4/image-1.webp>)
 
 - `MSRT Disable Uninstall` should be `Equal` to `True`
 - `Exclude MSRT Disable Uninstall` should be `Equal` to `False`
@@ -44,9 +44,8 @@ Once you have added the above criteria, click the Save button to save the group.
 
 Click Save
 
-![Click Save](<../../../static/img/docs/Malicious Software Removal Tool Uninstall-Disable/image-2.png>)
+![Click Save](<../../../static/img/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4/image-2.webp>)
 
 Group Created
 
-![Group Created](<../../../static/img/docs/Malicious Software Removal Tool Uninstall-Disable/{A9C86F38-129F-4A35-93A7-3F187EF8AE7E}.png>)
-
+![Group Created](<../../../static/img/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4/{A9C86F38-129F-4A35-93A7-3F187EF8AE7E}.webp>)

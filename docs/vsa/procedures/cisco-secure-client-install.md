@@ -23,11 +23,11 @@ This procedure can use a URL or managed files for the installer. If using manage
 
 If using a URL, enter the URL on line 8.
 
-![Image](../../../static/img/Cisco-Secure-Client---Install/image_1.png)
+![Image](../../../static/img/docs/2db72420-9739-43e1-9166-9d2bba9f50d8/image_1.webp)
 
 If Umbrella is required, the Organization ID, Fingerprint, and User ID are necessary. These values can be pulled from the client portal or from the JSON file itself. Enter these values into the variables on lines 10, 11, and 13, and ensure the line is not disabled. If there are multiple sites/orgIDs, these variables can be filled with managed variables.
 
-![Image](../../../static/img/Cisco-Secure-Client---Install/image_2.png)
+![Image](../../../static/img/docs/2db72420-9739-43e1-9166-9d2bba9f50d8/image_2.webp)
 
 > Due to a bug within VSA, a variable cannot contain "OrgID," so "Organization" is used on line 13 instead. This results in a difference between the PowerShell command and the variable: `-OrgId #Organization#`.
 
@@ -80,5 +80,3 @@ This command will install all modules, including Umbrella, which require the Use
 ./Install-CiscoSecureClient-log.txt
 ./Install-CiscoSecureClient-error.txt
 ```
-
-

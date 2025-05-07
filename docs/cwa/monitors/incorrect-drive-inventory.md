@@ -39,10 +39,10 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 ## Screenshots
 
 **Status Tab:**  
-![Status Tab](../../../static/img/Incorrect-Drive-Inventory/image_1.png)
+![Status Tab](../../../static/img/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f/image_1.webp)
 
 **Alerting Tab:**  
-![Alerting Tab](../../../static/img/Incorrect-Drive-Inventory/image_2.png)
+![Alerting Tab](../../../static/img/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f/image_2.webp)
 
 **Configuration Tab:**  
-![Configuration Tab](../../../static/img/Incorrect-Drive-Inventory/image_3.png)
+![Configuration Tab](../../../static/img/docs/97e53493-0cd3-4b69-91b1-1e3f70111f5f/image_3.webp)

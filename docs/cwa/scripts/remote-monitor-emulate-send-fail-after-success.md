@@ -51,5 +51,3 @@ If the script determines the monitor is in a "success" state, it will go through
 **Script log messages**
 
 The script will create a ticket if necessary.
-
-

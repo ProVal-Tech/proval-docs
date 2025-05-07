@@ -31,5 +31,3 @@ Roles:
 | Domain Firewall Status     | The status (Enabled | Disabled) for the "Domain" network firewall            |
 | Private Firewall Status    | The status (Enabled | Disabled) for the "Private" network firewall           |
 | Public Firewall Status     | The status (Enabled | Disabled) for the "Public" network firewall            |
-
-

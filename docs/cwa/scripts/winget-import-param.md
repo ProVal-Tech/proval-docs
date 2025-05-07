@@ -26,11 +26,11 @@ Additionally, it includes an option to create a ticket with the list of applicat
 
 2. Run the [Winget - Export [Param]](/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0) on the preferred computer to export the list of installed applications. Ensure to set the parameter `Email_Report` to `1`. This will send the list of installed applications to your email address, saved as `SoftwareList.Json`.
 
-   ![](../../../static/img/Winget---Import-Param/image_1.png)
+   ![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_1.webp)
 
 3. Place the `SoftwareList.json` file in LTShare (WebDav for the hosted partners) under the `Transfer/Tools/Winget` directory. Create the `Winget` directory if it's missing.
 
-   ![](../../../static/img/Winget---Import-Param/image_2.png)
+   ![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_2.webp)
 
 4. To enable the creation of failure tickets from the script, create a system property named `TicketCreationCategory_Winget_Import` in Automate. Assign the ID of the ticket category you want to use for creating these tickets.
 
@@ -38,11 +38,11 @@ Additionally, it includes an option to create a ticket with the list of applicat
 
 After placing the software list as `softwarelist.json` in LTShare at the path explained in the `Implementation` section of the document:
 
-![](../../../static/img/Winget---Import-Param/image_3.png)
+![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_3.webp)
 
 The name of the file without the extension should be set to the user parameter after placing the software list with a different name in LTShare at the path explained in the `Implementation` section of the document:
 
-![](../../../static/img/Winget---Import-Param/image_4.png)
+![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_4.webp)
 
 ## Dependencies
 
@@ -74,6 +74,4 @@ The name of the file without the extension should be set to the user parameter a
 `\\<List of the failed applications>`
 
 **Example:**  
-![](../../../static/img/Winget---Import-Param/image_5.png)
-
-
+![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_5.webp)

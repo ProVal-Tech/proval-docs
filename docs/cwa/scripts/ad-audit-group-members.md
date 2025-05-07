@@ -18,7 +18,7 @@ This script audits the target Active Directory (AD) group for changes since the 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/AD---Audit-Group-Members/image_1.png)
+![Sample Run](../../../static/img/docs/20f500f3-77da-48a8-aeb2-4661f1865421/image_1.webp)
 
 ## Dependencies
 
@@ -49,5 +49,3 @@ If [Compare-ADGroupMembers](/docs/d05c42d1-0984-4ce7-9b1e-7f144871fe1e) returns 
 - Script Log
 - Log Files
 - Ticketing
-
-

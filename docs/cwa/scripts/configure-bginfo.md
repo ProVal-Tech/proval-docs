@@ -29,41 +29,41 @@ Download the BGInfo.zip file to your computer from [Download BGInfo](https://dow
 
 ### Step 2  
 Expand the Zip file and run the `BGInfo.exe` file. This is how it will look, you can clear the contents on the left window and can write your own configuration.  
-![Image1](../../../static/img/cwa-configure-bginfo/Image1.png)
+![Image1](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image1.webp)
 
 ### Step 3  
 Write the required configuration to display on the user's desktop.  
-![Image2](../../../static/img/cwa-configure-bginfo/Image2.png)
+![Image2](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image2.webp)
 
 ### Step 4  
 Once your configuration file is written, Click on File option at the top right and Select `Save As`.  
-![Image3](../../../static/img/cwa-configure-bginfo/Image3.png)
+![Image3](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image3.webp)
 
 ### Step 5  
 Save the file with an appropriate name and .bgi extension. Try avoiding spaces and special characters in the file name.  
-![Image4](../../../static/img/cwa-configure-bginfo/Image4.png)
+![Image4](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image4.webp)
 
 ### Step 6  
 Now save the file in LTShare (WebDAV for hosted partners) at the `Transfer\Tools\BGInfo` directory. Create the Tools and BGInfo directory if missing.  
-![Image5](../../../static/img/cwa-configure-bginfo/Image5.png)
+![Image5](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image5.webp)
 
 ### Step 7  
 Open the script and save the exact name of the file under the global variable `bginame`.  
-![Image6](../../../static/img/cwa-configure-bginfo/Image6.png)
+![Image6](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image6.webp)
 
 ### Step 8  
 Save and test the script.  
 
 The conguration file I have saved in the example screenshots will display the following information at the end machine.  
 
-![Image7](../../../static/img/cwa-configure-bginfo/Image7.png)  
+![Image7](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image7.webp)  
 
 <span style={{color: 'skyblue'}}>**Note:** If the global variable `bgiName` is not set in the script then running the script will display the default information at user's desktop.</span>
-![Image8](../../../static/img/cwa-configure-bginfo/Image8.png)  
+![Image8](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image8.webp)  
 
 ## Sample Run  
 
-![Image9](../../../static/img/cwa-configure-bginfo/Image9.png) 
+![Image9](../../../static/img/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b/Image9.webp) 
 
 ## Variables  
 

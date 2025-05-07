@@ -22,18 +22,18 @@ None. This script can be run on any Windows device.
 
 To implement this script, please create a new PowerShell-style script in the system.
 
-![Image 1](../../../static/img/Winget-Upgrade-All/image_1.png)  
-![Image 2](../../../static/img/Winget-Upgrade-All/image_2.png)  
+![Image 1](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_1.webp)  
+![Image 2](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_2.webp)  
 
 - **Name:** Winget Upgrade All  
 - **Description:** Uses Winget to attempt an upgrade for all available packages on an endpoint.  
 - **Category:** Custom  
 
-![Image 3](../../../static/img/Winget-Upgrade-All/image_3.png)  
+![Image 3](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_3.webp)  
 
 ### Script
 
-![Image 4](../../../static/img/Winget-Upgrade-All/image_4.png)  
+![Image 4](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_4.webp)  
 
 Paste the PowerShell script below directly into the "Script" field.
 
@@ -146,5 +146,3 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-
-

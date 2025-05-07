@@ -16,7 +16,7 @@ This script performs a disk cleanup on a MAC device.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Disk---Space---Cleanup-(Mac)/image_1.png)
+![Sample Run](../../../static/img/docs/08cd231a-c14d-4d61-a774-eba3f69e91bf/image_1.webp)
 
 ## Dependencies
 
@@ -32,5 +32,3 @@ The script can be downloaded from [this link](https://raw.githubusercontent.com/
 ## Output
 
 - Script Logs
-
-

@@ -68,20 +68,20 @@ For a precise understanding of the error codes returned in the `LastError` prope
 ## Step 3
 Perform `Refresh Searches` and `Do Group Refresh` from the `MySQL Server Status` tool.
 
-![Image 1](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_1.png)  
-![Image 2](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_2.png)
+![Image 1](../../../static/img/docs/495df667-0690-48e0-b929-f7671e9fc92c/image_1.webp)  
+![Image 2](../../../static/img/docs/495df667-0690-48e0-b929-f7671e9fc92c/image_2.webp)
 
 ## Step 4
 Validate the presence of the `ProVal - Production - Active Directory Replication Anomaly Monitoring` remote monitor in the group `Domain Controllers`. The remote monitor should be limited to the `Server Role - AD - Infrastructure Master` search.
 
 **Group:**  
-![Group Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_3.png)
+![Group Image](../../../static/img/docs/495df667-0690-48e0-b929-f7671e9fc92c/image_3.webp)
 
 **Search:**  
-![Search Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_4.png)
+![Search Image](../../../static/img/docs/495df667-0690-48e0-b929-f7671e9fc92c/image_4.webp)
 
 **Remote Monitor:**  
-![Remote Monitor Image](../../../static/img/Active-Directory-Replication-Anomaly-Monitoring/image_5.png)
+![Remote Monitor Image](../../../static/img/docs/495df667-0690-48e0-b929-f7671e9fc92c/image_5.webp)
 
 ## Step 5
 Apply the relevant alert template and ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.

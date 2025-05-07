@@ -30,7 +30,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|-------------|----------|----------------------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | \<Screenshot Below\>   |
 
-![Image](../../../static/img/Windows-License-Status/image_1.png)
+![Image](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_1_1.webp)
 
 ## Target
 
@@ -178,14 +178,14 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Check the concerned groups and ensure the monitor set is created and configured with the correct search.  
 **Limit to:** `Windows Machines - Excluding End-of-Life Windows Machines`
 
-![Image](../../../static/img/-Windows-License-Status/image_1.png)
+![Image](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_1.webp)
 
 ---
 
 ### Step 7
 Set the alert template to `△ Custom - Ticket Creation Computer - Warning and Failed` on the monitor.
 
-![Image](../../../static/img/-Windows-License-Status/image_2.png)
+![Image](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_2.webp)
 
 
 

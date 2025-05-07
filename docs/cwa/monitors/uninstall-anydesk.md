@@ -24,7 +24,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                      |
 | ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ----------------------------------------------------------- |
-| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Image](../../../static/img/Uninstall-Anydesk/image_1.png) |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Image](../../../static/img/docs/34d2f7ec-4b5d-43d3-b109-4af2bb24d6be/image_1.webp) |
 
 ## Target
 

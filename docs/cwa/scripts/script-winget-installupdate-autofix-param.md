@@ -21,7 +21,7 @@ Please find the application package at the following URL:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Script---Winget---InstallUpdate-Autofix,Param/image_1.png)  
+![Sample Run](../../../static/img/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25/image_1.webp)  
 
 ## Variables
 
@@ -48,5 +48,3 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
-

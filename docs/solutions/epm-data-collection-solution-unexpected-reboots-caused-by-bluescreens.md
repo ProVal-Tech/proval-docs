@@ -44,9 +44,9 @@ The Unexpected Restart Monitor generates a lot of noise, as often the shutdown i
 8. Click Save.
 9. Click Save and Close.
 
-![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens/image_2.png)
+![Image](../../static/img/docs/64476262-ad0f-474e-aebb-70ec1e0ccd97/image_2.webp)
 
-![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens/image_3.png)
+![Image](../../static/img/docs/64476262-ad0f-474e-aebb-70ec1e0ccd97/image_3.webp)
 
 ### Adding the Alert to the Monitor
 
@@ -56,10 +56,8 @@ The Unexpected Restart Monitor generates a lot of noise, as often the shutdown i
 4. Look for a monitor named System - Event 41,8006 and click on it once.
 5. Modify the Alert Template to be the template you created in the prior step.
 
-![Image](../../static/img/EPM---Data-Collection---Solution--Unexpected-Reboots-caused-by-Bluescreens/image_4.png)
+![Image](../../static/img/docs/64476262-ad0f-474e-aebb-70ec1e0ccd97/image_4.webp)
 
 ## FAQ
-
-
 
 

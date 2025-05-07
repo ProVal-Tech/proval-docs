@@ -20,5 +20,3 @@ This document describes the method to detect if Exchange Server 2019 is installe
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%_and|\{%_eq|\{%-HKLM//Software//Microsoft//ExchangeServer//v15//Setup:MsiProductMajor-%}|15_%}|\{%_eq|\{%-HKLM//Software//Microsoft//ExchangeServer//v15//Setup:MsiProductMinor-%}|2_%}_%} | Equals     | 1      | Windows        |
 
-
-

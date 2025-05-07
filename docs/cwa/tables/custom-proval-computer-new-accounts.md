@@ -42,5 +42,3 @@ The table named: **custom_proval_computer_new_accounts** is built to store all i
 | Disable Status           | TINYINT  | Indicates whether the newly created account is disabled (0 - New Account Approved, 1 - Disabled, 2 - No Action). Here, 2 means the script that creates this table did not choose to disable the newly created account; it is only meant for auditing the new account. |
 | Approve Status           | TINYINT  | Indicates whether the account is approved to be enabled (0 - Not Approved, 1 - Approved and Enabled, 2 - No Action). |
 | Approve Date Status      | DATETIME | Represents when the newly created account was approved to be enabled. (If the date is 1970-01-01 00:00:00, it means the account is not approved.) |
-
-

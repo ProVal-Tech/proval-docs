@@ -33,5 +33,3 @@ This DataView will display basic information related to folder redirection on en
 | FolderName          | Stores the name of the folder that was redirected                 |
 | Redirection_Path  | Stores the path where the folder was redirected for a user on the computer   |
 | ScriptRanDate           | Stores the date and time when the folder redirection was last detected by the [Script - Folder Redirection Detection [DV]](/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69)                  |
-
-

@@ -18,7 +18,7 @@ This script is for use in conjunction with User-Centric. When users are imported
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Force-Contacts-to-'Managed'-(User-Centric)/image_1.png)
+![Sample Run](../../../static/img/docs/44840fd1-931c-45e1-aa69-2c52f30117a8/image_1.webp)
 
 ## Dependencies
 
@@ -31,5 +31,3 @@ This script is for use in conjunction with User-Centric. When users are imported
 ## Output
 
 Manage plugin
-
-

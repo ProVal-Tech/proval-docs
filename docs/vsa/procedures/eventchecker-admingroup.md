@@ -13,5 +13,3 @@ unlisted: false
 ## Summary
 
 Checks Security Events for Admin Memberships
-
-

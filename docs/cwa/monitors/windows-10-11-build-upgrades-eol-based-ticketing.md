@@ -26,7 +26,7 @@ This monitor is intended to be used for **ticketing purposes only**. It explicit
 
 Managed Service Plan Groups for Windows Workstations
 
-![Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based--Ticketing/image_1.png)
+![Image](../../../static/img/docs/f9d7bc4e-9cee-4bd6-a471-7910c3068e3d/image_1_1.webp)
 
 ## Ticketing
 

@@ -17,10 +17,10 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 ## Sample Run
 
 **First Run**: Run the script with the `Set_Environment` parameter set to `1` after importing it to create the [custom table](/docs/10712956-11f1-47f6-ab0a-d063d2ca67d1) and the EDF being used by the script.  
-![First Run](../../../static/img/Locate-PHP.exe/image_1.png)
+![First Run](../../../static/img/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43/image_1_1.webp)
 
 **Regular Execution**:  
-![Regular Execution](../../../static/img/Locate-PHP.exe/image_2.png)
+![Regular Execution](../../../static/img/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43/image_2_1.webp)
 
 ## Variables
 
@@ -51,5 +51,3 @@ The script uses [Everything.exe](https://www.voidtools.com/) to locate `php.exe`
 
 - Script Log
 - Dataview
-
-

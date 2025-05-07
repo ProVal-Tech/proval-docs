@@ -25,7 +25,7 @@ Ticketing is optional if the global parameter is set to a ticket category above 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Chromium-Browser-Update/image_1.png)
+![Sample Run](../../../static/img/docs/a17a9537-62ae-43f8-8212-dbac0a328ca0/image_1.webp)
 
 ## Dependencies
 
@@ -48,5 +48,3 @@ Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium 
 
 - Script log
 - Optional ticketing
-
-

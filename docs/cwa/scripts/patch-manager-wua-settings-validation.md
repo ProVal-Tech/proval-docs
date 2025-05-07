@@ -22,11 +22,11 @@ Sometimes settings that the Patch Manager is supposed to set via policy don't ac
 
 This script can also serve as a pre-patching tool. When using this script in that context, do not mark the `Fail patch job if script fails or times out` checkbox.
 
-![Additional Context Image](../../../static/img/Patch-Manager---WUA-Settings-Validation/image_1.png)
+![Additional Context Image](../../../static/img/docs/1f78325c-968a-4a73-ba85-2a18c061063e/image_1.webp)
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Patch-Manager---WUA-Settings-Validation/image_2.png)
+![Sample Run Image](../../../static/img/docs/1f78325c-968a-4a73-ba85-2a18c061063e/image_2.webp)
 
 ## Global Variables
 
@@ -49,5 +49,3 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 ## Output
 
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
-
-

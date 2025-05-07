@@ -102,5 +102,3 @@ Uninstalls unsupported redistributables and installs supported ones.
 ## Output
 - .\Invoke-VcRedistModule-log.txt
 - .\Invoke-VcRedistModule-Error.txt
-
-

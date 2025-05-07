@@ -72,5 +72,3 @@ Sets the specified user as the last logged-in user and restarts the computer imm
 
 - .\\Set-LastLoggedOnUser-Log.txt
 - .\\Set-LastLoggedOnUser-Error.txt
-
-

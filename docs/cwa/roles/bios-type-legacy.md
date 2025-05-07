@@ -19,5 +19,3 @@ This role definition helps you track machines with legacy BIOS types.
 | Detection String                     | Comparator     | Result | Applicable OS |
 |--------------------------------------|----------------|--------|----------------|
 | \{%@bcdedit | find /i "path"@%}     | Regex Match    | .exe   | Windows        |
-
-

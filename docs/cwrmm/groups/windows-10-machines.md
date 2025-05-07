@@ -17,35 +17,33 @@ This document outlines the process for creating a dynamic group specifically for
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](../../../static/img/Windows-10-Machines/image_1.png)
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](../../../static/img/Windows-10-Machines/image_2.png)  
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_2.webp)  
    The following page will appear after clicking the `Dynamic Group` button:  
-   ![Image](../../../static/img/Windows-10-Machines/image_3.png)
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_3.webp)
 
 3. Set the group name to `Windows 10 Machines`.  
    Description: `Windows 10 Machines`  
-   ![Image](../../../static/img/Windows-10-Machines/image_4.png)
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_4.webp)
 
 4. Click the `+ Add Criteria` button in the `Criteria` section of the group.  
-   ![Image](../../../static/img/Windows-10-Machines/image_5.png)  
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_5.webp)  
    The following search box will appear.  
-   ![Image](../../../static/img/Windows-10-Machines/image_6.png)
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_6.webp)
 
 5. Search for and select the `OS` criteria.  
-   ![Image](../../../static/img/Windows-10-Machines/image_7.png)  
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_7.webp)  
    Select `Microsoft Windows 10` in the comparison condition.  
-   ![Image](../../../static/img/Windows-10-Machines/image_8.png)  
-   ![Image](../../../static/img/Windows-10-Machines/image_9.png)  
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_8.webp)  
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_9.webp)  
    **Condition:** `OS` `Contains any of` `Microsoft Windows 10`
 
 6. Click the `Save` button to save/create the group.  
-   ![Image](../../../static/img/Windows-10-Machines/image_10.png)
+   ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_10.webp)
 
 ## Completed Group
 
-![Image](../../../static/img/Windows-10-Machines/image_11.png)  
-![Image](../../../static/img/Windows-10-Machines/image_12.png)
-
-
+![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_11.webp)  
+![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_12.webp)

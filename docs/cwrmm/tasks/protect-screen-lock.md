@@ -16,9 +16,9 @@ This script sets a specified .scr file as the default screensaver for all users,
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Protect-Screen-Lock/image_1.png)  
-![Sample Run 2](../../../static/img/Protect-Screen-Lock/image_2.png)  
-![Sample Run 3](../../../static/img/Protect-Screen-Lock/image_3.png)  
+![Sample Run 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_3.webp)  
 
 ## Dependencies
 
@@ -32,39 +32,39 @@ This script sets a specified .scr file as the default screensaver for all users,
 | Timeout          | 900                            | True     | 900     | Number Value  | The maximum timeout value for the screensaver. Defaults to 900 seconds.                                                                                       |
 | DomainException   | 0/1                           | False    |         | Flag          | Set to run a GPRESULT instead of making configuration changes when a machine is part of a domain.                                                                |
 
-![User Parameters Image](../../../static/img/Protect-Screen-Lock/image_4.png)  
+![User Parameters Image](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_4.webp)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation Step 1](../../../static/img/Protect-Screen-Lock/image_5.png)  
-![Task Creation Step 2](../../../static/img/Protect-Screen-Lock/image_6.png)  
+![Task Creation Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_5.webp)  
+![Task Creation Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_6.webp)  
 
 **Name:** `Protect Screen Lock`  
 **Description:** `This script sets a specified .scr file as the default screensaver for all users, manages lockscreen timeout settings, and handles domain exceptions using Strapper. If no screensaver path is provided, this portion of the script is skipped.`  
 **Category:** `Security`  
-![Task Creation Step 3](../../../static/img/Protect-Screen-Lock/image_7.png)  
+![Task Creation Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_7.webp)  
 
 ## Parameters
 
 ### ScreensaverPath:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![ScreensaverPath Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
+![ScreensaverPath Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_8.webp)  
 
 This screen will appear.  
-![ScreensaverPath Step 2](../../../static/img/Protect-Screen-Lock/image_9.png)  
+![ScreensaverPath Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_9.webp)  
 
 - Set `ScreensaverPath` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![ScreensaverPath Step 3](../../../static/img/Protect-Screen-Lock/image_10.png)  
+![ScreensaverPath Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_10.webp)  
 
 ### Timeout:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Timeout Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
+![Timeout Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_8.webp)  
 
 This screen will appear.  
-![Timeout Step 2](../../../static/img/Protect-Screen-Lock/image_9.png)  
+![Timeout Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_9.webp)  
 
 - Set `Timeout` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -72,35 +72,35 @@ This screen will appear.
 - Enable the `Default Value` button.
 - Set `900` in the `Value` field.  
 - Click the `Save` button.  
-![Timeout Step 3](../../../static/img/Protect-Screen-Lock/image_11.png)  
+![Timeout Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_11.webp)  
 
 ### Domain Exception:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Domain Exception Step 1](../../../static/img/Protect-Screen-Lock/image_8.png)  
+![Domain Exception Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_8.webp)  
 
 This screen will appear.  
-![Domain Exception Step 2](../../../static/img/Protect-Screen-Lock/image_9.png)  
+![Domain Exception Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_9.webp)  
 
 - Set `DomainException` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Domain Exception Step 3](../../../static/img/Protect-Screen-Lock/image_12.png)  
+![Domain Exception Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_12.webp)  
 
 ## Task Creation
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Creation Row Step 1](../../../static/img/Protect-Screen-Lock/image_13.png)  
+![Task Creation Row Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_13.webp)  
 
 A blank function will appear.  
-![Task Creation Row Step 2](../../../static/img/Protect-Screen-Lock/image_14.png)  
+![Task Creation Row Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_14.webp)  
 
 ### Row 1 Function: PowerShell Script
 Search and select the `PowerShell Script` function.  
-![Row 1 Step 1](../../../static/img/Protect-Screen-Lock/image_15.png)  
-![Row 1 Step 2](../../../static/img/Protect-Screen-Lock/image_16.png)  
+![Row 1 Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_15.webp)  
+![Row 1 Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_16.webp)  
 
 The following function will pop up on the screen:  
-![Row 1 Step 3](../../../static/img/Protect-Screen-Lock/image_17.png)  
+![Row 1 Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_17.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.  
 ```powershell
@@ -163,33 +163,31 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 #endregion
 ```
-![Row 1 Step 4](../../../static/img/Protect-Screen-Lock/image_18.png)  
+![Row 1 Step 4](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_18.webp)  
 
 ### Row 2 Function: Script Log
 Add a new row by clicking the `Add Row` button.  
-![Row 2 Step 1](../../../static/img/Protect-Screen-Lock/image_19.png)  
+![Row 2 Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_19.webp)  
 
 A blank function will appear.  
-![Row 2 Step 2](../../../static/img/Protect-Screen-Lock/image_20.png)  
+![Row 2 Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_20.webp)  
 
 Search and select the `Script Log` function.  
-![Row 2 Step 3](../../../static/img/Protect-Screen-Lock/image_21.png)  
+![Row 2 Step 3](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_21.webp)  
 
 The following function will pop up on the screen:  
-![Row 2 Step 4](../../../static/img/Protect-Screen-Lock/image_22.png)  
+![Row 2 Step 4](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_22.webp)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Row 2 Step 5](../../../static/img/Protect-Screen-Lock/image_23.png)  
+![Row 2 Step 5](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_23.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Row 2 Step 6](../../../static/img/Protect-Screen-Lock/image_24.png)  
+![Row 2 Step 6](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_24.webp)  
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Protect-Screen-Lock/image_25.png)  
+![Completed Task](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_25.webp)  
 
 ## Output
 
 - Script log
-
-

@@ -19,13 +19,13 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Sample Run
 
 - Removing the homepage from Google Chrome:  
-  ![Google Chrome](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Remove/image_1.png)
+  ![Google Chrome](../../../static/img/docs/8d741266-521f-4bdf-b921-9fe0c28a0648/image_1.webp)
   
 - Removing the homepage from Microsoft Edge:  
-  ![Microsoft Edge](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Remove/image_2.png)
+  ![Microsoft Edge](../../../static/img/docs/8d741266-521f-4bdf-b921-9fe0c28a0648/image_2.webp)
   
 - Removing the homepage from both Google Chrome and Microsoft Edge:  
-  ![Both Browsers](../../../static/img/EPM---Software-Configuration---Chromium-Browsers---Homepage---Remove/image_3.png)
+  ![Both Browsers](../../../static/img/docs/8d741266-521f-4bdf-b921-9fe0c28a0648/image_3.webp)
 
 ## Dependencies
 
@@ -40,5 +40,3 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
-
-

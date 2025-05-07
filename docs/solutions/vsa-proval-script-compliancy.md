@@ -31,5 +31,3 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 - Ensure the AP has the appropriate CF assigned to `updateSystemInfo()`
 - Run the AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
-
-

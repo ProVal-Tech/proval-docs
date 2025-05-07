@@ -40,7 +40,7 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
    - Import the Alert Template "**△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)**"
 
 2. Reload the system cache:
-   ![Cache Reload](../../../static/img/CWM---Automate---ScreenConnect-RMM+---Offline-Server-AutoFix-Solution/image_1.png)
+   ![Cache Reload](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation -> Monitors within the CWA Control Center and set up the following:
@@ -56,11 +56,11 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 - `△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)`
   - This will create a ticket using the default create ticket functionality rather than using the script to create the ticket. This ensures that the ticket gets generated whether the scripting engine is overloaded or not. The downside of using this is that the initial description of the tickets is not as detailed with additional computer information.
-  ![Default Ticket Example](../../../static/img/CWM---Automate---ScreenConnect-RMM+---Offline-Server-AutoFix-Solution/image_2.png)
+  ![Default Ticket Example](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_2.webp)
 
 - `△ Custom - Autofix - Critical Machine Offline (RMM+)`
   - This will create the ticket entirely through the autofix script, ensuring the initial description of the ticket contains helpful computer information and is automatically adapted for different types of machines, such as critical workstations, Linux, and Mac machines.
-  ![Autofix Ticket Example](../../../static/img/CWM---Automate---ScreenConnect-RMM+---Offline-Server-AutoFix-Solution/image_3.png)
+  ![Autofix Ticket Example](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_3.webp)
 
 ## FAQ
 
@@ -69,15 +69,13 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 2. **What are the differences between the two tickets, and how do they look?**
    - For the Default Ticket creation alert template, the initial description should look something like this:
-     ![Default Ticket Description](../../../static/img/CWM---Automate---ScreenConnect-RMM+---Offline-Server-AutoFix-Solution/image_4.png)
+     ![Default Ticket Description](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_4.webp)
 
    - For the ticket creation from the script, the initial description should look something like this:
-     ![Script Ticket Description](../../../static/img/CWM---Automate---ScreenConnect-RMM+---Offline-Server-AutoFix-Solution/image_5.png)
+     ![Script Ticket Description](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_5.webp)
      - Keep in mind that for any other machine types, the word 'Server' will be replaced with the type of critical machine that is offline. Those potential options are as follows:
        - 'Critical Mac Machine'
        - 'Linux Machine'
        - 'Critical Workstation'
        - 'Server'
      - It is recommended that you use this alert template only if you are confident that the scripting engine should not get overloaded based on your current configuration OR if you are okay with accepting the potential risk if the scripting engine has a problem during an offline server issue.
-
-

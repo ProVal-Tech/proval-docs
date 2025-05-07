@@ -25,5 +25,3 @@ To present information about possible Log4Shell vulnerabilities and attacks on A
 | [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba) | Script       | This script is used to scan for possible vulnerabilities in a target system, saving information to EDFs for reporting. |
 | [SEC - Endpoint Protection - Dataview - Log4J - Log4Shell - Detections](/docs/59595d20-d1f8-4406-b574-58a4d32b0384) | Dataview    | Displays information about the EDFs filled by [SEC - Endpoint Protection - Script - Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba). These EDFs indicate vulnerability information about the Log4J/Log4Shell exploit. |
 | [CWM - Automate - Script - Log4J Remediation Residue Removal](/docs/c18e0a86-ade5-405a-9fc4-46908a340cf8) | Script       | Removes the residuals left by the [Log4J (Log4Shell) File Scan](/docs/a8eab72d-3794-4808-9009-b01bf3c9bcba) script, including the `Everything` service. |
-
-

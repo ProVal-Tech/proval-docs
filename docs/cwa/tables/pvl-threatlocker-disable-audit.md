@@ -32,5 +32,3 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LearningModeDuration   | INT      | Stores the number of hours for which the Threatlocker learning mode is set.                                       |
 | Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
 | LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |
-
-

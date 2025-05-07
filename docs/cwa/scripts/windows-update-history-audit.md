@@ -16,7 +16,7 @@ This document describes a script that gathers Windows update data and enters it 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Update-History-Audit/image_1.png)
+![Sample Run](../../../static/img/docs/d0c435d0-7bfb-4d65-aff3-f3db9b5c3ab6/image_1.webp)
 
 ## Dependencies
 
@@ -39,5 +39,3 @@ This document describes a script that gathers Windows update data and enters it 
 
 - Script Log
 - [pvl_windows_updates](/docs/d1791eba-107c-4be0-8048-a1d716dae301)
-
-

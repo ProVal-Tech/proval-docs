@@ -28,7 +28,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|------------|----------|-------------------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 900      | \<Screenshot Below> |
 
-![Screenshot](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_1.png)
+![Screenshot](../../../static/img/docs/2549fcf6-30b5-497b-b44d-7329334bb32c/image_1.webp)
 
 ## Dependencies
 
@@ -37,9 +37,9 @@ Insert the details of the monitor in the table below.
 ## Target
 
 Domain Controllers  
-![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_2.png)  
+![Image](../../../static/img/docs/2549fcf6-30b5-497b-b44d-7329334bb32c/image_2.webp)  
 The monitor set should be limited to the `<Server Role - AD - Infrastructure Master>` search.  
-![Image](../../../static/img/RSM---Active-Directory--AD-Account-Lockout-Detection/image_3.png)
+![Image](../../../static/img/docs/2549fcf6-30b5-497b-b44d-7329334bb32c/image_3.webp)
 
 ## Implementation
 

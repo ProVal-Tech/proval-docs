@@ -30,10 +30,10 @@ This script satisfies the request of ticket T20221207.0097 - auto AD to Autopilo
 ## Sample Run
 
 Set up the assigned Encrypted Client Level EDF Values  
-![Sample Run](../../../static/img/Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)/image_1.png)
+![Sample Run](../../../static/img/docs/8b128210-5b70-4155-ade6-83ab5365911c/image_1.webp)
 
 Run the script on the target machine  
-![Run Script](../../../static/img/Auto-AAD-to-Autopilot---Client-Specific-(IT-Synergy)/image_2.png)
+![Run Script](../../../static/img/docs/8b128210-5b70-4155-ade6-83ab5365911c/image_2.webp)
 
 ## Dependencies
 
@@ -56,5 +56,3 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain "All Devices synced," then `Get-WindowsAutoPilotInfo.ps1` failed, and the script will fail.
 - If the `FinishStatus` of the script PowerShell response - All Errors - Check is false, then the check for common environmental errors found a known issue, and the script will fail.
 - The script log will hold any error type information.
-
-

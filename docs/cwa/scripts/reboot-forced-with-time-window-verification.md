@@ -18,7 +18,7 @@ This script will reboot a machine, but only if it is within a preconfigured time
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Reboot---Forced-with-Time-Window-Verification/image_1.png)
+![Sample Run](../../../static/img/docs/eb54bf63-7c3d-4db0-a76d-d421eb07a243/image_1.webp)
 
 ## Dependencies
 
@@ -40,5 +40,3 @@ This script will reboot a machine, but only if it is within a preconfigured time
 ## Output
 
 - Script log
-
-

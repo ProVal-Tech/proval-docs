@@ -41,5 +41,3 @@ Read the associated documents carefully.
 - Ensure the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template is being used with [Internal Monitor - Agents Missing Perch Log Shipper](/docs/bc410117-b7b7-4345-967c-965f15acdf07).
 - Right-click and select "Run Now" to enable [Internal Monitor - Agents Missing Perch Log Shipper](/docs/bc410117-b7b7-4345-967c-965f15acdf07) to start deploying Perch Log Shipper on the required machines.
 
-
-

@@ -35,7 +35,7 @@ Additionally, it can be used to detect Windows 11 computers that do not meet Mic
    - Alert Template - △ Custom - Execute Script - Windows 11 Compatibility Check
 
 2. Reload the system cache:  
-   ![System Cache Reload](../../static/img/Windows-11-Compatibility-Audit/image_1.png)
+   ![System Cache Reload](../../static/img/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c/image_1.webp)
 
 3. Execute the [Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c) script against an online Windows 10 computer to create the [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7) custom table.
 
@@ -44,5 +44,3 @@ Additionally, it can be used to detect Windows 11 computers that do not meet Mic
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](/docs/8aa2542c-c61f-43b8-a7ec-ec33558319e4)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
-
-

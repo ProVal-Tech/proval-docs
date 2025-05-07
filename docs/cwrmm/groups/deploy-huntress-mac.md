@@ -25,7 +25,7 @@ The purpose of this group is to filter the MAC machines where the Huntress agent
 
 ## Group Overview
 
-![Image](../../../static/img/Deploy-Huntress---Mac/image_1.png)
+![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_1.webp)
 
 **Group Type:** Dynamic  
 **Group Name:** Deploy Huntress - MAC  
@@ -33,7 +33,7 @@ The purpose of this group is to filter the MAC machines where the Huntress agent
 
 ## Criteria
 
-![Image](../../../static/img/Deploy-Huntress---Mac/image_2.png)
+![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_2.webp)
 
 - Installed Software does not contain any of the `Huntress Agent`
 - Huntress Acct_Key should not be blank
@@ -48,8 +48,6 @@ The purpose of this group is to filter the MAC machines where the Huntress agent
 
 Once the above criteria are met, click the Save button to save the group.
 
-![Image](../../../static/img/Deploy-Huntress---Mac/image_3.png)
+![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_3.webp)
 
-![Image](../../../static/img/Deploy-Huntress---Mac/image_4.png)
-
-
+![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_4.webp)

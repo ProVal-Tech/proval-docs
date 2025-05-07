@@ -14,14 +14,14 @@ unlisted: false
 
 The purpose of the monitor set is to detect the machines that are active in Automate but are not checking in with the Webroot portal for **X** number of days.  
 **X** should be defined in the **Webroot SecureAnywhere with Unity** Plugin's settings.  
-![Image](../../../static/img/Stale-Agents/image_1.png)  
+![Image](../../../static/img/docs/8f74652a-f8c3-4321-8fba-76921048c280/image_1.webp)  
 
 Preferred Alert Template: △ Custom - Ticket Creation - Computer
 
 ## Dependencies
 
 **Webroot SecureAnywhere with Unity Plugin**  
-![Image](../../../static/img/Stale-Agents/image_2.png)  
+![Image](../../../static/img/docs/8f74652a-f8c3-4321-8fba-76921048c280/image_2.webp)  
 
 ## Target
 
@@ -46,4 +46,3 @@ Last Seen by Automate: %RESULT%
 ```
 The computer %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
-

@@ -22,7 +22,7 @@ The script installs the latest version of FileZilla on a Windows computer. If th
 
 ## Sample Run
 
-![Image1](../../../static/img/cwa-script-filezilla-install-update/image1.png)
+![Image1](../../../static/img/docs/154e2b72-d73f-4693-a316-7a296e4793ec/image1.webp)
 
 ## Output
 
@@ -43,4 +43,4 @@ Output:
 ```
 
 **Note:** The script does not create tickets by default. Tickets are generated only when the script is executed as an Autofix from an internal monitor with a configured ticket category. It is used as an Autofix for the [Update FileZilla](/docs/ea7ef637-8620-499a-a982-a805a11e14c7) monitor set. To enable ticketing, assign a ticket category to this monitor set.  
-![Image2](../../../static/img/cwa-script-filezilla-install-update/image2.png)
+![Image2](../../../static/img/docs/154e2b72-d73f-4693-a316-7a296e4793ec/image2.webp)

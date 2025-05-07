@@ -18,7 +18,7 @@ This script uses global variables to configure the number of seconds before a sc
 
 ## Sample Run
 
-![Sample Run](../../../static/img/GPO---Create-Screen-Lock-Policy-Globals/image_1.png)
+![Sample Run](../../../static/img/docs/0a1033eb-6797-40d4-8049-9e9e4bf0d637/image_1.webp)
 
 ## Dependencies
 
@@ -43,5 +43,3 @@ This script uses global variables to configure the number of seconds before a sc
 ## Output
 
 - Script log
-
-

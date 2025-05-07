@@ -25,7 +25,7 @@ This remote monitor is configured to detect when the domain admin account is loc
 | System       | 127.0.0.1     | Run File   | **REDACTED**| State Based | 900      |
 
 **State Conditions:**  
-![State Conditions](../../../static/img/Domain-Admin-Account-Lockout/image_1.png)
+![State Conditions](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_1.webp)
 
 ## Dependencies
 
@@ -35,8 +35,8 @@ This remote monitor is configured to detect when the domain admin account is loc
 ## Target
 
 Domain Controllers  
-![Target Image](../../../static/img/Domain-Admin-Account-Lockout/image_2.png)  
-![Target Image](../../../static/img/Domain-Admin-Account-Lockout/image_3.png)  
+![Target Image](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_2.webp)  
+![Target Image](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_3.webp)  
 
 The monitor set should be limited to the `Server Roles/Server Role - AD - Infrastructure Master` search.
 
@@ -50,7 +50,7 @@ Domain Admin Locked Account Detected on %computername%. Refer to the below detai
 %RESULT%.  
 
 **Reference Ticket:**  
-![Reference Ticket](../../../static/img/Domain-Admin-Account-Lockout/image_4.png)
+![Reference Ticket](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_4.webp)
 
 ## Implementation
 
@@ -101,8 +101,8 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.  
 **Limit To:** `Server Role - AD - Infrastructure Master`  
 
-![Image 1](../../../static/img/Implement---Remote-Monitor---Domain-Admin-Account-Lockout/image_1.png)  
-![Image 2](../../../static/img/Implement---Remote-Monitor---Domain-Admin-Account-Lockout/image_2.png)
+![Image 1](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_1_1.webp)  
+![Image 2](../../../static/img/docs/a24b00c5-49d4-4a2b-9090-a2716b56cf47/image_2_1.webp)
 
 ### 5. Assign the Alert Template
 Assign the required alert template. It is suggested to use '`△ Custom - Ticket Creation Computer - Failures Only`' for the best results.

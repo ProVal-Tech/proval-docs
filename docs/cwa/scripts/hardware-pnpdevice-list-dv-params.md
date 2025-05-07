@@ -18,7 +18,7 @@ This script collects the device name and version information as provided for the
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Hardware---PnPDevice-List-DV,Params/image_1.png)
+![Sample Run](../../../static/img/docs/b390d527-f85c-4f74-af2e-3a639bff8a51/image_1.webp)
 
 ## Dependencies
 
@@ -50,5 +50,3 @@ This script collects information about the device name and version as provided f
 ## Output
 
 - Dataview
-
-

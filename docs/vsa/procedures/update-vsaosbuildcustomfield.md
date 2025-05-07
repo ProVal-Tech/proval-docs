@@ -40,5 +40,3 @@ The output location for log, result, and error files is as follows:
 ```
 ./Update-OsBuildCustomField-log.txt
 ```
-
-

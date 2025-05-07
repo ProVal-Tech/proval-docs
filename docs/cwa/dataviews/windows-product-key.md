@@ -29,5 +29,3 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | LastContact         | The last contact of the agent with ConnectWise Automate |
 | Windows Product Key  | Windows product key information of the agent        |
 
-
-

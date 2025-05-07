@@ -26,17 +26,17 @@ This document provides instructions for installing ImmyBot on the endpoint using
      `VSASharedFiles//Miscellaneous//Install-ImmyBot.ps1`
 4. Modify the line 16 `writeFile` to point to the uploaded file, and ensure the destination shows `#directory#//#ScriptName#.ps1`
 
-![Image](../../../static/img/Install-ImmyBot/image_1.png)
+![Image](../../../static/img/docs/6b5259a2-9eb6-4dc1-877d-ca404877cfc9/image_1.webp)
 
 5. Create managed variables for IMMYBOT_ID and IMMYBOT_KEY  
-   ![Image](../../../static/img/Install-ImmyBot/image_2.png)
+   ![Image](../../../static/img/docs/6b5259a2-9eb6-4dc1-877d-ca404877cfc9/image_2.webp)
 
 These values can be gathered from the ImmyBot portal. The PowerShell output contains a KEY and an ID.
 
-![Image](../../../static/img/Install-ImmyBot/image_3.png)  
+![Image](../../../static/img/docs/6b5259a2-9eb6-4dc1-877d-ca404877cfc9/image_3.webp)  
 6. Specify the subdomain in the agent procedure. The subdomain can be gathered from the same command copied earlier.  
 
-![Image](../../../static/img/Install-ImmyBot/image_4.png)  
+![Image](../../../static/img/docs/6b5259a2-9eb6-4dc1-877d-ca404877cfc9/image_4.webp)  
 
 In this example, the subdomain of [https://proval.immy.bot](https://proval.immy.bot) would be **proval**.  
 
@@ -44,7 +44,7 @@ In this example, the subdomain of [https://proval.immy.bot](https://proval.immy.
 
 **Ensure you use the URL copied from the partner's ImmyBot instance**  
 
-![Image](../../../static/img/Install-ImmyBot/image_5.png)  
+![Image](../../../static/img/docs/6b5259a2-9eb6-4dc1-877d-ca404877cfc9/image_5.webp)  
 
 # Payload Usage
 ```powershell
@@ -74,5 +74,3 @@ Agent Procedure Log Entry
 %ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-log.txt
 %ProgramData%_automation/AgentProcedure/ImmyBotInstall/Install-ImmyBot-error.txt
 ```
-
-

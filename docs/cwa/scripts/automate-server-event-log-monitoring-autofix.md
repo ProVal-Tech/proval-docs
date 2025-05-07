@@ -18,7 +18,7 @@ The purpose of the script is to send information about the event logs detected b
 
 This is an Autofix script, and it is used within the "Automate Server - Event Log Monitoring [Autofix]" alert template.
 
-![Sample Run](../../../static/img/Automate-Server---Event-Log-Monitoring-Autofix/image_1.png)
+![Sample Run](../../../static/img/docs/f36b7367-99c7-478b-abc9-6802182431e4/image_1.webp)
 
 ## Dependencies
 

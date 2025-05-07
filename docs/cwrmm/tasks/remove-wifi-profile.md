@@ -16,9 +16,9 @@ This script removes the specified Wifi profile from the system. It provides a br
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Remove-Wifi-Profile/image_1.png)  
-![Sample Run 2](../../../static/img/Remove-Wifi-Profile/image_2.png)  
-![Sample Run 3](../../../static/img/Remove-Wifi-Profile/image_3.png)  
+![Sample Run 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_3.webp)  
 
 ## Dependencies
 
@@ -30,20 +30,20 @@ This script removes the specified Wifi profile from the system. It provides a br
 |--------------|-------------------|----------|--------------|--------------------------------------|
 | ProfileName  | suspiciousProfile  | True     | Text String  | Name of the Wifi Profile to remove. |
 
-![User Parameters](../../../static/img/Remove-Wifi-Profile/image_4.png)  
+![User Parameters](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_4.webp)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Step 1](../../../static/img/Remove-Wifi-Profile/image_5.png)  
-![Task Creation Step 2](../../../static/img/Remove-Wifi-Profile/image_6.png)  
+![Task Creation Step 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_5.webp)  
+![Task Creation Step 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_6.webp)  
 
 **Name:** `Remove Wifi Profile`  
 **Description:** `This script removes the specified Wifi profile from the system.`  
 **Category:** `Security`  
 
-![Task Creation Step 3](../../../static/img/Remove-Wifi-Profile/image_7.png)  
+![Task Creation Step 3](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_7.webp)  
 
 ## Parameters
 
@@ -51,39 +51,39 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Step 1](../../../static/img/Remove-Wifi-Profile/image_8.png)  
+![Add Parameter Step 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_8.webp)  
 
 This screen will appear.  
 
-![Add Parameter Step 2](../../../static/img/Remove-Wifi-Profile/image_9.png)  
+![Add Parameter Step 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_9.webp)  
 
 - Set `ProfileName` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Add Parameter Step 3](../../../static/img/Remove-Wifi-Profile/image_10.png)  
+![Add Parameter Step 3](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_10.webp)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Step 1](../../../static/img/Remove-Wifi-Profile/image_11.png)  
+![Add Row Step 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_11.webp)  
 
 A blank function will appear.
 
-![Add Row Step 2](../../../static/img/Remove-Wifi-Profile/image_12.png)  
+![Add Row Step 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_12.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Row 1 Function Step 1](../../../static/img/Remove-Wifi-Profile/image_13.png)  
-![Row 1 Function Step 2](../../../static/img/Remove-Wifi-Profile/image_14.png)  
+![Row 1 Function Step 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_13.webp)  
+![Row 1 Function Step 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_14.webp)  
 
 The following function will pop up on the screen:
 
-![Row 1 Function Step 3](../../../static/img/Remove-Wifi-Profile/image_15.png)  
+![Row 1 Function Step 3](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_15.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -140,42 +140,40 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Row 1 Function Step 4](../../../static/img/Remove-Wifi-Profile/image_16.png)  
+![Row 1 Function Step 4](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_16.webp)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Row 2 Function Step 1](../../../static/img/Remove-Wifi-Profile/image_17.png)  
+![Row 2 Function Step 1](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_17.webp)  
 
 A blank function will appear.
 
-![Row 2 Function Step 2](../../../static/img/Remove-Wifi-Profile/image_18.png)  
+![Row 2 Function Step 2](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_18.webp)  
 
 Search and select the `Script Log` function.
 
-![Row 2 Function Step 3](../../../static/img/Remove-Wifi-Profile/image_19.png)  
+![Row 2 Function Step 3](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_19.webp)  
 
 The following function will pop up on the screen:
 
-![Row 2 Function Step 4](../../../static/img/Remove-Wifi-Profile/image_20.png)  
+![Row 2 Function Step 4](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_20.webp)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Row 2 Function Step 5](../../../static/img/Remove-Wifi-Profile/image_21.png)  
+![Row 2 Function Step 5](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_21.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Row 2 Function Step 6](../../../static/img/Remove-Wifi-Profile/image_22.png)  
+![Row 2 Function Step 6](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_22.webp)  
 
 ## Completed Script
 
-![Completed Script](../../../static/img/Remove-Wifi-Profile/image_23.png)  
+![Completed Script](../../../static/img/docs/86ce1f15-d85b-472a-b35f-c4c357036ee2/image_23.webp)  
 
 ## Output
 
 - Script log
-
-
 
 

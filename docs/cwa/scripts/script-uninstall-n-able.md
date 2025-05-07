@@ -16,7 +16,7 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Script---Uninstall-N-Able/image_1.png)
+![Sample Run](../../../static/img/docs/3918a9ca-7721-40d6-9b8b-97a5737d6af6/image_1.webp)
 
 ## Dependencies
 

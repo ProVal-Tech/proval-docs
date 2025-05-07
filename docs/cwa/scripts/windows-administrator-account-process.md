@@ -23,7 +23,7 @@ This script is designed to do the following:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---`Administrator`-account-process/image_1.png)
+![Sample Run](../../../static/img/docs/5c6739bc-45a2-4011-99e1-f90581fa15ac/image_1.webp)
 
 ## Variables
 
@@ -59,11 +59,11 @@ This script is designed to do the following:
 
 **(Manual password creation before first run)**
 
-![Manual password creation](../../../static/img/Windows---`Administrator`-account-process/image_2.png)
+![Manual password creation](../../../static/img/docs/5c6739bc-45a2-4011-99e1-f90581fa15ac/image_2.webp)
 
 **(Manual password change)**
 
-![Manual password change](../../../static/img/Windows---`Administrator`-account-process/image_3.png)
+![Manual password change](../../../static/img/docs/5c6739bc-45a2-4011-99e1-f90581fa15ac/image_3.webp)
 
 ### Script Process:
 
@@ -94,5 +94,3 @@ This script is designed to do the following:
 ## Output
 
 Script log messages
-
-

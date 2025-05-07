@@ -52,5 +52,3 @@ The purpose of this solution is to identify and remove malicious or suspicious W
 - Check the data fetched from these primary computers in the [CWM - Automate - Dataview - Wi-Fi Profiles](/docs/40d25f32-9014-44ea-8332-0ab24d59ab43) dataview.
 - Set the EDFs defined in the [script's](/docs/47e125c4-26df-4b47-811b-b856f3395290) document according to the data available in the [dataview](/docs/40d25f32-9014-44ea-8332-0ab24d59ab43).
 - Apply the `△ CUSTOM - Execute Script - Get - Wifi Profiles` alert template to the monitor set.
-
-

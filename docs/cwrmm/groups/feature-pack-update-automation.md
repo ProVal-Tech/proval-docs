@@ -22,7 +22,7 @@ Organize computers operating on older build versions of Windows 10 and 11. The g
 
 ## Group Overview
 
-![Image](../../../static/img/Feature-Pack-Update-Automation/image_1.png)
+![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_1.webp)
 
 **Group Type:** Dynamic Group  
 **Group Name:** Feature Pack Update Automation  
@@ -31,34 +31,32 @@ Organize computers operating on older build versions of Windows 10 and 11. The g
 ## Criteria
 
 - Select `OS Build Number` for the Criteria `Does Not Contain any` for the comparator and type `19045` and `22631` in the condition box.  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_2.png)  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_3.png)  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_4.png)
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_2.webp)  
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_3.webp)  
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_4.webp)
 
 - Click the `Add Criteria` button to add another criterion.  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_5.png)
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_5.webp)
 
 - Select `OS` for the Criteria `Contains any of` for the comparator and `Microsoft Windows 10 and 11` for the condition.  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_6.png)  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_7.png)  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_8.png)
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_6.webp)  
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_7.webp)  
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_8.webp)
 
 - Add another criterion by clicking the `Add Criteria` button.
 
 - Select the `Feature Update Reboot Pending` custom field for criteria, `Equal` for the comparator, and type `False` in the condition box.  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_9.png)
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_9.webp)
 
 - Add another criterion by clicking the `Add Criteria` button.
 
 - Choose the `WinFeatUpgradeAttempts` custom field for criteria, select `Does Not Contain any` for the comparator, and enter the integers from 3 to 15 in the condition field. Enter each number individually, pressing Enter after each one: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15.  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_10.png)  
-  ![Image](../../../static/img/Feature-Pack-Update-Automation/image_11.png)
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_10.webp)  
+  ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_11.webp)
 
 ## Group Creation
 
 Click the Save button to save the group.  
-![Image](../../../static/img/Feature-Pack-Update-Automation/image_12.png)
+![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_12.webp)
 
-![Image](../../../static/img/Feature-Pack-Update-Automation/image_13.png)
-
-
+![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_13.webp)

@@ -20,7 +20,7 @@ This script performs an SFC scan on the target Windows device and creates a tick
 
 ## Sample Run
 
-![Sample Run](../../../static/img/SFC-Scan-and-Ticket/image_1.png)
+![Sample Run](../../../static/img/docs/b13054b0-07b2-4416-ba6d-fbe285f89605/image_1.webp)
 
 ## Dependencies
 
@@ -46,5 +46,3 @@ This script will stop the Windows Update service and clear some folders to ensur
 
 - Script log messages
 - Tickets
-
-

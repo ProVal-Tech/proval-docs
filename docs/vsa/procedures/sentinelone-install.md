@@ -19,21 +19,21 @@ This document outlines the installation process for the SentinelOne application 
 Export the agent procedure.  
 **Name:** SentinelOne - Install - (Windows)
 
-![Image 1](../../../static/img/SentinelOne---Install/image_1.png)
+![Image 1](../../../static/img/docs/e51e1f76-4cc2-4ad5-bc6d-74678c0109a3/image_1.webp)
 
-![Image 2](../../../static/img/SentinelOne---Install/image_2.png)
+![Image 2](../../../static/img/docs/e51e1f76-4cc2-4ad5-bc6d-74678c0109a3/image_2.webp)
 
 The agent procedure requires a ZIP file containing the backgrounds.  
 The ZIP can contain multiple images.  
 The following image formats are supported: ('jpeg', 'jpg', 'png', 'bmp')
 
-![Image 3](../../../static/img/SentinelOne---Install/image_3.png)
+![Image 3](../../../static/img/docs/e51e1f76-4cc2-4ad5-bc6d-74678c0109a3/image_3.webp)
 
 If the selected file is "[background.zip](http://background.zip)", no further changes are required.  
 If a different file has been specified, update the filename in the PowerShell execution.  
 Modify **[background.zip](http://background.zip)** to the name of the ZIP file you selected in the previous step.
 
-![Image 4](../../../static/img/SentinelOne---Install/image_4.png)
+![Image 4](../../../static/img/docs/e51e1f76-4cc2-4ad5-bc6d-74678c0109a3/image_4.webp)
 
 ## Dependencies
 

@@ -62,5 +62,3 @@ This solution provides information on a workstation's battery state.
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
 
-
-

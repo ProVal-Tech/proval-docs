@@ -18,10 +18,8 @@ This script clears the cache for installed Microsoft Teams on Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Clear-Teams-Cache/image_1.png)
+![Sample Run](../../../static/img/docs/dd89ea33-2c7f-4e0b-9985-0f59c8b0ba41/image_1.webp)
 
 ## Output
 
 - Script log
-
-

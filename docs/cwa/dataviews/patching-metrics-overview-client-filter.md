@@ -44,5 +44,3 @@ The SQL query filters the results for the patch-managed computers only. Removing
 | Patching Policy            | Patching Policy (Managed | Unmanaged). By default, the dataview will display data for the patch-managed computers only.                                     |
 | Client ID                  | Client ID (Hidden)                                                                                                                                     |
 | Sort                       | A custom column to sort the dataview in proper order (Hidden)                                                                                         |
-
-

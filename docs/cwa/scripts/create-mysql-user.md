@@ -18,7 +18,7 @@ This script will create a new MySQL user with Read-only permissions.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Create-MySQL-User/image_1.png)
+![Sample Run](../../../static/img/docs/d96342ec-c42e-424b-85b6-d7009a3163d0/image_1.webp)
 
 #### User Parameters
 
@@ -30,5 +30,3 @@ This script will create a new MySQL user with Read-only permissions.
 ## Process
 
 This script runs a SQL query and creates a new MySQL user with Full permissions for the `Labtech` database.
-
-

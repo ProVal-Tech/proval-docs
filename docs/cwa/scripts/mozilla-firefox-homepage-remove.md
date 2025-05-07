@@ -16,7 +16,7 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Mozilla-Firefox---Homepage---Remove/image_1.png)
+![Sample Run](../../../static/img/docs/c09afc4e-2ed0-4e85-9beb-e8b54082568e/image_1.webp)
 
 ## Dependencies
 
@@ -25,5 +25,3 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Logs
-
-

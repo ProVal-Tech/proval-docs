@@ -16,9 +16,9 @@ This task is designed to deploy the Cyrisma Censor Application.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/CRI-Agent-Deployment/image_1.png)
+![Sample Run 1](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_1.webp)
 
-![Sample Run 2](../../../static/img/CRI-Agent-Deployment/image_2.png)
+![Sample Run 2](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_2.webp)
 
 ## Implementation
 
@@ -26,42 +26,42 @@ This task is designed to deploy the Cyrisma Censor Application.
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/CRI-Agent-Deployment/image_3.png)
+![Create Task](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_3.webp)
 
 - **Name:** CRI Agent Deployment  
 - **Description:** This script installs the CRI Agent on the machines.  
 - **OS Supported:** Windows  
 - **Category:** Custom  
 
-![Task Details](../../../static/img/CRI-Agent-Deployment/image_4.png)
+![Task Details](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_4.webp)
 
 ### Script
 
 Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/CRI-Agent-Deployment/image_5.png)
+![Add Row](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_5.webp)
 
 ### Row 1: Function: Set Pre-defined Variable
 
-![Row 1 Image 1](../../../static/img/CRI-Agent-Deployment/image_6.png)
+![Row 1 Image 1](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_6.webp)
 
-![Row 1 Image 2](../../../static/img/CRI-Agent-Deployment/image_7.png)
+![Row 1 Image 2](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_7.webp)
 
 This sets the variable `CryismaAgent_URL` with the value of a custom field 'CryismaAgent_URL' [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418).
 
 ### Row 2: Function: Set Pre-defined Variable
 
-![Row 2 Image 1](../../../static/img/CRI-Agent-Deployment/image_8.png)
+![Row 2 Image 1](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_8.webp)
 
-![Row 2 Image 2](../../../static/img/CRI-Agent-Deployment/image_9.png)
+![Row 2 Image 2](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_9.webp)
 
 This sets the variable `CryismaAgent_Key` with the value of a custom field 'CryismaAgent_Key' [CW RMM - Cyrisma Custom Fields](/docs/2d448750-129b-4cff-aaf1-e73d2a296418).
 
 ### Row 3: Function: PowerShell Script
 
-![Row 3 Image 1](../../../static/img/CRI-Agent-Deployment/image_10.png)
+![Row 3 Image 1](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_10.webp)
 
-![Row 3 Image 2](../../../static/img/CRI-Agent-Deployment/image_11.png)
+![Row 3 Image 2](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_11.webp)
 
 Paste the following PowerShell script and set the expected time of script execution to `1800` seconds.
 
@@ -105,23 +105,23 @@ if ($InstallerCheck) {
 
 ### Row 4: Function: Script Log
 
-![Row 4 Image](../../../static/img/CRI-Agent-Deployment/image_12.png)
+![Row 4 Image](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_12.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Log Output](../../../static/img/CRI-Agent-Deployment/image_13.png)
+![Log Output](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_13.webp)
 
 ### Row 5: Logic: If/Then/Else
 
-![Row 5 Image 1](../../../static/img/CRI-Agent-Deployment/image_14.png)
+![Row 5 Image 1](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_14.webp)
 
-![Row 5 Image 2](../../../static/img/CRI-Agent-Deployment/image_15.png)
+![Row 5 Image 2](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_15.webp)
 
 ### Row 4a: Condition: Output Contains
 
 In the IF part, enter `Installation failed` in the right box of the "Output Contains" section.
 
-![Condition Image](../../../static/img/CRI-Agent-Deployment/image_16.png)
+![Condition Image](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_16.webp)
 
 ### Row 4b: Function: Set Custom Field
 
@@ -134,7 +134,7 @@ In this window, search for the `Cryisma_Status` field.
 - **Custom Field:** Cryisma_Status  
 - **Value:** Success  
 
-![Custom Field](../../../static/img/CRI-Agent-Deployment/image_17.png)
+![Custom Field](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_17.webp)
 
 ### Row 4c: Function: Set Custom Field
 
@@ -142,11 +142,11 @@ Add a new row by clicking on the Add Row button in the ELSE part and select the 
 
 In this one, set the Custom Field and Value as shown below.
 
-![Set Custom Field](../../../static/img/CRI-Agent-Deployment/image_18.png)
+![Set Custom Field](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_18.webp)
 
 Once all items are added, please save the task. The final task should look like the screenshot below.
 
-![Final Task Screenshot](../../../static/img/CRI-Agent-Deployment/image_19.png)
+![Final Task Screenshot](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_19.webp)
 
 ## Deployment
 
@@ -159,24 +159,24 @@ It is suggested to run the Task every 2 hours against the group "Cyrisma Sensor 
 
 This screen will appear.
 
-![Schedule Screen](../../../static/img/CRI-Agent-Deployment/image_20.png)
+![Schedule Screen](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_20.webp)
 
 - Select the relevant time to run the script and click the Do not repeat button.
 
-![Select Time](../../../static/img/CRI-Agent-Deployment/image_21.png)
+![Select Time](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_21.webp)
 
 - A pop-up box will appear.
 - Change the number of hours to `2` and click `OK`.
 
-![Change Hours](../../../static/img/CRI-Agent-Deployment/image_22.png)
+![Change Hours](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_22.webp)
 
 Search for `Cyrisma Sensor Deployment` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
-![Resources Selection](../../../static/img/CRI-Agent-Deployment/image_23.png)
+![Resources Selection](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_23.webp)
 
 Now click the `Run` button to initiate the task.
 
-![Run Task](../../../static/img/CRI-Agent-Deployment/image_24.png)
+![Run Task](../../../static/img/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524/image_24.webp)
 
 The task will start appearing in the Scheduled Tasks.
 
@@ -184,6 +184,4 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field
-
-
 

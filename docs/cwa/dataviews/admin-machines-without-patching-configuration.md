@@ -32,5 +32,3 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Patch Exclusion Checkbox           | Displays whether the `Disable Automated Patch Install` EDF is `Checked` or `Unchecked`         |
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
 | Last User Name                     | Displays the last username of the machine                                                      |
-
-

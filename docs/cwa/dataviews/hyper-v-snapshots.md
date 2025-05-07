@@ -50,5 +50,3 @@ This document provides an overview of dataview audit snapshots for virtual machi
 | Estimated Disk Max Usage         | Displays the maximum disk usage by the snapshot         |
 | Snapshot Description              | Displays the description of the snapshot                |
 | Is Current Snapshot              | Indicates whether the snapshot is current or not       |
-
-

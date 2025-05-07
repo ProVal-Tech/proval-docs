@@ -32,12 +32,12 @@ The groups below are created to deploy the [Task - Clear/Audit - Browser Saved P
 
 Create Dynamic Groups:
 
-![Create Dynamic Groups](../../../static/img/Browser-Saved-Password/image_1.png)
+![Create Dynamic Groups](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_1.webp)
 
 ### 1. Browser Saved Password Audit Group
 
-![Browser Saved Password Audit Group](../../../static/img/Browser-Saved-Password/image_2.png)
-![Browser Saved Password Audit Group](../../../static/img/Browser-Saved-Password/image_3.png)
+![Browser Saved Password Audit Group](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_2.webp)
+![Browser Saved Password Audit Group](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_3.webp)
 
 Criteria:
 
@@ -51,8 +51,8 @@ Criteria:
 
 ### 2. Clear Browser Saved Password endpoints
 
-![Clear Browser Saved Password endpoints](../../../static/img/Browser-Saved-Password/image_4.png)
-![Clear Browser Saved Password endpoints](../../../static/img/Browser-Saved-Password/image_5.png)
+![Clear Browser Saved Password endpoints](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_4.webp)
+![Clear Browser Saved Password endpoints](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_5.webp)
 
 Criteria:
 
@@ -66,11 +66,9 @@ Criteria:
 
 ### 3. Browser Saved Password Failure
 
-![Browser Saved Password Failure](../../../static/img/Browser-Saved-Password/image_6.png)
+![Browser Saved Password Failure](../../../static/img/docs/a9b4c5f1-c1bb-4e0d-8a2f-fad1bca51d47/image_6.webp)
 
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
-
-
 

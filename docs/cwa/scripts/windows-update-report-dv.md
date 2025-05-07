@@ -13,7 +13,7 @@ Get a detailed list of patches that are installed or available on the local mach
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Update-Report-DV/image_1.png)
+![Sample Run](../../../static/img/docs/41141ff5-ef57-4900-93d4-642b4a9d254f/image_1.webp)
 
 ## Dependencies
 
@@ -44,6 +44,4 @@ Get a detailed list of patches that are installed or available on the local mach
 - Script Log
 - Custom Table
 - Dataview
-
-
 

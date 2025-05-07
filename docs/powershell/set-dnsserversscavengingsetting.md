@@ -49,5 +49,3 @@ Log Files:
 .\Set-DNSServerScavengingSettings-log.txt
 .\Set-DNSServerScavengingSettings-error.txt
 ```
-
-

@@ -16,7 +16,7 @@ This document installs and populates a table in MySQL with a list of potential L
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Import-Log4Shell-Table/image_1.png)
+![Sample Run](../../../static/img/docs/c3342117-53c8-48de-9831-27cd7da77c00/image_1.webp)
 
 ## Dependencies
 
@@ -43,5 +43,3 @@ See [SEC - Endpoint Protection - Agnostic - Import-Log4JTable](/docs/a9db2857-d7
 - Local file on computer
 - Dataview
 - Custom Table
-
-

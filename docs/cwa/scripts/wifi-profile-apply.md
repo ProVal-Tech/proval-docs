@@ -18,7 +18,7 @@ The script applies the WiFi configuration for the desired SSID.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/WiFi-Profile---Apply/image_1.png)
+![Sample Run](../../../static/img/docs/52b6b460-b6bd-48cf-aab1-8484149578f0/image_1.webp)
 
 ## Dependencies
 
@@ -41,5 +41,3 @@ The script applies the WiFi configuration for the desired SSID.
 ## Output
 
 - Script log
-
-

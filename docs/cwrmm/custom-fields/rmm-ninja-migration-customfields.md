@@ -31,15 +31,15 @@ This document contains the custom fields that are used in the CW RMM to Ninja mi
 ### Step 1
 
 Navigate to `Settings` ➞ `Custom Fields`  
-![Step1](../../../static/img/cw-rmm-custom-fields-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen and click on it.  
-![Step2](../../../static/img/cw-rmm-custom-fields-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step2.webp)
 
 Provide the values as provided in the details section to the custom fields requirement and add them one by one.
 
 ## Completed Custom Field
 
-![Complete](../../../static/img/docs/rmm-ninja-migration-customfields/image.png)
+![Complete](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/image.webp)

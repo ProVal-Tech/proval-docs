@@ -37,5 +37,3 @@ The Dataview audits the monitors in an environment.
 | Category Name           | The category assigned to the alert.                          |
 | Service Board           | The service board that the alert will post to.              |
 | Monitor Run Frequency    | The running interval of the monitor.                         |
-
-

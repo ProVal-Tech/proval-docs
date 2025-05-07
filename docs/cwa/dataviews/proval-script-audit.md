@@ -36,5 +36,3 @@ This document lists all the scripts located in the 'proval', 'Proval - client sp
 - lt_scripts
 - h_systemtimings
 - plugin_prosync_scripts
-
-

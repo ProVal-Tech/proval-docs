@@ -29,5 +29,3 @@ This document stores historical information about queued maintenance modes. This
 | TimeStart   | DATETIME| The server time when the maintenance mode begins.                      |
 | Duration    | INT     | The number of minutes that the maintenance mode will last.             |
 | Mode        | INT     | The type of maintenance mode (1 = Alerts, 2 = Scripts, 3 = Alerts & Scripts) |
-
-
