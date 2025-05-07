@@ -10,7 +10,7 @@ function Move-File {
     $targetFile = Get-Item -Path $Path
     $targetFileName = $targetFile.Name
     $index = 0
-    while ( Test-Path -Path (Join-Path -Path $TargetPath -ChildPath $targetFile.Name)) {
+    while ( Test-Path -Path (Join-Path -Path $TargetPath -ChildPath $targetFileName)) {
         $index++
         $targetFileName = $targetFile.BaseName + "_$index" + $targetFile.Extension
     }
