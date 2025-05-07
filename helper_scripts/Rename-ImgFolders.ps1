@@ -56,7 +56,7 @@ foreach ($entry in $csvData) {
     $targetReplacementRegex = "(\/|\\)img(\/|\\)(docs(\/|\\))?$([regex]::Escape($imgFolder.Name))"
     $targetDirectoryFragment = "/img/docs/$($entry.target)"
     $targetDirectory = "$($PSScriptRoot.Parent.FullName)\static\img\docs\$($entry.target)"
-    $files = Get-ChildItem -Path $imgFolder.FullName -Recurse -File
+    $files = Get-ChildItem -Path $imgFolder.FullName -File
     $fileAssociations = foreach($file in $files) {
         $targetFile = Move-File -Path $file.FullName -TargetPath $targetDirectory
         $targetDirectoryFragment = "/img/docs/$($entry.target)/$($file.Name)"
@@ -64,14 +64,15 @@ foreach ($entry in $csvData) {
             OldFile = $file
             NewFile = $targetFile
             TargetingRegex = "$targetReplacementRegex(\/|\\)$($file.Name)"
-            Replacement = "$targetDirectoryFragment/$($file.Name)"
+            Replacement = "$targetDirectoryFragment/$($targetFile.Name)"
         }
     }
+    $fileAssociations | Export-Csv -Path "$PSScriptRoot\img-file-associations.csv" -NoTypeInformation -Append -Force
 
-    foreach ($doc in $docs) {
-        $docContent = Get-Content -Path $doc.FullName
-        if ($docContent -match $targetReplacementRegex) {
+    # foreach ($doc in $docs) {
+    #     $docContent = Get-Content -Path $doc.FullName
+    #     if ($docContent -match $targetReplacementRegex) {
             
-        }
-    }
+    #     }
+    # }
 }
