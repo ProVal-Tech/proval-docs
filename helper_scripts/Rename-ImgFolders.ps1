@@ -44,35 +44,38 @@ $imgFolders = Get-ChildItem ((Get-Item $PSScriptRoot).Parent.FullName + '\static
 # }
 # $associations | Export-Csv -Path "$PSScriptRoot\img-folder-associations.csv" -NoTypeInformation -Force
 
-$csvData = Import-Csv -Path "$PSScriptRoot\img-folder-associations.csv"
+# $csvData = Import-Csv -Path "$PSScriptRoot\img-folder-associations.csv"
 
-foreach ($entry in $csvData) {
-    $imgFolder = Get-Item $entry.img
-    if (-not $imgFolder) {
-        Write-Host "Image folder $($entry.img) not found, skipping..."
-        continue
+# foreach ($entry in $csvData) {
+#     $imgFolder = Get-Item $entry.img
+#     if (-not $imgFolder) {
+#         Write-Host "Image folder $($entry.img) not found, skipping..."
+#         continue
+#     }
+
+#     $targetReplacementRegex = "(\/|\\)img(\/|\\)(docs(\/|\\))?$([regex]::Escape($imgFolder.Name))"
+#     $targetDirectoryFragment = "/img/docs/$($entry.target)"
+#     $targetDirectory = "$((Get-Item $PSScriptRoot).Parent.FullName)\static\img\docs\$($entry.target)"
+#     $files = Get-ChildItem -Path $imgFolder.FullName -File
+#     $fileAssociations = foreach($file in $files) {
+#         $targetFile = Move-File -Path $file.FullName -TargetPath $targetDirectory
+#         [PSCustomObject]@{
+#             OldFile = $file
+#             NewFile = $targetFile
+#             TargetingRegex = "$targetReplacementRegex(\/|\\)$($file.Name)"
+#             Replacement = "$targetDirectoryFragment/$($targetFile.Name)"
+#         }
+#     }
+# }
+$fileReplacements = Import-Csv -Path "$PSScriptRoot\img-file-associations.csv"
+
+$docCount = 0
+foreach ($doc in $docs) {
+    $docCount++
+    Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
+    $docContent = Get-Content -Path $doc.FullName
+    foreach ($file in $fileReplacements) {
+        $docContent = $docContent -replace $file.TargetingRegex, $file.Replacement
     }
-
-    $targetReplacementRegex = "(\/|\\)img(\/|\\)(docs(\/|\\))?$([regex]::Escape($imgFolder.Name))"
-    $targetDirectoryFragment = "/img/docs/$($entry.target)"
-    $targetDirectory = "$((Get-Item $PSScriptRoot).Parent.FullName)\static\img\docs\$($entry.target)"
-    $files = Get-ChildItem -Path $imgFolder.FullName -File
-    $fileAssociations = foreach($file in $files) {
-        $targetFile = Move-File -Path $file.FullName -TargetPath $targetDirectory
-        $targetDirectoryFragment = "/img/docs/$($entry.target)/$($file.Name)"
-        [PSCustomObject]@{
-            OldFile = $file
-            NewFile = $targetFile
-            TargetingRegex = "$targetReplacementRegex(\/|\\)$($file.Name)"
-            Replacement = "$targetDirectoryFragment/$($targetFile.Name)"
-        }
-    }
-    $fileAssociations | Export-Csv -Path "$PSScriptRoot\img-file-associations.csv" -NoTypeInformation -Append -Force
-
-    # foreach ($doc in $docs) {
-    #     $docContent = Get-Content -Path $doc.FullName
-    #     if ($docContent -match $targetReplacementRegex) {
-            
-    #     }
-    # }
+    $docContent -join "`n" | Out-File $doc.FullName -NoNewline
 }
