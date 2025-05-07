@@ -18,7 +18,7 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Firewall---Enable/image_1.png)
+![Sample Run](../../../static/img/docs/620de40a-ad15-4449-8022-4af75e319db7/image_1.png)
 
 ## Process
 
@@ -28,5 +28,4 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 ## Output
 
 - Script log
-
 

@@ -30,7 +30,7 @@ This monitor is used to generate a ticket whenever the trust relationship betwee
 
 ## Target
 
-![Target Image](../../../static/img/Domain-Trust-Relationship-Check/image_1.png)
+![Target Image](../../../static/img/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4/image_1.png)
 
 ## Ticketing
 
@@ -166,7 +166,7 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 **Limit to:** `Domain Joined Machines excluding Domain Controllers`
 
-![Image](../../../static/img/Implement---Remote-Monitor---Domain-Trust-Relationship-Check/image_1.png)
+![Image](../../../static/img/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4/image_1_1.png)
 
 ### Step 6
 Set the appropriate alert template.

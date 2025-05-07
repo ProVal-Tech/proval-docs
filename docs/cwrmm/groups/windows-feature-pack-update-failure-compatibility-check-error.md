@@ -23,14 +23,14 @@ This document categorizes Windows 11 computers where the `Feature Update Install
 
 - Select `OS Build Number` for the Criteria `Does Not Contain any` for the comparator and type `22631` in the condition box.
 
-  ![Image 1](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_1.png)  
-  ![Image 2](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_2.png)  
-  ![Image 3](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_3.png)  
-  ![Image 4](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_4.png)
+  ![Image 1](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_1.png)  
+  ![Image 2](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_2.png)  
+  ![Image 3](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_3.png)  
+  ![Image 4](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_4.png)
 
 - Click the `Add Criteria` button to add another criterion.
 
-  ![Image 5](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_5.png)
+  ![Image 5](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_5.png)
 
 - Select the `Feature Update Install Failure` custom field for criteria, `Equal` for the comparator, and type `Compatibility Check Error` in the condition box.
 
@@ -40,13 +40,12 @@ This document categorizes Windows 11 computers where the `Feature Update Install
 
 Click the `Save` button to save the group.
 
-![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_6.png)
+![Image 6](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_6.png)
 
 ## Group
 
 Click the `Save` button to save the group.
 
-![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Compatibility-Check-Error/image_7.png)
-
+![Image 7](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_7.png)
 
 

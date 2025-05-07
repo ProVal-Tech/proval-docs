@@ -19,16 +19,16 @@ It's important to know that for browsers based on Chromium (like Google Chrome, 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](../../../static/img/Lockdown-Browsers-Password-Manager/image_1.png)
+![Google Chrome Setting](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_1_1.png)
 
 **Affected Setting for Brave:**  
-![Brave Setting](../../../static/img/Lockdown-Browsers-Password-Manager/image_2.png)
+![Brave Setting](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_2_1.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](../../../static/img/Lockdown-Browsers-Password-Manager/image_3.png)
+![Microsoft Edge Setting](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_3_1.png)
 
 **Affected Settings for Mozilla Firefox:**  
-![Mozilla Firefox Setting](../../../static/img/Lockdown-Browsers-Password-Manager/image_4.png)
+![Mozilla Firefox Setting](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4_1.png)
 
 **Note:**
 - The changes will only take effect once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
@@ -46,7 +46,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 |--------------|----------------|------------|---------------|-------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based | 604800 (Weekly) | Screenshot attached below. |
 
-![Screenshot](../../../static/img/Lockdown-Browsers-Password-Manager/image_5.png)
+![Screenshot](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5_1.png)
 
 ## Dependencies
 
@@ -58,7 +58,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Target
 
 **Group:** △ Lockdown Browsers Autofill  
-![Target Group](../../../static/img/Lockdown-Browsers-Password-Manager/image_6.png)
+![Target Group](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_6.png)
 
 ## Implementation
 
@@ -366,13 +366,13 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 
 ---
 ### Step 7
 #### Reload System Cache
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_1.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_1.png)
 
 ---
 ### Step 8
 #### Refresh Searches and Groups.
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_2.png)
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_3.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_2.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_3.png)
 
 ---
 ### Step 9
@@ -380,5 +380,5 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - `ProVal - Production - Lockdown Browsers Password Manager`
 - `ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill`
 - `ProVal - Production - Lockdown Chromium Browsers Address Autofill`
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_4.png)
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_5.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5.png)

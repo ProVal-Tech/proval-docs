@@ -28,16 +28,15 @@ Reboot_PendingReboot --> Custom field (Endpoint)
 ## Group Creation 
 
 1. Create Dynamic Groups:  
-   ![Image](../../../static/img/Reboot-Prompter-Deployment---Manual/image_1.png)
+   ![Image](../../../static/img/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20/image_1.png)
 
 2. Reboot Prompter Deployment - Manual  
-   ![Image](../../../static/img/Reboot-Prompter-Deployment---Manual/image_2.png)  
+   ![Image](../../../static/img/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20/image_2.png)  
 
    Criteria:
    - Prompter_RebootPending custom field equals True.
    - The agent available equals True.
    - The OS contains either Windows 10 or Windows 11.
    - Exclude Reboot custom field equals False.
-
 
 

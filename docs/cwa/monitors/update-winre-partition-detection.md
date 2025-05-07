@@ -52,4 +52,3 @@ Note: Here, `@psout@` is the result of the script and `@compinfo@` contains the 
 
 Additionally, ticketing is enabled under the script. Refer to the script document for instructions on how to enable it under Global Parameters.
 
-

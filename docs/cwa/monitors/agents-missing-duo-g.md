@@ -22,4 +22,3 @@ This document targets clients with EDFs enabled for the installation of DUO whil
 
 Global - Uses EDFs to scope agents/clients.
 
-

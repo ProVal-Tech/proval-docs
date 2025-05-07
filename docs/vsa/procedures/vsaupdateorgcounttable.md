@@ -20,4 +20,3 @@ Update the PVALOrgAgentCounts Table for Reporting
 - **sqluser**: Username for SQL access  
 - **sqlpassword**: Password for SQL access  
 
-

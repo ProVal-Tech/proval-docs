@@ -24,7 +24,7 @@ Run this script manually against the offline computer for which you want to rece
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Online-Status-Alerting---Update-EDFs-Param/image_1.png)
+![Sample Run](../../../static/img/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e/image_1.png)
 
 #### User Parameters
 
@@ -47,5 +47,4 @@ The parameters provided will be filled into their respective EDF values:
 | Email           | Online Alert E-mail        |
 | ScriptIDs       | Online Alert Scripts       |
 | AfterNextReboot | Online Alert Restarted Machine |
-
 

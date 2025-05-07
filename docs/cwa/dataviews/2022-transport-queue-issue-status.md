@@ -32,4 +32,3 @@ Reference:
 | Last Contact      | Last contact of the server with RMM                   |
 | Email Status      | Script status return: fixed, not fixed, or not impacted |
 
-

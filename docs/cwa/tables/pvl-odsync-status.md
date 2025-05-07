@@ -34,4 +34,3 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](/docs/ed0
 | UsedQuota       | float    | Amount of used quota (GB)                       |
 | Username        | varchar  | Username                                        |
 
-

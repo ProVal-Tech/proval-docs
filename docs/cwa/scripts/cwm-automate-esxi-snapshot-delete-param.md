@@ -29,12 +29,12 @@ This script can be used to delete a snapshot of a machine hosted on an ESXi host
    `http://10.0.0.4/io` ==> Incorrect  
    `10.0.0.4` ==> Correct
 3. Sample Screenshot:  
-   ![Sample Screenshot](../../../static/img/CWM---Automate---ESXi---Snapshot-Delete-Param/image_1.png)
+   ![Sample Screenshot](../../../static/img/docs/830beb63-113a-406e-aef2-046403de9cb9/image_1.png)
 4. Add proper parameters while executing the script.  
-   ![Parameters Screenshot](../../../static/img/CWM---Automate---ESXi---Snapshot-Delete-Param/image_2.png)  
+   ![Parameters Screenshot](../../../static/img/docs/830beb63-113a-406e-aef2-046403de9cb9/image_2.png)  
    The `Password_Title` should be the title of the password entry created in the first step. In the above example, the script will attempt to remove the snapshot `SnapShot 12-12-1997` from the virtual machine `Test VM 1`. It will not generate any alerts on failure.
 5. For alerting on failure:  
-   ![Alerting Screenshot](../../../static/img/CWM---Automate---ESXi---Snapshot-Delete-Param/image_3.png)  
+   ![Alerting Screenshot](../../../static/img/docs/830beb63-113a-406e-aef2-046403de9cb9/image_3.png)  
    In this example, the script will attempt to remove the snapshot `SnapShot 12-12-1997` from the virtual machine `Test VM 1`. Additionally, the script will create a ticket if it fails to deliver the desired results and will send a failure email to the user running/scheduling the script. Either or both of the alerting options can be used.
 
 ## Dependencies
@@ -89,5 +89,4 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to delete the Snapshot @SnapShotName@ from the virtual machine @VMName@. Please review manually.
 PowerShell script result: @psout@
 ```
-
 

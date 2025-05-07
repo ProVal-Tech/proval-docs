@@ -50,4 +50,3 @@ This procedure runs Get-DiskInfo and creates a CSV file with commonly requested 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %ProgramData%/_automation/StackContent/DiskReport/DiskReport.csv
 
-

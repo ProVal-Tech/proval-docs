@@ -18,4 +18,3 @@ This internal monitor will detect machines that likely have stalled in their pat
 
 Windows Machines - Should be run on all Windows machines.
 
-

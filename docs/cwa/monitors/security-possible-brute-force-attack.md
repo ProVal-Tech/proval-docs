@@ -28,7 +28,7 @@ The threshold can be modified by updating the value of the `$th` variable in the
 |--------------|----------------|------------|---------------|------------|----------|------------------|
 | System       | 127.0.0.1      | Run File   | **REDACTED**    | State Based | 3600     | `<Shown Below>`   |
 
-![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_1.png)
+![Image](../../../static/img/docs/d9b666b4-e0b0-4736-94c1-06b430581bad/image_1.png)
 
 
 ## Dependencies
@@ -38,8 +38,8 @@ The threshold can be modified by updating the value of the `$th` variable in the
 ## Target
 
 Domain Controllers  
-![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_2.png)  
-![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_3.png)  
+![Image](../../../static/img/docs/d9b666b4-e0b0-4736-94c1-06b430581bad/image_2.png)  
+![Image](../../../static/img/docs/d9b666b4-e0b0-4736-94c1-06b430581bad/image_3.png)  
 
 ## Alerting
 
@@ -85,7 +85,7 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625 Documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
 
 **Sample Ticket:**  
-![Image](../../../static/img/SEC---Endpoint-Protection--Security---Possible-Brute-Force-Attack/image_4.png)
+![Image](../../../static/img/docs/d9b666b4-e0b0-4736-94c1-06b430581bad/image_4.png)
 
 ## Implementation
 

@@ -49,4 +49,3 @@ Removes all installed versions of Office.
 - .\Invoke-OfficeScrub-log.txt
 - .\Invoke-OfficeScrub-error.txt
 
-

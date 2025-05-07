@@ -36,4 +36,3 @@ This document displays information about the TPM configuration on endpoints.
 | Locked Out          | Displays whether TPM is locked or not                        |
 | TPM Version         | Displays the TPM version on the endpoint                     |
 
-

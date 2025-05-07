@@ -16,9 +16,9 @@ Remove extensions from popular Chromium browsers (Chrome, Edge, Brave, Vivaldi, 
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Chromium-Browsers---Extension---Remove/image_1.png)  
-![Sample Run 2](../../../static/img/Chromium-Browsers---Extension---Remove/image_2.png)  
-![Sample Run 3](../../../static/img/Chromium-Browsers---Extension---Remove/image_3.png)  
+![Sample Run 1](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_1.png)  
+![Sample Run 2](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_2.png)  
+![Sample Run 3](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_3.png)  
 
 ## Dependencies
 
@@ -34,59 +34,59 @@ Remove extensions from popular Chromium browsers (Chrome, Edge, Brave, Vivaldi, 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation 1](../../../static/img/Chromium-Browsers---Extension---Remove/image_4.png)  
-![Task Creation 2](../../../static/img/Chromium-Browsers---Extension---Remove/image_5.png)  
+![Task Creation 1](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_4.png)  
+![Task Creation 2](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_5.png)  
 
 **Name:** Chromium Browsers - Extension - Remove  
 **Description:** Removes extensions from popular Chromium browsers (Chrome, Edge, Brave, Vivaldi, and Chromium)  
 **Category:** Application  
-![Task Creation 3](../../../static/img/Chromium-Browsers---Extension---Remove/image_6.png)  
+![Task Creation 3](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_6.png)  
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Parameter Addition 1](../../../static/img/Chromium-Browsers---Extension---Remove/image_7.png)  
+![Parameter Addition 1](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_7.png)  
 
 This screen will appear.  
-![Parameter Addition 2](../../../static/img/Chromium-Browsers---Extension---Remove/image_8.png)  
+![Parameter Addition 2](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_8.png)  
 
 - Set `ExtensionID` in the `Parameter Name` field.
 - Enable the `Required Field` option.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Parameter Addition 3](../../../static/img/Chromium-Browsers---Extension---Remove/image_9.png)  
+![Parameter Addition 3](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_9.png)  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Parameter Addition 4](../../../static/img/Chromium-Browsers---Extension---Remove/image_10.png)  
+![Parameter Addition 4](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_10.png)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Parameter Addition 1](../../../static/img/Chromium-Browsers---Extension---Remove/image_7.png)  
+![Parameter Addition 1](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_7.png)  
 
 This screen will appear.  
-![Parameter Addition 2](../../../static/img/Chromium-Browsers---Extension---Remove/image_8.png)  
+![Parameter Addition 2](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_8.png)  
 
 - Set `Target` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Parameter Addition 5](../../../static/img/Chromium-Browsers---Extension---Remove/image_11.png)  
+![Parameter Addition 5](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_11.png)  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Parameter Addition 4](../../../static/img/Chromium-Browsers---Extension---Remove/image_10.png)  
+![Parameter Addition 4](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_10.png)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Task Row Addition](../../../static/img/Chromium-Browsers---Extension---Remove/image_12.png)  
+![Task Row Addition](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_12.png)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Chromium-Browsers---Extension---Remove/image_13.png)  
+![Blank Function](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_13.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection 1](../../../static/img/Chromium-Browsers---Extension---Remove/image_14.png)  
-![PowerShell Script Selection 2](../../../static/img/Chromium-Browsers---Extension---Remove/image_15.png)  
+![PowerShell Script Selection 1](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_14.png)  
+![PowerShell Script Selection 2](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_15.png)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Function](../../../static/img/Chromium-Browsers---Extension---Remove/image_16.png)  
+![PowerShell Script Function](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_16.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -124,17 +124,16 @@ if (Test-Path $ErrorLogPath) {
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script Save](../../../static/img/Chromium-Browsers---Extension---Remove/image_17.png)  
+![PowerShell Script Save](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_17.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![PowerShell Script Save Confirmation](../../../static/img/Chromium-Browsers---Extension---Remove/image_18.png)  
+![PowerShell Script Save Confirmation](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_18.png)  
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Chromium-Browsers---Extension---Remove/image_19.png)  
+![Completed Task](../../../static/img/docs/3fe05c7c-eb5a-4125-ae8e-a86bd30d03b6/image_19.png)  
 
 ## Output
 
 - Script Log
-
 

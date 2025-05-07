@@ -36,18 +36,17 @@ The custom fields described here are used in the creation of [Dynamic Groups - B
 ## Implementation
 
 1. Navigate to **Settings** -> **Custom Fields**:  
-   ![Navigate to Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_1.png)
+   ![Navigate to Custom Fields](../../../static/img/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce/image_1.png)
 
 2. Click on the **Add** button once the Custom Fields page is opened.  
-   ![Click Add Button](../../../static/img/ClearAudit-Browsers-Saved-Password/image_2.png)
+   ![Click Add Button](../../../static/img/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce/image_2.png)
 
 3. After clicking **Add**, you will see the fields below to be filled:  
-   ![Fields to Fill](../../../static/img/ClearAudit-Browsers-Saved-Password/image_3.png)
+   ![Fields to Fill](../../../static/img/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce/image_3.png)
 
 4. Enter the values provided above one by one and save the custom fields.  
    Once the custom fields are created, please validate them by searching for them in the search input text field provided in the custom fields:  
-   ![Search Custom Fields](../../../static/img/ClearAudit-Browsers-Saved-Password/image_4.png)  
+   ![Search Custom Fields](../../../static/img/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce/image_4.png)  
    It will show you the custom fields you created.
-
 
 

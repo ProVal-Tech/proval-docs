@@ -18,7 +18,7 @@ The script is designed to uninstall all HP bloatware from Windows workstations. 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Uninstall-HP-Bloatware/image_1.png)
+![Sample Run](../../../static/img/docs/0ac0139f-9c8e-4ef2-94df-5cf3b1569ecf/image_1.png)
 
 ## Global Variables
 
@@ -50,5 +50,4 @@ If the script fails to uninstall some of the HP bloatware from the machine but u
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
-
 

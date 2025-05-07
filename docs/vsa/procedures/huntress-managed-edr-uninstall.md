@@ -19,11 +19,11 @@ This agent procedure will uninstall the Huntress EDR agent, Huntress updater, an
 This agent procedure is designed as a template and meant to be exported.  
 **Name:** Huntress - Managed EDR - Uninstall  
 
-![Image](../../../static/img/Huntress---Managed-EDR---Uninstall/image_1.png)  
+![Image](../../../static/img/docs/3d5b37dc-7ea4-4d06-a83d-7acdf91b8e1c/image_1.png)  
 
 The agent procedure requires no customization.  
 
-![Image](../../../static/img/Huntress---Managed-EDR---Uninstall/image_2.png)  
+![Image](../../../static/img/docs/3d5b37dc-7ea4-4d06-a83d-7acdf91b8e1c/image_2.png)  
 
 ## Dependencies
 
@@ -45,5 +45,4 @@ The agent procedure requires no customization.
 `%SystemRoot%/temp/HuntressPoShInstaller.log`  
 `%TEMP%/HuntressPoShInstaller.log`  
 Agent Procedure Log
-
 

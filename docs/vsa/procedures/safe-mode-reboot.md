@@ -27,4 +27,3 @@ Boots an endpoint into Safe Mode.
 
 Sets the VSA Agent Service to start in Safe Mode, then restarts the endpoint into Safe Boot network.
 
-

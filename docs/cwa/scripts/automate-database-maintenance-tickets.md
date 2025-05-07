@@ -37,6 +37,5 @@ This script is a function script called from [CWM - Automate - Script - Automate
 
 This script will add the following section to the log variable:
 
-![Output](../../../static/img/Automate-Database-Maintenance---Tickets/image_1.png)
-
+![Output](../../../static/img/docs/a917ce08-f8ba-493e-92c0-643024a70d96/image_1.png)
 

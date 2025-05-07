@@ -33,4 +33,3 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
 | Last User Name                     | Displays the last username of the machine                                                      |
 
-

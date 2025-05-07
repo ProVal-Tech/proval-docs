@@ -18,7 +18,7 @@ PowerShell-related issues are addressed in the WARNING state. It is suggested to
 
 **Note:** You must review the properties of the event log to determine the name.
 
-![Event Log Monitor](../../../static/img/Remote-Event-Log-Monitor---Create/image_1.png)
+![Event Log Monitor](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_1.png)
 
 ## Requirements
 
@@ -39,7 +39,7 @@ The following parameters will configure a remote monitor on group ID 1675, restr
 
 The aforementioned monitor will be designed to scan for Informational events from the Application log, which contain an event ID of 7040, the message within the event log containing the phrase "The Start Type of," and generated over the last 86400 seconds.
 
-![Monitor Configuration](../../../static/img/Remote-Event-Log-Monitor---Create/image_2.png)
+![Monitor Configuration](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_2.png)
 
 The following parameters will be utilized to configure a remote monitor on group ID 1675, restricted to search ID 75:
 - **Monitor Name:** Application - Event 7040,7041 - Provider Service Control Manager
@@ -47,7 +47,7 @@ The following parameters will be utilized to configure a remote monitor on group
 
 The aforementioned monitor will be designed to scan for all events from the Application log, which contain an event ID of 7040 or 7041, with the provider name of 'Service Control Manager,' and have generated at least three times over the last 300 seconds (Monitor's interval).
 
-![Event Monitor](../../../static/img/Remote-Event-Log-Monitor---Create/image_3.png)
+![Event Monitor](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_3.png)
 
 ## Dependencies
 
@@ -100,22 +100,22 @@ The aforementioned monitor will be designed to scan for all events from the Appl
 ## Sample Remote Monitors
 
 ### Multiple Monitors:
-![Multiple Monitors](../../../static/img/Remote-Event-Log-Monitor---Create/image_4.png)
+![Multiple Monitors](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_4.png)
 
 ### Configuration Tab:
-![Configuration Tab](../../../static/img/Remote-Event-Log-Monitor---Create/image_5.png)
+![Configuration Tab](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_5.png)
 
 ### Example Warning:
-![Example Warning](../../../static/img/Remote-Event-Log-Monitor---Create/image_6.png)
+![Example Warning](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_6.png)
 
 ### Example Failed:
-![Example Failed](../../../static/img/Remote-Event-Log-Monitor---Create/image_7.png)
+![Example Failed](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_7.png)
 
 ### Example Success:
-![Example Success](../../../static/img/Remote-Event-Log-Monitor---Create/image_8.png)
+![Example Success](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_8.png)
 
 ### Alerting Tab:
-![Alerting Tab](../../../static/img/Remote-Event-Log-Monitor---Create/image_9.png)
+![Alerting Tab](../../../static/img/docs/144d7d52-8764-4aa4-bcce-205c756f6203/image_9.png)
 
 ### Example %RESULT%
 ```
@@ -132,5 +132,4 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
-
 

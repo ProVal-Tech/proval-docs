@@ -18,7 +18,7 @@ This script will attempt to download, install, and run the Windows 10 Upgrade As
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-10-Upgrade-Assistant/image_1.png)
+![Sample Run](../../../static/img/docs/b4c2b307-41af-4ebf-8132-9f883351b09b/image_1.png)
 
 ## Dependencies
 
@@ -39,5 +39,4 @@ If the process for the Windows 10 app exists, the script will exit successfully,
 ## Output
 
 - Script log messages only
-
 

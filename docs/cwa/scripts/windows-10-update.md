@@ -20,11 +20,11 @@ This document updates Windows 10 to the latest release with the option to either
 
 1. A blue box saying the computer will reboot will pop up with a close button. It will last about 5 seconds and then vanish.
 
-   ![image](../../../static/img/Windows-10---Update/image_1.png)
+   ![image](../../../static/img/docs/3f819775-4c68-4511-ad44-d97a37ca3869/image_1.png)
 
 2. After the blue box vanishes, a black notification may appear in the lower right-hand side of the screen, indicating that a user logout was aborted.
 
-   ![image](../../../static/img/Windows-10---Update/image_2.png)
+   ![image](../../../static/img/docs/3f819775-4c68-4511-ad44-d97a37ca3869/image_2.png)
 
 ### ***IMPORTANT FUNCTIONALITY NOTE***
 
@@ -38,7 +38,7 @@ If aborting the reboot, between the time that a user sees the blue banner and th
 
 ## Sample Run
 
-![image](../../../static/img/Windows-10---Update/image_3.png)
+![image](../../../static/img/docs/3f819775-4c68-4511-ad44-d97a37ca3869/image_3.png)
 
 ## Dependencies
 
@@ -57,5 +57,4 @@ Please review the document at [SEC - WindowsPatching - Agnostic - Update-Windows
 ## Output
 
 - Script log
-
 

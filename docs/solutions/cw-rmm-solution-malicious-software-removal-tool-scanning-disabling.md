@@ -40,4 +40,3 @@ Note: The group will exclude the endpoints where the scanning found no infection
 Note: The group will automatically remove the endpoints where the MSRT disabled successfully.
 
 
-

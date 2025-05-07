@@ -20,7 +20,7 @@ This script can be used to reinstall the Huntress Agent for Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Reinstall-Huntress-Agent-Windows/image_1.png)
+![Sample Run](../../../static/img/docs/161f5696-0f6b-46af-ad25-fe942745f099/image_1.png)
 
 ## Dependencies
 
@@ -55,5 +55,4 @@ This script can be used to reinstall the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
 

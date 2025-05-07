@@ -74,4 +74,3 @@ Be sure to enter your actions and arguments exactly as you would when writing a 
 1. Set the action to **cmd.exe**
 2. Set the arguments to **/c start notepad.exe**
 
-

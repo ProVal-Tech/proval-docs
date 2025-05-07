@@ -41,4 +41,3 @@ OR
 MSRT Scan Report Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the logs below:  
 @ScanResult@. The Autofix extended scan of the computer, which automatically cleans any infections that are found, is scheduled.
 
-

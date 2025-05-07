@@ -23,10 +23,10 @@ The script installs the `Huntress Agent` on both Windows and Macintosh machines.
 
 **First Execution:** Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.
 
-![First Execution](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_1.png)
+![First Execution](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_1_1.png)
 
 **Regular Execution:**  
-![Regular Execution](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_2.png)
+![Regular Execution](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_2_1.png)
 
 ## Dependencies
 
@@ -56,7 +56,7 @@ The script installs the `Huntress Agent` on both Windows and Macintosh machines.
 | Huntress Agent - Account Key         | Text      | 1SA2345AASSSS234 | Security Tools  | True     | This is the Account Key that determines which Huntress Account an Agent should be associated with.                                                                         |
 | Huntress Agent - Org Key             | Text      | Development       | Security Tools  | False    | By default, the Huntress Organization key is the name of the client. Set this EDF if it's different for the client.                                                             |
 
-![Client-Level EDF](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_3.png)
+![Client-Level EDF](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_3_1.png)
 
 ## Location-Level EDF
 
@@ -95,11 +95,10 @@ Output of the installation command:
 ```
 
 **Ticket Category should be set in the [ProVal - Production - Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) monitor set to enable the ticket creation feature from the script.**  
-![Ticketing](../../../static/img/Deploy-Huntress-Agent-Windows,-Mac/image_4.png)
+![Ticketing](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_4_1.png)
 
 ## Output
 
 - Script log
 - Ticket (if enabled)
-
 

@@ -49,4 +49,3 @@ This Dataview filters the script schedules that are scheduled by a technician, a
 | % Machines Targeted          | Percentage of the machines targeted in the schedule         |
 
 
-

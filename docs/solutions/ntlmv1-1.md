@@ -33,4 +33,3 @@ The goal of this solution is to detect and disable NTLMv1.1.
   - This script can be used as an auto-fix with the [Remote Monitor - NTLMv1.1 Detection](/docs/8e107867-6d8d-4b6c-aa10-20f8da59fdca) or can also be executed manually.
   - If the auto-fix is needed, import the alert template: `△ Custom - Autofix - Disable NTLMv1.1`.
 
-

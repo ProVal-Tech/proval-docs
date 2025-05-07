@@ -36,11 +36,10 @@ The solution comprises three dataviews designed to showcase the performance, his
    - [Dataview - Script Run Time Historical Audit](/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2)
 
 3. Reload the System Cache  
-   ![System Cache](../../static/img/Script-Performance-Audit/image_1.png)
+   ![System Cache](../../static/img/docs/057846ab-0c3b-4812-82f9-e514933cad42/image_1.png)
 
 ## FAQ
 
 **Q:** Is it feasible to consolidate these dataviews into a single dataview?  
 **A:** While it is technically possible to merge these dataviews into one, it's important to note that the resulting dataview will not function reliably due to the complexity of calculations and the volume of data processed to generate these views.
-
 

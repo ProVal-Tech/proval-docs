@@ -33,4 +33,3 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | Device        | varchar(64)  | Device of the session                       |
 | ScriptRunTime | DateTime     | Data collection time                        |
 
-

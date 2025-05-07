@@ -30,4 +30,3 @@ This document stores the GUID and the set of user class(es) for Built-In scripts
 | InitialPermission    | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission| varchar | Existing edit permission of the script.                                                           |
 
-

@@ -41,4 +41,3 @@ This dataview is very descriptive and reflects all the relevant information for 
 | Last Scan                     | Displays the last patch scan date of the machine                                              |
 | Missing Production Patches     | Displays the number of approved but not installed patches that have been in the Production stage for 3 or more days. |
 
-

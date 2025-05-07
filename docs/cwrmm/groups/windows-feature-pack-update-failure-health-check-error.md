@@ -22,21 +22,20 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 ## Criteria
 
 - Select `OS Build Number` for the criteria `Does Not Contain Any`, and type `19045` and `22631` in the condition box.  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_1.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_2.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_3.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_4.png)  
+  ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_1.png)  
+  ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_2.png)  
+  ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_3.png)  
+  ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_4.png)  
 
 - Click the `Add Criteria` button to add another criterion.  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_5.png)  
+  ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_5.png)  
 
 - Select the `Feature Update Install Failure` custom field for criteria, `Equal` for comparator, and type `Health Check Error` in the condition box.  
 
 ## Group
 
 Click the `Save` button to save the group.  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_6.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Health-Check-Error/image_7.png)  
-
+![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_6.png)  
+![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_7.png)  
 
 

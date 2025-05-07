@@ -25,7 +25,7 @@ The purpose of the EPM - Data Collection - Script - Get - CW-ControlAPI - Online
 
 **Intended Target:** Any Windows machine. It is suggested to schedule the script to run twice per day against the Automate server if possible; otherwise, it can be scheduled against any Windows machine.
 
-![Sample Run](../../../static/img/Get---CW-ControlAPI---Online-Status/image_1.png)
+![Sample Run](../../../static/img/docs/71ac312f-e490-4126-bc2d-f9c07f5582cf/image_1.png)
 
 ## Variables
 
@@ -42,5 +42,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Custom Table
-
 

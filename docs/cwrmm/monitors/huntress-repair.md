@@ -22,22 +22,22 @@ This document provides instructions on how to set up alerts for machines where t
 ## Target
 
 This monitor should target the group shown below:  
-![TargetGroup](../../../static/img/docs/huntress-repair/image.png)
+![TargetGroup](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image.png)
 
 ## Monitor Creation
 
 ### Step 1
 
 Navigate to `ENDPOINTS` ➞ `Alerts` ➞ `Monitors`  
-![Step1](../../../static/img/cw-rmm-monitors-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step1.png)
 
 ### Step 2
 
 Locate the `Create Monitor` button on the right-hand side of the screen and click on it.  
-![Step2](../../../static/img/cw-rmm-monitors-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step2.png)
 
 This page will appear after clicking on the `Create Monitor` button:  
-![Step3](../../../static/img/cw-rmm-monitors-common-screenshots/step3.png)
+![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step3.png)
 
 ### Step 3
 
@@ -47,18 +47,18 @@ Description: `This will check if the Huntress Agent is orphaned, and then it wil
 Type: `Script`  
 Severity: `Critical Non-Impact Alerts`  
 Family: `Desktop Security`  
-![MonitorConfig](../../../static/img/docs/huntress-repair/image-1.png)
+![MonitorConfig](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image-1.png)
 
 ### Step 4
 
 Click the `Select Target` button to choose the endpoints for running the monitor set.  
-![Step4](../../../static/img/cw-rmm-monitors-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step4.png)
 
 This page will appear after clicking on the `Select Target` button:  
-![Step5](../../../static/img/cw-rmm-monitors-common-screenshots/step5.png)
+![Step5](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step5.png)
 
 This monitor should target the group shown below:  
-![TargetGroup](../../../static/img/docs/huntress-repair/image.png)
+![TargetGroup](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image.png)
 
 ### Step 5
 
@@ -99,9 +99,8 @@ if ($Path -notmatch 'HuntressAgent.log') {
 }
 
    ```
-![MonitorConfig1](../../../static/img/docs/huntress-repair/image-2.png)
+![MonitorConfig1](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image-2.png)
 
 ## Completed Monitor
 
-![CompleteMonitor](../../../static/img/docs/huntress-repair/image-3.png)
-
+![CompleteMonitor](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image-3.png)

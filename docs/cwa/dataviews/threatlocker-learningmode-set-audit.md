@@ -36,4 +36,3 @@ This dataview stores the result of the Threatlocker learning mode setting done v
 | Learning Mode Set Status         | This stores the learning mode status, indicating whether it was successfully set or failed.               |
 | Learning Mode Log Record         | This stores the learning mode logs of success or failure.                                                 |
 
-

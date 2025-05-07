@@ -16,7 +16,7 @@ Advanced Windows Security Auditing is a feature in Microsoft Windows that allows
 
 The remote monitor will periodically check the system's security settings and trigger an alert on an endpoint if Advanced Windows Security Auditing is not fully enabled.
 
-![Fully enabled Advanced Windows Security Auditing](../../../static/img/Enable-Advanced-Windows-Security-Auditing/image_1.png)
+![Fully enabled Advanced Windows Security Auditing](../../../static/img/docs/0a012cf5-0ead-442a-bc82-f5c5fe0b13f8/image_1.png)
 
 ## Details
 

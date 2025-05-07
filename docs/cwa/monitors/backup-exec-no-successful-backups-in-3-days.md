@@ -30,10 +30,10 @@ Insert the details of the monitor in the table below.
 
 Backup Management > Backup Exec  
 
-![Image](../../../static/img/Backup-Exec---No-successful-backups-in-3-days/image_1.png)  
+![Image](../../../static/img/docs/abddfc3a-9f1b-4356-a62c-3475cdb32c96/image_1.png)  
 
 **Auto Join Search for the group:** Backup - Backup Exec  
-![Image](../../../static/img/Backup-Exec---No-successful-backups-in-3-days/image_2.png)  
+![Image](../../../static/img/docs/abddfc3a-9f1b-4356-a62c-3475cdb32c96/image_2.png)  
 
 ## Ticketing
 

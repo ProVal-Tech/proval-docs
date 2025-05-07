@@ -18,7 +18,7 @@ This script is used to track and lock down stolen systems. If the computer-level
 
 **Target:** Windows Machine
 
-![Sample Run Image](../../../static/img/Lock-Stolen-System/image_1.png)
+![Sample Run Image](../../../static/img/docs/3fec514c-c0b2-4b19-92b7-d77c78e678a3/image_1.png)
 
 ## Variables
 
@@ -54,7 +54,7 @@ This script is used to track and lock down stolen systems. If the computer-level
 | IPINFO_State               | Text Box   | True     | Current state of the machine according to the IP address                                      |
 | IPINFO_Coords             | Text Box   | True     | Current coordinates of the computer according to the IP address                               |
 
-![EDFs Image](../../../static/img/Lock-Stolen-System/image_2.png)
+![EDFs Image](../../../static/img/docs/3fec514c-c0b2-4b19-92b7-d77c78e678a3/image_2.png)
 
 ## Output
 
@@ -88,5 +88,4 @@ WebCamImage:
 
 The script is using the shutdown command, so the machine will become unusable without the BitLocker key.
 ```
-
 

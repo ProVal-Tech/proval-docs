@@ -23,4 +23,3 @@ This Dataview shows the list and details of the top 10 tables in the database. I
 | Data        | Displays the amount of data/size in the table |
 | Total_size  | Displays the total size of the table    |
 
-

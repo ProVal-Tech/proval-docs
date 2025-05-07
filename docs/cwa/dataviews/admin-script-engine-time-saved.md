@@ -37,4 +37,3 @@ This dataview displays metrics on how scripts are running in the environment. It
 | Recent Automation Time Minutes (Hidden by default) | This is the most recent time in minutes not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                                  |
 | Average Daily Time Minutes               | This is the average time per day, in minutes, and is not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                   |
 
-

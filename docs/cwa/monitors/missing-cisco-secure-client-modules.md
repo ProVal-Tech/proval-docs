@@ -28,4 +28,3 @@ It is a global monitor targeting both Windows and MAC machines.
 
 `△ Custom - Execute Script - Cisco Secure Client - Package Installation`
 
-

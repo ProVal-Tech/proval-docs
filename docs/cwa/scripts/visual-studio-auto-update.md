@@ -23,7 +23,7 @@ It is compatible with the following applications:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Visual-Studio-Auto-Update/image_1.png)  
+![Sample Run](../../../static/img/docs/611414aa-ae0b-46f3-92e4-4a99a42e6719/image_1.png)  
 
 ## Dependencies
 
@@ -44,5 +44,4 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 

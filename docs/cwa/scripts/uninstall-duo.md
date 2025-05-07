@@ -16,7 +16,7 @@ This is a version of [SWM - Software Uninstall - Script - Remove Application](/d
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Uninstall-DUO/image_4.png)
+![Sample Run](../../../static/img/docs/0c3523a9-e392-40f6-bc59-173a21001f0d/image_4.png)
 
 ## Dependencies
 
@@ -39,6 +39,5 @@ This is a version of [SWM - Software Uninstall - Script - Remove Application](/d
 **Subject:** `DUO Removal - Failed - %COMPUTERNAME%`
 
 **Ticket Body:** `The script attempted to remove DUO from the computer but it failed. In addition to the primary removal script (Remove-Application.ps1), alternative uninstallation methods utilizing uninstall strings stored in Automate were also employed. Despite this, the script failed to remove the application. Manual review is required to identify the cause of the failure.`
-
 
 

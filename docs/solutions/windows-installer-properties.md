@@ -38,4 +38,3 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
 
-

@@ -55,23 +55,23 @@ Password Complexity: Complexity Required
 
 If you want to email the user instructions on how to change their password or a special message, please enable step 2 and enter your message/instructions there. The `@FieldName@` variable stores the `UserName`, and the `@Result@` variable stores the Password Expiration Date.
 
-![Step 2](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_1.png)
+![Step 2](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_1.png)
 
 ### Step-by-Step Instructions:
 
 1. Right-click on Step 2 and select Enable Function.  
 2. Double-click on Step 2 and click on the three dots (...) at the right side of the Parameter Box.
 
-![Script Text Editor](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_2.png)
+![Script Text Editor](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_2.png)
 
 A box will pop up (Script Text Editor). Now, type your message/instructions in the box and press Save.  
 e.g.,
 
-![Message Example](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_3.png)
+![Message Example](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_3.png)
 
 This will close the Text Editor. Press Save.
 
-![Save Script](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_4.png)
+![Save Script](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_4.png)
 
 Now save the script by clicking on the `Save` button at the bottom right.
 
@@ -156,7 +156,7 @@ If you believe the password has already been changed or that this is a false ale
 ```
 
 Sample:  
-![Sample Ticket](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_5.png)
+![Sample Ticket](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_5.png)
 
 For CreateTicket = 1 and UserAsTicketContact = 1 and User does have an Email address.
 
@@ -168,9 +168,9 @@ If you believe the password has already been changed or that this is a false ale
 ```
 
 Sample:  
-![User Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_6.png)  
+![User Email Address](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_6.png)  
 A screenshot showing the user's email address added to the ticket, as this email will be setting the ticket contact in CW Manage.  
-![Ticket Contact](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_7.png)
+![Ticket Contact](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_7.png)
 
 For CreateTicket = 1 and UserAsTicketContact = 1 and User does not have any email address.
 
@@ -184,7 +184,7 @@ If you believe the password has already been changed or that this is a false ale
 ```
 
 Sample:  
-![No Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_8.png)
+![No Email Address](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_8.png)
 
 ## Emailing
 
@@ -207,7 +207,7 @@ Thanks
 ```
 
 Sample:  
-![Email Sample](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_9.png)
+![Email Sample](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_9.png)
 
 For EmailUser = 1, User does not have an email address, and DefaultEmailAddress is set.
 
@@ -220,5 +220,4 @@ If you believe the password has already been changed or that this is a false ale
 ```
 
 Sample:  
-![Default Email Address](../../../static/img/Active-Directory---Alerting---Password-Expires-This-Week-Global,Autofix/image_10.png)
-
+![Default Email Address](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_10.png)

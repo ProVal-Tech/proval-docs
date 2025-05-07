@@ -32,4 +32,3 @@ The process is scheduled automatically in 1-hour increments. It reacts to the re
 
 AP Log
 
-

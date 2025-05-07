@@ -21,4 +21,3 @@ unlisted: false
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
 
-

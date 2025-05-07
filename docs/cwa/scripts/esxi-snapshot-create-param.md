@@ -43,12 +43,12 @@ Example:  CW-Automate-Temp-Snapshot_20230501_081958
   10.0.0.4 ==> Correct
   ```
 - Sample Screenshot:  
-  ![](../../../static/img/ESXi---Snapshot-Create-Param/image_1.png)
+  ![](../../../static/img/docs/a2b7d882-f8a5-4273-b237-cabe1662f195/image_1.png)
 - Add proper parameters while executing the script.  
-  ![](../../../static/img/ESXi---Snapshot-Create-Param/image_2.png)  
+  ![](../../../static/img/docs/a2b7d882-f8a5-4273-b237-cabe1662f195/image_2.png)  
   The `Password_Title` should be the title of the password entry created in the first step. In the above example, the script will attempt to create a snapshot for the virtual machine `Test_VM 1` and will attempt to remove that snapshot after 24 hours. It will not generate any alerts on failure.
 - For alerting on failure:  
-  ![](../../../static/img/ESXi---Snapshot-Create-Param/image_3.png)  
+  ![](../../../static/img/docs/a2b7d882-f8a5-4273-b237-cabe1662f195/image_3.png)  
   In this example, the script will attempt to create a snapshot for the virtual machine `Test_VM 1` and will attempt to remove that snapshot after 24 hours. Additionally, the script will create a ticket if it fails to deliver the desired results and will send a failure email to the user running/scheduling the script. Either or both of the alerting options can be used.
 
 ## Dependencies
@@ -134,5 +134,4 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to create a snapshot for the virtual machine @VMName@. Please review manually. 
 PowerShell script result: @psout@
 ```
-
 

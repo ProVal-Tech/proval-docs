@@ -18,10 +18,9 @@ This document outlines a process to remove roles that are still listed on machin
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Remove-Missing-Roles/image_1.png)
+![Sample Run](../../../static/img/docs/14815596-a4d5-4c53-95b8-149c6a043c58/image_1.png)
 
 ## Process
 
 - The script runs a SQL query against the database to delete the roles from the machines that are still listed but no longer detected on them.
-
 

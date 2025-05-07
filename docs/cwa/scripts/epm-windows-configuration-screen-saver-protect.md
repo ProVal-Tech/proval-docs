@@ -16,7 +16,7 @@ This document ensures that the screen saver settings are enabled and set to the 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/EPM---Windows-Configuration---Screen-Saver---Protect/image_1.png)
+![Sample Run](../../../static/img/docs/952db509-c813-4225-a53f-7423d174ef24/image_1.png)
 
 ## Dependencies
 
@@ -52,5 +52,4 @@ See [Protect-ScreenLock](/docs/9c89e293-7f28-4e7c-936f-e285b04e8df0)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
-
 

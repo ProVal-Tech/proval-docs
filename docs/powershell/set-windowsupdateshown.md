@@ -38,4 +38,3 @@ The location of output for log, result, and error files:
 .\Set-WindowsUpdateShown-error.txt
 ```
 
-

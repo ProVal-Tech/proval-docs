@@ -48,4 +48,3 @@ The information displayed in this dataview is populated into the custom table `@
 | Client (All Possible Columns) | Contains all possible client details such as client city, client phone, etc.                 |
 | Computer (All Possible Columns) | Contains all possible computer details such as Computer OS Build, Type, Manufacturer, etc.  |
 
-

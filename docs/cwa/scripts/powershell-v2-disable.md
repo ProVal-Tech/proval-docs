@@ -16,7 +16,7 @@ This document provides an implementation guide for the Disable-PowershellVersion
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Powershell-V2---Disable/image_1.png)
+![Sample Run](../../../static/img/docs/9e2ff280-a904-48c5-b2de-017c77881147/image_1.png)
 
 ## Dependencies
 
@@ -25,5 +25,4 @@ This document provides an implementation guide for the Disable-PowershellVersion
 ## Process
 
 Please review the agnostic content document for the complete process.
-
 

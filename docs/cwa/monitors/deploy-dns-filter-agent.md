@@ -39,4 +39,3 @@ OR
 Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
 
-

@@ -42,4 +42,3 @@ This will remove uBlock Origin and Zoom Meetings from the registered extensions 
 .\Unregister-ChromiumExtension-log.txt
 ```
 
-

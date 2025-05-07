@@ -17,7 +17,7 @@ The goal of this script is to fix potential patching issues for Windows devices.
 
 ## Sample Run
 
-![Sample Run](<../../../static/img/docs/Windows Update - Repair/image.png>)
+![Sample Run](<../../../static/img/docs/aaa3f8da-cfd3-454a-808b-d4501f9c2608/image.png>)
 
 ## Dependencies
 
@@ -53,5 +53,4 @@ Note: Please whitelist the below filehash in the security application for the Po
 ## Output
 
 - Script Logs
-
 

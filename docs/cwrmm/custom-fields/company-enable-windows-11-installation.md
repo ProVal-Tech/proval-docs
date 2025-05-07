@@ -22,7 +22,6 @@ Mark this custom field to enable Windows 11 installation for the company's Windo
 
 ## Screenshots
 
-![Image 1](../../../static/img/Company---Enable-Windows-11-Installation/image_1.png)  
-![Image 2](../../../static/img/Company---Enable-Windows-11-Installation/image_2.png)
-
+![Image 1](../../../static/img/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8/image_1.png)  
+![Image 2](../../../static/img/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8/image_2.png)
 

@@ -28,4 +28,3 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 |-----------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |
 
-

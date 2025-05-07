@@ -20,4 +20,3 @@ This role detects the machines on which TLS 1.1 is enabled.
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.1/Client:Enabled-%} | Equals     | 1      | Windows        |
 
-

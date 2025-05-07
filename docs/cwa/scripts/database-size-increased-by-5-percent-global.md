@@ -18,15 +18,15 @@ The script will create a ticket in our (ProVal's) AutoTask portal if the overall
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Database-size-increased-by-5Global/image_1.png)
+![Sample Run Image](../../../static/img/docs/1e7111ed-fd09-4b58-bc4b-becb2dc3c8e0/image_1.png)
 
 **On-Prem Partners:** Preferred way to run/schedule the script:
 
-![On Prem Partners Image](../../../static/img/Database-size-increased-by-5Global/image_2.png)
+![On Prem Partners Image](../../../static/img/docs/1e7111ed-fd09-4b58-bc4b-becb2dc3c8e0/image_2.png)
 
 **Hosted Partners:** Preferred way to run/schedule the script:
 
-![Hosted Partners Image](../../../static/img/Database-size-increased-by-5Global/image_3.png)
+![Hosted Partners Image](../../../static/img/docs/1e7111ed-fd09-4b58-bc4b-becb2dc3c8e0/image_3.png)
 
 The script can be scheduled against a 24x7 online server. A domain controller is typically a good choice as they tend to have high uptime. **Note:** If the agent on the DC is reinstalled or has a change to the computer ID, this script will need to be scheduled again against the new agent.
 
@@ -77,5 +77,4 @@ Labtech Database's size increased by SizeToCompare percent within the last Hours
 
 - Script States
 - Email
-
 

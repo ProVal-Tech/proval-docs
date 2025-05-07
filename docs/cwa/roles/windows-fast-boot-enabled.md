@@ -22,4 +22,3 @@ Fast Boot is a Windows 10 feature that puts the system into a deep sleep rather 
 | ----------------------------------------------------------------------------------- | ---------- | ------ | ------------- |
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/Session Manager/Power:HiberbootEnabled-%} | Equals     | 1      | Windows       |
 
-

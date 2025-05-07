@@ -20,4 +20,3 @@ This document describes the use of a registry to track devices vulnerable to Mim
 |----------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%} | Equals     | 0      | Windows        |
 
-

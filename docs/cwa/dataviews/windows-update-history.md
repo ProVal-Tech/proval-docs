@@ -55,4 +55,3 @@ This document displays information about Windows Update history for agents.
 | Recommended Hard Disk Space     | Recommended Hard Disk Space to Install the Patch  |
 | Recommended Memory              | Recommended Memory to Install the Patch           |
 
-

@@ -35,4 +35,3 @@ This dataview displays Windows Shadow Copy statistics for endpoints with Shadow 
 | Oldest Shadow Copy  | The oldest available Shadow Copy date                               |
 | Latest Shadow Copy  | The most recent available Shadow Copy date                          |
 
-

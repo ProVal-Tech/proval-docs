@@ -49,4 +49,3 @@ The view is designed to store and execute the SQL query utilized by the [CWM - A
 | Percent Targeted       | Percentage of the machines targeted in the schedule                     |
 
 
-

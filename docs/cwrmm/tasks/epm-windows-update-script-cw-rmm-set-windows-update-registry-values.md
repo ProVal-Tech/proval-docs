@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 The script is designed to remove any additional registry values from the registry path `Computer/HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU`. Additionally, it ensures that the values for the keys `NoAutoRebootWithLoggedOnUsers` and `NoAutoUpdate` are set to `1`.  
-![Image](../../../static/img/EPM---Windows-Update---Script---CW-RMM---Set-Windows-Update-Registry-Values/image_1.png)
+![Image](../../../static/img/docs/5e361c08-9ccf-4495-ad7f-fc4caeafcd2d/image_1.png)
 
 CW Support recommends setting these registry keys on the local device to ensure that patching and rebooting occur properly from CW RMM.
 
@@ -23,7 +23,7 @@ Furthermore, the script will ensure that patching access is not disabled for the
 
 ## Sample Run
 
-![Image](../../../static/img/EPM---Windows-Update---Script---CW-RMM---Set-Windows-Update-Registry-Values/image_2.png)
+![Image](../../../static/img/docs/5e361c08-9ccf-4495-ad7f-fc4caeafcd2d/image_2.png)
 
 ## Variables
 
@@ -36,5 +36,4 @@ Furthermore, the script will ensure that patching access is not disabled for the
 ## Output
 
 - Script log
-
 

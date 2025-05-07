@@ -17,7 +17,7 @@ This script is used to check for machines that have too many resources, exceedin
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Set-NUMA-VM-Status/image_1.png)
+![Sample Run](../../../static/img/docs/75173959-6166-4520-838a-f960ab0070ea/image_1.png)
 
 #### Script States
 
@@ -32,5 +32,4 @@ The script runs a PowerShell script to get the NumaStatus. The PowerShell then h
 ## Output
 
 - Script state
-
 

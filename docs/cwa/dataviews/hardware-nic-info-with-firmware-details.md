@@ -26,4 +26,3 @@ This Dataview shows information about existing network adapters.
 | Driver Name     | Displays the Network adapter driver name.        |
 | Driver Version  | Displays the Network adapter driver version.     |
 
-

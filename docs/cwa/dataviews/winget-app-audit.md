@@ -45,4 +45,3 @@ This document displays the information of `Winget` supported applications fetche
 
 
 
-

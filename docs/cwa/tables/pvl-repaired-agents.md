@@ -33,4 +33,3 @@ The custom table stores information about repaired computers.
 | computer     | varchar  | Computer Name       |
 | RepairTime   | datetime | Agent Repair Time   |
 
-

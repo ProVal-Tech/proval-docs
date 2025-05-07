@@ -33,4 +33,3 @@ This document stores the data collected by the [Locate PHP.exe](/docs/174c59f1-8
 | Attributes      | varchar             | File's attributes               |
 | ScriptRunTime   | datetime            | Data collection time            |
 
-

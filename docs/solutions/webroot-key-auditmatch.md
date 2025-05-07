@@ -38,4 +38,3 @@ This solution fetches the Webroot KeyCode audit and monitors to find any mismatc
 - Will the ticket auto-close if the KeyCode matches for the agent where the KeyCode mismatch was detected?
   - Yes, the autofix has the auto-closure of the ticket feature added.
 
-

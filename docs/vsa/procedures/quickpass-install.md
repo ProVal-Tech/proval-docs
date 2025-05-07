@@ -12,12 +12,11 @@ unlisted: false
 
 <div class='text-section scrollable'>
 
-![Image](../../../static/img/QuickPass-Install/image_1.png)
+![Image](../../../static/img/docs/be55048c-2522-408a-b4a9-ba42e5fbcbe5/image_1.png)
 
 </div>
 
 <div class='text-section scrollable'>
 
 </div>
-
 

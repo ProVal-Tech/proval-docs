@@ -39,4 +39,3 @@ This document holds network data for each controller listed in [EPM - Data Colle
 | Security      | String | The security platform being used by the network.                                                  |
 | WPAMode       | String | The WPA mode being used by the network.                                                            |
 
-

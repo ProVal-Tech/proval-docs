@@ -34,4 +34,3 @@ This document presents information about drive attributes such as Power Cycle Co
 | Last User Name        | Last user name on the machine                 |
 | Last Contact          | Last contact for the computer with the Automate. |
 
-

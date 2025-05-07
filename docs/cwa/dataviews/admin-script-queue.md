@@ -24,4 +24,3 @@ This dataview helps you audit the queued and running scripts in Automate.
 | TotalCount        | Displays the total number of times the script has been executed. |
 | RunningPercentage  | Displays the script's running percentage.             |
 
-

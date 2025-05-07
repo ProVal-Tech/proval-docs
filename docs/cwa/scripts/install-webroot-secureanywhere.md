@@ -60,4 +60,3 @@ Document the various variables in the script. Delete any section that is not rel
       2. Windows
          - Install for Windows, verify, and exit.
 
-

@@ -97,4 +97,3 @@ Display a pop-up with a purple filled title size 25 in yellow writing and a gree
 
 - `.\Show-Prompt-log.txt`
 
-

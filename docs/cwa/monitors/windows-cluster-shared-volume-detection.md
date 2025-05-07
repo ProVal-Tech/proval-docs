@@ -26,7 +26,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|--------------|----------|-----------------------|
 | System       | 127.0.0.1     | Run File   | \<REDACTED\>  | State Based  | 3600     | \<Screenshot below\>  |
 
-![Image](../../../static/img/CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection/image_1.png)
+![Image](../../../static/img/docs/a0ee778f-854b-4c86-aa0f-192a09019fe3/image_1.png)
 
 ## Dependencies
 
@@ -36,7 +36,7 @@ Insert the details of the monitor in the table below.
 
 Should be targeted to a Cluster Detected group.
 
-![Image](../../../static/img/CWA-Remote-Monitor---Windows-Cluster-Shared-Volume-Detection/image_2.png)
+![Image](../../../static/img/docs/a0ee778f-854b-4c86-aa0f-192a09019fe3/image_2.png)
 
 ## Implementation
 

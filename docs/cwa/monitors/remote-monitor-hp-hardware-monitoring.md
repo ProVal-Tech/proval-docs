@@ -29,12 +29,12 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                                                                     |
 | ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ---------------------------------------------------------------------------------------------------------- |
-| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_1.png) |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/docs/403cec59-3602-4630-afc8-674d1887046d/image_1.png) |
 
 ## Target
 
 Managed Servers (HP Servers only)  
-![Target](../../../static/img/EPM---Vendor-Specific---Remote-Monitor---HP-Hardware-Monitoring/image_2.png)  
+![Target](../../../static/img/docs/403cec59-3602-4630-afc8-674d1887046d/image_2.png)  
 The monitor set should be limited to the `HP Servers` search.
 
 ## Implementation

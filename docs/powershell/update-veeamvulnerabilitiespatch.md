@@ -31,4 +31,3 @@ Location of output for log, result, and error files:
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-log.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-error.txt`
 - `$env:Windir\temp\veeam\Update-VeeamVulnerabilitiesPatch-patchlog.txt`
-

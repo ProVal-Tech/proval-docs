@@ -21,8 +21,8 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Reboot-Prompter/image_7.png)  
-![Sample Run 2](../../../static/img/Reboot-Prompter/image_8.png)  
+![Sample Run 1](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_7.png)  
+![Sample Run 2](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_8.png)  
 
 ## Implementation
 
@@ -30,33 +30,33 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/Reboot-Prompter/image_9.png)  
+![Create Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_9.png)  
 
 - **Name:** Reboot Prompter  
 - **Description:** Shows a Popup on the user's screen  
 - **OS Supported:** Windows  
 - **Category:** Custom  
 
-![Task Details](../../../static/img/Reboot-Prompter/image_10.png)  
+![Task Details](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_10.png)  
 
 ### Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/Reboot-Prompter/image_11.png)  
+![Add Row](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_11.png)  
 
 ### Row 1: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `Creating the working directory for the prompter script`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_13.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_13.png)  
 
 ### Row 2: Function: PowerShell script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_15.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_15.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -82,16 +82,16 @@ if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityRefere
 
 ### Row 3: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `Installing the supported .NET version`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_16.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_16.png)  
 
 ### Row 4: Function: PowerShell script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_17.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_17.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
@@ -121,37 +121,37 @@ if (!($dotNetVersions -match "WindowsDesktop/.App 6")) {
 
 ### Row 5: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `%Output%`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_18.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_18.png)  
 
 ### Row 6: Logic: If/Then
 
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_19.png)  
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_20.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_19.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_20.png)  
 
 ### Row 6a: Condition: Output Contains
 
 In the IF part, enter `Installation failed` in the right box of the "Output Contains" part.  
 
-![Condition](../../../static/img/Reboot-Prompter/image_21.png)  
+![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_21.png)  
 
 ### Row 6b: Function: Script Exit
 
 Add a new row by clicking on the Add row button.  
 
-![Add Row](../../../static/img/Reboot-Prompter/image_22.png)  
+![Add Row](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_22.png)  
 
 In the script exit message, simply type `The supported .NET version has failed to install.`  
 
-![Exit Message](../../../static/img/Reboot-Prompter/image_23.png)  
+![Exit Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_23.png)  
 
 ### Row 7: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_24.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_24.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -173,12 +173,12 @@ In this window, search for the `Prompter_UserAction` field.
 **Custom Field:** `Prompter_UserAction`  
 **Value:** `%output%`  
 
-![Set Custom Field](../../../static/img/Reboot-Prompter/image_25.png)  
+![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.png)  
 
 ### Row 9: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_26.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_26.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -198,12 +198,12 @@ In this window, search for the `Prompter_Logging` field.
 **Custom Field:** `Prompter_Logging`  
 **Value:** `%output%`  
 
-![Set Custom Field](../../../static/img/Reboot-Prompter/image_25.png)  
+![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.png)  
 
 ### Row 10: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_27.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_27.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -223,18 +223,18 @@ In this window, search for the `Prompter_Counter` field.
 **Custom Field:** `Prompter_Counter`  
 **Value:** `%output%`  
 
-![Set Custom Field](../../../static/img/Reboot-Prompter/image_25.png)  
+![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.png)  
 
 ### Row 11: Logic: If/Then
 
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_19.png)  
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_20.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_19.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_20.png)  
 
 ### Row 11a: Condition: Custom Field
 
 In the IF part, enter `0` in the right box of the "Custom Field" part where the custom field is 'Prompter_Counter'.  
 
-![Condition](../../../static/img/Reboot-Prompter/image_28.png)  
+![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_28.png)  
 
 ### Row 11b: Function: Set Custom Field
 
@@ -245,7 +245,7 @@ In this window, search for the `Prompter_RebootPending` field.
 **Custom Field:** `Prompter_RebootPending`  
 **Value:** `False`  
 
-![Set Custom Field](../../../static/img/Reboot-Prompter/image_29.png)  
+![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_29.png)  
 
 ### Row 11c: Function: Set Custom Field
 
@@ -256,12 +256,12 @@ In this window, search for the `Auto_RebootPendingCheck` field.
 **Custom Field:** `Auto_RebootPendingCheck`  
 **Value:** `False`  
 
-![Set Custom Field](../../../static/img/Reboot-Prompter/image_30.png)  
+![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_30.png)  
 
 ### Row 11e: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_31.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_31.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -283,83 +283,83 @@ if (Test-Path -Path "$File") {
 
 ### Row 11e: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, paste `Removed the Task, Counter checker and the machine from the Dynamic group because the agent was restarted during the last attempt. Refer to the custom fields Prompter_UserAction and Prompter_Logging on the endpoint for more details.`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_32.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_32.png)  
 
 ### Row 11f: Function: Script Exit
 
-![Script Exit](../../../static/img/Reboot-Prompter/image_33.png)  
-![Script Exit](../../../static/img/Reboot-Prompter/image_34.png)  
+![Script Exit](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_33.png)  
+![Script Exit](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_34.png)  
 
 Leave it blank so that the script exits normally.
 
 ### Row 12: Function: Set Pre Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_35.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_35.png)  
 
 Click on Custom Field > Choose `RebootForceTimeDelayMinutes`. Then set the variable name as 'RebootForceTimeDelayMinutes'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_36.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_36.png)  
 
 ### Row 13: Function: Set Pre-Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_37.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_37.png)  
 
 Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name as 'RebootPromptCount'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_38.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_38.png)  
 
 ### Row 14: Function: Set Pre-Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_39.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_39.png)  
 
 Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as 'Prompter_Title'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_40.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_40.png)  
 
 ### Row 15: Function: Set Pre-Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_41.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_41.png)  
 
 Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as 'Prompter_Timeout'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_42.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_42.png)  
 
 ### Row 16: Function: Set Pre-Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_43.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_43.png)  
 
 Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable name as 'Prompter_HeaderImage'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_44.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_44.png)  
 
 ### Row 17: Function: Set Pre-Defined Variable
 
-![Set Pre Defined Variable](../../../static/img/Reboot-Prompter/image_45.png)  
+![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_45.png)  
 
 Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as 'Prompter_Icon'.
 
-![Set Variable](../../../static/img/Reboot-Prompter/image_46.png)  
+![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_46.png)  
 
 ### Row 18: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler.`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_47.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_47.png)  
 
 ### Row 19: Function: Create File
 
-![Create File](../../../static/img/Reboot-Prompter/image_48.png)  
+![Create File](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_48.png)  
 
 Create a file.  
 **Path:** `C:/ProgramData/_Automation/app/Prompter/Prompter.ps1`  
 
-![File Path](../../../static/img/Reboot-Prompter/image_49.png)  
+![File Path](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_49.png)  
 
 ```powershell
 $ProjectName = 'Prompter'
@@ -438,16 +438,16 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
 
 ### Row 20: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `Checking the status of Prompter file creation in the working directory`
 
-![Log Message](../../../static/img/Reboot-Prompter/image_50.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_50.png)  
 
 ### Row 21: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_51.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_51.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -463,37 +463,37 @@ if ((Test-Path -Path $file) -eq 'True') {
 
 ### Row 22: Function: Script Log
 
-![Script Log](../../../static/img/Reboot-Prompter/image_12.png)  
+![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.png)  
 
 In the script log message, simply type `%output%`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_18.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_18.png)  
 
 ### Row 23: Logic: If/Then
 
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_19.png)  
-![Logic If/Then](../../../static/img/Reboot-Prompter/image_20.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_19.png)  
+![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_20.png)  
 
 ### Row 23a: Condition: Output Contains
 
 In the IF part, enter `file failed to create` in the right box of the "Output Contains" part.
 
-![Condition](../../../static/img/Reboot-Prompter/image_52.png)  
+![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_52.png)  
 
 ### Row 23b: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
-![Add Row](../../../static/img/Reboot-Prompter/image_22.png)  
+![Add Row](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_22.png)  
 
 In the script exit message, simply type `%output%`  
 
-![Exit Message](../../../static/img/Reboot-Prompter/image_53.png)  
+![Exit Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_53.png)  
 
 ### Row 24: Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_14.png)  
-![PowerShell Script](../../../static/img/Reboot-Prompter/image_54.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.png)  
+![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_54.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
@@ -528,18 +528,18 @@ try {
 
 In the script log message, simply type `%output%`  
 
-![Log Message](../../../static/img/Reboot-Prompter/image_18.png)  
+![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_18.png)  
 
 ### Row 26: Logic: If/Then/Else
 
-![Logic If/Then/Else](../../../static/img/Reboot-Prompter/image_55.png)  
-![Logic If/Then/Else](../../../static/img/Reboot-Prompter/image_56.png)  
+![Logic If/Then/Else](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_55.png)  
+![Logic If/Then/Else](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_56.png)  
 
 ### Row 26a: Condition: Output Contains
 
 In the IF part, enter `Task created successfully` in the right box of the "Output Contains" part.  
 
-![Condition](../../../static/img/Reboot-Prompter/image_57.png)  
+![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_57.png)  
 
 ### Row 26b: Function: Script Log
 
@@ -557,9 +557,9 @@ In the script exit message, simply type `%output%`.
 
 Once all items are added, please save the task. The final task should look like the below screenshot.
 
-![Final Task](../../../static/img/Reboot-Prompter/image_58.png)  
-![Final Task](../../../static/img/Reboot-Prompter/image_59.png)  
-![Final Task](../../../static/img/Reboot-Prompter/image_60.png)  
+![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_58.png)  
+![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_59.png)  
+![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_60.png)  
 
 ## Deployment
 
@@ -570,30 +570,30 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 3. Select the concerned task.
 4. Click on the `Schedule` button to schedule the task/script.
 
-![Schedule Task](../../../static/img/Reboot-Prompter/image_61.png)  
+![Schedule Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_61.png)  
 
 5. This screen will appear.
 
-![Schedule Screen](../../../static/img/Reboot-Prompter/image_62.png)  
+![Schedule Screen](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_62.png)  
 
 6. Select the relevant time to run the script and click the `Do not repeat` button.
 
-![Select Time](../../../static/img/Reboot-Prompter/image_63.png)  
+![Select Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_63.png)  
 
 7. A pop-up box will appear.
 8. Suppose the client asked to set the reboot prompt for every 2 hours.
 9. Change the number of hours to `2` and click `OK`.
 
-![Set Time](../../../static/img/Reboot-Prompter/image_64.png)  
-![Set Time](../../../static/img/Reboot-Prompter/image_65.png)  
+![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_64.png)  
+![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_65.png)  
 
 10. Search for `Reboot Prompter` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
-![Search Group](../../../static/img/Reboot-Prompter/image_66.png)  
+![Search Group](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_66.png)  
 
 11. Now click the `Run` button to initiate the task.
 
-![Run Task](../../../static/img/Reboot-Prompter/image_67.png)  
+![Run Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_67.png)  
 
 12. The task will start appearing in the Scheduled Tasks.
 
@@ -601,6 +601,5 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 Task Log  
 Custom Field  
-
 
 

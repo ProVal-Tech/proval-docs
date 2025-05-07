@@ -28,7 +28,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator  | Interval | Result                                                            |
 | ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ----------------------------------------------------------------- |
-| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/SMB1-Traffic-Detection/image_1.png) |
+| System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | ![Result](../../../static/img/docs/7665cb82-1340-4f76-ba0e-e7c277c40f73/image_1.png) |
 
 ## Dependencies
 

@@ -23,7 +23,7 @@ The following assumptions are made:
 
 ## Sample Run
 
-![Sample Run](../../../static/img/CWA---CWM-Category-Mapping/image_1.png)
+![Sample Run](../../../static/img/docs/f840d208-1cd4-409a-bf46-b6492790a184/image_1.png)
 
 This will map the board, type, and subtype to Manage.
 
@@ -64,5 +64,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
-
 

@@ -21,7 +21,7 @@ unlisted: false
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Monitor-MySQL-New-Users/image_1.png)
+![Sample Run](../../../static/img/docs/5ca4395e-3e6f-476c-a75e-87751957751f/image_1.png)
 
 ## Variables
 
@@ -44,5 +44,4 @@ unlisted: false
 ## Output
 
 Email
-
 

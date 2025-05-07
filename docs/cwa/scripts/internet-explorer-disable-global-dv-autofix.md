@@ -16,7 +16,7 @@ This script disables Internet Explorer on a Windows machine.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Internet-Explorer---Disable-Global,-DV,-Autofix/image_1.png)
+![Sample Run](../../../static/img/docs/60cf67bf-fc28-4461-a2ad-7a32b2461652/image_1.png)
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ This script disables Internet Explorer on a Windows machine.
 | Name        | Example     | Required | Description                                                                                      |
 |-------------|-------------|----------|--------------------------------------------------------------------------------------------------|
 | Reboot      | 0 or 1      | False    | 0 - Reboot Immediately; 1 - No Reboot                                                          |
-| PromptUser  | 0, 1, or 2  | True     | 0 - Never Prompt; 1 - Always Prompt when user clicks IE (Default); 2 - Once per user prompt ![Prompt Screenshot](../../../static/img/Internet-Explorer---Disable-Global,-DV,-Autofix/image_2.png) |
+| PromptUser  | 0, 1, or 2  | True     | 0 - Never Prompt; 1 - Always Prompt when user clicks IE (Default); 2 - Once per user prompt ![Prompt Screenshot](../../../static/img/docs/60cf67bf-fc28-4461-a2ad-7a32b2461652/image_2.png) |
 
 ## Process
 
@@ -53,5 +53,4 @@ This script disables Internet Explorer on a Windows machine.
 - Script log
 - EDF
 - Dataview
-
 

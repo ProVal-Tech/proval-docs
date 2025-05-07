@@ -23,7 +23,7 @@ Use this script with caution. Disabling IPv4 on the machine may result in a netw
 
 
 ## Sample Run
- ![Image](../../../static/img/Manage-NetworkProtocol/image1.png)
+ ![Image](../../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image1.png)
 
 
 
@@ -46,13 +46,13 @@ Use this script with caution. Disabling IPv4 on the machine may result in a netw
 | Protocol | Computer | Dropdown | <ui><li>IPv4</li><li>IPv6</li><li>Both</li></ui> | Network Adapter Settings   | Computer override for `Protocol`.  Script will prefer Computer `Protocol` over Client/Location `Protocol` for the Computer  |
 
 ### Client EDFs
- ![Image](../../../static/img/Manage-NetworkProtocol/image2.png)
+ ![Image](../../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image2.png)
 
  ### Location EDFs
- ![Image](../../../static/img/Manage-NetworkProtocol/image3.png)
+ ![Image](../../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image3.png)
 
  ### Computer EDFs
- ![Image](../../../static/img/Manage-NetworkProtocol/image4.png)
+ ![Image](../../../static/img/docs/c5d35def-c815-4d69-b015-9b083ec05edd/image4.png)
 
 ## Output
 - Script Logs

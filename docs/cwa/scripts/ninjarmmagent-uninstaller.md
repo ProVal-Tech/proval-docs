@@ -16,7 +16,7 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 ## Sample Run
 
-![Sample Run](../../../static/img/NinjaRMMAgent-Uninstaller/image_1.png)
+![Sample Run](../../../static/img/docs/52254d14-bc24-4f32-bb3c-7447756ec15f/image_1.png)
 
 #### Global Parameters
 
@@ -28,5 +28,4 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 - Script Log
 - Ticket
-
 

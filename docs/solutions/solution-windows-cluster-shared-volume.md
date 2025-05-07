@@ -46,28 +46,28 @@ This solution is designed to monitor the Windows Cluster Shared volume, create t
 
 2. Reload the system cache:
 
-   ![Reload Cache](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_1.png)
+   ![Reload Cache](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_1.png)
 
 3. Configure the Audit script by following the steps below:
    - Navigate to Automation -> Scripts.
    - Open the script "Windows Cluster Volume Space Audit [DV]" and click debug.
    - Select any random client and computer.
    - Set the value of the Set_Environment Parameter to 1 and click OK.
-   ![Set Environment](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_2.png)
+   ![Set Environment](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_2.png)
    - Once the debugger screen opens, click Start and Finish.
-   ![Start Finish](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_3.png)
-   ![Completion](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_4.png)
+   ![Start Finish](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_3.png)
+   ![Completion](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_4.png)
    - Once the script completes successfully, click OK.
 
 4. Reload the system cache:
 
-   ![Reload Cache](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_1.png)
+   ![Reload Cache](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_1.png)
 
 5. Navigate to Browse -> Groups -> _System Automation -> Cluster Detected. Launch it by double-clicking on it.
-   ![Cluster Detected](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_5.png)
+   ![Cluster Detected](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_5.png)
    Navigate to Computers -> Scheduled Scripts.
    It should show the schedule of the "Windows Cluster Volume Space Audit [DV]" script:
-   ![Scheduled Scripts](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_6.png)
+   ![Scheduled Scripts](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_6.png)
 
 ### Alerting
 
@@ -78,7 +78,7 @@ This solution is designed to monitor the Windows Cluster Shared volume, create t
 
 2. Reload the system cache:
 
-   ![Reload Cache](../../static/img/Solution---Windows-Cluster-Shared-Volume/image_1.png)
+   ![Reload Cache](../../static/img/docs/1530b61c-9bba-406b-9451-0b998c9e8d54/image_1.png)
 
 3. Configure the solution as outlined below:
    - Navigate to Browse -> Groups -> _System Automation -> Cluster Detected.

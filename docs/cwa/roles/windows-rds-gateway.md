@@ -20,4 +20,3 @@ This document outlines how to determine if the agent is acting as an RDS Gateway
 |----------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
 
-

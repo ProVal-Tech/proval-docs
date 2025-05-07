@@ -16,14 +16,13 @@ Select this custom field to exclude a site from Huntress Deployment. It is being
 
 ## Create the Custom Field
 
-![Image](../../../static/img/Exclude-Huntress/image_1.png)
+![Image](../../../static/img/docs/caedfebd-73ec-43cb-a978-02283622f430/image_1.png)
 
-![Image](../../../static/img/Exclude-Huntress/image_2.png)
+![Image](../../../static/img/docs/caedfebd-73ec-43cb-a978-02283622f430/image_2.png)
 
 **Name:** Exclude Huntress  
 **Type:** Flag  
 **Level:** Site  
 **Description:** Select to Exclude Site from Huntress Deployment  
 **Editable:** Yes  
-
 

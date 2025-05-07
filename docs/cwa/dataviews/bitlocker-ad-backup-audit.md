@@ -37,4 +37,3 @@ This document displays Bitlocker key protectors backed up to Active Directory.
 | ParentSID          | The SID of the parent of the key protector object in AD (generally a computer object). |
 | LastScan           | The date and time that the audit was last run.                             |
 
-

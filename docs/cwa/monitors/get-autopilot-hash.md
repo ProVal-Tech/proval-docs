@@ -38,4 +38,3 @@ Global
 
 `△ Custom - Execute Script - Get-AutopilotHash`
 
-

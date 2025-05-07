@@ -32,4 +32,3 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance]
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Incompatible Endpoint | Y                | NOT "Compatible" |
 
-

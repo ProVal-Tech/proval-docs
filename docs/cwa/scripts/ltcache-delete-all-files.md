@@ -18,7 +18,7 @@ This script will clean up the LT caching folder.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/LTCache---Delete-All-Files/image_1.png)
+![Sample Run](../../../static/img/docs/e0706097-bc34-4648-b117-8fa1706a21e5/image_1.png)
 
 ## Variables
 
@@ -35,5 +35,4 @@ This script will clean up the LT caching folder.
 ## Output
 
 - Script log
-
 

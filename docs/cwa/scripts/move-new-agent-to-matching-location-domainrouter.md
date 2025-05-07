@@ -18,7 +18,7 @@ This script will move new or unassigned computers from Location ID 1 to the matc
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Move-New-Agent-to-Matching-Location-(DomainRouter)/image_1.png)
+![Sample Run](../../../static/img/docs/f04ef005-9203-4967-9bcc-11457c91d2dc/image_1.png)
 
 ## Variables
 
@@ -40,5 +40,4 @@ This script will move new or unassigned computers from Location ID 1 to the matc
 ## Output
 
 - Script Log.
-
 

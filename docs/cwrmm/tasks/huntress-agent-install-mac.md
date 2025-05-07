@@ -18,20 +18,20 @@ This task will first check if Huntress is installed. If it is not, the script wi
 
 Please create a new "PowerShell" style script to implement this task.
 
-![Image 1](../../../static/img/Huntress-Agent-(Install)---MAC/image_1.png)  
-![Image 2](../../../static/img/Huntress-Agent-(Install)---MAC/image_2.png)  
+![Image 1](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_1_1.png)  
+![Image 2](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_2_1.png)  
 
 **Name:** Huntress Agent (Install) - MAC  
 **Description:** This task will check if Huntress is installed. If not, it will attempt to install the agent and log the result for MAC machines.  
 **Category:** Custom  
 
-![Image 3](../../../static/img/Huntress-Agent-(Install)---MAC/image_3.png)  
+![Image 3](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_3_1.png)  
 
 # Script
 
 ## Row 1 Function: Script Log
 
-![Image 4](../../../static/img/Huntress-Agent-(Install)---MAC/image_4.png)  
+![Image 4](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4_1.png)  
 
 Input the following:
 
@@ -47,42 +47,42 @@ Attempting to download the file using acct_key from the Huntress website as belo
 ## Row 2 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
-![Image 5](../../../static/img/Huntress-Agent-(Install)---MAC/image_5.png)  
+![Image 5](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.png)  
 
 - Select `Custom Field`  
 - Input `acct_key` as Variable name  
 - Select `Huntress Acct_Key` custom field from the dropdown  
 - Click Save  
 
-![Image 6](../../../static/img/Huntress-Agent-(Install)---MAC/image_6.png)  
+![Image 6](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6_1.png)  
 
 ## Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
-![Image 7](../../../static/img/Huntress-Agent-(Install)---MAC/image_5.png)  
+![Image 7](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.png)  
 
 - Select `Custom Field`  
 - Input `ORG_Key` as Variable name  
 - Select `Huntress Org_Key` custom field from the dropdown  
 - Click Save  
 
-![Image 8](../../../static/img/Huntress-Agent-(Install)---MAC/image_7.png)  
+![Image 8](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7_1.png)  
 
 ## Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
-![Image 9](../../../static/img/Huntress-Agent-(Install)---MAC/image_5.png)  
+![Image 9](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.png)  
 
 - Select `Custom Field`  
 - Input `Tags` as Variable name  
 - Select `Huntress Tag` custom field from the dropdown  
 - Click Save  
 
-![Image 10](../../../static/img/Huntress-Agent-(Install)---MAC/image_8.png)  
+![Image 10](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_8_1.png)  
 
 ## Row 5 Function: Bash Script
 
-![Image 11](../../../static/img/Huntress-Agent-(Install)---MAC/image_9.png)  
+![Image 11](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_9_1.png)  
 
 Paste the following PowerShell script and set the expected script execution time to 900 seconds.  
 ```
@@ -112,7 +112,7 @@ else
 fi
 ```
 
-![Image 12](../../../static/img/Huntress-Agent-(Install)---MAC/image_10.png)  
+![Image 12](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_10_1.png)  
 
 ## Step 6 Function: Script Log
 
@@ -122,24 +122,24 @@ fi
 ```
 %Output%
 ```
-![Image 13](../../../static/img/Huntress-Agent-(Install)---MAC/image_11.png)  
-![Image 14](../../../static/img/Huntress-Agent-(Install)---MAC/image_12.png)  
+![Image 13](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11_1.png)  
+![Image 14](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_12_1.png)  
 
 ## Step 7 Logic: If/Then
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
-![Image 15](../../../static/img/Huntress-Agent-(Install)---MAC/image_13.png)  
+![Image 15](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_13_1.png)  
 
 ## ROW 7a Condition: Output Contains
 
 - Type `Huntress agent is installed` in the Value box.  
-![Image 16](../../../static/img/Huntress-Agent-(Install)---MAC/image_14.png)  
+![Image 16](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_14_1.png)  
 
 ## ROW 7b Function: Set Custom Field
 
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
-![Image 17](../../../static/img/Huntress-Agent-(Install)---MAC/image_15.png)  
+![Image 17](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_15_1.png)  
 
 - Search and select the `Huntress Deploy_Result` Custom Field.  
 - Type `Successfully Installed` in the `Value` box and click the Save button.  
@@ -150,8 +150,8 @@ fi
 - Search and select the `Script Exit` function.  
 - Leave the value blank to allow the script to exit on success.  
 
-![Image 18](../../../static/img/Huntress-Agent-(Install)---MAC/image_16.png)  
-![Image 19](../../../static/img/Huntress-Agent-(Install)---MAC/image_17.png)  
+![Image 18](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.png)  
+![Image 19](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_17_1.png)  
 
 ## Step 8 Function: Script Exit
 
@@ -161,12 +161,12 @@ fi
 ```
 Huntress Agent failed to install. Refer to the logs: %Output%
 ```
-![Image 20](../../../static/img/Huntress-Agent-(Install)---MAC/image_16.png)  
-![Image 21](../../../static/img/Huntress-Agent-(Install)---MAC/image_18.png)  
+![Image 20](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.png)  
+![Image 21](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18_1.png)  
 
 ## Step 10: Complete Script
 
-![Image 22](../../../static/img/Huntress-Agent-(Install)---MAC/image_19.png)  
+![Image 22](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_19_1.png)  
 
 ## Script Deployment
 
@@ -176,16 +176,15 @@ Go to Automations > Tasks.
 Search for Huntress Agent Install.  
 Then click on Schedule and select the Target:  
 
-![Image 23](../../../static/img/Huntress-Agent-(Install)---MAC/image_20.png)  
+![Image 23](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_20_1.png)  
 
 Select the group "Deploy Huntress - MAC" and save the selection.  
 
-![Image 24](../../../static/img/Huntress-Agent-(Install)---MAC/image_21.png)  
+![Image 24](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_21_1.png)  
 
 Once selected, click on Run to schedule the script as per requirement.
 
 ## Output
 
 - Script log
-
 

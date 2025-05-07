@@ -18,4 +18,3 @@ Get Drive List for RMM Monitoring
 
 - **-skipsize**: Optional. The minimum drive size in GB to count. Default is 10.
 
-

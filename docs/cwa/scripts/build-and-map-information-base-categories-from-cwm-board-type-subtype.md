@@ -18,7 +18,7 @@ This script will create information base categories (ticket categories) for ever
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Build-and-Map-Information-Base-Categories-from-CWM(board-Type-SubType)/image_1.png)
+![Sample Run](../../../static/img/docs/f68801e5-ac94-4219-900c-15f9d2fb92d4/image_1.png)
 
 ## Dependencies
 
@@ -44,5 +44,4 @@ This script will create information base categories (ticket categories) for ever
 ## Output
 
 CW Manage Plugin
-
 

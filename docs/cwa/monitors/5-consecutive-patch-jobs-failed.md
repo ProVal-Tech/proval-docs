@@ -23,4 +23,3 @@ This monitor will detect servers that have had five failed patches in a row for 
 
 The SQL query targets only the servers in a patching group.
 
-

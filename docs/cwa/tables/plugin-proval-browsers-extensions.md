@@ -34,4 +34,3 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 | ExtensionInstallTime  | datetime    | Installation time of the Extension                               |
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
 
-

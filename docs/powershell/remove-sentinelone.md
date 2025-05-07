@@ -49,4 +49,3 @@ Location of output for log and error files:
 .\Remove-SentinelOne-error.txt
 ```
 
-

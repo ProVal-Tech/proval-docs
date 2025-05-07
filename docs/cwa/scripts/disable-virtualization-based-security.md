@@ -18,7 +18,7 @@ Once the registry is set, it will prompt the machine to reboot.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Disable-Virtualization-based-security/image_1.png)
+![Sample Run](../../../static/img/docs/6b28c2d7-01b5-4d5d-aefa-0df7fa1b5718/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,4 @@ Once the registry is set, it will prompt the machine to reboot.
 ## Output
 
 - Script log
-
 

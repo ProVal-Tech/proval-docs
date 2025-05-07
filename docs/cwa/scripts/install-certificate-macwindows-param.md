@@ -20,7 +20,7 @@ Provide the direct download URL for the certificate in the User parameter, and i
 
 *Below is an example of how to add the certificate to My repository on a Windows machine and to the system's trusted root certificates keychain on MAC machines.*
 
-![Sample Run](../../../static/img/Install-Certificate---MacWindows-Param/image_1.png)
+![Sample Run](../../../static/img/docs/57e85773-11e3-46db-97f1-5aae835cfd62/image_1.png)
 
 ## User Parameter
 
@@ -38,5 +38,4 @@ Provide the direct download URL for the certificate in the User parameter, and i
 
 *The download URL should be something like:*  
 *[https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer](https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer)*
-
 

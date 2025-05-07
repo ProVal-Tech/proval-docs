@@ -45,4 +45,3 @@ Creates a shortcut to a web link on the desktop.
 - `New-DesktopUriShortcut-log.txt`
 - `New-DesktopUriShortcut-error.txt`
 
-

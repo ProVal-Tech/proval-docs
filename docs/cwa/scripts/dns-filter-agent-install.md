@@ -16,7 +16,7 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 ## Sample Run
 
-![Sample Run](../../../static/img/DNS-Filter-Agent---Install/image_1.png)
+![Sample Run](../../../static/img/docs/f0ddbb24-0d41-41ca-a6cb-926d70dd71d5/image_1.png)
 
 ## Variables
 
@@ -49,5 +49,4 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 - Script Log
 - Ticket
-
 

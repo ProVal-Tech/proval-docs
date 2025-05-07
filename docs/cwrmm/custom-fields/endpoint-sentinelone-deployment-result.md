@@ -26,7 +26,6 @@ This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](
 
 ## Screenshot
 
-![Screenshot](../../../static/img/Endpoint---SentinelOne-Deployment-Result/image_1.png)
-
+![Screenshot](../../../static/img/docs/7af6b9e0-bf2f-4705-874e-c58c5fa9171d/image_1.png)
 
 

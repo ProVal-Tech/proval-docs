@@ -34,4 +34,3 @@ Follow the steps below for the implementation:
 
 Follow the Monitor and Task implementation to complete the solution.
 
-

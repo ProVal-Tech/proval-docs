@@ -20,11 +20,11 @@ This document gathers data pulled from the CrystalDiskInfo application.
 # VSA Implementation
 1. Create a custom field "SMART status" as a string prior to running the agent procedure.
 
-   ![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_1.png)
+   ![Screenshot](../../../static/img/docs/36f1569a-d2a1-4638-a304-3b267d9308d9/image_1.png)
 
 2. Import the procedure and set the variables within the agent procedure. There are comments describing the purpose and usage of these lines within the agent procedure. A screenshot of the relevant portion of the procedure has been provided below.
 
-   ![Screenshot](../../../static/img/Crystal-Disk---Drive-Info/image_2.png)
+   ![Screenshot](../../../static/img/docs/36f1569a-d2a1-4638-a304-3b267d9308d9/image_2.png)
 
 3. Run the agent procedure and verify that you see the drive information in the agent procedure log, as well as the custom field updated.
 
@@ -62,5 +62,4 @@ Location of output for log, result, and error files.
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
-
 

@@ -22,4 +22,3 @@ Automate must be upgraded to the "new" patch manager.
 
 Global - This monitor should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by ConnectWise Automate.
 
-

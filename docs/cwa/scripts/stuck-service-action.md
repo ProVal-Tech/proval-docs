@@ -18,7 +18,7 @@ This script detects any service that is stuck in a state other than Running or S
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Stuck-Service-Action/image_1.png)
+![Sample Run](../../../static/img/docs/bb8f2562-4744-4349-a661-62f64f0d05b2/image_1.png)
 
 ## Dependencies
 
@@ -54,5 +54,4 @@ This script detects any service that is stuck in a state other than Running or S
 - Script log
 - Script state
 - Ticket
-
 

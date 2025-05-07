@@ -19,7 +19,7 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 ## Sample Run
 
-![Sample Run](../../../static/img/WiFi-Profile---Get/image_1.png)
+![Sample Run](../../../static/img/docs/95ecf8ed-f2ac-46fa-ad7a-05894d0743be/image_1.png)
 
 ## Variables
 
@@ -41,5 +41,4 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 - Script log
 - Table `plugin_proval_wifi_profiles`
-
 

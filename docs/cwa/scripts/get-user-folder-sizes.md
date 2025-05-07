@@ -18,7 +18,7 @@ This script runs PowerShell to fetch the size (in MB) of every user folder found
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Get-User-Folder-Sizes/image_1.png)
+![Sample Run](../../../static/img/docs/209a433a-f8a7-4ccc-b2d3-3db5b9d3abe4/image_1.png)
 
 ## Process
 
@@ -29,5 +29,4 @@ This script runs PowerShell to fetch the size (in MB) of every user folder found
 ## Output
 
 - Script log
-
 

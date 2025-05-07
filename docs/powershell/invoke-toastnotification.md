@@ -62,7 +62,7 @@ Creates a generic notification with a reboot button, a "Learn More" button linki
 
 **Screenshot:**
 
-![Example 1](../../static/img/Invoke-ToastNotification/Example1.png)
+![Example 1](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example1.png)
 
 ### Example 2
 
@@ -74,7 +74,7 @@ Creates a generic notification with a reboot button, a "Learn More" button, cust
 
 **Screenshot:**
 
-![Example 2](../../static/img/Invoke-ToastNotification/Example2.png)
+![Example 2](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example2.png)
 
 ### Example 3
 
@@ -87,7 +87,7 @@ Displays a notification for systems exceeding a maximum uptime of 14 days, with 
 
 **Screenshot:**
 
-![Example 3](../../static/img/Invoke-ToastNotification/Example3.png)
+![Example 3](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example3.png)
 
 ### Example 4
 
@@ -99,8 +99,8 @@ Displays a notification reminding users to reboot their system after exceeding 1
 
 **Screenshot:**
 
-![Example 4](../../static/img/Invoke-ToastNotification/Example4.png)  
-![Example 4 ScheduledTask](../../static/img/Invoke-ToastNotification/Example4ScheduledTask.png)
+![Example 4](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example4.png)  
+![Example 4 ScheduledTask](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example4ScheduledTask.png)
 
 ### Example 5
 
@@ -112,8 +112,8 @@ Sends a notification about an upcoming password expiration 60 days in advance. N
 
 **Screenshot:**
 
-![Example 5](../../static/img/Invoke-ToastNotification/Example5.png)  
-![Example 5 ScheduledTask](../../static/img/Invoke-ToastNotification/Example5ScheduledTask.png)
+![Example 5](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example5.png)  
+![Example 5 ScheduledTask](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example5ScheduledTask.png)
 
 ### Example 6
 
@@ -125,7 +125,7 @@ Creates a generic notification with a custom application name and other paramete
 
 **Screenshot:**
 
-![Example6](../../static/img/Invoke-ToastNotification/Example6.png)
+![Example6](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example6.png)
 
 ### Example 7
 

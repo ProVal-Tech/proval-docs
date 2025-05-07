@@ -39,4 +39,3 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | ModifiedTime    | The last time this GPO was modified                                                             |
 | ReadTime        | The last time this GPO was read.                                                                |
 
-

@@ -46,4 +46,3 @@ It holds all data from the Get-TPM command.
 | TpmPresent             | VARCHAR | Holds the value of the TpmPresent property of Get-TPM.             |
 | TpmReady               | VARCHAR | Holds the value of the TpmReady property of Get-TPM.               |
 
-

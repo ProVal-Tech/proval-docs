@@ -18,7 +18,7 @@ This script will remove the autostart entry for MS Teams for all users.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Teams-Remove-Auto-Start/image_1.png)
+![Sample Run](../../../static/img/docs/c09ed894-03d7-40e3-8cb0-2223bbeec648/image_1.png)
 
 ## Process
 
@@ -27,5 +27,4 @@ This script will remove the autostart entry for MS Teams for all users.
 ## Output
 
 - Script log
-
 

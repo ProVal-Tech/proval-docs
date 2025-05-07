@@ -18,7 +18,7 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 
 ## Sample Run
 
-![Sample Run](../../../static/img/User-Session-Audit/image_1.png)
+![Sample Run](../../../static/img/docs/fffa01c1-5e44-4239-a69d-623e4a77e789/image_1.png)
 
 ## Dependencies
 
@@ -38,5 +38,4 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Output
 
 - Script log
-
 

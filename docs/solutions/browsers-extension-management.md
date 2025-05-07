@@ -33,4 +33,3 @@ Create the following tasks:
 - [Mozilla Firefox - Extension - Install](/docs/d1bcd7a6-8544-4f1e-a20a-8470be76820e)
 - [Mozilla Firefox - Extension - Remove](/docs/ac3caa49-5cb4-464b-be99-73433d16ba81)
 
-

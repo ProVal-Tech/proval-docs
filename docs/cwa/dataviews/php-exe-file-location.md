@@ -42,4 +42,3 @@ Displays the information of the PHP.exe file fetched by the [Locate PHP.exe](/do
 | Attributes             | File's Attributes                                                                                 |
 | Script Run Time        | Data Collection Time                                                                              |
 
-

@@ -28,4 +28,3 @@ This document contains detailed information about patching on the agent, includi
 | Patching Result     | The state of the patch, whether it was successfully installed, is running, or has failed       |
 | Operating System    | The operating system of the agent                                                               |
 
-

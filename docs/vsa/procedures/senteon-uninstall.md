@@ -23,8 +23,8 @@ This agent procedure utilizes the [Remove - Application](/docs/5197b52f-294e-4b7
 
 Export the agent procedure from the ProVal VSA and import it into the partner VSA.  
 **Name:** Senteon - Uninstall  
-![Image](../../../static/img/Senteon---Uninstall/image_1.png)  
-![Image](../../../static/img/Senteon---Uninstall/image_2.png)  
+![Image](../../../static/img/docs/2603fc00-ac56-4466-b220-f2484ceef424/image_1.png)  
+![Image](../../../static/img/docs/2603fc00-ac56-4466-b220-f2484ceef424/image_2.png)  
 
 Proval Plug & Play Procedure: The agent procedure requires no configuration.
 
@@ -32,6 +32,5 @@ Proval Plug & Play Procedure: The agent procedure requires no configuration.
 
 Agent Procedure Log Entry  
 **Success**  
-![Image](../../../static/img/Senteon---Uninstall/image_3.png)  
-
+![Image](../../../static/img/docs/2603fc00-ac56-4466-b220-f2484ceef424/image_3.png)  
 

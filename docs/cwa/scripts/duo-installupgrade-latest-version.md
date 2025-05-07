@@ -19,10 +19,10 @@ It downloads the latest installer from [https://dl.duosecurity.com/duo-win-login
 ## Sample Run
 
 **First Run:** Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-![First Run](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_1.png)  
+![First Run](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_1.png)  
 
 **Regular Execution:**  
-![Regular Execution](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_2.png)
+![Regular Execution](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_2.png)
 
 ## Requirements
 
@@ -30,24 +30,24 @@ It downloads the latest installer from [https://dl.duosecurity.com/duo-win-login
    The EDFs used are:  
 
    Client-Level:  
-   ![Client-Level EDF](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_3.png)  
+   ![Client-Level EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_3.png)  
 
    - EDFs in box 1 are used with the ExtraDataGet function and will be imported with the script.
    - EDFs in section 2 will not be imported with the script and are necessary to define the value of the `@Arguments@` variable.
    - To import all the EDFs present in section 2, run the script against any online Windows machine with the `Set_Environment` parameter set to `1`.
 
 2. **Overrides should be set at the computer level, as shown below:**  
-   ![Overrides](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_4.png)  
+   ![Overrides](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_4.png)  
 
 3. **Exclusions EDFs:**  
    Client Exclusion EDF:  
-   ![Client Exclusion EDF](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_5.png)  
+   ![Client Exclusion EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_5.png)  
 
    Location Exclusion EDF:  
-   ![Location Exclusion EDF](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_6.png)  
+   ![Location Exclusion EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_6.png)  
 
    Computer Exclusion EDF:  
-   ![Computer Exclusion EDF](../../../static/img/DUO-InstallUpgrade---Latest-Version/image_7.png)  
+   ![Computer Exclusion EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image_7.png)  
 
    Exclusions EDFs are used with the ExtraDataGet function and will be imported with the script.
 
@@ -102,5 +102,4 @@ duo-win-login-latest.exe /S /V"/qn IKEY=\"Your_IKEY\" SKEY=\"Your_SKEY\" HOST=\"
 ## Output
 
 - Script log
-
 

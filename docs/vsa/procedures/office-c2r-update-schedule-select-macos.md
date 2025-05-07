@@ -26,25 +26,24 @@ The following [channels](https://learn.microsoft.com/en-us/microsoft-365-apps/in
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
    **Name:** Office Update Schedule Select (macOS)  
-   ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_1.png)  
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_1.png)  
    The export will download the necessary XML file.  
-   ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_2.png)  
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_2.png)  
    
 2. Import this XML file into the partner's VSA RMM instance.  
-   ![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_3.png)  
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_3.png)  
 
 ## Output
 
 The expected Last Exec Status is "success."  
-![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_4.png)  
+![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_4.png)  
 
 ### Agent Procedure Log
 
 Two log entries are expected. The procedure will first check the existing channel.  
-![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_5.png)  
+![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_5.png)  
 
 ### Custom Field
 
-![Image](../../../static/img/Office-C2R-Update-Schedule-Select-(macOS)/image_6.png)  
-
+![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_6.png)  
 

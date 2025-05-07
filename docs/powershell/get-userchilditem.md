@@ -64,4 +64,3 @@ System Array - Including the exact outputs you would receive by running Get-Chil
 
 Log file: `.\Get-UserChildItem-log.txt`
 
-

@@ -45,10 +45,9 @@ This procedure deploys HP Support Assist to the endpoint. The procedure download
 
 The procedure requires the shared file "HPSupportAssist.ps1" to run.  
 
-![Image](../../../static/img/HP-Support-Assist---Deploy/image_1.png)
+![Image](../../../static/img/docs/bc4737bd-eeb2-4211-b33b-a40c5e416d73/image_1.png)
 
 ## Output
 
 Agent Procedure Log
-
 

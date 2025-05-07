@@ -19,20 +19,20 @@ This document describes how to import custom backgrounds to Microsoft Teams usin
 Export the agent procedure.  
 **Name:** Microsoft - Teams - Import - Background
 
-![Image 1](../../../static/img/Microsoft---Teams---Import---Background/image_1.png)  
-![Image 2](../../../static/img/Microsoft---Teams---Import---Background/image_2.png)  
+![Image 1](../../../static/img/docs/bf20a303-f1b6-427a-a5cc-371de6104e98/image_1.png)  
+![Image 2](../../../static/img/docs/bf20a303-f1b6-427a-a5cc-371de6104e98/image_2.png)  
 
 The agent procedure requires a ZIP file containing the backgrounds.  
 The ZIP file can contain multiple images.  
 The following image formats are supported: **('jpeg', 'jpg', 'png', 'bmp')**
 
-![Image 3](../../../static/img/Microsoft---Teams---Import---Background/image_3.png)  
+![Image 3](../../../static/img/docs/bf20a303-f1b6-427a-a5cc-371de6104e98/image_3.png)  
 
 If the selected file is "background.zip," no further changes are required.  
 If a different file has been specified, update the filename in the PowerShell execution.  
 Modify **background.zip** to the name of the ZIP file you selected in the previous step.  
 
-![Image 4](../../../static/img/Microsoft---Teams---Import---Background/image_4.png)  
+![Image 4](../../../static/img/docs/bf20a303-f1b6-427a-a5cc-371de6104e98/image_4.png)  
 
 ## Dependencies
 

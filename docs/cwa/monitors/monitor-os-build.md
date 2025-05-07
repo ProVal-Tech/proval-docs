@@ -24,7 +24,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result |
 |--------------|----------------|-------------|---------------|---------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based    | 3600     | ![Result](../../../static/img/CWM---Automate---Remote-Monitor---Monitor-OS-Build/image_1.png) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based    | 3600     | ![Result](../../../static/img/docs/d8ec2315-c425-41f0-a4a9-3f8aa3e61fc4/image_1.png) |
 
 ## Target
 

@@ -34,4 +34,3 @@ Uses the VSAAPI module to interface with the client environment, setting new Cus
 - Initialize-VsaAgentFields-Log.txt
 - Initialize-VsaAgentFields-error.txt
 
-

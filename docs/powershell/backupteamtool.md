@@ -54,4 +54,3 @@ Enter the choice of action to perform:
 - `BackupTeamTool-log.txt`
 - `BackupTeamTool-Error.txt`
 
-

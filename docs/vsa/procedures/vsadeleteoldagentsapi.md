@@ -22,4 +22,3 @@ Purge All Kaseya Agents Over X Days via API
 - **days**: Days old to delete  
 - **exception**: Exceptions to rule  
 
-

@@ -29,4 +29,3 @@ The purpose of the dataview is to locate duplicate machines within Automate. The
 | Mac Addresses    | Displays the MAC address of the duplicate machines   |
 | Last Contacts    | Displays the last contact of the duplicate machines  |
 
-

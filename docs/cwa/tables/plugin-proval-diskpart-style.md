@@ -34,4 +34,3 @@ This document stores information about disks gathered from Diskpart.
 | OperationalStatus   | VARCHAR | Indicates if the disk is offline, online, or disconnected. |
 | HealthStatus       | VARCHAR | Shows the reported health of the audited disk.        |
 
-

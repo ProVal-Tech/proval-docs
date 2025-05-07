@@ -18,7 +18,7 @@ This script will attempt to remove the Windows 10 Upgrade Assistant application 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---Uninstall-Win-10-Update-Assistant/image_1.png)
+![Sample Run](../../../static/img/docs/c1f915c9-34cb-4ea1-88fb-5a32ecc66eca/image_1.png)
 
 ## Dependencies
 
@@ -35,5 +35,4 @@ The script will first check if the Windows 10 Upgrade Assistant is installed. If
 ## Output
 
 - Script log messages only
-
 

@@ -116,7 +116,7 @@ Check the concerned groups to ensure the monitor set is created and configured w
 
 **Limit to:** `HP Servers`
 
-![Example Image](../../../static/img/Implement---Remote-Monitor---HP-Hardware-Monitoring/image_1.png)
+![Example Image](../../../static/img/docs/4e3fc053-3ccd-4262-b8e8-662222500e06/image_1.png)
 
 ### 8. Set Alert Template
 Set the appropriate alert template.

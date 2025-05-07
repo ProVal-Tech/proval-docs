@@ -18,7 +18,7 @@ Imports a target GPO and optionally links it to the root of the domain.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/GPO-Import-Process/image_1.png)
+![Sample Run](../../../static/img/docs/6af95203-1e0a-4e2d-8e51-4a3f5a66eba7/image_1.png)
 
 ## Dependencies
 
@@ -54,5 +54,4 @@ Imports a target GPO and optionally links it to the root of the domain.
 ## Output
 
 - Script log
-
 

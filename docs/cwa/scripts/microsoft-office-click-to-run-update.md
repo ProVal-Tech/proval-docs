@@ -25,4 +25,3 @@ Update Microsoft 365 Apps to their latest version.
 
 *(Add any additional output details here)*
 
-

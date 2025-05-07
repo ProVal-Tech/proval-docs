@@ -21,7 +21,7 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 
 ## Summary
 
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_1.png)  
+![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_1.png)  
 **Group Type:** Dynamic Group  
 **Group Name:** Windows Feature Pack Update Failure: Low Drive Space Error  
 
@@ -31,23 +31,22 @@ Categorize Windows 10 and 11 computers where the `Feature Update Install with Tr
 ## Criteria
 
 1. Select `OS Build Number` for the criteria, choose `Does Not Contain any` for the comparator, and type `19045` and `22631` in the condition box.  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_2.png)  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_3.png)  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_4.png)  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_5.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_2.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_3.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_4.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_5.png)  
 
 2. Click the `Add Criteria` button to add another criterion.  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_6.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_6.png)  
 
 3. Select the `Feature Update Install Failure` custom field for criteria, choose `Equal` for the comparator, and type `Low Drive Space Error` in the condition box.  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_7.png)  
-   ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_8.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_7.png)  
+   ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_8.png)  
 
 ## Group
 
 Click the `Save` button to save the group.  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_9.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Low-Drive-Space-Error/image_10.png)  
-
+![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_9.png)  
+![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_10.png)  
 
 

@@ -18,7 +18,7 @@ This monitor creates a ticket on servers where the reboot is pending. It detects
 
 This should target the group as shown below:
 
-![Group Target](../../../static/img/Reboot-Pending---Servers/image_1.png)
+![Group Target](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_1.png)
 
 ## Dependencies
 
@@ -28,10 +28,10 @@ This should target the group as shown below:
 
 1. From the left bar, select **Alert Management** -> **Monitor**  
    
-   ![Alert Management](../../../static/img/Reboot-Pending---Servers/image_2.png)  
+   ![Alert Management](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_2.png)  
    Then click **Create Monitor**  
    
-   ![Create Monitor](../../../static/img/Reboot-Pending---Servers/image_3.png)
+   ![Create Monitor](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_3.png)
 
 2. Fill in the mandatory fields on the left side.  
    - **Name:** Reboot Pending - Servers  
@@ -40,20 +40,20 @@ This should target the group as shown below:
    - **Severity:** Critical Non-Impact Alerts  
    - **Family:** Windows Server  
    
-   ![Mandatory Fields](../../../static/img/Reboot-Pending---Servers/image_4.png)
+   ![Mandatory Fields](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_4.png)
 
 3. Fill in the condition on the right side.  
    Follow the screenshot:  
    
-   ![Condition Screenshot](../../../static/img/Reboot-Pending---Servers/image_5.png)
+   ![Condition Screenshot](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_5.png)
 
 4. Select the target.  
    Click on **Select Target:**  
    
-   ![Select Target](../../../static/img/Reboot-Pending---Servers/image_6.png)  
+   ![Select Target](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_6.png)  
    Then click on **Device Group**, search for the word "reboot," and select the **Reboot Pending Servers** group as shown below:  
    
-   ![Device Group](../../../static/img/Reboot-Pending---Servers/image_7.png)
+   ![Device Group](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_7.png)
 
 ## Ticketing
 
@@ -62,5 +62,4 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
-
 

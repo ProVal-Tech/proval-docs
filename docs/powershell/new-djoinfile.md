@@ -41,4 +41,3 @@ This will create a file named `Dev-Win10-2-OfflineJoin.txt` in the working direc
 **Console:**
 - Djoin.exe command results.
 
-

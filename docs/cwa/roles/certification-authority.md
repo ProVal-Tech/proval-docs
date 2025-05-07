@@ -21,4 +21,3 @@ This document describes a role used to detect servers with the Certification Aut
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Cert-Authority' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |
 
 
-

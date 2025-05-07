@@ -24,4 +24,3 @@ This dataview provides a monitor list at the client level. It shows a list of th
 | Alert Template Name   | Alert template attached to the monitor.            |
 | Ticket Category      | Ticket category associated with the monitor.       |
 
-

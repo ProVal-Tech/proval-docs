@@ -51,4 +51,3 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
 
 
-

@@ -17,7 +17,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Chrome---Remove-Extension/image_1.png)
+![Sample Run](../../../static/img/docs/d1d1297e-d50a-47bb-90af-5c70dd32c1d9/image_1.png)
 
 ## Dependencies
 
@@ -66,5 +66,4 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-ChromeExtension-log.txt
 ```
-
 

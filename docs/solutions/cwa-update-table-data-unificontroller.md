@@ -38,4 +38,3 @@ To implement this solution, follow these steps. Is there any manual configuratio
 
 *(This section can be filled with frequently asked questions related to the implementation or usage of the solution.)*
 
-

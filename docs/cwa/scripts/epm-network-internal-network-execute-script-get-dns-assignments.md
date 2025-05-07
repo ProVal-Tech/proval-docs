@@ -28,4 +28,3 @@ Managed Windows Servers and Workstations
 **Name:** `△ Custom - Execute Script - Get - DNS Assignments`
 
 
-

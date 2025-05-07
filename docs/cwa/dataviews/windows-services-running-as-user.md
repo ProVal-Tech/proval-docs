@@ -27,4 +27,3 @@ The dataview displays the services on computers that are logged on as users but 
 | Startup      | Displays the startup type of the service            |
 | Log on As    | Service account through which services are running   |
 
-

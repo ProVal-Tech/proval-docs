@@ -46,4 +46,3 @@ Location of output for log, result, and error files:
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-

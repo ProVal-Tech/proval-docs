@@ -18,13 +18,13 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Save the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file in the `LTShare` directory (or `Webdav` for hosted partners) under the path `Transfer/Tools/CPUTempMon/CPUTempMon.exe`.
 - Create the `CPUTempMon` folder, place the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file, unblock the file if it's blocked, and execute an `iisreset` command after placing the file.
 
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_1.png)
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_1.png)
 
 **IIS Reload for Hosted Partners:**
 - Hosted partners can utilize the `IIS Reload` option under `Server Status` after completing the tool placement to ensure proper functionality.
 
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_2.png)  
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_3.png)
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_2.png)  
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_3.png)
 
 **Temperature Threshold Calculation:**
 - The permissible limit is determined by subtracting the defined `offset` in Automate. This `offset` can be set either in the system property or the client-level EDF.
@@ -40,14 +40,14 @@ This script is designed to establish a remote monitoring system for Windows comp
 
 **First Run:** For the initial run, you must execute the script with the `Set_Environment` parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
 
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_4.png)
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_4.png)
 
 **Regular Execution:**  
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_5.png)
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_5.png)
 
 **With Force Parameter:** The script’s general function is to compare the monitor set currently installed on the machine with the configuration in the EDFs and system properties. If discrepancies are detected, the monitor will be re-created. However, the force switch can be used to forcefully re-create the monitor set.
 
-![Image](../../../static/img/CPU-Temperature-Monitor---Create/image_6.png)
+![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_6.png)
 
 ## Variables
 

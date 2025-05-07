@@ -24,7 +24,7 @@ This document provides a script to uninstall the CrowdStrike Application.
 
 ## Sample Run
 
-![Sample Run](../../static/img/Crowdstrike-Uninstall/image_1.png)
+![Sample Run](../../static/img/docs/d6f905af-3e99-4be4-a6eb-d1aa78410375/image_1.png)
 
 ## Dependencies
 
@@ -47,4 +47,3 @@ This document provides a script to uninstall the CrowdStrike Application.
 ## Output
 
 - Script log
-

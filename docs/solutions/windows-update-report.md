@@ -58,4 +58,3 @@ A: Ensure that necessary exclusions are defined in the AV/security products. See
 **Note:** Whitelisting the certificate will not override any restrictions or rules that block or restrict the computers from communicating with [https://file.provaltech.com](https://file.provaltech.com).
 
 
-

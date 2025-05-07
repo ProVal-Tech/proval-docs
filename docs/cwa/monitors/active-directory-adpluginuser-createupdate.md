@@ -33,4 +33,3 @@ Service Plans. Windows Servers. Server Roles. Windows Server Core Services. Doma
 
 - Import the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](/docs/ea1aca74-77ee-4387-91f2-57adb5822737) script before importing the alert template, or simply verify the script was imported correctly and is fully up to date after importing the alert template.
 
-

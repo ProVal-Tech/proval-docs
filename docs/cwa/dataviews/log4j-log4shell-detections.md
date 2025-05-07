@@ -33,4 +33,3 @@ This document displays information about the EDFs filled by the [SEC - Endpoint 
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
 
-

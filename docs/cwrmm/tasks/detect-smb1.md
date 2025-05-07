@@ -16,9 +16,9 @@ This task detects if SMB1 is enabled on the machine and saves its output to the 
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Detect-SMB1/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_1.png)
 
-![Sample Run Image 2](../../../static/img/Detect-SMB1/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_2.png)
 
 ## Implementation
 
@@ -26,25 +26,25 @@ This task detects if SMB1 is enabled on the machine and saves its output to the 
 
 Create a new "Script Editor" style script in the system to implement this task.
 
-![Create Script Image 1](../../../static/img/Detect-SMB1/image_3.png)
+![Create Script Image 1](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_3.png)
 
-![Create Script Image 2](../../../static/img/Detect-SMB1/image_4.png)
+![Create Script Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_4.png)
 
 **Name:** Detect SMB1  
 **Description:** This task determines if SMB1 is enabled on the machine and saves its output to the "SMB1 Enabled" custom field  
 **Category:** Custom  
 
-![Script Image](../../../static/img/Detect-SMB1/image_5.png)
+![Script Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_5.png)
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/Detect-SMB1/image_6.png)
+![Add Row Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_6.png)
 
 ### Row 1 Function: PowerShell Script
 
-![PowerShell Script Image 1](../../../static/img/Detect-SMB1/image_7.png)
+![PowerShell Script Image 1](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_7.png)
 
-![PowerShell Script Image 2](../../../static/img/Detect-SMB1/image_8.png)
+![PowerShell Script Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_8.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
@@ -68,31 +68,31 @@ if($ver -ge [version]'6.3') {
 }
 ```
 
-![PowerShell Script Image 3](../../../static/img/Detect-SMB1/image_9.png)
+![PowerShell Script Image 3](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_9.png)
 
 Save and move to the next row.
 
 ### Row 2 Function: Script Log
 
-![Script Log Image](../../../static/img/Detect-SMB1/image_10.png)
+![Script Log Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_10.png)
 
 In the script log message, simply type `Output:%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image 2](../../../static/img/Detect-SMB1/image_11.png)
+![Script Log Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_11.png)
 
 ### Row 3 Logic: If/Then/Else
 
-![If Then Else Logic Image](../../../static/img/Detect-SMB1/image_12.png)
+![If Then Else Logic Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_12.png)
 
 There will be two sections: If part and Else part.
 
-![If Then Else Logic Image 2](../../../static/img/Detect-SMB1/image_13.png)
+![If Then Else Logic Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_13.png)
 
 #### Row 3a Condition: Output Contains
 
 In the IF part, enter `True` in the right box of the "Output Contains" part.
 
-![Output Contains Image](../../../static/img/Detect-SMB1/image_14.png)
+![Output Contains Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_14.png)
 
 #### Row 3b Function: Set Custom Field
 
@@ -105,7 +105,7 @@ In this window, search for the `SMB1 Enabled` field.
 **Custom Field:** `SMB1 Enabled`  
 **Value:** True  
 
-![Set Custom Field Image](../../../static/img/Detect-SMB1/image_15.png)
+![Set Custom Field Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_15.png)
 
 #### Row 3c Function: Set Custom Field
 
@@ -113,11 +113,11 @@ Add a new row by clicking on the Add row button in the ELSE part and select the 
 
 In this one, set Custom Field and Value as shown below.
 
-![Set Custom Field Image 2](../../../static/img/Detect-SMB1/image_16.png)
+![Set Custom Field Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_16.png)
 
 Once all items are added, please save the task. The final task should look like the screenshot below.
 
-![Final Task Screenshot](../../../static/img/Detect-SMB1/image_17.png)
+![Final Task Screenshot](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_17.png)
 
 ## Deployment
 
@@ -130,27 +130,27 @@ It is suggested to run the task once per week against Windows computers.
 
 This screen will appear.
 
-![Schedule Task Image](../../../static/img/Detect-SMB1/image_18.png)
+![Schedule Task Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_18.png)
 
 Select the relevant time to run the script and click the "Does not repeat" button.
 
-![Schedule Time Image](../../../static/img/Detect-SMB1/image_19.png)
+![Schedule Time Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_19.png)
 
 A pop-up box will appear.
 
 Change the number of days to `7` and click `OK`.
 
-![Change Days Image 1](../../../static/img/Detect-SMB1/image_20.png)
+![Change Days Image 1](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_20.png)
 
-![Change Days Image 2](../../../static/img/Detect-SMB1/image_21.png)
+![Change Days Image 2](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_21.png)
 
 Search for `Windows agents` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the client doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
-![Select Windows Agents Image](../../../static/img/Detect-SMB1/image_22.png)
+![Select Windows Agents Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_22.png)
 
 Now click the `Run` button to initiate the task.
 
-![Run Task Image](../../../static/img/Detect-SMB1/image_23.png)
+![Run Task Image](../../../static/img/docs/f5a58819-dcc7-4905-a3b5-52ff73751e21/image_23.png)
 
 The task will start appearing in the Scheduled Tasks.
 
@@ -158,5 +158,4 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field - [CW RMM - Custom Field - SMB1 Enabled](/docs/67da04f5-4170-402a-93b3-7e6236937263)
-
 

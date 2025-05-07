@@ -28,4 +28,3 @@ This document describes a temporary table created by the [CWM - Automate - Scrip
 | Clientid    | int(8)  | Unique identifier for the client   |
 | Timestamp   | datetime | The time when the script was run   |
 
-

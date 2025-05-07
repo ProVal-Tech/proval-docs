@@ -38,7 +38,7 @@ Ignore parameters:
 
 - Set up the Client Level EDF
 
-![Client Level EDF](../../../static/img/SWM---Software-Installation---Script---Cisco-AnyConnect---Package-Installation/image_1.png)
+![Client Level EDF](../../../static/img/docs/a73e1ac2-01a9-44c4-b153-be7df7009072/image_1.png)
 
 - The OpenDNS_EnabledClient checkbox can be utilized to automatically execute this script if desired.
 
@@ -48,11 +48,11 @@ Ignore parameters:
 
 Install all Cisco AnyConnect packages.
 
-![Install All Packages](../../../static/img/SWM---Software-Installation---Script---Cisco-AnyConnect---Package-Installation/image_2.png)
+![Install All Packages](../../../static/img/docs/a73e1ac2-01a9-44c4-b153-be7df7009072/image_2.png)
 
 Install specific AnyConnect packages.
 
-![Install Specific Packages](../../../static/img/SWM---Software-Installation---Script---Cisco-AnyConnect---Package-Installation/image_3.png)
+![Install Specific Packages](../../../static/img/docs/a73e1ac2-01a9-44c4-b153-be7df7009072/image_3.png)
 
 ---
 
@@ -93,6 +93,5 @@ Install specific AnyConnect packages.
 ## Output
 
 - Script log
-
 
 

@@ -19,18 +19,18 @@ Parameters Reference: [Duo Silent Install](https://duo.com/docs/macos)
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.png)
 
 Search and select `Duo Deployment - Macintosh`
-![Image1](../../../static/img/ninja-one-automation-duo-deployment-macintosh/image1.png)
+![Image1](../../../static/img/docs/059819a5-8b95-40d1-ac89-b33858e864a0/image1.png)
 
 Click the `Run` button to run the script.  
 **Run As:** `System`  
 **Preset Parameter:** `<Leave it Blank>`  
-![Image2](../../../static/img/ninja-one-automation-duo-deployment-macintosh/image2.png)
+![Image2](../../../static/img/docs/059819a5-8b95-40d1-ac89-b33858e864a0/image2.png)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.png)
 
 ## Dependencies
 
@@ -46,15 +46,15 @@ Click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.png)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.png)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.png)
 
 ### Step 3
 
@@ -67,7 +67,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Mac`  
 **Architecture:** `64-bit`  
 **Run As:** `System`  
-![Image3](../../../static/img/ninja-one-automation-duo-deployment-macintosh/image3.png)
+![Image3](../../../static/img/docs/059819a5-8b95-40d1-ac89-b33858e864a0/image3.png)
 
 ## Step 4
 
@@ -278,19 +278,19 @@ trap 'cleanup $?' EXIT
 main "$@"
 ```
 
-![Image4](../../../static/img/ninja-one-automation-duo-deployment-macintosh/image4.png)
+![Image4](../../../static/img/docs/059819a5-8b95-40d1-ac89-b33858e864a0/image4.png)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.png)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.png)
 
 ## Completed Automation
 
-![Image5](../../../static/img/ninja-one-automation-duo-deployment-macintosh/image5.png)
+![Image5](../../../static/img/docs/059819a5-8b95-40d1-ac89-b33858e864a0/image5.png)
 
 ## Output
 

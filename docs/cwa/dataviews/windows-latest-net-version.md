@@ -28,4 +28,3 @@ None
 | Computers Last Contact          | The time the computer last contacted Automate      |
 | Inv_OperatingSystem Net_Version | The highest .NET version detected by Automate      |
 
-

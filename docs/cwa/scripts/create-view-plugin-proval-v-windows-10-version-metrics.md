@@ -16,7 +16,7 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](/do
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Create-View-plugin_proval_v_windows_10_version_metrics/image_1.png)
+![Sample Run](../../../static/img/docs/ac098d84-7d28-4b69-933f-74ab861d2b89/image_1.png)
 
 ## Dependencies
 
@@ -27,5 +27,4 @@ The script will create the view [plugin_proval_v_windows_10_version_metrics](/do
 ## Process
 
 This section executes the SQL query to create the `plugin_proval_v_windows_10_version_metrics` view.
-
 

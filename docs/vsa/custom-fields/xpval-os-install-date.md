@@ -25,4 +25,3 @@ The Agent Procedure is required to populate this field: [OS Install Date Procedu
 | xPVAL OS Install Date    | Machine                                 | Displays the initial install date of the OS |
 
 
-

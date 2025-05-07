@@ -26,4 +26,3 @@ Global
 
 **Name:** `△ Custom - Execute Script - Get OneDrive Sync Status [DV]`
 
-

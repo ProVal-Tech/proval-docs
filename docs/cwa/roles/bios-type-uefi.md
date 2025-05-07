@@ -20,4 +20,3 @@ This role definition helps you track machines with UEFI BIOS type.
 |----------------------------------------|---------------|--------|----------------|
 | \{%@bcdedit | find /i "path"@%}       | Regex Match   | .efi   | Windows        |
 
-

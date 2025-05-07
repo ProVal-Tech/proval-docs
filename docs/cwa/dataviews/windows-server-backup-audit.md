@@ -83,4 +83,3 @@ FROM
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
 
-

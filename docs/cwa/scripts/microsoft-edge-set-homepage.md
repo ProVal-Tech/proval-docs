@@ -18,7 +18,7 @@ This script adds the registry policy for an enforced homepage in Microsoft Edge 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Edge---Set-Homepage/image_1.png)
+![Sample Run](../../../static/img/docs/ea27a6a7-8b06-4120-b827-745121614aa8/image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,4 @@ The script takes a string parameter to define the URL to set the homepage to. Th
 
 - Script log
 - Local file on the computer
-
 

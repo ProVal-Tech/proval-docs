@@ -24,4 +24,3 @@ This dataview shows the public IP address of the location's router.
 | Router Access Count          | The number of agents connected to the router's public IP. |
 | Agent Name Using Router      | The names of the agents that are connected to the router's public IP. |
 
-

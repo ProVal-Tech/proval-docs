@@ -132,7 +132,7 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 
 Now execute your query from a RAWSQL monitor set.  
 Once the query is executed, reload the control center.
 
-![Control Center](../../../static/img/Windows-Update-Orchestrator/image_1.png)
+![Control Center](../../../static/img/docs/95f64d6e-cb10-4c2c-9d40-c55941a7d7bc/image_1.png)
 
 Then re-open the group where the monitor is created.  
 The monitor will come up with the search `Update Orchestrator - UsoSvc` added to the LIMIT.

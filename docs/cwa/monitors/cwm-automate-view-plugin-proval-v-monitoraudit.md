@@ -40,4 +40,3 @@ This document stores data about monitors and their configuration.
 | Service Board           | VARCHAR     | The service board that the alert will post to.  |
 | Frequency              | VARCHAR     | Running frequency of the monitor set.            |
 
-

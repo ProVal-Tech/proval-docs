@@ -31,8 +31,8 @@ This document describes how to download and run the installer for the Senteon Ag
 
 Export the agent procedure from the ProVal VSA and import it into the partner VSA.  
 **Name:** Senteon - Install  
-![Image](../../../static/img/Senteon---Install/image_1.png)  
-![Image](../../../static/img/Senteon---Install/image_2.png)  
+![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_1.png)  
+![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_2.png)  
 
 **ProVal Plug & Play:** No agent procedure configuration is required. Ensure dependencies exist prior to usage.
 
@@ -41,9 +41,8 @@ Export the agent procedure from the ProVal VSA and import it into the partner VS
 ### Agent Procedure Log Entry
 
 **Successful Install**  
-![Image](../../../static/img/Senteon---Install/image_3.png)  
+![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_3.png)  
 
 **Existing Install**  
-![Image](../../../static/img/Senteon---Install/image_4.png)  
-
+![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_4.png)  
 

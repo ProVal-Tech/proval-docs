@@ -25,13 +25,13 @@ This script installs the latest feature update on a Windows 10+ machine and prov
 ## Sample Run
 
 To upgrade a computer from Windows 10 to Windows 11, forcefully reboot it, skipping the Free Drive Space Check, and using a custom image/icon in the user's prompt:  
-![Upgrade Prompt](../../../static/img/Install-Windows-Upgrade/image_1.png)
+![Upgrade Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_1.png)
 
 To install the latest available feature pack on a Windows 10+ machine, without restarting and using the default image/icon in the user's prompt:  
-![Install Prompt](../../../static/img/Install-Windows-Upgrade/image_2.png)
+![Install Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_2.png)
 
 ### Example Prompt
-![Example Prompt](../../../static/img/Install-Windows-Upgrade/image_3.png)
+![Example Prompt](../../../static/img/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28/image_3.png)
 
 ## Dependencies
 
@@ -157,5 +157,4 @@ Error Log
 Setup Diag Result  
 ----------------  
 `\\<Outcome of the SetupDiagTool verifying the upgrade process>`
-
 

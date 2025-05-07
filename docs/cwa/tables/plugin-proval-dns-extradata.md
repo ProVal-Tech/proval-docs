@@ -44,4 +44,3 @@ ENGINE=InnoDB
 ;
 ```
 
-

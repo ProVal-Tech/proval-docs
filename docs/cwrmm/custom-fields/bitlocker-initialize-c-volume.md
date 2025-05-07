@@ -26,4 +26,3 @@ This document contains the custom field details linked to the Bitlocker Initiali
 | ACP BitLocker Init Result    | Text | Endpoint |               | No       | This custom field stores the output of the Bitlocker script. It records 'Failure' when the script generates an error log file or fails to generate a log file; otherwise, it records 'Success'. |
 
 
-

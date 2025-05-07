@@ -25,4 +25,3 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
 
-

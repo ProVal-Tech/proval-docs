@@ -30,4 +30,3 @@ This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC 
 | iDRAC Version     | Shows the iDRAC version of the concerned server.           |
 | Last Contact      | Shows the last contact of the concerned server with RMM.   |
 
-

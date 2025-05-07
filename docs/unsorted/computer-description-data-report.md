@@ -17,7 +17,7 @@ This script will find the computer description information from the agent and st
 
 ## Sample Run
 
-![Sample Run](../../static/img/Computer-Description-Data-Report/image_1.png)
+![Sample Run](../../static/img/docs/065ba00b-a1d0-4c99-9d2f-e606e60867d8/image_1.png)
 
 ## Dependencies
 
@@ -40,4 +40,3 @@ This script will find the computer description information from the agent and st
 - Script log
 - Script state
 - Dataview
-

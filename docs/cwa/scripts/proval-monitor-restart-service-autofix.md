@@ -39,4 +39,3 @@ This script is intended to be called by the "~Autofix Kill stuck service and res
 
 - Script log
 
-

@@ -20,7 +20,7 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](/do
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-365---Set-Update-Channel---Current/image_1.png)
+![Sample Run](../../../static/img/docs/68e362d9-521f-417b-93e3-81adc169b559/image_1.png)
 
 ## Dependencies
 
@@ -29,6 +29,5 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](/do
 ## Output
 
 - Script log
-
 
 

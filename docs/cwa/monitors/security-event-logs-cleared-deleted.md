@@ -30,7 +30,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|------------|----------|-----------------------|
 | System       | Default        | Run File   | **REDACTED**      | State Based | 900      | \<Screenshot Below\>  |
 
-![Screenshot](../../../static/img/EPM---Security-Management---Remote-Monitor---Security-event-logs-cleareddeleted/image_1.png)
+![Screenshot](../../../static/img/docs/0f6e6262-6a9f-4edf-ab23-1522543de7e2/image_1.png)
 
 ## Dependencies
 

@@ -18,7 +18,7 @@ This script will remove the current LTCache on the Probe for the target's locati
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Remove-Probe-LTCache-Share/image_1.png)
+![Sample Run](../../../static/img/docs/31680e20-afa7-4b6b-9510-13a10193f6a1/image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,4 @@ This script will remove the current LTCache on the Probe for the target's locati
 ## Output
 
 - Script log
-
 

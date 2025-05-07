@@ -43,4 +43,3 @@ This Dataview is similar to the [Script Failure Assessment](/docs/0a1ca2b8-1d0e-
 | Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
 
-

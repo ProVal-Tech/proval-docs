@@ -46,4 +46,3 @@ This document displays the battery report information.
 | ThresholdViolation     | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
 
 
-

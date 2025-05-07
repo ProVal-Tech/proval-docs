@@ -20,4 +20,3 @@ This document will determine if the endpoint is using TLS version 1.2. This data
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.2/Client:Enabled-%}` | Equals     | 1      | Windows OS     |
 
-

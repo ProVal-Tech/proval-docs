@@ -20,7 +20,7 @@ This script builds out the remote drive space monitors. It is easily adjustable 
 ## Sample Run
 
 This should be run only as a subscript to the `@Agent Monitor Creation - Disk* - WRAPPER [Globals]` (script), but you can run it manually:  
-![Sample Run](../../../static/img/Agent-Monitor-Creation---Disk-Servers-Variable-Threshold-in-GB/image_1.png)
+![Sample Run](../../../static/img/docs/9f035f14-972d-487a-a2b4-5927cd67978e/image_1.png)
 
 ## Dependencies
 
@@ -53,6 +53,5 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
-
 
 

@@ -29,4 +29,3 @@ This dataview contains the computer records where BitLocker initialization faile
 | Last Contact              | Last contact of the agent with the CW Automate       |
 | Number of Failed Attempts  | The count of BitLocker initialization failure attempts |
 
-

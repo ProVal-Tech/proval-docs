@@ -16,7 +16,7 @@ This script is an Automate Wrapper to run the Agnostic Update-Office script.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Office-365---Update/image_1.png)
+![Sample Run](../../../static/img/docs/f63488bf-e843-494e-89a0-d464f4a6c1ad/image_1.png)
 
 ## Dependencies
 
@@ -54,6 +54,5 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Ticketing
 
-![Ticketing](../../../static/img/Microsoft-Office-365---Update/image_2.png)
-
+![Ticketing](../../../static/img/docs/f63488bf-e843-494e-89a0-d464f4a6c1ad/image_2.png)
 

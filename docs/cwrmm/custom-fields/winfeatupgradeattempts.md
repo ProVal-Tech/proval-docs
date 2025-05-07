@@ -16,9 +16,9 @@ This document will keep a record of how many times a Windows 10/11 device has at
 
 ## Create the Custom Field
 
-![Image 1](../../../static/img/WinFeatUpgradeAttempts/image_1.png)
+![Image 1](../../../static/img/docs/58b312bd-f26c-4b05-ab92-c184520d05de/image_1.png)
 
-![Image 2](../../../static/img/WinFeatUpgradeAttempts/image_2.png)
+![Image 2](../../../static/img/docs/58b312bd-f26c-4b05-ab92-c184520d05de/image_2.png)
 
 ---
 
@@ -28,5 +28,4 @@ This document will keep a record of how many times a Windows 10/11 device has at
 **Level:** Endpoint  
 **Description:** This field will keep a record of how many times a Windows 10/11 device has attempted to install the feature upgrade using the `Feature Update Install With Tracking` task, with the default value set to 0.  
 **Editable:** Yes  
-
 

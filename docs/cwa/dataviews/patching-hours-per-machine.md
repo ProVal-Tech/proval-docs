@@ -27,4 +27,3 @@ This document provides a dataview representing the number of patching jobs and t
 | Sum of Patching Hours Last 30 Days      | Sum of patching hours per machine in the last 30 days |
 | Total Patch Duration                     | Total patch duration per machine in the last 30 days |
 
-

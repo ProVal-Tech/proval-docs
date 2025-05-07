@@ -41,4 +41,3 @@ Dataview displays the information gathered by the [CWM - Automate - Script - Get
 | Data Collection Time     | Data Collection Time                                                                                         |
 
 
-

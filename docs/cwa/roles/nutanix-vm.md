@@ -20,4 +20,3 @@ This role detects if the machine is a Nutanix VM and, if so, applies this role i
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | %@powershell.exe "Get-WmiObject -Query 'SELECT Manufacturer FROM Win32_ComputerSystem' | Select-Object -ExpandProperty Manufacturer@% | Equals     | True   | All OS's       |
 
-

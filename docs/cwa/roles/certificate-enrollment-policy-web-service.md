@@ -21,4 +21,3 @@ This document outlines a role used to detect servers with the Certificate Enroll
 | `\{%@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Enroll-Web-Pol' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |
 
 
-

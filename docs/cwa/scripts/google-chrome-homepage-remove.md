@@ -16,7 +16,7 @@ This document describes an Automate implementation of the [SWM - Software Config
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Google-Chrome---Homepage---Remove/image_1.png)
+![Sample Run](../../../static/img/docs/7fc15e41-8b1d-485d-808f-518893b41686/image_1.png)
 
 ## Dependencies
 
@@ -25,5 +25,4 @@ This document describes an Automate implementation of the [SWM - Software Config
 ## Output
 
 - Script Logs
-
 

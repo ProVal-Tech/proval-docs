@@ -16,20 +16,20 @@ This is an RMM implementation of the agnostic script [EPM - User Management - Ag
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Set-Last-Logged-In-User/image_5.png)
+![Sample Run Image](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_5.png)
 
 - Select the parameters below to clear the last logged-in user's information from the login screen. The computer must be restarted manually afterward to implement the changes.  
-![Clear User Info](../../../static/img/Set-Last-Logged-In-User/image_6.png)  
-![Clear User Info](../../../static/img/Set-Last-Logged-In-User/image_7.png)
+![Clear User Info](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_6.png)  
+![Clear User Info](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_7.png)
 
 - Similarly, to clear the last logged-in user's information from the login screen and forcefully restart the computer, select the parameters below.  
-![Force Restart](../../../static/img/Set-Last-Logged-In-User/image_8.png)
+![Force Restart](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_8.png)
 
 - The parameters below set the specified local user as the last logged-in user. The computer must be restarted manually afterward to implement the changes.  
-![Set Local User](../../../static/img/Set-Last-Logged-In-User/image_9.png)
+![Set Local User](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_9.png)
 
 - The parameters below set the specified domain user as the last logged-in user and forcefully restart the computer.  
-![Set Domain User](../../../static/img/Set-Last-Logged-In-User/image_10.png)
+![Set Domain User](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_10.png)
 
 ## Dependencies
 
@@ -48,36 +48,36 @@ This is an RMM implementation of the agnostic script [EPM - User Management - Ag
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation](../../../static/img/Set-Last-Logged-In-User/image_11.png)
+![Task Creation](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_11.png)
 
 **Name:** Set Last Logged In User  
 **Description:** This script manages the last logged-in user's information displayed on the Windows login screen and can optionally restart the computer to apply changes.  
 **Category:** Custom  
-![Task Category](../../../static/img/Set-Last-Logged-In-User/image_12.png)
+![Task Category](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_12.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Set-Last-Logged-In-User/image_13.png)
+![Add Parameter](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_13.png)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Set-Last-Logged-In-User/image_14.png)
+![Parameter Screen](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_14.png)
 
 - Set `Clear` in the `Parameter Name` field.
 - Select `Number Value` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/Set-Last-Logged-In-User/image_15.png)
+![Save Parameter](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_15.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/Set-Last-Logged-In-User/image_16.png)
+![Confirm Parameter](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_16.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Set-Last-Logged-In-User/image_17.png)
+![Add Parameter](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_17.png)
 
 - Set `UserName` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save UserName](../../../static/img/Set-Last-Logged-In-User/image_18.png)
+![Save UserName](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_18.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
@@ -96,23 +96,23 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
 All the parameters will look like the following:  
-![Parameters](../../../static/img/Set-Last-Logged-In-User/image_19.png)
+![Parameters](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_19.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/Set-Last-Logged-In-User/image_20.png)
+![Add Row](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_20.png)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Set-Last-Logged-In-User/image_21.png)
+![Blank Function](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_21.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Set-Last-Logged-In-User/image_22.png)
+![PowerShell Script](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_22.png)
 
 The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/Set-Last-Logged-In-User/image_23.png)
+![PowerShell Function](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_23.png)
 
 Paste the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -185,15 +185,14 @@ if (Test-Path $ErrorLogPath) {
 Get-Content -Path $LogPath
 ```
 
-![Save Script](../../../static/img/Set-Last-Logged-In-User/image_24.png)
+![Save Script](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_24.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Set-Last-Logged-In-User/image_25.png)
+![Completed Task](../../../static/img/docs/d8fcfe10-81c9-42d9-b56b-a4021601f842/image_25.png)
 
 ## Output
 
 - Script Log
-

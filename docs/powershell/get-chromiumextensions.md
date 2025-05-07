@@ -69,4 +69,3 @@ ExtensionVersion        NoteProperty string ExtensionVersion=1.12.2
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\\Users\\localadmin
 ```
 
-

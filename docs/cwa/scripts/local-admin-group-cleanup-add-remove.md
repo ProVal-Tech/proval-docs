@@ -32,15 +32,15 @@ The local account `Administrator` and the `Domain Admins` group (if the computer
 
 The solution's Extra Data Fields have been modified. Update the [Local Admin Group Cleanup - Add/Remove](/docs/e228540f-e4f4-4e67-801f-cdff876f955f) script from the `Prosync` plugin and run/debug against an online Windows machine with `Set_Environment` as `1` to implement the changes.
 
-![Update Notice](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_1.png)
+![Update Notice](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_1_1.png)
 
 ## Sample Run
 
 **First Execution:** Run the script against any online Windows computer with the `Set_Environment` parameter set to `1` to create the system properties and the EDFs used by the solution.  
-![First Execution](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_2.png)
+![First Execution](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_2_1.png)
 
 **Regular Execution:**  
-![Regular Execution](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_3.png)
+![Regular Execution](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_3_1.png)
 
 ## Dependencies
 
@@ -73,27 +73,27 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
 |-------------------------------------|----------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Local_Admin_Group_Approved_Members | Batman   | False    | This field contains a comma-separated list of the approved local admins. If the local admin group cleanup process is enabled for a machine, the usernames set in this system property will be added to the local admin group of all computers in the environment. Avoid setting Domain Users in this system property.  **Example of multiple usernames:** `Batman, UnnecessaryBatman` |
 
-![System Properties](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_4.png)
+![System Properties](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_4.png)
 
 ## Client-Level EDF
 
 | Name                          | Example                         | Type      | Section                | Description                                                                                                                                                                                                                                       |
 |-------------------------------|---------------------------------|-----------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2a. Local Admin Cleanup       | Enabled for Servers and Workstations | Check-Box | Local Admin Account     | Enabling this EDF will ensure that only the 'Approved Local Admins' shown below are added to the Local Admins Group. This will also disable the New Local Admin Monitor.  **Available Options:** <ul><li>Not Enabled</li><li>Enabled for Workstations Only</li><li>Enabled for Servers Only</li><li>Enabled for Servers and Workstations</li></ul>  **Default Option:** Not Enabled  Leaving this EDF blank is equivalent to not enabling the solution for the client. ![Client-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_5.png) |
-| 2b. Approved Local Admins     | ProValDev/New Batman, TiredBatman | Text     | Local Admin Account     | Comma-separated list of the approved local admins for the client. The value stored in this EDF will be added to the approved list along with the value stored in the `Local_Admin_Group_Approved_Members` system property. ![Client-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_6.png) |
+| 2a. Local Admin Cleanup       | Enabled for Servers and Workstations | Check-Box | Local Admin Account     | Enabling this EDF will ensure that only the 'Approved Local Admins' shown below are added to the Local Admins Group. This will also disable the New Local Admin Monitor.  **Available Options:** <ul><li>Not Enabled</li><li>Enabled for Workstations Only</li><li>Enabled for Servers Only</li><li>Enabled for Servers and Workstations</li></ul>  **Default Option:** Not Enabled  Leaving this EDF blank is equivalent to not enabling the solution for the client. ![Client-Level EDF](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_5.png) |
+| 2b. Approved Local Admins     | ProValDev/New Batman, TiredBatman | Text     | Local Admin Account     | Comma-separated list of the approved local admins for the client. The value stored in this EDF will be added to the approved list along with the value stored in the `Local_Admin_Group_Approved_Members` system property. ![Client-Level EDF](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_6.png) |
 
 ## Location-Level EDF
 
 | Name                          | Example | Type      | Section    | Description                                                                                                                                                               |
 |-------------------------------|---------|-----------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Local Admin Group Cleanup Exclusion | 1/0     | Check-Box | Exclusions | Marking this EDF will exclude the location's computers from the local admin group cleanup process. ![Location-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_7.png) |
+| Local Admin Group Cleanup Exclusion | 1/0     | Check-Box | Exclusions | Marking this EDF will exclude the location's computers from the local admin group cleanup process. ![Location-Level EDF](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_7.png) |
 
 ## Computer-Level EDF
 
 | Name                          | Example                         | Type      | Section | Description                                                                                                                                                               |
 |-------------------------------|---------------------------------|-----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Local Admin Group Cleanup Exclusion | 1/0     | Check-Box | Exclusions | Marking this EDF will exclude the computer from the local admin group cleanup process. ![Computer-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_8.png) |
-| Approved Local Admins         | ProValDev/InstantBatman, UnknownBatman | Text      | Default | Comma-separated list of the approved local admins for the computer. The value stored in this EDF will be added to the approved list along with the value stored in the `Local_Admin_Group_Approved_Members` system property and the client-level EDF `2b. Approved Local Admins`. ![Computer-Level EDF](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_9.png) |
+| Local Admin Group Cleanup Exclusion | 1/0     | Check-Box | Exclusions | Marking this EDF will exclude the computer from the local admin group cleanup process. ![Computer-Level EDF](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_8.png) |
+| Approved Local Admins         | ProValDev/InstantBatman, UnknownBatman | Text      | Default | Comma-separated list of the approved local admins for the computer. The value stored in this EDF will be added to the approved list along with the value stored in the `Local_Admin_Group_Approved_Members` system property and the client-level EDF `2b. Approved Local Admins`. ![Computer-Level EDF](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_9.png) |
 
 ## Output
 
@@ -110,8 +110,8 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 `@Scriptoutput@`
 
 **Sample Screenshot:**  
-![Sample Screenshot](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_10.png)  
-![Sample Screenshot](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_11.png)  
+![Sample Screenshot](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_10.png)  
+![Sample Screenshot](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_11.png)  
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](/docs/d49db584-9380-486d-a179-c014352f8be1) monitor set to enable the ticket creation feature of the script.  
-![Ticketing Note](../../../static/img/Local-Admin-Group-Cleanup---AddRemove/image_12.png)
+![Ticketing Note](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_12.png)

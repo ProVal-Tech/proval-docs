@@ -26,4 +26,3 @@ None
 | Total Servers       | The number of servers associated with the client     |
 | Total Workstations   | The number of workstations associated with the client |
 
-

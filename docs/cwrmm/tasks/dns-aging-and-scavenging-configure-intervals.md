@@ -16,7 +16,7 @@ This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSet
 
 ## Sample Run
 
-![Sample Run](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_1.png)
+![Sample Run](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_1.png)
 
 ## Dependencies
 
@@ -34,39 +34,39 @@ This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSet
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_2.png)
+![Task Creation](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_2.png)
 
 **Name:** DNS - Aging and Scavenging - Configure Intervals  \
 **Description:** Enables DNS scavenging and optionally allows you to set the interval for 'scavenging', 'no refresh', and 'refresh'.  \
 **Category:** Custom  \
-![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_3.png)
+![Task Creation](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_3.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_4.png)
+![Add Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_4.png)
 
 This screen will appear.
 
-![Parameter Screen](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_5.png)
+![Parameter Screen](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_5.png)
 
 - Set `ScavengingInterval` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_6.png)
+![Save Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_6.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_7.png)
+![Confirm Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_7.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_8.png)
+![Add Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_8.png)
 
 - Set `NoRefreshInterval` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_9.png)
+![Save Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_9.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
@@ -76,26 +76,26 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_10.png)
+![Confirm Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_10.png)
 
 All the parameters will look like as shown below:  
-![Parameters](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_11.png)
+![Parameters](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_11.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_12.png)
+![Add Row](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_12.png)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_13.png)
+![Blank Function](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_13.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_14.png)
+![PowerShell Script](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_14.png)
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_15.png)
+![Function Popup](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_15.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -164,14 +164,13 @@ Get-Content -Path $LogPath
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_16.png)
+![Script Log](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_16.png)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_17.png)
+![Completed Task](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_17.png)
 
 ## Output
 
 - Script Log
-
 

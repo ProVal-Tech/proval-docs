@@ -59,4 +59,3 @@ Populating script: [EPM - Script - Windows Update History Audit](/docs/d0c435d0-
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
 
 
-

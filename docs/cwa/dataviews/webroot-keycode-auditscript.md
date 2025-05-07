@@ -31,4 +31,3 @@ This dataview shows the Webroot hashed keycode present on the machine, the statu
 | KeyCode Status      | Displays the keycode status, indicating whether it matches the keycode setup under the Webroot plugin. |
 
 
-

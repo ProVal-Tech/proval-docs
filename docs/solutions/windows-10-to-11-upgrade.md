@@ -115,4 +115,3 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - The end goal here is to apply an `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) group.
 
 
-

@@ -18,7 +18,7 @@ This script will gather all users in the database and grant all required permiss
 
 ## Sample Run
 
-![Sample Run](../../../static/img/MySQL---Permission---Set-agentdeploymentreadinesscheck-Table-Permissions/image_1.png)
+![Sample Run](../../../static/img/docs/417bc415-aa42-401f-b748-0f2715e4a239/image_1.png)
 
 The script is converted to a client script and should be scheduled to run every 12-24 hours.
 
@@ -27,6 +27,5 @@ The script is converted to a client script and should be scheduled to run every 
 | Name              | Description                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------|
 | UpdateStatements   | This variable will store the SQL result, which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
-
 
 

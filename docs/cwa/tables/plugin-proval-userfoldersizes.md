@@ -28,4 +28,3 @@ This script depends on **Get User Folder Sizes**.
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
 
-

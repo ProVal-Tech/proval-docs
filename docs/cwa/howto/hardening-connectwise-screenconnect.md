@@ -155,4 +155,3 @@ curl -H 'Host:' https://localhost/aspnet_client --http1.0 -I
 - Ensure you have an SSL Certificate setup. Noting that it does not use IIS or other web services. See [Setting up SSL for ScreenConnect](https://docs.connectwise.com/ConnectWise_Control_Documentation/On-premises/Advanced_setup/SSL_certificate_installation) documentation for how set this up
 
 *Original CW Documentation: [ConnectWise Control Comprehensive Security Best Practice Guide](https://university.connectwise.com/content/UserDocs/Business_Knowledge/ConnectWise_Control_Comprehensive_Security_Best_Practice_Guide.pdf)*
-

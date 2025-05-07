@@ -16,7 +16,7 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Chromium-Caches---Clear/image_1.png)
+![Sample Run](../../../static/img/docs/1edcec5e-4e2d-4edf-b670-1bb81643b4e3/image_1.png)
 
 #### User Parameters
 
@@ -27,6 +27,5 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
-
 
 

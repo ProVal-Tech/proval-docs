@@ -40,4 +40,3 @@ This will fetch any users containing a "Test" or "Pro" string. If the agent is a
 ## Output
 - Script Log
 
-

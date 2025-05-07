@@ -31,4 +31,3 @@ This dataview shows which machines are associated with specific contacts in Auto
 | Shutdown             | Check whether the contact has shutdown permission or not                |
 | Wake On Lan          | Check whether the contact has Wake On Lan permission or not.            |
 
-

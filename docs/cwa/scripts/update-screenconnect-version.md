@@ -49,4 +49,3 @@ If the Screenconnect service fails to start after running the installation:
 
 `The script tried to run the installer but could not find the Screenconnect service on the machine anymore. Run the CW control repair script to resolve the issue.`
 
-

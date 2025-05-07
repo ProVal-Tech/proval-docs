@@ -40,4 +40,3 @@ This document outlines the procedure to disable Windows Update using the Windows
 
 Agent Procedure Log
 
-

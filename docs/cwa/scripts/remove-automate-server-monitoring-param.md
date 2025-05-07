@@ -22,8 +22,8 @@ It is developed as a client script to prevent accidental execution against any m
 
 A client script can either be debugged or executed against any client. The suggested method is to debug the script.
 
-![Image 1](../../../static/img/Remove-Automate-Server-Monitoring-Param/image_1.png)  
-![Image 2](../../../static/img/Remove-Automate-Server-Monitoring-Param/image_2.png)  
+![Image 1](../../../static/img/docs/a43c5b5e-2a85-4090-9bf1-ec4e3ec974bc/image_1.png)  
+![Image 2](../../../static/img/docs/a43c5b5e-2a85-4090-9bf1-ec4e3ec974bc/image_2.png)  
 
 #### User Parameters
 
@@ -38,5 +38,4 @@ A client script can either be debugged or executed against any client. The sugge
 - Remove the contents of [Automate Server Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
 - Remove the ProSyncClient plugin from the environment if the `ProSyncClientToo?` parameter is set to `Yes`; otherwise, exit.
 - Remove itself from the environment if the `ThisScriptAsWell?` parameter is set to `Yes`; otherwise, exit.
-
 

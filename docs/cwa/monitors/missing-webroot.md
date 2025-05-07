@@ -25,4 +25,3 @@ This internal monitor detects all computers whose associated client has the Enab
 - Can target macOS or Windows.
 - Please review the solution document for supported systems.
 
-

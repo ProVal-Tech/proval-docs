@@ -37,4 +37,3 @@ To force update this table:
 
 Windows Machines - This monitor should be run on all Windows machines that patch via CW Automate.
 
-

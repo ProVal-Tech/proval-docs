@@ -19,13 +19,13 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ## Sample Run
 
 **Set Mode:**
-![Set Mode](../../../static/img/Windows---Set-Wallpaper/image_1.png)
+![Set Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_1.png)
 
 **Enforcement Mode:**
-![Enforcement Mode](../../../static/img/Windows---Set-Wallpaper/image_2.png)
+![Enforcement Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_2.png)
 
 **Reset Mode:**
-![Reset Mode](../../../static/img/Windows---Set-Wallpaper/image_3.png)
+![Reset Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_3.png)
 
 ### User Parameters
 
@@ -40,5 +40,4 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ```
 C:/ProgramData/_automation/script/Set-Wallpaper/Set-Wallpaper-log.txt
 ```
-
 

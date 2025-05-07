@@ -32,7 +32,7 @@ Insert the details of the monitor in the table below.
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1      | Run File   | REDACTED      | Regex Match | 3600     | \<Screenshot Below\> |
 
-![Screenshot](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_1.png)
+![Screenshot](../../../static/img/docs/ce8d5706-137b-4a55-8a8b-5041e35421de/image_1.png)
 
 ## Dependencies
 
@@ -42,7 +42,7 @@ Insert the details of the monitor in the table below.
 
 Service Plans. Windows Servers. Server Roles. Windows Servers Core Services. Windows DHCP Servers  
 
-![Target Image](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_2.png)
+![Target Image](../../../static/img/docs/ce8d5706-137b-4a55-8a8b-5041e35421de/image_2.png)
 
 ## Ticketing
 
@@ -79,12 +79,12 @@ Reserved   : 4
 
 The monitor set is available for import in our (ProVal's) Development environment within the `ProVal Submitted - Remote Monitors` Group.  
 
-![Note Image](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_3.png)
+![Note Image](../../../static/img/docs/ce8d5706-137b-4a55-8a8b-5041e35421de/image_3.png)
 
 ## Monitor's Screenshot
 
-![Monitor Screenshot 1](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_4.png)  
-![Monitor Screenshot 2](../../../static/img/DHCP-Scope(s)--25-and-20-IP-Addresses-Available/image_5.png)
+![Monitor Screenshot 1](../../../static/img/docs/ce8d5706-137b-4a55-8a8b-5041e35421de/image_4.png)  
+![Monitor Screenshot 2](../../../static/img/docs/ce8d5706-137b-4a55-8a8b-5041e35421de/image_5.png)
 
 ## How to Import
 

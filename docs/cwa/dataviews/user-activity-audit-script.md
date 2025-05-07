@@ -36,4 +36,3 @@ The DataView shows the login/logout audit of the users.
 | Script Ran Date   | This shows the script's last ran date and time       |
 
 
-

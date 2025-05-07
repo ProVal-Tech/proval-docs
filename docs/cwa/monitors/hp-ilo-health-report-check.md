@@ -35,7 +35,7 @@ The alert template should execute the [CWM - Automate - Script - Ticket Creation
 
 The ticket category for the tickets can be controlled by the monitor set itself.
 
-![Ticket Category Image](../../../static/img/HP-iLO-Health-Report-Check/image_1.png)
+![Ticket Category Image](../../../static/img/docs/9f991e6a-9560-46ee-a9cc-29e401f000e0/image_1.png)
 
 ## Ticketing
 
@@ -57,5 +57,4 @@ See details in the iLO and the iLO Health Report dataview.
 ```
 
 **Note:** The ticket will be generated for the computer whose computer ID is stored in the title of the password entry for the iLO device. If the computer ID is not stored in the iLO password entry, then a client-level ticket will be created instead.
-
 

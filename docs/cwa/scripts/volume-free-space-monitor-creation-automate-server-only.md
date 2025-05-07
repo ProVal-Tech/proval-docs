@@ -18,11 +18,11 @@ This script runs similarly to the [CWM - Automate - Script - Volume Free Space -
 
 User parameters are only left in place in case we ever require them for any servers.
 
-![Sample Run Image 1](../../../static/img/Volume-Free-Space---Monitor-Creation---Automate-Server-Only/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/8b42e4f9-eb46-4058-b4f9-e0f1ea8840cd/image_1.png)
 
 It is preferred to schedule the script against the "Labtech Server" group to run once per day.
 
-![Sample Run Image 2](../../../static/img/Volume-Free-Space---Monitor-Creation---Automate-Server-Only/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/8b42e4f9-eb46-4058-b4f9-e0f1ea8840cd/image_2.png)
 
 ## Dependencies
 
@@ -38,5 +38,4 @@ Referred to: [CWM - Automate - Script - Volume Free Space - Monitor Creation](/d
 
 - Script log
 - Remote Monitor
-
 

@@ -14,7 +14,7 @@ unlisted: false
 
 This remote monitor attempts to set `PSGallery` as a trusted PowerShell repository if it is not already configured. You might have encountered this error at least once; this remote monitor attempts to resolve it.
 
-![Image](../../../static/img/Set-PsRepository-PSGallery-Change/image_1.png)
+![Image](../../../static/img/docs/5e33196d-a1ce-4a8d-bc78-825c45ce8329/image_1.png)
 
 This monitor will make changes to all systems it is deployed to.  
 ![Police Car Light](https://c.tenor.com/8vSJsVW-1pQAAAAj/police-car-light-joypixels.gif)

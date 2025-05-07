@@ -18,7 +18,7 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 ## Sample Run
 
-![Sample Run](../../../static/img/CW-Control---Uninstall-and-Remove-from-Control-Web-Portal/image_1.png)
+![Sample Run](../../../static/img/docs/d69c20e1-e605-4cf9-bf35-bbe4c74f134f/image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,4 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 - Script log
 - Ticket if failure found
-
 

@@ -18,7 +18,7 @@ This script will download a file from the target FTP server.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/FTP---Download-File/image_1.png)
+![Sample Run](../../../static/img/docs/264d107c-e4be-4915-8df1-7be61f8e6f07/image_1.png)
 
 ## Variables
 
@@ -45,5 +45,4 @@ This script will download a file from the target FTP server.
 ## Output
 
 - Script log
-
 

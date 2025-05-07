@@ -24,4 +24,3 @@ This script is a function script called from [Patch Accounting](/docs/53163c7a-3
 |---------------------------|-------|
 | _sysPatchAcctTimeToBill   | 1     |
 
-

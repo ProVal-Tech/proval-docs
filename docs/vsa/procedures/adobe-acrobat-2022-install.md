@@ -16,7 +16,7 @@ Installs Adobe Acrobat 2022
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Adobe-Acrobat-2022-Install/image_1.png)
+![Sample Run](../../../static/img/docs/7d2e9576-a6f6-4f3c-9db5-21d6af89adf4/image_1.png)
 
 ## Dependencies
 
@@ -32,5 +32,4 @@ Downloads the installer from the vendor, performs a quiet no-restart installatio
 ## Output
 
 None
-
 

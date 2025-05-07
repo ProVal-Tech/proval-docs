@@ -66,4 +66,3 @@ The procedure utilizes WinSAT and custom fields to store the scores of the machi
 
 Agent Procedure Log
 
-

@@ -14,4 +14,3 @@ unlisted: false
 
 Checks Security Events for Admin Memberships
 
-

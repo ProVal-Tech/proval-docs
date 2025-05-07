@@ -50,4 +50,3 @@ This returns a system object of all Azure Active Directory groups and all member
 Group     /      Members
 ```
 
-

@@ -33,4 +33,3 @@ None
 | ApprovalSetting | Approved, Denied, Ignored, or Not Set                     |
 | Impact          | Number of policies where this patch is being applied      |
 
-

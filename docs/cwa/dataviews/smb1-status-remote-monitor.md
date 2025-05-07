@@ -40,4 +40,3 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 - Apply and import the remote monitors to the Managed Service Plan groups' Windows machines.
 - Import the dataview.
 
-

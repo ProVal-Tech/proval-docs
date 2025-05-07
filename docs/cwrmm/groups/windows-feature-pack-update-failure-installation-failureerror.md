@@ -19,20 +19,19 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 
 ## Criteria
 1. Select `OS Build Number` for the criteria, set the comparator to `Does Not Contain any`, and type `19045` and `22631` in the condition box.  
-   ![Image 1](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_1.png)  
-   ![Image 2](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_2.png)  
-   ![Image 3](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_3.png)  
-   ![Image 4](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_4.png)
+   ![Image 1](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_1.png)  
+   ![Image 2](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_2.png)  
+   ![Image 3](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_3.png)  
+   ![Image 4](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_4.png)
 
 2. Click the `Add Criteria` button to add another criterion.  
-   ![Image 5](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_5.png)
+   ![Image 5](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_5.png)
 
 3. Select the `Feature Update Install Failure` custom field for criteria, set the comparator to `Equal`, and type `Installation Failure/Error` in the condition box.
 
 ## Group
 Click the `Save` button to save the group.  
-![Image 6](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_6.png)  
-![Image 7](../../../static/img/Windows-Feature-Pack-Update-Failure-Installation-FailureError/image_7.png)
-
+![Image 6](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_6.png)  
+![Image 7](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_7.png)
 
 

@@ -22,4 +22,3 @@ This solution provides a way to compare ConnectWise Automate online devices with
 | [EPM - Data Collection - Custom Table - plugin_proval_control_session_status](/docs/d468b194-6df4-46b0-8dbc-657b623209ff) | Custom Table  | Holds values from Get - CW-Control - Online Status        |
 | [EPM - Data Collection - Dataview - Agent online status check CWC to CWA](/docs/36dec374-8bc6-4fda-a273-4e4a1af2f6f7) | Dataview      | Displays the data from the custom table compared to the state in Automate. |
 
-

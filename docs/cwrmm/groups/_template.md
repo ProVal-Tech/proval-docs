@@ -21,15 +21,15 @@ unlisted: false
 ### Step 1
 
 Navigate to `ENDPOINTS` ➞ `Groups`  
-![Step1](../../../static/img/cw-rmm-groups-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step1.png)
 
 ### Step 2
 
 Create a new dynamic group by clicking the `Dynamic Group` button.  
-![Step2](../../../static/img/cw-rmm-groups-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step2.png)
 
 This page will appear after clicking on the `Dynamic Group` button:  
-![Step3](../../../static/img/cw-rmm-groups-common-screenshots/step3.png)
+![Step3](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step3.png)
 
 ### Step 3
 
@@ -41,9 +41,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 ### Step 4
 
 Click the `+ Add Criteria` in the `Criteria` section of the group.  
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 This search box will appear:  
-![Step5](../../../static/img/cw-rmm-groups-common-screenshots/step5.png)
+![Step5](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step5.png)
 
 ## Completed Group

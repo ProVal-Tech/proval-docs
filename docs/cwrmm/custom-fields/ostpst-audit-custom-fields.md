@@ -23,6 +23,6 @@ This document provides detailed information about the custom fields associated w
 
 
 ## Screenshots
-![Outlook Data File Paths](<../../../static/img/CWRMM-OSTPST--Audit/image1.png>)
-![Outlook Data File Size](<../../../static/img/CWRMM-OSTPST--Audit/image2.png>)
-![Outlook Data File LWT](<../../../static/img/CWRMM-OSTPST--Audit/image3.png>)
+![Outlook Data File Paths](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image1.png>)
+![Outlook Data File Size](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image2.png>)
+![Outlook Data File LWT](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image3.png>)

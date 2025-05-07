@@ -24,16 +24,15 @@ This group contains only the Windows 10 and Windows 11 agents.
 
 1. **Create Dynamic Groups:**
 
-   ![Dynamic Groups](../../../static/img/BitLocker-Initialize/image_1.png)
+   ![Dynamic Groups](../../../static/img/docs/e52d302e-56a7-4438-8c4d-e53e5a16f751/image_1.png)
 
 2. **Windows 10/11**
 
-   ![Windows 10/11](../../../static/img/BitLocker-Initialize/image_2.png)
+   ![Windows 10/11](../../../static/img/docs/e52d302e-56a7-4438-8c4d-e53e5a16f751/image_2.png)
 
    **Criteria:**
 
    - OS contains any of Windows 10 or Windows 11  
    
-     ![Criteria](../../../static/img/BitLocker-Initialize/image_3.png)
-
+     ![Criteria](../../../static/img/docs/e52d302e-56a7-4438-8c4d-e53e5a16f751/image_3.png)
 

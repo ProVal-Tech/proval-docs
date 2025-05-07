@@ -20,7 +20,7 @@ This document describes how to download and install the ShadowControl client on 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/ShadowControl-Subscribe/image_1.png)
+![Sample Run](../../../static/img/docs/6427c251-f3e5-422a-9d40-7b6254d7d8ae/image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,4 @@ The script will run a command-line argument against the `stccmd` application on 
 ## Output
 
 Script log messages only.
-
 

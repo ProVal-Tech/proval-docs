@@ -36,4 +36,3 @@ Location of output for log, result, and error files.
 .\Invoke-UninstallHideUpdate-error.txt
 ```
 
-

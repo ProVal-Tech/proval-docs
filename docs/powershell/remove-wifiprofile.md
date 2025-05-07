@@ -33,4 +33,3 @@ Removes the Wi-Fi profile named 'MyWifi' from the system.
 - .\Remove-WifiProfile-log.txt
 - .\Remove-WifiProfile-error.txt
 
-

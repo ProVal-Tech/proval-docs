@@ -51,4 +51,3 @@ Modified by: [EPM - Data Collection - Script - Get-CrashDump](/docs/dde000a0-373
 | Computer_Name         | VARCHAR | The computer name; sometimes not shown.       |
 | Processors_count      | INT     | The number of processors.                      |
 
-

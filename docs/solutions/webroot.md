@@ -58,11 +58,11 @@ This solution will handle multiple items related to Webroot Software and Connect
 ### Configuring a Webroot Client
 
 1. Open the Webroot SecureAnywhere with Unity plugin.  
-   ![Webroot Plugin](../../static/img/Webroot/image_1.png)
+   ![Webroot Plugin](../../static/img/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5/image_1.png)
 
 2. Right-click the client to configure and assign the associated Webroot site.  
-   ![Webroot Client Configuration](../../static/img/Webroot/image_2.png)  
-   ![Webroot Client Configuration](../../static/img/Webroot/image_3.png)
+   ![Webroot Client Configuration](../../static/img/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5/image_2.png)  
+   ![Webroot Client Configuration](../../static/img/docs/70bf86a4-3ddf-46b1-947d-e2dc580209a5/image_3.png)
 
 #### Implementation Setup
 
@@ -93,5 +93,4 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 #### Implementation Setup
 
 Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060) and run it.
-
 

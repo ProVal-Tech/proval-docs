@@ -60,4 +60,3 @@ Displays the current and ProVal recommended INI settings for CWA.
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
 
-

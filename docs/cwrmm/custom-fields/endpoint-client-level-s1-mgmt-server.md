@@ -26,8 +26,7 @@ Client Level SentinelOne Management Server. Updated by [SentinelOne Management C
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_1.png)
+![Screenshot 1](../../../static/img/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8/image_1.png)
 
-![Screenshot 2](../../../static/img/Endpoint---Client-Level-S1-Mgmt-Server/image_2.png)
-
+![Screenshot 2](../../../static/img/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8/image_2.png)
 

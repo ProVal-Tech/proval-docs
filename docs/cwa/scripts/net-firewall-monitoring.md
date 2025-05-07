@@ -18,19 +18,19 @@ This document outlines the implementation and removal of the entire Network Fire
 
 ## Install the Solution
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_1.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_1.png)
 
 Leaving the Action blank or entering anything other than "uninstall" will install the solution based on the following condition:
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_2.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_2.png)
 
 ## Remove the Solution
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_3.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_3.png)
 
 Setting Action to "Uninstall" will remove the solution based on the following condition:
 
-![Image](https://proval.itglue.com/../../../static/img/Net-Firewall-Monitoring/image_2.png)
+![Image](https://proval.itglue.com/../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_2.png)
 
 # Technician Required Steps
 
@@ -58,69 +58,69 @@ Setting Action to "Uninstall" will remove the solution based on the following co
 
 - Client Level, under Security Compliance
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_4.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_4.png)
 
 - Computer Level Exclusion under Security Compliance
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_5.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_5.png)
 
 ## Creates the Searches
 
 - Windows Firewall Enabled
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_6.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_6.png)
 
 - Windows Firewall Monitoring Enabled - Servers
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_7.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_7.png)
 
 - Windows Firewall Monitoring Enabled - Workstations
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_8.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_8.png)
 
 ## Creates the Groups
 
 - △ System Monitoring
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_9.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_9.png)
 
 - △ Windows Firewall
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_10.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_10.png)
 
 ## Creates and Links the Remote Monitors
 
 - △ Disabled Net Firewall Profile
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_11.png)
-![Image](../../../static/img/Net-Firewall-Monitoring/image_12.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_11.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_12.png)
 
 - △ Enable Net Firewall Profile Failed
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_13.png)
-![Image](../../../static/img/Net-Firewall-Monitoring/image_14.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_13.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_14.png)
 
 # Process (Removal)
 
 ## Remove the Remote Monitors
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_15.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_15.png)
 
 ## Remove the Groups
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_16.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_16.png)
 
 ## Remove the Searches
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_17.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_17.png)
 
 ## Remove Any Filled-in Extra Data Field Data
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_18.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_18.png)
 
 ## Remove the EDFs
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_19.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_19.png)
 
 # Explanation of Solution
 
@@ -134,7 +134,7 @@ Ticketing is formatted and should not autoclose, but every 10 days (a limitation
 
 ## △ Enable Net Firewall Profile Failed
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_20.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_20.png)
 
 1. This line shows the actionable item that needs to be addressed.
 2. This reflects the monitor that triggered this ticket.
@@ -144,12 +144,11 @@ Ticketing is formatted and should not autoclose, but every 10 days (a limitation
 
 ## △ Disabled Net Firewall Profile
 
-![Image](../../../static/img/Net-Firewall-Monitoring/image_21.png)
+![Image](../../../static/img/docs/f2fbf2cf-e131-46c6-88ae-0e18ee587dc8/image_21.png)
 
 1. This line shows the actionable item that needs to be addressed. (This monitor, for some reason, is including a :1737 in the return; I believe this has something to do with a potential array being passed back in automation, and it is formatting as a new line.)
 2. This reflects the monitor that triggered this ticket.
 3. This reflects the status of that monitor on the target.
 4. This reflects the target of the monitor.
 5. This is the returned data from the target when running the monitor. This will tell you why the target failed; in this case, it is showing that the monitor failed because the public net firewall is disabled.
-
 

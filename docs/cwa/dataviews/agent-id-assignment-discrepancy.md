@@ -36,4 +36,3 @@ This dataview will show information on any agent that has changed its name five 
 | Last User                 | Last logged-in user                                  |
 
 
-

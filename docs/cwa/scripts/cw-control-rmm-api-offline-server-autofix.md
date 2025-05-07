@@ -46,14 +46,13 @@ This script is dependent on the following items:
 
 The script is designed to consistently update the ticket with new information as it performs troubleshooting. Below are a few examples of ticket data being added during the troubleshooting process.
 
-![Image 1](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_1.png)
+![Image 1](../../../static/img/docs/0004bd17-6820-4def-b5bf-96686276b7ae/image_1.png)
 
-![Image 2](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_2.png)
+![Image 2](../../../static/img/docs/0004bd17-6820-4def-b5bf-96686276b7ae/image_2.png)
 
-![Image 3](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_3.png)
+![Image 3](../../../static/img/docs/0004bd17-6820-4def-b5bf-96686276b7ae/image_3.png)
 
-![Image 4](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_4.png)
+![Image 4](../../../static/img/docs/0004bd17-6820-4def-b5bf-96686276b7ae/image_4.png)
 
-![Image 5](../../../static/img/CW-Control-RMM+-API---Offline-Server-AutoFix/image_5.png)
-
+![Image 5](../../../static/img/docs/0004bd17-6820-4def-b5bf-96686276b7ae/image_5.png)
 

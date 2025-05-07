@@ -50,4 +50,3 @@ Location of output for log, result, and error files:
 - `Remove-BitdefenderEndpointSecurity-log.txt`
 - `Remove-BitdefenderEndpointSecurity-Error.txt`
 
-

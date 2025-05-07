@@ -28,4 +28,3 @@ Windows machines, excluding domain controller servers.
 
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script.
 
-

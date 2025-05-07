@@ -41,4 +41,3 @@ This dataview displays all users associated with a domain and general informatio
 | Account Expiration                | Indicates whether the account is set to expire in Active Directory                                                                                   |
 
 
-

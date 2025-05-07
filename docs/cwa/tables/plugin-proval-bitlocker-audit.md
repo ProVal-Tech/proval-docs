@@ -45,4 +45,3 @@ Stores information about BitLocker configuration on target machines.
 | Thumbprint                | VARCHAR   | The thumbprint of the key protector (if applicable).                                                                         |
 | LastUpdated               | DATETIME  | The last time the volume was audited.                                                                                         |
 
-

@@ -20,7 +20,7 @@ This script looks for user profile information at the machine level. It provides
 
 ## Sample Run
 
-![Sample Run](../../../static/img/User-Management---Profile-Audit/image_1.png)
+![Sample Run](../../../static/img/docs/6eace5fa-3c7d-45ae-a52c-66aa854ddde7/image_1.png)
 
 ## Dependencies
 
@@ -47,5 +47,4 @@ This script looks for user profile information at the machine level. It provides
 - Script log
 - [custom_proval_computer_accounts](/docs/2d9698ff-636d-4d56-b5d0-4ca308a6b5e5)
 - @Windows – Local Account Audit (Dataview)
-
 

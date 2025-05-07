@@ -38,4 +38,3 @@ Stores information about DHCP scopes on the target machine gathered by the scrip
 | ReservedIPCount    | INT     | The number of reserved IP addresses in the DHCP scope.  |
 | PercentUsed       | INT     | The percentage of used IP addresses in the DHCP scope.  |
 
-

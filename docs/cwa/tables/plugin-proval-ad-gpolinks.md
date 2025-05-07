@@ -30,4 +30,3 @@ This document displays detailed information about the GPO links per GPO from the
 | Enforced      | VARCHAR | True or False depending on whether the link is being enforced.   |
 | LinkEnabled   | VARCHAR | True or False depending on whether the link is enabled.          |
 
-

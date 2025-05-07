@@ -16,7 +16,7 @@ Install the latest Feature Update to Windows 10 with optional popup messages, di
 
 ## Sample Run
 
-![Sample Run](../../../static/img/-Windows-10---Feature-Update---Install-Latest/image_1.png)
+![Sample Run](../../../static/img/docs/5a4a9091-269e-4921-a7ba-bc87c209a43c/image_1.png)
 
 ## Running As An Autofix
 
@@ -86,9 +86,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/-Windows-10---Feature-Update---Install-Latest/image_2.png)
+![Screenshot 1](../../../static/img/docs/5a4a9091-269e-4921-a7ba-bc87c209a43c/image_2.png)
 
-![Screenshot 2](../../../static/img/-Windows-10---Feature-Update---Install-Latest/image_3.png)
+![Screenshot 2](../../../static/img/docs/5a4a9091-269e-4921-a7ba-bc87c209a43c/image_3.png)
 
 ## Process
 
@@ -114,5 +114,4 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 

@@ -27,15 +27,15 @@ This document implements group policies to redirect Windows known folders (Deskt
 Export the procedure from ProVal's VSA instance.  
 **Name:** Microsoft OneDrive - (Group Policies/Redirect Folder)  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_1.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_1.png)  
 
 The export will download the necessary XML file.  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_2.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_2.png)  
 
 Import this procedure into the partner's VSA instance.  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_3.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_3.png)  
 
 Ensure the [Managed Variable - M365TenantId](/docs/b3141fc4-14f1-41a7-ba67-61b3a4e29fd5) is created prior to usage if folder redirection is desired.
 
@@ -45,7 +45,7 @@ ProVal Plug & Play: The agent procedure requires no configuration, but the optio
 
 Ensure the managed variable exists prior to usage.  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_4.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_4.png)  
 
 | Name                              | Possible Values | Procedure Default | Description                                                                                     |
 |-----------------------------------|------------------|-------------------|-------------------------------------------------------------------------------------------------|
@@ -66,11 +66,10 @@ Ensure the managed variable exists prior to usage.
 
 A status of Success is expected.  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_5.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_5.png)  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_6.png)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_6.png)  
 
-![Image](../../../static/img/Microsoft-OneDrive---(Group-PoliciesRedirect-Folder)/image_7.png)  
-
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_7.png)  
 
 

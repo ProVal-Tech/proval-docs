@@ -23,7 +23,7 @@ This script can be used to uninstall the Huntress Agent from both Windows and Ma
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Uninstall-Huntress-Agent-Windows,-Mac/image_1.png)
+![Sample Run](../../../static/img/docs/12c94448-10eb-4523-85e6-6c4cde84a33c/image_1.png)
 
 ## Dependencies
 
@@ -40,5 +40,4 @@ This script can be used to uninstall the Huntress Agent from both Windows and Ma
 ## Output
 
 - Script log
-
 

@@ -20,7 +20,7 @@ If the above conditions are not met, then the script will report Point And Print
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Point-and-Print-Nightmare-Check/image_1.png)
+![Sample Run](../../../static/img/docs/d65da81c-76ee-429a-a007-9ef788f2ee51/image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,4 @@ If the above conditions are not met, then the script will report Point And Print
 - Script log
 - Script state
 - Dataview
-
 

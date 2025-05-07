@@ -28,4 +28,3 @@ Many MSPs set up OpenDNS on the LAN, so all workstations connected via Ethernet 
 | Wireless Card    | Displays whether the machine has a wireless card installed or not |
 | Umbrella Agent  | Displays whether the machine has an Umbrella agent installed |
 
-

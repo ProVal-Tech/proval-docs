@@ -33,4 +33,3 @@ If the script has not been run previously, the admin data is saved to the table,
 - Get-NewDomainAdmin_log
 - Get-NewDomainAdmin_admins
 
-

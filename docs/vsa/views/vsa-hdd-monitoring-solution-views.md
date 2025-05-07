@@ -25,4 +25,3 @@ The table below lists all filters applied to this view:
 | xPVAL Monitoring Managed                                   | Y                | *Managed*                                                                                       |
 | xPVAL Exclude from Monitoring                              | Y                | NOT *1* AND NOT *yes*                                                                           |
 
-

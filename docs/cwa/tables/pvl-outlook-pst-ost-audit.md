@@ -30,4 +30,3 @@ The custom table stores the data gathered by the [EPM - Data Collection - Script
 | ModificationTime    | DateTime | Most recent modification time of the file   |
 | DataCollectionTime  | DateTime | Data Collection Time                        |
 
-

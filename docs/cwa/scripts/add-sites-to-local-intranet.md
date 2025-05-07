@@ -14,33 +14,33 @@ unlisted: false
 
 The script functions by adding the site(s) specified in the `Sites` parameter to the local intranet zone on the Windows computer.
 
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_1.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_1.png)
 
 ## Sample Run
 
 **Input:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_2.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_2.png)
 
 **Result:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_3.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_3.png)
 
 **Input:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_4.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_4.png)
 
 **Result:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_5.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_5.png)
 
 **Input:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_6.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_6.png)
 
 **Result:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_7.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_7.png)
 
 **Input:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_8.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_8.png)
 
 **Result:**  
-![Image](../../../static/img/Add-Sites-to-Local-Intranet/image_9.png)
+![Image](../../../static/img/docs/df72be26-16b1-452a-b4e7-67e1bf48a86b/image_9.png)
 
 ## Variables
 
@@ -60,5 +60,4 @@ The script functions by adding the site(s) specified in the `Sites` parameter to
 ## Output
 
 - Script Log
-
 

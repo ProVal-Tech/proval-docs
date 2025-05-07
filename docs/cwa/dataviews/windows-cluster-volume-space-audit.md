@@ -35,4 +35,3 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
 | Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
 
-

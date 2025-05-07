@@ -37,4 +37,3 @@ A thorough examination of Windows 10 computers and their patching status for eac
 | # Failed Patches Windows 10        | Total number of failed patches for Windows 10 computers.                                        |
 | Windows 10 Patch Compliance         | Average patch compliance for all Windows 10 computers.                                          |
 
-

@@ -25,4 +25,3 @@ This document lists all Firefox extensions installed on the endpoint.
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |
 
-

@@ -32,7 +32,7 @@ Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941
 
 ## Sample Run
 
-![Sample Run](../../../static/img/ScreenConnect-Client---Connectivity---Audit/image_1.png)
+![Sample Run](../../../static/img/docs/18562eaa-d162-4362-98d3-4bbaa2922458/image_1.png)
 
 ## Dependencies
 
@@ -58,5 +58,4 @@ Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941
 - Script log
 - Script state
 - Email
-
 

@@ -37,4 +37,3 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
 
-

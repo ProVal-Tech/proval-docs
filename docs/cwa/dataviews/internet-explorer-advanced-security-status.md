@@ -31,4 +31,3 @@ This data view reflects the audit script, showing which versions of TLS and SSL 
 | Contact Email               | Computer's assigned Contact Email (if any)       |
 | IE Advanced Security Status  | Lists which versions of TLS and SSL are enabled   |
 
-

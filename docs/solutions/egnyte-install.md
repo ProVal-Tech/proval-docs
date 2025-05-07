@@ -26,4 +26,3 @@ This solution installs Egnyte on an endpoint. It will update a custom field if a
 Ensure the custom field is added prior to running the agent procedure. Additionally, ensure the installer is added to managed files.
 
 
-

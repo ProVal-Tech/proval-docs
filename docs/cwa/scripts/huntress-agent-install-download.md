@@ -18,7 +18,7 @@ The script downloads and installs the Huntress Agent silently on the Windows mac
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Huntress-Agent-Install---Download/image_1.png)
+![Sample Run](../../../static/img/docs/da4215c4-8b16-4749-bdf8-61b6dfd393c1/image_1.png)
 
 ## Variables
 
@@ -37,5 +37,4 @@ The script downloads and installs the Huntress Agent silently on the Windows mac
 ## Output
 
 - Script log
-
 

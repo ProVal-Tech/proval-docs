@@ -16,7 +16,7 @@ This document outlines the implementation of the [SWM - Software Installation - 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Winget---InstallUpdate---Teams/image_1.png)
+![Sample Run](../../../static/img/docs/d5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc/image_1_1.png)
 
 #### Global Parameters
 
@@ -29,7 +29,6 @@ This document outlines the implementation of the [SWM - Software Installation - 
 ## Output
 
 - Script Logs
-
 
 
 

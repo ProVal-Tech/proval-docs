@@ -20,7 +20,7 @@ Disk cleanup will only run against Windows machines. When executed as an auto-fi
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Disk-Space-Monitoring-Process/image_1.png)
+![Sample Run](../../../static/img/docs/1e7f2148-6bd5-41ce-a397-9c41054487cf/image_1.png)
 
 ## Dependencies
 
@@ -61,5 +61,4 @@ The following steps are performed:
 
 - Script Log
 - Ticket
-
 

@@ -54,4 +54,3 @@ The view is designed to store and execute the SQL query utilized by the 'Patchin
 | Compliant Clients - CU %                 | Percentage of compliant clients based on `CU Score %`. (`Compliant Clients - CU` divided by `Total Eligible Clients - CU` multiplied by `100`)                                                                          |
 
 
-

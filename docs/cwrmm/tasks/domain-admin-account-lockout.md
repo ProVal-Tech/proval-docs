@@ -15,7 +15,7 @@ This task is configured to run as an autofix with [CWRMM - Monitor - Domain Admi
 
 ## Sample Run
 It has to be executed as an autofix with [CWRMM - Monitor - Domain Admin Account Lockout](/docs/23e2c753-e68a-4bcc-83df-1f62826025a5) monitor.
-![Sample Run](../../../static/img/cwrmm-task-domain-admin-account-lockout/image10.png)
+![Sample Run](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image10.png)
 
 ## Dependencies
 [CWRMM - Monitor - Domain Admin Account Lockout](/docs/23e2c753-e68a-4bcc-83df-1f62826025a5)
@@ -25,15 +25,15 @@ It has to be executed as an autofix with [CWRMM - Monitor - Domain Admin Account
 #### Step 1
 
 Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/cw-rmm-tasks-common-screenshots/step1.png)
+![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.png)
 
 #### Step 2
 
 Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/cw-rmm-tasks-common-screenshots/step2.png)
+![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.png)
 
 The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/cw-rmm-tasks-common-screenshots/step3.png)
+![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.png)
 
 #### Step 3
 
@@ -43,35 +43,35 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 - **Description:** `This task is configured to run as an autofix with "Domain Admin Account LockOut" monitor to generate tickets.`  
 - **Category:** `Custom`
 
-  ![step3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image1.png)
+  ![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image1.png)
 
 
 ### Script Editor
 
 Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.png)
 
 A blank function will appear:  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.png)
 
 #### Row 1 Function: `Set Pre-defined Variable`
 Search and select the Set Pre-defined Variable function.
-![Row1](../../../static/img/cwrmm-task-domain-admin-account-lockout/image2.png)
+![Row1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image2.png)
 
 The following function will pop up on the screen:
-![Row1](../../../static/img/cwrmm-task-domain-admin-account-lockout/image3.png)
+![Row1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image3.png)
 
 - Set `ComputerName` in the Variable Name field.
 - Search and select `friendlyName` from the System Variable dropdown.
 - Click the Save button.
-![Row1](../../../static/img/cwrmm-task-domain-admin-account-lockout/image4.png)
+![Row1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image4.png)
 
 #### Row 2 Function: `Powershell Script`  
 
 - Add a new row by clicking the Add Row button.  
 - Search and select the PowerShell Script function.  
 - The following function will pop up on the screen: 
-![Row2](../../../static/img/cwrmm-task-domain-admin-account-lockout/image5.png)
+![Row2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image5.png)
 
 Paste in the following PowerShell script and set the Expected time of script execution in seconds to 900 seconds. Click the Save button.
 
@@ -94,11 +94,11 @@ Domain = $domain}} | Format-List}
 
 #### Row 3 Logic: `If/Then`
 Add a new If/Then logic from the Add Logic dropdown menu.  
-![Row3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image6.png)
+![Row3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image6.png)
 
 #### Row 3a Condition: Output Contains
 Type `Username` in the Value box.
-![Row3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image7.png)
+![Row3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image7.png)
 
 #### Row 3b Function: Create Ticket
 - Add a new row in the `if/then` section by clicking the Add Row button.    
@@ -108,16 +108,16 @@ Type `Username` in the Value box.
 - Description : `Domain Admin Locked Account Detected on @ComputerName@. Refer to the below detail:
 %Output%.`  
 Priority : `Medium` 
-![Row3](../../../static/img/cwrmm-task-domain-admin-account-lockout/image8.png)
+![Row3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image8.png)
 
 ## Save Task
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/cw-rmm-tasks-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.png)
 
 ## Completed Task
 
-![CompletedTask](../../../static/img/cwrmm-task-domain-admin-account-lockout/image9.png)
+![CompletedTask](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/image9.png)
 
 ## Deployment
 It has to be executed as an autofix with [CWRMM - Monitor - Domain Admin Account Lockout](/docs/23e2c753-e68a-4bcc-83df-1f62826025a5) monitor.

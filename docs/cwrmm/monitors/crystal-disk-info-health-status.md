@@ -17,43 +17,42 @@ The monitor set will generate an alert for computers in which the custom field [
 ## Monitor
 
 1. Go to **Alert Management > Monitors**.  
-   ![Step 1](../../../static/img/Crystal-Disk-Info-Health-Status/image_1.png)
+   ![Step 1](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_1.png)
 
 2. Click the **Add Monitor** button.  
-   ![Step 2](../../../static/img/Crystal-Disk-Info-Health-Status/image_2.png)
+   ![Step 2](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_2.png)
 
 3. This screen will appear.  
-   ![Step 3](../../../static/img/Crystal-Disk-Info-Health-Status/image_3.png)
+   ![Step 3](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_3.png)
 
 4. Fill in the Name and Description boxes.  
    **Name:** Crystal Disk Info Health Status  
    **Description:** This monitor set will generate an alert for computers in which the custom field `Crystal Disk Info_Disk Health` contains either 'Bad' or 'Caution'. Furthermore, it will automatically resolve the associated ticket if neither 'Bad' nor 'Caution' is present in the aforementioned custom field.  
-   ![Step 4](../../../static/img/Crystal-Disk-Info-Health-Status/image_4.png)
+   ![Step 4](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_4.png)
 
 5. Select the **Custom Field** in the Type dropdown.  
-   ![Step 5](../../../static/img/Crystal-Disk-Info-Health-Status/image_5.png)
+   ![Step 5](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_5.png)
 
 6. Select the **Text Box** from the **Custom Field Type** dropdown and **Crystal Disk Info_Disk Health** from the **Custom Field Name** dropdown for both **Conditions** and **Ticket Resolution** sections.  
-   ![Step 6](../../../static/img/Crystal-Disk-Info-Health-Status/image_6.png)
+   ![Step 6](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_6.png)
 
 7. Leave the **Conditions** section condition as `Contains` and select `Does not contain` condition for the **Ticket Resolution** section. Select `OR` for the operator in the **Conditions** section and `AND` as the operator in the **Ticket Resolution** section. For the **value field**, type `Bad`, then press Enter, and type `Caution`, pressing Enter for both sections.  
-   ![Step 7](../../../static/img/Crystal-Disk-Info-Health-Status/image_7.png)
+   ![Step 7](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_7.png)
 
 8. Select the Resources/Clients to apply the monitor set against.  
-   ![Step 8](../../../static/img/Crystal-Disk-Info-Health-Status/image_8.png)
+   ![Step 8](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_8.png)
 
 9. Select **Hardware** for the **Family** and **Critical Impact Alerts** or any relevant option for the **Severity**.  
-   ![Step 9](../../../static/img/Crystal-Disk-Info-Health-Status/image_9.png)
+   ![Step 9](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_9.png)
 
 10. This is how the monitor set should look before saving it.  
-    ![Step 10](../../../static/img/Crystal-Disk-Info-Health-Status/image_10.png)
+    ![Step 10](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_10.png)
 
 11. Click the **Save** button to save the monitor set.  
-    ![Step 11](../../../static/img/Crystal-Disk-Info-Health-Status/image_11.png)
+    ![Step 11](../../../static/img/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59/image_11.png)
 
 ## Dependencies
 
 - [CW RMM - Custom Field - Crystal Disk Info_Disk Health](/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01)  
 - [CW RMM - Task - Get Crystal Disk Info (Disk Health)](/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b)
-
 

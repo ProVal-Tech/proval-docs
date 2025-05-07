@@ -18,7 +18,7 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Monitor-Override---Change/image_1.png)
+![Sample Run](../../../static/img/docs/ddad0c3b-65e2-436a-bdba-54f696ac5bbb/image_1.png)
 
 #### User Parameters
 
@@ -31,5 +31,4 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 - Takes input of the Monitor Name and the Alert Template from the user.
 - Executes SQL queries to set the override and the alert template.
-
 

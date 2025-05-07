@@ -41,4 +41,3 @@ This command will return the current `$Env:Path` state for the user after adding
 
 Standard Output
 
-

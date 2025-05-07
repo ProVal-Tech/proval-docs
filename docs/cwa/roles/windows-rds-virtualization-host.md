@@ -20,4 +20,3 @@ This document outlines how to detect the agents on which the Remote Desktop Virt
 |------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell "(Get-WindowsFeature RDS-Virtualization).Installed"@%}` | Equals     | True   | Windows        |
 
-

@@ -27,7 +27,7 @@ The generated remote monitor `ProVal - Production - New Domain Admin` will use t
 
 The solution's Extra Data Fields have been renamed. Update the script from the `Prosync` plugin and run/debug against any client with `Set_Environment` as `1` to implement the changes.
 
-![Update Notice](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
+![Update Notice](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_1.png)
 
 ## Implementation
 
@@ -39,13 +39,13 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
        ```
 
    - Open the `Server Status` tool by navigating to `Help` > `Server Status`.
-   ![Server Status](../../../static/img/New-Domain-Admin-Monitor---Create/image_2.png)
+   ![Server Status](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_2.png)
 
    - Click the `Do Group Refresh` button to refresh and apply the changes made.
-   ![Do Group Refresh](../../../static/img/New-Domain-Admin-Monitor---Create/image_3.png)
+   ![Do Group Refresh](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_3.png)
 
    - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.
-   ![OK Popup](../../../static/img/New-Domain-Admin-Monitor---Create/image_4.png)
+   ![OK Popup](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_4.png)
 
 2. Import the `△ Custom - Ticket Creation - Computer - Failures Only` alert template from the `ProSync` plugin if it's missing in the environment.
 
@@ -53,9 +53,9 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 4. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
-   ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_5.png)  
+   ![Run Debug Script](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_5.png)  
 
-     ![Run Debug Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_1.png)
+     ![Run Debug Script](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_1.png)
 
 5. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.
@@ -63,12 +63,12 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 6. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard -> Config -> Configurations -> Properties**.
    - Find the properties beginning with `NDA_Monitoring`.
-   ![System Properties](../../../static/img/New-Domain-Admin-Monitor---Create/image_7.png)
+   ![System Properties](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_7.png)
      - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 7. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.
-   ![Schedule Script](../../../static/img/New-Domain-Admin-Monitor---Create/image_8.png)
+   ![Schedule Script](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_8.png)
 
 ## Dependencies
 
@@ -84,33 +84,33 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 | Name                          | Example | Required | Description                                                                                                                                                                                                                                      |
 |-------------------------------|---------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NDA_Monitoring_Enable         | 1       | True     | Set this system property to `1` to enable the remote monitor creation for the partner. The default value is `0`.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image13.png)                                                                                                                               |
-| NDA_Monitoring_Group_Ids      | 828     | True     | The script will create remote monitors for the domain controllers (One Domain Controller Per Domain) that belong to the groups identified by the group IDs specified in this system property. Multiple IDs can be included by separating them with a comma. <br/> <br/> The default value is the groupid of the `Service Plans > Windows Servers > Server Roles > Windows Servers Core Services > Domain Conllers` group. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image14.png)  <br/><u>**Note**</u>: If this property is set to ‘0’, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group ID(s) is/are defined in the system properties. |
-| NDA_Monitoring_Interval       | 3600    | True     | Controls the generated Remote Monitor run time interval. The default is 3600 seconds.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image15.png)                                                                                                                                                         |
-| NDA_Monitoring_AlertTemplate  | 611     | True     | This system property stores the ID of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image16.png)  <br/><br/>Navigate to the System Dashboard --> Management --> Alert Templates to find the Id of the required alert template. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image17.png) <br/><br/> It is suggested to use the `△ Custom - Ticket Creation - Computer - Failures Only` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image18.png)                       |
-| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0', i.e., `<Not Specified>`.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image19.png) <br/><br/>Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image20.png) <br/><br/> Navigate to the System Dashboard --> Config--> Information Base Categories to find the Id of the required ticket category.  ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image21.png)                          |
-| NDA_Monitoring_Excluded_Users | Batman,AnotherBatman,OneMoreBatman | True | This system property stores the usernames to exclude from generating the new domain admin-detected tickets. The default value will be `<blank>`. <br/><br/> The username  stored in the `Default_Domain_Admin_Account` system property will be excluded from the remote monitor if the Windows Domain Admin Process solution is enabled on the DC and it is using the username stored in the system property. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image22.png) <br/><br/><u>**Note**</u>: Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`            |
+| NDA_Monitoring_Enable         | 1       | True     | Set this system property to `1` to enable the remote monitor creation for the partner. The default value is `0`.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image13.png)                                                                                                                               |
+| NDA_Monitoring_Group_Ids      | 828     | True     | The script will create remote monitors for the domain controllers (One Domain Controller Per Domain) that belong to the groups identified by the group IDs specified in this system property. Multiple IDs can be included by separating them with a comma. <br/> <br/> The default value is the groupid of the `Service Plans > Windows Servers > Server Roles > Windows Servers Core Services > Domain Conllers` group. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image14.png)  <br/><u>**Note**</u>: If this property is set to ‘0’, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group ID(s) is/are defined in the system properties. |
+| NDA_Monitoring_Interval       | 3600    | True     | Controls the generated Remote Monitor run time interval. The default is 3600 seconds.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image15.png)                                                                                                                                                         |
+| NDA_Monitoring_AlertTemplate  | 611     | True     | This system property stores the ID of the `Alert Template` to apply to the created remote monitors. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer - Failures Only` alert template. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image16.png)  <br/><br/>Navigate to the System Dashboard --> Management --> Alert Templates to find the Id of the required alert template. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image17.png) <br/><br/> It is suggested to use the `△ Custom - Ticket Creation - Computer - Failures Only` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image18.png)                       |
+| NDA_Monitoring_TicketCategory  | 124     | False    | This system property stores the ID of the `Ticket Category` to apply to the remote monitors created for the Domain Controllers. The default value is '0', i.e., `<Not Specified>`.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image19.png) <br/><br/>Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image20.png) <br/><br/> Navigate to the System Dashboard --> Config--> Information Base Categories to find the Id of the required ticket category.  ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image21.png)                          |
+| NDA_Monitoring_Excluded_Users | Batman,AnotherBatman,OneMoreBatman | True | This system property stores the usernames to exclude from generating the new domain admin-detected tickets. The default value will be `<blank>`. <br/><br/> The username  stored in the `Default_Domain_Admin_Account` system property will be excluded from the remote monitor if the Windows Domain Admin Process solution is enabled on the DC and it is using the username stored in the system property. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image22.png) <br/><br/><u>**Note**</u>: Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`            |
 
-![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image23.png)
+![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image23.png)
 
 ## Client-Level EDF
 
 | Name                                     | Type      | Section             | Description                                                                                                                                                                                                                                        |
 |------------------------------------------|-----------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2a. Exclude from New Domain Admin Monitor | Check Box | Domain Admin Account | Selecting this Extra Data Field (EDF) will exclude the client from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the domain controllers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the client.  <br/><br/>  ![Client](../../../static/img/New-Domain-Admin-Monitor---Create/image29.png) |
-| 2b. Excluded_Users                       | Check Box | Domain Admin Account | This EDF stores the usernames to exclude from generating the new domain admin-detected tickets.  <br/><br/> The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NDA_Monitoring_Excluded_Users` system property.  <br/> <br/> The username stored in the  `1b. Domain Admin UserName` EDF will be excluded from the remote monitor if the Windows Domain Admin Process solution is enabled on the DC and it is using the username stored in the EDF. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image24.png)  <br/> <br/> <u>**Note:**</u> Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`|
+| 2a. Exclude from New Domain Admin Monitor | Check Box | Domain Admin Account | Selecting this Extra Data Field (EDF) will exclude the client from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the domain controllers under this client. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitors for the client.  <br/><br/>  ![Client](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image29.png) |
+| 2b. Excluded_Users                       | Check Box | Domain Admin Account | This EDF stores the usernames to exclude from generating the new domain admin-detected tickets.  <br/><br/> The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NDA_Monitoring_Excluded_Users` system property.  <br/> <br/> The username stored in the  `1b. Domain Admin UserName` EDF will be excluded from the remote monitor if the Windows Domain Admin Process solution is enabled on the DC and it is using the username stored in the EDF. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image24.png)  <br/> <br/> <u>**Note:**</u> Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`|
 
 
-![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image30.png)
+![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image30.png)
 
 ## Computer-Level EDF
 
 | Name                  | Type      | Section    | Description                                                                                                                                                                                                                                        |
 |-----------------------|-----------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NDAM_Exclude          | Check Box | Exclusions  | Selecting this Extra Data Field (EDF) will exclude the particular domain controller from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the server. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitor. ![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image26.png) |
-| NDAM_Excluded_Users   | Check Box | Exclusions  | This EDF stores the usernames to exclude from generating the new domain admin-detected tickets. By default, it will be a blank text box.  <br/> <br/> The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NDA_Monitoring_Excluded_Users` system property, and the Client-Level EDF `2b. Excluded_Users`. <br/>![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image27.png) <br/><br/> <u>**Note:**</u> Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`|
+| NDAM_Exclude          | Check Box | Exclusions  | Selecting this Extra Data Field (EDF) will exclude the particular domain controller from the New Domain Admin Monitoring. As a result, the script will not create any remote monitors for the server. Furthermore, upon marking this EDF, the script will also remove any previously created remote monitor. ![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image26.png) |
+| NDAM_Excluded_Users   | Check Box | Exclusions  | This EDF stores the usernames to exclude from generating the new domain admin-detected tickets. By default, it will be a blank text box.  <br/> <br/> The value stored in this EDF will be added as an additional exclusion, along with the value stored in the `NDA_Monitoring_Excluded_Users` system property, and the Client-Level EDF `2b. Excluded_Users`. <br/>![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image27.png) <br/><br/> <u>**Note:**</u> Multiple usernames can be added by separating them with a comma. <u>**Example:**</u> `AutomateTestAccount,FlyingBatman,FallingBatman,BankerBatman`|
 
-![system_property](../../../static/img/New-Domain-Admin-Monitor---Create/image28.png)
+![system_property](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image28.png)
 
 ## Remote Monitor Example
 
@@ -123,19 +123,18 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 `<Newly Created Domain Admin(s)>`
 
 **Sample Ticket:**  
-![Sample Ticket](../../../static/img/New-Domain-Admin-Monitor---Create/image_9.png)  
+![Sample Ticket](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_9.png)  
 **Automate will never close the ticket; instead, it will keep adding the new detections to the same ticket as a comment/note unless the ticket is closed/resolved manually.**
 
 **Sample Remote Monitor:**  
-![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_10.png)  
+![Sample Remote Monitor](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_10.png)  
 
-![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_11.png)  
+![Sample Remote Monitor](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_11.png)  
 
-![Sample Remote Monitor](../../../static/img/New-Domain-Admin-Monitor---Create/image_12.png)  
+![Sample Remote Monitor](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_12.png)  
 
 ## Output
 
 - Remote Monitors
-
 
 

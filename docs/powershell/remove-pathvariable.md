@@ -40,4 +40,3 @@ This command will remove the `C:\Documents and Settings`, `C:\Config`, `C:\Recov
 ## Output
 Standard Output
 
-

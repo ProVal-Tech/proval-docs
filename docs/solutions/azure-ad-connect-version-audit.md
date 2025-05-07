@@ -34,4 +34,3 @@ To provide comprehensive information about which servers have Azure AD Connect s
 - Import the report for Azure AD Connect Version Audit
 
 
-

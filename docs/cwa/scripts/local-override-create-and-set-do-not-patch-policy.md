@@ -18,7 +18,7 @@ The script is useful for setting up local overrides on machines so that they won
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Local-Override---Create-and-Set-Do-Not-Patch-Policy/image_1.png)
+![Sample Run](../../../static/img/docs/72fc5a6e-e66e-4a02-bfef-4419f3c9709c/image_1.png)
 
 ## Variables
 
@@ -34,5 +34,4 @@ The script is useful for setting up local overrides on machines so that they won
 ## Output
 
 - Script log
-
 

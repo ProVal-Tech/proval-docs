@@ -30,4 +30,3 @@ This document provides detailed information about the antivirus installed on the
 | Protection Status          | Indicates whether antivirus is enabled or not               |
 | AV Definition Status       | Indicates whether antivirus definitions are up to date      |
 
-

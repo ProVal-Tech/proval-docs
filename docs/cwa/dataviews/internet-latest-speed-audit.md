@@ -54,4 +54,3 @@ This document displays the latest audited speed test information from the last s
 | UploadMbps     | The upload speed detected in Mbps.                                           |
 
 
-

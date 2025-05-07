@@ -30,4 +30,3 @@ The dataview will display the user classes that will be assigned to the stock sc
 | User Class                | Name of the User Class(es) with access to this script |
 
 
-

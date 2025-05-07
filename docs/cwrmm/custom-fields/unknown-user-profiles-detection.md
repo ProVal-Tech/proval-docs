@@ -23,4 +23,4 @@ Enabling this custom field will activate the detection of Unknown or Cached user
 
 ## Screenshots
 
-![Image1](../../../static/img/cwrmm-cf-unknown-user-profiles-detection/Image1.png)
+![Image1](../../../static/img/docs/a7ba6a52-18ae-4c71-8545-5a41999fa41b/Image1.png)

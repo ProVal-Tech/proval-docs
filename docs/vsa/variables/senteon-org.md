@@ -27,4 +27,3 @@ The value for this must be provided by the partner. The partner can get the data
 |-----------------------|-----------------------|--------------------------------------------------------------|
 | Senteon_Org           | Public                | Used by the agent procedure to specify the organization during installation |
 
-

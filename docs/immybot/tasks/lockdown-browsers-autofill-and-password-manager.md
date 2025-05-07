@@ -21,16 +21,16 @@ It's important to know that for browsers based on Chromium (like Google Chrome, 
 For Firefox, turning off the Password Manager will also disable Autofill.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_1.png)
+![Google Chrome Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_1.png)
 
 **Affected Setting for Brave:**  
-![Brave Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_2.png)
+![Brave Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_2.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_3.png)
+![Microsoft Edge Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_3.png)
 
 **Affected Settings for Mozilla Firefox:**  
-![Mozilla Firefox Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_4.png)
+![Mozilla Firefox Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_4.png)
 
 **Note:**
 
@@ -39,13 +39,13 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Lockdown Chromium Browsers Credit Card Autofill
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Credit Card Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_5.png)
+![Google Chrome Credit Card Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_5.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Credit Card Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_6.png)
+![Microsoft Edge Credit Card Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_6.png)
 
 **Affected Setting for Brave:**  
-![Brave Credit Card Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_7.png)
+![Brave Credit Card Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_7.png)
 
 **Note:**
 
@@ -54,13 +54,13 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ## Lockdown Chromium Browsers Address Autofill
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Address Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_8.png)
+![Google Chrome Address Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_8.png)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Address Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_9.png)
+![Microsoft Edge Address Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_9.png)
 
 **Affected Setting for Brave:**  
-![Brave Address Setting](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_10.png)
+![Brave Address Setting](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_10.png)
 
 **Note:**
 
@@ -82,7 +82,7 @@ The task is designed to remove saved passwords from the following browsers:
 ## Disable Edge Wallet
 
 The task can disable the sync between Edge Wallet and the cloud. It should be disabled to remove the saved passwords from Microsoft Edge.  
-![Edge Wallet](../../../static/img/immybot-task-lockdown-browsers-autofill-and-password-manager/image_11.png)
+![Edge Wallet](../../../static/img/docs/4a0c81a2-6ba3-4663-8afb-7f90c021d47e/image_11.png)
 
 **Note:**  
 

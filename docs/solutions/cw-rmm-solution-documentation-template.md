@@ -28,4 +28,3 @@ Describe how to implement this solution. Is there any manual configuration that 
 
 <!-- Add frequently asked questions here -->
 
-

@@ -47,4 +47,3 @@ The output files will be generated as follows:
 ./Update-VisualStudio-error.txt
 ```
 
-

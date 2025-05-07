@@ -42,4 +42,3 @@ Gathers information about user profiles.
 ## Output
 - .\Get-UserProfiles-log.txt
 
-

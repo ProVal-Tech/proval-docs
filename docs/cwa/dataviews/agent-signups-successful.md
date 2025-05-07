@@ -34,4 +34,3 @@ An audit of the DISTINCT computers that successfully signed up using the network
 | Location ID          | Location ID of the computer.                                    |
 | Client ID            | Client ID of the computer.                                      |
 
-

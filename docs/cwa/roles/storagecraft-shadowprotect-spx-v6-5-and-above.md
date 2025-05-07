@@ -20,4 +20,3 @@ This role checks the installed version of StorageCraft. If it matches version 6.
 |---------------------------------------------------------|---------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
 
-

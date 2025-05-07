@@ -18,7 +18,7 @@ This script creates and populates data in the `plugin_proval_h_msp_metrics` cust
 
 Please schedule the script to run on the second Monday of each month. This is a client-based script and needs to be scheduled in the system dashboard. The details from the script run can be found in the accompanying dataview in the related items section.
 
-![Sample Run Image](../../../static/img/MSP-Automation-Metrics---plugin_proval_h_msp_metrics/image_1.png)
+![Sample Run Image](../../../static/img/docs/408bb0fc-cfe0-4ea3-8e77-af13c41e054e/image_1.png)
 
 ## Variables
 
@@ -49,5 +49,4 @@ Please schedule the script to run on the second Monday of each month. This is a 
 
 - Custom Table
 - Dataview
-
 

@@ -54,4 +54,3 @@ Sets up the environment if required and syncs any new or changed scripts from th
 | `ScriptTypes`     | False     | `('.ps1', '.bat', '.py')` | String[]  | List of extensions that should be synced. |
 | `Force`           | False     |                            | Switch    | Use this switch to force a local diff check between the GitHub repo and the file server repo, even if the origin GitHub repo has no pending changes. |
 
-

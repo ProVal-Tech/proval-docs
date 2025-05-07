@@ -32,4 +32,3 @@ If the script has not been run previously, the user data is saved to the table a
 - Get-NewLocalUser_log
 - Get-NewLocalUser_users
 
-

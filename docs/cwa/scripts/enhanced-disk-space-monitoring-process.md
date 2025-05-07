@@ -42,9 +42,9 @@ The script is designed to run from the [EPM - Disk - Internal Monitor - ProVal -
 
 After importing the script, it should either be debugged or run against any computer in the environment with `1` in the user parameter `SetEnvironment`.
 
-![Image 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_1.png)
+![Image 1](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_1.png)
 
-![Image 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_2.png)
+![Image 2](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_2.png)
 
 ## Dependencies
 
@@ -171,7 +171,6 @@ If this is an error, then the compressed logs may be unavailable.
 
 **Sample Screenshots of Tickets:**
 
-![Screenshot 1](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_3.png)
+![Screenshot 1](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_3.png)
 
-![Screenshot 2](../../../static/img/Enhanced-Disk-Space-Monitoring-Process/image_4.png)
-
+![Screenshot 2](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_4.png)

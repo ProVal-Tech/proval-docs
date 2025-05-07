@@ -18,7 +18,7 @@ This script will remove the "Automate Agent Deployment" group policy from the Do
 
 ## Sample Run
 
-![Sample Run](../../../static/img/GPO---Automate-Agent-Deployment-GPO---Remove/image_1.png)
+![Sample Run](../../../static/img/docs/3404eb65-3992-4cad-9dec-c1426c4656ca/image_1.png)
 
 ## Process
 
@@ -27,5 +27,4 @@ The script runs the appropriate PowerShell command to remove the "Automate Agent
 ## Output
 
 - Script log
-
 

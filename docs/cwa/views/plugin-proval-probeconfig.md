@@ -57,4 +57,3 @@ This view was created to bypass the word count limit of 2500 for the "SQLBody" c
 | Creation Date                            | datetime | Date of creation                                                   |
 | Last Update Date                         | datetime | Last update date for the network probe                              |
 
-

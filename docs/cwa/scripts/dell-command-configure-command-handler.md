@@ -18,7 +18,7 @@ This script executes commands using the Dell Command Configure application. The 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Dell-Command-Configure---Command-Handler/image_1.png)
+![Sample Run](../../../static/img/docs/1f61b913-a45c-41e9-afa4-6cf105cdff86/image_1.png)
 
 The script provides the syntax `CCTK.exe --`. See the example in the screenshot.
 
@@ -51,5 +51,4 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
-
 

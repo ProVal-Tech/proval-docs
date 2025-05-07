@@ -28,7 +28,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Check Value | Comparator   | Interval | Result                                                  |
 |--------------|----------------|------------|-------------|--------------|----------|---------------------------------------------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**    | State Based  | 21600    | ![Result Image](../../../static/img/Enable-Bitlocker-Feature/image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**    | State Based  | 21600    | ![Result Image](../../../static/img/docs/1a32292b-df11-46ef-997f-7ad70f59061f/image_1_1.png) |
 
 ## Target
 

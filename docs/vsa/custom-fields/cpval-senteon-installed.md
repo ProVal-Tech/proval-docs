@@ -32,4 +32,3 @@ This custom field is used to determine if the Senteon Agent is installed on the 
 | Not_Running        | The expected value when the application was detected on the endpoint but the service was not running. |
 | Not_Present        | The expected value when the application is not detected.                                      |
 
-

@@ -64,4 +64,3 @@ Please have the following file hash whitelisted in your security environment to 
 - Script log
 - Ticket
 
-

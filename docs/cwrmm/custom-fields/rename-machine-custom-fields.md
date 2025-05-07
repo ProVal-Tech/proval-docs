@@ -25,8 +25,8 @@ This custom fields are needed for the task [Windows - System - Rename](/docs/cd9
 
 ### Domain_Admin_User
 
-![Domain_Admin_User](<../../../static/img/docs/Rename-Machine Custom fields/image.png>)
+![Domain_Admin_User](<../../../static/img/docs/ba3c12eb-f166-4982-ab21-a2337a989614/image.png>)
 
 ### Domain_Admin_Pwd
 
-![Domain_Admin_Pwd](<../../../static/img/docs/Rename-Machine Custom fields/image-1.png>)
+![Domain_Admin_Pwd](<../../../static/img/docs/ba3c12eb-f166-4982-ab21-a2337a989614/image-1.png>)

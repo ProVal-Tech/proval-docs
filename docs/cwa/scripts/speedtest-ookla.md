@@ -17,7 +17,7 @@ This script gathers an internet speed test record from Ookla.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/SpeedTest---Ookla/image_1.png)
+![Sample Run](../../../static/img/docs/0894c8ab-7630-40fe-81bd-e8af8744c186/image_1.png)
 
 ## Dependencies
 
@@ -45,5 +45,4 @@ This script downloads the speed test zip file from Ookla and extracts it. After 
 - Script log
 - Script state
 - Dataview
-
 

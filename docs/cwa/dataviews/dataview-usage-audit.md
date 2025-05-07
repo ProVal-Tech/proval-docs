@@ -28,4 +28,3 @@ This Dataview audits the Dataviews most frequently accessed by users. It can be 
 | History Retention (Days)            | Indicates how many days old the data displayed in the Dataview is (it depends on the data shown in the h_users table) |
 
 
-

@@ -36,4 +36,3 @@ The "pvl_win_installer_properties" is an SQL custom table that is used in conjun
 | ScriptRunTime    | datetime     | Data Collection Time                                |
 | SerialNumber     | int          | Auto-incremental column to be used as primary key   |
 
-

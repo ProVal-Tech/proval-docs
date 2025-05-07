@@ -22,7 +22,7 @@ There is an additional feature available to remove/delete the currently saved pa
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Prevent-Saving-Browser-Passwords-(IE.Chrome.FF)/image_1.png)
+![Sample Run](../../../static/img/docs/5e0e3054-ce35-494b-bdde-c8b0c56305d0/image_1.png)
 
 In the above screenshot, the password saving feature for the browsers will be disabled for the computer, and any currently saved passwords will be removed. Selecting to remove saved passwords will close the concerned browser.
 
@@ -57,5 +57,4 @@ In the above screenshot, the password saving feature for the browsers will be di
 
 - Script log
 - Script state
-
 

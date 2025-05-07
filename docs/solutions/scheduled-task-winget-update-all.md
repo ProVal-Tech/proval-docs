@@ -77,4 +77,3 @@ Create and deploy the following tasks:
 - [Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e)  
 - [Scheduled Task Winget Update All (Delete)](/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95)  
 
-

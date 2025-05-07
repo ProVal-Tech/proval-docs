@@ -36,4 +36,3 @@ PS C:> .\Get-PowerPlansInfo.ps1
 
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
 
-

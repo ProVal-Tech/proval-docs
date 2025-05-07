@@ -70,4 +70,3 @@ The procedure uses Invoke-OffScrub.
 
 AP Log
 
-

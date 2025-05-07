@@ -16,41 +16,41 @@ This task removes any registry entries that may be preventing Windows updates an
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Set-Windows-Updates-to-Default/image_2.png)  
-![Sample Run Image 2](../../../static/img/Set-Windows-Updates-to-Default/image_3.png)  
+![Sample Run Image 1](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_2.png)  
+![Sample Run Image 2](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_3.png)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/Set-Windows-Updates-to-Default/image_4.png)  
-![Task Creation Image 2](../../../static/img/Set-Windows-Updates-to-Default/image_5.png)  
+![Task Creation Image 1](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_4.png)  
+![Task Creation Image 2](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_5.png)  
 
 **Name:** Set Windows Updates to Default  
 **Description:** This task removes all the possible registry entries that disable Windows Update on a machine.  
 **Category:** Custom  
 
-![Task Creation Image 3](../../../static/img/Set-Windows-Updates-to-Default/image_6.png)  
+![Task Creation Image 3](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_6.png)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 
-![Add Row Image](../../../static/img/Set-Windows-Updates-to-Default/image_7.png)  
+![Add Row Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_7.png)  
 
 A blank function will appear.  
 
-![Blank Function Image](../../../static/img/Set-Windows-Updates-to-Default/image_8.png)  
+![Blank Function Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_8.png)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Script Selection](../../../static/img/Set-Windows-Updates-to-Default/image_9.png)  
+![PowerShell Script Selection](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_9.png)  
 
 The following function will pop up on the screen:  
 
-![PowerShell Function Popup](../../../static/img/Set-Windows-Updates-to-Default/image_10.png)  
+![PowerShell Function Popup](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_10.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 600 seconds. Click the `Save` button.
 
@@ -144,14 +144,13 @@ if ($failures) {
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image](../../../static/img/Set-Windows-Updates-to-Default/image_11.png)  
-![Script Log Output](../../../static/img/Set-Windows-Updates-to-Default/image_12.png)  
+![Script Log Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_11.png)  
+![Script Log Output](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_12.png)  
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Set-Windows-Updates-to-Default/image_13.png)  
+![Completed Task Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_13.png)  
 
 ## Output
 
 - Script Log
-

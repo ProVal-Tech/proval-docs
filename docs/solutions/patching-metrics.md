@@ -41,7 +41,6 @@ To granularly present the fundamental patching-related statistics for the whole 
 
 You can check the database version from the `Server Status` in Control Center.  
 
-![Image1](../../static/img/Patching-Metrics/image_1.png)  
-![Image2](../../static/img/Patching-Metrics/image_2.png)
-
+![Image1](../../static/img/docs/e2d2f876-2e03-4d97-b0a1-eb17b666aad2/image_1.png)  
+![Image2](../../static/img/docs/e2d2f876-2e03-4d97-b0a1-eb17b666aad2/image_2.png)
 

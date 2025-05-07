@@ -78,4 +78,3 @@ The purpose of this solution is to detect machines that have been offline in Aut
        - Set the required ticket category (to alert on broken agents).
        - Right-click and Run Now to start the monitor.
 
-

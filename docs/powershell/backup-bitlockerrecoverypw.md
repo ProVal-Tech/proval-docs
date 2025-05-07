@@ -32,4 +32,3 @@ Attempts to back up any Recovery Password type key protectors to Active Director
 - `.\Backup-BitlockerRecoveryPW-log.txt`
 - `.\Backup-BitlockerRecoveryPW-error.txt`
 
-

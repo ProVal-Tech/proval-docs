@@ -37,4 +37,3 @@ This table is used in the [SSL Certificate Audit Solution](/docs/1045cfa0-257d-4
 | Expiration     | DATETIME                                  | What is the expiration date of the SSL certificate                 |
 | DateUpdated    | DATETIME                                  | When did the script actually add the information into the database  |
 
-

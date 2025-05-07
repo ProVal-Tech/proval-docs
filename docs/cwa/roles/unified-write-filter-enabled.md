@@ -21,4 +21,3 @@ This document outlines how to determine if an agent has the Unified Writer Filte
 | `\{@%powershell.exe -command "Get-WmiObject -Namespace "root/standardcimv2/embedded" -Class UWF_Filter | select -ExpandProperty CurrentEnabled"@%}` | Equals     | True   | Windows        |
 
 
-

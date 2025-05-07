@@ -20,7 +20,7 @@ This script is designed to run a PowerShell script and pull any and all certific
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---Certificates-(My)---Local-Machine---Audit/image_1.png)
+![Sample Run](../../../static/img/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13/image_1.png)
 
 #### Global Parameters
 
@@ -33,5 +33,4 @@ This script is designed to run a PowerShell script and pull any and all certific
 - Script log
 - Custom Table
 - Dataview
-
 

@@ -18,7 +18,7 @@ Appends data from the agnostic script to the created table.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Disk---Gather-Critical-Info---Deprecated-and-replaced/image_1.png)
+![Sample Run](../../../static/img/docs/ee31c873-0d1f-42fa-b698-cdfe1cbf75a6/image_1.png)
 
 ## Dependencies
 
@@ -37,6 +37,5 @@ The location and method by which this script returns data:
 - Script state
 - Local file on computer
 - Dataview
-
 
 

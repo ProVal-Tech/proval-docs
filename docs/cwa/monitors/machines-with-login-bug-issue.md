@@ -32,4 +32,3 @@ This monitor is a global monitor.
 
 `△ Custom - Ticket Creation - Computer`
 
-

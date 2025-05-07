@@ -26,4 +26,3 @@ This document checks endpoints to determine if they are domain-joined and report
 The Agent Procedure requires the Custom Field to be created beforehand.
 
 
-

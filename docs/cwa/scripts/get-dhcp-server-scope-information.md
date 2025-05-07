@@ -18,7 +18,7 @@ This script gathers DHCP information from a target server and saves it to the da
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Get-DHCP-Server-Scope-Information/image_1.png)
+![Sample Run](../../../static/img/docs/918c1a66-54b8-4468-9e4b-5b7db918b77c/image_1.png)
 
 ## Process
 
@@ -28,5 +28,4 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Output
 
 - Table: `plugin_proval_dhcp_statistics`
-
 

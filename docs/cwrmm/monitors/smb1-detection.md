@@ -17,18 +17,18 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
 ## Monitor
 
 1. Go to **Alert Management > Monitors > Add monitor**  
-   ![Image 1](../../../static/img/-SMB1-Detection/image_1.png)  
-   ![Image 2](../../../static/img/-SMB1-Detection/image_2.png)  
+   ![Image 1](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_1.png)  
+   ![Image 2](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_2.png)  
 
 2. This screen will appear.  
-   ![Image 3](../../../static/img/-SMB1-Detection/image_3.png)  
+   ![Image 3](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_3.png)  
 
 3. Fill in the Name and Description boxes.  
    **Name:** SMB1 Detection  
    **Description:** Check whether SMB1 is enabled on the end machine.  
 
    Select `Script` as `Type`, `RMM Agent` for the `Family`, and `Others` or any relevant option for the `Severity`.  
-   ![Image 4](../../../static/img/-SMB1-Detection/image_4.png)  
+   ![Image 4](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_4.png)  
 
 4. In the conditions selection, select PowerShell in the Script Language, select Schedule in Run Script on, and type 167 hours in Repeat every. Add the following query in the Script box:  
    ```powershell
@@ -54,19 +54,18 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
    In Criteria, select `Contains`, `AND`  
    Enter `True` in Script output.  
    The Conditions Section should look something like this:  
-   ![Image 5](../../../static/img/-SMB1-Detection/image_5.png)  
+   ![Image 5](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_5.png)  
 
 5. Select `Run same script as above` condition for the Ticket Resolution section. Select `Contains`, `AND` for criteria. Enter `False` in Script Output.  
    Ticket Resolution should look something like this:  
-   ![Image 6](../../../static/img/-SMB1-Detection/image_6.png)  
+   ![Image 6](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_6.png)  
 
 6. Select the Resources/Clients to apply the monitor set against.  
-   ![Image 7](../../../static/img/-SMB1-Detection/image_7.png)  
+   ![Image 7](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_7.png)  
 
 7. This is how the monitor set should look before saving it.  
-   ![Image 8](../../../static/img/-SMB1-Detection/image_8.png)  
-   **![Image 9](../../../static/img/-SMB1-Detection/image_9.png)**  
+   ![Image 8](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_8.png)  
+   **![Image 9](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_9.png)**  
 
 8. Click the `Save` button to save the monitor set.
-
 

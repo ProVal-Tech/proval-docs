@@ -30,11 +30,11 @@ The groups mentioned below are created to deploy and audit the Cyrisma Sensor.
 
 Create Dynamic Groups:
 
-![Image](../../../static/img/Cyrisma-Sensor/image_1.png)
+![Image](../../../static/img/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f/image_1.png)
 
 1. **Cyrisma Sensor Deployment**
 
-   ![Image](../../../static/img/Cyrisma-Sensor/image_2.png)
+   ![Image](../../../static/img/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f/image_2.png)
 
    Criteria:
 
@@ -46,7 +46,7 @@ Create Dynamic Groups:
 
 2. **Cyrisma Deployment Failure Check**
 
-   ![Image](../../../static/img/Cyrisma-Sensor/image_3.png)
+   ![Image](../../../static/img/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f/image_3.png)
 
    Criteria:
 
@@ -54,10 +54,9 @@ Create Dynamic Groups:
 
 3. **Cyrisma Installed**
 
-   ![Image](../../../static/img/Cyrisma-Sensor/image_4.png)
+   ![Image](../../../static/img/docs/bdea3d9e-acca-4b87-96a6-632c488fef1f/image_4.png)
 
    Criteria:
 
    - Installed Software contains any of 'CYRISMA'
-
 

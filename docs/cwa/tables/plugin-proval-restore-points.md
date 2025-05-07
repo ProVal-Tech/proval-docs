@@ -30,4 +30,3 @@ This document stores information about Windows restore points.
 | RestorePointDescription | VARCHAR  | The description of the audited restore point.              |
 | SequenceNumber         | INT      | The number of previous sequences that this restore point has been through. |
 
-

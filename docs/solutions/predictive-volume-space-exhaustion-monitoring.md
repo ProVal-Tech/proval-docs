@@ -31,16 +31,16 @@ The goal of this solution is to monitor the trend of drive space utilization and
    - [Dataview - Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587)
 
 2. Reload the system cache:
-   ![Reload Cache](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_1.png)
+   ![Reload Cache](../../static/img/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/image_1.png)
 
 3. Debug the [Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006) script against any random client with the `Set_Environment` parameter set to `1` to create the system properties and the extra data fields used by the script. This will also remove the deprecated version of the solution from the environment.
-   ![Debugging](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_2.png)
+   ![Debugging](../../static/img/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/image_2.png)
 
 4. Set the `System Properties` and `EDFs` as required.
 
 5. Navigate to System > Configuration > Dashboard > Management > Scheduled Scripts
    - Schedule the [Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006) script to run once per day after hours.
-   ![Schedule Script](../../static/img/Predictive-Volume-Space-Exhaustion-Monitoring/image_3.png)
+   ![Schedule Script](../../static/img/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/image_3.png)
 
 ## Notes
 
@@ -61,5 +61,4 @@ The goal of this solution is to monitor the trend of drive space utilization and
 - PVE_Monitoring_Workstation_AuditOnly
 
 Setting the `_AuditOnly` properties will enable the [Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f) monitors instead of the [Volume Space Prediction](/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f). The audited data is displayed by the [Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587) dataview.
-
 

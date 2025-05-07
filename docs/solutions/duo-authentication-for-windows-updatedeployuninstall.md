@@ -47,10 +47,10 @@ This solution assists in setting the latest DUO detection and updating older DUO
      - `△ CUSTOM - Execute Script - DUO Install & Upgrade - Latest Version`
 
 2. Reload the system cache:
-   ![Reload System Cache](../../static/img/Duo-Authentication-for-Windows---UpdateDeployUninstall/image_1.png)
+   ![Reload System Cache](../../static/img/docs/34f77d1b-342e-49bd-bc31-39894850c7c1/image_1.png)
 
    Run the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.  
-   ![Run Script](../../static/img/Duo-Authentication-for-Windows---UpdateDeployUninstall/image_2.png)
+   ![Run Script](../../static/img/docs/34f77d1b-342e-49bd-bc31-39894850c7c1/image_2.png)
 
 3. Navigate to Automation → Monitors within the CWA Control Center and set up the following:
    - [Monitor - DUO Authentication - Latest Version Detection](/docs/f5315643-b01b-48e6-ae4c-b89e5c0f20d6)
@@ -77,6 +77,5 @@ Configure the solution as outlined below:
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](/docs/4fb8001d-94a0-4867-8776-437c4f6b97cc) bonded to it.
     - Right-click and Run Now to start the monitor.
-
 
 

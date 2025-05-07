@@ -18,7 +18,7 @@ The script will gather the KBIDs from the [New Patch Deny Process](/docs/32fbb82
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs/image_1.png)
+![Sample Run](../../../static/img/docs/c9cac2f1-7647-41fb-bf13-13f23244ae37/image_1.png)
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ Proval IT Glue Documentation
 ## Process
 
 **Step 1:** Add the KBIDs of the patches to be denied after the `Patches_To_DENY:` string under the URL Proval IT Glue Documentation. KBIDs should be comma-separated, with no spaces in between or after the IDs. As shown in the attached screenshots:  
-![Step 1 Screenshot](../../../static/img/Deny-Patches-in-Default-Policy-From-Centralized-ITGLue-KBIDs/image_2.png)
+![Step 1 Screenshot](../../../static/img/docs/c9cac2f1-7647-41fb-bf13-13f23244ae37/image_2.png)
 
 **Step 2:** A PowerShell query will fetch those KBIDs to the script and store them under the `@KBID@` variable.
 
@@ -43,5 +43,4 @@ Proval IT Glue Documentation
 ## Output
 
 The output can be checked from the Approval section of the patch manager.
-
 

@@ -32,4 +32,3 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 - Run the AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
 
-

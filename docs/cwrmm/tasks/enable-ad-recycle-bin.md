@@ -23,19 +23,19 @@ This document describes how to enable the Active Directory (AD) Recycle Bin on A
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Image 1](../../../static/img/Enable-AD-Recycle-Bin/image_1.png)  
-![Image 2](../../../static/img/Enable-AD-Recycle-Bin/image_2.png)  
+![Image 1](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_1.png)  
+![Image 2](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_2.png)  
 
 **Name:** Enable AD Recycle Bin  
 **Description:** This task enables AD recycle on Windows Infrastructure Masters  
 **Category:** Custom  
-![Image 3](../../../static/img/Enable-AD-Recycle-Bin/image_3.png)  
+![Image 3](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_3.png)  
 
 ### Script
 
 #### Row 1 Function: PowerShell Script
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_4.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -51,19 +51,19 @@ else
 }
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_5.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_5.png)  
 
 #### Step 2 Logic: If/Then
 
 - Add a new `If/Then` logic from the Add Logic dropdown menu.  
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_6.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_6.png)  
 
 #### ROW 2a Condition: Output Contains
 
 - Type `Outdated` in the Value box.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_7.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_7.png)  
 
 #### ROW 2b Function: Set Custom Field
 
@@ -71,12 +71,12 @@ Add a new row in the If Section by clicking the Add Row button.
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_8.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_8.png)  
 
 - Search and select the `AD Recycle Bin` Custom Field.
 - Type `Outdated PS version` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_9.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_9.png)  
 
 #### ROW 2c Function: Script Exit
 
@@ -88,12 +88,12 @@ Add a new row in the If Section by clicking the Add Row button.
 The AD Recycle Bin failed to be enabled on the DC server as the PowerShell version is outdated. Minimum version required is above 3.0 and the current version is %output%
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_10.png)  
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_11.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_10.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_11.png)  
 
 #### ROW 3 Function: PowerShell Script
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_4.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -109,11 +109,11 @@ if ($adwsService -eq $null) {
 }
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_12.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_12.png)  
 
 #### ROW 4 Function: PowerShell Script
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_4.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -132,19 +132,19 @@ else
 }
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_13.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_13.png)  
 
 #### Step 5 Logic: If/Then
 
 - Add a new `If/Then` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_6.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_6.png)  
 
 #### ROW 5a Condition: Output Contains
 
 - Type `Minimum criteria for AD Recycle Bin enable` in the Value box.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_14.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_14.png)  
 
 #### Row 5b Function: Set Custom Field
 
@@ -152,12 +152,12 @@ Add another row by selecting the `ADD ROW` button in the `If` section of the `If
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_15.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_15.png)  
 
 - Search and select the `AD Recycle Bin` Custom Field.
 - Type `Does not meet minimum criteria` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_16.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_16.png)  
 
 #### ROW 5c Function: Script Exit
 
@@ -173,12 +173,12 @@ Logs:
 %output%
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_17.png)  
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_18.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_17.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_18.png)  
 
 #### ROW 6 Function: PowerShell Script
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_4.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -216,25 +216,25 @@ else
 }
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_19.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_19.png)  
 
 #### Step 7 Logic: If/Then/Else
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_20.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_20.png)  
 
 #### ROW 7a Condition: Output Contains
 
 - Type `Failed to enable` in the Value box.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_21.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_21.png)  
 
 #### Step 7b Logic: If/Then
 
 Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `IF` section.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_22.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_22.png)  
 
 #### Row 7b(i) Condition: Custom Field Does Not Contain
 
@@ -243,7 +243,7 @@ Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `IF` sec
 - Select `Does Not Contain` from the dropdown.
 - Type `Does not meet minimum criteria` into the value.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_23.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_23.png)  
 
 Select ADD CONDITION in the Custom field section and add another condition.
 
@@ -252,7 +252,7 @@ Select ADD CONDITION in the Custom field section and add another condition.
 - Select `Does Not Contain` from the dropdown.
 - Type `Outdated PS version` into the value.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_24.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_24.png)  
 
 Select ADD CONDITION in the Custom field section and add another condition.
 
@@ -261,7 +261,7 @@ Select ADD CONDITION in the Custom field section and add another condition.
 - Select `Does Not Contain` from the dropdown.
 - Type `Enabled` into the value.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_25.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_25.png)  
 
 Select ADD CONDITION in the Custom field section and add another condition.
 
@@ -272,7 +272,7 @@ Select ADD CONDITION in the Custom field section and add another condition.
 
 The whole custom field should look like this.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_26.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_26.png)  
 
 #### Row 7b(ii) Condition: Set Pre-defined Variable
 
@@ -280,14 +280,14 @@ Add another row by selecting the `ADD ROW` button in the `IF` section of the int
 
 - Select `Set Pre-Defined Variable` function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_27.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_27.png)  
 
 - Select `Custom Field`.
 - Input `AD_RecycleBin_Result` as the variable name.
 - Select `AD Recycle Bin` custom field from the dropdown.
 - Click Save.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_28.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_28.png)  
 
 #### Row 7b(iii) Function: PowerShell Script
 
@@ -295,7 +295,7 @@ Add another row by selecting the `ADD ROW` button in the `IF` section of the int
 
 - Select PowerShell Script function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_4.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_4.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 900 seconds.
 
@@ -306,7 +306,7 @@ elseif ('@AD_RecycleBin_Result@' -eq '1'){return '2'}
 else {return 'failed more than 3 times'}
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_29.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_29.png)  
 
 #### Row 7b(iv) Function: Set Custom Field
 
@@ -314,12 +314,12 @@ Add another row by selecting the `ADD ROW` button in the `IF` section of the int
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_30.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_30.png)  
 
 - Search and select the `AD Recycle Bin` Custom Field.
 - Type `%Output%` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_31.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_31.png)  
 
 #### Row 7b(v) Function: Script Exit
 
@@ -336,8 +336,8 @@ Logs:
 %output%
 ```
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_32.png)  
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_33.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_32.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_33.png)  
 
 #### Row 7c Function: Set Custom Field
 
@@ -345,17 +345,17 @@ Add another row by selecting the `ADD ROW` button in the `Else` part of the `If/
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_34.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_34.png)  
 
 - Search and select the `AD Recycle Bin` Custom Field.
 - Type `Enabled` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_35.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_35.png)  
 
 The final task should look like the screenshot below.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_36.png)  
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_37.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_36.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_37.png)  
 
 ## Script Deployment
 
@@ -365,10 +365,9 @@ Go to Automations > Tasks.
 Search for Enable AD Recycle Bin.  
 Then click on Schedule and provide the necessary parameters for script completion.
 
-![Image](../../../static/img/Enable-AD-Recycle-Bin/image_38.png)  
+![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_38.png)  
 
 ## Output
 
 - Script log
-
 

@@ -18,7 +18,7 @@ This script uses `auditpol.exe` to configure logon auditing for success and fail
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Set-Logon-Success-and-Failure-Auditing-ON/image_1.png)
+![Sample Run](../../../static/img/docs/f499a42f-9194-4109-88c4-6ae61fcfbb93/image_1.png)
 
 ## Variables
 
@@ -34,5 +34,4 @@ This script uses `auditpol.exe` to configure logon auditing for success and fail
 ## Output
 
 - Script log
-
 

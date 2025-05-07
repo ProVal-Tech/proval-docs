@@ -19,7 +19,7 @@ For regex reference, visit: [https://regexr.com/](https://regexr.com/)
 
 ## Sample Run
 
-![Sample Run](../../../static/img/FileFolder---Get/image_1.png)
+![Sample Run](../../../static/img/docs/281f0b52-80f0-4a8c-842d-e6ebc747884a/image_1.png)
 
 ## Dependencies
 
@@ -51,5 +51,4 @@ The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Se
 
 - Script Log
 - `@SearchResult@` holds the results.
-
 

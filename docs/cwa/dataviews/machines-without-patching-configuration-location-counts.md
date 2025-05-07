@@ -30,4 +30,3 @@ This dataview displays the count of machines per location where the Microsoft up
 | DisabledPatchingCount         | Number of Agents per Location where location EDF `Enable Patching Servers` for servers and `Enable Patching Workstations` for workstations is not enabled |
 | Attention                     | Calculates the difference between `NoPatchPolicyCount` and `NotOnboardedCount` and highlights those rows where the difference is greater than 0. |
 
-

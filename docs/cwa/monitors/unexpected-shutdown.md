@@ -28,7 +28,7 @@ Insert the details of the monitor in the table below.
 | ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ------------------- |
 | System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 3600     | \<Screenshot Below> |
 
-![Screenshot](../../../static/img/Unexpected-Shutdown/image_1.png)
+![Screenshot](../../../static/img/docs/80e10bf1-9e98-427a-a5bf-dd8ffb208ce8/image_1.png)
 
 ## Dependencies
 

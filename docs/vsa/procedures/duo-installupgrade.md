@@ -78,4 +78,3 @@ This procedure installs and upgrades Duo for Windows.
 
 Procedure Logfiles
 
-

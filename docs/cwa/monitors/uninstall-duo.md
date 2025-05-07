@@ -20,9 +20,9 @@ The purpose of this monitor is to detect Windows machines with Duo installed on 
 
 | Name                    | Level    | Type     | Section     | Description                                                                                           |
 |-------------------------|----------|----------|-------------|-------------------------------------------------------------------------------------------------------|
-| DUO Agent Exclusion     | Client   | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the Client. ![Image](../../../static/img/Uninstall-DUO/image_1.png) |
-| DUO Agent Exclusion     | Location | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the location. ![Image](../../../static/img/Uninstall-DUO/image_2.png) |
-| DUO Agent Exclusion     | Computer | Checkbox | Exclusions  | Select this EDF to remove DUO from the selected machine only. ![Image](../../../static/img/Uninstall-DUO/image_3.png) |
+| DUO Agent Exclusion     | Client   | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the Client. ![Image](../../../static/img/docs/0c3523a9-e392-40f6-bc59-173a21001f0d/image_1.png) |
+| DUO Agent Exclusion     | Location | Checkbox | Exclusions  | Select this EDF to remove DUO from all machines under the location. ![Image](../../../static/img/docs/0c3523a9-e392-40f6-bc59-173a21001f0d/image_2.png) |
+| DUO Agent Exclusion     | Computer | Checkbox | Exclusions  | Select this EDF to remove DUO from the selected machine only. ![Image](../../../static/img/docs/0c3523a9-e392-40f6-bc59-173a21001f0d/image_3.png) |
 
 ## Target
 

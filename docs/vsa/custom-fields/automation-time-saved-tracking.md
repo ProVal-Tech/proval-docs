@@ -26,4 +26,3 @@ This document keeps a running total of the approximate amount of time saved for 
 | xPVAL Automation Time Saved Cumulative  | CF                                      | Integer representing the total number of minutes saved through automation.    |
 
 
-

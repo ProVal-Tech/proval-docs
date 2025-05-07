@@ -30,10 +30,10 @@ If the XML has already been preconfigured and needs to be deployed, the Comstore
 
 In this circumstance, use the following modified component: **Microsoft Office 365 (Current) [WIN] [PVAL]** and replace the XML file within the component with your XML.
 
-![Image](../../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_1.png)
+![Image](../../../static/img/docs/079df125-ee1f-46d0-a660-b16fca648ac9/image_1.png)
 
 Once the file has been replaced, save the component and export it.  
-![Image](../../../static/img/SWM---Software-Install---Component---Microsoft-Office-365/image_2.png)
+![Image](../../../static/img/docs/079df125-ee1f-46d0-a660-b16fca648ac9/image_2.png)
 
 # Example Usage
 

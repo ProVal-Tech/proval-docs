@@ -16,7 +16,7 @@ The purpose of this script is to uninstall OneDrive from Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Onedrive-Uninstallation/image_1.png)
+![Sample Run](../../../static/img/docs/86b3fe11-be22-4721-8626-ba34a5bf4419/image_1.png)
 
 ## Global Parameters
 
@@ -42,5 +42,4 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
-
 

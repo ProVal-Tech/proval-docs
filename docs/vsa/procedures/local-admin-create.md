@@ -21,4 +21,3 @@ This document explains how to create a new user on a Mac and add that user to th
 3. Set the password.
 4. Add the user to the local admin group.
 
-

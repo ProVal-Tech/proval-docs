@@ -53,4 +53,3 @@ The custom icon will need to be uploaded to managed files. Once uploaded, point 
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
 
-

@@ -33,4 +33,3 @@ This document provides an audit of last month's new computers added to the clien
 | Newly Added Account Count       | Count of domain users added in the last month                                |
 | Domain Account Creation Date     | Creation dates of domain accounts added in the last month                    |
 
-

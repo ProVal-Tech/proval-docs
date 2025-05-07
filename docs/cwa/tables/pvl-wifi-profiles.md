@@ -39,4 +39,3 @@ The purpose of the custom table is to store the WiFi Profiles information for ea
 | Password             | blob         | Password of the WiFi profile stored in encrypted format   |
 | scriptruntime        | datetime     | Data collection time                                      |
 
-

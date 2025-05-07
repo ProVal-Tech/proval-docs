@@ -20,7 +20,7 @@ A new system property and EDF have been introduced for setting the password to n
 
 Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1` to implement the changes for the [Windows Local Admin Process](/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b) solution.
 
-![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
+![Image](../../static/img/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b/image_1.png)
 
 ## Associated Content
 
@@ -41,17 +41,17 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 
 2. Run/debug the script [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) against an online Windows machine with `SetEnvironment_Local_Admin_Process` set to `1`.
 
-   ![Image](../../static/img/Windows-Local-Admin-Process/image_1.png)
+   ![Image](../../static/img/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b/image_1.png)
 
    **NOTE:** The Username and Title Parameters are used for manual runs ONLY and will not function when using the SetEnvironment variable.
 
 3. Modify the default values for the system properties (if desired). If this is a new implementation, please confirm with the consultant if they would like any of these adjusted.
 
-   ![Image](../../static/img/Windows-Local-Admin-Process/image_2.png)
+   ![Image](../../static/img/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b/image_2.png)
 
    New Add:
 
-   ![Image](../../static/img/Windows-Local-Admin-Process/image_3.png)
+   ![Image](../../static/img/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b/image_3.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -82,7 +82,7 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 **Q:** What do the new EDFs look like?  
 **A:** The new EDF structure is shown below:
 
-![Image](../../static/img/Windows-Local-Admin-Process/image_4.png)
+![Image](../../static/img/docs/f8c0fb81-16ab-4ba2-85ce-d84792a49f6b/image_4.png)
 
 **Q:** Marking an EDF is not making the expected change/exclusion?  
 **A:** The EDF data might not have been synced to the `v_extradatacomputers` or `v_extradatagroups` tables. Automate runs this sync every 20-25 minutes. Therefore, either you need to wait for 20-25 minutes or you can run the following SQL queries from a `RAWSQL` monitor set to force sync the data:
@@ -90,5 +90,4 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
-
 

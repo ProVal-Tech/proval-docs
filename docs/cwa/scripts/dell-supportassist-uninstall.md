@@ -18,7 +18,7 @@ The script will check if the Dell SupportAssist software is installed and then u
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Dell-SupportAssist---Uninstall/image_1.png)
+![Sample Run](../../../static/img/docs/c8dbc87a-084e-479d-a790-4b29041b0ba4/image_1.png)
 
 ## Process
 
@@ -27,5 +27,4 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
-
 

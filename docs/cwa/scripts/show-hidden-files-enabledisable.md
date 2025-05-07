@@ -18,7 +18,7 @@ The script will hide or unhide hidden files based on the input parameter.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Show-Hidden-Files---EnableDisable/image_1.png)
+![Sample Run](../../../static/img/docs/be2a3cab-5528-4b53-a636-713198b10fa1/image_1.png)
 
 ## Variables
 
@@ -37,5 +37,4 @@ The script will hide or unhide hidden files based on the input parameter.
 ## Output
 
 - Script log
-
 

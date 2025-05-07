@@ -38,4 +38,3 @@ This document provides information about the default password policy in a domain
 
 (Reference documentation: [Password Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy))
 
-

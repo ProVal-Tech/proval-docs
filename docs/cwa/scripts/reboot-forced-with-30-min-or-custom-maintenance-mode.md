@@ -23,7 +23,7 @@ If the user wishes to specify the duration manually, they can enter the time in 
 ## Sample Run
 
 **Target:** Windows Device  
-![Sample Run Image](../../../static/img/Reboot---Forced-with-30-Min-or-Custom-Maintenance-Mode/image_1.png)
+![Sample Run Image](../../../static/img/docs/8ea82e33-879c-47d6-93a2-e33801126e54/image_1.png)
 
 #### User Parameters
 
@@ -49,5 +49,4 @@ The script will then issue a Windows CLI command to restart the device and exit 
 ## Output
 
 Script log messages
-
 

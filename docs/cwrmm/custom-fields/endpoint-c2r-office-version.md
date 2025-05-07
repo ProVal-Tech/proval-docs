@@ -22,8 +22,7 @@ This document provides details about the C2R Office version installed on the mac
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/Endpoint---C2R-Office-Version/image_1.png)  
-![Screenshot 2](../../../static/img/Endpoint---C2R-Office-Version/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_1.png)  
+![Screenshot 2](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_2.png)
 
 

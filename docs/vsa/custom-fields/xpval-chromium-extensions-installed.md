@@ -25,4 +25,3 @@ This document lists all Chromium extensions installed on the endpoint.
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Machine                                 | Lists all Chromium extensions installed on the endpoint |
 
-

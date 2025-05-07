@@ -35,4 +35,3 @@ This document stores information about the redirection of Desktop, Documents, an
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
 
 
-

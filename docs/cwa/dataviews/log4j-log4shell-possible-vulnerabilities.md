@@ -33,4 +33,3 @@ This document displays potential Log4J/Log4Shell vulnerabilities based on the fo
 | Status        | The status of the application as of the last run of [Import Log4Shell Table](/docs/c3342117-53c8-48de-9831-27cd7da77c00) |
 | Links         | Links to information about the affected application.                                                                     |
 
-

@@ -20,7 +20,7 @@ This group includes the endpoint where the MSRT scanning required to be enable.
 
 ## Group Details
 
-![Summary](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image.png>)
+![Summary](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image_1.png>)
 
 **Group Type:** Dynamic  
 **Group Name:** Malicious Software Removal Tool Scanning Enable  
@@ -30,7 +30,7 @@ This group includes the endpoint where the MSRT scanning required to be enable.
 
 Group Joins
 
-![Group Joins](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image-1.png>)
+![Group Joins](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-1_1.png>)
 
 - `Exclude MSRT Scanning` should be `Equal` to `False`
 - `MSRT Scanner Enable` should be `Equal` to `True`
@@ -44,9 +44,8 @@ Once you have added the above criteria, click the Save button to save the group.
 
 Click Save
 
-![Click Save](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image-2.png>)
+![Click Save](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-2_1.png>)
 
 Group Created
 
-![Group Created](<../../../static/img/docs/Malicious Software Removal Tool Scanning Enable/image-3.png>)
-
+![Group Created](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-3_1.png>)

@@ -28,4 +28,3 @@ Global
 `△ Custom - Execute Script - Configure Winget Auto Update`
 
 
-

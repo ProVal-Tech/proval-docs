@@ -20,10 +20,9 @@ This script will move the agent it is run against to retired assets. This can be
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Move-Agent-to-Retired-Assets-Autofix/image_1.png)
+![Sample Run](../../../static/img/docs/960ebb92-13ba-4d19-9b02-5e0ce55db592/image_1.png)
 
 ## Process
 
 This script runs a SQL query against the machine to retire it.
-
 

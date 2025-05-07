@@ -34,4 +34,3 @@ This document displays the status of the Windows License fetched by the remote m
 | Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |
 
 
-

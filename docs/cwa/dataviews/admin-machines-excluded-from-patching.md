@@ -31,4 +31,3 @@ None
 | Install Policy         | The install policy that is applied to the machine           |
 | Onboarding Completed    | The status of onboarding, indicating whether the machine has completed onboarding or not |
 
-

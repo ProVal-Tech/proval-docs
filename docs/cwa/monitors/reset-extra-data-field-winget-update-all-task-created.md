@@ -13,7 +13,7 @@ unlisted: false
 #### Launch RAWSQL Monitor
 
 1. Launch a fresh RAWSQL monitor. A RAWSQL monitor set is an internal monitor featuring the string `RAWSQL` in both the `Table to Check` and `Field to Check` fields.  
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_1.png)
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_1.png)
 
 #### For Client Level Changes
 
@@ -67,8 +67,8 @@ unlisted: false
    CALL v_extradatarefresh(1, 'Computers');
    ```
 
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_2.png)  
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_3.png)
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_2.png)  
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_3.png)
 
 #### For Environment Level Changes
 
@@ -96,13 +96,12 @@ unlisted: false
    CALL v_extradatarefresh(1, 'Computers');
    ```
 
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_4.png)  
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_5.png)
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_4.png)  
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_5.png)
 
 #### Reload System Cache
 
 4. Reload the system cache to ensure all changes are updated.  
-   ![Image](../../../static/img/Reset---Extra-Data-Field---Winget_update_all_task_created/image_6.png)
-
+   ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_6.png)
 
 

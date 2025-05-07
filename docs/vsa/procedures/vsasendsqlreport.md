@@ -25,4 +25,3 @@ Get SQL Data and Send as Report
 - **sqluser**: Required if using SQL credtype. The username to log in to the SQL server.  
 - **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.  
 
-

@@ -18,7 +18,7 @@ This script runs `gpupdate /force` on the target Windows machine.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Run-gpupdate-force/image_1.png)
+![Sample Run](../../../static/img/docs/3957a669-2951-43ed-bdaf-1c25cf88ff14/image_1.png)
 
 ## Process
 
@@ -27,5 +27,4 @@ This script runs `gpupdate /force` on the target Windows machine.
 ## Output
 
 - Script log
-
 

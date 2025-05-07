@@ -33,4 +33,3 @@ This dataview pulls information regarding file shares and permissions from the s
 | Permission Right       | Full, Read, Change, or No Access                 |
 
 
-

@@ -14,4 +14,3 @@ unlisted: false
 
 Gets the latest available Windows 10 version status.
 
-

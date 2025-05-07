@@ -27,25 +27,24 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_1.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_2.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_2.png)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_3.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_3.png)
 
 3. Set the group name to `DUO Auth for Windows Login Installed`.  
    Description: `This group contains the list of agents where the DUO Auth for Windows Login is already installed via the script "DUO Install & Upgrade - Latest Version."`  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_4.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_5.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_5.png)  
    This search box will appear.  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_6.png)
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_6.png)
 
 5. - Search and select the `Duo Deployment Result` custom field from the search box.
    - Set `Success` in the comparison condition.  
-   ![](../../../static/img/DUO-Auth-for-Windows-Login-Installed/image_7.png)  
+   ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_7.png)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
-
 

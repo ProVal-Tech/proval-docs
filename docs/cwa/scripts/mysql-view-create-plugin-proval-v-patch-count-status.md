@@ -16,7 +16,7 @@ This script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Sta
 
 ## Sample Run
 
-![Sample Run](../../../static/img/MySQL---View---Create---Plugin_ProVal_V_Patch_Count_Status/image_1.png)
+![Sample Run](../../../static/img/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0/image_1.png)
 
 ## Process
 
@@ -26,5 +26,4 @@ This script creates the [CWM - Automate - View - Plugin_ProVal_V_Patch_Count_Sta
 ## Output
 
 - View
-
 

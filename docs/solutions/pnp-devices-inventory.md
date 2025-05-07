@@ -34,4 +34,3 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](/docs/7819fc75-aeae-457b-a451-59221396e900) script.
 
-

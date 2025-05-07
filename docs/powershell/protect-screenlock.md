@@ -76,4 +76,3 @@ Location of output for log, result, and error files.
 .\gpresult_user.html
 ```
 
-

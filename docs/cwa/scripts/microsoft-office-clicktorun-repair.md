@@ -17,7 +17,7 @@ This script runs a repair on Office products; by default, it will perform a quic
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Office---ClickToRun-Repair/image_1.png)
+![Sample Run](../../../static/img/docs/49cf7e8f-1462-42c9-829e-9ee3da05049b/image_1.png)
 
 ## Dependencies
 
@@ -43,5 +43,4 @@ This script runs a repair on Office products; by default, it will perform a quic
 ## Output
 
 - Script log
-
 

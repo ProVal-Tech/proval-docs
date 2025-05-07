@@ -16,15 +16,15 @@ This task is used to change the service login account for a target service. This
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Set-ServiceLogin/image_1.png)
+![Sample Run 1](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_1.png)
 
 Sets the Print Spooler service to run as 'Local System'.
 
-![Sample Run 2](../../../static/img/Set-ServiceLogin/image_2.png)
+![Sample Run 2](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_2.png)
 
 Sets the Print Spooler service to run as 'User1'. Grants 'User1' the Logon as a Service right.
 
-![Sample Run 3](../../../static/img/Set-ServiceLogin/image_3.png)
+![Sample Run 3](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_3.png)
 
 ## Dependencies
 
@@ -45,38 +45,38 @@ Sets the Print Spooler service to run as 'User1'. Grants 'User1' the Logon as a 
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Step 1](../../../static/img/Set-ServiceLogin/image_4.png)
+![Task Creation Step 1](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_4.png)
 
 **Name:** Set-ServiceLogin  
 **Description:** Used to change the service login account for a target service.  
 **Category:** Custom  
 
-![Task Creation Step 2](../../../static/img/Set-ServiceLogin/image_5.png)
+![Task Creation Step 2](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_5.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Step 1](../../../static/img/Set-ServiceLogin/image_6.png)
+![Add Parameter Step 1](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_6.png)
 
 This screen will appear.
 
-![Add Parameter Step 2](../../../static/img/Set-ServiceLogin/image_7.png)
+![Add Parameter Step 2](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_7.png)
 
 - Set `Name` in the `Parameter Name` field.
 - Select `String` from the `Parameter Type` dropdown menu.
 - Toggle Required Field.
 - Click the `Save` button.
 
-![Add Parameter Step 3](../../../static/img/Set-ServiceLogin/image_8.png)
+![Add Parameter Step 3](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_8.png)
 
 It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
-![Add Parameter Confirmation](../../../static/img/Set-ServiceLogin/image_9.png)
+![Add Parameter Confirmation](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_9.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Step 4](../../../static/img/Set-ServiceLogin/image_10.png)
+![Add Parameter Step 4](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_10.png)
 
 - Set `System` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
@@ -85,7 +85,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Click the `Save` button.
 - Click the `Confirm` button to create the parameter.
 
-![Add Parameter Step 5](../../../static/img/Set-ServiceLogin/image_11.png)
+![Add Parameter Step 5](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_11.png)
 
 Add another parameter.
 
@@ -94,7 +94,7 @@ Add another parameter.
 - Toggle Required Field.
 - Click the `Save` button.
 
-![Add Parameter Step 6](../../../static/img/Set-ServiceLogin/image_12.png)
+![Add Parameter Step 6](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_12.png)
 
 Add another parameter.
 
@@ -103,7 +103,7 @@ Add another parameter.
 - Toggle Required Field.
 - Click the `Save` button.
 
-![Add Parameter Step 7](../../../static/img/Set-ServiceLogin/image_13.png)
+![Add Parameter Step 7](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_13.png)
 
 Add another parameter.
 
@@ -112,7 +112,7 @@ Add another parameter.
 - Toggle Required Field.
 - Click the `Save` button.
 
-![Add Parameter Step 8](../../../static/img/Set-ServiceLogin/image_14.png)
+![Add Parameter Step 8](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_14.png)
 
 Add another parameter.
 
@@ -125,27 +125,27 @@ Add another parameter.
 
 Parameters will look like as shown below:
 
-![Parameters Overview](../../../static/img/Set-ServiceLogin/image_15.png)
+![Parameters Overview](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_15.png)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Set-ServiceLogin/image_16.png)
+![Add Row](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_16.png)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Set-ServiceLogin/image_17.png)
+![Blank Function](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_17.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection](../../../static/img/Set-ServiceLogin/image_18.png)
+![PowerShell Script Selection](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_18.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Function](../../../static/img/Set-ServiceLogin/image_19.png)
+![PowerShell Script Function](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_19.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
@@ -267,14 +267,13 @@ Get-Content -Path $LogPath
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log](../../../static/img/Set-ServiceLogin/image_20.png)
+![Script Log](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_20.png)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Set-ServiceLogin/image_21.png)
+![Completed Task](../../../static/img/docs/132fbfad-43d9-488b-bf73-343c72424485/image_21.png)
 
 ## Output
 
 - Script Log
-
 

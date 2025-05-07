@@ -47,4 +47,3 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Compatibility Check  | Equals   | Undetermined    | Orange |
 | Compatibility Check  | Equals   | Capable        | Green  |
 
-

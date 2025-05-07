@@ -45,4 +45,3 @@ This script is used to enable the Authenticode Verification on Windows machines.
 
 Agent procedure log.
 
-

@@ -31,4 +31,3 @@ This document stores data about active user sessions on Windows machines.
 | SessionLength | INT      | The length in minutes of the audited session.    |
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
 
-

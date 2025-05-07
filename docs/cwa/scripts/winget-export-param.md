@@ -30,15 +30,15 @@ Path to the reports on the local machine:
 
 **Example 1:** Export and place the `Softwarelist.json` file at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` on the end machine.
 
-![Example 1](../../../static/img/Winget---Export-Param/image_1.png)
+![Example 1](../../../static/img/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0/image_1.png)
 
 **Example 2:** Export and place both `software.json` and `software.csv` files respectively at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` and `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.csv` on the end machine. Send out the reports to the user running the script via separate emails.
 
-![Example 2](../../../static/img/Winget---Export-Param/image_2.png)
+![Example 2](../../../static/img/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0/image_2.png)
 
 **Example 3:** Export and place both `software.json` and `software.csv` files respectively at `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.json` and `C:/ProgramData/_Automation/Script/Invoke-WingetProcessor/Softwarelist.csv` on the end machine. Send out the reports to [support@provaltech.com](mailto:support@provaltech.com) via separate emails.
 
-![Example 3](../../../static/img/Winget---Export-Param/image_3.png)
+![Example 3](../../../static/img/docs/f9b8a027-e797-49c6-848d-7cb667a16ce0/image_3.png)
 
 ### User Parameters
 
@@ -52,5 +52,4 @@ Path to the reports on the local machine:
 
 - Script logs
 - Email(s) (if enabled)
-
 

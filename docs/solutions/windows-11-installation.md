@@ -65,7 +65,7 @@ The following scripts have been incorporated into the solution:
     - Alert Template: △ Custom - Install Windows 11 - Compatible Machines
 
 3. Reload the system cache:  
-![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_1.png)
+![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_1.png)
 
 4. Configure the solution as outlined below:  
     - Navigate to Automation --> Monitors within the CWA Control Center and setup the following:  

@@ -22,7 +22,7 @@ This script is intended to be monitor-driven only and should never be run manual
 
 The only dependency for this script is that the monitor triggering the script must report the network device ID as the field name. The script will gather all other necessary information.
 
-![Image](../../../static/img/Ticket-Creation---ESXi-Bad-Sensor/image_1.png)
+![Image](../../../static/img/docs/26780ede-b390-4f16-9d5a-de876ab180ee/image_1.png)
 
 ## Process
 
@@ -47,5 +47,4 @@ The only dependency for this script is that the monitor triggering the script mu
 > Type: Storage - Error      Message: Disk 2 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 3 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 4 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
-
 

@@ -39,4 +39,3 @@ This command will set the browser homepage to DuckDuckGo and enforce that page o
 
     .\Set-ChromiumHomepage-log.txt
 
-

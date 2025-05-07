@@ -19,4 +19,3 @@ unlisted: true
 | Google Chrome Auto Update (EDF)          | This EDF is checked when the auto-update of Chrome is enabled via the script.                 |
 
 </div>
-

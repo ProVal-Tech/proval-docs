@@ -18,7 +18,7 @@ This script will disable the prompt message to users from Microsoft warning abou
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---Windows-10-Update-Notification---Disable/image_1.png)
+![Sample Run](../../../static/img/docs/cf05b28e-65d3-4d7b-b0e7-be1fe2427e26/image_1.png)
 
 ## Process
 
@@ -27,5 +27,4 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
-
 

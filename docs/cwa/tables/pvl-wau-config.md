@@ -37,4 +37,3 @@ This document stores the current configuration set for the computer from the cli
 | remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](/docs/68a14948-368f-4064-97a3-d1928e122013) remote monitor creation enabled? (0/1) |
 
 
-

@@ -44,7 +44,7 @@ Import the following content from the `ProSync` plugin:
 ### Step 2
 
 Reload System Cache  
-![Reload System Cache](<../../static/img/cwa-reload-system-cache/image_2.png>)
+![Reload System Cache](<../../static/img/docs/9029e4ae-478e-4f04-8138-b632a2dd5a16/image_2.png>)
 
 ### Step 3
 

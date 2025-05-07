@@ -39,4 +39,3 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Model         | String | The model of the device.                                                                     |
 | Type          | String | The type of Unifi device.                                                                    |
 
-

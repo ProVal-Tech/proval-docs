@@ -21,23 +21,23 @@ The results of the script execution will be stored on the endpoint in either the
 ## GPO
 
 **Scope:** The GPO will be linked with the domain.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_1.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_1.png)
 
 **Details:**  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_2.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_2.png)
 
 **Settings:**  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_3.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_4.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_3.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_4.png)
 
 **Delegation:**  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_5.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_5.png)
 
 ## Sample Run
 
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_6.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_7.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_8.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_6.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_7.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_8.png)
 
 #### User Parameters
 
@@ -49,31 +49,31 @@ The results of the script execution will be stored on the endpoint in either the
 
 1. Go to **Devices** > **Computers**. Once the page loads, you will see a **Manage** option in the Action Bar, at the top-left of the page.
 2. Click **Manage** to open the Menu Item. In the Menu, click **Download Agent.**  
-   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_9.png)
+   ![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_9.png)
 3. A new window will launch from where you can generate the agent installer token.  
-   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_10.png)
+   ![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_10.png)
 4. In the Download Agent window, select your site from the list of sites provided in the dropdown. You can also type to search for your site and select it.
 5. After selecting the site, the `Agent Token` will be displayed. You can copy the token by clicking on the `Copy token to clipboard` button.  
-   ![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_11.png)
+   ![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_11.png)
 
 ## Create Script
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_12.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_13.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_12.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_13.png)
 
 **Name:** `Create CW RMM Agent Deployment GPO`  
 **Description:** `The task will generate a ConnectWise RMM Agent Deployment Group Policy Object (GPO) on the domain controller where it is run. It is recommended to execute the script on the Primary Domain Controller.`  
 **Category:** `Setup`  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_14.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_14.png)
 
 ### Parameters
 
 Click the `Add Parameter` button.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_15.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_15.png)
 
 The `Add New Script Parameter` box will appear.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_16.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_16.png)
 
 In the box, fill in the following details and select `Save` to create the `Token` parameter.
 
@@ -81,19 +81,19 @@ In the box, fill in the following details and select `Save` to create the `Token
 - **Required Field:** `True`
 - **Parameter Type:** `Text String`
 - **Default Value:** `False`  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_17.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_17.png)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_18.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_18.png)
 
 #### Row 1 Function: PowerShell Script
 
 Select the `PowerShell Script` function.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_19.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_20.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_21.png)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
@@ -282,65 +282,64 @@ displayName=New Group Policy Object
 }
 ```
 
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_22.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_22.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_23.png)
 
 #### Row 2 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_24.png)
 
 Select the `Script Log` function.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_25.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_26.png)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `PowerShell Output: %Output%`  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_27.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_27.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_28.png)
 
 #### Row 3 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_24.png)
 
 Select the `PowerShell Script` function.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_19.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_20.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_21.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_19.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_20.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_21.png)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```
 Get-Content -Path "C:/ProgramData/_automation/script/Install-RMMAgentGPO/Install-RMMAgentGPO-Log.txt" -ErrorAction SilentlyContinue
 ```
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_29.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_23.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_29.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_23.png)
 
 #### Row 4 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_24.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_24.png)
 
 Select the `Script Log` function.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_25.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_26.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_25.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_26.png)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Script Logs: %Output%`  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_30.png)  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_28.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_30.png)  
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_28.png)
 
 Click the `Save` button to save the Task.  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_31.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_31.png)
 
 ## Completed Script
 
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_32.png)
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_32.png)
 
 ## Output
 
 - Script Log  
-![Image](../../../static/img/Create-CW-RMM-Agent-Deployment-GPO/image_33.png)
-
+![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_33.png)
 

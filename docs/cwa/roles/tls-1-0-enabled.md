@@ -20,4 +20,3 @@ This document describes how to check if an agent has TLS 1.0 enabled.
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.0/Client:Enabled-%} | Equals     | 1      | Windows        |
 
-

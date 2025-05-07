@@ -14,7 +14,7 @@ unlisted: true
 
 ## Example Ticket
 
-![Example Ticket](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_1.png)
+![Example Ticket](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_1.png)
 
 When you see a ticket like the above for any partner, please follow the troubleshooting steps below.
 
@@ -26,7 +26,7 @@ Look for "MAX Running Scripts" and ensure its value is at least 1/3 of the value
 This applies only to the environment where you have seen frequent Scripting Engine Hung issues.  
 This is not a stated statement; rather, it is an assumption to prevent situations in the partner environment if they continuously encounter scripting engine crash issues.
 
-![MAX Running Scripts](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_2.png)
+![MAX Running Scripts](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_2.png)
 
 Navigate to **System >> Configuration >> Dashboard >> Config >> Configuration >> Properties**.
 
@@ -40,19 +40,19 @@ Navigate to **Automation >> Monitor >> Internal Monitor**.
 
 Right-click and select **New Monitor**.
 
-![New Monitor](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_3.png)
+![New Monitor](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_3.png)
 
 ### 4. Start Fresh
 
 Select **Start Fresh >> Next**.
 
-![Start Fresh](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_4.png)
+![Start Fresh](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_4.png)
 
 ### 5. Run the Query
 
 Run the query as mentioned below:
 
-![Run Query](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_5.png)
+![Run Query](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_5.png)
 
 ```
 SELECT COUNT(r.scriptid) AS `Count`,
@@ -77,9 +77,9 @@ Bring the concern to the consultant with notes and screenshots.
 
 Follow steps 2-4, then run the query below:
 
-![Another Query](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_6.png)
+![Another Query](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_6.png)
 
-![Another Query](../../static/img/Scripting-Engine-Hung---Troubleshooting/image_7.png)
+![Another Query](../../static/img/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d/image_7.png)
 
 ```
 SELECT
@@ -110,4 +110,3 @@ Please validate the stuck scripts and export that report to Excel to forward to 
 Navigate to **Help >> Server Status >> Restart Database Agent**.
 
 This will remove all queued scripts and will temporarily fix the scripting engine hang if the script queuing issue is not resolved from the above query results.
-

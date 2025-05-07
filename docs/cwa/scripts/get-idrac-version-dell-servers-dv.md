@@ -18,7 +18,7 @@ The script will fetch the version of iDRAC from Dell servers. The script output 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Get-iDRAC-Version---Dell-Servers-DV/image_1.png)
+![Sample Run](../../../static/img/docs/4545d115-22d7-451c-935b-fe8ca67f17e7/image_1.png)
 
 ## Variables
 
@@ -44,5 +44,4 @@ The script will fetch the version of iDRAC from Dell servers. The script output 
 - Script log
 - Script state
 - Dataview
-
 

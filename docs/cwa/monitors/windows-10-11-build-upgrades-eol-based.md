@@ -27,10 +27,10 @@ It also excludes machines where the [EPM - Windows Configuration - Script - Inst
 
 Managed Service Plan Groups for Windows Workstations
 
-![Target Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based/image_1.png)
+![Target Image](../../../static/img/docs/f9d7bc4e-9cee-4bd6-a471-7910c3068e3d/image_1.png)
 
 ## Ticketing
 
 The [EPM - Windows Configuration - Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28) script will only create a ticket for failures on the detected machine if a ticket category is selected in the Alerting tab of the monitor set.
 
-![Ticketing Image](../../../static/img/Windows-1011-Build-Upgrades-EOL-Based/image_2.png)
+![Ticketing Image](../../../static/img/docs/f9d7bc4e-9cee-4bd6-a471-7910c3068e3d/image_2.png)

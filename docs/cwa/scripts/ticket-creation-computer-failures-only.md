@@ -16,4 +16,3 @@ This document is an exact copy of the [CWM - Automate - Script - Ticket Creation
 
 It should only be executed from an alert template. Currently, it is implemented in the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
 
-

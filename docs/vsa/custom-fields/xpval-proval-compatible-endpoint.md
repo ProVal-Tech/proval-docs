@@ -24,4 +24,3 @@ All content listed in [EPM - Data Collection - Solution - VSA Proval Script Comp
 |------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR 'Windows OS Out of Date.' OR 'PowerShell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |
 
-

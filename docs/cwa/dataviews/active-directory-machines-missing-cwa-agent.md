@@ -38,4 +38,3 @@ The Active Directory plugin must be installed and configured properly to detect 
 | Created                   | Displays the creation date and time                 |
 | Last Logon                | Displays the last login date and time               |
 
-

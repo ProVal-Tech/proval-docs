@@ -16,7 +16,7 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Deploy-QuickPass-Agent/image_1.png)
+![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_1.png)
 
 ## Global Parameters
 
@@ -47,18 +47,18 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 | Exclude from QuickPass Deployment     | Computer | CheckBox  | Check it if you would like to exclude a computer from QuickPass Deployment                                     |
 
 - The `QuickPass` EDF must be selected, and the `QuickPass Agent ID` EDF should be populated with the specified CustomerID at the client level to initiate the installation on targeted client machines.  
-![QuickPass Agent ID](../../../static/img/Deploy-QuickPass-Agent/image_2.png)  
+![QuickPass Agent ID](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_2.png)  
 <em>For more information on how to fetch the QuickPass Agent ID, refer to the document [Export Customers List, Status and Agent IDs – CyberQP (getquickpass.com)](https://support.getquickpass.com/hc/en-us/articles/360061942274-Export-Customers-List-Status-and-Agent-ID-s).</em>
 
 - The System Property `QuickpassInstallToken` must be filled with the installation token to initiate the QuickPass Agent installation.  
-![QuickpassInstallToken](../../../static/img/Deploy-QuickPass-Agent/image_3.png)  
+![QuickpassInstallToken](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_3.png)  
 <em>The QuickPass Installation Token can be fetched from the Quickpass Dashboard. Navigate to the Settings Menu and then to the Admin Login Details section. Click the COPY button for the Install Token.</em>
 
 - Select the location-level EDF `Exclude from QuickPass Deployment` to exclude the desired location from receiving the QuickPass agent deployment.  
-![Exclude from QuickPass Deployment](../../../static/img/Deploy-QuickPass-Agent/image_4.png)
+![Exclude from QuickPass Deployment](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_4.png)
 
 - Select the computer-level EDF `Exclude from QuickPass Deployment` to exclude the desired machine from receiving the QuickPass agent deployment.  
-![Exclude from QuickPass Deployment](../../../static/img/Deploy-QuickPass-Agent/image_5.png)
+![Exclude from QuickPass Deployment](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_5.png)
 
 ## Output
 
@@ -88,5 +88,4 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
-
 

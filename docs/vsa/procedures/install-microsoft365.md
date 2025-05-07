@@ -37,7 +37,7 @@ The XMLPath needs to be specified. If you've disabled step 12, change this from 
 
 The final variable is whether or not to restart the machine after installation. This can be set via Y/N.
 
-![Image](../../../static/img/Install-Microsoft365/image_1.png)
+![Image](../../../static/img/docs/0c6a208d-d18f-49a5-9244-c5f149c47c0d/image_1.png)
 
 # Payload Usage
 ```
@@ -63,5 +63,4 @@ Location of output for log, result, and error files.
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
-
 

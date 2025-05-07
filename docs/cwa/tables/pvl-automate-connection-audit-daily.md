@@ -34,4 +34,3 @@ The script will start adding data to this table 24 hours after the first entry i
 | datacollectiontime  | datetime | Data collection time for the respective entry        |
 
 
-

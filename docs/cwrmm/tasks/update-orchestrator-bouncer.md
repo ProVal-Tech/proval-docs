@@ -28,18 +28,18 @@ None. This script can be run against any Windows device.
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Image 1](../../../static/img/Update-Orchestrator-Bouncer/image_6.png)  
-![Image 2](../../../static/img/Update-Orchestrator-Bouncer/image_7.png)  
+![Image 1](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_6.png)  
+![Image 2](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_7.png)  
 
 - **Name:** Update Orchestrator Bouncer  
 - **Description:** Will attempt to "neuter" the update orchestrator solution on endpoints by renaming or removing a directory.  
 - **Category:** Patching  
 
-![Image 3](../../../static/img/Update-Orchestrator-Bouncer/image_8.png)  
+![Image 3](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_8.png)  
 
 ## Script
 
-![Image 4](../../../static/img/Update-Orchestrator-Bouncer/image_9.png)  
+![Image 4](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_9.png)  
 Paste the below PowerShell script directly into the "Script" field.
 
 ```
@@ -65,4 +65,3 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
-

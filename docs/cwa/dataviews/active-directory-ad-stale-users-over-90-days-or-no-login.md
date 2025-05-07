@@ -40,4 +40,3 @@ This dataview displays all the stale users in the domain who have not logged in 
 | Account Expiration               | Indicates whether the account is set to expire in Active Directory                                                                                                                                      |
 
 
-

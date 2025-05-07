@@ -33,7 +33,7 @@ The purpose of this solution is to proactively monitor issues with Dell Servers 
      - Set the alert template to `△ Custom - Ticket Creation - Computer`.
 
 4. Reload the System Cache.
-   ![System Cache](../../static/img/Dell-Servers-Monitoring/image_1.png)
+   ![System Cache](../../static/img/docs/55ebada8-b333-4109-a97f-4f352a947662/image_1.png)
 
 5. Configure the solution as follows:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -41,5 +41,4 @@ The purpose of this solution is to proactively monitor issues with Dell Servers 
        - **IMPORTANT:** View the results of the monitor before enabling. If there are more than 20 results, confirm with the consultant if they would like it enabled.
          - Configure with the alert template: `△ Custom - Ticket Creation - Computer`.
          - Right-click and Run Now to start the monitor.
-
 

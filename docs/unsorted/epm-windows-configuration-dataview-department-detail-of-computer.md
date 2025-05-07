@@ -102,4 +102,3 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
-

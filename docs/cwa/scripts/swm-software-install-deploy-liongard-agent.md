@@ -19,20 +19,20 @@ The purpose of the script is to install the [latest available version of the Lio
 - Import the script.
 - Reload System Cache.
 - Create the `liongard_url` system key and set the respective URL in it.  
-  ![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_1.png)
+  ![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_1.png)
 
 ## Sample Run
 
 **To run the `Liongard Agent` Service with the credentials saved at the location-level `Passwords` tab as `Liongard Service Account`:**  
-![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_2.png)  
+![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_2.png)  
 **The `Liongard Service Account` password entry must be saved at the location-level `Passwords` tab for the script to run the service with these credentials.**  
-![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_3.png)  
+![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_3.png)  
 
 **To run the installed `Liongard Agent` service as `LocalSystem`:**  
-![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_4.png)  
+![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_4.png)  
 
 **Attempt to upgrade to the latest available version:**  
-![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_5.png)  
+![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_5.png)  
 
 ## Dependencies
 
@@ -80,10 +80,9 @@ The script will work as long as this download URL is active:
 | Liongard Access Key      | 12fe3456cd67def89abc2       | True     | Liongard Access Key of the client                |
 | Liongard Access Secret    | d02bded900b42440b82292bee20bb449d24db9be4e2802808b0444209e8249dd | True | Liongard Secret of the client                    |
 | Liongard Environment      | ProValTech                  | True     | Client Name in Liongard Portal                   |  
-![Image](../../../static/img/SWM---Software-Install---Deploy-Liongard-Agent/image_6.png)  
+![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_6.png)  
 
 ## Output
 
 - Script Logs
-
 

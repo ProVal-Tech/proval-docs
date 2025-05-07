@@ -17,9 +17,8 @@ Import it into the client environment.
 
 For each client, edit the procedure and change the **Email** global variable to the client's primary contact.  
 
-![Image](../../../static/img/Log4J-Scan-&-Mitigation-Deployment---Internal/image_1.png)  
+![Image](../../../static/img/docs/51b44e54-600e-470f-bf7e-8181511052e6/image_1.png)  
 
 Save the procedure.  
 Log the deployment in the tracker located here: [Deployment Tracker](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)
-
 

@@ -37,4 +37,3 @@ This dataview shows information about GPOs, their applied policies, where they a
 | OU Links        | Created OUs path                                 |
 
 
-

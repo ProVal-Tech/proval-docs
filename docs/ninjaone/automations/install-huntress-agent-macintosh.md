@@ -17,18 +17,18 @@ Deploy Huntress agent on Macintosh machines
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.png)
 
 Search and select `Install Huntress Agent - Macintosh`
-![Image1](../../../static/img/ninja-one-automation-install-huntress-agent-macintosh/image1.png)
+![Image1](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image1.png)
 
 Click the `Run` button to run the script.  
 **Run As:** `System`  
 **Preset Parameter:** `<Leave it Blank>`  
-![Image2](../../../static/img/ninja-one-automation-install-huntress-agent-macintosh/image2.png)
+![Image2](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image2.png)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.png)
 
 ## Dependencies
 
@@ -42,15 +42,15 @@ Click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.png)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.png)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.png)
 
 ### Step 3
 
@@ -63,7 +63,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Mac`  
 **Architecture:** `64-bit`  
 **Run As:** `System`  
-![Image3](../../../static/img/ninja-one-automation-install-huntress-agent-macintosh/image3.png)
+![Image3](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image3.png)
 
 ## Step 4
 
@@ -113,19 +113,19 @@ chmod +x "$scriptPath"
 $scriptPath -a "$accountKey" -o "$organizationKey"
 ```
 
-![Image4](../../../static/img/ninja-one-automation-install-huntress-agent-macintosh/image4.png)
+![Image4](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image4.png)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.png)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.png)
 
 ## Completed Automation
 
-![Image5](../../../static/img/ninja-one-automation-install-huntress-agent-macintosh/image5.png)
+![Image5](../../../static/img/docs/69915d4b-f3e4-4192-b71c-e77559fe9d7f/image5.png)
 
 ## Output
 

@@ -29,7 +29,7 @@ To create a ticket, you must change the global parameter value for `TicketCreati
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Exchange-Zero-Day-Patch-Logging/image_1.png)
+![Sample Run](../../../static/img/docs/2cc1d72d-5d5b-4017-8114-ad5f722b10f5/image_1.png)
 
 ## Dependencies
 
@@ -60,5 +60,4 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVEs
 
 - Script log
 - Ticketing if enabled in Globals
-
 

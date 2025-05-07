@@ -39,4 +39,3 @@ The purpose of this solution is to deploy the SentinelOne agent on Windows, Linu
 - Create [Monitor - SentinelOne Deployment Failure](/docs/9e16691c-a81f-4a59-865c-ac38530ae29f)
 
 
-

@@ -20,7 +20,7 @@ This document creates all the necessary items in the database to ensure the [Pat
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Create-Views-for-Patch-Compliance-Report/image_1.png)
+![Sample Run](../../../static/img/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526/image_1.png)
 
 ## Dependencies
 
@@ -37,5 +37,4 @@ Other items depend on this script being run to function, which are listed below:
 ## Output
 
 This is a one-time use script, used to install/create three views. After running it once, this script can be removed from the environment.
-
 

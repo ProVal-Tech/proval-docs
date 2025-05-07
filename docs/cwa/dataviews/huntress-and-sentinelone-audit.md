@@ -33,4 +33,3 @@ This dataview will show the installation status (allowed or not) of Sentinel One
 | SentinelOne Missing Count   | Count of missing SentinelOne agents at each location      |
 
 
-

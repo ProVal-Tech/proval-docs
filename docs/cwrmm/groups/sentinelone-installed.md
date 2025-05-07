@@ -17,34 +17,33 @@ This document outlines the process for creating a dynamic group that includes Wi
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](../../../static/img/SentinelOne-Installed/image_1.png)
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_1.png)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_2.png)  
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_2.png)  
    The following page will appear after clicking the `Dynamic Group` button:  
-   ![Image](../../../static/img/SentinelOne-Installed/image_3.png)
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_3.png)
 
 3. Set the group name to `SentinelOne Installed`.  
    Description: `The group contains the Windows machines where the Sentinel Agent is installed.`  
-   ![Image](../../../static/img/SentinelOne-Installed/image_4.png)
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_4.png)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_5.png)  
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_5.png)  
    This search box will appear.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_6.png)
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_6.png)
 
 5. Search and select the `Installed Software Name` condition from the search box.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_7.png)  
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_7.png)  
    Set `Sentinel Agent` in the comparison condition.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_8.png)  
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_8.png)  
    **Condition:** `Installed Software Name` `Contains any of` `Sentinel Agent`
 
 6. Click the `Save` button to save/create the group.  
-   ![Image](../../../static/img/SentinelOne-Installed/image_9.png)
+   ![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_9.png)
 
 ## Completed Group
 
-![Image](../../../static/img/SentinelOne-Installed/image_10.png)  
-![Image](../../../static/img/SentinelOne-Installed/image_11.png)
-
+![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_10.png)  
+![Image](../../../static/img/docs/9bed886f-fa13-4389-932e-47c62482db0d/image_11.png)
 

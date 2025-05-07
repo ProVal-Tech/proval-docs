@@ -26,4 +26,3 @@ The dataview helps you audit local admin members with the assistance of a script
 | Computer Name              | Displays the name of the computer         |
 | Local Admin Group Members   | Displays the local admin group members     |
 
-

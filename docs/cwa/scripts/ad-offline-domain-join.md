@@ -18,7 +18,7 @@ This script joins a machine to a domain while it is not connected to the same ne
 
 ## Sample Run
 
-![Sample Run](../../../static/img/AD---Offline-Domain-Join/image_1.png)
+![Sample Run](../../../static/img/docs/6a427581-70ba-456b-8985-f16d9b051c35/image_1.png)
 
 ## Variables
 
@@ -36,5 +36,4 @@ This script joins a machine to a domain while it is not connected to the same ne
 ## Output
 
 - Script log
-
 

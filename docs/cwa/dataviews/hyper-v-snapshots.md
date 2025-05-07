@@ -51,4 +51,3 @@ This document provides an overview of dataview audit snapshots for virtual machi
 | Snapshot Description              | Displays the description of the snapshot                |
 | Is Current Snapshot              | Indicates whether the snapshot is current or not       |
 
-

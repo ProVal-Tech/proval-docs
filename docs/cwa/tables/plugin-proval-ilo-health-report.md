@@ -53,4 +53,3 @@ This table stores health information about HP iLO devices. It is filled by the s
 | LastRun                      | DATETIME | The last time the script was run.                     |
 | Computerid                   | INT      | Computer ID.                                          |
 
-

@@ -26,4 +26,3 @@ Global
 
 Name: `△ Custom - PowerPlan Automation`
 
-

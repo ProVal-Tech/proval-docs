@@ -58,4 +58,3 @@ AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
 
-

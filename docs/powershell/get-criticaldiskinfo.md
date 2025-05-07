@@ -33,4 +33,3 @@ Location of output for log, result, and error files:
 - `.\\Get-CriticalDiskInfo-log.txt`
 - `.\\Get-CriticalDiskInfo-error.txt`
 
-

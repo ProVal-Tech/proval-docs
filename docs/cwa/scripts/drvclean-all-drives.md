@@ -17,7 +17,7 @@ This guide details the process of cleaning well-known directories of aging files
 
 ## Sample Run
 
-![Sample Run](../../../static/img/DRVClean---All-Drives/image_1.png)
+![Sample Run](../../../static/img/docs/27940cde-b1b3-4198-863e-b4257aca7b06/image_1.png)
 
 ## Dependencies
 
@@ -42,5 +42,4 @@ This process cleans well-known directories of aging files and folders on all int
 ## Output
 
 - Script log
-
 

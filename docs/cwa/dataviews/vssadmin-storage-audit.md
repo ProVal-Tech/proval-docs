@@ -35,4 +35,3 @@ This dataview stores the details of VSS admin storage for all volumes.
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Date when the script last ran on the agent    |
 
-

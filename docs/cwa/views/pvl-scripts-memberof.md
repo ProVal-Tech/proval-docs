@@ -32,4 +32,3 @@ Serves as the base table for the [CWM - Automate - Dataview - Scripts - MemberOf
 | Limited To          | Indicates whether the scheduled group script/remote monitor is limited to a search/internal monitor or any group. |
 | Affected Agents      | Number of computers in the group/number of agents detected in the search if limited to search.                   |
 
-

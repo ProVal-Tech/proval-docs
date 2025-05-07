@@ -24,7 +24,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator   | Interval | Result                                             |
 |--------------|----------------|------------|---------------|--------------|----------|---------------------------------------------------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 21600    | ![Result](../../../static/img/Reset-System-Restore-Disk-Space-Usage/image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based  | 21600    | ![Result](../../../static/img/docs/cc0e382d-4e47-41ab-9252-eec3cc10959e/image_1.png) |
 
 ## Target
 

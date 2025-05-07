@@ -14,4 +14,3 @@ unlisted: false
 
 Detect and Get Information About Installed SQL (Reg key)
 
-

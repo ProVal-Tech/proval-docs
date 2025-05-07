@@ -16,10 +16,9 @@ This script removes any registry entries that may be preventing Windows updates 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Set-Windows-Updates-to-Default/image_1.png)
+![Sample Run](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_1.png)
 
 ## Output
 
 - Script log
-
 

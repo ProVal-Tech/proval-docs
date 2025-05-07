@@ -16,8 +16,8 @@ This document executes a PowerShell script to validate the full version of the O
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Cumulative-Update-Audit/image_12.png)
-![Sample Run 2](../../../static/img/Cumulative-Update-Audit/image_13.png)
+![Sample Run 1](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_12.png)
+![Sample Run 2](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_13.png)
 
 ## Dependencies
 
@@ -42,28 +42,28 @@ Create a new `Script Editor` style script in the system to implement this Task.
 **Description:** This script will run a PowerShell script to validate the full version of the OS and compare it with Microsoft's database of Windows 10/11 Cumulative Updates to identify which cumulative update the device has.  
 **Category:** Custom  
 
-![Script Editor](../../../static/img/Cumulative-Update-Audit/image_14.png)
+![Script Editor](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_14.png)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/Cumulative-Update-Audit/image_15.png)
+![Add Row](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_15.png)
 
 #### Row 1 Function: Set User Variable
 
-![Set User Variable](../../../static/img/Cumulative-Update-Audit/image_16.png)
+![Set User Variable](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_16.png)
 
 Type `Threshold_Days` for Variable Name and `75` for the value. This value represents the number of days to consider the latest installed Cumulative Update as obsolete. This threshold can be modified as needed.
 
 The script will return `Failed` in the Custom Field if the most recently installed Cumulative Update on the computer is older than the days stored in this variable.
 
-![Threshold Days](../../../static/img/Cumulative-Update-Audit/image_17.png)
+![Threshold Days](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_17.png)
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Cumulative-Update-Audit/image_18.png) 
-![PowerShell Script 2](../../../static/img/Cumulative-Update-Audit/image_19.png)
+![PowerShell Script](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_18.png) 
+![PowerShell Script 2](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_19.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
 
@@ -75,36 +75,36 @@ Save and move to the next row.
 
 #### Row 3 Function: Script Log
 
-![Script Log](../../../static/img/Cumulative-Update-Audit/image_20.png)
+![Script Log](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_20.png)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_21.png)
+![Script Log Output](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_21.png)
 
 #### Row 4 Function: Set Custom Field
 
 Add a new row by clicking on the "Add Row" button.
 
-![Set Custom Field](../../../static/img/Cumulative-Update-Audit/image_22.png)
+![Set Custom Field](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_22.png)
 
 Select `Set Custom Field` Function.
 
-![Select Custom Field](../../../static/img/Cumulative-Update-Audit/image_23.png)
+![Select Custom Field](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_23.png)
 
 When you select `Set Custom Field`, a new window will open.
 
-![Custom Field Window](../../../static/img/Cumulative-Update-Audit/image_24.png)
+![Custom Field Window](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_24.png)
 
 In this window, search for the `Latest Cumulative Update` field.
 
 **Custom Field:** Latest Cumulative Update  
 **Value:** %Output%
 
-![Custom Field Value](../../../static/img/Cumulative-Update-Audit/image_25.png)
+![Custom Field Value](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_25.png)
 
 Once all items are added, please save the task. The final task should look like the screenshot below.
 
-![Final Task](../../../static/img/Cumulative-Update-Audit/image_26.png)
+![Final Task](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_26.png)
 
 ## Deployment
 
@@ -115,44 +115,43 @@ It is suggested to run the Task once per month against Windows computers.
 3. Select the concerned task.
 4. Click on the `Schedule` button to schedule the task/script.
 
-![Schedule Task](../../../static/img/Cumulative-Update-Audit/image_27.png)
+![Schedule Task](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_27.png)
 
 This screen will appear.
 
-![Schedule Screen](../../../static/img/Cumulative-Update-Audit/image_28.png)
+![Schedule Screen](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_28.png)
 
 Select the relevant time to run the script and click the "Does not repeat" button.
 
-![Select Time](../../../static/img/Cumulative-Update-Audit/image_29.png)
+![Select Time](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_29.png)
 
 This pop-up box will appear.
 
-![Repeat Interval](../../../static/img/Cumulative-Update-Audit/image_30.png)
+![Repeat Interval](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_30.png)
 
 Change the Repeat interval to once per month. Here, I am selecting the 15th of every month since Microsoft releases the patches on the second Tuesday of every month.
 
-![Repeat Interval Selection](../../../static/img/Cumulative-Update-Audit/image_31.png) 
-![Repeat Interval Confirmation](../../../static/img/Cumulative-Update-Audit/image_32.png)
+![Repeat Interval Selection](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_31.png) 
+![Repeat Interval Confirmation](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_32.png)
 
 Search for `windows` in the `Resources*` and select `Windows Desktops` and `Windows Servers` groups. You can search and select any relevant group you would like to schedule the task against.
 
-![Select Resources](../../../static/img/Cumulative-Update-Audit/image_33.png)
+![Select Resources](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_33.png)
 
 Now click the `Run` button to initiate the task.
 
-![Run Task](../../../static/img/Cumulative-Update-Audit/image_34.png)
+![Run Task](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_34.png)
 
 The task will start appearing in the Scheduled Tasks.
 
-![Scheduled Tasks](../../../static/img/Cumulative-Update-Audit/image_35.png) 
-![Scheduled Tasks 2](../../../static/img/Cumulative-Update-Audit/image_36.png)
+![Scheduled Tasks](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_35.png) 
+![Scheduled Tasks 2](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_36.png)
 
 ## Output
 
 - **Script log**
-![Script Log Output](../../../static/img/Cumulative-Update-Audit/image_37.png)
+![Script Log Output](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_37.png)
 
 - **Custom Field**
-![Custom Field Output](../../../static/img/Cumulative-Update-Audit/image_38.png)
-
+![Custom Field Output](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_38.png)
 

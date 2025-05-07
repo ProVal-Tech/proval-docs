@@ -26,4 +26,3 @@ This document displays the Power Profile for each agent in the environment. The 
 | ComputerID     | Displays the computer ID                            |
 | Power Profile   | Displays the Power Profile set on the machine      |
 
-

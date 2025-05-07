@@ -42,4 +42,3 @@ This dataview shows useful information about ESXi hosts.
 | Storage Last Update             | Displays the last time the storage information of the host was updated in Automate. |
 | Last Update                     | Displays the last time the host's information was updated in Automate. |
 
-

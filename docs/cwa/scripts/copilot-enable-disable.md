@@ -24,9 +24,9 @@ EEE454AAB028DE1528935E8962FBD775
 
 ## Sample Run
 
-![Set_Environment](<../../../static/img/docs/Copilot - Enable-Disable/image.png>)
-![Copilot_Revert](<../../../static/img/docs/Copilot - Enable-Disable/image-1.png>)
-![Normal_Execution](<../../../static/img/docs/Copilot - Enable-Disable/image-2.png>)
+![Set_Environment](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image.png>)
+![Copilot_Revert](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image-1.png>)
+![Normal_Execution](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image-2.png>)
 
 ## Dependencies
 

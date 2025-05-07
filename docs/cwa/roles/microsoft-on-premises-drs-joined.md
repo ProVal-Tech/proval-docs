@@ -22,4 +22,3 @@ For more information, visit the official documentation: [Troubleshoot device dsr
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : YES*') -and ($DSRegStatus -like '*DomainJoined : YES*')]"}@%` | Equals     | True   | Windows        |
 
-

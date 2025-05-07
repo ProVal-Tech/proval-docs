@@ -16,16 +16,16 @@ This is an RMM implementation of the agnostic script [Set-Wallpaper](/docs/be77c
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---Wallpaper---Set/image_1.png)
+![Sample Run](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_1.png)
 
 - Set Mode  
-  ![Set Mode](../../../static/img/Windows---Wallpaper---Set/image_2.png)
+  ![Set Mode](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_2.png)
 
 - Enforcement mode:  
-  ![Enforcement Mode](../../../static/img/Windows---Wallpaper---Set/image_3.png)
+  ![Enforcement Mode](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_3.png)
 
 - Reset Mode:  
-  ![Reset Mode](../../../static/img/Windows---Wallpaper---Set/image_4.png)
+  ![Reset Mode](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_4.png)
 
 ## Dependencies
 
@@ -43,37 +43,37 @@ This is an RMM implementation of the agnostic script [Set-Wallpaper](/docs/be77c
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Create Script](../../../static/img/Windows---Wallpaper---Set/image_5.png)
+![Create Script](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_5.png)
 
 **Name:** Windows - Wallpaper - Set  
 **Description:** This script sets the active desktop wallpaper for all users from a local path or a URL. It can optionally be switched to enforce the wallpaper for all users on login.  
 **Category:** Custom  
-![Category](../../../static/img/Windows---Wallpaper---Set/image_6.png)
+![Category](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_6.png)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/Windows---Wallpaper---Set/image_7.png)
+![Add Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_7.png)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Windows---Wallpaper---Set/image_8.png)
+![Parameter Screen](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_8.png)
 
 - Set `Path` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-  ![Save Parameter](../../../static/img/Windows---Wallpaper---Set/image_9.png)
+  ![Save Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_9.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-  ![Confirm Parameter](../../../static/img/Windows---Wallpaper---Set/image_10.png)
+  ![Confirm Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_10.png)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Windows---Wallpaper---Set/image_11.png)
+![Add Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_11.png)
 
 - Set `AllUsers` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-  ![Save Parameter](../../../static/img/Windows---Wallpaper---Set/image_12.png)
+  ![Save Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_12.png)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
@@ -83,26 +83,26 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-  ![Confirm Parameter](../../../static/img/Windows---Wallpaper---Set/image_13.png)
+  ![Confirm Parameter](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_13.png)
 
 All the parameters will look like this:  
-![Parameters](../../../static/img/Windows---Wallpaper---Set/image_14.png)
+![Parameters](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_14.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/Windows---Wallpaper---Set/image_15.png)
+![Add Row](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_15.png)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Windows---Wallpaper---Set/image_16.png)
+![Blank Function](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_16.png)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Windows---Wallpaper---Set/image_17.png)
+![PowerShell Script](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_17.png)
 
 The following function will pop up on the screen:  
-![Function Pop Up](../../../static/img/Windows---Wallpaper---Set/image_18.png)
+![Function Pop Up](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_18.png)
 
 Paste the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -161,14 +161,13 @@ Get-Content -Path $LogPath
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/Windows---Wallpaper---Set/image_19.png)
+![Script Log](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_19.png)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Windows---Wallpaper---Set/image_20.png)
+![Completed Task](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image_20.png)
 
 ## Output
 
 - Script Log
-
 

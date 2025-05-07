@@ -29,4 +29,3 @@ The following filters are applied to this view:
 | Operating System                 | Yes              | Not *mac* AND NOT *linux*                                   |
 | cPVAL All Policy Removal         | Yes              | NOT *1*                                                    |
 
-

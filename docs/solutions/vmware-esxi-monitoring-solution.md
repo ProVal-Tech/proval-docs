@@ -34,4 +34,3 @@ The goal of this solution is to provide effective and customizable monitoring fo
 5. Assign the ticket creation scripts as alert templates for each monitor (these should be importable via the plugin).
 6. Enable the monitors.
 
-

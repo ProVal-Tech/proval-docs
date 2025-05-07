@@ -28,28 +28,28 @@ Parameters must be set in a manner consistent with the agnostic script [SWM - So
 
 ## Screenshot
 
-![Screenshot](../../../static/img/Cisco-Secure-Client-Parameter/image_1.png)
+![Screenshot](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_1.png)
 
 ## How to Use the Custom Field
 
 - Navigate to Client Management > Company Management  
-  ![Step 1](../../../static/img/Cisco-Secure-Client-Parameter/image_2.png)
+  ![Step 1](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_2.png)
   
 - Select the desired client from the Company List  
-  ![Step 2](../../../static/img/Cisco-Secure-Client-Parameter/image_3.png)
+  ![Step 2](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_3.png)
   
 - Go to the `Custom Fields` section in the Company Details  
-  ![Step 3](../../../static/img/Cisco-Secure-Client-Parameter/image_4.png)  
-  ![Step 3.2](../../../static/img/Cisco-Secure-Client-Parameter/image_5.png)
+  ![Step 3](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_4.png)  
+  ![Step 3.2](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_5.png)
   
 - Click the `edit` button for the `Cisco Secure Client Parameter` Custom Field  
-  ![Step 4](../../../static/img/Cisco-Secure-Client-Parameter/image_6.png)
+  ![Step 4](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_6.png)
   
 - This pop-up will appear on the screen  
-  ![Step 5](../../../static/img/Cisco-Secure-Client-Parameter/image_7.png)
+  ![Step 5](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_7.png)
   
 - Write the required parameter in the `Value` text box and click the `Confirm` button to save.  
-  ![Step 6](../../../static/img/Cisco-Secure-Client-Parameter/image_8.png)
+  ![Step 6](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_8.png)
 
 ## Sample Values
 
@@ -59,7 +59,7 @@ Parameters must be set in a manner consistent with the agnostic script [SWM - So
 ```
 **Outcome:**  
 The task will install the Core VPN (keeping it hidden from the end-user) and Umbrella Modules. Because Umbrella is being installed, the UserID, Fingerprint, and OrgId are required. Also, it's mandatory to install the Core VPN module to install the Umbrella module.  
-![Outcome 1](../../../static/img/Cisco-Secure-Client-Parameter/image_9.png)
+![Outcome 1](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_9.png)
 
 **Value:**  
 ```
@@ -67,7 +67,7 @@ The task will install the Core VPN (keeping it hidden from the end-user) and Umb
 ```
 **Outcome:**  
 The task will install the Diagnostics and Reporting, VPN Posture (HostScan), and Network Visibility Modules.  
-![Outcome 2](../../../static/img/Cisco-Secure-Client-Parameter/image_8.png)
+![Outcome 2](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_8.png)
 
 **Value:**  
 ```
@@ -75,7 +75,7 @@ The task will install the Diagnostics and Reporting, VPN Posture (HostScan), and
 ```
 **Outcome:**  
 The task will install the Core VPN module (keeping it hidden from the end-user), Umbrella, Diagnostics and Reporting, and Network Visibility Modules. Because Umbrella is being installed, the UserID, Fingerprint, and OrgId are required.  
-![Outcome 3](../../../static/img/Cisco-Secure-Client-Parameter/image_9.png)
+![Outcome 3](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_9.png)
 
 **Value:**  
 ```
@@ -83,7 +83,7 @@ The task will install the Core VPN module (keeping it hidden from the end-user),
 ```
 **Outcome:**  
 The task will install the Core VPN module (visible to the end-user in the system tray icon), Umbrella, Diagnostics and Reporting, and Network Visibility Modules. Because Umbrella is being installed, the UserID, Fingerprint, and OrgId are required.  
-![Outcome 4](../../../static/img/Cisco-Secure-Client-Parameter/image_10.png)
+![Outcome 4](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_10.png)
 
 **Value:**  
 ```
@@ -91,7 +91,7 @@ The task will install the Core VPN module (visible to the end-user in the system
 ```
 **Outcome:**  
 The task will install all modules, including Umbrella, which require the UserID, Fingerprint, and OrgId to be provided. Programmatically creates a JSON authentication file for access by the Umbrella module.  
-![Outcome 5](../../../static/img/Cisco-Secure-Client-Parameter/image_11.png)
+![Outcome 5](../../../static/img/docs/0dc22f98-f39e-4d02-9716-19087ff35e03/image_11.png)
 
 **Note:**  
 The DownloadURL, Fingerprint, OrgID, and UserID provided above are for illustrative purposes only. When executing the script, it is essential to set the correct values for these parameters according to the specific requirements.
@@ -116,7 +116,6 @@ Different installation parameters can be created by using these parameters from 
 | ISEPosture     | False    |         | String | Custom                | Installs the ISE Posture module.                                                                  |
 | Umbrella       | False    |         | String | Custom                | Installs the Umbrella module. Requires dynamic parameters.                                        |
 | DownloadURL    | True     |         | String | Core, All, Custom, Umbrella | URL to download the [CiscoSecureClient.zip](http://ciscosecureclient.zip/) file.                 |
-
 
 
 

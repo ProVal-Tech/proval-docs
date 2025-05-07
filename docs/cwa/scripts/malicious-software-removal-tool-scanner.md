@@ -23,11 +23,11 @@ Please get the following file hashes approved for this script to work if the env
 
 Run with `SetEnvironment = 1` to set the EDFs the first time this script is imported.
 
-![Sample Run Image 1](../../../static/img/Malicious-Software-Removal-Tool-Scanner/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/18a8b802-bc6a-42a8-859b-89c93fed4257/image_1.png)
 
 After the `SetEnvironment` is set, please refer to the sample execution.
 
-![Sample Run Image 2](../../../static/img/Malicious-Software-Removal-Tool-Scanner/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/18a8b802-bc6a-42a8-859b-89c93fed4257/image_2.png)
 
 ## Variables
 
@@ -62,5 +62,4 @@ After the `SetEnvironment` is set, please refer to the sample execution.
 
 - Script log
 - Local file on the computer: `C:/WINDOWS/debug/mrt.log`
-
 

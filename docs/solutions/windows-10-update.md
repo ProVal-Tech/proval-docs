@@ -67,4 +67,3 @@ For a manual run:
    - Please add the Windows 10 - Update Stats - Retrieve script to your automate implementation.
 
 
-

@@ -40,4 +40,3 @@ downloadMbps : 924.245952
 uploadMbps   : 935.860104
 ```
 
-

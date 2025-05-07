@@ -24,7 +24,6 @@ Marking this custom field will exclude the machine from the [CW RMM - Machine Gr
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_1.png) 
-![Screenshot 2](../../../static/img/EndPoint---WingetUpdateAll_Task_Exclude/image_2.png)
-
+![Screenshot 1](../../../static/img/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9/image_1.png) 
+![Screenshot 2](../../../static/img/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9/image_2.png)
 

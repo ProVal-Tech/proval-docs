@@ -18,7 +18,7 @@ This script sets maintenance mode on the target agent.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Maintenance-Mode---Set/image_1.png)
+![Sample Run](../../../static/img/docs/5ee3b278-2443-42b9-beab-f5c58f360881/image_1.png)
 
 ### User Parameters
 
@@ -33,5 +33,4 @@ The script starts maintenance mode with a prompt for how long to set it. Please 
 ## Output
 
 - Script log
-
 

@@ -20,4 +20,3 @@ This document outlines the process to verify if the Office 365 Update Channel is
 |-------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------|---------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configuration:CDNBaseUrl-%}` | Contains   | [http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114](http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114) | Windows       |
 
-

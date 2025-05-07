@@ -39,4 +39,3 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](/docs
 
 
 
-

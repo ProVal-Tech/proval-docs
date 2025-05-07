@@ -28,4 +28,3 @@ This internal monitor detects offline servers based on the last contact and last
 
 Windows Server
 
-

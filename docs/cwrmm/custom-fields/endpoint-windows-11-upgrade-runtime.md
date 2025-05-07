@@ -20,4 +20,3 @@ This document outlines the storage of the runtime for the Windows 11 Compatibili
 |----------------------------------|----------|-----------|---------------|---------------------------------------------------------------|----------|
 | Windows 11 Upgrade Runtime       | Endpoint | Text Box  | NA            | Stores the runtime of the Windows 11 Compatibility Validation task. | Yes      |
 
-

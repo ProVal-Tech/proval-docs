@@ -35,4 +35,3 @@ This script sets the required registry values to configure "SchUseStrongCrypto" 
 - Ticket
 - Script logs
 
-

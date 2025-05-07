@@ -28,11 +28,10 @@ This solution performs the user login/logout activity audit. By default, the scr
 - Import the dataview [User Activity Audit [Script]](/docs/11c4193c-786a-4477-ae73-9992ff55ea16).
 - Run the script once by setting the User Parameter value 'SetEnvironment' to 1, as shown below:
 
-  ![Image](../../../static/img/Solution---User-Activity-Tracing/image_1.png)
+  ![Image](../../../static/img/docs/408179bd-2008-48a0-9311-d037a4e670ba/image_1.png)
 
   This will create the table and also establish the system property 'ProVal_UserLogIn_Out_Threshold_Days' with the global parameter value 'DataRetention_Threshold' in days, as provided in the script for data retention (defaults to 90 days retention).
 - Then, schedule the script on the Windows machines.
 
 **NOTE:** This script is not suitable for execution on the DC servers to avoid the noise of multiple user login/logout traces in the system event log as well as in the database table. The DC server is excluded from the script for execution.
-
 

@@ -88,17 +88,17 @@ Create the following automations:
 ### Step 3
 
 Create the [Duo Deployment - Windows Workstations](/docs/b90edc31-5509-4568-9c24-c020b24904cd) compound condition for default `Windows Workstation [Default]` agent policy.  
-![DefaultWindowsWorkstation](../../static/img/ninja-one-compound-conditions-common-screenshots/defaultwindowsworkstations.png)
+![DefaultWindowsWorkstation](../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultwindowsworkstations.png)
 
 ### Step 4
 
 Create the [Duo Deployment - Windows Servers](/docs/1f8e6ed3-ac24-40a5-8238-4c52f259c157) compound condition for default `Windows Server [Default]` agent policy.  
-![DefaultWindowsServer](../../static/img/ninja-one-compound-conditions-common-screenshots/defaultwindowsservers.png)
+![DefaultWindowsServer](../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultwindowsservers.png)
 
 ### Step 5
 
 Create the [Duo Deployment - Macintosh](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/efef6d5d-b853-46a5-8b7b-3d248a55e7a0) illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
-![Image2](../../static/img/ninja-one-solution-duo-deployment/image2.png)
+![Image2](../../static/img/docs/a11cd829-a491-4cb1-a7c1-3f56fa8c7557/image2.png)
 
 ## FAQ
 

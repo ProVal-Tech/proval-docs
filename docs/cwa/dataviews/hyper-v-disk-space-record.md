@@ -38,4 +38,3 @@ This dataview shows the report of the Hyper-V disk records from the custom table
 | SSD               | Indicates whether the disk is SSD or not                |
 
 
-

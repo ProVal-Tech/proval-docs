@@ -16,4 +16,3 @@ unlisted: false
 |--------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|----------------------------|
 | xPVAL Drive List   | Machine                                  | Contains all physical non-removable drives with a maximum capacity of over 10GB on the endpoint. | DriveLetter: C: D: E:      |
 
-

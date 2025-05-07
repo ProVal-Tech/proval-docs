@@ -51,4 +51,3 @@ Agent Procedure Log, Remove-Splashtop-log.txt
 
 Attach the content XML VSA Export to this document.
 
-

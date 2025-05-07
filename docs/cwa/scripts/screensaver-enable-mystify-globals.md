@@ -18,7 +18,7 @@ This document outlines a scheduled task that enables the screensaver for the spe
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Screensaver---Enable-Mystify-Globals/image_1.png)
+![Sample Run](../../../static/img/docs/a94dc919-d39c-4787-a585-ae2dc9456d12/image_1.png)
 
 ### Global Parameters
 
@@ -34,5 +34,4 @@ The script runs a PowerShell script to create a scheduled task that enables the 
 ## Output
 
 - Script log
-
 

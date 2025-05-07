@@ -32,4 +32,3 @@ This table stores the User login/logout data.
 | Action            | INT     | Indicates whether the trace found was for login or logout.                                     |
 | ScriptRanDate     | DATETIME| The date when the script last ran.                                                              |
 
-

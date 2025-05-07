@@ -36,4 +36,3 @@ This document provides an overview of how a computer is domain joined (or not do
 | Microsoft - On-Premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
 
-

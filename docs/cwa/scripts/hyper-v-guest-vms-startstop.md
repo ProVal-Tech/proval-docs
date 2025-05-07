@@ -18,9 +18,9 @@ This script allows for the shutdown or startup of VMs on the target Hyper-V host
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Hyper-V---Guest-VMs---StartStop/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_1.png)
 
-![Sample Run Image 2](../../../static/img/Hyper-V---Guest-VMs---StartStop/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_2.png)
 
 ## Dependencies
 
@@ -42,5 +42,4 @@ Please see [Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a) for inf
 
 - Outputs logs to the script log.
 - Outputs logs to log/data files in the script directory.
-
 

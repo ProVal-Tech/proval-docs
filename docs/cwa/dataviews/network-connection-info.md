@@ -32,4 +32,3 @@ The dataview displays detailed information about network connections.
 | Domain Name                | The domain information of the machine.                      |
 | DHCP State                 | The DHCP state (Static/Dynamic) of the network.            |
 
-

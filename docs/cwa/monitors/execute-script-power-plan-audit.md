@@ -23,17 +23,16 @@ The internal monitor executes the [EPM - Data Collection - Script - Power Plan -
 
 Managed Workstations  
 
-![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_1.png)
+![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_1.png)
 
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Power Plan - Audit`  
 
-![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_2.png)  
+![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_2.png)  
 
 The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.  
 
-![Image](../../../static/img/Execute-Script---Power-Plan---Audit/image_3.png)  
-
+![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_3.png)  
 
 

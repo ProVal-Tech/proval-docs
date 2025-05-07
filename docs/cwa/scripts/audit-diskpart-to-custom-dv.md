@@ -17,7 +17,7 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Audit-Diskpart-to-Custom-DV/image_1.png)
+![Sample Run](../../../static/img/docs/b61566b1-676d-433c-ab86-d7272efe5717/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,4 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 ## Output
 
 - Dataview
-
 

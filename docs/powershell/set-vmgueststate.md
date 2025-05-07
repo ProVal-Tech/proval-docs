@@ -54,4 +54,3 @@ Location of output for log, result, and error files.
 .\Set-VMGuestState-error.txt
 ```
 
-

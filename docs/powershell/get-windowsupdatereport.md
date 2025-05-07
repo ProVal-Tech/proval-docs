@@ -109,4 +109,3 @@ Running this script on Windows 7 and earlier versions is at best unstable and at
 .\Get-Windows10PatchInfo-log.txt
 ```
 
-

@@ -25,6 +25,5 @@ The script no longer requires a restart to complete successfully.
 The script is located in ProVal VSA at:  
 `Shared > PVAL Content Source > BitLocker > Enable Bitlocker`
 
-![Image](../../../static/img/Enable-Bitlocker/image_1.png)
-
+![Image](../../../static/img/docs/1a32292b-df11-46ef-997f-7ad70f59061f/image_1.png)
 

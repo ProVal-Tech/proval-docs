@@ -29,7 +29,6 @@ Use the dropdown menu to enable or disable the autofix on the endpoint. This set
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_1.png)  
-![Screenshot 2](../../../static/img/EndPoint---Out_of_Date_CU_Autofix/image_2.png)  
-
+![Screenshot 1](../../../static/img/docs/044210c4-14ae-4996-ab9f-009290bf05e4/image_1.png)  
+![Screenshot 2](../../../static/img/docs/044210c4-14ae-4996-ab9f-009290bf05e4/image_2.png)  
 

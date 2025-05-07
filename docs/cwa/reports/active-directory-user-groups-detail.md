@@ -20,4 +20,3 @@ This report is dependent on the following items:
 - The Active Directory Plugin needs to be installed and configured.
 - [AD - Create Views/Tables/Schedules for AD Reporting Solution](/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49)
 
-

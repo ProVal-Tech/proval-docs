@@ -34,11 +34,11 @@ This solution contains Copilot disabling/uninstall and revert optional addition 
 
 2. Execute the script [Script_Copilot_Enable_Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7) against any online Windows machine with the `Set_Environment` parameter set to `1` to create the EDFs used by the solution.
    
-![Set_Envrionment](<../../static/img/docs/CWA Solution - Copilot Disable-Uninstall & Revert/image.png>)
+![Set_Envrionment](<../../static/img/docs/00a48929-36d7-4435-8113-deb3b05b5bc2/image.png>)
 
 3. Reload the system cache:
 
-   ![Image](../../static/img/C2R-Update-Channel/image_2.png)
+   ![Image](../../static/img/docs/545750d5-274a-46d9-bf8a-8ad677293458/image_2.png)
 
 4. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:

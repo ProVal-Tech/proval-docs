@@ -22,4 +22,3 @@ The role can also be used to create an audit data view if needed.
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/System/currentcontrolset/services/kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
 
-

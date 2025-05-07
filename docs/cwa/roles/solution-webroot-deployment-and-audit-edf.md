@@ -63,7 +63,7 @@ This solution is intended for partners where the Webroot plugin is broken, which
    - △ Custom - Execute Script - Webroot Keycode Verification - EDF
 
 5. **Reload the System Cache**
-   ![Reload System Cache](../../../static/img/Solution---Webroot-Deployment-and-Audit-EDF/image_1.png)
+   ![Reload System Cache](../../../static/img/docs/a13e2f1a-70b3-4957-bf21-c528c1b5932c/image_1.png)
 
 6. **Configure the solution as follows:**
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -76,6 +76,5 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
    **Note:**
    Please read the complete EDF detailing in the script before implementing the solution: [Install Webroot SecureAnywhere [EDF]](/docs/cddb5b54-a76e-4d74-8226-8f536d8f0eb4). Additionally, follow the Other Content sections ([Webroot Site KeyCode](/docs/bde90a61-771c-46ef-98f5-3278febb3278) and [Webroot GroupCode and GroupName Fetching](/docs/4f44f833-a625-46b6-bae7-c74512ff22da)) for steps on how to obtain the Site keycode and Group Code from the Webroot Portal.
-
 
 

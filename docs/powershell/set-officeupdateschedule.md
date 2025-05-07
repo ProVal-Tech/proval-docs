@@ -36,4 +36,3 @@ Sets the update schedule to 'Current Channel (Preview)'
 ## Output
 - `.\Set-OfficeUpdateSchedule-log.txt`
 - `.\Set-OfficeUpdateSchedule-error.txt`
-

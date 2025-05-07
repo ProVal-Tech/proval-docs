@@ -115,7 +115,7 @@ Check the concerned groups to ensure the monitor set is created and configured w
 
 Limit to: `Computers - Dell Servers`
 
-![Image](../../../static/img/Implement--Dell-Hardware-Monitoring/image_1.png)
+![Image](../../../static/img/docs/2be5ccc9-2700-4f5d-9b77-30567de4cfdf/image_1.png)
 
 ### 8. Set Alert Template
 Set the appropriate alert template.

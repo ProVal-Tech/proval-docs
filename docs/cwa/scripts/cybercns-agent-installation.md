@@ -25,7 +25,7 @@ The global variable `URL_Download` must have a valid download URL.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Cybercns-Agent-Installation/image_1.png)
+![Sample Run](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image_1.png)
 
 ## Variables
 
@@ -54,5 +54,4 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 

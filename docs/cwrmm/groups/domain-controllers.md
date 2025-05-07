@@ -16,8 +16,8 @@ This document outlines the steps to set up a dynamic group for Domain Controller
 
 ## Screenshot
 
-![Screenshot 1](../../../static/img/Domain-Controllers/image_1.png)  
-![Screenshot 2](../../../static/img/Domain-Controllers/image_2.png)  
+![Screenshot 1](../../../static/img/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68/image_1.png)  
+![Screenshot 2](../../../static/img/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68/image_2.png)  
 
 ## Group Details
 
@@ -26,5 +26,4 @@ This document outlines the steps to set up a dynamic group for Domain Controller
 - **Description:** Contains Domain Controllers  
 - **Criteria Selection:** Select `Service Display Name` as the criteria, `Equal` as the comparator, and type `Active Directory Domain Services` in the condition box.  
 - **Creation:** Click the `Save` button at the top left to create the group.  
-
 

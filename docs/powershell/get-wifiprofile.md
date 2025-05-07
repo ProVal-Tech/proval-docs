@@ -41,4 +41,3 @@ To retrieve Wi-Fi profiles with passwords in plain text:
 - .\Get-WifiProfiles-log.txt
 - .\Get-WifiProfiles-error.txt
 
-

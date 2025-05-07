@@ -16,12 +16,11 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Gecko-Cache---Clear/image_1.png)
+![Sample Run](../../../static/img/docs/b0f8d2f8-6688-4c91-990a-041ad2e9bd3e/image_1.png)
 
 ## Output
 
 - Script log
-
 
 
 

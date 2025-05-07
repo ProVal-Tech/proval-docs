@@ -20,4 +20,3 @@ This document outlines a method to determine if the device has Windows Defender 
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Windows Advanced Threat Protection/Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
 
-

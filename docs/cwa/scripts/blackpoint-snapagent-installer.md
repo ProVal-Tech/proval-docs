@@ -16,7 +16,7 @@ This script is designed to install the SnapAgent on the machine.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/BlackPoint---SnapAgent-Installer/image_1.png)
+![Sample Run](../../../static/img/docs/202e2dde-5865-4035-8410-37dc6cb92a60/image_1.png)
 
 ## Dependencies
 
@@ -48,7 +48,7 @@ Document the various variables in the script. Delete any section that is not rel
 
 - To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level as shown below:
 
-![Ticketing Category](../../../static/img/BlackPoint---SnapAgent-Installer/image_2.png)
+![Ticketing Category](../../../static/img/docs/202e2dde-5865-4035-8410-37dc6cb92a60/image_2.png)
 
 - **Subject:**  
   SnapAgent Installation Failed on %computername% of %clientname%/%locationname%
@@ -61,5 +61,4 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Local files on the computer
-
 

@@ -31,4 +31,3 @@ This solution enables BitLocker on the endpoints. It features control over the e
 - Create the [Monitor - BitLocker Initialize Failure Detection](/docs/9475b189-47c5-4682-b278-de406761113b) and follow the deployment instructions.
 
 
-

@@ -28,4 +28,3 @@ This report pulls data from the custom table "plugin_proval_shadowcopystats" and
 | Computer               | Computer Name                                            |
 | Shadow Copy Enabled     | Enabled/Disabled status of Shadow Copy on the machine    |
 
-

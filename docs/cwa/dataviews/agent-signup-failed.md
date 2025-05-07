@@ -29,4 +29,3 @@ An audit of the DISTINCT computers that failed to sign up.
 | Latest Attempt  | The last time the installation attempt was made.                                  |
 | Error Message   | The last error message received from the attempted installation.                  |
 
-

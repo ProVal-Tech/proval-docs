@@ -17,10 +17,10 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 ## Sample Run
 
 - For the first execution of the script, the value of the user parameter `Set_Environment` should be set to `1`. This will create the EDF, System property, and [custom table](/docs/cffbdce7-7390-4b11-9300-6a34799b7d82) solution:  
-  ![Sample Run Image 1](../../../static/img/Get-Wifi-Profile/image_1.png)  
+  ![Sample Run Image 1](../../../static/img/docs/d97282c0-4d81-46f9-b821-d553c2d8a596/image_1.png)  
 
 - Regular execution:  
-  ![Sample Run Image 2](../../../static/img/Get-Wifi-Profile/image_2.png)  
+  ![Sample Run Image 2](../../../static/img/docs/d97282c0-4d81-46f9-b821-d553c2d8a596/image_2.png)  
 
 ## Variables
 
@@ -42,6 +42,5 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
-
 
 

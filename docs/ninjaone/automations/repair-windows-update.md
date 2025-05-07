@@ -18,16 +18,16 @@ The goal of this script is to fix potential patching issues for Windows devices.
 ## Sample Run
 
 Select any computer where you want to run the script. Then go to `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)  
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.png)  
 
 Search the script name and click on it:  
-![SampleRun](../../../static/img/NinjaOne-Repair-Windows-Update/image9.png)  
+![SampleRun](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image9.png)  
 
 Select the parameters as per your requirement and then click on `Run`:  
-![SampleRun](../../../static/img/NinjaOne-Repair-Windows-Update/Image10.png)  
+![SampleRun](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/Image10.png)  
 
 Click on `Yes` to run the script
-![SampleRun](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![SampleRun](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.png)
 
 ## Dependencies
 
@@ -46,15 +46,15 @@ Click on `Yes` to run the script
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.png)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.png)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.png)
 
 **Name:** `Repair Windows Update`  
 **Description:** `This is used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.`  
@@ -64,7 +64,7 @@ The scripting window will open.
 **Architecture:** `All`  
 **Run As:** `System`  
 
-![ScriptLogic](../../../static/img/NinjaOne-Repair-Windows-Update/image1.png)
+![ScriptLogic](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image1.png)
 
 ```powershell
 #region parameters
@@ -123,51 +123,51 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![ScriptLogic](../../../static/img/NinjaOne-Repair-Windows-Update/image2.png)
+![ScriptLogic](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image2.png)
 
 ## Script Variables
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.png)
 
 Select the `Checkbox` option.  
-![Checkbox](../../../static/img/NinjaOne-Repair-Windows-Update/image4.png)
+![Checkbox](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image4.png)
 
 The `Add Checkbox Variable` window will open.  
-![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image3.png)
+![Checbox](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image3.png)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
 **Name:** `SfcScan`  
 **Description:** `Toggles an optional SFC scan as a repair option for Windows updates.`  
 **Set Default Value:** `<Leave it Unchecked>`  
-![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image5.png)
+![Checbox](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image5.png)
 
 Add another Script variable and Select the `Checkbox` option. `Add Checkbox Variable` window will open. In the box, fill in the following details and select `Add` to create the script variable.
 
 **Name:** `DISMRepair`  
 **Description:** `Toggles an optional DISM repair`  
 **Set Default Value:** `<Leave it Unchecked>`  
-![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image6.png)
+![Checbox](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image6.png)
 
 Add another Script variable and Select the `Checkbox` option. `Add Checkbox Variable` window will open. In the box, fill in the following details and select `Add` to create the script variable.
 
 **Name:** `Reboot`  
 **Description:** `If enabled, the script will forcefully restart the computer after completing the repair operations.`  
 **Set Default Value:** `<Leave it Unchecked>`  
-![Checbox](../../../static/img/NinjaOne-Repair-Windows-Update/image8.png)
+![Checbox](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image8.png)
 
 ## Saving the Automation
 
 Click the Save button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.png)
 
 If you are prompted to enter your MFA code, provide the code and press the `Continue` button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.png)
 
 ## Completed Automation
 
-![CompleteTask](../../../static/img/NinjaOne-Repair-Windows-Update/image7.png)
+![CompleteTask](../../../static/img/docs/d7bb77e6-e7b8-45d2-9fa7-f109574aa887/image7.png)
 
 ## Output
 

@@ -59,4 +59,3 @@ Location of output for log, result, and error files.
 .\Invoke-WingetProcessor-log.txt
 .\Invoke-WingetProcessor-error.txt
 ```
-

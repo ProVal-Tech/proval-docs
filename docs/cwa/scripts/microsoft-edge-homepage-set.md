@@ -16,7 +16,7 @@ This document describes the Automate implementation of the agnostic script [SWM 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Edge---Homepage---Set/image_1.png)
+![Sample Run](../../../static/img/docs/a1ee2dd1-6f31-4da2-bb85-0c52f7a6566e/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,4 @@ This document describes the Automate implementation of the agnostic script [SWM 
 ## Output
 
 - Script Logs
-
 

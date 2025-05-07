@@ -30,4 +30,3 @@ This document contains information about the Azure AD Connect version installed 
 | xPVAL Azure AD Connect Version      | Machine CF                             | Azure AD Connect Version  |
 
 
-

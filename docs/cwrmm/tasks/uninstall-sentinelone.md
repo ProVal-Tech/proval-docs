@@ -16,9 +16,9 @@ This script identifies the installed version of the SentinelOne agent and attemp
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Uninstall-SentinelOne/image_2.png)  
-![Sample Run 2](../../../static/img/Uninstall-SentinelOne/image_3.png)  
-![Sample Run 3](../../../static/img/Uninstall-SentinelOne/image_4.png)  
+![Sample Run 1](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_2.png)  
+![Sample Run 2](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_3.png)  
+![Sample Run 3](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_4.png)  
 
 ## Dependencies
 
@@ -30,57 +30,57 @@ This script identifies the installed version of the SentinelOne agent and attemp
 |------------|------------------|----------|-------------|-----------------------------------------------------------------------------------------------------|
 | PassPhrase | FQQHCWFQFC==     | False    | Text String | The passphrase used for uninstalling the SentinelOne agent when Anti-Tamper is enabled.           |
 
-![User Parameters Image](../../../static/img/Uninstall-SentinelOne/image_5.png)
+![User Parameters Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_5.png)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](../../../static/img/Uninstall-SentinelOne/image_6.png)  
-![Task Creation Image 2](../../../static/img/Uninstall-SentinelOne/image_7.png)  
+![Task Creation Image 1](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_6.png)  
+![Task Creation Image 2](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_7.png)  
 
 **Name:** `Uninstall SentinelOne`  
 **Description:** `This script identifies the installed version of the SentinelOne agent and attempts to uninstall it. If a passphrase is provided, the script will use it; otherwise, tamper protection must be disabled on the computer to proceed with the removal.`  
 **Category:** `Application`  
 
-![Task Creation Image 3](../../../static/img/Uninstall-SentinelOne/image_8.png)
+![Task Creation Image 3](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_8.png)
 
 ## Parameters
 
 ### PassPhrase:
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/Uninstall-SentinelOne/image_9.png)
+![Add Parameter Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_9.png)
 
 This screen will appear.
 
-![Parameter Screen](../../../static/img/Uninstall-SentinelOne/image_10.png)
+![Parameter Screen](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_10.png)
 
 - Set `PassPhrase` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Save Image](../../../static/img/Uninstall-SentinelOne/image_11.png)
+![Parameter Save Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_11.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/Uninstall-SentinelOne/image_12.png)
+![Add Row Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_12.png)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Uninstall-SentinelOne/image_13.png)
+![Blank Function](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_13.png)
 
 ### Row 1 Function: PowerShell Script
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Image 1](../../../static/img/Uninstall-SentinelOne/image_14.png)  
-![PowerShell Script Image 2](../../../static/img/Uninstall-SentinelOne/image_15.png)  
+![PowerShell Script Image 1](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_14.png)  
+![PowerShell Script Image 2](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_15.png)  
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup](../../../static/img/Uninstall-SentinelOne/image_16.png)
+![PowerShell Script Popup](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_16.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -136,39 +136,38 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Execution Image](../../../static/img/Uninstall-SentinelOne/image_17.png)
+![PowerShell Script Execution Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_17.png)
 
 ### Row 2 Function: Script Log
 Add a new row by clicking the `Add Row` button.
 
-![Add Row for Script Log](../../../static/img/Uninstall-SentinelOne/image_18.png)
+![Add Row for Script Log](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_18.png)
 
 A blank function will appear.
 
-![Blank Function for Script Log](../../../static/img/Uninstall-SentinelOne/image_19.png)
+![Blank Function for Script Log](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_19.png)
 
 Search and select the `Script Log` function.
 
-![Script Log Selection](../../../static/img/Uninstall-SentinelOne/image_20.png)
+![Script Log Selection](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_20.png)
 
 The following function will pop up on the screen:
 
-![Script Log Popup](../../../static/img/Uninstall-SentinelOne/image_21.png)
+![Script Log Popup](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_21.png)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](../../../static/img/Uninstall-SentinelOne/image_22.png)
+![Script Log Save](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_22.png)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](../../../static/img/Uninstall-SentinelOne/image_23.png)
+![Save Script](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_23.png)
 
 ## Completed Script
 
-![Completed Script Image](../../../static/img/Uninstall-SentinelOne/image_24.png)
+![Completed Script Image](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_24.png)
 
 ## Output
 
 - Script log
-
 

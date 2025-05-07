@@ -25,19 +25,19 @@ The data returned by the monitor set is displayed by the [Volume Exhaustion Esti
 
 #### Status
 
-![Status](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_1.png)
+![Status](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_1.png)
 
 #### Location
 
-![Location](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_2.png)
+![Location](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_2.png)
 
 #### Alerting
 
-![Alerting](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_3.png)
+![Alerting](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_3.png)
 
 #### Configuration
 
-![Configuration](../../../static/img/EPM---Disk---Remote-Monitor---Volume-Space-Sampling/image_4.png)
+![Configuration](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_4.png)
 
 **Executable/Arguments:** 
 ```shell

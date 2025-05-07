@@ -73,4 +73,3 @@ A red cell in the dataview indicates that the values available on that computer 
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
 
-

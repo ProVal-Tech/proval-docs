@@ -25,91 +25,91 @@ This group contains the endpoints where the Ninja RMM deployment is enabled, the
 ### Step 1
 
 Navigate to `ENDPOINTS` ➞ `Groups`  
-![Step1](../../../static/img/cw-rmm-groups-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step1.png)
 
 ### Step 2
 
 Create a new dynamic group by clicking the `Dynamic Group` button.  
-![Step2](../../../static/img/cw-rmm-groups-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step2.png)
 
 This page will appear after clicking on the `Dynamic Group` button:  
-![Step3](../../../static/img/cw-rmm-groups-common-screenshots/step3.png)
+![Step3](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step3.png)
 
 ### Step 3
 
 **Group Name:** `Ninja RMM Deployment`  
 **Description:** `This group contains the endpoints where the Ninja RMM deployment is enabled, the software "NinjaRMMAgent" is missing, and the custom field "Ninja Deployment Result" is blank.`
 
-![Summary](../../../static/img/docs/ninja-rmm-deployment/image.png)
+![Summary](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image.png)
 
 ### Step 4
 
 Click the `+ Add Criteria` in the `Criteria` section of the group.  
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 This search box will appear:  
-![Step5](../../../static/img/cw-rmm-groups-common-screenshots/step5.png)
+![Step5](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step5.png)
 
 ### Step 5
 
 Search for `Ninja Deployment Enable` and select it and set it `Equal` to `True`
 
-![Ninja Deployment Enable](../../../static/img/docs/ninja-rmm-deployment/image-1.png)
+![Ninja Deployment Enable](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-1.png)
 
-![Add 1](../../../static/img/docs/ninja-rmm-deployment/image-7.png)
+![Add 1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-7.png)
 ### Step 6
 
 Click `Add Criteria`
 
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`.
 Make sure to select the `Ninja Deployment Exclude` site level custom field.
 
-![Exclude Site](../../../static/img/docs/ninja-rmm-deployment/image-2.png)
+![Exclude Site](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-2.png)
 
-![Add 2](../../../static/img/docs/ninja-rmm-deployment/image-8.png)
+![Add 2](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-8.png)
 
 ### Step 7
 
 Click `Add Criteria`
 
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 Search for `Ninja Deployment Exclude` and select it and set it `Equal` to `False`
 Make sure to select the `Ninja Deployment Exclude` endpoint level custom field.
 
-![Exclude Endpoint](../../../static/img/docs/ninja-rmm-deployment/image-3.png)
+![Exclude Endpoint](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-3.png)
 
-![Add 3](../../../static/img/docs/ninja-rmm-deployment/image-9.png)
+![Add 3](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-9.png)
 
 ### Step 8
 
 Click `Add Criteria`
 
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 Search for `Installed Software Name` and select it and set it `Does Not Contains Any of` to `NinjaRMMAgent`
 
-![Software Check](../../../static/img/docs/ninja-rmm-deployment/image-4.png)
+![Software Check](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-4.png)
 
-![Software](../../../static/img/docs/ninja-rmm-deployment/image-10.png)
+![Software](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-10.png)
 
 ### Step 9
 
 Click `Add Criteria`
 
-![Step4](../../../static/img/cw-rmm-groups-common-screenshots/step4.png)
+![Step4](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step4.png)
 
 Search for `Ninja Deployment Result` and select it and set it `Is Blank` to `True`
 
-![Result](../../../static/img/docs/ninja-rmm-deployment/image-5.png)
+![Result](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-5.png)
 
-![Add 5](../../../static/img/docs/ninja-rmm-deployment/image-11.png)
+![Add 5](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-11.png)
 
 
 ## Completed Group
 
-![Complete](../../../static/img/docs/ninja-rmm-deployment/image-12.png)
+![Complete](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-12.png)
 
-![Complete 1](../../../static/img/docs/ninja-rmm-deployment/image-6.png)
+![Complete 1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-6.png)

@@ -44,4 +44,3 @@ The monitor will trigger this script and pass parameters to it. The parameter pa
 
 The only output for this script is an email to the configured email address. If this email fails to send, the data will be visible in the "Failed Emails" section of the system dashboard.
 
-

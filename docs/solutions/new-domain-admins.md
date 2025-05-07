@@ -38,4 +38,3 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the deployment schedule as described in this document: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
 
 
-

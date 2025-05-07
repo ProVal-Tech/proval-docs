@@ -17,7 +17,7 @@ This script retrieves API keys from the client's password tab and uses them secu
 Please refer to the instructions/FAQ section for creating a new application or using an existing application policy to get the application ID. Ensure to whitelist the file hash for the corresponding application ID rule.
 
 ## Sample Run
-![Sample Run](../../../static/img/Threatlocker---Set-Learning-Mode/image_1.png)
+![Sample Run](../../../static/img/docs/7dedea46-a8d7-4901-93c5-f2bb4c876f83/image_1.png)
 
 ## Dependencies
 - ThreatLocker Authentication keys (must be requested from ThreatLocker support)
@@ -95,7 +95,7 @@ A: Log in to [https://portal.threatlocker.com/](https://portal.threatlocker.com/
 ![Set Application ID](/img/7dedea46-a8d7-4901-93c5-f2bb4c876f83/image6.png)
 
 - Enter it in **System → Dashboard → Config → Configurations → Properties** in Automate.  
-![Enter in Automate](../../../static/img/Threatlocker---Set-Learning-Mode/image_2.png)
+![Enter in Automate](../../../static/img/docs/7dedea46-a8d7-4901-93c5-f2bb4c876f83/image_2.png)
 
 **Q: What are the script dependencies, and what errors can it report?**  
 A: Dependencies and errors are as follows:
@@ -109,4 +109,3 @@ A: Dependencies and errors are as follows:
 [MAINTENANCEMODEBULK_-_POST_1_.pdf](/attachments/itg/16557697/MAINTENANCEMODEBULK_-_POST_1_.pdf)
 [REPORTS_-_GET_DATA_(1)_(1).pdf](/attachments/itg/16557697/REPORTS_-_GET_DATA_(1)_(1).pdf)
 [REQUESTS_-_GET_(1)_(1).pdf](/attachments/itg/16557697/REQUESTS_-_GET_(1)_(1).pdf)
-

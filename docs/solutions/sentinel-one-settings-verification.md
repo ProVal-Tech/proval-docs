@@ -30,12 +30,11 @@ The purpose of this solution is to identify instances where computers are utiliz
 - Create/import the `△ CUSTOM - Execute Script - Sentinel One Settings Verification` alert template, and ensure that the alert template is running the [SWM - Software Configuration - Script - Sentinel One Settings Verification](/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5) script.
 - Importing the script and internal monitor will not create the EDF(s), as both contents are using existing Sentinel One EDF.
 - Go to the client-level EDFs, find the name of the EDF that the partner is using to store the Sentinel One Installation Token, and set it to the script's global variable `Client_Level_Sentinel_One_Token_EDF_Name`.  
-  ![Image](../../static/img/Sentinel-One-Settings-Verification/image_6.png)  
-  ![Image](../../static/img/Sentinel-One-Settings-Verification/image_7.png)  
+  ![Image](../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_6.png)  
+  ![Image](../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_7.png)  
 - If the partner is using different names for the client-level Installation Opt-In and location, and computer-level Installation Opt-Out EDFs, then change the names of the EDFs in the internal monitor's additional condition as well.  
-  ![Image](../../static/img/Sentinel-One-Settings-Verification/image_8.png)  
+  ![Image](../../static/img/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5/image_8.png)  
 - Execute the script against a few random machines with Sentinel One installed and ensure that it's delivering as expected.
 - Implement the alert template to the internal monitor.
-
 
 

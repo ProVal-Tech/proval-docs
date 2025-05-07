@@ -20,4 +20,3 @@ This role is detected on machines on which WMI is enabled.
 |---------------------------------------------------------|------------|-------------|---------------|
 | \{%@wmic path win32_operatingsystem get status /value@%} | Contains   | Status=OK   | Windows       |
 
-

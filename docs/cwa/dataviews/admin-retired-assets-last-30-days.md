@@ -31,4 +31,3 @@ None
 | Retired Date    | Date when the machine was retired            |
 | Retire Comments  | Comments associated with the retirement      |
 
-

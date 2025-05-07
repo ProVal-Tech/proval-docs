@@ -29,4 +29,3 @@ INSERT INTO `roledefinitions` (`RoleDefinitionId`, `RoleName`, `RoleType`, `Role
 ```
 
 
-

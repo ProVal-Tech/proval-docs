@@ -18,7 +18,7 @@ This script will fetch the uninstall string from the database and attempt to uni
 
 ## Sample Run
 
-![Sample Run](../../../static/img/ShadowControl-Uninstall-v2/image_1.png)
+![Sample Run](../../../static/img/docs/b5ffbe82-a523-4104-8e8f-c60cfa2f8419/image_1.png)
 
 ## Variables
 
@@ -35,5 +35,4 @@ This script will fetch the uninstall string from the database and attempt to uni
 ## Output
 
 - Script log
-
 

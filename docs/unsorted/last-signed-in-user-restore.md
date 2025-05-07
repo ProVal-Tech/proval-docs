@@ -16,7 +16,7 @@ This script will restore the backup logon user to the login screen of the machin
 
 ## Sample Run
 
-![Sample Run](../../static/img/Last-Signed-in-User---Restore/image_1.png)
+![Sample Run](../../static/img/docs/0865e96c-af9c-48f4-acff-a70525b773ac/image_1.png)
 
 ## Variables
 
@@ -33,4 +33,3 @@ This script will restore the backup logon user to the login screen of the machin
 ## Output
 
 - Script log
-

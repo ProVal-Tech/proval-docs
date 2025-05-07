@@ -29,4 +29,3 @@ This solution will gather, store, and display the result of the `query session` 
 - Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](/docs/a5bff446-3e21-42cf-8208-d0de57f497ee) table.
 - Reference the dataview for results.
 
-

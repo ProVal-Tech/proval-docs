@@ -22,4 +22,3 @@ This monitor looks for disabled accounts on Active Directory servers through the
 
 Global - Should be run without explicitly defined targets.
 
-

@@ -24,4 +24,3 @@ The purpose of the monitor set is to execute the [Script - Dell Command Update -
 
 The SQL query limits the execution to Dell Workstations running Windows 10 or Windows 11.
 
-

@@ -16,4 +16,3 @@ Get Primary Domain Controller
 
 
 
-

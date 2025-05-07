@@ -25,4 +25,3 @@ Primarily, this monitor targets servers, but it will work properly for workstati
 **Servers** - Should be run on servers  
 **Windows Machines** - Should be run on all Windows machines  
 
-

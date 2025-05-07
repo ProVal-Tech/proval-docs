@@ -38,4 +38,3 @@ The Dataview audits the monitors in an environment.
 | Service Board           | The service board that the alert will post to.              |
 | Monitor Run Frequency    | The running interval of the monitor.                         |
 
-

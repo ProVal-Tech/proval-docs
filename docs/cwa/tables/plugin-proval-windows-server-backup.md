@@ -41,4 +41,3 @@ The table is built to store the complete Windows Server Backup data.
 | Overwrite Old Format VHD                   | VARCHAR  | If enabled, the old VHD files will be overwritten during subsequent backups                           |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
 
-

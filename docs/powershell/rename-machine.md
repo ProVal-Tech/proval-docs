@@ -37,4 +37,3 @@ The script needs the newname and the domain credential (only needed in case of d
 - .\Rename-Machine-data.txt
 
 
-

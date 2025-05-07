@@ -59,4 +59,3 @@ Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts
 Get-ChildItem -Path (New-Object -ComObject Shell.Application).Namespace(0x14).Self.Path  
 ```  
 
-

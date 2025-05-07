@@ -31,4 +31,3 @@ This dataview shows information about agents that have not checked in for 45 day
 | All Client Details      | This dataview provides details about the client, including a brief description of city, state, country, and time zone. |
 | All Contact Details     | This dataview contains all contact details of the agent, such as email address, phone number, and full name. |
 
-

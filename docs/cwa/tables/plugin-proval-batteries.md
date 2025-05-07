@@ -39,4 +39,3 @@ Stores battery information for each target.
 | SerialNumber              | VarChar   | The battery serial number.                          |
 | LastScanTime              | DateTime  | The last scan time for the report.                 |
 
-

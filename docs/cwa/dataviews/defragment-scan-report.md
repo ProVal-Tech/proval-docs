@@ -33,4 +33,3 @@ This dataview publishes the defragmentation scan results by using the script @Wi
 | Drive Fragmented     | Displays the drive letter of the fragmented drive       |
 | Drive Fragment Report | Displays the full report of fragmentation fetched by the script |
 
-

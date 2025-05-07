@@ -31,4 +31,3 @@ The custom table records the computer’s last contact time whenever its state c
 | datacollectiontime  | datetime | The data collection time for the respective entry    |
 
 
-

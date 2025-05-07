@@ -40,4 +40,3 @@ Minimum Requirement: MySQL 5.7.7
 | Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |
 
 
-

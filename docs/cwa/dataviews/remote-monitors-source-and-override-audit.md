@@ -28,4 +28,3 @@ This dataview shows all the Remote Monitor Sources and their Override status.
 | Monitor Override Status   | Displays the Monitor Override status: Override or Normal.                 |
 | Alert Template           | Displays the name of the Alert template applied to the monitor set.       |
 
-

@@ -25,34 +25,34 @@ This document will help in identifying incorrect configurations that can cause V
 
 &nbsp;
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_9.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_9.png)  
 
 3. Confirm that the VMware host's IP address appears under the **Network Devices** section for the client in the **Control Center**.  
 
 &nbsp;
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_10.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_10.png)  
 
 4. If it does not, correct the IP range being scanned by the probe from the **Network Probe** tile > **Settings**. Once these settings have been modified, click **Save** and then click **Rescan Network**.  
 
 &nbsp;
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_11.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_11.png)  
 
 ### Credential Configuration
 
 5. Confirm that you have configured the proper credentials for the VMware host. This can be done from the **Global Settings**.  
    The Global Credentials are for instances where you have an ESXi password that you share between multiple clients (not recommended).
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_12.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_12.png)  
 
 The recommended option is to manually set the credentials through the Local Credentials section and select the appropriate password from the client or location:
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_13.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_13.png)  
 
 If you do not have credentials saved at the client or location, you can add them quickly by hitting the dropdown and selecting "New Credential":
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_14.png) ![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_15.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_14.png) ![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_15.png)  
 
 If the above steps are fine, please check the following:
 
@@ -68,13 +68,12 @@ If the above steps are fine, please check the following:
 
 4. Try to manually apply the credentials to the network device itself and run a test through the network device.  
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_16.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_16.png)  
 
-![Image](../../static/img/VMware-Host-Not-Detected-in-Virtualization-Manager-Plugin/image_17.png)  
+![Image](../../static/img/docs/132a68a2-5d49-49b5-994f-4baf4606f816/image_17.png)  
 
 If none of the above steps help, please reach out to us at [Support@provaltech.com](mailto:Support@provaltech.com).  
 
 &nbsp;
 
 </div>
-

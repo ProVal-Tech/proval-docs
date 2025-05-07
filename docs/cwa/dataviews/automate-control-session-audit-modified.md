@@ -28,4 +28,3 @@ This dataview helps you audit control sessions by tracking details such as parti
 | DisconnectedTime   | Displays the time when the participant disconnected from the session. |
 | Duration          | Displays the total duration of the connected session.      |
 
-

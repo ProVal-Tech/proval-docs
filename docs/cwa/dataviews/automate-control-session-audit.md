@@ -28,4 +28,3 @@ This dataview helps you audit control sessions by tracking details such as parti
 | Computer ID       | Displays the ID of the connected computer                  |
 | Duration          | Displays the duration of the connection                     |
 
-

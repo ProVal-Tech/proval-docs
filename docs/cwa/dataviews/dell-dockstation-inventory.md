@@ -41,4 +41,3 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Dock Name           | Name of the dockstation                            |
 | Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) executed on the machine |
 
-

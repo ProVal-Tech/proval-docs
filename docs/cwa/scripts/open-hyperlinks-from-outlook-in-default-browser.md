@@ -16,11 +16,11 @@ The purpose of the script is to update the Outlook options on the computer to op
 
 To achieve this, the script likely modifies specific values in the Windows registry related to Outlook settings, particularly those pertaining to hyperlink behavior. By setting the appropriate registry keys, the script ensures that when users click on hyperlinks within Outlook, the links will open using the **Default Browser** instead of **Microsoft Edge**.
 
-![Image](../../../static/img/Open-Hyperlinks-From-Outlook-in-Default-Browser/image_1.png)
+![Image](../../../static/img/docs/3cc9953c-254c-4d50-9520-cbdb7e6ef23c/image_1.png)
 
 ## Sample Run
 
-![Image](../../../static/img/Open-Hyperlinks-From-Outlook-in-Default-Browser/image_2.png)
+![Image](../../../static/img/docs/3cc9953c-254c-4d50-9520-cbdb7e6ef23c/image_2.png)
 
 ## Variables
 
@@ -33,5 +33,4 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
-
 

@@ -22,7 +22,7 @@ There is no configuration required within the Agent Procedure, but a custom fiel
 
 **Custom Field**: xPVAL Win 11 Compatible
 
-![Image](../../../static/img/Windows-11-Compatibility-Check/image_1.png)
+![Image](../../../static/img/docs/170fedb5-2280-406a-9187-7c353a3cde31/image_1.png)
 
 # Process
 The `HardwareReadiness.ps1` script is a PowerShell script designed to assess a Windows 10 machine's hardware compatibility with Windows 11. It verifies several system components, including storage, memory, TPM (Trusted Platform Module), processor details, and Secure Boot status. The script utilizes both PowerShell cmdlets and .NET interop to gather system information and evaluate compatibility based on predefined minimum requirements.
@@ -58,5 +58,4 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
-
 

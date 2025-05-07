@@ -39,4 +39,3 @@ This report is designed to present a complete list of all certificates found on 
 | Data Collection Date  | When the last certification scan was performed.                                                  |
 | Status               | The certificate's current status in text.                                                        |
 
-

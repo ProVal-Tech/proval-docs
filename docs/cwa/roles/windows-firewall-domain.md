@@ -21,4 +21,3 @@ This document will detect if the Domain profile of the Windows Firewall is enabl
 | \{%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
 
 
-

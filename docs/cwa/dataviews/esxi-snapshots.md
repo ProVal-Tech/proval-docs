@@ -49,4 +49,3 @@ This document covers the dataview audit snapshots for virtual machines hosted on
 | Snapshot Description             | Displays the description of the snapshot               |
 | Is Current Snapshot             | Displays whether the snapshot is current or not        |
 
-

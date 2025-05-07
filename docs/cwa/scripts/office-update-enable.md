@@ -18,10 +18,9 @@ This script enables Office updates by running a PowerShell command.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Office-Update-Enable/image_1.png)
+![Sample Run](../../../static/img/docs/62b1555c-706c-433c-a053-329a63db0dd0/image_1.png)
 
 ## Process
 
 - Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `True`.
-
 

@@ -38,4 +38,3 @@ This section lists all filters applied to this view.
 Please attach the content XML VSA export to this document.
 
 
-

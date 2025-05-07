@@ -39,4 +39,3 @@ This script will execute with the monitor and will delete all the executable com
 - Script log
 
 
-

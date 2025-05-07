@@ -46,4 +46,3 @@ This document provides a display of a device's active network adapter and its as
 | Bytes Sent      | The number of bytes sent as seen on the adapter.     |
 | Bytes Rec       | The number of bytes received on the adapter.         |
 
-

@@ -32,4 +32,3 @@ The purpose of this document is to represent the Extradatafields that have eithe
 | IsRestricted              | Represents whether the EDF is restricted or not                     |
 | (Masked/Password)        | Represents whether the EDF is masked or has a password              |
 
-

@@ -66,4 +66,3 @@ If `EnablePublicFirewall` is set to 1, Windows Firewall will be enabled for Publ
 
 AP Log
 
-

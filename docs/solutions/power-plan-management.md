@@ -74,10 +74,10 @@ This solution automates the deployment of a standard power plan to Windows machi
    - `△ Custom - PowerPlan Automation`
 
 2. Reload the System Cache  
-   ![Image](../../static/img/Power-Plan-Management/image_1.png)
+   ![Image](../../static/img/docs/e7911ff5-d709-4ba0-b847-16969445c19b/image_1.png)
 
 3. Run the [Script - Power Plan - Set/Create](/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448) with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor.  
-   ![Image](../../static/img/Power-Plan-Management/image_2.png)
+   ![Image](../../static/img/docs/e7911ff5-d709-4ba0-b847-16969445c19b/image_2.png)
 
 4. Configure the solution as follows:  
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -89,16 +89,16 @@ This solution automates the deployment of a standard power plan to Windows machi
 
 1. **Follow these steps only if instructed to do so**: More details are provided in the **`Automation`** section of the [Power Plan - Set/Create](/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448) script's document.  
    You can start by downloading the `ProVal_-_High_Performance.csv` found in the linked document above and placing it on the LTShare under the folder `//LTShare//Transfer//PowerPlan`.  
-   ![Image](../../static/img/Power-Plan-Management/image_3.png)
+   ![Image](../../static/img/docs/e7911ff5-d709-4ba0-b847-16969445c19b/image_3.png)
 
 2. Next, navigate to System Dashboard → Config → Additional Field Defaults → Clients → PowerPlan
    - Fill out the PowerPlan Configuration File to show 'ProVal_-_High_Performance'
    - Enter the PowerPlan Name specified by the consultant (**If it has not been specified, stop and reach out to them and ask**) - This is the display name that the power plan will show up as within Windows and what the client will see. This will likely be `<Client Abbreviation> Standard`. Like 'ProVal Standard' for example.
    - **IMPORTANT** **Do NOT fill out the PowerPlan Automation EDF**. That will need to be filled out by the partner on a per-client basis.  
-   ![Image](../../static/img/Power-Plan-Management/image_4.png)
+   ![Image](../../static/img/docs/e7911ff5-d709-4ba0-b847-16969445c19b/image_4.png)
 
 3. Reach out to the consultant to let them know the standardization steps have been followed and the client can issue the PowerPlan automation by selecting the following EDF:  
-   ![Image](../../static/img/Power-Plan-Management/image_5.png)
+   ![Image](../../static/img/docs/e7911ff5-d709-4ba0-b847-16969445c19b/image_5.png)
 
 ### Optional Auditing
 
@@ -124,5 +124,4 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
-
 

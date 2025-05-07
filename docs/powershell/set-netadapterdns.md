@@ -37,4 +37,3 @@ This command appends the DNS address `1.1.1.1` to the end of all active, physica
 - `.\Set-NetAdapterDNS-log.txt`
 - `.\Set-NetAdapterDNS-data.txt`
 
-

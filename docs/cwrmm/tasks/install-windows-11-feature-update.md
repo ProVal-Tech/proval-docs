@@ -39,9 +39,9 @@ The script supports both Windows 10 and Windows 11:
 
 ## Sample Run
 
-![Image5](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image5.png)  
-![Image6](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image6.png)  
-![Image7](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image7.png)
+![Image5](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image5.png)  
+![Image6](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image6.png)  
+![Image7](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image7.png)
 
 ## Dependencies
 
@@ -60,15 +60,15 @@ The script supports both Windows 10 and Windows 11:
 #### Step 1
 
 Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/cw-rmm-tasks-common-screenshots/step1.png)
+![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.png)
 
 #### Step 2
 
 Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/cw-rmm-tasks-common-screenshots/step2.png)
+![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.png)
 
 The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/cw-rmm-tasks-common-screenshots/step3.png)
+![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.png)
 
 #### Step 3
 
@@ -78,40 +78,40 @@ Fill in the following details in the `Description` section:
 **Description:** `The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script can restart the computer up to seven times.`  
 **Category:** `Custom`
 
-![Image1](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image1.png)
+![Image1](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image1.png)
 
 ### Parameters
 
 #### NoReboot
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addparameter.png)
+![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.png)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addnewscriptparameter.png)
+![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.png)
 
 - Set `NoReboot` in the `Parameter Name` field.  
 - Select `Flag` from the `Parameter Type` dropdown menu.  
 - Click the `Save` button.
 
-![Image2](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image2.png)
+![Image2](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image2.png)
 
 ### Script Editor
 
 Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.png)
 
 A blank function will appear:  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.png)
 
 #### Row 1 Function: PowerShell
 
 Search and select the `PowerShell Script` function.  
-![AddPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/addpowershellfunction.png)  
-![AddedPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/addedpowershellfunction.png)  
+![AddPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addpowershellfunction.png)  
+![AddedPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.png)  
 
 The following function will pop up on the screen:  
-![BlankPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/blankpowershellfunction.png)
+![BlankPowerShell](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.png)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `7200` seconds. Click the `Save` button.
 
@@ -168,33 +168,33 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Image3](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image3.png)
+![Image3](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image3.png)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.png)
 
 A blank function will appear.  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.png)
 
 Search and select the `Script Log` function.  
-![AddScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/addscriptlogfunction.png)
+![AddScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.png)
 
 The following function will pop up on the screen:  
-![BlankScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankscriptlogfunction.png)
+![BlankScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankscriptlogfunction.png)
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![OutputScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/outputscriptlogfunction.png)
+![OutputScriptLogFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.png)
 
 ## Save Task
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/cw-rmm-tasks-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.png)
 
 ## Completed Task
 
-![Image4](../../../static/img/cw-rmm-task-install-windows-11-feature-update/image4.png)
+![Image4](../../../static/img/docs/b397d199-6675-451a-b2fc-eba5fd57031a/image4.png)
 
 ## Output
 

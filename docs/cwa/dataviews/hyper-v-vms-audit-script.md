@@ -33,4 +33,3 @@ This dataview displays auditing information about Hyper-V virtual machines.
 | Automatic Stop Action      | Displays the status of the automatic stop action of the virtual machine.  |
 | Automatic Start Delay      | Displays the automatic start delay time of the virtual machine.   |
 
-

@@ -45,7 +45,7 @@ Execute the [FileZilla - Fetch Latest Version](/docs/71141737-d88f-43d3-9e75-e3f
 ### Step 4
 
 Schedule [FileZilla - Fetch Latest Version](/docs/71141737-d88f-43d3-9e75-e3f5468f888f) script to the run daily during working hours.  
-![Image1](../../static/img/cwa-script-filezilla-fetch-latest-version/image1.png)
+![Image1](../../static/img/docs/71141737-d88f-43d3-9e75-e3f5468f888f/image1.png)
 
 ### Step 5
 

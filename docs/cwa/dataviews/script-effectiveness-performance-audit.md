@@ -16,7 +16,7 @@ This document summarizes all scripts run over the set script log retention days.
 
 The script log retention days can be seen at the Automate location below:
 
-![Script Log Retention Days](../../../static/img/Script-Effectiveness-Performance-Audit/image_1.png)
+![Script Log Retention Days](../../../static/img/docs/5606850a-c68e-4b15-b183-399cded6e601/image_1.png)
 
 ## Columns
 
@@ -48,6 +48,5 @@ The script log retention days can be seen at the Automate location below:
 
 ## Example Screenshot
 
-![Example Screenshot](../../../static/img/Script-Effectiveness-Performance-Audit/image_2.png)
-
+![Example Screenshot](../../../static/img/docs/5606850a-c68e-4b15-b183-399cded6e601/image_2.png)
 

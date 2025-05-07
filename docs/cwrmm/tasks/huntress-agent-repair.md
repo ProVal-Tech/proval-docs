@@ -18,20 +18,20 @@ This task repairs the Huntress Agent.
 
 Please create a new "PowerShell" style script to implement this task.
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_1.png)
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_2.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_1.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_2.png)
 
 **Name:** Huntress Agent (REPAIR)  
 **Description:** This task repairs the Huntress Agent.  
 **Category:** Custom
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_3.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_3.png)
 
 # Script
 
 ## Row 1 Function: Script Log
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_4.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_4.png)
 
 Input the following:
 
@@ -46,44 +46,44 @@ Input the following:
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_5.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_5.png)
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
 - Select `Huntress Acct_Key` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_6.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_6.png)
 
 ## Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_5.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_5.png)
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
 - Select `Huntress Org_Key` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_7.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_7.png)
 
 ## Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_5.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_5.png)
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
 - Select `Huntress Tag` custom field from the dropdown
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_8.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_8.png)
 
 ## Row 5 Function: PowerShell Script
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_9.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_9.png)
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
@@ -156,7 +156,7 @@ if ($Parameters) {
 #endregion
 ```
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_10.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_10.png)
 
 ## Step 6 Function: Script Log
 
@@ -168,15 +168,15 @@ if ($Parameters) {
 %Output%
 ```
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_11.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_11.png)
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_12.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_12.png)
 
 ## Step 7 Logic: If/Then
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_13.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_13.png)
 
 ## Row 7a Condition: Output Contains
 
@@ -184,7 +184,7 @@ if ($Parameters) {
 - Add another condition with the OR operator and type `ERROR:` in the Value box.
 - Add another condition with the OR operator and type `Account Key Missing` in the Value box.
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_14.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_14.png)
 
 ## Row 7b Function: Script Exit
 
@@ -196,9 +196,9 @@ if ($Parameters) {
 Failed to repair Huntress Agent. Command Result: %Output%
 ```
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_15.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_15.png)
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_16.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_16.png)
 
 ## Step 8 Function: Script Log
 
@@ -210,9 +210,9 @@ Failed to repair Huntress Agent. Command Result: %Output%
 Successfully repaired Huntress Agent.
 ```
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_11.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_11.png)
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_17.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_17.png)
 
 ## Step 9 Function: Script Exit
 
@@ -224,13 +224,13 @@ Successfully repaired Huntress Agent.
 
 ```
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_15.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_15.png)
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_18.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_18.png)
 
 ## Step 10: Complete Script
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_19.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_19.png)
 
 ## Script Deployment
 
@@ -240,10 +240,9 @@ Go to Automations > Tasks.
 Search for Huntress Agent (REPAIR).  
 Then click on Schedule and provide the parameters detail as necessary for the script completion.
 
-![Image](../../../static/img/Huntress-Agent-(REPAIR)/image_20.png)
+![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_20.png)
 
 ## Output
 
 - Script log
-
 

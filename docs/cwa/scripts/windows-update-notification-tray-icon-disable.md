@@ -18,12 +18,11 @@ This script will disable the Windows Update Notification (Tray Icon) by setting 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Update-Notification-(Tray-Icon)---Disable/image_1.png)
+![Sample Run](../../../static/img/docs/ae80d21c-908e-413f-97f1-1a4e370553ae/image_1.png)
 
 ## Process
 
 - The script first verifies if the Windows Update Notification (Tray Icon) setting is already disabled. If it is, the script will exit.
 - If the setting is not disabled, the script will run a PowerShell command to disable it.
 - After that, the script will call a subscript to flag the machine as reboot pending.
-
 

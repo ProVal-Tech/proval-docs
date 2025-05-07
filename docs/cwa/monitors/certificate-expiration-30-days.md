@@ -20,7 +20,7 @@ This monitor looks at the proval_plugin_certs table (generated through the Impor
 
 To exclude self-signed, Microsoft-generated certificates, and any certificate with a GUID in the Subject, uncomment the following lines in the Additional Condition. Before adding any exclusions, it is recommended to review the [EPM - Network - Dataview - SSL Certificate Audit](/docs/8cca4422-d71b-4696-b5d8-8cbc51158b3d) dataview to ensure that enabling these exclusions will not omit any important certificates.
 
-![Image](../../../static/img/Certificate-Expiration--30-Days/image_1.png)
+![Image](../../../static/img/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c/image_1.png)
 
 ## Dependencies
 
@@ -60,6 +60,5 @@ Expiration: 2023-04-20 19:59:59
 
 ## Example Ticket
 
-![Image](../../../static/img/Certificate-Expiration--30-Days/image_2.png)
-
+![Image](../../../static/img/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c/image_2.png)
 

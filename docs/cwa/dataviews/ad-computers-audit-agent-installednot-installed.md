@@ -30,4 +30,3 @@ This dataview displays all AD machines from the AD plugin and provides details a
 | When Created                       | When agent was created in AD                        |
 | Last Logon                         | Last logon detail of agent in AD                    |
 
-

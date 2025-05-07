@@ -16,7 +16,7 @@ This document outlines the Automate implementation of the agnostic script [SWM -
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Google-Chrome---Homepage---Set/image_1.png)
+![Sample Run](../../../static/img/docs/eebf8239-a9d5-462b-a7cf-72d9a50e1f14/image_1.png)
 
 ## Dependencies
 
@@ -33,5 +33,4 @@ Refer to the [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd12
 ## Output
 
 - Script Logs
-
 

@@ -20,4 +20,3 @@ This document determines whether folder redirection notifications are enabled fo
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptInWithNotification-%}` | Equals     | 1      | Windows OS     |
 
-

@@ -37,4 +37,3 @@ Location of output for log, result, and error files.
 .\Remove-Sophos-Error.txt
 ```
 
-

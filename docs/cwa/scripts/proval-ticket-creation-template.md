@@ -58,4 +58,3 @@ This document establishes a new standard for creating tickets for our clients.
 
 - Adds to a variable `VarLog` to be displayed in a parent ticket.
 
-

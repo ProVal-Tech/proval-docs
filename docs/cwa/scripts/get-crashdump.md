@@ -18,7 +18,7 @@ This document collects information regarding any existing crash dumps.
 
 - To collect data, run the Get-CrashDump script on a target endpoint.
 
-![Sample Run Image](../../../static/img/Get-CrashDump/image_1.png)
+![Sample Run Image](../../../static/img/docs/dde000a0-373a-4023-a594-04e532b5ad57/image_1.png)
 
 ### Expected Return Types
 
@@ -87,14 +87,13 @@ This document collects information regarding any existing crash dumps.
 
 ### Ticket
 
-![Ticket Image](../../../static/img/Get-CrashDump/image_2.png)
+![Ticket Image](../../../static/img/docs/dde000a0-373a-4023-a594-04e532b5ad57/image_2.png)
 
 ### Email
 
-![Email Image](../../../static/img/Get-CrashDump/image_3.png)
+![Email Image](../../../static/img/docs/dde000a0-373a-4023-a594-04e532b5ad57/image_3.png)
 
 ### Custom Table
 
-![Custom Table Image](../../../static/img/Get-CrashDump/image_4.png)
-
+![Custom Table Image](../../../static/img/docs/dde000a0-373a-4023-a594-04e532b5ad57/image_4.png)
 

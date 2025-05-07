@@ -40,7 +40,7 @@ It is important to note that this solution will send an email for every script i
    - Alert Template: `△ Custom - Autofix - Email Send LTRunByUser`
 
 2. Reload the System Cache.  
-   ![System Cache Reload](../../static/img/Send-Email-to-LTUser-for-Manual-Script-Execution/image_1.png)
+   ![System Cache Reload](../../static/img/docs/6643031d-dcd8-4bec-9d5d-40bb3de1f713/image_1.png)
 
 3. Configure the solution as follows:
    - Navigate to Automation > Monitors > Internal Monitor
@@ -51,6 +51,5 @@ It is important to note that this solution will send an email for every script i
 ## Customization
 
 Remove or comment out the last line in the additional condition of the monitor to disable receiving emails for successful script executions and limit the monitor sets to script failures only.  
-![Customization Example](../../static/img/Send-Email-to-LTUser-for-Manual-Script-Execution/image_2.png)
-
+![Customization Example](../../static/img/docs/6643031d-dcd8-4bec-9d5d-40bb3de1f713/image_2.png)
 

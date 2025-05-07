@@ -23,4 +23,3 @@ It updates machine records for patching, antivirus, monitoring, and third-party 
 - **password**: required. Password/PAT to log into the Kaseya server.  
 - **monfilter**: optional. Group or organization names to exclude from monitoring.  
 
-

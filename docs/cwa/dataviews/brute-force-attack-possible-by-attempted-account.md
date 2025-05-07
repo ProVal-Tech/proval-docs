@@ -38,4 +38,3 @@ NetworkInfo will not display unless advanced logon/logoff activity is being trac
 | Network Info       | This information will not display unless advanced logon/logoff is enabled on the endpoint or domain. This column will attempt to show the network address and source port used to attempt the latest logon. It is highly recommended to review the logs, as there may be several different network addresses attempting to log in. |
 | Time Generated     | The time recorded in Automate for the most recent event log instance                                             |
 
-

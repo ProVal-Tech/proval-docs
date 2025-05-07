@@ -32,4 +32,3 @@ This document stores information from NCSC-NL's GitHub repository about applicat
 | Notes    | VARCHAR | Any notes about the application.                  |
 | Links    | VARCHAR | Links regarding the application's vulnerability.  |
 
-

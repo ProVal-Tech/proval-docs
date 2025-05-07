@@ -27,4 +27,3 @@ This Dataview provides patching information for devices online within the last 3
 | Total Missing Unfiltered           | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
 
-

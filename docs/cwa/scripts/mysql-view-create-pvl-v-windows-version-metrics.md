@@ -16,11 +16,10 @@ This script can be used to import the [SEC - Windows Patching - MySQL View - pvl
 
 ## Sample Run
 
-![Sample Run](../../../static/img/MySQL---View---Create-(pvl_v_windows_version_metrics)/image_1.png)
+![Sample Run](../../../static/img/docs/baeb3063-b28b-4eae-975d-e55af60c0466/image_1.png)
 
 ## Dependencies
 
 - [SEC - Windows Patching - Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 - [CWM - Automate - Script - MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
-
 

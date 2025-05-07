@@ -36,4 +36,3 @@ This document collects the latest rollup installation details on domain controll
 | LastContact       | Agent's last contact with the Automate                 |
 | Enforcement Status | Confirms if enforcement is enabled or not. This information is outdated as it has been fixed with the December 2020 rollup release. |
 
-

@@ -14,4 +14,3 @@ unlisted: false
 
 Get Default Office Version, Bit, CTR, and 2019
 
-

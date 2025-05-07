@@ -33,11 +33,11 @@ In the VSA, there are two procedures for this script.
 
 The agent procedure is set to prompt for the passphrase when the procedure is scheduled.
 
-![Passphrase Prompt](../../../static/img/Uninstall-SentinelOne/image_25.png)
+![Passphrase Prompt](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_25.png)
 
 The client can find the passphrase for the endpoint in the SentinelOne portal.
 
-![Passphrase Location](../../../static/img/Uninstall-SentinelOne/image_26.png)
+![Passphrase Location](../../../static/img/docs/46264239-1ea0-467d-a36b-8be9fe5eece8/image_26.png)
 
 # Payload Usage
 Run the script without a passphrase:
@@ -62,5 +62,4 @@ Location of output for log, result, and error files.
 ./Remove-SentinelOne-log.txt
 ./Remove-SentinelOne-error.txt
 ```
-
 

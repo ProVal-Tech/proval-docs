@@ -18,7 +18,7 @@ This script provides detailed information about the TPM configuration on the end
 
 ## Sample Run
 
-![Sample Run](../../../static/img/TPM-Detail-Auditing/image_1.png)
+![Sample Run](../../../static/img/docs/459746c4-f070-40bf-a630-0650e08a2490/image_1.png)
 
 ## Dependencies
 
@@ -54,5 +54,4 @@ This script provides detailed information about the TPM configuration on the end
 - Script log
 - Script state
 - Dataview
-
 

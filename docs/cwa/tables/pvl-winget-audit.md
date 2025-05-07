@@ -36,4 +36,3 @@ This document stores the audit data fetched by the [Winget App Audit](/docs/d5ea
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
 
 
-

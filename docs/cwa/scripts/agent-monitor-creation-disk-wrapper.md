@@ -17,10 +17,10 @@ This script **must** be called by the Agent Monitor Creation script and/or the R
 On a default setup, change the Agent Monitor Creation Script (around line 8) to use the ProVal Disk Wrapper instead.
 
 **Before**  
-![Before](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_1.png)  
+![Before](../../../static/img/docs/3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe/image_1.png)  
 
 **After**  
-![After](../../../static/img/Agent-Monitor-Creation---Disk---WRAPPER/image_2.png)  
+![After](../../../static/img/docs/3bd7b221-88a0-4bc0-a285-b0f9c6fd93fe/image_2.png)  
 
 **Time Saved by Automation:** 10 Minutes
 
@@ -46,5 +46,4 @@ This script **must** be called by the Agent Monitor Creation script and the Remo
 ## Output
 
 - Script log
-
 

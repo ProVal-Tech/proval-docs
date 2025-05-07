@@ -16,7 +16,7 @@ This script will help to install ClickShare.
 
 ## Sample Run
 
-![Sample Run](../../static/img/Clickshare-installation/image_1.png)
+![Sample Run](../../static/img/docs/f8b7444f-398c-42a5-8ed8-f83c3491818e/image_1.png)
 
 ## Dependencies
 
@@ -35,4 +35,3 @@ This script helps to install ClickShare on the agent. It can install the applica
 ## Output
 
 - Script log
-

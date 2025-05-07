@@ -49,10 +49,10 @@ Overall, the monitoring system is designed to track drive space and generate ale
 ## Target
 
 Must be applied on the Managed Service Plan Groups  
-![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_1.png)  
+![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_1.png)  
 
 The groups should have `MSP Contract Group` EDF marked  
-![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_2.png)
+![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_2.png)
 
 ## System Properties
 
@@ -83,11 +83,11 @@ According to the Default Global Property Settings:
 | DriveLetters             | C       | To store the drive letter(s) to monitor for the machines in the group. If left blank, the monitor set will look for all drives. Multiple drives can be set by simply adding the drive letters. e.g., putting **CDE** in this EDF will enable the monitor set for C, D, and E drive letters for the machines in this group. |
 
 Group Level EDFs should be set at the managed service plan groups only.  
-![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_3.png)  
+![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_3.png)  
 Managed service plan group must have `MSP Contract Group` EDF marked. **Do not mark this checkbox for regular or non-managed service plan groups.**  
 
 **Example:**  
-![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_4.png)  
+![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_4.png)  
 
 In the above example:
 - Drives with total size between 16GB to 300GB will generate a ticket when the free space goes below 8% of the total size. However, the ticket will only be closed after the free space grows 5% larger than the 8% of the total size.
@@ -110,7 +110,7 @@ In the above example:
 | DriveLetters             | CDE     | To store the drive letter(s) to monitor for the machine. If left blank, the monitor set will look for drive letters stored in the group level EDF DriveLetters and for all drives if both computer and group level EDFs are blank. Multiple drives can be set by simply adding the drive letters. e.g., putting **CDE** in this EDF will enable the monitor set for C, D, and E drive letters for the machines in this group. |
 
 **Example:**  
-![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_5.png)  
+![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_5.png)  
 
 In the above example:
 - Drives with total size between 16GB to 300GB will generate a ticket when the free space goes below 50% of the total size. However, the ticket will only be closed after the free space grows 5% larger than the 50% of the total size.
@@ -125,13 +125,13 @@ In the above example:
 - Connectwise Manage board, type, and priority for the ticket can be set by setting the proper ticket category.
 - The ticket will be created by the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) script and the ticket category can be set at the following levels:
   - In the script's global variables. Setting the relevant ticket category ID in these global variables will allow the script to create tickets under those categories.  
-    ![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_6.png)
+    ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_6.png)
   - At the group level. The ticket category can be set from the groups where the internal monitor is applied. This ticket category will only be picked if global variables are set to 0.  
-    ![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_7.png)
+    ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_7.png)
   - On the global monitor set. The ticket category can be selected at the monitor set itself. This ticket category will only be picked if the group level ticket category is not defined and global variables are set to 0.  
-    ![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_8.png)
+    ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_8.png)
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
-    ![image](../../../static/img/Agent---Enhanced-Drive-Space-Monitor/image_9.png)
+    ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_9.png)
 
 ## FAQs
 
@@ -154,4 +154,3 @@ In the above example:
 **Q:** Should we expect any possible problems or errors on systems running PowerShell versions earlier than 5.0?  
 **A:** For systems with PowerShell versions older than 5.0, you may encounter PowerShell errors similar to the one in this screenshot for the Soji failure notes.  
 ![image](/img/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image.png)
-

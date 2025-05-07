@@ -16,7 +16,7 @@ This script is designed to deliver a one-time, customized message to the partner
 
 ## Sample Run
 
-![Sample Image](../../../static/img/Simple-Notification-Application/image_1.png)
+![Sample Image](../../../static/img/docs/52ca1112-b256-46e7-9a76-7c6941d71d76/image_1_1.png)
 
 The message parameter is mandatory to display the message to the user. All other parameters are optional; however, if no image is specified, it will result in a blank popup with only the message, which may cause trust issues with users.
 
@@ -48,7 +48,7 @@ Example: Running the application with only the message parameter, which is manda
 C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe
 ```
 
-![Example Image](../../../static/img/Simple-Notification-Application/image_2.png)
+![Example Image](../../../static/img/docs/52ca1112-b256-46e7-9a76-7c6941d71d76/image_2_1.png)
 
 Example: Running the application with all parameters specified, mixing full names and aliases:
 
@@ -56,7 +56,7 @@ Example: Running the application with all parameters specified, mixing full name
 C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe -m "This is a test message." --ImageURL "http://p.favim.com/orig/2018/08/24/cute-beautiful-couple-avatar-Favim.com-6224738.jpg" -e "someone@testing.com" --Phone "000-000-0000"
 ```
 
-![Example Image](../../../static/img/Simple-Notification-Application/image_3.png)
+![Example Image](../../../static/img/docs/52ca1112-b256-46e7-9a76-7c6941d71d76/image_3_1.png)
 
 Example: Running the application with only some parameters specified:
 
@@ -64,7 +64,7 @@ Example: Running the application with only some parameters specified:
 C:/Windows/System32> C:/users/user/Desktop/SimpleNotification.exe -m "This is a test message." --i "https://proval.com/images/uploads/site-assets/facebook-icon.png" -e "support@provaltech.com"
 ```
 
-![Example Image](../../../static/img/Simple-Notification-Application/image_4.png)
+![Example Image](../../../static/img/docs/52ca1112-b256-46e7-9a76-7c6941d71d76/image_4_1.png)
 
 | Parameter      | Alias | Required | Type   | Description                               |
 |----------------|-------|----------|--------|-------------------------------------------|
@@ -81,5 +81,4 @@ MD5: E6B792C00D46F2E867194CC79B13885D
 ## Output
 
 - Script Log
-
 

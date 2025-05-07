@@ -39,4 +39,3 @@ This custom table serves as a data repository for MSP metrics. It is populated a
 | Time_Saved_All_Scripts          | mediumint(20)   | Total time saved by automation in the last 30 days - All Scripts (in minutes) |
 | Time_Saved_ProVal_Scripts       | mediumint(20)   | Total time saved by automation in the last 30 days - ProVal scripts (in minutes) |
 
-

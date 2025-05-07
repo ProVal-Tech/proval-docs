@@ -32,4 +32,3 @@ The purpose of this dataview is to show the uncommented content of the host file
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
 
-

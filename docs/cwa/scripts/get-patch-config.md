@@ -29,16 +29,16 @@ Reference: [Windows Update Policy](https://admx.help/?Category=Windows_10_2016&P
 
 Execute the script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will add the newly introduced column `upgradeRestricted` to the [pvl_patch_config](/docs/c9891eb9-3731-4b0d-9882-dcb4a73229eb) table, which is necessary for the solution.  
 
-![Image](../../../static/img/Get-Patch-Config/image_1.png)
+![Image](../../../static/img/docs/c1b906ec-7aea-41f3-8241-358d3d644900/image_1.png)
 
 ## Sample Run
 
 **First Execution:** Execute the script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will create the [pvl_patch_config](/docs/c9891eb9-3731-4b0d-9882-dcb4a73229eb) table, which is necessary for the solution.  
 
-![Image](../../../static/img/Get-Patch-Config/image_1.png)
+![Image](../../../static/img/docs/c1b906ec-7aea-41f3-8241-358d3d644900/image_1.png)
 
 **Regular Execution:**  
-![Image](../../../static/img/Get-Patch-Config/image_2.png)
+![Image](../../../static/img/docs/c1b906ec-7aea-41f3-8241-358d3d644900/image_2.png)
 
 ## Dependencies
 
@@ -64,5 +64,4 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
-
 

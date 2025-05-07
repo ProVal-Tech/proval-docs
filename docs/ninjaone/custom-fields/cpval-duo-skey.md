@@ -25,30 +25,30 @@ This is a sensitive piece of information, akin to a password, used in conjunctio
 ### Step 1
 
 Navigate to the `Administration` menu, then proceed to `Devices` and select `Global Custom Fields`.  
-![Step1](../../../static/img/ninja-one-custom-fields-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/step1.png)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen and click on it.  
-![AddButton](../../../static/img/ninja-one-custom-fields-common-screenshots/addbutton.png)  
+![AddButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/addbutton.png)  
 
 ### Step 3
 
 After clicking the `Add` button, select the `Field` button that appears.  
-![FieldButton](../../../static/img/ninja-one-custom-fields-common-screenshots/fieldbutton.png)
+![FieldButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/fieldbutton.png)
 
 The following Pop-up screen will appear:  
-![InitialCustomFieldPopup](../../../static/img/ninja-one-custom-fields-common-screenshots/initialcustomfieldpopup.png)
+![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.png)
 
 ### Step 4
 
 **Custom Field Type:** `Text`
 
 Select `Text` for the `Custom field type` and click `Continue` to proceed.  
-![Text](../../../static/img/ninja-one-custom-fields-common-screenshots/text.png)
+![Text](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/text.png)
 
 The following Pop-up screen will appear:  
-![Overview](../../../static/img/ninja-one-custom-fields-common-screenshots/overview.png)
+![Overview](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/overview.png)
 
 ### Step 5
 
@@ -59,10 +59,10 @@ Set the following details in the `Overview` section and click the `Next` button.
 **Definition Scope:** `Organization`  
 **Custom field is required:** `<Leave it unchecked>`
 
-![Image1](../../../static/img/ninja-one-custom-field-cpval-duo-skey/image1.png)
+![Image1](../../../static/img/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405/image1.png)
 
 Clicking the `Next` button will take you to the `Permission` section.  
-![Permission](../../../static/img/ninja-one-custom-fields-common-screenshots/permissions.png)
+![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/permissions.png)
 
 ### Step 6
 
@@ -72,10 +72,10 @@ Set the following details in the `Permission` section and click the `Next` butto
 **Automation:** `Read/Write`  
 **API:** `Read/Write`
 
-![Permission](../../../static/img/ninja-one-custom-fields-common-screenshots/genericpermissions.png)
+![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/genericpermissions.png)
 
 Clicking the `Next` button will take you to the details tab.  
-![Details](../../../static/img/ninja-one-custom-fields-common-screenshots/details.png)
+![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/details.png)
 
 ### Step 7
 
@@ -85,12 +85,12 @@ Fill in the following information in the `Details` section and click the `Create
 **Tooltip Text:** `Provide the secret key from the Duo Admin Panel.`  
 **Footer Text:** `DUO SKEY`
 
-![Image2](../../../static/img/ninja-one-custom-field-cpval-duo-skey/image2.png)
+![Image2](../../../static/img/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405/image2.png)
 
 ## Completed Custom Field
 
-![Image3](../../../static/img/ninja-one-custom-field-cpval-duo-skey/image4.png)
+![Image3](../../../static/img/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405/image4.png)
 
 ## Example
 
-![Image4](../../../static/img/ninja-one-custom-field-cpval-duo-skey/image3.png)
+![Image4](../../../static/img/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405/image3.png)

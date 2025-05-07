@@ -36,4 +36,3 @@ Stores GPResult information from the script [EPM - Windows Configuration - Scrip
 | AccessDenied    | TINYINT   | Indicates if access was denied to apply the GPO.                                               |
 | SecurityFilter   | VARCHAR   | Indicates the security filters that were applied that led to the GPO application.              |
 
-

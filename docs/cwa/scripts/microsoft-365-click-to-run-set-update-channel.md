@@ -22,7 +22,7 @@ This script will make changes in the registry to set the update channel for Micr
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_1.png)
+![Sample Run](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_1.png)
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ This script will make changes in the registry to set the update channel for Micr
 |-----------------|------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Update Channel   | Current Channel  | DropDown  | Microsoft 365 | Select the Update Channel from the drop-down menu to set for the client's computers. Available options are:  - Current Channel  - Monthly Enterprise Channel  - Semi-Annual Enterprise Channel  - Beta Channel  - None  Leave it blank or set it to `None` to disable the Automation for the client. |
 
-![Client Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_2.png)
+![Client Level EDF](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_2.png)
 
 ## Computer Level EDF
 
@@ -42,13 +42,12 @@ This script will make changes in the registry to set the update channel for Micr
 |-----------------|------------------|-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Update Channel   | Current Channel  | DropDown  | Microsoft 365 | Select the Update Channel from the drop-down menu to set for the computer. Available options are:  - Current Channel  - Monthly Enterprise Channel  - Semi-Annual Enterprise Channel  - Beta Channel  - None  Set it to `None` to disable the Automation for the computer. Computer Level EDF can be used to override the value set in the Client Level EDF. |
 
-![Computer Level EDF](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_3.png)
+![Computer Level EDF](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_3.png)
 
 ## Output
 
 - Script Log
 - Custom Table
 - Dataview
-
 
 

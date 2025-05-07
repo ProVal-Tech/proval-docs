@@ -16,18 +16,18 @@ This monitor detects online Windows agents where outdated DUO Authentication for
 
 ### Client EDFs:
 
-![Client EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_1.png)
+![Client EDFs](../../../static/img/docs/4e62e216-7a5f-4b35-8ac8-eca9a38bd440/image_1.png)
 
 ### Client Exclusion EDF:  
-**![Client Exclusion EDF](../../../static/img/DUO-Authentication---InstallUpdate/image_2.png)**  
+**![Client Exclusion EDF](../../../static/img/docs/4e62e216-7a5f-4b35-8ac8-eca9a38bd440/image_2.png)**  
 
 ### Location Exclusion EDFs:
 
-![Location Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_3.png)
+![Location Exclusion EDFs](../../../static/img/docs/4e62e216-7a5f-4b35-8ac8-eca9a38bd440/image_3.png)
 
 ### Computer Exclusion EDFs:
 
-![Computer Exclusion EDFs](../../../static/img/DUO-Authentication---InstallUpdate/image_4.png)
+![Computer Exclusion EDFs](../../../static/img/docs/4e62e216-7a5f-4b35-8ac8-eca9a38bd440/image_4.png)
 
 ## Dependencies
 
@@ -53,5 +53,4 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When an argument is missing:**  
 Arguments required to install DUO Authentication for Windows Logon are not set.
-
 

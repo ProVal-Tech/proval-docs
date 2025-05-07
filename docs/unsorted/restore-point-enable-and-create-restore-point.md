@@ -20,7 +20,7 @@ It later checks if a system has a restore point created within the last 30 days 
 
 ## Sample Run
 
-![Sample Run](../../static/img/Restore-Point---Enable-and-Create-Restore-Point/image_1.png)
+![Sample Run](../../static/img/docs/9c77bd8d-5ede-4c26-a9dd-41a5328916a2/image_1.png)
 
 ## Dependencies
 
@@ -69,4 +69,3 @@ Examples:
 - Local file on computer
 - Dataview
 - etc.
-

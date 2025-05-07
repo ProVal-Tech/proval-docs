@@ -41,4 +41,3 @@ This Dataview displays the path and size of the OST and PST files for users on a
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
 
-

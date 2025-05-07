@@ -16,9 +16,9 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/SentinelOne-Deployment/image_7.png)
+![Sample Run 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_7.png)
 
-![Sample Run 2](../../../static/img/SentinelOne-Deployment/image_8.png)
+![Sample Run 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_8.png)
 
 ## Dependencies
 
@@ -35,49 +35,49 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation 1](../../../static/img/SentinelOne-Deployment/image_9.png)
-![Task Creation 2](../../../static/img/SentinelOne-Deployment/image_10.png)
+![Task Creation 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_9.png)
+![Task Creation 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_10.png)
 
 **Name:** SentinelOne Deployment  \
 **Description:** This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.  \
 **Category:** Security  \
-![Task Creation 3](../../../static/img/SentinelOne-Deployment/image_11.png)
+![Task Creation 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_11.png)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/SentinelOne-Deployment/image_12.png)
+![Add Row](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_12.png)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/SentinelOne-Deployment/image_13.png)
+![Blank Function](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_13.png)
 
 ### Row 1 Logic: If/Then/Else
 
-![Row 1 Logic](../../../static/img/SentinelOne-Deployment/image_14.png)
+![Row 1 Logic](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_14.png)
 
 #### ROW 1a Condition: Custom Field Contains
 
 Select the `Custom Field` from the dropdown menu.
 
-![Select Custom Field 1](../../../static/img/SentinelOne-Deployment/image_15.png)
-![Select Custom Field 2](../../../static/img/SentinelOne-Deployment/image_16.png)
+![Select Custom Field 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_15.png)
+![Select Custom Field 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_16.png)
 
 Search and select the `SentinelOne Group Key` custom field, type `NA` in the comparator, change "Contains" to "Does Not Equal," and press `Enter`.
 
-![Condition Setup](../../../static/img/SentinelOne-Deployment/image_17.png)
+![Condition Setup](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_17.png)
 
 #### ROW 1b Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.
 
-![Set Pre-defined Variable 1](../../../static/img/SentinelOne-Deployment/image_18.png)
-![Set Pre-defined Variable 2](../../../static/img/SentinelOne-Deployment/image_19.png)
+![Set Pre-defined Variable 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_18.png)
+![Set Pre-defined Variable 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_19.png)
 
 The following function will pop up on the screen:
 
-![Set Pre-defined Variable Function](../../../static/img/SentinelOne-Deployment/image_20.png)
+![Set Pre-defined Variable Function](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_20.png)
 
 - Type `S1SiteToken` in the `Variable Name` field.
 - Select the `Custom Field` radio button.
@@ -85,50 +85,50 @@ The following function will pop up on the screen:
 - Click the `Save` button to save the changes.
 - Select `Windows` as the Operating System.
 
-![Windows Selection 1](../../../static/img/SentinelOne-Deployment/image_21.png)
-![Windows Selection 2](../../../static/img/SentinelOne-Deployment/image_22.png)
+![Windows Selection 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_21.png)
+![Windows Selection 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_22.png)
 
 #### ROW 1c Function: Set Pre-defined Variable
 
 Repeat the Row 1b steps but limit the pre-defined variable to Mac machines.
 
-![MAC Selection 1](../../../static/img/SentinelOne-Deployment/image_23.png)
-![MAC Selection 2](../../../static/img/SentinelOne-Deployment/image_24.png)
+![MAC Selection 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_23.png)
+![MAC Selection 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_24.png)
 
 #### ROW 1d Function: Set Pre-defined Variable
 
 Repeat the Row 1b steps but limit the pre-defined variable to Linux machines.
 
-![Linux Selection 1](../../../static/img/SentinelOne-Deployment/image_23.png)
-![Linux Selection 2](../../../static/img/SentinelOne-Deployment/image_25.png)
+![Linux Selection 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_23.png)
+![Linux Selection 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_25.png)
 
 #### ROW 1e Logic: If/Then/Else
 
 Add if/then/else logic in the else section.
 
-![Row 1e Logic](../../../static/img/SentinelOne-Deployment/image_14.png)
+![Row 1e Logic](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_14.png)
 
 ##### ROW 1e(i) Condition: Custom Field Contains
 
 Select the `Custom Field` from the dropdown menu inside the If section of the inner if/else.
 
-![Select Custom Field 3](../../../static/img/SentinelOne-Deployment/image_15.png)
-![Select Custom Field 4](../../../static/img/SentinelOne-Deployment/image_16.png)
+![Select Custom Field 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_15.png)
+![Select Custom Field 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_16.png)
 
 Search and select the `SentinelOne Site Key` custom field, type `NA` in the comparator, change "Contains" to "Does Not Equal," and press `Enter`.
 
-![Condition Setup 2](../../../static/img/SentinelOne-Deployment/image_26.png)
+![Condition Setup 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_26.png)
 
 ##### ROW 1e(ii) Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function inside the If section of the inner if/else.
 
-![Set Pre-defined Variable 3](../../../static/img/SentinelOne-Deployment/image_18.png)
-![Set Pre-defined Variable 4](../../../static/img/SentinelOne-Deployment/image_19.png)
+![Set Pre-defined Variable 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_18.png)
+![Set Pre-defined Variable 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_19.png)
 
 The following function will pop up on the screen:
 
-![Set Pre-defined Variable Function 2](../../../static/img/SentinelOne-Deployment/image_20.png)
+![Set Pre-defined Variable Function 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_20.png)
 
 - Type `S1SiteToken` in the `Variable Name` field.
 - Select the `Custom Field` radio button.
@@ -136,38 +136,38 @@ The following function will pop up on the screen:
 - Click the `Save` button to save the changes.
 - Select `Windows` as the Operating System.
 
-![Windows Selection 3](../../../static/img/SentinelOne-Deployment/image_27.png)
-![Windows Selection 4](../../../static/img/SentinelOne-Deployment/image_28.png)
+![Windows Selection 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_27.png)
+![Windows Selection 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_28.png)
 
 ##### ROW 1e(iii) Function: Set Pre-defined Variable
 
 Repeat the ROW 1e(ii) steps but limit the pre-defined variable to Mac machines.
 
-![MAC Selection 3](../../../static/img/SentinelOne-Deployment/image_29.png)
-![MAC Selection 4](../../../static/img/SentinelOne-Deployment/image_30.png)
+![MAC Selection 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_29.png)
+![MAC Selection 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_30.png)
 
 ##### ROW 1e(iv) Function: Set Pre-defined Variable
 
 Repeat the ROW 1e(ii) steps but limit the pre-defined variable to Linux machines.
 
-![Linux Selection 3](../../../static/img/SentinelOne-Deployment/image_29.png)
-![Linux Selection 4](../../../static/img/SentinelOne-Deployment/image_25.png)
+![Linux Selection 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_29.png)
+![Linux Selection 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_25.png)
 
 ##### ROW 1e(v) Function: Script Exit
 
 Click the `Add Row` button inside the `else` section of the inner if/else.
 
-![Add Row 2](../../../static/img/SentinelOne-Deployment/image_31.png)
-![Add Row 3](../../../static/img/SentinelOne-Deployment/image_32.png)
+![Add Row 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_31.png)
+![Add Row 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_32.png)
 
 Search and select the `Script Exit` function in the newly appeared row.
 
-![Script Exit 1](../../../static/img/SentinelOne-Deployment/image_33.png)
-![Script Exit 2](../../../static/img/SentinelOne-Deployment/image_34.png)
+![Script Exit 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_33.png)
+![Script Exit 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_34.png)
 
 The following function will pop up on the screen:
 
-![Script Exit Function](../../../static/img/SentinelOne-Deployment/image_35.png)
+![Script Exit Function](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_35.png)
 
 Type the below error message inside the `Error Message` box and hit save.
 
@@ -175,37 +175,37 @@ Type the below error message inside the `Error Message` box and hit save.
 SentinelOne Group/Site key were not set. Please review the Company/Site custom fields and fill either of them, and then re-run the script.
 ```
 
-![Error Message](../../../static/img/SentinelOne-Deployment/image_36.png)
+![Error Message](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_36.png)
 
 ##### ROW 1e(vi) Function: Script Exit
 
 Repeat the ROW 1e(v) steps but limit the Script Exit function to Mac machines.
 
-![MAC Exit](../../../static/img/SentinelOne-Deployment/image_37.png)
+![MAC Exit](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_37.png)
 
 ##### ROW 1e(vii) Function: Script Exit
 
 Repeat the ROW 1e(v) steps but limit the Script Exit function to Linux machines.
 
-![Linux Exit](../../../static/img/SentinelOne-Deployment/image_38.png)
+![Linux Exit](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_38.png)
 
 ### Row 2 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button.
 
-![Add Row 4](../../../static/img/SentinelOne-Deployment/image_39.png)
+![Add Row 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_39.png)
 
 A blank function will appear.
 
-![Blank Function 2](../../../static/img/SentinelOne-Deployment/image_13.png)
+![Blank Function 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_13.png)
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Function](../../../static/img/SentinelOne-Deployment/image_40.png)
+![PowerShell Script Function](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_40.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup](../../../static/img/SentinelOne-Deployment/image_41.png)
+![PowerShell Script Popup](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_41.png)
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -231,7 +231,7 @@ if (Test-Path -Path $regInstallPath) {
 }
 ```
 
-![PowerShell Script Execution](../../../static/img/SentinelOne-Deployment/image_42.png)
+![PowerShell Script Execution](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_42.png)
 
 Limit this PowerShell function to run on `Windows` machines only.
 
@@ -239,11 +239,11 @@ Limit this PowerShell function to run on `Windows` machines only.
 
 Add another row and select the `Bash Script` function.
 
-![Bash Script Function 1](../../../static/img/SentinelOne-Deployment/image_43.png)
+![Bash Script Function 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_43.png)
 
 The following function will pop up on the screen:
 
-![Bash Script Function 2](../../../static/img/SentinelOne-Deployment/image_44.png)
+![Bash Script Function 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_44.png)
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -274,7 +274,7 @@ else
 fi
 ```
 
-![Bash Script Execution 1](../../../static/img/SentinelOne-Deployment/image_45.png)
+![Bash Script Execution 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_45.png)
 
 Limit the bash file to run on `Mac` machines only.
 
@@ -282,11 +282,11 @@ Limit the bash file to run on `Mac` machines only.
 
 Add another row and select the `Bash Script` function.
 
-![Bash Script Function 3](../../../static/img/SentinelOne-Deployment/image_43.png)
+![Bash Script Function 3](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_43.png)
 
 The following function will pop up on the screen:
 
-![Bash Script Function 4](../../../static/img/SentinelOne-Deployment/image_44.png)
+![Bash Script Function 4](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_44.png)
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -334,7 +334,7 @@ else
 fi
 ```
 
-![Bash Script Execution 2](../../../static/img/SentinelOne-Deployment/image_46.png)
+![Bash Script Execution 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_46.png)
 
 Limit the bash file to run on `Linux` machines only.
 
@@ -342,25 +342,25 @@ Limit the bash file to run on `Linux` machines only.
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row 5](../../../static/img/SentinelOne-Deployment/image_47.png)
+![Add Row 5](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_47.png)
 
 Search and select the `Set Custom Field` function.
 
-![Set Custom Field 1](../../../static/img/SentinelOne-Deployment/image_48.png)
+![Set Custom Field 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_48.png)
 
 Search and select `SentinelOne Deployment Result` in the `Search Custom Field` field, set `%output%` in the `Value` field, and click the `Save` button.
 
-![Set Custom Field 2](../../../static/img/SentinelOne-Deployment/image_49.png)
+![Set Custom Field 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_49.png)
 
 Limit the function to Windows machines.
 
-![Windows Limit](../../../static/img/SentinelOne-Deployment/image_50.png)
+![Windows Limit](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_50.png)
 
 ## Row 6 Function: Set Custom Field
 
 Repeat the Row 5 steps but limit the function to Mac machines.
 
-![Mac Limit](../../../static/img/SentinelOne-Deployment/image_51.png)
+![Mac Limit](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_51.png)
 
 ## Row 7 Function: Set Custom Field
 
@@ -368,9 +368,9 @@ Repeat the Row 5 steps but limit the function to Linux machines.
 
 ## Completed Script
 
-![Completed Script 1](../../../static/img/SentinelOne-Deployment/image_52.png)
+![Completed Script 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_52.png)
 
-![Completed Script 2](../../../static/img/SentinelOne-Deployment/image_53.png)
+![Completed Script 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_53.png)
 
 ## Deployment
 
@@ -380,11 +380,10 @@ Go to Automations > Tasks.
 Search for SentinelOne Deployment.  
 Then click on Schedule and provide the parameters detail as necessary for the script completion.
 
-![Deployment](../../../static/img/SentinelOne-Deployment/image_54.png)
+![Deployment](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_54.png)
 
 ## Output
 
 - Script Log
 - Custom Field
-
 

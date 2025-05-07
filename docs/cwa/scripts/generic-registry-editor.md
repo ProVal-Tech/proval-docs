@@ -16,7 +16,7 @@ This script will create or modify the registry for multiple keys, names, values,
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Generic-Registry-Editor/image_1.png)
+![Sample Run](../../../static/img/docs/2e06791d-4084-4dc3-a524-7b54695c6fc9/image_1.png)
 
 ## Variables
 
@@ -52,5 +52,4 @@ This script will create or modify the registry for multiple keys, names, values,
 2. Does the length of the parameters need to be the same for the script to work?  
    Yes, the parameters must be of the same length.  
    For example: If you provide two keys for modification, you must also provide two names, two values, and two types, regardless of whether any of the parameters have the same value or not.
-
 

@@ -24,4 +24,3 @@ This document provides an overview of the searches that are used in Automate at 
 | Object Name  | Name of the object against which the search is applied (e.g., Name of the Group, Name of the Remote Monitor) |
 | Group Path   | Full path to the group where the search is being used/applied.                                 |
 
-

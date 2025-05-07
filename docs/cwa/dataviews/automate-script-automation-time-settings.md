@@ -24,4 +24,3 @@ This dataview will show all the scripts with their defined saved automation time
 | Script Notes           | Displays the script notes.                          |
 | Automation Time Minutes | Displays the script's defined saved automation time. |
 
-

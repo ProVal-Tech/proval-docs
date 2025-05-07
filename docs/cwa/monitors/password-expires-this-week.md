@@ -25,4 +25,3 @@ This Custom RAWSQL monitor detects users whose passwords are going to expire wit
 
 Global
 
-

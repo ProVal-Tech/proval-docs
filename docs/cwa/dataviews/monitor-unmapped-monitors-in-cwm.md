@@ -33,4 +33,3 @@ The ConnectWise Manage Plugin must be installed and configured with imported ser
 | Item            | The item the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 | Work Type       | The work type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 
-

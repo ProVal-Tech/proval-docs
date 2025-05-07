@@ -32,4 +32,3 @@ This solution allows users to trigger an immediate reboot or schedule it for the
 - Create the [Server Reboot Schedule on Specific Days](/docs/26d390ba-1542-4524-b9ff-7a420004cb73) and follow the deployment instructions.
 - Create the [Workstation Reboot Schedule on Specific Days](/docs/0957012a-a6da-4e1b-abec-936a0a467e6a) and follow the deployment instructions.
 
-

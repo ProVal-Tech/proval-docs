@@ -18,7 +18,7 @@ This script allows you to bulk-clear Maintenance mode or schedule it to be clear
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Maintenance-Mode---Clear/image_1.png)
+![Sample Run](../../../static/img/docs/d7f09bd1-6c13-49a4-af0e-87d9ab3f279b/image_1.png)
 
 ## Variables
 
@@ -31,5 +31,4 @@ The script will execute the command to remove Maintenance mode from the target m
 ## Output
 
 - Script log
-
 

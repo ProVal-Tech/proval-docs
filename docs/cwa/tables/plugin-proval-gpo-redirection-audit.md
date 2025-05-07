@@ -46,4 +46,3 @@ CREATE TABLE IF NOT EXISTS `@TableName@` (
 COLLATE='utf8_general_ci';
 ```
 
-

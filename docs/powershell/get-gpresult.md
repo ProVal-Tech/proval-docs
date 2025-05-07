@@ -143,4 +143,3 @@ $reportOutput = .\\Get-GPResult.ps1 -ReportType PSObject -ExcludeComputer
 - `./gpresult_user.xml`
 - `./gpresult.sql`
 - Returns a simple INSERT statement string with `tablename` and `idvalue` placeholders that can be replaced.
-

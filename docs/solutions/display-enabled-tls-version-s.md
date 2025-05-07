@@ -30,4 +30,3 @@ The purpose of this solution is to display the enabled client and server (if app
 - Import the dataview.
 - Perform a group refresh or wait for 30 minutes to ensure that the dataview starts displaying the expected data.
 
-

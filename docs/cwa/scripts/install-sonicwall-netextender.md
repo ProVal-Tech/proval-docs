@@ -15,9 +15,9 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 ## Sample Run
 
-![Import EDFs Sample Run](../../../static/img/docs/install-sonicwall-netextender/image.png)
+![Import EDFs Sample Run](../../../static/img/docs/823c8e22-0b24-4cf9-9e25-4048d2973b98/image.png)
 
-![Deploy SonicWall NetExtender Sample Run](../../../static/img/docs/install-sonicwall-netextender/image-1.png)
+![Deploy SonicWall NetExtender Sample Run](../../../static/img/docs/823c8e22-0b24-4cf9-9e25-4048d2973b98/image-1.png)
 
 ## Dependencies
 

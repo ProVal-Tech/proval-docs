@@ -20,7 +20,7 @@ This script is used to create and set a local Administrator password for a clien
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows---Local-Administrator-Process/image_1.png)
+![Sample Run](../../../static/img/docs/1346f6e0-a1cc-42fd-85f2-a43785eee53e/image_1.png)
 
 ## Variables
 
@@ -48,5 +48,4 @@ The script will start by checking if the password entry already exists for the c
 ## Output
 
 - Script log
-
 

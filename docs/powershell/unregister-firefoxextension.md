@@ -39,4 +39,3 @@ The output will be logged in:
 .\Unregister-FirefoxExtension-log.txt
 ```
 
-

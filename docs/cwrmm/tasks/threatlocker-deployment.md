@@ -16,8 +16,8 @@ This task installs Threatlocker on both Windows and Mac operating systems.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Threatlocker-Deployment/image_4.png)  
-![Sample Run 2](../../../static/img/Threatlocker-Deployment/image_5.png)
+![Sample Run 1](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_4.png)  
+![Sample Run 2](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_5.png)
 
 ## Dependencies
 
@@ -26,26 +26,26 @@ This task installs Threatlocker on both Windows and Mac operating systems.
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation Image 1](../../../static/img/Threatlocker-Deployment/image_6.png)  
-![Task Creation Image 2](../../../static/img/Threatlocker-Deployment/image_7.png)
+![Task Creation Image 1](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_6.png)  
+![Task Creation Image 2](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_7.png)
 
 **Name:** `Threatlocker Deployment`  
 **Description:** `This script will check for ThreatLocker and attempt to install it if not present. It matches the organization to the client name; if no match is found, it will create the company for you. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group.`  
 **Category:** `Custom`  
-![Category Image](../../../static/img/Threatlocker-Deployment/image_8.png)
+![Category Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_8.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row Image](../../../static/img/Threatlocker-Deployment/image_9.png)
+![Add Row Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_9.png)
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/Threatlocker-Deployment/image_10.png)
+![Blank Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_10.png)
 
 ### Row 1 Function: Set Pre-Defined Variable
 
 - Select `Set Pre-Defined Variable` function  
-![Row 1 Function Image](../../../static/img/Threatlocker-Deployment/image_11.png)
+![Row 1 Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_11.png)
 
 - Select `Custom Field`
 - Input `Organization` as Variable name
@@ -56,7 +56,7 @@ A blank function will appear.
 ### Row 2 Function: Set Pre-Defined Variable
 
 - Select `Set Pre-Defined Variable` function  
-![Row 2 Function Image](../../../static/img/Threatlocker-Deployment/image_11.png)
+![Row 2 Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_11.png)
 
 - Select `Custom Field`
 - Input `ThreatLockerAuthKey` as Variable name
@@ -67,10 +67,10 @@ A blank function will appear.
 ### Row 3 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Function Image](../../../static/img/Threatlocker-Deployment/image_12.png)
+![PowerShell Script Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_12.png)
 
 The following function will pop up on the screen:  
-![PowerShell Script Popup Image](../../../static/img/Threatlocker-Deployment/image_13.png)
+![PowerShell Script Popup Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_13.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
@@ -127,20 +127,20 @@ if ($service.Name -eq "ThreatLockerService" -and $service.Status -eq "Running") 
 }
 ```
 
-![PowerShell Script Execution Image](../../../static/img/Threatlocker-Deployment/image_14.png)  
+![PowerShell Script Execution Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_14.png)  
 Limit this step to `Windows OS` only.
 
 ### Row 4: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log Image](../../../static/img/Threatlocker-Deployment/image_15.png)
+![Script Log Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_15.png)
 
 Limit this step to `Windows OS` only.
 
 ### Row 5 Function: Set Pre-Defined Variable
 
 - Select `Set Pre-Defined Variable` function  
-![Row 5 Function Image](../../../static/img/Threatlocker-Deployment/image_16.png)
+![Row 5 Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_16.png)
 
 - Select `Custom Field`
 - Input `ThreatLockerMacGroupKey` as Variable name
@@ -151,10 +151,10 @@ Limit this step to `Windows OS` only.
 ### Row 6 Function: Command Prompt (CMD) Script
 
 Search and select the `Command Prompt (CMD) Script` function.  
-![CMD Script Function Image](../../../static/img/Threatlocker-Deployment/image_17.png)
+![CMD Script Function Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_17.png)
 
 The following function will pop up on the screen:  
-![CMD Script Popup Image](../../../static/img/Threatlocker-Deployment/image_18.png)
+![CMD Script Popup Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_18.png)
 
 Paste in the following bash script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
@@ -192,19 +192,19 @@ then
 fi
 ```
 
-![CMD Script Execution Image](../../../static/img/Threatlocker-Deployment/image_19.png)  
+![CMD Script Execution Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_19.png)  
 Limit this step to `Mac OS` only.
 
 ### Row 7: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the bash script above to the output on the Automation tab for the target device.  
-![Script Log Image](../../../static/img/Threatlocker-Deployment/image_20.png)
+![Script Log Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_20.png)
 
 Limit this step to `Mac OS` only.
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Threatlocker-Deployment/image_21.png)
+![Completed Task Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_21.png)
 
 ## Implementation
 
@@ -213,11 +213,10 @@ This task has to be scheduled on **`[CW RMM - Dynamic Group - Deploy Threatlocke
 Go to Automations > Tasks.  
 Search for Threatlocker Deployment.  
 Then click on Schedule and provide the parameters detail as necessary for the script completion.  
-![Implementation Image](../../../static/img/Threatlocker-Deployment/image_22.png)
+![Implementation Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_22.png)
 
 ## Output
 
 Script Log
-
 
 

@@ -33,4 +33,3 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
 | LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |
 
-

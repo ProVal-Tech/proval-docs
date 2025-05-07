@@ -68,4 +68,3 @@ Document the various variables in the script. Delete any section that is not rel
 This is intended to be an auto-fix on a monitor and should be used to populate data after a specific event is thrown on a computer.
 
 
-

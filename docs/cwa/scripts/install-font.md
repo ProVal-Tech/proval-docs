@@ -21,7 +21,7 @@ This script is a wrapper to install fonts using the agnostic [SWM - Software Ins
 - Import this script into the environment and run it against the desired targets.
 - Set the `ZipFileName` to the zip file name you created, minus the `.zip`.
 
-![Sample Run Image](../../../static/img/Install-Font/image_1.png)
+![Sample Run Image](../../../static/img/docs/c16a83d6-7845-4478-9b25-c4947aac8f5d/image_1.png)
 
 ## Dependencies
 
@@ -51,6 +51,5 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-
 
 

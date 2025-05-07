@@ -20,4 +20,3 @@ This document tracks the activation status of any installed Office applications.
 |--------------------------------|------------------------------------------|----------------------------------------------------|
 | xPVAL Office Activation Status  | Machine                                  | Tracks the activation status of any installed Office applications. |
 
-

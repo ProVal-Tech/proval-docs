@@ -38,4 +38,3 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](/docs/8086f53d-c2db-40df-aa54-ea8590800fd3) script |
 
-

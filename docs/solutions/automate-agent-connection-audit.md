@@ -37,12 +37,12 @@ The solution is intended to monitor and display the duration machines were onlin
    - [Dataview - Automate Agent Connection Audit](/docs/1c5558e1-70a3-4b38-bdc0-e3eb8cf29d43)
 
 2. Reload the system cache:
-   ![Reload Cache](../../static/img/Automate-Agent-Connection-Audit/image_2.png)
+   ![Reload Cache](../../static/img/docs/ef69cef8-da15-46b7-94a4-697431a87929/image_2.png)
 
 3. Debug the script against any random client to import the custom tables.
 
 4. Schedule the script to run once per day around midnight:
-   ![Schedule Script](../../static/img/Automate-Agent-Connection-Audit/image_3.png)
+   ![Schedule Script](../../static/img/docs/ef69cef8-da15-46b7-94a4-697431a87929/image_3.png)
 
 5. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -56,6 +56,5 @@ The solution is intended to monitor and display the duration machines were onlin
 
 **Q2: Why does the online or offline time sometimes appear greater than the total data collection time?**  
 **A2:** The `Days Since Data Collection` column may not be precise, with a possible variance of up to ±23 hours from the actual data saved time. It shows rounded-off information. As a result, it is normal for the `Online - 30 Days` or other columns to display `6 days 23 hours 39 minutes` while the `Days Since Data Collection` column shows `6 days`.
-
 
 

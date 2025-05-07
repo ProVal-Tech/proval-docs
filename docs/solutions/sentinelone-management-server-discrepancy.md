@@ -41,4 +41,3 @@ The solution aims to find the computers where the installed SentinelOne Manageme
 3. Create and schedule this task:  
    - [SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079)  
 
-

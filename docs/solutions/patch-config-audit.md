@@ -22,7 +22,7 @@ Reference: [https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policie
 
 Execute the [Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900) script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will add the newly introduced column `upgradeRestricted` to the [pvl_patch_config](/docs/c9891eb9-3731-4b0d-9882-dcb4a73229eb) table, which is necessary for the solution.
 
-![Image](../../static/img/Patch-Config-Audit/image_1.png)
+![Image](../../static/img/docs/6d50548e-014d-4bca-aab6-2941f36045e2/image_1.png)
 
 ## Associated Content
 
@@ -61,11 +61,11 @@ Import the following automation content using the ProSync Plugin:
 
 ### 3.
 Reload the system cache:  
-![Image](../../static/img/Patch-Config-Audit/image_2.png)
+![Image](../../static/img/docs/6d50548e-014d-4bca-aab6-2941f36045e2/image_2.png)
 
 ### 4.
 Execute the [Get Patch Config](/docs/c1b906ec-7aea-41f3-8241-358d3d644900) script against any online Windows computer with the `Set_Environment` parameter set to `1`. This will create the [pvl_patch_config](/docs/c9891eb9-3731-4b0d-9882-dcb4a73229eb) table, which is necessary for the solution.  
-![Image](../../static/img/Patch-Config-Audit/image_3.png)
+![Image](../../static/img/docs/6d50548e-014d-4bca-aab6-2941f36045e2/image_3.png)
 
 ### 5.
 Configure the auditing solution as outlined below:
@@ -87,6 +87,5 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) script.
-
 
 

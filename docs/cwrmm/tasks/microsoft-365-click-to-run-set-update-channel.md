@@ -16,9 +16,9 @@ This task will make changes in the registry to set the update channel for Micros
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_4.png)
+![Sample Run Image 1](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_4.png)
 
-![Sample Run Image 2](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_5.png)
+![Sample Run Image 2](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_5.png)
 
 ## Dependencies
 
@@ -28,9 +28,9 @@ This task will make changes in the registry to set the update channel for Micros
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_6.png)
+![Task Creation Image](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_6.png)
 
-![Task Creation Image](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_7.png)
+![Task Creation Image](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_7.png)
 
 **Name:** Microsoft 365 - Click-to-Run - Set Update Channel
 
@@ -38,39 +38,39 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 **Category:** Custom
 
-![Task Creation Image](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_8.png)
+![Task Creation Image](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_8.png)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Button](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_9.png)
+![Add Row Button](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_9.png)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_10.png)
+![Blank Function](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_10.png)
 
 ### Row 1 Function: Set User Variable
 
 Select `Set User Variable` from the dropdown menu.
 
-![Select Set User Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_11.png)
+![Select Set User Variable](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_11.png)
 
 Set `UpdateChannel` as the variable name and `None` as the value.
 
-![Set Update Channel](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_12.png)
+![Set Update Channel](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_12.png)
 
 ### Row 2 Logic: If/Then
 
 Add a new `If/Then` logic from the Add Logic dropdown menu.
 
-![Row 2 Logic](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_13.png)
+![Row 2 Logic](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_13.png)
 
 #### Row 2a Condition: Custom Field
 
 Select Custom Field in place of Output from the dropdown menu.
 
-![Select Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_14.png)
+![Select Custom Field](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_14.png)
 
 Select `Update Channel (ENUM - ENDPOINT)` in the search, `Does Not Contain` as Comparator, and set `None` in the Value.
 
@@ -79,9 +79,9 @@ Select `Update Channel (ENUM - ENDPOINT)` in the search, `Does Not Contain` as C
 - Add another row and select `Set Pre-Defined Variable` from the dropdown menu.
 - Set `UpdateChannel` in the Variable Name, choose `Custom Field`, and select `Update Channel (ENUM - ENDPOINT)` from the dropdown menu.
 
-![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_15.png)
+![Set Pre-Defined Variable](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_15.png)
 
-![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_16.png)
+![Set Pre-Defined Variable](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_16.png)
 
 ### Row 3 Logic: If/Then
 
@@ -91,7 +91,7 @@ Add a new `If/Then` logic from the Add Logic dropdown menu.
 
 Select Custom Field in place of Output from the dropdown menu.
 
-![Select Custom Field](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_14.png)
+![Select Custom Field](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_14.png)
 
 Select `Update Channel (ENUM - Client)` in the search, `Does Not Contain` as Comparator, and set `None` in the Value.
 
@@ -100,9 +100,9 @@ Select `Update Channel (ENUM - Client)` in the search, `Does Not Contain` as Com
 - Add another row and select `Set Pre-Defined Variable` from the dropdown menu.
 - Set `UpdateChannel` in the Variable Name, choose `Custom Field`, and select `Update Channel (ENUM - Client)` from the dropdown menu.
 
-![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_15.png)
+![Set Pre-Defined Variable](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_15.png)
 
-![Set Pre-Defined Variable](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_16.png)
+![Set Pre-Defined Variable](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_16.png)
 
 ### Row 4 Logic: If/Then
 
@@ -112,7 +112,7 @@ Add a new `If/Then` logic from the Add Logic dropdown menu.
 
 Select `Value` in place of Output from the dropdown menu.
 
-![Select Value](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_17.png)
+![Select Value](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_17.png)
 
 Select `@UpdateChannel@` in the Enter Value, `Equals` as Comparator, and set `None` in the Value.
 
@@ -127,19 +127,19 @@ Add another row by selecting the `ADD ROW` button.
 Please set the update channel either at the client level or computer level in the Custom Field `Update Channel` before running the script.
 ```
 
-![Script Exit Function](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_18.png)
+![Script Exit Function](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_18.png)
 
-![Script Exit Function](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_19.png)
+![Script Exit Function](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_19.png)
 
 ### Row 5 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Function](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_20.png)
+![PowerShell Script Function](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_20.png)
 
 The following function will pop up on the screen:
 
-![PowerShell Function](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_21.png)
+![PowerShell Function](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_21.png)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -204,16 +204,15 @@ Set-M365UpdateChannel -updateChannel '@UpdateChannel@'
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_22.png)
+![Script Log](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_22.png)
 
 ## Completed Task
 
-![Completed Task Image 1](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_23.png)
+![Completed Task Image 1](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_23.png)
 
-![Completed Task Image 2](../../../static/img/Microsoft-365---Click-to-Run---Set-Update-Channel/image_24.png)
+![Completed Task Image 2](../../../static/img/docs/77f0982f-1be7-49a7-871e-cfc88705775e/image_24.png)
 
 ## Output
 
 - Script Log
-
 
