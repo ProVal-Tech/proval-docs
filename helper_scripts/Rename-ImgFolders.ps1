@@ -55,7 +55,7 @@ foreach ($entry in $csvData) {
 
     $targetReplacementRegex = "(\/|\\)img(\/|\\)(docs(\/|\\))?$([regex]::Escape($imgFolder.Name))"
     $targetDirectoryFragment = "/img/docs/$($entry.target)"
-    $targetDirectory = "$($PSScriptRoot.Parent.FullName)\static\img\docs\$($entry.target)"
+    $targetDirectory = "$((Get-Item $PSScriptRoot).Parent.FullName)\static\img\docs\$($entry.target)"
     $files = Get-ChildItem -Path $imgFolder.FullName -File
     $fileAssociations = foreach($file in $files) {
         $targetFile = Move-File -Path $file.FullName -TargetPath $targetDirectory
