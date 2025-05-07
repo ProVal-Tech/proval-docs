@@ -1,8 +1,8 @@
 ---
 id: 'dd445ce7-a149-452c-9b35-dc1adbab4e06'
 slug: /dd445ce7-a149-452c-9b35-dc1adbab4e06
-title: 'Winget - InstallUpdate'
-title_meta: 'Winget - InstallUpdate'
+title: 'Winget - Install/Update'
+title_meta: 'Winget - Install/Update'
 keywords: ['winget', 'package', 'install', 'endpoint']
 description: 'This document provides a detailed guide on how to install a Winget package on a target endpoint, including sample runs, dependencies, and parameters required for the process.'
 tags: ['installation', 'software', 'windows']
@@ -21,6 +21,7 @@ This document explains how to install a Winget package on a target endpoint.
 ## Dependencies
 
 - [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+- [Solution - Update/Deploy Target Application to Latest Version Winget ](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
 
 ### Global Parameters
 
@@ -42,7 +43,7 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 
 ## Output
 
-- Script 
+- Script Log
 
 ## FAQ
 
