@@ -56,5 +56,3 @@ The approval age is divided into five categories:
 - computerpatchpolicies cpp   
 - InstallSoftwarePolicies isp   
 - rebootpolicies rp
-
-

@@ -46,62 +46,60 @@ Importing this script will also import the following scripts:
 The Set action can be used for setting a specific homepage for the concerned browser(s).
 
 **Parameters Used:**  
-![Set Parameters](../../../static/img/Browser---Homepage---Manage/image_1.png)
+![Set Parameters](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_1.webp)
 
 **Output:**  
-![Set Output](../../../static/img/Browser---Homepage---Manage/image_2.png)
+![Set Output](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_2.webp)
 
 ### Remove:
 The Remove action can be used to remove the currently applied homepage from the concerned browser(s).
 
 **Parameters Used:**  
-![Remove Parameters](../../../static/img/Browser---Homepage---Manage/image_3.png)
+![Remove Parameters](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_3.webp)
 
 **Output:**  
 **Google Chrome:**  
-![Remove Chrome Output](../../../static/img/Browser---Homepage---Manage/image_4.png)  
+![Remove Chrome Output](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_4.webp)  
 **Mozilla Firefox:**  
-![Remove Firefox Output](../../../static/img/Browser---Homepage---Manage/image_5.png)  
+![Remove Firefox Output](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_5.webp)  
 **Microsoft Edge:**  
-![Remove Edge Output](../../../static/img/Browser---Homepage---Manage/image_6.png)
+![Remove Edge Output](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_6.webp)
 
 ### Replace:
 The `Replace` action serves to substitute the existing homepage configuration in the specified browser(s) with a new one. This functionality proves useful when you intend to replace the current homepage with an alternative one. Another scenario where this action is beneficial is when a homepage has been erroneously configured with the `EnforceOnNewTab` option. In such cases, users can rectify the error by employing the `Replace` action in the script, leaving the `EnforceOnNewTab` parameter empty. This ensures a seamless correction of the previous misconfiguration.
 
 **Parameters Used:**  
-![Replace Parameters](../../../static/img/Browser---Homepage---Manage/image_7.png)
+![Replace Parameters](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_7.webp)
 
 **Output:**  
-![Replace Output](../../../static/img/Browser---Homepage---Manage/image_8.png)
+![Replace Output](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_8.webp)
 
 ## Sample Run
 
 - Set the Homepage on a single browser.  
 Example: Setting [https://www.provaltech.com](https://www.provaltech.com) to the homepage of Google Chrome:  
-![Set Chrome Homepage](../../../static/img/Browser---Homepage---Manage/image_9.png)
+![Set Chrome Homepage](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_9.webp)
 
 - Remove the Homepage from a single browser:  
 Example: Removing the homepage from Mozilla Firefox:  
-![Remove Firefox Homepage](../../../static/img/Browser---Homepage---Manage/image_10.png)
+![Remove Firefox Homepage](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_10.webp)
 
 - Replace the current homepage on a single browser.  
 Example: Replacing the homepage on Microsoft Edge with [https://www.provaltech.com](https://www.provaltech.com):  
-![Replace Edge Homepage](../../../static/img/Browser---Homepage---Manage/image_11.png)
+![Replace Edge Homepage](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_11.webp)
 
 - Perform an action against multiple browsers:  
 Example: Replacing the homepage with [https://www.provaltech.com](https://www.provaltech.com) for Google Chrome and Mozilla Firefox:  
-![Replace Chrome and Firefox Homepage](../../../static/img/Browser---Homepage---Manage/image_12.png)
+![Replace Chrome and Firefox Homepage](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_12.webp)
 
 - Perform an action against all browsers:  
 Example: Removing the homepage from all three browsers (Google Chrome, Microsoft Edge, Mozilla Firefox):  
-![Remove All Browsers Homepage](../../../static/img/Browser---Homepage---Manage/image_13.png)
+![Remove All Browsers Homepage](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_13.webp)
 
 - Enforce the homepage on browser startup.  
 Example: Configuring Google Chrome and Microsoft Edge to open [https://www.provaltech.com](https://www.provaltech.com) as the homepage upon startup and ensuring that this setting is enforced in both browsers.  
-![Enforce Homepage on Startup](../../../static/img/Browser---Homepage---Manage/image_14.png)
+![Enforce Homepage on Startup](../../../static/img/docs/770946a6-9399-4001-adc6-9d1eb9f203da/image_14.webp)
 
 ## Output
 
 - Script logs
-
-

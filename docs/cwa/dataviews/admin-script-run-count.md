@@ -23,5 +23,3 @@ This dataview helps you audit the run count of scripts that are running in your 
 | Last Run Time  | Displays the last run time of the script              |
 | Total Runs     | Displays the total number of times the script has been executed |
 | Last Run Date  | Displays the last run date of the script              |
-
-

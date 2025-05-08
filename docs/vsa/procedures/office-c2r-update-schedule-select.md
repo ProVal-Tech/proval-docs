@@ -43,5 +43,3 @@ This document outlines how to set the Microsoft Update Channel for a Click2Run O
 
 Agent Procedure Log
 
-
-

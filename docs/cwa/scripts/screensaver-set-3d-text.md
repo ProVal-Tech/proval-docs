@@ -18,7 +18,7 @@ This script will set custom text as a screensaver on a Windows machine.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Screensaver---Set-3D-Text/image_1.png)
+![Sample Run](../../../static/img/docs/81520f8a-9cf5-4255-b159-837c8939b964/image_1.webp)
 
 #### Global Parameters
 
@@ -43,5 +43,3 @@ Please ensure that the message for the `@screensavermessage@` parameter does not
 ## Output
 
 - Script log
-
-

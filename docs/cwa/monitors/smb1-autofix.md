@@ -27,6 +27,6 @@ Global
 
 **_To enable ticketing, please set the ticket category in the monitor as shown below:_**
 
-![Ticket Category Setup](../../../static/img/SMB1-Autofix/image_1.png)
+![Ticket Category Setup](../../../static/img/docs/cb1ab987-657f-4503-a3e1-f4f6345b6fdf/image_1.webp)
 
 Once the ticket category is set, the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b) will automatically create a ticket to the service board using the ticket category set.

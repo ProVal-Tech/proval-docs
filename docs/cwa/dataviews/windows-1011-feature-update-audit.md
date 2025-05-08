@@ -45,5 +45,3 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 | ------ | ---------- | ----- | ------ |
 | EOL    | Equals     | Yes   | Red    |
 | EOL    | Equals     | No    | Green  |
-
-

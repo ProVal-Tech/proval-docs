@@ -17,10 +17,8 @@ This script will disable the Network probe on an Automate agent.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Network-Probe---Disable/image_1.png)
+![Sample Run](../../../static/img/docs/0cf62bc5-b926-499c-9f40-57824d293dff/image_1.webp)
 
 ## Process
 
 - This script runs an LT Command to disable the Network probe on the Automate agent.
-
-

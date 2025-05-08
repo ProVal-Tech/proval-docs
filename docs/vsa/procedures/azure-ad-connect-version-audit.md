@@ -73,5 +73,3 @@ Document the various variables in the script. Delete any section that is not rel
 
 Attach the content XML VSA Export to this document.
 
-
-

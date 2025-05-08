@@ -30,17 +30,17 @@ The group manages the supported computers for companies that have enabled the [U
 
 Navigate to `Endpoints` > `Groups`
 
-![Image1](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image1.png)
+![Image1](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image1.webp)
 
 ### Step 2
 
 Click the `Add` button and select the `Dynamic Group` option.
 
-![Image2](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image2.png)
+![Image2](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image2.webp)
 
 The following screen will appear:
 
-![Image3](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image3.png)
+![Image3](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image3.webp)
 
 ### Step 3
 
@@ -52,7 +52,7 @@ Fill in the summary as follows:
 
 **Description:** `The group manages the supported computers for companies that have enabled the Unknown User Profiles Detection custom field.`
 
-![Image4](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image4.png)
+![Image4](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image4.webp)
 
 ### Step 4
 
@@ -65,7 +65,7 @@ Fill in the summary as follows:
 - Select the `Contains any of` operator.
 - Select the `Enabled`, and `Workstations Only` options from the dropdown menu.
 
-![Image5](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image5.png)
+![Image5](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image5.webp)
 
 <span style={{color: 'green'}}> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled`, `Workstations Only` </span>
 
@@ -76,7 +76,7 @@ Fill in the summary as follows:
 - Select the `Contains any of` operator.
 - Select `Microsoft Windows` <span style={{color: 'yellow'}}>**>>**</span> `10`, and `11` from the dropdown menu.
 
-![Image6](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image6.png)
+![Image6](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image6.webp)
 
 <span style={{color: 'green'}}> **Condition:** `OS` `Contains any of` `Microsoft Windows 10`, `Microsoft Windows 11` </span>
 
@@ -85,7 +85,7 @@ Fill in the summary as follows:
 - Click the `Add Outer Block` button.
 - Change the comparator to `OR`.
 
-![Image7](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image7.png)
+![Image7](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image7.webp)
 
 **Condition 4:**
 
@@ -94,7 +94,7 @@ Fill in the summary as follows:
 - Select the `Contains any of` operator.
 - Select the `Enabled` option from the dropdown menu.
 
-![Image8](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image8.png)
+![Image8](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image8.webp)
 
 <span style={{color: 'green'}}> **Condition:** `Unknown User Profiles Detection` `Contains any of` `Enabled` </span>
 
@@ -106,7 +106,7 @@ Fill in the summary as follows:
 - Select `Microsoft Windows` <span style={{color: 'yellow'}}>**>>**</span> `Server` <span style={{color: 'yellow'}}>**>>**</span> `2016`, `2019`, and `2022` from the dropdown menu.
 - Select `2016` and newer servers.
 
-![Image9](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image9.png)
+![Image9](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image9.webp)
 
 <span style={{color: 'green'}}> **Condition:** `OS` `Contains any of` `Microsoft Windows Server 2016`, `Microsoft Windows Server 2019`, `Microsoft Windows Server 2022`</span>
 
@@ -114,16 +114,16 @@ Fill in the summary as follows:
 
 Review the `Criteria` section. This is how the completed criteria section will look: 
 
-![Image10](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image10.png)
+![Image10](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image10.webp)
 
 ### Step 6
 
 Click the `Save` button to save the group.
 
-![Image11](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image11.png)
+![Image11](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image11.webp)
 
 ## Completed Group
 
-![Image12](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image12.png)
+![Image12](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image12.webp)
 
-![Image13](../../../static/img/cwrmm-group-unknown-user-profiles-detection/Image13.png)
+![Image13](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image13.webp)

@@ -28,5 +28,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
-
-

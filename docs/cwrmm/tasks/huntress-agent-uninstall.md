@@ -22,14 +22,14 @@ This document outlines the steps to uninstall the Huntress agent from a Windows 
 
 To implement this script, please create a new PowerShell script.
 
-![Image 1](../../../static/img/Huntress-Agent-(UNINSTALL)/image_1.png)  
-![Image 2](../../../static/img/Huntress-Agent-(UNINSTALL)/image_2.png)  
+![Image 1](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_1.webp)  
+![Image 2](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_2.webp)  
 
 **Name:** Huntress Agent (UNINSTALL)  
 **Description:** This task will uninstall the Huntress agent if it is installed on the machine.  
 **Category:** Custom  
 
-![Image 3](../../../static/img/Huntress-Agent-(UNINSTALL)/image_3.png)  
+![Image 3](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_3.webp)  
 
 # Script
 
@@ -37,7 +37,7 @@ To implement this script, please create a new PowerShell script.
 
 Click on "Add Row" and select the PowerShell Script function.
 
-![Image 4](../../../static/img/Huntress-Agent-(UNINSTALL)/image_4.png)  
+![Image 4](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_4.webp)  
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
@@ -96,7 +96,7 @@ if ($installed -match 'Huntress') {
 }
 ```
 
-![Image 5](../../../static/img/Huntress-Agent-(UNINSTALL)/image_5.png)  
+![Image 5](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_5.webp)  
 
 ## Step 2 Logic: If Then Else
 
@@ -104,14 +104,14 @@ if ($installed -match 'Huntress') {
 
 - Add a new `If/Then/Else` logic from the "Add Logic" dropdown menu.
 
-![Image 6](../../../static/img/Huntress-Agent-(UNINSTALL)/image_6.png)  
+![Image 6](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_6.webp)  
 
 ### ROW 2a Condition: Output Contains
 
 - Type `Huntress agent is not installed` in the Value box.
 - Select another condition with OR operation and type `Huntress agent successfully uninstalled` in the value box.
 
-![Image 7](../../../static/img/Huntress-Agent-(UNINSTALL)/image_7.png)  
+![Image 7](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_7.webp)  
 
 ### ROW 2b Function: Script Log
 
@@ -123,7 +123,7 @@ if ($installed -match 'Huntress') {
 Huntress agent is successfully uninstalled.
 ```
 
-![Image 8](../../../static/img/Huntress-Agent-(UNINSTALL)/image_8.png)  
+![Image 8](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_8.webp)  
 
 ### Step 2c Function: Script Exit
 
@@ -131,8 +131,8 @@ Huntress agent is successfully uninstalled.
 - Search and select the `Script Exit` function.
 - Leave it blank.
 
-![Image 9](../../../static/img/Huntress-Agent-(UNINSTALL)/image_9.png)  
-![Image 10](../../../static/img/Huntress-Agent-(UNINSTALL)/image_10.png)  
+![Image 9](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_9.webp)  
+![Image 10](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_10.webp)  
 
 ### Step 2d Function: Script Exit
 
@@ -145,12 +145,12 @@ Failed to uninstall Huntress Agent. Below is the uninstallation result:
 %output%
 ```
 
-![Image 11](../../../static/img/Huntress-Agent-(UNINSTALL)/image_11.png)  
-![Image 12](../../../static/img/Huntress-Agent-(UNINSTALL)/image_12.png)  
+![Image 11](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_11.webp)  
+![Image 12](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_12.webp)  
 
 The final task should look like the screenshot below.
 
-![Final Task Image](../../../static/img/Huntress-Agent-(UNINSTALL)/image_13.png)  
+![Final Task Image](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_13.webp)  
 
 ## Script Deployment
 
@@ -160,10 +160,8 @@ Go to Automations > Tasks.
 Search for "Huntress Agent Install."  
 Then click on "Schedule" and provide the parameters details as necessary for the script completion.
 
-![Image 13](../../../static/img/Huntress-Agent-(UNINSTALL)/image_14.png)  
+![Image 13](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_14.webp)  
 
 ## Output
 
 - Script log
-
-

@@ -22,8 +22,8 @@ The script creates remote monitors that trigger an alert when the memory usage o
 
 New client and computer level override EDFs have been introduced to override the value stored in system properties.  
 Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1` to create the new EDFs.  
-![Run Debug Script](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image4.png)  
-![Run Debug Script](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image5.png)
+![Run Debug Script](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image4.webp)  
+![Run Debug Script](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image5.webp)
 
 ## Before You Proceed
 
@@ -56,11 +56,11 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
        ```
 
    - Open the `Server Status` tool by navigating to Help > Server Status.  
-      ![Image1](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image1.png)  
+      ![Image1](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image1.webp)  
    - Click the `Do Group Refresh` button to refresh and apply the changes made.  
-      ![Image2](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image2.png)  
+      ![Image2](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image2.webp)  
    - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.
-      ![Image3](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image3.png)  
+      ![Image3](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image3.webp)  
 
 2. Import the `△ Custom - Ticket Creation - Computer` alert template from the `ProSync` plugin if it's missing in the environment.
 
@@ -69,22 +69,22 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 4. **Run/Debug the Script**
    - Execute or debug the script against a single client, with the `Set_Environment` parameter set to `1`. This action will generate the necessary system properties and Extra Data Fields (EDFs) for managing the remote monitors.
 
-   ![Run Debug Script](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image4.png)  
-   ![Run Debug Script](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image5.png)
+   ![Run Debug Script](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image4.webp)  
+   ![Run Debug Script](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image5.webp)
 
 5. **Reload System Cache**
    - Refresh the system cache to ensure all changes are updated.  
-      ![Image6](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image6.png)  
+      ![Image6](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image6.webp)  
 
 6. **Configure System Properties and EDFs**
    - Navigate to the **System Dashboard --> Config --> Configurations --> Properties**.  
    - Find the properties beginning with `MEM_Monitoring`.  
-      ![Image7](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image7.png)  
+      ![Image7](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image7.webp)  
       - The consultant should have provided you with any customizations that are required. Please read through the detailed System Properties and EDF explanations to understand how to configure any customizations.
 
 7. **Schedule the Script**
    - Schedule the script to run once per day, preferably around midnight, from the dashboard for optimal results.  
-       ![Image8](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image8.png)
+       ![Image8](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image8.webp)
 
 ## User Parameters
 
@@ -96,23 +96,23 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 
 | Name | Example | Required | Description |
 |------|---------|----------|-------------|
-| MEM_Monitoring_Group_Ids | 2,3,855,856 | True | The script will create remote monitors for the machines that belong to the groups identified by the group IDs specified in this system property. The monitor set will not be associated with the groups themselves but with the individual machines. Multiple IDs can be included by separating them with a comma. The default value is `0`. **Note:** If this property is set to `0`, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group IDs are defined in the system properties. <br /> ![Image9](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image9.png) |
-| MEM_Monitoring_Server_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Servers only. The default value is `0`. The script will remove the monitor set created for the Windows Workstations after setting this property to `1`. <br /> ![Image10](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image10.png)|
-| MEM_Monitoring_Workstation_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Workstations only. The default value is `0`. The script will remove the monitor set created for the Windows Servers after setting this property to `1`. <br /> ![Image11](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image11.png)|
-| MEM_Monitoring_Exclude_Virtual_Machines | 0 | False | Setting this system property to `1` will limit the monitor set creation to Physical Windows Machines only. The default value is `0`. The script will remove the monitor set created for the Virtual Machines after setting this property to `1`. <br /> ![Image12](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image12.png)|
-| MEM_Monitoring_Interval | 300 | True | Controls the generated Remote Monitor run time interval. The default is 300 seconds. <br /> ![Image13](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image13.png)  <br /> ![Image14](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image14.png)|
-| MEM_Monitoring_Server_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which servers must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. <br /> ![Image15](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image15.png)|
-| MEM_Monitoring_Workstation_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which workstations must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. <br /> ![Image16](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image16.png)|
-| MEM_Monitoring_Server_High_Threshold_Percentage | 95 | True | This property stores the upper threshold, expressed as a percentage, for Memory usage on servers. The default value is `95`. <br /> ![Image17](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image17.png)|
-| MEM_Monitoring_Workstation_High_Threshold_Percentage | 90 | True | This property stores the upper threshold, expressed as a percentage, for Memory usage on workstations. The default value is `90`. <br /> ![Image18](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image18.png)|
-| MEM_Monitoring_Server_Low_Threshold_Percentage | 90 | True | This property stores the lower threshold, expressed as a percentage, for Memory usage on servers. The default value is `90`. <br /> ![Image19](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image19.png)|
-| MEM_Monitoring_Workstation_Low_Threshold_Percentage | 85 | True | This property stores the lower threshold, expressed as a percentage, for Memory usage on workstations. The default value is `90`. <br /> ![Image20](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image20.png)|
-| MEM_Monitoring_Server_AlertTemplate | 1 | True | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer` alert template. <br />![Image21](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image21.png)  <br /> <br />Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. <br />![Image22](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image22.png) <br /><br />It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. <br />![Image23](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image23.png)|
-| MEM_Monitoring_Workstation_AlertTemplate | 1 | True | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer` alert template.  <br />![Image24](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image24.png) <br /><br />It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
-| MEM_Monitoring_Server_TicketCategory | 124 | False | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is `0`.  i.e., `<Not Specifed>`. <br />![Image25](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image25.png) <br /><br /> Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. <br />![Image26](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image26.png) <br /><br /> Navigate to the **System Dashboard --> Config--> Information Base Categories** to find the Id of the required ticket category. <br />![Image27](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image27.png)|
-| MEM_Monitoring_Workstation_TicketCategory | 125 | False | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is `0`. <br />![Image28](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image28.png)|
+| MEM_Monitoring_Group_Ids | 2,3,855,856 | True | The script will create remote monitors for the machines that belong to the groups identified by the group IDs specified in this system property. The monitor set will not be associated with the groups themselves but with the individual machines. Multiple IDs can be included by separating them with a comma. The default value is `0`. **Note:** If this property is set to `0`, the monitoring will be disabled and the script will remove the existing monitor set. Therefore, the creation of the monitor set will not commence unless the group IDs are defined in the system properties. <br /> ![Image9](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image9.webp) |
+| MEM_Monitoring_Server_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Servers only. The default value is `0`. The script will remove the monitor set created for the Windows Workstations after setting this property to `1`. <br /> ![Image10](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image10.webp)|
+| MEM_Monitoring_Workstation_Only | 0 | False | Setting this system property to `1` will limit the monitor set creation to Windows Workstations only. The default value is `0`. The script will remove the monitor set created for the Windows Servers after setting this property to `1`. <br /> ![Image11](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image11.webp)|
+| MEM_Monitoring_Exclude_Virtual_Machines | 0 | False | Setting this system property to `1` will limit the monitor set creation to Physical Windows Machines only. The default value is `0`. The script will remove the monitor set created for the Virtual Machines after setting this property to `1`. <br /> ![Image12](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image12.webp)|
+| MEM_Monitoring_Interval | 300 | True | Controls the generated Remote Monitor run time interval. The default is 300 seconds. <br /> ![Image13](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image13.webp)  <br /> ![Image14](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image14.webp)|
+| MEM_Monitoring_Server_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which servers must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. <br /> ![Image15](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image15.webp)|
+| MEM_Monitoring_Workstation_Continuous_Usage_Threshold_Minutes | 30 | True | This property determines the duration in minutes during which workstations must consistently exhibit high Memory usage before triggering an alert. By default, this duration is set to `30` minutes. <br /> ![Image16](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image16.webp)|
+| MEM_Monitoring_Server_High_Threshold_Percentage | 95 | True | This property stores the upper threshold, expressed as a percentage, for Memory usage on servers. The default value is `95`. <br /> ![Image17](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image17.webp)|
+| MEM_Monitoring_Workstation_High_Threshold_Percentage | 90 | True | This property stores the upper threshold, expressed as a percentage, for Memory usage on workstations. The default value is `90`. <br /> ![Image18](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image18.webp)|
+| MEM_Monitoring_Server_Low_Threshold_Percentage | 90 | True | This property stores the lower threshold, expressed as a percentage, for Memory usage on servers. The default value is `90`. <br /> ![Image19](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image19.webp)|
+| MEM_Monitoring_Workstation_Low_Threshold_Percentage | 85 | True | This property stores the lower threshold, expressed as a percentage, for Memory usage on workstations. The default value is `90`. <br /> ![Image20](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image20.webp)|
+| MEM_Monitoring_Server_AlertTemplate | 1 | True | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the servers. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer` alert template. <br />![Image21](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image21.webp)  <br /> <br />Navigate to the **System Dashboard --> Management --> Alert Templates** to find the Id of the required alert template. <br />![Image22](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image22.webp) <br /><br />It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. <br />![Image23](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image23.webp)|
+| MEM_Monitoring_Workstation_AlertTemplate | 1 | True | This system property stores the id of the `Alert Template` to apply to the remote monitors created for the workstations. The default value is the TemplateID of the `△ Custom - Ticket Creation - Computer` alert template.  <br />![Image24](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image24.webp) <br /><br />It is suggested to use the `△ Custom - Ticket Creation - Computer` alert for better alerting. The alert template should not be running the very same script for the Warning action as well unless you want to create a ticket for the PowerShell errors too. |
+| MEM_Monitoring_Server_TicketCategory | 124 | False | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Servers. The default value is `0`.  i.e., `<Not Specifed>`. <br />![Image25](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image25.webp) <br /><br /> Ticket Categories are used to control the CW Manage service board of the tickets generated by Automate. <br />![Image26](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image26.webp) <br /><br /> Navigate to the **System Dashboard --> Config--> Information Base Categories** to find the Id of the required ticket category. <br />![Image27](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image27.webp)|
+| MEM_Monitoring_Workstation_TicketCategory | 125 | False | This system property stores the id of the `Ticket Category` to apply to the remote monitors created for the Workstations. The default value is `0`. <br />![Image28](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image28.webp)|
 
-![Image29](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image29.png)
+![Image29](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image29.webp)
 
 ## Client-Level EDF
 
@@ -132,8 +132,8 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 | MEMM Wks Low Threshold Percent | Text | Memory Monitoring | Set this EDF to override the value set in the system property `MEM_Monitoring_Workstation_Low_Threshold_Percentage` |
 | MEMM Wks TicketCategory | Text | Memory Monitoring | Set this EDF to override the value set in the system property `MEM_Monitoring_Workstation_TicketCategory` |
 
-![Image40](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image40.png)  
-![Image38](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image38.png)
+![Image40](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image40.webp)  
+![Image38](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image38.webp)
 
 **Note:** Mark all three `Exclusion` EDFs to exclude the client from the monitoring.
 
@@ -144,7 +144,7 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 | MEM Monitoring - Exclude Servers | Check Box | Exclusions | Selecting this Extra Data Field (EDF) will exclude the servers of the client from the Memory Usage monitoring. The script will not create any remote monitors for the servers under this location. |
 | MEM Monitoring - Exclude Workstations | Check Box | Exclusions | Selecting this Extra Data Field (EDF) will exclude the workstations of the client from the Memory Usage monitoring. The script will not create any remote monitors for the workstations under this location. |
 
-![Image30](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image30.png)
+![Image30](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image30.webp)
 
 **Note:** Mark both EDFs to exclude the location from the monitoring.
 
@@ -159,8 +159,8 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 | MEMM Low Threshold Percent | Text | Memory Monitoring | Setting this EDF will replace the value stored in the system property `MEM_Monitoring_Server_Low_Threshold_Percentage` for servers or `MEM_Monitoring_Workstation_Low_Threshold_Percentage` for workstations, as well as the value stored in the client-level EDFs `MEMM Svr Low Threshold Percent` for servers or `MEMM Wks Low Threshold Percent` for workstations. |
 | MEMM TicketCategory | Text | Memory Monitoring | Setting this EDF will replace the value stored in the system property `MEM_Monitoring_Server_TicketCategory` for servers or `MEM_Monitoring_Workstation_TicketCategory` for workstations, as well as the value stored in the client-level EDFs `MEMM Svr TicketCategory` for servers or `MEMM Wks TicketCategory` for workstations. |
 
-![Image31](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image31.png)  
-![Image39](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image39.png)
+![Image31](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image31.webp)  
+![Image39](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image39.webp)
 
 ## Remote Monitor Example
 
@@ -174,15 +174,15 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 
 **Sample Ticket:** The ticket illustrated here was created by setting the upper threshold value to `30` and the lower threshold value to `20`. However, it's important to note that this example is purely for demonstration purposes. It does not advocate for or encourage the creation of Memory usage tickets for machines where the Memory usage exceeds `30%`.
 
-![Image32](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image32.png)  
-![Image33](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image33.png)
+![Image32](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image32.webp)  
+![Image33](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image33.webp)
 
 **Sample Remote Monitor:**
 
-![Image34](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image34.png)  
-![Image35](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image35.png)  
-![Image36](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image36.png)  
-![Image37](../../../static/img/Memory-Threshold-Violation-Monitor---Create/image37.png)  
+![Image34](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image34.webp)  
+![Image35](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image35.webp)  
+![Image36](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image36.webp)  
+![Image37](../../../static/img/docs/28530e35-7416-48c4-b56d-897c7d4727f6/image37.webp)  
 
 ## Output
 

@@ -20,12 +20,10 @@ It should be used with a monitor for locations missing a network probe.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Network-Probe---Enable/image_1.png)
+![Sample Run](../../../static/img/docs/46629c59-bae2-49d8-80ac-12267a8ccc5b/image_1.webp)
 
 The script executes the LT Command to enable the network probe.
 
 ## Output
 
 No Output - Command Log
-
-

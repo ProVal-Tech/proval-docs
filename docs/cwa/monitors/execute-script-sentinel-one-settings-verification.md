@@ -28,5 +28,3 @@ Global
 
 **Note:** Ensure to import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5) script before importing or creating the alert template, as the template should run this script.
 
-
-

@@ -16,9 +16,9 @@ It can run on demand and also be scheduled as an autofix with the monitor.
 
 ## Sample Run
 
-![Sample Run](<../../../static/img/docs/MSRT Disable-Uninstall/image.png>)
+![Sample Run](<../../../static/img/docs/21c23057-f81d-11ef-87d3-8600008a66b7/image.webp>)
 
-![Sample Run](<../../../static/img/docs/MSRT Disable-Uninstall/image-1.png>)
+![Sample Run](<../../../static/img/docs/21c23057-f81d-11ef-87d3-8600008a66b7/image-1.webp>)
 
 ## Dependencies
 

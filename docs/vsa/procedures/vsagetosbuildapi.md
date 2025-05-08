@@ -20,5 +20,3 @@ Update OS Build Custom Fields with Web Check for Windows 10 via API
 - **user**: Username we will authenticate with  
 - **password**: The authentication string (password or PAT)  
 
-
-

@@ -29,5 +29,3 @@ Stores data from the monitor @Agent Counts Recorder about the number of servers,
 | servers   | INT  | The number of servers measured for the associated client.     |
 | computers | INT  | The number of non-servers measured for the associated client. |
 | over90    | INT  | The number of machines that have checked in within 90 days.  |
-
-

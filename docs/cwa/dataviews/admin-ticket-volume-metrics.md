@@ -33,6 +33,4 @@ Automate must generate tickets.
 
 ## Example
 
-![Example Image](../../../static/img/Admin---Ticket-Volume-Metrics/image_1.png)
-
-
+![Example Image](../../../static/img/docs/c5f66e4b-17d7-4ccb-bc27-d992e6031650/image_1.webp)

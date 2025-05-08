@@ -28,12 +28,12 @@ The purpose of this monitor set is to detect machines that do not have any cumul
 
 ### NOTES:
 1. Adjustments to the SQL must be made at `AgentID = 'TYPE YOUR MONITOR ID HERE'` to make this functional.
-   ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_1.png)
+   ![Image](../../../static/img/docs/663a6cf8-f3da-4a44-9725-73aae8d4d954/image_1.webp)
 2. To overwrite the default threshold of 45 days, the following changes should be made:
    1. Change 45 in the `INTERVAL 45 DAY` statement at the bottom of the additional condition of the monitor set to the preferred number of days.
-      ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_2.png)
+      ![Image](../../../static/img/docs/663a6cf8-f3da-4a44-9725-73aae8d4d954/image_2.webp)
    2. In the Alerting tab, replace 45 with the desired threshold in days.
-      ![Image](../../../static/img/Patches-Not-Installing--X-Days/image_3.png)
+      ![Image](../../../static/img/docs/663a6cf8-f3da-4a44-9725-73aae8d4d954/image_3.webp)
 
 ## Dependencies
 
@@ -60,6 +60,4 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
-
-
 

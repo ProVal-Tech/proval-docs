@@ -37,5 +37,3 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
-
-

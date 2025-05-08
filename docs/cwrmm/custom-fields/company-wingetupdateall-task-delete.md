@@ -24,8 +24,6 @@ Marking this custom field will automatically add the machines to the [CW RMM - M
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_1.png)
+![Screenshot 1](../../../static/img/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a/image_1.webp)
 
-![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Delete/image_2.png)
-
-
+![Screenshot 2](../../../static/img/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a/image_2.webp)

@@ -16,7 +16,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Winget---InstallUpdate/image_1.png)
+![Sample Run](../../../static/img/docs/d5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc/image_1.webp)
 
 ## Dependencies
 
@@ -42,5 +42,3 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 ## Output
 
 - Script log
-
-

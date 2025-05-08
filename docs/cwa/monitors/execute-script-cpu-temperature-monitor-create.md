@@ -28,7 +28,5 @@ Global
 
 **The alert template should run the** [EPM - Sensors - Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) **script for `Error`.**
 
-![Image 1](../../../static/img/Create/image_1.png)  
-![Image 2](../../../static/img/Create/image_2.png)
-
-
+![Image 1](../../../static/img/docs/d1cd1622-27ec-4bbd-9297-1b4b7b2d65b2/image_1.webp)  
+![Image 2](../../../static/img/docs/d1cd1622-27ec-4bbd-9297-1b4b7b2d65b2/image_2.webp)

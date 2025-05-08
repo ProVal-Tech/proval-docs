@@ -34,5 +34,3 @@ Remove or audit potentially unwanted applications on Windows systems (PUAs).
    1. This will happen if the passed bloatware object is not supported in our current script.
    2. You may submit a request to us to add the desired item.
 
-
-

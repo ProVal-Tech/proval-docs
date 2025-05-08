@@ -18,7 +18,7 @@ This solution aims to establish a centralized domain admin for each domain, ensu
 
 The solution's Extra Data Fields have been renamed. Update the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script from the `Prosync` plugin and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` set to `1` to implement the changes.
 
-![Image](../../static/img/Windows-Domain-Admin-Process/image_1.png)
+![Image](../../static/img/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc/image_1.webp)
 
 ## Associated Content
 
@@ -32,15 +32,15 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 
 1. Read the solution-related documents carefully.
 2. Import the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script and run/debug against an online Windows machine with `SetEnvironment_Domain_Admin_Process` set to `1`. This will create the required EDFs and system properties.  
-   ![Image](../../static/img/Windows-Domain-Admin-Process/image_2.png)
+   ![Image](../../static/img/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc/image_2.webp)
 3. Reload the system cache.
 4. Modify the default values for the system properties (if desired).  
-   ![Image](../../static/img/Windows-Domain-Admin-Process/image_3.png)
+   ![Image](../../static/img/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc/image_3.webp)
 5. Import the [EPM - Windows Configuration - Internal Monitor - Windows Domain Admin Account Process](/docs/6270f7b1-3cf6-433f-b6e9-b1300b545896) internal monitor.
 6. Import the `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update` alert template.
 7. Apply the template to the internal monitor.
 8. Fill in the proper values under the client-level EDFs to enable the solution for the concerned clients.  
-   ![Image](../../static/img/Windows-Domain-Admin-Process/image_4.png)
+   ![Image](../../static/img/docs/47f6e5ab-064e-4f15-86e6-226a274b73dc/image_4.webp)
 
 ## FAQ
 
@@ -53,5 +53,3 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
-
-

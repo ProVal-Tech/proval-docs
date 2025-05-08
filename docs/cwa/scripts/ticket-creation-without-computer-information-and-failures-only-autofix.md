@@ -18,7 +18,7 @@ This script operates similarly to the [CWM - Automate - Script - Ticket Creation
 
 This is an Autofix Script, and it is currently being used with the “~Custom Ticket Creation without Computer Details” alert template.
 
-![Sample Run](../../../static/img/Ticket-Creation---Without-Computer-Information-And-Failures-Only-Autofix/image_1.png)
+![Sample Run](../../../static/img/docs/730449e6-1c73-46ca-a93d-d7b9526e1ef9/image_1.webp)
 
 ## Variables
 
@@ -50,5 +50,3 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
-
-

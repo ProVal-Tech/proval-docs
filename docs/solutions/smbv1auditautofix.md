@@ -59,7 +59,7 @@ DELETE FROM dataviews WHERE name = 'SMB1 Status [Remote Monitor]';
 
 2. Reload the system cache:
 
-   ![Reload Cache](../../static/img/SMBv1AuditAutofix/image_1.png)
+   ![Reload Cache](../../static/img/docs/343654e4-9263-4fec-87c1-3c3401a94e95/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Browse → Groups (△ System Monitoring→△ Vulnerability Management) → Computers→ Remote monitors within the CWA Control Center and set the following:
@@ -75,7 +75,7 @@ DELETE FROM dataviews WHERE name = 'SMB1 Status [Remote Monitor]';
 
    ```
    Note: Group "△ Vulnerability Management" under "△ System Monitoring" is created as a standard group to maintain a record of all monitors being developed in the future to be applied from it.
-   ![Group Monitoring](../../static/img/SMBv1AuditAutofix/image_2.png)
+   ![Group Monitoring](../../static/img/docs/343654e4-9263-4fec-87c1-3c3401a94e95/image_2.webp)
 
    It contains all Windows Servers and Workstations whose onboarding is completed and service plans are under contract.
    Therefore, it is mandatory to validate that the monitors applied to this group have their Limit applied based on the Audit or Audit with Autofix selection; otherwise, it will be applied to all Windows machines.
@@ -85,7 +85,7 @@ DELETE FROM dataviews WHERE name = 'SMB1 Status [Remote Monitor]';
 
    To enable the solution, please make sure to select any one Audit option from the drop-down EDFs "SMB1 Vulnerability" at the computer, location, or client level. The 'Additional Field Default' value can also be selected here to enable the solution globally.
 
-   ![Select Audit Option](../../static/img/SMBv1AuditAutofix/image_3.png)
+   ![Select Audit Option](../../static/img/docs/343654e4-9263-4fec-87c1-3c3401a94e95/image_3.webp)
 
    - Audit with Autofix → If this is selected, then SMB1 will be automatically disabled if found enabled on any device.
      - Both the SMB1 client and SMB1 server will be disabled.
@@ -99,8 +99,6 @@ DELETE FROM dataviews WHERE name = 'SMB1 Status [Remote Monitor]';
 
 Optionally, if the client wants, we can enable ticketing to monitor the SMB1 traffic live detection cases separately for each machine by setting up the system properties:
 
-![Traffic Detection Ticketing](../../static/img/SMBv1AuditAutofix/image_4.png)
+![Traffic Detection Ticketing](../../static/img/docs/343654e4-9263-4fec-87c1-3c3401a94e95/image_4.webp)
 
 Note: This should only be implemented if the consultant approves it.
-
-

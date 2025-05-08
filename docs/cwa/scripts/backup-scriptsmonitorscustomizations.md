@@ -42,16 +42,16 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 
 1. Import the script.  
 2. Run the script against any client with the user parameter `Set_Environment` set to `1` after importing the script.  
-   ![Step 2](../../../static/img/Backup-ScriptsMonitorsCustomizations/image_1.png)  
+   ![Step 2](../../../static/img/docs/19787a52-3223-44e1-8670-ecf74f1b415c/image_1.webp)  
 
 3. Set the relevant values for the system properties `AutomateBackup_Computerid` and `AutomateBackup_Base_Directory`.  
-   ![Step 3](../../../static/img/Backup-ScriptsMonitorsCustomizations/image_2.png)  
+   ![Step 3](../../../static/img/docs/19787a52-3223-44e1-8670-ecf74f1b415c/image_2.webp)  
 
 4. By default, the system property `ProVal_Alerts_Email_Address` will be set to [alerts@provaltech.com](mailto:alerts@provaltech.com). This can be changed if these alerts should be sent elsewhere.  
-   ![Step 4](../../../static/img/Backup-ScriptsMonitorsCustomizations/image_3.png)  
+   ![Step 4](../../../static/img/docs/19787a52-3223-44e1-8670-ecf74f1b415c/image_3.webp)  
 
 5. Schedule the script to run at regular intervals.  
-   ![Step 5](../../../static/img/Backup-ScriptsMonitorsCustomizations/image_4.png)  
+   ![Step 5](../../../static/img/docs/19787a52-3223-44e1-8670-ecf74f1b415c/image_4.webp)  
 
 ## Dependencies
 
@@ -81,6 +81,4 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
-
-
 

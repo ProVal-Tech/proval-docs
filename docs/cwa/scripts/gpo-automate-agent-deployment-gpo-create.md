@@ -18,7 +18,7 @@ This script runs against a domain controller in a location with a network probe 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/GPO---Automate-Agent-Deployment-GPO---Create/image_1.png)
+![Sample Run](../../../static/img/docs/843cb902-2299-4d91-90b9-62bd7788ea6a/image_1.webp)
 
 ## Dependencies
 
@@ -49,5 +49,3 @@ This script runs against a domain controller in a location with a network probe 
 ## Output
 
 - Script log
-
-

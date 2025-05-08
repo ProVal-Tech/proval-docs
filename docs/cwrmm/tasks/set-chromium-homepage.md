@@ -16,15 +16,15 @@ This document outlines how to set an enforced homepage in popular browsers like 
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Set---Chromium-Homepage/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_1.webp)
 
 To add [https://www.google.com/](https://www.google.com/) to the homepage for Edge:
 
-![Sample Run Image 2](../../../static/img/Set---Chromium-Homepage/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_2.webp)
 
 Select `Run Now` and click on `Run Task`:
 
-![Sample Run Image 3](../../../static/img/Set---Chromium-Homepage/image_3.png)
+![Sample Run Image 3](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_3.webp)
 
 ## Dependencies
 
@@ -39,31 +39,31 @@ Select `Run Now` and click on `Run Task`:
 | EnforceHomepageStartup    | --                               | False    | Include this switch to force the homepage to be the only open tab at startup of the browser.             |
 | Target                   | Brave, Chrome, Edge              | False    | This designates the targeted Chromium-based browser to apply the setting to. You can leave the field blank if you want to set the same homepage for all the Chromium browsers available. |
 
-![User Parameters Image](../../../static/img/Set---Chromium-Homepage/image_4.png)
+![User Parameters Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_4.webp)
 
 ## Implementation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Implementation Image 1](../../../static/img/Set---Chromium-Homepage/image_5.png)
+![Implementation Image 1](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_5.webp)
 
-![Implementation Image 2](../../../static/img/Set---Chromium-Homepage/image_6.png)
+![Implementation Image 2](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_6.webp)
 
 **Name:** Set - Chromium Homepage  
 **Description:** Sets an enforced homepage in certain popular browsers like Brave, Chrome, and Edge.  
 **Category:** Management
 
-![Implementation Image 3](../../../static/img/Set---Chromium-Homepage/image_7.png)
+![Implementation Image 3](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_7.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/Set---Chromium-Homepage/image_8.png)
+![Add Parameter Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_8.webp)
 
 This screen will appear.
 
-![Parameter Screen Image](../../../static/img/Set---Chromium-Homepage/image_9.png)
+![Parameter Screen Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_9.webp)
 
 ### Homepage
 
@@ -72,11 +72,11 @@ This screen will appear.
 - Toggle ON the `Required Field` button.
 - Click the `Save` button.
 
-![Homepage Parameter Image](../../../static/img/Set---Chromium-Homepage/image_10.png)
+![Homepage Parameter Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_10.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm Parameter Image](../../../static/img/Set---Chromium-Homepage/image_11.png)
+![Confirm Parameter Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_11.webp)
 
 ### EnforceOnNewTab
 
@@ -84,11 +84,11 @@ Click the `Confirm` button to save the parameter.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![EnforceOnNewTab Image](../../../static/img/Set---Chromium-Homepage/image_12.png)
+![EnforceOnNewTab Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_12.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm EnforceOnNewTab Image](../../../static/img/Set---Chromium-Homepage/image_13.png)
+![Confirm EnforceOnNewTab Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_13.webp)
 
 ### EnforceHomepageStartup
 
@@ -96,11 +96,11 @@ Click the `Confirm` button to save the parameter.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![EnforceHomepageStartup Image](../../../static/img/Set---Chromium-Homepage/image_14.png)
+![EnforceHomepageStartup Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_14.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm EnforceHomepageStartup Image](../../../static/img/Set---Chromium-Homepage/image_15.png)
+![Confirm EnforceHomepageStartup Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_15.webp)
 
 ### Target
 
@@ -108,15 +108,15 @@ Click the `Confirm` button to save the parameter.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Target Parameter Image](../../../static/img/Set---Chromium-Homepage/image_16.png)
+![Target Parameter Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_16.webp)
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm Target Image](../../../static/img/Set---Chromium-Homepage/image_17.png)
+![Confirm Target Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_17.webp)
 
 Once all the parameters are created, it should look like this:
 
-![Parameters Created Image](../../../static/img/Set---Chromium-Homepage/image_18.png)
+![Parameters Created Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_18.webp)
 
 Proceed with the steps below to create a task.
 
@@ -124,23 +124,23 @@ Proceed with the steps below to create a task.
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/Set---Chromium-Homepage/image_19.png)
+![Add Row Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_19.webp)
 
 A blank function will appear.
 
-![Blank Function Image](../../../static/img/Set---Chromium-Homepage/image_20.png)
+![Blank Function Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_20.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Image 1](../../../static/img/Set---Chromium-Homepage/image_21.png)
+![PowerShell Script Image 1](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_21.webp)
 
-![PowerShell Script Image 2](../../../static/img/Set---Chromium-Homepage/image_22.png)
+![PowerShell Script Image 2](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_22.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Function Image](../../../static/img/Set---Chromium-Homepage/image_23.png)
+![PowerShell Script Function Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_23.webp)
 
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
@@ -231,41 +231,40 @@ if (Test-Path $ErrorLogPath) {
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script Image 3](../../../static/img/Set---Chromium-Homepage/image_24.png)
+![PowerShell Script Image 3](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_24.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row Image 2](../../../static/img/Set---Chromium-Homepage/image_25.png)
+![Add Row Image 2](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_25.webp)
 
 A blank function will appear.
 
-![Blank Function Image 2](../../../static/img/Set---Chromium-Homepage/image_20.png)
+![Blank Function Image 2](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_20.webp)
 
 Search and select the `Script Log` function.
 
-![Script Log Image](../../../static/img/Set---Chromium-Homepage/image_26.png)
+![Script Log Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_26.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Function Image](../../../static/img/Set---Chromium-Homepage/image_27.png)
+![Script Log Function Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_27.webp)
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script Log Save Image](../../../static/img/Set---Chromium-Homepage/image_28.png)
+![Script Log Save Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_28.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Script Log Save Confirmation Image](../../../static/img/Set---Chromium-Homepage/image_29.png)
+![Script Log Save Confirmation Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_29.webp)
 
 ## Completed Task
 
 The Script Editor should look like this:
 
-![Completed Task Image](../../../static/img/Set---Chromium-Homepage/image_30.png)
+![Completed Task Image](../../../static/img/docs/a616e505-d119-4fbd-90eb-6fcd9ebea41e/image_30.webp)
 
 ## Output
 
 - Script log
-

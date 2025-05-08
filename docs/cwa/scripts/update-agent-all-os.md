@@ -18,11 +18,9 @@ The script pulls the highest agent version in the environment and attempts to up
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Update-Agent---All-OS/image_1.png)
+![Sample Run](../../../static/img/docs/803b51b1-d17f-429c-835d-55712c49e75e/image_1.webp)
 
 ## Process
 
 - The script runs SQL to pull the highest agent version in the environment and attempts to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date.
-
-

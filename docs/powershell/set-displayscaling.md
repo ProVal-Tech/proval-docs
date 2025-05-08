@@ -37,5 +37,3 @@ To set the custom display scaling, use the following command:
 ## Output
 - `.\Set-DisplayScaling-log.txt`
 - `.\Set-DisplayScaling-Error.txt`
-
-

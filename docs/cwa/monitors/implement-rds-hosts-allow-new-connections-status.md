@@ -60,6 +60,6 @@ INSERT IGNORE INTO `groupagents` (`AgentID`, `GroupID`, `SearchID`, `Name`, `Che
 
 - Note: This implementation step will create a role [RSM - Remote Desktop Services - Role - Windows RDS Session Host](/docs/2383fd5a-aee3-4644-8bea-c05af3f3d320), a search "Windows RDS Session Host Servers" bound with the above role, a group named "Windows RDS Session Host Servers" limited to the above search, and lastly, the remote monitor [RDS Hosts - Allow New Connections Status](/docs/ffcdc2ca-7c63-4226-b7b5-090f241f0bba) will be created on the group with the alert template "Default - Do Nothing".
 
-    ![Image](../../../static/img/RDS-Hosts---Allow-New-Connections-Status/image_1.png)
+    ![Image](../../../static/img/docs/18fd9d3f-f0cd-4040-b89f-ec059c405609/image_1.webp)
 
 - This needs to be changed to the "Default - Create Automate Ticket" or any other template that the client needs, such as emailing or ticket creation.

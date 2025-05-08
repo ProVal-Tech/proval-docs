@@ -28,15 +28,15 @@ unlisted: false
 #### Step 1
 
 Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/cw-rmm-tasks-common-screenshots/step1.png)
+![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.webp)
 
 #### Step 2
 
 Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/cw-rmm-tasks-common-screenshots/step2.png)
+![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.webp)
 
 The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/cw-rmm-tasks-common-screenshots/step3.png)
+![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.webp)
 
 #### Step 3
 
@@ -51,25 +51,25 @@ Fill in the following details in the `Description` section:
 ### Parameters
 
 Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addparameter.png)
+![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addnewscriptparameter.png)
+![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 ### Script Editor
 
 Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
+![AddRow](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)
 
 A blank function will appear:  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
+![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
 
 #### Row 1 Function: `<Function Name>`
 
 ## Save Task
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/cw-rmm-tasks-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/savebutton.webp)
 
 ## Completed Task
 

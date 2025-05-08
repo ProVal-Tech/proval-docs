@@ -26,5 +26,3 @@ This dataview helps you audit the UAC status on machines with the help of a scri
 | Machine Name           | Displays the name of the machine            |
 | Location Name          | Displays the name of the location           |
 | User Account Control    | Displays the status of UAC on machines      |
-
-

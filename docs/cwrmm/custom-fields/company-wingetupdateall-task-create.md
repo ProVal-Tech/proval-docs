@@ -26,7 +26,5 @@ This custom field must be marked at the company level to run the [CW RMM - Task 
 
 ## Screenshot
 
-![Screenshot 1](../../../static/img/Company---WingetUpdateAll_Task_Create/image_1.png)
-![Screenshot 2](../../../static/img/Company---WingetUpdateAll_Task_Create/image_2.png)
-
-
+![Screenshot 1](../../../static/img/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1/image_1.webp)
+![Screenshot 2](../../../static/img/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1/image_2.webp)

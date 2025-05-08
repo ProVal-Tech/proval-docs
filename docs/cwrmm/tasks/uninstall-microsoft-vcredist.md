@@ -16,9 +16,9 @@ A CW RMM implementation of the [Invoke-VcRedistModule](https://proval.itglue.com
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Uninstall-Microsoft-VCRedist/image_1.png)  
-![Sample Run 2](../../../static/img/Uninstall-Microsoft-VCRedist/image_2.png)  
-![Sample Run 3](../../../static/img/Uninstall-Microsoft-VCRedist/image_3.png)  
+![Sample Run 1](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_3.webp)  
 
 ## Dependencies
 
@@ -35,73 +35,73 @@ This should be a list of ITGlue documents listed in the Related Items sidebar on
 | Release | 20072007,2008,2012       | False    | Set the release id(s) of the Redistributable to remove. |
 | All     | 1                         | False    | Setting this parameter to 1 will remove all installed Redistributables from the computer. |
 
-![User Parameters](../../../static/img/Uninstall-Microsoft-VCRedist/image_4.png)  
+![User Parameters](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_4.webp)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation 1](../../../static/img/Uninstall-Microsoft-VCRedist/image_5.png)  
-![Task Creation 2](../../../static/img/Uninstall-Microsoft-VCRedist/image_6.png)  
+![Task Creation 1](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_5.webp)  
+![Task Creation 2](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_6.webp)  
 
 **Name:** Uninstall Microsoft VCRedist  
 **Description:** Uninstall Microsoft Visual C++ Redistributable  
 **Category:** Application  
 
-![Task Creation 3](../../../static/img/Uninstall-Microsoft-VCRedist/image_7.png)  
+![Task Creation 3](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_7.webp)  
 
 ### Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_8.png)  
+![Add Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_8.webp)  
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Uninstall-Microsoft-VCRedist/image_9.png)  
+![Parameter Screen](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_9.webp)  
 
 - Set `All` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Enable the `Default Value` option.
 - Select `False` from the `Value` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_10.png)  
+![Save Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_10.webp)  
 
 It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_11.png)  
+![Confirm Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_11.webp)  
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_8.png)  
+![Add Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_8.webp)  
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Uninstall-Microsoft-VCRedist/image_9.png)  
+![Parameter Screen](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_9.webp)  
 
 - Set `Release` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_12.png)  
+![Save Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_12.webp)  
 
 It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/Uninstall-Microsoft-VCRedist/image_11.png)  
+![Confirm Parameter](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_11.webp)  
 
 ### Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Uninstall-Microsoft-VCRedist/image_13.png)  
+![Add Row](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Uninstall-Microsoft-VCRedist/image_14.png)  
+![Blank Function](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_14.webp)  
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![Select PowerShell Script](../../../static/img/Uninstall-Microsoft-VCRedist/image_15.png)  
-![PowerShell Script Selected](../../../static/img/Uninstall-Microsoft-VCRedist/image_16.png)  
+![Select PowerShell Script](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_15.webp)  
+![PowerShell Script Selected](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_16.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/Uninstall-Microsoft-VCRedist/image_17.png)  
+![PowerShell Function](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_17.webp)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -145,19 +145,17 @@ if ( $All -and $All -NotMatch 'All' -and $All -Match '1|(Yes)|(True)' ) {
 #endregion
 ```
 
-![PowerShell Script](../../../static/img/Uninstall-Microsoft-VCRedist/image_18.png)  
+![PowerShell Script](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_18.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script](../../../static/img/Uninstall-Microsoft-VCRedist/image_19.png)  
+![Save Script](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_19.webp)  
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Uninstall-Microsoft-VCRedist/image_20.png)  
+![Completed Task](../../../static/img/docs/88d3ea21-446e-47ad-9cc8-047df5a70a77/image_20.webp)  
 
 ## Output
 
 - Script Log
-
-
 
 

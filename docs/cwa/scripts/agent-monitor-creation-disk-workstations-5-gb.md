@@ -18,7 +18,7 @@ This script creates remote monitors for detected hard drives at the agent level 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Agent-Monitor-Creation---Disk-Workstations-5-GB/image_1.png)
+![Sample Run](../../../static/img/docs/5e473149-73a6-4e38-b61e-fd200d9af020/image_1.webp)
 
 ## Dependencies
 
@@ -63,5 +63,3 @@ The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAP
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
-
-

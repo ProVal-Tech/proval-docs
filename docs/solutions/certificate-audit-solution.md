@@ -67,10 +67,10 @@ The purpose of this solution is to pull meaningful certificate information into 
    - Alert Template - △ Custom - Ticket Creation - Computer
 
 2. Reload the system cache:  
-   ![Reload Cache](../../static/img/Certificate-Audit-Solution/image_1.png)
+   ![Reload Cache](../../static/img/docs/1045cfa0-257d-41a2-9a3f-a15837939b4f/image_1.webp)
 
 3. Execute the [Certificates (My) - Local Machine - Audit](/docs/7d13a122-8d62-4c50-b19f-922e6bb37a13) script against any online Windows computer to create the [plugin_proval_certs](/docs/44048760-bd04-451d-82ea-b6eee6a03552) custom table.  
-   ![Execute Script](../../static/img/Certificate-Audit-Solution/image_2.png)
+   ![Execute Script](../../static/img/docs/1045cfa0-257d-41a2-9a3f-a15837939b4f/image_2.webp)
 
 4. Skip this step for new implementations.  
    Run this SQL query from a RAWSQL monitor set to remove the script's schedule:  
@@ -88,7 +88,7 @@ The purpose of this solution is to pull meaningful certificate information into 
        - Service Plans.Windows Servers.Server Roles.Windows Web/Proxy Servers
        - Service Plans.Windows Servers.Server Roles.Windows Database Servers
        - Service Plans.Windows Servers.Server Roles.MSP Specific Servers  
-       ![Target Groups](../../static/img/Certificate-Audit-Solution/image_3.png)
+       ![Target Groups](../../static/img/docs/1045cfa0-257d-41a2-9a3f-a15837939b4f/image_3.webp)
      - Right-click and select "Run Now" to start the monitor.
 
 ### If Requested
@@ -99,5 +99,3 @@ The purpose of this solution is to pull meaningful certificate information into 
    - [Internal Monitor - Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
-
-

@@ -22,9 +22,9 @@ What VSA content relies on this Managed Variable?
 ## Example Data
 
 <div class='text-section scrollable'>
-### ![Image](../../../static/img/VSA_API_ARGS/image_1.png)
+### ![Image](../../../static/img/docs/2e21d3a9-d6c7-4279-895b-ad029fab84b7/image_1.webp)
 
-![Image](../../../static/img/VSA_API_ARGS/image_2.png)  
+![Image](../../../static/img/docs/2e21d3a9-d6c7-4279-895b-ad029fab84b7/image_2.webp)  
 
 Please note that the arguments have changed in VSAToolbox from previously used procedures. Ensure the arguments have been updated to match those seen below. Verify that there are two hyphens `--` before each argument.
 
@@ -43,5 +43,3 @@ The personal access token to use for VSA REST API authentication.
 </div>
 </div>
 </div>
-
-

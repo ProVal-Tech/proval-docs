@@ -66,7 +66,7 @@ Import the following alert templates from the `ProSync` plugin:
 ### 5.
 Reload the System Cache.
 
-![Reload the System Cache](../../static/img/Latest-Installed-Cumulative-Update/image_2.png)
+![Reload the System Cache](../../static/img/docs/0c224e91-ca6e-49b5-b2e6-3a8fee076690/image_2.webp)
 
 ### 6.
 Execute the [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script against a couple of online Windows 10/11 computers and validate the data in the [Latest Installed Cumulative Update](/docs/0c224e91-ca6e-49b5-b2e6-3a8fee076690) dataview.
@@ -83,7 +83,7 @@ Configure the Auditing section of the solution as follows:
 ### 1.
 - Execute the [Out of Date Cumulative Updates [Autofix]*](/docs/dedb8564-bb1a-47b8-9525-61fc9e690cae) script against a Windows computer with the script parameter `Set_Environment` configured as `1`. This action will import the necessary System Properties required for solution management.
 
-![Execute Autofix Script](../../static/img/Latest-Installed-Cumulative-Update/image_3.png)
+![Execute Autofix Script](../../static/img/docs/0c224e91-ca6e-49b5-b2e6-3a8fee076690/image_3.webp)
 
 - Configure the necessary values within the system properties.
   - `Out_of_Date_CU-EmailAlerts`: Configure this system property to 1 to activate Email Alerts in conjunction with the tickets.
@@ -111,6 +111,4 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is set up to run only against machines that are not EOL or recently EOL (within 30 days). If the machine is not EOL currently, check to make sure the monitor is set up to run against the group that the machine is in.
-
-
 

@@ -128,7 +128,7 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
-![Image](../../../static/img/Implement---Remote-Monitor---Mega-RAID-Errors/image_1.png)
+![Image](../../../static/img/docs/94acea25-1d14-4ccd-8991-045331d05fde/image_1.webp)
 
 ---
 

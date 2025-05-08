@@ -33,11 +33,11 @@ Start-BitsTransfer -Source "https://go.microsoft.com/fwlink/?linkid=2243204&clci
 
 Shared file line 6 is where the .PS1 is deployed.  
 
-![Image](../../static/img/SWM---Software-Install---New-Teams-Bulk-Client-Deploy/image_1.png)  
+![Image](../../static/img/docs/e19128db-d2f6-428f-bd78-d833ec4aa952/image_1.webp)  
 
 The red box indicates where the update options are configured.  
 
-![Image](../../static/img/SWM---Software-Install---New-Teams-Bulk-Client-Deploy/image_2.png)  
+![Image](../../static/img/docs/e19128db-d2f6-428f-bd78-d833ec4aa952/image_2.webp)  
 
 The script is set to a default of **Installer.Unattended**, which will only install updates that can be completed without a user prompt.
 
@@ -49,4 +49,3 @@ $updates = Get-LSUpdate -All
 
 GitHub: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
-

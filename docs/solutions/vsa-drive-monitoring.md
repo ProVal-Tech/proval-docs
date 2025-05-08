@@ -32,5 +32,3 @@ A Complete Drive Monitoring Solution for the VSA
 3. Import all Views and ensure the advanced filter is properly set on each.
 4. Import all Monitor Sets.
 5. Import all Policies.
-
-

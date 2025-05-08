@@ -26,5 +26,3 @@ The dataview displays the Windows workstations that have been upgraded to the ne
 | Old OS Version    | Displays the OS version before the upgrade.      |
 | New OS Version    | Displays the OS version after the upgrade.       |
 | Build Version     | Displays the new build versions such as 22H2, 22H3, etc. |
-
-

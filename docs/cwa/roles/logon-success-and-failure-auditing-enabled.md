@@ -19,5 +19,3 @@ This document outlines how to run `auditpol.exe` to determine if logon success a
 | Detection String                             | Comparator | Result              | Applicable OS         |
 |----------------------------------------------|------------|---------------------|-----------------------|
 | `auditpol.exe /get /subcategory:logon`     | Contains   | Success and Failure | Windows AD Controller  |
-
-

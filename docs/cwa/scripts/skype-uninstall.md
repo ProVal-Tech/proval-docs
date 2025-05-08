@@ -18,7 +18,7 @@ This script will attempt to uninstall Skype.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Skype-Uninstall/image_1.png)
+![Sample Run](../../../static/img/docs/8ada9bce-67c7-4493-b40f-5412933cc16e/image_1.webp)
 
 ## Dependencies
 
@@ -33,5 +33,3 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages.
-
-

@@ -21,7 +21,7 @@ It first validates that the .NET Framework 4.8 is installed; if it is installed,
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Deploy-Rapid-Fire-Compliance-Management/image_1.png)
+![Sample Run](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_1.webp)
 
 ## Dependencies
 
@@ -52,7 +52,7 @@ Prerequisite: .NET Framework 4.8 should be installed
 
 To enable ticketing, please set the ticket category at the monitor level: [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433).  
 
-![Ticketing](../../../static/img/Deploy-Rapid-Fire-Compliance-Management/image_2.png)
+![Ticketing](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_2.webp)
 
 **Ticket Subject:**  
 Rapid Fire Compliance Management Installation Failed on %ComputerName% (%ComputerID%)  
@@ -63,5 +63,3 @@ Failed to install Compliance Management Agent on %computername% at %clientname%.
 ## Output
 
 - Script log
-
-

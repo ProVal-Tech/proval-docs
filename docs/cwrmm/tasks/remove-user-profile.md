@@ -32,25 +32,25 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Remove-User-Profile/image_1.png)  
+![Sample Run 1](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_1.webp)  
 
 **Example 1:** Removing a local user account and profile
 
-![Sample Run 2](../../../static/img/Remove-User-Profile/Image2.png) 
+![Sample Run 2](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image2.webp) 
 
 **Example 2:** Removing an user profile and preserving the user
 
-![Sample Run 3](../../../static/img/Remove-User-Profile/Image3.png) 
+![Sample Run 3](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image3.webp) 
 
 **Example 3:** Removing the user profile of a domain user
 
-![Sample Run 4](../../../static/img/Remove-User-Profile/Image4.png) 
+![Sample Run 4](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image4.webp) 
 
 **Example 4:** Removing multiple unknown/cached user profiles using `SID`
 
-![Sample Run 5](../../../static/img/Remove-User-Profile/Image5.png) 
+![Sample Run 5](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image5.webp) 
 
-![Sample Run 6](../../../static/img/Remove-User-Profile/image_3.png) 
+![Sample Run 6](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_3.webp) 
 
 ## Dependencies
 
@@ -66,90 +66,90 @@ It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfil
 | I_have_read_the_description_and_agree_to_the_user_agreement  | 0/1  | True    | Flag        | The script will not run without flagging this checkbox. Marking this checkbox indicates that the user has read the warning and is running the script with caution. |
 
 
-![User Parameters Image](../../../static/img/Remove-User-Profile/image_4.png)
+![User Parameters Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Task Creation Image 1](../../../static/img/Remove-User-Profile/image_5.png)  
-![Task Creation Image 2](../../../static/img/Remove-User-Profile/image_6.png)  
+![Task Creation Image 1](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_5.webp)  
+![Task Creation Image 2](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_6.webp)  
 
 **Name:** `Remove User Profile`  
 **Description:** `Deletes a user profile and removes the user account if local`  
 **Category:** `Custom`  
-![Task Creation Image 3](../../../static/img/Remove-User-Profile/image_7.png)  
+![Task Creation Image 3](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_7.webp)  
 
 ## Parameters
 
 ### Username:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Username Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![Add Username Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
 
 This screen will appear.  
-![Username Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+![Username Parameter Screen](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_9.webp)  
 - Set `Username` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Username Parameter Image](../../../static/img/Remove-User-Profile/image_10.png)  
+![Username Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_10.webp)  
 
 ### PreserveUser:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![Add PreserveUser Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
 
 This screen will appear.  
-![PreserveUser Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+![PreserveUser Parameter Screen](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_9.webp)  
 - Set `PreserveUser` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![PreserveUser Parameter Image](../../../static/img/Remove-User-Profile/image_11.png)  
+![PreserveUser Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_11.webp)  
 
 ### SID:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![SID Add Parameter Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![SID Add Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
 
 This screen will appear.  
-![SID Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+![SID Parameter Screen](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_9.webp)  
 - Set `SID` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![SID Parameter Image](../../../static/img/Remove-User-Profile/Image10.png)  
+![SID Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image10.webp)  
 
 ### I_have_read_the_description_and_agree_to_the_user_agreement:
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![I_have_read_the_description_and_agree_to_the_user_agreement Image](../../../static/img/Remove-User-Profile/image_8.png)  
+![I_have_read_the_description_and_agree_to_the_user_agreement Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
 
 This screen will appear.  
-![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Screen](../../../static/img/Remove-User-Profile/image_9.png)  
+![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Screen](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_9.webp)  
 - Set `I_have_read_the_description_and_agree_to_the_user_agreement` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Image](../../../static/img/Remove-User-Profile/Image11.png)  
+![I_have_read_the_description_and_agree_to_the_user_agreement Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image11.webp)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row Image](../../../static/img/Remove-User-Profile/image_12.png)  
+![Add Row Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_12.webp)  
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/Remove-User-Profile/image_13.png)  
+![Blank Function Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_13.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script Selection Image 1](../../../static/img/Remove-User-Profile/image_14.png)  
-![PowerShell Script Selection Image 2](../../../static/img/Remove-User-Profile/image_15.png)  
+![PowerShell Script Selection Image 1](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_14.webp)  
+![PowerShell Script Selection Image 2](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_15.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Script Function Image](../../../static/img/Remove-User-Profile/image_16.png)  
+![PowerShell Script Function Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_16.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -224,31 +224,31 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Image](../../../static/img/Remove-User-Profile/image_17.png)  
+![PowerShell Script Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_17.webp)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Script Log Row Image](../../../static/img/Remove-User-Profile/image_18.png)  
+![Add Script Log Row Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_18.webp)  
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/Remove-User-Profile/image_19.png)  
+![Blank Function Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_19.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Selection Image](../../../static/img/Remove-User-Profile/image_20.png)  
+![Script Log Selection Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_20.webp)  
 
 The following function will pop up on the screen:  
-![Script Log Function Image](../../../static/img/Remove-User-Profile/image_21.png)  
+![Script Log Function Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_21.webp)  
 
 In the script log message, simply type `%Output%` and click the `Save` button.  
-![Save Script Log Image](../../../static/img/Remove-User-Profile/image_22.png)  
+![Save Script Log Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_22.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Image](../../../static/img/Remove-User-Profile/image_23.png)  
+![Save Script Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_23.webp)  
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Remove-User-Profile/image_24.png)  
+![Completed Task Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_24.webp)  
 
 ## Output
 

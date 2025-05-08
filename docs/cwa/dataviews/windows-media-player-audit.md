@@ -108,5 +108,3 @@ FROM
 WHERE 
   ss.variable = 'MediaPlayerCheck'
 ```
-
-

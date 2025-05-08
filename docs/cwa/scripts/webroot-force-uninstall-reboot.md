@@ -18,7 +18,7 @@ This script will boot the machine in safe mode and attempt to completely wipe We
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Webroot---Force-Uninstall-Reboot/image_1.png)
+![Sample Run](../../../static/img/docs/175431c0-b3d2-436a-bf40-e72710a17c36/image_1.webp)
 
 ## Process
 
@@ -27,5 +27,3 @@ This script first checks if the Webroot service is running on the machine. If it
 ## Output
 
 - Script log
-
-

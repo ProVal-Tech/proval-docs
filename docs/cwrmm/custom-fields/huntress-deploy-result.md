@@ -16,14 +16,12 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](/docs/e1f40d15-13f1-465e-9870-6
 
 ## Create the Custom Field
 
-![Image 1](../../../static/img/Huntress-Deploy_Result/image_1.png)
+![Image 1](../../../static/img/docs/822e9dc0-d455-4706-8482-175b85dbd491/image_1.webp)
 
-![Image 2](../../../static/img/Huntress-Deploy_Result/image_2.png)
+![Image 2](../../../static/img/docs/822e9dc0-d455-4706-8482-175b85dbd491/image_2.webp)
 
 **Name:** Huntress Deploy_Result  
 **Type:** Text Box  
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
 **Editable:** Yes  
-
-

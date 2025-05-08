@@ -19,5 +19,3 @@ This document describes the installation process for the [IdleMon](https://githu
 - Script log
 
 
-
-

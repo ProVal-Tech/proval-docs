@@ -21,37 +21,35 @@ The group contains computers with different SentinelOne management servers as co
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_1.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.
 
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_2.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_2.webp)
 
    This page will appear after clicking on the `Dynamic Group` button:
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_3.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_3.webp)
 
 3. Set the group name to `S1 Management Server Discrepancy`.  
    Description: `The group contains computers with different SentinelOne management servers as configured for the client in CW RMM.`
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_4.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_4.webp)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_5.png)  
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_5.webp)  
    This search box will appear.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_6.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_6.webp)
 
 5. Search and select the [`S1 Mgmt Server Discrepancy`](/docs/c600a6e2-bd09-4172-8784-d969838eea23) custom field from the search box.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_7.png)  
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_7.webp)  
    Set `Yes` in the comparison condition.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_8.png)  
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_8.webp)  
 
    **Condition:** [`S1 Mgmt Server Discrepancy`](/docs/c600a6e2-bd09-4172-8784-d969838eea23) `Contains any of` `Yes`
 
 6. Click the `Save` button to save/create the group.
-   ![Image](../../../static/img/S1-Management-Server-Discrepancy/image_9.png)
+   ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_9.webp)
 
 ## Completed Group
 
-![Image](../../../static/img/S1-Management-Server-Discrepancy/image_10.png)  
-![Image](../../../static/img/S1-Management-Server-Discrepancy/image_11.png)
-
-
+![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_10.webp)  
+![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_11.webp)

@@ -18,7 +18,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Edge---Remove-Extension/image_1.png)
+![Sample Run](../../../static/img/docs/a89ef3e3-2a5e-4b46-9286-1a2cf054011a/image_1.webp)
 
 ## Dependencies
 
@@ -69,5 +69,3 @@ The script takes a single parameter, which is an array of Extension IDs to insta
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
-
-

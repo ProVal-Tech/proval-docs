@@ -47,5 +47,3 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_vssadminstorage` (
   CONSTRAINT `plugin_proval_vssadminstorage_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
-
-

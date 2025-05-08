@@ -34,5 +34,3 @@ This document stores Windows user profile information. Data is filled by [EPM - 
 | TimeStamp   | DATETIME | The date and time of the audit.                           |
 | UserProfile | VARCHAR  | The path to the user profile folder.                      |
 | Enabled     | VARCHAR  | True or False indicating if the local account is enabled. If not a local user, then the field is set to Remote. |
-
-

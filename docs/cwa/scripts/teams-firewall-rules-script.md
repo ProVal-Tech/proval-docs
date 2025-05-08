@@ -20,7 +20,7 @@ This script executes PowerShell commands that set rules for Teams for all users 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/TEAMS---Firewall-Rules-Script/image_1.png)
+![Sample Run](../../../static/img/docs/12806812-6720-41bc-9b7c-632fe1620db8/image_1.webp)
 
 ## Dependencies
 
@@ -40,5 +40,3 @@ This script executes PowerShell commands that set rules for Teams for all users 
 ## Output
 
 - Script log
-
-

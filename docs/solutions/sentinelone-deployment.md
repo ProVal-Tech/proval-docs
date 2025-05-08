@@ -38,5 +38,3 @@ The purpose of this solution is to deploy the SentinelOne agent on Windows, Linu
 - Create the deployment schedule as described in this document: [CW RMM - Task - SentinelOne Deployment](/docs/25651d1f-99d6-4906-8666-220994a4862e)
 - Create [Monitor - SentinelOne Deployment Failure](/docs/9e16691c-a81f-4a59-865c-ac38530ae29f)
 
-
-

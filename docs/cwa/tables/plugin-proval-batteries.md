@@ -38,5 +38,3 @@ Stores battery information for each target.
 | RelativeCapacity          | VarChar   | The battery relative capacity.                       |
 | SerialNumber              | VarChar   | The battery serial number.                          |
 | LastScanTime              | DateTime  | The last scan time for the report.                 |
-
-

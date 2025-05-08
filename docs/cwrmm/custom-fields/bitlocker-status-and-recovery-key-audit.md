@@ -16,9 +16,9 @@ This custom field is used to display the BitLocker encryption status of drives b
 
 ## Create the Custom Field
 
-![Image 1](../../../static/img/BitLocker-Status-and-Recovery-Key-Audit/image_2.png)
+![Image 1](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_2.webp)
 
-![Image 2](../../../static/img/BitLocker-Status-and-Recovery-Key-Audit/image_3.png)
+![Image 2](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_3.webp)
 
 - **Name:** BitLocker Status and Key
 - **Type:** Text Box
@@ -26,6 +26,4 @@ This custom field is used to display the BitLocker encryption status of drives b
 - **Level:** Endpoint
 - **Description:** This will show drives that are encrypted with BitLocker and will display the recovery key if available.
 - **Editable:** Yes
-
-
 

@@ -14,15 +14,15 @@ unlisted: false
 
 Enable or disable the Edge Sidebar on a target machine.
 
-![Microsoft Edge sidebar](../../../static/img/Edge-Sidebar---EnableDisable/image_1.png)
+![Microsoft Edge sidebar](../../../static/img/docs/f1cc450a-82dd-49f9-b720-22983f7b696c/image_1.webp)
 
 ## Sample Run
 
 If no action is passed, then `Disable` will be selected by default.
 
-![Sample Run 1](../../../static/img/Edge-Sidebar---EnableDisable/image_2.png)
+![Sample Run 1](../../../static/img/docs/f1cc450a-82dd-49f9-b720-22983f7b696c/image_2.webp)
 
-![Sample Run 2](../../../static/img/Edge-Sidebar---EnableDisable/image_3.png)
+![Sample Run 2](../../../static/img/docs/f1cc450a-82dd-49f9-b720-22983f7b696c/image_3.webp)
 
 ## Variables
 
@@ -87,6 +87,4 @@ Finishing ticket 77459
 
 ## Ticket Example
 
-![Ticket Example](../../../static/img/Edge-Sidebar---EnableDisable/image_4.png)
-
-
+![Ticket Example](../../../static/img/docs/f1cc450a-82dd-49f9-b720-22983f7b696c/image_4.webp)

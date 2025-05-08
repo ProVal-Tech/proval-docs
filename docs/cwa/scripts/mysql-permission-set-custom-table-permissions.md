@@ -12,7 +12,7 @@ This script will gather all users in the database and grant all required rights 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/MySQL---Permission---Set-Custom-Table-Permissions/image_1.png)
+![Sample Run](../../../static/img/docs/7819fc75-aeae-457b-a451-59221396e900/image_1.webp)
 
 The script is converted to a client script and should be scheduled to run every 2 hours.
 
@@ -21,5 +21,3 @@ The script is converted to a client script and should be scheduled to run every 
 | Name             | Description                                                                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | UpdateStatements | This variable will store the SQL result, which will be further used as an update statement to grant permission to custom ProVal tables. |
-
-

@@ -17,7 +17,7 @@ This script will monitor for the creation of new super admins since the last run
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Automate---New-Super-Admin-Monitoring/image_1.png)
+![Sample Run](../../../static/img/docs/acc57018-b868-4129-b4a5-0f1052dcc1ae/image_1.webp)
 
 ## Dependencies
 
@@ -41,5 +41,3 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
-
-

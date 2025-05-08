@@ -14,7 +14,7 @@ unlisted: false
 
 The purpose of this document is to guide technicians in manually troubleshooting the Orange Icon issue with the ScreenConnect client from Automate. The Orange Icon denotes that the ScreenConnect client application is installed on the computer but is either corrupt or that the computer is unable to reach the ScreenConnect Web portal or relay address.
 
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_1.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_1.webp)
 
 **Note:** The following steps can only solve the problem if it's related to the application, not the network connection.
 
@@ -25,24 +25,24 @@ Log in to the Thick Client and open the Computer Management screen of the concer
 ## Step 2
 
 Disable ScreenConnect deployment by right-clicking on the ScreenConnect icon.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_2.png)  
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_2.webp)  
 After disabling:  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_3.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_3.webp)
 
 ## Step 3
 
 Open the Software tile.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_4.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_4.webp)
 
 ## Step 4
 
 Search for `ScreenConnect Client` and copy the full name of the application.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_5.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_5.webp)
 
 ## Step 5
 
 Uninstall the application.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_6.png)  
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_6.webp)  
 To make the command run silently, add the following to the end of the uninstall command:
 
 ```
@@ -66,12 +66,12 @@ MsiExec.exe /X{9B368B57-5FB5-4DEF-9670-511649689C76} /qb+ /norestart
 ## Step 6
 
 Resend Software Inventory after uninstalling the application.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_7.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_7.webp)
 
 ## Step 7
 
 Ensure that the application is removed.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_8.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_8.webp)
 
 ## Step 8
 
@@ -90,8 +90,8 @@ C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypas
 ```
 
 Run the command on the computer to remove the application traces and registry keys.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_9.png)  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_10.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_9.webp)  
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_10.webp)
 
 ## Step 9
 
@@ -100,24 +100,22 @@ Wait for the command to complete and then restart the computer. It is not mandat
 ## Step 10
 
 After the computer starts, check back with Automate post-restart; run the [`ScreenConnect - Repair [RMM+, Autofix, Globals]*`](/docs/43225bbe-98a0-4352-8fb2-79e7431dea10) script, and wait for the script to complete.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_11.png)  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_12.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_11.webp)  
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_12.webp)
 
 ## Step 11
 
 Ensure that the computer starts checking in with the ScreenConnect Web portal.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_13.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_13.webp)
 
 ## Step 12
 
 Once it starts checking in with the ScreenConnect Web portal, enable ScreenConnect in Automate as well.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_14.png)  
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_14.webp)  
 
 This should turn the ScreenConnect icon green, thereby resolving the problem.  
-![Image](../../../static/img/Manual-Troubleshooting---ScreenConnect-Orange-Icon/image_15.png)
+![Image](../../../static/img/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06/image_15.webp)
 
 ## Note
 
 If the above-mentioned steps fail to resolve the problem, then you will have to access the computer manually and ensure that it is able to reach the ScreenConnect Web Portal.
-
-

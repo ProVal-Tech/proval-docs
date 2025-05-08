@@ -23,23 +23,23 @@ There is one device group related to the Update Orchestrator solution. Please se
 
 There is one device group for this solution. To create device groups, please navigate to **Devices > Device Groups**.
 
-![Image](../../../static/img/Update-Orchestrator/image_1.png)
+![Image](../../../static/img/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825/image_1.webp)
 
 Select **Add > Dynamic Group**.
 
-![Image](../../../static/img/Update-Orchestrator/image_2.png)
+![Image](../../../static/img/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825/image_2.webp)
 
 ---
 
 ## Device Group Name: Update Orchestrator
 
-![Image](../../../static/img/Update-Orchestrator/image_3.png)
+![Image](../../../static/img/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825/image_3.webp)
 
 **Description:** Machines in this group will get the Update Orchestrator solution.
 
 **Criteria:**
 
-![Image](../../../static/img/Update-Orchestrator/image_4.png)
+![Image](../../../static/img/docs/dc9cd56d-9a0c-4e40-8205-2da48893d825/image_4.webp)
 
 When adding criteria, please search for the **OS Type**.
 
@@ -48,5 +48,3 @@ When adding criteria, please search for the **OS Type**.
 **AND**
 
 **Site > Contains any of >** "Select the sites you want this to target."
-
-

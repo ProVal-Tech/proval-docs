@@ -46,5 +46,3 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
-
-

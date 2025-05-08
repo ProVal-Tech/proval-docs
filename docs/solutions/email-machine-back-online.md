@@ -59,9 +59,9 @@ Set the email addresses at the computer-level EDF `Online Alert E-mail` located 
 
 e.g.,  
 Multiple Email Addresses:  
-![Multiple Email Addresses](../../static/img/Email---Machine-Back-Online/image_1.png)  
+![Multiple Email Addresses](../../static/img/docs/1973f30a-c6dc-4725-90f7-ba081cebf2d7/image_1.webp)  
 Single Email Address:  
-![Single Email Address](../../static/img/Email---Machine-Back-Online/image_2.png)  
+![Single Email Address](../../static/img/docs/1973f30a-c6dc-4725-90f7-ba081cebf2d7/image_2.webp)  
 
 ## FAQ
 
@@ -70,10 +70,8 @@ Q: How to stop receiving the emails after getting the work done?
 
 A: Remove the email address(es) from the EDF.
 ```
-![FAQ Image](../../static/img/Email---Machine-Back-Online/image_3.png)
+![FAQ Image](../../static/img/docs/1973f30a-c6dc-4725-90f7-ba081cebf2d7/image_3.webp)
 
 ## Sample Email
 
-![Sample Email](../../static/img/Email---Machine-Back-Online/image_4.png)
-
-
+![Sample Email](../../static/img/docs/1973f30a-c6dc-4725-90f7-ba081cebf2d7/image_4.webp)

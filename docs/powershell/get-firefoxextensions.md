@@ -54,5 +54,3 @@ ExtensionName           NoteProperty string ExtensionName=The best extension
 ExtensionVersion        NoteProperty string ExtensionVersion=1.1.1
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
-
-

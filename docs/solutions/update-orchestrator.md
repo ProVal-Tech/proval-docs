@@ -38,5 +38,3 @@ This solution uses a custom task, a device group, and a custom monitor to manage
 ## FAQ
 
 
-
-

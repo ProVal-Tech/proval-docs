@@ -26,5 +26,3 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Ticketing
 
 **Name:** `△ Custom - Execute Script - Get MSSQL Database Version`
-
-

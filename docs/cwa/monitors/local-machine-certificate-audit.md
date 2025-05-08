@@ -28,7 +28,7 @@ The internal monitor should be explicitly limited to the following groups:
 - Service Plans.Windows Servers.Server Roles.Windows Database Servers
 - Service Plans.Windows Servers.Server Roles.MSP Specific Servers
 
-![Image](../../../static/img/Local-Machine-Certificate-Audit/image_1.png)
+![Image](../../../static/img/docs/48737f29-accd-41ac-a35d-047d7e266e6f/image_1.webp)
 
 ## Alert Template
 

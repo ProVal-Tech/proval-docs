@@ -17,7 +17,7 @@ Please provide the variable `InternetExplorerIntegrationCloudSiteList` in PowerS
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Enable-IE-Mode-in-Microsoft-Edge/image_1.png)
+![Sample Run](../../../static/img/docs/186ae433-e9bc-46d1-9056-71924879ae6e/image_1.webp)
 
 ## Variables
 
@@ -40,7 +40,5 @@ Once the setting is done, it checks the computer EDFs for logging in the databas
 ## Output
 
 - Script log
-
-
 
 

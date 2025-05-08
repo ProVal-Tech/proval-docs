@@ -35,6 +35,4 @@ This dataview displays historical runtime data for scripts in Automate since the
 
 ## Example Screenshot
 
-![Screenshot](../../../static/img/Script-Run-Time-Historical-Audit/image_1.png)
-
-
+![Screenshot](../../../static/img/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2/image_1.webp)

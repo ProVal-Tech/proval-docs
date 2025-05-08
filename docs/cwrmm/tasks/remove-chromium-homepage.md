@@ -16,9 +16,9 @@ This document describes how to remove homepage settings from popular Chromium-ba
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Remove-Chromium-Homepage/image_1.png)  
-![Sample Run 2](../../../static/img/Remove-Chromium-Homepage/image_2.png)  
-![Sample Run 3](../../../static/img/Remove-Chromium-Homepage/image_3.png)  
+![Sample Run 1](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_2.webp)  
+![Sample Run 3](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_3.webp)  
 
 ## Dependencies
 
@@ -30,20 +30,20 @@ This document describes how to remove homepage settings from popular Chromium-ba
 |-----------|-----------------------------------------------------------------------------------------------|----------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `Target`  | - Chrome - Edge - Brave - Chrome, Edge - Edge, Brave - Chrome, Edge, Brave | False    | Text String | Name of the browser(s) to remove the homepage from. The script will clear/remove the homepage of all three browsers (Chrome, Edge, and Brave) if the parameter is left blank.                             |
 
-![User Parameters](../../../static/img/Remove-Chromium-Homepage/image_4.png)
+![User Parameters](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation 1](../../../static/img/Remove-Chromium-Homepage/image_5.png)  
-![Task Creation 2](../../../static/img/Remove-Chromium-Homepage/image_6.png)  
+![Task Creation 1](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_5.webp)  
+![Task Creation 2](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_6.webp)  
 
 **Name:** `Remove Chromium Homepage`  
 **Description:** `Removes homepage settings from popular Chromium-based browsers (Edge, Chrome, and Brave).`  
 **Category:** `Application`  
 
-![Task Creation Icon](../../../static/img/Remove-Chromium-Homepage/image_7.png)
+![Task Creation Icon](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_7.webp)
 
 ## Parameters
 
@@ -51,38 +51,38 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/Remove-Chromium-Homepage/image_8.png)  
+![Add Parameter](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_8.webp)  
 
 This screen will appear.
 
-![Parameter Setup](../../../static/img/Remove-Chromium-Homepage/image_9.png)  
+![Parameter Setup](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_9.webp)  
 
 - Set `Target` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Save](../../../static/img/Remove-Chromium-Homepage/image_10.png)  
+![Parameter Save](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_10.webp)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Remove-Chromium-Homepage/image_11.png)  
+![Add Row](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_11.webp)  
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Remove-Chromium-Homepage/image_12.png)  
+![Blank Function](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_12.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Function 1](../../../static/img/Remove-Chromium-Homepage/image_13.png)  
-![PowerShell Function 2](../../../static/img/Remove-Chromium-Homepage/image_14.png)  
+![PowerShell Function 1](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_13.webp)  
+![PowerShell Function 2](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_14.webp)  
 
 The following function will pop up on the screen:  
 
-![PowerShell Function](../../../static/img/Remove-Chromium-Homepage/image_15.png)  
+![PowerShell Function](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_15.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -155,42 +155,40 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![Row 1 Complete](../../../static/img/Remove-Chromium-Homepage/image_16.png)  
+![Row 1 Complete](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_16.webp)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row for Script Log](../../../static/img/Remove-Chromium-Homepage/image_17.png)  
+![Add Row for Script Log](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_17.webp)  
 
 A blank function will appear.
 
-![Blank Function for Script Log](../../../static/img/Remove-Chromium-Homepage/image_18.png)  
+![Blank Function for Script Log](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_18.webp)  
 
 Search and select the `Script Log` function.
 
-![Script Log Function 1](../../../static/img/Remove-Chromium-Homepage/image_19.png)  
-![Script Log Function 2](../../../static/img/Remove-Chromium-Homepage/image_20.png)  
+![Script Log Function 1](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_19.webp)  
+![Script Log Function 2](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_20.webp)  
 
 The following function will pop up on the screen:  
 
-![Script Log Function](../../../static/img/Remove-Chromium-Homepage/image_21.png)  
+![Script Log Function](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_21.webp)  
 
 In the script log message, simply type `%output%` and click the `Save` button.
 
-![Script Log Save](../../../static/img/Remove-Chromium-Homepage/image_22.png)  
+![Script Log Save](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_22.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Save Script](../../../static/img/Remove-Chromium-Homepage/image_23.png)  
+![Save Script](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_23.webp)  
 
 ## Completed Script
 
-![Completed Script](../../../static/img/Remove-Chromium-Homepage/image_24.png)  
+![Completed Script](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_24.webp)  
 
 ## Output
 
 - Script log  
-![Script Log Output](../../../static/img/Remove-Chromium-Homepage/image_25.png)  
-
-
+![Script Log Output](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_25.webp)  

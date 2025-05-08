@@ -19,7 +19,7 @@ The script should be run against Windows OS machines, and PowerShell v2 or great
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Audit-WMI-Patch-History/image_1.png)
+![Sample Run](../../../static/img/docs/113349eb-9de0-4b42-b773-cf873f87f2f0/image_1.webp)
 
 ## Dependencies
 
@@ -33,5 +33,3 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
-
-

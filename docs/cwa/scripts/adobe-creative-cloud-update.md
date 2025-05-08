@@ -18,9 +18,9 @@ This script will either list the available updates or run updates for the Adobe 
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Adobe-Creative-Cloud---Update/image_1.png)
+![Sample Run 1](../../../static/img/docs/dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4/image_1.webp)
 
-![Sample Run 2](../../../static/img/Adobe-Creative-Cloud---Update/image_2.png)
+![Sample Run 2](../../../static/img/docs/dd8dbfbe-f8eb-4909-9cbf-8662cafb4fd4/image_2.webp)
 
 ## Dependencies
 
@@ -44,5 +44,3 @@ This section should list the ITGlue documents found in the Related Items sidebar
 
 - Script log
 - Local log files
-
-

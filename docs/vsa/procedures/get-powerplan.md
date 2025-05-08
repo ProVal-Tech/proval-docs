@@ -39,5 +39,3 @@ The output log can be found at:
 `$env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt`
 
 Agent Procedure Log
-
-
