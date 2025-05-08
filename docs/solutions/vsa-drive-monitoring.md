@@ -18,7 +18,7 @@ A Complete Drive Monitoring Solution for the VSA
 
 | Content                                                                                | Type                  | Function                                                                   |
 | -------------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------- |
-| [Soji - Disk Cleaner](https://github.com/ProVal-Tech/Soji)                             | Agent Procedure       | Performs a disk cleanup on the endpoint. Configurable.                     |
+| [Soji - Disk Cleaner](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)                             | Agent Procedure       | Performs a disk cleanup on the endpoint. Configurable.                     |
 | [Drive List Collection](/docs/2b8f8910-5e27-4f1e-8921-65bbe93fb09f)                    | Agent Procedure       | Collects all actual physical drive letters for application via view/policy |
 | [xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)                         | Machine Custom Field  | Stores distinct physical drive letters on the endpoint                     |
 | [VSA HDD Monitoring Solution Monitor Sets](/docs/ea55f0eb-9011-436a-bbd9-1795fc206f81) | Multiple Monitor Sets | Monitors the specified drive letter for low capacity                       |
