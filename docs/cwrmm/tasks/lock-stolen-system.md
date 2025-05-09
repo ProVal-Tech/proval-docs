@@ -69,11 +69,12 @@ Navigate to the Script Editor section and start by adding a logic. You can do th
 
 ## Step 1 Logic: If/Then
 
-Select IF/Then Logic from the Add Logic dropdown menu. 
+Select IF/Then Logic from the Add Logic dropdown menu.
 
 ![IF/Then](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image6.webp)
 
 ### Row 1a Condition: Get Custom Field
+
 - Replace `Output` with `Custom field`
 - Search and select `Mark System As Stolen` Custom Field from the dropdown
 - Select `Equals` as parameter
@@ -82,9 +83,9 @@ Select IF/Then Logic from the Add Logic dropdown menu.
 
 ### Row 1b Function: Script Exit
 
-- Add a new row by clicking the Add Row button.
-- Search and select the Script Exit function.
-- In the script exit message, simply type 
+- Add a new row by clicking the Add Row button.  
+- Search and select the Script Exit function.  
+- In the script exit message, simply type
 
 `Machine is not marked as Stolen. Flag the "Mark System as Stolen" custom field to run this task.`
 ![image8](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image8.webp)
@@ -126,11 +127,12 @@ $formattedOutput = $formattedOutput -replace "(\S)(:)", "`$1 `$2" # Space after 
 $formattedOutput = $formattedOutput -replace "(?=Ethernet adapter|Wireless LAN adapter|Unknown adapter)", "`n"
 Write-Output $formattedOutput
 ```
+
 ## Row 3 Function: Set User Variable
 
-- Search and select the `Set User Variable` function.
-- Set `IPInformation` as Variable Name
-- Set `%Output%` as Value
+- Search and select the `Set User Variable` function.  
+- Set `IPInformation` as Variable Name  
+- Set `%Output%` as Value  
 - Hit `Save` to save the changes
 
 ![image10](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image10.webp)
@@ -138,13 +140,13 @@ Write-Output $formattedOutput
 
 ## Row 4 Function: Script Log
 
-- Add another function `Script Log` in the IF section. 
+- Add another function `Script Log` in the IF section.  
 - In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Script Log](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_15.webp)
 
 ## Row 5 Function: PowerShell Script
 
-- Search and select the `PowerShell Script` function.
+- Search and select the `PowerShell Script` function.  
 - Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```powershell
@@ -156,14 +158,16 @@ function Get-IPInfo {
 }
 $returnData = Get-IPInfo
 Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPINFOState=$($returnData['region'])|IPINFOLoc=$($returnData['loc'])"
+
 ```
+
 ## Row 6 Function: Set Custom Field
 
 - Search and select the `Set Custom Field` function.  
 ![image12](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image12.webp)
 
 - Search and select the `Current Location and IP Details` Custom Field.  
-- Type `%output%` in the `Value` box and click the Save button. 
+- Type `%output%` in the `Value` box and click the Save button.
 
 ## Step 7 Logic: If/Then/Else
 
@@ -180,9 +184,9 @@ In the If section, perform the below steps
 
 ## Row 7b Function: PowerShell Script
 
-- Add another row in the IF section
-- Search and select the `PowerShell Script` function.
-- Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
+- Add another row in the IF section  
+- Search and select the `PowerShell Script` function.  
+- Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.  
 
 ```powershell
 #BitLocker for security 
@@ -244,27 +248,26 @@ if ($FinalStatus -eq 'Off') {
 
 ## Row 7c Function: Script Log
 
-- Add another function `Script Log` in the IF section. 
+- Add another function `Script Log` in the IF section.  
 - In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Script Log](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_15.webp)
 
 ## Row 7d Function: Create Ticket
-- Add another function `Create Ticket` in the IF section.
-- Set below as `Subject`:
 
-```Lost or stolen system at %companyname% has come online!!```
+- Add another function `Create Ticket` in the IF section.  
+- Set below as `Subject`:  
+    `Lost or stolen system at %companyname% has come online!!`  
+- Set below as Description:  
 
-- Set below as Description:
+    ```Shell
+    The system has been encrypted with bitlocker to prevent data theft.
+    PW: @BitlockerPassword@
 
-```
-The system has been encrypted with bitlocker to prevent data theft.
-PW: @BitlockerPassword@
+    Information Gathered by the script!
 
-Information Gathered by the script!
+    @IPInformation@
 
-@IPInformation@
-
-For Current Location and IP details. Check Custom Field `Current Location and IP details` on the machine.
+    For Current Location and IP details. Check Custom Field `Current Location and IP details` on the machine.
 
 The script is using the shutdown command so the machine will become unusable without the bitlocker key.
 ```
@@ -272,14 +275,13 @@ The script is using the shutdown command so the machine will become unusable wit
 ![image15](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image15.webp)
 
 ## Row 6e Function: Create Ticket
-- Add another function `Create Ticket` in the ELSE section.
-- Set below as `Subject`:
 
-```Lost or stolen system at %companyname% has come online!!```
-
+- Add another function `Create Ticket` in the ELSE section.  
+- Set below as `Subject`:  
+    `Lost or stolen system at %companyname% has come online!!`  
 - Set below as Description:
 
-```
+```Shell
 Information Gathered by the script!
 
 @IPInformation@
@@ -288,6 +290,7 @@ For Current Location and IP details. Check Custom Field `Current Location and IP
 
 The script is using the shutdown command to turn off the machine.
 ```
+
 - Set `Emergency` as Priority.
 
 ![image25](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image25.webp)
@@ -302,7 +305,7 @@ The following function will pop up on the screen:
 
 Paste in the following CMD script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
-```powershell
+```Shell
 shutdown /f /s /t 00
 ```
 
@@ -310,6 +313,7 @@ shutdown /f /s /t 00
 ![image16](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image16.webp)
 
 ## Script Deployment
+
 This task has to be scheduled on the [Stolen System](/docs/c5be497c-f3b8-4fd5-8c9d-70b709aef5fb) group for auto deployment. The script can also be run manually if required.
 
 Go to Automations > Tasks.

@@ -21,10 +21,10 @@ This task validates whether the Cumulative Update installed by the Out of Date C
 
 ## Dependencies
 
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
-- [CW RMM - Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
-- [CW RMM - Device Group - Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d)
-- [CW RMM - Task - Out of Date Cumulative Update (Autofix)](/docs/1d9dbd69-f735-4129-8c9d-e72430313371)
+- [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Result](/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523)
+- [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
+- [Device Group - Out of Date CU _ Reboot Pending](/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d)
+- [Task - Out of Date Cumulative Update (Autofix)](/docs/5170978d-feb6-455c-8806-20224e27d923)
 
 ## Variables
 
@@ -91,10 +91,10 @@ if ( $TaskRunTime -eq '0001-01-01 00:00:00' ) {
     return 'Exit'
 } else {
     $Uptime = ( systeminfo | Find 'System Boot Time' )
-    if ( $Uptime -match '([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
+    if ( $Uptime -match '([0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2})' ) {
         $uptime = $Matches[1]
     }
-    $uptime = $uptime -replace '\\\', '-' -replace ',', ''
+    $uptime = $uptime -replace '\/', '-' -replace ',', ''
     if ( [DateTime]$uptime -ge [DateTime]$TaskRunTime ) {
         return 'Rebooted'
     } else {

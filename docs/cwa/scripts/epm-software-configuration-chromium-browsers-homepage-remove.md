@@ -1,8 +1,8 @@
 ---
 id: '8d741266-521f-4bdf-b921-9fe0c28a0648'
 slug: /8d741266-521f-4bdf-b921-9fe0c28a0648
-title: 'EPM - Software Configuration - Chromium Browsers - Homepage - Remove'
-title_meta: 'EPM - Software Configuration - Chromium Browsers - Homepage - Remove'
+title: 'Chromium Browsers - Homepage - Remove'
+title_meta: 'Chromium Browsers - Homepage - Remove'
 keywords: ['chromium', 'homepage', 'registry', 'browser', 'configuration']
 description: 'This document outlines an Automate implementation of a script designed to remove enforced homepage settings from Chromium-based browsers, specifically Google Chrome and Microsoft Edge. It details the parameters, sample runs, and dependencies for effective execution.'
 tags: ['software', 'update', 'windows']

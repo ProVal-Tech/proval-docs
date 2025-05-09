@@ -111,13 +111,12 @@ $ProjectName = '@ProjectName@'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/Uninstall-VCRedist"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\Uninstall-VCRedist"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
 $All = '@All@'
 $Release = '@Release@'
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -133,14 +132,13 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
 #region Execution
 if ( $All -and $All -NotMatch 'All' -and $All -Match '1|(Yes)|(True)' ) {
-    & $PS1Path -Uninstall -All
+      & $PS1Path -Uninstall -All
 } elseif ( $Release -and $Release -NotMatch 'Release' -and $Release -match '[0-9]' ) {
-    & $PS1Path -Uninstall -Release @Release@
+      & $PS1Path -Uninstall -Release @Release@
 } else {
-    & $PS1Path -Uninstall -Unsupported
+      & $PS1Path -Uninstall -Unsupported
 }
 #endregion
 ```

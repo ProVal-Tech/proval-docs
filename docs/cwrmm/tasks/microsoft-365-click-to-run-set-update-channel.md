@@ -22,7 +22,7 @@ This task will make changes in the registry to set the update channel for Micros
 
 ## Dependencies
 
-[CW RMM - Solution - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/b605b808-7016-4911-8c37-6b950de40919)
+[Microsoft 365 - Click-to-Run - Set Update Channel](/docs/b605b808-7016-4911-8c37-6b950de40919)
 
 ## Task Creation
 
@@ -143,60 +143,75 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
-```
-Function Set-M365UpdateChannel {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory)]
-        [ValidateSet('Current Channel',
-            'Monthly Enterprise Channel',
-            'Semi-Annual Enterprise Channel',
-            'Current Channel (Preview)',
-            'Semi-Annual Enterprise Channel (Preview)',
-            'Beta Channel',
-            'LTSC Channel (upto Office 2019)',
-            'LTSC Channel (Preview)',
-            'LTSC 2021 Channel (Office 2021+)')]
-        [String]$updateChannel
-    )
-
-    # Variables
-    $guid = switch ($updateChannel) {
-        'Current Channel' { '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' }
-        'Monthly Enterprise Channel' { '55336b82-a18d-4dd6-b5f6-9e5095c314a6' }
-        'Semi-Annual Enterprise Channel' { '7ffbc6bf-bc32-4f92-8982-f9dd17fd3114' }
-        'Semi-Annual Enterprise Channel (Preview)' { 'b8f9b850-328d-4355-9145-c59439a0c4cf' }
-        'Current Channel (Preview)' { '64256afe-f5d9-4f86-8936-8840a6a4f5be' }
-        'Beta Channel' { '5440fd1f-7ecb-4221-8110-145efaa6372f' }
-        'LTSC Channel (upto Office 2019)' { 'f2e724c1-748f-4b47-8fb8-8e0d210e9208' }
-        'LTSC Channel (Preview)' { '2e148de9-61c8-4051-b103-4af54baffbb4' }
-        'LTSC 2021 Channel (Office 2021+)' { '5030841d-c919-4594-8d2d-84ae4f96e58e' }
-        default { '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' }
+```PowerShell
+Function Set-M365UpdateChannel {[CmdletBinding()]
+param (
+    [Parameter(Mandatory)]
+    [ValidateSet('Current Channel',
+        'Monthly Enterprise Channel',
+        'Semi-Annual Enterprise Channel',
+        'Current Channel (Preview)',
+        'Semi-Annual Enterprise Channel (Preview)',
+        'Beta Channel',
+        'LTSC Channel (upto Office 2019)',
+        'LTSC Channel (Preview)',
+        'LTSC 2021 Channel (Office 2021+)' )]
+    [String]$updateChannel
+)
+# Variables
+$guid = switch ($updateChannel) {
+    'Current Channel' {
+        '492350f6-3a01-4f97-b9c0-c7c6ddf67d60'
     }
-
-    $path = 'HKLM:\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration'
-    $Strings = @('CDNBaseUrl', 'UpdateChannel', 'UnmanagedUpdateUrl')
-    $url = "http://officecdn.microsoft.com/pr/$guid"
-
-    # Process
-    Write-Information "Setting Update Channel to $updateChannel" -InformationAction Continue
-    foreach ( $string in $strings ) {
-        if (( Get-ItemProperty -Path $path -Name $string -ErrorAction SilentlyContinue)."$String" -eq $url ) {
-            Write-Information "$string is already set to $updateChannel" -InformationAction Continue
-        } else {
-            try {
-                if ( !( Test-Path -Path $path ) ) {
-                    New-Item -Path $Path -Force -ErrorAction Stop | Out-Null
-                }
-                Set-ItemProperty -Path $path -Name $string -Value $url -ErrorAction Stop
-                Write-Information "$string has been successfully set to $updateChannel" -InformationAction Continue
-            } catch {
-                Write-Information "Error: Failed to set $string to $updateChannel. Reason: $($Error[0].Exception.Message)" -InformationAction Continue
+    'Monthly Enterprise Channel' {
+        '55336b82-a18d-4dd6-b5f6-9e5095c314a6'
+    }
+    'Semi-Annual Enterprise Channel' {
+        '7ffbc6bf-bc32-4f92-8982-f9dd17fd3114'
+    }
+    'Semi-Annual Enterprise Channel (Preview)'{
+        'b8f9b850-328d-4355-9145-c59439a0c4cf'
+    }
+    'Current Channel (Preview)' {
+        '64256afe-f5d9-4f86-8936-8840a6a4f5be'
+    }
+    'Beta Channel' {
+        '5440fd1f-7ecb-4221-8110-145efaa6372f'
+    }
+    'LTSC Channel (upto Office 2019)' {
+        'f2e724c1-748f-4b47-8fb8-8e0d210e9208'
+    }
+    'LTSC Channel (Preview)' {
+        '2e148de9-61c8-4051-b103-4af54baffbb4'
+    }
+    'LTSC 2021 Channel (Office 2021+)' {
+        '5030841d-c919-4594-8d2d-84ae4f96e58e'
+    }
+    default {
+        '492350f6-3a01-4f97-b9c0-c7c6ddf67d60'
+    }
+}
+$path = 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration'
+$Strings = @('CDNBaseUrl', 'UpdateChannel', 'UnmanagedUpdateUrl')
+$url = "http://officecdn.microsoft.com/pr/$guid"
+# Process
+Write-Information "Setting Update Channel to $updateChannel" -InformationAction Continue
+foreach ( $string in $strings ) {
+    if (( Get-ItemProperty -Path $path -Name $string -ErrorAction SilentlyContinue)."$String" -eq $url ) {
+        Write-Information "$string is already set to $updateChannel" -InformationAction Continue
+    } else {
+        try {
+            if ( !( Test-Path -Path $path ) ) {
+                New-Item -Path $Path -Force -ErrorAction Stop | Out-Null
             }
+            Set-ItemProperty -Path $path -Name $string -Value $url -ErrorAction Stop
+            Write-Information "$string has been successfully set to $updateChannel" -InformationAction Continue
+        } catch {
+            Write-Information "Error: Failed to set $string to $updateChannel. Reason: $($Error[0].Exception.Message)" -InformationAction Continue
         }
     }
 }
-
+}
 Set-M365UpdateChannel -updateChannel '@UpdateChannel@'
 ```
 

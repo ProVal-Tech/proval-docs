@@ -51,7 +51,6 @@ A blank function will appear.
 ![Image9](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image9.webp)  
 ![Image10](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image10.webp) 
 
-
 ### Row 2 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
@@ -222,7 +221,7 @@ A blank logic will appear
 
 ### Row 3c(iv)(1) Condition: Output Contains
 
-Set the condition to: 
+Set the condition to:
 
 `Output` `Contains` `Unknown user profiles detected on`  
 ![Image33](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image33.webp)
@@ -240,13 +239,16 @@ The following function will pop up on the screen:
 ![Image28](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image28.webp)  
 
 - **Subject:** `Unknown user profiles detected on @Computer@`  
-- **Description:**  
-```
+- **Description:**
+
+```Shell
     %Output%
 
     Please confirm that the identified user profiles are safe to remove from the computer.
 ```  
+
 - **Priority:** `Medium`  
+
 - Click the `Save` button to save the function.  
 
 ![Image36](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image36.webp)  
@@ -283,7 +285,6 @@ The following function will pop up on the screen:
 Type `%Output%` in the `Script Log Message` and click the `Save` button to save the function.  
 ![Image39](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image39.webp)  
 ![Image40](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image40.webp)  
-
 
 ### Save Task
 

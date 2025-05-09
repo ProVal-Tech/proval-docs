@@ -47,7 +47,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### ClearQueue:
+### ClearQueue
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
 ![Add Parameter](../../../static/img/docs/ee16e74b-f20e-4917-b025-b565c6556807/image_8.webp)
@@ -71,6 +72,7 @@ A blank function will appear.
 ![Blank Function](../../../static/img/docs/ee16e74b-f20e-4917-b025-b565c6556807/image_12.webp)
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.
 
 ![PowerShell Selection 1](../../../static/img/docs/ee16e74b-f20e-4917-b025-b565c6556807/image_13.webp)  
@@ -81,7 +83,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $ClearQueue = '@ClearQueue@'
 if ( $ClearQueue -match '1|Yes|True' ) {
@@ -95,11 +97,11 @@ $ProjectName = 'Repair-PrintSpooler'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -123,7 +125,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell Script.'
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -136,6 +138,7 @@ Get-Content -Path $LogPath
 ![PowerShell Execution](../../../static/img/docs/ee16e74b-f20e-4917-b025-b565c6556807/image_16.webp)
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Add Row 2](../../../static/img/docs/ee16e74b-f20e-4917-b025-b565c6556807/image_17.webp)
 

@@ -20,7 +20,7 @@ A CW RMM implementation of the [Invoke-VcRedistModule](https://proval.itglue.com
 ![Sample Run 2](../../../static/img/docs/f352df80-1ff9-4666-9a0e-410d6ef967c1/image_2.webp)  
 ![Sample Run 3](../../../static/img/docs/f352df80-1ff9-4666-9a0e-410d6ef967c1/image_3.webp)  
 
-#### User Parameters
+## User Parameters
 
 | Name     | Example               | Required | Description                                                           |
 |----------|-----------------------|----------|-----------------------------------------------------------------------|
@@ -96,13 +96,12 @@ $ProjectName = 'Invoke-VCRedistModule'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/Install-VCRedist"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\Install-VCRedist"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
 $purge = '@Purge@'
 $Release = '@Release@'
 #endregion
-
 #region Setup - Folder Structure
 mkdir -Path $WorkingDirectory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -118,14 +117,13 @@ if (!(Test-Path -Path $PS1Path)) {
     return
 }
 #endregion
-
 #region Execution
 if ( $purge -and $purge -NotMatch 'Purge' -and $purge -match '1|(Yes)|(True)' ) {
-    & $PS1Path -purge -Force
+      & $PS1Path -purge -Force
 } elseif ( $Release -and $Release -NotMatch 'Release' -and $Release -match '[0-9]' ) {
-    & $PS1Path -Release @Release@ -Force
+      & $PS1Path -Release @Release@ -Force
 } else {
-    & $PS1Path -Install -Supported -Force
+      & $PS1Path -Install -Supported -Force
 }
 #endregion
 ```

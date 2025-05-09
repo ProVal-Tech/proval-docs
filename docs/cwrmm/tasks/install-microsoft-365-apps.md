@@ -24,7 +24,7 @@ CW RMM Implementation of [Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8
 
 ## Dependencies
 
-[SWM - Software Install - Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8eda4d885b1)
+[Install-Microsoft365](/docs/b91e0ebd-2946-4030-bc43-a8eda4d885b1)
 
 ## User Parameters
 
@@ -48,7 +48,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### XMLPath:
+### XMLPath
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.webp)  
@@ -62,7 +62,7 @@ This screen will appear.
 
 ![Add Parameter Image](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_10.webp)
 
-### Restart:
+### Restart
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/docs/b96a76bc-3659-4c6c-b66b-6ae465252c61/image_8.webp)  
@@ -100,7 +100,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 $xmlPath = '@XMLPath@'
 $restart = '@Restart@'
 $Parameters = @{}
-if ( $xmlPath -match '(:\\\\)|(:\\\\)' ) {
+if ( $xmlPath -match '(:\\)|(:////)' ) {
     $Parameters.Add('xmlPath', $xmlPath)
 }
 if ($restart -match '1|Yes|True') {
@@ -112,11 +112,11 @@ $ProjectName = 'Install-Microsoft365'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null

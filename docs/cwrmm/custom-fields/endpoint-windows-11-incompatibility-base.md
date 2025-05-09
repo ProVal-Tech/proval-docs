@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Stores the result returned by the [Windows 11 Compatibility Validation](/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c) task for the incompatible machines.
+Stores the result returned by the [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff) task for the incompatible machines.
 
 ## Details
 

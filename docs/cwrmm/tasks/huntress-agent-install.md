@@ -16,11 +16,11 @@ Installs the Huntress agent on the Windows machine if it's not already installed
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)  
-- [CW RMM - Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)  
-- [CW RMM - Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)  
-- [CW RMM - Custom Fields - Huntress Deploy_Result](/docs/822e9dc0-d455-4706-8482-175b85dbd491)  
-- [CW RMM - Device Group - Deploy Huntress](/docs/c19dc248-c6a0-4f9c-88c5-b3058245d74a)  
+- [Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)  
+- [Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)  
+- [Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)  
+- [Custom Fields - Huntress Deploy_Result](/docs/822e9dc0-d455-4706-8482-175b85dbd491)  
+- [Device Group - Deploy Huntress](/docs/c19dc248-c6a0-4f9c-88c5-b3058245d74a)  
 
 ## Create Script
 
@@ -43,15 +43,14 @@ Please create a new "PowerShell" style script to implement this script.
 
 Input the following:
 
->This script will detect the Huntress Agent, and if the agent is not found, it will install the agent.
->
->acct_key : `@acct_key@`  
->org_key: `@ORG_Key@`  
->tags: ['installation', 'security', 'setup', 'windows']
->
->Attempting to download the file using acct_key from the Huntress website as below:  
->
->[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded, the agent will be attempted to install.
+```Shell
+This script will detect the Huntress Agent and if the agent is not found then it will install the agent.
+acct_key : @acct_key@
+org_key: @ORG_Key@
+Tags: @Tags@
+Attempting to download the file using acct_key from the huntress website as below:
+https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be attempted to install.
+```
 
 ### Row 2 Function: Set Pre-defined Variable
 
@@ -98,15 +97,15 @@ Input the following:
 
 Paste in the following PowerShell script and set the expected script execution time to `1500` seconds.
 
-```
-$installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+```PowerShell
+$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
 if ($installed -match 'Huntress') {
     Write-Output 'Huntress agent is installed already.'
 } else {
     #region Setup - Variables
     $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:\\ProgramData\\_Automation\\Script\\Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory\\Invoke-HuntressAgentCommand.ps1"
+    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
+    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
     $AcctKey = '@acct_key@'
     $OrgKey = '@Org_Key@'
     $Tags = '@tags@'
@@ -133,14 +132,13 @@ if ($installed -match 'Huntress') {
     #endregion
 
     #region Setup - Folder Structure
-    if (!(Test-Path $WorkingDirectory)) {
+    if ( !(Test-Path $WorkingDirectory) ) {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
             return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
-    } 
-    if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' }).FileSystemRights -Match 'FullControl')) {
+    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
         $ACl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
@@ -157,7 +155,7 @@ if ($installed -match 'Huntress') {
         [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
     }
     if (!(Test-Path -Path $PS1Path)) {
-        return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
+        return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
     }
     #endregion
 
@@ -170,7 +168,7 @@ if ($installed -match 'Huntress') {
     #endregion
 
     Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
     if ($installed -match 'Huntress') {
         Write-Output 'Huntress agent is installed successfully.'
     } else {
@@ -187,7 +185,7 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Log` function.
 - Input the following  
 
-```
+```Shell
 %Output%
 ```
 
@@ -224,7 +222,7 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Exit` function.
 - Leave it blank
 
-```
+```Shell
 Huntress Agent is installed successfully.
 ```
 
@@ -237,7 +235,7 @@ Huntress Agent is installed successfully.
 - Search and select the `Script Exit` function.
 - Leave it blank
 
-```
+```Shell
 
 ```
 
@@ -279,7 +277,7 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 - Search and select the `Script Exit` function.
 - Input the following  
 
-```
+```Shell
 Failed to install Huntress. Refer to the below log:
 %Output%
 ```

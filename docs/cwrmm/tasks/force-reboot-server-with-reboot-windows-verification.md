@@ -23,7 +23,7 @@ This script is designed to reboot the endpoints based on the custom fields `@Ser
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -135,7 +135,7 @@ Run it as 'Continue on Failure' and paste.
 
 Paste in the following PowerShell script and set the expected time of script execution to **300 seconds**.
 
-```cmd
+```shell
 shutdown -r -f -t 60
 ```
 
@@ -270,7 +270,7 @@ Run it as 'Continue on Failure' and paste.
 
 Paste in the following PowerShell script and set the expected time of script execution to **300 seconds**.
 
-```cmd
+```shell
 shutdown -r -f -t 60
 ```
 
@@ -296,7 +296,7 @@ The complete script looks as shown below:
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 - Go to `Automation` > `Tasks.`
 - Search for the `Force Reboot Server With Reboot Windows Verification` task.

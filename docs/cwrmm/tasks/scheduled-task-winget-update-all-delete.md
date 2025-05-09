@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task.
+The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task.
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ The ultimate objective of the task is to remove the scheduled tasks (Winget Upda
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
-- [CW RMM - Device Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808)
+- [Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
+- [Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
+- [Device Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808)
 
 ## Variables
 
@@ -100,20 +100,99 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 
 ```plaintext
 Unsupported Operating System.
-```
 
-```plaintext
 Supported OS are Windows 10 and Windows 11
 ```
 
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image.png)
+
 ### Row 2c Function: Script Exit
 
-Add a new row by clicking on the `Add row` button.
+Add a new row by clicking on the `Add row` button.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-1.png)
 
-Search and select the `Script Exit` function.
+Search and select the `Script Exit` function.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-2.png)
 
-### Note:
-Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
+**Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
+
+### Row 3 Function: Command Prompt Script
+
+Add a new row by clicking on `Add row` button outside the If/Then logic.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-3.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-4.png)
+
+Search and select the `Command Prompt (CMD) Script` function.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-5.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-6.png)
+
+Copy and paste the following command in the `Command Prompt Script Editor` and leave the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
+
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "foreach ( $task in ( 'Winget Update All [Logged on User]','Winget Update All [System]' ) ) { try { Get-ScheduledTask | Where-Object { $_.TaskName -eq $task } | Unregister-ScheduledTask -Confirm:$False -ErrorAction Stop } catch { return \"Failed to remove the task '$($task)'. Reason: $($Error[0].Exception.Message)\" } }"
+```
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-7.png)
+
+Enable the `Continue on Failure` flag.  
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-8.png)
+
+
+### Row 4 Function: Script Log
+
+Add a new row by clicking on `Add row` button.
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-9.png)
+
+Search and select `Script Log` Function.
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-11.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-10.png)
+
+Add the following log in the `Script Log Message` field and click the `Save` button:
+Output of command to remove scheduled tasks: %Output%
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-12.png)
+
+### Row 5 Logic: If Then Else
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-13.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-14.png)
+
+### Row 5a Condition: Output Contains
+
+Type `Failed to` in the `Input Value or Variable` field and press `Enter`.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-15.png)
+
+### Row 5b Function: Set Custom Field
+
+Add a new row by clicking on `Add row` button.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-16.png)
+
+Search and select `Set Custom Field` Function.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-17.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-18.png)
+
+Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task Deletion Failed` in the `Value` field and click the `Save` button.  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-19.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-20.png)
+
+### Row 5c Function: Set Custom Field
+
+Add a new row by clicking on `Add row` button in the `Else` section.
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-21.png)
+
+Search and select `Set Custom Field` Function.
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-22.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-23.png)
+
+Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task deleted` in the `Value` field and click the `Save` button.
+
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-24.png)  
+![alt text](../../../static/img/docs/scheduled-task-winget-update-all-delete/image-25.png)
 
 ## Completed Script
 

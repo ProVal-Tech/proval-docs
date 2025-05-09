@@ -63,7 +63,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 try {
     $tpmResults = Get-Tpm -ErrorAction Stop
 } catch {

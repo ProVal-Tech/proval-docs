@@ -24,7 +24,7 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic - Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
+[Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
 
 ## User Parameters
 
@@ -50,7 +50,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Parameters
 
-### Path:
+### Path
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -67,7 +67,7 @@ This screen will appear.
 
 ![Parameter Setup Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_10.webp)
 
-## Task Creation
+## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
@@ -91,10 +91,10 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $Path = "@Path@"
-if ($path -match ':\\') {
+if ( $path -match ':\\' ) {
     $Path = $($Path -split ',').Trim()
 } else {
     throw 'Invalid path.'
@@ -108,11 +108,11 @@ $ProjectName = 'Set-PathVariable'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -135,11 +135,11 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

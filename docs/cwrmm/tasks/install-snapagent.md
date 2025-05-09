@@ -45,7 +45,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### DownloadUrl:
+### DownloadUrl
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter Step 1](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_8.webp)  
@@ -60,7 +60,7 @@ This screen will appear.
 
 ![Add Parameter Step 3](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_10.webp)  
 
-## Task Creation
+## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row Step 1](../../../static/img/docs/f05a636f-889c-4d3a-9eaa-039e0166cb51/image_11.webp)  
@@ -79,10 +79,10 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $Url = '@DownloadURL@'
-if ( $Url -notmatch ':\\\\\\' ) {
+if ( $Url -notmatch ':\/\/' ) {
     throw 'Invalid download URL.'
 }
 $Parameters = @{
@@ -94,11 +94,11 @@ $ProjectName = 'Install-SnapAgent'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null

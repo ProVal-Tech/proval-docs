@@ -14,11 +14,9 @@ unlisted: false
 
 Soji is a smart yet straightforward disk cleanup utility designed to enhance system cleanliness on Windows. It utilizes both native System.IO file and directory management along with COM references to the deprecated cleanmgr tool.
 
-Check out Soji on GitHub: [https://github.com/ProVal-Tech/Soji](https://github.com/ProVal-Tech/Soji)
-
 This document provides a guide on creating the Soji disk cleanup Task in CW RMM. The task is versatile and can serve as an Autofix/Automation Task alongside `Monitors` or `Intelligent Alerts`. When employed as an Autofix, the task executes the tool with the `--All` argument.
 
-Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
+Please reference Soji for argument usage.
 
 ## Sample Run
 
@@ -30,7 +28,7 @@ Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
 
 ## Dependencies
 
-[Soji](https://github.com/ProVal-Tech/Soji)
+- Soji
 
 ## Variables
 
@@ -43,7 +41,7 @@ Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage.
 
 | Name       | Example  | Required | Description                                                                 |
 |------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference [Soji](https://github.com/ProVal-Tech/Soji) for argument usage. |
+| Arguments  | --all    | False    | Please reference Soji for argument usage. |
 
 **Note:** Arguments are case sensitive.
 
@@ -58,8 +56,6 @@ Create a new `Script Editor` style script in the system to implement this Task.
 **Name:** `Soji (Disk Cleanup Utility)`
 
 **Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`
-
-[https://github.com/ProVal-Tech/Soji](https://github.com/ProVal-Tech/Soji)
 
 **Category:** `Maintenance`
 
@@ -117,7 +113,7 @@ Select `Set User Variable` function.
 
 ![Set User Variable 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
 
-Type `WorkingDirectory` in the `Variable Name` field and `C:/ProgramData/_automation/app/@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
+Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
 
 ![User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_17.webp) ![User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_18.webp)
 
@@ -133,8 +129,8 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
-$WorkingDirectory = '@WorkingDirectory@/@ProjectName@'
+```Powershell
+$WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 
 if ( !(Test-Path $WorkingDirectory) ) {
     try {
@@ -166,16 +162,16 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
-```
+```PowerShell
 $ErrorActionPreference = 'silentlycontinue'
-try {$dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join ' '} catch {}
+try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
 
-if(!($dotNetVersions -match '(WindowsDesktop/.App 6)|(Microsoft/.NetCore/.App 6)')) {
+if(!($dotNetVersions -match '(WindowsDesktop\.App 6)|(Microsoft\.NetCore\.App 6)')) {
     [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    (New-Object System.Net.WebClient).DownloadFile('https://download.visualstudio.microsoft.com/download/pr/62bf9f50-dcd9-4e4c-ac02-4d355efb914d/a56b37b98cb07899cd8c44fa7d50dff3/dotnet-runtime-6.0.24-win-x64.exe','@WorkingDirectory@/windowsdesktop-runtime-6.0.24-win-x64.exe')
-    Start-Process -FilePath '@WorkingDirectory@/windowsdesktop-runtime-6.0.24-win-x64.exe' -ArgumentList '/quiet','/norestart' -NoNewWindow -Wait
-    try {$dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join ' '} catch {}
-    if(($dotNetVersions -match '(WindowsDesktop/.App 6)|(Microsoft/.NetCore/.App 6)')) {
+    (New-Object System.Net.WebClient).DownloadFile('https://download.visualstudio.microsoft.com/download/pr/62bf9f50-dcd9-4e4c-ac02-4d355efb914d/a56b37b98cb07899cd8c44fa7d50dff3/dotnet-runtime-6.0.24-win-x64.exe', '@WorkingDirectory@\windowsdesktop-runtime-6.0.24-win-x64.exe')
+    Start-Process -FilePath '@WorkingDirectory@\windowsdesktop-runtime-6.0.24-win-x64.exe' -ArgumentList '/quiet','/norestart' -NoNewWindow -Wait
+    try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
+    if(($dotNetVersions -match '(WindowsDesktop\.App 6)|(Microsoft\.NetCore\.App 6)')) {
         return 'Successfully installed.'
     } else {
         throw 'Installation failed.'
@@ -199,23 +195,23 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
-```
+```powershell
 #region Setup - Variables
 $ProjectName = '@ProjectName@'
 $BaseURL = 'https://file.provaltech.com/repo'
 $EXEURL = "$BaseURL/app/$ProjectName.exe"
 $WorkingDirectory = '@WorkingDirectory@'
-$EXEPath = "$WorkingDirectory/$ProjectName.exe"
+$EXEPath = "$WorkingDirectory\$ProjectName.exe"
 #endregion
 
 #region Download - soji
 if (! (Test-Path $ExePath)) {
-    [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
-    if (!(Test-Path -Path $EXEPath)) {
-        Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
-    }
-}  
+  [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+  Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
+  if (!(Test-Path -Path $EXEPath)) {
+      Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
+  }
+} 
 
 #endregion
 cmd.exe /c $EXEPath @Arguments@

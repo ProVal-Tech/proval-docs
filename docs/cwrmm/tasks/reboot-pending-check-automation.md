@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [CW RMM - Dynamic Group - Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05).
+This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05).
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5) 
+- [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
 - Auto_RebootPendingCheck - Custom field (Endpoint)
 
 ## Sample Run
@@ -51,6 +51,7 @@ Start by creating three separate rows. You can do this by clicking the "Add Row"
 ![Row 1 Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_6.webp)
 
 Paste the highlighted text:  
+
 ```plaintext
 Executing a PowerShell to validate the PowerShell version greater than 3.0.
 If yes, install below modules:
@@ -74,7 +75,6 @@ if ($PSVersionTable.PSVersion.Major -lt 3) {
     Write-Output "PowerShell version is not supported. Please upgrade to version 3.0 or higher."
     Exit
 }
-
 # Check if the module is installed
 if (-not (Get-Module -ListAvailable -Name PendingReboot)) {
     Write-Output "Module not found. Installing..."
@@ -218,4 +218,3 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-

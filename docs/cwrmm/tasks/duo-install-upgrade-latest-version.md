@@ -21,7 +21,7 @@ This script will install or update DUO if the currently installed instance is ol
 
 ## Dependencies
 
-[CW RMM Custom Fields - Duo Authentication for Windows Logon Deployment](/docs/a9578dd1-1f6b-4932-a614-5ed823656416) 
+[Custom Fields - Duo Authentication for Windows Logon Deployment](/docs/a9578dd1-1f6b-4932-a614-5ed823656416)
 
 ## Variables
 
@@ -533,7 +533,8 @@ The following function will pop up on the screen:
 ![Task Step 22](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_62.webp)  
 
 In the script log message, type  
-```
+
+```PlainText
 Successfully installed the DUO Authentication for Windows Login application. Refer to the logs:
 %Output%
 ```

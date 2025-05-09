@@ -16,12 +16,12 @@ This script is a subscript used for tracking the number of times the Windows Fea
 
 ## Sample Run
 
-The script is intended to be called from the task [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b) and should not be executed manually.
+The script is intended to be called from the task [Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b) and should not be executed manually.
 
 ## Dependencies
 
-- [CW RMM - Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [Task - Feature Update Install With Tracking](/docs/5244ac77-6926-4902-a183-b4b2aac18e2b)
+- [Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
 
 ## Create Script
 
@@ -59,7 +59,7 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
+```powershell
 $output='@reset@'
 $output
 ```
@@ -180,7 +180,7 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
+```Powershell
 $Number = @VarCheck@
 $Number++
 $Number

@@ -45,25 +45,26 @@ This monitor will identify computers where the license key is reported as inacti
    ![Step 8](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_9.webp)
 
 9. Paste this PowerShell script in the `Script` box.  
+
    ```powershell
    $ErrorActionPreference = 'SilentlyContinue';
 
-   (Get-CimInstance -Class SoftwareLicensingProduct -Filter "Name LIKE 'Windows%'" |
-       Where-Object { $_.PartialProductKey } |
-       Select-Object @{
-           label = 'LStatus';
-           expression = {
-               switch ($_.LicenseStatus) {
-                   0 { 'Unlicensed' }
-                   1 { 'Licensed' }
-                   2 { 'OOBGrace' }
-                   3 { 'OOTGrace' }
-                   4 { 'NonGenuineGrace' }
-                   5 { 'Notification' }
-                   6 { 'ExtendedGrace' }
-               }
-           }
-       }).LStatus
+    (Get-CimInstance -Class SoftwareLicensingProduct -Filter "Name LIKE 'Windows%'" |
+        Where-Object { $_.PartialProductKey } |
+        Select-Object @{
+            label = 'LStatus';
+            expression = {
+                switch ($_.LicenseStatus) {
+                    0 { 'Unlicensed' }
+                    1 { 'Licensed' }
+                    2 { 'OOBGrace' }
+                    3 { 'OOTGrace' }
+                    4 { 'NonGenuineGrace' }
+                    5 { 'Notification' }
+                    6 { 'ExtendedGrace' }
+                }
+            }
+        }).LStatus
    ```
    ![Step 9](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_10.webp)
 

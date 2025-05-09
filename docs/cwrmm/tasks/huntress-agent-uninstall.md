@@ -31,7 +31,7 @@ To implement this script, please create a new PowerShell script.
 
 ![Image 3](../../../static/img/docs/d21f56f3-43d8-4080-a7f0-ae57c27465e2/image_3.webp)  
 
-# Script
+## Script
 
 ## Row 1 Function: PowerShell Script
 
@@ -41,32 +41,31 @@ Click on "Add Row" and select the PowerShell Script function.
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
-```
-$installed = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+```PowerShell
+$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
 if ($installed -match 'Huntress') {
-    Write-Output 'Huntress agent is installed. Proceeding with the uninstallation.'
+    Write-Output 'Huntress agent is installed. Proceeding for the UnInstallation'
     #region Setup - Variables
     $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory/Invoke-HuntressAgentCommand.ps1"
+    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
+    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
     #endregion
-    
+
     #region Setup - Folder Structure
-    if (!(Test-Path $WorkingDirectory)) {
+    if ( !(Test-Path $WorkingDirectory) ) {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
-            return "ERROR: Failed to create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
+            return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
-    }
-    if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -match 'FullControl')) {
-        $Acl = Get-Acl $WorkingDirectory
+    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+        $ACl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
         Set-Acl $WorkingDirectory $Acl
     }
-    
-    #region Write Script
+
+    #region write script
     [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
     $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
     if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
@@ -76,23 +75,23 @@ if ($installed -match 'Huntress') {
         [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
     }
     if (!(Test-Path -Path $PS1Path)) {
-        return 'ERROR: An error occurred and the Huntress installer was unable to be downloaded. Exiting.'
+        return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
     }
     #endregion
-    
+
     #region Execution
     & $PS1Path -uninstall
     #endregion
-    
+
     Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
     if ($installed -match 'Huntress') {
-        Write-Output 'Huntress agent failed to uninstall.'
+        Write-Output 'Huntress agent failed to Uninstall.'
     } else {
-        Write-Output 'Huntress agent successfully uninstalled.'
+        Write-Output 'Huntress agent successfully Uninstalled.'
     }
 } else {
-    Write-Output 'Huntress agent is not installed.'
+    Write-Output 'Huntress agent is not installed'
 }
 ```
 
@@ -100,7 +99,7 @@ if ($installed -match 'Huntress') {
 
 ## Step 2 Logic: If Then Else
 
-### IF Condition:
+### IF Condition
 
 - Add a new `If/Then/Else` logic from the "Add Logic" dropdown menu.
 
@@ -119,7 +118,7 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Log` function.
 - Input the following:
 
-```
+```Shell
 Huntress agent is successfully uninstalled.
 ```
 
@@ -140,7 +139,7 @@ Huntress agent is successfully uninstalled.
 - Search and select the `Script Exit` function.
 - Input the following:
 
-```
+```Shell
 Failed to uninstall Huntress Agent. Below is the uninstallation result:
 %output%
 ```

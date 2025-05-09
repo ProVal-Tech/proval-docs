@@ -22,7 +22,7 @@ This task deploys the SentinelOne agent on Windows, Linux, and Mac machines.
 
 ## Dependencies
 
-[CW RMM - Solution - SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627)
+[SentinelOne Deployment](/docs/e0abdce8-a697-43b1-a404-18168a616627)
 
 ## Variables
 
@@ -171,7 +171,7 @@ The following function will pop up on the screen:
 
 Type the below error message inside the `Error Message` box and hit save.
 
-```
+```Shell
 SentinelOne Group/Site key were not set. Please review the Company/Site custom fields and fill either of them, and then re-run the script.
 ```
 
@@ -209,21 +209,21 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```
-$regInstallPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SentinelAgent\\config'
+```PowerShell
+$regInstallPath = 'HKLM:\SYSTEM\CurrentControlSet\Services\SentinelAgent\config'
 if (Test-Path -Path $regInstallPath) {
     return 'SUCCESS - SentinelOne agent already installed.'
 }
 $siteToken = '@S1SiteToken@'
-$tempDirectory = "$env:SystemDrive\\temp"
-$installerPath = "$tempDirectory\\SentinelOneAgent-Windows.msi"
+$tempDirectory = "$env:SystemDrive\temp"
+$installerPath = "$tempDirectory\SentinelOneAgent-Windows.msi"
 $downloadUri = "https://cwa.connectwise.com/tools/sentinelone/SentinelOneAgent-Windows_$(if([System.Environment]::Is64BitOperatingSystem) { '64' } else { '32' })bit.msi"
 mkdir $tempDirectory -ErrorAction SilentlyContinue | Out-Null
 (New-Object System.Net.WebClient).DownloadFile($downloadUri, $installerPath)
 if (!(Test-Path $installerPath)) {
     return 'ERROR - File download failed.'
 }
-Start-Process -FilePath "$env:windir\\system32\\msiexec.exe" -ArgumentList '/i', $installerPath, "SITE_TOKEN=$siteToken", '/QUIET', '/NORESTART', '/L*V', "$tempDirectory\\S1Install.log" -Wait | Out-Null
+Start-Process -FilePath "$env:windir\system32\msiexec.exe" -ArgumentList '/i', $installerPath, "SITE_TOKEN=$siteToken", '/QUIET', '/NORESTART', '/L*V', "$tempDirectory\S1Install.log" -Wait | Out-Null
 if (Test-Path -Path $regInstallPath) {
     return 'SUCCESS - SentinelOne agent installed.'
 } else {
@@ -247,7 +247,7 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```
+```Bash
 echo '@S1SiteToken@' > "/tmp/com.sentinelone.registration-token"
 
 sleep 5
@@ -257,7 +257,7 @@ curl -o "/tmp/SentinelOneAgent-macos.pkg" "https://cwa.connectwise.com/tools/sen
 sleep 5
 
 if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentinelOne agent already installed."
+    echo "SUCCESS - SentineOne agent already installed."
     exit 0
 fi
 
@@ -266,7 +266,7 @@ sudo installer -pkg "/tmp/SentinelOneAgent-macos.pkg" -target /
 sleep 5
 
 if [ -f "/Library/Sentinel/sentinel-agent.bundle/Contents/MacOS/SentinelAgent.app/Contents/MacOS/SentinelAgent" ]; then
-    echo "SUCCESS - SentinelOne agent installed."
+    echo "SUCCESS - SentineOne agent installed."
     exit 0
 else 
     echo "ERROR - SentinelOne agent failed to install."
@@ -276,7 +276,8 @@ fi
 
 ![Bash Script Execution 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_45.webp)
 
-Limit the bash file to run on `Mac` machines only.
+Limit the bash file to run on `Mac` machines only.  
+![alt text](../../../static/img/docs/sentinelone-deployment/image.png)
 
 ## Row 4 Function: Bash Script
 
@@ -290,7 +291,7 @@ The following function will pop up on the screen:
 
 Paste in the following Bash script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
-```
+```Bash
 #!/bin/bash
 # https://community.automox.com/find-share-worklets-12/worklet-install-sentinelone-agent-linux-1807
 rpm_filename="SentinelAgent-Linux_x86-64.rpm"
@@ -336,7 +337,8 @@ fi
 
 ![Bash Script Execution 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_46.webp)
 
-Limit the bash file to run on `Linux` machines only.
+Limit the bash file to run on `Linux` machines only.  
+![alt text](../../../static/img/docs/sentinelone-deployment/image-1.png)
 
 ## Row 5 Function: Set Custom Field
 

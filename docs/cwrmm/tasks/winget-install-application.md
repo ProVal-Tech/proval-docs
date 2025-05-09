@@ -12,12 +12,22 @@ unlisted: false
 
 ## Summary
 
-This document outlines the process of installing an application via Winget.
+Attempts to install or update an application via Winget.
+To get the PackageId and source, you can search in cmd using **"winget search appname"** or by browsing to winget.run
 
-## Parameters
+## Sample Run
 
-- **ID**: Winget application ID (Example: Google.Chrome)  
-  To get the ID, you can search in the command prompt using `winget search appname` or by browsing to [winget.run](https://winget.run).
+![Image1](../../../static/img/cwrmm-task-winget-install-application/image1.png)
+
+**Example 1:** Installing application without any optional parameters
+
+![Image2](../../../static/img/cwrmm-task-winget-install-application/image2.png)
+
+**Example 2:** Installing application with optional parameter
+
+![Image3](../../../static/img/cwrmm-task-winget-install-application/image3.png)
+
+![Image4](../../../static/img/cwrmm-task-winget-install-application/image4.png)
 
 ## Dependencies
 

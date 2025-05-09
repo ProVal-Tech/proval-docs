@@ -22,7 +22,7 @@ Applies a homepage to Firefox. CW RMM implementation of [Set-FirefoxHomepage](/d
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)  
+[Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)  
 
 ## User Parameters
 
@@ -46,7 +46,8 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Parameters
 
-### Homepage:
+### Homepage
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Parameter Image 1](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_8.webp)  
 
@@ -82,6 +83,7 @@ A blank function will appear.
 ![Task Image 2](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_13.webp)  
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.  
 ![Task Image 3](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_14.webp)  
 ![Task Image 4](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_15.webp)  
@@ -95,7 +97,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 #region parameters
 $Homepage = '@Homepage@'
 $EnforceHomepageStartup = '@EnforceHomepageStartup@'
-if ( $Homepage -match '/SHomePage/S' -or ($null -eq $Homepage) ) {
+if ( $Homepage -match '\SHomePage\S' -or ($null -eq $Homepage) ) {
     throw 'Homepage is not set correctly.'
 } elseif ( $Homepage.Length -lt 2 ) {
     throw 'Homepage is not set correctly.'
@@ -106,20 +108,17 @@ $parameters = @{
 if ( $EnforceHomepageStartup -match '1|Yes|True' ) {
     $parameters.Add('EnforceHomepageStartup', $true)
 }
-#endregion
-
 #region Setup - Variables
 $ProjectName = 'Set-FirefoxHomepage'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -133,7 +132,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -141,7 +139,6 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-
 if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
@@ -155,6 +152,7 @@ Get-Content -Path $LogPath
 ![Task Image 6](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_17.webp)  
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Task Image 7](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_18.webp)  
 

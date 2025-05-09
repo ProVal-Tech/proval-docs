@@ -22,7 +22,7 @@ This script is designed to reboot workstation endpoints based on the custom fiel
 
 ## Dependencies
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 ## Implementation
 
@@ -135,9 +135,9 @@ In the script log message, type `Force reboot is allowed on the endpoint. Procee
 
 Run it as 'Continue on Failure' and paste.
 
-Paste the following PowerShell script and set the expected time of script execution to `300` seconds.
+Paste the following command and set the expected time of script execution to `300` seconds.
 
-```powershell
+```shell
 shutdown -r -f -t 60
 ```
 
@@ -273,9 +273,9 @@ In the script log message, type `Proceeding for the reboot as the reboot falls u
 
 Run it as 'Continue on Failure' and paste.
 
-Paste the following PowerShell script and set the expected time of script execution to `300` seconds.
+Paste the following command and set the expected time of script execution to `300` seconds.
 
-```powershell
+```Shell
 shutdown -r -f -t 60
 ```
 
@@ -303,7 +303,7 @@ The complete script looks as shown below:
 
 This task can be run manually or in a group. It will only reboot endpoints if the reboot falls under the reboot window provided in the company-level custom fields.
 
-[CW RMM - Custom Fields - Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
+[Reboot Trigger/Schedule](/docs/c0aece55-4e18-4914-9e43-965c8c9e23a6)
 
 - Go to `Automation` > `Tasks.`
 - Search for `Force Reboot Workstation With Reboot Windows Verification` Task.
@@ -335,4 +335,3 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
-

@@ -22,7 +22,7 @@ This document outlines how to run a PowerShell equivalent of chkdsk on any or al
 
 ## Dependencies
 
-[EPM - Disk - Agnostic - Script - Invoke-RepairVolume](/docs/5fc50641-00ec-41c0-b4c8-472d93cd8cfe)
+[Invoke-RepairVolume](/docs/5fc50641-00ec-41c0-b4c8-472d93cd8cfe)
 
 ## User Parameters
 
@@ -49,7 +49,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### Driveletters:
+### Driveletters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -65,7 +65,7 @@ This screen will appear.
 
 ![Driveletters Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_10.webp)
 
-### Repair:
+### Repair
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -81,7 +81,7 @@ This screen will appear.
 
 ![Repair Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_11.webp)
 
-### Full:
+### Full
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -120,16 +120,16 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
-```
+```Powershell
 #region parameters
 $Driveletters = '@Driveletters@'
 if ( !([String]::IsNullOrWhiteSpace($Driveletters)) ) {
-    $Driveletters = $($Driveletters -replace '\\s', '').trimend(',')
+    $Driveletters = $($Driveletters -replace '\s', '').trimend(',')
 }
 $Repair = '@Repair@'
 $Full = '@Full@'
 $Parameters = @{}
-if ( $Driveletters -match '^[A-z](,(\\s{0,})[A-z]){0,25}$' ) {
+if ( $Driveletters -match '^[A-z](,(\s{0,})[A-z]){0,25}$' ) {
     $Driveletters = $Driveletters -split ','
     $parameters.Add('Driveletters', $Driveletters)
 }
@@ -145,11 +145,11 @@ $ProjectName = 'Invoke-RepairVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -173,7 +173,7 @@ if ($Parameters) {
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A security application seems to have restricted the execution of the PowerShell script.'
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )

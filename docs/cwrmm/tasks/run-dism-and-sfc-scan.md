@@ -22,7 +22,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation Image 2](../../../static/img/docs/8ec14581-b7a3-4e68-a4f9-28764e3dc242/image_2.webp)
 
-**Name:** `Run DISM and SFC Scan`  \
+**Name:** `Run DISM and SFC Scan`
 **Description:** `This script is used to execute the DISM and SFC commands on the endpoint. Running the script does not guarantee resolution of any corrupted system files.`  \
 **Category:** `Patching`  
 
@@ -50,7 +50,7 @@ The following function will pop up on the screen:
 
 Paste in the following Command Prompt script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```
+```shell
 DISM.exe /Online /Cleanup-image /Restorehealth
 ```
 
@@ -90,7 +90,7 @@ The following function will pop up on the screen:
 
 Paste in the following Command Prompt script and set the `Expected time of script execution in seconds` to `600` seconds. Click the `Save` button.
 
-```
+```shell
 sfc /scannow
 ```
 

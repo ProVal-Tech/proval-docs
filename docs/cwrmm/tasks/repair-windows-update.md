@@ -71,8 +71,6 @@ Add another parameter by clicking the Add Parameter button
 
 ![Parameter Setup Image 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_8.webp)
 
-
-
 - Set `DismRepair` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
@@ -103,7 +101,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $SfcScan = '@SfcScan@'
 $DISMRepair = '@DISMRepair@'
@@ -114,7 +112,7 @@ if ( $SfcScan -match '1|Yes|True' ) {
     $Parameters.Add('SfcScan', $true)
 }
 if ( $DISMRepair -match '1|Yes|True' ) {
-	$Parameters.Add('DISMRepair', $true)
+    $Parameters.Add('DISMRepair', $true)
 }
 #endregion
 #region Setup - Variables

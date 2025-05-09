@@ -11,6 +11,7 @@ unlisted: false
 ---
 
 ## Summary
+
 This script is designed to get the specific or multiple user(s) information (Username, SIDs, and Status).
 Note: If the agent is a Domain Controller, it will audit the domain accounts; otherwise, it will audit the local accounts.
 
@@ -20,7 +21,8 @@ Note: If the agent is a Domain Controller, it will audit the domain accounts; ot
 ![Sample Run 4](<../../../static/img/docs/359dfd23-db61-4c14-99e5-16e3b723ace4/image-3.webp>)
 
 ## Dependencies
-[Agnostic-User-Audit](/docs/b2914f30-25ee-4d74-ac6a-77260b88ddcb)
+
+[User-Audit](/docs/b2914f30-25ee-4d74-ac6a-77260b88ddcb)
 
 ## User Parameters
 
@@ -29,6 +31,7 @@ Note: If the agent is a Domain Controller, it will audit the domain accounts; ot
 | UserList_To_Audit | Test,Pro | Test, Test,Pro,System | True     |     | Text String| This parameter should be filled with a pattern to fetch the user list matching the pattern. Multiple user lists can be provided, separated by commas, as shown in the accepted values. |
 
 ## Task Creation
+
 Create a new `Script Editor` style script in the system to implement this task.
 
 ![Task Creation 1](<../../../static/img/docs/359dfd23-db61-4c14-99e5-16e3b723ace4/{F601A57B-0F63-4EA2-9886-87F58FA5EFC4}.webp>)
@@ -152,7 +155,7 @@ The following function will pop up on the screen:
 
 In the script exit message, simply type:
 
-```
+```Shell
 Failed to execute the PowerShell for user audit. Refer to the logs:
 %output%
 ```
@@ -182,8 +185,8 @@ The following function will pop up on the screen:
 
 In the script log message, type:
 
-```
-%output%
+```Shell
+%Output%
 ```
 
 and click the `Save` button.
