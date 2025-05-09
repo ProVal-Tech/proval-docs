@@ -103,4 +103,3 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_6.webp)
-

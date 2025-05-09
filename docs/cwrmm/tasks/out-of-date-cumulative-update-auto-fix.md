@@ -472,47 +472,47 @@ Type `%Output%` in the `Script Log Message` field and click the `Save` button.
 ### Row 7d(v) Logic: If/Then
 
 Add a new `If/Then` logic inside the `Else` section of the previous logic.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_80.png)  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_81.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_80.webp)  
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_81.webp)
 
 ### Row 7d(v){1} Condition: Custom Field Equal
 
 Select the `Custom Field` option from the `DropDown` button.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_82.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_82.webp)
 
 Search and select the `Out_of_Date_CU_Autofix_Result` custom field.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_83.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_83.webp)
 
 Change the operator to `Equals` , type `Reboot Pending` in the comparator and press `Enter`.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_84.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_84.webp)
 
 Add another Condition by clicking the `Add Condition` button.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_85.png)  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_86.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_85.webp)  
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_86.webp)
 
 Type `Initiating the reboot pending prompt solution on the machine` in the `Input value or variable` field and press `Enter`.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_87.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_87.webp)
 
 ### Row 7d(v){2} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_88.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_88.webp)
 
 A blank function will appear.
 
 Search and select `Set Custom Field` Function.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_90.png)  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_91.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_90.webp)  
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_91.webp)
 
 Search and select `Prompter_RebootPending` in the `Search Custom Field` field and set `True` in the `Value` field and click the `Save` button.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_92.png)  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_94.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_92.webp)  
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_94.webp)
 
 Mark the `Continue on Failure` Check-Box.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_95.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_95.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_96.png)
+![Image](../../../static/img/docs/5170978d-feb6-455c-8806-20224e27d923/image_96.webp)
 
 ## Completed Script
 
@@ -554,4 +554,3 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
-

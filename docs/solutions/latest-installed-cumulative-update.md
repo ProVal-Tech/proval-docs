@@ -111,4 +111,3 @@ Configure the Autofix section of the solution as follows:
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is set up to run only against machines that are not EOL or recently EOL (within 30 days). If the machine is not EOL currently, check to make sure the monitor is set up to run against the group that the machine is in.
-

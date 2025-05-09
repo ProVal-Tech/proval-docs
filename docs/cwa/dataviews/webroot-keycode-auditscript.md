@@ -29,4 +29,3 @@ This dataview shows the Webroot hashed keycode present on the machine, the statu
 | OS                  | Displays the operating system.                                        |
 | Encrypted Keycode   | Displays the currently present Webroot encrypted keycode.             |
 | KeyCode Status      | Displays the keycode status, indicating whether it matches the keycode setup under the Webroot plugin. |
-

@@ -23,3 +23,11 @@ This monitor is designed to update the application based on the PackageID, Sourc
 Global - Should be run without explicitly defined targets.
 
 This monitor depends on the property named PackageID being created. Therefore, before enabling it, you need to implement the monitor "ProVal - Production - `<Application>` - Latest Version Detection" with the alert template "△ Custom - Execute Script - Application Latest Version."
+
+## FAQ
+
+Does this monitor can perform installation as well?
+
+By default, it only performs the update.
+Yes, for the install enable please change the null value to 1 as shown below:
+![Change to 1 to enable install](../../../static/img/docs/00000000-0000-0000-0000-000000000000/image.webp)

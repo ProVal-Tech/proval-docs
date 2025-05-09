@@ -170,13 +170,13 @@ $DuplicatePWCount = $TheseResults.DuplicatePasswords.Count
 return "DuplicatePasswordCount:$($DuplicatePWCount)|WeakPasswordCount:$($weakpwcount)|DuplicatePassword:$($DuplicatePW)|WeakPassword:$($weakpw)"
 ```
 
-![alt text](../../../static/img/docs/weak-passwords-ad-test/image.png)
+![alt text](../../../static/img/docs/1d54d079-e038-46a7-8a03-fe6bad481487/image.webp)
 
 ### Row 2: Function: Script Log
 
-![alt text](../../../static/img/docs/weak-passwords-ad-test/image-1.png)  
+![alt text](../../../static/img/docs/1d54d079-e038-46a7-8a03-fe6bad481487/image-1.webp)  
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![alt text](../../../static/img/docs/weak-passwords-ad-test/image-2.png)
+![alt text](../../../static/img/docs/1d54d079-e038-46a7-8a03-fe6bad481487/image-2.webp)
 
 ### Row 3: Function: PowerShell Script
 

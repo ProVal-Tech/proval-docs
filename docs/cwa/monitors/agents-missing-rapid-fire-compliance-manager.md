@@ -27,4 +27,3 @@ Global
 *To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433/image_1.webp)
-

@@ -40,4 +40,3 @@ This process retrieves Bitlocker recovery keys on the endpoint and prints any th
 ## Output
 
 CF, AP Log
-

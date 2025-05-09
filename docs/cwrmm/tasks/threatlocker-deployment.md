@@ -53,8 +53,8 @@ A blank function will appear.
 - Click Save
 - Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
 
-![alt text](../../../static/img/docs/threatlocker-deployment/image.png)  
-![alt text](../../../static/img/docs/threatlocker-deployment/image-1.png)
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-1.webp)
 
 ### Row 2 Function: Set Pre-Defined Variable
 
@@ -67,8 +67,8 @@ A blank function will appear.
 - Click Save
 - Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
 
-![alt text](../../../static/img/docs/threatlocker-deployment/image-2.png)  
-![alt text](../../../static/img/docs/threatlocker-deployment/image-3.png)
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-2.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-3.webp)
 
 ### Row 3 Function: PowerShell Script
 
@@ -140,7 +140,7 @@ Limit this step to `Windows OS` only.
 
 ### Row 4: Function: Script Log
 
-![alt text](../../../static/img/docs/threatlocker-deployment/image-4.png)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-4.webp)  
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Script Log Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_15.webp)
 
@@ -157,8 +157,8 @@ Limit this step to `Windows OS` only.
 - Click Save
 - Limit this step to Windows OS by selecting `MacOS` from the `Operating System` dropdown on the left side
 
-![alt text](../../../static/img/docs/threatlocker-deployment/image-6.png)  
-![alt text](../../../static/img/docs/threatlocker-deployment/image-7.png)
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-6.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-7.webp)
 
 ### Row 6 Function: Command Prompt (CMD) Script
 

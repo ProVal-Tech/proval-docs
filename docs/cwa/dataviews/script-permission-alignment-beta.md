@@ -28,4 +28,3 @@ The dataview will display the user classes that will be assigned to the stock sc
 | Script Path               | Full Path to the Script                              |
 | Access                    | Set of user classes who have permission to access this script |
 | User Class                | Name of the User Class(es) with access to this script |
-

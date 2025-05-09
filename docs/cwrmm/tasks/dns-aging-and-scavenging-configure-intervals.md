@@ -157,7 +157,7 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![PowerShell Script](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_18.png)
+![PowerShell Script](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_18.webp)
 
 ### Row 2: Function: Script Log
 

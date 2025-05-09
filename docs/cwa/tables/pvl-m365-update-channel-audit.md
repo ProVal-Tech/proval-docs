@@ -31,5 +31,3 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](/do
 | updateChannel     | varchar   | Update Channel for Office installed on the machine.                                            |
 | dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) ran on the machine. |
 
-
-

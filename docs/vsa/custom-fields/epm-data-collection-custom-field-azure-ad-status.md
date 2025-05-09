@@ -25,4 +25,3 @@ Solution: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
-

@@ -61,4 +61,3 @@ Once the above criteria are set, click the Save button to save the group.
 ![Image](../../../static/img/docs/8645a522-a9e3-4755-a498-32c2904e51c6/image_4.webp)
 
 ![Image](../../../static/img/docs/8645a522-a9e3-4755-a498-32c2904e51c6/image_5.webp)
-

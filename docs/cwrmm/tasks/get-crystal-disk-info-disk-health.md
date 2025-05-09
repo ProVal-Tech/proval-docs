@@ -236,4 +236,3 @@ This pop-up box will appear.
 ![Script Log Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_39.webp)  
 - Custom Field  
 ![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.webp)  
-

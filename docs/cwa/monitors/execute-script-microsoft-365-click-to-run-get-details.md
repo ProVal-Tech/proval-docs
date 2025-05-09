@@ -28,4 +28,3 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
-

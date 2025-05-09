@@ -25,5 +25,3 @@ unlisted: false
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
-
-

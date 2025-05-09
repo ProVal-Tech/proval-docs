@@ -43,4 +43,3 @@ This script runs a PowerShell query that is supported by all Windows operating s
 - Script log
 - Script state
 - Dataview
-

@@ -27,5 +27,3 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 ## Output
 
 - Script log
-
-

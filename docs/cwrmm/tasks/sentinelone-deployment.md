@@ -277,7 +277,7 @@ fi
 ![Bash Script Execution 1](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_45.webp)
 
 Limit the bash file to run on `Mac` machines only.  
-![alt text](../../../static/img/docs/sentinelone-deployment/image.png)
+![alt text](../../../static/img/docs/25651d1f-99d6-4906-8666-220994a4862e/image.webp)
 
 ## Row 4 Function: Bash Script
 
@@ -338,7 +338,7 @@ fi
 ![Bash Script Execution 2](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_46.webp)
 
 Limit the bash file to run on `Linux` machines only.  
-![alt text](../../../static/img/docs/sentinelone-deployment/image-1.png)
+![alt text](../../../static/img/docs/25651d1f-99d6-4906-8666-220994a4862e/image-1.webp)
 
 ## Row 5 Function: Set Custom Field
 

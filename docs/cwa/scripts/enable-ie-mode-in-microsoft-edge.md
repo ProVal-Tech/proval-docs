@@ -40,5 +40,3 @@ Once the setting is done, it checks the computer EDFs for logging in the databas
 ## Output
 
 - Script log
-
-

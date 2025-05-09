@@ -36,5 +36,3 @@ This solution uses a custom task, a device group, and a custom monitor to manage
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
-
-

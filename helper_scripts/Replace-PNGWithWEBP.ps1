@@ -1,3 +1,6 @@
+$pngImages = Get-ChildItem -Path (Get-Item $PSScriptRoot).Parent.FullName + '\static\img\docs' -Recurse -Filter '*.png'
+
+
 $docsPath = (Get-Item $PSScriptRoot).Parent.FullName + '\docs'
 $docs = Get-ChildItem $docsPath -File -Recurse -Filter '*.md'
 

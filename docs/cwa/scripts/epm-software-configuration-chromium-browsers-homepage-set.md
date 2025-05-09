@@ -43,5 +43,3 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
-
-

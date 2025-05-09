@@ -87,11 +87,11 @@ if ($os.ProductType -eq 1) {
 
 ### Row 3: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-1.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-1.webp)
 
 ### Row 4: Logic: If/Then
 
@@ -105,7 +105,7 @@ In the IF part, enter `Workstation` in the right box of the "Output Does Not Con
 
 ### Row 4b: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-2.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-2.webp)
 
 In the script log message, type `The OS detected is confirmed not a Workstation. Please try the script 'Force Reboot Server with Reboot Windows Verification'. Exiting script without any action.`
 
@@ -113,11 +113,11 @@ In the script log message, type `The OS detected is confirmed not a Workstation.
 
 ### Row 4c: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-3.webp)
 
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-4.webp)
 
 ### Row 5: Logic: If/Then
 
@@ -131,7 +131,7 @@ In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ### Row 5b: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-5.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-5.webp)
 
 In the script log message, type `Force Reboot is approved on the endpoint via Reboot Scripts. Proceeding for reboot schedule without reboot window validation.`
 
@@ -194,11 +194,11 @@ Restart-ComputerOnSchedule -Days (@DaysToReboot@) -Hour @HoursToReboot@ -Minute 
 
 ### Row 5d: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-6.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-6.webp)
 
 In the script log message, simply type `%output%`.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-7.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-7.webp)
 
 ### Row 5e: Logic: If/Then
 
@@ -212,7 +212,7 @@ In the IF part, enter `RebootDateTime` in the right box of the "Output Does Not 
 
 ### Row 5e.2: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-8.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-8.webp)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` This will end the task with failure.
 
@@ -220,7 +220,7 @@ In the script exit message, type `Reboot Schedule Failed with an error %output%.
 
 ### Row 5f: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-6.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-6.webp)
 
 In the script log message, type `Reboot successfully scheduled on %output%.`
 
@@ -228,11 +228,11 @@ In the script log message, type `Reboot successfully scheduled on %output%.`
 
 ### Row 5g: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-3.webp)
 
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-4.webp)
 
 ### Row 6: Function: Set Pre-defined Variable
 
@@ -240,7 +240,7 @@ Select the custom field 'WorkstationRebootWindowStart' and set the variable 'Reb
 
 ![Row 6 Image](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image_18.webp)
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-9.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-9.webp)
 
 ### Row 7: Function: Set Pre-defined Variable
 
@@ -248,7 +248,7 @@ Select the custom field 'WorkstationRebootWindowEnd' and set the variable 'Reboo
 
 ![Row 7 Image](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image_19.webp)
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-10.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-10.webp)
 
 ### Row 8: Function: Set Pre-defined Variable
 
@@ -256,7 +256,7 @@ Select the custom field 'WorkstationRebootWindowDay' and set the variable 'Reboo
 
 ![Row 8 Image](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image_20.webp)
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-11.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-11.webp)
 
 ### Row 9: Logic: If/Then
 
@@ -270,7 +270,7 @@ In the IF part, enter `true` in the right box of the "Custom Field Equals" part.
 
 ### Row 9b: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-12.webp)
 
 In the script log message, type `This endpoint has 'Exclude Reboot' flag checked. Exiting script without any action.`
 
@@ -278,15 +278,15 @@ In the script log message, type `This endpoint has 'Exclude Reboot' flag checked
 
 ### Row 9c: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-3.webp)
 
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-4.webp)
 
 ### Row 10: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-12.webp)
 
 In the script log message, type `Verifying that machine is in approved window between @RebootWindowStart@ and @RebootWindowEnd@ (Note: 0=12:00 AM, 23=11:00 PM) and Day @RebootWindowDay@.`
 
@@ -317,11 +317,11 @@ else {
 
 ### Row 12: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-12.webp)
 
 In the script log message, simply type %output% so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-13.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-13.webp)
 
 ### Row 13: Logic: If/Then
 
@@ -335,7 +335,7 @@ In the IF part, enter `Machine is in reboot window` in the right box of the "Out
 
 ### Row 13b: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-12.webp)
 
 In the script log message, type `Scheduling the reboot as the reboot schedule falls under the reboot window set on the company level.`
 
@@ -413,7 +413,7 @@ In the IF part, enter `RebootDateTime` in the right box of the "Output Contains"
 
 ### Row 13e.2: Function: Script Log
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-12.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-12.webp)
 
 In the script log message, type `Reboot successfully scheduled on %output%.`
 
@@ -421,15 +421,15 @@ In the script log message, type `Reboot successfully scheduled on %output%.`
 
 ### Row 13e.3: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-3.webp)
 
 Add a new row by clicking on the Add row button. In the script exit message, leave it blank.
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-4.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-4.webp)
 
 ### Row 13f: Function: Script Exit
 
-![alt text](../../../static/img/docs/workstation-reboot-schedule-on-specific-days/image-3.png)
+![alt text](../../../static/img/docs/0957012a-a6da-4e1b-abec-936a0a467e6a/image-3.webp)
 
 In the script exit message, type `Reboot Schedule Failed with an error %output%.` This will end the task with failure.
 

@@ -299,4 +299,3 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Ticket**  
 ![Ticket Output](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_66.webp)  
-

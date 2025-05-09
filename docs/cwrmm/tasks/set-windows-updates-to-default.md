@@ -135,7 +135,7 @@ if ( $failures ) {
 
 ```
 
-![alt text](../../../static/img/docs/set-windows-updates-to-default/image.png)
+![alt text](../../../static/img/docs/41c0732d-0740-40d4-bd2f-98edd91cc559/image.webp)
 
 ### Row 2: Function: Script Log
 

@@ -49,74 +49,74 @@ Create the company-level Custom Field [Cisco Secure Client Parameter](/docs/0dc2
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image1.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image2.png)
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image1.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image2.webp)
 
 **Name:** `Cisco Secure Client Package Installation (Windows)`  
 **Description:** `How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
 Note: To install the Umbrella module, it is required to install the Core VPN module.`  
 **Category:** `Application`
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image3.png)
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image3.webp)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image4.png)
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image4.webp)
 
 #### Row 1 Function: Set Pre-defined Variable
 
 Select `Set Pre-defined Variable` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image5.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image6.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image5.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image6.webp)  
 Select the `Custom Field` option.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image7.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image7.webp)  
 Type `Parameter` in the `Variable Name` field and search and select the `Cisco Secure Client Parameter` in the `Search Custom Field` field.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image8.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image8.webp)  
 Click the `Save` button to save the function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image9.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image10.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image9.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image10.webp)  
 
 #### Row 2 Logic: If/Then
 
 Insert a new row by selecting the `If/Then` option from the `Add Logic` dropdown button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image11.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image12.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image11.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image12.webp)  
 
 ##### Row 2a Condition: Value Does Not Contain
 
 Select the `Value` option from the drop-down button next to the `Output` option.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image13.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image14.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image13.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image14.webp)  
 Enter `Parameter` in the `Enter Value` field and press the `Enter` button on your keyboard.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image15.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image15.webp)  
 Select `Does Not Contain` comparator from the drop-down button next to the `Contains` option. 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image16.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image17.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image16.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image17.webp)  
 Type `-downloadURL` in the `Input Value and Variable` field and press the `Enter` button on your keyboard.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image18.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image18.webp)  
 
 ##### Row 2b Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then` logic after the `Output Contains` condition.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image19.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image19.webp)  
 Select `Script Exit` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image20.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image21.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image20.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image21.webp)  
 Paste this line in the `Error Message` box and click the `Save` button.  
 `Parameter is not set at the company level Custom field Cisco Secure Client Parameter.  
 Exiting script with error.`  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image22.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image23.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image24.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image22.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image23.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image24.webp)  
 
 #### Row 3 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image25.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image25.webp)  
 Select `Script Log` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image26.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image27.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image26.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image27.webp)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 
 ```PlainText
@@ -124,17 +124,17 @@ Parameters Used:
 @Parameter@
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image28.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image29.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image28.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image29.webp)  
 
 #### Row 4 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
 Select `PowerShell Script` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `900` seconds, and click the `Save` button.
 
 ```PowerShell
@@ -168,17 +168,17 @@ $workingpath = $WorkingDirectory
 #endregion
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image34.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image34.webp)  
 Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image35.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image35.webp)  
 
 #### Row 5 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image36.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image36.webp)  
 Select `Script Log` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image37.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image38.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image37.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image38.webp)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 
 ```PlainText
@@ -186,17 +186,17 @@ PowerShell Output:
 %Output%
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image39.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image40.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image39.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image40.webp)  
 
 #### Row 6 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
 Select `PowerShell Script` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```PowerShell
@@ -208,17 +208,17 @@ if ( Test-Path $logPath ) {
 }
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image41.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image41.webp)  
 Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image42.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image42.webp)  
 
 #### Row 7 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image36.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image36.webp)  
 Select `Script Log` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image37.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image38.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image37.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image38.webp)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 
 ```PlainText
@@ -226,17 +226,17 @@ Log Content:
 %Output%
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image43.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image40.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image43.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image40.webp)  
 
 #### Row 8 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image30.webp)  
 Select `PowerShell Script` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image31.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image32.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image33.webp)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
 ```PowerShell
@@ -248,38 +248,38 @@ if ( Test-Path $errorlogPath ) {
 }
 ``` 
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image44.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image44.webp)  
 Mark the `Continue on Failure` checkbox.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image42.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image42.webp)  
 
 #### Row 9 Logic: If/Then/Else
 
 Insert a new row by selecting the `If/Then/Else` option from the `Add Logic` dropdown button.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image45.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image46.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image45.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image46.webp)  
 
 ##### Row 9a Condition: Output Contains
 
 Type `Errors Logs not generated.` in the `Input Value or Variable` field.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image47.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image47.webp)  
 
 ##### Row 9b Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic after the `Output Contains` condition.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image48.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image48.webp)  
 Select `Script Exit` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image49.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image49.webp)  
 Click the `Save` button for the `Error Message` prompt box without adding anything to the text field.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image50.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image51.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image50.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image51.webp)  
 
 ##### Row 9c Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic in the `Else` section.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image52.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image52.webp)  
 Select `Script Exit` function.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image53.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image54.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image53.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image54.webp)  
 Paste this line in the `Error Message` box and click the `Save` button.  
 
 ```PlainText
@@ -287,11 +287,11 @@ Error Log Content:
 %Output%
 ```
 
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image55.png)  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image56.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image55.webp)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image56.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image57.png)  
+![Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image57.webp)  
 
 Store the proper parameter at the company-level custom field [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) before scheduling or running the script.
 
@@ -379,5 +379,3 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 ## Output
 
 - Script log
-
-

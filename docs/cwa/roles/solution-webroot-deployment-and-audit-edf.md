@@ -76,4 +76,3 @@ This solution is intended for partners where the Webroot plugin is broken, which
 
    **Note:**
    Please read the complete EDF detailing in the script before implementing the solution: [Install Webroot SecureAnywhere [EDF]](/docs/cddb5b54-a76e-4d74-8226-8f536d8f0eb4). Additionally, follow the Other Content sections ([Webroot Site KeyCode](/docs/bde90a61-771c-46ef-98f5-3278febb3278) and [Webroot GroupCode and GroupName Fetching](/docs/4f44f833-a625-46b6-bae7-c74512ff22da)) for steps on how to obtain the Site keycode and Group Code from the Webroot Portal.
-

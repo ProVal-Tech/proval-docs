@@ -48,4 +48,3 @@ This process starts a job running in the background to execute [SEC - Windows Pa
 - AP Log  
 - [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070)  
 - PSOutput Document
-

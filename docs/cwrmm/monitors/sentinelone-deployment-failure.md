@@ -59,5 +59,3 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](/do
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
    ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_9.webp)  
 
-
-

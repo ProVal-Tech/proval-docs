@@ -13,5 +13,3 @@ unlisted: false
 ## Summary
 
 Get Primary Domain Controller
-
-

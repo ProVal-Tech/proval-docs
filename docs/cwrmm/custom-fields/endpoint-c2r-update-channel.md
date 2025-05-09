@@ -24,4 +24,3 @@ This document explains how to update the channel of the Office installed on a ma
 
 ![Screenshot 1](../../../static/img/docs/371c0aa5-4230-4952-b341-f5c58b0b46ad/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/371c0aa5-4230-4952-b341-f5c58b0b46ad/image_2.webp)
-

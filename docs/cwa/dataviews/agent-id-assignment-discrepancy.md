@@ -34,4 +34,3 @@ This dataview will show information on any agent that has changed its name five 
 | Last Contact              | Last contact with RMM                                |
 | Days Since Last Contact   | Days since last contact                              |
 | Last User                 | Last logged-in user                                  |
-

@@ -28,5 +28,3 @@ It is essential to note that this solution relies on the CW RMM+ plugin and its 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
-
-

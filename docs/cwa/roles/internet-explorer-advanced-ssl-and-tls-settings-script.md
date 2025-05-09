@@ -30,5 +30,3 @@ This document contains the SSL and TLS information set by the dependent script f
 | Contact                      | Last username                                                 |
 | Contact Email                | User's email                                                 |
 | IE Advanced Security Status   | Detailed information on what TLS and SSL settings are configured for Internet Explorer |
-
-

@@ -36,4 +36,3 @@ This dataview shows the report of the Hyper-V disk records from the custom table
 | Missing           | Drive status indicating whether detected in Automate or not |
 | Internal          | Indicates whether the drive is internal or external/removable |
 | SSD               | Indicates whether the disk is SSD or not                |
-

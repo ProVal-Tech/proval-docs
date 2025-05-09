@@ -37,4 +37,3 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
-

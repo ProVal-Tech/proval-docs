@@ -19,4 +19,3 @@ This role definition shows which servers have the RDS Licensing feature enabled.
 | Detection String                                  | Comparator | Result | Applicable OS |
 |--------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Licensing).Installed"@%} | Equals     | True   | Windows        |
-

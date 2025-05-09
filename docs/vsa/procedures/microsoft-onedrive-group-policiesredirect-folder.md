@@ -71,4 +71,3 @@ A status of Success is expected.
 ![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_6.webp)  
 
 ![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_7.webp)  
-

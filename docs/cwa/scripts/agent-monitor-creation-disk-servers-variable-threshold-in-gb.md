@@ -53,4 +53,3 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
-

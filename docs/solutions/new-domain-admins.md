@@ -36,4 +36,3 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the Machine Group: [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8).
 - Create the task: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
 - Create the deployment schedule as described in this document: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
-

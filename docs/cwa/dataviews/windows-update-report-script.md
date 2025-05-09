@@ -59,4 +59,3 @@ This dataview was created to display a detailed list of patches that are install
 | Recommended Memory              | Recommended Memory to install the Patch             |
 
 **Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
-

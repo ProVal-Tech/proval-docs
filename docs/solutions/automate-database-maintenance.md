@@ -39,5 +39,3 @@ This solution provides an easy way to maintain and log any desired database main
 3. Schedule the client script [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968) to run weekly, every Monday at 5:30 AM.
 
 ## FAQ
-
-

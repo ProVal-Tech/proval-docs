@@ -30,4 +30,3 @@ Schedules the Monthly CF Field Reset AP.
   - **Policy Object Settings**:
     - **Policy Object Members**: [VSA - VSA Configuration - Agent Procedure - Monthly Automation Time Reset](/docs/1552dec9-04ae-484f-b217-922542928af3)
       - **Policy Object Member Settings**: Monthly, 1st day, midnight, do not SiO
-

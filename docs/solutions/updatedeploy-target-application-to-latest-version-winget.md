@@ -1,8 +1,8 @@
 ---
 id: '2487a1f4-6f85-42f3-91d0-4aab8c875021'
 slug: /2487a1f4-6f85-42f3-91d0-4aab8c875021
-title: 'UpdateDeploy Target Application to Latest Version Winget'
-title_meta: 'UpdateDeploy Target Application to Latest Version Winget'
+title: 'Update/Deploy Target Application to Latest Version Winget'
+title_meta: 'Update/Deploy Target Application to Latest Version Winget'
 keywords: ['upgrade', 'winget', 'application', 'monitor', 'script']
 description: 'This document provides a comprehensive guide for achieving the appropriate application upgrade to the latest version detected by Winget. It includes associated scripts, monitors, and alert templates necessary for implementation.'
 tags: ['application', 'installation']

@@ -51,4 +51,3 @@ The table stores the information returned by the [EPM - Disk - Script - Crystal 
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
-

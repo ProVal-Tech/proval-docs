@@ -115,7 +115,7 @@ Unsupported Operating System.
 Supported OS are Windows 10 and Windows 11
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image.webp)
 
 ### Row 2c Function: Script Exit
 
@@ -175,7 +175,7 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 Task is already created on the computer.
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-1.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-1.webp)
 
 ### Row 3c Function: Script Exit
 
@@ -235,7 +235,7 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 Winget Update All scheduled task creation is not enabled for the Company.
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-2.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-2.webp)
 
 ### Row 4c Function: Script Exit
 
@@ -293,7 +293,7 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 Computer is excluded from Winget Update All Scheduled Task Creation.
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-3.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-3.webp)
 
 ### Row 5c Function: Script Exit
 
@@ -349,7 +349,7 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 Site is excluded from Winget Update All Scheduled Task Creation.
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-4.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-4.webp)
 
 ### Row 6c Function: Script Exit
 
@@ -403,74 +403,74 @@ Select the `Custom Field` option from the dropdown.
 
 Search and select the `WingetUpdateAll_UserTask_Disable` custom field in the `Search` field. Select the `Site-Level Boolean` field.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-5.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-5.webp)
 
 Change the operator to `Equals` from `Contains` and the comparator to `True` from `False`.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-6.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-6.webp)
 
 Add another condition by clicking the `Add Condition` button.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-7.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-7.webp)
 
 Change the logical operator to `Or` from `And`.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-8.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-8.webp)
 
 Select the `Custom Field` option from the dropdown.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-9.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-9.webp)
 
 Search and select the `WingetUpdateAll_UserTask_Disable` custom field in the `Search` field. Select the `Computer-Level Boolean` field.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-10.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-10.webp)
 
 Change the operator to `Equals` from `Contains` and the comparator to `True` from `False`.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-11.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-11.webp)
 
 ### Row 7b Function: Set User Variable
 
 Add a new row by clicking on the `Add Row` button.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-12.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-12.webp)
 
 Search and select the `Set User Variable` function.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-13.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-13.webp)
 
 Add `UserTask` in the `Variable Name` field and `0` in the `Value` field, then click the `Save` button.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-14.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-14.webp)
 
 ### Row 7c Function: Set User Variable
 
 Add a new row by clicking on the `Add Row` button in the `Else` section.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-15.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-15.webp)
 
 Search and select the `Set User Variable` function.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-18.png)
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-17.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-18.webp)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-17.webp)
 
 Add `UserTask` in the `Variable Name` field and `1` in the `Value` field, then click the `Save` button.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-19.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-20.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-19.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-20.webp)
 
 ### Row 8 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button outside the If/Then/Else logic.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-21.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-22.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-21.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-22.webp)
 
 Search and select the `PowerShell Script` function.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-23.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-24.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-25.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-23.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-24.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-25.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
@@ -604,22 +604,22 @@ if ( $DisableUserTask -and ( ( Get-ScheduledTask -TaskName 'Winget Update All [L
 return Get-ScheduledTask -TaskName 'Winget Update All*' | Format-List -Property TaskName, State
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-26.png)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-26.webp)  
 
 Mark the `Continue on Failure` flag for the function.  
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-27.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-27.webp)
 
 ### Row 9 Function: Script Log
 
 Add a new row by clicking on the `Add Row` button.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-28.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-28.webp)
 
 Search and select the `Script Log` function.
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-31.png)
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-30.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-31.webp)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-30.webp)
 
 Add the following log in the `Script Log Message` field and click the `Save` button:
 
@@ -628,43 +628,43 @@ Script Result:
 %Output%
 ```
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-32.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-32.webp)
 
 ### Row 10 Logic: If Then Else
 
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-33.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-34.png)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-33.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-34.webp)  
 
 ### Row 10a Condition: Output Contains
 
 Type `Failed to` in the `Input Value or Variable` field and press `Enter`.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-35.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-35.webp)
 
 ### Row 10b Function: Set Custom Field
 
 Add a new row by clicking on `Add row` button.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-36.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-36.webp)
 
 Search and select `Set Custom Field` Function.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-37.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-38.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-37.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-38.webp)
 
 Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task Creation Failed` in the `Value` field and click the `Save` button.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-39.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-40.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-39.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-40.webp)
 
 ### Row 10c Function: Set Custom Field
 
 Add a new row by clicking on `Add row` button in the `Else` section.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-41.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-41.webp)
 
 Search and select `Set Custom Field` Function.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-42.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-43.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-42.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-43.webp)
 
 Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task Created` in the `Value` field and click the `Save` button.  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-44.png)  
-![alt text](../../../static/img/docs/scheduled-task-winget-update-all-create/image-45.png)
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-44.webp)  
+![alt text](../../../static/img/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e/image-45.webp)
 
 ## Completed Script
 

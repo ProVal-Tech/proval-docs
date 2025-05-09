@@ -38,4 +38,3 @@ The dataview presents a detailed analysis of script failures over the past 'X' d
 | Kill Command Issued %     | Percentage of failures because the Kill Command was issued                                       |
 | First Failure Date        | First Failure Date                                                                                |
 | Last Failure Date         | Last Failure Date                                                                                 |
-

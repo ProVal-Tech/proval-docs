@@ -71,4 +71,3 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 ## Output
 
 Procedure log files and computer log
-

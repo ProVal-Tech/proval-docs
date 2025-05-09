@@ -29,4 +29,3 @@ It will execute the [Script - Microsoft Office - Click-to-Run - Get Details](/do
 ## Output
 
 - Script log
-
