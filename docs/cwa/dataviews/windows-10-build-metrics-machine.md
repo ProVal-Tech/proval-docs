@@ -36,5 +36,3 @@ This dataview shows the Windows 10 machines with build and patch policy status, 
 | Online Last 30 Days           | Indicates whether the agent logged in within the last 30 days |
 | Has Patch Policy              | Describes whether the Windows 10 agent has a patch policy enabled or not |
 | Last Patched                  | Provides the date when the agent was last patched          |
-
-

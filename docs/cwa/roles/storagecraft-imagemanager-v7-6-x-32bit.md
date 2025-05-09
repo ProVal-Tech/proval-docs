@@ -20,5 +20,3 @@ This document outlines the method to detect if StorageCraft ImageManager v7.6.X 
 |--------------------------------------------------------------------------------------------------------|---------------|---------|----------------|
 | `\{%@powershell.exe "(Get-Item 'C://Program Files//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@%}` | Regex Match   | ^7\.6\. | Windows        |
 
-
-

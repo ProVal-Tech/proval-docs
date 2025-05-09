@@ -23,8 +23,8 @@ This document provides detailed information about the custom fields associated w
 
 
 ## Screenshots
-![Image1](<../../../static/img/CW-RMM-Lock-Stolen-System/image1.png>)
+![Image1](<../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image1.webp>)
 
-![Image2](<../../../static/img/CW-RMM-Lock-Stolen-System/image2.png>)
+![Image2](<../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image2.webp>)
 
-![Image3](<../../../static/img/CW-RMM-Lock-Stolen-System/image3.png>)
+![Image3](<../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image3.webp>)

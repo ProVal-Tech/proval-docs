@@ -28,5 +28,3 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
-
-

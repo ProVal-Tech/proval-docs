@@ -29,16 +29,14 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
 ## Group Creation
 
 1. Create Dynamic Groups:  
-   ![Image](../../../static/img/Automatic-Reboot-Pending-Check/image_1.png)
+   ![Image](../../../static/img/docs/1c798d37-8ff8-4e73-ba39-027e025a3551/image_1.webp)
 
 2. Automatic Reboot Pending Check  
-   ![Image](../../../static/img/Automatic-Reboot-Pending-Check/image_2.png)  
+   ![Image](../../../static/img/docs/1c798d37-8ff8-4e73-ba39-027e025a3551/image_2.webp)  
 
    Criteria:
    - Prompter_RebootPending custom field equal to False.
    - Auto_RebootPendingCheck custom field equal to False.
    - The agent available is equal to True.
    - The OS contains any of Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server, and Windows 2022 Server.
-
-
 

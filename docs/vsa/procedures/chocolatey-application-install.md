@@ -42,4 +42,3 @@ Utilizes the Foil wrapper for Chocolatey to install an application. [Foil GitHub
 4. Installs NuGet if not already installed.
 5. Installs/Updates the Foil Module.
 6. Installs the application using Foil.
-

@@ -16,9 +16,9 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Update-PowerShellGet-Module/image_1.png)
+![Sample Run 1](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_1.webp)
 
-![Sample Run 2](../../../static/img/Update-PowerShellGet-Module/image_2.png)
+![Sample Run 2](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_2.webp)
 
 ## Dependencies
 
@@ -28,51 +28,51 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation 1](../../../static/img/Update-PowerShellGet-Module/image_3.png)
+![Task Creation 1](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_3.webp)
 
-![Task Creation 2](../../../static/img/Update-PowerShellGet-Module/image_4.png)
+![Task Creation 2](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_4.webp)
 
 **Name:** `Update PowerShellGet Module`  
 **Description:** `Installs or updates PowerShellGet to the latest version available in the PowerShell Gallery.`  
 **Category:** `Custom`  
 
-![Task Creation 3](../../../static/img/Update-PowerShellGet-Module/image_5.png)
+![Task Creation 3](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_5.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Update-PowerShellGet-Module/image_6.png)
+![Add Row](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_6.webp)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Update-PowerShellGet-Module/image_7.png)
+![Blank Function](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_7.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Selection 1](../../../static/img/Update-PowerShellGet-Module/image_8.png)
+![PowerShell Script Selection 1](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_8.webp)
 
-![PowerShell Script Selection 2](../../../static/img/Update-PowerShellGet-Module/image_9.png)
+![PowerShell Script Selection 2](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_9.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup](../../../static/img/Update-PowerShellGet-Module/image_10.png)
+![PowerShell Script Popup](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_10.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region Setup - Variables
 $ProjectName = 'Update-Office'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -95,51 +95,49 @@ if ($Parameters) {
 }
 #endregion
 #region log verification
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Saved](../../../static/img/Update-PowerShellGet-Module/image_11.png)
+![PowerShell Script Saved](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_11.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row](../../../static/img/Update-PowerShellGet-Module/image_12.png)
+![Add Row](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_12.webp)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Update-PowerShellGet-Module/image_13.png)
+![Blank Function](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_13.webp)
 
 Search and select the `Script Log` function.
 
-![Script Log Selection](../../../static/img/Update-PowerShellGet-Module/image_14.png)
+![Script Log Selection](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_14.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Popup](../../../static/img/Update-PowerShellGet-Module/image_15.png)
+![Script Log Popup](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_15.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](../../../static/img/Update-PowerShellGet-Module/image_16.png)
+![Script Log Save](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_16.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Script Saved](../../../static/img/Update-PowerShellGet-Module/image_17.png)
+![Script Saved](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_17.webp)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Update-PowerShellGet-Module/image_18.png)
+![Completed Task](../../../static/img/docs/f17a9912-b0d6-4b48-812d-380a4dc9de90/image_18.webp)
 
 ## Output
 
 - Script log
-
-

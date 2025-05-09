@@ -19,7 +19,7 @@ It will list all the duplicate instances of the machines that are offline in Aut
 **Alert Template:** Custom - Ticket Creation - Computer
 
 **Sample Ticket:**  
-![Sample Ticket](../../../static/img/Agent---Duplicate-Serial-Number/image_1.png)
+![Sample Ticket](../../../static/img/docs/faf8c4c7-0b45-4a4b-956d-8eafdaa758c5/image_1.webp)
 
 ## Dependencies
 
@@ -30,5 +30,3 @@ It will list all the duplicate instances of the machines that are offline in Aut
 Global - Should be run without explicitly defined targets.
 
 **Note:** Not all machines have proper serial numbers. The SQL below attempts to filter out as many bad results as possible. For example, some SuperMicro PCs all use the same serial number "1234567890." This can lead to false positives. Please review the data for each device before taking action.
-
-

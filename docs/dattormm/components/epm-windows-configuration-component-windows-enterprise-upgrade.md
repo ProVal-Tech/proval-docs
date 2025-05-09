@@ -25,15 +25,15 @@ Refer the partner to [How to create a KMS Host](https://learn.microsoft.com/en-u
 Export the component from ProVal's Datto RMM instance.  
 **Name:** Windows Enterprise Upgrade  
 
-![Component Export](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_1.png)  
+![Component Export](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_1.webp)  
 
 The export will download the necessary component (cpt) file.  
 
-![Import Component](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_2.png)  
+![Import Component](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_2.webp)  
 
 Import this component file into the partner's Datto RMM instance.  
 
-![Component Import](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_3.png)  
+![Component Import](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_3.webp)  
 
 Proval Plug & Play: This component requires no configuration once imported.
 
@@ -41,11 +41,11 @@ Proval Plug & Play: This component requires no configuration once imported.
 
 A job status of Success is expected.  
 
-![Job Status](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_4.png)  
+![Job Status](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_4.webp)  
 
 **StdOut**  
-![StdOut](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_5.png)  
-![StdOut](../../../static/img/EPM---Windows-Configuration---Component---Windows-Enterprise-Upgrade/image_6.png)  
+![StdOut](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_5.webp)  
+![StdOut](../../../static/img/docs/e6c76294-af5e-465d-9824-2e5a58734451/image_6.webp)  
 
 **StdErr**  
 StdErr is not expected.

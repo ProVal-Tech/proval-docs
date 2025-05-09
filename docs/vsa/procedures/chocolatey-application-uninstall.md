@@ -53,5 +53,3 @@ Utilizes the Foil wrapper for Chocolatey to uninstall an application. [Foil GitH
 ## Output
 
 Agent Procedure Log
-
-

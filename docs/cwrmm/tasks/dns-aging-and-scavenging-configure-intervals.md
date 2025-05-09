@@ -12,15 +12,15 @@ unlisted: false
 
 ## Summary
 
-This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSettings (Deprecate after approved content)](/docs/6942d20e-8606-4af2-bae5-7525935a2bfd). It enables DNS scavenging and optionally allows you to set the interval for scavenging, 'no refresh', and refresh.
+This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSettings](/docs/6942d20e-8606-4af2-bae5-7525935a2bfd). It enables DNS scavenging and optionally allows you to set the interval for scavenging, 'no refresh', and refresh.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_1.png)
+![Sample Run](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_1.webp)
 
 ## Dependencies
 
-[Set-DNSServerScavengingSettings (Deprecate after approved content)](/docs/6942d20e-8606-4af2-bae5-7525935a2bfd)
+[Set-DNSServerScavengingSettings](/docs/6942d20e-8606-4af2-bae5-7525935a2bfd)
 
 ## User Parameters
 
@@ -34,39 +34,39 @@ This is an RMM implementation of the agnostic script [Set-DNSServerScavengingSet
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_2.png)
+![Task Creation](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_2.webp)
 
 **Name:** DNS - Aging and Scavenging - Configure Intervals  \
 **Description:** Enables DNS scavenging and optionally allows you to set the interval for 'scavenging', 'no refresh', and 'refresh'.  \
 **Category:** Custom  \
-![Task Creation](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_3.png)
+![Task Creation](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_3.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_4.png)
+![Add Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_4.webp)
 
 This screen will appear.
 
-![Parameter Screen](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_5.png)
+![Parameter Screen](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_5.webp)
 
 - Set `ScavengingInterval` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_6.png)
+![Save Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_6.webp)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_7.png)
+![Confirm Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_7.webp)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_8.png)
+![Add Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_8.webp)
 
 - Set `NoRefreshInterval` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_9.png)
+![Save Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_9.webp)
 
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.
 
@@ -76,37 +76,36 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_10.png)
+![Confirm Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_10.webp)
 
 All the parameters will look like as shown below:  
-![Parameters](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_11.png)
+![Parameters](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_11.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_12.png)
+![Add Row](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_12.webp)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_13.png)
+![Blank Function](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_13.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_14.png)
+![PowerShell Script](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_14.webp)
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_15.png)
+![Function Popup](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_15.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```powershell
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $ScavengingInterval = '@ScavengingInterval@'
 $NoRefreshInterval = '@NoRefreshInterval@'
 $RefreshInterval = '@RefreshInterval@'
 $Parameters = @{}
-
 if ($ScavengingInterval -match '[0-9]') {
     $Parameters['ScavengingInterval'] = $ScavengingInterval
 }
@@ -122,13 +121,12 @@ $ProjectName = 'Set-DNSServerScavengingSettings'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -142,7 +140,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -150,28 +147,27 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
 ```
 
+![PowerShell Script](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_18.png)
+
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_16.png)
+![Script Log](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_16.webp)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_17.png)
+![Completed Task](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_17.webp)
 
 ## Output
 
 - Script Log
-
-

@@ -38,5 +38,3 @@ The output log can be found at:
 ```
 .\Register-FirefoxExtension-log.txt
 ```
-
-

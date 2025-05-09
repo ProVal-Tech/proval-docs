@@ -37,5 +37,3 @@ The Active Directory plugin must be installed and configured properly to detect 
 | Description               | Displays the description of the machine, if available |
 | Created                   | Displays the creation date and time                 |
 | Last Logon                | Displays the last login date and time               |
-
-

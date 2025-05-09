@@ -35,5 +35,3 @@ This dataview shows the internal drive health status for all Automate agents.
 | Drive SSD            | Displays the status of the Drive SSD, indicating True or False.          |
 | Drive Missing        | Displays the status of the drive, indicating if it is missing or connected. |
 
-
-

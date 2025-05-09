@@ -23,10 +23,10 @@ Also, the script can be used for on-prem partners only.
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Purge-IIS-Logs-Older-than-X-Days-Param/image_1.png)  
+![Sample Run Image](../../../static/img/docs/a7a7e04e-384d-4018-87c5-6abf2d2b2fb2/image_1.webp)  
 
 Preferred is to schedule the script against the "Labtech Server" to run once per week:  
-![Schedule Image](../../../static/img/Purge-IIS-Logs-Older-than-X-Days-Param/image_2.png)  
+![Schedule Image](../../../static/img/docs/a7a7e04e-384d-4018-87c5-6abf2d2b2fb2/image_2.webp)  
 
 ## Variables
 
@@ -50,5 +50,3 @@ Step 2: Generates the logs as per the PowerShell script's outcome and exits.
 ## Output
 
 - Script Log
-
-

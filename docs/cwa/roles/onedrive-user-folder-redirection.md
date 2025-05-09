@@ -19,5 +19,3 @@ This document outlines the detection of machines on which OneDrive User Folder r
 | Detection String                                               | Comparator | Result | Applicable OS |
 |--------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Policies/Microsoft/OneDrive:KFMSilentOptIn-%}` | Exists     |        | Windows        |
-
-

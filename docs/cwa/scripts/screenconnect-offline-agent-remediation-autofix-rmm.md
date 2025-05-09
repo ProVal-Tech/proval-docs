@@ -21,7 +21,7 @@ This script also allows for the creation of tickets for offline servers or broke
 ## Sample Run
 
 **Intended Target:** An Autofix script for Offline Server Monitoring.  
-![Sample Run](../../../static/img/ScreenConnect---Offline-Agent-Remediation-Autofix,RMM+/image_1.png)
+![Sample Run](../../../static/img/docs/ab3118dc-bc06-4443-9af0-78ccfb594844/image_1.webp)
 
 ## Dependencies
 
@@ -91,5 +91,3 @@ It will clear the `AgentStatus` script state and will finish any open offline se
 - Script Log
 - Script State
 - Ticket
-
-

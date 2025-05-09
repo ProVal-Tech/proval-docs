@@ -26,5 +26,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Find PHP.exe`
-
-

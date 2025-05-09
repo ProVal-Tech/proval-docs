@@ -20,7 +20,7 @@ The script will initialize the TPM if it is not already initialized, but it will
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Bitlocker---Volume---Add-Recovery-Password-Autofix/image_1.png)
+![Sample Run](../../../static/img/docs/c2c817db-9667-4e18-864c-11ef0775282c/image_1.webp)
 
 ## Dependencies
 
@@ -43,6 +43,4 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
-
-
 

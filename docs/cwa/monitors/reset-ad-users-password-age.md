@@ -24,7 +24,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | ![Result](../../../static/img/Reset-AD-Users-Password-Age/image_1.png) |
+| System       | 127.0.0.1     | Run File   | **REDACTED**  | Regex Match | 86400    | ![Result](../../../static/img/docs/d0774dcc-9a7f-4f9a-9719-096e90309e2d/image_1.webp) |
 
 ## Target
 

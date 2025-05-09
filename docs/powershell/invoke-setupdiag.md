@@ -32,5 +32,3 @@ $setupDiagResults.ProfileName
 ### Tables
 - Invoke-SetupDiag_logs
 - Invoke-SetupDiag_data
-
-

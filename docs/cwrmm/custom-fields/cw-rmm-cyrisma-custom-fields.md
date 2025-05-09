@@ -25,5 +25,3 @@ The custom fields listed below are used in the Cyrisma deployment and audit.
 | Cyrisma_Status      | Endpoint                                | It stores the [CW RMM - CRI Agent Deployment](/docs/344a3ab5-d05c-41a5-9303-45fc387ec2e8) task execution status. |
 | CyrismaAgent_Key    | Site                                    | This stores the site key for the Cyrisma Deployment.                       |
 | CyrismaAgent_URL    | Site                                    | This stores the unique site URL for the Cyrisma Deployment.                |
-
-

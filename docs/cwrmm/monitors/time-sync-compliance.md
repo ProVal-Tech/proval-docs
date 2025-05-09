@@ -18,15 +18,15 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 
 1. Navigate to `Endpoints` > `Alerts` > `Monitors`
    
-   ![Image](../../../static/img/Time-Sync-Compliance/image_1.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_1.webp)
 
 2. Click the `Create Monitor` button.
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_2.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_2.webp)
 
 3. This screen will appear.
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_3.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_3.webp)
 
 4. **Name:** Time Sync Compliance  
    **Description:** This monitor will sync machine time with us.pool.ntp.org.  
@@ -34,19 +34,19 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    **Family:** Desktop Operating System  
    **Severity:** Others  
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_4.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_4.webp)
 
 5. The `Conditions` tab will start looking like this:
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_5.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_5.webp)
 
 6. Set the `Repeat every` to `24` Hours:
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_6.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_6.webp)
 
 7. Disable the `Ticket Resolution` section by clicking the `Automatically resolve` button.
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_7.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_7.webp)
 
 8. Paste this PowerShell script in the `Script` box.
 
@@ -55,46 +55,35 @@ This monitor will sync the machine's time with us.pool.ntp.org.
    $peerList = 'us.pool.ntp.org';
    $syncOutput = '';
    if ((Get-Service $S).Status -ne 'Running') 
-   {
-       Try
-       {
-           Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null
-       }
-       catch 
-       {
-           return "Failed to start $S Service. Reason: $($Error.Exception.Message)"
-       };
-   }
+   {Try
+      {Start-Service $S -Confirm:$False -ErrorAction Stop | Out-Null}
+   catch 
+      {return "Failed to start $S Service. Reason: $($Error.Exception.Message)"}
+      };
    $syncOutput += w32tm /config /manualpeerlist:$peerList;
    Start-Sleep -Seconds 5;
    $syncOutput += "`n" + (W32tm /resync /force);
    if ($syncOutput -match 'The computer did not resync') 
-   {
-       return 'Failed: The computer did not resync.'
-   } 
+      {return 'Failed: The computer did not resync.'} 
    else 
-   {
-       return 'Success: The computer resynced successfully.'
-   }
+      {return 'Success: The computer resynced successfully.'}
    ```
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_8.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_8.webp)
 
 9. Set `Failed` to the `Script Output` box.
 
-   ![Image](../../../static/img/Time-Sync-Compliance/image_9.png)
+   ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_9.webp)
 
 10. Select the required client or group to target from the `Select Targets` button.
 
-    ![Image](../../../static/img/Time-Sync-Compliance/image_10.png)  
-    ![Image](../../../static/img/Time-Sync-Compliance/image_11.png)
+    ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_10.webp)  
+    ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_11.webp)
 
 11. Monitors Final Look
 
-    ![Image](../../../static/img/Time-Sync-Compliance/image_12.png)
+    ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_12.webp)
 
 12. Click the `Save` button to save the monitor set.
 
-    ![Image](../../../static/img/Time-Sync-Compliance/image_13.png)
-
-
+    ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_13.webp)

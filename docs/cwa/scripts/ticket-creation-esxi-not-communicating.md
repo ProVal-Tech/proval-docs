@@ -22,7 +22,7 @@ This script is intended to be monitor-driven only and should never be run manual
 
 The only dependency for this script is that the monitor triggering the script must have the network deviceID reported as the field name. The script will gather all other required information on its own.
 
-![Image](../../../static/img/Ticket-Creation---ESXi-Not-Communicating/image_1.png)
+![Image](../../../static/img/docs/7e7eb565-3b99-4e6f-89f8-6257f5b4e7d6/image_1.webp)
 
 ## Process
 
@@ -43,5 +43,3 @@ The only dependency for this script is that the monitor triggering the script mu
 >
 > There is 1 reported VM running on this host, which is displayed below:  
 > \<VM Name>
-
-

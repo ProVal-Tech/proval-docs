@@ -38,5 +38,3 @@ Update-AdobeCC.ps1 -Mode Update
 - .\Update-AdobeCC-log.txt
 - .\Update-AdobeCC-data.txt
 - .\Update-AdobeCC-error.txt
-
-

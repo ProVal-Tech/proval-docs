@@ -26,7 +26,7 @@ The script will be used to enable or disable any versions of TLS (v1.0, v1.1, v1
 
 To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with strong crypto for .NET.
 
-![Sample Run](../../../static/img/Windows---TLS---EnableDisable/image_1.png)
+![Sample Run](../../../static/img/docs/30fcf92d-cb2b-4fc6-bc7a-c43d393ce33d/image_1.webp)
 
 #### User Parameters
 
@@ -41,5 +41,3 @@ To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with str
 ## Output
 
 - Script log
-
-

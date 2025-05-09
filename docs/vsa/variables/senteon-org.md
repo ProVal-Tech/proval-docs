@@ -26,5 +26,3 @@ The value for this must be provided by the partner. The partner can get the data
 | Managed Variable Name | Managed Variable Type | Description                                                  |
 |-----------------------|-----------------------|--------------------------------------------------------------|
 | Senteon_Org           | Public                | Used by the agent procedure to specify the organization during installation |
-
-

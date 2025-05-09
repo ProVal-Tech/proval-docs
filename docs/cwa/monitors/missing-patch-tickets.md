@@ -92,5 +92,3 @@ WHERE
 ```
 
 **Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd) script is imported before creating the alert template.
-
-

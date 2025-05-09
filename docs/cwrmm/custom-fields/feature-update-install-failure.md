@@ -16,14 +16,12 @@ The `Feature Update Install With Tracking` task utilizes this custom field to st
 
 ## Create the Custom Field
 
-![Image 1](../../../static/img/Feature-Update-Install-Failure/image_1.png)
+![Image 1](../../../static/img/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3/image_1.webp)
 
-![Image 2](../../../static/img/Feature-Update-Install-Failure/image_2.png)
+![Image 2](../../../static/img/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3/image_2.webp)
 
 **Name:** Feature Update Install Failure  
 **Type:** Text Box  
 **Level:** Endpoint  
 **Description:** Feature Update Install Failure Reason for Windows 10/11  
 **Editable:** Yes  
-
-

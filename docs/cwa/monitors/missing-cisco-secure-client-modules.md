@@ -27,5 +27,3 @@ It is a global monitor targeting both Windows and MAC machines.
 ## Alert Template
 
 `△ Custom - Execute Script - Cisco Secure Client - Package Installation`
-
-

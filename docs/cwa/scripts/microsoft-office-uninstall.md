@@ -18,7 +18,7 @@ This script will run the Office Scrub utility and remove all or specified Micros
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Office---Uninstall/image_1.png)
+![Sample Run](../../../static/img/docs/dd794f2d-7327-4d84-bda5-7d005b68a039/image_1.webp)
 
 See parameters in the "User Parameters" section below.
 
@@ -50,5 +50,3 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on the computer
-
-

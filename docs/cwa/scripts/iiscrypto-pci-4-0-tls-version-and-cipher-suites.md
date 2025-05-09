@@ -15,7 +15,7 @@ Place the attached `Pci4.0_Template.ictpl` file under the "LTShare/Transfer/conf
 
 ## Sample Run
 
-![Sample Run](../../../static/img/IISCrypto---PCI-4.0---TLS-Version-and-Cipher-Suites/image_1.png)
+![Sample Run](../../../static/img/docs/bd4671b7-d40d-452a-a41e-0e5451e2bddf/image_1.webp)
 
 ## Dependencies
 

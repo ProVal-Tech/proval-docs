@@ -16,7 +16,7 @@ This document describes the installation of the Teams Machine-wide Installer and
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-Teams---Install/image_1.png)
+![Sample Run](../../../static/img/docs/beb1b0d0-511f-46c8-8435-dae853412794/image_1.webp)
 
 ## Dependencies
 
@@ -30,5 +30,3 @@ Refer to [Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf) for detailed
 
 - Script log
 - Local file on the computer
-
-

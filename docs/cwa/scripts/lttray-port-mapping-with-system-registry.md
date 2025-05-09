@@ -18,7 +18,7 @@ This script maps the port number from netstat and the Windows registry of the LT
 
 ## Sample Run
 
-![Sample Run](../../../static/img/LTTray-Port-Mapping-with-System-Registry/image_1.png)
+![Sample Run](../../../static/img/docs/cc09c16e-c62b-4001-9226-1b92097a6507/image_1.webp)
 
 ## Dependencies
 
@@ -49,5 +49,3 @@ This script maps the port number from netstat and the Windows registry of the LT
 
 - Script log
 - Script state
-
-

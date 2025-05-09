@@ -11,5 +11,3 @@ unlisted: false
 ---
 
 It appears that there is no HTML document provided for conversion. Please provide the HTML content you'd like to convert to Markdown, and I'll be happy to assist you!
-
-

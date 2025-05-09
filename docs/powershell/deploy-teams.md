@@ -35,5 +35,3 @@ This script does not require any additional parameters for its execution. To use
 ## Output
 - Deploy-MSTeams-log.txt
 - Deploy-MSTeams-Error.txt
-
-

@@ -36,5 +36,3 @@ This typically indicates one of three issues:
 1. The Windows Firewall on your Automate Server has UDP port 75 blocked.
 2. Your Router/Firewall is not forwarding UDP port 75.
 3. Something is obstructing traffic on UDP port 75 (such as an AV/Security Appliance).
-
-

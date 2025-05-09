@@ -16,7 +16,7 @@ The script attempts to install the [latest version](https://dl.duosecurity.com/M
 
 ## Sample Run
 
-![Sample Run](../../../static/img/SWM---Software-Install---DUO---Install-MFA-Authentication-for-MAC/image_1.png)
+![Sample Run](../../../static/img/docs/854ffbbf-6756-48c6-8dc1-85dea08333e8/image_1.webp)
 
 ## Requirements
 
@@ -24,12 +24,12 @@ The script attempts to install the [latest version](https://dl.duosecurity.com/M
    EDFs used are:  
 
    Client-Level:  
-   ![Client-Level EDFs](../../../static/img/SWM---Software-Install---DUO---Install-MFA-Authentication-for-MAC/image_2.png)  
+   ![Client-Level EDFs](../../../static/img/docs/854ffbbf-6756-48c6-8dc1-85dea08333e8/image_2.webp)  
    1. EDFs in section 1 are text boxes and must be filled in order to execute the script.
    2. EDFs in section 2 are drop-downs with "False/True" as the options. These EDFs can be used to configure the application. The default value for these EDFs is False.
 
 2. Overrides should be set at the computer level, as shown below:  
-   ![Overrides](../../../static/img/SWM---Software-Install---DUO---Install-MFA-Authentication-for-MAC/image_3.png)  
+   ![Overrides](../../../static/img/docs/854ffbbf-6756-48c6-8dc1-85dea08333e8/image_3.webp)  
    Values set at the computer level will override the values set at the client level.
 
 **Note**: The EDFs mentioned in section 1 will be imported along with the script, but EDFs in section 2 must be created manually. The following SQL queries can be executed from a RAWSQL monitor to create these EDFs:
@@ -70,5 +70,3 @@ Call v_Extradatarefresh(3,'Clients');
 ## Output
 
 - Script Logs
-
-

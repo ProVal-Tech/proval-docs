@@ -31,30 +31,30 @@ A group tailored for Windows Servers that have the `Domain Naming Master` role i
 ### Step 1
 
 Navigate to `Administration` > `Devices` > `Groups`  
-![Step1](../../../static/img/ninja-one-groups-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.webp)
 
 ### Step 2
 
 Locate the `Create New Group` button on the right-hand side of the screen, click on it.  
-![CreateNewGroup](../../../static/img/ninja-one-groups-common-screenshots/createnewgroup.png)
+![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.webp)
 
 ### Step 3
 
 **Condition:** `More filters` `=>` `Custom Fields`
 
 Search and select the `Custom Fields` from the `More filters` button.  
-![MoreFiltersCustomFields](../../../static/img/ninja-one-groups-common-screenshots/morefilterscustomfields.png)
+![MoreFiltersCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/morefilterscustomfields.webp)
 
 `Filter by: Custom Fields` windows will appear on the screen.  
-![FilterByCustomFields](../../../static/img/ninja-one-groups-common-screenshots/filterbycustomfields.png)
+![FilterByCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/filterbycustomfields.webp)
 
 ### Step 4
 
 Click the `Add` button located in the front of `Has all conditions`.  
-![HasAllConditionsAdd](../../../static/img/ninja-one-groups-common-screenshots/hasallconditionsadd.png)
+![HasAllConditionsAdd](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/hasallconditionsadd.webp)
 
 The `Add Custom Field` screen will appear.  
-![AddCustomField](../../../static/img/ninja-one-groups-common-screenshots/addcustomfield.png)
+![AddCustomField](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/addcustomfield.webp)
 
 ### Step 5
 
@@ -64,20 +64,20 @@ Fill in the following conditions and click the `Add` button to proceed.
 **Condition:** `Contains`  
 **Text:** `Domain Naming Master`  
 
-![Image1](../../../static/img/ninja-one-groups-cpval-server-role-fsmo-domain-naming-master/image1.png)
+![Image1](../../../static/img/docs/61a7e090-eceb-475b-9080-16e288327411/image1.webp)
 
 ### Step 6
 
 Click the `Apply` button to proceed.  
-![Image2](../../../static/img/ninja-one-groups-cpval-server-role-fsmo-domain-naming-master/image2.png)
+![Image2](../../../static/img/docs/61a7e090-eceb-475b-9080-16e288327411/image2.webp)
 
 ### Step 7
 
 Click the `Save group` button to save changes.  
-![SaveGroup](../../../static/img/ninja-one-groups-common-screenshots/savegroup.png)
+![SaveGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savegroup.webp)
 
 `Save device group` window will appear on the screen.  
-![SaveDeviceGroup](../../../static/img/ninja-one-groups-common-screenshots/savedevicegroup.png)
+![SaveDeviceGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savedevicegroup.webp)
 
 ### Step 8
 
@@ -87,8 +87,8 @@ Fill in the following details and click the `Save` button to create the group.
 **Description:** `A group tailored for Windows Servers that have the Domain Naming Master role installed`  
 **Permission Type:** `Self (Private) - default`
 
-![Image3](../../../static/img/ninja-one-groups-cpval-server-role-fsmo-domain-naming-master/image3.png)
+![Image3](../../../static/img/docs/61a7e090-eceb-475b-9080-16e288327411/image3.webp)
 
 ## Completed Group
 
-![Image4](../../../static/img/ninja-one-groups-cpval-server-role-fsmo-domain-naming-master/image4.png)
+![Image4](../../../static/img/docs/61a7e090-eceb-475b-9080-16e288327411/image4.webp)

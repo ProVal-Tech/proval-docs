@@ -57,10 +57,10 @@ The ultimate objective of this solution is to establish and oversee two schedule
    - △ CUSTOM - Execute Script - Scheduled Task - Delete - Winget Update All
 
 4. Reload the system cache.
-   ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_1.png)
+   ![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_1.webp)
 
 5. Execute the [Script - Scheduled Task - Create - Winget Update All [Autofix]](/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1) against any online Windows 10 or Windows 11 computer with the `SetEnvironment` parameter set to `1` to create the system property and the EDFs.
-   ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_2.png)
+   ![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_2.webp)
 
 6. Configure the Extra Data Fields to initiate the solution as described in this document: [Script - Scheduled Task - Create - Winget Update All [Autofix]](/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1).
 
@@ -84,12 +84,12 @@ The ultimate objective of this solution is to establish and oversee two schedule
 **A:**
 - For Environment-Level Changes
   - Set the `Winget_Disable_User_Level_Scheduled_Task` system property to `1`.  
-  ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_3.png)
+  ![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_3.webp)
   - Follow the steps described in the [Reset - Extra Data Field - Winget_update_all_task_created](/docs/f5286dd2-1161-4580-8060-d113b3ab28b7) article for the **Environment Level Changes**.
 
 - For Client-Level Changes
   - Flag the Client-Level EDF `Winget User Level Task - Disable`.  
-  ![Image](../../static/img/Scheduled-Tasks---Winget-Update-All/image_4.png)
+  ![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_4.webp)
   - Follow the steps described in the [Reset - Extra Data Field - Winget_update_all_task_created](/docs/f5286dd2-1161-4580-8060-d113b3ab28b7) article for the **Client Level Changes**.
 
 **Q:** How to recreate the tasks on all Windows 10 and 11 computers in the environment?  
@@ -106,5 +106,3 @@ The ultimate objective of this solution is to establish and oversee two schedule
 
 **Q:** How to remove the tasks from all machines of a client?  
 **A:** Upon unmarking the Client-Level EDF `Winget Update All Task - Create`, the [Execute Script - Scheduled Task - Delete - Winget Update All](/docs/dc75761e-6b11-40be-973e-e01290c8c134) internal monitor executes the [Scheduled Task - Delete - Winget Update All [Autofix]](/docs/23d4e4bf-1a80-4db0-983b-99da88e8ba34) script to remove the tasks from all Windows 10 and 11 machines of the client.
-
-

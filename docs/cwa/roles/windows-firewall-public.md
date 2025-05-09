@@ -20,5 +20,3 @@ This document outlines the process to determine if the Windows Firewall is enabl
 |---------------------------------------------------------|------------|--------|----------------|
 | `\\\{%@netsh advfirewall show publicprofile state| find "State"@%}` | Contains   | ON     | Windows OS     |
 
-
-

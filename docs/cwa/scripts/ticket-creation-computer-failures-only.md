@@ -15,5 +15,3 @@ unlisted: false
 This document is an exact copy of the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script, with the exception that it refrains from executing actions for monitors with `SUCCESS` or `WARNING` statuses.
 
 It should only be executed from an alert template. Currently, it is implemented in the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
-
-

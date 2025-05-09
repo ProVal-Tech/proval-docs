@@ -26,5 +26,3 @@ This document outlines the procedure for rebooting an endpoint from safe mode in
 ## Process
 
 This section describes the steps to reboot an endpoint from safe mode into normal mode.
-
-

@@ -47,5 +47,3 @@ Pass the parameters to VSAAPI for use in the API call.
 
 # Output
 The output will be saved to `./Update-VsaPatchingSchedule-log.txt`.
-
-

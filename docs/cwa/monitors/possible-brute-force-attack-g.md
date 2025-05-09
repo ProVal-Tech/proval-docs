@@ -42,7 +42,7 @@ Here is a breakdown of the logon attempts that failed over the past hour:
 - 11: CachedInteractive  
 
 **Sample Ticket:**  
-![Sample Ticket](../../../static/img/Possible-Brute-Force-Attack-G/image_1.png)
+![Sample Ticket](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_1_1.webp)
 
 ## Target
 
@@ -53,7 +53,7 @@ Here is a breakdown of the logon attempts that failed over the past hour:
 1. Import the monitor set.  
 2. Import the Alert Template (~Custom - Ticket creation computer), if it is not already present.  
 3. Replace `\<agentid>` in the additional condition with the ID of your monitor set.  
-![Implementation Step](../../../static/img/Possible-Brute-Force-Attack-G/image_2.png)
+![Implementation Step](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_2_1.webp)
 
 ## Dependencies
 

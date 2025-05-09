@@ -27,5 +27,3 @@ The dataview displays the status of the Restore Point for workstations.
 | Computer Name       | Computer name.                                            |
 | OS                  | Displays the operating system of the agents.               |
 | Restore Point Status | Displays if the Restore Point is enabled or disabled on the computers. |
-
-

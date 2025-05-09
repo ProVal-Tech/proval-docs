@@ -18,7 +18,7 @@ This script can be used to install and optionally enforce an extension in Mozill
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Firefox---Install-Extension/image_1.png)
+![Sample Run](../../../static/img/docs/ef0eede8-0b3c-4307-8d17-b99e4b80332a/image_1.webp)
 
 ## Dependencies
 
@@ -57,5 +57,3 @@ Next, the script checks if a `policies.json` file already exists in the distribu
 
 - Script log
 - Local file on the computer
-
-

@@ -16,7 +16,7 @@ This script will run an SFC scan and gather the logs from that scan via console 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Monthly-SFC-Scan/image_1.png)
+![Sample Run](../../../static/img/docs/876cdd82-d35f-4112-91d1-806bb5215d19/image_1.webp)
 
 ## Dependencies
 
@@ -95,5 +95,3 @@ Document the various variables in the script. Delete any section that is not rel
 - `C:/Temp/SFC.Log`
 - Application Event log entry 7395 from 'Proval_Script_Monthly_SFC_Scan'
 - Ticket with all related information.
-
-

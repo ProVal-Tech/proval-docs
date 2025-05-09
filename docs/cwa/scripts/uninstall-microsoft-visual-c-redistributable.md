@@ -16,7 +16,7 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Uninstall-Microsoft-Visual-C++-Redistributable/image_1.png)
+![Sample Run](../../../static/img/docs/13cfc2e0-c088-424a-a1ab-5769b288a3a2/image_1.webp)
 
 ## Variables
 
@@ -35,5 +35,3 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 ## Output
 
 - Script Log
-
-

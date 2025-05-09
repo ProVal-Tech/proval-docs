@@ -18,7 +18,7 @@ This script adds the registry policy for an enforced homepage in Mozilla Firefox
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Mozilla-Firefox---Set-Homepage/image_1.png)
+![Sample Run](../../../static/img/docs/64cddf50-a662-4745-b9d3-79f625be4ce1/image_1.webp)
 
 ## Dependencies
 
@@ -46,5 +46,3 @@ The script takes a string parameter to define the URL to set the homepage. The a
 
 - Script log
 - Local file on the computer
-
-

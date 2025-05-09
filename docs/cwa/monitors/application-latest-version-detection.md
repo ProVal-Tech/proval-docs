@@ -28,5 +28,3 @@ This script is only targeted to one machine to fetch the application's latest ve
 
 1. Import the monitor.  
    Create a duplicate of the monitor and remove the imported monitor to avoid confusion.
-
-

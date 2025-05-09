@@ -27,5 +27,3 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Patch Config Mismatch`
-
-

@@ -19,7 +19,7 @@ It displays information in the dataview **@CW Control - User Audit**.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/CW-Control---User-Audit/image_1.png)
+![Sample Run](../../../static/img/docs/e7e6a0f4-6d21-4046-89ee-1e9dd5827221/image_1.webp)
 
 ## Dependencies
 
@@ -40,5 +40,3 @@ It displays information in the dataview **@CW Control - User Audit**.
 
 - Script log
 - Dataview **@CW Control - User Audit**
-
-

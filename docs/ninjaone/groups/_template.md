@@ -24,11 +24,11 @@ unlisted: false
 ### Step 1
 
 Navigate to `Administration` > `Devices` > `Groups`  
-![Step1](../../../static/img/ninja-one-groups-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.webp)
 
 ### Step 2
 
 Locate the `Create New Group` button on the right-hand side of the screen, click on it.  
-![CreateNewGroup](../../../static/img/ninja-one-groups-common-screenshots/createnewgroup.png)
+![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.webp)
 
 ## Completed Group

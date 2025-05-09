@@ -31,5 +31,3 @@ This table stores the User login/logout data.
 | ConnectionType    | INT     | An integer value representing the user connection type (e.g., remote, network, or no interaction). |
 | Action            | INT     | Indicates whether the trace found was for login or logout.                                     |
 | ScriptRanDate     | DATETIME| The date when the script last ran.                                                              |
-
-

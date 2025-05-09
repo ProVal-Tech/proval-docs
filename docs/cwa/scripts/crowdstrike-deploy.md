@@ -20,7 +20,7 @@ This script will install Crowdstrike on an agent.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Crowdstrike-Deploy/image_1.png)
+![Sample Run](../../../static/img/docs/96774e0b-8ce1-4fc6-a465-103b0e478e2c/image_1.webp)
 
 ## Variables
 
@@ -42,5 +42,3 @@ This script will install Crowdstrike on an agent using the CID key provided in t
 ## Output
 
 - Script log
-
-

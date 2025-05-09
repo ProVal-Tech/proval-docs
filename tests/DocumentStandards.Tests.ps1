@@ -54,11 +54,32 @@ foreach ($doc in $docs) {
     }
 }
 
+# Check for unused static files in the repository
+$docsContent = (Get-ChildItem $docsPath -Recurse -Filter '*.md' -File | ForEach-Object {
+        Get-Content $_.FullName -Raw
+    }) -join "`n"
+$staticFilesPath = (Get-Item $PSScriptRoot).Parent.FullName + '\static'
+$staticFiles = Get-ChildItem "$staticFilesPath\attachments", "$staticFilesPath\img" -Recurse -File
+
+foreach ($file in $staticFiles) {
+    if ($file.DirectoryName -eq "$staticFilesPath\img") {
+        continue
+    }
+    $filePathSegmentRegex = [regex]::Escape($file.Directory.Name) + '\/|\\' + [regex]::Escape($file.Name)
+    if ($docsContent -notmatch $filePathSegmentRegex) {
+        $errorList += [PSCustomObject]@{
+            Path = $file.FullName
+            Type = 'UnusedStaticFile'
+            Value = $null
+        }
+    }
+}
+
 $errorList | Format-List *
 if ($errorList.Count -gt 0) {
-    Write-Host 'Document standards check failed. Please fix the issues above.' -ForegroundColor Red
+    Write-Host 'Repository standards check failed. Please fix the issues above.' -ForegroundColor Red
     exit 1
 } else {
-    Write-Host 'All documents passed the standards check.' -ForegroundColor Green
+    Write-Host 'All standards tests passed.' -ForegroundColor Green
     exit 0
 }

@@ -41,7 +41,7 @@ Import the following Dataview from the `ProSync` plugin:
 
 ### 3.
 Reload the system cache:
-![Reload Cache](../../static/img/Improper-Script-Schedules/image_1.png)
+![Reload Cache](../../static/img/docs/fbd5de2a-f562-4f02-8eff-365942bc908c/image_1.webp)
 
 ### 4.
 Execute the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](/docs/494c2d2c-2f37-45b7-9eb0-130ff3aac45c) against any computer to create/update the [pvl_Scheduled_Scripts](/docs/5c02ccad-5b51-46a5-8423-59286adc37ea) Custom View. This script will automatically run the [CWM - Automate - Script - MySQL - Permission - Set Custom Table Permissions](/docs/7819fc75-aeae-457b-a451-59221396e900) to provide the necessary table permissions.
@@ -51,6 +51,4 @@ Validate the presence of data in the [CWM - Automate - Dataview - Improper Scrip
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](/docs/494c2d2c-2f37-45b7-9eb0-130ff3aac45c) script.
-
-
 

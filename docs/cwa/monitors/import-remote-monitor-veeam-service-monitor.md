@@ -134,12 +134,12 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 Now execute your query from a RAWSQL monitor set.  
 Once the query is executed, reload the control center.
 
-![Control Center](../../../static/img/Veeam-Service-Monitor/image_1.png)
+![Control Center](../../../static/img/docs/dce82a22-77ba-4133-90d9-78a0a1b88412/image_1.webp)
 
 Then re-open the group where the monitor is created.  
 The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
-![Monitor](../../../static/img/Veeam-Service-Monitor/image_2.png)
+![Monitor](../../../static/img/docs/dce82a22-77ba-4133-90d9-78a0a1b88412/image_2.webp)
 
 ---
 

@@ -60,5 +60,3 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button selected by the user.                                                                             |
 | dateTimeSelection   | Date and time selected by the user.                                                                      |
 | userResponse       | Input/feedback provided by the user in the user input field.                                            |
-
-

@@ -80,15 +80,13 @@ A: Typically, if you see 'Never' for the last time the computer logged into the 
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and is unable to reference it. If they are all there, verify you have full permissions to the table and views.
 
-![Error Example](../../../static/img/Active-Directory-Reporting-Solution/image_1.png)
+![Error Example](../../../static/img/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0/image_1.webp)
 
 If all of your clients do not have any detected weak passwords, the auditing script may not be scheduled. Check the following group to make sure: Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Domain Controllers. [The script should be scheduled here and limited against the 'Server Roles/Server Role - AD - Infrastructure Master' search - Running every Monday at 6:10 AM.]
 
-![Scheduled Script Example](../../../static/img/Active-Directory-Reporting-Solution/image_2.png)
+![Scheduled Script Example](../../../static/img/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0/image_2.webp)
 
 If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
 
-![Plugin Example](../../../static/img/Active-Directory-Reporting-Solution/image_3.png)
-
-
+![Plugin Example](../../../static/img/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0/image_3.webp)
 

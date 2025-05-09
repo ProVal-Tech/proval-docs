@@ -32,5 +32,3 @@ None
 | Date Installed      | Shows when the software was installed                                        |
 | Size               | Shows the total size of the installed application                             |
 | Version            | Shows the version of the management software installed on the machine        |
-
-

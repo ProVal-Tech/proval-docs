@@ -16,7 +16,7 @@ This script creates the [plugin_proval_auto_approval_status](/docs/ae8ce64f-816a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/View---Create-(plugin_proval_auto_approval_status)/image_1.png)
+![Sample Run](../../../static/img/docs/2f451b19-e8af-4a24-9032-17d65ba2b40d/image_1.webp)
 
 ## Output
 

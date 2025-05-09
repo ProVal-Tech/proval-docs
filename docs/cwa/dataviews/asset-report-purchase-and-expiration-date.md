@@ -40,5 +40,3 @@ Dataview displays the information gathered by the [CWM - Automate - Script - Get
 | Serial Number            | Serial Number of computer (Hidden)                                                                          |
 | Data Collection Time     | Data Collection Time                                                                                         |
 
-
-

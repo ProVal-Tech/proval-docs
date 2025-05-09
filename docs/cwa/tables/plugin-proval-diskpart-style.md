@@ -33,5 +33,3 @@ This document stores information about disks gathered from Diskpart.
 | PartitionStyle     | VARCHAR | The partition style of the audited disk (RAW, GPT, MBR, etc.) |
 | OperationalStatus   | VARCHAR | Indicates if the disk is offline, online, or disconnected. |
 | HealthStatus       | VARCHAR | Shows the reported health of the audited disk.        |
-
-

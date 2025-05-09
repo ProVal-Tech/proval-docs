@@ -19,13 +19,13 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 ## Sample Run
 Select any computer where you want to run the script. Then go to 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)  
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)  
 Search the script name and click on it:
-![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image4.png)  
+![SampleRun](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image4.webp)  
 Click on `Run`:  
-![SampleRun](../../../static/img/Intune-Enrollment-For-Entra-Devices/image5.png)  
+![SampleRun](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image5.webp)  
 Click on `Yes` to run the script
-![SampleRun](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![SampleRun](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 
 ## Requirements
@@ -39,15 +39,15 @@ Click on `Yes` to run the script
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 **Name:** `Intune Enrollment for Entra Joined Devices`  
 **Description:** `This automates the Microsoft Intune enrollment process for Entra joined Windows devices.`  
@@ -57,7 +57,7 @@ The scripting window will open.
 **Architecture:** `All`  
 **Run As:** `System`  
 
-![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image3.png)
+![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image3.webp)
 
 Paste in the following PowerShell script into the Ninja One editor
 
@@ -148,19 +148,19 @@ try {
 return 'Success: Enrollment process completed. Please allow up to 15 minutes for the device to appear in Intune.'
 ```
 
-![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image1.png)
+![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image1.webp)
 
 ## Saving the Automation
 
 Click the Save button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 If you are prompted to enter your MFA code, provide the code and press the `Continue` button to finalize the process.   
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![ScriptLogic](../../../static/img/Intune-Enrollment-For-Entra-Devices/image2.png)
+![ScriptLogic](../../../static/img/docs/d2a82e06-3756-4c0e-a88c-ef4c80092cca/image2.webp)
 
 ## Output
 

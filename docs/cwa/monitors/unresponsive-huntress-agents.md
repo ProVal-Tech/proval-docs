@@ -26,7 +26,7 @@ Insert the details of the monitor in the table below.
 | ------------ | -------------- | ---------- | ------------ | ----------- | -------- | ------------------- |
 | System       | 127.0.0.1      | Run File   | **REDACTED** | State Based | 86400    | \<Screenshot Below> |
 
-![Screenshot](../../../static/img/Unresponsive-Huntress-Agents/image_1.png)
+![Screenshot](../../../static/img/docs/3c75f8e7-6237-4349-97bb-462fe8d70b54/image_1.webp)
 
 ## Target
 

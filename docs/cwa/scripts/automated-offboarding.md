@@ -18,7 +18,7 @@ It will check if the agent is online or offline; if online, it will attempt the 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Automated-Offboarding/image_1.png)
+![Sample Run](../../../static/img/docs/712b2067-1340-4be0-bf62-54283f15d319/image_1.webp)
 
 #### Global Parameters
 

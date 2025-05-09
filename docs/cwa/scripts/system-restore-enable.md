@@ -19,7 +19,7 @@ While running the script, don't forget to fill in the user parameter for "drivel
 
 ## Sample Run
 
-![Sample Run](../../../static/img/System-Restore---Enable/image_1.png)
+![Sample Run](../../../static/img/docs/5263a1ab-49c0-49f0-a5b5-9f9062229b86/image_1.webp)
 
 ## Dependencies
 
@@ -42,5 +42,3 @@ The script will run a PowerShell command that enables System Restore on the targ
 ## Output
 
 - Script log message only
-
-

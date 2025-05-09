@@ -41,5 +41,3 @@ Describe how the agent procedure completes its objective.
 
 Procedure log files and other outputs.
 
-
-

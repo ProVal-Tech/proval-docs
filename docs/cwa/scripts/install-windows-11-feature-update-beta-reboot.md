@@ -39,7 +39,7 @@ The script supports both Windows 10 and Windows 11:
 
 ## Sample Run
 
-![Image1](../../../static/img/install-windows-11-feature-update-beta-reboot/image1.png)
+![Image1](../../../static/img/docs/27f8240b-603a-4af2-b9d9-480a560f8747/image1.webp)
 
 ## Dependencies
 

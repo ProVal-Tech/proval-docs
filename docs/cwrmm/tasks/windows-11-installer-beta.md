@@ -20,9 +20,9 @@ This task can be executed manually against the computers present in the [Windows
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Windows-11-Installer-(Beta)/image_3.png)  
-![Sample Run 2](../../../static/img/Windows-11-Installer-(Beta)/image_4.png)  
-![Sample Run 3](../../../static/img/Windows-11-Installer-(Beta)/image_5.png)  
+![Sample Run 1](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_3.webp)  
+![Sample Run 2](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_4.webp)  
+![Sample Run 3](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_5.webp)  
 
 ## Dependencies
 
@@ -45,49 +45,49 @@ This task can be executed manually against the computers present in the [Windows
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation 1](../../../static/img/Windows-11-Installer-(Beta)/image_6.png)  
-![Task Creation 2](../../../static/img/Windows-11-Installer-(Beta)/image_7.png)  
+![Task Creation 1](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_6.webp)  
+![Task Creation 2](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_7.webp)  
 
 **Name:** Windows 11 Installer (Beta)  
 **Description:** Install Windows 11 on a compatible Windows 10 computer.  
 **Category:** Patching  
 
-![Task Creation 3](../../../static/img/Windows-11-Installer-(Beta)/image_8.png)  
+![Task Creation 3](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_8.webp)  
 
 ### Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_9.png)  
+![Add Parameter](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_9.webp)  
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Windows-11-Installer-(Beta)/image_10.png)  
+![Parameter Screen](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_10.webp)  
 
 - Set `NoReboot` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Enable the `Default Value` option.
 - Select `False` from the `Value` dropdown menu.
 - Click the `Save` button.  
-![Save Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_11.png)  
+![Save Parameter](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_11.webp)  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Confirm Parameter](../../../static/img/Windows-11-Installer-(Beta)/image_12.png)  
+![Confirm Parameter](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_12.webp)  
 
 ### Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_13.png)  
+![Add Row](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
+![Blank Function](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_14.webp)  
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Select PowerShell Script](../../../static/img/Windows-11-Installer-(Beta)/image_15.png)  
-![PowerShell Script Selected](../../../static/img/Windows-11-Installer-(Beta)/image_16.png)  
+![Select PowerShell Script](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_15.webp)  
+![PowerShell Script Selected](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_16.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function](../../../static/img/Windows-11-Installer-(Beta)/image_17.png)  
+![PowerShell Function](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_17.webp)  
 
 Paste in the following PowerShell script and leave the expected time of script execution set to `7200` seconds. Click the `Save` button.  
 
@@ -154,36 +154,37 @@ if ( '@NoReboot@' -match '1|Yes|True' ) {
 } else {
     & $filepath
 }
+
 ```
 
-![PowerShell Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_18.png)  
+![PowerShell Script Save](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_18.webp)  
 
 #### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row](../../../static/img/Windows-11-Installer-(Beta)/image_19.png)  
+![Add Row](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_19.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Windows-11-Installer-(Beta)/image_14.png)  
+![Blank Function](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_14.webp)  
 
 Search and select the `Script Log` function.  
-![Select Script Log](../../../static/img/Windows-11-Installer-(Beta)/image_20.png)  
-![Script Log](../../../static/img/Windows-11-Installer-(Beta)/image_21.png)  
+![Select Script Log](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_20.webp)  
+![Script Log](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_21.webp)  
 
 The following function will pop up on the screen:  
-![Script Log Blank](../../../static/img/Windows-11-Installer-(Beta)/image_22.png)  
+![Script Log Blank](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_22.webp)  
 
 In the script log message, simply type `%output%` and click the `Save` button  
-![Script Log Set](../../../static/img/Windows-11-Installer-(Beta)/image_25.png)
+![Script Log Set](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_25.webp)
 
 Click the `Save` button at the top right corner of the screen to save the task.  
-![Script Save](../../../static/img/Windows-11-Installer-(Beta)/image_23.png)  
+![Script Save](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_23.webp)  
 
 Click the `Save` button at the top right corner of the screen to save the task.
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Windows-11-Installer-(Beta)/image_24.png)  
+![Completed Task](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_24.webp)  
 
 ## Deployment
 
@@ -193,5 +194,3 @@ It is suggested to run this task manually for the time being.
 
 - Script Log
 - Custom Field
-
-

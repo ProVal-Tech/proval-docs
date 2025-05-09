@@ -32,5 +32,3 @@ The dataview displays information about machines where a specific command has be
 | Command Parameter        | Parameter of the Stuck Command       |
 | Date Updated             | Start time of the command            |
 | Stuck Since (Hours)     | Duration the command has been stuck   |
-
-

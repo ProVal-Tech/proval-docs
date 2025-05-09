@@ -14,7 +14,7 @@ unlisted: false
 
 This script will set a custom property in CW Control for the matching system in the CW Control portal using the matching GUID.
 
-![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_1.png)
+![Image](../../../static/img/docs/b634da09-7507-466f-be5e-f7a8d62aacf7/image_1.webp)
 
 User properties for the Custom Property Index and the Property Value need to be set before running the script.
 
@@ -24,7 +24,7 @@ User properties for the Custom Property Index and the Property Value need to be 
 
 **Target:** Any machine with CW Control installed
 
-![Image](../../../static/img/ScreenConnect---Update-Custom-Property-RMM+,Param/image_2.png)
+![Image](../../../static/img/docs/b634da09-7507-466f-be5e-f7a8d62aacf7/image_2.webp)
 
 ## Dependencies
 
@@ -60,5 +60,3 @@ User properties for the Custom Property Index and the Property Value need to be 
 ## Output
 
 Script log messages only.
-
-

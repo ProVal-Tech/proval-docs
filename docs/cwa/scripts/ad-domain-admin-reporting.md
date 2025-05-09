@@ -18,7 +18,7 @@ The script provides auditing for members of Admin groups in Active Directory and
 
 ## Sample Run
 
-![Sample Run](../../../static/img/AD---Domain-Admin-Reporting/image_1.png)
+![Sample Run](../../../static/img/docs/c25262f7-50fa-49f1-9d3e-a6b37001f43c/image_1.webp)
 
 ## Dependencies
 
@@ -57,5 +57,3 @@ The script provides auditing for members of Admin groups in Active Directory and
 - Script log
 - Script state
 - Ticket (optional)
-
-

@@ -33,5 +33,3 @@ None
 ## Target
 
 - Managed 24x7 | 8x5 Workstations
-
-

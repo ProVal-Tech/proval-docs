@@ -12,7 +12,13 @@ unlisted: false
 
 ## Summary
 
-A CWA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview.
+This is a CW Automate implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). It manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
+
+**PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
+
+<span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
+
+**Note:** Data fetched by the script using the `ListBloatware` script can be viewed in the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview.
 
 ## File Hash
 
@@ -31,19 +37,19 @@ A CWA implementation of the agnostic script [Remove-PUA](/docs/fda5f79b-3e83-456
 ## Sample Run
 
 To fetch the list of installed bloatware into the [Bloatware Audit](/docs/80011568-0974-4dee-b011-f6cd58384061) dataview:  
-![Sample Run 1](../../../static/img/Remove---PUA/image_1.png)
+![Sample Run 1](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_1.webp)
 
 To fetch the list of installed bloatware and email it to the user running the script:  
-![Sample Run 2](../../../static/img/Remove---PUA/image_2.png)
+![Sample Run 2](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_2.webp)
 
 To remove specific bloatware `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
-![Sample Run 3](../../../static/img/Remove---PUA/image_3.png)
+![Sample Run 3](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_3.webp)
 
 To remove all installed bloatware supported by the script:  
-![Sample Run 4](../../../static/img/Remove---PUA/image_4.png)
+![Sample Run 4](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_4.webp)
 
 To remove all installed bloatware supported by the script except `Microsoft.BingNews`, `Microsoft.BingWeather`, and `Microsoft.People`:  
-![Sample Run 6](../../../static/img/Remove---PUA/image_6.png)
+![Sample Run 6](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_6.webp)
 
 ## Dependencies
 
@@ -65,10 +71,10 @@ To remove all installed bloatware supported by the script except `Microsoft.Bing
 The script is designed to send the list of installed bloatware to the user running the script if the `ListBloatware` parameter is set to `2`.
 
 **Sample Email:**  
-![Sample Email](../../../static/img/Remove---PUA/image_7.png)
+![Sample Email](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_7.webp)
 
 **Sample CSV File:**  
-![Sample CSV](../../../static/img/Remove---PUA/image_8.png)
+![Sample CSV](../../../static/img/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf/image_8.webp)
 
 ## Output
 

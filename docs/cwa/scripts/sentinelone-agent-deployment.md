@@ -16,11 +16,11 @@ This document describes how to deploy the SentinelOne agent with an agent token 
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/SentinelOne-Agent-Deployment/image_1.png)
+![Sample Run 1](../../../static/img/docs/eacca668-9959-4317-81d7-ee037837139c/image_1.webp)
 
 - Running in this manner without a token will result in the script attempting to use the client-level token `edf` value. If this is not set, it will grab the System property token value to process the request.
 
-![Sample Run 2](../../../static/img/SentinelOne-Agent-Deployment/image_2.png)
+![Sample Run 2](../../../static/img/docs/eacca668-9959-4317-81d7-ee037837139c/image_2.webp)
 
 - Adding a token to the Token parameter will override all client-level tokens and global property tokens, using the provided token as the means to process the request.
 
@@ -46,15 +46,15 @@ This document describes how to deploy the SentinelOne agent with an agent token 
 
 Client level tokens can be set in the following client `edf` location:
 
-![Client EDF Location](../../../static/img/SentinelOne-Agent-Deployment/image_3.png)
+![Client EDF Location](../../../static/img/docs/eacca668-9959-4317-81d7-ee037837139c/image_3.webp)
 
 ### Exclusions
 
 Exclusions can be set in the following locations:
 
-![Exclusion Location 1](../../../static/img/SentinelOne-Agent-Deployment/image_4.png)
+![Exclusion Location 1](../../../static/img/docs/eacca668-9959-4317-81d7-ee037837139c/image_4.webp)
 
-![Exclusion Location 2](../../../static/img/SentinelOne-Agent-Deployment/image_5.png)
+![Exclusion Location 2](../../../static/img/docs/eacca668-9959-4317-81d7-ee037837139c/image_5.webp)
 
 ## Variables
 
@@ -87,5 +87,3 @@ Exclusions can be set in the following locations:
 ## Output
 
 - Script log
-
-

@@ -30,5 +30,3 @@ Write how to implement this solution. Is there any manual configuration that nee
 ## FAQ
 
 
-
-

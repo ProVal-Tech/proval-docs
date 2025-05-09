@@ -34,5 +34,3 @@ This document stores information about the redirection of Desktop, Documents, an
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
 
-
-

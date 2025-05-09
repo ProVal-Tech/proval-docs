@@ -28,7 +28,7 @@ This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-b
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Weak-Passwords---AD-Test/image_1.png)
+![Sample Run](../../../static/img/docs/cf22292d-e874-47ee-9bd1-5ec79c5f3724/image_1.webp)
 
 ## Dependencies
 
@@ -59,5 +59,3 @@ This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-b
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
-
-

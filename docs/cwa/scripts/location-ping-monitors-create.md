@@ -87,13 +87,11 @@ This document details the procedure for setting up Remote Monitors for Location 
 `Result: %RESULT%`
 
 **Sample Remote Monitor:**
-![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_1.png)
-![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_2.png)
-![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_3.png)
-![Sample Remote Monitor](../../../static/img/Location-Ping-Monitors---Create/image_4.png)
+![Sample Remote Monitor](../../../static/img/docs/c9c8a58e-fd25-4596-822c-b6847c782e9c/image_1.webp)
+![Sample Remote Monitor](../../../static/img/docs/c9c8a58e-fd25-4596-822c-b6847c782e9c/image_2.webp)
+![Sample Remote Monitor](../../../static/img/docs/c9c8a58e-fd25-4596-822c-b6847c782e9c/image_3.webp)
+![Sample Remote Monitor](../../../static/img/docs/c9c8a58e-fd25-4596-822c-b6847c782e9c/image_4.webp)
 
 ## Output
 
 - Remote Monitors
-
-
