@@ -145,10 +145,10 @@ This screen will appear.
 ### Provider
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `Provider` in the `Parameter Name` field.  
 - Select `Text String` from the `Parameter Type` dropdown menu.  
@@ -156,15 +156,13 @@ This screen will appear.
 - Set `Microsoft Enhanced RSA and AES Cryptographic Provider` in the `Value` field.  
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_16.png)
-
 ### KeyExportPolicy
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `KeyExportPolicy` in the `Parameter Name` field.  
 - Select `Text String` from the `Parameter Type` dropdown menu.  
@@ -177,18 +175,16 @@ This screen will appear.
 ### KeyUsage
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `KeyUsage` in the `Parameter Name` field.  
 - Select `Text String` from the `Parameter Type` dropdown menu.  
 - Enable the `Default Value` button.  
 - Set `None` in the `Value` field.  
 - Click the `Save` button.
-
-![Save Parameter](../../../static/img/Import-LMCertificate/image_18.png)
 
 ### KeyAlgorithm
 
@@ -197,7 +193,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 This
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `KeyAlgorithm` in the `Parameter Name` field.  
 - Select `Text String` from the `Parameter Type` dropdown menu.  
@@ -205,24 +201,15 @@ This screen will appear.
 - Set `RSA` in the `Value` field.  
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_19.png)
-
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Image](../../../static/img/Import-LMCertificate/image_20.png)
 
-A blank function will appear.  
-![Image](../../../static/img/Import-LMCertificate/image_21.png)
+A blank function will appear.
 
 ### Row 1 Function: PowerShell Script
 
-Search and select the `PowerShell Script` function.  
-![Image](../../../static/img/Import-LMCertificate/image_22.png)  
-![Image](../../../static/img/Import-LMCertificate/image_23.png)  
-
-The following function will pop up on the screen:  
-![Image](../../../static/img/Import-LMCertificate/image_24.png)
+Search and select the `PowerShell Script` function.
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -336,32 +323,18 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Image](../../../static/img/Import-LMCertificate/image_25.png)
-
 ### Row 2 Function: Script Log
 
-Add a new row by clicking the `Add Row` button.  
-![Image](../../../static/img/Import-LMCertificate/image_26.png)
+Add a new row by clicking the `Add Row` button.
 
 A blank function will appear.  
-![Image](../../../static/img/Import-LMCertificate/image_27.png)  
+
 Search and select the `Script Log` function.  
-![Image](../../../static/img/Import-LMCertificate/image_28.png)  
 
-The following function will pop up on the screen:  
-![Image](../../../static/img/Import-LMCertificate/image_29.png)
+In the script log message, simply type `%Output%` and click the `Save` button
 
-In the script log message, simply type `%Output%` and click the `Save` button  
-![Image](../../../static/img/Import-LMCertificate/image_30.png)
-
-Click the `Save` button at the top-right corner of the screen to save the script.  
-![Image](../../../static/img/Import-LMCertificate/image_31.png)
-
-## Completed Task
-
-![Image](../../../static/img/Import-LMCertificate/image_32.png)
+Click the `Save` button at the top-right corner of the screen to save the script.
 
 ## Output
 
-- Script Log  
-    ![Image](../../../static/img/Import-LMCertificate/image_17.png)
+- Script Log

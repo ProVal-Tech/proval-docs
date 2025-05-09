@@ -139,9 +139,7 @@ elseif ($os.Caption -like "*Windows 11*") {
 else {
     return 'The operating system is not a Windows workstations.'
 }
-```  
-
-![Row 4 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_17.png)  
+```
 
 ### Row 5: Function: Script Log
 
@@ -376,8 +374,6 @@ if (!(Test-Path -Path $PS1Path)) {
 #endregion
 ```  
 
-![Row 9 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_38.png)  
-
 ### Row 10: Function: Script Log
 
 ![Row 10 Function](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_9.webp)  
@@ -406,9 +402,7 @@ if (Test-Path $logFilePath) {
 else {
     return 'Failure'
 }
-```  
-
-![Row 11 Function 2](../../../static/img/CW-RMM-Script---BitLocker-Initialize-C-Volume/image_39.png)  
+```   
 
 ### Row 12: Function: Script Log
 

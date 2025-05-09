@@ -63,8 +63,6 @@ This will bring up the PowerShell Editor. Paste the PowerShell into the PowerShe
 return "$(if($PSVersionTable.PSVersion.Major -lt 5) {'Failure'} else {'Success'}): $($PSVersionTable.PSVersion)"
 ```
 
-![Image6](../../../static/img/PowerShell-Version-Information/image_6.png)  
-
 #### Row 2 function: Script Log
 
 ![Image7](../../../static/img/docs/a8419e91-9e07-4f16-be4b-769c78f86f1b/image_7.webp)  

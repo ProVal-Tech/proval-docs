@@ -84,8 +84,6 @@ else {
 }
 ```
 
-![PowerShell Script 2](../../../static/img/Disable-Windows-OptionalAutomatic-Updates/image_9.png)  
-
 ### Row 3: Function: Script Log
 
 ### Output

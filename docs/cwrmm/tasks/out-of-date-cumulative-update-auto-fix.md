@@ -498,8 +498,7 @@ Type `Initiating the reboot pending prompt solution on the machine` in the `Inpu
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_88.png)
 
-A blank function will appear.  
-![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_89.png)
+A blank function will appear.
 
 Search and select `Set Custom Field` Function.  
 ![Image](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_90.png)  

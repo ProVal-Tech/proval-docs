@@ -209,7 +209,6 @@ Limit this step to `Mac OS` only.
 
 ### Row 7: Function: Script Log
 
-![Script Log Image](../../../static/img/Threatlocker-Deployment/image_20.png)  
 In the script log message, simply type `%output%` so that the script will send the results of the bash script above to the output on the Automation tab for the target device.  
 ![Script Log Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_20.webp)
 
