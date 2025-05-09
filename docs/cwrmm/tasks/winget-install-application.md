@@ -31,227 +31,166 @@ To get the PackageId and source, you can search in cmd using **"winget search ap
 
 ## Dependencies
 
-[Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+None. This script can be run on any Windows device.
 
-## User Parameters
+## Create Script
 
-| Name | Example | Accepted Values | Required | Default | Type | Description |
-| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| PackageId | `AgileBits.1Password` | | Yes |  | Text String | winget application ID |
-| Source | `winget` | `winget`, `msstore` | Yes | | Text String | Specifies winget or msstore as the source for package install |
-| OptionalParameter | `--Scope machine --Override "/qn /norestart MANAGED_UPDATE=1"` | | No | | Text String | Specifies option parameters to deploy the application |
+To implement this script, please create a new PowerShell-style script in the system.
 
-## Task Creation
+![Winget Install Application](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_1.webp)
 
-### Script Details
+![Description](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_2.webp)
 
-#### Step 1
+**Name:** Winget Install Application  
+**Description:** Attempts to install an application via Winget  
+**Parameter:**  
+ID = Winget application ID (Example: Google.Chrome)  
+To get the ID, you can search in the command prompt using `winget search appname` or by browsing to [winget.run](https://winget.run)  
+**Category:** Custom
 
-Navigate to `Automation` ➞ `Tasks`  
-![step1](../../../static/img/cw-rmm-tasks-common-screenshots/step1.png)
+![Category](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_3.webp)
 
-#### Step 2
+### Parameter
 
-Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
-![step2](../../../static/img/cw-rmm-tasks-common-screenshots/step2.png)
+![Parameter](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_4.webp)
 
-The `New Script` page will appear on clicking the `Script Editor` button:  
-![step3](../../../static/img/cw-rmm-tasks-common-screenshots/step3.png)
+- **Parameter Name:** id  
+- **Required Field:** Selected  
+- **Parameter Type:** Text String  
 
-#### Step 3
+### Script
 
-Fill in the following details in the `Description` section:  
+#### Row 1 Function: Script Log
 
-**Name:** `Winget Install Application`  
-**Description:**
+![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.webp)
 
-```PlainText
-Attempts to install or update an application via Winget
-Parameter:
-PackageId = winget application ID (Example: Google.Chrome)
-Source could be either 'winget', 'msstore'
-To get the PackageId and source, you can search in cmd using "winget search appname" or by browsing to winget.run
+Input the following:
+
+![Input](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_6.webp)
+
+#### Row 2 Function: PowerShell Script
+
+![PowerShell Script](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_7.webp)
+
+Paste in the following PowerShell script and set the expected time of script execution to 600 seconds.
+
+```
+<# 
+.SYNOPSIS 
+Uses the PowerShell wrapper for WinGet to install an application 
+.OUTPUTS 
+Install-@id@-log.txt 
+Install-@id@-error.txt 
+.NOTES 
+Script will check if WinGet is installed and attempt to install if not present. 
+Can be run as SYSTEM. 
+#> 
+
+### Bootstrap ### 
+if (-not $bootstrapLoaded) { 
+    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072) 
+    Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://file.provaltech.com/repo/script/Bootstrap.ps1') 
+    Set-Environment 
+} else { 
+    Write-Log -Text 'Bootstrap already loaded.' -Type INIT 
+} 
+$ProgressPreference = 'SilentlyContinue' 
+
+### Process ### 
+$InformationPreference = 'continue' 
+
+Write-Log -Text 'Checking prerequisites...' -Type Log 
+# Get the latest version of WinGet from GitHub 
+$wingetMsixPath = Join-Path -Path $env:TEMP -ChildPath 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' 
+Invoke-RestMethod -Uri 'https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile $wingetMsixPath 
+if (!(Get-Module '7ZipArchiveDsc' -ErrorAction SilentlyContinue)) { 
+    Install-PackageProvider -Name NuGet -Force | Out-Null 
+    Set-PSRepository -Name PSGallery -InstallationPolicy Trusted 
+    Install-Module -Name 7ZipArchiveDsc 
+} 
+Import-Module 7ZipArchiveDsc 
+$wingetWorkingPath = "$env:ProgramData/_automation/winget" 
+New-Item -Type Directory -Path $wingetWorkingPath -ErrorAction SilentlyContinue 
+Expand-7ZipArchive -Path $wingetMsixPath -Destination $wingetWorkingPath 
+$wingetParentPath = "$wingetWorkingPath/app" 
+$wingetPath = "$wingetParentPath/winget.exe" 
+if ([Environment]::Is64BitOperatingSystem) { 
+    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x64.msix" -Destination $wingetParentPath 
+} else { 
+    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x86.msix" -Destination $wingetParentPath 
+} 
+
+# Install VCLibs if required 
+if (!(Get-ProvisionedAppPackage -Online | Where-Object { $_.DisplayName -match 'uwpdesktop' })) { 
+    Write-Log -Text 'Installing VCLibs dependency.' -Type LOG 
+    $vclib = Join-Path -Path $env:TEMP -ChildPath 'Microsoft.VCLibs.x64.14.00.Desktop.appx' 
+    Invoke-RestMethod -Uri 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx' -OutFile $vclib -ErrorAction Stop 
+    DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$vclib /SkipLicense 
+    Remove-Item -Path $vclib -Force 
+} 
+
+# Check to ensure redists are present on the machine 
+$Visual2019 = 'Microsoft Visual C++ 2015-2019 Redistributable*' 
+$Visual2022 = 'Microsoft Visual C++ 2015-2022 Redistributable*' 
+$path = Get-Item @(
+    'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/*',
+    'HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall/*'
+) | Where-Object { $_.GetValue('DisplayName') -like $Visual2019 -or $_.GetValue('DisplayName') -like $Visual2022 } 
+if (!($path)) { 
+    try { 
+        if ([System.Environment]::Is64BitOperatingSystem) { 
+            $VCRedistTarget = 'VC_redist.x64.exe' 
+        } else { 
+            $VCRedistTarget = 'VC_redist.x86.exe' 
+        } 
+        Write-Log -Text "Downloading $VCRedistTarget..." -Type Log 
+        $SourceURL = "https://aka.ms/vs/17/release/$VCRedistTarget" 
+        $ProgressPreference = 'SilentlyContinue' 
+        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP/$VCRedistTarget" 
+        Write-Log -Text "Installing $VCRedistTarget..." -Type LOG 
+        Start-Process -FilePath "$env:TEMP/$VCRedistTarget" -Args '/quiet /norestart' -Wait 
+        Remove-Item "$env:TEMP/$VCRedistTarget" -ErrorAction SilentlyContinue 
+        Write-Log -Text 'MS Visual C++ 2015-2022 installed successfully' -Type LOG 
+    } catch { 
+        Write-Log -Text 'MS Visual C++ 2015-2022 installation failed.' -Type LOG 
+    } 
+} else { 
+    Write-Log -Text 'Prerequisites checked. OK' -Type LOG 
+} 
+# Print out user to log for debug 
+Write-Log -Text "Running as $(whoami)" -Type LOG 
+
+# If we couldn't find winget, fail and throw since we already tried installing 
+if (!(Test-Path -Path $wingetPath)) { 
+    Write-Log -Text 'Unable to install winget' -Type ERROR 
+    throw 'Exception - Unable to install WinGet' 
+} else { 
+    Write-Log -Text "Winget found at '$wingetPath'." 
+    & $wingetPath list --accept-source-agreements | Out-Null 
+} 
+
+Write-Log -Text 'Installing @id@.' -Type LOG 
+& $wingetPath install --accept-package-agreements -e --id @id@ 
 ```
 
-**Category:** `Application`
+![Final Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_8.webp)
 
-![Image5](../../../static/img/cwrmm-task-winget-install-application/image5.png)
+#### Row 3 Function: Script Log
 
-### Parameters
+![Script Log](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_5.webp)
 
-#### **PackageId**
+In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addparameter.png)
+![Output](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_9.webp)
 
-The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addnewscriptparameter.png)
+The final task should look like the screenshot below.
 
-Configure the parameter as described below:  
-**Parameter Name:** `PackageId`  
-**Required Field:** `True`  
-**Parameter Type:** `Text String`  
-**Default Value:** `False`  
+![Final Task](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image_10.webp)
 
-Click the `Save` button to add the parameter.  
-![Image6](../../../static/img/cwrmm-task-winget-install-application/image6.png)
+## Script Deployment
 
-Read the message that will appear after clicking the `Save` button and click the `Confirm` button to save the changes.  
-![Image7](../../../static/img/cwrmm-task-winget-install-application/image7.png)
-
-#### **Source**
-
-Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addparameter.png)
-
-The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addnewscriptparameter.png)
-
-Configure the parameter as described below:  
-**Parameter Name:** `Source`  
-**Required Field:** `True`  
-**Parameter Type:** `Text String`  
-**Default Value:** `False`  
-
-Click the `Save` button to add the parameter.  
-![Image8](../../../static/img/cwrmm-task-winget-install-application/image8.png)
-
-Read the message that will appear after clicking the `Save` button and click the `Confirm` button to save the changes.  
-![Image7](../../../static/img/cwrmm-task-winget-install-application/image7.png)
-
-#### **OptionalParameter**
-
-Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addparameter.png)
-
-The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/cw-rmm-tasks-common-screenshots/addnewscriptparameter.png)
-
-Configure the parameter as described below:  
-**Parameter Name:** `OptionalParameter`  
-**Required Field:** `False`  
-**Parameter Type:** `Text String`  
-**Default Value:** `False`  
-
-Click the `Save` button to add the parameter.  
-![Image9](../../../static/img/cwrmm-task-winget-install-application/image9.png)
-
-Read the message that will appear after clicking the `Save` button and click the `Confirm` button to save the changes.  
-![Image7](../../../static/img/cwrmm-task-winget-install-application/image7.png)
-
-### Script Editor
-
-Click the `Add Row` button in the `Script Editor` section to start creating the script  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
-
-A blank function will appear:  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
-
-#### **Row 1 Function: PowerShell script**
-
-Search and select the `PowerShell Script` function.  
-![AddPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/addpowershellfunction.png)  
-![AddedPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/addedpowershellfunction.png)  
-
-The following function will pop up on the screen:  
-![BlankPowerShell](../../../static/img/cw-rmm-tasks-common-screenshots/blankpowershellfunction.png)
-
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
-
-```PowerShell
-#region parameters
-$packageId = '@PackageId@'
-$source = '@Source@'
-$optionalParameter = '@OptionalParameter@'
-
-$Parameters = @{
-    'Install' = $true
-    'AllowUpdate' = $true
-    'PackageId' = $packageId
-    'Source' = $source
-}
-
-if (-not [String]::IsNullOrEmpty($optionalParameter) -and $optionalParameter -notmatch 'OptionalParameter' ) {
-    $optionalParameter = $optionalParameter -replace '\s{1,}', ' '
-    $pattern = '("[^"]+"|\S+)'
-    $optionalParameter = ([regex]::matches($optionalParameter, $pattern)).Value
-    $Parameters.Add('OptionalParameter', $optionalParameter)
-}
-#endRegion
-#region Setup - Variables
-$ProjectName = 'Invoke-WingetProcessor'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endRegion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endRegion
-#region Execution
-if ($Parameters) {
-    Write-Information ('Parameters Used: {0}' -f ($Parameters | Out-String)) -InformationAction Continue
-    & $PS1Path @Parameters
-} else {
-    & $PS1Path
-}
-#endRegion
-#region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw ('Error Content: {0}' -f ($ErrorContent | Out-String))
-}
-$content = Get-Content -Path $LogPath
-$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
-return ('Log Content: {0}' -f ($logContent | Out-String))
-#endRegion
-```
-
-![Image10](../../../static/img/cwrmm-task-winget-install-application/image10.png)
-
-#### **Row 2 Function: Script Log**
-
-Add a new row by clicking the `Add Row` button.  
-![AddRow](../../../static/img/cw-rmm-tasks-common-screenshots/addrow.png)
-
-A blank function will appear.  
-![BlankFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankfunction.png)
-
-Search and select the `Script Log` function.  
-![AddScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/addscriptlogfunction.png)
-
-The following function will pop up on the screen:  
-![BlankScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/blankscriptlogfunction.png)
-
-In the script log message, simply type `%Output%` and click the `Save` button.  
-![OutputScriptLogFunction](../../../static/img/cw-rmm-tasks-common-screenshots/outputscriptlogfunction.png)
-
-## Save Task
-
-Click the `Save` button at the top-right corner of the screen to save the script.  
-![SaveButton](../../../static/img/cw-rmm-tasks-common-screenshots/savebutton.png)
-
-## Completed Task
-
-![Image11](../../../static/img/cwrmm-task-winget-install-application/image11.png)
+The script is intended to run manually at this time.
 
 ## Output
 
-- Script Log
+- Script log

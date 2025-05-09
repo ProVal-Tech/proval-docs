@@ -23,10 +23,8 @@ The purpose of the script is to uninstall any version of Driver Booster from the
 
 ## Sample Run
 
-![Sample Run](../../../static/img/SWM---Software-Install---Driver-Booster-Uninstaller/image_1.png)
+![Sample Run](../../../static/img/docs/9f3efadf-4775-454b-8e56-6b8c5e73ee07/image_1.webp)
 
 ## Output
 
 - Script Logs
-
-

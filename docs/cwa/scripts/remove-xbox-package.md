@@ -18,7 +18,7 @@ This script will remove all Xbox packages, including the Xbox Game Bar, from the
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Remove-Xbox-Package/image_1.png)
+![Sample Run](../../../static/img/docs/244750a4-5402-42e9-8436-641adbd91f8c/image_1.webp)
 
 ## Process
 
@@ -28,5 +28,3 @@ This script will remove all Xbox packages, including the Xbox Game Bar, from the
 ## Output
 
 - Script log
-
-

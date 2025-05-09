@@ -24,11 +24,11 @@ There are two device groups related to the Windows 10 Upgrade Assistance solutio
 
 There are two device groups for this solution. To create device groups, please navigate to **Devices > Device Groups**.
 
-**![Add Dynamic Group](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_1.png)**
+**![Add Dynamic Group](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_1.webp)**
 
 Select **Add > Dynamic Group**.
 
-![Dynamic Group](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_2.png)
+![Dynamic Group](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_2.webp)
 
 Please repeat the above steps for each device group.
 
@@ -36,11 +36,11 @@ Please repeat the above steps for each device group.
 
 ### Device Group Name: Windows 10 - Build Up to Date
 
-![Windows 10 - Build Up to Date](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_3.png)
+![Windows 10 - Build Up to Date](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_3.webp)
 
 **Description:** Machines that are up to the latest Windows 10 feature build.  
 **Criteria:**  
-![Criteria](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_4.png)
+![Criteria](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_4.webp)
 
 When adding criteria, please search for the **OS Version**.  
 **Equal:** 10.0.19045  
@@ -57,11 +57,11 @@ This group holds all workstations that are up to the latest feature build.
 
 ### Device Group Name: Windows 10 - Build Out of Date
 
-![Windows 10 - Build Out of Date](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_5.png)
+![Windows 10 - Build Out of Date](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_5.webp)
 
 **Description:** Machines that are not up to the latest Windows 10 feature build.  
 **Criteria:**  
-![Criteria](../../../static/img/Windows-10---Build-Out-of-DateBuild-Up-to-Date/image_6.png)
+![Criteria](../../../static/img/docs/1b2c0555-1eea-4816-bbfc-bca1e29c9d5c/image_6.webp)
 
 When adding criteria, please search for the **OS Version**.  
 **Not Equal:** 10.0.19045  

@@ -27,5 +27,3 @@ Describe how to implement this solution. Is there any manual configuration that 
 ## FAQ
 
 <!-- Add frequently asked questions here -->
-
-

@@ -28,5 +28,3 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
-
-

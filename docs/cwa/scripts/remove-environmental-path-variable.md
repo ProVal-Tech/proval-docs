@@ -18,11 +18,11 @@ This document will remove a requested Windows path from the environmental path v
 
 - To remove a user-scoped environmental path variable item.
 
-![Sample Run 1](../../../static/img/Remove-Environmental-Path-Variable/image_1.png)
+![Sample Run 1](../../../static/img/docs/6d78f2c5-5a2d-4806-8d48-ac821935f681/image_1.webp)
 
 - To remove multiple machine-scoped environmental path variable items.
 
-![Sample Run 2](../../../static/img/Remove-Environmental-Path-Variable/image_2.png)
+![Sample Run 2](../../../static/img/docs/6d78f2c5-5a2d-4806-8d48-ac821935f681/image_2.webp)
 
 **Note:** Scope is not mandatory; if left blank, the scope will default to the machine-scoped variable.
 
@@ -48,5 +48,3 @@ Please see the agnostic content document [EPM - Windows Configuration - Agnostic
 ## Output
 
 - Script log
-
-

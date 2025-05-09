@@ -25,29 +25,29 @@ This is the RMM Implementation of Lock Stolen System Script. This task is used t
 
 ## Task Creation
 Create a new `Script Editor` style script in the system to implement this task.  
-![Create Script](../../../static/img/Set---DisplayScaling/image_3.png)  
-![Script Creation](../../../static/img/Set---DisplayScaling/image_4.png)
+![Create Script](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_3.webp)  
+![Script Creation](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_4.webp)
 
 **Name:** Lock Stolen System
 **Description:** This task is used to track and lock down stolen systems
 **Category:** Custom  
-![Category](../../../static/img/CW-RMM-Lock-Stolen-System/image4.png)
+![Category](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image4.webp)
 
 ## Parameters
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_4.png)
+![Add Parameter](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_4.webp)
 
 This screen will appear.
 
-![Parameter Screen](../../../static/img/DNS---Aging-and-Scavenging---Configure-Intervals/image_5.png)
+![Parameter Screen](../../../static/img/docs/34f898bc-50ac-4808-bf0c-46286eb27e60/image_5.webp)
 
 - Set `BitlockerPassword` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Set `P@$$word123` as Default Value.
 - Click the `Save` button.  
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Parameter1](../../../static/img/CW-RMM-Lock-Stolen-System/image17.png)
+![Parameter1](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image17.webp)
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -56,22 +56,22 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 - Set `This system been marked as lost, please contact support@provaltech.com` as Default Value.
 - Click the `Save` button.
 - It will ask for confirmation to proceed. Click the `Confirm` button to create the parameter.  
-![Parameter2](../../../static/img/CW-RMM-Lock-Stolen-System/image18.png)
+![Parameter2](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image18.webp)
 
 All the parameters will look like as shown below:  
-![Parameters](../../../static/img/CW-RMM-Lock-Stolen-System/image19.png)
+![Parameters](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image19.webp)
 
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a logic. You can do this by clicking the `Add logic` button at the bottom of the script page.  
-![Add Logic](../../../static/img/CW-RMM-Lock-Stolen-System/image5.png)
+![Add Logic](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image5.webp)
 
 ## Step 1 Logic: If/Then
 
 Select IF/Then Logic from the Add Logic dropdown menu.
 
-![IF/Then](../../../static/img/CW-RMM-Lock-Stolen-System/image6.png)
+![IF/Then](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image6.webp)
 
 ### Row 1a Condition: Get Custom Field
 
@@ -79,7 +79,7 @@ Select IF/Then Logic from the Add Logic dropdown menu.
 - Search and select `Mark System As Stolen` Custom Field from the dropdown
 - Select `Equals` as parameter
 - Set `False` in the parameter
-![image7](../../../static/img/CW-RMM-Lock-Stolen-System/image7.png)
+![image7](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image7.webp)
 
 ### Row 1b Function: Script Exit
 
@@ -87,19 +87,19 @@ Select IF/Then Logic from the Add Logic dropdown menu.
 - Search and select the Script Exit function.  
 - In the script exit message, simply type
 
-`Machine is not marked as Stolen. Flag the "Mark System as Stolen" custom field to run this task.`  
-![image8](../../../static/img/CW-RMM-Lock-Stolen-System/image8.png)  
-![image9](../../../static/img/CW-RMM-Lock-Stolen-System/image9.png)
+`Machine is not marked as Stolen. Flag the "Mark System as Stolen" custom field to run this task.`
+![image8](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image8.webp)
+![image9](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image9.webp)
 
 ## Row 2 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Function Image](../../../static/img/Set-NetAdapterDNS/image_15.png)
+![PowerShell Script Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_15.webp)
 
 The following function will pop up on the screen:
 
-![Function Popup Image](../../../static/img/Set-NetAdapterDNS/image_16.png)
+![Function Popup Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_16.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -135,14 +135,14 @@ Write-Output $formattedOutput
 - Set `%Output%` as Value  
 - Hit `Save` to save the changes
 
-![image10](../../../static/img/CW-RMM-Lock-Stolen-System/image10.png)  
-![image11](../../../static/img/CW-RMM-Lock-Stolen-System/image11.png)
+![image10](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image10.webp)
+![image11](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image11.webp)
 
 ## Row 4 Function: Script Log
 
 - Add another function `Script Log` in the IF section.  
 - In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
+![Script Log](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_15.webp)
 
 ## Row 5 Function: PowerShell Script
 
@@ -164,7 +164,7 @@ Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPIN
 ## Row 6 Function: Set Custom Field
 
 - Search and select the `Set Custom Field` function.  
-![image12](../../../static/img/CW-RMM-Lock-Stolen-System/image12.png)
+![image12](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image12.webp)
 
 - Search and select the `Current Location and IP Details` Custom Field.  
 - Type `%output%` in the `Value` box and click the Save button.
@@ -172,17 +172,15 @@ Write-Host "IPINFOIP=$($returnData['ip'])|IPINFOCity=$($returnData['city'])|IPIN
 ## Step 7 Logic: If/Then/Else
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
-![image13](../../../static/img/CW-RMM-Lock-Stolen-System/image13.png)
+![image13](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image13.webp)
 
 ## Row 7a: Get Custom Field
-
-In the If section, perform the below steps  
-
-- Replace `Output` with `Custom field`  
-- Search and select `System Lockdown` Custom Field from the dropdown  
-- Select `Equals` as parameter  
-- Set `True` in the parameter  
-![image14](../../../static/img/CW-RMM-Lock-Stolen-System/image14.png)
+In the If section, perform the below steps
+- Replace `Output` with `Custom field`
+- Search and select `System Lockdown` Custom Field from the dropdown
+- Select `Equals` as parameter
+- Set `True` in the parameter
+![image14](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image14.webp)
 
 ## Row 7b Function: PowerShell Script
 
@@ -252,7 +250,7 @@ if ($FinalStatus -eq 'Off') {
 
 - Add another function `Script Log` in the IF section.  
 - In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Script Log](../../../static/img/Set---DisplayScaling/image_15.png)
+![Script Log](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_15.webp)
 
 ## Row 7d Function: Create Ticket
 
@@ -271,11 +269,10 @@ if ($FinalStatus -eq 'Off') {
 
     For Current Location and IP details. Check Custom Field `Current Location and IP details` on the machine.
 
-    The script is using the shutdown command so the machine will become unusable without the bitlocker key.
-    ```
-
-- Set `Emergency` as Priority.  
-![image15](../../../static/img/CW-RMM-Lock-Stolen-System/image15.png)
+The script is using the shutdown command so the machine will become unusable without the bitlocker key.
+```
+- Set `Emergency` as Priority.
+![image15](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image15.webp)
 
 ## Row 6e Function: Create Ticket
 
@@ -296,15 +293,15 @@ The script is using the shutdown command to turn off the machine.
 
 - Set `Emergency` as Priority.
 
-![image25](../../../static/img/CW-RMM-Lock-Stolen-System/image25.png)
+![image25](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image25.webp)
 
 ### Row 8 Function: CMD Script
 
 Search and select the `Command Prompt Script` function.  
-![CMD Function](../../../static/img/CWRMM-Get-AutopilotHash/image2.png)
+![CMD Function](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image2.webp)
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/CWRMM-Get-AutopilotHash/image3.png)
+![Function Popup](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image3.webp)
 
 Paste in the following CMD script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
@@ -313,19 +310,18 @@ shutdown /f /s /t 00
 ```
 
 ## Completed Task
-
-![image16](../../../static/img/CW-RMM-Lock-Stolen-System/image16.png)
+![image16](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image16.webp)
 
 ## Script Deployment
 
 This task has to be scheduled on the [Stolen System](/docs/c5be497c-f3b8-4fd5-8c9d-70b709aef5fb) group for auto deployment. The script can also be run manually if required.
 
-Go to `Automations` > `Tasks`.  
-Search for Lock Stolen System task.  
-Then click on Schedule and provide the parameter details as necessary for the script completion.  
-![image24](../../../static/img/CW-RMM-Lock-Stolen-System/image24.png)
+Go to Automations > Tasks.
+Search for Lock Stolen System task.
+Then click on Schedule and provide the parameter details as necessary for the script completion.
+![image24](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image24.webp)
+
 
 ## Output
-
-- Script Logs  
+- Script Logs
 - Tickets

@@ -20,7 +20,7 @@ It is an Automate implementation of the agnostic script [EPM - Disk - Agnostic -
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Crystal-Disk-Info-Report/image_2.png)
+![Sample Run](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_2.webp)
 
 The primary usage of the script is to be executed by the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) monitor set.
 
@@ -69,7 +69,7 @@ The primary usage of the script is to be executed by the [EPM - Disk - Internal 
 | Disks to Exclude From Disk Health Alerting       | Computer | Text  | 50026B73801F2CBB,50026B73801F2CBC               | Comma-separated list of the Serial Numbers of the Disk(s) to exclude from alerting.                                                                                                                                           |
 | Crystal Disk - Reallocated Sectors               | Computer | Text  | 70                                              | Threshold for the number of reallocated sectors to mark an HDD as `caution` (not applicable to SSDs). This EDF can be used to overwrite the value stored in the Global Variable `ReallocatedSector`. The default threshold is 50. |
 
-![Extra Data Fields](../../../static/img/Crystal-Disk-Info-Report/image_3.png)
+![Extra Data Fields](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_3.webp)
 
 ## System Properties
 
@@ -190,13 +190,13 @@ To exclude this disk from disk health alerting: Open the computer in Automate, n
 **Sample Ticket:**
 
 **Ticket Summary and Subject:**  
-![Sample Ticket Summary](../../../static/img/Crystal-Disk-Info-Report/image_4.png)
+![Sample Ticket Summary](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_4.webp)
 
 **Internal Notes/Comment:**  
-![Sample Internal Notes](../../../static/img/Crystal-Disk-Info-Report/image_5.png)
+![Sample Internal Notes](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_5.webp)
 
 Attached **`DiskInfo.txt`** File:  
-![Attached DiskInfo.txt](../../../static/img/Crystal-Disk-Info-Report/image_6.png)
+![Attached DiskInfo.txt](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_6.webp)
 
 ## Excluding Disk(s) from Alerting
 
@@ -204,6 +204,4 @@ Attached **`DiskInfo.txt`** File:
 - Add the serial number to the computer-level EDF `Disks to Exclude From Disk Health Alerting`. Multiple serial numbers can be separated by a comma. Do not add a space after the comma.  
 
 e.g.,  
-![Example Exclusion](../../../static/img/Crystal-Disk-Info-Report/image_7.png)
-
-
+![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)

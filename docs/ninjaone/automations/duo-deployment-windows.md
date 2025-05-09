@@ -19,10 +19,10 @@ Parameters Reference: [Duo Silent Install](https://help.duo.com/s/article/1090?l
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Duo Deployment - Windows`
-![Image1](../../../static/img/ninja-one-automation-duo-deployment-windows/image1.png)
+![Image1](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
 **Run As:** `System`  
@@ -40,10 +40,10 @@ Set the required arguments and click the `Run` button to run the script.
 **DUO UAC_PROTECTMODE:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL DUO UAC_PROTECTMODE'`  
 **DUO UAC_OFFLINE:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL DUO UAC_OFFLINE'`  
 **DUO UAC_OFFLINE_ENROLL:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL DUO UAC_OFFLINE_ENROLL'`
-![Image2](../../../static/img/ninja-one-automation-duo-deployment-windows/image2.png)
+![Image2](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image2.webp)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 
@@ -84,15 +84,15 @@ Set the required arguments and click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
 
@@ -105,7 +105,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Windows`  
 **Architecture:** `All`  
 **Run As:** `System`  
-![Image4](../../../static/img/ninja-one-automation-duo-deployment-windows/image4.png)
+![Image4](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image4.webp)
 
 ## Step 4
 
@@ -546,20 +546,20 @@ End {
 }
 ```
 
-![Image5](../../../static/img/ninja-one-automation-duo-deployment-windows/image5.png)
+![Image5](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image5.webp)
 
 ## Script Variables
 
 ### DUO IKEY
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -568,18 +568,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image6](../../../static/img/ninja-one-automation-duo-deployment-windows/image6.png)
+![Image6](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image6.webp)
 
 ### DUO SKEY
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -588,18 +588,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image7](../../../static/img/ninja-one-automation-duo-deployment-windows/image7.png)
+![Image7](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image7.webp)
 
 ### DUO HKEY
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -608,18 +608,18 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image8](../../../static/img/ninja-one-automation-install-huntress-agent-windows/image8.png)
+![Image8](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image8.webp)
 
 ### DUO AUTOPUSH
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -634,18 +634,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image9](../../../static/img/ninja-one-automation-duo-deployment-windows/image9.png)
+![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image9.webp)
 
 ### DUO FAILOPEN
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -660,18 +660,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image10](../../../static/img/ninja-one-automation-duo-deployment-windows/image10.png)
+![Image10](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image10.webp)
 
 ### DUO SMARTCARD
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -686,18 +686,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image11](../../../static/img/ninja-one-automation-duo-deployment-windows/image11.png)
+![Image11](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image11.webp)
 
 ### DUO ENABLEOFFLINE
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -712,18 +712,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image12](../../../static/img/ninja-one-automation-duo-deployment-windows/image12.png)
+![Image12](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image12.webp)
 
 ### DUO RDPONLY
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -738,18 +738,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image13](../../../static/img/ninja-one-automation-duo-deployment-windows/image13.png)
+![Image13](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image13.webp)
 
 ### DUO WRAPSMARTCARD
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -764,18 +764,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image14](../../../static/img/ninja-one-automation-duo-deployment-windows/image14.png)
+![Image14](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image14.webp)
 
 ### DUO USERNAMEFORMAT
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -791,18 +791,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image15](../../../static/img/ninja-one-automation-duo-deployment-windows/image15.png)
+![Image15](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image15.webp)
 
 ### DUO UAC_PROTECTMODE
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -818,18 +818,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image16](../../../static/img/ninja-one-automation-duo-deployment-windows/image16.png)
+![Image16](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image16.webp)
 
 ### DUO UAC_OFFLINE
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -844,18 +844,18 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image17](../../../static/img/ninja-one-automation-duo-deployment-windows/image17.png)
+![Image17](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image17.webp)
 
 ### DUO UAC_OFFLINE_ENROLL
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `Drop-down` option.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/dropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/dropdownvariable.webp)
 
 The `Add Drop-down Variable` window will open.  
-![DropDown](../../../static/img/ninja-one-automations-common-screenshots/adddropdownvariable.png)
+![DropDown](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/adddropdownvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.
 
@@ -870,19 +870,19 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`  
 
-![Image18](../../../static/img/ninja-one-automation-duo-deployment-windows/image18.png)
+![Image18](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image18.webp)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![Image19](../../../static/img/ninja-one-automation-duo-deployment-windows/image19.png)
+![Image19](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image19.webp)
 
 ## Output
 

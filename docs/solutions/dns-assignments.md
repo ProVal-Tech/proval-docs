@@ -28,5 +28,3 @@ The purpose of this solution is to add to the current NON-Stack dataview [EPM - 
 2. Schedule the script to run against any target groups or endpoints.
 3. Review the data in the dataview for accuracy.
 
-
-

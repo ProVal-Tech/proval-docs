@@ -27,26 +27,24 @@ This document contains the devices where the "DUO Security Authentication Proxy"
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.  
-   ![Devices and Device Groups](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_1.png)
+   ![Devices and Device Groups](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  
-   ![Dynamic Group Button](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_2.png)  
+   ![Dynamic Group Button](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_2.webp)  
    This page will appear after clicking on the `Dynamic Group` button:  
-   ![Dynamic Group Page](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_3.png)
+   ![Dynamic Group Page](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_3.webp)
 
 3. Set the group name to `DUO Auth Proxy Deployment Failed`.  
    Description: `This contains the devices where the "DUO Security Authentication Proxy" application deployment failed due to the script "DUO Auth Proxy - Install/Update Latest Version."`  
-   ![Group Name and Description](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_4.png)
+   ![Group Name and Description](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_4.webp)
 
 4. Click the `+ Add Criteria` in the `Criteria` section of the group.  
-   ![Add Criteria](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_5.png)  
+   ![Add Criteria](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_5.webp)  
    This search box will appear.  
-   ![Search Box](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_6.png)
+   ![Search Box](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_6.webp)
 
 5. - Search and select the `Duo Auth Proxy Result` custom field from the search box.
    - Set `Failed` in the comparison condition.  
-   ![Search and Select Custom Field](../../../static/img/DUO-Auth-Proxy-Deployment-Failed/image_7.png)  
+   ![Search and Select Custom Field](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_7.webp)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
-
-
 

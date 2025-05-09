@@ -34,6 +34,4 @@ This solution contains the dataviews that are used for the detailed auditing of 
    - [Dataview - All Remote Monitor Detailed Report](/docs/180f6e36-1fc1-4d28-a4ca-409f7dd9b9c5)
 
 2. Reload the system cache:  
-   ![Reload Cache](../../static/img/Detailed-ScriptInternalRemote-Monitor-Report/image_1.png)
-
-
+   ![Reload Cache](../../static/img/docs/894ea49f-fc57-49a6-a456-165c6170431f/image_1.webp)

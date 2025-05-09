@@ -20,7 +20,7 @@ This script can be used to repair the Huntress Agent for Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Repair-Huntress-Agent-Windows/image_1.png)
+![Sample Run](../../../static/img/docs/6489855d-0391-444d-a207-dfbd76152948/image_1.webp)
 
 ## Dependencies
 
@@ -55,5 +55,3 @@ This script can be used to repair the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
-

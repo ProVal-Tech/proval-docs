@@ -37,5 +37,3 @@ The dataview is created to verify the workaround applied and the installation of
 | Information Update Time             | Run-time of the script.                                                                                                                         |
 | Last Contact                        | Last contact of the Computer.                                                                                                                   |
 
-
-

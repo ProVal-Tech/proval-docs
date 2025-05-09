@@ -16,7 +16,7 @@ This is the RMM implementation of [Microsoft Outlook - OST/PST - Audit](/docs/20
 
 ## Sample Run
 
-![Sample Run](../../../static/img/CWRMM-OSTPST--Audit/image14.png)
+![Sample Run](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image14.webp)
 
 ## Dependencies
 
@@ -25,31 +25,31 @@ This is the RMM implementation of [Microsoft Outlook - OST/PST - Audit](/docs/20
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.  
-![Create Script](../../../static/img/Set---DisplayScaling/image_3.png)  
-![Script Creation](../../../static/img/Set---DisplayScaling/image_4.png)
+![Create Script](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_3.webp)  
+![Script Creation](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_4.webp)
 
 **Name:** Microsoft Outlook - OST/PST - Audit
 **Description:** This task retrieve the file path and size details of OST and PST files from all Windows Workstations
 **Category:** Custom  
-![Category](../../../static/img/CWRMM-OSTPST--Audit/image4.png)
+![Category](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image4.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/Set---DisplayScaling/image_11.png)
+![Add Row](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_11.webp)
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Set---DisplayScaling/image_12.png)
+![Blank Function](../../../static/img/docs/09fb13cb-05b1-4515-8041-128689d933ff/image_12.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Script Function Image](../../../static/img/Set-NetAdapterDNS/image_15.png)
+![PowerShell Script Function Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_15.webp)
 
 The following function will pop up on the screen:
 
-![Function Popup Image](../../../static/img/Set-NetAdapterDNS/image_16.png)
+![Function Popup Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_16.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -66,17 +66,17 @@ if ( $files ) {
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image](../../../static/img/Set-NetAdapterDNS/image_17.png)
+![Script Log Image](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image_17.webp)
 
 ## Step 3 Logic: If/Then
 
 - Add a new `If/Then` logic from the Add Logic dropdown menu.  
-![Image 5](../../../static/img/CWRMM-OSTPST--Audit/image5.png)  
+![Image 5](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image5.webp)  
 
 ## ROW 3a Condition: Output Contains
 
 - Type `File exists` in the Value box.  
-![Image 6](../../../static/img/CWRMM-OSTPST--Audit/image6.png)
+![Image 6](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image6.webp)
 
 ## ROW 3b Function: Powershell Script
 
@@ -96,14 +96,13 @@ if ( $files ) {
     return 'File Not Found.'
 }
 ```
-
-![Image 7](../../../static/img/CWRMM-OSTPST--Audit/image7.png)
+![Image 7](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image7.webp)
 
 ## ROW 3c Function: Set Custom Field
 
 - Add a new row in the If Section by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
-![Image 8](../../../static/img/CWRMM-OSTPST--Audit/image8.png)
+![Image 8](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image8.webp)
 
 - Search and select the `Outlook Data File Paths` Custom Field.  
 - Type `%output%` in the `Value` box and click the Save button.  
@@ -126,14 +125,13 @@ if ( $files ) {
     return 'File Not Found.'
 }
 ```
-
-![Image 9](../../../static/img/CWRMM-OSTPST--Audit/image9.png)
+![Image 9](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image9.webp)
 
 ## ROW 3e Function: Set Custom Field
 
 - Add a new row in the If Section by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
-![Image 10](../../../static/img/CWRMM-OSTPST--Audit/image10.png)
+![Image 10](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image10.webp)
 
 - Search and select the `Outlook Data File Size` Custom Field.  
 - Type `%output%` in the `Value` box and click the Save button.
@@ -156,22 +154,19 @@ if ( $files ) {
     return 'File Not Found.'
 }
 ```
-
-![Image 11](../../../static/img/CWRMM-OSTPST--Audit/image11.png)
+![Image 11](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image11.webp)
 
 ## ROW 3g Function: Set Custom Field
 
 - Add a new row in the If Section by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
-![Image 12](../../../static/img/CWRMM-OSTPST--Audit/image12.png)
+![Image 12](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image12.webp)
 
 - Search and select the `Outlook Data File LWT` Custom Field.  
 - Type `%output%` in the `Value` box and click the Save button.  
 
 ## Completed Task
-
-![Image 13](../../../static/img/CWRMM-OSTPST--Audit/image13.png)
+![Image 13](../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image13.webp)
 
 ## Output
-
 - Script Logs

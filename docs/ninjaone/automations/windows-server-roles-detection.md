@@ -17,18 +17,18 @@ Retrieves installed Windows Server roles, additional services, and FSMO roles (i
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Windows Server Roles Detection`  
-![image1](../../../static/img/ninja-one-automation-windows-server-roles-detection/image1.png)
+![image1](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image1.webp)
 
 **Run As:** `System`  
 **Preset Parameter:** `Leave it untouched`  
 **Custom Field:** `cpvalRolesDetected`  
-![image2](../../../static/img/ninja-one-automation-windows-server-roles-detection/image2.png)
+![image2](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image2.webp)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 
@@ -45,15 +45,15 @@ Search and select `Windows Server Roles Detection`
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
 
@@ -66,7 +66,7 @@ Configure the `Create Script` as follows:
 **Operating System:** `Windows`  
 **Architecture:** `All`  
 **Run As:** `System`  
-![Image3](../../../static/img/ninja-one-automation-windows-server-roles-detection/image3.png)
+![Image3](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image3.webp)
 
 ### Step 4
 
@@ -201,18 +201,18 @@ begin {
 }
 ```
 
-![Image4](../../../static/img/ninja-one-automation-windows-server-roles-detection/image4.png)
+![Image4](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image4.webp)
 
 ## Script Variables
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![Image5](../../../static/img/ninja-one-automation-windows-server-roles-detection/image5.png)
+![Image5](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image5.webp)
 
 The `Add String/Text Variable` window will open.  
-![Image6](../../../static/img/ninja-one-automation-windows-server-roles-detection/image6.png)
+![Image6](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image6.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -221,21 +221,21 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `Enable`  
 **Set Default Value:** `cpvalRolesDetected`  
 
-![Image7](../../../static/img/ninja-one-automation-windows-server-roles-detection/image7.png)
+![Image7](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image7.webp)
 
 ## Saving the Automation
 
 Click the Save button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![Image8](../../../static/img/ninja-one-automation-windows-server-roles-detection/image8.png)
+![Image8](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image8.webp)
 
 ## Output
 
 - Activity Details  
-![Image9](../../../static/img/ninja-one-automation-windows-server-roles-detection/image9.png)
+![Image9](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image9.webp)

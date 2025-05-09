@@ -20,5 +20,3 @@ This role definition helps you track machines where Microsoft 365 updates are se
 |-----------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------|----------------|
 | \\\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Contains   | [http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6](http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6) | Windows        |
 
-
-

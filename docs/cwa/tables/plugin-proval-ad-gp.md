@@ -30,5 +30,3 @@ This document displays the list of audited group policies from the script @Group
 | Extension    | VARCHAR  | The parent extension type of the group policy.                                               |
 | Property     | VARCHAR  | The extension property that is being set by the group policy.                                |
 | PropertyData | TEXT     | The additional configuration data relating to the target group policy extension property.     |
-
-

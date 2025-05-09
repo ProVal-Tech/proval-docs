@@ -14,7 +14,7 @@ unlisted: false
 
 This "monitor" is used to populate the location-level service plan dropdown list in CW Automate for MSPs using custom service plan names. (see screenshot)
 
-![Screenshot](../../../static/img/Admin---Fix-Service-Plan-Dropdown-Menus/image_1.png)
+![Screenshot](../../../static/img/docs/588a3c7f-6c79-4f08-9085-cefa06b94d3b/image_1.webp)
 
 The monitor achieves this by gathering all of the service plan names under the Service Plans.Windows Workstations or Service Plans.Windows Servers and then updating the extrafield table with the names of all available service plans.
 
@@ -47,5 +47,3 @@ WHERE parentid
     IN(SELECT groupid FROM mastergroups WHERE fullname='Service Plans.Windows Servers') AND `Name` <> 'Server Roles')
 WHERE LtGuid='5ca92306-2d93-11e1-ac0f-3d76979114ae' AND ftype=2;
 ```
-
-

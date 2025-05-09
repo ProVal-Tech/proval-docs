@@ -19,5 +19,3 @@ This role is detected by agents where User Account Control is enabled.
 | Detection String                                                  | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/Microsoft/Windows/CurrentVersion/Policies/System:EnableLUA-%} | Equals     | 1      | Windows 10     |
-
-

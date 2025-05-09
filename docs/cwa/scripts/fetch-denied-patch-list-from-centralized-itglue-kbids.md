@@ -20,7 +20,7 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Fetch-Denied-Patch-List-From-Centralized-ITGLue-KBIDs/image_1.png)
+![Sample Run](../../../static/img/docs/f8e944d6-28ce-4be8-bf38-6907221544a7/image_1.webp)
 
 ## Dependencies
 
@@ -57,5 +57,3 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 For failure:  
 - Script log  
 - Email  
-
-

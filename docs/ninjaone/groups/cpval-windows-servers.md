@@ -25,27 +25,27 @@ A group designated for machines running the Windows Servers.
 ### Step 1
 
 Navigate to `Administration` > `Devices` > `Groups`  
-![Step1](../../../static/img/ninja-one-groups-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.webp)
 
 ### Step 2
 
 Locate the `Create New Group` button on the right-hand side of the screen, click on it.  
-![CreateNewGroup](../../../static/img/ninja-one-groups-common-screenshots/createnewgroup.png)
+![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.webp)
 
 ### Step 3
 
 **Condition:** `Type` `=` `Windows Server`  
 
 Search and select the `Windows Server` from the `Type` filter.  
-![Image1](../../../static/img/ninja-one-groups-cpval-windows-servers/image1.png)
+![Image1](../../../static/img/docs/c73e004e-6a9c-40e4-8e74-babb4b729256/image1.webp)
 
 ### Step 4
 
 Click the `Save group` button to save changes.  
-![SaveGroup](../../../static/img/ninja-one-groups-common-screenshots/savegroup.png)
+![SaveGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savegroup.webp)
 
 `Save device group` window will appear on the screen.  
-![SaveDeviceGroup](../../../static/img/ninja-one-groups-common-screenshots/savedevicegroup.png)
+![SaveDeviceGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/savedevicegroup.webp)
 
 ### Step 5
 
@@ -55,8 +55,8 @@ Fill in the following details and click the `Save` button to create the group.
 **Description:** `A group designated for machines running the Windows Servers.`  
 **Permission Type:** `Self (Private) - default`
 
-![Image3](../../../static/img/ninja-one-groups-cpval-windows-servers/image3.png)
+![Image3](../../../static/img/docs/c73e004e-6a9c-40e4-8e74-babb4b729256/image3.webp)
 
 ## Completed Group
 
-![Image4](../../../static/img/ninja-one-groups-cpval-windows-servers/image4.png)
+![Image4](../../../static/img/docs/c73e004e-6a9c-40e4-8e74-babb4b729256/image4.webp)

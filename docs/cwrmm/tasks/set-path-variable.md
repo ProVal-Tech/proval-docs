@@ -16,11 +16,11 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Set-Path-Variable/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_1.webp)
 
-![Sample Run Image 2](../../../static/img/Set-Path-Variable/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_2.webp)
 
-![Sample Run Image 3](../../../static/img/Set-Path-Variable/image_3.png)
+![Sample Run Image 3](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_3.webp)
 
 ## Dependencies
 
@@ -32,21 +32,21 @@ Sets the provided path(s) to the Environmental Path variable for a Path at the M
 |------|---------|----------|------|-------------|
 | Path | - 'C://Temp'  - 'C://Temp', 'C://Temp//ProgramData', 'D://Text Files' | True | Text String | Comma-separated list of the path(s) to add to the path variable. **Requirement:** <ul><li>Each path should be enclosed in single quotes.</li><li>Path should exist on the end machine.</li></ul> |
 
-![User Parameters Image](../../../static/img/Set-Path-Variable/image_4.png)
+![User Parameters Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](../../../static/img/Set-Path-Variable/image_5.png)
+![Task Creation Image 1](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_5.webp)
 
-![Task Creation Image 2](../../../static/img/Set-Path-Variable/image_6.png)
+![Task Creation Image 2](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_6.webp)
 
 **Name:** `Set Path Variable`  
 **Description:** `Sets the provided path(s) to the Environmental Path variable for a Path at the Machine scope.`  
 **Category:** `Custom`  
 
-![Task Creation Image 3](../../../static/img/Set-Path-Variable/image_7.png)
+![Task Creation Image 3](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_7.webp)
 
 ## Parameters
 
@@ -54,40 +54,40 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/Set-Path-Variable/image_8.png)
+![Add Parameter Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_8.webp)
 
 This screen will appear.
 
-![Parameter Screen Image](../../../static/img/Set-Path-Variable/image_9.png)
+![Parameter Screen Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_9.webp)
 
 - Set `Path` in the `Parameter Name` field.
 - Enable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Setup Image](../../../static/img/Set-Path-Variable/image_10.png)
+![Parameter Setup Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_10.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/Set-Path-Variable/image_11.png)
+![Add Row Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_11.webp)
 
 A blank function will appear.
 
-![Blank Function Image](../../../static/img/Set-Path-Variable/image_12.png)
+![Blank Function Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_12.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![PowerShell Function Image 1](../../../static/img/Set-Path-Variable/image_13.png)
+![PowerShell Function Image 1](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_13.webp)
 
-![PowerShell Function Image 2](../../../static/img/Set-Path-Variable/image_14.png)
+![PowerShell Function Image 2](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_14.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Popup Image](../../../static/img/Set-Path-Variable/image_15.png)
+![PowerShell Script Popup Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_15.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -146,37 +146,37 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Execution Image](../../../static/img/Set-Path-Variable/image_16.png)
+![PowerShell Script Execution Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_16.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row for Script Log Image](../../../static/img/Set-Path-Variable/image_17.png)
+![Add Row for Script Log Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_17.webp)
 
 A blank function will appear.
 
-![Blank Function for Script Log Image](../../../static/img/Set-Path-Variable/image_18.png)
+![Blank Function for Script Log Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_18.webp)
 
 Search and select the `Script Log` function.
 
-![Script Log Function Image](../../../static/img/Set-Path-Variable/image_19.png)
+![Script Log Function Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_19.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Popup Image](../../../static/img/Set-Path-Variable/image_20.png)
+![Script Log Popup Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_20.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Save Script Log Image](../../../static/img/Set-Path-Variable/image_21.png)
+![Save Script Log Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_21.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Final Save Image](../../../static/img/Set-Path-Variable/image_22.png)
+![Final Save Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_22.webp)
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Set-Path-Variable/image_23.png)
+![Completed Task Image](../../../static/img/docs/017a7a32-e501-46df-ba3c-6d1ce48d8c5a/image_23.webp)
 
 ## Output
 

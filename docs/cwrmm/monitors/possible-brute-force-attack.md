@@ -29,14 +29,14 @@ Change this value from 10 to the desired value after creating the monitor.
 ## Target
 
 [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)  
-![Image](../../../static/img/Possible-Brute-Force-Attack/image_1.png)
+![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_1.webp)
 
 ## Implementation
 
 1. From the left bar, select Endpoints → Alerts → Monitors  
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_2.png)  
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_2.webp)  
    Then click 'Create Monitor'  
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_3.png)
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_3.webp)
 
 2. Fill in the mandatory columns on the left side:
    - Name: Possible Brute Force Attack
@@ -44,9 +44,9 @@ Change this value from 10 to the desired value after creating the monitor.
    - Type: Script
    - Severity: Critical Impact Alerts
    - Family: Active Directory  
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_4.png)
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_4.webp)
 
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_5.png)  
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_5.webp)  
 
    **Conditions:**
    - **Run script on:** Schedule
@@ -141,14 +141,14 @@ Change this value from 10 to the desired value after creating the monitor.
 3. Select the target endpoints:
 
    - Click on Select Target:  
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_6.png)
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_6.webp)
 
    - Then click on Device Group and search for the word '[Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)', and select the group as shown below:  
-   ![Image](../../../static/img/Possible-Brute-Force-Attack/image_7.png)
+   ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_7.webp)
 
 ## Completed Monitor
 
-![Image](../../../static/img/Possible-Brute-Force-Attack/image_8.png)
+![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_8.webp)
 
 ## Ticketing
 
@@ -219,5 +219,3 @@ Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not avai
 For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)  
 
 Action: Please have the issue reviewed by a technician.
-```
-

@@ -48,5 +48,3 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | MacAddress           | varchar(32)   | MAC Address of the network interface                           |
 | SettingID            | varchar(64)   | Interface ID of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
-
-

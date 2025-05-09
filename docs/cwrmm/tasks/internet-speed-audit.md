@@ -16,9 +16,9 @@ This document describes how to run an internet speed test using the Ookla SpeedT
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Internet-Speed---Audit/image_5.png)
+![Sample Run 1](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_5.webp)
 
-![Sample Run 2](../../../static/img/Internet-Speed---Audit/image_6.png)
+![Sample Run 2](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_6.webp)
 
 ## Dependencies
 
@@ -28,35 +28,35 @@ This document describes how to run an internet speed test using the Ookla SpeedT
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation](../../../static/img/Internet-Speed---Audit/image_7.png)
+![Task Creation](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_7.webp)
 
-![Task Creation Step 2](../../../static/img/Internet-Speed---Audit/image_8.png)
+![Task Creation Step 2](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_8.webp)
 
 **Name:** Internet Speed - Audit  
 **Description:** Runs an internet speed test via the Ookla SpeedTest CLI application.  
 **Category:** Custom  
 
-![Task Creation Step 3](../../../static/img/Internet-Speed---Audit/image_9.png)
+![Task Creation Step 3](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_9.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Internet-Speed---Audit/image_10.png)
+![Add Row](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_10.webp)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Internet-Speed---Audit/image_11.png)
+![Blank Function](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_11.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell Script](../../../static/img/Internet-Speed---Audit/image_12.png)
+![Select PowerShell Script](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_12.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Function](../../../static/img/Internet-Speed---Audit/image_13.png)
+![PowerShell Function](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_13.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds. Click the `Save` button.
 
@@ -120,11 +120,11 @@ if($result.DownloadMbps) {
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log](../../../static/img/Internet-Speed---Audit/image_14.png)
+![Script Log](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_14.webp)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Internet-Speed---Audit/image_15.png)
+![Completed Task](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_15.webp)
 
 ## Output
 

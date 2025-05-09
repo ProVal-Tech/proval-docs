@@ -32,5 +32,3 @@ This dataview displays information about the eligibility status of a machine for
 | TPM Ready                       | 1 - Bitlocker TPM Ready, 0 - Bitlocker TPM Ready Not Set                                                                                      |
 | TPM Present                     | 1 - Bitlocker TPM Present, 0 - Bitlocker TPM Present Not Set                                                                                  |
 | Support Device Encryption        | If the system has Bitlocker TPM Ready, Bitlocker TPM Present, and UEFI Supported, then it is set to 1 as Support Device Encryption; otherwise, it is set to 0, meaning it does not support device encryption. |
-
-

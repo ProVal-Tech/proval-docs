@@ -18,14 +18,14 @@ CW RMM implementation of [Import-LMCertificate](/docs/550036d9-941a-4b10-a550-fd
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Import-LMCertificate/image_1.png)
+![Sample Run](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_1.webp)
 
 To create and import a self-signed certificate:  
-![Self Signed Certificate](../../../static/img/Import-LMCertificate/image_2.png)
+![Self Signed Certificate](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_2.webp)
 
 To import a certificate placed in a local folder:  
-![Import Certificate](../../../static/img/Import-LMCertificate/image_3.png)  
-![Another Import](../../../static/img/Import-LMCertificate/image_4.png)
+![Import Certificate](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_3.webp)  
+![Another Import](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_4.webp)
 
 ## Dependencies
 
@@ -53,70 +53,70 @@ To import a certificate placed in a local folder:
 | KeyUsage         | None                                  | <ul><li>CertSign</li><li>CRLSign</li><li>DataEncipherment</li><li>DecipherOnly</li><li>DigitalSignature</li><li>EncipherOnly</li><li>KeyAgreement</li><li>KeyEncipherment</li><li>None</li><li>NonRepudiation</li></ul>                                                                                                                    | True     | None                                     | Text String   | The Key Usage for a created certificate.                                    |
 | KeyAlgorithm     | RSA                                   | <ul><li>RSA</li><li>ECDSA_nistP256</li><li>ECDSA_nistP384</li><li>ECDSA_brainpoolP256r1</li><li>ECDSA_brainpoolP384r1</li><li>ECDSA_brainpoolP512r1</li><li>ECDSA_nistP192</li><li>ECDSA_nistP224</li><li>ECDSA_nistP521</li><li>ECDSA_secP160k1</li><li>ECDSA_secP160r1</li><li>ECDSA_secP160r2</li><li>ECDSA_secP192k1</li><li>ECDSA_secP192r1</li><li>ECDSA_secP224k1</li><li>ECDSA_secP224r1</li><li>ECDSA_secP256k1</li><li>ECDSA_secP256r1</li><li>ECDSA_secP384r1</li><li>ECDSA_secP521r1</li><li>ECDSA_brainpoolP160r1</li><li>ECDSA_brainpoolP160t1</li><li>ECDSA_brainpoolP192r1</li><li>ECDSA_brainpoolP192t1</li><li>ECDSA_brainpoolP224r1</li><li>ECDSA_brainpoolP224t1</li><li>ECDSA_brainpoolP256r1</li><li>ECDSA_brainpoolP256t1</li><li>ECDSA_brainpoolP320r1</li><li>ECDSA_brainpoolP320t1</li><li>ECDSA_brainpoolP384r1</li><li>ECDSA_brainpoolP384t1</li><li>ECDSA_brainpoolP512r1</li><li>ECDSA_brainpoolP512t1</li><li>ECDSA_ec192wapi</li><li>ECDSA_nistP192</li><li>ECDSA_nistP224</li><li>ECDSA_nistP256</li><li>ECDSA_nistP384</li><li>ECDSA_nistP521</li><li>ECDSA_secP160k1</li><li>ECDSA_secP160r1</li><li>ECDSA_secP160r2</li><li>ECDSA_secP192k1</li><li>ECDSA_secP192r1</li><li>ECDSA_secP224k1</li><li>ECDSA_secP224r1</li><li>ECDSA_secP256k1</li><li>ECDSA_secP256r1</li><li>ECDSA_secP384r1</li><li>ECDSA_secP521r1</li><li>ECDSA_wtls7</li><li>ECDSA_wtls9</li><li>ECDSA_wtls12</li><li>ECDSA_x962P192v1</li><li>ECDSA_x962P192v2</li><li>ECDSA_x962P192v3</li><li>ECDSA_x962P239v1</li><li>ECDSA_x962P239v2</li><li>ECDSA_x962P239v3</li><li>ECDSA_x962P256v1</li></ul>                                                                                                                            | True     | RSA                                      | Text String   | The Key Algorithm for the created certificate.                              |
 
-![Image](../../../static/img/Import-LMCertificate/image_5.png)
+![Image](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_5.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this Task.  
-![Task Creation](../../../static/img/Import-LMCertificate/image_6.png)  
-![Another Task Creation](../../../static/img/Import-LMCertificate/image_7.png)
+![Task Creation](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_6.webp)  
+![Another Task Creation](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_7.webp)
 
 **Name:** `Import LMCertificate`  
 **Description:** `Import a certificate to one or more local machine stores. The target certificate can be a .CER file, a .CRT file, or a self-signed certificate that will be created.`  
 **Category:** `Custom`  
-![Task Category](../../../static/img/Import-LMCertificate/image_8.png)
+![Task Category](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_8.webp)
 
 ## Parameters
 
 ### Path
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `Path` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_11.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_11.webp)
 
 ### SubjectName
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `SubjectName` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_12.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_12.webp)
 
 ### Type
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `Type` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_13.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_13.webp)
 
 ### CertStore
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `CertStore` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -124,15 +124,15 @@ This screen will appear.
 - Set `My` in the `Value` field.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_14.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_14.webp)
 
 ### KeyLength
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
 This screen will appear.  
-![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
+![Parameter Screen](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_10.webp)
 
 - Set `KeyLength` in the `Parameter Name` field.
 - Select `Number Value` from the `Parameter Type` dropdown menu.
@@ -140,7 +140,7 @@ This screen will appear.
 - Set `2048` in the `Value` field.
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_15.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_15.webp)
 
 ### Provider
 
@@ -193,8 +193,9 @@ This screen will appear.
 ### KeyAlgorithm
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
-![Add Parameter](../../../static/img/Import-LMCertificate/image_9.png)
+![Add Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_9.webp)
 
+This
 This screen will appear.  
 ![Parameter Screen](../../../static/img/Import-LMCertificate/image_10.png)
 

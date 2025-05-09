@@ -22,7 +22,5 @@ Stores the result returned by the [Windows 11 Compatibility Validation](/docs/67
 
 ## Screenshot
 
-![Screenshot 1](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_1.png)  
-![Screenshot 2](../../../static/img/Endpoint---Windows-11-incompatibility-Base/image_2.png)
-
-
+![Screenshot 1](../../../static/img/docs/7894870c-b7e8-44e0-806c-c948f151fc49/image_1.webp)  
+![Screenshot 2](../../../static/img/docs/7894870c-b7e8-44e0-806c-c948f151fc49/image_2.webp)

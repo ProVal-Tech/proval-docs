@@ -29,7 +29,7 @@ The BitLocker Initialization folder in the Kaseya VSA contains a set of Agent Pr
 
 ## Agent Procedure Descriptions
 
-![Image](../../static/img/SEC---Encryption---VSA---BitLocker-Initialization/image_1.png)
+![Image](../../static/img/docs/8c653432-1811-4651-989e-3c8aae89a7cf/image_1.webp)
 
 1. **BitLocker Volume Initialization - AD Account or Group protector:** Encrypts the target volume using an Active Directory Account or Group as a key protector.
 2. **BitLocker Volume Initialization - Password protector:** Encrypts the target volume using a custom password as a key protector.
@@ -45,7 +45,7 @@ The BitLocker Initialization folder in the Kaseya VSA contains a set of Agent Pr
 
 In the Agent Procedure parameters, you can customize settings such as the target volume, encryption method, and key protector-related settings. Modify these parameters to meet your organization's security policies and requirements. Depending on the agent procedure selected, different options will be presented. The full list of parameters is provided below for reference, but only the options needed for the selected procedure will be presented when run.
 
-![Image](../../static/img/SEC---Encryption---VSA---BitLocker-Initialization/image_2.png)
+![Image](../../static/img/docs/8c653432-1811-4651-989e-3c8aae89a7cf/image_2.webp)
 
 *(Reference Image: **BitLocker Volume Initialization - AD Account or Group protector parameters**)*
 
@@ -124,5 +124,3 @@ The following logs are created when the agent procedure is run.
 ./Initialize-BitLockerVolume-data.txt
 ./Initialize-BitLockerVolume-error.txt
 ```
-
-

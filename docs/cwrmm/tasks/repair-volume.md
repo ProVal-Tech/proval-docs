@@ -16,9 +16,9 @@ This document outlines how to run a PowerShell equivalent of chkdsk on any or al
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Repair-Volume/image_1.png)
-![Sample Run 2](../../../static/img/Repair-Volume/image_2.png)
-![Sample Run 3](../../../static/img/Repair-Volume/image_3.png)
+![Sample Run 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_1.webp)
+![Sample Run 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_2.webp)
+![Sample Run 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_3.webp)
 
 ## Dependencies
 
@@ -32,20 +32,20 @@ This document outlines how to run a PowerShell equivalent of chkdsk on any or al
 | Repair      | 0/1      | False    | Flag        | Toggles the repair option.                                                                       |
 | Full        | 0/1      | False    | Flag        | Toggles the full offline repair option when using repair.                                        |
 
-![User Parameters](../../../static/img/Repair-Volume/image_4.png)
+![User Parameters](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Step 1](../../../static/img/Repair-Volume/image_5.png)
-![Task Creation Step 2](../../../static/img/Repair-Volume/image_6.png)
+![Task Creation Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_5.webp)
+![Task Creation Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_6.webp)
 
 **Name:** `Repair Volume`  
 **Description:** `Runs a PowerShell equivalent of chkdsk on any or all drives, with the option to repair if desired.`  
 **Category:** `Maintenance`  
 
-![Task Creation Step 3](../../../static/img/Repair-Volume/image_7.png)
+![Task Creation Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_7.webp)
 
 ## Parameters
 
@@ -53,70 +53,70 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Driveletters Step 1](../../../static/img/Repair-Volume/image_8.png)
+![Driveletters Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_8.webp)
 
 This screen will appear.
 
-![Driveletters Step 2](../../../static/img/Repair-Volume/image_9.png)
+![Driveletters Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_9.webp)
 
 - Set `Driveletters` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Driveletters Step 3](../../../static/img/Repair-Volume/image_10.png)
+![Driveletters Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_10.webp)
 
 ### Repair
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Repair Step 1](../../../static/img/Repair-Volume/image_8.png)
+![Repair Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_8.webp)
 
 This screen will appear.
 
-![Repair Step 2](../../../static/img/Repair-Volume/image_9.png)
+![Repair Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_9.webp)
 
 - Set `Repair` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Repair Step 3](../../../static/img/Repair-Volume/image_11.png)
+![Repair Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_11.webp)
 
 ### Full
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Full Step 1](../../../static/img/Repair-Volume/image_8.png)
+![Full Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_8.webp)
 
 This screen will appear.
 
-![Full Step 2](../../../static/img/Repair-Volume/image_9.png)
+![Full Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_9.webp)
 
 - Set `Full` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Full Step 3](../../../static/img/Repair-Volume/image_12.png)
+![Full Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_12.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Task Step 1](../../../static/img/Repair-Volume/image_13.png)
+![Task Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_13.webp)
 
 A blank function will appear.
 
-![Task Step 2](../../../static/img/Repair-Volume/image_14.png)
+![Task Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_14.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Row 1 Function Step 1](../../../static/img/Repair-Volume/image_15.png)
-![Row 1 Function Step 2](../../../static/img/Repair-Volume/image_16.png)
+![Row 1 Function Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_15.webp)
+![Row 1 Function Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_16.webp)
 
 The following function will pop up on the screen:
 
-![Row 1 Function Step 3](../../../static/img/Repair-Volume/image_17.png)
+![Row 1 Function Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_17.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -183,36 +183,34 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Row 1 Function Step 4](../../../static/img/Repair-Volume/image_18.png)
+![Row 1 Function Step 4](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_18.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Row 2 Function Step 1](../../../static/img/Repair-Volume/image_19.png)
+![Row 2 Function Step 1](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_19.webp)
 
 A blank function will appear.
 
-![Row 2 Function Step 2](../../../static/img/Repair-Volume/image_20.png)
+![Row 2 Function Step 2](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_20.webp)
 
 Search and select the `Script Log` function.
 
-![Row 2 Function Step 3](../../../static/img/Repair-Volume/image_21.png)
+![Row 2 Function Step 3](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_21.webp)
 
 The following function will pop up on the screen:
 
-![Row 2 Function Step 4](../../../static/img/Repair-Volume/image_22.png)
+![Row 2 Function Step 4](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_22.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Row 2 Function Step 5](../../../static/img/Repair-Volume/image_23.png)
+![Row 2 Function Step 5](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_23.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Row 2 Function Step 6](../../../static/img/Repair-Volume/image_24.png)
+![Row 2 Function Step 6](../../../static/img/docs/e49d58ba-bf8a-437b-8303-ac6266df35e2/image_24.webp)
 
 ## Output
 
 - Script log
-
-

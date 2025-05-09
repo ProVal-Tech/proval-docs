@@ -59,5 +59,3 @@ This dataview displays the Bitlocker information on all retired computers that h
 | TPM Version              | The TPM Version number.                                                                                                                                                   |
 | TPMOwned                 | The TPM Owned state of the target.                                                                                                                                       |
 | TPMActivated             | The activation state of the TPM on the target.                                                                                                                           |
-
-

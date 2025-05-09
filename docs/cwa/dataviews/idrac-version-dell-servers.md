@@ -29,5 +29,3 @@ This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC 
 | Operating System   | Shows the OS of the concerned server.                      |
 | iDRAC Version     | Shows the iDRAC version of the concerned server.           |
 | Last Contact      | Shows the last contact of the concerned server with RMM.   |
-
-

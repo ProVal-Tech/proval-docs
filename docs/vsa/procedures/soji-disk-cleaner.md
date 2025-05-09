@@ -63,5 +63,3 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - etc.
 
 Attach the content XML VSA Export to this document.
-
-

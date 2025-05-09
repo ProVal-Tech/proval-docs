@@ -18,7 +18,7 @@ This script downloads the offscrub files from the LTShare and then attempts to u
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Universal-Office-Uninstaller/image_1.png)
+![Sample Run](../../../static/img/docs/1935d4ab-345b-46a0-ad2a-167c9a86532c/image_1.webp)
 
 ## Dependencies
 
@@ -33,5 +33,3 @@ This script downloads the offscrub files from the LTShare and then attempts to u
 ## Output
 
 - Script log
-
-

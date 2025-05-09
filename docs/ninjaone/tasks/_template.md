@@ -24,14 +24,14 @@ unlisted: false
 ### Step 1
 
 Navigate to `Administration` > `Tasks`  
-![Step1](../../../static/img/ninja-one-tasks-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/8bbf34f6-8c05-4776-9f8c-c589944b4042/step1.webp)
 
 ### Step 2
 
 Locate the `New Task` button on the right-hand side of the screen, click on it.  
-![NewTask](../../../static/img/ninja-one-tasks-common-screenshots/newtask.png)
+![NewTask](../../../static/img/docs/8bbf34f6-8c05-4776-9f8c-c589944b4042/newtask.webp)
 
 The `New Scheduled Task` window will appear on the screen.  
-![NewTask](../../../static/img/ninja-one-tasks-common-screenshots/newscheduledtask.png)
+![NewTask](../../../static/img/docs/8bbf34f6-8c05-4776-9f8c-c589944b4042/newscheduledtask.webp)
 
 ## Completed Task

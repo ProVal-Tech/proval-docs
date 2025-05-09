@@ -28,5 +28,3 @@ Run the following SQL from RAWSQL to import this role:
 INSERT INTO `roledefinitions` (`RoleDefinitionId`, `RoleName`, `RoleType`, `RoleSubType`, `DetectionString`, `ComparisonOperator`, `ComparisonResult`, `SerialKeyString`, `ProductKeyString`, `RoleDetectionGuid`, `IsRemote`, `SearchId`, `IsSupport`, `ParentRoleDefinitionGuid`, `OsType`) VALUES (1998, 'IntuneEnrolled', 'Intune', 'Role', '\{%@powershell -c "(Get-ItemProperty HKLM:\\Software\\Microsoft\\Enrollments\\* -ea 0).AADTenantID"@%}', 'rl', '[A-Z0-9]', '', '', '22c74c68-c9cf-11ee-83de-124f9e021845', 1, 0, 0, '', 0);
 ```
 
-
-

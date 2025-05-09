@@ -18,11 +18,11 @@ The script collects the `Version` and `Patch Level` information of the MSSQL Ser
 
 **First Execution:**  
 Execute the script against any online Windows machine with the `Set_Environment` parameter set to `1` to create the custom table.  
-![First Execution](../../../static/img/Get-MSSQL-Database-Version/image_1.png)
+![First Execution](../../../static/img/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee/image_1.webp)
 
 **Regular Executions:**  
 Execute the script against the online `MSSQL` servers to gather the version.  
-![Regular Executions](../../../static/img/Get-MSSQL-Database-Version/image_2.png)
+![Regular Executions](../../../static/img/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee/image_2.webp)
 
 ## Dependencies
 
@@ -47,5 +47,3 @@ Execute the script against the online `MSSQL` servers to gather the version.
 - Script Log
 - Custom Table
 - Dataview
-
-

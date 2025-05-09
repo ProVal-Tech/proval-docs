@@ -27,8 +27,8 @@ None. This script can be executed on any Windows device.
 
 To implement this script, please create a new PowerShell-style script on the system.
 
-![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_1.png)  
-![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_2.png)  
+![Winget Uninstall Application](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_1.webp)  
+![Winget Uninstall Application](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_2.webp)  
 
 **Name:** `Winget Uninstall Application`  
 **Description:** 
@@ -42,11 +42,11 @@ To obtain the ID, you can search in the command prompt using `winget search appn
 
 **Category:** `Custom`  
 
-![Parameter](../../../static/img/Winget-Uninstall-Application/image_3.png)  
+![Parameter](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_3.webp)  
 
 ### Parameter
 
-![Parameter](../../../static/img/Winget-Uninstall-Application/image_4.png)  
+![Parameter](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_4.webp)  
 **Parameter Name:** id  
 **Required Field:** Selected  
 **Parameter Type:** Text String  
@@ -55,14 +55,14 @@ To obtain the ID, you can search in the command prompt using `winget search appn
 
 #### Row 1 Function: Script Log
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_5.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_5.webp)  
 
 Input the following:  
-![Input](../../../static/img/Winget-Uninstall-Application/image_6.png)  
+![Input](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_6.webp)  
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Winget-Uninstall-Application/image_7.png)  
+![PowerShell Script](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_7.webp)  
 
 Paste the following PowerShell script and set the expected time of script execution to 600 seconds.
 
@@ -165,18 +165,18 @@ Write-Log -Text 'Uninstalling @id@.' -Type LOG
 & $wingetPath uninstall --id @id@
 ```
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_8.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_8.webp)  
 
 #### Row 3 Function: Script Log
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_5.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_5.webp)  
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Output](../../../static/img/Winget-Uninstall-Application/image_9.png)  
+![Output](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_9.webp)  
 
 The final task should look like the screenshot below.  
-![Final Task](../../../static/img/Winget-Uninstall-Application/image_10.png)  
+![Final Task](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_10.webp)  
 
 ## Script Deployment
 

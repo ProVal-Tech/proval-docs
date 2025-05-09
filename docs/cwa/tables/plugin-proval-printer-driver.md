@@ -43,5 +43,3 @@ To store the data retrieved by the [CWM - Automate - Script - Get - Printer Driv
 | InfPath            | varchar(256)  | Physical path to the driver's INF file                                  |
 | DriverVersion      | varchar(32)   | Driver version                                                          |
 | ScriptRunTime      | varchar(25)   | Script run time                                                         |
-
-

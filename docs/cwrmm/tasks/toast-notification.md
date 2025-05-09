@@ -16,8 +16,8 @@ This task is to create and manage toast notifications with customizable options,
 
 ## Sample Run
 
-![Image1](../../../static/img/cw-rmm-task-toast-notification/Image1.png)
-![Image2](../../../static/img/cw-rmm-task-toast-notification/Image2.png)
+![Image1](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Image1.webp)
+![Image2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Image2.webp)
 
 ## Dependencies
 
@@ -60,9 +60,9 @@ Avoid using single quotations within the message. If it's necessary, then escape
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Image3](../../../static/img/cw-rmm-task-toast-notification/Image3.png)
+![Image3](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Image3.webp)
 
-![Image4](../../../static/img/cw-rmm-task-toast-notification/image4.png)
+![Image4](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/image4.webp)
 
 **Name:** `Toast Notification`
 
@@ -70,7 +70,7 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Category:** `custom`
 
-![Image5](../../../static/img/cw-rmm-task-toast-notification/Image5.png)
+![Image5](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Image5.webp)
 
 ### Parameters
 
@@ -78,11 +78,11 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 This screen will appear. 
 
-![ParameterScreen](../../../static/img/cw-rmm-task-toast-notification/ParameterScreen.png)
+![ParameterScreen](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/ParameterScreen.webp)
 
 - Set `NotificationType` in the `Parameter Name` field.
 
@@ -92,17 +92,17 @@ This screen will appear. 
 
 - Click the `Save` button.
 
-![Parameter1](../../../static/img/cw-rmm-task-toast-notification/parameter1.png)
+![Parameter1](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/parameter1.webp)
 
 It will ask for the confirmation to proceed. Click the `Confirm` button to create the parameter.
 
-![Confirmation](../../../static/img/cw-rmm-task-toast-notification/Confirmation.png)
+![Confirmation](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Confirmation.webp)
 
 #### RebootButton
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `RebootButton` in the `Parameter Name` field.
 
@@ -114,13 +114,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter2](../../../static/img/cw-rmm-task-toast-notification/Parameter2.png)
+![Parameter2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter2.webp)
 
 #### LearnMoreButton
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `LearnMoreButton` in the `Parameter Name` Field.
 
@@ -132,13 +132,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter3](../../../static/img/cw-rmm-task-toast-notification/Parameter3.png)
+![Parameter3](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter3.webp)
 
 #### LearnMoreUrl
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `LearnMoreUrl` in the `Parameter Name` field.
 
@@ -148,13 +148,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter4](../../../static/img/cw-rmm-task-toast-notification/Parameter4.png)
+![Parameter4](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter4.webp)
 
 #### SnoozeButton
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `SnoozeButton` in the `Parameter Name` Field.
 
@@ -166,13 +166,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter5](../../../static/img/cw-rmm-task-toast-notification/Parameter5.png)
+![Parameter5](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter5.webp)
 
 #### DismissButtonText
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `DismissButtonText` in the `Parameter Name` field.
 
@@ -182,13 +182,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter6](../../../static/img/cw-rmm-task-toast-notification/Parameter6.png)
+![Parameter6](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter6.webp)
 
 #### TitleText
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `TitleText` in the `Parameter Name` field.
 
@@ -200,13 +200,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter7](../../../static/img/cw-rmm-task-toast-notification/Parameter7.png)
+![Parameter7](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter7.webp)
 
 #### AttributionText
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `AttributionText` in the `Parameter Name` field.
 
@@ -216,13 +216,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter8](../../../static/img/cw-rmm-task-toast-notification/Parameter8.png)
+![Parameter8](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter8.webp)
 
 #### BodyText1
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `BodyText1` in the `Parameter Name` field.
 
@@ -234,13 +234,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter9](../../../static/img/cw-rmm-task-toast-notification/Parameter9.png)
+![Parameter9](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter9.webp)
 
 #### BodyText2
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `BodyText2` in the `Parameter Name` field.
 
@@ -250,13 +250,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter10](../../../static/img/cw-rmm-task-toast-notification/Parameter10.png)
+![Parameter10](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter10.webp)
 
 #### LogoImage
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `LogoImage` in the `Parameter Name` field.
 
@@ -266,13 +266,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter11](../../../static/img/cw-rmm-task-toast-notification/Parameter11.png)
+![Parameter11](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter11.webp)
 
 #### HeroImage
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `HeroImage` in the `Parameter Name` field.
 
@@ -282,13 +282,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter12](../../../static/img/cw-rmm-task-toast-notification/Parameter12.png)
+![Parameter12](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter12.webp)
 
 #### Deadline
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `Deadline` in the `Parameter Name` field.
 
@@ -298,13 +298,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter13](../../../static/img/cw-rmm-task-toast-notification/Parameter13.png)
+![Parameter13](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter13.webp)
 
 #### MaxUptimeDays
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `MaxUptimeDays` in the `Parameter Name` field.
 
@@ -314,13 +314,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter14](../../../static/img/cw-rmm-task-toast-notification/parameter14.png)
+![Parameter14](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/parameter14.webp)
 
 #### ADPasswordExpirationDays
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `ADPasswordExpirationDays` in the `Parameter Name` field.
 
@@ -330,13 +330,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter15](../../../static/img/cw-rmm-task-toast-notification/Parameter15.png)
+![Parameter15](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter15.webp)
 
 #### Repeat
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `Repeat` in the `Parameter Name` field.
 
@@ -348,13 +348,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter16](../../../static/img/cw-rmm-task-toast-notification/Parameter16.png)
+![Parameter16](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter16.webp)
 
 #### NotificationAppName
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `NotificationAppName` in the `Parameter Name` field.
 
@@ -364,13 +364,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter17](../../../static/img/cw-rmm-task-toast-notification/Parameter17.png)
+![Parameter17](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter17.webp)
 
 #### MaxOccurrences
 
 Add another parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![AddParameter](../../../static/img/cw-rmm-task-toast-notification/AddParameter.png)
+![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
 - Set `MaxOccurrences` in the `Parameter Name` field.
 
@@ -380,31 +380,31 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 - Click the `Confirm` button to create the parameter.
 
-![Parameter18](../../../static/img/cw-rmm-task-toast-notification/Parameter18.png)
+![Parameter18](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Parameter18.webp)
 
 ### Parameters block
 
-![ParameterBlock](../../../static/img/cw-rmm-task-toast-notification/ParameterBlock.png)
+![ParameterBlock](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/ParameterBlock.webp)
 
 ### Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![NewTask](../../../static/img/cw-rmm-task-toast-notification/NewTask.png)
+![NewTask](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/NewTask.webp)
 
 A blank function will appear.
 
-![BlankFunction](../../../static/img/cw-rmm-task-toast-notification/BlankFunction.png)
+![BlankFunction](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/BlankFunction.webp)
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![F1Image1](../../../static/img/cw-rmm-task-toast-notification/F1Image1.png)
+![F1Image1](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F1Image1.webp)
 
 The following function will pop up on the screen:
 
-![F1Image2](../../../static/img/cw-rmm-task-toast-notification/F1Imag2.png)
+![F1Image2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F1Imag2.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
@@ -593,31 +593,31 @@ $logContent = Get-Content -path $LogPath
 $logContent[ $($($logContent.IndexOf($($logContent -match "$($ProjectName)$")[-1])) + 1)..$($logContent.length-1) ]
 ```
 
-![F1Image3](../../../static/img/cw-rmm-task-toast-notification/F1Image3.png)
+![F1Image3](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F1Image3.webp)
 
 Flag the `Continue on Failure` button.
 
-![F1Image4](../../../static/img/cw-rmm-task-toast-notification/F1Image4.png)
+![F1Image4](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F1Image4.webp)
 
 #### Row 2 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.
 
-![AddRow](../../../static/img/cw-rmm-task-toast-notification/AddRow.png)
+![AddRow](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddRow.webp)
 
 Select the `Script Log` function.
 
-![F2Image1](../../../static/img/cw-rmm-task-toast-notification/F2Image1.png)
+![F2Image1](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F2Image1.webp)
 
-![F2Image2](../../../static/img/cw-rmm-task-toast-notification/F2Image2.png)
+![F2Image2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F2Image2.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![F2Image3](../../../static/img/cw-rmm-task-toast-notification/F2Image3.png)
+![F2Image3](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F2Image3.webp)
 
 ## Completed Task
 
-![CompletedTask](../../../static/img/cw-rmm-task-toast-notification/CompletedTask.png)
+![CompletedTask](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/CompletedTask.webp)
 
 ## Output
 

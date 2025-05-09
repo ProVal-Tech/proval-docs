@@ -12,7 +12,7 @@ unlisted: true
 
 <div class='text-section scrollable'>
 
-![Image](../../static/img/Standards-and-Health-Plugin-Best-Practices/image_1.png)
+![Image](../../static/img/docs/68729023-fc85-4894-b5b5-d021942bc2a6/image_1.webp)
 
 ## Searches
 
@@ -22,4 +22,3 @@ All searches need to be custom and have a unique name to ensure clarity and orga
 
 </div>
 </div>
-

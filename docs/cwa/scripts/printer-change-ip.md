@@ -18,7 +18,7 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Printer-Change-IP/image_1.png)
+![Sample Run](../../../static/img/docs/631186de-253a-4bd7-8197-958cb1ed7b68/image_1.webp)
 
 ## Variables
 
@@ -42,5 +42,3 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 ## Output
 
 - Script log
-
-

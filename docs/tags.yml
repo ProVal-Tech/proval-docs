@@ -430,6 +430,10 @@ software:
   label: Software
   description: Documents related to software applications and their lifecycle management
 
+sonicwall:
+  label: SonicWall
+  description: Documents discussing SonicWall security appliances, software, and configurations
+
 sql:
   label: SQL
   description: Documents discussing Structured Query Language and database interactions

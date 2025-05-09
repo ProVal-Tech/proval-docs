@@ -30,5 +30,3 @@ The script [Windows Update History Audit](/docs/d0c435d0-7bfb-4d65-aff3-f3db9b5c
 
 If required, implement the [Patches Not Installing > X Days](/docs/663a6cf8-f3da-4a44-9725-73aae8d4d954) monitor following the instructions in the documentation.
 
-
-

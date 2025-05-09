@@ -36,5 +36,3 @@ This procedure outlines the steps to remove Google Drive from the endpoint.
 
 Agent Log
 
-
-

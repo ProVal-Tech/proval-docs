@@ -16,8 +16,8 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_1.png)  
-![Sample Run 2](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_2.png)
+![Sample Run 1](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_1.webp)  
+![Sample Run 2](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_2.webp)
 
 ## Dependencies
 
@@ -42,101 +42,101 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Task Creation Image 1](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_3.png)  
-![Task Creation Image 2](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_4.png)  
+![Task Creation Image 1](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_3.webp)  
+![Task Creation Image 2](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_4.webp)  
 
 **Name:** Out of Date Cumulative Update (Autofix)  
 **Description:** Installs the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days.  
 **Category:** Patching  
 
-![Task Creation Image 3](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_5.png)  
+![Task Creation Image 3](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_5.webp)  
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_6.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_6.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 ### Row 1 Function: Set Pre-defined Variable
 
 Search and select the `Set Pre-defined Variable` function.  
-![Set Pre-defined Variable](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_8.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_9.png)  
+![Set Pre-defined Variable](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_8.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_9.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_10.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_10.webp)  
 
 - Type `Company_Selection` in the `Variable Name` field.
 - Select the `Custom Field` radio button.
 - Search and select the company-level `Out_of_Date_CU_Autofix` Custom Field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_11.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_12.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_11.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_12.webp)  
 
 ### Row 2 Function: Set Pre-defined Variable
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_13.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `Set Pre-defined Variable` function.  
-![Set Pre-defined Variable](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_8.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_9.png)  
+![Set Pre-defined Variable](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_8.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_9.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_10.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_10.webp)  
 
 - Type `Site_Selection` in the `Variable Name` field.
 - Select the `Custom Field` radio button.
 - Search and select the site-level `Out_of_Date_CU_Autofix` Custom Field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_14.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_15.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_16.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_17.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_14.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_15.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_16.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_17.webp)  
 
 ### Row 3 Function: Set Pre-defined Variable
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_13.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `Set Pre-defined Variable` function.  
-![Set Pre-defined Variable](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_8.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_9.png)  
+![Set Pre-defined Variable](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_8.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_9.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_10.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_10.webp)  
 
 - Type `Endpoint_Selection` in the `Variable Name` field.
 - Select the `Custom Field` radio button.
 - Search and select the Endpoint-level `Out_of_Date_CU_Autofix` Custom Field in the `Search Custom Field` field.
 - Click the `Save` button to save the changes.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_18.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_19.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_20.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_21.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_18.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_19.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_20.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_21.webp)  
 
 ### Row 4 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_13.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_13.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_22.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_23.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_22.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_23.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_24.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_24.webp)  
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -169,147 +169,107 @@ if ( '@EndPoint_Selection@' -eq 'Enable' ) {
 }
 ```
 
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_25.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_25.webp)  
 
 ### Row 5 Logic: If/Then
 
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_26.png)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_26.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_27.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_27.webp)  
 
 ### Row 5a Condition: Output Contains
 
 Type `Disable` in the `Input Value or Variable` field and press `Enter`.  
-![Output Contains](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_28.png)  
+![Output Contains](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_28.webp)  
 
 ### Row 5b Function: Script Log
 
 Click the `Add Row` button inside the `If/Then` logic.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_29.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_29.webp)  
 
 Search and select the `Script Log` function in the newly appeared row.  
-![Script Log](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_30.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_31.png)  
+![Script Log](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_30.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_31.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_32.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_32.webp)  
 
 Type `Autofix is disabled.` in the `Script Log Message` field and click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_33.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_33.webp)  
 
 ### Row 5c Function: Script Exit
 
 Click the `Add Row` button inside the `If/Then` logic.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_29.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_29.webp)  
 
 Search and select the `Script Exit` function in the newly appeared row.  
-![Script Exit](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_34.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_35.png)  
+![Script Exit](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_34.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_35.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_36.webp)  
 
 Click the `Save` button without typing anything in the `Error Message` field.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_37.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_37.webp)  
 
 ### Row 6 Function: PowerShell Script
 
 Add a new row by clicking on the `Add Row` button outside the `If/Then` logic.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_38.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_38.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_22.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_23.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_22.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_23.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_24.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_24.webp)  
 
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
 ```powershell
-#requires -Version 5
-
-#region Setup - Variables
-$ProjectName = 'Deploy-AvailableCumulativeUpdate'
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-}
-#endregion
-#region Execution
-& $PS1Path
-#endregion
-#region log verification
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
-}
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    Write-Information 'Failed to install the available Cumulative Update.' -InformationAction Continue
-    throw ($ErrorContent | Out-String)
-}
-$content = Get-Content -Path $LogPath
-$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
-Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
-#endregion
+# Needs update to JSON format
 ```
 
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_39.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_39.webp)  
 
 ### Row 7 Logic: If/Then/Else
 
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_40.png)  
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_41.png)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_40.webp)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_41.webp)  
 
 ### Row 7a Condition: Output Contains
 
 Type `Failed to Install` in the `Input Value or Variable` field and press `Enter`.  
-![Output Contains](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_42.png)  
+![Output Contains](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_42.webp)  
 
 ### Row 7b Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `If` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_43.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_43.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_44.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_45.png)  
+![Set Custom Field](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_44.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_45.webp)  
 
 Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` field and set `Failed` in the `Value` field, then click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_46.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_47.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_46.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_47.webp)  
 
 ### Row 7c Function: Script Exit
 
 Click the `Add Row` button inside the `If/Then` logic.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_29.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_29.webp)  
 
 Search and select the `Script Exit` function in the newly appeared row.  
-![Script Exit](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_34.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_35.png)  
+![Script Exit](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_34.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_35.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_36.webp)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
 
@@ -317,91 +277,90 @@ Paste the following lines in the `Error Message` field and click the `Save` butt
 Script Failed.  
 Output: %Output%
 ```
-
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_48.webp)  
 
 ### Row 7d Logic: If/Then/Else
 
 Add a new `If/Then/Else` logic inside the `Else` section.  
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_49.png)  
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_50.png)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_49.webp)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_50.webp)  
 
 ### Row 7d(i) Condition: Output Contains
 
 Change the comparator to `Does Not Contain`.  
-![Change Comparator](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_51.png)  
+![Change Comparator](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_51.webp)  
 
 Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
-![Input Value](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_52.png)  
+![Input Value](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_52.webp)  
 
 ### Row 7d(ii) Function: Script Log
 
 Click the `Add Row` button after the condition.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_53.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_53.webp)  
 
 Search and select the `Script Log` function in the newly appeared row.  
-![Script Log](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_30.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_31.png)  
+![Script Log](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_30.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_31.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_32.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_32.webp)  
 
 Type `Script Result: %Output%` in the `Script Log Message` field and click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_54.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_54.webp)  
 
 ### Row 7d(iii) Function: Script Exit
 
 Click the `Add Row` button inside the `If/Then` logic.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_55.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_55.webp)  
 
 Search and select the `Script Exit` function in the newly appeared row.  
-![Script Exit](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_34.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_35.png)  
+![Script Exit](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_34.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_35.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_36.webp)  
 
 Click the `Save` button without typing anything in the `Error Message` field.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_37.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_37.webp)  
 
 ### Row 7d(iv) Logic: If/Then/Else
 
 Add a new `If/Then/Else` logic inside the `Else` section.  
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_49.png)  
-![Logic](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_50.png)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_49.webp)  
+![Logic](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_50.webp)  
 
 ### Row 7d(iv){1} Condition: Output Does Not Contain
 
 Change the comparator to `Does Not Contain`.  
-![Change Comparator](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_51.png)  
+![Change Comparator](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_51.webp)  
 
 Type `Successfully installed the latest available Cumulative Update` in the `Input Value or Variable` field and press `Enter`.  
-![Input Value](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_52.png)  
+![Input Value](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_52.webp)  
 
 ### Row 7d(iv){2} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `If` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_44.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_45.png)  
+![Set Custom Field](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_44.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_45.webp)  
 
 Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` field and set `Failed` in the `Value` field, then click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_46.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_47.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_46.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_47.webp)  
 
 ### Row 7d(iv){3} Function: Script Exit
 
 Click the `Add Row` button inside the `If` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 Search and select the `Script Exit` function in the newly appeared row.  
-![Script Exit](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_34.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_35.png)  
+![Script Exit](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_34.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_35.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_36.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_36.webp)  
 
 Paste the following lines in the `Error Message` field and click the `Save` button.  
 
@@ -409,78 +368,76 @@ Paste the following lines in the `Error Message` field and click the `Save` butt
 Script Failed.  
 Output: %Output%
 ```
-
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_48.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_48.webp)  
 
 ### Row 7d(iv){4} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_57.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_57.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_44.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_45.png)  
+![Set Custom Field](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_44.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_45.webp)  
 
 Search and select `Out_of_Date_CU_Autofix_Result` in the `Search Custom Field` field and set `Reboot Pending` in the `Value` field, then click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_58.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_59.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_58.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_59.webp)  
 
 ### Row 7d(iv){5} Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_22.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_23.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_22.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_23.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_24.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_24.webp)  
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```powershell
 (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
 ```
-
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_60.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_60.webp)  
 
 ### Row 7d(iv){6} Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_44.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_45.png)  
+![Set Custom Field](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_44.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_45.webp)  
 
 Search and select `Out_of_Date_CU_Autofix_Date` in the `Search Custom Field` field and set `%Output%` in the `Value` field, then click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_61.png)  
-![Save Confirmation](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_62.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_61.webp)  
+![Save Confirmation](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_62.webp)  
 
 ### Row 7d(iv){7} Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `PowerShell Script` function.  
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_22.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_23.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_22.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_23.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_24.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_24.webp)  
 
 Paste the following PowerShell script and leave the expected time of script execution to `300` seconds. Click the `Save` button.
 
@@ -492,26 +449,25 @@ if ( $os -match 'Server' ) {
     'Initiating the reboot pending prompt solution on the machine.' 
 }
 ```
-
-![PowerShell Script](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_63.png)  
+![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_63.webp)  
 
 ### Row 7d(iv){8} Function: Script Log
 
 Add a new row by clicking the `Add Row` button inside the `Else` section.  
-![Add Row](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_56.png)  
+![Add Row](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_56.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_7.png)  
+![Blank Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_7.webp)  
 
 Search and select the `Script Log` function in the newly appeared row.  
-![Script Log](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_30.png)  
-![Select Function](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_31.png)  
+![Script Log](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_30.webp)  
+![Select Function](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_31.webp)  
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_32.png)  
+![Function Popup](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_32.webp)  
 
 Type `%Output%` in the `Script Log Message` field and click the `Save` button.  
-![Save Changes](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_64.png)  
+![Save Changes](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_64.webp)  
 
 ### Row 7d(v) Logic: If/Then
 
@@ -561,10 +517,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Completed Script
 
-![Completed Script 1](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_65.png)  
-![Completed Script 2](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_66.png)  
-![Completed Script 3](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_67.png)  
-![Completed Script 4](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_68.png)  
+![Completed Script 1](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_65.webp)  
+![Completed Script 2](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_66.webp)  
+![Completed Script 3](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_67.webp)  
+![Completed Script 4](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_68.webp)  
 
 ## Deployment
 
@@ -574,28 +530,29 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 2. Search for `Out of Date Cumulative Update (Autofix)` Task.
 3. Select the concerned task.
 4. Click on the `Schedule` button to schedule the task.  
-![Schedule Task](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_69.png)  
+![Schedule Task](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_69.webp)  
 5. This screen will appear.  
-![Schedule Screen](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_70.png)  
+![Schedule Screen](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_70.webp)  
 6. Click the `Does not repeat` button.  
-![Does Not Repeat](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_71.png)  
+![Does Not Repeat](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_71.webp)  
 7. This pop-up box will appear.  
-![Pop-up Box](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_72.png)  
+![Pop-up Box](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_72.webp)  
 8. Change the Repeat interval to `Week(s)`, select an appropriate day; I have selected `Monday` in the attached screenshot. Click the `OK` button to save the changes.  
-![Change Repeat Interval](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_73.png)  
-9. Recurrence will be updated to `Every Week on <Selected Weekday>`.  
-![Recurrence Updated](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_74.png)  
+![Change Repeat Interval](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_73.webp)  
+9. Recurrence will be updated to `Every Week on \<Selected Weekday>`.  
+![Recurrence Updated](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_74.webp)  
 10. Select the `Device Groups` option in the `Targeted Resources` section.  
-![Targeted Resources](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_75.png)  
+![Targeted Resources](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_75.webp)  
 11. Search and Select the [Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1) device group.  
-![Select Device Group](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_76.png)  
+![Select Device Group](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_76.webp)  
 12. Now click the `Run` button to initiate the task.  
-![Run Task](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_77.png)  
+![Run Task](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_77.webp)  
 13. The task will start appearing in the Scheduled Tasks.  
-![Scheduled Tasks](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_78.png)  
-![Scheduled Tasks](../../../static/img/Out-of-Date-Cumulative-Update-(Autofix)/image_79.png)  
+![Scheduled Tasks](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_78.webp)  
+![Scheduled Tasks](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_79.webp)  
 
 ## Output
 
 - Script Log
 - Custom Field
+

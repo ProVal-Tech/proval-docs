@@ -36,7 +36,7 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
 |--------------|----------------|-------------|---------------|------------|----------|--------|
-| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](../../../static/img/Drive-Errors-and-Raid-Failures/image_1.png) |
+| System       | 127.0.0.1     | Run File    | **REDACTED**  | State Based | 3600     | ![Result](../../../static/img/docs/cef450c6-b649-4bd3-bcde-ed521d38d77f/image_1.webp) |
 
 ## Dependencies
 
@@ -46,7 +46,7 @@ Insert the details of the monitor in the table below.
 
 Managed Windows Computer (Excluding Virtual Machines)
 
-![Target](../../../static/img/Drive-Errors-and-Raid-Failures/image_2.png)  
+![Target](../../../static/img/docs/cef450c6-b649-4bd3-bcde-ed521d38d77f/image_2.webp)  
 
 The monitor set should be limited to the `Windows Machines Excluding Virtual` search.
 
@@ -193,7 +193,7 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 **Limit to:** `Windows Machines Excluding Virtual`
 
-![image](../../../static/img/Implement--Drive-Errors-and-Raid-Failures/image_1.png)
+![image](../../../static/img/docs/cef450c6-b649-4bd3-bcde-ed521d38d77f/image_1_1.webp)
 
 ---
 

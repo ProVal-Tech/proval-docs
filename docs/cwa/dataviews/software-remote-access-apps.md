@@ -60,5 +60,3 @@ The following remote software will be detected:
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
 | Remote Software    | List of remote software installed       |
-
-

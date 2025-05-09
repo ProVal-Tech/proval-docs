@@ -22,26 +22,24 @@ The task installs the latest version of `Dell Command | Update for Windows Unive
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_1.png)  
+![Sample Run Image 1](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_1.webp)  
 
-### Example 1
-
+### Example 1:
 Running the script with basic `/scan` command to return the available updates.  
-![Sample Run Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_2.png)  
+![Sample Run Image 2](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_2.webp)  
 
-### Example 2
-
+### Example 2:
 Running the script to install available `bios`, `firmaware`, and `driver` updates.  
 This command will not install any active driver as we are not using the `-forceupdate` switch.  
-![Example2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/Example2.png)  
+![Example2](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/Example2.webp)  
 
-### Example 3
-
+### Example 3:
 Running the script to forcefully install all available driver updates.  
 <span style={{color: 'Orange'}}>**Caution:** It is recommended to restart the computer at the earliest convenience after using the `-forceupdate=enable` switch, as this switch updates active drivers as well. An active driver that requires a restart for the update may malfunction if the update is installed without rebooting the computer.</span>  
-![Example3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/Example3.png)  
+![Example3](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/Example3.webp)  
 
-![Sample Run Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_3.png)
+
+![Sample Run Image 3](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_3.webp)
 
 ## Dependencies
 
@@ -53,29 +51,29 @@ Running the script to forcefully install all available driver updates.
 |-----------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------|-------|----------|---------------------------------------------|
 | Argument  | <ul><li>`/version`</li><li>`/scan`</li><li>`/scan -updateType=bios,firmware,driver`</li><li>`/applyUpdates -updateType=bios,firmware -silent -reboot=disable`</li><li>`/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable`</li><li>`/driverInstall -silent -reboot=disable`</li></ul> | [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) | `/scan`   | Text  | False    | Command to execute with `Dell Command \| Update`. If left blank, the default value `/Scan` will be used. |
 
-![User Parameter Image](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_4.png)
+![User Parameter Image](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_4.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_5.png)  
-![Task Creation Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_6.png)
+![Task Creation Image 1](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_5.webp)  
+![Task Creation Image 2](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_6.webp)
 
 **Name:** `Dell Command Update - Install + Command Handler`  
 **Description:** `The task installs the latest version of "Dell Command | Update for Windows Universal" from "Winget" if it's missing or outdated. The "Argument" parameter can be used to run the specified command or argument. If the parameter is left blank, the "/scan" command will be executed.`  
 **Category:** `Application` 
 
-![Task Creation Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_7.png)
+![Task Creation Image 3](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_7.webp)
 
 ## Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameters Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_8.png)
+![Parameters Image 1](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_8.webp)
 
 This screen will appear.  
-![Parameters Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_9.png)
+![Parameters Image 2](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_9.webp)
 
 - Set `Argument` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
@@ -83,28 +81,28 @@ This screen will appear.
 - Set `/scan` in the `Default Value` field.
 - Click the `Save` button.
 
-![Parameters Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_10.png)
+![Parameters Image 3](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_10.webp)
 
 Click the `Confirm` button to save the parameter.  
-![Parameters Image 4](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_11.png)
+![Parameters Image 4](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_11.webp)
 
 ## Task
 
 Navigate to the Script Editor Section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Task Image 1](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_12.png)
+![Task Image 1](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_12.webp)
 
 A blank function will appear.  
-![Task Image 2](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_13.png)
+![Task Image 2](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_13.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
-![Task Image 3](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_14.png)  
-![Task Image 4](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_15.png)
+![Task Image 3](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_14.webp)  
+![Task Image 4](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_15.webp)
 
 The following function will pop up on the screen:  
-![Task Image 5](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_16.png)
+![Task Image 5](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_16.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `3600` seconds. Click the `Save` button.
 
@@ -340,33 +338,33 @@ if ( !$Version ) {
 Invoke-Argument -argument $argument
 ```
 
-![Task Image 6](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_17.png)
+![Task Image 6](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_17.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Task Image 7](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_18.png)
+![Task Image 7](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_18.webp)
 
 A blank function will appear.  
-![Task Image 8](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_13.png)
+![Task Image 8](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_13.webp)
 
 Search and select the `Script Log` function.  
-![Task Image 9](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_19.png)  
-![Task Image 10](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_20.png)
+![Task Image 9](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_19.webp)  
+![Task Image 10](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_20.webp)
 
 The following function will pop up on the screen:  
-![Task Image 11](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_21.png)
+![Task Image 11](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_21.webp)
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Task Image 12](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_22.png)
+![Task Image 12](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_22.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Task Image 13](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_23.png)
+![Task Image 13](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_23.webp)
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Dell-Command-Update---Install-+-Command-Handler/image_24.png)
+![Completed Task Image](../../../static/img/docs/c5bc1518-dce5-4f6e-93c0-d37aec8f7e7a/image_24.webp)
 
 ## Output
 
-- Script log
+- Script log 

@@ -23,7 +23,7 @@ A new Client, Location, and Computer-Level Exclusion EDF `Disable Reboot Prompt`
 - Update the [Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4) internal monitor from the Prosync plugin.
 - Run the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) **once** on any machine with the user parameter `SetEnvironment` set to 1.
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_1.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_1.webp)
 
 ## Update Notice: 06-June-2024
 
@@ -56,7 +56,7 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 - Import both alert templates '△ Custom - Autofix - Reset Reboot Pending EDFs' and '△ Custom - Autofix - Prompt for Reboot with Forced Reboot'
 - Delete the Reset Reboot Pending EDFs Script Schedule on the All Agents group
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_2.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_2.webp)
 
 - Proceed through the Fresh Install Process steps.
 
@@ -69,11 +69,11 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 ### Configuration Steps:
 1. Set the correct alert templates to the **Disabled** monitors
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_3.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_3.webp)
 
 2. Run the script [User Prompt - Reboot](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8) **once** on any machine with the user parameter `SetEnvironment` set to 1:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_1.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_1.webp)
 
    Running the script with this parameter will import the properties below with default values and also import the EDFs as mentioned below:
    - proval_RebootForceTimeDelayMin - Default Setting [5]
@@ -91,11 +91,11 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 
 3. Before enabling the monitors, validate that the monitor will return results when checking the 'Pending Reboot' EDF. Simply pick a random workstation that is online, check the 'Pending Reboot' EDF, and save it:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_4.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_4.webp)
 
 4. Then open the Disabled Monitor 'ProVal - Production - Reboot Pending [Prompt]' and validate that the new machine appears in the results:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_5.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_5.webp)
 
    **NOTE:** If the count is more than 1, then settings are changed from their defaults, and the consultant should weigh in on whether we should enable the monitors or not.
 
@@ -104,44 +104,44 @@ If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and 
 
 ## Prompter Prompt Examples
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_6.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_6.webp)
 
 Icon and header images can be set by [https://redirhostname/WCC2/Utilities/HeaderImage](https://redirhostname/WCC2/Utilities/HeaderImage)
 
 At the final prompt, you will receive this popup through Windows FIRST:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_7.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_7.webp)
 
 Then this will pop up, explaining the reboot:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_8.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_8.webp)
 
 ## Automate Prompt Examples
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_9.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_9.webp)
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_10.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_10.webp)
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_11.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_11.webp)
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_12.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_12.webp)
 
 At the final prompt, you will receive this popup through Windows FIRST:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_13.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_13.webp)
 
 Then this will pop up, explaining the reboot:
 
-![Image](../../static/img/User-Prompt-for-Reboot/image_14.png)
+![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_14.webp)
 
 ## EDF Examples
 
 - Pending Reboot [Checkbox - Manually Editable]
-  - ![Image](../../static/img/User-Prompt-for-Reboot/image_15.png)
+  - ![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_15.webp)
 - Last Prompted [Text Field - Non Editable]
-  - ![Image](../../static/img/User-Prompt-for-Reboot/image_16.png)
+  - ![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_16.webp)
 - Times Prompted [Text Field - Non Editable]
-  - ![Image](../../static/img/User-Prompt-for-Reboot/image_17.png)
+  - ![Image](../../static/img/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a/image_17.webp)
 
 ## Customizations
 

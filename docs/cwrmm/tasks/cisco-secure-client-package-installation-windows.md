@@ -20,10 +20,10 @@ Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes in
 
 **NOTE**  
 To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files, or you will receive an error like this:  
-![Error Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_1.png)
+![Error Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_1.webp)
 
 The file can be downloaded from [Cisco Software Download](https://software.cisco.com/download/home/286330811/type/282364313/release/5.0.03076). Cisco changes this download URL for each release. Prefer downloading the latest stable version of the tool.  
-![Download Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_2.png)
+![Download Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_2.webp)
 
 Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secure_client.zip](https://file.provaltech.com/apps/packages/cisco_secure_client.zip)
 
@@ -34,7 +34,7 @@ Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secu
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_3.png)
+![Sample Run Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_3.webp)
 
 ## Variables
 
@@ -297,7 +297,7 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 
 ## Completed Script
 
-![Completed Script Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_4.png)
+![Completed Script Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_4.webp)
 
 ## Module Definitions
 
@@ -307,34 +307,34 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 - All modules require that Core-VPN be installed.
 - When only installing Core-VPN, you can expect to see the following.
 
-![Core-VPN Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_5.png)  
-![Core-VPN Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_6.png)  
-![Core-VPN Image 3](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_7.png)  
-![Core-VPN Image 4](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_8.png)  
+![Core-VPN Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_5.webp)  
+![Core-VPN Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_6.webp)  
+![Core-VPN Image 3](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_7.webp)  
+![Core-VPN Image 4](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_8.webp)  
 
 ### Start Before Login
 
 - SBL stands for Start Before Login; it adds no direct user GUI, however, it does add an entry into programs and features.
 - It enables the execution of the AnyConnect VPN prior to a user being logged in.
 
-![Start Before Login Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_9.png)
+![Start Before Login Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_9.webp)
 
 ### Diagnostic and Reporting Tool
 
 - DART stands for Diagnostics and Reporting Tool.
 - When installing this, you can expect to see the following items.
 
-![DART Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_10.png)  
-![DART Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_11.png)  
-![DART Image 3](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_12.png)  
+![DART Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_10.webp)  
+![DART Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_11.webp)  
+![DART Image 3](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_12.webp)  
 
 ### Network Access Manager
 
 - NAM stands for Network Access Manager.
 - When installing this module, you can expect to see the following items.
 
-![NAM Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_13.png)  
-![NAM Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_14.png)  
+![NAM Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_13.webp)  
+![NAM Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_14.webp)  
 
 ### Network Visibility Module
 
@@ -342,30 +342,30 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 - Network Visibility Manager does not include a GUI but does the following:
 - Network Visibility Manager **helps you see user and endpoint behavior both on and off premises**. It collects standard flows from endpoints (laptops, for example) along with context like user, application, device, location, and destination information.
 
-![NVM Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_15.png)
+![NVM Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_15.webp)
 
 ### VPN Posture - HostScan Module
 
 - Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host.
 - It does not provide a User GUI.
 
-![HostScan Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_16.png)
+![HostScan Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_16.webp)
 
 ### ISE Posture
 
 - ISE Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host, with a user GUI interface.
 - When installing this module, you can expect to see the following:
 
-![ISE Posture Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_17.png)  
-![ISE Posture Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_18.png)  
+![ISE Posture Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_17.webp)  
+![ISE Posture Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_18.webp)  
 
 ### Umbrella
 
 - Umbrella installs the Cisco Umbrella module.
 - When installing this module, you can expect to see the following:
 
-![Umbrella Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_19.png)  
-![Umbrella Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_20.png)  
+![Umbrella Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_19.webp)  
+![Umbrella Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_20.webp)  
 
 ## Uninstalling
 
@@ -379,3 +379,5 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 ## Output
 
 - Script log
+
+

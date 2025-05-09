@@ -18,7 +18,7 @@ This script is used to remove the enforcement of a homepage in the browser.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Mozilla-Firefox---Remove-Homepage/image_1.png)
+![Sample Run](../../../static/img/docs/21929424-6cad-41b0-b039-ee798fc38ff7/image_1.webp)
 
 ## Dependencies
 

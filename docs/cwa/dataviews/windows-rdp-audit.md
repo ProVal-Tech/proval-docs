@@ -30,5 +30,3 @@ This dataview provides information about whether RDP is enabled or disabled on a
 | Operating System    | Operating system of an agent                |
 | Agent Status        | Agent status, whether offline or online     |
 | RDP Status          | RDP status, whether enabled or disabled     |
-
-

@@ -22,7 +22,7 @@ This document outlines how to run the Agnostic Remove-Sophos.ps1 script on a tar
 ### *It is recommended that you run this script with the NoSafeMode global parameter set to 0; it removes the application cleaner and results in fewer application remnants. Please consider running this in safe mode if possible.*
 
 This setup will skip the removal of the Sophos Zap platform.  
-![image](../../../static/img/Uninstall---Sophos/image_1.png)
+![image](../../../static/img/docs/34942020-e99d-4959-892d-78c46a89d574/image_1.webp)
 
 ## Dependencies
 
@@ -57,5 +57,3 @@ No non-template variables in the script.
 
 - **There are a lot of leftover files on the target computer.**  
   The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
-
-

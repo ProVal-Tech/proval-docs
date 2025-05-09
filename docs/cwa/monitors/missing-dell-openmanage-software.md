@@ -23,12 +23,10 @@ This monitor checks for missing vendor software on Dell machines. It will flag a
 ## Target
 
 Managed Servers  
-![Image](../../../static/img/Missing-Dell-OpenManage-Software/image_1.png)
+![Image](../../../static/img/docs/e3bc733b-0083-4fbc-bd89-47adbabe738e/image_1.webp)
 
 ## Ticketing
 
 - **Subject:** `SW - Missing Dell OpenManage on %Computername%(%computerid%)`
   
 - **Summary:** To ensure proper monitoring of critical hardware components on this server, it is essential to install Dell OpenManage System Management Software. This software will enable the generation of accurate event log entries in the event of hardware failures. Please proceed with the installation as soon as possible.
-
-

@@ -16,7 +16,11 @@ The solution aims to identify Windows 10 computers that are compatible with Wind
 
 **Note:** The solution employs a policy and package to automatically upgrade compatible Windows 10 computers. In cases where the upgrade policy fails, the [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a) task can serve as a backup script to facilitate the upgrade.
 
-## Upgrade Notice: 9-November-2024
+## Update Notice: 21-April-2024
+
+The [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a) task has been added as an alternative solution for machines where the primary upgrade process encounters failures.
+
+## Update Notice: 9-November-2024
 
 The solution has been updated to use a policy for the Windows 10 to Windows 11 upgrade. Remove the following content before going through the solution:
 
@@ -70,6 +74,7 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 | Content | Type | Description |
 | ------- | ---- | ----------- |
 | [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a) | Script Editor | This task can be used as a backup plan in case of Windows 11 installation policy failure. Installs Windows 11 on a compatible Windows 10 computer. The default nature of the script is to restart the computer to complete the upgrade. However, the `NoReboot` parameter provides an option to suppress the reboot. The computer should be rebooted at the earliest convenience to complete the upgrade. |
+| [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a) | Script Editor | This task has been added as an alternative solution for machines where the primary upgrade process encounters failures. |
 
 ## Implementation
 
@@ -89,8 +94,9 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
 3. Create and deploy the following task:
    - [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82-bf87-6d00395a7dff)
 
-4. Create the following optional task:
+4. Create the following optional tasks:
    - [Windows 11 Installer (Beta)](/docs/96cec9d2-d276-47a5-a1c5-d79d561c192a)
+   - [Install Windows 11 Feature Update [Beta, Reboot]](/docs/b397d199-6675-451a-b2fc-eba5fd57031a)
 
 5. Create the following policy:
    - [Install Windows 11](/docs/4664a942-cb4f-425a-ae16-4615d2b14cae)

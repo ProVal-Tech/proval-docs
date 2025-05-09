@@ -20,7 +20,7 @@ This script can be used to re-register the Huntress Agent for Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Re-Register-Huntress-Agent-Windows/image_1.png)
+![Sample Run](../../../static/img/docs/6cf7ba91-b78d-4368-91a2-43095fad952b/image_1.webp)
 
 ## Dependencies
 
@@ -55,5 +55,3 @@ This script can be used to re-register the Huntress Agent for Windows machines.
 ## Output
 
 - Script log
-
-

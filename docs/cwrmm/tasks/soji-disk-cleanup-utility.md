@@ -20,11 +20,11 @@ Please reference Soji for argument usage.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_1.png)
+![Sample Run 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_1.webp)
 
-![Sample Run 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_2.png)
+![Sample Run 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_2.webp)
 
-![Sample Run 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_3.png)
+![Sample Run 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_3.webp)
 
 ## Dependencies
 
@@ -49,9 +49,9 @@ Please reference Soji for argument usage.
 
 Create a new `Script Editor` style script in the system to implement this Task.
 
-![Create Script](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_4.png)
+![Create Script](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_4.webp)
 
-![Create Script 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_5.png)
+![Create Script 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_5.webp)
 
 **Name:** `Soji (Disk Cleanup Utility)`
 
@@ -59,15 +59,15 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 **Category:** `Maintenance`
 
-![Parameters](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_6.png)
+![Parameters](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_6.webp)
 
 Click the `Add Parameter` button.
 
-![Add Parameter](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_7.png)
+![Add Parameter](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_7.webp)
 
 The `Add New Script Parameter` box will appear.
 
-![New Script Parameter](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_8.png)
+![New Script Parameter](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_8.webp)
 
 In the box, fill in the following details and select `Save` to create the `Arguments` parameter.
 
@@ -81,51 +81,51 @@ In the box, fill in the following details and select `Save` to create the `Argum
 
 **Value:** `--All`
 
-![Parameter Details](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_9.png)
+![Parameter Details](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_9.webp)
 
 ### Script
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_10.png)
+![Add Row](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_10.webp)
 
 #### Row 1 Function: Set User variable
 
 Select `Set User Variable` function.
 
-![Set User Variable](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_11.png) ![Set User Variable 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_12.png)
+![Set User Variable](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_11.webp) ![Set User Variable 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_12.webp)
 
-![Set User Variable 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_13.png)
+![Set User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
 
 Type `ProjectName` in the `Variable Name` field and `Soji` in the `Value` field. Click the `Save` button to create the variable.
 
-![User Variable 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_14.png) ![User Variable 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_15.png)
+![User Variable 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_14.webp) ![User Variable 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_15.webp)
 
 #### Row 2 Function: Set User variable
 
 Insert a new row by clicking the `Add Row` button.
 
-![Add Row 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_16.png)
+![Add Row 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
 
 Select `Set User Variable` function.
 
-![Set User Variable 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_11.png) ![Set User Variable 5](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_12.png)
+![Set User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_11.webp) ![Set User Variable 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_12.webp)
 
-![Set User Variable 6](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_13.png)
+![Set User Variable 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
 
 Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
 
-![User Variable 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_17.png) ![User Variable 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_18.png)
+![User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_17.webp) ![User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_18.webp)
 
 #### Row 3 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.
 
-![Add Row 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_16.png)
+![Add Row 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
 
 Select `PowerShell Script` function.
 
-![PowerShell Script 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 3](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
+![PowerShell Script 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp) ![PowerShell Script 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp) ![PowerShell Script 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
@@ -148,18 +148,17 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
 }
 ```
 
-![PowerShell Script 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_22.png)  
-![PowerShell Script 5](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_23.png)
+![PowerShell Script 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_22.webp) ![PowerShell Script 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
 
 #### Row 4 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.
 
-![Add Row 4](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_16.png)
+![Add Row 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
 
 Select `PowerShell Script` function.
 
-![PowerShell Script 6](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 7](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 8](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
+![PowerShell Script 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp) ![PowerShell Script 7](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp) ![PowerShell Script 8](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
 
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
@@ -182,17 +181,17 @@ if(!($dotNetVersions -match '(WindowsDesktop\.App 6)|(Microsoft\.NetCore\.App 6)
 }
 ```
 
-![PowerShell Script 9](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_24.png) ![PowerShell Script 10](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_23.png)
+![PowerShell Script 9](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_24.webp) ![PowerShell Script 10](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
 
 #### Row 5 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.
 
-![Add Row 5](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_16.png)
+![Add Row 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
 
 Select `PowerShell Script` function.
 
-![PowerShell Script 11](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_19.png) ![PowerShell Script 12](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_20.png) ![PowerShell Script 13](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_21.png)
+![PowerShell Script 11](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp) ![PowerShell Script 12](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp) ![PowerShell Script 13](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
 
 Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
@@ -218,32 +217,33 @@ if (! (Test-Path $ExePath)) {
 cmd.exe /c $EXEPath @Arguments@
 ```
 
-![PowerShell Script 14](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_25.png) ![PowerShell Script 15](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_23.png)
+![PowerShell Script 14](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_25.webp) ![PowerShell Script 15](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
 
 #### Row 6 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.
 
-![Add Row 6](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_16.png)
+![Add Row 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
 
 Select `Script Log` function.
 
-![Script Log 1](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_26.png) ![Script Log 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_27.png)
+![Script Log 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_26.webp) ![Script Log 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_27.webp)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `%output%`
 
-![Script Log Message](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_28.png) ![Script Log Message 2](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_29.png)
+![Script Log Message](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_28.webp) ![Script Log Message 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_29.webp)
 
 Click the `Save` button to save the Task.
 
-![Save Task](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_30.png)
+![Save Task](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_30.webp)
 
 ## Completed Script
 
-![Completed Script](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_31.png)
+![Completed Script](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_31.webp)
 
 ## Output
 
-- Script Log  
-    ![Script Log Output](../../../static/img/Soji-(Disk-Cleanup-Utility)/image_32.png)
+- Script Log
+
+![Script Log Output](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_32.webp)

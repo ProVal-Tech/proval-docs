@@ -13,5 +13,3 @@ unlisted: false
 ## Summary
 
 This document outlines the process for retiring duplicate agents from the ConnectWise Automate environment. Duplicate agents will be identified based on their serial number and name, ensuring effective management of agents within the system.
-
-

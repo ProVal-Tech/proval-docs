@@ -16,18 +16,16 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 
 ## Sample Run
 
-![Sample Run](../../../static/img/CWM---Automate---Data-Collection---SonicWall-NetExtender---Latest-Version-Winget/image_1.png)
+![Sample Run](../../../static/img/docs/5eca56c8-7035-41f7-b5d0-ef8d58bf532a/image_1.webp)
 
 #### System Properties
 
 | Name                          | Example   | Required | Description                                                                                      |
 |-------------------------------|-----------|----------|--------------------------------------------------------------------------------------------------|
-| SonicWall_Netextender_Version | 10.2.331 | True     | This system property stores the latest version of SonicWall NetExtender, which was fetched by this script. |
+| SonicWall.NetExtender | 10.3.2 | True     | This system property stores the latest version of SonicWall NetExtender, which was fetched by this script. |
 
 ## Output
 
 - Script log
-
-
 
 

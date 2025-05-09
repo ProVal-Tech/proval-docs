@@ -18,7 +18,7 @@ This script is used to enforce the installation of an extension or a list of ext
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Chrome---Install-Extension/image_1.png)
+![Sample Run](../../../static/img/docs/894e4ce0-9034-4191-bb3b-7065c23754bc/image_1.webp)
 
 ## Dependencies
 
@@ -46,5 +46,3 @@ This script is used to enforce the installation of an extension or a list of ext
 
 - Script log
 - Local file on the computer
-
-

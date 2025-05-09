@@ -16,8 +16,8 @@ This document updates all installed Visual Studio versions automatically using t
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Update-Visual-Studio/image_1.png)
-![Sample Run 2](../../../static/img/Update-Visual-Studio/image_2.png)
+![Sample Run 1](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_1.webp)
+![Sample Run 2](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_2.webp)
 
 ## Dependencies
 
@@ -27,34 +27,34 @@ This document updates all installed Visual Studio versions automatically using t
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Step 1](../../../static/img/Update-Visual-Studio/image_3.png)
-![Task Creation Step 2](../../../static/img/Update-Visual-Studio/image_4.png)
+![Task Creation Step 1](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_3.webp)
+![Task Creation Step 2](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_4.webp)
 
 **Name:** `Update Visual Studio`  
 **Description:** `Updates all installed VS versions automatically`  
 **Category:** `Application`  
-![Task Creation Step 3](../../../static/img/Update-Visual-Studio/image_5.png)
+![Task Creation Step 3](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_5.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row](../../../static/img/Update-Visual-Studio/image_6.png)
+![Add Row](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_6.webp)
 
 A blank function will appear.
 
-![Blank Function](../../../static/img/Update-Visual-Studio/image_7.png)
+![Blank Function](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_7.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Select PowerShell Script](../../../static/img/Update-Visual-Studio/image_8.png)
-![PowerShell Script Function](../../../static/img/Update-Visual-Studio/image_9.png)
+![Select PowerShell Script](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_8.webp)
+![PowerShell Script Function](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_9.webp)
 
 The following function will pop up on the screen:
 
-![PowerShell Script Pop Up](../../../static/img/Update-Visual-Studio/image_10.png)
+![PowerShell Script Pop Up](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_10.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -102,37 +102,37 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![PowerShell Script Example](../../../static/img/Update-Visual-Studio/image_11.png)
+![PowerShell Script Example](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_11.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Add Row for Script Log](../../../static/img/Update-Visual-Studio/image_12.png)
+![Add Row for Script Log](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_12.webp)
 
 A blank function will appear.
 
-![Blank Function for Script Log](../../../static/img/Update-Visual-Studio/image_13.png)
+![Blank Function for Script Log](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_13.webp)
 
 Search and select the `Script Log` function.
 
-![Select Script Log](../../../static/img/Update-Visual-Studio/image_14.png)
+![Select Script Log](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_14.webp)
 
 The following function will pop up on the screen:
 
-![Script Log Pop Up](../../../static/img/Update-Visual-Studio/image_15.png)
+![Script Log Pop Up](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_15.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Script Log Save](../../../static/img/Update-Visual-Studio/image_16.png)
+![Script Log Save](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_16.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Final Save](../../../static/img/Update-Visual-Studio/image_17.png)
+![Final Save](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_17.webp)
 
 ## Completed Task
 
-![Completed Task](../../../static/img/Update-Visual-Studio/image_18.png)
+![Completed Task](../../../static/img/docs/04ffcb6e-be50-4582-9b9b-050c39518811/image_18.webp)
 
 ## Output
 

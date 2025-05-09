@@ -27,9 +27,9 @@ The script is intended to be called from the task [Feature Update Install With T
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_1.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_1.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_2.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_2.webp)
 
 **Name:** `Windows Feature Update Attempt Tracking (Subscript)`
 
@@ -37,25 +37,25 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 **Category:** Patching
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_3.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_3.webp)
 
 Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_4.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_4.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Select `PowerShell Script` function.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_6.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_6.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_7.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_7.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_8.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_8.webp)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
@@ -64,119 +64,119 @@ $output='@reset@'
 $output
 ```
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_9.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_9.webp)
 
 Mark the `Continue on Failure` checkbox.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_10.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_10.webp)
 
 ### Row 2 Logic: If Then
 
 Insert a new `If/Then` logic from the `Add Logic` dropdown menu.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_11.png)  
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_12.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_11.webp)  
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_12.webp)
 
 ### Row 2a Condition: Output Contains
 
 Type `True` in the Value box and press `Enter`.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_13.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_13.webp)
 
 #### Row 2b Function: Script Log
 
 Insert a new row by clicking the `Add Row` button inside the `If Then` logic after the `Output Contains` condition.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_14.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_14.webp)
 
 Search and select the `Script Log` function in the new row.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_15.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_15.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_16.webp)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Reset Variable = %output%  
 Resetting WinFeatUpgradeAttempts Custom Field to 0.`
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_17.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_17.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_18.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_18.webp)
 
 #### Row 2c Function: Set Custom Field
 
 Insert a new row by clicking the `Add Row` button inside the `If Then` logic.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_19.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_19.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_20.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_20.webp)
 
 Search and select the `Set Custom Field` function in the new row.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_21.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_21.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_22.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_22.webp)
 
 Search and select the `WinFeatUpgradeAttempts` Custom Field.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_23.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_23.webp)
 
 Type `0` in the `Value` box and click the `Save` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_24.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_24.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_25.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_25.webp)
 
 ### Step 3 Function: Set Pre-defined Variable
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Select `Set Pre-defined Variable` function.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_26.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_26.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_27.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_27.webp)
 
 Type `VarCheck` in the `Variable Name` field, mark the `Custom Field` checkbox, select `WinFeatUpgradeAttempts` in the Custom Field box, and click the `Save` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_28.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_28.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_29.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_29.webp)
 
 ### Step 4 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Search and select the `Script Log` function in the new row.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_15.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_15.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_16.webp)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `Win Feature Pack Upgrade Attempts = @varcheck@`
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_30.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_30.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_31.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_31.webp)
 
 ### Row 5 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Select `PowerShell Script` function.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_6.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_6.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_7.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_7.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_8.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_8.webp)
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
@@ -186,62 +186,62 @@ $Number++
 $Number
 ```
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_32.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_32.webp)
 
 Mark the `Continue on Failure` checkbox.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_10.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_10.webp)
 
 ### Step 6 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Search and select the `Script Log` function in the new row.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_15.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_15.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_16.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_16.webp)
 
 Paste this line in the `Script Log Message` box and click the `Save` button.  
 `%output%`
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_33.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_33.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_31.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_31.webp)
 
 ### Row 7 Function: Set Custom Field
 
 Insert a new row by clicking the `Add Row` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_5.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_5.webp)
 
 Search and select the `Set Custom Field` function in the new row.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_34.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_34.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_22.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_22.webp)
 
 Search and select the `WinFeatUpgradeAttempts` Custom Field.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_23.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_23.webp)
 
 Type `%Output%` in the `Value` box and click the `Save` button.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_35.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_35.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_36.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_36.webp)
 
 Click the `Save` button to save the task.
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_37.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_37.webp)
 
 ## Completed Script
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_38.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_38.webp)
 
-![Image](../../../static/img/Windows-Feature-Update-Attempt-Tracking-(Subscript)/image_39.png)
+![Image](../../../static/img/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c/image_39.webp)
 
 ## Output
 

@@ -20,7 +20,7 @@ If there are tickets related to the following example message, this script shoul
 
 Alternatively, if there are Remote (System) monitors showing similar "Return Information" to the screenshot below.
 
-![Screenshot](../../../static/img/Agent-Monitors---Remove-Disk-Monitors-for-Missing-Drives/image_1.png)
+![Screenshot](../../../static/img/docs/581b4986-28e0-41df-bff8-c5179414c9ee/image_1.webp)
 
 It is safe to run this script against any Windows system.
 
@@ -31,7 +31,7 @@ It is safe to run this script against any Windows system.
 The target should be any Windows machine reporting inaccurate values for remote drive space monitoring (Drive Space Critical monitors).  
 **Note:** This script CAN be run against offline agents.
 
-![Sample Run Screenshot](../../../static/img/Agent-Monitors---Remove-Disk-Monitors-for-Missing-Drives/image_2.png)
+![Sample Run Screenshot](../../../static/img/docs/581b4986-28e0-41df-bff8-c5179414c9ee/image_2.webp)
 
 ## Dependencies
 
@@ -48,5 +48,3 @@ The script will then run two different SQL queries to remove the broken remote d
 ## Output
 
 Script log only.
-
-

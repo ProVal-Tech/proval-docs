@@ -18,7 +18,7 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Symantec-Endpoint-Protection-Uninstaller/image_1.png)
+![Sample Run](../../../static/img/docs/7940894c-700c-442d-b0ba-0f197548a8fd/image_1.webp)
 
 ## Dependencies
 
@@ -39,5 +39,3 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 ## Output
 
 - Script log.
-
-

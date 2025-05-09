@@ -32,5 +32,3 @@ This document contains the SSL and TLS information set by the dependent script f
 | IE Advanced Security Status   | Detailed information on what TLS and SSL settings are configured for Internet Explorer |
 
 
-
-

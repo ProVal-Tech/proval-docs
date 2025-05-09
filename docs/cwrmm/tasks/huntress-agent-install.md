@@ -26,20 +26,20 @@ Installs the Huntress agent on the Windows machine if it's not already installed
 
 Please create a new "PowerShell" style script to implement this script.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_1.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_2.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_1.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_2.webp)  
 
 **Name:** Huntress Agent Install  
 **Description:** This task will check first if Huntress is installed. If not, it attempts to install the agent and log the result.  
 **Category:** Custom  
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_3.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_3.webp)  
 
 ## Script
 
 ### Row 1 Function: Script Log
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_4.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4.webp)  
 
 Input the following:
 
@@ -56,44 +56,44 @@ https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershel
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
 - Select `Huntress Acct_Key` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_6.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6.webp)  
 
 ### Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
 - Select `Huntress Org_Key` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_7.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7.webp)  
 
 ### Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
 - Select `Huntress Tag` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_8.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_8.webp)  
 
 ### Row 5 Function: PowerShell Script
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_9.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_9.webp)  
 
 Paste in the following PowerShell script and set the expected script execution time to `1500` seconds.
 
@@ -177,7 +177,7 @@ if ($installed -match 'Huntress') {
 }
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_10.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_10.webp)  
 
 ### Step 6 Function: Script Log
 
@@ -189,32 +189,32 @@ if ($installed -match 'Huntress') {
 %Output%
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_11.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_12.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_12.webp)  
 
 ### Step 7 Logic: If Then Else
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_13.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_13.webp)  
 
 ### ROW 7a Condition: Output Contains
 
 - Type `Huntress agent is installed` in the Value box.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_14.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_14.webp)  
 
 ### ROW 7b Function: Set Custom Field
 
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_15.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_15.webp)  
 
 - Search and select the `Huntress Deploy_Result` Custom Field.
 - Type `Successfully Installed` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_16.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16.webp)  
 
 ### ROW 7c Function: Script Log
 
@@ -226,8 +226,8 @@ if ($installed -match 'Huntress') {
 Huntress Agent is installed successfully.
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_17.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_18.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_17.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18.webp)  
 
 ### ROW 7d Function: Script Exit
 
@@ -239,14 +239,14 @@ Huntress Agent is installed successfully.
 
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_19.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_20.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_19.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_20.webp)  
 
 ### Step 7e Logic: If/Then
 
 Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `Else` section.  
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_21.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_21.webp)  
 
 ### Row 7e(i) Condition: Output Contains
 
@@ -255,7 +255,7 @@ Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `Else` s
 - Select another condition with the `OR` Operator
 - Type `Account Key Missing` in the Value box.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_22.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_22.webp)  
 
 ### Row 7e(ii) Function: Set Custom Field
 
@@ -263,12 +263,12 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_23.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_23.webp)  
 
 - Search and select the `Huntress Deploy_Result` Custom Field.
 - Type `%Output%` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_24.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_24.webp)  
 
 ### Row 7e(iii) Function: Script Exit
 
@@ -284,7 +284,7 @@ Failed to install Huntress. Refer to the below log:
 
 The final task should look like the screenshot below.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_25.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_25.webp)  
 
 ## Script Deployment
 
@@ -294,7 +294,7 @@ Go to Automations > Tasks.
 Search for Huntress Agent Install.  
 Then click on Schedule and provide the parameter details as necessary for the script completion.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_26.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_26.webp)  
 
 ## Output
 
@@ -305,7 +305,7 @@ Then click on Schedule and provide the parameter details as necessary for the sc
 **Note:**  
 For the Huntress deployment, the Huntress_Acct_Key is mandatory to be filled at the company level.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_27.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_27.webp)  
 
 The other custom fields can be left blank.
 

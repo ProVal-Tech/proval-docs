@@ -22,7 +22,7 @@ This solution will monitor the `C:\Windows\System32\Tasks\Microsoft\Windows\Upda
 
 Navigate to Automation > Monitors  
 Click "Add Monitor"  
-![Monitor Creation](../../../static/img/Update-Orchestrator-Bouncer/image_1.png)
+![Monitor Creation](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_1.webp)
 
 ---
 
@@ -34,7 +34,7 @@ Click "Add Monitor"
 - **Family:** Patch Management
 - **Severity:** Other
 
-![Monitor Configuration](../../../static/img/Update-Orchestrator-Bouncer/image_2.png)
+![Monitor Configuration](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_2.webp)
 
 ### Conditions
 
@@ -50,7 +50,7 @@ Click "Add Monitor"
 - **Criteria:** Contains > AND > "True"
 - **Run Automated Task:** [Update Orchestrator Bouncer](/docs/06e1e902-b204-498e-a31f-9de7879c528e)
 
-![Conditions](../../../static/img/Update-Orchestrator-Bouncer/image_3.png)
+![Conditions](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_3.webp)
 
 ### Ticket Resolution
 
@@ -58,14 +58,14 @@ Click "Add Monitor"
 - **Run same script as above**
 - **Criteria:** Contains > AND > "False"
 
-![Ticket Resolution](../../../static/img/Update-Orchestrator-Bouncer/image_4.png)
+![Ticket Resolution](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_4.webp)
 
 ## Resources
 
 *Note: A Task and Device group will need to be created before the monitor can be set up.*  
 This monitor is intentionally aimed at the Update Orchestrator group.
 
-![Resources](../../../static/img/Update-Orchestrator-Bouncer/image_5.png)
+![Resources](../../../static/img/docs/a88678ef-dc82-4837-802c-e77573277504/image_5.webp)
 
 ## Dependencies
 

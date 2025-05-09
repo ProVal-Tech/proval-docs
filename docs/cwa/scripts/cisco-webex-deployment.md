@@ -16,7 +16,7 @@ This script installs User-Based Cisco Webex on Windows machines.
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Cisco-Webex-Deployment/image_1.png)
+![Sample Run](../../../static/img/docs/e7c04bf5-d525-4755-a883-dd87a0a65909/image_1.webp)
 
 ## Output
 
@@ -34,5 +34,3 @@ Tickets will be generated only if the `TicketCreationCategory` value is greater 
 This occurs when the script fails to download the installer:
 
 `Failed to download Cisco Webex installer. Please ensure that the following download URL is reachable from the computer: [https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi](https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi)`
-
-

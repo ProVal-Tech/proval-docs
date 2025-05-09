@@ -37,7 +37,7 @@ The solution aims to keep winget-supported applications updated and report their
 | △ Custom - Execute Script - Configure Winget Auto Update               | Alert Template | Executes the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) script against the computers detected by the [Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331) internal monitor. |
 
 **Client-Level EDFs:**  
-![Client-Level EDFs](../../static/img/Winget-Auto-Update/image_1.png)
+![Client-Level EDFs](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_1.webp)
 
 The `Exclude From Winget Auto Update` checkbox is available in the location and computer-level EDF section `Exclusions` to exclude the location and computer, respectively.
 
@@ -57,16 +57,16 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
    - Alert Template - △ Custom - Execute Script - Configure Winget Auto Update
 
 3. Reload the system cache:  
-   ![Reload Cache](../../static/img/Winget-Auto-Update/image_2.png)
+   ![Reload Cache](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_2.webp)
 
 4. Run the [Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91) script with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) table used by the solution.  
-   ![Run Winget App Audit](../../static/img/Winget-Auto-Update/image_3.png)
+   ![Run Winget App Audit](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_3.webp)
 
 5. Run the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) script (if imported) with the `Set_Environment` parameter set to `1` for the first run to create the [pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062) table and the EDFs used by the solution.  
-   ![Run Configure Winget Auto Update](../../static/img/Winget-Auto-Update/image_4.png)
+   ![Run Configure Winget Auto Update](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_4.webp)
 
 6. Reload the system cache again:  
-   ![Reload Cache](../../static/img/Winget-Auto-Update/image_2.png)
+   ![Reload Cache](../../static/img/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8/image_2.webp)
 
 7. Configure the auditing solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
@@ -79,6 +79,4 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
-
-
 

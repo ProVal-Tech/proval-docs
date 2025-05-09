@@ -18,9 +18,9 @@ This document describes the process for uninstalling the Webroot application on 
 
 1. Export the agent procedure from the ProVal VSA and import it into the partner VSA.  
    **Name:** Webroot - Uninstall  
-   ![Webroot Uninstall](../../../static/img/Webroot---Uninstall/image_1.png)  
+   ![Webroot Uninstall](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_1.webp)  
 
-   ![Image](../../../static/img/Webroot---Uninstall/image_2.png)  
+   ![Image](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_2.webp)  
 
 2. Proval Plug & Play Procedure: The agent procedure requires no configuration.
 
@@ -36,9 +36,7 @@ This document describes the process for uninstalling the Webroot application on 
 ### Agent Procedure Log Entry
 
 - **Success**  
-  ![Success Log](../../../static/img/Webroot---Uninstall/image_3.png)  
+  ![Success Log](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_3.webp)  
 
 - **Failure**  
-  ![Failure Log](../../../static/img/Webroot---Uninstall/image_4.png)  
-
-
+  ![Failure Log](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_4.webp)  

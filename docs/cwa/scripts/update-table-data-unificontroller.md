@@ -24,7 +24,7 @@ This script launches the Get-UnifiController.ps1 file from the registry, filters
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Update-Table-Data---UnifiController/image_1.png)
+![Sample Run](../../../static/img/docs/7a09c023-231a-4574-a367-ef8009537e23/image_1.webp)
 
 ## Dependencies
 
@@ -107,5 +107,3 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
-
-
