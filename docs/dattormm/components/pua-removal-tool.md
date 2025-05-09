@@ -1,8 +1,8 @@
 ---
 id: '7356bbb4-4d5f-4c3c-839e-68054255c0d8'
 slug: /7356bbb4-4d5f-4c3c-839e-68054255c0d8
-title: 'EPM - Software Management - Component - PUA Removal Tool'
-title_meta: 'EPM - Software Management - Component - PUA Removal Tool'
+title: 'PUA Removal Tool'
+title_meta: 'PUA Removal Tool'
 keywords: ['datto', 'rmm', 'pua', 'bloatware', 'implementation']
 description: 'This document provides an overview of the Datto RMM implementation of the ProVal Agnostic Remove-PUA script, detailing its dependencies, implementation steps, and configuration variables for effective bloatware removal.'
 tags: ['windows', 'uninstallation']
@@ -10,19 +10,23 @@ draft: false
 unlisted: false
 ---
 
-# Overview
+## Overview
 
-Datto RMM Implementation of the ProVal Agnostic [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
+Datto RMM Implementation of the ProVal Agnostic [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443). It manages the removal of predefined bloatware packages or lists installed bloatware based on a centrally maintained list. It offers three primary operations: bulk removal, selective removal, and bloatware listing. The remove parameter allows bypassing the PUA List to remove any installed AppxPackage.
 
-# Dependencies
+**PUA List:** [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
+
+<span style={{color:'red'}}>**EXERCISE EXTREME CAUTION - Removing system components may cause system instability.**</span>
+
+## Dependencies
 
 [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
-# Implementation
+## Implementation
 
 Import PUA Removal Tool.cpt into the environment.
 
-# Datto Variables
+## Datto Variables
 
 | Variable Name   | Type      | Default | Description                                                                                                                                                                              |
 | --------------- | --------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,6 +36,6 @@ Import PUA Removal Tool.cpt into the environment.
 | `DParameter`    | `String`  |         | `Removes all detected bloatware in the specified categories. Requires the RemoveAll variable to be set to True. Valid Categories: 'MsftBloatApps', 'ThirdPartyBloatApps'`                |
 | `EParameter`    | `String`  |         | `Exclude the provided package(s) from RemoveAll processing. Requires the RemoveAll variable to be set to True.`                                                                          |
 
-# Output
+## Output
 
 stdOut & stdError
