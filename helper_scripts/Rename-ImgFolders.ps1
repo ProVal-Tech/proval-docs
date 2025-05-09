@@ -42,11 +42,8 @@ $associations = foreach ($imgFolder in $imgFolders) {
         'target' = $targetDirectory
     }
 }
-$associations | Export-Csv -Path "$PSScriptRoot\img-folder-associations.csv" -NoTypeInformation -Force
 
-$csvData = Import-Csv -Path "$PSScriptRoot\img-folder-associations.csv"
-
-foreach ($entry in $csvData) {
+$fileReplacements = foreach ($entry in $associations) {
     $imgFolder = Get-Item $entry.img
     if (-not $imgFolder) {
         Write-Host "Image folder $($entry.img) not found, skipping..."
@@ -57,7 +54,7 @@ foreach ($entry in $csvData) {
     $targetDirectoryFragment = "/img/docs/$($entry.target)"
     $targetDirectory = "$((Get-Item $PSScriptRoot).Parent.FullName)\static\img\docs\$($entry.target)"
     $files = Get-ChildItem -Path $imgFolder.FullName -File
-    $fileAssociations = foreach($file in $files) {
+    foreach($file in $files) {
         $targetFile = Move-File -Path $file.FullName -TargetPath $targetDirectory
         [PSCustomObject]@{
             OldFile = $file
@@ -67,7 +64,6 @@ foreach ($entry in $csvData) {
         }
     }
 }
-$fileReplacements = Import-Csv -Path "$PSScriptRoot\img-file-associations.csv"
 
 $docCount = 0
 foreach ($doc in $docs) {
@@ -77,5 +73,19 @@ foreach ($doc in $docs) {
     foreach ($file in $fileReplacements) {
         $docContent = $docContent -replace $file.TargetingRegex, $file.Replacement
     }
+    $docContent -join "`n" | Out-File $doc.FullName -NoNewline
+}
+
+$pngImages = Get-ChildItem -Path (Get-Item $PSScriptRoot).Parent.FullName + '\static\img\docs' -Recurse -Filter '*.png'
+$pngImages | ForEach-Object {
+    & $PSScriptRoot\..\tools\libwebp-1.5.0-windows-x64\bin\cwebp.exe $_.FullName -o "$($_.Directory.FullName)\$($_.BaseName).webp"
+    Remove-Item -Path $_.FullName -Force
+}
+
+$docCount = 0
+foreach ($doc in $docs) {
+    $docCount++
+    Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
+    $docContent = (Get-Content -Path $doc.FullName) -replace '\.png\)', '.webp)' -replace '\.png\>\)', '.webp>)'
     $docContent -join "`n" | Out-File $doc.FullName -NoNewline
 }
