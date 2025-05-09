@@ -19,5 +19,3 @@ This role is used to detect servers with the Certification Authority Web Enrollm
 | Detection String                                                                                     | Comparator | Result    | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|-----------|----------------|
 | \{%@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Web-Enrollment' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%} | Contains    | Installed | Windows        |
-
-

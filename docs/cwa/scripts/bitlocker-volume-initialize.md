@@ -20,11 +20,11 @@ Encrypts a drive with Bitlocker disk encryption.
 
 Encrypts the system drive of the target system with a Recovery Password, allowing TPM to be initialized if needed and rebooting if necessary.
 
-![Image](../../../static/img/Bitlocker---Volume---Initialize/image_1.png)
+![Image](../../../static/img/docs/85513764-8240-40fb-be86-7be910ea62cf/image_1.webp)
 
 Encrypts the E: volume of the target system with a TPM+PIN combination, allowing a reboot if necessary.
 
-![Image](../../../static/img/Bitlocker---Volume---Initialize/image_2.png)
+![Image](../../../static/img/docs/85513764-8240-40fb-be86-7be910ea62cf/image_2.webp)
 
 ## Dependencies
 
@@ -90,5 +90,3 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
-
-

@@ -58,11 +58,9 @@ This procedure deploys HP Image Assistant to the endpoint. The procedure downloa
 Agent Procedure Log  
 C:/HPIA  
 
-![Image](../../../static/img/HP-Image-Assistant---Deploy/image_1.png)  
+![Image](../../../static/img/docs/31670a91-868f-4825-9be0-ed842d62b7c0/image_1.webp)  
 
 Line 10 is where the HP commands are customized.  
 Available Commands (Starting at page 20): [HPIA User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/HPIAUserGuide.pdf)  
 The procedure is set to a default of: /Operation:Analyze /Category:All /selection:All /action:download /silent /AutoCleanup /reportFolder:c:/HPIA/Report /softpaqdownloadfolder:"C:/Windows/temp"  
-
-
 

@@ -68,4 +68,3 @@ Output files for the endpoint are located in the same directory as the executabl
 | Automate                                                                                               | N/A                                                                                                    |
 | Kaseya endpoint procedure                                                                               | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
 | Kaseya DC procedure                                                                                   | Shared / PVAL Stack / Tool Set - Global / Remote Domain Join                                          |
-

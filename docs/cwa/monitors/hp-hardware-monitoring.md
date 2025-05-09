@@ -59,4 +59,3 @@ Event Type: Error
 Message: <Event Message>
 TimeGen: <Time of Generation>
 ```
-

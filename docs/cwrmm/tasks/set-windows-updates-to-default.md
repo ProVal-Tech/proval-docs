@@ -16,41 +16,41 @@ This task removes any registry entries that may be preventing Windows updates an
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Set-Windows-Updates-to-Default/image_2.png)  
-![Sample Run Image 2](../../../static/img/Set-Windows-Updates-to-Default/image_3.png)  
+![Sample Run Image 1](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_2.webp)  
+![Sample Run Image 2](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_3.webp)  
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/Set-Windows-Updates-to-Default/image_4.png)  
-![Task Creation Image 2](../../../static/img/Set-Windows-Updates-to-Default/image_5.png)  
+![Task Creation Image 1](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_4.webp)  
+![Task Creation Image 2](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_5.webp)  
 
 **Name:** Set Windows Updates to Default  
 **Description:** This task removes all the possible registry entries that disable Windows Update on a machine.  
 **Category:** Custom  
 
-![Task Creation Image 3](../../../static/img/Set-Windows-Updates-to-Default/image_6.png)  
+![Task Creation Image 3](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_6.webp)  
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 
-![Add Row Image](../../../static/img/Set-Windows-Updates-to-Default/image_7.png)  
+![Add Row Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_7.webp)  
 
 A blank function will appear.  
 
-![Blank Function Image](../../../static/img/Set-Windows-Updates-to-Default/image_8.png)  
+![Blank Function Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_8.webp)  
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Script Selection](../../../static/img/Set-Windows-Updates-to-Default/image_9.png)  
+![PowerShell Script Selection](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_9.webp)  
 
 The following function will pop up on the screen:  
 
-![PowerShell Function Popup](../../../static/img/Set-Windows-Updates-to-Default/image_10.png)  
+![PowerShell Function Popup](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_10.webp)  
 
 Paste in the following PowerShell script and set the expected time of script execution to 600 seconds. Click the `Save` button.
 
@@ -68,57 +68,52 @@ try {
 (Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
 Set-StrapperEnvironment
 #endregion
-
 $failures = @()
 $properties = @(
     'NoAutoUpdate',
     'NoWindowsUpdate',
     'DisableWindowsUpdateAccess',
-    'SetDisableUXWUAccess'
+    'SetDisableUXWUAccess' 
 )
-
-# For Computer and System account
+#For Computer and System account
 $pathArray = @(
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
-    'HKLM:\\SYSTEM\\Internet Communication Management\\Internet Communication',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU',
+    'HKLM:\SYSTEM\Internet Communication Management\Internet Communication',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
 )
-
-foreach ($regPath in $pathArray) {
-    foreach ($property in $properties) {
-        if (Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
+foreach ( $regPath in $pathArray ) {
+    foreach ( $property in $properties ) {
+        if ( Get-ItemProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
             try {
-                Set-ItemProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
+                Set-ItemProperty -Path $regPath -Name $property -value 0 -Force -ErrorAction Stop
             } catch {
                 $failure = [pscustomobject]@{
                     RegistryPath = $regPath
                     PropertyName = $property
-                    FailureMessage = "Failed to set property: $($Error[0].Exception.Message)"
+                    FailureMessage = "Failed to Set property: $($Error[0].Exception.Message)"
                 }
                 $failures += $failure
             }
         }
     }
 }
-
-# For User Account
+#For User Account
 $pathArray = @(
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer'
+    'Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\Explorer'
 )
-
-foreach ($regPath in $pathArray) {
-    foreach ($property in $properties) {
-        if (Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue) {
+foreach ( $regPath in $pathArray ) {
+    foreach ( $property in $properties ) {
+        if ( Get-UserRegistryKeyProperty -Path $regPath -Name $property -ErrorAction SilentlyContinue ) {
             try {
                 Set-UserRegistryKeyProperty -Path $regPath -Name $property -Value 0 -Force -ErrorAction Stop
             } catch {
@@ -132,26 +127,27 @@ foreach ($regPath in $pathArray) {
         }
     }
 }
-
-if ($failures) {
-    throw ($failures | Out-String)
+if ( $failures ) {
+    throw ( $failures | Out-String )
 } else {
     return 'Success'
 }
+
 ```
+
+![alt text](../../../static/img/docs/set-windows-updates-to-default/image.png)
 
 ### Row 2: Function: Script Log
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image](../../../static/img/Set-Windows-Updates-to-Default/image_11.png)  
-![Script Log Output](../../../static/img/Set-Windows-Updates-to-Default/image_12.png)  
+![Script Log Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_11.webp)  
+![Script Log Output](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_12.webp)  
 
 ## Completed Task
 
-![Completed Task Image](../../../static/img/Set-Windows-Updates-to-Default/image_13.png)  
+![Completed Task Image](../../../static/img/docs/1be24785-d0c7-401c-8e47-833ab82d6c85/image_13.webp)  
 
 ## Output
 
 - Script Log
-

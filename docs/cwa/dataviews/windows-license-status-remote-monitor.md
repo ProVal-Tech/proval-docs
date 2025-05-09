@@ -33,5 +33,3 @@ This document displays the status of the Windows License fetched by the remote m
 | Data Collection Time    | The time when the Windows License Status was fetched              |
 | Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |
 
-
-

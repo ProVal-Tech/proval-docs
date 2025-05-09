@@ -16,13 +16,13 @@ This task deploys Perch Log Shipper on Windows machines.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Install-Perch-Log-Shipper/image_6.png)  
-![Sample Run 2](../../../static/img/Install-Perch-Log-Shipper/image_7.png)  
-![Sample Run 3](../../../static/img/Install-Perch-Log-Shipper/image_8.png)  
+![Sample Run 1](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_6.webp)  
+![Sample Run 2](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_7.webp)  
+![Sample Run 3](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_8.webp)  
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Install - PerchLogShipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e)
+[Install-PerchLogShipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e)
 
 ## User Parameters
 
@@ -30,68 +30,67 @@ This task deploys Perch Log Shipper on Windows machines.
 |-------|----------------------|-----------|-----------------------------------|
 | Token | hwu76-whduh-hhjdhj   | Mandatory | Populate it with an installation code. |
 
-![User Parameters Image](../../../static/img/Install-Perch-Log-Shipper/image_9.png)
+![User Parameters Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_9.webp)
 
-**Note:** 
-- If no parameters are set, the script will throw an error: "Invalid Token does not contain a value."
+**Note:** If no parameters are set, the script will throw an error: "Invalid Token does not contain a value."
 
 ## Task Creation
 
 Install PerchLogShipper. Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/Install-Perch-Log-Shipper/image_10.png)  
-![Task Creation Image 2](../../../static/img/Install-Perch-Log-Shipper/image_11.png)
+![Task Creation Image 1](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_10.webp)  
+![Task Creation Image 2](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_11.webp)
 
 **Name:** Install PerchLogShipper  
 **Description:** This task deploys Perch Log Shipper on Windows machines.  
 **Category:** Custom  
 
-![Task Creation Image 3](../../../static/img/Install-Perch-Log-Shipper/image_12.png)  
+![Task Creation Image 3](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_12.webp)  
 
 ### Parameters
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Add Parameter Image](../../../static/img/Install-Perch-Log-Shipper/image_13.png)  
+![Add Parameter Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_13.webp)  
 
 This screen will appear.  
 
-![Parameter Screen Image](../../../static/img/Install-Perch-Log-Shipper/image_14.png)  
+![Parameter Screen Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_14.webp)  
 
 - Set `Token` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Save Parameter Image](../../../static/img/Install-Perch-Log-Shipper/image_15.png)  
+![Save Parameter Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_15.webp)  
 
 Click the `Confirm` button to save the parameter.
 
-![Confirm Parameter Image](../../../static/img/Install-Perch-Log-Shipper/image_16.png)  
+![Confirm Parameter Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_16.webp)  
 
 ### Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Add Row Image](../../../static/img/Install-Perch-Log-Shipper/image_17.png)  
+![Add Row Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_17.webp)  
 
 A blank function will appear.
 
-![Blank Function Image](../../../static/img/Install-Perch-Log-Shipper/image_18.png)  
+![Blank Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_18.webp)  
 
 #### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.  
 
-![PowerShell Script Selection Image](../../../static/img/Install-Perch-Log-Shipper/image_19.png)  
-![PowerShell Script Image](../../../static/img/Install-Perch-Log-Shipper/image_20.png)  
+![PowerShell Script Selection Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_19.webp)  
+![PowerShell Script Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_20.webp)  
 
 The following function will pop up on the screen:  
 
-![PowerShell Function Image](../../../static/img/Install-Perch-Log-Shipper/image_21.png)  
+![PowerShell Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_21.webp)  
 
 ```powershell
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $Token = '@Token@'
 $Parameters = @{}
 if ($Token.Length -gt 5) {
@@ -105,13 +104,12 @@ $ProjectName = 'Install-PerchLogShipper'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -125,7 +123,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -133,47 +130,43 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```powershell
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath
 ```
 
-![Row 1 Function Image](../../../static/img/Install-Perch-Log-Shipper/image_22.png)  
+![Row 1 Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_22.webp)  
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Image](../../../static/img/Install-Perch-Log-Shipper/image_23.png)  
+![Add Row Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_23.webp)  
 
 A blank function will appear.  
-![Blank Function Image](../../../static/img/Install-Perch-Log-Shipper/image_18.png)  
+![Blank Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_18.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Selection Image](../../../static/img/Install-Perch-Log-Shipper/image_24.png)  
-![Script Log Image](../../../static/img/Install-Perch-Log-Shipper/image_25.png)  
+![Script Log Selection Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_24.webp)  
+![Script Log Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_25.webp)  
 
 The following function will pop up on the screen:  
-![Script Log Function Image](../../../static/img/Install-Perch-Log-Shipper/image_26.png)  
+![Script Log Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_26.webp)  
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Save Script Log Image](../../../static/img/Install-Perch-Log-Shipper/image_27.png)  
+![Save Script Log Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_27.webp)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-![Save Script Image](../../../static/img/Install-Perch-Log-Shipper/image_28.png)  
+![Save Script Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_28.webp)  
 
 ### Completed Task
 
-![Completed Task Image](../../../static/img/Install-Perch-Log-Shipper/image_29.png)  
+![Completed Task Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_29.webp)  
 
 ## Output
 
 - Script log
-

@@ -16,7 +16,7 @@ This document identifies computers that have not installed a Cumulative Update i
 
 Adjust the `Out_of_Date_CU-Autofix_Threshold` system property value to modify the number of days since the last cumulative update before a ticket is generated.
 
-![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_1.png)
+![Image](../../../static/img/docs/a835c448-fd00-4807-a3b2-8f1066e1a682/image_1.webp)
 
 The monitor set will not continue detecting computers for which a ticket has already been generated if it is using the suggested alert template `△ Custom - Autofix - Out of Date Cumulative Updates`.
 
@@ -24,11 +24,11 @@ This monitor has direct dependencies on the [Script - Get Latest Installed Cumul
 
 The `p.Scriptruntime` days in the monitor need to be set with one increment day to the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) schedule, as shown below:
 
-![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_2.png)
+![Image](../../../static/img/docs/a835c448-fd00-4807-a3b2-8f1066e1a682/image_2.webp)
 
 Please review the monitor [Internal Monitor - Execute Script - Get Latest Installed Cumulative Update](/docs/4d2a667d-ba87-4148-ba5d-d6da484acccf) and obtain the value from the `hs.dateissued` days. Set it with one day added to the `p.scriptruntime` value in the monitor.
 
-![Image](../../../static/img/Last-Cumulative-Update--75-Days-ago/image_3.png)
+![Image](../../../static/img/docs/a835c448-fd00-4807-a3b2-8f1066e1a682/image_3.webp)
 
 ## Dependencies
 
@@ -53,6 +53,4 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q1)** What happens if the machine hasn't logged in for several days, or if the interval of the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) is different from the `lastruntime` check in the table "[Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)"?
 
 **Ans)** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.
-
-
 

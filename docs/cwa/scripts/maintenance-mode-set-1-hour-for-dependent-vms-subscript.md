@@ -24,5 +24,3 @@ This is a function script that is called by the script "VM Host - Maint Mode Dep
 
 - This is a function script.
 - It runs only one command to set the maintenance mode on the machine.
-
-

@@ -31,5 +31,3 @@ Dataview displays information about computers that were previously retired and a
 | Serial Number            | Serial Number of Computer             |
 | Last User Name           | Last logged-in user name              |
 | Retire Comments          | Comments added while retiring          |
-
-

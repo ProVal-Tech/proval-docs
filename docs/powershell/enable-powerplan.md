@@ -44,5 +44,3 @@ PS C:> .\Enable-PowerPlan.ps1 -Name 'High Performance'
 
 - .\\Enable-PowerPlan-Log.txt
 - .\\Enable-PowerPlan-Error.txt
-
-

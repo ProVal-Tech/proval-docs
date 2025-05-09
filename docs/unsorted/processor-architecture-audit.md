@@ -40,4 +40,3 @@ The output is:
 | Operating System     | Operating System name of the agent               |
 | Last Contact         | Last contact of an agent with the RMM           |
 | Processor Architecture | Processor Architecture name                    |
-

@@ -16,14 +16,12 @@ This custom field is to be filled with the Huntress Tag. It is utilized by the [
 
 # Create the Custom Field
 
-![Image](../../../static/img/Huntress-Tag/image_1.png)
+![Image](../../../static/img/docs/30690dec-ecd0-448f-8429-24a5d2854953/image_1.webp)
 
-![Image](../../../static/img/Huntress-Tag/image_2.png)
+![Image](../../../static/img/docs/30690dec-ecd0-448f-8429-24a5d2854953/image_2.webp)
 
 **Name:** Huntress Tag  
 **Type:** Text Box  
 **Level:** Site  
 **Description:** Huntress Agent Tag. These could be simple keywords that can be used to group agents within the Huntress Organization.  
 **Editable:** Yes  
-
-

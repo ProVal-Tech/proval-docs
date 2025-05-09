@@ -18,7 +18,7 @@ This script takes a string parameter to define the URL to set the homepage and a
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Google-Chrome---Set-Homepage/image_1.png)
+![Sample Run](../../../static/img/docs/11d49195-0e8a-41a9-b08d-a7c41f1e5357/image_1.webp)
 
 ## Dependencies
 
@@ -47,5 +47,3 @@ The script takes a string parameter to define the URL to set the homepage. The a
 
 - Script log
 - Local file on computer
-
-

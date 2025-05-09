@@ -50,5 +50,3 @@ This command returns all users and their respective properties for the ConnectWi
 - System Object
 - `.\Get-CWControlUsers-Log.txt`
 - `.\Get-CWControlUsers.txt`
-
-

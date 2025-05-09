@@ -18,7 +18,7 @@ This script backs up the existing BitLocker recovery key to the joined AD domain
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Bitlocker---Backup-Recovery-Key-to-AD/image_1.png)
+![Sample Run](../../../static/img/docs/5f31f0b4-b682-4444-bd51-3182a8a2bd39/image_1.webp)
 
 ## Dependencies
 
@@ -46,5 +46,3 @@ The machine must be using BitLocker for encryption.
 ## Output
 
 - Script log
-
-

@@ -17,5 +17,3 @@ This monitor checks for drives other than C: at the location level to ensure tha
 ## Target
 
 Windows Server
-
-

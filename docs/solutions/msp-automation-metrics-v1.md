@@ -28,5 +28,3 @@ This solution is intended to provide important MSP data relating to the client e
 - Import the [CWM - Automate - Dataview - MSP Automation Metrics](/docs/3532cdd7-5d1f-4ac4-91c5-38993e1245f8) dataview.
 - Debug the [CWM - Automate - Script - MSP Automation Metrics - plugin_proval_h_msp_metrics](/docs/408bb0fc-cfe0-4ea3-8e77-af13c41e054e) script against any client and verify the presence of data in the dataview.
 - Schedule the script to run on the 1st of each month.
-
-

@@ -46,5 +46,3 @@ Location of output for log, result, and error files.
 .\Set-UserRegistryValue-log.txt
 .\Set-UserRegistryValue-ERROR.txt
 ```
-
-

@@ -20,15 +20,15 @@ This script deletes a user profile and removes the user account if it is local. 
 
 #### Example 1: Removes user profile and the local user from the machine
 
-![Example1](../../../static/img/cwa-user-profile-remove/Example1.png)
+![Example1](../../../static/img/docs/765d906e-33c3-4615-9cd6-9c01a9eeaebb/Example1.webp)
 
 #### Example 2: Removes user profile without removing the local user
 
-![Example2](../../../static/img/cwa-user-profile-remove/Example2.png)
+![Example2](../../../static/img/docs/765d906e-33c3-4615-9cd6-9c01a9eeaebb/Example2.webp)
 
 #### Example 3: Removes user profile based on SID. SID parameter can be used when UserName is not available. 
 
-![Example3](../../../static/img/cwa-user-profile-remove/Example3.png)
+![Example3](../../../static/img/docs/765d906e-33c3-4615-9cd6-9c01a9eeaebb/Example3.webp)
 
 ## Dependencies
 

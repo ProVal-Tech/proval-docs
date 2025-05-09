@@ -18,7 +18,7 @@ Although the solution does not automatically remove the unknown or cached user p
 
 The [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) task identifies and returns the Security Identifiers (SIDs) of unknown/cached user profiles, which can then be used as input parameters for the [Remove User Profile](/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4) task.
 
-![Sample Run](../../static/img/Remove-User-Profile/Image5.png) 
+![Sample Run](../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/Image5.webp) 
 
 <span style={{color: 'red'}}>**Caution: The [Remove User Profile](/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4) task is destructive and should only be used after fully understanding the implications.**</span>
 

@@ -42,5 +42,3 @@ The output will be logged in the following file:
 ```
 .\\Register-ChromiumExtension-log.txt
 ```
-
-

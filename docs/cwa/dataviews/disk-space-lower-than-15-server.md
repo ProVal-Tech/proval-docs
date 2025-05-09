@@ -53,5 +53,3 @@ None
 | LocationID             | The numerical DB value for the location                                     |
 | Operating System       | The name of the operating system on the computer                            |
 
-
-

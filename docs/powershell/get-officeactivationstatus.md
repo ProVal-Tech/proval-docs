@@ -22,5 +22,3 @@ This command uses the SoftwareLicensingProduct CIM class to gather activation de
 
 ## Output
 The output is saved to `.\Get-OfficeActivationStatus-log.txt`.
-
-

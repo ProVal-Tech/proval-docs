@@ -48,5 +48,3 @@ The data view displays the power plan settings gathered by the [EPM - Data Colle
 ## Sample Screenshot
 
 <iframe src="https://proval.itglue.com/attachments/14048242?preview=1" width="100%" height="1000px" frameborder="0"></iframe>
-## Attachments
-[sample_powerplan_dataview.png](<../../../static/attachments/itg/15053779/sample_powerplan_dataview.png>)

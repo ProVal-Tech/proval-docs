@@ -18,7 +18,7 @@ This script will collect information about the installed [PnP Devices](https://d
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Get-PNPDevices-DV/image_1.png)
+![Sample Run](../../../static/img/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9/image_1.webp)
 
 ## Dependencies
 
@@ -45,5 +45,3 @@ This script will collect information about the installed [PnP Devices](https://d
 
 - Script Log
 - Dataview
-
-

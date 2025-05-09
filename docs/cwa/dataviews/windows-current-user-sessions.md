@@ -47,5 +47,3 @@ The information displayed in this dataview is populated into the custom table `@
 | Location (All Possible Columns) | This dataview includes all possible location details such as location address, location phone number, etc. |
 | Client (All Possible Columns) | Contains all possible client details such as client city, client phone, etc.                 |
 | Computer (All Possible Columns) | Contains all possible computer details such as Computer OS Build, Type, Manufacturer, etc.  |
-
-

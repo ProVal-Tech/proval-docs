@@ -16,11 +16,11 @@ This script is used to reset Windows update settings. Running the script does no
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/Repair-Windows-Update/image_1.png)
+![Sample Run 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_1.webp)
 
-![|Sample Run 2](../../../static/img/docs/repair-windows-update/image.png)
+![|Sample Run 2](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image.webp)
 
-![Sample Run 3](../../../static/img/Repair-Windows-Update/image_3.png)
+![Sample Run 3](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_3.webp)
 
 ## Dependencies
 
@@ -33,21 +33,21 @@ This script is used to reset Windows update settings. Running the script does no
 | SfcScan  | 0/1     | False    | Flag  | This flag toggles an optional SFC scan.                                    |
 | DISMRepair  | 0/1     | False    | Flag  | This flag toggles an optional DISM Repair.                                    |
 
-![User Parameter Image](../../../static/img/docs/repair-windows-update/{902A43AB-6450-48E4-A3E6-ED4FCC57C4C3}.png)
+![User Parameter Image](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/{902A43AB-6450-48E4-A3E6-ED4FCC57C4C3}.webp)
 
 ## Task Creation
 
 Create a new `Script Editor` style script in the system to implement this task.
 
-![Task Creation Image 1](../../../static/img/Repair-Windows-Update/image_5.png)
+![Task Creation Image 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_5.webp)
 
-![Task Creation Image 2](../../../static/img/Repair-Windows-Update/image_6.png)
+![Task Creation Image 2](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_6.webp)
 
 **Name:** `Repair Windows Update`  \
 **Description:** `Script used to reset Windows update settings. It is not necessary that running the script will resolve any issue with the Windows updates. It will simply attempt to reset Windows update settings.`  \
 **Category:** `Patching`  
 
-![Task Creation Image 3](../../../static/img/Repair-Windows-Update/image_7.png)
+![Task Creation Image 3](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_7.webp)
 
 ## Parameters
 
@@ -55,55 +55,53 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
-![Parameter Setup Image 1](../../../static/img/Repair-Windows-Update/image_8.png)
+![Parameter Setup Image 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_8.webp)
 
 This screen will appear.
 
-![Parameter Setup Image 2](../../../static/img/Repair-Windows-Update/image_9.png)
+![Parameter Setup Image 2](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_9.webp)
 
 - Set `SfcScan` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Parameter Setup Image 3](../../../static/img/Repair-Windows-Update/image_10.png)
+![Parameter Setup Image 3](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_10.webp)
 
 Add another parameter by clicking the Add Parameter button
 
-![Parameter Setup Image 1](../../../static/img/Repair-Windows-Update/image_8.png)
-
-
+![Parameter Setup Image 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_8.webp)
 
 - Set `DismRepair` in the `Parameter Name` field.
 - Select `Flag` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![DISM Parameter Image](../../../static/img/docs/repair-windows-update/image-1.png)
+![DISM Parameter Image](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image-1.webp)
 
 ## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
-![Task Image 1](../../../static/img/Repair-Windows-Update/image_11.png)
+![Task Image 1](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_11.webp)
 
 A blank function will appear.
 
-![Task Image 2](../../../static/img/Repair-Windows-Update/image_12.png)
+![Task Image 2](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_12.webp)
 
 ### Row 1 Function: PowerShell Script
 
 Search and select the `PowerShell Script` function.
 
-![Task Image 3](../../../static/img/Repair-Windows-Update/image_13.png)
+![Task Image 3](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_13.webp)
 
-![Task Image 4](../../../static/img/Repair-Windows-Update/image_14.png)
+![Task Image 4](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_14.webp)
 
 The following function will pop up on the screen:
 
-![Task Image 5](../../../static/img/Repair-Windows-Update/image_15.png)
+![Task Image 5](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_15.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
-```
+```PowerShell
 #region parameters
 $SfcScan = '@SfcScan@'
 $DISMRepair = '@DISMRepair@'
@@ -114,7 +112,7 @@ if ( $SfcScan -match '1|Yes|True' ) {
     $Parameters.Add('SfcScan', $true)
 }
 if ( $DISMRepair -match '1|Yes|True' ) {
-	$Parameters.Add('DISMRepair', $true)
+    $Parameters.Add('DISMRepair', $true)
 }
 #endregion
 #region Setup - Variables
@@ -160,40 +158,38 @@ Get-Content -Path $LogPath
 #endregion
 ```
 
-![Task Image](../../../static/img/docs/repair-windows-update/{C72E91DA-4F21-4745-A33F-02A4941718F0}.png)
+![Task Image](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/{C72E91DA-4F21-4745-A33F-02A4941718F0}.webp)
 
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
-![Task Image 7](../../../static/img/Repair-Windows-Update/image_17.png)
+![Task Image 7](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_17.webp)
 
 A blank function will appear.
 
-![Task Image 8](../../../static/img/Repair-Windows-Update/image_18.png)
+![Task Image 8](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_18.webp)
 
 Search and select the `Script Log` function.
 
-![Task Image 9](../../../static/img/Repair-Windows-Update/image_19.png)
+![Task Image 9](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_19.webp)
 
 The following function will pop up on the screen:
 
-![Task Image 10](../../../static/img/Repair-Windows-Update/image_20.png)
+![Task Image 10](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_20.webp)
 
 In the script log message, simply type `%Output%` and click the `Save` button.
 
-![Task Image 11](../../../static/img/Repair-Windows-Update/image_21.png)
+![Task Image 11](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_21.webp)
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
-![Task Image 12](../../../static/img/Repair-Windows-Update/image_22.png)
+![Task Image 12](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_22.webp)
 
 ## Completed Script
 
-![Completed Script Image](../../../static/img/Repair-Windows-Update/image_23.png)
+![Completed Script Image](../../../static/img/docs/7c19c014-844e-40b8-951e-bf3609052d92/image_23.webp)
 
 ## Output
 
 - Script log
-
-

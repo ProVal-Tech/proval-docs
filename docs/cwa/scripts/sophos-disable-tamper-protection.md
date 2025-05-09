@@ -18,7 +18,7 @@ This script will reboot a machine into safe mode and change the registry keys re
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Sophos---Disable-Tamper-Protection/image_1.png)
+![Sample Run](../../../static/img/docs/f7d7af7b-0b1e-463a-bda5-e9d30901e0b6/image_1.webp)
 
 ## Dependencies
 
@@ -36,5 +36,3 @@ The script will first verify that the target device has Sophos installed. It wil
 ## Output
 
 Script log messages only.
-
-

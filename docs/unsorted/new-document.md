@@ -47,4 +47,3 @@ The output location for log, result, and error files is as follows:
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
-

@@ -41,5 +41,3 @@ The purpose of this document is to represent all the details of the Extradatafie
 | Is Editable               | Represents whether the EDF is editable or not                                                   |
 | Is Restricted             | Represents whether the EDF is restricted or not                                                 |
 | (Masked/Password)         | Represents whether the EDF is masked or has a password                                          |
-
-

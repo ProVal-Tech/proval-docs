@@ -13,7 +13,7 @@ unlisted: false
 ## Creating the API User
 1. Log into the Client VSA and navigate to System > Server Management > Default Settings.
 2. Take note of the current setting "Require email address for user name". If this is set to 'Yes', change this setting to No.
-    ![image](/img/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image1.png)
+    ![image](/img/docs/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image1.webp)
 3. Next, go to System > Users.
 4. Click "New"
 5. Enter the following information in the fields:
@@ -33,7 +33,7 @@ unlisted: false
 6. Click Save.
 7. Save these credentials in an ITG password as "Kaseya - API"
 
-    ![image](/img/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image2.png)
+    ![image](/img/docs/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image2.webp)
 
 ## Generating API Tokens
 1. Now that the API User is created, select it in the list and click on the "Access Tokens" tab at the right.
@@ -43,11 +43,11 @@ unlisted: false
     - Expires after the date: Leave Blank
     - Scopes Assigned: Check ONLY "REST API (Read, Write)"
 
-    ![image](/img/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image3.png)
+    ![image](/img/docs/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image3.webp)
 3. Click Save
 4. Once you click save, the token window will pop up. Copy the token to the clipboard, and IMMEDIATELY save this information in the ITGlue API User you created earlier in the process, in the Notes field, as: `REST API Token: TOKEN`
     
-    ![image](/img/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image4.png)
+    ![image](/img/docs/3d6fedad-5cd1-47d6-b136-8c9fb3a092ba/image4.webp)
 
 5. Once that's done, close the token window, and click "New" again. We will now create a Data Warehouse token. Fill the following properties:
     - Token Name: DataWarehouse API

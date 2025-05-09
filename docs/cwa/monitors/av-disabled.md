@@ -25,5 +25,3 @@ None.
 All machines with Antivirus installed and/or the managed service plans. 
 
 This monitor will work for all operating systems, but the available Autofix will only run on Windows devices!
-
-

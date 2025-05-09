@@ -15,13 +15,13 @@ unlisted: false
 The remote monitor attempts to disable the Autofilling feature for addresses in Chromium-based browsers such as Google Chrome, Microsoft Edge, and Brave. This solution entails modifying the computer's registry settings.
 
 **Affected Setting for Google Chrome:**  
-![Google Chrome Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_1.png)
+![Google Chrome Setting](../../../static/img/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b/image_1.webp)
 
 **Affected Settings for Microsoft Edge:**  
-![Microsoft Edge Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_2.png)
+![Microsoft Edge Setting](../../../static/img/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b/image_2.webp)
 
 **Affected Setting for Brave:**  
-![Brave Setting](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_3.png)
+![Brave Setting](../../../static/img/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b/image_3.webp)
 
 **Note:**
 - The changes will take effect only after the browser is restarted if it is currently open.
@@ -39,7 +39,7 @@ Using any alert templates is not recommended unless the partner specifically des
 |--------------|----------------|------------|---------------|------------|----------|--------|
 | System       | 127.0.0.1     | Run File   | **REDACTED**  | State Based| 604800 (Weekly) | Screenshot attached below. |
 
-![Screenshot](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_4.png)
+![Screenshot](../../../static/img/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b/image_4.webp)
 
 ## Dependencies
 
@@ -51,7 +51,7 @@ Using any alert templates is not recommended unless the partner specifically des
 ## Target
 
 **Group:** △ Lockdown Browsers Autofill  
-![Target Group](../../../static/img/Lockdown-Chromium-Browsers-Address-Autofill/image_5.png)
+![Target Group](../../../static/img/docs/0f88cca8-1b15-44ba-92dc-ec6e2c72377b/image_5.webp)
 
 ## Implementation
 
@@ -359,13 +359,13 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 
 ---
 ### Step 7
 #### Reload System Cache
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_1.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_1.webp)
 
 ---
 ### Step 8
 #### Refresh Searches and Groups.
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_2.png)
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_3.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_2.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_3.webp)
 
 ---
 ### Step 9
@@ -373,5 +373,5 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - `ProVal - Production - Lockdown Browsers Password Manager`
 - `ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill`
 - `ProVal - Production - Lockdown Chromium Browsers Address Autofill`
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_4.png)
-![Image](../../../static/img/Implement---Group-Monitors---△-Lockdown-Browsers-Autofill/image_5.png)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5.webp)

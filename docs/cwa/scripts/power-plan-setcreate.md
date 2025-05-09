@@ -24,7 +24,7 @@ The settings for the power plan are required to create or modify the power plan.
 
 Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor.
 
-![Sample Run](../../../static/img/Power-Plan---SetCreate/image_1.png)
+![Sample Run](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_1.webp)
 
 ## Sample Run (Manual)
 
@@ -39,13 +39,13 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 - Refrain from modifying any columns other than the `Direct Power Setting (AC)` and `Direct Power Setting (DC)` columns.  
 - Keep the first row of the CSV file unchanged.
 
-![CSV Example](../../../static/img/Power-Plan---SetCreate/image_2.png)
+![CSV Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_2.webp)
 
 - Rename the file to a name relevant to the PowerProfile you intend to create or edit.  
 - In this example, I am renaming it to `Test_Power_Plan` as I will be creating a power plan named `Test Power Plan` on the machine.  
 - Place the file in the `LTShare` (WebDav for hosted partners) within the `Transfer/PowerPlan` directory. If the `PowerPlan` directory doesn't exist under the `Transfer` directory, you may need to create it.
 
-![Directory Example](../../../static/img/Power-Plan---SetCreate/image_3.png)
+![Directory Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_3.webp)
 
 - Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.  
 - Run the script on the relevant machine(s) with the specified parameters to create the `Test Power Plan` with the power settings outlined in the CSV file `Test_Power_Plan`:
@@ -53,7 +53,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **PowerPlan:** Test Power Plan  
 **CSVPath:** Test_Power_Plan  
 
-![Run Example](../../../static/img/Power-Plan---SetCreate/image_4.png)
+![Run Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_4.webp)
 
 **Example 2:** Placing the CSV file in a downloadable location other than LTShare.
 
@@ -66,7 +66,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **PowerPlan:** Test Power Plan  
 **CSVPath:** [https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv](https://file.provaltech.com/repo/powerplan/Test_Power_Plan.csv)  
 
-![Download Example](../../../static/img/Power-Plan---SetCreate/image_5.png)
+![Download Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_5.webp)
 
 **Example 3:** Using HashTable
 
@@ -106,25 +106,25 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
 
-![Run Configuration](../../../static/img/Power-Plan---SetCreate/image_6.png)
+![Run Configuration](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_6.webp)
 
 ## Automation
 
 - Edit and place the [configuration file](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 
-![Automation Example](../../../static/img/Power-Plan---SetCreate/image_7.png)
+![Automation Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_7.webp)
 
 - Set the appropriate option in the Client-Level EDF `PowerPlan Automation` to enable it for the client's machines. Leaving it blank is equivalent to setting it to `Not Enabled`.
 
-![Client-Level EDF](../../../static/img/Power-Plan---SetCreate/image_8.png)
+![Client-Level EDF](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_8.webp)
 
 - Set the name of the CSV file placed in the LTShare to the `PowerPlan Configuration File` EDF.
 
-![CSV Name Example](../../../static/img/Power-Plan---SetCreate/image_9.png)
+![CSV Name Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_9.webp)
 
 - Set the name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and can be anything.
 
-![PowerPlan Name Example](../../../static/img/Power-Plan---SetCreate/image_10.png)
+![PowerPlan Name Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_10.webp)
 
 **Note:**
 
@@ -185,7 +185,7 @@ Here's a breakdown of the columns in the CSV file:
 | PowerPlan Configuration File| ProVal_-_High_Performance | Text      | PowerPlan  | Set the name of the CSV file placed in the LTShare to the `PowerPlan Configuration File` EDF. |
 | PowerPlan Name             | ProVal High Performance | Text      | PowerPlan  | Set the name of the PowerPlan to the `PowerPlan Name` EDF. This name will be displayed for the plan at the end machine and can be anything. |
 
-![Client-Level EDF Example](../../../static/img/Power-Plan---SetCreate/image_11.png)
+![Client-Level EDF Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_11.webp)
 
 ## Computer-Level EDF
 

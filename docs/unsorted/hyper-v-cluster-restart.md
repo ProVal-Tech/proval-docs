@@ -59,4 +59,3 @@ This command will cycle through all nodes of ClusterName and attempt to drain th
 ./Restart-HyperVCluster-log.txt
 ./Restart-HyperVCluster-error.txt
 ```
-

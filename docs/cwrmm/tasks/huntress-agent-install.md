@@ -16,97 +16,96 @@ Installs the Huntress agent on the Windows machine if it's not already installed
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)  
-- [CW RMM - Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)  
-- [CW RMM - Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)  
-- [CW RMM - Custom Fields - Huntress Deploy_Result](/docs/822e9dc0-d455-4706-8482-175b85dbd491)  
-- [CW RMM - Device Group - Deploy Huntress](/docs/c19dc248-c6a0-4f9c-88c5-b3058245d74a)  
+- [Custom Fields - Huntress Acct_Key](/docs/b8ce44cf-a4a7-4b17-a292-43615b2b192a)  
+- [Custom Fields - Huntress Org_Key](/docs/00d66215-fe07-4bae-b6cb-d96a73486694)  
+- [Custom Fields - Huntress Tag](/docs/30690dec-ecd0-448f-8429-24a5d2854953)  
+- [Custom Fields - Huntress Deploy_Result](/docs/822e9dc0-d455-4706-8482-175b85dbd491)  
+- [Device Group - Deploy Huntress](/docs/c19dc248-c6a0-4f9c-88c5-b3058245d74a)  
 
 ## Create Script
 
 Please create a new "PowerShell" style script to implement this script.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_1.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_2.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_1.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_2.webp)  
 
 **Name:** Huntress Agent Install  
 **Description:** This task will check first if Huntress is installed. If not, it attempts to install the agent and log the result.  
 **Category:** Custom  
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_3.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_3.webp)  
 
 ## Script
 
 ### Row 1 Function: Script Log
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_4.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4.webp)  
 
 Input the following:
 
->This script will detect the Huntress Agent, and if the agent is not found, it will install the agent.
->
->acct_key : `@acct_key@`  
->org_key: `@ORG_Key@`  
->tags: ['installation', 'security', 'setup', 'windows']
->
->Attempting to download the file using acct_key from the Huntress website as below:  
->
->[https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded, the agent will be attempted to install.
+```Shell
+This script will detect the Huntress Agent and if the agent is not found then it will install the agent.
+acct_key : @acct_key@
+org_key: @ORG_Key@
+Tags: @Tags@
+Attempting to download the file using acct_key from the huntress website as below:
+https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be attempted to install.
+```
 
 ### Row 2 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `acct_key` as Variable name
 - Select `Huntress Acct_Key` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_6.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6.webp)  
 
 ### Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `ORG_Key` as Variable name
 - Select `Huntress Org_Key` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_7.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7.webp)  
 
 ### Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_5.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5.webp)  
 
 - Select `Custom Field`
 - Input `Tags` as Variable name
 - Select `Huntress Tag` custom field from the drop-down
 - Click Save
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_8.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_8.webp)  
 
 ### Row 5 Function: PowerShell Script
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_9.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_9.webp)  
 
 Paste in the following PowerShell script and set the expected script execution time to `1500` seconds.
 
-```
-$installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+```PowerShell
+$installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
 if ($installed -match 'Huntress') {
     Write-Output 'Huntress agent is installed already.'
 } else {
     #region Setup - Variables
     $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-    $WorkingDirectory = 'C:\\ProgramData\\_Automation\\Script\\Invoke-HuntressAgentCommand'
-    $PS1Path = "$WorkingDirectory\\Invoke-HuntressAgentCommand.ps1"
+    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
+    $PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
     $AcctKey = '@acct_key@'
     $OrgKey = '@Org_Key@'
     $Tags = '@tags@'
@@ -133,14 +132,13 @@ if ($installed -match 'Huntress') {
     #endregion
 
     #region Setup - Folder Structure
-    if (!(Test-Path $WorkingDirectory)) {
+    if ( !(Test-Path $WorkingDirectory) ) {
         try {
             New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
         } catch {
             return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
         }
-    } 
-    if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' }).FileSystemRights -Match 'FullControl')) {
+    } if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
         $ACl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
@@ -157,7 +155,7 @@ if ($installed -match 'Huntress') {
         [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
     }
     if (!(Test-Path -Path $PS1Path)) {
-        return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
+        return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
     }
     #endregion
 
@@ -170,7 +168,7 @@ if ($installed -match 'Huntress') {
     #endregion
 
     Start-Sleep -Seconds 300
-    $installed = Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
+    $installed = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object {$_.DisplayName -match 'Huntress' } | Select-Object -ExpandProperty DisplayName
     if ($installed -match 'Huntress') {
         Write-Output 'Huntress agent is installed successfully.'
     } else {
@@ -179,7 +177,7 @@ if ($installed -match 'Huntress') {
 }
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_10.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_10.webp)  
 
 ### Step 6 Function: Script Log
 
@@ -187,36 +185,36 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Log` function.
 - Input the following  
 
-```
+```Shell
 %Output%
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_11.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_12.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_12.webp)  
 
 ### Step 7 Logic: If Then Else
 
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_13.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_13.webp)  
 
 ### ROW 7a Condition: Output Contains
 
 - Type `Huntress agent is installed` in the Value box.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_14.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_14.webp)  
 
 ### ROW 7b Function: Set Custom Field
 
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_15.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_15.webp)  
 
 - Search and select the `Huntress Deploy_Result` Custom Field.
 - Type `Successfully Installed` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_16.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16.webp)  
 
 ### ROW 7c Function: Script Log
 
@@ -224,12 +222,12 @@ if ($installed -match 'Huntress') {
 - Search and select the `Script Exit` function.
 - Leave it blank
 
-```
+```Shell
 Huntress Agent is installed successfully.
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_17.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_18.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_17.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18.webp)  
 
 ### ROW 7d Function: Script Exit
 
@@ -237,18 +235,18 @@ Huntress Agent is installed successfully.
 - Search and select the `Script Exit` function.
 - Leave it blank
 
-```
+```Shell
 
 ```
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_19.png)  
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_20.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_19.webp)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_20.webp)  
 
 ### Step 7e Logic: If/Then
 
 Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `Else` section.  
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_21.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_21.webp)  
 
 ### Row 7e(i) Condition: Output Contains
 
@@ -257,7 +255,7 @@ Add a new `If/Then` logic from the `Add Logic` dropdown menu inside the `Else` s
 - Select another condition with the `OR` Operator
 - Type `Account Key Missing` in the Value box.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_22.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_22.webp)  
 
 ### Row 7e(ii) Function: Set Custom Field
 
@@ -265,12 +263,12 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 
 - Search and select the `Set Custom Field` function.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_23.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_23.webp)  
 
 - Search and select the `Huntress Deploy_Result` Custom Field.
 - Type `%Output%` in the `Value` box and click the Save button.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_24.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_24.webp)  
 
 ### Row 7e(iii) Function: Script Exit
 
@@ -279,14 +277,14 @@ Add another row by selecting the `ADD ROW` button in the `Else` section of the i
 - Search and select the `Script Exit` function.
 - Input the following  
 
-```
+```Shell
 Failed to install Huntress. Refer to the below log:
 %Output%
 ```
 
 The final task should look like the screenshot below.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_25.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_25.webp)  
 
 ## Script Deployment
 
@@ -296,7 +294,7 @@ Go to Automations > Tasks.
 Search for Huntress Agent Install.  
 Then click on Schedule and provide the parameter details as necessary for the script completion.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_26.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_26.webp)  
 
 ## Output
 
@@ -307,10 +305,9 @@ Then click on Schedule and provide the parameter details as necessary for the sc
 **Note:**  
 For the Huntress deployment, the Huntress_Acct_Key is mandatory to be filled at the company level.
 
-![Image](../../../static/img/Huntress-Agent-(INSTALL)/image_27.png)  
+![Image](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_27.webp)  
 
 The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
-

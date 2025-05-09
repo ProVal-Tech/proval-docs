@@ -48,4 +48,3 @@ Location of output for log, result, and error files.
 ```
 
 [mct]: https://github.com/AveYo/MediaCreationTool.bat
-

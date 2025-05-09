@@ -18,7 +18,7 @@ This script counts the number of patches that have not been actioned in any appr
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Patch-Not-Set---Count/image_1.png)
+![Sample Run](../../../static/img/docs/73399399-1acc-444b-bf16-73f6b534a35b/image_1.webp)
 
 #### Global Parameters
 
@@ -33,5 +33,3 @@ This script runs a SQL query to check for the count of patches that have not bee
 ## Output
 
 - Script log
-
-

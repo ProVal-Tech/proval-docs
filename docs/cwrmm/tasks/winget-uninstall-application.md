@@ -16,7 +16,7 @@ This document outlines the process to uninstall an application via Winget.
 
 ## Parameters
 
-- **ID** = Winget application ID (Example: Google.Chrome)  
+**ID** = Winget application ID (Example: Google.Chrome)  
 To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.
 
 ## Dependencies
@@ -27,21 +27,26 @@ None. This script can be executed on any Windows device.
 
 To implement this script, please create a new PowerShell-style script on the system.
 
-![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_1.png)  
-![Winget Uninstall Application](../../../static/img/Winget-Uninstall-Application/image_2.png)  
+![Winget Uninstall Application](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_1.webp)  
+![Winget Uninstall Application](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_2.webp)  
 
-**Name:** Winget Uninstall Application  
-**Description:** Attempts to uninstall an application via Winget  
-**Parameter:**  
+**Name:** `Winget Uninstall Application`  
+**Description:** 
+
+```shell
+Attempts to uninstall an application via Winget  
+Parameter:
 - ID = Winget application ID (Example: Google.Chrome)  
-To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.  
-**Category:** Custom  
+To obtain the ID, you can search in the command prompt using `winget search appname` or by browsing to winget.run.
+```
 
-![Parameter](../../../static/img/Winget-Uninstall-Application/image_3.png)  
+**Category:** `Custom`  
+
+![Parameter](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_3.webp)  
 
 ### Parameter
 
-![Parameter](../../../static/img/Winget-Uninstall-Application/image_4.png)  
+![Parameter](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_4.webp)  
 **Parameter Name:** id  
 **Required Field:** Selected  
 **Parameter Type:** Text String  
@@ -50,28 +55,28 @@ To obtain the ID, you can search in the command prompt using `winget search appn
 
 #### Row 1 Function: Script Log
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_5.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_5.webp)  
 
 Input the following:  
-![Input](../../../static/img/Winget-Uninstall-Application/image_6.png)  
+![Input](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_6.webp)  
 
 #### Row 2 Function: PowerShell Script
 
-![PowerShell Script](../../../static/img/Winget-Uninstall-Application/image_7.png)  
+![PowerShell Script](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_7.webp)  
 
 Paste the following PowerShell script and set the expected time of script execution to 600 seconds.
 
-```
-<# 
-.SYNOPSIS 
-Uses the PowerShell wrapper for WinGet to uninstall an application 
-.OUTPUTS 
-Install-@id@-log.txt 
-Install-@id@-error.txt 
-.NOTES 
-Script will check if WinGet is installed and attempt to install if not present. 
-Can be run as SYSTEM. 
-#> 
+```PowerShell
+<#
+.SYNOPSIS
+Uses the powershell wrapper for WinGet to uninstall an application
+.OUTPUTS
+Install-@id@-log.txt
+Install-@id@-error.txt
+.NOTES
+Script will check if WinGet is installed and attempt to install if not present.
+Can be run as SYSTEM.
+#>
 
 ### Bootstrap ###
 if (-not $bootstrapLoaded) {
@@ -96,15 +101,15 @@ if (!(Get-Module '7ZipArchiveDsc' -ErrorAction SilentlyContinue)) {
     Install-Module -Name 7ZipArchiveDsc
 }
 Import-Module 7ZipArchiveDsc
-$wingetWorkingPath = "$env:ProgramData/_automation/winget"
+$wingetWorkingPath = "$env:ProgramData\_automation\winget"
 New-Item -Type Directory -Path $wingetWorkingPath -ErrorAction SilentlyContinue
 Expand-7ZipArchive -Path $wingetMsixPath -Destination $wingetWorkingPath
-$wingetParentPath = "$wingetWorkingPath/app"
-$wingetPath = "$wingetParentPath/winget.exe"
+$wingetParentPath = "$wingetWorkingPath\app"
+$wingetPath = "$wingetParentPath\winget.exe"
 if ([Environment]::Is64BitOperatingSystem) {
-    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x64.msix" -Destination $wingetParentPath
+    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x64.msix" -Destination $wingetParentPath
 } else {
-    Expand-7ZipArchive -Path "$wingetWorkingPath/AppInstaller_x86.msix" -Destination $wingetParentPath
+    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x86.msix" -Destination $wingetParentPath
 }
 
 # Install VCLibs if required
@@ -116,12 +121,12 @@ if (!(Get-ProvisionedAppPackage -Online | Where-Object { $_.DisplayName -match '
     Remove-Item -Path $vclib -Force
 }
 
-# Check to ensure redistributables are present on the machine
+#check to ensure redists are present on the machine
 $Visual2019 = 'Microsoft Visual C++ 2015-2019 Redistributable*'
 $Visual2022 = 'Microsoft Visual C++ 2015-2022 Redistributable*'
 $path = Get-Item @(
-    'HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/*',
-    'HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall/*'
+    'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
+    'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
 ) | Where-Object { $_.GetValue('DisplayName') -like $Visual2019 -or $_.GetValue('DisplayName') -like $Visual2022 }
 if (!($path)) {
     try {
@@ -133,10 +138,10 @@ if (!($path)) {
         Write-Log -Text "Downloading $VCRedistTarget..." -Type Log
         $SourceURL = "https://aka.ms/vs/17/release/$VCRedistTarget"
         $ProgressPreference = 'SilentlyContinue'
-        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP/$VCRedistTarget"
+        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP\$VCRedistTarget"
         Write-Log -Text "Installing $VCRedistTarget..." -Type LOG
-        Start-Process -FilePath "$env:TEMP/$VCRedistTarget" -Args '/quiet /norestart' -Wait
-        Remove-Item "$env:TEMP/$VCRedistTarget" -ErrorAction SilentlyContinue
+        Start-Process -FilePath "$env:TEMP\$VCRedistTarget" -Args '/quiet /norestart' -Wait
+        Remove-Item "$env:TEMP\$VCRedistTarget" -ErrorAction SilentlyContinue
         Write-Log -Text 'MS Visual C++ 2015-2022 installed successfully' -Type LOG
     } catch {
         Write-Log -Text 'MS Visual C++ 2015-2022 installation failed.' -Type LOG
@@ -144,10 +149,10 @@ if (!($path)) {
 } else {
     Write-Log -Text 'Prerequisites checked. OK' -Type LOG
 }
-# Print out user to log for debug
+#print out user to log for debug
 Write-Log -Text "Running as $(whoami)" -Type LOG
 
-# If we couldn't find winget, fail and throw since we already tried installing
+#if we couldn't find winget, fail and throw since we already tried installing
 if (!(Test-Path -Path $wingetPath)) {
     Write-Log -Text 'Unable to install winget' -Type ERROR
     throw 'Exception - Unable to install WinGet'
@@ -160,18 +165,18 @@ Write-Log -Text 'Uninstalling @id@.' -Type LOG
 & $wingetPath uninstall --id @id@
 ```
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_8.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_8.webp)  
 
 #### Row 3 Function: Script Log
 
-![Script Log](../../../static/img/Winget-Uninstall-Application/image_5.png)  
+![Script Log](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_5.webp)  
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Output](../../../static/img/Winget-Uninstall-Application/image_9.png)  
+![Output](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_9.webp)  
 
 The final task should look like the screenshot below.  
-![Final Task](../../../static/img/Winget-Uninstall-Application/image_10.png)  
+![Final Task](../../../static/img/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89/image_10.webp)  
 
 ## Script Deployment
 
@@ -180,5 +185,3 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
-
-

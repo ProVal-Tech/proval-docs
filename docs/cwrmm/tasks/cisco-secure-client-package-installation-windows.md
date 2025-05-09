@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task is a CW RMM implementation of the agnostic script [SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
+This task is a CW RMM implementation of the agnostic script [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea). It allows for the installation of either the entire suite or specific modules of the Cisco Secure Client. Parameters are utilized in a manner consistent with the agnostic script approach.
 
 ## Prerequisites
 
@@ -20,94 +20,131 @@ Download the `Cisco Secure Client Pre-Deployment Package (Windows) - includes in
 
 **NOTE**  
 To access/download these files, you will need a login to the Cisco portal. If you do not have a portal login, please create one and validate your access before attempting to download the files, or you will receive an error like this:  
-![Error Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_1.png)
+![Error Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_1.webp)
 
 The file can be downloaded from [Cisco Software Download](https://software.cisco.com/download/home/286330811/type/282364313/release/5.0.03076). Cisco changes this download URL for each release. Prefer downloading the latest stable version of the tool.  
-![Download Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_2.png)
+![Download Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_2.webp)
 
 Example of a Download URL: [https://file.provaltech.com/apps/packages/cisco_secure_client.zip](https://file.provaltech.com/apps/packages/cisco_secure_client.zip)
 
 ## Dependencies
 
-[SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03)
+- [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03)
+- [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
 
 ## Sample Run
 
-![Sample Run Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_3.png)
-
-## Dependencies
-
-[SWM - Software Install - Agnostic - Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)
+![Sample Run Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_3.webp)
 
 ## Variables
 
 | Name      | Description                                                                                                                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter | Parameter stored in the [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field for the company.                                            |
+| Parameter | Parameter stored in the [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) custom field for the company.                                            |
 | Output    | Stores the output of the previously executed PowerShell script, and its value changes after each execution of a PowerShell script.                                                                                         |
 
 ## Script Creation
 
-Create the company-level Custom Field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03).
+Create the company-level Custom Field [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03).
 
 Create a new `Script Editor` style script in the system to implement this task.
+
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image1.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image2.png)
 
 **Name:** `Cisco Secure Client Package Installation (Windows)`  
 **Description:** `How to use parameters: [Install-CiscoSecureClient](/docs/fc6bcac9-770a-46dc-902c-7176cb1d73ea)  
 Note: To install the Umbrella module, it is required to install the Core VPN module.`  
 **Category:** `Application`
 
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image3.png)
+
 ### Script
 
-Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
+Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image4.png)
 
 #### Row 1 Function: Set Pre-defined Variable
 
 Select `Set Pre-defined Variable` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image5.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image6.png)  
 Select the `Custom Field` option.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image7.png)  
 Type `Parameter` in the `Variable Name` field and search and select the `Cisco Secure Client Parameter` in the `Search Custom Field` field.  
-Click the `Save` button to save the function.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image8.png)  
+Click the `Save` button to save the function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image9.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image10.png)  
 
 #### Row 2 Logic: If/Then
 
-Insert a new row by selecting the `If/Then` option from the `Add Logic` dropdown button.
+Insert a new row by selecting the `If/Then` option from the `Add Logic` dropdown button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image11.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image12.png)  
 
 ##### Row 2a Condition: Value Does Not Contain
 
 Select the `Value` option from the drop-down button next to the `Output` option.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image13.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image14.png)  
 Enter `Parameter` in the `Enter Value` field and press the `Enter` button on your keyboard.  
-Select `Does Not Contain` comparator from the drop-down button next to the `Contains` option.  
-Type `-downloadURL` in the `Input Value and Variable` field and press the `Enter` button on your keyboard.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image15.png)  
+Select `Does Not Contain` comparator from the drop-down button next to the `Contains` option. 
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image16.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image17.png)  
+Type `-downloadURL` in the `Input Value and Variable` field and press the `Enter` button on your keyboard.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image18.png)  
 
 ##### Row 2b Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then` logic after the `Output Contains` condition.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image19.png)  
 Select `Script Exit` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image20.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image21.png)  
 Paste this line in the `Error Message` box and click the `Save` button.  
 `Parameter is not set at the company level Custom field Cisco Secure Client Parameter.  
-Exiting script with error.`
+Exiting script with error.`  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image22.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image23.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image24.png)  
 
 #### Row 3 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image25.png)  
 Select `Script Log` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image26.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image27.png)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
-`Parameters Used:  
-@Parameter@`
+
+```PlainText
+Parameters Used:  
+@Parameter@
+```
+
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image28.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image29.png)  
 
 #### Row 4 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
 Select `PowerShell Script` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
 Paste in the following PowerShell script, set the expected time of script execution to `900` seconds, and click the `Save` button.
 
-```
+```PowerShell
 #region Setup - Variables
 $ProjectName = 'Install-CiscoSecureClient'
+
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 #endregion
 
 #region Setup - Folder Structure
@@ -131,86 +168,136 @@ $workingpath = $WorkingDirectory
 #endregion
 ```
 
-Mark the `Continue on Failure` checkbox.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image34.png)  
+Mark the `Continue on Failure` checkbox.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image35.png)  
 
 #### Row 5 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image36.png)  
 Select `Script Log` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image37.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image38.png)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
-`PowerShell Output:  
-%Output%`
+
+```PlainText
+PowerShell Output:  
+%Output%
+```
+
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image39.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image40.png)  
 
 #### Row 6 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
 Select `PowerShell Script` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
-$logPath = 'C:/ProgramData/_automation/script/Install-CiscoSecureClient/Install-CiscoSecureClient-log.txt'
-if (Test-Path $logPath) {
+```PowerShell
+$logPath = 'C:\ProgramData\_automation\script\Install-CiscoSecureClient\Install-CiscoSecureClient-log.txt'
+if ( Test-Path $logPath ) {
     Get-Content -Path $logPath 
 } else {
     return 'Log file not generated'
 }
 ```
 
-Mark the `Continue on Failure` checkbox.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image41.png)  
+Mark the `Continue on Failure` checkbox.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image42.png)  
 
 #### Row 7 Function: Script Log
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image36.png)  
 Select `Script Log` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image37.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image38.png)  
 Paste this line in the `Script Log Message` box and click the `Save` button.  
-`Log Content:  
-%Output%`
+
+```PlainText
+Log Content:  
+%Output%
+```
+
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image43.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image40.png)  
 
 #### Row 8 Function: PowerShell Script
 
 Insert a new row by clicking the `Add Row` button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image30.png)  
 Select `PowerShell Script` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image31.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image32.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image33.png)  
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
-$errorLogPath = 'C:/ProgramData/_automation/script/Install-CiscoSecureClient/Install-CiscoSecureClient-Error.txt'
-if (Test-Path $errorLogPath) {
+```PowerShell
+$errorLogPath = 'C:\ProgramData\_automation\script\Install-CiscoSecureClient\Install-CiscoSecureClient-Error.txt'
+if ( Test-Path $errorlogPath ) {
     Get-Content -Path $errorLogPath 
 } else {
     return 'Errors Logs not generated.'
 }
-```
+``` 
 
-Mark the `Continue on Failure` checkbox.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image44.png)  
+Mark the `Continue on Failure` checkbox.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image42.png)  
 
 #### Row 9 Logic: If/Then/Else
 
-Insert a new row by selecting the `If/Then/Else` option from the `Add Logic` dropdown button.
+Insert a new row by selecting the `If/Then/Else` option from the `Add Logic` dropdown button.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image45.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image46.png)  
 
 ##### Row 9a Condition: Output Contains
 
-Type `Errors Logs not generated.` in the `Input Value or Variable` field.
+Type `Errors Logs not generated.` in the `Input Value or Variable` field.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image47.png)  
 
 ##### Row 9b Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic after the `Output Contains` condition.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image48.png)  
 Select `Script Exit` function.  
-Click the `Save` button for the `Error Message` prompt box without adding anything to the text field.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image49.png)  
+Click the `Save` button for the `Error Message` prompt box without adding anything to the text field.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image50.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image51.png)  
 
 ##### Row 9c Function: Script Exit
 
 Insert a new row by clicking the `Add Row` button inside the `If/Then/Else` logic in the `Else` section.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image52.png)  
 Select `Script Exit` function.  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image53.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image54.png)  
 Paste this line in the `Error Message` box and click the `Save` button.  
-`Error Log Content:  
-%Output%`
+
+```PlainText
+Error Log Content:  
+%Output%
+```
+
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image55.png)  
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image56.png)  
 
 Click the `Save` button at the top-right corner of the screen to save the script.  
-Store the proper parameter at the company-level custom field [SWM - Software Install - Custom Field - Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) before scheduling or running the script.
+![Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image57.png)  
+
+Store the proper parameter at the company-level custom field [Cisco Secure Client Parameter](/docs/0dc22f98-f39e-4d02-9716-19087ff35e03) before scheduling or running the script.
 
 ## Completed Script
 
-![Completed Script Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_4.png)
+![Completed Script Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_4.webp)
 
 ## Module Definitions
 
@@ -220,34 +307,34 @@ Store the proper parameter at the company-level custom field [SWM - Software Ins
 - All modules require that Core-VPN be installed.
 - When only installing Core-VPN, you can expect to see the following.
 
-![Core-VPN Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_5.png)  
-![Core-VPN Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_6.png)  
-![Core-VPN Image 3](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_7.png)  
-![Core-VPN Image 4](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_8.png)  
+![Core-VPN Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_5.webp)  
+![Core-VPN Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_6.webp)  
+![Core-VPN Image 3](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_7.webp)  
+![Core-VPN Image 4](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_8.webp)  
 
 ### Start Before Login
 
 - SBL stands for Start Before Login; it adds no direct user GUI, however, it does add an entry into programs and features.
 - It enables the execution of the AnyConnect VPN prior to a user being logged in.
 
-![Start Before Login Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_9.png)
+![Start Before Login Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_9.webp)
 
 ### Diagnostic and Reporting Tool
 
 - DART stands for Diagnostics and Reporting Tool.
 - When installing this, you can expect to see the following items.
 
-![DART Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_10.png)  
-![DART Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_11.png)  
-![DART Image 3](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_12.png)  
+![DART Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_10.webp)  
+![DART Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_11.webp)  
+![DART Image 3](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_12.webp)  
 
 ### Network Access Manager
 
 - NAM stands for Network Access Manager.
 - When installing this module, you can expect to see the following items.
 
-![NAM Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_13.png)  
-![NAM Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_14.png)  
+![NAM Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_13.webp)  
+![NAM Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_14.webp)  
 
 ### Network Visibility Module
 
@@ -255,30 +342,30 @@ Store the proper parameter at the company-level custom field [SWM - Software Ins
 - Network Visibility Manager does not include a GUI but does the following:
 - Network Visibility Manager **helps you see user and endpoint behavior both on and off premises**. It collects standard flows from endpoints (laptops, for example) along with context like user, application, device, location, and destination information.
 
-![NVM Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_15.png)
+![NVM Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_15.webp)
 
 ### VPN Posture - HostScan Module
 
 - Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host.
 - It does not provide a User GUI.
 
-![HostScan Image](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_16.png)
+![HostScan Image](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_16.webp)
 
 ### ISE Posture
 
 - ISE Posture provides the Cisco AnyConnect Secure Mobility Client with the ability to assess an endpoint's compliance for things like antivirus, antispyware, and firewall software installed on the host, with a user GUI interface.
 - When installing this module, you can expect to see the following:
 
-![ISE Posture Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_17.png)  
-![ISE Posture Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_18.png)  
+![ISE Posture Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_17.webp)  
+![ISE Posture Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_18.webp)  
 
 ### Umbrella
 
 - Umbrella installs the Cisco Umbrella module.
 - When installing this module, you can expect to see the following:
 
-![Umbrella Image 1](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_19.png)  
-![Umbrella Image 2](../../../static/img/Cisco-Secure-Client-Package-Installation-(Windows)/image_20.png)  
+![Umbrella Image 1](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_19.webp)  
+![Umbrella Image 2](../../../static/img/docs/ab05999e-28bb-45af-adac-ba7bf32fd3a4/image_20.webp)  
 
 ## Uninstalling
 
@@ -292,7 +379,5 @@ Store the proper parameter at the company-level custom field [SWM - Software Ins
 ## Output
 
 - Script log
-
-
 
 

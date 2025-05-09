@@ -83,5 +83,3 @@ Flash is detected by gci on all known Flash directories. If detected, the uninst
 ## Output
 
 Agent Procedure Log
-
-

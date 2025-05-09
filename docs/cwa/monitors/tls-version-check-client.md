@@ -37,5 +37,3 @@ Managed Windows Servers and Workstations
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Client](/docs/a2436d9b-83e4-4405-a3e1-dc4019438d3a)
-
-

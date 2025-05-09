@@ -27,5 +27,3 @@ Stores the recovery key from the script [Bitlocker - Key Retrieval](/docs/bc2287
 | DriveID      | INT     | The associated drive of the recovery key.          |
 | RecoveryKey  | CHAR    | The BitLocker recovery key.                         |
 | LastUpdated  | DATETIME| The last time the agent recovery key was audited.  |
-
-

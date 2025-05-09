@@ -26,7 +26,5 @@ Is the SentinelOne Management Server detected at the computer different from wha
 
 ## Screenshots
 
-![Screenshot 1](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_1.png)
-![Screenshot 2](../../../static/img/Endpoint---S1-Mgmt-Server-Discrepancy/image_2.png)
-
-
+![Screenshot 1](../../../static/img/docs/c600a6e2-bd09-4172-8784-d969838eea23/image_1.webp)
+![Screenshot 2](../../../static/img/docs/c600a6e2-bd09-4172-8784-d969838eea23/image_2.webp)

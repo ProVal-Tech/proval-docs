@@ -32,12 +32,10 @@ This solution is designed to gather the frequent domain logon user on Windows wo
    - **△ Custom - Execute Script - Frequent Logon Users**
 
 2. Reload the system cache:
-   - ![Reload Cache](../../static/img/Frequent-Logon-User-Detection-and-Set-Computer-Contact/image_1.png)
+   - ![Reload Cache](../../static/img/docs/3579d837-d1a4-4186-ba92-4323a27bc367/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Monitor - Frequent User Detection](/docs/925ec2d0-a4f0-4bff-8482-f0f4137885ce)
        - Set up with the "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
-
-

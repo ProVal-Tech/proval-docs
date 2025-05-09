@@ -20,18 +20,18 @@ Vulscan Discovery Agent Installation Script for macOS via NinjaRMM.
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Deploy Vulscan Discovery Agent - Macintosh`
-![Image1](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-macintosh/image1.png)
+![Image1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/image1.webp)
 
 Click the `Run` button to run the script.  
 **Run As:** `System`  
 **Preset Parameter:** `<Leave it Blank>`  
-![Image2](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-macintosh/image2.png)
+![Image2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/image2.webp)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 
@@ -42,15 +42,15 @@ Click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
 
@@ -63,7 +63,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Mac`  
 **Architecture:** `64-bit`  
 **Run As:** `System`  
-![Image3](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-macintosh/image3.png)
+![Image3](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/image3.webp)
 
 ## Step 4
 
@@ -208,19 +208,19 @@ fi
 echo "Installation and registration completed successfully"
 ```
 
-![Image4](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-macintosh/image4.png)
+![Image4](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/image4.webp)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![Image5](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-macintosh/image5.png)
+![Image5](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/image5.webp)
 
 ## Output
 

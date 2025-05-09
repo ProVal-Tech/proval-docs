@@ -26,7 +26,7 @@ To manage Bitlocker protection on endpoints.
   - [Dataview - Bitlocker Status - Retired Computers](/docs/2a93ccc8-7de0-4107-9251-747b55905734)
 - Sync the modified scripts from the `Prosync` plugin and run the [Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) script against any online Windows computer with the `Set_Environment` parameter set to `1` to modify the custom tables.
 
-![Image](../../static/img/Bitlocker/image_1.png)
+![Image](../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_1.webp)
 
 ## Associated Content
 
@@ -93,10 +93,10 @@ To manage Bitlocker protection on endpoints.
    - Windows Server BitLocker-RemoteAdminTool
 
 6. Reload the System Cache  
-   ![Image](../../static/img/Bitlocker/image_2.png)
+   ![Image](../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_2.webp)
 
 7. Execute the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) against any online Windows computer with the `Set_Environment` parameter set to `1` to create the custom tables used by the solution.  
-   ![Image](../../static/img/Bitlocker/image_3.png)
+   ![Image](../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_3.webp)
 
 8. Configure the solution as follows:
    - Navigate to Automation --> Monitors within the CWA Control Center and set up the following:
@@ -145,6 +145,4 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/c2c817db-9667-4e18-864c-11ef0775282c).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
-
-
 

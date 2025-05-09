@@ -35,5 +35,3 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
 | Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
-
-

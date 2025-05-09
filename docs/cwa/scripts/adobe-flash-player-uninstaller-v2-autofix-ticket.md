@@ -18,7 +18,7 @@ This script runs as an Autofix script that helps to uninstall Adobe Flash Player
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Adobe-Flash-Player-Uninstaller---V2-Autofix,Ticket/image_1.png)
+![Sample Run](../../../static/img/docs/a6c32cd9-8472-45cc-9260-3aa09510ce20/image_1.webp)
 
 ## Dependencies
 
@@ -39,7 +39,5 @@ If that fails, it will try to uninstall using the Uninstaller Software script wi
 ## Output
 
 - Script log
-
-
 
 

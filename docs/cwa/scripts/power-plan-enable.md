@@ -20,7 +20,7 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Power-Plan---Enable/image_1.png)
+![Sample Run](../../../static/img/docs/a170b385-7464-478e-b1cc-d357a8840e45/image_1.webp)
 
 **Note:**
 - Ensure that the name of the `PowerPlan` matches exactly with the `Power Plan` column in the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview.
@@ -49,5 +49,3 @@ File Hash (MD5): `59BB9E9FB16FD5E53EB657D0F02ED9A8`
 
 - Script Log
 - Dataview
-
-

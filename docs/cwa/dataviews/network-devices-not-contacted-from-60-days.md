@@ -34,5 +34,3 @@ This Dataview is part of the solution to remove network devices that have had no
 | Manufacturer Name   | Displays the name of the manufacturer                |
 | Alert Template     | Indicates if an alert template is applied           |
 | Last Date          | Displays the last contact date of the device in Automate |
-
-

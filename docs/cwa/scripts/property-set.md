@@ -16,10 +16,10 @@ This script is intended to implement a solution to the multiple requests for exc
 
 ## Sample Run
 
-![Sample Run Image 1](../../../static/img/Property---Set/image_1.png)  
+![Sample Run Image 1](../../../static/img/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb/image_1.webp)  
 The above image sets a computer exclusion EDF to a new threshold, overwriting it if it currently exists.
 
-![Sample Run Image 2](../../../static/img/Property---Set/image_2.png)  
+![Sample Run Image 2](../../../static/img/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb/image_2.webp)  
 The above image sets a global parameter to a value, overwriting it if it exists.
 
 #### User Parameters
@@ -55,5 +55,3 @@ If Computer is selected:
     - Create the parameter for that target.  
   - If a value is present for that target:  
     - Check overwrite; if not 1, exit with an error; otherwise, overwrite the current target's parameter value.  
-
-

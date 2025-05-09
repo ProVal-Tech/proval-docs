@@ -26,15 +26,15 @@ Insert the details of the monitor in the table below.
 
 | Check Action | Server Address | Execute Info | Check Value | Condition     | Interval | Result |
 |--------------|----------------|---------------|-------------|---------------|----------|--------|
-| System       | 127.0.0.1     | Run File      | **REDACTED**| State Based    | 3600     | ![Result](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_1.png) |
+| System       | 127.0.0.1     | Run File      | **REDACTED**| State Based    | 3600     | ![Result](../../../static/img/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690/image_1.webp) |
 
 ## Target
 
 **Group:** Domain Controllers  
-![Group Image](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_2.png)  
+![Group Image](../../../static/img/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690/image_2.webp)  
 
 **Search:** Server Role - AD - Infrastructure Master  
-![Search Image](../../../static/img/RSM---Active-Directory--Active-Directory-Replication-Anomaly-Monitoring/image_3.png)  
+![Search Image](../../../static/img/docs/c02b447f-36ba-4a88-b40f-a47cf08fb690/image_3.webp)  
 
 ## Ticketing
 

@@ -60,5 +60,3 @@ Calls the agnostic content to force a service restart on the endpoint. Performs 
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-log.txt  
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-UNIXDATE-log.txt (archive of previous log)  
 - Agent Procedure Log  
-
-

@@ -19,19 +19,19 @@ Installs and configures the VulScan Discovery Agent on a Windows machine.
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/ninja-one-automations-common-screenshots/samplerun1.png)
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Deploy Vulscan Discovery Agent - Windows`
-![Image1](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image1.png)
+![Image1](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
 **Run As:** `System`  
 **Preset Parameter:** `<Leave it Blank>`  
 **Install Key:** `Set the activation key for the VulScan Discovery Agent to override the value stored in the custom field 'cPVAL Vulscan Install Key'`  
-![Image2](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image2.png)
+![Image2](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image2.webp)
 
 **Run Automation:** `Yes`  
-![RunAutomation](../../../static/img/ninja-one-automations-common-screenshots/runautomation.png)
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 
@@ -48,15 +48,15 @@ Set the required arguments and click the `Run` button to run the script.
 ### Step 1
 
 Navigate to `Administration` > `Library` > `Automation`  
-![Step1](../../../static/img/ninja-one-automations-common-screenshots/step1.png)
+![Step1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step1.webp)
 
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen, click on it and click the `New Script` button.  
-![Step2](../../../static/img/ninja-one-automations-common-screenshots/step2.png)
+![Step2](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/step2.webp)
 
 The scripting window will open.  
-![ScriptingScreen](../../../static/img/ninja-one-automations-common-screenshots/scriptingscreen.png)
+![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
 
@@ -69,7 +69,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Windows`  
 **Architecture:** `All`  
 **Run As:** `System`  
-![Image4](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image4.png)
+![Image4](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image4.webp)
 
 ## Step 4
 
@@ -327,20 +327,20 @@ End {
 }
 ```
 
-![Image3](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image3.png)
+![Image3](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image3.webp)
 
 ## Script Variables
 
 ### Install Key
 
 Click the `Add` button next to `Script Variables`.  
-![AddVariableButton](../../../static/img/ninja-one-automations-common-screenshots/addvariablebutton.png)
+![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
 Select the `String/Text` option.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/stringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/stringtextvariable.webp)
 
 The `Add String/Text Variable` window will open.  
-![String/Text](../../../static/img/ninja-one-automations-common-screenshots/addstringtextvariable.png)
+![String/Text](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addstringtextvariable.webp)
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
@@ -349,19 +349,19 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image5](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image5.png)
+![Image5](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image5.webp)
 
 ## Saving the Automation
 
 Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/ninja-one-automations-common-screenshots/savebutton.png)
+![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/ninja-one-automations-common-screenshots/mfa.png)
+![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation
 
-![Image6](../../../static/img/ninja-one-automation-deploy-vulscan-discovery-agent-windows/image6.png)
+![Image6](../../../static/img/docs/63fe40e5-e5c7-4a31-bfdf-32bdb55b6771/image6.webp)
 
 ## Output
 

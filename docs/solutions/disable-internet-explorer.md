@@ -41,4 +41,3 @@ REPLACE INTO `roledefinitions` (`RoleDefinitionId`, `RoleName`, `RoleType`, `Rol
 INSERT INTO `alerttemplate` (`AlertActionID`, `Name`, `Comment`, `Last_User`, `Last_Date`, `Permission`, `EditPermission`, `GUID`) VALUES ('', '~Autofix - Disable Internet Explorer', '~Autofix - Disable Internet Explorer', 'PRONOC', (NOW()), '', '', 'ff457b08-849e-4501-8428-1ebe19305dfd');
 INSERT INTO `alerttemplates` (`AlertID`, `AlertActionID`, `DayOfWeek`, `TimeStart`, `TimeEnd`, `AlertAction`, `ContactID`, `UserID`, `ScriptID`, `Message`, `Trump`, `GUID`, `WarningAction`) VALUES ('', (SELECT alertactionid FROM alerttemplate WHERE guid = 'ff457b08-849e-4501-8428-1ebe19305dfd'), 127, '00:00:00', '23:59:00', 512, -1, 0, (SELECT scriptid FROM lt_scripts WHERE scriptguid = 'd8a1e5f2-7fbf-11ec-abe8-000c295e5f17'), '', 0, '53ec7509-f4d9-44fa-9d57-a3d89dfb6b2d', 512);
 ```
-

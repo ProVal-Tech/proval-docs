@@ -17,7 +17,7 @@ The script creates an urgent ticket for ProVal if the number of unapproved patch
 ## Sample Run
 
 It is a client script and suggested to run once per day.  
-![Image1](<../../../static/img/cwa-script-unapproved-patches-count-audit/Image1.png>)
+![Image1](<../../../static/img/docs/595e85de-299d-4242-a569-f5367be6b1c9/Image1.webp>)
 
 ## Variables
 
@@ -77,9 +77,9 @@ It is a client script and suggested to run once per day.
 ## Sample AutoTask Ticket
 
 **One day threshold violation:**  
-![SampleYesterdayTicket](<../../../static/img/cwa-script-unapproved-patches-count-audit/SampleYesterdayTicket.png>)
+![SampleYesterdayTicket](<../../../static/img/docs/595e85de-299d-4242-a569-f5367be6b1c9/SampleYesterdayTicket.webp>)
 
 **Week's threshold violation:**  
-![SampleLastWeekTicket](<../../../static/img/cwa-script-unapproved-patches-count-audit/SampleLastWeekTicket.png>)
+![SampleLastWeekTicket](<../../../static/img/docs/595e85de-299d-4242-a569-f5367be6b1c9/SampleLastWeekTicket.webp>)
 
 *The numbers shown in the sample tickets are for demonstration purposes only and will be different and more practical in the actual tickets.*

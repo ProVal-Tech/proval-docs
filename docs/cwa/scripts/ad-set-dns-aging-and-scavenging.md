@@ -19,7 +19,7 @@ Enables DNS scavenging and optionally allows you to set the interval for scaveng
 
 ## Sample Run
 
-![Sample Run](../../../static/img/AD---Set-DNS-Aging-and-Scavenging/image_1.png)
+![Sample Run](../../../static/img/docs/90969a29-db33-4332-babb-c2f5be128a3e/image_1.webp)
 
 ## Dependencies
 
@@ -48,5 +48,3 @@ The script validates that the server is a DNS server with the `Get-DNSServer` cm
 
 - Script log
 - Local file on the computer
-
-

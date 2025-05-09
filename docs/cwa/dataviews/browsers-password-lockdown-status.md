@@ -35,5 +35,3 @@ The dataview exhibits the `Password Manager Lockdown Status` for the computer ob
 | Last Contact                 | Last Contact with RMM                                                                                                       |
 | Last Logged In User          | Last Logged In User                                                                                                         |
 | Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
-
-

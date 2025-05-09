@@ -18,7 +18,7 @@ This script schedules a reboot for the next applicable day at the specified time
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Reboot---Schedule-on-Specific-Days/image_1.png)
+![Sample Run](../../../static/img/docs/f1ad69eb-ffe8-4396-a3f4-d380d155b120/image_1.webp)
 
 ## Dependencies
 
@@ -49,5 +49,3 @@ This script schedules a reboot for the next applicable day at the specified time
 
 - Script log messages
 - Ticket (For Hyper-V hosts only)
-
-

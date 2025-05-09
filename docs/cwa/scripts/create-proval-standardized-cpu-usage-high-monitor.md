@@ -16,7 +16,7 @@ Generates a Proval Standardized CPU Usage High remote monitoring system for a se
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_1.png)
+![Sample Run](../../../static/img/docs/6ddadabd-4b0f-45b0-92d5-51a58eba15a4/image_1.webp)
 
 ## Variables
 
@@ -43,12 +43,10 @@ Document the various variables in the script. Delete any section that is not rel
 ## Sample Monitor
 
 **Status Tab:**  
-![Status Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_2.png)
+![Status Tab](../../../static/img/docs/6ddadabd-4b0f-45b0-92d5-51a58eba15a4/image_2.webp)
 
 **Alerting Tab:** By default, the script will set the `Default Do Nothing` template. It must be switched to `Custom - Ticket Creation - Computer` to use the monitor to its full potential.  
-![Alerting Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_3.png)
+![Alerting Tab](../../../static/img/docs/6ddadabd-4b0f-45b0-92d5-51a58eba15a4/image_3.webp)
 
 **Configuration Tab:**  
-![Configuration Tab](../../../static/img/Create-ProVal-Standardized-CPU-Usage-High-monitor/image_4.png)
-
-
+![Configuration Tab](../../../static/img/docs/6ddadabd-4b0f-45b0-92d5-51a58eba15a4/image_4.webp)

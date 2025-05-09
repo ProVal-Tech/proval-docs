@@ -78,5 +78,3 @@ PowerShell: 5.1.0
 
 Agent Procedure Logs
 
-
-

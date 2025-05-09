@@ -34,5 +34,3 @@ This dataview displays basic information related to OneDrive on endpoints.
 | PicturesEnabled    | True/False - Indicates if the user's "Pictures" folder is being backed up to OneDrive              |
 | PicturesPath      | If PicturesEnabled is True, this displays the full path to the user's pictures folder               |
 | TimeStamp         | The last time this data was gathered                                                                  |
-
-

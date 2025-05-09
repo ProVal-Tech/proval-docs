@@ -19,5 +19,3 @@ This document describes a method to detect the existence of the HKEY_CLASSES_ROO
 | Detection String                          | Comparator | Result  | Applicable OS |
 |-------------------------------------------|------------|---------|----------------|
 | \{@%Reg query "HKEY_CLASSES_ROOT/ms-msdt"@%} | Contains   | REG_SZ  | Windows        |
-
-

@@ -1,8 +1,8 @@
 ---
 id: 'a56e605b-a1d4-45ea-bebb-4411f3890f7e'
 slug: /a56e605b-a1d4-45ea-bebb-4411f3890f7e
-title: 'ClearAudit - Browser Saved Password'
-title_meta: 'ClearAudit - Browser Saved Password'
+title: 'Clear/Audit - Browser Saved Password'
+title_meta: 'Clear/Audit - Browser Saved Password'
 keywords: ['browser', 'password', 'audit', 'clearance', 'windows']
 description: 'This document outlines the steps to perform a Browser Saved Password Audit or Clearance using a custom PowerShell script. It includes sample runs, implementation details, and deployment instructions to ensure secure management of saved passwords across different web browsers.'
 tags: ['security', 'software', 'windows']
@@ -16,11 +16,11 @@ This task is designed to perform the Browser Saved Password Audit or Clearance b
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/ClearAudit---Browser-Saved-Password/image_1.png)
+![Sample Run 1](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_1.webp)
 
-![Sample Run 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_2.png)
+![Sample Run 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_2.webp)
 
-![Sample Run 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_3.png)
+![Sample Run 3](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_3.webp)
 
 ## Implementation
 
@@ -28,34 +28,34 @@ This task is designed to perform the Browser Saved Password Audit or Clearance b
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_4.png)
+![Create Task Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_4.webp)
 
 - **Name:** Clear/Audit - Browser Saved Password  
 - **Description:** This task performs the audit or clearance of the browser-saved password based on the option provided.  
 - **OS Supported:** Windows  
 - **Category:** Application
 
-![Task Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_5.png)
+![Task Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_5.webp)
 
 ## Script
 
 Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Row](../../../static/img/ClearAudit---Browser-Saved-Password/image_6.png)
+![Add Row](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_6.webp)
 
 ### Row 1: Function: Set User Variable
 
-![Row 1 Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_7.png)
+![Row 1 Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_7.webp)
 
-![Row 1 Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_8.png)
+![Row 1 Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_8.webp)
 
 This sets the variable `EdgeWallet` with the value of a user parameter `@Wipe+DisableCloudSync-EdgeWallet@`.
 
 ### Row 2: Logic: If/Then/Else
 
-![Row 2 Logic](../../../static/img/ClearAudit---Browser-Saved-Password/image_9.png)
+![Row 2 Logic](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_9.webp)
 
-![Row 2 Logic 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_10.png)
+![Row 2 Logic 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_10.webp)
 
 #### IF Condition
 
@@ -63,13 +63,13 @@ This sets the variable `EdgeWallet` with the value of a user parameter `@Wipe+Di
 
 In the IF part, enter the custom field as shown below:
 
-![Custom Field](../../../static/img/ClearAudit---Browser-Saved-Password/image_11.png)
+![Custom Field](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_11.webp)
 
 ##### Row 2b: Function: PowerShell Script
 
-![PowerShell Script 1](../../../static/img/ClearAudit---Browser-Saved-Password/image_12.png)
+![PowerShell Script 1](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_12.webp)
 
-![PowerShell Script 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_13.png)
+![PowerShell Script 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_13.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
@@ -85,6 +85,14 @@ if ($SyncDisabled) {
 ```
 
 ```powershell
+$regPath = 'HKLM:\Software\Policies\Microsoft\Edge'
+$name = 'SyncDisabled'
+$SyncDisabled = (Get-ItemProperty -Path $regPath -Name $name -ErrorAction SilentlyContinue).SyncDisabled
+if ($SyncDisabled) {
+    Write-Output 'MSEdge Password Wallet Sync Disabled '
+} else {
+    Write-Output 'MSEdge Password Wallet Sync Enabled '
+}
 # Function to count and log password files
 function Log-PasswordFiles {
     param (
@@ -95,7 +103,7 @@ function Log-PasswordFiles {
     )
     $count = 0
     foreach ($item in $items) {
-        if (Test-Path -Path "$path\\$item") {
+        if (Test-Path -Path "$path\$item") {
             $count++
         }
     }
@@ -103,61 +111,53 @@ function Log-PasswordFiles {
         Write-Information "-- $count Passwords saved in $browserName for $userName" -InformationAction Continue
     }
 }
-```
-
-```powershell
 # Chrome and Brave
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Google\\Chrome', 'BraveSoftware\\Brave-Browser') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Google\Chrome', 'BraveSoftware\Brave-Browser') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
 # Microsoft Edge
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Microsoft\\Edge') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Microsoft\Edge') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser', '') -userName $path.Name -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
 # Firefox
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        if (Test-Path -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles") {
-            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        if (Test-Path -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles") {
+            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
                 Log-PasswordFiles -browserName 'Firefox' -userName $path.Name -path $profile -items @('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqllite', 'logins.json', 'logins-backup.json')
             }
         }
     }
 }
+
 ```
 
 ##### Row 2c: Function: Script Log
 
-![Script Log Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_14.png)
+![Script Log Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_14.webp)
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_15.png)
+![Script Log Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_15.webp)
 
 ##### Row 2d: Function: Set Custom Field
 
-![Set Custom Field Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_16.png)
+![Set Custom Field Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_16.webp)
 
 Select Function 'Set Custom Field'. When you select `set custom field`, it will open a new window.
 
@@ -166,23 +166,23 @@ In this window, search for the `Browser Saved Pwd Audit Data` field.
 - **Custom Field:** `Browser Saved Pwd Audit Data`  
 - **Value:** `%output%`
 
-![Custom Field Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_17.png)
+![Custom Field Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_17.webp)
 
 ##### Row 2e: Function: Script Exit
 
-![Script Exit Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_18.png)
+![Script Exit Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_18.webp)
 
 In the script Exit, leave it empty and save.
 
-![Script Exit Save Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_19.png)
+![Script Exit Save Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_19.webp)
 
 ### Else Condition
 
 #### Row 2f: Logic: If/Else/Then
 
-![Else Logic 1](../../../static/img/ClearAudit---Browser-Saved-Password/image_9.png)
+![Else Logic 1](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_9.webp)
 
-![Else Logic 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_10.png)
+![Else Logic 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_10.webp)
 
 #### IF Condition
 
@@ -190,44 +190,40 @@ In the script Exit, leave it empty and save.
 
 In the IF part, enter Value 1 equals to `@EdgeWallet@`.
 
-![Condition Value Image](../../../static/img/ClearAudit---Browser-Saved-Password/image_20.png)
+![Condition Value Image](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_20.webp)
 
 ##### Row 2f(ii): Logic: If/Then
 
-![If Then Logic 1](../../../static/img/ClearAudit---Browser-Saved-Password/image_21.png)
+![If Then Logic 1](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_21.webp)
 
-![If Then Logic 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_22.png)
+![If Then Logic 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_22.webp)
 
 ##### Row 2f(iii): Condition: Custom Field
 
 In the IF part, enter the custom field as shown below:
 
-![Custom Field Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_23.png)
+![Custom Field Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_23.webp)
 
 ##### Row 2f(iv): Function: PowerShell Script
 
-![PowerShell Script 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_12.png)
+![PowerShell Script 3](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_12.webp)
 
-![PowerShell Script 4](../../../static/img/ClearAudit---Browser-Saved-Password/image_24.png)
+![PowerShell Script 4](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_24.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to **900 seconds**.
 
 ```powershell
 # Ensure that Microsoft Edge is not running
 Stop-Process -Name "msedge" -Force -ErrorAction SilentlyContinue > $null 2>&1
-
 # Define the registry path for Edge sync settings
-$regPath = "HKLM:\\Software\\Policies\\Microsoft\\Edge"
-
+$regPath = "HKLM:\Software\Policies\Microsoft\Edge"
 # Create the registry key if it doesn't exist
 if (-not (Test-Path $regPath)) {
     New-Item -Path $regPath -Force > $null 2>&1
 }
-
 # Disable password sync by setting the policy
 New-ItemProperty -Path $regPath -Name "SyncDisabled" -Value 1 -PropertyType DWORD -Force > $null 2>&1
 Write-Output "Password sync from Microsoft Edge cloud has been disabled for Edge Wallet"
-
 # Function to count and log password files
 function Log-PasswordFiles {
     param (
@@ -239,9 +235,9 @@ function Log-PasswordFiles {
     $successCount = 0
     $failureCount = 0
     foreach ($item in $items) {
-        if (Test-Path -Path "$path\\$item") {
+        if (Test-Path -Path "$path\$item") {
             try {
-                Remove-Item -Path "$path\\$item" -Force -Confirm:$False -ErrorAction Stop
+                Remove-Item -Path "$path\$item" -Force -Confirm:$False -ErrorAction Stop
                 $successCount++
             }
             catch {
@@ -257,31 +253,38 @@ function Log-PasswordFiles {
         Write-Information "-- $failureCount passwords failed to remove in $browserName for $userName " -InformationAction Continue
     }
 }
-```
-
-```powershell
-# Chromium
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave|Edge' }).DisplayName) {
-    Get-Process -Name chrome, msedge, brave -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
+# Chrome and Brave
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Chrome|Brave' }).DisplayName) {
+    Get-Process -Name chrome, brave -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        foreach ($Browser in 'Google\\Chrome', 'Microsoft\\Edge', 'BraveSoftware\\Brave-Browser') {
-            if (Test-Path -Path "$($path.FullName)\\Appdata\\Local\\$Browser") {
-                Log-PasswordFiles -browserName $(($Browser -split '\\\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\\Appdata\\Local\\$Browser\\User Data\\Default" -items @('Login Data', 'Login Data-journal')
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Google\Chrome', 'BraveSoftware\Brave-Browser') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
             }
         }
     }
 }
-```
-
-```powershell
+# Microsoft Edge
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Edge' }).DisplayName) {
+    Get-Process -Name msedge -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
+    Start-Sleep -Seconds 10
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        foreach ($Browser in 'Microsoft\Edge') {
+            if (Test-Path -Path "$($path.FullName)\Appdata\Local\$Browser") {
+                Log-PasswordFiles -browserName $(($Browser -split '\\') -replace '-Browser','') -userName $($path.Name) -path "$($path.FullName)\Appdata\Local\$Browser\User Data\Default" -items @('Login Data', 'Login Data-journal')
+                Remove-Item -Path "$($path.FullName)\Appdata\Local\$Browser\User Data\Edge Wallet" -Force -Recurse -Confirm:$False -ErrorAction SilentlyContinue
+            }
+        }
+    }
+}
 # Firefox
-if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall, HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
+if ((Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'Firefox' }).DisplayName) {
     Get-Process -Name firefox -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$False -WarningAction SilentlyContinue > $null 2>&1
     Start-Sleep -Seconds 10
-    foreach ($path in (Get-ChildItem -Path 'C:\\Users' | Where-Object { $_.Mode -match 'd' })) {
-        if (Test-Path -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles") {
-            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\\Appdata\\Roaming\\Mozilla\\Firefox\\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
+    foreach ($path in (Get-ChildItem -Path 'C:\Users' | Where-Object { $_.Mode -match 'd' })) {
+        if (Test-Path -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles") {
+            foreach ($profile in ((Get-ChildItem -Path "$($path.FullName)\Appdata\Roaming\Mozilla\Firefox\Profiles" | Where-Object { $_.Mode -match 'd' }).FullName)) {
                 Log-PasswordFiles -browserName 'Firefox' -userName $($path.Name) -path $profile -items @('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqllite', 'logins.json', 'logins-backup.json')
             }
         }
@@ -291,11 +294,11 @@ if ((Get-ChildItem -Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Un
 
 ##### Row 2f(v): Function: Script Log
 
-![Script Log Image 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_14.png)
+![Script Log Image 3](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_14.webp)
 
 In the script log message, type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Script Log Image 4](../../../static/img/ClearAudit---Browser-Saved-Password/image_15.png)
+![Script Log Image 4](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_15.webp)
 
 ##### Row 2f(vi): Function: Set Custom Field
 
@@ -306,23 +309,23 @@ In this window, search for the `Browser Saved Pwd Audit Data` field.
 - **Custom Field:** `Browser Saved Pwd Audit Data`  
 - **Value:** `%output%`
 
-![Custom Field Image 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_25.png)
+![Custom Field Image 3](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_25.webp)
 
 ##### Row 2f(vii): Function: Script Exit
 
-![Script Exit Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_18.png)
+![Script Exit Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_18.webp)
 
 In the script Exit, leave it empty and save.
 
-![Script Exit Save Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_19.png)
+![Script Exit Save Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_19.webp)
 
 ### Row 3: Complete
 
-![Complete Image 1](../../../static/img/ClearAudit---Browser-Saved-Password/image_26.png)
+![Complete Image 1](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_26.webp)
 
-![Complete Image 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_27.png)
+![Complete Image 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_27.webp)
 
-![Complete Image 3](../../../static/img/ClearAudit---Browser-Saved-Password/image_28.png)
+![Complete Image 3](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_28.webp)
 
 ## Deployment
 
@@ -336,26 +339,26 @@ Refer to the Group documentation: [Dynamic Groups - Browser Saved Password](/doc
 
 This screen will appear.
 
-![Schedule Screen](../../../static/img/ClearAudit---Browser-Saved-Password/image_29.png)
+![Schedule Screen](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_29.webp)
 
 - Select the time to run the script and click the "Does not repeat" button.
 
-![Does Not Repeat](../../../static/img/ClearAudit---Browser-Saved-Password/image_30.png)
+![Does Not Repeat](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_30.webp)
 
 - A pop-up box will appear.
 - Change the number of hours to `2` and click `OK`.
 
-![Change Hours](../../../static/img/ClearAudit---Browser-Saved-Password/image_31.png)
+![Change Hours](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_31.webp)
 
-![Change Hours 2](../../../static/img/ClearAudit---Browser-Saved-Password/image_32.png)
+![Change Hours 2](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_32.webp)
 
-- Search for `Cyrisma Sensor Deployment` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
+- Search for `Browser Saved Password Audit Group` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
 
-![Search Group](../../../static/img/ClearAudit---Browser-Saved-Password/image_33.png)
+![Search Group](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_33.webp)
 
 - Now click the `Run` button to initiate the task.
 
-![Run Task](../../../static/img/ClearAudit---Browser-Saved-Password/image_34.png)
+![Run Task](../../../static/img/docs/a56e605b-a1d4-45ea-bebb-4411f3890f7e/image_34.webp)
 
 - The task will start appearing in the Scheduled Tasks.
 
@@ -363,4 +366,3 @@ This screen will appear.
 
 - Script log
 - Custom field
-

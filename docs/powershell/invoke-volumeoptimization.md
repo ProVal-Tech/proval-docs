@@ -43,5 +43,3 @@ The location of output for log, result, and error files:
 
 ## Notes
 This script may take more than 30 minutes to complete.
-
-

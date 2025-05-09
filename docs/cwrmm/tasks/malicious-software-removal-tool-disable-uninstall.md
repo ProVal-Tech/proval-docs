@@ -22,15 +22,15 @@ This script can be on demand as well or by scheduling it to the group [Malicious
 
 ## Sample Run
 
-![Sample Run](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{FF7AA4DD-DFDC-4CFB-966D-F23293C8B5F1}.png>)
+![Sample Run](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{FF7AA4DD-DFDC-4CFB-966D-F23293C8B5F1}.webp>)
 
 Check the `Create Ticket` flag option if you want to create ticket for the endpoint during failure and if you do not want to uninstall the MSRT KB890830 then change the `MSRTUninstall` value from 1 to anything and then click `Continue to Scheduling`.
 
-![Sample Run 2](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/image-1.png>)
+![Sample Run 2](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image-1.webp>)
 
 Click `Run Task`
 
-![Sample Run 3](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{2574F2B6-ADE9-4A98-A851-869225C5E428}.png>)
+![Sample Run 3](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{2574F2B6-ADE9-4A98-A851-869225C5E428}.webp>)
 
 ## Implementation
 
@@ -41,49 +41,50 @@ To implement this script, please `Add Parameter` first:
 
 Click `Add Parameter` on the top right side of the new script:
 
-![Add Parameter](<../../../static/img/docs/Malicious Software Removal Tool Scanning/image-3.png>)
+![Add Parameter](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-3.webp>)
 
 Set parameter `CreateTicket` as a flag with `Default Value` set to `False` and do not turn on the `Required Field`. This is set to not create a ticket by default, if required to create ticket on failure change the default value to `True`.
 
-![CreateTicket](<../../../static/img/docs/Malicious Software Removal Tool Scanning/image-2.png>)
+![CreateTicket](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-2.webp>)
 
 Add second parameter `MSRTUninstall` as a Number Value with `Default Value` set to `1` and do not turn on the `Required Field`. This is set to uninstall the MSRT patches if already installed, if not required to uninstall the patch change the default value to anything other than 1.
 
-![MSRTUninstall](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7538EB10-EA8D-47F9-97E9-30F5FE22D3FE}.png>)
+![MSRTUninstall](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{7538EB10-EA8D-47F9-97E9-30F5FE22D3FE}.webp>)
 
 To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/Reboot-Pending-Check-Automation/image_3.png)
+![Create Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_3.webp)
 
 - **Name:** Malicious Software Removal Tool Disable/Uninstall
 - **Description:** This script disables and uninstalls the MSRT from the endpoint and provided option to creates ticket if failure detected. Based on the output, it sets the custom field `MSRT Scanning Result`.
 - **Category:** Security
 
-![Task Details](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7BEDCA08-F397-4065-B48F-F794BBC9FCDD}.png>)
+![Task Details](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{7BEDCA08-F397-4065-B48F-F794BBC9FCDD}.webp>)
 
 ### Script
 
 Start by creating a row. You can do this by clicking the "Add Row" button at the bottom of the script page.
 
-![Add Rows](../../../static/img/Reboot-Pending-Check-Automation/image_5.png)
+![Add Rows](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_5.webp)
 
 ### Row 1: Function: Pre-defined Variable
 
-![Set Pre-defined Variable](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{4DBC89D7-5D08-4A6C-830A-1B97E7EEAB8D}.png>)
+![Set Pre-defined Variable](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/{4DBC89D7-5D08-4A6C-830A-1B97E7EEAB8D}.webp>)
 
 Paste the highlighted text:  
+
 ```plaintext
 Variable Name: Systemname
 System Variable: Drop down Endpoint>Asset>Friendlyname
 ```
 
-![Pre-Defined Variable](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{EF8C2BCA-F0B4-4D13-A742-24BA817515AE}.png>)
+![Pre-Defined Variable](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/{EF8C2BCA-F0B4-4D13-A742-24BA817515AE}.webp>)
 
 ### Row 2: Function: PowerShell Script
 
-![Row 2 PowerShell](../../../static/img/Reboot-Pending-Check-Automation/image_8.png)
+![Row 2 PowerShell](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_8.webp)
 
-![Row 2 PowerShell Continued](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{2836C78C-7ECB-4D78-A52D-90431A8B6B71}.png>)
+![Row 2 PowerShell Continued](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{2836C78C-7ECB-4D78-A52D-90431A8B6B71}.webp>)
 
 Paste in the following PowerShell script and set the expected time of script execution to `600` seconds.
 
@@ -157,21 +158,21 @@ catch {
 
 ### Row 3: Logic: If/Then
 
-![Row 3c Logic](../../../static/img/Reboot-Pending-Check-Automation/image_17.png)
+![Row 3c Logic](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_17.webp)
 
-![Row 3c Logic Continued](../../../static/img/Reboot-Pending-Check-Automation/image_18.png)
+![Row 3c Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_18.webp)
 
 ### Row 3a: Condition: Output Contains
 
 In the IF part, enter `An error occurred` in the right box of the "Output Contains" part.
 
-![Row 3a Condition](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{25283397-3336-478E-BA6F-FDE8B8DE9A63}.png>)
+![Row 3a Condition](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/{25283397-3336-478E-BA6F-FDE8B8DE9A63}.webp>)
 
 ### Row 3b: Function: Set Custom Field
 
 Add a new row by clicking on the Add row button and select `Set Custom Field`. 
 
-![Row 3b Set Custom Field](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{49BF3B0D-62FC-459C-B765-F870931AEC6F}.png>)
+![Row 3b Set Custom Field](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{49BF3B0D-62FC-459C-B765-F870931AEC6F}.webp>)
 
 Clicking `Set Custom Field` opens up new window.
 
@@ -179,19 +180,19 @@ Clicking `Set Custom Field` opens up new window.
 
 **Value:** `MSRT Disable Failed`
 
-![Row 3b Set Custom Field continued](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{80DAAB03-B716-448A-9B1B-C141C0E2B350}.png>)
+![Row 3b Set Custom Field continued](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{80DAAB03-B716-448A-9B1B-C141C0E2B350}.webp>)
 
 ### Row 3c(i): Logic: If/Then
 
-![Row 3c(i) Logic](../../../static/img/Reboot-Pending-Check-Automation/image_17.png)
+![Row 3c(i) Logic](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_17.webp)
 
-![Row 3c(i) Logic Continued](../../../static/img/Reboot-Pending-Check-Automation/image_18.png)
+![Row 3c(i) Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_18.webp)
 
 ### Row 3c(ii): Condition: Value
 
 In the IF part, enter `@CreateTicket@` in the right box of the "Value contains" part where Value `1` `Equals` to `@CreateTicket@`.
 
-![Row 3c(ii) Value Equals](<../../../static/img/docs/Malicious Software Removal Tool Scanning/{CD09B3BE-8B8C-4C1B-8D0F-EBCEA7262050}.png>)
+![Row 3c(ii) Value Equals](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/{CD09B3BE-8B8C-4C1B-8D0F-EBCEA7262050}.webp>)
 
 ### Row 3c(iii): Function: Create Ticket
 
@@ -206,44 +207,44 @@ In this window, set the `Subject` as `Malicious Software Removal Tool Disable fa
 
 `Priority` set to `Low`
 
-![Create Ticket](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{2D27E98C-72D8-4A01-9AEA-7E8D1C8ACE74}.png>)
+![Create Ticket](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{2D27E98C-72D8-4A01-9AEA-7E8D1C8ACE74}.webp>)
 
 ### Row 3d: Function: Script Exit
 
 Add a new row in the If section and select `Script Exit`.
 
 In the script exit message, simply type `Script failed to disable the Malicious Software Removal Tool. Exiting script with error.
-Refer to the logs: 
+Refer to the logs:  
 %Output%`.
 
 In the script exit message, leave it blank.
 
-![Script Exit Message](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{E89527DD-8E94-4E34-8581-CE682C4B496B}.png>)
+![Script Exit Message](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{E89527DD-8E94-4E34-8581-CE682C4B496B}.webp>)
 
 ### Row 4: Function: Set Custom Field
 
 Add a new row after `End If` section by clicking on the Add row button and select `Set Custom Field`. 
 
-![Row 4 Set Custom Field](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{8979F21E-B8E0-494E-A077-DF634424D947}.png>).
+![Row 4 Set Custom Field](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{8979F21E-B8E0-494E-A077-DF634424D947}.webp>).
 
 **Custom Field:** `MSRT Scanner Result`
 
 **Value:** `MSRT Disabled`
 
-![Row 4 Set Custom field continued](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{6E4ED12C-D9AD-4EEE-A783-B8C3E9E6DF99}.png>)
+![Row 4 Set Custom field continued](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{6E4ED12C-D9AD-4EEE-A783-B8C3E9E6DF99}.webp>)
 
 ### Row 5: Function: Script Log
 
-![Row 5 Script Log](../../../static/img/Reboot-Pending-Check-Automation/image_10.png)
+![Row 5 Script Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_10.webp)
 
 In the script log message, simply type `Malicious Software Removal Tool disabled successfully. Refer to the logs:
 %Output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 5 Script Log Message](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7AB23753-306A-48C7-AC9D-723DFCF49E0D}.png>)
+![Row 5 Script Log Message](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{7AB23753-306A-48C7-AC9D-723DFCF49E0D}.webp>)
 
 ### Row 6: Complete
 
-![Row 6 Complete](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{12C9F919-BCAA-4A83-905D-9EF93B3C687D}.png>)
+![Row 6 Complete](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{12C9F919-BCAA-4A83-905D-9EF93B3C687D}.webp>)
 
 ## Deployment
 
@@ -254,33 +255,31 @@ It is suggested to run the Task every 2 hours against the group [Malicious Softw
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.
 
-![Scheduled Task](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{967AFD20-C102-4D7B-AA2C-64EC5198B43B}.png>)
+![Scheduled Task](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{967AFD20-C102-4D7B-AA2C-64EC5198B43B}.webp>)
 
-![Scheduled Task Continued](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/{7D64A301-7B5B-4740-85C3-84325E447BE7}.png>)
+![Scheduled Task Continued](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/{7D64A301-7B5B-4740-85C3-84325E447BE7}.webp>)
 
 Select the relevant time to run the script and click the Do not repeat button.
 
-![Schedule Task Time](../../../static/img/Reboot-Pending-Check-Automation/image_27.png)
+![Schedule Task Time](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_27.webp)
 
 A pop-up box will appear.
 
 Change the number of hours to `2` and click `OK`.
 
-![Change Hours](../../../static/img/Reboot-Pending-Check-Automation/image_28.png)
+![Change Hours](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_28.webp)
 
 Select the target `Device Group` to schedule on the group [Malicious Software Removal Tool Uninstall-Disable group](/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4).
 
-![Select Target](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/image-3.png>)
+![Select Target](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image-3.webp>)
 
 Now click the `Run` button once all customization is set to initiate the task.
 
-![Run Task](<../../../static/img/docs/Malicious Software Removal Tool Disable-Uninstall/image-4.png>)
+![Run Task](<../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image-4.webp>)
 
 The task will start appearing in the Scheduled Tasks.
 
 ## Output
 
 - Task log
-
-
 

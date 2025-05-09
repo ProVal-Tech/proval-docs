@@ -20,5 +20,3 @@ This role checks if the TPM on the machine is ready to use. If so, this role is 
 |------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
 
-
-

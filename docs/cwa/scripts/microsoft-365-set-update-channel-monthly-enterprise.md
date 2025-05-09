@@ -20,7 +20,7 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Microsoft-365---Set-Update-Channel---Monthly-Enterprise/image_1.png)
+![Sample Run](../../../static/img/docs/a7234fd9-615c-4862-ae0a-b93fd84f7af6/image_1.webp)
 
 ## Dependencies
 
@@ -36,6 +36,4 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Output
 
 - Script log
-
-
 

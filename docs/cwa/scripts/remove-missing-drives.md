@@ -18,10 +18,8 @@ This script removes drives that are still listed on machines but are no longer d
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Remove-Missing-Drives/image_1.png)
+![Sample Run](../../../static/img/docs/2bd7d0b7-7bcb-41aa-be70-2f3ebc2cea6a/image_1.webp)
 
 ## Process
 
 - The script runs an SQL query against the database to delete the drives from the machines that are still listed but no longer detected.
-
-

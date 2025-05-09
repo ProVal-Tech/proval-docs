@@ -40,5 +40,3 @@ This dataview displays all users associated with a domain and general informatio
 | Password Expires                  | Similar to the Password Expiration Date column; however, it doesn't list the date. It just displays whether or not the password expires without a date |
 | Account Expiration                | Indicates whether the account is set to expire in Active Directory                                                                                   |
 
-
-

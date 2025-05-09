@@ -44,5 +44,3 @@ This document displays the information of `Winget` supported applications fetche
 | Data Collection Time      | Data Collection Time.                                                                                    |
 
 
-
-

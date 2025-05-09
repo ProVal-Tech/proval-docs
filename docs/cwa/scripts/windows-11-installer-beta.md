@@ -36,7 +36,7 @@ The script has been updated to address the `InsufficientSystemPartitionDiskSpace
 ## Sample Run
 
 Install Windows 11 from the ProVal file repository, ignoring compatibility requirements.  
-![Image](../../../static/img/Windows-11-Installer-(Beta)/image_1.png)
+![Image](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_1.webp)
 
 Install Windows 11 from a target HTTP multipart download, ignoring reboot.  
 [https://my.repo.site/repo/Windows11.zip.001](https://my.repo.site/repo/Windows11.zip.001)  
@@ -44,7 +44,7 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 [https://my.repo.site/repo/Windows11.zip.003](https://my.repo.site/repo/Windows11.zip.003)  
 ...  
 [https://my.repo.site/repo/Windows11.zip.520](https://my.repo.site/repo/Windows11.zip.520)  
-![Image](../../../static/img/Windows-11-Installer-(Beta)/image_2.png)
+![Image](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_2.webp)
 
 ## Dependencies
 

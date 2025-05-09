@@ -20,11 +20,11 @@ This is a client script and will work only for physical machines. Virtual machin
 
 Set the parameter `Set_environment` for the first execution.
 
-![Sample Run Image 1](../../../static/img/Automate-Agent---Duplicate-Serial-Number---Audit-Only-Email,Ticket/image_1.png)
+![Sample Run Image 1](../../../static/img/docs/44296eb1-9cdc-4833-ac40-7f390eac3a7f/image_1.webp)
 
 Specify the email address where you would like to receive the output of the results.
 
-![Sample Run Image 2](../../../static/img/Automate-Agent---Duplicate-Serial-Number---Audit-Only-Email,Ticket/image_2.png)
+![Sample Run Image 2](../../../static/img/docs/44296eb1-9cdc-4833-ac40-7f390eac3a7f/image_2.webp)
 
 ## System Properties
 

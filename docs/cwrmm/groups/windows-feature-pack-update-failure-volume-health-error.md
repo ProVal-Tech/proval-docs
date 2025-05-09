@@ -21,7 +21,7 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 
 ## Visual Summary
 
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_1.png)
+![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_1.webp)
 
 **Group Type:** Dynamic
 
@@ -32,23 +32,21 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 ## Criteria
 
 - Select `\\<font>OS Build Number\\</font>` for the Criteria, choose `Does Not Contain any` for the comparator, and type `19045` and `22631` in the condition box.  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_2.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_3.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_4.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_5.png)
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_2.webp)  
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_3.webp)  
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_4.webp)  
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_5.webp)
 
 - Click the `Add Criteria` button to add another criterion.  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_6.png)
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_6.webp)
 
 - Select the `Feature Update Install Failure` custom field for criteria, choose `Equal` for the comparator, and type `Volume Health Error` in the condition box.  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_7.png)  
-  ![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_8.png)
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_7.webp)  
+  ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_8.webp)
 
 ## Group
 
 Click the `Save` button to save the group.  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_9.png)  
-![Image](../../../static/img/Windows-Feature-Pack-Update-Failure-Volume-Health-Error/image_10.png)
-
-
+![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_9.webp)  
+![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_10.webp)
 

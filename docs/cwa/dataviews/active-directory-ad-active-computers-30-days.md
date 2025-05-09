@@ -30,5 +30,3 @@ The Active Directory plugin must be installed and configured properly to detect 
 | OS                         | Displays the OS installed on the machine                |
 | Last Contact With RMM      | Displays the description of the machine if any details are available |
 | Last Logon                | Displays the last login date and time                  |
-
-

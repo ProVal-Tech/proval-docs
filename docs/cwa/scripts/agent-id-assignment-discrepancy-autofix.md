@@ -16,10 +16,10 @@ This script will reinstall the Automate agent for machines that are checking int
 
 Additionally, it will work reliably only for customers where Mac Signup Matching is not enabled.
 
-![Image](../../../static/img/Agent-ID-assignment-discrepancy-Autofix/image_1.png)
+![Image](../../../static/img/docs/fc20710b-81b8-4383-a3ad-42ebef9dd930/image_1.webp)
 
 Sample Ticket:  
-![Image](../../../static/img/Agent-ID-assignment-discrepancy-Autofix/image_2.png)
+![Image](../../../static/img/docs/fc20710b-81b8-4383-a3ad-42ebef9dd930/image_2.webp)
 
 ## How To Use
 
@@ -64,6 +64,4 @@ Sample Ticket:
 
 - Ticket
 - Script logs
-
-
 

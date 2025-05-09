@@ -35,5 +35,3 @@ This document contains information about Windows 10 build information and patch 
 | Days Since Last Patched   | Days since last contact with RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
-
-

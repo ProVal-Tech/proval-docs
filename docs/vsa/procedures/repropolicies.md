@@ -20,5 +20,3 @@ Clear Overrides and Reprocess Policies
 - **server**: required. The SQL server name.  
 - **user**: required if using SQL authentication. The username of the SQL account.  
 - **password**: required if using SQL authentication. The password of the SQL account.  
-
-

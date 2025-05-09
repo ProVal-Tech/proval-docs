@@ -20,5 +20,3 @@ This document describes how to detect servers with the ADCS role installed.
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|---------------|
 | `\{%@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'AD-Certificate' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows       |
 
-
-

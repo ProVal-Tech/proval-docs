@@ -18,7 +18,7 @@ This script will disable the firewall notifications for all users on a Windows s
 
 ## Sample Run
 
-![Sample Run](../../../static/img/Windows-Firewall-Notifications---Disable/image_1.png)
+![Sample Run](../../../static/img/docs/9b906a5c-919c-4799-85db-c43359bd6a15/image_1.webp)
 
 ## Process
 
@@ -29,5 +29,3 @@ This script will disable the firewall notifications for all users on a Windows s
 ## Output
 
 - Script logs
-
-

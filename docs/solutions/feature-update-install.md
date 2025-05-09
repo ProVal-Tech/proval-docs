@@ -67,5 +67,3 @@ This document provides details on the contents and the procedure for executing, 
 **Q:** Is it possible to restrict the solution to Windows 10 only?  
 **A:** Certainly, to confine the solution to Windows 10, the individual creating the solution should ensure that the associated groups are limited to Windows 10 only or exclude Windows 11 from the groups.
 
-
-

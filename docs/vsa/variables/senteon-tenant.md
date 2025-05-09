@@ -26,5 +26,3 @@ The value for this must be provided by the partner. The partner can obtain the d
 | Managed Variable Name | Managed Variable Type | Description                                                |
 |-----------------------|-----------------------|------------------------------------------------------------|
 | Senteon_Tenant        | Public                | Used by the agent procedure to specify the tenant during installation |
-
-
