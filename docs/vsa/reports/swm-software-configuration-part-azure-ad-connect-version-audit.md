@@ -35,4 +35,3 @@ List the report parts used. If custom report parts were designed during report c
   - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
-

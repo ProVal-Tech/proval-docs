@@ -40,4 +40,3 @@ The information in this Dataview is populated by a script titled "SpeedTest - Oo
 | Upload Speed     | Displays the upload speed                                         |
 | Execute Date     | Displays the date the script was executed against the machine     |
 | Share URL        | Displays the Share URL                                            |
-

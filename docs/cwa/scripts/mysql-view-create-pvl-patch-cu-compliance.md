@@ -31,4 +31,3 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
-

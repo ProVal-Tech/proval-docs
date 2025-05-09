@@ -25,5 +25,3 @@ Domain Controllers
 ## Output
 
 - Script log
-
-

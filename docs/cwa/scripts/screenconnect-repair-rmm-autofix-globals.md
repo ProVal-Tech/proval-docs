@@ -76,5 +76,3 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days, b
 Please reinstall the ScreenConnect Client manually on the computer.
 Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
-
-

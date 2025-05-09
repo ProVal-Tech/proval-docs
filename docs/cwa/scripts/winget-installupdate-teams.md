@@ -29,5 +29,3 @@ This document outlines the implementation of the [SWM - Software Installation - 
 ## Output
 
 - Script Logs
-
-

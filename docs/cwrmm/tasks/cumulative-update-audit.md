@@ -128,7 +128,7 @@ if ( $Cuinfo -match 'Failed to gather build number|Unsupported Operating System'
 }
 ```
 
-![Select Custom Field](../../../static/img/Cumulative-Update-Audit/image_39.png)
+![Select Custom Field](../../../static/img/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb/image_39.webp)
 
 #### Row 3 Function: Script Log
 

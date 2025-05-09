@@ -47,4 +47,3 @@ This Dataview is very descriptive and reflects all the relevant information for 
 | Days Since Last Patch Scan             | Displays the number of days since the last patch scan                   |
 | Days Since Last Agent Contact          | Displays the number of days since the last agent contact                |
 | Days Since Last Agent Inventory        | Displays the number of days since the last agent inventory              |
-

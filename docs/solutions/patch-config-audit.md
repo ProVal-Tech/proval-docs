@@ -87,4 +87,3 @@ Configure the automation as outlined below:
 
 **Q:** Can this solution be used in environments without configuring the [WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) script?  
 **A:** The auditing section of the solution is independent of the [WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) script.
-

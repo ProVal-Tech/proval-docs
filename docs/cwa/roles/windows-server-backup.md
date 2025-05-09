@@ -19,4 +19,3 @@ This role is created to detect the agents where the Windows Server Backup featur
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name Windows-Server-Backup -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Installed"@%}` | Contains   | True   | Windows        |
-

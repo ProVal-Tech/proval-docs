@@ -34,4 +34,3 @@ Managed Workstations
 The alert template should execute the [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.  
 
 ![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_3.webp)  
-

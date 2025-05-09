@@ -51,4 +51,3 @@ Runs Agnostic Powershell to perform the audit.
 
 - AP Log
 - xPVAL Office Activation Status CF
-

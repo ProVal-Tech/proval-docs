@@ -27,4 +27,3 @@ This internal monitor detects Windows agents where the script [EPM - Network - S
 ## Target
 
 This monitor can be enabled for all service plan groups, servers only, infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is designed exclusively for Windows.
-

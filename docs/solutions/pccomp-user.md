@@ -29,5 +29,3 @@ The script checks whether the desired user is present on the machine and updates
 Moreover, a corresponding script to delete the user is also created.
 
 ## FAQ
-
-

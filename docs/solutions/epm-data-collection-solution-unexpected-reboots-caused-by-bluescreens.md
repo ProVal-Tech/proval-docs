@@ -59,5 +59,3 @@ The Unexpected Restart Monitor generates a lot of noise, as often the shutdown i
 ![Image](../../static/img/docs/64476262-ad0f-474e-aebb-70ec1e0ccd97/image_4.webp)
 
 ## FAQ
-
-

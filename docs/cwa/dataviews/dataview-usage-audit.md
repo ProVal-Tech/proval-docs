@@ -26,4 +26,3 @@ This Dataview audits the Dataviews most frequently accessed by users. It can be 
 | Recently Opened On                   | Most recent date when the Dataview was accessed                                                     |
 | Duration Since Initial Opening (Days) | Number of days since the Dataview was opened for the first time in the last (History Retention) days |
 | History Retention (Days)            | Indicates how many days old the data displayed in the Dataview is (it depends on the data shown in the h_users table) |
-

@@ -62,4 +62,3 @@ The purpose of the dataviews included in this solution is to present the patchin
 8. Remove/delete the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
    - [MySQL - View - Create (pvl_patch_cu_compliance)](/docs/b1963e10-77b2-444a-80ac-9cfded3ab8a4)
-

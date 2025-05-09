@@ -23,5 +23,3 @@ The script generates two custom tables: [pvl_automate_connection_audit](/docs/ec
 ## Output
 
 - Script Log
-
-

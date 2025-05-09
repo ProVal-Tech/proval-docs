@@ -27,4 +27,3 @@ Set this custom flag to true to exclude an endpoint from SentinelOne deployment.
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/a2967009-ef20-4ce5-823e-8b80349325a0/image_1.webp)
-

@@ -53,4 +53,3 @@ LEFT JOIN clients ON clients.clientid = c.clientid
 WHERE software.name LIKE '%screenconnect%' 
 GROUP BY software.name
 ```
-

@@ -66,4 +66,3 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
-

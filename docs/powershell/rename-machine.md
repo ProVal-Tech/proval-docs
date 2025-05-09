@@ -35,4 +35,3 @@ The script needs the newname and the domain credential (only needed in case of d
 - .\Rename-Machine-Log.txt
 - .\Rename-Machine-error.txt
 - .\Rename-Machine-data.txt
-

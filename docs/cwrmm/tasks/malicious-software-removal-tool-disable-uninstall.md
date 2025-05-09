@@ -282,4 +282,3 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
-

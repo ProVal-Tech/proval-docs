@@ -34,4 +34,3 @@ Windows Machines
 **Name:** `~custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`  
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Monthly Enterprise](/docs/a7234fd9-615c-4862-ae0a-b93fd84f7af6) script.
-

@@ -47,4 +47,3 @@ Click the `Save` button to save the group.
 Click the `Save` button to save the group.
 
 ![Image 7](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_7.webp)
-

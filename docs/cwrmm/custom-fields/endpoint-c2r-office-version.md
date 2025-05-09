@@ -24,4 +24,3 @@ This document provides details about the C2R Office version installed on the mac
 
 ![Screenshot 1](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_2.webp)
-

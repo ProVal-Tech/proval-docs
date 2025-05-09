@@ -54,5 +54,3 @@ The result on End Machine:
 ## Output
 
 - Script Log
-
-

@@ -34,4 +34,3 @@ Windows Machines
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script.
-

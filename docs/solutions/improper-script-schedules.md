@@ -51,4 +51,3 @@ Validate the presence of data in the [CWM - Automate - Dataview - Improper Scrip
 
 ### 6.
 Remove the [CWM - Automate - Script - MySQL - View - Create (pvl_Scheduled_Scripts)](/docs/494c2d2c-2f37-45b7-9eb0-130ff3aac45c) script.
-

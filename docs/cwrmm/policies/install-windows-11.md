@@ -46,4 +46,3 @@ Policy to enable Windows 11 installation for Windows 10 machines.
 ## Completed Policy
 
 ![Image](../../../static/img/docs/27f8240b-603a-4af2-b9d9-480a560f8747/image_23.webp)
-

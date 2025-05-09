@@ -74,4 +74,3 @@ AND (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_1_1.webp)
-

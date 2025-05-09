@@ -81,4 +81,3 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
-

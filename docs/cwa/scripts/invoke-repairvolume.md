@@ -42,4 +42,3 @@ Run a scan and repair on all available drives, stopping the drives completely du
 ## Output
 
 - Script log
-

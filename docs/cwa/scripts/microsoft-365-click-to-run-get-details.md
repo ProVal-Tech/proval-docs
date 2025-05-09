@@ -53,4 +53,3 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 - Script log
 - Custom Table
 - Dataview
-

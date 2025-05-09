@@ -26,4 +26,3 @@ The [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7) u
 **Default Value:** 0  
 **Description:** This custom field is used by the Enable Recycle Bin Task to store the Recycle Bin status on AD Infrastructure Masters.  
 **Editable:** Yes  
-

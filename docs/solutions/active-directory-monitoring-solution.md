@@ -316,4 +316,3 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
-

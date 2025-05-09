@@ -124,4 +124,3 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/docs/1ce60c7e-e23d-4313-bb00-7e89ae031d7f/image_17.webp)  
-

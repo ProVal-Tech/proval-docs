@@ -30,4 +30,3 @@ This script gathers information about the status of the built-in OneDrive backup
 - Script log
 - Custom table
 - Dataview
-

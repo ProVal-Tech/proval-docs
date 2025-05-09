@@ -28,4 +28,3 @@ This document displays the accumulated "Time Saved by Automation" for each scrip
 | Average Weekly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
 | Average Monthly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
 | Average Yearly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
-

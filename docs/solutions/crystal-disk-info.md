@@ -55,4 +55,3 @@ The purpose of this document is to monitor the disk health of physical machines 
 - `CrystalDiskInfo does not support RAID disks or IDE (Parallel ATA) and Serial ATA disks connected to an external ATA controller.`
 
 Reference: [Crystal Disk Info FAQ](https://crystalmark.info/en/software/crystaldiskinfo/crystaldiskinfo-faq/)
-

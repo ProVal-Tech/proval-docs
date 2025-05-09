@@ -97,4 +97,3 @@ A: The cumulative update data is audited from the [Solution - Latest Installed C
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and cannot be referenced. If they are all present, verify that you have full permissions to the table and views.  
 ![Potential Problems](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_4.webp)
-

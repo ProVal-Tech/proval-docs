@@ -63,4 +63,3 @@ C:/HPIA
 Line 10 is where the HP commands are customized.  
 Available Commands (Starting at page 20): [HPIA User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/HPIAUserGuide.pdf)  
 The procedure is set to a default of: /Operation:Analyze /Category:All /selection:All /action:download /silent /AutoCleanup /reportFolder:c:/HPIA/Report /softpaqdownloadfolder:"C:/Windows/temp"  
-

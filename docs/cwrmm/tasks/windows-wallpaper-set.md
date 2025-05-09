@@ -156,7 +156,7 @@ if ( Test-Path $ErrorLogPath ) {
 Get-Content -Path $LogPath
 ```
 
-![alt text](../../../static/img/docs/windows-wallpaper-set/image.png)
+![alt text](../../../static/img/docs/886b7749-ea21-4a48-b4c9-06589fb09a7a/image.webp)
 
 ### Row 2: Function: Script Log
 

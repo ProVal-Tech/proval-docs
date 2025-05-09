@@ -28,4 +28,3 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/5ffed5a2-c8d9-4e43-964a-54f1ac563268/image_1.webp)
-

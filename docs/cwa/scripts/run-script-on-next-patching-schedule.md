@@ -37,4 +37,3 @@ This script is an autofix and will not function as intended if run manually.
 > Checks if the `@Sid@` is passed as a parameter; otherwise, it will fetch the script ID of the script assigned as "Script to run before patching" for the install policy applied against the machine.  
 > Checks if the script with the script ID `@Sid@` is currently running, scheduled to run, or has been executed on the computer during the previous or next 60 minutes.  
 > If yes, then the script will exit; otherwise, it will run the script with ID `@Sid@` against the machine.
-

@@ -33,4 +33,3 @@ Available options are:
 
 ![Image](../../../static/img/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc/image_1.webp)
 ![Image](../../../static/img/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc/image_2.webp)
-

@@ -36,4 +36,3 @@ It will execute the [SWM - Script - Microsoft Office - Click-to-Run - Get Detail
 ## Output
 
 - Script log
-

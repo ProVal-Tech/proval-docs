@@ -17,17 +17,17 @@ To get the PackageId and source, you can search in cmd using **"winget search ap
 
 ## Sample Run
 
-![Image1](../../../static/img/cwrmm-task-winget-install-application/image1.png)
+![Image1](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image1.webp)
 
 **Example 1:** Installing application without any optional parameters
 
-![Image2](../../../static/img/cwrmm-task-winget-install-application/image2.png)
+![Image2](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image2.webp)
 
 **Example 2:** Installing application with optional parameter
 
-![Image3](../../../static/img/cwrmm-task-winget-install-application/image3.png)
+![Image3](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image3.webp)
 
-![Image4](../../../static/img/cwrmm-task-winget-install-application/image4.png)
+![Image4](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image4.webp)
 
 ## Dependencies
 

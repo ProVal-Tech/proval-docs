@@ -107,10 +107,10 @@ Paste the highlighted text:
 #### Row 4c: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Image](../../../static/img/Remove-Application/image_48.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_48.webp)  
 
 In the script exit message, leave it blank.  
-![Image](../../../static/img/Remove-Application/image_49.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_49.webp)  
 
 ### Row 5: Function: Script Log
 
@@ -119,7 +119,7 @@ In the script exit message, leave it blank.
 Paste the highlighted text:  
 `Executing the PowerShell script to perform the uninstallation of the @ApplicationName@.`  
 
-![Image](../../../static/img/Remove-Application/image_50.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_50.webp)  
 
 ### Row 6: Function: PowerShell Script
 
@@ -222,20 +222,20 @@ In this window, search for the **Remove Application Result** field.
 **Custom Field:** Remove Application Result  
 **Value:** `Success`  
 
-![Image](../../../static/img/Remove-Application/image_36.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_36.webp)  
 
 #### Row 10d: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Image](../../../static/img/Remove-Application/image_48.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_48.webp)  
 
 In the script exit message, leave it blank.  
-![Image](../../../static/img/Remove-Application/image_49.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_49.webp)  
 
 ### Row 11: Function: Script Exit
 
 Add a new row by clicking on the Add Row button.  
-![Image](../../../static/img/Remove-Application/image_48.png)  
+![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_48.webp)  
   
 In the script exit message, write `@ApplicationName@ failed to uninstall. Exiting script with error.`  
 ![Row 11 Exit](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_37.webp)  

@@ -35,4 +35,3 @@ Available options are:
 
 ![Screenshot 1](../../../static/img/docs/772c0498-4505-4f1c-afc4-46788294b3e2/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/772c0498-4505-4f1c-afc4-46788294b3e2/image_2.webp)  
-

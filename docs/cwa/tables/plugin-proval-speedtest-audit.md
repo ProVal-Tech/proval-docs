@@ -49,4 +49,3 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
-

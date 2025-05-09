@@ -30,6 +30,4 @@ Does this monitor can perform installation as well?
 
 By default, it only performs the update.
 Yes, for the install enable please change the null value to 1 as shown below:
-![Change to 1 to enable install](../../../static/img/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb/image.webp)
-
-
+![Change to 1 to enable install](../../../static/img/docs/00000000-0000-0000-0000-000000000000/image.webp)

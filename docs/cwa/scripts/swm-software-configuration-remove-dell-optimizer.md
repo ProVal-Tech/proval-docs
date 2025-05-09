@@ -33,4 +33,3 @@ Leave the parameter blank to restart the computer manually.
 ## Output
 
 - Script Log
-

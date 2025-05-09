@@ -170,7 +170,7 @@ This screen will appear.
 - Set `ExportableEncrypted` in the `Value` field.  
 - Click the `Save` button.
 
-![Save Parameter](../../../static/img/Import-LMCertificate/image_33.png)
+![Save Parameter](../../../static/img/docs/0f400020-d1ec-40a1-8581-b7f20aacef5d/image_33.webp)
 
 ### KeyUsage
 

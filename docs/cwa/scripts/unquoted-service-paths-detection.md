@@ -31,4 +31,3 @@ The script will fetch the new paths to be set for each unquoted service on the m
 ## Output
 
 Script log
-

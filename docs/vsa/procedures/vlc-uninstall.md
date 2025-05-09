@@ -29,5 +29,3 @@ This procedure silently removes VLC.
 ## Output
 
 AP Log
-
-

@@ -69,4 +69,3 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 - Custom table
 - Dataview
 - Backup file under LTShare at `LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>`
-

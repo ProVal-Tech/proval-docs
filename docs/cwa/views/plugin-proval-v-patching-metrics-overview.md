@@ -38,4 +38,3 @@ Minimum Requirement: MySQL 5.7.7
 | Total Approved   | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
 | Total Missing    | decimal (23,0)| Number of approved patches that aren't installed                                             |
 | Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |
-

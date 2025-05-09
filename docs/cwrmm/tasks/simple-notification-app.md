@@ -127,7 +127,7 @@ A pop-up box will appear. Set them as follows:
 - Set `Value` as `ENTER YOUR VALUE HERE` (Replace 'Enter value here' with the Phone Number provided by the partner. If not provided, leave it as it is.)
 - Click the `Save` button.
 
-![alt text](../../../static/img/docs/simple-notification-app/image.png)
+![alt text](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image.webp)
 
 ### Row 5 Function: PowerShell Script
 

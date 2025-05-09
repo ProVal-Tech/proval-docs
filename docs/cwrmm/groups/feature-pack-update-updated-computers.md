@@ -87,4 +87,3 @@ Click the Save button to save the group.
 ![Image](../../../static/img/docs/72490aca-9d0d-47b9-88a9-437279e21d7a/image_13.webp)
 
 ![Image](../../../static/img/docs/72490aca-9d0d-47b9-88a9-437279e21d7a/image_14.webp)
-

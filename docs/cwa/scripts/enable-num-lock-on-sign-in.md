@@ -21,5 +21,3 @@ The script turns on Num-Lock at the log-on screen for Windows machines.
 ## Output
 
 - Script Log
-
-
