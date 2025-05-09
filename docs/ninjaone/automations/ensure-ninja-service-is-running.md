@@ -21,7 +21,7 @@ This Script creates a scheduled task that will make sure ninja service is runnin
 Search and select Deploy `Ensure Ninja Service is Running`
 ![SampleRun1](../../../static/img/docs/cb7a9cf6-e5ea-40db-8249-2daec21d793d/image1.webp)
 
-Sample run to make sure Ninja Service is running at startup
+Sample run to make sure Ninja Service is running at startup.
 ![SampleRun1](../../../static/img/docs/cb7a9cf6-e5ea-40db-8249-2daec21d793d/image2.webp)
 
 ## Automation Setup/Import
