@@ -68,7 +68,7 @@ $fileReplacements = foreach ($entry in $associations) {
 $docCount = 0
 foreach ($doc in $docs) {
     $docCount++
-    Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
+    #Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
     $docContent = Get-Content -Path $doc.FullName
     foreach ($file in $fileReplacements) {
         $docContent = $docContent -replace $file.TargetingRegex, $file.Replacement
@@ -76,7 +76,7 @@ foreach ($doc in $docs) {
     $docContent -join "`n" | Out-File $doc.FullName -NoNewline
 }
 
-$pngImages = Get-ChildItem -Path (Get-Item $PSScriptRoot).Parent.FullName + '\static\img\docs' -Recurse -Filter '*.png'
+$pngImages = Get-ChildItem -Path ((Get-Item $PSScriptRoot).Parent.FullName + '\static\img\docs') -Recurse -Filter '*.png'
 $pngImages | ForEach-Object {
     & $PSScriptRoot\..\tools\libwebp-1.5.0-windows-x64\bin\cwebp.exe $_.FullName -o "$($_.Directory.FullName)\$($_.BaseName).webp"
     Remove-Item -Path $_.FullName -Force
@@ -85,7 +85,7 @@ $pngImages | ForEach-Object {
 $docCount = 0
 foreach ($doc in $docs) {
     $docCount++
-    Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
+    #Write-Host "Processing document $docCount of $($docs.Count): $($doc.FullName)"
     $docContent = (Get-Content -Path $doc.FullName) -replace '\.png\)', '.webp)' -replace '\.png\>\)', '.webp>)'
     $docContent -join "`n" | Out-File $doc.FullName -NoNewline
 }
