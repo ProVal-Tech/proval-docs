@@ -15,13 +15,13 @@ This Script creates a scheduled task that will make sure ninja service is runnin
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+Open any device and go to `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select Deploy `Ensure Ninja Service is Running`
+Search and select `Ensure Ninja Service is Running`
 ![SampleRun1](../../../static/img/docs/cb7a9cf6-e5ea-40db-8249-2daec21d793d/image1.webp)
 
-Sample run to make sure Ninja Service is running at startup.
+Sample run to make sure Ninja Service is running at startup.  
 ![SampleRun1](../../../static/img/docs/cb7a9cf6-e5ea-40db-8249-2daec21d793d/image2.webp)
 
 ## Automation Setup/Import
