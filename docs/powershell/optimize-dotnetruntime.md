@@ -1,9 +1,9 @@
 ---
 id: '6ec8fb3c-29ef-4b05-b8fd-546eb07176c7'
 slug: /6ec8fb3c-29ef-4b05-b8fd-546eb07176c7
-title: 'Manage-DotNetRunTime'
-title_meta: 'Manage-DotNetRunTime'
-keywords: ['Manage','.net','Runtime','list','uninstall',]
+title: 'Optimize-DotNetRunTime'
+title_meta: 'Optimize-DotNetRunTime'
+keywords: ['Optimize','.net','Runtime','list','uninstall',]
 description: 'A description of the script.'
 tags: ['dotnet','windows']
 draft: false
@@ -65,28 +65,28 @@ This script ensures that the system is running the latest supported versions of 
 # Payload Usage
 
 To List all installed .NET runtimes and SDKs  
-```.\Manage-DotNetRunTime.ps1 -Action list```
+```.\Optimize-DotNetRunTime.ps1 -Action list```
 
 To List only installed .NET SDKs  
-```.\Manage-DotNetRunTime.ps1 -Action list -Type sdk```
+```.\Optimize-DotNetRunTime.ps1 -Action list -Type sdk```
 
 To Install the latest supported versions of all .NET components  
-```.\Manage-DotNetRunTime.ps1 -Action install -Type all```
+```.\Optimize-DotNetRunTime.ps1 -Action install -Type all```
 
 To Install the latest supported version of the .NET runtime  
-```.\Manage-DotNetRunTime.ps1 -Action install -Type runtime```
+```.\Optimize-DotNetRunTime.ps1 -Action install -Type runtime```
 
 To Uninstall unsupported versions of ASP.NET Core runtimes  
-```.\Manage-DotNetRunTime.ps1 -Action uninstall -Type aspNetCoreRuntime```
+```.\Optimize-DotNetRunTime.ps1 -Action uninstall -Type aspNetCoreRuntime```
 
 To Remove all unsupported versions of .NET components and install latest available   
-```.\Manage-DotNetRunTime.ps1 -Action renew -Type all```
+```.\Optimize-DotNetRunTime.ps1 -Action renew -Type all```
 
 To Install the latest supported version of the .NET Desktop Runtime when no `Type` is specified  
-```.\Manage-DotNetRunTime.ps1 -Action install```
+```.\Optimize-DotNetRunTime.ps1 -Action install```
 
 To Remove unsupported versions of the .NET Desktop Runtime and install latest available version when no `Type` is specified  
-```.\Manage-DotNetRunTime.ps1 -Action renew```
+```.\Optimize-DotNetRunTime.ps1 -Action renew```
 
 
 # Parameters
@@ -99,5 +99,5 @@ To Remove unsupported versions of the .NET Desktop Runtime and install latest av
 
 The script generates the following output files:
 
-- `.\Manage-DotNetRunTime-log.txt`
-- `.\Manage-DotNetRunTime-Error.txt`
+- `.\Optimize-DotNetRunTime-log.txt`
+- `.\Optimize-DotNetRunTime-Error.txt`
