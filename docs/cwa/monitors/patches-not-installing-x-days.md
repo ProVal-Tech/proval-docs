@@ -60,4 +60,3 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
-

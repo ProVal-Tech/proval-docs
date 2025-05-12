@@ -42,5 +42,3 @@ This document displays the information of `Winget` supported applications fetche
 | App Level                 | Installation level of the application (System/User).                                                    |
 | Auto Update Enabled       | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) document for detailed instructions on enabling Auto Update. |
 | Data Collection Time      | Data Collection Time.                                                                                    |
-
-

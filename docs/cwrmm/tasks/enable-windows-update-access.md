@@ -64,21 +64,18 @@ try {
 (Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
 Set-StrapperEnvironment
 #endregion
-```
-
-```powershell
-# Overwriting Disabled Windows Access for System Account
+#Overwriting Disabled windows access for System account
 $pathArray = @(
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Registry::HKEY_USERS\\S-1-5-18\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
-)
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
+    'Registry::HKEY_USERS\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
+) 
 foreach ($path in $pathArray) {
-    if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
+    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
         Write-Output 'Enabling Windows Update Access to the System Account.'
         try {
-            if (!(Test-Path $path)) {
+            if ( !(Test-Path $path) ) {
                 New-Item -Path $path -Force -Confirm:$false -ErrorAction Stop | Out-Null
             }
             Set-ItemProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
@@ -86,19 +83,18 @@ foreach ($path in $pathArray) {
             throw "Failed to enable Windows Update Access for the system account. Reason: $($Error[0].Exception.Message)"
         }
     }
+    
 }
-```
-
-```powershell
-# Overwriting Disabled Windows Access for Computer
+#Overwriting Disabled windows access for computer
 $pathArray = @(
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'HKLM:\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
+    'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
 )
 foreach ($path in $pathArray) {
-    if ((Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1) {
+    $Path = 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate'
+    if ( (Get-ItemProperty -Path $path -ErrorAction SilentlyContinue).DisableWindowsUpdateAccess -ge 1 ) {
         Write-Output 'Enabling Windows Update Access to the Computer.'
         try {
             Set-RegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction Stop
@@ -107,21 +103,18 @@ foreach ($path in $pathArray) {
         }
     }
 }
-```
-
-```powershell
-# Overwriting Disabled Windows Access for Users
+#Overwriting Disabled windows access for users
 $pathArray = @(
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
-    'Software\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate',
-    'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\WindowsUpdate\\AU'
+    'Software\Policies\Microsoft\Windows\WindowsUpdate',
+    'Software\Policies\Microsoft\Windows\WindowsUpdate\AU',
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate'
+    'Software\Microsoft\Windows\CurrentVersion\Policies\WindowsUpdate\AU'
 )
 foreach ($path in $pathArray) {
-    if (Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }) {
+    if ( Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 } ) {
         Set-UserRegistryKeyProperty -Path $path -Name DisableWindowsUpdateAccess -Value 0 -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
         $failedUsers = Get-UserRegistryKeyProperty -Path $Path -Name DisableWindowsUpdateAccess -ErrorAction SilentlyContinue | Where-Object { $_.Value -ge 1 }
-        if ($failedUsers) {
+        if ( $failedUsers ) {
             throw "Failed to enable Windows Update Access for the Users. $($failedUsers -join ', ')"
         }
     }

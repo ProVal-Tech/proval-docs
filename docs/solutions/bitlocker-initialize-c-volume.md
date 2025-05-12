@@ -29,4 +29,3 @@ This solution enables BitLocker on the endpoints. It features control over the e
 - Create the [Machine Group - BitLocker Initialize](/docs/e52d302e-56a7-4438-8c4d-e53e5a16f751)
 - Create the [Script - BitLocker Initialize C Volume](/docs/d920b865-7887-41b6-9fcd-b4802832d2a9) and follow the deployment instructions
 - Create the [Monitor - BitLocker Initialize Failure Detection](/docs/9475b189-47c5-4682-b278-de406761113b) and follow the deployment instructions.
-

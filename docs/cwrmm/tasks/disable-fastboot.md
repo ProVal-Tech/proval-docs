@@ -21,11 +21,11 @@ The script will attempt to modify the registry keys to disable fastboot on the W
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - Disable_FastBoot](/docs/9c1d0f0a-7ae4-46bd-a9a7-ae15df2ca633)
-- [CW RMM - Custom Field - Endpoint - FastBoot_Disabled](/docs/3c87c303-e892-4f6b-889f-acde66928978) 
-- [CW RMM - Custom Field - Endpoint - Disable_Fastboot_Exclusion](/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19) 
-- [CW RMM - Custom Field - Site - Disable_Fastboot_Exclusion](/docs/693eeb66-9fb2-4653-8cf3-e23fb53c0f56) 
-- [CW RMM - Device Group - Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a) 
+- [Custom Field - Company - Disable_FastBoot](/docs/9c1d0f0a-7ae4-46bd-a9a7-ae15df2ca633)  
+- [Custom Field - Endpoint - FastBoot_Disabled](/docs/3c87c303-e892-4f6b-889f-acde66928978)  
+- [Custom Field - Endpoint - Disable_Fastboot_Exclusion](/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19)  
+- [Custom Field - Site - Disable_Fastboot_Exclusion](/docs/693eeb66-9fb2-4653-8cf3-e23fb53c0f56)  
+- [Device Group - Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a)
 
 ## Task Creation
 
@@ -56,7 +56,7 @@ Search and select the `PowerShell Script` function.
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds. Click the `Save` button.
 
 ```powershell
-$registryPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power'
+$registryPath = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power'
 if (Test-Path $registryPath) {
     $hiberbootEnabled = Get-ItemProperty -Path $registryPath -Name HiberbootEnabled -ErrorAction SilentlyContinue
     if ($hiberbootEnabled.HiberbootEnabled -eq 1) {

@@ -21,7 +21,7 @@ This task installs Threatlocker on both Windows and Mac operating systems.
 
 ## Dependencies
 
-[CW RMM - Solution - Threatlocker Deployment](/docs/c9969bad-d2da-45ec-90fe-d6be82479ebc)
+[Threatlocker Deployment](/docs/c9969bad-d2da-45ec-90fe-d6be82479ebc)
 
 ## Task Creation
 
@@ -53,6 +53,9 @@ A blank function will appear.
 - Click Save
 - Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
 
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-1.webp)
+
 ### Row 2 Function: Set Pre-Defined Variable
 
 - Select `Set Pre-Defined Variable` function  
@@ -63,6 +66,9 @@ A blank function will appear.
 - Select `ThreatLockerAuthKey` custom field from the dropdown
 - Click Save
 - Limit this step to Windows OS by selecting `Windows` from the `Operating System` dropdown on the left side
+
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-2.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-3.webp)
 
 ### Row 3 Function: PowerShell Script
 
@@ -79,47 +85,49 @@ Paste in the following PowerShell script and set the expected time of script exe
 $UniqueIdentifier='@ThreatLockerAuthKey@'
 $organizationName = '@Organization@'
 
-# Check if ThreatLocker is already installed
 $service = Get-Service -Name ThreatLockerService -ErrorAction SilentlyContinue;
 if ($service.Name -eq "ThreatLockerService" -and $service.Status -eq "Running") {
     return "Already Installed";
 }
 
-# Check if directory exists and create if not
-if (!(Test-Path "C:/ProgramData/_automation/script/Threatlocker")) {
-    mkdir "C:/ProgramData/_automation/script/Threatlocker";
+## Check if directory exists and create if not
+if (!(Test-Path "C:\ProgramData\_automation\script\Threatlocker")) {
+    mkdir "C:\ProgramData\_automation\script\Threatlocker";
 }
-
-# Check the OS architecture and download the correct installer
+## Check the OS architecture and download the correct installer
 try {
     if ([Environment]::Is64BitOperatingSystem) {
         $downloadURL = "https://api.threatlocker.com/updates/installers/threatlockerstubx64.exe";
-    } else {
+    }
+    else {
         $downloadURL = "https://api.threatlocker.com/updates/installers/threatlockerstubx86.exe";
     }
-    $localInstaller = "C:/ProgramData/_automation/script/Threatlocker/ThreatLockerStub.exe";
-    Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller -UseBasicParsing;
-} catch {
-    Write-Output "Failed to download the installer";
+    $localInstaller = "C:\ProgramData\_automation\script\Threatlocker\ThreatLockerStub.exe";
+    Invoke-WebRequest -Uri $downloadURL -OutFile $localInstaller -Usebasicparsing;
+    
+}
+catch {
+    Write-Output "Failed to get download the installer";
     return;
 }
-
-# Attempt install
+## Attempt install
 try {
-    & "C:/ProgramData/_automation/script/Threatlocker/ThreatLockerStub.exe" key=$UniqueIdentifier Company=$organizationName
-} catch {
+    & "C:\ProgramData\_automation\script\Threatlocker\ThreatLockerStub.exe" key=$UniqueIdentifier Company=$organizationName
+}
+catch {
     Write-Output "Installation Failed";
     return
 }
-
-# Verify install
+## Verify install
 $service = Get-Service -Name ThreatLockerService -ErrorAction SilentlyContinue;
 if ($service.Name -eq "ThreatLockerService" -and $service.Status -eq "Running") {
     Write-Output "Installation successful";
     return;
-} else {
-    # Check the OS type
+}
+else {
+    ## Check the OS type
     $osInfo = Get-CimInstance -ClassName Win32_OperatingSystem
+    
     if ($osInfo.ProductType -ne 1) {
         Write-Output "Installation Failed";
         return
@@ -132,6 +140,7 @@ Limit this step to `Windows OS` only.
 
 ### Row 4: Function: Script Log
 
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-4.webp)  
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
 ![Script Log Image](../../../static/img/docs/0298665b-0c3d-41de-83ee-bbf3b9d5cd8e/image_15.webp)
 
@@ -148,6 +157,9 @@ Limit this step to `Windows OS` only.
 - Click Save
 - Limit this step to Windows OS by selecting `MacOS` from the `Operating System` dropdown on the left side
 
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-6.webp)  
+![alt text](../../../static/img/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c/image-7.webp)
+
 ### Row 6 Function: Command Prompt (CMD) Script
 
 Search and select the `Command Prompt (CMD) Script` function.  
@@ -160,35 +172,35 @@ Paste in the following bash script and set the expected time of script execution
 
 ```bash
 #!/bin/bash
-GroupKey="@ThreatLockerMacGroupKey@"
+    GroupKey="@ThreatLockerMacGroupKey@"
 #install
 if [ ! -d /Applications/Threatlocker.app ]
-then
-    curl --output-dir "/Applications" -O https://updates.threatlocker.com/repository/mac/1.0/Threatlocker.app.zip
-    echo "Downloading Threatlocker"
-    open /Applications/Threatlocker.app.zip
-    sleep 5
-    osascript -e 'quit app "Finder"'
-    rm -d /Applications/Threatlocker.app.zip
-    if [ ! -d /Applications/Threatlocker.app ]
     then
-        echo "Not able to download the file"
-        exit 1
-    else
-        open /Applications/ThreatLocker.app --args -groupKey $GroupKey
-        echo "Installing Threatlocker"
-        sleep 15
-        echo "Verifying Group Key"
-        sleep 15
-        if [ ! -d /Library/Application/Support/Threatlocker ]
-        then
-            echo "GroupKey is Invalid"
-            exit 1
-        else
-            echo "Threatlocker Installed"
-            exit 0
+        curl --output-dir "/Applications" -O https://updates.threatlocker.com/repository/mac/1.0/Threatlocker.app.zip
+        echo "Downloading Threatlocker"
+        open /Applications/Threatlocker.app.zip
+        sleep 5
+        osascript -e 'quit app "Finder"'
+        rm -d /Applications/Threatlocker.app.zip
+        if [ ! -d /Applications/Threatlocker.app ]
+            then
+                echo "Not able to download the file"
+                exit 1
+                else
+                open /Applications/ThreatLocker.app --args -groupKey $GroupKey
+                echo "Installing Threatlocker"
+                sleep 15
+                echo "Verifying Group Key"
+                sleep 15
+                if [ ! -d /Library/Application\ Support/Threatlocker ]
+                    then
+                        echo "GroupKey is Invalid"
+                        exit 1
+                    else
+                        echo "Threatlocker Installed"
+                        exit 0
+                fi
         fi
-    fi
 fi
 ```
 
@@ -218,4 +230,3 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 ## Output
 
 Script Log
-

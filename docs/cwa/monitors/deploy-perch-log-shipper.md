@@ -31,4 +31,3 @@ Windows Machines
 ## Alert Template
 
 - `△ Custom - Execute Script - Deploy Perch Log Shipper`
-

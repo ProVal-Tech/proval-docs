@@ -144,16 +144,16 @@ The following function will pop up on the screen:
 
 Copy the below PowerShell commands and paste them in the `PowerShell Script Editor` box:
 
-```
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+```PowerShell
+# # Parameters and Globals
+# # Parameters and Globals # # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 
 $Homepage = '@Homepage@'
 $EnforceOnNewTab = '@EnforceOnNewTab@'
 $EnforceHomePageStartup = '@EnforceHomePageStartup@'
 $Target = '@Target@'
 
-if ( $Homepage -match '\\SHomePage\\S' -or ([String]::IsNullOrWhiteSpace($Homepage)) ) {
+if ( $Homepage -match '\SHomePage\S' -or ([String]::IsNullOrWhiteSpace($Homepage)) ) {
     throw 'Homepage is not set correctly.'
 } elseif ( $Homepage.Length -lt 2 ) {
     throw 'Homepage is not set correctly.'
@@ -172,7 +172,7 @@ if ( $EnforceHomePageStartup -match '1|Yes|True' ) {
 }
 
 $Browser = @()
-if ( $Target -match '\\STarget\\S' -or ([String]::IsNullOrWhiteSpace($Target)) ) {
+if ( $Target -match '\STarget\S' -or ([String]::IsNullOrWhiteSpace($Target)) ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
 } elseif ( $target.Length -lt 2  ) {
     $Browser += 'Brave', 'Chrome', 'Edge'
@@ -192,13 +192,13 @@ $parameters.Add( 'Target', $Browser )
 #region Setup - Variables
 $ProjectName = 'Set-ChromiumHomepage'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$BaseURL = 'https://file.provaltech.com/repo\'
+$BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName/"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -221,11 +221,11 @@ if ($Parameters) {
 }
 #endregion
 
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

@@ -33,5 +33,3 @@ Set the Reboot parameter to '1' to reboot the machine.
 ## Output
 
 - Script Logs
-
-

@@ -16,8 +16,8 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 
 ## Dependencies
 
-- [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
-- [CW RMM - Dynamic Group - Reboot Pending Deployment](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20)  
+- [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
+- [Dynamic Group - Reboot Pending Deployment](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20)  
 
 ## Sample Run
 
@@ -62,21 +62,21 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 ```powershell
 $ProjectName = 'Prompter'
-$WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-
-if (!(Test-Path $WorkingDirectory)) {
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+ 
+if ( !(Test-Path $WorkingDirectory) ) {
     try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+        New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop| Out-Null
     } catch {
-        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
+        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Excpection.Message)"
     }
 }
-
-if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
-    $Acl = Get-Acl $WorkingDirectory
+ 
+if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
-    Set-Acl $WorkingDirectory $Acl
+    Set-Acl  $WorkingDirectory $Acl
 }
 ```
 
@@ -96,26 +96,44 @@ In the script log message, simply type `Installing the supported .NET version`
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
 ```powershell
-$ProjectName = 'Prompter'
-$WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-try {
-    $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
-} catch {}
+$ProgressPreference = 'SilentlyContinue'
+$appName = 'dotNet8DesktopRuntime'
+$workingDirectory = 'C:\ProgramData\_automation\app\Prompter'
+$dotnet8path = "$workingDirectory\$appName.exe"
 
-if (!($dotNetVersions -match "WindowsDesktop/.App 6")) {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    (New-Object System.Net.WebClient).DownloadFile("https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/6.0.6/windowsdesktop-runtime-6.0.6-win-x64.exe", "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe")
-    Start-Process -FilePath "$WorkingDirectory/windowsdesktop-runtime-6.0.6-win-x64.exe" -ArgumentList "/quiet", "/norestart" -NoNewWindow -Wait
+Function Install-Check {
     try {
-        $dotNetVersions = (. "$env:ProgramFiles/dotnet/dotnet.exe" --list-runtimes) -join " "
+        $dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '
     } catch {}
-    if (($dotNetVersions -match "WindowsDesktop/.App 6")) {
-        return "Successfully installed."
+    if (!($dotNetVersions -match 'WindowsDesktop\.App 8')) {
+        return $true
     } else {
-        return "Installation failed."
+        return $false
+    }
+}
+
+$dotnet8url = if ([Environment]::Is64BitOperatingSystem) {
+    'https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe'
+} else {
+    'https://download.visualstudio.microsoft.com/download/pr/6e1f5faf-ee7d-4db0-9111-9e270a458342/4cdcd1af2d6914134308630f048fbdfc/windowsdesktop-runtime-8.0.11-win-x86.exe'
+}
+
+if (!(Test-Path -Path $workingDirectory)) {
+    New-Item -ItemType Directory -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
+}
+
+if (Install-Check) {
+    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+    Start-BitsTransfer -Source $dotnet8url -Destination $dotnet8path
+    cmd.exe /c $dotnet8path /install /quiet /norestart
+    Start-Sleep -Seconds 5
+    if (Install-Check) {
+        return 'Error: .Net Desktop Runtime 8.0 installation failed.'
+    } else {
+        return 'Success: .Net Desktop Runtime 8.0 installed'
     }
 } else {
-    return "Already installed."
+    return 'Success: .Net Desktop Runtime 8.0 is already installed.'
 }
 ```
 
@@ -156,10 +174,11 @@ In the script exit message, simply type `The supported .NET version has failed t
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
-$Result = Get-Content -Path 'C:/ProgramData/_Automation/app/Prompter/Prompter_UserAction.txt' -Force -ErrorAction SilentlyContinue
+$Result = Get-Content -Path 'C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt' -Force -ErrorAction SilentlyContinue
 if ($Result) {
     return $Result
-} else {
+}
+else {
     Write-Output 'No Data Found'
 }
 ```
@@ -183,10 +202,11 @@ In this window, search for the `Prompter_UserAction` field.
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
-$Result = Get-Content -Path 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Force -ErrorAction SilentlyContinue
+$Result = Get-Content -Path 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Force -ErrorAction SilentlyContinue
 if ($Result) {
     return $Result
-} else {
+}
+else {
     Write-Output 'No Data Found'
 }
 ```
@@ -208,10 +228,11 @@ In this window, search for the `Prompter_Logging` field.
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
-$Result = Get-Content -Path 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt' -Force -ErrorAction SilentlyContinue
+$Result = Get-Content -Path 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt' -Force -ErrorAction SilentlyContinue
 if ($Result) {
     return $Result
-} else {
+}
+else {
     Write-Output 'No Data Found'
 }
 ```
@@ -258,7 +279,7 @@ In this window, search for the `Auto_RebootPendingCheck` field.
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_30.webp)  
 
-### Row 11e: Function: PowerShell Script
+### Row 11d: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.webp)  
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_31.webp)  
@@ -268,16 +289,15 @@ Paste in the following PowerShell script and set the expected time of script exe
 ```powershell
 $TaskName = 'Reboot Prompter'
 $ProjectName = 'Prompter'
-$WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-$File = "$workingDirectory/Prompter_Counter.txt"
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+$File = "$workingDirectory\Prompter_Counter.txt"
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-
 if ($TaskCheck) {
     # Unregister the task
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
 if (Test-Path -Path "$File") {
-    Remove-Item -Path "$File" -Force -Recurse
+    Remove-Item -Path  "$File" -Force -Recurse
 }
 ```
 
@@ -365,21 +385,21 @@ Create a file.
 $ProjectName = 'Prompter'
 $BaseURL = 'https://file.provaltech.com/repo'
 $EXEURL = "$BaseURL/app/$ProjectName.exe"
-$WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-$EXEPath = "$WorkingDirectory/$ProjectName.exe"
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+$EXEPath = "$WorkingDirectory\$ProjectName.exe"
 New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
 $os = Get-CimInstance -Class Win32_OperatingSystem
 if ($os.Caption -match 'Windows 10|Windows 11') {
     $proval_RebootForceTimeDelaySeconds = @RebootForceTimeDelaySeconds@
     $proval_RebootPromptCount = @RebootPromptCount@
-    $file = "$WorkingDirectory/Prompter_Counter.txt"
+    $file = "$WorkingDirectory\Prompter_Counter.txt"
     $TimesPrompted = Get-Content -Path "$file" -ErrorAction SilentlyContinue
     if ([string]::IsNullOrEmpty($TimesPrompted)) { $TimesPrompted = 0 } else { $TimesPrompted = [int]$TimesPrompted }
     if ($TimesPrompted -eq 0) {
         $files = @(
-            "C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt",
-            "C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt",
-            "C:/ProgramData/_Automation/app/Prompter/Prompter_UserAction.txt"
+            "C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt",
+            "C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt",
+            "C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt"
         )
         foreach ($file in $files) {
             if (Test-Path $file) {
@@ -408,31 +428,33 @@ if ($os.Caption -match 'Windows 10|Windows 11') {
     $Title = "@Prompter_Title@"
     $Theme = 'dark'
     $ButtonType = 'Yes No'
-    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot. Thank you!"
+    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot.  Thank you!"
     $Param = "-m `"$PromptMessage`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
     $Result = cmd.exe /c "$EXEPath $Param"
     $CurrentDate = Get-Date -Format "yyyy-MM-dd hh:mm:ss"
     $Output = "User Action: " + $Result + "`r`n" + "User Action Date Time: " + $CurrentDate
-    $Output | Out-File "C:/ProgramData/_Automation/app/Prompter/Prompter_UserAction.txt" -Append
+    $Output | Out-File "C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt" -Append
     if ($Result -contains 'Yes') {
-        Write-Output "The end user has authorized Restarting computer" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+        Write-Output " The end user has authorized Restarting computer" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
     }
     if ($Result -notcontains 'Yes') {
         if ($TimesPrompted -eq $proval_RebootPromptCount) {
-            Write-Output "The threshold met. Sending force reboot prompt" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+            Write-Output " The threshold met. Sending force reboot prompt" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
             $ButtonType = 'OK'
             $Param = "-m `"$Message`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
             $Result = cmd.exe /c "$EXEPath $Param"
             $TimesPrompted = 0 
-            $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
-        } else {
+            $TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
+        }
+        else {
             $TimesPrompted++
-            Write-Output "Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
-            $TimesPrompted | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Counter.txt'
+            Write-Output " Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
+            $TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
         }
     }
-} else {
-    Write-Output "The operating system is not Windows 10 or 11." | Out-File 'C:/ProgramData/_Automation/app/Prompter/Prompter_Logging.txt' -Append
+}
+else {
+    Write-Output " The operating system is not Windows 10 or 11." | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
 }
 ```
 
@@ -453,10 +475,11 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 ```powershell
 $ProjectName = 'Prompter'
-$file = "C:/ProgramData/_automation/app/$ProjectName/Prompter.ps1"
+$file = "C:\ProgramData\_automation\app\$ProjectName\Prompter.ps1"
 if ((Test-Path -Path $file) -eq 'True') {
     Write-Output "$file file created successfully"
-} else {
+}
+else {
     Write-Output "$file file failed to create"
 }
 ```
@@ -498,28 +521,26 @@ In the script exit message, simply type `%output%`
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
 ```powershell
-$TaskName = 'Reboot Prompter'
+TaskName = 'Reboot Prompter'
 $Description = 'Running Reboot prompter to send the prompt'
 $ProjectName = 'Prompter'
-$WorkingDirectory = "C:/ProgramData/_automation/app/$ProjectName"
-$TaskFile = "$WorkingDirectory/$ProjectName.ps1" 
+$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
+$TaskFile = "$WorkingDirectory\$ProjectName.ps1" 
 $TaskCheck = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-
 if ($TaskCheck) {
     # Unregister the task
     Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
 }
-
-$Action = New-ScheduledTaskAction -Execute 'cmd.exe' -WorkingDirectory $WorkingDirectory -Argument ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($TaskFile)""")
+$Action = New-ScheduledTaskAction -Execute 'cmd.exe'-WorkingDirectory $WorkingDirectory -Argument  ('/c start /min "" Powershell' + ' -NoLogo -ExecutionPolicy Bypass -NoProfile -NonInteractive -Windowstyle Hidden' + " -File ""$($TaskFile)""")
 $TriggerTime = (Get-Date).AddMinutes(1)
 $Trigger = New-ScheduledTaskTrigger -Once -At $TriggerTime
 $Settings = New-ScheduledTaskSettingsSet
-$Principal = New-ScheduledTaskPrincipal -GroupId ((New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545')).Translate([System.Security.Principal.NTAccount]).Value)
-
+$Principal = New-ScheduledTaskPrincipal -GroupId ( ( New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545') ).Translate( [System.Security.Principal.NTAccount] ).Value )
 try {
     Register-ScheduledTask -Action $Action -Trigger $Trigger -TaskName $TaskName -Description $Description -Settings $Settings -Principal $Principal
     Write-Output "Task created successfully"
-} catch {
+}
+catch {
     Write-Output "Failed to create task"
 }
 ```
@@ -601,4 +622,3 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 Task Log  
 Custom Field  
-

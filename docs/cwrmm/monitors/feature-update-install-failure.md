@@ -52,4 +52,3 @@ This document outlines how to set up alerts for computers where the `Feature Upd
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
     ![Step 10](../../../static/img/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3/image_12.webp)
-

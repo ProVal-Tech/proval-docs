@@ -29,4 +29,3 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
   - **Policy Object Name**: Agent Procedures
     - **Policy Object Members**: Automation Time Saved Reports
       - **Policy Object Member Settings**: Monthly, Last Day, Midnight, Do not skip if offline
-

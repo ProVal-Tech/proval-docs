@@ -27,24 +27,26 @@ Please create a new "PowerShell" style script to implement this task.
 
 ![Image 3](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_3_1.webp)  
 
-# Script
+## Script
 
-## Row 1 Function: Script Log
+### Row 1 Function: Script Log
 
 ![Image 4](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4_1.webp)  
 
 Input the following:
 
+```Shell
 The script will detect the Huntress Agent, and if the agent is not found, it will install the agent.  
-```
+
 acct_key : @acct_key@  
 org_key: @ORG_Key@  
 tags: ['installation', 'logging']
-```
-Attempting to download the file using acct_key from the Huntress website as below:  
-[https://huntress.io/script/darwin/@acctKey](https://huntress.io/script/darwin/@acctKey), and once downloaded, the agent will be attempted to install.
 
-## Row 2 Function: Set Pre-defined Variable
+Attempting to download the file using acct_key from the Huntress website as below:  
+https://huntress.io/script/darwin/@acctKey, and once downloaded, the agent will be attempted to install.
+```
+
+### Row 2 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 5](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
@@ -56,7 +58,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 ![Image 6](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6_1.webp)  
 
-## Row 3 Function: Set Pre-defined Variable
+### Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 7](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
@@ -68,7 +70,7 @@ Attempting to download the file using acct_key from the Huntress website as belo
 
 ![Image 8](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7_1.webp)  
 
-## Row 4 Function: Set Pre-defined Variable
+### Row 4 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 9](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
@@ -119,7 +121,8 @@ fi
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Log` function.  
 - Input the following:  
-```
+
+```shell
 %Output%
 ```
 ![Image 13](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11_1.webp)  
@@ -130,12 +133,12 @@ fi
 - Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
 ![Image 15](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_13_1.webp)  
 
-## ROW 7a Condition: Output Contains
+### Row 7a Condition: Output Contains
 
 - Type `Huntress agent is installed` in the Value box.  
 ![Image 16](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_14_1.webp)  
 
-## ROW 7b Function: Set Custom Field
+### Row 7b Function: Set Custom Field
 
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Set Custom Field` function.  
@@ -144,7 +147,7 @@ fi
 - Search and select the `Huntress Deploy_Result` Custom Field.  
 - Type `Successfully Installed` in the `Value` box and click the Save button.  
 
-## ROW 7c Function: Script Exit
+### Row 7c Function: Script Exit
 
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Exit` function.  
@@ -158,7 +161,8 @@ fi
 - Add a new row in the If Section of the If-Else part by clicking the Add Row button  
 - Search and select the `Script Log` function.  
 - Input the following:  
-```
+
+```shell
 Huntress Agent failed to install. Refer to the logs: %Output%
 ```
 ![Image 20](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.webp)  

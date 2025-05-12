@@ -1,8 +1,8 @@
 ---
 id: '1ce60c7e-e23d-4313-bb00-7e89ae031d7f'
 slug: /1ce60c7e-e23d-4313-bb00-7e89ae031d7f
-title: 'Disable Windows OptionalAutomatic Updates'
-title_meta: 'Disable Windows OptionalAutomatic Updates'
+title: 'Disable Windows Optional/Automatic Updates'
+title_meta: 'Disable Windows Optional/Automatic Updates'
 keywords: ['windows', 'updates', 'registry', 'automation', 'patching']
 description: 'This document details the steps to disable Windows optional automatic updates using a script. It includes a sample run, dependencies, and a comprehensive implementation guide with visuals for each step.'
 tags: ['patching', 'registry', 'windows']
@@ -21,7 +21,7 @@ This task will disable the Windows optional automatic updates.
 
 ## Dependencies
 
-[CW RMM Custom Field - Windows Optional Update Disabled](/docs/a2035a6f-bcbc-41a2-ace1-fc08b7ad2511)
+[Windows Optional Update Disabled](/docs/a2035a6f-bcbc-41a2-ace1-fc08b7ad2511)
 
 ## Implementation
 
@@ -56,34 +56,30 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 ```powershell
 # Define the registry paths
-$mainRegPath = "HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU"
-$auOptionsRegPath = "HKLM:/SOFTWARE/Policies/Microsoft/Windows/WindowsUpdate/AU/AUOptions"
-
+$mainRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU"
+$auOptionsRegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions"
 # Check if the main registry key exists
 if (-not(Test-Path -Path $mainRegPath)) {
     # If not, create it
     New-Item -Path $mainRegPath -Force | Out-Null
 }
-
 # Check if the AUOptions registry key exists
 if (Test-Path -Path $auOptionsRegPath) {
     # If it does, remove it
     Remove-Item -Path $auOptionsRegPath -Force
 }
-
 # Check if the AUOptions property exists under the main registry key
 if ($null -ne (Get-ItemProperty -Path $mainRegPath -EA SilentlyContinue).AUOptions) {
     # If it does, remove it
     Remove-ItemProperty -Path $mainRegPath -Name "AUOptions" -Force
 }
-
 # Set the NoAutoUpdate DWORD value to 1
 Set-ItemProperty -Path $mainRegPath -Name "NoAutoUpdate" -Value 1 -Type DWord -Force
-
 # Check if the registry was set properly
 if ((Get-ItemProperty -Path $mainRegPath).NoAutoUpdate -eq 1) {
     Write-Output "Registry set properly."
-} else {
+}
+else {
     Write-Output "Failed to set registry."
 }
 ```
@@ -128,4 +124,3 @@ In this window, search for the `Windows Optional Update Disabled` field.
 ### Row 6: Complete
 
 ![Complete](../../../static/img/docs/1ce60c7e-e23d-4313-bb00-7e89ae031d7f/image_17.webp)  
-

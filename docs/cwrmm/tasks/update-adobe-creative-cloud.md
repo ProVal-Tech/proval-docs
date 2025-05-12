@@ -45,7 +45,8 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### List:
+### List
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_8.webp)  
 
@@ -58,7 +59,7 @@ This screen will appear.
 
 ![Parameter Example](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_10.webp)  
 
-## Task Creation
+## Task
 
 Navigate to the Script Editor section and start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.  
 ![Add Row](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_11.webp)  
@@ -67,6 +68,7 @@ A blank function will appear.
 ![Blank Function](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_12.webp)  
 
 ### Row 1 Function: PowerShell Script
+
 Search and select the `PowerShell Script` function.  
 ![PowerShell Script Step 1](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_13.webp)  
 ![PowerShell Script Step 2](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_14.webp)  
@@ -76,7 +78,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```
+```powershell
 #region parameters
 $List = '@List@'
 if ( $List -match '1|Yes|True' ) {
@@ -93,11 +95,11 @@ $ProjectName = 'Update-AdobeCC'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -129,11 +131,13 @@ if ( Test-Path $ErrorLogPath ) {
 }
 Get-Content -Path $LogPath
 #endregion
+
 ```
 
 ![PowerShell Script Execution](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_16.webp)  
 
 ### Row 2 Function: Script Log
+
 Add a new row by clicking the `Add Row` button.  
 ![Add Row for Script Log](../../../static/img/docs/45c3d0a0-aac8-4794-b40f-c41d7b3b8f43/image_17.webp)  
 

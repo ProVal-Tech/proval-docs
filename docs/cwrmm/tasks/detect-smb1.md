@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task detects if SMB1 is enabled on the machine and saves its output to the [CW RMM - Custom Field - SMB1 Enabled](/docs/67da04f5-4170-402a-93b3-7e6236937263) custom field, which can be used to display information about the machines with SMB1 enabled.
+This task detects if SMB1 is enabled on the machine and saves its output to the [SMB1 Enabled](/docs/67da04f5-4170-402a-93b3-7e6236937263) custom field, which can be used to display information about the machines with SMB1 enabled.
 
 ## Sample Run
 
@@ -48,23 +48,31 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
-```
-$ErroractionPreference= 'SilentlyContinue';  
-$ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; 
-"$($ver.Major).$($ver.Minor)"; 
-if($ver -ge [version]'6.3') {
-    if ( ( (Get-SmbServerConfiguration).EnableSMB1Protocol )  -ne 'True') {
+```PowerShell
+$ErroractionPreference = 'SilentlyContinue'
+
+# Get the OS version
+$ver = [Version](Get-WmiObject -Class Win32_OperatingSystem).version
+"$($ver.Major).$($ver.Minor)"
+
+# Check if the OS version is greater than or equal to 6.3
+if ($ver -ge [version]'6.3') {
+    # Check if SMB1 is enabled using Get-SmbServerConfiguration
+    if (((Get-SmbServerConfiguration).EnableSMB1Protocol) -ne 'True') {
         return 'False'
     } else {
         return 'True'
-    } 
-} else { 
-    $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} );  
-    if ( ( -not $s ) -or ( $s -contains 1 )) {
-        return 'True' 
+    }
+} else {
+    # For older OS versions, check the registry for SMB1 status
+    $s = Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters |
+         ForEach-Object { Get-ItemProperty $_.pspath -Name SMB1 }
+
+    if ((-not $s) -or ($s -contains 1)) {
+        return 'True'
     } else {
-        return 'False' 
-    } 
+        return 'False'
+    }
 }
 ```
 

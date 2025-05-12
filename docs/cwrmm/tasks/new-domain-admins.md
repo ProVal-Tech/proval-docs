@@ -27,11 +27,11 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ## Dependencies
 
-- [CW RMM - Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626)
-- [CW RMM - Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)
-- [CW RMM - Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
-- [CW RMM - Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
-- [CW RMM - Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
+- [Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626)
+- [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8)
+- [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
+- [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
+- [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
 
 ## Variables
 
@@ -41,7 +41,7 @@ The task has been updated to create a ticket. Therefore, the `New Domain Admins`
 
 ### Implementation
 
-Create the Custom Field [CW RMM - Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626).
+Create the Custom Field [New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626).
 
 ## Create Script
 
@@ -137,17 +137,14 @@ try {
 (Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
 Set-StrapperEnvironment
 #endregion
-```
-
-```powershell
 $adminTableName = 'domainadmin'
 $previousDomainAdmins = try { Get-StoredObject -TableName $adminTableName -WarningAction SilentlyContinue } catch { $null }
-$adminGroupMembers = Get-ADGroupMember -Identity Administrators -Recursive | Where-Object { $_.ObjectClass -eq 'User' } | Select-Object -Property DistinguishedName, Name, ObjectClass, ObjectGUID, SamAccountName, SID -Unique
+$adminGroupMembers = Get-ADGroupMember -Identity Administrators -Recursive | Where-Object { $_.ObjectClass -eq 'User' } | Select-Object -Property distinguishedName, name, objectClass, objectGUID, SamAccountName, SID -Unique
 if (!$previousDomainAdmins) {
     Write-Log -Text 'No previous runs of the script were detected. Creating new chain.' -Level Information
 } elseif ($newDomainAdmins = $adminGroupMembers | Where-Object { $_.SID.Value -notin $previousDomainAdmins.SID.Value }) {
-    Write-Log -Text "$($newDomainAdmins.Count) new domain admin(s) detected." -Level Information
-    Write-Output "New Domain admin(s): $(foreach ($admin in $newDomainAdmins) { "'$($admin.SamAccountName)';" })"
+    Write-Log -Text "$($newDomainAdmins.Count) new domain admins(s) detected." -Level Information
+    Write-Output "New Domain admin(s): $(foreach ($admin in $newDomainAdmins) {""'$($admin.SamAccountName)';"" })"
 } else {
     Write-Log -Text 'No new domain admin detected.' -Level Information
     Write-Output 'No new domain admin detected.'
@@ -173,8 +170,8 @@ When you select `Set Custom Field`, a new window will open.
 
 In this window, search for the `New Domain Admins` field.
 
-**Custom Field:** New Domain Admins  
-**Value:** %Output% 
+**Custom Field:** `New Domain Admins`  
+**Value:** `%Output%`
 
 ![Set Custom Field](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_35.webp)  
 
@@ -302,4 +299,3 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Ticket**  
 ![Ticket Output](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_66.webp)  
-

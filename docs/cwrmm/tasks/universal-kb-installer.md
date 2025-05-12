@@ -108,7 +108,7 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
 
 ```powershell
-if ( '@KBNumber@' -notmatch '[0-9]') {
+if ( '@KBNumber@' -notmatch '[0-9]'){
     throw "Valid KB ID is required to install the patch"
 } else {
     $KBNumber = '@KBNumber@'
@@ -124,7 +124,8 @@ $ProgressPreference = 'SilentlyContinue'
 [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
 if ( !( Get-PSrepository -Name 'PSGallery' -ErrorAction SilentlyContinue ) ) {
-    Register-PSRepository -Name PSGallery -SourceLocation 'https://www.powershellgallery.com/api/v2'
+    Register-PSRepository -Name PSGallery -SourceLocation '
+https://www.powershellgallery.com/api/v2'
 }
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 try {
@@ -142,17 +143,19 @@ if ($isInstalled) {
 
 $RebootRequired = (Get-WindowsUpdate -KBArticleID $KBNumber).RebootRequired
 if ($Reboot -eq '1' -and $RebootRequired -eq 'True') {
-    try {
-        Get-WindowsUpdate -KBArticleID $KBNumber -Install -AcceptAll -AutoReboot
-    } catch {
-        throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
-    }
-} else {
-    try {
-        Get-WindowsUpdate -KBArticleID $KBNumber -Install -IgnoreReboot -AcceptAll
-    } catch {
-        throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
-    }
+   try {
+    Get-WindowsUpdate -KBArticleID $KBNumber -Install -AcceptAll -AutoReboot
+}
+ catch {
+    throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
+}
+}
+else {
+try {
+    Get-WindowsUpdate -KBArticleID $KBNumber -Install -IgnoreReboot -AcceptAll
+} catch {
+    throw "Failed to install KBArticleID $KBNumber. Error: $_.Exception.Message"
+}
 }
 ```
 

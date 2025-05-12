@@ -59,4 +59,3 @@ This document outlines multiple solutions that can be used to manage local and d
 ## Implementation
 
 1. Please carefully review the solution documents for importation before implementation.
-

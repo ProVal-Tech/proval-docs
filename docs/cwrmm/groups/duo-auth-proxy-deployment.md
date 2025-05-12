@@ -62,4 +62,3 @@ This group adds the agent to the group for the "DUO Security Authentication Prox
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/docs/94f21e35-d184-4fb5-9215-898bb367a0e9/image_15.webp)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
-

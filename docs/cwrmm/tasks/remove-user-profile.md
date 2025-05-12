@@ -24,6 +24,7 @@ Running the [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) 
 It it a ConnectWise RMM implementation of the agnostic script [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac).
 
 ### Notes
+
 - The user must accept the `I_have_read_the_description_and_agree_to_the_user_agreement` parameter while running the script.
 - `SID` and `Username` parameters cannot be used simultaneously.
 - `PreserveUser` parameter can only be used with the `Username` parameter.
@@ -81,7 +82,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### Username:
+### Username
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Username Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
@@ -94,7 +95,7 @@ This screen will appear.
 
 ![Username Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_10.webp)  
 
-### PreserveUser:
+### PreserveUser
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add PreserveUser Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  
@@ -107,7 +108,7 @@ This screen will appear.
 
 ![PreserveUser Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_11.webp)  
 
-### SID:
+### SID
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![SID Add Parameter Image](../../../static/img/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4/image_8.webp)  

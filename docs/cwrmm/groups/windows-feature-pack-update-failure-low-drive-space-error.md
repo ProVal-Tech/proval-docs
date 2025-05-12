@@ -48,4 +48,3 @@ Categorize Windows 10 and 11 computers where the `Feature Update Install with Tr
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_9.webp)  
 ![Image](../../../static/img/docs/f7cf60a6-9107-4188-9993-41ed9ed243d1/image_10.webp)  
-

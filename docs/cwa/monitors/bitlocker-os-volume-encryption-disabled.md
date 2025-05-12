@@ -94,4 +94,3 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/docs/369dac26-3df5-4591-8d51-47fc1cd7204c/image_1.webp)
-

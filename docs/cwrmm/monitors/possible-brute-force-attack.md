@@ -53,54 +53,84 @@ Change this value from 10 to the desired value after creating the monitor.
    - **Repeat every:** 1 Hour(s)
    - **Script Language:** PowerShell
    - **PowerShell Script:**
-     ```powershell
-     $ErroractionPreference = 'SilentlyContinue'
-     $th = 10
-     $hours = 1
-     $StartTime = (Get-Date).AddHours(-$hours)
-     $filter = @{LogName = 'Security'; ID = 4625; StartTime = $StartTime}
-     $events = Get-WinEvent -FilterHashtable $filter
-     $filteredEvents = $events | Where-Object { $_.Message -notmatch 'Logon Type://s+4' -and $_.Message -notmatch 'Logon Type://s+5' }
-     $total = ($filteredEvents | Measure-Object).Count
-     if ($total -ge $th) {
-         $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '//S' } | Group-Object @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
-         $output = @()
-         foreach ($group in $groupedEvents) {
-             $ex = ([xml]$groupedEvents.Group[-1].ToXml()).Event
-             $time = ([DateTime]$ex.System.TimeCreated.SystemTime).ToString('yyyy-MM-dd HH:mm:ss')
-             $data = $ex.EventData.Data
-             $e = [Ordered]@{}
-             $data | ForEach-Object { $e[$_.Name] = $_.'#Text' }
-             $procid = [Convert]::ToInt64($e.ProcessId, 16)
-             $processStatus = if ($procid -gt 0 -and (Get-Process -Id $procid)) { 'Running' } else { 'Not Running' }
-             $op = [pscustomObject]@{
-                 UserName = $e.TargetUserName
-                 UserSid = $e.TargetUserSid
-                 Domain = $e.TargetDomainName
-                 LogonType = $e.LogonType
-                 WorkstationName = $e.WorkstationName
-                 SourceIpAddress = $e.IpAddress
-                 SourceIpPort = $e.IpPort
-                 FailureStatus = $e.Status
-                 FailureSubStatus = $e.SubStatus
-                 CallerProcessId = $procid
-                 CallerProcessName = $e.ProcessName
-                 CallerProcessStatus = $processStatus
-                 LogonProcess = $e.LogonProcessName
-                 AuthenticationPackage = $e.AuthenticationPackageName
-                 TransmittedServices = $e.TransmittedServices
-                 NTLMPackageName = $e.LmPackageName
-                 KeyLength = $e.KeyLength
-                 Occurrences = $group.Count
-                 MostRecentDetection = $time
-             }
-             $output += $op
-         }
-         $firstLine = "$total failed logon event logs detected in the past $hours hour(s)`n"
-         $staticInfo = @'
-         Logon Type Reference Table:
-         '@
-     ```
+
+    ```powershell
+    $ErroractionPreference = 'SilentlyContinue'
+    $th = 10
+    $hours = 1
+    $StartTime = (Get-Date).Addhours(-$hours)
+    $filter = @{LogName = 'Security'
+        ID = 4625
+        StartTime = $StartTime
+    }
+    $events = Get-WinEvent -FilterHashtable $filter
+    $filteredEvents = $events | Where-Object { $_.Message -notmatch 'Logon Type:\s+4' -and $_.Message -notmatch 'Logon Type:\s+5' }
+    $total = ($filteredEvents | Measure-Object).count
+    if ($total -ge $th) {
+        $groupedEvents = $filteredEvents | Where-Object { $_.Properties.Value -match '\S' } | Group-Object  @{ Expression = { $_.Properties.Value } }, @{ Expression = { $_.Properties.Value } }
+        $output = @()
+        foreach ($group in $groupedEvents) {
+            $ex = ([xml]$groupedEvents.Group[-1].ToXml()).Event
+            $time = ([DateTime]$ex.System.TimeCreated.SystemTime).ToString('yyyy-MM-dd HH:mm:ss')
+            $data = $ex.eventdata.data
+            $e = [Ordered]@{}
+            $data | ForEach-Object { $e[$_.Name] = $_.'#Text' }
+            $procid = [Convert]::ToInt64($e.ProcessId, 16)
+            $processStatus = if ($procid -gt 0 -and (Get-Process -Id $procid)) { 'Running' } else { 'Not Running' }
+            $op = [pscustomObject]@{
+                UserName = $e.TargetUserName
+                UserSid = $e.TargetUserSid
+                Domain = $e.TargetDomainName
+                LogonType = $e.LogonType
+                WorkstationName = $e.WorkstationName
+                SourceIpAddress = $e.IpAddress
+                SourceIpPort = $e.IpPort
+                FailureStatus = $e.Status
+                FailureSubStatus = $e.SubStatus
+                callerProcessId = $procid
+                CallerProcessName = $e.ProcessName
+                CallerProcessStatus = $processStatus
+                LogonProcess = $e.LogonProcessName
+                AuthenticationPackage = $e.AuthenticationPackageName
+                TransmittedServices = $e.TransmittedServices
+                NTLMPackageName = $e.LmPackageName
+                KeyLength = $e.KeyLength
+                Occurrences = $group.Count
+                MostRecentDetection = $time
+            }
+            $output += $op
+        }
+        $firstLine = "$total failed logon event logs detected in the past $hours hour(s)`n"
+        $staticInfo = @'
+    Logon Type Reference Table:
+    2: Interactive
+    3: Network
+    4: Batch
+    5: Service
+    7: Unlock
+    8: NetworkCleartext
+    9: NewCredentials
+    10: RemoteInteractive
+    11: CachedInteractive
+    Failure Reason Reference Table:
+    0XC000005E: There are currently no logon servers available to service the logon request.
+    0xC0000064: User logon with misspelled or bad user account.
+    0xC000006A: User logon with misspelled or bad password for critical accounts or service accounts.
+    0XC000006D: This is either due to a bad username or authentication information for critical accounts or service accounts.
+    0xC000006F: User logon outside authorized hours.
+    0xC0000070: User logon from unauthorized workstation.
+    0xC0000072: User logon to account disabled by administrator.
+    0XC000015B: The user has not been granted the requested logon type (aka logon right) at this machine.
+    0XC0000192: An attempt was made to logon, but the Netlogon service was not started.
+    0xC0000193: User logon with expired account.
+    0XC0000413: Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine.
+    Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not available) with the reference table mentioned above to identify the failure reason.
+    For more detailed information: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625
+    '@
+        return $firstLine + $($output | Out-String) + $staticInfo
+    }
+    ```
+
    - **Criteria:** Contains
    - **Operator:** AND
    - **Script Output:** `failed logon event logs detected in the past`
@@ -109,6 +139,7 @@ Change this value from 10 to the desired value after creating the monitor.
    - **Monitor Output:** Generate Ticket
 
 3. Select the target endpoints:
+
    - Click on Select Target:  
    ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_6.webp)
 
@@ -121,12 +152,13 @@ Change this value from 10 to the desired value after creating the monitor.
 
 ## Ticketing
 
-**Subject:** Script Monitor - Possible Brute Force Attack is triggered on \<Computer Name> (\<Computer Name>) at the site \<Company Name> - \<Site Name>/ Priority - Emergency
+**Subject:** `Script Monitor - Possible Brute Force Attack is triggered on <Computer Name> (<Computer Name>) at the site <Company Name> - <Site Name> / Priority - Emergency`
 
-**Example:** Script Monitor - Possible Brute Force Attack is triggered on DEV-Server2019DC (DEV-Server2019DC) at the site ProVal - Development / Priority - Emergency
+**Example:** `Script Monitor - Possible Brute Force Attack is triggered on DEV-Server2019DC (DEV-Server2019DC) at the site ProVal - Development / Priority - Emergency`
 
 **Sample Body:**
 
+```Shell
 Company Name: ProVal - Development  
 Site Name: ProVal - Development  
 Resource - DEV-Server2019DC (DEV-Server2019DC)  

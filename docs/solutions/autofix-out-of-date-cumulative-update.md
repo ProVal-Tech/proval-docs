@@ -56,7 +56,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 
 | Content                                                                  | Type         | Function                                                                                                        |
 |--------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
-| [Out of Date Cumulative Update (Autofix)](/docs/1d9dbd69-f735-4129-8c9d-e72430313371) | Script Editor | Installs the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. |
+| [Out of Date Cumulative Update (Autofix)](/docs/5170978d-feb6-455c-8806-20224e27d923) | Script Editor | Installs the latest available Cumulative Update on the machines where a CU has not been installed in the last 75 days. |
 | [Out of Date Cumulative Update (Post Reboot Verification)](/docs/34205607-a9c5-463b-9a45-9f7ac02c0d71) | Script Editor | This task validates whether the Cumulative Update installed by the Out of Date Cumulative Update (Autofix) task succeeded or not post-reboot. |
 
 #### Miscellaneous
@@ -84,7 +84,5 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
    - [Out of Date CU _ Install Failure](/docs/12423bcf-17d9-417e-ad6e-b862dd04f184)  
 
 4. Create and deploy the following tasks:  
-   - [Out of Date Cumulative Update (Autofix)](/docs/1d9dbd69-f735-4129-8c9d-e72430313371)  
+   - [Out of Date Cumulative Update (Autofix)](/docs/5170978d-feb6-455c-8806-20224e27d923)  
    - [Out of Date Cumulative Update (Post Reboot Verification)](/docs/34205607-a9c5-463b-9a45-9f7ac02c0d71)  
-
-

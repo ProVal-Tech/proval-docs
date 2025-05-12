@@ -30,4 +30,3 @@ The purpose of this monitor is to select all computers that have returned a vali
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) script.
-

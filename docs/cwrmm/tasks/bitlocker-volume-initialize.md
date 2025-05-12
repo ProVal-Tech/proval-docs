@@ -26,7 +26,7 @@ This is a CW RMM implementation of the agnostic script [Initialize-BitLockerVolu
 
 ## Dependencies
 
-[SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
+[Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
 
 ## User Parameters
 
@@ -341,13 +341,12 @@ $ProjectName = 'Initialize-BitLockerVolume'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -361,7 +360,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters

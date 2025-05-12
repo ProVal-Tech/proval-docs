@@ -62,4 +62,3 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](/docs/3a1d1f7d-a655-40bf-a048-5e861aee00ae)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
-

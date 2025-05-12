@@ -33,6 +33,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Mozilla Firefox Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_4.webp)
 
 **Note:**
+
 - The changes will only take effect once the browser is restarted if it's currently open. In certain situations, especially for Microsoft Edge, the user might need to restart the entire computer for the changes to take effect.
 
 ## Lockdown Chromium Browsers Credit Card Autofill
@@ -47,6 +48,7 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Brave Credit Card Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_7.webp)
 
 **Note:**
+
 - The changes will only take effect once the browser is restarted if it's currently open.
 
 ## Lockdown Chromium Browsers Address Autofill
@@ -61,17 +63,20 @@ For Firefox, turning off the Password Manager will also disable Autofill.
 ![Brave Address Setting](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_10.webp)
 
 **Note:**
+
 - The changes will only take effect once the browser is restarted if it's currently open.
 
 ## Clear Browsers Saved Passwords
 
 The task is designed to remove saved passwords from the following browsers:
+
 - Google Chrome
 - Microsoft Edge
 - Brave
 - Mozilla Firefox
 
 **Note:**  
+
 - If any of these browsers are running, they will be forcefully closed.
 
 ## Disable Edge Wallet
@@ -80,6 +85,7 @@ The task can disable the sync between Edge Wallet and the cloud. It should be di
 ![Edge Wallet](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_11.webp)
 
 **Note:**  
+
 - If Microsoft Edge is running, it will be forcefully closed.
 
 ## Sample Run
@@ -114,7 +120,8 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ## Parameters
 
-### Browsers:
+### Browsers
+
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
 ![Add Parameter](../../../static/img/docs/4f425877-0d14-4135-b2d7-0e640af52851/image_19.webp)
 
@@ -165,9 +172,8 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 ```powershell
 $projectName = 'Set-BrowserSecPolicy'
-$workingDirectory = "C:/ProgramData/_Automation/App/$projectName"
-$scriptPath = "$workingDirectory/$projectName.ps1"
-
+$workingDirectory = "C:\ProgramData\_Automation\App\$projectName"
+$scriptPath = "$workingDirectory\$projectName.ps1"
 # Create WorkingDirectory
 if (!(Test-Path $workingDirectory)) {
     try {
@@ -176,7 +182,6 @@ if (!(Test-Path $workingDirectory)) {
         throw "!ERROR!: Failed to Create $workingDirectory. Reason: $($Error[0].Exception.Message)"
     }
 }
-
 # Assign permissions to everyone for the $workingDirectory
 if (-not ((Get-Acl $workingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl') {
     $Acl = Get-Acl $workingDirectory
@@ -184,185 +189,176 @@ if (-not ((Get-Acl $workingDirectory).Access | Where-Object { $_.IdentityReferen
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $workingDirectory $Acl -ErrorAction SilentlyContinue
 }
-
 # Script Text
 $scriptText = @"
 #requires -RunAsAdministrator
 #requires -Version 5.1
-
 #Parameters
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory = `$true)]
     [ValidateSet('Chrome', 'Edge', 'Brave', 'Firefox', 'All')]
-    [String[]]$Browser = 'All',
-
-    [Parameter(Mandatory = $false)]
-    [bool]$DisablePasswordManager = $true,
-
-    [Parameter(Mandatory = $false)]
-    [bool]$DisableAutofillAddress = $true,
-
-    [Parameter(Mandatory = $false)]
-    [bool]$DisableAutofillCreditCard = $true,
-
-    [Parameter(Mandatory = $false)]
-    [bool]$RemoveSavedPassword = $false,
-
-    [Parameter(Mandatory = $false)]
-    [bool]$DisableEdgeWallet = $false
+    [String[]]`$Browser = 'All',
+    [Parameter(Mandatory = `$false)]
+    [bool]`$DisablePasswordManager = `$true,
+    [Parameter(Mandatory = `$false)]
+    [bool]`$DisableAutofillAddress = `$true,
+    [Parameter(Mandatory = `$false)]
+    [bool]`$DisableAutofillCreditCard = `$true,
+    [Parameter(Mandatory = `$false)]
+    [bool]`$RemoveSavedPassword = `$false,
+    [Parameter(Mandatory = `$false)]
+    [bool]`$DisableEdgeWallet = `$false
 )
-
 #Function to check if the application is installed
 function Find-Application {
     Param(
         [Parameter()]
-        [String]$Name
+        [String]
+        `$Name
     )
-    if (Get-ChildItem -Path HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall, HKLM:/SOFTWARE/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match "`$Name" }) {
+    if (Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { `$_.DisplayName -match "`$Name" }) {
         Write-Information "`$Name is installed." -InformationAction Continue
         return `$Name
     } else {
         Write-Information "`$Name is not installed." -InformationAction Continue
-        return $false
+        return `$false
     }
 }
-
 #Function to check the current value of the registry key
 function Get-RegValue {
     Param(
         [Parameter()]
-        [String]$path,
-        $Reg
+        [String]
+        `$path,
+        `$Reg
     )
     try {
-        return (Get-ItemProperty -Path $path -ErrorAction Stop)."$Reg"
+        return (Get-ItemProperty -Path `$path -ErrorAction Stop)."`$Reg"
     } catch {
-        return $null
+        return `$null
     }
 }
-
 #Function to set the value to the registry key
 function Set-RegValue {
     Param(
         [Parameter()]
-        [String]$path,
-        $Reg,
-        $Value
+        [String]
+        `$path,
+        `$Reg,
+        `$Value
     )
-    if ((Get-RegValue -path $path -Reg $Reg) -ne $Value) {
-        if (!(Test-Path -Path $path)) {
-            New-Item -Path $path -Force | Out-Null
+    if ((Get-RegValue -path `$path -Reg `$Reg) -ne `$Value) {
+        if (!(Test-Path -Path `$path)) {
+            New-Item -Path `$path -Force | Out-Null
         }
-        Set-ItemProperty -Path $path -Name $Reg -Value $Value -Force
+        Set-ItemProperty -Path `$path -Name `$Reg -Value `$Value -Force
     }
 }
-
-$failed = @()
-if ($Browser -eq 'All') {
-    $Browser = @('Chrome', 'Edge', 'Brave', 'Firefox')
+`$failed = @()
+if (`$Browser -eq 'All') {
+    `$Browser = @('Chrome', 'Edge', 'Brave', 'Firefox')
 }
-
 #Disable Password Manager and Autofill
-foreach ($app in $Browser) {
+foreach (`$app in `$Browser) {
     # Set the registry settings for the current Browser
-    switch ($app) {
+    switch (`$app) {
         'Chrome' {
-            $regPath = 'HKLM:/Software/Policies/Google/Chrome'
-            $appName = 'Google Chrome'
-            $process = 'chrome'
-            $profilePath = 'AppData/Local/Google/Chrome'
+            `$regPath = 'HKLM:\Software\Policies\Google\Chrome'
+            `$appName = 'Google Chrome'
+            `$process = 'chrome'
+            `$profilePath = 'AppData\Local\Google\Chrome'
         }
         'Edge' {
-            $regPath = 'HKLM:/Software/Policies/Microsoft/Edge'
-            $appName = 'Microsoft Edge'
-            $process = 'msedge'
-            $profilePath = 'AppData/Local/Microsoft/Edge'
+            `$regPath = 'HKLM:\Software\Policies\Microsoft\Edge'
+            `$appName = 'Microsoft Edge'
+            `$process = 'msedge'
+            `$profilePath = 'AppData\Local\Microsoft\Edge'
         }
         'Brave' {
-            $regPath = 'HKLM:/SOFTWARE/Policies/BraveSoftware/Brave'
-            $appName = 'Brave'
-            $process = 'brave'
-            $profilePath = 'AppData/Local/BraveSoftware/Brave-Browser'
+            `$regPath = 'HKLM:\SOFTWARE\Policies\BraveSoftware\Brave'
+            `$appName = 'Brave'
+            `$process = 'brave'
+            `$profilePath = 'AppData\Local\BraveSoftware\Brave-Browser'
         }
         'Firefox' {
-            $regPath = 'HKLM:/Software/Policies/Mozilla/Firefox'
-            $appName = 'Mozilla Firefox'
-            $process = 'firefox'
-            $profilePath = 'AppData/Roaming/Mozilla/Firefox/Profiles'
+            `$regPath = 'HKLM:\Software\Policies\Mozilla\Firefox'
+            `$appName = 'Mozilla Firefox'
+            `$process = 'firefox'
+            `$profilePath = 'AppData\Roaming\Mozilla\Firefox\Profiles'
         }
     }
     # Check Application
-    if (Find-Application -Name $appName) {
+    if (Find-Application -Name `$appName) {
         # Disable Password Manager
-        if ($DisablePasswordManager -eq $true) {
-            $reg = 'PasswordManagerEnabled'
-            $Value = 0
-            Write-Information "Disabling Password Manager for $appName." -InformationAction Continue
-            Set-RegValue -Path $regPath -Reg $reg -Value $Value
-            if ((Get-RegValue -path $regPath -Reg $reg) -ne $Value) {
-                $failed += $app
+        if (`$DisablePasswordManager -eq `$true) {
+            `$reg = 'PasswordManagerEnabled'
+            `$Value = 0
+            Write-Information "Disabling Password Manager for `$appName." -InformationAction Continue
+            Set-RegValue -Path `$regPath -Reg `$reg -Value `$Value
+            if ((Get-RegValue -path `$regPath -Reg `$reg) -ne `$Value) {
+                `$failed += `$app
             }
         }
         # Disable Autofill Address for Chromium
-        if ($DisableAutofillAddress -eq $true -and $app -ne 'Firefox') {
-            $Value = 0
-            Write-Information "Disabling Address Autofilling for $appName." -InformationAction Continue
-            $reg = 'AutofillAddressEnabled'
-            Set-RegValue -Path $regPath -Reg $reg -Value $Value
-            if ((Get-RegValue -path $regPath -Reg $reg) -ne $Value) {
-                $failed += $app
+        if (`$DisableAutofillAddress -eq `$true -and `$app -ne 'Firefox') {
+            `$Value = 0
+            Write-Information "Disabling Address Autofilling for `$appName." -InformationAction Continue
+            `$reg = 'AutofillAddressEnabled'
+            Set-RegValue -Path `$regPath -Reg `$reg -Value `$Value
+            if ((Get-RegValue -path `$regPath -Reg `$reg) -ne `$Value) {
+                `$failed += `$app
             }
         }
         # Disable Autofill Credit Card for Chromium
-        if ($DisableAutofillCreditCard -eq $true -and $app -ne 'Firefox') {
-            $Value = 0
-            Write-Information "Disabling Credit Card Information Autofilling for $appName." -InformationAction Continue
-            foreach ($reg in 'AutofillCreditCardEnabled', 'PaymentMethodQueryEnabled') {
-                Set-RegValue -Path $regPath -Reg $reg -Value $Value
-                if ((Get-RegValue -path $regPath -Reg $reg) -ne $Value) {
-                    $failed += $app
+        if (`$DisableAutofillCreditCard -eq `$true -and `$app -ne 'Firefox') {
+            `$Value = 0
+            Write-Information "Disabling Credit Card Information Autofilling for `$appName." -InformationAction Continue
+            foreach (`$reg in 'AutofillCreditCardEnabled', 'PaymentMethodQueryEnabled') {
+                Set-RegValue -Path `$regPath -Reg `$reg -Value `$Value
+                if ((Get-RegValue -path `$regPath -Reg `$reg) -ne `$Value) {
+                    `$failed += `$app
                 }
             }
         }
         # Disable Edge Wallet
-        if ($DisableEdgeWallet -eq $true -and $app -eq 'Edge') {
+        if (`$DisableEdgeWallet -eq `$true -and `$app -eq 'Edge') {
             Write-Information 'Disabling Edge Wallet.' -InformationAction Continue
-            Write-Information "Stopping the process for $appName if it's running." -InformationAction Continue
-            Get-Process -Name $process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$false -WarningAction SilentlyContinue
+            Write-Information "Stopping the process for `$appName if it's running." -InformationAction Continue
+            Get-Process -Name `$process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:`$False -WarningAction SilentlyContinue
             Start-Sleep -Seconds 2
-            $reg = 'SyncDisabled'
-            $Value = 1
-            Set-RegValue -Path $regPath -Reg $reg -Value $Value
-            if ((Get-RegValue -path $regPath -Reg $reg) -ne $Value) {
-                $failed += $app
+            `$reg = 'SyncDisabled'
+            `$Value = 1
+            Set-RegValue -Path `$regPath -Reg `$reg -Value `$Value
+            if ((Get-RegValue -path `$regPath -Reg `$reg) -ne `$Value) {
+                `$failed += `$app
             }
-            foreach ($path in Get-ChildItem -Path 'C:/Users' | Where-Object { $_.Mode -match 'd' }) {
-                if (Test-Path -Path "$($path.FullName)/$profilePath") {
-                    if (Test-Path -Path "$($path.FullName)/$profilePath/User Data/Edge Wallet") {
+            foreach (`$path in Get-ChildItem -Path 'C:\Users' | Where-Object { `$_.Mode -match 'd' }) {
+                if (Test-Path -Path "`$(`$path.FullName)\`$profilePath") {
+                    if (Test-Path -Path "`$(`$path.FullName)\`$profilePath\User Data\Edge Wallet") {
                         try {
-                            Remove-Item -Path "$($path.FullName)/$profilePath/User Data/Edge Wallet" -Force -Confirm:$false -ErrorAction Stop
+                            Remove-Item -Path "`$(`$path.FullName)\`$profilePath\User Data\Edge Wallet" -Force -Confirm:`$False -ErrorAction Stop
                         } catch {
-                            $failed += $app
+                            `$failed += `$app
                         }
                     }
                 }
             }
         }
-        # Delete Saved Passwords for Chromium
-        if ($RemoveSavedPassword -eq $true -and $app -ne 'Firefox') {
-            Write-Information "Stopping the process for $appName if it's running." -InformationAction Continue
-            Get-Process -Name $process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$false -WarningAction SilentlyContinue
+        # Delete Saved Passwords for chromium
+        if (`$RemoveSavedPassword -eq `$true -and `$app -ne 'Firefox') {
+            Write-Information "Stopping the process for `$appName if it's running." -InformationAction Continue
+            Get-Process -Name `$process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:`$False -WarningAction SilentlyContinue
             Start-Sleep -Seconds 2
-            foreach ($path in Get-ChildItem -Path 'C:/Users' | Where-Object { $_.Mode -match 'd' }) {
-                if (Test-Path -Path "$($path.FullName)/$profilePath") {
-                    foreach ($item in ('Login Data', 'Login Data-journal')) {
-                        if (Test-Path -Path "$($path.FullName)/$profilePath/User Data/Default/$item") {
+            foreach (`$path in Get-ChildItem -Path 'C:\Users' | Where-Object { `$_.Mode -match 'd' }) {
+                if (Test-Path -Path "`$(`$path.FullName)\`$profilePath") {
+                    foreach (`$item in ('Login Data', 'Login Data-journal')) {
+                        if (Test-Path -Path "`$(`$path.FullName)\`$profilePath\User Data\Default\`$item") {
                             try {
-                                Write-Information "Removing the passwords saved in $appName for $($path.Name)" -InformationAction Continue
-                                Remove-Item -Path "$($path.FullName)/$profilePath/User Data/Default/$item" -Force -Confirm:$false -ErrorAction Stop
+                                Write-Information "Removing the passwords saved in `$appName for `$(`$path.Name)" -InformationAction Continue
+                                Remove-Item -Path "`$(`$path.FullName)\`$profilePath\User Data\Default\`$item" -Force -Confirm:`$False -ErrorAction Stop
                             } catch {
-                                $failed += $app
+                                `$failed += `$app
                             }
                         }
                     }
@@ -370,20 +366,20 @@ foreach ($app in $Browser) {
             }
         }
         # Delete Saved Passwords for Firefox
-        if ($RemoveSavedPassword -eq $true -and $app -eq 'Firefox') {
-            Write-Information "Stopping the process for $appName if it's running." -InformationAction Continue
-            Get-Process -Name $process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$false -WarningAction SilentlyContinue
+        if (`$RemoveSavedPassword -eq `$true -and `$app -eq 'Firefox') {
+            Write-Information "Stopping the process for `$appName if it's running." -InformationAction Continue
+            Get-Process -Name `$process -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:`$False -WarningAction SilentlyContinue
             Start-Sleep -Seconds 2
-            foreach ($path in Get-ChildItem -Path 'C:/Users' | Where-Object { $_.Mode -match 'd' }) {
-                if (Test-Path -Path "$($path.FullName)/$profilePath") {
-                    foreach ($profile in Get-ChildItem -Path "$($path.FullName)/$profilePath" | Where-Object { $_.Mode -match 'd' }) {
-                        foreach ($item in ('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqlite', 'logins.json', 'logins-backup.json')) {
-                            if (Test-Path -Path "$($profile.FullName)/$item") {
+            foreach (`$path in Get-ChildItem -Path 'C:\Users' | Where-Object { `$_.Mode -match 'd' }) {
+                if (Test-Path -Path "`$(`$path.FullName)\`$profilePath") {
+                    foreach (`$profile in Get-ChildItem -Path "`$(`$path.FullName)\`$profilePath" | Where-Object { `$_.Mode -match 'd' }) {
+                        foreach (`$item in ('signons.txt', 'signons2.txt', 'signons3.txt', 'signons.sqlite', 'logins.json', 'logins-backup.json')) {
+                            if (Test-Path -Path "`$(`$profile.FullName)\`$item") {
                                 try {
-                                    Write-Information "Removing the passwords saved in $appName for $($path.Name)" -InformationAction Continue
-                                    Remove-Item -Path "$($profile.FullName)/$item" -Force -Confirm:$false -ErrorAction Stop
+                                    Write-Information "Removing the passwords saved in `$appName for `$(`$path.Name)" -InformationAction Continue
+                                    Remove-Item -Path "`$(`$profile.FullName)\`$item" -Force -Confirm:`$False -ErrorAction Stop
                                 } catch {
-                                    $failed += $app
+                                    `$failed += `$app
                                 }
                             }
                         }
@@ -393,14 +389,13 @@ foreach ($app in $Browser) {
         }
     }
 }
-
 # return failures if any
-if ($failed.Count -gt 0) {
-    throw "The following applications encountered issues: $($failed -join ', ')"
+if (`$failed.Count -gt 0) {
+    throw "The following applications encountered issues: `$(`$failed -join ', ')"
 } else {
     Write-Information 'All operations completed successfully.' -InformationAction Continue
 }
-
+"@
 # Write Script
 Write-Information 'Writing the PowerShell Script.' -InformationAction Continue
 Remove-Item $scriptPath -Force -Confirm:$false -ErrorAction SilentlyContinue
@@ -410,9 +405,8 @@ try {
 } catch {
     throw "Failed to write the PowerShell script. Reason: $($Error[0].Exception.Message)"
 }
-
 # Set Parameters
-if (!('@Browser@' -match 'Chrome|Edge|Brave|Firefox|All') -or '@Browser@' -match 'All') {
+if ( !('@Browser@' -match 'Chrome|Edge|Brave|Firefox|All') -or '@Browser@' -match 'All' ) {
     $Browser = 'All'
 } else {
     $Browser = @()
@@ -429,37 +423,31 @@ if (!('@Browser@' -match 'Chrome|Edge|Brave|Firefox|All') -or '@Browser@' -match
         $Browser += 'Firefox'
     }
 }
-
 if ('@DisablePasswordManager@' -match 'False|No|0') {
     $DisablePasswordManager = $false
 } else {
     $DisablePasswordManager = $true
 }
-
 if ('@DisableAutofillAddress@' -match 'False|No|0') {
     $DisableAutofillAddress = $false
 } else {
     $DisableAutofillAddress = $true
 }
-
 if ('@DisableAutofillCreditCard@' -match 'False|No|0') {
     $DisableAutofillCreditCard = $false
 } else {
     $DisableAutofillCreditCard = $true
 }
-
 if ('@RemoveSavedPassword@' -match 'True|1|Yes') {
     $RemoveSavedPassword = $true
 } else {
     $RemoveSavedPassword = $false
 }
-
 if ('@DisableEdgeWallet@' -match 'True|1|Yes') {
     $DisableEdgeWallet = $true
 } else {
     $DisableEdgeWallet = $false
 }
-
 $parameters = @{
     Browser = $Browser
     DisablePasswordManager = $DisablePasswordManager
@@ -468,7 +456,6 @@ $parameters = @{
     RemoveSavedPassword = $RemoveSavedPassword
     DisableEdgeWallet = $DisableEdgeWallet
 }
-
 # Run Script
 & $scriptPath @parameters
 ```
@@ -502,5 +489,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
-
-

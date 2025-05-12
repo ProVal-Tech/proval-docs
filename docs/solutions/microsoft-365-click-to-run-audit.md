@@ -38,4 +38,3 @@ The solution aims to audit the basic information of the installed Click-to-Run v
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](/docs/f5099dd5-8e47-468f-a623-a245c342eb19)
-

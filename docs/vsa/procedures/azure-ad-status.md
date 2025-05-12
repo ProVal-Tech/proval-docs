@@ -47,5 +47,3 @@ Solution: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 ## Output
 
 Procedure log files and custom fields.
-
-

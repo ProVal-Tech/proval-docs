@@ -36,5 +36,3 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](/docs
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
-
-

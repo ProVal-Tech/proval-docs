@@ -26,7 +26,7 @@ This is a CW RMM implementation of the agnostic script [Add-WifiProfile](/docs/6
 
 ## Dependencies
 
-[EPM - Windows Configuration - Agnostic Script - Add-WifiProfile](/docs/6e1f420f-5a5a-49e1-a7cc-943e258d2ae5)
+[Add-WifiProfile](/docs/6e1f420f-5a5a-49e1-a7cc-943e258d2ae5)
 
 ## User Parameters
 
@@ -203,7 +203,6 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```powershell
 [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingConvertToSecureStringWithPlainText', '')]
 [CmdletBinding()]
-Param()
 # # Parameters and Globals
 $profileName = '@profileName@'
 if ( '@ConnectionMode@' -notin ( 'Manual', 'Auto' ) ) {
@@ -232,7 +231,6 @@ if ( '@overwrite@' -match '1|Yes|True|Y') {
 } else {
     $overwrite = $false
 }
-
 $Parameters = @{
     ProfileName = $profileName
     ConnectionMode = $ConnectionMode
@@ -247,11 +245,11 @@ $ProjectName = 'Add-WifiProfile'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null

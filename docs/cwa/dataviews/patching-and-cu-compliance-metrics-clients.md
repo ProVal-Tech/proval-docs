@@ -58,4 +58,3 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
-

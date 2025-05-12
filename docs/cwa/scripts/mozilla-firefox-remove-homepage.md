@@ -24,7 +24,7 @@ This script is used to remove the enforcement of a homepage in the browser.
 
 - Windows 10 1703+
 - Mozilla Firefox
-- [Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9  )
+- [Remove-FirefoxHomepage](/docs/615b14aa-fee1-4eeb-9e5f-02ad695317d9)
 
 ## Variables
 

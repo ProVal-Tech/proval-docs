@@ -27,7 +27,7 @@ The script compares the current operating system build with the latest available
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_2.webp)
 
-## Parameters
+## User Parameters
 
 - Reboot - If True: Will reboot the device immediately after the upgrade completes.
 - Reset - If True: Will reset the tracker counter to 0.
@@ -36,11 +36,11 @@ The script compares the current operating system build with the latest available
 
 ## Dependencies
 
-- [CW RMM - Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
-- [CW RMM - Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
-- [CW RMM - Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
-- [CW RMM - Task - Windows Feature Update Attempt Tracking (Subscript)](/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c)
-- [CW RMM - Device Group - Feature Pack Update Automation](/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba)
+- [Custom Field - WinFeatUpgradeAttempts](/docs/58b312bd-f26c-4b05-ab92-c184520d05de)
+- [Custom Field - Feature Update Install Failure](/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3)
+- [Custom Field - Feature Update Reboot Pending](/docs/45e14854-ba83-4737-8264-b5cd809fca56)
+- [Task - Windows Feature Update Attempt Tracking (Subscript)](/docs/fa4da03b-8c90-4acc-a080-42af8f471a1c)
+- [Device Group - Feature Pack Update Automation](/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba)
 
 ## Create Script
 
@@ -108,7 +108,7 @@ Select `Set User Variable` function.
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_17.webp)
 
-Type `Win11LatestBuild` in the `Variable Name` field and `10.0.22631` in the `Value` field. `10.0.22631` is the latest available feature build for Windows 11 at the moment. Click `Save` to create the `Win11LatestBuild` variable.
+Type `Win11LatestBuild` in the `Variable Name` field and `10.0.26100` in the `Value` field. `10.0.26100` is the latest available feature build for Windows 11 at the moment. Click `Save` to create the `Win11LatestBuild` variable.
 
 ![Image](../../../static/img/docs/40144621-2d0b-4294-b5cb-cec356cf9d74/image_18.webp)
 
@@ -150,7 +150,7 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
+```PowerShell
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
 if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'@Win11LatestBuild@' } else  { [Version]$osinfo.Version -ge [Version]'@Win10LatestBuild@' }
 ```
@@ -225,14 +225,15 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `7200` seconds, and click the `Save` button.
 
-```
+```PowerShell
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$workingpath = "$env:ProgramData/_automation/Script/FeatureUpdate"
-$path = "$workingpath/Install-FeatureUpdate.ps1"
+$workingpath = "$env:ProgramData\_automation\Script\FeatureUpdate"
+$path = "$workingpath\Install-FeatureUpdate.ps1"
 $url = 'https://file.provaltech.com/repo/script/Install-FeatureUpdate.ps1'
-Remove-Item -Path $workingpath -Recurse -Force -ErrorAction SilentlyContinue | Out-Null
-New-Item -Type Directory -Path $WorkingPath -Force -ErrorAction SilentlyContinue | Out-Null 
+Remove-Item -Path $workingpath -Recurse -Force -Erroraction SilentlyContinue | Out-Null
+New-Item -Type Directory -Path $WorkingPath -Force -Erroraction SilentlyContinue | Out-Null 
 (New-Object System.Net.WebClient).DownloadFile($url, $path)
+
 & $path
 ```
 
@@ -330,12 +331,12 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
-$workingpath = "$env:ProgramData/_automation/Script/FeatureUpdate"
-$errorlogpath = "$workingpath/Install-FeatureUpdate-error.txt"
+```PowerShell
+$workingpath = "$env:ProgramData\_automation\Script\FeatureUpdate"
+$errorlogpath = "$workingpath\Install-FeatureUpdate-error.txt"
 if ( Test-Path $errorlogpath ) {
   Get-Content $errorlogpath
-} else {
+}  else  { 
   return 'Error Log File not found.'
 }
 ```
@@ -666,7 +667,7 @@ Search and select the `PowerShell Script` in the newly added row.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
-```
+```PowerShell
 $osinfo = Get-CimInstance -ClassName Win32_OperatingSystem
 if ( $osinfo.buildnumber -ge '20000' ) { [Version]$osinfo.version -ge [Version]'@Win11LatestBuild@' } else  { [Version]$osinfo.Version -ge [Version]'@Win10LatestBuild@' }
 ```
@@ -794,4 +795,3 @@ The `Suspend` option can be used to `suspend/stop` the schedule.
 
 - Script Log
 - Custom Field
-

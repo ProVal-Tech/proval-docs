@@ -19,4 +19,3 @@ This document outlines a method to detect if offline files are enabled in Window
 | Detection String                                                                                       | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|--------|---------------|
 | \{%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |
-

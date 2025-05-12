@@ -72,4 +72,3 @@ When adding criteria, please search for the PowerShell Version custom field.
 - **Condition:** "Success"  
 
 This group holds all devices that are on PowerShell version 5 or above.
-

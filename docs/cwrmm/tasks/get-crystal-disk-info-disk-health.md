@@ -27,7 +27,7 @@ The script runs the Crystal Disk Info tool on the end machines and fetches the D
 - [CW RMM - Custom Field - Crystal Disk Info_Disk Health](/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01)  
 - [EPM - Disk - Agnostic - Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb)  
 
-## Parameters
+## User Parameters
 
 | Name                | Example | Required | Type          | Description                                                                                                                                          |
 |---------------------|---------|----------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ## Parameters
 
-### ReallocatedSector:
+### ReallocatedSector
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.
 
@@ -102,17 +102,16 @@ if ( $reallocatedSectors -match '^[0-9]{1,4}$' ) {
         ReallocatedSector = 50
     }
 }
-#endregion
 #region Setup - Variables
 $ProjectName = 'Get-CrystalDiskInfo'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:/ProgramData/_automation/script/$ProjectName"
-$PS1Path = "$WorkingDirectory/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $WorkingPath = $WorkingDirectory
-$LogPath = "$WorkingDirectory/$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory/$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
@@ -142,7 +141,7 @@ if ( $disks ) {
     foreach ( $disk in $disks ) {
         $op += "Harddisk - $($disk.Model)$(if($disk.'Drive Letter' -match '[A-z]'){' (Drive Letter: ' + $disk.'Drive Letter' + ')'}): Health Status - $($disk.'Health Status')"
     }
-    return $op -join '|'
+    return $op -join '\|'
 }
 if ( Test-Path $ErrorLogPath ) {
     $ErrorContent = ( Get-Content -Path $ErrorLogPath )
@@ -237,4 +236,3 @@ This pop-up box will appear.
 ![Script Log Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_39.webp)  
 - Custom Field  
 ![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.webp)  
-

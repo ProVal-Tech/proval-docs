@@ -22,7 +22,7 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-[CW RMM - Custom Field - PowerShell Version](/docs/945d88e0-81a9-4253-8406-63fa7430d45a)
+[Custom Field - PowerShell Version](/docs/945d88e0-81a9-4253-8406-63fa7430d45a)
 
 ## Variables
 
@@ -59,11 +59,9 @@ Add three (3) new "Rows"
 This will bring up the PowerShell Editor. Paste the PowerShell into the PowerShell Script Editor Field  
 ![Image6](../../../static/img/docs/a8419e91-9e07-4f16-be4b-769c78f86f1b/image_6.webp)  
 
-```
+```PowerShell
 return "$(if($PSVersionTable.PSVersion.Major -lt 5) {'Failure'} else {'Success'}): $($PSVersionTable.PSVersion)"
 ```
-
-Please leave the timeout set to 300 seconds.
 
 #### Row 2 function: Script Log
 
@@ -89,10 +87,9 @@ Please write %output% to the "PowerShell Version" custom field. This will write 
 
 ## Script Deployment
 
-ProVal recommends scheduling this task using a monitor and a machine group. Please review the [solution](/docs/84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9) document here for best practice implementation.
+ProVal recommends scheduling this task using a monitor and a machine group. Review the [solution](/docs/84b2e461-c2a3-423f-8a2c-0ac4e8e62fb9) document here for best practice implementation.
 
 ## Output
 
 - Script log
 - Custom Field
-

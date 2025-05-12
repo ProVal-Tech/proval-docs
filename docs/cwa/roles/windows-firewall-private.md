@@ -19,4 +19,3 @@ This role detects if the 'Private' firewall is enabled on the machine. If so, th
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | \{%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |
-

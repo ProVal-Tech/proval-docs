@@ -145,4 +145,3 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/c2c817db-9667-4e18-864c-11ef0775282c).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
-

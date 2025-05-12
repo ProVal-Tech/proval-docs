@@ -43,4 +43,3 @@ Put the SQL to create the custom table here:
 ```
 CREATE TABLE table_name ...
 ```
-

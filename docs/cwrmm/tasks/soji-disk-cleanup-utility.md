@@ -114,6 +114,7 @@ Select `Set User Variable` function.
 ![Set User Variable 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
 
 Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
+Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
 
 ![User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_17.webp) ![User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_18.webp)
 
@@ -129,6 +130,8 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
+```Powershell
+$WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 ```Powershell
 $WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 
@@ -164,6 +167,7 @@ Select `PowerShell Script` function.
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
 ```PowerShell
+```PowerShell
 $ErrorActionPreference = 'silentlycontinue'
 try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
 
@@ -197,6 +201,7 @@ Select `PowerShell Script` function.
 Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
 ```powershell
+```powershell
 #region Setup - Variables
 $ProjectName = '@ProjectName@'
 $BaseURL = 'https://file.provaltech.com/repo'
@@ -207,6 +212,12 @@ $EXEPath = "$WorkingDirectory\$ProjectName.exe"
 
 #region Download - soji
 if (! (Test-Path $ExePath)) {
+  [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+  Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
+  if (!(Test-Path -Path $EXEPath)) {
+      Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
+  }
+} 
   [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
   Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
   if (!(Test-Path -Path $EXEPath)) {

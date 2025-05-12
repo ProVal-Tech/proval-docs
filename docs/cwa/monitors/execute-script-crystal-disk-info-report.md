@@ -47,4 +47,3 @@ The [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-81
   ![Image](../../../static/img/docs/860cd3d8-4833-4c29-b87d-ac997816994e/image_5.webp)  
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
   ![Image](../../../static/img/docs/860cd3d8-4833-4c29-b87d-ac997816994e/image_6.webp)  
-

@@ -44,4 +44,3 @@ Get a detailed list of patches that are installed or available on the local mach
 - Script Log
 - Custom Table
 - Dataview
-

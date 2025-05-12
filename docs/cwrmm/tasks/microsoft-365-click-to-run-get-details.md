@@ -21,11 +21,11 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Endpoint - C2R Office Version](/docs/9229f1df-c80a-4333-8184-2c54954b4996)
-- [CW RMM - Custom Field - Endpoint - C2R Auto Update](/docs/3fbd3eec-1a64-44d4-a812-fc2ac0e359e0)
-- [CW RMM - Custom Field - Endpoint - C2R Update Channel](/docs/371c0aa5-4230-4952-b341-f5c58b0b46ad)
-- [CW RMM - Custom Field - Endpoint - C2R Data Collection Time](/docs/d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0)
-- [CW RMM - Device Group - Office C2R Auditing](/docs/4611eb6b-e00e-4e38-9935-531f71852e8c)
+- [Custom Field - Endpoint - C2R Office Version](/docs/9229f1df-c80a-4333-8184-2c54954b4996)
+- [Custom Field - Endpoint - C2R Auto Update](/docs/3fbd3eec-1a64-44d4-a812-fc2ac0e359e0)
+- [Custom Field - Endpoint - C2R Update Channel](/docs/371c0aa5-4230-4952-b341-f5c58b0b46ad)
+- [Custom Field - Endpoint - C2R Data Collection Time](/docs/d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0)
+- [Device Group - Office C2R Auditing](/docs/4611eb6b-e00e-4e38-9935-531f71852e8c)
 
 ## Task Creation
 
@@ -59,16 +59,16 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and leave the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
 ```powershell
-$C2RInfo = Get-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration' -ErrorAction SilentlyContinue
-if ($C2RInfo) {
-    $version = $C2RInfo.ClientVersionToReport
+$C2RInfo = Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' -ErrorAction SilentlyContinue
+if ( $C2RInfo ) {
+    $version = $C2rInfo.ClientVersionToReport
     $autoUpdate = if ($C2RInfo.CDNBaseUrl) {
         '1'
     } else {
         '0'
     }
-    $updateChannel = if ($C2RInfo.UpdateChannel) {
-        switch ($C2RInfo.UpdateChannel -replace 'http://officecdn.microsoft.com/pr\', '') {
+    $updateChannel = if ( $C2RInfo.UpdateChannel ) {
+        switch ( $C2RInfo.UpdateChannel -replace 'http://officecdn.microsoft.com/pr/', '' ) {
             '492350f6-3a01-4f97-b9c0-c7c6ddf67d60' {
                 'Current Channel'
             }
@@ -88,7 +88,7 @@ if ($C2RInfo) {
                 'Beta Channel'
             }
             'f2e724c1-748f-4b47-8fb8-8e0d210e9208' {
-                'LTSC Channel (up to Office 2019)'
+                'LTSC Channel (upto Office 2019)'
             }
             '2e148de9-61c8-4051-b103-4af54baffbb4' {
                 'LTSC Channel (Preview)'
@@ -162,10 +162,10 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ($output -match 'Version=') {
-    return $($($output -split '/|')[0] -split '=')[1]
+if ( $output -match 'Version=') {
+  return $($($output -split '\|')[0] -split '=')[1]
 } else {
-    return ''
+  return ''
 }
 ```
 
@@ -205,14 +205,14 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ($output -match 'AutoUpdate=') {
-    if ($($($output -split '/|')[1] -split '=')[1] -eq 1) {
-        return 'Enabled'
+if ( $output -match 'AutoUpdate=') {
+    if ($($($output -split '\|')[1] -split '=')[1] -eq 1) {
+      return 'Enabled'
     } else {
-        return 'Disabled'
+      return 'Disabled'
     }
 } else {
-    return ''
+  return ''
 }
 ```
 
@@ -252,10 +252,10 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ($output -match 'UpdateChannel=') {
-    return $($($output -split '/|')[2] -split '=')[1]
+if ( $output -match 'UpdateChannel=') {
+  return $($($output -split '\|')[2] -split '=')[1]
 } else {
-    return ''
+  return ''
 }
 ```
 
@@ -295,10 +295,10 @@ Paste in the following PowerShell script and leave the `Expected time of script 
 
 ```powershell
 $output = '@psout@'
-if ($output -match 'DataCollectionDate=') {
-    return $($($output -split '/|')[3] -split '=')[1]
+if ( $output -match 'DataCollectionDate=') {
+  return $($($output -split '\|')[3] -split '=')[1]
 } else {
-    return "$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
+  return "$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
 }
 ```
 

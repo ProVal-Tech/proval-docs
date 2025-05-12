@@ -38,4 +38,3 @@ The script queries the endpoint for physical, non-removable drives with a capaci
 
 Agent Procedure Log  
 [EPM - Disk - Custom Field - xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)
-

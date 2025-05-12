@@ -27,7 +27,7 @@ Please create a new "PowerShell" style script to implement this task.
 
 ![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_3.webp)
 
-# Script
+## Script
 
 ## Row 1 Function: Script Log
 
@@ -35,12 +35,14 @@ Please create a new "PowerShell" style script to implement this task.
 
 Input the following:
 
-> The script will detect the keys required for the Huntress Agent repair:  
-> `acct_key : @acct_key@`  
-> `org_key: @ORG_Key@`  
-> `tags: ['security', 'setup', 'software', 'windows']`  
-> Attempting to download the PS1 from the link below:  
-> [https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1), and once downloaded, the agent will be repaired.
+```Shell
+The script will detect the keys required for the Huntress agent repair:
+acct_key : @acct_key@
+org_key: @ORG_Key@
+Tags: @Tags@
+Attempting to download the ps1 from the below link:
+https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1, and once downloaded the agent will be repaired.
+```
 
 ## Row 2 Function: Set Pre-defined Variable
 
@@ -87,11 +89,11 @@ Input the following:
 
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
-```
+```PowerShell
 #region Setup - Variables
 $PS1URL = 'https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1'
-$WorkingDirectory = 'C:/ProgramData/_Automation/Script/Invoke-HuntressAgentCommand'
-$PS1Path = "$WorkingDirectory/Invoke-HuntressAgentCommand.ps1"
+$WorkingDirectory = 'C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand'
+$PS1Path = "$WorkingDirectory\Invoke-HuntressAgentCommand.ps1"
 $AcctKey = '@acctkey@'
 $OrgKey = '@orgkey@'
 $Tags = '@tags@'
@@ -100,57 +102,62 @@ $Parameters = @{}
 if ($AcctKey -ne '' -and $AcctKey -notmatch '@acct_key') {
     $Parameters['repair'] = $true
     $Parameters['acctkey'] = $AcctKey
-} else {
+}
+else {
     return 'Account Key Missing'
 }
 
 if ($OrgKey -ne '' -and $OrgKey -notmatch '@Org_key') {
     $Parameters['orgkey'] = $OrgKey
-} else {
+}
+else {
     $Parameters['orgkey'] = ''
 }
 
 if ($Tags -ne '' -and $Tags -notmatch '@tags') {
     $Parameters['tags'] = $Tags
-} else {
+}
+else {
     $Parameters['tags'] = ''
 }
 
 #endregion
 
 #region Setup - Folder Structure
-if (!(Test-Path $WorkingDirectory)) {
+if ( !(Test-Path $WorkingDirectory) ) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-    } catch {
+    }
+    catch {
         return "ERROR: Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
     }
-} 
-if (-not (((Get-Acl $WorkingDirectory).Access | Where-Object { $_.IdentityReference -Match 'Everyone' }).FileSystemRights -Match 'FullControl')) {
-    $Acl = Get-Acl $WorkingDirectory
+} if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'EveryOne' } ).FileSystemRights -Match 'FullControl' ) ) {
+    $ACl = Get-Acl $WorkingDirectory
     $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
 
-#region Write Script
+#region write script
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
 if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
     return "ERROR: No pre-downloaded installer exists and installer $PS1URL failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
+}
+elseif ($response.StatusCode -eq 200) {
     Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
     [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
 }
 if (!(Test-Path -Path $PS1Path)) {
-    return 'ERROR: An error occurred and Huntress installer was unable to be downloaded. Exiting.'
+    return 'ERROR: An error occurred and huntress installer was unable to be downloaded. Exiting.'
 }
 #endregion
 
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
-} else {
+}
+else {
     & $PS1Path
 }
 #endregion
@@ -160,11 +167,11 @@ if ($Parameters) {
 
 ## Step 6 Function: Script Log
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button
-- Search and select the `Script Log` function.
-- Input the following 
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Search and select the `Script Log` function.  
+- Input the following:
 
-```
+```Shell
 %Output%
 ```
 
@@ -180,19 +187,19 @@ if ($Parameters) {
 
 ## Row 7a Condition: Output Contains
 
-- Type `denied` in the Value box.
-- Add another condition with the OR operator and type `ERROR:` in the Value box.
+- Type `denied` in the Value box.  
+- Add another condition with the OR operator and type `ERROR:` in the Value box.  
 - Add another condition with the OR operator and type `Account Key Missing` in the Value box.
 
 ![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_14.webp)
 
 ## Row 7b Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button
-- Search and select the `Script Exit` function.
-- Input the following 
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Search and select the `Script Exit` function.  
+- Input the following:
 
-```
+```Shell
 Failed to repair Huntress Agent. Command Result: %Output%
 ```
 
@@ -202,11 +209,11 @@ Failed to repair Huntress Agent. Command Result: %Output%
 
 ## Step 8 Function: Script Log
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button
-- Search and select the `Script Log` function.
-- Input the following 
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Search and select the `Script Log` function.  
+- Input the following:
 
-```
+```Shell
 Successfully repaired Huntress Agent.
 ```
 
@@ -216,11 +223,11 @@ Successfully repaired Huntress Agent.
 
 ## Step 9 Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button
-- Search and select the `Script Exit` function.
+- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Search and select the `Script Exit` function.  
 - Leave it blank
 
-```
+```Shell
 
 ```
 

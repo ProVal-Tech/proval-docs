@@ -39,4 +39,3 @@ It is an Automate implementation of the agnostic script [EPM - Windows Update - 
 
 - Custom Table
 - Dataview
-

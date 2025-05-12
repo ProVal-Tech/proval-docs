@@ -14,7 +14,7 @@ unlisted: false
 
 This script disables the SMB1 protocol on the target machine for both versions below and above '6.3'.
 
-Output Syntax: `Harddisk - \\<Model> (Drives: \\<Drive Letter(s)>): Health Status - \\<Status>`
+Output Syntax: `Harddisk - <Model> (Drives: <Drive Letter(s)>): Health Status - <Status>`
 
 ## Sample Run
 
@@ -53,30 +53,27 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
-$ver = [Version](get-WmiObject -Class Win32_OperatingSystem).version; "$($ver.Major).$($ver.Minor)"; 
-if($ver -ge [version]'6.3') 
-{
-    if ( ( (Get-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol").state )  -ne 'Enabled') 
-    { 
+$ver = [Version](Get-WmiObject -Class Win32_OperatingSystem).version
+"$($ver.Major).$($ver.Minor)"
+
+if ($ver -ge [version]'6.3') {
+    # For OS versions 6.3 or higher
+    if (((Get-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol").state) -ne 'Enabled') {
         return 'SMB1 was already in a disabled state'
-    } 
-    else 
-    {
+    } else {
         Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol -NoRestart
         return 'SMB1 has been successfully disabled'
     }
-} 
-else 
-{
-    $s =  (Get-Item HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters | ForEach-Object {Get-ItemProperty $_.pspath -Name SMB1} ); 
-    if ( ( -not $s ) -or ( $s -contains 1 )) 
-    {  
-        Set-ItemProperty -Path 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\Lanmanworkstation\\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
-        Set-ItemProperty -Path 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
-    }  
-    return 'SMB1 has been successfully disabled'
-    else 
-    {
+} else {
+    # For OS versions below 6.3
+    $s = Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters |
+         ForEach-Object { Get-ItemProperty $_.pspath -Name SMB1 }
+
+    if ((-not $s) -or ($s -contains 1)) {
+        Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Lanmanworkstation\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+        Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters' -Name 'SMB1' -Value 0 -Type DWORD -Force
+        return 'SMB1 has been successfully disabled'
+    } else {
         return 'SMB1 was already in a disabled state'
     }
 }
@@ -176,4 +173,3 @@ It is suggested to run the task once per week against Windows computers.
 ## Output
 
 - Script log
-

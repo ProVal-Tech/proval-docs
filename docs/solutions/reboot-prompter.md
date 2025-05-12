@@ -56,4 +56,3 @@ Afterward, it sends a force reboot prompt as shown below:
 Note: The 5 minutes depends on the value provided in the custom field 'RebootForceTimeDelayMinutes'.
 
 ![Screenshot](../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_69.webp)
-

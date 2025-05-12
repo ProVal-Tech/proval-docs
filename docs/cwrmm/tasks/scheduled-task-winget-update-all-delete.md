@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task.
+The ultimate objective of the task is to remove the scheduled tasks (Winget Update All [System] and Winget Update All [Logged on User]) created by the [Scheduled Task Winget Update All (Create)](/docs/a898b5ac-23d0-4e0d-89e5-79bca2277a6e) task.
 
 ## Sample Run
 
@@ -22,9 +22,9 @@ The ultimate objective of the task is to remove the scheduled tasks (Winget Upda
 
 ## Dependencies
 
-- [CW RMM - Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
-- [CW RMM - Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
-- [CW RMM - Device Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808)
+- [Custom Field - Company - WingetUpdateAll_Task_Delete](/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a)
+- [Custom Field - EndPoint - WingetUpdateAll_Task_Result](/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f)
+- [Device Group - Winget Update All (Task Delete)](/docs/a8ce29e2-502c-4bb8-a959-c7eb59e38808)
 
 ## Variables
 
@@ -100,20 +100,99 @@ Add the following log in the `Script Log Message` field and click the `Save` but
 
 ```plaintext
 Unsupported Operating System.
-```
 
-```plaintext
 Supported OS are Windows 10 and Windows 11
 ```
 
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image.webp)
+
 ### Row 2c Function: Script Exit
 
-Add a new row by clicking on the `Add row` button.
+Add a new row by clicking on the `Add row` button.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-1.webp)
 
-Search and select the `Script Exit` function.
+Search and select the `Script Exit` function.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-2.webp)
 
-### Note:
-Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
+**Note:** Do not add any message or words in the `Error Message` field. Leave it blank and click the `Save` button.
+
+### Row 3 Function: Command Prompt Script
+
+Add a new row by clicking on `Add row` button outside the If/Then logic.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-3.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-4.webp)
+
+Search and select the `Command Prompt (CMD) Script` function.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-5.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-6.webp)
+
+Copy and paste the following command in the `Command Prompt Script Editor` and leave the `Expected time of script execution in seconds` to `300`. Click the `Save` button.
+
+```shell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "foreach ( $task in ( 'Winget Update All [Logged on User]','Winget Update All [System]' ) ) { try { Get-ScheduledTask | Where-Object { $_.TaskName -eq $task } | Unregister-ScheduledTask -Confirm:$False -ErrorAction Stop } catch { return \"Failed to remove the task '$($task)'. Reason: $($Error[0].Exception.Message)\" } }"
+```
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-7.webp)
+
+Enable the `Continue on Failure` flag.  
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-8.webp)
+
+
+### Row 4 Function: Script Log
+
+Add a new row by clicking on `Add row` button.
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-9.webp)
+
+Search and select `Script Log` Function.
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-11.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-10.webp)
+
+Add the following log in the `Script Log Message` field and click the `Save` button:
+Output of command to remove scheduled tasks: %Output%
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-12.webp)
+
+### Row 5 Logic: If Then Else
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-13.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-14.webp)
+
+### Row 5a Condition: Output Contains
+
+Type `Failed to` in the `Input Value or Variable` field and press `Enter`.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-15.webp)
+
+### Row 5b Function: Set Custom Field
+
+Add a new row by clicking on `Add row` button.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-16.webp)
+
+Search and select `Set Custom Field` Function.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-17.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-18.webp)
+
+Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task Deletion Failed` in the `Value` field and click the `Save` button.  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-19.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-20.webp)
+
+### Row 5c Function: Set Custom Field
+
+Add a new row by clicking on `Add row` button in the `Else` section.
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-21.webp)
+
+Search and select `Set Custom Field` Function.
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-22.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-23.webp)
+
+Search and select `WingetUpdateAll_Task_Result` in the `Search Custom Field` field and set `Task deleted` in the `Value` field and click the `Save` button.
+
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-24.webp)  
+![alt text](../../../static/img/docs/aca364ec-208f-47e8-a838-11b8ee0c9f95/image-25.webp)
 
 ## Completed Script
 

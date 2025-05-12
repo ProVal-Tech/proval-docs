@@ -32,4 +32,3 @@ The script will start adding data to this table 24 hours after the first entry i
 | online              | int      | Number of minutes it was online in the last 24 hours |
 | offline             | int      | Number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | Data collection time for the respective entry        |
-

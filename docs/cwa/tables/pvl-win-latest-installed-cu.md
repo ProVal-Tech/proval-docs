@@ -31,5 +31,3 @@ Stores the data fetched by the [CWM - Automate - Script - Get Latest Installed C
 | KBid           | varchar(128)| KBID of the latest installed Cumulative Update    |
 | ReleaseDate    | date        | Release date of the latest installed Cumulative Update |
 
-
-

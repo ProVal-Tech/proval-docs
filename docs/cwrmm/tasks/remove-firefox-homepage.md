@@ -26,4 +26,3 @@ This document provides an example of a PowerShell script designed to streamline 
 
 - Software
 - Windows
-

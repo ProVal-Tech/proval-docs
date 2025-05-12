@@ -46,4 +46,3 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](/docs/d801eb05-05a3-4271-aa8c-a8ea4941f4eb)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
-

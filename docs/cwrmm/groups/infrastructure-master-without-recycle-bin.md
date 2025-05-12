@@ -43,4 +43,3 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_3.webp)
 
 ![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_4.webp)
-

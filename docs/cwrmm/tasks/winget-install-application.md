@@ -12,12 +12,22 @@ unlisted: false
 
 ## Summary
 
-This document outlines the process of installing an application via Winget.
+Attempts to install or update an application via Winget.
+To get the PackageId and source, you can search in cmd using **"winget search appname"** or by browsing to winget.run
 
-## Parameters
+## Sample Run
 
-- **ID**: Winget application ID (Example: Google.Chrome)  
-  To get the ID, you can search in the command prompt using `winget search appname` or by browsing to [winget.run](https://winget.run).
+![Image1](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image1.webp)
+
+**Example 1:** Installing application without any optional parameters
+
+![Image2](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image2.webp)
+
+**Example 2:** Installing application with optional parameter
+
+![Image3](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image3.webp)
+
+![Image4](../../../static/img/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f/image4.webp)
 
 ## Dependencies
 

@@ -33,4 +33,3 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image 6](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_6.webp)  
 ![Image 7](../../../static/img/docs/998b5859-608f-4c0c-abd2-75356b272102/image_7.webp)
-

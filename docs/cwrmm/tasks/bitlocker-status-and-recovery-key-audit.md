@@ -20,8 +20,8 @@ This script does not have any parameters and can be run against any online Windo
 
 ## Dependencies
 
-- [CW RMM - Custom Field - BitLocker Key Backup Status](/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f)
-- [CW RMM - Device Groups - BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Auditing, BitLocker - Regular Auditing)
+- [BitLocker Key Backup Status](/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f)
+- [BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Auditing, BitLocker - Regular Auditing)
 
 ## Create Script
 
@@ -46,7 +46,7 @@ Start by making three separate rows. You can do this by clicking the "Add Row" b
 
 Paste in the following PowerShell script and set the expected time of script execution to 1800 seconds.
 
-```
+```PowerShell
 if (!(Get-Command -Name 'Get-BitLockerVolume' -ErrorAction SilentlyContinue)) {
     return 'BitLocker module is unavailable on this device.'
 }

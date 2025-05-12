@@ -22,7 +22,7 @@ This task deploys Perch Log Shipper on Windows machines.
 
 ## Dependencies
 
-[SWM - Software Install - Agnostic - Install - PerchLogShipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e)
+[Install-PerchLogShipper](/docs/41fd7a2b-4604-4ef1-bd74-c7a4325da37e)
 
 ## User Parameters
 
@@ -32,8 +32,7 @@ This task deploys Perch Log Shipper on Windows machines.
 
 ![User Parameters Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_9.webp)
 
-**Note:** 
-- If no parameters are set, the script will throw an error: "Invalid Token does not contain a value."
+**Note:** If no parameters are set, the script will throw an error: "Invalid Token does not contain a value."
 
 ## Task Creation
 
@@ -90,8 +89,8 @@ The following function will pop up on the screen:
 ![PowerShell Function Image](../../../static/img/docs/4a21e214-958c-4b97-9194-2fa517342001/image_21.webp)  
 
 ```powershell
-# Parameters and Globals
-# Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
+# # Parameters and Globals
+# # Be sure that the name of the hashtable property matches the name of the parameter of the script that you are calling.
 $Token = '@Token@'
 $Parameters = @{}
 if ($Token.Length -gt 5) {
@@ -105,13 +104,12 @@ $ProjectName = 'Install-PerchLogShipper'
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $BaseURL = 'https://file.provaltech.com/repo'
 $PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\\ProgramData\\_automation\\script\\$ProjectName"
-$PS1Path = "$WorkingDirectory\\$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
 $Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\\$ProjectName-Error.txt"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
-
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
 $response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
@@ -125,7 +123,6 @@ if (!(Test-Path -Path $PS1Path)) {
     throw 'An error occurred and the script was unable to be downloaded. Exiting.'
 }
 #endregion
-
 #region Execution
 if ($Parameters) {
     & $PS1Path @Parameters
@@ -133,14 +130,11 @@ if ($Parameters) {
     & $PS1Path
 }
 #endregion
-```
-
-```powershell
-if (!(Test-Path $LogPath)) {
+if ( !(Test-Path $LogPath) ) {
     throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-if (Test-Path $ErrorLogPath) {
-    $ErrorContent = (Get-Content -Path $ErrorLogPath)
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
     throw $ErrorContent
 }
 Get-Content -Path $LogPath

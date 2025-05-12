@@ -62,4 +62,3 @@ The custom fields listed below are used in the Reboot Prompter Solution.
    ![Save](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_6.webp)
 
 5. Repeat the above four steps to create all other custom fields based on the Name, Level, Type, Default, Description, and Editable options provided in the table.
-

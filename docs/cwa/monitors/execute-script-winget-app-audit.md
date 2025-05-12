@@ -26,4 +26,3 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`
-

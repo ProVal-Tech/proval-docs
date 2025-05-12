@@ -37,4 +37,3 @@ The Dataview displays the installed [Printer Driver](https://www.technipages.com
 | Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) |
 | Last Contact          | Last Contact with RMM                                |
 | Days Since Last Contact| Days Since Last Contact with RMM                     |
-
