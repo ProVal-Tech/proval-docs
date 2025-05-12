@@ -24,6 +24,8 @@ To manage Bitlocker protection on endpoints.
   - [Custom Table - plugin_proval_tpm_audit](/docs/82144ad7-4cff-4883-8389-1180052ab156)
 - New Content:
   - [Dataview - Bitlocker Status - Retired Computers](/docs/2a93ccc8-7de0-4107-9251-747b55905734)
+  - [Dataview - TPM Detailed Audit](/docs/251793d4-b73d-4d19-9c06-d1ce96fc4a2e)
+
 - Sync the modified scripts from the `Prosync` plugin and run the [Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) script against any online Windows computer with the `Set_Environment` parameter set to `1` to modify the custom tables.
 
 ![Image](../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_1.webp)
@@ -38,6 +40,7 @@ To manage Bitlocker protection on endpoints.
 | [Script - Bitlocker - AD Key Protector - Audit](/docs/d533538b-8b00-425e-849f-434518296b2d) | Script | Audits the existing backup Bitlocker key protectors from an Active Directory server. |
 | [Script - Bitlocker Recovery Password - AD Backup](/docs/cd4cedee-cd92-4198-83d6-e7c596a6a01b) | Script | This script backs up Bitlocker Recovery Passwords to the associated Active Directory instance. |
 | [Dataview - Bitlocker Status](/docs/6442955a-0264-44ce-aad1-9e2f973e40ec) | Dataview | Displays information from the [Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14) filled by the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a). Additionally, it displays information about the Active Directory backup status of each key protector. |
+| [Dataview - TPM Detailed Audit](/docs/251793d4-b73d-4d19-9c06-d1ce96fc4a2e) | Dataview | Displays information from the [Custom Table - plugin_proval_tpm_audit](/docs/82144ad7-4cff-4883-8389-1180052ab156) filled by the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a). Additionally, it displays information about the TPM detailed information of the Windows. |
 | [Dataview - Bitlocker Status - Retired Computers](/docs/2a93ccc8-7de0-4107-9251-747b55905734) | Dataview | Displays the Bitlocker data stored in the [Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14) for the retired computers. |
 | [SEC - Encryption - Dataview - Bitlocker - AD Backup Audit](/docs/1bd41d12-c68a-4e68-a7eb-ac2d58538187) | Dataview | Displays Bitlocker key protectors backed up to Active Directory. |
 | [Internal Monitor - ProVal - Production - Security - Stale Bitlocker Data](/docs/b6bf288a-a1f5-4d76-9973-1ecfca5521a5) | Internal Monitor | Detects Windows computers where the [Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) script has not executed within the last 30 days and triggers the audit script to run. |
