@@ -32,7 +32,7 @@ This solution is targeted to compute all the patch management automation togethe
 
 | Content                       | Type     | Function                                                                                                                             |
 |-------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
+| [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 https://file+.vscode-resource.vscode-cdn.net/docs/aaa3f8da-cfd3-454a-808b-d4501f9c2608computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
 
 ### Windows Update - Repair
 
@@ -75,3 +75,18 @@ Please refer to the each script/solution provided based on the title mentioned a
 
 - (Q) Does the above solutions dependent to each other?
 - (A) Not really, they are separate solution and build with different perspective. No doubt, these all relates to patching so can be run together as a customized solution based on the requirement. 
+
+Below are the few flow chart that can assist you to follow steps for patch install, Windows feature update, and Windows Upgrade from 10 to 11.
+
+
+- **Patch install Hierarchy**
+
+![Patch install hierarchy](../../static/img/docs/patch-complete-solution/image.png)
+
+- **Windows Feature Update**
+
+![Windows Feature Update](../../static/img/docs/patch-complete-solution/image-1.png)
+
+- **Windows 10-11 Upgrade**
+
+![Windows 10-11 Upgrade](../../static/img/docs/patch-complete-solution/image-2.png)
