@@ -22,7 +22,7 @@ The ProSync Server is *currently* separated into two sections, **Content** and *
 
 The **Content** section of the **ProSync Server** plugin is where you will be reviewing changes, approving new and changed content, and syncing that approved content to the tables which will be read by the `ProSync API`. Clicking the **Content** button on the sidebar will give you a dropdown of the different types of content to review. Clicking on a particular type of content will populate the display panel on the right with a table of all applicable content of that type.
 
-![image-20201207163215499](../../static/img/apps-prosync-server/image-20201207163215499.png)
+![image-20201207163215499](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/image-20201207163215499.webp)
 
 *Figure 1 - ProSync Server Content View*
 
@@ -33,16 +33,16 @@ The **Content** section of the **ProSync Server** plugin is where you will be re
 5. **Version** - The latest **approved** version of the content.
 6. **Status** - The current change status of the content. The possible statuses of the content are:
 
-    - ![checkmark](../../static/img/apps-prosync-server/checkmark.png) **Unchanged** - The content has not been changed or removed from the Automate instance.
-    - ![changed](../../static/img/apps-prosync-server/changed.png) **Changed** - The content is new or has been changed.
-    - ![garbage-can](../../static/img/apps-prosync-server/garbage-can.png) **Moved or Deleted** - The content was moved or deleted.
+    - ![checkmark](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/checkmark.webp) **Unchanged** - The content has not been changed or removed from the Automate instance.
+    - ![changed](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/changed.webp) **Changed** - The content is new or has been changed.
+    - ![garbage-can](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/garbage-can.webp) **Moved or Deleted** - The content was moved or deleted.
 
 7. **Approved** - Denotes the current approval status of the content. The possible statuses of the content are:
 
-    - ![image-20201207165213818](../../static/img/apps-prosync-server/image-20201207165213818.png) **No Action Needed** - The content is unchanged and does not need approval.
-    - ![needsApproval](../../static/img/apps-prosync-server/needsApproval.png) **Needs Approval** - The content has been added, changed, or deleted and requires review and approval.
-    - ![approvedChange](../../static/img/apps-prosync-server/approvedChange.png) **Change Approved** - The new or changed content has been approved for synchronization.
-    - ![approvedDeletion](../../static/img/apps-prosync-server/approvedDeletion.png) **Move/Delete Approved** - The content has been moved or deleted and approved to be removed from the synchronization list.
+    - ![image-20201207165213818](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/image-20201207165213818.webp) **No Action Needed** - The content is unchanged and does not need approval.
+    - ![needsApproval](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/needsApproval.webp) **Needs Approval** - The content has been added, changed, or deleted and requires review and approval.
+    - ![approvedChange](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/approvedChange.webp) **Change Approved** - The new or changed content has been approved for synchronization.
+    - ![approvedDeletion](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/approvedDeletion.webp) **Move/Delete Approved** - The content has been moved or deleted and approved to be removed from the synchronization list.
 
 8. **Approve Button** - Approves the add, change, or delete of the current content. Has no effect if the content is currently unchanged.
 9. **Filter** - Changes the view of the content to show **All**, only **New or Changed**, or only **Moved or Deleted** content.
@@ -52,7 +52,7 @@ The **Content** section of the **ProSync Server** plugin is where you will be re
 
 The **API Clients** section of the plugin is where you can add and remove API access for specific members.
 
-![image-20201207172053769](../../static/img/apps-prosync-server/image-20201207172053769.png)
+![image-20201207172053769](../../static/img/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb/image-20201207172053769.webp)
 
 *Figure 2 - ProSync Server API Clients View*
 

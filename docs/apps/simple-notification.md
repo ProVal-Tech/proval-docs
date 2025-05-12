@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 <p align="center">
-  <img src="../../static/img/apps-simple-notification/SimpleNotification.jpeg" alt="Simple Notification Icon" width="200" />
+  <img src="../../static/img/docs/df3d2cab-2568-4b41-b447-7b21ef64220b/SimpleNotification.jpeg" alt="Simple Notification Icon" width="200" />
 </p>
 
 ## Description

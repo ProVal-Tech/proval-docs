@@ -33,7 +33,7 @@ The **ProSync Client** is *currently* separated into two sections, **Content** a
 
 The **API Connection** section is where you will enter the **Client Name** and **Secret** for the **ProSync Client** to connect to the `ProSync API`. Refer to the documentation for the [ProSync Server](/docs/0fb32d9c-c3a1-4c97-a93d-1e167f46b0fb) on creating API Clients. No other functions will be available in the **ProSync Client** without valid API connection information.
 
-![image-20201214164329311](../../static/img/apps-prosync-client/image-20201214164329311.png)
+![image-20201214164329311](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/image-20201214164329311.webp)
 
 1. **Client Name** - Enter the API client name here.
 2. **Client Secret** - Enter the API client secret here.
@@ -45,7 +45,7 @@ The **API Connection** section is where you will enter the **Client Name** and *
 
 The **Content** section of the **ProSync Client** is where content can be synced into or removed from the client Automate instance.
 
-![image-20201214170414895](../../static/img/apps-prosync-client/image-20201214170414895.png)
+![image-20201214170414895](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/image-20201214170414895.webp)
 
 1. **Mass Sync Button** - Syncs all content of the selected type. Items with the **Mass Sync** checkbox unchecked are excluded. Items with **Global** or **Ticket** tags are excluded.
 2. **Refresh Button** - Refreshes the data in the content table.
@@ -53,10 +53,10 @@ The **Content** section of the **ProSync Client** is where content can be synced
 4. **Mass Sync Checkbox** - If checked, the item will be included in the synchronization process when clicking the **Mass Sync Button**.
 5. **Name** - The name of the content piece.
 6. **Status Icon** - The current synchronization status of the content piece.
-    - ![checkmark](../../static/img/apps-prosync-client/checkmark.png) **Up To Date** - The content is the latest version available from the API.
-    - ![changed](../../static/img/apps-prosync-client/changed.png) **Update Available** - The content has an updated version from the API.
-    - ![garbage-can](../../static/img/apps-prosync-client/garbage-can.png) **Deprecated** - The content has been removed from the API.
-    - ![newContent](../../static/img/apps-prosync-client/newContent.png) **Not Installed** - The content has not been synchronized from the API. All content will show as Not Installed upon first installation of the plugin, regardless of previous manual imports. Running a Mass Sync will update the icons after completing.
+    - ![checkmark](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/checkmark.webp) **Up To Date** - The content is the latest version available from the API.
+    - ![changed](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/changed.webp) **Update Available** - The content has an updated version from the API.
+    - ![garbage-can](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/garbage-can.webp) **Deprecated** - The content has been removed from the API.
+    - ![newContent](../../static/img/docs/611894b8-9984-4e1e-a061-2753bcf65b28/newContent.webp) **Not Installed** - The content has not been synchronized from the API. All content will show as Not Installed upon first installation of the plugin, regardless of previous manual imports. Running a Mass Sync will update the icons after completing.
 7. **GUID** - The GUID of the content piece. This will be a consistent GUID between the client and the server.
 8. **Sync Button** - Used to sync a single piece of content. <u>***This ignores the Mass Sync status***</u> and will remove content from the client Automate server if it is deprecated.
 9. **Filter Radio Buttons** - Filters the list based on status of the content. Note that this does not filter the targets for the **Mass Sync Button** or the **Remove Button**. These buttons will still target all available content of the selected type.

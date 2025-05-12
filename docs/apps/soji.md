@@ -13,7 +13,7 @@ unlisted: false
 <br />
 <div align="center">
     <a href="https://content.provaltech.com/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc">
-        <img src="../../static/img/apps-soji/soji.png" alt="Logo" width="150" height="150" />
+        <img src="../../static/img/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc/soji.webp" alt="Logo" width="150" height="150" />
     </a>
     <h3 align="center">掃除 (Sōji)</h3>
     <p align="center">

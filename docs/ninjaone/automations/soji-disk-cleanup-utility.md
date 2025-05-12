@@ -20,12 +20,12 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 
 ## Sample Run
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image1.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image1.webp)
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image2.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image2.webp)
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image3.png)  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image4.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image3.webp)  
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image4.webp)
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 ## Automation Setup/Import
 
 Add a "New Script" to the Automation library for this automation.  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image5.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image5.webp)
 
 **Name:** `Soji (Disk Cleanup Utility)`  
 **Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`  
@@ -44,11 +44,11 @@ Add a "New Script" to the Automation library for this automation.
 **Architecture:** `All`  
 **Run As:** `System`  
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image6.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image6.webp)
 
 Paste in the following PowerShell script into the Ninja One editor
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image7.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image7.webp)
 
 ```PowerShell
 # Set working directory and paths
@@ -175,18 +175,18 @@ if (Test-Path -Path $errorFilePath) {
 }
 ```
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image8.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image8.webp)
 
 ### Script Variables
 
 Click the `Add` button next to Script Variables.  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image9.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image9.webp)
 
 Select the appropriate variable type (referenced below)  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image10.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image10.webp)
 
 Fill in the values as required (referenced below)  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image11.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image11.webp)
 
 In the box fill in the following details and select `Add` to create the script variable.
 
@@ -275,13 +275,13 @@ In the box fill in the following details and select `Add` to create the script v
 **Mandatory:** `false`
 
 Click the Save button to save the Automation.  
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image12.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image12.webp)
 
 ## Completed Automation
 
-![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image13.png)
+![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image13.webp)
 
 ## Output
 
 - Activity Details
-    ![Image](../../../static/img/ninja-one-automation-soji-disk-cleanup-utility/image14.png)
+    ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image14.webp)

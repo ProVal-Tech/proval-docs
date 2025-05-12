@@ -13,7 +13,7 @@ unlisted: false
 <br />
 <div align="center">
   <a href="https://content.provaltech.com/docs/aba254a9-e917-481d-9152-ecb6e990d98c">
-    <img src="../../static/img/apps-prompter/prompter.png" alt="Logo" width="80" height="80" />
+    <img src="../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/prompter.webp" alt="Logo" width="80" height="80" />
   </a>
 
 <h3 align="center">Prompter</h3>
@@ -26,7 +26,7 @@ unlisted: false
 ## About
 
 <div align="center">
-<img src="../../static/img/apps-prompter/screenshot.png" alt="Prompter Screen Shot" />
+<img src="../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/screenshot.webp" alt="Prompter Screen Shot" />
 </div>
 
 Prompter is a simple application designed to present a prompt on the desktop and optionally display a date and time picker. It supports any number of buttons, as well as optional header images and custom application icons.
@@ -91,7 +91,7 @@ C:\> Prompter.exe -m "This is a test message"
 OK
 ```
 
-![Example 1](../../static/img/apps-prompter/ex1.png)
+![Example 1](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex1.webp)
 
 #### Example 2
 
@@ -105,7 +105,7 @@ $prompterOutput[1]
 # Monday, June 27, 2022 12:00:00 AM
 ```
 
-![Example 2](../../static/img/apps-prompter/ex2.png)
+![Example 2](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex2.webp)
 
 #### Example 3
 
@@ -120,7 +120,7 @@ $prompterOutput[1]
 # Friday, July 19, 2024 12:00:00 AM
 ```
 
-![Example 3](../../static/img/apps-prompter/ex3.png)
+![Example 3](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex3.webp)
 
 #### Example 4
 
@@ -132,7 +132,7 @@ $prompterOutput[0]
 
 ```
 
-![Example 4](../../static/img/apps-prompter/ex4.png)
+![Example 4](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex4.webp)
 
 #### Example 5
 
@@ -144,7 +144,7 @@ $prompterOutput[0]
 
 ```
 
-![Example 5](../../static/img/apps-prompter/ex5.png)
+![Example 5](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex5.webp)
 
 #### Example 6
 
@@ -157,9 +157,9 @@ $PrompterOutput[1]
 #I wanted to take a moment to express my sincere gratitude for the outstanding support consistently provided by the engineer at ProVal. Each time I've reached out for assistance, your expertise, professionalism, and dedication have been remarkable. Your swift responses and thorough solutions have not only resolved my issues efficiently but have also greatly enhanced my understanding of the systems. Your unwavering commitment to delivering top-notch service is truly commendable and makes a significant difference in our operations. Thank you for always going above and beyond to ensure our success.
 ```
 
-![Example 6](../../static/img/apps-prompter/ex6a.png)
+![Example 6](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex6a.webp)
 
-![Example 6](../../static/img/apps-prompter/ex6b.png)
+![Example 6](../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/ex6b.webp)
 
 ## Acknowledgments
 
