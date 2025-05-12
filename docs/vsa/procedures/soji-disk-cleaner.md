@@ -13,7 +13,7 @@ unlisted: false
 ## Summary
 
 **Stack-Standard Disk Cleanup Utility**  
-This utility uses agnostic content [Soji](https://github.com/ProVal-Tech/Soji) to perform a cleanup of all drives on the target endpoint.
+This utility uses agnostic content [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) to perform a cleanup of all drives on the target endpoint.
 
 ## Sample Run
 

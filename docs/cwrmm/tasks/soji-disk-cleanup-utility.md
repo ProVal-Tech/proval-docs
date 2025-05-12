@@ -16,7 +16,7 @@ Soji is a smart yet straightforward disk cleanup utility designed to enhance sys
 
 This document provides a guide on creating the Soji disk cleanup Task in CW RMM. The task is versatile and can serve as an Autofix/Automation Task alongside `Monitors` or `Intelligent Alerts`. When employed as an Autofix, the task executes the tool with the `--All` argument.
 
-Please reference Soji for argument usage.
+Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ Please reference Soji for argument usage.
 
 ## Dependencies
 
-- Soji
+- [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
 
 ## Variables
 
@@ -41,7 +41,7 @@ Please reference Soji for argument usage.
 
 | Name       | Example  | Required | Description                                                                 |
 |------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference Soji for argument usage. |
+| Arguments  | --all    | False    | Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage. |
 
 **Note:** Arguments are case sensitive.
 
@@ -114,6 +114,7 @@ Select `Set User Variable` function.
 ![Set User Variable 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
 
 Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
+Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
 
 ![User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_17.webp) ![User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_18.webp)
 
@@ -129,6 +130,8 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
 
+```Powershell
+$WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 ```Powershell
 $WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
 
@@ -148,7 +151,8 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
 }
 ```
 
-![PowerShell Script 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_22.webp) ![PowerShell Script 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
+![PowerShell Script 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_22.webp)
+![PowerShell Script 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
 
 #### Row 4 Function: PowerShell Script
 
@@ -162,6 +166,7 @@ Select `PowerShell Script` function.
 
 Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
 
+```PowerShell
 ```PowerShell
 $ErrorActionPreference = 'silentlycontinue'
 try {$dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '} catch {}
@@ -196,6 +201,7 @@ Select `PowerShell Script` function.
 Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
 
 ```powershell
+```powershell
 #region Setup - Variables
 $ProjectName = '@ProjectName@'
 $BaseURL = 'https://file.provaltech.com/repo'
@@ -206,6 +212,12 @@ $EXEPath = "$WorkingDirectory\$ProjectName.exe"
 
 #region Download - soji
 if (! (Test-Path $ExePath)) {
+  [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+  Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
+  if (!(Test-Path -Path $EXEPath)) {
+      Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
+  }
+} 
   [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
   Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
   if (!(Test-Path -Path $EXEPath)) {
@@ -243,7 +255,5 @@ Click the `Save` button to save the Task.
 ![Completed Script](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_31.webp)
 
 ## Output
-
-- Script Log
 
 ![Script Log Output](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_32.webp)

@@ -36,4 +36,3 @@ Sets `HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//De
 ## Output
 
 AP Log
-

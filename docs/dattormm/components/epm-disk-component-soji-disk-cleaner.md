@@ -16,7 +16,7 @@ This document describes the process of running the Soji Disk Cleaner on selected
 
 ## Dependencies
 
-- [Soji](https://github.com/ProVal-Tech/Soji) Agnostic Content  
+- [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) Agnostic Content  
 - .NET 6 (Installation will be attempted by the component if not detected.)
 
 ## Implementation
@@ -28,5 +28,6 @@ Import the [attached component](/attachments/Soji_Disk_Cleaner.cpt) into Datto R
 - stdOut  
 - stdError  
 - ProgramData/_automation/app/soji/sojilogs/
+
 ## Attachments
 [Soji_Disk_Cleaner.cpt](<../../../static/attachments/itg/11821769/Soji_Disk_Cleaner.cpt>)

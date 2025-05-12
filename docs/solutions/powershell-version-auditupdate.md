@@ -44,4 +44,3 @@ This solution uses custom tasks, device groups, and a custom monitor to manage a
    **Please ensure that the task is scheduled as the Automation Task on the monitor.**
 
 ## FAQ
-
