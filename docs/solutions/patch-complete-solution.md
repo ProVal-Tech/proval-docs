@@ -89,4 +89,4 @@ Below are the few flow chart that can assist you to follow steps for patch insta
 
 - **Windows 10-11 Upgrade**
 
-![Windows 10-11 Upgrade](../../static/img/docs/patch-complete-solution/image-2.png)
+![Windows 10 to 11 upgrade](../../static/img/docs/patch-complete-solution/image-3.png)
