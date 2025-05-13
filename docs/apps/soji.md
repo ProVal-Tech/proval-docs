@@ -27,7 +27,7 @@ Soji is an intelligent yet simple disk cleanup utility that uses both native `Sy
 
 ### Built With
 
-- [.NET Desktop Runtime 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/)
+- [.NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ### Important Note
 
@@ -35,25 +35,55 @@ Soji is a destructive application by nature in that it deletes files and folders
 
 ## Getting Started
 
-Install the .NET 6.0 runtime, read the documentation on using the various switches, and start running Soji! 🧹
+Install the .NET 8.0 runtime, read the documentation on using the various switches, and start running Soji! 🧹
 
 ### Prerequisites
 
-.NET 6.0:
+.NET 8.0:
 
 ```powershell
-# PowerShell installation of .NET Desktop Runtime 6.0.6 on Windows x64
-$dotnetRuntimes = (& "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join " "
-if($dotnetRuntimes -notmatch "WindowsDesktop\.App 6") {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    (New-Object System.Net.WebClient).DownloadFile(
-        "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/6.0.6/windowsdesktop-runtime-6.0.6-win-x64.exe",
-        "$pwd\windowsdesktop-runtime-6.0.6-win-x64.exe"
-    )
-    Start-Process `
-        -FilePath "$pwd\windowsdesktop-runtime-6.0.6-win-x64.exe" `
-        -ArgumentList "/quiet","/norestart" `
-        -NoNewWindow -Wait
+winget install Microsoft.DotNet.DesktopRuntime.8
+```
+
+Or
+
+```powershell
+# PowerShell installation of .NET Desktop Runtime 8.0.11 on Windows x64
+$ProgressPreference = 'SilentlyContinue'
+$appName = 'dotNet8DesktopRuntime'
+$workingDirectory = 'C:\ProgramData\_automation\app\Prompter'
+$dotnet8path = 'C:\ProgramData\_automation\app\Prompter\dotNet8DesktopRuntime.exe'
+$dotnet8url = 'https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe'
+
+Function Install-Check {
+    try {
+        $dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '
+    } catch {}
+    
+    if (!($dotNetVersions -match 'WindowsDesktop\.App 8')) {
+        return $true
+    } else {
+        return $false
+    }
+}
+
+if (!(Test-Path -Path $workingDirectory)) {
+    New-Item -ItemType Directory -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
+}
+
+if (Install-Check) {
+    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
+    Start-BitsTransfer -Source $dotnet8url -Destination $dotnet8path
+    cmd.exe /c $dotnet8path /install /quiet /norestart
+    Start-Sleep -Seconds 5
+    
+    if (Install-Check) {
+        return 'Error: .Net Desktop Runtime 8.0 installation failed.'
+    } else {
+        return 'Success: .Net Desktop Runtime 8.0 installed'
+    }
+} else {
+    return 'Success: .Net Desktop Runtime 8.0 is already installed.'
 }
 
 ```
