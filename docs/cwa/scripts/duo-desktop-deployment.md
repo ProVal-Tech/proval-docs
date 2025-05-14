@@ -29,8 +29,9 @@ Normal execution for the DUO Desktop latest installation
 
 ## Dependencies
 
-[Monitor - DUO Desktop - Install/Update](/docs/af4b8838-ad2d-4b77-90ce-4447873c4b5c)
-[Monitor - DUO Desktop - Latest Version Detection](/docs/c2082154-028d-40fc-beb4-2e8137d2aa57)
+[Monitor - DUO Desktop - Install/Update](/docs/af4b8838-ad2d-4b77-90ce-4447873c4b5c)  
+[Monitor - DUO Desktop - Latest Version Detection](/docs/c2082154-028d-40fc-beb4-2e8137d2aa57)  
+[Solution - DUO Desktop Deployment Solution](/docs/8adb49f7-d8be-4725-a136-bc59e185743c)
 
 ## Variable
 
@@ -49,6 +50,7 @@ Normal execution for the DUO Desktop latest installation
 |---------------------------------|----------|------------|-------------|--------------|---------------------------------------------------------------------------------------------------|
 | **Enable Duo Desktop Deployment** | Flag     | Client     | 1 or 0       | True         | The agents will start getting the auto-deployment of the DUO Desktop only if this flag is checked. |
 | **Exclude DUO Desktop Deployment** | Flag     | Location   | 1 or 0       | False        | If checked, the agents at that location will be excluded from the DUO Desktop deployment.         |
+| **Exclude DUO Desktop Deployment** | Flag     | Computer   | 1 or 0       | False        | If checked, the  computer will be excluded from the DUO Desktop deployment.         |
 
 ## System Properties
 

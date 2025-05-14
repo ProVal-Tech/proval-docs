@@ -15,7 +15,8 @@ This monitor is designed to fetch the latest version of the DUO Desktop every mo
 
 ## Dependencies
 
-[Script - DUO Desktop - Install/Upgrade](/docs/c0019fe0-7411-4c3d-981b-f2bb70733c26)
+[Script - DUO Desktop - Install/Upgrade](/docs/c0019fe0-7411-4c3d-981b-f2bb70733c26)  
+[Solution - DUO Desktop Deployment Solution](/docs/8adb49f7-d8be-4725-a136-bc59e185743c)
 
 **Alert Template - △ Custom - Execute Script - DUO Desktop**
 

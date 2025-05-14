@@ -20,6 +20,7 @@ It depends on the EDFs and System property.
 |---------------------------------|----------|------------|-------------|--------------|---------------------------------------------------------------------------------------------------|
 | **Enable Duo Desktop Deployment** | Flag     | Client     | 1 or 0       | True         | The agents will start getting the auto-deployment of the DUO Desktop only if this flag is checked. |
 | **Exclude DUO Desktop Deployment** | Flag     | Location   | 1 or 0       | False        | If checked, the agents at that location will be excluded from the DUO Desktop deployment.         |
+| **Exclude DUO Desktop Deployment** | Flag     | Computer   | 1 or 0       | False        | If checked, the  computer will be excluded from the DUO Desktop deployment.         |
 
 #### System Properties
 
@@ -30,9 +31,9 @@ It depends on the EDFs and System property.
 
 ## Dependencies
 
-[Script - DUO Desktop - Install/Upgrade](/docs/c0019fe0-7411-4c3d-981b-f2bb70733c26)
-
-**Alert Template - △ Custom - Execute Script - DUO Desktop**
+[Script - DUO Desktop - Install/Upgrade](/docs/c0019fe0-7411-4c3d-981b-f2bb70733c26)  
+[Solution - DUO Desktop Deployment Solution](/docs/8adb49f7-d8be-4725-a136-bc59e185743c)  
+**Alert Template** - △ Custom - Execute Script - DUO Desktop
 
 ## Target
 
