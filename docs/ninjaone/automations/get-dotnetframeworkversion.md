@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This Script Gets .Net Framework Version using the Registry Value and updates it in a Custom Field.
+This script gets .Net Framework Version using the Registry Value and updates it in a Custom Field.  
 It will only work for .Net Framework greater than 4.5
 
 ## Sample Run
@@ -20,8 +20,8 @@ It will only work for .Net Framework greater than 4.5
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 ## Dependencies
-[Task - Get - .Net Framework Version](/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c)
-[Custom Field - cPVAL .NET FrameWork Version](/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb)
+[Task - Get - .Net Framework Version](/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c)  
+[Custom Field - cPVAL .NET FrameWork Version](/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb)  
 [Group - cPVAL Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256)
 
 ## Parameters
@@ -46,15 +46,15 @@ The scripting window will open.
 ![ScriptingScreen](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/scriptingscreen.webp)
 
 ### Step 3
-Configure the Create Script section as follows:
+Configure the `Create Script` section as follows:
 
-Name: `Get - .Net Framework Version [CF]`  
-Description: `This Script Gets .Net Framework Version using the Registry Value and updates it in a Custom Field. It will only work for .Net Framework greater than 4.5`  
-Categories: `ProVal`  
-Language: `PowerShell`  
-Operating System: `Windows`  
-Architecture: `All`  
-Run As: `System`  
+- Name: `Get - .Net Framework Version [CF]`  
+- Description: `This Script Gets .Net Framework Version using the Registry Value and updates it in a Custom Field. It will only work for .Net Framework greater than 4.5`  
+- Categories: `ProVal`  
+- Language: `PowerShell`  
+- Operating System: `Windows`  
+- Architecture: `All`  
+- Run As: `System`  
 
 ![ConfigureScript](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image1.webp)
 
@@ -116,23 +116,23 @@ if ($releaseKey -ne $null) {
 Click the `Add` button next to `Script Variables`.  
 ![AddVariableButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/addvariablebutton.webp)
 
-Select the String/Text option.
-The Add String/Text Variable window will open.
-In the box, fill in the following details and select Add to create the script variable.
+Select the `String/Text` option.
+The `Add String/Text Variable` window will open.
+In the box, fill in the following details and select `Add` to create the script variable.
 
-Name: `Custom Field Name`  
-Description: `Enter the Name of Device Level Custom Field where .Net Framework Version should be stored.`  
-Mandatory: `Check it`  
-Set Default Value: `cPVALnetFrameWorkVersion`
+- Name: `Custom Field Name`  
+- Description: `Enter the Name of Device Level Custom Field where .Net Framework Version should be stored.`  
+- Mandatory: `Check it`  
+- Set Default Value: `cPVALnetFrameWorkVersion`
 
 ![ScriptVariables](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image3.webp)
 
 ## Saving the Automation
 
-Click the Save button in the top-right corner of the screen to save your automation.  
+Click the `Save` button in the top-right corner of the screen to save your automation.  
 ![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
-You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
+You will be prompted to enter your MFA code. Provide the code and press the `Continue` button to finalize the process.  
 ![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
 
 ## Completed Automation

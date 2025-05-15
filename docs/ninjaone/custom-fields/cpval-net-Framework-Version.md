@@ -44,43 +44,43 @@ The following Pop-up screen will appear:
 ![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.webp)
 
 ### Step 4
-Custom Field Type: text
-Select Drop-down for the Custom field type and click Continue to proceed.
+**Custom Field Type:** `Text`  
+Select `Text` from the drop-down for the `Custom field type` and click on `Continue` to proceed.
 ![CreateCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image1.webp)
 
 The following Pop-up screen will appear:
 ![CreateCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image2.webp)
 
 ### Step 5
-Set the following details in the Overview section and click the Next button.
+Set the following details in the `Overview` section and then click on the `Next` button.
 
-Label: cPVAL .NET FrameWork Version  
-Name: cpvalnetFrameworkVersion  
-Definition Scope: Device  
-Custom field is required: <Leave it unchecked>  
+- `Label:` cPVAL .NET FrameWork Version  
+- `Name:` cpvalnetFrameworkVersion  
+- `Definition Scope:` Device  
+- `Custom field is required:` (Leave it unchecked)  
 ![CreateCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image3.webp)
 
 ### Step 6
-Clicking the Next button will take you to the Permission section.
+Clicking the `Next` button will take you to the Permission section.
 
-Set the following details in the Permission section and click the Next button.
+Set the following details in the `Permission` section and then click the `Next` button.
 
-Technician: Editable
-Automation: Read/Write
-API: Read/Write
+- `Technician:` Editable  
+- `Automation:` Read/Write  
+- `API:` Read/Write  
 ![CreateCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image4.webp)
 
 ### Step 7
-Clicking the Next button will take you to the details tab.
+Clicking the `Next` button will take you to the details tab.
 
-Fill in the following information in the Details section and click the Next button.
+Fill in the following information in the `Details` section and click on the `Next` button.
 
-Description: This custom field stores the installed .NET Framework version on a device, retrieved using the script `Get - .Net Framework Version [CF]`.  
-Tooltip Text: -  
-Footer Text: -  
+`Description:` This custom field stores the installed .NET Framework version on a device, retrieved using the script **"Get - .Net Framework Version [CF]"**.  
+`Tooltip Text:` (Leave it blank)  
+`Footer Text:` (Leave it blank)   
 ![CreateCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image5.webp)
 
-Click on create button to create the Custom Field.
+Click on `Create` button to create the Custom Field.
 
 ### Completed Custom Field
 ![CompletedCustomField](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image6.webp)
