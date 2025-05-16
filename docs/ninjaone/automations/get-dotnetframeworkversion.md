@@ -19,6 +19,15 @@ It will only work for .Net Framework greater than 4.5
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
+Search and select `Get - .Net Framework Version [CF]`
+![SampleRun](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image5.webp)
+
+Click the Run button to run the script.  
+Run As: `System`  
+Preset Parameter: `<Leave it Blank>`  
+Custom Field Name : `Change the Custom Field name if you would like to save the version in any other custom Field. The default one is cPVALnetFrameWorkVersion.` 
+![SampleRun](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image6.webp)
+
 ## Dependencies
 [Task - Get - .Net Framework Version](/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c)  
 [Custom Field - cPVAL .NET FrameWork Version](/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb)  
