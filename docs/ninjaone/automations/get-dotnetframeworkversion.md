@@ -22,10 +22,11 @@ It will only work for .Net Framework greater than 4.5
 Search and select `Get - .Net Framework Version [CF]`
 ![SampleRun](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image5.webp)
 
-Click the Run button to run the script.  
-Run As: `System`  
-Preset Parameter: `<Leave it Blank>`  
-Custom Field Name : `Change the Custom Field name if you would like to save the version in any other custom Field. The default one is cPVALnetFrameWorkVersion.` 
+ 
+- Run As: `System`  
+- Preset Parameter: `<Leave it Blank>`  
+- Custom Field Name : `Change the Custom Field name if you would like to save the version in any other custom Field. The default one is cPVALnetFrameWorkVersion.` 
+- Click the `Run` button to run the script. 
 ![SampleRun](../../../static/img/docs/da0dccbe-ef31-4627-ac10-e242828102e0/image6.webp)
 
 ## Dependencies
