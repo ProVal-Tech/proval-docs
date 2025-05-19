@@ -53,7 +53,7 @@ Set the following details in the Schedule section:
 
 - `Repeats:` Weekly  
 - `Recur every:` 1 Week 
-- `Start At:` <Current Time>  
+- `Start At:` \<Current Time\>  
 - `Ends:` Never  
 ![TaskCreation](../../../static/img/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c/image2.webp)
 
