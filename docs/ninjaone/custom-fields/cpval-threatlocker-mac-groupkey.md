@@ -45,13 +45,13 @@ The following Pop-up screen will appear:
 
 ### Step 4
 
-Custom Field Type: `Text`
-Select Text for the Custom field type and click Continue to proceed.
+Custom Field Type: `Text`  
+Select Text for the `Custom field type` and click `Continue` to proceed.
 ![Configuration](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/image1.webp)
 
 ### Step 5
 
-A Pop-up screen will appear. Set the following details in the Overview section and click the Next button.
+A Pop-up screen will appear. Set the following details in the `Overview` section and click the `Next` button.
 
 Label: `cPVAL ThreatLocker Mac GroupKey`  
 Name: `cpvalThreatlockerMacGroupkey`  
@@ -59,11 +59,11 @@ Definition Scope: `Organization`
 Custom field is required: `<Leave it unchecked>`
 ![Configuration](../../../static/img/docs/8305e5b2-41ee-44bb-848e-758ac72b185f/image1.webp)
 
-Clicking the Next button will take you to the Permission section.
+Clicking the `Next` button will take you to the `Permission` section.
 
 ### Step 5
 
-Set the following details in the Permission section and click the Next button.
+Set the following details in the `Permission` section and click the `Next` button.
 
 Technician: `Editable`  
 Automation: `Read/Write`  

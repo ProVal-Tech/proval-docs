@@ -44,25 +44,25 @@ The following Pop-up screen will appear:
 
 ### Step 4
 
-Custom Field Type: `Text`
-Select Text for the Custom field type and click Continue to proceed.
+Custom Field Type: `Text`  
+Select `Text` for the `Custom field type` and click `Continue` to proceed.
 ![Configuration](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/image1.webp)
 
 ### Step 5
 
-A Pop-up screen will appear. Set the following details in the Overview section and click the Next button.
+A Pop-up screen will appear. Set the following details in the `Overview` section and click the `Next` button.
 
 Label: `cPVAL Threatlocker Organization Name`  
 Name: `cpvalThreatlockerOrganizationName`  
 Definition Scope: `Organization`  
-Custom field is required: `<Leave it unchecked>`
-![Configurationstatic/img/docs/573751d4-0648-4da9-8ec3-0ab96d4730de/image1.webp)
+Custom field is required: `<Leave it unchecked>`  
+![Configuration](../../../static/img/docs/573751d4-0648-4da9-8ec3-0ab96d4730de/image1.webp)
 
-Clicking the Next button will take you to the Permission section.
+Clicking the `Next` button will take you to the `Permission` section.
 
 ### Step 5
 
-Set the following details in the Permission section and click the Next button.
+Set the following details in the `Permission` section and click the `Next` button.
 
 Technician: `Editable`  
 Automation: `Read/Write`  

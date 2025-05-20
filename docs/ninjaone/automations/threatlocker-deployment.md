@@ -4,14 +4,14 @@ slug: /1196b011-bfba-486a-8653-92066f19e527
 title: 'Threatlocker Deployment'
 title_meta: 'Threatlocker Deployment'
 keywords: ['Threatlocker','windows','GroupKey','Deployment']
-description: 'This script will check for ThreatLocker and attempt to install if not present on Windows Machines. It matches the organization to the client name, if no match is found, it will create the company in the Threatlocker Portal. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group'
+description: 'This script will check for ThreatLocker and attempt to install if not present on Windows Machines. It matches the organization to the client name. If no match is found, it will create the company in the Threatlocker Portal. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group'
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
 ---
 
 ## Overview
-This script will check for ThreatLocker and attempt to install if not present on Windows Machines. It matches the organization to the client name, if no match is found, it will create the company in the Threatlocker Portal. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group.
+This script will check for ThreatLocker and attempt to install if not present on Windows Machines. It matches the organization to the client name. If no match is found, it will create the company in the Threatlocker Portal. By default, servers will be installed into the Servers group, and workstations will be installed into the Workstations group.
 
 ## Sample Run
 
@@ -41,10 +41,10 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-`Name`: Threatlocker Deployment 
+`Name`: Threatlocker Deployment  
 `Description`: This script will check for ThreatLocker and attempt to install if not present on windows machines.
-It matches the organization to the client name, if no match is found, it will create the organtization in Threatlcoker  
-`Categories`: ProVal  
+It matches the organization to the client name, if no match is found, it will create the organtization in Threatlcoker.  
+`Categories`: ProVal   
 `Language`: PowerShell  
 `Operating System`: Windows  
 `Architecture`: All  

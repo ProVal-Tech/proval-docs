@@ -40,12 +40,12 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-`Name`: Threatlocker Deployment [MAC]
-`Description`: This script deploys threatlocker agent on Mac machines 
+`Name`: Threatlocker Deployment [MAC]  
+`Description`: This script deploys threatlocker agent on Mac machine  
 `Categories`: ProVal  
-`Language`: ShellScript 
-`Operating System`: Mac 
-`Architecture`: 64-bit
+`Language`: ShellScript  
+`Operating System`: Mac  
+`Architecture`: 64-bit  
 `Run As`: System  
 ![CreateSript](../../../static/img/docs/11444307-4a3f-4388-b5c5-096a50725b4e/image1.webp)
 
