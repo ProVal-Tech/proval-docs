@@ -25,9 +25,9 @@ To implement this script, please create a new PowerShell-style script in the sys
 ![Image 1](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_1.webp)  
 ![Image 2](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_2.webp)  
 
-- **Name:** Winget Upgrade All  
-- **Description:** Uses Winget to attempt an upgrade for all available packages on an endpoint.  
-- **Category:** Custom  
+- **Name:** `Winget Upgrade All`  
+- **Description:** `Uses Winget to attempt an upgrade for all available packages on an endpoint.`  
+- **Category:** `Custom`  
 
 ![Image 3](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_3.webp)  
 
@@ -38,108 +38,60 @@ To implement this script, please create a new PowerShell-style script in the sys
 Paste the PowerShell script below directly into the "Script" field.
 
 ```powershell
-<#
-.SYNOPSIS
-A Powershell wrapper for WinGet.
-.OUTPUTS
-Invoke-WingetProcessor-log.txt
-Invoke-WingetProcessor-error.txt
-.NOTES
-Script will check if WinGet is installed and attempt to install if not present.
-Can be run as SYSTEM.
-#>
-
-### Bootstrap ###
-if (-not $bootstrapLoaded) {
-    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://file.provaltech.com/repo/script/Bootstrap.ps1')
-    Set-Environment
+$Parameters = @{
+    'UpdateAll' = $true
+}
+#endRegion
+#region Setup - Variables
+$ProjectName = 'Invoke-WingetProcessor'
+[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+$BaseURL = 'https://file.provaltech.com/repo'
+$PS1URL = "$BaseURL/script/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$Workingpath = $WorkingDirectory
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+#endRegion
+#region Setup - Folder Structure
+New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
+$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
+    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
+} elseif ($response.StatusCode -eq 200) {
+    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
+    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
+}
+if (!(Test-Path -Path $PS1Path)) {
+    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+}
+#endRegion
+#region Execution
+if ($Parameters) {
+    Write-Information ('Parameters Used: {0}' -f ($Parameters | Out-String)) -InformationAction Continue
+    & $PS1Path @Parameters
 } else {
-    Write-Log -Text 'Bootstrap already loaded.' -Type INIT
+    & $PS1Path
 }
-$ProgressPreference = 'SilentlyContinue'
-### Process ###
-$InformationPreference = 'continue' 
-
-Write-Log -Text 'Checking prerequisites...' -Type Log
-# Get the latest version of WinGet from GitHub
-$wingetMsixPath = Join-Path -Path $env:TEMP -ChildPath 'Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
-Invoke-RestMethod -Uri 'https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle' -OutFile $wingetMsixPath
-if (!(Get-Module '7ZipArchiveDsc' -ErrorAction SilentlyContinue)) {
-    Install-PackageProvider -Name NuGet -Force | Out-Null
-    Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-    Install-Module -Name 7ZipArchiveDsc
+#endRegion
+#region log verification
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
-Import-Module 7ZipArchiveDsc
-$wingetWorkingPath = "$env:ProgramData\_automation\winget"
-New-Item -Type Directory -Path $wingetWorkingPath -ErrorAction SilentlyContinue
-Expand-7ZipArchive -Path $wingetMsixPath -Destination $wingetWorkingPath
-$wingetParentPath = "$wingetWorkingPath\app"
-$wingetPath = "$wingetParentPath\winget.exe"
-if ([Environment]::Is64BitOperatingSystem) {
-    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x64.msix" -Destination $wingetParentPath
-} else {
-    Expand-7ZipArchive -Path "$wingetWorkingPath\AppInstaller_x86.msix" -Destination $wingetParentPath
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+    throw ('Error Content: {0}' -f ($ErrorContent | Out-String))
 }
-
-# Install VCLibs if required
-if (!(Get-ProvisionedAppPackage -Online | Where-Object { $_.DisplayName -match 'uwpdesktop' })) {
-    Write-Log -Text 'Installing VCLibs dependency.' -Type LOG
-    $vclib = Join-Path -Path $env:TEMP -ChildPath 'Microsoft.VCLibs.x64.14.00.Desktop.appx'
-    Invoke-RestMethod -Uri 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx' -OutFile $vclib -ErrorAction Stop
-    DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$vclib /SkipLicense
-    Remove-Item -Path $vclib -Force
-}
-
-#check to ensure redists are present on the machine
-$Visual2019 = 'Microsoft Visual C++ 2015-2019 Redistributable*'
-$Visual2022 = 'Microsoft Visual C++ 2015-2022 Redistributable*'
-$path = Get-Item @(
-    'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*',
-    'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
-) | Where-Object { $_.GetValue('DisplayName') -like $Visual2019 -or $_.GetValue('DisplayName') -like $Visual2022 }
-if (!($path)) {
-    try {
-        if ([System.Environment]::Is64BitOperatingSystem) {
-            $VCRedistTarget = 'VC_redist.x64.exe'
-        } else {
-            $VCRedistTarget = 'VC_redist.x86.exe'
-        }
-        Write-Log -Text "Downloading $VCRedistTarget..." -Type Log
-        $SourceURL = "https://aka.ms/vs/17/release/$VCRedistTarget"
-        $ProgressPreference = 'SilentlyContinue'
-        Invoke-WebRequest $SourceURL -OutFile "$env:TEMP\$VCRedistTarget"
-        Write-Log -Text "Installing $VCRedistTarget..." -Type LOG
-        Start-Process -FilePath "$env:TEMP\$VCRedistTarget" -Args '/quiet /norestart' -Wait
-        Remove-Item "$env:TEMP\$VCRedistTarget" -ErrorAction SilentlyContinue
-        Write-Log -Text 'MS Visual C++ 2015-2022 installed successfully' -Type LOG
-    } catch {
-        Write-Log -Text 'MS Visual C++ 2015-2022 installation failed.' -Type LOG
-    }
-} else {
-    Write-Log -Text 'Prerequisites checked. OK' -Type LOG
-}
-#print out user to log for debug
-Write-Log -Text "Running as $(whoami)" -Type LOG
-
-#if we couldn't find winget, fail and throw since we already tried installing
-if (!(Test-Path -Path $wingetPath)) {
-    Write-Log -Text 'Unable to install winget' -Type ERROR
-    throw 'Exception - Unable to install WinGet'
-} else {
-    Write-Log -Text "Winget found at '$wingetPath'."
-    & $wingetPath list --accept-source-agreements | Out-Null
-}
-
-Write-Log -Text 'Updating all WinGet-Compatible Software on the endpoint.' -Type LOG
-& $wingetPath upgrade --all --silent
+$content = Get-Content -Path $LogPath
+$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
+return ('Log Content: {0}' -f ($logContent | Out-String))
 ```
 
 Expected time of script execution in seconds*: 2400
 
-## Script Deployment
+## Completed Task
 
-The script is intended to run manually at this time.
+![Image 5](../../../static/img/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4/image_5.webp)  
 
 ## Output
 

@@ -589,36 +589,24 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 1. Go to `Automation` > `Tasks`.
 2. Search for `Reboot Prompter` Task.
 3. Select the concerned task.
-4. Click on the `Schedule` button to schedule the task/script.
-
-![Schedule Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_61.webp)  
-
-5. This screen will appear.
-
-![Schedule Screen](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_62.webp)  
-
-6. Select the relevant time to run the script and click the `Do not repeat` button.
-
-![Select Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_63.webp)  
-
+4. Click on the `Schedule` button to schedule the task/script.  
+    ![Schedule Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_61.webp)  
+5. This screen will appear.  
+    ![Schedule Screen](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_62.webp)  
+6. Select the relevant time to run the script and click the `Do not repeat` button.  
+    ![Select Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_63.webp)  
 7. A pop-up box will appear.
 8. Suppose the client asked to set the reboot prompt for every 2 hours.
-9. Change the number of hours to `2` and click `OK`.
-
-![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_64.webp)  
-![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_65.webp)  
-
-10. Search for `Reboot Prompter` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.
-
-![Search Group](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_66.webp)  
-
-11. Now click the `Run` button to initiate the task.
-
-![Run Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_67.webp)  
-
+9. Change the number of hours to `2` and click `OK`.  
+    ![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_64.webp)  
+    ![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_65.webp)  
+10. Search for `Reboot Prompter` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.  
+    ![Search Group](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_66.webp)  
+11. Now click the `Run` button to initiate the task.  
+    ![Run Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_67.webp)  
 12. The task will start appearing in the Scheduled Tasks.
 
 ## Output
 
-Task Log  
-Custom Field  
+- Script Log  
+- Custom Field  
