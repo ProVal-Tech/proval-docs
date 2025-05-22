@@ -246,7 +246,7 @@ Source IP/Workstation
 
 Target Account Name
 
-#### **🛠️ Error Code Specific Troubleshooting**
+#### **Error Code Specific Troubleshooting**
 
 | Error Code   | Meaning                          | Action Steps                                                                 |
 |--------------|----------------------------------|------------------------------------------------------------------------------|
@@ -263,7 +263,7 @@ Target Account Name
 | 0xC0000413   | Auth firewall restriction        | - Review firewall or security policies. <br> - Allow the account to authenticate. |
 
 
-#### **🔧 Service Account Specific Checks**
+#### **Service Account Specific Checks**
 
 Find Services Using the Account:
 
@@ -275,7 +275,7 @@ Change the password in AD.
 
 Update it in all services, scheduled tasks, and applications using it.
 
-#### **🚨 If the Account is Unknown or Suspicious**
+#### **If the Account is Unknown or Suspicious**
 
 Investigate Source IP: Use firewall logs or SIEM tools.
 Check for Patterns: Repeated failures from the same IP or targeting multiple accounts.
