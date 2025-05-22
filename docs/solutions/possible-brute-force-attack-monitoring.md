@@ -87,25 +87,27 @@ Target Account Name
 
 | Error Code   | Meaning                          | Action Steps                                                                 |
 |--------------|----------------------------------|------------------------------------------------------------------------------|
-| 0xC000006A   | Bad password                     | - Check if the password was recently changed. <br> - Reset the password if needed. <br> - Investigate repeated attempts (possible brute-force). |
-| 0xC000006D   | Bad username or auth info        | - Verify username. <br> - Check for typos or outdated credentials. <br> - Investigate source of repeated failures. |
-| 0xC0000064   | Bad or misspelled username       | - Confirm the account exists. <br> - Investigate for enumeration attempts.   |
-| 0xC000005E   | No logon servers available       | - Check domain controller availability. <br> - Ensure network connectivity. <br> - Restart Netlogon service. |
-| 0xC000006F   | Logon outside authorized hours   | - Review account restrictions in AD. <br> - Adjust allowed logon hours if needed. |
-| 0xC0000070   | Unauthorized workstation         | - Check workstation restrictions in AD. <br> - Update allowed workstations.  |
-| 0xC0000072   | Account disabled                 | - Enable the account in AD. <br> - Investigate why it was disabled.         |
-| 0xC000015B   | Logon type not granted           | - Check Group Policy or Local Security Policy. <br> - Grant appropriate logon rights. |
-| 0xC0000192   | Netlogon service not started     | - Start the Netlogon service. <br> - Set it to automatic.                   |
+| 0xC000006A   | Bad password                     | - Check if the password was recently changed.  	- Reset the password if needed.  	- Investigate repeated attempts (possible brute-force). |
+| 0xC000006D   | Bad username or auth info        | - Verify username.  	- Check for typos or outdated credentials.  - Investigate source of repeated failures. |
+| 0xC0000064   | Bad or misspelled username       | - Confirm the account exists.  	- Investigate for enumeration attempts.   |
+| 0xC000005E   | No logon servers available       | - Check domain controller availability.  	- Ensure network connectivity.  - Restart Netlogon service. |
+| 0xC000006F   | Logon outside authorized hours   | - Review account restrictions in AD.  	- Adjust allowed logon hours if needed. |
+| 0xC0000070   | Unauthorized workstation         | - Check workstation restrictions in AD.  	- Update allowed workstations.  |
+| 0xC0000072   | Account disabled                 | - Enable the account in AD.  	- Investigate why it was disabled.         |
+| 0xC000015B   | Logon type not granted           | - Check Group Policy or Local Security Policy.  	- Grant appropriate logon rights. |
+| 0xC0000192   | Netlogon service not started     | - Start the Netlogon service.  	- Set it to automatic.                   |
 | 0xC0000193   | Expired account                  | - Extend or renew the account expiration date.                              |
-| 0xC0000413   | Auth firewall restriction        | - Review firewall or security policies. <br> - Allow the account to authenticate. |
+| 0xC0000413   | Auth firewall restriction        | - Review firewall or security policies.  	- Allow the account to authenticate. |
 
 
 #### **Service Account Specific Checks**
 
 Find Services Using the Account:
 
-Run: Get-WmiObject win32_service | Where-Object { $_.StartName -like "*accountname*" }
+Run: `Get-WmiObject win32_service | Where-Object { $_.StartName -like "*accountname*" }`
+
 Or check manually in Services.msc.
+
 Update Password:
 
 Change the password in AD.
