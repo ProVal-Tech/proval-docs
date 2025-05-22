@@ -15,51 +15,51 @@ This solution is targeted to compute all the patch management automation togethe
 
 ## Associated Content
 
-### Install Patches
+### **Install Patches**
 
 | Content               | Type   | Function                                             |
 |-----------------------|--------|------------------------------------------------------|
 | [Script - Universal KB Installer](/docs/424dfd5c-377f-461f-a57f-80001d839af8)| Script | The purpose of this script is to install the desired patch on Windows machines. |
 
-### Uninstall Patches
+### **Uninstall Patches**
 
 | Content                  | Type   | Function                                                                 |
 |--------------------------|--------|-------------------------------------------------------------------------|
 | [Script - Uninstall Windows KB Param](/docs/fd611b68-7cd6-4a6a-bee1-3d772ecd9a27) | Script | The script is designed to facilitate uninstalling a specific Windows update on a computer.  |
 
 
-### Install/Audit Latest Cumulative Update
+### **Install/Audit Latest Cumulative Update**
 
 | Content                       | Type     | Function                                                                                                                             |
 |-------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 https://file+.vscode-resource.vscode-cdn.net/docs/aaa3f8da-cfd3-454a-808b-d4501f9c2608computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
+| [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) | Solution | The solution audits Windows 10 and 11 computers to verify the latest installed Cumulative Update. It also includes an Autofix option that automatically attempts to install the latest available CU if no update has been installed within the specified days. |
 
-### Windows Update - Repair
+### **Windows Update - Repair**
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
 | [Script - Windows Update - Repair](/docs/aaa3f8da-cfd3-454a-808b-d4501f9c2608)  | Script | This script attempts to repair and reset Windows update settings using the ProVal agnostic PowerShell: [Agnostic - Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc). The goal of this script is to fix potential patching issues for Windows devices. |
 
-### Windows 11 Compatibility Audit
+### **Windows 11 Compatibility Audit**
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
-| [Solution - Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)  | Solution | The solution aims to determine the compatibility of Windows 10 machines for the Windows 11 installation. |
+| [Solution - Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)  | Solution | The solution aims to determine the compatibility of Windows 10 machines for the Windows 11 installation. <br></br>Additionally, it can be used to detect Windows 11 computers that do not meet Microsoft's requirements for Windows 11. While Windows 11 can be forcefully installed on incompatible computers, the feature pack cannot be updated for such machines using the Windows Update Assistant. |
 
 
-### Install Feature Update to Windows 10+ machines
+### **Install Feature Update to Windows 10+ machines**
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
-| [Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  | Script | This script installs the latest feature update on a Windows 10+ machine and provides an option to upgrade from Windows 10 to Windows 11. The script can be executed from the [Monitor - ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](/docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f) set or executed manually. Note: The script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category. |
+| [Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  | Script | This script installs the latest feature update on a Windows 10+ machine. The script can be executed from the [Monitor - ProVal - Production - Patching - Windows 10/11 Build Upgrades EOL Based](/docs/03e04bb6-5087-4e71-9d2f-a3596e9c291f) set or executed manually. <br></br> **Note:** The script can create a ticket for failures. If a ticket category is specified in the monitor set, the script will produce a ticket under that category by default. Otherwise, it will create a ticket under the default ticket category. |
 
-### Upgrade Windows 10 to 11
+### **Upgrade Windows 10 to 11**
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
 | [Solution - Windows 11 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)  | Solution | This solution is designed to automate the upgrade from Windows 10 to Windows 11, addressing the end-of-support deadline for Windows 10 in October 2025. |
 
-### Workaround script for erroneous Windows machines
+### **Workaround script for erroneous Windows machines**
 
 | Content                  | Type   | Function                                                                                                               |
 |--------------------------|--------|-----------------------------------------------------------------------------------------------------------------------|
@@ -75,18 +75,21 @@ Please refer to the each script/solution provided based on the title mentioned a
 
 - (Q) Does the above solutions dependent to each other?
 - (A) Not really, they are separate solution and build with different perspective. No doubt, these all relates to patching so can be run together as a customized solution based on the requirement. 
-
+## Flow Chart
 Below are the few flow chart that can assist you to follow steps for patch install, Windows feature update, and Windows Upgrade from 10 to 11.
 
 
-- **Patch install Hierarchy**
+- **Patch install Hierarchy**   
+Follow this hierarchy if a patch is not getting install. You can run the [Script - Universal KB Installer](/docs/424dfd5c-377f-461f-a57f-80001d839af8) to install that patch and if the issue persists, follow the flow chart below:
 
 ![Patch install hierarchy](../../static/img/docs/patch-complete-solution/image.png)
 
-- **Windows Feature Update**
+- **Windows Feature Update**  
+Follow this for problems related to feature updates for Win 10 or 11: 
 
 ![Windows Feature Update](../../static/img/docs/patch-complete-solution/image-1.png)
 
-- **Windows 10-11 Upgrade**
+- **Windows 10 to 11 Upgrade**  
+Follow this if a Windows 10 computer is failing to upgrade to Windows 11:
 
 ![Windows 10 to 11 Upgrade](../../static/img/docs/patch-complete-solution/image-4.png)
