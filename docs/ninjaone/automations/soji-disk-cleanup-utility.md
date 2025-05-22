@@ -157,21 +157,11 @@ foreach ($Param in $PossibleParameters) {
 }
 
 # Execute the exe with all collected parameters
+Set-Location -Path $WorkingDirectory
 & $EXEPath @Parameters
 
-# Check for and display log files
-$logFilePath = "$WorkingDirectory\$env:ExeName-log.txt"
-$errorFilePath = "$WorkingDirectory\$env:ExeName-Error.txt"
-
-if (Test-Path -Path $logFilePath) {
-  Write-Host "Log File Contents:"
-  Get-Content -Path $logFilePath
-}
-
-if (Test-Path -Path $errorFilePath) {
-  Write-Host "Error File Contents:"
-  Get-Content -Path $errorFilePath
-}
+# Write log files path
+Write-Information "Script logs location: $($WorkingDirectory\Sojilogs)" -InformationAction Continue
 ```
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image8.webp)
