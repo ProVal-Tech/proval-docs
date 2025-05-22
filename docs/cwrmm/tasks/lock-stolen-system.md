@@ -304,10 +304,10 @@ The script is using the shutdown command to turn off the machine.
 ### Row 8 Function: CMD Script
 
 Search and select the `Command Prompt Script` function.  
-![CMD Function](../../../static/img/docs/CWRMM-Get-AutopilotHash/image2.webp)
+![CMD Function](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image2.webp)
 
 The following function will pop up on the screen:  
-![Function Popup](../../../static/img/docs/CWRMM-Get-AutopilotHash/image3.webp)
+![Function Popup](../../../static/img/docs/e9b29e34-d570-481f-99db-1a428763c5da/image3.webp)
 
 Paste in the following CMD script and set the expected time of script execution to 300 seconds. Click the `Save` button.
 
