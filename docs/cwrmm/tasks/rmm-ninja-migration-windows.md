@@ -11,16 +11,19 @@ unlisted: false
 ---
 
 ## Summary
+
 This script deploys the NinjaRMMAgent to Windows-supported OS, based on the article provided below:
 [Agent Installation Tokenization](https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization).
 It depends on the Authorization token, which will be kept in the company or site custom fields.
 
 ## Sample Run
+
 ![Sample Run 1](../../../static/img/docs/2893ba48-9686-424e-ba32-0c799c38f9fd/image-1_1.webp)
 
 ![Sample Run 2](../../../static/img/docs/2893ba48-9686-424e-ba32-0c799c38f9fd/image-2_1.webp)
 
 ## Dependencies
+
 [CW RMM - Ninja Migration Custom fields](/docs/1b41da88-5b9a-436f-997b-39c8f72615ae)
 
 [Group - Ninja RMM Deployment](/docs/b2d8d0e7-2310-43ae-b623-4e9fc8d295b0)
@@ -44,7 +47,7 @@ Create a new `Script Editor` style task by choosing the `Script Editor` option f
 The `New Script` page will appear on clicking the `Script Editor` button:  
 ![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.webp)
 
-#### Step 3 
+#### Step 3
 
 **Name:** `NinjaRMM Deployment - [Windows]`  
 **Description:** `This script deploys the NinjaRMMAgent to Windows-supported OS, based on the article provided below:
@@ -153,7 +156,7 @@ The following function will pop up on the screen:
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
-```
+```PowerShell
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
 $PreValidation = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'NinjaRMMAgent' } | Select-Object -ExpandProperty DisplayName
 if ($PreValidation -match 'NinjaRMMAgent') {

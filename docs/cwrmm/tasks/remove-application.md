@@ -124,7 +124,6 @@ Paste the highlighted text:
 ### Row 6: Function: PowerShell Script
 
 ![Row 6 PowerShell](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_22.webp)  
- 
 
 Paste in the following PowerShell script and set the expected time of script execution to **3600** seconds.
 
@@ -238,7 +237,7 @@ Add a new row by clicking on the Add Row button.
 ![Image](../../../static/img/docs/9f850e35-aca9-4255-b692-4b31d33f7ab1/image_48.webp)  
   
 In the script exit message, write `@ApplicationName@ failed to uninstall. Exiting script with error.`  
-![Row 11 Exit](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_37.webp)  
+![Row 11 Exit](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_51.webp)  
 
 ### Row 12: Function: Set Custom Field
 
