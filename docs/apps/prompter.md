@@ -13,7 +13,7 @@ unlisted: false
 <br />
 <div align="center">
   <a href="https://content.provaltech.com/docs/aba254a9-e917-481d-9152-ecb6e990d98c">
-    <img src="../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/prompter.webp" alt="Logo" width="80" height="80" />
+    <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/prompter.webp" alt="Logo" width="80" height="80" />
   </a>
 
 <h3 align="center">Prompter</h3>
@@ -26,7 +26,7 @@ unlisted: false
 ## About
 
 <div align="center">
-<img src="../../static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/screenshot.webp" alt="Prompter Screen Shot" />
+<img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/screenshot.webp" alt="Prompter Screen Shot" />
 </div>
 
 Prompter is a simple application designed to present a prompt on the desktop and optionally display a date and time picker. It supports any number of buttons, as well as optional header images and custom application icons.
