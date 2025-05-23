@@ -1,8 +1,8 @@
 ---
 id: '015605a7-a2b3-49c6-b773-2ebbdbbbc7ed'
 slug: /015605a7-a2b3-49c6-b773-2ebbdbbbc7ed
-title: 'Filename'
-title_meta: 'Filename'
+title: 'NinjaRMM Agent Deployment Monitor'
+title_meta: 'NinjaRMM Agent Deployment Monitor'
 keywords: ['ninjarmm','rmm','agent']
 description: 'This monitor is designed to set the automatic deployment of the NinjaRMMAgent where the Ninja Deployment is enabled.'
 tags: ['application','installation']
