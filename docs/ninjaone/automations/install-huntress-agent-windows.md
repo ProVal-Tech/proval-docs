@@ -187,7 +187,7 @@ Begin {
         $Acl = Get-Acl $WorkingDirectory
         $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
         $Acl.AddAccessRule($AccessRule)
-        Set-Acl  $WorkingDirectory $Acl -ErrorAction SilentlyContinue
+        Set-Acl $WorkingDirectory $Acl -ErrorAction SilentlyContinue
     }
     #endRegion
 
@@ -261,8 +261,27 @@ Begin {
 Process {
     #region Execute Script - Run installer with configured parameters
     # Splat parameter hash for clean execution
-    $Parameters  # Launch Huntress installer script with all parameters
+    & $scriptPath @parameters  # Launch Huntress installer script with all parameters
     #endRegion
+
+    #region Validate Uninstall
+    if ($action = 'Uninstall') {
+        $services = Get-Service -Name 'HuntressRio', 'HuntressAgent', 'HuntressUpdater', 'Huntmon' -ErrorAction SilentlyContinue
+        $installPaths = Get-ChildItem -Path "${env:ProgramFiles(x86)}\Huntress", "$env:ProgramFiles\Huntress" -File -ErrorAction SilentlyContinue
+        if (-not $services -and -not $installPaths) {
+            $uninstallPaths = @(
+                'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+                'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
+            )
+            $uninstallPrograms = @('Huntress Agent', 'Huntress Rio')
+            foreach ($program in $uninstallPrograms) {
+                $psPath = (Get-ChildItem -Path $uninstallPaths -ErrorAction SilentlyContinue | Get-ItemProperty | Where-Object { $_.DisplayName -eq $program }).PSPath
+                foreach ($path in $psPath) {
+                    Remove-Item -Path $path -Force -ErrorAction SilentlyContinue
+                }
+            }
+        }
+    }
 }
 
 # End block: Final cleanup or additional actions (if needed)
