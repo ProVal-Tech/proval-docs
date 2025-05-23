@@ -20,7 +20,7 @@ This solution is built to set the NinjaRMMAgent migration from CW Automate to Ni
 |----------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------|
 | [Script - NinjaRMM Deployment - [Windows, Mac, Linux]](/docs/372559cc-5af7-4075-a442-ef7909712fea) | Script          | This script deploys the NinjaRMMAgent to all supported OS, based on the article provided here: https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization. It depends on the Authorization token which will be kept to the client and location EDFs. |
 | [Internal Monitor - NinjaRMM Deployment - [Windows, Mac, Linux]](/docs/015605a7-a2b3-49c6-b773-2ebbdbbbc7ed) | Internal Monitor | This monitor is designed to set the automatic deployment of the NinjaRMMAgent where the Ninja Deployment is enabled. |
-| △ Custom - Execute Script - NinjaRMMAgent Deployment                                               | Alert Template  | This alert template is required to be run with the "Internal Monitor - NinjaRMM Deployment - [Windows, Mac, Linux]" so that it can schedule the "Script - NinjaRMM Deployment - [Windows, Mac, Linux]" to the detected agent where the NinjaRMM deployment is enabled. |
+| △ Custom - Execute Script - NinjaRMMAgent Deployment                                               | Alert Template  | This alert template is required to be run with the `Internal Monitor - NinjaRMM Deployment - [Windows, Mac, Linux]` so that it can schedule the `Script - NinjaRMM Deployment - [Windows, Mac, Linux]` to the detected agent where the NinjaRMM deployment is enabled. |
 | [NinjaOne Agent Installation: Agent Tokenization – NinjaOne Dojo](https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Installation-Agent-Tokenization) | Ninja Helping Documentation | Please note that this feature is currently in beta. Please contact your Account Manager to enable it. The agent installers for Windows, Linux, and Mac now have the option to use an alphanumeric token representing the server, organization, location, and role of an agent when it's installed. This token will allow for easier script-based installation of the agent and make mass-deployments faster and easier. |
 
 ## Implementation
@@ -52,5 +52,5 @@ This solution is built to set the NinjaRMMAgent migration from CW Automate to Ni
 
 ## FAQ
 
-1. It is possible the partner will not be able to see the option Devices>Agent Installers in the Ninja Portal.
-Ans -> It is because the Devices>Agent Installers is a Beta feature that is required to be enabled by requesting their account manager.
+(Q.) Is it possible the partner will not be able to see the option `Devices` > `Agent Installers` in the Ninja Portal?  
+Ans:  Yes. It is because the `Devices` > `Agent Installers` is a Beta feature that is required to be enabled by requesting their account manager.
