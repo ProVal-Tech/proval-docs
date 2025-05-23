@@ -1,6 +1,6 @@
 ---
-id: 9069399f-01ee-4c5c-9d4a-7d942a036bb2
-slug: /9069399f-01ee-4c5c-9d4a-7d942a036bb2
+id: c384dccd-8655-4c2e-857c-e7d510892404
+slug: /c384dccd-8655-4c2e-857c-e7d510892404
 title: 'Chromium Browsers - Clear History, Cache, and Cookies on Exit'
 title_meta: 'Chromium Browsers - Clear History, Cache, and Cookies on Exit'
 keywords: ['chromium', 'browsers', 'google-chrome', 'microsoft-edge', 'brave', 'history', 'cookies', 'cache']
@@ -128,7 +128,7 @@ Manual investigation is required.' as `AlertMessage`,
 'root' as `UpdatedBy`,
 (NOW()) as `UpdateDate`
 FROM mastergroups m
-WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
+WHERE m.groupid IN (2,3,855,856)
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Chromium Browsers – Clear History, Cache, and Cookies on Exit')
 ```
 
