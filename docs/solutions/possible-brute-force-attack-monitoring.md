@@ -60,30 +60,31 @@ The solution monitors the domain controller for excessive logon failures within 
 
 ## FAQ
 
-#### **General Troubleshooting Steps**
+#### **General Troubleshooting Steps:**
 
-**Identify the Account Type:**
+**1. Identify the Account Type:**
 
-- Domain Account: Check in Active Directory Users and Computers (ADUC).
+- `Domain Account:` Check in Active Directory Users and Computers (ADUC).
 
-- Local Account: Use Computer Management > Local Users and Groups.
-- Service Account: Check services or scheduled tasks using the account.
-- Unknown Account: Investigate for potential brute-force or enumeration attacks.
-Review Event Logs:
+- `Local Account:` Use Computer Management > Local Users and Groups.
+- `Service Account:` Check services or scheduled tasks using the account.
+- `Unknown Account:` Investigate for potential brute-force or enumeration attacks.  
 
-Look for Event ID 4625 in the Security log.
+**2. Review Event Logs:**
 
-Pay attention to:
+- Look for Event ID `4625` in the Security log.
 
-Status/SubStatus codes
+**3. Pay attention to:**
 
-Logon Type
+- Status/SubStatus codes
 
-Source IP/Workstation
+- Logon Type
 
-Target Account Name
+- Source IP/Workstation
 
-#### **Error Code Specific Troubleshooting**
+- Target Account Name
+
+#### **Error Code Specific Troubleshooting:**
 
 | Error Code   | Meaning                          | Action Steps                                                                 |
 |--------------|----------------------------------|------------------------------------------------------------------------------|
@@ -100,23 +101,22 @@ Target Account Name
 | 0xC0000413   | Auth firewall restriction        | - Review firewall or security policies.  	- Allow the account to authenticate. |
 
 
-#### **Service Account Specific Checks**
+#### **Service Account Specific Checks:**
 
-Find Services Using the Account:
+- Find Services Using the Account:
 
-Run: `Get-WmiObject win32_service | Where-Object { $_.StartName -like "*accountname*" }`
-
+- Run: `Get-WmiObject win32_service | Where-Object { $_.StartName -like "*accountname*" }`  
 Or check manually in Services.msc.
 
-Update Password:
+**Update Password:**
 
-Change the password in AD.
+- Change the password in AD.
 
-Update it in all services, scheduled tasks, and applications using it.
+- Update it in all services, scheduled tasks, and applications using it.
 
 #### **If the Account is Unknown or Suspicious**
 
-Investigate Source IP: Use firewall logs or SIEM tools.
+- `Investigate Source IP:` Use firewall logs or SIEM tools.
 Check for Patterns: Repeated failures from the same IP or targeting multiple accounts.
-Block IP or Account: If malicious, take immediate action.
+- `Block IP or Account:` If malicious, take immediate action.
 Enable Account Lockout Policies: To prevent brute-force attacks.
