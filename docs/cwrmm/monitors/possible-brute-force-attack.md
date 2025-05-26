@@ -221,7 +221,7 @@ For more detailed information: [Event 4625](https://learn.microsoft.com/en-us/pr
 Action: Please have the issue reviewed by a technician.
 ```
 
-## FAQ
+## Troubleshooting
 
 #### **General Troubleshooting Steps**
 
