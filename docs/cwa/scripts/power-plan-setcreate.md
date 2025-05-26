@@ -27,7 +27,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **Example 1:** Saving the CSV file for the Power Settings in the LTShare (WebDav for the hosted partners)
 
 - This is the recommended method for running this script.  
-- Download the attached [PowerPlanSettingsTemplate.CSV](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) file from this document.  
+- Download the attached [PowerPlanSettingsTemplate.CSV](<../../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) file from this document.  
 - Edit the downloaded file.  
 - Specify the necessary values for the power settings in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns.  
 - For rows where the `Minimum Possible Setting` and `Maximum Possible Setting` columns have values, ensure that the values in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns fall within the specified range.  
@@ -108,7 +108,7 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 
 ## Automation
 
-- Edit and place the [configuration file](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
+- Edit and place the [configuration file](<../../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 
 ![Automation Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_7.webp)
 
@@ -198,5 +198,5 @@ Here's a breakdown of the columns in the CSV file:
 
 ## Attachments
 
-[PowerPlanSettingsTemplate.csv](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)  
+[PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)  
 [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>)
