@@ -1,8 +1,8 @@
 ---
 id: '8d2a9b84-38b6-460f-9e9e-3992ea6fd448'
 slug: /8d2a9b84-38b6-460f-9e9e-3992ea6fd448
-title: 'Power Plan - SetCreate'
-title_meta: 'Power Plan - SetCreate'
+title: 'Power Plan - Set/Create'
+title_meta: 'Power Plan - Set/Create'
 keywords: ['connectwise', 'powerplan', 'automation', 'script', 'edf']
 description: 'This document details the implementation of the Set-PowerPlan script in ConnectWise Automate, providing guidance on how to modify or create power plans using settings from a CSV file or hash table. It includes sample runs, automation steps, and configuration details for effective management of power settings across client machines.'
 tags: ['setup', 'software', 'windows']
@@ -16,10 +16,6 @@ This document outlines the Automate implementation of the agnostic script [Set-P
 
 The settings for the power plan are required to create or modify the power plan. These settings can be provided to the script in two ways: through the `Settings` parameter as a hash table or from a CSV file. A template for the CSV file is attached to this document. Details regarding the columns of the CSV file are explained later in this document.
 
-**File Path:** `C:/ProgramData/_Automation/script/Set-PowerPlan/Set-PowerPlan.ps1`  
-**File Hash (SHA256):** `28C5503857406511327E72114784F559799CEBFE96A6D323FAA2A25F56F8488C`  
-**File Hash (MD5):** `7882C5890DCDFA7CE81DD62AB093A1F8`  
-
 ## Sample Run (Set Environment)
 
 Run the script with the `Set_Environment` parameter set to `1` to create the EDFs used by the script and the [PowerPlan Automation](/docs/625fc28a-23a7-4cb7-beeb-ad5b659af2ab) internal monitor.
@@ -31,7 +27,7 @@ Run the script with the `Set_Environment` parameter set to `1` to create the EDF
 **Example 1:** Saving the CSV file for the Power Settings in the LTShare (WebDav for the hosted partners)
 
 - This is the recommended method for running this script.  
-- Download the attached [PowerPlanSettingsTemplate.CSV](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>) file from this document.  
+- Download the attached [PowerPlanSettingsTemplate.CSV](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) file from this document.  
 - Edit the downloaded file.  
 - Specify the necessary values for the power settings in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns.  
 - For rows where the `Minimum Possible Setting` and `Maximum Possible Setting` columns have values, ensure that the values in the `Direct Power Settings (AC)` and `Battery Power Settings (DC)` columns fall within the specified range.  
@@ -108,9 +104,11 @@ Run the script on the relevant machine(s) with the specified parameters to creat
 
 ![Run Configuration](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_6.webp)
 
+*See the [agnostic script's](/docs/05737947-e8d5-4711-a1d7-91a6db43358f) documentation for additional examples.*
+
 ## Automation
 
-- Edit and place the [configuration file](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
+- Edit and place the [configuration file](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>) in the `LTShare (WebDav for hosted partners)` within the `Transfer/PowerPlan` directory as described in **Example 1** of the `Sample Run (Manual)` section. Alternatively, you can use the [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>) file. It's a pre-created power profile equivalent to the Windows default `High Performance`.
 
 ![Automation Example](../../../static/img/docs/8d2a9b84-38b6-460f-9e9e-3992ea6fd448/image_7.webp)
 
@@ -157,9 +155,9 @@ Here's a breakdown of the columns in the CSV file:
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
-- [EPM - Windows Configuration - Agnostic - Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
+- [Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f)
+- [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
 ## Variables
 
@@ -200,5 +198,5 @@ Here's a breakdown of the columns in the CSV file:
 
 ## Attachments
 
-[PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/15053772/PowerPlanSettingsTemplate.csv>)  
+[PowerPlanSettingsTemplate.csv](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)  
 [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>)
