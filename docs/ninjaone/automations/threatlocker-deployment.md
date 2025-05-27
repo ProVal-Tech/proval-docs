@@ -18,9 +18,24 @@ This script will check for ThreatLocker and attempt to install if not present on
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
+Search and select `Threatlocker Deployment`
+![SampleRun1](../../../static/img/docs/1196b011-bfba-486a-8653-92066f19e527/image4.webp)
+
+Set the required arguments and click the Run button to run the script.  
+`Run As`: System  
+`Preset Parameter`: `<Leave it Blank>`    
+![SampleRun1](../../../static/img/docs/1196b011-bfba-486a-8653-92066f19e527/image5.webp)
+
+`Run Automation`: Yes
+![SampleRun1](../../../static/img/docs/1196b011-bfba-486a-8653-92066f19e527/image6.webp)
+
+
 ## Dependencies
 - [cPVAL Threatlocker Auth Key](/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a) 
 - [cPVAL Threatlocker Organization Name](/docs/573751d4-0648-4da9-8ec3-0ab96d4730de) 
+- [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2)
+- [cPVAL Threatlocker Deployment - Exclude](/docs/c3329dd9-bdf8-42f6-aacc-bcfde0fa94da)
+- [Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Automation Setup/Import
 
