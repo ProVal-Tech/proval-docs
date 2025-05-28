@@ -124,7 +124,9 @@ Change this value from 10 to the desired value after creating the monitor.
     0XC0000192: An attempt was made to logon, but the Netlogon service was not started.
     0xC0000193: User logon with expired account.
     0XC0000413: Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine.
+    
     Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not available) with the reference table mentioned above to identify the failure reason.
+
     For more detailed information: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625.
 
     To troubleshoot further, follow the troubleshooting section in the document: 
@@ -219,7 +221,10 @@ Failure Reason Reference Table:
 0XC0000413: Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine.  
 
 Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not available) with the reference table mentioned above to identify the failure reason.  
-For more detailed information: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625
+For more detailed information: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625  
+
+To troubleshoot further, follow the troubleshooting section in the document: 
+https://content.provaltech.com/docs/3691bc36-640e-4d39-8a41-0513d44c7d41
 
 Action: Please have the issue reviewed by a technician.
 ```
