@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
+This remote monitor checks the computer for security event log event ID `4625` where the count of occurrences is greater than 10 in the last 60 minutes.
 
 The threshold can be modified by updating the value of the `$th` variable in the remote monitor's command. Change this value from 10 to the desired value after importing the remote monitor.
 
@@ -33,7 +33,7 @@ The threshold can be modified by updating the value of the `$th` variable in the
 
 ## Dependencies
 
-[Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)
+`Alert Template:` [Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)
 
 ## Target
 
@@ -82,7 +82,7 @@ Here is a breakdown of the logon attempts that failed over the past hour.
 
 Note: Compare FailureSubStatus (or FailureStatus if FailureSubStatus is not available) with the reference table mentioned above to identify the failure reason.
 
-For more detailed information: [Event 4625 Documentation](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625)
+For more detailed information: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625
 
 To troubleshoot further, follow the troubleshooting section in the document: 
 https://content.provaltech.com/docs/d9b666b4-e0b0-4736-94c1-06b430581bad
@@ -96,7 +96,6 @@ https://content.provaltech.com/docs/d9b666b4-e0b0-4736-94c1-06b430581bad
 
 ## Troubleshooting
 
-## FAQ
 
 #### **General Troubleshooting Steps:**
 
@@ -122,39 +121,39 @@ https://content.provaltech.com/docs/d9b666b4-e0b0-4736-94c1-06b430581bad
 
 - Target Account Name
 
-#### **Error Code Specific Troubleshooting:**
+#### **4. Error Code Specific Troubleshooting:**
 
-| Error Code   | Meaning                          | Action Steps                                                                 |
+| Error Code   | Meaning                          |    Action Steps                                                                 |
 |--------------|----------------------------------|------------------------------------------------------------------------------|
-| 0xC000006A   | Bad password                     | - Check if the password was recently changed.  	- Reset the password if needed.  	- Investigate repeated attempts (possible brute-force). |
-| 0xC000006D   | Bad username or auth info        | - Verify username.  	- Check for typos or outdated credentials.  - Investigate source of repeated failures. |
-| 0xC0000064   | Bad or misspelled username       | - Confirm the account exists.  	- Investigate for enumeration attempts.   |
-| 0xC000005E   | No logon servers available       | - Check domain controller availability.  	- Ensure network connectivity.  - Restart Netlogon service. |
-| 0xC000006F   | Logon outside authorized hours   | - Review account restrictions in AD.  	- Adjust allowed logon hours if needed. |
-| 0xC0000070   | Unauthorized workstation         | - Check workstation restrictions in AD.  	- Update allowed workstations.  |
-| 0xC0000072   | Account disabled                 | - Enable the account in AD.  	- Investigate why it was disabled.         |
-| 0xC000015B   | Logon type not granted           | - Check Group Policy or Local Security Policy.  	- Grant appropriate logon rights. |
-| 0xC0000192   | Netlogon service not started     | - Start the Netlogon service.  	- Set it to automatic.                   |
-| 0xC0000193   | Expired account                  | - Extend or renew the account expiration date.                              |
-| 0xC0000413   | Auth firewall restriction        | - Review firewall or security policies.  	- Allow the account to authenticate. |
+| 0xC000006A   | Bad password                     |<ol><li> Check if the password was recently changed.   </li> <li> 	Reset the password if needed. <li> Investigate repeated attempts (possible brute-force). </li> </ol>|
+| 0xC000006D   | Bad username or auth info        | <ol><li> Verify username. </li> <li> Check for typos or outdated credentials.</li> <li> Investigate source of repeated failures.</li> </ol> |
+| 0xC0000064   | Bad or misspelled username       | <ol><li>Confirm the account exists.  </li> <li> Investigate for enumeration attempts. </li> </ol>  |
+| 0xC000005E   | No logon servers available       | <ol><li>Check domain controller availability.  </li> <li> Ensure network connectivity. </li> <li>Restart Netlogon service. </li> </ol>|
+| 0xC000006F   | Logon outside authorized hours   | <ol><li> Review account restrictions in AD.  </li> <li>Adjust allowed logon hours if needed.</li> </ol> |
+| 0xC0000070   | Unauthorized workstation         | <ol><li>Check workstation restrictions in AD. </li> <li> Update allowed workstations. </li> </ol> |
+| 0xC0000072   | Account disabled                 | <ol><li> Enable the account in AD. </li> <li>Investigate why it was disabled.      </li> </ol>   |
+| 0xC000015B   | Logon type not granted           | <ol><li>Check Group Policy or Local Security Policy. </li> <li> Grant appropriate logon rights. </li> </ol>|
+| 0xC0000192   | Netlogon service not started     | <ol><li> Start the Netlogon service.  </li> <li>Set it to automatic.  </li> </ol>                 |
+| 0xC0000193   | Expired account                  | <ol><li> Extend or renew the account expiration date.                      </li> </ol>        |
+| 0xC0000413   | Auth firewall restriction        | <ol><li> Review firewall or security policies.  </li> <li> Allow the account to authenticate. </li> </ol>|
 
 
-#### **Service Account Specific Checks:**
+#### **5. Service Account Specific Checks:**
 
-- Find Services Using the Account:
+- Find Services Using the Account.
 
 - Run: `Get-WmiObject win32_service | Where-Object { $_.StartName -like "*accountname*" }`  
 Or check manually in Services.msc.
 
-**Update Password:**
+**6. Update Password:**
 
 - Change the password in AD.
 
 - Update it in all services, scheduled tasks, and applications using it.
 
-#### **If the Account is Unknown or Suspicious**
+#### **7. If the Account is Unknown or Suspicious**
 
-- `Investigate Source IP:` Use firewall logs or SIEM tools.
-Check for Patterns: Repeated failures from the same IP or targeting multiple accounts.
-- `Block IP or Account:` If malicious, take immediate action.
-Enable Account Lockout Policies: To prevent brute-force attacks.
+- `Investigate Source IP:` Use firewall logs or SIEM tools.  
+- `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.
+- `Block IP or Account:` If malicious, take immediate action.  
+- `Enable Account Lockout Policies:` To prevent brute-force attacks.
