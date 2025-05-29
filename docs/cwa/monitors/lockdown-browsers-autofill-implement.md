@@ -343,17 +343,15 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 
 
 Reload System Cache
 
-![Image](/img/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2/image_1.webp)
-
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_1.webp)
 ---
 
 ## Step 8
 
 Refresh Searches and Groups.
 
-![Image](/img/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2/image_2.webp)
-
-![Image](/img/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2/image_3.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_2.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_3.webp)
 
 ---
 
@@ -365,6 +363,5 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
 
-![Image](/img/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2/image_4.webp)
-
-![Image](/img/docs/9069399f-01ee-4c5c-9d4a-7d942a036bb2/image_5.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4.webp)
+![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5.webp)
