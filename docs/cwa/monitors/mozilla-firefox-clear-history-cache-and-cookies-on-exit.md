@@ -21,8 +21,8 @@ This remote monitor automatically configures Mozilla Firefox to clear browsing h
 
 ## Details
 
-**Suggested "Limit to"**: `Windows Computers`
-**Suggested Alert Style**: `Once`
+**Suggested "Limit to"**: `Windows Computers`  
+**Suggested Alert Style**: `Once`  
 **Suggested Alert Template**: `Default - Do Nothing`
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |

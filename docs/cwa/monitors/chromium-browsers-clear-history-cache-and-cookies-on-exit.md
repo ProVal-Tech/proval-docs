@@ -21,8 +21,8 @@ This remote monitor automatically configures Chromium-based browsers (Google Chr
 
 ## Details
 
-**Suggested "Limit to"**: `Windows Computers`
-**Suggested Alert Style**: `Once`
+**Suggested "Limit to"**: `Windows Computers`  
+**Suggested Alert Style**: `Once`  
 **Suggested Alert Template**: `Default - Do Nothing`
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result |
