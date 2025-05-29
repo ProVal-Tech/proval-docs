@@ -18,7 +18,7 @@ Configures power plan settings using either a provided hashtable or CSV file. If
 
 - PowerPlanSettingsTemplate.csv
 
-## Usage
+## Process
 
 - Ensures mandatory parameters are provided and validates the parameter's format and structure.
 - Retrieves available power plans using `powercfg /list`.
@@ -33,84 +33,140 @@ Configures power plan settings using either a provided hashtable or CSV file. If
 - Uses `powercfg` commands to set AC and DC values for the specified subgroup and power setting.
 - Logs success or error messages for each configuration attempt.
 
+## Usage
+
+### Example 1
+
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings.
 
 ```powershell
-PS C:> .\Set-PowerPlan.ps1 -Name 'CustomPlan' -Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
+.\PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-Setting @{Subgroup=@{'Sleep' = @{ PowerSetting = @{ 'Sleep after' = @{ AC = 60; DC = 60 }; 'Allow hybrid sleep' = @{ AC = 1; DC = 100}; 'Hibernate After' = @{ AC = 0; DC = 18000}; 'Allow Wake Timers' = @{ AC = 2; DC = 2 }}}}}
 ```
+
+### Example 2
 
 Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the `$Settings` hashtable.
 
 ```powershell
-PS C:> $setting = @{
-    Subgroup = @{
-        'Hard Disk' = @{
-            PowerSetting = @{
-                'Turn off hard disk after' = @{
-                    AC = 0
-                    DC = 0
+.\PS C:\> $setting = @{
+            Subgroup = @{
+                'Hard Disk' = @{
+                    PowerSetting = @{
+                        'Turn off hard disk after' = @{
+                            AC = 0
+                            DC = 0
+                        }
+                    }
+                }
+                'Internet Explorer' = @{
+                    PowerSetting = @{
+                        'JavaScript Timer Frequency' = @{
+                            AC = 1
+                            DC = 0
+                        }
+                    }
+                }
+                'Sleep' = @{
+                    PowerSetting = @{
+                        'Sleep after' = @{
+                            AC = 60
+                            DC = 60
+                        }
+                        'Allow hybrid sleep' = @{
+                            AC = 1
+                            DC = 100
+                        }
+                        'Hibernate After' = @{
+                            AC = 0
+                            DC = 18000
+                        }
+                        'Allow Wake Timers' = @{
+                            AC = 2
+                            DC = 2
+                        }
+                    }
+                }
+                'Intel(R) Graphics Settings' = @{
+                    PowerSetting = @{
+                        'Intel(R) Graphics Power Plan' = @{
+                            AC = 2
+                            DC = 2
+                        }
+                    }
+                }
+                'AMD Power Slider' = @{
+                    PowerSetting = @{
+                        Overlay = @{
+                            DC = 2
+                            AC = 2
+                        }
+                    }
                 }
             }
-        }
-        'Internet Explorer' = @{
-            PowerSetting = @{
-                'JavaScript Timer Frequency' = @{
-                    AC = 1
-                    DC = 0
-                }
-            }
-        }
-        'Sleep' = @{
-            PowerSetting = @{
-                'Sleep after' = @{
-                    AC = 60
-                    DC = 60
-                }
-                'Allow hybrid sleep' = @{
-                    AC = 1
-                    DC = 100
-                }
-                'Hibernate After' = @{
-                    AC = 0
-                    DC = 18000
-                }
-                'Allow Wake Timers' = @{
-                    AC = 2
-                    DC = 2
-                }
-            }
-        }
-        'Intel(R) Graphics Settings' = @{
-            PowerSetting = @{
-                'Intel(R) Graphics Power Plan' = @{
-                    AC = 2
-                    DC = 2
-                }
-            }
-        }
-        'AMD Power Slider' = @{
-            PowerSetting = @{
-                Overlay = @{
-                    DC = 2
-                    AC = 2
-                }
-            }
-        }
-    }
-}
-PS C:> .\Set-PowerPlan.ps1 -Name 'CustomPlan' -Setting $Settings
+        }   
+.\PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-Setting $Setting
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C:/Temp' directory.
+### Example 3
+
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the `$Settings` hashtable, including the hidden power settings.
 
 ```powershell
-PS C:> .\Set-PowerPlan.ps1 -Name 'CustomPlan' -CSVPath 'C:\temp\CustomPlanTemplate.csv'
+.\PS C:\> $setting = @{
+            Subgroup = @{
+                'Sleep' = @{
+                    PowerSetting = @{
+                        'Sleep after' = @{
+                            AC = 0
+                            DC = 900
+                        }
+                    }
+                }
+                'Power buttons and lid' = @{
+                    PowerSetting = @{
+                         'Lid close action' = @{
+                            AC = 0
+                            DC = 1
+                        }
+                        'Power button action' = @{
+                            AC = 2
+                            DC = 2
+                        }
+                        'Sleep button action' = @{
+                            AC = 1
+                            DC = 1
+                        }
+                    }
+                }
+            }
+        }   
+.\PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-Setting $Setting
 ```
 
-Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https://file.provaltech.com/CustomPlanTemplate.csv'.
+Changes to the hidden settings under `Power buttons and lid` will not appear in `System Settings`, but can be viewed in the `Advanced Settings` section.
+
+**System Settings:**
+
+![SystemSettings](../../static/img/docs/05737947-e8d5-4711-a1d7-91a6db43358f/SystemSettings.webp)
+
+**Advanced Settings:**
+
+![AdvancedSettings](../../static/img/docs/05737947-e8d5-4711-a1d7-91a6db43358f/AdvancedSettings.webp)
+
+### Example 4
+
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' file located in the 'C:\Temp' directory.
 
 ```powershell
-PS C:> .\Set-PowerPlan.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.com/CustomPlanTemplate.csv'
+PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-CSVPath 'C:\temp\CustomPlanTemplate.csv'
+```
+
+### Example 5
+
+Configures a custom power plan named 'CustomPlan' with specified AC and DC power settings from the 'CustomPlanTemplate.csv' downloaded from 'https:\\file.provaltech.com\CustomPlanTemplate.csv'.
+
+```powershell
+PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-CSVPath 'https:\\file.provaltech.com\CustomPlanTemplate.csv'
 ```
 
 ## Parameters
@@ -127,4 +183,5 @@ PS C:> .\Set-PowerPlan.ps1 -Name 'CustomPlan' -CSVPath 'https://file.provaltech.
 - .\Set-PowerPlan-Error.txt
 
 ## Attachments
+
 [PowerPlanSettingsTemplate.csv](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)
