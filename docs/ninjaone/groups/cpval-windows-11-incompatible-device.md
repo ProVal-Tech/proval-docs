@@ -64,7 +64,7 @@ Fill in the following `Has Any Conditions` and click the `Add` button to proceed
 **Condition:** `Equal`  
 **Text:** `Not Capable`  
 
-![NotCapable](<../../../static/img/docs/cpval-windows-11-incompatible-device /image.png>)
+![NotCapable](../../../static/img/docs/cpval-windows-11-incompatible-device/image.png)
 
 Click Add again in the  `Has Any Conditions`:
 
@@ -72,11 +72,11 @@ Click Add again in the  `Has Any Conditions`:
 **Condition:** `Equal`  
 **Text:** `Undetermined`  
 
-![undetermined](<../../../static/img/docs/cpval-windows-11-incompatible-device /image-1.png>)
+![Undetermined](../../../static/img/docs/cpval-windows-11-incompatible-device/image-1.png)
 
 ### Step 6
 
-![Any](<../../../static/img/docs/cpval-windows-11-incompatible-device /image-2.png>)
+![Any](../../../static/img/docs/cpval-windows-11-incompatible-device/image-2.png)
 
 ### Step 7
 
@@ -94,8 +94,8 @@ Fill in the following details and click the `Save` button to create the group.
 **Description:** `This group contains the Windows 11 incompatible devices detected by the script Windows 11 Compatibility.`  
 **Permission Type:** `Self (Private) - default`
 
-![Group](<../../../static/img/docs/cpval-windows-11-incompatible-device /image-3.png>)
+![Group](../../../static/img/docs/cpval-windows-11-incompatible-device/image-3.png)
 
 ## Completed Group
 
-![Complete](<../../../static/img/docs/cpval-windows-11-incompatible-device /image-4.png>)
+![Complete](../../../static/img/docs/cpval-windows-11-incompatible-device/image-4.png)
