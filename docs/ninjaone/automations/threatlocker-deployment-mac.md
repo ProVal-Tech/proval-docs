@@ -55,7 +55,7 @@ The scripting window will open.
 Configure the `Create Script` section as follows:
 
 `Name`: Threatlocker Deployment [MAC]  
-`Description`: This script deploys threatlocker agent on Mac machine  
+`Description`: This script deploys threatlocker agent on Mac machines  
 `Categories`: ProVal  
 `Language`: ShellScript  
 `Operating System`: Mac  
@@ -110,7 +110,7 @@ Click the `Add` button next to `Script Variables`.
 
 ## Saving the Automation
 
-Click the Save button in the top-right corner of the screen to save your automation.  
+Click the `Save` button in the top-right corner of the screen to save your automation.  
 ![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  

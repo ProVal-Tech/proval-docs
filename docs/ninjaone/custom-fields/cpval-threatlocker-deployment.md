@@ -19,6 +19,13 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 | cPVAL Threatlocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `Windows`, `Windows and Macintosh`, `Disabled` | `Disabled` | False | Editable | Read/Write | Read/Write | Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level. | - | Default is Disabled |
 
+## Dependencies
+- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)  
+- [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)  
+- [Automation - Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)  
+- [Compound Conditions - Threatlocker Depoyment - Windows](/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28)  
+- [Compound Conditions - Threatlocker Deployment - MAC](/docs/73470264-63c3-43d1-a727-1e813cfe768d)
+
 ## Custom Field Creation
 
 ### Step 1
@@ -73,7 +80,7 @@ Set the following details in the `Permission` section and click the `Next` butto
 
 ![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/advancedgenericpermissions.webp)
 
-Clicking the `Next` button will take you to the details tab.  
+Clicking the `Next` button will take you to the `Details` tab.  
 ![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/advanceddetails.webp)
 
 ### Step 7

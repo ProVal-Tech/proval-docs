@@ -21,7 +21,8 @@ Stores the Threatlocker group key for agent deployment on Macintosh machines
 cPVAL ThreatLocker Mac GroupKey | cpvalThreatlockerMacGroupkey | Organization | Text | False | - | Editable | Read/Write | Read/Write | Stores the Threatlocker group key for agent deployment on Macintosh machines | - | - |
 
 ## Dependencies
-- [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
+- [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)  
+- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Custom Field Creation
 
@@ -61,7 +62,7 @@ Custom field is required: `<Leave it unchecked>`
 
 Clicking the `Next` button will take you to the `Permission` section.
 
-### Step 5
+### Step 6
 
 Set the following details in the `Permission` section and click the `Next` button.
 
@@ -70,7 +71,7 @@ Automation: `Read/Write`
 API: `Read/Write`  
 ![Configuration](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/image3.webp)
 
-### Step 6
+### Step 7
 
 Set the following details in the `Details` section and click the `Create` button to complete the creation of custom field.
 

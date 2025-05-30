@@ -20,7 +20,8 @@ Organization name to be used for Threatlocker deployment. If deploying to an exi
 | cPVAL Threatlocker Organization Name | cPVALThreatlockerOrganizationName | Organization | Text | False | - | Editable | Read/Write | Read/Write | Organization name to be used for Threatlocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal. | - | - |
 
 ## Dependencies
-- [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527) 
+- [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)  
+- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019) 
 
 ## Custom Field Creation
 
@@ -28,7 +29,7 @@ Organization name to be used for Threatlocker deployment. If deploying to an exi
 
 Navigate to the `Administration` menu, then proceed to `Devices` and select `Global Custom Fields`.  
 ![Step1](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/step1.webp)
-](../../../
+
 ### Step 2
 
 Locate the `Add` button on the right-hand side of the screen and click on it.  
@@ -73,7 +74,7 @@ API: `Read/Write`
 
 Set the following details in the `Details` section and click the `Create` button to complete the creation of custom field.
 
-**Description:** `Organization name to be used for Threatlocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal`    
+**Description:** `Organization name to be used for Threatlocker deployment. If deploying to an existing organization, the name must match the organization's name in the ThreatLocker portal.`    
 **Tooltip text:** `<Leave it blank>`   
 **Footer text:** `<Leave it blank>`  
 

@@ -29,6 +29,7 @@ Triggers the [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a5
 - [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e) 
 - [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2) 
 - [cPVAL Threatlocker Deployment - Exclude](/docs/c3329dd9-bdf8-42f6-aacc-bcfde0fa94da) 
+- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 
 ## Compound Condition Creation
@@ -41,10 +42,14 @@ Navigate to `Administration` `>` `Policies` `>` `Agent Policies`.
 Search for `Mac` and select the default `Mac [Default]` policy.  
 ![DefaultMac](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultmac.webp)
 
-This will navigate you to the policy's landing page, which is the `Conditions` section. Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+This will navigate you to the policy's landing page, which is the `Conditions` section.  
+
+Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 ![Conditions](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/macconditionssection.webp)
 
-Navigate to the `Compound Conditions` section. Note that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+Navigate to the `Compound Conditions` section.  
+
+Note that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 ![CompoundConditions](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/macworkstationscompoundconditionssection.webp)
 
 Click the `+ Add` button to add a compound condition.  
@@ -57,63 +62,63 @@ Clicking the `+ Add` button opens the compound condition creation window.
 
 ### Condition 1: Software
 
-Click the `+ Add condition` button.  
+- Click the `+ Add condition` button.  
 ![AddCondition](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addcondition.webp)
 
-Select the `Software` option from the list that will appear after clicking the `+ Add condition` button.  
+- Select the `Software` option from the list that will appear after clicking the `+ Add condition` button.  
 ![CompoundConditionSoftware](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/compoundconditionsoftware.webp)
 
-`Add Software Condition` screen will appear on selecting the `Software` option:  
+- `Add Software Condition` screen will appear on selecting the `Software` option:  
 ![CompoundConditionSoftwareScreen](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/compoundconditionsoftwarescreen.webp)
 
-Configure the `Add Software Condition` as follow:  
+- Configure the `Add Software Condition` as follow:  
 
-**Software Name:** `Threatlocker`  
-**Trigger when:** `Any Software` `Doesn't exist`  
+    **Software Name:** `Threatlocker`  
+    **Trigger when:** `Any Software` `Doesn't exist`  
 
-![Image1](../../../static/img/docs/73470264-63c3-43d1-a727-1e813cfe768d/image1.webp)
+    ![Image1](../../../static/img/docs/73470264-63c3-43d1-a727-1e813cfe768d/image1.webp)
 
-**Note:** The Return key must be pressed after pasting the name to set the `Software Name`.
+-  **Note:** The Return key must be pressed after pasting the name to set the `Software Name`.
 
-Click the `Apply` button to save the `software` condition.  
+- Click the `Apply` button to save the `software` condition.  
 ![Apply](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/apply.webp)
 
 ### Condition 2: Custom fields
 
-Click the `+ Add condition` button.  
+- Click the `+ Add condition` button.  
 ![AddCondition](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addcondition.webp)
 
-Select the `Custom fields` option from the list that will appear after clicking the `+ Add condition` button.  
+- Select the `Custom fields` option from the list that will appear after clicking the `+ Add condition` button.  
 ![CompoundConditionCustomFields](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/compoundconditioncustomfields.webp)
 
-`Add custom fields condition` screen will appear on selecting the `Custom fields` option:  
+- `Add custom fields condition` screen will appear on selecting the `Custom fields` option:  
 ![CompoundConditionCustomFieldsScreen](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/compoundconditioncustomfieldsscreen.webp)
 
-Click the `+ Add` button within the upper section labeled `Custom field value must meet ALL conditions`.  
+- Click the `+ Add` button within the upper section labeled `Custom field value must meet ALL conditions`.  
 ![AddButtonCustomFields](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addbuttoncustomfields.webp)
 
-A new row will be added upon clicking the `+ Add` button.  
+- A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/searchcustomfield.webp)
 
-Search and select the `cPVAL Threatlocker Deployment - Exclude` custom field.
+- Search and select the `cPVAL Threatlocker Deployment - Exclude` custom field.
 
-**Condition:** `cPVAL Threatlocker Deployment - Exclude` `does not equal` `Yes`
+- **Condition:** `cPVAL Threatlocker Deployment - Exclude` `does not equal` `Yes`
 
-![Image1](../../../static/img/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28/image1.webp)
+    ![Image1](../../../static/img/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28/image1.webp)
 
-Click the `+ Add` button within the upper section labeled `Custom field value must meet ALL conditions`.  
+- Click the `+ Add` button within the upper section labeled `Custom field value must meet ALL conditions`.  
 ![AddButtonCustomFields](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addbuttoncustomfields.webp)
 
-A new row will be added upon clicking the `+ Add` button.  
+- A new row will be added upon clicking the `+ Add` button.  
 ![NewRow](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/searchcustomfield.webp)
 
-Search and select the `cPVAL Threatlocker Deployment` custom field.
+- Search and select the `cPVAL Threatlocker Deployment` custom field.
 
-**Condition:** `cPVAL Threatlocker Deployment` `equals` `Windows and Macintosh`
+- **Condition:** `cPVAL Threatlocker Deployment` `equals` `Windows and Macintosh`
 
-![Image2](../../../static/img/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28/image2.webp)
+    ![Image2](../../../static/img/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28/image2.webp)
 
-Click the `Apply` button to save the `custom field` condition.  
+- Click the `Apply` button to save the `custom field` condition.  
 ![Image2](../../../static/img/docs/73470264-63c3-43d1-a727-1e813cfe768d/image2.webp)
 
 ## Automations
