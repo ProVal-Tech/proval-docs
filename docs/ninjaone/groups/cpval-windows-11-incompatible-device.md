@@ -96,6 +96,6 @@ Fill in the following details and click the `Save` button to create the group.
 
 ![Group](../../../static/img/docs/cpval-windows-11-incompatible-device/image-3.png)
 
-## Completed Group
+## Complete Group
 
 ![Complete](../../../static/img/docs/cpval-windows-11-incompatible-device/image-4.png)
