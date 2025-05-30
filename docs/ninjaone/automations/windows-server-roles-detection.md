@@ -135,6 +135,9 @@ begin {
     # Exchange Server detection via critical service
     $ExchangeServices = Get-Service -Name MSExchangeServiceHost -ErrorAction SilentlyContinue
 
+    # Hyper-V Cluster Detection via Service
+    $HyperVCluster = Get-Service -Name ClusSvc -ErrorAction SilentlyContinue
+
     # MySQL detection through registry uninstall entries
     $MySQLServer = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, 
     HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall -ErrorAction SilentlyContinue |
@@ -163,6 +166,7 @@ begin {
     if ($MySQLServer) { $InstalledFeatures += 'MySQL Server' }
     if ($VeeamBDR) { $InstalledFeatures += 'Veeam BDR' }
     if ($SharePointServer) { $InstalledFeatures += 'SharePoint Server' }
+    if ($HyperVCluster) { $InstalledFeatures += 'Hyper-V Cluster' }
 
     # FSMO Role Detection (only if AD DS role is present)
     if ($InstalledFeatures -contains 'Active Directory Domain Services') {
