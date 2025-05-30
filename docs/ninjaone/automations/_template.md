@@ -43,13 +43,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:**
-**Description:**
-**Categories:** `ProVal`  
-**Language:**  
-**Operating System:**  
-**Architecture:**
-**Run As:**
+- **Name:**
+- **Description:**
+- **Categories:** `ProVal`  
+- **Language:**  
+- **Operating System:**  
+- **Architecture:**
+- **Run As:**
 
 ## Step 4
 

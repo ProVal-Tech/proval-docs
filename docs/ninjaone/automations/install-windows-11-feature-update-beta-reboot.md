@@ -25,13 +25,13 @@ The script automates the installation of the latest Windows 11 Feature Update on
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Install Huntress Agent - Windows`
+Search and select `Install Windows 11 Feature Update [Beta, Reboot]`
 ![Image1](../../../static/img/docs/ea84e90b-2585-47e2-82b2-2f8d1519d079/image1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
-**NoReboot:** `Prevents automatic reboots, allowing manual control over restarts. Even with the '-NoReboot' parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
+- **NoReboot:** `Prevents automatic reboots, allowing manual control over restarts. Even with the '-NoReboot' parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.`  
 ![Image2](../../../static/img/docs/ea84e90b-2585-47e2-82b2-2f8d1519d079/image2.webp)
 
 **Run Automation:** `Yes`  
@@ -45,7 +45,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| `NoReboot` | | | `False` | `False` | `CheckBox`  | `Prevents automatic reboots, allowing manual control over restarts.` |
+| `NoReboot` | 1|1, Yes, True | `False` | `False` | `CheckBox`  | `Prevents automatic reboots, allowing manual control over restarts.` |
 
 ## Automation Setup/Import
 
@@ -66,13 +66,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:** `Install Windows 11 Feature Update [Beta, Reboot]`  
-**Description:** `The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script can restart the computer up to seven times.`  
-**Categories:** `ProVal`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Install Windows 11 Feature Update [Beta, Reboot]`  
+- **Description:** `The script automates the installation of the latest Windows 11 Feature Update. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process. The script can restart the computer up to seven times.`  
+- **Categories:** `ProVal`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 ![Image3](../../../static/img/docs/ea84e90b-2585-47e2-82b2-2f8d1519d079/image3.webp)
 
 ## Step 4
@@ -159,10 +159,10 @@ The `Add String/Text Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `NoReboot`  
-**Description:** `Prevents automatic reboots, allowing manual control over restarts.Even with the 'NoReboot' parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.`  
-**Mandatory:** `<Leave it Unchecked>`  
-**Set Default Value:** `<Leave it blank>`
+- **Name:** `NoReboot`  
+- **Description:** `Prevents automatic reboots, allowing manual control over restarts.Even with the 'NoReboot' parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.`  
+- **Mandatory:** `<Leave it Unchecked>`  
+- **Set Default Value:** `<Leave it blank>`
 
 ![Image5](../../../static/img/docs/ea84e90b-2585-47e2-82b2-2f8d1519d079/image5.webp)
 
