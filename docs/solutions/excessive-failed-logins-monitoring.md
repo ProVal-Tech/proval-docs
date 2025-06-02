@@ -1,8 +1,8 @@
 ---
 id: '1b773da4-e288-4874-9d6b-2e765ddcf248'
 slug: /1b773da4-e288-4874-9d6b-2e765ddcf248
-title: 'Possible Brute Force Attack Monitoring'
-title_meta: 'Possible Brute Force Attack Monitoring'
+title: 'Excessive Failed Logins Monitoring'
+title_meta: 'Excessive Failed Logins Monitoring'
 keywords: ['brute', 'force', 'attack', 'domain', 'controller', 'monitoring', 'security']
 description: 'This document outlines a solution for monitoring domain controllers for excessive logon failures within a one-hour window, which may indicate a potential brute force attack. It includes details on custom fields, dynamic groups, tasks, and monitoring setup necessary for effective security management.'
 tags: ['security']
@@ -39,7 +39,7 @@ The solution monitors the domain controller for excessive logon failures within 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Possible Brute Force Attack](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41) | Monitor | Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. |
+| [Excessive Failed Logins Attempt](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41) | Monitor | Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. |
 
 ## Implementation
 
@@ -56,4 +56,4 @@ The solution monitors the domain controller for excessive logon failures within 
 ### Monitor
 
 4. Create and enable the following monitor:
-   - [Possible Brute Force Attack](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41)
+   -  [Excessive Failed Logins Attempt](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41)

@@ -1,8 +1,8 @@
 ---
 id: '3691bc36-640e-4d39-8a41-0513d44c7d41'
 slug: /3691bc36-640e-4d39-8a41-0513d44c7d41
-title: 'Possible Brute Force Attack'
-title_meta: 'Possible Brute Force Attack'
+title: 'Excessive Failed Logins Attempt'
+title_meta: 'Excessive Failed Logins Attempt'
 keywords: ['brute', 'force', 'attack', 'monitor', 'security', 'event', 'log', 'id', '4625']
 description: 'This document outlines the steps to create a monitor that checks for security event log event ID 4625 where the count of occurrences exceeds a specified threshold in the last 60 minutes. It includes implementation details, dependencies, and ticketing information for alerts related to possible brute force attacks on endpoints.'
 tags: ['active-directory', 'security']
@@ -39,7 +39,7 @@ Change this value from 10 to the desired value after creating the monitor.
    ![Image](../../../static/img/docs/a520b645-036d-45ce-8ca6-8f3d31ee30cc/image_3.webp)
 
 2. Fill in the mandatory columns on the left side:
-   - Name: Possible Brute Force Attack
+   - Name: Excessive Failed Logins Attempt
    - Description: Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.
    - Type: Script
    - Severity: Critical Impact Alerts
@@ -152,9 +152,9 @@ Change this value from 10 to the desired value after creating the monitor.
 
 ## Ticketing
 
-**Subject:** `Script Monitor - Possible Brute Force Attack is triggered on <Computer Name> (<Computer Name>) at the site <Company Name> - <Site Name> / Priority - Emergency`
+**Subject:** `Script Monitor - Excessive Failed Logins Attempt is triggered on <Computer Name> (<Computer Name>) at the site <Company Name> - <Site Name> / Priority - Emergency`
 
-**Example:** `Script Monitor - Possible Brute Force Attack is triggered on DEV-Server2019DC (DEV-Server2019DC) at the site ProVal - Development / Priority - Emergency`
+**Example:** `Script Monitor - Excessive Failed Logins Attempt is triggered on DEV-Server2019DC (DEV-Server2019DC) at the site ProVal - Development / Priority - Emergency`
 
 **Sample Body:**
 
@@ -164,7 +164,7 @@ Site Name: ProVal - Development
 Resource - DEV-Server2019DC (DEV-Server2019DC)  
 This issue was observed at 2024-12-16 18:24:23  
 Following are the Monitor details for the same:  
-Monitor Name: Possible Brute Force Attack  
+Monitor Name: Excessive Failed Logins Attempt 
 Monitor Description: Check the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes.  
 Script Monitor has detected an issue on the endpoint, please refer to the details:  
 Script Language: PowerShell  
