@@ -161,7 +161,7 @@ Set-Location -Path $WorkingDirectory
 & $EXEPath @Parameters
 
 # Write log files path
-Write-Information "Script logs location: $($WorkingDirectory\Sojilogs)" -InformationAction Continue
+Write-Information "Script logs location: $WorkingDirectory\Sojilogs" -InformationAction Continue
 ```
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image8.webp)
