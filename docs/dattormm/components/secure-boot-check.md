@@ -16,7 +16,7 @@ This Component checks if secure boot is enabled or not.
 
 ## Implementation
 
-Import the [attached component](./../../static/attachments/secure-boot-check.cp) into Datto RMM.
+Import the [attached component](./../../static/attachments/secure-boot-check.cpt) into Datto RMM.
 
 ## Datto Variables
 
