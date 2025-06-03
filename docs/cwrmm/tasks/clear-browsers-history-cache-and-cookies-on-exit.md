@@ -55,9 +55,7 @@ Fill in the following details in the `Description` section:
 
 `Category:` Custom
 
-
 ![Image3](../../../static/img/docs/a0fec809-e3bd-4ea8-828f-e2292d42e2a4/image3.webp)
-
 
 ### Script Editor
 
@@ -83,59 +81,88 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 $browsers = @(
     @{
         Name = 'Google_Chrome'
-        RegistryPath = 'HKLM:\Software\Policies\Google\Chrome\ClearBrowsingDataOnExitList'
-        Items = @{
-            '1' = 'browsing_history'
-            '2' = 'cookies_and_other_site_data'
-            '3' = 'cached_images_and_files'
-        }
+        RegSet = @(
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\Google\Chrome\ClearBrowsingDataOnExitList'
+                Items = @{
+                    '1' = 'browsing_history'
+                    '2' = 'cookies_and_other_site_data'
+                    '3' = 'cached_images_and_files'
+                }
+            },
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\Google\Chrome'
+                Items = @{
+                    'ClearBrowsingDataOnExit' = 1
+                    'ClearCachedImagesAndFilesOnExit' = 1
+                }
+            }
+        )
     },
     @{
         Name = 'Microsoft_Edge'
-        RegistryPath = 'HKLM:\Software\Policies\Microsoft\Edge\ClearBrowsingDataOnExitList'
-        Items = @{
-            '1' = 'browsing_history'
-            '2' = 'cookies_and_other_site_data'
-            '3' = 'cached_images_and_files'
-        }
+        RegSet = @(
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\Microsoft\Edge\ClearBrowsingDataOnExitList'
+                Items = @{
+                    '1' = 'browsing_history'
+                    '2' = 'cookies_and_other_site_data'
+                    '3' = 'cached_images_and_files'
+                }
+            },
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\Microsoft\Edge'
+                Items = @{
+                    'ClearBrowsingDataOnExit' = 1
+                    'ClearCachedImagesAndFilesOnExit' = 1
+                }
+            }
+        )
     },
     @{
         Name = 'Brave'
-        RegistryPath = 'HKLM:\Software\Policies\BraveSoftware\Brave\ClearBrowsingDataOnExitList'
-        Items = @{
-            '1' = 'browsing_history'
-            '2' = 'cookies_and_other_site_data'
-            '3' = 'cached_images_and_files'
-        }
+        RegSet = @(
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\BraveSoftware\Brave\ClearBrowsingDataOnExitList'
+                Items = @{
+                    '1' = 'browsing_history'
+                    '2' = 'cookies_and_other_site_data'
+                    '3' = 'cached_images_and_files'
+                }
+            },
+            @{
+                RegistryPath = 'HKLM:\Software\Policies\BraveSoftware\Brave'
+                Items = @{
+                    'ClearBrowsingDataOnExit' = 1
+                    'ClearCachedImagesAndFilesOnExit' = 1
+                }
+            }
+        )
     },
     @{
         Name = 'Mozilla_Firefox'
-        RegistryPath = 'HKLM:\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown'
-        Items = @{
-            'Cache' = 1
-            'History' = 1
-            'Cookies' = 1
-        }
+        RegSet = @(
+            @{
+                RegistryPath = 'HKLM:\SOFTWARE\Policies\Mozilla\Firefox\SanitizeOnShutdown'
+                Items = @{
+                    'Cache' = 1
+                    'History' = 1
+                    'Cookies' = 1
+                }
+            },
+            @{
+                RegistryPath = 'HKLM:\SOFTWARE\Policies\Mozilla\Firefox'
+                Items = @{
+                    'SanitizeOnShutdown' = 1
+                }
+            }
+        )
     }
 )
 $failures = @()
 #endRegion
 
 #regionFunctions
-function Find-Application {
-    param(
-        [Parameter()]
-        [String]$Name
-    )
-    $uninstallPaths = @(
-        'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall',
-        'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-    )
-    $displayNamePattern = $Name -replace '_', ' '
-    $found = Get-ChildItem -Path $uninstallPaths | Get-ItemProperty | Where-Object { $_.DisplayName -match $displayNamePattern }
-    return [bool]$found
-}
-
 function Set-RegValue {
     param(
         [Parameter()][String]$Browser,
@@ -163,10 +190,11 @@ function Set-RegValue {
 #regionProcess
 foreach ($browser in $browsers) {
     $browserName = $browser.Name
-    $regPath = $browser.RegistryPath
-    $items = $browser.Items
 
-    if (Find-Application -Name $browserName) {
+    $regSet = $browser.RegSet
+    foreach ($set in $regSet) {
+        $regPath = $set.RegistryPath
+        $items = $set.Items
         if (-not (Test-Path -Path $regPath)) {
             New-Item -Path $regPath -Force -Confirm:$false | Out-Null
         }
