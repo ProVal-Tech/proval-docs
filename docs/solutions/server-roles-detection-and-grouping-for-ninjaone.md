@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-This document details the procedure for categorizing servers into suitable groups according to their installed roles."
+This document details the procedure for categorizing servers into suitable groups according to their installed roles.
 
 ## Associated Content
 
@@ -40,6 +40,7 @@ This document details the procedure for categorizing servers into suitable group
 | [cPVAL - Server Role - File Servers](/docs/58235f08-f095-4242-955f-d369947fb512)                  | File and Storage Services                       | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `File and Storage Services`                       | A group tailored for Windows Servers that have the `File and Storage Services` role installed                       |
 | [cPVAL - Server Role - HGS Servers](/docs/4e0d2ac4-0cfd-4b77-8714-10d7e82d9f3f)                   | Host Guardian Service                           | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Host Guardian Service`                           | A group tailored for Windows Servers that have the `Host Guardian Service` role installed                           |
 | [cPVAL - Server Role - Hyper-V Host](/docs/cf5d5ac8-bc9c-400d-a130-2e19866df942)                  | Hyper-V                                         | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Hyper-V`                                         | A group tailored for Windows Servers that have the `Hyper-V` role installed                                         |
+| [cPVAL - Server Role - Hyper-V Cluster](/docs/83840fa9-72f2-4bd3-9f9f-353d606d9d3c)            | SharePoint Server                               | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Hyper-V Cluster`                               | A group tailored for Windows Servers that have the `Hyper-V Cluster` role installed                               |
 | [cPVAL - Server Role - NPS Servers](/docs/d743519c-45d0-4adb-80c9-775e4b5273d2)                   | Network Policy and Access Services              | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Network Policy and Access Services`              | A group tailored for Windows Servers that have the `Network Policy and Access Services` role installed              |
 | [cPVAL - Server Role - Print Servers](/docs/3dc58c7d-f2b2-42f1-9417-c075a8e268d7)                 | Print and Document Services                     | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Print and Document Services`                     | A group tailored for Windows Servers that have the `Print and Document Services` role installed                     |
 | [cPVAL - Server Role - Remote Access Servers](/docs/ef8d1997-f627-4f48-84ad-4408821023bc)         | Remote Access                                   | `Custom Field` [cPVAl Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) `Contains` `Remote Access`                                   | A group tailored for Windows Servers that have the `Remote Access` role installed                                   |
@@ -95,6 +96,7 @@ Create the following server role groups:
 - [cPVAL - Server Role - File Servers](/docs/58235f08-f095-4242-955f-d369947fb512)
 - [cPVAL - Server Role - HGS Servers](/docs/4e0d2ac4-0cfd-4b77-8714-10d7e82d9f3f)
 - [cPVAL - Server Role - Hyper-V Host](/docs/cf5d5ac8-bc9c-400d-a130-2e19866df942)
+- [cPVAL - Server Role - Hyper-V Cluster](/docs/83840fa9-72f2-4bd3-9f9f-353d606d9d3c)
 - [cPVAL - Server Role - NPS Servers](/docs/d743519c-45d0-4adb-80c9-775e4b5273d2)
 - [cPVAL - Server Role - Print Servers](/docs/3dc58c7d-f2b2-42f1-9417-c075a8e268d7)
 - [cPVAL - Server Role - Remote Access Servers](/docs/ef8d1997-f627-4f48-84ad-4408821023bc)
