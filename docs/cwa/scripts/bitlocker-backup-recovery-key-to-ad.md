@@ -16,6 +16,12 @@ This script backs up the existing BitLocker recovery key to the joined AD domain
 
 **Time Saved by Automation:** 10 Minutes
 
+## File Hash
+
+**File Path**: `C:\ProgramData\_Automation\script\Get-ADBitlockerStores\Get-ADBitlockerStores-loop.ps1`  
+**SHA256**: `500A60B0D5223AAF9201EE0F29EBC8CE45A5BB6D5675DE20AB9FC7F5682AEFC7`  
+**MD5**: `C48D3B2E7097F87459D9999F6F74CD19` 
+
 ## Sample Run
 
 ![Sample Run](../../../static/img/docs/5f31f0b4-b682-4444-bd51-3182a8a2bd39/image_1.webp)
