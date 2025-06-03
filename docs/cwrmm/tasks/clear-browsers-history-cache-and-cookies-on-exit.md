@@ -45,28 +45,19 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Clear Browsers History, Cache, and Cookies on Exit`  
-**Description:**
-
-```PlainText
-The script configures the following installed browsers to clear history, cache, and cookies upon exit:
+`Name:` Clear Browsers History, Cache, and Cookies on Exit   
+`Description:`  The script configures the following installed browsers to clear history, cache, and cookies upon exit:
 
 - Google Chrome
 - Microsoft Edge
 - Brave
 - Mozilla Firefox`  
-**Category:** `<Script's Category>
-```
+
+`Category:` Custom
+
 
 ![Image3](../../../static/img/docs/a0fec809-e3bd-4ea8-828f-e2292d42e2a4/image3.webp)
 
-### Parameters
-
-Locate the `Add Parameter` button on the right-hand side of the screen and click on it to create a new parameter.  
-![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
-
-The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 ### Script Editor
 
