@@ -16,6 +16,12 @@ This document audits the existing backup BitLocker key protectors from an Active
 
 **Note:** The **Store BitLocker recovery information in Active Directory Domain Services** policy must be enabled on the domain controller to save the recovery keys.
 
+## File Hash
+
+**File Path**: `C:\ProgramData\_Automation\script\Get-ADBitlockerStores\Get-ADBitlockerStores-loop.ps1`  
+**SHA256**: `500A60B0D5223AAF9201EE0F29EBC8CE45A5BB6D5675DE20AB9FC7F5682AEFC7`  
+**MD5**: `C48D3B2E7097F87459D9999F6F74CD19`
+
 ## Sample Run
 
 ![Sample Run](../../../static/img/docs/d533538b-8b00-425e-849f-434518296b2d/image_1.webp)
