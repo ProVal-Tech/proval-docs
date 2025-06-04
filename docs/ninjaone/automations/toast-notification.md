@@ -1,7 +1,7 @@
 ---
 id: 'da3aea87-aba0-46ef-afff-9bfdfba5303d'
 slug: /da3aea87-aba0-46ef-afff-9bfdfba5303d
-title: 'FToast Notification'
+title: 'Toast Notification'
 title_meta: 'Toast Notification'
 keywords: ['toast', 'notification', 'reminder', 'reboot', 'template']
 description: 'This script is to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.'
@@ -23,8 +23,8 @@ Search and select `Toast notification`
 ![Image1](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image22.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
 Fill the Script variables as per requirement. For more information on these script variables, Go To **Parameters** Section.
 
 ![Image1](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image23.webp)
@@ -40,7 +40,7 @@ Fill the Script variables as per requirement. For more information on these scri
 
 | Name               | Example                         | Accepted Values             | Required | Default       | Type        | Description              |
 |----------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------|---------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NotificationType           | Generic                         | Generic<br /> PendingRebootUptime<br /> PendingRebootCheck<br /> ADPasswordExpiration                      | True     |               | Text        | The type of notification to send. The accepted values for NotificationType are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable.<br /><br />**Generic**: Enables a static, generic toast notification.<br /><br />**PendingRebootUptime**: Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.<br /><br />**PendingRebootCheck**: Displays a toast notification when a pending reboot is detected through the system registry or WMI.<br /><br />**ADPasswordExpiration**: Sends a toast notification to users when their Active Directory password is nearing expiration. |
+| NotificationType           | Generic                       | Generic<br /> PendingRebootUptime<br /> PendingRebootCheck<br /> ADPasswordExpiration                      | True     |               | Text        | The type of notification to send. The accepted values for NotificationType are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable.<br /><br />**Generic**: Enables a static, generic toast notification.<br /><br />**PendingRebootUptime**: Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.<br /><br />**PendingRebootCheck**: Displays a toast notification when a pending reboot is detected through the system registry or WMI.<br /><br />**ADPasswordExpiration**: Sends a toast notification to users when their Active Directory password is nearing expiration. |
 | RebootButton               | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Reboot` button in the notification. RebootButton is available for `Generic`, `PendingRebootUptime`, and `PendingRebootCheck` notification types.                    |
 | LearnMoreButton            | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Learn More` button in the notification.                       |
 | LearnMoreUrl               | [https://www.provaltech.com](https://www.provaltech.com)                                                     |                             | False    |               | Text        | Set the URL to navigate by clicking the `Learn More` button in the notification. `LearnMoreButton` should be selected to allow the `LearnMoreUrl` parameter.                                |
@@ -56,7 +56,7 @@ Fill the Script variables as per requirement. For more information on these scri
 | MaxUptimeDays              | 30                              |                             | False    | 30            | NumberValue | Defines the maximum uptime (in days) for the `PendingRebootUptime` NotificationType parameter. Default is 30 days.                                   |
 | ADPasswordExpirationDays   | 7                               |                             | False    | 7             | NumberValue | Number of days before password expiration when reminders should start. It is available for the `ADPasswordExpiration` NotificationType parameter. Default is 7 days.   |
 | Repeat                     | Once                            | Once, Hourly, XXMinutes, XXHours, Daily, XXDays.                  | False    | Once          | Text        | Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. |
-| NotificationAppName        | Connectwise RMM  |  | False    | Windows PowerShell          | Text        | Specifies the name of the application that will display the notification. |
+| NotificationAppName        | Ninja  RMM  |  | False    | Windows PowerShell          | Text        | Specifies the name of the application that will display the notification. |
 | MaxOccurrences        | 5  |  | False    |  | Number Values   | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once`. |
 ## Automation Setup/Import
 
@@ -77,13 +77,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:** `Toast Notification`  
-**Description:** `A script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.`  
-**Categories:** `ProVal`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Toast Notification`  
+- **Description:** `A script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.`  
+- **Categories:** `ProVal`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 ![Image4](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image1.webp)
 
 ## Step 4
@@ -302,254 +302,254 @@ Get-Content -Path $LogPath
 - Click the Add button next to Script Variables.
 - Select the `Drop-down` option.
 - The `Add Drop-down Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `NotificationType`  
-    **Description**: `The type of notification to send. It is a mandatory variable.`  
-    **Mandatory**: `<Leave it Unchecked>`
+    - **Name**: `NotificationType`  
+    - **Description**: `The type of notification to send. It is a mandatory variable.`  
+    - **Mandatory**: `Check the box`
 
-    **Option Value**: Configure the following options in the specified order. To add an option, paste it and click the Add button:  
-    - Generic  
-    - PendingRebootUptime  
-    - PendingRebootCheck  
-    - ADPasswordExpiration  
+    - **Option Value**: Configure the following options in the specified order. To add an option, paste it and click the `Add` button:  
+        - Generic  
+        - PendingRebootUptime  
+        - PendingRebootCheck  
+        - ADPasswordExpiration  
 
-    **Top Option Set Default Value** : True
+    - **Top Option Set Default Value** : `False`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image3.webp)
 
 ### RebootButton
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Checkbox` option.
 - The `Add Checkbox Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `RebootButton`  
-    **Description**: `Select RebootButton to enable the Reboot button in the notification. Unselecting the variable will disable it. RebootButton is available for Generic, PendingRebootUptime, and PendingRebootCheck notification types.`  
-    **Set Defaut Value**: `<Leave it Unchecked>`
+    - **Name**: `RebootButton`  
+    - **Description**: `Select RebootButton to enable the Reboot button in the notification. Unselecting the variable will disable it. RebootButton is available for Generic, PendingRebootUptime, and PendingRebootCheck notification types.`  
+    - **Set Defaut Value**: `<Leave it Unchecked>`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image4.webp)
 
 ### LearnMoreButton
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Checkbox` option.
 - The `Add Checkbox Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `LearnMoreButton`  
-    **Description**: `Select it to enable the Learn More button in the notification. Unselecting the variable will disable it.`  
-    **Set Defaut Value**: `<Leave it Unchecked>`
+   -  **Name**: `LearnMoreButton`  
+   -  **Description**: `Select it to enable the Learn More button in the notification. Unselecting the variable will disable it.`  
+   -  **Set Defaut Value**: `<Leave it Unchecked>`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image5.webp)
 
 ### LearnMoreUrl
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `LearnMoreUrl`  
-    **Description**: `Set the URL to navigate by clicking the Learn More button in the notification. LearnMoreButton should be enabled to allow the LearnMoreUrl variable.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+   -  **Name**: `LearnMoreUrl`  
+   -  **Description**: `Set the URL to navigate by clicking the Learn More button in the notification. LearnMoreButton should be enabled to allow the LearnMoreUrl variable.` 
+   -  **Mandatory**: `<Leave it - Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image6.webp)
 
 ### SnoozeButton
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Checkbox` option.
 - The `Add Checkbox Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `SnoozeButton`  
-    **Description**: `Select it to enable the Snooze button in the notification. Unselecting variable will disable it. The LearnMoreButton and the SnoozeButton cannot be enabled simultaneously.`  
-    **Set Defaut Value**: `<Leave it Unchecked>`
+   -  **Name**: `SnoozeButton`  
+   -  **Description**: `Select it to enable the Snooze button in the notification. Unselecting variable will disable it. The LearnMoreButton and the SnoozeButton cannot be enabled simultaneously.`  
+    - **Set Defaut Value**: `<Leave it Unchecked>`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image7.webp)
 
 ### DismissButtonText
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `DismissButtonText`  
-    **Description**: `Set the string in the DismissButtonText variable to customize the dismiss button's text. Leave it blank to return to the default value, Dismiss.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+   -  **Name**: `DismissButtonText`  
+   -  **Description**: `Set the string in the DismissButtonText variable to customize the dismiss button's text. Leave it blank to return to the default value, Dismiss.` 
+   -  **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image8.webp)
 
 ### TitleText
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `TitleText`  
-    **Description**: `Sets the title of the notification in the TitleText variable. It is mandatory to set this variable.` 
-    **Mandatory**: `Check it`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `TitleText`  
+    - **Description**: `Sets the title of the notification in the TitleText variable. It is mandatory to set this variable.`   
+    - **Mandatory**: `Check it`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image9.webp)
 
 ### AttributionText
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `AttributionText`  
-    **Description**: `Sets the attribution text in the AttributionText variable. It can be a company name or website, for authenticity.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `AttributionText`  
+    - **Description**: `Sets the attribution text in the AttributionText variable. It can be a company name or website, for authenticity.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image10.webp)
 
 ### BodyText1
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `BodyText1`  
-    **Description**: `BodyText1 stores the main text content of the notification body. It is a mandatory variable.` 
-    **Mandatory**: `Check it`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `BodyText1`  
+    - **Description**: `BodyText1 stores the main text content of the notification body. It is a mandatory variable.` 
+    - **Mandatory**: `Check it`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image11.webp)
 
 ### BodyText2
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `BodyText2`  
-    **Description**: `BodyText2 stores the secondary text content of the notification body.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `BodyText2`  
+    - **Description**: `BodyText2 stores the secondary text content of the notification body.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image12.webp)
 
 ### LogoImage
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `LogoImage`  
-    **Description**: `LogoImage stores the URL or local path for the logo image in the notification. Leave it blank to generate the notification with the default logo.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `LogoImage`  
+    - **Description**: `LogoImage stores the URL or local path for the logo image in the notification. Leave it blank to generate the notification with the default logo.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image13.webp)
 
 ### HeroImage
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `HeroImage`  
-    **Description**: `HeroImage stores the URL or local path for the primary image in the notification. Leave it blank to generate the notification with the default image.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `HeroImage`  
+    - **Description**: `HeroImage stores the URL or local path for the primary image in the notification. Leave it blank to generate the notification with the default image.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image14.webp)
 
 ### Deadline
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Date and Time` option.
 - The `Add Date and Time Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `Deadline`  
-    **Description**: `Sets the deadline for the notification.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+   -  **Name**: `Deadline`  
+   -  **Description**: `Sets the deadline for the notification.` 
+   -  **Mandatory**: `<Leave it Unchecked>`  
+   -  **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image15.webp)
 
 ### MaxUptimeDays
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Integer` option.
 - The `Add Integer Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `MaxUptimeDays`  
-    **Description**: `Defines the maximum uptime (in days) for the PendingRebootUptime NotificationType parameter. Default is 30 days.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `MaxUptimeDays`  
+    - **Description**: `Defines the maximum uptime (in days) for the PendingRebootUptime NotificationType parameter. Default is 30 days.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image16.webp)
 
 ### ADPasswordExpirationDays
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Integer` option.
 - The `Add Integer Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `ADPasswordExpirationDays`  
-    **Description**: `Number of days before password expiration when reminders should start. It is available for the ADPasswordExpiration NotificationType parameter. Default is 7 days.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `ADPasswordExpirationDays`  
+    - **Description**: `Number of days before password expiration when reminders should start. It is available for the ADPasswordExpiration NotificationType parameter. Default is 7 days.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image17.webp)
 
 ### Repeat
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `Repeat`  
-    **Description**: `Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `Repeat`  
+    - **Description**: `Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+   -  **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image19.webp)
 
 ### NotificationAppName
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `String/Text` option.
 - The `Add String/Text Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `NotificationAppName`  
-    **Description**: `Specifies the name of the application that will display the notification.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `Windows Powershell`
+   -  **Name**: `NotificationAppName`  
+    - **Description**: `Specifies the name of the application that will display the notification.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+  -   **Set Defaut Value**: `Windows Powershell`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image18.webp)
 
 ### MaxOccurrences
 
-- Click the Add button next to Script Variables.
+- Click the `Add` button next to Script Variables.
 - Select the `Integer` option.
 - The `Add Integer Variable` window will open.
-- In the box, fill in the following details and select Add to create the script variable.
+- In the box, fill in the following details and select `Add` to create the script variable.
 
-    **Name**: `MaxOccurrences`  
-    **Description**: `Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the Repeat parameter, except when Repeat is set to Once.` 
-    **Mandatory**: `<Leave it Unchecked>`  
-    **Set Defaut Value**: `<Leave it blank`
+    - **Name**: `MaxOccurrences`  
+    - **Description**: `Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the Repeat parameter, except when Repeat is set to Once.` 
+    - **Mandatory**: `<Leave it Unchecked>`  
+    - **Set Defaut Value**: `<Leave it blank`
 
 ![ScriptVariables](../../../static/img/docs/da3aea87-aba0-46ef-afff-9bfdfba5303d/image20.webp)
 
