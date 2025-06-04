@@ -16,9 +16,9 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Custom Table - plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
-- [SEC - Windows Patching - Script - Windows - Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
-- [CWM - Automate - Monitor - Execute Script - Windows - Check Windows 11 Compatibility](/docs/8aa2542c-c61f-43b8-a7ec-ec33558319e4)
+- [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
+- [Check Windows 11 Compatibility](/docs/318a9cfd-251b-4b47-8d18-aabc3af6b41c)
+- [Execute Script - Windows - Check Windows 11 Compatibility](/docs/8aa2542c-c61f-43b8-a7ec-ec33558319e4)
 
 ## Columns
 
@@ -36,6 +36,8 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | CPU Check            | CPU check of the machine against the compatibility check. Values can be Fail or Pass.               |
 | OS Drive Space Check | OS Drive Space check of the machine against the compatibility check. Values can be Fail or Pass.    |
 | TPM Check            | TPM version check of the machine against the compatibility check. Values can be Fail or Pass.      |
+| OS Drive Size GB            | Total Space in C:\ drive in GB.      |
+| OS Drive Free Space GB           | Free Space available in C:\ drive in GB.      |
 | Script Last Ran      | The last time the compatibility check script was run against the target device.                     |
 | Last User            | Last user logged on to the machine according to Automate.                                          |
 
