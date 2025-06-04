@@ -24,9 +24,13 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 | Column                | Description                                                                                          |
 |----------------------|------------------------------------------------------------------------------------------------------|
+| ClientId         | ClientId (Hidden).                                                                                  |
+| LocationId          | LocationId (Hidden).                                                                                  |
+| ComputerId          | Computerid (Hidden).                                                                                  |
 | Client Name          | Name of the Client.                                                                                  |
 | Location Name        | Name of the Location.                                                                                |
 | Computer Name        | Name of the Computer.                                                                                |
+| Friendly Name        | Friendly Name of the Computer (Hidden).                                                               |
 | Operating System     | Name of the Operating System.                                                                         |
 | OS Version           | Build number of the Operating System.                                                                |
 | Last Contact         | Last contact of the machine with the Automate Server.                                               |
