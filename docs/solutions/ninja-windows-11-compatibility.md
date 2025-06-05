@@ -31,6 +31,6 @@ This solution is built to fetch the Windows 11 compatible device list and store 
 - The [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208) is a default custom field, if not create it.
 - Create the [Group - cpval - Windows 11 Compatible Device](/docs/e4de7e04-7ea5-4f1a-8d44-3ff7ebcbaf4e)
 - Create the [Group - pval - Windows 11 Incompatible device](/docs/ac1500b2-aa22-48fe-b1c2-4d57f9b955de)
-- [Group - Windows 10 Device](/docs/3b41d9f6-f7f2-44f2-9ec3-3d9349e584f0)
+- Create the  [Group - Windows 10 Device](/docs/3b41d9f6-f7f2-44f2-9ec3-3d9349e584f0), if not already created.
 
 ## FAQ

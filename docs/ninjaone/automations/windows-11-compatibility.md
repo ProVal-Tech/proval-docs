@@ -33,7 +33,8 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Dependencies
 
-[Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)
+- [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)  
+- [Solution - Windows 11 Compatibility Validation](/docs/fa172fda-07d3-4a7c-bb17-5e7179db991a)
 
 ## Automation Setup/Import
 
@@ -54,13 +55,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:** `Windows 11 Compatibility`  
-**Description:** `Runs the Microsoft Hardware Readiness Script to verify the hardware compliance.`  
-**Categories:** `<Leave it blank>`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Windows 11 Compatibility`  
+- **Description:** `Runs the Microsoft Hardware Readiness Script to verify the hardware compliance.`  
+- **Categories:** `<Leave it blank>`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 
 ![Script](../../../static/img/docs/windows-11-compatibility/image-2.png)
 

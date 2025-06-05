@@ -22,9 +22,9 @@ This group contains the Windows 10 devices list to schedule the [Script - Window
 
 ## Dependencies
 
-[Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)
-
-[Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)
+- [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)  
+- [Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)  
+- [Solution - Windows 11 Compatibility Validation](/docs/fa172fda-07d3-4a7c-bb17-5e7179db991a)
 
 ## Group Creation
 
@@ -60,8 +60,8 @@ The `Add Custom Field` screen will appear.
 
 Fill in the following `Has Any Conditions` and click the `Add` button to proceed.  
 
-**Custom Field:** `cPVAL Win 11 Compatibility`  
-**Condition:** `Not Exists`  
+- **Custom Field:** `cPVAL Win 11 Compatibility`  
+- **Condition:** `Not Exists`  
 
 ![test](../../../static/img/docs/windows-10-device/image.png)
 
@@ -93,9 +93,9 @@ Click the `Save group` button to save changes.
 
 Fill in the following details and click the `Save` button to create the group.
 
-**Name:** `Windows 10 Device`  
-**Description:** `This group contains the Windows 10 devices.`  
-**Permission Type:** `Self (Private) - default`
+- **Name:** `Windows 10 Device`  
+- **Description:** `This group contains the Windows 10 devices.`  
+- **Permission Type:** `Self (Private) - default`
 
 ![Save](../../../static/img/docs/windows-10-device/image-4.png)
 

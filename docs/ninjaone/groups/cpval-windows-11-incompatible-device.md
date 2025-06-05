@@ -22,9 +22,9 @@ This group contains the Windows 11 compatible devices list where the script [Win
 
 ## Dependencies
 
-[Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)
-
-[Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)
+- [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)  
+- [Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)  
+- [Solution - Windows 11 Compatibility Validation](/docs/fa172fda-07d3-4a7c-bb17-5e7179db991a)
 
 ## Group Creation
 
@@ -60,17 +60,17 @@ The `Add Custom Field` screen will appear.
 
 Fill in the following `Has Any Conditions` and click the `Add` button to proceed.  
 
-**Custom Field:** `cPVAL Win 11 Compatibility`  
-**Condition:** `Equal`  
-**Text:** `Not Capable`  
+- **Custom Field:** `cPVAL Win 11 Compatibility`  
+- **Condition:** `Equal`  
+- **Text:** `Not Capable`  
 
 ![NotCapable](../../../static/img/docs/cpval-windows-11-incompatible-device/image.png)
 
-Click Add again in the  `Has Any Conditions`:
+Click `Add` again in the  `Has Any Conditions`:
 
-**Custom Field:** `cPVAL Win 11 Compatibility`  
-**Condition:** `Equal`  
-**Text:** `Undetermined`  
+- **Custom Field:** `cPVAL Win 11 Compatibility`  
+- **Condition:** `Equal`  
+- **Text:** `Undetermined`  
 
 ![Undetermined](../../../static/img/docs/cpval-windows-11-incompatible-device/image-1.png)
 
@@ -90,9 +90,9 @@ Click the `Save group` button to save changes.
 
 Fill in the following details and click the `Save` button to create the group.
 
-**Name:** `Windows 11 Incompatible Device`  
-**Description:** `This group contains the Windows 11 incompatible devices detected by the script Windows 11 Compatibility.`  
-**Permission Type:** `Self (Private) - default`
+- **Name:** `Windows 11 Incompatible Device`  
+- **Description:** `This group contains the Windows 11 incompatible devices detected by the script "Windows 11 Compatibility".`  
+- **Permission Type:** `Self (Private) - default`
 
 ![Group](../../../static/img/docs/cpval-windows-11-incompatible-device/image-3.png)
 

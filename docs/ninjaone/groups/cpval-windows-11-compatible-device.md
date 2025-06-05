@@ -22,9 +22,9 @@ This group contains the Windows 11 compatible devices list where the script [Win
 
 ## Dependencies
 
-[Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)
-
-[Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)
+- [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)  
+- [Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)  
+- [Solution - Windows 11 Compatibility Validation](/docs/fa172fda-07d3-4a7c-bb17-5e7179db991a)
 
 ## Group Creation
 
@@ -82,9 +82,9 @@ Click the `Save group` button to save changes.
 
 Fill in the following details and click the `Save` button to create the group.
 
-**Name:** `Windows 11 Compatible Device`  
-**Description:** `This group contains the Windows 10 lists that are compatible with the Windows 11 upgrade.It depends on the script "Windows 11 Compatibility" for fetching this data.`  
-**Permission Type:** `Self (Private) - default`
+- **Name:** `Windows 11 Compatible Device`  
+- **Description:** `This group contains the Windows 10 lists that are compatible with the Windows 11 upgrade. It depends on the script "Windows 11 Compatibility" for fetching this data.`  
+- **Permission Type:** `Self (Private) - default`
 
 ![group](../../../static/img/docs/cpval-windows-11-compatible-device/image-2.png)
 
