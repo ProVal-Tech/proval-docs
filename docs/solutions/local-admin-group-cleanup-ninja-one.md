@@ -85,15 +85,15 @@ If the [cPVAL Approved Local Admins](/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4)
 
 - Enter the value in single quotes.  
   **Example:** `'firstCat'`  
-  ![Image1](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image1.webp)  
+  ![Image1](../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image1.webp)  
 
 - For multiple approved admins, separate each entry with a comma.  
   **Example:** `'firstCat, secondCat'`  
-  ![Image2](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image2.webp)  
+  ![Image2](../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image2.webp)  
 
 - To specify domain users or groups, use the `Domain` keyword (do not enter the actual domain name). The automation will automatically substitute `Domain` with the correct domain name for domain-joined machines and ignore it for workgroup machines.  
   **Example:** `'firstCat, secondCat, Domain\Cats Group, Domain\goldenCat'`  
-  ![Image3](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image3.webp)  
+  ![Image3](../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image3.webp)  
 
 - You do not need to include `Administrator` or `Domain\Domain Admins` in this field. The automation will automatically add `Administrator` and, for domain-joined machines, `Domain\Domain Admins`.
 
