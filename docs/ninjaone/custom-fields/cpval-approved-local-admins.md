@@ -38,6 +38,9 @@ A comma-separated list of approved local admins for the client. Setting this cus
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 | cPVAL Approved Local Admins | cpvalApprovedLocalAdmins | `Organization`, `Location`, `Device` | Text | False | | Editable | Read/Write | Read/Write | A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level. | A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level. | Approved Local Admins |
 
+## Dependencies
+- [Solution - Local Admin Group Cleanup](/docs/70aec704-a188-45fe-b059-52f1cf39d468)
+
 ## Custom Field Creation
 
 ### Step 1
@@ -72,10 +75,10 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Overview` section and click the `Next` button.
 
-**Label:** `cPVAL Approved Local Admins`  
-**Name:** `cpvalApprovedLocalAdmins`  
-**Definition Scope:** `Organization`, `Location`, `Device`
-**Custom field is required:** `<Leave it unchecked>`
+- **Label:** `cPVAL Approved Local Admins`  
+- **Name:** `cpvalApprovedLocalAdmins`  
+- **Definition Scope:** `Organization`, `Location`, `Device`
+- **Custom field is required:** `<Leave it unchecked>`
 
 ![Image4](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image4.webp)
 
@@ -86,23 +89,25 @@ Clicking the `Next` button will take you to the `Permission` section.
 
 Set the following details in the `Permission` section and click the `Next` button.  
 
-**Technician:** `Editable`  
-**Automation:** `Read/Write`  
-**API:** `Read/Write`
+- **Technician:** `Editable`  
+- **Automation:** `Read/Write`  
+- **API:** `Read/Write`
 
 ![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/genericpermissions.webp)
 
-Clicking the `Next` button will take you to the details tab.  
+Clicking the `Next` button will take you to the `Details` tab.  
 ![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/details.webp)
 
 ### Step 7
 
 Fill in the following information in the `Details` section and click the `Create` button to create the `Custom Field`.
 
-**Description:** `A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level.`  
-**Tooltip Text:** `A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level.`  
-**Footer Text:** `Approved Local Admins`
+- **Description:** `A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level.`  
 
+- **Tooltip Text:** `A comma-separated list of approved local admins for the client. Setting this custom field at the location or computer level will override the value set at the organization level.`  
+
+- **Footer Text:** `Approved Local Admins`  
+ 
 ![Image5](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image5.webp)
 
 ## Completed Custom Field

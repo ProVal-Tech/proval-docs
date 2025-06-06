@@ -19,12 +19,12 @@ Cleans up and manages the local Administrators group based on approved users fro
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Install Huntress Agent - Windows`
+Search and select `Local Admin Group Cleanup`
 ![Image1](../../../static/img/docs/27432f96-a5bf-4605-b2c8-fd046487b2db/image1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
 ![Image2](../../../static/img/docs/27432f96-a5bf-4605-b2c8-fd046487b2db/image2.webp)
 
 **Run Automation:** `Yes`  
@@ -33,6 +33,7 @@ Set the required arguments and click the `Run` button to run the script.
 ## Dependencies
 
 - [cPVAL Approved Local Admins](/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4)
+- [Solution - Local Admin Group Cleanup](/docs/70aec704-a188-45fe-b059-52f1cf39d468)
 
 ## Automation Setup/Import
 
@@ -53,13 +54,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:** `Local Admin Group Cleanup`  
-**Description:** `Cleans up and manages the local Administrators group based on approved users from the custom field "cPVAL Approved Local Admins".`  
-**Categories:** `ProVal`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Local Admin Group Cleanup`  
+- **Description:** `Cleans up and manages the local Administrators group based on approved users from the custom field "cPVAL Approved Local Admins".`  
+- **Categories:** `ProVal`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 ![Image3](../../../static/img/docs/27432f96-a5bf-4605-b2c8-fd046487b2db/image3.webp)
 
 ## Step 4

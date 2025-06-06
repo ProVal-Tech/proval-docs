@@ -20,6 +20,9 @@ Select the operating system to activate the local admin group cleanup solution f
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 | cPVAL Local Admin Group Cleanup | cpvalLocalAdminGroupCleanup | `Organization`, `Location`, `Device` | Drop-down | False | | Editable | Read/Write | Read/Write | Select the operating system to activate the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to `Disable` at that level. | Select the operating system to enable the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to `Disable` at that level. | Local Admin Group Cleanup |
 
+## Dependencies
+- [Solution - Local Admin Group Cleanup](/docs/70aec704-a188-45fe-b059-52f1cf39d468)
+
 ## Custom Field Creation
 
 ### Step 1
@@ -54,10 +57,10 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Overview` section and click the `Next` button.
 
-**Label:** `cPVAL Local Admin Group Cleanup`  
-**Name:** `cpvalLocalAdminGroupCleanup`  
-**Definition Scope:** `Organization`, `Location`, `Device`  
-**Custom field is required:** `<Leave it unchecked>`
+- **Label:** `cPVAL Local Admin Group Cleanup`  
+- **Name:** `cpvalLocalAdminGroupCleanup`  
+- **Definition Scope:** `Organization`, `Location`, `Device`  
+- **Custom field is required:** `<Leave it unchecked>`
 
 ![Image1](../../../static/img/docs/d39ab865-2fad-461f-8c39-6540e0199b8e/image1.webp)
 
@@ -68,22 +71,24 @@ Clicking the `Next` button will take you to the `Permission` section.
 
 Set the following details in the `Permission` section and click the `Next` button.  
 
-**Technician:** `Editable`  
-**Automation:** `Read/Write`  
-**API:** `Read/Write`
+- **Technician:** `Editable`  
+- **Automation:** `Read/Write`  
+- **API:** `Read/Write`
 
 ![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/advancedgenericpermissions.webp)
 
-Clicking the `Next` button will take you to the details tab.  
+Clicking the `Next` button will take you to the `Details` tab.  
 ![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/advanceddetails.webp)
 
 ### Step 7
 
 Fill in the following information in the `Details` section and click the `Next` button.
 
-**Description:** `Select the operating system to activate the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to Disable at that level.`  
-**Tooltip Text:** `Select the operating system to activate the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to Disable at that level.`  
-**Footer Text:** `Local Admin Group Cleanup`
+- **Description:** `Select the operating system to activate the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to Disable at that level.` 
+
+- **Tooltip Text:** `Select the operating system to activate the local admin group cleanup solution for the client. To exclude a specific location or computer, set this field to Disable at that level.`  
+
+- **Footer Text:** `Local Admin Group Cleanup`
 
 ![Image2](../../../static/img/docs/d39ab865-2fad-461f-8c39-6540e0199b8e/image2.webp)
 

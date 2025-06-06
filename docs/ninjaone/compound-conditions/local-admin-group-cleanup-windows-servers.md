@@ -16,30 +16,31 @@ Triggers the [Local Admin Group Cleanup](/docs/27432f96-a5bf-4605-b2c8-fd046487b
 
 ## Details
 
-**Name:** `Local Admin Group Cleanup - Windows Servers`  
-**Description:** `Triggers the Local Admin Group Cleanup automation on Windows Servers (except domain controllers) where cleanup is enabled.`  
-**Recommended Agent Policy:** `Windows Server [Default]`
+- **Name:** `Local Admin Group Cleanup - Windows Servers`  
+- **Description:** `Triggers the Local Admin Group Cleanup automation on Windows Servers (except domain controllers) where cleanup is enabled.`  
+- **Recommended Agent Policy:** `Windows Server [Default]`
 
 ## Dependencies
 
 - [Local Admin Group Cleanup](/docs/27432f96-a5bf-4605-b2c8-fd046487b2db)  
 - [cPVAL Local Admin Group Cleanup](/docs/d39ab865-2fad-461f-8c39-6540e0199b8e)  
 - [cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
+- [Solution - Local Admin Group Cleanup](/docs/70aec704-a188-45fe-b059-52f1cf39d468)
 
 ## Compound Condition Creation
 
 Compound conditions can be configured within an `Agent Policy`. This document provides an example using the default `Windows Server [Default]` policy for demonstration purposes.
 
-Navigate to `Administration` `>` `Policies` `>` `Agent Policies`.  
+Navigate to `Administration` > `Policies` > `Agent Policies`.  
 ![Navigate](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/agentpolicies.webp)
 
 Search for `Windows Server` and select the default `Windows Server [Default]` policy.  
 ![DefaultWindowsServer](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/defaultwindowsservers.webp)
 
-This will navigate you to the policy's landing page, which is the `Conditions` section. Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+This will navigate you to the policy's landing page, which is the `Conditions` section. `Note` that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 ![Conditions](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/windowsserversconditionssection.webp)
 
-Navigate to the `Compound Conditions` section. Note that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+Navigate to the `Compound Conditions` section. `Note` that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 ![CompoundConditions](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/windowsserverscompoundconditionssection.webp)
 
 Click the `+ Add` button to add a compound condition.  
@@ -108,7 +109,7 @@ Navigate to `Automations` section.
 Click the `+ Add automation` button.  
 ![AddAutomation](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addautomations.webp)
 
-`Automation Library` will appear upon clicking the `+ Add Automation` button. Note that existing automation library may vary across different environments. The provided screenshot is for demonstration purposes only.  
+`Automation Library` will appear upon clicking the `+ Add Automation` button. `Note` that existing automation library may vary across different environments. The provided screenshot is for demonstration purposes only.  
 ![AutomationLibrary](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/automationlibrary.webp)
 
 Search and select the [Local Admin Group Cleanup](/docs/27432f96-a5bf-4605-b2c8-fd046487b2db) script.  
@@ -127,14 +128,12 @@ Navigate to `Settings` section.
 
 Set the `Settings` section as follows:  
 
-**Name:** `Local Admin Group Cleanup - Windows Servers`  
-**Auto Reset:**
-
-- **After:** `True` `12 hour`
-- **When no longer met:** `True`
-
-**Run Every:** `12 Hours`  
-**Trigger uptime:** `False`  
+- **Name:** `Local Admin Group Cleanup - Windows Servers`  
+- **Auto Reset:**
+    - **After:** `True` `12 hour`
+    - **When no longer met:** `True`
+- **Run Every:** `12 Hours`  
+- **Trigger uptime:** `False`  
 
 ![Image8](../../../static/img/docs/fa339801-d0b8-4ce4-afd1-2468712c76e7/image8.webp)
 
