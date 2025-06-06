@@ -154,7 +154,7 @@ SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '1c7d4098-547c-4
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
-'0' as `SearchID`,
+@searchid as `SearchID`,
 'ProVal - Production - RDP Access Check' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
@@ -191,7 +191,7 @@ SET @searchid = (SELECT sensid FROM sensorchecks WHERE `GUID` = '1c7d4098-547c-4
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
-'0' as `SearchID`,
+@searchid as `SearchID`,
 'ProVal - Production - RDP Access Check' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
