@@ -15,17 +15,14 @@ This creates ticket if the hyper-v checkpoint detected older than the provided t
 
 ## Details
 
-**Name:** `Hyper-V - Checkpoint Expiration Alert`  
-**Description:** `This creates ticket if the hyper-v checkpoint detected older than the provided threshold days.`  
-
-**Recommended Agent Policies:** It is advised to configure this compound policy within the following default agent policies:
-
-- `Windows Server - Hyper-V [Default]`
+- **Name:** `Hyper-V - Checkpoint Expiration Alert`  
+- **Description:** `This creates ticket if the hyper-v checkpoint detected older than the provided threshold days.`  
+- **Recommended Agent Policies:** It is advised to configure this compound condition within the following default agent policies:
+    - `Windows Server - Hyper-V [Default]`
 
 ## Dependencies
 
-[Script - Hyper-V - Checkpoint Expiration Alert](/docs/e2ab9b55-fbd3-4be9-801c-51b813b4bd13)
-
+[Script - Hyper-V - Checkpoint Expiration Alert](/docs/e2ab9b55-fbd3-4be9-801c-51b813b4bd13)  
 [Solution - Hyper-V Checkpoint Expiration Alert](/docs/621e8dcc-3405-47e6-b1e6-d9190971e8ee)
 
 ## Compound Condition Creation
@@ -38,11 +35,11 @@ Navigate to `Administration` `>` `Policies` `>` `Agent Policies`.
 Search for `Hyper` and select the default `Windows Server - Hyper-V [Default]` policy.  
 ![Hyper](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-10.png)
 
-This will navigate you to the policy's landing page, which is the `Conditions` section. Note that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+This will navigate you to the policy's landing page, which is the `Conditions` section. `Note` that conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 
 ![Condition](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-11.png)
 
-Navigate to the `Compound Conditions` section. Note that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
+Navigate to the `Compound Conditions` section. `Note` that existing compound conditions may vary across different policies and environments. The provided screenshot is for demonstration purposes only.  
 
 ![CompoundCondition](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-12.png)
 
@@ -54,7 +51,7 @@ Clicking the `+ Add` button opens the compound condition creation window.
 
 ## Conditions
 
-### Condition 1: Software
+### Condition 1: Script Result Condition
 
 Click the `+ Add condition` button.  
 ![AddCondition](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/addcondition.webp)
@@ -63,7 +60,7 @@ Select the `Script Result Condition` option from the list that will appear after
 
 ![ScriptResultCondition](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-13.png)
 
-`Add Script Result Condition` screen will appear. Select the `Evaluation Script` `+Add` button option:  
+`Add Script Result Condition` screen will appear. Select the `+Add` button:  
 
 ![AddScript](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-15.png)
 
@@ -86,14 +83,14 @@ It will look like below after clicking on apply:
 
 
 
-Set Values in the Add Script Result Condition:
+Set Values in the `Add Script Result Condition`:
 
-**Evaluation Script:** - `Hyper-V - Checkpoint Expiration Alert`
-**Result code:** - `not equal to` - `0`
-**Timeout:** - `10 Minutes`
-**Output:** - `Contains` and put the value `There are checkpoints older than`
-**Include script output in final Alert:** - `<Keep Unchecked>`
-**Script error notification:** - `<Keep Unchecked>`
+- **Evaluation Script:** - `Hyper-V - Checkpoint Expiration Alert`
+- **Result code:** - `not equal to` - `0`
+- **Timeout:** - `10 Minutes`
+- **Output:** - `Contains` and put the value `There are checkpoints older than` in the text box below.
+- **Include script output in final Alert:** - `<Keep Unchecked>`
+- **Script error notification:** - `<Keep Unchecked>`
 
 Click the `Apply` button to save the `Script Result Condition`.  
 
@@ -101,10 +98,10 @@ Click the `Apply` button to save the `Script Result Condition`.
 
 ## Automations
 
-Navigate to `Automations` section.  
+Skip the `Automations` section.  
 ![AutomationSections](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/automationssection.webp)
 
-Click `Apply` without any automation selection.
+This does not require any automation selection.
 
 ## Settings
 
@@ -113,32 +110,26 @@ Navigate to `Settings` section.
 
 Set the `Settings` section as follows:  
 
-**Name:** `Hyper-V - Checkpoint Expiration Alert`  
-**Auto Reset:**
-
-- **After:** `True` `4 hour`
-- **When no longer met:** `True`
-
-**Run Every:** `1 hour`  
-**Trigger uptime:** `False`  
+- **Name:** `Hyper-V - Checkpoint Expiration Alert`  
+- **Auto Reset:**
+    - **After:** `True` `4 hour`
+    - **When no longer met:** `True`
+- **Run Every:** `1 hour`  
+- **Minimum Uptime for Trigger:** `False`  
 
 ![Settings](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-20.png)
 
+Now clcik on `Notifications` 
 ## Notifications
 
 Set the following values:
 
-**Severity:** - `Major`
-
-**Priority:** - `High`
-
-**Notify Technicians:** - `Do not send notifications`
-
-**Channels:** - `Select any available channel`
-
-**ConnectWise:** - `Create a ticket` and select a `Ticket Template`
-
-**Ticketing Rule:** - `Off`
+- **Severity:** - `Major`
+- **Priority:** - `High`
+- **Notify Technicians:** - `Do not send notifications`
+- **Channels:** - `Select any available channel`
+- **ConnectWise:** - `Create a ticket` and select a `Ticket Template`
+- **Ticketing Rule:** - `Off`
 
 ## Completed Component
 

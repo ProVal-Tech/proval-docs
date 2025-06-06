@@ -22,10 +22,10 @@ Search Hyper and select `Hyper-V - Checkpoint Expiration Alert`
 ![Hyper-V](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image.png)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
-**Age Limit:** `3`  
-**Retrieve Age Limit From Custom Field:** `Leave it blank or provide the custom field name where the older than days threshold is kept to override the value stored in the parameter Age Limit and click Run`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
+- **Age Limit:** `3`  
+- **Retrieve Age Limit From Custom Field:** `Leave it blank or provide the custom field name where the older than X days threshold is kept to override the value stored in the parameter "Age Limit" and click Run`  
 
 ![Execute](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-1.png)
 
@@ -63,13 +63,13 @@ The scripting window will open.
 
 Configure the `Create Script` section as follows:
 
-**Name:** `Hyper-V - Checkpoint Expiration Alert`  
-**Description:** `This will get information about the current number of Hyper-V checkpoints on a given machine. A threshold in days can be specified for reporting, and this threshold can also be obtained from an integer custom field.`  
-**Categories:** ``  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Hyper-V - Checkpoint Expiration Alert`  
+- **Description:** `This will get information about the current number of Hyper-V checkpoints on a given machine. A threshold in days can be specified for reporting, and this threshold can also be obtained from an integer custom field.`  
+- **Categories:** `<Leave it Blank>`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 ![Create Script](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-2.png)
 
 ## Step 4
@@ -198,10 +198,9 @@ The `Add Integer Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `Age Limit`  
-**Description:** `Integer representing the age limit in days. Example: Must be newer than 90 days.`  
-**Mandatory:** `<Leave it Unchecked>`  
-**Set Default Value:** `<Leave it blank>`
+- **Name:** `Age Limit`  
+- **Description:** `Integer representing the age limit in days. Example: Must be newer than 90 days.`  
+- **Set Default Value:** `<Leave it blank>`
 
 ![Added Integer](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-6.png)
 
@@ -218,10 +217,10 @@ The `Add String/Text Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `Retrieve Age Limit From Custom Field`  
-**Description:** `Name of the custom field you want to pull the Age Limit from.`  
-**Mandatory:** `<Leave it Unchecked>`  
-**Set Default Value:** `<Leave it blank>`
+- **Name:** `Retrieve Age Limit From Custom Field`  
+- **Description:** `Name of the custom field you want to pull the Age Limit from.`  
+- **Mandatory:** `<Leave it Unchecked>`  
+- **Set Default Value:** `<Leave it blank>`
 
 ![Added String](../../../static/img/docs/hyperv-checkpoint-expiration-alert/image-7.png)
 

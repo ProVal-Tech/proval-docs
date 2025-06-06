@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Purpose
-This solution is built to get information about the current number of Hyper-V checkpoints there are on a given machine and based on it if detected older checkpoint then it creates ticket'
+This solution is built to get information about the current number of Hyper-V checkpoints on a given machine and based on it, if it detects an older checkpoint then it creates a ticket
 
 ## Associated Content
 
@@ -23,7 +23,9 @@ This solution is built to get information about the current number of Hyper-V ch
 
 ## Implementation
 
-- Follow the [Compound Condition - Hyper-V - Checkpoint Expiration Alert](/docs/4255caf3-73bb-434b-a612-fb1e76f2a10a) for the implementation instruction.
+- Create the [Automation - Hyper-V - Checkpoint Expiration Alert](/docs/e2ab9b55-fbd3-4be9-801c-51b813b4bd13) using the implementation instruction provided in the document.  
+- Create the [Compound Condition - Hyper-V - Checkpoint Expiration Alert](/docs/4255caf3-73bb-434b-a612-fb1e76f2a10a) using the implementation instruction provided in the document.
+
 
 ## FAQ
 
