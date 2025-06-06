@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-The purpose of the internal monitor is to execute the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script once per week against the patch-managed supported Windows machines for which Microsoft releases the Cumulative Updates.
+The purpose of the internal monitor is to execute the [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script once per week against the patch-managed supported Windows machines for which Microsoft releases the Cumulative Updates.
 
 By default, it is limited to running the script against 100 machines per hour.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+[Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
 
 ## Target
 
@@ -26,6 +26,6 @@ The SQL query limits the monitor set to the patch-managed supported Windows mach
 
 ## Alert Template
 
-**Name:** △ Custom - Execute Script - Get Latest Installed Cumulative Update
+**Name:** `△ Custom - Execute Script - Get Latest Installed Cumulative Update`
 
-- The alert template should run the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
+- The alert template should run the [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
