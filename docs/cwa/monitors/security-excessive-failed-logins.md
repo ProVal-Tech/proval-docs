@@ -1,8 +1,8 @@
 ---
 id: 'd9b666b4-e0b0-4736-94c1-06b430581bad'
 slug: /d9b666b4-e0b0-4736-94c1-06b430581bad
-title: 'Security - Possible Brute Force Attack'
-title_meta: 'Security - Possible Brute Force Attack'
+title: 'Security - Excessive Failed Logins'
+title_meta: 'Security - Excessive Failed Logins'
 keywords: ['security', 'event', 'logon', 'failed', 'monitor']
 description: 'This document outlines how to monitor for security event log event ID 4625, specifically checking for failed logon attempts where the occurrence count exceeds a specified threshold within the last 60 minutes. It includes details on modifying thresholds, alerting, and dependencies for effective monitoring.'
 tags: ['security']
@@ -43,12 +43,14 @@ Domain Controllers
 
 ## Alerting
 
-**Subject:** `Possible Brute Force Attack on %COMPUTERNAME%`
+**Subject:** `Excessive Failed Logins attempt on %COMPUTERNAME%`
 
-**Alert Message on Success:** `There are no potential brute force or logon failures detected in the last hour on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%`
+**Alert Message on Success:** `There are no potential logon failures detected in the last hour on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%`
 
 **Alert Message on Failure:**  
-A possible brute force attack has been detected on %CLIENTNAME%//%COMPUTERNAME% at %LOCATIONNAME%.  
+Excessive Failed Logins attempt on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME%.
+
+
 Here is a breakdown of the logon attempts that failed over the past hour.  
 `%RESULT%`  
 
@@ -94,8 +96,8 @@ https://content.provaltech.com/docs/d9b666b4-e0b0-4736-94c1-06b430581bad
 
 [Import - Possible Brute Force Attack](/docs/5099131e-bdc7-470a-8bd1-011dfc54ef4e)
 
-## Troubleshooting
 
+## Troubleshooting
 
 #### **General Troubleshooting Steps:**
 
