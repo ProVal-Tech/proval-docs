@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This Component checks if secure boot is enabled or not.
+This Component checks if secure boot is enabled or not and saves the output in UDF provided in the variable.
 
 ## Implementation
 
