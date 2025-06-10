@@ -14,6 +14,27 @@ unlisted: false
 
 This script automates the discovery and installation of Windows Updates on the local computer using the PSWindowsUpdate module. It provides advanced filtering options, logging, and supports automatic or manual reboot handling. The script is designed to simplify patch management by allowing administrators to select updates by category, severity, KB article ID, or title, and to exclude specific drivers or KB articles as needed. By default, preview patches are excluded unless the KBArticleID parameter is used. It is Datto RMM implementation of the agnostic script [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
 
+## Sample Run
+
+### Example 1
+
+Installing patches for multiple categories
+
+![image1](../../../static/img/docs/bd2357af-12a6-4d9b-a0b8-e4b5e71c979b/image1.webp)
+
+### Example 2
+
+Installing patches for multiple severites
+
+![image2](../../../static/img/docs/bd2357af-12a6-4d9b-a0b8-e4b5e71c979b/image2.webp)
+
+### Example 3
+
+Installing with KBArticleID
+
+![image3](../../../static/img/docs/bd2357af-12a6-4d9b-a0b8-e4b5e71c979b/image3.webp)
+
+
 ## Implementation
 
 Import the [attached component](../../../static/attachments/Install-WindowsUpdates.cpt) into Datto RMM.
