@@ -52,10 +52,10 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Uninstall Unapproved ScreenConnect Client`  
-**Description:**  `Removes all unapproved ScreenConnect Client instances from the system based on a provided list of approved instance names. If the ApprovedInstances parameter is set to none, all ScreenConnect Clients will be uninstalled. Double-check instance IDs to avoid removing required clients.`
+- **Name:** `Uninstall Unapproved ScreenConnect Client`  
+- **Description:**  `Removes all unapproved ScreenConnect Client instances from the system based on a provided list of approved instance names. If the ApprovedInstances parameter is set to none, all ScreenConnect Clients will be uninstalled. Double-check instance IDs to avoid removing required clients.`
 
-**Category:** `Application`
+- **Category:** `Application`
 
 ![Image3](../../../static/img/docs/8caf51b3-efe4-4feb-aed5-0f3df1562e4f/image3.webp)
 
@@ -70,10 +70,10 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 Configure the parameter as described below:  
-**Parameter Name:** `ApprovedInstances`  
-**Required Field:** `True`  
-**Parameter Type:** `Text String`  
-**Default Value:** `False`  
+- **Parameter Name:** `ApprovedInstances`  
+- **Required Field:** `True`  
+- **Parameter Type:** `Text String`  
+- **Default Value:** `False`  
 
 Click the `Save` button to add the parameter.  
 ![Image7](../../../static/img/docs/8caf51b3-efe4-4feb-aed5-0f3df1562e4f/image7.webp)
