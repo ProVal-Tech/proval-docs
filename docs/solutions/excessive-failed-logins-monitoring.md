@@ -53,7 +53,6 @@ The solution monitors the domain controller for excessive logon failures within 
 3. Create and schedule the following Task(s) (if not exist):
    - [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168)
 
-### Monitor
 
 4. Create and enable the following monitor:
    - [Excessive Failed Logins Attempt](/docs/3691bc36-640e-4d39-8a41-0513d44c7d41)
@@ -88,7 +87,7 @@ The solution monitors the domain controller for excessive logon failures within 
 
 | Error Code   | Meaning                          |    Action Steps                                                                 |
 |--------------|----------------------------------|------------------------------------------------------------------------------|
-| 0xC000006A   | Bad password                     |<ol><li>Check if the password was recently changed.</li><li> Reset the password if needed.</li><li> Investigate repeated attempts (possible brute-force).</li></ol>|
+| 0xC000006A   | Bad password                     |<ol><li>Check if the password was recently changed.</li><li> Reset the password if needed.</li><li> Investigate repeated attempts (possible brute-force or excessive logon attempts).</li></ol>|
 | 0xC000006D   | Bad username or auth info        | <ol><li>Verify username.</li><li>Check for typos or outdated credentials.</li><li>Investigate source of repeated failures.</li></ol> |
 | 0xC0000064   | Bad or misspelled username       | <ol><li>Confirm the account exists.</li><li>Investigate for enumeration attempts.</li></ol>  |
 | 0xC000005E   | No logon servers available       | <ol><li>Check domain controller availability.</li><li>Ensure network connectivity.</li><li>Restart Netlogon service.</li></ol>|
@@ -119,4 +118,4 @@ Or check manually in Services.msc.
 - `Investigate Source IP:` Use firewall logs or SIEM tools.  
 - `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.
 - `Block IP or Account:` If malicious, take immediate action.  
-- `Enable Account Lockout Policies:` To prevent brute-force attacks.
+- `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.
