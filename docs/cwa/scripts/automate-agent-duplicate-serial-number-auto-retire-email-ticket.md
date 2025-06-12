@@ -41,7 +41,7 @@ Specify the email address where you would like to receive the output of the resu
 
 ## Schedule
 
-It is suggested to run the script once per schedule.
+It is suggested to run the script once per day.
 
 ![Schedule Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_4.webp)
 
@@ -80,8 +80,9 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 
 ```PlainText
 "%ScriptName% ran on the machines and has retired the following duplicate agents:@Machines@"
+```
 
-In case there are no duplicate serial numbers:
-
+**In case there are no duplicate serial numbers, Body will be:**
+```PlainText
 No duplicate machines identified based on serial number.
 ```

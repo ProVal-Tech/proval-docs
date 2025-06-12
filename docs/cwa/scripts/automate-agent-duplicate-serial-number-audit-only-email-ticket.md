@@ -25,7 +25,7 @@ Introduced the following system properties:
 
 Run the script with the `Set_Environment` parameter to import the newly introduced properties.
 
-![Update Notice Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_1.webp)
+![Sample Run Image 1](../../../static/img/docs/44296eb1-9cdc-4833-ac40-7f390eac3a7f/image_1.webp)
 
 Remove the `Automate Agent - Duplicate Serial Number - Retire` script if it exists.
 
@@ -41,7 +41,7 @@ Specify the email address where you would like to receive the output of the resu
 
 ## Schedule
 
-It is suggested to run the script once per schedule.
+It is suggested to run the script once per day.
 
 ![Schedule Image](../../../static/img/docs/44296eb1-9cdc-4833-ac40-7f390eac3a7f/image_4.webp)
 
@@ -55,7 +55,7 @@ It is suggested to run the script once per schedule.
 | `_sysDuplicateAgent_NoDuplicate_Ticketing`     | False    | 0                                             | Set its value to '1' to receive tickets/emails when there are no duplicate agents. The default value is '0', meaning by default, the script will not generate tickets/emails if no duplicate agents are found.                                                                               |
 | `_sysDuplicateAgent_Ticketing_DefaultClientid` | False    | 1                                             | Client ID of the client under which tickets should be generated. The default value is '1', meaning tickets will be generated under the client whose client ID is '1' in the environment.                                                                                                     |
 | `_sysDuplicateAgent_Contact_Threshold`        | False    | 15                               | Define the threshold for the number of days after which duplicate agents should be retired. If this system property is not specified, duplicate agents with a last contact time of more than an hour will be automatically removed. |
-| `_sysDuplicateAgent_Retire_VM`                | False    | 1                                | Fill it as '1'  to retire duplicate virtual machines as well(duplicates on the basis of serial number). If nothing is mentioned in this Property, script will not retire duplicate virtual machines.                                                          |
+| `_sysDuplicateAgent_Retire_VM`                | False    | 1                                | Fill it as '1'  to retire duplicate virtual machines as well (duplicates on the basis of serial number). If nothing is mentioned in this Property, script will not retire duplicate virtual machines.                                                          |
 
 ## User Parameters
 
@@ -89,7 +89,10 @@ Duplicate Agents are listed below:
 
 @DuplicateMachines@
 
-In case there is no duplicate serial number:
+```
 
+**In case there is no duplicate serial number, then body will be:**
+
+```PlainText
 No duplicate machines identified based on Serial Number.
 ```
