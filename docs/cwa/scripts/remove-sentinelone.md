@@ -2,7 +2,7 @@
 id: '5ed684a9-85c9-4359-9594-c0dc8184f949'
 slug: /5ed684a9-85c9-4359-9594-c0dc8184f949
 title: 'SentinelOne Uninstall [Param]'
-title_meta: 'SentinelOne Uninstall [Param]'
+title_meta: 'SentinelOne Uninstall [Param, Reboot]'
 keywords: ['SentinelOne', 'Antivirus', 'Security', 'Uninstallation', 'S1']
 description: 'This script uninstall the Sentinel using the agnostic "Remove-SentinelOne.ps1" script.'
 tags: ['uninstallation', 'antivirus', 'security']
@@ -11,13 +11,13 @@ unlisted: false
 ---
 
 ## Summary
-This script uninstall the Sentinel using the agnostic "Remove-SentinelOne.ps1" script.
+This script uninstall the Sentinel using the agnostic "Remove-SentinelOne.ps1" script. If the script fails to remove SentinelOne, it will force a reboot when no user is logged in. And when a user is found to be logged in, it will enable the Reboot Flag.
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/remove-sentinelone/image.png)
+![Sample Run 1](../../../static/img/docs/remove-sentinelone/image3.png)
 
-![Sample Run 2](../../../static/img/docs/remove-sentinelone/image-1.png)
+![Sample Run 2](../../../static/img/docs/remove-sentinelone/image2.png)
 
 ## User Parameters
 
