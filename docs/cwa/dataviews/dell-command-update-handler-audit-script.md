@@ -1,8 +1,8 @@
 ---
 id: '1a188004-4007-40dc-8c44-d64d3c0d2bb8'
 slug: /1a188004-4007-40dc-8c44-d64d3c0d2bb8
-title: 'Dell Command Update Handler - Audit Script'
-title_meta: 'Dell Command Update Handler - Audit Script'
+title: 'Dell Command Update Handler - Audit [Script]'
+title_meta: 'Dell Command Update Handler - Audit [Script]'
 keywords: ['html', 'markdown', 'conversion', 'content', 'empty']
 description: 'The purpose of this dataview is to display the last execution result of Script - Dell Command Update - Install/Upgrade + Command Handler script for the Dell Workstations. '
 tags: ['report', 'dell']
