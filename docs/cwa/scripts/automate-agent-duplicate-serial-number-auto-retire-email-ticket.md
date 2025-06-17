@@ -1,8 +1,8 @@
 ---
 id: 'f9a0c7b8-2807-4e08-b1b7-c9342b89a493'
 slug: /f9a0c7b8-2807-4e08-b1b7-c9342b89a493
-title: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
-title_meta: 'Automate Agent - Duplicate Serial Number - Auto Retire Email,Ticket'
+title: 'Automate Agent - Duplicate Serial Number - Auto Retire [Email,Ticket]'
+title_meta: 'Automate Agent - Duplicate Serial Number - Auto Retire [Email,Ticket]'
 keywords: ['duplicate', 'agents', 'automate', 'retire', 'email', 'ticketing']
 description: 'This document provides a comprehensive guide on retiring duplicate agents in the ConnectWise Automate environment. It explains how the script identifies duplicate agents based on their serial number, name, and client affiliation, and outlines the process for keeping only the most recent agent. Additionally, it covers the configuration options for email notifications and ticket generation for retired agents.'
 tags: ['email', 'ticketing', 'windows']
@@ -19,6 +19,7 @@ This is a client script and will work only for physical machines. Virtual machin
 ## Update Notice: 27 December 2024
 
 Introduced the following system properties:
+
 - `_sysDuplicateAgent_Contact_Threshold`
 - `_sysDuplicateAgent_Retire_VM`
 
@@ -40,7 +41,7 @@ Specify the email address where you would like to receive the output of the resu
 
 ## Schedule
 
-It is suggested to run the script once per schedule.
+It is suggested to run the script once per day.
 
 ![Schedule Image](../../../static/img/docs/f9a0c7b8-2807-4e08-b1b7-c9342b89a493/image_4.webp)
 
@@ -75,8 +76,13 @@ Tickets will only be generated if the system property `_sysDuplicateAgentTicketi
 
 **Subject:** `List of Retired Duplicate Agents Based on Serial Numbers`
 
-**Body:** `"%ScriptName% ran on the machines and has retired the following duplicate agents:@Machines@"`
+**Body:**
 
-In case there are no duplicate serial numbers:
+```PlainText
+"%ScriptName% ran on the machines and has retired the following duplicate agents:@Machines@"
+```
 
-`No duplicate machines identified based on serial number.`
+**In case there are no duplicate serial numbers, Body will be:**
+```PlainText
+No duplicate machines identified based on serial number.
+```

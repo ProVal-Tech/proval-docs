@@ -44,12 +44,12 @@ Execute the SQL query from a RAWSQL monitor set to import the monitor set.
 
 ```sql
 
-SET @searchId = (SELECT MIN(sensID) FROM sensorchecks WHERE GUID = '430a4640-9c97-4344-bfe8-7a786b110729' OR `Name` = 'Server Role - AD - Infrastructure Master'); 
-SET @groupid = (SELECT MIN(groupid) FROM mastergroups WHERE GUID = '3ac455da-f1fb-11e1-b4ec-1231391d2d19' OR FullName = 'Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Domain Controllers') ; 
+SET @searchId = (SELECT MIN(sensID) FROM sensorchecks WHERE GUID = '430a4640-9c97-4344-bfe8-7a786b110729' OR `Name` = 'Server Role - AD - Infrastructure Master');
+SET @groupid = (SELECT MIN(groupid) FROM mastergroups WHERE GUID = '3ac455da-f1fb-11e1-b4ec-1231391d2d19' OR FullName = 'Service Plans.Windows Servers.Server Roles.Windows Servers Core Services.Domain Controllers') ;
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
-`groupid` as `GroupID`,
- @searchId as `SearchID`,
+@groupid as `GroupID`,
+@searchId as `SearchID`,
 'ProVal - Production - Security - Excessive Failed Logins' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
