@@ -5,7 +5,7 @@ title: 'Dell Hardware Monitoring'
 title_meta: 'Dell Hardware Monitoring'
 keywords: ['dell', 'omsa', 'open-manage-server-administrator', 'dell-omsa', 'dell-servers', 'dell-hardware', 'ticket', 'cw-manage', 'ticket-template']
 description: 'This ticket template is used to manage the CW Manage ticket generation settings for the Dell OMSA Alerts condition.'
-tags: ['dell', 'ticketing', 'cwmmanage']
+tags: ['dell', 'ticketing', 'cwmanage']
 draft: false
 unlisted: false
 ---
