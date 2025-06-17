@@ -13,7 +13,7 @@ unlisted: false
 ## Overview
 
 Installs, updates, or executes Dell Command | Configure (DCC) on Dell workstations, ensuring the latest version is present and providing command-line automation for DCC operations.
-
+ 
 **Supported commands/arguments reference:**  
 
 - [Support Commands - General Options](https://www.dell.com/support/manuals/en-us/command-configure-v4.2/dcc_cli_4.2/general-options?guid=guid-70b4993d-58d3-48ef-a8db-ae7feb6e01ae&lang=en-us)  
@@ -365,7 +365,7 @@ Paste the following powershell script in the scripting section:
     Runs the script, ensuring Dell Command | Configure is installed and up to date, then list down the supported arguments.
 
 .OUTPUTS
-    ```Example
+    `Example
         Running the Dell Command | Configure with the '--Help' command.
 
         Dell Command Configure Version 5.2.0  9 (Windows - Mar 19 2025, 07:33:34)
@@ -425,7 +425,7 @@ Paste the following powershell script in the scripting section:
             --FnLock                        --SecureBoot                    --WlanAutoSense
         Last command exit code: 0
         !Information!: Command execution was successful.
-    ```
+    `
 .EXAMPLE
     $env:argument = '--outfile="C:\Windows\Temp\CurrentConfiguration.ini"'
 
@@ -433,7 +433,7 @@ Paste the following powershell script in the scripting section:
     Running the `Get-Content -Path "C:\Windows\Temp\CurrentConfiguration.ini"` prints the file content to console.
 
 .OUTPUTS
-    ```Example
+    `Example
         [cctk]
         SysName=Latitude 3410
         SysId=09EC
@@ -559,7 +559,7 @@ Paste the following powershell script in the scripting section:
         WarningsAndErr=PromptWrnErr
         WirelessLan=Enabled
         WlanAutoSense=Disabled
-    ```
+    `
 
 .LINK
     Dell Command | Configure CLI Reference:

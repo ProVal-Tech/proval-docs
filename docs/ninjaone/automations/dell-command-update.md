@@ -567,7 +567,7 @@ Paste the following powershell script in the scripting section:
     Runs the script, ensuring Dell Command | Update is installed and up to date, then performs a scan for updates.
 
 .OUTPUTS
-    ```Example
+    `Example
         Installed Edition: 'Dell Command | Update'
         Installed version: '5.5.0'
         Latest Available Version: 5.5.0
@@ -580,7 +580,7 @@ Paste the following powershell script in the scripting section:
         KP3J7: Intel UHD Graphics Driver - Driver -- Urgent -- VI
         Last command exit code: 0
         !Information!: command execution was successful.
-    ```
+    `
 
 .EXAMPLE
     $env:argument = '/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable'
@@ -588,7 +588,7 @@ Paste the following powershell script in the scripting section:
     Runs the script, ensuring DCU is installed and up to date, then applies available driver updates.
 
 .OUTPUTS
-    ```Example
+    `Example
         Installed Edition: 'Dell Command | Update'
         Installed version: '5.5.0'
         Latest Available Version: 5.5.0
@@ -603,7 +603,7 @@ Paste the following powershell script in the scripting section:
         DF8CW: Dell Security Advisory Update - DSA-2021-088 - Application -- Urgent -- SY
         Last command exit code: 0
         !Information!: command execution was successful.
-    ```
+    `
 
 .EXAMPLE
     $env:argument = '/help'
@@ -611,7 +611,7 @@ Paste the following powershell script in the scripting section:
     Runs the script, ensuring Dell Command | Configure is installed and up to date, then list down the supported arguments.
 
 .OUTPUTS
-    ```Example
+    `Example
         Running the Dell Command | Update with the '/help' command.
 
         Dell Command | Update v5.5.0
@@ -977,7 +977,7 @@ Paste the following powershell script in the scripting section:
         The program exited with return code: 0
         Last command exit code: 0
         !Information!: command execution was successful.
-    ```
+    `
 
 .LINK
     Dell Command | Update CLI Reference:
