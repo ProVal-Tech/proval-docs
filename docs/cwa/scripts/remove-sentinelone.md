@@ -15,9 +15,9 @@ This script uninstall the Sentinel using the agnostic "Remove-SentinelOne.ps1" s
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/remove-sentinelone/image3.png)
+![Sample Run 1](../../../static/img/docs/remove-sentinelone/Image3.png)
 
-![Sample Run 2](../../../static/img/docs/remove-sentinelone/image2.png)
+![Sample Run 2](../../../static/img/docs/remove-sentinelone/Image2.png)
 
 ## User Parameters
 
