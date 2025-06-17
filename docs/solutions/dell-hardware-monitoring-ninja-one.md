@@ -5,7 +5,7 @@ title: 'Dell Hardware Monitoring'
 title_meta: 'Dell Hardware Monitoring'
 keywords: ['dell', 'omsa', 'open-manage-server-administrator', 'dell-omsa', 'dell-servers', 'dell-hardware', 'ticket', 'cw-manage', 'monitoring', 'condition']
 description: 'The solution describes how to configure NinjaOne to automatically generate a CW Manage ticket for Dell OMSA alerts.'
-tags: ['dell', 'ticketing', 'hardware', 'eventlogs', 'security']
+tags: ['dell', 'ticketing', 'eventlogs', 'security']
 draft: false
 unlisted: false
 ---

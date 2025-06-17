@@ -5,7 +5,7 @@ title: 'Dell OMSA Alerts'
 title_meta: 'Dell OMSA Alerts'
 keywords: ['dell', 'omsa', 'open-manage-server-administrator', 'dell-omsa', 'dell-servers', 'dell-hardware', 'ticket', 'cw-manage', 'monitoring', 'condition']
 description: 'The condition runs the automation once per hour and generates a ticket with the script’s results if any monitored event log is detected.'
-tags: ['dell', 'ticketing', 'hardware']
+tags: ['dell', 'ticketing', 'eventlogs', 'security']
 draft: false
 unlisted: false
 ---
