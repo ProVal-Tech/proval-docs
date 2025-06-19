@@ -55,8 +55,8 @@ Please refer to the Soji documentation for argument options.
 | EXEPath | C:\ProgramData\_automation\app\Soji\Soji.exe |
 | LogPath | C:\ProgramData\_automation\app\Soji\SojiLogs\SojiLogs.Zip |
 | DotNetRunTimeDownloadPath | C:\ProgramData\_automation\app\Prompter\dotNet8DesktopRuntime.exe |
-| x86DotNetDownloadUrl | <https://download.visualstudio.microsoft.com/download/pr/6e1f5faf-ee7d-4db0-9111-9e270a458342/4cdcd1af2d6914134308630f048fbdfc/windowsdesktop-runtime-8.0.11-win-x86.exe> |
-| x64DotNetDownloadUrl | <https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe> |
+| x86DotNetDownloadUrl | https://download.visualstudio.microsoft.com/download/pr/6e1f5faf-ee7d-4db0-9111-9e270a458342/4cdcd1af2d6914134308630f048fbdfc/windowsdesktop-runtime-8.0.11-win-x86.exe |
+| x64DotNetDownloadUrl | https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe |
 
 ## User Parameters
 
