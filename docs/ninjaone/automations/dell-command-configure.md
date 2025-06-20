@@ -21,7 +21,7 @@ Installs, updates, or executes Dell Command | Configure (DCC) on Dell workstatio
 
 **Command Line Syntax:**
 
-[Dell Command | Configure Command Syntax](https://www.dell.com/support/manuals/en-us/command-configure-v4.2/dcc_cli_4.2/command-line-option-delimiter?guid=guid-a46d5033-22cc-4369-8951-d1b30e51008f)
+- [Dell Command | Configure Command Syntax](https://www.dell.com/support/manuals/en-us/command-configure-v4.2/dcc_cli_4.2/command-line-option-delimiter?guid=guid-a46d5033-22cc-4369-8951-d1b30e51008f)
 
 ## Sample Run
 
@@ -37,9 +37,9 @@ Search and select `Dell Command | Update`
 
 **Runs the script, ensuring Dell Command | Configure is installed and up to date, then list down the supported arguments.**
 
-**Run As:** `System`  
-**Preset Parameter:**  `<Leave it blank>`  
-**Argument:**  `<Leave it blank>`
+- **Run As:** `System`  
+- **Preset Parameter:**  `<Leave it blank>`  
+- **Argument:**  `<Leave it blank>`
 
 ![Image2](../../../static/img/docs/af7ff7d0-f398-462a-a896-9ae24920f151/image2.webp)
 
@@ -113,9 +113,9 @@ Last command exit code: 0
 
 **Runs the script, ensuring Dell Command | Configure is installed and up to date, then stores the current configuration to "C:\Windows\Temp\CurrentConfiguration.ini".**
 
-**Run As:** `System`  
-**Preset Parameter:**  `<Leave it blank>`  
-**Argument:**  `--outfile="C:\Windows\Temp\CurrentConfiguration.ini"`
+- **Run As:** `System`  
+- **Preset Parameter:**  `<Leave it blank>`  
+- **Argument:**  `--outfile="C:\Windows\Temp\CurrentConfiguration.ini"`
 
 ![Image3](../../../static/img/docs/af7ff7d0-f398-462a-a896-9ae24920f151/image3.webp)
 
@@ -1073,10 +1073,10 @@ The `Add String/Text Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `Argument`  
-**Description:** `Command to execute with Dell Command | Configure. If left blank, the default value "--Help" will be used.`  
-**Mandatory:** `<Leave it Unchecked>`  
-**Set Default Value:** `<Leave it blank>`
+- **Name:** `Argument`  
+- **Description:** `Command to execute with Dell Command | Configure. If left blank, the default value "--Help" will be used.`  
+- **Mandatory:** `<Leave it Unchecked>`  
+- **Set Default Value:** `<Leave it blank>`
 
 ![Image6](../../../static/img/docs/af7ff7d0-f398-462a-a896-9ae24920f151/image6.webp)
 

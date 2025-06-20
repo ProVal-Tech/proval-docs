@@ -48,7 +48,7 @@ Create the [Dell Hardware Monitoring](/docs/c1c2c40f-3a63-4eb8-8460-9f90000337aa
 
 ### Step 4
 
-Create the[Dell OMSA Alerts](/docs/2bff6ade-58ff-4cbf-addc-067b90da09e9) condition for default `Windows Server [Default]` agent policy.  
+Create the [Dell OMSA Alerts](/docs/2bff6ade-58ff-4cbf-addc-067b90da09e9) condition for default `Windows Server [Default]` agent policy.  
 ![DefaultWindowsServer](../../static/img/docs/a5979a59-7291-42e0-8278-d7c10aa9b557/defaultwindowsservers.webp)
 
 **Note:** The details demonstrated in the document may differ depending on environment. Please verify the required information with consultant or partner before completing these fields.

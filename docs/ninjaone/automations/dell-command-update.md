@@ -31,9 +31,9 @@ Search and select `Dell Command | Update`
 
 **Runs the script, ensuring Dell Command | Update is installed and up to date, then performs a scan for updates.**
 
-**Run As:** `System`  
-**Preset Parameter:**  `<Leave it blank>`  
-**Argument:**  `<Leave it blank>`
+- **Run As:** `System`  
+- **Preset Parameter:**  `<Leave it blank>`  
+- **Argument:**  `<Leave it blank>`
 
 ![Image2](../../../static/img/docs/bb8655c6-3d55-4dfd-bdce-56137c81e21d/image2.webp)
 
@@ -60,9 +60,9 @@ Last command exit code: 0
 
 **Runs the script, ensuring DCU is installed and up to date, then applies available driver updates.**
 
-**Run As:** `System`  
-**Preset Parameter:**  `<Leave it blank>`  
-**Argument:**  `/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable`
+- **Run As:** `System`  
+- **Preset Parameter:**  `<Leave it blank>`  
+- **Argument:**  `/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable`
 
 ![Image3](../../../static/img/docs/bb8655c6-3d55-4dfd-bdce-56137c81e21d/image3.webp)
 
@@ -91,9 +91,9 @@ Last command exit code: 0
 
 **Runs the script, ensuring Dell Command | Configure is installed and up to date, then list down the supported arguments.**
 
-**Run As:** `System`  
-**Preset Parameter:**  `<Leave it blank>`  
-**Argument:**  `/help`
+- **Run As:** `System`  
+- **Preset Parameter:**  `<Leave it blank>`  
+- **Argument:**  `/help`
 
 ![Image4](../../../static/img/docs/bb8655c6-3d55-4dfd-bdce-56137c81e21d/image4.webp)
 
@@ -1390,10 +1390,10 @@ The `Add String/Text Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `Argument`  
-**Description:** `Command to execute with Dell Command | Update. If left blank, the default value "/Scan -silent" will be used.`  
-**Mandatory:** `<Leave it Unchecked>`  
-**Set Default Value:** `<Leave it blank>`
+- **Name:** `Argument`  
+- **Description:** `Command to execute with Dell Command | Update. If left blank, the default value "/Scan -silent" will be used.`  
+- **Mandatory:** `<Leave it Unchecked>`  
+- **Set Default Value:** `<Leave it blank>`
 
 ![Image7](../../../static/img/docs/bb8655c6-3d55-4dfd-bdce-56137c81e21d/image7.webp)
 

@@ -46,20 +46,20 @@ The New Ticket Template Configuration window will open.
 
 Enter the required details and click `Save`.
 
-**Name:**  
-**Board:**  
-**Status:**  
-**Priority:**  
-**Type:**  
-**Sub Type:**  
-**Item:**  
-**Source:**  
-**Team:**  
-**Severity:**  
-**Impact:**  
-**Create and close status:**  
-**Ticket Title Contents:**  
-**When condition is reset:**  
-**When condition retriggers:**  
+- **Name:**  
+- **Board:**  
+- **Status:**  
+- **Priority:**  
+- **Type:**  
+- **Sub Type:**  
+- **Item:**  
+- **Source:**  
+- **Team:**  
+- **Severity:**  
+- **Impact:**  
+- **Create and close status:**  
+- **Ticket Title Contents:**  
+- **When condition is reset:**  
+- **When condition retriggers:**  
 
 ## Completed Template

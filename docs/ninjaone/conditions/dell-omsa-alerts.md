@@ -16,14 +16,15 @@ The condition runs the [Dell Hardware Monitoring](/docs/45c545e2-a890-4ca8-acfc-
 
 ## Details
 
-**Name:** `Dell OMSA Alerts`  
-**Description:** `The condition runs the automation once per hour and generates a ticket with the script’s results if any monitored event log is detected.`  
-**Recommended Agent Policies:** `Windows Server [Default]`  
+- **Name:** `Dell OMSA Alerts`  
+- **Description:** `The condition runs the automation once per hour and generates a ticket with the script’s results if any monitored event log is detected.`  
+- **Recommended Agent Policies:** `Windows Server [Default]`  
 
 ## Dependencies
 
 - [CW Manage - Ticket Template - Dell Hardware Monitoring](/docs/c1c2c40f-3a63-4eb8-8460-9f90000337aa)
 - [Automation - Dell Hardware Monitoring](/docs/45c545e2-a890-4ca8-acfc-5b100c2e100c)
+- [Solution - Dell Hardware Monitoring](/docs/9980ae21-5d47-4b76-b5ad-0e6600e0c304)
 
 ## Condition Creation
 
@@ -60,12 +61,12 @@ The `Script Result Condition` configuration screen will appear.
 
 Enter the following details and click `Apply`.  
 
-**Condition:** `Script Result Condition`  
-**Evaluation Script:** `Dell Hardware Monitoring`  
-**Run Every:** `1` **Hours** `0` **Minutes**  
-**Timeout:** `0` **Hours** `5` **Minutes**  
-**Result Code:** `equal to` `1`  
-**With Output:** `Contains` `Occurrences`  
+- **Condition:** `Script Result Condition`  
+- **Evaluation Script:** `Dell Hardware Monitoring`  
+- **Run Every:** `1` **Hours** `0` **Minutes**  
+- **Timeout:** `0` **Hours** `5` **Minutes**  
+- **Result Code:** `equal to` `1`  
+- **With Output:** `Contains` `Occurrences`  
 
 ![Image1](../../../static/img/docs/2bff6ade-58ff-4cbf-addc-067b90da09e9/image1.webp)
 
@@ -76,15 +77,15 @@ Condition so far after clicking the `Apply` button.
 
 Set the following details:
 
-**Name:** `Dell OMSA Alerts`  
-**Severity:** `Major`  
-**Priority:** `High`  
-**Auto-reset:** `When no longer met`  
-**Channel(s):** `<Leave it blank>`  
-**Notify Technician:** `Do not send notifications`  
-**ConnectWise:** `Create a ticket`  
+- **Name:** `Dell OMSA Alerts`  
+- **Severity:** `Major`  
+- **Priority:** `High`  
+- **Auto-reset:** `When no longer met`  
+- **Channel(s):** `<Leave it blank>`  
+- **Notify Technician:** `Do not send notifications`  
+- **ConnectWise:** `Create a ticket`  
     **Ticket Template:** `Dell Hardware Monitoring`  
-**Ticketing Rule:** `Off`  
+- **Ticketing Rule:** `Off`  
 
 **Note:** The details above may differ depending on environment. Please verify the required information with consultant or partner before completing these fields.
 
