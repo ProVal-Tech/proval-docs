@@ -14,39 +14,49 @@ unlisted: false
 
 A PowerShell script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases. This script is a wrapper for executing the `New-ToastNotification.ps1` script, which is sourced from [imabdk's Toast-Notification-Script](https://github.com/imabdk/Toast-Notification-Script).
 
-A special thanks to [imabdk](https://github.com/imabdk).
+**Acknowledgement:** [imabdk](https://github.com/imabdk)
 
 ## Requirements
 
 - PowerShell version 5.0 or later.
 - Windows 10 or later.
-- Access to [ToastNotificationScript2.3.0.zip](https://raw.githubusercontent.com/imabdk/Toast-Notification-Script/refs/heads/master/ToastNotificationScript2.3.0.zip).
+- Access to [ToastNotificationScript3.0.zip](https://github.com/ProVal-Tech/Toast-Notification-Script/raw/master/ToastNotificationScript3.0.zip).
 
 ## Process
 
-This script downloads and executes the `New-ToastNotification.ps1` script from the [ToastNotificationScript2.3.0.zip](https://raw.githubusercontent.com/imabdk/Toast-Notification-Script/refs/heads/master/ToastNotificationScript2.3.0.zip), providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.
+1. **Parameter Handling**
+    - Accepts and validates user-supplied parameters to determine the notification scenario, appearance, actions, and scheduling.
 
-**Key Features:**
+2. **Environment Preparation**
+    - Bootstraps the environment using the Strapper module for consistent error handling and logging.
+    - Ensures secure TLS settings and trusted PowerShell Gallery repository configuration.
 
-1. **Toast Notification Customization**:
-    - Customize title, body text, attribution text, images (logo and hero), and buttons (e.g., "Reboot Now," "Learn More").
-    - Supports scenarios like pending reboots, password expiration, and generic notifications.
+3. **Working Directory Setup**
+    - Creates a dedicated working directory under `$env:ProgramData` for storing resources and extracted files.
+    - Sets appropriate permissions to allow all users full control of the directory.
 
-2. **Scheduling and Repetition**:
-    - Create scheduled tasks to display notifications at specified intervals (e.g., once, hourly, daily, weekly).
-    - Supports custom repetition intervals (e.g., every 30 minutes, every 2 hours).
+4. **Component Download and Extraction**
+    - Downloads the latest notification script package (ZIP) from GitHub.
+    - Extracts the package contents to the working directory for use by the notification engine.
 
-3. **Automatic Task Removal**:
-    - Automatically removes scheduled tasks after a specified number of notifications have been sent.
-    - Includes a secondary script to manage task removal.
+5. **XML Configuration Preparation**
+    - Translates PowerShell parameters into XML-compatible values.
+    - Selects and customizes the appropriate XML template based on the chosen notification scenario and user options.
+    - Handles localization, image paths, deadlines, and button/action logic.
 
-4. **Configuration Management**:
-    - Generates an XML configuration file for each notification, storing all relevant settings.
-    - Supports custom application names for notifications.
+6. **Notification Scheduling**
+    - Creates a scheduled task to display the toast notification according to the specified recurrence (`Repeat` parameter).
+    - If `MaxOccurrences` is set, creates an additional scheduled task to automatically remove the notification task after the specified number of runs.
 
-5. **Error Handling and Logging**:
-    - Logs all actions, including task creation, notification occurrences, and task removal.
-    - Handles errors gracefully and provides detailed error messages.
+7. **Custom Script Execution (Optional)**
+    - If the `RunScriptButton` is enabled, creates a scheduled task that waits for user interaction and then executes the specified PowerShell script (`ScriptPath`).
+
+8. **Notification Delivery**
+    - When triggered by the scheduled task, the notification is displayed to the user with all configured options and actions.
+
+9. **Cleanup and Logging**
+    - Logs all actions and errors for troubleshooting.
+    - Cleans up scheduled tasks and temporary files as needed, especially when `MaxOccurrences` or custom script execution
 
 ## Payload Usage
 
@@ -135,31 +145,76 @@ Creates a generic notification that repeats hourly and automatically stops after
 .\Invoke-ToastNotification.ps1 -Generic -RebootButton -TitleText 'Your Feline Overlord' -AttributionText 'TheLazyCat' -BodyText1 'I''ve been lounging around and noticed that you haven''t given me enough attention today.' -BodyText2 'Please rectify this immediately by providing ample belly rubs and treats. Also, don''t forget to fluff my favorite pillow.' -NotificationAppName 'Purrfect Alerts' -LogoImage 'lazyCat.jpg' -HeroImage 'lazyCat.jpg' -Repeat '15Minutes' -MaxOccurrences 5
 ```
 
+### Example 8
+
+Creates a cat-themed notification with two options:  
+
+- "Restart Now" (reboot button) to feed the cat immediately by restarting the computer.  
+- "Feed at 8" (custom button) to run a script that schedules a forced restart at 8:00 PM.  
+The dismiss button is hidden, so the user must choose one of the two actions.
+
+```PowerShell
+$scriptContent = @"
+`$now = Get-Date
+`$eightPMToday = Get-Date -Hour 20 -Minute 0 -Second 0
+
+if (`$now -lt `$eightPMToday) {
+    `$targetTime = `$eightPMToday
+} else {
+    `$targetTime = `$eightPMToday.AddDays(1)
+}
+
+`$secondsUntil8PM = [int](`$targetTime - `$now).TotalSeconds
+Shutdown -f -r -t `$secondsUntil8PM
+"@
+$scriptPath = 'C:\Temp\TimeToFeedCat.ps1'
+
+(mkdir 'C:\Temp') 2>&1 1>$Null
+
+$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+[System.IO.File]::WriteAllLines($scriptPath, $scriptContent, $Utf8NoBomEncoding)
+
+.\Invoke-ToastNotification.ps1 -Generic -TitleText 'Your Cat Is Hungry!' -AttributionText 'TheLazyCat' -BodyText1 'It''s time to feed your feline overlord.' -BodyText2 'Restart now to feed me immediately, or schedule a restart at 8:00 PM by clicking ''Feed at 8''.' -NotificationAppName 'Hunger Alerts' -LogoImage 'lazyCat.jpg' -HeroImage 'lazyCat.jpg' -RebootButton -RunScriptButton -RunScriptButtonText 'Feed at 8' -ScriptPath 'C:\Temp\TimeToFeedCat.ps1' -ScriptContext 'System' -ScriptStyle 'Hidden' -HideDismissButton
+```
+
+**Screenshot:**
+
+![Example 8](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example8.webp)  
+
+Windows notification when you click `Feed at 8`:  
+![Feed on 8](../../static/img/docs/426118d9-ff83-444e-9744-30a0e26cb490/Example8_1.webp)
+
 ## Parameters
 
-| Parameter                | ParameterSetName      | Required | Default     | Type     | Description                                                                 |
-|--------------------------|-----------------------|----------|-------------|----------|-----------------------------------------------------------------------------|
-| Generic                  | Generic               | True     |             | Switch   | Enables a static, generic toast notification.                               |
-| PendingRebootUptime      | PendingRebootUptime   | True     |             | Switch   | Displays a toast notification reminding users to restart their system after exceeding the specified maximum uptime. |
-| PendingRebootCheck       | PendingRebootCheck    | True     |             | Switch   | Displays a toast notification when a pending reboot is detected through the system registry or WMI. |
-| ADPasswordExpiration     | ADPasswordExpiration  | True     |             | Switch   | Sends a toast notification to users when their Active Directory password is nearing expiration. |
-| RebootButton             | Generic, PendingRebootUptime, PendingRebootCheck | False    |             | Switch   | Adds a "Reboot Now" button.                                                 |
-| LearnMoreButton          | All                   | False    |             | Switch   | Adds a "Learn More" button. Requires `LearnMoreUrl`.                        |
-| LearnMoreUrl             | All                   | False    |             | String   | URL for the "Learn More" button.                                            |
-| SnoozeButton             | All                   | False    |             | Switch   | Adds a "Snooze" button, allowing users to postpone the notification. Both `LearnMoreButton` and `SnoozeButton` cannot be used together. |
-| DismissButtonText        | All                   | False    | Dismiss     | Switch   | Customizes the text of the dismiss button. Default is "Dismiss."            |
-| TitleText                | All                   | True     |             | String   | Sets the title of the notification.                                         |
-| AttributionText          | All                   | True     |             | String   | Displays attribution text, such as a company name or website, for authenticity. |
-| BodyText1                | All                   | True     |             | String   | The main text content of the notification body.                             |
-| BodyText2                | All                   | False    |             | String   | Secondary text content displayed below `BodyText1`.                         |
-| LogoImage                | All                   | False    |             | String   | Specifies the URL or path for the logo image in the notification.           |
-| HeroImage                | All                   | False    |             | String   | Specifies the URL or path for the hero image displayed at the top of the notification. |
-| Deadline                 | All                   | False    | Current +14d | DateTime | Sets the deadline for the notification. Format: yyyy-MM-dd HH:mm:ss.        |
-| NotificationAppName      | All                   | False    | Windows PowerShell | String | Specifies the name of the application that will display the notification. |
-| MaxUptimeDays            | PendingRebootUptime   | False    | 30          | Int      | Defines the maximum uptime (in days) for the PendingRebootUptime parameter. Default is 30 days. |
-| ADPasswordExpirationDays | ADPasswordExpiration  | False    | 7           | Int      | Number of days before password expiration when reminders should start. Default is 7 days. |
-| Repeat                   | All                   | False    | Once        | String   | Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. |
-| MaxOccurrences           | All                   | False    |             | Int32    | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once`. |
+| Parameter                | ParameterSetName      | Required | Default         | Type     | Description                                                                 |
+|--------------------------|----------------------|----------|-----------------|----------|-----------------------------------------------------------------------------|
+| Generic                  | Generic              | True     |                 | Switch   | Enables a static, generic toast notification.                               |
+| PendingRebootUptime      | PendingRebootUptime  | True     |                 | Switch   | Displays a toast notification reminding users to restart their system after exceeding the specified maximum uptime. |
+| PendingRebootCheck       | PendingRebootCheck   | True     |                 | Switch   | Displays a toast notification when a pending reboot is detected through the system registry or WMI. |
+| ADPasswordExpiration     | ADPasswordExpiration | True     |                 | Switch   | Sends a toast notification to users when their Active Directory password is nearing expiration. |
+| RebootButton             |  Generic, PendingRebootUptime, PendingRebootCheck | False    |                 | Switch   | Adds a "Reboot Now" button.                                                 |
+| RunScriptButton          | All | False    |                 | Switch   | Adds a custom button to run a specified PowerShell script when clicked.     |
+| RunScriptButtonText      | All | False    | RunScript        | String   | Sets the label for the custom script execution button.                      |
+| ScriptPath               | All | False    |                 | String   | Full path to a PowerShell script (.ps1) to execute when the custom button is clicked. |
+| ScriptContext            | All | False    | User             | String   | Context in which the custom script runs: 'User' or 'System'.                |
+| ScriptStyle              | All | False    | Hidden           | String   | Script execution style: 'Interactive' or 'Hidden'.                          |
+| LearnMoreButton          | All                  | False    |                 | Switch   | Adds a "Learn More" button. Requires `LearnMoreUrl`.                        |
+| LearnMoreUrl             | All                  | False    |                 | String   | URL for the "Learn More" button.                                            |
+| SnoozeButton             | All                  | False    |                 | Switch   | Adds a "Snooze" button, allowing users to postpone the notification. Both `LearnMoreButton` and `SnoozeButton` cannot be used together. |
+| DismissButtonText        | All                  | False    | Dismiss         | String   | Customizes the text of the dismiss button. Default is "Dismiss."            |
+| HideDismissButton        | All                  | False    |                 | Switch   | When this switch is present, users will not see a dismiss or close button on the notification. |
+| TitleText                | All                  | True     |                 | String   | Sets the title of the notification.                                         |
+| AttributionText          | All                  | True     |                 | String   | Displays attribution text, such as a company name or website, for authenticity. |
+| BodyText1                | All                  | True     |                 | String   | The main text content of the notification body.                             |
+| BodyText2                | All                  | False    |                 | String   | Secondary text content displayed below `BodyText1`.                         |
+| LogoImage                | All                  | False    |                 | String   | Specifies the URL or path for the logo image in the notification.           |
+| HeroImage                | All                  | False    |                 | String   | Specifies the URL or path for the hero image displayed at the top of the notification. |
+| Deadline                 | All                  | False    | Current +14d    | DateTime | Sets the deadline for the notification. Format: yyyy-MM-dd HH:mm:ss.        |
+| NotificationAppName      | All                  | False    | Windows PowerShell | String | Specifies the name of the application that will display the notification.   |
+| MaxUptimeDays            | PendingRebootUptime  | False    | 30              | Int      | Defines the maximum uptime (in days) for the PendingRebootUptime parameter. Default is 30 days. |
+| ADPasswordExpirationDays | ADPasswordExpiration | False    | 7               | Int      | Number of days before password expiration when reminders should start. Default is 7 days. |
+| Repeat                   | All                  | False    | Once            | String   | Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays, Weekly, Monthly, AtLogon. |
+| MaxOccurrences           | All                  | False    |                 | Int32    | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` set to `Once`. |
 
 ## Output
 
