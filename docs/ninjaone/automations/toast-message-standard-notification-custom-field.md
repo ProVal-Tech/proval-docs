@@ -4,7 +4,7 @@ slug: /1ae78d4c-7ca4-4e20-af21-59cf0d366780
 title: 'Display Toast Message - Standard Notification (Custom Field)'
 title_meta: 'Display Toast Message - Standard Notification (Custom Field)'
 keywords: ['toast', 'notification', 'reminder']
-description: 'Sends a toast message/notification to the currently signed in user. Please run as the Current Logged-on User. The script defaults to using NinjaOne's logo if none is provided.'
+description: 'Sends a toast message/notification to the currently signed in user. Please run as the Current Logged-on User.'
 tags: ['windows','notifications']
 draft: false
 unlisted: false
