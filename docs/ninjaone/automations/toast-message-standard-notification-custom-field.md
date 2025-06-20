@@ -5,7 +5,7 @@ title: 'Display Toast Message - Standard Notification (Custom Field)'
 title_meta: 'Display Toast Message - Standard Notification (Custom Field)'
 keywords: ['toast', 'notification', 'reminder']
 description: 'Sends a toast message/notification to the currently signed in user. Please run as the Current Logged-on User. The script defaults to using NinjaOne's logo if none is provided.'
-tags: ['windows']
+tags: ['windows','notifications']
 draft: false
 unlisted: false
 ---
