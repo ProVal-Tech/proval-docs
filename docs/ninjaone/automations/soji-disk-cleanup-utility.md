@@ -25,11 +25,12 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image2.webp)
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image3.webp)  
-![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image4.webp)
+![Image](../../../static/img/docs/soji-disk-cleanup-utility/image-2.png)
 
 ## Dependencies
 
 - [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
+- [cPVAL Soji Result](/docs/0d8c8069-8883-4135-b322-da61e1a932e0)
 
 ## Automation Setup/Import
 
@@ -162,6 +163,32 @@ Set-Location -Path $WorkingDirectory
 
 # Write log files path
 Write-Information "Script logs location: $WorkingDirectory\Sojilogs" -InformationAction Continue
+
+# Write script results to custom field
+$ResultSummary = Import-Csv -Path $WorkingDirectory\Sojilogs\soji-summary.csv
+
+if ([Int]$ResultSummary.freedspace -gt 1073741824) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1GB,2)
+  $SpaceReturned += " GB"
+} 
+elseif ([Int]$ResultSummary.freedspace -gt 1048576) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1MB,2)
+  $SpaceReturned += " MB"
+}
+elseif ([Int]$ResultSummary.freedspace -gt 1024) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1KB,2)
+  $SpaceReturned += " KB"
+}
+elseif ([Int]$ResultSummary.freedspace -eq 0) {
+  $SpaceReturned = "0 bytes"
+}
+else {
+  [string]$SpaceReturned = $ResultSummary.freedspace
+  $SpaceReturned += " bytes"
+}
+$Date = Get-Date -Format "MM/dd/yyyy HH:mm"
+$CFOutput = "Soji last run (" + $Date + ") - Results: Removed " + $ResultSummary.CleanedFileCount + " files, returned " + $SpaceReturned + " to the device."
+Ninja-Property-Set cpvalSojiResult $CFOutput
 ```
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image8.webp)
@@ -241,8 +268,8 @@ In the box fill in the following details and select `Add` to create the script v
 
 **Variable Name:** `Csv`  
 **Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Include CSV file output.`  
-**Default Value:** `Unchecked`  
+**Description:** `(Default: true) Include CSV file output. Required for custom field output.`  
+**Default Value:** `Checked`  
 **Mandatory:** `false`  
 
 **Variable Name:** `Debug`  
@@ -274,3 +301,6 @@ Click the Save button to save the Automation.
 
 - Activity Details
     ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image14.webp)
+
+- Custom Field
+    ![Image](../../../static/img/docs/soji-disk-cleanup-utility/image-1.png)
