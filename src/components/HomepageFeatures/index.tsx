@@ -15,7 +15,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/solutions'>Documentation</a><br />
-        <span>Solutions are collections of scripts and tools that are designed to solve a specific problem or set of problems.</span>
       </>
     ),
   },
@@ -25,7 +24,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/powershell'>Documentation</a><br />
-        <span>PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.</span>
       </>
     ),
   },
@@ -35,7 +33,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/cwa'>Documentation</a><br />
-        <span>ConnectWise Automate is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
       </>
     ),
   },
@@ -45,7 +42,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/cwrmm'>Documentation</a><br />
-        <span>ConnectWise RMM is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
       </>
     ),
   },
@@ -55,7 +51,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/dattormm'>Documentation</a><br />
-        <span>Datto RMM is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
       </>
     ),
   },
@@ -65,7 +60,42 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         <a href='docs/vsa'>Documentation</a><br />
-        <span>Kaseya VSA is a remote monitoring and management (RMM) platform that provides a suite of tools to help IT service providers manage their clients' endpoints.</span>
+      </>
+    ),
+  },
+  {
+    title: 'VSA X',
+    Svg: require('@site/static/img/vsax.svg').default,
+    description: (
+      <>
+        <a href='docs/vsax'>Documentation</a><br />
+      </>
+    ),
+  },
+  {
+    title: 'Apps',
+    Svg: require('@site/static/img/apps.svg').default,
+    description: (
+      <>
+        <a href='docs/apps'>Documentation</a><br />
+      </>
+    ),
+  },
+  {
+    title: 'NinjaOne',
+    Svg: require('@site/static/img/ninjaone.svg').default,
+    description: (
+      <>
+        <a href='docs/ninjaone'>Documentation</a><br />
+      </>
+    ),
+  },
+  {
+    title: 'ImmyBot',
+    Svg: require('@site/static/img/immybot.svg').default,
+    description: (
+      <>
+        <a href='docs/immybot'>Documentation</a><br />
       </>
     ),
   },

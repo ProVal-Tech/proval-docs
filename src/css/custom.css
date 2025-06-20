@@ -32,3 +32,7 @@
 .menu__list {
   transition: all 0.3s ease-in-out !important;
 }
+
+.col--4 {
+  --ifm-col-width: calc(3 / 12 * 100%) !important;
+}
