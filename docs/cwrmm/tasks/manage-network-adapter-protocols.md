@@ -16,14 +16,14 @@ This task allows you to manage network protocols on Windows machines, including 
 Caution : Use this script with caution. Disabling IPv4 on the machine may result in a network disconnection.
 
 ## Sample Run
+![SampleRun](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image13.webp)
+![SampleRun](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image12.webp)
 
 ## Dependencies
 - [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)
 - [Manage - Network Adapter Solutions Custom Field](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)
 
 ## Task Creation
-
-### Script Details
 
 #### Step 1
 
