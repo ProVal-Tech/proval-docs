@@ -17,3 +17,5 @@ An ImmyBot software installer for the [NVIDIA App for Enterprise](https://www.nv
 **Requirements:** [NVIDIA App System Requirements](https://www.nvidia.com/en-us/software/nvidia-app/system-requirements/#referrer=nvapp)
 
 **Configuration:** [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/nvidia-app-for-enterprise.toml)
+
+**Notes:** Use the inbuilt filter script `NVIDIA Graphics Driver Filter` with the deployments.
