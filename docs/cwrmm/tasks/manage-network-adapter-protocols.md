@@ -13,24 +13,28 @@ unlisted: false
 ## Summary
 This task allows you to manage network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.
 
-Caution : Use this script with caution. Disabling IPv4 on the machine may result in a network disconnection.
+**Caution :** Use this script with caution. Disabling IPv4 on the machine may result in a network disconnection.
 
 ## Sample Run
-![SampleRun](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image13.webp)
+Serach for `Manage - Network Adapter Protocols` task and click on it
+![SampleRun](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image13.webp)  
+
+Selec `Run Now` and click `Run Task` button  
 ![SampleRun](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image12.webp)
 
 ## Dependencies
-- [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)
+- [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)  
 - [Manage - Network Adapter Solutions Custom Field](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)
+- [ Solution - Manage Network Adapter Solution](/docs/0d47f7f9-c0f9-42f1-9bc9-23b6d5cb6220)
 
 ## Task Creation
 
-#### Step 1
+### Step 1
 
 Navigate to `Automation` ➞ `Tasks`  
 ![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.webp)
 
-#### Step 2
+### Step 2
 
 Create a new `Script Editor` style task by choosing the `Script Editor` option from the `Add` dropdown menu  
 ![step2](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step2.webp)
@@ -38,15 +42,14 @@ Create a new `Script Editor` style task by choosing the `Script Editor` option f
 The `New Script` page will appear on clicking the `Script Editor` button:  
 ![step3](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step3.webp)
 
-#### Step 3
+### Step 3
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Manage - Network Adapter Protocols`    
-**Description:** It allows you to manage network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.
-
-Caution : Use this script with caution. Disabling IPv4 on the machine may result in a network disconnection.  
-**Category:** `Custom`
+- **Name:** `Manage - Network Adapter Protocols`    
+- **Description:** It allows you to manage network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.  
+    Caution : Use this script with caution. Disabling IPv4 on the machine may result in a network disconnection.  
+- **Category:** `Custom`
 
 ![step3](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image1.webp)
 
@@ -67,7 +70,7 @@ A blank function will appear:
 - Select `Custom Field`
 - Input `IsClientEnabled` as Variable name
 - Select `Enable Network Adapter Solution` custom field from the dropdown
-- Click Save
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image2.webp)
 
@@ -79,8 +82,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `ClientAction` as Variable name
-- Select `Action` custom field from the dropdown
-- Click Save
+- Select `Action` custom field from the dropdown for Client
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image3.webp)
 
@@ -92,8 +95,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `SiteAction` as Variable name
-- Select `Action` custom field from the dropdown
-- Click Save
+- Select `Action` custom field from the dropdown for Site
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image4.webp)
 
@@ -106,8 +109,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `EndpointAction` as Variable name
-- Select `Action` custom field from the dropdown
-- Click Save
+- Select `Action` custom field from the dropdown for Endpoint
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image5.webp)
 
@@ -119,8 +122,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `ClientProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown
-- Click Save
+- Select `Protocol` custom field from the dropdown for Client
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image6.webp)
 
@@ -132,8 +135,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `SiteProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown
-- Click Save
+- Select `Protocol` custom field from the dropdown for Site
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image7.webp)
 
@@ -146,8 +149,8 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `EndProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown
-- Click Save
+- Select `Protocol` custom field from the dropdown for Endpoint
+- Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image8.webp)
 
@@ -281,7 +284,7 @@ foreach ($adapter in $adapters) {
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image9.webp)
 
 
-## Row 9 Function:: Script Log
+## Row 9 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.
 
@@ -321,11 +324,12 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-This task has to be scheduled on **`[Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)`** group for auto deployment. The script can also be run manually if required.
+This task has to be scheduled on [Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55) group for auto deployment. The script can also be run manually if required.
 
-Go to Automations > Tasks.  
-Search for Threatlocker Deployment.  
-Then click on Schedule and provide the parameters detail as necessary for the script completion.  
+- Go to `Automations` > `Tasks`.  
+- Search for `Manage - Network Adapter Protocols`.  
+- Then click on `Schedule` from right side and provide the parameters detail as necessary for the script completion.  
+- Select `Targeted Resources` as device group `Devices Opted for Network Adapter Solution`.
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image11.webp)
 
 

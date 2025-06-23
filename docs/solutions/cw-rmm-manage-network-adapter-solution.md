@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-RMM version of Network Adapter Solution. It manages network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.
+This is the RMM version of Network Adapter Solution. It manages network protocols on Windows machines, including enabling, disabling, and configuring them to use DHCP.
 
 ## Associated Content
 
@@ -20,10 +20,10 @@ RMM version of Network Adapter Solution. It manages network protocols on Windows
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Manage - Network Adapter Solutions Custom Field](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)   | Custom Fields | Custom Fields required for the solution |
 | [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)    | Group | It contains the machines where `Enable Network Adapter Solution` is enabled|
-| [Task - Manage - Network Adapter Protocols](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)     | Task | It allows you to manage network protocols on Windows machines, |
+| [Task - Manage - Network Adapter Protocols](/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f)     | Task | It allows you to manage network protocols on Windows machines, |
 
 
 ## Implementation
 - Import all the custom fields from [Manage - Network Adapter Solutions Custom Field](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)  
-- Create Dynamic Group [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)  
-- create the Custom Field [Task - Manage - Network Adapter Protocols](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)  
+- Create [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)  
+- Create the [Task - Manage - Network Adapter Protocols](/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f)  
