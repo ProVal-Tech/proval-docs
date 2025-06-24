@@ -23,7 +23,8 @@ This custom field stores the Windows 11 Compatibility result gathered by script 
 
 ## Dependencies
 
-[Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)
+[Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540)  
+[Solution - Windows 11 Compatibility Validation](/docs/fa172fda-07d3-4a7c-bb17-5e7179db991a)
 
 ## Custom Field Creation
 
@@ -49,13 +50,20 @@ From the drop down select the `Text` custom field type
 
 ![Text](../../../static/img/docs/cpval-win11-compatibility/image-3.png)
 
-The fill the required field as provided:
+The fill the required field as shown in the below screenshots:
 
 ![Inbuilt](../../../static/img/docs/cpval-win11-compatibility/image.png)
 
 ![Inbuilt1](../../../static/img/docs/cpval-win11-compatibility/image-1.png)
 
-![Inbuilt2](../../../static/img/docs/cpval-win11-compatibility/image-2.png)
+Fill in the following information in the `Details` section and click the `Next` button.
+
+- **Description:** `This custom field stores the Windows 11 compatibility result gathered by the "Windows 11 Compatibility" script.`  
+- **Tooltip Text:** `This custom field stores the Windows 11 compatibility result gathered by the "Windows 11 Compatibility" script. The data it stores as (Capable, Not Capable, or Undetermined).`  
+- **Footer Text:** `Stores the Windows 11 compatibility result gathered by the "Windows 11 Compatibility" script`
+
+![Inbuilt2](../../../static/img/docs/cpval-win11-compatibility/image2.png)
+
 
 Once created it will look like this:
 

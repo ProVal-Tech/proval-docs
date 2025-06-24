@@ -40,7 +40,7 @@ Locate the `Create New Group` button on the right-hand side of the screen, click
 
 ### Step 3
 
-**Condition:** `More filters` `=>` `Custom Fields`
+**Condition:** `More filters` > `Custom Fields`
 
 Search and select the `Custom Fields` from the `More filters` button.  
 ![MoreFiltersCustomFields](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/morefilterscustomfields.webp)
@@ -60,9 +60,9 @@ The `Add Custom Field` screen will appear.
 
 Fill in the following conditions and click the `Add` button to proceed.  
 
-**Custom Field:** `cPVAL Win 11 Compatibility`  
-**Condition:** `Equals`  
-**Text:** `Capable`  
+- **Custom Field:** `cPVAL Win 11 Compatibility`  
+- **Condition:** `Equals`  
+- **Text:** `Capable`  
 
 ![customfield](../../../static/img/docs/cpval-windows-11-compatible-device/image.png)
 

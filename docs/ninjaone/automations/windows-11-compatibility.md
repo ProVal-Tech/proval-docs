@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Runs the Microsoft Hardware Readiness Script to verify the hardware compliance.
+Runs the Microsoft Hardware Readiness Script to verify the hardware compliance for Windows 11. It will then store the  compatible details in the [Custom field - cPVAL Win 11 Compatibility](/docs/7967028d-d2ff-4afe-a89e-437541c70208)
 
 ## Sample Run
 
@@ -23,8 +23,8 @@ Search and select `Windows 11 Compatibility`
 ![alt text](../../../static/img/docs/windows-11-compatibility/image.png)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>`  
 
 ![ImageRun](../../../static/img/docs/windows-11-compatibility/image-1.png)
 
