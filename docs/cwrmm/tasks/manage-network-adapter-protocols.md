@@ -159,50 +159,44 @@ A blank function will appear:
 Paste in the following PowerShell script and set the expected script execution time to 900 seconds.
 
 ```PowerShell
-if (@IsClientEnabled@  -notmatch '1|Yes|True|Y') {
-   return 'Client is not opted for Network Adapter Solution'
+if ('@IsClientEnabled@' -notmatch '1|Yes|True|Y') {
+    return 'Client is not opted for Network Adapter Solution'
 }
 
+# Resolve action
 $ResolvedAction = 'Not Set'
-if('@EndpointAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution'){
-	$ResolvedAction = '@EndpointAction@'
+if ('@EndpointAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution') {
+    $ResolvedAction = '@EndpointAction@'
 }
-elseif('@SiteAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution'){
-	$ResolvedAction = '@SiteAction@'
+elseif ('@SiteAction@' -match 'ENABLE|DISABLE|Enable DHCP|Exclude from Solution') {
+    $ResolvedAction = '@SiteAction@'
 }
-elseif('@ClientAction@' -match 'ENABLE|DISABLE|Enable DHCP'){
-	$ResolvedAction = '@ClientAction@'
+elseif ('@ClientAction@' -match 'ENABLE|DISABLE|Enable DHCP') {
+    $ResolvedAction = '@ClientAction@'
 }
 
-if ( $ResolvedAction -match 'Not Set|Exclude from Solution') {
+if ($ResolvedAction -match 'Not Set|Exclude from Solution') {
     return 'Please verify that the Action is defined properly or solution is enabled for the machine, then reattempt executing the Task'
 }
 
+# Resolve protocol
 $ResolvedProtocol = 'Not Set'
-if('@EndpointProtocol@' -match 'IPv4|IPv6|Both'){_
-	$ResolvedProtocol = '@EndpointProtocol@'
+if ('@EndpointProtocol@' -match 'IPv4|IPv6|Both') {
+    $ResolvedProtocol = '@EndpointProtocol@'
 }
-elseif('@SiteProtocol@' -match 'IPv4|IPv6|Both'){
-	$ResolvedProtocol = '@SiteProtocol@'
+elseif ('@SiteProtocol@' -match 'IPv4|IPv6|Both') {
+    $ResolvedProtocol = '@SiteProtocol@'
 }
-elseif('@ClientProtocol@' -match 'IPv4|IPv6|Both'){
-	$ResolvedProtocol = '@ClientProtocol@'
+elseif ('@ClientProtocol@' -match 'IPv4|IPv6|Both') {
+    $ResolvedProtocol = '@ClientProtocol@'
 }
 
-if ( $ResolvedProtocol -match 'Not Set') {
+if ($ResolvedProtocol -match 'Not Set') {
     return 'Please verify that the Protocol is properly defined for the machine, then reattempt executing the Task'
 }
 
-
-param(
-    [Parameter(Mandatory=$true)]
-    [ValidateSet("ENABLE", "DISABLE", "Enable DHCP")]
-    [string]]$Action = $ResolvedAction,
-    
-    [Parameter(Mandatory=$true)]
-    [ValidateSet("IPv4", "IPv6", "Both")]
-    [string]$Protocol = $ResolvedProtocol
-)
+$Action = $ResolvedAction
+$Protocol = $ResolvedProtocol
 
 function Set-NetworkAdapterIP {
     param (
@@ -231,9 +225,9 @@ function Set-NetworkAdapterIP {
             Write-Error "Failed to enable $Protocol on $InterfaceAlias."
         }
     }
-    elseif ($Action -eq "Enable/DHCP") {
+    elseif ($Action -eq "Enable DHCP") {
         Enable-NetAdapterBinding -Name $InterfaceAlias -ComponentID $ComponentID
-        
+
         if ($Protocol -eq "IPv4") {
             Set-NetIPInterface -InterfaceAlias $InterfaceAlias -Dhcp Enabled
             Remove-NetIPAddress -InterfaceAlias $InterfaceAlias -AddressFamily IPv4 -Confirm:$false -ErrorAction SilentlyContinue
