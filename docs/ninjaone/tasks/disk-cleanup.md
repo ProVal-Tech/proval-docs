@@ -70,7 +70,7 @@ The Display Toast Message - Standard Notification (Custom Field) script should b
 
 ![Image](../../../static/img/docs/disk-cleanup/image-5.png)
 
-Select Save Changes in the bottom right once everything is configured correctly
+Select `Save Changes` in the bottom right once everything is configured correctly.
 
 ### Step 5
 

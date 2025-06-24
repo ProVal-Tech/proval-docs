@@ -11,6 +11,7 @@ unlisted: false
 ---
 
 ## Summary
+This custom field stores the most recent results of the Soji automation.
 
 ## Details
 
@@ -60,13 +61,10 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Overview` section and click the `Next` button.
 
-Label: `cPVAL Soji Results`
-
-Name: `cpvalSojiResults`
-
-Definition Scope: `Device`
-
-Custom field is required: `<Leave it unchecked>`
+- Label: `cPVAL Soji Results`
+- Name: `cpvalSojiResults`
+- Definition Scope: `Device`  
+- Custom field is required: `<Leave it unchecked>`
 
 ![Image](../../../static/img/docs/cpval-soji-result/image-3.png)
 
@@ -78,9 +76,9 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Permission` section and click the `Next` button.
 
-Technician: `Read Only`
-Automation: `Read/Write`
-API: `Read/Write`
+- Technician: `Read Only`
+- Automation: `Read/Write`
+- API: `Read/Write`
 
 ![Image](../../../static/img/docs/cpval-soji-result/image-5.png)
 
@@ -92,9 +90,9 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Details` section and click the `Create` button to complete the creation of custom field.
 
-Description: `This custom field stores the most recent results of the Soji automation.`
-Tooltip text: `Result of the latest disk cleanup.`
-Footer text: `Disk cleanup result`
+- Description: `This custom field stores the most recent results of the Soji automation.`
+- Tooltip text: `Result of the latest disk cleanup.`
+- Footer text: `Disk cleanup result`
 
 ![Image](../../../static/img/docs/cpval-soji-result/image-7.png)
 

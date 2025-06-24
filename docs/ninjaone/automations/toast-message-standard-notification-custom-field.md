@@ -26,7 +26,8 @@ Search and select `Display Toast Message - Standard Notification (Custom Field)`
 Set the required arguments and click the `Run` button to run the script.
 
 - **Run As:**: `Current Logged on User`
-- **Preset Parameter:**: `<Leave it Blank>`
+- **Preset Parameter:**: `<Leave it Blank>`  
+
 Fill the Script variables as per requirement. For more information on these script variables, Go To **Parameters** Section.
 
 ![Image](../../../static/img/docs/toast-message-standard-notification-custom-field/image-1.png)
@@ -495,7 +496,9 @@ end {
    -  **Name**: `Path To Image File`  
    -  **Description**: `The path to where an existing image is located and will be used in the toast message. Alternatively, a URL can be used in the toast message. The image should be square, e.g., 128x128. The Ninja Logo will be used if none is provided.` 
    -  **Mandatory**: `Leave it Unchecked`  
-   - **Set Defaut Value**: `Leave it blank`
+   - **Set Defaut Value**: `Leave it blank`  
+
+![Image](../../../static/img/docs/toast-message-standard-notification-custom-field/image-9.png)
 
 ## Saving the Automation
 
