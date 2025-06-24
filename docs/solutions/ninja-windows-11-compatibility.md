@@ -33,4 +33,5 @@ This solution is built to fetch the Windows 11 compatible device list and store 
 - Create the [Group - pval - Windows 11 Incompatible device](/docs/ac1500b2-aa22-48fe-b1c2-4d57f9b955de)
 - Create the  [Group - Windows 10 Device](/docs/3b41d9f6-f7f2-44f2-9ec3-3d9349e584f0), if not already created.
 
-## FAQ
+Schedule the script [Script - Windows 11 Compatibility](/docs/fd6f7153-0a36-4a0b-a46d-ce403f13a540) to the group [Group - Windows 10 Device](/docs/3b41d9f6-f7f2-44f2-9ec3-3d9349e584f0) once a month as recommended, it the frequency can be changed based on partner requirement.
+Once it is scheduled and executed, the groups [Group - cpval - Windows 11 Compatible Device](/docs/e4de7e04-7ea5-4f1a-8d44-3ff7ebcbaf4e) and [Group - pval - Windows 11 Incompatible device](/docs/ac1500b2-aa22-48fe-b1c2-4d57f9b955de) will be automatically updated with the Windows 10 machines that are compatible and incompatible respectively.

@@ -45,8 +45,18 @@ After clicking the `Add` button, select the `Field` button that appears.
 The following Pop-up screen will appear:  
 ![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.webp)
 
+From the drop down select the `Text` custom field type
+
+![Text](../../../static/img/docs/cpval-win11-compatibility/image-3.png)
+
+The fill the required field as provided:
+
 ![Inbuilt](../../../static/img/docs/cpval-win11-compatibility/image.png)
 
 ![Inbuilt1](../../../static/img/docs/cpval-win11-compatibility/image-1.png)
 
 ![Inbuilt2](../../../static/img/docs/cpval-win11-compatibility/image-2.png)
+
+Once created it will look like this:
+
+![CSField](../../../static/img/docs/cpval-win11-compatibility/image-4.png)

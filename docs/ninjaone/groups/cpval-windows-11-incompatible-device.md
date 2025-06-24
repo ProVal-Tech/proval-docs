@@ -61,15 +61,15 @@ The `Add Custom Field` screen will appear.
 Fill in the following `Has Any Conditions` and click the `Add` button to proceed.  
 
 - **Custom Field:** `cPVAL Win 11 Compatibility`  
-- **Condition:** `Equal`  
+- **Condition:** `Contains`  
 - **Text:** `Not Capable`  
 
-![NotCapable](../../../static/img/docs/cpval-windows-11-incompatible-device/image.png)
+![Not Capable](../../../static/img/docs/cpval-windows-11-incompatible-device/image.png)
 
 Click `Add` again in the  `Has Any Conditions`:
 
 - **Custom Field:** `cPVAL Win 11 Compatibility`  
-- **Condition:** `Equal`  
+- **Condition:** `Contains`  
 - **Text:** `Undetermined`  
 
 ![Undetermined](../../../static/img/docs/cpval-windows-11-incompatible-device/image-1.png)
