@@ -167,11 +167,11 @@ Write-Information "Script logs location: $WorkingDirectory\Sojilogs" -Informatio
 # Write script results to custom field
 $ResultSummary = Import-Csv -Path $WorkingDirectory\Sojilogs\soji-summary.csv
 
-if ([Int]$ResultSummary.freedspace -gt 1073741824) {
+if ([Int64]$ResultSummary.freedspace -gt 1073741824) {
   [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1GB,2)
   $SpaceReturned += " GB"
 } 
-elseif ([Int]$ResultSummary.freedspace -gt 1048576) {
+elseif ([Int64]$ResultSummary.freedspace -gt 1048576) {
   [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1MB,2)
   $SpaceReturned += " MB"
 }
