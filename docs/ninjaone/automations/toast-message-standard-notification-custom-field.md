@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Sends a toast message/notification to the currently signed in user. Please run as the Current Logged-on User. The script defaults to using NinjaOne's logo if none is provided.
+Sends a toast message/notification to the currently signed in user and display a message saved in the custom field. This needs to be run as the Current Logged-on User. The script defaults to using NinjaOne's logo if none is provided.
 
 ## Sample Run
 
