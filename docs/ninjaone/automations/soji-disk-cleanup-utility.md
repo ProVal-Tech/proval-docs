@@ -25,24 +25,25 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image2.webp)
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image3.webp)  
-![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image4.webp)
+![Image](../../../static/img/docs/soji-disk-cleanup-utility/image-2.png)
 
 ## Dependencies
 
 - [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
+- [cPVAL Soji Result](/docs/0d8c8069-8883-4135-b322-da61e1a932e0)
 
 ## Automation Setup/Import
 
 Add a "New Script" to the Automation library for this automation.  
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image5.webp)
 
-**Name:** `Soji (Disk Cleanup Utility)`  
-**Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`  
-**Category:** `Maintenance`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Soji (Disk Cleanup Utility)`  
+- **Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`  
+- **Category:** `Maintenance`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image6.webp)
 
@@ -162,6 +163,32 @@ Set-Location -Path $WorkingDirectory
 
 # Write log files path
 Write-Information "Script logs location: $WorkingDirectory\Sojilogs" -InformationAction Continue
+
+# Write script results to custom field
+$ResultSummary = Import-Csv -Path $WorkingDirectory\Sojilogs\soji-summary.csv
+
+if ([Int64]$ResultSummary.freedspace -gt 1073741824) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1GB,2)
+  $SpaceReturned += " GB"
+} 
+elseif ([Int64]$ResultSummary.freedspace -gt 1048576) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1MB,2)
+  $SpaceReturned += " MB"
+}
+elseif ([Int]$ResultSummary.freedspace -gt 1024) {
+  [string]$SpaceReturned = [Math]::Round($ResultSummary.freedspace /1KB,2)
+  $SpaceReturned += " KB"
+}
+elseif ([Int]$ResultSummary.freedspace -eq 0) {
+  $SpaceReturned = "0 bytes"
+}
+else {
+  [string]$SpaceReturned = $ResultSummary.freedspace
+  $SpaceReturned += " bytes"
+}
+$Date = Get-Date -Format "MM/dd/yyyy HH:mm"
+$CFOutput = "Soji last run (" + $Date + ") - Results: Removed " + $ResultSummary.CleanedFileCount + " files, returned " + $SpaceReturned + " to the device."
+Ninja-Property-Set cpvalSojiResult $CFOutput
 ```
 
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image8.webp)
@@ -177,91 +204,91 @@ Select the appropriate variable type (referenced below)
 Fill in the values as required (referenced below)  
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image11.webp)
 
-In the box fill in the following details and select `Add` to create the script variable.
+In the box fill in the following details one by one and click `Add` button to create the script variables.
 
-**Variable Name:** `ExeName`  
-**Variable Type:** `String`  
-**Description:** `(Do Not Modify) Name of the executable from the ProVal file repository.`  
-**Default Value:** `Soji`  
-**Mandatory:** `true`  
+- **Variable Name:** `ExeName`  
+    - **Variable Type:** `String`  
+    - **Description:** `(Do Not Modify) Name of the executable from the ProVal file repository.`  
+    - **Default Value:** `Soji`  
+    - **Mandatory:** `true`  
 
-**Variable Name:** `Drives`  
-**Variable Type:** `String`  
-**Description:** `(Default: All fixed drives) A comma-separated list of volume letters to process.`  
-**Default Value:**  
-**Mandatory:** `false`  
+- **Variable Name:** `Drives`  
+    - **Variable Type:** `String`  
+    - **Description:** `(Default: All fixed drives) A comma-separated list of volume letters to process.`  
+    - **Default Value:**  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `All`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Enable all possible cleaning tools (--purge-downloads, --clean-winsxs, --run-cleanmgr, --empty-recyclebin)`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `All`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Enable all possible cleaning tools (--purge-downloads, --clean-winsxs, --run-cleanmgr, --empty-recyclebin)`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Days`  
-**Variable Type:** `Integer`  
-**Description:** `(Default: 7.0) The maximum number of days between now and the last write time of files to keep.`  
-**Default Value:**  
-**Mandatory:** `false`  
+- **Variable Name:** `Days`  
+    - **Variable Type:** `Integer`  
+    - **Description:** `(Default: 7.0) The maximum number of days between now and the last write time of files to keep.`  
+    - **Default Value:**  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Purge Downloads`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Purge all user Downloads folders.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Purge Downloads`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Purge all user Downloads folders.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Clean WinSxS`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Enable WinSxS component cleanup.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Clean WinSxS`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Enable WinSxS component cleanup.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Run cleanmgr`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Enable legacy cleanmgr execution.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Run cleanmgr`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Enable legacy cleanmgr execution.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Empty Recyclebin`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Empty the recycle bin. May still occur when running the legacy cleanmgr.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Empty Recyclebin`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Empty the recycle bin. May still occur when running the legacy cleanmgr.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `WinSxS Seconds`  
-**Variable Type:** `Integer`  
-**Description:** `(Default: 300) The number of seconds to wait for WinSxS processing when --clean-winsxs or --all is passed.`  
-**Default Value:**  
-**Mandatory:** `false`  
+- **Variable Name:** `WinSxS Seconds`  
+    - **Variable Type:** `Integer`  
+    - **Description:** `(Default: 300) The number of seconds to wait for WinSxS processing when --clean-winsxs or --all is passed.`  
+    - **Default Value:**  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Json`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Include JSON file output.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Json`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Include JSON file output.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Csv`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Include CSV file output.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Csv`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: true) Include CSV file output. Required for custom field output.`  
+    - **Default Value:** `Checked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `Debug`  
-**Variable Type:** `CheckBox`  
-**Description:** `(Default: false) Set this flag to enable debug output in the console.`  
-**Default Value:** `Unchecked`  
-**Mandatory:** `false`  
+- **Variable Name:** `Debug`  
+    - **Variable Type:** `CheckBox`  
+    - **Description:** `(Default: false) Set this flag to enable debug output in the console.`  
+    - **Default Value:** `Unchecked`  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `System Paths`  
-**Variable Type:** `String`  
-**Description:** `(Default: null) An optional comma separated list of additional paths to scan for files to clean with regex file filtering.`  
-**Default Value:**  
-**Mandatory:** `false`  
+- **Variable Name:** `System Paths`  
+    - **Variable Type:** `String`  
+    - **Description:** `(Default: null) An optional comma separated list of additional paths to scan for files to clean with regex file filtering.`  
+    - **Default Value:**  
+    - **Mandatory:** `false`  
 
-**Variable Name:** `User Paths`  
-**Variable Type:** `String`  
-**Description:** `(Default: null) An optional comma separated list of additional user paths to scan with regex file filtering.`  
-**Default Value:**  
-**Mandatory:** `false`
+- **Variable Name:** `User Paths`  
+    - **Variable Type:** `String`  
+    - **Description:** `(Default: null) An optional comma separated list of additional user paths to scan with regex file filtering.`  
+    - **Default Value:**  
+    - **Mandatory:** `false`
 
 Click the Save button to save the Automation.  
 ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image12.webp)
@@ -274,3 +301,6 @@ Click the Save button to save the Automation.
 
 - Activity Details
     ![Image](../../../static/img/docs/ef289b50-fe18-4114-93d0-680437f7c480/image14.webp)
+
+- Custom Field
+    ![Image](../../../static/img/docs/soji-disk-cleanup-utility/image-1.png)
