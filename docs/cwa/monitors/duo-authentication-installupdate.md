@@ -29,6 +29,11 @@ This monitor detects online Windows agents where outdated DUO Authentication for
 
 ![Computer Exclusion EDFs](../../../static/img/docs/4e62e216-7a5f-4b35-8ac8-eca9a38bd440/image_4.webp)
 
+### Script EDFs:
+
+![Computer-Level EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image8.webp)  
+
+
 ## Dependencies
 
 [Script - DUO Install/Upgrade - Latest Version](/docs/99a31695-f399-4982-989b-5fbc3aada8c6)
