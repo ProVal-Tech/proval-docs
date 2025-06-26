@@ -82,7 +82,7 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `ClientAction` as Variable name
-- Select `Action` custom field from the dropdown for Client
+- Select `Action(ENUM - CLIENT)` custom field from the dropdown for Client
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image3.webp)
@@ -95,7 +95,7 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `SiteAction` as Variable name
-- Select `Action` custom field from the dropdown for Site
+- Select `Action(ENUM - SITE)` custom field from the dropdown for Site
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image4.webp)
@@ -109,7 +109,7 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `EndpointAction` as Variable name
-- Select `Action` custom field from the dropdown for Endpoint
+- Select `Action(ENUM - ENDPOINT)` custom field from the dropdown for Endpoint
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image5.webp)
@@ -122,7 +122,7 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `ClientProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown for Client
+- Select `Protocol(ENUM - CLIENT)` custom field from the dropdown for Client
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image6.webp)
@@ -135,7 +135,7 @@ A blank function will appear:
 
 - Select `Custom Field`
 - Input `SiteProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown for Site
+- Select `Protocol(ENUM - SITE)` custom field from the dropdown for Site
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image7.webp)
@@ -148,8 +148,8 @@ A blank function will appear:
 ![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_5.webp)
 
 - Select `Custom Field`
-- Input `EndProtocol` as Variable name
-- Select `Protocol` custom field from the dropdown for Endpoint
+- Input `EndpointProtocol` as Variable name
+- Select `Protocol(ENUM - ENDPOINT)` custom field from the dropdown for Endpoint
 - Click `Save`
 
 ![Image](../../../static/img/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f/image8.webp)
