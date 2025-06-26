@@ -91,11 +91,13 @@ Paste in the following PowerShell script and set the expected time of script exe
 
 .EXAMPLE
     Run the script to check Windows 11 compatibility:
+    ```powershell
     .\CWRMMImp-CheckWindows11Compatibility.ps1
+    ```
 
 .OUTPUTS
-    - If compatible: ``Compatible``
-    - If not compatible: `CPU=(Exception from HRESULT: 0x80284008)|TPM=UNDETERMINED|OSDriveSize=PASS|Secureboot=PASS|Memory=PASS|Result=UNDETERMINED`
+    - If compatible: `CPU=PASS|TPM=PASS|OSDriveSize=PASS|FreeSpace=FreeSpace :: PASS|Secureboot=PASS|Memory=PASS|Result=Capable`
+    - If not compatible: `CPU=FAIL|TPM=UNDETERMINED|OSDriveSize=FAIL|FreeSpace=FreeSpace: Storage is null :: FAIL|Secureboot=PASS|Memory=FAIL|Result=Undertermined`
     - If unsupported OS: `Unsupported OS`
 #>
 $ProgressPreference = 'SilentlyContinue'
@@ -115,17 +117,43 @@ if ( [System.Environment]::OSVersion.Version.Major -eq 10 ) {
     }
     $ReadinessCheck = & $ScriptPath
     $Obj = $ReadinessCheck[1] | ConvertFrom-Json -ErrorAction SilentlyContinue
-    if ( $Obj.returnResult -eq 'CAPABLE' ) {
-        return 'Compatible'
-    } else {
-        $logging = ($obj.logging -split ';(?![^{}]*\})').trim()
-        $Storage = (($logging -match '^Storage:') -split '\. ')[-1].Trim()
-        $Memory = (($logging -match '^Memory:') -split '\. ')[-1].Trim()
-        $TPM = (($logging -match 'TPM:') -split '\. ')[-1].Trim()
-        $Processor = (($logging -match 'Processor:') -split '\. ')[-1].Trim()
-        $secureBoot = (($logging -match 'SecureBoot:') -split '\. ')[-1].Trim()
-        return "CPU=$Processor|TPM=$TPM|OSDriveSize=$Storage|Secureboot=$secureBoot|Memory=$Memory|Result=$($Obj.returnResult)"
+   
+    # Storage - Free Diskspace
+    [int]$MinOSDiskSizeGB = 64
+    try {
+        $osDrive = Get-CimInstance -Class Win32_OperatingSystem | Select-Object -Property SystemDrive
+        $osDriveSize = Get-CimInstance -Class Win32_LogicalDisk -filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "SizeGB"; Expression = { $_.Size / 1GB -as [int] } }
+        $freeSpaceGB = (Get-CimInstance -Class Win32_LogicalDisk -Filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "FreeSpaceGB"; Expression = { $_.FreeSpace / 1GB -as [int] } }).FreeSpaceGB
+        
+        if ($null -eq $freeSpaceGB) {
+            $Obj.logging += "FreeSpace: Storage is null :: FAIL; "
+        }
+        elseif ($freeSpaceGB -lt $MinOSDiskSizeGB) {
+            $Obj.logging += "FreeSpace: Less than 64GB :: FAIL; "
+        }
+        else {
+            $Obj.logging += "FreeSpace: FreeSpace=$($freeSpaceGB)GB :: PASS; "
+        }
     }
+    catch {
+        $Obj.logging += "FreeSpace: OSDiskSize=Undetermined :: UNDETERMINED; "
+    }
+
+    $logging = ($obj.logging -split ';(?![^{}]*\})').trim()
+    $Storage = (($logging -match '^Storage:') -split '\. ')[-1].Trim()
+    $FreeSpace = (($logging -match '^FreeSpace:') -split '\. ')[-1].Trim()
+    $Memory = (($logging -match '^Memory:') -split '\. ')[-1].Trim()
+    $TPM = (($logging -match 'TPM:') -split '\. ')[-1].Trim()
+    $Processor = (($logging -match 'Processor:') -split '\. ')[-1].Trim()
+    $secureBoot = (($logging -match 'SecureBoot:') -split '\. ')[-1].Trim()
+        
+    if ($Obj.logging -like "*null*") {
+      $Obj.returnResult = "Undetermined"
+    } elseif ($Obj.logging -like "*fail*") {
+      $Obj.returnResult = "Not Capable"
+    }
+    
+    return "CPU=$Processor|TPM=$TPM|OSDriveSize=$Storage|FreeSpace=$FreeSpace|Secureboot=$secureBoot|Memory=$Memory|Result=$($Obj.returnResult)"
 } else {
     return 'Unsupported OS'
 }
@@ -136,80 +164,71 @@ if ( [System.Environment]::OSVersion.Version.Major -eq 10 ) {
 Mark the `Continue on Failure` checkbox for the function.  
 ![Continue on Failure Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_12.webp)  
 
-### Row 2 Logic: If/Then/Else
+### Row 2 Function: Set Custom Field
 
-Add a new `If/Then/Else` logic.  
-![If/Then/Else Logic Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_13.webp)  
-![If/Then/Else Logic Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_14.webp)  
-
-#### Row 2a Condition: Output Contains
-
-Type `Compatible` in the `Input Value or Variable` field and press `Enter`.  
-![Output Contains Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_15.webp)  
-
-#### Row 2b Function: Set Custom Field
-
-Add a new row by clicking the `Add Row` button inside the `If` section.  
-![Set Custom Field Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_16.webp)  
-
+Add a new row with the `Add Row` button.  
 A blank function will appear.  
 ![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp)  
 
 Search and select `Set Custom Field` Function.  
-![Set Custom Field Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
-![Set Custom Field Image 3](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp)  
+![Set Custom Field Image 7](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
+![Set Custom Field Image 8](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp)  
 
-Search and select `Windows 11 Compatible` in the `Search Custom Field` field, set `Yes` in the `Value` field, and click the `Save` button.  
-![Set Custom Field Image 4](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_19.webp)  
-![Set Custom Field Image 5](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_20.webp)  
+Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
+![Set Custom Field Image 9](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_34.webp)  
+![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_35.webp)
 
-#### Row 2c Logic: If/Then/Else
 
-Add a new `If/Then/Else` logic inside the `Else` section.  
-![Else Logic Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_21.webp)  
+### Row 3 Function: Script Log
 
-An empty logic will appear.  
-![Empty Logic Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_22.webp)  
-
-##### Row 2c(i) Condition: Output Contains
-
-Type `An error occurred and the script` in the `Input Value or Variable` field and press `Enter`.  
-![Output Contains Error Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_23.webp)  
-
-Add another condition by clicking the `Add Condition` button.  
-![Add Condition Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_24.webp)  
-![Add Condition Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_25.webp)  
-
-Change the logical operator to `Or` from `And`.  
-![Change Logical Operator Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_26.webp)  
-
-In the new condition, type `Unsupported OS` in the `Input Value or Variable` field and press `Enter`.  
-![Unsupported OS Condition Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_27.webp)  
-
-##### Row 2c(ii) Function: Script Exit
-
-Click the `Add Row` button inside the `If` section after the above conditions.  
-![Script Exit Add Row Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_16.webp)  
-
+Add a new row with the `Add Row` button.  
 A blank function will appear.  
-![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_28.webp)  
+![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp) 
 
-Search and select the `Script Exit` function in the newly appeared row.  
-![Script Exit Selection Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_29.webp)  
-![Script Exit Selection Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_30.webp)  
+Search and select `Script Log` Function. 
 
-The following function will pop up on the screen:  
-![Script Exit Popup Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_31.webp)  
+![Image](../../../static/img/docs/windows11-compatibility-validation/image.png)
 
-Paste the following lines in the `Error Message` field and click the `Save` button.  
+Paste the following lines in the `Error Message` field and click the `Save` button.
 
 ```plaintext
 %Output%
 ```
 
-![Script Exit Error Message Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_32.webp)  
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-1.png)
 
-##### Row 2c(iii) Function: Set Custom Field
+
+### Row 4 Logic: If/Then/Else
+
+Add a new `If/Then/Else` logic.  
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-2.png)
+
+An empty logic will appear.  
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-3.png)
+
+#### Row 4a Condition: Output Contains
+
+Type `Result=CAPABLE` in the `Input Value or Variable` field and press `Enter`.
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-4.png)
+
+##### Row 4a(i) Function: Set Custom Field
+
+Add a new row by clicking the `Add Row` button inside the `If` section.
+
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-5.png)
+
+A blank function will appear.  
+![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp) 
+
+Search and select `Set Custom Field` Function.  
+![Set Custom Field Image 7](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
+![Set Custom Field Image 8](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp) 
+
+Search and select `Windows 11 Compatible` in the `Search Custom Field` field, set `Yes` in the `Value` field, and click the `Save` button.
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-6.png)
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-7.png)
+
+##### Row 4a(ii) Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button inside the inner `Else` section.  
 ![Set Custom Field Image 6](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_33.webp)  
@@ -223,23 +242,7 @@ Search and select `Set Custom Field` Function.
 
 Search and select `Windows 11 Compatible` in the `Search Custom Field` field and set `No` in the `Value` field and click the `Save` button.
 ![Set Custom Field Image 9](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_47.webp)  
-![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_48.webp)  
-
-##### Row 2c(iv) Function: Set Custom Field
-
-Add a new row by clicking the `Add Row` button inside the inner `Else` section after the above function.  
-![Add New Row](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_46.webp)
-
-A blank function will appear.  
-![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp)  
-
-Search and select `Set Custom Field` Function.  
-![Set Custom Field Image 7](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
-![Set Custom Field Image 8](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp)  
-
-Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
-![Set Custom Field Image 9](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_34.webp)  
-![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_35.webp)
+![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_48.webp)   
 
 ---
 
@@ -248,8 +251,8 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Completed Task
 
-![Completed Task Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_37.webp)  
-![Completed Task Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_38.webp)  
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-8.png)
+![Image](../../../static/img/docs/windows11-compatibility-validation/image-9.png)
 
 ## Deployment
 
