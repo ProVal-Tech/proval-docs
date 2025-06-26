@@ -52,4 +52,3 @@ Set the required arguments and click the `Run` button to run the script.
 ## Output
 
 - Activity Details  
-- Custom Field
