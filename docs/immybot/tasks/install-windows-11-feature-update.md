@@ -22,6 +22,12 @@ An ImmyBot implementation of the agnostic script [Install-Windows11FeatureUpdate
 - Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
 - Even with the `-NoReboot` parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.
 
+## Requirements
+
+- Windows 10 or Windows 11
+- 64GB+ free space on the system drive
+- [Windows 11 Compatible Machine](https://www.microsoft.com/en-us/windows/windows-11-specifications)
+
 ## Dependencies
 
 [Install-Windows11FeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0)
