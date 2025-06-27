@@ -18,7 +18,7 @@ The monitor will exclude agents with either Location-Level EDF `Exclude Threatlo
 ## Dependencies
 
 - [Script: Threatlocker Agent Deployment](/docs/6ee04ebc-5867-4310-a8ed-1f800f031774)
-- [Solution: Threatlocker Deployment](/docs/2b68cbb1-1406-4a4b-9173-e91f1b0c7f88)
+- [Solution: Threatlocker Agent Deployment](/docs/2b68cbb1-1406-4a4b-9173-e91f1b0c7f88)
 
 ## Target
 
