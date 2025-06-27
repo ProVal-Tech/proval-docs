@@ -14,6 +14,8 @@ unlisted: false
 
 An ImmyBot implementation of the agnostic script [Install-Windows11FeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0). The task automates the installation of the latest Windows 11 Feature Update on Windows 11 and Windows 10 machines. It performs comprehensive pre-checks, maintenance, and validation to ensure a smooth upgrade process.
 
+**Note:** `This task creates and schedules a Windows Scheduled Task to run the agnostic script, then exits immediately. As a result, the task will not display a compliant or success status. However, the upgrade process continues to run in the background on the machine. The progress can be monitored by reviewing the log files located at "C:\ProgramData\_Automation\Script\Install-Windows11FeatureUpdate".`
+
 ## Cautions
 
 - The machine may restart up to 7 times to complete the upgrade process.
