@@ -20,7 +20,6 @@ An ImmyBot implementation of the agnostic script [Install-Windows11FeatureUpdate
 
 - The machine may restart up to 7 times to complete the upgrade process.
 - Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
-- Even with the `-NoReboot` parameter, the computer may still restart due to firmware, BIOS, driver updates, or the feature update itself.
 
 ## Requirements
 
