@@ -124,17 +124,17 @@ if ( [System.Environment]::OSVersion.Version.Major -eq 10 ) {
         $freeSpaceGB = (Get-CimInstance -Class Win32_LogicalDisk -Filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "FreeSpaceGB"; Expression = { $_.FreeSpace / 1GB -as [int] } }).FreeSpaceGB
         
         if ($null -eq $freeSpaceGB) {
-            $Obj.logging += "FreeSpace: Storage is null :: FAIL; "
+            $Obj.logging += "FreeSpace: . Storage is null :: FAIL; "
         }
         elseif ($freeSpaceGB -lt $MinOSDiskSizeGB) {
-            $Obj.logging += "FreeSpace: Less than 64GB :: FAIL; "
+            $Obj.logging += "FreeSpace: . Less than 64GB :: FAIL; "
         }
         else {
-            $Obj.logging += "FreeSpace: FreeSpace=$($freeSpaceGB)GB :: PASS; "
+            $Obj.logging += "FreeSpace: . $($freeSpaceGB)GB :: PASS; "
         }
     }
     catch {
-        $Obj.logging += "FreeSpace: OSDiskSize=Undetermined :: UNDETERMINED; "
+        $Obj.logging += "FreeSpace: . OSDiskSize=Undetermined :: UNDETERMINED; "
     }
 
     $logging = ($obj.logging -split ';(?![^{}]*\})').trim()
