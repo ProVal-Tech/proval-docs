@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Runs the [Manage Time Zone](/docs/080cb5cd-270d-42ee-aa69-05b88adcb35c) automation one per day on Windows Servers where the [cPVAL Manage Time Zone](/docs/7db8dfdf-6825-4349-94e1-f86348fdec03) custom field is enabled.
+Runs the [Manage Time Zone](/docs/080cb5cd-270d-42ee-aa69-05b88adcb35c) automation once per day on Windows Servers where the [cPVAL Manage Time Zone](/docs/7db8dfdf-6825-4349-94e1-f86348fdec03) custom field is enabled.
 
 ## Details
 
