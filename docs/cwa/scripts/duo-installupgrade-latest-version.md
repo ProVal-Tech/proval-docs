@@ -1,8 +1,8 @@
 ---
 id: '99a31695-f399-4982-989b-5fbc3aada8c6'
 slug: /99a31695-f399-4982-989b-5fbc3aada8c6
-title: 'DUO InstallUpgrade - Latest Version'
-title_meta: 'DUO InstallUpgrade - Latest Version'
+title: 'DUO Install & Upgrade - Latest Version'
+title_meta: 'DUO Install & Upgrade - Latest Version'
 keywords: ['duo', 'authentication', 'windows', 'installer', 'update']
 description: 'This document provides a comprehensive guide on installing or updating DUO Authentication for Windows. The script checks for the latest version, verifies the installer’s hash, and outlines the necessary configurations and parameters for successful deployment.'
 tags: ['update', 'windows']
@@ -51,6 +51,11 @@ It downloads the latest installer from [https://dl.duosecurity.com/duo-win-login
 
    Exclusions EDFs are used with the ExtraDataGet function and will be imported with the script.
 
+3. **Script EDFs:**  
+   `Duo Authentication Version`:  
+   This EDF was introduced as script/monitor is not installing or updating DUO on machines where the application version is not detected in the Software tab. This EDF is filled by the Script itself.
+   ![Computer-Level EDF](../../../static/img/docs/99a31695-f399-4982-989b-5fbc3aada8c6/image8.webp)  
+
 ## EDFs
 
 | Name           | Required | Description                                                                                                                                                                                                                                                  |
@@ -63,8 +68,9 @@ It downloads the latest installer from [https://dl.duosecurity.com/duo-win-login
 | IKEY           | True     | This is a unique identifier for your integration with Duo’s service. It’s used to link the authentication requests from your application to the correct Duo account. You can find the IKEY in your Duo Admin Panel under the application’s properties page.   |
 | SKEY           | True     | This is a sensitive piece of information, akin to a password, used in conjunction with the IKEY. The SKEY is used to sign communication between your application and Duo’s service securely. It’s crucial to keep this key confidential to prevent unauthorized access. |
 | HKEY           | True     | The Host Key or API Hostname, which is the endpoint in Duo’s service that your application communicates with. This hostname is also found in the Duo Admin Panel and is necessary for setting up the integration.                                            |
+| Duo Authentication Version          | False    |  This EDF was introduced as script/monitor is not installing or updating DUO on machines where the application version is not detected in the Software tab. It holds the Duo version installed on the machine. This EDF is filled by the Script itself. |
 
-Note: These arguments are passed during the installation process to set up the desired configuration for how Duo Authentication will operate on the Windows system. It’s important to note that the parameter names are case-sensitive.  
+`Note:` These arguments are passed during the installation process to set up the desired configuration for how Duo Authentication will operate on the Windows system. It’s important to note that the parameter names are case-sensitive.  
 Here’s an example of how you might use these arguments in a command to install Duo Authentication for Windows Logon:  
 ```bash
 duo-win-login-latest.exe /S /V"/qn IKEY=\"Your_IKEY\" SKEY=\"Your_SKEY\" HOST=\"Your_HOST\" AUTOPUSH=\"#1\" FAILOPEN=\"#1\" SMARTCARD=\"#1\" RDPONLY=\"#0\""
