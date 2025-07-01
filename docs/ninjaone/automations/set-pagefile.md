@@ -12,7 +12,12 @@ unlisted: false
 
 ## Overview
 
-Gets or sets the Windows time zone using a NinjaOne custom field or runtime variables, with automatic detection and IANA-to-Windows mapping if 'Default' is specified.
+Configures the Windows page file settings on a specified drive, supporting both automatic and custom configurations. It supports two modes of operation:
+
+1. **AutomaticManagedPagefile:** Enables Windows-managed page file settings, allowing the operating system to automatically determine the size and location of the page file.
+2. **Custom:** Disables automatic management and applies user-defined initial and maximum page file sizes on a specified drive.
+
+**NOTE:** This script requires administrative privileges and PowerShell 5 or higher.
 
 ## Sample Run
 
@@ -26,7 +31,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 - **Run As:** `System`  
 - **Preset Parameter:** `<Leave it Blank>`  
-- **Mode*:** `Custom` or `AutomaticManagedPagefile`  
+- **Mode:** `Custom` or `AutomaticManagedPagefile`  
 - **DriveLetter:** `<Drive Letter to Set PageFile for, default value is C:>`  
 - **InitialSizeMB:** `<Initial size of the page file in megabytes (MB). Used only in 'Custom' mode.>`  
 - **MaximumSizeMB:**  `<Maximum size of the page file in megabytes (MB). Used only in 'Custom' mode.>`  
