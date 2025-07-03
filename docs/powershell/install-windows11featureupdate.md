@@ -35,6 +35,18 @@ The script supports both Windows 10 and Windows 11:
 - Added a check to limit driver update attempts to a maximum of three times or three reboots.
 - Included a check to reset the `Windows11LatestFeatureUpdate` table if the `$workingDirectory` does not exist. This indicates that the script might have previously executed but failed, and if someone is trying to re-run it, they just need to remove the `$workingDirectory`.
 
+## Change Log (2025-07-03)
+
+- `Dell Command | Update Universal for Windows` will now only be updated if it is already installed; otherwise, `Dell Command | Update` will be used.
+- The uninstall process for `Dell Command | Update` has been removed. Winget will now update the application in place if an older version is detected, without uninstalling it first.
+- Firmware and BIOS update logic for Dell machines has been removed.
+- Removed unnecessary `return` statement from the Dell drivers installation section.
+- Driver updates will no longer be attempted after every reboot if they have already been completed.
+- Initial verification, registry updates, and Windows Update reset will not be repeated after every reboot if they have already been performed.
+- The `Reset-WUComponents` command is now executed in a background job, and the script will wait up to 10 minutes for its completion before proceeding.
+- The `Restart-Computer -Force` command has been replaced with `Shutdown -f -r -t 10`.
+- The sleep time after issuing a restart command has been reduced to 10 seconds.
+
 ## Process
 
 The script operates in multiple phases to accomplish the upgrade:
