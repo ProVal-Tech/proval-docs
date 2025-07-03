@@ -3,14 +3,15 @@ id: 'fde98082-d74b-44ca-87e6-a0773fc3981c'
 slug: /fde98082-d74b-44ca-87e6-a0773fc3981c
 title: 'System Restore Point - Auto Purge after x thresholds'
 title_meta: 'System Restore Point - Auto Purge after x thresholds'
-keywords: ['datto','restore','syste,']
+keywords: ['datto','restore','system,']
 description: 'This PowerShell script automates the creation of a system restore point by first enabling System Restore on all valid internal NTFS drives and ensuring the required services are running. It then creates a restore point labeled Automated Restore Point.The script intelligently filters out invalid or external drives and optionally performs cleanup of older shadow copies based on a configurable threshold, helping to manage disk space efficiently.It supports environment-based input for drive letters and threshold values, making it highly adaptable for deployment via RMM platforms. This solution is ideal for pre-update safety, rollback readiness, and compliance-driven environments.'
 tags: ['backup', 'windows', 'cleanup', 'cleanup']
 draft: false
 unlisted: false
 ---
 
-## Overview
+## Overview  
+
 
 This PowerShell script automates the creation of a system restore point by first enabling System Restore on all valid internal NTFS drives and ensuring the required services are running. It then creates a restore point labeled Automated Restore Point.
 
