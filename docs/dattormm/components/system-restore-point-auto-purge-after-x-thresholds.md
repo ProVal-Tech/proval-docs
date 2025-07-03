@@ -23,7 +23,7 @@ It supports environment-based input for drive letters and threshold values, maki
 1. Import the `component` [System Restore Point - Auto Purge after x thresholds](../../../static/attachments/System%20Restore%20Point%20-%20Auto%20Purge%20after%20x%20thresholds.cpt)  
 
 2. After downloading the attached file > Click on the`Import` button > Select the component to add to the Datto RMM interface. 
-![Image 1](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot1.webp)
+![Image 1](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/s1.webp)
 
 ## Sample Run
 
