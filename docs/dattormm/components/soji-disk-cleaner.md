@@ -44,7 +44,6 @@ Soji is an intelligent yet simple disk cleanup utility that uses both native Sys
 3. Any target files must have a last write time greater than 21.5 days.  
 ![Image4](../../../static/img/docs/3e424fbe-30e1-444b-a7c3-cc29793226a6/image4.webp)
 
-
 ## Variables
 
 | Name            | Example                                                                 | Type    | Default Value        | Description                                                                                                                        |
