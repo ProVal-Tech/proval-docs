@@ -39,28 +39,32 @@ To execute the `component` over a specific machine, follow these steps:
 
 ![Image 3](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot3.webp)  
 
-4. After selecting the `componenet`, you'll be able to see 3 fields : `DriveLetters`, `Threshold`, and `Force` checkbox.  
+4. After selecting the `componenet`, you will see 3 variables : `DriveLetters`, `Threshold`, and `Force` checkbox.  
 
 ![Image 4](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot4.webp)  
 
-### Example 1  
+### DriveLetters  
 
-- `DriveLetters`: This field is used to specify the drive letters that you want to enable system restore pont upon. You can enter multiple drive letters separated by a comma. For example, `C,D,E`. If you do not provide any specific driver letter, the `component` by default will create a restore over the `System Drive`.  
+-  This variable is used to specify the drive letters that you want to enable system restore point upon. You can enter multiple drive letters separated by a comma.  
+- For example, `C,D,E`. 
+- If you do not provide any specific driver letter, the `component` by default will create a restore over the `System Drive`.  
 
 ![Image 5](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot5.webp)  
 
 
-### Example 2  
+### Threshold  
 
-- `Threshold`: Limits how many restore points are kept. Older ones are deleted if the limit is exceeded.  
+- Limits how many restore points are kept. Older ones are deleted if the limit is exceeded.  
+- For example, `2` as `Threshold` will create a new restore point and will only keep 2 latest restore points. Rest all will get deleted. 
 
 ![Image 6](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot6.webp)  
-Note:- Now `2` as `Threshold` is given, so componenet will create a new restore point and will only keep latest 2 restore points rest all will get deleted. 
 
 
-### Example 3  
+### Force  
 
-- `Force`: This is a checkbox that you can use to force the creation of a restore point. This can be helpful when you do not want to delete any older restore point then by enabling `Force` option, the `component` will create a new restore point without purging any older ones.  
+- This is a checkbox that you can use to force the creation of a restore point. 
+- This can be helpful when you do not want to delete any older restore point then.
+- By enabling `Force` option, the `component` will create a new restore point without purging any older ones.  
 
 ![Image 7](../../../static/img/docs/fde98082-d74b-44ca-87e6-a0773fc3981c/snapshot7.webp)  
 
