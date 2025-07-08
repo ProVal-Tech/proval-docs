@@ -28,13 +28,29 @@ Create a filter that includes manufacturer as `HP` OR `Lenovo` to get a better v
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.   
-![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)
+![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
 
+## Sample Run
+
+To execute the `component` over a specific machine, follow these steps:  
+
+1. Select the machine you want to run the `component` on from the Datto RMM.  
+
+2. Click on the `Quick Job` button.  
+![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
+
+3. Search the component within the search bar `Get-Device Part Info` and click on `Select`  
+ ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)  
+
+ 4. After selecting the `component`, you will notice a below pop-up to define a UDF.  
+
+ 5. Input the `ID of the UDF` to populate the data upon, and then click on `Run`.
+![Image 4](../../../static/img/docs/a4ad64c9-7b85-4d7d-9be1-e11b842f3ef5/Snapshot1.webp)
 ## Datto Variables
 
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
-| usrUDF | String | 0 | Enter the UDF ID to store the Secure Boot Check Status |
+| usrUDF | String |  | Enter the UDF ID to store the Output |
 
 ## Output
 
