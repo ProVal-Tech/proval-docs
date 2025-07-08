@@ -18,9 +18,10 @@ unlisted: false
 
 # Implementation  
 
-1. Import the `component` [Component name with the link to download it.]
+1. Download the component `<Component name with the link to download it.>` from the attachments.
 
-2. After downloading the attached file > Click on the `Import` button > Select the component to add to the Datto RMM interface  
+2. After downloading the attached file, click on the `Import` button
+3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
 
 ## Sample Run
@@ -32,10 +33,10 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Select the respective `component` from the list of available `components`  
+3. Search the component `<Name of the Component>` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
- `Note:- now input the variables of the script as an example run`
+4. `<Screenshot of Sample run with variable details and example>`
 
 
 # Datto Variables
@@ -44,3 +45,5 @@ To execute the `component` over a specific machine, follow these steps:
 | ------------- | ---- | ------- | ----------- |
 
 # Output
+
+# Attachments
