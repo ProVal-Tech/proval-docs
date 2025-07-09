@@ -6,7 +6,7 @@ title_meta: 'Excessive Logon Attempts'
 keywords: ['excessive-logon-attempts', 'excessive', 'logon', 'bruteforce', 'brute']
 description: 'The condition runs the automation once per hour and generates a ticket with the script’s results if any monitored event log is detected.'
 tags: ['security', 'accounts', 'eventlogs']
-draft: true
+draft: false
 unlisted: false
 ---
 
