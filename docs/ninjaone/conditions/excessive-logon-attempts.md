@@ -21,7 +21,7 @@ The condition runs the [Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-
 - **Recommended Agent Policies:**  `Windows Server [Default]`
 
 ## Dependencies
-
+- [Solution - Excessive Logon Attempts](/docs/e99ec890-ae05-4ad5-bdbc-6b0599be67e9)
 - [Automation - Excessive Logon Attempts](/docs/3b52c821-6c63-4da6-87e8-8bd5c96e78de)
 - [CW Manage - Ticket Template - Excessive Logon Attempts](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea)
 
@@ -88,7 +88,7 @@ Set the following details:
 
 **Note:** The details above may differ depending on environment. Please verify the required information with consultant or partner before completing these fields.
 
-![Image3](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image3.webp)
+![Image2](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image2.webp)
 
 ## Saving the Condition
 
@@ -97,7 +97,7 @@ Click the `Add` button to save the condition.
 
 ## Completed Condition
 
-![Image5](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image5.webp)
+![Image3](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image3.webp)
 
 ## Saving Agent Policy
 
