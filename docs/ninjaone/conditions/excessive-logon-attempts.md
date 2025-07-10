@@ -61,11 +61,11 @@ The `Script Result Condition` configuration screen will appear.
 Enter the following details and click `Apply`.  
 
 - **Condition:** `Script Result Condition`  
-- **Evaluation Script:** `Run Excessive Logon Attempts`  
+- **Evaluation Script:** Search and select `Excessive Logon Attempts`. Provide the desired value for `Threshold` and `Minutes` parameters.  
 - **Run Every:** `0` **Hours** `1` **Minutes**  
 - **Timeout:** `0` **Hours** `5` **Minutes**  
 - **Result Code:** `equal to` `1`  
-- **With Output:** `Contains` `Logon Type Reference Table:`  
+- **With Output:** `Contains`  `Logon Type Reference Table:`  
 
 ![Image1](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image1.webp)
 
@@ -87,8 +87,6 @@ Set the following details:
 - **Ticketing Rule:** `Off`  
 
 **Note:** The details above may differ depending on environment. Please verify the required information with consultant or partner before completing these fields.
-
-![Image2](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image2.webp)
 
 ## Saving the Condition
 
