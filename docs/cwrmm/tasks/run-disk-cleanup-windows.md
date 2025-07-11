@@ -12,10 +12,12 @@ unlisted: false
 
 ## Summary
 
-This is a CW RMM task that will run the Cleanmgr included in Windows. It will set all optional Cleanmgr targets to enabled, except for the Downloads folder. The script will output the disk space free from before and after the tool was run.
+This is a CW RMM task that will run the Cleanmgr included in Windows. It will set all optional Cleanmgr targets to enabled, except for the Downloads folder. The script will output both before and after available disk space when the tool was run.
 
 ## Sample Run
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image.png)
+
+Select `Run Now` and click `Run Task`
 
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-1.png)
 
@@ -40,9 +42,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Run Disk Cleanup - Windows`  
-**Description:** `Runs the Cleanmgr included in Windows. It will set all optional Cleanmgr targets to enabled except for the Downloads folder.`  
-**Category:** `Maintenance`
+- **Name:** `Run Disk Cleanup - Windows`  
+- **Description:** `Runs the Cleanmgr included in Windows. It will set all optional Cleanmgr targets to enabled except for the Downloads folder.`  
+- **Category:** `Maintenance`
 
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-2.png)
 
@@ -55,10 +57,11 @@ A blank function will appear:
 ![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
 
 #### Row 1 Function: `PowerShell script`
+Search and select the `PowerShell script` function.
 
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-3.png)
 
-Paste in the following PowerShell script and set the expected time of script execution to 300 seconds.
+Paste in the following PowerShell script and set the `Expected Time of Script Execution` to 300 seconds.
 ```PowerShell
 $osDrive = Get-CimInstance -Class Win32_OperatingSystem | Select-Object -Property SystemDrive
 $osDriveSize = Get-CimInstance -Class Win32_LogicalDisk -filter "DeviceID='$($osDrive.SystemDrive)'" | Select-Object @{Name = "SizeGB"; Expression = { $_.Size / 1GB -as [float] } }
@@ -86,7 +89,8 @@ if(Test-Path -Path "$env:SystemRoot\System32\cleanmgr.exe") {
 
 Save and move to the next row
 
-#### Row 1 Function: `Script Log`
+#### Row 2 Function: `Script Log`
+Search and select the `Script Log` function.
 
 ![Image](../../../static/img/docs/run-disk-cleanup-windows/image-5.png)
 
