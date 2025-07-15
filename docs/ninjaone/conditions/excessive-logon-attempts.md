@@ -106,3 +106,6 @@ Click the `Save` button located at the top-right corner of the screen to save th
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
 ![MFA](../../../static/img/docs/a5979a59-7291-42e0-8278-d7c10aa9b557/mfa.webp)
+
+## Ticket Output Example
+![Image5](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image5.webp)
