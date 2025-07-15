@@ -14,6 +14,8 @@ unlisted: false
 
 Detects and summarizes failed logon attempts (Event ID 4625) from the Windows Security event log within a specified time window.
 
+It simply checks the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. This is default setting and can be changed using the `Threshold` and `Minutes` parameters.
+
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
@@ -42,8 +44,8 @@ Set the required arguments and click the `Run` button to run the script.
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Threshold | 10 | | True |  | Integer | Enter the threshold for the minimum number of failed logon events required to trigger the summary output. Default is 10. |
-| Minutes | 60 | | True |  | Integer | Enter the number of minutes in the past to search for failed logon events. Default is 60. |
+| Threshold | 10 | | True | 10 | Integer | Enter the threshold for the minimum number of failed logon events required to trigger the summary output. Default is 10. |
+| Minutes | 60 | | True | 60 | Integer | Enter the number of minutes in the past to search for failed logon events. Default is 60. |
 
 ## Automation Setup/Import
 

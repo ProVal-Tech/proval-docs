@@ -11,7 +11,9 @@ unlisted: false
 ---
 
 ## Purpose
-This solution is built to Detect and summarize failed logon attempts (Event ID 4625) from the Windows Security event log within a specified time window on a given machine and based on it, if it meets the criteria then it creates a ticket
+This solution is built to detect and summarize failed logon attempts (Event ID 4625) from the Windows Security event log within a specified time window on a given machine and based on it, if it meets the criteria then it creates a ticket. 
+
+It simply checks the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. This is default setting and can be changed using the `Threshold` and `Minutes` parameters.
 
 ## Associated Content
 
