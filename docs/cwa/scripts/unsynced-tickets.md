@@ -75,7 +75,7 @@ Schedule:
 **Body:**
 
 ```PlainText
-There were <Count of Unsynced Tickets> tickets that failed to sync to the PSA in the past <Threshold>.5 hours. Their details have been outlined below:
+There were <Count of Unsynced Tickets> tickets that failed to sync to the PSA in the past <Threshold> hour(s). Their details have been outlined below:
 
 Client: <Client Name> (<ClientID>)
 Computer: <Computer Name> (<ComputerID>)
