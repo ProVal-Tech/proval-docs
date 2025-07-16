@@ -20,9 +20,11 @@ This script installs the ThreatLocker agent on Windows and Mac operating systems
 
 - Enter the Threatlocker Authorization key in System Properties under system property `ThreatLockerAuthKey`
 - Enter the Organization name in Client EDF `Threatlocker_Organization_Name`
+- Enter the Threatlocker Group ID in Client EDF `ThreatlockerGroupID`
 
 ![Image1](../../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image1.webp)  
 ![Image2](../../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image2.webp)
+![Image8](../../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image8.webp)
 
 **For MAC Deployment:**
 
@@ -68,6 +70,7 @@ Set 'Set_Environment' to 1 to create system properties needed for the script.
 |----------------------------|------|----------------|------------|----------------------------|-------------------------------------------------------------------------------------------------------------|
 | Threatlocker_Organization_Name | Text | Proval         | Threatlocker| True (For Windows Deployment) | Organization Name to be used for Threatlocker deployment. If deploying to an existing organization, that name must match the organization's name in the ThreatLocker portal. |
 | ThreatLockerMacGroupKey    | Text | 1SA2345AASSSS234| Threatlocker| True (For MAC Deployment)  | Stores the Threatlocker Group key for Macintosh Machines. Follow the instructions to get the group key for the desired machine. [MAC Agent Group Key Location \| ThreatLocker Help Center (kb.help)](https://threatlocker.kb.help/mac-agent-group-key-location/) |
+ThreatlockerGroupID   | Text | wecccdcd5xsaasd| Threatlocker | True (For AMD Processors)  | Stores the ThreatLocker GroupID. This EDF was introduced to address deployment issues on AMD processors, as ThreatLocker does not get installed on them unless the GroupID is explicitly defined. |
 
 ## Location-Level EDF
 
