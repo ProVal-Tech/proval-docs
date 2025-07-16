@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Purpose
-This solution is built to detect and summarize failed logon attempts (Event ID 4625) from the Windows Security event log within a specified time window on a given machine and based on it, if it meets the criteria then it creates a ticket. 
+The solution monitors the domain controller for excessive logon failures within one hour, indicating a possible brute force attack. It summarizes failed logon attempts (Event ID 4625) from the Windows Security event log within a specified time window on a given machine and based on it, if it meets the criteria then it creates a ticket. 
 
 It simply checks the computer for security event log event ID 4625 where the count of occurrences is greater than 10 in the last 60 minutes. This is default setting and can be changed using the `Threshold` and `Minutes` parameters.
 
@@ -31,9 +31,7 @@ It simply checks the computer for security event log event ID 4625 where the cou
 - Create the [CW Manage - Ticket Template - Excessive Logon Attempts](/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea) using the implementation instruction provided in the document.
 
 
-## FAQ
 
-- The solution monitors the domain controller for excessive logon failures within one hour, indicating a possible brute force attack.
 
 ## Troubleshooting
 
