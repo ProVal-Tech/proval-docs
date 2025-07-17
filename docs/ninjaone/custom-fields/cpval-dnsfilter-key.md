@@ -94,4 +94,3 @@ Fill in the following information in the `Details` section and click the `Submit
 ## Completed Custom Field
 
 ![CustomField](../../../static/img/docs/38b311e5-eaf3-4d76-a61b-e097b0262ad0/c5.webp)
-

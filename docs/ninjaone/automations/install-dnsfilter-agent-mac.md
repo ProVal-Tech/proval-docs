@@ -27,13 +27,13 @@ Set the required arguments and click the `Run` button to run the script.
 ![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
-- [cPVAL DNSFilter Key]
+- [cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>)
   
 ## Parameters
 
 | Name | Required | Accepted Values | Default | Type | Description |
 | ---- | -------- | --------------- | ------- | ---- | ----------- |
-| cPVAL DNSFilter Key | True | | | Text | This key is required for deploying the DNSFilter Agent [cPVAL DNSFilter Key] |
+| cPVAL DNSFilter Key | True | | | Text | This key is required for deploying the DNSFilter Agent [cPVAL DNSFilter Key](</docs/ea940639-c217-4f4d-ac31-b5767417691a>) |
 
 ## Automation Setup/Import
 
