@@ -22,14 +22,4 @@ unlisted: false
 
 ## Compound Condition Creation 
 
-## Conditions
-
-## Automations
-
-## Settings
-
-## Notifications
-
-## Completed Component
-
-## Saving Agent Policy
+[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/_template.toml)
