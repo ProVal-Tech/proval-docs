@@ -20,7 +20,7 @@ This script automates the installation, repair, uninstallation, or reinstallatio
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Install Huntress Agent - Windows`
-![Image1](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image1_1.webp)
+![Image1](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image1_1.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
 **Run As:** `System`  
@@ -29,7 +29,7 @@ Set the required arguments and click the `Run` button to run the script.
 **Huntress Org Key:** `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Org Key'`  
 **Huntress Tags:**  `Leave it blank or set this variable to override the value stored in the organization-level custom field 'cPVAL Huntress Tags'`  
 **Action:** `Install`  
-![Image2](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image2_1.webp)
+![Image2](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image2_1.webp)
 
 **Run Automation:** `Yes`  
 ![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
@@ -76,7 +76,7 @@ Configure the `Create Script` section as follows:
 **Operating System:** `Windows`  
 **Architecture:** `All`  
 **Run As:** `System`  
-![Image4](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image4_1.webp)
+![Image4](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image4_1.webp)
 
 ## Step 4
 
@@ -288,7 +288,7 @@ Process {
 End {}
 ```
 
-![Image5](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image5_1.webp)
+![Image5](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image5_1.webp)
 
 ## Script Variables
 
@@ -310,7 +310,7 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image6](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image6_1.webp)
+![Image6](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image6_1.webp)
 
 ### Huntress Org Key
 
@@ -330,7 +330,7 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image7](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image7_1.webp)
+![Image7](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image7_1.webp)
 
 ### Huntress Tags
 
@@ -350,7 +350,7 @@ In the box, fill in the following details and select `Add` to create the script 
 **Mandatory:** `<Leave it Unchecked>`  
 **Set Default Value:** `<Leave it blank>`
 
-![Image8](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image8.webp)
+![Image8](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image8.webp)
 
 ### Action
 
@@ -379,7 +379,7 @@ In the box, fill in the following details and select `Add` to create the script 
 
 **Top Option Set Default Value:** `True`
 
-![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image9_1.webp)
+![Image9](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image9_1.webp)
 
 ## Saving the Automation
 
@@ -391,7 +391,7 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Completed Automation
 
-![Image9](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image10_1.webp)
+![Image9](../../../static/img/docs/518bff20-44d4-4206-9336-bb6922d959da/image10_1.webp)
 
 ## Output
 
