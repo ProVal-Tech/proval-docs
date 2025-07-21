@@ -1,8 +1,8 @@
 ---
 id: 'b0ca57d2-351c-4f1d-9d98-954c1d77777e'
 slug: /b0ca57d2-351c-4f1d-9d98-954c1d77777e
-title: 'ProVal - Production - SonicWall NetExtender - Update'
-title_meta: 'ProVal - Production - SonicWall NetExtender - Update'
+title: 'ProVal - Production - SonicWall NetExtender - Install/Update [Winget]'
+title_meta: 'ProVal - Production - SonicWall NetExtender - Install/Update [Winget]'
 keywords: ['sonicwall', 'netextender', 'monitor', 'upgrade', 'deployment', 'edf', 'version']
 description: 'This document outlines the setup of an internal monitor for detecting the online Windows agent with SonicWall NetExtender installed, facilitating upgrades and excluding specific locations or agents as needed. It details dependencies and integration with other monitors for effective management.'
 tags: ['deployment', 'sonicwall']
