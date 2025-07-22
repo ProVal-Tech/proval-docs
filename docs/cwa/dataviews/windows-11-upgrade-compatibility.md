@@ -38,7 +38,8 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Secure Boot Check    | Secure Boot status of the machine against the compatibility check. Values can be Fail or Pass.      |
 | Memory Check         | Memory check of the machine against the compatibility check. Values can be Fail or Pass.            |
 | CPU Check            | CPU check of the machine against the compatibility check. Values can be Fail or Pass.               |
-| OS Drive Space Check | OS Drive Space check of the machine against the compatibility check. Values can be Fail or Pass.    |
+| OS Drive Size Check | OS Drive Space check of the machine against the compatibility check.   |
+| OS Drive Space Check| OS Drive Space check of the machine against the compatibility check. Pass if Drive space is more then 64 GB. Fail if its lower then 64 GB   |
 | TPM Check            | TPM version check of the machine against the compatibility check. Values can be Fail or Pass.      |
 | OS Drive Size GB            | Total Space in C:\ drive in GB.      |
 | OS Drive Free Space GB           | Free Space available in C:\ drive in GB.      |
