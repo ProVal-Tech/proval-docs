@@ -30,6 +30,7 @@ The purpose of this dataview is to show the effective reboot time and day assign
 | Last Contact        | The last time the computer checked in with the system.                                        |
 | Last Logged In User | The username of the last user who logged into the computer.                                   |
 | Form Factor         | The hardware type of the computer (e.g., desktop, laptop, server).                            |
+| Uptime              | Uptime of the machine in minutes.                                                             |
 | Reboot Sunday       | Indicates if auto reboot is enabled for Sunday (1 = enabled, 0 = disabled).                   |
 | Reboot Monday       | Indicates if auto reboot is enabled for Monday (1 = enabled, 0 = disabled).                   |
 | Reboot Tuesday      | Indicates if auto reboot is enabled for Tuesday (1 = enabled, 0 = disabled).                  |
@@ -38,4 +39,5 @@ The purpose of this dataview is to show the effective reboot time and day assign
 | Reboot Friday       | Indicates if auto reboot is enabled for Friday (1 = enabled, 0 = disabled).                   |
 | Reboot Saturday     | Indicates if auto reboot is enabled for Saturday (1 = enabled, 0 = disabled).                 |
 | Reboot_Time         | The effective scheduled reboot time for the computer.                                         |
-| Last Schedule Outcome | The result of the last scheduled reboot (e.g., whether the machine was rebooted or not).    |
+| Last Schedule Outcome | The result of the last schedule (e.g., whether the reboot was scheduled or the machine was offline).    |
+| Last Reboot Time | Last reboot time of the computer. |
