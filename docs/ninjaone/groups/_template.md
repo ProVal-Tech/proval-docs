@@ -12,23 +12,13 @@ unlisted: false
 
 ## Summary
 
-## Dependencies
-
 ## Details
 
 | Name       | Description |
 | ---------- | ----------- |
 
+## Dependencies
+
 ## Group Creation
 
-### Step 1
-
-Navigate to `Administration` > `Devices` > `Groups`  
-![Step1](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/step1.webp)
-
-### Step 2
-
-Locate the `Create New Group` button on the right-hand side of the screen, click on it.  
-![CreateNewGroup](../../../static/img/docs/9316845d-5924-4397-80eb-7ecd6b27a1e1/createnewgroup.webp)
-
-## Completed Group
+[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/_template.toml)

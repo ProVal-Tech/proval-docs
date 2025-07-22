@@ -22,14 +22,4 @@ unlisted: false
 
 ## Condition Creation
 
-## Condition
-
-## Configuration
-
-## Automations
-
-## Saving the Condition
-
-## Completed Condition
-
-## Saving Agent Policy
+[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/_template.toml)
