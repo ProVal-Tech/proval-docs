@@ -10,13 +10,13 @@ draft: true
 unlisted: false
 ---
 
-# Overview
+## Overview
 
 
-# Dependencies
+## Dependencies
 
 
-# Implementation  
+## Implementation  
 
 1. Download the component `<Component name with the link to download it.>` from the attachments.
 
@@ -39,11 +39,11 @@ To execute the `component` over a specific machine, follow these steps:
 4. `<Screenshot of Sample run with variable details and example>`
 
 
-# Datto Variables
+## Datto Variables
 
 | Variable Name | Type | Default | Description |
 | ------------- | ---- | ------- | ----------- |
 
-# Output
+## Output
 
-# Attachments
+## Attachments
