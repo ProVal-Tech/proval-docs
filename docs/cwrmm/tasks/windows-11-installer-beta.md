@@ -139,12 +139,12 @@ $filePath = "$workingDirectory\$appName.exe"
 $url = 'https://file.provaltech.com/repo/app/windows-upgrader.exe'
 
 Remove-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue
-New-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
+New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
 
 try {
     $webClient = [System.Net.WebClient]::new()
     $WebClient.DownloadFile( $url, $filePath )
-    Unblock-File -Path $appName -ErrorAction SilentlyContinue
+    Unblock-File -Path $filePath -ErrorAction SilentlyContinue
 } catch {
     throw "Failed to download the installer. Reason: $($Error[0].exception.Message)"
 }
