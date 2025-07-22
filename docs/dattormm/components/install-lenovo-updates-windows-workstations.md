@@ -67,7 +67,7 @@ Automates the installation of Lenovo system updates on supported workstations. I
 | Variable Name | Example | Type | Default | Description |
 | ------------- | ------- | ---- | ------- | ----------- |
 | Type | <ul><li>All</li><li>Application, BIOS, Driver</li><li>Firmware, BIOS</li><li>Driver</li><li>Firmware</li><li>BIOS</li></ul> | String | | Specifies the update type to install. Updates must support unattended installation and be applicable to the system to be eligible for installation. Use 'All' for every available vendor-specific update that meets these criteria. Valid values: All, Application, BIOS, Driver, Firmware. | 
-| Id | <ul><li>pcieeth06w_w11</li><li>pcieeth06w_w11, n3ch101w_bisbnk919kse | String | | Specifies the ID(s) of specific update(s) to install. Both 'Id' and 'Type' cannot be used together. |
+| Id | <ul><li>pcieeth06w_w11</li><li>pcieeth06w_w11, n3ch101w_bisbnk919kse</li></ul> | String | | Specifies the ID(s) of specific update(s) to install. Both 'Id' and 'Type' cannot be used together. |
 | NoReboot | | Boolean | False | Suppresses automatic reboot after installation. Critical BIOS/firmware updates may initiate low-level hardware restarts that bypass OS-level controls. These can trigger immediate system reboots regardless of setting this parameter. |
 
 ## Output
