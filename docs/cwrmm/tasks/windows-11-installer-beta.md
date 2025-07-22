@@ -142,8 +142,7 @@ Remove-Item -Path $workingDirectory -Force -ErrorAction SilentlyContinue
 New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
 
 try {
-    $webClient = [System.Net.WebClient]::new()
-    $WebClient.DownloadFile( $url, $filePath )
+    Invoke-WebRequest -Uri $url -OutFile $filePath -UseBasicParsing -ErrorAction Stop
     Unblock-File -Path $filePath -ErrorAction SilentlyContinue
 } catch {
     throw "Failed to download the installer. Reason: $($Error[0].exception.Message)"
