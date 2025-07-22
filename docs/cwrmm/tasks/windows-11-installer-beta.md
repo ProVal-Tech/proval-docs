@@ -1,8 +1,8 @@
 ---
 id: '96cec9d2-d276-47a5-a1c5-d79d561c192a'
 slug: /96cec9d2-d276-47a5-a1c5-d79d561c192a
-title: 'Windows 11 Installer (Beta)'
-title_meta: 'Windows 11 Installer (Beta)'
+title: 'Windows 11 Installer'
+title_meta: 'Windows 11 Installer'
 keywords: ['windows', 'upgrade', 'installer', 'script', 'deployment']
 description: 'This document provides a comprehensive guide on installing Windows 11 on compatible Windows 10 computers using a script that includes options for reboot suppression. It covers requirements, dependencies, task creation, and detailed parameters for execution.'
 tags: ['installation', 'setup', 'windows']
@@ -48,7 +48,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 ![Task Creation 1](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_6.webp)  
 ![Task Creation 2](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/image_7.webp)  
 
-**Name:** Windows 11 Installer (Beta)  
+**Name:** Windows 11 Installer  
 **Description:** Install Windows 11 on a compatible Windows 10 computer.  
 **Category:** Patching  
 
