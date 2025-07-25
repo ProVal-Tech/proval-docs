@@ -16,13 +16,25 @@ It is the CW Automate implementation of the agnostic script [Invoke-ToastNotific
 
 This script downloads and executes the New-ToastNotification.ps1, providing a customizable interface to display toast notifications. It supports scenarios such as system reboots, password expiration warnings, and general user notifications. Users can add custom titles, images, buttons, and deadlines to their notifications. A scheduled task is created for repetitive notifications.
 
+## Update Notice: 2025-07-22
+
+- A script can be triggered via a button click within the notification.  
+- The dismiss button is optional and can be excluded.  
+- Notifications can be shown with or without buttons.
+
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\New-ToastNotification\New-ToastNotification\New-ToastNotification.ps1`
+**File Path:** `C:\ProgramData\_automation\Script\New-ToastNotification\New-ToastNotification\New-ToastNotification.ps1`  
+**File Hash (Sha256):** `C6F8C7D7A2D21146C11D2402855D723861B1EE546FA3DDBE46B37ABA514A99A1`  
+**File Hash (MD5):** `5F3A9F15FBC11BFD19FD559848F3E7E1`  
 
-**File Hash (Sha256):** `C0F7E5A29D59E1946B65648CF59661B49779252D5F9DA2DFA020D44762B74CA4`
+**File Path:** `C:\ProgramData\_automation\Script\New-ToastNotification\New-ToastNotification\Hidden.vbs`  
+**File Hash (Sha256):** `20A98A7E6E137BB1B9BD5EF6911A479CB8EAC925B80D6DB4E70B19F62A40CCE2`  
+**File Hash (MD5):** `C578D9653B22800C3EB6B6A51219BBB8`  
 
-**File Hash (MD5):** `6ABAC1DE688E93CD27001887A3F92B27`
+**File Path:** `C:\ProgramData\_automation\Script\New-ToastNotification\New-ToastNotification\RunToastHidden.cmd`  
+**File Hash (Sha256):** `3FB35F928C761310A0A2FBC78728F80B96E5A3BDB1C148C252635931BCA9D5DB`  
+**File Hash (MD5):** `F1CF42E33BF172E0B7A16802230F6CB9`  
 
 ## Sample Run
 
@@ -39,15 +51,17 @@ Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c
 
 | Name                        | Description                                                                                                                                         |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| NotificationType            | The type of notification to send. The accepted values for @NotificationType@ are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable.                                        |
-|                             | - **Generic:** Enables a static, generic toast notification.                                                                                              |
-|                             | - **PendingRebootUptime:** Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.                      |
-|                             | - **PendingRebootCheck:** Displays a toast notification when a pending reboot is detected through the system registry or WMI.                             |
-|                             | - **ADPasswordExpiration:** Sends a toast notification to users when their Active Directory password is nearing expiration.                               |
+| NotificationType            | The type of notification to send. The accepted values for @NotificationType@ are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable. <ul><li>**Generic:** Enables a static, generic toast notification.</li><li>**PendingRebootUptime:** Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.</li><li>**PendingRebootCheck:** Displays a toast notification when a pending reboot is detected through the system registry or WMI.</li><li>**ADPasswordExpiration:** Sends a toast notification to users when their Active Directory password is nearing expiration.</li></ul> |
 | RebootButton                | Set @RebootButton@ to 1 to enable the `Reboot` button in the notification. Setting it to `0` or deleting the variable will disable it. @RebootButton@ is available for `Generic`, `PendingRebootUptime`, and `PendingRebootCheck` notification types. |
+| RunScriptButton | Set @RunScriptButton@ to 1 to enable the 'Run Script' button in the notification. To disable it, either set the value to 0 or remove the variable. Please note that enabling this button will automatically disable the 'Snooze' button. |
+| RunScriptButtonText | Set the string in the @RunScriptButtonText@ variable to customize the text of the RunScript button. Delete the variable or leave it blank to fall back to the default value. The default is `RunScript`. `@RunScriptButton@` should be enabled or set to `1` to enable the `@RunScriptButtonText@` variable. |
+| ScriptPath | @ScriptPath@ specifies the full path to a PowerShell script (.ps1) that will be executed when the 'RunScript' button is clicked. This must be a valid path ending in .ps1. Setting this variable is mandatory if @RunScriptButton@ is enabled. If @RebootScriptButton@ is not enabled, this variable can be omitted by leaving it blank or removing it entirely. |
+| ScriptContext | @ScriptContext@ Specifies the context in which the custom script should be executed when triggered from the notification on clicking the 'RunScript' button. Valid values are 'User' (runs in the current user context) or 'System' (runs with elevated/system privileges, if supported). Default is 'User'. `@RunScriptButton@` should be enabled or set to `1` to enable the `@ScriptContext@` variable. |
+| ScriptStyle | @ScriptStyle@ defines how the script should be executed when the 'RunScript' button is clicked. Valid options are 'Interactive' (displays messages or launches installers on the user's desktop) and 'Hidden' (runs silently in the background). The default value is 'Hidden'. This variable is only applicable if @RunScriptButton@ is enabled or set to 1. |
 | LearnMoreButton             | Set @LearnMore@ to 1 to enable the `Learn More` button in the notification. Setting it to `0` or deleting the variable will disable it.             |
 | LearnMoreUrl                | Set the URL to navigate by clicking the `Learn More` button in the notification. `@LearnMoreButton@` should be enabled or set to `1` to allow the `@LearnMoreUrl@` variable.                                                    |
-| SnoozeButton                | Set @SnoozeButton@ to 1 to enable the `Snooze` button in the notification. Setting it to `0` or deleting the variable will disable it. The `@LearnMoreButton@` and the `@SnoozeButton@` cannot be enabled simultaneously.       |
+| SnoozeButton                | Set @SnoozeButton@ to 1 to enable the 'Snooze' button in the notification. To disable it, either set the value to 0 or remove the variable entirely. Note that @SnoozeButton@ and @LearnMoreButton@ cannot be enabled at the same time. Additionally, enabling @RebootScriptButton@ will automatically disable the @SnoozeButton@. |
+| HideDismissButton | Set @HideDismissButton@ to 1 to remove the dismiss button from the toast notification. When enabled, users will not see an option to dismiss the notification. By default, the dismiss button is visible. |
 | DismissButtonText           | Set the string in the @DismissButtonText@ variable to customize the dismiss button's text. Delete the variable or leave it blank to return to the default value, `Dismiss`.                                                     |
 | TitleText                   | Sets the title of the notification in the @TitleText@ variable. It is mandatory to set this variable.                                               |
 | AttributionText             | Sets the attribution text in the @AttributionText@ variable. It can be a company name or website, for authenticity.                                 |
