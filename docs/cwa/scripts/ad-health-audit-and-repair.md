@@ -14,7 +14,7 @@ unlisted: false
 This script automates health checks, self-healing, and conditional service restarts for Active Directory Domain Controllers. It helps administrators quickly identify and remediate AD issues, ensuring domain controller reliability and service continuity.
 
 ## Dependencies
-[Test-ADHealthAndRepair](/docs/powershell/test-adhealthandrepair.md)
+[Test-ADHealthAndRepair](/docs/f2c09601-b391-449b-9380-c022f1829eda)
 
 ## Sample Run
 
