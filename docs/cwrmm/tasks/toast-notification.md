@@ -687,13 +687,13 @@ if ('@Deadline@' -match '\d{4}-\d{2}-\d{2}' -and $RunScriptButton -eq $false) {
     $Deadline = ''
 }
 
-if (('@MaxUptimeDays@' -match '[0-9]{1,}') -and (('@MaxUptimeDays@').length -gt 2) -and ($NotificationType -match 'PendingRebootUptime')) {
+if (('@MaxUptimeDays@' -match '[0-9]{1,}') -and (('@MaxUptimeDays@').length -ge 1) -and ($NotificationType -match 'PendingRebootUptime')) {
     $MaxUptimeDays = '@MaxUptimeDays@'
 } else {
     $MaxUptimeDays = ''
 }
 
-if (('@ADPasswordExpirationDays@' -match '[0-9]{1,}') -and (('@ADPasswordExpirationDays@').length -gt 2) -and ($NotificationType -match 'ADPasswordExpiration')) {
+if (('@ADPasswordExpirationDays@' -match '[0-9]{1,}') -and (('@ADPasswordExpirationDays@').length -ge 1) -and ($NotificationType -match 'ADPasswordExpiration')) {
     $ADPasswordExpirationDays = '@ADPasswordExpirationDays@'
 } else {
     $ADPasswordExpirationDays = ''
