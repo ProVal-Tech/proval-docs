@@ -28,8 +28,13 @@ Navigate to `Settings` ➞ `Custom Fields`
 
 ### Step 2
 
-Locate the `Add` button on the right-hand side of the screen and click on it.  
+Locate the `Add Field` button on the right-hand side of the screen and click on it.  
 ![Step2](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step2.webp)
 
+## Step 3
+
+The `Add new custom field` dialog box will occur
+
+![Step3](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step3.webp)
 
 ## Completed Custom Field
