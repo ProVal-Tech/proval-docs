@@ -33,8 +33,8 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `WSUS Status Disabled`  
-**Description:** `This group contains the agent where the WSUS status is detected as disabled.`
+- **Group Name:** `WSUS Status Disabled`  
+- **Description:** `This group contains the agent where the WSUS status is detected as disabled.`
 
 ![Summary](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image16.webp)
 

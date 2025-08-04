@@ -15,9 +15,9 @@ This stores the WSUS status discovered from the script "Patching - Check for WSU
 
 ## Details
 
-| Name        | Level    | Type | Default? | Required | Editable | Description                                                                 |
-|-------------|----------|------|----------|----------|----------|-----------------------------------------------------------------------------|
-| WSUS_Status | Endpoint | Text |          | True     | No       | This custom field stores the WSUS status discovered from the script "Patching - Check for WSUS Settings". |
+| Name        | Level    | Type | Default | Editable | Description |
+|-------------|----------|------|----------|----------|-----------------------------------------------------------------------------|
+| WSUS_Status | Endpoint | Text |          |  No       | This custom field stores the WSUS status discovered from the script "Patching - Check for WSUS Settings". |
 
 
 ## Creation Process
@@ -40,17 +40,12 @@ The `Add new custom field` dialog box will occur
 
 ## Step 4
 #### Set the following
-Name: `WSUS_Status`
-
-Description: `This stores the WSUS status discovered from the script "Patching - Check for WSUS Settings".`
-
-Level: `Endpoint`
-
-Type: `Text Box`
-
-Default Value: ``
-
-Editable: `No`
+- Name: `WSUS_Status`
+- Description: `This stores the WSUS status discovered from the script "Patching - Check for WSUS Settings".`
+- Level: `Endpoint`
+- Type: `Text Box`
+- Default Value: `<Leave it Blank>`
+- Editable: `No`
 
 ## Completed Custom Field
 
