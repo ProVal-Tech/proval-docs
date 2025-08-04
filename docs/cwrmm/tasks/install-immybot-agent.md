@@ -101,7 +101,7 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 ### Description
 
 **Name:** `Install ImmyBot Agent`  
-**Description:** `This script automates the installation of the ImmyBot Agent MSI installer with option to reinstall if needed. Document: https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951`  
+**Description:** `This script automates the installation of the ImmyBot Agent MSI installer with option to reinstall if needed. Document: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1`  
 **Category:** `Application`
 
 ![Image6](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image6.webp)
@@ -203,7 +203,7 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 .LINK
     For further documentation on fields and usage, see:
-    https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951
+    https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1
 
 .OUTPUTS
     C:\ProgramData\_Automation\App\IBAgent\IBAgent.log
@@ -303,13 +303,13 @@ begin {
     if ($immyBotInstallerID -notmatch '^[\w\d]{8}(?:-[\w\d]{4}){3}-[\w\d]{12}$') {
         throw @'
 No valid ImmyBot Installer ID found. Please enter the installer ID in the Client-Level Custom Field ''ImmyBot Agent Installer ID''.
-Refer to the script documentation for help: https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951.
+Refer to the script documentation for help: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1.
 '@
     }
     if ($immyBotInstallerKey -notmatch '^\S{44}$') {
         throw @'
 A valid ImmyBot Installer Key is required. Set this key in the Client-Level Custom Field ''ImmyBot Installer Key''.
-See the script documentation for more information: https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951.
+See the script documentation for more information: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1.
 '@
     }
     if ($reinstall -match '1|Yes|True') {

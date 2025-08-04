@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Enable this flag to prevent ImmyBot from deploying to this site. This custom field manages the auto-execution of the task. However, the [Install ImmyBot Agent](/docs/569083f6-86cd-43ee-ae87-54a050c87951) task can still be run manually, independent of this field.
+Enable this flag to prevent ImmyBot from deploying to this site. This custom field manages the auto-execution of the task. However, the [Install ImmyBot Agent](/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1) task can still be run manually, independent of this field.
 
 ## Dependencies
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor set runs the [Install ImmyBot Agent](/docs/569083f6-86cd-43ee-ae87-54a050c87951) script on machines that are missing the agent and belong to the [ImmyBot Agent Deployment Enabled](/docs/e69486d9-27f7-4fa6-87cd-d62151d6ddc4) group.
+This monitor set runs the [Install ImmyBot Agent](/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1) script on machines that are missing the agent and belong to the [ImmyBot Agent Deployment Enabled](/docs/e69486d9-27f7-4fa6-87cd-d62151d6ddc4) group.
 
 ## Dependencies
 
@@ -23,7 +23,7 @@ This monitor set runs the [Install ImmyBot Agent](/docs/569083f6-86cd-43ee-ae87-
 - [ImmyBot Installer ID](/docs/9f10ae6a-e898-4bc6-95cb-946c77abdf2e)
 - [ImmyBot Installer Key](/docs/9449d91e-3a45-4fa2-b0b4-099dc349bb50)
 - [ImmyBot Agent Deployment Enabled](/docs/e69486d9-27f7-4fa6-87cd-d62151d6ddc4)
-- [Install ImmyBot Agent](/docs/569083f6-86cd-43ee-ae87-54a050c87951)
+- [Install ImmyBot Agent](/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1)
 - [ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
 
 ## Monitor Setup Location
