@@ -1,8 +1,8 @@
 ---
 id: 'f68df531-09b3-4b82-b183-3769c7183a8d'
 slug: /f68df531-09b3-4b82-b183-3769c7183a8d
-title: 'Solution- Patching - Check for WSUS Settings'
-title_meta: 'Solution - Patching - Check for WSUS Settings'
+title: 'Patching - Check for WSUS Settings'
+title_meta: 'Patching - Check for WSUS Settings'
 keywords: ['WSUS','Windows Update','Update']
 description: 'Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). The result is stored in the custom field WSUS_Status'
 tags: ['update','windows','auditing']
