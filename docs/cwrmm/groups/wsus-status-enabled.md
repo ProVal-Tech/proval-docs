@@ -4,17 +4,18 @@ slug: /5ea4a43e-8802-4a56-a760-68dce9483d64
 title: 'WSUS Status Enabled'
 title_meta: 'WSUS Status Enabled'
 keywords: ['WSUS','Windows Update','Update']
-description: 'This group contains the agent where the WSUS status is detected as enabled.'
+description: 'This group contains the agents where the WSUS status is detected as enabled.'
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
 ---
 
 ## Summary
-This group contains the agent where the WSUS status is detected as enabled.
+This group contains the agents where the WSUS status is detected as enabled.
 
 ## Dependencies
 [CustomField - WSUS_Status](/docs/2ca7feb0-b811-4486-8ff1-fd93d08056c8)
+[Solution - Patching - Check for WSUS Settings](/docs/f68df531-09b3-4b82-b183-3769c7183a8d)
 
 ## Group Creation
 

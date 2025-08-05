@@ -4,14 +4,14 @@ slug: /93b6b4ac-5923-47c5-a382-26015f6ac0fc
 title: 'Patching - Check for WSUS Settings'
 title_meta: 'Patching - Check for WSUS Settings'
 keywords: ['WSUS','Windows Update','Update']
-description: 'Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). You can also write the results to a text custom field.'
+description: 'Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). The result is stored in the custom field WSUS_Status.'
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
 ---
 
 ## Summary
-Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). You can also write the results to a text custom field.
+Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). The result is stored in the custom field [WSUS_Status](/docs/2ca7feb0-b811-4486-8ff1-fd93d08056c8).
 
 ## Sample Run
 
@@ -21,6 +21,7 @@ Determines if Windows Server Update Services (WSUS) settings are configured in t
 
 ## Dependencies
 [CustomField - WSUS_Status](/docs/2ca7feb0-b811-4486-8ff1-fd93d08056c8)
+[Solution - Patching - Check for WSUS Settings](/docs/f68df531-09b3-4b82-b183-3769c7183a8d)
 
 ## Task Creation
 

@@ -4,17 +4,18 @@ slug: /ec043f37-93f6-49c1-82cf-d4535c4332bf
 title: 'WSUS Status Not Configured'
 title_meta: 'WSUS Status Not Configured'
 keywords: ['WSUS','Windows Update','Update']
-description: 'This group contains the agent where the WSUS status is detected as not configured.'
+description: 'This group contains the agents where the WSUS status is detected as not configured.'
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
 ---
 
 ## Summary
-This group contains the agent where the WSUS status is detected as not configured.
+This group contains the agents where the WSUS status is detected as not configured.
 
 ## Dependencies
 [CustomField - WSUS_Status](/docs/2ca7feb0-b811-4486-8ff1-fd93d08056c8)
+[Solution - Patching - Check for WSUS Settings](/docs/f68df531-09b3-4b82-b183-3769c7183a8d)
 
 ## Group Creation
 
