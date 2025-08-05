@@ -47,6 +47,22 @@ The script supports both Windows 10 and Windows 11:
 - The `Restart-Computer -Force` command has been replaced with `Shutdown -f -r -t 10`.
 - The sleep time after issuing a restart command has been reduced to 10 seconds.
 
+## Change Log (2025-07-10)
+
+- If the vendor tool fails to install driver updates, the script will attempt to install drivers using Windows Update.
+- The script will proceed to run the Windows 11 Installer even if troubleshooting steps do not
+
+## Change Log (2025-07-15)
+
+- The script no longer forces a restart after the primary process finishes; instead, it allows the computer to restart on its own as needed.
+- If the system does not restart within one hour, the script will run the SetupDiag tool to check for any errors.
+- If SetupDiag indicates that a reboot is required to complete the upgrade and the `$NoReboot` switch is not used, the computer will be forcefully restarted.
+
+## Change Log (2025-07-31)
+
+- The script will attempt to set the 'TrustedInstaller' service (Windows Modules Installer) to Automatic startup and ensure it is running before starting the upgrade process.
+- This change addresses upgrade failures caused by error code 0x8007001F.
+
 ## Process
 
 The script operates in multiple phases to accomplish the upgrade:
