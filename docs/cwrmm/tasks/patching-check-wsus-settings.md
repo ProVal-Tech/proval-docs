@@ -15,8 +15,10 @@ Determines if Windows Server Update Services (WSUS) settings are configured in t
 
 ## Sample Run
 
-![Sample1](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image.webp)
-![Sample2](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image1.webp)
+![Sample1](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image.webp)  
+ 
+![Sample2](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image1.webp)  
+
 ![Sample3](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image2.webp)
 
 ## Dependencies
@@ -25,7 +27,6 @@ Determines if Windows Server Update Services (WSUS) settings are configured in t
 
 ## Task Creation
 
-### Script Details
 
 #### Step 1
 
@@ -44,9 +45,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Patching - Check for WSUS Settings`  
-**Description:** `Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). You can also write the results to a text custom field.`  
-**Category:** `Patching`
+- **Name:** `Patching - Check for WSUS Settings`  
+- **Description:** `Determines if Windows Server Update Services (WSUS) settings are configured in the registry and identifies if they are managed via Group Policy (GPO). You can also write the results to a text custom field.`  
+- **Category:** `Patching`
 
 ![Description Image](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image3.webp)
 
@@ -481,7 +482,7 @@ catch {
 
 #### Row 2 Logic: If/Then
 
-- Add a new `If/Then` logic from the Add Logic dropdown menu.
+- Add a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_13.webp)
 
@@ -493,7 +494,7 @@ catch {
 
 #### Row 2b Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Add a new row in the If Section of the If/Then part by clicking the `Add Row` button  
 - Search and select the `Script Exit` function.  
 - Input the following:
 
@@ -507,7 +508,7 @@ Failed to run the WSUS Settings audit. Refer to the logs:
 ![Script Exit](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image6.webp)
 
 #### Row 3 Function: Command Prompt (CMD) Script
-
+After `End If`, click on `Add Row` and search for `Command Prompt (CMD) Script`
 ![CMD](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image7.webp)
 
 Paste in the following Command Prompt (CMD) script and set the expected script execution time to 600 seconds.
@@ -520,7 +521,7 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 
 #### Row 4 Function: PowerShell Script
 
-Search and select the `PowerShell Script` function.  
+Click on `Add Row`, search and select the `PowerShell Script` function.  
 ![Row 1 Step 1](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_15.webp)  
 ![Row 1 Step 2](../../../static/img/docs/a2e5e9e8-7601-42a9-9941-88a5142ee69a/image_16.webp)  
 
@@ -550,7 +551,7 @@ else {
 
 #### Row 5 Logic: If/Then
 
-- Add a new `If/Then` logic from the Add Logic dropdown menu.
+- Add a new `If/Then` logic from the `Add Logic` dropdown menu.
 
 ![Image](../../../static/img/docs/ebe382f4-d3cb-47be-84e1-c82009fd745a/image_13.webp)
 
@@ -562,7 +563,7 @@ else {
 
 #### Row 5b Function: Script Exit
 
-- Add a new row in the If Section of the If/Else part by clicking the Add Row button  
+- Add a new row in the If Section of the If/Then part by clicking the `Add Row` button  
 - Search and select the `Script Exit` function.  
 - Input the following:
 
@@ -576,7 +577,7 @@ WSUS Settings audit failed. %output%
 
 #### Row 6 Function: Script Log
 
-- Add a new row by clicking the Add Row button  
+- Add a new row by clicking the `Add Row` button after `End If`   
 - Search and select the `Script Log` function.  
 - Input the following:
 
@@ -591,7 +592,7 @@ WSUS Settings audit failed. %output%
 
 #### Row 7 Function: Set Custom Field
 
-- Add a new row by clicking the Add Row button  
+- Add a new row by clicking the `Add Row` button  
 - Search and select the `Set Custom Field` function.  
 - Input the following:
 

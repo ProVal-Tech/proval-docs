@@ -34,8 +34,8 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `WSUS Status Enabled`  
-**Description:** `This group contains the agent where the WSUS status is detected as enabled.`
+- **Group Name:** `WSUS Status Enabled`  
+- **Description:** `This group contains the agent where the WSUS status is detected as enabled.`
 
 ![Summary](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image19.webp)
 
@@ -47,7 +47,7 @@ Click the `+ Add Criteria` in the `Criteria` section of the group.
 This search box will appear:  
 ![Step5](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/step5.webp)
 
-Search for `WSUS_Status` and check for `Contains any of` and put the value as `WSUS Status: Disabled`
+Search for `WSUS_Status` and check for `Contains any of` and put the value as `WSUS Status: Enabled`
 
 ![Criteria](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image20.webp)
 
