@@ -56,9 +56,13 @@ Configure the solution as outlined below:
 
 - Enter the Threatlocker Authorization key in System Properties under system property `ThreatLockerAuthKey`
 - Enter the Organization name in Client EDF `Threatlocker_Organization_Name`
+- Enter the Threatlocker Group ID in Client EDF `ThreatlockerGroupID`
 
 ![Image1](../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image1.webp)  
+
 ![Image2](../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image2.webp)
+
+![Image8](../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image8.webp)
 
 **For MAC Deployment:**
 
