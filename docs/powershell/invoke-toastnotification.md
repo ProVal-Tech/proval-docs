@@ -16,6 +16,13 @@ A PowerShell script to create and manage toast notifications with customizable o
 
 **Acknowledgement:** [imabdk](https://github.com/imabdk)
 
+## Notes
+
+- After the toast appears, the script wait for Learn More button activations for up to 600 seconds (10 minutes).  
+- If the user clicks Learn More within that window, the notification is immediately shown again.  
+- This automatic re-display occurs only once per Learn More click—the notification won't loop again if the user clicks the re-displayed toast's Learn More button.  
+- To avoid over-prompting, it's recommended to configure at least a 30-minute gap between successive notifications.
+
 ## Requirements
 
 - PowerShell version 5.0 or later.
@@ -46,7 +53,7 @@ A PowerShell script to create and manage toast notifications with customizable o
 
 6. **Notification Scheduling**
     - Creates a scheduled task to display the toast notification according to the specified recurrence (`Repeat` parameter).
-    - If `MaxOccurrences` is set, creates an additional scheduled task to automatically remove the notification task after the specified number of runs.
+    - If `MaxOccurrences` is set, creates an additional scheduled task to automatically remove the notification and 'script run' tasks after the specified number of runs.
 
 7. **Custom Script Execution (Optional)**
     - If the `RunScriptButton` is enabled, creates a scheduled task that waits for user interaction and then executes the specified PowerShell script (`ScriptPath`).
@@ -220,5 +227,6 @@ Windows notification when you click `Feed at 8`:
 
 - .\Invoke-ToastNotification-log.txt
 - .\Invoke-ToastNotification-error.txt
+- $env:ProgramData\_automation\Script\New-ToastNotification\ToastNotification.log
 - $env:ProgramData\_automation\Script\New-ToastNotification\Stop-ToastNotification-log.txt
 - $env:ProgramData\_automation\Script\New-ToastNotification\Stop-ToastNotification-error.txt
