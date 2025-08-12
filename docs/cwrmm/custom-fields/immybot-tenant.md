@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-Subdomain part of your ImmyBot URL. For "https://xyz.immy.bot", use "xyz".
+This custom field stores the subdomain part of your ImmyBot URL. For "https://xyz.immy.bot", use "xyz".
 
 ## Dependencies
 
-- [ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
+- [Solution - ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
 
 ## Custom Field Setup Location
 

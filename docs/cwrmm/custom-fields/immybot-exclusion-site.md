@@ -16,7 +16,7 @@ Enable this flag to prevent ImmyBot from deploying to this site. This custom fie
 
 ## Dependencies
 
-- [ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
+- [Solution - ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
 
 ## Custom Field Setup Location
 

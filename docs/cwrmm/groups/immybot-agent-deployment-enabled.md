@@ -16,20 +16,20 @@ Auto deployment group for machines belonging to clients with ImmyBot agent deplo
 
 ## Dependencies
 
-- [Deploy ImmyBot](/docs/415511bb-26c0-4c9f-ac34-d395f29b223e)
-- [ImmyBot Exclusion](/docs/5e44ed99-db67-41d3-b718-532395f2ac11)
-- [ImmyBot Exclusion](/docs/77b89b50-c343-48a4-b8a0-9e80ceab78ed)
-- [ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
+- [CF - Deploy ImmyBot](/docs/415511bb-26c0-4c9f-ac34-d395f29b223e)
+- [CF - ImmyBot Exclusion](/docs/5e44ed99-db67-41d3-b718-532395f2ac11)
+- [Task - ImmyBot Exclusion](/docs/77b89b50-c343-48a4-b8a0-9e80ceab78ed)
+- [Solution - ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
 
 ## Group Setup Location
 
-**Group Path:** `ENDPOINTS` ➞ `Groups`  
-**Group Type:** `Dynamic Group`
+- **Group Path:** `ENDPOINTS` ➞ `Groups`  
+- **Group Type:** `Dynamic Group`
 
 ## Group Summary
 
-**Group Name:** `ImmyBot Agent Deployment Enabled`  
-**Description:** `Auto deployment group for machines belonging to clients with ImmyBot agent deployment enabled.`
+- **Group Name:** `ImmyBot Agent Deployment Enabled`  
+- **Description:** `Auto deployment group for machines belonging to clients with ImmyBot agent deployment enabled.`
 
 ![Image1](../../../static/img/docs/e69486d9-27f7-4fa6-87cd-d62151d6ddc4/image1.webp)
 

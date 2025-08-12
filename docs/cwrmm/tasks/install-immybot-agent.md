@@ -23,7 +23,7 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 - [ImmyBot Tenant](/docs/2556d27a-3c3c-4437-aa2c-43143b97ff88)
 - [ImmyBot Installer ID](/docs/9f10ae6a-e898-4bc6-95cb-946c77abdf2e)
 - [ImmyBot Installer Key](/docs/9449d91e-3a45-4fa2-b0b4-099dc349bb50)
-- [ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
+- [Solution - ImmyBot Agent Deployment](/docs/d0a57d05-71c0-495e-a055-803ad7a728ad)
 
 ## User Parameters
 
@@ -93,16 +93,16 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 ## Task Setup Path
 
-**Tasks Path:** `AUTOMATION` ➞ `Tasks`  
-**Task Type:** `Script Editor`  
+- **Tasks Path:** `AUTOMATION` ➞ `Tasks`  
+- **Task Type:** `Script Editor`  
 
 ## Task Creation
 
 ### Description
 
-**Name:** `Install ImmyBot Agent`  
-**Description:** `This script automates the installation of the ImmyBot Agent MSI installer with option to reinstall if needed. Document: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1`  
-**Category:** `Application`
+- **Name:** `Install ImmyBot Agent`  
+- **Description:** `This script automates the installation of the ImmyBot Agent MSI installer with option to reinstall if needed. Document: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1`  
+- **Category:** `Application`
 
 ![Image6](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image6.webp)
 
@@ -121,37 +121,37 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 #### Row 1: Set Pre-defined Variable ( @ImmyBotTenant@ = ImmyBot Tenant )
 
-**Variable Name:**  `ImmyBotTenant`  
-**Type:**  `Custom Field`  
-**Custom Field:**  `ImmyBot Tenant`  
-**Operating System:** `Windows`
+- **Variable Name:**  `ImmyBotTenant`  
+- **Type:**  `Custom Field`  
+- **Custom Field:**  `ImmyBot Tenant`  
+*- *Operating System:** `Windows`
 
 ![Image9](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image9.webp)
 
 #### Row 2: Set Pre-defined Variable ( @ImmyBotInstallerID@ = ImmyBot Installer ID )
 
-**Variable Name:**  `ImmyBotInstallerID`  
-**Type:**  `Custom Field`  
-**Custom Field:**  `ImmyBot Installer ID`  
-**Operating System:** `Windows`
+- **Variable Name:**  `ImmyBotInstallerID`  
+- **Type:**  `Custom Field`  
+- **Custom Field:**  `ImmyBot Installer ID`  
+- **Operating System:** `Windows`
 
 ![Image10](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image10.webp)
 
 #### Row 3: Set Pre-defined Variable ( @ImmyBotInstallerKey@ = ImmyBot Installer Key )
 
-**Variable Name:**  `ImmyBotInstallerKey`  
-**Type:**  `Custom Field`  
-**Custom Field:**  `ImmyBot Installer Key`  
-**Operating System:** `Windows`
+- **Variable Name:**  `ImmyBotInstallerKey`  
+- **Type:**  `Custom Field`  
+- **Custom Field:**  `ImmyBot Installer Key`  
+- **Operating System:** `Windows`
 
 ![Image11](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image11.webp)
 
 #### Row 4: PowerShell script
 
-**Use Generative AI Assist for script creation:** `False`  
-**Expected time of script execution in seconds:** `600`  
-**Operating System:** `Windows`  
-**PowerShell Script Editor:**  
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `600`  
+- **Operating System:** `Windows`  
+- **PowerShell Script Editor:**  
 
 ```PowerShell
 <#
@@ -433,8 +433,8 @@ Log output: $($logContent | Out-String)
 
 #### Row 5: Script Log
 
-**Script Log Message:** `%Output%`  
-**Operating System:** `Windows`
+- **Script Log Message:** `%Output%`  
+- **Operating System:** `Windows`
 
 ![Image13](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image13.webp)
 

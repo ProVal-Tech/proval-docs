@@ -32,28 +32,28 @@ This monitor set runs the [Install ImmyBot Agent](/docs/c2576ff2-e86f-43f7-94dc-
 
 ## Monitor Summary
 
-**Name:** `ImmyBot Agent Deployment`  
-**Disabled:** `This monitor set runs the "Install ImmyBot Agent" script on machines that are missing the agent and belong to the "ImmyBot Agent Deployment Enabled" group.`  
-**Type:** `Script`  
-**Severity:** `Others`  
-**Family:** `RMM Agent`
+- **Name:** `ImmyBot Agent Deployment`  
+- **Description:** `This monitor set runs the "Install ImmyBot Agent" script on machines that are missing the agent and belong to the "ImmyBot Agent Deployment Enabled" group.`  
+- **Type:** `Script`  
+- **Severity:** `Others`  
+- **Family:** `RMM Agent`
 
 ![Image1](../../../static/img/docs/864e8d09-999f-4af5-87cc-1e0ad0222c62/image1.webp)
 
 ## Targeted Resources
 
-**Target Type:**  `Device Groups`  
-**Group Name:** `ImmyBot Agent Deployment Enabled`
+- **Target Type:**  `Device Groups`  
+- **Group Name:** `ImmyBot Agent Deployment Enabled`
 
 ![Image2](../../../static/img/docs/864e8d09-999f-4af5-87cc-1e0ad0222c62/image2.webp)
 
 ## Conditions
 
-**Run Script on:** `Schedule`  
-**Repeat every:** `24` `Hours`  
-**Script Language:** `PowerShell`  
-**Use Generative AI Assist for script creation:** `False`  
-**PowerShell Script Editor:**  
+- **Run Script on:** `Schedule`  
+- **Repeat every:** `24` `Hours`  
+- **Script Language:** `PowerShell`  
+- **Use Generative AI Assist for script creation:** `False`  
+- **PowerShell Script Editor:**  
 
 ```PowerShell
 $ErrorActionPreference = 'SilentlyContinue'
@@ -102,11 +102,11 @@ if (!$serviceCheck -or !$softwareCheck) {
 }
 ```
 
-**Criteria:**  `Contains`  
-**Operator:** `AND`  
-**Script Output:**  `Not Installed`  
-**Escalate ticket on script failure:** `False`  
-**Add Automation:**  `Install ImmyBot Agent`
+- **Criteria:**  `Contains`  
+- **Operator:** `AND`  
+- **Script Output:**  `Not Installed`  
+- **Escalate ticket on script failure:** `False`  
+- **Add Automation:**  `Install ImmyBot Agent`
 
 ![Image3](../../../static/img/docs/864e8d09-999f-4af5-87cc-1e0ad0222c62/image3.webp)
 
