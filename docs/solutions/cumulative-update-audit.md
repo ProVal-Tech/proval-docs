@@ -26,7 +26,7 @@ This solution checks the currently installed Cumulative Update on a Windows mach
 
 Create the following custom fields:
 
-- [Custom Field - cPVAL Cumulative Update Audit Status](/docs/a7c72ccd-b604-4d7f-aefe-3fd5393d7f01)6)
+- [Custom Field - cPVAL Cumulative Update Audit Status](/docs/a7c72ccd-b604-4d7f-aefe-3fd5393d7f01)
 
 ### Step 2
 
