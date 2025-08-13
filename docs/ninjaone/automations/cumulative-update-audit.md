@@ -18,7 +18,8 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
-![Image2](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/image2.webp)
+
+![Image2](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image2.webp)
 
 ## Dependencies
 
@@ -39,6 +40,6 @@ This Script validate the full version of the OS and compares it with Microsoft's
 ## Output
 
 - Activity Details 
-![Image1](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/image1.webp) 
+![Image1](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image1.webp) 
 - Custom Field
-![Image3](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/image3.webp)
+![Image3](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image3.webp)
