@@ -11,23 +11,20 @@ unlisted: false
 ---
 
 ## Summary
+
 This script sets the OneDrive Files On-Demand Policy settings at the system and user level.
+
+## File Hash
+
+**File Path:** `C:\ProgramData\_Automation\Script\OneDrive-OnDemandSettings\OneDrive-OnDemandSettings.ps1`  
+**File Hash (Sha256):** `59FC02D3967387BE216D32FA6D45CC85B3ECC311BBC3C021C51412356488EA4F`  
+**File Hash (MD5):** `4258BC7673023F53B76389AC5F04B2AB`  
 
 ## Sample Run
 
 ![SampleRun](../../../static/img/docs/5fab9cd8-be2b-4cfa-b910-ee3b6fc1611c/image.webp)
 
-## Process
-
-This script sets the OneDrive Files On-Demand Policy settings at the system and user level.
-This writes up a PowerShell file `OneDrive-OnDemandSettings.ps1` to the directory 
-`C:\ProgramData\_Automation\Script\OneDrive-OnDemandSettings`.
-
-Note: If partner uses the third-party application that blocks the ps1 execution, then please get the below hash whitelisted:
-
-Filehash: `F4D16149230C120A044676239926C56B`
-
 ## Output
 
 - Script log
-- Local file directory `C:\ProgramData\_Automation\Script\OneDrive-OnDemandSettings\OneDrive-OnDemandSettings-log.txt`
+- Local file:  `C:\ProgramData\_Automation\Script\OneDrive-OnDemandSettings\OneDrive-OnDemandSettings-log.txt`

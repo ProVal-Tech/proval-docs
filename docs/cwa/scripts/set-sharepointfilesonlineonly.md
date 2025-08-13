@@ -11,23 +11,20 @@ unlisted: false
 ---
 
 ## Summary
+
 This script sets the SharePoint files to online-only settings at the system and user level.
+
+## File Hash
+
+**File Path:** `C:\ProgramData\_automation\Script\SharePoint-OnlineOnly\SharePoint-OnlineOnly.ps1`  
+**File Hash (Sha256):** `4DA1059C81270FF5313B7BF8A1B77B6E050580E1BA728487D98BA681794A6665`  
+**File Hash (MD5):** `B2D07ECCA515DF825278B6A38EAB2D6E`  
 
 ## Sample Run
 
 ![SampleRun](../../../static/img/docs/5fab9cd8-be2b-4cfa-b910-ee3b6fc1611c/image1.webp)
 
-## Process
-
-This script sets the SharePoint files to online-only settings at the system and user level.
-This writes up a PowerShell file `SharePoint-OnlineOnly.ps1` to the directory 
-`C:\ProgramData\_Automation\Script\SharePoint-OnlineOnly`.
-
-Note: If partner uses the third-party application that blocks the ps1 execution, then please get the below hash whitelisted:
-
-Filehash: `B2D07ECCA515DF825278B6A38EAB2D6E`
-
 ## Output
 
 - Script log
-- Local file directory `C:\ProgramData\_Automation\Script\SharePoint-OnlineOnly\SharePoint-OnlineOnly-log.txt`
+- Local file: `C:\ProgramData\_Automation\Script\SharePoint-OnlineOnly\SharePoint-OnlineOnly-log.txt`
