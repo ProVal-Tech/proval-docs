@@ -5,7 +5,7 @@ title: 'Cumulative Update Audit'
 title_meta: 'Cumulative Update Audit'
 keywords: ['Cumulative', 'Update', 'Audit']
 description: ''
-tags: ['windows', 'compliance', 'updates', 'patching']
+tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
 ---

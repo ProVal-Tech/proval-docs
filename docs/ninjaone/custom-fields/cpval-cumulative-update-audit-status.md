@@ -5,7 +5,7 @@ title: 'cPVAL Cumulative Update Audit Status'
 title_meta: 'cPVAL Cumulative Update Audit Status'
 keywords: ['Cumulative', 'Update', 'Audit']
 description: 'Shows the most recently installed Windows Cumulative Update. Useful for verifying patch status and update compliance.'
-tags: ['windows', 'compliance', 'updates', 'patching']
+tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
 ---

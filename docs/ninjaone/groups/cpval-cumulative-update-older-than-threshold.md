@@ -5,7 +5,7 @@ title: 'cPVAL Cumulative Update Older than threshold Days'
 title_meta: 'cPVAL Cumulative Update Older than threshold Days'
 keywords: ['Cumulative', 'Update', 'Audit']
 description: 'Lists out the machines which has Cumulative Update Installed older than 75 days.'
-tags: ['windows', 'compliance', 'updates', 'patching']
+tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
 ---

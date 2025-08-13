@@ -5,7 +5,7 @@ title: 'Cumulative Update Audit'
 title_meta: 'Cumulative Update Audit'
 keywords: ['Cumulative', 'Update', 'Audit']
 description: 'This Script validate the full version of the OS and compares it with Microsoft database of Windows Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the Custom Field.'
-tags: ['windows', 'compliance', 'updates', 'patching']
+tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
 ---
