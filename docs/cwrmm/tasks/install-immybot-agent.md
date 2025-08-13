@@ -203,130 +203,129 @@ This script automates the installation of the ImmyBot Agent MSI installer with o
 
 .LINK
     For further documentation on fields and usage, see:
-    https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1
+    https://content.provaltech.com/docs/d0a57d05-71c0-495e-a055-803ad7a728ad
 
 .OUTPUTS
     C:\ProgramData\_Automation\App\IBAgent\IBAgent.log
 #>
 
-begin {
-    #region Globals
-    $ProgressPreference = 'SilentlyContinue'
-    $msiexecPath = 'C:\Windows\System32\msiexec.exe'
-    $softwareName = 'ImmyBot Agent'
-    $serviceName = 'ImmyBot Agent'
-    #endRegion
+#region Globals
+$ProgressPreference = 'SilentlyContinue'
+$msiexecPath = 'C:\Windows\System32\msiexec.exe'
+$softwareName = 'ImmyBot Agent'
+$serviceName = 'ImmyBot Agent'
+#endRegion
 
-    #region Variables
-    $appName = 'IBAgent'
-    $workingDirectory = '{0}\_Automation\App\{1}' -f $env:ProgramData, $appName
-    $tmpAppPath = '{0}\{1}.tmp' -f $workingDirectory, $appName
-    $appPath = [io.path]::ChangeExtension($tmpAppPath, '.msi')
-    $logPath = [io.path]::ChangeExtension($tmpAppPath, '.log')
-    #endRegion
+#region Variables
+$appName = 'IBAgent'
+$workingDirectory = '{0}\_Automation\App\{1}' -f $env:ProgramData, $appName
+$tmpAppPath = '{0}\{1}.tmp' -f $workingDirectory, $appName
+$appPath = [io.path]::ChangeExtension($tmpAppPath, '.msi')
+$logPath = [io.path]::ChangeExtension($tmpAppPath, '.log')
+#endRegion
 
-    #region CW RMM Variables
-    $immyBotTenant = ('@ImmyBotTenant@').Trim()
-    $immyBotInstallerID = ('@ImmyBotInstallerID@').Trim()
-    $immyBotInstallerKey = ('@ImmyBotInstallerKey@').Trim()
-    $reinstall = ('@ReinstallAgent@').Trim()
-    #endRegion
+#region CW RMM Variables
+$immyBotTenant = ('@ImmyBotTenant@').Trim()
+$immyBotInstallerID = ('@ImmyBotInstallerID@').Trim()
+$immyBotInstallerKey = ('@ImmyBotInstallerKey@').Trim()
+$reinstall = ('@ReinstallAgent@').Trim()
+#endRegion
 
-    #region Functions
-    function Search-Service {
-        [CmdletBinding()]
-        param (
-            [Parameter(Mandatory)][String]$ServiceName
-        )
-        if (Get-Service -Name $ServiceName -ErrorAction SilentlyContinue) {
-            return $true
-        } else {
-            return $false
-        }
-    }
-
-    function Get-ProductId {
-        [CmdletBinding()]
-        param (
-            [Parameter(Mandatory)][String]$SoftwareName
-        )
-        $uninstallPaths = @(
-            'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
-            'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-        )
-        $uninstallInfo = Get-ChildItem $uninstallPaths -ErrorAction SilentlyContinue |
-            Get-ItemProperty |
-            Where-Object { 
-                $_.DisplayName -match [Regex]::Escape($SoftwareName)
-            }
-        if ($uninstallInfo) {
-            return $uninstallInfo.PSChildName
-        } else {
-            return $null
-        }
-    }
-
-    function Uninstall-Software {
-        [CmdletBinding()]
-        param (
-            [Parameter(Mandatory)][String]$ProductId
-        )
-        $argumentList = @(
-            '/x',
-            $ProductId,
-            '/quiet',
-            '/norestart'
-        )
-        $UninstallProcess = Start-Process 'msiexec.exe' -ArgumentList $argumentList -Wait -PassThru
-        Start-Sleep -Seconds 5
-        return $UninstallProcess
-    }
-    #endRegion
-} process {
-    #region Set TLS version
-    $supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
-    if ( ($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12') ) {
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
-    } elseif ( $supportedTLSversions -contains 'Tls12' ) {
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+#region Functions
+function Search-Service {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)][String]$ServiceName
+    )
+    if (Get-Service -Name $ServiceName -ErrorAction SilentlyContinue) {
+        return $true
     } else {
-        throw 'TLS 1.2 or TLS 1.3 is not supported on this system. Please install ''KB3140245'' to fix this issue.'
-        if ($PSVersionTable.PSVersion.Major -lt 3) {
-            throw 'PowerShell 2 / .NET 2.0 does not support TLS 1.2.'
-        }
+        return $false
     }
+}
 
-    #region CW RMM Variables Check
-    if ([string]::IsNullOrEmpty($immyBotTenant) -or $immyBotTenant -match 'immyBotTenant') {
-        throw 'ImmyBot Tenant is missing. Please provide the tenant subdomain in the RunTime Variable ''ImmyBot Tenant'' (the part between ''https://'' and ''.immy.bot'').'
+function Get-ProductId {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)][String]$SoftwareName
+    )
+    $uninstallPaths = @(
+        'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+        'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
+    )
+    $uninstallInfo = Get-ChildItem $uninstallPaths -ErrorAction SilentlyContinue |
+        Get-ItemProperty |
+        Where-Object { 
+            $_.DisplayName -match [Regex]::Escape($SoftwareName)
+        }
+    if ($uninstallInfo) {
+        return $uninstallInfo.PSChildName
+    } else {
+        return $null
     }
-    if ($immyBotInstallerID -notmatch '^[\w\d]{8}(?:-[\w\d]{4}){3}-[\w\d]{12}$') {
-        throw @'
+}
+
+function Uninstall-Software {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)][String]$ProductId
+    )
+    $argumentList = @(
+        '/x',
+        $ProductId,
+        '/quiet',
+        '/norestart'
+    )
+    $UninstallProcess = Start-Process 'msiexec.exe' -ArgumentList $argumentList -Wait -PassThru
+    Start-Sleep -Seconds 5
+    return $UninstallProcess
+}
+#endRegion
+
+#region Set TLS version
+$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
+if ( ($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12') ) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+} elseif ( $supportedTLSversions -contains 'Tls12' ) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+} else {
+    throw 'TLS 1.2 or TLS 1.3 is not supported on this system. Please install ''KB3140245'' to fix this issue.'
+    if ($PSVersionTable.PSVersion.Major -lt 3) {
+        throw 'PowerShell 2 / .NET 2.0 does not support TLS 1.2.'
+    }
+}
+
+#region CW RMM Variables Check
+if ([string]::IsNullOrEmpty($immyBotTenant) -or $immyBotTenant -match 'immyBotTenant') {
+    throw 'ImmyBot Tenant is missing. Please provide the tenant subdomain in the RunTime Variable ''ImmyBot Tenant'' (the part between ''https://'' and ''.immy.bot'').'
+}
+if ($immyBotInstallerID -notmatch '^[\w\d]{8}(?:-[\w\d]{4}){3}-[\w\d]{12}$') {
+    throw @'
 No valid ImmyBot Installer ID found. Please enter the installer ID in the Client-Level Custom Field ''ImmyBot Agent Installer ID''.
-Refer to the script documentation for help: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1.
+Refer to the script documentation for help: https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951.
 '@
-    }
-    if ($immyBotInstallerKey -notmatch '^\S{44}$') {
-        throw @'
+}
+if ($immyBotInstallerKey -notmatch '^\S{44}$') {
+    throw @'
 A valid ImmyBot Installer Key is required. Set this key in the Client-Level Custom Field ''ImmyBot Installer Key''.
-See the script documentation for more information: https://content.provaltech.com/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1.
+See the script documentation for more information: https://content.provaltech.com/docs/569083f6-86cd-43ee-ae87-54a050c87951.
 '@
-    }
-    if ($reinstall -match '1|Yes|True') {
-        $reinstallAgent = $true
-    } else {
-        $reinstallAgent = $false
-    }
-    #endRegion
+}
+if ($reinstall -match '1|Yes|True') {
+    $reinstallAgent = $true
+} else {
+    $reinstallAgent = $false
+}
+#endRegion
 
-    #region Installation Check
-    $serviceCheck = Search-Service -ServiceName $serviceName
-    $softwareCheck = Get-ProductId -SoftwareName $softwareName
-
+#region Installation Check
+$serviceCheck = Search-Service -ServiceName $serviceName
+$softwareCheck = Get-ProductId -SoftwareName $softwareName
+if (!$reinstallAgent) {
     if (!$serviceCheck -and !$softwareCheck) {
         Write-Information 'ImmyBot Agent not found. Starting installation...' -InformationAction Continue
     } elseif (($softwareCheck -and !$serviceCheck) -or (!$softwareCheck -and $serviceCheck)) {
-        $reinstall = $true
+        $reinstallAgent = $true
         Write-Information 'Partial ImmyBot Agent installation detected. Starting reinstallation...' -InformationAction Continue
     } elseif ($softwareCheck -and $serviceCheck -and $reinstallAgent) {
         Write-Information 'ImmyBot Agent is installed and ''Reinstall Agent'' is enabled. Proceeding with reinstallation...' -InformationAction Continue
@@ -335,98 +334,98 @@ See the script documentation for more information: https://content.provaltech.co
     } else {
         Write-Information 'Starting ImmyBot Agent installation...' -InformationAction Continue
     }
-    #endRegion
+}
+#endRegion
 
-    #region Working Directory
-    if (!(Test-Path -Path $workingDirectory)) {
-        try {
-            Write-Information ('Creating working directory: {0}' -f $workingDirectory) -InformationAction Continue
-            New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
-        } catch {
-            throw ('Failed to create directory ''{0}''. Error message: {1}' -f $workingDirectory, $($Error[0].Exception.Message))
-        }
+#region Working Directory
+if (!(Test-Path -Path $workingDirectory)) {
+    try {
+        Write-Information ('Creating working directory: {0}' -f $workingDirectory) -InformationAction Continue
+        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+    } catch {
+        throw ('Failed to create directory ''{0}''. Error message: {1}' -f $workingDirectory, $($Error[0].Exception.Message))
     }
-    #endRegion
+}
+#endRegion
 
-    #region Uninstall
-    if ($reinstall) {
-        Write-Information 'Removing existing installation...' -InformationAction Continue
-        $productId = Get-ProductId -SoftwareName $softwareName
-        if ($productId) {
-            $uninstallProcessInfo = Uninstall-Software -ProductId $productId
-            if (!(Get-ProductId -SoftwareName $softwareName)) {
-                Write-Information ('{0} has been successfully uninstalled.' -f $softwareName) -InformationAction Continue
-            } else {
-                Write-Information ('Failed to uninstall {0}. Exit code: ''{1}''' -f $softwareName, $uninstallProcessInfo.ExitCode) -InformationAction Continue
-            }
+#region Uninstall
+if ($reinstallAgent) {
+    Write-Information 'Removing existing installation...' -InformationAction Continue
+    $productId = Get-ProductId -SoftwareName $softwareName
+    if ($productId) {
+        $uninstallProcessInfo = Uninstall-Software -ProductId $productId
+        if (!(Get-ProductId -SoftwareName $softwareName)) {
+            Write-Information ('{0} has been successfully uninstalled.' -f $softwareName) -InformationAction Continue
         } else {
-            Write-Information ('{0} is not installed.' -f $softwareName) -InformationAction Continue
+            Write-Information ('Failed to uninstall {0}. Exit code: ''{1}''' -f $softwareName, $uninstallProcessInfo.ExitCode) -InformationAction Continue
         }
+    } else {
+        Write-Information ('{0} is not installed.' -f $softwareName) -InformationAction Continue
     }
-    #endRegion
+}
+#endRegion
 
-    #region Download
-    $downloadUrl = 'https://{0}.immy.bot/plugins/api/v1/1/installer/latest-download' -f $immyBotTenant
-    try {
-        Write-Information 'Downloading ImmyBot Agent installer...' -InformationAction Continue
-        Invoke-WebRequest -Uri $downloadUrl -OutFile $appPath -UseBasicParsing -ErrorAction Stop
-    } catch {
-        throw $('Failed to download ImmyBot Agent from ''{0}''. Error details: {1}' -f $downloadUrl, $($Error[0].Exception.Message))
-    }
-    #endRegion
+#region Download
+$downloadUrl = 'https://{0}.immy.bot/plugins/api/v1/1/installer/latest-download' -f $immyBotTenant
+try {
+    Write-Information 'Downloading ImmyBot Agent installer...' -InformationAction Continue
+    Invoke-WebRequest -Uri $downloadUrl -OutFile $appPath -UseBasicParsing -ErrorAction Stop
+} catch {
+    throw $('Failed to download ImmyBot Agent from ''{0}''. Error details: {1}' -f $downloadUrl, $($Error[0].Exception.Message))
+}
+#endRegion
 
-    #region Installer parameters
-    $addr = 'https://{0}.immy.bot/plugins/api/v1/1' -f $immyBotTenant
-    $arguments = @(
-        '/i',
-        """$appPath""",
-        '/qn',
-        '/norestart',
-        '/l*v',
-        """$logPath""",
-        'REBOOT=REALLYSUPPRESS',
-        "ID=$immyBotInstallerID",
-        "ADDR=$addr",
-        "KEY=$immyBotInstallerKey"
-    )
-    #endRegion
+#region Installer parameters
+$addr = 'https://{0}.immy.bot/plugins/api/v1/1' -f $immyBotTenant
+$arguments = @(
+    '/i',
+    """$appPath""",
+    '/qn',
+    '/norestart',
+    '/l*v',
+    """$logPath""",
+    'REBOOT=REALLYSUPPRESS',
+    "ID=$immyBotInstallerID",
+    "ADDR=$addr",
+    "KEY=$immyBotInstallerKey"
+)
+#endRegion
 
-    #region Install
-    try {
-        Write-Information 'Starting installation...' -InformationAction Continue
-        $installationProcess = Start-Process -FilePath $msiexecPath -ArgumentList $arguments -PassThru -ErrorAction Stop -Wait
-    } catch {
-        throw ('Failed to start installation. Error: {0}' -f $($Error[0].Exception.Message))
-    }
-    #endRegion
+#region Install
+try {
+    Write-Information 'Starting installation...' -InformationAction Continue
+    $installationProcess = Start-Process -FilePath $msiexecPath -ArgumentList $arguments -PassThru -ErrorAction Stop -Wait
+} catch {
+    throw ('Failed to start installation. Error: {0}' -f $($Error[0].Exception.Message))
+}
+#endRegion
 
-    #region Verification
-    Start-Sleep -Seconds 30
-    $logContent = Get-Content -Path $logPath -ErrorAction SilentlyContinue | Select-Object -Last 200
-    if ($installationProcess.ExitCode -ne 0) {
-        throw @"
+#region Verification
+Start-Sleep -Seconds 30
+$logContent = Get-Content -Path $logPath -ErrorAction SilentlyContinue | Select-Object -Last 200
+if ($installationProcess.ExitCode -ne 0) {
+    throw @"
 Installation failed with exit code '$($installationProcess.ExitCode)'.
 Log output: $($logContent | Out-String)
 "@
-    }
+}
 
-    $serviceCheck = Search-Service -ServiceName $serviceName
-    $softwareCheck = Get-ProductId -SoftwareName $softwareName
-    if (!$serviceCheck -or !$softwareCheck) {
-        throw @"
+$serviceCheck = Search-Service -ServiceName $serviceName
+$softwareCheck = Get-ProductId -SoftwareName $softwareName
+if (!$serviceCheck -or !$softwareCheck) {
+    throw @"
 Installation was not successful.
 Log output: $($logContent | Out-String)
 "@
-    }
-
-    return 'ImmyBot Agent was installed successfully.'
-    #endRegion
-} end {
-    #region remove installer file
-    Write-Information 'Deleting installer file...' -InformationAction Continue
-    Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
-    #endRegion
 }
+
+Write-Information 'ImmyBot Agent was installed successfully.' -InformationAction Continue
+#endRegion
+
+#region remove installer file
+Write-Information 'Deleting installer file...' -InformationAction Continue
+Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
+#endRegion
 ```
 
 ![Image12](../../../static/img/docs/c2576ff2-e86f-43f7-94dc-462a7afbc7f1/image12.webp)
