@@ -368,112 +368,104 @@ Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as 'P
 
 ![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.webp)  
 
-In the script log message, simply type `Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler.`  
+In the script log message, simply type `Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler and checking the status of Prompter file creation in the working directory`  
 
-![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_47.webp)  
+![Log Message](../../../static/img/docs/reboot-prompter/image.png)
 
-### Row 19: Function: Create File
-
-![Create File](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_48.webp)  
-
-Create a file.  
-**Path:** `C:/ProgramData/_Automation/app/Prompter/Prompter.ps1`  
-
-![File Path](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_49.webp)  
-
-```powershell
-$ProjectName = 'Prompter'
-$BaseURL = 'https://file.provaltech.com/repo'
-$EXEURL = "$BaseURL/app/$ProjectName.exe"
-$WorkingDirectory = "C:\ProgramData\_automation\app\$ProjectName"
-$EXEPath = "$WorkingDirectory\$ProjectName.exe"
-New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
-$os = Get-CimInstance -Class Win32_OperatingSystem
-if ($os.Caption -match 'Windows 10|Windows 11') {
-    $proval_RebootForceTimeDelaySeconds = @RebootForceTimeDelaySeconds@
-    $proval_RebootPromptCount = @RebootPromptCount@
-    $file = "$WorkingDirectory\Prompter_Counter.txt"
-    $TimesPrompted = Get-Content -Path "$file" -ErrorAction SilentlyContinue
-    if ([string]::IsNullOrEmpty($TimesPrompted)) { $TimesPrompted = 0 } else { $TimesPrompted = [int]$TimesPrompted }
-    if ($TimesPrompted -eq 0) {
-        $files = @(
-            "C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt",
-            "C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt",
-            "C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt"
-        )
-        foreach ($file in $files) {
-            if (Test-Path $file) {
-                Remove-Item $file -ErrorAction SilentlyContinue -Force
-            }
-        }
-    }
-    $PromptMessage = "Would you like to restart now? If you choose to not reboot at this time you will be prompted $TimePrompted more times before being forced to reboot."
-    $loggedUsers = Get-CimInstance -Class Win32_ComputerSystem | Select-Object -ExpandProperty UserName
-    if ($null -eq $loggedUsers) {
-        Write-Output "No user logged in"
-        Exit
-    }
-    Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
-    if (!(Test-Path -Path $EXEPath)) {
-        Write-Output "No pre-downloaded app exists and the script $EXEURL failed to download. Exiting." 
-        return 1
-    }
-    if ($LASTEXITCODE -eq 1) {
-        Write-Output "$ExePath is missing"
-        Exit
-    }
-    $HeaderImage = "@Prompter_HeaderImage@"
-    $Icon = "@Prompter_Icon@"
-    $Timeout = @Prompter_Timeout@
-    $Title = "@Prompter_Title@"
-    $Theme = 'dark'
-    $ButtonType = 'Yes No'
-    $Message = "Your system has reached its reboot prompt deadline and will now reboot in $proval_RebootForceTimeDelaySeconds Seconds. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot.  Thank you!"
-    $Param = "-m `"$PromptMessage`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
-    $Result = cmd.exe /c "$EXEPath $Param"
-    $CurrentDate = Get-Date -Format "yyyy-MM-dd hh:mm:ss"
-    $Output = "User Action: " + $Result + "`r`n" + "User Action Date Time: " + $CurrentDate
-    $Output | Out-File "C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt" -Append
-    if ($Result -contains 'Yes') {
-        Write-Output " The end user has authorized Restarting computer" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
-    }
-    if ($Result -notcontains 'Yes') {
-        if ($TimesPrompted -eq $proval_RebootPromptCount) {
-            Write-Output " The threshold met. Sending force reboot prompt" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
-            $ButtonType = 'OK'
-            $Param = "-m `"$Message`" -i `"$Icon`" -h `"$HeaderImage`" -t `"$Title`" -b $ButtonType -e $Theme -o $Timeout"
-            $Result = cmd.exe /c "$EXEPath $Param"
-            $TimesPrompted = 0 
-            $TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
-        }
-        else {
-            $TimesPrompted++
-            Write-Output " Denial count: $TimesPrompted. Threshold: $proval_RebootPromptCount" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
-            $TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
-        }
-    }
-}
-else {
-    Write-Output " The operating system is not Windows 10 or 11." | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
-}
-```
-
-### Row 20: Function: Script Log
-
-![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.webp)  
-
-In the script log message, simply type `Checking the status of Prompter file creation in the working directory`
-
-![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_50.webp)  
-
-### Row 21: Function: PowerShell Script
+### Row 19: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.webp)  
-![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_51.webp)  
+![PowerShell Script](../../../static/img/docs/reboot-prompter/image-1.png)  
 
 Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
 
 ```powershell
+"`$ProjectName = 'Prompter'
+`$BaseURL = 'https://file.provaltech.com/repo'
+`$EXEURL = `"`$BaseURL/app/`$ProjectName.exe`"
+`$WorkingDirectory = `"C:\ProgramData\_automation\app\`$ProjectName`"
+`$EXEPath = `"`$WorkingDirectory\`$ProjectName.exe`"
+New-Item -Path `$WorkingDirectory -ItemType Directory -Force | Out-Null
+`$os = Get-CimInstance -Class Win32_OperatingSystem
+if (`$os.Caption -match 'Windows 10|Windows 11') {
+    `$proval_RebootForceTimeDelayMinutes = @RebootForceTimeDelayMinutes@
+    `$proval_RebootPromptCount = @RebootPromptCount@
+    `$file = `"`$WorkingDirectory\Prompter_Counter.txt`"
+    `$TimesPrompted = Get-Content -Path `"`$file`" -ErrorAction SilentlyContinue
+    if ([string]::IsNullOrEmpty(`$TimesPrompted)) { `$TimesPrompted = 0 } else { `$TimesPrompted = [int]`$TimesPrompted }
+    if (`$TimesPrompted -eq 0) {
+        `$files = @(
+            `"C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt`",
+            `"C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt`",
+            `"C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt`"
+        )
+
+        foreach (`$file in `$files) {
+            if (Test-Path `$file) {
+                Remove-Item `$file -ErrorAction SilentlyContinue -Force
+            }
+        }
+    }
+ `$PromptMessage = `"Would you like to restart now? If you choose not to reboot now, you have already been prompted `$TimesPrompted time(s). The number of times you can delay the reboot is `$proval_RebootPromptCount before being forced to reboot.`"
+    `$loggedUsers = Get-CimInstance -Class Win32_ComputerSystem | Select-Object -ExpandProperty UserName
+    if (`$null -eq `$loggedUsers) {
+        Write-Output `"No user logged in`"
+        Exit
+    }
+    Invoke-WebRequest -Uri `$EXEURL -UseBasicParsing -OutFile `$EXEPath
+    if (!(Test-Path -Path `$EXEPath)) {
+        Write-Output `"No pre-downloaded app exists and the script `$EXEURL failed to download. Exiting.`"
+        return 1
+    }
+    if (`$LASTEXITCODE -eq 1) {
+        Write-Output `"`$ExePath is missing`"
+        Exit
+    }
+    `$HeaderImage = `"@Prompter_HeaderImage@`"
+    `$Icon = `"@Prompter_Icon@`"
+    `$Timeout = @Prompter_Timeout@
+    `$Title = `"@Prompter_Title@`"
+    `$Theme = 'dark'
+    `$ButtonType = 'Yes No'
+    `$Param = `"-m `"`"`$PromptMessage`"`" -i `"`"`$Icon`"`" -h `"`"`$HeaderImage`"`" -t `"`"`$Title`"`" -b `$ButtonType -e `$Theme -o `$Timeout`"
+    `$Result = cmd.exe /c `"`$EXEPath `$Param`"
+    `$CurrentDate = Get-Date -Format `"yyyy-MM-dd hh:mm:ss`"
+    `$Output = `"User Action: `" + `$Result + `"`r`n`" + `"Date Time: `" + `$CurrentDate
+    `$Output | Out-File `"C:\ProgramData\_Automation\app\Prompter\Prompter_UserAction.txt`" -Append
+
+    if (`$Result -contains 'Yes') {
+        Write-Output `" The end user has authorized Restarting computer`" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
+        `$PromptForReboot = 'Thank you for approving. Your computer will restart in 5 minutes, please save your work.'
+        `$ButtonType = 'OK'
+        `$Param = `"-m `"`"`$PromptForReboot`"`" -i `"`"`$Icon`"`" -h `"`"`$HeaderImage`"`" -t `"`"`$Title`"`" -b `$ButtonType -e `$Theme -o `$Timeout`"
+        `$Result = cmd.exe /c `"`$EXEPath `$Param`"
+        `$TimesPrompted = 0
+        `$TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
+        Start-Sleep -Seconds 300
+        Restart-Computer -Force
+    }
+    if (`$Result -notcontains 'Yes') {
+        if (`$TimesPrompted -eq `$proval_RebootPromptCount) {
+            Write-Output `" The threshold met. Sending force reboot prompt`" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
+            `$Message = `"Your system has reached its reboot prompt deadline and will now reboot in `$proval_RebootForceTimeDelayMinutes Minutes. A reboot is necessary to keep things running smoothly and to fix potential vulnerabilities. Please save all your work to ensure nothing is lost during the reboot.  Thank you!`"
+            `$ButtonType = 'OK'
+            `$Param = `"-m `"`"`$Message`"`" -i `"`"`$Icon`"`" -h `"`"`$HeaderImage`"`" -t `"`"`$Title`"`" -b `$ButtonType -e `$Theme -o `$Timeout`"
+            `$Result = cmd.exe /c `"`$EXEPath `$Param`"
+            `$TimesPrompted = 0
+            `$TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
+            Start-Sleep -Seconds (`$proval_RebootForceTimeDelayMinutes * 60)
+            Restart-Computer -Force
+        }
+        else {
+            `$TimesPrompted++
+            Write-Output `" Denial count: `$TimesPrompted. Threshold: `$proval_RebootPromptCount`" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
+            `$TimesPrompted | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Counter.txt'
+        }
+    }
+}
+else {
+    Write-Output `" The operating system is not Windows 10 or 11.`" | Out-File 'C:\ProgramData\_Automation\app\Prompter\Prompter_Logging.txt' -Append
+}" | Out-File -FilePath "C:\ProgramData\_Automation\app\Prompter\Prompter.ps1" -force
 $ProjectName = 'Prompter'
 $file = "C:\ProgramData\_automation\app\$ProjectName\Prompter.ps1"
 if ((Test-Path -Path $file) -eq 'True') {
@@ -484,7 +476,7 @@ else {
 }
 ```
 
-### Row 22: Function: Script Log
+### Row 20: Function: Script Log
 
 ![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.webp)  
 
@@ -492,18 +484,18 @@ In the script log message, simply type `%output%`
 
 ![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_18.webp)  
 
-### Row 23: Logic: If/Then
+### Row 21: Logic: If/Then
 
 ![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_19.webp)  
 ![Logic If/Then](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_20.webp)  
 
-### Row 23a: Condition: Output Contains
+### Row 21a: Condition: Output Contains
 
 In the IF part, enter `file failed to create` in the right box of the "Output Contains" part.
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_52.webp)  
 
-### Row 23b: Function: Script Exit
+### Row 21b: Function: Script Exit
 
 Add a new row by clicking on the Add row button.
 
@@ -513,7 +505,7 @@ In the script exit message, simply type `%output%`
 
 ![Exit Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_53.webp)  
 
-### Row 24: Function: PowerShell Script
+### Row 22: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.webp)  
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_54.webp)  
@@ -545,41 +537,41 @@ catch {
 }
 ```
 
-### Row 25: Function: Script Log
+### Row 23: Function: Script Log
 
 In the script log message, simply type `%output%`  
 
 ![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_18.webp)  
 
-### Row 26: Logic: If/Then/Else
+### Row 24: Logic: If/Then/Else
 
 ![Logic If/Then/Else](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_55.webp)  
 ![Logic If/Then/Else](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_56.webp)  
 
-### Row 26a: Condition: Output Contains
+### Row 24a: Condition: Output Contains
 
 In the IF part, enter `Task created successfully` in the right box of the "Output Contains" part.  
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_57.webp)  
 
-### Row 26b: Function: Script Log
+### Row 24b: Function: Script Log
 
 Add a new row by clicking on the Add row button.
 
 In the script log message, simply type `%output%`.  
 
-### Row 26c: Function: Script Exit
+### Row 24c: Function: Script Exit
 
 Add a new row in the else section.  
 
 In the script exit message, simply type `%output%`.  
 
-### Row 27: Complete
+### Row 25: Complete
 
 Once all items are added, please save the task. The final task should look like the below screenshot.
 
 ![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_58.webp)  
-![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_59.webp)  
+![Final Task](../../../static/img/docs/reboot-prompter/image-2.png)  
 ![Final Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_60.webp)  
 
 ## Deployment
