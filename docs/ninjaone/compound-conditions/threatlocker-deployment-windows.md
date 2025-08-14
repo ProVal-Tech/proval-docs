@@ -1,8 +1,8 @@
 ---
 id: 'd7ba7616-f11d-4961-90fb-9e7cf9ed6f28'
 slug: /d7ba7616-f11d-4961-90fb-9e7cf9ed6f28
-title: 'Threatlocker Depoyment - Windows'
-title_meta: 'Threatlocker Depoyment - Windows'
+title: 'Threatlocker Deployment - Windows'
+title_meta: 'Threatlocker Deployment - Windows'
 keywords: ['Threatlocker','windows','auto-deploy', 'agent-policy']
 description: 'Triggers the auto-deployment script for Threatlocker on Windows machines where deployment is enabled'
 tags: ['security','setup','windows']
