@@ -17,8 +17,8 @@ This script sets the SharePoint files to online-only settings at the system and 
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\SharePoint-OnlineOnly\SharePoint-OnlineOnly.ps1`  
-**File Hash (Sha256):** `4DA1059C81270FF5313B7BF8A1B77B6E050580E1BA728487D98BA681794A6665`  
-**File Hash (MD5):** `B2D07ECCA515DF825278B6A38EAB2D6E`  
+**File Hash (Sha256):** `A77694879CF7BA16D35BBCD5F7B5C2EB29F070D8CA10CBE68F07D076AA084403`  
+**File Hash (MD5):** `21D97B1E929E573A64019913D01735DE`  
 
 ## Sample Run
 
