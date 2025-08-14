@@ -5,7 +5,7 @@ title: 'Install MSP360 Online Backup - Windows Server'
 title_meta: 'Install MSP360 Online Backup - Windows Server'
 keywords: ['backup', 'msp360', 'automation', 'windows']
 description: 'This compound condition is designed to execute the "Install MSP360 Online Backup" script on Windows servers where the "Online Backup" application is not installed and deployment is enabled via the "cPVAL Deploy MSP360" custom field.'
-tags: ['backup', 'automation', 'windows']
+tags: ['backup', 'application', 'software']
 draft: false
 unlisted: false
 ---

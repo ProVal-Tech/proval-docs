@@ -5,7 +5,7 @@ title: 'MSP360 Online Backup Deployment'
 title_meta: 'MSP360 Online Backup Deployment'
 keywords: ['backup', 'msp360', 'automation', 'windows']
 description: 'This solution enables automated deployment of MSP360 Online Backup agents to Windows servers and workstations through NinjaOne, using custom fields to control deployment scope and provide installation URLs.'
-tags: ['cleanup', 'security', 'windows']
+tags: ['backup', 'application', 'software'] 
 draft: false
 unlisted: false
 ---
