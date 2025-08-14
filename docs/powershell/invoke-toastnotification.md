@@ -207,8 +207,8 @@ Windows notification when you click `Feed at 8`:
 | AttributionText          | All                  | True     |                 | String   | Displays attribution text, such as a company name or website, for authenticity. |
 | BodyText1                | All                  | True     |                 | String   | The main text content of the notification body.                             |
 | BodyText2                | All                  | False    |                 | String   | Secondary text content displayed below `BodyText1`.                         |
-| LogoImage                | All                  | False    |                 | String   | Specifies the URL or path for the logo image in the notification.           |
-| HeroImage                | All                  | False    |                 | String   | Specifies the URL or path for the hero image displayed at the top of the notification. |
+| LogoImage                | All                  | False    |                 | String   | Specifies the URL or path for the logo image in the notification. For best experience, keep the ratio 1:1 (Horizontal:Vertical) ; Example - 300px:300px (Horizontal:Vertical)            |
+| HeroImage                | All                  | False    |                 | String   | Specifies the URL or path for the hero image displayed at the top of the notification. For best experience, keep the ratio 2:1 (Horizontal:Vertical); Example - 600px:300px (Horizontal:Vertical)   |
 | Deadline                 | All                  | False    | Current +14d    | DateTime | Sets the deadline for the notification. Format: yyyy-MM-dd HH:mm:ss.        |
 | NotificationAppName      | All                  | False    | Windows PowerShell | String | Specifies the name of the application that will display the notification.   |
 | MaxUptimeDays            | PendingRebootUptime  | False    | 30              | Int      | Defines the maximum uptime (in days) for the PendingRebootUptime parameter. Default is 30 days. |
