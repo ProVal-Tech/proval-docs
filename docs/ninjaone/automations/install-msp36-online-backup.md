@@ -31,7 +31,7 @@ Installs the MSP360 PowerShell module and the MSP360 Online Backup Agent (MBSAge
 
 ## Automation Setup/Import
 
-[Automation Configuration]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-msp36-online-backup.ps1))
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-msp36-online-backup.ps1)
 
 ## Output
 
