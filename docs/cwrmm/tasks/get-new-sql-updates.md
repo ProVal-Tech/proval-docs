@@ -34,9 +34,9 @@ Audits and generates a report on newly installed SQL-related Windows Updates sin
 
 ### Description
 
-**Name:** `Get New SQL Updates`  
-**Description:** `Audits and reports on new SQL-related Windows Updates since the last script run.`  
-**Category:** `Patching`
+- **Name:** `Get New SQL Updates`  
+- **Description:** `Audits and reports on new SQL-related Windows Updates since the last script run.`  
+- **Category:** `Patching`
 
 ![Image2](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image2.webp)
 
@@ -44,11 +44,11 @@ Audits and generates a report on newly installed SQL-related Windows Updates sin
 
 #### Step 1: Row -> PowerShell script
 
-**Use Generative AI Assist for script creation:** `False`  
-**Expected time of script execution in seconds:** `900`  
-**Operating System:** `Windows`  
-**Continue on Failure:** `True`  
-**PowerShell Script Editor:**
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `900`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `True`  
+- **PowerShell Script Editor:**
 
 ```PowerShell
 #requires -RunAsAdministrator
@@ -201,9 +201,9 @@ $($detectedUpdates | Format-List | Out-String)
 
 #### Step 2: Row -> Script Log
 
-**Script Log Message:** `%Output%`  
-**Continue on Failure:** `False`  
-**Operating System:** `Windows`
+- **Script Log Message:** `%Output%`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
 ![Image4](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image4.webp)
 
@@ -213,19 +213,19 @@ $($detectedUpdates | Format-List | Out-String)
 
 #### Step 3a: Condition -> Output Contains ( Detected Updates: )
 
-**Condition:** `Output`  
-**Operator:** `Contains`  
-**Input Values:** `Detected Updates:`
+- **Condition:** `Output`  
+- **Operator:** `Contains`  
+- **Input Values:** `Detected Updates:`
 
 ![Image6](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image6.webp)
 
 #### Step 3b: Row -> Create Ticket
 
-**Subject:** `New SQL Update(s) detected`  
-**Description:** `%Output%`  
-**Priority:** `Medium`  
-**Continue on Failure:** `False`  
-**Operating System:** `Windows`
+- **Subject:** `New SQL Update(s) detected`  
+- **Description:** `%Output%`  
+- **Priority:** `Medium`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
 ![Image7](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image7.webp)
 
@@ -265,19 +265,19 @@ MsrcSeverity : Important
 
 ### Task Details
 
-**Name:** `Get New SQL Updates`  
-**Description:** `Audits and reports on new SQL-related Windows Updates since the last script run.`  
-**Category:** `Patching`
+- **Name:** `Get New SQL Updates`  
+- **Description:** `Audits and reports on new SQL-related Windows Updates since the last script run.`  
+- **Category:** `Patching`
 
 ![Image9](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image9.webp)
 
 ### Schedule
 
-**Schedule Type:**  `Schedule`  
-**Timezone:** `Local Machine Time`  
-**Start:** `<Current Date>`  
-**Trigger:** `Time` `At` `<Current Time>`  
-**Recurrence:** `Every day`
+- **Schedule Type:**  `Schedule`  
+- **Timezone:** `Local Machine Time`  
+- **Start:** `<Current Date>`  
+- **Trigger:** `Time` `At` `<Current Time>`  
+- **Recurrence:** `Every day`
 
 ![Image10](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image10.webp)
 
