@@ -76,7 +76,7 @@ Configure the `Create Script` section as follows:
 
 **PowerShell And Variables**
 
-[Test-AdHealthAndRepair]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/test-adhealthandrepair.ps1))
+[Test-AdHealthAndRepair](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/test-adhealthandrepair.ps1)
 
 ## Saving the Automation
 
