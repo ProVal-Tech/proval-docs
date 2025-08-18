@@ -12,17 +12,18 @@ unlisted: false
 
 ## Summary
 
-This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck' being checked, and the agent should be available to check into the group.
+This dynamic group depends on the endpoint custom field `Auto_RebootPendingCheck` being checked, and the agent should be available to check into the group.
 
 ## Dependencies
 
-- Auto_RebootPendingCheck --> Custom field (Endpoint)  
+- Custom field (Endpoint) - `Auto_RebootPendingCheck`   
 - [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
 - [CW RMM - Task - Reboot Pending Check Automation](/docs/509ed97f-105b-47d7-8a66-f7da58da8138)  
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722) 
 
 ## Details
 
-| Field Name                            | Type of Field (Machine or Organization) | Description                                                                                                                                                        |
+| Group Name                            | Group Type | Description                                                                                                                                                        |
 |---------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reboot Prompter Deployment - Auto     | Dynamic Group                           | This dynamic group detects the agents where the custom field 'Auto_RebootPendingCheck' is checked. The custom field is automatically managed by the task 'Reboot Pending Check Automation'. |
 
@@ -38,8 +39,8 @@ This dynamic group depends on the endpoint custom field 'Auto_RebootPendingCheck
 
    **Criteria:**
 
-   - Prompter_RebootPending custom field equals False.
-   - Auto_RebootPendingCheck custom field equals True.
-   - The agent available equals True.
-   - The OS contains either Windows 10 or Windows 11.
-   - Exclude Reboot custom field equals False.
+   - `Prompter_RebootPending` custom field equals `False`.
+   - `Auto_RebootPendingCheck` custom field equals `True`.
+   - The agent `Available` equals `True`.
+   - The `OS` contains either `Windows 10` or `Windows 11`.
+   - `Exclude Reboot` custom field equals `False`.

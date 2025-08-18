@@ -17,7 +17,8 @@ The script prompts the user to reboot with a simple yes or no prompt. It also fo
 ## Dependencies
 
 - [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
-- [Dynamic Group - Reboot Pending Deployment](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20)  
+- [Dynamic Group - Reboot Pending Deployment](/docs/284c0ff4-381a-45c0-8282-aa6ac4c3da20) 
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722) 
 
 ## Sample Run
 
@@ -91,7 +92,8 @@ In the script log message, simply type `Installing the supported .NET version`
 ### Row 4: Function: PowerShell script
 
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.webp)  
-![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_17.webp)  
+
+
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
@@ -152,13 +154,13 @@ In the script log message, simply type `%Output%`
 
 ### Row 6a: Condition: Output Contains
 
-In the IF part, enter `Installation failed` in the right box of the "Output Contains" part.  
+In the `IF` part, enter `Installation failed` in the right box of the `Output Contains` part.  
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_21.webp)  
 
 ### Row 6b: Function: Script Exit
 
-Add a new row by clicking on the Add row button.  
+Add a new row by clicking on the `Add Row` button.  
 
 ![Add Row](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_22.webp)  
 
@@ -185,12 +187,12 @@ else {
 
 ### Row 8: Function: Set Custom Field
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Prompter_UserAction` field.  
 
-**Custom Field:** `Prompter_UserAction`  
-**Value:** `%output%`  
+- **Custom Field:** `Prompter_UserAction`  
+- **Value:** `%output%`  
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.webp)  
 
@@ -211,12 +213,12 @@ else {
 }
 ```
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Prompter_Logging` field.  
 
-**Custom Field:** `Prompter_Logging`  
-**Value:** `%output%`  
+- **Custom Field:** `Prompter_Logging`  
+- **Value:** `%output%`  
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.webp)  
 
@@ -237,12 +239,12 @@ else {
 }
 ```
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Prompter_Counter` field.  
 
-**Custom Field:** `Prompter_Counter`  
-**Value:** `%output%`  
+- **Custom Field:** `Prompter_Counter`  
+- **Value:** `%output%`  
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_25.webp)  
 
@@ -253,29 +255,29 @@ In this window, search for the `Prompter_Counter` field.
 
 ### Row 11a: Condition: Custom Field
 
-In the IF part, enter `0` in the right box of the "Custom Field" part where the custom field is 'Prompter_Counter'.  
+In the `IF` part, enter `0` in the right box of the "Custom Field" part where the custom field is `Prompter_Counter`.  
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_28.webp)  
 
 ### Row 11b: Function: Set Custom Field
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Prompter_RebootPending` field.  
 
-**Custom Field:** `Prompter_RebootPending`  
-**Value:** `False`  
+- **Custom Field:** `Prompter_RebootPending`  
+- **Value:** `False`  
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_29.webp)  
 
 ### Row 11c: Function: Set Custom Field
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Auto_RebootPendingCheck` field.  
 
-**Custom Field:** `Auto_RebootPendingCheck`  
-**Value:** `False`  
+- **Custom Field:** `Auto_RebootPendingCheck`  
+- **Value:** `False`  
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_30.webp)  
 
@@ -320,7 +322,7 @@ Leave it blank so that the script exits normally.
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_35.webp)  
 
-Click on Custom Field > Choose `RebootForceTimeDelayMinutes`. Then set the variable name as 'RebootForceTimeDelayMinutes'.
+Click on `Custom Field` > Choose `RebootForceTimeDelayMinutes`. Then set the variable name as `RebootForceTimeDelayMinutes`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_36.webp)  
 
@@ -328,7 +330,7 @@ Click on Custom Field > Choose `RebootForceTimeDelayMinutes`. Then set the varia
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_37.webp)  
 
-Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name as 'RebootPromptCount'.
+Click on `Custom Field` > Choose `RebootPromptCount`. Then set the variable name as `RebootPromptCount`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_38.webp)  
 
@@ -336,7 +338,7 @@ Click on Custom Field > Choose `RebootPromptCount`. Then set the variable name a
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_39.webp)  
 
-Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as 'Prompter_Title'.
+Click on `Custom Field` > Choose `Prompter_Title`. Then set the variable name as `Prompter_Title`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_40.webp)  
 
@@ -344,7 +346,7 @@ Click on Custom Field > Choose `Prompter_Title`. Then set the variable name as '
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_41.webp)  
 
-Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as 'Prompter_Timeout'.
+Click on `Custom Field` > Choose `Prompter_Timeout`. Then set the variable name as `Prompter_Timeout`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_42.webp)  
 
@@ -352,7 +354,7 @@ Click on Custom Field > Choose `Prompter_Timeout`. Then set the variable name as
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_43.webp)  
 
-Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable name as 'Prompter_HeaderImage'.
+Click on `Custom Field` > Choose `Prompter_HeaderImage`. Then set the variable name as `Prompter_HeaderImage`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_44.webp)  
 
@@ -360,7 +362,7 @@ Click on Custom Field > Choose `Prompter_HeaderImage`. Then set the variable nam
 
 ![Set Pre Defined Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_45.webp)  
 
-Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as 'Prompter_Icon'.
+Click on `Custom Field` > Choose `Prompter_Icon`. Then set the variable name as `Prompter_Icon`.
 
 ![Set Variable](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_46.webp)  
 
@@ -368,7 +370,7 @@ Click on Custom Field > Choose `Prompter_Icon`. Then set the variable name as 'P
 
 ![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.webp)  
 
-In the script log message, simply type `Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler and checking the status of Prompter file creation in the working directory`  
+In the script log message, simply type: `Creating the Prompter.ps1 file in the working directory for the Prompter exe execution using Task Scheduler and checking the status of Prompter file creation in the working directory`  
 
 ![Log Message](../../../static/img/docs/reboot-prompter/image.png)
 
@@ -491,13 +493,13 @@ In the script log message, simply type `%output%`
 
 ### Row 21a: Condition: Output Contains
 
-In the IF part, enter `file failed to create` in the right box of the "Output Contains" part.
+In the `IF` part, enter `file failed to create` in the right box of the "Output Contains" part.
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_52.webp)  
 
 ### Row 21b: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the `Add row` button.
 
 ![Add Row](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_22.webp)  
 
@@ -550,21 +552,19 @@ In the script log message, simply type `%output%`
 
 ### Row 24a: Condition: Output Contains
 
-In the IF part, enter `Task created successfully` in the right box of the "Output Contains" part.  
+In the `IF` part, enter `Task created successfully` in the right box of the "Output Contains" part.  
 
 ![Condition](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_57.webp)  
 
 ### Row 24b: Function: Script Log
 
-Add a new row by clicking on the Add row button.
-
-In the script log message, simply type `%output%`.  
+- Add a new row by clicking on the `Add row` button.
+- In the script log message, simply type `%output%`.  
 
 ### Row 24c: Function: Script Exit
 
-Add a new row in the else section.  
-
-In the script exit message, simply type `%output%`.  
+- Add a new row in the else section.  
+- In the script exit message, simply type `%output%`.  
 
 ### Row 25: Complete
 
@@ -592,7 +592,7 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 9. Change the number of hours to `2` and click `OK`.  
     ![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_64.webp)  
     ![Set Time](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_65.webp)  
-10. Search for `Reboot Prompter` in the `Resources*` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.  
+10. Search for `Reboot Prompter` in the `Resources` and select it. You can search and select any relevant group you would like to schedule the task against. If the site doesn't have a device group that includes all Windows agents, then create one and schedule the task on it.  
     ![Search Group](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_66.webp)  
 11. Now click the `Run` button to initiate the task.  
     ![Run Task](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_67.webp)  
