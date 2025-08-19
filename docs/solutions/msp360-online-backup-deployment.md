@@ -34,7 +34,7 @@ This solution automates the deployment of MSP360 Online Backup agents to Windows
 | Content | Function |
 | ------- | -------- |
 | [Install MSP360 Online Backup - Windows Workstation](/docs/9f4d1394-8444-44e3-a4a1-97d6b7c71f92) | Triggers agent install on workstations where MSP360 Deployment is enabled but the Online Backup application is not installed |
-| [Install MSP360 Online Backup - Windows Server](/docs/29f5ffd2-507f-4595-92eb-7d8956f30c88) | Triggers agent install on workstations where MSP360 Deployment is enabled but the Online Backup application is not installed |
+| [Install MSP360 Online Backup - Windows Server](/docs/29f5ffd2-507f-4595-92eb-7d8956f30c88) | Triggers agent install on Servers where MSP360 Deployment is enabled but the Online Backup application is not installed |
 
 ## Implementation
 

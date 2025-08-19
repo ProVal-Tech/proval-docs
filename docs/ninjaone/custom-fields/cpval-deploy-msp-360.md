@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-To choose the operating system(s) for deploying the MSP 360 Online Backup Agent.
+This custom field provides options to choose the operating system(s) for deploying the MSP 360 Online Backup Agent.
 
 **Notes:**
 

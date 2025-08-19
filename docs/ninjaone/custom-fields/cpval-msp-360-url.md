@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-MBS backup agent URL. Copy the link from MBS portal in Downloads section.
+This stores the MBS backup agent URL. Copy the link from MBS portal in Downloads section.
 
 **Notes:**
 
