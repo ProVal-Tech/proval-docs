@@ -187,19 +187,19 @@ In the script exit message, simply type `%output%`.
 It is suggested to run the Task every 2 hours against the group [Dynamic Group - Automatic Reboot Pending Check](/docs/1c798d37-8ff8-4e73-ba39-027e025a3551).
 
 - Go to `Automation` > `Tasks.`
-- Search for `Force Reboot Server With Reboot Windows Verification` Task.
+- Search for `Reboot Pending Check Automation` Task.
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.
 
-![Schedule Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_25.webp)
+![Schedule Task](../../../static/img/docs/reboot-pending-check-automation/image.png)
 
 This screen will appear.
 
-![Schedule Task Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_26.webp)
+![Schedule Task Continue](../../../static/img/docs/reboot-pending-check-automation/image-1.png)
 
 Select the relevant time to run the script and click the Do not repeat button.
 
-![Schedule Task Time](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_27.webp)
+![Schedule Task Time](../../../static/img/docs/reboot-pending-check-automation/image-2.png)
 
 A pop-up box will appear.
 
