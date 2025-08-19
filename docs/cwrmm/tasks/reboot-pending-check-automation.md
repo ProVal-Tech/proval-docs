@@ -19,7 +19,7 @@ This task is designed to automatically detect the reboot pending status on endpo
 - [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
     - Custom field (Endpoint)-  `Auto_RebootPendingCheck` 
 - [Dynamic Group - Automatic Reboot Pending Check](/docs/1c798d37-8ff8-4e73-ba39-027e025a3551)
-- [Solution - Reboot Prompter](/docs//5b376f62-e977-4feb-b523-b133d2ef5722) 
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722) 
 
 ## Sample Run
 
