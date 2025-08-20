@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script automates the deployment of the Zorus agent across Windows machines by downloading the required installer, executing the installation silently, and verifying that the agent is successfully installed.
+This script automates the deployment of the Zorus (Archon Agent) across Windows machines by downloading the required installer, executing the installation silently, and verifying that the agent is successfully installed.
 
 ## Sample Run
 

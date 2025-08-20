@@ -22,7 +22,7 @@ Search and select `SetinelOne Deployment`
 ![SampleRun1](../../../static/img/docs/4e0f294f-9ecf-42a2-9832-497d4305360e/image1.webp)
 
 ## Dependencies
-- [cPVAL SentinelOne Key](/docs/74d67a82-e052-4c3e-bbbf-1c30ce981de0)
+[cPVAL SentinelOne Key](/docs/44561301-d22b-4013-86af-d1842773d2ca)
 
 ## Automation Setup/Import
 
