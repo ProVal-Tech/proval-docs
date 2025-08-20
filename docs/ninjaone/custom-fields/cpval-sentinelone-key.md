@@ -14,16 +14,19 @@ unlisted: false
 
 This custom field at the organization level stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.
 
-**Note:** There's no need to create this custom field if the partner is already using another custom field to store the SentinelOne installation token or key.
+**Note:** 
+- For [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93), there's no need to create this custom field if the partner is already using another custom field to store the SentinelOne installation token or key.  
+- Mandatory for [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- |
-| cPVAL SentinelOne Key | cpvalSentineloneKey | Organization | Text | false | | Editable | Read/Write | Read/Write | SentinelOne Installation token. | SentinelOne Installation token. | SentinelOne Installation token. | SentinelOne |
+| cPVAL SentinelOne Key | cpvalSentineloneKey | Organization | Text | false | | Editable | Read/Write | Read/Write | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization. | Stores the Sentinel Site Key. The Site Key is used for organizing and managing endpoints based on their physical or logical network location within the organization.| SentinelOne Installation token. | SentinelOne |
 
 ## Dependencies
 - [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
+- [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
 
 ## Custom Field Creation
 
