@@ -16,9 +16,9 @@ The script validates whether the SentinelOne Management Server detected on the c
 
 ## Sample Run
 
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it blank>`  
-**S1 Key Custom Field Name:** `<If you're using the 'cPVAL SentinelOne Key' custom field to store the SentinelOne installer key or token, leave this field blank. Otherwise, enter the name of the client-level custom field where the SentinelOne installation key is stored.>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it blank>`  
+- **S1 Key Custom Field Name:** `<If you're using the 'cPVAL SentinelOne Key' custom field to store the SentinelOne installer key or token, leave this field blank. Otherwise, enter the name of the client-level custom field where the SentinelOne installation key is stored.>`  
 ![Image1](../../../static/img/docs/4d9087cb-0cf3-4ade-863f-3a14c9b73d5e/image1.webp)
 
 ## Dependencies
@@ -26,7 +26,7 @@ The script validates whether the SentinelOne Management Server detected on the c
 - [cPVAL SentinelOne Key](/docs/44561301-d22b-4013-86af-d1842773d2ca)
 - [cPVAL SentinelOne Mgmt Server Discrepancy](/docs/1de41dd5-c222-45cb-9b74-5ae45bb86dd8)
 - [cPVAL SentinelOne Mgmt Server Url](/docs/0691fe63-dd6b-4f15-8b39-dce377d9064a)
-
+- [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |

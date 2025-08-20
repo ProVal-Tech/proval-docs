@@ -23,6 +23,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 | cPVAL SentinelOne Key | cpvalSentineloneKey | Organization | Text | false | | Editable | Read/Write | Read/Write | SentinelOne Installation token. | SentinelOne Installation token. | SentinelOne Installation token. | SentinelOne |
 
 ## Dependencies
+- [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
 
 ## Custom Field Creation
 

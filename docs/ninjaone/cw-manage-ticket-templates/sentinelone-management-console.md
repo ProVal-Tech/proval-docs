@@ -22,6 +22,7 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Dependencies
 
 - [SentinelOne Management Console Validation](/docs/a947cc93-68a2-4ddc-a6dc-ae2cf4422c66)
+- [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
 
 ## Template Creation
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-SentinelOne Management Server Url fetched from the Endpoint
+This custom field stores the SentinelOne Management Server Url fetched from the Endpoint.
 
 ## Details
 
@@ -23,6 +23,7 @@ SentinelOne Management Server Url fetched from the Endpoint
 ## Dependencies
 
 - [SentinelOne Management Console Validation](/docs/4d9087cb-0cf3-4ade-863f-3a14c9b73d5e)
+- [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
 
 ## Custom Field Creation
 
