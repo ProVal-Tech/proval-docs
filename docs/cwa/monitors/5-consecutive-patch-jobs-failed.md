@@ -14,6 +14,10 @@ unlisted: false
 
 This monitor will detect machines that have had five failed patches in a row for Microsoft-based patches. The number of patch jobs stored in the `patchjobs` table for that computer determines how well this monitor will work.
 
+## Update Notice: 2025-08*21
+
+- Optimized the mySQL query
+
 ## Requirements
 
 1. A machine must have a minimum of 5 available patch jobs listed in the `patchjobs` table.
