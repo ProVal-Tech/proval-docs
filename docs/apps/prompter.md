@@ -15,12 +15,8 @@ unlisted: false
   <a href="https://content.provaltech.com/docs/aba254a9-e917-481d-9152-ecb6e990d98c">
     <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/aba254a9-e917-481d-9152-ecb6e990d98c/prompter.webp" alt="Logo" width="80" height="80" />
   </a>
-
-<h3 align="center">Prompter</h3>
-
-  <p align="center">
-    Display a prompt on the desktop!
-  </p>
+  <h3 align="center">Prompter</h3>
+  <p align="center">Display a prompt on the desktop!</p>
 </div>
 
 ## About
@@ -65,22 +61,22 @@ Prompter is meant to be launched from a command prompt and returns one to two va
 
 ### Arguments
 
-| Long Name            | Short Name | Example                       | Description                                                                                                                      |
-| -------------------- | ---------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------|
-| `--title`            | `-t`       | "My Prompt Title"             | The title of the window.                                                                                                         |
-| `--message`          | `-m`       | "You should reboot!"          | The message to display in the prompt. Use `\n` to add a new line to the message. `--htmlmessage` or `-l` parameter should be used with the HTML formatted messages.|
-| `--icon`             | `-i`       | "https://site.com/icon.png"   | Path (Local or URL) to an image to display in the taskbar.                                                                       |
-| `--headerimage`      | `-h`       | "https://site.com/header.png" | Path (Local or URL) to an image to display in the header of the prompt.                                                          |
-| `--theme`            | `-e`       | light                         | The theme to use for the prompt (dark, light). Will use the Windows default theme if not specified.                              |
-| `--datetimeselector` | `-d`       | N/A                           | Enable the date/time selector which will pass back an additional output to the console.                                          |
-| `--buttontypes`      | `-b`       | OK Cancel "Do Something"      | A space separated list of strings to display as buttons on the prompt. Defaults to "OK".                                         |
-| `--timeout`          | `-o`       | 60                            | The number of seconds to wait for input before closing the window. Will return 'Timer elapsed' on timeout.                       |
-| `--twelvehour`       | `-c`       | N/A                           | Make the time display in 12-hour time instead of 24-hour time.                                                                   |
-| `--datetimefromhours`| `-y`       | 0                             | The number of hours to add to the current time in order to set the starting point for the Date/Time selector.                    |
-| `--datetimetohours`  | `-z`       | 48                            | The number of hours to add to the initial time in the Date/Time selector in order to display the last available option to select.|
-| `--htmlmessage`      | `-l`       | N/A                           | Set this to true to enable to enable the HTML Decoding of the Message.                                                           |
-| `--userinput`        | `-u`       | N/A                           | Set this to true to enable the user input field.                                                                                 |
-| `--userinputtext`    | `-x`       | N/A                           | Set initial/help text for the user input field.                                                                                  |
+| Long Name             | Short Name | Example                       | Description                                                                                                                                                         |
+| --------------------- | ---------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--title`             | `-t`       | "My Prompt Title"             | The title of the window.                                                                                                                                            |
+| `--message`           | `-m`       | "You should reboot!"          | The message to display in the prompt. Use `\n` to add a new line to the message. `--htmlmessage` or `-l` parameter should be used with the HTML formatted messages. |
+| `--icon`              | `-i`       | "https://site.com/icon.png"   | Path (Local or URL) to an image to display in the taskbar.                                                                                                          |
+| `--headerimage`       | `-h`       | "https://site.com/header.png" | Path (Local or URL) to an image to display in the header of the prompt.                                                                                             |
+| `--theme`             | `-e`       | light                         | The theme to use for the prompt (dark, light). Will use the Windows default theme if not specified.                                                                 |
+| `--datetimeselector`  | `-d`       | N/A                           | Enable the date/time selector which will pass back an additional output to the console.                                                                             |
+| `--buttontypes`       | `-b`       | OK Cancel "Do Something"      | A space separated list of strings to display as buttons on the prompt. Defaults to "OK".                                                                            |
+| `--timeout`           | `-o`       | 60                            | The number of seconds to wait for input before closing the window. Will return 'Timer elapsed' on timeout.                                                          |
+| `--twelvehour`        | `-c`       | N/A                           | Make the time display in 12-hour time instead of 24-hour time.                                                                                                      |
+| `--datetimefromhours` | `-y`       | 0                             | The number of hours to add to the current time in order to set the starting point for the Date/Time selector.                                                       |
+| `--datetimetohours`   | `-z`       | 48                            | The number of hours to add to the initial time in the Date/Time selector in order to display the last available option to select.                                   |
+| `--htmlmessage`       | `-l`       | N/A                           | Set this to true to enable to enable the HTML Decoding of the Message.                                                                                              |
+| `--userinput`         | `-u`       | N/A                           | Set this to true to enable the user input field.                                                                                                                    |
+| `--userinputtext`     | `-x`       | N/A                           | Set initial/help text for the user input field.                                                                                                                     |
 
 ### Examples
 

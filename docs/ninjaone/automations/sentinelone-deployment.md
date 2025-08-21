@@ -6,7 +6,7 @@ title_meta: 'SentinelOne Deployment'
 keywords: ['sentinelone', 'agent', 'deployment', 'token', 'installation']
 description: 'This script automates the deployment of the Todyl Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['installation', 'security', 'software', 'windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -26,7 +26,7 @@ Search and select `SetinelOne Deployment`
 
 ## Automation Setup/Import
 
-[Automation Configuration]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/sentinelone-deployment.ps1))
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/sentinelone-deployment.ps1)
 
 ## Output
 

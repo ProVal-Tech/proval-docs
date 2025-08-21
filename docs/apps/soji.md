@@ -16,9 +16,7 @@ unlisted: false
         <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc/soji.webp" alt="Logo" width="150" height="150" />
     </a>
     <h3 align="center">掃除 (Sōji)</h3>
-    <p align="center">
-      A Windows drive cleaner.
-    </p>
+    <p align="center">A Windows drive cleaner.</p>
 </div>
 
 ## About

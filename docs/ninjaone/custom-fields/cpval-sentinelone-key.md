@@ -17,7 +17,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 **Note:**
 
 - For [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93), there's no need to create this custom field if the partner is already using another custom field to store the SentinelOne installation token or key.  
-- Mandatory for [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
+- Mandatory for [Automation - SentinelOne Deployment][1]
 
 ## Details
 
@@ -28,7 +28,7 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 ## Dependencies
 
 - [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
-- [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)
+- [Automation - SentinelOne Deployment][1]
 
 ## Custom Field Creation
 
@@ -36,11 +36,13 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
 
 ## FAQ
 
-1. Should this custom field be created if client is not using our script [SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)?  
+1. Should this custom field be created if client is not using our script [SentinelOne Deployment][1]?  
   -> No. If they are not using our script for deployment and has a custom field already created with different name, then this custom field is not required to be created.
 
-2. Should I create this custom field if client wants both, our [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93) and [Automation - SentinelOne Deployment](/docs/4e0f294f-9ecf-42a2-9832-497d4305360e)?  
+2. Should I create this custom field if client wants both, our [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93) and [Automation - SentinelOne Deployment][1]?  
   -> Yes.
 
 3. What if client is using different custom field to store the SentinelOne Key and wants to use our deployment script?  
   -> Create this custom field and migrate their key from the old to new if possible. Both the contents are using this custom field by default.
+
+[1]: /docs/4e0f294f-9ecf-42a2-9832-497d4305360e
