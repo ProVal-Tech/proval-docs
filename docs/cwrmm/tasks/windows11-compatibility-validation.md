@@ -269,8 +269,9 @@ It is suggested to run the Task once per month against [Windows 10 Machines](/do
 ![Save Schedule Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_42.webp)  
 - Click the `Select Targets` button to select the concerned target.  
 ![Select Targets Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_43.webp)  
-- Search and select the [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) Device Group for the target.  
-![Device Group Selection Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_44.webp)  
+- Search and select the [Windows 10 machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) and [Windows 11 machines](/docs/a3cdc948-d650-413e-8c02-3b549403f88f)
+
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image22.webp)   
 - Click the `Run` button to initiate the schedule.  
 ![Run Task Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_45.webp)  
 

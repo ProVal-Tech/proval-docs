@@ -37,9 +37,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 ### 2. Set Group Name and Description
 
 Set the group name to `Windows 11 incompatible machines`.  
-Description: `Windows 10 computers which are not compatible with Windows 11.`
+Description: `Windows 10 computers are not compatible with Windows 11.`
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_4.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image19.webp)
 
 ### 3. Add Criteria
 
@@ -77,12 +77,12 @@ Search and select the `OS` criteria.
 
 ![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_11.webp)
 
-Select `Microsoft Windows 10` in the comparison condition.
+Select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison condition.
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_12.webp)  
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_13.webp)
+ ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image16.webp)  
 
-**Condition:** `OS` `Contains any of` `Microsoft Windows 10`
+
+**Condition:** `OS` `Contains any of` `Microsoft Windows 10` and `Microsoft Windows 11`
 
 ### 6. Save the Group
 
@@ -92,5 +92,5 @@ Click the `Save` button to save/create the group.
 
 ## Completed Group
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_15.webp)  
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_16.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image20.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image21.webp)

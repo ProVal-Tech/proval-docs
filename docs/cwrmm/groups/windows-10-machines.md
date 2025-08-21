@@ -4,7 +4,7 @@ slug: /8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a
 title: 'Windows 10 Machines'
 title_meta: 'Windows 10 Machines'
 keywords: ['windows', 'group', 'dynamic', 'machines', 'criteria']
-description: 'This document provides a step-by-step guide on how to create a dynamic group for Windows 10 machines within the Kaseya VSA platform. It includes navigation instructions, setting group criteria, and saving the group.'
+description: 'This document provides a step-by-step guide on how to create a dynamic group for Windows 10 machines within the CW RMM platform. It includes navigation instructions, setting group criteria, and saving the group.'
 tags: ['setup', 'windows']
 draft: false
 unlisted: false

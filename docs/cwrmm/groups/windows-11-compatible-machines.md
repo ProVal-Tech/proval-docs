@@ -49,14 +49,16 @@ This document describes how to identify Windows 10 computers that are compatible
    ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_10.webp)  
    Search and select the `OS` criteria.  
    ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_11.webp)  
-   Select `Microsoft Windows 10` in the comparison condition.  
-   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_12.webp)  
-   **Condition:** `OS` `Contains any of` `Microsoft Windows 10`
+   Select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison condition. 
+
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image16.webp) 
+  
+   **Condition:** `OS` `Contains any of` `Microsoft Windows 10` and `Microsoft Windows 11`
 
 7. Click the `Save` button to save/create the group.  
    ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_13.webp)
 
 ## Completed Group 
 
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_14.webp)  
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image_15.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image18.webp)  
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image17.webp)
