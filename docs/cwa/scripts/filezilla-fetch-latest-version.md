@@ -14,6 +14,10 @@ unlisted: false
 
 The script fetches the latest version of FileZilla from its official website and saves it to the system property `Filezilla_Latest_Version`. *It requires at least one Windows 10/11 computer with FileZilla installed in the environment to function.*
 
+## Update Notice: 2025-08-21
+
+Updated the logic to fetch latest available version of Filezilla.
+
 ## Sample Run
 
 This is a client script and is recommended to be scheduled to run daily during working hours.  
