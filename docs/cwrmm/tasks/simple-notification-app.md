@@ -46,6 +46,10 @@ Using default values for non-mandatory parameters.
 
 ![Image4](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image4.webp)
 
+## Dependencies
+
+[SimpleNotification](/docs/df3d2cab-2568-4b41-b447-7b21ef64220b)
+
 ## User Parameters
 
 | Name      | Example                                                                                                       | Required | Description                                           |
