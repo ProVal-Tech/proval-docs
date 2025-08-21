@@ -27,6 +27,7 @@ The script validates whether the SentinelOne Management Server detected on the c
 - [cPVAL SentinelOne Mgmt Server Discrepancy](/docs/1de41dd5-c222-45cb-9b74-5ae45bb86dd8)
 - [cPVAL SentinelOne Mgmt Server Url](/docs/0691fe63-dd6b-4f15-8b39-dce377d9064a)
 - [Solution - SentinelOne Management Server Url Validation](/docs/5c97a683-f12f-4fb0-bc18-1720a561da93)
+
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
