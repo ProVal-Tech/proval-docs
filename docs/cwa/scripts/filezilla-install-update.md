@@ -14,11 +14,15 @@ unlisted: false
 
 The script installs the latest version of FileZilla on a Windows computer. If the application is missing, it will install it, and if outdated, it will update it to the latest version. When executed as an Autofix from an internal monitor with a configured ticket category, the script can generate a ticket in case of failure.
 
+## Update Notice: 2025-08-21
+
+Updated the logic to fetch latest available version and download url of Filezilla.
+
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Update-FileZilla\Update-FileZilla.ps1`  
-**File Hash (Sha256):** `052FCB4A5726EE426AA825ACE364D225D350C8A65829F6693E1527E974D8F168`  
-**File Hash (MD5):** `C3C3A88EBC04B3D4E821187ABFEDBF7B`
+**File Hash (Sha256):** `91C9358560F2DE0F85C41190B30755E621C5EF9293FA0857BD9183F11BDCCAED`  
+**File Hash (MD5):** `F9DF96EF5B0C372AC10E7FD293F3E2BE` 
 
 ## Sample Run
 
