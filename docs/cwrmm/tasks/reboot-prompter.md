@@ -281,7 +281,29 @@ In this window, search for the `Auto_RebootPendingCheck` field.
 
 ![Set Custom Field](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_30.webp)  
 
-### Row 11d: Function: PowerShell Script
+### Row 11d: Function: Set Custom Field
+
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
+
+In this window, search for the `Prompter_Logging` field.  
+
+- **Custom Field:** `Prompter_Logging`  
+- **Value:** ` `  
+
+![Set Custom Field](../../../static/img/docs/reboot-prompter/image-3.png)
+
+### Row 11e: Function: Set Custom Field
+
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
+
+In this window, search for the `Prompter_UserAction` field.  
+
+- **Custom Field:** `Prompter_UserAction`  
+- **Value:** ` `  
+
+![Set Custom Field](../../../static/img/docs/reboot-prompter/image-4.png)
+
+### Row 11f: Function: PowerShell Script
 
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_14.webp)  
 ![PowerShell Script](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_31.webp)  
@@ -303,7 +325,7 @@ if (Test-Path -Path "$File") {
 }
 ```
 
-### Row 11e: Function: Script Log
+### Row 11g: Function: Script Log
 
 ![Script Log](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_12.webp)  
 
@@ -311,7 +333,7 @@ In the script log message, paste `Removed the Task, Counter checker and the mach
 
 ![Log Message](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_32.webp)  
 
-### Row 11f: Function: Script Exit
+### Row 11h: Function: Script Exit
 
 ![Script Exit](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_33.webp)  
 ![Script Exit](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_34.webp)  
