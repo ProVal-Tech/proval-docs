@@ -46,6 +46,8 @@ phone = "000-000-0000"
 
 ## Usage
 
+Images should ideally be a 1:1 ratio and at least 200x200px for displaying in the notification window properly.
+
 ```shell
 SimpleNotification.exe --Message "Hello, World!" --ImageURL "https://raw.githubusercontent.com/ProVal-Tech/SimpleNotification/refs/heads/main/res/SimpleNotification.jpeg" --Email "myemail@somewhere.local" --Phone "000-000-0000"
 ```
