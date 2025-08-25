@@ -21,7 +21,7 @@ Installs the MSP360 PowerShell module and the MSP360 Online Backup Agent (MBSAge
 ## Dependencies
 
 - [cPVAL MSP 360 Url](/docs/7e18083b-6a0e-49da-8a08-cfe9c7fa3378)
-- [MSP360 Online Backup Deployment](2f783bba-4022-43d3-8bb4-a768f68fe8c2)
+- [MSP360 Online Backup Deployment](/docs/2f783bba-4022-43d3-8bb4-a768f68fe8c2)
 
 ## Custom Fields
 

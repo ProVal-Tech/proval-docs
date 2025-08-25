@@ -27,8 +27,22 @@ This custom field provides options to choose the operating system(s) for deployi
 
 ## Dependencies
 
-- [MSP360 Online Backup Deployment](2f783bba-4022-43d3-8bb4-a768f68fe8c2)
+- [MSP360 Online Backup Deployment](/docs/2f783bba-4022-43d3-8bb4-a768f68fe8c2)
 
 ## Custom Field Creation
 
 [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-deploy-msp-360.toml)
+
+## Sample ScreenShot
+
+**Organization:**
+
+![Image1](../../../static/img/docs/294f2f3e-1091-45b0-b764-b16ae054fad7/image1.webp)
+
+**Location:**
+
+![Image2](../../../static/img/docs/294f2f3e-1091-45b0-b764-b16ae054fad7/image2.webp)
+
+**Device:**
+
+![Image3](../../../static/img/docs/294f2f3e-1091-45b0-b764-b16ae054fad7/image3.webp)
