@@ -18,7 +18,7 @@ This solution checks the currently installed Cumulative Update on a Windows mach
 
 - [Automation - Cumulative Update Audit](/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991)
 - [Custom Field - cPVAL Cumulative Update Audit Status](/docs/a7c72ccd-b604-4d7f-aefe-3fd5393d7f01)
-- [Group - cPVAL Cumulative Update Older than threshold Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
+- [Group - cPVAL Cumulative Update Older than X Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
 
 ## Implementation
 
@@ -38,7 +38,7 @@ Create the following automations:
 
 Create the following group:
 
-- [Group - cPVAL Cumulative Update Older than threshold Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
+- [Group - cPVAL Cumulative Update Older than X Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
 
 ## FAQ
 
