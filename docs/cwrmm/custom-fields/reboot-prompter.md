@@ -16,7 +16,8 @@ The custom fields listed below are used in the Reboot Prompter Solution.
 
 ## Dependencies
 
-[CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b)
+- [CW RMM - Task - Reboot Prompter](/docs/8d171849-b417-4ce7-a75f-c9294aca045b)
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722) 
 
 ## Details
 
@@ -44,16 +45,19 @@ The custom fields listed below are used in the Reboot Prompter Solution.
    ![Step 2](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_2.webp)
 
 3. Create Custom Field  
-   Provide Name: **RebootForceTimeDelayMinutes**  
-   Select Level: **Site**  
+   - Name: **RebootForceTimeDelayMinutes**  
+   - Level: **Site**   
+
    ![Step 3](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_3.webp)  
    Then check the Type option:  
-   Type: **Text Box**  
+   - Type: **Text Box**  
+   
    ![Type Option](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_4.webp)  
    Then provide Default Value and Description:  
-   Default: **5**  
-   Description: This indicates how many minutes you would like to delay the forced reboot from when the user gets the prompt.  
-   Editable: **Yes**  
+      - Default: **5**  
+      - Description: This indicates how many minutes you would like to delay the forced reboot from when the user gets the prompt.  
+      - Editable: **Yes**   
+
    ![Default Value and Description](../../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_5.webp)  
    **Note:** Description is mandatory to be filled and it doesn't accept *'NEW LINE'.* Write everything in one phrase to describe the detail of the custom field.
 

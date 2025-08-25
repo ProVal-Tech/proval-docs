@@ -12,12 +12,14 @@ unlisted: false
 
 ## Summary
 
-This task is designed to automatically detect the reboot pending status on endpoints and check the custom field 'Auto_RebootPendingCheck' so that the agent gets added to the dynamic group [Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05).
+This task is designed to automatically detect the reboot pending status on endpoints and check the custom field `Auto_RebootPendingCheck` so that the agent gets added to the dynamic group [Reboot Prompter Deployment - Auto](/docs/93faad94-8731-4fd5-afd0-0ae2a669fc05).
 
 ## Dependencies
 
 - [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
-- Auto_RebootPendingCheck - Custom field (Endpoint)
+    - Custom field (Endpoint)-  `Auto_RebootPendingCheck` 
+- [Dynamic Group - Automatic Reboot Pending Check](/docs/1c798d37-8ff8-4e73-ba39-027e025a3551)
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722) 
 
 ## Sample Run
 
@@ -34,9 +36,9 @@ To implement this script, please create a new "PowerShell" style script in the s
 
 ![Create Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_3.webp)
 
-- **Name:** Reboot Pending Check Automation
-- **Description:** This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.
-- **Category:** Custom
+- **Name:** `Reboot Pending Check Automation`
+- **Description:** `This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.`
+- **Category:** `Custom`
 
 ![Task Details](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_4.webp)
 
@@ -113,7 +115,7 @@ In the IF part, enter `Module installed successfully` in the right box of the "O
 
 ### Row 4b: Function: PowerShell Script
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the `Add Row` button.
 
 ![Row 4b PowerShell](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_8.webp)
 
@@ -141,15 +143,15 @@ In the script log message, simply type `The Pending Reboot Requirement: %output%
 
 ### Row 4c.2: Condition: Output Contains
 
-In the IF part, enter `True` in the right box of the "Output Contains" part.
+In the `IF` part, enter `True` in the right box of the `Output Contains` part.
 
 ![Row 4c.2 Condition](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_19.webp)
 
 ### Row 4c.3: Function: Set Custom Field
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the `Add row` button.
 
-Select Function 'Set Custom Field'. When you select `set custom field`, it will open up a new window.
+Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
 
 In this window, search for the `Auto_RebootPendingCheck` field.
 
@@ -160,7 +162,7 @@ In this window, search for the `Auto_RebootPendingCheck` field.
 
 ### Row 4d: Function: Script Exit
 
-Add a new row by clicking on the Add row button.
+Add a new row by clicking on the `Add row` button.
 
 ![Row 4d Exit](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_21.webp)
 
@@ -170,7 +172,7 @@ In the script exit message, leave it blank.
 
 ### Row 4e: Condition: Script Exit
 
-Add a new row in the Else section and select `Script Exit`.
+Add a new row in the `Else` section and select `Script Exit`.
 
 In the script exit message, simply type `%output%`.
 
@@ -182,22 +184,22 @@ In the script exit message, simply type `%output%`.
 
 ## Deployment
 
-It is suggested to run the Task every 2 hours against the group `Reboot Pending Check Automation`.
+It is suggested to run the Task every 2 hours against the group [Dynamic Group - Automatic Reboot Pending Check](/docs/1c798d37-8ff8-4e73-ba39-027e025a3551).
 
 - Go to `Automation` > `Tasks.`
-- Search for `Force Reboot Server With Reboot Windows Verification` Task.
+- Search for `Reboot Pending Check Automation` Task.
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.
 
-![Schedule Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_25.webp)
+![Schedule Task](../../../static/img/docs/reboot-pending-check-automation/image.png)
 
 This screen will appear.
 
-![Schedule Task Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_26.webp)
+![Schedule Task Continue](../../../static/img/docs/reboot-pending-check-automation/image-1.png)
 
 Select the relevant time to run the script and click the Do not repeat button.
 
-![Schedule Task Time](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_27.webp)
+![Schedule Task Time](../../../static/img/docs/reboot-pending-check-automation/image-2.png)
 
 A pop-up box will appear.
 

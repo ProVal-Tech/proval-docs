@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor creates a ticket on servers where the reboot is pending. It detects only supported Windows servers, i.e., 2016, 2019, and 2022, and it only works when the Reboot Prompter Solution is activated.
+This monitor creates a ticket on servers where the reboot is pending. It detects only supported Windows servers, i.e., 2016, 2019, and 2022. It only works when the Reboot Prompter Solution is activated and `Auto_RebootPendingCheck` custom field is enabled on servers.
 
 ## Details
 
@@ -22,23 +22,21 @@ This should target the group as shown below:
 
 ## Dependencies
 
-[CW RMM - Dynamic Group - Reboot Pending Servers](/docs/d6235892-7f62-4a75-83ef-c6c01cc43898)
+- [CW RMM - Dynamic Group - Reboot Pending Servers](/docs/d6235892-7f62-4a75-83ef-c6c01cc43898)
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722)
 
 ## Implementation
 
-1. From the left bar, select **Alert Management** -> **Monitor**  
+1. From the left bar, select `Endpoints` > `Alerts` > `Monitors`. Then click `Create Monitor` from right side.
    
-   ![Alert Management](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_2.webp)  
-   Then click **Create Monitor**  
    
-   ![Create Monitor](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_3.webp)
 
 2. Fill in the mandatory fields on the left side.  
-   - **Name:** Reboot Pending - Servers  
-   - **Description:** This monitor creates a ticket on servers where the reboot is pending. It detects only supported Windows servers, i.e., 2016, 2019, and 2022, and it only works when the Reboot Prompter Solution is activated.  
-   - **Type:** Custom Field  
-   - **Severity:** Critical Non-Impact Alerts  
-   - **Family:** Windows Server  
+   - **Name:** `Reboot Pending - Servers ` 
+   - **Description:** `This monitor creates a ticket on servers where the reboot is pending. It detects only supported Windows servers, i.e., 2016, 2019, and 2022, and it only works when the Reboot Prompter Solution is activated.  `
+   - **Type:** `Custom Field`  
+   - **Severity:** `Critical Non-Impact Alerts`  
+   - **Family:** `Windows Server`  
    
    ![Mandatory Fields](../../../static/img/docs/b456d0ae-a456-4a35-85c2-c9b44eef2844/image_4.webp)
 

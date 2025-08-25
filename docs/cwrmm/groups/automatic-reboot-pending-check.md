@@ -16,13 +16,14 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
 
 ## Dependencies
 
-- Auto_RebootPendingCheck --> Custom field (Endpoint)  
+- Custom field (Endpoint) - `Auto_RebootPendingCheck`   
 - [CW RMM - Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)  
 - [CW RMM - Task - Reboot Pending Check Automation](/docs/509ed97f-105b-47d7-8a66-f7da58da8138)  
+- [Solution - Reboot Prompter](/docs/5b376f62-e977-4feb-b523-b133d2ef5722)
 
 ## Details
 
-| Field Name                        | Type of Field (Machine or Organization) | Description                                                                                                                                               |
+| Group Name                        | Group Type| Description                                                                                                                                               |
 |-----------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Automatic Reboot Pending Check     | Dynamic group                           | This group is designed to schedule the task 'Reboot Pending Check Automation' to set the auto reboot pending automation by checking the custom field 'Auto_RebootPendingCheck'. |
 
@@ -35,7 +36,7 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
    ![Image](../../../static/img/docs/1c798d37-8ff8-4e73-ba39-027e025a3551/image_2.webp)  
 
    Criteria:
-   - Prompter_RebootPending custom field equal to False.
-   - Auto_RebootPendingCheck custom field equal to False.
-   - The agent available is equal to True.
-   - The OS contains any of Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server, and Windows 2022 Server.
+   - `Prompter_RebootPending` custom field equal to `False`.
+   - `Auto_RebootPendingCheck` custom field equal to `False`.
+   - The agent `Available` is equal to `True`.
+   - The `OS` contains any of `Windows 10`, `Windows 11`, `Windows 2016 Server`, `Windows 2019 Server`, and `Windows 2022 Server`.
