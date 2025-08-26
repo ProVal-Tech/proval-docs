@@ -14,6 +14,14 @@ unlisted: false
 
 This document outlines the process for updating FileZilla to the latest version on Windows machines using CW Automate.
 
+## Update Notice: 2025-08-21
+
+The logic used in the solution to fetch the latest available version for FileZilla is updated.  
+Resync the following scripts from `ProSync` plugin to import the changes:
+
+- [Script - FileZilla - Fetch Latest Version](/docs/71141737-d88f-43d3-9e75-e3f5468f888f)  
+- [Script - FileZilla - Install/Update](/docs/154e2b72-d73f-4693-a316-7a296e4793ec)  
+
 ## Associated Content
 
 | Content | Type | Function |
@@ -52,8 +60,7 @@ Schedule [FileZilla - Fetch Latest Version](/docs/71141737-d88f-43d3-9e75-e3f546
 Configure the solution as follows:
 
 - Navigate to `Automation` → `Monitors` within the CWA Control Center and set up the following:  
-
-    - [Internal Monitor - Update FileZilla](/docs/ea7ef637-8620-499a-a982-a805a11e14c7)  
+  - [Internal Monitor - Update FileZilla](/docs/ea7ef637-8620-499a-a982-a805a11e14c7)  
     - Configure with the alert template: `△ Custom - Execute Script - FileZilla - Install/Update`  
     - **Validate that there are no results reporting in the monitor** and right-click and run now to start the monitor.
 
