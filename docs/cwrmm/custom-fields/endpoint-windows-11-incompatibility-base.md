@@ -18,7 +18,7 @@ Stores the result returned by the [Windows 11 Compatibility Validation](/docs/67
 
 | Field Name                            | Level    | Type      | Default Value | Description                                                            | Editable |
 |---------------------------------------|----------|-----------|---------------|------------------------------------------------------------------------|----------|
-| Windows 11 Incompatibility Base       | Endpoint | Text Box  |               | What causes a Windows 10 computer to be incompatible with Windows 11? | Yes      |
+| Windows 11 Incompatibility Base       | Endpoint | Text Box  |               | What causes a Windows 10/11 computer to be incompatible with Windows 11 latest version? | Yes      |
 
 ## Screenshot
 

@@ -4,7 +4,7 @@ slug: /6b52f66a-4b64-4d36-9f9f-74379510cf68
 title: 'Windows 11 incompatible machines'
 title_meta: 'Windows 11 incompatible machines'
 keywords: ['windows', 'group', 'incompatible', 'machines', 'custom', 'criteria']
-description: 'This document provides a step-by-step guide on how to create a dynamic group in ConnectWise RMM for Windows 10 computers that are not compatible with Windows 11. It includes instructions on setting up custom fields and criteria to accurately identify incompatible machines.'
+description: 'This document provides a step-by-step guide on how to create a dynamic group in ConnectWise RMM for Windows 10/11 computers that are not compatible with Windows 11. It includes instructions on setting up custom fields and criteria to accurately identify incompatible machines.'
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to identify Windows 10 computers that are not compatible with Windows 11.
+This document describes how to identify Windows 10/11 computers that are not compatible with Windows 11 upgrade.
 
 ## Dependencies
 
@@ -36,10 +36,10 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### 2. Set Group Name and Description
 
-Set the group name to `Windows 11 incompatible machines`.  
-Description: `Windows 10 computers which are not compatible with Windows 11.`
+- Group name: `Windows 11 incompatible machines`.  
+- Description: `Windows 10/11 computers are not compatible with Windows 11 upgrade.`
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_4.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image30.webp)
 
 ### 3. Add Criteria
 
@@ -61,7 +61,7 @@ Set `No` in the comparison condition.
 
 ![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_8.webp)
 
-**Condition:** `Enable Windows 11 Compatible` `Contains any of` `No`
+- **Condition:** `Enable Windows 11 Compatible` `Contains any of` `No`
 
 ### 5. Add Additional Criteria
 
@@ -77,20 +77,20 @@ Search and select the `OS` criteria.
 
 ![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_11.webp)
 
-Select `Microsoft Windows 10` in the comparison condition.
+Select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison condition.
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_12.webp)  
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_13.webp)
+ ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image16.webp)  
 
-**Condition:** `OS` `Contains any of` `Microsoft Windows 10`
+
+- **Condition:** `OS` `Contains any of` `Microsoft Windows 10` and `Microsoft Windows 11`
 
 ### 6. Save the Group
 
 Click the `Save` button to save/create the group.
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_14.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image31.webp)
 
 ## Completed Group
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_15.webp)  
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_16.webp)
+
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image32.webp)
