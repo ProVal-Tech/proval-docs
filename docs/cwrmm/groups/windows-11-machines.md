@@ -4,7 +4,7 @@ slug: /a3cdc948-d650-413e-8c02-3b549403f88f
 title: 'Windows 11 Machines'
 title_meta: 'Windows 11 Machines'
 keywords: ['windows', 'group', 'dynamic', 'machines', 'criteria']
-description: 'This document provides a step-by-step guide on how to create a dynamic group for Windows 10 machines within the CW RMM platform. It includes navigation instructions, setting group criteria, and saving the group'
+description: 'This document provides a step-by-step guide on how to create a dynamic group for Windows 11 machines within the CW RMM platform. It includes navigation instructions, setting group criteria, and saving the group'
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
@@ -17,6 +17,7 @@ This document outlines the process for creating a dynamic group specifically for
 ## Group Creation
 
 1. Navigate to `Devices` > `Device Groups`.
+   
    ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_1.webp)
 
 2. Create a new dynamic group by clicking the `Dynamic Group` button.  

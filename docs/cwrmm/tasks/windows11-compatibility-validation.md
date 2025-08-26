@@ -4,7 +4,7 @@ slug: /676de0c3-b6a2-4a82-bf87-6d00395a7dff
 title: 'Windows 11 Compatibility Validation'
 title_meta: 'Windows 11 Compatibility Validation'
 keywords: ['windows', 'compatibility', 'validation', 'upgrade', 'task']
-description: 'This document provides a comprehensive guide to verify if a Windows 10 PC is compatible with Windows 11, including sample runs, dependencies, task creation steps, and deployment instructions.'
+description: 'This document provides a comprehensive guide to verify if a Windows 10/11 PC is compatible with Windows 11, including sample runs, dependencies, task creation steps, and deployment instructions.'
 tags: ['windows']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Verify if a Windows 10 PC is compatible with Windows 11.
+Verify if a Windows 10/11 PC is compatible with Windows 11.
 
 ## Sample Run
 
@@ -22,8 +22,9 @@ Verify if a Windows 10 PC is compatible with Windows 11.
 ## Dependencies
 
 - [Device Group - Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96)  
-- [Custom Field - Endpoint - Windows 11 incompatibility Base](/docs/7894870c-b7e8-44e0-806c-c948f151fc49)  
+- [Custom Field - Endpoint - Windows 11 incompatible](/docs/7894870c-b7e8-44e0-806c-c948f151fc49)  
 - [Device Group - Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a)  
+- [Device Group - Windows 11 machines](/docs/a3cdc948-d650-413e-8c02-3b549403f88f)
 
 ## Variables
 
@@ -38,9 +39,9 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ![Task Creation Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_4.webp)  
 
 **Name:** Windows 11 Compatibility Validation  
-**Description:** Verify if a Windows 10 PC is compatible with Windows 11.  
+**Description:** Verify if a Windows 10/11 PC is compatible with Windows 11.  
 **Category:** Patching  
-![Task Creation Image 3](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_5.webp)  
+![Task Creation Image 3](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image33.webp)  
 
 ## Task
 
@@ -254,15 +255,15 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Deployment
 
-It is suggested to run the Task once per month against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a).
+It is suggested to run the Task once per month against [Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a) and [Windows 11 machines](/docs/a3cdc948-d650-413e-8c02-3b549403f88f).
 
 - Go to `Automation` > `Tasks.`
-- Search for `Windows 10 Machines` Task.
+- Search for `Windows 11 Compatibility Validation`.
 - Select the concerned task.
 - Click on the `Schedule` button to schedule the task/script.  
 ![Schedule Task Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_39.webp)  
 - This screen will appear.  
-![Schedule Screen Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_40.webp)  
+![Schedule Screen Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image34.webp)
 - Select the `Schedule` button and click the calendar icon present in front of the `Recurrence` option.  
 ![Recurrence Option Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_41.webp)  
 - Select the `Month(s)` for the `Repeat`, set `1` for `Dates`, and click the `OK` button to save the schedule.  
@@ -273,7 +274,7 @@ It is suggested to run the Task once per month against [Windows 10 Machines](/do
 
 ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image22.webp)   
 - Click the `Run` button to initiate the schedule.  
-![Run Task Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_45.webp)  
+![Run Task Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image35.webp)  
 
 ## Output
 

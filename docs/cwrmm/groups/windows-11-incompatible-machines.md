@@ -4,7 +4,7 @@ slug: /6b52f66a-4b64-4d36-9f9f-74379510cf68
 title: 'Windows 11 incompatible machines'
 title_meta: 'Windows 11 incompatible machines'
 keywords: ['windows', 'group', 'incompatible', 'machines', 'custom', 'criteria']
-description: 'This document provides a step-by-step guide on how to create a dynamic group in ConnectWise RMM for Windows 10 computers that are not compatible with Windows 11. It includes instructions on setting up custom fields and criteria to accurately identify incompatible machines.'
+description: 'This document provides a step-by-step guide on how to create a dynamic group in ConnectWise RMM for Windows 10/11 computers that are not compatible with Windows 11. It includes instructions on setting up custom fields and criteria to accurately identify incompatible machines.'
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to identify Windows 10 computers that are not compatible with Windows 11.
+This document describes how to identify Windows 10/11 computers that are not compatible with Windows 11.
 
 ## Dependencies
 
@@ -37,9 +37,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 ### 2. Set Group Name and Description
 
 Set the group name to `Windows 11 incompatible machines`.  
-Description: `Windows 10 computers are not compatible with Windows 11.`
+Description: `Windows 10/11 computers are not compatible with Windows 11.`
 
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image19.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image30.webp)
 
 ### 3. Add Criteria
 
@@ -88,9 +88,9 @@ Select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison condi
 
 Click the `Save` button to save/create the group.
 
-![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_14.webp)
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image31.webp)
 
 ## Completed Group
 
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image20.webp)
-![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image21.webp)
+
+![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image32.webp)
