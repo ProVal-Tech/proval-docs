@@ -32,7 +32,8 @@ Please follow the [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82
 ## FAQ
 
 - Does it is required to run this on the Windows 11 machines too?
-- I couldn't find anything concrete that 100% validates that devices will not go to 24H2 if they are not compatible. However, everything always pointed back to checking the system requirements. So I think that might confirmation enough for us to say that Microsoft will not allow machines to 24H2 unless they are compatible.
+
+ I couldn't find anything concrete that 100% validates that devices will not go to 24H2 if they are not compatible. However, everything always pointed back to checking the system requirements. So I think that might confirmation enough for us to say that Microsoft will not allow machines to 24H2 unless they are compatible.
 
 I do believe that this could be skirted if you installed the ISO locally. But that is not something we can do, obviously.
 

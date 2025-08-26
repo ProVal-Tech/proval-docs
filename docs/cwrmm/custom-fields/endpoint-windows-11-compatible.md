@@ -1,8 +1,8 @@
 ---
 id: '99719e54-ce8f-4b76-93f4-cc832a3b88cf'
 slug: /99719e54-ce8f-4b76-93f4-cc832a3b88cf
-title: 'Endpoint - Windows 11 Compatible'
-title_meta: 'Endpoint - Windows 11 Compatible'
+title: 'Windows 11 Compatible'
+title_meta: 'Windows 11 Compatible'
 keywords: ['windows', 'compatibility', 'check', 'requirement', 'install']
 description: 'This document provides a summary and detailed information about the Windows 10/11 compatibility check, indicating whether a computer meets the necessary requirements for installing Windows 11. It includes a table of fields, their types, options, and default values, along with relevant screenshots for visual reference.'
 tags: ['performance', 'setup', 'windows']

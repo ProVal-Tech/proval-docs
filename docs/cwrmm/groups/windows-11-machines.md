@@ -16,7 +16,7 @@ This document outlines the process for creating a dynamic group specifically for
 
 ## Group Creation
 
-1. Navigate to `Devices` > `Device Groups`.
+1. Navigate to `Endpoints` > `Devices`.
    
    ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_1.webp)
 
@@ -25,8 +25,9 @@ This document outlines the process for creating a dynamic group specifically for
    The following page will appear after clicking the `Dynamic Group` button:  
    ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_3.webp)
 
-3. Set the group name to `Windows 11 Machines`.  
-   Description: `Windows 11 Machines`  
+3. Set below:
+   - Group name = `Windows 11 Machines`.  
+   - Description: `Windows 11 Machines`    
   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image24.webp)
 
 4. Click the `+ Add Criteria` button in the `Criteria` section of the group.  
@@ -36,10 +37,13 @@ This document outlines the process for creating a dynamic group specifically for
 
 5. Search for and select the `OS` criteria.  
    ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_7.webp)  
+
    Select `Microsoft Windows 11` in the comparison condition.  
-  ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image26.webp) 
-  ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image23.webp) 
-   **Condition:** `OS` `Contains any of` `Microsoft Windows 11`
+
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image26.webp)  
+
+   ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image23.webp) 
+   - **Condition:** `OS` `Contains any of` `Microsoft Windows 11`
 
    Click the `Save` button to save/create the group.  
 

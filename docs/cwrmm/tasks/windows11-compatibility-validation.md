@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Verify if a Windows 10/11 PC is compatible with Windows 11.
+Verify if a Windows 10/11 PC is compatible with Windows 11 upgrade.
 
 ## Sample Run
 
@@ -26,11 +26,7 @@ Verify if a Windows 10/11 PC is compatible with Windows 11.
 - [Device Group - Windows 10 Machines](/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a)  
 - [Device Group - Windows 11 machines](/docs/a3cdc948-d650-413e-8c02-3b549403f88f)
 
-## Variables
 
-| Name   | Description                         |
-|--------|-------------------------------------|
-| Output | Output of the PowerShell Script.    |
 
 ## Task Creation
 
@@ -38,9 +34,9 @@ Create a new `Script Editor` style script in the system to implement this Task.
 ![Task Creation Image 1](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_3.webp)  
 ![Task Creation Image 2](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_4.webp)  
 
-**Name:** Windows 11 Compatibility Validation  
-**Description:** Verify if a Windows 10/11 PC is compatible with Windows 11.  
-**Category:** Patching  
+- **Name:** Windows 11 Compatibility Validation  
+- **Description:** Verify if a Windows 10/11 PC is compatible with Windows 11.  
+- **Category:** Patching  
 ![Task Creation Image 3](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image33.webp)  
 
 ## Task
@@ -165,23 +161,28 @@ Mark the `Continue on Failure` checkbox for the function.
 
 ### Row 2 Function: Set Custom Field
 
-Add a new row with the `Add Row` button.  
-A blank function will appear.  
+- Add a new row with the `Add Row` button.  
+- A blank function will appear.   
+
 ![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp)  
 
 Search and select `Set Custom Field` Function.  
 ![Set Custom Field Image 7](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
+
 ![Set Custom Field Image 8](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp)  
 
-Search and select `Windows 11 incompatible Base` in the `Search Custom Field` field, set `%Output%` in the `Value` field, and click the `Save` button.  
+Search and select `Windows 11 incompatible Base` in the `Search Custom Field`. Set `%Output%` in the `Value` field, and click the `Save` button.  
+
 ![Set Custom Field Image 9](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_34.webp)  
+
 ![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_35.webp)
 
 
 ### Row 3 Function: Script Log
 
-Add a new row with the `Add Row` button.  
-A blank function will appear.  
+- Add a new row with the `Add Row` button.  
+- A blank function will appear.  
+
 ![Blank Function Image](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_7.webp) 
 
 Search and select `Script Log` Function. 
@@ -221,10 +222,12 @@ A blank function will appear.
 
 Search and select `Set Custom Field` Function.  
 ![Set Custom Field Image 7](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_17.webp)  
+
 ![Set Custom Field Image 8](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_18.webp) 
 
 Search and select `Windows 11 Compatible` in the `Search Custom Field` field, set `Yes` in the `Value` field, and click the `Save` button.
 ![Image](../../../static/img/docs/windows11-compatibility-validation/image-6.png)
+
 ![Image](../../../static/img/docs/windows11-compatibility-validation/image-7.png)
 
 ##### Row 4a(ii) Function: Set Custom Field
@@ -241,6 +244,7 @@ Search and select `Set Custom Field` Function.
 
 Search and select `Windows 11 Compatible` in the `Search Custom Field` field and set `No` in the `Value` field and click the `Save` button.
 ![Set Custom Field Image 9](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_47.webp)  
+
 ![Set Custom Field Image 10](../../../static/img/docs/007d88ec-68b1-45fa-8d95-9c279218ac3c/image_48.webp)   
 
 ---

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document describes how to identify Windows 10/11 computers that are not compatible with Windows 11.
+This document describes how to identify Windows 10/11 computers that are not compatible with Windows 11 upgrade.
 
 ## Dependencies
 
@@ -36,8 +36,8 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### 2. Set Group Name and Description
 
-Set the group name to `Windows 11 incompatible machines`.  
-Description: `Windows 10/11 computers are not compatible with Windows 11.`
+- Group name: `Windows 11 incompatible machines`.  
+- Description: `Windows 10/11 computers are not compatible with Windows 11 upgrade.`
 
 ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image30.webp)
 
@@ -61,7 +61,7 @@ Set `No` in the comparison condition.
 
 ![Image](../../../static/img/docs/6b52f66a-4b64-4d36-9f9f-74379510cf68/image_8.webp)
 
-**Condition:** `Enable Windows 11 Compatible` `Contains any of` `No`
+- **Condition:** `Enable Windows 11 Compatible` `Contains any of` `No`
 
 ### 5. Add Additional Criteria
 
@@ -82,7 +82,7 @@ Select `Microsoft Windows 10` and `Microsoft Windows 11` in the comparison condi
  ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image16.webp)  
 
 
-**Condition:** `OS` `Contains any of` `Microsoft Windows 10` and `Microsoft Windows 11`
+- **Condition:** `OS` `Contains any of` `Microsoft Windows 10` and `Microsoft Windows 11`
 
 ### 6. Save the Group
 
