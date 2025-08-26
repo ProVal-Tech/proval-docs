@@ -16,12 +16,14 @@ This document outlines how to run an internet speed test via the Ookla SpeedTest
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Test-InternetSpeed\Test-InternetSpeed.ps1`  
-**File Hash (Sha256):** `2D70C5A612F8C8165FD0A5B47A24239306A83B489C930261C767873E553211E9`  
-**File Hash (MD5):** `33998CAE3EA48E30B2045BD1995BF129`  
-**File Path:** `C:\ProgramData\_automation\Script\Test-InternetSpeed\Test-InternetSpeedAI.ps1`  
-**File Hash (Sha256):** `2279B5673CE633C7CBC5448833473332D02ED33DB3E9A9EFFB6DDBD231E57403`  
-**File Hash (MD5):** `5FF7C683388CC6B45875035BC8C4ACD7`  
+- **File Path:** `C:\ProgramData\_automation\Script\Test-InternetSpeed\Test-InternetSpeed.ps1`  
+    - **File Hash (Sha256):** `2D70C5A612F8C8165FD0A5B47A24239306A83B489C930261C767873E553211E9`  
+    - **File Hash (MD5):** `33998CAE3EA48E30B2045BD1995BF129`  
+
+
+- **File Path:** `C:\ProgramData\_automation\Script\Test-InternetSpeed\Test-InternetSpeedAI.ps1`  
+    - **File Hash (Sha256):** `2279B5673CE633C7CBC5448833473332D02ED33DB3E9A9EFFB6DDBD231E57403`  
+    - **File Hash (MD5):** `5FF7C683388CC6B45875035BC8C4ACD7`  
 
 ## Sample Run
 
