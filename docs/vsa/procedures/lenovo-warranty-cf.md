@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used to update the Custom filed with the leneovo warranty end date ([Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)).
+This script is used to update the custom field with the Lenovo warranty end date ([Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)).
 
 ## Sample Run
 
@@ -62,11 +62,11 @@ This script is used to update the Custom filed with the leneovo warranty end dat
 |Name                 | Description            |
 |-----------------------|---------------------------------------------------|
 |Manufacturer  | This shows the Manafucturer fetched from VSA|
-|Dir  |      %ProgramData%\_automation\AgentProcedure\get-lenovowarranty|
+|Dir  |      %ProgramData%\ _automation\AgentProcedure\get-lenovowarranty|
 
 ## Managed Files
 
-[get-lenovowarranty](../../../static/attachments/get-lenovowarranty.ps1)
+[Get-LenovoWarranty](../../../static/attachments/get-lenovowarranty.ps1)
 
 ## Output
 

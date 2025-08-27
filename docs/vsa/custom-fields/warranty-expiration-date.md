@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This Custom filed is used to show the warrently expiration date of any lenovo machine
+This custom field is used to show the warranty expiration date of Lenovo machines.
 
 ## Dependencies
 
@@ -20,7 +20,6 @@ This Custom filed is used to show the warrently expiration date of any lenovo ma
 
 ## Details
 
-| Field Name                 | Type of Field (Machine or Organization) | Description |
-| ----------                 | ---------------------------------------                 | ----------- |
-
-| Warranty Expiration Date | Machine                                  | This Custom filed is used to show the warrently expiration date of any lenovo machine |
+| Field Name| Type of Field (Machine or Organization) | Description |
+|----------|---------------------------------------|----------- |
+| Warranty Expiration Date | Machine                                  | This Custom field is used to show the warranty expiration date of Lenovo machines. |
