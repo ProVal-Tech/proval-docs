@@ -31,8 +31,8 @@ unlisted: false
 >
 > - Users with an Administrator role can navigate to Account > Settings.
 > - Click on API Keys > Custom API Keys.
-> - Enter a name for the key and click Generate API Key. You will not be able to > view a key again after it has been generated.
-> - For security, an optional Password Access setting is provided for each API key. > Password values can be accessed from the Passwords API only if this setting is > enabled.
+> - Enter a name for the key and click Generate API Key. You will not be able to view a key again after it has been generated.
+> - For security, an optional Password Access setting is provided for each API key. Password values can be accessed from the Passwords API only if this setting is enabled.
 > - To generate multiple API keys, click the plus sign icon.
 
 2. Install the StickySync.dll in the Plugin Manager of Automate.
