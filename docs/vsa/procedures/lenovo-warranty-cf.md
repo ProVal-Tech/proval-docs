@@ -1,8 +1,8 @@
 ---
 id: 'ae08bde8-3c4e-48d2-a390-d772b279db6d'
 slug: /ae08bde8-3c4e-48d2-a390-d772b279db6d
-title: 'Lenovo Warranty CF'
-title_meta: 'Lenovo Warranty CF'
+title: 'Lenovo Warranty [CF]'
+title_meta: 'Lenovo Warranty [CF]'
 keywords: ['lenovo', 'warranty', 'lenovo-warranty']
 description: 'This script is used to update the Custom filed with the leneovo warranty end date'
 tags: ['auditing', 'custom-fields', 'lenovo']
