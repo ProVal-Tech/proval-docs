@@ -20,10 +20,10 @@ This script is designed to deliver a one-time, customized message to the partner
 
 Using custom value for each parameter.  
 
-**Message:** `Hello there, it''s time to leave for the day. Good night!`  
-**ImageUrl:** `https://contentrepo.net/repo/share/logo.png`  
-**Email:** `ram.kishor@provaltech.com`  
-**Phone:** `1234567891`
+- **Message:** `Hello there, it''s time to leave for the day. Good night!`  
+- **ImageUrl:** `https://contentrepo.net/repo/share/logo.png`  
+- **Email:** `ram.kishor@provaltech.com`  
+- **Phone:** `1234567891`
 
 ![Image1](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image1.webp)
 
@@ -35,10 +35,10 @@ Using custom value for each parameter.
 
 Using default values for non-mandatory parameters.
 
-**Message:** `Hello there, it''s time to leave for the day. Good night!`  
-**ImageUrl:** ``  
-**Email:** ``  
-**Phone:** ``
+- **Message:** `Hello there, it''s time to leave for the day. Good night!`  
+- **ImageUrl:** ' '
+- **Email:** ' '
+- **Phone:** ' '
 
 ![Image3](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image3.webp)
 
