@@ -46,6 +46,21 @@ Using default values for non-mandatory parameters.
 
 ![Image4](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image4.webp)
 
+### Example 3
+
+Using custom value for each parameter.
+
+- **Message:** `It''s not just a secret mission—it''s a fashion emergency! Bond and I are armed with suspicious sunglasses, maximum sparkle, and a missile that might be a hairdryer. If we don''t save the world, we''ll at least confuse the villains with our fabulousness and questionable accessories!`  
+- **ImageUrl:** `https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg`
+- **Email:** `ram.kishor@provaltech.com`
+- **Phone:** `1234567890`
+
+![Image14](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image14.webp)
+
+**Notification:**
+
+![Image15](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image15.webp)
+
 ## Dependencies
 
 [SimpleNotification](/docs/df3d2cab-2568-4b41-b447-7b21ef64220b)
@@ -119,34 +134,35 @@ Using default values for non-mandatory parameters.
 - **PowerShell Script Editor:**  
 
 ```PowerShell
+$ProgressPreference = 'SilentlyContinue'
+$ConfirmPreference = 'None'
+
 $message = '@Message@'
 $image = '@ImageUrl@'
 $email = '@Email@'
 $phone = '@Phone@'
 
-if ([string]::IsNullOrEmpty($message)) {
+if ([string]::IsNullOrEmpty($message) -or $message -match 'Message@$') {
     throw 'Error: Message is required to run the task.'
 } elseif ($message.Length -gt 300) {
     throw 'Error: Message exceeds the maximum length of 300 characters.'
 }
 
-if ($image -match 'ImageUrl@$') {
+if ($image -match 'ImageUrl@$' -or !$image) {
     $image = ''
 }
 
-if ($email -match 'Email@$') {
+if ($email -match 'Email@$' -or !$email) {
     $email = ''
 }
 
-if ($phone -match 'Phone@$') {
+if ($phone -match 'Phone@$' -or !$phone) {
     $phone = ''
 }
 
-$ProgressPreference = 'SilentlyContinue'
-
 $loggedInUser = (Get-CimInstance -ClassName Win32_ComputerSystem).UserName
 if (!$loggedInUser) {
-    return '[Warn] No user is currently logged in.'
+    return 'Warning: No user is currently logged in.'
 }
 
 $SupportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
@@ -155,22 +171,23 @@ if ( ($SupportedTLSversions -contains 'Tls13') -and ($SupportedTLSversions -cont
 } elseif ( $SupportedTLSversions -contains 'Tls12' ) {
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
-    Write-Information '[Warn] TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!' -InformationAction Continue
+    Write-Information 'Warning: TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!' -InformationAction Continue
     if ($PSVersionTable.PSVersion.Major -lt 3) {
-        Write-Information '[Warn] PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.' -InformationAction Continue
+        Write-Information 'Warning: PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.' -InformationAction Continue
     }
 }
 
 $URL = 'https://github.com/ProVal-Tech/SimpleNotification/releases/latest/download/SimpleNotification.exe'
-$WorkingDirectory = 'C:\ProgramData\_automation\script\SimpleNotification'
-$EXEPath = Join-Path -Path $WorkingDirectory -ChildPath 'SimpleNotification.exe'
-$ConfigFile = Join-Path -Path $WorkingDirectory -ChildPath 'config.toml'
+$appName = 'SimpleNotification'
+$WorkingDirectory = '{0}\_automation\script\Run-SimpleNotification' -f $env:ProgramData
+$EXEPath = '{0}\{1}.exe' -f $WorkingDirectory, $appName
+$ConfigFile = '{0}\config.toml' -f $WorkingDirectory
 
 if (-not (Test-Path -Path $WorkingDirectory)) {
     try {
         New-Item -Path $WorkingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
     } catch {
-        throw "ERROR: Failed to create $WorkingDirectory. Reason: $($_.Exception.Message)"
+        throw ('ERROR: Failed to create {0}. Reason: {1}' -f $WorkingDirectory, $Error[0].Exception.Message)
     }
 }
 
@@ -181,7 +198,7 @@ if (-not ((Get-Acl -Path $WorkingDirectory).Access | Where-Object { $_.IdentityR
         $Acl.AddAccessRule($AccessRule)
         Set-Acl -Path $WorkingDirectory -AclObject $Acl
     } catch {
-        throw "ERROR: Failed to set permissions on $WorkingDirectory. Reason: $($_.Exception.Message)"
+        throw ('ERROR: Failed to set permissions on {0}. Reason: {1}' -f $WorkingDirectory, $Error[0].Exception.Message)
     }
 }
 
@@ -196,7 +213,7 @@ try {
         throw 'ERROR: Failed to download SimpleNotification.exe. Exiting.'
     }
 } catch {
-    throw "ERROR: Failed to download file. Reason: $($_.Exception.Message)"
+    throw ('ERROR: Failed to download file. Reason: {0}' -f $Error[0].Exception.Message)
 }
 
 $content = @"
@@ -210,7 +227,7 @@ $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
 try {
     [System.IO.File]::WriteAllLines($ConfigFile, $content, $Utf8NoBomEncoding)
 } catch {
-    throw "ERROR: Failed to write config file. Reason: $($_.Exception.Message)"
+    throw ('ERROR: Failed to write config file. Reason: {0}' -f $Error[0].Exception.Message)
 }
 
 $TaskName = 'Simple Notification'
@@ -229,15 +246,14 @@ $TriggerTime = (Get-Date).AddSeconds(20)
 $Trigger = New-ScheduledTaskTrigger -Once -At $TriggerTime
 
 $Settings = New-ScheduledTaskSettingsSet
-$Principal = New-ScheduledTaskPrincipal -GroupId ((New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545')).Translate([System.Security.Principal.NTAccount]).Value)
+$Principal = New-ScheduledTaskPrincipal -GroupId ((New-Object System.Security.Principal.SecurityIdentifier('S-1-5-32-545')).Translate([System.Security.Principal.NTAccount]).Value) -RunLevel Highest
 
 try {
     Register-ScheduledTask -Action $Action -Trigger $Trigger -TaskName $TaskName -Description $Description -Settings $Settings -Principal $Principal | Out-Null
-    Write-Output 'Task created successfully.'
+    return 'Task created successfully.'
 } catch {
-    throw "ERROR: Failed to create scheduled task. Reason: $($_.Exception.Message)"
+    throw ('ERROR: Failed to create scheduled task. Reason: {0}' -f $Error[0].Exception.Message)
 }
-
 ```
 
 ![Image11](../../../static/img/docs/165a2ce7-105e-41f5-a4b1-48f362515b31/image11.webp)
