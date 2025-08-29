@@ -19,6 +19,7 @@ This script is designed to deliver a one-time, customized message to the partner
 **File Path:** `C:\ProgramData\_automation\Script\Run-SimpleNotification\Run-SimpleNotification.ps1`  
 **File Hash (Sha256):** `436B5392177E8980BB9260A4836DDEF03D3B4F2814FFB201419D448246CD6C01`  
 **File Hash (MD5):** `38C6FD44FF80351059C8FDC2A5ED29D2`  
+
 **File Path:** `C:\ProgramData\_automation\Script\Run-SimpleNotification\SimpleNotification.exe`  
 **File Hash (Sha256):** `1AE4D2EE58285E0D37D89BA654CCC2205A98A108205BCC1FE14100974F16103A`  
 **File Hash (MD5):** `1C7B2CB1A3F7436467A01A716EFBA691`  
@@ -65,7 +66,7 @@ The message parameter is mandatory to display the message to the user. All other
 | Name | Value |
 | ---- | ----- |
 | ImageURL | `https://labtech.provaltech.com/labtech/transfer/images/alogo.jpg` |
-| Message | `They said it's a secret mission, but I say it's a fashion emergency—Bond and I are armed with style and suspicious sunglasses!` |
+| Message | `They said it's a secret mission, but I say it's a fashion emergency—Bond and I am armed with style and suspicious sunglasses!` |
 | Email | `ram.kishor@provaltech.com` |
 | Phone | `1234565432` |
 
