@@ -85,7 +85,7 @@ This script automates the deployment of the CrowdStrike Windows Sensor (Falcon A
 
 ![Image6](../../../static/img/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae/image6.webp)
 
-#### Row 4: PowerShell script
+#### Row 3: PowerShell script
 
 - **Use Generative AI Assist for script creation:** `False`  
 - **Expected time of script execution in seconds:** `600`  
@@ -269,12 +269,12 @@ Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
 
 ![Image7](../../../static/img/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae/image7.webp)
 
-#### Row 5: Script Log
+#### Row 4: Script Log
 
 - **Script Log Message:** `%Output%`  
 - **Operating System:** `Windows`
 
-![Image6](../../../static/img/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae/image8.webp)
+![Image8](../../../static/img/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae/image8.webp)
 
 ## Completed Script
 
