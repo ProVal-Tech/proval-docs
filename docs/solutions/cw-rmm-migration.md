@@ -1,8 +1,8 @@
 ---
 id: 'c8f1104e-7934-408f-a35d-9279a0d5f7e1'
 slug: /c8f1104e-7934-408f-a35d-9279a0d5f7e1
-title: 'CW RMM Migration'
-title_meta: 'CW RMM Migration'
+title: 'CWA to CW RMM Migration'
+title_meta: 'CWA to CW RMM Migration'
 keywords: ['cw-rmm', 'rmm-agent', 'migration', 'cw-rmm-agent']
 description: 'Outlines the process of migrating agents from CW Automate to CW RMM.'
 tags: ['installation', 'application']

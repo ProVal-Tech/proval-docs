@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used by the ConnectWise Automate to Asio migration integration to deploy ConnectWise Asio Platform agents to Automate endpoints.
+This script is used by the ConnectWise Automate to deploy ConnectWise Asio Platform agents to Automate endpoints.
 
 This can  be run outside of the migration, but requires the site RMM Migration EDFs populated by the migration exists and have the correct values.
 
