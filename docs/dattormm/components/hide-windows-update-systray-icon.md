@@ -1,6 +1,6 @@
 ---
 id: '387fca6b-053a-4833-8554-d6df3d4799d7'
-slug: '387fca6b-053a-4833-8554-d6df3d4799d7'
+slug: /387fca6b-053a-4833-8554-d6df3d4799d7
 title: 'Hide - Windows Update Systray Icon'
 title_meta: 'Hide - Windows Update Systray Icon'
 keywords: ['Windows', 'Icon', 'Systray']
