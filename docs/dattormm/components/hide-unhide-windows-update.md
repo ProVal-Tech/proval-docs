@@ -1,8 +1,8 @@
 ---
 id: 'd805907c-00ad-435e-b614-0f2e5092dd17'
 slug: /d805907c-00ad-435e-b614-0f2e5092dd17
-title: 'Hide/Unhide Windows Update'
-title_meta: 'Hide/Unhide Windows Update'
+title: 'Hide-Unhide Windows Update'
+title_meta: 'Hide-Unhide Windows Update'
 keywords: ['datto', 'windows', 'windows update', 'hide', 'unhide']
 description: 'This script manages the visibility of the Windows Update page in the Settings app at the machine level.'
 tags: ['datto', 'update', 'patching']
@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview  
-This script manages the visibility of the Windows Update page in the Settings app at the machine level.
+This script manages the visibility of the Windows Update page in the Settings app at the machine level. Enable the variable `HIDE_WINDOWSUPDATE` to hide the page and disble it to unhide the page. By default this component will hide the Windows Update page.
 
 ## Implementation  
 
