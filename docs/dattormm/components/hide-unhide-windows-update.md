@@ -6,7 +6,7 @@ title_meta: 'Hide-Unhide Windows Update'
 keywords: ['datto', 'windows', 'windows update', 'hide', 'unhide']
 description: 'This script manages the visibility of the Windows Update page in the Settings app at the machine level.'
 tags: ['datto', 'update', 'patching']
-draft: true
+draft: false
 unlisted: false
 ---
 
