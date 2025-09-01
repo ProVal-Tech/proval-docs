@@ -3,9 +3,9 @@ id: '387fca6b-053a-4833-8554-d6df3d4799d7'
 slug: /387fca6b-053a-4833-8554-d6df3d4799d7
 title: 'Hide - Windows Update Systray Icon'
 title_meta: 'Hide - Windows Update Systray Icon'
-keywords: ['Windows', 'Icon', 'Systray']
+keywords: ['windows', 'icon', 'systray']
 description: 'This script is used to hide windows update icon under the systray'
-tags: ['Windows', 'Patching', 'Updae']
+tags: ['windows', 'patching', 'update']
 draft: false
 unlisted: false
 ---
@@ -13,10 +13,6 @@ unlisted: false
 ## Overview
 
 This script is used to hide windows update icon under the systray.
-
-## Dependencies
-
-None
 
 ## Implementation  
 
