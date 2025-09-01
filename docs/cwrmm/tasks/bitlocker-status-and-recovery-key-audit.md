@@ -8,8 +8,6 @@ description: 'This script collects BitLocker encryption details for each drive o
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
-draft: false
-unlisted: false
 ---
 
 ## Summary
