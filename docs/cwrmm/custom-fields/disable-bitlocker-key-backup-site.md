@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Flag this custom field to exclude the site from [BitLocker Key Backup](/docs/548b405c-ab13-4c60-96ef-2d87280c81eb) solution. This custom field manages the auto-execution of the task. However, the [BitLocker Recovery Key Backup](/docs/b469ea90-0c1b-421b-89e2-be5c91501035) task can still be run manually, independent of this field.
+Flag this custom field to exclude the site from [BitLocker Key Backup](/docs/fecda0ff-5a3e-4cc5-b6a7-fd37732aa2e9) solution. This custom field manages the auto-execution of the task. However, the [BitLocker Recovery Key Backup](/docs/b469ea90-0c1b-421b-89e2-be5c91501035) task can still be run manually, independent of this field.
 
 ## Dependencies
 
