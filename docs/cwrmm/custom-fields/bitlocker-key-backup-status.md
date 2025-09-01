@@ -3,25 +3,32 @@ id: '362c3958-f97e-4f40-bd1d-89cbfed9b17f'
 slug: /362c3958-f97e-4f40-bd1d-89cbfed9b17f
 title: 'BitLocker Key Backup Status'
 title_meta: 'BitLocker Key Backup Status'
-keywords: ['bitlocker', 'backup', 'active-directory', 'azure', 'custom', 'field']
-description: 'This document provides a detailed guide on creating a custom field for displaying the results of the BitLocker Recovery Key Backup Audit task in ConnectWise RMM. It includes step-by-step instructions and visual aids for setting up the custom field to track the status of BitLocker key backups in Active Directory or Azure Active Directory.'
-tags: ['connectwise']
+keywords: ['bitlocker', 'bitlocker-status', 'recovery-key', 'bitlocker-audit', 'recovery-password', 'backup', 'domain']
+description: 'This custom field display the most recent result after pushing the BitLocker recovery keys into AD/AzureAD.'
+tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This custom field is used to display the results of the [CW RMM - Task - BitLocker Recovery Key Backup Audit](/docs/b469ea90-0c1b-421b-89e2-be5c91501035) task that pushes BitLocker keys from CW RMM to Active Directory or Azure Active Directory.
+This custom field is used to display the results of the [BitLocker Recovery Key Backup](/docs/b469ea90-0c1b-421b-89e2-be5c91501035) task that pushes BitLocker keys from CW RMM to Active Directory or Azure Active Directory.
 
-## Create the Custom Field
+## Dependencies
 
-![Image 1](../../../static/img/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f/image_1.webp)  
-![Image 2](../../../static/img/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f/image_2.webp)  
+- [Task - BitLocker Recovery Key Backup](/docs/b469ea90-0c1b-421b-89e2-be5c91501035)
+- [Solution - BitLocker Key Backup](/docs/fecda0ff-5a3e-4cc5-b6a7-fd37732aa2e9)
 
-**Name:** BitLocker Key Backup Status  
-**Type:** Text Box  
-**Default Value:** NULL / LEAVE EMPTY  
-**Level:** Endpoint  
-**Description:** Will display the most recent result after pushing the BitLocker recovery keys into AD/AzureAD.  
-**Editable:** Yes  
+## Custom Field Setup Location
+
+**Custom Fields Path:** `SETTINGS` ➞ `Custom Fields`  
+
+## Details
+
+| Name | Level | Type | Options | Default Value | Editable | Description |
+| ---- | ----- | ---- | ------- | ------------- | -------- | ----------- |
+| BitLocker Key Backup Status | ENDPOINT | Text Box | | | Yes | Displays the most recent result after pushing the BitLocker recovery keys into AD/AzureAD. |
+
+## Completed Custom Field
+
+![Image1](../../../static/img/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f/image1.webp)
