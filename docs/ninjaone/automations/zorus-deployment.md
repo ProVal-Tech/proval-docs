@@ -28,7 +28,7 @@ Search and select `Zorus Deployment`
 
 ## Automation Setup/Import
 
-[Automation Configuration]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/zorus-deployment.ps1))
+<!-- [Automation Configuration]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/zorus-deployment.ps1)) -->
 
 ## Output
 
