@@ -6,7 +6,7 @@ title_meta: 'cPVAL Zorus Token Key'
 keywords: ['Zorus','Agent','Windows','Deployment']
 description: 'Deployment token generated within the Zorus portal, for deploying the Zorus agent.'
 tags:  ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -15,9 +15,9 @@ Deployment token generated within the Zorus portal for deploying the Zorus agent
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- | ----------- |
-|cPVAL Zorus Token Key | cpvalZorusTokenKey | Organization | Text | Yes | - | Editable | Read/Write | Read/Write | Deployment token generated within the Zorus portal, for deploying the Zorus agent. | - | - |Zorus Deployment|
+| Label                 | Field Name         | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                                                                        | Tool Tip | Footer Text | Custom Field Tab Name |
+| --------------------- | ------------------ | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ---------------------------------------------------------------------------------- | -------- | ----------- | --------------------- |
+| cPVAL Zorus Token Key | cpvalZorusTokenKey | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Deployment token generated within the Zorus portal, for deploying the Zorus agent. | -        | -           | Zorus Deployment      |
 
 ## Dependencies
 - [Zorus Deployment](/docs/da444ba9-ae51-48f8-8913-35f206579b04)

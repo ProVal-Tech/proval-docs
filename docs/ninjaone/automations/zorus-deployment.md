@@ -6,7 +6,7 @@ title_meta: 'Zorus Deployment'
 keywords: ['Zorus','Agent','Windows','Deployment']
 description: 'This script automates the deployment of the Zorus agent across Windows machines by downloading the required installer, executing the installation silently, and verifying that the agent is successfully installed.'
 tags:  ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
