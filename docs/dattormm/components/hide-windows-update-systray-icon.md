@@ -17,14 +17,14 @@ This script is used to hide windows update icon under the systray.
 ## Implementation  
 
 1. Export the procedure from Datto Environment.
+    ![Image 3](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/Export.webp)  
 
-![Image 1](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/import.webp)
+    ![Image 2](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/cptfile.webp)
 
-![Image 2](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/cptfile.webp)
+2. After downloading the attached file, login into the client environment and go to `automation ---> Components` click on the `Import` button  
 
-2. After downloading the attached file, login into the client environment and go to `automation ---> Components` click on the `Import` button
+    ![Image 1](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/import.webp)
 
-![Image 3](../../../static/img/docs/387fca6b-053a-4833-8554-d6df3d4799d7/Export.webp)
 
 ## Sample Run
 
