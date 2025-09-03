@@ -6,7 +6,7 @@ title_meta: 'Todyl Deployment Script'
 keywords: ['Todyl','Agent','Windows','Deployment']
 description: 'This script automates the deployment of the Todyl Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
