@@ -99,9 +99,18 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: 'Rewst',
+    Svg: require('@site/static/img/rewst.svg').default,
+    description: (
+      <>
+        <a href='docs/rewst'>Documentation</a><br />
+      </>
+    ),
+  },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
