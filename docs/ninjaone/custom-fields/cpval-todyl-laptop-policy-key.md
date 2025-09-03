@@ -6,7 +6,7 @@ title_meta: 'cPVAL Todyl Laptop Policy Key'
 keywords: ['Todyl','Agent','Windows','Deployment']
 description: 'Todyl Deployment Key for laptop Agents'
 tags:  ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -15,9 +15,9 @@ Todyl Deployment Key for laptop Agents
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- | ----------- |
-| cPVAL Todyl Laptop Policy Key| cpvalTodyllaptopPolicyKey | Organization | Text | Yes | - | Editable | Read/Write | Read/Write | Todyl Deployment Key for laptop Agents | - | - |Todyl Deployment|
+| Label                         | Field Name                | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                            | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----------------------------- | ------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | -------------------------------------- | -------- | ----------- | --------------------- |
+| cPVAL Todyl Laptop Policy Key | cpvalTodyllaptopPolicyKey | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Todyl Deployment Key for laptop Agents | -        | -           | Todyl Deployment      |
 
 ## Dependencies
 - [Todyl Deployment](/docs/3ed0cf6e-1e51-419e-8fd3-5d689ef6f629)

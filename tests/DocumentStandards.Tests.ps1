@@ -52,6 +52,15 @@ foreach ($doc in $docs) {
             Value = $null
         }
     }
+
+    $isDraft = $content | Select-String -Pattern '^draft: true'
+    if (($slug -or $id) -and $isDraft) {
+        $errorList += [PSCustomObject]@{
+            Path = $doc.FullName
+            Type = 'ProductionDocInDraftMode'
+            Value = $null
+        }
+    }
 }
 
 # Check for unused static files in the repository

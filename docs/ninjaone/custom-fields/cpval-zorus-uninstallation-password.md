@@ -1,12 +1,12 @@
 ---
-id: 'a3bdf78e-b4fd-499e-9e30-3eb49f6653cd'
-slug: /a3bdf78e-b4fd-499e-9e30-3eb49f6653cd
+id: 'a5be5729-cb20-4ab6-834e-d18d361cee97'
+slug: /a5be5729-cb20-4ab6-834e-d18d361cee97
 title: 'cPVAL Zorus Uninstallation Password'
 title_meta: 'cPVAL Zorus Uninstallation Password'
 keywords: ['Zorus','Agent','Windows','Deployment']
 description: 'Zorus agent uninstallation password'
 tags: ['windows']
-draft: true
+draft: false
 unlisted: false
 ---
 
@@ -16,9 +16,9 @@ unlisted: false
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |Custom Field Tab Name |
-| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- | ----------- |
-| cPVAL Zorus Uninstallation Password | cpvalZorusUninstallationPassword | Organization | Text | Yes | - | Editable | Read/Write | Read/Write | Zorus agent uninstallation password. To utilize this feature set this variable to your desired password. Only use this feature if you have a secure way to store/remember the desired password. | - | - |Zorus Deployment|
+| Label                               | Field Name                       | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                                                                                                                                                                                     | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----------------------------------- | -------------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- | --------------------- |
+| cPVAL Zorus Uninstallation Password | cpvalZorusUninstallationPassword | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Zorus agent uninstallation password. To utilize this feature set this variable to your desired password. Only use this feature if you have a secure way to store/remember the desired password. | -        | -           | Zorus Deployment      |
 
 ## Dependencies
 - [Zorus Deployment](/docs/da444ba9-ae51-48f8-8913-35f206579b04)
