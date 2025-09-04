@@ -1,8 +1,8 @@
 ---
 id: '1f752f40-a41a-475b-9251-86e5022a7ffe'
 slug: /1f752f40-a41a-475b-9251-86e5022a7ffe
-title: 'Restore OneDrive Sync'
-title_meta: 'Restore OneDrive Sync'
+title: 'Restore Downloads folder from OneDrive Sync'
+title_meta: 'Restore Downloads folder from OneDrive Sync'
 keywords: ['onedrive', 'restore', 'sync']
 description: 'This script is used to restore the User''s OneDrive sync and stopped the sync as well.'
 tags: ['onedrive']
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used to restore the User's OneDrive sync and stopped the sync as well.
+This script is used to stop the redirection of the system's "Downloads" folder to OneDrive's "Downloads" folder and stops the sync for it. This is useful to reverse the sitaution where the system's download folder is redirected to OneDrive's Download folder.
 
 ## Sample Run
 

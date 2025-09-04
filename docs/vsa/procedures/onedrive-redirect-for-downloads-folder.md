@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This agent procedure runs PowerShell to Redirect the Download folder to the OneDrive download folder. This always pulls the sync the data from the Download folder to the OneDrive.
+This agent procedure runs PowerShell to redirect the "Downloads" folder to the OneDrive download folder. This always pulls and sync the data from the "Downloads" folder to the OneDrive.
 
 ## Sample Run
 
