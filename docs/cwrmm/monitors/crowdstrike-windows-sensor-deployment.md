@@ -4,7 +4,7 @@ slug: /ce1b87d4-a1d4-4f37-a03d-3b08c4565086
 title: 'CrowdStrike Windows Sensor Deployment'
 title_meta: 'CrowdStrike Windows Sensor Deployment'
 keywords: ['crowdstrike', 'crowdstrike-windows-sensor', 'deploy-crowdstrike', 'windows-sensor', 'exclusion']
-description: 'Executes task to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.'
+description: 'Executes task to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
@@ -12,14 +12,14 @@ unlisted: false
 
 ## Summary
 
-Executes [task](/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae) to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.'
+Executes [task](/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae) to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.
 
 ## Dependencies
 
 - [DeployCrowdStrikeWindowsSensor](/docs/ffe13fcc-700f-41ea-9fdf-20ea4d253326)
 - [ExcludeCrowdStrikeInstallDevice](/docs/cde64225-1c67-4483-9c39-580b315dd30a)
 - [ExcludeCrowdStrikeInstallSite](/docs/8d9498e0-4392-471e-93da-b546e0934b89)
-- [CrordStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7)
+- [CrowdStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7)
 - [CrowdStrikeCustomerId](/docs/28f5fdfd-c11e-4643-ae07-62d6f7007805)
 - [CrowdStrike Windows Sensor Deployment](/docs/406c6d18-a948-45f6-897b-b1d0174e21de)
 - [Install CrowdStrike Windows Sensor](/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae)

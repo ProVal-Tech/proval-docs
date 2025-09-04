@@ -19,7 +19,7 @@ Group of Windows machines where CrowdStrike Windows Sensor deployment is enabled
 - [DeployCrowdStrikeWindowsSensor](/docs/ffe13fcc-700f-41ea-9fdf-20ea4d253326)
 - [ExcludeCrowdStrikeInstallDevice](/docs/cde64225-1c67-4483-9c39-580b315dd30a)
 - [ExcludeCrowdStrikeInstallSite](/docs/8d9498e0-4392-471e-93da-b546e0934b89)
-- [CrordStrikeDownloadUrl](/docs/406c6d18-a948-45f6-897b-b1d0174e21de)
+- [CrowdStrikeDownloadUrl](/docs/406c6d18-a948-45f6-897b-b1d0174e21de)
 - [CrowdStrikeCustomerId](/docs/28f5fdfd-c11e-4643-ae07-62d6f7007805)
 - [Solution: Deploy CrowdStrike Windows Sensor](/docs/dec6391a-c159-4b45-8c3a-9df4d88dd1c5)
 

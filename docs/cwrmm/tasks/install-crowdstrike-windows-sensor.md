@@ -16,7 +16,7 @@ This script automates the deployment of the CrowdStrike Windows Sensor (Falcon A
 
 ## Dependencies
 
-- [CrordStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7)
+- [CrowdStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7)
 - [CrowdStrikeCustomerId](/docs/28f5fdfd-c11e-4643-ae07-62d6f7007805)
 - [Solution: Deploy CrowdStrike Windows Sensor](/docs/dec6391a-c159-4b45-8c3a-9df4d88dd1c5)
 
@@ -35,7 +35,7 @@ This script automates the deployment of the CrowdStrike Windows Sensor (Falcon A
 | Name                | Level   | Type | Required | Description                                    |
 |---------------------|---------|------|----------|------------------------------------------------|
 | CwordStrikeCustomerId | Company | Text | Yes | Set download Url for downloading the installer for CrowdStrike Windows Sensor. |
-| CrordStrikeDownloadUrl |  Company  | Text | Yes      | Set CrowdStrike Customer ID for the company. |
+| CrowdStrikeDownloadUrl |  Company  | Text | Yes      | Set CrowdStrike Customer ID for the company. |
 
 ## Task Setup Path
 

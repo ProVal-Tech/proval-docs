@@ -21,7 +21,7 @@ This solution outlines the full process for automatically deploying the CrowdStr
 | Name | Example | Type | Level | Required | Purpose |
 |------|---------|------|-------|----------|---------|
 | [CrowdStrikeCustomerId](/docs/28f5fdfd-c11e-4643-ae07-62d6f7007805) | xyz | Text Box | COMPANY | Yes | Set CrowdStrike Customer ID for the company. |
-| [CrordStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7) | https://download.url | Text Box | COMPANY | Yes | Set download URL for downloading the installer for CrowdStrike Windows Sensor. |
+| [CrowdStrikeDownloadUrl](/docs/ae84e56d-df98-42da-b293-7412c01d7db7) | https://download.url | Text Box | COMPANY | Yes | Set download URL for downloading the installer for CrowdStrike Windows Sensor. |
 | [DeployCrowdStrikeWindowsSensor](/docs/ffe13fcc-700f-41ea-9fdf-20ea4d253326) | Windows Workstation and Server | Dropdown | COMPANY | Yes | Select OS to enable auto-deployment of CrowdStrike Windows Sensor. |
 | [ExcludeCrowdStrikeInstallSite](/docs/8d9498e0-4392-471e-93da-b546e0934b89) |  | Flag | SITE | No | Prevents sensor deployment at specific sites. |
 | [ExcludeCrowdStrikeInstallDevice](/docs/cde64225-1c67-4483-9c39-580b315dd30a) |  | Flag | ENDPOINT | No | Prevents sensor deployment to specific endpoints or devices. |
@@ -70,7 +70,7 @@ Configure the monitor [CrowdStrike Windows Sensor Deployment](/docs/ce1b87d4-a1d
 
 ### Step 5: Configure Deployment Parameters
 
-Obtain the CrowdStrike Customer ID and Download URL from your CrowdStrike portal and set these values in the appropriate company-level custom fields for each client.
+Obtain the `CrowdStrike Customer ID` and `Download URL` from your CrowdStrike portal and set these values in the appropriate company-level custom fields for each client.
 
 ## FAQ
 

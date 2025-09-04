@@ -1,8 +1,8 @@
 ---
 id: 'ae84e56d-df98-42da-b293-7412c01d7db7'
 slug: /ae84e56d-df98-42da-b293-7412c01d7db7
-title: 'CrordStrikeDownloadUrl'
-title_meta: 'CrordStrikeDownloadUrl'
+title: 'CrowdStrikeDownloadUrl'
+title_meta: 'CrowdStrikeDownloadUrl'
 keywords: ['crowdstrike', 'crowdstrike-windows-sensor', 'deploy-crowdstrike', 'windows-sensor', 'exclusion']
 description: 'Set download Url for downloading the installer for CrowdStrike Windows Sensor.'
 tags: ['application', 'installation', 'security', 'antivirus']
