@@ -21,6 +21,12 @@ An ImmyBot implementation of the agnostic script [Install-Windows11FeatureUpdate
 - The machine may restart up to 7 times to complete the upgrade process.
 - Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
 
+## Security Application Guidance
+
+For optimal performance and to minimize potential interference, it is recommended to disable or set any active security applications (such as antivirus, endpoint protection, or EDR tools) to "learning" or "detect-only" mode before executing the script.
+
+This helps ensure that the update process runs smoothly without being blocked or slowed down by real-time protection mechanisms. Once the update is complete, security settings can be reverted to their original state.
+
 ## Requirements
 
 - Windows 10 or Windows 11
