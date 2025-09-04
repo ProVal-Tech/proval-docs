@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Flag this Custom Field to exclude the Device/Endpoint from Todyl SGN Connect agent auto-deployment. However, the [install Todyl SGN Connect](/docs/c23cdc78-f90e-4aba-b77e-4dff9d612940) task can still be run manually, independent of this field.
+Flag this Custom Field to exclude the Device/Endpoint from Todyl SGN Connect agent auto-deployment. However, the [Install Todyl SGN Connect](/docs/c23cdc78-f90e-4aba-b77e-4dff9d612940) task can still be run manually, independent of this field.
 
 ## Dependencies
 

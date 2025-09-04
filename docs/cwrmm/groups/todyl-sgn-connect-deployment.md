@@ -55,7 +55,7 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 - **Block 2:** Targets Windows Servers
 
 **Logic:**  
-A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria in Block 2.
+A machine joins the group if it meets ALL criteria in Block 1 OR ALL criteria in Block 2.
 
 ![Image2](../../../static/img/docs/34482e9f-122f-490d-b3c8-1e1d466bbc77/image2.webp)
 

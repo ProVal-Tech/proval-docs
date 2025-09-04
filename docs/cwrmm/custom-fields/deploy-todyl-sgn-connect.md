@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Select the Operating System for auto installing Todyl SGN Connect agent. However, the [install Todyl SGN Connect](/docs/c23cdc78-f90e-4aba-b77e-4dff9d612940) task can still be run manually, independent of this field.
+Select the Operating System for auto installing Todyl SGN Connect agent. However, the [Install Todyl SGN Connect](/docs/c23cdc78-f90e-4aba-b77e-4dff9d612940) task can still be run manually, independent of this field.
 
 ## Dependencies
 
