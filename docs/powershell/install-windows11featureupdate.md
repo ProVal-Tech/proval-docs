@@ -19,6 +19,12 @@ The script supports both Windows 10 and Windows 11:
 - For Windows 10, it attempts to upgrade to the latest available version of Windows 11.  
 - For Windows 11, it ensures the system is updated to the latest available feature update.
 
+## Security Application Guidance
+
+For optimal performance and to minimize potential interference, it is recommended to disable or set any active security applications (such as antivirus, endpoint protection, or EDR tools) to "learning" or "detect-only" mode before executing the script.
+
+This helps ensure that the update process runs smoothly without being blocked or slowed down by real-time protection mechanisms. Once the update is complete, security settings can be reverted to their original state.
+
 ## Requirements
 
 - Windows 10 or Windows 11
