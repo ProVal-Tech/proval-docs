@@ -51,5 +51,6 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Column Name          | Operator | Comparator     | Color  |
 |---------------------|----------|----------------|--------|
 | Compatibility Check  | Equals   | Not Capable    | Red    |
+| Compatibility Check  | Equals   | Not Capable: FreeDisk <64GB  | Red  |
 | Compatibility Check  | Equals   | Undetermined    | Orange |
 | Compatibility Check  | Equals   | Capable        | Green  |
