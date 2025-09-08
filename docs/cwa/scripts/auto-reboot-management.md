@@ -43,7 +43,7 @@ Verify that the EDFs exist at the client, location, and computer levels as detai
 
 ### Step 6
 
-Schedule the script to execute every 15 minutes at XX:00:05. This will ensure the reboot is sent with a 14-15 minute delay.
+Schedule the script to execute every 15 minutes at XX:00:5 or XX:15:00 format. This will ensure the reboot is sent with a 14-15 minute delay and user will receive a prompt with a message that their computer will reboot in next 10 minutes.
 
 ![Image2](../../../static/img/docs/auto-reboot-management/image.png)
 
