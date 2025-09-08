@@ -1,8 +1,3 @@
-#Redirects the "Downloads" folder to the OneDrive download folder. 
-#This always pulls and sync the data from the "Downloads" folder to the OneDrive's Download folder.
-
-
-
 #region Parameters
 [CmdletBinding()]
 param (
