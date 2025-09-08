@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script deploys ConnectWise Asio Platform agents to windows endpoints.
+This script deploys ConnectWise Asio Platform agents to the Windows endpoints.
 
 ## Implementation  
 
@@ -39,8 +39,8 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Global Settings
 
-Go to "Setup>Global Settings>Variables"
-Create the below global Variable
+- Go to "Setup>Global Settings>Variables"  
+- Create the below global Variable
 
 | Name | Value | Description |
 | ---- | ------- | ----------- |
@@ -48,7 +48,8 @@ Create the below global Variable
 
  ![Globalsettings](../../../static/img/docs/423c69f5-36ce-4f69-87be-974b05101812/image1.webp)
 
-**Note : To override the global settings, create the variable with same name under Site>All Sites>Select the site>Settings>Variables>Add Variable
+**Note** : To override the global settings, create the variable with same name under  
+`Site` > `All Sites` > `Select the site` > `Settings`  > `Variables` > `Add Variable`
 
  ![Globalsettings](../../../static/img/docs/423c69f5-36ce-4f69-87be-974b05101812/image2.webp)
 
@@ -58,7 +59,7 @@ Create the below global Variable
 |----------------------------|--------|---------|-------------------------------------------------|--------------------------------------------------|
 | cPvalCwRmmMigrationRegion  | String | EU      | <ul><li>NA</li><li>EU</li><li>AU</li></ul>      | Geographical region of CW
 
-**Note: Set this variable while importing the script according to the partners Geographical region of CW
+**Note:** Set this variable while importing the script according to the partners Geographical region of CW
 
 ## Output
 - stdOut  
