@@ -4,7 +4,7 @@ slug: /ce1b87d4-a1d4-4f37-a03d-3b08c4565086
 title: 'CrowdStrike Windows Sensor Deployment'
 title_meta: 'CrowdStrike Windows Sensor Deployment'
 keywords: ['crowdstrike', 'crowdstrike-windows-sensor', 'deploy-crowdstrike', 'windows-sensor', 'exclusion']
-description: 'Executes task to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.
+description: 'Executes task to install CrowdStrike Windows Sensor on machines where deployment is enabled, but the application is not installed.'
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
