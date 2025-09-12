@@ -3,124 +3,175 @@ id: '9682b5a8-d821-43f6-9b77-59d43b6ef015'
 slug: /9682b5a8-d821-43f6-9b77-59d43b6ef015
 title: 'BitLocker Status and Recovery Key Audit'
 title_meta: 'BitLocker Status and Recovery Key Audit'
-keywords: ['bitlocker', 'encryption', 'audit', 'recovery', 'key', 'status', 'windows']
-description: 'This document outlines the process to audit the BitLocker status of endpoints. It details how to gather recovery keys for encrypted drives and store the results in a custom field, along with instructions for manual and scheduled script execution.'
-tags: ['encryption', 'recovery', 'windows']
+keywords: ['bitlocker', 'bitlocker-status', 'recovery-key', 'bitlocker-audit', 'recovery-password']
+description: 'This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet. It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available). The output is formatted as a single string suitable for saving into the Endpoint-Level custom field "BitLocker Status and Key".'
+tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This document will attempt to audit the BitLocker status of the endpoint. If there is an encrypted drive, it will attempt to gather the recovery key and store it in a custom field. If the drive is not BitLocker encrypted, it will indicate that in the custom field.
+This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet. It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available). The output is formatted as a single string suitable for saving into the Endpoint-Level custom field [BitLocker Status and Key](/docs/a7785954-5a6d-4003-9d0e-c919e1a96b0c). It is recommended to schedule this script to run once per day to keep the information up-to-date.
 
-## Manual Run
+**Output Format:** `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`  
+    **Example:** `| C: RecoveryPassword, TPM; Enabled; 100%; <RecoveryPassword> | D: Not Enabled |`
 
-This script does not have any parameters and can be run against any online Windows device.
+**Notes:** *The `BitLocker Drive Encryption` feature must be enabled on servers to run this script against windows servers. Auditing will not work without enabling this feature.*
+
+## Sample Run
+
+![Image1](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image1.webp)
 
 ## Dependencies
 
-- [BitLocker Key Backup Status](/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f)
-- [BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Auditing, BitLocker - Regular Auditing)
+- [Custom Field - BitLocker Status and Key](/docs/a7785954-5a6d-4003-9d0e-c919e1a96b0c)
+- [Group - BitLocker Status Audit Enabled](/docs/8d034710-66c7-4f8e-8feb-740c9fa109f2)
+- [Solution - BitLocker Status and Recovery Key Audit](/docs/b2a974b2-c231-4197-a639-d0775d77d7c7)
 
-## Create Script
+## Task Setup Path
 
-To implement this script, please create a new "Script Editor" style script in the system.
+**Tasks Path:** `AUTOMATION` ➞ `Tasks`  
+**Task Type:** `Script Editor`
 
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_4.webp)
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_5.webp)
+## Task Creation
 
-**Name:** BitLocker Status and Recovery Key Audit  
-**Description:** This script will attempt to audit the BitLocker status of the endpoint. If there is an encrypted drive, it will attempt to gather the recovery key and store it in a custom field. If the drive is not BitLocker encrypted, it will indicate that in the custom field.  
-**Category:** Custom  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_6.webp)
+### Description
 
-## Script
+- **Name:** `BitLocker Status and Recovery Key Audit`  
+- **Description:** `This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet. It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available). The output is formatted as a single string suitable for saving into the Endpoint-Level custom field "BitLocker Status and Key".`  
+- **Category:** `Data Collection`
 
-Start by making three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+![Image2](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image2.webp)
 
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_7.webp)
+### Script Editor
 
-**Row 1 Function:** PowerShell Script  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_8.webp)
+#### Step 1: Row -> PowerShell script
 
-Paste in the following PowerShell script and set the expected time of script execution to 1800 seconds.
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `300`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `False`  
+- **Run As:** `System`  
+- **PowerShell Script Editor:**
 
 ```PowerShell
+<#
+.SYNOPSIS
+    Retrieves BitLocker status and key information for all volumes on the device.
+
+.DESCRIPTION
+    This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet.
+    It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available).
+    The output is formatted as a single string suitable for saving into the Endpoint-Level custom field "BitLocker Status and Key".
+
+.OUTPUTS
+    A formatted string summarizing BitLocker status for each drive.
+    Format: | DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |
+    | C: RecoveryPassword, TPM; Enabled; 100%; <RecoveryPassword> | D: Not Enabled |
+
+.NOTES
+    - If the BitLocker module is unavailable, the script returns a message indicating so.
+    - If the output string exceeds 300 characters, it is truncated to fit the custom field limit.
+    - The script is intended for use in environments where BitLocker status needs to be reported centrally.
+
+.EXAMPLE
+    # Save BitLocker status to a custom field
+    $status = .\Get-BitlockerInfoCWRMM.ps1
+    # Assign $status to the "BitLocker Status and Key" field in your endpoint management system.
+
+#>
+
 if (!(Get-Command -Name 'Get-BitLockerVolume' -ErrorAction SilentlyContinue)) {
-    return 'BitLocker module is unavailable on this device.'
+    return '| BitLocker module is unavailable on this device. |'
 }
-$(
-    foreach ($drive in @(Get-BitLockerVolume -ErrorAction SilentlyContinue)) {
-        if ($drive.ProtectionStatus -ne 'On') {
-            "$($drive.MountPoint) not enabled."
-        } elseif ($drive.EncryptionPercentage -ne '100') {
-            "Encryption on $($drive.MountPoint) in progress."
-        } elseif ($recoveryPasswords = $drive.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' } | Select-Object -ExpandProperty RecoveryPassword -First 1) {
-            "$($drive.MountPoint) enabled. Recovery Passwords:$($recoveryPasswords)"
+
+$bitlockerInfo = Get-BitLockerVolume
+$bitlockerInfoOutput = @()
+if ($bitlockerInfo) {
+    foreach ($drive in $bitlockerInfo) {
+        $letter = $drive.MountPoint.TrimEnd(':')
+        $keyProtector = $($drive.KeyProtector.KeyProtectorType -join ', ')
+        $protectionStatus = switch ($drive.ProtectionStatus) {
+            'On' { 'Enabled' }
+            'Off' { 'Suspended' }
+            default { 'Unknown' }
+        }
+        $encryptionPercentage = $drive.EncryptionPercentage
+        $recoveryPassword = (($drive.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }).RecoveryPassword | Select-Object -First 1)
+        $recoveryPassword = if ($recoveryPassword) { $recoveryPassword } else { 'Not Available' }
+        if (!$keyProtector) {
+            $bitlockerInfoOutput += '{0}: Disabled' -f $letter
         } else {
-            "$($drive.MountPoint) enabled without a Recovery Password."
+            $bitlockerInfoOutput += '{0}: {1}; {2}; {3}%; {4}' -f $letter, $keyProtector, $protectionStatus, $encryptionPercentage, $recoveryPassword
         }
     }
-) -join ' | '
+} else {
+    $bitlockerInfoOutput = 'Disabled'
+}
+$bitlockerReturnString = $($bitlockerInfoOutput -join ' | ')
+if ($bitlockerReturnString.Length -le 300) {
+    $bitlockerReturnInfo = $bitlockerReturnString
+} else {
+    $bitlockerReturnInfo = $bitlockerReturnString.Substring(0, 295)
+}
+return '| {0} |' -f $bitlockerReturnInfo
 ```
 
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_9.webp)
+![Image3](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image3.webp)
 
-Save and move to the next row.
+#### Step 2: Row -> Script Log
 
-**Row 2 Function:** Script Log  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_10.webp)
+- **Script Log Message:** `%Output%`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
-In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_11.webp)
+![Image4](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image4.webp)
 
-**Row 3 Function:** Set Custom Field  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_12.webp)
+#### Step 3: Row -> Set Custom Field ( BitLocker Status and Key = %output% )
 
-When you select "Set Custom Field," a new window will open. In this window, find the "BitLocker Status and Key" field.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_13.webp)
+- **Custom Field:** `BitLocker Status and Key`  
+- **Value:** `%Output%`  
+- **Continue on Failure:** `False`  
+- **Operating System:** `Windows`
 
-In the Value area, simply type `%output%` to store the PowerShell output in the custom field.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_14.webp)
+![Image5](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image5.webp)
 
-Once all items are added, please save the task.  
-The final task should look like the screenshot below.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_15.webp)
+## Completed Task
 
-## Script Deployment
-
-The script is intended to run on a scheduled basis against two device groups.
-
-First, is the [CW RMM - Device Groups - BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Auditing) device group as a scheduled task. As machines run the script, they will exit the device group.
-
-The task should be scheduled to run hourly against the device group. Please see the example in the screenshot below.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_16.webp)
-
-**Schedule:** Local Machine Time  
-**Start:** Select today's date  
-**Trigger:** Time  
-**At:** 10:00 AM  
-**Recurrence:** Every Hour  
-**Resource:** [CW RMM - Device Groups - BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Auditing)
-
----
-
-Second, is the [CW RMM - Device Groups - BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Regular Auditing) device group as a scheduled task. As machines complete their audit, they will join the BitLocker - Regular Auditing group, and the scheduled task will update the details every four (4) weeks.
-
-The task should be scheduled to run every four (4) weeks against the BitLocker - Regular Auditing device group. Please see the example in the screenshot below.  
-![Image](../../../static/img/docs/58ddde1a-dfdd-4eb8-9024-608e7c57ad4f/image_17.webp)
-
-**Schedule:** Local Machine Time  
-**Start:** Select today's date  
-**Trigger:** Time  
-**At:** 10:00 AM  
-**Recurrence:** Every 4 weeks on Wednesday  
-**Resource:** [CW RMM - Device Groups - BitLocker Auditing](/docs/38b92368-f583-426c-b8f1-5f3b6d56b410) (BitLocker - Regular Auditing)
-
-This script can also run manually against any Windows-based device at any time to update the details.
+![Image6](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image6.webp)
 
 ## Output
 
-- Script log
+- Script Log
 - Custom Field
+
+## Schedule Task
+
+### Task Details
+
+- **Name:** `BitLocker Status and Recovery Key Audit`  
+- **Description:** `This script collects BitLocker encryption details for each drive on the system using the Get-BitLockerVolume cmdlet. It summarizes the protection status, key protector types, encryption percentage, and recovery password (if available). The output is formatted as a single string suitable for saving into the Endpoint-Level custom field "BitLocker Status and Key".`  
+- **Category:** `Data Collection`
+
+![Image7](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image7.webp)
+
+### Schedule
+
+- **Schedule Type:**  `Schedule`  
+- **Timezone:** `Local Machine Time`  
+- **Start:** `<Current Date>`  
+- **Trigger:** `Time` `At` `<Current Time>`  
+- **Recurrence:** `Every day`
+
+![Image8](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image8.webp)
+
+### Targeted Resource
+
+**Device Group:** `BitLocker Status Audit Enabled`
+
+![Image9](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image9.webp)
+
+### Completed Scheduled Task
+
+![Image10](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image10.webp)
