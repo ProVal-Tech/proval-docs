@@ -25,30 +25,29 @@ Note: This Component is a monitoring component and can only be able to execute t
 
 ## Sample Run
 
-1. To implement the `component` over a policy, follow these steps:  
+To implement the `component` over a policy, follow these steps:  
 
-2. Under the `Policies> Monitoring` section, click on create policy.  
+1. Under the `Policies> Monitoring` section, click on create policy.  
 
-    i. State the name of the policy.  
-    ii. Provide the description.  
-    iii. State the Scope of the policy.  
+    - State the name of the policy.  
+    - Provide the description.  
+    -  State the Scope of the policy.  
     ![Image1](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot1.webp)  
 
-    iv. Within the Monitors section, click on `Add Monitor`.  
-    ![Image2](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot2.webp).  
+    - Within the Monitors section, click on `Add Monitor`.  
+    ![Image2](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot2.webp)     
 
-    v.Under the Monitor Type, click on `Select` and then select the `Component`option.  
+    - Under the `Monitor Type`, click on `Select` and then select the `Component`option.  
+![image3](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot3.webp).  
 
-    ![image3](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot3.webp).  
-
-    vi. Inorder to configure your `component` via alerting, follow the below steps:-  
-        a.Click on `Select a Component Monitor` and then select  
-           the component from the search bar.  
-        b. Set the interval to `execute the component monitor`.  
-        c. Select the `priority to raise an alert`.  
-        d. Select the time to `auto resolve the alert`.
-        ![Image4](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot4.webp).   
-        e. Click on `Add Monitor`.  
+    -  Inorder to configure your `component` via alerting, follow the below steps:-  
+        - Click on `Select a Component Monitor` and then select  
+           the component `Disk Health Checkup` from the search bar.  
+        -  Set the interval to `execute the component monitor`.  
+        - Select the `priority to raise an alert`.  
+        - Select the time to `auto resolve the alert`.
+        ![Image4](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot4.webp)    
+        - Click on `Add Monitor`.  
 
 3. Click on `Add Target` to provide the targeted machines.  
 4. Click on `Save and Deploy Now` to save the policy.
