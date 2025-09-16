@@ -4,7 +4,7 @@ slug: /1f752f40-a41a-475b-9251-86e5022a7ffe
 title: 'Restore Downloads folder from OneDrive Sync'
 title_meta: 'Restore Downloads folder from OneDrive Sync'
 keywords: ['onedrive', 'restore', 'sync']
-description: 'This script is used to restore the User''s OneDrive sync and stopped the sync as well.'
+description: 'This script is used to restore the User''s OneDrive sync and stopped the sync as well and restart the explorer after the sucessfull execution of the script'
 tags: ['onedrive']
 draft: false
 unlisted: false

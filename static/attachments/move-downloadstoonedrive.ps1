@@ -1,4 +1,4 @@
-#region Parameters
+#region Parameters(It will work after restart the explorer)
 [CmdletBinding()]
 param (
     [Parameter(Mandatory = $false, HelpMessage = 'Name of the OneDrive Directory')]

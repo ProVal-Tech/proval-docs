@@ -4,7 +4,7 @@ slug: /8c10db56-e778-42b3-9002-98802efe5821
 title: 'OneDrive Redirect for Downloads Folder'
 title_meta: 'OneDrive Redirect for Downloads Folder'
 keywords: ['onedrive', 'redirect', 'download', 'onedrive-redirect']
-description: 'This script is used to Create a Downloads folder in the User’s OneDrive Re-direct the location of the Downloads folder to OneDrive location.'
+description: 'This script is used to Create a Downloads folder in the User’s OneDrive Re-direct the location of the Downloads folder to OneDrive location and restart the explorer after the sucessfull execution of the script'
 tags: ['onedrive', 'auditing']
 draft: false
 unlisted: false
