@@ -1,5 +1,5 @@
 # Restore-DownloadsFromOneDrive.ps1
-# Restores the Downloads folder from OneDrive to its default location and removes changes made by Move-DownloadsToOneDrive.ps1, it will take effect after restart explorer.
+# Restores the Downloads folder from OneDrive to its default location and removes changes made by Move-DownloadsToOneDrive.ps1.
 # Creates a scheduled task to run the restore operation in the user's context for HKCU modifications
 # Logs to C:\ProgramData\_Automation\Script\Restore-DownloadsFromOneDrive\Restore-DownloadsFromOneDrive.log
 

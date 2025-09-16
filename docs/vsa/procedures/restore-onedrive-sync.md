@@ -12,7 +12,9 @@ unlisted: false
 
 ## Summary
 
-This script is used to stop the redirection of the system's "Downloads" folder to OneDrive's "Downloads" folder and stops the sync for it. This is useful to reverse the sitaution where the system's download folder is redirected to OneDrive's Download folder.
+This script restores the system's default "Downloads" folder location by reversing its redirection to the OneDrive "Downloads" folder. Once restored, files downloaded to this folder will no longer sync with OneDrive.
+
+**Note**: Some browsers may need to be restarted for the new download location to take effect.
 
 ## Sample Run
 
