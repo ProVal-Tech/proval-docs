@@ -56,4 +56,4 @@ This script is used to stop the redirection of the system's "Downloads" folder t
 
 ## Managed File
 
-[restore-onedrivesync.ps1](../../../static/attachments/restore-onedrivesync.ps1)
+[restore-onedrivesync.ps1](../../../static/attachments/restore-download-folder-from-onedrivesync.ps1)
