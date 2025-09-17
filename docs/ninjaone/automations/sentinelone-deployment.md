@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script deploys Sentinelone agent on Windows machines.
+This script handles both the deployment and update of the SentinelOne agent on Windows machines.
 
 ## Sample Run
 

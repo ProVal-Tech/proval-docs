@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script automates the deployment of the Todyl Agent (SGN Connect) on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.
+This script automates the deployment and update of the Todyl Agent (SGN Connect) on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.
 
 ## Sample Run
 
@@ -28,7 +28,7 @@ Search and select `Todyl Deployment`
 
 ## Automation Setup/Import
 
-<!-- [Automation Configuration]((https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/todyl-deployment.ps1)) -->
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/todyl-deployment.ps1)
 
 ## Output
 
