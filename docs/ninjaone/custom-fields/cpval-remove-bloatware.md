@@ -22,7 +22,7 @@ This custom field removes specified bloatware from the system. The actual apps t
 
 ## Dependencies
 
-- [Custom Field - cPVAL Bloatware to Remove](/docs/)
+- [Custom Field - cPVAL Bloatware to Remove](/docs/b3a55fe5-d7aa-4976-bf57-c46799ef4548)
 - [Solution - Remove Bloatware](/docs/)
 - [Solution - Device Standards](/docs/)
 
