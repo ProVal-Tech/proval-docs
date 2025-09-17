@@ -25,8 +25,8 @@ This condition triggers the [Pin Chrome and Outlook to Taskbar](/docs/0229b8df-4
 - [Custom Field - cPVAL Configure Taskbar Outlook Chrome Only](/docs/6c8e4e35-3db7-4ff0-8d3c-ec8d0b04e82f)
 - [Automation - Check Taskbar Pin Chrome and Outlook](/docs/36b9d578-a66a-49db-8b42-6c5507ae8c79)
 - [Automation - Pin Chrome and Outlook to Taskbar](/docs/0229b8df-4fd3-4b30-923c-34ff7f656f8e)
-- [Solution - Configure Taskbar Outlook Chrome Only](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Configure Taskbar Outlook Chrome Only](/docs/8efbc9f2-0812-40c2-8583-a563049c7762)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Compound Condition Creation
 

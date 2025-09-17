@@ -22,8 +22,8 @@ Checks the sleep settings of the current Windows power plan and reports if auto 
 
 - [Agnostic Script - Get-PowerPlan](/docs/4d7993ab-1fa8-4b96-9f19-f503737ea015)
 - [Custom Field - cPVAL Disable Sleep](/docs/b0c22386-feb6-427c-b1fd-e29a9c4863a3)
-- [Solution - Disable Sleep](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Automation Setup/Import
 

@@ -21,8 +21,8 @@ Pins Google Chrome and the New Outlook to the Windows taskbar for the currently 
 ## Dependencies
 
 - [Custom Field - cPVAL Configure Taskbar Outlook Chrome Only](/docs/6c8e4e35-3db7-4ff0-8d3c-ec8d0b04e82f)
-- [Solution - Configure Taskbar Outlook Chrome Only](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Configure Taskbar Outlook Chrome Only](/docs/8efbc9f2-0812-40c2-8583-a563049c7762)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Automation Setup/Import
 

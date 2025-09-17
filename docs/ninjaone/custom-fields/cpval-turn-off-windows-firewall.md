@@ -22,8 +22,8 @@ This custom field determines whether Windows Firewall is turned off based on the
 
 ## Dependencies
 
-- [Solution - Disable Windows Firewall](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Turn off Windows Firewall](/docs/202f2907-e8e5-4d65-9823-e70749cef708)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Custom Field Creation
 

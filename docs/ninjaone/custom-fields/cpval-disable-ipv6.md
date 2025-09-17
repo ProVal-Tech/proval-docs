@@ -22,8 +22,8 @@ This custom field controls IPv6 disablement based on the selected operating syst
 
 ## Dependencies
 
-- [Solution - Disable IPv6](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Disable IPv6](/docs/1e9dee40-965f-4b6c-a9cf-4cb45162d5ac)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Custom Field Creation
 

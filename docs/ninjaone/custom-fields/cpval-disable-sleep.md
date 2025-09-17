@@ -22,8 +22,8 @@ This custom field controls whether sleep mode is disabled based on the selected 
 
 ## Dependencies
 
-- [Solution - Disable Sleep](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Custom Field Creation
 

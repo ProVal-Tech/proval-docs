@@ -22,8 +22,8 @@ Detects specified bloatware (potentially unwanted applications) installed on the
 
 - [Custom Field - cPVAL Remove Bloatware](/docs/4eef200f-a609-4993-9533-b7fce30b29ef)
 - [Custom Field - cPVAL Bloatware to Remove](/docs/b3a55fe5-d7aa-4976-bf57-c46799ef4548)
-- [Solution - Remove Bloatware](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Remove Bloatware](/docs/9912c1d2-27b8-449a-8d54-d5e24b436721)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Automation Setup/Import
 

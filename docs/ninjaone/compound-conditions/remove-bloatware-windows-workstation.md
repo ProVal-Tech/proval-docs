@@ -26,8 +26,8 @@ This condition triggers the [Remove Bloatware](/docs/e921882d-f1f2-492a-8cd0-58d
 - [Custom Field - cPVAL Bloatware to Remove](/docs/b3a55fe5-d7aa-4976-bf57-c46799ef4548)
 - [Automation - Find Bloatware](/docs/1c79c2ef-4053-4956-85be-f9c0d87c37ed)
 - [Automation - Remove Bloatware](/docs/e921882d-f1f2-492a-8cd0-58d37eba5d35)
-- [Solution - Remove Bloatware](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Remove Bloatware](/docs/9912c1d2-27b8-449a-8d54-d5e24b436721)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Compound Condition Creation
 

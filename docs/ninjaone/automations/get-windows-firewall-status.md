@@ -21,8 +21,8 @@ Checks the status of Windows Firewall profiles on the local machine. This script
 ## Dependencies
 
 - [Custom Field - cPVAL Turn off Windows Firewall](/docs/48a340ed-d4aa-4949-9862-89e0737c5c95)
-- [Solution - Turn off Windows Firewall](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Turn off Windows Firewall](/docs/202f2907-e8e5-4d65-9823-e70749cef708)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Automation Setup/Import
 

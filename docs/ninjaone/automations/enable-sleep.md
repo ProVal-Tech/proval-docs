@@ -22,8 +22,8 @@ Enables sleep in the current Windows power plan by setting 'Sleep after' to a sp
 
 - [Agnostic Script - Get-PowerPlan](/docs/4d7993ab-1fa8-4b96-9f19-f503737ea015)
 - [Agnostic Script - Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f)
-- [Solution - Disable Sleep](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Parameters
 

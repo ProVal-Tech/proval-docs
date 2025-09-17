@@ -22,8 +22,8 @@ This custom field ensures a standardized taskbar layout by including only Outloo
 
 ## Dependencies
 
-- [Solution - Configure Taskbar Outlook Chrome Only](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Configure Taskbar Outlook Chrome Only](/docs/8efbc9f2-0812-40c2-8583-a563049c7762)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Custom Field Creation
 

@@ -20,8 +20,8 @@ Enables Windows Firewall on all profiles on the local machine.
 
 ## Dependencies
 
-- [Solution - Turn off Windows Firewall](/docs/)
-- [Solution - Device Standards](/docs/)
+- [Solution - Turn off Windows Firewall](/docs/202f2907-e8e5-4d65-9823-e70749cef708)
+- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
 
 ## Automation Setup/Import
 
