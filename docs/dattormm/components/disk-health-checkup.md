@@ -29,7 +29,7 @@ To implement the `component` over a policy, follow these steps:
 
 1. Under the `Policies> Monitoring` section, click on create policy.  
 
-    - State the name of the policy.  
+    - State the name of the policy `Run Disk Health Checkup` 
     - Provide the description.  
     -  State the Scope of the policy.  
     ![Image1](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot1.webp)  
@@ -40,7 +40,7 @@ To implement the `component` over a policy, follow these steps:
     - Under the `Monitor Type`, click on `Select` and then select the `Component`option.  
 ![image3](../../../static/img/docs/0289f7dd-f98f-47a3-a957-fc3b9ab36cda/snapshot3.webp).  
 
-    -  Inorder to configure your `component` via alerting, follow the below steps:-  
+    -  Inorder to configure your `component` via alerting, follow the below steps:  
         - Click on `Select a Component Monitor` and then select  
            the component `Disk Health Checkup` from the search bar.  
         -  Set the interval to `execute the component monitor`.  
