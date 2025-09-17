@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Disables sleep in the current Windows power plan by setting 'Sleep after' to Never for both AC and DC power. This script is executed as automation script from [Disable Sleep Windows Workstation](/docs/) and [Disable Sleep Windows Server](/docs/) compound conditions.
+Disables sleep in the current Windows power plan by setting 'Sleep after' to Never for both AC and DC power. This script is executed as automation script from [Disable Sleep Windows Workstation](/docs/01e513a0-0764-4d2d-ae60-871e42010526) and [Disable Sleep Windows Server](/docs/047f1fc9-f296-42c0-bad6-3498b9160609) compound conditions.
 
 ## Sample Run
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Checks the sleep settings of the current Windows power plan and reports if auto sleep is enabled. This script is executed as detection script from [Disable Sleep Windows Workstation](/docs/) and [Disable Sleep Windows Server](/docs/) compound conditions.
+Checks the sleep settings of the current Windows power plan and reports if auto sleep is enabled. This script is executed as detection script from [Disable Sleep Windows Workstation](/docs/01e513a0-0764-4d2d-ae60-871e42010526) and [Disable Sleep Windows Server](/docs/047f1fc9-f296-42c0-bad6-3498b9160609) compound conditions.
 
 ## Sample Run
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Detects specified bloatware (potentially unwanted applications) installed on the local Windows machine. This script is executed as detection script from [Remove Bloatware Windows Workstation](/docs/) and [Remove Bloatware Windows Server](/docs/) compound conditions.
+Detects specified bloatware (potentially unwanted applications) installed on the local Windows machine. This script is executed as detection script from [Remove Bloatware Windows Workstation](/docs/b6723ac1-0617-4be9-958f-385c77b52bc5) and [Remove Bloatware Windows Server](/docs/4d9d3ca7-9dd9-4630-8c9a-f3da24f28b8c) compound conditions.
 
 ## Sample Run
 

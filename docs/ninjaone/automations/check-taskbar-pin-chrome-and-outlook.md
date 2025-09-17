@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Validates that only Google Chrome and New Outlook are pinned to the Windows taskbar for the currently logged-in user. This action is restricted to Windows Workstation systems only. This script is executed as detection script from [Configure Taskbar Outlook Chrome Only](/docs/) compound conditions.
+Validates that only Google Chrome and New Outlook are pinned to the Windows taskbar for the currently logged-in user. This action is restricted to Windows Workstation systems only. This script is executed as detection script from [Configure Taskbar Outlook Chrome Only](/docs/0b21bc06-3e82-4d45-939a-cf2d2425251c) compound conditions.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ Validates that only Google Chrome and New Outlook are pinned to the Windows task
 
 ## Dependencies
 
-- [Custom Field - cPVAL Configure Taskbar Outlook Chrome Only](/docs/48a340ed-d4aa-4949-9862-89e0737c5c95)
+- [Custom Field - cPVAL Configure Taskbar Outlook Chrome Only](/docs/6c8e4e35-3db7-4ff0-8d3c-ec8d0b04e82f)
 - [Solution - Configure Taskbar Outlook Chrome Only](/docs/)
 - [Solution - Device Standards](/docs/)
 

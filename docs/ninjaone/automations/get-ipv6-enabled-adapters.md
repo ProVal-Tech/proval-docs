@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Checks if IPv6 is enabled on any network adapter on the local Windows machine. This script is executed as detection script from [Disable IPv6 Windows Workstation](/docs/) and [Disable IPv6 Windows Server](/docs/) compound conditions.
+Checks if IPv6 is enabled on any network adapter on the local Windows machine. This script is executed as detection script from [Disable IPv6 Windows Workstation](/docs/2471a88f-d339-497b-a9c2-1f30f83bcdd9) and [Disable IPv6 Windows Server](/docs/79b177eb-4421-48b2-b47c-9163ceebcf78) compound conditions.
 
 ## Sample Run
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Removes specified bloatware (potentially unwanted applications) from the local Windows machine. This script is executed as automation script from [Remove Bloatware Windows Workstation](/docs/) and [Remove Bloatware Windows Server](/docs/) compound conditions.
+Removes specified bloatware (potentially unwanted applications) from the local Windows machine. This script is executed as automation script from [Remove Bloatware Windows Workstation](/docs/b6723ac1-0617-4be9-958f-385c77b52bc5) and [Remove Bloatware Windows Server](/docs/4d9d3ca7-9dd9-4630-8c9a-f3da24f28b8c) compound conditions.
 
 ## Sample Run
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Checks the status of Windows Firewall profiles on the local machine. This script is executed as detection script from [Turn off Windows Firewall Windows Workstation](/docs/) and [Turn off Windows Firewall Windows Server](/docs/) compound conditions.
+Checks the status of Windows Firewall profiles on the local machine. This script is executed as detection script from [Turn off Windows Firewall Windows Workstation](/docs/cd5cfdc6-69b2-41bd-be00-3e00547f284b) and [Turn off Windows Firewall Windows Server](/docs/cd5cfdc6-69b2-41bd-be00-3e00547f284b) compound conditions.
 
 ## Sample Run
 
