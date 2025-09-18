@@ -153,7 +153,7 @@ $softwareName = 'CrowdStrike Windows Sensor'
 $appName = 'WindowsSensor'
 $workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $appName
 $appPath = '{0}\{1}.exe' -f $workingDirectory, $appName
-$confirmationDirectory = 'C:\Windows\System32\drivers\CrowdStrike'
+$confirmationDirectory = '{0}\System32\drivers\CrowdStrike' -f $env:SystemRoot
 #endRegion
 
 #region Function
@@ -162,9 +162,9 @@ function Test-CrowdStrikeInstall {
     [OutputType([bool])]
     param (
         [Parameter(Mandatory = $true)]
-        [String]$SoftwareName,
+        [string]$SoftwareName,
         [Parameter(Mandatory = $true)]
-        [Uri]$confirmationDirectory
+        [string]$confirmationDirectory
     )
 
     $uninstallPaths = @(
@@ -197,7 +197,7 @@ $force = '@Force@'
 #region Set Script Variables
 if ([String]::IsNullOrEmpty($downloadUrl) -or $downloadUrl -match 'downloadUrl@$' -or $downloadUrl -eq 'NA') {
     throw 'Invalid download Url. Set an appropriate download url in company-level custom field ''CrowdStrike Download URL'''
-} elseif (![System.Uri]$downloadUrl.IsAbsoluteUri) {
+} elseif (!([System.Uri]$downloadUrl | Select-Object -ExpandProperty IsAbsoluteUri))  {
     throw 'Invalid download Url. Set an appropriate download url in company-level custom field ''CrowdStrike Download URL'''
 }
 
@@ -238,6 +238,7 @@ try {
 } catch {
     throw ('Failed to download {0}. Reason: {1}' -f $softwareName, $($Error[0].Exception.Message))
 }
+Unblock-File -Path $appPath -ErrorAction SilentlyContinue
 #endRegion
 
 #region Install CrowdStrike Windows Sensor
