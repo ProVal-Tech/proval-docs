@@ -261,6 +261,7 @@ try {
 } catch {
     throw ('Failed to download {0}. Reason: {1}' -f $appName, $($_.Exception.Message))
 }
+Unblock-File -Path $appPath -ErrorAction SilentlyContinue
 #endRegion
 
 #region Install SGN Connect
