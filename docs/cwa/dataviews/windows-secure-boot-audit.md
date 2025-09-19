@@ -3,7 +3,7 @@ id: '380e59d8-81c8-41e8-a117-ee55867cd324'
 slug: /380e59d8-81c8-41e8-a117-ee55867cd324
 title: 'Windows Secure Boot Audit [Role]'
 title_meta: 'Windows Secure Boot Audit [Role]'
-keywords: ['audit','bios','certificates','secureboot','windows',']
+keywords: ['audit','bios','certificates','secureboot','windows']
 description: 'Dataview to display the status of certificate and configurations needed for secure boot'
 tags: ['bios','certificates','secureboot','windows']
 draft: false
