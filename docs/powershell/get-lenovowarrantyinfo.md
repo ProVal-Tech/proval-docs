@@ -95,6 +95,6 @@ The script returns a PowerShell object with the following properties:
 - `warrantyEnd` (string): Warranty end date.
 - `daysLeft` (float): Number of days remaining on the warranty.
 
-Log and error files:
-    .\Get-LenovoWarrantyInfo-log.txt
-    .\Get-LenovoWarrantyInfo-error.txt
+Log and error files:  
+- .\Get-LenovoWarrantyInfo-log.txt  
+- .\Get-LenovoWarrantyInfo-error.txt
