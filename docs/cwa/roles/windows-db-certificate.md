@@ -1,0 +1,34 @@
+---
+id: '046378db-8236-470b-b6d3-dc6955a19e9a'
+slug: /046378db-8236-470b-b6d3-dc6955a19e9a
+title: 'Windows DB Certificate'
+title_meta: 'Windows DB Certificate'
+keywords: ['role','audit']
+description: 'Automate role to detect if a Windows agent has the updated 2023 DB Certificate'
+tags: ['windows','uefi','secureboot','certificates']
+draft: false
+unlisted: false
+---
+
+## Summary
+
+Automate role to detect if a Windows agent has the updated 2023 DB Certificate. If the Windows DB Certificate role is detected, the DB certificate is up to date.
+
+## Settings
+
+
+### Detection String
+
+- {%@powershell.exe -nologo -noprofile -command "[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match ‘Windows UEFI CA 2023’"@%}
+
+### Comparator
+
+- Equals
+
+### Result
+
+- True
+
+### Applicable OS
+
+- Windows
