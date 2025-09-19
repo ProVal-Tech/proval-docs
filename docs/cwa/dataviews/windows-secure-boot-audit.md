@@ -16,10 +16,10 @@ This dataview displays the status of key certificate and configurations that wil
 
 ## Dependencies
 
-- [Windows Secure Boot](/docs/263a9e69-95ea-4189-b4c7-f2be7f074872)
-- [Windows Telemetry](/docs/53371c3c-92ce-468b-8017-cacce1921b26)
-- [Windows DB Certificate](/docs/046378db-8236-470b-b6d3-dc6955a19e9a)
-- [Windows KEK Certificate](/docs/22cf1518-f97f-49cd-a95d-7ea1816714a7)
+[Windows Secure Boot](/docs/263a9e69-95ea-4189-b4c7-f2be7f074872)
+[Windows Telemetry](/docs/53371c3c-92ce-468b-8017-cacce1921b26)
+[Windows DB Certificate](/docs/046378db-8236-470b-b6d3-dc6955a19e9a)
+[Windows KEK Certificate](/docs/22cf1518-f97f-49cd-a95d-7ea1816714a7)
 
 ## Columns
 
