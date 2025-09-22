@@ -19,7 +19,7 @@ Automate role to detect if a Windows agent has the updated 2023 KEK Certificate.
 
 ### Detection String
 
-- {%@powershell.exe -nologo -noprofile -command "[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI KEK).bytes) -match ‘Microsoft Corporation KEK CA 2023’"@%}
+- `{%@powershell.exe -nologo -noprofile -command "[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI KEK).bytes) -match ‘Microsoft Corporation KEK CA 2023’"@%}`
 
 ### Comparator
 

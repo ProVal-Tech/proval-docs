@@ -19,7 +19,7 @@ Automate role to detect if a Windows agent has telemetry enabled. If the Windows
 
 ### Detection String
 
-- {%-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection:AllowTelemetry-%}
+- `{%-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection:AllowTelemetry-%}`
 
 ### Comparator
 

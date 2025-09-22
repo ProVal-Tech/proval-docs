@@ -19,7 +19,7 @@ Automate role to detect if a Windows agent has secure boot enabled. If the Windo
 
 ### Detection String
 
-- {%@powershell.exe -nologo -noprofile -command "Confirm-SecureBootUEFI"@%}
+- `{%@powershell.exe -nologo -noprofile -command "Confirm-SecureBootUEFI"@%}`
 
 ### Comparator
 
