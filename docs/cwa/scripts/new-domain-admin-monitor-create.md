@@ -38,13 +38,13 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
        DELETE FROM Groupagents WHERE `Name` = 'ProVal - Production - New Domain Admin'
        ```
 
-   - Open the `Server Status` tool by navigating to `Help` > `Server Status`.
+   - Open the `Server Status` tool by navigating to `Help` > `Server Status`.  
    ![Server Status](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_2.webp)
 
    - Click the `Do Group Refresh` button to refresh and apply the changes made.
    ![Do Group Refresh](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_3.webp)
 
-   - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.
+   - Click `OK` to the popup message and wait for a minute to allow the changes to take effect.  
    ![OK Popup](../../../static/img/docs/73adabc6-03cb-4979-9c62-97acc98308da/image_4.webp)
 
 2. Import the `△ Custom - Ticket Creation - Computer - Failures Only` alert template from the `ProSync` plugin if it's missing in the environment.
