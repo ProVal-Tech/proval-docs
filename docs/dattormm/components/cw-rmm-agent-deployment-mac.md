@@ -27,20 +27,20 @@ This script deploys ConnectWise Asio Platform agents to the MAC endpoints.
 
 To execute the `component` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the `component` on from the Datto RMM.  
+1. Select the machine you want to run the `component` on, from the Datto RMM.  
 
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `CW RMM Agent Deployment` and click on `Select`
+3. Search the component `CW RMM Agent Deployment [MAC]` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. Click RUN to initiate the component
+4. Click `Run` to initiate the component
  ![Imag 4](../../../static/img/docs/5e0d8f5a-0a7c-4b71-879c-f24d616af32e/image3.webp)
 
 ## Global Settings
 
-- Go to "Setup>Global Settings>Variables"  
+- Go to `Setup` > `Global Settings` > `Variables`  
 - Create the below global Variable
 
 | Name | Value | Description |
