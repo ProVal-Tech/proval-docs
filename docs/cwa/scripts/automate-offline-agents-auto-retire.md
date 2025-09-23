@@ -47,7 +47,7 @@ In order to create the system properties and EDFs utilized in the script, the 'S
 1. Open the script found under ProVal/Automate/Automate - Offline Agents - Auto-Retire and hit Debug Script.
    ![Image](../../../static/img/docs/a17ec084-ba3c-4a89-9d7a-52e4260af6e1/image_10.webp)
 
-2. Select any client and ensure that the 'Set_Environment' variable is set to 1. You can set the global threshold to whatever the partner requests. The default is 90 days if not specified.
+2. Select any client and ensure that the 'Set_Environment' variable is set to 1. You can set the global threshold to whatever the partner requests. The default is 90 days if not specified.  
    ![Image](../../../static/img/docs/a17ec084-ba3c-4a89-9d7a-52e4260af6e1/image_8.webp)
 
 3. Run this script with your custom settings.
@@ -65,8 +65,8 @@ It is suggested to schedule the script to run at regular intervals, preferably w
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
-[CWM - Automate - Solution - Offline/Broken Agents](/docs/ab580d76-42be-4b34-b38b-3a7e9336c13e)
+- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)  
+- [CWM - Automate - Solution - Offline/Broken Agents](/docs/ab580d76-42be-4b34-b38b-3a7e9336c13e)
 
 
 **Computers marked as `Broken` by the [CWM - Automate - Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) script are excluded from retirement.**
