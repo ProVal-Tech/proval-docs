@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This script deploys ConnectWise Asio Platform agents to the MAC endpoints.
+This script deploys ConnectWise Asio Platform agents to the Datto RMM MAC endpoints.
 
 ## Implementation  
 
