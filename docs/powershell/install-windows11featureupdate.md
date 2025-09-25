@@ -69,6 +69,13 @@ This helps ensure that the update process runs smoothly without being blocked or
 - The script will attempt to set the 'TrustedInstaller' service (Windows Modules Installer) to Automatic startup and ensure it is running before starting the upgrade process.
 - This change addresses upgrade failures caused by error code 0x8007001F.
 
+## Change Log (2025-09-25)
+
+- Removes the existing settings from the following registry keys to avoid conflicts with group policy:
+  - `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet001\WindowsUpdate`
+  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet002\WindowsUpdate`
+
 ## Process
 
 The script operates in multiple phases to accomplish the upgrade:
