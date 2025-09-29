@@ -16,6 +16,14 @@ Automate role to detect if a Windows agent has secure boot enabled. If the Windo
 
 ## Settings
 
+### Role Name
+- `Windows Secure Boot`
+
+### Type
+- `PowerShell`
+
+### Sub-Type
+- `Security`
 
 ### Detection String
 
@@ -23,12 +31,12 @@ Automate role to detect if a Windows agent has secure boot enabled. If the Windo
 
 ### Comparator
 
-- Equals
+- `Equals`
 
 ### Result
 
-- True
+- `True`
 
 ### Applicable OS
 
-- Windows
+- `Windows`

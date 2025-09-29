@@ -16,6 +16,15 @@ Automate role to detect if a Windows agent has the updated 2023 DB Certificate. 
 
 ## Settings
 
+### Role Name 
+
+- `Windows DB Certificate`
+
+### Type
+- `PowerShell`
+
+### Sub-Type
+- `BIOS`
 
 ### Detection String
 
@@ -23,12 +32,12 @@ Automate role to detect if a Windows agent has the updated 2023 DB Certificate. 
 
 ### Comparator
 
-- Equals
+- `Equals`
 
 ### Result
 
-- True
+- `True`
 
 ### Applicable OS
 
-- Windows
+- `Windows`
