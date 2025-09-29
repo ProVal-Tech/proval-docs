@@ -29,65 +29,67 @@ Please create a new "PowerShell" style script to implement this task.
 
 ## Script
 
-### Row 1 Function: Script Log
-
-![Image 4](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4_1.webp)  
-
-Input the following:
-
-```Shell
-The script will detect the Huntress Agent, and if the agent is not found, it will install the agent.  
-
-acct_key : @acct_key@  
-org_key: @ORG_Key@  
-tags: ['installation', 'logging']
-
-Attempting to download the file using acct_key from the Huntress website as below:  
-https://huntress.io/script/darwin/@acctKey, and once downloaded, the agent will be attempted to install.
-```
-
-### Row 2 Function: Set Pre-defined Variable
+### Row 1 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 5](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
 
 - Select `Custom Field`  
-- Input `acct_key` as Variable name  
-- Select `Huntress Acct_Key` custom field from the dropdown  
+- Input `acctKey` as Variable name  
+- Select `Huntress Acct_Key` or (`Huntress Account Key`) custom field from the dropdown  
 - Click Save  
 
 ![Image 6](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6_1.webp)  
 
-### Row 3 Function: Set Pre-defined Variable
+### Row 2 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 7](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
 
 - Select `Custom Field`  
-- Input `ORG_Key` as Variable name  
+- Input `orgKey` as Variable name  
 - Select `Huntress Org_Key` custom field from the dropdown  
 - Click Save  
 
 ![Image 8](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7_1.webp)  
 
-### Row 4 Function: Set Pre-defined Variable
+### Row 3 Function: Set Pre-defined Variable
 
 - Select `Set Pre-Defined Variable` Function  
 ![Image 9](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_5_1.webp)  
 
 - Select `Custom Field`  
-- Input `Tags` as Variable name  
+- Input `tags` as Variable name  
 - Select `Huntress Tag` custom field from the dropdown  
 - Click Save  
 
 ![Image 10](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_8_1.webp)  
+
+### Row 4 Function: Script Log
+
+![Image 4](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_4_1.webp)  
+
+Input the following:
+
+```PlainText
+The script will detect the Huntress Agent and if the agent is not found then it will install the agent.
+
+acct_key : @acctKey@
+org_key: @orgKey@
+Tags: @tags@
+
+Attempting to download the file using acct_key from the huntress website as below:
+
+https://huntress.io/script/darwin/@acctKey@, and once downloaded the agent will be attempted to install.
+```
 
 ## Row 5 Function: Bash Script
 
 ![Image 11](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_9_1.webp)  
 
 Paste the following PowerShell script and set the expected script execution time to 900 seconds.  
-```
+
+```bash
 #!/bin/bash
 
 # Check if Huntress is installed
@@ -125,6 +127,7 @@ fi
 ```shell
 %Output%
 ```
+
 ![Image 13](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_11_1.webp)  
 ![Image 14](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_12_1.webp)  
 
@@ -165,6 +168,7 @@ fi
 ```shell
 Huntress Agent failed to install. Refer to the logs: %Output%
 ```
+
 ![Image 20](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.webp)  
 ![Image 21](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18_1.webp)  
 
