@@ -172,7 +172,7 @@ Huntress Agent failed to install. Refer to the logs: %Output%
 ![Image 20](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.webp)  
 ![Image 21](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_18_1.webp)  
 
-## Step 10: Complete Script
+## Completed Script
 
 ![Image 22](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_19_1.webp)  
 
