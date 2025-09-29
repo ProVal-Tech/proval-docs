@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field ensures a standardized taskbar layout by including only Outlook and Chrome. Select None to skip applying this setting to the current Client, Location, or Computer.
+This custom field ensures a standardized taskbar layout by including only Outlook and Chrome. Select `None` to skip applying this setting to the current Client, Location, or Computer.
 
 ## Details
 

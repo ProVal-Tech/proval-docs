@@ -7,7 +7,7 @@ keywords: ['chrome', 'outlook', 'taskbar', 'pin-chrome', 'pin-outlook', 'taskbar
 description: 'A comprehensive solution for standardizing the Windows taskbar layout by ensuring only Google Chrome and New Outlook are pinned, removing all other applications. Managed through granular custom field controls and automated enforcement.'
 tags: ['windows', 'setup', 'application']
 draft: false
-unlisted: false
+unlisted: false 
 ---
 
 ## Purpose

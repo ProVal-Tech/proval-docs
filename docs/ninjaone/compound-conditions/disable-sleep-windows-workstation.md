@@ -16,9 +16,9 @@ This condition ensures that the [Disable Sleep](/docs/21947d80-a91f-4b2a-9109-ad
 
 ## Details
 
-**Name:** `Disable Sleep`  
-**Description:** `This condition ensures that the Disable Sleep script runs on Windows workstations where auto-sleep is enabled for the active power plan, and the disabling mechanism is enabled through the cPVAL Disable Sleep custom field.`  
-**Recommended Agent Policies:** `Windows Workstation [Default]`
+- **Name:** `Disable Sleep`  
+- **Description:** `This condition ensures that the Disable Sleep script runs on Windows workstations where auto-sleep is enabled for the active power plan, and the disabling mechanism is enabled through the cPVAL Disable Sleep custom field.`  
+- **Recommended Agent Policies:** `Windows Workstation [Default]`
 
 ## Dependencies
 
