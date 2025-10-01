@@ -14,12 +14,15 @@ unlisted: false
 
 This task will first check if Huntress is installed. If it is not, the script will attempt to install the agent and log the result for MAC machines.
 
+**Note:** `Huntress Agent requires macOS 13.0.0 or later.`
+
 ## Create Script
 
 - Go to `Automation` > `Tasks`
 - At the top-right corner, click on the `Add` dropdown menu and select `Script Editor`
- 
+
 Task Details:
+
 - **Name:** Huntress Agent (Install) - MAC  
 - **Description:** This task will check if Huntress is installed. If not, it will attempt to install the agent and log the result for MAC machines.  
 - **Category:** Custom  
@@ -86,7 +89,7 @@ https://huntress.io/script/darwin/@acctKey@, and once downloaded the agent will 
 
 ![Image 11](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_9_1.webp)  
 
-Paste the following PowerShell script and set the expected script execution time to 900 seconds.  
+Paste the following PowerShell script and set the expected script execution time to 900 seconds. Set this step to `Continue on Failure`
 
 ```bash
 #!/bin/bash
