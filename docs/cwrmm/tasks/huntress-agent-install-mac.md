@@ -16,14 +16,15 @@ This task will first check if Huntress is installed. If it is not, the script wi
 
 ## Create Script
 
-Please create a new "PowerShell" style script to implement this task.
 
-![Image 1](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_1_1.webp)  
-![Image 2](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_2_1.webp)  
 
-**Name:** Huntress Agent (Install) - MAC  
-**Description:** This task will check if Huntress is installed. If not, it will attempt to install the agent and log the result for MAC machines.  
-**Category:** Custom  
+- Go to `Automation` > `Tasks`
+- At the top-right corner, click on the `Add` dropdown menu and select `Script Editor`
+ 
+Task Details:
+- **Name:** Huntress Agent (Install) - MAC  
+- **Description:** This task will check if Huntress is installed. If not, it will attempt to install the agent and log the result for MAC machines.  
+- **Category:** Custom  
 
 ![Image 3](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_3_1.webp)  
 
@@ -37,7 +38,7 @@ Please create a new "PowerShell" style script to implement this task.
 - Select `Custom Field`  
 - Input `acctKey` as Variable name  
 - Select `Huntress Acct_Key` or (`Huntress Account Key`) custom field from the dropdown  
-- Click Save  
+- Click `Save`  
 
 ![Image 6](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_6_1.webp)  
 
@@ -49,7 +50,7 @@ Please create a new "PowerShell" style script to implement this task.
 - Select `Custom Field`  
 - Input `orgKey` as Variable name  
 - Select `Huntress Org_Key` custom field from the dropdown  
-- Click Save  
+- Click `Save`  
 
 ![Image 8](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_7_1.webp)  
 
@@ -61,7 +62,7 @@ Please create a new "PowerShell" style script to implement this task.
 - Select `Custom Field`  
 - Input `tags` as Variable name  
 - Select `Huntress Tag` custom field from the dropdown  
-- Click Save  
+- Click `Save`  
 
 ![Image 10](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_8_1.webp)  
 
@@ -120,7 +121,7 @@ fi
 
 ## Step 6 Function: Script Log
 
-- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
+- Add a new row by clicking the `Add Row` button  
 - Search and select the `Script Log` function.  
 - Input the following:  
 
@@ -133,7 +134,7 @@ fi
 
 ## Step 7 Logic: If/Then
 
-- Add a new `If/Then/Else` logic from the Add Logic dropdown menu.  
+- Add a new `If/Then` logic from the `Add Logic` dropdown menu.  
 ![Image 15](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_13_1.webp)  
 
 ### Row 7a Condition: Output Contains
@@ -143,7 +144,7 @@ fi
 
 ### Row 7b Function: Set Custom Field
 
-- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
+- Add a new row in the `If` Section by clicking the `Add Row` button  
 - Search and select the `Set Custom Field` function.  
 ![Image 17](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_15_1.webp)  
 
@@ -152,16 +153,16 @@ fi
 
 ### Row 7c Function: Script Exit
 
-- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
+- Add a new row in the `If` Section by clicking the `Add Row` button  
 - Search and select the `Script Exit` function.  
 - Leave the value blank to allow the script to exit on success.  
 
-![Image 18](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.webp)  
+    ![Image 18](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_16_1.webp)   
 ![Image 19](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_17_1.webp)  
 
 ## Step 8 Function: Script Exit
 
-- Add a new row in the If Section of the If-Else part by clicking the Add Row button  
+- Add a new row after the `If/Then` Section by clicking the `Add Row` button  
 - Search and select the `Script Log` function.  
 - Input the following:  
 
@@ -180,9 +181,9 @@ Huntress Agent failed to install. Refer to the logs: %Output%
 
 This task must be scheduled on `Deploy Huntress - MAC`, the group for auto-deployment. The script can also be run manually if required.
 
-Go to Automations > Tasks.  
-Search for Huntress Agent Install.  
-Then click on Schedule and select the Target:  
+- Go to `Automations` > `Tasks`.  
+- Search for `Huntress Agent (Install) - MAC`.  
+- Then click on Schedule and select the Target:  
 
 ![Image 23](../../../static/img/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2/image_20_1.webp)  
 
