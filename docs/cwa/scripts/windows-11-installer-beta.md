@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Install Windows 11 from a target ZIP file or ISO.
+Install Windows 11 from a target ZIP file.
 
 Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe)  
 
