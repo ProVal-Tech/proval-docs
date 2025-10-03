@@ -18,9 +18,10 @@ The monitor set relies entirely on the data in the custom table [pvl_wifi_profil
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
-- [EPM - Windows Configuration - Script - Implement Wifi Profile](/docs/cffbdce7-7390-4b11-9300-6a34799b7d82)
-- [CWM - Automate - Custom Table - pvl_wifi_profiles](/docs/f317da6e-0ea2-4c1e-bad9-4d0ad25684d3)
+- [Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
+- [Script - Implement Wifi Profile](/docs/cffbdce7-7390-4b11-9300-6a34799b7d82)
+- [Custom Table - pvl_wifi_profiles](/docs/f317da6e-0ea2-4c1e-bad9-4d0ad25684d3)
+- [Solution - Implement Wifi Profile](/docs/1b38dbb7-848f-4605-b8c9-80e7ebf069d3)
 
 ## Target
 
