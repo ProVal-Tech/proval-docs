@@ -43,7 +43,8 @@ It is important to note that the addition of profiles can also be managed throug
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
+- [Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
+- [Solution - Implement Wifi Profile](/docs/1b38dbb7-848f-4605-b8c9-80e7ebf069d3)
 
 ## Variables
 

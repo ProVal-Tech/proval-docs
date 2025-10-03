@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-This dataview WiFi Profiles information for each computer fetched by the [Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596) script.
+This dataview displays WiFi Profiles information for each computer fetched by the [Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596) script.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
+[Script - Get Wifi Profile](/docs/d97282c0-4d81-46f9-b821-d553c2d8a596)
 
 ## Columns
 
@@ -28,19 +28,18 @@ This dataview WiFi Profiles information for each computer fetched by the [Get Wi
 | Client               | Client Name                                             |
 | Location             | Location Name                                           |
 | Computer             | Computer Name                                           |
-| Operating System     | Operating System (Hidden)                               |
-| Last Contact         | Last Contact with RMM (Hidden)                          |
-| computerid           | Identifier for the computer                             |
+| Operating System     | Operating System                                |
+| Last Contact         | Last Contact with Automate (Hidden)                          |                             |
 | SSID                 | SSID of the WiFi Profile                                |
 | Hex                  | Hexadecimal representation of the WiFi Profile          |
-| ConnectionMode       | Connection mode of the WiFi Profile                     |
-| ConnectionType       | Connection type of the WiFi Profile                     |
-| ConnectHiddenSSID    | Is it allowed to connect to hidden SSID or not        |
+| Connection Mode       | Connection mode of the WiFi Profile                     |
+| Connection Type       | Connection type of the WiFi Profile                     |
+| Connect Hidden SSID    | Is it allowed to connect to hidden SSID or not        |
 | Authentication       | Authentication type of the WiFi Profile                 |
 | Encryption           | Encryption type of the WiFi Profile                     |
-| SharedKeyType        | Type of the shared key (password) of the WiFi Profile   |
-| IsProtected          | If it is protected or not                                 |
-| IsAvailable          | Is it currently available or not                  |
-| IsConnected          | Is the computer actively using it or not                 |
-| Password             | Password of the WiFi profile stored in encrypted format |
-| scriptruntime        | Data collection time                                    |
+| Shared Key Type        | Type of the shared key (password) of the WiFi Profile   |
+| Is Protected          | If it is protected or not                                 |
+| Is Available          | Is it currently available or not                  |
+| Is Connected          | Is the computer actively using it or not                 |
+| Last Logged In User             | User that logged in recently |
+| Script Run Time        | Data collection time                                    |

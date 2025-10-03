@@ -22,6 +22,11 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 - Regular execution:  
   ![Sample Run Image 2](../../../static/img/docs/d97282c0-4d81-46f9-b821-d553c2d8a596/image_2.webp)  
 
+
+### Dependencies
+
+- [Solution - Implement Wifi Profile](/docs/1b38dbb7-848f-4605-b8c9-80e7ebf069d3)
+
 ## Variables
 
 | Name               | Description                                          |
