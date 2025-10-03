@@ -15,8 +15,19 @@ unlisted: false
 
 ## Settings
 
+### Role Name 
+
+
+### Type
+
+
+### Sub-Type
+
 
 ### Detection String
+
+
+### Serial Key
 
 
 ### Comparator
