@@ -29,7 +29,7 @@ This dataview displays WiFi Profiles information for each computer fetched by th
 | Location             | Location Name                                           |
 | Computer             | Computer Name                                           |
 | Operating System     | Operating System                                |
-| Last Contact         | Last Contact with Automate (Hidden)                          |                             |
+| Last Contact         | Last Contact with Automate (Hidden)                          |                            
 | SSID                 | SSID of the WiFi Profile                                |
 | Hex                  | Hexadecimal representation of the WiFi Profile          |
 | Connection Mode       | Connection mode of the WiFi Profile                     |
