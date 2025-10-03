@@ -28,7 +28,7 @@ Automate role to detect if a Windows agent has the updated 2023 DB Certificate. 
 
 ### Detection String
 
-- `{%-HKLM\SYSTEM\CurrentControlSet\Control\SecureBoot\Servicing:WindowsUEFICA2023Capable-%}`
+- `{%@powershell.exe -nologo -noprofile -command "[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match '(Windows|Microsoft) UEFI CA 2023'"@%}`
 
 ### Serial Key
 
@@ -36,11 +36,11 @@ Automate role to detect if a Windows agent has the updated 2023 DB Certificate. 
 
 ### Comparator
 
-- `Regex Match`
+- `Equals`
 
 ### Result
 
-- `[1-2]`
+- `True`
 
 ### Applicable OS
 
