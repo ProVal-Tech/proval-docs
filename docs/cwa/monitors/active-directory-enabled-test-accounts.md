@@ -18,6 +18,8 @@ Using the Active Directory plugin, this monitor will look for any account with t
 
 - AD Plugin
 
+## Alert Template
+- △ Custom - Ticket Creation - Computer
 ## Target
 
 Global
