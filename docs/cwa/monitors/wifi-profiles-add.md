@@ -14,7 +14,7 @@ unlisted: false
 
 The purpose of the monitor set is to identify computers where the Wi-Fi profiles specified in the Client or Location level EDF, `WiFi Profiles To Add`, are not available based on the data in the [Wi-Fi Profile - Audit [Script]](/docs/40d25f32-9014-44ea-8332-0ab24d59ab43) dataview. Subsequently, the monitor set triggers the execution of the [Implement Wifi Profile](/docs/cffbdce7-7390-4b11-9300-6a34799b7d82) script using the `△ Custom - Execute Script - Implement Wifi Profile` alert template to add the missing profiles. Detailed information about the EDFs can be referenced in the [script's documentation](/docs/cffbdce7-7390-4b11-9300-6a34799b7d82).
 
-The monitor set relies entirely on the data in the custom table [pvl_wifi_profiles](/docs/237fb012-73a7-498d-a76c-304367fee659) to be operational within the environment.
+The monitor set relies entirely on the data in the custom table [pvl_wifi_profiles](/docs/f317da6e-0ea2-4c1e-bad9-4d0ad25684d3) to be operational within the environment.
 
 ## Dependencies
 

@@ -96,7 +96,7 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 | Name                | Example                                          | Required | Description                                                                                                                                                                                                                                               |
 |---------------------|--------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](/docs/51eaeefd-b300-4f9a-be28-fa01e6e83b5e) monitor set detections.                              |
+| Exclude From Wifi Profile Addition | Check Box                                   | False    | This EDF has no effect on the script but can be used to exclude the computer from the [CWM - Automate - Internal Monitor - Add - Wifi Profiles](/docs/3a1d1f7d-a655-40bf-a048-5e861aee00ae) monitor set detections.                              |
 
 ![Image](../../../static/img/docs/cffbdce7-7390-4b11-9300-6a34799b7d82/image_14.webp)
 
