@@ -4,7 +4,7 @@ slug: /e44c752f-6457-428a-84b7-506f6be81714
 title: 'Windows Secure boot Audit'
 title_meta: 'Windows Secure boot Audit'
 keywords: ['audit','bios','certificates','secureboot','windows']
-description: 'This solution hels to display the status of key certificate and configurations that will be needed before the current secure boot certificates expire.'
+description: 'This solution helps to display the status of key certificate and configurations that will be needed before the current secure boot certificates expire.'
 tags: ['bios','certificates','secureboot','windows']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-This solution hels to display the status of key certificate and configurations that will be needed before the current secure boot certificates expire.
+This solution guides to display the status of key certificate and configurations in a dataview that will be needed before the current secure boot certificates expire.
 
 ## Associated Content
 
