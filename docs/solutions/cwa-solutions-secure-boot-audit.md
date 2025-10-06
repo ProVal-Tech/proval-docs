@@ -32,5 +32,5 @@ This solution guides to display the status of key certificate and configurations
     - [Windows DB Certificate](/docs/046378db-8236-470b-b6d3-dc6955a19e9a)  
     - [Windows KEK Certificate](/docs/22cf1518-f97f-49cd-a95d-7ea1816714a7)  
 
-- Import the dataview [Windows Secure Boot Audit [Role]](/docs/380e59d8-81c8-41e8-a117-ee55867cd32)  
-- The computers will take some time to detect the role and slowly the [dataview](/docs/380e59d8-81c8-41e8-a117-ee55867cd32) will start showing the secure boot details.
+- Import the dataview [Windows Secure Boot Audit [Role]](/docs/380e59d8-81c8-41e8-a117-ee55867cd324)  
+- The computers will take some time to detect the role and slowly the [dataview](/docs/380e59d8-81c8-41e8-a117-ee55867cd324) will start showing the secure boot details.
