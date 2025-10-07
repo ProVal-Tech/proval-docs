@@ -5,7 +5,7 @@ title: 'user_class_mapping'
 title_meta: 'user_class_mapping'
 keywords: ['audit', 'userclass', 'user', 'permission', 'Automate']
 description: 'This document outlines the purpose and structure for storing audit data of the Automate user(s) permissions changes'
-tags: ['database', 'permission']
+tags: ['database', 'permissions']
 draft: false
 unlisted: false
 ---
