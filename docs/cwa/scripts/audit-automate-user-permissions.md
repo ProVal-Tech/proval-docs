@@ -1,16 +1,19 @@
 ---
 id: 'daeddc31-ebd5-49f6-ae90-b812f6dbfb2a'
 slug: /daeddc31-ebd5-49f6-ae90-b812f6dbfb2a
-title: 'Automate User Permission Audit [Param]'
-title_meta: 'Automate User Permission Audit [Param]'
+title: 'Automate User Permission Audit'
+title_meta: 'Automate User Permission Audit'
 keywords: ['Automate', 'CW Users', 'Automate Users', 'Users', 'Permission']
-description: 'This client script creates the ticket if the applied user classes permissions are changed for the users or if new user classes are added or removed from the users.'
+description: 'This client script creates a ticket if the applied user classes permissions are changed for the users or if new user classes are added or removed from the users.'
 tags: ['permissions']
 draft: false
 unlisted: false
 ---
 
 ## Summary
+
+This is a client script that creates a ticket if the applied user classes permissions are changed for the users or if new user classes are added or removed from the users.
+
 This script creates a custom table [user_class_mapping](/docs/6c97beaa-f30e-4529-8251-2ecbd01e2221) at the very first stage and then runs at every 2 hour interval and compare the Automate user's permission change by storing it to the temporary table and match with the stored custom table data.  
 
 If the changes found then it creates the ticket with the details.  
