@@ -24,12 +24,12 @@ This document outlines the purpose and structure for storing audit data of the A
 
 | Column               | Type      | Explanation                                                                                     |
 |----------------------|-----------|-------------------------------------------------------------------------------------------------|
-| userid           | int       | Automate User id                                                                   |
-| username          | varchar   | Display name of the application.                                                                 |
-| email            | varchar   | Email id assigned to the Automate user                                                                   |
+| userid           | int       | Automate User ID                                                                   |
+| username          | varchar   | Display name of the User                                                                 |
+| email            | varchar   | Email ID assigned to the Automate user                                                                   |
 | user_permissions      | varchar   | This stores the Client-level permissions of the Automate User                                                           |
 | secondary      | varchar   | This stores the Group-level permissions of the Automate User                                            |
-| classid               | varchar   | It contains the userclass id                                                    |
-| classname            | varchar  | It stores the userclass name that is assigned to the Automate user                                                         |
-| class_permissions                | varchar   | It stores the UserClass permissions                                           |
-| permissionshigh      | varchar  | It stores the UserClass plugins permissions |
+| classid               | varchar   | User Class ID                                                    |
+| classname            | varchar  | Stores the User Class name assigned to the Automate user                                                         |
+| class_permissions                | varchar   | Stores the User Class permissions                                           |
+| permissionshigh      | varchar  | Stores the User Class plugins permissions |

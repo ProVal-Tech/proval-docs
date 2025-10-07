@@ -55,6 +55,10 @@ If the changes found then it creates the ticket with the details.
  
  It creates a one single ticket with the clientid referenced in the system property `pvl_parentclientid`.
 
+ **Please NOTE :** `There will be always a new ticket for a new permission change. The script is not commenting about any changes on an old ticket. This is to keep our partner notified about the new changes.`
+
+ `To enable comment and avoid any new ticket, please enable steps for comment in the script.`
+
  Ticketing:
    
    **Subject**:  
