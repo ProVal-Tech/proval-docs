@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-This document outlines the purpose and structure for storing audit data of the Automate user(s) permissions changes detected by the client script [Automate Users Permission Audit](\docs\daeddc31-ebd5-49f6-ae90-b812f6dbfb2a).
+This document outlines the purpose and structure for storing audit data of the Automate user(s) permissions changes detected by the client script [Automate Users Permission Audit](/docs/daeddc31-ebd5-49f6-ae90-b812f6dbfb2a).
 
 ## Dependencies
 
-[Automate Users Permission Audit](\docs\daeddc31-ebd5-49f6-ae90-b812f6dbfb2a).
+[Automate Users Permission Audit](/docs/daeddc31-ebd5-49f6-ae90-b812f6dbfb2a).
 
 ## Tables
 

@@ -11,11 +11,11 @@ unlisted: false
 ---
 
 ## Summary
-This script creates a custom table [user_class_mapping](\docs\6c97beaa-f30e-4529-8251-2ecbd01e2221) at the very first stage and then runs at every 2 hour interval and compare the Automate user's permission change by storing it to the temporary table and match with the stored custom table data.  
+This script creates a custom table [user_class_mapping](/docs/6c97beaa-f30e-4529-8251-2ecbd01e2221) at the very first stage and then runs at every 2 hour interval and compare the Automate user's permission change by storing it to the temporary table and match with the stored custom table data.  
 
 If the changes found then it creates the ticket with the details.  
 
-**Note:** It is mandatory to run the script with `SetEnvironment` set to 1 during the initial script import stage so that it allows to create the custom table [user_class_mapping](\docs\6c97beaa-f30e-4529-8251-2ecbd01e2221) and system property `pvl_parentclientid`.
+**Note:** It is mandatory to run the script with `SetEnvironment` set to 1 during the initial script import stage so that it allows to create the custom table [user_class_mapping](/docs/6c97beaa-f30e-4529-8251-2ecbd01e2221) and system property `pvl_parentclientid`.
 
 ## Sample Run
 
@@ -25,7 +25,7 @@ If the changes found then it creates the ticket with the details.
 
 - System Property `pvl_parentclientid` 
    - By default it is set to 1 which is reserved for the primary client in most environment.
-- Custom table [user_class_mapping](\docs\6c97beaa-f30e-4529-8251-2ecbd01e2221)
+- Custom table [user_class_mapping](/docs/6c97beaa-f30e-4529-8251-2ecbd01e2221)
    - It stores the Automate user's permission history.
 
 ## Variables
@@ -39,7 +39,7 @@ If the changes found then it creates the ticket with the details.
 
 | Name                     | Example               | Required             | Description                                                                                                                                                                                                                      |
 |--------------------------|-----------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SetEnvironment               | 1    | False      | If the SetEnvironment = 1, it will create the custom table [user_class_mapping](\docs\6c97beaa-f30e-4529-8251-2ecbd01e2221) and system property `pvl_parentclientid`                                                                                      |
+| SetEnvironment               | 1    | False      | If the SetEnvironment = 1, it will create the custom table [user_class_mapping](/docs/6c97beaa-f30e-4529-8251-2ecbd01e2221) and system property `pvl_parentclientid`                                                                                      |
 
 #### System Property
 
