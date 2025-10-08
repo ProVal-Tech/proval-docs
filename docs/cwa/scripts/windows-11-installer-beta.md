@@ -12,19 +12,24 @@ unlisted: false
 
 ## Summary
 
-Install Windows 11 from a target ZIP file.
+Install Windows 11 from a target ZIP or ISO file.
 
 Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe)  
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
-**File Hash (SHA256)**: `2BDFE75FFE305F4DD438E82811399BFE3AA8045CE38F5A5162E9832768765237`  
-**File Hash (MD5)**: `2A6E4342F35BC700D8614CD6ECAD57E2`  
+**File Hash (SHA256)**: `8E57C3D9CBB4967772C14D7A007372B44ADF3062CEAB50236FD2A4AD66DADE02`  
+**File Hash (MD5)**: `C69034426672DFF3128328B1FC19A1ED`  
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
 **File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
 **File Hash (MD5)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
 
 **Note**: `When executed without the NoReboot flag, the script reschedules itself to run 30 minutes after completing the upgrade to perform validation.`
+
+## Update Notice: 8 October, 2025
+
+- The script has been updated to support local paths in the URI.
+- It now removes the installers and extracted files before running the installation.
 
 ## Update Notice: 15 January, 2024
 
