@@ -16,7 +16,7 @@ The URL from which to download the CloudRadial Agent installer for the client's 
 
 ## Dependencies
 
-- [Solution - CloudRadial Agent Deployment](/docs/)
+- [Solution - CloudRadial Agent Deployment](/docs/9e861bf3-2a05-46ef-9f7f-a46f33b675c5)
 
 ## Custom Field Setup Location
 
