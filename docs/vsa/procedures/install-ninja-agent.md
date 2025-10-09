@@ -45,7 +45,6 @@ None
 
 ## Output
 
-<pre>
 | Time                  | Procedure                                         | Status                                                                                                                              | User                      |
 |-----------------------|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 3:40:41 am 9-Oct-25   | Install - Ninja Agent                             | Success THEN                                                                                                                        | ProNoc                    |
@@ -62,7 +61,7 @@ None
 | 3:40:39 am 9-Oct-25   | Execute Shell command - Get Results to Variable-0003 | Success THEN                                                                                                                        | ProNoc                    |
 | 3:40:39 am 9-Oct-25   | Execute Shell command - Get Results to Variable-0004 | Success THEN                                                                                                                        | ProNoc                    |
 | 3:40:39 am 9-Oct-25   | Execute Shell command - Get Results to Variable-0005 | Success ELSE                                                                                                                        | ProNoc                    |
-| 3:40:39 am 9-Oct-25   | Execute Shell command - Get Results to Variable-0005 | Checking application presence | Select-Object -ExpandProperty DisplayName -ErrorAction SilentlyContinue" > "c:\kworking\commandresults-1636964856.txt" 2>&1 | ProNoc |
+| 3:40:39 am 9-Oct-25   | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: powershell.exe -ExecutionPolicy Bypass -Command "Get-ItemProperty 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*','HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' -ErrorAction SilentlyContinue \| Where-Object { $_.DisplayName -eq 'NinjaRMMAgent' } \| Select-Object -ExpandProperty DisplayName -ErrorAction SilentlyContinue" >"c:\kworking\commandresults-1636964856.txt" 2>&1  | ProNoc |
 | 3:40:38 am 9-Oct-25   | Ninja Agent Installer-0002                        | msiexec.exe -i "%ProgramData%_automation\AgentProcedure\NinjaInstallation/NinjaOneAgent-x86.msi" TOKENID="N122315212122"          | ProNoc                    |
 | 3:40:36 am 9-Oct-25   | Ninja Agent Installer-0002                        | File downloaded successfully.                                                                                                        | ProNoc                    |
 | 3:40:33 am 9-Oct-25   | Execute Powershell Command                        | Success THEN                                                                                                                        | ProNoc                    |
@@ -86,7 +85,6 @@ None
 | 3:40:26 am 9-Oct-25   | Install - Ninja Agent                             | Informational: Get Variable task in THEN step 4 was ignored because the client machine is running Win11, which does not meet the Mac OS X OS type criteria. (Line 13)                       | ProNoc                    |
 | 3:40:26 am 9-Oct-25   | Install - Ninja Agent                             | Informational: Get Variable task in THEN step 2 was ignored because the client machine is running Win11, which does not meet the Mac OS X OS type criteria. (Line 10)                       | ProNoc                    |
 | 3:40:19 am 9-Oct-25   | Run Now - Install - Ninja Agent                   | Admin ProNoc scheduled procedure Run Now - Install - Ninja Agent to run at Oct 9 2025 3:40AM                                           | ProNoc                    |
-</pre>
 
 ## Output
 
