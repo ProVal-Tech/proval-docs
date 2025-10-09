@@ -16,12 +16,13 @@ This Automation checks for recent DFS Replication errors or warnings within the 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 ## Dependencies
 - [Solution - DFS Replication Health Check](/docs/9fd6046b-e670-4204-b140-b84c268aefe7)
 - [Compound Condition - DFS Replication Health Check](/docs/0fab1e4b-7bbb-4939-87e1-792cdcea49e4)
-- [CW Manage Ticket Template](/docs/6e35ca8b-0400-40ec-b33b-d5f642979258)
+- [CW Manage Ticket Template - P2 - Major](/docs/6e35ca8b-0400-40ec-b33b-d5f642979258)
 
 
 ## Automation Setup/Import

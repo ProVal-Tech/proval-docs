@@ -22,7 +22,7 @@ Triggers an alert when any errors are detected in DFS Replication on the server,
 ## Dependencies
 - [Solution - DFS Replication Health Check](/docs/9fd6046b-e670-4204-b140-b84c268aefe7)
 - [Automation - DFS Replication Health Check](/docs/6ef623c1-b1aa-4019-9f1e-70ca04694a56)
-- [CW Manage Ticket Template](/docs/6e35ca8b-0400-40ec-b33b-d5f642979258)
+- [CW Manage Ticket Template - P2 - Major](/docs/6e35ca8b-0400-40ec-b33b-d5f642979258)
 
 ## Compound Condition Creation 
 
