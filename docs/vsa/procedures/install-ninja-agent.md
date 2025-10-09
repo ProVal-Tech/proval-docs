@@ -4,7 +4,7 @@ slug: /64929950-034f-4c49-a399-f758aafe2bba
 title: 'Install - Ninja Agent'
 title_meta: 'Install - Ninja Agent'
 keywords: ['ninjarmm','rmm','agent']
-description: 'This script deploys the NinjaRMMAgent on windows and Mac agents via VSA.'
+description: 'This script deploys the NinjaRMMAgent on windows and Mac agents via VSA'
 tags: ['application','installation']
 draft: false
 unlisted: false
