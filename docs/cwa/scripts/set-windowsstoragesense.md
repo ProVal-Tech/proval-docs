@@ -3,8 +3,8 @@ id: '4c99cd5b-75c1-4f55-81ec-071590356909'
 slug: /4c99cd5b-75c1-4f55-81ec-071590356909
 title: 'Set - Windows Storage Sense Configuration [Param]'
 title_meta: 'Set - Windows Storage Sense Configuration [Param]'
-keywords: ['Storage', 'Storage Sense', 'OneDrive']
-description: ''
+keywords: ['storage', 'storage sense', 'onedrive']
+description: 'This PowerShell script automates the configuration of user-level OneDrive Storage Sense settings in Windows by updating specific registry keys. '
 tags: ['storage', 'onedrive', 'windows']
 draft: false
 unlisted: false
@@ -21,6 +21,9 @@ This is particularly useful in enterprise environments where OneDrive cleanup po
 ## Dependencies
 
 The machine must be a Windows-based device; otherwise, the script will fail.
+
+## User Parameter
+- `Days`: The number of days to set the OneDrive cloud backup. It only accepts 0, 1, 14, 30, and 60 as days.
 
 ## Process
 
