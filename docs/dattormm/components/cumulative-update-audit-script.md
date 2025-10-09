@@ -14,7 +14,7 @@ unlisted: false
 This Script validate the full version of the OS and compares it with Microsoft's database of Windows Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the UDF.
   
 ## Dependency  
-[Get-LatestInstalledCU](../../powershell/get-latestinstalledcu.md)
+[Get-LatestInstalledCU](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
 
 ## Implementation  
 
