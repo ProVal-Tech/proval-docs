@@ -1,6 +1,6 @@
 ---
-id: '5d2830db-272e-4f60-8b18-54bf53a7dbed'
-slug: /5d2830db-272e-4f60-8b18-54bf53a7dbed
+id: 'f220b4c0-75f4-478d-860f-3e41a91ab6f0'
+slug: /f220b4c0-75f4-478d-860f-3e41a91ab6f0
 title: 'Banyan App Deployment'
 title_meta: 'Banyan App Deployment'
 keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app', 'banyan-app-deployment']
