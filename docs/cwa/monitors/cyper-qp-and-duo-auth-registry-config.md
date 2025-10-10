@@ -1,5 +1,5 @@
 ---
-id: '25732e23f-eeb7-4017-ab8c-7b3b7bf25329'
+id: '5732e23f-eeb7-4017-ab8c-7b3b7bf25329'
 slug: /5732e23f-eeb7-4017-ab8c-7b3b7bf25329
 title: 'Cyber QP and Duo Auth Registry Config [Change]'
 title_meta: 'Cyber QP and Duo Auth Registry Config [Change]'
