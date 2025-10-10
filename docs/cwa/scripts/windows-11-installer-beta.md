@@ -31,7 +31,7 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 - The script has been updated to support local paths in the URI.
 - It now removes the installers and extracted files before running the installation.
 
-## Update Notice: 15 January, 2024
+## Update Notice: 15 January, 2025
 
 The script has been updated to address the `InsufficientSystemPartitionDiskSpaceHardblock` issue.
 
