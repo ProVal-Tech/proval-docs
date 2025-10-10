@@ -4,7 +4,7 @@ slug: /5d2830db-272e-4f60-8b18-54bf53a7dbed
 title: 'Banyan App Deployment'
 title_meta: 'Banyan App Deployment'
 keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app', 'banyan-app-deployment']
-description: 'Solution to detect endpoints missing the Banyan App and install it automatically.''
+description: 'Solution to detect endpoints missing the Banyan App and install it automatically.'
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
