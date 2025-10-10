@@ -34,6 +34,11 @@ Installing with KBArticleID
 
 ![image3](../../../static/img/docs/bd2357af-12a6-4d9b-a0b8-e4b5e71c979b/image3.webp)
 
+### Example 4
+
+Installing with Title
+
+![image3](../../../static/img/docs/bd2357af-12a6-4d9b-a0b8-e4b5e71c979b/image4.webp)
 
 ## Implementation
 
@@ -59,7 +64,7 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 | Category | String | | One or more update categories to include:- Critical Updates,Security Updates,Update Rollups,Feature Packs,Service Packs,Definition Updates,Drivers,Tools,Updates |
 | Severity | String | | One or more update severities to include:- Critical,Important,Low,Moderate,Unspecified |
 | KBArticleID | String | | One or more KB article IDs to include |
-| Title | String |  | One or more update titles to include |
+| Title | String |  | Update title to include |
 | ExcludeDrivers | Selection | False | Excludes updates in the 'Drivers' category |
 | ExcludeKBArticleID | String | | One or more KB article IDs to exclude from installation |
 | AllowReboot | Selection | False | Allows the computer to reboot automatically if required after updates |
@@ -69,5 +74,6 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 - stdOut
 - stdError
 
-## Attchments
+## Attachments
+
 [Install-WindowsUpdates](../../../static/attachments/Install-WindowsUpdates.cpt)
