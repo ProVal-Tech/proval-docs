@@ -25,7 +25,7 @@ https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59)      | custom fields | These custom fields built to store the ESU licensing and auditing status at different levels. |
 | [Script - ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe66e1015)      | Script | This script performs the checks for the ESU license activation detection and stores the info in the device custom field `cPVAL ESU Status` |
-| [Groups - Win10 cpval ESU Status](/docs/ac69041b-a91e-4bb6-b2a8-0f87917319dcc)      | Groups | This contains the list of Windows 10 devices where the ESU is activated/ not activated/ or script failed record in three different groups.|
+| [Groups - Win10 cpval ESU Status](/docs/85bd58c3-9a63-4d35-a4ce-cff4d2feae26)      | Groups | This contains the list of Windows 10 devices where the ESU is activated/ not activated/ or script failed record in three different groups.|
 
 #### Automation Content
 
@@ -39,10 +39,10 @@ This solution is built to perform the Windows 10 ESU licensing and auditing.
 
 #### Auditing
 - Import the custom fields [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59)
-- Import the groups [Groups - Win10 cpval ESU Status](/docs/ac69041b-a91e-4bb6-b2a8-0f87917319dcc)
+- Import the groups [Groups - Win10 cpval ESU Status](/docs/85bd58c3-9a63-4d35-a4ce-cff4d2feae26)
 - Import the [Script - ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe66e1015) 
 
-Schedule the [Script - ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe66e1015) to the Windows 10 group in the partners environment weekly or bi-weekly. The script stores the info in the device custom field [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59) and according to the output it will reflect in the [Groups - Win10 cpval ESU Status](/docs/ac69041b-a91e-4bb6-b2a8-0f87917319dcc).
+Schedule the [Script - ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe66e1015) to the Windows 10 group in the partners environment weekly or bi-weekly. The script stores the info in the device custom field [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59) and according to the output it will reflect in the [Groups - Win10 cpval ESU Status](/docs/85bd58c3-9a63-4d35-a4ce-cff4d2feae26).
 
 #### Licensing
 - Import the [Script - Windows 10 Extended Security Update](/docs/ba4df182-e419-4377-819f-ef55c34b0380)

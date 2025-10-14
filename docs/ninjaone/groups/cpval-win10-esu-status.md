@@ -1,6 +1,6 @@
 ---
-id: 'ac69041b-a91e-4bb6-b2a8-0f87917319dc'
-slug: /ac69041b-a91e-4bb6-b2a8-0f87917319dc
+id: '85bd58c3-9a63-4d35-a4ce-cff4d2feae26'
+slug: /85bd58c3-9a63-4d35-a4ce-cff4d2feae26
 title: 'Win10 ESU Status audit groups'
 title_meta: 'Win10 ESU Status audit groups'
 keywords: ['ESU', 'License', 'Extended', 'Windows 10']
@@ -19,6 +19,8 @@ This contains the list of Windows 10 devices where the ESU is activated/ not act
 | Name       | Description |
 | ---------- | ----------- |
 | Win10 ESU Activated | This contains the list of Windows 10 devices where the ESU is activated |
+| Win10 ESU Not Activated | his contains the list of machines where the script detects that the ESU license was not activated |
+| Win10 ESU Detection Failed | This contains the list of Windows 10 agents where the ESU license activation detection failed via script |
 
 
 ## Dependencies
