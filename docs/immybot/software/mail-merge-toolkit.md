@@ -12,6 +12,7 @@ unlisted: false
 
 ## Description
 
-An ImmyBot software installer for the [Mail Merge Toolkit](https://www.mapilab.com/outlook/mail_merge/).
+An ImmyBot software installer for the [Mail Merge Toolkit](https://www.mapilab.com/outlook/mail_merge/). 
+Please note that deploying this plugin will restart Microsoft Office applications if they are currently open.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/mail-merge-toolkit.toml)
