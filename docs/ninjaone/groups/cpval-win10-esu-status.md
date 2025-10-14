@@ -19,8 +19,7 @@ This contains the list of Windows 10 devices where the ESU is activated/ not act
 | Name       | Description |
 | ---------- | ----------- |
 | Win10 ESU Activated | This contains the list of Windows 10 devices where the ESU is activated |
-| Win10 ESU Not Activated | his contains the list of machines where the script detects that the ESU license was not activated |
-| Win10 ESU Detection Failed | This contains the list of Windows 10 agents where the ESU license activation detection failed via script |
+
 
 ## Dependencies
 
