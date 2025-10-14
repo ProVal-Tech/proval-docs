@@ -3,7 +3,7 @@ id: '6ef623c1-b1aa-4019-9f1e-70ca04694a56'
 slug: /6ef623c1-b1aa-4019-9f1e-70ca04694a56
 title: 'DFS Replication Health Check'
 title_meta: 'DFS Replication Health Check'
-keywords: ['DFS','Health','Replication']
+keywords: ['dfs','health','replication']
 description: 'Checks for recent DFS Replication errors or warnings within the last hour and reports the current replication state to identify potential sync or replication issues.'
 tags: ['auditing','eventlogs','windows']
 draft: false
@@ -18,6 +18,16 @@ This Automation checks for recent DFS Replication errors or warnings within the 
 `Play Button` > `Run Automation` > `Script`  
 
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
+Search and select `DFS Replication Health Check`
+![Image1](../../../static/img/docs/6ef623c1-b1aa-4019-9f1e-70ca04694a56/image1.webp)
+
+Set the required arguments and click the `Run` button to run the script.  
+**Run As:** `System`  
+**Preset Parameter:** `<Leave it Blank>`  
+![Image2](../../../static/img/docs/6ef623c1-b1aa-4019-9f1e-70ca04694a56/image2.webp)
+
+**Run Automation:** `Yes`  
+![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
 - [Solution - DFS Replication Health Check](/docs/9fd6046b-e670-4204-b140-b84c268aefe7)

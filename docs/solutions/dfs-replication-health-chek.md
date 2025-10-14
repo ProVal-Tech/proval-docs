@@ -3,7 +3,7 @@ id: '9fd6046b-e670-4204-b140-b84c268aefe7'
 slug: /9fd6046b-e670-4204-b140-b84c268aefe7
 title: 'DFS Replication Health Check'
 title_meta: 'DFS Replication Health Check'
-keywords: ['DFS','Health','Replication']
+keywords: ['dfs','health','replication']
 description: 'Triggers an alert when any errors are detected in DFS Replication on the server, indicating possible replication failures or issues requiring investigation.'
 tags: ['auditing','eventlogs','windows']
 draft: false
