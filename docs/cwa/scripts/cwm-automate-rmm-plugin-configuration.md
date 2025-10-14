@@ -37,7 +37,7 @@ This document assists with configuring the RMM+ Plugin and explains how to creat
    | Parameter                       | Value                                                                                      |
    |---------------------------------|--------------------------------------------------------------------------------------------|
    | RMMPlus_AccessKey               | Enter the value you entered in Step 3                                                     |
-   | RMMPlus_Headers                 | Origin:<FQDN as entered in Step 4> (For example - Origin:[labtech.provaltech.com](http://labtech.provaltech.com)) |
+   | RMMPlus_Headers                 | Origin:`FQDN as entered in Step 4` <br /> (For example - Origin:[labtech.provaltech.com](http://labtech.provaltech.com)) |
    | RMMPlus_StaleAgentThreshold     | 30                                                                                         |
    | RMMPlus_Timeout                 | 1000                                                                                      |   
    ![Image](../../../static/img/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246/image_3.webp)
