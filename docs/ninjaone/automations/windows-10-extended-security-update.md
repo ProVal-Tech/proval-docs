@@ -22,6 +22,7 @@ The Windows 10 Extended Security Updates program provides critical security patc
 ## Dependencies
 
 [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59)
+
 [Solution - Ninja Win10 ESU Licensing and Auditing](/docs/f1ae37d6-7fa7-414c-8550-1ae9ea11b987)
 
 ## Parameters
