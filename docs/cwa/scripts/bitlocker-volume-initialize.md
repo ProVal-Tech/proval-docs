@@ -28,7 +28,7 @@ Encrypts the E: volume of the target system with a TPM+PIN combination, allowing
 
 ## Dependencies
 
-- [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
+- [Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f)
 - PowerShell v5
 
 #### Global Parameters
@@ -70,7 +70,7 @@ Encrypts the E: volume of the target system with a TPM+PIN combination, allowing
 
 ## Process
 
-See detailed process information in the document for [SEC - Encryption - Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f).
+See detailed process information in the document for [Agnostic - Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f).
 
 When running the script, you must select a key protector type. Here is a brief explanation of each of them:
 

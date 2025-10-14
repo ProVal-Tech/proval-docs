@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-An Automate implementation of the agnostic script [SEC - Encryption - Agnostic - Enable-TPM](/docs/cc838fb3-1ff7-4bbd-90b3-48e7fd4afd61) initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. A restart may be required to initialize TPM.
+An Automate implementation of the agnostic script [Agnostic - Enable-TPM](/docs/cc838fb3-1ff7-4bbd-90b3-48e7fd4afd61) initializes TPM as part of the provisioning process for a Trusted Platform Module (TPM). Provisioning is the process of preparing a TPM for use. A restart may be required to initialize TPM.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ An Automate implementation of the agnostic script [SEC - Encryption - Agnostic -
 
 ## Dependencies
 
-- [SEC - Encryption - Agnostic - Enable-TPM](/docs/cc838fb3-1ff7-4bbd-90b3-48e7fd4afd61)
+- [Agnostic - Enable-TPM](/docs/cc838fb3-1ff7-4bbd-90b3-48e7fd4afd61)
 
 #### Global Parameters
 

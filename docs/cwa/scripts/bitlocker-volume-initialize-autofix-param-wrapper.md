@@ -23,8 +23,8 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 ## Dependencies
 
 - [Internal Monitor - BitLocker - Initialize Volume Deployment](/docs/925adfc5-e119-4c56-937a-a31c3e171371)
-- [SEC - Encryption - Script - BitLocker - Volume - Initialize](/docs/759a5a88-17ef-42e0-9145-4760aff7a3c9)
-- [SEC - Encryption - Script - BitLocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
+- [Script - BitLocker - Volume - Initialize](/docs/759a5a88-17ef-42e0-9145-4760aff7a3c9)
+- [Script - BitLocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a)
 
 #### EDFs
 

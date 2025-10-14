@@ -22,7 +22,7 @@ This Automate script executes the `Backup-BitlockerRecoveryPW.ps1` agnostic scri
 
 ### Dependencies
 
-- [SEC - Encryption - Agnostic - Backup-BitlockerRecoveryPW](/docs/7eecbf0c-2b91-4454-ba5c-e1b9605f07fc)
+- [Backup-BitlockerRecoveryPW](/docs/7eecbf0c-2b91-4454-ba5c-e1b9605f07fc)
 
 ## Sample Run
 
