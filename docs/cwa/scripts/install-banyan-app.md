@@ -73,7 +73,7 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 
 | Name | Example | Level | Section | Type | Options | Required | Description |
 |------|---------|-------|---------|------|---------|----------|-------------|
-| Install Banyan App | Windows | Client | Banyan App | Dropdown | None, All, Windows, Windows Workstation, Windows Server, Mac, Windows and Mac | True (to enable automation) | Choose OS targets for auto-deployment |
+| Install Banyan App | Windows | Client | Banyan App | Dropdown | None, All, Windows, Windows Workstation, Windows Workstations and Mac, Windows Server, Mac, Windows and Mac | True (to enable automation) | Choose OS targets for auto-deployment |
 | Exclude Banyan App Deployment | — | Location | Exclusions | Checkbox | — | False | Exclude this location from auto-deployment |
 | Exclude Banyan App Deployment | — | Computer | Exclusions | Checkbox | — | False | Exclude this computer from auto-deployment |
 | Banyan App INVITE_CODE | `scayub` | Client | Banyan App | Textbox | — | True (for automation) | Invite Code from admin console |
