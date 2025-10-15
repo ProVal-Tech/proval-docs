@@ -1,8 +1,8 @@
 ---
 id: '49c050b4-5319-4ffe-929a-d59429bdd3ba'
 slug: /49c050b4-5319-4ffe-929a-d59429bdd3ba
-title: 'Active Directory - ADPluginUser - CreateUpdate'
-title_meta: 'Active Directory - ADPluginUser - CreateUpdate'
+title: 'Active Directory - ADPluginUser - Create/Update'
+title_meta: 'Active Directory - ADPluginUser - Create/Update'
 keywords: ['ad', 'user', 'account', 'password', 'management', 'monitor']
 description: 'This document outlines the process for creating and managing an ADPluginUser account for domain controllers detected in the AD Plugin. It details the script initiation for password changes, dependencies, and alert templates, while also addressing the limitations on EOL systems.'
 tags: ['active-directory', 'security', 'setup', 'windows']

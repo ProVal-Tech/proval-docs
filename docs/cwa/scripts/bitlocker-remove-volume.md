@@ -1,8 +1,8 @@
 ---
 id: '710777f0-5c3f-4582-96e9-3beacaf085eb'
 slug: /710777f0-5c3f-4582-96e9-3beacaf085eb
-title: 'Bitlocker - Remove Volume'
-title_meta: 'Bitlocker - Remove Volume'
+title: 'Bitlocker - Volume - Remove'
+title_meta: 'Bitlocker - Volume - Remove'
 keywords: ['bitlocker', 'encryption', 'volume', 'disable', 'unprotect']
 description: 'This document provides a comprehensive guide on how to disable BitLocker protection on one or all volumes using a PowerShell script. It includes sample runs, user parameters, and dependencies required for execution.'
 tags: ['encryption', 'security', 'windows']
@@ -22,7 +22,7 @@ Disable BitLocker protection on one (or all) volumes.
 
 ## Dependencies
 
-- [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631)
+- [Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631)
 - PowerShell v5
 
 ### User Parameters
@@ -34,7 +34,7 @@ Disable BitLocker protection on one (or all) volumes.
 
 ## Process
 
-See process information in the document for [SEC - Encryption - Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631).
+See process information in the document for [Agnostic - Unprotect-BitLockerVolume](/docs/22114d12-c60e-479e-93a5-50d3450b6631).
 
 ## Output
 
