@@ -52,25 +52,25 @@ Configure the solution as outlined below:
 
 ## FAQ
 
-**Q:** Where do I get the Invite Code and Deployment Key?
+**Q:** Where do I get the Invite Code and Deployment Key?  
 **A:** From the Banyan Command Center → Settings → App Deployment.
 
-**Q:** What if Invite Code or Deployment Key are not set in EDFs?
+**Q:** What if Invite Code or Deployment Key are not set in EDFs?  
 **A:** Provide `INVITE_CODE` and `DEPLOYMENT_KEY` at runtime; runtime parameters override EDFs.
 
-**Q:** How do I exclude a specific location or computer from deployment?
+**Q:** How do I exclude a specific location or computer from deployment?  
 **A:** Set the EDF "Exclude Banyan App Deployment" at the Location or Computer level to true.
 
-**Q:** How can I verify the client installed successfully?
+**Q:** How can I verify the client installed successfully?  
 **A:** Check the CWA job output, the endpoint's installed applications list, or look for the Banyan service/process on the target machine.
 
-**Q:** Can this deploy to air-gapped devices?
+**Q:** Can this deploy to air-gapped devices?  
 **A:** No — targets must be able to download the installer and reach Banyan endpoints. For air-gapped devices use an offline installer and a different deployment workflow.
 
-**Q:** What OS versions are supported?
+**Q:** What OS versions are supported?  
 **A:** The official Banyan install scripts support current Windows, macOS, and common Linux distributions. Confirm compatibility with Banyan documentation before mass deployment.
 
-**Q:** How often should the monitor run?
+**Q:** How often should the monitor run?  
 **A:** It covers 50 machines per hour.
 
 ## References
