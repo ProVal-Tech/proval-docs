@@ -37,7 +37,7 @@ Applies registry configurations on systems where both 'Duo Authentication for Wi
 
 ### Step 1
 
-Run the next query to create the `Msiexec Eventlog Monitoring` search.
+Run the next query to create the `Cyber QP and Duo Auth Registry Config` search.
 
 ```sql
 INSERT INTO `sensorchecks` 
@@ -77,7 +77,7 @@ Obtain the group ID(s) of the group(s) that the remote monitor should be applied
 
 ### Step 3
 
-Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) for your target groups. Set the desired values for the `@intervalMinutes` and `@threshold` variables as needed.  
+Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)** with the group ID(s) for your target groups. 
 (The section to replace is at the very end of the query, immediately after **WHERE**.)
 
 ```sql
