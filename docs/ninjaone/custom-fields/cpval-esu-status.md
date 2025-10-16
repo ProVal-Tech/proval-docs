@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-These custom fields built to store the ESU licensing and auditing status at different levels.
+These custom fields are built to store the ESU licensing and auditing status at different levels.
 
 ## Details
 
@@ -20,7 +20,7 @@ These custom fields built to store the ESU licensing and auditing status at diff
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 |cPVAL ESU Status| cpvalEsuStatus| Device | Text | No | |Read Only | Read_Write | Read_Write |This custom field stores the endpoint's ESU status | Windows 10 ESU Active License Status| |
 |cPVAL ESU Key| cpvalEsuKey| Device/Organization/Location | Text | No | |Editable | Read_Write | Read_Write |Provide the ESU license key for activation of Windows 10 extended use | | |
-|cPVAL ESU Year| cpvalEsuStatus| Device/Organization/Location | Drop-Down | No | |Editable | Read_Write | Read_Write |Select the license key year validation from 1, 2, or 3 options | | |
+|cPVAL ESU Year| cpvalEsuYear| Device/Organization/Location | Drop-Down | No | |Editable | Read_Write | Read_Write |Select the license key year validation from 1, 2, or 3 options | | |
 
 ## Dependencies
 

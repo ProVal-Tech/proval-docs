@@ -13,9 +13,11 @@ unlisted: false
 ## Purpose
 
 This solution built to explain the ESU licensing audit and license activation.
-The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date. It’s intended for systems that cannot be upgraded immediately due to hardware, software compatibility, or organizational constraints. Referred to the articles: 
-https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates
-https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm
+The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date. It’s intended for systems that cannot be upgraded immediately due to hardware, software compatibility, or organizational constraints. 
+
+Refer to the articles:  
+- https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates
+- https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm
 
 ## Associated Content
 

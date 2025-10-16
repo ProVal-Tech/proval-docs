@@ -30,7 +30,7 @@ The Windows 10 Extended Security Updates program provides critical security patc
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | ESUKey | xxxxx-xxxxx-xxxxx-xxxxx-xxxxx | | False | | String/Text | Provide the ESU license key for activation of Windows 10 extended use |
-| ESUYear | 2 | 1,2, or 3 | False | Drop-Down | Select the license key year validation like 1, 2, or 3. |
+| ESUYear | 2 | 1, 2, or 3 | False | Drop-Down | Select the license key year validation like 1, 2, or 3. |
 
 ## Automation Setup/Import
 

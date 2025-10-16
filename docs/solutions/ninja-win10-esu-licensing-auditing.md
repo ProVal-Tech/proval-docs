@@ -13,9 +13,11 @@ unlisted: false
 ## Purpose
 
 This solution built to explain the ESU licensing audit and license activation in Ninja RMM.
-The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date. It’s intended for systems that cannot be upgraded immediately due to hardware, software compatibility, or organizational constraints. Referred to the articles: 
-https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates
-https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm
+The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date. It’s intended for systems that cannot be upgraded immediately due to hardware, software compatibility, or organizational constraints. 
+
+Refer to the articles:  
+- https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates
+- https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm
 
 ## Associated Content
 
@@ -23,7 +25,7 @@ https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59)      | custom fields | These custom fields built to store the ESU licensing and auditing status at different levels. |
+| [CF - cpval ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59)      | Custom Fields | These custom fields built to store the ESU licensing and auditing status at different levels. |
 | [Script - ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe66e1015)      | Script | This script performs the checks for the ESU license activation detection and stores the info in the device custom field `cPVAL ESU Status` |
 | [Groups - Win10 cpval ESU Status](/docs/85bd58c3-9a63-4d35-a4ce-cff4d2feae26)      | Groups | This contains the list of Windows 10 devices where the ESU is activated/ not activated/ or script failed record in three different groups.|
 

@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script performs the checks for the ESU license activation detection and stores the info in the device custom field "cPVAL ESU Status".
+This script performs the checks for the ESU license activation detection and stores the info in the device custom field `cPVAL ESU Status`.
 
 ## Sample Run
 
