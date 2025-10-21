@@ -3,7 +3,7 @@ id: '6e35ca8b-0400-40ec-b33b-d5f642979258'
 slug: /6e35ca8b-0400-40ec-b33b-d5f642979258
 title: 'P2 - Major'
 title_meta: 'P2 - Major'
-keywords: ['Priority', 'High','Major']
+keywords: ['priority', 'high','major']
 description: 'Creates a ConnectWise Manage ticket with High Priority when triggered, ensuring critical issues are logged and escalated promptly.'
 tags: ['ticketing']
 draft: false
