@@ -1,8 +1,8 @@
 ---
 id: 'f1ae37d6-7fa7-414c-8550-1ae9ea11b987'
 slug: /f1ae37d6-7fa7-414c-8550-1ae9ea11b987
-title: 'Windows 10 ESU Licensing And Auditing'
-title_meta: 'Windows 10 ESU Licensing And Auditing'
+title: 'Windows 10 ESU Licensing and Auditing'
+title_meta: 'Windows 10 ESU Licensing and Auditing'
 keywords: ['esu', 'license', 'extended', 'windows-10', '22h2']
 description: 'This solution built to explain the ESU licensing audit and license activation in Ninja RMM'
 tags: ['licensing', 'windows', 'extensions']
