@@ -4,7 +4,7 @@ slug: /b4d0f4a1-7891-4315-875e-01fc96b17d59
 title: 'cPVAL ESU Status'
 title_meta: 'cPVAL ESU Status'
 keywords: ['esu', 'license', 'extended', 'windows-10', '22h2']
-description: 'This custom field stores the endpoint's ESU status.'
+description: 'This custom field stores the endpoint''s ESU status.'
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false

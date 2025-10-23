@@ -4,7 +4,7 @@ slug: /e54c319a-a8e9-4d58-9a67-6c310289320f
 title: 'cPVAL ESU Year'
 title_meta: 'cPVAL ESU Year'
 keywords: ['esu', 'license', 'extended', 'windows-10', '22h2']
-description: 'Stores the ESU license key for activation of Windows 10 extended use.'
+description: 'Stores the ESU license key year for activation of Windows 10 extended use.'
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-To store the ESU license key year validation from the available option. The number stored in this Custom Field is used by the [Windows 10 ESU License Upgrade](/docs/ba4df182-e419-4377-819f-ef55c34b0380) task if the runtime variable `ESU Year` is not set.
+To store the ESU license key year from the available option. The number stored in this Custom Field is used by the [Windows 10 ESU License Upgrade](/docs/ba4df182-e419-4377-819f-ef55c34b0380) task if the runtime variable `ESU Year` is not set.
 
 ## Details
 
