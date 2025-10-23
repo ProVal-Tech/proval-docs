@@ -11,7 +11,13 @@ unlisted: false
 ---
 
 ## Purpose
+
 This solution is designed to configure the automatic deployment of the Threatlocker Agent on Windows and Macintosh machines that are missing the agent, using the NinjaOne platform.
+
+**References:**
+
+- [Enable Extended Security Updates](https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates)
+- [Deploy Windows 10 Security Updates with Intune or SCCM](https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm/)
 
 ## Associated Content
 
