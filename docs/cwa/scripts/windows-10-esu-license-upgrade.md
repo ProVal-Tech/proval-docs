@@ -21,9 +21,9 @@ Applies Extended Security Updates (ESU) license for Windows 10 22H2 systems. The
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Apply-Windows10ESULicense\Apply-Windows10ESULicense.ps1`  
-**File Hash (Sha256):** `3F6FB049BF64094BAEFE94B6216CAD60D769E7140DA6E42A021457923B78559B`  
-**File Hash (MD5):** `24CCB18FF0448B9BED43D7BC1D6F9B5E`  
+- **File Path:** `C:\ProgramData\_automation\Script\Apply-Windows10ESULicense\Apply-Windows10ESULicense.ps1`  
+- **File Hash (Sha256):** `3F6FB049BF64094BAEFE94B6216CAD60D769E7140DA6E42A021457923B78559B`  
+- **File Hash (MD5):** `24CCB18FF0448B9BED43D7BC1D6F9B5E`  
 
 ## Sample Run
 

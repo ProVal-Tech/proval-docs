@@ -12,11 +12,11 @@ unlisted: false
 
 ## Summary
 
-The internal monitor executes the auditing script [ESU License Activation Detection](/docs/765670f5-5120-4066-89d8-2cda873e8212) once per week against Windows 10 22H2 machines.
+The internal monitor executes the auditing script [ESU License Activation Detection](/docs/634db1b5-58a2-4571-8873-74040c203d56) once per week against Windows 10 22H2 machines.
 
 ## Dependencies
 
-- [Script - ESU License Activation Detection](/docs/765670f5-5120-4066-89d8-2cda873e8212)
+- [Script - ESU License Activation Detection](/docs/634db1b5-58a2-4571-8873-74040c203d56)
 - [Solution - Windows 10 ESU Licensing and Auditing](/docs/7fe6a52b-79fd-487b-8009-523996e74d11)
 
 ## Target

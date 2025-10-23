@@ -89,40 +89,40 @@ To activate ESU on machines:
 
 ## Frequently Asked Questions
 
-### What is Windows 10 ESU?
+### Q: What is Windows 10 ESU?
 
-Extended Security Updates (ESU) for Windows 10 provides critical security updates after Windows 10's end of support date. This helps organizations maintain security compliance while planning their Windows 11 migration.
+**A:** Extended Security Updates (ESU) for Windows 10 provides critical security updates after Windows 10's end of support date. This helps organizations maintain security compliance while planning their Windows 11 migration.
 
-### How do I know if ESU is activated on a device?
+### Q: How do I know if ESU is activated on a device?
 
-You can check the ESU activation status in two ways:
+**A:** You can check the ESU activation status in two ways:
 
 1. View the [cPVAL ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59) custom field value for the device
 2. Check if the device appears in the [cPVAL Win10 ESU Activated](/docs/07f95e9f-bcf2-4544-aa45-9ee3a9515316) dynamic group
 
-### How often is the ESU status checked?
+### Q: How often is the ESU status checked?
 
-The ESU status is checked daily through the [Windows 10 22H2 ESU Audit](/docs/d0241d14-c13f-4113-99ed-e267befd3103) scheduled task that runs at 11:30 AM.
+**A:** The ESU status is checked daily through the [Windows 10 22H2 ESU Audit](/docs/d0241d14-c13f-4113-99ed-e267befd3103) scheduled task that runs at 11:30 AM.
 
-### Can I exclude specific devices from ESU deployment?
+### Q: Can I exclude specific devices from ESU deployment?
 
-Yes, you can manage ESU deployment at three levels:
+**A:** Yes, you can manage ESU deployment at three levels:
 
 - Organization level: Set default ESU key and year
 - Location level: Override organization settings if needed
 - Device level: Configure specific settings for individual devices
 
-### What happens if ESU activation fails?
+### Q: What happens if ESU activation fails?
 
-If activation fails:
+**A:** If activation fails:
 
 1. The device will appear in the [cPVAL Win10 ESU Not Activated](/docs/eece6281-68b5-49f6-9c47-e48f9c929bd4) group
 2. The [cPVAL ESU Status](/docs/b4d0f4a1-7891-4315-875e-01fc96b17d59) field will indicate the failure reason
 3. You can retry activation by running the [Windows 10 ESU License Upgrade](/docs/ba4df182-e419-4377-819f-ef55c34b0380) automation again
 
-### Can I automate the ESU license deployment?
+### Q: Can I automate the ESU license deployment?
 
-Yes, you can:
+**A:** Yes, you can:
 
 1. Configure the ESU key and year at the desired level (organization/location/device)
 2. Create a scheduled task using the [Windows 10 ESU License Upgrade](/docs/ba4df182-e419-4377-819f-ef55c34b0380) automation
