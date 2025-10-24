@@ -16,6 +16,10 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 ## Sample Run
 
+**First Run:** Execute the script with the user parameter `Set_Environment` as `1` to import the System Property `QuickpassInstallToken` needed for the script.  
+![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_6.webp)
+
+**Regular Run:**  
 ![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_1.webp)
 
 ## Global Parameters
@@ -39,16 +43,20 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 ## Extra Data Fields
 
-| EDF Name                              | Level    | Type      | Description                                                                                                    |
-|---------------------------------------|----------|-----------|----------------------------------------------------------------------------------------------------------------|
-| QuickPass                             | Client   | CheckBox  | Check it if you would like to enable the client for QuickPass Deployment                                      |
-| QuickPass Agent ID                   | Client   | TextField | Populate it with the specified CustomerID at the client level to initiate the installation on targeted client machines |
-| Exclude from QuickPass Deployment     | Location | CheckBox  | Check it if you would like to exclude a location from QuickPass Deployment                                     |
-| Exclude from QuickPass Deployment     | Computer | CheckBox  | Check it if you would like to exclude a computer from QuickPass Deployment                                     |
+| EDF Name                              | Level    | Type      | Section | Description                                                                                                    |
+|---------------------------------------|----------|-----------|----------|------------------------------------------------------------------------------------------------------|
+| QuickPass                             | Client   | CheckBox  | QuickPass Deployment | Check it if you would like to enable the client for QuickPass Deployment                                      |
+| QuickPass Agent ID                   | Client   | TextField | QuickPass Deployment | Populate it with the specified CustomerID at the client level to initiate the installation on targeted client machines |
+| QuickPass Agent ID                   | Location   | TextField | QuickPass Deployment | Populate it with the specified CustomerID at the location level to override the value stored in client-level EDF `QuickPass Agent ID` |
+| Exclude from QuickPass Deployment     | Location | CheckBox  | Exclusions | Check it if you would like to exclude a location from QuickPass Deployment                                     |
+| Exclude from QuickPass Deployment     | Computer | CheckBox  | Exclusions | Check it if you would like to exclude a computer from QuickPass Deployment                                     |
 
 - The `QuickPass` EDF must be selected, and the `QuickPass Agent ID` EDF should be populated with the specified CustomerID at the client level to initiate the installation on targeted client machines.  
 ![QuickPass Agent ID](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_2.webp)  
 <em>For more information on how to fetch the QuickPass Agent ID, refer to the document [Export Customers List, Status and Agent IDs – CyberQP (getquickpass.com)](https://support.getquickpass.com/hc/en-us/articles/360061942274-Export-Customers-List-Status-and-Agent-ID-s).</em>
+
+- The `QuickPass Agent ID` EDF can be populated with the specified CustomerID at the location level to override the value set in the client-level EDF.  
+![QuickPass Agent ID](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_7.webp)  
 
 - The System Property `QuickpassInstallToken` must be filled with the installation token to initiate the QuickPass Agent installation.  
 ![QuickpassInstallToken](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_3.webp)  
@@ -69,7 +77,10 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 **Subject:** `QuickPass Agent Installation Failed on %ComputerName%(%ComputerID%)`
 
-**Ticket Body:** `Failed to install QuickPass Agent on %computername% at %clientname%. Here are the results returned from the installer: %shellresult%`
+**Ticket Body:** 
+
+```PlainText
+Failed to install QuickPass Agent on %computername% at %clientname%. Here are the results returned from the installer: %shellresult%
 
 The PC information is outlined below:  
 PC Name: %computername%  
@@ -77,10 +88,12 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+```
 
-When the script fails to download the installer:
+**When the script fails to download the installer:**
 
-`QuickPass Agent failed to download on %computername% at %clientname%. Please ensure that the computer can reach the download URL [https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe](https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe)`
+```PlainText
+QuickPass Agent failed to download on %computername% at %clientname%. Please ensure that the computer can reach the download URL [https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe](https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe)
 
 The PC information is outlined below:  
 PC Name: %computername%  
@@ -88,3 +101,4 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+```
