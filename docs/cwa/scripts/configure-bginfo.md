@@ -22,8 +22,8 @@ The end machine might need to be restarted for the changes to take place.
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Deploy-BGInfo\Deploy-BGInfo.ps1`  
-**File Hash (Sha256):** `65380B00E91A02B5A3864D43CD1410AC76062D439D85D56AA2A1AD93FE8E4590`  
-**File Hash (MD5):** `626B24D0D0800418F484C3B011A4226E`  
+**File Hash (Sha256):** `D921618EDB8B9FDE26FF1FEFB8068C81E91374F4CE6A76A788E0F51B077836C7`  
+**File Hash (MD5):** `78CF8BB960F8C9980CF3F3AD2D94ED14`  
 
 ## Implementation
 
