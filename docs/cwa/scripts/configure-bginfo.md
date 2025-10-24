@@ -21,9 +21,9 @@ The end machine might need to be restarted for the changes to take place.
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Deploy-BGInfo\Deploy-BGInfo.ps1`  
-**File Hash (Sha256):** `D921618EDB8B9FDE26FF1FEFB8068C81E91374F4CE6A76A788E0F51B077836C7`  
-**File Hash (MD5):** `78CF8BB960F8C9980CF3F3AD2D94ED14`  
+- **File Path:** `C:\ProgramData\_automation\Script\Deploy-BGInfo\Deploy-BGInfo.ps1`  
+- **File Hash (Sha256):** `D921618EDB8B9FDE26FF1FEFB8068C81E91374F4CE6A76A788E0F51B077836C7`  
+- **File Hash (MD5):** `78CF8BB960F8C9980CF3F3AD2D94ED14`  
 
 ## Implementation
 
@@ -80,7 +80,7 @@ The configuration file I have saved in the example screenshots will display the 
 
 | Name            | Description                                                                                           |
 |-----------------|-------------------------------------------------------------------------------------------------------|
-| Status          | FAILED/SUCCESS, returned by the EPM - Software Configuration - Remote Monitor - Configure BGInfo monitor set. |
+| Status          | FAILED/SUCCESS, returned by the [Configure BGInfo](/docs/91b463bf-7bb2-4c79-98ca-ef556ea093b0) remote monitor set. |
 | bgiURL          | URL to download .bgi configuration file from LTShare/WebDAV.                                          |
 | Parameter       | Parameter to pass while running the PowerShell script configuring the tool on the end machine.        |
 | ProjectName     | Deploy-BGInfo                                                                                         |
