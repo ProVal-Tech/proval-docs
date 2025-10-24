@@ -3,7 +3,7 @@ id: '54cb9acb-d11d-4a88-a0ca-92032b46fe23'
 slug: /54cb9acb-d11d-4a88-a0ca-92032b46fe23
 title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
-keywords:  ['Domain','Admin','Account','Lockout']
+keywords:  ['domain','admin','account','lockout']
 description: 'This script monitors the Security log for recent account lockouts, checks if any Domain Admin accounts are affected, outputs detailed info about the locked accounts, and fails immediately if any Domain Admin is locked out.'
 tags: ['domain','active-directory']
 draft: False

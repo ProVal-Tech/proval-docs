@@ -3,7 +3,7 @@ id: '588b31d4-04a3-4b39-af8c-6c1f24da0710'
 slug: /588b31d4-04a3-4b39-af8c-6c1f24da0710
 title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
-keywords:  ['Domain','Admin','Account','Lockout']
+keywords:  ['domain','admin','account','lockout']
 description: 'Runs the "Domain Admin Account LockOut" automation every 15 minutes on Infrastructure masters'
 tags: ['domain','active-directory']
 draft: False

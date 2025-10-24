@@ -3,7 +3,7 @@ id: '4583116e-e1b9-42bc-826d-61ec2785e532'
 slug: /4583116e-e1b9-42bc-826d-61ec2785e532
 title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
-keywords:  ['Domain','Admin','Account','Lockout']
+keywords:  ['domain','admin','account','lockout']
 description: 'This ticket template configures how a ConnectWise Manage ticket will be generated in response to the Domain Admin Account LockOut condition.'
 tags: ['domain','active-directory']
 draft: False
