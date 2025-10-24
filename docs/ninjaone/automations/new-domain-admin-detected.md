@@ -15,10 +15,9 @@ This script detects the user or group of users if its promoted to domain adminis
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a.webp)
+`Play Button` > `Run Automation` > `Script`
 
-Schedule this script against infrastructure master to generate automatic tickets on domain account lockouts.
+![SampleRun1](../../../static/img/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a.webp)
 
 ## Dependencies
 - [Ticket Template : New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac)

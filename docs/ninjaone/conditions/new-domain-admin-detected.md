@@ -20,8 +20,10 @@ Runs the [New Domain Admin Detected](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23)
 **Recommended Agent Policies:**   `Windows Server - Active Directory`
 
 ## Dependencies
-[Script : New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)
-[Ticket Template : New Domain Admin Detected](/docs/)
+- [Script : New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)
+- [Ticket Template : New Domain Admin Detected](/docs/)
+- [cPval Excluded Domain Admins](/docs/32a5e5bb-b72e-4597-beae-8f2d8a2eb1c0)
+
 
 ## Condition Creation
 

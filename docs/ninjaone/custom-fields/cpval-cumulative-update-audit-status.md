@@ -22,9 +22,9 @@ Shows the most recently installed Windows Cumulative Update. Useful for verifyin
 
 ## Dependencies
 
-[Script : New Domain Admin Detected](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23)
-[Condition : New Domain Admin Detected](/docs/b300f17d-63ee-4c31-b29b-a9fb92a69a89)
+- [Automation - Cumulative Update Audit](/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991)
+- [Group - cPVAL Cumulative Update Older than threshold Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-excluded-domain-admins.toml)
+[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-cumulative-update-audit-status.toml)
