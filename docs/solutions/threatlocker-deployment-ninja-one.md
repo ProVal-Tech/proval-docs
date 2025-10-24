@@ -11,6 +11,7 @@ unlisted: false
 ---
 
 ## Purpose
+
 This solution is designed to configure the automatic deployment of the Threatlocker Agent on Windows and Macintosh machines that are missing the agent, using the NinjaOne platform.
 
 ## Associated Content
