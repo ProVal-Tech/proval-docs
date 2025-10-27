@@ -14,6 +14,8 @@ unlisted: false
 
 This script installs the QuickPass Agent on Windows machines where it is not already installed. The `QuickPass` EDF must be selected, and the `QuickPass Agent ID` EDF should be populated with the specified CustomerID at the client level. Additionally, the System Property `QuickpassInstallToken` must be filled with the installation token to ensure the script installs the agent successfully.
 
+**Note:** The script attempt to uninstall `QuickPass Agent` before installing `QuickPass Agent (64-bit)` if `QuickPass Agent` is installed on the machine.
+
 ## Sample Run
 
 **First Run:** Execute the script with the user parameter `Set_Environment` as `1` to import the System Property `QuickpassInstallToken` needed for the script.  
@@ -21,6 +23,11 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 **Regular Run:**  
 ![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_1.webp)
+
+## Dependencies
+
+- [Script - Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2)
+- [Solution - QuickPass Deployment](/docs/65d0dbb6-29c1-4242-841c-1da9b92edab6)
 
 ## Global Parameters
 
@@ -77,7 +84,7 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 **Subject:** `QuickPass Agent Installation Failed on %ComputerName%(%ComputerID%)`
 
-**Ticket Body:** 
+**Ticket Body:**
 
 ```PlainText
 Failed to install QuickPass Agent on %computername% at %clientname%. Here are the results returned from the installer: %shellresult%
