@@ -20,7 +20,7 @@ unlisted: false
 
 ## Dependencies
 
-- [Video Port and Monitor Usage](../automations/v1778ced7-a9b2-461c-a20c-c72c2242e94f)
+- [Video Port and Monitor Usage](/docs/v1778ced7-a9b2-461c-a20c-c72c2242e94f)
 
 ## Custom Field Creation
 

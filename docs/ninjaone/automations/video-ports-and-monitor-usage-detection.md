@@ -22,6 +22,7 @@ Detect all available video output ports on the system (HDMI, DisplayPort, VGA, D
 
 ## Dependencies
 
+[Custom filed - cpval-video-ports-monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
 
 ## Automation Setup/Import
 
