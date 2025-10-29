@@ -24,7 +24,7 @@ This script monitors the Security log for recent account lockouts (Event ID 4740
 Schedule this script against infrastructure master using the [Condition](/docs/588b31d4-04a3-4b39-af8c-6c1f24da0710) to generate automatic tickets on domain account lockouts.
 
 ## Dependencies
-- [Solution : Domain Admin Account LockOut](/docs.87830e26-2018-4cd1-ba7e-a66fae0aa7e6)
+- [Solution : Domain Admin Account LockOut](/docs/87830e26-2018-4cd1-ba7e-a66fae0aa7e6)
 - [Condition : Domain Admin Account LockOut](/docs/588b31d4-04a3-4b39-af8c-6c1f24da0710)
 - [Ticket Template : Domain Admin Account LockOut](/docs/4583116e-e1b9-42bc-826d-61ec2785e532)
 

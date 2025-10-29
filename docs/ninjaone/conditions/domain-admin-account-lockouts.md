@@ -20,7 +20,7 @@ Runs the [Domain Admin Account LockOut](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe
 - **Recommended Agent Policies:**   `Windows Server - Active Directory`
 
 ## Dependencies
-- [Solution : Domain Admin Account LockOut](/docs.87830e26-2018-4cd1-ba7e-a66fae0aa7e6)
+- [Solution : Domain Admin Account LockOut](/docs/87830e26-2018-4cd1-ba7e-a66fae0aa7e6)
 - [Script : Domain Admin Account LockOut](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23)
 - [Ticket Template : Domain Admin Account LockOut](/docs/4583116e-e1b9-42bc-826d-61ec2785e532)
 
