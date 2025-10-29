@@ -31,8 +31,8 @@ Search and select `Windows Server Roles Detection`
 ![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
-
-[cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
+[Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)  
+[Custom Field - cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## Parameters
 
@@ -122,19 +122,25 @@ param (
 )
 
 begin {
+  $WarningPreference = 'SilentlyContinue'
+  $ProgressPreference = 'SilentlyContinue'
     # Prefer environment variable for custom field if available
     if (-not [string]::IsNullOrEmpty($env:customfield)) {
         $CustomField = $env:customfield
     }
 } process {
     $InstalledFeatures = @()
+    
+    # SMB1 Server Protocol Detection
+    
+    $Smb = (Get-SmbServerConfiguration -ErrorAction SilentlyContinue).EnableSMB1Protocol
 
     # Service-based detection for SQL Server
     $SQLServices = Get-Service | Where-Object { $_.DisplayName -match 'SQL Server' }
 
     # Exchange Server detection via critical service
     $ExchangeServices = Get-Service -Name MSExchangeServiceHost -ErrorAction SilentlyContinue
-
+    
     # Hyper-V Cluster Detection via Service
     $HyperVCluster = Get-Service -Name ClusSvc -ErrorAction SilentlyContinue
 
@@ -161,6 +167,7 @@ begin {
             Where-Object { $_.Installed -and $_.FeatureType -eq 'Role' }).DisplayName
 
     # Add supplemental detections
+    if ($Smb) { $InstalledFeatures += 'SMB1 Server'}
     if ($SQLServices) { $InstalledFeatures += 'MSSQL Server' }
     if ($ExchangeServices) { $InstalledFeatures += 'Exchange Server' }
     if ($MySQLServer) { $InstalledFeatures += 'MySQL Server' }
