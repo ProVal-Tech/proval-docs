@@ -28,7 +28,7 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 - The script streamlines the installation process for SonicWall NetExtender, a VPN client application. It performs the following key operations:
 - Detects Existing Installations: Determines whether NetExtender is already installed and identifies the suitable installer format (MSI or EXE).
-- Retrieves Latest Version Info: This is collected by the script [Application - Latest Version Detection](docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde/) and stored in the system properties `SonicWALL.NetExtender`.
+- Retrieves Latest Version Info: This is collected by the script [Script - Application - Latest Version Detection](/docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde) and stored in the system properties `SonicWALL.NetExtender`.
 - Version Comparison: Compares the installed version with the latest available to decide if an update is needed.
 - Architecture-Based Installer Selection: Automatically selects the correct installer (x86, x64, or ARM64) based on the system architecture.
 - Secure Working Directory Setup: Creates a temporary directory with appropriate permissions for safe installation.
