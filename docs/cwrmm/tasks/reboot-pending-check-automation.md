@@ -31,20 +31,20 @@ This task is designed to automatically detect the reboot pending status on endpo
 
 ### Create Task
 
-**Reboot Pending Check Automation**  
-To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_3.webp)
+1. Go to `Automation` > `Tasks`  
 
-- **Name:** `Reboot Pending Check Automation`
-- **Description:** `This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.`
-- **Category:** `Custom`
+2. On the left side of the screen, look for the `Add` dropdown > Select `Script Editor` option to create the task.
+
+    - **Name:** `Reboot Pending Check Automation`
+    - **Description:** `This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.`
+    - **Category:** `Custom`
 
 ![Task Details](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_4.webp)
 
 ### Script
 
-Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Rows](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_5.webp)
 
@@ -124,39 +124,36 @@ In the script log message, simply type `%output%` so that the script will send t
 
 ![Row 3 Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_13.webp)
 
-### Row 3a.1: Condition: Output Contains
+### Row 3a: Condition: Output Contains
 
-In the IF part, enter `IsRebootPending` in the right box of the "Output Contains" part.
+In the `IF` part, enter `IsRebootPending` in the right box of the `Output Contains` part.
 
 ![Row 4a Condition](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image14.webp)
 
-### Row 3a.2: Function: Set Custom Field
+### Row 3b: Function: Set Custom Field
 
-Add a new row by clicking on the `Add row` button.
+- Add a new row by clicking on the `Add row` button.
+- Select Function `Set Custom Field`, it will open up a new window.
 
-Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
+- In this window, search for the `Auto_RebootPendingCheck` field.
 
-In this window, search for the `Auto_RebootPendingCheck` field.
-
-- **Custom Field:** Auto_RebootPendingCheck
-- **Value:** `True`
+    - **Custom Field:** Auto_RebootPendingCheck
+    - **Value:** `True`
 
 ![Row 3a.2 Set Custom Field](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_20.webp)
 
-### Row 3b.1: Function: Set Custom Field
+### Row 3c: Function: Set Custom Field
 
-Add a new row by clicking on the `Add row` button in then section.
+- Add a new row by clicking on the `Add row` button in the `Else` section.
+- Select Function `Set Custom Field`, it will open up a new window.
+- In this window, search for the `Auto_RebootPendingCheck` field.
 
-Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
-
-In this window, search for the `Auto_RebootPendingCheck` field.
-
-- **Custom Field:** Auto_RebootPendingCheck
-- **Value:** `False`
+    - **Custom Field:** Auto_RebootPendingCheck
+    - **Value:** `False`
 
 ![Row 3b.1 Set Custom Field](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image31.webp)
 
-### Row 5: Complete
+## Complete Script
 
 ![Row 5 Complete](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image24.webp)
 
