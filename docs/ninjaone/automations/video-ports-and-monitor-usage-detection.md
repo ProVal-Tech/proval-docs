@@ -12,17 +12,19 @@ unlisted: false
 
 ## Overview
 
-Detect all available video output ports on the system (HDMI, DisplayPort, VGA, DVI, etc.). Detect which ports are actively used by connected monitors.
+This script collects and displays information about the system’s video controllers (GPUs), including their names, memory size, and driver versions. It also detects which monitors are currently connected and identifies the type of video port they are using (like HDMI, DisplayPort, VGA, etc.). Additionally, it lists commonly available video ports based on GPU capabilities and displays all these data in the Custom Field [cPVAL Video Ports Monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
+
+![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)  
+
 ![SampleRun1](../../../static/img/docs/1778ced7-a9b2-461c-a20c-c72c2242e94f/ninja1.webp)
 
 ## Dependencies
 
-[Custom filed - cpval-video-ports-monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
+[Custom Field - cPVAL Video Ports Monitors](/docs/73c09cca-0fe3-4683-a21d-1f397f0ec2c6)
 
 ## Automation Setup/Import
 
@@ -31,4 +33,7 @@ Detect all available video output ports on the system (HDMI, DisplayPort, VGA, D
 ## Output
 
 - Activity Details  
-- Custom Field
+- Custom Field  
+    - Custom Field example:
+
+![SampleRun1](../../../static/img/docs/1778ced7-a9b2-461c-a20c-c72c2242e94f/ninja2.webp)
