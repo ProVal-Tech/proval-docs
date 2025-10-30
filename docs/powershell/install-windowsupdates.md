@@ -162,8 +162,8 @@ Installs all available updates except preview patches, drivers, and the updates 
 | `KBArticleID`       |                                                                                                  | KBArticleID            | No       |         | String[]   | One or more KB article IDs to include                                       |
 | `Title`             |                                                                                                  | Title                  | No       |         | String  | Update titles to include                                        |
 | `ExcludeDrivers`    |                                                                                                  | All, Severity          | No       | False   | Switch     | Excludes updates in the 'Drivers' category                                  |
-| `ExcludeKBArticleID`|                                                                                                  | All, Category, Severity| No       |         | String[]   | One or more KB article IDs to exclude from installation                     |
-| `AllowReboot`       |                                                                                                  | All, Category, Severity, KBArticleID | No       | False   | Switch     | Allows the computer to reboot automatically if required after updates        |
+| `ExcludeKBArticleID`|                                                                                                  | All, Category, Severity, Title| No       |         | String[]   | One or more KB article IDs to exclude from installation                     |
+| `AllowReboot`       |                                                                                                  | All, Category, Severity, KBArticleID, Title | No       | False   | Switch     | Allows the computer to reboot automatically if required after updates        |
 
 ## Output
 
