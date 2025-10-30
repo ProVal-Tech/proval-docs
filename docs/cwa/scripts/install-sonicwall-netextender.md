@@ -21,13 +21,20 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 ## Dependencies
 
- [Monitor - SonicWall NetExtender - Install/Update [Winget]](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e)  
+ [Monitor - SonicWall NetExtender - Install/Update](/docs/b0ca57d2-351c-4f1d-9d98-954c1d77777e)  
  [Solution - SonicWall NetExtender - Install/Update](/docs/70d9b103-f73f-4e68-a4aa-d2651e44d09a)
 
 ## Process
 
-This script installs/updates the latest version of the SonicWall NetExtender dynamically by Winget using [Script - Winget - Install/Update](/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25) if the fresh installation is being performed on the agent. If the agent already has the SonicWall NetExtender installed, then it first checks if it is deployed using MSI or EXE. If installed using MSI, then it updates using [Script - Winget - Install/Update](/docs/3a2f4004-624d-47c4-a5d0-c3c43e103e25); else if it is deployed using EXE, then it installs by downloading the latest exe package from the site [VPN-Clients](https://www.sonicwall.com/products/remote-access/vpn-clients) by fetching the latest version from the winget manifest and then downloading and installing it.
-It has proper error handling to report success and failure.
+- The script streamlines the installation process for SonicWall NetExtender, a VPN client application. It performs the following key operations:
+- Detects Existing Installations: Determines whether NetExtender is already installed and identifies the suitable installer format (MSI or EXE).
+- Retrieves Latest Version Info: This is collected by the script [Application - Latest Version Detection](docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde/) and stored in the system properties `SonicWALL.NetExtender`.
+- Version Comparison: Compares the installed version with the latest available to decide if an update is needed.
+- Architecture-Based Installer Selection: Automatically selects the correct installer (x86, x64, or ARM64) based on the system architecture.
+- Secure Working Directory Setup: Creates a temporary directory with appropriate permissions for safe installation.
+- Silent Installation: Downloads and installs the software silently without user interaction.
+- Post-Installation Verification: Confirms successful installation and reports the outcome.
+- The script supports both MSI and EXE formats and includes robust error handling and validation mechanisms. If NetExtender is not already present on the system, the MSI version will be installed by default.
 
 ## Output
 
