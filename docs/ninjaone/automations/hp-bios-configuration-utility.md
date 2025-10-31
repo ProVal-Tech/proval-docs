@@ -53,7 +53,7 @@ Display BCU help and supported commands:
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Argument | <ul><li>`/help`</li><li>`/getvalue:"Fast Boot"`</li><li>`/setvalue:"Fast Boot","Enable"`</li><li>`--Version`</li></ul> | | False | | String/Text | The argument to pass to the HP BIOS Configuration Utility (BCU) via the agnostic script. If left blank, the default value `/get` will be used. |
+| Argument | <ul><li>`/help`</li><li>`/getvalue:"Fast Boot"`</li><li>`/setvalue:"Fast Boot","Enable"`</li></ul> | | False | | String/Text | The argument to pass to the HP BIOS Configuration Utility (BCU) via the agnostic script. If left blank, the default value `/get` will be used. |
 
 ## Automation Setup/Import
 
