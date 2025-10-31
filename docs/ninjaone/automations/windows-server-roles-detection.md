@@ -39,7 +39,7 @@ Search and select `Windows Server Roles Detection`
 
 | Name | Example | Required | Default | Type | Description |
 | ---- | ------- | -------- | ------- | ---- | ----------- |
-| Custom Field | cpvalRolesDetected | True | cpvalRolesDetected | String/Text | Specifies a custom field name to store results using Ninja-Property-Set. Accepts value from `customfield` variable. |
+| Custom Field | cpvalRolesDetected | True | cpvalRolesDetected | String/Text | Specifies a custom field name to store results using Ninja-Property-Set. Accepts value from `Custom Field` variable. |
 
 ## Automation Setup/Import
 

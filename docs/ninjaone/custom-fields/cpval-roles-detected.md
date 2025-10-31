@@ -22,7 +22,8 @@ This custom field stores the list of roles detected on a Windows server.
 
 ## Dependencies
 
-[Windows Server Roles Detection](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
+- [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9a)
+- [Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)
 
 ## Custom Field Creation
 
@@ -59,10 +60,10 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Overview` section and click the `Next` button.  
 
-**Label:** `cPVAL Roles Detected`  
-**Name:** `cpvalRolesDetected`  
-**Definition Scope:** `Device`  
-**Custom field is required:** `<Leave it unchecked>`
+- **Label:** `cPVAL Roles Detected`  
+- **Name:** `cpvalRolesDetected`  
+- **Definition Scope:** `Device`  
+- **Custom field is required:** `<Leave it unchecked>`
 
 ![Image4](../../../static/img/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba/image4.webp)
 
@@ -73,9 +74,9 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Permission` section and click the `Next` button.  
 
-**Technician:** `Editable`  
-**Automation:** `Read/Write`  
-**API:** `Read/Write`
+- **Technician:** `Editable`  
+- **Automation:** `Read/Write`  
+- **API:** `Read/Write`
 
 ![Image6](../../../static/img/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba/image6.webp)
 
@@ -86,9 +87,9 @@ The following Pop-up screen will appear:
 
 Set the following details in the `Details` section and click the `Create` button to complete the creation of custom field.
 
-**Description:** `This custom field stores the list of roles detected on a Windows machine.`  
-**Tooltip text:** `Stores the list of roles detected on the computer.`  
-**Footer text:** `Detected Roles`
+- **Description:** `This custom field stores the list of roles detected on a Windows machine.`  
+- **Tooltip text:** `Stores the list of roles detected on the computer.`  
+- **Footer text:** `Detected Roles`
 
 ![Image8](../../../static/img/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba/image8.webp)
 
