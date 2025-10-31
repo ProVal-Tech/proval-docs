@@ -15,9 +15,9 @@ This Compound Condition creates an alert on Servers with SMB1 Protocol enabled a
 
 ## Details
 
-**Name:** `SMB1 Traffic Audit`  
-**Description:** `This Compound Condition creates an alert on Servers with SMB1 Protocol enabled and if SMB1 access attempts (Event IDs 1001, 3000) is detected within the last hour`  
-**Recommended Agent Policies:** `Windows Server`  
+- **Name:** `SMB1 Traffic Audit`  
+- **Description:** `This Compound Condition creates an alert on Servers with SMB1 Protocol enabled and if SMB1 access attempts (Event IDs 1001, 3000) is detected within the last hour`  
+- **Recommended Agent Policies:** `Windows Server`  
 
 ## Dependencies
 [Solution - SMB1 Access Audit](/docs/b9c24693-91db-4014-a5d9-7208d7fe492a)  

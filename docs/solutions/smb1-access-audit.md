@@ -25,12 +25,12 @@ This solution monitors servers for SMB1 protocol usage. It enables SMB1 access a
 
 To implement this solution, follow the steps below:
 
-**Import the Automation** – Start by importing the [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)
+**1. Import the Automation** – Start by importing the [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)
  automation into the Ninja environment.
 
     This script enables SMB1 access auditing (if disabled) and scans for SMB1 access attempts in the last hour.
 
-**Import the Compound Condition** – Next, import the [SMB1 Traffic Audit](/docs/f6b984a2-acbe-40fa-93e3-43682acde7ca)
+**2. Import the Compound Condition** – Next, import the [SMB1 Traffic Audit](/docs/f6b984a2-acbe-40fa-93e3-43682acde7ca)
  compound condition.
 
     This condition will trigger an alert when SMB1 is enabled and recent access attempts are detected.
