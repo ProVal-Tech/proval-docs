@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-Runs the [New Domain Admin Detected](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23) automation every 04 hours on Infrastructure masters
+Runs the [New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a) automation every 04 hours on Infrastructure masters
 
 ## Details
 
@@ -21,8 +21,8 @@ Runs the [New Domain Admin Detected](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23)
 
 ## Dependencies
 - [Script : New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)
-- [Ticket Template : New Domain Admin Detected](/docs/)
-- [cPval Excluded Domain Admins](/docs/32a5e5bb-b72e-4597-beae-8f2d8a2eb1c0)
+- [Ticket Template : New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac)
+- [Solution : New Domain Admin Detected](/docs/ffbbe3fe-f579-4521-a95a-1eb772d93ac7)
 
 
 ## Condition Creation
