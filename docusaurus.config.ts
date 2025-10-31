@@ -86,6 +86,11 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        {
+          to: '/recentDocuments',
+          label: 'Recent Docs',
+          position: 'left',
+        },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/ProVal-Tech/proval-docs',

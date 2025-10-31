@@ -38,3 +38,5 @@
 .col--4 {
   --ifm-col-width: calc(3 / 12 * 100%) !important;
 }
+
+/* (removed) navbar 'New' badge styles */

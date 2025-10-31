@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+// import Link from '@docusaurus/Link'; // no longer needed after removing hero button
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -27,6 +27,7 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+
       <HomepageHeader />
       <main>
         <HomepageFeatures />
