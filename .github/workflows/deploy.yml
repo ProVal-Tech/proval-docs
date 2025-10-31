@@ -27,6 +27,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build recent documents list
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          . helper_scripts/Update-RecentDocList.ps1
+          
       - name: Build website
         run: npm run build
 
