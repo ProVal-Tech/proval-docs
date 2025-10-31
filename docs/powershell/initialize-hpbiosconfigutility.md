@@ -24,7 +24,7 @@ This script automates downloading/extracting the BCU package, verifying the BCU 
 - Windows on HP hardware (manufacturer must be 'HP' or 'Hewlett').
 - Administrative privileges (required to write to ProgramData, install utilities, and access BIOS/WMI namespaces).
 - PowerShell 5.0 or later (script declares #requires -Version 5).
-- Internet access to download the BCU package if it is not present locally.
+- Internet access to access the HP BCU webpage and download the latest BCU package if it is not present locally.
 - Strapper PowerShell module (the script will update/install it automatically if missing).
 - NuGet package provider (auto-bootstrapped by the script if missing).
 
@@ -36,7 +36,10 @@ The script follows these main steps:
 2. Prepare working directories under ProgramData where the installer, extraction, and report files are stored.
 3. Ensure `Strapper` module is available and call `Set-StrapperEnvironment` for consistent logging utilities such as `Write-Log`.
 4. Validate host manufacturer is HP and OS is compatible; exit early on unsupported hosts.
-5. Install or verify the HP BIOS Configuration Utility (BCU) by downloading the installer archive and extracting it to the configured extract path.
+5. Install or verify the HP BIOS Configuration Utility (BCU) by:
+   - Fetching and parsing the HP BCU webpage to obtain the latest installer download URL
+   - Downloading the installer archive using the obtained URL
+   - Extracting it to the configured extract path
 6. Locate the BCU executable (`BIOSConfigUtility64.exe`) in the extraction folder.
 7. Execute BCU with provided arguments (or default `/get`) and capture output and exit codes.
 8. Parse XML output (when present) to retrieve the BIOS return code, and call `Convert-ExitCode` to map the numeric code to a descriptive message and log the result.
