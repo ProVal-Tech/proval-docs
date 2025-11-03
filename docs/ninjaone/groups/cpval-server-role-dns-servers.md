@@ -21,7 +21,7 @@ A group tailored for Windows Servers that have the `DNS Server` role installed
 | cPVAL - Server Role - DNS Servers | A group tailored for Windows Servers that have the DNS Server role installed |
 
 ## Dependencies
-
+[Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)  
 [cPVAL - Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256)  
 [cPVAL - Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)  
 [Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9)

@@ -22,23 +22,24 @@ Retrieves installed Windows Server roles, additional services, and FSMO roles (i
 Search and select `Windows Server Roles Detection`  
 ![image1](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image1.webp)
 
-**Run As:** `System`  
-**Preset Parameter:** `Leave it untouched`  
-**Custom Field:** `cpvalRolesDetected`  
+- **Run As:** `System`  
+- **Preset Parameter:** `Leave it untouched`  
+- **Custom Field:** `cpvalRolesDetected` 
+
 ![image2](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image2.webp)
 
 **Run Automation:** `Yes`  
 ![RunAutomation](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/runautomation.webp)
 
 ## Dependencies
-
-[cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
+- [Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)  
+- [Custom Field - cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ## Parameters
 
 | Name | Example | Required | Default | Type | Description |
 | ---- | ------- | -------- | ------- | ---- | ----------- |
-| CustomField | cpvalRolesDetected | True | cpvalRolesDetected | String/Text | Specifies a custom field name to store results using Ninja-Property-Set. Accepts value from `customfield` variable. |
+| Custom Field | cpvalRolesDetected | True | cpvalRolesDetected | String/Text | Specifies a custom field name to store results using Ninja-Property-Set. Accepts value from `Custom Field` variable. |
 
 ## Automation Setup/Import
 
@@ -59,13 +60,14 @@ The scripting window will open.
 
 Configure the `Create Script` as follows:
 
-**Name:** `Windows Server Roles Detection`  
-**Description:** `Retrieves installed Windows Server roles, additional services, and FSMO roles (if applicable).`  
-**Categories:** `ProVal`  
-**Language:** `PowerShell`  
-**Operating System:** `Windows`  
-**Architecture:** `All`  
-**Run As:** `System`  
+- **Name:** `Windows Server Roles Detection`  
+- **Description:** `Retrieves installed Windows Server roles, additional services, and FSMO roles (if applicable).`  
+- **Categories:** `ProVal`  
+- **Language:** `PowerShell`  
+- **Operating System:** `Windows`  
+- **Architecture:** `All`  
+- **Run As:** `System`  
+
 ![Image3](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image3.webp)
 
 ### Step 4
@@ -122,19 +124,25 @@ param (
 )
 
 begin {
+  $WarningPreference = 'SilentlyContinue'
+  $ProgressPreference = 'SilentlyContinue'
     # Prefer environment variable for custom field if available
     if (-not [string]::IsNullOrEmpty($env:customfield)) {
         $CustomField = $env:customfield
     }
 } process {
     $InstalledFeatures = @()
+    
+    # SMB1 Server Protocol Detection
+    
+    $Smb = (Get-SmbServerConfiguration -ErrorAction SilentlyContinue).EnableSMB1Protocol
 
     # Service-based detection for SQL Server
     $SQLServices = Get-Service | Where-Object { $_.DisplayName -match 'SQL Server' }
 
     # Exchange Server detection via critical service
     $ExchangeServices = Get-Service -Name MSExchangeServiceHost -ErrorAction SilentlyContinue
-
+    
     # Hyper-V Cluster Detection via Service
     $HyperVCluster = Get-Service -Name ClusSvc -ErrorAction SilentlyContinue
 
@@ -161,6 +169,7 @@ begin {
             Where-Object { $_.Installed -and $_.FeatureType -eq 'Role' }).DisplayName
 
     # Add supplemental detections
+    if ($Smb) { $InstalledFeatures += 'SMB1 Server'}
     if ($SQLServices) { $InstalledFeatures += 'MSSQL Server' }
     if ($ExchangeServices) { $InstalledFeatures += 'Exchange Server' }
     if ($MySQLServer) { $InstalledFeatures += 'MySQL Server' }
@@ -220,10 +229,10 @@ The `Add String/Text Variable` window will open.
 
 In the box, fill in the following details and select `Add` to create the script variable.  
 
-**Name:** `Custom Field`  
-**Description:** `Specifies the custom field where the detected roles will be stored.`  
-**Mandatory:** `Enable`  
-**Set Default Value:** `cpvalRolesDetected`  
+- **Name:** `Custom Field`  
+- **Description:** `Specifies the custom field where the detected roles will be stored.`  
+- **Mandatory:** `Enable`  
+- **Set Default Value:** `cpvalRolesDetected`  
 
 ![Image7](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image7.webp)
 
