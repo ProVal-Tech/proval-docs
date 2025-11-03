@@ -8,8 +8,8 @@ description: 'Select Enable to enable New Domain Admin monitoring. Disable can b
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
-
 ---
+
 ## Summary
 
 Select Enable to enable New Domain Admin monitoring. Disable can be selected at Computer or Location level for excluding them.
@@ -27,11 +27,9 @@ Select Enable to enable New Domain Admin monitoring. Disable can be selected at 
 - [Ticket Template : New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac)
 - [Solution : New Domain Admin Detected](/docs/ffbbe3fe-f579-4521-a95a-1eb772d93ac7)
 
-
 ## Custom Field Creation
 
 [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-new-domain-admin-monitoring.toml)
-
 
 ## Sample Screenshot
 
