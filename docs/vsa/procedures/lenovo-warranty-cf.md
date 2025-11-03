@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is used to update the custom field with the Lenovo warranty end date ([Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)).
+This script is used to update the custom field with the Lenovo warranty end date ([Lenovo Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)).
 
 ## Sample Run
 
@@ -55,7 +55,7 @@ This script is used to update the custom field with the Lenovo warranty end date
 
 ## Dependencies
 
-[Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)
+[Lenovo Warranty Expiration Date](/docs/961fdbf7-0066-46f1-9ebc-ead6efb63232)
 
 ## Variables
 
