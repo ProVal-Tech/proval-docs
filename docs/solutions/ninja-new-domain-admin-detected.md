@@ -19,11 +19,12 @@ The purpose of this solution is to detect the user or group of users if its prom
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field : cPval Excluded Domain Admins](/docs/32a5e5bb-b72e-4597-beae-8f2d8a2eb1c0)   | Custom field | Stores the usernames to exclude from generating the new domain admin detected ticket |
-| [Script : New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)   | Script |   Detects the user or group of users if its promoted to domain administrator on a Windows domain controller. |
-| [Ticket Template : New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac)  | Ticket Template |  configures how a ConnectWise Manage ticket will be generated for New domain admin accounts |
-| [Condition : New Domain Admin Detected](/docs/b300f17d-63ee-4c31-b29b-a9fb92a69a89)  | Condition |  Runs the [New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a) automation every 04 hours on Infrastructure masters |
-| [Custom Field : cPVAL New Domain Admin Monitoring](/docs/28f66783-6f12-4091-abe0-6aa41f7cfd9a)   | Custom field | Custom field to enable/disable the solution |
+| [cPval Excluded Domain Admins](/docs/32a5e5bb-b72e-4597-beae-8f2d8a2eb1c0)   | Custom Field | Stores the usernames to exclude from generating the new domain admin detected ticket |
+| [cPVAL New Domain Admin Monitoring](/docs/28f66783-6f12-4091-abe0-6aa41f7cfd9a)   | Custom Field | Custom field to enable/disable the solution |
+| [New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)   | Script |   Detects the user or group of users if its promoted to domain administrator on a Windows domain controller. |
+| [New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac)  | Ticket Template |  configures how a ConnectWise Manage ticket will be generated for New domain admin accounts |
+| [New Domain Admin Detected](/docs/b300f17d-63ee-4c31-b29b-a9fb92a69a89)  | Condition |  Runs the [New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a) automation every 04 hours on Infrastructure masters |
+
 
 ## Implementation
 
