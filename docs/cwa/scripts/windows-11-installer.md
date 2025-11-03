@@ -12,19 +12,32 @@ unlisted: false
 
 ## Summary
 
-Install Windows 11 from a target ZIP or ISO file.
+Designed to upgrade Windows systems to the latest version. It can be used to:
+
+- Upgrade Windows 10 to Windows 11
+- Install Windows 11 feature updates (e.g., 21H2 → 22H2 → 23H2 → 24H2)
+
+Supports multiple source types including HTTP/HTTPS URLs, local files, and network shares (UNC paths).
 
 Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe)  
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
-**File Hash (SHA256)**: `8E57C3D9CBB4967772C14D7A007372B44ADF3062CEAB50236FD2A4AD66DADE02`  
-**File Hash (MD5)**: `C69034426672DFF3128328B1FC19A1ED`  
+**File Hash (SHA256)**: `34A0090D55F0C2FBB9BBC5C75F71D4D6ADBD168FEF064D501A6AC0E3F5D5FECE`  
+**File Hash (MD5)**: `E13C3349BD7AE6C4C9B872EE286246A0`  
 
 **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
 **File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
 **File Hash (MD5)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
 
 **Note**: `When executed without the NoReboot flag, the script reschedules itself to run 30 minutes after completing the upgrade to perform validation.`
+
+## Update Notice
+
+## Update Notice: 3 November, 2025
+
+- Updated to support Windows 11
+- Updated to support UNC path
+- Updated to support Azure Blob Storage URLs with SAS tokens (must be a direct download URL)
 
 ## Update Notice: 8 October, 2025
 
@@ -55,7 +68,9 @@ Install Windows 11 from a target HTTP multipart download, ignoring reboot.
 
 - If using the default file repository, the version of Windows being upgraded must be the US version.
 - [file.provaltech.com](https://file.provaltech.com) must be fully whitelisted in all security systems.
+- [windows-os-support.json](https://content.provaltech.com/attachments/windows-os-support.json) must be whitelisted in all security systems.
 - [windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe) must be whitelisted in all security systems.  
+- [App : Windows Upgrader](/docs/8c083d5d-a464-4937-91ef-980a062b26fd)
 - [Solution : Windows 11 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)  
 
 ## User Parameters
