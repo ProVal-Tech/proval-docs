@@ -31,156 +31,131 @@ This task is designed to automatically detect the reboot pending status on endpo
 
 ### Create Task
 
-**Reboot Pending Check Automation**  
-To implement this script, please create a new "PowerShell" style script in the system.
 
-![Create Task](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_3.webp)
+1. Go to `Automation` > `Tasks`  
 
-- **Name:** `Reboot Pending Check Automation`
-- **Description:** `This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.`
-- **Category:** `Custom`
+2. On the left side of the screen, look for the `Add` dropdown > Select `Script Editor` option to create the task.
+
+    - **Name:** `Reboot Pending Check Automation`
+    - **Description:** `This script imports the module 'PendingReboot' to detect the pending status on the endpoints. Based on the output, it sets the custom field 'Auto_RebootPendingCheck'.`
+    - **Category:** `Custom`
 
 ![Task Details](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_4.webp)
 
 ### Script
 
-Start by creating three separate rows. You can do this by clicking the "Add Row" button at the bottom of the script page.
+Start by creating three separate rows. You can do this by clicking the `Add Row` button at the bottom of the script page.
 
 ![Add Rows](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_5.webp)
 
-### Row 1: Function: Script Log
 
-![Row 1 Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_6.webp)
+### Row 1: Function: PowerShell Script
 
-Paste the highlighted text:  
+![Row 1 PowerShell](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_8.webp)
 
-```plaintext
-Executing a PowerShell to validate the PowerShell version greater than 3.0.
-If yes, install below modules:
-PowerShellGet
-PendingReboot
-```
-
-![Row 1 Log Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_7.webp)
-
-### Row 2: Function: PowerShell Script
-
-![Row 2 PowerShell](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_8.webp)
-
-![Row 2 PowerShell Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_9.webp)
+![Row 1 PowerShell Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image9.webp)
 
 Paste in the following PowerShell script and set the expected time of script execution to `900` seconds.
 
 ```powershell
-# Check PowerShell version
-if ($PSVersionTable.PSVersion.Major -lt 3) {
-    Write-Output "PowerShell version is not supported. Please upgrade to version 3.0 or higher."
-    Exit
-}
-# Check if the module is installed
-if (-not (Get-Module -ListAvailable -Name PendingReboot)) {
-    Write-Output "Module not found. Installing..."
-    Install-Module -Name PendingReboot -Force
-    # Re-validate if the module is installed
-    if (Get-Module -ListAvailable -Name PendingReboot) {
-        Write-Output "Module installed successfully."
-    } else {
-        Write-Output "Module installation failed."
-        Exit
-    }
+#requires -version 5.1
+
+#region Globals
+$ProgressPreference = 'SilentlyContinue'
+$ConfirmPreference = 'None'
+$InformationPreference = 'Continue'
+$WarningPreference = 'SilentlyContinue'
+#endRegion
+
+#region Set TLS Policy
+$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
+if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+} elseif ($supportedTLSversions -contains 'Tls12') {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
-    Write-Output "Module already installed."
+    Write-Information '[Warn] TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!'
+    if ($PSVersionTable.PSVersion.Major -lt 3) {
+        Write-Information '[Warn] PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.'
+    }
 }
+#endRegion
+
+#region PendingReboot Module
+if (-not (Get-Module -Name 'PendingReboot' -ListAvailable)) {
+    Get-PackageProvider -Name 'NuGet' -ForceBootstrap -ErrorAction SilentlyContinue | Out-Null
+    Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted -ErrorAction SilentlyContinue | Out-Null
+    
+    try {
+        Update-Module -Name 'PendingReboot' -ErrorAction Stop
+    } catch {
+        Install-Module -Name 'PendingReboot' -Repository 'PSGallery' -SkipPublisherCheck -Force
+        Get-Module -Name 'PendingReboot' -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name 'PendingReboot').Version } | ForEach-Object { Uninstall-Module -Name 'PendingReboot' -MaximumVersion $_.Version }
+    }
+}
+(Import-Module -Name 'PendingReboot') 3>&1 2>&1 1>$null
+#endRegion
+
+#region Check for Pending Reboot
+try {
+    $pendingReboot = (Test-PendingReboot -SkipConfigurationManagerClientCheck).IsRebootPending
+    if ($pendingReboot) {
+        return 'IsRebootPending'
+    } else {
+        return 'IsNotRebootPending'
+    }
+} catch {
+    throw ('An error occurred when checking for pending reboot: {0}' -f $($Error[0].Exception.Message))
+}
+#endRegion
 ```
 
-### Row 3: Function: Script Log
+### Row 2: Function: Script Log
 
-![Row 3 Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_10.webp)
+![Row 2 Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_10.webp)
 
 In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
-![Row 3 Log Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_11.webp)
+![Row 2 Log Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_11.webp)
 
-### Row 4: Logic: If/Then/Else
+### Row 3 : Logic: If/Then/Else
 
-![Row 4 Logic](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_12.webp)
+![Row 3 Logic](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_12.webp)
 
-![Row 4 Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_13.webp)
+![Row 3 Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_13.webp)
 
-### Row 4a: Condition: Output Contains
+### Row 3a: Condition: Output Contains
 
-In the IF part, enter `Module installed successfully` in the right box of the "Output Contains" part.
+In the `IF` part, enter `IsRebootPending` in the right box of the `Output Contains` part.
 
-![Row 4a Condition](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_14.webp)
+![Row 4a Condition](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image14.webp)
 
-### Row 4b: Function: PowerShell Script
+### Row 3b: Function: Set Custom Field
 
-Add a new row by clicking on the `Add Row` button.
+- Add a new row by clicking on the `Add row` button.
+- Select Function `Set Custom Field`, it will open up a new window.
 
-![Row 4b PowerShell](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_8.webp)
+- In this window, search for the `Auto_RebootPendingCheck` field.
 
-![Row 4b PowerShell Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_15.webp)
+    - **Custom Field:** Auto_RebootPendingCheck
+    - **Value:** `True`
 
-Paste in the following PowerShell script and set the expected time of script execution to `300` seconds.
+![Row 3a.2 Set Custom Field](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_20.webp)
 
-```powershell
-(Test-PendingReboot -SkipConfigurationManagerClientCheck).IsRebootPending
-```
+### Row 3c: Function: Set Custom Field
 
-### Row 4c: Function: Script Log
+- Add a new row by clicking on the `Add row` button in the `Else` section.
+- Select Function `Set Custom Field`, it will open up a new window.
+- In this window, search for the `Auto_RebootPendingCheck` field.
 
-![Row 4c Log](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_10.webp)
+    - **Custom Field:** Auto_RebootPendingCheck
+    - **Value:** `False`
 
-In the script log message, simply type `The Pending Reboot Requirement: %output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+![Row 3b.1 Set Custom Field](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image31.webp)
 
-![Row 4c Log Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_16.webp)
+## Complete Script
 
-### Row 4c.1: Logic: If/Then
-
-![Row 4c.1 Logic](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_17.webp)
-
-![Row 4c.1 Logic Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_18.webp)
-
-### Row 4c.2: Condition: Output Contains
-
-In the `IF` part, enter `True` in the right box of the `Output Contains` part.
-
-![Row 4c.2 Condition](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_19.webp)
-
-### Row 4c.3: Function: Set Custom Field
-
-Add a new row by clicking on the `Add row` button.
-
-Select Function `Set Custom Field`. When you select `set custom field`, it will open up a new window.
-
-In this window, search for the `Auto_RebootPendingCheck` field.
-
-- **Custom Field:** Auto_RebootPendingCheck
-- **Value:** `True`
-
-![Row 4c.3 Set Custom Field](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_20.webp)
-
-### Row 4d: Function: Script Exit
-
-Add a new row by clicking on the `Add row` button.
-
-![Row 4d Exit](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_21.webp)
-
-In the script exit message, leave it blank.
-
-![Row 4d Exit Continued](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_22.webp)
-
-### Row 4e: Condition: Script Exit
-
-Add a new row in the `Else` section and select `Script Exit`.
-
-In the script exit message, simply type `%output%`.
-
-![Row 4e Exit](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_23.webp)
-
-### Row 5: Complete
-
-![Row 5 Complete](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image_24.webp)
+![Row 5 Complete](../../../static/img/docs/89e1f1cd-9b80-4874-96c6-f1e8b067298e/image24.webp)
 
 ## Deployment
 
