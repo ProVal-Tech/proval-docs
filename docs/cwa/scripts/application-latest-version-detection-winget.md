@@ -1,8 +1,8 @@
 ---
 id: 'ffb77c6c-8dd7-4ca5-82a2-327b1658cbde'
 slug: /ffb77c6c-8dd7-4ca5-82a2-327b1658cbde
-title: 'Application - Latest Version Detection [Winget]'
-title_meta: 'Application - Latest Version Detection [Winget]'
+title: 'Application - Latest Version Detection'
+title_meta: 'Application - Latest Version Detection'
 keywords: ['winget', 'application', 'version', 'packageid', 'script']
 description: 'This document outlines a script designed to gather and store the latest version of applications supported by Winget in system properties, using the PackageID as the identifier for each application.'
 tags: ['software', 'update', 'windows']
