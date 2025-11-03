@@ -34,7 +34,7 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Operating System     | Name of the Operating System.                                                                         |
 | OS Version           | Build number of the Operating System.                                                                |
 | Last Contact         | Last contact of the machine with the Automate Server.                                               |
-| Compatibility Check   | Displays the Windows 11 compatibility status of the machine. Values can be Capable, Not Capable, Undetermined, or Script Failed. |
+| Compatibility Check   | Displays the Windows 11 compatibility status of the machine. Values can be Capable, Not Capable, Undetermined,,Not Capable: Secureboot Disabled, Not Capable: FreeDisk < 64GB, or Script Failed. |
 | Secure Boot Check    | Secure Boot status of the machine against the compatibility check. Values can be Fail or Pass.      |
 | Memory Check         | Memory check of the machine against the compatibility check. Values can be Fail or Pass.            |
 | CPU Check            | CPU check of the machine against the compatibility check. Values can be Fail or Pass.               |
@@ -52,6 +52,7 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 |---------------------|----------|-------------------------------------|--------|
 | Compatibility Check | Equals   | Not Capable                         | Red    |
 | Compatibility Check | Equals   | Not Capable: FreeDisk < 64GB        | Red    |
+| Compatibility Check | Equals   | Not Capable: Secureboot Disabled    | Red    |
 | Compatibility Check | Equals   | Undetermined                        | Orange |
 | Compatibility Check | Equals   | Capable                             | Green  |
 
