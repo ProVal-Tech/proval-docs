@@ -19,7 +19,7 @@ This Component is used to update the UDF with the leneovo warranty information.
 1. Download the component [Get Lenovo Warranty Info](../../../static/attachments/Get%20Lenovo%20Warranty%20Info.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
-![Image 1](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/import-lenovo-warranty.webp)  
+![Image 1](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/export-lenovo-warranty.webp)  
 
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 
@@ -50,9 +50,9 @@ Please also rename that UDF With `Warranty Expiration`
 ## Output
 
 - UDFs Update [warranty Expiration]
-![image](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/udf%20data.webp)
+![image 5](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/udf%20data.webp)
 - stdOut
-![image](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/stdout.webp)
+![image 6](../../../static/img/docs/4321433d-6a4a-4b85-9f9d-3325b75aafa3/stdout.webp)
 
 - stdError
 
