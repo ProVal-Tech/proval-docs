@@ -16,5 +16,5 @@ Write a brief summary of the developed workflow and its features.
 # Usage
 Provide instructions on how to use the workflow, including any necessary configuration steps or prerequisites.
 
-## Link to Source Control
-https://github.com/ProVal-Tech/rewst/blob/main/workflows/export.json
+# Returned Data
+Describe the data that the workflow returns upon completion, including formats and structures (usually JSON).
