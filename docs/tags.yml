@@ -426,6 +426,10 @@ smb:
   label: SMB
   description: Documents concerning Server Message Block (SMB) protocol and file sharing
 
+smileback:
+  label: SmileBack
+  description: Documents related to SmileBack customer feedback platform and its integration
+  
 software:
   label: Software
   description: Documents related to software applications and their lifecycle management
