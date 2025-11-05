@@ -23,7 +23,7 @@ This script is triggered from the monitor [Reboot Pending [Prompt]](/docs/816399
 - **Times Prompted** [Text Field - Non Editable]  
   ![](../../../static/img/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8/image_3.webp)
 
-If the user chooses to suppress the prompt by hitting no, it will update the Last Prompted and Times Prompted EDFs with new information. The Last Prompted EDF outlines the date and time when the script recorded that the user was prompted and the script was run. The Times Prompted EDF is increased by one every time the script runs.
+If the user chooses to suppress the prompt by hitting no, it will update the `Last Prompted` and `Times Prompted` EDFs with new information. The Last Prompted EDF outlines the date and time when the script recorded that the user was prompted and the script was run. The Times Prompted EDF is increased by one every time the script runs.
 
 **Note:** If the `proval_RebootPromptWhenPendingReboot` system property is set to `1` and the computer has a reboot pending flag, but the `Suppress Reboot` policy is applied by the patch manager and the pending reboot flag was set due to a patch job, the machine will be excluded from the script's functionality. Instead, the prompts and reboot will be managed by Automate's built-in `Suppress Reboot` policy. This may result in inconsistently connected machines not getting a proper reboot.
 
@@ -35,8 +35,7 @@ This script is designed to run only when triggered by [Reboot Pending [Prompt]](
 
 The following items depend on this script to function correctly:
 
-- [EPM - Windows Configuration - Monitor - Reboot Pending [Prompt]](/docs/8163996f-f8b6-4b7d-b5b1-6b965a9408d4)
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
+- [Solution - User Prompt For Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 - [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
 
 ### System Properties

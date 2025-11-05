@@ -1,8 +1,8 @@
 ---
 id: 'cefde8db-a69d-4d25-a5b2-dda08f468fb4'
 slug: /cefde8db-a69d-4d25-a5b2-dda08f468fb4
-title: 'Microsoft Outlook - OSTPST Audit'
-title_meta: 'Microsoft Outlook - OSTPST Audit'
+title: 'Microsoft Outlook - OST/PST Audit'
+title_meta: 'Microsoft Outlook - OST/PST Audit'
 keywords: ['microsoft', 'outlook', 'ost', 'pst', 'audit', 'dataview', 'monitor']
 description: 'This document outlines a solution for retrieving file path and size details of OST and PST files from Windows Workstations, and displaying this data in an Automate dataview. It helps identify unusually large OST or PST files, enhancing data management and monitoring capabilities.'
 tags: ['windows']
@@ -20,16 +20,16 @@ This solution is designed to retrieve the file path and size details of OST and 
 
 | Content                                                                 | Type          | Function               |
 |-------------------------------------------------------------------------|---------------|------------------------|
-| [Script - Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8)   | Script        | Fetch the data.        |
-| [Dataview - Microsoft Outlook - OST/PST Audit](/docs/30279ec0-cbb0-40f5-95ea-fb8052cb093a)   | Dataview      | Display the data.      |
-| [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](/docs/d801eb05-05a3-4271-aa8c-a8ea4941f4eb) | Internal Monitor | Detects the machines.  |
+| [Microsoft Outlook - OST/PST - Audit](/docs/2029ecbe-c5f8-431e-9643-7aed63bec6d8)   | Script        | Fetch the data.        |
+| [Microsoft Outlook - OST/PST Audit](/docs/30279ec0-cbb0-40f5-95ea-fb8052cb093a)   | Dataview      | Display the data.      |
+| [Execute Script - Microsoft Outlook - OST/PST - Audit](/docs/d801eb05-05a3-4271-aa8c-a8ea4941f4eb) | Internal Monitor | Detects the machines.  |
 | △ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit       | Alert Template | Executes the script.   |
 
 #### Other
 
 | Content                                                                 | Type          | Function                       |
 |-------------------------------------------------------------------------|---------------|--------------------------------|
-| [Custom Table - pvl_outlook_pst_ost_audit](/docs/bea56cbb-3761-452a-9493-08a88bc6dbab) | Custom Table  | Stores data gathered by the script. |
+| [pvl_outlook_pst_ost_audit](/docs/bea56cbb-3761-452a-9493-08a88bc6dbab) | Custom Table  | Stores data gathered by the script. |
 
 ## Implementation
 
