@@ -20,9 +20,9 @@ This script performs a comprehensive replacement of any existing Zoom installati
 
 ## Files Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Enforce-ZoomWorkPlace64Bit\Enforce-ZoomWorkPlace64Bit.ps1`  
-**File Hash (Sha256):** `F87DCB921BF9CBE69497B3363DB96F1291B1B87EA0B834FAC028E3720424709B`  
-**File Hash (MD5):** `54E5F040FB6844CE21FE449DE9823987`
+- **File Path:** `C:\ProgramData\_automation\Script\Enforce-ZoomWorkPlace64Bit\Enforce-ZoomWorkPlace64Bit.ps1`  
+- **File Hash (Sha256):** `F87DCB921BF9CBE69497B3363DB96F1291B1B87EA0B834FAC028E3720424709B`  
+- **File Hash (MD5):** `54E5F040FB6844CE21FE449DE9823987`
 
 ## Variables
 
