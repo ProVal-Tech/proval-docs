@@ -8,6 +8,7 @@ type RecentDoc = {
     Title: string;
     Slug: string;
     LastCommit: string; // ISO or RFC date string
+    Category: string;
 };
 
 function isExternal(slug: string) {
@@ -84,22 +85,75 @@ export default function ShowRecentDocs() {
                             const lastEdited = new Date(doc.LastCommit);
                             const relative = formatRelative(doc.LastCommit);
                             const exact = lastEdited.toLocaleString();
-
+                            var svgName = "proval"; // default
+                            var labelFormatted = "";
+                            switch (doc.Category.toLowerCase()) {
+                                case 'apps':
+                                    svgName = 'apps';
+                                    labelFormatted = "Custom Applications";
+                                    break;
+                                case 'cwa':
+                                    svgName = 'cwa';
+                                    labelFormatted = "ConnectWise Automate";
+                                    break;
+                                case 'cwrmm':
+                                    svgName = 'connectwise_logo_e_light';
+                                    labelFormatted = "ConnectWise RMM";
+                                    break;
+                                case 'dattormm':
+                                    svgName = 'datto';
+                                    labelFormatted = "Datto RMM";
+                                    break;
+                                case 'general':
+                                    svgName = 'proval';
+                                    labelFormatted = "General";
+                                    break;
+                                case 'immybot':
+                                    svgName = 'immybot';
+                                    labelFormatted = "ImmyBot";
+                                    break;
+                                case 'ninjaone':
+                                    svgName = 'ninjaone';
+                                    labelFormatted = "NinjaOne";
+                                    break;
+                                case 'powershell':
+                                    svgName = 'PowerShell';
+                                    labelFormatted = "PowerShell";
+                                    break;
+                                case 'rewst':
+                                    svgName = 'rewst';
+                                    labelFormatted = "Rewst";
+                                    break;
+                                case 'solutions':
+                                    svgName = 'proval';
+                                    labelFormatted = "Solutions";
+                                    break;
+                                case 'vsa':
+                                    svgName = 'kaseya';
+                                    labelFormatted = "Kaseya VSA";
+                                    break;
+                                case 'vsax':
+                                    svgName = 'vsax';
+                                    labelFormatted = "Kaseya VSA X";
+                                    break;
+                                default:
+                                    svgName = 'proval';
+                                    labelFormatted = doc.Category;
+                            };
                             const CardInner = (
                                 <article className={styles.card}>
                                     <div className={styles.cardHeader}>
                                         <span className={styles.docIcon} aria-hidden="true">
                                             {/* document icon */}
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            <svg width="32" height="32" fill="none" stroke="none" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
+                                                <image href={`/img/${svgName}.svg`} x="0" y="0" width="32" height="32" />
                                             </svg>
                                         </span>
                                         <h3 className={styles.cardTitle}>{doc.Title}</h3>
                                     </div>
                                     <div className={styles.cardMeta}>
-                                        <span className={styles.badge} title={external ? 'External link' : 'Internal doc'}>
-                                            {external ? 'External' : 'Doc'}
+                                        <span className={styles.badge}>
+                                            {labelFormatted}
                                         </span>
                                         <span className={styles.metaSpacer} />
                                         <span className={styles.metaItem} title={exact}>

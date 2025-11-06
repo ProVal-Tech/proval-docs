@@ -108,14 +108,14 @@
 }
 
 .docIcon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 0.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: var(--ifm-color-primary);
-    background: color-mix(in oklab, var(--ifm-color-primary) 12%, transparent);
+    /* background: color-mix(in oklab, var(--ifm-color-primary) 12%, transparent); */
 }
 
 .cardTitle {
