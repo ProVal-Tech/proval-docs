@@ -145,7 +145,7 @@ export default function ShowRecentDocs() {
                                     <div className={styles.cardHeader}>
                                         <span className={styles.docIcon} aria-hidden="true">
                                             {/* document icon */}
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg width="32" height="32" fill="none" stroke="none" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
                                                 <image href={`/img/${svgName}.svg`} x="0" y="0" width="32" height="32" />
                                             </svg>
                                         </span>

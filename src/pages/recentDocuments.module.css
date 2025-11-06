@@ -115,7 +115,7 @@
     align-items: center;
     justify-content: center;
     color: var(--ifm-color-primary);
-    background: color-mix(in oklab, var(--ifm-color-primary) 12%, transparent);
+    /* background: color-mix(in oklab, var(--ifm-color-primary) 12%, transparent); */
 }
 
 .cardTitle {
