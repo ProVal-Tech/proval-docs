@@ -43,9 +43,9 @@ Verify that the EDFs exist at the client, location, and computer levels as detai
 
 ### Step 6
 
-Schedule the script to execute every 15 minutes at XX:00:5 or XX:15:00 format. This will ensure the reboot is sent with a 14-15 minute delay and user will receive a prompt with a message that their computer will reboot in next 10 minutes.
+Schedule the script to execute every 15 minutes at XX:02:00 or XX:03:00 format. This will ensure the reboot is sent with a 12-13 minute delay and user will receive a prompt with a message that their computer will reboot in next 12-13 minutes.
 
-![Image2](../../../static/img/docs/auto-reboot-management/image.png)
+![Image2](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image2.webp)
 
 ## Dependencies
 
@@ -144,3 +144,16 @@ A: Set the "Enable Auto Reboot" EDF to enabled at the computer level. This ensur
 
 **Q: What happens if auto reboot is disabled at any level (client, location, or computer)?**  
 A: If the "Enable Auto Reboot" EDF is set to "Disabled" at the client, location, or computer level, the auto reboot feature will be turned off for that scope. Disabling at any level takes precedence and will prevent scheduled reboots for all computers within that scope, regardless of other settings.
+
+**Q: What is the recommended scheduling pattern and why?**  
+A: Schedule the script to run every 15 minutes at :02 or :03 (for example, 00:02, 00:17, 00:32, 00:47). Reason: the script sends a shutdown command with a 12–13 minute delay, so running at :02/:03 ensures the reboot is queued shortly after the run and gives users time to save work.
+
+**Example:**  If the reboot time is 00:00 and the script runs at 00:02, the machine won't be detected during that run. Instead, it would have been detected at 23:47, and the command issued would be: `Shutdown /f /t 780 /r`. This gives users approximately 13 minutes to save their work.
+
+**Q: How will users be notified about the reboot?**  
+A: The script issues a Windows command (`shutdown /r /f /t <seconds>`), so Windows shows its built‑in notification/dialog (toast / shutdown prompt) that the system will restart in the specified timeout. Users see the standard Windows warning and can save work before the forced restart.  
+
+![Image5](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image5.webp)
+
+**Q: Why does the prompt say “shutdown” instead of “restart”?**  
+A: The Windows shutdown utility and UI use the same wording/flow for both shutdown and restart operations, so dialogs may show “shutdown” even when the operation is a restart. This is by design—the shutdown command governs both actions and the prompt text is not always different for reboot.
