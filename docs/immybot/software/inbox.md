@@ -14,7 +14,7 @@ unlisted: false
 
 Installs [Inbox](https://www.getthread.com/inbox) for the logged-in user.
 
-**Note:** An user must be logged in to the machine to install or uninstall the application.
+**Note:** A user must be logged in to the machine to install or uninstall the application.
 
 ## Description
 
