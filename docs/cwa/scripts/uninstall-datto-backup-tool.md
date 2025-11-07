@@ -5,7 +5,7 @@ title: 'Uninstall Datto Backup Tool'
 title_meta: 'Uninstall Datto Backup Tool'
 keywords: ['datto', 'cloud', 'continuity']
 description: 'This script uninstalls the Datto Windows Agent or Datto Cloud Continuity or both, depending on the option selected at the "Uninstall Datto Backup Tool" client-level EDF. It then grabs the quietuninstallstring from the registry of the installed application.'
-tags: ['datto', 'cloud', 'continuity']
+tags: ['datto', 'backup']
 draft: false
 unlisted: false
 ---
