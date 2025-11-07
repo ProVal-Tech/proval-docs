@@ -4,7 +4,7 @@ slug: /64929950-034f-4c49-a399-f758aafe2bba
 title: 'Install - Ninja Agent'
 title_meta: 'Install - Ninja Agent'
 keywords: ['ninjarmm','rmm','agent']
-description: 'This script deploys the NinjaRMMAgent on windows and Mac agents via VSA'
+description: 'This script deploys the NinjaRMM Agent on windows and Mac agents via VSA'
 tags: ['application','installation']
 draft: false
 unlisted: false
@@ -12,12 +12,12 @@ unlisted: false
 
 ## Summary
 
-This script deploys the NinjaRMMAgent to Windows and Mac OS.  
-It requires an Authorization token which needs to be stored under the managed variable.
+This script deploys the NinjaRMM Agent to Windows and Mac OS.  
+It requires an Authorization token which needs to be stored under the managed variable "Ninja_TokenID".
 
 ## Sample Run
 
-To run the script first fill the managed variable with the appropriate token which can be obtained from the Ninja Portal. The managed variable name is **"Ninja_TokenID"**. To run the script, use the method below.
+To run the script, first fill the managed variable with the appropriate token which can be obtained from the Ninja Portal. The managed variable name is **"Ninja_TokenID"**. To run the script, use the method below.
 
 ![Image](../../../static/img/docs/64929950-034f-4c49-a399-f758aafe2bba/image%201.webp)
 
