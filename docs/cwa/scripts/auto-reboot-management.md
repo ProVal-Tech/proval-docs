@@ -113,47 +113,47 @@ Schedule the script to execute every 15 minutes at XX:02:00 or XX:03:00 format. 
 ## FAQ
 
 **Q: How does the script determine which computers are eligible for auto reboot?**  
-A: The script checks the "Enable Auto Reboot" EDF at the computer, location, and client levels. It only targets Windows machines that are not excluded by the "Do Not Auto Reboot" EDF. Additional checks are performed for Domain Controllers and Hyper-V hosts, which require the corresponding "Include_DC" or "Include_Hyper-V_Host" EDFs to be enabled.
+**A:** The script checks the "Enable Auto Reboot" EDF at the computer, location, and client levels. It only targets Windows machines that are not excluded by the "Do Not Auto Reboot" EDF. Additional checks are performed for Domain Controllers and Hyper-V hosts, which require the corresponding "Include_DC" or "Include_Hyper-V_Host" EDFs to be enabled.
 
 **Q: What happens if different levels (client, location, computer) have conflicting EDF settings?**  
-A: The script and SQL logic prioritize the most specific level: computer-level EDFs override location-level, which override client-level. For example, if a computer-level "Auto Reboot Time" is set, it takes precedence over location or client settings.
+**A:** The script and SQL logic prioritize the most specific level: computer-level EDFs override location-level, which override client-level. For example, if a computer-level "Auto Reboot Time" is set, it takes precedence over location or client settings.
 
 **Q: How is the scheduled reboot time determined?**  
-A: The script uses the "Auto Reboot Time" EDF from the computer, location, or client level (in that order of precedence). The SQL query calculates the time left until the next scheduled reboot and only triggers a reboot if the current time is within 15 minutes of the scheduled time.
+**A:** The script uses the "Auto Reboot Time" EDF from the computer, location, or client level (in that order of precedence). The SQL query calculates the time left until the next scheduled reboot and only triggers a reboot if the current time is within 15 minutes of the scheduled time.
 
 **Q: How does the script handle Domain Controllers and Hyper-V hosts?**  
-A: By default, Domain Controllers and Hyper-V hosts are excluded from auto reboot. To include them, the "Include_DC" or "Include_Hyper-V_Host" EDFs must be enabled at the appropriate level (location or client), and the "Enable Auto Reboot" EDF must be set to "Windows" or "Windows Servers".
+**A:** By default, Domain Controllers and Hyper-V hosts are excluded from auto reboot. To include them, the "Include_DC" or "Include_Hyper-V_Host" EDFs must be enabled at the appropriate level (location or client), and the "Enable Auto Reboot" EDF must be set to "Windows" or "Windows Servers".
 
 **Q: Can I schedule reboots for specific days of the week?**  
-A: Yes. The EDFs "Reboot_Mon", "Reboot_Tue", ..., "Reboot_Sun" allow you to specify which days auto reboot should occur. The script checks these flags at the computer, location, and client levels to determine if a reboot should be scheduled for the current day.
+**A:** Yes. The EDFs "Reboot_Mon", "Reboot_Tue", ..., "Reboot_Sun" allow you to specify which days auto reboot should occur. The script checks these flags at the computer, location, and client levels to determine if a reboot should be scheduled for the current day.
 
 **Q: How does precedence work for the reboot day EDFs (Reboot_Mon, Reboot_Tue, etc.)?**  
-A: The script checks the reboot day EDFs in order of precedence: computer-level first, then location-level, and finally client-level. If any of the reboot day EDFs are enabled at the computer level, only those days set at the computer will be used for scheduling reboots, regardless of the settings at the location or client levels. If none are set at the computer level, the script checks the location-level EDFs, and if none are set there, it falls back to the client-level EDFs.
+**A:** The script checks the reboot day EDFs in order of precedence: computer-level first, then location-level, and finally client-level. If any of the reboot day EDFs are enabled at the computer level, only those days set at the computer will be used for scheduling reboots, regardless of the settings at the location or client levels. If none are set at the computer level, the script checks the location-level EDFs, and if none are set there, it falls back to the client-level EDFs.
 
-For example, if the client has Saturday and Wednesday enabled, but the location has Friday and Sunday enabled, then all computers in that location will be scheduled to reboot on Friday and Sunday (location-level settings take precedence over client-level).  
+**Example**, if the client has Saturday and Wednesday enabled, but the location has Friday and Sunday enabled, then all computers in that location will be scheduled to reboot on Friday and Sunday (location-level settings take precedence over client-level).  
 If a specific computer in that location has only Monday enabled, then only that computer will be scheduled to reboot on Monday, regardless of the location or client settings.
 
 **Q: How can I track if a computer was online at the scheduled reboot time?**  
-A: The "Reboot Online Status" EDF records whether the computer was online or offline at the scheduled reboot time, helping you monitor system availability during automated reboot events.
+**A:** The "Reboot Online Status" EDF records whether the computer was online or offline at the scheduled reboot time, helping you monitor system availability during automated reboot events.
 
 **Q: How can I enable auto reboot for a specific location without enabling it for the entire client?**  
-A: Set the "Enable Auto Reboot" EDF to the desired value (such as "Windows" or "Windows Servers") at the location level, and leave it unset at the client level. This will apply the auto reboot policy only to computers within that location.
+**A:** Set the "Enable Auto Reboot" EDF to the desired value (such as "Windows" or "Windows Servers") at the location level, and leave it unset at the client level. This will apply the auto reboot policy only to computers within that location.
 
 **Q: How can I enable auto reboot for an individual computer without enabling it for the client or location?**  
-A: Set the "Enable Auto Reboot" EDF to enabled at the computer level. This ensures that only the selected computer will follow the auto reboot schedule.
+**A:** Set the "Enable Auto Reboot" EDF to enabled at the computer level. This ensures that only the selected computer will follow the auto reboot schedule.
 
 **Q: What happens if auto reboot is disabled at any level (client, location, or computer)?**  
-A: If the "Enable Auto Reboot" EDF is set to "Disabled" at the client, location, or computer level, the auto reboot feature will be turned off for that scope. Disabling at any level takes precedence and will prevent scheduled reboots for all computers within that scope, regardless of other settings.
+**A:** If the "Enable Auto Reboot" EDF is set to "Disabled" at the client, location, or computer level, the auto reboot feature will be turned off for that scope. Disabling at any level takes precedence and will prevent scheduled reboots for all computers within that scope, regardless of other settings.
 
 **Q: What is the recommended scheduling pattern and why?**  
-A: Schedule the script to run every 15 minutes at :02 or :03 (for example, 00:02, 00:17, 00:32, 00:47). Reason: the script sends a shutdown command with a 12–13 minute delay, so running at :02/:03 ensures the reboot is queued shortly after the run and gives users time to save work.
+**A:** Schedule the script to run every 15 minutes at :02 or :03 (for example, 00:02, 00:17, 00:32, 00:47). Reason: the script sends a shutdown command with a 12–13 minute delay, so running at :02/:03 ensures the reboot is queued shortly after the run and gives users time to save work.
 
 **Example:**  If the reboot time is 00:00 and the script runs at 00:02, the machine won't be detected during that run. Instead, it would have been detected at 23:47, and the command issued would be: `Shutdown /f /t 780 /r`. This gives users approximately 13 minutes to save their work.
 
 **Q: How will users be notified about the reboot?**  
-A: The script issues a Windows command (`shutdown /r /f /t <seconds>`), so Windows shows its built‑in notification/dialog (toast / shutdown prompt) that the system will restart in the specified timeout. Users see the standard Windows warning and can save work before the forced restart.  
+**A:** The script issues a Windows command (`shutdown /r /f /t <seconds>`), so Windows shows its built‑in notification/dialog (toast / shutdown prompt) that the system will restart in the specified timeout. Users see the standard Windows warning and can save work before the forced restart.  
 
 ![Image5](../../../static/img/docs/69b28e39-89c4-498a-8c45-3d18459d39a0/image5.webp)
 
 **Q: Why does the prompt say “shutdown” instead of “restart”?**  
-A: The Windows shutdown utility and UI use the same wording/flow for both shutdown and restart operations, so dialogs may show “shutdown” even when the operation is a restart. This is by design—the shutdown command governs both actions and the prompt text is not always different for reboot.
+**A:** The Windows shutdown utility and UI use the same wording/flow for both shutdown and restart operations, so dialogs may show “shutdown” even when the operation is a restart. This is by design—the shutdown command governs both actions and the prompt text is not always different for reboot.
