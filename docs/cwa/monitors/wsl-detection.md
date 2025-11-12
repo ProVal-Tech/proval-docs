@@ -3,7 +3,7 @@ id: 'cfe1d90a-11be-4ea8-80b3-4d3116358b7d'
 slug: /cfe1d90a-11be-4ea8-80b3-4d3116358b7d
 title: 'WSL Detection'
 title_meta: 'WSL Detection'
-keywords: ['Vulnerability', 'CVE', 'WSL']
+keywords: ['vulnerability', 'cve', 'wsl']
 description: 'This monitor detects the Windows agent where the WSL command works.'
 tags: ['vulnerability', 'cve']
 draft: false

@@ -3,7 +3,7 @@ id: '69bd8087-6e6e-47ce-8484-ef0d6317e506'
 slug: /69bd8087-6e6e-47ce-8484-ef0d6317e506
 title: 'Uninstall WSL'
 title_meta: 'Uninstall WSL'
-keywords: ['Vulnerability', 'CVE', 'WSL']
+keywords: ['vulnerability', 'cve', 'wsl']
 description: 'This solution provides an option to uninstall WSL manually or using automation'
 tags: ['vulnerability', 'cve']
 draft: false
