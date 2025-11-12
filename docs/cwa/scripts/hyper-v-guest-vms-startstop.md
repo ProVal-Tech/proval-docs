@@ -18,8 +18,10 @@ This script allows for the shutdown or startup of VMs on the target Hyper-V host
 
 ## Sample Run
 
+To Stop the VMs:
 ![Sample Run Image 1](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_1.webp)
 
+To Start the VMs:
 ![Sample Run Image 2](../../../static/img/docs/52d001b4-7152-4616-92de-99a002e2d22c/image_2.webp)
 
 ## Dependencies

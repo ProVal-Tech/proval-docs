@@ -36,7 +36,7 @@ System Properties:
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
+- [Agnostic - Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
 
 ### Variables
 
