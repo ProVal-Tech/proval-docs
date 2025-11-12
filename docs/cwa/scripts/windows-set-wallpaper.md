@@ -18,13 +18,13 @@ This document outlines how to set the active desktop wallpaper for all users fro
 
 ## Sample Run
 
-**Set Mode:**
+**Set Mode:**  
 ![Set Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_1.webp)
 
-**Enforcement Mode:**
+**Enforcement Mode:**  
 ![Enforcement Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_2.webp)
 
-**Reset Mode:**
+**Reset Mode:**  
 ![Reset Mode](../../../static/img/docs/bd6b7507-eccf-4fce-a4e4-62b9b7c97a08/image_3.webp)
 
 ### User Parameters
