@@ -3,7 +3,7 @@ id: 'b793791e-2305-4ac5-ace3-b5737368190e'
 slug: /b793791e-2305-4ac5-ace3-b5737368190e
 title: 'Disable - AD Inactive Users - X Days'
 title_meta: 'Disable - AD Inactive Users - X Days'
-keywords: ['Inactive', 'Users', 'Active Directory', 'User Management']
+keywords: ['inactive', 'users', 'active directory', 'user management']
 description: 'This script detects the inactive users over X days and disables them, and records the data into the custom table so that it can be represented in a dataview.'
 tags: ['active-directory', 'accounts']
 draft: false
