@@ -30,8 +30,8 @@ This dataview stores the data of the users that was either enabled via [Script -
 | Computer | Computer Name of the agent |
 | Operating System | Operating system name of the agent |
 | LastContact | Last contact information of the agent with the CW Automate tool |
-| UserName | AD SamAccount name of the user that is inactive for more than X days |
-| UserSID | AD SID of the user that is inactive for more than X days |
+| UserName | AD SamAccount name of the users that are inactive for more than X days |
+| UserSID | AD SID of the users that are inactive for more than X days |
 | LastLogonDate | AD inactive user last login date in the domain environment |
 | User Enabled | AD inactive user status, whether enabled or disabled |
 | User Status Change | AD inactive user status change to enabled or disabled using [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively|

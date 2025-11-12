@@ -3,7 +3,7 @@ id: 'f83e24ad-91fb-46e7-bc93-51e99e1c7f16'
 slug: /f83e24ad-91fb-46e7-bc93-51e99e1c7f16
 title: 'ProVal Production - Detect Inactive Disabled AD Users'
 title_meta: 'ProVal Production - Detect Inactive Disabled AD Users'
-keywords: ['Inactive', 'Users', 'Active Directory', 'User Management']
+keywords: ['inactive', 'users', 'active directory', 'user management']
 description: 'This internal monitor detect the online domain controllers where the client-EDF "Enable Inactive Disabled AD Users" is checked and the exclusion location/computers EDFs "Exclude Enabling Inactive AD Users" are not checked. It also ensures to detect only those domain controller servers where the "pvl_ad_inactive_users" has a disabled users list.'
 tags: ['active-directory', 'accounts']
 draft: false

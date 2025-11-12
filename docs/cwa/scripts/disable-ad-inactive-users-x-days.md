@@ -12,18 +12,22 @@ unlisted: false
 
 ## Summary
 
-This script detects the inactive users over X days and disables them, and records the data into the custom table so that it can be represented in a dataview.
+This script detects the inactive users over X days and disables them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in a [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
 
 ## Sample Run
 
+- Please set it to 1 to create the custom table and required EDFs during the script import so that the solution can work properly  
 ![Sample Run](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image.webp)
+
+- Run normally to disable inactive AD users over threshold   
 ![Sample Run 1](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image2.webp)
 
 ## File Hash
 
-MD5 - `437700E0831610DC21C77F2AF7697205`
-
-SHA256 - `F44ED5BF2380D9BAC15CD159E2B73ABF3649B652CCC8399925074528EA6BBD8E`
+| Path | Algorithm | Hash |
+| --- | --- | --- |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | MD5 | `437700E0831610DC21C77F2AF7697205` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | SHA256 | `F44ED5BF2380D9BAC15CD159E2B73ABF3649B652CCC8399925074528EA6BBD8E` |
 
 ## Dependencies
 
@@ -33,7 +37,7 @@ SHA256 - `F44ED5BF2380D9BAC15CD159E2B73ABF3649B652CCC8399925074528EA6BBD8E`
 
 | Name          | Example                                                                                   | Required | Description                                                       |
 |---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| SetEnvironment     | 1 | False     |  It is needed to run this script initially with a value of 1 to create the custom table and import the required EDFs.                                             |
+| SetEnvironment     | 1 | False     |  It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) and import the required EDFs.                                             |
 
 ## Global Parameters
 
@@ -44,17 +48,15 @@ SHA256 - `F44ED5BF2380D9BAC15CD159E2B73ABF3649B652CCC8399925074528EA6BBD8E`
 
 ## EDFs
 
-| Name           | Level  | Type  | Editable | Description             |
+| Name           | Level  | Type  | Tab | Description             |
 |-----------------|--------|--------|----------|-----------------------------------------------------------------------|
-| Exclude AD Inactive UserList | Client | Text | Yes | This accepts the user list that is required to be excluded from the disable/enable of inactive AD users on the client. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image4.webp) |
-| Exclude AD Inactive UserList | Location | Text | Yes | This accepts the user list that is required to be excluded from the disable/enable of inactive AD users on the location. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image5.webp) |
-| Enable Inactive Disabled AD Users | Client | Checkbox | Yes | This will enable the inactive disabled users of the client's agents. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image7.webp) |
-| Exclude Enabling Inactive AD Users | Location | Checkbox | Yes | This will exclude the enabling of inactive AD users for the location's agents. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image8.webp) |
-| Exclude Enabling Inactive AD Users | Computer | Checkbox | Yes | This will exclude the enabling of the inactive disabled users of the agent. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image9.webp) |
+| Exclude AD Inactive UserList | Client | Text | Automation | This accepts the user list that is required to be excluded from the disable/enable of inactive AD users on the client. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image4.webp) |
+| Exclude AD Inactive UserList | Location | Text | Automation | This accepts the user list that is required to be excluded from the disable/enable of inactive AD users on the location. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image5.webp) |
+
 
 ## Process
 
-This script detects the inactive users over X days and disables them, and records the data into the custom table so that it can be represented in a dataview.
+This script detects the inactive users over X days and disables them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in a [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
 Here X = `Threshold_Days` set in the Global Parameter.
 This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`.
 
@@ -78,6 +80,6 @@ It works as follows:
 
 ## Output
 
-- Custom table
-- Dataview
+- [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
+- [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
 - Output
