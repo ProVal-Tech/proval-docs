@@ -16,7 +16,7 @@ This is a remote monitor that detects inactive AD Users over 90 days.
 
 ## Details
 
-- **Suggested "Limit to"**: `All`
+- **Suggested "Limit to"**: `Server Roles/Server Role - AD - Infrastructure Master`
 - **Suggested Alert Style**: `Once`
 - **Suggested Alert Template**: `△ Custom - Execute Script - Disable Inactive AD Users`
 
@@ -27,7 +27,7 @@ This is a remote monitor that detects inactive AD Users over 90 days.
 
 ## Dependencies
 
-**Alert Template:** `△ Custom - Execute Script - Disable Inactive AD Users`
+- **Alert Template:** `△ Custom - Execute Script - Disable Inactive AD Users`
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
 - [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)
 - [Solution- Inactive AD Users Disable/Enable](/docs/d93ff68b-9515-4d4c-bfa4-ff551b3eac37)
@@ -44,7 +44,7 @@ The monitor set should be limited to the `Server Roles/Server Role - AD - Infras
 
 - Validate that the [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) was imported.
 - Import the `Alert Template - △ Custom - Execute Script - Disable Inactive AD Users`
-- Run SQL Query
+- Run the below SQL Query
   
 ```sql
 SET @Groupid = (SELECT Groupid From MasterGroups where `GUID` =  '3ac455da-f1fb-11e1-b4ec-1231391d2d19' ) ;
@@ -117,8 +117,7 @@ WHERE m.groupid = @Groupid
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - AD Inactive Users - Detection') ;
 ```
 
-- Check Domain Controllers Group
-  
+- 
   Check the `Domain Controllers` group and ensure that the monitor set is created and configured with the correct search.
   Limit To: `Server Role - AD - Infrastructure Master`
 
@@ -126,6 +125,5 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 
     ![Sample Run 1](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image18.webp)
 
-- Assign the Alert Template
-  
+- 
   Assign the required alert template. It is suggested to use `△ Custom - Execute Script - Disable Inactive AD Users` for the best results.
