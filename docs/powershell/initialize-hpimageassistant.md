@@ -58,7 +58,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
    - Downloads and extracts HP’s official platform compatibility list.
    - Aborts gracefully if preconditions are not met.
 3. **HP Image Assistant Management**
-   - Locates the HPIA executable (existing or fresh install via winget).
+   - Locates the HPIA executable (existing or fresh install).
    - Installs or updates HPIA automatically if missing.
 4. **Update Processing**
    - If custom arguments are provided, they’re passed to HPIA.
