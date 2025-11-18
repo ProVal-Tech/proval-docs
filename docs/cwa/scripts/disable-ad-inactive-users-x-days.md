@@ -32,17 +32,12 @@ Run normally to disable inactive AD users over threshold
 [Solution- Inactive AD Users Disable/Enable](/docs/d93ff68b-9515-4d4c-bfa4-ff551b3eac37)
 
 
-## Global Parameters
-
-| Name          | Example                                                                                   | Required | Description                                                       |
-|---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| ExcludeList     | demo,test,testuser | False     |  This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo.                                             |
-
 ## System Property
 
-| Name           | Level                   | Description      |
-|---------------------------------|--------| ----------------------------------- |
-| Inactive_AD_Users_Threshold_Days | 90 | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Name           | Level                   | Required | Description      |
+|---------------------------------|--------| ---------- | ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Inactive_AD_Users_Exclude_Disable | demo,test,testuser | False | This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image24.webp)|  
 
 ## Process
 
@@ -58,11 +53,11 @@ It also excludes users that are stored in the `Exclude AD Inactive UserList` EDF
 
 It works as follows:
 
-1) If the Script `ExcludeList` is provided and the Client EDF `Exclude AD Inactive UserList` is set with the users, then script will exclude the users list of `Excludelist` `+` `Exclude AD Inactive UserList` Client EDF list.
+1) If the property `Inactive_AD_Users_Exclude_Disable` is provided and the Client EDF `Exclude AD Inactive UserList` is set with the users, then script will exclude the users list from property `Inactive_AD_Users_Exclude_Disable` `+` `Exclude AD Inactive UserList` Client EDF list.
 
-2) If the Script `ExcludeList` is empty and the Client EDF `Exclude AD Inactive UserList` is set, then the Client EDF `Exclude AD Inactive UserList` list of users will be excluded.
+2) If the property `Inactive_AD_Users_Exclude_Disable` is empty and the Client EDF `Exclude AD Inactive UserList` is set, then the Client EDF `Exclude AD Inactive UserList` list of users will be excluded.
 
-3) If Script `ExcludeList` has user lists and the EDFs at client level `Exclude AD Inactive UserList` is empty, then the script `ExcludeList` will be accepted for the exclusion.
+3) If property `Inactive_AD_Users_Exclude_Disable` has user lists and the EDFs at client level `Exclude AD Inactive UserList` is empty, then the script `Inactive_AD_Users_Exclude_Disable` will be accepted for the exclusion.
 
 ## Output
 

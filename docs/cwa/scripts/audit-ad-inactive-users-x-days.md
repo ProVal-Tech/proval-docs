@@ -39,9 +39,10 @@ This script detects the inactive users over X days and records the data into the
 
 ## System Property
 
-| Name           | Level                   | Description      |
-|---------------------------------|--------| ----------------------------------- |
-| Inactive_AD_Users_Threshold_Days | 90 | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Name           | Level                   | Required | Description      |
+|---------------------------------|--------| ---------- | ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Inactive_AD_Users_Exclude_Disable | demo,test,testuser | False | This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image24.webp)| 
 
 ## Dependencies
 
@@ -52,13 +53,6 @@ This script detects the inactive users over X days and records the data into the
 | **Name**    | **Example**                | **Required** | **Description**                                                                                                                                                                                                 |
 |-------------|----------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `SetEnvironment` | 1 | False | It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361), import the required EDFs, and the system property. |
-
-
-## Global Parameters
-
-| Name          | Example                                                                                   | Required | Description                                                       |
-|---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| ExcludeList     | demo,test,testuser | False     |  This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo.                                             |
 
 
 ## Process
