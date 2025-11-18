@@ -36,14 +36,18 @@ Run normally to disable inactive AD users over threshold
 
 | Name          | Example                                                                                   | Required | Description                                                       |
 |---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| Threshold_Days     | 90 | True     |  It defines the number of days since the user wasn't logged in to the domain environment.                                             |
 | ExcludeList     | demo,test,testuser | False     |  This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo.                                             |
 
+## System Property
+
+| Name           | Level                   | Description      |
+|---------------------------------|--------| ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
 
 ## Process
 
 This script detects the inactive users over X days and disables them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in a [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
-Here X = `Threshold_Days` set in the Global Parameter.
+Here X = `Inactive_AD_Users_Threshold_Days` set in the system property.
 This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`.
 
 Here, `*\$` meant any user that has $ its name at the end.

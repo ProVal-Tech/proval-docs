@@ -16,7 +16,7 @@ This script detects the inactive users over X days and records the data into the
 
 ## Sample Run
 
-- It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) and import the required EDFs. 
+- It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361), import the required EDFs, and the system property. 
 ![Sample Run](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image20.webp)
 
 - Run normally to fetch the inactive AD users over threshold   
@@ -37,6 +37,11 @@ This script detects the inactive users over X days and records the data into the
 | Enable Inactive Disabled AD Users | Client | Checkbox | Automation | This will enable the inactive disabled users of the clients domain. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image7.webp) |
 | Audit Inactive AD Users | Client | Checkbox | Automation | This enable the auditing of the Inactive AD Users of the client domain. ![EDF](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image22.webp) |
 
+## System Property
+
+| Name           | Level                   | Description      |
+|---------------------------------|--------| ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
 
 ## Dependencies
 
@@ -46,20 +51,19 @@ This script detects the inactive users over X days and records the data into the
 
 | **Name**    | **Example**                | **Required** | **Description**                                                                                                                                                                                                 |
 |-------------|----------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `SetEnvironment` | 1 | False | It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) and import the required EDFs. |
+| `SetEnvironment` | 1 | False | It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361), import the required EDFs, and the system property. |
 
 
 ## Global Parameters
 
 | Name          | Example                                                                                   | Required | Description                                                       |
 |---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| Threshold_Days     | 90 | True     |  It defines the number of days since the user wasn't logged in to the domain environment.                                             |
 | ExcludeList     | demo,test,testuser | False     |  This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo.                                             |
 
 
 ## Process
 
-This script audits the AD inactive users that are not logged in for over X days.
+This script audits the AD inactive users that are not logged in for over value provided in the system properties `Inactive_AD_Users_Threshold_Days` days.
 
 
 ## Output

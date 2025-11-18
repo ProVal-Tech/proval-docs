@@ -34,6 +34,7 @@ This dataview stores the data of the users that was either enabled via [Script -
 | UserSID | AD SID of the users that are inactive for more than X days |
 | LastLogonDate | AD inactive user last login date in the domain environment |
 | User Enabled | AD inactive user status, whether enabled or disabled |
+| IsExcluded | AD inactive user status, whether user is excluded from getting disabled or not |
 | User Status Change | AD inactive user status change to enabled or disabled using [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively|
 | DistinguishedName | It stores the inactive user's uniquely identifying information that is an entry within a directory service |
 | ScriptRanDate | This has the information of the last script run date when the information was collected via [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) |

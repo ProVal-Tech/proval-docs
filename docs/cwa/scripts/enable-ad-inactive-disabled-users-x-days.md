@@ -48,15 +48,19 @@ This script enables the inactive users that are not logged in for over X days.
 
 | Name          | Example                                                                                   | Required | Description                                                       |
 |---------------|-------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------|
-| Threshold_Days     | 90 | True     |  It defines the number of days since the user wasn't logged in to the domain environment.                                             |
 | ExcludeList     | demo,test,testuser | False     |  This will enable the users that gets disabled and marked as excluded. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo.                                             |
 
+## System Property
+
+| Name           | Level                   | Description      |
+|---------------------------------|--------| ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
 
 ## Process
 
 This script enables the inactive users that are not logged in for over X days.
 
-**UserList:** If set to `All`, then all inactive, disabled users exceeding the `Threshold_Days` will be enabled.
+**UserList:** If set to `All`, then all inactive, disabled users exceeding the `Inactive_AD_Users_Threshold_Days` will be enabled.
 
 **NOTE:** To run the script as an autofix with the internal monitor, the `UserList` does not need to be set.
 
@@ -66,7 +70,7 @@ If it is set to some specific user's name, e.g., `Demo,Test,TestUser`, then it w
 
 - If it is left `blank`, then it will enable all the disabled users that are disabled via [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)
 
-    - Here X = `Threshold_Days` set in the Global Parameter.
+    - Here X = `Inactive_AD_Users_Threshold_Days` set in the system property.
 This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`.
 
         Here, `*\$` meant any user that has $ in its name end.
