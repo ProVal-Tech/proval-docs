@@ -44,7 +44,7 @@ Please go through these solutions thoroughly before implementing the solutions. 
 
 
 2. Reload the System Cache  
-   ![Reload the System Cache](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
+   ![Reload the System Cache](../../../static/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
 
 
 3. Run the script against any machine to create "Restrict Vendor Access" EDF's, "PropertyIndex" System Properties, "Vendor Restricted - Super Admin" user class, "Restricted vendor Access" search and "Restrict Vendor Access" group
@@ -52,16 +52,16 @@ Please go through these solutions thoroughly before implementing the solutions. 
    - Navigate to Automation --> Scripts within the CWA Control Center.
    - Open [ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) Script
    - Debug script on any machine with parameter `Set_Environment= 1`    
-   ![Debug script](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_2.webp)
+   ![Debug script](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_2.webp)
 
-4. After performing the above step, reload the System Cache again otherwise group will cease to open with a permissions error  
-   ![Reload the System Cache](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
+4. After performing the above step, reload the System Cache again otherwise group will cease to open with a permissions error   
+   ![Reload the System Cache](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
 
 5. With the pieces imported this is where a super admin user must take over.   
 
    - The admin must mark the Extra Data Fields (**Which are only editable if the user has the Super Admin userclass**) for the clients, locations or computers that must be hidden from the Vendor. Please open the target client, location or computer and navigate to the "Info" > "Default" tab.  (Discuss with partner which all clients/Locations/Machines they would like to restrict)
 
-   ![Navigate to Info > Default tab](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_3.webp)
+   ![Navigate to Info > Default tab](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_3.webp)
 
 
 
@@ -77,21 +77,21 @@ Please go through these solutions thoroughly before implementing the solutions. 
 
 2. Assign the proper permissions to the accounts you just created
    - The Vendor Restricted user should have the newly created user class assigned to it   
-     - Vendor Restricted - Super Admin
-     ![Vendor Restricted - Super Admin](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_5.webp)
+     - Vendor Restricted - Super Admin  
+     ![Vendor Restricted - Super Admin](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_5.webp)
    - The US account can have the full Super Admin rights
 
 3. Assign the proper group membership from the Groups and Clients tab:
    - For the restricted user, the only group that should be in the 'Member of' side is 'All Agents.Restrict Vendor Access'.
-     - This is the setting on the user account that hides the restricted clients from the login.
-     ![Group membership](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_6.webp)
+     - This is the setting on the user account that hides the restricted clients from the login.  
+     ![Group membership](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_6.webp)
 
 4. To propagate EDF changes quicker to the restricted accounts, you can force sync the search like shown below:
    - Users with this configuration will perform similarly to the "All Agents" group in Automate, but thanks to the search included in the XML, excludes any clients where the EDF is marked. The 'All Agents.Restricted Vendor Access' group will not display these agents. This will effectively hide all machines at clients where the EDF is marked.
-   - These changes can take up to 30 minutes to go into effect. If this needs to happen more quickly, please navigate to the 'All Agents.Restricted Vendor Access' group and force update agents in the group.  
-   ![Force sync the search](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_7.webp)
+   - These changes can take up to 30 minutes to go into effect. If this needs to happen more quickly, please navigate to the 'All Agents.Restricted Vendor Access' group and force update agents in the group.   
+   ![Force sync the search](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_7.webp)
 
-Note: Follow the above steps for any other users that should have vendor restricted access. 
+**Note:** Follow the above steps for any other users that should have vendor restricted access. 
 
 ## Client Permissions
 
@@ -105,82 +105,87 @@ After following the above steps, we need to add client-level permissions for "Su
 3. Navigate to Automation --> Scripts within the CWA Control Center.
    - Open [ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) Script
    - Debug script on any machine of the selected CLIENT (From step 1) with parameter `Set_Client_Permissions= 1`  
-   ![Debug script](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_8.webp)    
-   This will add `Super Admin - Restricted Vendor Access` UserClass with full permission to that client  
-   ![UserClass with full permission](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_9.webp)
+   ![Debug script](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_8.webp)    
+   This will add `Super Admin - Restricted Vendor Access` UserClass with full permission to that client   
+   ![UserClass with full permission](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_9.webp)
 
-   Note : The above step is to set the permission for  `Super Admin - Restricted Vendor Access` UserClass on that particular client and below steps is to copy that permissions to other clients in the partners environment.
+   **Note:** The above step is to set the permission for  `Super Admin - Restricted Vendor Access` UserClass on that particular client and below steps is to copy that permissions to other clients in the partners environment.
 
 4. If partner is not already using the [Automate Database Maintenance - User Class Permission Sync](/docs/0b85cd78-2ed9-46b0-bf7a-6204226192bb). Discuss with partner for any clients to exclude and accordingly set the system properties mentioned in this document in partners environment. (Please go through this solution thoroughly). If they are already using it. Just run this script against any client to copy the permissions to all the clients.
 
 ## ScreenConnect
 
-1. Make sure you Duplicate the 'All Machines' group and rename the original to 'All Machines (Unrestricted)'.  
-   ![Duplicate All Machines group](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_12.webp)
+1. Make sure you duplicate the 'All Machines' group and rename the original to 'All Machines (Unrestricted)'.  
+   ![Duplicate All Machines group](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_12.webp)
 
-'All Machines (Unrestricted)' Group - This group will show all the machines regardless they are restricted or unrestricted.
+- `All Machines (Unrestricted)` Group - This group will show all the machines regardless they are restricted or unrestricted.
 
-'All Machines' Group - This group will only show all the machines excluding the restricted one.
+- `All Machines` Group - This group will only show all the machines excluding the restricted one.
 
-2. Create "Vendor Restricted" Custom Property:
-   1. Open the Appearance page (Admin --> Appearance)
-   2. Type CTRL+F and look for custom property resource strings beginning with the key, `SessionProperty.Custom5.LabelText`.
+2. Create "Vendor Restricted" Custom Property:  
+   (a). Open the Appearance page (Admin --> Appearance) 
+
+   (b). Type CTRL+F and look for custom property resource strings beginning with the key, `SessionProperty.Custom5.LabelText`.  
       - Custom Property slot 1-4 are used by the CWA / CWC plugin. Avoid using them.      
-      - Try using the properties between 5-8 that are not already used.
-   3. Edit `SessionProperty.Custom5.LabelText` (Note: This may vary according to the client.)
-   4. Enter "Vendor Restricted" in the **Custom** text area. Click **Save Resource** to save  
-      ![Save Resource](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_13.webp)
-   5. Set the visibility of the "Vendor Restricted" Custom Field
-      - Just Above `SessionProperty.Custom5.LabelText` you will find `SessionProperty.Custom5.AccessVisible`, Set this property to True.
-      ![Set property to True](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_14.webp)
-   6. The final setting should look like this:    
-      ![Final setting](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_15.webp)
+      - Try using the properties between 5-8 that are not already used.  
 
+   (c). Edit `SessionProperty.Custom5.LabelText` (Note: This may vary according to the client.)  
+
+   (d). Enter "Vendor Restricted" in the **Custom** text area. Click **Save Resource** to save  
+      ![Save Resource](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_13.webp)  
+
+   (e). Set the visibility of the "Vendor Restricted" Custom Property
+      - Just Above `SessionProperty.Custom5.LabelText` you will find `SessionProperty.Custom5.AccessVisible`. Set this property to `True`.
+      ![Set property to True](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_14.webp)
+   (f). The final setting should look like this:    
+      ![Final setting](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_15.webp)  
       The "Vendor Restricted" property will start displaying like shown below:
-      ![Vendor Restricted property](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_16.webp)  
+      ![Vendor Restricted property](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_16.webp)  
 
       _Note: Use the word "Restricted" to restrict any machine in Screenconnect_
 
 3. Now go to the copied Group 'All Machines'
    - Click on three dots on the right-hand side of the session group.
    - Click on Edit.  
-   ![Edit Group](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_17.webp)
+   ![Edit Group](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_17.webp)
    - This will open a dialog box,
-     - Fill in the `Session Filter:` with `CustomProperty5 <> 'Restricted'` So it will show only machines that are not restricted 
+     - Fill in the `Session Filter:` with `CustomProperty5 <> 'Restricted'`, so it will only show the machines that are not restricted 
 
        **NOTE:** The number after 'CustomProperty' needs to match the number   configured for the solution. 5 is the most common but can be changed.  
-       ![Session Filter](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_18.webp)
+       ![Session Filter](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_18.webp)
 
 4. Work with the client to set this to 'Restricted' for all machines that need to be removed from vision for vendor  
-   ![Set to Restricted](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_16.webp)
+   ![Set to Restricted](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_16.webp)
 
-5. Go to Admin --> Security --> Roles. Clone the Administrator role, rename to 'Administrator (Unrestricted)', and clone again to create a 'Administrator (Vendor Access)' or Administrator depending on the client's needs.
+5. Go to `Admin` > `Security` > `Roles`. Clone the Administrator role, rename to 'Administrator (Unrestricted)', and clone again to create a 'Administrator (Vendor Access)' or Administrator depending on the client's needs.
    This sets up admins or other tiered techs.  
-   ![Clone Administrator role](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_19.webp)
+   ![Clone Administrator role](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_19.webp)
 
-6. Last step is to apply this role and permissions on the newly restricted group:  
-   ![Apply role and permissions](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image1.webp)
+6. Last step is to apply this role and permissions on the newly restricted group. Open the `Administrator (Vendor Access)` role > Select the `All Machines` group from left side and assign the permissions  as shown in the below screenshot:   
+   ![Apply role and permissions](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image1.webp)
+
+   **NOTE:** The `Administrator (Vendor Access)` role is limited to the Group `All Machines`. And the `Administrator (Unrestricted)` role is applied to all the groups to have full permission.
 
 ## SC Permissions
 
 Below is the process that will ensure that when the EDFs "Restrict Vendor Access" are checked within automate, it automatically restricts the machines in SC.
 
 1. Import the internal Monitor using ProSync Plugin
-   - [Internal Monitor - Automatically Restrict/Unrestrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
+   - [Automatically Restrict/Unrestrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
 
 2. Import the following Alert Template using the ProSync plugin:
    - `△ Custom - Execute Script - Update Vendor Restricted Property`
 
 3. Reload the System Cache  
-   ![Reload the System Cache](/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
+   ![Reload the System Cache](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
 
 4. Configure the solution as follows:
-   - Navigate to System dashboard --> Config --> Configurations --> System Properties within the CWA Control Center.
-     - Fetch "Vendor Restricted" property Index From Screenconnect Portal
+   - Navigate to `System dashboard` > `Config` > `Configurations` > `System Properties` within the CWA Control Center.
+     - Fetch "Vendor Restricted" property Index from Screenconnect Portal
      - In the above example we have used `SessionProperty.Custom5.LabelText` so its Property Index will be "5"
        - Set the Correct Value for the System property `PropertyIndex`
-     - PropertyValue will automatically be fetched based on the EDF's value. If EDF's are selected and the machine is not restricted in Screenconnect it will automatically restrict it, similarly if any machine is accidentally set to restricted and EDF's are not selected at client or location level, it will automatically revert the changes for that machine.  
-   - Navigate to Automation --> Monitors within the CWA Control Center.
-     - [CWM - Automate - Internal Monitor - Automatically Restrict/Unrestrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
+     - PropertyValue will automatically be fetched based on the EDF's value. If EDF's are selected and the machine is not restricted in Screenconnect it will automatically restrict it. Similarly, if any machine is accidentally set to restricted and EDF's are not selected at client or location level in CWA, it will automatically revert the changes for that machine.  
+   - Navigate to `Automation` > `Monitors` within the CWA Control Center.
+     - [ Automatically Restrict/Unrestrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
        - Configure with the alert template: `△ Custom - Execute Script - Update Vendor Restricted Property`
        - Right-click and Run Now to start the monitor.
