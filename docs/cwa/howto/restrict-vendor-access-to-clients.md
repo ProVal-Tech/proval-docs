@@ -47,9 +47,19 @@ Please go through these solutions thoroughly before implementing the solutions. 
    ![Reload the System Cache](../../../static/img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_1.webp)
 
 
-3. Run the script against any machine to create "Restrict Vendor Access" EDF's, "PropertyIndex" System Properties, "Vendor Restricted - Super Admin" user class, "Restricted vendor Access" search and "Restrict Vendor Access" group
+3. Run the script against any machine to create below:  
 
-   - Navigate to Automation --> Scripts within the CWA Control Center.
+      | Item | Type | 
+      |-----------------------------------|--------------------|
+      |Restrict Vendor Access             | EDF                |
+      |PropertyIndex                      | System Properties  |
+      |Vendor Restricted - Super Admin    |User Class          |
+      |Restricted vendor Access           |Search              |
+      |Restrict Vendor Access             |Group               |
+
+
+
+   - Navigate to `Automation` > `Scripts` within the CWA Control Center.
    - Open [ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) Script
    - Debug script on any machine with parameter `Set_Environment= 1`    
    ![Debug script](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_2.webp)
