@@ -27,4 +27,4 @@ $output = foreach ($doc in $recentDocs) {
         Category   = $doc.Category
     }
 }
-$output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\src\pages\recentDocs.json" -Encoding UTF8
+$output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8

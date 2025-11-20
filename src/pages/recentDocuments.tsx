@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import recentDocs from './recentDocs.json';
+import recentDocs from '@site/static/api/recentDocs.json';
 import styles from './recentDocuments.module.css';
 
 type RecentDoc = {
