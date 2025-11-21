@@ -4,7 +4,7 @@ slug: /60a8bed6-fe7e-49b9-b0b9-d4d4e79cf769
 title: 'cPVAL Enable Weak Credentials Monitoring'
 title_meta: 'cPVAL Enable Weak Credentials Monitoring'
 keywords: ['weak-password', 'duplicate-password', 'weak-credential', 'domain']
-description: 'Enable this checkbox to activate weak credential monitoring for the client's domain. The script will run against the client's primary domain controller.'
+description: 'Enable this checkbox to activate weak credential monitoring for the client''s domain. The script will run against the client''s primary domain controller.'
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
