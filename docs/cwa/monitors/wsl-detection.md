@@ -53,7 +53,7 @@ INSERT INTO groupagents
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 '0' as `SearchID`,
-'ProVal Development - WSL Detection' as `Name`,
+'ProVal - Production - WSL Detection' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
 '[No Alerting]~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!![No Alerting]~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
@@ -62,8 +62,8 @@ SELECT '' as `AgentID`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$found=$false;if(Get-Command wsl -ErrorAction SilentlyContinue){wsl --version 2>$null;if($LASTEXITCODE -eq 0){$found=$true}};$regPaths=@(\'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\\NavPane\\ShowLinux\',\'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss\');foreach($p in $regPaths){if(Test-Path $p){$found=$true}};$msiKey=\'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss\\MSI\';if(Test-Path $msiKey){$found=$true;$pc=(Get-ItemProperty -Path $msiKey).ProductCode;if($pc){$clean=$pc -replace \'^\\{+|\\}+$\',\'\';$uninstall=\\"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{$clean}\\";if(Test-Path $uninstall){$found=$true}}};$folders=@(\\"$env:USERPROFILE\\AppData\\Local\\Packages\\CanonicalGroupLimited.*\\",\\"C:\\Program Files\\WindowsApps\\MicrosoftCorporationII.WindowsSubsystemForLinux_*\\",\\"C:\\Program Files\\WSL\\");foreach($f in $folders){if(Get-ChildItem -Path $f -ErrorAction SilentlyContinue){$found=$true}};$paths=@(\\"$env:ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\",\\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\");foreach($p in $paths){if(Get-ChildItem -Path $p -Filter \'*Linux*\' -ErrorAction SilentlyContinue){$found=$true}};if($found){Write-Output \'WSL Component Found\'}else{Write-Output \'No Residue Found\'}"' as `DataOut`,
-'1' as `Comparor`,
-'Not Available' as `DataIn`,
+'5' as `Comparor`,
+'No Residue Found' as `DataIn`,
 '0' as `IDField`,
 '1' as `AlertStyle`,
 '0' as `ScriptID`,
@@ -113,7 +113,7 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S)) 
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal Development - WSL Detection') ;
+AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - WSL Detection') ;
 ```
 ### Step 4
 
@@ -125,7 +125,7 @@ INSERT INTO groupagents
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
 '0' as `SearchID`,
-'ProVal Development - WSL Detection' as `Name`,
+'ProVal - Production - WSL Detection' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
 '[No Alerting]~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!![No Alerting]~~~%STATUS% on %CLIENTNAME%\\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.' as `AlertMessage`,
@@ -185,7 +185,7 @@ SUBSTRING('abcdef0123456789', FLOOR(RAND()*16+1), 1)
 (NOW()) as `UpdateDate`
 FROM mastergroups m
 WHERE m.groupid IN (128,129,200)
-AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal Development - WSL Detection') ;
+AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - WSL Detection') ;
 ```
 
 ### Step 5
