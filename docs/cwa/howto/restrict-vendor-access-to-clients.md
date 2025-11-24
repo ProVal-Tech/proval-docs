@@ -171,10 +171,19 @@ After following the above steps, we need to add client-level permissions for "Su
    This sets up admins or other tiered techs.  
    ![Clone Administrator role](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_19.webp)
 
-6. Last step is to apply this role and permissions on the newly restricted group. Open the `Administrator (Vendor Access)` role > Select the `All Machines` group from left side and assign the permissions  as shown in the below screenshot:   
+6. Last step is to apply this role and permissions on the newly restricted group. 
+   - Open the `Administrator (Vendor Access)` role. 
+   - Deselect all the permissions from `All Sessions Group`.
+   ![role permissiom](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_21.webp)
+   - Select the `All Machines` group (you just created for restriction) from the left side.
+   - Assign the permissions  as shown in the below screenshot and save it:   
    ![Apply role and permissions](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image1.webp)
 
    **NOTE:** The `Administrator (Vendor Access)` role is limited to the Group `All Machines`. And the `Administrator (Unrestricted)` role is applied to all the groups to have full permission.
+
+   - The restricted user will get below like page where the user can see only one group:
+
+   ![Group Access](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_23.webp)
 
 ## SC Permissions
 
