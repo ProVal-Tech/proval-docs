@@ -51,15 +51,15 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 | ProjectName      | Windows  | banyan-windows |
 | WorkingDirectory | Windows  | C:\ProgramData\\_Automation\Script\banyan-windows |
 | ScriptPath       | Windows  | C:\ProgramData\\_Automation\Script\banyan-windows.ps1 |
-| DownloadUrl      | Windows  | [https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-windows.ps1](https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-windows.ps1) |
+| DownloadUrl      | Windows  | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-windows.ps1](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-windows.ps1) |
 | ProjectName      | macOS    | banyan-macos |
 | WorkingDirectory | macOS    | /tmp/ |
 | ScriptPath       | macOS    | /tmp/banyan-macos.sh |
-| DownloadUrl      | macOS    | [https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-macos.sh](https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-macos.sh) |
+| DownloadUrl      | macOS    | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-macos.sh](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-macos.sh) |
 | ProjectName      | Linux    | banyan-linux |
 | WorkingDirectory | Linux    | /tmp/ |
 | ScriptPath       | Linux    | /tmp/banyan-linux.sh |
-| DownloadUrl      | Linux    | [https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-linux.sh](https://raw.githubusercontent.com/banyansecurity/app-installer/refs/heads/main/banyan-linux.sh) |
+| DownloadUrl      | Linux    | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-linux.sh](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-linux.sh) |
 
 ## User parameters
 
