@@ -13,7 +13,7 @@ unlisted: false
 ## Overview  
 Monitors Windows Event Logs for disk and NTFS errors (Event IDs: 55, 7, 33, 52, 57) in the last 24 hours. If found, reports the error with event ID and timestamp. Also checks Wininit Event ID 1001 to confirm if the issue has been resolved.  
 
-Note: This Component is a monitoring component and can only be able to execute through a monitoring policy.
+Note: This Component is a monitoring component and can only be able to execute through a monitor policy.
 
 ## Implementation  
 
