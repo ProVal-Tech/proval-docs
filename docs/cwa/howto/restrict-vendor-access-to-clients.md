@@ -18,16 +18,16 @@ Due to compliance issues, some MSP partners need to restrict the ability for res
 
 ## Pre-requisites
 
-- Create the below content in Automate before implementing the solution:
+- Create the below content in Automate using the script  before implementing the solution:
 
-   1. Client/Location/Computer ExtraDataFields named "Restrict Vendor Access"  (This can be created using  [Script - ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) as mentioned in below process.)
+   1. Client/Location/Computer EDFs named "Restrict Vendor Access"  (This can be created using  [Script - ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) as mentioned in below process.)
    2. Create a search that filters the machines where the above EDFs are **NOT** marked.
    3. Create a group that is populated by the above search. This group is used to limit access to the vendor's Automate user account.
 
 - Discuss with partner which all clients/Locations/Machines they would like to restrict.
 - Verify if partner is already using the [Automate Database Maintenance - User Class Permission Sync](/docs/0b85cd78-2ed9-46b0-bf7a-6204226192bb) script in their environment. Note down the clientid used in the solution to copy the user class permissions. If not, discuss with partner if they would like to use any default client to copy the user class permissions. If not, Select any random user class. 
 
-Note : If PRONOC is responsible for making the Client Permission Changes and is intended to be a vendor-restricted user, ensure that the user class permission is updated as the final step. 
+**Note : If PRONOC is responsible for making the Client Permission Changes and is intended to be a vendor-restricted user, ensure that the user class permission is updated as the final step.**
 
 
 ## Dependencies
@@ -69,7 +69,8 @@ Please go through these solutions thoroughly before implementing the solutions. 
 
 5. With the pieces imported this is where a super admin user must take over.   
 
-   - The admin must mark the Extra Data Fields (**Which are only editable if the user has the Super Admin userclass**) for the clients, locations or computers that must be hidden from the Vendor. Please open the target client, location or computer and navigate to the "Info" > "Default" tab.  (Discuss with partner which all clients/Locations/Machines they would like to restrict)
+   - The admin must mark the Extra Data Fields (**Which are only editable if the user has the Super Admin userclass**) for the clients, locations or computers that must be hidden from the Vendor. 
+   - Please open the target client, location or computer and navigate to the `Info` > `Default` tab.  (Discuss with partner which all clients/Locations/Machines they would like to restrict)
 
    ![Navigate to Info > Default tab](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_3.webp)
 
@@ -77,13 +78,13 @@ Please go through these solutions thoroughly before implementing the solutions. 
 
 # CWA User Account
 
-1. Create the user account that you would like to restrict. The typical setup has been outlined below:
+1. Create the user account that you would like to restrict. The typical setup for ProVal has been outlined below:
    - User Account - PRONOC -
      - Apply the Super Admin - Restrict Vendor Access permission to this account.
        - This is the account the team is trained to use.
    - User Account - PRONOCA - This is our standard US Only Super Admin account.  
 
-   Note : This step will be performed by Account manager to store credentials in Bitwarden.
+   **Note:** This step will be performed by Account manager to store credentials in Bitwarden.
 
 2. Assign the proper permissions to the accounts you just created
    - The Vendor Restricted user should have the newly created user class assigned to it   
@@ -105,7 +106,7 @@ Please go through these solutions thoroughly before implementing the solutions. 
 
 ## Client Permissions
 
-After following the above steps, we need to add client-level permissions for "Super Admin - Restricted Vendor Access". First verify if partner is already using the [Automate Database Maintenance - User Class Permission Sync](/docs/0b85cd78-2ed9-46b0-bf7a-6204226192bb). If yes, verify the clientid they are using to copy the permissions to other clients and perform the below steps on that client. Otherwise you can use any client or discuss with client first regarding the client whose permission they would like to copy to other clients. Follow the below steps to perform it.
+After following the above steps, we need to add client-level permissions for "Vendor Restricted - Super Admin" user class. First verify if partner is already using the [Automate Database Maintenance - User Class Permission Sync](/docs/0b85cd78-2ed9-46b0-bf7a-6204226192bb). If yes, verify the Client ID they are using to copy the permissions to other clients and perform the below steps on that client. If not, choose any client or confirm with the partner which client’s permissions should be copied. Follow the below steps to perform it.
 
 1. Find the client you would like to deem the 'Default/Standard' configuration.
 
@@ -116,10 +117,10 @@ After following the above steps, we need to add client-level permissions for "Su
    - Open [ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) Script
    - Debug script on any machine of the selected CLIENT (From step 1) with parameter `Set_Client_Permissions= 1`  
    ![Debug script](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_8.webp)    
-   This will add `Super Admin - Restricted Vendor Access` UserClass with full permission to that client   
+   This will add `Vendor Restricted - Super Admin` User Class with full permission to that client   
    ![UserClass with full permission](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_9.webp)
 
-   **Note:** The above step is to set the permission for  `Super Admin - Restricted Vendor Access` UserClass on that particular client and below steps is to copy that permissions to other clients in the partners environment.
+   **Note:** The above step is to set the permission for  `Vendor Restricted - Super Admins` User Class on that particular client and below steps is to copy that permissions to other clients in the partners environment.
 
 4. If partner is not already using the [Automate Database Maintenance - User Class Permission Sync](/docs/0b85cd78-2ed9-46b0-bf7a-6204226192bb). Discuss with partner for any clients to exclude and accordingly set the system properties mentioned in this document in partners environment. (Please go through this solution thoroughly). If they are already using it. Just run this script against any client to copy the permissions to all the clients.
 
@@ -133,7 +134,7 @@ After following the above steps, we need to add client-level permissions for "Su
 - `All Machines` Group - This group will only show all the machines excluding the restricted one.
 
 2. Create "Vendor Restricted" Custom Property:  
-   (a). Open the Appearance page (Admin --> Appearance) 
+   (a). Open the Appearance page (`Admin` > `Appearance`) 
 
    (b). Type CTRL+F and look for custom property resource strings beginning with the key, `SessionProperty.Custom5.LabelText`.  
       - Custom Property slot 1-4 are used by the CWA / CWC plugin. Avoid using them.      
