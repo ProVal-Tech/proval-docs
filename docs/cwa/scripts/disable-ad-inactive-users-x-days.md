@@ -12,7 +12,13 @@ unlisted: false
 
 ## Summary
 
-This script detects the inactive users over X days and disables them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in a [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
+This script detects the inactive users over X days to disable them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in the [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
+
+
+This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`. 
+Here, `*\$` meant any user that has $ its name at the end.
+
+ For e.g. ``Computername$`` ``UserName$``
 
 ## Sample Run
 
@@ -41,18 +47,6 @@ Run normally to disable inactive AD users over threshold
 
 ## Process
 
-This script detects the inactive users over X days and disables them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in a [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
-Here X = `Inactive_AD_Users_Threshold_Days` set in the system property.
-This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`.
-
-Here, `*\$` meant any user that has $ its name at the end.
-
-For e.g. ``Computername$`` ``UserName$``
-
-It also excludes users that are stored in the `Exclude AD Inactive UserList` EDFs at client level.
-
-It works as follows:
-
 1) If the property `Inactive_AD_Users_Exclude_Disable` is provided and the Client EDF `Exclude AD Inactive UserList` is set with the users, then script will exclude the users list from property `Inactive_AD_Users_Exclude_Disable` `+` `Exclude AD Inactive UserList` Client EDF list.
 
 2) If the property `Inactive_AD_Users_Exclude_Disable` is empty and the Client EDF `Exclude AD Inactive UserList` is set, then the Client EDF `Exclude AD Inactive UserList` list of users will be excluded.
@@ -63,4 +57,4 @@ It works as follows:
 
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
 - [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
-- Output
+- Script Log

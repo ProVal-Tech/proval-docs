@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This internal monitor detect the online domain controllers where the client-EDF `Enable Inactive Disabled AD Users` is checked. It also ensures to detect only those AD Infrastructure Master servers where the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) has a disabled users list.
+This internal monitor detects the AD Infrastructure Master servers where the client-EDF `Enable Inactive Disabled AD Users` is enabled and has a disabled users list in the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361). 
 
 
 ## Dependencies
@@ -28,10 +28,9 @@ This internal monitor detect the online domain controllers where the client-EDF 
 
 ## Implementation
 
-- Import the monitor `ProVal Production - Detect Inactive Disabled AD Users`.
+- Import the monitor `ProVal Production - Enable Inactive Disabled AD Users`.
 - Ensure the [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) is imported.
 - Import the  `Alert Template - △ Custom - Execute Script - Activate Disabled AD Users`
-- Enable the client EDF:
+- Enable the client EDF:  
 ![Enable Inactive Disabled AD Users](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image7.webp)  
-
 - Apply the alert template `△ Custom - Execute Script - Activate Disabled AD Users` to the monitor that calls the [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) to enable the detected accounts.
