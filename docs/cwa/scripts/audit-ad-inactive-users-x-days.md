@@ -26,8 +26,8 @@ This script detects the inactive users over X days and records the data into the
 
 | Path | Algorithm | Hash |
 | --- | --- | --- |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `43E7E6233A50EF110928128B74864B17` |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `6C50479A488EC55984441A24580AA82CBC6311CEB02A3D025FF14E188116A93B` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `0E6CD1229E61EA44999664D453BEDE18` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `545FA963BDB493D810872B0131F9D5B089D3E0C7B55A8BEC5FC4F96EF84FB4C2` |
 
 ## EDFs
 
