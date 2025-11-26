@@ -1,3 +1,30 @@
+function Get-FirstH2Summary {
+    param(
+        [string[]]$Lines
+    )
+
+    if (-not $Lines -or $Lines.Length -eq 0) {
+        return ""
+    }
+
+    for ($i = 0; $i -lt $Lines.Length; $i++) {
+        $line = $Lines[$i]
+        if ($line -match '^\s*##\s*(.+)$') {
+            $summaryLines = @()
+            for ($j = $i + 1; $j -lt $Lines.Length; $j++) {
+                $nextLine = $Lines[$j]
+                if ($nextLine -match '^\s*##\s+') {
+                    break
+                }
+                $summaryLines += $nextLine
+            }
+            return ($summaryLines -join "`n").Trim()
+        }
+    }
+
+    return ""
+}
+
 $docsPath = (Get-Item $PSScriptRoot).Parent.FullName + "\docs"
 $docs = Get-ChildItem $docsPath -Recurse -Filter "*.md"
 $recentDocs = $docs | ForEach-Object {
@@ -25,12 +52,14 @@ $output = foreach ($doc in $recentDocs) {
     $content = Get-Content $doc.FullName
     $title = $content | Select-String -Pattern "^title: (`"|')(.*)(`"|')"
     $slug = $content | Select-String -Pattern "^slug: (`"|')?(.*)(`"|')?"
+    $summary = Get-FirstH2Summary -Lines $content
     [PSCustomObject]@{
         Title      = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
         Slug       = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
         LastCommit = $doc.LastCommitTime
         Category   = $doc.Category
         GitAdded   = $doc.GitAddedTime
+        Summary    = $summary
     }
 }
 $output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8
