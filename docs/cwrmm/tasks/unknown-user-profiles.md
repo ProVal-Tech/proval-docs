@@ -4,7 +4,7 @@ slug: /93f21631-9100-46fc-864b-3af17bc91699
 title: 'Unknown User Profiles'
 title_meta: 'Unknown User Profiles'
 keywords: ['user','profile','unknown','inferred']
-description: 'This script identifies unknown user-profiles and generates a ticket containing their details. If the computer's domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.'
+description: 'This script identifies unknown user-profiles and generates a ticket containing their details. If the computer''s domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.'
 tags: ['security', 'setup']
 draft: false
 unlisted: false
