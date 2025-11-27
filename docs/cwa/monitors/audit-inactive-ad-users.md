@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This internal monitor detects the online AD Infrastructure Master Server where the client EDF `Audit Inactive AD Users` is enabled for auditing.
+This internal monitor detects the online AD Infrastructure Master Server where the client EDF `Audit Inactive AD Users` is enabled for auditing and runs the script [Audit - Inactive AD Users - X Days](/docs/cd2a8419-a43c-46ea-ba52-8b9b6c0a01fa).
 
 
 ## Dependencies

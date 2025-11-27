@@ -12,12 +12,13 @@ unlisted: false
 
 ## Purpose
 
-This table stores the data of the inactive users above the threshold. It collects information about the inactive user accounts that enabled disabled using scripts [Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively.
+This table stores the data of the inactive users above the threshold gathered by the script [Audit - Inactive AD Users - X Days](/docs/cd2a8419-a43c-46ea-ba52-8b9b6c0a01fa). It also collects information about the inactive user accounts that were enabled or disabled using the scripts [Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively.
 
 ## Dependencies
 
+- [Script - Audit - Inactive AD Users - X Days](/docs/cd2a8419-a43c-46ea-ba52-8b9b6c0a01fa)
 - [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a)
-- [Script - Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)
+- [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)
 - [Solution- Inactive AD Users Disable/Enable](/docs/d93ff68b-9515-4d4c-bfa4-ff551b3eac37)
 
 ## Table
@@ -34,5 +35,5 @@ This table stores the data of the inactive users above the threshold. It collect
 | LastLogonDate | DATETIME | User's last login date in the domain environment |
 | DistinguishedName | VARCHAR | It stores the inactive user's uniquely identifying information that is an entry within a directory service |
 | Enabled | VARCHAR | It stores the information about the inactive user's state, whether it is enabled or disabled |
-| UserStatus | VARCHAR | It contains the information of each inactive user that were disabled or enabled using scripts [Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively |
-| ScriptRanDate | DATETIME | This has the information of the last script run date when the information was collected via scripts  [Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Disable - AD Inactive Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)|
+| UserStatus | VARCHAR | It contains the information of each inactive user that were disabled or enabled.|
+| ScriptRanDate | DATETIME | This has the information of the last script run date when the information was collected via scripts .|

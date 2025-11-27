@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This internal monitor detects the AD Infrastructure Master servers where the client-EDF `Enable Inactive Disabled AD Users` is enabled and has a disabled users list in the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361). 
+This internal monitor detects the AD Infrastructure Master servers where the client-EDF `Enable Inactive Disabled AD Users` is enabled and has a disabled users list in the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361). It then runs the [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) as an auto-fix to enable the detected accounts.
 
 
 ## Dependencies

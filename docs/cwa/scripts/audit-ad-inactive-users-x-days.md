@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script detects the inactive users over X days and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361). The data is then displayed in the [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
+This script detects the inactive users over X days  (configurable via the system property `Inactive_AD_Users_Threshold_Days`; default: 90 days) and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361). The data is then displayed in the [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
 
 ## Sample Run
 
@@ -26,8 +26,8 @@ This script detects the inactive users over X days and records the data into the
 
 | Path | Algorithm | Hash |
 | --- | --- | --- |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `0E6CD1229E61EA44999664D453BEDE18` |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `545FA963BDB493D810872B0131F9D5B089D3E0C7B55A8BEC5FC4F96EF84FB4C2` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | MD5 | `0E6CD1229E61EA44999664D453BEDE18` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | SHA256 | `545FA963BDB493D810872B0131F9D5B089D3E0C7B55A8BEC5FC4F96EF84FB4C2` |
 
 ## EDFs
 
@@ -41,7 +41,7 @@ This script detects the inactive users over X days and records the data into the
 
 | Name           | Example                   | Required | Description      |
 |---------------------------------|--------| ---------- | ----------------------------------- |
-| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. Default is `90` days.   ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
 | Inactive_AD_Users_Exclude_Disable | demo,test,testuser | False | This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image24.webp)| 
 
 ## Dependencies
@@ -55,13 +55,8 @@ This script detects the inactive users over X days and records the data into the
 | `SetEnvironment` | 1 | False | It is needed to run this script initially with a value of 1 to create the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361), import the required EDFs, and the system property. |
 
 
-## Process
-
-This script audits the AD inactive users that are not logged in for over value provided in the system properties `Inactive_AD_Users_Threshold_Days` days.
-
-
 ## Output
 
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
 - [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
-- Output
+- Script Log

@@ -1,8 +1,8 @@
 ---
 id: 'b793791e-2305-4ac5-ace3-b5737368190e'
 slug: /b793791e-2305-4ac5-ace3-b5737368190e
-title: 'Disable - AD Inactive Users - X Days'
-title_meta: 'Disable - AD Inactive Users - X Days'
+title: 'Disable - Inactive AD Users - X Days'
+title_meta: 'Disable - Inactive AD Users - X Days'
 keywords: ['inactive', 'users', 'active directory', 'user management']
 description: 'This script detects the inactive users over X days and disables them, and records the data into the custom table so that it can be represented in a dataview.'
 tags: ['active-directory', 'accounts']
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script detects the inactive users over X days to disable them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in the [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
+This script detects the inactive users over X days (configurable via the system property `Inactive_AD_Users_Threshold_Days`; default: 90 days) to disable them, and records the data into the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) so that it can be represented in the [Dataview - Inactive AD Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999).
 
 
 This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`. 
@@ -42,7 +42,7 @@ Run normally to disable inactive AD users over threshold
 
 | Name           | Level                   | Required | Description      |
 |---------------------------------|--------| ---------- | ----------------------------------- |
-| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. Default is `90` days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
 | Inactive_AD_Users_Exclude_Disable | demo,test,testuser | False | This will exclude the users from being included in the list to get disabled. The user's list should be provided in a comma-separated format. e.g., John,Kevin,demo. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image24.webp)|  
 
 ## Process
@@ -56,5 +56,5 @@ Run normally to disable inactive AD users over threshold
 ## Output
 
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
-- [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
+- [Dataview - Inactive AD Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
 - Script Log

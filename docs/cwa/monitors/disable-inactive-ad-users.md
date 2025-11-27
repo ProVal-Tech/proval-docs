@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This internal monitor detect the online AD Infrastructure Server where the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) has an enabled users list over threshold and are not excluded.
+This internal monitor detects the online AD Infrastructure Server where the [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361) has an enabled users list over threshold and are not excluded. It  runs the script [Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) as an auto-fix to disable the user.
 
 
 ## Dependencies
@@ -28,8 +28,7 @@ This internal monitor detect the online AD Infrastructure Server where the [Tabl
 
 ## Implementation
 
-- Import the monitor `ProVal Production - Detect Inactive Disabled AD Users`.
+- Import the monitor `ProVal Production - Disable Inactive AD Users`.
 - Ensure the - [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) is imported.
 - Import the  `Alert Template - △ Custom - Execute Script - Disable Inactive AD Users`
-
 - Apply the alert template `△ Custom - Execute Script - Disable Inactive AD Users` to the monitor that calls the [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) to disable the detected accounts.
