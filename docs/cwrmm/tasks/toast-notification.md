@@ -84,11 +84,11 @@ This task is to create and manage toast notifications with customizable options,
 |----------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------|---------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NotificationType           | Generic                         | <ul><li>Generic</li><li>PendingRebootUptime</li><li>PendingRebootCheck</li><li>ADPasswordExpiration</li></ul>                      | True     |               | Text        | The type of notification to send. The accepted values for NotificationType are generic, PendingRebootUptime, PendingRebootCheck, and ADPasswordExpiration. It is a mandatory variable. <ul><li>**Generic:** Enables a static, generic toast notification.</li><li>**PendingRebootUptime:** Displays a toast notification reminding users to restart their system after exceeding the maximum uptime.</li><li>**PendingRebootCheck:** Displays a toast notification when a pending reboot is detected through the system registry or WMI.</li><li>**ADPasswordExpiration:** Sends a toast notification to users when their Active Directory password is nearing expiration.</li></ul> |
 | RunScriptButton | Marked |  | False | False | Flag | Set RunScriptButton to 1 to enable the 'Run Script' button in the notification. To disable it, either set the value to 0 or remove the variable. Please note that enabling this button will automatically disable the 'Snooze' button. |
-| RunScriptButtonText | Script Name |  | False | RunScript | Text | Set the string in the RunScriptButtonText variable to customize the text of the RunScript button. Delete the variable or leave it blank to fall back to the default value. The default is `RunScript`. `RunScriptButton` should be enabled or set to `1` to enable the `RunScriptButtonText` variable. |
+| RunScriptButtonText | Script Name |  | False | RunScript | Text | Set the string in the RunScriptButtonText variable to customize the text of the RunScript button. Delete the variable or leave it blank to fall back to the default value. The default is `RunScript `. `RunScriptButton` should be enabled or set to `1` to enable the `RunScriptButtonText` variable. |
 | ScriptPath | C:\Temp\ScriptName.ps1 |  | True (when RunScriptButton is Enabled) |  | Text | ScriptPath specifies the full path to a PowerShell script (.ps1) that will be executed when the 'RunScript' button is clicked. This must be a valid path ending in .ps1. Setting this variable is mandatory if RunScriptButton is enabled. If RebootScriptButton is not enabled, this variable can be omitted by leaving it blank or removing it entirely. |
 | ScriptContext | System |  <ul><li>User</li><li>System</li></ul> | False | User | Text | ScriptContext Specifies the context in which the custom script should be executed when triggered from the notification on clicking the 'RunScript' button. Valid values are 'User' (runs in the current user context) or 'System' (runs with elevated/system privileges, if supported). Default is 'User'. `RunScriptButton` should be enabled to use the `ScriptContext` variable. |
 | ScriptStyle | Hidden |  <ul><li>Hidden</li><li>Interactive</li></ul> | False | Hidden | Text | ScriptStyle defines how the script should be executed when the 'RunScript' button is clicked. Valid options are 'Interactive' (displays messages or launches installers on the user's desktop) and 'Hidden' (runs silently in the background). The default value is 'Hidden'. This variable is only applicable if RunScriptButton is enabled. |
-| RebootButton               | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Reboot` button in the notification. RebootButton is available for `Generic`, `PendingRebootUptime`, and `PendingRebootCheck` notification types.                    |
+| RebootButton               | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Reboot` button in the notification. RebootButton is available for `Generic `, `PendingRebootUptime `, and `PendingRebootCheck` notification types.                    |
 | LearnMoreButton            | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Learn More` button in the notification.                       |
 | LearnMoreUrl               | [https://www.provaltech.com](https://www.provaltech.com)                                                     |                             | False    |               | Text        | Set the URL to navigate by clicking the `Learn More` button in the notification. `LearnMoreButton` should be selected to allow the `LearnMoreUrl` parameter.                                |
 | SnoozeButton               | Unmarked                        |                             | False    | False         | Flag        | Select it to enable the `Snooze` button in the notification.<br /><br />Note: The `LearnMoreButton` and the `SnoozeButton` cannot be enabled simultaneously.                                    |
@@ -104,7 +104,7 @@ This task is to create and manage toast notifications with customizable options,
 | ADPasswordExpirationDays   | 7                               |                             | False    | 7             | NumberValue | Number of days before password expiration when reminders should start. It is available for the `ADPasswordExpiration` NotificationType parameter. Default is 7 days.   |
 | Repeat                     | Once                            | Once, Hourly, XXMinutes, XXHours, Daily, XXDays.                  | False    | Once          | Text        | Specifies how frequently the notification should repeat. Options: Once, Hourly, XXMinutes, XXHours, Daily, XXDays. |
 | NotificationAppName        | Connectwise RMM  |  | False    | Windows PowerShell          | Text        | Specifies the name of the application that will display the notification. |
-| MaxOccurrences        | 5  |  | False    |  | Number Values   | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once`. |
+| MaxOccurrences        | 5  |  | False    |  | Number Values   | Specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the `Repeat` parameter, except when `Repeat` is set to `Once `. |
 
 **NOTE: For All String Parameters (Specifically for TitleText, BodyText1, and BodyText2)  
 Keep the message under 300 characters.  
@@ -124,11 +124,11 @@ Create a new `Script Editor` style script in the system to implement this Task.
 
 ![Image4](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/image4.webp)
 
-**Name:** `Toast Notification`
+**Name:** `Toast Notification `
 
-**Description:** `A script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases.`
+**Description:** `A script to create and manage toast notifications with customizable options, including images, buttons, and scenarios for different use cases. `
 
-**Category:** `custom`
+**Category:** `custom `
 
 ![Image5](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/Image5.webp)
 
@@ -140,7 +140,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-This screen will appear. 
+This screen will appear.
 
 ![ParameterScreen](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/ParameterScreen.webp)
 
@@ -164,11 +164,11 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `RebootButton` in the `Parameter Name` field.
+- Set `RebootButton` in the `Parameter Name` field.
 
 - Select `Flag` from the `Parameter Type` dropdown menu.
 
-- Set Default Value as `False`.
+- Set Default Value as `False `.
 
 - Click the `Save` button.
 
@@ -182,13 +182,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `LearnMoreButton` in the `Parameter Name` Field.
+- Set `LearnMoreButton` in the `Parameter Name` Field.
 
 - Select `Flag` from the `Parameter Type` dropdown menu.
 
-- Set Default Value as `False`.
+- Set Default Value as `False `.
 
-- Click the `Save` button.
+- Click the `Save `button.
 
 - Click the `Confirm` button to create the parameter.
 
@@ -200,7 +200,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `LearnMoreUrl` in the `Parameter Name` field.
+- Set `LearnMoreUrl` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -216,13 +216,13 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `SnoozeButton` in the `Parameter Name` Field.
+- Set `SnoozeButton `in the `Parameter Name` Field.
 
 - Select `Flag` from the `Parameter Type` dropdown menu.
 
-- Set Default Value as `False`.
+- Set Default Value as `False `.
 
-- Click the `Save` button.
+- Click the `Save `button.
 
 - Click the `Confirm` button to create the parameter.
 
@@ -234,7 +234,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `DismissButtonText` in the `Parameter Name` field.
+- Set `DismissButtonText` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -250,7 +250,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `TitleText` in the `Parameter Name` field.
+- Set `TitleText` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -284,7 +284,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `BodyText1` in the `Parameter Name` field.
+- Set `BodyText1` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -302,7 +302,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `BodyText2` in the `Parameter Name` field.
+- Set `BodyText2` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -318,7 +318,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `LogoImage` in the `Parameter Name` field.
+- Set `LogoImage` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -334,7 +334,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `HeroImage` in the `Parameter Name` field.
+- Set `HeroImage` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -350,7 +350,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `Deadline` in the `Parameter Name` field.
+- Set `Deadline` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -366,7 +366,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `MaxUptimeDays` in the `Parameter Name` field.
+- Set `MaxUptimeDays` in the `Parameter Name` field.
 
 - Select `Number Value` from the `Parameter Type` dropdown menu.
 
@@ -382,7 +382,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `ADPasswordExpirationDays` in the `Parameter Name` field.
+- Set `ADPasswordExpirationDays` in the `Parameter Name` field.
 
 - Select `Number Value` from the `Parameter Type` dropdown menu.
 
@@ -398,11 +398,11 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `Repeat` in the `Parameter Name` field.
+- Set `Repeat` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
-- Set `Default Value` to `Once`.
+- Set `Default Value` to `Once `.
 
 - Click the `Save` button.
 
@@ -416,7 +416,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `NotificationAppName` in the `Parameter Name` field.
+- Set `NotificationAppName` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -432,7 +432,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `MaxOccurrences` in the `Parameter Name` field.
+- Set `MaxOccurrences` in the `Parameter Name` field.
 
 - Select `Number Value` from the `Parameter Type` dropdown menu.
 
@@ -448,11 +448,11 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `RunScriptButton` in the `Parameter Name` field.
+- Set `RunScriptButton` in the `Parameter Name` field.
 
 - Select `Flag` from the `Parameter Type` dropdown menu.
 
-- Set Default Value as `False`.
+- Set Default Value as `False `.
 
 - Click the `Save` button.
 
@@ -466,7 +466,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `RunScriptButtonText` in the `Parameter Name` field.
+- Set `RunScriptButtonText` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -482,7 +482,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `ScriptPath` in the `Parameter Name` field.
+- Set `ScriptPath` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -498,7 +498,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `ScriptContext` in the `Parameter Name` field.
+- Set `ScriptContext` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -514,7 +514,7 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `ScriptStyle` in the `Parameter Name` field.
+- Set `ScriptStyle` in the `Parameter Name` field.
 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 
@@ -530,11 +530,11 @@ Add another parameter by clicking the `Add Parameter` button present at the top-
 
 ![AddParameter](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/AddParameter.webp)
 
-- Set `HideDismissButton` in the `Parameter Name` field.
+- Set `HideDismissButton` in the `Parameter Name` field.
 
 - Select `Flag` from the `Parameter Type` dropdown menu.
 
-- Set Default Value as `False`.
+- Set Default Value as `False `.
 
 - Click the `Save` button.
 
@@ -566,7 +566,7 @@ The following function will pop up on the screen:
 
 ![F1Image2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F1Imag2.webp)
 
-Paste in the following PowerShell script and set the expected time of script execution to `900` seconds. Click the `Save` button.
+Paste in the following PowerShell script and set the expected time of script execution to `900 `seconds. Click the `Save` button.
 
 ```PowerShell
 if ( '@NotificationType@' -notin ('Generic', 'PendingRebootUptime', 'PendingRebootCheck', 'ADPasswordExpiration') ) {
@@ -783,17 +783,12 @@ if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityRe
     Set-Acl $WorkingDirectory $Acl
 }
 
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    return "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-
-if (!(Test-Path -Path $PS1Path)) {
-    return 'An error occurred and the script was unable to be downloaded. Exiting.'
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregionSetup
 
@@ -837,7 +832,7 @@ Select the `Script Log` function.
 
 ![F2Image2](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F2Image2.webp)
 
-In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
+In the script log message, simply type `%output%` so that the script will send the results of the PowerShell script above to the output on the Automation tab for the target device.
 
 ![F2Image3](../../../static/img/docs/e34e18bc-efe5-4d35-90cc-968ab1bf2912/F2Image3.webp)
 

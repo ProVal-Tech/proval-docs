@@ -4,7 +4,7 @@ slug: /defbdc2a-bd40-4baf-9c03-4768e026e0eb
 title: 'Cumulative Update Audit'
 title_meta: 'Cumulative Update Audit'
 keywords: ['cumulative', 'update', 'audit', 'windows', 'os', 'validation']
-description: 'This document outlines the process of executing a script to validate the full version of the Windows OS and compare it with Microsoft’s database of Cumulative Updates. It details the implementation steps, dependencies, and how to set up a task in ConnectWise RMM to automate the audit process for monitoring purposes.'
+description: 'This document outlines the process of executing a script to validate the full version of the Windows OS and compare it with Microsoft's database of Cumulative Updates. It details the implementation steps, dependencies, and how to set up a task in ConnectWise RMM to automate the audit process for monitoring purposes.'
 tags: ['update', 'windows']
 draft: false
 unlisted: false
@@ -96,17 +96,12 @@ if ( !(Test-Path $WorkingDirectory ) ) {
 }
 
 [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-    return
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
-    return
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregion
 

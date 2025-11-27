@@ -191,18 +191,12 @@ if ( !(Test-Path $WorkingDirectory) ) {
     $Acl.AddAccessRule($AccessRule)
     Set-Acl $WorkingDirectory $Acl
 }
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    Write-Error -Message "An error occurred: No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-    return
-}
-elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    Write-Error -Message 'An error occurred: The script was unable to be downloaded. Exiting.'
-    return
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregion
 ```

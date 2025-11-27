@@ -211,7 +211,7 @@ A blank function will appear.
 
 Search and select the `PowerShell Script` function.
 
-Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
+Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to  `300`  seconds. Click the `Save` button.
 
 ```PowerShell
 #region parameters
@@ -226,57 +226,57 @@ $keyUsage = '@KeyUsage@'
 $keyAlgorithm = '@KeyAlgorithm@'
 $Parameters = @{}
 if ( $path -match ':\\' ) {
-    $Parameters.Add('Path', $path)
+      $Parameters.Add('Path', $path)
 } elseif ( ($subjectName -NotMatch '\SSubjectName\S') -and ($subjectName -match '[A-z0-9_]') ) {
-    $Parameters.Add('SubjectName', $subjectName)
-    if ( $type -in ('CodeSigningCert', 'Custom', 'DocumentEncryptionCert', 'DocumentEncryptionCertLegacyCsp', 'SSLServerAuthentication') ) {
-        $Parameters.Add('Type', $type)
-    } else {
-        throw 'Supported Types for a Selft Signed Certificate are: ''CodeSigningCert'', ''Custom'', ''DocumentEncryptionCert'', ''DocumentEncryptionCertLegacyCsp'', ''SSLServerAuthentication''.'
-    }
-    if ( ($keyLength -notmatch '^[0-9]{4,}$') -or ([String]::IsNullOrWhiteSpace($keyLength)) ) {
-        $keyLength = 2048
-    } elseif ( $keyLength % 1024 -ne 0) {
-        $keyLength = 2048
-    }
-    $Parameters.Add('KeyLength', $keyLength)
-    if ( [String]::IsNullOrWhiteSpace($provider) ) {
-        $provider = 'Microsoft Enhanced RSA and AES Cryptographic Provider'
-    } elseif ( !((Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Cryptography\Defaults\Provider').PSChildName -contains $provider) ) {
-        $provider = 'Microsoft Enhanced RSA and AES Cryptographic Provider'
-    }
-    $Parameters.Add('Provider', $provider)
-    if ( $keyExportPolicy -notin ('Exportable', 'ExportableEncrypted', 'NonExportable') ) {
-        $keyExportPolicy = 'ExportableEncrypted'
-    }
-    $Parameters.Add('KeyExportPolicy', $keyExportPolicy)
-    if ( $keyUsage -notin ('CertSign', 'CRLSign', 'DataEncipherment', 'DecipherOnly', 'DigitalSignature', 'EncipherOnly', 'KeyAgreement', 'KeyEncipherment', 'None', 'NonRepudiation') ) {
-        $keyUsage = 'None'
-    }
-    $Parameters.Add('KeyUsage', $keyUsage)
-    $ecdsaList = ((certutil -displayEccCurve | Select-String -Pattern '\d+\.').Line | Select-String -Pattern '.*?\s').Matches.Value | ForEach-Object { "ECDSA_$($_.Trim())" }
-    if ( [String]::IsNullOrWhiteSpace($keyAlgorithm)  ) {
-        $KeyAlgorithm = 'RSA'
-    } elseif ( !($ecdsaList -contains $KeyAlgorithm) ) {
-        $KeyAlgorithm = 'RSA'
-    }
-    $Parameters.Add('KeyAlgorithm', $keyAlgorithm)
+      $Parameters.Add('SubjectName', $subjectName)
+      if ( $type -in ('CodeSigningCert', 'Custom', 'DocumentEncryptionCert', 'DocumentEncryptionCertLegacyCsp', 'SSLServerAuthentication') ) {
+            $Parameters.Add('Type', $type)
+      } else {
+            throw 'Supported Types for a Selft Signed Certificate are: ''CodeSigningCert'', ''Custom'', ''DocumentEncryptionCert'', ''DocumentEncryptionCertLegacyCsp'', ''SSLServerAuthentication''.'
+      }
+      if ( ($keyLength -notmatch '^[0-9]{4,}$') -or ([String]::IsNullOrWhiteSpace($keyLength)) ) {
+            $keyLength = 2048
+      } elseif ( $keyLength % 1024 -ne 0) {
+            $keyLength = 2048
+      }
+      $Parameters.Add('KeyLength', $keyLength)
+      if ( [String]::IsNullOrWhiteSpace($provider) ) {
+            $provider = 'Microsoft Enhanced RSA and AES Cryptographic Provider'
+      } elseif ( !((Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Cryptography\Defaults\Provider').PSChildName -contains $provider) ) {
+            $provider = 'Microsoft Enhanced RSA and AES Cryptographic Provider'
+      }
+      $Parameters.Add('Provider', $provider)
+      if ( $keyExportPolicy -notin ('Exportable', 'ExportableEncrypted', 'NonExportable') ) {
+            $keyExportPolicy = 'ExportableEncrypted'
+      }
+      $Parameters.Add('KeyExportPolicy', $keyExportPolicy)
+      if ( $keyUsage -notin ('CertSign', 'CRLSign', 'DataEncipherment', 'DecipherOnly', 'DigitalSignature', 'EncipherOnly', 'KeyAgreement', 'KeyEncipherment', 'None', 'NonRepudiation') ) {
+            $keyUsage = 'None'
+      }
+      $Parameters.Add('KeyUsage', $keyUsage)
+      $ecdsaList = ((certutil -displayEccCurve | Select-String -Pattern '\d+\.').Line | Select-String -Pattern '.*?\s').Matches.Value | ForEach-Object { "ECDSA_$($_.Trim())" }
+      if ( [String]::IsNullOrWhiteSpace($keyAlgorithm)   ) {
+            $KeyAlgorithm = 'RSA'
+      } elseif ( !($ecdsaList -contains $KeyAlgorithm) ) {
+            $KeyAlgorithm = 'RSA'
+      }
+      $Parameters.Add('KeyAlgorithm', $keyAlgorithm)
 } else {
-    throw 'Invalid input parameters. Either the ''SubjectName'' for the Self Signed Certificate or the ''Path'' to the Certificate must be provided.'
+      throw 'Invalid input parameters. Either the ''SubjectName'' for the Self Signed Certificate or the ''Path'' to the Certificate must be provided.'
 }
 if ( ($certStore -match '\SCertStore\S') -or ([String]::IsNullOrWhiteSpace($certStore)) ) {
-    $stores = 'My'
+      $stores = 'My'
 } else {
-    $certstore = $($certstore -split ',').trim()
-    $stores = @()
-    foreach ($store in $certstore) {
-        if ( ('My', 'ROOT', 'trust', 'CA', 'TrustedPublisher', 'Disallowed', 'AuthRoot', 'TrustedPeople', 'REQUEST', 'SmartCardRoot', 'AddressBook', 'UserdDS') -contains $store ) {
-            $stores += $store
-        }
-    }
-    if ( !($stores) ) {
-        $stores = 'My'
-    }
+      $certstore = $($certstore -split ',').trim()
+      $stores = @()
+      foreach ($store in $certstore) {
+            if ( ('My', 'ROOT', 'trust', 'CA', 'TrustedPublisher', 'Disallowed', 'AuthRoot', 'TrustedPeople', 'REQUEST', 'SmartCardRoot', 'AddressBook', 'UserdDS') -contains $store ) {
+                  $stores += $store
+            }
+      }
+      if ( !($stores) ) {
+            $stores = 'My'
+      }
 }
 $Parameters.Add('CertStore', $stores)
 #endregion
@@ -293,31 +293,28 @@ $ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregion
 #region Execution
 if ($Parameters) {
-    & $PS1Path @Parameters
+      & $PS1Path @Parameters
 } else {
-    & $PS1Path
+      & $PS1Path
 }
 #endregion
 #region log verification
 if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+      throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
 }
 if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
+      $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+      throw $ErrorContent
 }
 Get-Content -Path $LogPath
 #endregion
@@ -331,7 +328,7 @@ A blank function will appear.
 
 Search and select the `Script Log` function.  
 
-In the script log message, simply type `%Output%` and click the `Save` button
+In the script log message, simply type  `%Output%`  and click the `Save` button
 
 Click the `Save` button at the top-right corner of the screen to save the script.
 
