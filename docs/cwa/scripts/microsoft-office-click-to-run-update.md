@@ -14,13 +14,7 @@ unlisted: false
 
 Update Microsoft 365 Apps to their latest version.
 
-## Sample Run
-
-*(Insert sample run details here)*
-
 ## Output
 
 - **Script log**
 - **Location:** /ProgramData/_automation/script/Update-Office/Update-Office-log.txt
-
-*(Add any additional output details here)*

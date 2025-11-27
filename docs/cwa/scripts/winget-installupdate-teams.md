@@ -18,7 +18,7 @@ This document outlines the implementation of the [SWM - Software Installation - 
 
 ![Sample Run](../../../static/img/docs/d5ce6f1c-94ef-4e78-8e0a-61dd74f8d2cc/image_1_1.webp)
 
-#### Global Parameters
+## Global Parameters
 
 | Name        | Value               |
 |-------------|---------------------|

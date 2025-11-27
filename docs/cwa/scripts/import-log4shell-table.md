@@ -25,7 +25,7 @@ This document installs and populates a table in MySQL with a list of potential L
 - PowerShell v5
 - `mysql.exe` located in any subdirectory of `$env:ProgramFiles/MySQL`
 
-#### User Parameters
+## User Parameters
 
 | Name         | Example    | Required | Description                                                                                               |
 |--------------|------------|----------|-----------------------------------------------------------------------------------------------------------|

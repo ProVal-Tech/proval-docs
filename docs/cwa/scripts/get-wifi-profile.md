@@ -37,7 +37,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 | PS1ErrorLog        | C:/ProgramData/_Automation/Script/Get-WifiProfile-Error.txt |
 | TableName          | [pvl_wifi_profiles](/docs/f317da6e-0ea2-4c1e-bad9-4d0ad25684d3) |
 
-#### User Parameters
+## User Parameters
 
 | Name               | Example | Required              | Description                                                                 |
 |--------------------|---------|-----------------------|-----------------------------------------------------------------------------|

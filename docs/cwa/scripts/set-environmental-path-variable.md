@@ -28,13 +28,13 @@ This document will guide you through the process of adding a requested Windows p
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
+- [Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b)
 
 ## Variables
 
 Standard agnostic template variables apply.
 
-#### User Parameters
+## User Parameters
 
 | Name  | Example                   | Required | Description                                                                                     |
 |-------|---------------------------|----------|-------------------------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ Standard agnostic template variables apply.
 
 ## Process
 
-Please reference [EPM - Windows Configuration - Agnostic - Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b) for process information.
+Please reference [Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b) for process information.
 
 ## Output
 

@@ -19,8 +19,8 @@ This is an Automate implementation of the agnostic script [EPM - Data Collection
 **File Hash (MD5):** `AE0FAF82228693C611F4578564FE353C`  
 
 **File Path:** `C:/ProgramData/_Automation/script/Get-PowerPlan/Get-PowerPlanAI.ps1`  
-**File Hash (Sha256):** `C7CD78CEAC21FF393A913B266CB5C0EC12CEA8E364FA0AD346C287C272463992`  
-**File Hash (MD5):** `3AFF43D2532BA4AA1D6DB604F613C8EE`  
+**File Hash (Sha256):** `5A30EF83D46EB05CA6EA9202810237E345C6DDBD56FFB407D3581E7D50C25BD0`  
+**File Hash (MD5):** `0D737FC67F3A41B222038A284C5DAD5D`  
 
 ## Sample Run
 

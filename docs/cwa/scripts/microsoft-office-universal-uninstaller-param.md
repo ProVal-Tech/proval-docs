@@ -20,7 +20,7 @@ This script downloads the offscrub files from the repository and then attempts t
 
 ## Dependencies
 
-[SWM - Software Uninstall - Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
+[Invoke-OfficeScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed)
 
 ## Variables
 

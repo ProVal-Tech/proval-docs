@@ -15,6 +15,12 @@ unlisted: false
 This script attempts to repair and reset Windows update settings using the ProVal script: [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)  
 The goal of this script is to fix potential patching issues for Windows devices.
 
+## Files Hash
+
+**Potential File Name:** `C:\ProgramData\_automation\script\Repair-WindowsUpdate\Repair-WindowsUpdate-AI.ps1`  
+**File Hash (Sha256):** `3F873CB313BAD5077DF1D9DF112E2420749AA7311E89866850D4B16F8A089C98`  
+**File Hash (MD5):** `4787A5FD35BE02D086CB5732D84018C2`  
+
 ## Sample Run
 
 ![Sample Run](<../../../static/img/docs/aaa3f8da-cfd3-454a-808b-d4501f9c2608/image.webp>)
@@ -42,13 +48,6 @@ The goal of this script is to fix potential patching issues for Windows devices.
 ## Process
 
 Executes the Agnostic script [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc) Attempts to remove the `SoftwareDistribution.old` and `catroot2.old` directories if new `SoftwareDistribution` and `catroot2` directories are created. Reset the Windows update components. Logs successes and failures accordingly. If the script fails to repair the device, it will verify the global variable settings and notify as configured.
-
-Note: Please whitelist the below filehash in the security application for the PowerShell successful execution:
-
-`1D7C348C9B7C33C0FA677713A19A992E`
-`D056A7921569BF0E637AC8EBF03D0DC5`
-
-
 
 ## Output
 

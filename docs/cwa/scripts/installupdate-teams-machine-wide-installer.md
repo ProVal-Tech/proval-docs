@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-An implementation of the agnostic script [SWM - Software Install - Agnostic - Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf).
+An implementation of the agnostic script [Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf).
 
 ## Sample Run
 

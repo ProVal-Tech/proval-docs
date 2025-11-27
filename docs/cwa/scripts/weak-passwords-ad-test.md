@@ -14,17 +14,13 @@ unlisted: false
 
 This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc  ) to test the hashed credentials in Active Directory against a known compromised or weak list. It returns items to be placed into a custom table `plugin_proval_ad_pwd_audit`.  
 
-**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentials.ps1`
-
-**File Hash (SHA256):** `9D8F297FC48A28E71AE6AFAEE1907FD920976DB38C22A89C479332595E57547A`
-
+**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentials.ps1`  
+**File Hash (SHA256):** `9D8F297FC48A28E71AE6AFAEE1907FD920976DB38C22A89C479332595E57547A`  
 **File Hash (MD5):** `977CA8E428D75CBE74971F49EB9E13FC`
 
-**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentialsAI.ps1`
-
-**File Hash (SHA256):** `DFC8DDA4C2AF403421A38D7AB2992730BCC84EE49B8F3D7A743162F2F8CD4662`
-
-**File Hash (MD5):** `3EEFAFB942FA1C2C5A34984937B34081`
+**File Path:** `C:/ProgramData/_automation/script/Test-WeakCredentials/Test-WeakCredentialsAI.ps1`  
+**File Hash (SHA256):** `E7465B5C313FD4F13DB0F5ACAC1F970E8084D6C349F247F69007C7D1565F8D73`  
+**File Hash (MD5):** `84C227128A51A30AEECFC1A2257F14D3`
 
 ## Sample Run
 

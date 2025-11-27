@@ -117,11 +117,9 @@ If the `Microsoft365` directory does not exist in `LTShare\Transfer\configs`, cr
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Install-Microsoft365\Install-Microsoft365-AI.ps1`
-
-**File Hash (Sha256):** `5F04E51D602D9B513124590C066C0D218164ACDF1D485B2A633367154E587BE3`
-
-**File Hash (MD5):** `74457BD545A59D8CD5CB910C887640F1`
+**File Path:** `C:\ProgramData\_automation\Script\Install-Microsoft365\Install-Microsoft365-AI.ps1`  
+**File Hash (Sha256):** `656CD4EC009C6C0A22DAC97446855FEE1D5C9212E27EF32C3D2A87B480E99D4E`  
+**File Hash (MD5):** `112E0458A8B459DF19F3E8C3C417F72B`
 
 ## Sample Run
 
