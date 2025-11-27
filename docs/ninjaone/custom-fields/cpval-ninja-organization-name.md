@@ -3,7 +3,7 @@ id: 'f6050cf6-67c8-4563-888e-8f34651cf4bb'
 slug: /f6050cf6-67c8-4563-888e-8f34651cf4bb
 title: 'cpval Ninja Organization Name'
 title_meta: 'cpvalNinjaOrganizationName'
-keywords: ['Agent','Windows','security']
+keywords: ['agent','windows','security']
 description: 'organization name is used during the autoelevate deployment so that agent will go under that particular location within the portal.'
 tags:  ['security','application']
 draft: false

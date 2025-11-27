@@ -3,7 +3,7 @@ id: 'dba79f8f-132d-41cd-ae1c-6da6964bc418'
 slug: /dba79f8f-132d-41cd-ae1c-6da6964bc418
 title: 'cPVAL Blocker_Mode'
 title_meta: 'cPVAL Blocker_Mode'
-keywords: ['Agent','Windows','Deployment']
+keywords: ['agent','windows','deployment']
 description: 'Blocker Mode is used during the autoelevate deployment.'
 tags:  ['security','application']
 draft: false

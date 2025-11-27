@@ -3,7 +3,7 @@ id: '03094753-93f5-41da-8a0a-d948b1165b88'
 slug: /03094753-93f5-41da-8a0a-d948b1165b88
 title: 'cPVAL Elevation Mode'
 title_meta: 'cpvalElevationMode'
-keywords: ['Agent','Windows','security']
+keywords: ['agent','windows','security']
 description: 'Elevation Mode is used during the autoelevate deployment.'
 tags:  ['security','application']
 draft: false

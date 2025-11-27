@@ -3,7 +3,7 @@ id: '45b83c20-5a25-4321-a253-5239633ecbd4'
 slug: /45b83c20-5a25-4321-a253-5239633ecbd4
 title: 'AutoElevate Agent Deployment'
 title_meta: 'AutoElevate Agent Deployment Script'
-keywords: ['Agent','Windows','Deployment','Elevate']
+keywords: ['agent','windows','deployment','elevate']
 description: 'This script automates the deployment of the AutoElevate Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows','security','installation']
 draft: false
@@ -17,10 +17,19 @@ This script automates the deployment and update of the AutoElevate on Windows ma
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/runscript.webp)
+![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/scriptrun1.webp)
 
-Search and select `AutoElevate Agent Deployment`
-![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/search%20script.webp)
+## Parameters
+
+`Note: If the value is present under the custom filed then variables do not need to be put during the script execution. As the script get the data from either Custom filed or variables.`
+
+| Name | Description | Type | Mandatory | Default | Options | Source |
+|------|-------------|------:|:---------:|:-------:|:-------:|--------|
+| LICENSE_KEY | AutoElevate license key for agent activation | String | Yes | "" | — | cPVAL License Key custom field |
+| COMPANY_NAME | Organization name for agent identification | String | No | "UnknownCompany" | — | cPVAL Ninja Organization Name custom field |
+| LOCATION_NAME | Location name for agent organization | String | No | "Main" | — | cPVAL Ninja Location Name custom field |
+| ELEVATION_MODE | AutoElevate elevation mode setting | String | No | "audit" | "audit", "enforce" | cPVAL Elevation Mode custom field |
+| BLOCKER_MODE | AutoElevate blocker mode setting | String | No | "Disabled" | "Disabled", "Enabled" | cPVAL Blocker Mode custom field |
 
 ## Dependencies
 
@@ -32,7 +41,7 @@ Search and select `AutoElevate Agent Deployment`
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/AutoElevate-Install.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/autoelevate-install.ps1)
 
 ## Output
 

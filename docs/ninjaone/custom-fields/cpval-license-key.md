@@ -3,7 +3,7 @@ id: '370d64a2-0799-48ca-9661-d24bd75b7f67'
 slug: /370d64a2-0799-48ca-9661-d24bd75b7f67
 title: 'cPVAL License_Key'
 title_meta: 'cpvalLicensekey'
-keywords: ['Agent','Windows','security']
+keywords: ['agent','windows','security']
 description: 'Licence key is used during the autoelevate deployment.'
 tags:  ['security','application']
 draft: false

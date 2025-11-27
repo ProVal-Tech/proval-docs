@@ -3,7 +3,7 @@ id: '4bfe4881-3687-4a30-bf00-d85067d5c6d8'
 slug: /4bfe4881-3687-4a30-bf00-d85067d5c6d8
 title: 'cPVAL Ninja Location Name'
 title_meta: 'cpvalNinjaLocationName'
-keywords: ['Agent','Windows','security']
+keywords: ['agent','windows','security']
 description: 'Location is used during the autoelevate deployment so that agent will go under that particular location within the portal.'
 tags:  ['security','application']
 draft: false
