@@ -100,7 +100,7 @@ After following the above steps, we need to add client-level permissions for "Su
 1. Find the client you would like to deem the 'Default/Standard' configuration.
 
 2. Make sure to ensure there are no exceptions to the default configuration that will need to get accounted for. Once you clear all of the permissions to begin copying the permissions, you can't view the old data.
-   - It is recommended to open/export the 'User Classes - Client Level Permissions Matrix [View]' dataview to allow us to re-create the permissions if asked.
+   - It is recommended to open/export the '[User Class Permissions - Client](/docs/af60f4a6-c13c-4fc9-b488-263ce5c38485)' dataview to allow us to re-create the permissions if asked.
 
 3. Navigate to Automation --> Scripts within the CWA Control Center.
    - Open [ScreenConnect - Update Vendor Restricted Property* [RMM+]](/docs/1e1a92d4-008b-4b8e-af9d-3ff9579acb24) Script
