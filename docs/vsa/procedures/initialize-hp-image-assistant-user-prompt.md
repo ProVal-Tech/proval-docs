@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-`Initialize-HPImageAssistant.ps1` is a PowerShell automation script designed for IT administrators to efficiently manage updates and firmware on HP workstations using HP Image Assistant (HPIA). It addresses the tedious, error-prone manual process of validating, acquiring, and installing driver, firmware, BIOS, and software updates on HP business PCs by fully automating:
+This procedure deploys all updates including BIOS, firmware, and drivers to the endpoint.HP workstations using HP Image Assistant (HPIA). It addresses the tedious, error-prone manual process of validating, acquiring, and installing driver, firmware, BIOS, and software updates on HP business PCs by fully automating:
 
 - Environment and hardware validation
 - Downloading and managing HP’s update tools

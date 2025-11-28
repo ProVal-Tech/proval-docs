@@ -3,7 +3,7 @@ id: 'e1afd603-9c86-4ee7-8afd-fb9abd99f079'
 slug: /e1afd603-9c86-4ee7-8afd-fb9abd99f079
 title: 'Dell Command | Update [User Prompt]'
 title_meta: 'Dell Command | Update [User Prompt]'
-keywords: ['dell', 'update', 'deploy', 'endpoint', 'procedure' 'drivers', 'firmware', 'driver-updates', 'bios']
+keywords: ['dell', 'update', 'deploy', 'endpoint', 'procedure', 'drivers', 'firmware', 'driver-updates', 'bios']
 description: 'This procedure deploys all updates including BIOS, firmware, and drivers to the endpoint. The script prompts for variables during runtime, and we can also pass arguments to install only firmware, only Dell updates, only drivers, or any specific driver as needed.'
 tags: ['deployment', 'software', 'update', 'windows', 'dell']
 draft: false
