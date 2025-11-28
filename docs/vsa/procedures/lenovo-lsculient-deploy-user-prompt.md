@@ -14,6 +14,10 @@ unlisted: false
 
 This script uses the PowerShell module `LSUClient` to install available BIOS updates for Lenovo machines. The `-All` parameter can be used to install all available vendor updates, including BIOS, firmware, Applications and drivers.
 
+## Note
+
+`The script prompts for variables during runtime, and we can also pass arguments to install only firmware, only Dell updates, only drivers, or any specific driver as needed.`
+
 ## Dependencies
 
 PowerShell 5.0
@@ -26,7 +30,7 @@ PowerShell 5.0
 
 ## Parameters
 
-**`Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.`**
+`Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.`
 
 | Parameter         | Required  | Default              | Type      | Description                                                                 |
 |-------------------|-----------|----------------------|-----------|-----------------------------------------------------------------------------|
