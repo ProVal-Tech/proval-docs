@@ -18,7 +18,7 @@ This custom filed is used to hold the Black point Mac Auth Token data.
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL_BP_Mac_Auth_Token | cpvalbpmacauthtoken | `Device`, `organization`, `Location` | Text | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled` | Dynamic | True | Editable | Read/Write | Read/Write | This is used to hold the Black point Mac Auth Token data. |cPVAL_BP_Mac_Auth_Token | cPVAL_BP_Mac_Auth_Token |
+| cPVAL_BP_Mac_Auth_Token | cpvalbpmacauthtoken | `Device`, `organization`, `Location` | Multi-Line | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled` | Dynamic | True | Editable | Read/Write | Read/Write | This is used to hold the Black point Mac Auth Token data. |cPVAL_BP_Mac_Auth_Token | cPVAL_BP_Mac_Auth_Token |
 
 ## Custom Field Creation
 
@@ -34,7 +34,7 @@ After clicking the `Add` button, select the `Field` button that appears. Choose 
 
 **Custom Field Type:** `Text`
 
-![FieldButton](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf2.webp)
+![FieldButton](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/multiline.webp)
 
 
 ### Step 3
@@ -51,7 +51,7 @@ Set the following details in the `Overview` section and click the `Next` button.
 **Name:** `cpvalbpmacauthtoken`  
 **Custom field is required:** `<Leave it unchecked>`
 
-![Image1](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf4.webp)
+![Image1](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/edit-token.webp)
 
 ### Step 5
 
@@ -91,4 +91,4 @@ Fill in the following information in the `Details` section and click the `Submit
 ![Image2](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf8.webp)
 
 Clicking the `Next` button will take you to the `Advanced Settings` tab.  
-![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf9.webp)
+![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/details%20token.webp)

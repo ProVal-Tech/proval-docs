@@ -25,12 +25,12 @@ This custom filed is used to hold the Black point Win_CompanyEXE data.
 ### Step 1
 
 Navigate to the `Administration` menu, then proceed to `Devices` and select `Device Custom Fields`. Locate the `Add Custom Field` button on the right-hand side of the screen and click on it.  
-![Step1](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf1.webp)
+![Step1](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/exe1.webp)
 
 
 ### Step 2
 
-After clicking the `Add` button, select the `Field` button that appears. Choose the Custom filed type ans select `Continue` 
+After clicking the `Add` button, select the `Field` button that appears. Choose the Custom filed type ans select `Continue`
 
 **Custom Field Type:** `Text`
 
@@ -42,8 +42,6 @@ After clicking the `Add` button, select the `Field` button that appears. Choose 
 The following Pop-up screen will appear:  
 ![Overview](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf3.webp)
 
-### Step 4
-
 Set the following details in the `Overview` section and click the `Next` button.
 
 **Custom Filed Type:** `Text`
@@ -51,9 +49,9 @@ Set the following details in the `Overview` section and click the `Next` button.
 **Name:** `cpvalbpwincompanyexe`  
 **Custom field is required:** `<Leave it unchecked>`
 
-![Image1](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf4.webp)
+![Image1](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/editexe.webp)
 
-### Step 5
+### Step 4
 
 Clicking the `Next` button will take you to the `Inheritance` section.  
 ![Inheritance](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf5.webp)
@@ -91,4 +89,4 @@ Fill in the following information in the `Details` section and click the `Submit
 ![Image2](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf8.webp)
 
 Clicking the `Next` button will take you to the `Advanced Settings` tab.  
-![AdvancedSettings](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/cf9.webp)
+![AdvancedSettings](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/detailsexe.webp)
