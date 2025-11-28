@@ -3,7 +3,7 @@ id: '83df96df-47eb-43f4-860a-af3f686641c4'
 slug: /83df96df-47eb-43f4-860a-af3f686641c4
 title: 'cPVAL_BP_AccountUID'
 title_meta: 'cPVAL_BP_AccountUID'
-keywords: ['accuntid', 'mac', 'windows', 'security']
+keywords: ['accountid', 'mac', 'windows', 'security']
 description: 'This is used to hold the blackpoint accountuid data.'
 tags: ['security', 'custom-fields']
 draft: false
@@ -30,7 +30,7 @@ Navigate to the `Administration` menu, then proceed to `Devices` and select `Dev
 
 ### Step 2
 
-After clicking the `Add` button, select the `Field` button that appears. Choose the Custom filed type ans select `Continue` 
+After clicking the `Add` button, select the `Field` button that appears. Choose the Custom filed type ans select `Continue`
 
 **Custom Field Type:** `Text`
 

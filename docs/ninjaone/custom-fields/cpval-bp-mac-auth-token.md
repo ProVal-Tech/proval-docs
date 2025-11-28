@@ -42,8 +42,6 @@ After clicking the `Add` button, select the `Field` button that appears. Choose 
 The following Pop-up screen will appear:  
 ![Overview](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf3.webp)
 
-### Step 4
-
 Set the following details in the `Overview` section and click the `Next` button.
 
 **Custom Filed Type:** `Multi-Line`
@@ -53,7 +51,7 @@ Set the following details in the `Overview` section and click the `Next` button.
 
 ![Image1](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/edit-token.webp)
 
-### Step 5
+### Step 4
 
 Clicking the `Next` button will take you to the `Inheritance` section.  
 ![Inheritance](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf5.webp)
@@ -91,4 +89,4 @@ Fill in the following information in the `Details` section and click the `Submit
 ![Image2](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf8.webp)
 
 Clicking the `Next` button will take you to the `Advanced Settings` tab.  
-![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/details%20token.webp)
+![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/detailsexe.webp)
