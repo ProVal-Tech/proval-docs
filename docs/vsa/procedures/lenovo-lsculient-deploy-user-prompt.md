@@ -30,7 +30,7 @@ PowerShell 5.0
 
 ## Parameters
 
-`Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.`
+Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.
 
 | Parameter         | Required  | Default              | Type      | Description                                                                 |
 |-------------------|-----------|----------------------|-----------|-----------------------------------------------------------------------------|

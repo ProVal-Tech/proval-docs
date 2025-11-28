@@ -4,7 +4,7 @@ slug: /0c2dded5-2320-486d-b7a2-da2e9645767e
 title: 'Initialize-HPImageAssistant [User Prompt]'
 title_meta: 'Initialize-HPImageAssistant [User Prompt]'
 keywords: ['hp', 'hpia', 'hp-image-assistant', 'image-assistant', 'drivers', 'firmware', 'driver-updates', 'bios']
-description: 'It is a PowerShell automation script designed for IT administrators to efficiently manage updates and firmware on HP workstations using HP Image Assistant (HPIA). It addresses the tedious, error-prone manual process of validating, acquiring, and installing driver, firmware, BIOS, and software updates on HP business PCs.'
+description: 'This procedure deploys all updates including BIOS, firmware, and drivers to the endpoint.HP workstations using HP Image Assistant (HPIA). It addresses the tedious, error-prone manual process of validating, acquiring, and installing driver, firmware, BIOS, and software updates on HP business PCs by fully automating:'
 tags: ['hp', 'firmware', 'bios', 'drivers']
 draft: false
 unlisted: false
@@ -45,7 +45,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 ![SampleRun1](../../../static/img/docs/0c2dded5-2320-486d-b7a2-da2e9645767e/HP-samplerun.webp)
 
 ## Parameters
-s
+
 | Parameter         | Required  | Default              | Type      | Description                                                                 |
 |-------------------|-----------|----------------------|-----------|-----------------------------------------------------------------------------|
 | `Argument`        | True  | `/Operation:Analyze /Category:All /Selection:All /Action:Install /Silent /AutoCleanup /ReportFilePath:` `"C:\ProgramData\_Automation\App\HPImageAssistant\InstallReport"`    | String    | HPIA arguments to execute. See [HP Image Assistant User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/userguide/936944-005.pdf) for supported parameters. |
