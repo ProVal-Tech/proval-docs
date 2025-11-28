@@ -89,4 +89,4 @@ Fill in the following information in the `Details` section and click the `Submit
 ![Image2](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf8.webp)
 
 Clicking the `Next` button will take you to the `Advanced Settings` tab.  
-![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/detailsexe.webp)
+![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/details%20token.webp)
