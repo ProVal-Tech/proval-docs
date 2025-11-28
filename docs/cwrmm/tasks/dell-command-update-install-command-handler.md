@@ -43,7 +43,7 @@ Running the script to forcefully install all available driver updates.
 
 ## Dependencies
 
-[SWM - Software Management - agnostic - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+[Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ## User Parameters
 
