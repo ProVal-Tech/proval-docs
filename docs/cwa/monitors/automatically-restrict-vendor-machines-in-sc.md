@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The purpose of this monitor is to ensure that when the `Restrict Vendor Access` EDFs are checked within Automate, it automatically restricts/unrestricts the machines in the system.
+The purpose of this monitor is to ensure that when the `Restrict Vendor Access` EDFs are checked within Automate, it automatically restricts the machines in both Automate and ScreenConnect. And if the EDF is unchecked but the custom property `Vendor Restricted` in ScreenConnect is set to `Restricted`, this will unrestrict the computer both in Automate and ScreenConnect.
 
 ## Dependencies
 

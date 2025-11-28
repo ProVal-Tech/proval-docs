@@ -6,18 +6,18 @@ title_meta: 'plugin_proval_userclasses_group_client_perm'
 keywords: ['view', 'userclass', 'windows', 'dataview', 'sql']
 description: 'Serves as the base table for the User Class Permissions - Client and User Class Permissions - Group dataview.'
 tags: ['database','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Purpose
 
-Serves as the base table for the "[User Class Permissions - Client](/docs/af60f4a6-c13c-4fc9-b488-263ce5c38485)." and "[User Class Permissions - Group](/docs/93f9cbb9-656e-418b-97d7-3e8a51171940) dataview.
+Serves as the base table for the [User Class Permissions - Client](/docs/af60f4a6-c13c-4fc9-b488-263ce5c38485) and [User Class Permissions - Group](/docs/93f9cbb9-656e-418b-97d7-3e8a51171940) dataview.
 
 ## Dependencies
 - [Create View plugin_proval_userclasses_group_client_perm[DV]](/docs/898bcfcc-8dfa-421d-b188-68170661916a)
-- [User Class Permissions - Client](/docs/af60f4a6-c13c-4fc9-b488-263ce5c38485)
-- [User Class Permissions - Group](/docs/93f9cbb9-656e-418b-97d7-3e8a51171940)
+- [Dataview - User Class Permissions - Client](/docs/af60f4a6-c13c-4fc9-b488-263ce5c38485)
+- [Dataview - User Class Permissions - Group](/docs/93f9cbb9-656e-418b-97d7-3e8a51171940)
 
 ## Views
 
@@ -44,6 +44,7 @@ Serves as the base table for the "[User Class Permissions - Client](/docs/af60f4
 | Access Command Prompt | int |  `1` if user class has permission to the command prompt for computers associated with this client. This permission is required to view the Command Prompt option on the Computer Management screen. `0` if disabled. |
 | Sniff Network Traffic | int | `1` if user class has permission to sniff the network traffic for computers associated with this client and requires the Send Commands permission. If disabled, the menu options are not visible. `0` if disabled. |
 | Install Software and Tools | int | `1` if user class has permission to view the computer history (e.g., commands, processes, event logs, etc.). If disabled, the option is not available from the Computer Management screen. `0` if disabled. |
+|Access History     | `1` if user has permission to view the computer history (e.g., commands, processes, event logs, etc.). `0`, if disabled. The option is then not available from the Computer Management screen. |
 | View Commands | int | `1` if user class has permission to view commands that have been sent by other technicians from the Computer Management screen. `0` if disabled. |
 | Delete Monitors | int | `1` if user class has permission to delete computer-specific monitors associated with this client. If disabled, the menu option is not visible. `0` if disabled. |
 | Create Monitors | int | `1` if user class has permission to add computer-specific monitors associated with this client.If disabled, the menu option is not visible. `0` if disabled. |

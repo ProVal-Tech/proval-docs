@@ -153,7 +153,7 @@ After following the above steps, we need to add client-level permissions for "Ve
       The "Vendor Restricted" property will start displaying like shown below:
       ![Vendor Restricted property](../../../static//img/docs/48cd317b-4188-4881-b9c3-411cd0323508/image_16.webp)  
 
-      _Note: Use the word "Restricted" to restrict any machine in Screenconnect_
+      _Note: The word "Restricted" will restrict any machine in Screenconnect and "Restriction OFF" will turn off the restriction. This will set by the script._
 
 3. Now go to the copied Group 'All Machines'
    - Click on three dots on the right-hand side of the session group.
