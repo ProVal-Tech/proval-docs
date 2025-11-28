@@ -5,7 +5,7 @@ title: 'cPVAL_BP_Mac_Auth_Token'
 title_meta: 'cPVAL_BP_Mac_Auth_Token'
 keywords: ['token', 'mac', 'security']
 description: 'This is used to hold the black point mac auth token value.'
-tags: ['security', 'custom-fields']
+tags: ['security', 'custom-fields', 'macos']
 draft: false
 unlisted: false
 ---

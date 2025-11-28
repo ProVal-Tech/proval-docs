@@ -3,9 +3,9 @@ id: '83df96df-47eb-43f4-860a-af3f686641c4'
 slug: /83df96df-47eb-43f4-860a-af3f686641c4
 title: 'cPVAL_BP_AccountUID'
 title_meta: 'cPVAL_BP_AccountUID'
-keywords: ['accountid', 'mac', 'windows', 'security']
+keywords: ['accountid', 'windows', 'security']
 description: 'This is used to hold the blackpoint accountuid data.'
-tags: ['security', 'custom-fields']
+tags: ['security', 'custom-fields', 'windows']
 draft: false
 unlisted: false
 ---

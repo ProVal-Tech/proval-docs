@@ -5,7 +5,7 @@ title: 'Blackpoint - SNAP-Defense - Uninstall - (macOS)'
 title_meta: 'Blackpoint - SNAP-Defense - Uninstall - (macOS)'
 keywords: ['agent','mac','deployment','blackpoint']
 description: 'This script automates the uninstallation of the blackpoint agent on mac machines and validating that the agent has been successfully uninstalled.'
-tags:  ['mac','security','uninstallation']
+tags:  ['macos','security','uninstallation']
 draft: false
 unlisted: false
 ---

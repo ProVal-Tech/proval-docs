@@ -5,7 +5,7 @@ title: 'BlackPoint SNAP Installer - MacOS'
 title_meta: 'BlackPoint SNAP Installer - MacOS'
 keywords: ['agent','mac','deployment','blackpoint']
 description: 'This script automates the deployment of the blackpoint agent installation on mac machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
-tags:  ['security','installation']
+tags:  ['macos', 'security','installation']
 draft: false
 unlisted: false
 ---
