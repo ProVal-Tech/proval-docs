@@ -33,8 +33,8 @@ For e.g. ``Computername$``, ``UserName$``
 
 | Path | Algorithm | Hash |
 | --- | --- | --- |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `DA9FF8368ABCFB19E1C2DD2302E689C5` |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `9773431D7F0B51100F51947FDE08302E7B715FDC2603F8C8D7023186FF61BDF4` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `ED097C469DCFC26A806A252CD2696B79` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `921D08FCA45D5C4F4F61100F3B047F6470B5CBFDC0E301255B77866E8B04F2E8` |
 
 
 ## Dependencies

@@ -26,8 +26,8 @@ This script detects the inactive users over X days  (configurable via the system
 
 | Path | Algorithm | Hash |
 | --- | --- | --- |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | MD5 | `0E6CD1229E61EA44999664D453BEDE18` |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | SHA256 | `545FA963BDB493D810872B0131F9D5B089D3E0C7B55A8BEC5FC4F96EF84FB4C2` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | MD5 | `8F49D3B9502141C1BB43576CD9897CBC` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Audit_Inactive_ADUser.ps1` | SHA256 | `C96869CF1573DF6B798CBE1DCB42767B1D111369881224B5ABEC9FBA6AB477A5` |
 
 ## EDFs
 

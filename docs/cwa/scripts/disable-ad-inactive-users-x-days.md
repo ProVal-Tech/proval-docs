@@ -30,8 +30,8 @@ Run normally to disable inactive AD users over threshold
 
 | Path | Algorithm | Hash |
 | --- | --- | --- |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | MD5 | `8B49EC8D466054A8285CD53A93C97B5C` |
-| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | SHA256 | `008A573E1FA9CE0F1D9D325ECE26DBBEBF59B65ADA548AF85A6683702B20CD04` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | MD5 | `A800A3A4D67F6FCD40AC2A82BE22BAC6` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Inactive_ADUser.ps1` | SHA256 | `6CB55D8370C4F78826C2893CD30472EC180A19FE4DBF0886C3AD5C3190E98EC2` |
 
 ## Dependencies
 
