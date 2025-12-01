@@ -4,9 +4,9 @@ slug: /016684eb-2299-4a9b-8821-70a98cc9cb87
 title: 'Webroot Uninstall'
 title_meta: 'Webroot Uninstall'
 keywords: ['webroot', 'uninstall', 'endpoint']
-description: ''
+description: 'This script uninstall Webroot Secure Anywhere from Windows machines.'
 tags: ['security', 'software', 'uninstallation', 'windows']
-draft: true
+draft: False
 unlisted: false
 ---
 
