@@ -35,5 +35,6 @@ This table stores the data of the inactive users above the threshold gathered by
 | LastLogonDate | DATETIME | User's last login date in the domain environment |
 | DistinguishedName | VARCHAR | It stores the inactive user's uniquely identifying information that is an entry within a directory service |
 | Enabled | VARCHAR | It stores the information about the inactive user's state, whether it is enabled or disabled |
+| IsExcluded | VARCHAR | It stores the information of the inactive user's that are excluded or not in the Automate |
 | UserStatus | VARCHAR | It contains the information of each inactive user that were disabled or enabled.|
 | ScriptRanDate | DATETIME | This has the information of the last script run date when the information was collected via scripts .|
