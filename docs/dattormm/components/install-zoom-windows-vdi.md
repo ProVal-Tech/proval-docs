@@ -34,7 +34,7 @@ To execute the `component` over a specific machine, follow these steps:
 3. Search the component `Install Zoom Windows VDI` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. After selecting the compoment you'll receieve a popup.
+4. After selecting the compoment you'll receive a popup.
 5. Click on `Run` to execute it.  
 ![Image 4](../../../static/img/docs/f65a7e4b-1120-4ed3-8444-a3d1f4245a78/S1.webp)
 
