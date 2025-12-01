@@ -1,8 +1,8 @@
 ---
 id: '49cf7e8f-1462-42c9-829e-9ee3da05049b'
 slug: /49cf7e8f-1462-42c9-829e-9ee3da05049b
-title: 'Microsoft Office - ClickToRun Repair'
-title_meta: 'Microsoft Office - ClickToRun Repair'
+title: 'Microsoft Office - ClickToRun - Repair'
+title_meta: 'Microsoft Office - ClickToRun - Repair'
 keywords: ['office', 'repair', 'script', 'clicktorun', 'automation']
 description: 'This document describes a script that performs repairs on Office products, offering both quick and full repair options based on user parameters. It checks the installation status and bit version of Office before executing the appropriate repair process.'
 tags: ['installation', 'performance', 'software', 'windows']
@@ -27,7 +27,7 @@ This script runs a repair on Office products; by default, it will perform a quic
 
 `%powershellresult%` - Used to track the Office bit version, either 32 or 64.
 
-#### User Parameters
+## User Parameters
 
 | Name  | Example | Required | Description                                |
 |-------|---------|----------|--------------------------------------------|

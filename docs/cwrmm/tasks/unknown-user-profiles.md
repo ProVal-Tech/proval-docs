@@ -4,7 +4,7 @@ slug: /93f21631-9100-46fc-864b-3af17bc91699
 title: 'Unknown User Profiles'
 title_meta: 'Unknown User Profiles'
 keywords: ['user','profile','unknown','inferred']
-description: 'This script identifies unknown user-profiles and generates a ticket containing their details. If the computer’s domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.'
+description: 'This script identifies unknown user-profiles and generates a ticket containing their details. If the computer''s domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.'
 tags: ['security', 'setup']
 draft: false
 unlisted: false
@@ -13,7 +13,7 @@ unlisted: false
 
 ## Summary
 
-This Script identifies unknown user-profiles and generates a ticket containing their details. If the computer’s domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.
+This Script identifies unknown user-profiles and generates a ticket containing their details. If the computer's domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.
 
 ## Sample Run
 
@@ -27,7 +27,7 @@ Create a new `Script Editor` style script in the system to implement this task.
 ![Image4](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image4.webp)
 
 **Name:** `Unknown User Profiles`  
-**Description:** `This script identifies unknown user-profiles and generates a ticket containing their details. If the computer’s domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.`  
+**Description:** `This script identifies unknown user-profiles and generates a ticket containing their details. If the computer's domain trust relationship is broken, the script will create a ticket indicating the broken trust relationship instead of listing unknown user profiles. Note that PowerShell 5 is required to run this script, and domain controllers are excluded from its scope.`  
 **Category:** `Custom`  
 
 ![Image5](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image5.webp)
@@ -49,19 +49,19 @@ A blank function will appear.
 
 ![Image8](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image8.webp)  
 ![Image9](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image9.webp)  
-![Image10](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image10.webp) 
+![Image10](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image10.webp)
 
 ### Row 2 Function: PowerShell Script
 
 Add a new row by clicking the `Add Row` button.  
-![Image11](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image11.webp) 
+![Image11](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image11.webp)
 
 A blank function will appear.  
 ![Image7](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/image7.webp)  
 
 Search and select the `Powershell Script` function.  
 The following function will pop up on the screen:  
-![Image12](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image12.webp) 
+![Image12](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image12.webp)
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `1800` seconds. Click the `Save` button.
 
@@ -93,15 +93,12 @@ $WorkingPath = $WorkingDirectory
 #endregion
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregion
 #region Execution

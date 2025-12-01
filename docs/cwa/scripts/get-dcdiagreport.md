@@ -38,7 +38,7 @@ Document the various variables in the script. Delete any section that is not rel
 | TicketBody            | The body of a created ticket or comment.                 |
 | TickID                | The ID of any currently open ticket for this issue.      |
 
-#### Global Parameters
+## Global Parameters
 
 | Name                     | Example                           | Required | Description                                           |
 |--------------------------|-----------------------------------|----------|-------------------------------------------------------|
@@ -48,7 +48,7 @@ Document the various variables in the script. Delete any section that is not rel
 | TicketCreationCategory    | 1                                 | False    | The ticket creation category for any created ticket from this script. |
 | DoNotCommentOpenTicket   | 0                                 | False    | Toggles commenting on open tickets for subsequent runs. |
 
-#### User Parameters
+## User Parameters
 
 | Name                  | Example                                         | Required | Description                                               |
 |-----------------------|-------------------------------------------------|----------|-----------------------------------------------------------|

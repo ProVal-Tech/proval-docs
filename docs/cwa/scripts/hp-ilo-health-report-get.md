@@ -14,6 +14,15 @@ unlisted: false
 
 Retrieve an iLO health report using the provided IP address. It is required to have a password entry saved in the client-level passwords section to utilize this script. The password should be saved following the instructions outlined in the **Client Level Password Entry** section of this document.
 
+## Files Hashes
+
+**Potential File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport\Update-PowerShellGet_Automate.ps1`  
+**File Hash (Sha256):** `0079355F7F041BECEC1A9AFED9F55CDF8A003FF28AE4A8E752D1C151FD93B505`  
+**File Hash (MD5):** `82C1FE8C54E46CB36C741004F8F98FA6`  
+**Potential File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport_Automate.ps1`  
+**File Hash (Sha256):** `14C3B56A56B347D8A04854E915798AC545F6F830E7C84CB08B85DFAC23953245`  
+**File Hash (MD5):** `728CD2BF37F64099DB976022D92C8843`
+
 ## Requirements
 
 - PowerShell v5

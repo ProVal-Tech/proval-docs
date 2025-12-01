@@ -1,8 +1,8 @@
 ---
 id: '46264239-1ea0-467d-a36b-8be9fe5eece8'
 slug: /46264239-1ea0-467d-a36b-8be9fe5eece8
-title: 'Uninstall SentinelOne'
-title_meta: 'Uninstall SentinelOne'
+title: 'SentinelOne Uninstall [Param, Reboot]'
+title_meta: 'SentinelOne Uninstall [Param, Reboot]'
 keywords: ['sentinelone', 'uninstall', 'windows', 'agent', 'reboot']
 description: 'This document provides a detailed guide on uninstalling the SentinelOne agent from Windows machines, including requirements for Tamper Protection or a passphrase, and handling reboot scenarios based on the uninstallation status.'
 tags: ['reboot', 'security', 'uninstallation', 'windows']

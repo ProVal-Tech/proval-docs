@@ -20,8 +20,8 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Dependencies
 
-- [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
-- [Solution - Update/Deploy Target Application to Latest Version Winget ](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
+- [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+- [Solution - Update/Deploy Target Application to Latest Version [Winget]](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
 
 ### Global Parameters
 
@@ -39,7 +39,7 @@ This document explains how to install a Winget package on a target endpoint.
 
 ## Process
 
-Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7) for the process.
+Please refer to [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7) for the process.
 
 ## Output
 
@@ -47,6 +47,6 @@ Please refer to [SWM - Software Management - Powershell - Invoke-WingetProcessor
 
 ## FAQ
 
-For auto-deployment of application we have monitor [Application - InstallUpdate - Winget](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optionalparameter needed?
+For auto-deployment of application we have monitor [Application - Install/Update - [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optionalparameter needed?
 
 No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.

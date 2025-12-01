@@ -18,7 +18,7 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 
 ![Sample Run](../../../static/img/docs/1edcec5e-4e2d-4edf-b670-1bb81643b4e3/image_1.webp)
 
-#### User Parameters
+## User Parameters
 
 | Name   | Example | Required | Description                                                                                                                                                     |
 |--------|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ slug: /e5c01410-3731-4b1c-b166-235d637c44bb
 title: 'Chromium Browsers - Homepage - Set'
 title_meta: 'Chromium Browsers - Homepage - Set'
 keywords: ['chromium', 'homepage', 'browser', 'configuration', 'edge', 'chrome']
-description: 'This document outlines the implementation of the SWM - Software Configuration - Set-ChromiumHomepage script for enforcing a homepage in Chromium-based browsers like Google Chrome and Microsoft Edge. It details the parameters, sample runs, and dependencies needed for effective usage.'
+description: 'This document outlines the implementation of the Set-ChromiumHomepage script for enforcing a homepage in Chromium-based browsers like Google Chrome and Microsoft Edge. It details the parameters, sample runs, and dependencies needed for effective usage.'
 tags: ['chrome', 'edge', 'setup']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document presents an automated implementation of the agnostic script [SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab) to enforce a homepage for Chromium-based browsers. The supported browsers are `Google Chrome` and `Microsoft Edge`.
+This document presents an automated implementation of the agnostic script [Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab) to enforce a homepage for Chromium-based browsers. The supported browsers are `Google Chrome` and `Microsoft Edge`.
 
 The `Browser` parameter can be used to specify the browser's name.
 
@@ -29,9 +29,9 @@ The `Browser` parameter can be used to specify the browser's name.
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
+[Set-ChromiumHomepage](/docs/f07dd124-b64e-4906-8f33-5a2109ac73ab)
 
-#### User Parameters
+## User Parameters
 
 | Name                     | Example                                               | Required | Description                                                                                                      |
 |--------------------------|-------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------|

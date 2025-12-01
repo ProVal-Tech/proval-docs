@@ -30,8 +30,8 @@ The [Dell Command | Update](https://www.dell.com/support/kbdoc/en-in/000177325/d
 ## File Hash
 
 **File Path:** `C:\ProgramData\_automation\Script\Install-DCU\Install-DCU.ps1`  
-**File Hash (Sha256):** `F200FE6585BB95357268B260E4C6CB9B77D08B8BAFFD1FDC0A58122C41213410`  
-**File Hash (MD5):** `46A1C970F0FAAAB7BA2E3D865F6EB51C`
+**File Hash (Sha256):** `026D23CFC99893FC6DC34653EE625A7004D855B739B63C9D0631E6B59D2CE558`  
+**File Hash (MD5):** `89A1DD1732125D1132E85234B3AE2956`  
 
 ## Sample Run
 

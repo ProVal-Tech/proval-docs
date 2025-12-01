@@ -55,7 +55,7 @@ It is important to note that the addition of profiles can also be managed throug
 | PS1Log              | C:/ProgramData/_Automation/Script/Add-WifiProfile/Add-WifiProfile-log.txt, C:/ProgramData/_Automation/Script/Remove-WifiProfile/Remove-WifiProfile-log.txt |
 | PS1ErrorLog         | C:/ProgramData/_Automation/Script/Add-WifiProfile/Add-WifiProfile-error.txt, C:/ProgramData/_Automation/Script/Remove-WifiProfile/Remove-WifiProfile-error.txt |
 
-### User Parameters
+## User Parameters
 
 | Name                | Example                            | Required | Description                                                                                                                                                                                                                                               |
 |---------------------|------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -63,7 +63,7 @@ It is important to note that the addition of profiles can also be managed throug
 | Profiles_To_Add      | 'SSID To Add', 'Another'           | False    | SSID(s) of the Wi-Fi Profile(s) to add to the end machine. Check the **Sample Run** section of the article for further details. If left blank, the script will fallback to the location-level EDF `Wifi Profiles To Add` and then to the client-level EDF `Wifi Profiles To Add`. |
 | Primary_Computerid   | 294                                | True (if `Profiles_To_Add` parameter is used) | ID of the computer to fetch the information of the profiles to add.                                                                                                                                                                                |
 
-### System Properties
+## System Properties
 
 | Name                | Example                                          | Required | Description                                                                                                                                                                                                                                               |
 |---------------------|--------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

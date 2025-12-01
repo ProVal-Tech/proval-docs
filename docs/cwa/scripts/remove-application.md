@@ -28,7 +28,7 @@ The script requires the application name(s) to precisely match those listed unde
 
 If an application's name isn't found in the Software tile, you can utilize the following command to compile a list of installed applications and bloatware programs on the computer.
 
-```
+```Shell
 C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "$Applications = @(); $AppxPP = (AppxProvisionedPackage -online).DisplayName | Select-Object -unique; $Appxp = (Get-AppxPackage).Name | Select-Object -Unique; $Packages = (Get-ItemProperty -path 'HKLM:/Software/Microsoft/Windows/CurrentVersion/Uninstall/*', 'HKLM:/Software/Wow6432Node/Microsoft/Windows/CurrentVersion/Uninstall/*').DisplayName | Select-Object -unique; $Applications = $AppxP + $AppxPP + $Packages | Select-Object -unique; $Applications"
 ```
 
@@ -60,7 +60,7 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 ## Dependencies
 
-[SWM - Software Uninstall - Agnostic - Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
+[Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
 
 ## Variables
 

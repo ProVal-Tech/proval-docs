@@ -11,9 +11,17 @@ unlisted: false
 ---
 
 ## Summary
+
 This script automates health checks, self-healing, and conditional service restarts for Active Directory Domain Controllers. It helps administrators quickly identify and remediate AD issues, ensuring domain controller reliability and service continuity.
 
+## File Hash
+
+**Potential File Name:** `C:\ProgramData\_Automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepairAI.ps1`  
+**File Hash (Sha256):** `FDBD87140CD4CC2E90A970E51C47D68E32810DCB4989C426575978A7D7B0D216`  
+**File Hash (MD5):** `79674185AFA3BEFB2232FD04F2E12076`  
+
 ## Dependencies
+
 [Test-ADHealthAndRepair](/docs/f2c09601-b391-449b-9380-c022f1829eda)
 
 ## Sample Run
@@ -22,7 +30,6 @@ This script automates health checks, self-healing, and conditional service resta
 ![SampleRun1](../../../static/img/docs/c788ed5e-8fbb-49c7-9d9f-d25115f1ed30/image3.webp)
 ![SampleRun1](../../../static/img/docs/c788ed5e-8fbb-49c7-9d9f-d25115f1ed30/image1.webp)
 ![SampleRun1](../../../static/img/docs/c788ed5e-8fbb-49c7-9d9f-d25115f1ed30/image2.webp)
-
 
 ### User Parameters
 
@@ -38,6 +45,7 @@ This script automates health checks, self-healing, and conditional service resta
 This script audits Active Directory health, remediates detected issues, and restarts AD-related services as needed. It is designed to run on Domain Controllers and supports multiple operational modes via parameters. Service restart actions are only performed if issues are detected and the SelfHeal option is enabled.
 
 .FUNCTIONALITY
+
 - Checks if the script is running on a Domain Controller.
 - Initializes required PowerShell modules and environment settings.
 - Tracks and stores the last script run time for event log queries.

@@ -22,7 +22,7 @@ This is a version of [SWM - Software Uninstall - Script - Remove Application](/d
 
 [SWM - Software Uninstall - Agnostic - Remove-Application](/docs/8230693f-cf73-479d-8279-d2ff54c4296e)
 
-#### Global Parameters
+## Global Parameters
 
 | Name                | Example                                 | Mandatory | Description                                                                                                                                                   |
 |---------------------|-----------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|

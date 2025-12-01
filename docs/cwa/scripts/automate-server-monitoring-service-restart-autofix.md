@@ -31,7 +31,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 
 | Name         | Description                                           |
 |--------------|-------------------------------------------------------|
-| STATUS       | Status returned from Monitor Set (SUCCESS|FAILED)     |
+| STATUS       | Status returned from Monitor Set (SUCCESS\|FAILED)     |
 | FieldName    | Service name returned from Monitor set                 |
 | Subject      | Ticket/Email Subject                                   |
 | Body         | Ticket/Email Body for Failure                          |
@@ -39,7 +39,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 | TicketComment| Ticket Comment for Success                             |
 | EmailBody    | Email Body for Success                                 |
 
-#### Global Parameters
+## Global Parameters
 
 **To use the script as an Autofix for remote service monitors, global variables must be appropriately addressed.**
 
@@ -48,7 +48,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 | TicketCreationCategory   | 0       | False    | ID of the ticket category to create the ticket. 0 will disable ticketing. Default is 134 (ID of ticket category `service`). |
 | SuccessEmail            | 1       | True if EmailAddress is defined | Setting it to 0 will restrict the script from emailing out the Success status of the monitor set. Default is 1                |
 
-#### System Properties
+## System Properties
 
 | Name                          | Default                                   | Required | Description                                                                                       |
 |-------------------------------|-------------------------------------------|----------|---------------------------------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 
 ![Image](../../../static/img/docs/870dc2c7-95ea-494e-aefd-05609925545b/image_2.webp)
 
-#### Script State
+## Script State
 
 | Name                          | Example | Required | Description                                                                                       |
 |-------------------------------|---------|----------|---------------------------------------------------------------------------------------------------|

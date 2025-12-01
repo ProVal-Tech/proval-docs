@@ -44,7 +44,7 @@ To remove individual AppxPackages installed on the machine like `Microsoft.Micro
 
 #### Step 1
 
-Navigate to `Automation` ➞ `Tasks`  
+Navigate to `Automation`  ➞  `Tasks`  
 ![step1](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/step1.webp)
 
 #### Step 2
@@ -236,17 +236,12 @@ $ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
 
 #region Setup - Folder Structure
 New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
-if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
-    Write-Error -Message "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
-    return
-} elseif ($response.StatusCode -eq 200) {
-    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
-    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
-}
-if (!(Test-Path -Path $PS1Path)) {
-    Write-Error -Message 'An error occurred and the script was unable to be downloaded. Exiting.'
-    return
+try {
+    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $PS1Path )) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+    }
 }
 #endregion
 

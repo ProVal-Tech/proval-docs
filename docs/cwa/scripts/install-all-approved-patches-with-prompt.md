@@ -34,7 +34,7 @@ While the script can be executed from Automate, it is recommended to utilize it 
 
 ## Prompts
 
-#### Pre-Patch Installation Prompt
+### Pre-Patch Installation Prompt
 
 **CASE 1:** If the approved production patches are available on the computer to install  
 ![Case 1](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_2.webp)
@@ -66,7 +66,7 @@ This prompt will be sent solely if an automatic restart is scheduled after 48 ho
 **CASE 2:** If Automate fails to install any patch(es).  
 ![Post Reboot Case 2](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_9.webp)
 
-#### Windows Reboot Schedule Notification
+### Windows Reboot Schedule Notification
 
 A pop-up message will appear at the bottom right corner of the screen to remind the end user of the scheduled reboot.  
 ![Windows Reboot Schedule Notification](../../../static/img/docs/f2a3feba-fc4b-4693-ba31-6b50f66bac15/image_10.webp)
