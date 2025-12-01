@@ -18,7 +18,7 @@ BitDefender Endpoint Security script downloads and runs the [Agnostic-Remove-Bit
 
 ## Implementation  
 
-1. Download the component [Uninstall Bitdefender Endpoint Security](../../../static/attachments/Bitdefender%20Endpoint%20Security%20Uninstall.cpt) from the attachments.
+1. Download the component [Uninstall Bitdefender Endpoint Security](../../../static/attachments/Uninstall%20Bitdefender%20Endpoint%20Security.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -54,4 +54,4 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-- [Uninstall Bitdefender Endpoint Security](../../../static/attachments/Bitdefender%20Endpoint%20Security%20Uninstall.cpt)
+- [Uninstall Bitdefender Endpoint Security](../../../static/attachments/Uninstall%20Bitdefender%20Endpoint%20Security.cpt)
