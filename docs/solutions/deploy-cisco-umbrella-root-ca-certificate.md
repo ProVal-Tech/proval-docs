@@ -4,7 +4,7 @@ slug: /e1e5a6ab-f810-4e94-8b67-d32b626ab049
 title: 'Cisco Umbrella Root CA Certificate Installation'
 title_meta: 'Cisco Umbrella Root CA Certificate Installation'
 keywords: ['umbrella', 'cisco-secure-client', 'certificate', 'root-ra-certificate', 'umbrella-certificate']
-description: ''
+description: 'This solution provides a mechanism to automatically deploy the Cisco Umbrella Root CA certificate to both Windows and Macintosh devices.'
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false

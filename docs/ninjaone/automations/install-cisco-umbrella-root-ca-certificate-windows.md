@@ -14,8 +14,8 @@ unlisted: false
 
 Downloads and installs the Cisco Umbrella Root CA certificate to the Local Machine Trusted Root store.
 
-**Cert Download Url:** `https://d36u8deuxga9bo.cloudfront.net/certificates/Cisco_Umbrella_Root_CA.cer`
-**Reference:** `https://docs.sse.cisco.com/sse-dns-guide/docs/install-the-cisco-umbrella-root-certificate`
+- **Cert Download Url:** `https://d36u8deuxga9bo.cloudfront.net/certificates/Cisco_Umbrella_Root_CA.cer`  
+- **Reference:** `https://docs.sse.cisco.com/sse-dns-guide/docs/install-the-cisco-umbrella-root-certificate`
 
 ## Sample Run
 
