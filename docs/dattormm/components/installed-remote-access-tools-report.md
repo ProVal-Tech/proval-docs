@@ -27,6 +27,7 @@ Supported tool display names (use exact spelling when excluding):
 - `LiteManager`
 - `LogMeIn`
 - `ManageEngine`
+- `Ninja RMM`
 - `NoMachine`
 - `Parsec`
 - `Remote Utilities`
