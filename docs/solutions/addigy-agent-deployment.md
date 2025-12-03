@@ -90,23 +90,23 @@ Configure the organizational-level custom fields to establish deployment paramet
 
 ## FAQ
 
-**Q: How does the solution prevent reinstalling the agent on devices that already have it?**
+**Q: How does the solution prevent reinstalling the agent on devices that already have it?**  
 **A:** The [Addigy Agent Deployment](/docs/1cfd0e8b-5a27-4bc0-af0a-fea2cc0ea62c) compound condition checks for the presence of `MacManage` or `MacManageHelper` applications. The installation script is only triggered if these applications are missing.
 
-**Q: Can I exclude specific devices or locations from the deployment?**
+**Q: Can I exclude specific devices or locations from the deployment?**  
 **A:** Yes. You can set the [cPVAL Addigy Agent Deployment](/docs/bbe758be-e2fb-4a0b-aa1d-1b1ae0119058) custom field to **Disable** at the Location or Device level to override the Organization-level setting.
 
-**Q: Where should I enter the Addigy Organization and Policy IDs?**
+**Q: Where should I enter the Addigy Organization and Policy IDs?**  
 **A:** These must be entered in the [cPVAL Addigy Org ID](/docs/b3a99690-e1d2-40ad-8ee8-9c417330e2b9) and [cPVAL Addigy Policy ID](/docs/7061a031-f078-4ee0-b87c-83595adf0a64) custom fields at the **Organization** level.
 
-**Q: What happens if the Org ID or Policy ID is missing?**
+**Q: What happens if the Org ID or Policy ID is missing?**  
 **A:** The [Install Addigy Agent [Macintosh]](/docs/fd5e79e9-e9bf-4d8a-ba85-d61bf6e723fe) script requires these values to function correctly. If they are not set in the custom fields, the installation may fail or the device might not report to the correct tenant.
 
-**Q: How often is the deployment condition evaluated?**
+**Q: How often is the deployment condition evaluated?**  
 **A:** The [Addigy Agent Deployment](/docs/1cfd0e8b-5a27-4bc0-af0a-fea2cc0ea62c) compound condition runs once per day automatically to monitor the device state. If a device matches the criteria (Deployment Enabled AND Agent Missing), the script will queue for execution.
 
-**Q: Is it mandatory to configure the custom fields to run the installation script?**
+**Q: Is it mandatory to configure the custom fields to run the installation script?**  
 **A:** Not for manual execution. If you run the [Install Addigy Agent [Macintosh]](/docs/fd5e79e9-e9bf-4d8a-ba85-d61bf6e723fe) script manually, you can input the **Org ID** and **Policy ID** directly as runtime parameters. However, for the automated deployment via the [Addigy Agent Deployment](/docs/1cfd0e8b-5a27-4bc0-af0a-fea2cc0ea62c) compound condition, the custom fields are required because the automation cannot prompt for runtime inputs.
 
-**Q: What takes precedence if both a Custom Field and a Runtime Parameter are provided?**
+**Q: What takes precedence if both a Custom Field and a Runtime Parameter are provided?**  
 **A:** The Runtime Parameter takes precedence. If a value exists in the [cPVAL Addigy Org ID](/docs/b3a99690-e1d2-40ad-8ee8-9c417330e2b9) custom field, but you manually run the script and provide a different value in the **Org ID** parameter, the script will use the manually entered parameter. This allows for one-off installations on devices that may need to belong to a different organization or policy than the default.
