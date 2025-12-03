@@ -16,28 +16,29 @@ This script automates the deployment and update of the AutoElevate on Windows ma
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+`Play Button` > `Run Automation` > `Script` 
+
 ![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/scriptrun1.webp)
 
 ## Parameters
 
-`Note: If the value is present under the custom filed then variables do not need to be put during the script execution. As the script get the data from either Custom filed or variables.`
+**Note:** `If the value is present under the custom field then variables do not need to be put during the script execution. As the script get the data from either Custom field or variables.`
 
 | Name | Description | Type | Mandatory | Default | Options | Source |
 |------|-------------|------:|:---------:|:-------:|:-------:|--------|
-| LICENSE_KEY | AutoElevate license key for agent activation | String | Yes | "" | — | cPVAL License Key custom field |
-| COMPANY_NAME | Organization name for agent identification | String | No | "UnknownCompany" | — | cPVAL Ninja Organization Name custom field |
-| LOCATION_NAME | Location name for agent organization | String | No | "Main" | — | cPVAL Ninja Location Name custom field |
-| ELEVATION_MODE | AutoElevate elevation mode setting | String | No | "audit" | "audit", "enforce" | cPVAL Elevation Mode custom field |
-| BLOCKER_MODE | AutoElevate blocker mode setting | String | No | "Disabled" | "Disabled", "Enabled" | cPVAL Blocker Mode custom field |
+| LICENSE_KEY | AutoElevate license key for agent activation | String | Yes | — | — | `cPVAL License Key` Custom Field |
+| COMPANY_NAME | Organization name for agent identification | String | No | "UnknownCompany" | — | `cPVAL Ninja Organization Name` Custom Field |
+| LOCATION_NAME | Location name for agent organization | String | No | "Main" | — | `cPVAL Ninja Location` Name Custom Field |
+| ELEVATION_MODE | AutoElevate elevation mode setting | String | No | "audit" | "audit", "enforce" | `cPVAL Elevation Mode` Custom Field |
+| BLOCKER_MODE | AutoElevate blocker mode setting | String | No | "Disabled" | "Disabled", "Enabled" | `cPVAL Blocker_Mode` Custom Field |
 
 ## Dependencies
 
 - [cPVAL Blocker_Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
 - [cPVAL Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
 - [cPVAL License_Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
-- [cpval Ninja Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
-- [cpval Ninja Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)
+- [cPVAL Ninja Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
+- [cPVAL Ninja Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)
 
 ## Automation Setup/Import
 

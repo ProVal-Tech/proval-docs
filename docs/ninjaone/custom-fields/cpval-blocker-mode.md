@@ -18,7 +18,7 @@ Blocker Mode is used during the autoelevate deployment.
 
 | Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
 | ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Blocker_Mode | cpvalBlockermode | Organization device Location     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | Used to hold the blocker mode data that is used within the script. | Blocker Mode       | Blocker Mode         | Autoelevate     |
+| cPVAL Blocker_Mode | cpvalBlockermode | Organization, Location, Device     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | Used to hold the blocker mode data that is used within the script. | Blocker Mode       | Blocker Mode         | AutoElevate     |
 
 ## Dependencies
 
