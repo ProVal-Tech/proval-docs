@@ -16,7 +16,7 @@ This script automates the deployment and update of the AutoElevate on windows ma
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script` 
+`Play Button` > `Run Automation` > `Script`
 
 ![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/parameter.webp)
 
@@ -36,11 +36,11 @@ This script automates the deployment and update of the AutoElevate on windows ma
 
 The script is dependent on below custom fileds during the deployment.
 
-- [cPVAL Blocker_Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
-- [cPVAL Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
-- [cPVAL License_Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
-- [cPVAL Ninja Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
-- [cPVAL Ninja Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)
+- [Custom Field - Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
+- [Custom Field - Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
+- [Custom Field - Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)
+- [Custom Field - Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
+- [Custom Field - License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
 
 ## Automation Setup/Import
 

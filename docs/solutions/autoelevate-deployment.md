@@ -18,15 +18,15 @@ This solution is designed to configure the automatic deployment of the `AutoElev
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Automation - AutoElevate Deployment](/docs/9dc318fa-ce35-47ae-9442-f867208cde93)    | Script |The script installs the AutoElevate Deployment. |
+| [Automation - AutoElevate Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)    | Script |The script installs the AutoElevate Deployment. |
 | [Custom Field - cPVAL AutoElevate Deployment](/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b)    | Custom Field | This field controls whether the AutoElevate deployment process should run on the selected devices. When set to Enable, the deployment script will execute and install configure the AutoElevate agent using the defined parameters |
 | [Custom Field - Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)   | Custom Field | The filed holds the blocker mode parameter. |
 | [Custom Field - Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)   | Custom Field |The filed holds the Elevation mode parameter. |
 | [Custom Field - Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)  | Custom Field |The filed holds the Organization name or get the vaule for it within the ninjaone. |
 | [Custom Field - Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)   | Custom Field |he filed holds the location name or get the vaule for it within the ninjaone.|
 | [Custom Field - License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)   | Custom Field |he filed holds the license key so that agent will get installed on the particular location. |
-| [Compound Condition - AutoElevate deployment Windows Workstation ](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)  | Compound Solution | The Compound condition is used to deploy the AutoElevate on windows workstations. |
-| [Compound Condition - AutoElevate deployment Windows servers ](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c) | Compound Solution |The Compound condition is used to deploy the AutoElevate on windows srvers. |
+| [Compound Condition - AutoElevate deployment Windows Workstation](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)  | Compound Solution | The Compound condition is used to deploy the AutoElevate on windows workstations. |
+| [Compound Condition - AutoElevate deployment Windows servers](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f) | Compound Solution |The Compound condition is used to deploy the AutoElevate on windows srvers. |
 
 ## Implementation
 
@@ -44,12 +44,11 @@ Create the following custom fields, set the vaule under those custom field per o
 
 Create the following automations:
 
-- [Automation - AutoElevate Deployment](/docs/9dc318fa-ce35-47ae-9442-f867208cde93)
+- [Automation - AutoElevate Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
 
 ### Step 3
 
-Create the [AutoElevate deployment Windows Workstation](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)
- compound condition for default `Windows Workstation policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.
+Create the [AutoElevate deployment Windows Workstation](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c) compound condition for default `Windows Workstation policy [Default]` agent policy and schedule the  AutoElevate Deployment to install the agent.
 
 ### Step 4
 

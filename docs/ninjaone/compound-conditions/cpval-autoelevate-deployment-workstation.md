@@ -24,7 +24,7 @@ This field controls whether the AutoElevate deployment process should run on the
 
 ## Dependencies
 
-- [Automation - AutoElevate Deployment](/docs/9dc318fa-ce35-47ae-9442-f867208cde93)
+- [Automation - AutoElevate Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
 - [Custom Field - cPVAL AutoElevate Deployment](/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b)
 - [Custom Field - Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
 - [Custom Field - Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
@@ -32,8 +32,7 @@ This field controls whether the AutoElevate deployment process should run on the
 - [Custom Field - Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
 - [Custom Field - License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
 - [Compound Condition - AutoElevate deployment Windows Server](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f)
-- [Solution - Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28)
-- [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
+- [Solution - AutoElevate deployment](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Compound Condition Creation
 

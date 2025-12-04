@@ -23,6 +23,8 @@ This field controls whether the AutoElevate deployment process should run on the
 ## Dependencies
 
 - [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
+- [Compound Condition - AutoElevate deployment Windows Workstation ](/docs/318ed257-0ffe-458b-a0c8-f79ed5eba00c)
+- [Compound Condition - AutoElevate deployment Windows server ](/docs/9f1ddbe4-b1bb-43d2-ac71-072de6b60d3f)
 
 ## Custom Field Creation
 
