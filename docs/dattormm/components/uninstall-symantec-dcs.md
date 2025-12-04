@@ -11,12 +11,11 @@ unlisted: false
 ---
 
 ## Overview
-Symantec Data Center Security (DCS) Agent Removal Script.
-This script stops and deletes Symantec DCS-related services, uninstalls the agent via registry uninstall entries, removes associated folders, and cleans up registry keys.
+This is Symantec Data Center Security (DCS) Agent Removal Script. This script stops and deletes Symantec DCS-related services, uninstalls the agent via registry uninstall entries, removes associated folders, and cleans up registry keys.
 
 ## Implementation  
 
-1. Download the component [Symantec DCS Uninstall](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt) from the attachments.
+1. Download the component [Uninstall Symantec DCS Antivirus](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -31,7 +30,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `<Name of the Component>` and click on `Select`
+3. Search the component [Uninstall Symantec DCS Antivirus](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt) and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
 4. ![Sample Run](../../../static/img/docs/9df733ac-5c74-4d25-8504-c8294fd39fec/image.webp)
@@ -44,4 +43,4 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Symantec DCS Uninstall](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt)
+[Uninstall Symantec DCS Antivirus](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt)
