@@ -11,11 +11,11 @@ unlisted: false
 ---
 
 ## Overview
-This script uninstall Webroot Secure Anywhere from Windows machines.
+This script uninstalls Webroot Secure Anywhere from Windows machines.
 
 ## Implementation  
 
-1. Download the component [Webroot Uninstall](../../../static/attachments/Webroot%20Uninstall.cpt) from the attachments.
+1. Download the component [Webroot Uninstall](../../../static/attachments/webroot-uninstall.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -44,4 +44,4 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments
-[Webroot Uninstall](../../../static/attachments/Webroot%20Uninstall.cpt) 
+[Webroot Uninstall](../../../static/attachments/webroot-uninstall.cpt) 
