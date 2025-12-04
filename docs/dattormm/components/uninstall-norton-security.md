@@ -11,11 +11,11 @@ unlisted: false
 ---
 
 ## Overview
-This script downloads and runs the Norton 360 Remover tool (https://www.norton.com/nortonremover) to uninstall the Norton Security application.
+This script downloads and runs the [Norton 360 Remover tool](https://www.norton.com/nortonremover) to uninstall the Norton Security application.
 
 ## Implementation  
 
-1. Download the component [attached Norton Uninstaller component](../../../static/attachments/Uninstall-Norton-Security.cpt) from the attachments.
+1. Download the [Uninstall Norton Security](../../../static/attachments/uninstall-norton-security.cpt) component from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -30,10 +30,12 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `<Name of the Component>` and click on `Select`
- ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
+3. Search the [Uninstall Norton Security](../../../static/attachments/uninstall-norton-security.cpt) component and click on `Select`.  
 
-4. ![Sample Run](../../../static/img/docs/63b4d59e-484c-4fbc-8412-5deb33b5b25c/image.webp)
+    ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
+
+4. Click on `Run`  
+![Sample Run](../../../static/img/docs/63b4d59e-484c-4fbc-8412-5deb33b5b25c/image.webp)
 
 
 ## Output
@@ -43,4 +45,4 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[attached Norton Uninstaller component](../../../static/attachments/Uninstall-Norton-Security.cpt)
+[Uninstall Norton Security](../../../static/attachments/uninstall-norton-security.cpt)
