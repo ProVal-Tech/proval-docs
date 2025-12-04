@@ -1,0 +1,33 @@
+---
+id: 'fddfde6b-c93e-4471-aafe-2d6bc65c7e4b'
+slug: /fddfde6b-c93e-4471-aafe-2d6bc65c7e4b
+title: 'cPVAL AutoElevate Deployment'
+title_meta: 'cPVAL AutoElevate Deployment'
+keywords: ['agent','windows','deployment']
+description: 'This field controls whether the AutoElevate deployment process should run on the selected devices. When set to Enable, the deployment script will execute and install configure the AutoElevate agent using the defined parameters (License Key, Organization Name, Location Name, Elevation Mode, and Blocker Mode). When set to Disable, the deployment will be skipped. Accepted values: Enable or Disable.' 
+tags: ['security','application','custom-fields']
+draft: false
+unlisted: false
+---
+
+## Summary
+
+This field controls whether the AutoElevate deployment process should run on the selected devices. When set to Enable, the deployment script will execute and install configure the AutoElevate agent using the defined parameters (`License Key, Organization Name, Location Name, Elevation Mode, and Blocker Mode`). When set to Disable, the deployment will be skipped. Accepted values: `Enable` or `Disable`.
+
+## Details
+
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| cPVAL AutoElevate Deployment | cpvalAutoelevateDeployment | `Organization`, `Location`, `Device`     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | This Custom Field is used during the AutoElvate deployment during compound condition creation.       | cPVAL AutoElevate Deployment         | cPVAL AutoElevate Deployment    | AutoElevate     |
+
+## Dependencies
+
+- [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
+
+## Custom Field Creation
+
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-autoelevate-deployment.toml)
+
+## Sample Screenshot
+
+![Lisence Key](../../../static/img/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b/AE%20deploy.webp)
