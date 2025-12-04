@@ -68,6 +68,14 @@ Manages sleep settings across Windows devices with granular control through cust
 - **Automation:** [Get Sleep Status](/docs/49127c19-f3b2-4006-9d48-ccd01290eafa), [Disable Sleep](/docs/21947d80-a91f-4b2a-9109-addee4e16b91), [Enable Sleep](/docs/aa641c2c-bac8-47a5-aee9-0891c5f5330c)
 - **Compound Conditions:** [Disable Sleep Windows Workstation](/docs/01e513a0-0764-4d2d-ae60-871e42010526), [Disable Sleep Windows Server](/docs/047f1fc9-f296-42c0-bad6-3498b9160609)
 
+### [Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28)
+
+**Key Components:**
+
+- **Custom Fields:** [cPVAL FastBoot Action](/docs/b9461be5-6fe8-4ce9-900f-4aa929fe2d78), [cPVAL FastBoot Config Deployment](/docs/9850d788-d044-4faa-b709-953b6e01a012)
+- **Automations:** [Get Fast Boot and Hibernation Status](/docs/9dc318fa-ce35-47ae-9442-f867208cde93), [Enable or Disable Fast Boot [PVAL]](/docs/9aa78588-bc01-4aab-95bd-29b5640975a2)
+- **Compound Conditions:** [FastBoot Config Windows Workstations](/docs/3ac6bda9-175b-4585-b252-b7456a440cdd), [FastBoot Config Windows Server](/docs/95088908-fbea-4007-8914-f5b49d797dfe)
+
 ## Implementation
 
 Import and configure the required solutions based on organizational needs:
@@ -77,6 +85,7 @@ Import and configure the required solutions based on organizational needs:
 - [Turn off Windows Firewall](/docs/202f2907-e8e5-4d65-9823-e70749cef708) - For centralized firewall management
 - [Disable IPv6](/docs/1e9dee40-965f-4b6c-a9cf-4cb45162d5ac) - For IPv6 protocol management
 - [Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531) - For power management control
+- [Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28) - For centralized Fast Startup Management
 
 Each solution can be implemented independently or as part of a comprehensive device standardization strategy.
 
