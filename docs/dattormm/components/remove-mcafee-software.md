@@ -1,12 +1,12 @@
 ---
 id: '30cfa851-01a9-4446-b06e-4b8103a34be1'
 slug: /30cfa851-01a9-4446-b06e-4b8103a34be1
-title: 'Remove Mcafee Software'
-title_meta: 'Remove Mcafee Software'
+title: 'Remove McAfee Software'
+title_meta: 'Remove McAfee Software'
 keywords: ['mcafee', 'uninstall', 'script', 'endpoint', 'software']
 description: 'This document provides a detailed guide on removing all McAfee products from an endpoint using Datto implementation of the agnostic script Remove-McAfeeSoftware.'
 tags: ['application', 'software', 'uninstallation', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -18,7 +18,7 @@ This document outlines the process to remove all McAfee products from an endpoin
 
 ## Implementation  
 
-1. Download the component [Remove Mcafee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt) from the attachments.
+1. Download the component [Remove McAfee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
@@ -33,7 +33,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Remove Mcafee Software` and click on `Select`
+3. Search the component `Remove McAfee Software` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
 4.  Click `Run` to initiate the component
@@ -47,4 +47,4 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments
-[Remove Mcafee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt)
+[Remove McAfee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt)
