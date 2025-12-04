@@ -5,7 +5,7 @@ title: 'cPVAL Blocker_Mode'
 title_meta: 'cPVAL Blocker_Mode'
 keywords: ['agent','windows','deployment']
 description: 'Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation'
-tags:  ['security','application',''security','application','custom-fields'']
+tags:  ['security','application','security','application','custom-fields']
 draft: false
 unlisted: false
 ---
