@@ -1,92 +1,33 @@
 ---
 id: '7537a07a-9dda-4302-8ef4-b66ae94df2b8'
 slug: /7537a07a-9dda-4302-8ef4-b66ae94df2b8
-title: 'cPVAL_BP_Mac_Auth_Token'
-title_meta: 'cPVAL_BP_Mac_Auth_Token'
-keywords: ['token', 'mac', 'security']
-description: 'This is used to hold the black point mac auth token value.'
-tags: ['security', 'custom-fields', 'macos']
+title: 'cPVAL BP Mac Auth Token'
+title_meta: 'cPVAL BP Mac Auth Token'
+keywords: ['token','mac','security']
+description: 'Holds the Blackpoint macOS authorization token for agent deployment.'
+tags: ['security','custom-fields','macos']
 draft: false
 unlisted: false
 ---
 
 ## Summary
 
-This custom filed is used to hold the Black point Mac Auth Token data.
+Stores the Blackpoint macOS Authorization Token, which is required for automated deployment and authentication of the Blackpoint agent on macOS devices.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL_BP_Mac_Auth_Token | cpvalbpmacauthtoken | `Device`, `organization`, `Location` | Multi-Line | `All`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macintosh`, `Disabled` | Dynamic | True | Editable | Read/Write | Read/Write | This is used to hold the Black point Mac Auth Token data. |cPVAL_BP_Mac_Auth_Token | cPVAL_BP_Mac_Auth_Token |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| cPVAL BP Mac Auth Token | cpvalBpMacAuthToken | `Device`, `organization`, `Location` | Multi-line | -- | True | Editable | Read/Write | Read/Write | Stores the Blackpoint macOS Authorization Token, which is required for automated deployment and authentication of the Blackpoint agent on macOS devices. | Holds the Blackpoint macOS authorization token for agent deployment. | Holds the Blackpoint macOS authorization token for agent deployment. | BlackPoint |
+
+## Dependencies
+
+- [Automation - BlackPoint SNAP Installer - MacOS](docs/22a99cac-7acf-4251-a790-41a3b651f183)
 
 ## Custom Field Creation
 
-### Step 1
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-bp-mac-auth-token.toml)
 
-Navigate to the `Administration` menu, then proceed to `Devices` and select `Device Custom Fields`. Locate the `Add Custom Field` button on the right-hand side of the screen and click on it.  
-![Step1](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf1.webp)
+## Sample Screenshot
 
-
-### Step 2
-
-After clicking the `Add` button, select the `Field` button that appears. Choose the Custom filed type ans select `Continue`
-
-**Custom Field Type:** `Text`
-
-![FieldButton](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/multiline.webp)
-
-
-### Step 3
-
-The following Pop-up screen will appear:  
-![Overview](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf3.webp)
-
-Set the following details in the `Overview` section and click the `Next` button.
-
-**Custom Filed Type:** `Multi-Line`
-**Label:** `cPVAL_BP_Mac_Auth_Token`  
-**Name:** `cpvalbpmacauthtoken`  
-**Custom field is required:** `<Leave it unchecked>`
-
-![Image1](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/edit-token.webp)
-
-### Step 4
-
-Clicking the `Next` button will take you to the `Inheritance` section.  
-![Inheritance](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf5.webp)
-
-Set the following details  `Inheritance` section and click the `Next` button.  
-
-**Deive:** `Already checked`
-**End User:** `<Leave it unchecked>`
-**Location:** `check`  
-**Organization:** `check`
-
-![Inheritance](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/inheritance.webp)
-
-### Step 5
-
-in the `Permission` section and click the `Next` button.  
-
-**Technician:** `Editable`  
-**Automation:** `Read/Write`  
-**API:** `Read/Write`
-
-![Permission](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf6.webp)
-
-Clicking the `Next` button will take you to the details tab.  
-![Details](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf7.webp)
-
-### Step 6
-
-Fill in the following information in the `Details` section and click the `Submit` button.
-
-**Description:** `This is used to hold the cPVAL_BP_Mac_Auth_Token data.`  
-**Tooltip Text:** `cPVAL_BP_Mac_Auth_Token`  
-**Footer Text:** `cPVAL_BP_Mac_Auth_Token`
-
-![Image2](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/cf8.webp)
-
-Clicking the `Next` button will take you to the `Advanced Settings` tab.  
-![AdvancedSettings](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/details%20token.webp)
+![Companyexe](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/token-mac.webp)

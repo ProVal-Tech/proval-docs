@@ -23,19 +23,19 @@ This script automates the deployment and update of the AutoElevate on MAC machin
 
 `Note: If the value is present under the custom filed then variables do not need to be put during the script execution. As the script get the data from either Custom filed or variables.`
 
-| Name | Description | Type | Mandatory | Default | Options | Source |
-|------|-------------|------:|:---------:|:-------:|:-------:|--------|
-| BP_Mac_Auth_Token | Used to hold the blackpoint installation token | String | Yes | "" | — | cPVAL_BP_Mac_Auth_Token |
-| BP_Mac_Customer_ID | Used to hold the blackpoint AccountID | String | No | "" | — | cPVAL_BP_AccountUID |
+| Name | Example | Accepted Values | Required | Default | Type | Description |
+| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
+|BP_Mac_Auth_Token | -- | -- | NO | "" | `String/Text` | Holds the Blackpoint macOS authorization token for agent deployment. |
+| BP_Mac_Customer_ID |--  | -- | NO| "" | `String/Text` | Stores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
 
 ## Dependencies
 
-- [BP-Accountid](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
-- [BP-companyEXE](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
+- [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
+- [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-deployment-mac.sh)
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-deployment-mac.sh)
 
 ## Output
 

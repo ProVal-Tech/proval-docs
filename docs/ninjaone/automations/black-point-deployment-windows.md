@@ -24,19 +24,19 @@ This script automates the deployment and update of the AutoElevate on Windows ma
 
 `Note: If the value is present under the custom filed then variables do not need to be put during the script execution. As the script get the data from either Custom filed or variables.`
 
-| Name | Description | Type | Mandatory | Default | Options | Source |
-|------|-------------|------:|:---------:|:-------:|:-------:|--------|
-|BP_AccountUID | Used to hold the blackpoint Account ID | String | Yes | "" | — | cPVAL_BP_AccountUID |
-| BP_Win_CompanyEXE | Used to hold the blackpoint exe name | String | No | "" | — | cPVAL-BP_Win_CompanyEXE |
+| Name | Example | Accepted Values | Required | Default | Type | Description |
+| ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
+|BP_AccountUID | -- | -- | NO | "" | `String/Text` | Stores the unique Blackpoint Account UID used to identify and link endpoints to the correct Blackpoint account. |
+| BP_Win_CompanyEXE |--  | -- | NO| "" | `String/Text` | It holds the company exe value for BlackPoint endpoint for each client. |
 
 ## Dependencies
 
-- [BP-Accountid](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
-- [BP-companyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
+- [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
+- [Custom Filed - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-deployment.ps1)
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-deployment-windows.ps1)
 
 ## Output
 
