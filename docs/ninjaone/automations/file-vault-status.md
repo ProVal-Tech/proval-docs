@@ -26,7 +26,7 @@ Note: `This is only compatible for Mac OS devices.`
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/filevault-status.sh)
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/filevault-status.sh)
 
 ## Output
 
