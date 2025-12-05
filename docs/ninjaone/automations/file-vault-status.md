@@ -14,7 +14,7 @@ unlisted: false
 
 This script is used to show the FileVault status on macOS devices by updating the NinjaRMM custom field `cPVAL FileVault Status` to indicate whether FileVault is enabled or not.'
 
-s
+Note: `This is only compatible for Mac OS devices.`
 
 ## Sample Run
 
