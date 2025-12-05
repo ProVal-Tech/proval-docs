@@ -6,7 +6,7 @@ title_meta: 'BlackPoint Agent Deployment'
 keywords: ['agent','windows','deployment','blackpoint']
 description: 'This content is designed to install Blackpoint on Windows and macOS devices, and also supports uninstallation when required.'
 tags: ['windows','security','installations','uninstalation','macos']
-draft: true
+draft: false
 unlisted: false
 ---
 

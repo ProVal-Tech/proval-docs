@@ -16,7 +16,7 @@ This compound condition is used to facilitate the automated deployment of Blackp
 
 ## Details
 
-- **Name:** `BlackPoint SNAP Installer - Windows Server` 
+- **Name:** `BlackPoint SNAP Installer - Windows Server`
 - **Description:** `This compound condition is Used to automate and target the deployment of Blackpoint on eligible windows devices.`
 - **Recommended Agent Policies:** `Windows Workstation Policy`
 
