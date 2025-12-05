@@ -1,0 +1,33 @@
+---
+id: '14fdee94-c1d6-4519-850e-89b4ae34b411'
+slug: /14fdee94-c1d6-4519-850e-89b4ae34b411
+title: 'Check FileVault Status'
+title_meta: 'Check FileVault Status'
+keywords: ['security','mac']
+description: 'This script is used to show the FileVault status on macOS devices by updating the NinjaRMM custom field `cPVAL FileVault Status` to indicate whether FileVault is enabled or not.'
+tags: ['macos','custom-fields']
+draft: false
+unlisted: false
+---
+
+## Overview
+
+This script is used to show the FileVault status on macOS devices by updating the NinjaRMM custom field `cPVAL FileVault Status` to indicate whether FileVault is enabled or not.'
+
+Note: `This is only compatible for Mac OS devices.`
+
+## Sample Run
+
+![Image1](../../../static/img/docs/14fdee94-c1d6-4519-850e-89b4ae34b411/script%20run.webp)
+
+## Dependencies
+
+- [Custom Field - cPVAL FileVault Status](/docs/b0fa9851-d256-45b6-ac64-38f6e6b0d30f)
+
+## Automation Setup/Import
+
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/filevault-status.sh)
+
+## Output
+
+- Activity Details
