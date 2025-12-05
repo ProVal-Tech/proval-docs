@@ -1,6 +1,6 @@
 ---
-id: 'd46e9ed6-3757-459f-a08e-530490f5f08cc'
-slug: /d46e9ed6-3757-459f-a08e-530490f5f08cc
+id: 'd46e9ed6-3757-459f-a08e-530490f5f08c'
+slug: /d46e9ed6-3757-459f-a08e-530490f5f08c
 title: 'cPVAL Local Admin Password Update Date'
 title_meta: 'cPVAL Local Admin Password Update Date'
 keywords: ['local-admin', 'local-account', 'local-admin-process', 'windows-local-admin']
@@ -32,4 +32,4 @@ Shows the last date a new password was set for the local admin account. This val
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/d46e9ed6-3757-459f-a08e-530490f5f08cc/image1.webp)
+![Image1](../../../static/img/docs/d46e9ed6-3757-459f-a08e-530490f5f08c/image1.webp)
