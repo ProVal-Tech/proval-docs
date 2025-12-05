@@ -112,7 +112,7 @@ To activate the solution:
 
 ### 7. How do I ensure the password does not expire in Windows?
 
->Enable the **[Custom Field: cPVAL Local Admin Password Never Expires](/docs/28f3bc57-90ef-4976-866e-09a57c690bee)** checkbox. This setting ensures the password remains valid indefinitely unless manually changed or rotated by the script.
+> Enable the **[Custom Field: cPVAL Local Admin Password Never Expires](/docs/28f3bc57-90ef-4976-866e-09a57c690bee)** checkbox. This setting ensures the password remains valid indefinitely unless manually changed or rotated by the script.
 
 ### 8. Can I update the "cPVAL Local Admin Password" field manually?
 
