@@ -25,45 +25,58 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 
 ## Usage
 
-*Download and install Windows 11 from a specified multipart URL, ignoring compatibility*
+> *Default execution (Upgrades to Windows 11 24H2 using the internal repository)*
 
 ```shell
-.\windows-upgrader.exe --uri "https://my.site/win11/Windows11.zip" --multipart --ignorecompat
+./windows-upgrader.exe
 ```
 
-*Install from a local ISO file*
+> *Install a specific version from the internal repository (Options: 24H2, 25H2)*
 
 ```shell
-.\windows-upgrader.exe --uri "C:\Downloads\Win11_24H2_English_x64.iso"
+./windows-upgrader.exe --version 25H2
 ```
 
-*Install from a UNC network path*
+> *Download and install Windows 11 from a specified multipart URL, ignoring compatibility*
 
 ```shell
-.\windows-upgrader.exe --uri "\\server\share\windows11\Win11.iso"
+./windows-upgrader.exe --uri "https://my.site/win11/Windows11.zip" --multipart --ignorecompat
 ```
 
-*Install from Azure Blob Storage URL with query parameters*
+> *Install from a local ISO file*
 
 ```shell
-.\windows-upgrader.exe --uri "https://storage.blob.core.windows.net/isos/Win11_24H2.iso?sv=2025-07-05&sp=r&sig=..."
+./windows-upgrader.exe --uri "C:\Downloads\Win11_24H2_English_x64.iso"
 ```
 
-*Install without rebooting after completion*
+> *Install from a UNC network path*
 
 ```shell
-.\windows-upgrader.exe --uri "C:\ISOs\Windows11.iso" --noreboot
+./windows-upgrader.exe --uri "\\server\share\windows11\Win11.iso"
+```
+
+> *Install from Azure Blob Storage URL with query parameters*
+
+```shell
+./windows-upgrader.exe --uri "https://storage.blob.core.windows.net/isos/Win11_24H2.iso?sv=2025-07-05&sp=r&sig="
+```
+
+> *Install without rebooting after completion*
+
+```shell
+./windows-upgrader.exe --uri "C:\ISOs\Windows11.iso" --noreboot
 ```
 
 ## Arguments
 
-| Usage            | Description                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `--uri <URI>`    | The URI to download/access the Windows 11 payload from. Supports HTTP/HTTPS URLs, local file paths, and UNC network paths. Accepts both `.zip` and `.iso` formats. |
-| `--multipart`    | Use this switch if the URI points to a multipart archive. i.e.: `Windows11.zip` → `Windows11.zip.001`, `Windows11.zip.002`, ... |
-| `--noreboot`     | Do not reboot if upgrade is successful.                                                                           |
-| `--ignorecompat` | Ignore Windows 11 compatibility requirements.                                                                     |
-| `--debug`        | Enable debug logging.                                                                                             |
+| Usage | Description |
+| :--- | :--- |
+| `--version <VER>` | Installs a specific version from the internal repository. Options: `24H2` or `25H2`. If neither version nor URI is provided, defaults to `24H2`. **Mutually exclusive with `--uri`.** |
+| `--uri <URI>` | The URI to download/access the Windows 11 payload from. Supports HTTP/HTTPS URLs, local file paths, and UNC network paths. Accepts both `.zip` and `.iso` formats. **Mutually exclusive with `--version`.** |
+| `--multipart` | Use this switch if the URI points to a multipart archive. i.e.: `Windows11.zip` → `Windows11.zip.001`, `Windows11.zip.002`, ... (Automatically enabled when using `--version`). |
+| `--noreboot` | Do not reboot if upgrade is successful. |
+| `--ignorecompat` | Ignore Windows 11 compatibility requirements. |
+| `--debug` | Enable debug logging. |
 
 ## Supported Source Types
 
