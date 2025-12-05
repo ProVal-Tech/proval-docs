@@ -96,4 +96,4 @@ A: Installation runs silently without interrupting the user and does not require
 
 **Q: Can this be manually triggered for a single device?**
 
-A: Yes. Both installation and uninstallation tasks can be run on-demand via Automation
+A: Yes. Both installation and uninstallation tasks can be run on-demand via Automation.
