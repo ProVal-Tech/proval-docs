@@ -15,8 +15,9 @@ unlisted: false
 
 ## Details
 
-| Name       | Description |
-| cPVAL Uninstalled Ninja Agent | This Group contains the machines where Ninja RMM agent has  been successfully uninstalled by “Uninstall NinjaOne Agent” script. |
+| Name       | Description  | 
+|----------|------------|
+| cPVAL Uninstalled Ninja Agent | This Group contains the machines where Ninja RMM agent has  been successfully uninstalled by “Uninstall NinjaOne Agent” script. | 
 
 ## Dependencies
  - [Custom Field : cPVAL Uninstalled Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0)  
