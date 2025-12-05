@@ -3,16 +3,18 @@ id: '14fdee94-c1d6-4519-850e-89b4ae34b411'
 slug: /14fdee94-c1d6-4519-850e-89b4ae34b411
 title: 'Check FileVault Status'
 title_meta: 'Check FileVault Status'
-keywords: ['security','mac','deployment']
-description: 'This script is used to check the status of FileVault.'
-tags: ['macos', 'custom-fields']
+keywords: ['security','mac']
+description: 'This script is used to show the FileVault status on macOS devices by updating the NinjaRMM custom field `cPVAL FileVault Status` to indicate whether FileVault is enabled or not.'
+tags: ['macos','custom-fields']
 draft: false
 unlisted: false
 ---
 
 ## Overview
 
-This script is used to check the status of FileVault.
+This script is used to show the FileVault status on macOS devices by updating the NinjaRMM custom field `cPVAL FileVault Status` to indicate whether FileVault is enabled or not.'
+
+s
 
 ## Sample Run
 
