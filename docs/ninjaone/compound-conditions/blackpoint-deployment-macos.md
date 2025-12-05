@@ -22,8 +22,8 @@ This compound condition is used to facilitate the automated deployment of Blackp
 
 ## Dependencies
 
-- [Automation - BlackPoint SNAP Installer - MacOS](docs/22a99cac-7acf-4251-a790-41a3b651f183)
-- [Custom Field - cPVAL Blackpoint Deployment](docs/d858853c-665a-4283-a653-6655c2477993)
+- [Automation - BlackPoint SNAP Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)
+- [Custom Field - cPVAL Blackpoint Deployment](/docs/d858853c-665a-4283-a653-6655c2477993)
 - [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
 - [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
 

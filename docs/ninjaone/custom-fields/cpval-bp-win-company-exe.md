@@ -22,7 +22,7 @@ This field is used to store the `CompanyEXE` value to help download the correct 
 
 ## Dependencies
 
-- [Automation - black-point-deployment-windows](docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [Automation - black-point-deployment-windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
 
 ## Custom Field Creation
 

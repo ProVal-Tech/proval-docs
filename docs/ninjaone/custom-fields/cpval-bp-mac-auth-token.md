@@ -22,7 +22,7 @@ Stores the Blackpoint macOS Authorization Token, which is required for automated
 
 ## Dependencies
 
-- [Automation - BlackPoint SNAP Installer - MacOS](docs/22a99cac-7acf-4251-a790-41a3b651f183)
+- [Automation - BlackPoint SNAP Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)
 
 ## Custom Field Creation
 
