@@ -16,7 +16,7 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 
 ## Associated Content
 
-**Compound Conditions**
+- **Compound Conditions**
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 | [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Policy                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
 | [Compound Condition - BlackPoint SNAP Installer - Windows Workstations](docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Policy                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
 
-**Automation**
+- **Automation**
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
@@ -33,14 +33,14 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 | [Automation - Blackpoint - SNAP-Defense - Uninstall - (macOS)](docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)          | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from macOS devices when required.        |
 | [Automation - Blackpoint - SNAP-Defense - Uninstall - (Windows)](docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)       | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from Windows devices when required.      |
 
-**Custom Field**
+- **Custom Field**
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [Custom Field - cPVAL Blackpoint Deployment](docs/d858853c-665a-4283-a653-6655c2477993)                         | Custom Field | Controls deployment logic during automation and compound condition evaluation.              |
-| [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)                                   |Custom Field | Stores the Blackpoint AccountUID used during authorization and deployment.                  |
-| [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)                               | Custom Field | Stores the Blackpoint macOS authentication token used by the macOS installer.               |
-| [Custom Field - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)                                | Custom Field | Stores the Windows-specific Company EXE installer reference for Blackpoint deployment.      |
+| [Custom Field - cPVAL Blackpoint Deployment](docs/d858853c-665a-4283-a653-6655c2477993)  | Custom Field | Controls deployment logic during automation and compound condition evaluation.              |
+| [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)   |Custom Field | Stores the Blackpoint AccountUID used during authorization and deployment.                  |
+| [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)   | Custom Field | Stores the Blackpoint macOS authentication token used by the macOS installer.               |
+| [Custom Field - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)  | Custom Field | Stores the Windows-specific Company EXE installer reference for Blackpoint deployment.      |
 
 ## Implementation
 

@@ -22,7 +22,7 @@ This field stores the unique Blackpoint AccountUID, which is the identifier used
 
 ## Dependencies
 
-- [Automation - BlackPoint SNAP Installer - Windows](docs/06b6d11b-92b0-478d-9323-3f599d5caa46) 
+- [Automation - BlackPoint SNAP Installer - Windows](docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
 
 ## Custom Field Creation
 
