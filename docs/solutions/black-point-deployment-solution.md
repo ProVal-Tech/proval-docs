@@ -20,8 +20,8 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/85a2de03-5004-4e90-9598-9de731bb5b6b)               | Policy                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
-| [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/d858853c-665a-4283-a653-6655c2477993)      | Policy                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
+| [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/c4c8973c-059f-4d8b-a091-8ad01760831b)               | Policy                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
+| [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Policy                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
 | [Compound Condition - BlackPoint SNAP Installer - Windows Workstations](docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Policy                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
 
 **Automation**
@@ -64,8 +64,8 @@ Import the following automation scripts:
 
 Create three compound conditions targeting the appropriate device policies:
 
-- [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
-- [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/d858853c-665a-4283-a653-6655c2477993)
+- [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
+- [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
 - [Compound Condition - BlackPoint SNAP Installer - Windows Workstations](docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
 
 ## FAQ

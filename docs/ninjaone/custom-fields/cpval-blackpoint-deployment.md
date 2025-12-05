@@ -22,8 +22,8 @@ This custom field is utilized as part of compound condition logic during the bla
 
 ## Dependencies
 
-- [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
-- [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/d858853c-665a-4283-a653-6655c2477993)
+- [Compound Condition - BlackPoint SNAP Installer - MacOS](docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
+- [Compound Condition - BlackPoint SNAP Installer - Windows Server](docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
 - [Compound Condition - BlackPoint SNAP Installer - Windows Workstations](docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
 
 ## Custom Field Creation
