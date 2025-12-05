@@ -128,7 +128,7 @@ To activate the solution:
 
 ### 11. How do I force an immediate password rotation?
 
-> To trigger an immediate rotation, you can clear the date value in [Custom Field: cPVAL Local Admin Password Update Date](/docs/d46e9ed6-3757-459f-a08e-530490f5f08cc). The automation compares the current date against this field to determine if rotation is due. Clearing it will make the system believe the password has never been set or is due for an update.
+> To trigger an immediate rotation, you can clear the date value in [Custom Field: cPVAL Local Admin Password Update Date](/docs/d46e9ed6-3757-459f-a08e-530490f5f08c). The automation compares the current date against this field to determine if rotation is due. Clearing it will make the system believe the password has never been set or is due for an update.
 
 ### 12. If I set a "Default Password," do the minimum and maximum length settings still apply?
 
@@ -136,7 +136,7 @@ To activate the solution:
 
 ### 13. Can I verify when the password was last changed without revealing the password?
 
-> Yes. You can check the [Custom Field: cPVAL Local Admin Password Update Date](/docs/d46e9ed6-3757-459f-a08e-530490f5f08cc). This field is automatically updated by the script during password rotation and displays the last date a new password was successfully set.
+> Yes. You can check the [Custom Field: cPVAL Local Admin Password Update Date](/docs/d46e9ed6-3757-459f-a08e-530490f5f08c). This field is automatically updated by the script during password rotation and displays the last date a new password was successfully set.
 
 ### 14. What is the default password length if I do not customize it?
 
