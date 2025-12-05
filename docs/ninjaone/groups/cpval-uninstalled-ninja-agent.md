@@ -6,7 +6,7 @@ title_meta: 'cPVAL Uninstalled Ninja Agent'
 keywords: ['ninja-one', 'ninjarmm', 'agent', 'uninstall-ninja', 'remove-ninja', 'uninstall-ninjaone-agent']
 description: ' This Group contains the machines where Ninja RMM agent has  been successfully uninstalled by “Uninstall NinjaOne Agent” script'
 tags: ['uninstallation', 'application']
-draft: False
+draft: false
 unlisted: false
 ---
 
