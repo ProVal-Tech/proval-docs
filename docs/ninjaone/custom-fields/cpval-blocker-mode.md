@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation
+Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation.
 
 ## Details
 
 | Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
 | ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Blocker_Mode | cpvalBlockermode | `Organization`, `Location`, `Device`     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | Used to hold the blocker mode data that is used within the script. | Blocker Mode       | Blocker Mode         | AutoElevate     |
+| cPVAL Blocker_Mode | cpvalBlockermode | `Organization`, `Location`, `Device`     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | This custom field sets the Blocker Mode configuration for the end user at the time of installation. | Blocker Mode       | Blocker Mode         | AutoElevate     |
 
 ## Dependencies
 

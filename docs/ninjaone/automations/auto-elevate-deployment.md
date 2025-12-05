@@ -2,7 +2,7 @@
 id: '45b83c20-5a25-4321-a253-5239633ecbd4'
 slug: /45b83c20-5a25-4321-a253-5239633ecbd4
 title: 'AutoElevate Agent Deployment'
-title_meta: 'AutoElevate Agent Deployment Script'
+title_meta: 'AutoElevate Agent Deployment'
 keywords: ['agent','windows','deployment','elevate']
 description: 'This script automates the deployment of the AutoElevate Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows','security','installation']
