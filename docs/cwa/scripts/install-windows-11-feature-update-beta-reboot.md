@@ -28,6 +28,7 @@ The script supports both Windows 10 and Windows 11:
 3. The `NoReboot` parameter may not reliably prevent reboots. The script attempts to install missing drivers, firmware, and BIOS updates, which may force a restart regardless of this parameter. Use this parameter with caution.
 4. It is recommended to initiate the script after business hours and ensure the computer remains connected to AC power. The entire process may take up to six hours in some cases, though it typically completes within two hours.
 5. Be aware of [known issues](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2) with the feature update 24H2 before using the script.
+6. Running this script as an Autofix is not recommended, as it may trigger multiple system reboots. Please use caution when executing it.
 
 ## Security Application Guidance
 
