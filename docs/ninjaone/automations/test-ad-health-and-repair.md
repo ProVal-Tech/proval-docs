@@ -37,6 +37,8 @@ Set the required arguments and click the `Run` button to run the script.
 
 [Agnostic - Test-ADHealthAndRepair](/docs/f2c09601-b391-449b-9380-c022f1829eda)
 
+[Custom field - cpvalAdHealthRepairResult](/docs/8777497d-0dd3-4f6e-af60-31e6d7debe58)
+
 ## Parameters
 
 | Name | Required | Accepted Values | Default | Type | Description |
@@ -90,5 +92,5 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 - Activity Details
 - Refer to the logs: "C:\ProgramData\_automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepair-log.txt"
-- Refer to the error logs:
-"C:\ProgramData\_automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepair-error.txt"
+- Refer to the error logs: "C:\ProgramData\_automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepair-error.txt"
+- Custom field [Custom field - cpvalAdHealthRepairResult](/docs/8777497d-0dd3-4f6e-af60-31e6d7debe58)
