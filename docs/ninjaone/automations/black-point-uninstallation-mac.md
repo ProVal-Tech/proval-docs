@@ -1,10 +1,10 @@
 ---
 id: '22f7e724-120f-4d80-b3fc-c6dad6944ace'
 slug: /22f7e724-120f-4d80-b3fc-c6dad6944ace
-title: 'Blackpoint - SNAP-Defense - Uninstall - (macOS)'
-title_meta: 'Blackpoint - SNAP-Defense - Uninstall - (macOS)'
+title: 'Blackpoint - SnapAgent Uninstall - (macOS)'
+title_meta: 'Blackpoint - SnapAgent Uninstall - (macOS)'
 keywords: ['agent','mac','deployment','blackpoint']
-description: 'This script automates the uninstallation of the blackpoint agent on mac machines and validating that the agent has been successfully uninstalled.'
+description: 'This script fully removes the BlackPoint SNAP agent from macOS systems, including all related services, binaries, and configuration components. It stops and unloads associated launch daemons, to prevent the service from running during removal.'
 tags:  ['macos','security','uninstallation']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-The script using the shellscript to remove the to remove the blackpoint appication from machines. Also validates if it uninstalled successfully or not.
+This script fully removes the BlackPoint SNAP agent from macOS systems, including all related services, binaries, and configuration components. It stops and unloads associated launch daemons, to prevent the service from running during removal.
 
 ## Sample Run
 
@@ -22,10 +22,7 @@ The script using the shellscript to remove the to remove the blackpoint appicati
 
 ## Automation Setup/Import
 
-- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/blackpoint-uninstall.ps1)
-
-## Solution Document
-
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-uninstall-mac.sh)
 - [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Output

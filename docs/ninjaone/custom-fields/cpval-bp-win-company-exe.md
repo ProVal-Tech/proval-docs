@@ -18,7 +18,7 @@ This field is used to store the `CompanyEXE` value to help download the correct 
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL BP Win CompanyEXE | cpvalbpwincompanyexe | `Device`, `organization`, `Location` | Text | True |  | Editable | Read/Write | Read/Write | This field is used to store the `CompanyEXE` value to help download the correct exe for each organization during the automation. | It holds the company exe value for BlackPoint endpoint for each client. | It holds the company exe value for BlackPoint endpoint for each client. | BlackPoint |
+| cPVAL BP Win CompanyEXE | cpvalbpwincompanyexe | `Device`, `organization`, `Location` | Text | True | -- | Editable | Read/Write | Read/Write | This field is used to store the `CompanyEXE` value to help download the correct exe for each organization during the automation. | It holds the company exe value for BlackPoint endpoint for each client. | It holds the company exe value for BlackPoint endpoint for each client. | BlackPoint |
 
 ## Dependencies
 

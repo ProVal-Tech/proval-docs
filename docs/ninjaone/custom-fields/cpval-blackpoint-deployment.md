@@ -18,7 +18,7 @@ Choose the operating system to activate the auto deployment of the BlackPoint Ag
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Blackpoint Deployment | cpvalBlackpointDeployment | `Device`, `organization`, `Location` | Text | True | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`, `Macs`, `Windows and Macs`, `Windows Servers and Macs`, `Windows Workstations and Macs` | Editable | `Read/Write` | `Read/Write`   |     Choose the operating system to activate the auto deployment of the BlackPoint Agent.   |   Auto deployment can be enabled for Windows machines only or for both Windows and Macintosh computers.   | Auto deployment can be enabled for Windows machines only or for both Windows and Macintosh computers. | BlackPoint |
+| cPVAL Blackpoint Deployment | cpvalBlackpointDeployment | `Device`, `organization`, `Location` | `Drop-Down`| True | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`, `MacOS`, `Windows and MacOS`, `Windows Server and MacOS`, `Windows Workstations and MacOS` | Editable | `Read/Write` | `Read/Write`   |     Choose the operating system to activate the auto deployment of the BlackPoint Agent.   |   Auto deployment can be enabled for Windows machines only or for both Windows and Macintosh computers.   | Auto deployment can be enabled for Windows machines only or for both Windows and Macintosh computers. | BlackPoint |
 
 ## Dependencies
 

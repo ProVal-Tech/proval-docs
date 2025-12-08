@@ -1,10 +1,10 @@
 ---
 id: '321970ff-b69d-4fb9-b9e7-6e1c3a581468'
 slug: /321970ff-b69d-4fb9-b9e7-6e1c3a581468
-title: 'Blackpoint - SNAP-Defense - Uninstall - (Windows)'
-title_meta: 'Blackpoint - SNAP-Defense - Uninstall - (Windows)'
+title: 'Blackpoint SnapAgent - Uninstall - (Windows)'
+title_meta: 'Blackpoint SnapAgent - Uninstall - (Windows)'
 keywords: ['agent','windows','deployment','blackpoint']
-description: 'This script automates the uninstallation of the blackpoint agent on Windows machines and validating that the agent has been successfully uninstalled.'
+description: 'This script uninstalls the Blackpoint SnapAgent by performing standard removal and, if necessary, forced removal when remnants remain. It locates the application by display name, identifies the uninstall method type and then removing it.'
 tags:  ['windows','security','uninstallation']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-The script using the `Remove-Application.ps1` to remove the appication from machines. Also validates if it uninstalled successfully or not.
+This script uninstalls the Blackpoint SnapAgent by performing standard removal and, if necessary, forced removal when remnants remain. It locates the application by display name, identifies the uninstall method type and then removing it.
 
 ## Sample Run
 
@@ -23,9 +23,6 @@ The script using the `Remove-Application.ps1` to remove the appication from mach
 ## Automation Setup/Import
 
 - [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/blackpoint-uninstall.ps1)
-
-## Solution Document
-
 - [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Output
