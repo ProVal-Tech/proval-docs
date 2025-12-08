@@ -1,8 +1,8 @@
 ---
 id: '0c25060b-1272-449f-af97-64169e636e95'
 slug: /0c25060b-1272-449f-af97-64169e636e95
-title: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
-title_meta: 'CWM - Automate - Agent Template - Self Help Menu - Windows Feature Update'
+title: 'Agent Template - Self Help Menu - Windows Feature Update'
+title_meta: 'Agent Template - Self Help Menu - Windows Feature Update'
 keywords: ['windows', 'feature', 'update', 'self', 'help', 'menu', 'script']
 description: 'This article outlines the step-by-step process to add the Windows Feature Update option in the Self Help menu, enabling the installation of the latest feature pack for Windows 10 and 11 through a script.'
 tags: ['software', 'update', 'windows']
@@ -15,15 +15,15 @@ unlisted: false
 This article outlines the process to add the `Windows Feature Update` option in the `Self Help` menu.  
 ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_1.webp)  
 
-The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28) to install the latest available feature pack for the computer.
+The `Windows Feature Update` option runs the `Windows 11 Installer` [script](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) to install Windows 11 24H2 on the computer.
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28)  
+[Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  
 
 ## Implementation
 
-1. Update/Import the [Install Windows Upgrade](/docs/4a0526ef-6e45-4053-9a64-27713b7f4d28) using the `Prosync` Plugin.
+1. Update/Import the [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) using the `Prosync` Plugin.
 
 2. Reload System Cache:  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_2.webp)  
@@ -46,7 +46,7 @@ The `Windows Feature Update` option runs the `Install Windows Upgrade` [script](
    - **Menu Action**: Script  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_7.webp)  
 
-8. Select the `ProVal/Windows/Install Windows Upgrade*` script from the `Select a Script` dropdown menu.  
+8. Select the `ProVal/Windows/Windows 11 Installer*` script from the `Select a Script` dropdown menu.  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_8.webp)  
 
 9. Click the `Save` button to save the changes made to the `Custom Tray Menu Editor`:  

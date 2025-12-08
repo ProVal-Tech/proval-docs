@@ -21,7 +21,7 @@ To control the rollout pace, the monitor selects a randomized, limited batch of 
 - [Solution: Windows 10 ESU Licensing and Auditing](/docs/7fe6a52b-79fd-487b-8009-523996e74d11)
 - [Solution: Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c)  
 - [Script: Windows 11 installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  
-- [Solution : Windows 11 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)  
+- [Solution : Windows 11 24H2 Installation](/docs/00b08a60-f202-42db-9f67-a76ea29289fa)  
 - Alert Template: △ Custom - Install Windows 11 - Compatible Machines
 
 ## Target
