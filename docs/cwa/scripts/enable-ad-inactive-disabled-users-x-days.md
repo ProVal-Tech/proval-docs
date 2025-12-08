@@ -1,0 +1,63 @@
+---
+id: '7694a01e-f449-40e0-8982-0c351509257a'
+slug: /7694a01e-f449-40e0-8982-0c351509257a
+title: 'Enable - Inactive Disabled AD Users - X Days'
+title_meta: 'Enable - Inactive Disabled AD Users - X Days'
+keywords: ['inactive', 'users', 'active directory', 'user management']
+description: 'This script enables the inactive users that are not logged in for over X days.'
+tags: ['active-directory', 'accounts']
+draft: false
+unlisted: false
+---
+
+## Summary
+
+This script enables the inactive users that are not logged in for over X days (configurable via the system property `Inactive_AD_Users_Threshold_Days`; default: 90 days).
+
+This script excludes the default account `Administrator|Guest|krbtgt|DefaultAccount|.*\$`. Here, `*\$` meant any user that has $ in its name end.
+
+For e.g. ``Computername$``, ``UserName$``
+
+## Sample Run
+
+- If set to `All`, all inactive disabled users exceeding the `Threshold_Days` will be enabled
+![Sample Run](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image14.webp)
+
+- If it is set to some specific user's name, e.g., `Demo,Test,TestUser`, then it will enable only the provided users.  
+![Sample Run](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image13.webp)
+
+- If it is left `blank`, then it will enable all the disabled users that are disabled via [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e)  
+![Sample Run](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image12.webp)
+
+## File Hash
+
+| Path | Algorithm | Hash |
+| --- | --- | --- |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | MD5 | `ED097C469DCFC26A806A252CD2696B79` |
+| `C:\ProgramData\_automation\script\Inactive_ADUsers\Activate_DisabledADUser.ps1` | SHA256 | `921D08FCA45D5C4F4F61100F3B047F6470B5CBFDC0E301255B77866E8B04F2E8` |
+
+
+## Dependencies
+
+[Solution- Inactive AD Users Disable/Enable](/docs/d93ff68b-9515-4d4c-bfa4-ff551b3eac37)
+
+### User Parameters
+
+| **Name**    | **Example**                | **Required** | **Description**                                                                                                                                                                                                 |
+|-------------|----------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `UserList`  | `test,demo,testuser`      | False        | To run with autofix using the internal monitor, `UserList` does not need to be set. If the script runs `on demand`, then if: <br /> (i) `UserList` = `All` → Enables all inactive, disabled users exceeding `Threshold_Days`. <br /> (ii) `UserList` = `Demo,Test,TestUser` → Enables only the specified users. <br /> (iii) `UserList` left `blank` → Enables all disabled users that were disabled via [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) and user list provided in the exclusion EDF.|
+
+## System Property
+
+| Name           | Level                   | Required | Description      |
+|---------------------------------|--------| ---------- | ----------------------------------- |
+| Inactive_AD_Users_Threshold_Days | 90 | True | This is set to detect the inactive users those are not logged in from the provided days. Default is `90` days. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image23.webp) |
+| Inactive_AD_Users_Exclude_Disable | demo,test,testuser | False | This will exclude the users from being included in the list to get disabled. In this case, the users provided in this EDF will get enabled if they are disabled. The users list should be provided in a comma-separated format. e.g., John,Kevin,demo. ![Property](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image24.webp)| 
+
+
+
+## Output
+
+- [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
+- [Dataview - Inactive AD Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
+- Script Log
