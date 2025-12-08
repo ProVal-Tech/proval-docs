@@ -18,7 +18,7 @@ This script automates the removal of the AutoElevate agent from Windows systems.
 
 `Play Button` > `Run Automation` > `Script`  
 
-![SampleRun1](../../../static/img/docs/07c35243-99f9-4089-824c-5e9e4c9c170f/samplerun1.webp)  
+![SampleRun1](../../../static/img/docs/07c35243-99f9-4089-824c-5e9e4c9c170f/scriptrun.webp)  
 
 ## Automation Setup/Import
 
