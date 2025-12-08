@@ -4,7 +4,7 @@ slug: /1efc6b0c-bfd0-4d80-b4c5-e32defa31bc6
 title: 'Uninstall NinjaOne Agent'
 title_meta: 'Uninstall NinjaOne Agent'
 keywords: ['ninja-one', 'ninjarmm', 'agent', 'uninstall-ninja', 'remove-ninja', 'uninstall-ninjaone-agent']
-description: ''
+description: 'Downloads and schedules a script to remove the NinjaOne Agent and Ninja Remote using a scheduled task.'
 tags: ['uninstallation', 'application']
 draft: false
 unlisted: false
