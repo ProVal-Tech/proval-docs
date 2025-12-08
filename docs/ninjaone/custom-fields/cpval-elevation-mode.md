@@ -18,11 +18,12 @@ Elevation Mode is a configuration parameter used during the AutoElevate agent de
 
 | Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
 | ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Elevation_Mode | cpvalElevationmode | `Organization`, `Location`, `Device`     | Text | No     | -             | Editable              | Read/Write            | Read/Write     | Used to hold the elevation mode data that is used within the script. | Elevation Mode       | Elevation Mode         | AutoElevate     |
+| cPVAL Elevation Mode | cpvalElevationMode | `Organization`, `Location`, `Device`     | Text | No     | `Audit`       | Editable              | Read/Write            | Read/Write     | Elevation Mode is a configuration parameter used during the AutoElevate agent deployment. It determines how privilege elevation requests are handled on the device once the agent is installed | AutoElevate Elevation Mode     | Controls how elevation requests are processed     | AutoElevate     |
 
 ## Dependencies
 
 - [AutoElevate Agent Deployment](/docs/45b83c20-5a25-4321-a253-5239633ecbd4)
+- [Solution Document - AutoElevate Deployment - NinjaOne](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Custom Field Creation
 

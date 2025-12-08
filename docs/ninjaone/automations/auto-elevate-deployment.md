@@ -18,7 +18,7 @@ This script automates the deployment and update of the AutoElevate on windows ma
 
 `Play Button` > `Run Automation` > `Script`
 
-![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/parameter.webp)
+![SampleRun1](../../../static/img/docs/45b83c20-5a25-4321-a253-5239633ecbd4/scriptrun.webp)
 
 ## Parameters
 
@@ -26,11 +26,9 @@ This script automates the deployment and update of the AutoElevate on windows ma
 
 | Name | Description | Type | Mandatory | Default | Options | Source |
 |------|-------------|------:|:---------:|:-------:|:-------:|--------|
-| License_Key | AutoElevate license key for agent activation. | `String/text` | Yes | — | — | `cPVAL License_Key` Custom Field |
-| Ninja_Organization_Key | Organization name for agent identification | `String/text` | No | —  | — | `cPVAL Ninja Organization Name` Custom Field |
-| Ninja_Location_Key | Location name for agent organization | `String/text` | No | — | — | `cPVAL Ninja Location Name` Custom Field |
-| Elevation_Mode | AutoElevate elevation mode setting | `String/text` | Yes | — | — | `cPVAL Elevation_Mode` Custom Field |
-| Blocker_Mode | AutoElevate blocker mode setting | `String/text` | Yes | — | `Disabled`, `Enabled` | `cPVAL Blocker_Mode` Custom Field |
+| License_key | Stores the AutoElevate License Key required for activating the agent during installation. | `String/text` | Yes | — | — | `cPVAL License_Key` |
+| Elevation_Mode | Defines how AutoElevate handles privilege elevation requests during deployment (Live, Audit, or Policy mode). | `Drop-Down` | Yes | `Audit` | `Live`, `Audit`, `Policy` | `cPVAL Elevation_Mode` |
+| Blocker_Mode | Determines how AutoElevate responds to blocked or unauthorized elevation attempts `(Disabled, Audit, or Live)`. | `Drop-Down` | Yes | `Disabled` | `Disabled`, `Audit`, `Live` | `cPVAL Blocker_Mode` |
 
 ## Dependencies
 
@@ -38,9 +36,8 @@ The script is dependent on below custom fileds during the deployment.
 
 - [Custom Field - Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
 - [Custom Field - Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
-- [Custom Field - Organization Name](/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb)
-- [Custom Field - Location Name](/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8)
 - [Custom Field - License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
+- [Solution Document - AutoElevate Deployment - NinjaOne](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Automation Setup/Import
 
