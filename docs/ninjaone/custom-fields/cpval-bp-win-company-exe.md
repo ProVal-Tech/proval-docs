@@ -28,6 +28,10 @@ This field is used to store the `CompanyEXE` value to help download the correct 
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-bp-win-company-exe.toml)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Sample Screenshot
 
 ![Companyexe](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/exe-client.webp)

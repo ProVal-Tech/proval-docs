@@ -27,6 +27,10 @@ This compound condition is used to facilitate the automated deployment of Blackp
 - [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
 - [Custom Field - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/blackpoint-deployment-servers.toml)

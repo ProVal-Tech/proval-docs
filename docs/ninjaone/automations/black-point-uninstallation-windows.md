@@ -24,6 +24,10 @@ The script using the `Remove-Application.ps1` to remove the appication from mach
 
 - [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/blackpoint-uninstall.ps1)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Output
 
 - Activity Details  

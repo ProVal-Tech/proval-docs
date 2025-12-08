@@ -28,6 +28,10 @@ This field stores the unique Blackpoint AccountUID, which is the identifier used
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-bp-account-uid.toml)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Sample Screenshot
 
 ![AccountUid](../../../static/img/docs/83df96df-47eb-43f4-860a-af3f686641c4/accountUid.webp)

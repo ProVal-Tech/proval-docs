@@ -34,6 +34,10 @@ This script automates the deployment and update of the AutoElevate on Windows ma
 - [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
 - [Custom Filed - cPVAL BP Win CompanyEXE](/docs/dd410db2-6305-425c-93e7-378efbf145c3)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Automation Setup/Import
 
 - [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/black-point-deployment-windows.ps1)

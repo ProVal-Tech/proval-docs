@@ -28,6 +28,10 @@ Stores the Blackpoint macOS Authorization Token, which is required for automated
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-bp-mac-auth-token.toml)
 
+## Solution Document
+
+- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
 ## Sample Screenshot
 
 ![Companyexe](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/token-mac.webp)
