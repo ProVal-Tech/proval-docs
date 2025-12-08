@@ -18,7 +18,7 @@ This script uninstalls the Blackpoint SnapAgent by performing standard removal a
 
 **Run As:** `System`  
 
-![Image1](../../../static/img/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468/blackpoint-samplerun1.webp)
+![Image1](../../../static/img/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468/scriptrun.webp)
 
 ## Automation Setup/Import
 

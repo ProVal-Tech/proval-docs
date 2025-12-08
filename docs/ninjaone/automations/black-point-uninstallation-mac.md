@@ -18,7 +18,7 @@ This script fully removes the BlackPoint SNAP agent from macOS systems, includin
 
 **Run As:** `System`  
 
-![Image1](../../../static/img/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace/blackpoint-samplerun1.webp)
+![Image1](../../../static/img/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace/scriptrun.webp)
 
 ## Automation Setup/Import
 
