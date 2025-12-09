@@ -24,11 +24,11 @@ This script automates the deployment and update of the AutoElevate on windows ma
 
 **Note:** `If the value is present under the custom field then variables do not need to be put during the script execution. As the script get the data from either Custom field or variables.`
 
-| Name | Description | Type | Mandatory | Default | Options | Source |
-|------|-------------|------:|:---------:|:-------:|:-------:|--------|
-| License_key | Stores the AutoElevate License Key required for activating the agent during installation. | `String/text` | Yes | — | — | `cPVAL License_Key` |
-| Elevation_Mode | Defines how AutoElevate handles privilege elevation requests during deployment (Live, Audit, or Policy mode). | `Drop-Down` | Yes | `Audit` | `Live`, `Audit`, `Policy` | `cPVAL Elevation_Mode` |
-| Blocker_Mode | Determines how AutoElevate responds to blocked or unauthorized elevation attempts `(Disabled, Audit, or Live)`. | `Drop-Down` | Yes | `Disabled` | `Disabled`, `Audit`, `Live` | `cPVAL Blocker_Mode` |
+| Name | Description | Type | Mandatory | Default | Options |
+|------|-------------|------:|:---------:|:-------:|:-------:|
+| License_key | Stores the AutoElevate License Key required for activating the agent during installation. | `String/text` | Partial | — | — |
+| Elevation_Mode | Defines how AutoElevate handles privilege elevation requests during deployment (Live, Audit, or Policy mode). | `Drop-Down` | Partial | `Audit` | `Live`, `Audit`, `Policy` | 
+| Blocker_Mode | Determines how AutoElevate responds to blocked or unauthorized elevation attempts `(Disabled, Audit, or Live)`. | `Drop-Down` | Partial | `Disabled` | `Disabled`, `Audit`, `Live` | 
 
 ## Dependencies
 
@@ -41,7 +41,7 @@ The script is dependent on below custom fileds during the deployment.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/autoelevate-install.ps1)
+- [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/autoelevate-install.ps1)
 
 ## Output
 

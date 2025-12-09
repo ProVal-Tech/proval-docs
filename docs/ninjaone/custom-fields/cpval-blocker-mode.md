@@ -16,9 +16,9 @@ Blocker Mode is a required parameter that needs to be passed during the AutoElev
 
 ## Details
 
-| Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
-| ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Blocker Mode | cpvalBlockerMode | `Organization`, `Location`, `Device`     | Text | No     | `Disabled`           | Editable              | Read/Write            | Read/Write     | Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation.| AutoElevate Blocker Mode     | Controls behavior for blocked elevation attempts        | AutoElevate     |
+| Label                          | Field Name                 | Definition Scope | Type | Required | Available Options | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
+| ------------------------------ | -------------------------- | ---------------- | ---- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
+| cPVAL Blocker Mode | cpvalBlockerMode | `Organization`, `Location`, `Device`     | Dropdown | No  | `Live`, `Audit`, `Disabled`   | `Audit`           | Editable              | Read/Write            | Read/Write     | Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation.| This parameter is used to set the Blocker Mode configuration for the end user at the time of installation.     | Controls behavior for blocked elevation attempts.        | AutoElevate     |
 
 ## Dependencies
 

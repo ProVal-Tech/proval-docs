@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This field controls whether the AutoElevate deployment process should run on the selected devices. When set to Enable, the deployment script will execute and install configure the AutoElevate agent using the defined parameters (`License Key, Elevation Mode, and Blocker Mode`). When set to Disable, the deployment will be skipped. Accepted values: `Enable` or `Disable`.
+This field controls whether the AutoElevate deployment process should run on the selected devices. When set to Enable, the deployment script will execute and install configure the AutoElevate agent using the defined parameters (`License Key, Elevation Mode, and Blocker Mode`). 
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL AutoElevate Deployment | cpvalAutoelevateDeployment | `Organization`, `Location`, `Device`     | `Drop-Down` | Yes     | `Enabled`,`Disabled`            | Editable              | Read/Write            | Read/Write     | This Custom Field is utilized during the AutoElevate deployment process within compound execution conditions. It controls whether the agent installation proceeds based on the configured deployment logic.      | AutoElevate deployment condition field.     | Used for compound conditions in AutoElevate deployment.    | AutoElevate     |
+| Label | Field Name | Definition Scope | Type | Required | Available Options | Default Value |Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- |  ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| cPVAL AutoElevate Deployment | cpvalAutoelevateDeployment | `Organization`, `Location`, `Device`     | `Drop-Down` | Yes     | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`            |    |Editable              | Read/Write            | Read/Write     | This Custom Field is utilized during the AutoElevate deployment process within compound execution conditions. It controls whether the agent installation proceeds based on the configured deployment logic.      | This field controls whether the AutoElevate deployment process should run on the selected devices.     | Used for compound conditions in AutoElevate deployment.    | AutoElevate     |
 
 ## Dependencies
 

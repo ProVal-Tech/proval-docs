@@ -18,7 +18,7 @@ License Key is a required parameter used during the AutoElevate agent deployment
 
 | Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
 | ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL License Key | cpvalLicensekey | `Organization`, `Location`, `Device`     | Multi-Line | Yes     | -             | Editable              | Read/Write            | Read/Write     | License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant. | License Key       | License Key         | License Key    | AutoElevate  |
+| cPVAL License Key | cpvalLicensekey | `Organization`, `Location`, `Device`     | Multi-Line | Yes     | -             | Editable              | Read/Write            | Read/Write     | License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant.        | AutoElevate License Key is used for agent activation       | Required for installing and registering the AutoElevate agent.    | AutoElevate  |
 
 ## Dependencies
 
