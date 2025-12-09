@@ -16,9 +16,9 @@ Triggers the [Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-87
 
 ## Details
 
-**Name:** `Windows - Local Admin Process - Servers`  
-**Description:** `Triggers the Windows - Local Admin - Create/Update script on Windows servers where the Windows - Local Admin - Process solution is active. The script executes when the local admin account is absent or when a password rotation is due.`  
-**Recommended Agent Policies:** `Windows Server Policy [Default]`
+- **Name:** `Windows - Local Admin Process - Servers`  
+- **Description:** `Triggers the Windows - Local Admin - Create/Update script on Windows servers where the Windows - Local Admin - Process solution is active. The script executes when the local admin account is absent or when a password rotation is due.`  
+- **Recommended Agent Policies:** `Windows Server Policy [Default]`
 
 ## Dependencies
 

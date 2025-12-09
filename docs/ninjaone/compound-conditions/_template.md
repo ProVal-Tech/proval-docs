@@ -14,12 +14,12 @@ unlisted: false
 
 ## Details
 
-**Name:** 
-**Description:** 
-**Recommended Agent Policies:**
+- **Name:** 
+- **Description:** 
+- **Recommended Agent Policies:**
 
 ## Dependencies
 
 ## Compound Condition Creation 
 
-[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/_template.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/_template.toml)

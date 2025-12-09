@@ -14,7 +14,7 @@ unlisted: false
 
 Shows the last date a new password was set for the local admin account. This value is automatically updated by the script during password rotation.
 
-> **Note:** *End user should not make any changes to this field manually.*\
+> **Note:** *End user should not make any changes to this field manually.
 
 ## Details
 
@@ -28,7 +28,7 @@ Shows the last date a new password was set for the local admin account. This val
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-loval-admin-password-update-date.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-loval-admin-password-update-date.toml)
 
 ## Sample Screenshot
 

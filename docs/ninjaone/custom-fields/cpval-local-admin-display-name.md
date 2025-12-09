@@ -26,7 +26,7 @@ Enter the display name for the local admin account. If left blank, the username 
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-display-name.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-display-name.toml)
 
 ## Sample Screenshot
 

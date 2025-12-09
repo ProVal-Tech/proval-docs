@@ -26,7 +26,7 @@ Enable this option to set the local admin password to never expire. This setting
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password-never-expires.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password-never-expires.toml)
 
 ## Sample Screenshot
 

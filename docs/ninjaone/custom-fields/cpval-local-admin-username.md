@@ -26,7 +26,7 @@ Enter the username for the local admin account to be created. This name will be 
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-username.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-username.toml)
 
 ## Sample Screenshot
 

@@ -35,8 +35,8 @@ This solution automates the management of local administrator accounts on Window
 
 | Content | Function |
 | ------- | -------- |
-| [Automation: Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-8704-6873646ef80b) | Creates the local admin account, sets the password (random or default), and updates relevant custom fields. |
-| [Automation: Windows - Local Admin - Password Rotation Check](/docs/32679339-2bb2-4d60-aa8d-47f10c52c028) | Checks if the password rotation threshold has been met and triggers a password update if necessary. |
+| [Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-8704-6873646ef80b) | Creates the local admin account, sets the password (random or default), and updates relevant custom fields. |
+| [Windows - Local Admin - Password Rotation Check](/docs/32679339-2bb2-4d60-aa8d-47f10c52c028) | Checks if the password rotation threshold has been met and triggers a password update if necessary. |
 
 ### Compound Condition
 
@@ -66,8 +66,8 @@ Import or create the following custom fields to configure and store the local ad
 
 Import the following scripts into your script library:
 
-1. [Automation: Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-8704-6873646ef80b)
-2. [Automation: Windows - Local Admin - Password Rotation Check](/docs/32679339-2bb2-4d60-aa8d-47f10c52c028)
+1. [Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-8704-6873646ef80b)
+2. [Windows - Local Admin - Password Rotation Check](/docs/32679339-2bb2-4d60-aa8d-47f10c52c028)
 
 ### Step 3: Create Compound Conditions
 

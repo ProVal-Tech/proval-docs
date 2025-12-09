@@ -26,7 +26,7 @@ Set the default password for the local admin in this field. If provided, the scr
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-default-password.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-default-password.toml)
 
 ## Sample Screenshot
 

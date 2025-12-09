@@ -26,7 +26,7 @@ Set the number of days for automatic password rotation. If this field is blank o
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password-rotation-days.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password-rotation-days.toml)
 
 ## Sample Screenshot
 

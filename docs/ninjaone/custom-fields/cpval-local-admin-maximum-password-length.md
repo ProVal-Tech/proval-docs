@@ -26,7 +26,7 @@ Set the maximum password length for the local admin account. Applies only to aut
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-maximum-password-length.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-maximum-password-length.toml)
 
 ## Sample Screenshot
 

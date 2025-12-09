@@ -29,7 +29,7 @@ Stores the password for the local admin account created by the Local Admin Proce
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password.toml)
 
 ## Sample Screenshot
 
