@@ -6,7 +6,7 @@ title_meta: 'cPVAL Windows Home Edition Status'
 keywords: ['check','home','edition']
 description: 'This custom field checks the OS Caption value to determine whether the installed Windows operating system is a home edition. It displays True if the OS name contains Home otherwise it displays False.'
 tags: ['windows','custom-fields','auditing']
-draft: true
+draft: false
 unlisted: false
 ---
 
