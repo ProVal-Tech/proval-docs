@@ -12,7 +12,9 @@ unlisted: false
 
 ## Overview
 
-Automates local administrator account management, password rotation, and NinjaRMM Custom Field synchronization.
+Automates local administrator account management, password rotation, and NinjaRMM Custom Field synchronization. 
+
+This script creates a local admin account using values from custom fields or runtime variables provided during execution.
 
 ## Dependencies
 

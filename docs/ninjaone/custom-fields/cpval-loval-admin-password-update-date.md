@@ -28,7 +28,7 @@ Shows the last date a new password was set for the local admin account. This val
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-loval-admin-password-update-date.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-local-admin-password-update-date.toml)
 
 ## Sample Screenshot
 

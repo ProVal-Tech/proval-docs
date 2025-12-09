@@ -1,8 +1,8 @@
 ---
 id: '32679339-2bb2-4d60-aa8d-47f10c52c028'
 slug: /32679339-2bb2-4d60-aa8d-47f10c52c028
-title: 'Windows - Local Admin - Password Rotation'
-title_meta: 'Windows - Local Admin - Password Rotation'
+title: 'Windows - Local Admin - Password Rotation Check'
+title_meta: 'Windows - Local Admin - Password Rotation Check'
 keywords: ['local-admin', 'local-account', 'local-admin-process', 'windows-local-admin']
 description: 'Automates local administrator account management, password rotation, and NinjaRMM Custom Field synchronization.'
 tags: ['accounts', 'windows', 'security']
