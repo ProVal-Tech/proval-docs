@@ -1,8 +1,8 @@
 ---
 id: '8777497d-0dd3-4f6e-af60-31e6d7debe58'
 slug: /8777497d-0dd3-4f6e-af60-31e6d7debe58
-title: 'cpvalAdHealthRepairResult'
-title_meta: 'cpvalAdHealthRepairResult'
+title: 'cPVAL AD Health Repair Result'
+title_meta: 'cPVAL AD Health Repair Result'
 keywords: ['ad', 'active-directory', 'domain-controller', 'self-heal', 'check-health', 'test-health', 'repair', 'repair-health']
 description: 'This device custom field stores the Test AD Health and Repair script status.'
 tags: ['active-directory', 'domain']
