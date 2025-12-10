@@ -33,7 +33,7 @@ Installs, repairs, or reinstalls the CyberCNS ConnectSecure agent on Windows tar
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/_template.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-connectsecure-windows.ps1)
 
 ## Output
 

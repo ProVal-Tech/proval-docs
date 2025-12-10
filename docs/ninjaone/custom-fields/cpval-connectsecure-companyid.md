@@ -27,7 +27,7 @@ This stores the ConnectSecure deployment company ID.
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/_template.toml)
+[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-connectsecure-companyid.toml)
 
 ## Sample Screenshot
 

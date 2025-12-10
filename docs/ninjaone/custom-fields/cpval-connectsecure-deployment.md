@@ -27,7 +27,7 @@ This is required to be set for the compound condition to set the ConnectSecure d
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/_template.toml)
+[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-connectsecure-deployment.toml)
 
 ## Sample Screenshot
 
