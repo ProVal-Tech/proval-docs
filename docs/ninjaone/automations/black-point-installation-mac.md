@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This script is used to the install the BlackPoint AnapAgent on the MacOS machines. The script used run time variable or Ninja custom fields to retrieve the necessary authentication information..
+This script is used to the install the BlackPoint SnapAgent on the MacOS machines. The script uses run time variable or Ninja custom fields to retrieve the necessary authentication information.
 
 ## Sample Run
 
@@ -21,7 +21,7 @@ This script is used to the install the BlackPoint AnapAgent on the MacOS machine
 
 ## Parameters
 
-`Note: If the value is present under the custom filed then variables do not need to be put during the script execution. As the script get the data from either Custom filed or variables.`
+`Note: If the value is present under the custom field then variables do not need to be put during the script execution. As the script get the data from either Custom field or variables.`
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
@@ -32,7 +32,7 @@ This script is used to the install the BlackPoint AnapAgent on the MacOS machine
 
 - [Custom Field - cPVAL BP AccountUID](/docs/83df96df-47eb-43f4-860a-af3f686641c4)
 - [Custom Field - cPVAL BP Mac Auth Token](/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8)
-- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+- [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Automation Setup/Import
 

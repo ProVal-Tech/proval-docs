@@ -12,18 +12,18 @@ unlisted: false
 
 ## Summary
 
-This field is used to store the `CompanyEXE` value to help download the correct exe for each organization during the automation.
+This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL BP Win CompanyEXE | cpvalbpwincompanyexe | `Device`, `organization`, `Location` | Text | True | -- | Editable | Read/Write | Read/Write | This field is used to store the `CompanyEXE` value to help download the correct exe for each organization during the automation. | It holds the company exe value for BlackPoint endpoint for each client. | It holds the company exe value for BlackPoint endpoint for each client. | BlackPoint |
+| cPVAL BP Win CompanyEXE | cpvalbpwincompanyexe | `Device`, `organization`, `Location` | Text | True | -- | Editable | Read/Write | Read/Write | This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation. | This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation. | Provide the installer EXE URL for the company. | BlackPoint |
 
 ## Dependencies
 
-- [Automation - black-point-deployment-windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
-- [Solution - BlackPoint Agent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+- [Automation - BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
 
 ## Custom Field Creation
 

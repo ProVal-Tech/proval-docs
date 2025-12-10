@@ -1,8 +1,8 @@
 ---
 id: 'b9f13c4b-742d-4118-be8e-0c03e43ded17'
 slug: /b9f13c4b-742d-4118-be8e-0c03e43ded17
-title: 'BlackPoint Agent Deployment'
-title_meta: 'BlackPoint Agent Deployment'
+title: 'BlackPoint SnapAgent Deployment'
+title_meta: 'BlackPoint SnapAgent Deployment'
 keywords: ['agent','windows','deployment','blackpoint']
 description: 'This content is designed to install Blackpoint on Windows and macOS devices, and also supports uninstallation when required.'
 tags: ['windows','security','installation','uninstallation','macos']
@@ -20,18 +20,18 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [BlackPoint SNAP Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)               | Compound Condition                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
-| [BlackPoint SNAP Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Compound Condition                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
-| [BlackPoint SNAP Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Compound Condition                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
+| [BlackPoint SnapAgent Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)               | Compound Condition                  | Used to target eligible macOS devices for automated Blackpoint installation.                |
+| [BlackPoint SnapAgent Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)      | Compound Condition                  | Used to target supported Windows Server devices for automated Blackpoint installation.      |
+| [BlackPoint SnapAgent Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b) | Compound Condition                  | Used to target supported Windows Workstation devices for automated Blackpoint installation. |
 
 ### Automation
 
 | Content                                                             | Type                | Function                                                                               |
 | ------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------- |
-| [BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)                  | Script                  | Installs the Blackpoint SNAP agent on Windows devices.                                      |
-| [BlackPoint SNAP Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)                        | Script                  | Installs the Blackpoint SNAP agent on macOS devices.                                        |
-| [Blackpoint - SNAP-Defense - Uninstall - (macOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)          | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from macOS devices when required.        |
-| [Blackpoint - SNAP-Defense - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)       | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from Windows devices when required.      |
+| [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)                  | Script                  | Installs the Blackpoint SNAP agent on Windows devices.                                      |
+| [BlackPoint SnapAgent Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)                        | Script                  | Installs the Blackpoint SNAP agent on macOS devices.                                        |
+| [Blackpoint SnapAgent - Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)          | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from macOS devices when required.        |
+| [Blackpoint SnapAgent - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)       | Script                  | Used to manually uninstall Blackpoint SNAP-Defense from Windows devices when required.      |
 
 ### Custom Field
 
@@ -55,18 +55,18 @@ This content is designed to manage the deployment of Blackpoint across both Wind
 
 Import the following automation scripts:
 
-- [BlackPoint SNAP Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
-- [BlackPoint SNAP Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)
-- [Blackpoint - SNAP-Defense - Uninstall - (macOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)
-- [Blackpoint - SNAP-Defense - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)
+- [BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [BlackPoint SnapAgent Installer - MacOS](/docs/22a99cac-7acf-4251-a790-41a3b651f183)
+- [Blackpoint SnapAgent - Uninstall - (MacOS)](/docs/22f7e724-120f-4d80-b3fc-c6dad6944ace)
+- [Blackpoint SnapAgent - Uninstall - (Windows)](/docs/321970ff-b69d-4fb9-b9e7-6e1c3a581468)
 
 ### Step 3: Configure the following Compound Conditions
 
 Create three compound conditions targeting the appropriate device policies:
 
-- [BlackPoint SNAP Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
-- [BlackPoint SNAP Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
-- [BlackPoint SNAP Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
+- [BlackPoint SnapAgent Installer - MacOS](/docs/c4c8973c-059f-4d8b-a091-8ad01760831b)
+- [BlackPoint SnapAgent Installer - Windows Server](/docs/729cb4c0-adc7-4c9b-9274-5dd4ff093ca3)
+- [BlackPoint SnapAgent Installer - Windows Workstations](/docs/85a2de03-5004-4e90-9598-9de731bb5b6b)
 
 ## FAQ
 
