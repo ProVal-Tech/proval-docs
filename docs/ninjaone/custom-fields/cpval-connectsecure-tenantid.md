@@ -23,6 +23,7 @@ This stores the ConnectSecure deployment Tenant ID.
 ## Dependencies
 
 [Script - CyberCNSv4 ConnectSecurev4 Windows - Install/Update](/docs/d22e3b29-76a2-4385-a013-d592f6c5ae6d)
+[Script - CyberCNS ConnectSecure Mac - Install/Update](/docs/19378af5-7ee0-43b4-8051-58b280467a6c)
 
 ## Custom Field Creation
 
@@ -30,4 +31,6 @@ This stores the ConnectSecure deployment Tenant ID.
 
 ## Sample Screenshot
 
-![Sample Run 4](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image4.webp)
+![Sample Run 1](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image4.webp)
+
+![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image5.webp)
