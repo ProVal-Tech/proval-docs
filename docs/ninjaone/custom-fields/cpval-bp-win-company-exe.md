@@ -1,0 +1,36 @@
+---
+id: 'dd410db2-6305-425c-93e7-378efbf145c3'
+slug: /dd410db2-6305-425c-93e7-378efbf145c3
+title: 'cPVAL BP Win CompanyEXE'
+title_meta: 'cPVAL BP Win CompanyEXE'
+keywords: ['deployment','windows','security']
+description: 'It holds the company exe value for BlackPoint endpoint for each client.'
+tags: ['security', 'custom-fields']
+draft: false
+unlisted: false
+---
+
+## Summary
+
+This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation.
+
+## Details
+
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| cPVAL BP Win CompanyEXE | cpvalbpwincompanyexe | `Device`, `organization`, `Location` | Text | True | -- | Editable | Read/Write | Read/Write | This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation. | This field is used to store the company's installer URL value to help download the correct exe for each organization during the automation. | Provide the installer EXE URL for the company. | BlackPoint |
+
+## Dependencies
+
+- [Automation - BlackPoint SnapAgent Installer - Windows](/docs/06b6d11b-92b0-478d-9323-3f599d5caa46)
+- [Solution - BlackPoint SnapAgent Deployment](/docs/b9f13c4b-742d-4118-be8e-0c03e43ded17)
+
+## Custom Field Creation
+
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-bp-win-company-exe.toml)
+
+
+
+## Sample Screenshot
+
+![Companyexe](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/exe-client.webp)
