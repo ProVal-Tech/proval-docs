@@ -33,4 +33,4 @@ This field controls whether the AutoElevate deployment process should run on the
 
 ## Sample Screenshot
 
-![Lisence Key](../../../static/img/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b/AE%20deploy.webp)
+![Lisence Key](../../../static/img/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b/aEdeployment.webp)

@@ -31,4 +31,4 @@ Elevation Mode is a configuration parameter used during the AutoElevate agent de
 
 ## Sample Screenshot
 
-![Elevation Mode](../../../static/img/docs/03094753-93f5-41da-8a0a-d948b1165b88/Elevation-mode.webp)
+![Elevation Mode](../../../static/img/docs/03094753-93f5-41da-8a0a-d948b1165b88/elevationmode.webp)

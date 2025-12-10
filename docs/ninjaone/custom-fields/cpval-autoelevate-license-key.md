@@ -1,8 +1,8 @@
 ---
 id: '370d64a2-0799-48ca-9661-d24bd75b7f67'
 slug: /370d64a2-0799-48ca-9661-d24bd75b7f67
-title: 'cPVAL License Key'
-title_meta: 'cPVAL License Key'
+title: 'cPVAL AutoElevate License Key'
+title_meta: 'cPVAL AutoElevate License Key'
 keywords: ['agent','windows','security']
 description: 'License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant.'
 tags:  ['security','application','custom-fields']
@@ -18,7 +18,7 @@ License Key is a required parameter used during the AutoElevate agent deployment
 
 | Label                          | Field Name                 | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                             | Tool Tip | Footer Text | Custom Field Tab Name |
 | ------------------------------ | -------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | --------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL License Key | cpvalLicensekey | `Organization`, `Location`, `Device`     | Multi-Line | Yes     | -             | Editable              | Read/Write            | Read/Write     | License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant.        | AutoElevate License Key is used for agent activation       | Required for installing and registering the AutoElevate agent.    | AutoElevate  |
+| cPVAL AutoElevate License Key | cpvalAutoelevateLicenseKey | `Organization`, `Location`, `Device`     | Multi-Line | Yes     | -             | Editable              | Read/Write            | Read/Write     | License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant.        | AutoElevate License Key is used for agent activation       | Required for installing and registering the AutoElevate agent.    | AutoElevate  |
 
 ## Dependencies
 
@@ -31,4 +31,4 @@ License Key is a required parameter used during the AutoElevate agent deployment
 
 ## Sample Screenshot
 
-![Lisence Key](../../../static/img/docs/370d64a2-0799-48ca-9661-d24bd75b7f67/license-key.webp)
+![Lisence Key](../../../static/img/docs/370d64a2-0799-48ca-9661-d24bd75b7f67/lisensekey.webp)

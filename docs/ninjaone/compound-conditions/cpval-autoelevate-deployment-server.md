@@ -13,6 +13,7 @@ unlisted: false
 ## Summary
 
 This compound condition triggers the auto-deployment script for Autoelevate agent deployment on windows servers where deployment is enabled and the application is not installed.
+
 ## Details
 
 - **Name:** `AutoElevate Deployment`
@@ -25,7 +26,7 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 - [Custom Field - cPVAL AutoElevate Deployment](/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b)
 - [Custom Field - cPVAL Blocker Mode](/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418)
 - [Custom Field - cPVAL Elevation Mode](/docs/03094753-93f5-41da-8a0a-d948b1165b88)
-- [Custom Field - cPVAL License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
+- [Custom Field - cPVAL AutoElevate License Key](/docs/370d64a2-0799-48ca-9661-d24bd75b7f67)
 - [Solution - AutoElevate deployment](/docs/58fe4653-c2ac-49d3-bdf5-b8ba1e50f0c9)
 
 ## Compound Condition Creation
