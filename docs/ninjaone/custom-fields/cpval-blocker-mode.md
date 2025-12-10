@@ -1,8 +1,8 @@
 ---
 id: 'dba79f8f-132d-41cd-ae1c-6da6964bc418'
 slug: /dba79f8f-132d-41cd-ae1c-6da6964bc418
-title: 'cPVAL Blocker_Mode'
-title_meta: 'cPVAL Blocker_Mode'
+title: 'cPVAL Blocker Mode'
+title_meta: 'cPVAL Blocker Mode'
 keywords: ['agent','windows','deployment']
 description: 'Blocker Mode is a required parameter that needs to be passed during the AutoElevate agent deployment. This parameter is used to set the Blocker Mode configuration for the end user at the time of installation'
 tags:  ['security','application','security','application','custom-fields']

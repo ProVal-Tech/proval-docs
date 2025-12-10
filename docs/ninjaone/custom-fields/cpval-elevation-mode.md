@@ -1,8 +1,8 @@
 ---
 id: '03094753-93f5-41da-8a0a-d948b1165b88'
 slug: /03094753-93f5-41da-8a0a-d948b1165b88
-title: 'cPVAL Elevation_Mode'
-title_meta: 'cPVAL Elevation_Mode'
+title: 'cPVAL Elevation Mode'
+title_meta: 'cPVAL Elevation Mode'
 keywords: ['agent','windows','security']
 description: 'Elevation Mode is a configuration parameter used during the AutoElevate agent deployment. It determines how privilege elevation requests are handled on the device once the agent is installed'
 tags:  ['security','application','custom-fields']

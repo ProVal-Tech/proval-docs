@@ -1,8 +1,8 @@
 ---
 id: '370d64a2-0799-48ca-9661-d24bd75b7f67'
 slug: /370d64a2-0799-48ca-9661-d24bd75b7f67
-title: 'cPVAL License_Key'
-title_meta: 'cPVAL License_Key'
+title: 'cPVAL License Key'
+title_meta: 'cPVAL License Key'
 keywords: ['agent','windows','security']
 description: 'License Key is a required parameter used during the AutoElevate agent deployment. It authorizes the agent to register with the correct AutoElevate tenant.'
 tags:  ['security','application','custom-fields']
