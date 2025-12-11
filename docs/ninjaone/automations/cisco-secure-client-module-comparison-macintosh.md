@@ -31,7 +31,7 @@ Compares the number of installed `Cisco Secure Client` modules with the number o
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-module-comparison-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-module-comparison-macintosh.sh)
 
 ## Output
 

@@ -44,7 +44,7 @@ Attempts to install the modules selected in [cPVAL Cisco Secure Client Modules](
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-package-installation-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-package-installation-macintosh.sh)
 
 ## Output
 

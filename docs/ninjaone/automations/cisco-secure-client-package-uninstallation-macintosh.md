@@ -24,7 +24,7 @@ Uninstalls all Cisco Secure Client modules from macOS systems using the built-in
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-package-uninstallation-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cisco-secure-client-package-uninstallation-macintosh.sh)
 
 ## Output
 
