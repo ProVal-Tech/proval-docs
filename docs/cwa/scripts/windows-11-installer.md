@@ -21,13 +21,16 @@ Supports multiple source types including HTTP/HTTPS URLs, local files, and netwo
 
 Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe)  
 
-**File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
-**File Hash (SHA256)**: `A68975D6271C12BF97AC0729238243522B583DB380C23CE02A30465C5920C158`  
-**File Hash (MD5)**: `AF7B7BCC67C7A197F9A3BAFF27689D81`  
+## File Hash
+- **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
+- **File Hash (SHA256)**: `A68975D6271C12BF97AC0729238243522B583DB380C23CE02A30465C5920C158`  
+- **File Hash (MD5)**: `AF7B7BCC67C7A197F9A3BAFF27689D81`  
 
-**File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
-**File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
-**File Hash (MD5)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
+------
+
+- **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\Check-ReservedPartition.ps1`  
+- **File Hash (SHA256)**: `DC034BC8A20D8E8CB41D5B737F1E31FC858C57385DE668369BAA825D470C9450`  
+- **File Hash (MD5)**: `4A51DD45AB4E85DDFCA33D2F98875C7F`  
 
 > **Notes:**  
 > • If the script is run without the **NoReboot** flag, it will automatically schedule itself to run again 30 minutes after the upgrade completes to perform validation.  
@@ -36,30 +39,30 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 > • The **Version** parameter can be set to **24H2** or **25H2**, depending on your requirement.  
 > • When using the **Version** parameter, you do not need to host an ISO or ZIP file or supply the **Uri**.
 
-## Update Notice
+## Update Notices
 
-## Update Notice: 8 December, 2024
+### Update Notice: 8 December, 2025
 
 - Introduce a new parameter `Version`
 - Currently supported versions are `24H2` and `25H2`
 
-## Update Notice: 3 November, 2025
+### Update Notice: 3 November, 2025
 
 - Updated to support Windows 11
 - Updated to support UNC path
 - Updated to support Azure Blob Storage URLs with SAS tokens (must be a direct download URL)
 
-## Update Notice: 8 October, 2025
+### Update Notice: 8 October, 2025
 
 - The script has been updated to support local paths in the URI.
 - It now removes the installers and extracted files before running the installation.
 
-## Update Notice: 15 January, 2025
+### Update Notice: 15 January, 2025
 
 The script has been updated to address the `InsufficientSystemPartitionDiskSpaceHardblock` issue.
 
-**Reference**: [InsufficientSystemPartitionDiskSpaceHardblock](https://support.microsoft.com/en-us/help/3086249/-we-couldn-t-update-system-reserved-partition-error-installing-windows)  
-**Acknowledgment:** `Hunter Line (Aptica, LLC) for their valuable contributions.`
+- **Reference**: [InsufficientSystemPartitionDiskSpaceHardblock](https://support.microsoft.com/en-us/help/3086249/-we-couldn-t-update-system-reserved-partition-error-installing-windows)  
+- **Acknowledgment:** `Hunter Line (Aptica, LLC) for their valuable contributions.`
 
 ## Sample Run
 
@@ -71,7 +74,7 @@ The script has been updated to address the `InsufficientSystemPartitionDiskSpace
 
 ![Image](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/sample2.webp)
 
-### Example 3: Install Windows 11 from a custom url
+### Example 3: Install Windows 11 from a custom URL
 
 ![Image](../../../static/img/docs/a4668ce4-9788-47a9-bb3b-1997367803ad/sample3.webp)
 

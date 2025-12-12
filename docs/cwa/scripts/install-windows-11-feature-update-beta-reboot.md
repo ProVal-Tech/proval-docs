@@ -50,7 +50,7 @@ This helps ensure that the update process runs smoothly without being blocked or
 
 ## Dependencies
 
-[Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0).
+[Install-WindowsFeatureUpdate](/docs/837e00a9-4fde-4457-9516-591da7ba4da0)
 
 ## User Parameters
 

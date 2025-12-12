@@ -15,11 +15,11 @@ unlisted: false
 This article outlines the process to add the `Windows Feature Update` option in the `Self Help` menu.  
 ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_1.webp)  
 
-The `Windows Feature Update` option runs the `Windows 11 Installer` [script](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) to install Windows 11 24H2 on the computer.
+The `Windows Feature Update` option runs the [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad) script to install Windows 11 24H2 on the computer.
 
 ## Dependencies
 
-[Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  
+- [Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  
 
 ## Implementation
 
@@ -28,7 +28,7 @@ The `Windows Feature Update` option runs the `Windows 11 Installer` [script](/do
 2. Reload System Cache:  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_2.webp)  
 
-3. Navigate to Automation > Templates > Agent Templates:  
+3. Navigate to `Automation` > `Templates` > `Agent Templates`:  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_3.webp)  
 
 4. The Agent Templates menu will appear:  
@@ -46,7 +46,7 @@ The `Windows Feature Update` option runs the `Windows 11 Installer` [script](/do
    - **Menu Action**: Script  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_7.webp)  
 
-8. Select the `ProVal/Windows/Windows 11 Installer*` script from the `Select a Script` dropdown menu.  
+8. Select the `ProVal/Windows/Windows 11 Installer` script from the `Select a Script` dropdown menu.  
    ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_8.webp)  
 
 9. Click the `Save` button to save the changes made to the `Custom Tray Menu Editor`:  

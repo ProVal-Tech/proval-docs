@@ -6,7 +6,7 @@ title_meta: 'Windows 11 24H2 Installation'
 keywords: ['windows', 'readiness', 'plugin', 'compatibility', 'upgrade']
 description: 'This solution is designed to automate the upgrade from Windows 10 to Windows 11'
 tags: ['database', 'report', 'setup', 'update', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -72,7 +72,7 @@ The following scripts have been incorporated into the solution:
 
 ## Implementation
 
-1. Implement the Windows 11 Compatibility Audit solution as instructed in this document.  
+1. Implement the [Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c) solution as instructed in this document.  
 
 2. Import the following content using the ProSync Plugin:
     - [Script : Windows 11 Installer](/docs/a4668ce4-9788-47a9-bb3b-1997367803ad)  
@@ -87,8 +87,8 @@ The following scripts have been incorporated into the solution:
 
 4. Configure the solution as outlined below:  
     - Navigate to Automation --> Monitors within the CWA Control Center and setup the following:  
-        - [Internal Monitor : Install Windows 11 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)  
-            - Alert Template: △ Custom - Install Windows 11 - Compatible Machines
+        - [Internal Monitor : Install Windows 11 24H2 - Compatible Machines](/docs/db122f12-3d6b-48ae-8c8b-e9de9797ecad)  
+            - Alert Template: `△ Custom - Install Windows 11 - Compatible Machines`
             - Right-click and Run Now to start the monitor
 
 5. Schedule the [Script: Windows 11 Upgrade Failure [Ticket]](/docs/ad564b3a-e4dc-4e47-90dd-52ca8fbc6d52) script to run once per day.  
