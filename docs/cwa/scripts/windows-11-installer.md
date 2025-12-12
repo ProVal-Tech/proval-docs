@@ -23,8 +23,8 @@ Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https:
 
 ## File Hash
 - **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
-- **File Hash (SHA256)**: `A68975D6271C12BF97AC0729238243522B583DB380C23CE02A30465C5920C158`  
-- **File Hash (MD5)**: `AF7B7BCC67C7A197F9A3BAFF27689D81`  
+- **File Hash (SHA256)**: `54AF67BF1D9F862F0E91D2591EE2033074EF6151F2BB43E74292235BBF99BCC4`  
+- **File Hash (MD5)**: `DCF1763E3DED1B4AA04F97511EE5A2E2`  
 
 ------
 
