@@ -19,7 +19,7 @@ Designed to upgrade Windows systems to the latest version. It can be used to:
 
 Supports multiple source types including HTTP/HTTPS URLs, local files, and network shares (UNC paths).
 
-Download URL: [https://file.provaltech.com/repo/app/windows-upgrader.exe](https://file.provaltech.com/repo/app/windows-upgrader.exe)  
+
 
 ## File Hash
 - **File Path**: `C:\ProgramData\_automation\app\windows-upgrader\windows-upgrader.exe`  
