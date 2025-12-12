@@ -27,7 +27,7 @@ Downloads and installs the Cisco Umbrella Root CA certificate to the Local Machi
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-cisco-umbrella-root-ca-certificate-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-cisco-umbrella-root-ca-certificate-macintosh.sh)
 
 ## Output
 
