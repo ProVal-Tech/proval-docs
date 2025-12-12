@@ -26,7 +26,7 @@ Stores the Addigy Policy ID for this organization. Ensures all macOS devices rep
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-policy-id.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-policy-id.toml)
 
 ## Sample Screenshot
 

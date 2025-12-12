@@ -26,7 +26,7 @@ Controls Addigy agent auto-deployment for macOS devices. Choose Enable to deploy
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-agent-deployment.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-agent-deployment.toml)
 
 ## Sample Screenshot
 

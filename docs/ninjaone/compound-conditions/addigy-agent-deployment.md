@@ -17,7 +17,7 @@ Executes [Install Addigy Agent [Macintosh]](/docs/fd5e79e9-e9bf-4d8a-ba85-d61bf6
 ## Details
 
 - **Name:** `Addigy Agent Deployment`  
-- **Description:** `Executes Install Addigy Agent [Macintosh] script on the machines where Addigy Agent deployment is enabled and either of "MacManage" or "MacManageHelper" applications are not installed.`  
+- **Description:** `Executes "Install Addigy Agent [Macintosh]" script on the machines where Addigy Agent deployment is enabled and either of "MacManage" or "MacManageHelper" applications are not installed.`  
 - **Recommended Agent Policies:** `Mac Policy [Default]`
 
 ## Dependencies
@@ -28,4 +28,4 @@ Executes [Install Addigy Agent [Macintosh]](/docs/fd5e79e9-e9bf-4d8a-ba85-d61bf6
 
 ## Compound Condition Creation
 
-[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/addigy-agent-deployment.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/addigy-agent-deployment.toml)

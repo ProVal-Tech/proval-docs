@@ -40,7 +40,7 @@ Downloads and installs the Addigy Agent using dynamic NinjaRMM parameters (Org I
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-addigy-agent-macintosh.ps1)
+- s[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/install-addigy-agent-macintosh.sh)
 
 ## Output
 

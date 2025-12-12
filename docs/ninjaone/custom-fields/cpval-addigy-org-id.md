@@ -26,7 +26,7 @@ Store the Addigy Organization ID here for automatic application to all devices. 
 
 ## Custom Field Creation
 
-[Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-org-id.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-addigy-org-id.toml)
 
 ## Sample Screenshot
 
