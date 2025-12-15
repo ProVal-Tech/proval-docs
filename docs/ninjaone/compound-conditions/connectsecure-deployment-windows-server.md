@@ -34,6 +34,8 @@ This is required for deploying the ConnectSecure to the Windows Servers using au
 
 [Script - CyberCNS ConnectSecure Mac - Install/Update](/docs/19378af5-7ee0-43b4-8051-58b280467a6c)
 
+[Solution - Install ConnectSecure Windows/Mac](/docs/0e33b1a2-5539-4451-b49d-2ba9b7f904dd)
+
 ## Compound Condition Creation 
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cpval-connect-secure-windows-server.toml)

@@ -23,7 +23,10 @@ This is required to be set for the compound condition to set the ConnectSecure d
 ## Dependencies
 
 [Script - CyberCNSv4 ConnectSecurev4 Windows - Install/Update](/docs/d22e3b29-76a2-4385-a013-d592f6c5ae6d)
+
 [Script - CyberCNS ConnectSecure Mac - Install/Update](/docs/19378af5-7ee0-43b4-8051-58b280467a6c)
+
+[Solution - Install ConnectSecure Windows/Mac](/docs/0e33b1a2-5539-4451-b49d-2ba9b7f904dd)
 
 ## Custom Field Creation
 
@@ -33,4 +36,4 @@ This is required to be set for the compound condition to set the ConnectSecure d
 
 ![Sample Run 1](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image4.webp)
 
-![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image5.webp)
+![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image12.webp)
