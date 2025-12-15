@@ -1,6 +1,6 @@
 ---
-id: '0c8af7de-f025-4d26-a482-6a010bf687be'
-slug: /0c8af7de-f025-4d26-a482-6a010bf687be
+id: '7eb02eb3-4672-403f-96ea-23c916f8dff2'
+slug: /7eb02eb3-4672-403f-96ea-23c916f8dff2
 title: 'Install Google Chrome Extension'
 title_meta: 'Install Google Chrome Extension'
 keywords: ['extension', 'browser', 'edge', 'chrome']
