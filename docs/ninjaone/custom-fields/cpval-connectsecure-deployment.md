@@ -4,7 +4,7 @@ slug: /9065b847-eadf-4f4a-9021-28ef2fc0f6cf
 title: 'cpval ConnectSecure Deployment'
 title_meta: 'cpval ConnectSecure Deployment'
 keywords: ['cybercns', 'connectsecure', 'vulnerability', 'management']
-description: 'This is required to be set for the compound condition to set the ConnectSecure deployment.'
+description: 'This is required to be set for the compound condition to set the ConnectSecure deployment'
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
