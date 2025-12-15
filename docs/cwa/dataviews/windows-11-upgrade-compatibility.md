@@ -45,6 +45,7 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | OS Drive Free Space GB           | Free Space available in C:\ drive in GB.      |
 | Script Last Ran      | The last time the compatibility check script was run against the target device.                     |
 | Last User            | Last user logged on to the machine according to Automate.                                          |
+| Is ESU Activated          | Yes, if Extended Security Updates (ESU) license is activated on the machine.  |
 
 ## Format Control
 
