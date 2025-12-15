@@ -43,7 +43,7 @@ Supports multiple source types including HTTP/HTTPS URLs, local files, and netwo
 
 ### Update Notice: 8 December, 2025
 
-- Introduce a new parameter `Version`
+- Introduced a new parameter `Version`
 - Currently supported versions are `24H2` and `25H2`
 
 ### Update Notice: 3 November, 2025
