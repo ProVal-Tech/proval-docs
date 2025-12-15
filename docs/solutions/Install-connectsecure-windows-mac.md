@@ -1,18 +1,18 @@
 ---
 id: '0e33b1a2-5539-4451-b49d-2ba9b7f904dd'
 slug: /0e33b1a2-5539-4451-b49d-2ba9b7f904dd
-title: 'Install ConnectSecure Windows/Mac'
-title_meta: 'Install ConnectSecure Windows/Mac'
+title: 'Install ConnectSecure Windows-Mac'
+title_meta: 'Install ConnectSecure Windows-Mac'
 keywords: ['cybercns', 'connectsecure', 'vulnerability', 'management']
-description: 'This solution performs the ConnectSecure v4 installation for MAC/Windows.'
+description: 'This solution performs the ConnectSecure v4 installation for MAC or Windows.'
 tags: ['vulnerability', 'security']
-draft: true
+draft: false
 unlisted: false
 ---
 
 ## Purpose
 
-This solution performs the ConnectSecure v4 installation for MAC/Windows.
+This solution performs the ConnectSecure v4 installation for MAC or Windows.
 
 ## Associated Content
 
