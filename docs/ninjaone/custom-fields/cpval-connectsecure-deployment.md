@@ -36,4 +36,4 @@ This is required to be set for the compound condition to set the ConnectSecure d
 
 ![Sample Run 1](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image4.webp)
 
-![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image12.webp)
+![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image13.webp)
