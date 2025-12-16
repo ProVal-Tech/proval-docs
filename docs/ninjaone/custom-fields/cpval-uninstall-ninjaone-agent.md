@@ -29,4 +29,4 @@ This custom field is populated by the “Uninstall NinjaOne Agent” script afte
 
 ## Sample Screenshot
 
-![Image](../../../static/img/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0/image2.webp)
+![Image](../../../static/img/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0/image1.webp)
