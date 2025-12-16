@@ -23,7 +23,7 @@ This compound condition controls whether BitLocker initialization runs on Window
 ## Dependencies
 
 - [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b)
-- [Automation - Initialize Bitlocker](/docs/d6d4249e-b614-4474-a7d6-2ae28417f83f)
+- [Automation - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 
 ## Compound Condition Creation
 
