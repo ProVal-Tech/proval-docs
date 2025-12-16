@@ -63,6 +63,10 @@ The default volume to encrypt is System Drive.
 - [Custom Field - cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47)
 - [Custom Field - cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b)
 
+## Automation Setup/Import
+
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/initialize-bitlocker.ps1)
+
 ## Output
 
 Activity Logs
