@@ -36,7 +36,7 @@ This script will enable or disable Windows Fast Boot, also known as Hiberboot or
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Action | Enable Fast Boot and Hibernation |<ul><li>`Enable Fast Boot and Hibernation`</li><li>`Disable Fast Boot`</li><li>`Disable Fast Boot and Hibernation`</ul> | True |  | String/Text | Enable or Disable Fast Startup and Hibernation. |
+| Action | Enable Fast Boot and Hibernation |<ul><li>`Enable Fast Boot and Hibernation`</li><li>`Disable Fast Boot`</li><li>`Disable Fast Boot and Hibernation`</li></ul> | True |  | String/Text | Enable or Disable Fast Startup and Hibernation. |
 
 ## Automation Setup/Import
  
