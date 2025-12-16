@@ -1,0 +1,71 @@
+---
+id: 'e3a24552-f347-4117-82f5-7afaaa3fc198'
+slug: /e3a24552-f347-4117-82f5-7afaaa3fc198
+title: 'Initialize Bitlocker'
+title_meta: 'Initialize Bitlocker'
+keywords: ['bitlocker','initialization','encryption']
+description: 'Automates BitLocker initialization on Windows via Ninja RMM custom fields. Validates parameters, sets mount point, encryption method, key protector, PIN/password, and AD/path, downloads a helper script, executes it, and logs output for auditing.'
+tags: ['encryption','custom-fields','bitlocker','security']
+draft: false
+unlisted: false
+---
+
+## Description
+
+Automates BitLocker initialization on Windows via Ninja RMM custom fields. Validates parameters, sets mount point, encryption method, key protector, PIN/password, and AD/path, downloads a helper script, executes it, and logs output for auditing.
+
+Note: `This is only compatible for Windows devices.`
+
+## Requirements
+
+PowerShell v5
+
+Update the custom fields with the data so that script will use that settings.
+
+## Usage
+
+The script takes multiple switches that determine the type of encryption that will be implemented. The script will first validate the following items:
+
+- If the protection status of the drive is currently "On", then the script will print the current status and encryption percentage and exit.
+- If the BitLocker volume is currently suspended, then protection will be resumed.
+- If the BitLocker volume currently has an encryption or decryption process running against it, then it will exit and prompt the operator to re-run the script after the process finishes.
+- If all of the above checks pass and there is still a key protector (or multiple key protectors) installed, then it/they will be removed.
+
+The script will then check for an existing TPM chip.
+
+If a TPM chip exists, then the script will validate that the chip is initialized. If `-AllowTPMInit` is passed, the chip will be initialized if it is not already. If `-AllowRestart` was passed, then the computer will be shut down or rebooted based on the requirements of the TPM initialization.
+
+If a TPM chip is not found and `-TpmProtector`, `-TpmAndPinProtector`, `-TpmAndStartupKeyProtector`, or `-TpmAndPinAndStartupKeyProtector` were passed, then the script will exit with an error.
+
+Otherwise, if a TPM chip is not found, the script will continue. The drive will be encrypted based on the passed switches.
+
+If a recovery password was installed, then an attempt to back it up to Active Directory will be made.
+
+If `-AllowRestart` was passed, then the computer will be rebooted to complete the encryption process if `-SkipHardwareTest` was not passed.
+
+Encrypts the Any Volume (A, B, C,....,Z): volume with a password protector using Aes128. Will initialize TPM if needed and reboot the computer after completion.
+The default volume to encrypt is System Drive.
+
+## Sample Run
+
+`Play Button` > `Run Automation` > `Script`  
+![SampleRun1](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/initialize-bitlocker.webp)
+
+## Dependencies
+
+- [Custom Field - cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057)
+- [Custom Field - cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac)
+- [Custom Field - cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b)
+- [Custom Field - cPVAL BitLocker Initialization](/docs/16881247-a7d2-477c-9215-2bd25a936641)
+- [Custom Field - cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0)
+- [Custom Field - cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea)
+- [Custom Field - cpval Mountpoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926)
+- [Custom Field - cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47)
+- [Custom Field - cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b)
+
+## Output
+
+Activity Logs
+- .\\Initialize-BitLockerVolume-log.txt
+- .\\Initialize-BitLockerVolume-data.txt
+- .\\Initialize-BitLockerVolume-error.txt
