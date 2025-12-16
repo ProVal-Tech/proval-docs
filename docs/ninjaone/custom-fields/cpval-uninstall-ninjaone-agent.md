@@ -6,7 +6,7 @@ title_meta: 'cPVAL Uninstalled Ninja Agent'
 keywords: ['ninja-one', 'ninjarmm', 'agent', 'uninstall-ninja', 'remove-ninja', 'uninstall-ninjaone-agent']
 description: 'This custom field is populated by the “Uninstall NinjaOne Agent” script after the agent has been removed, providing confirmation that the uninstall process completed successfully.'
 tags:  ['uninstallation', 'application']
-draft: False
+draft: false
 unlisted: false
 ---
 
