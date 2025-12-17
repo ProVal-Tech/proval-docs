@@ -29,7 +29,6 @@ This solution contains the Windows App installation and deployment.
 - Import the Alert Template `△ Custom - Execute Script - Install Windows App`
 - Apply the alert template to the monitor.
 - Run now and reset the monitor
-  ![Sample Run](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image6.webp)
 
 - Or the script can run on-demand too.
 
