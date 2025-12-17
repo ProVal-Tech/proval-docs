@@ -1,8 +1,8 @@
 ---
 id: 'dd445ce7-a149-452c-9b35-dc1adbab4e06'
 slug: /dd445ce7-a149-452c-9b35-dc1adbab4e06
-title: 'Winget - Install/Update'
-title_meta: 'Winget - Install/Update'
+title: 'Winget - Install/Update [Autofix,Param]'
+title_meta: 'Winget - Install/Update [Autofix,Param]'
 keywords: ['winget', 'package', 'install', 'endpoint']
 description: 'This document provides a detailed guide on how to install a Winget package on a target endpoint, including sample runs, dependencies, and parameters required for the process.'
 tags: ['installation', 'software', 'windows']
@@ -23,13 +23,15 @@ This document explains how to install a Winget package on a target endpoint.
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 - [Solution - Update/Deploy Target Application to Latest Version [Winget]](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
 
-### Global Parameters
+## Global Variables
 
-| Name        | Example                | Required | Description                                                                 |
-|-------------|------------------------|----------|-----------------------------------------------------------------------------|
-| ProjectName | Invoke-WingetProcessor | True     | This represents the name of the Agnostic script and should not be changed. |
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ProjectName | Invoke-WingetProcessor | | This references the Agnostic Script name without the .ps1 and should not be changed. |
 
-### User Parameters
+## User Parameters
 
 | Name      | Example                          | Required | Description                                |
 |-----------|----------------------------------|----------|--------------------------------------------|

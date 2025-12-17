@@ -23,9 +23,16 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 | Name              | Description                           |
 |-------------------|---------------------------------------|
 | ProjectName       | Invoke-VCRedistModule                 |
-| WorkingDirectory   | C:/ProgramData/_automation/script/Install-VCRedist |
+| WorkingDirectory   | C:\ProgramData\_automation\script\Install-VCRedist |
 
-### User Parameters
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+
+## User Parameters
 
 | Name     | Example               | Required | Description                                                                                   |
 |----------|-----------------------|----------|-----------------------------------------------------------------------------------------------|

@@ -32,8 +32,15 @@ This script gathers information about user profiles. The data is stored in the c
 
 ## Dependencies
 
-- [EPM - Accounts - Agnostic - Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)
+- [Get-UserProfiles](/docs/dee76265-9071-47bb-9262-d656dd8b5c6d)
 - PowerShell v5
+
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Output
 
