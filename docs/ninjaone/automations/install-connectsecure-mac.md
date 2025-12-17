@@ -4,7 +4,7 @@ slug: /19378af5-7ee0-43b4-8051-58b280467a6c
 title: 'CyberCNS ConnectSecure Mac - Install/Update'
 title_meta: 'CyberCNS ConnectSecure Mac - Install/Update'
 keywords: ['cybercns', 'connectsecure', 'vulnerability', 'management']
-description: 'Install and Update the ConnectSecure v4 on Mac'
+description: 'Installs and Updates the ConnectSecure v4 on Mac'
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Install and Update the ConnectSecure v4 on Mac
+Installs and Updates the ConnectSecure v4 on Mac
 
 ## Sample Run
 
@@ -27,13 +27,10 @@ Install and Update the ConnectSecure v4 on Mac
 
 ## Dependencies
 
-[cpval ConnectSecure CompanyID](/docs/c104e227-d5f3-432b-90fa-f31186536181)
-
-[cpval ConnectSecure TenantID](/docs/3d1a16b3-688c-4911-a92d-835a578254a9)
-
-[cpval ConnectSecure Deployment](/docs/9065b847-eadf-4f4a-9021-28ef2fc0f6cf)
-
-[Solution - Install ConnectSecure Windows/Mac](/docs/0e33b1a2-5539-4451-b49d-2ba9b7f904dd)
+- [cPVAL ConnectSecure CompanyID](/docs/c104e227-d5f3-432b-90fa-f31186536181)
+- [cPVAL ConnectSecure TenantID](/docs/3d1a16b3-688c-4911-a92d-835a578254a9)
+- [cPVAL ConnectSecure Deployment](/docs/9065b847-eadf-4f4a-9021-28ef2fc0f6cf)
+- [Solution - Install ConnectSecure Windows/Mac](/docs/0e33b1a2-5539-4451-b49d-2ba9b7f904dd)
 
 
 ## Automation Setup/Import
@@ -42,5 +39,4 @@ Install and Update the ConnectSecure v4 on Mac
 
 ## Output
 
-- Activity Details  
-- Custom Field
+- Activity Details
