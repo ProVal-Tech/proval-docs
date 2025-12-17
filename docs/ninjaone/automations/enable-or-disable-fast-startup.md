@@ -14,9 +14,9 @@ unlisted: false
 
 This script will enable or disable Windows Fast Boot, also known as Hiberboot or Fast Startup.
 
-- Enabling will enable the option to hibernate as it is a requirement for Fast Boot.
-- Disabling will disable the Fast Boot option only, leaving hibernation enabled.
-- Disabling with the DisableHibernation switch will disable both Fast Boot and Hibernation. 
+- `Enable Fast Boot and Hibernation` will enable the both FastBoot and Hibernate.
+- `Disable Fast Boot` will disable the Fast Boot option only, leaving hibernation enabled.
+- `Disable Fast Boot and Hibernation` will disable both Fast Boot and Hibernation. 
 - This script is executed as automation script from Compound Conditions [FastBoot Config Windows Server](/docs/95088908-fbea-4007-8914-f5b49d797dfe) and [FastBoot Config Windows Workstations](/docs/3ac6bda9-175b-4585-b252-b7456a440cdd)
 
 ## Sample Run
@@ -36,7 +36,7 @@ This script will enable or disable Windows Fast Boot, also known as Hiberboot or
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Action | Enable Fast Boot and Hibernation |<ul><li>`Enable Fast Boot and Hibernation`</li><li>`Disable Fast Boot`</li><li>`Disable Fast Boot and Hibernation`</li></ul> | True |  | String/Text | Enable or Disable Fast Startup and Hibernation. |
+| Action | Enable Fast Boot and Hibernation |<ul><li>`Enable Fast Boot and Hibernation`</li><li>`Disable Fast Boot`</li><li>`Disable Fast Boot and Hibernation`</li></ul> | True |  | String/Text | <ul><li>`Enable Fast Boot and Hibernation` will enable the both FastBoot and Hibernate.</li><li>`Disable Fast Boot` will disable the Fast Boot option only, leaving hibernation enabled.</li><li>`Disable Fast Boot and Hibernation` will disable both Fast Boot and Hibernation.</li></ul> |
 
 ## Automation Setup/Import
  
