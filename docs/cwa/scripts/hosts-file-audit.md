@@ -23,8 +23,8 @@ This script can be run on a single agent or scheduled on a batch of computers on
 ## Process
 
 1. Run a PowerShell command to return all custom results inside the Windows host file, separated by commas.
-2. Update the Host File Contents EDF under Host File Info.
+2. Update the `Host File Contents` EDF under Host File Info.
 
 ## Output
 
-This script outputs information into the Host File Contents EDF and can be displayed in a Dataview for monitoring if desired.
+This script outputs information into the computer EDF `Host File Contents` and can be displayed in a Dataview for monitoring if desired.
