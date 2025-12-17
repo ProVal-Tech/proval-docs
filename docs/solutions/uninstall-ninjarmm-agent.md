@@ -24,6 +24,6 @@ The purpose of this solution is to uninstall Ninja RMM agent from Windows machin
 
 ## Implementation
 
-- Create the [Custom Field : cPVAL Uninstalled Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0) using the implementation instruction provided in the document.  
+- Create the [Custom Field : cPVAL Uninstall Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0) using the implementation instruction provided in the document.  
 - Create the [Script : Uninstall NinjaOne Agent](/docs/1efc6b0c-bfd0-4d80-b4c5-e32defa31bc6) using the implementation instruction provided in the document.
-- Create the [Custom Field : cPVAL Uninstalled Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0)  using the implementation instruction provided in the document.
+- Create the [Group : cPVAL Uninstalled Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0)  using the implementation instruction provided in the document.

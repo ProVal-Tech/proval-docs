@@ -1,8 +1,8 @@
 ---
 id: 'fa1632f1-0fd8-4cc7-88da-7b2e20e122c0'
 slug: /fa1632f1-0fd8-4cc7-88da-7b2e20e122c0
-title: 'cPVAL Uninstalled Ninja Agent'
-title_meta: 'cPVAL Uninstalled Ninja Agent'
+title: 'cPVAL Uninstall Ninja Agent'
+title_meta: 'cPVAL Uninstall Ninja Agent'
 keywords: ['ninja-one', 'ninjarmm', 'agent', 'uninstall-ninja', 'remove-ninja', 'uninstall-ninjaone-agent']
 description: 'This custom field is populated by the “Uninstall NinjaOne Agent” script after the agent has been removed, providing confirmation that the uninstall process completed successfully.'
 tags:  ['uninstallation', 'application']
