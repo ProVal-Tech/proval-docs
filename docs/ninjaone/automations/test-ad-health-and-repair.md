@@ -24,8 +24,8 @@ Search and select `Test Ad Health and Repair`
 Set the required arguments and click the `Run` button to run the script.  
 - **Run As:** `System`  
 - **Preset Parameter:** `<Leave it Blank>`  
-- **SelfHeal:** `Initiates self-healing actions if AD issues are detected.Leave it blank to disable self-healing for the AD health issue fix, or set any value, such as 1, to enable the self-healing feature.`  
-- **RestartAllADService:** `Restarts all core AD-related services if issues are detected and SelfHeal is enabled.Leave it blank for no action, or set it to any value to allow all AD services to restart. Note: The SelfHeal parameter must be enabled for this feature to operate.`  
+- **SelfHeal:** `Initiates self-healing actions if AD issues are detected.Leave it blank to disable self-healing for the AD health issue fix, or set it to 1, to enable the self-healing feature.`  
+- **RestartAllADService:** `Restarts all core AD-related services if issues are detected and SelfHeal is enabled. Leave it blank for no action, or set it to 1, to allow all AD services to restart. Note: The SelfHeal parameter must be enabled for this feature to operate.`  
 - **ServicesToRestart:**  `Specify one or more AD-related services to restart if issues are detected and SelfHeal is enabled. Ex: DNS, Netlogon. Note: The SelfHeal parameter must be enabled for this feature to operate.`  
 
 ![SampleRun3](../../../static/img/docs/a8dc35d7-4708-4eca-9a3f-dca89cf90184/image1.webp)
@@ -42,8 +42,8 @@ Set the required arguments and click the `Run` button to run the script.
 
 | Name | Required | Accepted Values | Default | Type | Description |
 | ---- | -------- | --------------- | ------- | ---- | ----------- |
-| SelfHeal | False | 1 | | String/Text | Initiates self-healing actions if AD issues are detected. Leave it blank to disable self-healing for the AD health issue fix, or set any value, such as 1, to enable the self-healing feature. |
-| RestartAllADService | False | 1 | | String/Text | Restarts all core AD-related services if issues are detected and SelfHeal is enabled.Leave it blank for no action, or set it to any value to allow all AD services to restart. Note: The SelfHeal parameter must be enabled for this feature to operate. |
+| SelfHeal | False | 1 | | String/Text | Initiates self-healing actions if AD issues are detected. Leave it blank to disable self-healing for the AD health issue fix, or set it to 1, to enable the self-healing feature. |
+| RestartAllADService | False | 1 | | String/Text | Restarts all core AD-related services if issues are detected and SelfHeal is enabled. Leave it blank for no action, or set it to 1, to allow all AD services to restart. Note: The SelfHeal parameter must be enabled for this feature to operate. |
 | ServicesToRestart | False | DNS, Netlogon | | String/Text | Specify one or more AD-related services to restart if issues are detected and SelfHeal is enabled. Ex: DNS, Netlogon. Note: The SelfHeal parameter must be enabled for this feature to operate. |
 
 
