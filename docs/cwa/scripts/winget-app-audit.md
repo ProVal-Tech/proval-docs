@@ -41,6 +41,7 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 
 - [Internal Monitor - Execute Script - Winget App Audit](/docs/af67ed08-40af-4899-ae8f-5e64f9bfb851)
 - [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Solution - Winget Auto Update](docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
 ## Global Variables
 

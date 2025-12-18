@@ -16,9 +16,14 @@ This script is designed to gather the latest version of applications supported b
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Get-WingetPackageLatestVersion\Get-WingetPackageLatestVersion.ps1`  
-**File Hash (Sha256):** `88C430DB16D0CD9E76C3B3650E76F6D7B06C79F42678F2C65138687EA9C546E7`  
-**File Hash (MD5):** `885A601D6A2A0EA69C8073C165FBAB54`  
+- **File Path:** `C:\ProgramData\_automation\Script\Get-WingetPackageLatestVersion\Get-WingetPackageLatestVersion.ps1`  
+- **File Hash (Sha256):** `88C430DB16D0CD9E76C3B3650E76F6D7B06C79F42678F2C65138687EA9C546E7`  
+- **File Hash (MD5):** `885A601D6A2A0EA69C8073C165FBAB54`  
+
+## Dependencies
+
+- [Solution - Update/Deploy Target Application to Latest Version [Winget]](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
+
 
 ## Sample Run
 

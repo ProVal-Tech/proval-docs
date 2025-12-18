@@ -91,9 +91,10 @@ The script's default nature is to compare the existing configuration before runn
 
 ## Dependencies
 
-[WAU.zip](https://github.com/Romanitho/Winget-AutoUpdate/releases/download/v2.2.0/WAU.zip)  
-[https://github.com/Romanitho/Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate)  
-Internal Monitor - Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331)
+- [WAU.zip](https://github.com/Romanitho/Winget-AutoUpdate/releases/download/v2.2.0/WAU.zip)  
+- [https://github.com/Romanitho/Winget-AutoUpdate](https://github.com/Romanitho/Winget-AutoUpdate)  
+- [Internal Monitor - Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331)
+- [Solution - Winget Auto Update](docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
 ## Global Variables
 

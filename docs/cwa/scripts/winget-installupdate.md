@@ -18,9 +18,9 @@ Please find the application package at the following URL: [https://winget.run/se
 
 ## File Hash
 
-**Script Path:** `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Invoke-WingetProcessor.ps1`  
-**File Hash (SHA256):** `E77F11DF22570228C4C076EA5181F5C4432C8C29501C4537574D6D9DA4ED077C`  
-**File Hash (MD5):** `988151DA4B1FF497FE63C71C2141C4EB`
+- **Script Path:**  `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Invoke-WingetProcessor.ps1`  
+- **File Hash (SHA256):** `E77F11DF22570228C4C076EA5181F5C4432C8C29501C4537574D6D9DA4ED077C`  
+- **File Hash (MD5):** `988151DA4B1FF497FE63C71C2141C4EB`
 
 ## Sample Run
 
@@ -44,7 +44,7 @@ Please find the application package at the following URL: [https://winget.run/se
 | Name      | Example                          | Required | Description                                |
 |-----------|----------------------------------|----------|--------------------------------------------|
 | PackageId | Cisco.CiscoWebexMeetings        | True     | The Winget package you wish to install.   |
-| Scope     | msstorewinget                   | True     | The source to use when obtaining the package. |
+| Scope     | msstore, winget                   | True     | The source to use when obtaining the package. |
 | OptionalParameter     | --Scope Machine                   | False     | Specifies option parameters to deploy/update/remove the application(s) |
 
 ## Process
@@ -57,6 +57,6 @@ Please refer to [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8
 
 ## FAQ
 
-For auto-deployment of application we have monitor [Application - Install/Update - [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optional parameter needed?
+**Q. For auto-deployment of application we have monitor [Application - Install/Update - [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optional parameter needed?**
 
-No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.
+**A.** No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.

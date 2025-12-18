@@ -16,15 +16,16 @@ This monitor is designed to fetch the latest version of the application for whic
 
 ## Dependencies
 
-[Application - Latest Version Detection [Winget]](/docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde)
+- [Application - Latest Version Detection [Winget]](/docs/ffb77c6c-8dd7-4ca5-82a2-327b1658cbde)
+- [Solution - Update/Deploy Target Application to Latest Version [Winget]](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
 
 ## Target
 
-Global - Should be run without explicitly defined targets.
+`Global` - Should be run without explicitly defined targets.
 
 This script is only targeted to one machine to fetch the application's latest version.
 
 ## Implementation
 
 1. Import the monitor.  
-   Create a duplicate of the monitor and remove the imported monitor to avoid confusion.
+2. Create a duplicate of the monitor and remove the imported monitor to avoid confusion.
