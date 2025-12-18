@@ -31,7 +31,8 @@ Insert the details of the monitor in the table below.
 
 ## Dependencies
 
-[SWM - Software Update - Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)
+- [Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)
+- [Solution - Winget Auto Update](/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
 ## Target
 

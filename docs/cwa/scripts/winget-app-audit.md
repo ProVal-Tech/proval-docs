@@ -39,17 +39,25 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 
 ## Dependencies
 
-- [SWM - Software Update - Internal Monitor - Execute Script - Winget App Audit](/docs/af67ed08-40af-4899-ae8f-5e64f9bfb851)
-- [CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Internal Monitor - Execute Script - Winget App Audit](/docs/af67ed08-40af-4899-ae8f-5e64f9bfb851)
+- [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Solution - Winget Auto Update](/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
+
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Variables
 
 | Name              | Description                       |
 |-------------------|-----------------------------------|
 | projectName       | Get-WingetReport                  |
-| workingDirectory   | C:/ProgramData/_automation/script/Get-WingetReport |
-| scriptPath        | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.ps1 |
-| jsonPath          | C:/ProgramData/_automation/script/Get-WingetReport/Get-WingetReport.json |
+| workingDirectory   | C:\ProgramData\_automation\script\Get-WingetReport |
+| scriptPath        | C:\ProgramData\_automation\script\Get-WingetReport\Get-WingetReport.ps1 |
+| jsonPath          | C:\ProgramData\_automation\script\Get-WingetReport\Get-WingetReport.json |
 | tableName         | [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e) |
 
 ## User Parameters

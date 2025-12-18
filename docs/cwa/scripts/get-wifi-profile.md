@@ -22,8 +22,7 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 - Regular execution:  
   ![Sample Run Image 2](../../../static/img/docs/d97282c0-4d81-46f9-b821-d553c2d8a596/image_2.webp)  
 
-
-### Dependencies
+## Dependencies
 
 - [Solution - Implement Wifi Profile](/docs/1b38dbb7-848f-4605-b8c9-80e7ebf069d3)
 
@@ -32,9 +31,9 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 | Name               | Description                                          |
 |--------------------|------------------------------------------------------|
 | ProjectName        | Get-WifiProfile                                      |
-| WorkingDirectory    | C:/ProgramData/_Automation/Script/Get-WifiProfile   |
-| PS1Log             | C:/ProgramData/_Automation/Script/Get-WifiProfile-Log.txt |
-| PS1ErrorLog        | C:/ProgramData/_Automation/Script/Get-WifiProfile-Error.txt |
+| WorkingDirectory    | C:\ProgramData\_Automation\Script\Get-WifiProfile   |
+| PS1Log             | C:\ProgramData\_Automation\Script\Get-WifiProfile-Log.txt |
+| PS1ErrorLog        | C:\ProgramData\_Automation\Script\Get-WifiProfile-Error.txt |
 | TableName          | [pvl_wifi_profiles](/docs/f317da6e-0ea2-4c1e-bad9-4d0ad25684d3) |
 
 ## User Parameters
@@ -42,6 +41,13 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 | Name               | Example | Required              | Description                                                                 |
 |--------------------|---------|-----------------------|-----------------------------------------------------------------------------|
 | Set_Environment     | 1       | True for the first run | It is mandatory to set this parameter to 1 for the very first execution of the script. |
+
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Output
 

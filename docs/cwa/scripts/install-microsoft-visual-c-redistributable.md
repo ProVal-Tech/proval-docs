@@ -23,11 +23,18 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 | Name              | Description                           |
 |-------------------|---------------------------------------|
 | ProjectName       | Invoke-VCRedistModule                 |
-| WorkingDirectory   | C:/ProgramData/_automation/script/Install-VCRedist |
+| WorkingDirectory   | C:\ProgramData\_automation\script\Install-VCRedist |
 
-### User Parameters
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+
+## User Parameters
 
 | Name     | Example               | Required | Description                                                                                   |
 |----------|-----------------------|----------|-----------------------------------------------------------------------------------------------|
-| Release  | 20192012, 2013, 2022 | False    | Set the release id(s) of the Redistributable to install.                                   |
+| Release  | 2019, 2012, 2013, 2022 | False    | Set the release id(s) of the Redistributable to install.                                   |
 | Purge    | 1                     | False    | Setting this parameter to 1 will remove the unsupported Redistributable and install the supported Redistributable. |

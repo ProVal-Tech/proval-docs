@@ -23,6 +23,13 @@ An Automate implementation of the agnostic script [Get-FirefoxExtensions](/docs/
 - [Get Installed Browsers Extensions [DV]](/docs/f0a2db8c-92b6-4584-a70c-209263d46511)
 - [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+
 ## Process
 
 - Creates the [Plugin_ProVal_Browsers_Extensions](/docs/0a6370b4-7944-4483-86d5-ecbfd58f5376) script if it does not exist.

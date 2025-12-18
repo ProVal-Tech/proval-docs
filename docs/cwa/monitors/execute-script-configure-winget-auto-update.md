@@ -16,8 +16,9 @@ This internal monitor executes the **[Configure Winget Auto Update](/docs/1e0c72
 
 ## Dependencies
 
-- **[SWM - Software Update - Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)**
-- **[SWM - Software Update - Custom Table - pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062)**
+- [ Script - Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55)
+- [Custom Table - pvl_wau_config](/docs/be117f3c-0af2-4edb-8fcc-06da1a4db062)*
+- [Solution - Winget Auto Update](/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
 ## Target
 
