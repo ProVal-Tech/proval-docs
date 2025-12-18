@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This custom field checks the OS Caption value to determine whether the installed Windows operating system is a home edition. It displays True if the OS name contains Home otherwise it displays False.
+It indicates whether the installed Windows operating system is a Home edition by showing `True` if the OS name contains `Home`, otherwise `False`. This data is retreived by the automation [Check Windows Home Edition Status](/docs/ffef0ee2-6b6c-43df-ab5a-ef2dbc702325).
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Windows Home Edition Status | cpvalWindowsHomeEditionStatus | `Device`  | Text | No      | -    | Editable       | Read/Write  | Read/Write  | This custom field checks the OS Caption value to determine whether the installed Windows operating system is a home edition. It displays True if the OS name contains Home otherwise it displays False.  | Identifies whether the device is running Windows home edition. Displays True or False.  | Identifies whether the device is running Windows home edition. Displays True or False.  | `Home Edition` |
+| cPVAL Windows Home Edition Status | cpvalWindowsHomeEditionStatus | `Device`  | Text | No      | -    | Editable       | Read/Write  | Read/Write  | It indicates whether the installed Windows operating system is a Home edition by showing `True` if the OS name contains `Home`, otherwise `False`.   | Indicates whether the device is running Windows home edition. Displays `True` if the OS name contains `Home`, otherwise `False`.   | Indicates whether the device is running Windows home edition. Displays `True` if the OS name contains `Home`, otherwise `False`.  | `Home Edition` |
 
 ## Dependencies
 

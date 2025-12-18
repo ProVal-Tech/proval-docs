@@ -12,11 +12,12 @@ unlisted: false
 
 ## Overview
 
-Detects whether the installed Windows operating system is a Home edition by checking the OS Caption value. Displays True if the operating system name contains Home, otherwise displays False.
+Detects whether the installed Windows operating system is a Home edition by checking the OS Caption value, and updates the custom field [cPVAL Windows Home Edition Status](/docs/4a1a47e3-19f1-4dba-be3c-be633cd52979). Displays `True` if the operating system name contains Home, otherwise displays `False`.
 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/ffef0ee2-6b6c-43df-ab5a-ef2dbc702325/scriptrun.webp)
 
 ## Dependencies
