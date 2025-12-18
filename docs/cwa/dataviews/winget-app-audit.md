@@ -18,7 +18,7 @@ This document displays the information of `Winget` supported applications fetche
 
 - [Script - Winget App Audit](/docs/d5ea54f9-07c9-443b-acc2-411401cfbe91)
 - [Custom Table - pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e)
-- [Solution - Winget Auto Update](docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
+- [Solution - Winget Auto Update](/docs/92b2ccf2-534f-46b6-b1d1-dd77dea47ba8)
 
 ## Columns
 
