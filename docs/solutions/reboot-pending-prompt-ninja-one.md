@@ -254,7 +254,7 @@ Here is the updated FAQ answer with the requested point clarified to explain tha
 * **Forced Reboot:** It waits 5 minutes before force rebooting on the final prompt.
 * **Theme:** It uses a Dark Theme.
 * **Title:** "Updates Installed - Reboot Required"
-* **Message:** "An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have `{X}` prompt(s) remaining before a forced reboot. Next prompt will be sent in {Y} hours."
+* **Message:** "An update has been installed on your computer. Would you like to restart now to complete the installation of updates? You have `{X}` prompt(s) remaining before a forced reboot. Next prompt will be sent in `{Y}` hours."
 * **Final Message:** "An update has been installed on your computer. This is the final prompt before your computer will automatically restart to complete the installation of updates. Please save your work. Your computer will be restarted after `{X}` minute(s) after you acknowledge this prompt."
 
 ### **Q.** I manually rebooted the computer, but the fields didn't reset. Why?
