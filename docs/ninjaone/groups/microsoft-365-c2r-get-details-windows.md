@@ -6,7 +6,7 @@ title_meta: 'Microsoft 365 - C2R - Get Details (Windows)'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'This group includes machines on which the “Microsoft 365 – Click-to-Run – Get Details” script has been executed and successfully retrieved Microsoft Click-to-Run Office information.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -16,6 +16,7 @@ This group includes machines on which the “Microsoft 365 – Click-to-Run – 
 ## Details
 
 | Name       | Description |
+|------------|---------|
 | Microsoft 365 - C2R - Get Details (Windows) | This group includes machines on which the “Microsoft 365 – Click-to-Run – Get Details” script has been executed and successfully retrieved Microsoft Click-to-Run Office information. |
 
 ## Dependencies

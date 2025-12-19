@@ -6,7 +6,7 @@ title_meta: 'Execute Microsoft 365 - Click-to-Run - Get Details(MAC)'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'Executes Microsoft 365 - Click-to-Run - Get Details(MAC) script on mac machines.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -15,9 +15,9 @@ Executes Microsoft 365 - Click-to-Run - Get Details(MAC) script on mac machines
 
 ## Details
 
-**Name:**  `Execute Microsoft 365 - Click-to-Run - Get Details(MAC)`
-**Description:** `Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines.` 
-**Recommended Agent Policies:**  `MAC Policy`
+- **Name:**  `Execute Microsoft 365 - Click-to-Run - Get Details(MAC)`
+- **Description:** `Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines.` 
+- **Recommended Agent Policies:**  `MAC Policy`
 
 ## Dependencies
 - [Solution - Microsoft 365 - Click-to-Run - Get Details](/docs/f493756c-e4e0-4aba-af87-9aef14f389aa) 

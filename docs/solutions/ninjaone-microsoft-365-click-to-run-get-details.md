@@ -6,7 +6,7 @@ title_meta: 'Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'The purpose of this solution is to retrieve the installed Microsoft Click-to-Run Office version on the machines.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 

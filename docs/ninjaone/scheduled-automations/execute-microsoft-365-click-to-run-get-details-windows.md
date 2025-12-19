@@ -15,9 +15,9 @@ Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines
 
 ## Details
 
-**Name:**  `Execute Microsoft 365 - Click-to-Run - Get Details`
-**Description:** `Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines.` 
-**Recommended Agent Policies:**  `Windows Workstation`
+- **Name:**  `Execute Microsoft 365 - Click-to-Run - Get Details`
+- **Description:** `Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines.` 
+- **Recommended Agent Policies:**  `Windows Workstation`
 
 ## Dependencies
 

@@ -6,16 +6,17 @@ title_meta: 'Microsoft 365 - Click-to-Run - Get Details'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the update channel.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Overview
-This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, and obtains the update channel.
+This script retrieves the installed Microsoft Click-to-Run Office version on the machine, verifies whether auto-update is enabled, obtains the update channel, and updates the custom fields with the gathered details.
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+`Play Button` > `Run Automation` > `Script` 
+
 ![SampleRun1](../../../static/img/docs/91dda79f-b6ad-440f-8a08-b5150d7e2a93/image1.webp)
 
 ## Dependencies

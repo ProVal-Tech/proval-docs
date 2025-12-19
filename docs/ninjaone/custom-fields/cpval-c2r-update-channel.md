@@ -6,7 +6,7 @@ title_meta: 'cPVAL C2R Update Channel'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'Update Channel of the Office installed on the machine, gathered by the Microsoft 365 - Click-to-Run - Get Details script.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -16,6 +16,7 @@ Update Channel of the Office installed on the machine, gathered by the Microsoft
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
 | cPVAL C2R Update Channel | cpvalC2rUpdateChannel | Device | Text | False | | Read Only | Read/Write | Read/Write | Update Channel of the Office installed on the machine, gathered by the Microsoft 365 - Click-to-Run - Get Details script. | Update Channel of the Office installed on the machine. | Update Channel of the Office installed on the machine, gathered by the Microsoft 365 - Click-to-Run - Get Details script. | Office C2R Details |
 
 ## Dependencies

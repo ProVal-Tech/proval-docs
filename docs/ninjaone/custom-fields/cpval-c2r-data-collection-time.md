@@ -6,7 +6,7 @@ title_meta: 'cPVAL C2R Data Collection Time'
 keywords: ['microsoft', 'click-to-run', 'office', 'update', 'version', 'auto-update', 'channel']
 description: 'The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated.'
 tags: ['application', 'office', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -16,6 +16,7 @@ The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version cu
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
 | cPVAL C2R Data Collection Time | cpvalC2rDataCollectionTime | Device | Text | False | | Read Only | Read/Write | Read/Write | The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. | The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. | The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version custom fields were updated. | Office C2R Details |
 
 ## Dependencies
