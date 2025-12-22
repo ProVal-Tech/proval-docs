@@ -28,7 +28,7 @@ This script retrieves the installed Microsoft Click-to-Run Office version on MAC
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/microsoft-365-click-to-run-get-details-macos.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/microsoft-365-click-to-run-get-details-macos.sh)
 
 ## Output
 
