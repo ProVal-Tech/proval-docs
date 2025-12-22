@@ -14,9 +14,9 @@ unlisted: false
 
 This script uses the PowerShell module `LSUClient` to install available BIOS updates for Lenovo machines. The `-All` parameter can be used to install all available vendor updates, including BIOS, firmware, Applications and drivers.
 
-**NOTE:** `The script prompts for variables during runtime, where we can pass arguments to either all, or install only firmware, only Lenovo updates, only drivers, or any specific driver as needed.`
-
-## Note: `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
+**NOTE:** 
+- `The script prompts for variables during runtime, where we can pass arguments to either all, or install only firmware, only Lenovo updates, only drivers, or any specific driver as needed.`
+- `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
 
 ## Dependencies
 
@@ -30,7 +30,7 @@ This script uses the PowerShell module `LSUClient` to install available BIOS upd
 
 ## Parameters
 
-Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.
+**Valid parameters:** The valid values are `'All', 'Application', 'BIOS', 'Driver', 'Firmware'`. We can use them as per below examples.
 
 | Parameter         | Required  | Excample            | Type      | Description                                                                 |
 |-------------------|-----------|----------------------|-----------|----------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 
 
 ### Examples
 
-1. **Default scan operation**: If executing the script without any arguments it will only scan.
+1. **Default scan operation**: If executing the script without any arguments, it will only scan.
 
    ![blank argument](../../../static/img/docs/0454bb04-e771-4443-9285-6a17f3f9fea9/blank.webp)
 
@@ -85,7 +85,7 @@ Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 
 
     ![BIOS Driver argument](../../../static/img/docs/0454bb04-e771-4443-9285-6a17f3f9fea9/driver,bios.webp)
 
-9. **Apply specific updates silently** :To perform an update action (for example, silent install BIOS, Driver  available updates):
+9. **Apply specific updates silently** :
 
     `-Type 'n3ch101w_bisbnk919kse', 'pcieeth06w_w11'`
 
@@ -94,7 +94,5 @@ Valid parameters: The valid values are `'All', 'Application', 'BIOS', 'Driver', 
 ## Output
 
 - Script Logs
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-log.txt`
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-error.txt`
+    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-log.txt`
+    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-error.txt`

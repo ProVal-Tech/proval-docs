@@ -20,7 +20,7 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 ![SampleRun1](../../../static/img/docs/e1afd603-9c86-4ee7-8afd-fb9abd99f079/blank.webp)
 
-## Note: `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
+**Note:** `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
 
 ## Dependenies
 
@@ -62,7 +62,5 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 ## Output
 
 - Script Logs
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-log.txt`
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-error.txt`
+   - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-log.txt`
+   - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-error.txt`

@@ -23,22 +23,16 @@ This tool is ideal for standardizing HP client environments, keeping endpoints s
 
 For complete documentation on supported arguments, refer to: [HP Image Assistant User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/userguide/936944-005.pdf)
 
-**Note:** `The script prompts for variables during runtime, where we can pass arguments to install all, or only firmware, only HP updates, only drivers, or any specific driver as needed.`
-
-## Note: `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
+**Note:** 
+- `The script prompts for variables during runtime, where we can pass arguments to install all, or only firmware, only HP updates, only drivers, or any specific driver as needed.`
+- `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
 
 ## Requirements
 
-**Software:**
+
 
 - Windows PowerShell 5.1 or higher
 - Windows 10 or Windows 11 (x64)
-- Internet access (for platform validation, downloading updates and HP Image Assistant)
-- Administrative privileges (run as Administrator)
-
-**Hardware:**
-
-- HP workstation or desktop (validated via manufacturer and product ID)
 
 ## Sample Run
 
@@ -56,7 +50,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
   
 ### Examples
 
-1. **Default scan operation**: If executing the script without any arguments it will only scan.
+1. **Default scan operation**: If executing the script without any arguments, it will only scan.
 
    ![blank argument](../../../static/img/docs/0c2dded5-2320-486d-b7a2-da2e9645767e/blank.webp)
 
@@ -66,7 +60,7 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 
    ![driver argument](../../../static/img/docs/0c2dded5-2320-486d-b7a2-da2e9645767e/driver%20update.webp)
 
-3. **Apply Firmware updates silently**:To perform an update action (for example, silent install of recommended firmware updates):
+3. **Apply Firmware updates silently**: To perform an update action (for example, silent install of recommended firmware updates):
 
    `/Operation:Analyze /Category:Firmware /Selection:Recommended /Action:Install /Silent /AutoCleanup /ReportFilePath:""C:\ProgramData\_Automation\App\HPImageAssistant\InstallReport""`
 
@@ -81,7 +75,5 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 ## Output
 
 - Script Logs
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-log.txt`
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-error.txt`
+   - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-log.txt`
+   - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-error.txt`
