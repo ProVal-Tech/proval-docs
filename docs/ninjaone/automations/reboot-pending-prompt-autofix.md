@@ -18,7 +18,10 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 
 ## Sample Run
 
-> **Note:** It is not recommended to run this script manually. The script is designed for the Autofix script of [Reboot Pending Prompt - Windows Workstation](/docs/b540cb53-0d54-4d63-9ce4-073732fd1aa3) compound condition.
+> **Note:**
+>
+> - It is not recommended to run this script manually. The script is designed for the Autofix script of [Reboot Pending Prompt - Windows Workstation](/docs/b40cb53-0d54-4d63-9ce4-073732fd1aa3) compound condition. 
+> - Prompter requires '.NET Desktop Runtime 8.0' to run. If missing, the script automatically downloads and installs it silently.
 
 ## Dependencies
 

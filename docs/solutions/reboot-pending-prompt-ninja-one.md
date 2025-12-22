@@ -25,6 +25,8 @@ Key capabilities include:
 * **Productivity Protections**: Includes "Quiet Hours" to suppress prompts during specific times (e.g., overnight) and options to skip prompts on weekends.
 * **Unattended Handling**: Configurable logic to immediately reboot machines if no user is currently logged in.
 
+**Note on Dependencies:** To ensure the modern GUI functions correctly and securely across all supported Windows versions, this solution automatically manages its own dependencies. Specifically, if the **.NET Desktop Runtime 8.0** is missing from a target machine, the solution will silently download and install it during the first run. This ensures the interactive prompt displays correctly without requiring manual prerequisite deployment.
+
 The solution uses a **Detection** script to evaluate system state and prompt eligibility, which triggers an **Autofix** script via a Compound Condition to handle the user interaction and reboot logic.
 
 ## Associated Content
@@ -276,3 +278,19 @@ Here are the additional FAQs covering the enablement logic and integration with 
 **A:** That will automatically trigger the reboot prompt cycle! This solution is designed to act as a **central reboot manager** for your entire NinjaRMM environment.
 
 If a software installation script, a patching automation, or a maintenance task flags the [cPVAL Pending Reboot](/docs/31558959-f3a5-4f4f-9388-6e7512972b01) field, this solution takes over. Instead of that other script forcing a hard reboot, this solution detects the flag and gracefully prompts the user according to your defined policy (snoozes, quiet hours, branding, etc.). This ensures a consistent, user-friendly experience regardless of what task initiated the reboot request.
+
+### **Q.** Why is the .NET Desktop Runtime 8.0 being installed on my computers?
+
+**A:** The graphical utility (`Prompter.exe`) used to show the popup window is built on modern .NET technology to ensure stability, security, and proper rendering (like Dark Mode support). The script automatically checks if this runtime is present; if it is missing, the script installs it to ensure the prompt works correctly.
+
+### **Q.** Can I use this solution without installing .NET Desktop Runtime 8.0?
+
+**A:** No. The `Prompter.exe` application requires the .NET 8.0 Desktop Runtime to launch. Without it, the application would crash, and the user would never see the prompt.
+
+### **Q.** Where does the solution download the .NET installer from?
+
+**A:** The script downloads the installer directly from official Microsoft servers (`download.visualstudio.microsoft.com`) to ensure the file is secure and genuine.
+
+### **Q.** Will the installation of .NET 8.0 interrupt the user?
+
+**A:** No. The installation is performed silently in the background (`/quiet` and `/norestart` flags are used). The user will not see an installation window, and it does not force a reboot of its own.
