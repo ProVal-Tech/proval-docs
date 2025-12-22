@@ -12,7 +12,14 @@ unlisted: false
 
 ## Description
 
-An ImmyBot software installer for the [Mail Merge Toolkit](https://www.mapilab.com/outlook/mail_merge/). 
-Please note that deploying this plugin will restart Microsoft Office applications if they are currently open.
+An ImmyBot software installer for the [Mail Merge Toolkit](https://www.mapilab.com/outlook/mail_merge/).  
+
+For this to work, someone must be logged into the computer. Also, the following processes will close automatically during the process:
+
+- winword (Word)
+- mspub (Publisher)
+- outlook
+- mapilab_share
+- msiexec
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/mail-merge-toolkit.toml)
