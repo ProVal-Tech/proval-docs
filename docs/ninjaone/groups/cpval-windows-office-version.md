@@ -20,8 +20,8 @@ This group contains machines where office version is detected by `Get Office Ver
 | cPVAL Windows Office Version | This group contains machines where office version is detected by `Get Office Version` Script.       |
 
 ## Dependencies
-- [Solution - Get Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97) 
-- [Custom Field - cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97) 
+- [Solution - Get Office Version](/docs/19ca26a2-c4f1-4ce1-99a2-b8d37dccfa04) 
+- [cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97) 
 
 ## Group Creation
 

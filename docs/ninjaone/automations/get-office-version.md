@@ -19,7 +19,8 @@ This script will check for the MS Office Version installed on the windows machin
 ![SampleRun1](../../../static/img/docs/9224179e-e14d-4fe2-95a3-a2304e31e108/image1.webp)
 
 ## Dependencies
-
+- [Solution - Get Office Version](/docs/19ca26a2-c4f1-4ce1-99a2-b8d37dccfa04) 
+- [cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97) 
 
 ## Automation Setup/Import
 

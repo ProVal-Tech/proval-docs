@@ -21,7 +21,7 @@ Stores the Office version installed on the machine fetched by `Get Office Versio
 | cPVAL Office Version | cpvalOfficeVersion | Device | Text | False |  | Editable | Read_Write | Read_Write | Office version installed on the machine fetched by `Get Office Version` script. | Office version installed on the machine fetched by `Get Office Version` script. | Office version installed on the machine fetched by `Get Office Version` script. | Office Version |
 
 ## Dependencies
-- [Solution - Get Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97) 
+- [Solution - Get Office Version](/docs/19ca26a2-c4f1-4ce1-99a2-b8d37dccfa04) 
 - [Script - Get Office Version](/docs/9224179e-e14d-4fe2-95a3-a2304e31e108) 
 
 ## Custom Field Creation
