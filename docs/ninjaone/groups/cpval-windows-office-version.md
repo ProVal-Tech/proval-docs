@@ -25,4 +25,4 @@ This group contains machines where office version is detected by `Get Office Ver
 
 ## Group Creation
 
-[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/_template.toml)
+[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-windows-office-version.toml)

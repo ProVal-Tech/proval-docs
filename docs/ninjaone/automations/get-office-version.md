@@ -24,7 +24,7 @@ This script will check for the MS Office Version installed on the windows machin
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/_template.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-office-version.ps1)
 
 ## Output
 
