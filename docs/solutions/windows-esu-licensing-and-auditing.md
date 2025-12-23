@@ -3,8 +3,8 @@ id: '7fe6a52b-79fd-487b-8009-523996e74d11'
 slug: /7fe6a52b-79fd-487b-8009-523996e74d11
 title: 'Windows 10 ESU Licensing and Auditing'
 title_meta: 'Windows 10 ESU Licensing and Auditing'
-keywords: ['esu', 'license', 'extended', 'windows-10', '22h2']
-description: 'This solution provides automated auditing of Windows 10 Extended Security Updates (ESU) license status across Windows 10 22H2 machines from ConnectWise Automate platform. It includes functionality to track activation status and optionally deploy ESU licenses when needed.'
+keywords: ['esu', 'license', 'extended', 'windows-10', 'windows-2012', '22h2']
+description: 'This solution provides automated auditing of Windows 10 Extended Security Updates (ESU) license status across Windows 10 22H2 and Windows 2012/2012 R2 machines from ConnectWise Automate platform. It includes functionality to track activation status and optionally deploy ESU licenses when needed.'
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
@@ -12,12 +12,14 @@ unlisted: false
 
 ## Purpose
 
-This solution provides automated auditing of Windows 10 Extended Security Updates (ESU) license status across Windows 10 22H2 machines from ConnectWise Automate platform. It includes functionality to track activation status and optionally deploy ESU licenses when needed.
+This solution provides automated auditing of Windows 10 Extended Security Updates (ESU) license status across Windows 10 22H2 and Windows 2012/2012 R2 machines from ConnectWise Automate platform. It includes functionality to track activation status and optionally deploy ESU licenses when needed.
 
 **References:**
 
 - [Enable Extended Security Updates](https://learn.microsoft.com/en-us/windows/whats-new/enable-extended-security-updates)
 - [Deploy Windows 10 Security Updates with Intune or SCCM](https://www.systemcenterdudes.com/deploy-windows-10-extended-security-update-key-with-intune-or-sccm/)
+- https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-server-2012r2-extended-security-updates/3976610
+- https://learn.microsoft.com/en-us/windows-server/get-started/extended-security-updates-overview
 
 ## Associated Content
 
@@ -27,14 +29,14 @@ This solution provides automated auditing of Windows 10 Extended Security Update
 |-----------------------------------------------------|--------------------|--------------------|
 | [ESU License Activation Detection](/docs/634db1b5-58a2-4571-8873-74040c203d56)      | Script             | Performs ESU activation checks on a device, collects status details and writes results to an EDF for reporting. |
 | [ESU Detection Status](/docs/57995fb1-5d65-4283-aa82-0c3f821652bc)      | Dataview           | Presents the collected ESU audit results for reporting and remediation planning. |
-| [Windows 10 22H2 ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899) | Internal Monitor   | Identifies 22H2 endpoints that have not been audited in the last 7 days. |
-| △ Custom - Execute Script - ESU License Activation Detection | Alert Template     | Automatically runs the audit script against devices detected by the internal monitor. |
+| [Windows ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899) | Internal Monitor   | Identifies Windows 10 22H2 and Windows Sever 2012/2012 R2 endpoints that have not been audited in the last 7 days. |
+| △ Custom - Execute Script - ESU License Activation Detection | Alert Template     | Automatically runs the audit script [ESU License Activation Detection](/docs/634db1b5-58a2-4571-8873-74040c203d56) against devices detected by the internal monitor [Windows ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899). |
 
 ### Additional Content
 
 | Content                                             | Type               | Purpose |
 |-----------------------------------------------------|--------------------|--------------------|
-| [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212)    | Script  | On‑demand installer/activator that applies an ESU product key to a target machine using supplied runtime parameters. Designed for manual execution or scheduled use if desired. |
+| [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212)    | Script  | On‑demand installer/activator that applies an ESU product key to the Window 10 target machine using supplied runtime parameters. Designed for manual execution or scheduled use if desired. |
 
 ## Implementation
 
@@ -45,7 +47,7 @@ Import the following content from ProSync plugin:
 - [Script - ESU License Activation Detection](/docs/634db1b5-58a2-4571-8873-74040c203d56)
 - [Script - Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212)
 - [Dataview - ESU Detection Status](/docs/57995fb1-5d65-4283-aa82-0c3f821652bc)
-- [Internal Monitor - Windows 10 22H2 ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899)
+- [Internal Monitor - Windows ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899)
 - Alert Template - △ Custom - Execute Script - ESU License Activation Detection
 
 ### Step 2
@@ -56,18 +58,19 @@ Reload System Cache (Ctrl + R)
 
 Configure the auditing solution as follow:
 
-- Internal Monitor: [Windows 10 22H2 ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899)
-  - Alert Template: `△ Custom - Execute Script - ESU License Activation Detection`
+- Internal Monitor: [Windows ESU License Status](/docs/75abc7b8-1ff2-42d4-8028-dd0a3adaf899)
+  - Apply the Alert Template: `△ Custom - Execute Script - ESU License Activation Detection`
+  - Click Run now and Reset the monitor
 
 ### Step 4
 
 - Use [ESU Detection Status](/docs/57995fb1-5d65-4283-aa82-0c3f821652bc) dataview for an at‑a‑glance inventory and filtering of devices by ESU state.
-- Run [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212) manually on devices that require key installation, or create a scheduled job targeting non‑compliant hosts.
+- Run [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212) manually on Windows 10 devices that require key installation, or create a scheduled job targeting non‑compliant hosts.
 
 ## FAQ
 
 Q: What does this solution detect?  
-A: It determines whether Windows 10 22H2 devices have ESU activated, captures activation metadata, and flags devices that have not been audited recently.
+A: It determines whether Windows 10 22H2 and Windows 2012/2012 R2 devices have ESU activated, captures activation metadata, and flags devices that have not been audited recently.
 
 Q: How frequently are devices checked?  
 A: The internal monitor flags devices that haven't been audited in the last 7 days; the alert template runs the audit script against those devices automatically. You can adjust monitor frequency to fit your cadence.
