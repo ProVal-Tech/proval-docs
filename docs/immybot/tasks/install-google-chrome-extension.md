@@ -12,5 +12,13 @@ unlisted: false
 
 ## Description
 
+This installs the extensions to the Google Chrome browser.
+
+## Parameter
+
+| Name | Type | RequiredUserInput | Hidden | DefaultValue | Description                   |
+| -------------- | -------- | ------------ | -------- | ------------ | --------------------------------------------------------- |
+| ExtensionId | Text | True | False | | This is required to install the Chrome Extension. String value of an extension ID taken from the Chrome Web Store URL for the extension. |
+
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-google-chrome-extension.toml)
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-google-chrome-extension.ps1)
