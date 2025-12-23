@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This script searches the Kaseya installation directory for KASetup.exe, dynamically determines the Agent ID from the installation folder, checks for the associated agent service, and performs a silent uninstall.
+This script searches the Kaseya installation directory for KASetup.exe, dynamically determines the Agent ID from the installation folder, checks for the associated agent service, and performs a silent uninstall from NinjaOne RMM platform.
 
 ## Sample Run
 
