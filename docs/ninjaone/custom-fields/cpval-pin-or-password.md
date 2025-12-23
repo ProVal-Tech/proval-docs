@@ -3,9 +3,9 @@ id: '897971d9-4b4a-4554-8dd4-fc0bb324ed9b'
 slug: /897971d9-4b4a-4554-8dd4-fc0bb324ed9b
 title: 'cPVAL PIN Or Password'
 title_meta: 'cPVAL PIN Or Password'
-keywords: ['Bitlocker','initialization','encryption']
+keywords: ['BitLocker','initialization','encryption']
 description: 'Defines whether TPM initialization or reboot is allowed during BitLocker setup.'
-tags: ['encryption','custom-fields','bitlocker','security']
+tags: ['encryption','custom-fields','BitLocker','security']
 draft: false
 unlisted: false
 ---
@@ -18,11 +18,13 @@ Options for allowing TPM initialization and rebooting. 0 = Do not allow, 1 = All
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL PIN Or Password | cpvalPinOrPassword | `Organizations`,`Devices`,`Location` | Drop-down |  |  | Editable | Read_Write | Read_Write | Specifies the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. Examples include simple PINs `(e.g., 123456)` or strong passwords `(e.g., Pa$sw0rD! or 123456-654321-…)`. | Enter the PIN or password used by BitLocker key protectors that require user authentication. | PIN or password used for BitLocker key protectors that require user authentication at startup. | Bitlocker |
+| cPVAL PIN Or Password | cpvalPinOrPassword | `Organizations`,`Devices`,`Location` | Drop-down |  |  | Editable | Read_Write | Read_Write | Specify the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. Examples include simple PINs `(e.g., 123456)` or strong passwords `(e.g., Pa$sw0rD! or 123456-654321-…)`. | Enter the PIN or password used by BitLocker key protectors that require user authentication. | PIN or password used for BitLocker key protectors that require user authentication at startup. | BitLocker |
 
 ## Dependencies
 
-- [Automation - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
+- [Automation - Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
+- [Solution - Bitlocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
+
 
 ## Custom Field Creation
 

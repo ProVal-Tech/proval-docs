@@ -1,8 +1,8 @@
 ---
 id: '2ebfabd5-05cf-4175-a513-2aa290eb26e8'
 slug: /2ebfabd5-05cf-4175-a513-2aa290eb26e8
-title: 'bitlocker-initialization-ninjaone'
-title_meta: 'bitlocker-initialization-ninjaone'
+title: 'BitLocker Initialize - NinjaOne'
+title_meta: 'BitLocker Initialize - NinjaOne'
 keywords: ['Bitlocker','initialization','encryption']
 description: 'Automates BitLocker initialization on Windows devices using NinjaOne custom fields, including encryption method selection, key protector configuration, and secure execution with logging. '
 tags: ['encryption','custom-fields','bitlocker','security']
@@ -20,51 +20,43 @@ The goal of this solution is to automates BitLocker initialization on Windows de
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057) | Custom Filed | Options for allowing TPM initialization and rebooting. 0 = Do not allow, 1 = Allow TPM Initialization, 2 = Allow Reboot, 3 = Allow TPM Initialization and Reboot. Allow the script to attempt initialization of TPM if necessary. |
-| [Custom Field - cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac) | Custom Filed | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. |
-| [Custom Field - cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b) | Custom Filed | This custom field is used to trigger the automation for BitLocker initialization. It is referenced in compound conditions to determine whether BitLocker needs to be enabled on the device. |
-| [Custom Field - cPVAL BitLocker Initialization](/docs/16881247-a7d2-477c-9215-2bd25a936641) | Custom Filed | Controls whether BitLocker initialization should run on the device. Used by automation to determine if the system should be included or excluded from BitLocker deployment. |
-| [Custom Field - cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | Custom Filed | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 |
-| [Custom Field - cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | Custom Filed | Parameter for BitLocker: `Tpm`, `TpmPin (PIN/Password)`, `TpmStartup (Path/ADAccount)`, `TpmPinStartup (PIN/Password and Path/ADAccount)`, `Password (PIN/Password)`, `Startup (Path/ADAcct)`, `RecoveryKey (Path/ADAccount)`, `RecoveryPassword`, `AdAccount (Path/ADAcct)` |
-| [Custom Field - cpval Mountpoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | Custom Filed | The target volume to enable BitLocker encryption against. Should be in the format `'<driveletter>'` or `'<driveletter>:` If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
-| [Custom Field - cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47) | Custom Filed | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. Examples include: `F:\Recovery`, `CONTOSO\ContosoUser`, or `CONTOSO\ContosoGroup`. |
-| [Custom Field - cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b) | Custom Filed | Specifies the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. Examples include simple PINs `(e.g., 123456)` or strong passwords `(e.g., Pa$sw0rD! or 123456-654321-…)` |
-| [Script - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198) | Script | utomates BitLocker initialization on Windows via Ninja RMM custom fields. Validates parameters, sets mount point, `encryption method`, `key protector`, `PIN/password, and AD/path`, downloads a helper script, executes it, and logs output for auditing. |
-| [Compound Condition - Enable Bitlocker - Servers](/docs/a4d9dc9c-3e10-4cf4-a296-709ad9f507dd) | Compound Condition | This compound condition controls whether BitLocker initialization runs on Windows servers. When the BitLocker value is set to Enable, it triggers the initialization process. If set to Disable, the initialization will not run. |
-| [Compound Condition - Enable Bitlocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5) | Compound Condition | This compound condition controls whether BitLocker initialization runs on Windows Workstations. When the BitLocker value is set to Enable, it triggers the initialization process. If set to Disable, the initialization will not run. |
+| [cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057) | Custom Field | Options for allowing TPM initialization and rebooting. 0 = Do not allow, 1 = Allow TPM Initialization, 2 = Allow Reboot, 3 = Allow TPM Initialization and Reboot. Allow the script to attempt initialization of TPM if necessary. |
+| [cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac) | Custom Field | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. |
+| [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b) | Custom Field | This custom field is used to trigger the automation for BitLocker initialization. It is referenced in compound conditions to determine whether BitLocker needs to be enabled on the device. |
+| [cPVAL BitLocker Initialization](/docs/16881247-a7d2-477c-9215-2bd25a936641) | Custom Field | Controls whether BitLocker initialization should run on the device. Used by automation to determine if the system should be included or excluded from BitLocker deployment. |
+| [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | Custom Field | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 |
+| [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | Custom Field | Defines which BitLocker key protector method will be applied during encryption. |
+| [cPVAL Mountpoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | Custom Field | The target volume to enable BitLocker encryption against. Should be in the format `'<driveletter>'` or `'<driveletter>:` If a path is passed, the drive of that path will be attempted to be parsed. Defaults to `$env:SystemDrive`. |
+| [cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47) | Custom Field | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. Examples include: `F:\Recovery`, `CONTOSO\ContosoUser`, or `CONTOSO\ContosoGroup`. |
+| [cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b) | Custom Field | Specifies the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. Examples include simple PINs `(e.g., 123456)` or strong passwords `(e.g., Pa$sw0rD! or 123456-654321-…)` |
+| [Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198) | Script | Automates BitLocker initialization on Windows via Ninja RMM custom fields. Validates parameters, sets mount point, `encryption method`, `key protector`, `PIN/password, and AD/path`, downloads a helper script, executes it, and logs output for auditing. |
+| [Enable Bitlocker - Servers](/docs/a4d9dc9c-3e10-4cf4-a296-709ad9f507dd) | Compound Condition | This compound condition controls whether BitLocker initialization runs on Windows servers. When the BitLocker value is set to Enable, it triggers the initialization process. If set to Disable, the initialization will not run. |
+| [Enable Bitlocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5) | Compound Condition | This compound condition controls whether BitLocker initialization runs on Windows Workstations. When the BitLocker value is set to Enable, it triggers the initialization process. If set to Disable, the initialization will not run. |
 
 
-## Script
-
-- [Script - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
-
-## Compound Condition
-
-- [Compound Condition - Enable Bitlocker - Servers](/docs/a4d9dc9c-3e10-4cf4-a296-709ad9f507dd)
-- [Compound Condition - Enable Bitlocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5)
 
 ## Implementation
 
-**Create Custom Fields.**
+**Create Custom Fields**
 
-- [Custom Field - cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057)
-- [Custom Field - cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac)
-- [Custom Field - cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b)
-- [Custom Field - cPVAL BitLocker Initialization](/docs/16881247-a7d2-477c-9215-2bd25a936641)
-- [Custom Field - cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0)
-- [Custom Field - cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea)
-- [Custom Field - cpval Mountpoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926)
-- [Custom Field - cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47)
-- [Custom Field - cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b)
+- [cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057)
+- [cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac)
+- [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b)
+- [cPVAL BitLocker Initialization](/docs/16881247-a7d2-477c-9215-2bd25a936641)
+- [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0)
+- [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea)
+- [cPVAL Mountpoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926)
+- [cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47)
+- [cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b)
 
-## Import script
+## Create Automation
 
-- [Script - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
+- [Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 
 ## Create Compound Conditions
 
-- [Compound Condition - Enable Bitlocker - Servers](/docs/a4d9dc9c-3e10-4cf4-a296-709ad9f507dd)
-- [Compound Condition - Enable Bitlocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5)
+- [Enable Bitlocker - Servers](/docs/a4d9dc9c-3e10-4cf4-a296-709ad9f507dd)
+- [Enable Bitlocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5)
 
 ## FAQ
 

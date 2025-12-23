@@ -18,11 +18,13 @@ The encryption method that will be used to protect the target volume. Valid opti
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL EncryptionMethod | cpvalEncryptionmethod | `Organizations`,`Devices`,`Location` | Drop-down |  | `Aes128`, `Aes256`, `XtsAes128`, `XtsAes256` | Editable | Read_Write | Read_Write | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 | Specifies the BitLocker encryption algorithm to use. Supported values: Aes128, Aes256, XtsAes128, XtsAes256. | Choose the encryption algorithm BitLocker will apply to the selected volume. Use one of the supported options: Aes128, Aes256, XtsAes128, or XtsAes256. | Bitlocker |
+| cPVAL EncryptionMethod | cpvalEncryptionmethod | `Organizations`,`Devices`,`Location` | Drop-down |  | `Aes128`, `Aes256`, `XtsAes128`, `XtsAes256` | Editable | Read_Write | Read_Write | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 | Specifies the BitLocker encryption algorithm to use. | Choose the encryption algorithm BitLocker will apply to the selected volume. Use one of the supported options. | Bitlocker |
 
 ## Dependencies
 
 - [Automation - Initialize Bitlocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
+- [Solution - Bitlocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
+
 
 ## Custom Field Creation
 
