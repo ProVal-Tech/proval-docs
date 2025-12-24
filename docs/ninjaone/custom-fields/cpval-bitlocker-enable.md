@@ -26,10 +26,11 @@ This custom field is used to trigger the automation for BitLocker initialization
 - [Enable BitLocker - Workstations](/docs/6193f950-2266-42fd-9535-59adfe445cb5)
 - [Automation - Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 - [Solution - BitLocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
+
 ## Custom Field Creation
 
 [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-BitLocker-enable.toml)
 
 ## Sample Screenshot
 
-![cPVAL BitLocker Enable](../../../static/img/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b/cpvalBitLockerEnable.webp)
+![cPVAL BitLocker Enable](../../../static/img/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b/cpvalBitlockerEnable.webp)
