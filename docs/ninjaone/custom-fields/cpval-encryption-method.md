@@ -16,7 +16,7 @@ The encryption method that will be used to protect the target volume. Valid opti
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
 | cPVAL EncryptionMethod | cpvalEncryptionmethod | `Organizations`,`Devices`,`Location` | Drop-down | | `Aes128`, `Aes256`, `XtsAes128`, `XtsAes256` | Editable | Read_Write | Read_Write | The encryption method that will be used to protect the target volume. Valid options are: Aes128, Aes256, XtsAes128, XtsAes256 | Specifies the BitLocker encryption algorithm to use. | Choose the encryption algorithm BitLocker will apply to the selected volume. Use one of the supported options. | Bitlocker |
 

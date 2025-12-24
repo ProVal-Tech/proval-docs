@@ -16,9 +16,9 @@ Automates BitLocker initialization on Windows via Ninja RMM custom fields. Valid
 
 **Note:**
 
-- `This is only compatible for Windows devices.`
-
-- `The Bitlocker Drive Encryption feature must be enabled on servers to encrypt a drive with Bitlocker disk encryption. Encryption will not work without enabling this feature.`
+- This is only compatible for Windows devices.  
+- If no mount point is provided in the Custom field, it will encrypt "C" Drive by default.
+- The Bitlocker Drive Encryption feature must be enabled on servers to encrypt a drive with Bitlocker disk encryption. Encryption will not work without enabling this feature.
 
 ## Requirements
 

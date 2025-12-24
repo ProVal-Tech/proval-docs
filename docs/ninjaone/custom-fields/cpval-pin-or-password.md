@@ -18,7 +18,7 @@ Specifies the PIN or password required when using a BitLocker key protector that
 
 | Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL PIN Or Password | cpvalPinOrPassword | `Organizations`,`Devices`,`Location` | Drop-down | | | Editable | Read_Write | Read_Write | Specify the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. Examples include simple PINs `(e.g., 123456)` or strong passwords `(e.g., Pa$sw0rD! or 123456-654321-…)`. | Enter the PIN or password used by BitLocker key protectors that require user authentication. | PIN or password used for BitLocker key protectors that require user authentication at startup. | BitLocker |
+| cPVAL PIN Or Password | cpvalPinOrPassword | `Organizations`,`Devices`,`Location` | Drop-down | | | Editable | Read_Write | Read_Write | Specify the PIN or password required when using a BitLocker key protector that depends on user-provided authentication. | Enter the PIN or password used by BitLocker key protectors that require user authentication. | PIN or password used for BitLocker key protectors that require user authentication at startup. | BitLocker |
 
 ## Dependencies
 
