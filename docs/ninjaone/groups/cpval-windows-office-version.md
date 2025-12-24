@@ -6,12 +6,12 @@ title_meta: 'cPVAL Windows Office Version'
 keywords: ['microsoft','365','Version','Office']
 description: 'This group contains machines where office version is detected by `Get Office Version` Script.'
 tags: ['office365', 'software', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-This group contains machines where office version is detected by `Get Office Version` Script.
+This group contains machines where office version is detected by [Get Office Version](/docs/9224179e-e14d-4fe2-95a3-a2304e31e108) Script.
 
 ## Details
 

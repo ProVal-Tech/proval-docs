@@ -6,13 +6,13 @@ title_meta: 'Get Office Version'
 keywords: ['microsoft','365','Version','Office']
 description: 'The purpose of this solution is to check the MS Office Version installed on the windows machine'
 tags: ['office365', 'software', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Purpose
 
-The purpose of this solution is to check the MS Office Version installed on the windows machine
+The purpose of this solution is to check the MS Office Version installed on the windows machine.
 
 ## Associated Content
 

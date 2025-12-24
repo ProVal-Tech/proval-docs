@@ -6,12 +6,12 @@ title_meta: 'cPVAL Office Version'
 keywords: ['microsoft','365','Version','Office']
 description: 'Office version installed on the machine fetched by `Get Office Version` script.'
 tags: ['office365', 'software', 'update']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-Stores the Office version installed on the machine fetched by `Get Office Version` script.
+Stores the Office version installed on the machine fetched by [Get Office Version](/docs/9224179e-e14d-4fe2-95a3-a2304e31e108) script.
 
 
 ## Details
