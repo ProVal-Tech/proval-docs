@@ -170,6 +170,17 @@ Here are the FAQs for the **Reboot Pending Prompt** solution. I have written the
 
 * *Note:* The script automatically adds the "Your computer will restart in X minutes" text to the end of your message.
 
+### **Q.** Can I use quotation marks in the `cPVAL Reboot Prompt Message` or `cPVAL Final Prompt Message`?
+
+**A:** Yes, but avoid single quotes (') in these fields. The automation scripts embed your message into single-quoted PowerShell strings; an unescaped single quote will break parsing and can stop the prompt from working. If you need to include quotes, use double quotes (") instead.
+
+Example:
+
+* Good: Security patches installed. "Please save your work before the restart."
+* Avoid: Security patches installed. It's ready for restart.  (contains a single quote)
+
+If you must include a single quote, escape it properly in the source that writes the custom field, but preferring double quotes is simpler and safer.
+
 ### **Q.** How do I add my company logo to the prompt?
 
 **A:** You can add a header image (top of the window) or an icon (top left corner).
