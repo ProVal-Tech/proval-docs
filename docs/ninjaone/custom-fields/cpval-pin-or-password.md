@@ -3,9 +3,9 @@ id: '897971d9-4b4a-4554-8dd4-fc0bb324ed9b'
 slug: /897971d9-4b4a-4554-8dd4-fc0bb324ed9b
 title: 'cPVAL PIN Or Password'
 title_meta: 'cPVAL PIN Or Password'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'PIN or password used for BitLocker key protectors that require user authentication at startup.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---

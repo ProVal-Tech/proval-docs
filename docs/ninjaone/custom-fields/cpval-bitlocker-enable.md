@@ -3,9 +3,9 @@ id: 'c959b82c-fc55-478b-87f1-b9d06cf5a29b'
 slug: /c959b82c-fc55-478b-87f1-b9d06cf5a29b
 title: 'cPVAL BitLocker Enable'
 title_meta: 'cPVAL BitLocker Enable'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'Indicates whether BitLocker initialization needs to run on this device. Used for BitLocker initialization logic and compound conditions.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---

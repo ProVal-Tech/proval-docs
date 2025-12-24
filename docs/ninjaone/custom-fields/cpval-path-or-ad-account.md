@@ -3,9 +3,9 @@ id: 'fb290c5b-cf73-4b7e-be34-ada7d3391e47'
 slug: /fb290c5b-cf73-4b7e-be34-ada7d3391e47
 title: 'cPVAL Path Or ADAccount'
 title_meta: 'cPVAL Path Or ADAccount'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'Option for specifying the file path or Active Directory account required by certain BitLocker key protector types.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---

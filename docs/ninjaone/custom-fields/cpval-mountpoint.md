@@ -3,9 +3,9 @@ id: '4f9532e4-3d96-4e95-a6f5-b9a77d45c926'
 slug: /4f9532e4-3d96-4e95-a6f5-b9a77d45c926
 title: 'cPVAL MountPoint'
 title_meta: 'cPVAL MountPoint'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'The drive or mount point targeted for BitLocker encryption. Use a drive letter (e.g., C:) or a valid path to ensure the correct volume is selected.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker,'security']
 draft: false
 unlisted: false
 ---

@@ -3,9 +3,9 @@ id: 'e22d7853-1e3c-403c-8ba9-b9b99ba31bac'
 slug: /e22d7853-1e3c-403c-8ba9-b9b99ba31bac
 title: 'cPVAL SkipHardwareTest'
 title_meta: 'cPVAL SkipHardwareTest'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'Mark this checkbox to enable BitLocker without forcefully validating the hardware.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---

@@ -3,9 +3,9 @@ id: '3378eace-ffba-4f7d-8e93-3cc37510a4ea'
 slug: /3378eace-ffba-4f7d-8e93-3cc37510a4ea
 title: 'cPVAL KeyProtectorType'
 title_meta: 'cPVAL KeyProtectorType'
-keywords: ['BitLocker','initialization','encryption']
+keywords: ['bitlocker','initialization','encryption']
 description: 'Defines which BitLocker key protector method (TPM, PIN, Password, Recovery, or AD Account) will be applied during encryption.'
-tags: ['encryption','custom-fields','BitLocker','security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---
