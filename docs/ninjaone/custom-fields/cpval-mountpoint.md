@@ -5,7 +5,7 @@ title: 'cPVAL MountPoint'
 title_meta: 'cPVAL MountPoint'
 keywords: ['bitlocker','initialization','encryption']
 description: 'The drive or mount point targeted for BitLocker encryption. Use a drive letter (e.g., C:) or a valid path to ensure the correct volume is selected.'
-tags: ['encryption','custom-fields','bitlocker,'security']
+tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---
