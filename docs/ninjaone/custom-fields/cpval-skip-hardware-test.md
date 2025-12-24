@@ -16,9 +16,9 @@ Mark this checkbox to enable BitLocker without performing the hardware validatio
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL SkipHardwareTest | cpvalSkiphardwaretest | `Organizations`,`Devices`,`Location` | CheckBox |  |  | Editable | Read_Write | Read_Write | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary.| Mark this checkbox to enable BitLocker without forcefully validating the hardware. | BitLocker |
+| cPVAL SkipHardwareTest | cpvalSkiphardwaretest | `Organizations`,`Devices`,`Location` | CheckBox | | | Editable | Read_Write | Read_Write | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. | BitLocker |
 
 ## Dependencies
 

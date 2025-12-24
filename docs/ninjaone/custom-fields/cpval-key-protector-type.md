@@ -27,9 +27,9 @@ Parameter for BitLocker:
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL KeyProtectorType | cpvalKeyprotectortype | `Organizations`,`Devices`,`Location` | Drop-down |  | `Tpm`, `TpmPin`, `TpmStartup`, `TpmPinStartup`, `Password`, `Startup`, `RecoveryKey`, `RecoveryPassword`, `AdAccount` | Editable | Read_Write | Read_Write | Defines which BitLocker key protector method will be applied during encryption. | Specifies the BitLocker key protector type used for securing the volume. | Defines which BitLocker key protector method will be applied during encryption. | BitLocker |
+| cPVAL KeyProtectorType | cpvalKeyprotectortype | `Organizations`,`Devices`,`Location` | Drop-down | | `Tpm`, `TpmPin`, `TpmStartup`, `TpmPinStartup`, `Password`, `Startup`, `RecoveryKey`, `RecoveryPassword`, `AdAccount` | Editable | Read_Write | Read_Write | Defines which BitLocker key protector method will be applied during encryption. | Specifies the BitLocker key protector type used for securing the volume. | Defines which BitLocker key protector method will be applied during encryption. | BitLocker |
 
 ## Dependencies
 

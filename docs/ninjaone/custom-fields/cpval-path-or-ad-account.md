@@ -16,9 +16,9 @@ Option for specifying the file path or Active Directory account required by cert
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Path Or ADAccount | cpvalPathOrAdaccount | `Organizations`,`Devices`,`Location` | Text |  |  | Editable | Read_Write | Read_Write | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. Examples include: `F:\Recovery`, `CONTOSO\ContosoUser`, or `CONTOSO\ContosoGroup`. | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. | BitLocker |
+| cPVAL Path Or ADAccount | cpvalPathOrAdaccount | `Organizations`,`Devices`,`Location` | Text | | | Editable | Read_Write | Read_Write | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. Examples include: `F:\Recovery`, `CONTOSO\ContosoUser`, or `CONTOSO\ContosoGroup`. | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. | Option for specifying the file path or Active Directory account required by certain BitLocker key protector types. | BitLocker |
 
 ## Dependencies
 

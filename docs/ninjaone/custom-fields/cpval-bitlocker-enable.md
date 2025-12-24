@@ -16,9 +16,9 @@ This custom field is used to trigger the automation for BitLocker initialization
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Examples | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL BitLocker Enable | cpvalBitlockerEnable | `Organizations`,`Devices`,`Location` | Drop-down |  | `Windows`, `Windows Servers`, `Windows Workstations`, `Disable` | Editable | Read_Write | Read_Write | This custom field is used to trigger the automation for BitLocker initialization. It is referenced in compound conditions to determine whether BitLocker needs to be enabled on the device. | Indicates whether BitLocker initialization needs to run on this device. | Used for BitLocker initialization logic and compound conditions. | BitLocker |
+| cPVAL BitLocker Enable | cpvalBitlockerEnable | `Organizations`,`Devices`,`Location` | Drop-down | | `Windows`, `Windows Servers`, `Windows Workstations`, `Disable` | Editable | Read_Write | Read_Write | This custom field is used to trigger the automation for BitLocker initialization. It is referenced in compound conditions to determine whether BitLocker needs to be enabled on the device. | Indicates whether BitLocker initialization needs to run on this device. | Used for BitLocker initialization logic and compound conditions. | BitLocker |
 
 ## Dependencies
 
