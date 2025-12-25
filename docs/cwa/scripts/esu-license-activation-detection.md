@@ -26,7 +26,7 @@ This script performs checks for ESU license activation detection for Windows 10 
 
 | Name | Type | Level | Section | Required | Description |
 | ---- | ---- | ----- | ------- | -------- | ----------- |
-| ESU Detection | Text | Computer | Windows 10/Windows Server 2012/2012 R2 | True | Stores the ESU License Status returned by the script. |
+| ESU Detection | Text | Computer | Windows | True | Stores the ESU License Status returned by the script. |
 
 ## Output
 

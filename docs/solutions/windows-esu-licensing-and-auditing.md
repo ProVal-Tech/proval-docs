@@ -1,8 +1,8 @@
 ---
 id: '7fe6a52b-79fd-487b-8009-523996e74d11'
 slug: /7fe6a52b-79fd-487b-8009-523996e74d11
-title: 'Windows 10 ESU Licensing and Auditing'
-title_meta: 'Windows 10 ESU Licensing and Auditing'
+title: 'Windows ESU Licensing and Auditing'
+title_meta: 'Windows ESU Licensing and Auditing'
 keywords: ['esu', 'license', 'extended', 'windows-10', 'windows-2012', '22h2']
 description: 'This solution provides automated auditing of Windows 10 Extended Security Updates (ESU) license status across Windows 10 22H2 and Windows 2012/2012 R2 machines from ConnectWise Automate platform. It includes functionality to track activation status and optionally deploy ESU licenses when needed.'
 tags: ['licensing', 'windows', 'extensions']
@@ -69,20 +69,20 @@ Configure the auditing solution as follow:
 
 ## FAQ
 
-Q: What does this solution detect?  
+**Q: What does this solution detect?**  
 A: It determines whether Windows 10 22H2 and Windows 2012/2012 R2 devices have ESU activated, captures activation metadata, and flags devices that have not been audited recently.
 
-Q: How frequently are devices checked?  
+**Q: How frequently are devices checked?**  
 A: The internal monitor flags devices that haven't been audited in the last 7 days; the alert template runs the audit script against those devices automatically. You can adjust monitor frequency to fit your cadence.
 
-Q: Can ESU keys be applied automatically?  
-A: The included [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212) script can be run on demand. For automated deployments, create a scheduled job or alert action that executes the script with the required runtime parameters against selected targets.
+**Q: Can ESU keys be applied automatically?**   
+A: The included [Windows 10 ESU License Upgrade](/docs/765670f5-5120-4066-89d8-2cda873e8212) script can be run on demand for Windows 10. For automated deployments, create a scheduled job or alert action that executes the script with the required runtime parameters against selected targets.
 
-Q: Where do I view results and plan remediation?  
+**Q: Where do I view results and plan remediation?**  
 A: Use the [ESU Detection Status](/docs/57995fb1-5d65-4283-aa82-0c3f821652bc) dataview to filter by ESU state, last audited date, and other attributes to build remediation lists.
 
-Q: What happens if the activation script fails on a device?  
+**Q: What happens if the activation script fails on a device?**  
 A: The audit output will capture the failure details. Use the dataview to identify failed attempts, review the script output in the device's script history, correct any precondition issues (connectivity, privileges, key validity) and retry.
 
-Q: Is this solution limited to ConnectWise Automate?  
+**Q: Is this solution limited to ConnectWise Automate?**  
 A: This package and the implementation instructions are tailored for ConnectWise Automate (ProSync import). The concepts (audit script, reporting, and an activation script) can be adapted to other platforms but require platform‑specific packaging and triggers.
