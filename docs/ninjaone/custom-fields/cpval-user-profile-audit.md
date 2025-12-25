@@ -6,7 +6,7 @@ title_meta: 'cPVAL User Profile Audit'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
 description: 'Use this field to specify which operating system should receive User Profile Audit automatically.'
 tags: ['report', 'security', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 

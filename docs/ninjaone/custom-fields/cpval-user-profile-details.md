@@ -6,7 +6,7 @@ title_meta: 'cPVAL User Profile Details'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
 description: 'Stores an HTML-formatted information of User Profiles. Data is populated via the "User Profile - Audit" automation script'
 tags: ['report', 'security', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
