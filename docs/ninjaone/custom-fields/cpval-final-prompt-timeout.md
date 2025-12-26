@@ -16,9 +16,9 @@ Sets how long (in seconds) the final reboot prompt stays visible on the end mach
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Final Prompt Timeout | cpvalFinalPromptTimeout | Organization, Location, Device | Integer | False | | | Editable | Read_Write | Read_Write | Sets how long (in seconds) the final reboot prompt stays visible on the end machine. Default is 900 seconds (15 minutes). Can be configured or overridden at Client, Location, or Device level. | Enter timeout in seconds for the final reboot prompt. Default is 900 (15 minutes). Can be overridden at Location or Device level. | Controls how long the final reboot prompt remains active before closing. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Definition Scope | Type | Required | Default Value |  Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
+| ----- | ---- | ---------------- |  -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
+| cPVAL Final Prompt Timeout | cpvalFinalPromptTimeout | Organization, Location, Device | Integer | False |  | Editable | Read_Write | Read_Write | Sets how long (in seconds) the final reboot prompt stays visible on the end machine. Default is 900 seconds (15 minutes). Can be configured or overridden at Client, Location, or Device level. | Enter timeout in seconds for the final reboot prompt. Default is 900 (15 minutes). Can be overridden at Location or Device level. | Controls how long the final reboot prompt remains active before closing. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
 
 ## Dependencies
 

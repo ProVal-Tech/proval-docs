@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Controls whether reboot prompts are skipped on weekends. Options: Enable or Disable. Default is Disable if not set. Can be configured or overridden at Client, Location, or Device level.
+Controls whether reboot prompts are skipped on weekends. Options: `Enable` or `Disable`. Default is `Disable` if not set. Can be configured or overridden at Client, Location, or Device level.
 
 ## Details
 

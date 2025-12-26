@@ -16,9 +16,9 @@ Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prom
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Suppress Time Window | cpvalRebootPromptSuppressTimeWindow | Organization, Location, Device | Text | False | | | Editable | Read_Write | Read_Write | Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prompts between 6:00 PM and 9:00 AM. Can be configured or overridden at Client, Location, or Device level. | Enter time window (HHMM-HHMM) to block prompts. Example: 1800-0900 skips prompts from 6 PM to 9 AM. Can be overridden at the Location or Device level. | Use this setting to avoid reboot prompts during specified hours. Overrides at the Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Definition Scope | Type | Required | Default Value |  Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
+| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
+| cPVAL Reboot Prompt Suppress Time Window | cpvalRebootPromptSuppressTimeWindow | Organization, Location, Device | Text | False |  | Editable | Read_Write | Read_Write | Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prompts between 6:00 PM and 9:00 AM. Can be configured or overridden at Client, Location, or Device level. | Enter time window (HHMM-HHMM) to block prompts. Example: 1800-0900 skips prompts from 6 PM to 9 AM. Can be overridden at the Location or Device level. | Use this setting to avoid reboot prompts during specified hours. Overrides at the Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
 
 ## Dependencies
 

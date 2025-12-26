@@ -17,7 +17,7 @@ Stores the timestamp of the last reboot prompt sent to the device. Updated autom
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- | 
 | cPVAL Last Prompted | cpvalLastPrompted | Device | Text | False | | Editable | Read_Write | Read_Write | Stores the timestamp of the last reboot prompt sent to the device. Updated automatically by the script. Manual edits are not recommended. | Displays when the last reboot prompt was triggered. This field is script-managed and should not be manually changed. | Used for tracking prompt history. Avoid manual updates, as they are maintained by automation. | | | Reboot Pending Prompt - Workstations |
 
 ## Dependencies

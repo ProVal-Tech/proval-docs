@@ -16,9 +16,9 @@ Specifies the local file path or URL for the header image displayed on the reboo
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Default Value | Dropdown Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
-| cPVAL Reboot Prompt Header Image | cpvalRebootPromptHeaderImage | Organization, Location, Device | Text | False | | | Editable | Read_Write | Read_Write | Specifies the local file path or URL for the header image displayed on the reboot prompt. Can be configured or overridden at Client, Location, or Device level. | Provide a local path or URL for the header image in the reboot prompt. Can be overridden at Location or Device level. | Customize the reboot prompt with a header image for better branding. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Org Level Tab | Location Level Tab | Device Level Tab |
+| ----- | ---- | ---------------- | -------- | ------------- | ---------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- | ----------- | ----------- |
+| cPVAL Reboot Prompt Header Image | cpvalRebootPromptHeaderImage | Organization, Location, Device | Text | False |  | Editable | Read_Write | Read_Write | Specifies the local file path or URL for the header image displayed on the reboot prompt. Can be configured or overridden at Client, Location, or Device level. | Provide a local path or URL for the header image in the reboot prompt. Can be overridden at Location or Device level. | Customize the reboot prompt with a header image for better branding. Overrides at Location or Device level allow flexibility. | Reboot Pending Prompt | Reboot Pending Prompt | Reboot Pending Prompt - Workstations |
 
 ## Dependencies
 
