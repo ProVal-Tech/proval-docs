@@ -16,8 +16,8 @@ This document provides a display of a device's active network adapter and its as
 
 ## Dependencies
 
-- [EPM - Network - Custom Table - plugin_proval_dns_extradata](/docs/cd3368d8-d0b0-4ca4-972e-4adc8c1cfcfa)
-- [EPM - Network - Script - Create and Populate plugin_proval_dns_extradata](/docs/4bc996bc-1b11-4819-a7c9-73e7c61aa9db)
+- [EPM - Network - Custom Table - pvl_network_Adapter](/docs/5a5463d0-0ce3-4c09-bd41-39da28e16d0f)
+- [EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d)
 
 ## Columns
 
