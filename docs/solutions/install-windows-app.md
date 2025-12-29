@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-This solution contains the Windows App installation and deployment.
+This solution provides guidance for deploying the Windows App.
 
 ## Associated Content
 
@@ -25,13 +25,13 @@ This solution contains the Windows App installation and deployment.
 ## Implementation
 
 - Import the [Script - Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658) 
-- Import the monitor
+- Import the monitor [Install Windows Apps](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c)
 - Import the Alert Template `△ Custom - Execute Script - Install Windows App`
 - Apply the alert template to the monitor.
 - Run now and reset the monitor
-
-- Or the script can run on-demand too.
+- The script can br run on-demand too.
 
 ## FAQ
 
-- This can only install the Windows App if it found the user logged in session.
+**Q.** What is the limitation of this solution when installing the Windows application?  
+**A.** This solution can only install the Windows application if an active user session is detected on the device. This is because the installation relies on user-context execution rather than system-context.

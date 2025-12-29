@@ -14,16 +14,19 @@ unlisted: false
 
 ## Summary
 
-- Install Windows App
-- Creates a shortcut on desktop
-- User must be logged on to the computer to run this script
+This script installs Windows App and creates a shortcut on the Desktop of the logged in user. 
+
+**NOTE:** User must be logged on to the computer to run this script.
 
 ## Sample Run
 
 Execute the script with SetEnvironment = 1, to import the required EDFs.  
-![Sample Run 1](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image-1.webp) 
+
+![Sample Run 1](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image_1.webp) 
+
 Normal execution of the script 
-![Sample Run 2](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image-2.webp)
+
+![Sample Run 2](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image_2.webp)
 
 ## Dependencies
 
