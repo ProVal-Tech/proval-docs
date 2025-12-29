@@ -1,8 +1,8 @@
 ---
 id: '523b8882-2c51-4f70-ad7d-cb2b4baf7bbf'
 slug: /523b8882-2c51-4f70-ad7d-cb2b4baf7bbf
-title: 'Deploy Huntress Agent Windows, Mac'
-title_meta: 'Deploy Huntress Agent Windows, Mac'
+title: 'Deploy Huntress Agent [Windows, Mac]'
+title_meta: 'Deploy Huntress Agent [Windows, Mac]'
 keywords: ['huntress', 'agent', 'installation', 'windows', 'macintosh', 'ticketing']
 description: 'This document provides a comprehensive guide on installing the Huntress Agent on Windows and Macintosh machines. It includes details on ticket creation for installation failures, sample runs, dependencies, user parameters, and EDF configurations for effective deployment.'
 tags: ['installation', 'security', 'ticketing', 'windows']
@@ -15,7 +15,7 @@ unlisted: false
 The script installs the `Huntress Agent` on both Windows and Macintosh machines. It can create a ticket for failure if it's enabled from the [Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) monitor set.
 
 **File Hash:**
-
+- **File Path:** `C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1`
 - **MD5:** `8F19848478D623C13615D166134FE8C1`
 - **SHA256:** `DFC9C59A249E2C5EA0E3AD26CD9639F7F6953FF9781A17823BF84A6009627076`
 
@@ -31,7 +31,7 @@ The script installs the `Huntress Agent` on both Windows and Macintosh machines.
 ## Dependencies
 
 - [raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1](https://raw.githubusercontent.com/huntresslabs/deployment-scripts/main/Powershell/InstallHuntress.powershellv2.ps1)
-- [SEC - Windows Protection - Internal Monitor - Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c)
+- [Internal Monitor - Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c)
 
 ## Variables
 
