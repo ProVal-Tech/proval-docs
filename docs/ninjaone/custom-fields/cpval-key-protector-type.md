@@ -14,7 +14,8 @@ unlisted: false
 
 Defines which BitLocker key protector method will be applied during encryption.
 
-Parameter for BitLocker: 
+**Key Protector Types:**
+
 - Tpm
 - TpmPin (Requires PIN/Password)
 - TpmStartup (Requires Path/ADAccount)
@@ -27,16 +28,15 @@ Parameter for BitLocker:
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
-| ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL KeyProtectorType | cpvalKeyprotectortype | `Organizations`,`Devices`,`Location` | Drop-down | | `Tpm`, `TpmPin`, `TpmStartup`, `TpmPinStartup`, `Password`, `Startup`, `RecoveryKey`, `RecoveryPassword`, `AdAccount` | Editable | Read_Write | Read_Write | Defines which BitLocker key protector method will be applied during encryption. | Specifies the BitLocker key protector type used for securing the volume. | Defines which BitLocker key protector method will be applied during encryption. | BitLocker |
+| Label | Field Name | Definition Scope | Type | Required | Available Options | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---- | ---------------- | ---- | -------- | ------------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
+| cPVAL KeyProtectorType | cpvalKeyprotectortype | `Organizations`,`Devices`,`Location` | Drop-down | `false` | `Tpm`, `TpmPin`, `TpmStartup`, `TpmPinStartup`, `Password`, `Startup`, `RecoveryKey`, `RecoveryPassword`, `AdAccount` | `RecoveryPassword` | Editable | Read_Write | Read_Write | Defines which BitLocker key protector method will be applied during encryption. | Specifies the BitLocker key protector type used for securing the volume. | Defines which BitLocker key protector method will be applied during encryption. | BitLocker |
+
+> **Note:** *Select `RecoveryPassword` only to apply both `TPM` and `RecoveryPassword` key protectors on the end machine.*
 
 ## Dependencies
 
-- [Automation - Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 - [Solution - BitLocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
-
-
 
 ## Custom Field Creation
 
@@ -44,4 +44,4 @@ Parameter for BitLocker:
 
 ## Sample Screenshot
 
-![cPVAL KeyProtectorType](../../../static/img/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea/cpval-Keyprotectortype.webp)  
+![cPVAL KeyProtectorType](../../../static/img/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea/image1.webp)

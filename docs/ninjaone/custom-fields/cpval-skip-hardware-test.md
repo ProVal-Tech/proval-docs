@@ -16,15 +16,13 @@ Mark this checkbox to enable BitLocker without performing the hardware validatio
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Example | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
+| Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL SkipHardwareTest | cpvalSkiphardwaretest | `Organizations`,`Devices`,`Location` | CheckBox | | | Editable | Read_Write | Read_Write | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. | BitLocker |
+| cPVAL SkipHardwareTest | cpvalSkiphardwaretest | `Organizations`,`Devices`,`Location` | CheckBox | `false` | `false` | Editable | Read_Write | Read_Write | Mark this checkbox to enable BitLocker without performing the hardware validation test. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. Skipping the hardware test allows BitLocker initialization to proceed on devices where hardware checks may fail or are unnecessary. | Mark this checkbox to enable BitLocker without forcefully validating the hardware. | BitLocker |
 
 ## Dependencies
 
-- [Automation - Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
-- [Solution - Bitlocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
-
+- [Solution - BitLocker Initialize - NinjaOne](/docs/2ebfabd5-05cf-4175-a513-2aa290eb26e8)
 
 ## Custom Field Creation
 
@@ -32,4 +30,4 @@ Mark this checkbox to enable BitLocker without performing the hardware validatio
 
 ## Sample Screenshot
 
-![cPVAL SkipHardwareTest](../../../static/img/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac/skip-hardware.webp)  
+![cPVAL SkipHardwareTest](../../../static/img/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac/image1.webp)  
