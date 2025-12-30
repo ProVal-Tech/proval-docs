@@ -1,8 +1,8 @@
 ---
 id: 'c09ed894-03d7-40e3-8cb0-2223bbeec648'
 slug: /c09ed894-03d7-40e3-8cb0-2223bbeec648
-title: 'Microsoft Teams Remove Auto Start'
-title_meta: 'Microsoft Teams Remove Auto Start'
+title: 'Microsoft Teams - Auto Start - Disable'
+title_meta: 'Microsoft Teams - Auto Start - Disable'
 keywords: ['ms-teams', 'autostart', 'registry', 'login', 'users']
 description: 'This document provides a PowerShell script that removes the autostart entry for Microsoft Teams for all users, helping to streamline the login process by preventing the application from launching automatically.'
 tags: ['performance', 'setup', 'software', 'windows']

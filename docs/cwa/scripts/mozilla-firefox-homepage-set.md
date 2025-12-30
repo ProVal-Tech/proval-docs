@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This document provides an Automate implementation of the agnostic script [SWM - Software Configuration - Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e) to set the default homepage for the Mozilla Firefox browser.
+This document provides an Automate implementation of the agnostic script [Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e) to set the default homepage for the Mozilla Firefox browser.
 
 ## Sample Run
 
@@ -20,7 +20,7 @@ This document provides an Automate implementation of the agnostic script [SWM - 
 
 ## Dependencies
 
-[SWM - Software Configuration - Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)
+[Agnostic - Set-FirefoxHomepage](/docs/09a48350-5bd8-4d4a-8436-d1aa46bcd92e)
 
 #### User Parameters
 

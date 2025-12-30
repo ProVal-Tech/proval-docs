@@ -16,7 +16,7 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 ## Sample Run
 
-![Sample Run](../../../static/img/docs/f0ddbb24-0d41-41ca-a6cb-926d70dd71d5/image_1.webp)
+![Sample Run](../../../static/img/docs/bda1a4a2-61f6-4274-9df4-e64aa2f80a80/image1.webp)
 
 ## Variables
 
@@ -36,14 +36,17 @@ This script installs the DNS Filter agent on the machines. It is compatible with
 
 ## EDFs
 
-| Name                          | Level   | Type    | Description                                                                                           |
-|-------------------------------|---------|---------|-------------------------------------------------------------------------------------------------------|
-| Deploy DNS Filter Agent       | Client  | Flag    | If set to 1, the DNS filter agent will be installed on the agents of the client.                     |
-| Exclusion of DNS Filter Agent  | Location| Flag    | If set to 1, the DNS filter agent will be excluded from the agents of the location.                  |
-| Exclusion of DNS Filter Agent  | Computer| Flag    | If set to 1, the DNS filter agent will not be installed on the computer.                             |
-| DNSFilter Computer Key        | Computer| Text    | Stores the secret key at the computer level. It overrides the secret key present at the location/client level. |
-| DNSFilter Location Key        | Location| Text    | Stores the secret key at the location level. It overrides the secret key present at the client level. |
-| DNSFilter Site Key            | Client  | Text    | Stores the secret key at the client level. This key only works when both the location (DNSFilter Location Key) and computer level EDF (DNSFilter Computer Key) are empty. |
+| Name                          | Level   | Section |Type    | Description                                                                                           |
+|-------------------------------|---------|---------|---------|------------------------------------------------------------------------------------------------------|
+| Deploy DNS Filter Agent       | Client  | DNSFilter | Flag    | If set to 1, the DNS filter agent will be installed on the agents of the client.                     |
+| DNSFilter Site Key            | Client  | DNSFilter | Text    | Stores the secret key at the client level. This key only works when both the location (DNSFilter Location Key) and computer level EDF (DNSFilter Computer Key) are empty. |
+| DNSFilter Location Key        | Location  | DNSFilter | Text    | Stores the secret key at the location level. It overrides the secret key present at the client level. |
+| DNSFilter Computer Key        | Computer  | DNSFilter | Text    | Stores the secret key at the computer level. It overrides the secret key present at the location/client level. |
+| Exclusion of DNS Filter Agent  | Location  | Exclusions |  Flag    | If set to 1, the DNS filter agent will be excluded from the agents of the location.                  |
+| Exclusion of DNS Filter Agent  | Computer  | Exclusions |  Flag    | If set to 1, the DNS filter agent will not be installed on the computer.                             |
+
+
+
 
 ## Output
 

@@ -1,8 +1,8 @@
 ---
 id: '6489855d-0391-444d-a207-dfbd76152948'
 slug: /6489855d-0391-444d-a207-dfbd76152948
-title: 'Repair Huntress Agent Windows'
-title_meta: 'Repair Huntress Agent Windows'
+title: 'Repair Huntress Agent [Windows]'
+title_meta: 'Repair Huntress Agent [Windows]'
 keywords: ['huntress', 'agent', 'repair', 'windows', 'script']
 description: 'This document provides a detailed guide on using a script to repair the Huntress Agent on Windows machines, including file hashes, dependencies, variables, and client-level EDFs.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -15,6 +15,8 @@ unlisted: false
 This script can be used to repair the Huntress Agent for Windows machines.
 
 **File Hash:**
+
+- **File Path:** `C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1`
 - **MD5:** `8F19848478D623C13615D166134FE8C1`
 - **SHA256:** `DFC9C59A249E2C5EA0E3AD26CD9639F7F6953FF9781A17823BF84A6009627076`
 

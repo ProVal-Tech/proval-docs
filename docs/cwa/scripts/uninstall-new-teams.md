@@ -14,11 +14,11 @@ unlisted: false
 
 The script uninstalls `New Teams` from Windows machines. It will only work on computers with a logged-in user.
 
-**File Path:** `C:/ProgramData/_Automation/Script/Uninstall-NewTeams/Uninstall-NewTeams.ps1`
+### File Hash
 
-**File Hash (SHA256):** `B1A3E764F1384A9E15E0B9B8DDAF8E2E093FA52CEA82446C89A38D216E039883`
-
-**File Hash (MD5):** `17F1C8FED7120443E532FECD7D460B80`
+- **File Path:** `C:/ProgramData/_Automation/Script/Uninstall-NewTeams/Uninstall-NewTeams.ps1`
+- **SHA256:** `B1A3E764F1384A9E15E0B9B8DDAF8E2E093FA52CEA82446C89A38D216E039883`
+- **MD5:** `17F1C8FED7120443E532FECD7D460B80`
 
 ## Sample Run
 

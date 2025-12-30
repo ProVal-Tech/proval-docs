@@ -34,8 +34,8 @@ This document describes how to deploy the SentinelOne agent with an agent token 
 
 ### Global Parameter Set Instructions:
 
-1. Sync the following script: [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb).
-2. Run [CWM - Automate - Script - Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb) with the following parameters:
+1. Sync the following script: [Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb).
+2. Run [Property - Set](/docs/2b64bf00-b8b2-499b-b9d2-70d218f18cfb) script with the following parameters:
    - Name: SentinelOneDefaultToken
    - Type: Global
    - Value: [Your Default SentinelOne Token]

@@ -1,8 +1,8 @@
 ---
 id: 'a89ef3e3-2a5e-4b46-9286-1a2cf054011a'
 slug: /a89ef3e3-2a5e-4b46-9286-1a2cf054011a
-title: 'Microsoft Edge - Remove Extension'
-title_meta: 'Microsoft Edge - Remove Extension'
+title: 'Microsoft Edge - Extension - Remove'
+title_meta: 'Microsoft Edge - Extension - Remove'
 keywords: ['edge', 'extension', 'unregister', 'chromium', 'windows']
 description: 'This document outlines a script designed to remove the enforcement of the installation of specified extensions in the Chromium version of the Microsoft Edge browser. The process includes details on dependencies, variables, and the overall operation of the script, ensuring users can effectively manage their browser extensions.'
 tags: ['security', 'software', 'update', 'windows']
@@ -24,7 +24,7 @@ This script is used to remove the enforcement of the installation of an extensio
 
 - Windows 10 1703+
 - Chromium Version of Microsoft Edge Installed
-- [Project Script](https://file.provaltech.com/repo/@ProjectName@.ps1)
+
 
 ## Variables
 
@@ -49,9 +49,7 @@ This script is used to remove the enforcement of the installation of an extensio
 |-------------------|--------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
 | ExtensionIDs      | cjpalhdlnbpafiamejdnhcphjbkeiagm                 | True     | The Extension ID or list of Extension IDs to remove from managed status.                       |
 
-## Process
 
-The script takes a single parameter, which is an array of Extension IDs to install that can be found on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). The list of extensions is then cycled through, and install registry entries are removed from the policy section. Any extensions found to be currently unmanaged will be skipped. Blocking entries are then added to the registry to prevent future installation. To find an extension to unmanage, navigate to the page for that extension and copy the last portion of the URL for the Extension ID.
 
 **Example:**
 

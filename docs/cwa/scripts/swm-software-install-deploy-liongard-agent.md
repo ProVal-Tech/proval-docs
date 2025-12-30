@@ -1,8 +1,8 @@
 ---
 id: '01472480-e16e-4733-86db-382a6a406479'
 slug: /01472480-e16e-4733-86db-382a6a406479
-title: 'SWM - Software Install - Deploy Liongard Agent'
-title_meta: 'SWM - Software Install - Deploy Liongard Agent'
+title: 'Deploy Liongard Agent'
+title_meta: 'Deploy Liongard Agent'
 keywords: ['liongard', 'agent', 'installation', 'upgrade', 'service']
 description: 'This document provides a detailed guide on the installation and upgrade of the Liongard Agent, including service configuration options and necessary parameters for successful execution.'
 tags: ['installation', 'software']
@@ -75,11 +75,12 @@ The script will work as long as this download URL is active:
 
 ## Client-Level EDF
 
-| Name                     | Example                     | Required | Description                                      |
-|--------------------------|-----------------------------|----------|--------------------------------------------------|
-| Liongard Access Key      | 12fe3456cd67def89abc2       | True     | Liongard Access Key of the client                |
-| Liongard Access Secret    | d02bded900b42440b82292bee20bb449d24db9be4e2802808b0444209e8249dd | True | Liongard Secret of the client                    |
-| Liongard Environment      | ProValTech                  | True     | Client Name in Liongard Portal                   |  
+| Name                     | Section | Example                     | Required | Description                                      |
+|--------------------------|-----------------------------|----------|----------|--------------------------------------------------|
+| Liongard Access Key      | Liongard |12fe3456cd67def89abc2       | True     | Liongard Access Key of the client                |
+| Liongard Access Secret    |  Liongard |d02bded900b42440b82292bee20bb449d24db9be4e2802808b0444209e8249dd | True | Liongard Secret of the client                    |
+| Liongard Environment      | Liongard | ProValTech                  | True     | Client Name in Liongard Portal                   |  
+
 ![Image](../../../static/img/docs/01472480-e16e-4733-86db-382a6a406479/image_6.webp)  
 
 ## Output
