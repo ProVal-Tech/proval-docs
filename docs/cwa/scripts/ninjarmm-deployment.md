@@ -17,8 +17,8 @@ https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Ins
 It depends on the Authorization token which will be kept to the client and location EDFs.
 
 ## File Hash
-
-`MD5 FileHash` - 700108BC27CD3815939558E784825072
+- File Path: `C:\ProgramData\_automation\script\NinjaRMM\NinjaRMM.ps1`  
+- MD5 FileHash: `700108BC27CD3815939558E784825072`
 
 Use this Hash for whitelisting the PowerShell, where the security application is installed on the Windows machines.
 
@@ -26,11 +26,11 @@ Use this Hash for whitelisting the PowerShell, where the security application is
 
 Initially run it by providing the `Set_Environment` value to 1 on any machine so that the EDFs get created:
 
-![Sample Run 1](../../../static/img/docs/ninjarmm-deployment/image.png)
+![Sample Run 1](../../../static/img/docs/0311d3c5-9dc1-4217-938e-02c3c55c11d2/image_1.webp)
 
 To deploy the NinjaRMM Agent, execute the script without providing any value to the parameter:
 
-![Sample Run 2](../../../static/img/docs/ninjarmm-deployment/image-1.png)
+![Sample Run 2](../../../static/img/docs/0311d3c5-9dc1-4217-938e-02c3c55c11d2/image_2.webp)
 
 ## Dependencies
 
