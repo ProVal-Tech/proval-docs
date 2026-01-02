@@ -7,7 +7,7 @@ keywords: ['windows', 'registry', 'fast', 'boot', 'shutdown']
 description: 'This document details a script designed to disable the Windows Fast Boot feature by adjusting the local registry on the target device. Fast Boot can prevent a full kernel reboot during shutdown, potentially causing system issues and impacting patch installations. The script ensures proper functionality by requiring a device restart for changes to take effect.'
 tags: ['performance', 'reboot', 'registry', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

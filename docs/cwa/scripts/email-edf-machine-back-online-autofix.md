@@ -7,7 +7,7 @@ keywords: ['email', 'alert', 'monitor', 'notification', 'machine']
 description: 'This document outlines the functionality of a script designed to send email notifications when a monitored machine comes back online. It integrates with the CWM - Automate - Internal Monitor for effective monitoring and alerting.'
 tags: ['email']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

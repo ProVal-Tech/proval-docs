@@ -7,7 +7,7 @@ keywords: ['monitor', 'fast', 'boot', 'windows', 'disable']
 description: 'This document outlines a monitor that detects machines with Windows Fast Boot enabled and provides an Autofix for Windows-based machines to disable it. It is intended for workstations and should not be run on servers.'
 tags: ['windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
