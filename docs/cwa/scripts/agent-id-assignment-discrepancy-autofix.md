@@ -7,7 +7,7 @@ keywords: ['automate', 'agent', 'ticket', 'reinstall', 'discrepancy']
 description: 'This document provides a detailed overview of a script designed to reinstall the Automate agent for machines that share the same agent ID. It outlines the process of creating tickets for failed installations and highlights specific dependencies and variables necessary for successful execution. The script is intended for environments where Mac Signup Matching is not enabled.'
 tags: ['installation']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

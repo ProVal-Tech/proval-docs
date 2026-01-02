@@ -7,7 +7,7 @@ keywords: ['monitor', 'alert', 'connectwise', 'email', 'computer']
 description: 'This document provides a detailed overview of a monitor that alerts when a computer checks in with a valid email address for the Online Alert E-mail EDF in ConnectWise Automate. It includes information on the alert template and dependencies required for setup.'
 tags: ['connectwise', 'email', 'setup']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

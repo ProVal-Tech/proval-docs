@@ -7,7 +7,7 @@ keywords: ['onedrive', 'sync', 'status', 'windows', 'script']
 description: 'This document details a script for collecting OneDrive sync status information from Windows machines, targeting Non-SharePoint Linked Sites. The script utilizes the Onedrive.dll module and requires an active user session to function correctly.'
 tags: ['performance', 'report', 'software', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
