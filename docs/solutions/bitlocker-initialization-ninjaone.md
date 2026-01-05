@@ -33,7 +33,7 @@ The solution uses a **[BitLocker Initialization - Detection](/docs/87d7a413-4bd4
 | --- | --- | --- | --- | --- | --- |
 | [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b) | - | `Windows` | Org, Loc, Dev | Yes | Manual |
 | [cPVAL MountPoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | `$env:SystemDrive` | `C:` | Org, Loc, Dev | No | Manual |
-| [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | `XtsAes256` | `XtsAes128` | Org, Loc, Dev | No | Manual |
+| [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | `XtsAes128` | `XtsAes256` | Org, Loc, Dev | No | Manual |
 | [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | `RecoveryPassword` | `TpmPin` | Org, Loc, Dev | No | Manual |
 | [cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057) | `0` | `3` | Org, Loc, Dev | No | Manual |
 | [cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac) | `false` | `true` | Org, Loc, Dev | No | Manual |
@@ -90,7 +90,7 @@ Create the following compound conditions as described in the documentation:
 **A:** The solution is designed to have safe "Default" values. If you simply set the **cPVAL BitLocker Enable** field to `Windows` (or `Windows Workstations`/`Windows Servers`) and leave everything else blank, the solution will apply the following configuration:
 
 * **Target:** System Drive (usually `C:`).
-* **Encryption Method:** `XTS-AES 256`.
+* **Encryption Method:** `XTS-AES 128`.
 * **Protector:** `RecoveryPassword`. **Important:** If the machine supports TPM, selecting this default option will automatically enable **both** the `TPM` and `RecoveryPassword` key protectors. This ensures the device boots seamlessly via TPM while retaining a recovery option.
 * **Hardware Test:** It will **run** the hardware test (requiring a reboot before encryption starts) unless you explicitly skip it.
 
@@ -202,3 +202,11 @@ Create the following compound conditions as described in the documentation:
 ### **Q.** Why do we have separate "Windows" and "Windows Workstations" options in the dropdown?
 
 **A:** This allows for granular policy targeting. You might have a broad policy for "Windows" generally, but specific, stricter policies applied only to "Windows Workstations" or "Windows Servers" via different Compound Conditions. Functionally, checking either will trigger the relevant automation if the Compound Condition is targeted correctly.
+
+### **Q.** What does the "Force" parameter in the script variables do?
+
+**A:** The **Force** parameter allows you to override the standard compliance checks. When enabled, if the script detects that the drive is already encrypted, it will ignore the current state and strictly enforce the policy by **decrypting** the drive first, then **re-encrypting** it using the settings defined in your Custom Fields.
+
+### **Q.** When should I use the "Force" option?
+
+**A:** You should generally leave this unchecked for normal operations. It is best used for troubleshooting or remediating devices with "stuck" or inconsistent encryption states. For example, if you suspect an encrypted drive has a corrupted configuration, enabling **Force** ensures a clean application of your policy from scratch. **Note:** Since this triggers a full decryption and re-encryption cycle, the process can take a significant amount of time to complete.
