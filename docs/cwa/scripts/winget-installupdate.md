@@ -19,8 +19,8 @@ Please find the application package at the following URL: [https://winget.run/se
 ## File Hash
 
 - **Script Path:**  `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Invoke-WingetProcessor.ps1`  
-- **File Hash (SHA256):** `E77F11DF22570228C4C076EA5181F5C4432C8C29501C4537574D6D9DA4ED077C`  
-- **File Hash (MD5):** `988151DA4B1FF497FE63C71C2141C4EB`
+- **File Hash (SHA256):** `23E874EC415CEEF53A727074F6725B22A3F4DE094C59D20F0FE06F5CA87C267B`  
+- **File Hash (MD5):** `1F5C31B67B6E0DD1FD342709B45DDE1F`
 
 ## Sample Run
 
