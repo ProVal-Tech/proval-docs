@@ -1,8 +1,8 @@
 ---
 id: '161f5696-0f6b-46af-ad25-fe942745f099'
 slug: /161f5696-0f6b-46af-ad25-fe942745f099
-title: 'Reinstall Huntress Agent Windows'
-title_meta: 'Reinstall Huntress Agent Windows'
+title: 'Reinstall Huntress Agent [Windows]'
+title_meta: 'Reinstall Huntress Agent [Windows]'
 keywords: ['huntress', 'agent', 'windows', 'reinstall', 'script']
 description: 'This document provides a detailed guide on how to reinstall the Huntress Agent on Windows machines, including necessary dependencies, variables, and client-level and location-level EDFs required for the process.'
 tags: ['installation', 'security', 'software', 'windows']
@@ -15,6 +15,8 @@ unlisted: false
 This script can be used to reinstall the Huntress Agent for Windows machines.
 
 **File Hash:**
+
+- **File Path:** `C:\ProgramData\_Automation\Script\Invoke-HuntressAgentCommand\Invoke-HuntressAgentCommand.ps1`
 - **MD5:** `8F19848478D623C13615D166134FE8C1`
 - **SHA256:** `DFC9C59A249E2C5EA0E3AD26CD9639F7F6953FF9781A17823BF84A6009627076`
 

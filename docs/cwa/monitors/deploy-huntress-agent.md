@@ -16,7 +16,7 @@ The purpose of the internal monitor is to detect Windows and Macintosh machines 
 
 ## Dependencies
 
-[SEC - Windows Protection - Script - Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf)
+[Script - Deploy Huntress Agent [Windows, Mac]](/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf)
 
 ## Client-Level EDF
 
@@ -42,4 +42,4 @@ Global
 
 ## Alert Template
 
-**Name:** `△ Custom - Deploy Huntress Agent`
+`△ Custom - Deploy Huntress Agent`

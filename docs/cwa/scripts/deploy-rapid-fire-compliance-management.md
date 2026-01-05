@@ -23,10 +23,21 @@ It first validates that the .NET Framework 4.8 is installed; if it is installed,
 
 ![Sample Run](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_1.webp)
 
+Set `.NetFrameworkInstall` to 1 to install the .netframework 4.8.
+
+![Sample Run2](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_4.webp)
+
+Set `Reboot` to 1, to reboot the machine after .netframework 4.8 is installed.
+
+![Sample Run2](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_5.webp)
+
+
+
 ## Dependencies
 
-Prerequisite: .NET Framework 4.8 should be installed  
-[CWA Script - .NET 4.8 Framework Installation](/docs/bc595922-1293-432f-9b30-4a246d517606)
+- .NET Framework 4.8 should be installed  
+- [Script - .NET 4.8 Framework Installation](/docs/bc595922-1293-432f-9b30-4a246d517606)
+- [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433)
 
 ## Variables
 
@@ -50,7 +61,7 @@ Prerequisite: .NET Framework 4.8 should be installed
 
 ## Ticketing
 
-To enable ticketing, please set the ticket category at the monitor level: [CWA Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433).  
+To enable ticketing, please set the ticket category at the monitor level: [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433).  
 
 ![Ticketing](../../../static/img/docs/3f080b6a-ea0b-43de-a4b0-0595629b7a9c/image_2.webp)
 
