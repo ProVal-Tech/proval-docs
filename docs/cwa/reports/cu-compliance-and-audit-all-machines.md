@@ -2,7 +2,7 @@
 id: '7be1d6f2-7b75-4740-a42b-8e6f66377d15'
 slug: /7be1d6f2-7b75-4740-a42b-8e6f66377d15
 title: 'CU Compliance and Audit - All Machines'
-title_meta: 'Patch Compliance - CU Audit - All Machines'
+title_meta: 'CU Compliance and Audit - All Machines'
 keywords: ['report', 'compliance', 'patch', 'audit', 'machines', 'status', 'client']
 description: 'Provides an overview of the systems cumulative update compliance, including details on the latest installed CU and identification of machines that have reached end‑of‑life (EOL).'
 tags: ['compliance', 'report']

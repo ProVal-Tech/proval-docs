@@ -58,7 +58,7 @@ This solution relies on the following components to function correctly:
   ![Reload Cache](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_1.webp)
 7. After the reports have been imported, they can be viewed instantly by going into the Report Center --> Report List --> View the reports mentioned in this document:  
   ![View Reports](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_3.webp)  
-To view them from the Right-Click menu (Reports --> Health --> Patch Compliance - CU Audit - XXXX), the control center must be restarted before they become visible. If the partner does not need to access them right away, this is typically not an issue.  
+To view them from the Right-Click menu (Reports --> Health --> CU Compliance and Audit - XXXX), the control center must be restarted before they become visible. If the partner does not need to access them right away, this is typically not an issue.  
   ![Right-Click Menu](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_2.webp)
 
 ## FAQ
@@ -80,18 +80,18 @@ At the end, all the machine scores are totaled and averaged to get the main perc
 
 1. Open the Computer Management screen of the affected device --> Navigate to the Patching screen --> Look for the latest month's cumulative update.
 
-* If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) and scan for patches again. If that does not work, further troubleshooting will need to happen manually on the machine.
+   * If you cannot find the latest cumulative update, try running the [Script - Patch Manager - WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) and scan for patches again. If that does not work, further troubleshooting will need to happen manually on the machine.
 
-2.If the latest cumulative update is visible, look for any failure messages on that main screen or when selecting the Patch Job tab.
+2. If the latest cumulative update is visible, look for any failure messages on that main screen or when selecting the Patch Job tab.
 
-* If there are no job logs, there is likely a configuration issue with the assigned patch policy that must be investigated.
-* If you see a failure during the maintenance window, investigate the mentioned error code.
+    * If there are no job logs, there is likely a configuration issue with the assigned patch policy that must be investigated.
+    * If you see a failure during the maintenance window, investigate the mentioned error code.
 
-3.If you still do not see any issues reported, open Patch Manager (Automation --> Patch Manager) --> Click the monitor icon at the top left to access the device screen --> Find the machine in question and select it --> You should see patch information populate at the bottom --> Select the Patch History tab and look for any failures with the latest cumulative update.
+3. If you still do not see any issues reported, open Patch Manager (Automation --> Patch Manager) --> Click the monitor icon at the top left to access the device screen --> Find the machine in question and select it --> You should see patch information populate at the bottom --> Select the Patch History tab and look for any failures with the latest cumulative update.
 
-* Investigate any failures.
+    * Investigate any failures.
 
-4.You can also view the Groups tab to confirm the setup of the patch policy if you need to validate that.
+4. You can also view the Groups tab to confirm the setup of the patch policy if you need to validate that.
 
 **Q: I've tried everything and I can't get the latest cumulative update to install. Manual installation from the Microsoft Update Catalog does not work, repair scripts do nothing, and Windows Update consistently fails. What can I try next?**  
 **A:** If this is a workstation, you can try to update to the latest feature update or even a preview build of a feature update. Typically, feature updates consist of a full OS reload while saving data, which can often fix these types of issues.
