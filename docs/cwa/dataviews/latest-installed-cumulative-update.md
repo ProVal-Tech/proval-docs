@@ -41,6 +41,9 @@ This document displays the data fetched by the [CWM - Automate - Script - Get La
 | Patch Release Date                  | Date when the installed CU was released             |
 | KBID                                | KBID of the CU                                     |
 | Days Since Last Cumulative          | Age of the latest installed cumulative update in days |
+| Friendly Name                       | Friendly Name of the Machine                          |
+| Days Since Last Script Run          | Days since script last ran on the machine                   |
+| Days Since Last Contact             | Last Contact of the machine in days                   |
 
 ## Sample Screenshot
 
