@@ -1,8 +1,8 @@
 ---
 id: 0677198b-c8c8-46e5-a964-a06a47c8de1d
 slug: /0677198b-c8c8-46e5-a964-a06a47c8de1d
-title: 'asana deployment'
-title_meta: 'asana deployment'
+title: 'Asana Deployment'
+title_meta: 'Asana Deployment'
 keywords: ['software', 'installation', 'uninstallation', 'asana']
 description: 'This installs the Asana application for Windows.'
 tags: ['software', 'installation', 'uninstallation']
@@ -12,6 +12,6 @@ unlisted: false
 
 ## Description
 
-This installs the Asana application for Windows.
+This installs the `Asana` application for Windows.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/asana-for-windows.toml)
