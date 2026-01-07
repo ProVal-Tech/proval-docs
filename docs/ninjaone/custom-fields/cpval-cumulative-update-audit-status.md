@@ -24,6 +24,7 @@ Shows the most recently installed Windows Cumulative Update. Useful for verifyin
 
 - [Automation - Cumulative Update Audit](/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991)
 - [Group - cPVAL Cumulative Update Older than threshold Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
+- [Solution - Cumulative Update Audit](/docs/72aee984-4fb3-4a1a-9df3-8b12b726f967)
 
 ## Custom Field Creation
 
