@@ -22,12 +22,19 @@ It is an Automate implementation of the agnostic script [Get-LatestInstalledCU](
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Get-LatestInstalledCU\Get-LatestInstalledCU.ps1`  
-**File Hash (Sha256):** `4BC90F4D94F26CEC201A8EFE71C35289F998267A34E37CB5AECF40F0961061B5`  
-**File Hash (MD5):** `71C2B794E53A957E48682B7D0DCF45F7`  
-**File Path:** `C:\ProgramData\_automation\Script\Get-LatestInstalledCU\Get-LatestInstalledCUAI.ps1`  
-**File Hash (Sha256):** `B2AB1980397783AB0FAD045361229F75AF86DD0FEE2D56E2D11C057CDC7F9264`  
-**File Hash (MD5):** `F785240ACE2516427D6A80C8DFD5FD62`  
+- **File Path:** `C:\ProgramData\_automation\Script\Get-LatestInstalledCU\Get-LatestInstalledCU.ps1`  
+    - **File Hash (Sha256):** `4BC90F4D94F26CEC201A8EFE71C35289F998267A34E37CB5AECF40F0961061B5`  
+    - **File Hash (MD5):** `71C2B794E53A957E48682B7D0DCF45F7`  
+
+- **File Path:** `C:\ProgramData\_automation\Script\Get-LatestInstalledCU\Get-LatestInstalledCUAI.ps1`  
+    - **File Hash (Sha256):** `B2AB1980397783AB0FAD045361229F75AF86DD0FEE2D56E2D11C057CDC7F9264`  
+    - **File Hash (MD5):** `F785240ACE2516427D6A80C8DFD5FD62`  
+
+## Dependencies
+
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2/)
+- [Agnostic - Get-LatestInstalledCU](/docs/81d82975-889b-49e4-b229-36d4f162a4ff)
+- [Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
 
 ## Sample Run
 

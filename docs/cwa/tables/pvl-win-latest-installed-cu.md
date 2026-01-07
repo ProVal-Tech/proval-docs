@@ -12,11 +12,11 @@ unlisted: false
 
 ## Purpose
 
-Stores the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
+Stores the data fetched by the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
 
 ## Dependencies
 
-[CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+[Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
 
 ## Tables
 

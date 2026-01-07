@@ -18,7 +18,8 @@ By default, it is limited to running the script against 100 machines per hour.
 
 ## Dependencies
 
-[Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+- [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2/)
 
 ## Target
 
