@@ -68,6 +68,6 @@ This script serves as the enforcement engine that automatically corrects BitLock
 * Activity Logs
 * Custom Fields
   * `cPVAL BitLocker Info`  
-  ![Image1](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/Image1.webp)
+  ![Image1](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/image3.webp)
   * `cPVAL BitLocker Enabled for System Drive`  
-  ![Image2](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/Image2.webp)
+  ![Image2](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/image4.webp)
