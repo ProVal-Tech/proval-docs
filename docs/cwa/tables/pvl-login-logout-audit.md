@@ -16,7 +16,8 @@ This table stores the User login/logout data.
 
 ## Dependencies
 
-[Activity Logging Reporting](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65)
+* [Script - Activity Logging Reporting](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65)
+* [Dataview - User Activity Audit Script](/docs/11c4193c-786a-4477-ae73-9992ff55ea16)
 
 ## Tables
 

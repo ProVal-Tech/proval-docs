@@ -16,8 +16,9 @@ This document displays all possible redirection registry settings globally and f
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
-- [EPM - Data Collection - Custom Table - plugin_proval_gpo_redirection_audit](/docs/025887c2-41a2-4e85-b706-dc0841a104d9)
+- [Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
+- [Custom Table - plugin_proval_gpo_redirection_audit](/docs/025887c2-41a2-4e85-b706-dc0841a104d9)
+- [Solution - Audit-Folder Redirection](/docs/4ffcbf2c-6ba7-4373-a4f0-558f969557ca)
 
 ## Columns
 
@@ -35,34 +36,3 @@ This document displays all possible redirection registry settings globally and f
 | Description    | The description of what the property affects, if known.                                                                                                   |
 | TargetType     | "Global Setting" if the property is setting a global computer setting; "Folder" if the property is targeting a folder.                                    |
 | RoamingState   | "Local" if the property does not provide redirection; "Roaming" if the property provides redirection.                                                     |
-
-## SQL Representation
-
-```sql
-SELECT     c.ClientID AS ClientID
-           ,c.LocationID AS LocationID
-           ,cl.NAME AS ClientName
-           ,l.NAME AS LocationName
-           ,GRA.ComputerID AS ComputerID
-           ,c.NAME AS ComputerName
-           ,`User` AS EffectedUsers
-           ,PropertyName
-           ,SettingType AS TargetType
-           ,Description
-           ,`Value` AS Rawvalue
-           ,CASE 
-               WHEN (
-                   SettingType NOT LIKE '%Global%'
-                   AND `value` NOT LIKE '%Users%'
-                   AND PropertyName NOT LIKE 'PS%'
-                   AND PropertyName NOT LIKE '!Do%'
-                   AND PropertyName != 'Fonts'
-               )
-               THEN 'Roaming'
-               ELSE 'Local'
-           END AS RoamingState 
-FROM     plugin_proval_gpo_redirection_audit GRA
-LEFT JOIN computers c ON (c.ComputerID = GRA.ComputerID)  
-LEFT JOIN clients cl ON (cl.ClientID = c.ClientID)  
-LEFT JOIN locations l ON (l.LocationID = c.LocationID)
-```

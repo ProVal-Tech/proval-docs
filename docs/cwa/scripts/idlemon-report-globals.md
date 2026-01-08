@@ -1,8 +1,8 @@
 ---
 id: 'c6ea69e0-823f-4090-9894-2faf81ba8c46'
 slug: /c6ea69e0-823f-4090-9894-2faf81ba8c46
-title: 'IdleMon Report Globals'
-title_meta: 'IdleMon Report Globals'
+title: 'IdleMon Report [Globals]'
+title_meta: 'IdleMon Report [Globals]'
 keywords: ['idle', 'time', 'collection', 'windows', 'script', 'monitor']
 description: 'This document outlines a script that collects the idle time of users logged on to a Windows machine. The data is stored in a custom table for a specified number of days, utilizing the IdleMon tool for data collection. Instructions for installation and scheduling are provided.'
 tags: ['database', 'report', 'windows']
@@ -14,9 +14,9 @@ unlisted: false
 
 The script collects the idle time of the user(s) logged on to a Windows machine. The data is then stored in a custom table for the number of days specified in the global variable `ThresholdDays`.
 
-It uses the [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool to fetch the data.
+It uses the [IdleMon](https://contentrepo.net/repo/app/idlemon.exe) tool to fetch the data.
 
-The tool must be placed in the `Utilities` folder at `LTShare//Transfer` on the Automate Server/WebDav.
+The tool must be placed in the `Utilities` folder at `LTShare\Transfer` on the Automate Server/WebDav.
 
 The logged-in user must re-login after installing the tool. The script will install the tool on the first run, and then the user must re-login; otherwise, it will not be able to collect data.
 
@@ -28,7 +28,8 @@ Schedule the script to run periodically against the computer to monitor.
 
 ## Dependencies
 
-The [IdleMon](https://github.com/ProVal-Tech/IdleMon) tool must be placed in the `Utilities` folder at `LTShare//Transfer` on the Automate Server/WebDav.
+The [IdleMon](https://contentrepo.net/repo/app/idlemon.exe) tool must be placed in the `Utilities` folder at `LTShare\Transfer` on the Automate Server/WebDav.
+
 
 ## Variables
 

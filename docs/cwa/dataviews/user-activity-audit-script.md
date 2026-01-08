@@ -1,8 +1,8 @@
 ---
 id: '11c4193c-786a-4477-ae73-9992ff55ea16'
 slug: /11c4193c-786a-4477-ae73-9992ff55ea16
-title: 'User Activity Audit Script'
-title_meta: 'User Activity Audit Script'
+title: 'User Activity Audit [Script]'
+title_meta: 'User Activity Audit [Script]'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'reporting']
 description: 'This document provides a comprehensive overview of the User Login/Logout Audit DataView, detailing user activity related to login and logout events. It includes dependencies, a description of the columns present in the DataView, and insights into user interactions with the system.'
 tags: ['report', 'security', 'windows']
@@ -16,8 +16,8 @@ The DataView shows the login/logout audit of the users.
 
 ## Dependencies
 
-- [Activity Logging Reporting](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65)
-- [pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
+- [Script - Activity Logging Reporting](/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65)
+- [Custom Table - pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
 
 ## Columns
 

@@ -1,8 +1,8 @@
 ---
 id: '53f4f86f-0936-40ef-ac65-7287f74d7f65'
 slug: /53f4f86f-0936-40ef-ac65-7287f74d7f65
-title: 'Activity Logging Reporting DV, Global'
-title_meta: 'Activity Logging Reporting DV, Global'
+title: 'Activity Logging Reporting [DV, Global]'
+title_meta: 'Activity Logging Reporting [DV, Global]'
 keywords: ['audit', 'login', 'logout', 'user', 'activity', 'data', 'deletion', 'threshold']
 description: 'This document outlines a script designed to audit user login and logout activities, detailing its variables, parameters, and dependencies. It provides insights into how to manage data retention and deletion based on user activity over specified periods.'
 tags: []
@@ -16,11 +16,16 @@ This script is used to perform an audit of the login/logout activities of users.
 
 ## Sample Run
 
+**First Run:** Run the script with user parameter `SetEnvironment` = 1 to create table and system properties.  
+![Sample Run](../../../static/img/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65/image.webp)
+
+**Regular Run**  
 ![Sample Run](../../../static/img/docs/53f4f86f-0936-40ef-ac65-7287f74d7f65/image_1.webp)
 
 ## Dependencies
 
-[pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
+* [pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589)
+* [Dataview - User Activity Audit Script](/docs/11c4193c-786a-4477-ae73-9992ff55ea16)
 
 ## Variables
 
@@ -39,7 +44,7 @@ Document the various variables in the script. Delete any section that is not rel
 | Hours               | 24                          | True     | Required to trace user activity over the past hour. Note: The value can be changed and should correlate with the monitor interval to get appropriate data.                                                                                         |
 | Data_Deletion       | 1                           | False    | If set to 1, the older data in the table pvl_login_logout_audit will start getting truncated based on the system property 'ProVal_UserLogIn_Out_Threshold_Days' value. If set to 0, no data deletion will be performed.                          |
 | AuditEvent_Enable   | 1                           | False    | If set to 1, the script will enable the Audit login/logout local policy on the agent for data collection in the event logs. If set to 0, the Audit local policy will not be enabled by the script. Note: By default, the policy is not enabled in the agent. |
-| DataRetention_Threshold | 90                     | False    | The value is set in days. If the value is provided and Data_Deletion is set to 1, then older data in the table [vl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589) will be deleted based on the provided value of this parameter.          |
+| DataRetention_Threshold | 90                     | False    | The value is set in days. If the value is provided and Data_Deletion is set to 1, then older data in the table [pvl_login_logout_audit](/docs/c62e7bbf-226d-4269-9d12-536e43af5589) will be deleted based on the provided value of this parameter.          |
 
 #### User Parameters
 
@@ -56,4 +61,4 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
-- Data view
+- Dataview
