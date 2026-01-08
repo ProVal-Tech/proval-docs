@@ -24,6 +24,7 @@ Lists out the machines which has Cumulative Update Installed older than x days.
 
 - [Automation - Cumulative Update Audit](/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991)
 - [Custom Field - cPVAL Cumulative Update Audit Status](/docs/a7c72ccd-b604-4d7f-aefe-3fd5393d7f01)
+- [Solution - Cumulative Update Audit](/docs/72aee984-4fb3-4a1a-9df3-8b12b726f967)
 
 ## Group Creation
 

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-This solution checks the currently installed Cumulative Update on a Windows machine and records the results in a custom field for reporting and auditing purposes.
+This NinjaRMM solution checks the currently installed Cumulative Update on a Windows machine and records the results in a custom field for reporting and auditing purposes.
 
 ## Associated Content
 
@@ -42,6 +42,5 @@ Create the following group:
 
 ## FAQ
 
-### 1. Can the automations be executed manually and independently of the deployment custom fields?
-
-Yes, the automations can be executed manually without relying on the deployment custom fields. If deployment is not enabled or the machine is excluded, the scripts can still be run manually to perform the desired actions.
+**Q.** Can the automations be executed manually and independently of the deployment custom fields?  
+**A.** Yes, the automations can be executed manually without relying on the deployment custom fields. If deployment is not enabled or the machine is excluded, the scripts can still be run manually to perform the desired actions.

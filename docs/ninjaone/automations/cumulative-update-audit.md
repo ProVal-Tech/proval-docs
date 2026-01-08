@@ -25,6 +25,7 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 - [Custom Field - cPVAL Cumulative Update Audit Status](/docs/a7c72ccd-b604-4d7f-aefe-3fd5393d7f01)
 - [Group - cPVAL Cumulative Update Older than threshold Days](/docs/577bdd4f-439e-4462-aac8-184b6b6d40a6)
+- [Solution - Cumulative Update Audit](/docs/72aee984-4fb3-4a1a-9df3-8b12b726f967)
 
 ## Parameters
 
@@ -39,7 +40,7 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 ## Output
 
-- Activity Details 
+- Activity Details   
 ![Image1](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image1.webp) 
-- Custom Field
+- Custom Field  
 ![Image3](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image3.webp)
