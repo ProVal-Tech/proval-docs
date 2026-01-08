@@ -9,19 +9,23 @@ tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 ---
+
 ## Purpose
 
 This solution provides a comprehensive, policy-driven framework for automating and enforcing BitLocker encryption on Windows endpoints within NinjaOne. It eliminates the need for manual script execution by utilizing NinjaRMM Custom Fields to define encryption standards (such as encryption method, key protector type, and mount point) and enforcing them via automated logic.
 
-The solution operates on a "Gatekeeper" model: administrators opt-in specific devices or locations using a control flag. A detection script then continuously audits the device against the defined policy. If a device is found to be non-compliant—whether it is unencrypted, suspended, or using an incorrect algorithm—the system automatically triggers a remediation workflow to bring the device back into compliance without user intervention.
+The solution operates on a "Gatekeeper" model: administrators opt-in specific devices or locations using a control flag. A detection script then continuously audits the device against the defined policy. If a device is found to be non-compliant—whether it is unencrypted, suspended, or using an incorrect algorithm—the system automatically triggers a remediation workflow to bring the device back into compliance.
+
+**Safety & Recovery Key Backup:**
+A critical feature of this updated solution is the **mandatory safety audit**. Regardless of whether the initialization succeeds or fails, the automation immediately captures the current BitLocker status—including active **Recovery Passwords**—and writes them directly to NinjaOne Custom Fields. This ensures that recovery keys are available in the RMM immediately, preventing data loss scenarios on non-TPM devices where a drive might lock before keys can sync to Active Directory or Entra ID.
 
 Key capabilities include:
 
 * **Granular Configuration**: Define specific encryption parameters (e.g., XTS-AES 256 vs. AES 128) and key protectors (TPM, PIN, Recovery Password) via Custom Fields.
+* **Immediate Key Backup**: Automatically stores the Recovery Password in the [cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9) field to ensure immediate access in lockout situations.
 * **Smart Remediation**: Automatically handles complex scenarios, such as injecting a missing Recovery Password, resuming suspended protection, or fully re-encrypting a drive if the wrong algorithm is detected.
-* **Safety & Compatibility**: built-in checks prevent execution on unsupported hardware (e.g., Windows Home edition) or missing prerequisites (e.g., TPM absence).
-* **Wait-Loop Logic**: The remediation process includes intelligent monitoring to ensure drives are fully decrypted before attempting re-encryption, preventing errors during algorithm changes.
-* **Separation of Duties**: Distinct policies for Workstations and Servers allow for tailored management strategies across different device types.
+* **Safety & Compatibility**: Built-in checks prevent execution on unsupported hardware (e.g., Windows Home edition) or missing prerequisites.
+* **Wait-Loop Logic**: The remediation process includes intelligent monitoring to ensure drives are fully decrypted before attempting re-encryption.
 
 The solution uses a **[BitLocker Initialization - Detection](/docs/87d7a413-4bd4-4629-9475-35db91cb1320)** script to evaluate the system state against the Custom Field policy, which triggers the **[Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)** script via a Compound Condition to execute the necessary encryption logic.
 
@@ -31,28 +35,30 @@ The solution uses a **[BitLocker Initialization - Detection](/docs/87d7a413-4bd4
 
 | Name | Default | Example | Level | Required | Managed By |
 | --- | --- | --- | --- | --- | --- |
-| [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b) | - | `Windows` | Org, Loc, Dev | Yes | Manual |
-| [cPVAL MountPoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | `$env:SystemDrive` | `C:` | Org, Loc, Dev | No | Manual |
-| [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | `XtsAes128` | `XtsAes256` | Org, Loc, Dev | No | Manual |
-| [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | `RecoveryPassword` | `TpmPin` | Org, Loc, Dev | No | Manual |
-| [cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057) | `0` | `3` | Org, Loc, Dev | No | Manual |
-| [cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac) | `false` | `true` | Org, Loc, Dev | No | Manual |
-| [cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b) | - | `123456` | Org, Loc, Dev | No | Manual |
-| [cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47) | - | `CONTOSO\Group` | Org, Loc, Dev | No | Manual |
+| [cPVAL BitLocker Enable](/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b) | - | `Windows` | Organization, Location, Device | Yes | Manual |
+| [cPVAL MountPoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | `$env:SystemDrive` | `C:` | Organization, Location, Device | No | Manual |
+| [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | `XtsAes128` | `XtsAes256` | Organization, Location, Device | No | Manual |
+| [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | `RecoveryPassword` | `TpmPin` | Organization, Location, Device | No | Manual |
+| [cPVAL Allow TPM Or Reboot](/docs/418f1b8b-14f8-492d-80fc-ea038cff6057) | `0` | `3` | Organization, Location, Device | No | Manual |
+| [cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac) | `false` | `true` | Organization, Location, Device | No | Manual |
+| [cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b) | - | `123456` | Organization, Location, Device | No | Manual |
+| [cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47) | - | `CONTOSO\Group` | Organization, Location, Device | No | Manual |
+| [cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9) | - | *HTML Table* | Device | No | Automation |
+| [cPVAL BitLocker Enabled for System Drive](/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5) | `No` | `Yes` | Device | No | Automation |
 
 ### Automations
 
 | Name | Function |
 | --- | --- |
 | [BitLocker Initialization - Detection](/docs/87d7a413-4bd4-4629-9475-35db91cb1320) | Evaluates the endpoint's current encryption state against the policy defined in Custom Fields. Returns specific exit codes (0=Compliant, 1=Non-Compliant, 2=Error) to drive the automation logic. |
-| [Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198) | The remediation engine that applies the desired configuration. It handles enabling encryption, adding key protectors, or re-encrypting the drive if the method is incorrect. |
+| [Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198) | The remediation engine that applies the desired configuration. It handles enabling encryption, adding key protectors, or re-encrypting the drive. **It now also performs a safety audit to log recovery keys.** |
 
 ## Compound Conditions
 
 | Name | Function |
 | --- | --- |
 | [Enable BitLocker - Workstation](/docs/6193f950-2266-42fd-9535-59adfe445cb5) | Automatically runs the **Initialize BitLocker** automation on Workstations when the **Detection** script identifies a non-compliant state AND the device is opted-in via the "Windows Workstations" setting. |
-| [Enable BitLocker - Server](/docs/6193f950-2266-42fd-9535-59adfe445cb5) | Automatically runs the **Initialize BitLocker** automation on Servers when the **Detection** script identifies a non-compliant state AND the device is opted-in via the "Windows Servers" setting. |
+| [Enable BitLocker - Server](/docs/6193f950-2266-42fd-9535-59adfe445cb5) | Automatically runs the **Initialize BitLocker** automation on Servers when the **Detection** script identifies a non-compliant state AND the device is opted-in via the "Windows Servers" setting. **The BitLocker Drive Encryption feature must be enabled on servers to encrypt a drive with BitLocker disk encryption. Encryption will not work without enabling this feature.** |
 
 ## Implementation
 
@@ -68,6 +74,8 @@ Create the following custom fields as described in the documentation:
 * [Custom Field: cPVAL SkipHardwareTest](/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac)
 * [Custom Field: cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b)
 * [Custom Field: cPVAL Path Or ADAccount](/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47)
+* [Custom Field: cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9)
+* [Custom Field: cPVAL BitLocker Enabled for System Drive](/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5)
 
 ### Step 2
 
@@ -106,6 +114,14 @@ Create the following compound conditions as described in the documentation:
 
 **A:** Yes. You must enable the **BitLocker Drive Encryption** feature on the server first. Then, set the **cPVAL BitLocker Enable** field to `Windows Servers` to target the server-specific policies.
 
+### **Q.** Why do we have separate "Windows" and "Windows Workstations" options in the dropdown?
+
+**A:** This allows for granular policy targeting. You might have a broad policy for "Windows" generally, but specific, stricter policies applied only to "Windows Workstations" or "Windows Servers" via different Compound Conditions. Functionally, checking either will trigger the relevant automation if the Compound Condition is targeted correctly.
+
+### **Q.** How often does the solution check for compliance?
+
+**A:** The default schedule for the Compound Condition is every **24 hours**. You can adjust this interval in the Compound Condition settings if needed.
+
 ### **Q.** What if my drive is already encrypted?
 
 **A:** The detection script will check the current configuration.
@@ -121,9 +137,52 @@ Create the following compound conditions as described in the documentation:
 
 **A:** Similar to the encryption method mismatch, the script will disable BitLocker, wait for decryption, and then re-enable BitLocker using the correct protector type you specified in **cPVAL KeyProtectorType**.
 
-### **Q.** Can I force the script to skip the Hardware Test?
+### **Q.** My BitLocker status says "Protection Off" (Suspended). Will this solution fix it?
 
-**A:** Yes. By default, BitLocker runs a hardware test that requires a reboot before encryption begins. If you want to bypass this (start encrypting immediately), check the box for **cPVAL SkipHardwareTest** (set it to `true`).
+**A:** Yes. The detection script explicitly checks for `ProtectionStatus: Off`. If found, it flags the device as non-compliant. The remediation script will then run `Resume-BitLocker` to re-enable protection without decrypting the drive.
+
+### **Q.** Why does the "Initialize BitLocker" script perform an audit automatically?
+
+**A.** The automatic audit acts as a critical fail-safe against data loss. By forcing an audit immediately after the encryption attempt, the solution captures the **Recovery Password** and writes it to NinjaOne instantly. This ensures that even if the device reboots and locks before it can sync keys to Active Directory or Azure AD, the recovery key is already safely stored in the RMM.
+
+### **Q.** How does the solution prevent lockout on non-TPM devices?
+
+**A.** Devices without a TPM chip must rely on a `RecoveryPassword` protector. If such a device encrypts and immediately restarts, it may prompt for that password before it has had time to sync with the domain controller. By capturing this password during the script execution, NinjaOne ensures you have the key required to unlock the drive immediately.
+
+### **Q.** Which Custom Fields are updated by the Initialization script?
+
+**A.** Regardless of whether the encryption succeeds or fails, the script updates two specific fields:
+
+1. **cPVAL BitLocker Info:** Stores the full HTML report, including the critical 48-digit Recovery Password.
+2. **cPVAL BitLocker Enabled for System Drive:** Updates the compliance flag to show if the OS drive is protected.
+
+### **Q.** Does the script log BitLocker details even if the encryption fails?
+
+**A.** Yes. The script logic executes the internal `Get-BitLockerDetail` function at every exit point, including failure scenarios (Exit 1). This ensures that any partial encryption or existing keys are documented before the script terminates.
+
+### **Q.** What if the machine does not have a TPM chip?
+
+**A:** You should not use the `Tpm`, `TpmPin`, or `TpmStartup` protector types. Instead, select `Password` or `RecoveryPassword` in the **cPVAL KeyProtectorType** field, which do not strictly require a TPM.
+
+### **Q.** Does the initialization audit replace the need for the daily "BitLocker Audit" schedule?
+
+**A.** No. The audit performed by the Initialization script is a specific event triggered only during remediation to capture the initial keys. You still need the daily **BitLocker and TPM Audit** solution to track ongoing compliance, user changes, or potential suspension of BitLocker over time.
+
+### **Q.** Does this solution backup the Recovery Key to NinjaOne?
+
+**A:** Not directly into a custom field. The script executes standard BitLocker commands. If your environment is configured to back up keys to Active Directory (AD) or Entra ID (Azure AD), Windows will handle that key escrow during the encryption process triggered by this script.
+
+### **Q.** Where do I specify the Active Directory account for backing up keys?
+
+**A:** If you select `AdAccount` or `RecoveryKey` as your protector type, you must provide the domain account, group, or path in the **cPVAL Path Or ADAccount** field.
+
+### **Q.** Can I encrypt a drive other than C:?
+
+**A:** Yes. By default, it targets `$env:SystemDrive` (usually C:). You can specify a different drive letter (e.g., `D:`) in the **cPVAL MountPoint** custom field.
+
+### **Q.** Does the script support "Used Space Only" encryption?
+
+**A:** The wrapper script uses the agnostic `Initialize-BitLockerVolume` script. While the custom fields don't expose a "Used Space Only" toggle, standard BitLocker behavior via PowerShell on modern Windows versions usually defaults to Used Space Only for new encryptions unless specified otherwise.
 
 ### **Q.** How do I configure a Startup PIN for my users?
 
@@ -134,10 +193,6 @@ Create the following compound conditions as described in the documentation:
 
 * *Note:* Ensure the PIN meets Windows complexity requirements (usually 6+ digits).
 
-### **Q.** Where do I specify the Active Directory account for backing up keys?
-
-**A:** If you select `AdAccount` or `RecoveryKey` as your protector type, you must provide the domain account, group, or path in the **cPVAL Path Or ADAccount** field.
-
 ### **Q.** Will the script reboot the computer automatically?
 
 **A:** It depends on your settings. The **cPVAL Allow TPM Or Reboot** field controls this behavior:
@@ -147,25 +202,21 @@ Create the following compound conditions as described in the documentation:
 * `2`: Allow Restart.
 * `3`: Allow both TPM initialization and Restart.
 
-### **Q.** My BitLocker status says "Protection Off" (Suspended). Will this solution fix it?
+### **Q.** Can I force the script to skip the Hardware Test?
 
-**A:** Yes. The detection script explicitly checks for `ProtectionStatus: Off`. If found, it flags the device as non-compliant. The remediation script will then run `Resume-BitLocker` to re-enable protection without decrypting the drive.
+**A:** Yes. By default, BitLocker runs a hardware test that requires a reboot before encryption begins. If you want to bypass this (start encrypting immediately), check the box for **cPVAL SkipHardwareTest** (set it to `true`).
 
-### **Q.** What if the machine does not have a TPM chip?
+### **Q.** What happens if the computer loses power during encryption?
 
-**A:** You should not use the `Tpm`, `TpmPin`, or `TpmStartup` protector types. Instead, select `Password` or `RecoveryPassword` in the **cPVAL KeyProtectorType** field, which do not strictly require a TPM.
+**A:** BitLocker is designed to be robust. If power is lost during encryption (or decryption), Windows will typically pause the process and automatically resume it when the computer turns back on.
 
-### **Q.** How often does the solution check for compliance?
+### **Q.** I changed the Encryption Method custom field, but nothing happened immediately. Why?
 
-**A:** The default schedule for the Compound Condition is every **24 hours**. You can adjust this interval in the Compound Condition settings if needed.
+**A:** The automation relies on the **Detection** script, which runs on a schedule (default: every 24 hours). The change will be picked up during the next scheduled scan. You can force the detection script to run manually if you need immediate results.
 
-### **Q.** Can I encrypt a drive other than C:?
+### **Q.** Can I use this solution to decrypt a drive permanently?
 
-**A:** Yes. By default, it targets `$env:SystemDrive` (usually C:). You can specify a different drive letter (e.g., `D:`) in the **cPVAL MountPoint** custom field.
-
-### **Q.** Does this solution backup the Recovery Key to NinjaOne?
-
-**A:** Not directly into a custom field. The script executes standard BitLocker commands. If your environment is configured to back up keys to Active Directory (AD) or Entra ID (Azure AD), Windows will handle that key escrow during the encryption process triggered by this script.
+**A:** No. This solution is for **Initialization** and **Enforcement**. If you set `cPVAL BitLocker Enable` to `Disable`, the automation will simply stop checking the device; it will not actively decrypt the drive. You would need to run a separate decryption command manually or via a different script.
 
 ### **Q.** What does Exit Code 1 mean in the Activity Log?
 
@@ -179,29 +230,9 @@ Create the following compound conditions as described in the documentation:
 
 **A:** That message comes from the **Detection** script. It is *not* a failure; it is the success message indicating that the script successfully identified a machine that needs BitLocker enabled or fixed. This output is what tells NinjaOne to launch the remediation script.
 
-### **Q.** Can I use this solution to decrypt a drive permanently?
-
-**A:** No. This solution is for **Initialization** and **Enforcement**. If you set `cPVAL BitLocker Enable` to `Disable`, the automation will simply stop checking the device; it will not actively decrypt the drive. You would need to run a separate decryption command manually or via a different script.
-
-### **Q.** I changed the Encryption Method custom field, but nothing happened immediately. Why?
-
-**A:** The automation relies on the **Detection** script, which runs on a schedule (default: every 24 hours). The change will be picked up during the next scheduled scan. You can force the detection script to run manually if you need immediate results.
-
-### **Q.** Does the script support "Used Space Only" encryption?
-
-**A:** The wrapper script uses the agnostic `Initialize-BitLockerVolume` script. While the custom fields don't expose a "Used Space Only" toggle, standard BitLocker behavior via PowerShell on modern Windows versions usually defaults to Used Space Only for new encryptions unless specified otherwise.
-
-### **Q.** What happens if the computer loses power during encryption?
-
-**A:** BitLocker is designed to be robust. If power is lost during encryption (or decryption), Windows will typically pause the process and automatically resume it when the computer turns back on.
-
 ### **Q.** Where can I see the logs for the encryption process?
 
 **A:** The scripts generate local logs on the machine at `$env:ProgramData\_Automation\Script\Initialize-BitLockerVolume`. These logs are also output to the NinjaOne Activity Log for the script run.
-
-### **Q.** Why do we have separate "Windows" and "Windows Workstations" options in the dropdown?
-
-**A:** This allows for granular policy targeting. You might have a broad policy for "Windows" generally, but specific, stricter policies applied only to "Windows Workstations" or "Windows Servers" via different Compound Conditions. Functionally, checking either will trigger the relevant automation if the Compound Condition is targeted correctly.
 
 ### **Q.** What does the "Force" parameter in the script variables do?
 
