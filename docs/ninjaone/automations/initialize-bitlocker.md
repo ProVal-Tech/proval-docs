@@ -49,7 +49,7 @@ This script serves as the enforcement engine that automatically corrects BitLock
 
 | Field Label | Scope | Accepted Values | Default Value | Description |
 | --- | --- | --- | --- | --- |
-| [cPVAL MountPoint](docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | Organization, Location, Device | **Drive Letter** (e.g., `C:` or `D:`) | `$env:SystemDrive` | The drive letter to initialize BitLocker on. |
+| [cPVAL MountPoint](/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926) | Organization, Location, Device | **Drive Letter** (e.g., `C:` or `D:`) | `$env:SystemDrive` | The drive letter to initialize BitLocker on. |
 | [cPVAL EncryptionMethod](/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0) | Organization, Location, Device | `XTSAES128`, `XTSAES256`, `AES128`, `AES256` | `XtsAes128` | The encryption algorithm to apply. |
 | [cPVAL KeyProtectorType](/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea) | Organization, Location, Device | `TPM`, `TpmPin`, `TpmStartup`, `TpmPinStartup`, `Password`, `Startup`, `RecoveryKey`, `RecoveryPassword`, `AdAccount` | RecoveryPassword | The primary authentication method used to unlock the drive. |
 | [cPVAL PIN Or Password](/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b) | Organization, Location, Device | **String** (Any valid PIN or Password) | $null | Required if `TpmPin` or `Password` is selected. |
