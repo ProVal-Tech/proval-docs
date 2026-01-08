@@ -1,8 +1,8 @@
 ---
 id: 'dedb8564-bb1a-47b8-9525-61fc9e690cae'
 slug: /dedb8564-bb1a-47b8-9525-61fc9e690cae
-title: 'Out of Date Cumulative Updates Autofix'
-title_meta: 'Out of Date Cumulative Updates Autofix'
+title: 'Out of Date Cumulative Updates [Autofix]'
+title_meta: 'Out of Date Cumulative Updates [Autofix]'
 keywords: ['autofix', 'cumulative', 'update', 'installation', 'script', 'troubleshooting']
 description: 'This document provides an overview of the Autofix script designed to automate the installation of the latest available Cumulative Update on computers. It includes troubleshooting steps, rescheduling logic for offline machines, and email alert options, ensuring a smooth patch installation process.'
 tags: ['email', 'ticketing', 'windows']
@@ -54,6 +54,7 @@ This Autofix script is intended for implementation through the [Internal Monitor
 
 - [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
 - [Internal Monitor - Patches Not Installing > X Days](/docs/a835c448-fd00-4807-a3b2-8f1066e1a682)
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2/)
 - [Solution - User Prompt for Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 - [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7a-3e8b443140cc)
 

@@ -12,12 +12,13 @@ unlisted: false
 
 ## Summary
 
-This document displays the data fetched by the [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
+This document displays the data fetched by the [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script. The data view explicitly excludes machines for which Microsoft does not release cumulative updates.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
-- [CWM - Automate - Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
+- [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998)
+- [Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)
+- [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2/)
 
 ## Columns
 
@@ -41,6 +42,9 @@ This document displays the data fetched by the [CWM - Automate - Script - Get La
 | Patch Release Date                  | Date when the installed CU was released             |
 | KBID                                | KBID of the CU                                     |
 | Days Since Last Cumulative          | Age of the latest installed cumulative update in days |
+| Friendly Name                       | Friendly Name of the Machine                          |
+| Days Since Last Script Run          | Days since script last ran on the machine                   |
+| Days Since Last Contact             | Last Contact of the machine in days                   |
 
 ## Sample Screenshot
 
