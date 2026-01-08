@@ -182,7 +182,7 @@ Create the following compound conditions as described in the documentation:
 
 ### **Q.** Does the script support "Used Space Only" encryption?
 
-**A:** The wrapper script uses the agnostic `Initialize-BitLockerVolume` script. While the custom fields don't expose a "Used Space Only" toggle, standard BitLocker behavior via PowerShell on modern Windows versions usually defaults to Used Space Only for new encryptions unless specified otherwise.
+**A:** The wrapper script uses the agnostic [Initialize-BitLockerVolume](/docs/2ce835a2-3ac1-4291-baaf-8d3cac76869f) script. While the custom fields don't expose a "Used Space Only" toggle, standard BitLocker behavior via PowerShell on modern Windows versions usually defaults to Used Space Only for new encryptions unless specified otherwise.
 
 ### **Q.** How do I configure a Startup PIN for my users?
 

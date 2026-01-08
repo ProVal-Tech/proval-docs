@@ -17,7 +17,7 @@ This compound condition performs BitLocker and TPM audit once per day on Windows
 ## Details
 
 - **Name:** `BitLocker Audit - Workstations`
-- **Description:** `This compound condition performs BitLocker and TPM audit once per day on Windows workstations where auditing is enabled from cPVAL Enable BitLocker Audit custom field. If set to Disable, the audit will not be performed.`
+- **Description:** `This compound condition performs BitLocker and TPM audit once per day on Windows workstations where auditing is enabled from 'cPVAL Enable BitLocker Audit' custom field. If set to Disable, the audit will not be performed.`
 - **Recommended Agent Policies:** `Windows Workstation Policy [Default]`
 
 ## Dependencies

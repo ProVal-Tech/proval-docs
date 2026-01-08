@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Stores an HTML inventory of BitLocker volumes, including mount points, algorithms, protection status, and key protector types. Populated automatically by the BitLocker automation script.
+Stores an HTML inventory of BitLocker volumes, including mount points, algorithms, protection status, and key protector types. Populated automatically by the BitLocker automation scripts.
 
 ## Details
 
@@ -30,13 +30,13 @@ Stores an HTML inventory of BitLocker volumes, including mount points, algorithm
 
 | Column Name          | Description |
 | :---                 | :--- |
-| MountPoint           | The drive letter (e.g., C:, D:) of the volume. |
+| MountPoint           | The drive letter (e.g., `C:`, `D:`) of the volume. |
 | EncryptionMethod     | The algorithm used for encryption (e.g., XtsAes128, Aes256). |
 | AutoUnlockEnabled    | Boolean indicating if the volume is set to unlock automatically. |
 | AutoUnlockKeyStored  | Boolean indicating if an auto-unlock key is stored on the system. |
 | MetadataVersion      | The version of the BitLocker metadata on the volume. |
 | VolumeStatus         | Current state of the volume (e.g., FullyEncrypted, FullyDecrypted, EncryptionInProgress). |
-| ProtectionStatus     | The protection status (On/Off). 'On' means the volume is encrypted and the key is protected. |
+| ProtectionStatus     | The protection status (`On`/`Off`). `On` means the volume is encrypted and the key is protected. |
 | LockStatus           | Indicates if the volume is currently Locked or Unlocked. |
 | EncryptionPercentage | The percentage of the volume that is encrypted. |
 | WipePercentage       | The percentage of free space that has been wiped. |

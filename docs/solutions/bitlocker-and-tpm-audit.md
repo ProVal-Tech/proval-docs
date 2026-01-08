@@ -118,7 +118,7 @@ Create the following compound conditions as described in the documentation:
 
 ### **Q.** Does this solution automatically encrypt my drives?
 
-**A:** No. This is strictly an **Audit** solution. It collects and reports status but does not perform encryption. For encryption, you would need the "Initialize BitLocker" automation.
+**A:** No. This is strictly an **Audit** solution. It collects and reports status but does not perform encryption. For encryption, you would need the "[Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)" automation.
 
 ### **Q.** How can I quickly tell if the C: drive is encrypted without opening the full HTML report?
 
