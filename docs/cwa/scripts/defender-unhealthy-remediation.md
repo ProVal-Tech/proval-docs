@@ -1,19 +1,19 @@
 ---
 id: 'f334945d-902e-4a73-8e13-121fbf259122'
 slug: /f334945d-902e-4a73-8e13-121fbf259122
-title: 'Defender Unhealthy Remediation'
-title_meta: 'Defender Unhealthy Remediation'
+title: 'Defender Unhealthy Remediation [Global]'
+title_meta: 'Defender Unhealthy Remediation [Global]'
 keywords: ['Defender','Remediation','Unhealthy',Antivrus]
 description: 'This script enables the Defender, if failed then it attempts to reset the Defender using the Huntress script.'
 tags: ['security', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
 This script enables the Defender, if failed then it attempts to reset the Defender using the Huntress script referred to in the article below.
-`https://support.huntress.io/hc/en-us/articles/4402989131283-Enable-Microsoft-Defender-via-PowerShell`
-`https://support.huntress.io/hc/en-us/articles/4411542446611-Reset-Microsoft-Defender-to-Default#posh`
+- `https://support.huntress.io/hc/en-us/articles/4402989131283-Enable-Microsoft-Defender-via-PowerShell` 
+- `https://support.huntress.io/hc/en-us/articles/4411542446611-Reset-Microsoft-Defender-to-Default#posh`
 
 
 ## File Hash
