@@ -12,13 +12,17 @@ unlisted: false
 
 ## Summary
 
-This script retrieves the Hardware Hash for Autopilot device registration. It collects the Hardware Hash and stores it in the Computer EDF labeled "Autopilot Hash".
+This script retrieves the Hardware Hash for Autopilot device registration. It collects the Hardware Hash and stores it in the Computer EDF labeled `Autopilot Hash`.
 
 ## Sample Run
 
-It is intended to run as an autofix script with [CWA - Internal Monitor - ProVal - Production - Get - Autopilot Hash](/docs/3add591b-445e-440d-a7b3-cc85b2ea0674), but it can also be run independently.
+It is intended to run as an autofix script with [Get - Autopilot Hash](/docs/3add591b-445e-440d-a7b3-cc85b2ea0674), but it can also be run independently.
 
 ![Sample Run](../../../static/img/docs/9171549a-070a-4346-be90-393416713806/image_1.webp)
+
+## Dependencies
+
+- [Solution - Get Autopilot Hash](/docs/0af1bff2-a32a-442b-9322-a8a260d150ff)
 
 ## EDFs
 

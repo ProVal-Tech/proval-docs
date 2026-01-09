@@ -26,7 +26,8 @@ Execute the script against the online `MSSQL` servers to gather the version.
 
 ## Dependencies
 
-[Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
+- [Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
+- [Solution - MSSQL Database Version](/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb)
 
 ## Variables
 
