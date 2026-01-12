@@ -12,13 +12,13 @@ unlisted: false
 
 ## Purpose
 
-Stores the data collected by the [CWM - Automate - Script - Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9) script.
+Stores the data collected by the [Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9) script.
 
 ## Dependencies
 
-- [CWM - Automate - Dataview - Get-PNPDevices [Script]](/docs/f0f7231c-f13b-46a0-baa6-aebb8640adaf)
-- [CWM - Automate - Script - Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9)
-- [CWM - Automate - Solution - PNP Devices Inventory](/docs/f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da)
+- [Dataview - Get-PNPDevices [Script]](/docs/f0f7231c-f13b-46a0-baa6-aebb8640adaf)
+- [Script - Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9)
+- [Solution - PNP Devices Inventory](/docs/f92a5e4c-9ade-4cb9-ba9f-4e8b7d6ae0da)
 
 ## Tables
 

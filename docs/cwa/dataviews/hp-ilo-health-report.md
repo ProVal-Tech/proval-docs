@@ -16,9 +16,9 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 
 ## Dependencies
 
-- [plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6)
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
-- [EPM - Data Collection - Agnostic - Get-HPiLOHealthReport](/docs/71faa943-e504-4e87-b8d1-39471af44780)
+- [Custom Table - plugin_proval_ilo_health_report](/docs/d6e5e2a7-ecb8-4262-92a1-cc322b4af3b6)
+- [Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
+- [Solution - HP iLO Health Check](/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352)
 
 ## Columns
 

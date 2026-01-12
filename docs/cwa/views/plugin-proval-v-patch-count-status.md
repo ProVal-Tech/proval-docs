@@ -19,7 +19,8 @@ Sample data:
 
 ## Dependencies
 
-[CWM - Automate - Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0)
+- [Script - MySQL - View - Create - Plugin_ProVal_V_Patch_Count_Status](/docs/7b802d5b-f445-41d6-b3e4-30986c3102a0)
+- [Dataview - Dash - Missing Patch - Count by Machines - Client Filter](/docs/0fd0215c-d6d5-40c8-9ba6-79b69721f4c1)
 
 ## Tables
 

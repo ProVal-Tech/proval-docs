@@ -16,10 +16,11 @@ Retrieve an iLO health report using the provided IP address. It is required to h
 
 ## Files Hashes
 
-**Potential File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport\Update-PowerShellGet_Automate.ps1`  
+**File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport\Update-PowerShellGet_Automate.ps1`  
 **File Hash (Sha256):** `0079355F7F041BECEC1A9AFED9F55CDF8A003FF28AE4A8E752D1C151FD93B505`  
 **File Hash (MD5):** `82C1FE8C54E46CB36C741004F8F98FA6`  
-**Potential File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport_Automate.ps1`  
+
+**File Name:** `C:\ProgramData\_automation\script\Get-HPiLOHealthReport_Automate.ps1`  
 **File Hash (Sha256):** `14C3B56A56B347D8A04854E915798AC545F6F830E7C84CB08B85DFAC23953245`  
 **File Hash (MD5):** `728CD2BF37F64099DB976022D92C8843`
 
@@ -35,17 +36,17 @@ Retrieve an iLO health report using the provided IP address. It is required to h
 
 The `Title` for the password entry saved for the iLO Device should be in the following format:
 
-- **iLO Automation Password - /\<iLO Device Name/>**
+- **iLO Automation Password - [iLO Device Name]**
 
-  Example: `iLO Automation Password - DeviceName2`; When saving the password in this format, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set will execute the script against any random computer from the network of the IP Address stored in the `URL` field to fetch the information for the iLO Device `DeviceName2`.
+  Example: `iLO Automation Password - DeviceName2`; When saving the password in this format, the [Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set will execute the script against any random computer from the network of the IP Address stored in the `URL` field to fetch the information for the iLO Device `DeviceName2`.
 
   It is recommended to utilize this method for saving the password. The second method should be reserved for situations where unique networking configurations restrict other devices from accessing the iLO.
 
   ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_1.webp)
 
-- **iLO Automation Password - /\<iLO Device Name/> (/\<Computer ID to connect to the device/>)**
+- **iLO Automation Password - [iLO Device Name] (Computer ID to connect to the device)**
 
-  Example: `iLO Automation Password - DeviceName3 (670)`; When saving the password in this format, the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set will execute the script against the computer ID 670 to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
+  Example: `iLO Automation Password - DeviceName3 (670)`; When saving the password in this format, the [Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set will execute the script against the computer ID 670 to fetch the information for the iLO Device `DeviceName3` with the IP Address stored in the password's `URL` field.
 
   ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_2.webp)
 
@@ -71,7 +72,8 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc)
+- [Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc)
+- [Solution - HP iLO Health Check](/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352)
 
 ## Variables
 
@@ -88,7 +90,7 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
 | Name          | Example                      | Required | Description                                                                                                           |
 |---------------|------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------|
-| PasswordTitle | iLO Automation Password       | True     | This title should not be changed as the internal monitor [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) depends on it. This password entry can be set either at the client or location level. |
+| PasswordTitle | iLO Automation Password       | True     | This title should not be changed as the internal monitor [Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) depends on it. This password entry can be set either at the client or location level. |
 
 ## User Parameters
 
@@ -106,7 +108,7 @@ The `Title` for the password entry saved for the iLO Device should be in the fol
 
 ## Ticketing
 
-The script is capable of generating tickets for five distinct failures. However, it will only create tickets at the client level. The ticketing feature of the script can be enabled by setting the ticket category in the [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set.
+The script is capable of generating tickets for five distinct failures. However, it will only create tickets at the client level. The ticketing feature of the script can be enabled by setting the ticket category in the [Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc) monitor set.
 
 ![Image](../../../static/img/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a/image_6.webp)
 
