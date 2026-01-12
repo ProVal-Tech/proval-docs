@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script is designed to deploy the ConnectWise Asio Platform agent to Windows endpoints in a controlled and automated manner. The script requires token during the installtion. The token needs to upload under the managed Variables. I have already created a managed variable namely `<Token_CWRMM>`
+This script is designed for VSA to deploy the ConnectWise Asio Platform agent to Windows endpoints in a controlled and automated manner. The script requires token during the installtion. The token needs to upload under the managed Variables.
 
 ## Sample Run
 
