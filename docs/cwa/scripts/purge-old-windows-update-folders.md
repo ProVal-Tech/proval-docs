@@ -6,12 +6,14 @@ title_meta: 'Purge Old Windows Update Folders'
 keywords: ['Purge','Windows','SoftwareDistribution','Catroot2']
 description: 'This Script deletes old Windows Update backup folders (SoftwareDistribution.bak* and Catroot2.bak*) that haven’t been modified in a specified number of days.'
 tags: ['windows','update']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-This Script deletes old Windows Update backup folders (SoftwareDistribution.bak* and Catroot2.bak*) that haven’t been modified in a specified number of days (default 30 days)
+This Script deletes old Windows Update backup folders (SoftwareDistribution.bak* and Catroot2.bak*) that haven’t been modified in a specified number of days.
+
+**Default:** 30 days
 
 ## Sample Run
 
