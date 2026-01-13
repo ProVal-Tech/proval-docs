@@ -44,7 +44,8 @@ Overall, the monitoring system is designed to track drive space and generate ale
 
 ## Dependencies
 
-- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
+- [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
+- [Solution - Enhanced Drive Space Monitoring](/docs/0757e19d-56e4-4491-83b3-6012fde3b753)
 
 ## Target
 
@@ -123,7 +124,7 @@ In the above example:
 ## Ticket Category
 
 - Connectwise Manage board, type, and priority for the ticket can be set by setting the proper ticket category.
-- The ticket will be created by the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) script and the ticket category can be set at the following levels:
+- The ticket will be created by the [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) script and the ticket category can be set at the following levels:
   - In the script's global variables. Setting the relevant ticket category ID in these global variables will allow the script to create tickets under those categories.  
     ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image_6.webp)
   - At the group level. The ticket category can be set from the groups where the internal monitor is applied. This ticket category will only be picked if global variables are set to 0.  

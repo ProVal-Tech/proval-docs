@@ -48,20 +48,21 @@ After importing the script, it should either be debugged or run against any comp
 
 ## Dependencies
 
-- [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
-- [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)
+- [Solution - Enhanced Drive Space Monitoring](/docs/0757e19d-56e4-4491-83b3-6012fde3b753)
+- [Internal Monitor - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
+- [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)
 
 ## Variables
 
 | Name                  | Description                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------|
-| STATUS                | Status returned by the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set. (Success/Failure) |
+| STATUS                | Status returned by the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set. (Success/Failure) |
 | DriveLetter           | Drive Letter returned by the monitor set.                                                                           |
 | DriveSize             | Size of the concerned drive in MB.                                                                                 |
 | InitialFree           | Free drive space in MB before performing the disk cleanup.                                                         |
-| sojicomment           | Result returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. |
-| finishstatus          | Finish Status returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. (True/False) |
-| SojiFailureComment    | Failures returned by the [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script, if any. |
+| sojicomment           | Result returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. |
+| finishstatus          | Finish Status returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. (True/False) |
+| SojiFailureComment    | Failures returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script, if any. |
 | nowfree               | Free drive space in MB after performing the disk cleanup.                                                          |
 | freed                 | Amount of drive space in MB freed after performing the disk cleanup.                                               |
 | TicketCreationCategory | Ticket Category ID for the ticket to create.                                                                      |
@@ -71,7 +72,7 @@ After importing the script, it should either be debugged or run against any comp
 | TicketBody            | Ticket Summary or comment to add to the ticket.                                                                    |
 | Reschedule            | Script sets this variable to `1` while rescheduling itself so that it can be checked whether it's the first run or not at the next execution. |
 | OfflineExecutions      | Stores the number of times the script had executed consecutively for the computer when it's offline.                |
-| Monitorid             | ID of the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set to set to the ticket. |
+| Monitorid             | ID of the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set to set to the ticket. |
 
 ### Global Parameters
 
@@ -133,7 +134,7 @@ OS: <OperatingSystem>
 Serial Number: <SerialNumber>
 ```
 
-**\<SojiComment> can be different and it depends on the results returned by the disk cleanup script [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)**
+**\<SojiComment> can be different and it depends on the results returned by the disk cleanup script [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)**
 
 **For a successful run of the script:**
 
@@ -149,7 +150,7 @@ A brief report of large files, user profiles, and program files taking up space 
 The tool Soji (Temp File Cleanup Application) was run and failed due to an unexpected error. Please refer to the internal notes to determine the root cause.
 ```
 
-**Another ticket comment will be added if the [EPM - Disk - Automate - Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script fails:**
+**Another ticket comment will be added if the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script fails:**
 
 ```
 Script logs from the Soji (Temp File Cleanup Tool) Script:

@@ -18,17 +18,18 @@ This monitor replicates the functionality of the Internal Monitor: 'Enhanced Dri
 
 ## Dependencies
 
-- [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
-- [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
+- [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
+- [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
+- [Solution - Enhanced Drive Space Monitoring](/docs/0757e19d-56e4-4491-83b3-6012fde3b753)
 
 ## How to Configure
 
-This monitor must be configured the same as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) with the same alert template. It will use the same group and computer-level EDFs.
+This monitor must be configured the same as the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) with the same alert template. It will use the same group and computer-level EDFs.
 
-Simply import this monitor and set the alert template that has been used by the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f).
+Simply import this monitor and set the alert template that has been used by the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f).
 
 ## Caution
 
-Ensure that the [EPM - Disk - Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) uses the same name as the [Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) at line 54. Otherwise, both monitors will not be able to detect the tickets.
+Ensure that the [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) uses the same name as the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
 ![Image](../../../static/img/docs/4535820b-8254-4b20-bb7c-f68b2f05494e/image_1.webp)
