@@ -13,10 +13,8 @@ unlisted: false
 ## Overview
 
 This script provides features to hide or unhide the Windows update icon from the system tray.
+
 Enable the variable `HIDE_WinUpdateSystray` to hide the Windows Update icon from the system tray and disable it to unhide it. By default this component will hide the Windows Update icon.
-
-## Dependencies
-
 
 ## Implementation  
 
@@ -35,9 +33,10 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `hide-unhide windows update systray icon` and click on `Select`
+3. Search the component `Hide-Unhide Windows Update Systray Icon` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
-![Image4](../../../static/img/docs/09920e46-e8eb-4d62-88e5-048b17623359/image.webp)
+
+    ![Image4](../../../static/img/docs/09920e46-e8eb-4d62-88e5-048b17623359/image.webp)
 
 4. After selecting the `component`, you will notice a below pop-up with a checkbox option.
 
@@ -55,7 +54,8 @@ To execute the `component` over a specific machine, follow these steps:
 
 - stdOut
 - stdError
-- 
+
+
 ## Attachments
 
 [Hide-Unhide Windows Update Systray Icon](../../../static/attachments/hide-unhide-windows-update-systray-icon.cpt)
