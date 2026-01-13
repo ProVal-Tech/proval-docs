@@ -1,8 +1,8 @@
 ---
 id: '6c9ef438-835d-44a9-bf31-4a1db9253347'
 slug: /6c9ef438-835d-44a9-bf31-4a1db9253347
-title: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
-title_meta: 'ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date Ticket'
+title: 'ScreenConnect - AD Plugin - Sync Out of Date [Ticket,RMM+]*'
+title_meta: 'ScreenConnect - AD Plugin - Sync Out of Date [Ticket,RMM+]'
 keywords: ['active-directory', 'sync', 'autofix', 'monitor', 'ticketing']
 description: 'This document details a script designed to automatically fix issues related to the Active Directory Sync Out of Date monitor in ConnectWise Automate. It outlines the process, dependencies, and ticketing information for effective resolution of sync errors.'
 tags: ['active-directory']
@@ -22,15 +22,15 @@ This script is intended to run from a monitor and will not function if run manua
 
 This script depends on the following items to function as intended:
 
-- [CWA Internal Monitor - Active Directory - Sync Out of Date [RMM+ Autofix]](/docs/18432358-9550-4ab9-959e-255196b0ebcf)
-- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+- [Internal Monitor - Active Directory - Sync Out of Date [RMM+ Autofix]](/docs/18432358-9550-4ab9-959e-255196b0ebcf)
+- [Guide: RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 ## Process
 
 This script follows the process outlined below:
 
 1. Monitor alerts and triggers the script.
-2. Check if the FieldName = Failed. It will verify if the password title used in the AD Plugin matches the expected password title mentioned in System properties. If yes, it will run the [CWM - Automate - Script - Active Directory - Plugin User Account - Create/Update](/docs/ea1aca74-77ee-4387-91f2-57adb5822737) to reset the password. Otherwise, it will run the RMM+ fix to rebuild the ActiveDirectory.db file.
+2. Check if the FieldName = Failed. It will verify if the password title used in the AD Plugin matches the expected password title mentioned in System properties. If yes, it will run the [Script - Active Directory - Plugin User Account - Create/Update](/docs/ea1aca74-77ee-4387-91f2-57adb5822737) to reset the password. Otherwise, it will run the RMM+ fix to rebuild the ActiveDirectory.db file.
 3. Verify if the machine is online in Control and Automate; if offline, it will create a ticket.
 4. Run the following command through CWC:
    - `taskkill /F /IM ltsvc.exe /T & taskkill /F /IM lttray.exe /T & ping -n 3 127.0.0.1 > nul & del C:/Windows/LTSvc/ActiveDirectory/ActiveDirectory.bak & ren C:/Windows/LTSvc/ActiveDirectory/ActiveDirectory.db ActiveDirectory.bak & net start ltservice`

@@ -158,6 +158,7 @@ Here's a breakdown of the columns in the CSV file:
 - [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
 - [Set-PowerPlan](/docs/05737947-e8d5-4711-a1d7-91a6db43358f)
 - [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
+- [Solution - Power Plan Management](/docs/e7911ff5-d709-4ba0-b847-16969445c19b/)
 
 ## Variables
 

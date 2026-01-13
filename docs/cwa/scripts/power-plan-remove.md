@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This is an Automate implementation of the agnostic script [EPM - Windows Configuration - Agnostic - Remove-PowerPlan](/docs/ffac4670-f9ec-4896-8338-78c92669ee53).
+This is an Automate implementation of the agnostic script [Agnostic - Remove-PowerPlan](/docs/ffac4670-f9ec-4896-8338-78c92669ee53).
 
 - **File Path:** `C:/ProgramData/_Automation/script/Remove-PowerPlan/Remove-PowerPlan.ps1`
 - **File Hash (Sha256):** `5CA9E22892E872DE4020E41E6BB4840CD47BBDBBFB4002D6D622E7828D63E64F`
@@ -23,15 +23,17 @@ This is an Automate implementation of the agnostic script [EPM - Windows Configu
 ![Sample Run](../../../static/img/docs/43d84d2d-f385-4bd4-938a-0989956a8a38/image_1.webp)
 
 **Notes:**
-- Ensure that the name of the `PowerPlan` matches exactly with the `Power Plan` column in the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview.
-- The Active Power Plan cannot be removed from the machine directly. To remove the active power plan, you must first set another Power Plan as active on the computer before removing it. This action can be achieved using the [EPM - Windows Configuration - Script - Power Plan - Enable](/docs/a170b385-7464-478e-b1cc-d357a8840e45) script.
-- The information of the removed power plan will be removed from the [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview as well.
+- Ensure that the name of the `PowerPlan` matches exactly with the `Power Plan` column in the [Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview.
+- The Active Power Plan cannot be removed from the machine directly. To remove the active power plan, you must first set another Power Plan as active on the computer before removing it. This action can be achieved using the [Script - Power Plan - Enable](/docs/a170b385-7464-478e-b1cc-d357a8840e45) script.
+- The information of the removed power plan will be removed from the [Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b) dataview as well.
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Agnostic - Remove-PowerPlan](/docs/ffac4670-f9ec-4896-8338-78c92669ee53)
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
-- [EPM - Data Collection - Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b)
+- [Agnostic - Remove-PowerPlan](/docs/ffac4670-f9ec-4896-8338-78c92669ee53)
+- [Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
+- [Dataview - Power Plan - Audit [Script]](/docs/3c11e893-b78e-4dc9-a8c2-c80060da203b)
+- [Solution - Power Plan Management](/docs/e7911ff5-d709-4ba0-b847-16969445c19b/)
+
 
 ## Variables
 
