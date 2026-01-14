@@ -20,25 +20,25 @@ Being able to monitor drive space using specifically assigned thresholds elimina
 
 | Content                                                                                                                                          | Type            | Function                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)              | Internal monitor | Determines target machine/drives that violate set thresholds. Used to run the associated script to clean up the drive with Soji                                        |
-| [Internal Monitor - Agent - Enhanced Drive Space Monitor [Ticket Management]](/docs/4535820b-8254-4b20-bb7c-f68b2f05494e)                  | Internal monitor | Needs to be imported in case the partner wants to reopen prematurely closed tickets for the machines where the issue persists                                          |
-| [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)                                | Autofix script   | Double-checks thresholds, runs the Soji-agnostic script on the target endpoint for the target drive, and creates/closes ticket(s).                                      |
+| [Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)              | Internal monitor | Determines target machine/drives that violate set thresholds. Used to run the associated script to clean up the drive with Soji                                        |
+| [Agent - Enhanced Drive Space Monitor [Ticket Management]](/docs/4535820b-8254-4b20-bb7c-f68b2f05494e)                  | Internal monitor | Needs to be imported in case the partner wants to reopen prematurely closed tickets for the machines where the issue persists                                          |
+| [Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)                                | Autofix script   | Double-checks thresholds, runs the Soji-agnostic script on the target endpoint for the target drive, and creates/closes ticket(s).                                      |
 | △ Custom - Autofix - Enhanced Drive Space Monitoring                                                                                           | Alert Template   | The alert template runs the Autofix script on the machines detected by the alert template.                                                                                |
 
 ### Other Content
 
 | Content                                                                                                                                          | Type            | Function                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)                              | Function Script  | Called by the Autofix script [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) to perform disk cleanup. |
+| [Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4)                              | Function Script  | Called by the Autofix script [Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) to perform disk cleanup. |
 
 ## Implementation
 
 1. Import the script below using the ProSync plugin:
-   - [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
+   - [Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3)
 
 2. Import the monitors below using the ProSync Plugin:
-   - [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
-   - [Internal Monitor - Agent - Enhanced Drive Space Monitor [Ticket Management]](/docs/4535820b-8254-4b20-bb7c-f68b2f05494e)
+   - [Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f)
+   - [Agent - Enhanced Drive Space Monitor [Ticket Management]](/docs/4535820b-8254-4b20-bb7c-f68b2f05494e)
 
 3. Import the Alert Templates below using the ProSync plugin:
    - `△ Custom - Autofix - Enhanced Drive Space Monitoring`

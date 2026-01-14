@@ -1,8 +1,8 @@
 ---
 id: '4535820b-8254-4b20-bb7c-f68b2f05494e'
 slug: /4535820b-8254-4b20-bb7c-f68b2f05494e
-title: 'Enhanced Drive Space Monitor Ticket Management'
-title_meta: 'Enhanced Drive Space Monitor Ticket Management'
+title: 'Agent - Enhanced Drive Space Monitor [Ticket Management]'
+title_meta: 'Agent - Enhanced Drive Space Monitor [Ticket Management]'
 keywords: ['monitor', 'drive', 'space', 'tickets', 'configuration', 'alert']
 description: 'This document outlines the configuration process for the Enhanced Drive Space Monitor, which identifies machines with unresolved low drive space issues and generates tickets accordingly. It details dependencies, configuration steps, and important cautions to ensure effective monitoring.'
 tags: ['disk']

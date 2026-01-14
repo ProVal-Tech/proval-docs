@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The script serves as an autofix for the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f). Here are the key points and functionality of this autofix script:
+The script serves as an autofix for the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f). Here are the key points and functionality of this autofix script:
 
 1. **Monitoring Drive Space:**
    - The monitor set detects machines where the drive space is lower than the Upper Threshold.
@@ -38,7 +38,7 @@ The script serves as an autofix for the [EPM - Disk - Internal Monitor - ProVal 
 
 ## Sample Run
 
-The script is designed to run from the [EPM - Disk - Internal Monitor - ProVal - Production - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set only and should not be executed manually against any machine except for the first time to set the environment.
+The script is designed to run from the [Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set only and should not be executed manually against any machine except for the first time to set the environment.
 
 After importing the script, it should either be debugged or run against any computer in the environment with `1` in the user parameter `SetEnvironment`.
 
@@ -56,13 +56,13 @@ After importing the script, it should either be debugged or run against any comp
 
 | Name                  | Description                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------|
-| STATUS                | Status returned by the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set. (Success/Failure) |
+| STATUS                | Status returned by the [Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set. (Success/Failure) |
 | DriveLetter           | Drive Letter returned by the monitor set.                                                                           |
 | DriveSize             | Size of the concerned drive in MB.                                                                                 |
 | InitialFree           | Free drive space in MB before performing the disk cleanup.                                                         |
-| sojicomment           | Result returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. |
-| finishstatus          | Finish Status returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. (True/False) |
-| SojiFailureComment    | Failures returned by the [Script - Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script, if any. |
+| sojicomment           | Result returned by the [Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. |
+| finishstatus          | Finish Status returned by the [Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script. (True/False) |
+| SojiFailureComment    | Failures returned by the [Soji - Disk Space Management](/docs/47f53d1e-f609-46f8-b407-ccdf11eeede4) script, if any. |
 | nowfree               | Free drive space in MB after performing the disk cleanup.                                                          |
 | freed                 | Amount of drive space in MB freed after performing the disk cleanup.                                               |
 | TicketCreationCategory | Ticket Category ID for the ticket to create.                                                                      |
@@ -72,7 +72,7 @@ After importing the script, it should either be debugged or run against any comp
 | TicketBody            | Ticket Summary or comment to add to the ticket.                                                                    |
 | Reschedule            | Script sets this variable to `1` while rescheduling itself so that it can be checked whether it's the first run or not at the next execution. |
 | OfflineExecutions      | Stores the number of times the script had executed consecutively for the computer when it's offline.                |
-| Monitorid             | ID of the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set to set to the ticket. |
+| Monitorid             | ID of the [Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) monitor set to set to the ticket. |
 
 ### Global Parameters
 
