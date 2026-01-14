@@ -37,9 +37,9 @@ This script installs the .NET Framework 3.5 feature. It pre-configures the 'Repa
 
 | Name | Type | Scope | Section | Required | Description |
 | ---- | ---- | ----- | ------- | -------- | ----------- |
-| Enable .Net 3.5 Feature | Checkbox | Client | Automation | False | Flag this checkbox to enable the .NET 3.5 feature on Windows 10 and Windows 11 clients. |
-| .Net 3.5 Feature - Exclusion | Checkbox | Location | Exclusions | False | Flag this checkbox to exclude this location from the automated installation of the .NET 3.5 feature. |
-| .Net 3.5 Feature - Exclusion | Checkbox | Computer | Exclusions | False | Flag this checkbox to exclude this computer from the automated installation of the .NET 3.5 feature. |
+| Enable .Net 3.5 Feature | Checkbox | Client | Automation | False | Set to enable automated installation of the .NET 3.5 feature for a client. |
+| .Net 3.5 Feature - Exclusion | Checkbox | Location | Exclusions | False | Set to exclude an entire location from automated installation. |
+| .Net 3.5 Feature - Exclusion | Checkbox | Computer | Exclusions | False | Set to exclude an individual computer from automated installation. |
 
 ## Output
 
