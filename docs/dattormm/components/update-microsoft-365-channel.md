@@ -54,3 +54,18 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Microsoft 365 - C2R - Set Update Channel](../../../static/attachments/Microsoft365-C2R-Set-Update-Channel.cpt)
+
+## FAQ
+
+- How to set the user defined field name?
+  
+  To set the user defined field name, please set it under the Setup --> Global Settings --> `User-defined field 18` and set the value as `Update M365 Channel` so that it can reflect the same name under the devices UDFs.
+
+  ![Image 8](../../../static/img/docs/37fffa7b-0b74-4d14-93ff-704d25e78bdc/image6.webp)
+  ![Image 9](../../../static/img/docs/37fffa7b-0b74-4d14-93ff-704d25e78bdc/image7.webp)
+
+- What happen if we didn't set the user defined field name as `Update M365 Channel` under global settings?
+  
+  The User-defined field x will still get updated with the current channel value, where x is the UDF number, but the name of the UDFs will show as like `User-defined field 18` as `Current Channel`.
+  
+  `Note`: The script will not break with the Global settings not updated.
