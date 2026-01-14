@@ -52,7 +52,7 @@ Run the script with the `Set_Environment` parameter set to `1` on any online Win
 
 ### Step 4
 
-Create and configure the remote monitor as described in the implementation section of the remote monitor documentation: [.Net 3.5 Feature](docs/be6d1705-be61-4510-b3c1-9a0f75397e46#implementation).
+Create and configure the remote monitor as described in the implementation section of the remote monitor documentation: [.Net 3.5 Feature](/docs/be6d1705-be61-4510-b3c1-9a0f75397e46#implementation).
 
 ### Step 5
 
