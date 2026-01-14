@@ -18,7 +18,8 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 
 ## Dependencies
 
-[CWM - Automate - Client Script - HP iLO Credential Missing Detection](/docs/4d27ff0e-704d-47dd-8c07-3008b7fbfafb)
+- [Client Script - HP iLO Credential Missing Detection](/docs/4d27ff0e-704d-47dd-8c07-3008b7fbfafb)
+- [Solution - HP iLO Health Check](/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352)
 
 ## Columns
 

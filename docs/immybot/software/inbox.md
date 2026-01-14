@@ -18,4 +18,4 @@ Installs [Inbox](https://www.getthread.com/inbox) for the logged-in user.
 
 ## Description
 
-[Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/inboxe.toml)
+[Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/inbox.toml)

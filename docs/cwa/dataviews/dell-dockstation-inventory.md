@@ -16,8 +16,8 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 
 ## Dependencies
 
-- [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
-- [CWM - Automate - Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
+- [Solution - Dell DockStation](/docs/2e4ec512-945a-4b3d-ba18-53553b08f4ca/)
+- [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
 
 ## Columns
 
@@ -39,4 +39,4 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Install Date        | Dockstation install date                           |
 | Manufacture Date    | Manufacture date of the dockstation                |
 | Dock Name           | Name of the dockstation                            |
-| Script Last Ran     | Last time the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) executed on the machine |
+| Script Last Ran     | Last time the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) executed on the machine |

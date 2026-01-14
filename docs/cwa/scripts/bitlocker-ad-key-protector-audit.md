@@ -1,8 +1,8 @@
 ---
 id: 'd533538b-8b00-425e-849f-434518296b2d'
 slug: /d533538b-8b00-425e-849f-434518296b2d
-title: 'Bitlocker - AD Key Protector - Audit'
-title_meta: 'Bitlocker - AD Key Protector - Audit'
+title: 'BitLocker - AD Key Protector - Audit'
+title_meta: 'BitLocker - AD Key Protector - Audit'
 keywords: ['audit', 'bitlocker', 'key', 'protectors', 'active', 'directory']
 description: 'This document provides a detailed guide on auditing existing backup BitLocker key protectors from an Active Directory server. It includes sample runs, dependencies, process explanations, and a step-by-step guide to configuring Group Policy for automatic backup of BitLocker recovery keys to Active Directory.'
 tags: ['active-directory', 'backup', 'encryption', 'gpo', 'windows']
@@ -18,9 +18,9 @@ This document audits the existing backup BitLocker key protectors from an Active
 
 ## File Hash
 
-**File Path**: `C:\ProgramData\_Automation\script\Get-ADBitlockerStores\Get-ADBitlockerStores-loop.ps1`  
-**SHA256**: `500A60B0D5223AAF9201EE0F29EBC8CE45A5BB6D5675DE20AB9FC7F5682AEFC7`  
-**MD5**: `C48D3B2E7097F87459D9999F6F74CD19`
+- **File Path**: `C:\ProgramData\_Automation\script\Get-ADBitlockerStores\Get-ADBitlockerStores-loop.ps1`  
+- **SHA256**: `500A60B0D5223AAF9201EE0F29EBC8CE45A5BB6D5675DE20AB9FC7F5682AEFC7`  
+- **MD5**: `C48D3B2E7097F87459D9999F6F74CD19`
 
 ## Sample Run
 
@@ -30,7 +30,8 @@ This document audits the existing backup BitLocker key protectors from an Active
 
 This must be run against an Active Directory server.
 
-[Get-ADBitlockerStore](/docs/c3f8637a-bc38-4709-a626-d59d9111d621)
+- [Agnostic - Get-ADBitLockerStores](/docs/c3f8637a-bc38-4709-a626-d59d9111d621)
+- [Solution - BitLocker](/docs/f41e4d71-7074-4c28-8246-b8e3036c1212/) 
 
 ## Variables
 
@@ -65,11 +66,11 @@ No additional records are found, so another loop iteration is not processed.
 
 This causes the underlying PowerShell to be run as many loop iterations as necessary to process all records. The overhead of running this is minimal, as the underlying script's average execution time is less than 5 seconds.
 
-For additional information about the underlying logic, please see [SEC - Encryption - Agnostic - Get-ADBitlockerStores](/docs/c3f8637a-bc38-4709-a626-d59d9111d621).
+For additional information about the underlying logic, please see [Agnostic - Get-ADBitlockerStores](/docs/c3f8637a-bc38-4709-a626-d59d9111d621).
 
 ## Output
 
-- [SEC - Encryption - Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)
+- [Custom Table - plugin_proval_ad_bitlocker_keyprotectors](/docs/23777e5f-2cdd-414c-9938-2293223df3ac)
 - Dataview
 
 ## GPO to Automatically Save BitLocker Recovery Key to AD
