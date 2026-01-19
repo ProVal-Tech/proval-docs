@@ -11,51 +11,164 @@ unlisted: false
 ---
 
 ## Description
-WinGetProcessor is a wrapper for Winget for PowerShell.
+
+**Invoke-WingetProcessor** is a powerful PowerShell automation tool designed to manage applications on Windows devices. It acts as a "portable" wrapper for the Windows Package Manager (WinGet), allowing users to install, update, and uninstall software without needing to manually install WinGet or its dependencies beforehand.
+
+This script is built for reliability. It automatically fetches all necessary tools (WinGet, 7-Zip, Visual C++ runtimes) and runs them in a temporary environment. This makes it ideal for RMM (Remote Monitoring and Management) tools, system administrators, and automated deployment scenarios where the state of the target machine is unknown.
+
+### Features
+
+* **Zero-Dependency Execution:** Automatically downloads and sets up a portable version of WinGet, 7-Zip, and Microsoft VCLibs.
+* **Flexible Installation:** Install applications by accurate **Package ID** (e.g., `Mozilla.Firefox`) or friendly **Name** (e.g., `Firefox`).
+* **Bulk Updates:** One-click command to update all compatible software on the system.
+* **Import/Export:** Create a "snapshot" of installed apps on one machine (Export) and replicate it on another (Import).
+* **Smart Logic:** Checks if an app is already installed before trying to install it again (idempotency).
+* **Logging:** Generates detailed logs (`Invoke-WingetProcessor-log.txt`) for auditing and troubleshooting.
+
+---
 
 ## Requirements
-VLibs must be installed on the endpoint for Winget to function. The script will attempt to install this dependency if Winget is not yet installed.
 
-## Usage
-WingetProcessor wraps most Winget functions in a function called `Invoke-WingetCommand`, which wraps the Winget executable in a script block and executes it with `Invoke-Command`. The Winget executable path is dynamically determined based on user context. If Winget is not installed on the endpoint and is being run as NT Authority\SYSTEM, the package and dependencies will be installed as a ProvisionedAppXPackage.
+* **OS:** Windows 10 Version 1709 or newer.
+* **Permissions:** Must be run as **Administrator** (or SYSTEM context in RMM tools).
+* **Network:** Internet access is required to download the WinGet tools and the applications themselves.
+
+---
+
+## Process
+
+The script follows a rigorous 5-stage process to ensure success, even on clean or restricted systems.
+
+### 1. Initialization & Security Setup
+
+Before any changes are made, the script prepares the environment:
+
+* **Security Protocols:** It forces the system to use **TLS 1.2** or **TLS 1.3** for secure network communication. This prevents download errors on older Windows versions.
+* **Logging Module:** It installs or updates a helper module named `Strapper`. This module is responsible for writing clean, readable logs to the disk.
+* **Directory Setup:** It creates a dedicated working folder in `C:\ProgramData\_automation\script\winget`. All temporary files are stored here to avoid cluttering the user's desktop or Temp folders.
+
+### 2. Dependency Management (The "Portable" Engine)
+
+The script assumes the computer has *nothing* installed. It builds its own toolkit:
+
+* **WinGet Download:** It fetches the very latest version of the WinGet application directly from the official Microsoft GitHub repository.
+* **Archiving Tools:** It downloads a portable version of **7-Zip**. It does *not* install 7-Zip on the system; it just uses the executable file to open the WinGet installer.
+* **System Libraries:** It checks for **Microsoft VCLibs** and **Visual C++ Redistributables**. If these are missing, the script downloads and installs them silently. WinGet cannot run without these.
+
+### 3. Extraction & Assembly
+
+Once the files are downloaded, the script assembles them:
+
+* It uses the portable 7-Zip tool to "unzip" the WinGet installer (which is technically an MSIX bundle).
+* It intelligently detects if the computer is **64-bit** or **32-bit** and extracts the correct `AppInstaller` file.
+* It verifies that `winget.exe` is present and functional by running a test command.
+
+### 4. Execution Logic
+
+Now that the engine is running, the script performs the task you requested:
+
+* **If Installing:** It checks if the app is already there. If not, it installs it. If it is there, the script checks your settings to see if it should update it or leave it alone.
+* **If Uninstalling:** It verifies the app exists before trying to remove it, preventing "File not found" errors.
+* **If Updating All:** It scans the entire system for outdated software and triggers updates for everything found in the WinGet repository.
+* **If Exporting:** It scans the system and saves a list of all apps to a JSON file (e.g., `C:\Apps.json`).
+* **If Importing:** It reads a JSON file and sequentially installs every app listed inside it.
+
+### 5. Cleanup
+
+After the job is done, the script is a "good guest":
+
+* It deletes the downloaded installers, zip files, and temporary executables.
+* It leaves the system clean, saving only the Log files for your review.
+
+---
+
+## Usage Examples
+
+### 1. Install an Application (Best Practice)
+
+Use the **Package ID** for the most accurate results.
 
 ```powershell
-PS C:> Invoke-WingetProcessor.ps1 -Install -PackageId 'Postman.Postman','Google.Chrome' -AllowUpdate
-    Installs Google Chrome and Postman API Toolbox, allowing the applications to be updated if already installed.
-PS C:> Invoke-WingetProcessor.ps1 -Install -Name 'Postman x86_64 10.0.1','Google Chrome'
-    Installs Google Chrome and Postman API Toolbox, skipping any action if already installed.
-PS C:> Invoke-WingetProcessor.ps1 -Uninstall -Name 'Google Chrome'
-    Uninstalls Google Chrome from the endpoint.
-PS C:> Invoke-WingetProcessor.ps1 -UpdateAll
-    Updates all WinGet-compatible packages on the endpoint.
-PS C:> Invoke-WingetProcessor.ps1 -Export C:\Users\Dev\Desktop\Export.json
-    Exports a list of installed software to the specified path and returns an object containing that data.
-PS C:> Invoke-WingetProcessor.ps1 -Import C:\Users\Dev\Desktop\SoftwareList.json
-    Imports a list of previously exported software from the specified path. No changes are made to software on the endpoint exceeding the version listed in the JSON.
-PS C:> Invoke-WingetProcessor.ps1 -Import C:\Users\Dev\Desktop\SoftwareList.json -AllowUpdate
-    Imports a list of previously exported software from the specified path. All software in the JSON will be installed at the latest available version, regardless of software pre-existing on the endpoint.
-PS C:> Invoke-WingetProcessor.ps1 -Install -PackageID 'Microsoft.Teams.Classic' -Source 'winget' -AllowUpdate -OptionalParameter '--Scope', 'machine'
-    Installs Teams Machine-Wide Installer for all users, allowing the applications to be updated if already installed.
+.\Invoke-WingetProcessor.ps1 -Install -PackageId 'Google.Chrome'
+
 ```
+
+### 2. Install by Name
+
+Use the display name if you don't know the ID.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -Install -Name 'Zoom'
+
+```
+
+### 3. Update All Applications
+
+Scans the computer and updates every app it can manage.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -UpdateAll
+
+```
+
+### 4. Uninstall an Application
+
+Removes the software silently.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -Uninstall -PackageId 'Spotify.Music'
+
+```
+
+### 5. Export Installed Apps to a List
+
+Creates a backup list of your apps.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -Export 'C:\Temp\MyApps.json'
+
+```
+
+### 6. Install Apps from a List
+
+Restores apps from a previously exported file.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -Import 'C:\Temp\MyApps.json'
+
+```
+
+### 7. Install with Force Update and Custom Arguments
+
+Installs an application (e.g., VS Code) for all users (`--scope machine`). If the application is already installed, the `-AllowUpdate` switch forces it to upgrade to the latest version immediately.
+
+```powershell
+.\Invoke-WingetProcessor.ps1 -Install -PackageId 'Microsoft.VisualStudioCode' -AllowUpdate -OptionalParameter @('--scope', 'machine')
+
+```
+
+---
 
 ## Parameters
-| Parameter           | Required | Type         | Parameter Sets                                                                  | Description                                                                     |
-| ------------------- | -------- | ------------ | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| `Install`           | True     | Bool         | InstallByPackage, InstallByName                                                | Installs one or more packages on the endpoint                                   |
-| `AllowUpdate`       | False    | Bool         | InstallByPackage, InstallByName, InstallByImport                               | Allows `-Install` and `-Import` to update pre-installed packages               |
-| `Uninstall`         | True     | Bool         | UninstallByPackage, UninstallByName                                            | Uninstalls one or more packages on the endpoint                                 |
-| `PackageId`         | True     | String Array | InstallByPackage, UninstallByPackage                                           | Install or Uninstall by PackageId(s)                                           |
-| `Name`              | True     | String Array | InstallByName, UninstallByName                                                 | Install or Uninstall by Package Name(s)                                        |
-| `UpdateAll`         | True     | Bool         | UpdateAll                                                                       | Updates all packages on the endpoint to the latest available version            |
-| `Export`            | True     | Bool         | Export                                                                          | Exports a JSON and returns an object of installed applications on the endpoint. |
-| `Import`            | True     | Bool         | InstallByImport                                                                 | Imports a list of software in JSON format and installs it on the endpoint.     |
-| `Source`            | True     | String       | InstallByPackage, InstallByName, UpdateAll                                     | Specifies winget or msstore as the source for package installation              |
-| `OptionalParameter` | False    | String       | InstallByPackage, InstallByName, UpdateAll, UninstallByName, UninstallByPackage | Specifies optional parameters to deploy/update/remove the application(s)       |
+
+| Parameter | Example | ParameterSetName | Required | ValidSet | Type | Description |
+| --- | --- | --- | --- | --- | --- | --- |
+| `PackageId` | `'Mozilla.Firefox'` | `InstallByPackage`, `UninstallByPackage` | True |  | `String[]` | One or more WinGet package IDs to install or uninstall. Use this for precise identification. |
+| `Name` | `@('Firefox', 'Zoom')` | `InstallByName`, `UninstallByName` | True |  | `String[]` | One or more package names to install or uninstall. Use this when you know the display name. |
+| `AllowUpdate` | `-AllowUpdate` | `InstallByImport`, `InstallByPackage`, `InstallByName` | True (Import), False (Others) |  | `Switch` | Allows updating packages if they are already installed. Without this, existing packages are skipped. |
+| `Install` | `-Install` | `InstallByPackage`, `InstallByName` | True |  | `Switch` | Specifies that the operation should install the specified packages. |
+| `Source` | `'winget'` | `InstallByPackage`, `InstallByName`, `UpdateAll` | False | `msstore`, `winget` | `String` | Specifies the repository source (e.g., msstore or winget) for package operations. |
+| `Uninstall` | `-Uninstall` | `UninstallByPackage`, `UninstallByName` | True |  | `Switch` | Specifies that the operation should uninstall the specified packages. |
+| `UpdateAll` | `-UpdateAll` | `UpdateAll` | True |  | `Switch` | Updates all WinGet-compatible applications installed on the system. |
+| `Import` | `'C:\Temp\Apps.json'` | `InstallByImport` | True |  | `String` | Path to a JSON file containing a list of packages to import and install. |
+| `Export` | `'C:\List.json'` | `Export` | True |  | `String` | Path where the list of installed packages will be exported as a JSON file. |
+| `OptionalParameter` | `@('--scope', 'machine')` | `InstallByPackage`, `InstallByName`, `UpdateAll`, `UninstallByName`, `UninstallByPackage` | False |  | `String[]` | Additional parameters to pass directly to WinGet commands. |
+
+---
 
 ## Output
-Location of output for log, result, and error files.
 
-```
-.\Invoke-WingetProcessor-log.txt
-.\Invoke-WingetProcessor-error.txt
-```
+Troubleshooting logs are saved to the script's directory (or the current execution path):
+
+* `.\Invoke-WingetProcessor-log.txt`: Standard success messages and steps.
+* `.\Invoke-WingetProcessor-error.txt`: Details on any failures or crashes.
