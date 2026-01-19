@@ -18,14 +18,18 @@ This script installs Windows App and creates a shortcut on the Desktop of the lo
 
 **NOTE:** User must be logged on to the computer to run this script.
 
+## File Hash
+
+**File Path:** `C:\ProgramData\_automation\App\Winget\Install-Winget.ps1`  
+**File Hash (Sha256):** `F65D647DBBB9E944CD2342B49E5E870D1353EB71A78BA24516D89763EB0718C6`  
+**File Hash (MD5):** `A0119BAF23B9638917587A295D9A4C0A`  
+
 ## Sample Run
 
 Execute the script with SetEnvironment = 1, to import the required EDFs.  
+![Sample Run 1](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image_1.webp)
 
-![Sample Run 1](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image_1.webp) 
-
-Normal execution of the script 
-
+Normal execution of the script  
 ![Sample Run 2](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image_2.webp)
 
 ## Dependencies
@@ -45,7 +49,6 @@ Normal execution of the script
 | Windows App | Client | Checkbox | Software | Flag this EDF to enable Auto deployment of Windows App Windows Workstations ![EDF](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image3.webp) |
 | Exclude Windows App | Location | Checkbox | Exclusions | Flag this EDF to exclude the location from Windows App auto-deployment solution ![EDF](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image4.webp) |
 | Exclude Windows App | Computer | Checkbox | Exclusions | Flag this EDF to exclude the computer from Windows App auto-deployment solution ![EDF](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image5.webp) |
-
 
 ## Output
 
