@@ -4,9 +4,7 @@ slug: /dd28b731-7fbc-4345-8d0b-6875df1d5658
 title: 'Install Windows App'
 title_meta: 'Install Windows App'
 keywords: ['windows', 'application', 'windows app']
-description: '- Install Windows App
-- Creates a shortcut on desktop
-- User must be logged on to the computer to run this script.'
+description: 'This script installs Windows App and creates a shortcut on the Desktop of the logged in user. '
 tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
