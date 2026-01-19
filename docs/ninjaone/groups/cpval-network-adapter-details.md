@@ -5,7 +5,7 @@ title: 'cPVAL Network Adapter Details'
 title_meta: 'cPVAL Network Adapter Details'
 keywords: ['network','adapter']
 description: 'Displays all custom fields related to the network adapter, including DHCP status, IP type, and DNS server addresses.'
-tags: ['network','auditing','windows']
+tags: ['networking','auditing','windows']
 draft: false
 unlisted: false
 ---
