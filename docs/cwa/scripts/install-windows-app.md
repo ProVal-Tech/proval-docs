@@ -34,7 +34,7 @@ Normal execution of the script
 
 ## Dependencies
 
-[Solution - Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
+- [Solution - Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
 
 ## User Parameter
 
