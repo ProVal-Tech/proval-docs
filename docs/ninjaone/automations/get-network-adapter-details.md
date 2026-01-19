@@ -21,8 +21,8 @@ This script identifies the first active network adapter that is up, has an IPv4 
 
 ## Dependencies
 
-- [cPVAL DNS Server](/docs/2f783bba-4022-43d3-8bb4-a768f68fe8c2)
-- [cPVAL Dhcp server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)
+- [cPVAL DNS Server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)
+- [cPVAL Dhcp server](/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392)
 - [cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4)
 - [Solution - Network Adapter Details](/docs/81d8fa31-72c7-4339-a107-4a41a3e489f5)
 

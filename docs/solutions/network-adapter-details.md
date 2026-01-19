@@ -18,12 +18,11 @@ This solution is designed to collect active network adapter details from managed
 
 | Content                                                                     | Type           | Function                                                                                                                                                                                                  |
 | --------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [cPVAL DHCP Server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)             | `Custom Field` | Displays whether DHCP is enabled or disabled on the active network adapter.                                                                                                                               |
-| [cPVAL DNS Server](/docs/2f783bba-4022-43d3-8bb4-a768f68fe8c2)              | `Custom Field` | Displays the DNS server address(es) configured on the active network adapter.                                                                                                                             |
-| [cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4)                 | `Custom Field` | Displays whether the IP configuration type is **DHCP (Dynamic)** or **Static** on the active network adapter.                                                                                             |
+| [cPVAL DHCP Server](/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392)             | `Custom Field` | Displays whether DHCP is enabled or disabled on the active network adapter.                                                                                                                               |
+| [cPVAL DNS Server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)              | `Custom Field` | Displays the DNS server address(es) configured on the active network adapter.                                                                                                                             |
+| [cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4)                 | `Custom Field` | Displays whether the IP configuration type is `DHCP (Dynamic)` or `Static` on the active network adapter.                                                                                             |
 | [Network Adapter Details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)       | `Script`       | Identifies the first active network adapter that is up, has an IPv4 address, and a default gateway. Collects DHCP status, IP type (DHCP or Static), and DNS server addresses in a comma-separated format. |
 | [cPVAL Network Adapter Details](/docs/e30843b6-3891-4793-b1a2-f18a749ac4f5) | `Group`        | Displays all network adapter–related custom fields, including DHCP status, IP type, and DNS server addresses.                                                                                             |
-
 
 ## Implementation
 
