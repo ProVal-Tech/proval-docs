@@ -16,7 +16,6 @@ This script will modify the registry to set the *Update Channel* for Microsoft 3
 
 **NOTE:** By default, the script will update the UDF ID 18. In case this UDF is already in use, please update the default value of Variable `UpdateM365ChannelUDF` by editing the script. 
 
-You can also update the Variable `UpdateM365ChannelUDF` with any other UDF ID during manual run.
 
 ## Dependencies
 
