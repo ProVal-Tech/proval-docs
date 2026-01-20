@@ -20,7 +20,7 @@ To effectively use this script, it is imperative to have the Office 365 ClientID
 
 Please note that this script is designed for professional use and requires a certain level of technical expertise for successful execution. It is recommended to thoroughly understand the script and its requirements before running it.
 
-<I><U>**Note of Caution**</U>: `Its functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.`</I>
+<i><u>**Note of Caution**</u>: `Its functionality is not guaranteed on any computer running a version of PowerShell older than 5. Please ensure your systems are updated to at least PowerShell version 5 for optimal performance.`</i>
 
 ## File Hash
 
