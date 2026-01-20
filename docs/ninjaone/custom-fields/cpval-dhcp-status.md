@@ -18,7 +18,7 @@ Displays whether DHCP is enabled or disabled on the active network adapter. Indi
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL DHCP Status | cpvalDhcpStatus | `Device` | Text | False | -- | Editable | Read/Write | Read/Write | Displays whether DHCP is enabled or disabled on the active network adapter. | Indicates the DHCP configuration status for the active network interface. | Collected automatically from the system’s active network adapter configuration. | Network Adapter |
+| cPVAL DHCP Status | cpvalDhcpStatus | `Device` | Text | False | -- | Editable | Read/Write | Read/Write | Displays whether DHCP is enabled or disabled on the active network adapter. | Indicates the DHCP configuration status for the active network interface. | Collected automatically from the system’s active network adapter configuration. | Network Adapters |
 
 ## Dependencies
 

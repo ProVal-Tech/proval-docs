@@ -18,11 +18,11 @@ Indicates whether the IP configuration type is Static or Dynamic (DHCP) for the 
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL IP Type | cpvalIpType | `Device` | Text | False | -- | Editable | Read/Write | Read/Write | Indicates whether the IP configuration type is Static or Dynamic (DHCP) for the active network adapter. | Shows the IP address assignment method in use. | Detected automatically from the active network adapter settings. | Network Adapter |
+| cPVAL IP Type | cpvalIpType | `Device` | Text | False | -- | Editable | Read/Write | Read/Write | Indicates whether the IP configuration type is Static or Dynamic (DHCP) for the active network adapter. | Shows the IP address assignment method in use. | Detected automatically from the active network adapter settings. | Network Adapters |
 
 ## Dependencies
 
-- [Get - Network Adapter details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)
+- [Script - Get - Network Adapter details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)
 - [Solution - Network Adapter Details](/docs/81d8fa31-72c7-4339-a107-4a41a3e489f5)
 
 ## Custom Field Creation
