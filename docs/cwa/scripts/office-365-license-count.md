@@ -3,17 +3,18 @@ id: 'e79c314d-8d1c-4ca0-a0b3-2a495a232d2b'
 slug: /e79c314d-8d1c-4ca0-a0b3-2a495a232d2b
 title: 'Office 365 License Count'
 title_meta: 'Office 365 License Count'
-keywords: ['office365','License','Count']
+keywords: ['office365','license','count']
 description: 'The script is designed to fetch license counts from the Office 365 portal. '
 tags:  ['office365','update','windows','software']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
+
 The script is designed to fetch license counts from the Office 365 portal. 
 
-The script employs the Microsoft.Graph PowerShell module to establish a connection with the Office 365 portal and generate the report. As there is no provision for a silent or remote connection to the Office 365 portal using Office 365 credentials, the script utilizes the Using PSCredential object method for this purpose.
+The script employs the [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-powershell) PowerShell module to establish a connection with the Office 365 portal and generate the report. As there is no provision for a silent or remote connection to the Office 365 portal using Office 365 credentials, the script utilizes the [Using PSCredential object](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/docs/authentication.md#client-credential-via-client-secret) method for this purpose.
 
 To effectively use this script, it is imperative to have the Office 365 ClientID, TenantID, and Client Secret. This information can be stored in the client-level EDFs as detailed in the article below.
 
@@ -52,7 +53,7 @@ Please note that this script is designed for professional use and requires a cer
 
 ## Dependencies
 
-- [Solution - Office 365 License Count](/docs/8fe2a7a7-4456-4221-80e5-3fb4f2fdb615) 
+- [Solution - Office 365 License Count](/docs/bc6fad19-065a-4960-8a41-65bd2a8ecdbe) 
 - [Custom Table - pvl_m365_license_count](/docs/8fe2a7a7-4456-4221-80e5-3fb4f2fdb615) 
 - [Internal Monitor - Execute Script – Office 365 License Count](/docs/4b0f8e3f-0efe-49b5-a81b-a617d5940833) 
 
@@ -68,6 +69,8 @@ Please note that this script is designed for professional use and requires a cer
 | M365 Client ID | Text Box | 4e9b6c4a-8e38-46a1-9f7c-4f9a1fc3d7f5  | M365 - Details | True    | Office 365 Clientid |
 | M365 Tenant ID | Text Box | 78d61825-d966-4a3d-a3a8-5408e8acc66c  | M365 - Details | True    | Office 365 Tenantid |
 | M365 Client Secret | Text Box | W/c9zFv622GjDgY+ZaPPFJiO3Z6GpD4R/9a+CT4yGA= | M365 - Details | True    | Office 365 Client Secret |
+
+![EDFs](../../../static/img/docs/e79c314d-8d1c-4ca0-a0b3-2a495a232d2b/image2.webp)
 
 ## Output
 
