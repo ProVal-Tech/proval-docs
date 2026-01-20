@@ -23,10 +23,31 @@ This solution is designed to collect active network adapter details from managed
 | [cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4)                 | `Custom Field` | Displays whether the IP configuration type is `DHCP (Dynamic)` or `Static` on the active network adapter.                                                                                             |
 | [Network Adapter Details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)       | `Script`       | Identifies the first active network adapter that is up, has an IPv4 address, and a default gateway. Collects DHCP status, IP type (DHCP or Static), and DNS server addresses in a comma-separated format. |
 | [cPVAL Network Adapter Details](/docs/e30843b6-3891-4793-b1a2-f18a749ac4f5) | `Group`        | Displays all network adapter–related custom fields, including DHCP status, IP type, and DNS server addresses.                                                                                             |
+| [Check Network Adapter Details - Workstations](/docs/5b8facb5-f73d-45d2-b06e-58ffc6b5ce61) | `Compound condition`        | This compound condition is used to facilitate the automated execution of the script to update the custom field on Windows workstations. It ensures the custom field is updated only on eligible systems.    |
+| [Check Network Adapter Details - Servers](/docs/3c1b4d06-33e8-4e0c-8f2c-3bc93ebd36ae) | `Compound condition`        | This compound condition is used to facilitate the automated execution of the script to update the custom field on Windows servers. It ensures the custom field is updated only on eligible systems.                                                                                            |
+| [custom Field - cPVAL Network Adapter Details](/docs/fb89116d-060f-4787-95af-efdd731765d2) | `Custom Field`      | Displays all network adapter–related custom fields, including DHCP status, IP type, and DNS server addresses.                                                                                             |
 
 ## Implementation
 
-Describe how to implement this solution. Is there any manual configuration that needs to be completed for this solution to succeed?
+### Step 1
+
+Create the [cPVAL Network Adapter Details](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) group.
+
+### Step 2
+
+Create the [cPVAL DHCP Status](/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392)  custom field.
+Create the [cPVAL DNS Server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)  custom field
+Create the [cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4) custom field
+Create the [custom Field - cPVAL Network Adapter Details](/docs/fb89116d-060f-4787-95af-efdd731765d2) custom field
+
+### Step 3
+
+Create the [Network Adapter Details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267) automation.
+
+### Step 4
+
+Create the - [Check Network Adapter Details - Workstations](/docs/5b8facb5-f73d-45d2-b06e-58ffc6b5ce61) Compound condition
+Create the - [Check Network Adapter Details - Servers](/docs/3c1b4d06-33e8-4e0c-8f2c-3bc93ebd36ae) Compound condition
 
 ## FAQ
 
