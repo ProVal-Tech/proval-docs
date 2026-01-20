@@ -6,7 +6,7 @@ title_meta: 'Check Network Adapter Details - Servers'
 keywords: ['windows','dhcp','network']
 description: 'This compound condition is used to facilitate the automated execution of the script to update the custom field on Windows servers. It ensures the custom field is updated only on eligible systems.'
 tags: ['windows','auditing','networking']
-draft: true
+draft: false
 unlisted: false
 ---
 
