@@ -5,7 +5,7 @@ title: 'How to Add Custom Columns to NinjaOne Group Views'
 title_meta: 'How to Add Custom Columns to NinjaOne Group Views'
 keywords: ['group','view']
 description: 'This guides with creation of view in group to display custom field data or any other data as new column.'
-tags: ['group','view']
+tags: ['custom-table','auditing']
 draft: false
 unlisted: false
 ---
