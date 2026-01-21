@@ -30,3 +30,29 @@ This device group displays all machines where the custom fields related to DHCP 
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-network-adapter-details.toml)
+
+## Group View
+
+Please follow the steps below to add the necessary custom fields to the view.
+
+- Create the group and ensure it is saved successfully.
+- Open the newly created group for editing.
+- Navigate to the Table Settings option.
+- Update the table layout to include the required custom fields.
+- Save the changes to apply the updated group view.
+
+## URL TO THE GUIDE
+
+- [How-to Guide URL](/docs/71f3f71d-d6d1-4563-8476-92bbe9df55fa)
+
+Below Custom fields that needs to add under the Group View:
+ 
+ 1. `cPVAL DNS Server`
+ 2. `cPVAL Dhcp Status`
+ 3. `cPVAL IP Type`
+
+## Group Screenshot
+
+This is how the group should looks like after adding the custom fields:
+
+![Group View](../../../static/img/docs/e30843b6-3891-4793-b1a2-f18a749ac4f5/group%20View.webp)
