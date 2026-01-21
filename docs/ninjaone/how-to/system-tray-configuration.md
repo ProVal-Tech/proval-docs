@@ -219,10 +219,15 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
      4. Email: If we set `To a support email address` under the fordwarind then need to Add the email ID on which ticket will delevired.
 
          ![About](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/help-email.webp)
+
      5. Template: If we set `PSA Integration` under the fordwardind then need to select the Default ticket template.
+
          ![About](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/psa.webp)
+
      6. Template: If we set `To Ninja Ticketing` under the fordwardind then need to select the Default ticket template.
-         ![About](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/ninja.webp)  
+
+         ![About](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/ninja.webp)
+
      7. Subject: Used to set the subject of the ticket.
      8. Description: Add the description that want to highlight under the user screen.
 
