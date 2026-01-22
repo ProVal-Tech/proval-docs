@@ -22,13 +22,13 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
 
 2. Click on Add Systray.
 
-3. once the Systray configration page shows. Fill the below detais:
+3. Once the Systray configration page shows, fill in the below details:
     - **Name**: ProVal Tech Support
     - **Description**: This is used to setup the systray.
     - **Tooltip**: ProVal Tech Support
     - **Add operting system systray icon**: Upload the Icon that will be shown under the systray. Once select the Icon 
 
-**Note**: `Icons must be .jpg or .png files, sized 16x16 px to 128x128 px. If no icon or image is uploaded, the default icon below will appear in the systray list.`
+     **Note**: `Icons must be .jpg or .png files, sized 16x16 px to 128x128 px. If no icon or image is uploaded, the default icon below will appear in the systray list.`
 
 4. Click on `SysTray menu`.
 
@@ -63,7 +63,8 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
 
      5. `Automations`: Click Add Automation and add the script that needs to run. "**Minimum of 1 automation required and maximum of 20 automations allowed**". Then click apply.
 
-![Automation](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/automation.webp)
+          ![Automation](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/automation.webp)
+
 
 ## Email
 
@@ -71,12 +72,11 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
 - This option utilizes the mail program configured on the node.
 - You can also use environment variables with the Email menu item.
 - While clicking the `Email` option you will see the below that needs to be filled:
-
      1. Upload the Icon.
-     2. Label: Used to add the name.
-     3. Email: Add the Email address.
-     4. Subject: Add the subject of the the email.
-     5. Body: Add the bosy of the email and click apply..
+     2. **Label:** Used to add the name.
+     3. **Email:** Add the Email address.
+     4. **Subject:** Add the subject of the the email.
+     5. **Body:** Add the body of the email and click apply..
 
 ![Automation](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/Static-email.webp)
 
@@ -85,27 +85,27 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
 - This single-use item will always be at the root level position. It cannot be nested. The item inserts an "exit" option to allow your users to close out of the Systray executable.
 - While clicking the `Exit` option you will see the below that needs to be filled:
 
-     1. Upload the Icon.
-     2.Label: Add the label and click apply.
+     1. Upload the Icon.  
+     2. Label: Add the label and click apply.
 
-![Exit](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/Exit.webp)
+     ![Exit](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/Exit.webp)
 
 ## Group
 
 - Group lets you create menu headings for your Systray items. By default, items are added at the root level. You can create as many groups as needed.
 
-![Group1](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/group1.webp)
+     ![Group1](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/group1.webp)
 
 - While clicking the `Group` option you will see the below that needs to be filled:
 
      1. Upload the Icon.
      2. Label: Add the Group label and click apply.
 
-![Group2](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/group2.webp)
+     ![Group2](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/group2.webp)
 
 ## Launch
 
-- This item type lets you populate launch commands for your customers to use. You can specify the location and filename of the executable to launch along with command line arguments.
+- This item type lets you populate launch commands for your customers to use. You can specify the location and file name of the executable to launch along with command line arguments.
 - This feature will run applications as the logged-on user.
 - Here are some example cmd commands you can run through the Systray icon (this list is not exhaustive):
 
@@ -146,7 +146,7 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
             - If in system32 directory, (i.e. cmd.exe), enter “cmd.exe”. If in program files or another directory, must enter full path name. i.e. “c:\program files\office 2016\app\word.exe”
             - Run TOP = "open /usr/bin/top". Run Calendar = "open /Applications/Calendar.app". Run CONSOLE COMMAND = "touch /tmp/ninja_test.txt". Run Midnight Commander = "open /usr/local/bin/mc"
 
-![Launch](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/launch.webp)
+     ![Launch](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/launch.webp)
 
 ## Seperator
 
@@ -253,22 +253,21 @@ Before you can work with the Systray icon, you must activate it in NinjaOne. To 
 
 ## FAQ
 
-Q1. What is the NinjaOne Systray?
+**Q1. What is the NinjaOne Systray?**
 
-A: The NinjaOne Systray is a system tray icon that allows end users to quickly access support tools, automations, links, and help options directly from their device without opening the NinjaOne agent.
+**A:** The NinjaOne Systray is a system tray icon that allows end users to quickly access support tools, automations, links, and help options directly from their device without opening the NinjaOne agent.
 
-Q2. Why do we need to enable the Systray?
+**Q2. Why do we need to enable the Systray?**
 
-A: The Systray must be enabled to allow custom menus, automations, and support options to appear on end-user devices. Without enabling it, users will not see or interact with the Systray icon.
+**A:** The Systray must be enabled to allow custom menus, automations, and support options to appear on end-user devices. Without enabling it, users will not see or interact with the Systray icon.
 
-Q3. Which operating systems support the Systray?
+**Q3. Which operating systems support the Systray?**
 
-A: The Systray supports Windows, macOS, and Linux, depending on the menu item and automation compatibility.
+**A:** The Systray supports Windows, macOS, and Linux, depending on the menu item and automation compatibility.
 
-Q4. What types of actions can users perform from the Systray?
+**Q4. What types of actions can users perform from the Systray?**
 
-A: Users can:
-
+**A:** Users can perform below actions:
 - Run approved automations
 - Launch applications or system tools
 - Open URLs
@@ -277,44 +276,42 @@ A: Users can:
 - View static information
 - Exit the Systray application
 
-Q5. Do Systray automations run as the logged-in user?
+**Q5. Do Systray automations run as the logged-in user?**
 
-A: No. Systray automations run at the device level unless explicitly designed otherwise. On multi-user systems (such as RDS servers), automations should not be run as the current logged-in user.
+**A:** No. Systray automations run at the device level unless explicitly designed otherwise. On multi-user systems (such as RDS servers), automations should not be run as the current logged-in user.
 
-Q6. Are Systray automation activities logged?
+**Q6. Are Systray automation activities logged?**
 
-A: Yes. When a user runs an automation from the Systray, NinjaOne logs the activity as "Start Requested by Device End User", which can be filtered on the device dashboard.
+**A:** Yes. When a user runs an automation from the Systray, NinjaOne logs the activity as "Start Requested by Device End User", which can be filtered on the device dashboard.
 
-Q7. Can we limit which automations appear in the Systray?
+**Q7. Can we limit which automations appear in the Systray?**
 
-A: Yes. Only automations compatible with the selected operating system are available, and you can choose exactly which automations are added to the Systray menu.
+**A:** Yes. Only automations compatible with the selected operating system are available, and you can choose exactly which automations are added to the Systray menu.
 
-Q8. What icon formats are supported for the Systray?
+**Q8. What icon formats are supported for the Systray?**
 
-A: Icons must be .jpg or .png files and sized between 16x16 px and 128x128 px. If no icon is uploaded, NinjaOne will display the default icon.
+**A:** Icons must be .jpg or .png files and sized between 16x16 px and 128x128 px. If no icon is uploaded, NinjaOne will display the default icon.
 
-Q9. Can users submit support tickets through the Systray?
+**Q9. Can users submit support tickets through the Systray?**
 
-A: Yes. Using the Help Request Form, users can submit tickets that are forwarded to:
-
+**A:** Yes. Using the Help Request Form, users can submit tickets that are forwarded to:
 - A support email
 - An integrated PSA
-- NinjaOne Ticketing
+- NinjaOne Ticketing  
+Attachments and screenshots are also supported.
 
-Attachments and screenshots are supported.
+**Q10. Can we organize Systray items into groups?**
 
-Q10. Can we organize Systray items into groups?
+**A:** Yes. The Group menu type allows you to create headings and organize menu items for better usability.
 
-A: Yes. The Group menu type allows you to create headings and organize menu items for better usability.
+**Q11. Is it possible to launch system tools from the Systray?**
 
-Q11. Is it possible to launch system tools from the Systray?
+**A:** Yes. The Launch menu item allows users to open system tools such as Task Manager, Control Panel, Network Settings, and more, using predefined commands.
 
-A: Yes. The Launch menu item allows users to open system tools such as Task Manager, Control Panel, Network Settings, and more, using predefined commands.
+**Q12. Can the Systray be customized per organization?**
 
-Q12. Can the Systray be customized per organization?
+**A:** Yes. Each NinjaOne site can have its own Systray configuration, branding, menu items, and automations tailored to organizational needs.
 
-A: Yes. Each NinjaOne site can have its own Systray configuration, branding, menu items, and automations tailored to organizational needs.
+**Q13. Does disabling the Systray remove it from devices?**
 
-Q13. Does disabling the Systray remove it from devices?
-
-A: Yes. If the Systray is disabled in NinjaOne, the icon and all associated menu items will no longer appear on end-user devices.
+**A:** Yes. If the Systray is disabled in NinjaOne, the icon and all associated menu items will no longer appear on end-user devices.
