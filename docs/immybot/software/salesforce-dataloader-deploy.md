@@ -13,5 +13,9 @@ unlisted: false
 ## Description
 
 This script assists in performing the Salesforce Data loader installation and uninstallation.
+This is a client-specific product that depends upon the `dataloader_v$Version.zip` file upload.
+Here, $Version is required to be parsed from the HTML link `https://developer.salesforce.com/tools/data-loader`.
+The setup file or URL does not have the version details that can be used for the dynamic deployment.
+The version required to be manually updated for a new upgrade for the software upgrade.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/salesforce-dataloader-deploy.toml)

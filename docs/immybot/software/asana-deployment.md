@@ -13,5 +13,6 @@ unlisted: false
 ## Description
 
 This installs the `Asana` application for Windows.
+It performs the auto-upgrade using dynamic deployment.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/asana-for-windows.toml)

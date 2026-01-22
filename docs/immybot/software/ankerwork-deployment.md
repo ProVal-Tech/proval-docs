@@ -13,5 +13,6 @@ unlisted: false
 ## Description
 
 This script assists in performing the `AnkerWork` installation and uninstallation.
+It performs the auto-upgrade using dynamic deployment.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/ankerwork-deployment.toml)

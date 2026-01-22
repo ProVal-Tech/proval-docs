@@ -13,5 +13,7 @@ unlisted: false
 ## Description
 
 This script helps with performing `Lenovo Dock Manager` installations and uninstallations.
+It performs the auto-upgrade using dynamic deployment.
+Note: If the URL Changes, then the dynamic version URL also needs to be changed for proper upgrade detection.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/lenovo-dock-manager-deploy.toml)
