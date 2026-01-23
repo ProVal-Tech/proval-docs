@@ -26,7 +26,7 @@ This compound condition is used to facilitate the automated execution of the scr
 - [custom Field - cPVAL DHCP Status](/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392)
 - [custom Field - cPVAL DNS Server](/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3)
 - [custom Field - cPVAL IP Type](/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4)
-- [custom Field - cPVAL Network Adapter Details](/docs/fb89116d-060f-4787-95af-efdd731765d2)
+- [custom Field - cPVAL Check Network Adapter Details](/docs/fb89116d-060f-4787-95af-efdd731765d2)
 - [Automation - Network Adapter Details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)
 - [Solution - Network Adapter Details](/docs/81d8fa31-72c7-4339-a107-4a41a3e489f5)
 

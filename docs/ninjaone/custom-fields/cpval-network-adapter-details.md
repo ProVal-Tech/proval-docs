@@ -1,8 +1,8 @@
 ---
 id: 'fb89116d-060f-4787-95af-efdd731765d2'
 slug: /fb89116d-060f-4787-95af-efdd731765d2
-title: 'cPVAL Network Adapter Details'
-title_meta: 'cPVAL Network Adapter Details'
+title: 'cPVAL Check Network Adapter Details'
+title_meta: 'cPVAL Check Network Adapter Details'
 keywords: ['windows','dhcp','network']
 description: 'Controls script execution logic for Network Adapter validation.'
 tags: ['windows','auditing','custom-fields','networking']
@@ -18,7 +18,7 @@ This Custom Field is used during the Network Adapter Details check as part of co
 
 | Label                         | Field Name                 | Definition Scope | Type      | Required | Available Options                                                                                    | Default Value | Technician Permission | Automation Permission | API Permission | Description                                                                                                                                                                                                               | Tool Tip                                                        | Footer Text                                           | Custom Field Tab Name |
 | ----------------------------- | -------------------------- | ---------------- | --------- | -------- | ---------------------------------------------------------------------------------------------------- | ------------- | --------------------- | --------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------- | --------------------- |
-| cPVAL Network Adapter Details | cpvalNetworkAdapterDetails | `Device`         | Drop-down | --       | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`, `Windows Workstations and Servers` | --            | Editable              | Read/Write            | Read/Write     | This Custom Field is used during the Network Adapter Details check as part of compound execution conditions. It determines whether the script should run on a device based on the defined deployment and execution logic. | Controls script execution logic for Network Adapter validation. | Used internally for deployment and execution control. | Network Adapter       |
+| cPVAL Check Network Adapter Details | cpvalNetworkAdapterDetails | `Device`, `Organization`, `Location`       | Drop-down | --       | `Disabled`, `Windows`, `Windows Workstations`, `Windows Servers`              | --            | Editable              | Read/Write            | Read/Write     | This Custom Field is used during the Network Adapter Details check as part of compound execution conditions. It determines whether the script should run on a device based on the defined deployment and execution logic. | Controls script execution logic for Network Adapter validation. | Used internally for deployment and execution control. | Network Adapter       |
 
 ## Dependencies
 
