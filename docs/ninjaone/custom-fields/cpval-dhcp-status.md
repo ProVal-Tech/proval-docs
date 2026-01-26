@@ -22,7 +22,7 @@ Displays whether DHCP is enabled or disabled on the active network adapter. Indi
 
 ## Dependencies
 
-- [Get - Network Adapter details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)
+- [Script - Get - Network Adapter details](/docs/50ff2168-46f2-4c9b-8ccc-0d3671178267)
 - [Solution - Network Adapter Details](/docs/81d8fa31-72c7-4339-a107-4a41a3e489f5)
 
 ## Custom Field Creation
