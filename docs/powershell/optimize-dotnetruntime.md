@@ -124,8 +124,8 @@ This script ensures that the system is running the latest supported versions of 
 
 | Parameter | Alias | Required | Default | Type | Description |
 | --- | --- | --- | --- | --- | --- |
-| `Action` |  | False | List | String | Specifies the action to perform. Valid values are: <br><br> - `list`: Lists installed components and support status. <br><br> - `install`: Installs the latest supported versions. <br><br> - `uninstall`: Uninstalls unsupported versions. <br><br> - `update`: Updates to latest patch and removes superseded patches for the installed supported versions. <br><br> - `renew`: Removes ALL old/unsupported versions and installs the latest. |
-| `Type` |  | False | desktopRuntime | String | Specifies the type of .NET component to manage. Valid values are: <br><br> - `sdk`: Manages .NET SDKs. <br><br> - `runtime`: Manages .NET runtimes. <br><br> - `desktopRuntime`: Manages .NET desktop runtimes. <br><br> - `aspNetCoreRuntime`: Manages ASP.NET Core runtimes. <br><br> - `all`: Manages all .NET components. |
+| `Action` |  | False | List | String | Specifies the action to perform. Valid values are: <br /><br /> - `list`: Lists installed components and support status. <br /><br /> - `install`: Installs the latest supported versions. <br /><br /> - `uninstall`: Uninstalls unsupported versions. <br /><br /> - `update`: Updates to latest patch and removes superseded patches for the installed supported versions. <br /><br /> - `renew`: Removes ALL old/unsupported versions and installs the latest. |
+| `Type` |  | False | desktopRuntime | String | Specifies the type of .NET component to manage. Valid values are: <br /><br /> - `sdk`: Manages .NET SDKs. <br /><br /> - `runtime`: Manages .NET runtimes. <br /><br /> - `desktopRuntime`: Manages .NET desktop runtimes. <br /><br /> - `aspNetCoreRuntime`: Manages ASP.NET Core runtimes. <br /><br /> - `all`: Manages all .NET components. |
 
 ## Output
 
