@@ -4,17 +4,15 @@ slug: /23e2c753-e68a-4bcc-83df-1f62826025a5
 title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
 keywords: ['Domain','Admin','Account','Lockout']
-description: 'This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the `Domain Admin Account Lockout` task to generate a ticket'
+description: 'This monitor runs every 15 minutes to detect any domain admin account lockouts on domain controllers. It also checks for a corresponding unlock event within the same 15 minute window to prevent unnecessary ticket creation.'
 tags: ['domain','active-directory']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the [CWRMM - Task - Domain Admin Account Lockout](/docs/b194bbed-fe64-4ced-8410-21281b08de07) task to generate a ticket
+This monitor runs every 15 minutes to detect any domain admin account lockouts on domain controllers. It also checks for a corresponding unlock event within the same 15 minute window to prevent unnecessary ticket creation.
 
-## Dependencies
-[CWRMM - Task - Domain Admin Account Lockout](/docs/b194bbed-fe64-4ced-8410-21281b08de07)
 
 ## Target
 
@@ -40,27 +38,159 @@ This page will appear after clicking on the `Create Monitor` button:
 
 ### Step 3
 
-- Fill in the mandatory columns on the left side  
+#### Fill in the mandatory columns on the left side  
 - Name: `Domain Admin Account LockOut`  
-- Description: `This event monitor checks every 15 minutes for a domain admin account lockout. If a lockout is detected, it triggers the 'Domain Admin Account Lockout' task to generate a ticket.`  
-- Type: `Event`  
+- Description: `This monitor runs every 15 minutes to detect any domain admin account lockouts on domain controllers. It also checks for a corresponding unlock event within the same 15 minute window to prevent unnecessary ticket creation.`  
+- Type: `Script`  
 - Severity: `Critical Impact Results`  
 - Family: `Active Directory`  
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image1.webp)
+
+![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image11.webp)
 
  
-### Step 4
+   **Conditions:**
+   - **Run script on:** Schedule
+   - **Repeat every:** 15 minutes
+   - **Script Language:** PowerShell
+   - **PowerShell Script:**
 
-- Fill in the condition on the right side.  
-- Follow the screenshot:  
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image2.webp)
+  ```powershell
+  #region globals
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+$InformationPreference = 'Continue'
+$ConfirmPreference = 'None'
+#endRegion
 
-- Click on `Add Automation` and select `Domain Admin Account Lockout` task. 
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image3.webp)
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image4.webp)
+#region constants
+$logName = 'Security'
+$lockedOutId = 4740
+$unlockedId = 4767
+$intervalMinutes = 15
+#endRegion
 
-- Turn Off Ticket Resolution
-And Select `Do not Generate Ticket` from the monitor Output DropDown.
+#region variables
+$startTime = (Get-Date).AddMinutes(-$intervalMinutes)
+$lockedOutFilterHashTable = @{
+    LogName   = $logName
+    Id        = $lockedOutId
+    StartTime = $startTime
+}
+$unlockedFilterHashTable = @{
+    LogName   = $logName
+    Id        = $unlockedId
+    StartTime = $startTime
+}
+$lockedOutAdminsEventInfo = @()
+$unlockedAdminsEventInfo = @()
+#endRegion
+
+#region get locked out event info
+$domainAdmins = Get-ADGroupMember -Identity 'Domain Admins' -Recursive | Select-Object -ExpandProperty SamAccountName
+
+$lockedOutInfo = Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable $lockedOutFilterHashTable
+if (-not $lockedOutInfo) {
+    return
+}
+
+$lockedOutEventsInfo = $lockedOutInfo | ForEach-Object {
+    $lockedOutXml = ([xml]$_.ToXml()).Event
+    $lockedOutObject = [ordered]@{
+        EventDate = [DateTime]$lockedOutXml.System.TimeCreated.SystemTime
+    }
+    $lockedOutXml.EventData.ChildNodes | ForEach-Object {
+        $lockedOutObject[$_.Name] = $_.'#text'
+    }
+    [PsCustomObject]$lockedOutObject
+}
+$lockedOutAdmins = $lockedOutEventsInfo | Where-Object { $domainAdmins -contains $_.TargetUserName }
+
+$lockedOutAdmins | ForEach-Object {
+    $user = $_.TargetUserName
+    $lastLogin = (Get-ADUser -Identity $user -Properties LastLogonDate).LastLogonDate
+    $lockoutTime = $_.EventDate
+    $endpoint = $_.TargetDomainName
+    $domain = $_.SubjectDomainName
+    $lockedOutAdminsEventInfo += [PSCustomObject]@{
+        Username    = $user
+        LastLogin   = $lastLogin
+        LockoutTime = $lockoutTime
+        Endpoint    = $endpoint
+        Domain      = $domain
+    }
+}
+
+$lockedOutAdminsEventInfoUnique = $lockedOutAdminsEventInfo |
+    Group-Object -Property Username |
+    ForEach-Object {
+        $_.Group |
+            Sort-Object -Property LockoutTime -Descending |
+            Select-Object -First 1
+        }
+#endRegion
+
+#region get unlocked event info
+$unlockedInfo = Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable $unlockedFilterHashTable
+if (-not $unlockedInfo) {
+    return $lockedOutAdminsEventInfoUnique
+}
+
+$unlockEventsInfo = $unlockedInfo | ForEach-Object {
+    $unlockXml = ([xml]$_.ToXml()).Event
+    $unlockObject = [ordered]@{
+        EventDate = [DateTime]$unlockXml.System.TimeCreated.SystemTime
+    }
+    $unlockXml.EventData.ChildNodes | ForEach-Object {
+        $unlockObject[$_.Name] = $_.'#text'
+    }
+    [PsCustomObject]$unlockObject
+}
+$unlockedAdmins = $unlockEventsInfo | Where-Object { $domainAdmins -contains $_.TargetUserName }
+
+$unlockedAdmins | ForEach-Object {
+    $user = $_.TargetUserName
+    $unlockTime = $_.EventDate
+
+    $domain = $_.SubjectDomainName
+    $unlockedAdminsEventInfo += [PSCustomObject]@{
+        Username   = $user
+        UnlockTime = $unlockTime
+        Domain     = $domain
+    }
+}
+
+$unlockedOutAdminsEventInfoUnique = $unlockedAdminsEventInfo |
+    Group-Object -Property Username |
+    ForEach-Object {
+        $_.Group |
+            Sort-Object -Property UnlockTime -Descending |
+            Select-Object -First 1
+        }
+#endRegion
+
+#region compare lockedout time
+$lockedOutAdminsEventInfoUnique | Where-Object {
+    $lockedOutUser = $_
+    $unlockedUser = $unlockedOutAdminsEventInfoUnique | Where-Object { $_.Username -eq $lockedOutUser.Username }
+    if (-not $unlockedUser) {
+        $true
+    } else {
+        $lockedOutUser.LockoutTime -gt $unlockedUser.UnlockTime
+    }
+}
+#endRegion
+```
+
+ - **Criteria:** Contains
+   - **Operator:** AND
+   - **Script Output:** `Username`
+   - **Escalate ticket on script failure:** Disabled
+   - **Automatically resolve:** Disabled
+   - **Monitor Output:** Generate Ticket
+
+
+- Turn On Ticket Resolution
+And Select `Generate Ticket` from the monitor Output DropDown.
 ![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image5.webp)
 
 
@@ -74,4 +204,4 @@ This page will appear after clicking on the `Select Target` button:
 
 
 ## Completed Monitor
-![CompletedTask](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image7.webp)
+![CompletedTask](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image17.webp)
