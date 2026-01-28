@@ -6,7 +6,7 @@ title_meta: 'Domain Admin Account LockOut'
 keywords: ['Domain','Admin','Account','Lockout']
 description: 'This monitor runs every 15 minutes to detect any domain admin account lockouts on domain controllers. It also checks for a corresponding unlock event within the same 15 minute window to prevent unnecessary ticket creation.'
 tags: ['domain','active-directory']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -38,7 +38,7 @@ This page will appear after clicking on the `Create Monitor` button:
 
 ### Step 3
 
-### Fill in the mandatory columns on the left side  
+#### Fill in the mandatory columns on the left side  
 - Name: `Domain Admin Account LockOut`  
 - Description: `This monitor runs every 15 minutes to detect any domain admin account lockouts on domain controllers. It also checks for a corresponding unlock event within the same 15 minute window to prevent unnecessary ticket creation.`  
 - Type: `Script`  
