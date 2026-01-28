@@ -23,14 +23,14 @@ Before you can work with the Systray Menu, you must activate it in NinjaOne. To 
 2. Click on Add Systray.
 
 3. Once the Systray configration page shows, fill in the below details:
-    - **Name**: ProVal Tech Support
-    - **Description**: This is used to setup the systray.
-    - **Tooltip**: ProVal Tech Support
+    - **Name**: `<Your Company Name>`
+    - **Description**: `<Provide a suitable description for your Systray>`
+    - **Tooltip**: `<MSP Name Automation Agent or any custom name you want to display the icon with>`
     - **Add operting system systray icon**: Upload the Icon that will be shown under the systray.  
 
      **Note**: `Icons must be .jpg or .png files, sized 16x16 px to 128x128 px. If no icon or image is uploaded, the default icon below will appear in the systray list.`
 
-     ![osicon](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/osicon.webp)
+     ![osicon](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/os_icon.webp)
 
 4. Click on `SysTray menu`.
 
@@ -100,7 +100,8 @@ The Email type allows you to customize an email that a customer can send to you.
      2. **Label:** Used to add the name.
      3. **Email:** Add the Email address.
      4. **Subject:** Add the subject of the the email.
-     5. **Body:** Add the body of the email and click apply..
+     5. **Body:** Add the body of the email and click apply.   
+     *Sample image:*  
           ![Automation](../../../static/img/docs/b4009de0-23fa-4269-ab8d-4a230a798a72/Static-email.webp)
 
 ## Exit
@@ -203,7 +204,7 @@ This command lets you enter static text the system will display to the user.
 
 ## URL
 
-This item type allows you to configure specific URLs for your customers to launch as needed.  This command is helpful if you'd like to enable your customers to call you via Skype or any other dynamic URL.
+This item type allows you to configure specific URLs for your customers to launch as needed.  This command is helpful if you'd like to launch your company's website or any other dynamic URL.
 
 #### Implemetation
 - While clicking the `URL` option you will see the below that needs to be filled:
@@ -338,3 +339,7 @@ Attachments and screenshots are also supported.
 **Q13. Does disabling the Systray remove it from devices?**
 
 **A:** Yes. If the Systray is disabled in NinjaOne, the icon and all associated menu items will no longer appear on end-user devices.
+
+**Q. Can we re-arrange the menu?**
+
+**A.** Yes, you can drag and drop any menu under any group or re-posistion any option/menu according to you.
