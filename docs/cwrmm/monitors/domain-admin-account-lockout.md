@@ -189,8 +189,7 @@ $lockedOutAdminsEventInfoUnique | Where-Object {
    - **Monitor Output:** Generate Ticket
 
 
-- Turn On Ticket Resolution
-And Select `Generate Ticket` from the monitor Output DropDown.
+- Turn OFF Ticket Resolution.
 ![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image5.webp)
 
 
