@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This checks the office bit version (32 / 64), then runs a shell command for quick repair. If you want to run a full repair, then set the variable FullRepair = 1.
+This checks the office bit version (32 / 64), then runs a shell command for a quick repair. If you want to run a full repair, then set the variable FullRepair = 1.
 
 ## Implementation  
 
@@ -31,7 +31,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Microsoft 365 - C2R - Get Channel` and click on `Select`
+3. Search the component `Microsoft Office - C2R - Repair` and click on `Select`
     ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
     ![Image 4](../../../static/img/docs/37fffa7b-0b74-4d14-93ff-704d25e78bdc/image11.webp)

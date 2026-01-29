@@ -68,7 +68,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## FAQ
 
-**Q. How to set the `UDF` name?**
+**Q1. How to set the `UDF` name?**
   
 **A.** To set the User Defined Field (UDF) name, please set it under the `Setup` > `Global Settings` > `User-defined field 18` and set the value as `Update M365 Channel` so that it can reflect the same name under the devices UDFs.
 
@@ -76,7 +76,7 @@ To execute the `component` over a specific machine, follow these steps:
 
   ![Image 9](../../../static/img/docs/37fffa7b-0b74-4d14-93ff-704d25e78bdc/image7.webp)
 
-**Q. What happen if we didn't set the user defined field name as `Update M365 Channel` under global settings?**
+**Q2. What happen if we didn't set the user defined field name as `Update M365 Channel` under global settings?**
   
 **A.** The `User-Defined Field X` will still get updated with the `Update channel` value, where X is the UDF number, but the name of the UDFs will show as `User-Defined Field X` and not as `Update M365 Channel`.
   

@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-Update Microsoft 365 Apps to their latest version.
+This component updates the Click-To-Run version Microsoft 365 Apps to their latest version.
 
 ## Implementation  
 
@@ -31,7 +31,7 @@ To execute the `component` over a specific machine, follow these steps:
 2. Click on the `Quick Job` button.  
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
-3. Search the component `Microsoft 365 - C2R - Get Channel` and click on `Select`
+3. Search the component `Microsoft Office - C2R - Update` and click on `Select`
     ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
     ![Image 4](../../../static/img/docs/37fffa7b-0b74-4d14-93ff-704d25e78bdc/image10.webp)
