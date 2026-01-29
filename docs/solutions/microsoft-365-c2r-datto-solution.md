@@ -5,8 +5,8 @@ title: 'Microsoft 365 - C2R - Solution'
 title_meta: 'Microsoft 365 - C2R - Solution'
 keywords: ['channel', 'microsoft-office', 'c2r', 'click-to-run', 'office365']
 description: 'This solution contains the Microsoft 365 - C2R - solution, like (Get, Set, Update, and Repair the C2R channel).'
-tags: []
-draft: true
+tags: ['office', 'office365', 'microsoft365', 'update']
+draft: false
 unlisted: false
 ---
 
