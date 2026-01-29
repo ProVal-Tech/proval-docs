@@ -18,6 +18,10 @@ The script retrieves details about accessible network adapters from a Windows co
 
 ![Sample Run](../../../static/img/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d/image_1.webp)
 
+## Dependencies
+
+- [Solution - DNS Assignments](/docs/6b898ed0-2dfd-447c-9a40-5cc9ce05ea9b)
+
 ## Variables
 
 | Name            | Description                                                                                     |

@@ -1,8 +1,8 @@
 ---
 id: '3c11e893-b78e-4dc9-a8c2-c80060da203b'
 slug: /3c11e893-b78e-4dc9-a8c2-c80060da203b
-title: 'Power Plan - Audit Script'
-title_meta: 'Power Plan - Audit Script'
+title: 'Power Plan - Audit [Script]'
+title_meta: 'Power Plan - Audit [Script]'
 keywords: ['power', 'plan', 'audit', 'data', 'view', 'settings', 'collection']
 description: 'This document provides a summary of the Power Plan Audit Data View, detailing the power plan settings gathered by the EPM Data Collection script. It includes information about dependencies, columns, and a sample screenshot for visualization.'
 tags: ['performance', 'report', 'windows']
@@ -12,13 +12,14 @@ unlisted: false
 
 ## Summary
 
-The data view displays the power plan settings gathered by the [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.
+The data view displays the power plan settings gathered by the [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)  
-- [EPM - Data Collection - Custom Table - pvl_powerplan_audit](/docs/9560f2db-f58f-4c07-a9da-2828deabc4cf)  
-- [EPM - Data Collection - Internal Monitor - Execute Script - Power Plan - Audit](/docs/fdbe1912-b216-4876-b64b-db83eee691a1)  
+- [Script - Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)  
+- [Custom Table - pvl_powerplan_audit](/docs/9560f2db-f58f-4c07-a9da-2828deabc4cf)  
+- [Internal Monitor - Execute Script - Power Plan - Audit](/docs/fdbe1912-b216-4876-b64b-db83eee691a1)  
+- [Solution - Power Plan Management](/docs/e7911ff5-d709-4ba0-b847-16969445c19b/)
 
 ## Columns
 
@@ -44,7 +45,3 @@ The data view displays the power plan settings gathered by the [EPM - Data Colle
 | On Direct Power Setting (AC) | Value for the Power Setting on the machine when directly connected to electricity. |
 | On Battery Power Setting (DC) | Value for the Power Setting on the machine when running on Battery/UPS power. |
 | Script Run Time           | Data Collection Time                                    |
-
-## Sample Screenshot
-
-<iframe src="https://proval.itglue.com/attachments/14048242?preview=1" width="100%" height="1000px" frameborder="0"></iframe>

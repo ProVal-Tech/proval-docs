@@ -16,7 +16,7 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 
 ## Dependencies
 
-[EPM - Data Collection - Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
+[Script - Audit - GPO Redirection Settings](/docs/aa50a67f-a0b6-4b97-8e89-18b0155265cc)
 
 ## Tables
 
@@ -30,18 +30,3 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 | SettingType    | VARCHAR(25)   | The type of setting being shown (Global or Folder).    |
 | Description     | TEXT          | The description of what the property is setting, if known. |
 | Value          | TEXT          | The value assigned to the property.                     |
-
-## SQL
-
-```
-CREATE TABLE IF NOT EXISTS `@TableName@` (
-    `ComputerID` INT NOT NULL,
-    `User` VARCHAR(50) NOT NULL DEFAULT '0',
-    `PropertyName` VARCHAR(100) NOT NULL DEFAULT '0',
-    `SettingType` VARCHAR(25) NULL DEFAULT NULL,
-    `Description` TEXT(150) NULL,
-    `Value` TEXT(200) NULL,
-    PRIMARY KEY (`ComputerID`, `User`, `PropertyName`)
-)
-COLLATE='utf8_general_ci';
-```

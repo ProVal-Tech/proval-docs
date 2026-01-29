@@ -1,8 +1,8 @@
 ---
 id: 'd7d933e3-9668-4de9-9f44-7452198ab85a'
 slug: /d7d933e3-9668-4de9-9f44-7452198ab85a
-title: 'Bitlocker - Audit'
-title_meta: 'Bitlocker - Audit'
+title: 'BitLocker - Audit'
+title_meta: 'BitLocker - Audit'
 keywords: ['bitlocker', 'encryption', 'tpm', 'audit', 'recovery']
 description: 'This document provides a comprehensive overview of the Bitlocker Audit script, detailing its functionality in gathering Bitlocker and TPM information from target endpoints, storing it in custom tables, and creating backup files for recovery passwords.'
 tags: ['backup', 'encryption', 'security', 'windows']
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The Bitlocker Audit script gathers Bitlocker information from the target endpoint and stores it in the custom table [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14). It creates a TPM table named `plugin_proval_tpm_audit` and populates that table with TPM data. Additionally, it creates a backup text document with the recovery password in the LTShare for the target machine.
+The Bitlocker Audit script gathers Bitlocker information from the target endpoint and stores it in the custom table [Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14). It creates a TPM table named `plugin_proval_tpm_audit` and populates that table with TPM data. Additionally, it creates a backup text document with the recovery password in the LTShare for the target machine.
 
 **File Path:** `C:/ProgramData/_Automation/Script/Bitlocker_Audit/Bitlocker_Audit.ps1`  
 **File Hash (SHA256):** `4C4E524791404130BA61E50C287681010F4D9161766945C36411AEAD23588CFF`  
@@ -36,6 +36,7 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 
 - PowerShell v5
 - Bitlocker module for PowerShell
+- [Solution - BitLocker](/docs/f41e4d71-7074-4c28-8246-b8e3036c1212/) 
 
 ## User Parameters
 

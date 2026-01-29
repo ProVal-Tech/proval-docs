@@ -31,6 +31,7 @@ This is an Automate implementation of the agnostic script [Get-PowerPlan](/docs/
 - [Script - Get-PowerPlan](/docs/4d7993ab-1fa8-4b96-9f19-f503737ea015)  
 - [Internal Monitor - Execute Script - Power Plan - Audit](/docs/fdbe1912-b216-4876-b64b-db83eee691a1)  
 - [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)  
+- [Solution - Power Plan Management](/docs/e7911ff5-d709-4ba0-b847-16969445c19b/)
 
 ## Global Variables
 

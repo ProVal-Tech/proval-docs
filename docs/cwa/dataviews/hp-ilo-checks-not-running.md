@@ -16,8 +16,9 @@ This document lists the password entries for which the HP iLO Health Check autom
 
 ## Dependencies
 
-- [EPM - Data Collection - Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
-- [CWM - Automate - Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc)
+- [Script - HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a)
+- [Internal Monitor - Execute Script - HP iLO - Health Report - Get](/docs/a8f66140-8915-41fa-805b-64fafbf002fc)
+- [Solution - HP iLO Health Check](/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352)
 
 ## Columns
 

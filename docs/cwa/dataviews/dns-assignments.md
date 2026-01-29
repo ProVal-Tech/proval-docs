@@ -16,8 +16,9 @@ This document provides a display of a device's active network adapter and its as
 
 ## Dependencies
 
-- [EPM - Network - Custom Table - pvl_network_Adapter](/docs/5a5463d0-0ce3-4c09-bd41-39da28e16d0f)
-- [EPM - Network - Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d)
+- [Custom Table - pvl_network_Adapter](/docs/5a5463d0-0ce3-4c09-bd41-39da28e16d0f)
+- [Script - Get - DNS Assignments](/docs/3bf7ea38-4bea-426b-bc6d-f480ba0b895d)
+- [Solution - DNS Assignments](/docs/6b898ed0-2dfd-447c-9a40-5cc9ce05ea9b)
 
 ## Columns
 

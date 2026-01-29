@@ -20,25 +20,25 @@ The purpose of this document is to monitor the disk health of physical machines 
 
 | Content                                                                                 | Type                | Function                                                                                          |
 |-----------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------------------------------------|
-| [Agnostic - Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb)             | Agnostic Scripts     | Executes the tool on the end machine and returns the result into an object.                     |
-| [Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea)   | Script               | Executes the agnostic script on the end machines and fetches the data into Automate. Also creates a ticket for computers with unhealthy disks. |
-| [Custom Table - pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c)     | Custom Table        | Stores the data fetched by the script.                                                            |
-| [Dataview - Crystal Disk Info Report](/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff) | Dataview            | Displays the data stored in the Custom Table.                                                   |
-| [Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) | Internal Monitor     | Executes the script once per week against the supported Windows machines.                        |
+| [Get-CrystalDiskInfo](/docs/b08e9cd3-931f-4c70-a084-6193fe3702fb)             | Agnostic Script     | Executes the tool on the end machine and returns the result into an object.                     |
+| [Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea)   | Script               | Executes the agnostic script on the end machines and fetches the data into Automate. Also creates a ticket for computers with unhealthy disks. |
+| [pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c)     | Custom Table        | Stores the data fetched by the script.                                                            |
+| [Crystal Disk Info Report](/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff) | Dataview            | Displays the data stored in the Custom Table.                                                   |
+| [Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) | Internal Monitor     | Executes the script once per week against the supported Windows machines.                        |
 | △ CUSTOM - Execute Script - Crystal Disk Info Report                                    | Alert Template      | Executes the script against the machines detected by the alert template.                        |
 
 ## Implementation
 
 - Read all the associated/related documents carefully to fully understand the workings of the solution.
-- **Before moving forward, remove all the contents related to the [EPM - Disk - Solution - Disk - Critical Data](/docs/7907bbc0-a161-47b4-bd24-64aa3ccca910) solution from the environment.**
-- Import the [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script.
-- Execute the script against an online physical Windows machine with PowerShell v5 to create the [EPM - Disk - Custom Table - pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c) table.
-- Execute the script "[MySQL - Permission - Set Custom Table Permissions](/docs/7819fc75-aeae-457b-a451-59221396e900)" (make sure this script is updated).
-- Import the [EPM - Disk - Dataview - Crystal Disk Info Report](/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff) dataview.
+- **Before moving forward, remove all the contents related to the [Solution - Disk - Critical Data](/docs/7907bbc0-a161-47b4-bd24-64aa3ccca910) solution from the environment.**
+- Import the [Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script.
+- Execute the script against an online physical Windows machine with PowerShell v5 to create the [pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c) table.
+- Execute the script [MySQL - Permission - Set Custom Table Permissions](/docs/7819fc75-aeae-457b-a451-59221396e900) (make sure this script is updated).
+- Import the [Crystal Disk Info Report](/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff) dataview.
 - Ensure that the dataview is displaying the data for the computer you just executed the script on.
-- Import the [EPM - Disk - Internal Monitor - Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) internal monitor.
+- Import the [Execute Script - Crystal Disk Info Report](/docs/860cd3d8-4833-4c29-b87d-ac997816994e) internal monitor.
 - Create/import the `△ CUSTOM - Execute Script - Crystal Disk Info Report` alert template.
-- Ensure that the template is executing the [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script on failure.
+- Ensure that the template is executing the [Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script on failure.
 - Set the monitor set to the concerned groups.
 - Apply the alert template to the monitor set and ensure that the solution is working as desired.
 - Set the required values for the system properties `Crystal_Disk_Info_Disable_Caution_Tickets` and `Crystal_Disk_Info_Disable_Tickets`. Refer to the [Script's](/docs/651e701f-40d0-4657-817c-b81785d441ea) document for more information on the system properties.

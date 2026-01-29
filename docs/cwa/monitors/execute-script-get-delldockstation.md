@@ -16,7 +16,8 @@ The purpose of this monitor is to execute the [Script - Get-DellDockStation](/do
 
 ## Dependencies
 
-[CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
+- [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0)
+- [Solution - Dell DockStation](/docs/2e4ec512-945a-4b3d-ba18-53553b08f4ca/)
 
 ## Target
 
@@ -24,6 +25,6 @@ Windows 10 and 11 machines.
 
 ## Alert Template
 
-**Name:** `△ Custom - Execute Script - Get-DellDockStation`
+`△ Custom - Execute Script - Get-DellDockStation`
 
-The alert template should execute the [CWM - Automate - Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script.
+The alert template should execute the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script.
