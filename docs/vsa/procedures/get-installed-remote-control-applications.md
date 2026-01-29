@@ -1,8 +1,8 @@
 ---
 id: 'fb5ec942-3415-43e0-b6b8-bbfeaf222358'
 slug: /fb5ec942-3415-43e0-b6b8-bbfeaf222358
-title: 'Get - Remote control Applications'
-title_meta: 'Get - Remote control Applications'
+title: 'Get - Remote Control Applications'
+title_meta: 'Get - Remote Control Applications'
 keywords: ['remote','applications','audit']
 description: 'This script identifies remote access tools currently installed on the machine.'
 tags: ['custom-fields','auditing','application']
@@ -30,15 +30,14 @@ Supported tool display names (use exact spelling when excluding):
 
 ## Variables
 
-We have created two custom variables:
+Below two custom variables should b created:
 
 - `Name`: Used to specify the name of the application(s) that need to be excluded.
-- `Excluded`: This value must be set to 0 or 1.
+- `Excluded`: This value must be set to 0 or 1.  
+    - `1`: Excludes the specified application(s); they will not be displayed in the custom field.`  
+    - `0`: No exclusion is applied; all specified applications will be displayed in the custom field if present on the machine.
 
-- `1 – Excludes the specified application(s); they will not be displayed in the custom field.`
-- `0 – No exclusion is applied; all specified applications will be displayed in the custom field if present on the machine.`
-
-**Example** use the below format to exclude any application.
+**Example:** Use the below format to exclude any application.
 
 - For multiple applications:
 
