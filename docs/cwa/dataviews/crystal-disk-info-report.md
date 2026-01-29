@@ -12,12 +12,14 @@ unlisted: false
 
 ## Summary
 
-Dataview displays the data retrieved by the [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script. It is not necessary for all disks to show values for all columns/properties, as different drive models can return slightly different properties/results.
+Dataview displays the data retrieved by the [Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) script. It is not necessary for all disks to show values for all columns/properties, as different drive models can return slightly different properties/results.
 
 ## Dependencies
 
-- [EPM - Disk - Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea)  
-- [EPM - Disk - Custom Table - pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c)  
+- [Script - Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea)  
+- [Custom Table - pvl_crystal_disk_info](/docs/89182385-f98c-4e8b-ab62-1df0c73bbb1c)  
+- [Solution - Crystal Disk Info](/docs/0df580b1-4b36-4988-b192-574a001a7323)
+
 
 ## Columns
 

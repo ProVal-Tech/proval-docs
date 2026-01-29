@@ -16,7 +16,8 @@ This document displays the Hardware Hash details of Windows agents.
 
 ## Dependencies
 
-[CWA - Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806)
+- [Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806)
+- [Solution - Get Autopilot Hash](/docs/0af1bff2-a32a-442b-9322-a8a260d150ff)
 
 ## Columns
 
@@ -30,4 +31,4 @@ This document displays the Hardware Hash details of Windows agents.
 | Make              | Make of the agent within Automate                        |
 | Model             | Model of the agent within Automate                       |
 | Serial Number     | Serial Number of the agent within Automate               |
-| Autopilot Hash    | Hardware Hash collected by [CWA - Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806) |
+| Autopilot Hash    | Hardware Hash collected by the [Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806) |

@@ -21,11 +21,13 @@ Computer-level EDF `Unsupported Dell BIOS` will be marked for computers that do 
 **Prerequisites:**  
 [Prerequisites for Systems Running on Windows](https://www.dell.com/support/manuals/en-us/command-monitor/dellcommandmonitor_rn/prerequisites-for-systems-running-on-windows?guid=guid-aa49b007-8eb3-496b-851b-d2131a8c74b6&lang=en-us)
 
+**Note:** Since, [this installer](https://dl.dell.com/FOLDER11078318M/1/Dell-Command-Monitor_KF06N_WIN_10.10.1.13_A00.EXE) works only with a browser, it can be used in the script to download the installer on the machine. Download the installer on the Client LTShare and share its path in the script at Line 42.
+
 ## Dependencies
 
-[CWM - Automate - Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)  
+- [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)  
+- [Solution - Dell DockStation](/docs/2e4ec512-945a-4b3d-ba18-53553b08f4ca/)
 
-Note: Since [this installer](https://dl.dell.com/FOLDER11078318M/1/Dell-Command-Monitor_KF06N_WIN_10.10.1.13_A00.EXE) works only with a browser, it can be used in the script to download the installer on the machine. Download the installer on the Client Ltshare and share its path in the script at Line 42.
 
 ## Target
 

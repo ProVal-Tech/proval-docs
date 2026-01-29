@@ -18,7 +18,7 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 
 - [Script - Get MSSQL Database Version](/docs/03f2c6fe-2b6d-43bd-b5c8-de3cb55c0dee)
 - [Custom Table - pvl_mssql_db_version](/docs/e0ec87f6-0624-40db-ac6b-1b7d823e6b37)
-- [Internal Monitor - Execute Script - Get MSSQL Database Version](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)
+- [Solution - MSSQL Database Version](/docs/a13ca3c7-a75d-4549-9056-dd0b79e4caeb)
 
 ## Columns
 

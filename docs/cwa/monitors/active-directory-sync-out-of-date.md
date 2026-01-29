@@ -18,8 +18,12 @@ This monitor looks for Active Directory (AD) servers that have been onboarded fo
 
 This monitor is dependent on the following items:
 
-- [CWM - Automate - Script - ScreenConnect - RMM+ Autofix - AD Plugin - Sync Out of Date [Ticket]](/docs/6c9ef438-835d-44a9-bf31-4a1db9253347)  
-- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)  
+- [Script - ScreenConnect - AD Plugin - Sync Out of Date [Ticket,RMM+]](/docs/6c9ef438-835d-44a9-bf31-4a1db9253347)  
+- [Guide: RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)  
+
+## Alert Template
+
+`△ Custom - Autofix - AD Plugin Sync Out of Date`
 
 ## Target
 
