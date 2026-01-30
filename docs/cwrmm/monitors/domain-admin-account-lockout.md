@@ -1,6 +1,6 @@
 ---
-id: '23e2c753-e68a-4bcc-83df-1f62826025a5'
-slug: /23e2c753-e68a-4bcc-83df-1f62826025a5
+id: '5605eb10-68b5-4334-aedb-d52885a13671'
+slug: /5605eb10-68b5-4334-aedb-d52885a13671
 title: 'Domain Admin Account LockOut'
 title_meta: 'Domain Admin Account LockOut'
 keywords: ['Domain','Admin','Account','Lockout']
@@ -45,7 +45,7 @@ This page will appear after clicking on the `Create Monitor` button:
 - Severity: `Critical Impact Results`  
 - Family: `Active Directory`  
 
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image11.webp)
+![Step3](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image11.webp)
 
  
    **Conditions:**
@@ -190,7 +190,7 @@ $lockedOutAdminsEventInfoUnique | Where-Object {
 
 
 - Turn OFF Ticket Resolution.
-![Step3](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image5.webp)
+![Step3](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image5.webp)
 
 
 ### Step 5
@@ -203,4 +203,4 @@ This page will appear after clicking on the `Select Target` button:
 
 
 ## Completed Monitor
-![CompletedTask](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image17.webp)
+![CompletedTask](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image17.webp)
