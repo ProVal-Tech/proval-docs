@@ -18,7 +18,7 @@ This monitor runs every 15 minutes to detect any domain admin account lockouts o
 
 `Domain Controllers`  
 This should target the group 'Domain Controllers' as shown below:
-![Target](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image6.webp)
+![Target](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image6.webp)
 
 
 ## Monitor Creation
@@ -195,8 +195,9 @@ $lockedOutAdminsEventInfoUnique | Where-Object {
 Click the `Select Target` button to choose the endpoints for running the monitor set.  
 ![Step4](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/step4.webp)
 
-This page will appear after clicking on the `Select Target` button:  
-![Target](../../../static/img/docs/23e2c753-e68a-4bcc-83df-1f62826025a5/image6.webp)
+Select `Device Groups` as selection type and search for `Domain Controller`. This should target the group 'Domain Controllers' as shown below:
+
+![Target](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image6.webp)
 
 
 ## Completed Monitor
