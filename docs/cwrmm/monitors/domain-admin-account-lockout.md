@@ -182,14 +182,11 @@ $lockedOutAdminsEventInfoUnique | Where-Object {
 ```
 
  - **Criteria:** Contains
-   - **Operator:** AND
-   - **Script Output:** `Username`
-   - **Escalate ticket on script failure:** Disabled
-   - **Automatically resolve:** Disabled
-   - **Monitor Output:** Generate Ticket
-
-
-- Turn OFF Ticket Resolution.
+   - Operator: `AND`
+   - Script Output: `Username`
+- **Escalate ticket on script failure:** Disabled
+- **Automatically resolve:** Disabled
+- **Monitor Output:** Generate Ticket
 ![Step3](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image5.webp)
 
 
