@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script inventories the endpoint for a curated list of remote access utilities by inspecting uninstall registry keys, running processes, installed services, and known executable paths. Optional exclusions can be defined using the Kaseya VSA agent procedure parameter **ToolsToIgnore**. All detected results are written to the script output and can be mapped to a Kaseya custom field for auditing and reporting purposes.
+This script inventories the endpoint for a curated list of remote access utilities by inspecting uninstall registry keys, running processes, installed services, and known executable paths. Optional exclusions can be defined using the Kaseya VSA agent procedure parameter **Name** and **Excluded** . All detected results are written to the script output and can be mapped to a Kaseya custom field for auditing and reporting purposes.
 
 ## Remote Applications Check
 
@@ -26,8 +26,7 @@ Supported tool display names (use exact spelling when excluding):
 
 ## Dependencies
 
-[Custom Field - cPVAL Remote Applications Status](/docs/a89004d0-e23c-4f89-8937-dd62e2b64b7f)
-
+-  [Custom Field - cPVAL Remote Applications Status](/docs/a89004d0-e23c-4f89-8937-dd62e2b64b7f)
 - `.\Installed-RemoteApplications.ps1`
 - The `.ps1` file is located under **Managed Files**. The file must be downloaded and uploaded to the same folder.
 - **Location:** `VSASharedFiles\PVAL\Installed-RemoteApplications.ps1`
@@ -54,13 +53,7 @@ Supported tool display names (use exact spelling when excluding):
 
         'Datto RMM'
 
-## Parameters
 
-| Parameter        | Required | Example                              | Type   | Description |
-|------------------|----------|--------------------------------------|--------|-------------|
-| `-ToolsToIgnore` | Yes      | `-ToolsToIgnore '#Name#'`            | String | Specify the name(s) of remote access tools to exclude from results. Any tool listed here will **not** be shown in the custom field output. |
-
-- The `#Name#` variable will automatically take the name of the application(s), as the `#Name#` variable is already defined in **line number 12** of the script.
 
 ## Output
 
