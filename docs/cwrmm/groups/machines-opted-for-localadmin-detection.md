@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This Group includes windows machines which are opted for LocalGroup Administrator Detection Solution.
+This Group includes Windows machines which are opted for Local Administrator Detection Solution.
 
 ## Dependencies
 - [Custom Field - Enable Local Admins Detection  ](/docs/219923f8-62e6-401a-9693-678b44325708) 
@@ -36,8 +36,8 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Machines Opted for LocalAdmin Detection`  
-**Description:** `This Group includes windows machines which are opted for LocalGroup Administrator Detection Solution.`
+- **Group Name:** `Machines Opted for LocalAdmin Detection`  
+- **Description:** `This Group includes Windows machines which are opted for LocalGroup Administrator Detection Solution.`
 
 ![Summary](../../../static/img/docs/e1cb7e20-f09c-4350-a496-db920efa6530/image1.webp)
 
