@@ -17,11 +17,11 @@ Select this Custom Field to exclude an endpoint from Local Admin Detection Solut
 
 | Name                 | Level                | Type                | Default       | Required | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Exclude Local Admin Detection | Endpoint | Checkbox | No | False | Yes   | SSelect this Custom Field to exclude an endpoint from Local Admin Detection Solution.|
+| Exclude Local Admin Detection | Endpoint | Checkbox | No | False | Yes   | Select this Custom Field to exclude an endpoint from Local Admin Detection Solution.|
 
 ## Dependencies
 
-- [Solution - Get Local Administrators](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
 
 ## Creation Process
 

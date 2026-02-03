@@ -17,7 +17,7 @@ This Group includes Windows machines which are opted for Local Administrator Det
 - [Custom Field - Enable Local Admins Detection  ](/docs/219923f8-62e6-401a-9693-678b44325708) 
 - [Custom Field - Exclude Local Admin Detection ](/docs/e988aefc-1f5d-4d10-a66b-cf22e084ae72)  
 - [Custom Field - Exclude Local Admin Detection ](/docs/18aa25e5-61cd-429d-ab09-44b7cf6eb10e) 
-- [Solution - Get Local Administrators](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6)
 
 ## Group Creation
 

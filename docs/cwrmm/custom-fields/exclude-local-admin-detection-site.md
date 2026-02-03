@@ -21,7 +21,7 @@ Select this Custom Field to exclude the Site from Local Admin Detection Solution
 
 ## Dependencies
 
-- [Solution - Get Local Administrators](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
 
 ## Creation Process
 

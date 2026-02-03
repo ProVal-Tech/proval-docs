@@ -20,8 +20,8 @@ This Script lists the local administrators on windows machine and stores the res
 ![Sample Run 2](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image2.webp)
 
 ## Dependencies
-- [Custom Field - Localgroup Admins  ](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d) 
-- [Solution - Get Local Administrators](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+- [Custom Field - Local Admins List](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d) 
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
 
 ## Task Creation
 

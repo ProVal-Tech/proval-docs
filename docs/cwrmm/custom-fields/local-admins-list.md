@@ -1,8 +1,8 @@
 ---
 id: '03f2a420-5c70-4078-8b71-dc0fd7f6895d'
 slug: /03f2a420-5c70-4078-8b71-dc0fd7f6895d
-title: 'Localgroup Admins'
-title_meta: 'Localgroup Admins'
+title: 'Local Admins List'
+title_meta: 'Local Admins List'
 keywords: ['Local','Administators','Localgroup','Admins','Windows']
 description: 'This custom field contains the List of Local Group Admins on the machine fetched by Get Local Administrators Task.'
 tags: ['security', 'setup', 'windows']
@@ -17,11 +17,11 @@ This custom field contains the List of Local Group Admins on Windows machines fe
 
 | Name                 | Level                | Type                | Default?         | Required | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Localgroup Admins    | Endpoint | Text | blank | False | Yes  | This custom field contains the List of Local Group Admins on the machine fetched by Get Local Administrators Task. |
+| Local Admins List   | Endpoint | Text | blank | False | Yes  | This custom field contains the List of Local Group Admins on the machine fetched by Get Local Administrators Task. |
 
 ## Dependencies
 
-- [Solution - Get Local Administrators](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
 - [Task - Get Local Administrators](/docs/11f555cc-79ab-464f-87af-b46c324990ee) 
 
 
