@@ -16,7 +16,8 @@ This monitor performs the auto deployment of the Network Glue Collector. It depe
 
 ## Dependencies
 
-[Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)
+- [Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)
+- [Solution - Application - Network Glue Collector](/docs/2aceee46-2a96-465d-929d-85de69811a3a) 
 
 ## EDFs
 
