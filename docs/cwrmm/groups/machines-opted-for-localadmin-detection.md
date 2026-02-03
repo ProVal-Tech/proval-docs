@@ -1,17 +1,17 @@
 ---
 id: 'e1cb7e20-f09c-4350-a496-db920efa6530'
 slug: /e1cb7e20-f09c-4350-a496-db920efa6530
-title: 'Machines Opted for LocalAdmin Detection'
-title_meta: 'Machines Opted for LocalAdmin Detection'
-keywords: ['Local','Administators','Localgroup','Admins','Windows']
-description: 'This Group includes windows machines which are opted for LocalGroup Administrator Detection Solution.'
+title: 'Machines Opted for Local Admin Detection'
+title_meta: 'Machines Opted for Local Admin Detection'
+keywords: ['local','administators','localgroup','admins','windows']
+description: 'This Group includes windows machines which are opted for Local Administrator Detection Solution.'
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 ---
 
 ## Summary
-This Group includes Windows machines which are opted for Local Administrator Detection Solution.
+This group includes Windows machines which are opted for Local Administrator Detection Solution.
 
 ## Dependencies
 - [Custom Field - Enable Local Admins Detection  ](/docs/219923f8-62e6-401a-9693-678b44325708) 
@@ -36,8 +36,8 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-- **Group Name:** `Machines Opted for LocalAdmin Detection`  
-- **Description:** `This Group includes Windows machines which are opted for LocalGroup Administrator Detection Solution.`
+- **Group Name:** `Machines Opted for Local Admin Detection`  
+- **Description:** `This Group includes Windows machines which are opted for Local Administrator Detection Solution.`
 
 ![Summary](../../../static/img/docs/e1cb7e20-f09c-4350-a496-db920efa6530/image1.webp)
 

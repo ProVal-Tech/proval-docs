@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This Script lists the local administrators on windows machine and stores the result in a custom field.
+This task lists the local administrators on windows machine and stores the result in a custom field [Local Admins List](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d).
 
 ## Sample Run
 
@@ -44,9 +44,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Get Local Administrators`  
-**Description:** `This Script lists the local administrators on windows machine and stores the result in a custom field.`  
-**Category:** `Custom`
+- **Name:** `Get Local Administrators`  
+- **Description:** `This script lists the local administrators on windows machine and stores the result in a custom field "Local Admins List".`  
+- **Category:** `Custom`
 
 ![Summary](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image3.webp)
 
@@ -58,7 +58,7 @@ Click the `Add Row` button in the `Script Editor` section to start creating the 
 A blank function will appear:  
 ![BlankFunction](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)
 
-#### Step 1: Row -> PowerShell script
+#### Row 1 Function: PowerShell script
 
 - **Use Generative AI Assist for script creation:** `False`  
 - **Expected time of script execution in seconds:** `900`  
@@ -95,7 +95,7 @@ catch {
 ```
 ![image4](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image4.webp)
 
-#### Step 2: Row -> Script Log
+#### Row 2 Function: Script Log
 
 - **Script Log Message:** `%Output%`  
 - **Continue on Failure:** `False`  
@@ -103,7 +103,11 @@ catch {
 
 ![Image5](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image5.webp)
 
-#### Step 3a: Condition -> Output Contains ( Detected Updates: )
+#### Step 3 Logic: If/Then
+
+Click on `Add Logic` > select `If/Then`
+
+#### Row 3a Condition: Output Contains
 
 - **Condition:** `Output`  
 - **Operator:** `Does not Contain`  
@@ -111,9 +115,9 @@ catch {
 
 ![Image6](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image6.webp)
 
-#### Step 3b: Row -> Set Custom Field
+#### Row 3b Function: Set Custom Field
 
-- Select `LocalGroup Admins` from dropdown
+- Select `Local Admins List` from dropdown
 - Add `%output%` in the Value
 
 ![Image7](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image7.webp)
@@ -135,7 +139,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### Task Details
 
 - **Name:** `Get Local Administrators`  
-- **Description:** `This Script lists the local administrators on windows machine and stores the result in a custom field.`  
+- **Description:** `This script lists the local administrators on windows machine and stores the result in a custom field "Local Admins List".`  
 - **Category:** `Custom`
 
 ![Image9](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image9.webp)
@@ -152,7 +156,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Targeted Resource
 
-**Device Group:** `Machines Opted for LocalAdmin Detection`
+**Device Group:** `Machines Opted for Local Admin Detection`
 
 ![Image11](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image11.webp)
 

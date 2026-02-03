@@ -3,21 +3,21 @@ id: '219923f8-62e6-401a-9693-678b44325708'
 slug: /219923f8-62e6-401a-9693-678b44325708
 title: 'Enable Local Admins Detection'
 title_meta: 'Enable Local Admins Detection'
-keywords: ['Local','Administators','Localgroup','Admins','Windows']
+keywords: ['local','administators','localgroup','admins','windows']
 description: 'Select this custom field to list all Local administrator on windows machines.'
 tags: ['security', 'setup', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-Select this custom field to list all Local administrator on windows machines.
+Select this custom field at company level to list all Local administrator on windows machines.
 
 ## Details
 
-| Name                 | Level                | Type                | Default       | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Enable Local Admins Detection| Company | Flag | No | False | Yes   | Select this custom field to list all Local administrator on windows machines. |
+| Name                 | Level                | Type                | Default       |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| Enable Local Admins Detection| Company | Flag | No | Yes   | Select this custom field to list all Local administrator on windows machines. |
 
 ## Dependencies
 

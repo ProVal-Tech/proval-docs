@@ -3,21 +3,21 @@ id: 'e988aefc-1f5d-4d10-a66b-cf22e084ae72'
 slug: /e988aefc-1f5d-4d10-a66b-cf22e084ae72
 title: 'Exclude Local Admin Detection'
 title_meta: 'Exclude Local Admin Detection'
-keywords: ['Local','Administators','Localgroup','Admins','Windows']
+keywords: ['local','administators','localgroup','admins','windows']
 description: 'Select this Custom Field to exclude the Site from Local Admin Detection Solution'
 tags: ['security', 'setup', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-Select this Custom Field to exclude the Site from Local Admin Detection Solution.
+Select this custom field to exclude the Site from Local Administrator Detection Solution.
 
 ## Details
 
-| Name                 | Level                | Type                | Default       | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Exclude Local Admin Detection | Site | Checkbox | No | False | Yes   | Select this Custom Field to exclude the Site from Local Admin Detection Solution.|
+| Name                 | Level                | Type                | Default       |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| Exclude Local Admin Detection | Site | Checkbox | No | Yes   | Select this custom field to exclude the Site from Local Administrator Detection Solution.|
 
 ## Dependencies
 

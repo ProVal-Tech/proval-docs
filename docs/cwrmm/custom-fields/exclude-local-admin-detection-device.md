@@ -3,21 +3,21 @@ id: '18aa25e5-61cd-429d-ab09-44b7cf6eb10e'
 slug: /18aa25e5-61cd-429d-ab09-44b7cf6eb10e
 title: 'Exclude Local Admin Detection'
 title_meta: 'Exclude Local Admin Detection'
-keywords: ['Local','Administators','Localgroup','Admins','Windows']
+keywords: ['local','administators','localgroup','admins','windows']
 description: 'Select this Custom Field to exclude an endpoint from Local Admin Detection Solution'
 tags: ['security', 'setup', 'windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-Select this Custom Field to exclude an endpoint from Local Admin Detection Solution.
+Select this custom field to exclude an endpoint from Local Administrator Detection Solution.
 
 ## Details
 
-| Name                 | Level                | Type                | Default       | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Exclude Local Admin Detection | Endpoint | Checkbox | No | False | Yes   | Select this Custom Field to exclude an endpoint from Local Admin Detection Solution.|
+| Name                 | Level                | Type                | Default       |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| Exclude Local Admin Detection | Endpoint | Checkbox | No | Yes   | Select this custom field to exclude an endpoint from Local Administrator Detection Solution.|
 
 ## Dependencies
 
