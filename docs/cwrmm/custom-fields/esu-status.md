@@ -20,6 +20,10 @@ Stores the result from the ESU Audit script.
 |------------|----------|--------|-----------|----------|----------|---------------------------------------------|
 | ESU Status | Endpoint | Text   | blank     | False    | No       | Stores the result from the ESU Audit script |
 
+## Dependencies
+
+- [Solution - Windows 10 ESU Licensing and Auditing](/docs/a7e4073e-1f09-4772-aa5e-ee44cf9bf9e7)
+
 ## Creation Process
 
 ### Step 1
