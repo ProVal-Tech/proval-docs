@@ -1,8 +1,8 @@
 ---
 id: d1e6fcec-f2c0-4982-ad58-279771e93a30
 slug: /d1e6fcec-f2c0-4982-ad58-279771e93a30
-title: 'Bloomberg Terminal 2.0 Deployment'
-title_meta: 'Bloomberg Terminal 2.0 Deployment'
+title: 'Bloomberg Terminal Deployment'
+title_meta: 'Bloomberg Terminal Deployment'
 keywords: ['software', 'installation', 'uninstallation', 'bloomberg', 'terminal']
 description: 'This installs the Bloomberg using the latest build sotr183_4_81_lite.exe'
 tags: ['software', 'installation', 'uninstallation']

@@ -13,6 +13,11 @@ unlisted: false
 ## Description
 
 This script assists in performing the `Cyber PowerPanel Personal` installation and uninstallation.
-It performs the auto-upgrade using dynamic deployment.
+
+**NOTE:** 
+- Please use the latest version download URL while configuring this Software in ImmyBot. 
+- This application does not have a static latest version download URL and it changes with every version. 
+- Version Reference: https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-personal-windows/
+
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/cyber-powerpanel-personal-deployment.toml)
