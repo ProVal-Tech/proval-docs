@@ -34,7 +34,11 @@ This solution contains the Network Glue deployment and uninstallation articles.
 2. **Reload the system cache:**
    ![Reload Cache](../../static/img/docs/2aceee46-2a96-465d-929d-85de69811a3a/image_1.webp)
 
+
 3. **Configure the solution as outlined below:**
+   - Navigate to Automation → scripts within the CWA Control Center and set up the following:
+     - [Script - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a) 
+       - Debug the script against any machine by setting the parameter "Set_Environment" equals to 1 to create the EDFs related to solution.
    - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09)  
        - Set up with the "△ Custom - Execute Script - Network Glue Collector - Install" Alert Template
