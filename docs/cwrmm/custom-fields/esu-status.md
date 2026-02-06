@@ -16,9 +16,9 @@ Stores the result from the ESU Audit script.
 
 ## Details
 
-| Name       | Level    | Type   | Default?  | Required | Editable | Description                                 |
-|------------|----------|--------|-----------|----------|----------|---------------------------------------------|
-| ESU Status | Endpoint | Text   | blank     | False    | No       | Stores the result from the ESU Audit script |
+| Name       | Level    | Type   | Default  | Editable | Description                                 |
+|------------|----------|--------|----------|----------|---------------------------------------------|
+| ESU Status | Endpoint | Text Box  |        | No       | Stores the result from the ESU Audit script |
 
 ## Dependencies
 

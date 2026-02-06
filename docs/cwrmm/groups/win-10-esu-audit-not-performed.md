@@ -3,10 +3,10 @@ id: 'afcaeb5a-d0e5-4f5e-b24f-c0aeaec22f3e'
 slug: /afcaeb5a-d0e5-4f5e-b24f-c0aeaec22f3e
 title: 'Win 10 ESU Audit Not Performed'
 title_meta: 'Win 10 ESU Audit Not Performed'
-keywords: ['ESU','extended security','windows']
-description: 'This contains the list of Windows 10 22H2 machines where the auditing script hasnt yet executed.'
+keywords: ['esu','extended security','windows']
+description: 'This contains the list of Windows 10 22H2 machines where the auditing script has not yet executed.'
 tags:  ['auditing','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -35,9 +35,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Win 10 ESU Audit Not Performed`   
-**Category:** `Auditing`  
-**Description:** `This contains the list of Windows 10 22H2 machines where the auditing script hasn't yet executed.`
+- **Group Name:** `Win 10 ESU Audit Not Performed`   
+- **Category:** `Auditing`  
+- **Description:** `This contains the list of Windows 10 22H2 machines where the auditing script hasn't yet executed.`
 
 ![Summary](../../../static/img/docs/afcaeb5a-d0e5-4f5e-b24f-c0aeaec22f3e/image1.webp)
 

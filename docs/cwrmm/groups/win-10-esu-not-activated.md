@@ -3,10 +3,10 @@ id: '4673c9d2-881d-43a1-b455-5d3b3cf0ae4d'
 slug: /4673c9d2-881d-43a1-b455-5d3b3cf0ae4d
 title: 'Win10 ESU Not Activated'
 title_meta: 'Win10 ESU Not Activated'
-keywords: ['ESU','extended security','windows']
+keywords: ['esu','extended security','windows']
 description: 'This contains the list of machines where the script detects that the ESU license was not activated.'
 tags:  ['auditing','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -35,9 +35,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Win10 ESU Not Activated`   
-**Category:** `Auditing`  
-**Description:** `This contains the list of machines where the script detects that the ESU license was not activated.`
+- **Group Name:** `Win10 ESU Not Activated`   
+- **Category:** `Auditing`  
+- **Description:** `This contains the list of machines where the script detects that the ESU license was not activated.`
 
 ![Summary](../../../static/img/docs/4673c9d2-881d-43a1-b455-5d3b3cf0ae4d/image1.webp)
 

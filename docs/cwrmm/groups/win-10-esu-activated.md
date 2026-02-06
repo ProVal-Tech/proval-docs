@@ -3,10 +3,10 @@ id: '198ac207-0426-4c7f-afeb-7fa84b599b6c'
 slug: /198ac207-0426-4c7f-afeb-7fa84b599b6c
 title: 'Win 10 ESU Activated'
 title_meta: 'Win 10 ESU Activated'
-keywords: ['ESU','extended security','windows']
+keywords: ['esu','extended security','windows']
 description: 'This contains the list of Windows 10 devices where the ESU is activated.'
 tags:  ['auditing','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -35,9 +35,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Win10 ESU Activated`   
-**Category:** `Auditing`  
-**Description:** `This contains the list of Windows 10 devices where the ESU is activated.`
+- **Group Name:** `Win10 ESU Activated`   
+- **Category:** `Auditing`  
+- **Description:** `This contains the list of Windows 10 devices where the ESU is activated.`
 
 ![Summary](../../../static/img/docs/198ac207-0426-4c7f-afeb-7fa84b599b6c/image1.webp)
 

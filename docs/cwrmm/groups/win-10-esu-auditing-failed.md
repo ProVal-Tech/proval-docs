@@ -3,10 +3,10 @@ id: 'a3f30225-91ac-46f7-b616-cb42aedb49d8'
 slug: /a3f30225-91ac-46f7-b616-cb42aedb49d8
 title: 'Win 10 ESU Auditing Failed'
 title_meta: 'Win 10 ESU Auditing Failed'
-keywords: ['ESU','extended security','windows']
+keywords: ['esu','extended security','windows']
 description: 'This contains the list of machines where the ESU license detection script failed.'
 tags:  ['auditing','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -35,9 +35,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Win 10 ESU Auditing Failed`   
-**Category:** `Auditing`  
-**Description:** `This contains the list of machines where the ESU license detection script failed.`
+- **Group Name:** `Win 10 ESU Auditing Failed`   
+- **Category:** `Auditing`  
+- **Description:** `This contains the list of machines where the ESU license detection script failed.`
 
 ![Summary](../../../static/img/docs/a3f30225-91ac-46f7-b616-cb42aedb49d8/image1.webp)
 

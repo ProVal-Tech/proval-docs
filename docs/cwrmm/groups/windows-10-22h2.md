@@ -3,15 +3,15 @@ id: '558a6a3d-b543-4267-96fc-76f0c9a13e68'
 slug: /558a6a3d-b543-4267-96fc-76f0c9a13e68
 title: 'Windows 10 22H2'
 title_meta: 'Windows 10 22H2'
-keywords: ['ESU','extended security','windows']
+keywords: ['esu','extended security','windows']
 description: 'Group of Windows 10 22H2 machines.'
 tags:  ['auditing','windows']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-This group contains Windows 10 22H2 machines. The "ESU License Activation Detection" script is executed on this group for auditing.
+This group contains Windows 10 22H2 machines. The [ESU License Activation Detection](/docs/fad37673-34ab-46e9-8797-b87058f79faa) script is executed on this group for auditing.
 
 ## Dependencies
 
@@ -34,9 +34,9 @@ This page will appear after clicking on the `Dynamic Group` button:
 
 ### Step 3
 
-**Group Name:** `Windows 10 22H2` 
-**Category:** `Auditing`  
-**Description:** `Group of Windows 10 22H2 machines. The "ESU License Activation Detection" script is executed on this group for auditing.`
+- **Group Name:** `Windows 10 22H2` 
+- **Category:** `Auditing`  
+- **Description:** `Group of Windows 10 22H2 machines. The "ESU License Activation Detection" script is executed on this group for auditing.`
 
 ![Summary](../../../static/img/docs/558a6a3d-b543-4267-96fc-76f0c9a13e68/image1.webp)
 

@@ -3,7 +3,7 @@ id: 'fad37673-34ab-46e9-8797-b87058f79faa'
 slug: /fad37673-34ab-46e9-8797-b87058f79faa
 title: 'ESU License Activation Detection'
 title_meta: 'ESU License Activation Detection'
-keywords: ['ESU','extended security']
+keywords: ['esu','extended security']
 description: 'This script performs the checks for the ESU license activation detection.'
 tags: ['auditing','licensing','patching','windows']
 draft: false
@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-This script performs the checks for the ESU license activation detection and stores the info in the device-level custom field "ESU Status".
+This script performs the checks for the ESU license activation detection and stores the info in the device-level custom field [ESU Status](/docs/90f075dc-5997-4abe-8a89-c46c6d566de0).
 
 ## Sample Run
 
@@ -19,7 +19,7 @@ This script performs the checks for the ESU license activation detection and sto
 
 ## Dependencies
 
-- [CW RMM - Custom Field - ESU Status](/docs/90f075dc-5997-4abe-8a89-c46c6d566de0)
+- [Custom Field - ESU Status](/docs/90f075dc-5997-4abe-8a89-c46c6d566de0)
 - [Solution - Windows 10 ESU Licensing and Auditing](/docs/a7e4073e-1f09-4772-aa5e-ee44cf9bf9e7)
 
 ## Task Creation
@@ -43,9 +43,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `ESU License Activation Detection`  
-**Description:** `This script performs the checks for the ESU license activation detection and stores the info in the device-level custom field "ESU Status"`  
-**Category:** `Data Collection`
+- **Name:** `ESU License Activation Detection`  
+- **Description:** `This script performs the checks for the ESU license activation detection and stores the info in the device-level custom field "ESU Status"`  
+- **Category:** `Data Collection`
 
 ![Description](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image1.webp) 
 
@@ -169,10 +169,7 @@ A blank function will appear.
 
 Search and select the `Script Log` function.  
 ![Script Log Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_19.webp)  
-![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.webp)  
-
-The following function will pop up on the screen:  
-![Script Log Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_21.webp)  
+![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.webp)    
 
 In the script log message, simply type `%output%` and click the `Save` button.  
 ![Script Log Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_22.webp)  
@@ -217,7 +214,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### Task Details
 
 - **Name:** `ESU License Activation Detection`  
-- **Description:** `This script lists the local administrators on windows machine and stores the result in a custom field "Local Admins List".`  
+- **Description:** `This script performs the checks for the ESU license activation detection and stores the info in the device-level custom field "ESU Status".`  
 - **Category:** `Custom`
 
 ![Description](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image5.webp) 

@@ -3,7 +3,7 @@ id: '69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b'
 slug: /69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b
 title: 'Windows 10 ESU License Upgrade'
 title_meta: 'Windows 10 ESU License Upgrade'
-keywords: ['ESU','extended security']
+keywords: ['esu','extended security']
 description: 'This script applies Extended Security Updates (ESU) license for Windows 10 22H2 systems'
 tags: ['auditing','licensing','patching','windows']
 draft: false
@@ -51,9 +51,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Windows 10 ESU License Upgrade`  
-**Description:** `<Applies Extended Security Updates (ESU) license for Windows 10 22H2 systems through CW RMM. The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date.`  
-**Category:** `Patching`
+- **Name:** `Windows 10 ESU License Upgrade`  
+- **Description:** `Applies Extended Security Updates (ESU) license for Windows 10 22H2 systems through CW RMM. The Windows 10 Extended Security Updates program provides critical security patches for up to three years beyond the official end of support date.`  
+- **Category:** `Patching`
 
 ![Description](../../../static/img/docs/69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b/image1.webp)
 
