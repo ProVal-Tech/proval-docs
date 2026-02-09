@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This script verifies whether NTLM v1.1 is enabled on the target machine.
+This script verifies whether NTLM v1.1 is enabled on the target machine and updates the custom field [cPVAL NTLMv1.1 Status](/docs/61a0c2de-fefe-4726-b24e-957a2582117c).
 
 ## Sample Run
 

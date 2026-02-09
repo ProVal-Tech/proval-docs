@@ -23,6 +23,6 @@ Executes Microsoft 365 - Click-to-Run - Get Details(MAC) script on mac machines
 - [Solution - Microsoft 365 - Click-to-Run - Get Details](/docs/f493756c-e4e0-4aba-af87-9aef14f389aa) 
 - [Microsoft 365 - Click-to-Run - Get Details(MacOS)](/docs/1e24bd19-0b8b-4456-a3ba-e5dad5caebda)
 
-## Condition Creation
+## Scheduled Automations Creation
 
-[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/execute-microsoft-365-click-to-run-get-details-mac.toml)
+[Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/execute-microsoft-365-click-to-run-get-details-mac.toml)

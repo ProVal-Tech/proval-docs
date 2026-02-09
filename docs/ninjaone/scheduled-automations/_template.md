@@ -14,12 +14,12 @@ unlisted: false
 
 ## Details
 
-**Name:**  
-**Description:**  
-**Recommended Agent Policies:**  
+- **Name:**  
+- **Description:**  
+- **Recommended Agent Policies:**  
 
 ## Dependencies
 
-## Condition Creation
+## Scheduled Automations Creation
 
-[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/_template.toml)
+[Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/_template.toml)

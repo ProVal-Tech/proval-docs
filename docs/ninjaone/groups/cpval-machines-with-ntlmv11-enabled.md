@@ -21,6 +21,8 @@ This includes the machines where NTLMv1.1 is enabled.
 
 ## Dependencies
 
+- [Solution - NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
+
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-machines-with-ntlmv11-enabled.toml)
