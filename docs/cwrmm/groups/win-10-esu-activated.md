@@ -15,7 +15,7 @@ This contains the list of Windows 10 devices where the ESU is activated.
 
 ## Dependencies
 
-- [Task : ESU License Activation Detection](/docs/fad37673-34ab-46e9-8797-b87058f79faa) 
+- [Task - ESU License Activation Detection](/docs/fad37673-34ab-46e9-8797-b87058f79faa) 
 - [Solution - Windows 10 ESU Licensing and Auditing](/docs/a7e4073e-1f09-4772-aa5e-ee44cf9bf9e7)
 
 ## Group Creation
