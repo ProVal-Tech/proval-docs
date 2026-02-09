@@ -26,8 +26,8 @@ Applies Extended Security Updates (ESU) license for Windows 10 22H2 systems thro
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| ESU Key | xxxxx-xxxxx-xxxxx-xxxxx-xxxxx | | False | | String/Text | Provide the ESU license key for activation of Windows 10 extended use. |
-| ESU Year | 2 | 1, 2, or 3 | False | | Number Value | Select the license key year validation like 1, 2, or 3. |
+| ESU Key | xxxxx-xxxxx-xxxxx-xxxxx-xxxxx | | True | | String/Text | Provide the ESU license key for activation of Windows 10 extended use. |
+| ESU Year | 2 | 1, 2, or 3 | True | | Number Value | Select the license key year validation like 1, 2, or 3. |
 
 
 ## Task Creation
@@ -68,7 +68,7 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 - Set `ESUKey` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
-- Disable the `Required Field` button.
+- Enable the `Required Field` button.
 - Click the `Save` button.
 
 ![ESUKey ](../../../static/img/docs/69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b/image2.webp)
@@ -78,7 +78,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 - Set `ESUYear` in the `Parameter Name` field.
 - Select `Number Value` from the `Parameter Type` dropdown menu.
-- Disable the `Required Field` button.
+- Enable the `Required Field` button.
 - Click the `Save` button.
 
 ![ESUYear](../../../static/img/docs/69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b/image3.webp)
@@ -94,12 +94,11 @@ A blank function will appear:
 #### Row 1 Function: `PowerShell Script`
 
 Search and select the `PowerShell Script` function.  
-
-![PowerShell Function Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_13.webp)  
-![PowerShell Function Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_14.webp)  
+ 
+![PowerShell Function Selected](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_15.webp)  
+![PowerShell Function Example](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.webp)   
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `900` seconds. Click the `Save` button.
 
@@ -302,25 +301,22 @@ if ($activationIDString -match [Regex]::Escape($activationID) -and $licenseStatu
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
+![Add Row](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.webp)  
+![Blank Function](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_19.webp)  
-![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.webp)  
-
-The following function will pop up on the screen:  
-![Script Log Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_21.webp)  
+![Script Log Search](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.webp)  
+ 
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Script Log Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_22.webp)  
+![Script Log Save](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp) 
 
 ### Row 3 Script: ESU License Activation Detection
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
+![Add Row](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)  
 
 A blank function will appear.  Change Function to Script from the dropdown.  
 ![Blank Script](../../../static/img/docs/69b669a7-e440-4f37-a4d5-1e4d8d4b1c4b/image5.webp)

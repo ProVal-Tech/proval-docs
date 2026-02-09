@@ -18,7 +18,7 @@ Stores the result from the ESU Audit script.
 
 | Name       | Level    | Type   | Default  | Editable | Description                                 |
 |------------|----------|--------|----------|----------|---------------------------------------------|
-| ESU Status | Endpoint | Text Box  |        | No       | Stores the result from the ESU Audit script |
+| ESU Status | Endpoint | Text Box  |    Not Detected    | No       | Stores the result from the ESU Audit script |
 
 ## Dependencies
 
@@ -44,4 +44,4 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 
-![Image1](../../../static/img/docs/esu-status/image.png)
+![Step3](../../../static/img/docs/90f075dc-5997-4abe-8a89-c46c6d566de0/image.webp)

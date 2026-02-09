@@ -60,12 +60,11 @@ A blank function will appear:
 #### Row 1 Function: `PowerShell Script`
 
 Search and select the `PowerShell Script` function.  
-
-![PowerShell Function Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_13.webp)  
-![PowerShell Function Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_14.webp)  
+ 
+![PowerShell Function Selected](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.webp)  
 
 The following function will pop up on the screen:  
-![PowerShell Function Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_15.webp)  
+![PowerShell Function Example](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankpowershellfunction.webp)  
 
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `300` seconds. Click the `Save` button.
 
@@ -162,37 +161,38 @@ return $value
 ### Row 2 Function: Script Log
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 1](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
+![Add Row](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.webp)  
+![Blank Function](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)  
 
 Search and select the `Script Log` function.  
-![Script Log Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_19.webp)  
-![Script Log Selected](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_20.webp)    
+![Script Log Search](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.webp)  
+ 
 
 In the script log message, simply type `%output%` and click the `Save` button.  
-![Script Log Save](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_22.webp)  
+![Script Log Save](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp)  
 
 ### Row 3 Function: Set Custom Field
 
 Add a new row by clicking the `Add Row` button.  
-![Add Row Step 2](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_17.webp)  
+![Add Row](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addrow.webp)  
 
 A blank function will appear.  
-![Blank Function](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_18.webp)  
+![Blank Function](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blankfunction.webp)  
 
 Search and select the `Set Custom Field` function.  
-![Set Custom Field Search](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_23.webp)  
+![Set Custom Field Search](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addsetcustomfieldfunction.webp)  
 
 The following function will pop up on the screen:  
-![Set Custom Field Example](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_24.webp)  
+![Set Custom Field Example](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/blanksetcustomfieldfunction.webp)  
 
 - Search and select the Computer-Level Custom Field `ESU Status` from the Custom Field dropdown menu.
 - Set `%Output%` in the `Value` field.
 - Click the `Save` button.
 
-![Set Custom Field Save 1](../../../static/img/docs/esu-audit/image-3.png)
+![Set Custom Field Save 1](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image10.webp)  
+
 ![Set Custom Field Save 2](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image3.webp) 
 
 ## Save Task
