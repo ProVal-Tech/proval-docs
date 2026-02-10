@@ -62,12 +62,12 @@ Create the following automations:
 Create the following Compound conditions:
 
 Create the  [Threatlocker Depoyment - Windows](/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28) compound condition for both default agent policies: `Windows Server [Default]` and `Windows Workstation [Default]`. The example in the [document](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) illustrates the deployment process for the `Windows Workstations [Default]` agent policy. It is also recommended to apply this compound condition to the `Windows Server [Default]` agent policy, following the same process.  
-![Image1](../../static/img/docs/e0ad73d2-fcab-43f0-9866-72a48623ef48/image1.webp)
+
 
 ### Step 4
 
 Create the [Threatlocker Deployment - MAC](/docs/73470264-63c3-43d1-a727-1e813cfe768d) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/6e7c65c3-3a14-433e-9cbb-617674c1aff0) illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
-![Image2](../../static/img/docs/e0ad73d2-fcab-43f0-9866-72a48623ef48/image2.webp)
+
 
 ## FAQ
 
