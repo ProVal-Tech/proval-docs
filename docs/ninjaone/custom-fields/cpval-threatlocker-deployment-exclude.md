@@ -11,6 +11,7 @@ unlisted: false
 ---
 
 ## Summary
+
 Enable this custom field to exclude the location or device from Threatlocker Deployment.
 
 ## Details
@@ -19,8 +20,8 @@ Enable this custom field to exclude the location or device from Threatlocker Dep
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
 | cPVAL Threatlocker Deployment - Exclude | cpvalThreatlockerDeploymentExclude| `Device`, `Location` | drop-down | `Yes`, `No` | `No` | False | Editable | Read/Write | Read/Write | Enable this custom field to exclude the location or device from Threatlocker Deployment. | Default is `No` | cPVAL Huntress Install - Exclude |
 
-
 ## Dependencies
+
 - [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)  
 - [Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)  
 - [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)  

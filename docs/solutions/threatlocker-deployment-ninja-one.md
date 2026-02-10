@@ -19,11 +19,12 @@ This solution is designed to configure the automatic deployment of the Threatloc
 ### Custom Field
 
 | Content | Type | Function |
-| ------- | ----  -------- |
-|[cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2) | custom field | Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level. |
-| [cPVAL Threatlocker Auth Key](/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a) | custom field| Stores the Threatlocker authorization key for Windows machines. |
-| [cPVAL Threatlocker Organization Name](/docs/573751d4-0648-4da9-8ec3-0ab96d4730de)  | custom field | Fill it with the organization name under which the Threatlocker agent is to be installed in Threatlocker Portal |
-| [cPVAL ThreatLocker Mac GroupKey](/docs/8305e5b2-41ee-44bb-848e-758ac72b185f) | custom field | Stores one or more tags, separated by commas (optional).|
+|--------|------|----------|
+| [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2) | Custom Field | Enables ThreatLocker auto-deployment for Windows-only or both Windows and macOS machines at the organization level. |
+| [cPVAL Threatlocker Auth Key](/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a) | Custom Field | Stores the ThreatLocker authorization key for Windows machines. |
+| [cPVAL Threatlocker Organization Name](/docs/573751d4-0648-4da9-8ec3-0ab96d4730de) | Custom Field | Stores the organization name under which the ThreatLocker agent will be installed in the ThreatLocker portal. |
+| [cPVAL ThreatLocker Mac GroupKey](/docs/8305e5b2-41ee-44bb-848e-758ac72b185f) | Custom Field | Stores the macOS GroupKey used to assign devices to the appropriate ThreatLocker policy group. |
+
 
 ### Automation
 

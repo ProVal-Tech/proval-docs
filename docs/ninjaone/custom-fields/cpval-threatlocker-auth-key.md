@@ -4,7 +4,7 @@ slug: /0ff9eab8-6df8-4154-9ecc-4f5bdedd648a
 title: 'cPVAL Threatlocker Auth Key'
 title_meta: 'cPVAL Threatlocker Auth Key'
 keywords: ['Threatlocker','windows','GroupKey','Deployment']
-description: 'Threatlocker Authentication Key to deploy threatlocker Agent on windows machines'
+description: 'Threatlocker Authentication Key to deploy threatlocker Agent on windows machines.'
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
@@ -23,7 +23,7 @@ Threatlocker Authentication Key to deploy threatlocker Agent on windows machines
 ## Dependencies
 
 - [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)
-- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019) 
+- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Custom Field Creation
 
