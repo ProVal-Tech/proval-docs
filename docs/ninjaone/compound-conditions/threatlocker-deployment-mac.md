@@ -6,7 +6,7 @@ title_meta: 'Threatlocker Deployment - MAC'
 keywords: ['Threatlocker','MAC','auto-deploy', 'agent-policy']
 description: 'Triggers the auto-deployment script for Threatlocker on Macintosh machines where deployment is enabled'
 tags: ['security','setup','macos']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -28,7 +28,6 @@ Triggers the [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a5
 
 - [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
 - [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2)
-- [cPVAL Threatlocker Deployment - Exclude](/docs/c3329dd9-bdf8-42f6-aacc-bcfde0fa94da)
 - [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Compound Condition Creation

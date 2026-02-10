@@ -26,8 +26,7 @@ Triggers the [Threatlocker Deployment'](/docs/1196b011-bfba-486a-8653-92066f19e5
 ## Dependencies
 
 - [Automation - Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)  
-- [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2) 
-- [cPVAL Threatlocker Deployment - Exclude](/docs/c3329dd9-bdf8-42f6-aacc-bcfde0fa94da) 
+- [cPVAL Threatlocker Deployment](/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2)
 - [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Compound Condition Creation

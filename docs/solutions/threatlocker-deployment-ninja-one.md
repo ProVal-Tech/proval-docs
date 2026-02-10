@@ -29,8 +29,8 @@ This solution is designed to configure the automatic deployment of the Threatloc
 
 | Content | Function | Type |
 | ------- | -------- | ------------- |
-| [Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527) | Installs Threatlocker agent on Windows operating systems.          | Script |
-| [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e) | Installs Threatlocker agent on Macintosh operating systems.  | Script |
+| [Threatlocker Deployment](/docs/11444307-4a3f-4388-b5c5-096a50725b4e) | Installs Threatlocker agent on Windows operating systems.          | Script |
+| [Threatlocker Deployment - MAC](/docs/1196b011-bfba-486a-8653-92066f19e527) | Installs Threatlocker agent on Macintosh operating systems.  | Script |
 
 ### Compound Conditions
 
@@ -54,20 +54,18 @@ Create the following custom fields:
 
 Create the following automations:
 
-- [Threatlocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e527)
-- [Threatlocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
+- [Threatlocker Deployment](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
+- [Threatlocker Deployment - MAC](/docs/1196b011-bfba-486a-8653-92066f19e527)
 
 ### Step 3
 
 Create the following Compound conditions:
 
-Create the  [Threatlocker Depoyment - Windows](/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28) compound condition for both default agent policies: `Windows Server [Default]` and `Windows Workstation [Default]`. The example in the [document](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) illustrates the deployment process for the `Windows Workstations [Default]` agent policy. It is also recommended to apply this compound condition to the `Windows Server [Default]` agent policy, following the same process.  
-
+Create the  [Threatlocker Depoyment - Windows](/docs/d7ba7616-f11d-4961-90fb-9e7cf9ed6f28) compound condition for both default agent policies: `Windows Server [Default]` and `Windows Workstation [Default]`.
 
 ### Step 4
 
-Create the [Threatlocker Deployment - MAC](/docs/73470264-63c3-43d1-a727-1e813cfe768d) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`. The example in the [document](/docs/6e7c65c3-3a14-433e-9cbb-617674c1aff0) illustrates the deployment process for the `Mac [Default]` agent policy. It is also recommended to apply this compound condition to the `Mac Server [Default]` agent policy, following the same process.
-
+Create the [Threatlocker Deployment - MAC](/docs/73470264-63c3-43d1-a727-1e813cfe768d) compound condition for both default agent policies: `Mac Server [Default]` and `Mac [Default]`.
 
 ## FAQ
 
