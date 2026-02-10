@@ -1,8 +1,8 @@
 ---
 id: 'ea1aca74-77ee-4387-91f2-57adb5822737'
 slug: /ea1aca74-77ee-4387-91f2-57adb5822737
-title: 'Active Directory - Plugin User Account - CreateUpdate'
-title_meta: 'Active Directory - Plugin User Account - CreateUpdate'
+title: 'Active Directory - Plugin User Account - Create/Update'
+title_meta: 'Active Directory - Plugin User Account - Create/Update'
 keywords: ['domain', 'admin', 'account', 'active', 'directory', 'plugin']
 description: 'This document outlines a script designed to create or update a domain admin account for the Active Directory plugin, including features for random password generation and troubleshooting capabilities. It is intended for use on domain controllers detected by the Active Directory Domains plugin and includes implementation steps, dependencies, and variable configurations.'
 tags: ['active-directory', 'security', 'setup', 'windows']
@@ -16,7 +16,7 @@ This script will create or update a domain admin account to be used with the AD 
 
 Additionally, there is an option available in the script to set the password as the deployment and default password for the location. This option can be controlled by the system property `AD_Plugin_Set_Location_Default_Password`.
 
-**Intended Target**: Domain Controllers detected in the `Active Directory Domains` plugin. The script is called by the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) monitor as an autofix.
+**Intended Target**: Domain Controllers detected in the `Active Directory Domains` plugin. The script is called by the [Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) internal monitor as an autofix.
 
 ### Notes
 - This script will no longer function on any end-of-life systems, including 2003 Servers, 2008 Servers, 2011 SBS Servers, and 2012 Servers (both regular and R2 editions). Manual management of AD Plugin User Accounts will be necessary for these machines.
@@ -41,7 +41,7 @@ Additionally, there is an option available in the script to set the password as 
 ![Update Step](../../../static/img/docs/ea1aca74-77ee-4387-91f2-57adb5822737/image_2.webp)
 
 - Import the replacement Monitor, Script, and alert template using the ProSync plugin.
-  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) 
+  - [Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) 
   - `△ Custom - Autofix - AD Plugin User - Create/Update`
   - This script 'should' be imported after importing the alert template. Verify it is in the system.
 
@@ -55,7 +55,7 @@ Additionally, there is an option available in the script to set the password as 
 
 **For New Implementation:**
 - Import the New Monitor, Script, and alert template using the ProSync plugin.
-  - [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) 
+  - [Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) 
   - `△ Custom - Autofix - AD Plugin User - Create/Update`
   - This script 'should' be imported after importing the alert template. Verify it is in the system.
 
@@ -66,7 +66,7 @@ Additionally, there is an option available in the script to set the password as 
 
 **Notes:**
 - The user parameters are required for the **first run only** (First run of the updated script).
-- The values set for the user parameters will be used to create system properties used by the script and the [CWM - Automate - Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) monitor set.
+- The values set for the user parameters will be used to create system properties used by the script and the [Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba) monitor set.
 - **If values are not provided** to the user parameters for the first run of the script, the script and the monitor set will then use the default values.
   - Default Password Title: ADPluginUser
   - Default Username: ADPluginUser
@@ -84,7 +84,8 @@ Additionally, there is an option available in the script to set the password as 
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+- [RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+- [Internal Monitor - Active Directory - ADPluginUser - Create/Update](/docs/49c050b4-5319-4ffe-929a-d59429bdd3ba)
 
 ## Variables
 

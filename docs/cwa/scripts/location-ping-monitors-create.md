@@ -46,7 +46,7 @@ This document details the procedure for setting up Remote Monitors for Location 
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
+[Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
 
 ## User Parameters
 

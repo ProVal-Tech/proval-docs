@@ -36,6 +36,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 - It's crucial to follow the specified directory structure and initiate an `iisreset` after placing the tool.
 - The [**`CPUTempMon.exe` tool**](https://proval.itglue.com/attachments/13313008) is attached to this document.
 
+## Dependencies
+
+- [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
+
 ## Sample Run
 
 **First Run:** For the initial run, you must execute the script with the `Set_Environment` parameter set to 1. This is necessary for importing/creating the EDFs and system properties utilized by the solution.
