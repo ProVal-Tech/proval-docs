@@ -21,7 +21,8 @@ It executes `Disable NTLMv1.1` on targeted machines to disable NTLMv1.1 protocol
 ## Details
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
-| Disable NTLMv1.1 | It executes `Disable NTLMv1.1` on targeted machines to disable NTLMv1.1 protocoll | True | Daily | 1 Day | <Current Date> 10:00 AM | Never  | -cPVAL Machines with NTLMv1.1 Enabled | Disable NTLMv1.1 |
+|-----|----|----|-----|----|----|----|----|---|
+| Disable NTLMv1.1 | It executes `Disable NTLMv1.1` automation on targeted machines to disable NTLMv1.1 protocol | True | Daily | 1 Day | (Current Date) 10:00 AM | Never  | `cPVAL Machines with NTLMv1.1 Enabled` group | Disable NTLMv1.1 |
 
 ## Task Creation
 
