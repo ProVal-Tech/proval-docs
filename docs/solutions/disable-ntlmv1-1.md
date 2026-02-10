@@ -1,8 +1,8 @@
 ---
 id: '94b6df2a-8565-4118-b2e7-35a3fe7206dc'
 slug: /94b6df2a-8565-4118-b2e7-35a3fe7206dc
-title: 'NTLMv1.1'
-title_meta: 'NTLMv1.1'
+title: 'Disable NTLMv1.1'
+title_meta: 'Disable NTLMv1.1'
 keywords: ['ntlm', 'protocol', 'windows', 'security', 'domain']
 description: 'The purpose of this solution is to audit the NTLM v1.1 status and disable it on Windows machines where it is enabled.'
 tags: ['networking', 'security', 'windows']
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-The purpose of this solution is to audit the NTLM v1.1 status and disable it on Windows machines where it is enabled.
+The purpose of this NinjaOne solution is to audit the NTLM v1.1 status and disable it on Windows machines where it is enabled.
 
 ## Associated Content
 

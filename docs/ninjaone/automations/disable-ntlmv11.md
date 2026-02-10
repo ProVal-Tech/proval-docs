@@ -20,7 +20,7 @@ This script disables the NTLMv1.1 protocol on the target Windows machine.
 
 ## Dependencies
 
-- [Solution - NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
+- [Solution - Disable NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
 - [Custom Field - cPVAL NTLMv1.1 Status](/docs/61a0c2de-fefe-4726-b24e-957a2582117c) 
 
 ## Automation Setup/Import

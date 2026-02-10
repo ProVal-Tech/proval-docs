@@ -16,7 +16,7 @@ It executes `Disable NTLMv1.1` on targeted machines to disable NTLMv1.1 protocol
 ## Dependencies
 
 - [Automation - Disable NTLMv1.1 ](/docs/6d899921-3e52-4d4f-9f9e-742242b8171a) 
-- [Solution - NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
+- [Solution - Disable NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
 
 ## Details
 

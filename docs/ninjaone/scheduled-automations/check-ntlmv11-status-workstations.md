@@ -22,7 +22,7 @@ This scheduled automation runs "Check NTLMv1.1 Status" automation weekly on work
 ## Dependencies
 
 - [Automation - Check NTLMv1.1 Status ](/docs/597320a1-4278-490d-ad99-0127cace9424)
-- [Solution - NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
+- [Solution - Disable NTLMv1.1 ](/docs/94b6df2a-8565-4118-b2e7-35a3fe7206dc)
 
 ## Scheduled Automations Creation
 
