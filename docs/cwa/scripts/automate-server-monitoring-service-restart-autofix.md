@@ -66,7 +66,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 
 - Check the status of the Monitor Set.
 - Try restarting the service(s).
-- Send an email to [Alerts@provaltech.com](mailto:Alerts@provaltech.com), creating an urgent ticket in ProVal's AutoTask.
+- Send an email to [Alerts@provaltech.com](mailto:Alerts@provaltech.com), creating an urgent ticket in ProVal's Halo.
 
 Please reference the agnostic content documentation for the Service Restart Process.
 

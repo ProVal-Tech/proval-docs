@@ -3,8 +3,8 @@ id: 'a3e17618-1629-4eca-ae93-e70dd47e3496'
 slug: /a3e17618-1629-4eca-ae93-e70dd47e3496
 title: 'Broken Integration'
 title_meta: 'Broken Integration'
-keywords: ['connectwise', 'integration', 'ticket', 'monitor', 'autotask']
-description: 'This document outlines the process to create an urgent ticket in ProVal’s AutoTask Portal for a broken integration between ConnectWise Automate and ScreenConnect. It includes dependencies and target settings for effective monitoring.'
+keywords: ['connectwise', 'integration', 'ticket', 'monitor']
+description: 'This document outlines the process to create an urgent ticket in ProVal’s Halo PSA for a broken integration between ConnectWise Automate and ScreenConnect. It includes dependencies and target settings for effective monitoring.'
 tags: ['connectwise', 'ticketing']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This monitor is intended to create an urgent ticket in ProVal's AutoTask Portal for a broken integration between ConnectWise Automate and ScreenConnect.
+This monitor is intended to create an urgent ticket in ProVal's Halo PSA for a broken integration between ConnectWise Automate and ScreenConnect.
 
 ## Dependencies
 

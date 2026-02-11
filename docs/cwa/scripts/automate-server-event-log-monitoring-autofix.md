@@ -7,7 +7,7 @@ keywords: ['event', 'logs', 'monitoring', 'alert', 'script']
 description: 'This document describes a script designed to monitor unwanted event logs in the Automate Server environment. It provides details on how the script functions, its dependencies, and the process it follows to alert users when unwanted logs are detected.'
 tags: ['email']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
