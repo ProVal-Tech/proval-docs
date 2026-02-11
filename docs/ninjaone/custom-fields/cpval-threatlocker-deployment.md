@@ -3,7 +3,7 @@ id: 'c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2'
 slug: /c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2
 title: 'cPVAL Threatlocker Deployment'
 title_meta: 'cPVAL Threatlocker Deployment'
-keywords: ['Threatlocker','windows','Mac','Deployment']
+keywords: ['threatlocker','windows','mac','deployment']
 description: 'Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level.'
 tags: ['security','setup','windows','macos']
 draft: false
@@ -18,7 +18,7 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 
 | Label | Field Name | Definition Scope | Type | Option Value | Default Value | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
 | ----- | ---------- | ---------------- | ---- | ------------ | ------------- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL Threatlocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstaions and macs`, `windows servers`, `macs`,  | `Disabled` | False | Editable | Read/Write | Read/Write | Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level. |  |  |
+| cPVAL ThreatLocker Deployment | cpvalThreatlockerDeployment | Organization | drop-down | `All`, `Windows`, `Windows and Macintosh`, `Disabled`, `windows workstations`, `windows servers and Macs`, `windows workstaions and macs`, `windows servers`, `macs`,  | `Disabled` | False | Editable | Read/Write | Read/Write | Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh machines at the organization level. |  |  |
 
 ## Dependencies
 

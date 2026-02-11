@@ -1,9 +1,9 @@
 ---
 id: '0ff9eab8-6df8-4154-9ecc-4f5bdedd648a'
 slug: /0ff9eab8-6df8-4154-9ecc-4f5bdedd648a
-title: 'cPVAL Threatlocker Auth Key'
-title_meta: 'cPVAL Threatlocker Auth Key'
-keywords: ['Threatlocker','windows','GroupKey','Deployment']
+title: 'cPVAL ThreatLocker Auth Key'
+title_meta: 'cPVAL ThreatLocker Auth Key'
+keywords: ['threatlocker','windows','groupKey','deployment']
 description: 'Threatlocker Authentication Key to deploy threatlocker Agent on windows machines.'
 tags: ['security','setup','windows']
 draft: false
@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-Threatlocker Authentication Key to deploy threatlocker Agent on windows machines
+Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL Threatlocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | - | - |
+| cPVAL ThreatLocker Auth Key | cPVALThreatlockerAuthKey | Organization | Text | True | - | Editable | Read/Write | Read/Write | Threatlocker Authentication Key to deploy threatlocker Agent on windows machines | - | - |
 
 ## Dependencies
 

@@ -1,10 +1,10 @@
 ---
 id: '11444307-4a3f-4388-b5c5-096a50725b4e'
 slug: /11444307-4a3f-4388-b5c5-096a50725b4e
-title: 'Threatlocker Deployment [MAC]'
-title_meta: 'Threatlocker Deployment [MAC]'
-keywords: ['Threatlocker','MAC','GroupKey','Deployment']
-description: 'This script deploys threatlocker agent on Mac machines'
+title: 'ThreatLocker Deployment [MAC]'
+title_meta: 'ThreatLocker Deployment [MAC]'
+keywords: ['threatlocker','MAC','groupKey','deployment']
+description: 'This script deploys ThreatLocker agent on Mac machines'
 tags: ['security','setup','macos']
 draft: false
 unlisted: false
@@ -12,24 +12,24 @@ unlisted: false
 
 ## Overview
 
-This script deploys threatlocker agent on Mac machines.
+This script deploys ThreatLocker agent on Mac machines.
 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/1196b011-bfba-486a-8653-92066f19e527/samplerun.webp)
+![SampleRun1](../../../static/img/docs/11444307-4a3f-4388-b5c5-096a50725b4e/samplerun.webp)
 
 ## Dependencies
 
 - [cPVAL ThreatLocker Mac GroupKey](/docs/8305e5b2-41ee-44bb-848e-758ac72b185f)
-- [cPVAL Threatlocker Deployment - MAC](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
-- [Solution - Threatlocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
+- [cPVAL ThreatLocker Deployment - MAC](/docs/11444307-4a3f-4388-b5c5-096a50725b4e)
+- [Solution - ThreatLocker Deployment [NinjaOne]](/docs/a1efd808-41ad-4dee-9ea1-ff0c2a36e019)
 
 ## Parameters
 
 | Name |  Required | Default | Type | Description |
 | ---- | -------- | ------- | ---- | ----------- |
-| Threatlocker Mac Groupkey | False  | -- | `String/Text` | Set this variable to override the value stored in the organization-level custom field cPVAL ThreatLocker Mac GroupKey |
+| ThreatLocker Mac Groupkey | False  | -- | `String/Text` | Set this variable to override the value stored in the organization-level custom field cPVAL ThreatLocker Mac GroupKey |
 
 ## Automation Setup/Import
 
