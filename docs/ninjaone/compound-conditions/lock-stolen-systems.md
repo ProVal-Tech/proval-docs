@@ -3,21 +3,21 @@ id: '705b400b-28fc-4c01-95a6-edbf43960122'
 slug: /705b400b-28fc-4c01-95a6-edbf43960122
 title: 'Lock Stolen Systems'
 title_meta: 'Lock Stolen Systems'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'This condition triggers the `Lock Stolen Systems` script on Windows machines where `cPVAL Mark System as Stolen` is selected.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-This condition triggers the [Lock Stolen Systems](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374) script on Windows machines where [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) is selected.
+This compound condition triggers the [Lock Stolen Systems](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374) script on Windows machines where [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) is selected.
 
 
 ## Details
 
 - **Name:** `Lock Stolen Systems`
-- **Description:** `This condition triggers the [Lock Stolen Systems](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374) script on Windows machines where [cPVAL Mark System as Stolen](/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6) is selected.`
+- **Description:** `This condition triggers the "Lock Stolen Systems" script on Windows machines where "cPVAL Mark System as Stolen" is selected.`
 - **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies

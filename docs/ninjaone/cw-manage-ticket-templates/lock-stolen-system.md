@@ -3,10 +3,10 @@ id: 'be59a0a6-33da-4ef2-8baf-848d47ba2ac0'
 slug: /be59a0a6-33da-4ef2-8baf-848d47ba2ac0
 title: 'Lock Stolen System'
 title_meta: 'Lock Stolen System'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'This ticket template configures how a ConnectWise Manage ticket will be generated in response to the `Lock Stolen Systems` condition.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 ---
 

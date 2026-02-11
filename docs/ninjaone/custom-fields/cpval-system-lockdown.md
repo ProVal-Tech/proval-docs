@@ -4,10 +4,10 @@ id: '4b18c9bf-8aea-41a5-8242-77dfcfd0042a'
 slug: /4b18c9bf-8aea-41a5-8242-77dfcfd0042a
 title: 'cPVAL System Lockdown'
 title_meta: 'cPVAL System Lockdown'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'Mark this to lock down the machine once it comes online. `Lock Stolen System` solution will not enable BitLocker and shut down the computer if this is not flagged.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 
 ---

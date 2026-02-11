@@ -3,10 +3,10 @@ id: '0f78be64-557a-4c0e-b7cf-e2ba41e71374'
 slug: /0f78be64-557a-4c0e-b7cf-e2ba41e71374
 title: 'Lock Stolen System'
 title_meta: 'Lock Stolen System'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'This script is used to track and lock down stolen systems. If Custom Field `cPVAL System Lockdown` is marked, it will enable BitLocker and shut down the computer.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 ---
 

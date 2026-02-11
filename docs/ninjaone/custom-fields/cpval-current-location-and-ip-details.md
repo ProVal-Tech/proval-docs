@@ -3,10 +3,10 @@ id: '85cb62ba-6e5f-4235-9964-975af04658d0'
 slug: /85cb62ba-6e5f-4235-9964-975af04658d0
 title: 'cPVAL Current Location and IP Details'
 title_meta: 'cPVAL Current Location and IP Details'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'It stores the Current IP address of the machine. Current city, Current state and Current coordinates of the machine according to the IP address. This custom field is populated by `Lock Stolen System` solution.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 ---
 

@@ -3,10 +3,10 @@ id: '20a99ff3-a63d-4f73-bd48-3bb8d66626e6'
 slug: /20a99ff3-a63d-4f73-bd48-3bb8d66626e6
 title: 'cPVAL Mark System as Stolen'
 title_meta: 'cPVAL Mark System as Stolen'
-keywords: ['Lock','Stolen','System']
+keywords: ['lock','stolen','system']
 description: 'Mark this Custom Field to mark a Computer as stolen. Selecting this, will enable `Lock Stolen System solution` on the machine.'
 tags: ['connectwise']
-draft: False
+draft: false
 unlisted: false
 ---
 
