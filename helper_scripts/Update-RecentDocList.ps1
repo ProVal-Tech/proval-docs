@@ -25,6 +25,85 @@ function Get-FirstH2Summary {
     return ""
 }
 
+function Set-LastUpdateFrontMatter {
+    param(
+        [string]$FilePath,
+        [datetime]$LastCommit
+    )
+
+    if (-not (Test-Path $FilePath)) {
+        return
+    }
+
+    $dateValue = $LastCommit.ToString("yyyy-MM-dd")
+    $lines = Get-Content $FilePath
+
+    if (-not $lines -or $lines.Length -lt 2) {
+        return
+    }
+
+    $startIndex = $lines.IndexOf('---')
+    if ($startIndex -lt 0) {
+        return
+    }
+
+    $endIndex = -1
+    for ($i = $startIndex + 1; $i -lt $lines.Length; $i++) {
+        if ($lines[$i] -eq '---') {
+            $endIndex = $i
+            break
+        }
+    }
+
+    if ($endIndex -lt 0) {
+        return
+    }
+
+    if ($endIndex -le ($startIndex + 1)) {
+        $frontMatter = @()
+    }
+    else {
+        $frontMatter = $lines[(($startIndex + 1))..($endIndex - 1)]
+    }
+    $updatedFrontMatter = @()
+    $lastUpdateFound = $false
+    $skipNextDateLine = $false
+
+    for ($i = 0; $i -lt $frontMatter.Length; $i++) {
+        $line = $frontMatter[$i]
+
+        if ($skipNextDateLine) {
+            if ($line -match '^\s{2}date\s*:') {
+                $updatedFrontMatter += "  date: $dateValue"
+                $skipNextDateLine = $false
+                $lastUpdateFound = $true
+                continue
+            }
+            $skipNextDateLine = $false
+        }
+
+        if ($line -match '^last_update\s*:') {
+            $updatedFrontMatter += 'last_update:'
+            $skipNextDateLine = $true
+            continue
+        }
+
+        $updatedFrontMatter += $line
+    }
+
+    if (-not $lastUpdateFound) {
+        $updatedFrontMatter += 'last_update:'
+        $updatedFrontMatter += "  date: $dateValue"
+    }
+
+    $newContent = @()
+    $newContent += $lines[0..$startIndex]
+    $newContent += $updatedFrontMatter
+    $newContent += $lines[$endIndex..($lines.Length - 1)]
+
+    Set-Content -Path $FilePath -Value $newContent -Encoding UTF8
+}
+
 $docsPath = (Get-Item $PSScriptRoot).Parent.FullName + "\docs"
 $docs = Get-ChildItem $docsPath -Recurse -Filter "*.md"
 $recentDocs = $docs | ForEach-Object {
@@ -53,6 +132,9 @@ $output = foreach ($doc in $recentDocs) {
     $title = $content | Select-String -Pattern "^title: (`"|')(.*)(`"|')"
     $slug = $content | Select-String -Pattern "^slug: (`"|')?(.*)(`"|')?"
     $summary = Get-FirstH2Summary -Lines $content
+    if ($doc.LastCommitTime) {
+        Set-LastUpdateFrontMatter -FilePath $doc.FullName -LastCommit $doc.LastCommitTime
+    }
     [PSCustomObject]@{
         Title      = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
         Slug       = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
