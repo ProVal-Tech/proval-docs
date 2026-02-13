@@ -30,8 +30,8 @@ This script is used to track and lock down stolen systems. If Custom Field `cPVA
 
 | Name | Example  | Required | Default | Type | Description |
 | ---- | ------- | -------- | ------- | ---- | ----------- |
-| BitlockerMessage | This system been marked as lost, please contact support@provaltech.com | False| This system been marked as lost, please contact support@provaltech.com | String/Text | The message to display on the BitLocker lock screen. |
-| BitlockerPassword | P@##word123 | False| P@##word123 | String/Text | The password to use to enable BitLocker on the target machine. |
+| BitlockerMessage | This system been marked as lost, please contact support@provaltech.com | False| This system been marked as lost, please contact xyz@abc.com | String/Text | The message to display on the BitLocker lock screen. **Please update the email address while configuring the script.** |
+| BitlockerPassword | P@##word123 | False| P@##word123 | String/Text | The password to use to enable BitLocker on the target machine. **You can update the default password while configuring the script.**|
 
 
 ## Automation Setup/Import
