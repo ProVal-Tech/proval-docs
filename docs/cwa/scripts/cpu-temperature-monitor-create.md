@@ -107,3 +107,24 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 ## Attachments
 [CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
+
+## FAQ
+
+1) Can the process `C:\ProgramData_automation\script\CPUTempMon\CPUTempMon.exe` be detected as a malware threat?
+   
+   Yes, this has recently been detected as a threat via Defender in one of the partners' environments.
+
+   Name: VulnerableDriver:WinNT/Winring0
+   ID: 2147937641
+   Severity: Severe
+   Category: Trojan
+   Path: file:_C:\ProgramData_automation\script\CPUTempMon\CPUTempMon.sys
+   Detection Origin: Local machine                      
+   Detection Type: FastPath                      
+   Detection Source: Real-Time Protection                      
+   User: NT AUTHORITY\SYSTEM                      
+   Process Name: C:\ProgramData_automation\script\CPUTempMon\CPUTempMon.exe                      
+   Security intelligence Version: AV: 1.445.23.0, AS: 1.445.23.0, NIS: 1.445.23.0                     
+   Engine Version: AM: 1.1.26010.1, NIS: 1.1.26010.1
+
+   So, please whitelist the `C:\ProgramData_automation\script\CPUTempMon\CPUTempMon.exe` before implementation in production so that you don't get the noisy ticket bombardment.
