@@ -1,8 +1,8 @@
 ---
 id: '19787a52-3223-44e1-8670-ecf74f1b415c'
 slug: /19787a52-3223-44e1-8670-ecf74f1b415c
-title: 'Backup ScriptsMonitorsCustomizations'
-title_meta: 'Backup ScriptsMonitorsCustomizations'
+title: 'Backup Scripts/Monitors/Customizations'
+title_meta: 'Backup Scripts/Monitors/Customizations'
 keywords: ['backup', 'customizations', 'export', 'scripts', 'monitoring', 'dataviews', 'role', 'virus']
 description: 'This document details a script designed to export various ConnectWise Automate customizations for backup and versioning. It supports multiple customization types and includes features for email alerts and system property configuration, ensuring a reliable backup process.'
 tags: ['backup']
@@ -55,7 +55,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 
 ## Dependencies
 
-[CWA - Script - Dataview - Save as CSV [Custom Location]](/docs/ef644f47-8268-43fd-9e8a-ab32f64ec617)  
+[Dataview - Save as CSV [Custom Location]](/docs/ef644f47-8268-43fd-9e8a-ab32f64ec617)  
 
 ## User Parameters
 

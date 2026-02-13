@@ -7,7 +7,7 @@ keywords: ['ticket', 'sync', 'email', 'monitor', 'automate']
 description: 'This document details an Autofix script designed to be triggered by the monitor for unsuccessful ticket synchronization to the PSA. It gathers ticket information and forwards it to a specified email address to ensure no tickets are missed, saving time and improving efficiency.'
 tags: ['email', 'psa']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
