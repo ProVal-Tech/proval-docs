@@ -5,7 +5,7 @@ title: 'Reboot Nag[Restart Alert][Prompter]'
 title_meta: 'Reboot Nag[Restart Alert][Prompter]'
 keywords: ['datto', 'prompter', 'nag', 'reboot', 'restart']
 description: 'Displays and manages reboot prompts for Windows systems after patching or based on system uptime and pending reboot status.'
-tags: ['patching', 'windows', 'restart']
+tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false
 ---
