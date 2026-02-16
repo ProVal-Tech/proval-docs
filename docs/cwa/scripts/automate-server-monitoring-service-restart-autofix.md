@@ -1,8 +1,8 @@
 ---
 id: '870dc2c7-95ea-494e-aefd-05609925545b'
 slug: /870dc2c7-95ea-494e-aefd-05609925545b
-title: 'Automate Server Monitoring - Service - Restart Autofix'
-title_meta: 'Automate Server Monitoring - Service - Restart Autofix'
+title: 'Automate Server Monitoring - Service - Restart [Autofix]'
+title_meta: 'Automate Server Monitoring - Service - Restart [Autofix]'
 keywords: ['automate', 'monitoring', 'email', 'notification', 'service']
 description: 'This document details a script designed for use with remote monitors in the Automate server and CW Manage Plugin Monitoring. The script is structured to send a SUCCESS email only if a FAILURE email has already been dispatched for the monitored service, ensuring efficient communication and alert management.'
 tags: ['email']
@@ -60,7 +60,7 @@ This script will not work manually; it can be used via the `△ Custom - Autofix
 
 | Name                          | Example | Required | Description                                                                                       |
 |-------------------------------|---------|----------|---------------------------------------------------------------------------------------------------|
-| `\\<SERVICE NAME>_Failure_Email` | 1       | True     | Keeps track of whether the failure email has been sent for the `\\<SERVICE>` or not.             |
+| `<SERVICE NAME>_Failure_Email` | 1       | True     | Keeps track of whether the failure email has been sent for the `<SERVICE>` or not.             |
 
 ## Process
 

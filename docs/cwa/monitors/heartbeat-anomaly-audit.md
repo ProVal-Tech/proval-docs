@@ -16,8 +16,8 @@ This monitor is intended to create a ticket in our (ProVal's) Halo PSA if there 
 
 ## Dependencies
 
-[Email RAWSQL Monitor Set Failures* [Autofix]](/docs/901470a2-73d2-4d29-b0d3-c5f15cf19c41)  
-"△ Custom - Email RAWSQL Monitor set results to ProVal" Alert template should be applied.
+- [Script - Email Creation - Computer* [Failure Only]](/docs/901470a2-73d2-4d29-b0d3-c5f15cf19c41)  
+- `△ Custom - Email RAWSQL Monitor set results to ProVal` Alert template should be applied.
 
 ## Target
 
@@ -25,7 +25,7 @@ Global - Should be run without explicitly defined targets.
 
 ## Ticketing
 
-**Subject**: CWA - Heartbeat Anomaly Detected  
+**Subject**: `CWA - Heartbeat Anomaly Detected`  
 
 **Body**: It has been detected that more than half of the agents do not appear to be properly updating their heartbeat, which can cause some false positives with offline alerting:
 
