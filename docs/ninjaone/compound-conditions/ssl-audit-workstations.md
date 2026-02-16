@@ -11,12 +11,12 @@ unlisted: false
 ---
 
 ## Summary
-This compound condition performs SSL Certificate Audit once per day on Windows Workstations where auditing is enabled from 'cPVAL Enable SSL Cert Audit' custom field. If set to Disable, the audit will not be performed.
+This compound condition performs SSL Certificate Audit once per day on Windows Workstations where auditing is enabled from [cPVAL Enable SSL Cert Audit](/docs/87e79b06-8bb4-4902-8a0c-0a626dfb11ab) custom field. If set to *Disable*, the audit will not be performed.
 
 ## Details
 
 - **Name:** `SSL Audit - Workstations`
-- **Description:** `This compound condition performs SSL Certificate Audit once per day on Windows Workstations where auditing is enabled from 'cPVAL Enable SSL Cert Audit' custom field. If set to Disable, the audit will not be performed.`
+- **Description:** `This compound condition performs SSL Certificate Audit once per day on Windows Workstations where auditing is enabled from 'cPVAL Enable SSL Cert Audit' custom field. If set to 'Disable', the audit will not be performed.`
 - **Recommended Agent Policies:**  `Windows Workstation Policy [Default]`
 
 ## Dependencies

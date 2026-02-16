@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Summary
-List of all SSL certificates in the personal certificate repository. This Data is populated by `SSL Certificate Audit` automation.
+List of all SSL certificates in the personal certificate repository. This Data is populated by [SSL Certificate Audit](/docs/3c9e2ed2-f805-4da9-85fb-7fa1d1d146f5)` automation.
 
 ## Details
 

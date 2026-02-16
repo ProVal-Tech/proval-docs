@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview
-This Script pulls any and all certificates in the personal certificate repository on windows machines that it is run on.
+This Script pulls any and all certificates in the personal certificate repository on windows machines that it is run on. It then updates the custom field [cPVAL SSL certificate Audit](/docs/350874e6-7bef-4bff-8fce-f2772acab495) with the SSL details.
 
 ## Sample Run
 
