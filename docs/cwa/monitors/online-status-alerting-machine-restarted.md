@@ -16,9 +16,9 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e)
-- Alert Template: △ Custom - Autofix - Online Status Alerting
-- [CWM - Internal Monitor - Online Status Alerting - Machine Back Online](/docs/76fa2909-0cc0-4f76-82a0-c067660d52ac)
+- Alert Template: `△ Custom - Autofix - Online Status Alerting`
+- [Solution - Online Status Alerting](/docs/a8e69e42-afde-4300-9665-9c1148c8f85e)
+
 
 ## Target
 

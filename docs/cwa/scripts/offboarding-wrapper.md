@@ -14,17 +14,24 @@ unlisted: false
 
 This is a wrapper script that can be used to offboard machines from the client's environment by defining the scripts to be run before offboarding the machine. This script calls a template script "Offboarding Scripts - Partner" from which any of the subscripts that need to be run before offboarding can be executed. If any of the child scripts fail to run, the parent script will not proceed with the removal of the ScreenConnect or Automate agent.
 
-**Note:** All changes must be made in [Template - Offboarding Scripts - Partner](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c) only. No alterations are required in the wrapper script.
+**Note:** All changes must be made in [Offboarding Scripts - Partner [Template]](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c) only. No alterations are required in the wrapper script.
 
 ## Dependencies
 
-- [Template - Offboarding Scripts - Partner](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c)
+- [Offboarding Scripts - Partner [Template]](/docs/c74040d5-4fbb-487f-bb4f-b19696daab1c)
 - [Script - Remove Application](/docs/494f7109-e4b2-4ffa-93f8-e33089b09b4e)
 - [CW Control - Uninstall and Remove from Control Web Portal](/docs/d69c20e1-e605-4cf9-bf35-bbe4c74f134f)
+- [Solution - Offboarding](/docs/cb9ba98d-9a64-4003-b7d5-a7a18192f161/)
 
 ## Sample Run
 
+**First execution:** Run the script with Set_Environment = 1 to import all the required EDFs and system properties.
+
 ![Sample Run Image](../../../static/img/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78/image_1.webp)
+
+**Regular Run:** 
+
+![Sample Run Image](../../../static/img/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78/samplerun.webp)
 
 ## System Properties
 

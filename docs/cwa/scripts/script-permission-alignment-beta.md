@@ -1,8 +1,8 @@
 ---
 id: '46412261-f40b-456f-92db-500d166c41ca'
 slug: /46412261-f40b-456f-92db-500d166c41ca
-title: 'Script Permission Alignment Beta'
-title_meta: 'Script Permission Alignment Beta'
+title: 'Script Permission Alignment [Beta]'
+title_meta: 'Script Permission Alignment [Beta]'
 keywords: ['permissions', 'scripts', 'connectwise', 'automate', 'tier', 'tech', 'access', 'custom', 'table']
 description: 'This document outlines a script designed to standardize the permissions of Built-In scripts in ConnectWise Automate. It provides detailed information on permission assignments for different tech tiers, sample execution, scheduling recommendations, and how to revert to original permissions.'
 tags: ['connectwise', 'permissions', 'setup']
@@ -43,7 +43,8 @@ The initial permissions of the scripts are stored in the custom table during the
 
 ## Dependencies
 
-[CWM - Automate - Custom Table - pvl_scripts_permissions](/docs/22dabcfc-b55c-4eae-81df-96c01446c3b7)
+- [Custom Table - pvl_scripts_permissions](/docs/22dabcfc-b55c-4eae-81df-96c01446c3b7)
+- [Dataview - Script Permission Alignment [Beta]](/docs/c7532677-9914-419a-b6cc-da381393c68c/)
 
 ## User Parameters
 

@@ -72,7 +72,7 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Get-NewDomainAdmin](/docs/414e5b68-23ca-4c24-8aa1-0dc464a4a10a)
+[Agnostic - Get-NewDomainAdmin](/docs/414e5b68-23ca-4c24-8aa1-0dc464a4a10a)
 
 ## User Parameters
 

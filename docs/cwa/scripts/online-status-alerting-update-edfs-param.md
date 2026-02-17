@@ -1,8 +1,8 @@
 ---
 id: '79f11a31-7ae1-4e12-a9d7-581e809aaa2e'
 slug: /79f11a31-7ae1-4e12-a9d7-581e809aaa2e
-title: 'Online Status Alerting - Update EDFs Param'
-title_meta: 'Online Status Alerting - Update EDFs Param'
+title: 'Online Status Alerting - Update EDFs [Param]'
+title_meta: 'Online Status Alerting - Update EDFs [Param]'
 keywords: ['alert', 'notification', 'ticket', 'email', 'script', 'machine', 'status', 'offline', 'online']
 description: 'This document describes a script that can be used to manage online alert notifications for offline computers in ConnectWise Automate. It details the user parameters required to customize the alert notifications, including ticket IDs, email recipients, and scripts to run when the machine comes back online.'
 tags: ['email']
@@ -21,6 +21,10 @@ This script can be used to provide input to the following computer EDFs:
 - Online Alert Restarted Machine (This EDF can be flagged for online machines only)
 
 Run this script manually against the offline computer for which you want to receive a notification and change the ticket status.
+
+## Dependencies
+
+- [Solution - Online Status Alerting](/docs/a8e69e42-afde-4300-9665-9c1148c8f85e)
 
 ## Sample Run
 

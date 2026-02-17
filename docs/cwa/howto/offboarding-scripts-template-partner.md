@@ -1,8 +1,8 @@
 ---
 id: c74040d5-4fbb-487f-bb4f-b19696daab1c
 slug: /c74040d5-4fbb-487f-bb4f-b19696daab1c
-title: 'Offboarding Scripts - Template - Partner'
-title_meta: 'Offboarding Scripts - Template - Partner'
+title: 'Offboarding Scripts - Partner [Template]'
+title_meta: 'Offboarding Scripts - Partner [Template]'
 keywords: ['offboarding', 'script', 'client', 'automation', 'software', 'ticketing']
 description: 'This document is crafted to walk you through the utilization of the Offboarding Scripts - Partner script to run the Sub Scripts before retiring the machine from Automate.'
 tags: ['software', 'ticketing', 'uninstallation']
@@ -16,6 +16,7 @@ This document is crafted to walk you through the utilization of the `Offboarding
 ## Dependencies
 - [Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78)
 - [Remove Application](/docs/494f7109-e4b2-4ffa-93f8-e33089b09b4e)
+- [Solution - Offboarding](/docs/cb9ba98d-9a64-4003-b7d5-a7a18192f161/)
 
 ## How to Use
 1. Import the [Offboarding Wrapper](/docs/1fef1360-cfd3-4a3f-8444-207c09fb5a78) script into Automate from the ProSync plugin.
