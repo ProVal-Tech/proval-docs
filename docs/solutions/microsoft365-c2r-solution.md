@@ -1,6 +1,6 @@
 ---
-id: 'New GUID'
-slug: /New GUID
+id: 'f8deaddc-02c1-492d-b9dc-381a653de0e5'
+slug: /f8deaddc-02c1-492d-b9dc-381a653de0e5
 title: 'Microsoft365 Click-to-Run Solution'
 title_meta: 'Microsoft365 Click-to-Run Solutionme'
 keywords: ['repair','c2r','office','update','channel']
