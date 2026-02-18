@@ -5,7 +5,7 @@ title: 'cpval office channel status'
 title_meta: 'cpval office channel status'
 keywords: ['dependencies', 'filters', 'customfield', 'view']
 description: 'This document provides a summary of agent procedure dependencies within kaseya VSA to get the output into the custom field.'
-tags: ['c2r','channel','status']
+tags: ['click-to-run','channel','status']
 draft: false
 unlisted: false
 ---
