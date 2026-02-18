@@ -3,7 +3,7 @@ id: 'af9d7fcc-db33-44b0-9739-c02fe23846fa'
 slug: /af9d7fcc-db33-44b0-9739-c02fe23846fa
 title: 'Check Safe Mode Status'
 title_meta: 'Check Safe Mode Status'
-keywords: ['Safe', 'Audit', 'Windows']
+keywords: ['safe', 'audit', 'windows']
 description: 'This script is designed to monitor and detect whether the system is currently running in Safe Mode. It evaluates the system boot state and generates an alert if Safe Mode is detected. Note: This script is specifically developed for implementation within a monitoring policy.'
 tags: ['datto', 'data-collection', 'alerting']
 draft: false
