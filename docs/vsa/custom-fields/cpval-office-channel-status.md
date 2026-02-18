@@ -1,11 +1,11 @@
 ---
 id: '880a8d01-fc10-4ea9-94d8-7b2bb87c01a5'
 slug: /880a8d01-fc10-4ea9-94d8-7b2bb87c01a5
-title: 'cpval office channel status'
-title_meta: 'cpval office channel status'
+title: 'cPVAL Office Channel Status'
+title_meta: 'cPVAL Office channel Status'
 keywords: ['dependencies', 'filters', 'customfield', 'view']
 description: 'This document provides a summary of agent procedure dependencies within kaseya VSA to get the output into the custom field.'
-tags: ['click-to-run','channel','status']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 ---
