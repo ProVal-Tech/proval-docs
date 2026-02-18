@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-The purpose of this solution is to collect and display whether Winget is available on Windows machines.
+The purpose of this CWA solution is to collect and display whether Winget is available on Windows machines.
 
 ## Associated Content
 
