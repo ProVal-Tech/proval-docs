@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-The monitor set runs the Get Winget Enablement script on Windows machines. The script will run daily on any machine where Winget is not available or where no user was logged in during the previous audit. It will not run again on machines where Winget was already confirmed as available.
+The monitor set runs the [Get Winget Enablement Status](/docs/a5e852f4-0ca3-11f1-963a-92000234cfc2) script on Windows machines. The script will run daily on any machine where Winget is not available or where no user was logged in during the previous audit. It will not run again on machines where Winget was already confirmed as available.
 
 ## Dependencies
 
