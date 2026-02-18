@@ -13,7 +13,7 @@ unlisted: false
 ## Overview  
 This script is designed to monitor and detect whether the system is currently running in Safe Mode. It evaluates the system boot state and generates an alert if Safe Mode is detected.
 
-Note: This script is specifically developed for implementation within a monitoring policy.
+**Note:** This script is specifically developed for implementation within a monitoring policy.
 
 ## Implementation  
 
@@ -26,7 +26,7 @@ Note: This script is specifically developed for implementation within a monitori
 ## Sample Run
 
 To implement the `component` over a policy, follow these steps:  
-1. Under the `Policies> Monitoring` section, click on create policy.  
+1. Under the `Policies` > `Monitoring` section, click on create policy.  
 
     - State the name of the policy `Check Safe Mode Status` 
     - Provide the description.  
@@ -55,7 +55,7 @@ To implement the `component` over a policy, follow these steps:
 ## Output  
 
 `stdOut`  
-Once the monitoring is configured and the machine is in safe mode then you'll recieve the alerts in the following state over the `Global> Alerts` section.  
+Once the monitoring is configured and the machine is in safe mode then you'll recieve the alerts in the following state over the `Global` > `Alerts` section.  
 ![Image 5](../../../static/img/docs/af9d7fcc-db33-44b0-9739-c02fe23846fa/S2.webp)
 
 
