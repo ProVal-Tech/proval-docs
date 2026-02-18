@@ -5,7 +5,7 @@ title: 'Check Safe Mode Status'
 title_meta: 'Check Safe Mode Status'
 keywords: ['Safe', 'Audit', 'Windows']
 description: 'This script is designed to monitor and detect whether the system is currently running in Safe Mode. It evaluates the system boot state and generates an alert if Safe Mode is detected. Note: This script is specifically developed for implementation within a monitoring policy.'
-tags: ['datto', 'data-collection', 'alerting', '']
+tags: ['datto', 'data-collection', 'alerting']
 draft: false
 unlisted: false
 ---
