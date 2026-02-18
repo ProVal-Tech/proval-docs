@@ -1,8 +1,8 @@
 ---
 id: '660fe635-61c8-438f-9b06-4ef6b3656530'
 slug: /660fe635-61c8-438f-9b06-4ef6b3656530
-title: 'Send Email for each Unsync Tickets'
-title_meta: 'Send Email for each Unsync Tickets'
+title: 'Send Email for each Unsynced Tickets'
+title_meta: 'Send Email for each Unsynced Tickets'
 keywords: ['email', 'ticket', 'sync', 'notification', 'automate']
 description: 'This document outlines a script that sends an email notification for each ticket that failed to sync with PSA in the past specified hours. It details requirements, global parameters, and system properties necessary for the script to function effectively.'
 tags: ['email']
@@ -13,6 +13,8 @@ unlisted: false
 ## Summary
 
 The purpose of the script is to send an email notification for each ticket that failed to sync with PSA in the past **X** hours. **X** is the number of hours set for the Global Parameter `Threshold`.
+
+Default: 2  
 
 **Requirements:**
 
@@ -42,13 +44,13 @@ It is a client script and should be scheduled to run once per **X** hours. **X**
 | Subject| Email Subject                             |
 | Body   | Email Content                             |
 
-### Global Parameters
+## Global Parameters
 
 | Name      | Default | Required | Description                                       |
 |-----------|---------|----------|---------------------------------------------------|
 | Threshold | 2       | True     | Number of past hours to check the unsynced tickets from. |
 
-### System Properties
+## System Properties
 
 | Name                           | Example                          | Required | Description                                                                 |
 |--------------------------------|----------------------------------|----------|-----------------------------------------------------------------------------|
@@ -74,6 +76,15 @@ It is a client script and should be scheduled to run once per **X** hours. **X**
 **Body:**
 
 ```PlainText
+Client: [Client Name]
+Location: [Location Name]
+Computer: [Computer Name]
+CWA Ticket #: [Ticket ID of the CWA ticket that was unsyned]
+Ticket Creation Date: [When ticket got created]
+Ticket Status: [Status of the ticket]
+Attachment: [Whether there is any attachment enclosed in the ticket]
+
+Ticket Body:
 %body%
 [Body message of the ticket that failed to sync to PSA]
 ```
