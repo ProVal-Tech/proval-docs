@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to contains the office channel status of the machines.
+This custom field contains the office channel status of the machines.
 
 ## Dependencies
 
@@ -20,9 +20,9 @@ This custom field is used to contains the office channel status of the machines.
 
 ## Details
 
-| Field Name                     | Type of Field (Machine or Organization) | Description                                                                 |
-| ------------------------------ | --------------------------------------- | --------------------------------------------------------------------------- |
-| cPVAL Office Channel Status    | Machine                                 | Stores the Microsoft Office update channel status detected on the endpoint. Used for auditing and reporting. |
+| Field Name                  | Type                | Description                                                                       |
+| --------------------------- | ------------------- | ------------------------------------------------------------------------------------- |
+| cPVAL Office Channel Status | Machine             | Stores the Microsoft Office update channel status detected on the endpoint. |
 
 ## Output
 
