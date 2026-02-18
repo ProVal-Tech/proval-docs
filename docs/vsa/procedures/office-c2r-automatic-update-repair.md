@@ -5,7 +5,7 @@ title: 'Office C2R Automatic Update Repair'
 title_meta: 'Office C2R Automatic Update Repair'
 keywords: ['office', 'update', 'repair', 'automatic', 'click2run']
 description: 'This document outlines the process to repair the Office Click2Run Automatic Update on an endpoint using the PS1, it ask for the repair type from the script executor like QuickRepair OR FullRepair. It includes example logs and details on the execution of the repair procedure.'
-tags: ['office365', 'software', 'update', 'Repair']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 ---

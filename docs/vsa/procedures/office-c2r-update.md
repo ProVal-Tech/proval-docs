@@ -5,7 +5,7 @@ title: 'Office C2R Update'
 title_meta: 'Office C2R Update'
 keywords: ['update', 'office', 'click2run', 'installation']
 description: 'This document provides a detailed procedure for performing an on-demand update for Click2Run Office installations on endpoints using an agent procedure. It includes example logs, dependencies, and output details to assist in the execution and troubleshooting of the update process.'
-tags: ['software', 'update', 'windows', 'c2r']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 ---

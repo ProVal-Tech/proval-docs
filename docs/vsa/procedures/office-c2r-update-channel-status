@@ -5,7 +5,7 @@ title: 'Office C2R Update Channel Status'
 title_meta: 'Office C2R Update Channel Status'
 keywords: ['office', 'update', 'channel', 'procedure']
 description: 'This agent procedure is used to check the Channel Status on to the machine for Microsoft Office and update the result into a Custom field'
-tags: ['c2r', 'status', 'software', 'update', 'windows']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 ---

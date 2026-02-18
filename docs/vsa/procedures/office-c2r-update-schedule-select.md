@@ -5,7 +5,7 @@ title: 'Office C2R Update Schedule Select'
 title_meta: 'Office C2R Update Schedule Select'
 keywords: ['microsoft', 'update', 'click2run', 'office', 'installation']
 description: 'This document provides a detailed guide on how to set the Microsoft Update Channel for a Click2Run Office installation on an endpoint using an agent procedure that contains a PS1 and it will ask for the variable at the scritp run time. It includes a summary, example agent procedure logs, and expected output for successful execution.'
-tags: ['office365', 'software', 'update', 'channel', 'windows']
+tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 ---
