@@ -1,6 +1,6 @@
 ---
-id: '41d685b3-0e7c-41b6-802d-2d1a9b25593c2'
-slug: /41d685b3-0e7c-41b6-802d-2d1a9b25593c2
+id: '41d685b3-0e7c-41b6-802d-2d1a9b25593c'
+slug: /41d685b3-0e7c-41b6-802d-2d1a9b25593c
 title: 'Certificate Expiration Alerts'
 title_meta: 'Certificate Expiration Alerts'
 keywords: ['certificate', 'expiration', 'alerts', 'security', 'local-certs', 'ssl']
