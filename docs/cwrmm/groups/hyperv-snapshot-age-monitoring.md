@@ -4,7 +4,7 @@ slug: /21d5941d-f8ad-439c-a724-1e998972751c
 title: 'HyperV Snapshot Age Monitoring'
 title_meta: 'HyperV Snapshot Age Monitoring'
 keywords: ['hyper-v', 'snapshot', 'monitoring', 'database', 'alert']
-description: 'Check this box to enable alerts for HyperV Host servers that have snapshots older than 3 days.'
+description: 'Group of HyperV Host servers where monitoring for snapshots older than 3 days is turned on.'
 tags: ['windows', 'alerting', 'hyper-v']
 draft: false
 unlisted: false
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Group of SQL Servers.
+Group of HyperV Host servers where monitoring for snapshots older than 3 days is turned on.
 
 ## Dependencies
 
