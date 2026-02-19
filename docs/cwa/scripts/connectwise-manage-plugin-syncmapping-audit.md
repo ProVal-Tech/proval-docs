@@ -7,7 +7,7 @@ keywords: ['email', 'alerts', 'cwmanage', 'unsynced', 'components']
 description: 'This document outlines a script designed to send email alerts when unsynced or unmapped components are detected in the CW Manage plugin. The script runs weekly and checks for various unsynced configurations, generating a ticket in Autotask if issues are found.'
 tags: ['report', 'security']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

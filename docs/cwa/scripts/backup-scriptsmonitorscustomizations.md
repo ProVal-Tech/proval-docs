@@ -1,8 +1,8 @@
 ---
 id: '19787a52-3223-44e1-8670-ecf74f1b415c'
 slug: /19787a52-3223-44e1-8670-ecf74f1b415c
-title: 'Backup ScriptsMonitorsCustomizations'
-title_meta: 'Backup ScriptsMonitorsCustomizations'
+title: 'Backup Scripts/Monitors/Customizations'
+title_meta: 'Backup Scripts/Monitors/Customizations'
 keywords: ['backup', 'customizations', 'export', 'scripts', 'monitoring', 'dataviews', 'role', 'virus']
 description: 'This document details a script designed to export various ConnectWise Automate customizations for backup and versioning. It supports multiple customization types and includes features for email alerts and system property configuration, ensuring a reliable backup process.'
 tags: ['backup']
@@ -24,7 +24,7 @@ This script allows you to export various CW Automate customizations for backup a
 - ExtraData Fields
 - Virus Scanners
 
-This is a client script. The `AutomateBackup_Computerid` property should store the computer ID of the machine where the backup data will be saved. If the computer ID is offline or does not exist in Automate, it will send an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) with the details of the problem. This will trigger a high-priority ticket in ProVal’s Autotask system to resolve the issue.
+This is a client script. The `AutomateBackup_Computerid` property should store the computer ID of the machine where the backup data will be saved. If the computer ID is offline or does not exist in Automate, it will send an email to [alerts@provaltech.com](mailto:alerts@provaltech.com) with the details of the problem. This will trigger a high-priority ticket in ProVal’s Halo system to resolve the issue.
 
 The script will also use another system property called `AutomateBackup_Base_Directory` to determine the destination path for the backup data. If this property is not configured or left blank, the script will default to `C:/CWA Solutions Backup`. If the variable is not correctly defined in the property, it will default to `C:/CWAutomate`.
 
@@ -55,7 +55,7 @@ Source: [https://forums.mspgeek.org/files/file/17-script-backup/?_fromLogin=1](h
 
 ## Dependencies
 
-[CWA - Script - Dataview - Save as CSV [Custom Location]](/docs/ef644f47-8268-43fd-9e8a-ab32f64ec617)  
+[Dataview - Save as CSV [Custom Location]](/docs/ef644f47-8268-43fd-9e8a-ab32f64ec617)  
 
 ## User Parameters
 

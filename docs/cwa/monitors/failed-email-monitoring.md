@@ -1,8 +1,8 @@
 ---
 id: 'f1a15d3d-85d7-4d72-9c08-ad4ca6a7dfbb'
 slug: /f1a15d3d-85d7-4d72-9c08-ad4ca6a7dfbb
-title: 'CWM - Automate - Monitor -Failed Email Monitoring'
-title_meta: 'CWM - Automate - Monitor -Failed Email Monitoring'
+title: 'Failed Email Monitoring'
+title_meta: 'Failed Email Monitoring'
 keywords: ['email', 'ticket', 'monitor', 'failure', 'notification']
 description: 'This document outlines a monitor that reports any failed email occurrences that are not related to specific exclusions. It generates a ticket detailing the failed emails every hour, providing crucial information for troubleshooting and resolution.'
 tags: ['report', 'security', 'setup']
@@ -16,7 +16,7 @@ This monitor reports any failed email that is not related to 'Google Authenticat
 
 Each hour, a ticket with the details of all the failed emails from the previous hour will be generated.
 
-**Ticket Subject:** Automate Failed Email Detected
+**Ticket Subject:** `Automate Failed Email Detected`
 
 **Sample Ticket Body:**
 
@@ -36,7 +36,7 @@ Below is the information of all the emails that failed in the last hour:
   **Subject:** Stuff  
   **Body:** Things  
   **Error Message:** Bad Stuff  
-  **Failure Date:** 2022-07-01 10:03:20  
+  **Failure Date:** 2022-07-01 10:03:20 
 
 ## Important Notes
 
@@ -46,9 +46,8 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 
 ## Dependencies
 
-[Ticket Creation - Without Computer Information And Failures Only [Autofix]](/docs/730449e6-1c73-46ca-a93d-d7b9526e1ef9)
-
-"△ Custom - Ticket Creation - Without Computer Details" alert template should be applied to the monitor set.
+- [Ticket Creation - Without Computer Information And Failures Only [Autofix]](/docs/730449e6-1c73-46ca-a93d-d7b9526e1ef9)
+- `△ Custom - Ticket Creation - Without Computer Details` alert template should be applied to the monitor set.
 
 ## Target
 

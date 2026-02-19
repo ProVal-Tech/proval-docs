@@ -1,8 +1,8 @@
 ---
 id: '901470a2-73d2-4d29-b0d3-c5f15cf19c41'
 slug: /901470a2-73d2-4d29-b0d3-c5f15cf19c41
-title: 'Email Creation - Computer Failure Only'
-title_meta: 'Email Creation - Computer Failure Only'
+title: 'Email Creation - Computer [Failure Only]'
+title_meta: 'Email Creation - Computer [Failure Only]'
 keywords: ['email', 'rawsql', 'monitor', 'failure', 'notification']
 description: 'This document describes a script designed to send email notifications for failed outcomes of a RAWSQL monitor. It details the email addresses used for notifications, system properties required, and the process flow for handling failures. The script is linked to a specific alert template and includes configuration for success email notifications.'
 tags: ['email']
@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
+This script functions similarly to the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket, it is designed to send the FAILED outcomes of a RAWSQL monitor to the email address provided in the system property.
 
 This script sends emails to two different addresses:
 
@@ -25,7 +25,7 @@ This script sends emails to two different addresses:
 
 ## Sample Run
 
-It's an Autofix script and is currently attached to the "△ Custom - Email RAWSQL Monitor set results to ProVal" alert template.
+It's an Autofix script and is currently attached to the `△ Custom - Email RAWSQL Monitor set results to ProVal` alert template.
 
 ![Sample Run](../../../static/img/docs/901470a2-73d2-4d29-b0d3-c5f15cf19c41/image_1.webp)
 
