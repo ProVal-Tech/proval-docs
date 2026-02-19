@@ -1,8 +1,8 @@
 ---
-id: '172c15d2-01fd-421a-8954-67f6942e0e64'
-slug: /172c15d2-01fd-421a-8954-67f6942e0e64
+id: '73e61957-b973-4c64-8c48-70c45f2d400a'
+slug: /73e61957-b973-4c64-8c48-70c45f2d400a
 title: 'HyperV - Snapshot Age > 3 Days'
-title_meta: 'HyperV - Snapshot Age > 3 Days'
+title_meta: 'HyperV - Snapshot Age > 3 Days Monitoring'
 keywords: ['hyper-v', 'snapshot', 'monitoring', 'database', 'alert']
 description: 'This solution outlines the process for detecting and monitoring Hyper‑V Host servers that store snapshots older than 3 days from CW RMM.'
 tags: ['windows', 'alerting', 'hyper-v']
