@@ -3,7 +3,7 @@ id: '90f075dc-5997-4abe-8a89-c46c6d566de0'
 slug: /90f075dc-5997-4abe-8a89-c46c6d566de0
 title: 'ESU Status'
 title_meta: 'ESU Status'
-keywords: ['ESU','extended security']
+keywords: ['esu','extended security']
 description: 'Stores the result from the ESU Audit script'
 tags: ['auditing','licensing','patching','windows']
 draft: false
@@ -12,13 +12,18 @@ unlisted: false
 
 ## Summary
 
-Stores the result from the ESU Audit script.
+Stores the result from the [ESU License Activation Detection](/docs/fad37673-34ab-46e9-8797-b87058f79faa) script.
 
 ## Details
 
-| Name       | Level    | Type   | Default?  | Required | Editable | Description                                 |
-|------------|----------|--------|-----------|----------|----------|---------------------------------------------|
-| ESU Status | Endpoint | Text   | blank     | False    | No       | Stores the result from the ESU Audit script |
+| Name       | Level    | Type   | Default  | Editable | Description                                 |
+|------------|----------|--------|----------|----------|---------------------------------------------|
+| ESU Status | Endpoint | Text Box  |    Not Detected    | No       | Stores the result from the ESU Audit script |
+
+## Dependencies
+
+- [Solution - Windows 10 ESU Licensing and Auditing](/docs/a7e4073e-1f09-4772-aa5e-ee44cf9bf9e7)
+- [ESU License Activation Detection](/docs/fad37673-34ab-46e9-8797-b87058f79faa)
 
 ## Creation Process
 
@@ -40,4 +45,4 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 
-![Image1](../../../static/img/docs/esu-status/image.png)
+![Step3](../../../static/img/docs/90f075dc-5997-4abe-8a89-c46c6d566de0/image.webp)
