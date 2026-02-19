@@ -19,10 +19,11 @@ The purpose is to get the office channel details, update and repair the c2r and 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | Link to the documentation of the content piece      | What is the type of content? (Script, Custom Table, VSA Policy, CWM Dataview, etc.) | What does this content piece do in the overall solution? |
-|[Office C2R Update Channel Status](/docs/bf426f89-7da1-4f4b-88b7-03983136458c) | script | To fetch the data |
 |[Office C2R Update Schedule Select](/docs/401a54a-5bff-4d37-8fdf-001220f73fb5) | Script | To set teh channel |
-|[Office C2R Automatic Update Repair](/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c) | Script | To reapair the microsoft365 |
-|[Office C2R Update](/docs/ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8) | script | To update the office
+|[Office C2R Update Channel Status] | script | To fetch the data |
+|[Office C2R Update Schedule Select] | Script | To set teh channel |
+|[Office C2R Automatic Update Repair] | Script | To reapair the microsoft365 |
+|[Office C2R Update] | script | To update the office
 
 ## Implementation
 
