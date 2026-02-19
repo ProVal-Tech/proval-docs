@@ -53,7 +53,7 @@ This monitor will generate alerts for HyperV host snapshots that have turned 3 d
 #region globals
 $ProgressPreference = 'SilentlyContinue'
 $WarningPreference = 'SilentlyContinue'
-$InformationPreference = 'SilentlyContinue'
+$InformationPreference = 'Continue'
 #endRegion
 
 #region variables
