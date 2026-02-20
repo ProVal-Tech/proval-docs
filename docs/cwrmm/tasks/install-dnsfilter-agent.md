@@ -6,7 +6,7 @@ title_meta: 'Install DNSFilter Agent'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
 description: 'Deploys DNSFilter Agent on both windows and MAC machines.'
 tags: ['installation', 'dns']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -42,9 +42,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Install DNSFilter Agent`  
-**Description:** `Deploys DNSFilter Agent on both windows and MAC machines.`  
-**Category:** `Custom`
+- **Name:** `Install DNSFilter Agent`  
+- **Description:** `Deploys DNSFilter Agent on both windows and MAC machines.`  
+- **Category:** `Custom`
 
 ![Image1](../../../static/img/docs/5f0490f8-c2ce-4afe-92a0-d75699150a24/image1.webp)
 
@@ -307,9 +307,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Deployment
 This task has to be scheduled on the `DNSFilter Agent Deployment` group for auto deployment. The script can also be run manually if required.
 
-Go to Automations > Tasks.  
-Search for `Install DNSFilter Agent`.  
-Then click on Schedule and provide the parameter details as necessary for the script completion.
+- Go to Automations > Tasks.  
+- Search for `Install DNSFilter Agent`.  
+- Then click on Schedule and provide the parameter details as necessary for the script completion.
 
 **Target Group**:
 ![Deployment1](../../../static/img/docs/5f0490f8-c2ce-4afe-92a0-d75699150a24/Deployment1.webp)

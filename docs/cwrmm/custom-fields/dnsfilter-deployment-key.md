@@ -6,7 +6,7 @@ title_meta: 'DNSFilter Deployment Key'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
 description: 'Deployment Key for deploying the DNSFilter Agent.'
 tags: ['installation', 'dns']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -15,9 +15,9 @@ Deployment Key for deploying the DNSFilter Agent.
 
 ## Details
 
-| Name                 | Level                | Type                | Default         | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| DNSFilter Deployment Key| Company | Text |  | True | Yes   | Deployment Key for deploying the DNSFilter Agent. |
+| Name                 | Level                | Type                | Default         |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| DNSFilter Deployment Key| Company | Text Box|  |  Yes   | Deployment Key for deploying the DNSFilter Agent. |
 
 
 ## Completed Custom Field

@@ -6,12 +6,12 @@ title_meta: 'DNSFilter Agent Deployment'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
 description: 'Group of machines where DNSFilter Agent deployment is enabled for windows and MAC machines.'
 tags: ['installation', 'dns']
-draft: False
+draft: false
 unlisted: false
 ---
 
 ## Summary
-Group of machines where DNSFilter Agent deployment is enabled for windows and MAC machines.
+Group of machines where DNSFilter Agent deployment is enabled for Windows and MAC machines.
 
 ## Dependencies
 
@@ -29,7 +29,7 @@ Group of machines where DNSFilter Agent deployment is enabled for windows and MA
 
 - **Group Name:** `DNSFilter Agent Deployment`  
 - **Category:** `Application`  
-- **Description:** `Group of machines where DNSFilter Agent deployment is enabled for windows and MAC machines.`
+- **Description:** `Group of machines where DNSFilter Agent deployment is enabled for Windows and MAC machines.`
 
 ![Image1](../../../static/img/docs/03c4255b-097a-406f-822f-a237228dbeed/image1.webp)
 

@@ -6,7 +6,7 @@ title_meta: 'Deploy DNSFilter Agent'
 keywords: ['dns', 'filter', 'agent', 'installation', 'windows', 'macintosh']
 description: 'Custom Field to deploy DNSFilter agent on Windows and MAC machines.'
 tags: ['installation', 'dns']
-draft: False
+draft: false
 unlisted: false
 ---
 
@@ -19,9 +19,9 @@ Select to deploy DNSFilter agent on Windows and MAC machines.
 
 ## Details
 
-| Name | Level | Type | Options | Default | Required | Editable | Description |
-|------|-------|------|---------|---------|----------|----------|-------------|
-| Deploy DNSFilter Agent | COMPANY | Dropdown | <ul><li>None</li><li>Both</li><li>Windows</li><li>Macintosh</li></ul> | None | | Yes | Select to deploy DNSFilter agent on Windows and MAC machines.|
+| Name | Level | Type | Options | Default  | Editable | Description |
+|------|-------|------|---------|---------|----------|-------------|
+| Deploy DNSFilter Agent | COMPANY | Dropdown | <ul><li>None</li><li>Both</li><li>Windows</li><li>Macintosh</li></ul> | None |  Yes | Select OS to deploy DNSFilter agent on Windows and MAC machines.|
 
 ## Completed Custom Field
 
