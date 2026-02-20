@@ -4,7 +4,7 @@ slug: /d91bf7d6-5279-429d-b304-4876132453a5
 title: 'Get - AutoPilot Hash'
 title_meta: 'Get - AutoPilot Hash'
 keywords: ['autopilot','hash','hardware']
-description: 'This script fetches the device's Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the 'cPValAutopilotHash' custom field with the value. Must be run with Administrator privileges.'
+description: 'This script fetches the device Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the cPValAutopilotHash custom field with the value. Must be run with Administrator privileges.'
 tags: ['autopilot','auditing','custom-fields']
 draft: false
 unlisted: false
