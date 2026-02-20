@@ -13,7 +13,7 @@ unlisted: false
 ## Overview
 Removes Sophos Endpoint Agent and all related modules from the system. If standard uninstall fails, it attempts removal of individual modules and cleans up remaining files from standard installation paths.
 
-<I><U><B>Note:</B></U> Ensure to disable Tamper protection for smooth uninstallation.</I>
+<I><U><b>Note:</b></U> Ensure to disable Tamper protection for smooth uninstallation.</I>
 
 ## Implementation  
 
