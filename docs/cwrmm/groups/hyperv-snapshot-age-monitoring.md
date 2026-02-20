@@ -21,14 +21,14 @@ Group of HyperV Host servers where monitoring for snapshots older than 3 days is
 
 ## Group Setup Location
 
-**Group Path:** `ENDPOINTS` ➞ `Groups`  
-**Group Type:** `Dynamic Group`
+- **Group Path:** `ENDPOINTS` ➞ `Groups`  
+- **Group Type:** `Dynamic Group`
 
 ## Group Summary
 
-**Group Name:** `HyperV Snapshot Age Monitoring`  
-**Category:** `HyperV`  
-**Description:** `Group of HyperV Host servers where monitoring for snapshots older than 3 days is turned on.`
+- **Group Name:** `HyperV Snapshot Age Monitoring`  
+- **Category:** `HyperV`  
+- **Description:** `Group of HyperV Host servers where monitoring for snapshots older than 3 days is turned on.`
 
 ![Image1](../../../static/img/docs/21d5941d-f8ad-439c-a724-1e998972751c/image1.webp)
 

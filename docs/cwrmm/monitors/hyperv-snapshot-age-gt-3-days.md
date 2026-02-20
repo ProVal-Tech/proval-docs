@@ -132,7 +132,7 @@ if ($staleSnapshots) {
 - **Operator:** `AND`  
 - **Script Output:**  `The following snapshots are stale`  
 - **Escalate ticket on script failure:** `False`  
-- **Add Automation:**  ` `
+- **Add Automation:**  `NONE`
 
 ![Image3](../../../static/img/docs/172c15d2-01fd-421a-8954-67f6942e0e64/image3.webp)
 
