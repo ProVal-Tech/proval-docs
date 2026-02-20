@@ -16,7 +16,7 @@ Flag this custom field to exclude location from the certification expiration mon
 
 ## Dependencies
 
-- [Solution: HyperV - Snapshot Age > 3 Days Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
+- [Solution: Certificate Expiration Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
 
 ## Custom Field Setup Location
 

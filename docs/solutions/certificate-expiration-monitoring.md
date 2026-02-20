@@ -77,7 +77,7 @@ Configure the monitor [Certificate Expiration 30 Days](/docs/dc48efed-0e7d-44d4-
 
 > The **Certificate Expiration Alerts** custom field is configured at the COMPANY level with options to:
 >
->> - **DIsabled** - Monitoring disabled
+>> - **Disabled** - Monitoring disabled
 >> - **Windows** - Monitor all Windows devices (both workstations and servers)
 >> - **Windows Workstations** - Monitor workstations only
 >> - **Windows Servers** - Monitor servers only

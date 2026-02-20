@@ -20,7 +20,7 @@ This monitor looks for any SSL certificates that have an expiration date of less
 - [Custom Field: Disable Cert Expiration Alerts](/docs/9fa7d829-75c9-455d-9908-d695e0ae0a96)
 - [Custom Field: Disable Cert Expiration Alert](/docs/f329bc75-50a0-497a-bfa9-4d54a281101c)
 - [Group: Certificate Expiration Monitoring](/docs/0cf27d9a-8aeb-4555-92a2-45e993e1bd87)
-- [Solution: HyperV - Snapshot Age > 3 Days Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
+- [Solution: Certificate Expiration Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
 
 ## Monitor Setup Location
 

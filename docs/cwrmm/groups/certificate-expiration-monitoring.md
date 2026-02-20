@@ -19,18 +19,18 @@ Group of machines with certificate expiration monitoring enabled.'
 - [Custom Field: Certificate Expiration Alert](/docs/41d685b3-0e7c-41b6-802d-2d1a9b25593c)
 - [Custom Field: Disable Cert Expiration Alerts](/docs/9fa7d829-75c9-455d-9908-d695e0ae0a96)
 - [Custom Field: Disable Cert Expiration Alert](/docs/f329bc75-50a0-497a-bfa9-4d54a281101c)
-- [Solution: HyperV - Snapshot Age > 3 Days Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
+- [Solution: Certificate Expiration Monitoring](/docs/4712590e-18e7-47f7-a038-ab704f5859c2)
 
 ## Group Setup Location
 
-**Group Path:** `ENDPOINTS` ➞ `Groups`  
-**Group Type:** `Dynamic Group`
+- **Group Path:** `ENDPOINTS` ➞ `Groups`  
+- **Group Type:** `Dynamic Group`
 
 ## Group Summary
 
-**Group Name:** `Certificate Expiration Monitoring`  
-**Category:** `Certificate`  
-**Description:** `Group of machines with certificate expiration monitoring enabled.`
+- **Group Name:** `Certificate Expiration Monitoring`  
+- **Category:** `Certificate`  
+- **Description:** `Group of machines with certificate expiration monitoring enabled.`
 
 ![Image1](../../../static/img/docs/0cf27d9a-8aeb-4555-92a2-45e993e1bd87/image1.webp)
 
