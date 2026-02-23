@@ -113,122 +113,210 @@ This script performs a secure, automated installation of the DNSFilter Agent usi
 - Outputs logs and errors to the working directory.
 
 #>
-# Begin block: Initialization and setup
-Begin {
-    $ErrorActionPreference = 'Stop'
-    $WorkingDirectory = 'C:\ProgramData\_Automation\Script\DNSFilter'
-    #endRegion
-    $cfAcctKey = '@DeploymentKey@'
-    if (-not [string]::IsNullOrEmpty($cfAcctKey)) {
-        $secretKey = $cfAcctKey
-    }
-    else {
-        throw 'An error occurred: DNSFilter Deployment Key is missing. Please set the DNSFilter Key in the Client custom field `DNSFilter Deployment Key`.'
-    }
-    ### Region Strapper ###
-    $ProgressPreference = 'SilentlyContinue'
-    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
-    Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-    try {
-        Update-Module -Name Strapper -ErrorAction Stop
-    }
-    catch {
-        Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
-        Get-Module -Name Strapper -ListAvailable | Where-Object { $_.Version -ne (Get-InstalledModule -Name Strapper).Version } | ForEach-Object { Uninstall-Module -Name Strapper -MaximumVersion $_.Version }
-    }
-    (Import-Module -Name 'Strapper') 3>&1 2>&1 1>$null
-    Set-StrapperEnvironment
+#region Globals
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
+$WorkingDirectory = 'C:\ProgramData\_Automation\Script\DNSFilter'
+#endregion
 
-    ### Process ###
+#region Deployment Key Validation
+$cfAcctKey = '@DeploymentKey@'
 
-    #region Setup - Folder Structure
-    if (!(Test-Path $WorkingDirectory)) {
-        try {
-            New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
-            Write-Log -Text "Created directory: $WorkingDirectory"
-        }
-        catch {
-            Write-Log -Text "An error occurred: Failed to create $WorkingDirectory. Reason: $($_.Exception.Message)" -Level Error
-            return
-        }
-    }
-
-    try {
-        $acl = Get-Acl $WorkingDirectory
-        if (-not ($acl.Access | Where-Object { $_.IdentityReference -match 'Everyone' -and $_.FileSystemRights -match 'FullControl' })) {
-            $accessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'None', 'Allow')
-            $acl.AddAccessRule($accessRule)
-            Set-Acl $WorkingDirectory $acl
-            Write-Log -Text "Set FullControl permissions for Everyone on $WorkingDirectory" -Level Information
-        }
-    }
-    catch {
-        Write-Log -Text "An error occurred: Failed to set permissions. Reason: $($_.Exception.Message)" -Level Error
-        return
-    }
-
-    #endregion
+if ([string]::IsNullOrWhiteSpace($cfAcctKey)) {
+    throw 'An error occurred: DNSFilter Deployment Key is missing. Please set the DNSFilter Key in the Client custom field `DNSFilter Deployment Key`.'
 }
 
-# Process block: Execute the downloaded script with the specified parameters
-Process {
-    # Download and extract version
-    $url = "https://download.dnsfilter.com/User_Agent/Windows/DNSFilter_Agent_Setup.msi"
-    $MSIPath = "$WorkingDirectory\DNSFilter_Agent_Setup.msi"
+$secretKey = $cfAcctKey
+#endregion
 
+#region TLS / NuGet / Strapper Setup
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
+try {
+    Update-Module -Name Strapper -ErrorAction Stop
+}
+catch {
+    Install-Module -Name Strapper -Repository PSGallery -SkipPublisherCheck -Force
+}
+
+Import-Module Strapper -Force | Out-Null
+Set-StrapperEnvironment
+#endregion
+
+#region Setup Working Directory
+if (!(Test-Path $WorkingDirectory)) {
     try {
-        Invoke-WebRequest -Uri $url -OutFile $MSIPath
-        Write-Log -Text 'Downloaded DNSFilter Agent MSI' -Level Information
+        New-Item -Path $WorkingDirectory -ItemType Directory -Force | Out-Null
+        Write-Output "Created directory: $WorkingDirectory"
     }
     catch {
-        Write-Log -Text "An error occurred: Failed to download MSI. Reason: $($_.Exception.Message)" -Level Error
-        return
-    }
-
-    try {
-        $installer = New-Object -ComObject WindowsInstaller.Installer
-        $database = $installer.GetType().InvokeMember("OpenDatabase", "InvokeMethod", $null, $installer, @($tempFile, 0))
-        $query = "SELECT `Value` FROM `Property` WHERE `Property` = 'ProductVersion'"
-        $view = $database.OpenView($query)
-        $view.Execute()
-        $record = $view.Fetch()
-        $latestVersion = $record.StringData(1)
-        Write-Log -Text "Latest DNSFilter Agent version: $latestVersion" -Level Information
-    }
-    catch {
-        Write-Log -Text "An error occurred: Failed to read MSI version. Reason: $($_.Exception.Message)" -Level Error
-        return
-    }
-
-    # Check existing application and version
-    $dnsFilterApp = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DNSFilter' } | Select-Object -First 1
-    if ($dnsFilterApp) {
-        $installedVersion = $dnsFilterApp.DisplayVersion
-        Write-Log -Text "Installed DNSFilter Agent version: $installedVersion" -Level Information
-
-        if ($installedVersion -eq $latestVersion) {
-            Write-Log -Text 'DNSFilter Agent is up to date.' -Level Information
-            Remove-Item -Path $WorkingDirectory -Recurse -Force
-            return
-        }
-    }
-    else {
-        Write-Log -Text 'DNSFilter Agent not found in uninstall registry keys.' -Level  Warning
-    }
-
-    # Execute installation
-    try {
-        Start-Process -FilePath "msiexec.exe" -ArgumentList "/qn /i `"$tempFile`" NKEY=`"$secretKey`"" -Wait -NoNewWindow
-        Write-Log -Text 'DNSFilter Agent installed successfully.' -Level Information
-    }
-    catch {
-        Write-Log -Text "An error occurred: Installation failed. Reason: $($_.Exception.Message)" -Level Error
+         Write-Output  "Failed to create $WorkingDirectory. Reason: $($_.Exception.Message)"
         return
     }
 }
-# End block: Final cleanup or additional actions (if needed)
-End {}
+
+try {
+    $acl = Get-Acl $WorkingDirectory
+    if (-not ($acl.Access | Where-Object {
+        $_.IdentityReference -match 'Everyone' -and
+        $_.FileSystemRights -match 'FullControl'
+    })) {
+        $accessRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
+            'Everyone',
+            'FullControl',
+            'ContainerInherit, ObjectInherit',
+            'None',
+            'Allow'
+        )
+        $acl.AddAccessRule($accessRule)
+        Set-Acl $WorkingDirectory $acl
+        Write-Output "Set FullControl permissions for Everyone on $WorkingDirectory"
+    }
+}
+catch {
+     Write-Output "Failed to set permissions. Reason: $($_.Exception.Message)"
+    return
+}
+#endregion
+
+#region Download MSI
+$url = "https://download.dnsfilter.com/User_Agent/Windows/DNSFilter_Agent_Setup.msi"
+$MSIPath = Join-Path $WorkingDirectory "DNSFilter_Agent_Setup.msi"
+
+try {
+    Write-Output "Downloading DNSFilter Agent..."
+
+    # Use WebClient for better compatibility with RMM agents
+    $webClient = New-Object System.Net.WebClient
+    $webClient.DownloadFile($url, $MSIPath)
+
+    if (!(Test-Path $MSIPath)) {
+        throw "MSI was not downloaded."
+    }
+
+    Write-Output "Downloaded DNSFilter Agent MSI to $MSIPath" 
+}
+catch {
+    Write-Output "Failed to download MSI. Reason: $($_.Exception.Message)"
+    return
+}
+#endregion
+
+
+#region Get Latest MSI Version
+try {
+    if (!(Test-Path $MSIPath)) {
+        throw "MSI file not found at $MSIPath"
+    }
+
+    $installer = New-Object -ComObject WindowsInstaller.Installer
+    $database  = $installer.OpenDatabase($MSIPath, 0)
+
+    $query = "SELECT `Value` FROM `Property` WHERE `Property` = 'ProductVersion'"
+    $view  = $database.OpenView($query)
+    $view.Execute()
+
+    $record = $view.Fetch()
+    if (-not $record) {
+        throw "Failed to fetch ProductVersion from MSI."
+    }
+
+    $latestVersion = $record.StringData(1)
+
+     Write-Output "Latest DNSFilter Agent version: $latestVersion"
+
+    # Clean up COM objects properly
+    $view.Close()
+    [System.Runtime.Interopservices.Marshal]::ReleaseComObject($record)  | Out-Null
+    [System.Runtime.Interopservices.Marshal]::ReleaseComObject($view)    | Out-Null
+    [System.Runtime.Interopservices.Marshal]::ReleaseComObject($database)| Out-Null
+    [System.Runtime.Interopservices.Marshal]::ReleaseComObject($installer)| Out-Null
+}
+catch {
+     Write-Output "Failed to read MSI version. Reason: $($_.Exception.Message)" 
+    return
+}
+#endregion
+
+#region Check Installed Version
+$dnsFilterApp = Get-ChildItem `
+    -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall,
+          HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall `
+| Get-ItemProperty `
+| Where-Object { $_.DisplayName -match 'DNSFilter' } `
+| Select-Object -First 1
+
+if ($dnsFilterApp) {
+
+    $installedVersion = $dnsFilterApp.DisplayVersion
+    Write-Output "Installed DNSFilter Agent version: $installedVersion"
+
+    if ($installedVersion -eq $latestVersion) {
+        Write-Log -Text "DNSFilter Agent is up to date."
+        Remove-Item -Path $WorkingDirectory -Recurse -Force -ErrorAction SilentlyContinue
+        return
+    }
+}
+else {
+     Write-Output "DNSFilter Agent not found on the machine."
+}
+#endregion
+
+#region Install MSI
+try {
+    Write-Output "Starting DNSFilter installation..."
+
+    $arguments = "/qn /i `"$MSIPath`" NKEY=`"$secretKey`" /L*v `"$WorkingDirectory\install.log`""
+
+    $process = Start-Process -FilePath "msiexec.exe" ` -ArgumentList $arguments ` -Wait `
+    
+    $exitCode = $process.ExitCode
+    Write-Output "msiexec exit code: $exitCode"
+
+if ($exitCode -ne 0) {
+
+    $errorMessage = "DNSFilter installation failed with exit code $exitCode"
+
+    if (Test-Path "$WorkingDirectory\install.log") {
+        $logTail = (Get-Content "$WorkingDirectory\install.log" -Tail 50) -join "`n"
+        $errorMessage += "`n===== MSI LOG OUTPUT =====`n$logTail"
+    }
+
+    Write-Output $errorMessage
+
+}
+
+    Write-Output "MSI installation process completed. Verifying installation..."
+}
+catch {
+    Write-Output "Installation process error: $($_.Exception.Message)"
+    return
+}
+#endregion
+
+
+#region Post-Install Validation (Registry Check)
+
+    Start-Sleep -Seconds 5
+
+    $installedApp = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -match 'DNSFilter' } | Select-Object -First 1
+
+    if (-not $installedApp) {
+        throw "Failed to install DNSFilter Agent."
+
+    $installedVersion = $installedApp.DisplayVersion
+    Write-Output "Installed DNSFilter Agent version detected: $installedVersion"
+
+    if ($installedVersion -ne $latestVersion) {
+        throw "Installed version ($installedVersion) does not match expected version ($latestVersion)."
+    }
+
+    Write-Output "DNSFilter Agent installation verified successfully."
+
+#endregion
 ```
 
 ![Image3](../../../static/img/docs/5f0490f8-c2ce-4afe-92a0-d75699150a24/image3.webp)
