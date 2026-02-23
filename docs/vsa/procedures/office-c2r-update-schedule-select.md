@@ -21,8 +21,6 @@ PowerShell 5.0+
 PS1
 Custom field
 
-## Custom field
-
 [cpval office channel status](/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5)
 
 ## Process
