@@ -11,19 +11,20 @@ unlisted: false
 ---
 
 ## Overview
-NinjaRMM wrapper for the agnostic ODSyncUtil script; formats results into NinjaRMM custom fields.
+NinjaRMM wrapper for the agnostic [ODSyncUtil](https://github.com/rodneyviana/ODSyncUtil/tree/master/ODSyncUtil) script that retrieves the OneDrive Sync Status and Quota Information. This data is then stored in a custom field [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f).
 
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
-![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
+
 
 Search and select `Get OneDrive Sync Status`
 ![Image1](../../../static/img/docs/d7a2d79d-7b3c-47bd-9666-492e423e7b97/image.webp)
 
 Set the required arguments and click the `Run` button to run the script.  
-**Run As:** `System`  
-**Preset Parameter:** `<Leave it Blank>`  
+- **Run As:** `System`  
+- **Preset Parameter:** `<Leave it Blank>` 
+
 ![Image2](../../../static/img/docs/d7a2d79d-7b3c-47bd-9666-492e423e7b97/image1.webp)
 
 **Run Automation:** `Yes`  
@@ -31,13 +32,13 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Dependencies
 
-https://github.com/rodneyviana/ODSyncUtil/blob/master/ODSyncUtil/Get-ODStatus.ps1
+- [Get-ODStatus](https://github.com/rodneyviana/ODSyncUtil/blob/master/ODSyncUtil/Get-ODStatus.ps1)
+- [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f)
 
 ## Automation Setup/Import
 
-[Get OneDrive Sync Status](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-onedrive-sync-status.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-onedrive-sync-status.ps1)  
 
-[cPVAL OneDrive Sync Status](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/cpval-onedrive-sync-status.toml)
 
 ## Output
 
