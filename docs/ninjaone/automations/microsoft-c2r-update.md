@@ -17,6 +17,7 @@ This script checks if Microsoft 365 Apps (Click-to-Run) is installed, reports th
 
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
+![image1](../../../static/img/docs/ba4df182-e419-4377-819f-ef55c34b0380/image1.webp)
 
 ## Automation Setup/Import
 
