@@ -22,10 +22,6 @@ Custom field
 
 [cpval office channel status](/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5)
 
-## Process
-
-This agent procedure is used to check the Channel Status on to the machine for Microsoft Office and update the result into a Custom field.
-Please note you need to create a Custom field into the create and need to map it with the agent procedure.
 
 ## Implementation
 

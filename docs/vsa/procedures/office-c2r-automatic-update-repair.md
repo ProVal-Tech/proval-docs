@@ -19,11 +19,6 @@ This document outlines the process to repair the Office Click2Run Automatic Upda
 PowerShell 5.0+
 PS1
 
-## Process
-
-This document outlines the process to repair the Office Click2Run Automatic Update on an endpoint and when anyone will execute the script on the endpoints then it will ask about the type of repair(Quick or Fullrepair).
-Please note it will close all the office package open on the endppoints.
-
 
 ## Implementation
 
