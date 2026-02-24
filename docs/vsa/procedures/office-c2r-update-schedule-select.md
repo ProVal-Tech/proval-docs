@@ -48,6 +48,8 @@ This script will modify the registry to set the Update Channel for Microsoft 365
 5. Execute the agent procedure in the partne's VSA RMM and put the channel details that you want to set:
    ![Image](../../../static/img/docs/d401a54a-5bff-4d37-8fdf-001220f73fb5/Execution.webp)
 
+6. Once the above script will execute then it will check the channel status and update the custom field as well on the machines.
+
 ## Output
 
 Agent procedure log 
