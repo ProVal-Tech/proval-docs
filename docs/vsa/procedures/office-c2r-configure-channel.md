@@ -1,8 +1,8 @@
 ---
 id: 'd401a54a-5bff-4d37-8fdf-001220f73fb5'
 slug: /d401a54a-5bff-4d37-8fdf-001220f73fb5
-title: 'Office C2R Set Channel'
-title_meta: 'Office C2R Set Channel'
+title: 'Office C2R Configure Channel'
+title_meta: 'Office C2R Configure Channel'
 keywords: ['microsoft', 'update', 'click2run', 'office', 'installation']
 description: 'This document provides a detailed guide on how to set the Microsoft Update Channel for a Click2Run Office installation on an endpoint using an agent procedure that contains a PS1 and it will ask for the variable at the scritp run time. It includes a summary, example agent procedure logs, and expected output for successful execution.'
 tags: ['office', 'office365', 'microsoft365', 'update']
