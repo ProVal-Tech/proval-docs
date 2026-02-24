@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-The purpose of the soultion to update the check and update the Autopilot Hash into the Custom filed.
+The purpose of the soultion to check and update the Autopilot Hash into a custom field.
 
 ## Associated Content
 
@@ -20,19 +20,19 @@ The purpose of the soultion to update the check and update the Autopilot Hash in
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Custom Field - cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) | `Custom Field` | This field stores the Windows Autopilot hardware hash value. |
+| [cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) | `Custom Field` | This field stores the Windows Autopilot hardware hash value. |
 
 #### Device Group
 
 | Content                                                                                          | Type      | Description                                                                                                 |
 |--------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------|
-| [Group - cPVAL Autopilot Hash - Not Updated](/docs/40f1253f-42d4-49ac-adad-26b940cd11b8) | `Group`   | This Group shows machines where autopilot Hash is not updated. So that we will target that group to update the Autopilot Hash.                                        |
+| [ cPVAL Autopilot Hash - Not Updated](/docs/40f1253f-42d4-49ac-adad-26b940cd11b8) | `Group`   | This Group shows machines where custom field [cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) is not updated.                                      |
 
 #### Automation
 
 | Content                                                                                          | Type          | Description                                                                                                 |
 |--------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------|
-| [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5)     | `Script` | This script fetches the device Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the cPValAutopilotHash custom field with the value. Must be run with Administrator privileges.                                           |
+| [Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5)     | `Script` | This script fetches the device Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the [cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) custom field with the value. Must be run with Administrator privileges.                                           |
 
 ## Implementation
 

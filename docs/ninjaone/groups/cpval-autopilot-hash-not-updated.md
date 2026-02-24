@@ -12,13 +12,13 @@ unlisted: false
 
 ## Summary
 
-This Group shows machines where autopilot Hash is not updated. So that we will target that group to update the Autopilot Hash.
+This Group shows machines where [cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) is not updated. This group is used as the target for automation [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5) to collect and update the custom field on those devices.
 
 ## Details
 
 | Name       | Description |
 | ---------- | ----------- |
-| cPVAL Autopilot Hash - Not Updated | This group shows machines where Autopilot Hash is not updated |
+| cPVAL Autopilot Hash - Not Updated | This group shows machines where custom field 'cPVAL AutoPilot Hash' is not updated. |
 
 ## Dependencies
 
