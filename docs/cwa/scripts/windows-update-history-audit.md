@@ -7,7 +7,7 @@ keywords: ['windows', 'update', 'data', 'epm', 'report']
 description: 'This document provides a comprehensive overview of a script that gathers Windows update data and enters it into the EPM - Custom Table - pvl_windows_updates. It includes details on dependencies, variables, global parameters, and the expected output.'
 tags: ['database', 'report', 'update', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
