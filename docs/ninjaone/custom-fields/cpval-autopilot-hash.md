@@ -23,6 +23,7 @@ This custom field is used to store the Windows Autopilot hardware hash value. Th
 ## Dependencies
 
 - [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5)
+- [Solution - Get - AutoPilot Hash - NinjaOne](/docs/d5b749b5-eda4-43d2-8679-eb88f51a3527)
 
 ## Custom Field Creation
 

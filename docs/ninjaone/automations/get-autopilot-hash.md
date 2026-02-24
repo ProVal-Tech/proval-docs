@@ -22,6 +22,7 @@ This script fetches the device's Autopilot Hardware Hash using CIM/WMI from the 
 ## Dependencies
 
 - [Custom Field - cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a)
+- [Solution - Get - AutoPilot Hash - NinjaOne](/docs/d5b749b5-eda4-43d2-8679-eb88f51a3527)
 
 ## Automation Setup/Import
 
