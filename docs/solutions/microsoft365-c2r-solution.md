@@ -12,7 +12,7 @@ unlisted: false
 
 ## Purpose
 
-The aim is to get the office channel details, update and repair the c2r and set the channel on the machine.
+The aim is to get the office channel details, update and repair the c2r and set the channel on the machines.
 
 ## Associated Content
 
