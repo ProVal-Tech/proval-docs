@@ -7,7 +7,7 @@ keywords: ['dell', 'command', 'configure', 'script', 'automation']
 description: 'This document provides an overview of a script designed to execute commands using the Dell Command Configure application. It outlines the installation requirements, sample runs, dependencies, user parameters, and the process involved in utilizing the script effectively.'
 tags: ['installation', 'software', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

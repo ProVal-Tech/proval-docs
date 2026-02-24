@@ -7,7 +7,7 @@ keywords: ['monitor', 'tickets', 'alerts', 'synchronization', 'cwmanage']
 description: 'This document outlines the setup and dependencies for the Unsynced Ticket Comments Monitor, which alerts partners about any ticket comments that have not been synchronized with CW Manage. It includes details on required plugins and configuration steps to ensure alerts are sent correctly.'
 tags: ['cwmanage', 'email']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

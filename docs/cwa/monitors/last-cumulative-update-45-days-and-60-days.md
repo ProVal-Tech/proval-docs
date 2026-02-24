@@ -7,7 +7,7 @@ keywords: ['cumulative', 'update', 'monitor', 'alert', 'ticketing']
 description: 'This document outlines a monitor set that identifies computers with cumulative updates installed between 45 and 60 days ago, excluding End-of-Life machines. It includes dependencies and a custom alert template for efficient tracking and management.'
 tags: ['ticketing', 'windows']
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary

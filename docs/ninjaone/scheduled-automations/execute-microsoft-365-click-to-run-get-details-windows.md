@@ -25,6 +25,6 @@ Executes "Microsoft 365 - Click-to-Run - Get Details" script on windows machines
 - [Microsoft 365 - Click-to-Run - Get Details - Windows](/docs/91dda79f-b6ad-440f-8a08-b5150d7e2a93)
 
 
-## Condition Creation
+## Scheduled Automations Creation
 
-[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/execute-microsoft-365-click-to-run-get-details-windows.toml)
+[Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/execute-microsoft-365-click-to-run-get-details-windows.toml)

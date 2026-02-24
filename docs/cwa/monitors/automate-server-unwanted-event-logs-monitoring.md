@@ -7,7 +7,7 @@ keywords: ['ticket', 'monitoring', 'automate', 'event', 'error', 'critical']
 description: "This document outlines the setup for a remote monitor that generates an urgent ticket in ProVal's Autotask portal when critical events from specified sources occur more than 10 times within 60 minutes on the Automate server. It is specifically designed for On-Prem partners and includes detailed configuration settings and dependencies."
 tags: ['autotask']
 draft: false
-unlisted: false
+unlisted: True
 ---
 
 ## Summary
