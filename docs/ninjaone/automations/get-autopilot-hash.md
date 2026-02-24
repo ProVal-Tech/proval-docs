@@ -12,7 +12,7 @@ unlisted: false
 
 ## Overview
 
-This script fetches the device's Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the 'cPValAutopilotHash' custom field with the value. Must be run with Administrator privileges.
+This script fetches the device's Autopilot Hardware Hash using CIM/WMI from the MDM namespace. Once retrieved, it validates the hash format and updates the [cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a) custom field with the value. Must be run with Administrator privileges.
 
 ## Sample Run
 

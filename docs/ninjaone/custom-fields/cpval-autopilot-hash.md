@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This custom field is used to store the Windows Autopilot hardware hash value. This data is retreived by the automation [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5).
+This custom field is used to store the Windows Autopilot hardware hash value. This data is retreived by the automation [Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5).
 
 ## Details
 
