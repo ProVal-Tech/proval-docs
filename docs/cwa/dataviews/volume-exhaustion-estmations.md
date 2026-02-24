@@ -7,16 +7,17 @@ keywords: ['volume', 'monitor', 'space', 'computer', 'client', 'location', 'driv
 description: 'This document provides a summary of the volume information gathered by the CWM - Automate script for monitoring free space. It details the columns used to display relevant data about computer volumes, including size, remaining space, and estimated exhaustion date.'
 tags: []
 draft: false
-unlisted: false
+unlisted: true
 ---
 
 ## Summary
 
-Displays volume information gathered by [CWM - Automate - Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4).
+Displays volume information gathered by [Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4).
 
 ## Dependencies
 
-[CWM - Automate - Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4)
+- [Script - Volume Free Space - Monitor Creation](/docs/dee853b7-69a6-4f0d-ad2f-7238a10851f4)
+- [Solution - Predictive Volume Space Exhaustion Monitoring](/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/)
 
 ## Columns
 

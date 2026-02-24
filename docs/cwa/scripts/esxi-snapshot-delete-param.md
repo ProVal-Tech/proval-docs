@@ -1,8 +1,8 @@
 ---
 id: '830beb63-113a-406e-aef2-046403de9cb9'
 slug: /830beb63-113a-406e-aef2-046403de9cb9
-title: 'CWM - Automate - ESXi - Snapshot Delete Param'
-title_meta: 'CWM - Automate - ESXi - Snapshot Delete Param'
+title: 'ESXi - Snapshot Delete [Param]'
+title_meta: 'ESXi - Snapshot Delete [Param]'
 keywords: ['esxi', 'snapshot', 'delete', 'virtualmachine', 'automation']
 description: 'This document provides a comprehensive guide on using a PowerShell script to delete a snapshot of a machine hosted on an ESXi host server utilizing the PowerCLI module. It covers prerequisites, dependencies, user parameters, and alerting mechanisms for successful execution.'
 tags: ['alerting', 'email', 'esxi', 'logging']
@@ -39,9 +39,9 @@ This script can be used to delete a snapshot of a machine hosted on an ESXi host
 
 ## Dependencies
 
-[CWM - Automate - Script - ESXi - Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195)  
+- [Script - ESXi - Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195)  
 
-**Note:** This script can be scheduled with proper parameters to remove the snapshot created by the [CWM - Automate - Script - ESXi - Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195) script after `@Hours_To_Keep@` hours.
+**Note:** This script can be scheduled with proper parameters to remove the snapshot created by the [Snapshot Create [Param]](/docs/a2b7d882-f8a5-4273-b237-cabe1662f195) script after `@Hours_To_Keep@` hours.
 
 ## Variables
 

@@ -18,8 +18,9 @@ The data returned by the monitor set is displayed by the [Volume Exhaustion Esti
 
 ## Dependencies
 
-- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006)
-- [EPM - Disk - Dataview - Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587)
+- [Script - Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006)
+- [Dataview - Volume Exhaustion Estimations [Remote Monitor]](/docs/0db68132-d16e-4098-877c-8da269dfe587)
+- [Solution - Predictive Volume Space Exhaustion Monitoring](/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/)
 
 ## Monitor
 

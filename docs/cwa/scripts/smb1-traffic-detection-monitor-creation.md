@@ -56,8 +56,8 @@ Remote monitors will be set up on computers where the [SMB1 Detection](/docs/de6
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
-- [CWA - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
 
 ## User Parameters
 

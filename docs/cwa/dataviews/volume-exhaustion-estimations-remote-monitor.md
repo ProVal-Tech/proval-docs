@@ -1,8 +1,8 @@
 ---
 id: '0db68132-d16e-4098-877c-8da269dfe587'
 slug: /0db68132-d16e-4098-877c-8da269dfe587
-title: 'Volume Exhaustion Estimations Remote Monitor'
-title_meta: 'Volume Exhaustion Estimations Remote Monitor'
+title: 'Volume Exhaustion Estimations [Remote Monitor]'
+title_meta: 'Volume Exhaustion Estimations [Remote Monitor]'
 keywords: ['volume', 'monitor', 'exhaustion', 'disk', 'space', 'collection']
 description: 'This document provides an overview of the Volume Exhaustion Monitor, detailing how it displays volume information along with the estimated exhaustion date collected by the Volume Space Sampling remote monitor. It includes dependencies, column descriptions, and the data collected for effective monitoring.'
 tags: ['disk', 'report', 'virtualization', 'windows']
@@ -16,8 +16,9 @@ Displays volume information along with the estimated exhaustion date collected b
 
 ## Dependencies
 
-- [EPM - Disk - Script - Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006) 
-- [EPM - Disk - Remote Monitor - Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f) 
+- [Script - Predictive Volume Exhaustion Monitor Creation](/docs/d353ba91-e58f-4afb-b5da-1ac2eaeb2006) 
+- [Remote Monitor - Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f) 
+- [Solution - Predictive Volume Space Exhaustion Monitoring](/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/)
 
 ## Columns
 

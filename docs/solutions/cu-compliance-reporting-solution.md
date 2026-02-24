@@ -14,6 +14,10 @@ unlisted: false
 
 To provide clients with professional-looking patch management reports that they can confidently trust. These reports are based entirely on the cumulative update solution and a custom table.
 
+## Update Notice - Jan 2026:
+
+**Deprecated script:** `Create Views for Patch Compliance Report` 
+
 ## Reports Included
 
 | Content | Type | Function |
@@ -28,7 +32,7 @@ To provide clients with professional-looking patch management reports that they 
 
 | Content | Type | Function |
 | --- | --- | --- |
-| [Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) | Script | This script creates all the necessary items in the database to ensure the [CU Compliance Reporting](/docs/6dd7be85-8983-413b-8f56-1426446f25da) solution functions correctly. |
+| [MySQL - Views for Cumulative Update reports*](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) | Script | This script creates all the necessary items in the database to ensure the [CU Compliance Reporting](/docs/6dd7be85-8983-413b-8f56-1426446f25da) solution functions correctly. |
 
 ### Additional Content
 
@@ -51,8 +55,8 @@ This solution relies on the following components to function correctly:
 1. Ensure the [Solution - Latest Installed Cumulative Update](/docs/991e926f-dcd2-4be3-9f3a-ea7ee9842da2) is imported and up to date in the environment. The audit script must be running regularly for this report to show accurate data.
 2. Ensure the [Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) exists and is up-to-date.
 3. Import the following script from the ProSync Plugin:
-   * [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526)
-4. Run the [Script - Create Views for Patch Compliance Report](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) on any machine to create the views necessary for this solution. After running the script once, it can be deleted from the environment.
+   * [Script - MySQL - Views for Cumulative Update reports*](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526)
+4. Run the [Script - MySQL - Views for Cumulative Update reports*](/docs/7174f88a-38fc-4e5a-83cc-1f48a6c29526) on any machine to create the views necessary for this solution. After running the script once, it can be deleted from the environment.
 5. Download and import the [cu_compliance_reports.sql](../../static/attachments/6dd7be85-8983-413b-8f56-1426446f25da/cu-compliance-reports.sql) to the environment.
 6. Reload the system cache:  
   ![Reload Cache](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_1.webp)
