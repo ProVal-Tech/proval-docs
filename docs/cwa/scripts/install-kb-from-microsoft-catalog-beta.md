@@ -16,6 +16,14 @@ This Automate script locates a specific Microsoft KB update, checks that it appl
 
 By default the integration runs in safe listing mode: it reports matching catalog entries, direct download URLs, and any supersedence information without downloading or installing anything. If you explicitly confirm compatibility and provide install consent in Automate, the integration moves into installation mode: it prepares the system (resets Windows Update components if necessary), downloads the selected file using BITS, and runs the correct installer for the package type (.msu → wusa.exe, .cab → dism.exe, .exe → installer). The integration returns structured results (exit code, friendly status, reboot requirement, and install log path) and removes the downloaded file after installation.
 
+**NOTE:** This process does not automatically reboot the machine. Instead, it enables the reboot flag after the patch is successfully installed and a reboot is necessary.
+
+## File Hash
+
+- **File Path:** `C:\ProgramData\_automation\Script\Install-KBIDFromMicrosoftCatalog\Install-KBIDFromMicrosoftCatalog.ps1`  
+- **File Hash (Sha256):** `4E01F0806F8E3B99E2A929F31E7925A526A4F474A80026063696F120E68CCA0D`  
+- **File Hash (MD5):** `761C42B34F7673EE135FB93C2FB96E70`   
+
 ## Sample Run
 
 ### Example 1
