@@ -12,12 +12,13 @@ unlisted: false
 
 ## Summary
 
-This detects the online Windows Workstations that have the `Intel® Driver & Support Assistant` installed.
+This detects the online Windows Workstations that have the `Intel® Driver & Support Assistant` installed to perform uninstallation.
 
 ## Dependencies
 
 - `Alert Template - △ Custom - Execute Script - Intel DSA Uninstall`
 - [Script - Intel DSA uninstall](/docs/1d65e4c6-7d5c-419d-9e53-6cf3f12f6fff)
+- [Intel® Driver & Support Assistant Solution](/docs/26bda8e8-6bca-46c3-894f-3eb838340982)
 
 ## Target
 
@@ -27,7 +28,7 @@ This detects the online Windows Workstations that have the `Intel® Driver & Sup
 
 - Import the monitor
 - Import the [Script - Intel DSA uninstall](/docs/1d65e4c6-7d5c-419d-9e53-6cf3f12f6fff)
-- Import the `Alert Template - △ Custom - Execute Script - Intel DSA Uninstall`
-- Apply the `Alert Template - △ Custom - Execute Script - Intel DSA Uninstall` to the monitor
+- Import the alert template - `△ Custom - Execute Script - Intel DSA Uninstall`
+- Apply the alert template - `△ Custom - Execute Script - Intel DSA Uninstall` to the monitor
 - Right click the monitor and then click `Run now and Reset`
   ![Sample Run 1](../../../static/img/docs/fb522a1e-8ebd-43fd-9f18-f47bfd63f6df/image3.webp)

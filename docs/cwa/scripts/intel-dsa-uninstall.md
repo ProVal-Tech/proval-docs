@@ -16,13 +16,13 @@ Silently uninstalls Intel® Driver & Support Assistant (DSA) on eligible Windows
 
 ## File Hash
 
-**Potential File Name:** `C:\ProgramData\_Automation\Script\Intel-DSA\Intel-DSA-Uninstall.ps1`  
-**File Hash (Sha256):** `D7FF5B2BC1BE68BFB0C53D7F9992F8BB021C808D50B7EB0AE8AC4BEDA238A82F`  
-**File Hash (MD5):** `9DC6F4DEC9B292F702AC9866E845BB2F`  
+- **Potential File Name:** `C:\ProgramData\_Automation\Script\Intel-DSA\Intel-DSA-Uninstall.ps1`  
+- **File Hash (Sha256):** - `D7FF5B2BC1BE68BFB0C53D7F9992F8BB021C808D50B7EB0AE8AC4BEDA238A82F`  
+- **File Hash (MD5):** `9DC6F4DEC9B292F702AC9866E845BB2F`  
 
 ## Dependencies
 
-
+- [Intel® Driver & Support Assistant Solution](/docs/26bda8e8-6bca-46c3-894f-3eb838340982)
 
 ## Sample Run
 
@@ -36,11 +36,10 @@ Silently uninstalls the Intel® Driver & Support Assistant (DSA) on eligible end
   - Skips systems without Intel chipset/devices.
   - Skips if DSA not present.
 
-.NOTES
-  Tested with PowerShell 5.1 on Windows 10/11.
 
-Article referred:
-https://silentinstallhq.com/intel-driver-support-assistant-silent-install-how-to-guide
+
+**Article referred:
+https://silentinstallhq.com/intel-driver-support-assistant-silent-install-how-to-guide**
 
 ## Output
 

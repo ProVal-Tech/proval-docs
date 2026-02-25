@@ -20,7 +20,7 @@ This document contains the automation for the Intel DSA deployment and uninstall
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Intel DSA Install](/docs/956ab7bd-320c-49b9-be27-1783976994d2)      | Script | Silently installs `Intel® Driver & Support Assistant` (DSA) on eligible Windows Workstations |
 | [Intel DSA Deployment](/docs/eff35c87-7793-4eae-bd7b-23daf13267b6)      | Internal Monitor | This detects the online Windows Workstations that have an Intel Processor, and the deployment EDF is selected at the client level, and the `Intel® Driver & Support Assistant` is not installed |
-| `**△ Custom - Execute Script - Intel DSA Install**`      | Alert Template | Apply the alert template to the [Monitor - Intel DSA Deployment](/docs/eff35c87-7793-4eae-bd7b-23daf13267b6) so that Intel DSA can be installed via [Script - Intel DSA Install](/docs/956ab7bd-320c-49b9-be27-1783976994d2) on the detected agents.   |
+| `△ Custom - Execute Script - Intel DSA Install`      | Alert Template | Apply the alert template to the [Monitor - Intel DSA Deployment](/docs/eff35c87-7793-4eae-bd7b-23daf13267b6) so that Intel DSA can be installed via [Script - Intel DSA Install](/docs/956ab7bd-320c-49b9-be27-1783976994d2) on the detected agents.   |
 
 ## Associated Uninstallation Content
 
@@ -28,7 +28,7 @@ This document contains the automation for the Intel DSA deployment and uninstall
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Intel DSA uninstall](/docs/1d65e4c6-7d5c-419d-9e53-6cf3f12f6fff)      | Script | Silently uninstalls `Intel® Driver & Support Assistant` (DSA) on eligible Windows Workstations |
 | [Intel DSA Uninstall](/docs/a0bada01-f2d4-4e3d-a4d4-7aa558ec27a3)      | Internal Monitor | This detects the online Windows Workstations that have the `Intel® Driver & Support Assistant` installed. |
-| `**△ Custom - Execute Script - Intel DSA Uninstall**`      | Alert Template | Apply the alert template to the [Monitor - Intel DSA Uninstall](/docs/a0bada01-f2d4-4e3d-a4d4-7aa558ec27a3) so that Intel DSA can be uninstalled via [Script - Intel DSA uninstall](/docs/1d65e4c6-7d5c-419d-9e53-6cf3f12f6fff) on the detected agents.   |
+| `△ Custom - Execute Script - Intel DSA Uninstall`      | Alert Template | Apply the alert template to the [Monitor - Intel DSA Uninstall](/docs/a0bada01-f2d4-4e3d-a4d4-7aa558ec27a3) so that Intel DSA can be uninstalled via [Script - Intel DSA uninstall](/docs/1d65e4c6-7d5c-419d-9e53-6cf3f12f6fff) on the detected agents.   |
 
 ## Implementation
 

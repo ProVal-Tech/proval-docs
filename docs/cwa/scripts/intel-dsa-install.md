@@ -12,17 +12,17 @@ unlisted: false
 
 ## Summary
 
-Silently installs `Intel® Driver & Support Assistant` (DSA) on eligible Windows Workstations
+Silently installs `Intel® Driver & Support Assistant` (DSA) on eligible Windows Workstations.
 
 ## File Hash
 
-**Potential File Name:** `C:\ProgramData\_Automation\Script\Intel-DSA\Intel-DSA-Install.ps1`  
-**File Hash (Sha256):** `FED5144BDC6418F2CA4AB85F5049377E54F6AB582B3134A5EF5F89C0B16DEBEE`  
-**File Hash (MD5):** `37443CA1E579E6B299FDC743FE89BAAD`  
+- **Potential File Name:** `C:\ProgramData\_Automation\Script\Intel-DSA\Intel-DSA-Install.ps1`  
+- **File Hash (Sha256):** `FED5144BDC6418F2CA4AB85F5049377E54F6AB582B3134A5EF5F89C0B16DEBEE`  
+- **File Hash (MD5):** `37443CA1E579E6B299FDC743FE89BAAD`  
 
 ## Dependencies
 
-
+- [Intel® Driver & Support Assistant Solution](/docs/26bda8e8-6bca-46c3-894f-3eb838340982)
 
 ## Sample Run
 
@@ -40,11 +40,11 @@ Silently installs `Intel® Driver & Support Assistant` (DSA) on eligible Windows
 
 ## EDFs
 
-| Name | Type | Level | Required | Editable | Description |
-| ---------------- | -------- | -------- | ------- | ------- | --------------------------------------------------------------------------- |
-| Intel DSA Deploy | Checkbox | Client | True | Yes | This EDF is required to be selected for the automated deployment of the Intel DSA on the Windows workstations that has Intel Processor |
-| Exclude Intel DSA Deploy | Checkbox | Location | False | Yes | If this EDF is checked, the agents of the location will be excluded from the Intel DSA deployment |
-| Exclude Intel DSA Deploy | Checkbox | Computer | False | Yes | If this EDF is checked, the agent will be excluded from the Intel DSA deployment |
+| Name | Type | Level | Section | Required | Editable | Description |
+| ---------------- | -------- | -------- | ------- | ------- | ------- | --------------------------------------------------------------------------- |
+| Intel DSA Deploy | Checkbox | Client | Intel DSA  |  True | Yes | This EDF is required to be selected for the automated deployment of the Intel DSA on the Windows workstations that has Intel Processor |
+| Exclude Intel DSA Deploy | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the Intel DSA deployment |
+| Exclude Intel DSA Deploy | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the Intel DSA deployment |
 
 ## Process
 
@@ -53,11 +53,9 @@ Silently installs Intel® Driver & Support Assistant (DSA) on eligible endpoints
   - Skips systems without Intel chipset/devices.
   - Skips if DSA already present.
 
-.NOTES
-  Tested with PowerShell 5.1 on Windows 10/11.
 
-Article referred:
-https://silentinstallhq.com/intel-driver-support-assistant-silent-install-how-to-guide
+**Article referred:
+https://silentinstallhq.com/intel-driver-support-assistant-silent-install-how-to-guide**
 
 
 ## Output
