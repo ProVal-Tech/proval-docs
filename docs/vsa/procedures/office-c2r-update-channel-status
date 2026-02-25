@@ -12,34 +12,32 @@ unlisted: false
 
 ## Summary
 
-This agent procedure is used to check the Channel Status on to the machine for Microsoft Office and update the result into a Custom field.
+This agent procedure is used to check the Channel Status on to the machine for Microsoft Office and update the result into a custom field.
 
 ## Dependencies
 
-PowerShell 5.0+
-PS1
-Custom field
-
-[cpval office channel status](/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5)
+- PowerShell 5.0+
+- [Custom Field - cPVAL Office Channel Status](/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5)
+- [Solution - Microsoft365 Click-to-Run Solution](/docs/f8deaddc-02c1-492d-b9dc-381a653de0e5) 
 
 
 ## Implementation
 
-1. Export the agent procedure from ProVal's VSA RMM instance.  
-   **Name:** Office C2R Update Channel Status 
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/1.webp)  
-   The export will download the necessary XML file.  
+1. Export the agent procedure from ProVal's VSA RMM instance.    
+   **Name:** `Office C2R Update Channel Status`  
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/1.webp)   
+   The export will download the necessary XML file.    
    ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/2.webp)  
    
-2. Import this XML file into the partner's VSA RMM instance.  
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/3.webp)  
+2. Import this XML file into the partner's VSA RMM instance.    
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/3.webp)   
 
-3. Export the PS1 from the Proval Internal VSA
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/30.webp)
+3. Export the PS1 from the ProVal's Internal VSA   
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/30.webp)  
 
-4. Mapped it into the script in the client environment
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/31.webp)
+4. Map it into the script in the client's environment  
+   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/31.webp)  
 
 ## Output
 
-Agent Procedure log
+- Agent Procedure log

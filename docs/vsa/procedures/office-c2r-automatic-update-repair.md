@@ -16,14 +16,14 @@ This document outlines the process to repair the Office Click2Run Automatic Upda
 
 ## Dependencies
 
-PowerShell 5.0+
-PS1
+- PowerShell 5.0+
+- [Solution - Microsoft365 Click-to-Run Solution](/docs/f8deaddc-02c1-492d-b9dc-381a653de0e5) 
 
 
 ## Implementation
 
-1. Export the agent procedure from ProVal's VSA RMM instance.  
-   **Name:** Office C2R Update Channel Status 
+1. Export the agent procedure from ProVal's VSA RMM instance.   
+   **Name:** `Office C2R Automatic Update Repair`   
    ![Image](../../../static/img/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c/11.webp)  
    The export will download the necessary XML file.  
    ![Image](../../../static/img/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c/12.webp)  
@@ -31,10 +31,10 @@ PS1
 2. Import this XML file into the partner's VSA RMM instance.  
    ![Image](../../../static/img/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c/3.webp)  
 
-3. Export the PS1 from the Proval Internal VSA
+3. Export the PS1 from the Proval Internal VSA  
    ![Image](../../../static/img/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c/61.webp)
 
-4. Mapped it into the script in the client environment
+4. Map it into the script in the client's environment  
    ![Image](../../../static/img/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c/62.webp) 
 
 5. Execute the agent procedure in the partne's VSA RMM and put the Repair type that you want to do:
@@ -42,4 +42,4 @@ PS1
 
 ## Output
 
-Agent Procedure History Log
+- Agent Procedure History Log
