@@ -1,8 +1,8 @@
 ---
 id: '15ecac3c-fe43-4d04-9e6c-82099bfa356b'
 slug: /15ecac3c-fe43-4d04-9e6c-82099bfa356b
-title: 'Cybercns Agent Installation'
-title_meta: 'Cybercns Agent Installation'
+title: 'Cybercns Agent Installation [Windows, MAC]'
+title_meta: 'Cybercns Agent Installation [Windows, MAC]'
 keywords: ['cybercns', 'agent', 'installation', 'client', 'edf']
 description: 'This document provides a comprehensive guide on installing the CyberCNS agent on a computer, detailing the requirements, EDFs, and the process involved in the installation.'
 tags: ['installation', 'software']
@@ -36,13 +36,13 @@ Run without SetEnvironment, for the deployment
 
 ## EDFs
 
-Document the various client-level EDFs in the script. 
+ 
 
-| Name | Type | Level | Editable | Required | Description |
-| ------------- | ------ | ------ | ----- | ----- | -------------------------------------------- |
-| `Cybercns Company ID` | Text | Client | Yes | True | This client EDF is created to store the CyberCNS company ID from the portal for the company whose agent must be installed. | 
-| `CyberCNS Tenant ID` | Text | Client | Yes | Partial True | This client EDF is created to store the CyberCNS tenant ID from the portal. |
-| `CyberCNS Token` | Text | Client | Yes | Partial True | This client EDF is created to store the CyberCNS token from the portal. |
+| Name | Type | Level | Section | Editable | Required | Description |
+| ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
+| `Cybercns Company ID` | Text | Client | CyberCNS| Yes | True | This client EDF is created to store the CyberCNS company ID from the portal for the company whose agent must be installed. | 
+| `CyberCNS Tenant ID` | Text | Client | CyberCNS |Yes | Partial True | This client EDF is created to store the CyberCNS tenant ID from the portal. |
+| `CyberCNS Token` | Text | Client | CyberCNS |  Yes | Partial True | This client EDF is created to store the CyberCNS token from the portal. |
 
 
 ## Properties
