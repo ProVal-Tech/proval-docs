@@ -16,8 +16,8 @@ This custom field contains the office channel status of the machines.
 
 ## Dependencies
 
-- [Office C2R Update Channel Status](/docs/bf426f89-7da1-4f4b-88b7-03983136458c)
-- [Office C2R Set Channel](/docs/d401a54a-5bff-4d37-8fdf-001220f73fb5)
+- [Office C2R - Get Channel Status](/docs/bf426f89-7da1-4f4b-88b7-03983136458c)
+- [Office C2R - Set Channel](/docs/d401a54a-5bff-4d37-8fdf-001220f73fb5)
 
 ## Details
 
@@ -26,5 +26,5 @@ This custom field contains the office channel status of the machines.
 | cPVAL Office Channel Status | Machine             | Stores the Microsoft Office update channel status detected on the endpoint. |
 
 ## Output
-
-![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_6.webp)
+Sample image:  
+![Image](../../../static/img/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5/image1.webp)
