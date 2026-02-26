@@ -26,8 +26,24 @@ Silently uninstalls Intel® Driver & Support Assistant (DSA) on eligible Windows
 
 ## Sample Run
 
+- Run the script with the `SetEnvironment` parameter set to 1 after import to get the required EDFs imported for the uninstallation and exclusions.
+![Sample Run 1](../../../static/img/docs/fb522a1e-8ebd-43fd-9f18-f47bfd63f6df/image4.webp)
+- Run without passing the parameter value to perform the uninstallation
 ![Sample Run 2](../../../static/img/docs/fb522a1e-8ebd-43fd-9f18-f47bfd63f6df/image2.webp)
 
+### User Parameters
+
+| **Name**              | **Example**       | **Required** | **Description**                                                                                          |
+|-----------------------|-------------------|--------------|----------------------------------------------------------------------------------------------------------|
+| `SetEnvironment`            | `1`               | `False`      | If set to `1`, it will import the required EDFs for the uninstallation and exclusions.           |
+
+## EDFs
+
+| Name | Type | Level | Section | Required | Editable | Description |
+| ---------------- | -------- | -------- | ------- | ------- | ------- | --------------------------------------------------------------------------- |
+| Intel DSA Uninstall | Checkbox | Client | Intel DSA  |  True | Yes | This EDF is required to be selected for the automated uninstallation of the Intel DSA on the Windows workstations that has Intel Processor |
+| Exclude Intel DSA Uninstall | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the Intel DSA Uninstallation |
+| Exclude Intel DSA Uninstall | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the Intel DSA Uninstallation |
 
 ## Process
 
