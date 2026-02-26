@@ -6,7 +6,7 @@ title_meta: 'Check Autopilot Hash'
 keywords: ['autopilot','custom-fields','auditing']
 description: 'This task is used to run the script to update the Autopilot hash under the Custom Filed.'
 tags: ['autopilot','custom-fields','auditing']
-draft: true
+draft: false
 unlisted: false
 ---
 
