@@ -14,14 +14,36 @@ unlisted: false
 
 This script will assist in uninstalling the ConnectSecure Vulnerability Scan Agent, otherwise known as the CyberCNS agent.
 
+## Sample Run
+
+Run the script with SetEnvironment = 1, after import to create the required EDFs for uninstallation automation.
+
+![Sample Run 1](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image8.webp)
+
+Run without SetEnvironment, for the uninstallation
+
+![Sample Run 2](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image7.webp)
+
+
 ## Dependencies
 
 - [Solution - CyberCNS Agent](/docs/f68fc157-ae00-4c3f-bb05-b53cefab28ac)
 
-## Sample Run
+### User Parameters
 
-![Sample Run](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image3.webp)
+| Name         | Example                                                           | Required | Description                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------ | ----------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SetEnvironment | 1 | False     | Run the script with SetEnvironment = 1, after import to create the required EDFs for the uninstallation. |
 
+## EDFs
+
+ 
+
+| Name | Type | Level | Section | Editable | Required | Description |
+| ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
+| `CyberCNS Uninstall` | Checkbox | Client | CyberCNS  |  True | Yes | This EDF is required to be selected for the automated uninstallation of the CyberCNS Agent. |
+| `Exclude CyberCNS Uninstall` | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the CyberCNS uninstallation |
+| `Exclude CyberCNS Uninstall` | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the CyberCNS uninstallation |
 
 
 ## Output

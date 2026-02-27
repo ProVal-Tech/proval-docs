@@ -16,7 +16,7 @@ This script installs the CyberCNS agent on a computer.
 
 ## Sample Run
 
-Run the script with SetEnvironment = 1, after import to create the required client-EDFs and system properties.
+Run the script with SetEnvironment = 1, after import to create the required EDFs and system properties.
 
 ![Sample Run 1](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image2.webp)
 
@@ -43,6 +43,9 @@ Run without SetEnvironment, for the deployment
 | `Cybercns Company ID` | Text | Client | CyberCNS| Yes | True | This client EDF is created to store the CyberCNS company ID from the portal for the company whose agent must be installed. | 
 | `CyberCNS Tenant ID` | Text | Client | CyberCNS |Yes | Partial True | This client EDF is created to store the CyberCNS tenant ID from the portal. |
 | `CyberCNS Token` | Text | Client | CyberCNS |  Yes | Partial True | This client EDF is created to store the CyberCNS token from the portal. |
+| `CyberCNS Deploy` | Checkbox | Client | CyberCNS  |  True | Yes | This EDF is required to be selected for the automated deployment of the CyberCNS Agent. |
+| `Exclude CyberCNS Deploy` | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the CyberCNS deployment |
+| `Exclude CyberCNS Deploy` | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the CyberCNS deployment |
 
 
 ## Properties
