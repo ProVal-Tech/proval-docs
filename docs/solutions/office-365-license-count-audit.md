@@ -4,7 +4,7 @@ slug: /4967b45b-e903-4176-ae5f-c4e095b5cdc5
 title: 'Office 365 License Count Audit'
 title_meta: 'Office 365 License Count Audit'
 keywords: ['office365','license','count']
-description: 'This solution automates the daily auditing of Microsoft 365 license usage and availability. By leveraging custom fields to securely store Azure AD application credentials and execution preferences at the organization level, the solution securely connects to the Microsoft Graph API. The collected license data is then parsed and displayed as an easy-to-read HTML table within a device-level custom field on the client's primary domain controller.'
+description: 'This solution automates the daily auditing of Microsoft 365 license usage and availability. By leveraging custom fields to securely store Azure AD application credentials and execution preferences at the organization level, the solution securely connects to the Microsoft Graph API. The collected license data is then parsed and displayed as an easy-to-read HTML table within a device-level custom field on the client''s primary domain controller.'
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
