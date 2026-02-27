@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-Silently uninstalls Intel® Driver & Support Assistant (DSA) on eligible Windows Workstations
+Silently uninstalls `Intel® Driver & Support Assistant (DSA)` on eligible Windows Workstations
 
 ## File Hash
 
@@ -42,8 +42,8 @@ Silently uninstalls Intel® Driver & Support Assistant (DSA) on eligible Windows
 | Name | Type | Level | Section | Required | Editable | Description |
 | ---------------- | -------- | -------- | ------- | ------- | ------- | --------------------------------------------------------------------------- |
 | Intel DSA Uninstall | Checkbox | Client | Intel DSA  |  True | Yes | This EDF is required to be selected for the automated uninstallation of the Intel DSA on the Windows workstations that has Intel Processor |
-| Exclude Intel DSA Uninstall | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the Intel DSA Uninstallation |
-| Exclude Intel DSA Uninstall | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the Intel DSA Uninstallation |
+| Exclude Intel DSA Uninstall | Checkbox | Location | Exclusions  |   False | Yes | If this EDF is checked, the agents of the location will be excluded from the Intel DSA Uninstallation. |
+| Exclude Intel DSA Uninstall | Checkbox | Computer |  Exclusions |   False | Yes | If this EDF is checked, the agent will be excluded from the Intel DSA Uninstallation. |
 
 ## Process
 
