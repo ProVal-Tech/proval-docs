@@ -51,7 +51,7 @@ Please note that this script is designed for professional use and requires a cer
 
 ## Sample Run
   
-![Image1](../../../static/img/docs/2caca618-6249-4f67-8bee-94538f69dae3/Image1.webp)
+![Image1](../../../static/img/docs/2caca618-6249-4f67-8bee-94538f69dae3/image1.webp)
 
 ## Dependencies
 
