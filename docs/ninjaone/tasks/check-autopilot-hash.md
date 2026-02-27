@@ -12,7 +12,7 @@ unlisted: false
 
 ## Summary
 
-This task is used to run the script to update the Autopilot hash under the Custom Filed [Custom Field - cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a).
+This task is used to run the script [Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5) to update the Autopilot hash under the [Custom Field - cPVAL AutoPilot Hash](/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a).
 
 ## Dependencies
 
@@ -25,7 +25,7 @@ This task is used to run the script to update the Autopilot hash under the Custo
 
 | Name       | Description | Allow Groups | Repeats | Recur every | Start At | Ends | Targets | Automations |
 | ---------- | ----------- | ------------ | ------- | ----------- | -------- | ---- | ------- | ----------- |
-| Check AutoPilot Hash | This task is used to run the script to update the Autopilot hash under the Custom Filed. | True | Daily | 1 day(s) | 02/26/2026 8:00 AM | Never | [Group - cPVAL Autopilot Hash - Not Updated](/docs/40f1253f-42d4-49ac-adad-26b940cd11b8) | [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5) |
+| Check AutoPilot Hash | Runs the script `Get - AutoPilot Hash` to update the custom field `cPVAL AutoPilot Hash`. | True | Daily | 1 day(s) | 02/26/2026 8:00 AM | Never | [Group - cPVAL Autopilot Hash - Not Updated](/docs/40f1253f-42d4-49ac-adad-26b940cd11b8) | [Automation - Get - AutoPilot Hash](/docs/d91bf7d6-5279-429d-b304-4876132453a5) |
 
 ## Task Creation
 

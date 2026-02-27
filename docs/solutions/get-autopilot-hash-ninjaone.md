@@ -38,7 +38,7 @@ The purpose of the soultion to check and update the Autopilot Hash into a custom
 
 | Content                                                                                          | Type          | Description                                                                                                 |
 |--------------------------------------------------------------------------------------------------|---------------|-------------------------------------|
-| [Task - Check Autopilot Hash](/docs/9a07b71d-98ae-4352-ae78-b568ab72b052)    | `Task` | This task is used to run the script to update the Autopilot hash under the Custom Filed.    |
+| [Check Autopilot Hash](/docs/9a07b71d-98ae-4352-ae78-b568ab72b052)    | `Task` | This task is used to run the script to update the Autopilot hash under the Custom Filed.    |
 
 ## Implementation
 
