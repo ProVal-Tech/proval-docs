@@ -86,7 +86,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 > > * Go to `Settings`.
 > > * Scroll down to locate the `Site ID` option.
 >
-> ![Image1](/static/img/docs/b5af697b-7eeb-4395-8962-44b76645fdc5/image2.webp)
+> ![Image1](../../static/img/docs/b5af697b-7eeb-4395-8962-44b76645fdc5/image2.webp)
 
 ### 2. How do I determine my Datto RMM Platform name?
 
@@ -96,7 +96,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 > > * NA: `Concord`, `Vidal`, or `Zinfandel`
 > > * APAC: `Syrah`
 >
-> ![Image2](/static/img/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f/image2.webp)
+> ![Image2](../../static/img/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f/image2.webp)
 
 ### 3. What operating systems are supported by this automatic deployment solution?
 
