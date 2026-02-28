@@ -20,27 +20,27 @@ This solution outlines the full process for automatically deploying the Datto RM
 
 | Name | Example | Type | Level | Required | Purpose |
 | --- | --- | --- | --- | --- | --- |
-| [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645fdc5) | `6ef3f5aa-81b7-400c-a667-02075f98ba15` | Text | COMPANY | Yes | The Site ID of the target site in the Datto RMM portal that the agent will check into after installation. |
+| [Datto RMM Site ID](/docs/b5af697b-7eeb-4395-8962-44b76645fdc5) | `6ef3f5aa-81b7-400c-a667-02075f98ba15` | Text | COMPANY | Yes | The Site ID of the target site in the Datto RMM portal that the agent will check into after installation. |
 
 ### Groups
 
 | Name | Purpose |
 | --- | --- |
-| [Datto RMM Agent Installation [MAC]](docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15) | Dynamic group targeting Mac devices (Darwin) where the Datto RMM Agent is not installed and the Site ID is populated. |
-| [Datto RMM Agent Installation [Windows]](docs/f2349473-6980-4336-a294-37d9cdbc7e4d) | Dynamic group targeting Windows devices where the Datto RMM Agent is not installed and the Site ID is populated. |
+| [Datto RMM Agent Installation [MAC]](/docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15) | Dynamic group targeting Mac devices (Darwin) where the Datto RMM Agent is not installed and the Site ID is populated. |
+| [Datto RMM Agent Installation [Windows]](/docs/f2349473-6980-4336-a294-37d9cdbc7e4d) | Dynamic group targeting Windows devices where the Datto RMM Agent is not installed and the Site ID is populated. |
 
 ### Monitors
 
 | Name | Type | Schedule | Purpose |
 | --- | --- | --- | --- |
-| [Install Datto RMM Agent [MAC]](docs/0b216db3-7775-4754-b9bb-bfad7f9757ad) | File System | On File State | Checks for the absence of the macOS app path and triggers the install script on missing agents. |
-| [Install Datto RMM Agent [Windows]](docs/0562cbb5-db83-486a-84ae-730abd583fab) | File System (Script Condition) | Every 1 Hour | Monitors service status via PowerShell script and triggers the install task on devices missing the Datto RMM agent. |
+| [Install Datto RMM Agent [MAC]](/docs/0b216db3-7775-4754-b9bb-bfad7f9757ad) | File System | On File State | Checks for the absence of the macOS app path and triggers the install script on missing agents. |
+| [Install Datto RMM Agent [Windows]](/docs/0562cbb5-db83-486a-84ae-730abd583fab) | File System (Script Condition) | Every 1 Hour | Monitors service status via PowerShell script and triggers the install task on devices missing the Datto RMM agent. |
 
 ### Task
 
 | Name | Purpose |
 | --- | --- |
-| [Install Datto RMM Agent](docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) | Executes the installation process for the Datto RMM Agent on both Windows and Mac machines utilizing parameters and site IDs. |
+| [Install Datto RMM Agent](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) | Executes the installation process for the Datto RMM Agent on both Windows and Mac machines utilizing parameters and site IDs. |
 
 ## Implementation
 
@@ -48,31 +48,31 @@ This solution outlines the full process for automatically deploying the Datto RM
 
 Create the required custom field under `SETTINGS → Custom Fields` in CW RMM. See the documentation page for configuration details.
 
-* [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645fdc5)
+* [Datto RMM Site ID](/docs/b5af697b-7eeb-4395-8962-44b76645fdc5)
 
 ### Step 2: Create the Dynamic Groups
 
 Create the targeting groups under `ENDPOINTS → Groups` as dynamic groups. These groups should target endpoints where the Custom Field is correctly filled.
 
-* [Datto RMM Agent Installation [MAC]](docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15)
-* [Datto RMM Agent Installation [Windows]](docs/f2349473-6980-4336-a294-37d9cdbc7e4d)
+* [Datto RMM Agent Installation [MAC]](/docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15)
+* [Datto RMM Agent Installation [Windows]](/docs/f2349473-6980-4336-a294-37d9cdbc7e4d)
 
 ### Step 3: Create the Installation Task
 
 Create the install script task under `AUTOMATION → Tasks` as a `Script Editor` type. Configure the required `Platform` user parameter, apply the custom field variable, and paste in the distinct PowerShell and Bash scripts from the referenced documentation.
 
-* [Install Datto RMM Agent](docs/7920577d-9a4a-48d0-9102-b01c27c2e00f)
+* [Install Datto RMM Agent](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f)
 
 ### Step 4: Set up the Deployment Monitors
 
 Configure the deployment monitors under `ENDPOINTS → Alerts → Monitors` to target the respective dynamic device groups. Set the Mac monitor to check for file existence, and the Windows monitor to run its conditional script every 1 hour. Both monitors should trigger the installation task if the agent is missing.
 
-* [Install Datto RMM Agent [MAC]](docs/0b216db3-7775-4754-b9bb-bfad7f9757ad)
-* [Install Datto RMM Agent [Windows]](docs/0562cbb5-db83-486a-84ae-730abd583fab)
+* [Install Datto RMM Agent [MAC]](/docs/0b216db3-7775-4754-b9bb-bfad7f9757ad)
+* [Install Datto RMM Agent [Windows]](/docs/0562cbb5-db83-486a-84ae-730abd583fab)
 
 ### Step 5: Fetch and Apply Target Values
 
-Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645fdc5) from your Datto RMM portal (`Sites` > `<Desired Site>` > `Settings`) and apply it to the respective CW RMM companies. Ensure the `Platform` parameter in the [Install Datto RMM Agent](docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) task is set to your instance name (e.g., Merlot, Pinotage, Concord, etc.).
+Retrieve your specific [Datto RMM Site ID](/docs/b5af697b-7eeb-4395-8962-44b76645fdc5) from your Datto RMM portal (`Sites` > `<Desired Site>` > `Settings`) and apply it to the respective CW RMM companies. Ensure the `Platform` parameter in the [Install Datto RMM Agent](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) task is set to your instance name (e.g., Merlot, Pinotage, Concord, etc.).
 
 ## FAQ
 
@@ -111,7 +111,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 ### 5. How often does the system check for missing Windows agents?
 
-> The [Install Datto RMM Agent [Windows]](https://www.google.com/search?q=/docs/0562cbb5-db83-486a-84ae-730abd583fab) monitor is scheduled to run a conditional PowerShell script every 1 hour to check the installation status.
+> The [Install Datto RMM Agent [Windows]](/docs/0562cbb5-db83-486a-84ae-730abd583fab) monitor is scheduled to run a conditional PowerShell script every 1 hour to check the installation status.
 
 ### 6. How does the macOS monitor determine if the agent needs to be installed?
 
@@ -132,7 +132,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 ### 8. Can I exclude a specific endpoint from the automatic deployment?
 
-> Yes. The dynamic groups rely on the [Datto RMM Site ID](https://www.google.com/search?q=/docs/b5af697b-7eeb-4395-8962-44b76645fdc5) custom field. To exclude an endpoint:
+> Yes. The dynamic groups rely on the [Datto RMM Site ID](/docs/b5af697b-7eeb-4395-8962-44b76645fdc5) custom field. To exclude an endpoint:
 >
 > > * Clear the custom field for that specific device (leave it blank).
 > > * Alternatively, type `NA` into the custom field.
@@ -141,7 +141,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 ### 9. Can I manually trigger the Datto RMM Agent installation?
 
-> Absolutely. The [Install Datto RMM Agent](https://www.google.com/search?q=/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) task can be executed manually against any device at any time, independently of the monitor or dynamic group status.
+> Absolutely. The [Install Datto RMM Agent](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) task can be executed manually against any device at any time, independently of the monitor or dynamic group status.
 
 ### 10. What user permissions are used to run the installation scripts?
 
@@ -153,7 +153,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 ### 12. Why are my Mac endpoints not appearing in the deployment group?
 
-> For a Mac to populate in the [Datto RMM Agent Installation [MAC]](https://www.google.com/search?q=/docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15) group, it must strictly meet three criteria:
+> For a Mac to populate in the [Datto RMM Agent Installation [MAC]](/docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15) group, it must strictly meet three criteria:
 >
 > > * `OS Type` is Equal to `Darwin`.
 > > * `Datto RMM Site ID` is Not Blank.
@@ -161,7 +161,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 ### 13. Why are my Windows endpoints not appearing in the deployment group?
 
-> For a Windows machine to populate in the [Datto RMM Agent Installation [Windows]](https://www.google.com/search?q=/docs/f2349473-6980-4336-a294-37d9cdbc7e4d) group, it must strictly meet three criteria:
+> For a Windows machine to populate in the [Datto RMM Agent Installation [Windows]](/docs/f2349473-6980-4336-a294-37d9cdbc7e4d) group, it must strictly meet three criteria:
 >
 > > * `OS Type` is Equal to `Windows`.
 > > * `Datto RMM Site ID` is Not Blank.
@@ -183,7 +183,7 @@ Retrieve your specific [Datto RMM Site ID](docs/b5af697b-7eeb-4395-8962-44b76645
 
 > The Windows script downloads the Datto RMM executable to a hidden automation directory. The script forces a cleanup of this file after installation.
 >
-> > * Working Directory: `C:\ProgramData\_Automation\App\windows-upgrader` 
+> > * Working Directory: `C:\ProgramData\_Automation\App\windows-upgrader`
 
 ### 18. Where are the temporary installation files stored during the macOS deployment?
 
