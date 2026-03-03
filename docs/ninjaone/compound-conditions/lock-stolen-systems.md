@@ -25,6 +25,5 @@ This compound condition triggers the [Lock Stolen Systems](/docs/0f78be64-557a-4
 - [Automation - Lock Stolen System ](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374) 
 - [Solution  - Lock Stolen System](/docs/13b4df99-df9b-4a57-bc0f-8675c68be028)
 
-## Compound Condition Creation 
-
+## Compound Condition Creation
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/lock-stolen-systems.toml)
