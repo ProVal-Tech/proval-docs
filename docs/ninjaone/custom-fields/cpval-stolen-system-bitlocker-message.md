@@ -1,8 +1,8 @@
 ---
 id: '04443686-5a42-41d4-b936-b62145597107'
 slug: /04443686-5a42-41d4-b936-b62145597107
-title: 'cPVAL Stolen System Bitlocker Message'
-title_meta: 'cPVAL Stolen System Bitlocker Message'
+title: 'cPVAL Stolen System BitLocker Message'
+title_meta: 'cPVAL Stolen System BitLocker Message'
 keywords:  ['lock','stolen','system']
 description: 'The message to be displayed on the BitLocker lock screen. This custom field is used by the `Lock Stolen System` solution during system lockdown.'
 tags: ['connectwise']
@@ -17,7 +17,7 @@ The message to be displayed on the BitLocker lock screen. This custom field is u
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Stolen System Bitlocker Message | cpvalStolenSystemBitlockerMessage | `Devices` | Text | No | | Editable | Read_Write | Read_Write | The message to be displayed on the BitLocker lock screen. This custom field is used by the `Lock Stolen System` solution during system lockdown. | The message to be displayed on the BitLocker lock screen. | The message to be displayed on the BitLocker lock screen. | Lock Stolen System |
+| cPVAL Stolen System BitLocker Message | cpvalStolenSystemBitlockerMessage | `Devices` | Text | No | | Editable | Read_Write | Read_Write | The message to be displayed on the BitLocker lock screen. This custom field is used by the `Lock Stolen System` solution during system lockdown. | The message to be displayed on the BitLocker lock screen. | The message to be displayed on the BitLocker lock screen. | Lock Stolen System |
 
 
 ## Dependencies

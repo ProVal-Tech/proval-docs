@@ -11,13 +11,13 @@ unlisted: false
 ---
 
 ## Summary
-This Custom Field is used by `Lock Stolen System` to mark Machine is successfully Locked and Bitlocker is enabled on the machine.
+This Custom Field is used by `Lock Stolen System` to mark that machine is successfully Locked and BitLocker is enabled on the machine.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Lock Status | cpvalLockStatus | `Devices` | Text | No | |  Editable | Read_Write | Read_Write | This Custom Field is used by `Lock Stolen System` to mark Machine is successfully Locked and  Bitlocker is enabled on the machine. | Displays Machine is Locked and  Bitlocker is enabled on the machine. | Displays Machine is Locked and  Bitlocker is enabled on the machine. |
+| cPVAL Lock Status | cpvalLockStatus | `Devices` | Text | No | |  Editable | Read_Write | Read_Write | This Custom Field is used by `Lock Stolen System` to mark Machine is successfully Locked and  BitLocker is enabled on the machine. | Displays Machine is Locked and  BitLocker is enabled on the machine. | Displays Machine is Locked and  BitLocker is enabled on the machine. | Lock Stolen System |
 
 ## Dependencies
 

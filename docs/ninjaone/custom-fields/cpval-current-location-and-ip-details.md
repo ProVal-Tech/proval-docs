@@ -17,7 +17,7 @@ unlisted: false
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Current Location and IP Details | cpvalCurrentLocationAndIpDetails  | `Devices` | Text | No | |  Editable | Read_Write | Read_Write | It stores the Current Location and IP Details along with IPconfig output. This custom field is populated by `Lock Stolen System` solution. | Stores the Current Location and IP Details along with IPconfig output. | Stores the Current Location and IP Details along with IPconfig output. | Lock Stolen System |
+| cPVAL Current Location and IP Details | cpvalCurrentLocationAndIpDetails  | `Devices` | Multi-line | No | |  Editable | Read_Write | Read_Write | It stores the Current Location and IP Details along with IPconfig output. This custom field is populated by `Lock Stolen System` solution. | Stores the Current Location and IP Details along with IPconfig output. | Stores the Current Location and IP Details along with IPconfig output. | Lock Stolen System |
 
 ## Dependencies
 - [Solution  - Lock Stolen System](/docs/13b4df99-df9b-4a57-bc0f-8675c68be028)
