@@ -5,7 +5,7 @@ title: 'ID Agent Dark Web Monitoring'
 title_meta: 'ID Agent Dark Web Monitoring'
 keywords: ['id agent', 'dark web', 'credential monitoring', 'breach detection', 'security', 'automation', 'workflow']
 description: 'Automatically monitor ID Agent Dark Web alerts for compromised credentials. Process new exposure events, create tickets, notify affected users, and enforce password resets for breached accounts.'
-tags: ['id agent', 'dark web', 'security', 'automation']
+tags: ['id-agent', 'dark-web', 'security', 'automation']
 draft: false
 unlisted: false
 ---

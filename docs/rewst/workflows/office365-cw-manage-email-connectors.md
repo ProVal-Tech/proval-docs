@@ -5,7 +5,7 @@ title: 'Check Office 365 CW Manage Email Connectors'
 title_meta: 'Check Office 365 CW Manage Email Connectors'
 keywords: ['office 365', 'connectwise', 'manage', 'email connector', 'monitoring', 'automation', 'workflow']
 description: 'Automatically monitor and validate Office 365 email connectors configured in ConnectWise Manage. Detect configuration issues, authentication failures, and mail flow problems to ensure reliable ticket processing.'
-tags: ['office 365', 'connectwise', 'email', 'monitoring', 'automation']
+tags: ['office365', 'connectwise', 'email', 'monitoring', 'automation']
 draft: false
 unlisted: false
 ---

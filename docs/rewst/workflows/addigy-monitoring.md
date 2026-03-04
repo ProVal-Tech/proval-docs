@@ -5,7 +5,7 @@ title: 'Addigy Integration and Monitoring'
 title_meta: 'Addigy Integration and Monitoring'
 keywords: ['addigy', 'apple', 'mac', 'device management', 'MDM', 'monitoring', 'automation', 'workflow']
 description: 'Automatically monitor and manage Apple devices through Addigy MDM integration. Process device alerts, compliance checks, and software deployment status for managed macOS and iOS devices.'
-tags: ['addigy', 'apple', 'MDM', 'monitoring', 'automation']
+tags: ['addigy', 'apple', 'mdm', 'monitoring', 'automation']
 draft: false
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'Set All PSA Contacts to Inactive'
 title_meta: 'Set All PSA Contacts to Inactive'
 keywords: ['PSA', 'contacts', 'inactive', 'deactivation', 'offboarding', 'bulk update', 'automation', 'workflow']
 description: 'Automatically set all contacts for a PSA company to inactive status. Support client offboarding, contract termination, or bulk contact deactivation with audit trail and notification.'
-tags: ['PSA', 'contacts', 'offboarding', 'automation']
+tags: ['psa', 'contacts', 'offboarding', 'automation']
 draft: false
 unlisted: false
 ---

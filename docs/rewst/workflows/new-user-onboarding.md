@@ -5,7 +5,7 @@ title: 'New User Onboarding Automation'
 title_meta: 'New User Onboarding Automation'
 keywords: ['onboarding', 'user creation', 'automation', 'active directory', 'office365', 'microsoft365', 'new hire', 'workflow']
 description: 'Automate the complete new user onboarding process including account creation, license assignment, group memberships, and access provisioning. Streamline employee onboarding with comprehensive automation.'
-tags: ['onboarding', 'office365', 'active directory', 'automation']
+tags: ['onboarding', 'office365', 'active-directory', 'automation']
 draft: false
 unlisted: false
 ---

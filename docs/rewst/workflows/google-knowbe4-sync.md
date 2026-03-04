@@ -5,7 +5,7 @@ title: 'Google Workspace to KnowBe4 User Sync'
 title_meta: 'Google Workspace to KnowBe4 User Sync'
 keywords: ['google workspace', 'knowbe4', 'user sync', 'security awareness', 'phishing', 'training', 'automation', 'workflow']
 description: 'Automatically synchronize users from Google Workspace to KnowBe4 security awareness training platform. Maintain accurate user enrollment for phishing simulations and training campaigns.'
-tags: ['google workspace', 'knowbe4', 'sync', 'security', 'automation']
+tags: ['google-workspace', 'knowbe4', 'sync', 'security', 'automation']
 draft: false
 unlisted: false
 ---

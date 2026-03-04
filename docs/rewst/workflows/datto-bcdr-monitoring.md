@@ -5,7 +5,7 @@ title: 'Datto BCDR Monitoring'
 title_meta: 'Datto BCDR Monitoring'
 keywords: ['datto', 'BCDR', 'backup', 'disaster recovery', 'monitoring', 'automation', 'workflow']
 description: 'Automatically monitor Datto BCDR appliances for backup health, agent status, storage capacity, and device alerts. Ensure disaster recovery readiness with comprehensive BCDR monitoring.'
-tags: ['datto', 'backup', 'disaster recovery', 'monitoring', 'automation']
+tags: ['datto', 'backup', 'disaster-recovery', 'monitoring', 'automation']
 draft: false
 unlisted: false
 ---

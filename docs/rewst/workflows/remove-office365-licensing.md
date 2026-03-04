@@ -5,7 +5,7 @@ title: 'Remove Office 365 Licensing'
 title_meta: 'Remove Office 365 Licensing'
 keywords: ['office 365', 'licensing', 'removal', 'deprovisioning', 'cost management', 'automation', 'workflow']
 description: 'Automatically remove Office 365 licenses from user accounts. Support user offboarding, license optimization, and cost management by reclaiming unused or unnecessary licenses.'
-tags: ['office 365', 'licensing', 'deprovisioning', 'automation']
+tags: ['office365', 'licensing', 'deprovisioning', 'automation']
 draft: false
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'Remove Google Workspace User'
 title_meta: 'Remove Google Workspace User'
 keywords: ['google workspace', 'user removal', 'offboarding', 'deprovisioning', 'gmail', 'automation', 'workflow']
 description: 'Automatically deprovision Google Workspace user accounts during offboarding. Transfer data ownership, configure email delegation, remove licenses, and suspend or delete accounts.'
-tags: ['google workspace', 'user removal', 'offboarding', 'automation']
+tags: ['google-workspace', 'user-removal', 'offboarding', 'automation']
 draft: false
 unlisted: false
 ---

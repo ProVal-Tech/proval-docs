@@ -5,7 +5,7 @@ title: 'SaaS Alerts Monitoring'
 title_meta: 'SaaS Alerts Monitoring'
 keywords: ['saas alerts', 'SaaS monitoring', 'security', 'cloud applications', 'automation', 'workflow']
 description: 'Automatically monitor and process SaaS Alerts events for cloud application security. Detect unauthorized access, data exfiltration, suspicious activities, and policy violations across managed SaaS platforms.'
-tags: ['saas alerts', 'security', 'monitoring', 'automation']
+tags: ['saas-alerts', 'security', 'monitoring', 'automation']
 draft: false
 unlisted: false
 ---

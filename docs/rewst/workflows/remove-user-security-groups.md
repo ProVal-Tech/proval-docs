@@ -5,7 +5,7 @@ title: 'Remove User from Security Groups'
 title_meta: 'Remove User from Security Groups'
 keywords: ['security groups', 'user removal', 'access', 'offboarding', 'active directory', 'entra id', 'automation', 'workflow']
 description: 'Automatically remove a user from all security groups across Active Directory and Entra ID. Support offboarding and access revocation by ensuring complete security group membership cleanup.'
-tags: ['security groups', 'offboarding', 'access management', 'automation']
+tags: ['security-groups', 'offboarding', 'access-management', 'automation']
 draft: false
 unlisted: false
 ---

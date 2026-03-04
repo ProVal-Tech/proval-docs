@@ -5,7 +5,7 @@ title: 'Datto Cloud Continuity Monitoring'
 title_meta: 'Datto Cloud Continuity Monitoring'
 keywords: ['datto', 'cloud continuity', 'DRaaS', 'disaster recovery', 'monitoring', 'automation', 'workflow']
 description: 'Automatically monitor Datto Cloud Continuity status and health. Track cloud replication, failover readiness, and DR testing compliance to ensure disaster recovery preparedness.'
-tags: ['datto', 'disaster recovery', 'monitoring', 'automation']
+tags: ['datto', 'disaster-recovery', 'monitoring', 'automation']
 draft: false
 unlisted: false
 ---

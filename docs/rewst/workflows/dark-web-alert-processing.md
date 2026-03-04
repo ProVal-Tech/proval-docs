@@ -5,7 +5,7 @@ title: 'Dark Web Alert Processing'
 title_meta: 'Dark Web Alert Processing'
 keywords: ['dark web', 'alert processing', 'security', 'credential breach', 'monitoring', 'automation', 'workflow']
 description: 'Automatically process and respond to dark web alerts for compromised credentials. Streamline incident response by automating password resets, notifications, and ticket creation when breached credentials are detected.'
-tags: ['security', 'automation', 'dark web', 'incident response']
+tags: ['security', 'automation', 'dark-web', 'incident-response']
 draft: false
 unlisted: false
 ---

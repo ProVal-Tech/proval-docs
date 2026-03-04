@@ -5,7 +5,7 @@ title: 'Sync Contacts from CW Manage to HubSpot'
 title_meta: 'Sync Contacts from CW Manage to HubSpot'
 keywords: ['connectwise', 'manage', 'hubspot', 'contact sync', 'CRM', 'PSA', 'automation', 'workflow']
 description: 'Automatically synchronize contacts from ConnectWise Manage PSA to HubSpot CRM. Maintain accurate contact records, company associations, and custom field mappings between platforms.'
-tags: ['connectwise', 'hubspot', 'sync', 'CRM', 'automation']
+tags: ['connectwise', 'hubspot', 'sync', 'crm', 'automation']
 draft: false
 unlisted: false
 ---

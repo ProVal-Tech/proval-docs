@@ -5,7 +5,7 @@ title: 'Remove Office 365 Mailbox Permissions'
 title_meta: 'Remove Office 365 Mailbox Permissions'
 keywords: ['office 365', 'mailbox', 'permissions', 'delegation', 'security', 'automation', 'workflow']
 description: 'Automatically remove mailbox permissions and delegations from Office 365 user accounts. Support offboarding, access reviews, and security remediation by revoking Full Access, Send As, and Send on Behalf permissions.'
-tags: ['office 365', 'mailbox', 'permissions', 'security', 'automation']
+tags: ['office365', 'mailbox', 'permissions', 'security', 'automation']
 draft: false
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'User Offboarding Automation'
 title_meta: 'User Offboarding Automation'
 keywords: ['offboarding', 'user termination', 'deprovisioning', 'automation', 'active directory', 'office365', 'microsoft365', 'security', 'workflow']
 description: 'Automate the complete user offboarding process including account deactivation, access revocation, data backup, license reclamation, and exit procedures. Ensure secure and compliant employee departures.'
-tags: ['offboarding', 'office365', 'active directory', 'security', 'automation']
+tags: ['offboarding', 'office365', 'active-directory', 'security', 'automation']
 draft: false
 unlisted: false
 ---

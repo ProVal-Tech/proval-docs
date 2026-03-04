@@ -5,7 +5,7 @@ title: 'Create Google Workspace User'
 title_meta: 'Create Google Workspace User'
 keywords: ['google workspace', 'user creation', 'onboarding', 'provisioning', 'gmail', 'automation', 'workflow']
 description: 'Automatically create Google Workspace user accounts with proper organizational unit placement, group memberships, license assignment, and application access configuration.'
-tags: ['google workspace', 'user creation', 'onboarding', 'automation']
+tags: ['google-workspace', 'user-creation', 'onboarding', 'automation']
 draft: false
 unlisted: false
 ---

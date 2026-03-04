@@ -5,7 +5,7 @@ title: 'AppGate Upgrade'
 title_meta: 'AppGate Upgrade'
 keywords: ['appgate', 'upgrade', 'SDP', 'zero trust', 'software update', 'automation', 'workflow']
 description: 'Automatically manage AppGate SDP upgrades across managed environments. Coordinate controller and gateway updates, schedule maintenance windows, and verify upgrade success with rollback capabilities.'
-tags: ['appgate', 'upgrade', 'zero trust', 'automation']
+tags: ['appgate', 'upgrade', 'zero-trust', 'automation']
 draft: false
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'Convert User Mailbox to Shared Mailbox'
 title_meta: 'Convert User Mailbox to Shared Mailbox'
 keywords: ['office 365', 'mailbox conversion', 'shared mailbox', 'offboarding', 'exchange online', 'automation', 'workflow']
 description: 'Automatically convert an Office 365 user mailbox to a shared mailbox. Support user offboarding by preserving email access while freeing the user license for reallocation.'
-tags: ['office 365', 'mailbox', 'conversion', 'offboarding', 'automation']
+tags: ['office365', 'mailbox', 'conversion', 'offboarding', 'automation']
 draft: false
 unlisted: false
 ---

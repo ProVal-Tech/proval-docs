@@ -5,7 +5,7 @@ title: 'AI-Powered Ticket Solution Recommendations'
 title_meta: 'AI-Powered Ticket Solution Recommendations'
 keywords: ['ai', 'ticket solutions', 'automation', 'psa', 'machine learning', 'knowledge base', 'resolution', 'workflow']
 description: 'Automatically generate intelligent solution recommendations for support tickets using AI analysis of historical resolutions and knowledge base articles. Accelerate ticket resolution with AI-powered suggestions.'
-tags: ['ai', 'psa', 'automation', 'knowledge base']
+tags: ['ai', 'psa', 'automation', 'knowledge-base']
 draft: false
 unlisted: false
 ---

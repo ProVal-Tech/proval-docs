@@ -5,7 +5,7 @@ title: 'Office 365 to KnowBe4 User Sync'
 title_meta: 'Office 365 to KnowBe4 User Sync'
 keywords: ['office 365', 'knowbe4', 'user sync', 'security awareness', 'phishing', 'training', 'automation', 'workflow']
 description: 'Automatically synchronize users from Microsoft 365 to KnowBe4 security awareness training platform. Maintain accurate user lists, group memberships, and enrollment for phishing simulations and training campaigns.'
-tags: ['office 365', 'knowbe4', 'sync', 'security', 'automation']
+tags: ['office365', 'knowbe4', 'sync', 'security', 'automation']
 draft: false
 unlisted: false
 ---

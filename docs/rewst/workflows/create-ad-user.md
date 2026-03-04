@@ -5,7 +5,7 @@ title: 'Create Active Directory User'
 title_meta: 'Create Active Directory User'
 keywords: ['active directory', 'AD', 'user creation', 'onboarding', 'provisioning', 'automation', 'workflow']
 description: 'Automatically create Active Directory user accounts with proper OU placement, group memberships, attributes, and home directory configuration. Streamline user onboarding with consistent AD provisioning.'
-tags: ['active directory', 'user creation', 'onboarding', 'automation']
+tags: ['active-directory', 'user-creation', 'onboarding', 'automation']
 draft: false
 unlisted: false
 ---

@@ -5,7 +5,7 @@ title: 'SaaS Alerts Ticket Processing'
 title_meta: 'SaaS Alerts Ticket Processing'
 keywords: ['saas alerts', 'ticket processing', 'security', 'SaaS monitoring', 'automation', 'workflow']
 description: 'Automatically process SaaS Alerts security events into PSA tickets with appropriate categorization, priority assignment, and technician routing. Streamline SaaS security incident management.'
-tags: ['saas alerts', 'security', 'automation', 'ticketing']
+tags: ['saas-alerts', 'security', 'automation', 'ticketing']
 draft: false
 unlisted: false
 ---
