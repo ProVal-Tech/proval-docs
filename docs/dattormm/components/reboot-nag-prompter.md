@@ -20,6 +20,8 @@ This script displays and manages reboot prompts for Windows systems after patchi
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
+4. Before saving the component within the environment, make sure to change the branding of the `Nag` script.
+![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s4.webp)
 
 ## Sample Run
 
@@ -33,17 +35,26 @@ To execute the `component` over a specific machine, follow these steps:
 3. Search the component `Reboot Nag[Restart Alert][Prompter]` and click on `Select`
  ![Image 3](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template3.webp)
 
-4. After selecting the component, entering the values.  
-![Image 4](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s1.webp)
-![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)
+4. After selecting the component, enter the values.  
+5. Select the number of Prompts you want to show during the activity.
+6. Enter the interval time you want the popup to appear again.
+7. You can set the number of days to show if a reboot is pending. 
+![Image 4](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s1.webp)  
+8. Apart from setting up the days in case of a reboot is pending, you can also the value for the machine which has not beed rebooted for x days.  
+9. Set the Timeout interval for the regular prompts.
+10. Set the Timeout interval for final prompts.
+11. You can also set the suppress popup time window as well eg. 2100-0700
+![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)  
+12. You can also enable the option to skip the weekends to pause the reboot prompts.
+13. You can select the option to forcefully restart the machine if the user is not logged in.
+14. You can also forcefully executes the scheduled task if it's already exists as the reboot prompter is working after the task is created.
 ![Image 6](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s3.webp)  
-5. Click on `Run` to initiate the component.  
-
-
-## Important  
-Before saving the component within the environment, make sure to change the branding of the `Nag` script.
-![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s4.webp)
-
+15. Click on `Run` to initiate the component.  
+16. Below are the examples of how the prompter will look like after configuring the Nag
+![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)
+![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)  
+17. This is how the final prompt will look like, where the only the restart option will be present
+![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
 
 
 ## Datto Variables
