@@ -8,6 +8,8 @@ description: 'This Datto RMM component script downloads and invokes the ''Remove
 tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -61,3 +63,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Uninstall SentinelOne](../../../static/attachments/uninstall-sentinelone.cpt)
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

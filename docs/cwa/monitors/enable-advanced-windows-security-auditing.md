@@ -8,6 +8,8 @@ description: 'This document explains how to enable Advanced Windows Security Aud
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Managed Windows Servers and Workstations
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

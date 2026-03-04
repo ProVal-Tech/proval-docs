@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to obtain the 
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -98,3 +100,9 @@ SentinelOne URL should be: <URL>
 SentinelOne Site key should be: <LicenseKey>
 To resolve a license key mismatch in SentinelOne, you must uninstall and then reinstall the software using the correct license key.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

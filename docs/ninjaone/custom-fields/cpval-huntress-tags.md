@@ -8,6 +8,8 @@ description: 'Tags to assign to the agents.'
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/ac9bd64b-0327-4879-931d-128936bc43a6/image4.webp)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the MSSQL Server ro
 tags: ['windows', 'dynamic-groups', 'mssql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/f54e6bdd-85a5-4f32-8dae-1f20874bd8c9/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

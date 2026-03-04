@@ -5,6 +5,8 @@ title: 'Windows Update Report DV'
 title_meta: 'Windows Update Report DV'
 keywords: ['patches', 'report', 'windows', 'update', 'table']
 description: 'This document provides a comprehensive guide on retrieving a detailed list of installed or available patches on a local machine and storing the information in a custom table named plugin_proval_windows_update_report. It includes sample runs, dependencies, variables, and a step-by-step process for execution.'
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ Get a detailed list of patches that are installed or available on the local mach
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating remote monitors th
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-23
 ---
 
 ## Summary
@@ -164,3 +166,9 @@ The solution's Extra Data Fields have been modified. Update the script from the 
 - **5:** **Primary Domain Controller (PDC)** — The computer is a Primary Domain Controller (PDC) in the domain. It handles user logins and manages the domain.
 
 So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meaning that it continues if the machine is **not** a domain controller.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

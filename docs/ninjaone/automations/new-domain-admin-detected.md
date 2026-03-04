@@ -8,6 +8,8 @@ description: 'This script detects the user or group of users if its promoted to 
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-03
 ---
 
 ## Overview
@@ -34,3 +36,8 @@ This script detects the user or group of users if its promoted to domain adminis
 
 - Activity Details
 
+## Changelog
+
+### 2025-10-17
+
+- Initial version of the document

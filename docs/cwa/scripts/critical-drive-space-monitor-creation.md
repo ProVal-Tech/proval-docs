@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating remote mo
 tags: ['disk-encryption', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -338,3 +340,9 @@ The script has been updated to create a stack drive space monitor for the unsupp
 ## Tips
 
 - [Set Computer Level EDFs by Group ID](/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0) script can be used to set overrides on multiple machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Automatically process and validate Datto backup screenshot verific
 tags: ['datto', 'backup', 'monitoring', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -106,3 +108,9 @@ Before using this workflow, ensure the following requirements are met:
   "notifications_sent": 3
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

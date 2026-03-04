@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to set the custom field 
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -40,3 +42,9 @@ The output location for log, result, and error files is as follows:
 ```
 ./Update-OsBuildCustomField-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

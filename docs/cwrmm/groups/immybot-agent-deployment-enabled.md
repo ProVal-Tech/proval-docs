@@ -8,6 +8,8 @@ description: 'Auto deployment group for machines belonging to clients with ImmyB
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/e69486d9-27f7-4fa6-87cd-d62151d6ddc4/image3.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

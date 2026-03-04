@@ -8,6 +8,8 @@ description: 'This document details the EPM Disk Internal Monitor Autofix Script
 tags: ['cleanup', 'disk', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -175,3 +177,9 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_3.webp)
 
 ![Screenshot 2](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

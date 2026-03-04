@@ -8,6 +8,8 @@ description: 'Documentation for the Uninstall-N-Able command to perform the unin
 tags: ['n-able', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Description
@@ -31,3 +33,9 @@ Location of output for log, result, and error files:
 
 - .\Uninstall-N-Able-log.txt
 - .\Uninstall-N-Able-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

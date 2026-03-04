@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Azure AD Connect version
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This document contains information about the Azure AD Connect version installed 
 | Field Name                          | Type of Field (Machine or Organization) | Description              |
 |-------------------------------------|-----------------------------------------|--------------------------|
 | xPVAL Azure AD Connect Version      | Machine CF                             | Azure AD Connect Version  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

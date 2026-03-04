@@ -8,6 +8,8 @@ description: 'Controls script execution logic for Network Adapter validation.'
 tags: ['windows','auditing','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-26
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This Custom Field is used during the Network Adapter Details check as part of co
 ## Sample Screenshot
 
 ![customfield](../../../static/img/docs/fb89116d-060f-4787-95af-efdd731765d2/checknetworkadapter.webp)
+
+## Changelog
+
+### 2026-01-20
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script sets the SharePoint files to online-only settings at t
 tags: ['onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This script sets the SharePoint files to online-only settings at the system and 
 
 - Script log
 - Local file: `C:\ProgramData\_Automation\Script\SharePoint-OnlineOnly\SharePoint-OnlineOnly-log.txt`
+
+## Changelog
+
+### 2025-08-07
+
+- Initial version of the document

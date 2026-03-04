@@ -8,6 +8,8 @@ description: 'Group of Mac devices where the Datto RMM Agent is not installed, a
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ A machine matches the group if it meets ALL criteria in Block 1.
 ## Completed Group
 
 ![Image3](../../../static/img/docs/b8948dfb-8c54-4872-9ae2-41d9ce4c5a15/image3.webp)
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

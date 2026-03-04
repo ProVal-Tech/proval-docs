@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-07-18
 ---
 
 ## Overview
@@ -22,3 +24,6 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Template Creation
 
 [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/_template.toml)
+
+
+## Changelog

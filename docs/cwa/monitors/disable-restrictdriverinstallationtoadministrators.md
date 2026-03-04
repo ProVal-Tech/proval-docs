@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to disable the Rest
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Steps
@@ -92,3 +94,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer - Failures Only` alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

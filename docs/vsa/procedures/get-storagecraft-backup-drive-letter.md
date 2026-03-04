@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to retrieve drive information
 tags: ['backup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Run the procedure.
 
 - Agent Procedure Log:  
   `c:/kworking/System/Get-SCDrive-data.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

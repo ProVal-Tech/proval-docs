@@ -8,6 +8,8 @@ description: "This document outlines the setup for a remote monitor that generat
 tags: ['autotask']
 draft: false
 unlisted: True
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

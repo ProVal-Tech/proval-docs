@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ The script will perform a fresh installation or a removal and reinstallation of 
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Installs Inbox.'
 tags: ['application', 'installation', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ Installs [Inbox](https://www.getthread.com/inbox) for the logged-in user.
 ## Description
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/inbox.toml)
+
+## Changelog
+
+### 2025-11-07
+
+- Initial version of the document

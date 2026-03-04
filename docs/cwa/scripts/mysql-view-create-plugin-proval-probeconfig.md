@@ -8,6 +8,8 @@ description: 'This document outlines the process of dropping an existing view an
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This script will drop the view if it exists, recreate it, and then call the scri
 1. Drop the view if it exists: [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)  
 2. Create the view: [CWM - Automate - Custom View - plugin_proval_probeconfig](/docs/bd07c1dc-34ff-4f87-aae9-b43dcd1b5057)  
 3. Call the script "CWM - Automate - Script - Update User Permissions for ProVal Custom Tables" to assign the permissions to the Automate users for the Plugin_Proval custom tables and views.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

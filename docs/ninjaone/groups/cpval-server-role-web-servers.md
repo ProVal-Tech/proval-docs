@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Web Server (IIS
 tags: ['windows', 'dynamic-groups', 'iis']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/e06f0af4-33e6-4a5a-93eb-5e56e8b06e0d/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details the process of setting up the Active Directo
 tags: ['active-directory', 'database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Other items depend on this script being executed to function, which are listed b
 ## Output
 
 This is a one-time use script, used to install/create a table, four views, and schedule a script. After running it once, this script can be removed from the environment.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

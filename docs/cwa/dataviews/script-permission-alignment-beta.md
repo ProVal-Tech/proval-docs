@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that displays u
 tags: ['database']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The dataview will display the user classes that will be assigned to the stock sc
 | Script Path               | Full Path to the Script                              |
 | Access                    | Set of user classes who have permission to access this script |
 | User Class                | Name of the User Class(es) with access to this script |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

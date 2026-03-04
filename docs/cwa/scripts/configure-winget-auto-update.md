@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on configuring the Wi
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -158,3 +160,9 @@ The script's default nature is to compare the existing configuration before runn
   - Winget-AutoUpdate-Notify  
   - Winget-AutoUpdate-Policies  
   - Winget-AutoUpdate-UserContext
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

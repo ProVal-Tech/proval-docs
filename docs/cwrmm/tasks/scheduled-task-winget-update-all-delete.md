@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to create and deplo
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -249,3 +251,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Custom Field
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

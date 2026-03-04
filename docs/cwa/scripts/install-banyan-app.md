@@ -8,6 +8,8 @@ description: 'Automate installation of Banyan App on end-user devices.'
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-25
 ---
 
 ## Summary
@@ -83,3 +85,9 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 
 - Script log
 - Installed Banyan App (new software)
+
+## Changelog
+
+### 2025-10-10
+
+- Initial version of the document

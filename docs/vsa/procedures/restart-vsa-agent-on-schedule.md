@@ -8,6 +8,8 @@ description: 'This document outlines the process for allowing VSA Agents to auto
 tags: ['recovery']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This document allows VSA Agents to come back online after a service failure on t
 ## Implementation
 
 Import both XML files into the client environment. Edit [VSA - Agent - Agent Procedure - Scheduled Task for Agent Restart - Create](/docs/7eb2b58e-9f5e-4732-8457-6518060f0cc3) to point to the correct VSA service name. Use the variable `#serviceName#` for this. Finally, schedule and deploy the procedures.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

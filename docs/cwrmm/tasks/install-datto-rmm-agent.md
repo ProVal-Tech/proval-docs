@@ -8,6 +8,8 @@ description: 'Installs the Datto RMM Agent on both Windows and Mac machines.'
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Summary
@@ -316,3 +318,9 @@ rm -rf "$working_dir" 2>/dev/null
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

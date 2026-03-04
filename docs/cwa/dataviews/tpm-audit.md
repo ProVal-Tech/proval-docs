@@ -8,6 +8,8 @@ description: 'This dataview shows the complete detail of the TPM of the Windows 
 tags: ['tpm', 'bitlocker', 'auditing', 'bios']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-08
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ It is been collected by the script [Script - Bitlocker - Audit](/docs/d7d933e3-9
 | **TpmOwned**                 | Indicates whether the TPM has been initialized and has an owner.               |
 | **TpmPresent**               | Indicates whether a TPM chip is physically present on the system.              |
 | **TpmReady**                 | Indicates whether the TPM is fully ready for use (enabled, activated, owned).  |
+
+## Changelog
+
+### 2025-05-08
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Enter the Office 365 Client ID used to establish a secure connecti
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enter the Office 365 Client ID used to establish a secure connection with the te
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/fb548778-0877-483c-871c-5fd34c277d61/image1.webp)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

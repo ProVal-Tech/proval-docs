@@ -8,6 +8,8 @@ description: 'This script detects and silently uninstalls the ImmyBot Agent from
 tags: ['uninstallation','application','datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-23
 ---
 
 ## Overview
@@ -43,4 +45,10 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Uninstall ImmyBot Agent](../../../static/attachments/uninstall_immybot_agent.cpt) 
+[Uninstall ImmyBot Agent](../../../static/attachments/uninstall_immybot_agent.cpt)
+
+## Changelog
+
+### 2025-12-22
+
+- Initial version of the document

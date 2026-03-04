@@ -8,6 +8,8 @@ description: 'This document outlines the policy for running the update list by s
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -32,3 +34,9 @@ The policy will run the update list by scan on all the machines once.
 - **Policy Object Settings:** To run once at 8 AM with a 7-day distribution window
 
 ![Image](../../../static/img/docs/dc812b4e-6919-4cc9-a5c5-1e5e8b80c0ab/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

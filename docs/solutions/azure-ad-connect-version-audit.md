@@ -8,6 +8,8 @@ description: 'This document provides comprehensive information regarding the ser
 tags: ['report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ To provide comprehensive information about which servers have Azure AD Connect s
 - Import the procedure for Azure AD Connect Version Audit
 - Import the policy for Azure AD Connect Version Audit
 - Import the report for Azure AD Connect Version Audit
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

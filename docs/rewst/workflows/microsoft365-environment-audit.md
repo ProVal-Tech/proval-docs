@@ -8,6 +8,8 @@ description: 'Perform comprehensive security and compliance audits of Microsoft 
 tags: ['microsoft365', 'office365', 'security', 'compliance', 'audit']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 # Summary
@@ -848,3 +850,9 @@ The workflow can generate reports in multiple formats:
 13. **Security Awareness**: Use findings to identify training needs
 14. **Change Management**: Document approved exceptions and compensating controls
 15. **Integration**: Feed audit data into dashboards and SIEM platforms
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

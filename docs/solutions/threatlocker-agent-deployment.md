@@ -8,6 +8,8 @@ description: 'The Purpose of this solution is to deploy a threatlocker agent on 
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-22
 ---
 
 ## Purpose
@@ -69,3 +71,9 @@ Configure the solution as outlined below:
 - Enter Threatlocker Mac in Client EDF `ThreatLockerMacGroupKey`
 
 ![Image3](../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image3.webp)
+
+## Changelog
+
+### 2025-06-27
+
+- Initial version of the document

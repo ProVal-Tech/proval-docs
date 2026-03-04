@@ -8,6 +8,8 @@ description: 'This monitor is built to install the Windows App on the computers 
 tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ It is recommended to set this monitor alert frequency at every 30 days.
 - Run now and reset the monitor  
   ![Sample Run](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image6.webp)
 - Enable the EDFs to start deployment.
+
+## Changelog
+
+### 2025-12-17
+
+- Initial version of the document

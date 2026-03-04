@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to install Windows 
 tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Summary
@@ -100,3 +102,9 @@ The script has been updated to address the `InsufficientSystemPartitionDiskSpace
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-11-03
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive solution for monitoring Win
 tags: ['cluster', 'disk', 'hyper-v', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -86,3 +88,9 @@ This solution is designed to monitor the Windows Cluster Shared volume, create t
      - Set up with alert template `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
 
 > **Note:** The autofix [Script - Windows Cluster Shared Volume [Autofix,Ticket]](/docs/0a795741-52b7-4de6-abc2-01b5add80f99) also calls the [Script - Windows Cluster Volume Space Audit [DV]](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490) whenever the cluster volume space is detected below 20% as a warning or below 10% as an error. This maintains the fresh audit report for the volumes we need to monitor closely.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

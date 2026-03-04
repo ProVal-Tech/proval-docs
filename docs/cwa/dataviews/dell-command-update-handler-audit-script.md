@@ -8,6 +8,8 @@ description: 'The purpose of this dataview is to display the last execution resu
 tags: ['report', 'dell']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-16
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The purpose of this dataview is to display the last execution result of [Script 
 | Number of Updates Needed     | The count of pending updates detected on the device                         |
 | Last Run Status              | The current status of the last script run (e.g., 0, 1, 500)           |
 | Last Run Status Code Reference | A reference code providing more detail about the last run status          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

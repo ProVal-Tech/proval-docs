@@ -8,6 +8,8 @@ description: 'This document outlines the process for uninstalling an application
 tags: ['chocolatey', 'setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ Utilizes the Foil wrapper for Chocolatey to uninstall an application. [Foil GitH
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

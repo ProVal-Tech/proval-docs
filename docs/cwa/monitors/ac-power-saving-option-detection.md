@@ -8,6 +8,8 @@ description: 'This document describes a remote monitor designed to check for AC 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ None
 ## Target
 
 - Managed 24x7 | 8x5 Workstations
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

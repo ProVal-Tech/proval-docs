@@ -8,6 +8,8 @@ description: 'This document outlines a solution for establishing a centralized l
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -90,3 +92,9 @@ Run/debug against an online Windows machine with `SetEnvironment_Local_Admin_Pro
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

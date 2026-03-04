@@ -8,6 +8,8 @@ description: 'Automatically classify, prioritize, and route support tickets usin
 tags: ['ai', 'psa', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 # Summary
@@ -255,3 +257,9 @@ Common error types:
 6. **VIP Handling**: Configure special routing rules for VIP customers or critical accounts
 7. **Escalation Rules**: Set up automatic escalation for high-urgency or negative-sentiment tickets
 8. **Testing**: Regularly test with edge cases and unusual ticket types to ensure robust handling
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

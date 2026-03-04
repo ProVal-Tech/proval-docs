@@ -8,6 +8,8 @@ description: 'Todyl Deployment Key for Desktop Agents.'
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Todyl Deployment Key for Desktop Agents.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/8656e3f6-5cfc-49b9-a700-cbf453744576/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

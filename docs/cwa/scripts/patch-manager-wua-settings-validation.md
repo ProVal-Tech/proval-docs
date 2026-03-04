@@ -8,6 +8,8 @@ description: 'This document describes a script that checks and validates Windows
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-27
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 ## Output
 
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set that identifies machines with
 tags: ['patching', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The monitor set will look for machines where the patch inventory is older than 7
 ## Target
 
 Global - Should be run without explicitly defined targets. The SQL will target machines with patching policies automatically.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

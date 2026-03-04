@@ -8,6 +8,8 @@ description: 'NinjaRMM wrapper for the agnostic ODSyncUtil script; formats resul
 tags: ['onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-23
 ---
 
 ## Overview
@@ -44,3 +46,9 @@ Set the required arguments and click the `Run` button to run the script.
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The drive or mount point targeted for BitLocker encryption. Use a 
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ The target volume to enable BitLocker encryption against. Should be in the forma
 
 ## Sample Screenshot
 
-![cpval Mountpoint](../../../static/img/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926/image1.webp)  
+![cpval Mountpoint](../../../static/img/docs/4f9532e4-3d96-4e95-a6f5-b9a77d45c926/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

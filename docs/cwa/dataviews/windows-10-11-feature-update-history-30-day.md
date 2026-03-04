@@ -8,6 +8,8 @@ description: 'This document provides a detailed report of Windows workstations t
 tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The dataview displays the Windows workstations that have been upgraded to the ne
 | Old OS Version    | Displays the OS version before the upgrade.      |
 | New OS Version    | Displays the OS version after the upgrade.       |
 | Build Version     | Displays the new build versions such as 22H2, 22H3, etc. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

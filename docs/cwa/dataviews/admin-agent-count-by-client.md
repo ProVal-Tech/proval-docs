@@ -8,6 +8,8 @@ description: 'This document outlines a simple dataview that displays the number 
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ None
 | Client Name         | The name of the client associated with the data     |
 | Total Servers       | The number of servers associated with the client     |
 | Total Workstations   | The number of workstations associated with the client |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

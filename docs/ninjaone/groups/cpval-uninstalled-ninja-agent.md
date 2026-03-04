@@ -8,6 +8,8 @@ description: ' This Group contains the machines where Ninja RMM agent has  been 
 tags: ['uninstallation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ unlisted: false
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-uninstalled-ninja-agent.toml)
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

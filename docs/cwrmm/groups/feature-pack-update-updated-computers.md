@@ -8,6 +8,8 @@ description: 'This document outlines the process to classify Windows 10 and 11 c
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -87,3 +89,9 @@ Click the Save button to save the group.
 ![Image](../../../static/img/docs/72490aca-9d0d-47b9-88a9-437279e21d7a/image_13.webp)
 
 ![Image](../../../static/img/docs/72490aca-9d0d-47b9-88a9-437279e21d7a/image_14.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Retrieves detailed Hyper-V VHD/VHDX information and stores it as a
 tags: ['hyper-v', 'auditing', 'disk', 'diskspace']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ Retrieves detailed Hyper-V VHD/VHDX information and stores it as an HTML table i
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

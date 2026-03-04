@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to list all the local administrato
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ The purpose of this solution is to list all the local administrators on windows 
     - [Exclude Local Admin Detection ](/docs/18aa25e5-61cd-429d-ab09-44b7cf6eb10e) 
 - Create  [Group - Machines Opted for Local Admin Detection ](/docs/e1cb7e20-f09c-4350-a496-db920efa6530) 
 - Create  [Task - Get Local Administrators](/docs/11f555cc-79ab-464f-87af-b46c324990ee) and schedule the task as per instructions in the document.
+
+## Changelog
+
+### 2026-02-03
+
+- Initial version of the document

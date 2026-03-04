@@ -8,6 +8,8 @@ description: 'Enter the Office 365 Client Secret associated with the application
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enter the Office 365 Client Secret associated with the application. This credent
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/065a5f2f-9e2b-4717-b625-bd55bedf1986/image1.webp)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

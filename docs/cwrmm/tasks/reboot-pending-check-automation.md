@@ -8,6 +8,8 @@ description: 'This document outlines the steps to implement an automation task t
 tags: ['reboot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -195,3 +197,9 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

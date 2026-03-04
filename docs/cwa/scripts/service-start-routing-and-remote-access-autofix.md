@@ -8,6 +8,8 @@ description: 'This document outlines the process to set the startup type of the 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This should be called by the monitor [CWM - Automate - Remote Monitor - ProVal -
 
 - Startup Type: Automatic  
 - Status: Running
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

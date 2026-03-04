@@ -8,6 +8,8 @@ description: 'This document outlines the steps required for creating a ticket in
 tags: ['database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Steps for Ticket Creation
@@ -102,3 +104,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the `△ Custom - Ticket Creation - Computer` alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

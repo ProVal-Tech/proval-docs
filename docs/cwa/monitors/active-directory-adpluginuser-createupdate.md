@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating and managing an AD
 tags: ['active-directory', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Service Plans. Windows Servers. Server Roles. Windows Server Core Services. Doma
 `△ Custom - Autofix - AD Plugin User - Create/Update`
 
 - Import the [Script - Active Directory - Plugin User Account - Create/Update](/docs/ea1aca74-77ee-4387-91f2-57adb5822737) script before importing the alert template, or simply verify the script was imported correctly and is fully up to date after importing the alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

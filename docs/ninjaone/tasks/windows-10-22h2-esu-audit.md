@@ -8,6 +8,8 @@ description: 'Executes "ESU License Activation Detection" script once per day ag
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Executes [ESU License Activation Detection](/docs/2110ef0d-ceaf-4b38-a4ff-647fe6
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/windows-10-22h2-esu-audit.toml)
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

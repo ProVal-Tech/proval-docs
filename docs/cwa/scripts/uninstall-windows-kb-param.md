@@ -8,6 +8,8 @@ description: 'This script assists in the uninstallation of a specific Windows up
 tags: ['reboot', 'software', 'uninstallation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ The script will endeavor to prevent an immediate reboot; nonetheless, it is impo
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

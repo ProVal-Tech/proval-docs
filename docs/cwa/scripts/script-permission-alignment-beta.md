@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to standardize the permis
 tags: ['connectwise', 'permissions', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ The initial permissions of the scripts are stored in the custom table during the
 - Custom Table
 - Script-level permissions  
 ![Output Image](../../../static/img/docs/46412261-f40b-456f-92db-500d166c41ca/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

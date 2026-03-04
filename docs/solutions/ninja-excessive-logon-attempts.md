@@ -8,6 +8,8 @@ description: 'This will Detect and summarize failed logon attempts (Event ID 462
 tags: ['security', 'accounts', 'eventlogs']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-16
 ---
 
 ## Purpose
@@ -95,3 +97,9 @@ Or check manually in Services.msc.
 - `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.
 - `Block IP or Account:` If malicious, take immediate action.  
 - `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.
+
+## Changelog
+
+### 2025-07-09
+
+- Initial version of the document

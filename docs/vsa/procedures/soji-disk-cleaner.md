@@ -8,6 +8,8 @@ description: 'This document outlines the Stack-Standard Disk Cleanup utility tha
 tags: ['cleanup', 'disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-13
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - $env:ProgramData/_automation/AgentProcedure/SojiDiskCleaner/SojiLogs
 - View / Custom Fields
 - etc.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

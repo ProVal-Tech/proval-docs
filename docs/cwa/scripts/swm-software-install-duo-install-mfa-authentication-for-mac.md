@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for installing the la
 tags: ['installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -70,3 +72,9 @@ Call v_Extradatarefresh(3,'Clients');
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

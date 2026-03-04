@@ -8,6 +8,8 @@ description: 'Automates local administrator account management, password rotatio
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ Condition Script: Determines if the Local Admin Password Rotation script needs t
 
 - Activity Log
 - Custom Field
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

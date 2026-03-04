@@ -8,6 +8,8 @@ description: 'Group for machines where Todyl SGN Connect deployment is enabled b
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ A machine joins the group if it meets ALL criteria in Block 1 OR ALL criteria in
 ## Completed Group
 
 ![Image3](../../../static/img/docs/34482e9f-122f-490d-b3c8-1e1d466bbc77/image3.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

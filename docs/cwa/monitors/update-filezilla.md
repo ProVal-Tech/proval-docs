@@ -8,6 +8,8 @@ description: 'The internal monitor identifies Windows machines with an outdated 
 tags: ['application', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-15
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The internal monitor detects Windows machines running an outdated version of Fil
 
 - [FileZilla - Fetch Latest Version](/docs/71141737-d88f-43d3-9e75-e3f5468f888f)
 - [FileZilla - Install/Update](/docs/154e2b72-d73f-4693-a316-7a296e4793ec)
+
+## Changelog
+
+### 2025-04-04
+
+- Initial version of the document

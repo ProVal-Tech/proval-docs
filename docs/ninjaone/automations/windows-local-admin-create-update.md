@@ -8,6 +8,8 @@ description: 'Automates local administrator account management, password rotatio
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Overview
@@ -117,3 +119,9 @@ This script creates a local admin account using values from custom fields or run
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

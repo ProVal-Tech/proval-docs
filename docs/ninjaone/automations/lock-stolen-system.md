@@ -8,6 +8,8 @@ description: 'This script is used to track and lock down stolen systems. If Cust
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Overview
@@ -35,3 +37,9 @@ This script is used to track and lock down stolen systems. If Custom Field `cPVA
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

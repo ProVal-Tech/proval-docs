@@ -8,6 +8,8 @@ description: 'Automatically set all contacts for a PSA company to inactive statu
 tags: ['psa', 'contacts', 'offboarding', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -115,3 +117,9 @@ Before using this workflow, ensure the following requirements are met:
   "ticket_id": "CLO-2026-008"
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

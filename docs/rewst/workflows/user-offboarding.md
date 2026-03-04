@@ -8,6 +8,8 @@ description: 'Automate the complete user offboarding process including account d
 tags: ['offboarding', 'office365', 'active-directory', 'security', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -713,3 +715,9 @@ For involuntary terminations or security concerns, enable `immediate_disable`:
 13. **Communication**: Keep all stakeholders informed throughout the process
 14. **Post-Offboarding Audit**: Review completed offboardings for process improvements
 15. **Contractor Considerations**: Adjust retention periods for contract workers vs full-time employees
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the available Dockstations I
 tags: ['bios', 'dell', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This dataview populates the available Dockstations Inventory for the Dell Workst
 | Manufacture Date    | Manufacture date of the dockstation                |
 | Dock Name           | Name of the dockstation                            |
 | Script Last Ran     | Last time the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) executed on the machine |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

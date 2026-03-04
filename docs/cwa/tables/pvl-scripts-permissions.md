@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and details of the Built-In Scr
 tags: ['database', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This document stores the GUID and the set of user class(es) for Built-In scripts
 | Developer            | varchar | Creator of the script (Stock or ProVal). The beta version of the solution is limited to the stock scripts. |
 | InitialPermission    | varchar | Existing view permission of the script.                                                          |
 | InitialEditPermission| varchar | Existing edit permission of the script.                                                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

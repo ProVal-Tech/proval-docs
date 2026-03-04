@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to remove the Windows 10 
 tags: ['performance', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The script will first check if the Windows 10 Upgrade Assistant is installed. If
 ## Output
 
 - Script log messages only
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for Beyond Compare 2.'
 tags: ['application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-06
 ---
 
 ## Description
@@ -16,3 +18,9 @@ An ImmyBot software installer for [Beyond Compare 2](https://www.scootersoftware
 This is a legacy version of Beyond Compare, provided for compatibility with older systems or licenses. For the latest features and improvements, consider using Beyond Compare 4.
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/beyond-compare-2.toml)
+
+## Changelog
+
+### 2025-11-06
+
+- Initial version of the document

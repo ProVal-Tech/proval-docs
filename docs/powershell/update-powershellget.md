@@ -8,6 +8,8 @@ description: 'Documentation for the Update-PowerShellGet command to install or u
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -25,3 +27,9 @@ Installs or updates PowerShellGet to the latest version available in the PowerSh
 ```powershell
 .\Update-PowerShellGet.ps1
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

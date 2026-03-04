@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Disable-Powershell
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document provides an implementation guide for the Disable-PowershellVersion
 ## Process
 
 Please review the agnostic content document for the complete process.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

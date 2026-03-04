@@ -8,6 +8,8 @@ description: 'Gets or sets the Windows time zone using a NinjaOne custom field o
 tags: ['timezone', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Overview
@@ -51,4 +53,10 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

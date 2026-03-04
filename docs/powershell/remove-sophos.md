@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-Sophos command to completely remove t
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -36,3 +38,9 @@ Location of output for log, result, and error files.
 .\Remove-Sophos-Log.txt
 .\Remove-Sophos-Error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

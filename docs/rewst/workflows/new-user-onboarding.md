@@ -8,6 +8,8 @@ description: 'Automate the complete new user onboarding process including accoun
 tags: ['onboarding', 'office365', 'active-directory', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -490,3 +492,9 @@ Common error types:
 10. **Regular Audits**: Periodically review group memberships and access patterns to ensure templates are current
 11. **Offboarding Integration**: Pair with offboarding workflow for complete lifecycle management
 12. **Compliance**: Ensure the workflow meets regulatory requirements for access provisioning and audit trails
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

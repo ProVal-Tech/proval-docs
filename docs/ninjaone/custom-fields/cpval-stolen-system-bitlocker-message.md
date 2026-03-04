@@ -8,6 +8,8 @@ description: 'The message to be displayed on the BitLocker lock screen. This cus
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-03
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ The message to be displayed on the BitLocker lock screen. This custom field is u
 
 ## Sample Screenshot
 
-![Sample ScreenShot](../../../static/img/docs/04443686-5a42-41d4-b936-b62145597107/image1.webp)  
+![Sample ScreenShot](../../../static/img/docs/04443686-5a42-41d4-b936-b62145597107/image1.webp)
+
+## Changelog
+
+### 2026-02-25
+
+- Initial version of the document

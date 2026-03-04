@@ -8,6 +8,8 @@ description: 'Detect all available video output ports on the system (HDMI, Displ
 tags: ['auditing', 'custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Overview
@@ -37,3 +39,9 @@ This script collects and displays information about the system’s video control
     - Custom Field example:
 
 ![SampleRun1](../../../static/img/docs/1778ced7-a9b2-461c-a20c-c72c2242e94f/ninja2.webp)
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

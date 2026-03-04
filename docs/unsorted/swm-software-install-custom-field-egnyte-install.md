@@ -21,3 +21,9 @@ See the solution for full details: [Egnyte - Install](/docs/ddd45f6e-2b41-4b83-a
 | Field Name        | Type of Field | Description                                                                        |
 | ----------------- | ------------- | ---------------------------------------------------------------------------------- |
 | cPVALEgnyteReboot | Machine       | Designates whether the machine needs to be rebooted following Egnyte installation. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

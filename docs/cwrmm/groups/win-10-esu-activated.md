@@ -8,6 +8,8 @@ description: 'This contains the list of Windows 10 devices where the ESU is acti
 tags:  ['auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/198ac207-0426-4c7f-afeb-7fa84b599b6c/image3.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Automatically dispatch and assign support tickets to the most appr
 tags: ['psa', 'automation', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 # Summary
@@ -483,3 +485,9 @@ Honors customer-requested technicians when available and qualified.
 13. **Geographic Consideration**: Factor in time zones for global support operations
 14. **Specialization Balance**: Ensure specialist technicians aren't overwhelmed while generalists are underutilized
 15. **Continuous Improvement**: Regularly review and refine dispatching rules based on outcomes
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

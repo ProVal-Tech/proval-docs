@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and dependencies of the Get Use
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This script depends on **Get User Folder Sizes**.
 | ComputerID    | INT     | The audited agent's computer ID.     |
 | ProfilePath   | VARCHAR | The path of the audited profile.     |
 | ProfileSize   | FLOAT   | The size of the profile in GB.       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

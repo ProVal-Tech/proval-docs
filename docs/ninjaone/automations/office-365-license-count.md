@@ -8,6 +8,8 @@ description: 'Authenticates to MS Graph via an App Registration to audit M365 li
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-27
 ---
 
 ## Overview
@@ -78,3 +80,9 @@ Please note that this script is designed for professional use and requires a cer
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

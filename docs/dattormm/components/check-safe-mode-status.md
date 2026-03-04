@@ -8,6 +8,8 @@ description: 'This script is designed to monitor and detect whether the system i
 tags: ['datto', 'data-collection', 'alerting']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Overview  
@@ -66,3 +68,9 @@ StdErr is not expected.
 ## Attachments  
 
 [Check Safe Mode Status](../../../static/attachments/Check%20Safe%20Mode%20Status.cpt)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

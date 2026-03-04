@@ -8,6 +8,8 @@ description: ''
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-22
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The purpose of this dataview is to show the effective reboot time and day assign
 | Reboot_Time         | The effective scheduled reboot time for the computer.                                         |
 | Last Schedule Outcome | The result of the last schedule (e.g., whether the reboot was scheduled or the machine was offline).    |
 | Last Reboot Time | Last reboot time of the computer. |
+
+## Changelog
+
+### 2025-07-17
+
+- Initial version of the document

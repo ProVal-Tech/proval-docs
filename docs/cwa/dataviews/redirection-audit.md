@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of all possible re
 tags: ['gpo', 'registry', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This document displays all possible redirection registry settings globally and f
 | Description    | The description of what the property affects, if known.                                                                                                   |
 | TargetType     | "Global Setting" if the property is setting a global computer setting; "Folder" if the property is targeting a folder.                                    |
 | RoamingState   | "Local" if the property does not provide redirection; "Roaming" if the property provides redirection.                                                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

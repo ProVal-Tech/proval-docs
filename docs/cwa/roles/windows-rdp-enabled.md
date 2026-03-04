@@ -8,6 +8,8 @@ description: 'This document outlines the detection of Remote Desktop Protocol (R
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role is detected on any agent where RDP is enabled.
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-ItemProperty -Path 'HKLM://System//CurrentControlSet//Control//Terminal Server' -name 'fDenyTSConnections').fDenyTSConnections"@%} | Equals     | 0      | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Provide the Umbrella UserID associated with your organization. Thi
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Provide the Umbrella UserID associated with your organization. This field is req
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e2073d81-d1dc-4b70-84db-6713358ddfae/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

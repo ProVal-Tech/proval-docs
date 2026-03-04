@@ -8,6 +8,8 @@ description: 'This solution provides automated deployment, management, and remov
 tags: ['installation', 'uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-28
 ---
 
 ## Purpose
@@ -239,3 +241,9 @@ Additionally, if "All" or "Umbrella" is selected in the Modules field, the follo
 ### **Q.** How do I verify that modules were installed correctly?
 
 **A:** You can verify module installation by running the [Cisco Secure Client - Module Comparison](/docs/c79a196a-ec36-427e-9905-6610898432c9) automation, which will compare the installed modules against the modules selected in the Modules custom field. Additionally, on Windows systems, you can check the installed modules in the Windows Registry or Add/Remove Programs (if the ARP option is not enabled). On Mac systems, you can check the installed modules in the Applications folder or using system commands. The installation automation's activity details will also provide information about which modules were successfully installed.
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the execution of the EPM Data Collection Sc
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -35,4 +37,10 @@ Managed Workstations
 
 The alert template should execute the [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d) script.  
 
-![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_3.webp)  
+![Image](../../../static/img/docs/fdbe1912-b216-4876-b64b-db83eee691a1/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides detailed information on the audited speed t
 tags: ['networking', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Displays audited speed test information from the custom table [EPM - Network - C
 | ResultURL        | The URL of the speed test result.                                                           |
 | DownloadMbps     | The download speed detected in Mbps.                                                        |
 | UploadMbps       | The upload speed detected in Mbps.                                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

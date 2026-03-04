@@ -8,6 +8,8 @@ description: 'Audits BitLocker encryption status and TPM hardware details, popul
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Description
@@ -69,3 +71,9 @@ This script performs a comprehensive audit of the machine's security posture reg
     ![Image2](../../../static/img/docs/2d104874-ec69-4d95-b912-7fcd240bf592/image3.webp)
   - `cPVAL TPM Info`  
     ![Image3](../../../static/img/docs/2d104874-ec69-4d95-b912-7fcd240bf592/image2.webp)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

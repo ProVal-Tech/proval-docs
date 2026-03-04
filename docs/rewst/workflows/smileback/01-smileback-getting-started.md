@@ -8,6 +8,8 @@ description: 'Workflow to obtain an API token from SmileBack.'
 tags: [ 'smileback' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 To use these workflows, follow these steps:
@@ -20,3 +22,9 @@ To use these workflows, follow these steps:
     - `smileback_scope`: This must be set to `read read_recent`.
     - `smileback_username`: Your SmileBack username (email).
     - `smileback_password`: Your SmileBack password.
+
+## Changelog
+
+### 2025-11-05
+
+- Initial version of the document

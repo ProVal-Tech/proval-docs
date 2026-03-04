@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive report on all active users 
 tags: ['active-directory', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document shows all the active users within the last 30 days using the Activ
 | Password Expiration Date      | Shows the date of the next password expiration for the user|
 | Password Last Set             | Shows the last time the password was set for this user    |
 | Days Since Last Password Change| Total number of days since the last password set date.    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

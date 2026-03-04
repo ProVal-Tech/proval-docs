@@ -8,6 +8,8 @@ description: 'This document outlines the steps to deploy Perch Log Shipper on Wi
 tags: ['deployment', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -40,3 +42,9 @@ Read the associated documents carefully.
 - Ensure the [Script - Deploy Perch Log Shipper](/docs/6587bacd-7587-466e-b31d-7291cf11a401) script is bonded to the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template.
 - Ensure the `△ Custom - Execute Script - Deploy Perch Log Shipper` Alert Template is being used with [Internal Monitor - Agents Missing Perch Log Shipper](/docs/bc410117-b7b7-4345-967c-965f15acdf07).
 - Right-click and select "Run Now" to enable [Internal Monitor - Agents Missing Perch Log Shipper](/docs/bc410117-b7b7-4345-967c-965f15acdf07) to start deploying Perch Log Shipper on the required machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

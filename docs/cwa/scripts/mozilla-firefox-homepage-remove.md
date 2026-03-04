@@ -8,6 +8,8 @@ description: 'This document describes an implementation of the agnostic script t
 tags: ['firefox', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document outlines an Automate implementation of the agnostic script [Remove
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

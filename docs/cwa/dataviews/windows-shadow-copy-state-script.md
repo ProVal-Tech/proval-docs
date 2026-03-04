@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a DataView that disp
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This DataView displays the Windows Shadow Copy state for endpoints with Shadow C
 | Used Space by Shadow Copy (GB)             | Used space size by the Shadow Copy in GB                               |
 | Allocated Size of Shadow Copy (GB)         | Allocated space size for the Shadow Copy in GB                         |
 | Maximum Space Provided to Shadow Copy (GB) | Maximum space provided to the Shadow Copy in GB                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to enable Windows U
 tags: ['patching', 'registry', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -151,3 +153,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

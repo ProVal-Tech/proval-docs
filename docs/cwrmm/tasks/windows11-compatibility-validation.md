@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to verify if a Window
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -284,3 +286,9 @@ It is suggested to run the Task once per month against [Windows 10 Machines](/do
 
 - Script Log
 - Custom Field
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the custom fields used in the Reboot Schedu
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ The custom fields listed below are used in the Reboot Schedule Solution.
 
 5. Repeat the above four steps to create all other custom fields based on the Name, Level, Type, Default, Description, and Editable values provided in the table.  
    **NOTE:** To exclude this client from the solution, please enter 'Exclude' in the field. This will cause the script to exit and not take any actions on the target device.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

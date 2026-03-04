@@ -8,6 +8,8 @@ description: 'The condition runs the automation once per hour and generates a ti
 tags: ['dell', 'ticketing', 'eventlogs', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-20
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Save` button located at the top-right corner of the screen to save th
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
 ![MFA](../../../static/img/docs/a5979a59-7291-42e0-8278-d7c10aa9b557/mfa.webp)
+
+## Changelog
+
+### 2025-06-17
+
+- Initial version of the document

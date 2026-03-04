@@ -8,6 +8,8 @@ description: 'Documentation for the Reset-KrbtgtKeys command to reset the KRBTGT
 tags: ['active-directory', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -52,3 +54,9 @@ The output for log, result, and error files will be located at:
 .\Reset-KrbtgtKeys-log.txt
 .\Reset-KrbtgtKeys-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

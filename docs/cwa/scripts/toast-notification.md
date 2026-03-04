@@ -8,6 +8,8 @@ description: 'This script downloads and executes the New-ToastNotification.ps1, 
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Summary
@@ -81,3 +83,9 @@ Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-02-27
+
+- Initial version of the document

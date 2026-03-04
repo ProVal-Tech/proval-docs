@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the dataview au
 tags: ['performance', 'report', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ This document covers the dataview audit snapshots for virtual machines hosted on
 | Estimated Disk Max Usage        | Displays the maximum disk usage by the snapshot        |
 | Snapshot Description             | Displays the description of the snapshot               |
 | Is Current Snapshot             | Displays whether the snapshot is current or not        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

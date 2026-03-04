@@ -8,6 +8,8 @@ description: 'This document explains how to enable the user-level scheduled task
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-2
 
 ![Screenshot 1](../../../static/img/docs/280aafc8-9ab0-4cca-b499-d107b47de432/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/280aafc8-9ab0-4cca-b499-d107b47de432/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

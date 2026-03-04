@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of well-known remo
 tags: ['networking', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ The following remote software will be detected:
 | Location           | Location Name                           |
 | Computer           | Computer Name                           |
 | Remote Software    | List of remote software installed       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

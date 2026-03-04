@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a PowerShell script 
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Summary
@@ -57,3 +59,8 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Compatibility Check | Equals   | Undetermined                        | Orange |
 | Compatibility Check | Equals   | Capable                             | Green  |
 
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

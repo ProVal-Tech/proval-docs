@@ -8,6 +8,8 @@ description: 'Displays a table of Office 365 license information gathered by the
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Displays a table of Office 365 license information gathered by the auditing scri
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/03049086-4043-4daf-88bf-f71ba98a301e/image1.webp)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

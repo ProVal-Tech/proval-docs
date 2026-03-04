@@ -102,3 +102,9 @@ WHERE
   ) 
   AND d.missing = '0'
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

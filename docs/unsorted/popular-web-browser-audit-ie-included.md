@@ -88,3 +88,9 @@ FROM
       c.computerid
   ) AS t
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

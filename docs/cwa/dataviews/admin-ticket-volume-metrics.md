@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to calculate ticket metr
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Automate must generate tickets.
 ## Example
 
 ![Example Image](../../../static/img/docs/c5f66e4b-17d7-4ccb-bc27-d992e6031650/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

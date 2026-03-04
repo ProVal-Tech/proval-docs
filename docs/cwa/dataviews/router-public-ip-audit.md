@@ -8,6 +8,8 @@ description: 'This dataview provides an overview of the public IP address associ
 tags: ['networking', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This dataview shows the public IP address of the location's router.
 | Router Address               | The router's public IP address.                     |
 | Router Access Count          | The number of agents connected to the router's public IP. |
 | Agent Name Using Router      | The names of the agents that are connected to the router's public IP. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

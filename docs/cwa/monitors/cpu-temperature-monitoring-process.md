@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring CPU temperature 
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The monitor set is established by the [CPU Temperature Monitor - Create](/docs/7
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/docs/84d6587b-2bca-4f0e-9176-c0df064f532c/image_1_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

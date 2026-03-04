@@ -8,6 +8,8 @@ description: 'Stores the result from the ESU Audit script'
 tags: ['auditing','licensing','patching','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ The `Add new custom field` dialog box will occur
 ## Completed Custom Field
 
 ![Step3](../../../static/img/docs/90f075dc-5997-4abe-8a89-c46c6d566de0/image.webp)
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

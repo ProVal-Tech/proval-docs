@@ -8,6 +8,8 @@ description: 'This document details a script designed for use with remote monito
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -74,3 +76,9 @@ Please reference the agnostic content documentation for the Service Restart Proc
 
 - Script Log
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

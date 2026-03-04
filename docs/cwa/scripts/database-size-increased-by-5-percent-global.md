@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to monitor the Labtech Da
 tags: ['database']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ Labtech Database's size increased by SizeToCompare percent within the last Hours
 
 - Script States
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

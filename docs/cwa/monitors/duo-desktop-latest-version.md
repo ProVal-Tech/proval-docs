@@ -8,6 +8,8 @@ description: 'This monitor is designed to fetch the latest version of the DUO De
 tags: ['software', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-14
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Global
 - Navigate to the Automation->Monitors
 - Apply the **Alert Template - △ Custom - Execute Script - DUO Desktop** with the monitor to run the [Script - DUO Desktop - Install/Upgrade](/docs/c0019fe0-7411-4c3d-981b-f2bb70733c26) as an autofix.
 - Run now and reset the monitor.
+
+## Changelog
+
+### 2025-05-13
+
+- Initial version of the document

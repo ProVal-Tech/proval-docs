@@ -8,6 +8,8 @@ description: 'This script enables the inactive users that are not logged in for 
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-02
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ For e.g. ``Computername$``, ``UserName$``
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
 - [Dataview - Inactive AD Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
 - Script Log
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

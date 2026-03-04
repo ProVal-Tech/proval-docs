@@ -8,6 +8,8 @@ description: 'This document outlines the setup and usage of an internal monitor 
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -47,4 +49,10 @@ The [Crystal Disk Info Report](/docs/651e701f-40d0-4657-817c-b81785d441ea) scrip
   - On the global monitor set. The ticket category can be selected at the monitor set itself. This ticket category will only be picked if the group-level ticket category is not defined and global variables are set to 0.  
   ![Image](../../../static/img/docs/860cd3d8-4833-4c29-b87d-ac997816994e/image_5.webp)  
   - If the ticket category is not set from any of the above-mentioned places, then the ticket will be generated under the default ticket category.  
-  ![Image](../../../static/img/docs/860cd3d8-4833-4c29-b87d-ac997816994e/image_6.webp)  
+  ![Image](../../../static/img/docs/860cd3d8-4833-4c29-b87d-ac997816994e/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

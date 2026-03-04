@@ -8,6 +8,8 @@ description: 'Organization Name is used during the AutoElevate agent deployment 
 tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Organization Name is used during the AutoElevate agent deployment to ensure that
 ## Sample Screenshot
 
 ![Organization Name](../../../static/img/docs/f6050cf6-67c8-4563-888e-8f34651cf4bb/organization-name.webp)
+
+## Changelog
+
+### 2025-11-27
+
+- Initial version of the document

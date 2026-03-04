@@ -8,6 +8,8 @@ description: 'This document explains how to mark a custom field to exclude a sit
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,4 +27,10 @@ Marking this custom field will exclude the machines from [CW RMM - Machine Group
 ## Screenshots
 
 ![Screenshot 1](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_1.webp)  
-![Screenshot 2](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_2.webp)  
+![Screenshot 2](../../../static/img/docs/0c299d28-5fcb-4a1e-a341-1c5e78f74cfb/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

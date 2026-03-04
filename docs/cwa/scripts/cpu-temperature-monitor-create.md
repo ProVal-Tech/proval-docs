@@ -8,6 +8,8 @@ description: 'This document outlines a script designed for establishing a remote
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -111,3 +113,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 ## Attachments
 [CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for silently removing VLC fro
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This procedure silently removes VLC.
 ## Output
 
 AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

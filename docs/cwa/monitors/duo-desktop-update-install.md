@@ -8,6 +8,8 @@ description: 'This internal monitor is built to upgrade the DUO Desktop every mo
 tags: ['software', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-14
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ It depends on the EDFs and System property.
 - How to enable the installation part of the monitor
 - The monitor 0 value need to be changed with 1 to set the auto-deployment installation and update both.![Installation Enable](../../../static/img/docs/duo-desktop-update-install/image-1.png)
 By default, the monitor only works for the update.
+
+## Changelog
+
+### 2025-05-13
+
+- Initial version of the document

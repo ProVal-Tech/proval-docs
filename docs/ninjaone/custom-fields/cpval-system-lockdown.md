@@ -10,6 +10,8 @@ tags: ['connectwise']
 draft: false
 unlisted: false
 
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ Mark this to lock down the machine once it comes online. 'Lock Stolen System' so
 
 ## Sample Screenshot
 
-![Sample ScreenShot](../../../static/img/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a/samplescreenshot.webp)  
+![Sample ScreenShot](../../../static/img/docs/4b18c9bf-8aea-41a5-8242-77dfcfd0042a/samplescreenshot.webp)
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

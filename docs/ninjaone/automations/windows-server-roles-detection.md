@@ -8,6 +8,8 @@ description: 'Retrieves installed Windows Server roles, additional services, and
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Overview
@@ -252,3 +254,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 - Activity Details  
 ![Image9](../../../static/img/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9/image9.webp)
+
+## Changelog
+
+### 2025-03-28
+
+- Initial version of the document

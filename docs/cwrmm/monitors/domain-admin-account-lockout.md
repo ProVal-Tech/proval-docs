@@ -8,6 +8,8 @@ description: 'This monitor runs every 15 minutes to detect any domain admin acco
 tags: ['domain','active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-30
 ---
 
 ## Summary
@@ -202,3 +204,9 @@ Select `Device Groups` as selection type and search for `Domain Controller`. Thi
 
 ## Completed Monitor
 ![CompletedTask](../../../static/img/docs/5605eb10-68b5-4334-aedb-d52885a13671/image17.webp)
+
+## Changelog
+
+### 2025-05-01
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ A client script can either be debugged or executed against any client. The sugge
 - Remove the contents of [Automate Server Monitoring](/docs/98773b6a-7986-4df2-90a5-fb559eefc50b) from the environment if the `AreYouSure?` parameter is set to `Yes`; otherwise, exit.
 - Remove the ProSyncClient plugin from the environment if the `ProSyncClientToo?` parameter is set to `Yes`; otherwise, exit.
 - Remove itself from the environment if the `ThisScriptAsWell?` parameter is set to `Yes`; otherwise, exit.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

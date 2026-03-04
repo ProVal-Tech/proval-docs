@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-Application command to remove an appl
 tags: ['software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -95,3 +97,9 @@ Will attempt to remove Google Chrome using the provided custom switch.
 
 - `.\Remove-Application-log.txt`
 - `.\Remove-Application-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

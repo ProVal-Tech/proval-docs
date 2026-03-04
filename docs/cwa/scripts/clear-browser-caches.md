@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['browsers', 'cleanup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script will clear the caches for the following browsers:
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

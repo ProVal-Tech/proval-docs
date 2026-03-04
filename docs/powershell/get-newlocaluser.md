@@ -8,6 +8,8 @@ description: 'Documentation for the Get-NewLocalUser command to get newly added 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -31,3 +33,9 @@ If the script has not been run previously, the user data is saved to the table a
 ### Tables
 - Get-NewLocalUser_log
 - Get-NewLocalUser_users
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

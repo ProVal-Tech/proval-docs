@@ -8,6 +8,8 @@ description: 'This document outlines a solution for accurate offline server and 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -79,3 +81,9 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
        - 'Critical Workstation'
        - 'Server'
      - It is recommended that you use this alert template only if you are confident that the scripting engine should not get overloaded based on your current configuration OR if you are okay with accepting the potential risk if the scripting engine has a problem during an offline server issue.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

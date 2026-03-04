@@ -8,6 +8,8 @@ description: 'This document provides a summary of retired machines within the la
 tags: ['networking', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ None
 | Local Address    | Internal IP address of the machine           |
 | Retired Date    | Date when the machine was retired            |
 | Retire Comments  | Comments associated with the retirement      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

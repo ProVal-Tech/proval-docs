@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a Dataview desi
 tags: ['connectwise', 'database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ FROM
   LEFT JOIN plugin_screenconnect_scinstalled ON plugin_screenconnect_scinstalled.ComputerId = computers.ComputerID 
   LEFT JOIN plugin_proval_control_session_status ON plugin_proval_control_session_status.GUID = plugin_screenconnect_scinstalled.SessionGUID
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

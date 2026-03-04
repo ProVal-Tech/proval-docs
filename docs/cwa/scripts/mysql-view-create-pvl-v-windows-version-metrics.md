@@ -8,6 +8,8 @@ description: "This document outlines a script used for importing the SEC - Windo
 tags: ['database', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This script can be used to import the [MySQL View - pvl_v_windows_version_metric
 
 - [Custom Table - plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)
 - [Script - MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

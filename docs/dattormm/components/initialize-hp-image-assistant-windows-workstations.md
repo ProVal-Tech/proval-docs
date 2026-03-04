@@ -8,6 +8,8 @@ description: 'HP Image Assistant Automation Script for managing updates on HP wo
 tags: ['application', 'installation', 'software', 'hp', 'drivers', 'firmware', 'bios']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-06
 ---
 
 ## Overview
@@ -70,3 +72,9 @@ The component automates the process of checking, analyzing, and installing updat
 ## Attachments
 
 - [Initialize HP Image Assistant - Windows Workstations](../../../static/attachments/initialize-hp-image-assistant-windows-workstations.cpt)
+
+## Changelog
+
+### 2025-08-06
+
+- Initial version of the document

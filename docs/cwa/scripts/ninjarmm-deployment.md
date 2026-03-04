@@ -8,6 +8,8 @@ description: 'This script deploys the NinjaRMMAgent'
 tags: ['application','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Ins
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-05-21
+
+- Initial version of the document

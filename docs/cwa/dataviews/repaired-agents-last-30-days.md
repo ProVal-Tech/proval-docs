@@ -8,6 +8,8 @@ description: 'This document provides a summary of the dataview that displays inf
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The dataview displays the information of the agents repaired by the [Script - Au
 | Last Logged In User      | Last Logged In User                                                                                    |
 | Last Contact with RMM    | Last Contact with RMM                                                                                 |
 | Current Status           | Current Status of the machine (Offline/Online/Broken/Retired)                                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The customfield stores the OneDrive Sync Status'
 tags: ['onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-23
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This device custom field stores the OneDrive Sync Status gathered by the automat
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/d7a2d79d-7b3c-47bd-9666-492e423e7b97/image3.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

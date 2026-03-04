@@ -8,6 +8,8 @@ description: 'Automatically create user accounts in JumpCloud with proper group 
 tags: ['jumpcloud', 'automation', 'provisioning', 'identity']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -530,3 +532,9 @@ Common error types:
 13. **LDAP Consideration**: Only enable LDAP binding for users who need legacy application access
 14. **Bulk Provisioning**: Use batch mode for onboarding multiple users simultaneously
 15. **Activation Timing**: Schedule account creation close to start date to avoid premature access
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

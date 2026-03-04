@@ -8,6 +8,8 @@ description: 'This document provides information on how to store historical data
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This document stores historical information about queued maintenance modes. This
 | TimeStart   | DATETIME| The server time when the maintenance mode begins.                      |
 | Duration    | INT     | The number of minutes that the maintenance mode will last.             |
 | Mode        | INT     | The type of maintenance mode (1 = Alerts, 2 = Scripts, 3 = Alerts & Scripts) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

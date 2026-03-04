@@ -8,6 +8,8 @@ description: 'This script helps to verify whether antivirus (AV) is running on a
 tags: ['security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ The intended target for this script is the "AV-Disabled" monitor.
 
 - Script log
 - Script state
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

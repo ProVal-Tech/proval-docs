@@ -8,6 +8,8 @@ description: 'List of all SSL certificates in the personal certificate repositor
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ List of all SSL certificates in the personal certificate repository. This Data i
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/docs/350874e6-7bef-4bff-8fce-f2772acab495/image1.webp)
+
+## Changelog
+
+### 2026-02-13
+
+- Initial version of the document

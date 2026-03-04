@@ -8,6 +8,8 @@ description: 'Flag this checkbox to enable Office 365 license count auditing for
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Flag this checkbox to enable Office 365 license count auditing for the client. O
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/70be2211-ad18-44d2-9254-20cdd812f378/image1.webp)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

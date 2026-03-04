@@ -8,6 +8,8 @@ description: 'This document provides a guide on using the PowerShell module LSUC
 tags: ['bios', 'drivers', 'firmware', 'installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ $updates = Get-LSUpdate -All
 
 GitHub: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

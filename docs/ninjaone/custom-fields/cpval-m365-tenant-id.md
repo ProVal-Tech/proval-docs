@@ -8,6 +8,8 @@ description: 'Enter the Office 365 Tenant ID associated with the client''s Micro
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enter the Office 365 Tenant ID associated with the client's Microsoft 365 enviro
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e65b4461-73f7-4125-99d8-e0bb7202481e/image1.webp)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

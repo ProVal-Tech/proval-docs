@@ -8,6 +8,8 @@ description: 'This script sets the OneDrive Files On-Demand Policy settings at t
 tags: ['onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-13
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This script sets the OneDrive Files On-Demand Policy settings at the system and 
 
 - Script log
 - Local file:  `C:\ProgramData\_Automation\Script\OneDrive-OnDemandSettings\OneDrive-OnDemandSettings-log.txt`
+
+## Changelog
+
+### 2025-08-07
+
+- Initial version of the document

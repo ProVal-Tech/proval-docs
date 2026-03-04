@@ -8,6 +8,8 @@ description: 'This document provides an overview of the RAWSQL monitor that crea
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The RAWSQL monitor will create the `plugin_proval_agent_count_history` custom ta
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

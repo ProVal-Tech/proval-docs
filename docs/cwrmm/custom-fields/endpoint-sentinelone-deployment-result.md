@@ -8,6 +8,8 @@ description: 'This document details a custom field used to store the result of t
 tags: ['connectwise', 'deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This custom field stores the result of [CW RMM - Task - SentinelOne Deployment](
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/7af6b9e0-bf2f-4705-874e-c58c5fa9171d/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

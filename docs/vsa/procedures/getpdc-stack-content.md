@@ -8,8 +8,16 @@ description: 'This document provides a comprehensive guide on how to retrieve th
 tags: ['active-directory', 'networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
 
 Get Primary Domain Controller
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This monitor looks for any SSL certificates that have an expiratio
 tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -152,3 +154,9 @@ if ($expiredCerts) {
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/dc48efed-0e7d-44d4-8d1a-27e2bf91b028/image6.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

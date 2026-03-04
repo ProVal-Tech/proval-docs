@@ -8,6 +8,8 @@ description: 'This document provides a summary of the dataview, outlining its im
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This section should list the ITGlue documents found in the Related Items sidebar
 | Column                                        | Description                                   |
 |-----------------------------------------------|-----------------------------------------------|
 | The display name of the column in the dataview. | Information about what this column is displaying. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

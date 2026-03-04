@@ -8,6 +8,8 @@ description: 'Workflow to retrieve CSAT companies from SmileBack.'
 tags: [ 'smileback' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 # Summary
@@ -26,3 +28,9 @@ The workflow requires an API token to authenticate requests to the SmileBack API
   ]
 }
 ```
+
+## Changelog
+
+### 2025-11-05
+
+- Initial version of the document

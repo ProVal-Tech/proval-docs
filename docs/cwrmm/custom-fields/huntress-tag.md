@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a custom field
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ This custom field is to be filled with the Huntress Tag. It is utilized by the [
 **Type:** Text Box  
 **Level:** Site  
 **Description:** Huntress Agent Tag. These could be simple keywords that can be used to group agents within the Huntress Organization.  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

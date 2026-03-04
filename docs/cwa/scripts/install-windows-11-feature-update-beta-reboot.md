@@ -8,6 +8,8 @@ description: 'The script automates the installation of the latest Windows 11 Fea
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ This helps ensure that the update process runs smoothly without being blocked or
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-03-27
+
+- Initial version of the document

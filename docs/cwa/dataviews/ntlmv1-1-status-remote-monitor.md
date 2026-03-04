@@ -8,6 +8,8 @@ description: 'This document outlines a dataview designed to check the status of 
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This dataview is designed to reveal whether NTLMv1.1 is currently enabled on the
 
 - Apply and import the remote monitors to the Managed Windows Computers group.
 - Import the dataview.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

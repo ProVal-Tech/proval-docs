@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on configuring the RMM+ Pl
 tags: ['networking', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Purpose
@@ -73,3 +75,9 @@ Create a session group in the ScreenConnect portal for machines that have not ch
 - Click on Create. Now you can see the agents that have not checked in for over **`X`** days.
 ## Attachments
 [HTTP-GET-POST.dll](<../../../static/attachments/itg/9770217/HTTP-GET-POST.dll>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

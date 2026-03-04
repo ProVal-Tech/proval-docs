@@ -8,6 +8,8 @@ description: 'Group of machines where "BitLocker Key Backup" is enabled.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/72e98ffa-ed78-4986-a655-99bb4ad3f2a9/image3.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

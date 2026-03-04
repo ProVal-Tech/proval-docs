@@ -8,6 +8,8 @@ description: 'This document outlines the structure and purpose of the EPM Data C
 tags: ['database', 'networking', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Child of Solution
@@ -38,3 +40,9 @@ Holds device data for each controller listed in [EPM - Data Collection - Solutio
 | Disabled      | String | True if disabled, false if not.                                                              |
 | Model         | String | The model of the device.                                                                     |
 | Type          | String | The type of Unifi device.                                                                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

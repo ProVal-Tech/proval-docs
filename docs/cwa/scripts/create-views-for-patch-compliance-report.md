@@ -8,6 +8,8 @@ description: 'This script is designed to initialize the database environment by 
 tags: ['database', 'installation', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ The script performs the following actions:
 ## Output
 
 * Views
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the User-Audit command to retrieve specific or m
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -39,3 +41,9 @@ This will fetch any users containing a "Test" or "Pro" string. If the agent is a
 
 ## Output
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides details on tracking the activation status o
 tags: ['office']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document tracks the activation status of any installed Office applications.
 | Field Name                     | Type of Field (Machine or Organization) | Description                                        |
 |--------------------------------|------------------------------------------|----------------------------------------------------|
 | xPVAL Office Activation Status  | Machine                                  | Tracks the activation status of any installed Office applications. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

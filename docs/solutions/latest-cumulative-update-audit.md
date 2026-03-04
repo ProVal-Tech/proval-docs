@@ -8,6 +8,8 @@ description: 'This document outlines a solution that retrieves the computer buil
 tags: ['compliance', 'database', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ The solution retrieves the computer's build number and compares it with Microsof
 - Create the task: [CW RMM - Task - Cumulative Update Audit](/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb)
 - Create the deployment schedule as described in this document (at the bottom): [CW RMM - Task - Cumulative Update Audit](/docs/defbdc2a-bd40-4baf-9c03-4768e026e0eb)
 - Create the monitor set if necessary: [CW RMM - Monitor - Cumulative Update Audit](/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

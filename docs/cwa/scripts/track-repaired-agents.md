@@ -8,6 +8,8 @@ description: 'This document explains how to monitor repairs carried out by the C
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This is a function script run by the [CWM - Automate - Script - Automate Agent -
 
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details a script that replicates the CWM - Automate 
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ It is imperative to incorporate the `Client ID` in the SQL query of a RAWSQL mon
 
 - Script Log
 - Client-level Ticket
+
+## Changelog
+
+### 2026-02-17
+
+- Initial version of the document

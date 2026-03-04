@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that reports any failed email occ
 tags: ['report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-13
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ For hosted partners, it will be the minimum computer ID of Client ID 1. If Clien
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2026-02-13
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This client script creates a ticket for all cluster hosts with a C
 tags: ['cluster', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ There are @ServerCount@ server(s) at @sqlname@ that are in need of manual patchi
 %sqlresult%
 
 Thank you!
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

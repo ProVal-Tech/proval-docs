@@ -8,6 +8,8 @@ description: 'Indicates if the C2R Office Auto Update is enabled on the machine,
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Indicates if the C2R Office Auto Update is enabled on the machine, as gathered b
 
 ## Sample Screenshot
 ![Image](../../../static/img/docs/e0c31574-10e7-4b8c-b5d5-24e355753441/image1.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

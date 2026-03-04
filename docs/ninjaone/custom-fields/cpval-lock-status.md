@@ -8,6 +8,8 @@ description: 'This Custom Field is used by `Lock Stolen System` to mark Machine 
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-03
 ---
 
 ## Summary
@@ -29,4 +31,10 @@ This Custom Field is used by `Lock Stolen System` to mark that machine is succes
 
 ## Sample Screenshot
 
-![Sample ScreenShot](../../../static/img/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc/image1.webp)  
+![Sample ScreenShot](../../../static/img/docs/e734bed4-a878-4574-b456-1e1ed59ee6bc/image1.webp)
+
+## Changelog
+
+### 2026-02-25
+
+- Initial version of the document

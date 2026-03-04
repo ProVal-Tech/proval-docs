@@ -56,3 +56,9 @@ This command compares the users found in the last run of `Compare-ADGroupMembers
 | Payload                                  |
 |------------------------------------------|
 | /repo/scripts/Compare-ADGroupMembers.ps1 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: ' It stores the Current Location and IP Details along with IPconfig
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-03
 ---
 
 ## Summary
@@ -27,4 +29,10 @@ unlisted: false
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-current-location-and-ip-details.toml)
 
 ## Sample Screenshot
-![Sample ScreenShot](../../../static/img/docs/85cb62ba-6e5f-4235-9964-975af04658d0/samplescreenshot.webp)  
+![Sample ScreenShot](../../../static/img/docs/85cb62ba-6e5f-4235-9964-975af04658d0/samplescreenshot.webp)
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

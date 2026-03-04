@@ -8,6 +8,8 @@ description: 'This dataview provides insights into newly created accounts, inclu
 tags: ['accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This dataview shows newly created accounts. It can be used for auditing accounts
 | New Account Disable Status    | Indicates whether the new account is disabled or not (No Action Taken - if this feature is not chosen in the script) |
 | New Account Approved         | Indicates whether the new account is approved after verification (No Action Required - Since disable is not enabled, it will show that approval is not required) |
 | New Account Approved Date    | Shows when the account was approved to be enabled.                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

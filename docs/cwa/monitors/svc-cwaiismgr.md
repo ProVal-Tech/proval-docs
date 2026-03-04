@@ -8,6 +8,8 @@ description: 'This document outlines the CWAIISMgr service monitor for the Autom
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ CWAIISMgr is one of the important services for the Automate server. This monitor
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

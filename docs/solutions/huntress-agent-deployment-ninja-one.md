@@ -8,6 +8,8 @@ description: 'This solution is designed to configure the automatic deployment of
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -86,3 +88,9 @@ The [Windows script](/docs/73daf0e3-7d35-415b-ab69-386ddd7377e0) can perform ins
 ### 4. Why is the auto-deployment not working for a client even after enabling it?
 
 If the auto-deployment is not working for a client, verify whether the organization, location, or machines are using a different agent policy. If they are, the compound conditions must be added to those specific agent policies as well to ensure the deployment functions correctly.
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

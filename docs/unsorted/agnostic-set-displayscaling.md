@@ -47,3 +47,9 @@ The output files will be:
 ./Set-DisplayScaling-log.txt
 ./Set-DisplayScaling-Error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

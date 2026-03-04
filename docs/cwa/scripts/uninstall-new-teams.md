@@ -8,6 +8,8 @@ description: 'This document provides a script for uninstalling New Teams from Wi
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ The PC information is outlined below:
 **PC Model:** @biosname@  
 **OS:** %os%  
 **S/N OF PC:** @biosver@
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive dataview of all Windows 10 
 tags: ['patching', 'reboot', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ None
 | Reboot Pending   | Indicates if a reboot is pending                         |
 | Last Contact     | Last time the machine checked into Automate              |
 | Uptime          | Time in seconds since the machine has restarted the kernel |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

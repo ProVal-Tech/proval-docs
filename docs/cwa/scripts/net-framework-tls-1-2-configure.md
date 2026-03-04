@@ -8,6 +8,8 @@ description: 'This document outlines a script that sets the required registry va
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This script sets the required registry values to configure "SchUseStrongCrypto" 
 
 - Ticket
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

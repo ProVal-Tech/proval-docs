@@ -8,6 +8,8 @@ description: 'The custom fields described here are used in the creation of [Dyna
 tags: ['windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The custom fields described here are used in the creation of [Dynamic Group - De
    Once the custom fields are created, please validate them by searching for them in the search input text field provided in the custom fields:  
    ![Search Custom Fields](../../../static/img/docs/5059a874-fdcd-4b78-989f-a0fd5184d7ce/image_4.webp)  
    It will show you the custom fields you created.
+
+## Changelog
+
+### 2025-06-16
+
+- Initial version of the document

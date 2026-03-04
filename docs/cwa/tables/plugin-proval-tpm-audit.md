@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Bitlocker TPM Au
 tags: ['database', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -45,3 +47,9 @@ It holds all data from the Get-TPM command.
 | TpmOwned               | VARCHAR | Holds the value of the TpmOwned property of Get-TPM.               |
 | TpmPresent             | VARCHAR | Holds the value of the TpmPresent property of Get-TPM.             |
 | TpmReady               | VARCHAR | Holds the value of the TpmReady property of Get-TPM.               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script that audits a specified Active Di
 tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ If [Compare-ADGroupMembers](/docs/d05c42d1-0984-4ce7-9b1e-7f144871fe1e) returns 
 - Script Log
 - Log Files
 - Ticketing
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

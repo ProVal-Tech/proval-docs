@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to collect and display whether Win
 tags: ['windows', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ The purpose of this CWA solution is to collect and display whether Winget is ava
      - [Internal Monitor - Execute Script - Get Winget Enablement Status](/docs/52e8e3aa-75ec-47fe-8f23-6f8378cff4bf)
        - Alert Template - `△ Custom - Execute Script - Get Winget Enablement Status`
        - Right-click and Run Now to start the monitor
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

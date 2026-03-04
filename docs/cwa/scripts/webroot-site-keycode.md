@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to log in to th
 tags: ['setup', 'software', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Step 1
@@ -22,3 +24,9 @@ You will set the code in the format `xxxx-xxxx-xxxx-xxxx-xxxx`.
 
 ## Step 3
 Copy the code and paste it into the client EDF 'Webroot Site KeyCode' for the solution to work.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

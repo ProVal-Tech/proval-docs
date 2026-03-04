@@ -8,6 +8,8 @@ description: 'Configures Windows Update settings to allow optional component dow
 tags: ['dotnet', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This script installs the .NET Framework 3.5 feature. It pre-configures the 'Repa
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2026-01-14
+
+- Initial version of the document

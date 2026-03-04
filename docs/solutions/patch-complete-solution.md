@@ -8,6 +8,8 @@ description: 'This solution is targeted to compute all the patch management auto
 tags: ['windows', 'update', 'auditing', 'reboot', 'installation', 'patching', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-08
 ---
 
 ## Purpose
@@ -87,3 +89,9 @@ Follow this for problems related to feature updates for Win 10 or 11:
 Follow this if a Windows 10 computer is failing to upgrade to Windows 11:
 
 ![Windows 10 to 11 Upgrade](../../static/img/docs/patch-complete-solution/image-4.png)
+
+## Changelog
+
+### 2025-04-29
+
+- Initial version of the document

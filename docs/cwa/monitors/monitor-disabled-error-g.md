@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution that detects any inte
 tags: ['performance', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ The Monitor looks for any internal monitors that have been disabled due to error
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

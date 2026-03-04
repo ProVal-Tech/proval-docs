@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['firefox', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This script can be used to remove and optionally block an extension in Mozilla F
 
 - Script log
 - Local file on computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

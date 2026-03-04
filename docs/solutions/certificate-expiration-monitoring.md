@@ -8,6 +8,8 @@ description: 'This solution outlines the steps for identifying and monitoring Wi
 tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Purpose
@@ -108,3 +110,9 @@ Configure the monitor [Certificate Expiration 30 Days](/docs/dc48efed-0e7d-44d4-
 >> - Certificate Version
 >> - Installation date (NotBefore)
 >> - Expiration date (NotAfter)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

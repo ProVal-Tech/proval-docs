@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview that displays ser
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The dataview displays the services on computers that are logged on as users but 
 | State        | Status of the service                               |
 | Startup      | Displays the startup type of the service            |
 | Log on As    | Service account through which services are running   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

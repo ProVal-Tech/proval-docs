@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -88,3 +90,9 @@ WebCamImage:
 
 The script is using the shutdown command, so the machine will become unusable without the BitLocker key.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

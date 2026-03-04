@@ -8,6 +8,8 @@ description: 'This document outlines a role used to detect servers that have the
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document describes a role used to detect servers with the Certificate Enrol
 | Detection String                                                                                                         | Comparator | Result   | Applicable OS |
 |--------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Enroll-Web-Svc' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"%}` | Contains    | Installed | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

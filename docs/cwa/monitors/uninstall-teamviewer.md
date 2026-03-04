@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for setting up a remote monit
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall TeamViewer](/docs/01a3e5aa-d3fd-42a2-9b9f-5f1ca662164c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

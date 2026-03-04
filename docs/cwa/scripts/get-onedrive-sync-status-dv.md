@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that retrieves the 
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,4 +46,10 @@ The script employs the [Get-ODStatus.ps1](https://github.com/rodneyviana/ODSyncU
 2. Can this script be run in an environment where a security application is applied?  
    **Answer:** Yes, you just need to whitelist the following hashes:  
    - C:/ProgramData/_Automation/Script/ODSync/ODSyncUtility.ps1: **A5EBD70394BA53B0D3A093FB47C94985**  
-   - C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: **4626F936E0BABCE79F350E096671A19F**  
+   - C:/ProgramData/_Automation/Script/ODSyncUtil/ODSyncFetch.ps1: **4626F936E0BABCE79F350E096671A19F**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

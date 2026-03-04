@@ -8,6 +8,8 @@ description: 'This document outlines a solution for auditing Webroot KeyCodes an
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ This solution fetches the Webroot KeyCode audit and monitors to find any mismatc
 
 - Will the ticket auto-close if the KeyCode matches for the agent where the KeyCode mismatch was detected?
   - Yes, the autofix has the auto-closure of the ticket feature added.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

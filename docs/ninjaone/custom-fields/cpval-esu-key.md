@@ -8,6 +8,8 @@ description: 'Stores the ESU license key for activation of Windows 10 extended u
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Stores the ESU license key for activation of Windows 10 extended use. The licens
 ## Sample Screenshot
 
 ![Sample](../../../static/img/docs/2731179e-384e-4fda-907a-365368ebf742/image6.webp)
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

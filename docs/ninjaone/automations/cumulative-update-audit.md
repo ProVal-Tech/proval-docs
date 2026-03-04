@@ -8,6 +8,8 @@ description: 'This Script validate the full version of the OS and compares it wi
 tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Overview
@@ -44,3 +46,9 @@ This Script validate the full version of the OS and compares it with Microsoft's
 ![Image1](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image1.webp) 
 - Custom Field  
 ![Image3](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image3.webp)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

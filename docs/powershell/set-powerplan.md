@@ -8,6 +8,8 @@ description: 'Documentation for the Set-PowerPlan command to configure power pla
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-26
 ---
 
 ## Description
@@ -185,3 +187,9 @@ PS C:\> .\Set-PowerPlanSettings.ps1 -Name 'CustomPlan'-CSVPath 'https:\\file.pro
 ## Attachments
 
 [PowerPlanSettingsTemplate.csv](<../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

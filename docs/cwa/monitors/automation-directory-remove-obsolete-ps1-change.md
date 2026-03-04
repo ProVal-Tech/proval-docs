@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to remove obsol
 tags: ['connectwise', 'database', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Summary
@@ -106,3 +108,9 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 
 ## Step 6
 Do not apply any alert template to this remote monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

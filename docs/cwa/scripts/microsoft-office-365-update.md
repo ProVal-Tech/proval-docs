@@ -8,6 +8,8 @@ description: 'This document provides an overview of an Automate Wrapper designed
 tags: ['software', 'ticketing', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Ticketing
 
 ![Ticketing](../../../static/img/docs/f63488bf-e843-494e-89a0-d464f4a6c1ad/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

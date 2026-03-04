@@ -8,6 +8,8 @@ description: 'This script is to create and manage toast notifications with custo
 tags:  ['reboot', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Overview
@@ -110,3 +112,9 @@ This script is to create and manage toast notifications with customizable option
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-05-29
+
+- Initial version of the document

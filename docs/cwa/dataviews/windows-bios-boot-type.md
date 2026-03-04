@@ -8,6 +8,8 @@ description: 'This document provides a dataview that displays the BIOS boot type
 tags: ['bios', 'uefi']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This dataview shows the BIOS boot type for machines, indicating whether they are
 | BIOS Name           | The name of the BIOS. This may display the model of the machine as well                        |
 | BIOS Version        | The BIOS version detected by Automate                                                           |
 | BIOS Type           | Using the [BIOS Type - Legacy](/docs/e880c334-1062-405f-97ba-e80c2752fb28) role, this will determine if the machine has the legacy or UEFI boot type |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

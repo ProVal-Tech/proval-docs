@@ -8,6 +8,8 @@ description: 'This key is required for deploying the DNSFilter Agent.'
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-17
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Submit
 ## Completed Custom Field
 
 ![CustomField](../../../static/img/docs/38b311e5-eaf3-4d76-a61b-e097b0262ad0/c5.webp)
+
+## Changelog
+
+### 2025-07-17
+
+- Initial version of the document

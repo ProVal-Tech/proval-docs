@@ -8,6 +8,8 @@ description: 'This Script validate the full version of the OS and compares it wi
 tags: ['auditing', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-09
 ---
 
 ## Overview  
@@ -63,3 +65,9 @@ StdErr is not expected.
 
 ## Attachments  
 [Cumulative Update Audit Script](../../../static/attachments/Cumulative%20Update%20Audit%20Script.cpt)
+
+## Changelog
+
+### 2025-10-09
+
+- Initial version of the document

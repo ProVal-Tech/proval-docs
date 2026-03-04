@@ -8,6 +8,8 @@ description: 'TThe purpose of this solution is to track and lock down stolen sys
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Purpose
@@ -43,3 +45,9 @@ The purpose of this NinjaOne solution is to track and lock down stolen systems.
     - [Automation - Lock Stolen System ](/docs/0f78be64-557a-4c0e-b7cf-e2ba41e71374)
 - Create the [Ticket Template - Lock Stolen System ](/docs/be59a0a6-33da-4ef2-8baf-848d47ba2ac0) as per the implementation instruction provided in the document.
 - Create the [Compound Condition - Lock Stolen System ](/docs/705b400b-28fc-4c01-95a6-edbf43960122) as per the implementation instruction provided in the document.
+
+## Changelog
+
+### 2026-02-11
+
+- Initial version of the document

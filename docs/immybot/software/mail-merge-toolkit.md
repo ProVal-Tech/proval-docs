@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for Mail Merge Toolkit'
 tags: ['application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-22
 ---
 
 ## Description
@@ -23,3 +25,9 @@ For this to work, someone must be logged into the computer. Also, the following 
 - msiexec
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/mail-merge-toolkit.toml)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

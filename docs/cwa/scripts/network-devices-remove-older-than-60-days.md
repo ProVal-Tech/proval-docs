@@ -8,6 +8,8 @@ description: 'This document describes a script that removes network devices that
 tags: ['cleanup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The script runs a SQL query to delete network devices that have not been online 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

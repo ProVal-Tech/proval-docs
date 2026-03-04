@@ -8,6 +8,8 @@ description: 'This document provides an overview of the patch and cumulative upd
 tags: ['compliance', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ The dataview is designed to display the patch and cumulative update compliance s
 | CU Score %                           | Green  | Greater than or equal to 75         |
 | Compliant Clients - CU %             | Red    | Less than 75                         |
 | Compliant Clients - CU %             | Green  | Greater than or equal to 75         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

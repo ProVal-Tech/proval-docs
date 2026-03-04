@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the antivirus s
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This document provides detailed information about the antivirus installed on the
 | AV Name                    | Antivirus information (Product Name)                         |
 | Protection Status          | Indicates whether antivirus is enabled or not               |
 | AV Definition Status       | Indicates whether antivirus definitions are up to date      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that utilizes the D
 tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-28
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ Running the script to forcefully install all available driver updates.
 
 - Script State
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

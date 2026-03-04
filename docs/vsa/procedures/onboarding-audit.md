@@ -8,6 +8,8 @@ description: 'This document outlines the process for running the Get-VSAAuditRep
 tags: ['kaseya', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Runs [VSA - Kaseya - Agnostic - Get-VSAAuditReports](/docs/f5181d46-745b-44a0-a1
 
 - AP Log
 - getFiles: StackContent/Audits/#ClientName#/AuditReport.xlsx
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

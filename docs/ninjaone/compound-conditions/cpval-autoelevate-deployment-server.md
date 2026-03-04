@@ -8,6 +8,8 @@ description: 'This compound condition triggers the auto-deployment script for Au
 tags: ['security','application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This compound condition triggers the auto-deployment script for Autoelevate agen
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cpval-autoelevate-deployment-server.toml)
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

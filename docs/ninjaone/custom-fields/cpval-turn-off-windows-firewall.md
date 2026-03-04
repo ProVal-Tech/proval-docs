@@ -8,6 +8,8 @@ description: 'This custom field determines whether Windows Firewall is turned of
 tags: ['networking', 'security', 'firewall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field determines whether Windows Firewall is turned off based on the
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/48a340ed-d4aa-4949-9862-89e0737c5c95/image1.webp)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

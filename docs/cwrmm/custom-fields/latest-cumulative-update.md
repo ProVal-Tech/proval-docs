@@ -8,6 +8,8 @@ description: 'This document provides details on the custom field used to store a
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This custom field is used to store and display the results of the [CW RMM - Task
 ## Sample Value
 
 ![Sample Value](../../../static/img/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

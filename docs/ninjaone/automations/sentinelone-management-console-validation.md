@@ -8,6 +8,8 @@ description: 'The script validates whether the SentinelOne Management Server det
 tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 ## Overview
@@ -50,3 +52,9 @@ The script validates whether the SentinelOne Management Server detected on the c
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Adobe License in
 tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This dataview displays Adobe License information.
 | Operating System    | Operating System of the agent           |
 | Last Contact       | Last Contact of the agent with the RMM  |
 | Adobe License      | Adobe License information                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

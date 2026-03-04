@@ -25,6 +25,71 @@ function Get-FirstH2Summary {
     return ""
 }
 
+function Get-Changelog {
+    param(
+        [string[]]$Lines
+    )
+
+    if (-not $Lines -or $Lines.Length -eq 0) {
+        return @()
+    }
+
+    # Find the ## Changelog heading
+    $changelogStart = -1
+    for ($i = 0; $i -lt $Lines.Length; $i++) {
+        if ($Lines[$i] -match '^\s*##\s+Changelog\s*$') {
+            $changelogStart = $i
+            break
+        }
+    }
+
+    if ($changelogStart -lt 0) {
+        return @()
+    }
+
+    $entries = @()
+    $currentDate = $null
+    $currentChanges = @()
+
+    for ($j = $changelogStart + 1; $j -lt $Lines.Length; $j++) {
+        $line = $Lines[$j]
+
+        # Stop if we hit another H2 section
+        if ($line -match '^\s*##\s+(?!#)') {
+            break
+        }
+
+        # Match ### YYYY-MM-DD date subheading
+        if ($line -match '^\s*###\s+(\d{4}-\d{2}-\d{2})\s*$') {
+            # Save previous entry if exists
+            if ($currentDate -and $currentChanges.Count -gt 0) {
+                $entries += [PSCustomObject]@{
+                    Date    = $currentDate
+                    Changes = @($currentChanges)
+                }
+            }
+            $currentDate = $Matches[1]
+            $currentChanges = @()
+            continue
+        }
+
+        # Match bullet list items (- or *)
+        if ($currentDate -and $line -match '^\s*[-*]\s+(.+)$') {
+            $currentChanges += $Matches[1].Trim()
+        }
+    }
+
+    # Save last entry
+    if ($currentDate -and $currentChanges.Count -gt 0) {
+        $entries += [PSCustomObject]@{
+            Date    = $currentDate
+            Changes = @($currentChanges)
+        }
+    }
+
+    return $entries
+}
+
 function Set-LastUpdateFrontMatter {
     param(
         [string]$FilePath,
@@ -132,6 +197,7 @@ $output = foreach ($doc in $recentDocs) {
     $title = $content | Select-String -Pattern "^title: (`"|')(.*)(`"|')"
     $slug = $content | Select-String -Pattern "^slug: (`"|')?(.*)(`"|')?"
     $summary = Get-FirstH2Summary -Lines $content
+    $changelog = Get-Changelog -Lines $content
     if ($doc.LastCommitTime) {
         Set-LastUpdateFrontMatter -FilePath $doc.FullName -LastCommit $doc.LastCommitTime
     }
@@ -142,6 +208,7 @@ $output = foreach ($doc in $recentDocs) {
         Category   = $doc.Category
         GitAdded   = $doc.GitAddedTime
         Summary    = $summary
+        Changelog  = @($changelog)
     }
 }
-$output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8
+$output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json -Depth 5 | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8

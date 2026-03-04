@@ -8,6 +8,8 @@ description: 'This solution provides automated auditing of Windows 10 Extended S
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-25
 ---
 
 ## Purpose
@@ -86,3 +88,9 @@ A: The audit output will capture the failure details. Use the dataview to identi
 
 **Q: Is this solution limited to ConnectWise Automate?**  
 A: This package and the implementation instructions are tailored for ConnectWise Automate (ProSync import). The concepts (audit script, reporting, and an activation script) can be adapted to other platforms but require platform‑specific packaging and triggers.
+
+## Changelog
+
+### 2025-12-23
+
+- Initial version of the document

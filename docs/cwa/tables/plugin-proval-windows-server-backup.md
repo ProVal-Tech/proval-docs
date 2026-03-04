@@ -8,6 +8,8 @@ description: 'This document provides an overview of the structure and dependenci
 tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -40,3 +42,9 @@ The table is built to store the complete Windows Server Backup data.
 | SystemState Backup                         | VARCHAR  | Contains critical system components, including the registry, Active Directory, and system files required for recovery |
 | Overwrite Old Format VHD                   | VARCHAR  | If enabled, the old VHD files will be overwritten during subsequent backups                           |
 | ScriptRanDate                              | DATETIME | Script last run time                                                                                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

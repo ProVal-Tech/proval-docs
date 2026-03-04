@@ -8,6 +8,8 @@ description: 'This document describes a script that downloads Autologon.exe from
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This script downloads Autologon.exe from Microsoft to the LTSvc folder. It then 
 ## Output
 
 - Script log messages
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

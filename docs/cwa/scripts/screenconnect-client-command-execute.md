@@ -8,6 +8,8 @@ description: 'This document outlines a script that executes a command through th
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This script will execute a command via the default command-line parser on the ta
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

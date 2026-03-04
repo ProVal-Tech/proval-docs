@@ -8,6 +8,8 @@ description: 'This document outlines the Reboot Prompt Script for Windows Config
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ The following items depend on this script to function correctly:
 ## Output
 
 The EDFs outlined above get updated as the script gets triggered. The monitor looks at the EDFs to confirm it is following the 'proval_RebootPromptDurBetweenPrompt' System Property.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

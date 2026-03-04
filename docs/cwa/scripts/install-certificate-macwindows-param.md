@@ -8,6 +8,8 @@ description: 'This document provides a script that installs a certificate to a s
 tags: ['installation', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ Provide the direct download URL for the certificate in the User parameter, and i
 
 *The download URL should be something like:*  
 *[https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer](https://labtech.provaltech.com/Labtech/Transfer/software/certficates/DNSFilter.cer)*
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script that enables or disables various 
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ To disable TLS 1.0 and TLS 1.1, and to enable TLS 1.2 and TLS 1.3 along with str
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

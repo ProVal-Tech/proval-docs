@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that sets m
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ The script starts maintenance mode with a prompt for how long to set it. Please 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

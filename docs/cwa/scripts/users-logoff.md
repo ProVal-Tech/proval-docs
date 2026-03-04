@@ -8,6 +8,8 @@ description: 'This script allows you to log off a specific user, multiple users,
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Setting the User parameter to "All" will log off all users.
 
 1. Determine the scope.
 2. Log off the desired user or users.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

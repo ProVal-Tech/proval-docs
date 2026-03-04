@@ -8,6 +8,8 @@ description: 'Flag this checkbox to enable installation of the Cisco Umbrella Ro
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-24
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Flag this checkbox to enable installation of the Cisco Umbrella Root CA certific
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/3c7ffc5b-3743-46d7-9247-27ac426737ad/image1.webp)
+
+## Changelog
+
+### 2025-11-24
+
+- Initial version of the document

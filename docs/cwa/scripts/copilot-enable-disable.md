@@ -8,6 +8,8 @@ description: 'This script will uninstall and disable the Windows Copilot applica
 tags: ['api', 'edge', 'windows', 'browsers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ EEE454AAB028DE1528935E8962FBD775
 - Computer EDF
 - Local file directory
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

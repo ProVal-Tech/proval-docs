@@ -8,6 +8,8 @@ description: 'This document explains the process of retiring offline agents in C
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Computer-Level EDF: "Exclude From Auto-Retire Automation"
    - Debug the script against any client with the `Set_Environment` parameter set to 1 and `Set_Global_Threshold_Days` set to the number of days for the global property `AutoRetireThreshold_Days`.
      - Validate that the system property was set correctly by navigating to System --> Configuration --> Dashboard --> Config --> Configurations --> Properties --> Check the property 'AutoRetireThreshold_Days'.
    - Run the script against the desired client.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

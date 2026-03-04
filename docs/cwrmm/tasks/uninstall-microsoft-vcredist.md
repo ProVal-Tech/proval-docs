@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on implementing a CW 
 tags: ['application', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -150,3 +152,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

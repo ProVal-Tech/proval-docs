@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the device from Cloud Radial Age
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the device from Cloud Radial Agent deployment.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/56e9c36a-12da-4b67-92af-2b8cb6a63dbb/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

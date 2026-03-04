@@ -8,6 +8,8 @@ description: 'Documentation for the Get-FirefoxExtensions command to gather info
 tags: ['firefox', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -54,3 +56,9 @@ ExtensionName           NoteProperty string ExtensionName=The best extension
 ExtensionVersion        NoteProperty string ExtensionVersion=1.1.1
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\Users\localadmin
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

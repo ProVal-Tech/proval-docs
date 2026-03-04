@@ -8,6 +8,8 @@ description: 'This document describes a script that modifies the host file on a 
 tags: ['networking', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents (Extra Data Field)
   - ![Output 1](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_2.webp) OR ![Output 2](../../../static/img/docs/3067b867-c1d4-4f7b-9a21-5344c7078931/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Automatically remove Office 365 licenses from user accounts. Suppo
 tags: ['office365', 'licensing', 'deprovisioning', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -104,3 +106,9 @@ Before using this workflow, ensure the following requirements are met:
   "reason": "Employee termination - effective 2026-03-01"
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

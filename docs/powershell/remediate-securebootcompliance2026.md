@@ -8,6 +8,8 @@ description: 'This script remediates UEFI Secure Boot compliance for Windows 202
 tags: ['secureboot','compliance','certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Overview
@@ -49,3 +51,9 @@ The script writes logs and error files next to the script by default:
 
     .\Remediate-SecureBootCompliance2026-log.txt
     .\Remediate-SecureBootCompliance2026-error.txt
+
+## Changelog
+
+### 2026-02-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a monitor that identifies ESXi host server
 tags: ['networking', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Limited by the SQL to the network probes detecting any ESXi host.
 ## Dependencies
 
 [Script - Ticket Creation - VMWare ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

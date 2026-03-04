@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to track the approximate
 tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This document keeps a running total of the approximate amount of time saved for 
 |----------------------------------------|-----------------------------------------|--------------------------------------------------------------------|
 | xPVAL Automation Time Saved Monthly     | CF                                      | Integer representing the number of minutes saved through automation. Resets monthly. |
 | xPVAL Automation Time Saved Cumulative  | CF                                      | Integer representing the total number of minutes saved through automation.    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

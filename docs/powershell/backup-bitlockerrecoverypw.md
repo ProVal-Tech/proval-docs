@@ -8,6 +8,8 @@ description: 'Documentation for the Backup-BitlockerRecoveryPW command to backup
 tags: ['active-directory', 'backup', 'recovery']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -31,3 +33,9 @@ Attempts to back up any Recovery Password type key protectors to Active Director
 - `Microsoft.BitLocker.Structures.BitLockerVolume`
 - `.\Backup-BitlockerRecoveryPW-log.txt`
 - `.\Backup-BitlockerRecoveryPW-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

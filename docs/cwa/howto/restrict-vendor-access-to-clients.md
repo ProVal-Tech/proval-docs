@@ -8,6 +8,8 @@ description: 'This document outlines the process to restrict vendor access to cl
 tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-28
 ---
 
 ## Purpose
@@ -209,3 +211,9 @@ Below is the process that will ensure that when the EDFs "Restrict Vendor Access
      - [ Automatically Restrict/Unrestrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
        - Configure with the alert template: `△ Custom - Execute Script - Update Vendor Restricted Property`
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-07
+
+- Initial version of the document

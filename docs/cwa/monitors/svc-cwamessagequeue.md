@@ -8,6 +8,8 @@ description: 'This document outlines the monitoring setup for the CWAMessageQueu
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -26,4 +28,10 @@ CWAMessageQueue is one of the important services for the Automate server. This m
 
 ## Target
 
-Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server  
+Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

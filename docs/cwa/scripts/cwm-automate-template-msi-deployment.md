@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on utilizing the Temp
 tags: ['deployment', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 This document is crafted to walk you through the utilization of the `Template - MSI Deployment` for creating a software installation script that employs a .msi file for the installation process.
@@ -75,3 +77,9 @@ With this information at hand, we are now equipped to deploy the application. So
 6. Save the script and test it.
 
 7. After the script is prepared, please verify with the partner or consultant whether they would like the script to also generate a ticket in case of failure. If needed, assign the appropriate ticket category ID to the `ticketcreationcategory` variable.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

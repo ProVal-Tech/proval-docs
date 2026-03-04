@@ -8,6 +8,8 @@ description: 'This document outlines the configuration of the ThreatLocker Autho
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This custom field at the company level stores the ThreatLocker Authorization Key
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/5ffed5a2-c8d9-4e43-964a-54f1ac563268/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

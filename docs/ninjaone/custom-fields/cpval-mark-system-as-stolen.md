@@ -8,6 +8,8 @@ description: 'Mark this Custom Field to mark a Computer as stolen. Selecting thi
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -28,4 +30,10 @@ Mark this Custom Field to mark a Computer as stolen. Selecting this, will enable
 
 ## Sample Screenshot
 
-![Sample ScreenShot](../../../static/img/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6/samplescreenshot.webp)  
+![Sample ScreenShot](../../../static/img/docs/20a99ff3-a63d-4f73-bd48-3bb8d66626e6/samplescreenshot.webp)
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

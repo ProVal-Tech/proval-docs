@@ -8,6 +8,8 @@ description: 'This document details a script designed to disable the Windows Fas
 tags: ['performance', 'reboot', 'registry', 'windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ If the value did not change in the registry, the script will exit with a failure
 ## Output
 
 Script log messages only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

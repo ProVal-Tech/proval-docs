@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that sends an email alert for the
 tags: ['email', 'mysql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -128,3 +130,9 @@ WHERE
 ```
 
 7. **Only if the scripting engine appears to be hung with a lot of scripts reporting in the queue**, Restart the DB Agent service. Navigate to `Help` >> `Server Status` >> `Restart Database Agent`. This will remove all queued scripts and will fix the script engine hung temporarily if the script queuing issue is not fixed from the above query results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

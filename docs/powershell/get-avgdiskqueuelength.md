@@ -8,6 +8,8 @@ description: 'Documentation for the Get-AvgDiskQueueLength command to calculate 
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -56,3 +58,9 @@ This example runs the script to calculate the average of the last 5 samples of t
 ## Output
 - `.\Get-AvgDiskQueueLength-log.txt`
 - `.\Get-AvgDiskQueueLength-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

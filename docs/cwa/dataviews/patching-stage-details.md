@@ -8,6 +8,8 @@ description: 'This document provides an overview of a data view that displays th
 tags: ['report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ None
 | Location name    | The name of the location                            |
 | Machine name     | The name of the endpoint                            |
 | Patching Stage   | The patching stage of the endpoint (Production | Pilot | Test) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

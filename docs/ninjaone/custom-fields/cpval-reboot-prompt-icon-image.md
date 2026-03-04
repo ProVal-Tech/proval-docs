@@ -8,6 +8,8 @@ description: 'Specifies the local file path or URL for the icon image displayed 
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specifies the local file path or URL for the icon image displayed in the reboot 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/27c3c19d-d5cb-46ae-97e7-605e682df948/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

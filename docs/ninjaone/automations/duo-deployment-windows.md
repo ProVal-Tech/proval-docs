@@ -8,6 +8,8 @@ description: 'This script will install or update DUO if the currently installed 
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-21
 ---
 
 ## Overview
@@ -67,3 +69,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

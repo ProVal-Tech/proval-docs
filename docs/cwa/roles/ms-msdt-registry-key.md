@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect the presence of the HKEY
 tags: ['registry', 'security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document describes a method to detect the existence of the HKEY_CLASSES_ROO
 | Detection String                          | Comparator | Result  | Applicable OS |
 |-------------------------------------------|------------|---------|----------------|
 | \{@%Reg query "HKEY_CLASSES_ROOT/ms-msdt"@%} | Contains   | REG_SZ  | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document is crafted to walk you through the utilization of th
 tags: ['software', 'ticketing', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This document is crafted to walk you through the utilization of the `Offboarding
             - Replace Go to of step 28 from `:Run AdditionalScript1` to `:Uninstall DedicatedApp2`
     - Use the `:Run AdditionalScript1` section only if the client wants to run any Script besides Application Removals.
     - Open the `Offboarding Wrapper` script and update the script to use this updated script instead of the template one.
+
+## Changelog
+
+### 2025-04-07
+
+- Initial version of the document

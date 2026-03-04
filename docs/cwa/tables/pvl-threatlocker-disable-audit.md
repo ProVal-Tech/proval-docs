@@ -8,6 +8,8 @@ description: 'This document outlines the structure of the data table used for th
 tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ This table stores the data of the script [Script - Threatlocker - Set Learning M
 | LearningModeDuration   | INT      | Stores the number of hours for which the Threatlocker learning mode is set.                                       |
 | Status                | VARCHAR  | Stores either "Success" or "Failed" for the learning mode set result.                                            |
 | LogRecord             | VARCHAR  | Stores the logs of script success or failure.                                                                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

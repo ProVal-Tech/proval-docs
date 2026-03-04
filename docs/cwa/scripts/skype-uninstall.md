@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ If Skype is removed successfully, the script will exit with a successful log mes
 ## Output
 
 Script log messages.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

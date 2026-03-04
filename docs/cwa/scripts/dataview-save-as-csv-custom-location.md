@@ -8,6 +8,8 @@ description: 'This document describes a script that creates a distinct copy of t
 tags: ['backup', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This script is a copy of [CWM - Automate - Script - Dataview - Email as CSV [Par
 | Folder Location   | C:/ProgramData/_automation/script     | True     | Provide the folder location where you would like to preserve the Dataview file on the machine |
 
 All other parameters are the same as those in [CWM - Automate - Script - Dataview - Email as CSV [Param]](/docs/4b15de07-233d-462b-91ce-3ee060457e65).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

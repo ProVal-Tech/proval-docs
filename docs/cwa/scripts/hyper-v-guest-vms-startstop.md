@@ -8,6 +8,8 @@ description: 'This document describes a script that enables the management of vi
 tags: ['hyper-v', 'logging', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ Please see [Toggle-VMGuests](/docs/63bb684c-e259-46a2-8630-95847705fe6a) for inf
 
 - Outputs logs to the script log.
 - Outputs logs to log/data files in the script directory.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

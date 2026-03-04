@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Chromium ex
 tags: ['chrome', 'data-collection']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This document lists all Chromium extensions installed on the endpoint.
 | Field Name                           | Type of Field (Machine or Organization) | Description                                   |
 |--------------------------------------|-----------------------------------------|-----------------------------------------------|
 | xPVAL Chromium Extensions Installed   | Machine                                 | Lists all Chromium extensions installed on the endpoint |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

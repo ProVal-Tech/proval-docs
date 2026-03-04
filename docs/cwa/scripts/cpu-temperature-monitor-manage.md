@@ -8,6 +8,8 @@ description: 'This document provides an overview of a client script that manages
 tags: ['software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 - [Script - CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314)
 - [Remote Monitor - CPU Temperature Monitoring Process](/docs/84d6587b-2bca-4f0e-9176-c0df064f532c)
 - [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

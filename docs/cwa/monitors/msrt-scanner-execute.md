@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the MSRT Scanner Mon
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ OR
 
 MSRT Scan Report Audited on Computer: %computername% of Client/Location: %clientname%//%locationname%. Refer to the logs below:  
 @ScanResult@. The Autofix extended scan of the computer, which automatically cleans any infections that are found, is scheduled.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

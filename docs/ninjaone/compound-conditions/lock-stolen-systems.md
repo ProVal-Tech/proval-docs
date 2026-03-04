@@ -8,6 +8,8 @@ description: 'This condition triggers the `Lock Stolen Systems` script on Window
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This compound condition triggers the [Lock Stolen Systems](/docs/0f78be64-557a-4
 
 ## Compound Condition Creation
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/lock-stolen-systems.toml)
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing Microso
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -63,3 +65,9 @@ Location of output for log, result, and error files.
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

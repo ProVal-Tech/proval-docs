@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the CWA implementati
 tags: ['uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -135,3 +137,9 @@ The script is designed to send the list of installed bloatware to the user runni
 | Microsoft.Paint3D                        |                                           |                                       |                                   |                                                         |
 | MicrosoftCorporationII.QuickAssist       |                                           |                                       |                                   |                                                         |
 | Microsoft.SpotifyMusic                   |                                           |                                       |                                   |                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the setup of an internal monitor for detect
 tags: ['deployment', 'sonicwall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This monitor is also set up to grab the latest version of SonicWall NetExtender 
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-29
+
+- Initial version of the document

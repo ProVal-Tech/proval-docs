@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Online Status Alerting A
 tags: ['alerting', 'email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -69,3 +71,9 @@ After importing the script, it should either be debugged or run against any comp
 
 - Email
 - Ticket status change to the desired status as per configuration done in the system property "Status_To_Change_To."
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
