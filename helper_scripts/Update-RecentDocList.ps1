@@ -183,10 +183,13 @@ $recentDocs = $docs | ForEach-Object {
         }
     }
     $parentName = (Get-Item $parentPath).Name
+    $excludeCommits = @('790524fac17396e3a43f773f680285e1986b22b3')
+    $lastCommitRaw = (git log --format="%H %ci" -- $_.FullName 2>$null) -split "`n" |
+    Where-Object { $_ -and ($excludeCommits -notcontains $_.Substring(0, [Math]::Min($_.Length, 40))) } |
+    Select-Object -First 1
+    $lastCommitTime = if ($lastCommitRaw) { [datetime]::Parse($lastCommitRaw.Substring(41)) } else { $null }
     $_ | `
-        Add-Member -NotePropertyName "LastCommitTime" -NotePropertyValue (
-        [datetime]::Parse((git log -1 --format="%ci" -- $_.FullName 2>$null))
-    ) -PassThru | `
+        Add-Member -NotePropertyName "LastCommitTime" -NotePropertyValue $lastCommitTime -PassThru | `
         Add-Member -NotePropertyName "Category" -NotePropertyValue $parentName -PassThru | `
         Add-Member -NotePropertyName "GitAddedTime" -NotePropertyValue (
         [datetime]::Parse(((git log --diff-filter=A --format="%ci" -- $_.FullName 2>$null) -split ("`n") | Select-Object -Last 1))
