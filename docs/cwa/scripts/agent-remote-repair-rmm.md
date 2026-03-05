@@ -98,3 +98,7 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2026-03-05
+
+- Updated Steps 103 and 120 to use the separate `Uninstall‑LTService` and `Install‑LTService` commands instead of `Redo‑LTService`, as we were experiencing issues with Redo‑LTShare and agents were not being reinstalled properly when using that command.
