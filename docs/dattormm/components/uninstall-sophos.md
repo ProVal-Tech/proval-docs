@@ -49,3 +49,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Uninstall Sophos](../../../static/attachments/uninstall-sophos.cpt)
+
+## Changelog
+
+### 2026-03-05
+
+- Initial creation
