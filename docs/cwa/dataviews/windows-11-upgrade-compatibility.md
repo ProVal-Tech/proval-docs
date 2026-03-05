@@ -71,7 +71,7 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 ### 2025-09-09
 
-- When all checks passed, and the system drive size was detected as less than 64 GB, it was marking the compatibility as `undetermined`. Fixed this problem and introduced the compatibility as 'Not Capable: FreeDisk <64GB' for such cases.
+- When all checks passed, and the system drive size was detected as less than 64 GB, it was marking the compatibility as `undetermined`. Fixed this problem and introduced the compatibility as 'Not Capable: FreeDisk 64GB' for such cases.
 
 ### 2025-07-22
 
