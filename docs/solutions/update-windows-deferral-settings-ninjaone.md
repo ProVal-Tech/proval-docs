@@ -3,7 +3,7 @@ id: '56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1'
 slug: /56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1
 title: 'Update Windows Deferral Settings'
 title_meta: 'Update Windows Deferral Settings'
-keywords: ['windows','feature','update','deferral']
+keywords: ['windows','feature','update','deferral','update']
 description: 'This solution is designed to configure the automatic check and update the deferral feature update registries if any mismatch found using the NinjaOne platform.'
 tags: ['updates','registry','auditing']
 draft: false

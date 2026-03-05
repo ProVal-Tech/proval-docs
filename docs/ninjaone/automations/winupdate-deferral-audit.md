@@ -3,7 +3,7 @@ id: '79c86028-fa08-450f-bc45-e2f3f2026732'
 slug: /79c86028-fa08-450f-bc45-e2f3f2026732
 title: 'WinUpdate Deferral Audit'
 title_meta: 'WinUpdate Deferral Audit'
-keywords: ['registry','feature','check','deferral','update']
+keywords: ['registry','feature','check','deferral']
 description: 'Reads current Windows Update deferral registry values and compares them against Ninja Custom Field desired values. Exits with 1 if drift is detected.'
 tags: ['updates','registry','auditing']
 draft: false

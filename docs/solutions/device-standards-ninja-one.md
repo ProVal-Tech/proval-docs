@@ -96,7 +96,7 @@ Import and configure the required solutions based on organizational needs:
 - [Disable IPv6](/docs/1e9dee40-965f-4b6c-a9cf-4cb45162d5ac) - For IPv6 protocol management
 - [Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531) - For power management control
 - [Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28) - For centralized Fast Startup Management
-- [Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1) - For feature Update deferrals.
+- [Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1) - For feature Update deferral.
 
 Each solution can be implemented independently or as part of a comprehensive device standardization strategy.
 

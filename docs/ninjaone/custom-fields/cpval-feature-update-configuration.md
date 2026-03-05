@@ -3,7 +3,7 @@ id: '29e44495-0c4b-425c-bb1f-118dab2633e2'
 slug: /29e44495-0c4b-425c-bb1f-118dab2633e2
 title: 'cPVAL Feature Update Configuration'
 title_meta: 'cPVAL Feature Update Configuration'
-keywords: ['registry','feature','check','deferral','update']
+keywords: ['registry','feature','check','deferral']
 description: 'This Custom Fields Controls the Configuration of Feature update deferral on the machine based on the selected operating system. Choose Disabled to skip applying this setting to the current Client, Location, or Computer.'
 tags: ['updates','registry','custom-fields']
 draft: false

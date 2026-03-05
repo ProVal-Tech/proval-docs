@@ -3,7 +3,7 @@ id: '00483199-7fbc-4838-82e7-32cfa2c626cf'
 slug: /00483199-7fbc-4838-82e7-32cfa2c626cf
 title: 'Feature Update Defer Configuration Servers'
 title_meta: 'Feature Update Defer Configuration Servers'
-keywords: ['windows','feature','update','deferral']
+keywords: ['windows','feature','update','deferral','update']
 description: 'This condition ensures that the Enable or Disable Update Windows Deferral script runs on Windows Servers where the current configuration does not match the desired value. The mechanism is controlled through the cPVAL Feature Update Configuration custom field.'
 tags: ['updates','registry','auditing']
 draft: false

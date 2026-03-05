@@ -3,7 +3,7 @@ id: '73c10fcb-2102-4e7d-80b6-e051cf8e55ec'
 slug: /73c10fcb-2102-4e7d-80b6-e051cf8e55ec
 title: 'Feature Update Defer Configuration workstations'
 title_meta: 'Feature Update Defer Configuration workstations'
-keywords: ['windows','feature','update','deferral']
+keywords: ['windows','feature','update','deferral','update']
 description: 'This condition ensures that the Enable or Disable Update Windows Deferral script runs on Windows workstations where the current configuration does not match the desired value. The mechanism is controlled through the cPVAL Feature Update Configuration custom field.'
 tags: ['updates','registry','auditing']
 draft: false

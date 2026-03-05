@@ -3,7 +3,7 @@ id: 'c4accdf3-29e3-4dda-8a05-eae9093d629e'
 slug: /c4accdf3-29e3-4dda-8a05-eae9093d629e
 title: 'cPVAL BranchReadinessLevel'
 title_meta: 'cPVAL BranchReadinessLevel'
-keywords: ['registry','feature','check','deferral','update']
+keywords: ['registry','feature','check','deferral']
 description: 'This field controls the Windows Update Branch Readiness Level. Select the appropriate channel to determine which feature update builds the device will receive.'
 tags: ['updates','registry','custom-fields']
 draft: false
