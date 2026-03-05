@@ -3,9 +3,9 @@ id: '1ec129b5-f607-41ab-b451-b54a2078950c'
 slug: /1ec129b5-f607-41ab-b451-b54a2078950c
 title: 'Windows Hello Audit'
 title_meta: 'Windows Hello Audit'
-keywords: ['Windows','Hello','Status','Audit']
+keywords: ['windows','hello','status','audit']
 description: 'The purpose of this solution is to audit Windows Hello on Windows devices. It determines whether Windows Hello is enabled and identifies the authentication method currently in use.'
-tags: ['Windows','Auditing']
+tags: ['windows','auditing']
 draft: False
 unlisted: False
 ---

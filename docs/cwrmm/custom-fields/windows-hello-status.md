@@ -3,9 +3,9 @@ id: '9979c502-1841-4183-927c-6e0c7e5abe53'
 slug: /9979c502-1841-4183-927c-6e0c7e5abe53
 title: 'Windows Hello Status'
 title_meta: 'Windows Hello Status'
-keywords: ['Windows','Hello','Status','Audit']
+keywords: ['windows','hello','status','audit']
 description: 'This custom field is populated by the ‘Get Windows Hello Status’ task. It indicates whether Windows Hello is enabled on the device and specifies which Windows Hello method is being used.'
-tags: ['Windows','Auditing']
+tags: ['windows','auditing']
 draft: False
 unlisted: false
 ---

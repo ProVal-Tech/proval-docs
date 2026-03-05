@@ -3,9 +3,9 @@ id: 'e2010129-f04b-4bca-b69e-d5b89d5254d4'
 slug: /e2010129-f04b-4bca-b69e-d5b89d5254d4
 title: 'Enable Windows Hello Audit'
 title_meta: 'Enable Windows Hello Audit'
-keywords: ['Windows','Hello','Status','Audit']
+keywords: ['windows','hello','status','audit']
 description: 'Select it to enable Windows Hello Audit on the client Machines.'
-tags: ['Windows','Auditing']
+tags: ['windows','auditing']
 draft: False
 unlisted: false
 ---

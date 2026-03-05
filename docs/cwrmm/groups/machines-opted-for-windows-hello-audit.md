@@ -3,9 +3,9 @@ id: '76e7fddd-b77c-4aac-ab3d-95aef75a7b04'
 slug: /76e7fddd-b77c-4aac-ab3d-95aef75a7b04
 title: 'Machines Opted For Windows Hello Audit'
 title_meta: 'Machines Opted For Windows Hello Audit'
-keywords: ['Windows','Hello','Status','Audit']
+keywords: ['windows','hello','status','audit']
 description: 'This group includes machines where the Windows Hello audit is enabled.'
-tags: ['Windows','Auditing']
+tags: ['windows','auditing']
 draft: False
 unlisted: false
 ---

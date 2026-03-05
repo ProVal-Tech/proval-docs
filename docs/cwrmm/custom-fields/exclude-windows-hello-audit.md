@@ -3,9 +3,9 @@ id: '53b051e4-9962-4a17-9f0d-838e40c7ae84'
 slug: /53b051e4-9962-4a17-9f0d-838e40c7ae84
 title: 'Exclude Windows Hello Audit'
 title_meta: 'Exclude Windows Hello Audit'
-keywords: ['Windows','Hello','Status','Audit']
+keywords: ['windows','hello','status','audit']
 description: 'Select it to exclude site/Endpoint from Windows Hello Audit'
-tags: ['Windows','Auditing']
+tags: ['windows','auditing']
 draft: False
 unlisted: false
 ---
