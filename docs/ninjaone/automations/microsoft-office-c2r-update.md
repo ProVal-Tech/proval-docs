@@ -26,3 +26,9 @@ This script checks if Microsoft 365 Apps (Click-to-Run) is installed, reports th
 ## Output
 
 - Activity Details  
+
+## Changelog
+
+### 2026-03-05
+
+- Initial Creation
