@@ -1,6 +1,6 @@
 ---
-id: '91cc7f02-1c0d-4303-81f2-91fd0d275747'
-slug: /91cc7f02-1c0d-4303-81f2-91fd0d275747
+id: '2ab976d5-8a03-49e6-9d72-ad529631d276'
+slug: /2ab976d5-8a03-49e6-9d72-ad529631d276
 title: 'Dell Command Update - InstallUpgrade + Command Handler'
 title_meta: 'Dell Command Update - InstallUpgrade + Command Handler'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
@@ -60,7 +60,8 @@ Running the script to forcefully install all available driver updates.
 ## Dependencies
 
 [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
-[Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+[Table - pvl-dellcommand-audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+
 ## User Parameters
 
 | Name     | Example | Required | Description                                                                                       |

@@ -14,11 +14,11 @@ last_update:
 
 ## Purpose
 
-This table stores the scan data fetched by the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747).
+This table stores the scan data fetched by the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276).
 
 ## Dependencies
 
-[Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747)
+[Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Tables
 
