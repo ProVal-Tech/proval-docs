@@ -8,6 +8,8 @@ description: 'A description of the script.'
 tags: ['dotnet','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-28
 ---
 
 ## Overview
@@ -133,3 +135,9 @@ The script generates the following output files (via Strapper logs):
 
 * `.\Optimize-DotNetRunTime-log.txt`
 * `.\Optimize-DotNetRunTime-Error.txt`
+
+## Changelog
+
+### 2025-05-09
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to display the power pro
 tags: ['database', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document displays the Power Profile for each agent in the environment. The 
 | ComputerName   | Displays the computer name                          |
 | ComputerID     | Displays the computer ID                            |
 | Power Profile   | Displays the Power Profile set on the machine      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

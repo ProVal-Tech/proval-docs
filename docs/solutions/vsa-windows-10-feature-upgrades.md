@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a feature upgrade for
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Introduction
@@ -42,3 +44,9 @@ This implementation will initiate a feature upgrade on the target endpoint and f
 6. Import `xPVAL_Windows_Feature_Upgrade_Event.xml` and apply it to all workstations in the environment.
 7. Import `xPVAL_Feature_Upgrade_Views.xml` and ensure the Advanced Filters are correct according to the documentation in this solution.
 8. Import `Windows_10_Feature_Upgrade_Reattempt_On_Fail` and place it in the `Policies/PVAL Stack` folder. Ensure that the view and assigned AP are correct in the policy. Notify the client of implementation and availability during the next Admin Call. Be sure to mention the 30-minute forced reboot.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of the internal monitor t
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Global
 ## Alert Template
 
 `△ Custom - PowerPlan Automation`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

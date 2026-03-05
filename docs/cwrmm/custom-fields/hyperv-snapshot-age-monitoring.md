@@ -8,6 +8,8 @@ description: 'Check this box to enable alerts for HyperV Host servers that have 
 tags: ['windows', 'alerting', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-19
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Check this box to enable alerts for HyperV Host servers that have snapshots olde
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/e0a288ec-c323-45bb-94b0-02071635ce45/image1.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

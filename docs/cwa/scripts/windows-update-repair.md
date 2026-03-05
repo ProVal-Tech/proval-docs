@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to repair and reset Windo
 tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Executes the Agnostic script [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the dataview that di
 tags: ['connectwise', 'permissions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This dataview shows which machines are associated with specific contacts in Auto
 | Reboot               | Check whether the contact has reboot permission or not                  |
 | Shutdown             | Check whether the contact has shutdown permission or not                |
 | Wake On Lan          | Check whether the contact has Wake On Lan permission or not.            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script that repairs non-functional or br
 tags: ['email', 'installation', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ Reason: Automate has executed the autofix script 3 times over the last 7 days, b
 Please reinstall the ScreenConnect Client manually on the computer.
 Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-40c8-9933-d16163b29f06
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

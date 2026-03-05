@@ -8,6 +8,8 @@ description: 'A comprehensive solution for managing IPv6 protocol settings acros
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Purpose
@@ -101,3 +103,9 @@ A: Yes, set the custom field to "Windows Workstation" only at the desired config
 A: The custom field requires Read/Write permissions for both technicians and automation systems.
 
 **Note:** Disabling IPv6 may affect network connectivity in environments that rely on IPv6 functionality. Test thoroughly before widespread deployment.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

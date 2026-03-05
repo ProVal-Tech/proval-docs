@@ -8,4 +8,12 @@ description: 'This document explores advanced techniques for script usage in Pow
 tags: ['performance', 'security', 'setup', 'windows']  
 draft: false  
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

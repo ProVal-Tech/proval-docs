@@ -8,6 +8,8 @@ description: 'This Script Gets .Net Framework Version using the Registry Value a
 tags: ['dotnet','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-19
 ---
 
 ## Overview
@@ -152,3 +154,9 @@ You will be prompted to enter your MFA code. Provide the code and press the `Con
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-05-14
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to encrypt a drive 
 tags: ['disk-encryption', 'encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -90,3 +92,9 @@ When running the script, you must select a key protector type. Here is a brief e
 
 - Script log
 - Local file on computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

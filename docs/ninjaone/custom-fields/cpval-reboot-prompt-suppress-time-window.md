@@ -8,6 +8,8 @@ description: 'Specify time ranges to suppress reboot prompts. Example: 1800-0900
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specify time ranges to suppress reboot prompts. Example: 1800-0900 means no prom
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/12775f61-616e-4157-9f47-4623433bf68d/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

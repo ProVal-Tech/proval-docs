@@ -8,6 +8,8 @@ description: 'Defines the wait time (in hours) between consecutive reboot prompt
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Defines the wait time (in hours) between consecutive reboot prompts. Applies at 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/2b88d214-a59b-4972-a462-121ecfc2a098/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

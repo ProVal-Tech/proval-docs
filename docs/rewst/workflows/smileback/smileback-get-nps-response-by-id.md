@@ -8,6 +8,8 @@ description: 'Workflow to retrieve a specific NPS response from SmileBack by its
 tags: [ 'smileback' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 # Summary
@@ -60,3 +62,9 @@ This workflow retrieves a specific NPS (Net Promoter Score) response from SmileB
   }
 }
 ```
+
+## Changelog
+
+### 2025-11-05
+
+- Initial version of the document

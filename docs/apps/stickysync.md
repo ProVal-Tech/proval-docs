@@ -8,6 +8,8 @@ description: 'Sync Passwords from ConnectWise Automate to ITGlue'
 tags: ['api','application', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-27
 ---
 
 <br />
@@ -52,3 +54,9 @@ unlisted: false
     - The "Sync All" button is contextual. If you are filtering the passwords list by a specific client, then the button will only "Sync All" passwords for that client.
 
 ![Image3](../../static/img/docs/1cbfc0a3-378c-43d4-a890-082779e05310/image3.webp)
+
+## Changelog
+
+### 2025-08-21
+
+- Initial version of the document

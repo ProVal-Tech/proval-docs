@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for auditing Windows 
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Purpose
@@ -100,3 +102,9 @@ To configure the Autofix section of the solution to create only Tickets and no A
 
 **Q:** The Dataview shows this machine is online currently but has not updated its inventory in well over 10 days, why?  
 **A:** The monitor is set up to run only against machines that are not EOL or recently EOL (within 30 days). If the machine is not EOL currently, check to make sure the monitor is set up to run against the group that the machine is in.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

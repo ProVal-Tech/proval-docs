@@ -8,6 +8,8 @@ description: 'This condition ensures that the Disable IPv6 script runs on Window
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This condition ensures that the [Disable IPv6](/docs/44ab6bd7-fe4f-4c1a-a743-9db
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-ipv6-windows-workstation.toml)
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

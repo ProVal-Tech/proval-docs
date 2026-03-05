@@ -8,6 +8,8 @@ description: 'This document outlines the process of storing GPResult information
 tags: ['active-directory', 'database', 'gpo', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ Stores GPResult information from the script [EPM - Windows Configuration - Scrip
 | IsValid         | TINYINT   | Indicates if the GPO is valid in the current context.                                          |
 | AccessDenied    | TINYINT   | Indicates if access was denied to apply the GPO.                                               |
 | SecurityFilter   | VARCHAR   | Indicates the security filters that were applied that led to the GPO application.              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

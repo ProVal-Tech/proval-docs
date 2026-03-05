@@ -8,6 +8,8 @@ description: 'This document details a script designed to detect Dell Dockstation
 tags: ['dell', 'installation', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Set the `Ticket Category` in the [Execute Script - Get-DellDockStation](/docs/13
 
 **Subject:** Dell Command | Monitor Installation Failed  
 ![Ticket Example](../../../static/img/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

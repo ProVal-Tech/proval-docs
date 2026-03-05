@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the dataviews u
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ This solution contains the dataviews that are used for the detailed auditing of 
 
 2. Reload the system cache:  
    ![Reload Cache](../../static/img/docs/894ea49f-fc57-49a6-a456-165c6170431f/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

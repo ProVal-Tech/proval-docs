@@ -8,6 +8,8 @@ description: 'The Windows time zone ID to set (e.g., "Pacific Standard Time"). I
 tags: ['timezone', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -480,3 +482,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/23bc744a-aef7-40dd-bfc6-058138a4d302/image4.webp)
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

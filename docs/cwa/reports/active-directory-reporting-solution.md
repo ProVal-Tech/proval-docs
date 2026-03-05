@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to generating profess
 tags: ['active-directory', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Purpose
@@ -89,3 +91,9 @@ If all of your clients do not have any detected weak passwords, the auditing scr
 If no data is displayed at all in these reports, check to make sure your Active Directory Plugin is installed and configured for the client you are running it on.
 
 ![Plugin Example](../../../static/img/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

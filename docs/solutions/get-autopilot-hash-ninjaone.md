@@ -8,6 +8,8 @@ description: 'The purpose of the soultion to update the check and update the Aut
 tags: ['autopilot','auditing','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-27
 ---
 
 ## Purpose
@@ -53,3 +55,9 @@ The purpose of the soultion to check and update the Autopilot Hash into a custom
 
 4. Create the Task:
    - [Task - Check Autopilot Hash](/docs/9a07b71d-98ae-4352-ae78-b568ab72b052)
+
+## Changelog
+
+### 2026-02-24
+
+- Initial version of the document

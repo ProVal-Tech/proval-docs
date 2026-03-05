@@ -8,6 +8,8 @@ description: 'This document details the ProVal version of the default monitor "S
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This is the ProVal version of the default monitor "SVC - Auto Services Stopped".
 ## Alert Template
 
 - `△ Custom - Autofix - Restart Service`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that utilizes the ConnectWise Auto
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -90,3 +92,9 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 
 - The log that comes along with this is very long.  
   - This is by intent; there are many calls to subscripts for RMM+, and having detailed logging is necessary.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

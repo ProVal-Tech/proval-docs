@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of how to change the se
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ See [EPM - Windows Configuration - Agnostic - Set-ServiceLogin](/docs/ec673596-3
   - `.//Set-ServiceLogin-log.txt`
   - `.//Set-ServiceLogin-data.txt`
   - `.//Set-ServiceLogin-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

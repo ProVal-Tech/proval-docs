@@ -8,6 +8,8 @@ description: 'This document outlines the creation and configuration of the Updat
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ This monitor is intentionally aimed at the Update Orchestrator group.
 ## Ticketing
 
 This solution does technically create tickets, but the tickets are designed to autoclose as soon as the machine runs the task to update PowerShell.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

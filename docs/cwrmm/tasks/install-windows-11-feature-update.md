@@ -8,6 +8,8 @@ description: 'The script automates the installation of the latest Windows 11 Fea
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -262,3 +264,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log
 - C:\ProgramData\_Automation\Script\Install-Windows11FeatureUpdate\Install-Windows11FeatureUpdate-log.txt
+
+## Changelog
+
+### 2025-04-21
+
+- Initial version of the document

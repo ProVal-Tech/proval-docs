@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on resolving the stuck ema
 tags: ['email', 'exchange', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Run `Get-EngineUpdateInformation` and check the `UpdateVersion` information. If 
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

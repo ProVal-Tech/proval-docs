@@ -8,6 +8,8 @@ description: 'This custom field removes specified bloatware from the system. The
 tags: ['windows', 'setup', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This custom field removes specified bloatware from the system. The actual apps t
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/4eef200f-a609-4993-9533-b7fce30b29ef/image1.webp)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

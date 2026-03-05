@@ -8,6 +8,8 @@ description: 'This contains the list of machines where the ESU license detection
 tags:  ['auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/a3f30225-91ac-46f7-b616-cb42aedb49d8/image3.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

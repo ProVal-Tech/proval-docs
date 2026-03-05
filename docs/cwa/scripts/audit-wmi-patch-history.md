@@ -8,6 +8,8 @@ description: 'This script audits the current patch history from .NET to a custom
 tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script audits the current patch history from .NET to a custom table (plugin
 ## Output
 
 - The output will be populated in the Dataview Windows - Rollup Audit (WMI) [Script]
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

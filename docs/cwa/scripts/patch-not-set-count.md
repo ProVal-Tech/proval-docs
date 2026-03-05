@@ -8,6 +8,8 @@ description: 'This document outlines a script that counts the number of patches 
 tags: ['report', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script runs a SQL query to check for the count of patches that have not bee
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

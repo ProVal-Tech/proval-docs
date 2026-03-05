@@ -8,6 +8,8 @@ description: 'This document provides details about the HP iLO Health Report tabl
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ This table stores health information about HP iLO devices. It is filled by the s
 | StatusInfo                   | VARCHAR  | Additional information about the overall iLO status.  |
 | LastRun                      | DATETIME | The last time the script was run.                     |
 | Computerid                   | INT      | Computer ID.                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

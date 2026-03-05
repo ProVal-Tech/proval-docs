@@ -8,6 +8,8 @@ description: 'This document provides details on storing the runtime of the Windo
 tags: ['performance', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines the storage of the runtime for the Windows 11 Compatibili
 | Field Name                       | Level    | Type      | Default Value | Description                                                   | Editable |
 |----------------------------------|----------|-----------|---------------|---------------------------------------------------------------|----------|
 | Windows 11 Upgrade Runtime       | Endpoint | Text Box  | NA            | Stores the runtime of the Windows 11 Compatibility Validation task. | Yes      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

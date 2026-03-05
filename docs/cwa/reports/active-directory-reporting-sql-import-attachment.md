@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to importing the All A
 tags: ['active-directory', 'report', 'setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Step 1
@@ -29,3 +31,9 @@ Import the file using System → General → Import → SQL File (The SQL file i
 ## Dependencies
 
 - [Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

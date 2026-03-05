@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script designed to efficiently
 tags: ['database', 'optimization', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -80,4 +82,10 @@ This is a function script and should not be run manually.
    - `TotalRowsToWrite`  
    - `TotalRowsToLimit`  
    - `SQLInsert`  
-10. Return that object.  
+10. Return that object.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

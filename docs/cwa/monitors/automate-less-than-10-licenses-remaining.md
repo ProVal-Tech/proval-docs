@@ -8,6 +8,8 @@ description: 'This document provides details on setting up an alert monitor for 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ For hosted partners, it will be the minimum `computerid` of `Clientid 1`. If `Cl
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

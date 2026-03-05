@@ -8,6 +8,8 @@ description: 'This script performs the endpoint scanning using the MSRT and prov
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -364,3 +366,9 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Task log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

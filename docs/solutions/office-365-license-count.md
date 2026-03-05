@@ -8,6 +8,8 @@ description: 'The solution aims to fetch and display the Office 365 License Coun
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Purpose
@@ -41,3 +43,9 @@ The solution aims to fetch and display the Office 365 License Counts for the cli
      - [Internal Monitor - Execute Script – Office 365 License Count](/docs/4b0f8e3f-0efe-49b5-a81b-a617d5940833)
        - Set up with the alert template `△ Custom – Execute Script – Office 365 License Count`
        - Right-click and select "Run Now" to start the monitor.
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

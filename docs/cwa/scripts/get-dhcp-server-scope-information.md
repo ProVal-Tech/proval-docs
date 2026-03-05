@@ -8,6 +8,8 @@ description: 'This document outlines a script that gathers DHCP information from
 tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This script gathers DHCP information from a target server and saves it to the da
 ## Output
 
 - Table: `plugin_proval_dhcp_statistics`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

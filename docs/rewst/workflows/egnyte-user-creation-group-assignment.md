@@ -8,6 +8,8 @@ description: 'Automatically create Egnyte user accounts and assign them to appro
 tags: ['egnyte', 'automation', 'provisioning']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -415,3 +417,9 @@ Common error types:
 13. **Testing**: Test with non-production groups before deploying changes to group mappings
 14. **Notification Management**: Keep notification recipients current to avoid missed alerts
 15. **License Monitoring**: Track Egnyte license usage to avoid hitting limits during provisioning
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Set-ChromiumHomepage command to set and enfo
 tags: ['chrome', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -38,3 +40,9 @@ This command will set the browser homepage to DuckDuckGo and enforce that page o
 ## Output
 
     .\Set-ChromiumHomepage-log.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

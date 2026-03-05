@@ -8,6 +8,8 @@ description: 'This document outlines a script that performs an SFC scan on a Win
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This script will stop the Windows Update service and clear some folders to ensur
 
 - Script log messages
 - Tickets
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Windows user profile inf
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Displays Windows user profile information gathered from the script [EPM - Accoun
 | IsAdmin        | Indicates if the user is a local admin.                                                                  |
 | LastLogon      | Shows the last logon time of the user.                                                                   |
 | LastScan       | The last time information was gathered about this profile.                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

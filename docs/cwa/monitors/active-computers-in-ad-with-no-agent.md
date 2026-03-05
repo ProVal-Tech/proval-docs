@@ -8,6 +8,8 @@ description: 'This document outlines the process for generating client-level tic
 tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ Last Logon: <Last Logon Date>
 
 Note: The list of machine names, separated by commas, can be configured within the client-level Extra Data Field (EDF) labeled "Excluded Missing Agent Computers" to exclude those machines from this monitoring process.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

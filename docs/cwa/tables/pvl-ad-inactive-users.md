@@ -8,6 +8,8 @@ description: 'This table stores the data of the inactive users above threshold'
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-01
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ This table stores the data of the inactive users above the threshold gathered by
 | IsExcluded | VARCHAR | It stores the information of the inactive user's that are excluded or not in the Automate |
 | UserStatus | VARCHAR | It contains the information of each inactive user that were disabled or enabled.|
 | ScriptRanDate | DATETIME | This has the information of the last script run date when the information was collected via scripts .|
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

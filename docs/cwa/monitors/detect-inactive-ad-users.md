@@ -8,6 +8,8 @@ description: 'This remote monitor detects inactive AD Users over 90 days.'
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Summary
@@ -127,3 +129,9 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 
 - 
   Assign the required alert template. It is suggested to use `△ Custom - Execute Script - Disable Inactive AD Users` for the best results.
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

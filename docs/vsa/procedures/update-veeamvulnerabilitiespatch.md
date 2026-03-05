@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Update Veeam Vulnerabili
 tags: ['installation', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -49,3 +51,9 @@ Does the content write to the RMM log, a data file, or the console? If so, what 
 | ConnectWise RMM        |                     |
 | Kaseya VSA            |                     |
 | Datto RMM             |                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

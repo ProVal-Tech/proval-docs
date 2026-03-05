@@ -8,6 +8,8 @@ description: 'This document provides detailed instructions on updating the WinRE
 tags: ['cve', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -72,3 +74,9 @@ Updating the WinRE partition on deployed devices to address security vulnerabili
    - To send emails, it is mandatory to set the email address. Multiple email addresses can be set, separated by semicolons:  
      e.g., [abc@def.com](mailto:abc@def.com); [ghi@jkl.com](mailto:ghi@jkl.com); [mno@pqr.com](mailto:mno@pqr.com)  
      Once the email address is set, you can set the value to 1 for the failure email if you need an email only on failure, set 1 for success email if you want an email for success, or set 1 for both for emails on both success and failure.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

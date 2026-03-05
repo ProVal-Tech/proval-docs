@@ -8,6 +8,8 @@ description: 'This document outlines a script that scans the main drive of Windo
 tags: ['linux', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ If the script fails to gather the data appropriately, it will exit with an error
 ## Example Output
 
 ![Example Output](../../../static/img/docs/fc919069-1895-4842-9b1e-d13d3f53227b/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

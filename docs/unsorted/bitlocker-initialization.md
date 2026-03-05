@@ -124,3 +124,9 @@ The following logs are created when the agent procedure is run.
 ./Initialize-BitLockerVolume-data.txt
 ./Initialize-BitLockerVolume-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

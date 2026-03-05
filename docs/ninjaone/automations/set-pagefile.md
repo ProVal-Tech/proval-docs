@@ -8,6 +8,8 @@ description: 'Configures the Windows page file settings on a specified drive, su
 tags: ['disk', 'memory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-01
 ---
 
 ## Overview
@@ -56,3 +58,9 @@ Set the required arguments and click the `Run` button to run the script.
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-06-27
+
+- Initial version of the document

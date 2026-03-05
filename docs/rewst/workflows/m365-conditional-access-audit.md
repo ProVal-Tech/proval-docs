@@ -8,6 +8,8 @@ description: 'Automatically audit Microsoft 365 Conditional Access policies for 
 tags: ['microsoft365', 'security', 'compliance', 'audit']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -126,3 +128,9 @@ Before using this workflow, ensure the following requirements are met:
   ]
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

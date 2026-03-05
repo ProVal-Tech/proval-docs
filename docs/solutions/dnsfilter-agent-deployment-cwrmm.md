@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to automatically deploy the DNS fi
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Purpose
@@ -38,4 +40,10 @@ The purpose of this solution is to automatically deploy the DNS filter to window
     - [DNSFilter Agent Deployment](/docs/03c4255b-097a-406f-822f-a237228dbeed)  
 
 3. Create and deploy the following tasks:  
-    - [Install DNSFilter Agent](/docs/5f0490f8-c2ce-4afe-92a0-d75699150a24)  
+    - [Install DNSFilter Agent](/docs/5f0490f8-c2ce-4afe-92a0-d75699150a24)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a solution for populating a custom field wi
 tags: ['installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This solution allows for a custom field to be populated with the initial install
 ## Implementation
 
 The agent procedure must be run in order for the custom field to be populated.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

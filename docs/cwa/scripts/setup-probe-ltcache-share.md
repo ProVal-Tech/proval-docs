@@ -8,6 +8,8 @@ description: 'This document explains a script that removes the current LTCache o
 tags: ['diskspace', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The location must have a probe enabled; otherwise, the script will exit with an 
 ## Output
 
 Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

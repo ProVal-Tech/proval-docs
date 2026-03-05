@@ -8,6 +8,8 @@ description: 'Identifies Windows machines where RDP is enabled or not completely
 tags: ['windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Summary
@@ -226,3 +228,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 ### Step 10
 
 Apply required `Ticket Category` and `Alert Template` to the monitor.
+
+## Changelog
+
+### 2025-06-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that downlo
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The script downloads and installs the Huntress Agent silently on the Windows mac
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

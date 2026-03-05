@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Datto RMM implementation
 tags: ['windows', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -39,3 +41,9 @@ Import PUA Removal Tool.cpt into the environment.
 ## Output
 
 stdOut & stdError
+
+## Changelog
+
+### 2025-05-05
+
+- Initial version of the document

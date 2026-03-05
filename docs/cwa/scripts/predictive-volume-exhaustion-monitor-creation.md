@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on setting up the Vol
 tags: ['disk', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -125,3 +127,9 @@ It is a client script and is suggested to schedule it to run once per day for be
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

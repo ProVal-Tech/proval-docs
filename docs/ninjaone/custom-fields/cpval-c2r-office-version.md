@@ -8,6 +8,8 @@ description: 'C2R Office version installed on the machine, gathered by the Micro
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ C2R Office version installed on the machine, gathered by the Microsoft 365 - Cli
 ## Sample Screenshot
 
 ![Image](../../../static/img/docs/05d64903-e13b-4937-bba8-e2b2236d52d3/image1.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

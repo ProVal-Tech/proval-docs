@@ -8,6 +8,8 @@ description: 'Details all the Network Neighbours of the machine.'
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Summary
@@ -28,4 +30,10 @@ Details all the Network Neighbours of the machine. This custom field is populate
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-network-neighbours.toml)
 
 ## Sample Screenshot
-![Sample ScreenShot](../../../static/img/docs/150e0b6d-db7e-4b7b-8879-bd36b1e11771/image1.webp)  
+![Sample ScreenShot](../../../static/img/docs/150e0b6d-db7e-4b7b-8879-bd36b1e11771/image1.webp)
+
+## Changelog
+
+### 2026-02-25
+
+- Initial version of the document

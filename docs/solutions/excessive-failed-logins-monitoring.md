@@ -8,6 +8,8 @@ description: 'This document outlines a solution for monitoring domain controller
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-11
 ---
 
 ## Purpose
@@ -119,3 +121,9 @@ Or check manually in Services.msc.
 - `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.
 - `Block IP or Account:` If malicious, take immediate action.  
 - `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.
+
+## Changelog
+
+### 2025-06-09
+
+- Initial version of the document

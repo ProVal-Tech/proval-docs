@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude location from the certification 
 tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Flag this custom field to exclude location from the certification expiration mon
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/9fa7d829-75c9-455d-9908-d695e0ae0a96/image1.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

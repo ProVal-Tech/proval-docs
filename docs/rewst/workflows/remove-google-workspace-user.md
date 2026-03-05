@@ -8,6 +8,8 @@ description: 'Automatically deprovision Google Workspace user accounts during of
 tags: ['google-workspace', 'user-removal', 'offboarding', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -121,3 +123,9 @@ Before using this workflow, ensure the following requirements are met:
   "ticket_id": "OFF-2026-018"
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Group of SQL Servers.'
 tags: ['auditing', 'mssql', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-13
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The group is defined by the following **conditions**, joined by an **AND** logic
 ## Completed Group
 
 ![Image3](../../../static/img/docs/85ffcde0-01c8-4e6b-8c08-51371f80ae9c/image3.webp)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

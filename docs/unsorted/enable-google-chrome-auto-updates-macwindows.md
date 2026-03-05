@@ -19,3 +19,9 @@ unlisted: true
 | Google Chrome Auto Update (EDF)          | This EDF is checked when the auto-update of Chrome is enabled via the script.                 |
 
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

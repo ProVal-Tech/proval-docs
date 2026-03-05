@@ -8,6 +8,8 @@ description: 'This will get information about the current number of Hyper-V chec
 tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Overview
@@ -241,3 +243,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 - Activity Details 
 - Ticket
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

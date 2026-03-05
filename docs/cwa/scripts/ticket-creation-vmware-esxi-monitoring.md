@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to automatically create t
 tags: ['esxi']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The only difference is that this script will write the ESXi hosts' information t
 
 - Script Log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

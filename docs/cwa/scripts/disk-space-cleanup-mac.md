@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['cleanup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The script can be downloaded from [this link](https://raw.githubusercontent.com/
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

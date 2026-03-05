@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to gather disk informati
 tags: ['disk', 'installation', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -62,3 +64,9 @@ Location of output for log, result, and error files.
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-log.txt
 $env:ProgramData/_automation/AgentProcedure/GetCrystalDiskInfo/Get-CriticalDiskInfo-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

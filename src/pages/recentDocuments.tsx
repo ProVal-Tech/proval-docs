@@ -10,6 +10,7 @@ type RecentDoc = {
     LastCommit: string; // ISO or RFC date string
     Category: string;
     Summary?: string;
+    Changelog?: { Date: string; Changes: string[] }[];
 };
 
 function isExternal(slug: string) {

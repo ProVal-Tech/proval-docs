@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of how to retrieve SQL 
 tags: ['database', 'email', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,4 +25,10 @@ Get SQL Data and Send as Report
 - **msgsubject**: Required. The email subject line.  
 - **filename**: Required. The filename of the CSV.  
 - **sqluser**: Required if using SQL credtype. The username to log in to the SQL server.  
-- **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.  
+- **sqlpassword**: Required if using SQL credtype. The password to log in to the SQL server.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

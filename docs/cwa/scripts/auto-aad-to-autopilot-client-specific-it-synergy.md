@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script designed to automate th
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ AppID, AppSecret, and Tenant ID EDFs must be set at the client level.
 - If the output does not contain "All Devices synced," then `Get-WindowsAutoPilotInfo.ps1` failed, and the script will fail.
 - If the `FinishStatus` of the script PowerShell response - All Errors - Check is false, then the check for common environmental errors found a known issue, and the script will fail.
 - The script log will hold any error type information.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

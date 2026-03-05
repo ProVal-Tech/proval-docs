@@ -8,6 +8,8 @@ description: 'Executes the installation script against Windows machines where th
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Summary
@@ -80,3 +82,9 @@ if (Get-Service -Name 'CagService' -ErrorAction SilentlyContinue) {
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/0562cbb5-db83-486a-84ae-730abd583fab/image6.webp)
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

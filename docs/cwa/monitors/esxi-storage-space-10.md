@@ -8,6 +8,8 @@ description: 'This document describes the ESXi Storage Monitor, which reports an
 tags: ['storage', 'virtualization', 'vmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This section should list the ITGlue documents found in the Related Items sidebar
 ## Target
 
 This monitor is a Global RAWSQL monitor and does not need to be assigned to a group; however, it will only alert for ESXi hosts that exist in the Virtualization Manager.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

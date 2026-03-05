@@ -8,8 +8,16 @@ description: 'This document provides a comprehensive guide on retrieving the def
 tags: ['office365', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
 
 Get Default Office Version, Bit, CTR, and 2019
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

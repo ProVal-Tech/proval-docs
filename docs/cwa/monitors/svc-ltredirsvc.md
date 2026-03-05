@@ -8,6 +8,8 @@ description: 'This document outlines the monitoring setup for the LTRedirSVC ser
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ It should be created against the "Labtech Server" group for on-prem partners onl
 ## Target
 
 Service plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

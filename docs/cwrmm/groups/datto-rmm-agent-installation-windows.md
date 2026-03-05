@@ -8,6 +8,8 @@ description: 'Group of Windows devices where the Datto RMM Agent is not installe
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ A machine matches the group if it meets ALL criteria in Block 1.
 ## Completed Group
 
 ![Image3](../../../static/img/docs/f2349473-6980-4336-a294-37d9cdbc7e4d/image3.webp)
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

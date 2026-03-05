@@ -8,6 +8,8 @@ description: 'Documentation for the Register-FirefoxExtension command to add and
 tags: ['firefox', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -38,3 +40,9 @@ The output log can be found at:
 ```
 .\Register-FirefoxExtension-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process to install various Cisco Secure
 tags: ['cisco', 'installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ The purpose of this solution is to provide an option to install different Cisco 
      - [CWA - Internal Monitor - Missing Cisco Secure Client Modules](/docs/2936aa3a-b372-4681-8957-e23d5a2631db)
        - Set up with the alert template "`△ Custom - Execute Script - Cisco Secure Client - Package Installation`".
        - Right-click and select "Run Now" to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

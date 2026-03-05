@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the site from CrowdStrike auto i
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the site from CrowdStrike auto installation. H
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/8d9498e0-4392-471e-93da-b546e0934b89/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

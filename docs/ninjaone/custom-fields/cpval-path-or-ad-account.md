@@ -8,6 +8,8 @@ description: 'Option for specifying the file path or Active Directory account re
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ Option for specifying the file path or Active Directory account required by cert
 
 ## Sample Screenshot
 
-![cPVAL Path Or ADAccount](../../../static/img/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47/image1.webp)  
+![cPVAL Path Or ADAccount](../../../static/img/docs/fb290c5b-cf73-4b7e-be34-ada7d3391e47/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to add or edit 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 1. Open the System Dashboard by clicking System > Configuration > Dashboard
@@ -25,3 +27,9 @@ unlisted: false
     To edit a value, click the value to edit, change the Value, and click Save.
 
     ![image](/img/docs/a4c1ce0c-c270-49fb-8688-4390482b6395/image4.gif)
+
+## Changelog
+
+### 2025-04-04
+
+- Initial version of the document

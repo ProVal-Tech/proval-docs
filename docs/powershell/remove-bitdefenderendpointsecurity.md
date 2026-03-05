@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-BitDefenderEndpointSecurity command t
 tags: ['security', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -49,3 +51,9 @@ Removes all Bitdefender Endpoint Security from an endpoint when BEST cannot be d
 Location of output for log, result, and error files:
 - `Remove-BitdefenderEndpointSecurity-log.txt`
 - `Remove-BitdefenderEndpointSecurity-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

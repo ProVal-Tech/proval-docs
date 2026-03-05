@@ -8,6 +8,8 @@ description: 'This document outlines the auto deployment process for the Network
 tags: ['networking', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Windows Machines
 **_To enable ticketing, please set the ticket category in the monitor._**  
 ![Image](../../../static/img/docs/4e0f7314-bf88-44de-a162-139c191e6e09/image_1.webp)  
 **_The script will then handle the ticket creation:_** [ - Network Glue Collector - Install](/docs/11b30dcb-74c1-4736-a495-5908ce17117a)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

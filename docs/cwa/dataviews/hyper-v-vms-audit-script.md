@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the auditing in
 tags: ['hyper-v', 'performance', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview displays auditing information about Hyper-V virtual machines.
 | Automatic Start Action     | Displays the status of the automatic start action of the virtual machine. |
 | Automatic Stop Action      | Displays the status of the automatic stop action of the virtual machine.  |
 | Automatic Start Delay      | Displays the automatic start delay time of the virtual machine.   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

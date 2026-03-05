@@ -8,6 +8,8 @@ description: 'This document outlines the SQL query view designed for the CU comp
 tags: ['database', 'performance', 'report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ The data is grouped by client.
 | EOL %                           | Proportion of outdated machines ineligible for cumulative updates.                             |
 | Total Eligible Computers - CU   | Total number of supported Windows computers which have been online in Automate within the past 30 days and exist in [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
 | Data Missing                    | Total number of supported Windows computers which have been online in Automate within the past 30 days and do not exist in the [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

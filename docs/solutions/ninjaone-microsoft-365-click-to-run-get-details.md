@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to retrieve the installed Microsof
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Purpose
@@ -46,3 +48,9 @@ The purpose of this solution is to retrieve the installed Microsoft Click-to-Run
 - Create the  [cPVAL C2R Update Channel](/docs/76865fc9-4736-4590-b365-e4f858b6da8d)  using the implementation instruction provided in the document.
 - Create the  [Execute Microsoft 365 - Click-to-Run - Get Details(MAC)](/docs/42401ca0-492c-42fa-b9e4-19d78666c8a4) using the implementation instruction provided in the document.
 - Create the  [Group - Microsoft 365 - C2R - Get Details(MAC)](/docs/e626d7f2-56e6-4bfc-a193-4eab98c06d41) using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

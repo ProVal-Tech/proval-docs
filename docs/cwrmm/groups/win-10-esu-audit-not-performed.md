@@ -8,6 +8,8 @@ description: 'This contains the list of Windows 10 22H2 machines where the audit
 tags:  ['auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/afcaeb5a-d0e5-4f5e-b24f-c0aeaec22f3e/image3.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

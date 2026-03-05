@@ -8,6 +8,8 @@ description: 'This document outlines the process of checking and automatically r
 tags: ['application', 'connectwise', 'office']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -138,3 +140,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

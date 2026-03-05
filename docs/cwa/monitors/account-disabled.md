@@ -8,6 +8,8 @@ description: 'This document describes a monitoring solution that identifies disa
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This monitor looks for disabled accounts on Active Directory servers through the
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

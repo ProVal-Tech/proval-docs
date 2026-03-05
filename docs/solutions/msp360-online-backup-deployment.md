@@ -8,6 +8,8 @@ description: 'This solution enables automated deployment of MSP360 Online Backup
 tags: ['backup', 'application', 'software'] 
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-19
 ---
 
 ## Purpose
@@ -108,3 +110,9 @@ Check Automation > Activity in NinjaOne for:
 - "MBSAgent service running" confirmation
 - Installation logs in script output
 - "Online Backup" appearing in Applications list
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

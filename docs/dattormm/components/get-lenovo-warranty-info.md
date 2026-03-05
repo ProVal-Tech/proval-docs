@@ -8,6 +8,8 @@ description: 'This component is used to update the UDF with the leneovo warranty
 tags: ['auditing', 'licensing', 'lenovo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Overview
@@ -63,3 +65,9 @@ Please also rename that UDF With `Warranty Expiration`
 ## Attachments
 
 [Get Lenovo Warranty Info](../../../static/attachments/Get%20Lenovo%20Warranty%20Info.cpt)
+
+## Changelog
+
+### 2025-11-05
+
+- Initial version of the document

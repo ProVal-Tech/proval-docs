@@ -8,6 +8,8 @@ description: 'This document outlines a suite of 9 agent procedures designed for 
 tags: ['backup', 'encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -82,3 +84,9 @@ All required parameters are prompted and explained at script runtime.
     ./Initialize-BitLockerVolume-error.txt
     Agent Procedure Log
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

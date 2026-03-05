@@ -8,6 +8,8 @@ description: 'This document addresses the issue of ConnectWise Automate not refl
 tags: ['alerting', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-08
 ---
 
 ## Summary
@@ -49,4 +51,10 @@ It features a state-based monitor, and the WARNING state indicates PowerShell fa
 
 ## Implementation
 
-- [Import - Remote Monitor - Incorrect Drive Inventory](/docs/a09ccac6-d16f-4339-af8c-1b3612c2bfdf) 
+- [Import - Remote Monitor - Incorrect Drive Inventory](/docs/a09ccac6-d16f-4339-af8c-1b3612c2bfdf)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

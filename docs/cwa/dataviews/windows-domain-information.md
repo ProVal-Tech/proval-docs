@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of how a computer 
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document provides an overview of how a computer is domain joined (or not do
 | Microsoft - Hybrid AD Joined       | Joined | Not Joined if the machine is Hybrid AD joined                 |
 | Microsoft - On-Premises DRS Joined | Joined | Not Joined if the machine is Device Registration Service (DRS) AD joined |
 | Microsoft - Not Domain Joined      | Domain Joined | Not Domain Joined if the machine is joined to a domain     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document explains how to determine the value of the KrbtgtFul
 tags: ['kerberos', 'registry', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The role can also be used to create an audit data view if needed.
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/System/currentcontrolset/services/kdc:KrbtgtFullPacSignature-%}` | Exists     |        | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

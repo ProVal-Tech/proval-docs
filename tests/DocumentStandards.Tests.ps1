@@ -61,6 +61,46 @@ foreach ($doc in $docs) {
             Value = $null
         }
     }
+
+    # Check for Changelog section
+    $hasChangelog = $content | Select-String -Pattern '^\s*##\s+Changelog\s*$'
+    if (!$hasChangelog) {
+        $errorList += [PSCustomObject]@{
+            Path = $doc.FullName
+            Type = 'MissingChangelog'
+            Value = $null
+        }
+    }
+
+    # Validate Changelog date format (### YYYY-MM-DD)
+    $changelogStarted = $false
+    $inCodeBlock = $false
+    foreach ($line in $content) {
+        if ($line -match '^```') {
+            $inCodeBlock = !$inCodeBlock
+            continue
+        }
+        if ($inCodeBlock) {
+            continue
+        }
+        if ($line -match '^\s*##\s+Changelog\s*$') {
+            $changelogStarted = $true
+            continue
+        }
+        if ($changelogStarted -and $line -match '^\s*##\s+(?!#)') {
+            break
+        }
+        if ($changelogStarted -and $line -match '^\s*###\s+(.+)$') {
+            $dateValue = $Matches[1].Trim()
+            if ($dateValue -notmatch '^\d{4}-\d{2}-\d{2}$') {
+                $errorList += [PSCustomObject]@{
+                    Path = $doc.FullName
+                    Type = 'InvalidChangelogDate'
+                    Value = $dateValue
+                }
+            }
+        }
+    }
 }
 
 # Check for unused static files in the repository

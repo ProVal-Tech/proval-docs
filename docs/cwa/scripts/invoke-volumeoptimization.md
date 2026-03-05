@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the EPM - Windows Co
 tags: ['optimization', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ If the script/monitor is intended to create tickets, please note the Subject and
 @psout@  
 
 ![Ticket Example](../../../static/img/docs/7f9d57ed-b09d-4db5-8ca7-ab0a6034c07c/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The solution is designed to detect and manage unknown or cached us
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ The [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) task ide
 - Create the [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) task.  
 - Deploy/Schedule the [Unknown User Profiles](/docs/93f21631-9100-46fc-864b-3af17bc91699) task.  
 - Create the [Remove User Profile](/docs/97ff1c2c-6782-4bd1-a169-d2aa908c89b4) task.
+
+## Changelog
+
+### 2025-03-03
+
+- Initial version of the document

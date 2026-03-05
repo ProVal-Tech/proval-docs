@@ -8,6 +8,8 @@ description: 'Automatically process SaaS Alerts security events into PSA tickets
 tags: ['saas-alerts', 'security', 'automation', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -105,3 +107,9 @@ Before using this workflow, ensure the following requirements are met:
   }
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a script that checks for the installation o
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script will first check if the Dell SupportAssist software is installed and
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

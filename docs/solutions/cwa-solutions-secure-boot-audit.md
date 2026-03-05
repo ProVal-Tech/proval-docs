@@ -8,6 +8,8 @@ description: 'This solution helps to display the status of key certificate and c
 tags: ['bios','certificates','secureboot','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-06
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ This solution guides to display the status of key certificate and configurations
 
 - Import the dataview [Windows Secure Boot Audit [Role]](/docs/380e59d8-81c8-41e8-a117-ee55867cd324)  
 - The computers will take some time to detect the role and slowly the [dataview](/docs/380e59d8-81c8-41e8-a117-ee55867cd324) will start showing the secure boot details.
+
+## Changelog
+
+### 2025-10-06
+
+- Initial version of the document

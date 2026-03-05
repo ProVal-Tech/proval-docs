@@ -8,6 +8,8 @@ description: 'This document outlines the implementation process for running the 
 tags: ['cleanup', 'datto', 'disk-cleanup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-04
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ Import the [attached component](../../../static/attachments/itg/11821769/soji-di
 ## Attachments
 
 [Soji Disk Cleaner.cpt](../../../static/attachments/itg/11821769/soji-disk-cleaner.cpt)
+
+## Changelog
+
+### 2025-07-04
+
+- Initial version of the document

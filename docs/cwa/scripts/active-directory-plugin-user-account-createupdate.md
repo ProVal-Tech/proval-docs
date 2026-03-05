@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to create or update a dom
 tags: ['active-directory', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -131,3 +133,9 @@ Additionally, there is an option available in the script to set the password as 
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines two views to identify agents that are compa
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -31,3 +33,9 @@ All content in [EPM - Data Collection - Solution - VSA Proval Script Compliance]
 | Filter Name                       | Advanced Filter? | Filter Value   |
 |-----------------------------------|------------------|----------------|
 | xPVAL ProVal Incompatible Endpoint | Y                | NOT "Compatible" |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

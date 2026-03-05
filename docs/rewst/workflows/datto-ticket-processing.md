@@ -8,6 +8,8 @@ description: 'Automatically process Datto alerts and events into PSA tickets wit
 tags: ['datto', 'automation', 'ticketing', 'backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -94,3 +96,9 @@ Before using this workflow, ensure the following requirements are met:
   }
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

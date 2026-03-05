@@ -8,6 +8,8 @@ description: 'This group contains the endpoint where the Ninja deployment failed
 tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ Search for `Ninja Deployment Result` and select it and set it `Contains any of` 
 ![Complete](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image-6_1.webp)
 
 ![Complete 1](../../../static/img/docs/9718a5fd-535b-4faf-abe9-86d55f37e620/image_1.webp)
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

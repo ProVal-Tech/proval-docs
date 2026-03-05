@@ -8,6 +8,8 @@ description: "This document outlines the implementation of a monitor that create
 tags: ['networking', 'security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This typically indicates one of three issues:
 1. The Windows Firewall on your Automate Server has UDP port 75 blocked.
 2. Your Router/Firewall is not forwarding UDP port 75.
 3. Something is obstructing traffic on UDP port 75 (such as an AV/Security Appliance).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

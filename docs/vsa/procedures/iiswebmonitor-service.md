@@ -8,8 +8,16 @@ description: 'This document outlines a service designed to ensure that IIS websi
 tags: ['alerting', 'iis']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
 
 This service (which needs to be installed) keeps IIS websites online by restarting the message queue when a site goes down and generating alerts based on specific event IDs.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

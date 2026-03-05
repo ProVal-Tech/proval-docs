@@ -8,6 +8,8 @@ description: 'This script verifies whether NTLM v1.1 is enabled on the target ma
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ This script verifies whether NTLM v1.1 is enabled on the target machine and upda
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

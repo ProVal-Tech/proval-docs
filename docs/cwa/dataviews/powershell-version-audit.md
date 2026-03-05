@@ -8,6 +8,8 @@ description: 'This document provides a dataview that shows the current PowerShel
 tags: ['database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ FROM
 WHERE 
   ss.variable = 'PowershellVersion'
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

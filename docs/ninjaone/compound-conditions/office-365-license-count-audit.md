@@ -8,6 +8,8 @@ description: 'Runs the auditing script daily against the client''s primary domai
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-26
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Runs the [auditing script](/docs/2caca618-6249-4f67-8bee-94538f69dae3) daily aga
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/office-365-license-count-audit.toml)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

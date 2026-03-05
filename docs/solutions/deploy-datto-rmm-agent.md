@@ -8,6 +8,8 @@ description: 'This solution outlines the full process for automatically deployin
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Purpose
@@ -201,3 +203,9 @@ Retrieve your specific [Datto RMM Site ID](/docs/b5af697b-7eeb-4395-8962-44b7664
 >
 > > * If successful: It will log "Agent installation completed successfully."
 > > * If it fails: It will throw an error and log the specific exit code (on Windows) or a failure message (on macOS).
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed analysis of script failures over
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This document holds a detailed analysis of script failures over the past 30 days
 | First Failure Date        | DATETIME | First Failure Date                                                                                 |
 | Last Failure Date         | DATETIME | Last Failure Date                                                                                  |
 | Data Collection Time      | DATETIME | Data Collection Time                                                                                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

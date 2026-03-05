@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring set that creates a ticket in C
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,4 +46,10 @@ PCs Affected: PC-2, PC-19, PC-3
 
 ## Target
 
-Global  
+Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

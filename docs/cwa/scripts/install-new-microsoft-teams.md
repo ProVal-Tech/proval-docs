@@ -8,6 +8,8 @@ description: 'This document provides a script that installs the New Microsoft Te
 tags: ['installation', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This document provides a script for installing the New Microsoft Teams on both W
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

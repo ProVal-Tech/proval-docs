@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to clean up older remote 
 tags: ['cleanup', 'logging', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ The script will then run two different SQL queries to remove the broken remote d
 ## Output
 
 Script log only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

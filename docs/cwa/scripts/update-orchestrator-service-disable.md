@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['performance', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,4 +34,10 @@ It will run as an autofix with a dependent monitor.
 
 ## Output
 
-- Script log  
+- Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

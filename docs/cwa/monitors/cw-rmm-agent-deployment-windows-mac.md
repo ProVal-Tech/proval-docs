@@ -8,6 +8,8 @@ description: 'Detect machines where CW RMM agent deployment is enabled but agent
 tags: ['installation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-22
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Detect machines where CW RMM agent deployment is enabled but agent is not instal
 ## Alert Template
 
 - `△ Custom - Execute Script - CW RMM Agent Deployment`
+
+## Changelog
+
+### 2025-08-22
+
+- Initial version of the document

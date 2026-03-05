@@ -8,6 +8,8 @@ description: 'Automatically manage AppGate SDP upgrades across managed environme
 tags: ['appgate', 'upgrade', 'zero-trust', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -122,3 +124,9 @@ Before using this workflow, ensure the following requirements are met:
   "ticket_id": "CHG-2026-042"
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

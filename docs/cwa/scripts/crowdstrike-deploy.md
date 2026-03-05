@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to install Crowdstr
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This script will install Crowdstrike on an agent using the CID key provided in t
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Pins Google Chrome and the New Outlook to the Windows taskbar for 
 tags: ['windows', 'setup', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ Pins Google Chrome and the New Outlook to the Windows taskbar for the currently 
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

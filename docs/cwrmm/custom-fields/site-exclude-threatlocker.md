@@ -8,6 +8,8 @@ description: 'This document explains how to use the custom field to exclude all 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Setting this custom field to "Yes" will exclude all the machines under that site
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/de2e1944-e0cc-4b5a-8b87-4f09cfafe4a9/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process to ensure that the screen saver
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ See [Protect-ScreenLock](/docs/9c89e293-7f28-4e7c-936f-e285b04e8df0)
 ./gpresult_computer.html
 ./gpresult_user.html
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

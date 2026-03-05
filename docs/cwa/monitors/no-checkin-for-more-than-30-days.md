@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to identify ma
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Global
 **Name:** △ Custom - Autofix - Offline Agent Remediation (RMM+)
 
 **Note:** The alert template should execute the [Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

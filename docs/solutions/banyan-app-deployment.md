@@ -8,6 +8,8 @@ description: 'Solution to detect endpoints missing the Banyan App and install it
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-15
 ---
 ## Purpose
 
@@ -77,3 +79,9 @@ Configure the solution as outlined below:
 
 - [https://github.com/banyansecurity/app-installer/tree/main](https://github.com/banyansecurity/app-installer/tree/main)
 - [https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/](https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/)
+
+## Changelog
+
+### 2025-10-10
+
+- Initial version of the document

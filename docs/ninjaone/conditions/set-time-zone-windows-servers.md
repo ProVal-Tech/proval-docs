@@ -8,6 +8,8 @@ description: 'Runs the "Manage Time Zone" automation on Windows Servers where th
 tags: ['timezone', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-30
 ---
 
 ## Summary
@@ -110,3 +112,9 @@ Click the `Save` button located at the top-right corner of the screen to save th
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
 ![MFA](../../../static/img/docs/a5979a59-7291-42e0-8278-d7c10aa9b557/mfa.webp)
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

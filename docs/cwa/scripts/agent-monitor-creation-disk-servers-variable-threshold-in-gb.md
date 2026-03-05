@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to build remote drive spa
 tags: ['disk', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ This script is run as a subscript from the Daily Maintenance of Automate's disk 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

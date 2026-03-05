@@ -8,6 +8,8 @@ description: 'Select the operating system for which BitLocker auditing should be
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select the operating system for which BitLocker auditing should be enabled. Use 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/61e7d229-4f47-431d-b948-23523a04cb7d/image1.webp)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

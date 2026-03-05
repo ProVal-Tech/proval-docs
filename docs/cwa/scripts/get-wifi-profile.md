@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Get-WifiProfile sc
 tags: ['networking', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ The script is an Automate implementation of the agnostic script [Get-WifiProfile
 
 - Script Log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

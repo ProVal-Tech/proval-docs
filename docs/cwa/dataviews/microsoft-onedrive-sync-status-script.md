@@ -8,6 +8,8 @@ description: 'This document provides an overview of the OneDrive Sync Status dat
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The data view displays the OneDrive Sync Status gathered by the [EPM - Data Coll
 | Sync Status            | OneDrive Sync Status                                 |
 | One_Drive_Sync_Status  | Detailed Sync Status fetched by the script           |
 | Script_Run_Time        | Data Collection Time                                  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

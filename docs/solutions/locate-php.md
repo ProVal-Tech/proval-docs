@@ -8,6 +8,8 @@ description: 'This document outlines the steps to identify computers with the PH
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -47,3 +49,9 @@ The goal of this solution is to identify the computers that have the PHP.exe fil
 
 5. Mark the `Find PHP.exe` EDF on the clients you would like to audit the information on.
    ![Mark EDF](../../static/img/docs/174c59f1-8d7f-44a0-b5de-d69145ab4a43/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

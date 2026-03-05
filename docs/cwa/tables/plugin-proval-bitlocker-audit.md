@@ -8,6 +8,8 @@ description: 'This document provides details on how to store and audit BitLocker
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ Stores information about BitLocker configuration on target machines.
 | KeyCertificateType        | VARCHAR   | The certificate type of the key protector (if applicable).                                                                    |
 | Thumbprint                | VARCHAR   | The thumbprint of the key protector (if applicable).                                                                         |
 | LastUpdated               | DATETIME  | The last time the volume was audited.                                                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

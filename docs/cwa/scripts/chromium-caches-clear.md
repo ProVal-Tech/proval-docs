@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Automate implementation 
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This is the Automate implementation of the agnostic script [SWM - Software Confi
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

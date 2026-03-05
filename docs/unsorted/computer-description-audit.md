@@ -29,3 +29,9 @@ This dataview will show the computer description message set on the agent.
 | Operating System     | Operating system of an agent.                                    |
 | Computer Description  | Computer description set information message.                     |
 | Script Execution Date | When the last script ran on the agent to fetch the computer description message read check. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

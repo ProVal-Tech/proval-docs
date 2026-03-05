@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a monitor set designed to exec
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-03
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Global
 ```
 △ Custom - Execute Script - Get Wifi Profile
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of a RAWSQL monitor designed to
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This RAWSQL monitor detects machines where the restore point is currently disabl
 ## Target
 
 Workstations
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

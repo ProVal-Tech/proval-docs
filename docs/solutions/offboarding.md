@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of an offboarding proces
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Purpose
@@ -53,3 +55,9 @@ The purpose of this solution is to facilitate the Offboarding process as per the
      - Offboard Client
      - Offboard Location
      - Offboard Computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

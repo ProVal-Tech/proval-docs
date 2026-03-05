@@ -8,6 +8,8 @@ description: 'This Script pulls any and all certificates in the personal certifi
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ The purpose of this NinjaOne solution is to pull any and all certificates in the
 - Create the below Compound Conditions using the implementation instruction provided in the documents.
     - [Compound Condition - SSL Audit - Servers](/docs/e38129a0-21bf-45fc-b6da-528312973aa0) 
     - [Compound Condition - SSL Audit - Workstations](/docs/d6082c07-16ba-4b32-8eee-c01384378ac7)
+
+## Changelog
+
+### 2026-02-16
+
+- Initial version of the document

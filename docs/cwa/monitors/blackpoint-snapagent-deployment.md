@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect online Windows
 tags: ['deployment', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Global
 - To enable the ticketing feature, it is mandatory to set the ticket category at the monitor level, as shown below:
 
 ![Ticket Category](../../../static/img/docs/8dad86ab-7d59-43ef-b148-f4ab7df0b8f0/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

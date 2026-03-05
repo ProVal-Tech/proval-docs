@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to retrieve disk drive informat
 tags: ['disk', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ This procedure runs Get-DiskInfo and creates a CSV file with commonly requested 
 
 GetFile: StackContent/DiskReport.csv  
 Endpoint: %ProgramData%/_automation/StackContent/DiskReport/DiskReport.csv
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

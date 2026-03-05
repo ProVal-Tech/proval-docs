@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the TPM configur
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document displays information about the TPM configuration on endpoints.
 | Auto Provisioning    | Displays whether auto-provisioning is enabled or not         |
 | Locked Out          | Displays whether TPM is locked or not                        |
 | TPM Version         | Displays the TPM version on the endpoint                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

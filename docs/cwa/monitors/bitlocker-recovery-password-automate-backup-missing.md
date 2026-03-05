@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a monitoring sc
 tags: ['database', 'encryption', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/docs/b025f2ba-7f7a-40f2-a742-908dc28d3962/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

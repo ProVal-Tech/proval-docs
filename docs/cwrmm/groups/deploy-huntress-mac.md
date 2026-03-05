@@ -8,6 +8,8 @@ description: 'This document outlines the creation of a dynamic group in ConnectW
 tags: ['connectwise', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Once the above criteria are met, click the Save button to save the group.
 ![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_3.webp)
 
 ![Image](../../../static/img/docs/a2195808-ed8d-4f56-9c17-d5ebaf0cf5b2/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

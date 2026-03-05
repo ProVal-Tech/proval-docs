@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a Simple Notification
 tags: ['email', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-28
 ---
 
 ## Summary
@@ -273,3 +275,9 @@ try {
 
 - Script Log
 - Popup Message on User's desktop
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

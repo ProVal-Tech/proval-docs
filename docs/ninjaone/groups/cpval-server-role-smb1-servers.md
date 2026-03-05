@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the SMB1 Server rol
 tags: ['windows', 'dynamic-groups']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/d57f8cfb-bb1e-4e9a-bf22-9bb24a35817f/image4.webp)
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

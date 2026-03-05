@@ -8,6 +8,8 @@ description: 'This task is used to run the script to update the Autopilot hash u
 tags: ['autopilot','custom-fields','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-27
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This task is used to run the script [Get - AutoPilot Hash](/docs/d91bf7d6-5279-4
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/check-autopilot-hash.toml)
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

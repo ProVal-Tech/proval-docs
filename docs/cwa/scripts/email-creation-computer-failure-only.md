@@ -8,6 +8,8 @@ description: 'This document describes a script designed to send email notificati
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ It's an Autofix script and is currently attached to the `△ Custom - Email RAWS
 ## Output
 
 Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The password to use to enable BitLocker on the target machine. Thi
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-03
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ The password to use to enable BitLocker on the target machine. This custom field
 
 ## Sample Screenshot
 
-![Sample ScreenShot](../../../static/img/docs/92779b41-3331-480c-a72d-402c0f328af3/image1.webp)  
+![Sample ScreenShot](../../../static/img/docs/92779b41-3331-480c-a72d-402c0f328af3/image1.webp)
+
+## Changelog
+
+### 2026-02-25
+
+- Initial version of the document

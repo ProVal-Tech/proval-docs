@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on running an internet spe
 tags: ['database', 'email', 'networking', 'performance', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 ## Sample Email
 
 ![Sample Email Image](../../../static/img/docs/54ed691f-e7be-4709-8967-72a4c9c782f6/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

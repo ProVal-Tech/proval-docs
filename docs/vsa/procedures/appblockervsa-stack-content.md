@@ -8,8 +8,16 @@ description: 'This document provides guidance on controlling the Kaseya App Bloc
 tags: ['kaseya', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
 
 Controls Kaseya App Blocker (updates Kaseya INI file)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -333,3 +333,9 @@ Write-Host "$ReversibleEncryptionEnabled, $InteractiveLogonMsg, '$FinalStringDup
 | Kaseya               | Attached to Doc - Move wherever is recommended  |
 ## Attachments
 [TestADPasswords.ps1](<../../static/attachments/itg/9492883/TestADPasswords.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

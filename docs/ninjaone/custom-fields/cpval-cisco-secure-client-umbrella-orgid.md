@@ -8,6 +8,8 @@ description: 'Provide the Umbrella OrgID associated with your organization. This
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Provide the Umbrella OrgID associated with your organization. This field is requ
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/2ec6d35c-b9fe-4791-9ba8-3783b0e912bd/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

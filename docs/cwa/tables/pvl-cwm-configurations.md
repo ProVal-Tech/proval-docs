@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the data store
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ Stores the data gathered by [CWM - Automate - Script - Get CWM Configurations - 
 | PurchaseDate       | datetime | Purchase Date of the Computer/Configuration returned from CW Manage.                         |
 | ExpirationDate     | datetime | Warranty Expiration Date of the Computer/Configuration returned from CW Manage.              |
 | ScriptRunTime      | datetime | Data Collection Time.                                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

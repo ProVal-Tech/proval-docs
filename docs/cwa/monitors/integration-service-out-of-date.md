@@ -8,6 +8,8 @@ description: 'This document provides details on a monitor that checks for the Hy
 tags: ['hyper-v', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ Insert the details of the monitor in the table below.
 
 Please follow the article below for the implementation:  
 [Import - Integration Service Out of Date](/docs/81a45e9e-918b-4848-bcf7-874ee4a6c8a0)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

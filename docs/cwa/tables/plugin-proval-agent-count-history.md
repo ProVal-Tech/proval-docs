@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and dependencies of the Agent C
 tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ Stores data from the monitor @Agent Counts Recorder about the number of servers,
 | servers   | INT  | The number of servers measured for the associated client.     |
 | computers | INT  | The number of non-servers measured for the associated client. |
 | over90    | INT  | The number of machines that have checked in within 90 days.  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

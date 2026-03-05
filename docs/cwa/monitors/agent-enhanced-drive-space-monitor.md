@@ -8,6 +8,8 @@ description: 'This document provides an overview of a drive space monitoring sys
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -155,3 +157,9 @@ In the above example:
 **Q:** Should we expect any possible problems or errors on systems running PowerShell versions earlier than 5.0?  
 **A:** For systems with PowerShell versions older than 5.0, you may encounter PowerShell errors similar to the one in this screenshot for the Soji failure notes.  
 ![image](../../../static/img/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f/image.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring setup designed to identify com
 tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Insert the details of the monitor in the table below.
 ## Target
 
 - Group of Windows machines having the 'DUO Security Authentication Proxy' application installed.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

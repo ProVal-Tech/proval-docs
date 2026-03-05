@@ -8,6 +8,8 @@ description: 'This document details a script designed to monitor the free space 
 tags: ['autotask']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ Referred to: [CWM - Automate - Script - Volume Free Space - Monitor Creation](/d
 
 - Script log
 - Remote Monitor
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This monitor will check if the Huntress Agent is orphaned, and the
 tags: ['antivirus','huntress','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -104,3 +106,9 @@ if ($Path -notmatch 'HuntressAgent.log') {
 ## Completed Monitor
 
 ![CompleteMonitor](../../../static/img/docs/7206d776-7692-434e-b77a-42e12cb7dafb/image-3.webp)
+
+## Changelog
+
+### 2025-04-15
+
+- Initial version of the document

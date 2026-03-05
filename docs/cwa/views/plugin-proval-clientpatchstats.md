@@ -8,6 +8,8 @@ description: 'This view aggregates patch data to the Client level. It takes the 
 tags: ['compliance', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ This view aggregates patch data to the Client level. It takes the detailed infor
 | **120PlusDaysCount** | Integer | Count of devices where the last CU is older than 120 days. |
 | **UnknownCompliantCount** | Integer | Count of supported devices where the CU install date is missing or unknown. |
 | **CuCompliance** | Decimal | The final weighted "Freshness" score (0-100%) calculated using the logic described in the report summary. |
+
+## Changelog
+
+### 2026-01-02
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Set-OfficeUpdateSchedule command to set the 
 tags: ['office365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -36,3 +38,9 @@ Sets the update schedule to 'Current Channel (Preview)'
 ## Output
 - `.\Set-OfficeUpdateSchedule-log.txt`
 - `.\Set-OfficeUpdateSchedule-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This monitor helps to deploy the AutoElevate to the Windows and MA
 tags: ['installation', 'deployment', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-19
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Note: Ensure to set the EDFs at the client-level to allow it to pick the agents
 **A.** Yes, you just need to set the ticket category at the monitor level to receive the installation failure tickets.
 
   ![Ticket](../../../static/img/docs/c034b8a8-9024-47b0-92f7-3b1df4887adc/image7.webp)
+
+## Changelog
+
+### 2026-01-15
+
+- Initial version of the document

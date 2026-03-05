@@ -8,6 +8,8 @@ description: 'This document outlines an email notification script designed for u
 tags: ['email', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

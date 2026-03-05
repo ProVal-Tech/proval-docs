@@ -8,6 +8,8 @@ description: 'This document outlines the execution of the query session command 
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ Executes the `query session` command and stores the result in a custom table.
 
 - Dataview
 - Custom Table
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

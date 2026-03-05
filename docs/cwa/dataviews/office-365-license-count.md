@@ -8,6 +8,8 @@ description: 'The dataview displays the information of Office 365 license fetche
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The dataview displays the information of Office 365 license fetched by the [Offi
 | Available          | Available licenses              |
 | AppliesTo          | License applied to              |
 | DataCollectionTime | Data Collection Time            |
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

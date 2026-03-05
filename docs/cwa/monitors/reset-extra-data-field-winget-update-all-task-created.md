@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on launching a RAWSQL 
 tags: ['sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 #### Launch RAWSQL Monitor
@@ -103,3 +105,9 @@ unlisted: false
 
 4. Reload the system cache to ensure all changes are updated.  
    ![Image](../../../static/img/docs/f5286dd2-1161-4580-8060-d113b3ab28b7/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

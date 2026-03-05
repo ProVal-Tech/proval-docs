@@ -8,6 +8,8 @@ description: 'Automatically list all PSA configurations for offboarded clients a
 tags: ['psa', 'automation', 'offboarding']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 # Summary
@@ -140,3 +142,9 @@ Common error codes:
 - `ConfigUpdateFailed`: Unable to update configuration status
 - `PermissionDenied`: Insufficient PSA API permissions
 - `PSAConnectionError`: Unable to reach PSA API
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This group contains all client machines (Windows and Mac) where th
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-24
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This group contains all client machines (Windows and Mac) where the organization
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/deploy-cisco-umbrella-root-ca-certificate.toml)
+
+## Changelog
+
+### 2025-11-24
+
+- Initial version of the document

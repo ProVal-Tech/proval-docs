@@ -8,6 +8,8 @@ description: 'Runs the Cleanmgr included in Windows. It will set all optional Cl
 tags:  ['cleanup','disk-cleanup','disk',]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Overview
@@ -27,4 +29,10 @@ Search and select `Run Disk Cleanup - Windows`
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

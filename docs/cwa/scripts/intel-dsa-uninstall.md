@@ -8,6 +8,8 @@ description: 'Silently uninstalls Intel® Driver & Support Assistant (DSA) on el
 tags: ['drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-27
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ https://silentinstallhq.com/intel-driver-support-assistant-silent-install-how-to
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2026-02-24
+
+- Initial version of the document

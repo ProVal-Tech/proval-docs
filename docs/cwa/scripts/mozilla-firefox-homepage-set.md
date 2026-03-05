@@ -8,6 +8,8 @@ description: 'This document describes an Automate implementation of the SWM - So
 tags: ['firefox', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This document provides an Automate implementation of the agnostic script [Set-Fi
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

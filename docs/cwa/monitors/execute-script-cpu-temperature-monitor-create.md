@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of setting up a CPU Tem
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Global
 
 ![Image 1](../../../static/img/docs/d1cd1622-27ec-4bbd-9297-1b4b7b2d65b2/image_1.webp)  
 ![Image 2](../../../static/img/docs/d1cd1622-27ec-4bbd-9297-1b4b7b2d65b2/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

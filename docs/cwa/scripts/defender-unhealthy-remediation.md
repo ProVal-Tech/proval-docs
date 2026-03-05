@@ -8,6 +8,8 @@ description: 'This script enables the Defender, if failed then it attempts to re
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script enables the Defender, if failed then it attempts to reset the Defend
 
 - Script log
 - Local file on the computer at path "C:\ProgramData\_Automation\Script\DefenderRemediation".
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

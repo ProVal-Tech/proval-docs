@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Schema Master r
 tags: ['windows', 'dynamic-groups', 'active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/c5dffd43-67a3-47af-83ef-68e24c4e6c07/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to gather and store the l
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ This script is designed to gather the latest version of applications supported b
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

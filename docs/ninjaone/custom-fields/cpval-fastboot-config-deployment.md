@@ -8,6 +8,8 @@ description: 'This Custom Fields Controls the Configuration of Fastboot on the m
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This Custom Fields Controls the Configuration of Fastboot on the machine based o
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/9850d788-d044-4faa-b709-953b6e01a012/image1.webp)
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

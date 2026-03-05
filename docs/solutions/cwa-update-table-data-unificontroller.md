@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to collect and
 tags: ['database', 'installation', 'networking', 'report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ To implement this solution, follow these steps. Is there any manual configuratio
 ## FAQ
 
 *(This section can be filled with frequently asked questions related to the implementation or usage of the solution.)*
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

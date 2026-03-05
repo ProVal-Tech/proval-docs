@@ -8,6 +8,8 @@ description: 'This group includes the endpoint where the MSRT scanning required 
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ Click Save
 Group Created
 
 ![Group Created](<../../../static/img/docs/b497ecf7-c8e2-4b6a-b779-94adfd831c98/image-3_1.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

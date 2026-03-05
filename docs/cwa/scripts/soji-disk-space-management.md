@@ -8,6 +8,8 @@ description: 'This document describes the Soji execution script designed for Con
 tags: ['installation', 'logging', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-19
 ---
 
 ## Summary
@@ -69,3 +71,9 @@ Please refer to the Soji documentation for argument options.
 - Script log
 - Desired file output to the Soji directory, e.g., JSON, etc.
 - On LabTech server: `%LTShare%/Uploads/%ClientName%/%ComputerName% - %ComputerId%/SojiLogs.zip`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script that deletes a user profile and r
 tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ See [Remove-UserProfile](/docs/af494143-56df-448c-8f30-44cf93a441ac) for process
 
 - Script log
 - Local file on computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

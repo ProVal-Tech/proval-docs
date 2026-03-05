@@ -8,6 +8,8 @@ description: 'This solution contains the Windows App installation and deployment
 tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ This solution provides guidance for deploying the Windows App.
 
 **Q.** What is the limitation of this solution when installing the Windows application?  
 **A.** This solution can only install the Windows application if an active user session is detected on the device. This is because the installation relies on user-context execution rather than system-context.
+
+## Changelog
+
+### 2025-12-17
+
+- Initial version of the document

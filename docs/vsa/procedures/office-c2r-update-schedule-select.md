@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to set the Microsof
 tags: ['office365', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This document outlines how to set the Microsoft Update Channel for a Click2Run O
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

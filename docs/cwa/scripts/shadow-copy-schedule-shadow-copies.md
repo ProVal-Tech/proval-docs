@@ -8,6 +8,8 @@ description: 'This document details a PowerShell script that enables shadow copi
 tags: ['backup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Once the global parameters are configured to the desired values, the script will
 ## Output
 
 Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: ''
 tags: [patching, email, database]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary  
@@ -83,3 +85,9 @@ It is a client script and suggested to run once per day.
 ![SampleLastWeekTicket](<../../../static/img/docs/595e85de-299d-4242-a569-f5367be6b1c9/SampleLastWeekTicket.webp>)
 
 *The numbers shown in the sample tickets are for demonstration purposes only and will be different and more practical in the actual tickets.*
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

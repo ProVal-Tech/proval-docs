@@ -8,6 +8,8 @@ description: 'This document outlines a script that automates the process of gath
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Proval IT Glue Documentation
 ## Output
 
 The output can be checked from the Approval section of the patch manager.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

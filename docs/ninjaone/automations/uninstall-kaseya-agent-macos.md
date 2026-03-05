@@ -8,6 +8,8 @@ description: 'This script performs a complete removal of the Kaseya VSA agent on
 tags: ['application', 'kaseya', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-30
 ---
 
 ## Overview
@@ -27,3 +29,9 @@ This NinjaOne script searches the Kaseya installation directory for KASetup, dyn
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2026-01-29
+
+- Initial version of the document

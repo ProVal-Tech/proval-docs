@@ -8,6 +8,8 @@ description: 'The script restarts Windows machines according to the configuratio
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-11
 ---
 
 ## Summary
@@ -157,3 +159,9 @@ If a specific computer in that location has only Monday enabled, then only that 
 
 **Q: Why does the prompt say “shutdown” instead of “restart”?**  
 **A:** The Windows shutdown utility and UI use the same wording/flow for both shutdown and restart operations, so dialogs may show “shutdown” even when the operation is a restart. This is by design—the shutdown command governs both actions and the prompt text is not always different for reboot.
+
+## Changelog
+
+### 2025-07-17
+
+- Initial version of the document

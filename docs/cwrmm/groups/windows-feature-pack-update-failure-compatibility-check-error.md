@@ -8,6 +8,8 @@ description: 'This document outlines the process for categorizing Windows 11 com
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ Click the `Save` button to save the group.
 Click the `Save` button to save the group.
 
 ![Image 7](../../../static/img/docs/2eff2df6-a435-433a-8664-79cdda6fdedc/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

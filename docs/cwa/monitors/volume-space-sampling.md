@@ -8,6 +8,8 @@ description: 'This document details the Predictive Volume Exhaustion Monitor Cre
 tags: ['alerting', 'disk', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ```
 
 _The parameter values highlighted in the provided example are regulated by the system properties and the Extra Data Fields (EDFs)._
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

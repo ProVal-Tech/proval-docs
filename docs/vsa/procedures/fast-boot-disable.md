@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on disabling fast boot in 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The following command is executed:
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

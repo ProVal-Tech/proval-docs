@@ -8,6 +8,8 @@ description: 'This document provides a template for clients to set up prompter m
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ These variables are used in the prompter script. They should be set in any scrip
 | selectedButton     | Button selected by the user.                                                                             |
 | dateTimeSelection   | Date and time selected by the user.                                                                      |
 | userResponse       | Input/feedback provided by the user in the user input field.                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

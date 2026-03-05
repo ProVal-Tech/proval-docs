@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of a temporary ta
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This document describes a temporary table created by the [CWM - Automate - Scrip
 | Computerid  | int(8)  | Unique identifier for the computer |
 | Clientid    | int(8)  | Unique identifier for the client   |
 | Timestamp   | datetime | The time when the script was run   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that config
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ Please have the following file hash whitelisted in your security environment to 
 ## Output
 - Script log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

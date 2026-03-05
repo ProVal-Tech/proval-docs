@@ -8,6 +8,8 @@ description: 'Represents the service endpoint for your application. It is used t
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Represents the service endpoint for your application. It is used to specify the 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/65ed6aaa-5ab5-4a82-8f15-ef27a609ce68/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

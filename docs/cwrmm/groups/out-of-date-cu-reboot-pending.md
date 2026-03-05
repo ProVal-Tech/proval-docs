@@ -8,6 +8,8 @@ description: 'This document details the steps to create a dynamic group in Conne
 tags: ['reboot', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -74,3 +76,9 @@ This document groups computers where a Cumulative Update was installed by the Ou
 
 ![Completed Group 1](../../../static/img/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d/image_20.webp)  
 ![Completed Group 2](../../../static/img/docs/87d623c4-d8e2-4c25-b838-f9c0dee5043d/image_21.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

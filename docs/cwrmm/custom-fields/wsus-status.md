@@ -8,6 +8,8 @@ description: ''
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-04
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ The `Add new custom field` dialog box will occur
 ## Completed Custom Field
 
 ![Complete](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/wsuscompleteimage.webp)
+
+## Changelog
+
+### 2025-08-01
+
+- Initial version of the document

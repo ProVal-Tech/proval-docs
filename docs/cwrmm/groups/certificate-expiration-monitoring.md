@@ -8,6 +8,8 @@ description: 'Group of machines with certificate expiration monitoring enabled.'
 tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/0cf27d9a-8aeb-4555-92a2-45e993e1bd87/image3.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

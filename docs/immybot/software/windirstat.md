@@ -8,9 +8,17 @@ description: 'An ImmyBot software installer for WinDirStat'
 tags: [application]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-15
 ---
 
 ## Description
 WinDirStat is a free, open-source disk usage analyzer for Microsoft Windows that visually shows you what files and folders are taking up the most space on your hard drive
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/windirstart.toml)
+
+## Changelog
+
+### 2025-09-15
+
+- Initial version of the document

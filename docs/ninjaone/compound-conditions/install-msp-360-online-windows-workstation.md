@@ -8,6 +8,8 @@ description: 'This compound condition is designed to execute the "Install MSP360
 tags: ['backup', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-25
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This compound condition is designed to execute the [Install MSP360 Online Backup
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/install-msp-360-online-windows-workstation.toml)
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

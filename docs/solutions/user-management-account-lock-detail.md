@@ -8,6 +8,8 @@ description: 'This document outlines the user lockout account audit process, det
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ Apply the remote monitor to the DC group.
 
 For all users' account lock report (local users):  
 Schedule on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

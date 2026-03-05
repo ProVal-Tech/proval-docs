@@ -43,3 +43,9 @@ unlisted: true
 
 6. Return to the AD Domains plugin and reselect the correct credentials.
    - Refresh the plugin, and it should show success after a few minutes.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

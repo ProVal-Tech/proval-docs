@@ -31,4 +31,10 @@ Updates PowerShell Desktop to the latest version.
 ```powershell  
 .\Update-PowershellV2.ps1  
 ```  
-Updates PowerShell on the target machine to PowerShell V5.  
+Updates PowerShell on the target machine to PowerShell V5.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

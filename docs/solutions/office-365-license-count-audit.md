@@ -8,6 +8,8 @@ description: 'This solution automates the daily auditing of Microsoft 365 licens
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-27
 ---
 
 ## Purpose
@@ -178,3 +180,9 @@ Create the [Compound Condition: Office 365 License Count Audit](/docs/b2abd519-e
 #### 20. Can I deploy this audit to multiple tenants at once?
 
 > Yes. You can import the custom fields and automation script globally. Then, simply populate the unique Azure AD credentials and check the enable flag on an organization-by-organization basis. The compound condition will automatically pick up any enabled organizations and run the audit.
+
+## Changelog
+
+### 2026-02-26
+
+- Initial version of the document

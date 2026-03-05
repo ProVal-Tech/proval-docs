@@ -8,6 +8,8 @@ description: 'Automatically monitor Datto Cloud Continuity status and health. Tr
 tags: ['datto', 'disaster-recovery', 'monitoring', 'automation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-04
 ---
 
 # Summary
@@ -101,3 +103,9 @@ Before using this workflow, ensure the following requirements are met:
   }
 }
 ```
+
+## Changelog
+
+### 2026-03-04
+
+- Initial version of the document

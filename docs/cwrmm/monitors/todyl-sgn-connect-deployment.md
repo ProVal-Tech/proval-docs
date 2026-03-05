@@ -8,6 +8,8 @@ description: 'Run the Automation to deploy Todyl SGN Connect on windows machines
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -71,3 +73,9 @@ Run the [Automation](/docs/c23cdc78-f90e-4aba-b77e-4dff9d612940) to deploy Todyl
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/373305fd-1b01-488e-9105-ada540040fc0/image6.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

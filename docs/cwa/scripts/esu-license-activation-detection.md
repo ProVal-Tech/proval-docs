@@ -8,6 +8,8 @@ description: 'This script performs checks for ESU license activation detection f
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-25
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script performs checks for ESU license activation detection for Windows 10 
 - Script log
 - EDF
 - Dataview
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

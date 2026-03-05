@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on using a script to insta
 tags: ['installation', 'software', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ The name of the file without the extension should be set to the user parameter a
 
 **Example:**  
 ![](../../../static/img/docs/adc83d4e-f34e-4b3c-b8c9-3975a6efb285/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

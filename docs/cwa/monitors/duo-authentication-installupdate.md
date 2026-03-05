@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect online Windows
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When an argument is missing:**  
 Arguments required to install DUO Authentication for Windows Logon are not set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a PowerShell script 
 tags: ['cleanup', 'iis', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -106,3 +108,9 @@ Script Logs
 ## Attachments
 [Procedure_Purge_IIS_Logs_Older_than_3_Days.xml](<../../../static/attachments/itg/13341572/Procedure_Purge_IIS_Logs_Older_than_3_Days.xml>)
 [Remove-OlderFiles.ps1](<../../../static/attachments/itg/13341572/Remove-OlderFiles.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

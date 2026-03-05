@@ -8,6 +8,8 @@ description: 'This document provides details about a script that performs a vuln
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script performs a vulnerability scan on the VSA server and logs the output 
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

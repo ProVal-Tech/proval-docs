@@ -51,3 +51,9 @@ This command returns a list of all SQL replication instances that are not synchr
 | Datto RMM                         |                                                 |
 ## Attachments
 [Install-AnyConnect.ps1](<../../static/attachments/itg/10361486/Install-AnyConnect.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

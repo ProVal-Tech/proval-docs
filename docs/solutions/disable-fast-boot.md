@@ -8,6 +8,8 @@ description: 'This document outlines the solution to disable the Fast Boot featu
 tags: ['performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -49,4 +51,10 @@ The purpose of this document is to outline the solution to disable the Fast Boot
    - [Disable FastBoot](/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a)  
 
 3. Create the Task and deploy it against the device group:  
-   - [Disable FastBoot](/docs/f52aada4-6207-4766-9b7c-24d022812e3c)  
+   - [Disable FastBoot](/docs/f52aada4-6207-4766-9b7c-24d022812e3c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script automates the deployment of the Zorus agent across Win
 tags:  ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Overview
@@ -32,4 +34,10 @@ Search and select `Zorus Deployment`
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

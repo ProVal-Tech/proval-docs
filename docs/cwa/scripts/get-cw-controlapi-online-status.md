@@ -8,6 +8,8 @@ description: 'The EPM - Data Collection - Script - Get - CW-ControlAPI - Online 
 tags: ['connectwise', 'database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-06
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Custom Table
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

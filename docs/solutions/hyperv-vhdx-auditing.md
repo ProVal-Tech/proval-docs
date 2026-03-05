@@ -8,6 +8,8 @@ description: 'Retrieves detailed Hyper-V VHD/VHDX information and stores it as a
 tags: ['hyper-v', 'auditing', 'disk', 'diskspace']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-23
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ Collects detailed information about Hyper-V VHD and VHDX files and saves the res
 
 **Q: How do I interpret the table?**  
 **A:** The table includes disk path, allocation type (Dynamic/Fixed), current file size, fragmentation percentage, and a `DataCollectionTime` column showing when the data was collected.
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

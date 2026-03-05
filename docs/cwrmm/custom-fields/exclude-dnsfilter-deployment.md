@@ -8,6 +8,8 @@ description: 'Custom Fields to exclude Site/Endpoint from DNSFilter Deployment.'
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Select to exclude Site/Endpoint from DNSFilter Deployment.
 **Endpoint Custom Field:**
 
 ![Image2](../../../static/img/docs/7c9e982b-6081-4a03-a8dd-b44d079118ca/image2.webp)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

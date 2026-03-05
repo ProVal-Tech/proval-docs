@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on implementing disk 
 tags: ['disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -25,3 +27,9 @@ unlisted: false
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

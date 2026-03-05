@@ -8,6 +8,8 @@ description: 'This document provides a summary of Extradatafields that have eith
 tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The purpose of this document is to represent the Extradatafields that have eithe
 | IsEditable                | Represents whether the EDF is editable or not                       |
 | IsRestricted              | Represents whether the EDF is restricted or not                     |
 | (Masked/Password)        | Represents whether the EDF is masked or has a password              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

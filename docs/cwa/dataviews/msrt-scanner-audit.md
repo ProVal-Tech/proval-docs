@@ -8,6 +8,8 @@ description: 'This document provides information about the MSRT scanner status d
 tags: ['report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This dataview stores the status of the MSRT scanner result from the script [Mali
 | Last Contact           | The last contact of the agent with the RMM          |
 | MSRT Scanner Result     | MSRT tool scanner or tool disabling result conclusion recorded         |
 | MSRT Scanner Date      | MSRT's last scanner date                             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

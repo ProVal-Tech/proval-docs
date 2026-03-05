@@ -8,6 +8,8 @@ description: 'This document contains the automation for the Intel DSA deployment
 tags: ['drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This document contains the automation for the Intel DSA deployment and uninstall
 - Import the `Alert Template - △ Custom - Execute Script - Intel DSA Install`
 - Import the `Alert Template - △ Custom - Execute Script - Intel DSA Uninstall`
 - For the implementation please refer to the Monitor contents.
+
+## Changelog
+
+### 2026-02-25
+
+- Initial version of the document

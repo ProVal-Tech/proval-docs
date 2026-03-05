@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing the Qui
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-27
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Deploy QuickPass Agent`
+
+## Changelog
+
+### 2025-10-27
+
+- Initial version of the document

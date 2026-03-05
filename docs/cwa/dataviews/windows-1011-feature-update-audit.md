@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive dataview of Windows 10 and 
 tags: ['performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This dataview provides a complete listing of Windows 10/11 systems along with th
 | ------ | ---------- | ----- | ------ |
 | EOL    | Equals     | Yes   | Red    |
 | EOL    | Equals     | No    | Green  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Get-WindowsUpdateReport command to get a lis
 tags: ['report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -108,3 +110,9 @@ Running this script on Windows 7 and earlier versions is at best unstable and at
 ```
 .\Get-Windows10PatchInfo-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

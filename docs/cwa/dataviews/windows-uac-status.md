@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that help
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This dataview helps you audit the UAC status on machines with the help of a scri
 | Machine Name           | Displays the name of the machine            |
 | Location Name          | Displays the name of the location           |
 | User Account Control    | Displays the status of UAC on machines      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

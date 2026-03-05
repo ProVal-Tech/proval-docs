@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a dynamic group in Conn
 tags: ['connectwise', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ The group will detect the computers where the latest cumulative update installat
 ![Image](../../../static/img/docs/12423bcf-17d9-417e-ad6e-b862dd04f184/image_15.webp)
 
 ![Image](../../../static/img/docs/12423bcf-17d9-417e-ad6e-b862dd04f184/image_16.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Enabling will enable the option to hibernate as it is a requiremen
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Overview
@@ -45,3 +47,9 @@ This script will enable or disable Windows Fast Boot, also known as Hiberboot or
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

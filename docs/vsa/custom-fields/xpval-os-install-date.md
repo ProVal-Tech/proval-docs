@@ -8,6 +8,8 @@ description: 'This document explains how the OS Install Date field is updated by
 tags: ['software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The Agent Procedure is required to populate this field: [OS Install Date Procedu
 | Field Name               | Type of Field (Machine or Organization) | Description                          |
 |--------------------------|-----------------------------------------|--------------------------------------|
 | xPVAL OS Install Date    | Machine                                 | Displays the initial install date of the OS |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

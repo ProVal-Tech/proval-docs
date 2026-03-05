@@ -8,6 +8,8 @@ description: 'Automatically remove client records from IT Glue with our efficien
 tags: ['itglue', 'automation', 'documentation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 # Summary
@@ -127,3 +129,9 @@ Common error codes:
 - `PermissionDenied`: Insufficient API permissions
 - `InvalidIdentifier`: Missing or invalid organization identifier
 - `ITGlueConnectionError`: Unable to reach IT Glue API
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

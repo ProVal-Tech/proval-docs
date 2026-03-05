@@ -8,6 +8,8 @@ description: 'Enables IPv6 protocol binding on all network adapters on the local
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -29,4 +31,10 @@ Enables IPv6 protocol binding on all network adapters on the local Windows machi
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

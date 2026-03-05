@@ -8,6 +8,8 @@ description: 'This device custom field stores the Test AD Health and Repair scri
 tags: ['active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ It is kept in the 'Active Directory' Tab.
 ## Sample Screenshot
 
 ![customfield](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/customfield.webp)
+
+## Changelog
+
+### 2025-12-08
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Choose the operating system to activate the auto deployment of the
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -108,3 +110,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/67554954-e8da-48af-bda9-13a6a37c8295/image5.webp)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

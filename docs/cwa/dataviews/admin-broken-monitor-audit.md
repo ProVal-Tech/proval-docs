@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview used for auditi
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ The dataview helps to audit the internal monitors where their group mapping is b
 | Group Applied | Displays the group name on which the monitor is applied. |
 | Notes        | Displays the notes mentioned about the group.      |
 | AlertAction  | Displays the ID of the applied alert template.     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

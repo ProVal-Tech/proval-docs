@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script designed to execute
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ The script will first require a user parameter. If the user parameter is not fil
 Script log messages.
 
 Dell Command Configure may also output information into its own log files if the command issued includes output to the log file.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

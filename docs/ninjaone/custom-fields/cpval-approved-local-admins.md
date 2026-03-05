@@ -8,6 +8,8 @@ description: 'A comma-separated list of approved local admins for the client. Se
 tags: ['cleanup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Summary
@@ -113,3 +115,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Completed Custom Field
 
 ![Image6](../../../static/img/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4/image6.webp)
+
+## Changelog
+
+### 2025-06-05
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This monitor detects both Mac and Windows agents that are missing 
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-27
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Both Windows and Mac Agents
 ## Alert Template
 
 - `△ Custom - Execute Script - Threatlocker Agent Deployment`
+
+## Changelog
+
+### 2025-06-27
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process to verify if the Office 365 Upd
 tags: ['office365', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines the process to verify if the Office 365 Update Channel is
 | Detection String                                                        | Comparator | Result                                                                                                   | Applicable OS |
 |-------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------|---------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configuration:CDNBaseUrl-%}` | Contains   | [http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114](http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114) | Windows       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

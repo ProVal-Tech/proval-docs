@@ -22,3 +22,9 @@ All searches need to be custom and have a unique name to ensure clarity and orga
 
 </div>
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

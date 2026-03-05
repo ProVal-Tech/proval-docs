@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for installing Egnyte on an e
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This solution installs Egnyte on an endpoint. It will update a custom field if a
 ## Implementation
 
 Ensure the custom field is added prior to running the agent procedure. Additionally, ensure the installer is added to managed files.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

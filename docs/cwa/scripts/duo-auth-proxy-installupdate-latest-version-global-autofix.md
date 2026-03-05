@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['software', 'ticketing', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ The script to update DUO Security Authentication Proxy has failed - please revie
 Script Logs -
 %PowerShellResult%
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

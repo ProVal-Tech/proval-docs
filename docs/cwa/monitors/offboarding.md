@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of the Offboarding Monito
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ All Operating Systems
 ## Alert Template
 
 - **`△ Custom - Execute Script - Offboarding Wrapper`**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

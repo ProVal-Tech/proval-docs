@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['disk-encryption', 'security', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script will run CHKDSK for all internal drives on a machine. It first check
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

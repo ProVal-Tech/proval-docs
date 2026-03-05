@@ -8,6 +8,8 @@ description: 'Select the Operating System for auto installing Todyl SGN Connect 
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select the Operating System for auto installing Todyl SGN Connect agent. However
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/e21d58b1-9fd5-4888-9e1f-788420313237/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

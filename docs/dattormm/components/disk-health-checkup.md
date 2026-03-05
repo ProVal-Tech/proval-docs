@@ -8,6 +8,8 @@ description: 'Monitors Windows Event Logs for disk and NTFS errors (Event IDs: 5
 tags: ['disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview  
@@ -62,3 +64,9 @@ To implement the `component` over a policy, follow these steps:
 
 ## Attachments  
 [Disk Health Checkup](../../../static/attachments/Disk%20Health%20Checkup.cpt)
+
+## Changelog
+
+### 2025-09-10
+
+- Initial version of the document

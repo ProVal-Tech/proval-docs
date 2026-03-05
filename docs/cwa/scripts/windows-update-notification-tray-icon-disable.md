@@ -8,6 +8,8 @@ description: 'This document outlines a script that disables the Windows Update N
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This script will disable the Windows Update Notification (Tray Icon) by setting 
 - The script first verifies if the Windows Update Notification (Tray Icon) setting is already disabled. If it is, the script will exit.
 - If the setting is not disabled, the script will run a PowerShell command to disable it.
 - After that, the script will call a subscript to flag the machine as reboot pending.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details a script designed to export various ConnectW
 tags: ['backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-24
 ---
 
 ## Summary
@@ -81,3 +83,9 @@ Creates a series of script states to keep track of each customization. There wil
 
 - Script Log
 - Files on Local Computer
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

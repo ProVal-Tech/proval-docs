@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide for implementing a Win
 tags: ['setup', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Implementation
@@ -56,3 +58,9 @@ unlisted: false
 4. Reopen the group where the monitor is created (It should be the `Cluster Detected` group).
    - Validate that the monitor is limited to the search 'Windows 10/11 Machines'.
    - Apply the alert template: `△ CUSTOM - Execute Script - Windows Cluster Shared Volume`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

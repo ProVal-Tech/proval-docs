@@ -8,6 +8,8 @@ description: 'Installs, updates, or executes Dell Command | Update (DCU) on Dell
 tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-21
 ---
 
 ## Overview
@@ -121,3 +123,9 @@ Last command exit code: 0
 
 - [Dell CLI Command Reference](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us)
 - [DCU Exit Code Documentation](https://www.dell.com/support/manuals/en-aw/command-update/dcu_rg/command-line-interface-error-codes?guid=guid-fbb96b06-4603-423a-baec-cbf5963d8948&lang=en-us)
+
+## Changelog
+
+### 2025-07-21
+
+- Initial version of the document

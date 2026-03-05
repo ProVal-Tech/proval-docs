@@ -8,6 +8,8 @@ description: 'This solution is designed to automate the upgrade from Windows 10 
 tags: ['database', 'report', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Purpose
@@ -105,3 +107,9 @@ The following scripts have been incorporated into the solution:
 | **Windows 11 Installation Attempts** | Text | Computer | Default | A non-editable EDF, updated by the installer script to track failure counts. |
 | **ESU Detection** | Text | Computer | Default | Stores ESU status (e.g., 'ESU Activated'). Used to exclude paying ESU machines. |
 | **Windows 11 - Machines per Night** | Text | Client | Default | Defines the daily batch limit for the client. If blank, defaults to 5. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

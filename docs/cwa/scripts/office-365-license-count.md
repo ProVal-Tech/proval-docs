@@ -8,6 +8,8 @@ description: 'The script is designed to fetch license counts from the Office 365
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ Please note that this script is designed for professional use and requires a cer
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

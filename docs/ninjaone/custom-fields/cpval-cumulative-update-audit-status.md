@@ -8,6 +8,8 @@ description: 'Shows the most recently installed Windows Cumulative Update. Usefu
 tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Shows the most recently installed Windows Cumulative Update. Useful for verifyin
 ## Custom Field Creation
 
 [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-cumulative-update-audit-status.toml)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

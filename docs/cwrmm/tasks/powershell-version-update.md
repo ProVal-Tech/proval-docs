@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on updating PowerShell to 
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -165,3 +167,9 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

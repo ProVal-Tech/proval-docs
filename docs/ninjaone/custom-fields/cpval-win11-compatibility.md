@@ -8,6 +8,8 @@ description: 'This stores the Windows 11 Compatibility result in it (Capable, No
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-24
 ---
 
 ## Summary
@@ -68,3 +70,9 @@ Fill in the following information in the `Details` section and click the `Next` 
 Once created it will look like this:
 
 ![CSField](../../../static/img/docs/cpval-win11-compatibility/image-4.png)
+
+## Changelog
+
+### 2025-05-29
+
+- Initial version of the document

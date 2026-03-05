@@ -8,6 +8,8 @@ description: 'This document outlines the SQL query view designed to store and ex
 tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -47,3 +49,9 @@ The view is designed to store and execute the SQL query utilized by the [CWM - A
 | Total Servers          | Total servers targeted in the schedule                                   |
 | Total Workstations      | Total workstations targeted in the schedule                              |
 | Percent Targeted       | Percentage of the machines targeted in the schedule                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

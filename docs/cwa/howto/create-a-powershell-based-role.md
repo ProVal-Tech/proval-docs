@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a PowerShell-based role
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -76,4 +78,10 @@ This document outlines the process of creating roles in ConnectWise Automate usi
 
     ![image](/img/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990/image6.webp)
 
-9. The role will take two to three hours to be detected on the computers. 
+9. The role will take two to three hours to be detected on the computers.
+
+## Changelog
+
+### 2025-04-03
+
+- Initial version of the document

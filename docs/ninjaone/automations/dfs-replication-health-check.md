@@ -8,6 +8,8 @@ description: 'Checks for recent DFS Replication errors or warnings within the la
 tags: ['auditing','eventlogs','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Overview
@@ -38,3 +40,9 @@ Set the required arguments and click the `Run` button to run the script.
 ## Automation Setup/Import
 
 [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/dfs-replication-health-check.ps1)
+
+## Changelog
+
+### 2025-10-07
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the Automate Database Maintenance Solution,
 tags: ['cleanup', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This solution provides an easy way to maintain and log any desired database main
 3. Schedule the client script [CWM - Automate - Script - Automate Database Maintenance Solution](/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968) to run weekly, every Monday at 5:30 AM.
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

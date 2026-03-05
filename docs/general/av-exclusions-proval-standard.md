@@ -8,6 +8,8 @@ description: 'This document provides a list of recommended exclusions for variou
 tags: [ 'antivirus', 'security' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 - Exclude these folders and paths from AV restrictions to allow PowerShell to execute properly:
@@ -20,3 +22,9 @@ unlisted: false
     - Scheduled Tasks
 - https://file.provaltech.com/ should be accessible.
 - Whitelist [our IP addresses](/docs/794c9b95-df88-4b63-8605-b7c9b138532b).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

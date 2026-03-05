@@ -8,6 +8,8 @@ description: 'Downloads and schedules a script to remove the NinjaOne Agent and 
 tags: ['uninstallation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Overview
@@ -34,3 +36,9 @@ Schedules a secondary task to clean up the scheduled task after an hour.
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-08-21
+
+- Initial version of the document

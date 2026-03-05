@@ -8,6 +8,8 @@ description: 'This script performs the checks for the ESU license activation det
 tags: ['auditing','licensing','patching','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -237,4 +239,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Completed Scheduled Task
 
-![Schedule Task](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image8.webp) 
+![Schedule Task](../../../static/img/docs/fad37673-34ab-46e9-8797-b87058f79faa/image8.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

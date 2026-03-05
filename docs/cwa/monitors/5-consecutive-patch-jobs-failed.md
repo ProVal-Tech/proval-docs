@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect machines that 
 tags: ['database', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Most Recent Patchjob log details:
 Windows Update Version 1407.2506.11012.0
 2025-07 Cumulative Update for Windows 11 Version 24H2 for x64-based Systems (KB5062553) could not be downloaded, but will be reattempted.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

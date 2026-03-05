@@ -8,6 +8,8 @@ description: 'Specifies how many times a user will be prompted before being forc
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specifies how many times a user will be prompted before being forced to reboot. 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/40cf882a-83e1-4197-b536-e6840c498d0c/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

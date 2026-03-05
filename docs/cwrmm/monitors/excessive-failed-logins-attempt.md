@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a monitor that checks f
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-11
 ---
 
 ## Summary
@@ -290,4 +292,10 @@ Or check manually in Services.msc.
 - `Investigate Source IP:` Use firewall logs or SIEM tools.  
 - `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.  
 - `Block IP or Account:` If malicious, take immediate action.  
-- `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.  
+- `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.
+
+## Changelog
+
+### 2025-06-09
+
+- Initial version of the document

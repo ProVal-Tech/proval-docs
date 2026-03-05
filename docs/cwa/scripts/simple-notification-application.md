@@ -8,6 +8,8 @@ description: 'This document details a script designed to deliver a one-time, cus
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -78,3 +80,9 @@ The message parameter is mandatory to display the message to the user. All other
 
 - Script Log
 - Popup Message on User's desktop
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

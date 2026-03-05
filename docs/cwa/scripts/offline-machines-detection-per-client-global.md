@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating a client-level tic
 tags: ['report', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -145,3 +147,9 @@ PC Model: Virtual Machine
 OS: Microsoft Windows 10 Enterprise x64
 S/N OF PC: 8204-9944-0772-5397-0764-9709-12
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

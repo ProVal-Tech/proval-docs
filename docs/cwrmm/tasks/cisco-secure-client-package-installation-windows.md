@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for implementing the 
 tags: ['application', 'installation', 'networking', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -374,3 +376,9 @@ Store the proper parameter at the company-level custom field [Cisco Secure Clien
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Select OS to enable auto-deployment of CrowdStrike Windows Sensor.
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select OS to enable auto-deployment of CrowdStrike Windows Sensor. However, the 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/ffe13fcc-700f-41ea-9fdf-20ea4d253326/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

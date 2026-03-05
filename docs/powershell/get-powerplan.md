@@ -8,6 +8,8 @@ description: 'Documentation for the Get-PowerPlan command to retrieve informatio
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -35,3 +37,9 @@ PS C:> .\Get-PowerPlansInfo.ps1
 ## Output
 
 The output will be saved in `Get-PowerPlansInfo-log.txt`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

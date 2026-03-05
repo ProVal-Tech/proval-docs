@@ -8,6 +8,8 @@ description: 'The Site ID of the target site in the Datto RMM portal that the ag
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-28
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ In the Datto RMM portal, go to the `Settings` page for the site you want to look
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/b5af697b-7eeb-4395-8962-44b76645fdc5/image1.webp)
+
+## Changelog
+
+### 2026-02-28
+
+- Initial version of the document

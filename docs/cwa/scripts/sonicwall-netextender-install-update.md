@@ -8,6 +8,8 @@ description: 'This script installs or updates the latest version of the SonicWal
 tags: ['sonicwall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-10-30
+
+- Initial version of the document

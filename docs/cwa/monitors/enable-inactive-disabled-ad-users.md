@@ -8,6 +8,8 @@ description: 'This internal monitor detect the online domain controllers where t
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This internal monitor detects the AD Infrastructure Master servers where the cli
 - Enable the client EDF:  
 ![Enable Inactive Disabled AD Users](../../../static/img/docs/d4dc0325-d6ed-4fc3-8f7e-41632b5bc3f3/image7.webp)  
 - Apply the alert template `△ Custom - Execute Script - Activate Disabled AD Users` to the monitor that calls the [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) to enable the detected accounts.
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

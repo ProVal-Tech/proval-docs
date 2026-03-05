@@ -8,6 +8,8 @@ description: 'This group includes machines on which the “Microsoft 365 – Cli
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This group includes machines on which the “Microsoft 365 – Click-to-Run – 
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/microsoft-365-c2r-get-details-windows.toml)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document
