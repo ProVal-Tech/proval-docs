@@ -18,7 +18,7 @@ Controls the Windows Update deferral configuration for the device, including fea
 
 ## Sample Run
 
-`Play Button` > `Run Automation` > `Script`  
+`Play Button` > `Run Automation` > `Script`
 ![SampleRun1](../../../static/img/docs/5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a/deferal.webp)
 
 ## Dependencies
@@ -35,7 +35,7 @@ Controls the Windows Update deferral configuration for the device, including fea
 | ---- | --------------- | -------- | ---- | ----------- |
 | DeferFeatureUpdates | `Enabled` , `Disabled` | False | `DropDown` | The value in the Custom Field must be set to either Enabled or Disabled. The script will then read this value and configure the corresponding setting accordingly (using 0 or 1 based on the Custom Field data). |
 | BranchReadinessLevel | `16`,`32` | False | `Dropdown` | This field controls the Windows Update Branch Readiness Level. Select the appropriate channel to determine which feature update builds the device will receive. |
-| DeferFeatureUpdatesPeriodInDays | `0-365` | False | Integer | Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days. |
+| DeferFeatureUpdatesPeriodInDays | `0-365` | False | `Integer` | Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days. |
 
 ## Automation Setup/Import
 
@@ -44,6 +44,7 @@ Controls the Windows Update deferral configuration for the device, including fea
 ## Output
 
 - Activity Details
+
 
 ## Changelog
 
