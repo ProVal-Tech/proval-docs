@@ -3,7 +3,7 @@ id: '0cb57dd0-6349-4544-a146-f822e6dccceb'
 slug: /0cb57dd0-6349-4544-a146-f822e6dccceb
 title: 'cPVAL DeferFeatureUpdatesPeriodInDays'
 title_meta: 'cPVAL DeferFeatureUpdatesPeriodInDays'
-keywords: ['registry','feature','check','deferral']
+keywords: ['registry','feature','check','deferral','update']
 description: 'Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days.'
 tags: ['updates','registry','custom-fields']
 draft: false
