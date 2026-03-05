@@ -64,6 +64,14 @@ Windows Update Version 1407.2506.11012.0
 
 ## Changelog
 
+### 2026-02-02
+
+- Updated the monitor set to exclude machines missing 0 patches
+
+### 2025-09-04
+
+- Optimized the mySQL query
+
 ### 2025-04-10
 
 - Initial version of the document

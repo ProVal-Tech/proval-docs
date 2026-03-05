@@ -156,6 +156,14 @@ TicketCreationCategory can be set from the alerting tab of the Internal Monitor 
 
 ## Changelog
 
+### 2025-11-26
+
+- Introduced a new client level EDF Threatlocker_Unique_Identifier to override the value stored in the system property ThreatlockerAuthKey. This is helpful when  a client belongs under a sub-parent structure. This ensures the agent registers under the correct sub-organization instead of the top-level organization.
+
+### 2025-07-22
+
+- Updated Threatlocker agent deployment script to support AMD processors. AMD processors requires GroupID for threatlocker deployment. Introduced a new EDF to define it and do the installation for AMD computers
+
 ### 2025-06-27
 
 - Initial version of the document

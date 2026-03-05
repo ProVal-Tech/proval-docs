@@ -88,6 +88,10 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 
 ## Changelog
 
+### 2025-12-02
+
+- We were using the Banyan's official script and due to bug (https://github.com/banyansecurity/app-installer/issues/37) in their own script, it was not working. We forked their repository and applied the bug fix. The CWA script now downloads the agnostic from our own repo.
+
 ### 2025-10-10
 
 - Initial version of the document

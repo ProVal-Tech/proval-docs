@@ -74,6 +74,10 @@ Configure the solution as outlined below:
 
 ## Changelog
 
+### 2025-06-30
+
+- Just a migration of doc from ITG to GitHub.
+
 ### 2025-06-27
 
 - Initial version of the document

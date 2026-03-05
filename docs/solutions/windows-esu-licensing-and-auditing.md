@@ -94,3 +94,7 @@ A: This package and the implementation instructions are tailored for ConnectWise
 ### 2025-12-23
 
 - Initial version of the document
+
+### 2025-12-18
+
+- Updated the solution to include Windows 2012.

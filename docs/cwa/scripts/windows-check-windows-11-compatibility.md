@@ -48,6 +48,10 @@ Custom table: [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-
 
 ## Changelog
 
+### 2025-10-14
+
+- Updated the script to show machines as "Not Capable: Secureboot Disabled" if secureboot is disabled.
+
 ### 2025-04-10
 
 - Initial version of the document

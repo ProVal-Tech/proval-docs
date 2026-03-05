@@ -44,6 +44,14 @@ Global
 
 ## Changelog
 
+### 2026-01-15
+
+- The monitor was upgrading 5 machines per client per hour instead of 5 clients per night. We have resolve this issue in this update and also excluded LTSC and LTSB OS.
+
+### 2025-12-15
+
+- Deprecated and introduced "Install Windows 11 24H2 - Compatible Machines"
+
 ### 2025-04-10
 
 - Initial version of the document

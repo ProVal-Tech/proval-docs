@@ -66,6 +66,14 @@ This helps ensure that the update process runs smoothly without being blocked or
 
 ## Changelog
 
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
+
+### 2025-05-20
+
+- Added step 16 to reset the existing attempt counter on the end machine after re-running the script from RMM.
+
 ### 2025-03-27
 
 - Initial version of the document

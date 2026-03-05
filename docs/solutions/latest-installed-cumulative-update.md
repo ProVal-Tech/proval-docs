@@ -108,3 +108,7 @@ To configure the Autofix section of the solution to create only Tickets and no A
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-10
+
+- Added system properties to exclude autofix from workstations and threshold for days to eliminate the method to set the days manually in the monitor. The default will be 75 Days. Also, the name of the montior changed from "ProVal - Production - Patching - Last Cumulative Update > 75 Days ago" to"ProVal - Production - Patching - Last Cumulative Update > X Days ago"

@@ -166,3 +166,7 @@ The script's default nature is to compare the existing configuration before runn
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-08
+
+- Fixed the script where it was exiting with Success status when it failed because it wasn't able to download the ps1 file

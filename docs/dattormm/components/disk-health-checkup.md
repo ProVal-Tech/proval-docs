@@ -67,6 +67,10 @@ To implement the `component` over a policy, follow these steps:
 
 ## Changelog
 
+### 2025-12-02
+
+- The script was creating false alerts because the source name was not provided. Added logic to check for Provider Names for the event IDs used for monitoring.
+
 ### 2025-09-10
 
 - Initial version of the document

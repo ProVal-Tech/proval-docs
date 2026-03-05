@@ -54,6 +54,10 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 ## Changelog
 
+### 2025-08-07
+
+- Fixed a typo error that led the script to exit with error.
+
 ### 2025-04-10
 
 - Initial version of the document

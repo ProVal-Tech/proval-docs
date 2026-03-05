@@ -143,3 +143,7 @@ The script is designed to send the list of installed bloatware to the user runni
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-01
+
+- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.

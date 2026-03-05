@@ -42,6 +42,10 @@ The purpose of this dataview is to display the last execution result of [Script 
 
 ## Changelog
 
+### 2025-06-16
+
+- Updated the document in GitHub
+
 ### 2025-04-10
 
 - Initial version of the document

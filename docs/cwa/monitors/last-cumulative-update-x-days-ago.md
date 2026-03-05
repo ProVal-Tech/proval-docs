@@ -57,6 +57,10 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 
 ## Changelog
 
+### 2025-10-22
+
+- Fixed the logic to include the exclusions tab of the monitor set
+
 ### 2025-04-10
 
 - Initial version of the document

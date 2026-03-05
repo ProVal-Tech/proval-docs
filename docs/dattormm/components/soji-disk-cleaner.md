@@ -80,6 +80,11 @@ Import the [attached component](../../../static/attachments/itg/11821769/soji-di
 
 ## Changelog
 
+### 2025-07-08
+
+- Added CleanWinSxS, RunCleanmgr, EmptyRecyclebin parameters and also updated the document that has more helpful details.
+- Fixed the issue where this script was showing column "isQuotaAvailable" = 0 for all the computers where the total quota was 1 TB available.
+
 ### 2025-07-04
 
 - Initial version of the document

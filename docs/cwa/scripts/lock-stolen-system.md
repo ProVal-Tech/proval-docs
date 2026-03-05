@@ -93,6 +93,10 @@ The script is using the shutdown command, so the machine will become unusable wi
 
 ## Changelog
 
+### 2025-10-30
+
+- Updated the script to use "ffmpeg" instead of the "Webcamimagesave" to capture the image from integrated camera.
+
 ### 2025-04-10
 
 - Initial version of the document

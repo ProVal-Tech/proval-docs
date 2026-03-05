@@ -65,6 +65,10 @@ https://ninjarmm.zendesk.com/hc/en-us/articles/27524794230669-NinjaOne-Agent-Ins
 
 ## Changelog
 
+### 2026-01-14
+
+- Enhanced the script to support debian installation method.
+
 ### 2025-05-21
 
 - Initial version of the document

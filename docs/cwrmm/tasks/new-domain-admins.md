@@ -307,3 +307,7 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-12
+
+- The document was not showing correct screenhsots. Updated the correct screenshots. No solution changes were made.

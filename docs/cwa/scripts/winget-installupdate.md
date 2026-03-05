@@ -65,6 +65,14 @@ Please refer to [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8
 
 ## Changelog
 
+### 2026-01-05
+
+- Fixed the issue where the script was failing due to typographical error in the PowerShell.
+
+### 2025-05-08
+
+- Added OptionalParameter as a new user parameter to pass any arguments related to installation or configurations.
+
 ### 2025-04-10
 
 - Initial version of the document

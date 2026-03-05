@@ -101,6 +101,14 @@ The configuration file I have saved in the example screenshots will display the 
 
 ## Changelog
 
+### 2025-10-24
+
+- BGInfo launches before the user's custom wallpaper is applied, resulting in a composite wallpaper using the default blue background instead of the intended one. To resolve this, the script has been updated to use a scheduled task instead of startup registry key to address the timing issue.
+
+### 2025-10-03
+
+- Updated the script with multiple options of downloading zip file that contains the bgi config file with its component scripts. New global variable added - bgiZip
+
 ### 2025-04-10
 
 - Initial version of the document

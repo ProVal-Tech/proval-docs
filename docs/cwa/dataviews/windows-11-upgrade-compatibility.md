@@ -61,6 +61,31 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 
 ## Changelog
 
+### 2025-12-16
+
+- Added `Is ESU Activated` column to show if a Windows 10 has ESU license.
+
+### 2025-10-14
+
+- Updated the dataview to show machines as "Not Capable: Secureboot Disabled" if secureboot is disabled.
+
+### 2025-09-09
+
+- When all checks passed, and the system drive size was detected as less than 64 GB, it was marking the compatibility as `undetermined`. Fixed this problem and introduced the compatibility as 'Not Capable: FreeDisk <64GB' for such cases.
+
+### 2025-07-22
+
+- New column 'OS DriveSpace Check'  shows if drive size is above 64 gb or not
+Updated compatibility column to consider  'OS DriveSpace Check'  as well
+
+### 2025-06-06
+
+- Added Friendly Name Column
+
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-17
+
+- The filter for Windows 10 or Windows 11 version in the dataview was not working because of SQL logic used in the dataview. Updated the SQL and now the filter is working fine in the DV.

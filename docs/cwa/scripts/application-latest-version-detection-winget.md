@@ -81,6 +81,10 @@ This script is designed to gather the latest version of applications supported b
 
 ## Changelog
 
+### 2025-07-11
+
+- Updated the script to use file write method and then added the hash to the doc.
+
 ### 2025-04-10
 
 - Initial version of the document

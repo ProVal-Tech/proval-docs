@@ -109,6 +109,10 @@ if ($Path -notmatch 'HuntressAgent.log') {
 
 ## Changelog
 
+### 2025-04-16
+
+- Created document for this monitor in our Git Hub
+
 ### 2025-04-15
 
 - Initial version of the document

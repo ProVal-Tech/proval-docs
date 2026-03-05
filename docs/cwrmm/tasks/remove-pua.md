@@ -303,3 +303,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-05-02
 
 - Initial version of the document
+
+### 2025-04-01
+
+- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.

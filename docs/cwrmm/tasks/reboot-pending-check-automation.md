@@ -200,6 +200,10 @@ The task will start appearing in the Scheduled Tasks.
 
 ## Changelog
 
+### 2025-10-30
+
+- The existing logic to check reboot pending status was not working, we updated the logic to check reboot pending status and removed unnecessary steps from CW RMM task
+
 ### 2025-04-10
 
 - Initial version of the document

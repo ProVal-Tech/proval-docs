@@ -173,6 +173,10 @@ Execute or debug the script against a single client, with the `Set_Environment` 
 
 ## Changelog
 
+### 2025-04-24
+
+- Added a few EDFs to control the monitor creation, ticketing etc
+
 ### 2025-04-10
 
 - Initial version of the document

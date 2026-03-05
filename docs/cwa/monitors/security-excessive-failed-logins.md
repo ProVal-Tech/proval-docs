@@ -164,6 +164,14 @@ Or check manually in Services.msc.
 
 ## Changelog
 
+### 2025-06-11
+
+- Renamed the monitor from "Security - Possible Brute Force attack" to "Security - Excessive Failed Logins".
+
 ### 2025-06-09
 
 - Initial version of the document
+
+### 2025-06-03
+
+- Added troubleshooting guide in the ticket and the document.

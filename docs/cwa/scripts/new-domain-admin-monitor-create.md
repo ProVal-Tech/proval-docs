@@ -141,6 +141,10 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 ## Changelog
 
+### 2025-04-29
+
+- Enhanced the document to make it more user friendly and thus added more screenshots for reference.
+
 ### 2025-04-10
 
 - Initial version of the document

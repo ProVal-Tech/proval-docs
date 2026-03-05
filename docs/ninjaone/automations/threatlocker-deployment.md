@@ -45,6 +45,10 @@ This script will check for ThreatLocker and attempt to install if not present on
 
 ## Changelog
 
+### 2026-02-11
+
+- Added `Threatlocker AuthKey` and `ThreatLocker Org Key` script variables to the automation.
+
 ### 2025-05-16
 
 - Initial version of the document

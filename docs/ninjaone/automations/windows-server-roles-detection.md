@@ -257,6 +257,10 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Changelog
 
+### 2025-10-31
+
+- Updated the script to detect SMB1 role
+
 ### 2025-03-28
 
 - Initial version of the document

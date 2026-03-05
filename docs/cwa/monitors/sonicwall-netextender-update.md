@@ -42,6 +42,10 @@ Global
 
 ## Changelog
 
+### 2025-07-21
+
+- Updated the monitor name to ProVal - Production - SonicWall NetExtender - Install/Update [Winget]
+
 ### 2025-04-29
 
 - Initial version of the document

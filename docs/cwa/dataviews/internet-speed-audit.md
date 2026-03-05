@@ -57,6 +57,10 @@ Displays audited speed test information from the custom table [EPM - Network - C
 
 ## Changelog
 
+### 2025-08-26
+
+- Fixed a typographical error in the script,
+
 ### 2025-04-10
 
 - Initial version of the document

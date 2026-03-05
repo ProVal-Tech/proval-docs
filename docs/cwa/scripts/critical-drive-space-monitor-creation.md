@@ -343,6 +343,10 @@ The script has been updated to create a stack drive space monitor for the unsupp
 
 ## Changelog
 
+### 2025-04-24
+
+- Enhanced document to make it more user friendly.
+
 ### 2025-04-10
 
 - Initial version of the document

@@ -180,6 +180,10 @@ If this is an error, then the compressed logs may be unavailable.
 
 ## Changelog
 
+### 2026-01-14
+
+- The monitor was inconsistently triggering both failures and successes on machines, even when the drive space was below the defined threshold. This resulted in a large number of unnecessary tickets being generated. To address this, we updated the script to validate the actual drive space before marking a success status and closing the ticket. Additionally, we implemented logic to exit the script immediately if it was already queued as running or scheduled. This prevents duplicate executions and eliminates redundant ticket creation.
+
 ### 2025-04-10
 
 - Initial version of the document

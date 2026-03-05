@@ -53,6 +53,10 @@ Fill in the `NewName` and `DomainPasswordTitle` while running the script:
 
 ## Changelog
 
+### 2026-01-16
+
+- Updated the document and script with the latest document URL.
+
 ### 2026-01-14
 
 - Initial version of the document

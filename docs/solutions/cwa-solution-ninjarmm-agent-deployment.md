@@ -59,6 +59,10 @@ Ans:  Yes. It is because the `Devices` > `Agent Installers` is a Beta feature th
 
 ## Changelog
 
+### 2025-05-22
+
+- This solution was not available in our Git Hub. Migrated the document from IT Glue to GitHub
+
 ### 2025-05-21
 
 - Initial version of the document

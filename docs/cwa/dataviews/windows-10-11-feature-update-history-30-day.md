@@ -34,3 +34,7 @@ The dataview displays the Windows workstations that have been upgraded to the ne
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-03
+
+- The dataview was showing double entries in DV. Updated the dataview to remove duplicate entries.

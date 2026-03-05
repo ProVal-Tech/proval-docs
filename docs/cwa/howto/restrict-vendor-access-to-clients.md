@@ -214,6 +214,10 @@ Below is the process that will ensure that when the EDFs "Restrict Vendor Access
 
 ## Changelog
 
+### 2025-11-28
+
+- Document optimized with simplified configurations, enriched with detailed definitions, cautions, prerequisites and descriptive screenshots for clarity.
+
 ### 2025-04-07
 
 - Initial version of the document

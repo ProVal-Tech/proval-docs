@@ -103,6 +103,10 @@ To resolve a license key mismatch in SentinelOne, you must uninstall and then re
 
 ## Changelog
 
+### 2025-04-21
+
+- Replaced the SQL query used in the script at step 35 with the provided code as it was not actually fetchin the EDF name from the system property.
+
 ### 2025-04-10
 
 - Initial version of the document

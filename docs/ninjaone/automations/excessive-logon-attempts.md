@@ -59,6 +59,10 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Changelog
 
+### 2025-08-14
+
+- Fixed the bug in the script that triggered the alert only after 2 Failed Logon attempts
+
 ### 2025-07-07
 
 - Initial version of the document

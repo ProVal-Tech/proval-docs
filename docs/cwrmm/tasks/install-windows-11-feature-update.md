@@ -267,6 +267,14 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
+
+### 2025-07-23
+
+- Removed No Reboot parameter and updated  the task to execute the agnostic script through a scheduled task
+
 ### 2025-04-21
 
 - Initial version of the document

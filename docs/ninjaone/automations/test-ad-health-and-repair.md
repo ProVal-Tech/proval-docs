@@ -63,6 +63,10 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Changelog
 
+### 2025-12-17
+
+- Updated the script to show the AD health status in the Custom Field `cPVAL AD Health & Repair Result`
+
 ### 2025-08-05
 
 - Initial version of the document

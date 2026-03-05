@@ -28,6 +28,10 @@ The primary purpose of this script is to insert the latest version of the [SEC -
 
 ## Changelog
 
+### 2025-10-01
+
+- Updated the script to show data for 25H2.
+
 ### 2025-04-10
 
 - Initial version of the document

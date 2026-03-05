@@ -29,3 +29,7 @@ The script is converted to a client script and should be scheduled to run every 
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-12
+
+- Updated the script to set permissions for 'proval_|pvl_' instead of 'proval|pvl_'. Earlier the query was taking too long to run.

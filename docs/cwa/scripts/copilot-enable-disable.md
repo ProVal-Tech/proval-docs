@@ -70,3 +70,7 @@ EEE454AAB028DE1528935E8962FBD775
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-28
+
+- Updated script by adding the "Microsoft 365 Copilot" application removal and changing the file hash in the document.

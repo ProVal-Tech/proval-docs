@@ -132,3 +132,7 @@ Refer to the documentation accompanying the respective script for detailed instr
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-04
+
+- Fixed the formatting issues with PowerPlan-related scripts

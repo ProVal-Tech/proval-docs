@@ -629,6 +629,12 @@ It is suggested to schedule the Task to the groups [CW RMM - Dynamic Group - Reb
 
 ## Changelog
 
+### 2025-08-22
+
+- Fixed the deployment section in the document
+Fixed a bug where the file write was not working. So, optimized the PowerShell.
+Updated the script to reset all the prompter custom fields after a successful reboot.
+
 ### 2025-04-10
 
 - Initial version of the document

@@ -33,6 +33,10 @@ This solution is built to gather the folder redirection auditing of the active u
 
 ## Changelog
 
+### 2025-04-30
+
+- Migrated the solution to Github from IT glue
+
 ### 2025-04-29
 
 - Initial version of the document

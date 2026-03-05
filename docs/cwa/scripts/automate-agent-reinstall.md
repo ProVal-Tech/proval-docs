@@ -47,6 +47,14 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 
 ## Changelog
 
+### 2026-02-04
+
+- Increased the timeout for the reinstall command
+
+### 2025-12-29
+
+- The script was failing to repiar the agent. Therefore, we modified the reinstall command to kill msiexec process before initiating the process and updated the timeout for the command
+
 ### 2025-04-10
 
 - Initial version of the document

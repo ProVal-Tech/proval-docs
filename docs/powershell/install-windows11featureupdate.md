@@ -110,12 +110,20 @@ The script generates the following output files:
 
 ## Changelog
 
+### 2025-10-10
+
+- Added 25H2 to windows-os-support.json (https://content.provaltech.com/attachments/windows-os-support.json)
+
 ### 2025-09-25
 
 - Removes the existing settings from the following registry keys to avoid conflicts with group policy:
-  - `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
-  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet001\WindowsUpdate`
-  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet002\WindowsUpdate`
+- `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+- `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet001\WindowsUpdate`
+- `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet002\WindowsUpdate`
+
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
 
 ### 2025-07-31
 

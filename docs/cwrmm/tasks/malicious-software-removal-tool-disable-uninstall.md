@@ -290,3 +290,7 @@ The task will start appearing in the Scheduled Tasks.
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-02
+
+- Updated document to use the images from correct directory
