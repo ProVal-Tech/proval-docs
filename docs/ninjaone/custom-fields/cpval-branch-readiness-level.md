@@ -40,4 +40,4 @@ This field controls the Windows Update Branch Readiness Level. Select the approp
 
 ### 2026-03-06
 
-- Initial version of the document
+- Initial version of the document.
