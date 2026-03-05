@@ -3,7 +3,7 @@ id: '5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a'
 slug: /5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a
 title: 'Update - Windows Deferral Settings'
 title_meta: 'Update - Windows Deferral Settings'
-keywords: ['windows','feature','update','deferral']
+keywords: ['windows','feature','update','deferral','update']
 description: 'Controls the Windows Update deferral configuration for the device, including feature update servicing channel and deferral period. These settings determine when feature updates are made available after release.'
 tags: ['updates','registry','auditing']
 draft: false
