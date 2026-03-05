@@ -3,7 +3,7 @@ id: '297e4a2e-e7a3-43ea-bbae-a88715d472b4'
 slug: /297e4a2e-e7a3-43ea-bbae-a88715d472b4
 title: 'cPVAL DeferFeatureUpdates'
 title_meta: 'cPVAL DeferFeatureUpdates'
-keywords: ['registry','feature','check','deferrals']
+keywords: ['registry','feature','check','deferral']
 description: 'This custom field is used to store the values for DeferFeatureUpdates. It contains two possible values: Enabled or Disabled.'
 tags: ['updates','registry','custom-fields']
 draft: false
