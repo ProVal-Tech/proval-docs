@@ -1,0 +1,41 @@
+---
+id: '21a8afce-3a1c-4bdf-b2d2-a5581583e27c'
+slug: /21a8afce-3a1c-4bdf-b2d2-a5581583e27c
+title: 'pvl_dellcommand_audit'
+title_meta: 'pvl_dellcommand_audit'
+keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
+description: 'This table stores the scan data fetched by the script.'
+tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
+draft: false
+unlisted: false
+last_update:
+  date: 2025-03-25
+---
+
+## Purpose
+
+This table stores the scan data fetched by the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747).
+
+## Dependencies
+
+[Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747)
+
+## Tables
+
+pvl_dellcommand_audit
+
+### pvl_dellcommand_audit
+
+| Column | Type | Explanation |
+| ------ | ---- | ----------- |
+| computerid | INT | Computerid of the agent |
+| UpdateID | VARCHAR | Update ID of the detected patch |
+| Description | VARCHAR | Detected patch description |
+| UpdateType | VARCHAR | Describe the Update type (ex: Application, System) |
+| UpdateSeverity | VARCHAR | It stores the update severity information (ex: Security, Urgent) |
+| UpdateCategory | VARCHAR | It stores the category information about the detected patch |
+| ScriptRanDate | VARCHAR | It stores the information about the script last ran time |
+
+## Changelog
+
+### 2026-03-05
