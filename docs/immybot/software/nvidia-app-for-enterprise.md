@@ -24,6 +24,10 @@ An ImmyBot software installer for the [NVIDIA App for Enterprise](https://www.nv
 
 ## Changelog
 
+### 2025-09-19
+
+- The installer was not able to upgarde the software to latest version. Setting the upgrade strategy to "Install Over" resolved the reported issue.
+
 ### 2025-06-19
 
 - Initial version of the document

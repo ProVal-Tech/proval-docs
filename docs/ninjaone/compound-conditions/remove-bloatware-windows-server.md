@@ -37,6 +37,10 @@ This condition triggers the [Remove Bloatware](/docs/e921882d-f1f2-492a-8cd0-58d
 
 ## Changelog
 
+### 2025-10-07
+
+- Fixed minor issue in the configuration document
+
 ### 2025-09-17
 
 - Initial version of the document

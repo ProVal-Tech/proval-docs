@@ -105,6 +105,22 @@ The script has been updated to address the `InsufficientSystemPartitionDiskSpace
 
 ## Changelog
 
+### 2025-12-15
+
+- Introduced a new parameter `Version`. Currently supported versions are 24H2 and 25H2. The script now upgrades to 24H2 automatically when run through monitor as an autofix. And upgrades to 25H2 when run manually.
+
+### 2025-11-04
+
+- The script has been updated to support Windows 11 upgrades on devices already running Windows 11. Previously, it was limited to upgrading Windows 10 systems only.
+
 ### 2025-11-03
 
 - Initial version of the document
+
+### 2025-10-10
+
+- This Script validate the full version of the OS and compares it with Microsoft's database of Windows Cumulative Updates to identify which cumulative update the device has. The data is then formatted and stored in the UDF.
+
+### 2025-04-21
+
+- Updated document to remove beta from the name

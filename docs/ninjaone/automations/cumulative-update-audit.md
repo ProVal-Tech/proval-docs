@@ -49,6 +49,10 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 ## Changelog
 
+### 2026-01-07
+
+- The script was failing due to an issue with the download method. We resolved this by updating the agnostic download method in the NinjaRMM ps1 and verified that it now works as expected.
+
 ### 2025-08-13
 
 - Initial version of the document

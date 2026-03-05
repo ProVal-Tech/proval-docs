@@ -81,6 +81,10 @@ Manual Troubleshooting guide: https://content.provaltech.com/docs/c3d9eea2-bc5f-
 
 ## Changelog
 
+### 2025-06-20
+
+- Update the script to perform the registry cleanup for integrated instance only after uninstalling ScreenConnect
+
 ### 2025-04-10
 
 - Initial version of the document

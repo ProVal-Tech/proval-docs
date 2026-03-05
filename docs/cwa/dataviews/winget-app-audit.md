@@ -51,3 +51,7 @@ This document displays the information of `Winget` supported applications fetche
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-08
+
+- Added column `Auto Update RunTime` to the dataview

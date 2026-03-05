@@ -35,3 +35,7 @@ Global
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-08
+
+- Adjusted to exclude the computer where the script had failed twice in the week

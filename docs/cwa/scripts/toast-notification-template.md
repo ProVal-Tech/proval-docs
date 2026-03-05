@@ -151,6 +151,22 @@ Recommended steps to use Toast Notification:
 
 ## Changelog
 
+### 2025-08-14
+
+- Updated the template to use `Run Script` Button. This button can be used to run any PowerShell script stored in the local system.
+
+### 2025-04-16
+
+- Added MaxOccurences parameter that specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the @Repeat@ parameter, except when @Repeat@ is set to Once.
+
+### 2025-03-19
+
+- Added user friendly instruction via a screenshot in the document that shows which will show the place where the variable is going to display content
+
+### 2025-03-03
+
+- Added the `NotificationAppName` parameter to the CWA
+
 ### 2025-02-27
 
 - Initial version of the document

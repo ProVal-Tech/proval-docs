@@ -123,3 +123,7 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-11
+
+- Updated the script to add user back to local users group after removing it from local admins group.

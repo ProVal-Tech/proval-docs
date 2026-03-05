@@ -296,6 +296,14 @@ Or check manually in Services.msc.
 
 ## Changelog
 
+### 2025-06-11
+
+- Renamed the monitor from "Possible Brute Force attack" to "Excessive Failed Logins Attempt"
+
 ### 2025-06-09
 
 - Initial version of the document
+
+### 2025-06-03
+
+- Added troubleshooting in the ticket and the document.

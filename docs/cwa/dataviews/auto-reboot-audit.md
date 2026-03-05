@@ -46,6 +46,10 @@ The purpose of this dataview is to show the effective reboot time and day assign
 
 ## Changelog
 
+### 2025-08-26
+
+- Updated the uptime column to display uptime in decimal format. This means, instead of 9783 minutes, it will show 6 Days 19h 3m 00s
+
 ### 2025-07-17
 
 - Initial version of the document

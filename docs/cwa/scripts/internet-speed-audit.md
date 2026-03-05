@@ -70,3 +70,7 @@ Save the result to the database and email it to both [ram.kishor@provaltech.com]
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-12
+
+- Added the write file function in the script to provide a file hash for whitelisting.

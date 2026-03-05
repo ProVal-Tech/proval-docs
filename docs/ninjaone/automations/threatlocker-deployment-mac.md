@@ -43,6 +43,10 @@ This script deploys ThreatLocker agent on Mac machines.
 
 ## Changelog
 
+### 2026-02-11
+
+- Added `Threatlocker Mac Groupkey`  script variable to the automation.
+
 ### 2025-05-16
 
 - Initial version of the document

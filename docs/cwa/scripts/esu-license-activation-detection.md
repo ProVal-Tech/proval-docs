@@ -38,6 +38,10 @@ This script performs checks for ESU license activation detection for Windows 10 
 
 ## Changelog
 
+### 2026-02-26
+
+- Just a minor change where we removed EDF refresh queries; as we don't need to refresh EDFs forcefully every time we set something.
+
 ### 2025-10-23
 
 - Initial version of the document

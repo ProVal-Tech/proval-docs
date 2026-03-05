@@ -49,6 +49,10 @@ This dataview displays the type of permissions applied to each user class on a g
 
 ## Changelog
 
+### 2025-11-28
+
+- Created document
+
 ### 2025-11-27
 
 - Initial version of the document

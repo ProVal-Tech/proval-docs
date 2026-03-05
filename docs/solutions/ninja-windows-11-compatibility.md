@@ -39,6 +39,10 @@ This solution is built to fetch the Windows 11 compatible device list and store 
 
 ## Changelog
 
+### 2025-08-26
+
+- Updated the solution to include compatibility information about Windows 11 as well.
+
 ### 2025-05-29
 
 - Initial version of the document

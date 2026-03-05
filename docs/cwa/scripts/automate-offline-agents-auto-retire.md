@@ -152,3 +152,7 @@ Last Logged In User: DEV-WIN10-DCJOI/Test
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-02-13
+
+- Added system properties to end the session along with agent retirement and also enable the solution for workstations only and exclude servers.

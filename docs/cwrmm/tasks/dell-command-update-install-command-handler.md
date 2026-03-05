@@ -371,3 +371,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-12
+
+- Updated the solution document to show more examples and fixed the powershell issue that caused during the migration from IT Glue to our content portal.

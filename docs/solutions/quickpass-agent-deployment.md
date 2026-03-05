@@ -91,6 +91,10 @@ A: Check the CWA script log for a successful install entry, confirm the `QuickPa
 
 ## Changelog
 
+### 2025-10-30
+
+- Added a location-level EDF QuickPass Agent ID to allow overriding the client-level ID when specified. The client-level setting remains in place, but if the location EDF is filled, the script will prioritize it. Additionally, updated the deployment script and monitor to install the "QuickPass Agent (64-bit)" version of QuickPass Agent and remove the older version  "QuickPass Agent", which was not functioning correctly on computers.
+
 ### 2025-04-10
 
 - Initial version of the document

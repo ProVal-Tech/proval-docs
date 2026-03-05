@@ -48,6 +48,10 @@ The purpose of this NinjaOne solution is to track and lock down stolen systems.
 
 ## Changelog
 
+### 2026-03-03
+
+- Introduced "cpval Network Neighbours", "cPVAL Lock Status", "cpval Stolen System Bitlocker Message" and "cpval Stolen System Bitlocker Password" custom fields. Updated "cPVAL Current Location and IP Details" to display Ipconfig result along with Ip address and location. Updated Compound condition to use trigger time to make sure it runs only on Online machines.
+
 ### 2026-02-11
 
 - Initial version of the document

@@ -169,6 +169,14 @@ So, the monitor checks whether the `domainrole` is **not** one of 4 or 5, meanin
 
 ## Changelog
 
+### 2025-07-25
+
+- Added the logic for the ticket service board segregation for the servers and workstations by introducing new system property `NLA_Monitoring_Server_TicketCategory`
+
+### 2025-04-29
+
+- Enhanced the document to make it more user friendly and thus added more screenshots for reference.
+
 ### 2025-04-10
 
 - Initial version of the document

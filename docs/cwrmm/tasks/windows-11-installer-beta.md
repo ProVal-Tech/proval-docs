@@ -198,6 +198,14 @@ It is suggested to run this task manually for the time being.
 
 ## Changelog
 
+### 2025-07-23
+
+- Fixed PowerShell Bug
+
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-04-02
+
+- Updated the document to remove deprecated custom fields.

@@ -30,6 +30,10 @@ This script will create the view [plugin_proval_userclasses_group_client_perm](/
 
 ## Changelog
 
+### 2025-11-28
+
+- Created document
+
 ### 2025-11-27
 
 - Initial version of the document

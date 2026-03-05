@@ -45,6 +45,10 @@ This script enables the Defender, if failed then it attempts to reset the Defend
 
 ## Changelog
 
+### 2026-01-09
+
+- We just updated the document in our Content Repo with the file hash.
+
 ### 2026-01-08
 
 - Initial version of the document

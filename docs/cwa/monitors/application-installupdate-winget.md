@@ -40,3 +40,7 @@ Yes, for the install enable please change the null value to 1 as shown below:
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2025-03-25
+
+- The monitor was not capable of detecting computers where installation needed. As per monitor name, it should do both install and update. Updated the monitor to do both by just putting 0 or 1 in the where condition as per the instruction.

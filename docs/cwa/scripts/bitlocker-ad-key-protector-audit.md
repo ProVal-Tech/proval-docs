@@ -107,6 +107,10 @@ For additional information about the underlying logic, please see [Agnostic - Ge
 
 ## Changelog
 
+### 2025-06-03
+
+- Updated the script to write a ps1 file, then execute the ps1 on the following step. New script steps are 7, 25, 26, and 27.
+
 ### 2025-04-10
 
 - Initial version of the document

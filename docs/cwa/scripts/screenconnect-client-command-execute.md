@@ -46,6 +46,10 @@ This script will execute a command via the default command-line parser on the ta
 
 ## Changelog
 
+### 2025-12-29
+
+- Fixed the issues where the script was failing to execute the script. Increased the timeout of the scipt.
+
 ### 2025-04-10
 
 - Initial version of the document

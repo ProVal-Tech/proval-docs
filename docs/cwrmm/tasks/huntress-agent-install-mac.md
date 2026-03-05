@@ -405,6 +405,10 @@ Once selected, click on Run to schedule the script as per requirement.
 
 ## Changelog
 
+### 2025-10-01
+
+- The script was failing to install the Huntress Agent on MAC. Fixed the bug and updated the script to write the installation script instead of downloading it.
+
 ### 2025-04-10
 
 - Initial version of the document

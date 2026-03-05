@@ -88,6 +88,10 @@ It is a client script and suggested to run once per day.
 
 ## Changelog
 
+### 2025-06-12
+
+- The script was noisey because it was not comparing the data from 1 day before.
+
 ### 2025-03-12
 
 - Initial version of the document

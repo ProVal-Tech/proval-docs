@@ -153,6 +153,10 @@ Create the following server role groups:
 
 ## Changelog
 
+### 2025-05-30
+
+- Added server role for Hyper-V cluster and a group for this role.
+
 ### 2025-03-31
 
 - Initial version of the document

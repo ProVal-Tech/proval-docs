@@ -195,6 +195,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
+### 2025-04-15
+
+- Updated the task to include DISM Repair option.
+
 ### 2025-04-10
 
 - Initial version of the document

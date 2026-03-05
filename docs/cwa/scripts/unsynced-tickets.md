@@ -93,6 +93,10 @@ Ticket Body: <Ticket Body>
 
 ## Changelog
 
+### 2025-07-15
+
+- Updated the script to look for the tickets that were created at least 30 minutes ago and updated the ticket body to show correct hours.
+
 ### 2025-04-10
 
 - Initial version of the document

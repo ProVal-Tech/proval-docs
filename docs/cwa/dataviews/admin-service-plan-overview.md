@@ -34,6 +34,10 @@ This document provides an overview of the service plan status, onboarding, patch
 
 ## Changelog
 
+### 2025-07-31
+
+- Fixed the DV where the `Not Selected` clients were not highlighting in Red colour.
+
 ### 2025-04-10
 
 - Initial version of the document

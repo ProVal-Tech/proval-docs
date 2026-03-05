@@ -40,6 +40,10 @@ This dataview lists all scripts in the environment with details about their scri
 
 ## Changelog
 
+### 2025-06-20
+
+- Fixed the issue with the DV it was not displaying the correct value in the 'Edit Permission' column. It was showing either everyone or lists all user classes.
+
 ### 2025-04-10
 
 - Initial version of the document

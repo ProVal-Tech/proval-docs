@@ -162,6 +162,14 @@ If a specific computer in that location has only Monday enabled, then only that 
 
 ## Changelog
 
+### 2025-11-11
+
+- Updated the script to properly handle the '00:00' reboot schedule and updated the document with more information about the schedule. And also updated it to compare with 23:59 instead of 00:00 and add 60 seconds to the interval.
+
+### 2025-09-08
+
+- Updated the document to show the scheduling process and time.
+
 ### 2025-07-17
 
 - Initial version of the document

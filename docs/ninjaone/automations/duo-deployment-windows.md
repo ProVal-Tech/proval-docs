@@ -72,6 +72,10 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Changelog
 
+### 2025-07-23
+
+- The script was using script variables, which were taking priority over the Custom Field values. Since these variables always have a value by default, any changes made to the Custom Fields weren’t getting picked up during deployment. As a resolution, script variables were removed and only custom fields will be used for deployment.
+
 ### 2025-04-14
 
 - Initial version of the document

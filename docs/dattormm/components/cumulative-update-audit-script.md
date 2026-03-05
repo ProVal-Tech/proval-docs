@@ -68,6 +68,10 @@ StdErr is not expected.
 
 ## Changelog
 
+### 2026-01-07
+
+- The component was not returning any data due to issues with its agnostic implementation. We resolved this by updating the component to use our latest agnostic template, ensuring proper functionality and consistency.
+
 ### 2025-10-09
 
 - Initial version of the document

@@ -54,6 +54,10 @@ This document displays the data fetched by the [Get Latest Installed Cumulative 
 
 ## Changelog
 
+### 2026-01-07
+
+- Added 3 new columns: "Days Since Last Contact",  "Days Since Last Script Run" and "Friendly Name" to provide dynamic, day-based filtering for improved data analysis and usability.
+
 ### 2025-04-10
 
 - Initial version of the document

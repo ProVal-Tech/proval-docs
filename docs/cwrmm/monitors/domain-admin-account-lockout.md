@@ -207,6 +207,10 @@ Select `Device Groups` as selection type and search for `Domain Controller`. Thi
 
 ## Changelog
 
+### 2026-01-30
+
+- Added ticket creation logic and eliminated use of automation to generate a ticket.
+
 ### 2025-05-01
 
 - Initial version of the document

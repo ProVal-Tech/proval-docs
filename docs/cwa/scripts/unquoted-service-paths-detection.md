@@ -36,6 +36,10 @@ Script log
 
 ## Changelog
 
+### 2025-09-04
+
+- The script was incorrectly quoting the path if both sys and exe were available in the service path. Updated the PowerShell script at step 3 to enclose the path in quotes if it contains spaces, applying this to whichever comes first between .exe and .sys
+
 ### 2025-04-10
 
 - Initial version of the document

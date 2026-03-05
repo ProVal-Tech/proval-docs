@@ -101,6 +101,10 @@ No duplicate machines identified based on Serial Number.
 
 ## Changelog
 
+### 2025-06-12
+
+- Just a document update on Git-hub (the migration of this doc was not done properly from IT Glue to github)
+
 ### 2025-04-10
 
 - Initial version of the document

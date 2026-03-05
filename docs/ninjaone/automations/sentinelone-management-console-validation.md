@@ -55,6 +55,10 @@ The script validates whether the SentinelOne Management Server detected on the c
 
 ## Changelog
 
+### 2025-11-13
+
+- Fixed typo error and variable issues
+
 ### 2025-08-18
 
 - Initial version of the document

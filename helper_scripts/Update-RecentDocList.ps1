@@ -77,6 +77,10 @@ function Get-Changelog {
         if ($currentDate -and $line -match '^\s*[-*]\s+(.+)$') {
             $currentChanges += $Matches[1].Trim()
         }
+        # Append continuation lines (non-empty, non-heading, non-bullet) to the last bullet
+        elseif ($currentDate -and $currentChanges.Count -gt 0 -and $line.Trim() -ne '' -and $line -notmatch '^\s*###?\s+') {
+            $currentChanges[$currentChanges.Count - 1] += ' ' + $line.Trim()
+        }
     }
 
     # Save last entry
@@ -183,6 +187,8 @@ $recentDocs = $docs | ForEach-Object {
         }
     }
     $parentName = (Get-Item $parentPath).Name
+    $immediateParent = (Get-Item (Split-Path $_.FullName)).Name
+    $contentType = if ($immediateParent -eq $parentName) { '' } else { $immediateParent }
     $excludeCommits = @('790524fac17396e3a43f773f680285e1986b22b3')
     $lastCommitRaw = (git log --format="%H %ci" -- $_.FullName 2>$null) -split "`n" |
     Where-Object { $_ -and ($excludeCommits -notcontains $_.Substring(0, [Math]::Min($_.Length, 40))) } |
@@ -191,6 +197,7 @@ $recentDocs = $docs | ForEach-Object {
     $_ | `
         Add-Member -NotePropertyName "LastCommitTime" -NotePropertyValue $lastCommitTime -PassThru | `
         Add-Member -NotePropertyName "Category" -NotePropertyValue $parentName -PassThru | `
+        Add-Member -NotePropertyName "ContentType" -NotePropertyValue $contentType -PassThru | `
         Add-Member -NotePropertyName "GitAddedTime" -NotePropertyValue (
         [datetime]::Parse(((git log --diff-filter=A --format="%ci" -- $_.FullName 2>$null) -split ("`n") | Select-Object -Last 1))
     ) -PassThru
@@ -205,13 +212,14 @@ $output = foreach ($doc in $recentDocs) {
         Set-LastUpdateFrontMatter -FilePath $doc.FullName -LastCommit $doc.LastCommitTime
     }
     [PSCustomObject]@{
-        Title      = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
-        Slug       = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
-        LastCommit = $doc.LastCommitTime
-        Category   = $doc.Category
-        GitAdded   = $doc.GitAddedTime
-        Summary    = $summary
-        Changelog  = @($changelog)
+        Title       = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
+        Slug        = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
+        LastCommit  = $doc.LastCommitTime
+        Category    = $doc.Category
+        ContentType = $doc.ContentType
+        GitAdded    = $doc.GitAddedTime
+        Summary     = $summary
+        Changelog   = @($changelog)
     }
 }
 $output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json -Depth 5 | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8

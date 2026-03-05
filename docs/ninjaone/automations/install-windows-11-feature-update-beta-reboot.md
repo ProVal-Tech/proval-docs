@@ -64,6 +64,14 @@ This helps ensure that the update process runs smoothly without being blocked or
 
 ## Changelog
 
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
+
+### 2025-07-30
+
+- Updated the script to use the agnostic script [Install-WindowsFeatureUpdate].
+
 ### 2025-05-26
 
 - Initial version of the document

@@ -43,6 +43,10 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Changelog
 
+### 2025-12-01
+
+- Fixed the problem where the output was getting trimmed.
+
 ### 2025-10-07
 
 - Initial version of the document

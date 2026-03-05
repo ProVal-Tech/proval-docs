@@ -81,6 +81,10 @@ Running the script to forcefully install all available driver updates.
 
 ## Changelog
 
+### 2025-06-16
+
+- Updated the document in GitHub
+
 ### 2025-04-10
 
 - Initial version of the document

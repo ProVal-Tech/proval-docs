@@ -76,6 +76,10 @@ Script Logs
 
 ## Changelog
 
+### 2025-09-15
+
+- Fixed the PowerShell in the Managed file "get-lenovowarranty.ps1"
+
 ### 2025-08-22
 
 - Initial version of the document

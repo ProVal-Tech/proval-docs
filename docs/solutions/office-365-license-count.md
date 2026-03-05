@@ -46,6 +46,10 @@ The solution aims to fetch and display the Office 365 License Counts for the cli
 
 ## Changelog
 
+### 2026-01-20
+
+- Migrated the document from ITG to our content Repo. No changes made to the script logic. But the notes section was updated with the latest URL of our content repo.
+
 ### 2026-01-19
 
 - Initial version of the document

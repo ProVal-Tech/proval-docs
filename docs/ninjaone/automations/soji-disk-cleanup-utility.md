@@ -309,6 +309,10 @@ Click the Save button to save the Automation.
 
 ## Changelog
 
+### 2025-06-25
+
+- Updated the script to save the result of Soji cleanup inn the Custom Field "cPVAL Soji Result".
+
 ### 2025-05-06
 
 - Initial version of the document
