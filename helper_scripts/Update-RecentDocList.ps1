@@ -212,14 +212,14 @@ $output = foreach ($doc in $recentDocs) {
         Set-LastUpdateFrontMatter -FilePath $doc.FullName -LastCommit $doc.LastCommitTime
     }
     [PSCustomObject]@{
-        Title      = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
-        Slug       = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
-        LastCommit = $doc.LastCommitTime
-        Category   = $doc.Category
+        Title       = if ($title) { $title.Matches[0].Groups[2].Value } else { "No Title" }
+        Slug        = if ($slug) { $slug.Matches[0].Groups[2].Value } else { $doc.BaseName }
+        LastCommit  = $doc.LastCommitTime
+        Category    = $doc.Category
         ContentType = $doc.ContentType
-        GitAdded   = $doc.GitAddedTime
-        Summary    = $summary
-        Changelog  = @($changelog)
+        GitAdded    = $doc.GitAddedTime
+        Summary     = $summary
+        Changelog   = @($changelog)
     }
 }
 $output | Where-Object { $_.Slug -match "[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}" -and $_.Title.Trim() -ne "" } | ConvertTo-Json -Depth 5 | Out-File -FilePath "$((Get-Item $PSScriptRoot).Parent.FullName)\static\api\recentDocs.json" -Encoding UTF8

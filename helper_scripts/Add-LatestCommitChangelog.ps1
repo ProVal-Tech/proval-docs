@@ -29,7 +29,7 @@ $errorCount = 0
 foreach ($doc in $docs) {
     # Get all commits excluding bulk/automated ones
     $commits = (git log --format="%H %ci %s" -- $doc.FullName 2>$null) -split "`n" |
-        Where-Object { $_ -and ($excludeCommits -notcontains $_.Substring(0, [Math]::Min($_.Length, 40))) }
+    Where-Object { $_ -and ($excludeCommits -notcontains $_.Substring(0, [Math]::Min($_.Length, 40))) }
 
     if (-not $commits -or $commits.Count -eq 0) {
         $skippedCount++
@@ -57,7 +57,8 @@ foreach ($doc in $docs) {
         $commitDateRaw = $commitParts.Substring(0, 25)
         $commitMessage = $commitParts.Substring(26).Trim()
         $commitDate = [datetime]::Parse($commitDateRaw).ToString('yyyy-MM-dd')
-    } catch {
+    }
+    catch {
         Write-Warning "Could not parse commit info for: $($doc.FullName) - Raw: $latestCommit"
         $errorCount++
         continue
@@ -106,7 +107,8 @@ foreach ($doc in $docs) {
 
     if ($WhatIf) {
         Write-Host "[WhatIf] Would add entry ($commitDate - $commitMessage) to: $($doc.FullName)"
-    } else {
+    }
+    else {
         $newLines = @()
         $newLines += $lines[0..$changelogIndex]
         $newLines += $entryText
