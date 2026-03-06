@@ -8,6 +8,8 @@ description: 'Group of machines where DNSFilter Agent deployment is enabled for 
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -71,3 +73,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image4](../../../static/img/docs/03c4255b-097a-406f-822f-a237228dbeed/image4.webp)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

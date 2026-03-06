@@ -8,6 +8,8 @@ description: 'This document outlines a script that automates the removal of driv
 tags: ['cleanup', 'database', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This script removes drives that are still listed on machines but are no longer d
 ## Process
 
 - The script runs an SQL query against the database to delete the drives from the machines that are still listed but no longer detected.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

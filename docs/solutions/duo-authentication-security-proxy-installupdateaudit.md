@@ -8,6 +8,8 @@ description: 'This document outlines the process for automating the installation
 tags: ['auditing', 'deployment', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -48,4 +50,10 @@ The aim is to perform the DUO Authentication Security Proxy installation and upd
    [CW RMM - Group - DUO Auth Proxy Deployment Failed](/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4)  
 
 3. Create and deploy the following tasks:  
-   [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](/docs/bfcc2aec-a83b-49ac-bfbe-274cbf112a6e)  
+   [CW RMM - Task - DUO Auth Proxy - Install/Update Latest Version](/docs/bfcc2aec-a83b-49ac-bfbe-274cbf112a6e)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

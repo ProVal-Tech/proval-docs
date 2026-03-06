@@ -8,6 +8,8 @@ description: 'This document describes a script that can be used to manage online
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ The parameters provided will be filled into their respective EDF values:
 | Email           | Online Alert E-mail        |
 | ScriptIDs       | Online Alert Scripts       |
 | AfterNextReboot | Online Alert Restarted Machine |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

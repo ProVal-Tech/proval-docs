@@ -8,6 +8,8 @@ description: 'This document describes a script designed to monitor unwanted even
 tags: ['email']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This is an Autofix script, and it is used within the "Automate Server - Event Lo
 ## Output
 
 - **Email**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

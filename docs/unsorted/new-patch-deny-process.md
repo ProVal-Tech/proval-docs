@@ -17,3 +17,9 @@ The following patches should be denied:
 - Patches_To_DENY: 4580325, 3185319
 
 Please ensure to review each patch and understand the implications of denying them to maintain system stability and security.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

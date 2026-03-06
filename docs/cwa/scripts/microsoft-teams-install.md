@@ -8,6 +8,8 @@ description: 'This document outlines the process for installing the Teams Machin
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Refer to [Deploy-Teams](/docs/512415ba-2cc0-44bc-b0da-84a5e5d02adf) for detailed
 
 - Script log
 - Local file on the computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

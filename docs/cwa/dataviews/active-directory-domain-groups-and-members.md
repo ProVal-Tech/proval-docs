@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of all domains, their r
 tags: ['active-directory', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The AD Plugin needs to be installed, enabled, and configured with credentials to
 | Group GUID    | Displays the group GUID             |
 | Members       | Displays the members of the group    |
 | Domain Name   | Displays the Domain Name            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

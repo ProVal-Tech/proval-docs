@@ -8,6 +8,8 @@ description: 'This document outlines a script that sends an email notification f
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -91,3 +93,9 @@ Ticket Body:
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/docs/eb434aae-87c4-4315-bf73-202a41ff3a96/image_8.webp)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

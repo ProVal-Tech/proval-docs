@@ -8,6 +8,8 @@ description: 'This solution is built to perform the CW RMM to Ninja migration.'
 tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ This solution is built to perform the CW RMM to Ninja migration.
 - Create the [Dynamic Group - Ninja Deployment Failure](/docs/9718a5fd-535b-4faf-abe9-86d55f37e620) 
 
 - Follow the implementation instruction provided in each tasks: [Task - NinjaRMM Deployment - [Windows]](/docs/905f38b9-492e-43d8-b687-7b4df48c3b97) and [Task - NinjaRMM Deployment - [MAC]](/docs/2893ba48-9686-424e-ba32-0c799c38f9fd) for the deployment.
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

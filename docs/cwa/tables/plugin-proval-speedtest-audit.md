@@ -8,6 +8,8 @@ description: 'This document outlines the structure and purpose of the database t
 tags: ['database', 'networking', 'performance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -49,3 +51,9 @@ Stores results from speed tests run by the script [EPM - Network - Script - Inte
 | ResultURL       | VARCHAR  | The URL of the speed test result.                                         |
 | DownloadMbps    | FLOAT    | The download speed detected in Mbps.                                      |
 | UploadMbps      | FLOAT    | The upload speed detected in Mbps.                                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

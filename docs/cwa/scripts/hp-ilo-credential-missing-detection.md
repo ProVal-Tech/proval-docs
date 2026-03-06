@@ -8,6 +8,8 @@ description: 'This document provides a client script designed to create tickets 
 tags: ['networking', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 
 - Script log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

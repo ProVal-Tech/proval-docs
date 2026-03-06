@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive report on all installed SQL
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This document displays all installed SQL instances found on an endpoint.
 | ComputerName        | The name of the computer.                                                  |
 | CurrentlyDetected    | 0 if no SQL instances are detected, 1 if SQL instances are detected.       |
 | Versions-Editions   | The found versions and editions separated by a comma.                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

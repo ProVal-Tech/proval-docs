@@ -8,6 +8,8 @@ description: 'Provide the download URL or local path for the .dmg file used to i
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Provide the download URL or local path for the .dmg file used to install Cisco S
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e1fd56d1-def8-41e6-95bf-41c4817a6323/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

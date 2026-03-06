@@ -8,6 +8,8 @@ description: 'This document outlines a script developed to delete all contents o
 tags: ['cleanup', 'performance', 'registry', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ No
 Procedure_PendingFileRenameOperations_-_Registry_contents_Removal.xml
 ## Attachments
 [Procedure_Remove_PendingFileRenameOperations.xml](<../../../static/attachments/itg/10533914/Procedure_Remove_PendingFileRenameOperations.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

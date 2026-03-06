@@ -8,6 +8,8 @@ description: 'This document outlines a client script that generates a ticket for
 tags: ['smb', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ This client script creates a ticket for each client with the computer count wher
 
    The SMBv1 Enable status audit was detected on @VulnerableagentCount@ computer(s) of client "@sqlname@".  
    Please review the dataview for the computer list.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

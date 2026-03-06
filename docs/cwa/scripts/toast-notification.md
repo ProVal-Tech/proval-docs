@@ -8,6 +8,8 @@ description: 'This script downloads and executes the New-ToastNotification.ps1, 
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Summary
@@ -81,3 +83,27 @@ Utilize the [Toast Notification - Template](/docs/e6115fa5-78ac-4b04-8b3f-d0dd0c
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-08-14
+
+- Added a Run Script button where a PowerShell script can be triggered via a button click within the notification. And now the dismiss button is optional and can be excluded.
+- Notifications can be shown with or without any buttons. 
+- Also, added a feature where on clicking Learn More button, it will send a prompt again. Earlier, on clicking on `Learn More` button, the prompt used to vanish.
+
+### 2025-04-24
+
+- Fixed a bug where the script failed after removing the `Repeat` variable instead of setting it to once. Need to resync the script.
+
+### 2025-04-16
+
+- Added MaxOccurences parameter that specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the @Repeat@ parameter, except when @Repeat@ is set to Once.
+
+### 2025-03-03
+
+- Added the `NotificationAppName` parameter to the CWA
+
+### 2025-02-27
+
+- Initial version of the document

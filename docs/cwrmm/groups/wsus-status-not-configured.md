@@ -8,6 +8,8 @@ description: 'This group contains the agents where the WSUS status is detected a
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-05
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ Search for `WSUS_Status` and check for `Contains any of` and put the value as `W
 ## Completed Group
 
 ![Complete](../../../static/img/docs/a211d2b4-0244-41e1-8233-181eb875478f/image21.webp)
+
+## Changelog
+
+### 2025-08-01
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of a custom table
 tags: ['database', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ The custom table records the computer’s last contact time whenever its state c
 | state              | tinyint  | Indicates whether the computer is offline or online (0/1) |
 | lastcontact        | datetime | The last contact time of the computer when the state changed |
 | datacollectiontime  | datetime | The data collection time for the respective entry    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

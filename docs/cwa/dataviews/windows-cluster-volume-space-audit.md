@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the cluster disk spa
 tags: ['cluster', 'disk', 'hyper-v', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview is built to show the cluster disk space audit report fetched from 
 | Cluster Volume Used Space (GB)          | The cluster volume used size on the Hyper-V cluster server               |
 | Cluster Volume Free Percent              | The cluster volume available in percent of the Hyper-V cluster server    |
 | Script Last Run Time                     | Script last run time when the latest audit was done on the Hyper-V cluster server. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

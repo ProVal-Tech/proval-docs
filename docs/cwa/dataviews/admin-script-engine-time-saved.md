@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview that displays met
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This dataview displays metrics on how scripts are running in the environment. It
 | Total Automation Time Minutes (Hidden by default) | This is the total time in minutes not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                                      |
 | Recent Automation Time Minutes (Hidden by default) | This is the most recent time in minutes not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                                  |
 | Average Daily Time Minutes               | This is the average time per day, in minutes, and is not converted to a duration column. This is provided for validation and easy manipulation of the data.                                                                                                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

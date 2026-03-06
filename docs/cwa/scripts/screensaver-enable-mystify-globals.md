@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a PowerShell script 
 tags: ['performance', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The script runs a PowerShell script to create a scheduled task that enables the 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

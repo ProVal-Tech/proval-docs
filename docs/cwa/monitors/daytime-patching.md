@@ -8,6 +8,8 @@ description: 'This document provides an overview of the internal monitor that de
 tags: ['patching', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Install All Approved Patches [With Prompt]`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

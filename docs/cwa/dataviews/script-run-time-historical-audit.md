@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of historical runtime d
 tags: ['performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This dataview displays historical runtime data for scripts in Automate since the
 ## Example Screenshot
 
 ![Screenshot](../../../static/img/docs/84ff85b8-06d4-4c2b-abaa-fbd2b05756c2/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This condition triggers the Pin Chrome and Outlook to Taskbar scri
 tags: ['windows', 'setup', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This condition triggers the [Pin Chrome and Outlook to Taskbar](/docs/0229b8df-4
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/configure-taskbar-outlook-chrome-only.toml)
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

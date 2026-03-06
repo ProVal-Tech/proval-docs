@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a monitor that generate
 tags: ['security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This monitor is designed to create a ticket for the failure of the [Task - Clear
   ![Image 5](../../../static/img/docs/62efcaa3-e03b-4500-a48a-f472a82f039f/image_5.webp)  
 
 - Once all is done, click **Save**. The monitor will be created, and the ticket creation will be set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

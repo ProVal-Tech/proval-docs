@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive report on all endpoints whe
 tags: ['report', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -46,3 +48,9 @@ Defaults
 
 ### Export Attachment
 Attach the export XML of the report to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

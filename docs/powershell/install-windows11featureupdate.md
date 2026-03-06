@@ -8,6 +8,8 @@ description: 'The script automates the installation of the Windows 11 Feature Up
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-25
 ---
 
 ## Overview
@@ -32,49 +34,6 @@ This helps ensure that the update process runs smoothly without being blocked or
 - Internet connectivity
 - 64GB+ free space on the system drive
 - [Windows 11 Compatible Machine](https://www.microsoft.com/en-us/windows/windows-11-specifications)
-
-## Change Log (2025-05-07)
-
-- Added a 60-second delay after the `Restart-Computer -Force` command to ensure the script doesn't proceed to the next step too soon.
-- Removed unnecessary `/Scan` commands from the Dell Command Update section.
-- Modified the handling of exit codes 3000 and 3005 in Dell Command Update to generate warnings instead.
-- Added a check to limit driver update attempts to a maximum of three times or three reboots.
-- Included a check to reset the `Windows11LatestFeatureUpdate` table if the `$workingDirectory` does not exist. This indicates that the script might have previously executed but failed, and if someone is trying to re-run it, they just need to remove the `$workingDirectory`.
-
-## Change Log (2025-07-03)
-
-- `Dell Command | Update Universal for Windows` will now only be updated if it is already installed; otherwise, `Dell Command | Update` will be used.
-- The uninstall process for `Dell Command | Update` has been removed. Winget will now update the application in place if an older version is detected, without uninstalling it first.
-- Firmware and BIOS update logic for Dell machines has been removed.
-- Removed unnecessary `return` statement from the Dell drivers installation section.
-- Driver updates will no longer be attempted after every reboot if they have already been completed.
-- Initial verification, registry updates, and Windows Update reset will not be repeated after every reboot if they have already been performed.
-- The `Reset-WUComponents` command is now executed in a background job, and the script will wait up to 10 minutes for its completion before proceeding.
-- The `Restart-Computer -Force` command has been replaced with `Shutdown -f -r -t 10`.
-- The sleep time after issuing a restart command has been reduced to 10 seconds.
-
-## Change Log (2025-07-10)
-
-- If the vendor tool fails to install driver updates, the script will attempt to install drivers using Windows Update.
-- The script will proceed to run the Windows 11 Installer even if troubleshooting steps do not
-
-## Change Log (2025-07-15)
-
-- The script no longer forces a restart after the primary process finishes; instead, it allows the computer to restart on its own as needed.
-- If the system does not restart within one hour, the script will run the SetupDiag tool to check for any errors.
-- If SetupDiag indicates that a reboot is required to complete the upgrade and the `$NoReboot` switch is not used, the computer will be forcefully restarted.
-
-## Change Log (2025-07-31)
-
-- The script will attempt to set the 'TrustedInstaller' service (Windows Modules Installer) to Automatic startup and ensure it is running before starting the upgrade process.
-- This change addresses upgrade failures caused by error code 0x8007001F.
-
-## Change Log (2025-09-25)
-
-- Removes the existing settings from the following registry keys to avoid conflicts with group policy:
-  - `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
-  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet001\WindowsUpdate`
-  - `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet002\WindowsUpdate`
 
 ## Process
 
@@ -148,3 +107,60 @@ The script generates the following output files:
 
 - [Windows OS Support](../../static/attachments/windows-os-support.json)
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
+
+## Changelog
+
+### 2025-10-10
+
+- Added 25H2 to windows-os-support.json (https://content.provaltech.com/attachments/windows-os-support.json)
+
+### 2025-09-25
+
+- Removes the existing settings from the following registry keys to avoid conflicts with group policy:
+- `HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`
+- `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet001\WindowsUpdate`
+- `HKLM:\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\GPCache\CacheSet002\WindowsUpdate`
+
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
+
+### 2025-07-31
+
+- The script will attempt to set the 'TrustedInstaller' service (Windows Modules Installer) to Automatic startup and ensure it is running before starting the upgrade process.
+- This change addresses upgrade failures caused by error code 0x8007001F.
+
+### 2025-07-15
+
+- The script no longer forces a restart after the primary process finishes; instead, it allows the computer to restart on its own as needed.
+- If the system does not restart within one hour, the script will run the SetupDiag tool to check for any errors.
+- If SetupDiag indicates that a reboot is required to complete the upgrade and the `$NoReboot` switch is not used, the computer will be forcefully restarted.
+
+### 2025-07-10
+
+- If the vendor tool fails to install driver updates, the script will attempt to install drivers using Windows Update.
+- The script will proceed to run the Windows 11 Installer even if troubleshooting steps do not
+
+### 2025-07-03
+
+- `Dell Command | Update Universal for Windows` will now only be updated if it is already installed; otherwise, `Dell Command | Update` will be used.
+- The uninstall process for `Dell Command | Update` has been removed. Winget will now update the application in place if an older version is detected, without uninstalling it first.
+- Firmware and BIOS update logic for Dell machines has been removed.
+- Removed unnecessary `return` statement from the Dell drivers installation section.
+- Driver updates will no longer be attempted after every reboot if they have already been completed.
+- Initial verification, registry updates, and Windows Update reset will not be repeated after every reboot if they have already been performed.
+- The `Reset-WUComponents` command is now executed in a background job, and the script will wait up to 10 minutes for its completion before proceeding.
+- The `Restart-Computer -Force` command has been replaced with `Shutdown -f -r -t 10`.
+- The sleep time after issuing a restart command has been reduced to 10 seconds.
+
+### 2025-05-07
+
+- Added a 60-second delay after the `Restart-Computer -Force` command to ensure the script doesn't proceed to the next step too soon.
+- Removed unnecessary `/Scan` commands from the Dell Command Update section.
+- Modified the handling of exit codes 3000 and 3005 in Dell Command Update to generate warnings instead.
+- Added a check to limit driver update attempts to a maximum of three times or three reboots.
+- Included a check to reset the `Windows11LatestFeatureUpdate` table if the `$workingDirectory` does not exist. This indicates that the script might have previously executed but failed, and if someone is trying to re-run it, they just need to remove the `$workingDirectory`.
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides instructions on how to enable the user-leve
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-2
 ![Screenshot 1](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/8c8bc8b0-817e-4903-bd09-90df4c25ab9e/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

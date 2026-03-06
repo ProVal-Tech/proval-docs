@@ -8,6 +8,8 @@ description: 'This ticket template configures how a ConnectWise Manage ticket wi
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Overview
@@ -25,3 +27,9 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Template Creation
 
 [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/lock-stolen-system.toml)
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

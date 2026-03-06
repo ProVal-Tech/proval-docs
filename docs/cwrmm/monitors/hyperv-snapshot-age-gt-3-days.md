@@ -8,6 +8,8 @@ description: 'This monitor will generate alerts for HyperV host snapshots that h
 tags: ['windows', 'alerting', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -151,3 +153,9 @@ if ($staleSnapshots) {
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/172c15d2-01fd-421a-8954-67f6942e0e64/image6.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

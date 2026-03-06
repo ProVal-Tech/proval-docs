@@ -8,6 +8,8 @@ description: 'This script will attempt to remove the computer from its domain. T
 tags: ['active-directory','domain','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The script attempts to remove a computer from the domain it is currently connect
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-15
+
+- Initial version of the document

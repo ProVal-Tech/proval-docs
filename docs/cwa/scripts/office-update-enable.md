@@ -8,6 +8,8 @@ description: 'This document explains how to enable Office updates by running a P
 tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This script enables Office updates by running a PowerShell command.
 ## Process
 
 - Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `True`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

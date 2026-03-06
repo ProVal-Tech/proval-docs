@@ -8,6 +8,8 @@ description: 'This document outlines the process of initiating a Windows 10 feat
 tags: ['patching', 'reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Sets [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Sta
 AP Log  
 [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070)  
 PSOutput Document
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed dataview displaying information 
 tags: ['report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview displays information about the latest Windows rollup update that h
 | Latest Rollup   | Latest Rollup patch installed detail                      |
 | KB              | Latest rollup KB installed detail                         |
 | Last Contact     | Agent's Last Contact with Automate                       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

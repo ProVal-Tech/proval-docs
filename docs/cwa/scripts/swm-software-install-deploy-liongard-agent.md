@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on the installation and up
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -86,3 +88,9 @@ The script will work as long as this download URL is active:
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

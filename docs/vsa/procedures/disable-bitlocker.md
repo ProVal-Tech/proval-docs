@@ -8,6 +8,8 @@ description: 'This document provides a script that disables BitLocker on all dri
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Disabling BitLocker on All Drives
@@ -18,3 +20,9 @@ This document provides a script that disables BitLocker on all drives.
 Content is located in: **Shared > PVAL Content Source > BitLocker > Disable BitLocker**
 
 ![Image](../../../static/img/docs/343354b6-6418-4e44-8544-52fe2fb0851a/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

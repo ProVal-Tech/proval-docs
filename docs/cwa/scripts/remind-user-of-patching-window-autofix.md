@@ -8,6 +8,8 @@ description: 'This document describes a script that sends a popup message to the
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This script will send a popup message to the logged-in user to leave their machi
 
 - The script first verifies if the user is logged in. If not, it exits.
 - If a user is logged in, it sends a popup message to the user to leave their machine online.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

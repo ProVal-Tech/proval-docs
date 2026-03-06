@@ -8,6 +8,8 @@ description: 'Deployment token generated within the Zorus portal, for deploying 
 tags:  ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-03
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Deployment token generated within the Zorus portal for deploying the Zorus agent
 ## Custom Field Creation
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-zorus-token-key.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

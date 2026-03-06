@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive analysis of script failures
 tags: ['performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ The dataview presents a detailed analysis of script failures over the past 'X' d
 | Kill Command Issued %     | Percentage of failures because the Kill Command was issued                                       |
 | First Failure Date        | First Failure Date                                                                                |
 | Last Failure Date         | Last Failure Date                                                                                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

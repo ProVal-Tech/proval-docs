@@ -8,6 +8,8 @@ description: 'This detects the online Windows Workstations that have an Intel Pr
 tags: ['drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This detects the online Windows Workstations that have an Intel Processor, the d
 - Apply the alert template - `△ Custom - Execute Script - Intel DSA Install` to the monitor
 - Right click the monitor and then click `Run now and Reset`
   ![Sample Run 1](../../../static/img/docs/fb522a1e-8ebd-43fd-9f18-f47bfd63f6df/image3.webp)
+
+## Changelog
+
+### 2026-02-24
+
+- Initial version of the document

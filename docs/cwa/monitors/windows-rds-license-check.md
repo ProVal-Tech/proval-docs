@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor that checks the status of 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Windows machines with the [RSM - Remote Desktop Services - Role - Windows RDS Li
 **Failure:** We have detected a licensing issue with your RDS Licensing Server. The possibilities are that either the license is misconfigured or has expired. Please check.  
 
 **Success:** The license issue has been resolved.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

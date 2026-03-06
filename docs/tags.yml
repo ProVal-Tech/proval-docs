@@ -429,7 +429,7 @@ smb:
 smileback:
   label: SmileBack
   description: Documents related to SmileBack customer feedback platform and its integration
-  
+
 software:
   label: Software
   description: Documents related to software applications and their lifecycle management
@@ -521,3 +521,183 @@ wireless:
 wmi:
   label: WMI
   description: Documents discussing Windows Management Instrumentation and its applications
+
+access-management:
+  label: Access Management
+  description: Documents related to managing user access rights and security group memberships
+
+addigy:
+  label: Addigy
+  description: Documents related to Addigy Apple device management platform
+
+ai:
+  label: AI
+  description: Documents covering artificial intelligence and machine learning automation
+
+appgate:
+  label: AppGate
+  description: Documents related to AppGate SDP zero trust network access solutions
+
+apple:
+  label: Apple
+  description: Documents covering Apple hardware and macOS/iOS device management
+
+audit:
+  label: Audit
+  description: Documents related to security and compliance auditing processes
+
+automation:
+  label: Automation
+  description: Documents covering workflow automation and automated processes
+
+configuration:
+  label: Configuration
+  description: Documents related to system and application configuration management
+
+contacts:
+  label: Contacts
+  description: Documents related to contact management and synchronization
+
+conversion:
+  label: Conversion
+  description: Documents covering data or resource conversion processes
+
+crm:
+  label: CRM
+  description: Documents related to Customer Relationship Management platforms
+
+dark-web:
+  label: Dark Web
+  description: Documents related to dark web monitoring and credential exposure detection
+
+deprovisioning:
+  label: Deprovisioning
+  description: Documents covering the removal or deactivation of user accounts and services
+
+disaster-recovery:
+  label: Disaster Recovery
+  description: Documents related to disaster recovery planning and business continuity
+
+documentation:
+  label: Documentation
+  description: Documents related to IT documentation platforms and knowledge management
+
+egnyte:
+  label: Egnyte
+  description: Documents related to Egnyte cloud file sharing and collaboration platform
+
+endpoint:
+  label: Endpoint
+  description: Documents related to endpoint security and device management
+
+google-workspace:
+  label: Google Workspace
+  description: Documents related to Google Workspace administration and services
+
+hardware:
+  label: Hardware
+  description: Documents related to hardware monitoring and management
+
+hubspot:
+  label: HubSpot
+  description: Documents related to HubSpot CRM and marketing platform integration
+
+id-agent:
+  label: ID Agent
+  description: Documents related to ID Agent dark web monitoring and identity protection
+
+identity:
+  label: Identity
+  description: Documents related to identity management and authentication services
+
+incident-response:
+  label: Incident Response
+  description: Documents related to security incident response and remediation
+
+itglue:
+  label: IT Glue
+  description: Documents related to IT Glue documentation platform
+
+jumpcloud:
+  label: JumpCloud
+  description: Documents related to JumpCloud directory and identity management platform
+
+knowbe4:
+  label: KnowBe4
+  description: Documents related to KnowBe4 security awareness training platform
+
+knowledge-base:
+  label: Knowledge Base
+  description: Documents related to knowledge base management and AI-powered solutions
+
+mailbox:
+  label: Mailbox
+  description: Documents related to email mailbox management and configuration
+
+mdm:
+  label: MDM
+  description: Documents related to Mobile Device Management solutions
+
+monitoring:
+  label: Monitoring
+  description: Documents related to system and service monitoring and alerting
+
+network:
+  label: Network
+  description: Documents related to network device and infrastructure management
+
+offboarding:
+  label: Offboarding
+  description: Documents related to user offboarding and account deprovisioning
+
+onboarding:
+  label: Onboarding
+  description: Documents related to user onboarding and account provisioning
+
+provisioning:
+  label: Provisioning
+  description: Documents related to provisioning user accounts and services
+
+rewst:
+  label: Rewst
+  description: Documents related to the Rewst automation platform
+
+saas-alerts:
+  label: SaaS Alerts
+  description: Documents related to SaaS Alerts cloud application security monitoring
+
+security-groups:
+  label: Security Groups
+  description: Documents related to security group management in Active Directory and Entra ID
+
+sophos:
+  label: Sophos
+  description: Documents related to Sophos security products and firewall management
+
+sync:
+  label: Sync
+  description: Documents related to data synchronization between platforms
+
+threatlocker:
+  label: ThreatLocker
+  description: Documents related to ThreatLocker application control and endpoint security
+
+updates:
+  label: Updates
+  description: Documents related to software and firmware update management
+
+upgrade:
+  label: Upgrade
+  description: Documents related to software and infrastructure upgrade processes
+
+user-creation:
+  label: User Creation
+  description: Documents related to creating user accounts across platforms
+
+user-removal:
+  label: User Removal
+  description: Documents related to removing or deactivating user accounts
+
+zero-trust:
+  label: Zero Trust
+  description: Documents related to zero trust security architecture and solutions

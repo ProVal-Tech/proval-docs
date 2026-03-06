@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a drop-down Custom F
 tags: ['connectwise', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ A drop-down Custom Field to manage the Autofix section for the [CW RMM - Solutio
 ![Screenshot 1](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/00c4b9c6-ded8-4cde-ba74-47437724d206/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

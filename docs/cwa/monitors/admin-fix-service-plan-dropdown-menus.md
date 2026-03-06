@@ -8,6 +8,8 @@ description: 'This document describes a monitor designed to populate the locatio
 tags: ['connectwise', 'database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ WHERE parentid
     IN(SELECT groupid FROM mastergroups WHERE fullname='Service Plans.Windows Servers') AND `Name` <> 'Server Roles')
 WHERE LtGuid='5ca92306-2d93-11e1-ac0f-3d76979114ae' AND ftype=2;
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

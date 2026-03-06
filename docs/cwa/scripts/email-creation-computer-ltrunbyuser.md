@@ -8,6 +8,8 @@ description: 'This document outlines an offline script designed to send emails t
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 - Email
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Custom Field to deploy DNSFilter agent on Windows and MAC machines
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Select to deploy DNSFilter agent on Windows and MAC machines.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/501dcdec-33ab-45de-8a5d-4f35839762d4/image1.webp)
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

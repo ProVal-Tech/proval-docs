@@ -8,6 +8,8 @@ description: 'This document details a script designed for the uninstallation of 
 tags: ['logging', 'ticketing', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ This script is built to perform the uninstallation of the Network Glue Collector
 
 **Example:**  
 ![Example](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_2_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

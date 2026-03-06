@@ -8,6 +8,8 @@ description: 'This script is used to uninstall the Kaseya agent from the machine
 tags: ['uninstallation','application','kaseya']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-23
 ---
 
 ## Overview
@@ -27,3 +29,9 @@ This script searches the Kaseya installation directory for KASetup.exe, dynamica
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-22
+
+- Initial version of the document

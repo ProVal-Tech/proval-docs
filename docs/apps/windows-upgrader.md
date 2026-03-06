@@ -8,6 +8,8 @@ description: 'An application designed to upgrade a target machine to Windows 11.
 tags: ['windows', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-05
 ---
 
 ## Description
@@ -91,3 +93,9 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 - Multipart files are automatically combined during processing
 - Log files are created in the system temp directory for troubleshooting
 - The application validates the Windows version and checks if the system is already running the latest build before proceeding
+
+## Changelog
+
+### 2025-05-06
+
+- Initial version of the document

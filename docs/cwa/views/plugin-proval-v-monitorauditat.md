@@ -8,6 +8,8 @@ description: 'This document provides a detailed SQL script to create a monitor a
 tags: ['autotask', 'database', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Dependencies
@@ -295,3 +297,9 @@ WHERE
   ) 
   AND (`a`.`ComputerID` < 1)
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

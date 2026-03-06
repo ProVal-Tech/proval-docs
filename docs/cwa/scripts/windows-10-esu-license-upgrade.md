@@ -8,6 +8,8 @@ description: 'Applies Extended Security Updates (ESU) license for Windows 10 22H
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ Applies Extended Security Updates (ESU) license for Windows 10 22H2 systems. The
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

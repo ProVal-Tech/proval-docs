@@ -8,6 +8,8 @@ description: 'This document outlines the steps to manage the ProVal - Production
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-13
 ---
 
 ## Step 1
@@ -170,3 +172,9 @@ Ensure that the monitor set is limited to the `Server Role - AD - Infrastructure
 Implement the appropriate alert template for alerting.
 
 Suggested alert template: `△ Custom - Ticket Creation Computer - Failures Only`
+
+## Changelog
+
+### 2025-06-09
+
+- Initial version of the document

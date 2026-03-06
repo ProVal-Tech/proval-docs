@@ -8,6 +8,8 @@ description: 'This document provides details on how to store the status of wheth
 tags: ['setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document stores whether the Windows 11 Upgrade failed after running the Win
 | Field Name                    | Level    | Type      | Default Value | Description                                                                 | Editable |
 |-------------------------------|----------|-----------|---------------|-----------------------------------------------------------------------------|----------|
 | Windows 11 Upgrade Failed      | Endpoint | Text Box  | NA            | Stores whether the Windows 11 Upgrade failed after running the Windows 11 Installer (Beta) task. | Yes      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

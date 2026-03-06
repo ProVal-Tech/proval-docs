@@ -8,6 +8,8 @@ description: 'Stores the password for the local admin account created by the Loc
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Stores the password for the local admin account created by the Local Admin Proce
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/922e9ee1-9e5f-41cb-b397-62379f9ce9fc/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a custom field in Conne
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This custom field is used to store Windows PowerShell version information about 
 - **Level:** Endpoint
 - **Description:** Will provide the PS version on the machine
 - **Editable:** No
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on setting up an Integ
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Implementation
@@ -82,3 +84,9 @@ unlisted: false
    ```
 
 4. **Locate your remote monitor** by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

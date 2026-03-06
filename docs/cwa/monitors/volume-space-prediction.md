@@ -8,6 +8,8 @@ description: 'This document outlines the Predictive Volume Exhaustion Monitor cr
 tags: ['alerting', 'disk', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ _The parameter values highlighted in the provided example are regulated by the s
 **Sample @Result@:**
 
 ![Sample Result](../../../static/img/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

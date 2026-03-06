@@ -8,6 +8,8 @@ description: 'Select operating system to enable Cloud Radial Agent deployment fo
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select operating system to enable Cloud Radial Agent deployment for. This custom
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/e1ac886a-807a-4c85-9f6a-a1cecbc15910/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

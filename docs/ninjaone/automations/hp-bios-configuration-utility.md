@@ -8,6 +8,8 @@ description: 'Wrapper to download and execute the agnostic Initialize-HPBiosConf
 tags: ['application', 'installation', 'hp', 'bios', ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Overview
@@ -62,3 +64,9 @@ Display BCU help and supported commands:
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-10-14
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that disp
 tags: ['firewall', 'networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Roles:
 | Domain Firewall Status     | The status (Enabled | Disabled) for the "Domain" network firewall            |
 | Private Firewall Status    | The status (Enabled | Disabled) for the "Private" network firewall           |
 | Public Firewall Status     | The status (Enabled | Disabled) for the "Public" network firewall            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

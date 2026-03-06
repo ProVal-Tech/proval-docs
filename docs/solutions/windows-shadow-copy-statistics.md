@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive solution for auditing Shado
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -51,3 +53,9 @@ This solution is designed to audit the complete Shadow Copy statistics and size 
 
 **Q:** What should I do if information for an endpoint is not present in the dataview?  
 **A:** Run the "[Script - Shadow Copy - Audit Complete Statistics [DV]](/docs/9d69d33c-688e-4c02-adfe-cef7c8ecd766)" against the Windows machine and re-check the dataview after the successful completion of the script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

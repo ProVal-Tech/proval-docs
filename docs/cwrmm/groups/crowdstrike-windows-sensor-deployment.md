@@ -8,6 +8,8 @@ description: 'Group of Windows machines where CrowdStrike Windows Sensor deploym
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/406c6d18-a948-45f6-897b-b1d0174e21de/image3.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor that detects all comput
 tags: ['deployment', 'macos', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This internal monitor detects all computers whose associated client has the Enab
 - Should not target Linux-based operating systems.
 - Can target macOS or Windows.
 - Please review the solution document for supported systems.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

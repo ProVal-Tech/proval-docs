@@ -82,3 +82,9 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_scheduled_tasks` (
   CONSTRAINT `plugin_proval_scheduled_tasks_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`ComputerID`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

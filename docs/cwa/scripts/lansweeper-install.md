@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to install the LanS
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Once the values are provided during script execution, the LsAgent will be succes
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

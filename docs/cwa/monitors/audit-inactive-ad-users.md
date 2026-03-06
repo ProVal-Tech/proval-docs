@@ -8,6 +8,8 @@ description: 'This internal monitor detect the online AD Infrastructure Server w
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This internal monitor detects the online AD Infrastructure Master Server where t
 ## Alert Template
 
 - `△ Custom - Execute Script - Audit Inactive AD Users`
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

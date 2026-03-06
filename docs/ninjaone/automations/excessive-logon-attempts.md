@@ -8,6 +8,8 @@ description: 'Detects and summarizes failed logon attempts (Event ID 4625) from 
 tags: ['security', 'accounts', 'eventlogs']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-10
 ---
 
 ## Overview
@@ -53,4 +55,14 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-08-14
+
+- Fixed the bug in the script that triggered the alert only after 2 Failed Logon attempts
+
+### 2025-07-07
+
+- Initial version of the document

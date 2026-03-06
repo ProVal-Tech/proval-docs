@@ -8,6 +8,8 @@ description: 'This document outlines a script that retrieves basic information f
 tags: ['connectwise', 'database', 'report', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ How to get clientID: [Request to get a Client ID](https://connectwise20.my.site.
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

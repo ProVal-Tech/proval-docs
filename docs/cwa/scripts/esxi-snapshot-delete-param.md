@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on using a PowerShell
 tags: ['alerting', 'email', 'esxi', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -89,3 +91,9 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to delete the Snapshot @SnapShotName@ from the virtual machine @VMName@. Please review manually.
 PowerShell script result: @psout@
 ```
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

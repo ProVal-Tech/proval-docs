@@ -8,6 +8,8 @@ description: 'This document provides a reliable and accessible solution for appl
 tags: ['installation', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ Provide a reliable and accessible solution for application management via Chocol
 ## Implementation
 
 Import both Agent Procedures.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

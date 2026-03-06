@@ -8,6 +8,8 @@ description: 'This monitor verifies the installation status of the .NET Framewor
 tags: ['dotnet', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-16
 ---
 
 ## Summary
@@ -165,3 +167,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 **Limit to:** `Enable .Net 3.5 Feature`  
 **Alert Template:** `△ Custom - Enable - .Net 3.5 Feature`  
 ![Image1](../../../static/img/docs/be6d1705-be61-4510-b3c1-9a0f75397e46/image1.webp)
+
+## Changelog
+
+### 2026-01-14
+
+- Initial version of the document

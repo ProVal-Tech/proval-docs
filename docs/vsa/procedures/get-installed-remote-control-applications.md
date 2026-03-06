@@ -8,6 +8,8 @@ description: 'This script identifies remote access tools currently installed on 
 tags: ['custom-fields', 'auditing', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-02
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Supported tool display names (use exact spelling when excluding):
 
 - Script logs  
 - Custom field
+
+## Changelog
+
+### 2026-01-28
+
+- Initial version of the document

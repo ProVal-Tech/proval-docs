@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to audit user login and l
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

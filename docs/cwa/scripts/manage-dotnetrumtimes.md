@@ -8,6 +8,8 @@ description: 'This script ensures that the system is running the latest supporte
 tags: ['dotnet','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This script ensures that the system is running the latest supported versions of 
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-05-14
+
+- Initial version of the document

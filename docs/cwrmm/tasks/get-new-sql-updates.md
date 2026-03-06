@@ -8,6 +8,8 @@ description: 'Audits and reports on new SQL-related Windows Updates since the la
 tags: ['auditing', 'mssql', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-15
 ---
 
 ## Summary
@@ -290,3 +292,9 @@ MsrcSeverity : Important
 ### Completed Scheduled Task
 
 ![Image12](../../../static/img/docs/3b44e58d-1764-414b-94fd-05fedddd511d/image12.webp)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

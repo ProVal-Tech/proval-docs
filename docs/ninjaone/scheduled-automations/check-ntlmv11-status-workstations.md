@@ -8,6 +8,8 @@ description: 'This runs `Check NTLMv1.1 Status` automation.'
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This scheduled automation runs "Check NTLMv1.1 Status" automation weekly on work
 ## Scheduled Automations Creation
 
 [Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/check-ntlmv11-status-workstations.toml)
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

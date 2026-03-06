@@ -8,6 +8,8 @@ description: 'This Script pulls any and all certificates in the personal certifi
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ This Script pulls any and all certificates in the personal certificate repositor
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-13
+
+- Initial version of the document

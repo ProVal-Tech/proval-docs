@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for a monitor that triggers t
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The objective of this monitor is to run the script [Online Status Alerting - Aut
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

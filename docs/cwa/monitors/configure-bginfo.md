@@ -8,6 +8,8 @@ description: 'The purpose of the remote monitor is to find the computer where BG
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -102,4 +104,9 @@ Managed Windows Computer (Suggested is workstations but the script can be used f
 ```
 - Execute your query from a RAWSQL monitor set.
 - Locate the remote monitor on the group(s) and ensure that it is functioning as required.
- 
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

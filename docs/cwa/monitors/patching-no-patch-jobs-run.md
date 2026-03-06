@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to identify machines tha
 tags: ['connectwise', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ Automate must be upgraded to the "new" patch manager.
 ## Target
 
 Global - This monitor should be run without explicitly defined targets. The SQL will automatically filter out devices that do not have their Windows patching controlled by ConnectWise Automate.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

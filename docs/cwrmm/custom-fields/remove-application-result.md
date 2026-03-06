@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the custom field use
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ The custom field described below is used in the "Remove Application" script to g
    ![Default Value and Description](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_13.webp)  
 
    **Note**: The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

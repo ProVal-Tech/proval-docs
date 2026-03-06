@@ -8,6 +8,8 @@ description: 'This document outlines a script for creating snapshots of virtual 
 tags: ['backup', 'security', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -134,3 +136,9 @@ Prerequisite Validation Command Output: %ShellResult%
 Automate failed to create a snapshot for the virtual machine @VMName@. Please review manually. 
 PowerShell script result: @psout@
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

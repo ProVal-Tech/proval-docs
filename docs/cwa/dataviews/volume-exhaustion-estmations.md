@@ -8,6 +8,8 @@ description: 'This document provides a summary of the volume information gathere
 tags: []
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Displays volume information gathered by [Script - Volume Free Space - Monitor Cr
 | Size Remaining (GB)       | The amount of space remaining in Gigabytes                          |
 | Estimated Exhaustion       | The date and time that this volume is estimated to run out of space. |
 | Timestamp                 | The last time data was gathered for this volume.                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

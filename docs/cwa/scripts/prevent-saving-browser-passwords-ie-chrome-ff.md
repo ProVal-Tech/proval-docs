@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script designed to lock passwo
 tags: ['browsers', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ In the above screenshot, the password saving feature for the browsers will be di
 
 - Script log
 - Script state
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

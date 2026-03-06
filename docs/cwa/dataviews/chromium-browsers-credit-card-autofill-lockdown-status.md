@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Credit Cards Autofill Lo
 tags: ['browsers', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The dataview exhibits the `Credit Cards Autofill Lockdown Status` for the comput
 | Last Contact                    | Last Contact with RMM                                                                                                    |
 | Last Logged In User             | Last Logged In User                                                                                                      |
 | Credit Cards Autofill Lockdown Status | Indicates whether the remote monitor has effectively deactivated the autofilling feature for credit cards across the installed Chromium browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

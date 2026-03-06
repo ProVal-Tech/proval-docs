@@ -8,6 +8,8 @@ description: 'If the S1 Management URL on the endpoint matches the value stored 
 tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-20
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This custom field shows if the S1 Management URL on the endpoint matches the val
 ## Custom Field Creation
 
 [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-sentinelone-mgmt-server-discrepancy.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

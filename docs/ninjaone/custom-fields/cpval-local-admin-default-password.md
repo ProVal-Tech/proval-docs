@@ -8,6 +8,8 @@ description: 'Set the default password for the local admin in this field. If pro
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Set the default password for the local admin in this field. If provided, the scr
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/6f35eac6-9d3b-454a-b37e-ab3b719d44e3/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that list
 tags: ['performance', 'report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ The script log retention days can be seen at the Automate location below:
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/docs/afe8b7a5-442c-415e-9a9a-32a10702c189/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

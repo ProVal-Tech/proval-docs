@@ -8,6 +8,8 @@ description: 'This script gathers information about user profiles and stores it 
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-25
 ---
 
 ## Overview
@@ -33,3 +35,9 @@ This script gathers information about user profiles and stores it in the Custom 
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-18
+
+- Initial version of the document

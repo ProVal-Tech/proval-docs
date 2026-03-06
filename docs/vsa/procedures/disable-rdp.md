@@ -8,6 +8,8 @@ description: 'This document explains a script designed to check if Remote Deskto
 tags: ['logging', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Script Logs
 Attach the content XML VSA Export to this document.
 ## Attachments
 [Procedure_Disable_RDP.xml](<../../../static/attachments/itg/10932189/Procedure_Disable_RDP.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

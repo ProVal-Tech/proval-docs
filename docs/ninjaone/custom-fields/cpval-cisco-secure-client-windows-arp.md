@@ -8,6 +8,8 @@ description: 'Check this box if you want Cisco Secure Client modules to be hidde
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Check this box if you want Cisco Secure Client modules to be hidden from the Add
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e567d009-fc34-471c-9738-05bfed302c60/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

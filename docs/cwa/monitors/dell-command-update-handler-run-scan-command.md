@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a monitor set designed to exec
 tags: ['dell', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The purpose of the monitor set is to execute the [Script - Dell Command Update -
 ## Target
 
 The SQL query limits the execution to Dell Workstations running Windows 10 or Windows 11.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

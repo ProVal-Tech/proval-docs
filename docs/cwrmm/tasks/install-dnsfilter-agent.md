@@ -8,6 +8,8 @@ description: 'Deploys DNSFilter Agent on both windows and MAC machines.'
 tags: ['installation', 'dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-23
 ---
 
 ## Summary
@@ -408,3 +410,9 @@ This task has to be scheduled on the `DNSFilter Agent Deployment` group for auto
 
 ## Output
 - Script Logs
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on uninstalling the N
 tags: ['cleanup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script performs the uninstallation of the N-Able (Windows Agent) applicatio
 
 - Script log
 - Local file on the computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

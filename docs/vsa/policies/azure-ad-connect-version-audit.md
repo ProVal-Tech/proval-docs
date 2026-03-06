@@ -8,6 +8,8 @@ description: 'This document outlines the policy for scheduling scans of server e
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -40,3 +42,9 @@ Policy to schedule the scan of server endpoints for Azure AD Connect software an
 ### Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

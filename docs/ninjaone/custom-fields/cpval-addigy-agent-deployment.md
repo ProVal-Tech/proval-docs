@@ -8,6 +8,8 @@ description: 'Controls Addigy agent auto-deployment for macOS devices. Choose En
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Controls Addigy agent auto-deployment for macOS devices. Choose Enable to deploy
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/bbe758be-e2fb-4a0b-aa1d-1b1ae0119058/image1.webp)
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

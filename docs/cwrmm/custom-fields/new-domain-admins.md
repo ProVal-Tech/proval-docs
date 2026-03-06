@@ -8,6 +8,8 @@ description: 'This document provides details about the custom field used to stor
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,4 +36,10 @@ This custom field is used to store and display the results of the [CW RMM - Task
 
 ![Sample Value 1](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_3.webp)  
 ![Sample Value 2](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_4.webp)  
-![Sample Value 3](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_5.webp)  
+![Sample Value 3](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

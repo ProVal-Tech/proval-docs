@@ -8,6 +8,8 @@ description: 'Defines the number of uptime days that must pass before prompting 
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Defines the number of uptime days that must pass before prompting for a reboot o
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/d38a1b1a-1620-456a-a341-2770520a8f33/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

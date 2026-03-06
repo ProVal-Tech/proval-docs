@@ -8,6 +8,8 @@ description: 'This document provides a dataview to help Managed Service Provider
 tags: ['licensing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Many MSPs set up OpenDNS on the LAN, so all workstations connected via Ethernet 
 | Machine Type    | Displays whether it's a server or a workstation |
 | Wireless Card    | Displays the wireless card status              |
 | Umbrella Agent  | Displays the Umbrella agent status              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

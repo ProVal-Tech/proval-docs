@@ -8,6 +8,8 @@ description: 'This document outlines a script that collects all installed extens
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This script gathers all the extensions installed on the Google Chrome, Microsoft
 ## Output
 
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

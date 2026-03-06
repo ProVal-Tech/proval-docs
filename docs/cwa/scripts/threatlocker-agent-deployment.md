@@ -8,6 +8,8 @@ description: 'This script installs the ThreatLocker agent on Windows and Mac ope
 tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Summary
@@ -151,3 +153,17 @@ Command Result: %shellresult%
 
 TicketCreationCategory can be set from the alerting tab of the Internal Monitor [Deploy Threatlocker Agent](/docs/392a41e0-bbe1-4270-87a0-0a093aff3671).  
 ![Image7](../../../static/img/docs/6ee04ebc-5867-4310-a8ed-1f800f031774/image7.webp)
+
+## Changelog
+
+### 2025-11-26
+
+- Introduced a new client level EDF Threatlocker_Unique_Identifier to override the value stored in the system property ThreatlockerAuthKey. This is helpful when  a client belongs under a sub-parent structure. This ensures the agent registers under the correct sub-organization instead of the top-level organization.
+
+### 2025-07-22
+
+- Updated Threatlocker agent deployment script to support AMD processors. AMD processors requires GroupID for threatlocker deployment. Introduced a new EDF to define it and do the installation for AMD computers
+
+### 2025-06-27
+
+- Initial version of the document

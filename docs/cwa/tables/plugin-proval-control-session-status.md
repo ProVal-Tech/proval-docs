@@ -8,6 +8,8 @@ description: 'This document outlines the current online status of ConnectWise Co
 tags: ['connectwise', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ This document holds the current ConnectWise Control agent online status for each
 | Online              | TINYINT(1)   | Holds the online status of the computer in ConnectWise Control agent.                         |
 | LastConnectedDate   | DATETIME     | Holds the last connected date of the ConnectWise Control agent.                               |
 | SCName              | VARCHAR(50)  | Holds the computer name as displayed in the ConnectWise Control portal for that agent.       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

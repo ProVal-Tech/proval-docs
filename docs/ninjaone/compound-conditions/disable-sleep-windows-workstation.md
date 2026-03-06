@@ -8,6 +8,8 @@ description: 'This condition ensures that the Disable Sleep script runs on Windo
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-29
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This condition ensures that the [Disable Sleep](/docs/21947d80-a91f-4b2a-9109-ad
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/disable-sleep-windows-workstation.toml)
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

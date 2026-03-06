@@ -8,6 +8,8 @@ description: 'Provide the Umbrella Fingerprint associated with your organization
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Provide the Umbrella Fingerprint associated with your organization. This field i
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/0bbcbadf-6663-4bd4-87d3-b6f83c5ca598/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

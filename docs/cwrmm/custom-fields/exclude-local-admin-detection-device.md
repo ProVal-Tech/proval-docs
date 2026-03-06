@@ -8,6 +8,8 @@ description: 'Select this Custom Field to exclude an endpoint from Local Admin D
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 ![Complete Monitor](../../../static/img/docs/18aa25e5-61cd-429d-ab09-44b7cf6eb10e/image1.webp)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

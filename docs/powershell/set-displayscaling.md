@@ -8,6 +8,8 @@ description: 'Documentation for the Set-DisplayScaling command to set custom dis
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -37,3 +39,9 @@ To set the custom display scaling, use the following command:
 ## Output
 - `.\Set-DisplayScaling-log.txt`
 - `.\Set-DisplayScaling-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

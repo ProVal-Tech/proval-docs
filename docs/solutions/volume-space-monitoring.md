@@ -8,6 +8,8 @@ description: 'The Volume Space Monitoring solution provides a framework for gene
 tags: ['performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -173,3 +175,9 @@ The script has been running hourly on USER-PC for 60 days.
 The script has the DaysToLead parameter set to 30.
 
 The script determines that in another 70 days, the volume's space may be completely exhausted based on the linear regression. The script then returns the estimated remaining space 40 days from now (70 - DaysToLead). This estimated remaining space is then used as the threshold for the volume space remote monitor for that volume.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Agents Heartbeat
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This Dataview shows all the agents with their heartbeat data and status.
 | Last Heartbeat Time       | Displays the agent's last heartbeat time received in Automate   |
 | Heartbeat Status          | Displays the agent's heartbeat status (Found or Missing)       |
 | Days Since Last Heartbeat  | Displays the count of days since the last heartbeat was received |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

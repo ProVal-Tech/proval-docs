@@ -8,6 +8,8 @@ description: 'Automated detection and deployment solution for QuickPass Agent on
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-27
 ---
 
 ## Purpose
@@ -86,3 +88,13 @@ A: The script checks for the presence of the legacy "QuickPass Agent" installati
 
 Q: How can I verify the upgrade completed successfully?  
 A: Check the CWA script log for a successful install entry, confirm the `QuickPass Agent (64-bit)` is listed in installed programs, and validate the agent reports to its management platform.
+
+## Changelog
+
+### 2025-10-30
+
+- Added a location-level EDF QuickPass Agent ID to allow overriding the client-level ID when specified. The client-level setting remains in place, but if the location EDF is filled, the script will prioritize it. Additionally, updated the deployment script and monitor to install the "QuickPass Agent (64-bit)" version of QuickPass Agent and remove the older version  "QuickPass Agent", which was not functioning correctly on computers.
+
+### 2025-04-10
+
+- Initial version of the document

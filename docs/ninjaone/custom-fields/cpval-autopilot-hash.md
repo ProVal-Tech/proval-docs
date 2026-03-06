@@ -8,6 +8,8 @@ description: 'This field stores the Windows Autopilot hardware hash value.'
 tags: ['autopilot','custom-fields','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-24
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field is used to store the Windows Autopilot hardware hash value. Th
 ## Sample Screenshot
 
 ![Home Edition Status](../../../static/img/docs/8d3fbb67-9f18-426e-b08d-c010d655a94a/autopilot-hash-cf.webp)
+
+## Changelog
+
+### 2026-02-20
+
+- Initial version of the document

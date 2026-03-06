@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on removing the scheduled 
 tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ The location and method by which this script returns data.
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

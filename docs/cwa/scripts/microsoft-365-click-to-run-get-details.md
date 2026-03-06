@@ -8,6 +8,8 @@ description: 'This document provides an overview of the script that retrieves th
 tags: ['office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 - Script log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Includes a monitor set for each drive for server monitoring, and a
 tags: ['storage']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Purpose
@@ -21,3 +23,9 @@ Includes a monitor set for each drive for server monitoring, and a C: drive moni
 **xPVAL HDD Free Space D-Z - Under 5GB 24hr (23 discrete Monitor Sets, one for each Drive Letter)**: Server Monitor for all other drives dropping below 5gb available capacity. 24 hour rearm
 
 **xPVAL WS C Free Space Under 2gb 72hr**: Workstation Monitor for C: drives dropping below 2gb available capacity. 72 hour rearm
+
+## Changelog
+
+### 2025-04-09
+
+- Initial version of the document

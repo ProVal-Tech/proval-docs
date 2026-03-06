@@ -8,6 +8,8 @@ description: 'Group of HyperV Host servers where monitoring for snapshots older 
 tags: ['windows', 'alerting', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-20
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ The group is defined by the following **conditions**, joined by an **AND** logic
 ## Completed Group
 
 ![Image3](../../../static/img/docs/21d5941d-f8ad-439c-a724-1e998972751c/image3.webp)
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

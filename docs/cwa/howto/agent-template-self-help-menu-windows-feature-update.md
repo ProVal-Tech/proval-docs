@@ -8,6 +8,8 @@ description: 'This article outlines the step-by-step process to add the Windows 
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Purpose
@@ -77,3 +79,9 @@ The `Windows Feature Update` option runs the [Windows 11 Installer](/docs/a4668c
     ![Image](../../../static/img/docs/0c25060b-1272-449f-af97-64169e636e95/image_17.webp)  
 
 Configuration updates will take effect on devices after running the `Update Config` command.
+
+## Changelog
+
+### 2025-12-08
+
+- Initial version of the document

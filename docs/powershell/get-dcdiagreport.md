@@ -8,6 +8,8 @@ description: 'Documentation for the Get-DCDiagReport command to run advanced dia
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -45,3 +47,9 @@ Must be run on a domain controller.
 .\Get-DCDiagReport-error.txt
 <Specified Log File Path and fileName>
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

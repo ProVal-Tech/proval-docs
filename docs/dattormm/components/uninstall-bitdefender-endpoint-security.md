@@ -8,6 +8,8 @@ description: 'BitDefender Endpoint Security script downloads and runs the Remove
 tags: ['antivirus', 'datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -55,3 +57,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 - [Uninstall Bitdefender Endpoint Security](../../../static/attachments/uninstall-bitdefender-endpoint-security.cpt)
+
+## Changelog
+
+### 2025-12-01
+
+- Initial version of the document

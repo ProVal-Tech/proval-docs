@@ -8,6 +8,8 @@ description: 'This script fetches the device Autopilot Hardware Hash using CIM/W
 tags: ['autopilot','auditing','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-24
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ This script fetches the device's Autopilot Hardware Hash using CIM/WMI from the 
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-20
+
+- Initial version of the document

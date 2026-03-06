@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to boot an endpoint into Safe
 tags: ['performance', 'reboot', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Boots an endpoint into Safe Mode.
 ## Process
 
 Sets the VSA Agent Service to start in Safe Mode, then restarts the endpoint into Safe Boot network.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

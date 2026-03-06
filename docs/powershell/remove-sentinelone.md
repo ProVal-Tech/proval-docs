@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-SentinelOne command to uninstall the 
 tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-13
 ---
 
 ## Overview
@@ -76,3 +78,9 @@ Attempts to uninstall the SentinelOne agent without a passphrase. This assumes t
 
 - .\Remove-SentinelOne-log.txt  
 - .\Remove-SentinelOne-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

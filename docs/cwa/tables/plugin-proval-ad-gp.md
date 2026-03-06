@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Group Policy Audit scrip
 tags: ['gpo', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ This document displays the list of audited group policies from the script @Group
 | Extension    | VARCHAR  | The parent extension type of the group policy.                                               |
 | Property     | VARCHAR  | The extension property that is being set by the group policy.                                |
 | PropertyData | TEXT     | The additional configuration data relating to the target group policy extension property.     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

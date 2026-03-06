@@ -8,6 +8,8 @@ description: 'This document explains how to mark a custom field to create Winget
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This custom field must be marked at the company level to run the [CW RMM - Task 
 
 ![Screenshot 1](../../../static/img/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/40e64c1d-ca29-4c85-9a72-a48b1082b8e1/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

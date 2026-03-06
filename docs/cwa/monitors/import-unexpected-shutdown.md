@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to apply a remo
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Steps to Apply Remote Monitor
@@ -94,3 +96,9 @@ Limit the remote monitor to a search, if necessary.
 
 ### 7. Apply the Alert Template
 Apply the appropriate alert template to the remote monitors.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

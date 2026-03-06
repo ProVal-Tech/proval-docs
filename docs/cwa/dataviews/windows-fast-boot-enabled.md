@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive report on the status of Fas
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This document pulls data from the role detection of Fast Boot. It shows all mach
 | Computer Name   | Computer Name                                                                             |
 | OS              | Operating System installed on the machine                                                 |
 | Fast Boot Status| Shows "Fast Boot Enabled" if the role is detected, or "Not Detected" if Fast Boot is disabled |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Set-TargetUpgradeVersion command to specify 
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -44,3 +46,9 @@ Location of output for log, result, and error files.
 .\Set-TargetUpgradeVersion-data.txt
 .\Set-TargetUpgradeVersion-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

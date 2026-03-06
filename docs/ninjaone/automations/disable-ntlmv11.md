@@ -8,6 +8,8 @@ description: 'This script disables the NTLMv1.1 protocol on the target Windows m
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ This script disables the NTLMv1.1 protocol on the target Windows machine.
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

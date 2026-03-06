@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to collate CSV repo
 tags: ['email', 'kaseya', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -20,4 +22,10 @@ Collate CSV Report Parts from Kaseya GetFiles Then Send As Attachment
 - **msgto**: Required. The target email address  
 - **msgsubject**: Required. The email subject line  
 - **msgattach**: Required. The email attachment file name  
-- **days**: Optional. Purge report parts older than X days before run  
+- **days**: Optional. Purge report parts older than X days before run
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

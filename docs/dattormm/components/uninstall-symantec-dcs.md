@@ -8,6 +8,8 @@ description: 'Symantec Data Center Security (DCS) Agent Removal Script. This scr
 tags: ['antivirus','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -44,3 +46,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Uninstall Symantec DCS Antivirus](../../../static/attachments/Uninstall-Symantec-DCS-Antivirus.cpt)
+
+## Changelog
+
+### 2025-12-03
+
+- Initial version of the document

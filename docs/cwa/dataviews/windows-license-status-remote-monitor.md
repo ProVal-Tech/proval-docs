@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to monitor the status of
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This document displays the status of the Windows License fetched by the remote m
 | Last Contact           | Last contact time of the computer                                  |
 | Data Collection Time    | The time when the Windows License Status was fetched              |
 | Windows License Status  | The status of the Windows license, indicating if it has expired, is about to expire, or is licensed. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

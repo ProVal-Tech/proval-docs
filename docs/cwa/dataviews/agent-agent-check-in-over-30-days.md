@@ -8,6 +8,8 @@ description: 'This document provides a detailed summary of agents that have not 
 tags: ['networking', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview shows information about agents that have not checked in for 30 day
 ## ProVal Suggested Solution
 
 [ProVal Suggested Solution](/docs/ab580d76-42be-4b34-b38b-3a7e9336c13e)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

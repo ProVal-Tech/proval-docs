@@ -8,6 +8,8 @@ description: 'This document outlines a monitor for identifying tickets within Co
 tags: ['connectwise']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-13
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This monitor looks for tickets within Automate that have failed to sync successf
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

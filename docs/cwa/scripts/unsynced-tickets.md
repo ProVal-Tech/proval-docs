@@ -8,6 +8,8 @@ description: 'This document outlines a script that sends an email notification a
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-15
 ---
 
 ## Summary
@@ -88,3 +90,13 @@ Ticket Body: <Ticket Body>
 
 **Sample Screenshot:**  
 ![Sample Screenshot](../../../static/img/docs/eb434aae-87c4-4315-bf73-202a41ff3a96/image_5.webp)
+
+## Changelog
+
+### 2025-07-15
+
+- Updated the script to look for the tickets that were created at least 30 minutes ago and updated the ticket body to show correct hours.
+
+### 2025-04-10
+
+- Initial version of the document

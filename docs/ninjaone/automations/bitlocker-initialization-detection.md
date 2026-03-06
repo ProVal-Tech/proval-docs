@@ -8,6 +8,8 @@ description: 'Evaluates the BitLocker compliance status of an endpoint against p
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-05
 ---
 
 ## Description
@@ -86,3 +88,9 @@ Manual execution of this script is not recommended. It is specifically designed 
 ## Output
 
 - Activity Logs
+
+## Changelog
+
+### 2025-12-30
+
+- Initial version of the document

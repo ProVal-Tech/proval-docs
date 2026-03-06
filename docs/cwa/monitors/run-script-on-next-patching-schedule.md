@@ -8,6 +8,8 @@ description: 'This document outlines the monitor set configuration used to ident
 tags: ['patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The monitor set is used to identify computers whose patching schedule ended with
 ## Target
 
 Windows machines with active Automate Patching policies.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

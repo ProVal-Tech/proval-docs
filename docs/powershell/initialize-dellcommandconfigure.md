@@ -8,6 +8,8 @@ description: 'Automates installation, updating, and execution of Dell Command | 
 tags: ['application', 'installation', 'software', 'dell', 'bios']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-13
 ---
 
 ## Overview
@@ -138,3 +140,9 @@ WlanAutoSense=Disabled
 - [Dell Command | Configure CLI Reference - BIOS Options](https://www.dell.com/support/manuals/en-us/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us)
 - [Dell Command | Configure Command Line Syntax](https://www.dell.com/support/manuals/en-us/command-configure-v4.2/dcc_cli_4.2/command-line-option-delimiter?guid=guid-a46d5033-22cc-4369-8951-d1b30e51008f)
 - [Dell Command | Configure Exit Codes](https://www.dell.com/support/kbdoc/en-us/000147084/dell-command-configure-error-codes)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Install-MSTeams command to install Microsoft
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -50,3 +52,9 @@ Uninstalls and deprovisions the existing Microsoft Teams installation before rei
 ## Output
 - `.\Install-MSTeams-log.txt`
 - `.\Install-MSTeams-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

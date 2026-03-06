@@ -8,6 +8,8 @@ description: 'This document details the Agent procedure for deleting a user name
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This Agent procedure is used to delete the user named pccomp.
 ## Output
 
 Agent procedure log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

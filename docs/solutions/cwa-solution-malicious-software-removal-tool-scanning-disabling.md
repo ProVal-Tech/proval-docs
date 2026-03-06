@@ -8,6 +8,8 @@ description: 'This solution details the deployment and removal solution of the M
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -78,3 +80,9 @@ The solution provides feature to run the scanning using Malicious Software Remov
      ```
      8E7513A15FC33B38337976B85C0E8C5C
      ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

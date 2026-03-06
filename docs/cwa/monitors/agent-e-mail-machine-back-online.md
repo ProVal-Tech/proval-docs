@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a monitor that alert
 tags: ['connectwise', 'email', 'setup']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This monitor will alert on any computer that has checked in within the last 5 mi
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

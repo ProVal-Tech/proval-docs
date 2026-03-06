@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect if the Domain profile of
 tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document will detect if the Domain profile of the Windows Firewall is enabl
 | Detection String                                             | Comparator | Result | Applicable OS |
 |------------------------------------------------------------|------------|--------|----------------|
 | \{%@netsh advfirewall show domainprofile state| find "State"@%} | Contains   | ON     | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

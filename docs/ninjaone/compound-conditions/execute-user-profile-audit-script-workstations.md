@@ -8,6 +8,8 @@ description: 'Executes User Profile Audit Script on windows workstations opted f
 tags: ['report', 'security', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Executes User Profile Audit Script on windows workstations opted for Audit.
 ## Compound Condition Creation 
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/execute-user-profile-audit-script-workstations.toml)
+
+## Changelog
+
+### 2025-12-18
+
+- Initial version of the document

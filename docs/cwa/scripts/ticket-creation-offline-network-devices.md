@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to create a formatted tic
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -81,3 +83,9 @@ To create this ticket to a specific service board in manage, provide the categor
 
 **Example Ticket:**  
 ![Image](../../../static/img/docs/1634ea10-264c-44df-abd1-ff68edc23391/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview designed to displ
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ The dataview's objective is to present basic billing information for each client
 | Total Monitor Alerts Triggered | Total number of failures detected by the monitor sets in the past 30 days for the client.                      |
 | Total Tickets Generated        | Total number of tickets generated in the past 30 days for the client.                                         |
 | Total Time Saved by Automation | Total amount of time saved by automation in the past 30 days for the client. The logic uses the time saved field of the script and then falls back to the run time interval if it's not filled. Format: Days:Hours:Minutes:Seconds |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a comprehensive drive monitoring solution f
 tags: ['disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ A Complete Drive Monitoring Solution for the VSA
 3. Import all Views and ensure the advanced filter is properly set on each.
 4. Import all Monitor Sets.
 5. Import all Policies.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

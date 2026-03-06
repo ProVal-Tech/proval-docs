@@ -8,6 +8,8 @@ description: 'This document outlines an Automate implementation of a script desi
 tags: ['chrome', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document describes an Automate implementation of the [SWM - Software Config
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

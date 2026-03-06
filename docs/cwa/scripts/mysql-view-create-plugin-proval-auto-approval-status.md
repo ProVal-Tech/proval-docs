@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating the plugin_proval_
 tags: ['database', 'setup', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This script creates the [plugin_proval_auto_approval_status](/docs/ae8ce64f-816a
 ## Output
 
 The output is the [plugin_proval_auto_approval_status](/docs/ae8ce64f-816a-4e84-8052-f8e131dde389) view.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

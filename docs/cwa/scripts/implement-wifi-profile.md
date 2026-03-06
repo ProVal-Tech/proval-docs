@@ -8,6 +8,8 @@ description: 'This document details a script for adding and removing Wi-Fi profi
 tags: ['networking', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -104,3 +106,9 @@ Location-Level EDFs can be used to override the Client-Level EDFs. The syntax us
 
 - Script Log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

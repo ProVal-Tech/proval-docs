@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to send email alerts when
 tags: ['report', 'security']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ It is a client script that should be scheduled to run once a week.
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

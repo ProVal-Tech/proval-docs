@@ -8,6 +8,8 @@ description: 'This document provides an overview of the internal monitor that id
 tags: ['database', 'security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ UserProfile: C:/Users/user2
 ProfileSizeMB: 1237
 UserSid: S-1-5-21-1327865892-1327865892-1327865892-1758
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

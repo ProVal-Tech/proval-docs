@@ -8,6 +8,8 @@ description: 'Documentation for the Set-FirefoxHomepage command to set and enfor
 tags: ['firefox', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -34,3 +36,9 @@ Location of output for log, result, and error files.
 ```
 .\Set-FirefoxHomepage-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

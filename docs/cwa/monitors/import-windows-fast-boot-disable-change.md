@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide for implementing a rem
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Implementation
@@ -140,3 +142,9 @@ Locate your remote monitor by opening the group(s) remote monitors tab, then app
 
 ![Remote Monitor Tab 1](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_2.webp)  
 ![Remote Monitor Tab 2](../../../static/img/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

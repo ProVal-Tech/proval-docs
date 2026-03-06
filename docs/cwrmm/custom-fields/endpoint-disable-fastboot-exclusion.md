@@ -8,6 +8,8 @@ description: 'This document provides instructions on how to exclude a computer f
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Check this box to exclude the computer from the solution that disables fastboot.
 
 ![Screenshot 1](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/b17237cc-d3cf-42a9-84fe-eda8d00bdd19/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

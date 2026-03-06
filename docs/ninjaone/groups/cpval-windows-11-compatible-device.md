@@ -8,6 +8,8 @@ description: 'This group contains the Windows 10 lists that are compatible with 
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-24
 ---
 
 ## Summary
@@ -91,3 +93,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Complete](../../../static/img/docs/cpval-windows-11-compatible-device/image-3.png)
+
+## Changelog
+
+### 2025-05-29
+
+- Initial version of the document

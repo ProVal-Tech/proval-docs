@@ -8,6 +8,8 @@ description: 'This Script lists the local administrators on windows machine and 
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Summary
@@ -163,3 +165,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### Completed Scheduled Task
 
 ![Image12](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image12.webp)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

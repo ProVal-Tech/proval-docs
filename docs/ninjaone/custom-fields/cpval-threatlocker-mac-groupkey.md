@@ -8,6 +8,8 @@ description: 'Stores the ThreatLocker group key for agent deployment on Macintos
 tags: ['security','setup','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Stores the ThreatLocker group key for agent deployment on Macintosh machines
 ## Sample Screenshot
 
 ![Step1](../../../static/img/docs/8305e5b2-41ee-44bb-848e-758ac72b185f/macgroup.webp)
+
+## Changelog
+
+### 2025-05-16
+
+- Initial version of the document

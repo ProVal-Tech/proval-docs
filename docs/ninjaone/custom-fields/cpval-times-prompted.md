@@ -8,6 +8,8 @@ description: 'Tracks the number of reboot prompts sent to the device. Updated au
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Tracks the number of reboot prompts sent to the device. Updated automatically by
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/fded67bb-c3a3-40bb-acb1-2baa0464de45/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

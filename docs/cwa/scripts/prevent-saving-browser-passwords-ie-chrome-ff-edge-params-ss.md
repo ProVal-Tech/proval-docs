@@ -8,6 +8,8 @@ description: 'This document details a script that prevents browsers from prompti
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ In the above screenshot, the Password Saving Feature for the browsers will be di
 
 - Script Log
 - Script State
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

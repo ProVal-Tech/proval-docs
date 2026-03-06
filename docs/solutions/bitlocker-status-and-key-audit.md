@@ -8,6 +8,8 @@ description: 'The solution outlines the process of auditing BitLocker encryption
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Purpose
@@ -90,3 +92,9 @@ A: Yes, the `BitLocker Drive Encryption` feature must be enabled on servers for 
 
 **Q: How are the results formatted and stored?**  
 A: Results are formatted as a structured string and stored in the endpoint-level "BitLocker Status and Key" custom field, following this format: `| DriveLetter: KeyProtectorTypes; ProtectionStatus; EncryptionPercentage; RecoveryPassword |`
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

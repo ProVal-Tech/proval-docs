@@ -8,6 +8,8 @@ description: 'Prompter is a simple application designed to present a prompt on t
 tags: ['notifications', 'reboot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 <br />
@@ -161,3 +163,9 @@ $PrompterOutput[1]
 
 * [FlatIcon](https://www.flaticon.com)
 * [CommandlineParser](https://github.com/commandlineparser/commandline)
+
+## Changelog
+
+### 2025-05-06
+
+- Initial version of the document

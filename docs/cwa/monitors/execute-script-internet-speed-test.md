@@ -8,6 +8,8 @@ description: 'This document provides details about an internal monitor that dete
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This internal monitor detects Windows agents where the script [EPM - Network - S
 ## Target
 
 This monitor can be enabled for all service plan groups, servers only, infrastructure master servers only, or any custom grouping of machines controlled by EDFs. This solution is designed exclusively for Windows.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

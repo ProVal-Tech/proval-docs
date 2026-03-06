@@ -8,6 +8,8 @@ description: 'This document outlines the setup and functionality of a remote mon
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -39,4 +41,10 @@ Limited to Windows machines only.
 ## How To Import
 
 - Follow the document below for import and implementation steps:  
-  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](/docs/dd99f8a5-83f7-48a5-b8a9-ac68224e543a)  
+  [Import - Remote Monitor - ProVal - Production - RemoteAccess Service Check](/docs/dd99f8a5-83f7-48a5-b8a9-ac68224e543a)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

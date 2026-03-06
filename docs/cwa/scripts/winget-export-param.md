@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a PowerShell script 
 tags: ['email', 'installation', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Path to the reports on the local machine:
 
 - Script logs
 - Email(s) (if enabled)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

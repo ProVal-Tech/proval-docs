@@ -8,6 +8,8 @@ description: 'This document provides instructions for enabling Bitlocker on Wind
 tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Enable Bitlocker
@@ -26,3 +28,9 @@ The script is located in ProVal VSA at:
 `Shared > PVAL Content Source > BitLocker > Enable Bitlocker`
 
 ![Image](../../../static/img/docs/1a32292b-df11-46ef-997f-7ad70f59061f/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

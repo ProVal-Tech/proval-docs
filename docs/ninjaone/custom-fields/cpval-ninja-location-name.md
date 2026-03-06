@@ -8,6 +8,8 @@ description: 'Location is used during the AutoElevate agent deployment to ensure
 tags:  ['security','application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Location is used during the AutoElevate agent deployment to ensure the installed
 ## Sample Screenshot
 
 ![Location Name](../../../static/img/docs/4bfe4881-3687-4a30-bf00-d85067d5c6d8/locationname.webp)
+
+## Changelog
+
+### 2025-11-27
+
+- Initial version of the document

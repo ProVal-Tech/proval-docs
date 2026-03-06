@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive solution for monitoring the
 tags: ['battery', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -61,3 +63,9 @@ This solution provides information on a workstation's battery state.
      - [Internal Monitor - Proval - Production - DailyScript - Get-BatteryReport](/docs/43fcbb27-0955-4270-9460-33c5e8ccceef)
        - Configure with the alert template: `△ CUSTOM - Execute Script - Get-BatteryReport`
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

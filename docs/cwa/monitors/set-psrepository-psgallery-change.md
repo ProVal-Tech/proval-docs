@@ -8,6 +8,8 @@ description: 'This document provides a summary and details on a remote monitor t
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Managed Windows Machines
 ## Implementation
 
 [Import - Remote Monitor - Set-PsRepository PSGallery](/docs/5cb1373f-6cdc-4576-8b3e-e8bfc4d664de)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

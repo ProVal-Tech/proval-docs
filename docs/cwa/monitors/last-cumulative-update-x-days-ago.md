@@ -8,6 +8,8 @@ description: 'This document outlines a method for identifying computers that hav
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -52,3 +54,13 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **Q.** What happens if the machine hasn't logged in for several days, or if the interval of the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) is different from the `lastruntime` check in the table "[Custom Table - pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a)"?
 
 **A.** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.
+
+## Changelog
+
+### 2025-10-22
+
+- Fixed the logic to include the exclusions tab of the monitor set
+
+### 2025-04-10
+
+- Initial version of the document

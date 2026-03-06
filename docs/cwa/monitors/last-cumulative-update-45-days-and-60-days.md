@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set that identifies computers wit
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Global
 `△ Custom - Autofix - Out Of Date Cumulative Updates without Ticketing`
 
 The alert template executes the [CWM - Automate - Script - Out of Date Cumulative Updates [Autofix]](/docs/dedb8564-bb1a-47b8-9525-61fc9e690cae) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

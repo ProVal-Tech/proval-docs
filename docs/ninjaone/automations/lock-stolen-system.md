@@ -8,6 +8,8 @@ description: 'This script is used to track and lock down stolen systems. If Cust
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-25
 ---
 
 ## Overview
@@ -26,13 +28,6 @@ This script is used to track and lock down stolen systems. If Custom Field `cPVA
 - [Custom Field - cPVAL Current Location and IP Details](/docs/85cb62ba-6e5f-4235-9964-975af04658d0)
 - [Solution  - Lock Stolen System](/docs/13b4df99-df9b-4a57-bc0f-8675c68be028)
 
-## Parameters
-
-| Name | Example  | Required | Default | Type | Description |
-| ---- | ------- | -------- | ------- | ---- | ----------- |
-| BitlockerMessage | This system been marked as lost, please contact support@provaltech.com | False| This system been marked as lost, please contact xyz@abc.com | String/Text | The message to display on the BitLocker lock screen. **Please update the email address while configuring the script.** |
-| BitlockerPassword | P@##word123 | False| P@##word123 | String/Text | The password to use to enable BitLocker on the target machine. **You can update the default password while configuring the script.**|
-
 
 ## Automation Setup/Import
 
@@ -42,3 +37,9 @@ This script is used to track and lock down stolen systems. If Custom Field `cPVA
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

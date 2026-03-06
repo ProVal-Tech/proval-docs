@@ -8,6 +8,8 @@ description: 'Compound condition that triggers the user reboot prompt sequence w
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This compound condition orchestrates the "Reboot Pending Prompt" solution. It ut
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/reboot-pending-prompt-windows-workstation.toml)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

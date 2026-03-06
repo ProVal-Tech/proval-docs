@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating a dynamic
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -215,3 +217,9 @@ Click the `Save` button to save/create the group.
 ![Completed Group Image](../../../static/img/docs/7ef49988-2b75-441e-9373-bda734a03ea1/image_46.webp)
 
 ![Completed Group Image](../../../static/img/docs/7ef49988-2b75-441e-9373-bda734a03ea1/image_47.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

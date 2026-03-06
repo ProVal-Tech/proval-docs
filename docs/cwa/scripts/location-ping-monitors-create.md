@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on setting up Remote 
 tags: ['networking', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -95,3 +97,9 @@ This document details the procedure for setting up Remote Monitors for Location 
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

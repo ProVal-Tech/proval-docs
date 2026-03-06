@@ -8,6 +8,8 @@ description: 'This document outlines the necessary parameters required for using
 tags: ['networking', 'security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 <div class='text-section scrollable'>
@@ -43,3 +45,9 @@ The personal access token to use for VSA REST API authentication.
 </div>
 </div>
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

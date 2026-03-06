@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for performing an on-d
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Does this procedure depend on other VSA content? Link the ITGlue article for the
 ## Output
 
 Procedure log files and other outputs.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

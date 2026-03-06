@@ -8,6 +8,8 @@ description: 'This document outlines the setup and dependencies for the Unsynced
 tags: ['cwmanage', 'email']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-13
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Use the "△ Email RAWSQL Monitor set results to the Partner" alert template alo
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

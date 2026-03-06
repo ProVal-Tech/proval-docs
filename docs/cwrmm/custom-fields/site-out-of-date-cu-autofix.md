@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Out of Date Cumulative U
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Select the Out of Date Cumulative Update Autofix setting for the site. Available
 
 ![Screenshot 1](../../../static/img/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/7eb4d98b-4199-4f59-a28f-bfdf50f3e36a/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

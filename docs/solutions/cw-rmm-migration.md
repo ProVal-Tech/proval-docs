@@ -8,6 +8,8 @@ description: 'Outlines the process of migrating agents from CW Automate to CW RM
 tags: ['installation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Purpose
@@ -53,3 +55,9 @@ Configure the location level EDFs to initiate the solution.
 | RMMSiteToken | `71918cbc-981e-465d-9cb4-627e2883a10b` | RMM Migration | True | Text | | CW RMM Agent token for the site. |
 
 ![Image2](../../static/img/docs/f3f03288-5bce-4fb7-8a32-1ea41d698197/image2.webp)
+
+## Changelog
+
+### 2025-08-22
+
+- Initial version of the document

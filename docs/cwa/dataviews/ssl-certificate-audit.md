@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of all certificates pre
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This report is designed to present a complete list of all certificates found on 
 | CertAdded            | When the certificate was added/installed to the machine.                                         |
 | Data Collection Date  | When the last certification scan was performed.                                                  |
 | Status               | The certificate's current status in text.                                                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

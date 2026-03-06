@@ -8,6 +8,8 @@ description: 'Automates the process of downloading and installing Windows patche
 tags: ['windows', 'update', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-24
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ Searches for KB5074109, verifies it matches this machine (architecture, OS versi
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2026-02-20
+
+- Initial version of the document

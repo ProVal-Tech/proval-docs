@@ -8,6 +8,8 @@ description: 'This document provides an implementation guide for the Remove Powe
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ This is an Automate implementation of the agnostic script [Agnostic - Remove-Pow
 
 - Script Log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

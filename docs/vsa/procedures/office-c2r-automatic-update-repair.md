@@ -8,6 +8,8 @@ description: 'This document outlines the process to repair the Office Click2Run 
 tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This document describes the process to repair the Office Click2Run Automatic Upd
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

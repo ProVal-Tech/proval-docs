@@ -8,6 +8,8 @@ description: 'This solution outlines the process for detecting and monitoring Hy
 tags: ['windows', 'alerting', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-19
 ---
 
 ## Purpose
@@ -98,3 +100,9 @@ Configure the monitor [HyperV - Snapshot Age > 3 Days](/docs/172c15d2-01fd-421a-
 ### What should I do with the generated tickets?
 
 > Technicians should review stale snapshots and either delete them (if no longer needed) or document why they're being retained. Old snapshots consume storage and can impact backup and recovery operations.
+
+## Changelog
+
+### 2026-02-19
+
+- Initial version of the document

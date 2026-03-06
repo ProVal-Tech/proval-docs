@@ -8,6 +8,8 @@ description: 'The script retrieves the most recent version of FileZilla from its
 tags: ['application', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 ## Summary
@@ -32,3 +34,15 @@ This is a client script and is recommended to be scheduled to run daily during w
 ## Output
 
 - Property
+
+## Changelog
+
+### 2025-08-25
+
+- FileZilla changed their website's structure, breaking our existing logic to fetch the latest version and download URL.
+
+Therefore, updated the script according to their website's current structure.
+
+### 2025-04-04
+
+- Initial version of the document

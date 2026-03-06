@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to using the Offboard
 tags: ['software', 'ticketing', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -86,3 +88,9 @@ If any application fails to uninstall, it is likely that the machine needs to be
 **Location Level Ticketing:**  
 **Subject:** `Offboarding initiated on location - %LocationName%`  
 **Ticket Body:** `It seems like "Offboard Location" EDF has been selected for %LocationName%. %ScriptName% has been initiated to offboard all machines under this location.`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

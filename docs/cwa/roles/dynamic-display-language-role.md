@@ -8,6 +8,8 @@ description: 'This document explains how to detect the system locale in Windows 
 tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This is helpful to be used in a solution that has dependencies on the system out
 ## Sample
 
 ![Sample Image](../../../static/img/docs/8d228f8e-c660-4127-a9b4-7f11381b8eec/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

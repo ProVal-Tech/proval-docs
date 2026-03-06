@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the User Sessi
 tags: ['active-directory', 'database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ This document stores data about active user sessions on Windows machines.
 | LogonDate     | DATETIME | The date and time that the session was started.  |
 | SessionLength | INT      | The length in minutes of the audited session.    |
 | Timestamp     | DATETIME | The date and time that the audit was run.        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This solution gathers active network adapter details and updates c
 tags: ['dhcp','dns','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-26
 ---
 
 ## Purpose
@@ -105,3 +107,9 @@ This prevents incorrect or empty data from being stored.
 **Q10. What platforms are supported?**
 
 **A.** The script supports Windows systems across all architectures and is designed for automated execution via RMM tools.
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

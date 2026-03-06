@@ -8,6 +8,8 @@ description: 'Installs, updates, or executes Dell Command | Update (DCU) on Dell
 tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-20
 ---
 
 ## Overview
@@ -1411,4 +1413,10 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-06-16
+
+- Initial version of the document

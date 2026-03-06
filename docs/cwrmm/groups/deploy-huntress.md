@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a dynamic group in Conn
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_3.webp)
 
 ![Image](../../../static/img/docs/523b8882-2c51-4f70-ad7d-cb2b4baf7bbf/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed to detect Windows ma
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The monitor set will detect Windows machines where the PowerShell version is old
 ## Target
 
 Managed Windows Workstations and Servers
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

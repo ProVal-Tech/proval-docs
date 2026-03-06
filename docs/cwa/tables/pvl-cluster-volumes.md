@@ -8,6 +8,8 @@ description: 'This document provides an overview of the audit report for disk sp
 tags: ['disk', 'hyper-v', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ The purpose of this document is to store the audit report of the cluster disk sp
 | UsedSpace     | INT      | The used space on the cluster disk in the Hyper-V cluster server                                  |
 | PercentFree   | INT      | The available space on the cluster disk expressed as a percentage in the Hyper-V cluster server  |
 | ScriptRunTime | DATETIME | The script's last run date, indicating when the latest audit was performed via the script [CWA Script - Windows Cluster Volume Space Audit](/docs/cbd9495c-f2a7-44f1-9f84-55cfa1ac1490) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

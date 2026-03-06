@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to check if endpoints are domai
 tags: ['dns', 'report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This document checks endpoints to determine if they are domain-joined and report
 ## Implementation
 
 The Agent Procedure requires the Custom Field to be created beforehand.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

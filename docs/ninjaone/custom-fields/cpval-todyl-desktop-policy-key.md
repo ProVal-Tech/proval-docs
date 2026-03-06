@@ -8,6 +8,8 @@ description: 'Todyl Deployment Key for Desktop Agents'
 tags:  ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-03
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Todyl Deployment Key for Desktop Agents
 ## Custom Field Creation
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-todyl-desktop-policy-key.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

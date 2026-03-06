@@ -8,6 +8,8 @@ description: 'This document outlines a solution for retrieving file path and siz
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Purpose
@@ -46,3 +48,9 @@ This solution is designed to retrieve the file path and size details of OST and 
    - [Internal Monitor - Execute Script - Microsoft Outlook - OST/PST - Audit](/docs/d801eb05-05a3-4271-aa8c-a8ea4941f4eb)
    - Configure with the alert template: `△ Custom - Execute Script - Microsoft Outlook - OST/PST - Audit`
    - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

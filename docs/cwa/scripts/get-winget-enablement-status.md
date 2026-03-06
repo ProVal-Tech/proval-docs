@@ -8,6 +8,8 @@ description: 'The script checks whether Winget is enabled and available on Windo
 tags: ['windows', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The script checks whether Winget is enabled and available on Windows machines. A
 - Script Logs
 - EDF
 - Dataview
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

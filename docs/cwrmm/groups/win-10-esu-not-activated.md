@@ -8,6 +8,8 @@ description: 'This contains the list of machines where the script detects that t
 tags:  ['auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/4673c9d2-881d-43a1-b455-5d3b3cf0ae4d/image3.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

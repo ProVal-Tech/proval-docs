@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to enable the A
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Step 1
@@ -85,3 +87,9 @@ WHERE
 
 ## Step 5
 Navigate to the `Domain Controllers` group and validate the presence of the monitor set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

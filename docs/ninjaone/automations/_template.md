@@ -35,4 +35,9 @@ last_update:
 - Activity Details  
 - Custom Field
 
+<<<<<<< origin-new-script-install-microsoft-365-apps
 ## Changelog
+=======
+
+## Changelog
+>>>>>>> main

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating the Soji 
 tags: ['cleanup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-25
 ---
 
 ## Summary
@@ -304,3 +306,13 @@ Click the Save button to save the Automation.
 
 - Custom Field
     ![Image](../../../static/img/docs/soji-disk-cleanup-utility/image-1.png)
+
+## Changelog
+
+### 2025-06-25
+
+- Updated the script to save the result of Soji cleanup inn the Custom Field "cPVAL Soji Result".
+
+### 2025-05-06
+
+- Initial version of the document

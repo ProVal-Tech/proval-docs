@@ -8,6 +8,8 @@ description: 'This document outlines a script that creates a custom table named 
 tags: ['database', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script creates a custom table `plugin_proval_diskpart_style`. It runs Power
 ## Output
 
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

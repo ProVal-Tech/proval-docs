@@ -8,6 +8,8 @@ description: 'This document describes an autofix solution for remote monitors th
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ If the script determines the monitor is in a "success" state, it will go through
 **Script log messages**
 
 The script will create a ticket if necessary.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

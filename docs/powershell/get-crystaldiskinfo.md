@@ -8,6 +8,8 @@ description: 'Documentation for the Get-CrystalDiskInfo command to gather data p
 tags: ['performance', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -45,3 +47,9 @@ Location of output for log, result, and error files.
 .\Get-CrystalDiskInfo-log.txt
 .\Get-CrystalDiskInfo-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This condition ensures that the Enable or Disable Fast Boot [PVAL]
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This condition ensures that the [Enable or Disable Fast Boot [PVAL]](/docs/9aa78
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/fastboot-config-windows-servers.toml)
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

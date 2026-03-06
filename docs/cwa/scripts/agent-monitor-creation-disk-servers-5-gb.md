@@ -8,6 +8,8 @@ description: 'This document describes a script that creates remote monitors for 
 tags: ['disk', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ This script runs some SQL commands to create remote monitors for detected hard d
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a server.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

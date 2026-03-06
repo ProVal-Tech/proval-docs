@@ -8,6 +8,8 @@ description: 'To provide clients with professional-looking patch management repo
 tags: ['compliance', 'database', 'installation', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-24
 ---
 
 ## Purpose
@@ -143,3 +145,9 @@ At the end, all the machine scores are totaled and averaged to get the main perc
 
 If you see the following error when opening one of the reports, it means at least one of the views or the custom table is missing and cannot be referenced. If they are all present, verify that you have full permissions to the table and views.  
 ![Potential Problems](../../static/img/docs/6dd7be85-8983-413b-8f56-1426446f25da/image_4.webp)
+
+## Changelog
+
+### 2026-02-24
+
+- Initial version of the document

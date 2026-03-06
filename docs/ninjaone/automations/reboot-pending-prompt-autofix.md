@@ -8,6 +8,8 @@ description: 'Action script for the "Reboot Pending Prompt" solution. Downloads 
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Overview
@@ -81,3 +83,9 @@ Since RMM scripts run in the background (Session 0) and cannot normally show win
 
 **With Custom Header and Icon Image:**  
     ![Image2](../../../static/img/docs/7e3688a0-9f8f-40cf-9239-0e3593a84ba8/image2.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

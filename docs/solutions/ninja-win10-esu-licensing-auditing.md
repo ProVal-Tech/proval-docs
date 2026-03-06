@@ -8,6 +8,8 @@ description: 'This solution built to explain the ESU licensing audit and license
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Purpose
@@ -127,3 +129,9 @@ To activate ESU on machines:
 1. Configure the ESU key and year at the desired level (organization/location/device)
 2. Create a scheduled task using the [Windows 10 ESU License Upgrade](/docs/ba4df182-e419-4377-819f-ef55c34b0380) automation
 3. Target the [cPVAL Win10 ESU Not Activated](/docs/eece6281-68b5-49f6-9c47-e48f9c929bd4) group
+
+## Changelog
+
+### 2025-10-14
+
+- Initial version of the document

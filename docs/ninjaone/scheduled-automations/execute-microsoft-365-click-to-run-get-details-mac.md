@@ -8,6 +8,8 @@ description: 'Executes Microsoft 365 - Click-to-Run - Get Details(MAC) script on
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Executes Microsoft 365 - Click-to-Run - Get Details(MAC) script on mac machines
 ## Scheduled Automations Creation
 
 [Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/execute-microsoft-365-click-to-run-get-details-mac.toml)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

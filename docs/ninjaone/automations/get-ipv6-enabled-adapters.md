@@ -8,6 +8,8 @@ description: 'Checks if IPv6 is enabled on any network adapter on the local Wind
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -30,4 +32,10 @@ Checks if IPv6 is enabled on any network adapter on the local Windows machine. T
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

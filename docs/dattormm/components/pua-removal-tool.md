@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Datto RMM implementation
 tags: ['windows', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -39,3 +41,13 @@ Import PUA Removal Tool.cpt into the environment.
 ## Output
 
 stdOut & stdError
+
+## Changelog
+
+### 2025-05-05
+
+- Initial version of the document
+
+### 2025-04-01
+
+- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.

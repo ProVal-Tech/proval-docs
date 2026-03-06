@@ -8,6 +8,8 @@ description: 'This component creates a `Scheduled task` to ensure the Datto RMM 
 tags: ['windows','datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-01
 ---
 
 ## Overview
@@ -56,3 +58,9 @@ After Scheduling and setting expiration:-
 ## Attachments
 
 [Scheduled Task Creation -  Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)
+
+## Changelog
+
+### 2025-06-27
+
+- Initial version of the document

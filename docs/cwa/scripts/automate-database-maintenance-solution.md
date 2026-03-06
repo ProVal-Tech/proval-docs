@@ -8,6 +8,8 @@ description: 'This document details the Automate Database Maintenance Solution, 
 tags: ['cleanup', 'connectwise', 'database', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -122,3 +124,9 @@ This is a client-level script and should be scheduled to run regularly to mainta
 
 The script log represents a log file. This is a representation of the expected log file.  
 ![Expected Log File Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

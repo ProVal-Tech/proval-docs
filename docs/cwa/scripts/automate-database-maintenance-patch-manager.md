@@ -8,6 +8,8 @@ description: 'This document details a script used for maintaining the Automate d
 tags: ['cleanup', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Document the various variables in the script. Delete any section that is not rel
 This script will add the following section to the log variable:
 
 ![Output Image](../../../static/img/docs/225185fa-817d-49e9-8000-ebbf2e69cf2c/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

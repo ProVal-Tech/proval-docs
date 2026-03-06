@@ -8,8 +8,16 @@ description: 'This document provides a comprehensive guide on how to update OS c
 tags: ['software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
 
 Update OS Custom Fields
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

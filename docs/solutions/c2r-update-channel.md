@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on configuring the Cl
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -104,3 +106,9 @@ Confirm with a consultant before enabling the Automation.
 - **Internal Monitor:** [ProVal - Production - Execute Script - Update Channel - Set - Monthly Enterprise](/docs/a17fd169-876b-4de8-b01c-d396ec4899cf)
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 - **Alert Template:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Monthly Enterprise`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

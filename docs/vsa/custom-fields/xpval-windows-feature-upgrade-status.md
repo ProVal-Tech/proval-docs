@@ -8,6 +8,8 @@ description: 'This document outlines the various status codes associated with th
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Syntax
@@ -20,3 +22,9 @@ unlisted: false
 | Failure               | Set when installState = 2                                   |
 | Success               | Set when installState = 3                                   |
 | Reboot Pending        | Set when installState = 1 and lastReboot is less than installDate. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

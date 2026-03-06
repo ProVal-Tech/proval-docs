@@ -8,6 +8,8 @@ description: 'Documentation for the Set-LastLoggedOnUser command to set the last
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -72,3 +74,9 @@ Sets the specified user as the last logged-in user and restarts the computer imm
 
 - .\\Set-LastLoggedOnUser-Log.txt
 - .\\Set-LastLoggedOnUser-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

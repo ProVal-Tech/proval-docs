@@ -8,6 +8,8 @@ description: 'This document outlines a procedure for gathering the name, locatio
 tags: ['backup', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -71,3 +73,9 @@ This procedure gathers the name, location, and size of all the PST files on a ma
 ## Output
 
 Procedure log files and computer log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

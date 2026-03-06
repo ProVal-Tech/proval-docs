@@ -8,6 +8,8 @@ description: 'This document outlines a solution for automating the deployment of
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -124,3 +126,13 @@ This solution automates the deployment of a standard power plan to Windows machi
 ## Additional Notes
 
 Refer to the documentation accompanying the respective script for detailed instructions on its usage, including guidance on utilizing the script's parameters.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-04-04
+
+- Fixed the formatting issues with PowerPlan-related scripts

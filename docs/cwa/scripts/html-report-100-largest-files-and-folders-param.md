@@ -8,6 +8,8 @@ description: 'This document outlines a script that generates an HTML report of t
 tags: ['disk', 'email', 'report', 'storage', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The script sends an HTML report of the top 100 files and folders to the user exe
 ## Sample Report
 
 ![Sample Report](../../../static/img/docs/06840ba0-a4ed-402c-a759-dbb25efa0182/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

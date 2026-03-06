@@ -8,6 +8,8 @@ description: 'This script allows users to enable or disable various SSL and TLS 
 tags: ['internet-explorer', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -87,3 +89,9 @@ Various options are:
 - Script log
 - Script state
 - Data view
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
