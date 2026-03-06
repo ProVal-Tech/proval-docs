@@ -8,8 +8,6 @@ description: ''
 tags: []
 draft: true
 unlisted: false
-last_update:
-  date: 2026-03-06
 ---
 
 ## Overview
@@ -34,9 +32,3 @@ last_update:
 
 - Activity Details  
 - Custom Field
-
-## Changelog
-
-### 2026-03-06
-
-- Initial version of the document
