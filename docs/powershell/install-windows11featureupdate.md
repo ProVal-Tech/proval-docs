@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-25
+  date: 2026-03-06
 ---
 
 ## Overview
