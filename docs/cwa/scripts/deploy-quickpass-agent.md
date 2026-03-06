@@ -9,7 +9,7 @@ tags: ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-27
+  date: 2026-03-06
 ---
 
 ## Summary
@@ -20,11 +20,11 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 ## Sample Run
 
-**First Run:** Execute the script with the user parameter `Set_Environment` as `1` to import the System Property `QuickpassInstallToken` needed for the script.  
-![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_6.webp)
+**First Run:** Execute the script with the user parameter `Set_Environment` as `1` to import the System Property `QuickpassInstallToken`, and deployment EDFs needed for the script.  
+![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image8.webp)
 
 **Regular Run:**  
-![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image_1.webp)
+![Sample Run](../../../static/img/docs/ab838395-dc94-4ceb-986e-99d00b005198/image9.webp)
 
 ## Dependencies
 
@@ -35,14 +35,14 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 
 | Name                    | Required | Example | Description                                                                                                    |
 |-------------------------|----------|---------|----------------------------------------------------------------------------------------------------------------|
-| Ticket_On_Failure       | False    | 1       | Fill it as '1' if you would like to receive a ticket on failure; otherwise, leave it blank or set it to '0'. |
-| TicketCreationCategory   | False    | 298     | Mention the ticket creation category to direct the tickets to the right board in Manage                      |
+| region       | False    | NA       | Set it to the region code for the installation of the Quickpass |
+
 
 ## User Parameter
 
 | Name              | Required | Example | Description                                                                                                    |
 |-------------------|----------|---------|----------------------------------------------------------------------------------------------------------------|
-| Set_Environment    | False    | 1       | Running the script with the user parameter `Set_Environment` as `1` will import the System Property `QuickpassInstallToken` needed for the script. <em><strong>Note:</strong> Set to 1 for first-time implementation.</em> |
+| Set_Environment    | False    | 1       | Running the script with the user parameter `Set_Environment` as `1` will import the System Property `QuickpassInstallToken` and the required deployment EDFs needed for the script. <em><strong>Note:</strong> Set to 1 for first-time implementation.</em> |
 
 ## System Property
 
@@ -89,27 +89,14 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 **Ticket Body:**
 
 ```PlainText
-Failed to install QuickPass Agent on %computername% at %clientname%. Here are the results returned from the installer: %shellresult%
-
-The PC information is outlined below:  
-PC Name: %computername%  
-Last Login: %lastuser%  
-PC Model: @biosname@  
-OS: %os%  
-S/N OF PC: @biosver@
+Failed to start Quickpass Server Agent Service. Confirm the variables 'QPInstallTokenID' and 'QPAgentID' are defined and try again, or check the error logs: %shellresult%
 ```
 
 **When the script fails to download the installer:**
 
 ```PlainText
-QuickPass Agent failed to download on %computername% at %clientname%. Please ensure that the computer can reach the download URL [https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe](https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe)
+Failed to download Quickpass-Agent-Setup.exe on %computername% at %clientname%. Please ensure that the computer can reach the download URL [https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe](https://storage.googleapis.com/qp-installer/production/Quickpass-Agent-Setup.exe)
 
-The PC information is outlined below:  
-PC Name: %computername%  
-Last Login: %lastuser%  
-PC Model: @biosname@  
-OS: %os%  
-S/N OF PC: @biosver@
 ```
 
 ## Changelog
@@ -117,3 +104,11 @@ S/N OF PC: @biosver@
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2026-03-06
+
+- Modified the logic of the deployment
+- Formatted it correctly, to fetch the EDFs and system property value using SQL rather than script functionality.
+- Adjusted the script to create ticket if the `TicketCategory` is set in the monitor 
+- Used latest vendor logic for the deployment
+- Tested and ensured it works well now.
