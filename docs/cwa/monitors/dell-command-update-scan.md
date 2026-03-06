@@ -32,5 +32,4 @@ Global
 
 ### 2026-03-06
 
-- Deprecated the [Monitor - Dell Command Update Handler - Run Scan Command](/docs/cbdea50e-32ca-413e-863d-bbf15836cb1b)
 - Modified the previous dell command update handler solution with this to use the agnostic script and store the detailed information of the Dell command updates into a [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
