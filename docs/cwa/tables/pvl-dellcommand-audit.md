@@ -4,7 +4,7 @@ slug: /21a8afce-3a1c-4bdf-b2d2-a5581583e27c
 title: 'pvl_dellcommand_audit'
 title_meta: 'pvl_dellcommand_audit'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
-description: 'This table stores the scan data fetched by the script.'
+description: 'This table stores the dell command scan data fetched by the script.'
 tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-This table stores the scan data fetched by the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276).
+This table stores the dell command scan data fetched by the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276).
 
 ## Dependencies
 
