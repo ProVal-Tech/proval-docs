@@ -14,7 +14,11 @@ last_update:
 
 ## Purpose
 
-This solution is built to perform the Dell Command Update scanning audit and updates.
+This solution is built to perform the Dell Command Update scanning audit and updates using agnostic script.
+
+## Deprecate Content
+
+- It is a replacement for the solution [Dell command update](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Associated Audit Content
 

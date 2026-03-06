@@ -1,6 +1,5 @@
 ---  
 id:  'f42c31ea-ee44-4c51-b7b1-04b595f1368b'
-slug: /f42c31ea-ee44-4c51-b7b1-04b595f1368b
 title:  'Dell Command Update Scan'
 title_meta:  'Dell Command Update Scan'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']  
