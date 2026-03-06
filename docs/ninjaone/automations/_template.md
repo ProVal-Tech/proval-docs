@@ -9,7 +9,7 @@ tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2026-03-06
+  date: 2025-07-23
 ---
 
 ## Overview
@@ -36,5 +36,3 @@ last_update:
 - Custom Field
 
 ## Changelog
-
-### 2026-03-06
