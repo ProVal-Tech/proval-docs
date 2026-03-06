@@ -26,10 +26,10 @@ This guide explains how to install Microsoft 365 Apps for Business or any Micros
 
 ## User Parameters
 
-| Name    | Example                                              | Required | Type        | Description                                                                                                                                                    |
-| ------- | ---------------------------------------------------- | -------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| XMLPath | `https://pathtoxml.com` `C:\Temp\FileName.xml` | False    | Text String | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. If not provided, a default configuration is used. |
-| Restart | `Yes` / `True` / `1`                                 | False    | Flag        | Optional. Performs a system restart after installation.                                                                                                        |
+| Name | Example | Required | Type | Description |
+| ---- | ------- | -------- | ---- | ----------- |
+| `XMLPath` | `https://pathtoxml.com` `C:\Temp\FileName.xml` | False | Text String | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. If not provided, a default configuration is used. |
+| `Restart` | `0/1` | False | Flag | Optional. Performs a system restart after installation. |
 
 ## Automation Setup/Import
 
