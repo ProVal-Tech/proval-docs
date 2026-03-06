@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-09-25
+  date: 2026-03-06
 ---
 
 ## Overview
@@ -109,6 +109,12 @@ The script generates the following output files:
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ## Changelog
+
+### 2026-03-06
+
+- Modified the drive space check logic to use version-specific requirements.
+- Machines on build 10.0.26100 (Windows 11 24H2) or newer require 24GB of free space.
+- Machines on builds older than 10.0.26100 continue to require 64GB of free space.
 
 ### 2025-10-10
 
