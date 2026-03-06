@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing Microsoft 36
 tags: ['application', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-06
 ---
 
 ## Overview
@@ -29,7 +31,7 @@ This guide explains how to install Microsoft 365 Apps for Business or any Micros
 | Name | Example | Required | Type | Description |
 | ---- | ------- | -------- | ---- | ----------- |
 | `XMLPath` | `https://pathtoxml.com` `C:\Temp\FileName.xml` | False | Text String | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. If not provided, a default configuration is used. |
-| `Restart` | `0/1` | False | Flag | Optional. Performs a system restart after installation. |
+| `Restart` | `0 - 1` | False | Flag | Optional. Performs a system restart after installation. |
 
 ## Automation Setup/Import
 
@@ -38,3 +40,9 @@ This guide explains how to install Microsoft 365 Apps for Business or any Micros
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2026-03-06
+
+- Initial version of the document
