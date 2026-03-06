@@ -110,6 +110,12 @@ The script generates the following output files:
 
 ## Changelog
 
+### 2026-03-06
+
+- Modified the drive space check logic to use version-specific requirements.
+- Machines on build 10.0.26100 (Windows 11 24H2) or newer require 24GB of free space.
+- Machines on builds older than 10.0.26100 continue to require 64GB of free space.
+
 ### 2025-10-10
 
 - Added 25H2 to windows-os-support.json (https://content.provaltech.com/attachments/windows-os-support.json)
