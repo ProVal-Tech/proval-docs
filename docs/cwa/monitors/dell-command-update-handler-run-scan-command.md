@@ -6,7 +6,7 @@ title_meta: 'Dell Command Update Handler - Run Scan Command'
 keywords: ['dell', 'monitor', 'update', 'workstation', 'windows']
 description: 'This document outlines the setup of a monitor set designed to execute the Dell Command Update script weekly on Dell Workstations running Windows 10 and 11. The script is run with the /scan command to gather data for auditing purposes.'
 tags: ['dell', 'update', 'windows']
-draft: false
+draft: true
 unlisted: false
 last_update:
   date: 2025-05-09

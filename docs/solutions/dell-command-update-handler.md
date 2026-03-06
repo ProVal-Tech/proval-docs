@@ -59,4 +59,7 @@ Yes
 
 ## Changelog
 
-2026-03-06
+### 2026-03-06
+
+- Updated the solution to use the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) to fetch the dell command scanned update using automation as well as the update feature if arguments passed.
+- Updated the [Dataview - Dell Command Scan Audit](/docs/08c932b0-f79a-4c37-bfbe-c2aade829abb) to show the detailed Dell updates using [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) script.

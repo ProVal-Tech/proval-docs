@@ -6,7 +6,7 @@ title_meta: 'Dell Command Update'
 keywords: ['dell', 'update', 'execution', 'workstations', 'commands']
 description: 'This document outlines the process for executing Dell Command | Update CLI commands on Dell Workstations and provides a comprehensive display of the results. It includes associated content, implementation steps, and relevant links for further assistance.'
 tags: ['dell', 'installation', 'update', 'windows']
-draft: false
+draft: true
 unlisted: false
 last_update:
   date: 2025-05-09

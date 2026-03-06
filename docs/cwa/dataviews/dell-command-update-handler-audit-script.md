@@ -6,7 +6,7 @@ title_meta: 'Dell Command Update Handler - Audit [Script]'
 keywords: ['html', 'markdown', 'conversion', 'content', 'empty']
 description: 'The purpose of this dataview is to display the last execution result of Script - Dell Command Update - Install/Upgrade + Command Handler script for the Dell Workstations. '
 tags: ['report', 'dell']
-draft: false
+draft: true
 unlisted: false
 last_update:
   date: 2025-06-16

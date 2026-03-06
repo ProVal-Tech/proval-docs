@@ -103,4 +103,5 @@ Running the script without passing arguments to perform the auditing and store d
 
 ### 2026-03-05
 
-- Updated Automate Implementation version of the document
+- Deprecated the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747)
+- Updated Automate Implementation version of the document to use the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) to perform the Dell command scan audit if no arguments is passed and update using arguments.

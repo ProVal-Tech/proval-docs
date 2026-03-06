@@ -39,3 +39,5 @@ pvl_dellcommand_audit
 ## Changelog
 
 ### 2026-03-05
+
+- Updated the solution to use the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) to fetch the dell command scanned update using automation as well as the update feature if arguments passed.

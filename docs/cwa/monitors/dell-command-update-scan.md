@@ -24,22 +24,13 @@ This monitor fetches the online Dell Windows agent and executes the Dell Command
 
 Global
 
-## Implementation
+## Alert Template
 
-- Import the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
-- Import the [Monitor - Dell Command Update Scan](/docs/f42c31ea-ee44-4c51-b7b1-04b595f1368b) 
-- Import the [Dataview - Dell Command Scan Audit](/docs/08c932b0-f79a-4c37-bfbe-c2aade829abb) 
-- Import the **Alert Template - △ Custom - Execute Script - Dell Command Scan**
-
-- Run the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276) with `SetEnvironment` = 1, just after importing it, so that if creates the required table and the EDFs.
-- Reload the system cache
-- Apply the **Alert Template - △ Custom - Execute Script - Dell Command Scan** with the [Monitor - Dell Command Update Scan](/docs/f42c31ea-ee44-4c51-b7b1-04b595f1368b).
-- Right click and run now and reset the monitor for setting the auditing.
+- **Alert Template - △ Custom - Execute Script - Dell Command Scan**
 
 ## Changelog
 
+### 2026-03-06
+
+- Deprecated the [Monitor - Dell Command Update Handler - Run Scan Command](/docs/cbdea50e-32ca-413e-863d-bbf15836cb1b)
 - Modified the previous dell command update handler solution with this to use the agnostic script and store the detailed information of the Dell command updates into a [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
-
-## Changelog
-
-2026-03-06

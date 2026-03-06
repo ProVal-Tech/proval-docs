@@ -43,4 +43,7 @@ This dataview collects the information of the Dell updates available on the Dell
 
 ## Changelog
 
+### 2026-03-06
+
+- Deprecated content [Dataview - Dell Command Update Handler - Audit [Script]](/docs/1a188004-4007-40dc-8c44-d64d3c0d2bb8)
 - Updated implementation created using [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f).
