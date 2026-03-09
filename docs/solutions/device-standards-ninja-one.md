@@ -123,7 +123,7 @@ A: Regular reviews are recommended—typically quarterly or whenever there are s
 **Q: What happens if a solution causes unexpected issues on some devices?**  
 A: Each solution includes reversal scripts and the ability to quickly exclude affected devices through custom field settings. This allows for rapid remediation without affecting other devices.
 
-**Q: Can we add our own custom solutions to this framework?**
+**Q: Can we add our own custom solutions to this framework?**  
 A: Yes, the Device Standards framework is designed to be extensible. You can develop additional standardization solutions following the same pattern and incorporate them into your overall device management strategy.
 
 **Q: How do these solutions handle different versions of Windows?**  
@@ -135,7 +135,7 @@ A: The solutions are designed to work across supported versions of Windows, with
 
 ### 2026-03-06
 
-- Added Update Windows Deferral Settings solution.
+- Added [Solution: Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1).
 
 ### 2025-09-17
 

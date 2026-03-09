@@ -26,7 +26,7 @@ This field controls the Windows Update Branch Readiness Level. Select the approp
 
 - [Solution: Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1)
 - [Solution - Device Standards](/docs/a0c383d4-699a-4bb8-af7f-c2a007747182)
-- [Automation: update windows deferral settings](/docs/5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a)
+
 
 ## Custom Field Creation
 
