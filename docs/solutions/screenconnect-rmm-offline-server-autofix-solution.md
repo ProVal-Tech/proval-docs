@@ -66,7 +66,7 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 - `△ Custom - Autofix - Critical Machine Offline (RMM+)`
   - This will create the ticket entirely through the autofix script, ensuring the initial description of the ticket contains helpful computer information and is automatically adapted for different types of machines, such as critical workstations, Linux, and Mac machines.
-  ![Autofix Ticket Example](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_3.webp)
+  ![Autofix Ticket Example](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_3.webp)
 
 ## FAQ
 
