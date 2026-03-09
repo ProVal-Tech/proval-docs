@@ -41,9 +41,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Get Windows Hello Status`  
-**Description:** `This script retrieves whether Windows Hello is enabled on the device and, if so, identifies which authentication method is currently in use.`  
-**Category:** `Custom`
+- **Name:** `Get Windows Hello Status`  
+- **Description:** `This script retrieves whether Windows Hello is enabled on the device and, if so, identifies which authentication method is currently in use.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2de3c07b-22ab-4796-90b9-e6e0f4082299/image1.webp)
 
@@ -196,9 +196,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Task Details
 
-**Name:** `Get Windows Hello Status`  
-**Description:** `This script retrieves whether Windows Hello is enabled on the device and, if so, identifies which authentication method is currently in use.`  
-**Category:** `Custom`
+- **Name:** `Get Windows Hello Status`  
+- **Description:** `This script retrieves whether Windows Hello is enabled on the device and, if so, identifies which authentication method is currently in use.`  
+- **Category:** `Custom`
 
 
 ### Schedule
@@ -212,7 +212,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Targeted Resource
 
-**Device Group:** `'Machines Opted For Windows Hello Audit`
+**Device Groups:** `'Machines Opted For Windows Hello Audit`
 
 ![Image](../../../static/img/docs/2de3c07b-22ab-4796-90b9-e6e0f4082299/image6.webp)
 

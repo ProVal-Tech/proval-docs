@@ -32,16 +32,16 @@ This group includes machines where the Windows Hello audit is enabled.
 
 ## Group Criteria
 
-The group is defined by the following **criteria**
+The group is defined by the following **criteria** joined by `AND` condition.
 
 | Criteria Name          | Operator        | Value(s)                                 |
 |-----------------------|-----------------|-------------------------------------------|
 | Enable Windows Hello Audit    | Equal               | `True` |
-| Exclude Windows Hello Audit      | Equal     | `False` |
-| Exclude DNSFilter deployment      | Equal     | `False` |
+| Exclude Windows Hello Audit  (Site)      | Equal     | `False` |
+| Exclude Windows Hello Audit  (Endpoint)      | Equal     | `False` |
 | Available   | Equal    | `True` |
 | OS Type  | Equal    | `Windows` |
-| Endpoint Type  | Not Equal    | `Laptop` |
+| Endpoint Type  | Contains any of    | `Laptop`, `Desktop` |
 
 
 ## Completed Group
