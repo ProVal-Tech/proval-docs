@@ -1,8 +1,8 @@
 ---
 id: 'c53aa0aa-4c52-4cd7-9971-f99662b4cbec'
 slug: /c53aa0aa-4c52-4cd7-9971-f99662b4cbec
-title: 'CWM - Automate - ScreenConnect RMM+ - Offline Server AutoFix Solution'
-title_meta: 'CWM - Automate - ScreenConnect RMM+ - Offline Server AutoFix Solution'
+title: 'ScreenConnect RMM+ - Offline Server AutoFix'
+title_meta: 'ScreenConnect RMM+ - Offline Server AutoFix'
 keywords: ['autofix', 'offline', 'server', 'agent', 'connectwise', 'monitor']
 description: 'This document outlines a solution for accurate offline server and critical agent reporting in ConnectWise Automate, including remediation steps when discrepancies between ScreenConnect and Automate are detected. It also details the implementation of associated scripts and monitors, ensuring efficient ticket management and automation.'
 tags: []
@@ -29,9 +29,9 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 ## Additional Content
 
-| Content                                                                 | Type          | Function                                                                                                                                                                                                                                           |
-|-------------------------------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) | Document      | This document helps with configuring the RMM+ Plugin and explains how to create sessions for machines that have not checked in for over '**X**' number of days.                                                                                                                                 |
+| Content                     | Type          | Function                                    |
+|----------------------------|---------------|----------------------------------------------|
+| [RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246) | Document      | This document helps with configuring the RMM+ Plugin and explains how to create sessions for machines that have not checked in for over '**X**' number of days.                                                                                                                                 |
 
 ## Implementation
 
@@ -41,8 +41,8 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
    - Import the Alert Template "**△ Custom - Autofix - Critical Machine Offline (RMM+)**"
    - Import the Alert Template "**△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)**"
 
-2. Reload the system cache:
-   ![Cache Reload](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_1.webp)
+2. Reload the system cache:  
+   ![Cache Reload](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_1.webp)
 
 3. Configure the solution as outlined below:
    - Navigate to Automation -> Monitors within the CWA Control Center and set up the following:
@@ -58,7 +58,11 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 - `△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)`
   - This will create a ticket using the default create ticket functionality rather than using the script to create the ticket. This ensures that the ticket gets generated whether the scripting engine is overloaded or not. The downside of using this is that the initial description of the tickets is not as detailed with additional computer information.
-  ![Default Ticket Example](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_2.webp)
+  ![Default Ticket Example](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_2.webp)  
+  
+![Step3](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_2.webp)
+
+
 
 - `△ Custom - Autofix - Critical Machine Offline (RMM+)`
   - This will create the ticket entirely through the autofix script, ensuring the initial description of the ticket contains helpful computer information and is automatically adapted for different types of machines, such as critical workstations, Linux, and Mac machines.
@@ -71,10 +75,10 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 
 2. **What are the differences between the two tickets, and how do they look?**
    - For the Default Ticket creation alert template, the initial description should look something like this:
-     ![Default Ticket Description](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_4.webp)
+     ![Default Ticket Description](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_4.webp)
 
    - For the ticket creation from the script, the initial description should look something like this:
-     ![Script Ticket Description](../../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_5.webp)
+     ![Script Ticket Description](../../static/img/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec/image_5.webp)
      - Keep in mind that for any other machine types, the word 'Server' will be replaced with the type of critical machine that is offline. Those potential options are as follows:
        - 'Critical Mac Machine'
        - 'Linux Machine'
@@ -87,3 +91,7 @@ Note: For this solution to work, it is mandatory to have the RMM+ configured in 
 ### 2025-04-10
 
 - Initial version of the document
+
+### 2026-03-09
+
+- Solution name changed from `CWM - Automate - ScreenConnect RMM+ - Offline Server AutoFix Solution` to `ScreenConnect RMM+ - Offline Server AutoFix`.
