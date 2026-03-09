@@ -45,7 +45,7 @@ Run the script with the `Set_Environment` parameter set to `1` to generate the r
 
 - If using the default file repository, the version of Windows being upgraded must be the US version.
 - [file.provaltech.com](https://file.provaltech.com) must be fully whitelisted in all security systems.
-- [contentrepo.net](contentrepo.net) must be fully whitelisted in all security systems.
+- [contentrepo.net](https://contentrepo.net) must be fully whitelisted in all security systems.
 - [windows-os-support.json](https://content.provaltech.com/attachments/windows-os-support.json) must be whitelisted in all security systems.
 - [windows-upgrader.exe](https://contentrepo.net/repo/app/windows-upgrader.exe) must be whitelisted in all security systems.  
 - [App: Windows Upgrader](/docs/8c083d5d-a464-4937-91ef-980a062b26fd)
