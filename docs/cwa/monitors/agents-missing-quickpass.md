@@ -37,12 +37,14 @@ Global
 
 ## Changelog
 
+### 2026-03-06
+
+- Adjusted the monitor to make it constrained and have it shorten by removing unnecessary joins.
+- Added the check for the "QuickPass Agent ID" EDFs inside the monitor, if it is missing at the location or client-level then ignore agents.
+
 ### 2025-10-27
 
 - Initial version of the document
   
-### 2026-03-06
 
-- Adjusted the monitor to make it constrained and have it shorten by removing unnecessary joins.
-- Added the check for the "QuickPass Agent ID" check inside the monitor, if it is missing at the location or client-level then ignore agents.
 

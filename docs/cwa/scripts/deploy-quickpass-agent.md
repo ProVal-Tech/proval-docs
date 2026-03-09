@@ -101,14 +101,13 @@ Failed to download Quickpass-Agent-Setup.exe on %computername% at %clientname%. 
 
 ## Changelog
 
+### 2026-03-06
+
+- Updated the script to fetch the EDFs and system property value using SQL rather than script functionality.
+- Adjusted the script to create ticket if the `TicketCategory` is set in the monitor 
+- Used latest vendor logic for the deployment
+
 ### 2025-04-10
 
 - Initial version of the document
 
-### 2026-03-06
-
-- Modified the logic of the deployment
-- Formatted it correctly, to fetch the EDFs and system property value using SQL rather than script functionality.
-- Adjusted the script to create ticket if the `TicketCategory` is set in the monitor 
-- Used latest vendor logic for the deployment
-- Tested and ensured it works well now.
