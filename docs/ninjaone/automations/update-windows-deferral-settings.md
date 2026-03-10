@@ -33,7 +33,7 @@ Controls the Windows Update deferral configuration for the device, including fea
 
 | Name | Accepted Values | Required | Type | Description |
 | ---- | --------------- | -------- | ---- | ----------- |
-| DeferFeatureUpdates | `Enabled` , `Disabled` | False | `DropDown` | The value in the Custom Field must be set to either Enabled or Disabled. The script will then read this value and configure the corresponding setting accordingly (using 0 or 1 based on the Custom Field data). |
+| DeferFeatureUpdates | `Enabled` , `Disabled` | False | `DropDown` | The value in this parameter must be set to either Enabled or Disabled. This overrides the value stored in the custom field|
 | BranchReadinessLevel | `16`,`32` | False | `Dropdown` | This field controls the Windows Update Branch Readiness Level. Select the appropriate channel to determine which feature update builds the device will receive. |
 | DeferFeatureUpdatesPeriodInDays | `0-365` | False | `Integer` | Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days. |
 
