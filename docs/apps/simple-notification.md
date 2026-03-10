@@ -22,9 +22,9 @@ SimpleNotification is a lightweight application designed to show a simple notifi
 
 The application automatically resizes itself based on the length of your message. Short alerts will display in a standard, compact window, while longer messages will cause the notification window to dynamically expand to fit the text comfortably.
 
-- **Small Layout (<= 300 characters):** Retains the original compact footprint (500x150).
-- **Medium Layout (301 – 500 characters):** Expands the form (550x190) and text box (376x123), shifting contact labels and the close button proportionally.
-- **Large Layout (> 500 characters):** Maximizes the form (600x230) and text box (426x163) to comfortably fit long paragraphs without clipping.
+- **Small Layout (less than equal 300 characters):** Retains the original compact footprint (500x150).
+- **Medium Layout (between 301 – 500 characters):** Expands the form (550x190) and text box (376x123), shifting contact labels and the close button proportionally.
+- **Large Layout (greater than 500 characters):** Maximizes the form (600x230) and text box (426x163) to comfortably fit long paragraphs without clipping.
 
 **Note:**
 
@@ -96,7 +96,7 @@ SimpleNotification.exe --Message "Attention human. You are reading this because 
 ### 2026-03-10
 
 - Implemented dynamic UI resizing for the notification prompt based on the length of the incoming message.
-- Added three responsive layout tiers: Small (less than equal to 300 characters), Medium (between 301-500 characters), and Large (greater than 500 characters).
+- Added three responsive layout tiers: Small (less than equal 300 characters), Medium (between 301-500 characters), and Large (greater than 500 characters).
 - Established a maximum character limit of 888 characters for the Large layout; exceeding text will not be displayed.
 - Preserved the base 500x150 layout in the visual designer, utilizing code-behind logic to handle all dynamic resizing at runtime.
 
