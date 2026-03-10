@@ -76,7 +76,7 @@ The message parameter is mandatory to display the message to the user. All other
 ### 2026-03-10
 
 - Implemented dynamic UI resizing for the notification prompt based on the length of the incoming message.
-- Added three responsive layout tiers: Small (<= 300 characters), Medium (301-500 characters), and Large (> 500 characters).
+- Added three responsive layout tiers: Small (less than equal to 300 characters), Medium (between 301-500 characters), and Large (greater than 500 characters).
 - Established a maximum character limit of 888 characters for the Large layout; exceeding text will not be displayed.
 - Preserved the base 500x150 layout in the visual designer, utilizing code-behind logic to handle all dynamic resizing at runtime.
 - Signed the PS1 script
