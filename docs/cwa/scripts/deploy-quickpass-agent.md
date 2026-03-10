@@ -89,7 +89,7 @@ This script installs the QuickPass Agent on Windows machines where it is not alr
 **Ticket Body:**
 
 ```PlainText
-Failed to start Quickpass Server Agent Service. Confirm the variables 'QPInstallTokenID' and 'QPAgentID' are defined and try again, or check the error logs: %shellresult%
+Failed to start Quickpass Server Agent Service. Confirm the variable `QuickPassDeploy` = '@QuickpassDeploy@',` QuickPassAgentID` = '@QuickpassAgentID@', `QuickPassToken` = '@Token@'. are defined and try again, or check the error logs: %shellresult%
 ```
 
 **When the script fails to download the installer:**
