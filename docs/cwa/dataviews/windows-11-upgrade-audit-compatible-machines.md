@@ -60,7 +60,11 @@ Displays the status of compatible Windows 10 and 11 computers upgraded by the [I
 ### 2026-03-09
 
 - Renamed the dataview to `Windows 11 Upgrade Audit [Compatible Machines]` From `Windows 11 Installation Audit [Compatible Machines]`.
-- Added new columns for better reporting on both `Windows 11 24H2 Installation` and `Windows 11 Latest Feature Update`.
+- Added below new columns for better reporting on both `Windows 11 24H2 Installation` and `Windows 11 Latest Feature Update`:
+  - Upgrade Script Executed
+  - Upgrade Script RunTime
+  - Upgrade Attempts
+  - Upgrade Status
 - Added Format Control.
 
 ### 2025-04-10

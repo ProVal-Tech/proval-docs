@@ -112,6 +112,7 @@ There is an option to enable ticketing for machines where automation fails three
 | **Create Installation Failure Tickets** | Check-Box | Client | Windows 11 Feature Update | Enable this option to automatically generate tickets for computers with more than 3 failed installation attempts. |
 | **Exclude Windows 11 Installation** | Check-Box | Location | Exclusions | Enable this option to exclude all computers at this location from the Windows 11 Installation and Upgrade solution. |
 | **Exclude Windows 11 Installation** | Check-Box | Computer | Windows 11 Feature Update | Enable this option to exclude this computer from the Windows 11 Installation and Upgrade solution. |
+| **Windows 11 Installation Attempts** | Text | Computer | Windows 11 Feature Update | A non-editable EDF, updated by the installer script to track failure counts. |
 | **Windows 11 Upgrade Script Executed** | Text | Computer | Windows 11 Feature Update | Read-only field that records the name of the most recently executed upgrade script. |
 | **Windows 11 Upgrade Script RunTime** | Text | Computer | Windows 11 Feature Update | Read-only field that records the start time of the most recently executed upgrade script. |
 | **Windows 11 Version Before Script Run** | Text | Computer | Windows 11 Feature Update | Read-only field that records the OS build of the machine prior to the script execution. |
