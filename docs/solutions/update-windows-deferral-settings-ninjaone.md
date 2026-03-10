@@ -22,10 +22,10 @@ The goal of the solution is to check and update the deferral feature update regi
 
 | Content | Type | Available Options | Function |
 | ------- | ---- | ----------------- | -------- |
-| [cPVAL DeferFeatureUpdates](/docs/297e4a2e-e7a3-43ea-bbae-a88715d472b4) | `Custom Filed` | `Enabled`, `Disabled` | This custom field is used to store the values for DeferFeatureUpdates. It contains two possible values: 1 = Enabled, 2 = Disabled. |
-| [cPVAL BranchReadinessLevel](/docs/c4accdf3-29e3-4dda-8a05-eae9093d629e) | `Custom Filed` | `16`, `32` | This field controls the Windows Update Branch Readiness Level. Select the appropriate channel to determine which feature update builds the device will receive. |
-| [cPVAL Feature Update Configuration](/docs/29e44495-0c4b-425c-bb1f-118dab2633e2) | `Custom Filed` | `Disabled`, `Windows`, `Windows Servers`, `Windows Workstations` | This Custom Fields Controls the Configuration of Feature update deferral on the machine based on the selected operating system. Choose Disabled to skip applying this setting to the current Client, Location, or Computer. |
-| [cPVAL DeferFeatureUpdatesPeriodInDays](/docs/0cb57dd0-6349-4544-a146-f822e6dccceb) | `Custom Filed` | `0-365` | Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days. |
+| [cPVAL DeferFeatureUpdates](/docs/297e4a2e-e7a3-43ea-bbae-a88715d472b4) | `Custom Field` | `Enabled`, `Disabled` | This custom field is used to store the values for DeferFeatureUpdates. It contains two possible values: 1 = Enabled, 2 = Disabled. |
+| [cPVAL BranchReadinessLevel](/docs/c4accdf3-29e3-4dda-8a05-eae9093d629e) | `Custom Field` | `16`, `32` | This field controls the Windows Update Branch Readiness Level. Select the appropriate channel to determine which feature update builds the device will receive. |
+| [cPVAL Feature Update Configuration](/docs/29e44495-0c4b-425c-bb1f-118dab2633e2) | `Custom Field` | `Disabled`, `Windows`, `Windows Servers`, `Windows Workstations` | This Custom Fields Controls the Configuration of Feature update deferral on the machine based on the selected operating system. Choose Disabled to skip applying this setting to the current Client, Location, or Computer. |
+| [cPVAL DeferFeatureUpdatesPeriodInDays](/docs/0cb57dd0-6349-4544-a146-f822e6dccceb) | `Custom Field` | `0-365` | Specifies the number of days to defer Windows feature updates. Accepts values between 0 and 365 days. |
 
 ### Automation
 

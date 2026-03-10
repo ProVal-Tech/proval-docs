@@ -28,7 +28,7 @@ Reads current Windows Update deferral registry values and compares them against 
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/winupdate-deferral-Audit.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/winupdate-deferral-audit.ps1)
 
 ## Output
 
