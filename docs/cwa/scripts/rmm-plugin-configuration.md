@@ -82,6 +82,3 @@ Create a session group in the ScreenConnect portal for machines that have not ch
 
 - Initial version of the document
 
-### 2026-03-09
-
-- Name changed from `CWM - Automate - RMM+ Plugin Configuration` to `RMM+ Plugin Configuration`
