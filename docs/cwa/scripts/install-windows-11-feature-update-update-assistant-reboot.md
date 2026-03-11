@@ -18,6 +18,8 @@ This script is an adaptation of the built-in `Windows 11 - Install Latest Featur
 
 > Executes the [Windows 11 Feature Update [Cleanup]](/docs/e0f9ecf2-eac8-4bd1-a269-0dbf7bd0a645) script after a 150-minute delay to initiate the cleanup process.
 
+> NOTE: This script reboots the computer during the process and reboot can't be excluded.
+
 ## Sample Run
 
 ### First Run
