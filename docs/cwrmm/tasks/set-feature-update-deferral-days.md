@@ -1,6 +1,6 @@
 ---
-id: 'ffdbfea6-21fd-44b6-9eca-c42529652a47'
-slug: /ffdbfea6-21fd-44b6-9eca-c42529652a47
+id: '4a9a6325-a499-4260-85e2-ba83e472403e'
+slug: /4a9a6325-a499-4260-85e2-ba83e472403e
 title: 'Set Feature Update Deferral Days'
 title_meta: 'Set Feature Update Deferral Days'
 keywords: ['windows-11', 'feature-update', 'feature-update-deferral', 'defer-feature-update', 'windows-update-policy']
