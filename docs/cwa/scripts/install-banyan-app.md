@@ -1,9 +1,9 @@
 ---
 id: '3a7001bb-a38b-11f0-9766-92000234cfc2'
 slug: /3a7001bb-a38b-11f0-9766-92000234cfc2
-title: 'Install Banyan App'
-title_meta: 'Install Banyan App'
-keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app']
+title: 'Install Banyan App [SonicWall Cloud Secure Edge]'
+title_meta: 'Install Banyan App [SonicWall Cloud Secure Edge]'
+keywords: ['banyan', 'sonicwall-cse-app', 'sonicwall-cse', 'install-sonicwall-cse-app', 'sonicwall-cloud-security-edge-app']
 description: 'Automate installation of Banyan App on end-user devices.'
 tags: ['application', 'installation', 'vpn']
 draft: false
@@ -14,18 +14,18 @@ last_update:
 
 ## Summary
 
-Automates installation of the Banyan App on end-user devices (Windows, macOS, Linux).
+Automates installation of the **SonicWall Cloud Security Edge App** (previously *Banyan App*) on end-user devices (Windows, macOS, Linux).
 
 **Notes:**
 
 - `INVITE_CODE` and `DEPLOYMENT_KEY` are required for installation.
 - Codes may come from client-level EDFs or be supplied at runtime. Runtime parameters override EDF values.
-- The script can run standalone or as a deployment script from the [Install Banyan App](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed) internal monitor.
+- The script can run standalone or as a deployment script from the [Install Banyan App [SonicWall Cloud Secure Edge]](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed) internal monitor.
 - In the Banyan Command Center, go to Settings > App Deployment and record your organization’s Invite Code and Deployment Key.
 
 **References:**
 
-- [https://github.com/banyansecurity/app-installer/tree/main](https://github.com/banyansecurity/app-installer/tree/main)
+- [https://github.com/banyansecurity/sonciwall-cse-app-installer/tree/main](https://github.com/banyansecurity/sonicwall-cse-app-installer/tree/main)
 - [https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/](https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/)
 
 ## Sample run
@@ -50,18 +50,18 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 
 | Name             | OS       | Value |
 |------------------|----------|-------|
-| ProjectName      | Windows  | banyan-windows |
-| WorkingDirectory | Windows  | C:\ProgramData\\_Automation\Script\banyan-windows |
-| ScriptPath       | Windows  | C:\ProgramData\\_Automation\Script\banyan-windows.ps1 |
-| DownloadUrl      | Windows  | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-windows.ps1](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-windows.ps1) |
-| ProjectName      | macOS    | banyan-macos |
+| ProjectName      | Windows  | sonicwall-cse-windows |
+| WorkingDirectory | Windows  | C:\ProgramData\_Automation\Script\sonicwall-cse-windows |
+| ScriptPath       | Windows  | C:\ProgramData\_Automation\Script\sonicwall-cse-windows.ps1 |
+| DownloadUrl      | Windows  | [https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-windows.ps1](https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-windows.ps1) |
+| ProjectName      | macOS    | sonicwall-cse-macos |
 | WorkingDirectory | macOS    | /tmp/ |
-| ScriptPath       | macOS    | /tmp/banyan-macos.sh |
-| DownloadUrl      | macOS    | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-macos.sh](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-macos.sh) |
-| ProjectName      | Linux    | banyan-linux |
+| ScriptPath       | macOS    | /tmp/sonicwall-cse-macos.sh |
+| DownloadUrl      | macOS    | [https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-macos.sh](https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-macos.sh) |
+| ProjectName      | Linux    | sonicwall-cse-linux |
 | WorkingDirectory | Linux    | /tmp/ |
-| ScriptPath       | Linux    | /tmp/banyan-linux.sh |
-| DownloadUrl      | Linux    | [https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-linux.sh](https://raw.githubusercontent.com/ProVal-Tech/app-installer/refs/heads/main/banyan-linux.sh) |
+| ScriptPath       | Linux    | /tmp/sonicwall-cse-linux.sh |
+| DownloadUrl      | Linux    | [https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-linux.sh](https://raw.githubusercontent.com/ProVal-Tech/sonicwall-cse-app-installer/refs/heads/main/sonicwall-cse-linux.sh) |
 
 ## User parameters
 
@@ -84,9 +84,15 @@ Automates installation of the Banyan App on end-user devices (Windows, macOS, Li
 ## Output
 
 - Script log
-- Installed Banyan App (new software)
+- Installed SonicWall Cloud Secure Edge (new software)
 
 ## Changelog
+
+### 2026-03-09
+
+- **Rebranding Update:** Renamed script to **"Install Banyan App [SonicWall Cloud Secure Edge]"** to align with recent product rebranding.
+- **Logic Enhancement:** Updated script internal logic to reflect the transition from Banyan App to **SonicWall Cloud Security Edge App**.
+- **Source Migration:** Updated the download source to the new GitHub repository: [sonicwall-cse-app-installer](https://github.com/ProVal-Tech/sonicwall-cse-app-installer).
 
 ### 2025-12-02
 

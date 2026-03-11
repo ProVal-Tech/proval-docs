@@ -1,26 +1,27 @@
 ---
 id: 'f220b4c0-75f4-478d-860f-3e41a91ab6f0'
 slug: /f220b4c0-75f4-478d-860f-3e41a91ab6f0
-title: 'Banyan App Deployment'
-title_meta: 'Banyan App Deployment'
-keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app', 'banyan-app-deployment']
-description: 'Solution to detect endpoints missing the Banyan App and install it automatically.'
+title: 'Banyan App Deployment [SonicWall Cloud Secure Edge]'
+title_meta: 'Banyan App Deployment [SonicWall Cloud Secure Edge]'
+keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app', 'banyan-app-deployment', 'sonicwall-cloud-security-edge-app']
+description: 'Solution to detect endpoints missing SonicWall Cloud Secure Edge and install it automatically.'
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
 last_update:
   date: 2025-10-15
 ---
+
 ## Purpose
 
-Provide an automated solution to detect endpoints without the Banyan App and deploy the client automatically across Windows, macOS, and Linux devices using CWA scripts, an internal monitor, and an alert template.
+Provide an automated solution to detect endpoints without **SonicWall Cloud Secure Edge** and deploy the client automatically across Windows, macOS, and Linux devices using CWA scripts, an internal monitor, and an alert template.
 
 ## Associated Content
 
 | Content                                             | Type           | Function |
 |-----------------------------------------------------|---------------|-------------|
-| [Install Banyan App](/docs/3a7001bb-a38b-11f0-9766-92000234cfc2)   | Script | Downloads and installs the Banyan client. |
-| [Install Banyan App](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)   | Internal Monitor | Detects endpoints missing the Banyan App. |
+| [Install Banyan App [SonicWall Cloud Secure Edge]](/docs/3a7001bb-a38b-11f0-9766-92000234cfc2)   | Script | Downloads and installs the SonicWall Cloud Secure Edge. |
+| [Install Banyan App [SonicWall Cloud Secure Edge]](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)   | Internal Monitor | Detects endpoints missing SonicWall Cloud Secure Edge. |
 | △ Custom - Execute Script - Install Banyan App | Alert Template | Executes the script on machines flagged by the monitor. |
 
 ## Implementation
@@ -29,8 +30,8 @@ Provide an automated solution to detect endpoints without the Banyan App and dep
 
 Import the following content from the `ProSync` plugin:
 
-- [Script - Install Banyan App](/docs/3a7001bb-a38b-11f0-9766-92000234cfc2)
-- [Internal Monitor - Install Banyan App](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)
+- [Script - Install Banyan App [SonicWall Cloud Secure Edge]](/docs/3a7001bb-a38b-11f0-9766-92000234cfc2)
+- [Internal Monitor - Install Banyan App [SonicWall Cloud Secure Edge]](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)
 - `Alert Template - △ Custom - Execute Script - Install Banyan App`
 
 ### Step 2
@@ -48,7 +49,7 @@ Execute the [script](/docs/3a7001bb-a38b-11f0-9766-92000234cfc2) with `Set_Envir
 Configure the solution as outlined below:
 
 - Navigate to Automation → Monitors within the CWA Control Center and set up the following:
-  - [Internal Monitor - Install Banyan App](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)
+  - [Internal Monitor - Install Banyan App [SonicWall Cloud Secure Edge]](/docs/5d2830db-272e-4f60-8b18-54bf53a7dbed)
     - Set up with the alert template `△ Custom - Execute Script - Install Banyan App`.
     - Right-click and select `Run Now` to start the monitor.
 
@@ -75,13 +76,27 @@ Configure the solution as outlined below:
 **Q:** How often should the monitor run?  
 **A:** It covers 50 machines per hour.
 
+**Q:** Will this update automatically migrate existing Banyan App installations to **SonicWall Cloud Secure Edge**?
+**A:** Yes. The updated script is designed to recognize existing installations and transition them to the rebranded **SonicWall Cloud Secure Edge** application.
+
 ## References
 
-- [https://github.com/banyansecurity/app-installer/tree/main](https://github.com/banyansecurity/app-installer/tree/main)
+- [https://github.com/banyansecurity/sonciwall-cse-app-installer/tree/main](https://github.com/banyansecurity/sonicwall-cse-app-installer/tree/main)
 - [https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/](https://docs.banyansecurity.io/docs/manage-users-and-devices/device-managers/distribute-desktopapp/)
 
 ## Changelog
 
+### 2026-03-09
+
+- **Rebranding Update:** Renamed the solution and all associated components (Script and Internal Monitor) to **"SonicWall Cloud Secure Edge"** to align with recent product rebranding.
+- **Logic Enhancement:** Updated the underlying automation logic to detect and install the **SonicWall Cloud Security Edge App** while maintaining backward compatibility for existing **Banyan App** installations.
+- **Source Migration:** Updated the deployment workflow to pull installers from the new GitHub repository: [sonicwall-cse-app-installer](https://github.com/ProVal-Tech/sonicwall-cse-app-installer).
+- **FAQ Update:** Added clarification regarding the automatic migration and rebranding of existing Banyan App installations to SonicWall Cloud Secure Edge.
+
+### 2025-10-15
+
+- Updated document to include the forked repository source to resolve installation bugs present in the original Banyan official scripts.
+
 ### 2025-10-10
 
-- Initial version of the document
+- Initial version of the document.
