@@ -261,6 +261,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-### 2026-0403-11
+### 2026-03-11
 
 - Initial version of the document
