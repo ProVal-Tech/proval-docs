@@ -34,7 +34,7 @@ This script updates the Click-To-Run version of Microsoft 365 Apps to their late
 
 3. Export the `UpdateMicrosoftC2R.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
 `Manage Files` > `Shared Files` > `PVAL` > `UpdateMicrosoftC2R.ps1`   
-   ![Image](../../../static/img/docs/ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8/image2.webp)  
+   ![Image](../../../static/img/docs/ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8/image_2.webp)  
 
 4. Map the `UpdateMicrosoftC2Rr.ps1` into the 11th step of the script in the client's environment. 
    ![Image](../../../static/img/docs/ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8/image3.webp) 
