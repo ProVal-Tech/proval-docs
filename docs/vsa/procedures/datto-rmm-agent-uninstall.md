@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for uninstalling Datto
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Runs [sudo bash /Applications/AEM/Agent.app/Contents/Resources/uninstall.sh](htt
 ## Output
 
 Agent procedure log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

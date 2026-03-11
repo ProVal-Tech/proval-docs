@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a URL for the 
 tags: ['email', 'installation', 'linux', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -72,3 +74,9 @@ The email will contain MSI, Linux, and MAC installer URLs along with the details
    - Copy the command mentioned under the headline "Deployment PowerShell (Run-as-Admin)" (Command mentioned in Box 5) from the email you received.
    - Press enter. The deployment process will start. Wait for the command to finish.
    - You will receive a message saying: "The Automate Agent Has Been Successfully Installed."
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

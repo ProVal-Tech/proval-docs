@@ -8,6 +8,8 @@ description: 'This document provides a detailed report of the Hyper-V disk recor
 tags: ['disk', 'hyper-v', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This dataview shows the report of the Hyper-V disk records from the custom table
 | Missing           | Drive status indicating whether detected in Automate or not |
 | Internal          | Indicates whether the drive is internal or external/removable |
 | SSD               | Indicates whether the disk is SSD or not                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

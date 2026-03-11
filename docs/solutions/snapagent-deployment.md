@@ -8,6 +8,8 @@ description: 'This document outlines the steps required to deploy the SnapAgent 
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -47,4 +49,10 @@ This solution is created to deploy the SnapAgent on Windows machines using the A
 4. Whitelisting  
    Make sure to get the hashes below whitelisted for the environment where the security software is installed:  
    - 9E7043C03F84F49B34AA4C0D86687705 --> Hash of script Install-SnapAgentAI.ps1  
-   - D6A7CA1C9B7A71648470B189831FA276 --> Hash of script Install-SnapAgent.ps1  
+   - D6A7CA1C9B7A71648470B189831FA276 --> Hash of script Install-SnapAgent.ps1
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

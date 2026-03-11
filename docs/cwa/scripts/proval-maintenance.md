@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['cleanup', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ This script cleans up many tables in the database, in the following order of ope
 10. Network device cleanup
 11. Inactive ticket status cleanup
 12. Patch manager history cleanup
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

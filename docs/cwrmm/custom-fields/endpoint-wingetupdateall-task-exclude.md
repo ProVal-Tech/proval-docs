@@ -8,6 +8,8 @@ description: 'This document outlines how to mark a custom field to exclude a com
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Marking this custom field will exclude the machine from the [CW RMM - Machine Gr
 
 ![Screenshot 1](../../../static/img/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9/image_1.webp) 
 ![Screenshot 2](../../../static/img/docs/91965ea0-f912-4f5d-8e42-c9ee546293a9/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

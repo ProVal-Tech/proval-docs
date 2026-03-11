@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on checking whether NTLMv1
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ Managed Windows Computers
 ## How to Import
 
 [Import - Remote Monitor - NTLMv1.1 Detection](/docs/92ad2db8-528e-4bce-8011-ed0e3563e335)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

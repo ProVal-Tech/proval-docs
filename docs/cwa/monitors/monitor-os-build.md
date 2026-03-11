@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor designed to detect changes
 tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Monitor OS Build](/docs/4855070e-17d1-4caa-9ded-793fef9b330d)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

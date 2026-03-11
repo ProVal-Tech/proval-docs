@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a dynamic grou
 tags: ['connectwise', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -103,3 +105,9 @@ This group detects Windows 10 and 11 computers where Winget Update All [System] 
 
 ![Completed Group](../../../static/img/docs/22ee8d54-e19d-4b47-9ccd-c45c259f8fb7/image_27.webp)  
 ![Completed Group](../../../static/img/docs/22ee8d54-e19d-4b47-9ccd-c45c259f8fb7/image_28.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

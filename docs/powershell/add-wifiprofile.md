@@ -8,6 +8,8 @@ description: 'Documentation for the Add-WifiProfile command to configure WiFi pr
 tags: ['networking', 'setup', 'wireless']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -38,3 +40,9 @@ Create a new WiFi profile named 'MyWiFi' with the password 'MyPassword', using t
 ## Output
 - .\Add-WifiProfile-log.txt
 - .\Add-WifiProfile-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

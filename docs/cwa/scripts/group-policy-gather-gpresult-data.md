@@ -8,6 +8,8 @@ description: 'This document outlines a script that generates GPRESULT data and s
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Refer to [EPM - Windows Configuration - Agnostic - Get-GPResult](/docs/f5d71bf9-
 - Script log
 - Local file on the computer
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

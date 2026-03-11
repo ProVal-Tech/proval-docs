@@ -8,6 +8,8 @@ description: 'This is a sensitive piece of information, akin to a password, used
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405/image3.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

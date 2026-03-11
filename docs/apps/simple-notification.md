@@ -8,6 +8,8 @@ description: 'SimpleNotification is a lightweight application designed to show a
 tags: ['notifications']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-22
 ---
 
 <p align="center">
@@ -55,3 +57,9 @@ SimpleNotification.exe --Message "Hello, World!" --ImageURL "https://raw.githubu
 ```shell
 SimpleNotification.exe -c "C:\config.toml"
 ```
+
+## Changelog
+
+### 2025-05-06
+
+- Initial version of the document

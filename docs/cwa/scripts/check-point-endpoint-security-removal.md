@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['reboot', 'security', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,4 +58,10 @@ PC Name: %computername%
 Last Login: %lastuser%  
 PC Model: @biosname@  
 OS: %os%  
-S/N of PC: @biosver@  
+S/N of PC: @biosver@
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

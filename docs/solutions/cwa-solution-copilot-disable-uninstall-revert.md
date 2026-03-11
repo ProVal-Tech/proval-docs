@@ -8,6 +8,8 @@ description: 'This solution contains Copilot disabling/uninstall and revert opti
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -46,3 +48,9 @@ This solution contains Copilot disabling/uninstall and revert optional addition 
    - [Monitor_Copilot_Revert_Deployment](/docs/5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2)
    - Right-click and Run Now to start the monitor
    - Set up with `△ Custom - Execute Script - Copilot - Enable/Disable` Alert Template
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

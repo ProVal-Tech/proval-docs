@@ -8,6 +8,8 @@ description: 'Use this field to specify which operating system should receive Us
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-25
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Use this field to specify which operating system should receive User Profile Aud
 
 ## Sample Screenshot
 ![SampleRun1](../../../static/img/docs/4cf9ccc6-03f1-454e-9032-3f25909db6a4/image1.webp)
+
+## Changelog
+
+### 2025-12-18
+
+- Initial version of the document

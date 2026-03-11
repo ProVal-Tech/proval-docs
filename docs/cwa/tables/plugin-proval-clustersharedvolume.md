@@ -8,6 +8,8 @@ description: 'Describes a table used to store data collected by the Cluster Volu
 tags: ['cluster', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -80,3 +82,9 @@ CREATE TABLE `plugin_proval_clustersharedvolume` (
   CONSTRAINT `Plugin_ProVal_ClusterSharedVolume_Computer` FOREIGN KEY (`Computerid`) REFERENCES `computers` (`ComputerID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

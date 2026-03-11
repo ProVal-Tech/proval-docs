@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on the implementation
 tags: ['connectwise', 'deployment', 'gpo', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -73,3 +75,9 @@ The startup script GPO executes a PowerShell script on startup (after the comput
 
 **Q.** Does installing the Scheduled Task GPO remove the existing Startup Script GPO?  
 **A.** No, both `Automate-Deploy` and `Automate-Deploy Scheduled Task` are individual GPOs and do not remove or update each other while being created.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

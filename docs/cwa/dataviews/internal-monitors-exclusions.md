@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that displays c
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ You can find this information in Automate in the areas displayed below.
 | Operating System      | Operating System                                     |
 | Last Contact          | Last Contact                                         |
 | Days Since Last Contact| Days Since Last Contact                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

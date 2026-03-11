@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Get User Profiles script
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This script gathers information about user profiles. The data is stored in the c
 - Script log
 - Local file on computer
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

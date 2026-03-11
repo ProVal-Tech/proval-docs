@@ -8,6 +8,8 @@ description: 'Automates Windows 11 upgrades using the windows-upgrader tool. Sup
 tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-22
 ---
 
 ## Summary
@@ -116,3 +118,9 @@ Here is the completed parameters table based on the script logic and NinjaRMM co
 
 * **On GPT disks:** The script attempts to automatically clear font caches to free up space.
 * **On MBR disks:** The script will fail and exit safely because automated cleanup is risky on MBR. You will need to free up space on that partition manually before retrying.
+
+## Changelog
+
+### 2026-01-22
+
+- Initial version of the document

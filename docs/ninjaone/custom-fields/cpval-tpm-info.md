@@ -8,6 +8,8 @@ description: 'Stores a detailed HTML report of the Trusted Platform Module (TPM)
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ Stores a detailed HTML report of the Trusted Platform Module (TPM) status, inclu
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/68c098e2-54f1-40f8-9574-f70f1948e4ba/image1.webp)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

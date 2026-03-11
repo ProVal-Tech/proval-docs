@@ -8,6 +8,8 @@ description: 'This task allows you to manage network protocols on Windows machin
 tags: ['windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -329,3 +331,9 @@ This task has to be scheduled on [Devices Opted for Network Adapter Solution](/d
 
 ## Output
 - Script Logs
+
+## Changelog
+
+### 2025-06-16
+
+- Initial version of the document

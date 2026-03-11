@@ -8,6 +8,8 @@ description: 'Documentation for the Install-PerchLogShipper command to install P
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -32,3 +34,9 @@ This command installs Perch Log Shipper. A token is necessary to complete the in
 ## Output
 - .\Install-PerchLogShipper-log.txt
 - .\Install-PerchLogShipper-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

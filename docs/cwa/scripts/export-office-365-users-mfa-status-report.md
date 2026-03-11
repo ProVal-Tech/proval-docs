@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to automatically generate
 tags: ['email', 'office365', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -125,3 +127,9 @@ The script can create a ticket for failures. The ticketing feature can be toggle
 **Ticket Body for configuration error:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations. Set the Office365 ClientID, TenantID, and Client Secret in the Client level EDFs 'Office 365 - ClientID', 'Office 365 - TenantID', and 'Office 365 - Client Secret' respectively for \<Client Name>. The EDFs are present in the Client level EDF section 'Office 365 - MFA Status Report'. Alternatively, you can pass the required values in the script's user parameters 'Office365_Client_ID', 'Office365_Tenant_ID', and 'Office365_Client_Secret' respectively while initiating the script.`
 
 **Ticket Body for the script failure:** `The script was unable to initiate the PowerShell script due to the absence of the necessary key configurations. <Error returned by the PowerShell script>`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to uninstall an app
 tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -143,3 +145,9 @@ The script is intended to run manually at this time.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

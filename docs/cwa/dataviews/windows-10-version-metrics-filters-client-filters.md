@@ -8,6 +8,8 @@ description: 'This document details a dataview that displays the number of Windo
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ An additional summarized row per client is included in the dataview.
 | % Supported Machines              | varchar(27)     | Either 100 or 0 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the supported Windows 10 machines out of all the available Windows 10 machines. |
 | % Unsupported Machines            | varchar(31)     | Either 0 or 100 for the ReleaseID row depending on whether the concerned ReleaseID is supported to date. For the Summary row, it's the percentage of the unsupported Windows 10 machines out of all the available Windows 10 machines. |
 | Build                             | varchar(60)     | Build Number for the concerned ReleaseID. e.g., 10.0.19044, 10.0.19043. It will show 'Windows 10' for the Summary Row.                                                                                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that configures the homepage setti
 tags: ['chrome', 'edge', 'firefox', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -103,3 +105,9 @@ Example: Configuring Google Chrome and Microsoft Edge to open [https://www.prova
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

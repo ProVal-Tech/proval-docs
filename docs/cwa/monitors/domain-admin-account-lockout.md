@@ -8,6 +8,8 @@ description: 'This document outlines the configuration of a remote monitor desig
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -106,3 +108,9 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### 5. Assign the Alert Template
 Assign the required alert template. It is suggested to use '`△ Custom - Ticket Creation Computer - Failures Only`' for the best results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on configuring a script ef
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -73,3 +75,9 @@ If you would like to generate the ticket for the minimum client ID of another cl
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

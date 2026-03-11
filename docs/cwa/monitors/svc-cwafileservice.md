@@ -4,15 +4,17 @@ slug: /5ae52dd7-e476-49dd-823f-582cbf6de17e
 title: 'SVC-CWAFileService'
 title_meta: 'SVC-CWAFileService'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'status']
-description: 'This document outlines the CWAFileService monitor for the Automate server, detailing its purpose to check the service status and create urgent tickets in Autotask if the service is down, specifically for on-prem partners.'
+description: 'This document outlines the CWAFileService monitor for the Automate server, detailing its purpose to check the service status and create urgent tickets in Halo if the service is down, specifically for on-prem partners.'
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
 
-CWAFileService is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down. It should be created against the "Labtech Server" group for on-prem partners only.
+CWAFileService is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Halo PSA if it is down. It should be created against the "Labtech Server" group for on-prem partners only.
 
 ## Details
 
@@ -27,3 +29,9 @@ CWAFileService is one of the important services for the Automate server. This mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

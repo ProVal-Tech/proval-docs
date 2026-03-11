@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for PDFill Free PDF Editor Basic'
 tags: ['application', 'installation', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-15
 ---
 
 ## Description
@@ -17,3 +19,9 @@ An ImmyBot software installer for [PDFill Free PDF Editor Basic](https://www.plo
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/pdfill-free-pdf-editor-basic.toml)
 
 **Notes:** PDFill also requires [GhostScript](https://github.com/ProVal-Tech/immybot/blob/main/software/ghost-script.toml) to be installed to funstion properly.
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

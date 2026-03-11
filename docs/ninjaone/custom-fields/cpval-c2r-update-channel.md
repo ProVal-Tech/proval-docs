@@ -8,6 +8,8 @@ description: 'Update Channel of the Office installed on the machine, gathered by
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Update Channel of the Office installed on the machine, gathered by the Microsoft
 
 ## Sample Screenshot
 ![Image](../../../static/img/docs/76865fc9-4736-4590-b365-e4f858b6da8d/image1.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides detailed information about Windows restore 
 tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This document stores information about Windows restore points.
 | RestorePointDate       | DATETIME | The date that the audited restore point was taken.         |
 | RestorePointDescription | VARCHAR  | The description of the audited restore point.              |
 | SequenceNumber         | INT      | The number of previous sequences that this restore point has been through. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

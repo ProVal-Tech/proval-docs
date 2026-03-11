@@ -8,6 +8,8 @@ description: 'The EPM - Disk - Internal Monitor - Execute Script - Disk - Gather
 tags: ['mysql', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Managed Windows Workstations
 △ Custom - Autofix - Initiate script - Disk - Gather Critical Data  
 
 Note: The alert template must be running the [EPM - Disk - Script - Disk - Gather Critical Data](/docs/687261c3-e6d7-46bc-84f6-506007d47142) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

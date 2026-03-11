@@ -8,6 +8,8 @@ description: 'This document provides a detailed implementation guide for redirec
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -70,4 +72,10 @@ A status of Success is expected.
 
 ![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_6.webp)  
 
-![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_7.webp)  
+![Image](../../../static/img/docs/2b6977c1-5cd2-477b-9230-150568009b82/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

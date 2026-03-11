@@ -8,6 +8,8 @@ description: 'This script automates the installation, repair, uninstallation, or
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-21
 ---
 
 ## Overview
@@ -396,3 +398,13 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-05-30
+
+- Uninstaller was not removing the entries from uninstall registry keys. Added a code-block at the end of the script to fix it.
+
+### 2025-04-11
+
+- Initial version of the document

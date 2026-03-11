@@ -8,6 +8,8 @@ description: 'This document outlines the process of executing a script to valida
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -206,3 +208,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - **Custom Field**
 ![Custom Field Output](../../../static/img/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368/image_38.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

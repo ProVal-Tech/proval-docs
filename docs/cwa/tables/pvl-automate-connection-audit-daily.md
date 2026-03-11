@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the daily conn
 tags: ['database', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ The script will start adding data to this table 24 hours after the first entry i
 | online              | int      | Number of minutes it was online in the last 24 hours |
 | offline             | int      | Number of minutes it was offline in the last 24 hours |
 | datacollectiontime  | datetime | Data collection time for the respective entry        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

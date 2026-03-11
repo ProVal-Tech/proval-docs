@@ -8,6 +8,8 @@ description: 'This document outlines how to exclude a machine from Threatlocker 
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Setting this Custom Field to "Yes" will exclude the machine from Threatlocker De
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/c18a4b16-772a-42f3-9d1e-ec136d643d43/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

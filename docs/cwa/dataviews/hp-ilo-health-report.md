@@ -8,6 +8,8 @@ description: 'This document provides an overview of the iLO health report displa
 tags: ['firmware', 'memory', 'report', 'storage']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Displays iLO health information from the table [plugin_proval_ilo_health_report]
 | Status                  | Overall status of the iLO device.                                                                         |
 | StatusInfo              | Additional information about the overall iLO status.                                                     |
 | ScriptRunTime           | Last run time of the script to gather data.                                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

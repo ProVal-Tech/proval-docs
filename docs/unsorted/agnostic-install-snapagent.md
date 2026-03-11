@@ -51,3 +51,9 @@ To install SnapAgent, a URL is necessary.
 
 - `./Install-SnapAgent-Log.txt`
 - `./Install-SnapAgent-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

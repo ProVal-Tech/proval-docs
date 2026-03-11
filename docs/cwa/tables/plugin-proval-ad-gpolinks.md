@@ -8,6 +8,8 @@ description: 'This document provides detailed information about Group Policy Obj
 tags: ['database', 'gpo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This document displays detailed information about the GPO links per GPO from the
 | Path         | VARCHAR | The OU path of the link.                                          |
 | Enforced      | VARCHAR | True or False depending on whether the link is being enforced.   |
 | LinkEnabled   | VARCHAR | True or False depending on whether the link is enabled.          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

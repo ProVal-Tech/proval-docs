@@ -8,6 +8,8 @@ description: 'Enter the display name for the local admin account. If left blank,
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enter the display name for the local admin account. If left blank, the username 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/40b4ecfd-059e-4734-b652-377781bed1b2/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

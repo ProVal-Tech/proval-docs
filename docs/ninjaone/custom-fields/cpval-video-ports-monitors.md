@@ -8,6 +8,8 @@ description: 'This custom field is used show available video output ports on the
 tags: ['auditing', 'custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Displays detailed information gathered by the script [Video Ports and Monitor Us
 ## Sample Screenshot
 
 ![SampleRun1](../../../static/img/docs/1778ced7-a9b2-461c-a20c-c72c2242e94f/ninja2.webp)
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

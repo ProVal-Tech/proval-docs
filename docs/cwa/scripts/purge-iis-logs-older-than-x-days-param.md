@@ -8,6 +8,8 @@ description: 'This document describes a script that removes IIS log files older 
 tags: ['cleanup', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Step 2: Generates the logs as per the PowerShell script's outcome and exits.
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

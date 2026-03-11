@@ -8,6 +8,8 @@ description: 'Use this field to specify which operating system should receive Ci
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Use this field to specify which operating system should receive Cisco Secure Cli
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/5fa948c8-d875-4e9e-981f-9b960724719f/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

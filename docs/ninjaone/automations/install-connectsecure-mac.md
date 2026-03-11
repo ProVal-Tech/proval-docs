@@ -8,6 +8,8 @@ description: 'Installs and Updates the ConnectSecure v4 on Mac'
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Overview
@@ -40,3 +42,9 @@ Installs and Updates the ConnectSecure v4 on Mac
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

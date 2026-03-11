@@ -8,6 +8,8 @@ description: 'This ticket template configures how a ConnectWise Manage ticket wi
 tags: ['antivirus', 'auditing', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-20
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ The condition runs the [SentinelOne Management Console Validation](/docs/4d9087c
 ## Condition Creation
 
 [Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/sentinelone-management-console-validation.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

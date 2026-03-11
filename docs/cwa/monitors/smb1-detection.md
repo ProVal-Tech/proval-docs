@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to check whether SMB1 is enab
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Managed Windows Service Plan Groups
 ## How to Import
 
 [Import - Remote Monitor - SMB1 Detection](/docs/ec956fa3-ab8c-410c-83d7-9e81f4b1f499)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

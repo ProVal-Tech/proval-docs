@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to fetch the TPM St
 tags: ['connectwise', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -138,3 +140,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 - Custom Field  
 ![Custom Field Output](../../../static/img/docs/678a70ca-c156-4568-95bd-f3df413433e3/image_24.webp)  
 Example: `TpmEnabled: True | TpmActivated: True | TpmReady: True | TpmPresent: True | RestartPending: False`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

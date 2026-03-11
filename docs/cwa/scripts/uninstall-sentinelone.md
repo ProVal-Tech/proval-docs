@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on uninstalling the Sentin
 tags: ['reboot', 'security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This document provides a script designed to uninstall the SentinelOne agent from
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

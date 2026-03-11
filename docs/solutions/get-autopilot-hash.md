@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to collect the
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -43,3 +45,9 @@ The purpose of this solution is to collect the Hardware Hash for autopilot devic
      - [Get - Autopilot Hash](/docs/3add591b-445e-440d-a7b3-cc85b2ea0674)
        - `△ Custom - Execute Script - Get-AutopilotHash`
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the monitor, in
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ If the monitor is intended to create tickets, please note the Subject and Body o
 **Subject**
 
 **Body**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

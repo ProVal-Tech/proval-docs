@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Disk Information Display
 tags: ['disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ This Dataview displays the disk information gathered from [EPM - Disk - Agnostic
 | IntegrityErrors      | The number of integrity errors logged on the drive                      |
 | InformationalLogEntries | The number of informational log entries logged on the drive           |
 | DateUpdated          | The date that this information was gathered                             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

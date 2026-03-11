@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Set-PowerPlan scri
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -201,3 +203,9 @@ Here's a breakdown of the columns in the CSV file:
 
 [PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/14903184/PowerPlanSettingsTemplate.csv>)  
 [ProVal_-_High_Performance.csv](<../../../static/attachments/itg/15053772/ProVal_-_High_Performance.csv>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

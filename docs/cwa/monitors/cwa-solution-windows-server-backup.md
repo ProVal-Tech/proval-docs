@@ -8,6 +8,8 @@ description: 'This document outlines a comprehensive solution for auditing Windo
 tags: ['backup', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This solution contains the complete audit work for Windows Server backup.
 This solution is initially dependent on the role. Create a group based on the role and schedule the script for the group, recommended daily.
 
 Additionally, schedule the remote monitor for the group to detect backup failures and use the default ticket creation process.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['security', 'setup', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script first checks if the Webroot service is running on the machine. If it
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

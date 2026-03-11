@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for performing an on-d
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,4 +46,14 @@ This script updates the Click-To-Run version of Microsoft 365 Apps to their late
 
 ## Output
 
+<<<<<<< HEAD
 - Agent Procedure log
+=======
+Procedure log files and other outputs.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+>>>>>>> origin/main

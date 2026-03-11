@@ -8,6 +8,8 @@ description: 'Documentation for the Update-Windows10 command to manage Windows 1
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -73,3 +75,9 @@ The script generates log, result, and error files at the following locations:
 
 - `.\\Update-Windows10-log.txt`
 - `.\\Update-Windows10-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to clear a specific
 tags: ['backup', 'database', 'sql', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ This document allows you to clear a patch from the Failed Patches list with the 
 
 3. **Run this Query on KSubscribers on SQL Server.**  
    ![](../../../static/img/docs/d0694f70-303e-4518-b47c-a796ca73d905/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

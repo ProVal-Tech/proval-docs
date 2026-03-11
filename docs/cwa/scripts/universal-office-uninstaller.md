@@ -8,6 +8,8 @@ description: 'This script automates the process of uninstalling all versions of 
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script downloads the offscrub files from the LTShare and then attempts to u
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

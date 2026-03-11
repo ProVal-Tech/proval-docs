@@ -8,6 +8,8 @@ description: 'This solution provides automated deployment of the Addigy agent to
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-03
 ---
 
 ## Purpose
@@ -110,3 +112,9 @@ Configure the organizational-level custom fields to establish deployment paramet
 
 **Q: What takes precedence if both a Custom Field and a Runtime Parameter are provided?**  
 **A:** The Runtime Parameter takes precedence. If a value exists in the [cPVAL Addigy Org ID](/docs/b3a99690-e1d2-40ad-8ee8-9c417330e2b9) custom field, but you manually run the script and provide a different value in the **Org ID** parameter, the script will use the manually entered parameter. This allows for one-off installations on devices that may need to belong to a different organization or policy than the default.
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

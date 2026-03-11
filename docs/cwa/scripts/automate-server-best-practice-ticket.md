@@ -8,6 +8,8 @@ description: 'This document outlines the process of auditing and establishing ha
 tags: ['firewall', 'gpo', 'permissions', 'security', 'tls']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ This script goes through the process of auditing and setting up hardening rules 
 
 - Ticket
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

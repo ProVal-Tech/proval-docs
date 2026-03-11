@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to install a Winget
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-05
 ---
 
 ## Summary
@@ -60,3 +62,17 @@ Please refer to [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8
 **Q. For auto-deployment of application we have monitor [Application - Install/Update - [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb), does the auto-deployment work with the optional parameter needed?**
 
 **A.** No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.
+
+## Changelog
+
+### 2026-01-05
+
+- Fixed the issue where the script was failing due to typographical error in the PowerShell.
+
+### 2025-05-08
+
+- Added OptionalParameter as a new user parameter to pass any arguments related to installation or configurations.
+
+### 2025-04-10
+
+- Initial version of the document

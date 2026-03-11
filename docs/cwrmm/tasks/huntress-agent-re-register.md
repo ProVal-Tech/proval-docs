@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to re-register the 
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -244,3 +246,9 @@ Then click on Schedule and provide the parameters details as necessary for the s
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

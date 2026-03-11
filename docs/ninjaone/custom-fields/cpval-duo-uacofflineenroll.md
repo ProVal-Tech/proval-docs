@@ -8,6 +8,8 @@ description: '0 to prevent Offline Enrollment during User Elevation; 1 to Enable
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/a83d55b5-c765-4a82-84e1-03fbeb3e8606/image5.webp)
+
+## Changelog
+
+### 2025-04-15
+
+- Initial version of the document

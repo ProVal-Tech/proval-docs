@@ -8,6 +8,8 @@ description: 'Documentation for the Set-UserRegistryValue command to set specifi
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -46,3 +48,9 @@ Location of output for log, result, and error files.
 .\Set-UserRegistryValue-log.txt
 .\Set-UserRegistryValue-ERROR.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

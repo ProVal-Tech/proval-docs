@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to enable removable storage d
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Sets `HKLM://SOFTWARE//Policies//Microsoft//Windows//RemovableStorageDevices//De
 ## Output
 
 AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

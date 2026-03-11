@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a dynamic group that fi
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ After adding the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/docs/7fc0874b-154c-49c0-aed4-a89be18798f4/image_3.webp)
 
 ![Image](../../../static/img/docs/7fc0874b-154c-49c0-aed4-a89be18798f4/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

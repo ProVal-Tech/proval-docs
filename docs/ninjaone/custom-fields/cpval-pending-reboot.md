@@ -8,6 +8,8 @@ description: 'Manual checkbox to enable reboot prompts for this device regardles
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Manual checkbox to enable reboot prompts for this device regardless of its curre
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/31558959-f3a5-4f4f-9388-6e7512972b01/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

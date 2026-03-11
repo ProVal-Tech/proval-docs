@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the Windows Shad
 tags: ['database', 'performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ This table stores the Windows Shadow Copy state for endpoints with Shadow Copy e
 | ShadowCopyCount   | INT     | Indicates the number of Shadow Copies on the machine.                                          |
 | OldestShadowCopy  | VARCHAR | Contains the oldest available Shadow Copy date.                                               |
 | LatestShadowCopy  | VARCHAR | Contains the most recent available Shadow Copy date.                                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

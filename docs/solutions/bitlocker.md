@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on managing Bitlocker
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -148,3 +150,9 @@ To manage Bitlocker protection on endpoints.
      [Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/c2c817db-9667-4e18-864c-11ef0775282c).  
    - Configure with the alert template: `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
      - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Calculates the total disk space used by all locally synced OneDriv
 tags: ['onedrive', 'disk', 'diskspace']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-22
 ---
 
 ## Overview
@@ -102,3 +104,9 @@ Log and error files:
 
 - .\Get-OneDriveSharePointDiskUsage-log.txt
 - .\Get-OneDriveSharePointDiskUsage-error.txt
+
+## Changelog
+
+### 2025-09-22
+
+- Initial version of the document

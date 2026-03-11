@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing the latest a
 tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -554,3 +556,9 @@ It is suggested to run the Task once per week against the [Out of Date CU _ Auto
 
 - Script Log
 - Custom Field
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

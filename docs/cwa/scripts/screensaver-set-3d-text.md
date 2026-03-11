@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell script that sets a custom text
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Please ensure that the message for the `@screensavermessage@` parameter does not
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for downloading and installin
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,4 +46,10 @@ Export the agent procedure from the ProVal VSA and import it into the partner VS
 ![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_3.webp)  
 
 **Existing Install**  
-![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_4.webp)  
+![Image](../../../static/img/docs/112efa12-e6aa-4086-b235-23b17193e1e0/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

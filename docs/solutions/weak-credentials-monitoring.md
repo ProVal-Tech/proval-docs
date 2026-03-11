@@ -8,6 +8,8 @@ description: 'This solution monitors Active Directory domains for weak and dupli
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Purpose
@@ -152,3 +154,9 @@ Enable weak credentials monitoring for each organization by checking the [cPVAL 
 ### 11. Can I customize the password checking?
 
 The password checking is performed by the agnostic [Test-WeakCredentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc) script, which checks for weak passwords matching common dictionary patterns and identifies duplicate passwords across multiple user accounts. The dictionary size can be adjusted via the automation's runtime parameters, but the core checking logic is handled by the underlying script.
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

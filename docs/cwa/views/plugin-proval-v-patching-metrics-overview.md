@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Patching Me
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ Minimum Requirement: MySQL 5.7.7
 | Total Approved   | decimal (23,0)| Number of patches approved between the respective Approval Age                               |
 | Total Missing    | decimal (23,0)| Number of approved patches that aren't installed                                             |
 | Patching Policy  | varchar (9)   | Patching Policy (Managed | Unmanaged)                                                       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

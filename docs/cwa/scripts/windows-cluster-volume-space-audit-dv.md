@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['cluster', 'disk', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Set the value of `Set_Environment` to 1 to create the table and schedule the scr
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

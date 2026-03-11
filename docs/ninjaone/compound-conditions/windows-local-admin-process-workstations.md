@@ -8,6 +8,8 @@ description: 'Triggers the Windows - Local Admin - Create/Update script on works
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Triggers the [Windows - Local Admin - Create/Update](/docs/309772e8-4eb7-4a06-87
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/windows-local-admin-process-workstations.toml)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

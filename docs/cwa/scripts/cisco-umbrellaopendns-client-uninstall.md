@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script can be used to silently remove the OpenDNS Umbrella Roaming Client.
 
 - Script log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

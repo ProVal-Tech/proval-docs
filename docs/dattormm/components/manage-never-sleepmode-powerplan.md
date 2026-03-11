@@ -8,6 +8,8 @@ description: 'Stores the current Windows power plan, applies a “Never Sleep”
 tags: ['windows', 'datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-14
 ---
 
 ## Overview  
@@ -55,3 +57,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 [Manage-NeverSleepModePowerPlan](../../../static/attachments/Manage-NeverSleepModePowerPlan.cpt)
+
+## Changelog
+
+### 2025-11-14
+
+- Initial version of the document

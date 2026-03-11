@@ -8,6 +8,8 @@ description: 'This document stores information about applications that may be af
 tags: ['database', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ This document stores information from NCSC-NL's GitHub repository about applicat
 | Status   | VARCHAR | The current vulnerable status of the application. |
 | Notes    | VARCHAR | Any notes about the application.                  |
 | Links    | VARCHAR | Links regarding the application's vulnerability.  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

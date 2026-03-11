@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on enabling Windows Firewa
 tags: ['firewall', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ If `EnablePublicFirewall` is set to 1, Windows Firewall will be enabled for Publ
 ## Output
 
 AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

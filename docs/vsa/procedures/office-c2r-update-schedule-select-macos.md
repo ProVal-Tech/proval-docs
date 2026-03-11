@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for setting the update channe
 tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,4 +41,14 @@ The following [channels](https://learn.microsoft.com/en-us/microsoft-365-apps/in
 
 ### Custom Field
 
+<<<<<<< HEAD
 ![Image](../../../static/img/docs/47d714f5-714e-4078-9464-54b3e62ae093/image4.webp)  
+=======
+![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+>>>>>>> origin/main

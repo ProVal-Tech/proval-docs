@@ -8,6 +8,8 @@ description: 'This script provides features to hide or unhide the Windows update
 tags:  ['datto', 'update', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Overview
@@ -59,3 +61,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Hide-Unhide Windows Update Systray Icon](../../../static/attachments/hide-unhide-windows-update-systray-icon.cpt)
+
+## Changelog
+
+### 2026-01-12
+
+- Initial version of the document

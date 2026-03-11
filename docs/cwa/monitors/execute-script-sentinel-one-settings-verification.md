@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that executes the Sentinel One Se
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Global
 **Name:** △ CUSTOM - Execute Script - Sentinel One Settings Verification
 
 **Note:** Ensure to import the [SWM - Software Configuration - Script - Sentinel One Settings Verification](/docs/9eb5531e-3a3f-43a6-88e6-cf2b3dc5ebb5) script before importing or creating the alert template, as the template should run this script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

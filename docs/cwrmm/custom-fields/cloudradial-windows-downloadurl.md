@@ -8,6 +8,8 @@ description: 'The URL from which to download the CloudRadial Agent installer for
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The URL from which to download the CloudRadial Agent installer for the client's 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/a254a58c-314c-4fed-964d-d5a64a7a2e61/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

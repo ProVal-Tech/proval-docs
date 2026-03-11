@@ -8,6 +8,8 @@ description: 'This document outlines the setup and details for a remote monitor 
 tags: ['compliance', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Insert the details of the monitor in the table below.
 ## How to Import
 
 [Import - Remote Monitor - Time Sync Compliance](/docs/d0b9c0fa-fe52-412b-a4b9-dee96f9ff58b)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

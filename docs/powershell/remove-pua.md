@@ -8,6 +8,8 @@ description: 'The Remove-PUA.ps1 script is designed to manage and remove bloatwa
 tags: ['windows', 'uninstallation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -60,3 +62,9 @@ The script is executed using PowerShell and requires specific parameters to perf
 ## PUA List
 
 [PUA List](https://content.provaltech.com/attachments/potentially-unwanted-applications.json)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

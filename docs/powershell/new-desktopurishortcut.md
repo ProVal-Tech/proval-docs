@@ -8,6 +8,8 @@ description: 'Guide to creating a desktop URI shortcut using PowerShell.'
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -44,3 +46,9 @@ Creates a shortcut to a web link on the desktop.
 - `$env:PUBLIC\Pictures\icon.ico`
 - `New-DesktopUriShortcut-log.txt`
 - `New-DesktopUriShortcut-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

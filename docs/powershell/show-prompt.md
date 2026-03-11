@@ -8,6 +8,8 @@ description: 'Documentation for the Show-Prompt command to display a user prompt
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -96,3 +98,9 @@ Display a pop-up with a purple filled title size 25 in yellow writing and a gree
 - As an interactive message, outputs from selected buttons are returned (future development).
 
 - `.\Show-Prompt-log.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

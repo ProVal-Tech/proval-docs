@@ -8,6 +8,8 @@ description: 'This document details the process of auditing Chromium extensions 
 tags: ['report', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ Runs the agnostic script to collect Chromium extensions installed on an endpoint
 
 - Agent Procedure Log  
 - Custom Field: xPVAL Chromium Extensions Installed
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

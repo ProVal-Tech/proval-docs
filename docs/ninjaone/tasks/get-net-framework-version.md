@@ -8,6 +8,8 @@ description: 'Runs the `Get - .Net Framework Version [CF]` automation weekly aga
 tags: ['dotnet','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-19
 ---
 
 ## Summary
@@ -93,4 +95,10 @@ The `Targets` section will show the selected target group.
 Click the `Save` button at the top of the screen to save the scheduled task.
 
 You will be prompted to verify your MFA code after clicking the `Save` button. Enter your MFA code and click the `Continue` button to finalize the task creation.  
-![TaskCreation](../../../static/img/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c/image9.webp) 
+![TaskCreation](../../../static/img/docs/7064a8be-8470-4ca4-a1a6-13f70a242b8c/image9.webp)
+
+## Changelog
+
+### 2025-05-14
+
+- Initial version of the document

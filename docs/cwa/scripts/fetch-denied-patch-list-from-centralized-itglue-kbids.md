@@ -8,6 +8,8 @@ description: 'This document outlines the Denied Patch Replace Script that runs t
 tags: ['email', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,4 +58,10 @@ This list is then saved to the URL [DeniedPatchReplace.sql](https://file.provalt
 
 For failure:  
 - Script log  
-- Email  
+- Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

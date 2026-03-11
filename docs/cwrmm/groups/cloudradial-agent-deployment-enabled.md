@@ -8,6 +8,8 @@ description: 'Group of machines where the CloudRadial Agent installation is enab
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/20f0900a-a34c-46c3-9181-ba89b17c14cb/image3.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

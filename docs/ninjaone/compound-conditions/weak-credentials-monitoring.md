@@ -8,6 +8,8 @@ description: 'Runs the "Test Weak Password [Domain]" automation daily on Primary
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Runs the [Test Weak Password [Domain]](/docs/4fef2f0f-be91-4448-862e-9c91b267301
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/weak-credentials-monitoring.toml)
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

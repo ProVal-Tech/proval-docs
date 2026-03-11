@@ -8,6 +8,8 @@ description: 'This document outlines the configuration of a dynamic group for de
 tags: ['deployment', 'linux', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,4 +53,10 @@ The purpose of this group is to deploy the SentinelOne agent on Windows, Linux, 
 Once you have added the above criteria, click the Save button to save the Group.  
 ![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_5.webp)  
 
-![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_6.webp)  
+![Image](../../../static/img/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of group policies to red
 tags: ['onedrive', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -28,3 +30,9 @@ This document implements options for group policies to redirect Windows known fo
 
 2. Export the following content from ProVal's VSA and follow the necessary implementation steps within each document:  
    - [Agent Procedure - Microsoft OneDrive - (Group Policies/Redirect Folder)](/docs/2b6977c1-5cd2-477b-9230-150568009b82)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -1,13 +1,15 @@
 ---
 id: '7afc7157-5254-46ab-8e4d-ea8b7c735f1b'
 slug: /7afc7157-5254-46ab-8e4d-ea8b7c735f1b
-title: 'Internal Monitor - Failure Check Autofix,Properties'
-title_meta: 'Internal Monitor - Failure Check Autofix,Properties'
+title: 'Internal Monitor - Failure Check [Autofix,Properties]'
+title_meta: 'Internal Monitor - Failure Check [Autofix,Properties]'
 keywords: ['monitor', 'failure', 'ticket', 'autofix', 'system', 'properties', 'check']
 description: 'This document outlines the functionality of the Internal Monitor - Failure Check script, which generates tickets for internal monitors that have been disabled due to failure. It includes details on the Autofix feature, system properties, and implementation steps for both new and updated scripts.'
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -98,3 +100,9 @@ Consider scheduling the new client script to execute every two hours.
 ## Sample Ticket
 
 ![Image](../../../static/img/docs/7afc7157-5254-46ab-8e4d-ea8b7c735f1b/image_18.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

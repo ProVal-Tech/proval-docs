@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Computers in Act
 tags: ['active-directory', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -20,7 +22,14 @@ This report is dependent on the following items:
 
 - The Active Directory Plugin needs to be installed and configured.
 - [AD - Create Views/Tables/Schedules for AD Reporting Solution](/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49)
+- [Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
 
 ## Report Example
 
 ![Report Example](../../../static/img/docs/f3651662-8b77-4254-a8b3-8a945e3aab51/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

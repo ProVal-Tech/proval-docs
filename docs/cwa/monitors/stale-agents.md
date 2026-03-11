@@ -8,6 +8,8 @@ description: 'This document outlines the process for detecting machines that are
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Last Seen by Automate: %RESULT%
 ```
 The computer %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% has cleared the Webroot stale agent detection monitor. This either means the machine has been offline for 7+ days or the problem is completely resolved. Closing ticket.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

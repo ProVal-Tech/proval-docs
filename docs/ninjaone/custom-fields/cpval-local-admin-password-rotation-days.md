@@ -8,6 +8,8 @@ description: 'Set the number of days for automatic password rotation. If this fi
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Set the number of days for automatic password rotation. If this field is blank o
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/5a3c6f86-4e2f-425f-8178-1e76b8f85ec5/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

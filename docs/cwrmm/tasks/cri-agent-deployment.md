@@ -8,6 +8,8 @@ description: 'This document outlines the steps to deploy the Cyrisma Censor Appl
 tags: ['deployment', 'installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -187,3 +189,9 @@ The task will start appearing in the Scheduled Tasks.
 
 - Script log
 - Custom field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

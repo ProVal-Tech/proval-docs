@@ -8,6 +8,8 @@ description: 'This document outlines a script that disables SQL Spy for all user
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The script will disable SQL Spy for all users in the environment.
 ## Process
 
 The script will execute a query against the Automate server to disable SQL Spy for all users in the environment. The change will take effect the next time the user logs in. The script will take the current value of the "windows" field in the `users_extend` table and remove the binary value of `524288` from it. This binary value is the switch used to display SQL Spy.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script will remove the C:\Windows.old directory if it is foun
 tags: ['cleanup','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-29
 ---
 
 ## Overview
@@ -29,4 +31,10 @@ Search and select `Remove Windows.old - Windows`
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-09-11
+
+- Initial version of the document

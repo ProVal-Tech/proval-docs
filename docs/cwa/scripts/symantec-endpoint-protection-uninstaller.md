@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell script designed to uninstall S
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This script attempts to uninstall Symantec Endpoint Protection by running a Powe
 ## Output
 
 - Script log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

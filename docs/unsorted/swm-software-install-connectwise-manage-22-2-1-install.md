@@ -48,3 +48,9 @@ This document outlines the process to install or upgrade the current ConnectWise
 6. Check for the ConnectWise Manage Client 64-bit. If it is not present, delete the temporary file, log the state, and exit with an error.
 7. Delete the temporary file.
 8. Log success and exit.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

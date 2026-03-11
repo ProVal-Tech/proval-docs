@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for installing the Win
 tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ PowerShell: 5.1.0
 ## Output
 
 Agent Procedure Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

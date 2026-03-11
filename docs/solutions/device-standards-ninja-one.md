@@ -8,6 +8,8 @@ description: 'A comprehensive framework for implementing and maintaining standar
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Purpose
@@ -119,3 +121,9 @@ A: Yes, the Device Standards framework is designed to be extensible. You can dev
 A: The solutions are designed to work across supported versions of Windows, with logic that adapts to different operating system versions and editions. However, always test in your specific environment before widespread deployment.
 
 **Note:** This framework is designed to be extensible. Additional device standardization solutions can be added in the future to address evolving organizational needs and technological changes.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

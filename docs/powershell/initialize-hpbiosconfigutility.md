@@ -8,6 +8,8 @@ description: 'This script automates downloading/extracting the BCU package, veri
 tags: ['application', 'installation', 'hp', 'bios', ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Overview
@@ -89,3 +91,9 @@ Log and error files (location depends on Strapper configuration; defaults are):
 
     .\Initialize-HPBiosConfigUtility-log.txt
     .\Initialize-HPBiosConfigUtility-error.txt
+
+## Changelog
+
+### 2025-10-13
+
+- Initial version of the document

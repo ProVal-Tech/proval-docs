@@ -8,6 +8,8 @@ description: 'This document presents information on auto-approve category detail
 tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -41,3 +43,9 @@ The script, [MySQL - View - Create (plugin_proval_auto_approval_status)](/docs/2
 | Examined Characteristics - By Titles             | text     | List of the titles that are either approved, denied, or ignored.                                          |
 | Examined Characteristics - CVSS Status           | varchar  | Whether the patches are approved on the basis of CVSS score or not.                                      |
 | Examined Characteristics - CVSS >                | varchar  | CVSS score above which auto-approval of patches is applied.                                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

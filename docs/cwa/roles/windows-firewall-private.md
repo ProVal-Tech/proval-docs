@@ -8,6 +8,8 @@ description: 'This document outlines a role for detecting whether the Private fi
 tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role detects if the 'Private' firewall is enabled on the machine. If so, th
 | Detection String                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------|------------|--------|----------------|
 | \{%@netsh advfirewall show privateprofile state| find "State"@%} | Contains   | ON     | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

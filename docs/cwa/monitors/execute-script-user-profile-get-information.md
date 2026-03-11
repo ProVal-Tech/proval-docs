@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor that executes a specifi
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Windows machines, excluding domain controller servers.
 **Name:** `△ Custom - Execute Script - Windows - User Profile - Get Information`  
 
 The alert template should execute the [EPM - Accounts - Script - User Profile - Get Information](/docs/91d80bf6-68c8-4025-b285-d07390b860c8) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

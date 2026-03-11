@@ -8,6 +8,8 @@ description: 'Documentation for the Install-CiscoSecureClient command to install
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-14
 ---
 
 ## Description
@@ -73,3 +75,9 @@ This command will install all modules, including Umbrella, which require the Use
 
 - .\Install-CiscoSecureClient-log.txt
 - .\Install-CiscoSecureClient-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

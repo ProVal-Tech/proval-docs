@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to clear enforced homepages i
 tags: ['registry', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This document describes how to clear enforced homepages in Chromium-based browse
 
 - Agnostic content logs
 - Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

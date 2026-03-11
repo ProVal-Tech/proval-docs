@@ -8,6 +8,8 @@ description: 'Stores the unique Blackpoint Account UID used to identify and link
 tags: ['security','custom-fields','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This field stores the unique Blackpoint AccountUID, which is the identifier used
 ## Sample Screenshot
 
 ![AccountUid](../../../static/img/docs/83df96df-47eb-43f4-860a-af3f686641c4/accountUid.webp)
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

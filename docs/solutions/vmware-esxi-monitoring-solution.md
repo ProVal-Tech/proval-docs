@@ -8,6 +8,8 @@ description: 'This document outlines a solution for customizable monitoring of E
 tags: ['esxi']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ The goal of this solution is to provide effective and customizable monitoring fo
 4. Import the ticket creation scripts outlined above.
 5. Assign the ticket creation scripts as alert templates for each monitor (these should be importable via the plugin).
 6. Enable the monitors.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

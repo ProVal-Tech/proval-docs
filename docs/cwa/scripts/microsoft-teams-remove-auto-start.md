@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell script that removes the autost
 tags: ['performance', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script will remove the autostart entry for MS Teams for all users.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

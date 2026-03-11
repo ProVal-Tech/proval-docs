@@ -8,6 +8,8 @@ description: 'This document outlines the steps to automatically deploy the DNS f
 tags: ['deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -54,3 +56,9 @@ This solution is designed to automatically deploy the DNS filter to the agents.
 5. Ticket Creation  
    For ticket creation, it is required to set the Ticket Category at the monitor level to gather the ticket category ID and create the ticket on the respective board via the script [CWA - Script - DNS Filter Agent - Install](/docs/f281c866-d1a8-44fd-9412-388b5f06200b):  
    ![Image](../../static/img/docs/07996c53-6e1b-4696-aa08-bdb70710c2c7/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on updating the Duo A
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -95,3 +97,9 @@ This solution will update the Duo Authentication Proxy application to the latest
 
 - Create the [CWM - Automate - Internal Monitor - ProVal - Development - Software - Update - DUO Auth Proxy](/docs/588520f3-c262-4b80-8c56-0b9411ab0bdc) remote monitor on the group created in the second step.
 - Assign the alert template to the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

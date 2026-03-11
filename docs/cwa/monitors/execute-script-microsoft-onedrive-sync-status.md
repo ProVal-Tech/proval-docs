@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of an internal monitor d
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Global
 ## Alert Template
 
 **Name:** `△ CUSTOM - Execute Script - Microsoft OneDrive Sync Status`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

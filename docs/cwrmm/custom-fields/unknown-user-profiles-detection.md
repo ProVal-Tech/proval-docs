@@ -8,6 +8,8 @@ description: 'Enabling this custom field will activate the detection of Unknown 
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Enabling this custom field will activate the detection of Unknown or Cached user
 ## Screenshots
 
 ![Image1](../../../static/img/docs/a7ba6a52-18ae-4c71-8545-5a41999fa41b/Image1.webp)
+
+## Changelog
+
+### 2025-03-03
+
+- Initial version of the document

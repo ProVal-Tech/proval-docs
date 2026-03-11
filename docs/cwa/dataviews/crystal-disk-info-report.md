@@ -8,6 +8,8 @@ description: 'This document provides an overview of the EPM - Disk - Script - Cr
 tags: ['disk', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ Dataview displays the data retrieved by the [Script - Crystal Disk Info Report](
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_1_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

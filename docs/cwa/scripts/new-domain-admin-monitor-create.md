@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating remote monitors th
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -72,7 +74,7 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 
 ## Dependencies
 
-[EPM - User Management - Agnostic - Get-NewDomainAdmin](/docs/414e5b68-23ca-4c24-8aa1-0dc464a4a10a)
+[Agnostic - Get-NewDomainAdmin](/docs/414e5b68-23ca-4c24-8aa1-0dc464a4a10a)
 
 ## User Parameters
 
@@ -136,3 +138,13 @@ The solution's Extra Data Fields have been renamed. Update the script from the `
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-29
+
+- Enhanced the document to make it more user friendly and thus added more screenshots for reference.
+
+### 2025-04-10
+
+- Initial version of the document

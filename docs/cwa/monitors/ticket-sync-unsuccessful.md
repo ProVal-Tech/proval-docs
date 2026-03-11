@@ -7,7 +7,9 @@ keywords: ['ticket', 'sync', 'monitor', 'psa', 'automate']
 description: 'This document outlines a monitor for identifying tickets within ConnectWise Automate that have failed to sync successfully to the PSA. It includes dependencies and target details for effective implementation.'
 tags: ['connectwise']
 draft: false
-unlisted: false
+unlisted: true
+last_update:
+  date: 2026-02-13
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This monitor looks for tickets within Automate that have failed to sync successf
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

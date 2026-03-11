@@ -8,6 +8,8 @@ description: 'This document provides instructions on how to enable or disable th
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -88,3 +90,9 @@ Finishing ticket 77459
 ## Ticket Example
 
 ![Ticket Example](../../../static/img/docs/f1cc450a-82dd-49f9-b720-22983f7b696c/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

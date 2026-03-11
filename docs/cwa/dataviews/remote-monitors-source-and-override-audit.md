@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Remote Moni
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This dataview shows all the Remote Monitor Sources and their Override status.
 | Monitor Source           | Displays the source of the monitor, whether it's coming from a group, Ignite, Local, or Override. |
 | Monitor Override Status   | Displays the Monitor Override status: Override or Normal.                 |
 | Alert Template           | Displays the name of the Alert template applied to the monitor set.       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

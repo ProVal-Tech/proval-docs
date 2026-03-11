@@ -8,6 +8,8 @@ description: A PowerShell script to create and manage toast notifications with c
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-15
 ---
 
 ## Overview
@@ -230,3 +232,9 @@ Windows notification when you click `Feed at 8`:
 - $env:ProgramData\_automation\Script\New-ToastNotification\ToastNotification.log
 - $env:ProgramData\_automation\Script\New-ToastNotification\Stop-ToastNotification-log.txt
 - $env:ProgramData\_automation\Script\New-ToastNotification\Stop-ToastNotification-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

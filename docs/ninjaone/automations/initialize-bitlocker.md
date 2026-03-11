@@ -8,6 +8,8 @@ description: 'Automates BitLocker initialization on Windows via Ninja RMM custom
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Description
@@ -71,3 +73,9 @@ This script serves as the enforcement engine that automatically corrects BitLock
   ![Image1](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/image3.webp)
   * `cPVAL BitLocker Enabled for System Drive`  
   ![Image2](../../../static/img/docs/e3a24552-f347-4117-82f5-7afaaa3fc198/image4.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

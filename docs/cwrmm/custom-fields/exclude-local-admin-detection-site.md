@@ -8,6 +8,8 @@ description: 'Select this Custom Field to exclude the Site from Local Admin Dete
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 ![Complete Monitor](../../../static/img/docs/e988aefc-1f5d-4d10-a66b-cf22e084ae72/image1.webp)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

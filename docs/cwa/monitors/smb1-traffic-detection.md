@@ -8,6 +8,8 @@ description: 'This document outlines the SMB1 Server Auditing Remote Monitor, wh
 tags: ['logging', 'networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Details: `
 ## Implementation
 
 [Implement - Remote Monitor - SMB1 Traffic Detection](/docs/e6d09f37-fd0f-42a6-98a5-449f65673296)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

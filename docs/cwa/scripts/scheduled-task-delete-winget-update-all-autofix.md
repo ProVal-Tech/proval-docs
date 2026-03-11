@@ -8,6 +8,8 @@ description: 'This document describes a script that removes the Winget Update Al
 tags: ['uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ The script removes the `Winget Update All [System]` and `Winget Update All [Logg
 
 - Script log
 - Extra Data Field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

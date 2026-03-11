@@ -8,6 +8,8 @@ description: 'This document provides details about a custom field used to indica
 tags: ['active-directory', 'azure']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Solution: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 |--------------------------------|-----------------------------------------|----------------------------------------------------|
 | cPVAL Azure AD Joined          | Machine                                 | Used to display whether the machine is joined to Azure AD |
 | cPVAL Azure AD Registered      | Machine                                 | Used to display whether the machine is registered to Azure AD |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

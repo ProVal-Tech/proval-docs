@@ -8,6 +8,8 @@ description: 'This script checks the specified registry entries to determine if 
 tags: ['print', 'registry', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ If the above conditions are not met, then the script will report Point And Print
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

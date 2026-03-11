@@ -8,6 +8,8 @@ description: 'This document outlines the process for executing Dell Command | Up
 tags: ['dell', 'installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -40,3 +42,9 @@ Execute the [Dell Command | Update CLI commands](https://www.dell.com/support/ma
 
 **Note:** The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the link below:  
 [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This content is designed to install Blackpoint on Windows and macO
 tags: ['windows','security','installation','uninstallation','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Purpose
@@ -97,3 +99,9 @@ A: Installation runs silently without interrupting the user and does not require
 **Q: Can this be manually triggered for a single device?**
 
 A: Yes. Both installation and uninstallation tasks can be run on-demand via Automation.
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

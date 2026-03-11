@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the data view that d
 tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -49,3 +51,13 @@ This document displays the data fetched by the [Get Latest Installed Cumulative 
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/docs/0c224e91-ca6e-49b5-b2e6-3a8fee076690/image_1.webp)
+
+## Changelog
+
+### 2026-01-07
+
+- Added 3 new columns: "Days Since Last Contact",  "Days Since Last Script Run" and "Friendly Name" to provide dynamic, day-based filtering for improved data analysis and usability.
+
+### 2025-04-10
+
+- Initial version of the document

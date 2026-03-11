@@ -8,6 +8,8 @@ description: 'This document details a script designed to disable the warning pro
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script will disable the prompt message to users from Microsoft warning abou
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

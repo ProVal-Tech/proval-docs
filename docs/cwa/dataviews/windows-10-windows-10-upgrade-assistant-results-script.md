@@ -8,6 +8,8 @@ description: 'This document provides an overview of the data structure used for 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Columns
@@ -26,3 +28,9 @@ unlisted: false
 ## Dependencies
 
 This data is populated by the Windows 10 Upgrade Assistant script as well as a secondary Windows 10 Upgrade Assistant Follow-Up script. Without these scripts, this data view will not be able to effectively display the data.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

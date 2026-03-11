@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script designed to clear t
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This script simply sets the following EDFs to 0 so that the user prompting stops
 ## Output
 
 No logging is performed with this script. It simply zeros out the required EDFs for the dependencies.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a summary and detailed instructions on crea
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This group contains only the Windows 10 and Windows 11 agents.
    - OS contains any of Windows 10 or Windows 11  
    
      ![Criteria](../../../static/img/docs/e52d302e-56a7-4438-8c4d-e53e5a16f751/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

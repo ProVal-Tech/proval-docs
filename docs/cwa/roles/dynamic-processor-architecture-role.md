@@ -8,6 +8,8 @@ description: 'This document provides information on processor architecture, deta
 tags: ['cim', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ default { Unknown architecture }
 ## Sample
 
 ![Sample Image](../../../static/img/docs/b0c17ff1-73a8-41ae-af16-901eade975b2/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

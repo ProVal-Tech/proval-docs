@@ -8,6 +8,8 @@ description: 'This document outlines a script that runs the agnostic EPM data co
 tags: ['database', 'report', 'setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ The intention of this script is to serve as an autofix for an internal monitor n
 2. Set up variables for [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8).
 3. Run the agnostic process ([Get-BatteryReport.ps1](/docs/992bde06-574b-4b3a-a442-6962736a18d2)).
 4. Run the automate script process ([OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

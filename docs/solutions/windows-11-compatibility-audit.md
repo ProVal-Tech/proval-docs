@@ -8,6 +8,8 @@ description: 'This document outlines a solution to assess the compatibility of W
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ Additionally, it can be used to detect Windows 11 computers that do not meet Mic
      - [Monitor - Execute Script - Windows - Check Windows 11 Compatibility](/docs/8aa2542c-c61f-43b8-a7ec-ec33558319e4)  
        - △ Custom - Execute Script - Windows 11 Compatibility Check  
        - Right-click and Run Now to start the monitor
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -4,15 +4,17 @@ slug: /33120745-9fa1-4864-aff6-b97d083e3fd5
 title: 'SVC-LTRedirSVC'
 title_meta: 'SVC-LTRedirSVC'
 keywords: ['automate', 'monitoring', 'service', 'alert', 'ticket']
-description: 'This document outlines the monitoring setup for the LTRedirSVC service on the Automate server, including alert configurations and service check details to ensure timely notifications and ticket creation in Autotask.'
+description: 'This document outlines the monitoring setup for the LTRedirSVC service on the Automate server, including alert configurations and service check details to ensure timely notifications and ticket creation in Halo.'
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
 
-LTRedirSVC is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Autotask portal if the status becomes failed.
+LTRedirSVC is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Halo PSA if the status becomes failed.
 
 It should be created against the "Labtech Server" group for on-prem partners only.
 
@@ -31,3 +33,9 @@ It should be created against the "Labtech Server" group for on-prem partners onl
 ## Target
 
 Service plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

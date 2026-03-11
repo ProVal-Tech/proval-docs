@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview designed 
 tags: ['performance', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This dataview helps you audit the queued and running scripts in Automate.
 | ScriptID          | Displays the script ID.                               |
 | TotalCount        | Displays the total number of times the script has been executed. |
 | RunningPercentage  | Displays the script's running percentage.             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

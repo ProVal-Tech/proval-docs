@@ -8,6 +8,8 @@ description: 'This document presents detailed information about drive attributes
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This document presents information about drive attributes such as Power Cycle Co
 | Threshold             | Threshold set for the Attribute               |
 | Last User Name        | Last user name on the machine                 |
 | Last Contact          | Last contact for the computer with the Automate. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

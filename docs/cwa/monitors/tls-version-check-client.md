@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and details of a remote monitor
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ Managed Windows Servers and Workstations
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Client](/docs/a2436d9b-83e4-4405-a3e1-dc4019438d3a)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

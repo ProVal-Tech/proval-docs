@@ -8,6 +8,8 @@ description: 'This document explains the configuration of the SentinelOne Site K
 tags: ['networking', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This custom field at the company level stores the Sentinel Site Key. The Site Ke
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/0c2128f8-2f99-47e7-a0ff-82b854ff2701/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

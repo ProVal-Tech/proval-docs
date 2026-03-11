@@ -8,6 +8,8 @@ description: 'This document outlines a solution to automatically change the stat
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -60,3 +62,9 @@ The purpose of this solution is to change the status of the ticket in ConnectWis
      - Apply the alert template `△ Custom - Autofix - Online Status Alerting`  
        - Ensure this alert template is set to run the [Script - Online Status Alerting - Autofix - Update Ticket + Email [EDF]](/docs/71b6a39c-0d61-4959-8f1e-69b1cc84d182)  
      - Right-click and select Run Now on the monitor
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

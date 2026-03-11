@@ -8,6 +8,8 @@ description: 'This document provides a guide on how to update OS build custom fi
 tags: ['api', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
@@ -18,4 +20,10 @@ Update OS Build Custom Fields with Web Check for Windows 10 via API
 
 - **url**: URL for our VSA  
 - **user**: Username we will authenticate with  
-- **password**: The authentication string (password or PAT)  
+- **password**: The authentication string (password or PAT)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

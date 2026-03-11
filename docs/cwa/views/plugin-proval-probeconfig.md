@@ -8,6 +8,8 @@ description: 'This document outlines the creation and purpose of the Network Pro
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -56,3 +58,9 @@ This view was created to bypass the word count limit of 2500 for the "SQLBody" c
 | Updated By                               | VARCHAR  | Last user to make any changes to the probe                          |
 | Creation Date                            | datetime | Date of creation                                                   |
 | Last Update Date                         | datetime | Last update date for the network probe                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

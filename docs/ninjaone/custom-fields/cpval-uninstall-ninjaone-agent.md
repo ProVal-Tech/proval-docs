@@ -8,6 +8,8 @@ description: 'This custom field is populated by the â€œUninstall NinjaOne Agentâ
 tags:  ['uninstallation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This custom field is populated by the [Uninstall NinjaOne Agent](/docs/1efc6b0c-
 ## Sample Screenshot
 
 ![Image](../../../static/img/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0/image.webp)
+
+## Changelog
+
+### 2025-12-09
+
+- Initial version of the document

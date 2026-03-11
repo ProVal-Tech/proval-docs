@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on implementing enhan
 tags: ['disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Purpose
@@ -72,3 +74,9 @@ Being able to monitor drive space using specifically assigned thresholds elimina
      Set this to run starting the following day at 5:50 AM  
      (The specific time is not too important; just want to make sure we run it at a different time than the other monitor.)  
      Ensure the monitor reports it is not disabled.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

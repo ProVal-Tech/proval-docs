@@ -8,6 +8,8 @@ description: 'Shows the last date a new password was set for the local admin acc
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Shows the last date a new password was set for the local admin account. This val
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/d46e9ed6-3757-459f-a08e-530490f5f08c/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

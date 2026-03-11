@@ -8,6 +8,8 @@ description: 'This document outlines a role that checks if the Trusted Platform 
 tags: ['connectwise', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role checks if the TPM on the machine is ready to use. If so, this role is 
 | Detection String                                                                                           | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Get-Tpm|select -ExpandProperty TPMReady"@%} | Contains   | True   | All OS's       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

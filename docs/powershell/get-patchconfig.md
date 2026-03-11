@@ -8,6 +8,8 @@ description: 'Documentation for the Get-PatchConfig command to retrieve Windows 
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -287,3 +289,9 @@ $PatchConfig = [PSCustomObject]@{
 ## Output
 - Get-PatchConfig-log.txt
 - Get-PatchConfig-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

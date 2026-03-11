@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the custom tab
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ This document stores the current configuration set for the computer from the cli
 | updatesatlogon         | tinyint   | Are the updates enabled at user login too? (0/1)                                                    |
 | donotrunafterinstallation| tinyint   | Is the WAU allowed to run after installation? (0/1)                                                 |
 | remotemonitor           | tinyint   | Is the [Winget Auto Update Errors](/docs/68a14948-368f-4064-97a3-d1928e122013) remote monitor creation enabled? (0/1) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This dataview contains the detail of action taken on the agent by 
 tags: ['api', 'edge', 'browsers', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This dataview contains the detail of action taken on the agent by the script at 
 | LastContact                  | Last contact of the agent with CW Automate       |
 | Copilot Status               | Copilot status of the agent                      |
 | Copilot Status Detection Date| Copilot status changes date made by the [Script_Copilot_Disable_Enable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7) on the agent          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

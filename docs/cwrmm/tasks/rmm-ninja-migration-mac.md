@@ -8,6 +8,8 @@ description: 'This script deploys the NinjaRMMAgent to MAC OS, based on the arti
 tags: ['macos', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -434,3 +436,9 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 
 - Custom field
 - Script Log
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

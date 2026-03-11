@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure for storing OneDr
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ Stores the information returned by the [Get OneDrive Sync Status [DV]](/docs/ed0
 | TotalQuota      | float    | Total size of the available quota (GB)         |
 | UsedQuota       | float    | Amount of used quota (GB)                       |
 | Username        | varchar  | Username                                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

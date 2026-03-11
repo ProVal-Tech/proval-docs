@@ -4,15 +4,17 @@ slug: /002e4435-9142-4373-a857-6bf91c16d7af
 title: 'Nightly Database Backup Monitoring'
 title_meta: 'Nightly Database Backup Monitoring'
 keywords: ['ticket', 'backup', 'failure', 'connectwise', 'automate', 'email', 'notification']
-description: 'This document describes a script that creates a ticket in the ProValtech Autotask Portal when the ConnectWise Automate nightly backup fails. It details the process, variables, and system properties involved in the script, ensuring timely notifications for backup issues.'
+description: 'This document describes a script that creates a ticket in the ProValtech Halo PSA when the ConnectWise Automate nightly backup fails. It details the process, variables, and system properties involved in the script, ensuring timely notifications for backup issues.'
 tags: ['backup', 'connectwise', 'database', 'email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
 
-This script will create a ticket in our (ProValtech's) Autotask Portal if the ConnectWise Automate nightly backup fails.
+This script will create a ticket in our (ProValtech's) Halo PSA if the ConnectWise Automate nightly backup fails.
 
 ## Sample Run
 
@@ -58,3 +60,9 @@ A MySQL backup for ConnectWise Automate was generated last night, but it is lowe
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

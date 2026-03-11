@@ -8,6 +8,8 @@ description: 'This script inserts a registry key to hide the weather widget from
 tags: ['performance', 'registry', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This script will insert a registry key to hide the weather widget from the taskb
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-WifiProfile command to remove a speci
 tags: ['networking', 'wireless']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -32,3 +34,9 @@ Removes the Wi-Fi profile named 'MyWifi' from the system.
 ## Output
 - .\Remove-WifiProfile-log.txt
 - .\Remove-WifiProfile-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

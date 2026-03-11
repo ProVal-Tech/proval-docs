@@ -8,6 +8,8 @@ description: 'This document outlines an optional monitor set designed to track m
 tags: ['report', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ By default, it's a view-only monitor set, but the `default - create automate tic
 ## Target
 
 The SQL query is limiting the monitor to the machines that are supported by Microsoft and have a Managed Patch policy applied.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

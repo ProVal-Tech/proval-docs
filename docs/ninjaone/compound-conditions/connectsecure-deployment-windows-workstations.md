@@ -8,6 +8,8 @@ description: 'Triggers the "CyberCNSv4 ConnectSecurev4 Windows - Install/Update"
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Triggers the [CyberCNSv4 ConnectSecurev4 Windows - Install/Update](/docs/d22e3b2
 ## Compound Condition Creation 
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cpval-connect-secure-windows-workstation.toml)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

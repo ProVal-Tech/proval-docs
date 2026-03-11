@@ -8,6 +8,8 @@ description: 'A comprehensive solution for managing Fastboot settings across Win
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Purpose
@@ -149,3 +151,9 @@ Yes—disabling Fast Boot may increase startup time.
 Consider this when setting organizational policy.
 
 ---
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

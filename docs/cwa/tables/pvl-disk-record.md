@@ -8,6 +8,8 @@ description: 'This document outlines the structure and purpose of the Hyper-V Di
 tags: ['database', 'disk-encryption', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ This table stores the drive data of the Hyper-V machines at different schedules 
 | Missing       | TINYINT  | Drive status indicating whether detected in Automate or not |
 | Internal      | TINYINT  | Indicates whether the drive is internal or external/removable |
 | SSD           | TINYINT  | Indicates whether the disk is SSD or not        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

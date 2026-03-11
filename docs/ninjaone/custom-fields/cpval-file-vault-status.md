@@ -8,6 +8,8 @@ description: 'This custom field stores the FileVault status on macOS devices fet
 tags: ['macos', 'custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-05
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Note: `This is only compatible for Mac OS devices.`
 ## Sample screenshot
 
 ![FileVault status](../../../static/img/docs/b0fa9851-d256-45b6-ac64-38f6e6b0d30f/filevault.webp)
+
+## Changelog
+
+### 2025-12-02
+
+- Initial version of the document

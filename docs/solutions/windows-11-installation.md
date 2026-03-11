@@ -8,6 +8,8 @@ description: 'This solution is designed to automate the upgrade from Windows 10 
 tags: ['database', 'report', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Purpose
@@ -105,3 +107,23 @@ The following scripts have been incorporated into the solution:
 | **Windows 11 Installation Attempts** | Text | Computer | Default | A non-editable EDF, updated by the installer script to track failure counts. |
 | **ESU Detection** | Text | Computer | Default | Stores ESU status (e.g., 'ESU Activated'). Used to exclude paying ESU machines. |
 | **Windows 11 - Machines per Night** | Text | Client | Default | Defines the daily batch limit for the client. If blank, defaults to 5. |
+
+## Changelog
+
+### 2025-12-15
+
+- Name of the solution got updated from "Windows 11 Installation" to "Windows 11 24H2 Installation".  "Windows 11 Installer" script is updated to install 24H2 and 25H2.
+"Install Windows 11 24H2 - Compatible Machines" monitor set is updated to exclude ESU licensed machines.
+A new client-level EDF "Windows 11 - Machines per Night" is added to control the number of machines to upgrade per night for the client.
+
+### 2025-04-11
+
+- Update the solution to not execute the more than 2 times on a machine from automation. Addition of a dataview to log success/failure and attempts and Created a workaround script to perform all required steps and attempt to install windows 11 (Install Windows 11 Feature Update [Beta, Reboot])
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-03-31
+
+- The document for this content was missing from our Content portal. Just created the solution documents.

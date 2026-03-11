@@ -8,6 +8,8 @@ description: 'This field contains the final message displayed to the logged-in u
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This field contains the final message displayed to the logged-in user before the
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/02ca99e5-85be-4e2e-a77b-3cd94be65566/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

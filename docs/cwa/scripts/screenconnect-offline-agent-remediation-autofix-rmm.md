@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that utiliz
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -91,3 +93,9 @@ It will clear the `AgentStatus` script state and will finish any open offline se
 - Script Log
 - Script State
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

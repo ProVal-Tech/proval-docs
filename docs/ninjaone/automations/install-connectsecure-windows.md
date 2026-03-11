@@ -8,6 +8,8 @@ description: 'Installs, repairs, or updates the `CyberCNS ConnectSecure Vulnerab
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Overview
@@ -38,4 +40,10 @@ Installs, repairs, or updates the `CyberCNS ConnectSecure Vulnerability Scan Age
 
 ## Output
 
-- Activity Details 
+- Activity Details
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

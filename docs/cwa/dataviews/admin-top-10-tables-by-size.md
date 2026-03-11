@@ -8,6 +8,8 @@ description: 'This document provides a Dataview that lists and details the top 1
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This Dataview shows the list and details of the top 10 tables in the database. I
 | Rows        | Displays the number of rows in the table|
 | Data        | Displays the amount of data/size in the table |
 | Total_size  | Displays the total size of the table    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

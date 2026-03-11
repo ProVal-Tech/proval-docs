@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for deploying the Sen
 tags: ['deployment', 'linux', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ The purpose of this solution is to deploy the SentinelOne agent on Windows, Linu
 - Create [Device Group - SentinelOne Deployment](/docs/e7b258e9-436c-499c-8532-3ba7b3d8e6e3)
 - Create the deployment schedule as described in this document: [Task - SentinelOne Deployment](/docs/25651d1f-99d6-4906-8666-220994a4862e)
 - Create [Monitor - SentinelOne Deployment Failure](/docs/9e16691c-a81f-4a59-865c-ac38530ae29f)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

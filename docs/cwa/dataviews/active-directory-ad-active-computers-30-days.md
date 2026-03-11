@@ -8,6 +8,8 @@ description: 'This document provides a summary of a dataview that displays a lis
 tags: ['active-directory', 'networking', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ The Active Directory plugin must be installed and configured properly to detect 
 | OS                         | Displays the OS installed on the machine                |
 | Last Contact With RMM      | Displays the description of the machine if any details are available |
 | Last Logon                | Displays the last login date and time                  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

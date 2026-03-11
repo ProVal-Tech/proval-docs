@@ -8,6 +8,8 @@ description: 'This document outlines the setup and details of a remote monitor f
 tags: ['update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Local Machine
 **Body**:  
 `Winget Auto Update Errors detected on %ComputerName%. Failure details:`  
 `<Failure Reason>`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

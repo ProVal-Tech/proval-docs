@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and implementation of the Local
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -99,3 +101,9 @@ The purpose of this solution is to pull meaningful certificate information into 
    - [Internal Monitor - Certificate Expiration < 30 Days](/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c)  
      - `Alert Template: △ Custom - Ticket Creation - Computer`
      - Right-click and select "Run Now" to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

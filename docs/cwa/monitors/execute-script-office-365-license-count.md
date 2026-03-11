@@ -8,6 +8,8 @@ description: 'This internal monitor ensures that the data in the Office 365 Lice
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Office 365 License Count`
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

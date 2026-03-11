@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed to detect unexpected
 tags: ['performance', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -143,3 +145,9 @@ The user pressed the power button.
 ## Implementation
 
 [Import - Remote Monitor - Unexpected Shutdown](/docs/9bf4d628-655e-4568-bea6-dfd0544a1a56)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

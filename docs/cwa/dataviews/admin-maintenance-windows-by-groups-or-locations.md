@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of how to audit the Mai
 tags: ['report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This dataview can be used to audit the Maintenance Window applied to a Group or 
 | Maint Window Name   | The name of the Maintenance Window.                                                           |
 | Maint Window Note   | Displays additional comments for a Maintenance Window.                                        |
 | Number Of Machines   | The total number of machines on which the Maintenance Window is applied.                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

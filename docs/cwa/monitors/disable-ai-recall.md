@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on disabling the AI recall
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Windows 11 machines only.
 ## How To Import
 
 [Import - Remote Monitor - Disable AI Recall](/docs/3a5d036a-dcc5-4e6e-9962-92309891a4ec)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

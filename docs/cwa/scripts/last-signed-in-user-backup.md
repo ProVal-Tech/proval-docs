@@ -8,6 +8,8 @@ description: 'This document describes a script used to store the last signed-in 
 tags: ['backup', 'registry']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This script stores the last signed-in user information from the registry as a ba
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

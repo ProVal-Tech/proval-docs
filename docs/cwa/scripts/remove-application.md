@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script designed to facilit
 tags: ['performance', 'security', 'setup', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -105,3 +107,9 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 **Example:**  
 ![Ticketing Example](../../../static/img/docs/201f46d7-6511-4e5f-a002-ff7f4b27c8be/image_8.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

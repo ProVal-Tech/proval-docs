@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for checking the presence of 
 tags: ['installation', 'performance', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,4 +47,10 @@ Agent Procedure Log Entry & Custom Field - **Not Running**
 ![Image 5](../../../static/img/docs/c40a1797-4315-4c60-90b4-2d68ce2038e8/image_5.webp)  
 
 Agent Procedure Log Entry & Custom Field - **Not Present**  
-![Image 6](../../../static/img/docs/c40a1797-4315-4c60-90b4-2d68ce2038e8/image_6.webp)  
+![Image 6](../../../static/img/docs/c40a1797-4315-4c60-90b4-2d68ce2038e8/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

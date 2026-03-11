@@ -8,6 +8,8 @@ description: 'This document provides an RMM-specific display of the client-level
 tags: ['report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This Dataview is the RMM-specific display of the client-level breakdown of machi
 | OS            | Operating System (Server | Workstation)                                                     |
 | Patch Status  | Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)         |
 | Machine Count | Number of machines falling under the concerned category/patch status for the client.       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

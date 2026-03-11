@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect online Windows
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -58,3 +60,13 @@ Failed to install the @ApplicationVersion@ of DUO Authentication for Windows Log
 
 **When an argument is missing:**  
 Arguments required to install DUO Authentication for Windows Logon are not set.
+
+## Changelog
+
+### 2025-06-27
+
+- `Duo Authentication Version` EDF was introduced as script/monitor was not installing or updating DUO on machines where the application version is not detected in the Software tab. This EDF is filled by the Script itself.
+
+### 2025-04-10
+
+- Initial version of the document

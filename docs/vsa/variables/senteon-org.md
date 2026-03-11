@@ -8,6 +8,8 @@ description: 'This document outlines the managed variable used to store the Sent
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The value for this must be provided by the partner. The partner can get the data
 | Managed Variable Name | Managed Variable Type | Description                                                  |
 |-----------------------|-----------------------|--------------------------------------------------------------|
 | Senteon_Org           | Public                | Used by the agent procedure to specify the organization during installation |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

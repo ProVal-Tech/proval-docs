@@ -8,6 +8,8 @@ description: 'It executes Windows 11 Installer script on compatible Windows 10 m
 tags:  ['database', 'report', 'setup', 'update', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-12-08
 ---
 
 ## Summary
@@ -39,3 +41,17 @@ Global
 | **Windows 11 Installation Attempts** | Text | Computer | Default | A non-editable EDF, updated by the installer script to track failure counts. |
 | **ESU Detection** | Text | Computer | Default | Stores ESU status (e.g., 'ESU Activated'). Used to exclude paying ESU machines. |
 | **Windows 11 - Machines per Night** | Text | Client | Default | Defines the daily batch limit for the client. If blank, defaults to 5. |
+
+## Changelog
+
+### 2026-01-15
+
+- The monitor was upgrading 5 machines per client per hour instead of 5 clients per night. We have resolve this issue in this update and also excluded LTSC and LTSB OS.
+
+### 2025-12-15
+
+- Deprecated and introduced "Install Windows 11 24H2 - Compatible Machines"
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to clear the Sa
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Overview
@@ -48,3 +50,9 @@ Clears all Safari cache files and folders from macOS devices.
 | Datto RMM                 |                                        |
 ## Attachments
 [Install-AnyConnect.ps1](<../../../static/attachments/itg/10371995/Install-AnyConnect.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

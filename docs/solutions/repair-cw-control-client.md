@@ -8,6 +8,8 @@ description: 'This document outlines a solution for identifying offline computer
 tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,4 +39,10 @@ The ConnectWise Automate autofix script, CWM - Control - Script - CW Control - R
 - Schedule the [EPM - Data Collection - Script - Get - CW-ControlAPI - Online Status*](/docs/71ac312f-e490-4126-bc2d-f9c07f5582cf) script to run twice per day. It is suggested to use the Labtech Server group for on-prem partners and the Domain Controller of the primary client for hosted partners.  
   ![Schedule](../../static/img/docs/d06a0253-328e-4a80-860f-b1b5055b9dda/image_1.webp)  
 - Update the run time of the [CWM - Control - Monitor - Agent - CW Control Needs Repair](/docs/b06ee4ed-7da2-41cd-88f0-e9ddba25e6f7) monitor set to run 20-30 minutes after the scheduled script run.  
-  ![Update Run Time](../../static/img/docs/d06a0253-328e-4a80-860f-b1b5055b9dda/image_2.webp)  
+  ![Update Run Time](../../static/img/docs/d06a0253-328e-4a80-860f-b1b5055b9dda/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

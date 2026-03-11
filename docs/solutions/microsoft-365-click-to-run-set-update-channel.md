@@ -8,6 +8,8 @@ description: 'This document outlines the steps to set the update channel for Mic
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ Create the following custom fields:
 
 Create and schedule this task:
 - [CW RMM - Task - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/3627ba40-ca53-4583-8435-bb09bdb03f20)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

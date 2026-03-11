@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the User Login/
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The DataView shows the login/logout audit of the users.
 | Connection Type   | Indicates whether the connection was remote, network, or interactive, etc. |
 | Logon Type        | Indicates whether the user was detected for login or logout |
 | Script Ran Date   | This shows the script's last ran date and time       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

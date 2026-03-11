@@ -8,6 +8,8 @@ description: 'Choose the operating system to enable ImmyBot auto deployment. Sel
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-04
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Select the operating system to enable automatic deployment via ImmyBot. This cus
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/415511bb-26c0-4c9f-ac34-d395f29b223e/image1.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

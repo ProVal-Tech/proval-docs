@@ -77,3 +77,9 @@ If none of the above steps help, please reach out to us at [Support@provaltech.c
 &nbsp;
 
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process of implementing the content to 
 tags: ['database',]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -55,3 +57,9 @@ Run the [Script - MySQL - View - Create (plugin_proval_auto_approval_status)](/d
 ### Step 4
 
 Schedule the [Unapproved Patches Count Audit](/docs/595e85de-299d-4242-a569-f5367be6b1c9) script to run once per day as demonstrated in the [script's](/docs/595e85de-299d-4242-a569-f5367be6b1c9) document.
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

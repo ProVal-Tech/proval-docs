@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating Remote Monitors fo
 tags: ['memory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -191,3 +193,13 @@ The choice between "/Memory/Available MBytes" and "/Memory/% Committed Bytes In 
 ## Tips
 
 - [Set Computer Level EDFs by Group ID](/docs/95e85dc0-6420-42fe-8d2a-aeb9dac683b0) script can be used to set overrides on multiple machines.
+
+## Changelog
+
+### 2025-04-24
+
+- Added a few EDFs to control the monitor creation, ticketing etc
+
+### 2025-04-10
+
+- Initial version of the document

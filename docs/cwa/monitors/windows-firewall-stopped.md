@@ -8,6 +8,8 @@ description: 'This document provides a method to check if the Firewall service (
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This internal monitor checks if the Firewall service (mpssvc) is running for onl
 The suggested target for the monitor is:
 
 - Server & Workstation Service Plans
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

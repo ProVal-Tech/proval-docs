@@ -8,6 +8,8 @@ description: 'Stores the timestamp of the last reboot prompt sent to the device.
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Stores the timestamp of the last reboot prompt sent to the device. Updated autom
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/fe3a8ca4-3722-4eaf-895a-723f8d563395/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

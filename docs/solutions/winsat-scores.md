@@ -8,6 +8,8 @@ description: 'This document outlines a solution to update custom fields with Win
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This solution is designed to use an agent procedure to update custom fields to d
 ## Implementation
 
 Custom fields need to be created prior to running the agent procedure.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

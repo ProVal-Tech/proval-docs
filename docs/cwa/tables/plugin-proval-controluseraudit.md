@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the ConnectWise 
 tags: ['connectwise', 'database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ Stores information from the @CW Control - User Audit script about existing Conne
 | IsApproved                | TINYINT   | 1 or 0 to determine if the audited CWC user is an approved user or not.  |
 | IsLockedOut               | TINYINT   | 1 or 0 to determine if the audited CWC user is locked out.                |
 | 2FAEnabled                | TINYINT   | 1 or 0 to determine if the audited CWC user has 2FA enabled.             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

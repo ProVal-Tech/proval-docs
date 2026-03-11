@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the denied patch tab
 tags: ['database', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This table holds information on patches to deny as per [denied patches](https://
 | KBID   | varchar(20) | KBID of the patch to deny.           |
 | Title  | varchar(2000) | Title of the patch to deny.        |
 | Reason | varchar(2000) | Reason behind denying the patch.    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

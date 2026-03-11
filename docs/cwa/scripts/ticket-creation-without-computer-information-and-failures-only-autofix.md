@@ -1,22 +1,24 @@
 ---
 id: '730449e6-1c73-46ca-a93d-d7b9526e1ef9'
 slug: /730449e6-1c73-46ca-a93d-d7b9526e1ef9
-title: 'Ticket Creation - Without Computer Information And Failures Only Autofix'
-title_meta: 'Ticket Creation - Without Computer Information And Failures Only Autofix'
+title: 'Ticket Creation - Without Computer Information And Failures Only [Autofix]'
+title_meta: 'Ticket Creation - Without Computer Information And Failures Only [Autofix]'
 keywords: ['ticket', 'creation', 'monitor', 'alert', 'sql']
 description: 'This document describes a script that creates tickets without including computer details, functioning similarly to the CWM Automate script for ticket creation. It outlines the variables used, the process for ticket creation, and the expected output, focusing on RAWSQL monitor sets and internal monitors.'
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
 
-This script operates similarly to the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket with the computer's details, it will create a ticket without including them. Additionally, no actions are defined in the script for the SUCCESS status of the monitors.
+This script operates similarly to the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket with the computer's details, it will create a ticket without including them. Additionally, no actions are defined in the script for the SUCCESS status of the monitors.
 
 ## Sample Run
 
-This is an Autofix Script, and it is currently being used with the “~Custom Ticket Creation without Computer Details” alert template.
+This is an Autofix Script, and it is currently being used with the `~Custom Ticket Creation without Computer Details` alert template.
 
 ![Sample Run](../../../static/img/docs/730449e6-1c73-46ca-a93d-d7b9526e1ef9/image_1.webp)
 
@@ -50,3 +52,9 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

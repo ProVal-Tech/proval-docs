@@ -8,6 +8,8 @@ description: 'This guide provides detailed instructions on sharing internal moni
 tags: ['esxi', 'networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -102,3 +104,9 @@ It's essential to confirm that the Virtualization Manager Plugin is properly con
 
 **Q:** My VMware ESXi host is not showing up in the Virtualization Manager. What can I do to troubleshoot?  
 **A:** Refer to this document: [VMware Host Not Detected in Virtualization Manager Plugin](/docs/2dc2bb07-e083-48d0-836e-55e40c05c871)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

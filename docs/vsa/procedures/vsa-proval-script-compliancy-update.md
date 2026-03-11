@@ -8,6 +8,8 @@ description: 'This document outlines the compatibility requirements for ProVal c
 tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ All content listed in [EPM - Data Collection - Solution - VSA ProVal Script Comp
 - Agent Procedure Log
 - PSResult
 - CMDResults
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

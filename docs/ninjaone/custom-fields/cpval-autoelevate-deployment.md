@@ -8,6 +8,8 @@ description: 'This field controls whether the AutoElevate deployment process sho
 tags: ['security','application','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This field controls whether the AutoElevate deployment process should run on the
 ## Sample Screenshot
 
 ![Lisence Key](../../../static/img/docs/fddfde6b-c93e-4471-aafe-2d6bc65c7e4b/aEdeployment.webp)
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

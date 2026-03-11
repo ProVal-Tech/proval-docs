@@ -8,6 +8,8 @@ description: 'This document provides an overview of a PowerShell script designed
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -150,3 +152,9 @@ This bypasses all initial checks and forces the advanced repair regardless of se
 | ConnectWise RMM                  |                                      |
 | Kaseya                           |                                      |
 | Datto RMM                        |                                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

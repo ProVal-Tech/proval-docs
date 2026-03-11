@@ -8,6 +8,8 @@ description: 'This document outlines two agent procedures, ISO Mount Disable and
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Sets `SZ HKEY_CLASSES_ROOT/Windows.IsoFile/shell/mount/ProgrammaticAccessOnly` t
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process for collecting information rega
 tags: ['email', 'performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -96,3 +98,9 @@ This document collects information regarding any existing crash dumps.
 ### Custom Table
 
 ![Custom Table Image](../../../static/img/docs/dde000a0-373a-4023-a594-04e532b5ad57/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

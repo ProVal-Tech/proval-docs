@@ -8,6 +8,8 @@ description: 'This document provides information on the FastBoot Disabled Indica
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Indicates that FastBoot has been disabled on the computer.
 
 ![Screenshot 1](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/3c87c303-e892-4f6b-889f-acde66928978/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a Dataview that disp
 tags: ['networking', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This Dataview displays the machines that are placed in the wrong location. The l
 | New Location Name         | Matching Location's Name                                          |
 | New Client ID             | Matching Client's Client ID                                       |
 | New Client Name           | Matching Client's Name                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

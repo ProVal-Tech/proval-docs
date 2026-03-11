@@ -8,6 +8,8 @@ description: 'This guide provides a comprehensive overview of implementing the W
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -79,3 +81,9 @@ The `Exclude From Winget Auto Update` checkbox is available in the location and 
      - [Internal Monitor - Execute Script - Configure Winget Auto Update](/docs/a2fa065f-6f76-4442-a0e0-a64365f6c331)  
        - Alert Template - `△ Custom - Execute Script - Configure Winget Auto Update`
        - Right-click and Run Now to start the monitor
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script designed to install the KB5005394
 tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The script will install KB5005394 - Out of Band Patch only if it is not already 
 
 - Script log
 - Script state
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

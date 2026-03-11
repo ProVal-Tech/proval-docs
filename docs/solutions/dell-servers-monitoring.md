@@ -8,6 +8,8 @@ description: 'This document outlines the steps to proactively monitor Dell Serve
 tags: ['dell', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -41,3 +43,9 @@ The purpose of this solution is to proactively monitor issues with Dell Servers 
        - **IMPORTANT:** View the results of the monitor before enabling. If there are more than 20 results, confirm with the consultant if they would like it enabled.
          - Configure with the alert template: `△ Custom - Ticket Creation - Computer`.
          - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

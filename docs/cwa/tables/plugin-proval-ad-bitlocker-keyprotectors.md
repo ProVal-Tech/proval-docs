@@ -8,6 +8,8 @@ description: 'This document provides information about BitLocker key protectors 
 tags: ['active-directory', 'backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ Stores information about BitLocker key protectors backed up to Active Directory.
 | ParentDistinguishedName | TEXT     | The full DN of the parent of the key protector object in AD (generally a computer object).           |
 | ParentSID               | VARCHAR  | The SID of the parent of the key protector object in AD (generally a computer object).               |
 | Timestamp               | DATETIME | The date and time that the audit was last run.                                                       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

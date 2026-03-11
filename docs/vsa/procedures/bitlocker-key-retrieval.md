@@ -8,6 +8,8 @@ description: 'This document outlines the process for retrieving any available Bi
 tags: ['backup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This process retrieves Bitlocker recovery keys on the endpoint and prints any th
 ## Output
 
 CF, AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

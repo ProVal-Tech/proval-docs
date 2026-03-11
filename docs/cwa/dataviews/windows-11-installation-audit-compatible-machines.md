@@ -8,6 +8,8 @@ description: 'Displays the status of compatible Windows 10 computers upgraded by
 tags:  ['database', 'report', 'setup', 'update', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-04-14
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Displays the status of compatible Windows 10 computers upgraded by the [Install 
 | Status                     | Status/Outcome of upgrade attempt               |
 | Attempts                   | Number of attempts                               |
 | Latest Run                 | Most recent run time of the script              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

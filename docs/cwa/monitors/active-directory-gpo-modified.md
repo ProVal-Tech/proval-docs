@@ -8,6 +8,8 @@ description: 'This document provides a detailed implementation guide for a Custo
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,4 +54,10 @@ Details:
 **%FIELDNAME%:** GPO: `\\<Name of GPO>` (Modified Time: `\\<Modification Time of GPO>`)  
 
 **Sample Ticket:**  
-![Sample Ticket Image](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_4.webp)  
+![Sample Ticket Image](../../../static/img/docs/25040f3b-ef1d-4ebb-af45-e0df3d12ebae/image_4.webp)
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

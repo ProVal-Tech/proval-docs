@@ -8,6 +8,8 @@ description: 'Removes specified bloatware (potentially unwanted applications) fr
 tags: ['windows', 'setup', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ Removes specified bloatware (potentially unwanted applications) from the local W
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

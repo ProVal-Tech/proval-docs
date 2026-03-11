@@ -8,6 +8,8 @@ description: 'This document provides a detailed report on machines where a speci
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The dataview displays information about machines where a specific command has be
 | Command Parameter        | Parameter of the Stuck Command       |
 | Date Updated             | Start time of the command            |
 | Stuck Since (Hours)     | Duration the command has been stuck   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

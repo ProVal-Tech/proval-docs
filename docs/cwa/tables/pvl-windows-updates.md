@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the Windows Upda
 tags: ['database', 'installation', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -57,3 +59,9 @@ Populating script: [EPM - Script - Windows Update History Audit](/docs/d0c435d0-
 | BrowseOnly                      | TINYINT   |                                                                                                 |
 | PerUser                         | TINYINT   |                                                                                                 |
 | ScriptRunTime                   | DATETIME  | Last date and time that the populating script was executed.                                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

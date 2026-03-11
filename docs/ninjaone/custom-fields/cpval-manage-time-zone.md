@@ -8,6 +8,8 @@ description: 'Select OS to enable Automatic Time Zone Management'
 tags: ['timezone', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Summary
@@ -113,3 +115,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/7db8dfdf-6825-4349-94e1-f86348fdec03/image5.webp)
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

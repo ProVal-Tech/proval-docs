@@ -8,6 +8,8 @@ description: 'This document details an internal monitor that detects online Wind
 tags: ['ticketing', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Global
 ![Ticket Category Setup](../../../static/img/docs/cb1ab987-657f-4503-a3e1-f4f6345b6fdf/image_1.webp)
 
 Once the ticket category is set, the autofix [Script - SMBv1 Status Audit/Autofix [DV, Param]](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b) will automatically create a ticket to the service board using the ticket category set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

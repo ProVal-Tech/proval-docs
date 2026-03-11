@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to set up a remote 
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Steps to Set Up Remote Monitor
@@ -128,3 +130,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 6. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

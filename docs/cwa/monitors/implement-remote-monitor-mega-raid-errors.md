@@ -8,6 +8,8 @@ description: 'This document outlines the steps to configure alert templates and 
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Steps
@@ -134,3 +136,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### 8.
 Set the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

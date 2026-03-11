@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the EDFs filled
 tags: ['report', 'security', 'vulnerability']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This document displays information about the EDFs filled by the [SEC - Endpoint 
 | Log Location                 | The location on the computer of the script log file.               |
 | YARA Log Location            | The location on the computer of the YARA log file.                 |
 | Luna Log Location            | The location on the computer of the Luna log file.                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

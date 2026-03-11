@@ -8,6 +8,8 @@ description: 'This script installs the CloudRadial Agent software and verifies i
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -360,3 +362,9 @@ rm -f "$install_script"
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

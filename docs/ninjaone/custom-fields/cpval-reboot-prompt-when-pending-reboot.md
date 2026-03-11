@@ -8,6 +8,8 @@ description: 'Controls whether a prompt appears on Windows machines with reboot 
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Controls whether a prompt appears on Windows machines with reboot pending status
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/be5436e5-e658-4e31-a5ca-4a6bf8052278/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document
