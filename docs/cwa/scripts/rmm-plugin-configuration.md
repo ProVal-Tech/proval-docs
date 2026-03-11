@@ -1,8 +1,8 @@
 ---
 id: 'f99ddaae-0cb3-4941-b2aa-dc93671dd246'
 slug: /f99ddaae-0cb3-4941-b2aa-dc93671dd246
-title: 'CWM - Automate - RMM+ Plugin Configuration'
-title_meta: 'CWM - Automate - RMM+ Plugin Configuration'
+title: 'RMM+ Plugin Configuration'
+title_meta: 'RMM+ Plugin Configuration'
 keywords: ['rmm', 'plugin', 'session', 'machines', 'checkin']
 description: 'This document provides a detailed guide on configuring the RMM+ Plugin, including steps to create sessions for machines that have not checked in for a specified number of days. It covers the necessary settings in the client control portal and the Automate control center, ensuring a seamless integration and management of remote sessions.'
 tags: ['networking', 'setup', 'software', 'windows']
@@ -81,3 +81,4 @@ Create a session group in the ScreenConnect portal for machines that have not ch
 ### 2025-04-10
 
 - Initial version of the document
+

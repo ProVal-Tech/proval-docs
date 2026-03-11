@@ -31,6 +31,8 @@ This will add the Offline Threshold property. It defaults to 11 minutes.
 - RMM+ should be up to date to ensure success.
 - Alert Template - **△ Custom - Autofix - Critical Machine Offline (RMM+)**: This alert template calls this script to run on the offline agent and attempt the autofix, creating a ticket for the failure from the script itself.
 - Alert Template - **△ Custom - Default Ticket - Autofix - Critical Machine Offline (RMM+)**: It creates a ticket from the default ticketing feature and allows the script to comment on the created ticket for the failure. This is useful during the script engine's hung state to allow the alerting for the offline agents to work without the autofix.
+- [Solution - ScreenConnect RMM+ - Offline Server AutoFix](/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec)
+
 
 ## Variables
 
@@ -95,6 +97,11 @@ The subject of this ticket can be modified by adjusting the TicketCreationSubjec
 
 ## Changelog
 
+### 2026-03-05
+
+- Updated Steps 103 and 120 to use the separate `Uninstall‑LTService` and `Install‑LTService` commands instead of `Redo‑LTService`, as we were experiencing issues with Redo‑LTShare and agents were not being reinstalled properly when using that command.
+
 ### 2025-04-10
 
 - Initial version of the document
+
