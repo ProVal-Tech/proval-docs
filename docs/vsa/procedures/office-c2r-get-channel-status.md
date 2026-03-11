@@ -8,6 +8,8 @@ description: 'This agent procedure is used to check the Channel Status on to the
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ This agent procedure is used to check the Update Channel Status on to the machin
 ## Output
 
 - Agent Procedure log
+
+ ## Changelog
+
+ ### 2026-03-11
+
+ - Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script will modify the registry to set the Update Channel for
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ This script will modify the registry to set the Update Channel for Microsoft 365
 ## Output
 
 - Agent procedure log 
+
+ ## Changelog
+
+ ### 2026-03-11
+
+ - Initial version of the document

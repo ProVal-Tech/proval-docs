@@ -8,6 +8,8 @@ description: 'This solution is used to get the Microsoft365 channel details, set
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Purpose
@@ -34,4 +36,10 @@ The aim of this VSA solution is to get the office channel details, update, repai
     - [Office C2R - Set Channel](/docs/d401a54a-5bff-4d37-8fdf-001220f73fb5)
     - [Office C2R - Repair](/docs/c0c1b5a3-0e2d-4ed9-9c0a-926ce2181c7c)
     - [Office C2R - Update](/docs/ddcdb6e8-8ce6-4c38-b494-1284f0fc6fd8)
+
+ ## Changelog
+
+ ### 2026-03-11
+
+ - Initial version of the document
 

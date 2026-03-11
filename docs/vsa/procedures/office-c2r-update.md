@@ -9,7 +9,7 @@ tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -46,14 +46,11 @@ This script updates the Click-To-Run version of Microsoft 365 Apps to their late
 
 ## Output
 
-<<<<<<< HEAD
 - Agent Procedure log
-=======
-Procedure log files and other outputs.
 
-## Changelog
 
-### 2025-04-10
+ ## Changelog
 
-- Initial version of the document
->>>>>>> origin/main
+ ### 2026-03-11
+
+ - Initial version of the document

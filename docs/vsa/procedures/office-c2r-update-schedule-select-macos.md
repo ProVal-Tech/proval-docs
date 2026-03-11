@@ -9,7 +9,7 @@ tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -39,16 +39,8 @@ The following [channels](https://learn.microsoft.com/en-us/microsoft-365-apps/in
 
 - Agent Procedure Log  
 
-### Custom Field
+ ## Changelog
 
-<<<<<<< HEAD
-![Image](../../../static/img/docs/47d714f5-714e-4078-9464-54b3e62ae093/image4.webp)  
-=======
-![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_6.webp)
+ ### 2026-03-11
 
-## Changelog
-
-### 2025-04-10
-
-- Initial version of the document
->>>>>>> origin/main
+ - Initial version of the document

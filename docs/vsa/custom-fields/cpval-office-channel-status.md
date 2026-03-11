@@ -8,6 +8,8 @@ description: 'This document provides a summary of agent procedure dependencies w
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This custom field contains the office channel status of the machines.
 ## Output
 Sample image:  
 ![Image](../../../static/img/docs/880a8d01-fc10-4ea9-94d8-7b2bb87c01a5/image1.webp)
+
+ ## Changelog
+
+ ### 2026-03-11
+
+ - Initial version of the document

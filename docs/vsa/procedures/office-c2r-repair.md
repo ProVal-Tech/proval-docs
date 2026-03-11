@@ -8,6 +8,8 @@ description: 'This document outlines the process to repair the Office Click2Run 
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ This checks the office version, then runs a PS1 for repair. If you want to run a
 ## Output
 
 - Agent Procedure History Log
+
+ ## Changelog
+
+ ### 2026-03-11
+
+ - Initial version of the document
