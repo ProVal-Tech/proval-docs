@@ -28,3 +28,10 @@ This custom field is populated by the [Get Windows Hello Status ](/docs/2de3c07b
 ## Completed Custom Field
 
 ![Completed Custom Field](../../../static/img/docs/9979c502-1841-4183-927c-6e0c7e5abe53/image1.webp)
+
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document

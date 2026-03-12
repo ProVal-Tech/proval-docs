@@ -47,3 +47,9 @@ The group is defined by the following **criteria** joined by `AND` condition.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/76e7fddd-b77c-4aac-ab3d-95aef75a7b04/image2.webp)
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document

@@ -70,74 +70,48 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 ```powershell
 <#
 .SYNOPSIS
-    Audits Windows Hello authentication methods enabled on the system.
+Detects the last used Windows Hello sign-in method on the machine.
 
 .DESCRIPTION
-    This script checks the Windows registry to determine which Windows Hello biometric 
-    authentication methods (PIN, Fingerprint, and Face recognition) are currently enabled 
-    for the last logged-on user. It queries the Windows Authentication Credential Providers 
-    to identify available authentication methods and returns their status.
-    
-    Returns the enabled methods (e.g., "Enabled | PIN | Fingerprint") or "Disabled" 
-    if no Windows Hello methods are configured.
+This script checks the registry value 'LastLoggedOnProvider' under 
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI 
+to determine the most recently used Windows sign-in provider.
+
+It compares the retrieved provider GUID with known Windows Hello provider GUIDs
+for PIN, Fingerprint, and Face authentication methods.
+
+If a match is found, the script outputs the detected method in the format:
+Enabled|<method>
+
+If the provider does not match any known Windows Hello method, or if the
+registry value cannot be accessed, the script returns:
+Disabled
 #>
 
+$regPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI"
+$valueName = "LastLoggedOnProvider"
+
+$providers = @{
+    PIN         = "{D6886603-9D2F-4EB2-B667-1971041FA96B}"
+    Fingerprint = "{BEC09223-B018-416D-A0AC-523971B639F5}"
+    Face        = "{8AF662BF-65A0-4D0A-A540-A338A999D36F}"
+}
+
 try {
-    # Get Last Logged-On User SID
-    $logonUIPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI"
-    if (-not (Test-Path $logonUIPath)) {
-        return "Unable to determine"
-    }
+    $providerGUID = (Get-ItemProperty -Path $regPath -Name $valueName -ErrorAction Stop).$valueName
 
-    $lastUserSID = (Get-ItemProperty -Path $logonUIPath -ErrorAction Stop).LastLoggedOnUserSID
+    $matchedProvider = $providers.GetEnumerator() | Where-Object { $_.Value -eq $providerGUID }
 
-    if ([string]::IsNullOrWhiteSpace($lastUserSID)) {
-        return "Unable to determine"
-    }
-
-    # Credential Provider GUIDs
-    $providers = @{
-        PIN         = "{D6886603-9D2F-4EB2-B667-1971041FA96B}"
-        Fingerprint = "{BEC09223-B018-416D-A0AC-523971B639F5}"
-        Face        = "{8AF662BF-65A0-4D0A-A540-A338A999D36F}"
-    }
-
-    $basePath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers"
-
-    $enabledMethods = @()
-
-    foreach ($method in $providers.Keys) {
-
-        $providerPath = Join-Path $basePath $providers[$method]
-
-        if (Test-Path $providerPath) {
-
-            $userKeys = Get-ChildItem -Path $providerPath -ErrorAction SilentlyContinue
-
-            foreach ($key in $userKeys) {
-
-                if ($key.PSChildName -eq $lastUserSID) {
-
-                    $props = Get-ItemProperty -Path $key.PSPath -ErrorAction SilentlyContinue
-
-                    if ($props.LogonCredsAvailable -eq 1) {
-                        $enabledMethods += $method
-                    }
-                }
-            }
-        }
-    }
-    if ($enabledMethods.Count -gt 0) {
-        return "Enabled | " + ($enabledMethods -join " | ")
+    if ($matchedProvider) {
+        Write-Output "Enabled|$($matchedProvider.Key.ToLower())"
     }
     else {
-        return "Disabled"
+        Write-Output "Disabled"
     }
 }
 catch {
-    return "Error"
+    Write-Output "Disabled"
 }
-
 
 
 ```
@@ -219,3 +193,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### Completed Scheduled Task
 
 ![Image](../../../static/img/docs/2de3c07b-22ab-4796-90b9-e6e0f4082299/image7.webp)
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document

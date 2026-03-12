@@ -32,3 +32,10 @@ The purpose of this solution is to audit Windows Hello on Windows devices. It de
     - [Exclude Windows Hello Audit ](/docs/53b051e4-9962-4a17-9f0d-838e40c7ae84)
 - Create [Group - Machines Opted For Windows Hello Audit ](/docs/76e7fddd-b77c-4aac-ab3d-95aef75a7b04)  as per instructions in the document.
 - Create [Script - Get Windows Hello Status ](/docs/2de3c07b-22ab-4796-90b9-e6e0f4082299)  as per instructions in the document.
+
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document

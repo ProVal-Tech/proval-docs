@@ -34,3 +34,10 @@ Select it to exclude Site/Endpoint from Windows Hello Audit
 `Endpoint Custom Field`  
 
 ![Completed Custom Field](../../../static/img/docs/53b051e4-9962-4a17-9f0d-838e40c7ae84/image2.webp)
+
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document

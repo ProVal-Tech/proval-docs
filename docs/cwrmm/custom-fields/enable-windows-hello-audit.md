@@ -27,3 +27,9 @@ Select it to enable `Windows Hello` Audit on the client machines.
 ## Completed Custom Field
 
 ![Completed Custom Field](../../../static/img/docs/e2010129-f04b-4bca-b69e-d5b89d5254d4/image1.webp)
+
+## Changelog
+
+### 2026-03-12
+
+- Initial version of the document
