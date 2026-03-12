@@ -8,6 +8,8 @@ description: 'This monitor detects the online Automate agent where the CyberCNS 
 tags: ['uninstallation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-12
 ---
 
 ## Summary
@@ -31,3 +33,10 @@ This monitor detects the online Automate agent where the CyberCNS Agent is insta
 - Right click on monitor and then click the Run now and reset the monitor
  ![Run](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image6.webp)
   
+
+
+## Changelog
+
+ ### 2026-03-12
+
+ - Initial version of the document

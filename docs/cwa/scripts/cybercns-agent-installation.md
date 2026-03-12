@@ -8,11 +8,13 @@ description: 'This document provides a comprehensive guide on installing the Cyb
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-12
 ---
 
 ## Summary
 
-This script installs the CyberCNS agent on a computer.
+This script installs the CyberCNS agent using the keys provided in the client EDFs.
 
 ## Sample Run
 
@@ -54,8 +56,8 @@ Document the various overwriting system properties in the script.
 
 | Name | Required | Description |
 | ------------ | ------- | ------------------------------------------------------ |
-| CyberCNS_TenantID | Partial True | If this is set to store the CyberCNS tenant ID from the portal, then the client-EDF `CyberCNS Tenant ID` will be overwritten by this property. |
-| CyberCNS_Token | Partial True | If this is set to store the CyberCNS token from the portal, then the client-EDF `CyberCNS Token` will be overwritten by this property. |
+| CyberCNS_TenantID | Partial True | Set to store the CyberCNS tenant ID from the portal. The client-EDF `CyberCNS Tenant ID` will override this property. |
+| CyberCNS_Token | Partial True | Set to store the CyberCNS token from the portal. The client-EDF `CyberCNS Token` will override this property. |
 
 ## Process
 
@@ -68,3 +70,15 @@ Document the various overwriting system properties in the script.
 ## Output
 
 - Script log
+
+
+## Changelog
+
+ ### 2026-03-12
+
+ - Introduced system properties `CyberCNS_TenantID` and `CyberCNS_Token` which will be overriden by the client EDFs.
+ - Updated the script to use Vendor's logic
+
+### 2025-04-10
+
+- Initial version of the document

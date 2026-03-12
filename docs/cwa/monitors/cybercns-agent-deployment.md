@@ -8,6 +8,8 @@ description: 'This monitor detects the online Automate agent where the CyberCNS 
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-12
 ---
 
 ## Summary
@@ -31,8 +33,14 @@ This monitor detects the online Automate agent where the CyberCNS Company ID is 
 - Right click on monitor and then click the Run now and reset the monitor
  ![Run](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image4.webp)
 
-## TicketCreation
+## Ticket Creation
 
 - To allow creating ticket for the failed attempt of the CyberCNS deployment please set the `Ticket Category` in the Alerting section of the monitor.
 ![Run](../../../static/img/docs/15ecac3c-fe43-4d04-9e6c-82099bfa356b/image5.webp)
-  
+
+
+## Changelog
+
+ ### 2026-03-12
+
+ - Initial version of the document

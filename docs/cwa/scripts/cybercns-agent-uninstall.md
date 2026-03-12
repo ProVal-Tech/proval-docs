@@ -8,6 +8,8 @@ description: 'This script will assist in uninstalling the ConnectSecure Vulnerab
 tags: ['uninstallation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-12
 ---
 
 ## Summary
@@ -49,3 +51,10 @@ Run without SetEnvironment, for the uninstallation
 ## Output
 
 - Script log
+
+
+## Changelog
+
+ ### 2026-03-12
+
+ - Initial version of the document

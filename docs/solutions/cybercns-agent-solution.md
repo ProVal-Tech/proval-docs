@@ -8,6 +8,8 @@ description: 'The goal of this solution to provide the install and uninstall fea
 tags: ['uninstallation', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-12
 ---
 
 ## Purpose
@@ -51,5 +53,12 @@ The goal of this solution to provide the install and uninstall feature for the C
 
 **Q. How to set ticketing for the failed installation attempt of the CyberCNS Agent?**
   
-  Please refer to the [Internal Monitor - CyberCNS Agent Deployment](/docs/53d5de1f-d5b5-47a3-80a0-17603d673b72) documentation.
+**A.** Please refer to the [Internal Monitor - CyberCNS Agent Deployment](/docs/53d5de1f-d5b5-47a3-80a0-17603d673b72) documentation.
   It is just required to set the `TicketCategory` option in the Alerting section of the monitor.
+
+
+## Changelog
+
+ ### 2026-03-12
+
+ - Initial version of the document
