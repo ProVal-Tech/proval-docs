@@ -5,7 +5,7 @@ title: 'SecureBoot Compliance - Audit'
 title_meta: 'SecureBoot Compliance - Audit'
 keywords: ['secure','secure-boot','audit']
 description: 'This script evaluates whether a Windows device is prepared for the upcoming Microsoft Secure Boot certificate transition scheduled for 2026.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

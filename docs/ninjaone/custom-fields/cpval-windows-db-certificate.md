@@ -5,7 +5,7 @@ title: 'cPVAL Windows DB Certificate'
 title_meta: 'cPVAL Windows DB Certificate'
 keywords: ['secure','secure-boot','audit']
 description: 'This custom field shows the status of the Windows Secure Boot Database (DB) certificate.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

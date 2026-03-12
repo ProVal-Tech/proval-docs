@@ -5,7 +5,7 @@ title: 'cPVAL SecureBoot Status'
 title_meta: 'cPVAL SecureBoot Status'
 keywords: ['secure','secure-boot','audit']
 description: 'This task checks and records the SecureBoot status on devices, including SecureBoot certificates.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

@@ -5,7 +5,7 @@ title: 'cPVAL Windows Telemetry Status'
 title_meta: 'cPVAL Windows Telemetry Status'
 keywords: ['secure','secure-boot','audit']
 description: 'This custom field indicates the current telemetry (diagnostic data) level on Windows. Shows whether Windows telemetry is enabled and its level (Basic, Enhanced, Full)'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

@@ -5,7 +5,7 @@ title: 'cPVAL Windows KEK Certificate'
 title_meta: 'cPVAL Windows KEK Certificate'
 keywords: ['secure','secure-boot','audit']
 description: 'This custom field displays the status of the Windows Key Exchange Key (KEK) certificate.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

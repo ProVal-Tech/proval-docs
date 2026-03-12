@@ -5,7 +5,7 @@ title: 'cPVAL Secure Boot Status'
 title_meta: 'cPVAL Secure Boot Status'
 keywords: ['secure','secure-boot','audit']
 description: 'This custom field shows whether Secure Boot is enabled on the device.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:

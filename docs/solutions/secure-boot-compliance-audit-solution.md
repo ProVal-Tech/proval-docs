@@ -5,7 +5,7 @@ title: 'Secure Boot Compliance Audit'
 title_meta: 'Secure Boot Compliance Audit'
 keywords: ['secure','secure-boot','audit']
 description: 'This solution checks the Secure Boot status and validates the associated certificates. If the system is using older Secure Boot certificates, the custom fields are updated accordingly. If the system is using updated certificates. The custom fields are updated to reflect the compliant status.'
-tags: ['security','custom-fields','Secureboot','auditing','certificates']
+tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:
