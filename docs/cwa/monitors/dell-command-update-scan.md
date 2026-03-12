@@ -18,7 +18,7 @@ This monitor fetches the online Dell Windows agent and executes the Dell Command
 
 ## Dependencies
 
-- [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
+- [Script - Dell Command Update - Install/Upgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Target
 
@@ -26,7 +26,7 @@ Global
 
 ## Alert Template
 
-- **Alert Template - △ Custom - Execute Script - Dell Command Scan**
+- `△ Custom - Execute Script - Dell Command Scan`
 
 ## Changelog
 

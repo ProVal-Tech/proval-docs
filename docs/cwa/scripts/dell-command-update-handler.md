@@ -1,8 +1,8 @@
 ---
 id: '2ab976d5-8a03-49e6-9d72-ad529631d276'
 slug: /2ab976d5-8a03-49e6-9d72-ad529631d276
-title: 'Dell Command Update - InstallUpgrade + Command Handler'
-title_meta: 'Dell Command Update - InstallUpgrade + Command Handler'
+title: 'Dell Command Update - Install/Upgrade + Command Handler'
+title_meta: 'Dell Command Update - Install/Upgrade + Command Handler'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
 description: 'This document provides an overview of a script that utilizes the Dell Command | Update application to manage updates on Dell Workstations. It covers installation, upgrade procedures, command line usage, and sample runs, along with user parameters and script states for effective management of system updates.'
 tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
@@ -32,9 +32,9 @@ This script provide feature to perform the Dell command scanning audit if no arg
 
 ## File Hash
 
-**File Path:** `C:\ProgramData\_automation\Script\Install-DCU\Initialize-DellCommandUpdate.ps1`  
-**File Hash (Sha256):** `4DB40E166F5E5F58F083FA8E0470CBA0869B465004502A911230601526DE369E`  
-**File Hash (MD5):** `995B90C55762ADE9528A1610BE65615D`  
+- **File Path:** `C:\ProgramData\_automation\Script\Install-DCU\Initialize-DellCommandUpdate.ps1`  
+- **File Hash (Sha256):** `4DB40E166F5E5F58F083FA8E0470CBA0869B465004502A911230601526DE369E`  
+- **File Hash (MD5):** `995B90C55762ADE9528A1610BE65615D`  
 
 ## Sample Run
 

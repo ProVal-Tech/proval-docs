@@ -18,7 +18,7 @@ This solution is built to perform the Dell Command Update scanning audit and upd
 
 ## Deprecate Content
 
-- It is a replacement for the solution [Dell command update](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
+- It is a replacement for the solution [Dell command update](/docs/0e57bbbb-cc88-4183-ba7c-e67ca0918112)
 
 ## Associated Audit Content
 
