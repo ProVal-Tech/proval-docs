@@ -55,7 +55,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 
-[Remediation SecureBoot 2026 Compliance](../../../static/attachments/remediation-secureboot-2026-compliance.cpt)
+[Remediation SecureBoot 2026 Compliance](../../../static/attachments/remediation-secureboot2026-compliance.cpt)
 
 ## Changelog
 
