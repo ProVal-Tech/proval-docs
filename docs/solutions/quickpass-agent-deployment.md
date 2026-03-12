@@ -25,7 +25,17 @@ Detect Windows endpoints that do not have the QuickPass Agent installed and depl
 | [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2) | Script | Silently removes the QuickPass Agent from a device when required. |
 | **△ Custom - Execute Script - Deploy QuickPass Agent** | Alert Template | Executes the deployment script against devices flagged by the internal monitor. |
 
-## Implementation
+## Optional Content
+
+- Import this solution if you have DUO in your environment to prevent glitch
+
+| Content | Type | Function |
+| ------- | ---- | -------- |
+| [Enabling the CyberQP Credential Provider while using Duo](/docs/249507b6-c45d-4be0-b1e9-1204a4931c8d) | Script | This script will only perform the whitelist if the `QuickpassServerAgent` service is running and `Duo Authentication for Windows Logon x64` is installed.|
+| [ProVal Production - CyberQP DUO Cred Provider](/docs/27dec940-59f6-407b-bdbb-2b8432a30467) | Remote Monitor |This document outlines the implementation details for a remote monitor that checks for agents where "QuickPassInstalled" is true, "DuoInstalled" is true, and the registry for the DUO whitelist exists. If the registry does not exist, it will trigger the autofix script "Enabling the CyberQP Credential Provider while using Duo" to set the registry on the agent. |
+| **△ Custom - Execute Script - Enable CyberQP DUO** | Alert Template | Executes the deployment script against devices flagged by the remote monitor. |
+
+## Associated Implementation
 
 ### Step 1 — Import
 
@@ -60,36 +70,32 @@ Run the [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198) scr
 - Use the [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2) script to remove the agent where required.
 - Configure ticketing options in the deployment script global parameters to get failure notifications.
 
-## FAQ
 
-Q: How do I prepare for the first run?  
-A: Execute the [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198) script with `Set_Environment`=`1` to create EDFs and import the `QuickpassInstallToken` system property. Populate `QuickPass Agent ID` and `QuickpassInstallToken` before mass deployment.
+## Optional Implementation 
 
-Q: Where do I get the QuickPass Agent ID and Install Token?  
-A: Obtain the Agent ID (CustomerID) and Install Token from the QuickPass dashboard (Settings → Admin Login Details). Populate the EDFs and System Property accordingly.
+### Step 1
 
-Q: Can I exclude specific locations or machines from deployment?  
-A: Yes — set the `Exclude from QuickPass Deployment` EDF at the Location or Computer level to prevent deployments to those scopes.
+- Script - [Enabling the CyberQP Credential Provider while using Duo](/docs/249507b6-c45d-4be0-b1e9-1204a4931c8d)
+- Remote Monitor - [ProVal Production - CyberQP DUO Cred Provider](/docs/27dec940-59f6-407b-bdbb-2b8432a30467)
+- Alert Template - `△ Custom - Execute Script - Enable CyberQP DUO`
 
-Q: What happens on installation failure?  
-A: The script can create a ticket (if TicketCreationCategory is configured). Detailed installer output is written to the script log and included in the ticket body for troubleshooting.
 
-Q: Can I run installs manually?  
-A: Yes — the Deploy [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198) script supports manual execution with runtime parameters to override EDF values when necessary.
+### Step 2 — Reload System Cache
 
-Q: How do I remove QuickPass from a device?  
-A: Run the [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2) script on the target device. The script will silently remove QuickPass and report results to the job log.
+- Refresh the CWA System cache (Ctrl + R) so imported items appear in the interface.
 
-Q: Why does the script [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198)  uninstall `QuickPass Agent` before installing `QuickPass Agent (64-bit)`?  
-A: To ensure a clean, conflict‑free upgrade path. Removing the older package avoids file/service conflicts and helps the 64‑bit installer complete successfully.
+### Step 3 
 
-Q: How does the [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198) script know when to uninstall?  
-A: The script checks for the presence of the legacy "QuickPass Agent" installation and only runs the uninstall routine if that product is detected on the device.
-
-Q: How can I verify the upgrade completed successfully?  
-A: Check the CWA script log for a successful install entry, confirm the `QuickPass Agent (64-bit)` is listed in installed programs, and validate the agent reports to its management platform.
+- Apply the alert template to the monitor.
+- Right Click, Run now and reset monitor.
 
 ## Changelog
+
+
+### 2026-03-12
+
+- Added this new script to enable the CyberQP Credential Provider while using Duo as per the article referenced below:
+  https://support.getquickpass.com/hc/en-us/articles/22720858271895-Enabling-the-CyberQP-Credential-Provider-while-using-Duo#h_01HWB3Q6E45JJC9SYE5RG996XT
 
 ### 2026-03-06
 
