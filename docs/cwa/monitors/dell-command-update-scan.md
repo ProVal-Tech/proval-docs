@@ -9,16 +9,17 @@ tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
 draft: false  
 unlisted: false  
 last_update:
-  date: 2026-03-06
+  date: 2026-03-12
 ---
 
 ## Summary
 
-This monitor fetches the online Dell Windows agent and executes the Dell Command Handler scanning using [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276) if the deployment EDFs are checked.
+This monitor fetches the online Dell Windows agent and executes the Dell Command Handler scanning using [script](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276) if the deployment EDFs are checked.
 
 ## Dependencies
 
-- [Script - Dell Command Update - Install/Upgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
+- [Script - Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
+- [Solution - Dell Command Update Handler](/docs/5c6d840b-852a-41df-a5e2-08d7d7af564a)
 
 ## Target
 
@@ -30,6 +31,10 @@ Global
 
 ## Changelog
 
-### 2026-03-06
+### 2026-03-12
 
-- Modified the previous dell command update handler solution with this to use the agnostic script and store the detailed information of the Dell command updates into a [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+- This monitor replaces `Dell Command Update Handler - Run Scan Command` monitor.
+
+### 2025-04-10
+
+- Initial version of the document

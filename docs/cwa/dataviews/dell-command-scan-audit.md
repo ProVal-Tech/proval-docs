@@ -1,8 +1,8 @@
 ---
 id: '08c932b0-f79a-4c37-bfbe-c2aade829abb'
 slug: /08c932b0-f79a-4c37-bfbe-c2aade829abb
-title: 'Dell Command Scan Audit'
-title_meta: 'Dell Command Scan Audit'
+title: 'Dell Command Scan Audit [Script]'
+title_meta: 'Dell Command Scan Audit [Script]'
 keywords: ['dell', 'workstation', 'update', 'installation', 'firmware', 'bios', 'driver']
 description: 'This dataview collects the information of the Dell updates available on the Dell machine.'
 tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
@@ -10,18 +10,17 @@ draft: false
 unlisted: false
 
 last_update:
-  date: 2026-03-06
+  date: 2026-03-12
 ---
 
 ## Summary
 
-This dataview collects the information of the Dell updates available on the Dell machine using the [Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
+This dataview collects the information of the Dell updates available on the Dell machine using the [Script - Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Dependencies
 
-[Script - Dell Command Update - InstallUpgrade + Command Handler](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
-
-[Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+- [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+- [Solution - Dell Command Update Handler](/docs/5c6d840b-852a-41df-a5e2-08d7d7af564a)
 
 ## Columns
 
@@ -43,6 +42,10 @@ This dataview collects the information of the Dell updates available on the Dell
 
 ## Changelog
 
-### 2026-03-06
+### 2026-03-12
 
-- Updated implementation created using [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f).
+- Deprecated `Dell Command Update Handler - Audit [Script]`
+
+### 2025-04-10
+
+- Initial version of the document
