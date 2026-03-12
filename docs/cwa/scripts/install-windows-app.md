@@ -61,7 +61,7 @@ Normal execution of the script
 
 ### 2026-01-20
 
-- The agnostic for the script had bugs related to nvoke-webrequest and was throwing incorrect DISM Error When Adding "Provisioned" Package. After the agnostic got fixed, the automate implementation was updated to fix the failures.
+- The agnostic for the script had bugs related to Invoke-webrequest and was throwing incorrect DISM Error When Adding "Provisioned" Package. After the agnostic got fixed, the automate implementation was updated to fix the failures.
 
 ### 2025-12-17
 
