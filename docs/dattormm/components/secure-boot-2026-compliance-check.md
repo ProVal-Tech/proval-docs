@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-06
+  date: 2026-03-12
 ---
 
 ## Overview
@@ -49,7 +49,7 @@ To execute the `component` over a specific machine, follow these steps:
 3. Search the component `SecureBoot 2026 Compliance Check` and click on `Select`
  ![Image 3](../../../static/img/docs/48d5dd1c-37ef-4e43-87b8-b10fa565fef4/find-component.webp)
 
-4. `<UDF10>`
+4. Enter the UDF ID to store the Secure Boot Check Status
 ![Image 3](../../../static/img/docs/48d5dd1c-37ef-4e43-87b8-b10fa565fef4/udf.webp)
 
 ## Datto Variables
@@ -74,6 +74,6 @@ Custom Field
 
 ## Changelog
 
-### 2026-03-06
+### 2026-03-12
 
 - Initial version of the document

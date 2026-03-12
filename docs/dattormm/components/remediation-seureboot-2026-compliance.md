@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-06
+  date: 2026-03-12
 ---
 
 ## Overview
@@ -20,12 +20,12 @@ This script automates the remediation of UEFI Secure Boot certificates required 
 
 Once the Component `Remediation SecureBoot 2026 Compliance` updates the certificates, the machine must be rebooted `twice`. Rebooting the system is `mandatory` for the `Secure Boot 2026 certificates` to update successfully. Without rebooting the machine, the `certificates will not be applied.`
 
-After the system reboots, the check component `[Remediate-SecureBootCompliance2026](/docs/48d5dd1c-37ef-4e43-87b8-b10fa565fef4)` must run again to verify that the `certificates` were updated successfully. The check component will then update the `UDF` with the latest results.
+After the system reboots, the check component [SecureBoot 2026 Compliance Check](/docs/48d5dd1c-37ef-4e43-87b8-b10fa565fef4) must run again to verify that the `certificates` were updated successfully. The check component will then update the `UDF` with the latest results.
 
 ## Dependencies
 
 - [Agnostic Script - Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c)
-- `.\Remediate-SecureBootCompliance2026.ps1`
+
 
 ## Implementation  
 
@@ -59,6 +59,6 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Changelog
 
-### 2026-03-06
+### 2026-03-12
 
 - Initial version of the document
