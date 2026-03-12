@@ -1,8 +1,8 @@
 ---
 id: 'b037020a-1af5-4ecb-bb6b-62d59c123937'
 slug: /b037020a-1af5-4ecb-bb6b-62d59c123937
-title: 'Secure Boot Compliance - Audit'
-title_meta: 'Secure Boot Compliance - Audit'
+title: 'Secure Boot Compliance Audit NinjaOne'
+title_meta: 'Secure Boot Compliance Audit NinjaOne'
 keywords: ['secure','secure-boot','audit']
 description: 'This solution checks the Secure Boot status and validates the associated certificates. If the system is using older Secure Boot certificates, the custom fields are updated accordingly. If the system is using updated certificates. The custom fields are updated to reflect the compliant status.'
 tags: ['security','custom-fields','Secureboot','auditing','certificates']
