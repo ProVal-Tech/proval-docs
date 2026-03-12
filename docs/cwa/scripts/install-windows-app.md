@@ -18,11 +18,10 @@ This script installs Windows App and creates a shortcut on the Desktop of the lo
 
 **NOTE:** User must be logged on to the computer to run this script.
 
-## File Hash
+## Scripts Path
 
-**File Path:** `C:\ProgramData\_automation\App\Winget\Install-Winget.ps1`  
-**File Hash (Sha256):** `F65D647DBBB9E944CD2342B49E5E870D1353EB71A78BA24516D89763EB0718C6`  
-**File Hash (MD5):** `A0119BAF23B9638917587A295D9A4C0A`  
+- `C:\ProgramData\_automation\App\Winget\Install-Winget.ps1`  
+- `C:\ProgramData\_Automation\Script\WindowsApp\Create-WindowsAppShortcut.ps1`  
 
 ## Sample Run
 
@@ -55,6 +54,10 @@ Normal execution of the script
 - Script Log
 
 ## Changelog
+
+### 2026-03-12
+
+- Signed the PowerShell scripts used by this script.
 
 ### 2026-01-20
 
