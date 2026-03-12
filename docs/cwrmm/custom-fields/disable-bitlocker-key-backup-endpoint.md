@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the endpoint from "BitLocker Key
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the endpoint from [BitLocker Key Backup](/docs
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/6c9022a4-43db-49f3-8f89-ae27d8e340a4/image1.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

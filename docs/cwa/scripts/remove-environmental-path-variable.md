@@ -8,6 +8,8 @@ description: 'This document provides a method to remove a specified Windows path
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Please see the agnostic content document [EPM - Windows Configuration - Agnostic
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

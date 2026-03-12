@@ -8,6 +8,8 @@ description: 'This document provides an overview of the custom field at the site
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This custom field at the site level stores the Sentinel Group Key, which is util
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/ecb78b4e-fa63-4bd0-b59a-e0e0412b6cd5/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Import-LMCertificate command to import a cer
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -57,3 +59,9 @@ System.Security.Cryptography.X509Certificates.X509Certificate2
 ## Log Files
 - .\Import-LMCertificate-log.txt
 - .\Import-LMCertificate-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

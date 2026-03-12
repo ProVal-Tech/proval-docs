@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to update Screenconnect v
 tags: ['connectwise', 'ticketing', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ To enable ticketing on failure, the ticket category must be set in the global pa
 If the Screenconnect service fails to start after running the installation:
 
 `The script tried to run the installer but could not find the Screenconnect service on the machine anymore. Run the CW control repair script to resolve the issue.`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

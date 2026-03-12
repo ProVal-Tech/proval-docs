@@ -8,6 +8,8 @@ description: 'This group contains the endpoint where the Ninja Deployment succee
 tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ Search for `Ninja Deployment Result` and select it and set it `Contains any of` 
 ![Complete](../../../static/img/docs/4185cf9b-b76e-42b9-8559-08940c343e7d/image-6.webp)
 
 ![Complete 1](../../../static/img/docs/4185cf9b-b76e-42b9-8559-08940c343e7d/image.webp)
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

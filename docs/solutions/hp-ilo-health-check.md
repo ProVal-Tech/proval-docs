@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on gathering informat
 tags: ['networking', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Purpose
@@ -93,3 +95,9 @@ To gather information about and monitor the health status of HP iLO devices.
     - Navigate to System > Configuration > Dashboard > Management > Scheduled Client Scripts
       - Schedule the [HP iLO Credential Missing Detection](/docs/4d27ff0e-704d-47dd-8c07-3008b7fbfafb) script to run once per week.  
       ![Schedule Script](../../static/img/docs/7bd9dad1-d463-468b-a3b1-2eef8e060352/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

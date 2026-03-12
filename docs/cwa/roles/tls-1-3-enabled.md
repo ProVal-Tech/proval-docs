@@ -8,6 +8,8 @@ description: 'This document provides a method to check the Windows registry for 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1
 | Detection String                                             | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------|------------|--------|----------------|
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.3/Client:Enabled-%} | Equals     | 1      | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

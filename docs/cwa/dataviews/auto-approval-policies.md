@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview used to examine
 tags: ['patching', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The dataview can be used to view the Auto Approve, Auto Ignore, and Auto Deny se
 | Examined Characteristics - By Titles           | Group_Concat list of the titles that are either approved, denied, or ignored.                                                                                         |
 | Examined Characteristics - CVSS Status         | Whether the patches are approved on the basis of CVSS score or not.                                                                                                   |
 | Examined Characteristics - CVSS >              | CVSS score above which auto-approval of patches is applied.                                                                                                          |
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

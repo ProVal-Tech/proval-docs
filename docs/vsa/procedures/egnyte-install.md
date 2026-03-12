@@ -8,6 +8,8 @@ description: 'This document outlines the agent procedure for updating and instal
 tags: ['cleanup', 'installation', 'reboot', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ The procedure requires the custom field to run: [Custom Field - Egnyte - Install
 ## Output
 
 Agent Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

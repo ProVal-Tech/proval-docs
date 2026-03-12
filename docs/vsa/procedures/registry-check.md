@@ -8,6 +8,8 @@ description: 'This document outlines a process for checking the status of the Wi
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The process is scheduled automatically in 1-hour increments. It reacts to the re
 ## Output
 
 AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

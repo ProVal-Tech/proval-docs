@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the battery repo
 tags: ['battery', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This document displays the battery report information.
 | ClientID              | Not displayed but used.                                                                                                                                       |
 | LocationID            | Not displayed but used.                                                                                                                                       |
 | ThresholdViolation     | True if FullChargeCapacity * 100 / DesignCapacity is greater than the threshold set.                                                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

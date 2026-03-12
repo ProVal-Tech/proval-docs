@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the super admi
 tags: ['database', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -26,3 +28,9 @@ This document relies on the script [Automate - New Super Admin Monitoring](/docs
 |-----------|----------|-----------------------------------------------|
 | UserID   | INT      | The UserID of the super admin.               |
 | Timestamp | DATETIME | The date and time that the super admin was added. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

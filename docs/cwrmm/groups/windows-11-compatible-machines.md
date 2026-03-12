@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a dynamic group in Conn
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -68,3 +70,9 @@ This document describes how to identify Windows 10/11 computers that are compati
 ## Completed Group 
  
 ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image29.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

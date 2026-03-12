@@ -8,6 +8,8 @@ description: 'This document describes a script that creates tickets without incl
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ The script will add a comment if an open ticket for the computer with the same s
 ## Output
 
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

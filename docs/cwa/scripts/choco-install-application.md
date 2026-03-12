@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that installs Choco
 tags: ['chocolatey', 'installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The script will attempt to install Chocolatey and then install or upgrade the ap
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

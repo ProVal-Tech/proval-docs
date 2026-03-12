@@ -8,6 +8,8 @@ description: 'This document provides an overview of an agent’s check-in status
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This dataview provides information about an agent's check-in status in CWA and w
 | Clientid                     | Client ID (Hidden)                                                                                                   |
 | Locationid                   | Location ID (Hidden)                                                                                                 |
 | Computerid                   | Computer ID (Hidden)                                                                                                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

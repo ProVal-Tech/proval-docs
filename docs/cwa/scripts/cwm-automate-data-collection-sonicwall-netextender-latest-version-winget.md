@@ -8,6 +8,8 @@ description: 'This document describes a script designed to store the latest vers
 tags: ['security', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script is designed to store the latest version of SonicWall NetExtender in 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

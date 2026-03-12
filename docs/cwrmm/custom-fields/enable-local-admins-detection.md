@@ -8,6 +8,8 @@ description: 'Select this custom field to list all Local administrator on window
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 ![Complete Monitor](../../../static/img/docs/219923f8-62e6-401a-9693-678b44325708/image1.webp)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

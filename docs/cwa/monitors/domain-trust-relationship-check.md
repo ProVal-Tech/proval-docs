@@ -8,6 +8,8 @@ description: 'This document outlines the implementation and details of a monitor
 tags: ['security', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -170,3 +172,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### Step 6
 Set the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

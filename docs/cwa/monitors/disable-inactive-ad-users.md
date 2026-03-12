@@ -8,6 +8,8 @@ description: 'This internal monitor detect the online AD Infrastructure Server w
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This internal monitor detects the online AD Infrastructure Server where the [Tab
 - Ensure the - [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) is imported.
 - Import the  `Alert Template - △ Custom - Execute Script - Disable Inactive AD Users`
 - Apply the alert template `△ Custom - Execute Script - Disable Inactive AD Users` to the monitor that calls the [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) to disable the detected accounts.
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

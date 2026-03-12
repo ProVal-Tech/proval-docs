@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed for ConnectWise Auto
 tags: ['security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ Since this machine has fallen below the patching threshold, we are closing this 
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

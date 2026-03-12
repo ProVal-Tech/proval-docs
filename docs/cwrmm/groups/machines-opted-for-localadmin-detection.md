@@ -8,6 +8,8 @@ description: 'This Group includes windows machines which are opted for Local Adm
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-03
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/e1cb7e20-f09c-4350-a496-db920efa6530/image3.webp)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

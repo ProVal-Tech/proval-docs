@@ -8,6 +8,8 @@ description: 'The script inventories the endpoint for a curated list of remote a
 tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-02
 ---
 
 ## Overview
@@ -135,3 +137,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Installed Remote Access Tools Report](../../../static/attachments/installed-remote-access-tools-report.cpt)
+
+## Changelog
+
+### 2025-11-20
+
+- Initial version of the document

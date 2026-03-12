@@ -8,6 +8,8 @@ description: 'This script uninstalls the SentinelOne agent from a Windows system
 tags: ['uninstallation', 'security', 'antivirus',  'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-26
 ---
 
 ## Overview
@@ -48,4 +50,10 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

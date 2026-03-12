@@ -8,6 +8,8 @@ description: 'Documentation for the Invoke-VcRedistModule command to manage the 
 tags: ['installation', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -102,3 +104,9 @@ Uninstalls unsupported redistributables and installs supported ones.
 ## Output
 - .\Invoke-VcRedistModule-log.txt
 - .\Invoke-VcRedistModule-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Set the minimum password length for the local admin account. Appli
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Set the minimum password length for the local admin account. Applies only to aut
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/354d5885-8a36-4478-884e-cb14fcdad4d8/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

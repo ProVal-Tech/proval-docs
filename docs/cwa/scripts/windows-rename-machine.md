@@ -8,6 +8,14 @@ description: 'This document provides a comprehensive guide on how to rename a Wi
 tags: ['performance', 'security', 'setup', 'windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2025-04-10
 ---
 
 Deprecated
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

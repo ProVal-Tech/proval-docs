@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to gather a specific WiFi
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ It is to be used before the @Apply WiFi Profile script against a machine with th
 
 - Script log
 - Table `plugin_proval_wifi_profiles`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

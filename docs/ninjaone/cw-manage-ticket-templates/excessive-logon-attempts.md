@@ -8,6 +8,8 @@ description: 'This ticket template is used to manage the CW Manage ticket genera
 tags: ['security', 'accounts', 'eventlogs']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-09
 ---
 
 ## Overview
@@ -71,3 +73,9 @@ Enter the required details and click `Save`.
 
 ## Completed Template
 ![Image2](../../../static/img/docs/87e8cc64-8a82-4d83-9a91-dcd82c63ffea/image2.webp)
+
+## Changelog
+
+### 2025-07-07
+
+- Initial version of the document

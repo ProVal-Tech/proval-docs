@@ -8,6 +8,8 @@ description: 'This document outlines the steps to update the Windows edition for
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ A job status of Success is expected.
 
 **StdErr**  
 StdErr is not expected.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

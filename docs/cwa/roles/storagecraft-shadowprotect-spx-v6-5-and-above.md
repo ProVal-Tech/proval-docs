@@ -8,6 +8,8 @@ description: 'This document outlines a role that checks the installed version of
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role checks the installed version of StorageCraft. If it matches version 6.
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | \{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%} | Regex Match | ^6/.. | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

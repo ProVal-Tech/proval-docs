@@ -33,3 +33,9 @@ This script upgrades Java to the latest version of Java 8.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

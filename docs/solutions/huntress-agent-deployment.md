@@ -8,6 +8,8 @@ description: 'This document outlines the procedures for deploying, repairing, re
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -54,3 +56,9 @@ Deploy, Repair, Reinstall, Re-register, and Remove the Huntress Agent in CW RMM.
 - Create the deployment schedule for MAC agents as described in this document: [Task - Huntress Agent (Install) - MAC](/docs/3a0c2a5d-0d46-4c3b-b0a7-bdffd60c6fd2)
 - Create the group: [Machines with Huntress Agent](/docs/7fc0874b-154c-49c0-aed4-a89be18798f4)
 - Create the monitor: [Monitor - HuntressAgent Service](/docs/57b02fcd-0a4e-4c90-93d8-f81caa4c0835)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

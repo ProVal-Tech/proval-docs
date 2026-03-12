@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that enable
 tags: ['security', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ This script will create or modify the registry for multiple keys, names, values,
 2. Does the length of the parameters need to be the same for the script to work?  
    Yes, the parameters must be of the same length.  
    For example: If you provide two keys for modification, you must also provide two names, two values, and two types, regardless of whether any of the parameters have the same value or not.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This dataview assists in auditing control sessions by tracking key
 tags: ['database', 'performance', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This dataview helps you audit control sessions by tracking details such as parti
 | Disconnected Time | Displays the time when the participant disconnected        |
 | Computer ID       | Displays the ID of the connected computer                  |
 | Duration          | Displays the duration of the connection                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

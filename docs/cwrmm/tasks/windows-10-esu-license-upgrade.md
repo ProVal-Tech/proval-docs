@@ -8,6 +8,8 @@ description: 'This script applies Extended Security Updates (ESU) license for Wi
 tags: ['auditing','licensing','patching','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-09
 ---
 
 ## Summary
@@ -335,3 +337,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Output
 - Script Logs
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

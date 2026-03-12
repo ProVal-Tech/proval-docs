@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of user audit activitie
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This Dataview provides the audit activities of the users in Automate for the las
 | Audit Action | Displays the action performed by the user      |
 | Message      | Displays the exact message of what was done    |
 | HistoryDate  | Displays the date of the action taken by the user |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

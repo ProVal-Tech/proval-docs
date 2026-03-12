@@ -8,6 +8,8 @@ description: 'This custom filed is used to show the installed remote application
 tags: ['custom-fields','auditing','application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-28
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Stores detected remote access applications found on the endpoint based on uninst
 ## Output
 
 ![Output](../../../static/img/docs/a89004d0-e23c-4f89-8937-dd62e2b64b7f/cfUpdate.webp)
+
+## Changelog
+
+### 2026-01-28
+
+- Initial version of the document

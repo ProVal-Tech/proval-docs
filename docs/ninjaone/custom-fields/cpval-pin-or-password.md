@@ -8,6 +8,8 @@ description: 'PIN or password used for BitLocker key protectors that require use
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specifies the PIN or password required when using a BitLocker key protector that
 ## Sample Screenshot
 
 ![cPVAL PIN Or Password](../../../static/img/docs/897971d9-4b4a-4554-8dd4-fc0bb324ed9b/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

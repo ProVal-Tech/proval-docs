@@ -8,6 +8,8 @@ description: 'This compound condition is used to facilitate the automated execut
 tags: ['windows','auditing','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-26
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This compound condition is used to facilitate the automated execution of the scr
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/check-network-adapter-details-workstations.toml)
+
+## Changelog
+
+### 2026-01-20
+
+- Initial version of the document

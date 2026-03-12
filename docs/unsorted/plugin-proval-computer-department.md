@@ -45,3 +45,9 @@ CREATE TABLE IF NOT EXISTS `labtech`.`plugin_proval_computer_department` (
   CONSTRAINT `plugin_proval_computer_department_ibfk_1` FOREIGN KEY (`computerid`) REFERENCES `labtech`.`computers`(`computerid`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Deploy-Teams command to install or update th
 tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -35,3 +37,9 @@ This script does not require any additional parameters for its execution. To use
 ## Output
 - Deploy-MSTeams-log.txt
 - Deploy-MSTeams-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

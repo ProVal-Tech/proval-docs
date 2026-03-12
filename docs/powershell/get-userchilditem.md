@@ -8,6 +8,8 @@ description: 'Documentation for the Get-UserChildItem command to query the C:\\u
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -63,3 +65,9 @@ Gets all files in the Documents folder and all its subfolders for all users.
 System Array - Including the exact outputs you would receive by running Get-ChildItem.
 
 Log file: `.\Get-UserChildItem-log.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

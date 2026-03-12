@@ -8,6 +8,8 @@ description: '0 to disable Offline Access for User Elevation; 1 to enable Offlin
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/bb3f2e8b-d772-4f42-9bb0-da16facafa0e/image5.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

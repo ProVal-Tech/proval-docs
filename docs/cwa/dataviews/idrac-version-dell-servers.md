@@ -8,6 +8,8 @@ description: 'This document provides an overview of the iDRAC version on Dell se
 tags: ['database', 'dell', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This dataview shows the version of iDRAC on Dell servers. The script [Get iDRAC 
 | Operating System   | Shows the OS of the concerned server.                      |
 | iDRAC Version     | Shows the iDRAC version of the concerned server.           |
 | Last Contact      | Shows the last contact of the concerned server with RMM.   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to automate the insta
 tags: ['auditing', 'deployment', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -51,4 +53,10 @@ Create the following device groups:
 
 ### Step 3
 Create and deploy the following tasks:  
-[CW RMM - Task - DUO Install & Upgrade - Latest Version](/docs/47da7c82-7c27-4730-987a-2d32e22415fa)  
+[CW RMM - Task - DUO Install & Upgrade - Latest Version](/docs/47da7c82-7c27-4730-987a-2d32e22415fa)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

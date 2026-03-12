@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a script to remove ho
 tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -182,4 +184,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log  
-![Script Log Output](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_25.webp)  
+![Script Log Output](../../../static/img/docs/c1459ee7-e52f-4f03-8bdc-7ddba542a6fb/image_25.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

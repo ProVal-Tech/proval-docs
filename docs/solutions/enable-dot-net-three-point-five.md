@@ -8,6 +8,8 @@ description: 'Enable the .NET Framework 3.5 feature on Windows 10 and Windows 11
 tags: ['dotnet', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Purpose
@@ -69,3 +71,9 @@ Enable the solution for target clients by setting the client-level EDF `Enable .
 
 **Q:** What happens if I exclude a location or computer from automation?  
 **A:** Machines in excluded locations or explicitly excluded computers will not be targeted by the automated monitor and will not have .NET 3.5 installed by this automation. Automation will not remove or disable .NET 3.5 from any machine. To remove the feature, run a separate removal script or perform the action manually, and ensure the machine is excluded from this solution to prevent re-enablement.
+
+## Changelog
+
+### 2026-01-14
+
+- Initial version of the document

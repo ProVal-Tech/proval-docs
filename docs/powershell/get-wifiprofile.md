@@ -8,6 +8,8 @@ description: 'Documentation for the Get-WifiProfile command to retrieve and retu
 tags: ['networking', 'wireless']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -40,3 +42,9 @@ To retrieve Wi-Fi profiles with passwords in plain text:
 ## Output
 - .\Get-WifiProfiles-log.txt
 - .\Get-WifiProfiles-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details the process of storing the results from the 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Stores the result returned by the [Windows 11 Compatibility Validation](/docs/67
 
 ![Screenshot 1](../../../static/img/docs/7894870c-b7e8-44e0-806c-c948f151fc49/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/7894870c-b7e8-44e0-806c-c948f151fc49/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

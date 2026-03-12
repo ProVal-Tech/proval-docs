@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for troubleshooting h
 tags: ['disk-encryption', 'performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Ticket Example
@@ -132,3 +134,9 @@ Click the section (in the left navigation of this document) where your ticket is
 
 4. If the **machine's warranty has just recently expired**, a replacement drive quote should be sent to the client for approval.
    - **NOTE**: Always recommend an SSD as the replacement. Spinning disks may be cheaper, but they are much slower and not worth the headache.
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

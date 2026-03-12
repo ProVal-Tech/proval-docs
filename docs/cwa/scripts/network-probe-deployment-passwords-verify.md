@@ -8,6 +8,8 @@ description: 'This document describes a script that verifies the accuracy of cre
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ This script can be helpful while troubleshooting agent installation issues from 
 **Sample:**
 
 ![Image](../../../static/img/docs/47542900-8cc8-4f35-81e8-cce4169d50f4/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

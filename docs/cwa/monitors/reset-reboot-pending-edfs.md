@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to detect agen
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This internal monitor is designed to detect agents whose reboot was initiated by
 This monitor is an automation-driven reboot prompt removal tool. It should only be applied to Windows workstations.
 
 - **Windows Workstations**: This monitor should be run on non-server machines that are running Windows.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

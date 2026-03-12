@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing the Logitech
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script will install a specified version of the Logitech Unifying Software b
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

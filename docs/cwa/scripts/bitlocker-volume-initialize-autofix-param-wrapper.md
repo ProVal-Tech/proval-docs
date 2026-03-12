@@ -8,6 +8,8 @@ description: 'This document provides details on a script designed for the automa
 tags: ['deployment', 'encryption']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -49,3 +51,13 @@ Run it with `SetEnvironment = 1` to set the EDFs required for this script once a
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-08-07
+
+- Fixed a typo error that led the script to exit with error.
+
+### 2025-04-10
+
+- Initial version of the document

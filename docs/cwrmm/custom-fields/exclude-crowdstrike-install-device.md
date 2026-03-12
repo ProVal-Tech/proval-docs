@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the device from CrowdStrike auto
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the device from CrowdStrike auto installation.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/cde64225-1c67-4483-9c39-580b315dd30a/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

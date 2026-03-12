@@ -8,6 +8,8 @@ description: 'Guide to measuring volume space and identifying low space volumes 
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -81,3 +83,9 @@ Searches for all fixed volumes with drive letters, suppressing all console outpu
 
 - `.\Measure-VolumeSpace-log.txt`
 - `.\Measure-VolumeSpace-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

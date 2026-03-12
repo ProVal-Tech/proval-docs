@@ -8,6 +8,8 @@ description: 'Documentation for the Invoke-SetupDiag command to download and exe
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -32,3 +34,9 @@ $setupDiagResults.ProfileName
 ### Tables
 - Invoke-SetupDiag_logs
 - Invoke-SetupDiag_data
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

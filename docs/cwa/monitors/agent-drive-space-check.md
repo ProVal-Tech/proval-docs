@@ -8,6 +8,8 @@ description: 'This document provides an overview of a drive space monitoring sol
 tags: ['disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This monitor is primarily designed for server drive space monitoring. It will fu
 The monitor filters out the following drive file systems: 'CDFS', 'UNKFS', 'DVDFS', 'FAT', 'FAT32', and 'NetFS'.
 
 It also filters out drives where the SmartStatus is like USB, in an attempt to exclude USB drives.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

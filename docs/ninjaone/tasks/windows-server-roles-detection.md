@@ -8,6 +8,8 @@ description: 'Retrieves installed Windows Server roles and stores to the cPVAL R
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -121,3 +123,9 @@ Click the `Save` button at the top of the screen to save the scheduled task.
 
 You will be prompted to verify your MFA code after clicking the `Save` button. Enter your MFA code and click the `Continue` button to finalize the task creation.  
 ![Image14](../../../static/img/docs/8bbf34f6-8c05-4776-9f8c-c589944b4042/image14.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

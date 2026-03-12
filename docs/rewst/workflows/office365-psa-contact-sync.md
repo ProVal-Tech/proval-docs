@@ -8,6 +8,8 @@ description: 'Automatically generate PSA contact records for every active Office
 tags: ['office365', 'microsoft365', 'psa']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-06
 ---
 
 # Summary
@@ -201,3 +203,9 @@ Common error codes:
 4. **Monitoring**: Set up alerts for sync failures or high error rates
 5. **Data Quality**: Ensure Office 365 user profiles are complete before syncing
 6. **Deduplication**: Review PSA system for duplicate contacts before enabling automatic sync
+
+## Changelog
+
+### 2026-01-06
+
+- Initial version of the document

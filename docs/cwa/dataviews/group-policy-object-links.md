@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the GPO Audit D
 tags: ['active-directory', 'gpo', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This dataview shows information about GPOs, their applied policies, and where th
 | Created Time    | GPO created date and time information.           |
 | Modified Time   | GPO last modified date and time.                 |
 | Read Time       | GPO last check time.                              |
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

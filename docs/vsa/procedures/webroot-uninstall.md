@@ -8,6 +8,8 @@ description: 'This document outlines the steps required to uninstall the Webroot
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,4 +41,10 @@ This document describes the process for uninstalling the Webroot application on 
   ![Success Log](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_3.webp)  
 
 - **Failure**  
-  ![Failure Log](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_4.webp)  
+  ![Failure Log](../../../static/img/docs/728ba6ee-7886-4a56-98c6-40ca55dceeba/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

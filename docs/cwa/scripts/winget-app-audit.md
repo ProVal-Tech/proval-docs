@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Get Winget Report script
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-19
 ---
 
 ## Summary
@@ -71,3 +73,17 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 - Script log
 - Custom table
 - Dataview
+
+## Changelog
+
+### 2026-01-20
+
+- The agnostic for the script had bugs related to nvoke-webrequest and was throwing incorrect DISM Error When Adding "Provisioned" Package. After the agnostic got fixed, the automate implementation was updated to fix the failures.
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-04-08
+
+- Adjusted the script to reset the $AutoUpdateRunTime variable in the foreach loop

@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to alert users
 tags: ['performance', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This document describes an internal monitor that will alert users if a host has 
 ## Target
 
 Global - This monitor should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

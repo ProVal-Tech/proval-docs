@@ -8,6 +8,8 @@ description: 'This document provides an overview of an auto-fix script designed 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The script should be executed from the `△ Custom - Ticket Creation - HP iLO He
 
 - Script Log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

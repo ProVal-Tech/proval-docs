@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to detect recent vulnerab
 tags: ['cve', 'security', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ Primarily, the installation of KB5000871 is confirmed for the resolution of CVEs
 
 - Script log
 - Ticketing if enabled in Globals
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Stores BitLocker status and key information for all volumes on the
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field is used to display the BitLocker encryption status of drives b
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/a7785954-5a6d-4003-9d0e-c919e1a96b0c/image1.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

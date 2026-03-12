@@ -8,6 +8,8 @@ description: 'Template for creating a CW-Manage ticket from Weak Credentials Mon
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Overview
@@ -30,3 +32,9 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Sample CW Manage Ticket
 
 ![Image1](../../../static/img/docs/f53572a8-8bfe-4962-b28f-b3b6052e9ed2/image1.webp)
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

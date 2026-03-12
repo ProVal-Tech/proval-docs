@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive solution for managing softw
 tags: ['installation', 'software', 'uninstallation', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Purpose
@@ -21,3 +23,9 @@ This solution is designed to uninstall, install, and update software via Winget.
 | [CW RMM - Task - Winget Install Application](/docs/39d1ff3c-effe-4eee-8a28-d745073c5e0f)   | Task | Attempts to install an application via Winget                                |
 | [CW RMM - Task - Winget Uninstall Application](/docs/70ce6b79-5bfe-4160-95d9-77622b7fce89) | Task | Attempts to uninstall an application via Winget                              |
 | [CW RMM - Task - Winget Upgrade All](/docs/f4ce0265-0066-42ca-a1d5-c8897cb393f4)           | Task | Uses Winget to attempt an upgrade for all available packages on an endpoint. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

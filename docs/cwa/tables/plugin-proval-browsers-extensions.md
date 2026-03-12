@@ -8,6 +8,8 @@ description: 'This document outlines the custom table for storing information ab
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This Automate custom table stores the information gathered by the [Get Chromium 
 | ExtensionVersion     | varchar(32) | Version of the Extension                                        |
 | ExtensionInstallTime  | datetime    | Installation time of the Extension                               |
 | ScriptRunTime        | datetime    | Time when the data was fetched in Automate                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

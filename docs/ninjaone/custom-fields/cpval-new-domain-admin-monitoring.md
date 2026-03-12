@@ -8,6 +8,8 @@ description: 'Select Enable to enable New Domain Admin monitoring. Disable can b
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-03
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Select Enable to enable New Domain Admin monitoring. Disable can be selected at 
 ## Sample Screenshot
 
 ![SampleRun1](../../../static/img/docs/28f66783-6f12-4091-abe0-6aa41f7cfd9a/image1.webp)
+
+## Changelog
+
+### 2025-10-31
+
+- Initial version of the document

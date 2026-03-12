@@ -8,6 +8,8 @@ description: 'This document describes a script specifically designed for creatin
 tags: ['esxi', 'vmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,4 +48,10 @@ The only dependency for this script is that the monitor triggering the script mu
 > Type: Storage - Error      Message: Disk 1 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 2 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
 > Type: Storage - Error      Message: Disk 3 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
-> Type: Storage - Error      Message: Disk 4 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error  
+> Type: Storage - Error      Message: Disk 4 on HPSA1: Port Box 0 Bay 0: 0GB: Unconfigured Disk: Disk Error
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

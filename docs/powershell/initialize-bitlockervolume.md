@@ -8,6 +8,8 @@ description: 'Documentation for the Initialize-BitLockerVolume command to encryp
 tags: ['disk-encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -78,3 +80,9 @@ Encrypts the `$env:SystemDrive` volume with a Startup key protector using Aes256
 - .\\Initialize-BitLockerVolume-log.txt
 - .\\Initialize-BitLockerVolume-data.txt
 - .\\Initialize-BitLockerVolume-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

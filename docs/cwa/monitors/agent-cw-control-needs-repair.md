@@ -8,6 +8,8 @@ description: 'This document provides a summary of a monitor designed to locate b
 tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This monitor will locate broken CWControl installations on agents and optionally
 ## Target
 
 All agents - This should be run on all machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

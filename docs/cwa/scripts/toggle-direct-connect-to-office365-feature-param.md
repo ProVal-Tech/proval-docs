@@ -8,6 +8,8 @@ description: 'This document discusses the Direct Connect to Office365 feature in
 tags: ['office365', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ Please ensure that the "ExcludeExplicitO365Endpoint" parameter has the correct v
 ## Output
 
 Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

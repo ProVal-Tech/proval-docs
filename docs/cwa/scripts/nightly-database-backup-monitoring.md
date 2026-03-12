@@ -8,6 +8,8 @@ description: 'This document describes a script that creates a ticket in the ProV
 tags: ['backup', 'connectwise', 'database', 'email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ A MySQL backup for ConnectWise Automate was generated last night, but it is lowe
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

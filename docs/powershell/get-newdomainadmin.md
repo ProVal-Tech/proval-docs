@@ -8,6 +8,8 @@ description: 'Documentation for the Get-NewDomainAdmin command to get domain use
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -32,3 +34,9 @@ If the script has not been run previously, the admin data is saved to the table,
 ## Tables
 - Get-NewDomainAdmin_log
 - Get-NewDomainAdmin_admins
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

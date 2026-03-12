@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the patch and C
 tags: ['compliance', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ The data is grouped by client.
 | Prod. Patch Compliance %   | Green  | Greater than or equal to 75      |
 | CU Score %                 | Red    | Less than 75                     |
 | CU Score %                 | Green  | Greater than or equal to 75      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

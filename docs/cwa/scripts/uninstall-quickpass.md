@@ -8,6 +8,8 @@ description: 'This script can be used to silently remove the QuickPass Agent fro
 tags: ['software','ticketing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-27
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Failed to uninstall QuickPass agent
 
 Command Result: %shellresult%
 ```
+
+## Changelog
+
+### 2025-10-27
+
+- Initial version of the document

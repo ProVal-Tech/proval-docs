@@ -8,6 +8,8 @@ description: 'This custom field display the most recent result after pushing the
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field is used to display the results of the [BitLocker Recovery Key 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f/image1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

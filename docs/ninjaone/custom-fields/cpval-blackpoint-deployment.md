@@ -8,6 +8,8 @@ description: 'Choose the operating system to activate the auto deployment of the
 tags: ['security','custom-fields','windows','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Choose the operating system to activate the auto deployment of the BlackPoint Ag
 ## Sample Screenshot
 
 ![AccountUid](../../../static/img/docs/d858853c-665a-4283-a653-6655c2477993/BPDeployment.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

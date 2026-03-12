@@ -8,6 +8,8 @@ description: 'Stores the Addigy Policy ID for this organization. Ensures all mac
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Stores the Addigy Policy ID for this organization. Ensures all macOS devices rep
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/7061a031-f078-4ee0-b87c-83595adf0a64/image1.webp)
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

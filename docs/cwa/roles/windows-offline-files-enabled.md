@@ -8,6 +8,8 @@ description: 'This document provides a method to detect if offline files are ena
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines a method to detect if offline files are enabled in Window
 | Detection String                                                                                       | Comparator | Result | Applicable OS |
 |-------------------------------------------------------------------------------------------------------|------------|--------|---------------|
 | \{%@powershell.exe "Get-WmiObject -Class win32_OfflineFilesCache -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Enabled"@%} | Equals     | True   | Windows       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

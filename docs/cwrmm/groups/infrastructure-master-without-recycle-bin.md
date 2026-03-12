@@ -8,6 +8,8 @@ description: 'This document outlines the process to create a dynamic group in Co
 tags: ['active-directory', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Once you have added the above criteria, click the Save button to save the group.
 ![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_3.webp)
 
 ![Image](../../../static/img/docs/24509826-3f15-4594-8bb2-4f801709720b/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

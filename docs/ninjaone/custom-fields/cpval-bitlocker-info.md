@@ -8,6 +8,8 @@ description: 'Stores an HTML inventory of BitLocker volumes, including mount poi
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ Stores an HTML inventory of BitLocker volumes, including mount points, algorithm
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9/image1.webp)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

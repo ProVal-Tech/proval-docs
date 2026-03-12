@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for enabling BitLocker on the
 tags: ['encryption', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -414,4 +416,10 @@ Select Function 'Set Custom Field'. When you select `Set Custom Field`, it will 
 In this window, search for the `BitLocker INIT Result` field.  
 **Custom Field:** `BitLocker INIT Result`  
 **Value:** `%Output%`  
-![Row 13 Custom Field](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_40.webp)  
+![Row 13 Custom Field](../../../static/img/docs/d920b865-7887-41b6-9fcd-b4802832d2a9/image_40.webp)
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

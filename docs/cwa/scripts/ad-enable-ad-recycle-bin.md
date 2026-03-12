@@ -8,6 +8,8 @@ description: 'This document provides a script to enable the Active Directory Rec
 tags: ['active-directory', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -67,4 +69,10 @@ The PC information is outlined below:
 
 ### Outdated
 
-`The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. The minimum version required is above 3.0, and the current version is @PSVersion@.`  
+`The AD Recycle Bin failed to be enabled on the DC server %computername% (ID: %computerid%) of Client: %clientname% (ID: %clientid%). The PowerShell version is outdated. The minimum version required is above 3.0, and the current version is @PSVersion@.`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

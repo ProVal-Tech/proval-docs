@@ -8,6 +8,8 @@ description: 'This document provides an overview of xPVAL Drive Letter views, de
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -24,3 +26,9 @@ The table below lists all filters applied to this view:
 | [xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a) | Y                | *C:* Each view contains its independent drive letter in its advanced filter.                    |
 | xPVAL Monitoring Managed                                   | Y                | *Managed*                                                                                       |
 | xPVAL Exclude from Monitoring                              | Y                | NOT *1* AND NOT *yes*                                                                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

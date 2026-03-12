@@ -8,6 +8,8 @@ description: 'This document details a script that retrieves user profile informa
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This script looks for user profile information at the machine level. It provides
 - Script log
 - [custom_proval_computer_accounts](/docs/2d9698ff-636d-4d56-b5d0-4ca308a6b5e5)
 - @Windows – Local Account Audit (Dataview)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This Custom filed is used to show the warranty expiration date of 
 tags: ['auditing', 'custom-fields', 'lenovo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-15
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This custom field is used to show the warranty expiration date of Lenovo machine
 | Field Name| Type of Field (Machine or Organization) | Description |
 |----------|---------------------------------------|----------- |
 | Warranty Expiration Date | Machine                                  | This Custom field is used to show the warranty expiration date of Lenovo machines. |
+
+## Changelog
+
+### 2025-08-22
+
+- Initial version of the document

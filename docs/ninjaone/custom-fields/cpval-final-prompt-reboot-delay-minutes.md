@@ -8,6 +8,8 @@ description: 'Specifies how many minutes to delay the forced reboot after the fi
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specifies how many minutes to delay the forced reboot after the final prompt. De
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/58e81186-a952-40e6-8f06-ad485c52ef2a/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

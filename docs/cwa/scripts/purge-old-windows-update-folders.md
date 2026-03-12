@@ -8,6 +8,8 @@ description: 'This Script deletes old Windows Update backup folders (SoftwareDis
 tags: ['windows','update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This Script deletes old Windows Update backup folders (SoftwareDistribution.bak*
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2026-01-12
+
+- Initial version of the document

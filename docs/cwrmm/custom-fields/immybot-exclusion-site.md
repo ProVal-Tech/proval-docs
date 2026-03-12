@@ -8,6 +8,8 @@ description: 'Enable this flag to prevent ImmyBot from deploying to this site'
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enable this flag to prevent ImmyBot from deploying to this site. This custom fie
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/5e44ed99-db67-41d3-b718-532395f2ac11/image1.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

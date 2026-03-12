@@ -8,6 +8,8 @@ description: 'This group includes the endpoint where the MSRT needed to be unins
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ Click Save
 Group Created
 
 ![Group Created](<../../../static/img/docs/5b31977a-2e6d-4647-8c4b-5b1055b31ff4/{A9C86F38-129F-4A35-93A7-3F187EF8AE7E}.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

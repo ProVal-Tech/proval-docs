@@ -8,6 +8,8 @@ description: 'This document outlines the steps to export the Log4J Scan & Mitiga
 tags: ['report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Export the Log4J Scan & Mitigation Procedure
@@ -21,3 +23,9 @@ For each client, edit the procedure and change the **Email** global variable to 
 
 Save the procedure.  
 Log the deployment in the tracker located here: [Deployment Tracker](https://provaltech.sharepoint.com/:x:/s/ltadmin71/EQ8RZqNdHAtHsw641Bdh550BiC1_gQYbVSwLLfEEgSekEg?e=yRivZG)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

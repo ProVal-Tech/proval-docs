@@ -8,6 +8,8 @@ description: 'Detects the machines where Banyan app installation is enabled but 
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-10
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ Detects the machines where Banyan app installation is enabled but the applicatio
 ## Alert Template
 
 - `△ Custom - Execute Script - Install Banyan App`
+
+## Changelog
+
+### 2025-10-10
+
+- Initial version of the document

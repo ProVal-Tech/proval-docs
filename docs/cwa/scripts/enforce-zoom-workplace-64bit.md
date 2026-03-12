@@ -8,6 +8,8 @@ description: 'Enforces installation of Zoom Workplace 64-bit by removing all exi
 tags: ['installation', 'uninstallation', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ This script performs a comprehensive replacement of any existing Zoom installati
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-11-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Zorus agent uninstallation password'
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-03
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ unlisted: false
 ## Custom Field Creation
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-zorus-uninstallation-password.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

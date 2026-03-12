@@ -8,6 +8,8 @@ description: 'This document outlines the steps to identify machines where IPv6 i
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The purpose of this document is to identify machines where IPv6 is enabled on an
 
 Use the following document as a guide to implement this role:  
 [Create a PowerShell-based Role](/docs/3c7cb0d9-ed0a-482f-8cfe-7072c87fd990)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

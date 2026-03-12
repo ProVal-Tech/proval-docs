@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a dynamic group for DUO
 tags: ['deployment', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -62,3 +64,9 @@ This group adds members where the DUO Deployment is enabled. The agent is added 
    - Set `Failed` in the comparison condition.  
    ![Step 8](../../../static/img/docs/c598c18f-25a9-43fd-a7b6-86e8f186c38b/image_10.webp)  
    **Condition:** `Duo Deployment Result` `Does Not Contain any of` `Failed`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

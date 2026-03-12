@@ -8,6 +8,8 @@ description: 'This document outlines various solutions for managing local and do
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ This document outlines multiple solutions that can be used to manage local and d
 ## Implementation
 
 1. Please carefully review the solution documents for importation before implementation.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

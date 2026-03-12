@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-08-01
 ---
 
 ## Summary
@@ -38,3 +40,5 @@ The `Add new custom field` dialog box will occur
 ![Step3](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step3.webp)
 
 ## Completed Custom Field
+
+## Changelog

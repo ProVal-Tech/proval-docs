@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on deploying Webroot 
 tags: ['deployment', 'software', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ Please follow the documents below to obtain the Webroot Site Keycode and the Web
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

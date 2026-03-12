@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The script takes a single parameter, which is an array of ExtensionIDs to instal
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

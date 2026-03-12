@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive data view of security infor
 tags: ['email', 'permissions', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This data view shows detailed security information about Automate users.
 | Email                     | Email address of the user                                 |
 | Assigned Groups           | Names of the assigned groups                              |
 | Assigned Clients          | Names of the assigned clients                             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

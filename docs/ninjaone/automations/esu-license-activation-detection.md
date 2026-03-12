@@ -8,6 +8,8 @@ description: 'This script performs the checks for the ESU license activation det
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ This script performs the checks for the ESU license activation detection and sto
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-10-14
+
+- Initial version of the document

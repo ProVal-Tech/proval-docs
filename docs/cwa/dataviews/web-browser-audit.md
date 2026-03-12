@@ -8,6 +8,8 @@ description: 'This document provides a dataview of the installed web browsers on
 tags: ['report', 'security', 'web-browser', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This dataview shows the installed web browsers on machines, as well as the statu
 | Last Contact        | Last contact with RMM of the agent          |
 | Web Browser Name    | Web browsers detected on the agent          |
 | IE Audit            | Status of IE disabled or not                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

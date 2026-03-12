@@ -8,6 +8,8 @@ description: 'Runs the New Domain Admin Detected automation every 04 hours on In
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 ---
 
@@ -27,3 +29,9 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Template Creation
 
 [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/new-domain-admin-detected.toml)
+
+## Changelog
+
+### 2025-10-17
+
+- Initial version of the document

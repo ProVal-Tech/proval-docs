@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['dns', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This script outputs information to the following areas:
 - Script Log
 - Host File Contents EDF
   - ![Host File Contents](../../../static/img/docs/d4f874ae-e2d5-4a6c-b0c3-14972813012d/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

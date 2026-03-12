@@ -8,6 +8,8 @@ description: 'This script disables the Windows PowerShell v2 feature, ensuring t
 tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -52,3 +54,9 @@ The content checks for a version of PowerShell greater than v2. If one is presen
 | ConnectWise RMM             |                                           |
 | Kaseya                      |                                           |
 | Datto RMM                   |                                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

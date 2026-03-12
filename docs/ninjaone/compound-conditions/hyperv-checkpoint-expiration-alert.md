@@ -8,6 +8,8 @@ description: 'This creates ticket if the hyper-v checkpoint detected older than 
 tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Summary
@@ -145,3 +147,9 @@ Click the `Save` button located at the top-right corner of the screen to save th
 
 You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
 ![MFA](../../../static/img/docs/6cd46a25-ff1e-42db-9bed-9ea70cbaf8c0/mfa.webp)
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

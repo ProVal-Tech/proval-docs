@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of dataview audit 
 tags: ['hyper-v', 'performance', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This document provides an overview of dataview audit snapshots for virtual machi
 | Estimated Disk Max Usage         | Displays the maximum disk usage by the snapshot         |
 | Snapshot Description              | Displays the description of the snapshot                |
 | Is Current Snapshot              | Indicates whether the snapshot is current or not       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

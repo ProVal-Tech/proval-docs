@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for enabling the SNMP Windows
 tags: ['installation', 'performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -70,3 +72,9 @@ The agent procedure checks whether the machine has the SNMP feature enabled. If 
 Procedure Logs
 ## Attachments
 [Procedure_SNMP___Community_Configuration.xml](<../../../static/attachments/itg/10996674/Procedure_SNMP___Community_Configuration.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

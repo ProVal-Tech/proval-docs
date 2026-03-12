@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script designed for creating a
 tags: ['deployment', 'gpo', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -84,3 +86,9 @@ The generated PowerShell script will install the agent if it is missing, attempt
 <iframe src="https://proval.itglue.com/attachments/10110714?preview=1" width="100%" height="900px" frameborder="0"></iframe>
 ## Attachments
 [Automate_Agent_Deployment_GPO.pdf](<../../../static/attachments/itg/10861684/Automate_Agent_Deployment_GPO.pdf>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

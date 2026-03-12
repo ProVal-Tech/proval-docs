@@ -8,6 +8,8 @@ description: 'This client script is designed to automatically close Reboot Pendi
 tags: ['reboot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ It is recommended to schedule this client script to run once per day for better 
 ## Dependencies
 
 [CWM - Automate - Script - Reboot Pending Servers per client [Tickets]](/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

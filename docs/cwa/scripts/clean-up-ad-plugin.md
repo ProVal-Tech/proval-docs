@@ -8,6 +8,8 @@ description: 'This document describes the process of cleaning up the Active Dire
 tags: ['active-directory', 'cleanup', 'database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Additionally, it removes all rows with `ObjectType` 1 or 2 from `plugin_ad_entri
 
 1. Import the 'Clean Up AD Plugin' script.
 2. Schedule the client script to run.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

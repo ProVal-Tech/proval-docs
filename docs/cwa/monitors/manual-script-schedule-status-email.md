@@ -8,6 +8,8 @@ description: 'This document provides an overview of a monitor designed to detect
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Here, %RESULT% contains the script name: "Scriptname" ran on computer "Computern
 **Email Example:**
 
 ![Email Example](../../../static/img/docs/587dab37-7b57-467f-bcde-b112783f5cf1/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

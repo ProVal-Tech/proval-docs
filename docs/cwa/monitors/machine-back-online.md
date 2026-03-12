@@ -8,6 +8,8 @@ description: 'This document explains how to add ComputerIDs into the result fiel
 tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This document outlines the process of adding ComputerIDs into the result field f
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

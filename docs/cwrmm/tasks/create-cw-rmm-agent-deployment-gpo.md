@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on generating a ConnectWis
 tags: ['connectwise', 'gpo', 'installation', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -344,3 +346,9 @@ Click the `Save` button to save the Task.
 
 - Script Log  
 ![Image](../../../static/img/docs/337fc103-461c-4e79-b2fd-db151a4bb628/image_33.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

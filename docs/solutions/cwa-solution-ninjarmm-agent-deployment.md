@@ -8,6 +8,8 @@ description: 'This solution is built to set the NinjaRMMAgent migration from CW 
 tags: ['application','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-22
 ---
 
 ## Purpose
@@ -54,3 +56,13 @@ This solution is built to set the NinjaRMMAgent migration from CW Automate to Ni
 
 (Q.) Is it possible the partner will not be able to see the option `Devices` > `Agent Installers` in the Ninja Portal?  
 Ans:  Yes. It is because the `Devices` > `Agent Installers` is a Beta feature that is required to be enabled by requesting their account manager.
+
+## Changelog
+
+### 2025-05-22
+
+- This solution was not available in our Git Hub. Migrated the document from IT Glue to GitHub
+
+### 2025-05-21
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution for identifying targe
 tags: ['compliance', 'database', 'encryption', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ WHERE (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/docs/369dac26-3df5-4591-8d51-47fc1cd7204c/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

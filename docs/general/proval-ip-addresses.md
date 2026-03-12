@@ -8,6 +8,8 @@ description: 'This document provides a list of ProVal IP addresses that should b
 tags: [ 'networking' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ![diagram](/img/docs/794c9b95-df88-4b63-8605-b7c9b138532b/data.webp)
@@ -35,3 +37,9 @@ Addtionally - Uptime Robot - Used for on-prem up / down status reporting
 https://uptimerobot.com/help/locations/
 
 NOTE: the subdomain `whitelist` has been deprecated. however, `whitelist(n).provaltech.com` will still function for legacy clients.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

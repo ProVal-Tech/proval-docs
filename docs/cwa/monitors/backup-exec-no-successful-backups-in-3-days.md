@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to verify the occurrence of e
 tags: ['backup', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -43,4 +45,10 @@ Backup Management > Backup Exec
 
 ## How to Import
 
-[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](/docs/1b34e236-7235-4dc1-b4d2-fdd120e75f47)  
+[Import - Remote Monitor - Backup Exec - No successful backups in 3 days](/docs/1b34e236-7235-4dc1-b4d2-fdd120e75f47)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

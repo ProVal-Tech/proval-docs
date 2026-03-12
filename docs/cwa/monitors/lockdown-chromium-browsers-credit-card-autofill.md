@@ -8,6 +8,8 @@ description: 'This document outlines the process for disabling the Autofilling f
 tags: ['security', 'web-browser', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -375,3 +377,9 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - `ProVal - Production - Lockdown Chromium Browsers Address Autofill`
 ![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4.webp)
 ![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

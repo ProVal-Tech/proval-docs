@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to create an AP
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Creating the API User
@@ -56,3 +58,9 @@ unlisted: false
         
 6. Click Save
 7. Once you click save, the token window will pop up. Copy the token to the clipboard, and IMMEDIATELY save this information in the ITGlue API User you created earlier in the process, in the Notes field, as: `DW API Token: TOKEN`
+
+## Changelog
+
+### 2025-04-09
+
+- Initial version of the document

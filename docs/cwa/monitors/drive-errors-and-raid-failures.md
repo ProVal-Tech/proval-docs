@@ -8,6 +8,8 @@ description: 'This document outlines the configuration and functionality of the 
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -199,3 +201,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 
 ### Step 8
 Set the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

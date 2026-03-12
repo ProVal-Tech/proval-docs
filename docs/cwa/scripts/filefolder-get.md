@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ The files `Everything.exe` and `es.exe` will be downloaded from ProVal's File Se
 
 - Script Log
 - `@SearchResult@` holds the results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

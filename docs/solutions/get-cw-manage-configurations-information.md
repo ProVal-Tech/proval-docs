@@ -8,6 +8,8 @@ description: 'This document outlines the solution to fetch basic information abo
 tags: ['report', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ The purpose of this solution is to fetch basic information about the computer fr
 - Set the relevant values to the script's global variables. Refer to the script's document for more information.
 - Run the script against the Automate server or an online server in the partner's internal environment.
 - Schedule the script to run once per day/week against the Automate server or an online server in the partner's internal environment to keep the dataview up-to-date.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to remove the enforcement
 tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ This script is used to remove the enforcement of the installation of an extensio
 ```
 ./Unregister-EdgeExtension-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

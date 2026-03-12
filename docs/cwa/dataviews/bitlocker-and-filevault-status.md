@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the encryption statu
 tags: ['encryption', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This dataview will show the encryption status of endpoints in Automate, specific
 | BitLocker Status - System Drive  | The BitLocker status of the system drive for Windows devices                                    |
 | FileVault Status                 | The FileVault status for Mac devices                                                             |
 | Last Logon User                  | The last user that logged into the device based on information gathered by Automate             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

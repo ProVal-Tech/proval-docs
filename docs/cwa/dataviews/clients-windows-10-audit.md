@@ -8,6 +8,8 @@ description: 'A thorough examination of Windows 10 computers and their patching 
 tags: ['compliance', 'patching', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ A thorough examination of Windows 10 computers and their patching status for eac
 | # Missing Patches Windows 10       | Total number of missing patches for Windows 10 computers.                                       |
 | # Failed Patches Windows 10        | Total number of failed patches for Windows 10 computers.                                        |
 | Windows 10 Patch Compliance         | Average patch compliance for all Windows 10 computers.                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

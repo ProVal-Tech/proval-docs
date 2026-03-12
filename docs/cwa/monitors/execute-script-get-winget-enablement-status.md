@@ -8,6 +8,8 @@ description: 'The monitor set runs the Get Winget Enablement script on Windows m
 tags: ['windows', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The monitor set runs the [Get Winget Enablement Status](/docs/a5e852f4-0ca3-11f1
 ## Target
 
 - Global
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

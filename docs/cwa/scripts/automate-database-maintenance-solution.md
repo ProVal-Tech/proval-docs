@@ -8,6 +8,8 @@ description: 'This document details the Automate Database Maintenance Solution, 
 tags: ['cleanup', 'connectwise', 'database', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -30,12 +32,18 @@ This script is a wrapper to execute any number of recommended Automate Database 
 3. Functions rely on the global parameters set in the Automate Database Maintenance Solution Script.
 4. Logging for all actions and a historical record of events.
 
+## Dependencies
+
+- [Solution - Automate Database Maintenance](/docs/4b0ae11f-9850-48ea-87c8-2f538bcb80bd)
+
 ## Implementation
 
 This is a client-level script and should be scheduled to run regularly to maintain database cleanliness.
 
 **FRESH INSTALLATION**:
 - Run the script with the user parameter "Set_Environment" value set to 1, in order to set the system properties.
+![Manual Run Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/samplerun.webp)
+
 - It will set the system properties to the default value as shown in the screenshot below. You can change the values of these parameters as per the client's requirement by modifying the system properties directly.
   
   ![System Properties Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_1.webp)
@@ -116,3 +124,9 @@ This is a client-level script and should be scheduled to run regularly to mainta
 
 The script log represents a log file. This is a representation of the expected log file.  
 ![Expected Log File Screenshot](../../../static/img/docs/6436e6f3-e161-4b64-a4bf-1177cce2f968/image_6.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

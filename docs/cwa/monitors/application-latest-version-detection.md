@@ -8,6 +8,8 @@ description: 'This document provides a guide on creating a monitor to fetch the 
 tags: ['application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This script is only targeted to one machine to fetch the application's latest ve
 
 1. Import the monitor.  
 2. Create a duplicate of the monitor and remove the imported monitor to avoid confusion.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

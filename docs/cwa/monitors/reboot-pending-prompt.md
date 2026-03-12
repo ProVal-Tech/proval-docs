@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to detect agen
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This monitor is an automation-driven reboot prompting monitor. This should only 
 | Disable Reboot Prompt| CheckBox | Exclusions | Client   | Flag this EDF to exclude the client from the solution.|
 | Disable Reboot Prompt| CheckBox | Exclusions | Location | Flag this EDF to exclude the location from the solution.|
 | Disable Reboot Prompt| CheckBox | Exclusions | Computer | Flag this EDF to exclude the computer from the solution.|
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the critical dat
 tags: ['database', 'disk-encryption', 'performance', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -60,3 +62,9 @@ Created from [EPM - Disk - Script - Disk - Gather Critical Info](/docs/ee31c873-
 | IntegrityErrors           | INT(11)        | Holds the number of integrity errors for the drive |
 | InformationalLogEntries   | INT(11)        | Holds the number of informational log entries for the drive |
 | DateUpdated               | DATE           | Holds the date of the last check                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

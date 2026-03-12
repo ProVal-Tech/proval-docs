@@ -8,6 +8,8 @@ description: 'If enabled, it allows smart card login as an alternative to Duo au
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -111,3 +113,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/f0c8a089-0c1b-4056-8375-c3601acc968d/image5.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

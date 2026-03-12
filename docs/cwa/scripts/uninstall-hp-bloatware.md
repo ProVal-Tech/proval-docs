@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to uninstall all HP bloat
 tags: ['logging', 'software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ If the script fails to uninstall some of the HP bloatware from the machine but u
 
 The script has successfully removed all unnecessary HP bloatware, leaving only the following software components:  
 `@RemainingUninstalledSoftwares@`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

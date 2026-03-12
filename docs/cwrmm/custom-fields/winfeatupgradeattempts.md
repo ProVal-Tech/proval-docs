@@ -8,6 +8,8 @@ description: 'This document provides a guide on creating a custom field to track
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,4 +29,10 @@ This document will keep a record of how many times a Windows 10/11 device has at
 **Default Value:** 0  
 **Level:** Endpoint  
 **Description:** This field will keep a record of how many times a Windows 10/11 device has attempted to install the feature upgrade using the `Feature Update Install With Tracking` task, with the default value set to 0.  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

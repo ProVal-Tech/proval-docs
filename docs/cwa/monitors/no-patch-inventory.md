@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of an internal monitor th
 tags: ['performance', 'report', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This Internal Monitor detects machines where the patch inventory shows zero avai
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

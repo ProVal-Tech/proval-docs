@@ -8,6 +8,8 @@ description: 'This document describes a script that retrieves the latest install
 tags: ['database', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ It is an Automate implementation of the agnostic script [Get-LatestInstalledCU](
 
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

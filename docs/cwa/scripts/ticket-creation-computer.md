@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of an all-in-one s
 tags: ['alerting', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This script outputs logging information into the script log in the scripting tab
 What the Alerting Tab looks like:
 
 ![Alerting Tab Example](../../../static/img/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

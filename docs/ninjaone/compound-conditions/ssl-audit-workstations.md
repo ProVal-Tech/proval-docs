@@ -8,6 +8,8 @@ description: 'This compound condition performs SSL Certificate Audit once per da
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This compound condition performs SSL Certificate Audit once per day on Windows W
 ## Compound Condition Creation 
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/ssl-audit-workstations.toml)
+
+## Changelog
+
+### 2026-02-16
+
+- Initial version of the document

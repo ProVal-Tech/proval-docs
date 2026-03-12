@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating a dynamic group ba
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This dynamic group depends on the endpoint custom field `Prompter_RebootPending`
    - The agent `Available` equals `True`.
    - The `OS` contains either `Windows 10` or `Windows 11`.
    - `Exclude Reboot` custom field equals `False`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

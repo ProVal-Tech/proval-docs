@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script that a
 tags: ['disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -214,3 +216,9 @@ Attached **`DiskInfo.txt`** File:
 
 e.g.,  
 ![Example Exclusion](../../../static/img/docs/47ae12f3-3426-4a5d-b204-07eda11b9eff/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

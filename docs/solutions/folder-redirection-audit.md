@@ -8,6 +8,8 @@ description: 'This solution shows the folder redirection auditing of the active 
 tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -28,3 +30,13 @@ This solution is built to gather the folder redirection auditing of the active u
 - Schedule the script to the group or set of computers as per the requirement to trace the redirection of the folders.
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-30
+
+- Migrated the solution to Github from IT glue
+
+### 2025-04-29
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Dataview to display the status of certificate and configurations n
 tags: ['bios','certificates','secureboot','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-30
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview displays the status of key certificate and configurations that wil
 | Windows Telemetry       | Status of Windows Telemetry (enabled/disabled)  |
 | Windows DB Certificate  | Status of DB certificate (updated/out of date)  |
 | Windows KEK Certificate | Status of KEK certificate (updated/out of date) |
+
+## Changelog
+
+### 2025-09-19
+
+- Initial version of the document

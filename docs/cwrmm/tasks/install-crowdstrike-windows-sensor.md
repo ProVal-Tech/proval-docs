@@ -8,6 +8,8 @@ description: 'This script automates the deployment of the CrowdStrike Windows Se
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-18
 ---
 
 ## Summary
@@ -284,3 +286,9 @@ Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

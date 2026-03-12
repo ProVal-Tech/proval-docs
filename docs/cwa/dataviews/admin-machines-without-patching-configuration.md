@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that disp
 tags: ['patching', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview displays any machines where the Microsoft update policy is not set
 | Patch Exclusion Checkbox           | Displays whether the `Disable Automated Patch Install` EDF is `Checked` or `Unchecked`         |
 | Cluster Role Detected              | Displays whether the cluster role detected is True                                             |
 | Last User Name                     | Displays the last username of the machine                                                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The dataview shows the Winget enablement status for Windows machin
 tags: ['windows', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The dataview shows the Winget enablement status for Windows machines, indicating
 | Winget Enablement Status | Unavailable | Red |
 | Winget Enablement Status | Not Logged In | Orange |
 | Winget Enablement Status | Available | Green |
+
+## Changelog
+
+### 2026-02-18
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides details on a modified version of the stock 
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ All columns are exactly the same as the stock Retired Assets dataview, with the 
 | Column  | Description                                             |
 |---------|---------------------------------------------------------|
 | Comment | The comment associated with the retirement of the agent. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

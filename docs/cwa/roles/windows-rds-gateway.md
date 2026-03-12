@@ -8,6 +8,8 @@ description: 'This document outlines how to determine if an agent is functioning
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines how to determine if the agent is acting as an RDS Gateway
 | Detection String                                   | Comparator | Result | Applicable OS |
 |----------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Gateway).Installed"@%} | Equals     | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

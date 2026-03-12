@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Infrastructure 
 tags: ['windows', 'dynamic-groups', 'domain', 'active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/2457d317-b37a-46e4-9f1d-c8687ed8ef62/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

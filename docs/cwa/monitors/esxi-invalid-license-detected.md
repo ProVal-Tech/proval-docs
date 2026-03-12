@@ -8,6 +8,8 @@ description: 'This document outlines the monitor set designed to detect ESXi hos
 tags: ['ticketing', 'vmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Global
 **Name:** `△ Custom - Ticket Creation - ESXi Monitoring`
 
 **The alert template should run the** [CWM - Automate - Script - Ticket Creation - VMWare ESXi Monitoring](/docs/7fbdffc1-7472-4276-914d-1e5b845dcd3c) **script on failure.**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive audit of all Firefox extens
 tags: ['firefox', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This document lists all Firefox extensions installed on the endpoint.
 | Field Name                       | Type of Field (Machine or Organization) | Description                                        |
 |----------------------------------|-----------------------------------------|----------------------------------------------------|
 | xPVAL Firefox Extensions Installed | Machine                                 | Lists all Firefox extensions installed on the endpoint |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

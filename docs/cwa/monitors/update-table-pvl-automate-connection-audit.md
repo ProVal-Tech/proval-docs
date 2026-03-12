@@ -8,6 +8,8 @@ description: 'This document explains the functionality of the internal monitor t
 tags: ['database', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ The internal monitor runs every 5 minutes and adds an entry to the [pvl_automate
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

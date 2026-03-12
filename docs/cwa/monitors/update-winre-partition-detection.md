@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution that detects online W
 tags: ['security', 'ticketing', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Note: Here, `@psout@` is the result of the script and `@compinfo@` contains the 
 - BIOS Version (Manufacturer)  
 
 Additionally, ticketing is enabled under the script. Refer to the script document for instructions on how to enable it under Global Parameters.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

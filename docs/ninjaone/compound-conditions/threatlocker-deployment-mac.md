@@ -8,6 +8,8 @@ description: 'Triggers the auto-deployment script for ThreatLocker on Macintosh 
 tags: ['security','setup','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Triggers the [ThreatLocker Deployment [MAC]](/docs/11444307-4a3f-4388-b5c5-096a5
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/threatlocker-deployment-macs.toml)
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

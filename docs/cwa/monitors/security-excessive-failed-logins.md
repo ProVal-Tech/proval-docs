@@ -8,6 +8,8 @@ description: 'This document outlines how to monitor for security event log event
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-11
 ---
 
 ## Summary
@@ -159,3 +161,17 @@ Or check manually in Services.msc.
 - `Check for Patterns:` Repeated failures from the same IP or targeting multiple accounts.
 - `Block IP or Account:` If malicious, take immediate action.  
 - `Enable Account Lockout Policies:` To prevent brute-force attacks or excessive logon attempts.
+
+## Changelog
+
+### 2025-06-11
+
+- Renamed the monitor from "Security - Possible Brute Force attack" to "Security - Excessive Failed Logins".
+
+### 2025-06-09
+
+- Initial version of the document
+
+### 2025-06-03
+
+- Added troubleshooting guide in the ticket and the document.

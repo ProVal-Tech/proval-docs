@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that checks the proval_plugin_cer
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ Expiration: 2023-04-20 19:59:59
 ## Example Ticket
 
 ![Image](../../../static/img/docs/a7dad4d0-d2dc-44b2-972b-0893d7814f8c/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

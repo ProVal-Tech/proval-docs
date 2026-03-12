@@ -8,6 +8,8 @@ description: 'Triggers the auto-deployment script for ThreatLocker on Windows ma
 tags: ['security','setup','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Triggers the [ThreatLocker Deployment](/docs/1196b011-bfba-486a-8653-92066f19e52
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/threatlocker-deployment-windows.toml)
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

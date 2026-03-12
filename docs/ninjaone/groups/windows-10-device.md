@@ -8,6 +8,8 @@ description: 'This group contains the Windows 10 devices.'
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-05
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Complete](../../../static/img/docs/windows-10-device/{072DC899-92B8-42A2-B763-CAF4D3122453}.png)
+
+## Changelog
+
+### 2025-05-29
+
+- Initial version of the document

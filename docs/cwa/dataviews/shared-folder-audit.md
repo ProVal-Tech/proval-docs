@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Shared Folder Au
 tags: ['permissions', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This dataview pulls information regarding file shares and permissions from the s
 | User Having Access     | Groups or Users that have access to this share   |
 | Permission Type        | Either Allow or Deny                             |
 | Permission Right       | Full, Read, Change, or No Access                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

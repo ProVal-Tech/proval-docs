@@ -8,6 +8,8 @@ description: 'It installs the AutoElevate to both MAC and Windows OS.'
 tags: ['installation', 'deployment', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-04
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ It downloads the msi or sh file from "https://autoelevate-installers.s3.us-east-
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2026-01-15
+
+- Initial version of the document

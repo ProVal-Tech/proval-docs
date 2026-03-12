@@ -8,6 +8,8 @@ description: 'Group of Windows 10 22H2 machines.'
 tags:  ['auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-06
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ This search box will appear:
 ## Completed Group
 
 ![Completed Group](../../../static/img/docs/558a6a3d-b543-4267-96fc-76f0c9a13e68/image3.webp)
+
+## Changelog
+
+### 2026-02-04
+
+- Initial version of the document

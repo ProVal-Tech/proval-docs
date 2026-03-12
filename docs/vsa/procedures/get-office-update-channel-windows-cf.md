@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to check and update the Micro
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,4 +56,10 @@ Agent Procedure Log
 ![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_6.webp)  
 
 Custom Field  
-![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_7.webp)  
+![Image](../../../static/img/docs/ed6559df-a8d5-48d9-8a9e-fe26b84a056b/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

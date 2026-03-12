@@ -8,6 +8,8 @@ description: 'This document outlines a script used to enforce the installation o
 tags: ['chrome', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This script is used to enforce the installation of an extension or a list of ext
 
 - Script log
 - Local file on the computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

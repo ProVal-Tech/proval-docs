@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Windows Server B
 tags: ['backup', 'performance', 'report', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -82,3 +84,9 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_windows_server_backup pw ON pw.computerid = c.computerid
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

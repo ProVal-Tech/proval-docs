@@ -8,6 +8,8 @@ description: 'Checks current state of Windows Fast Boot and outputs the correspo
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -35,3 +37,9 @@ Checks current state of Windows Fast Boot and outputs the corresponding Status s
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

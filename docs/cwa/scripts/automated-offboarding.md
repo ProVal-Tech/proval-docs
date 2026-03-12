@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on using the Offboard
 tags: ['connectwise', 'software', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Ticketing is optional.
 - Ticketing on failure if enabled.
 ## Attachments
 [Automated_Offboarding_Generic.xml](<../../../static/attachments/itg/8984816/Automated_Offboarding_Generic.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

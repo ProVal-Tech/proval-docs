@@ -8,6 +8,8 @@ description: 'This script checks whether Zoom Windows VDI is already installed o
 tags: ['datto', 'application', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-01
 ---
 
 ## Overview  
@@ -49,3 +51,9 @@ A job status of `Success` is expected.
 ## Attachments  
 
 [Install Zoom Windows VDI](../../../static/attachments/Install%20Zoom%20Windows%20VDI.cpt)
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

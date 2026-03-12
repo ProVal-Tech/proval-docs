@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring the disk health 
 tags: ['alerting', 'disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ The purpose of this document is to monitor the disk health of physical machines 
 - Create the task: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b)
 - Create the deployment schedule as described in this document: [CW RMM - Task - Get Crystal Disk Info (Disk Health)](/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b)
 - Create the monitor if necessary: [CW RMM - Monitor - Crystal Disk Info Health Status](/docs/8ceb86c8-23b2-4a95-b920-f78e446d9e59)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

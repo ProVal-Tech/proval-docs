@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a table for storing data displ
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ This table will store the data to be displayed in the Redirection-Audit Dataview
 | SettingType    | VARCHAR(25)   | The type of setting being shown (Global or Folder).    |
 | Description     | TEXT          | The description of what the property is setting, if known. |
 | Value          | TEXT          | The value assigned to the property.                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Proval Standardi
 tags: ['alerting', 'cpu', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Configuration Tab:**  
 ![Configuration Tab](../../../static/img/docs/6ddadabd-4b0f-45b0-92d5-51a58eba15a4/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

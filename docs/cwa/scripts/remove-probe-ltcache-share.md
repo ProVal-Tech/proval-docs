@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to remove the current LTC
 tags: ['cleanup', 'database', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script will remove the current LTCache on the Probe for the target's locati
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that presents i
 tags: ['report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Flag the Computer-Level EDF `Exclude From HPE iLO Monitoring` to exclude a compu
 | Operating System   | Operating System                 |
 | Manufacturer      | Manufacturer                     |
 | Last Contact      | Last Contact with RMM           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

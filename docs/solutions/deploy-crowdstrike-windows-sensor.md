@@ -8,6 +8,8 @@ description: 'The solution outlines the process of auto deploying CrowdStrike Wi
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-23
 ---
 
 ## Purpose
@@ -91,3 +93,9 @@ A: Supported OS selection is controlled by the `DeployCrowdStrikeWindowsSensor` 
 
 **Q: Does the installer support forced reinstallation?**  
 A: Yes, enable the "Force" runtime parameter when running the install task/script to force a reinstall even if the sensor is present.
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

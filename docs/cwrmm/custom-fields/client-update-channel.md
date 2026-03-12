@@ -8,6 +8,8 @@ description: 'This document provides guidance on selecting the Update Channel fo
 tags: ['microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Available options are:
 
 ![Image](../../../static/img/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc/image_1.webp)
 ![Image](../../../static/img/docs/656f037b-8dba-4e59-b135-33dcd5b0b7dc/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

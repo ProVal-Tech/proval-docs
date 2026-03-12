@@ -8,6 +8,8 @@ description: 'This document outlines the steps for implementing the time zone ma
 tags: ['timezone', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-30
 ---
 
 ## Purpose
@@ -84,3 +86,9 @@ Runtime Input variables allow you to provide values to the script at execution t
 ### 6. Can I exclude certain devices from the time zone management solution?
 
 Yes, set the [cPVAL Manage Time Zone](/docs/7db8dfdf-6825-4349-94e1-f86348fdec03) custom field to `Disabled` at the location or device level to exclude those devices from the automation.
+
+## Changelog
+
+### 2025-06-26
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document explains how to set a custom field to enable the use
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The [CW RMM - Task - Scheduled Task Winget Update All (Create)](/docs/a898b5ac-2
 
 ![Screenshot 1](../../../static/img/docs/8022b663-4923-47d5-b8c7-7ba24aae305d/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/8022b663-4923-47d5-b8c7-7ba24aae305d/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

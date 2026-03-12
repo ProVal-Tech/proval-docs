@@ -8,6 +8,8 @@ description: 'This document outlines a script that monitors computers with pendi
 tags: ['patching', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -319,3 +321,9 @@ Click the `Save` button to save the Task.
 ## Output
 
 - Custom Field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

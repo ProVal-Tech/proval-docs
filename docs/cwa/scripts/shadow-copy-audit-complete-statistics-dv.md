@@ -8,6 +8,8 @@ description: 'This document outlines a script that records data related to Shado
 tags: ['backup', 'database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Finally, the script will run the SQL statement against the Automate server to in
 - Script logs.
 - Custom table [Custom Table - plugin_proval_shadowcopystats](/docs/59bbf54a-55af-42fa-9e77-cd0b105122de).
 - Dataview [Dataview - Windows - Shadow Copy State [Script]](/docs/69110f54-d14f-4691-a68f-56bbc88b5fb3).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

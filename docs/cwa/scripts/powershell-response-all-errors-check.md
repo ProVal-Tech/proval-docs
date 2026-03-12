@@ -8,6 +8,8 @@ description: 'This document details a PowerShell script designed to check for co
 tags: ['logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This script should always be called from a parent script.
 - Script log
 - `@failstatus@` variable state
 - `@EnvironmentalError@` variable
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

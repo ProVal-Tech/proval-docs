@@ -8,6 +8,8 @@ description: 'This document provides a detailed dataview report showing the numb
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This dataview shows the number of missing patches for each server being patched 
 | OS              | Displays the operating system of the machine     |
 | Agent Type      | Displays the agent type                          |
 | Missing Patches | Displays the number of missing patches on the machine |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

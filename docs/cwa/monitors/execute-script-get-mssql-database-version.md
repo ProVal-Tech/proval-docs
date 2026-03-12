@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of the internal monitor t
 tags: ['database', 'mssql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The internal monitor is explicitly limited to the `MSSQL Servers` present in the
 ## Alert Template
 
 `△ Custom - Execute Script - Get MSSQL Database Version`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

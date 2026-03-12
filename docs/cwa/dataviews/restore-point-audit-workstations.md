@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview designed to audit
 tags: ['backup', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview helps you audit restore point details on workstations with the hel
 | Restore Sequence        | Displays the sequence number of the restore point detected |
 | Restore Point Date      | Displays the date of the restore point detected           |
 | Restore Point Description| Displays the name of the restore point detected           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

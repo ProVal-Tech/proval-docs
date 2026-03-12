@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to reset the Active Direc
 tags: ['active-directory', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This script will reset the AD plugin for the Domain Controller (DC) it runs on.
 
 - Runs LabTech Command 13 to reset the AD plugin on the DC.
 - Runs another LabTech command "update plugins" to synchronize plugin data on the agent.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

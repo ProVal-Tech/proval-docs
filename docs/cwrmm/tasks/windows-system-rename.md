@@ -8,6 +8,8 @@ description: 'This script can be used to rename a machine and validate the succe
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -386,3 +388,9 @@ Click `Save` at the top right corner of the script
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

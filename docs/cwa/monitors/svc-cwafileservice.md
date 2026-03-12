@@ -8,6 +8,8 @@ description: 'This document outlines the CWAFileService monitor for the Automate
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ CWAFileService is one of the important services for the Automate server. This mo
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

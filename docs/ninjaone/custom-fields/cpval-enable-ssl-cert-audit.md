@@ -8,6 +8,8 @@ description: 'Custom Field to enable SSL Certificates Audit'
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -31,3 +33,8 @@ Select the operating system for which SSL Certificate Audit should be enabled. U
 
 ![Sample Screenshot](../../../static/img/docs/87e79b06-8bb4-4902-8a0c-0a626dfb11ab/image1.webp)
 
+## Changelog
+
+### 2026-02-13
+
+- Initial version of the document

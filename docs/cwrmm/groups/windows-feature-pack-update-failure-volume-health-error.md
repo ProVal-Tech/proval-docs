@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to categorizing Windo
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_9.webp)  
 ![Image](../../../static/img/docs/891dd514-bfc7-4dba-b09c-7597145bb3e2/image_10.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

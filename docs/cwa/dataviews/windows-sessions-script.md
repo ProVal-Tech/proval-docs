@@ -8,6 +8,14 @@ description: 'This document provides guidance on how to convert HTML documents i
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 It seems that the HTML document you intended to provide is missing. Please share the HTML content you'd like me to convert to Markdown, and I'll be happy to assist you!
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

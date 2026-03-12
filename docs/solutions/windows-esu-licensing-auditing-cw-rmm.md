@@ -8,6 +8,8 @@ description: 'This solution provides automated auditing of Windows 10 Extended S
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-06
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ This CW RMM solution provides automated auditing of Windows 10 Extended Security
 - Create the [Group : Win 10 ESU Auditing Failed](/docs/a3f30225-91ac-46f7-b616-cb42aedb49d8) using the implementation instruction provided in the document.
 - Create the [Group : Win 10 ESU Audit Not Performed](/docs/afcaeb5a-d0e5-4f5e-b24f-c0aeaec22f3e)  using the implementation instruction provided in the document.
 - Create the [Group : Windows 10 22H2](/docs/558a6a3d-b543-4267-96fc-76f0c9a13e68)  using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a role designed to check if SMB1 is enabled
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This data is viewable in the dataview: @Security - SMB1 Enabled Status Check [Ro
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `{%@powershell.exe \"(Get-SmbServerConfiguration).EnableSMB1Protocol\"@%}` | Contains   | True   | Windows OS     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Set-DNSServersScavengingSetting command to e
 tags: ['dns', 'networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -49,3 +51,9 @@ Log Files:
 .\Set-DNSServerScavengingSettings-log.txt
 .\Set-DNSServerScavengingSettings-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

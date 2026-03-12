@@ -8,6 +8,8 @@ description: 'This script deploys the NinjaRMM Agent on windows and Mac agents v
 tags: ['application','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-07
 ---
 
 ## Summary
@@ -89,3 +91,9 @@ None
 ## Log
 
 Script Logs
+
+## Changelog
+
+### 2025-10-09
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution that detects local us
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This monitor will detect local users who have not logged in for the last 90 days
 ## Target
 
 Windows Servers
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'It executes `Disable NTLMv1.1` on targeted machines to disable NTL
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ It executes `Disable NTLMv1.1` on targeted machines to disable NTLMv1.1 protocol
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/disable-ntlmv11.toml)
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

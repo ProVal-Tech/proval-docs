@@ -8,6 +8,8 @@ description: 'This document outlines the process for checking whether a machine 
 tags: ['datto', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The component will prompt for two variables during a job:
 
 - **Rearm:** Specifies whether to perform a rearm if there are available re-arms.  
 - **Restart:** Specifies whether to restart the endpoint after a successful rearm
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

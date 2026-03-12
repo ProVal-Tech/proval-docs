@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for alerting the ProVal suppo
 tags: ['hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Gets a list of VM checkpoints via PowerShell that are older than 1 day. If any a
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

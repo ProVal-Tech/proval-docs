@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating a dynamic
 tags: ['deployment', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This group contains the list of agents where the DUO Auth for Windows Login is a
    - Set `Success` in the comparison condition.  
    ![](../../../static/img/docs/5202450b-3b85-46ff-9f35-6ea804223270/image_7.webp)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Success`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

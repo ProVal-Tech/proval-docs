@@ -8,6 +8,8 @@ description: 'Enables Threatlocker auto-deployment for Windows or both Windows a
 tags: ['security','setup','windows','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Enables Threatlocker auto-deployment for Windows or both Windows and Macintosh m
 ## Sample Screenshot
 
 ![Step1](../../../static/img/docs/c7aa0c9d-9b6b-4a78-bbf4-01a626acd6c2/TL-deployment.webp)
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

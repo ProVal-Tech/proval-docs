@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of agents that hav
 tags: ['networking', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This dataview shows information about agents that have not checked in for 45 day
 | All Location Details    | This dataview contains complete location details, including address, city, router address, etc. |
 | All Client Details      | This dataview provides details about the client, including a brief description of city, state, country, and time zone. |
 | All Contact Details     | This dataview contains all contact details of the agent, such as email address, phone number, and full name. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

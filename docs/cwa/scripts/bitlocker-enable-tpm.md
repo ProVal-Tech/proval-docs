@@ -8,6 +8,8 @@ description: 'This document details the implementation of the agnostic script SE
 tags: ['encryption', 'logging', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ An Automate implementation of the agnostic script [Enable-TPM](/docs/cc838fb3-1f
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

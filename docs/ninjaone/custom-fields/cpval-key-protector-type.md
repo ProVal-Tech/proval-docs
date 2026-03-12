@@ -8,6 +8,8 @@ description: 'Defines which BitLocker key protector method (TPM, PIN, Password, 
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Defines which BitLocker key protector method will be applied during encryption.
 ## Sample Screenshot
 
 ![cPVAL KeyProtectorType](../../../static/img/docs/3378eace-ffba-4f7d-8e93-3cc37510a4ea/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the use of Agent Procedures (APs) with incr
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Uses Global Variables to set incremental values to the Automation Tracking CF.
 ## Output
 
 N/A
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

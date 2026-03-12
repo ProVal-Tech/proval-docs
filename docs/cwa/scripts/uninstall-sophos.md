@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on running the Remove
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ No non-template variables in the script.
 
 - **There are a lot of leftover files on the target computer.**  
   The cleanest method of removal is to set the Arguments parameter to -force, remembering that you should be using -SkipZap if Zap is not installed with the NoSafeMode set to 0.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

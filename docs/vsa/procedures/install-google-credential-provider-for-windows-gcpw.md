@@ -8,6 +8,8 @@ description: 'This document outlines the automated procedure for installing and 
 tags: ['installation', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -60,3 +62,9 @@ Agent Procedure Log
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-log.txt
 %ProgramData%/_automation/AgentProcedure/InstallGCPW/Install-GCPW-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

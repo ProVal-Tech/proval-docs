@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the audit script tha
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This data view reflects the audit script, showing which versions of TLS and SSL 
 | Contact                     | Computer's assigned Contact (if any)             |
 | Contact Email               | Computer's assigned Contact Email (if any)       |
 | IE Advanced Security Status  | Lists which versions of TLS and SSL are enabled   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

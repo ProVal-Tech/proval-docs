@@ -8,6 +8,8 @@ description: 'This document outlines the setup and dependencies for the Automati
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This group is designed to schedule the task 'Automatic Reboot Pending Check' to 
    - `Auto_RebootPendingCheck` custom field equal to `False`.
    - The agent `Available` is equal to `True`.
    - The `OS` contains any of `Windows 10`, `Windows 11`, `Windows 2016 Server`, `Windows 2019 Server`, and `Windows 2022 Server`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

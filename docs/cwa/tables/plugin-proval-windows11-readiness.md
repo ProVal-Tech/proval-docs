@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of a custom table
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ The custom table stores the data gathered by the [Windows - Check Windows 11 Com
 | OSDisk      | TINYINT  | Indicates whether the OS drive size is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
 | TPM         | TINYINT  | Indicates whether the TPM version is compatible with the Windows 11 upgrade. 0 = failed, 1 = pass. |
 | LastRan     | DATETIME | Timestamp for the collected data.                                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

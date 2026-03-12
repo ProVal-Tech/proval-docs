@@ -8,6 +8,8 @@ description: 'This document outlines the storage of the TPM status of a machine,
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Stores the TPM status of the machine. Updated by the [Get TPM Status](/docs/678a
 
 ![Screenshot 1](../../../static/img/docs/55cb2f37-6e43-4ae5-bc96-a94b5f2d4144/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/55cb2f37-6e43-4ae5-bc96-a94b5f2d4144/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

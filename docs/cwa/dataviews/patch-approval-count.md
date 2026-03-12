@@ -8,6 +8,8 @@ description: 'This dataview looks at all patches and their approval/denial setti
 tags: ['patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-03-25
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This dataview looks at all patches (excluding drivers and third-party) and their
 | Remove                  | Total number of patches with Remove setting |
 | Deny                    | Total number of Denied patches  |
 | Active Approval Policies| Total number of active Approval policies.            |
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

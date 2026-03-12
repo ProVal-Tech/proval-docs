@@ -8,6 +8,8 @@ description: 'Initiates the Install CloudRadial Agent [Windows, Mac] task on mac
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -129,3 +131,9 @@ fi
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/9d94a40f-f4ed-4e6c-8616-6a881f5dd9e4/image6.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

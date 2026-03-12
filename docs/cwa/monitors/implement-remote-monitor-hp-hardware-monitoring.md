@@ -8,6 +8,8 @@ description: 'This document outlines the step-by-step process to set up HP Hardw
 tags: ['hp', 'setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Steps
@@ -120,3 +122,9 @@ Check the concerned groups to ensure the monitor set is created and configured w
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

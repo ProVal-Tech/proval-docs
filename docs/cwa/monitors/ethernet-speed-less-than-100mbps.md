@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect and create tic
 tags: ['networking', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ There are no dependencies required for this monitor to work.
 ## Suggested Alert Template
 
 Apply the `△ Custom - Ticket Creation Computer` alert template unless otherwise specified.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

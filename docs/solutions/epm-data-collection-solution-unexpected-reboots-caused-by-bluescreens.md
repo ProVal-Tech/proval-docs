@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on setting up an Unexpecte
 tags: ['bluescreen']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ The Unexpected Restart Monitor generates a lot of noise, as often the shutdown i
 ![Image](../../static/img/docs/64476262-ad0f-474e-aebb-70ec1e0ccd97/image_4.webp)
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

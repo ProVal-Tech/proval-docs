@@ -8,6 +8,8 @@ description: 'This document outlines a solution for establishing a centralized d
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -53,3 +55,9 @@ The solution's Extra Data Fields have been renamed. Update the [Windows - Admin 
 - `Call V_Extradata(1, 'Computers');`
 - `Call V_ExtradataRefresh(3, 'Clients');`
 - `Call V_ExtradataRefresh(1, 'Computers');`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

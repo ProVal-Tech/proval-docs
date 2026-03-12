@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Dataview that di
 tags: ['database', 'performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This Dataview displays the path and size of the OST and PST files for users on a
 | Operating System          | Operating System                                            |
 | Last Contact              | Last Contact with RMM                                      |
 | Last Logged In User       | Last Logged In User                                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

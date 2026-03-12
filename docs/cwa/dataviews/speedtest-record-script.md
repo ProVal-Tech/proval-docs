@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Speed Test Dataview, det
 tags: ['networking', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ The information in this Dataview is populated by a script titled "SpeedTest - Oo
 | Upload Speed     | Displays the upload speed                                         |
 | Execute Date     | Displays the date the script was executed against the machine     |
 | Share URL        | Displays the Share URL                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

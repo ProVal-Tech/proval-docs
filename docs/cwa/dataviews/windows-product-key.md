@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of how to gather t
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This dataview gathers the Windows Product Key from the [Role - Windows Product K
 | Operating System    | Operating system name of the agent                  |
 | LastContact         | The last contact of the agent with ConnectWise Automate |
 | Windows Product Key  | Windows product key information of the agent        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

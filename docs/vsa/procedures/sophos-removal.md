@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on removing the Sopho
 tags: ['cleanup', 'security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ Agnostic Content: [SWM - Software Uninstall - Agnostic - Remove-Sophos](/docs/3e
 - ./Remove-Sophos-Log.txt
 - ./Remove-Sophos-Error.txt
 - Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

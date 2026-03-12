@@ -8,6 +8,8 @@ description: 'The script automates the Microsoft Intune enrollment process for E
 tags: ['azure', 'registry']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary  
@@ -43,3 +45,9 @@ The script automates the Microsoft Intune enrollment process for Entra joined Wi
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-03-06
+
+- Initial version of the document

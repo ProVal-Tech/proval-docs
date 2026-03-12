@@ -57,3 +57,9 @@ PS C:/> Install-Microsoft365.ps1 -XMLPath "https://contoso.com/config.xml" -Rest
 ./Install-Microsoft365-log.txt
 ./Install-Microsoft365-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a function script that sets the 1-hour main
 tags: ['virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This is a function script that is called by the script "VM Host - Maint Mode Dep
 
 - This is a function script.
 - It runs only one command to set the maintenance mode on the machine.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

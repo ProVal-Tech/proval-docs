@@ -8,6 +8,8 @@ description: 'The time when the C2R Update Channel, C2R Auto Update, and C2R Off
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The time when the C2R Update Channel, C2R Auto Update, and C2R Office Version cu
 
 ## Sample Screenshot
 ![Image](../../../static/img/docs/02ef6c2c-bd37-43ab-8564-a808768f51c3/image1.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

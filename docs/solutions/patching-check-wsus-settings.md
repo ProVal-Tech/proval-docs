@@ -8,6 +8,8 @@ description: 'Determines if Windows Server Update Services (WSUS) settings are c
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-05
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ Determines if Windows Server Update Services (WSUS) settings are configured in t
 ## Implementation
 - Schedule the task [Task - Patching - Check for WSUS Settings](/docs/93b6b4ac-5923-47c5-a382-26015f6ac0fc) to the Windows system as requested by the partner.
 - It is recommended to run this one per month.
+
+## Changelog
+
+### 2025-08-05
+
+- Initial version of the document

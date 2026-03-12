@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that disp
 tags: ['backup', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview displays basic information related to OneDrive on endpoints.
 | PicturesEnabled    | True/False - Indicates if the user's "Pictures" folder is being backed up to OneDrive              |
 | PicturesPath      | If PicturesEnabled is True, this displays the full path to the user's pictures folder               |
 | TimeStamp         | The last time this data was gathered                                                                  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

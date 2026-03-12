@@ -8,6 +8,8 @@ description: 'This custom field ensures a standardized taskbar layout by includi
 tags: ['windows', 'setup', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-29
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field ensures a standardized taskbar layout by including only Outloo
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/6c8e4e35-3db7-4ff0-8d3c-ec8d0b04e82f/image1.webp)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

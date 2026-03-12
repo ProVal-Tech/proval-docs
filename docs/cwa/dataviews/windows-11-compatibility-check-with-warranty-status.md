@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to determine which machi
 tags: ['cpu', 'memory', 'secureboot', 'tpm', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This document shows which machines are eligible to upgrade to Windows 11 based o
 | Purchase Date              | Purchase date of the device.                                                                        |
 | Expiry Date                | Warranty expiry date of the device.                                                                 |
 | Warranty Status            | Warranty status of the device (Expired/Expiring Soon/In Warranty).                                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

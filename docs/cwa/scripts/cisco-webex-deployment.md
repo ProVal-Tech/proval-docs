@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['installation', 'software', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Tickets will be generated only if the `TicketCreationCategory` value is greater 
 This occurs when the script fails to download the installer:
 
 `Failed to download Cisco Webex installer. Please ensure that the following download URL is reachable from the computer: [https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi](https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi)`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script downloads and runs the Norton 360 Remover tool to unin
 tags: ['antivirus', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -46,3 +48,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Uninstall Norton Security](../../../static/attachments/uninstall-nortonsecurity.cpt)
+
+## Changelog
+
+### 2025-12-03
+
+- Initial version of the document

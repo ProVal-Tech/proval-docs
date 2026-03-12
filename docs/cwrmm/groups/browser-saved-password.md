@@ -8,6 +8,8 @@ description: 'This document outlines the creation of dynamic groups to deploy th
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -71,3 +73,9 @@ Criteria:
 Criteria:
 
 - `Browser Saved Pwd Audit Data` endpoint custom field should contain "Failed to remove"
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

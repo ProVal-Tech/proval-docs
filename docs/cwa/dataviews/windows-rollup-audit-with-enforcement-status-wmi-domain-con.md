@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the latest roll
 tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document collects the latest rollup installation details on domain controll
 | KB                | Latest rollup KB installed details                     |
 | LastContact       | Agent's last contact with the Automate                 |
 | Enforcement Status | Confirms if enforcement is enabled or not. This information is outdated as it has been fixed with the December 2020 rollup release. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

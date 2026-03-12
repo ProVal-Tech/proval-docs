@@ -8,6 +8,8 @@ description: 'This monitor disables the copilot and uninstall it from the detect
 tags: ['api', 'edge', 'browsers', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

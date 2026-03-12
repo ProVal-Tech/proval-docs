@@ -8,6 +8,8 @@ description: 'This document details an internal monitor designed to detect offli
 tags: ['networking', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -16,7 +18,8 @@ This internal monitor detects offline servers based on the last contact and last
 
 ## Dependencies
 
-[CWM - Automate - Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462)
+- [Script - Agent - Remote Repair - RMM +](/docs/13151439-b80d-4746-b804-1d55a6206462)
+- [Solution - ScreenConnect RMM+ - Offline Server AutoFix](/docs/c53aa0aa-4c52-4cd7-9971-f99662b4cbec)
 
 ## Properties
 
@@ -27,3 +30,9 @@ This internal monitor detects offline servers based on the last contact and last
 ## Target
 
 Windows Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

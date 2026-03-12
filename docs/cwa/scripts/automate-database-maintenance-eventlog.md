@@ -8,6 +8,8 @@ description: 'This document outlines the Automate Database Maintenance Cleanup S
 tags: ['cleanup', 'database', 'eventlogs']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This script will add the following section to the log variable:
 ![Output](../../../static/img/docs/a961622e-18fd-4e0d-9f43-8c1b9f6beea3/image_1.webp)
 
 or results if not skipped.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

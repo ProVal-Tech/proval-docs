@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that allows
 tags: ['networking', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script joins a machine to a domain while it is not connected to the same ne
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

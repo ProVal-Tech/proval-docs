@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to enable the installa
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ Enable Windows 11 installation for compatible Windows 10 computers.
 ## Completed Policy Group
 
 ![](../../../static/img/docs/27f8240b-603a-4af2-b9d9-480a560f8747/image_13.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

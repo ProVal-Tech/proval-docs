@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the workaround 
 tags: ['registry', 'security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This dataview tracks the progress of the [Workaround - Microsoft Support Diagnos
 | lastcontact                  | Last contact time                                                                                                                                                                                                                                    |
 | MS-MSDT Registry Status      | Value of the script state, indicating the MS-MSDT Registry Status.                                                                                                                                                                                |
 | MS-MSDT Registry Key Role    | Indicates whether the role is active, inactive, or if it's never detected. Active: The registry key is currently present on the computer. Inactive: The registry key was once present on the computer, but the script has removed it. Not Detected: Either the registry key was never present on the computer or the computer is not accepting the role. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

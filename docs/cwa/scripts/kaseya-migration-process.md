@@ -8,6 +8,8 @@ description: 'This document outlines a script used for migrating an Automate age
 tags: ['kaseya']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The script will attempt to download the agent installer from the ProVal reposito
 ## Output
 
 The script logs the output status (fail/success) in Automate.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

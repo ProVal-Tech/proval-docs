@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to clear duplicate 
 tags: ['cleanup', 'database', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ HAVING NumberofValues > 1;
 **Step 2:** Exit if the total number of results from the above step is zero.  
 
 **Step 3:** Run a loop to delete all the duplicate entries for each script state per computer per script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
