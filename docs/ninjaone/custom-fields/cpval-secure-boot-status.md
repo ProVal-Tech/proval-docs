@@ -25,7 +25,7 @@ This custom field shows whether Secure Boot is enabled or not on the device.
 ## Dependencies
 
 [Automation - SecureBoot Compliance - Audit](/docs/33446436-a337-411d-99ae-299046ba30d9)
-[Solution - Secure Boot Compliance - Audit](/docs/b037020a-1af5-4ecb-bb6b-62d59c123937)
+[Solution - Secure Boot Compliance Audit](/docs/b037020a-1af5-4ecb-bb6b-62d59c123937)
 
 ## Custom Field Creation
 
