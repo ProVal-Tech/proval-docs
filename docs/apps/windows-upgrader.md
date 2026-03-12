@@ -9,7 +9,7 @@ tags: ['windows', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-05
+  date: 2026-03-12
 ---
 
 ## Description
@@ -31,12 +31,6 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 
 ```shell
 ./windows-upgrader.exe
-```
-
-> *Install a specific version from the internal repository (Options: 24H2, 25H2)*
-
-```shell
-./windows-upgrader.exe --version 25H2
 ```
 
 > *Download and install Windows 11 from a specified multipart URL, ignoring compatibility*
@@ -73,8 +67,7 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 
 | Usage | Description |
 | :--- | :--- |
-| `--version <VER>` | Installs a specific version from the internal repository. Options: `24H2` or `25H2`. If neither version nor URI is provided, defaults to `24H2`. **Mutually exclusive with `--uri`.** |
-| `--uri <URI>` | The URI to download/access the Windows 11 payload from. Supports HTTP/HTTPS URLs, local file paths, and UNC network paths. Accepts both `.zip` and `.iso` formats. **Mutually exclusive with `--version`.** |
+| `--uri <URI>` | The URI to download/access the Windows 11 payload from. Supports HTTP/HTTPS URLs, local file paths, and UNC network paths. Accepts both `.zip` and `.iso` formats. |
 | `--multipart` | Use this switch if the URI points to a multipart archive. i.e.: `Windows11.zip` → `Windows11.zip.001`, `Windows11.zip.002`, ... (Automatically enabled when using `--version`). |
 | `--noreboot` | Do not reboot if upgrade is successful. |
 | `--ignorecompat` | Ignore Windows 11 compatibility requirements. |
@@ -95,6 +88,10 @@ The application supports multiple source types including HTTP/HTTPS URLs, local 
 - The application validates the Windows version and checks if the system is already running the latest build before proceeding
 
 ## Changelog
+
+### 2026-03-12
+
+- Removed the `--Version` parameter from the document due to reliability issues with the `25H2` installation method.
 
 ### 2025-05-06
 
