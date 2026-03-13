@@ -1,10 +1,10 @@
 ---
 id: '5d2830db-272e-4f60-8b18-54bf53a7dbed'
 slug: /5d2830db-272e-4f60-8b18-54bf53a7dbed
-title: 'Install Banyan App'
-title_meta: 'Install Banyan App'
-keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app']
-description: 'Detects the machines where Banyan app installation is enabled but the application is not installed.'
+title: 'Install Banyan App [SonicWall Cloud Secure Edge]'
+title_meta: 'Install Banyan App [SonicWall Cloud Secure Edge]'
+keywords: ['banyan', 'banyan-app', 'sonicwall-cse', 'install-banyan-app', 'sonicwall-cloud-security-edge-app']
+description: 'Detects the machines where SonicWall Cloud Security Edge App installation is enabled but the application is not installed.'
 tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Detects the machines where Banyan app installation is enabled but the application is not installed.
+Detects the machines where **SonicWall Cloud Security Edge App** installation is enabled but the application is not installed.
 
 ## Dependencies
 
@@ -30,6 +30,11 @@ Detects the machines where Banyan app installation is enabled but the applicatio
 - `△ Custom - Execute Script - Install Banyan App`
 
 ## Changelog
+
+### 2026-03-09
+
+- **Rebranding Update:** Renamed the monitor set to **"Install Banyan App [SonicWall Cloud Secure Edge]"** to align with the recent product rebranding.
+- **Logic Enhancement:** Updated the monitor's internal logic to identify machines missing the **SonicWall Cloud Security Edge App** instead of the Banyan App.
 
 ### 2025-10-10
 
