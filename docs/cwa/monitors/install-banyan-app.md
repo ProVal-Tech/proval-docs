@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'vpn']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-10
+  date: 2026-03-09
 ---
 
 ## Summary
