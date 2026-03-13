@@ -9,7 +9,7 @@ tags: ['windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-07
+  date: 2026-03-13
 ---
 
 ## Summary
@@ -56,6 +56,10 @@ The alert template executes the [CWM - Automate - Script - Out of Date Cumulativ
 **A.** This monitor will ignore agents whose last contact date is older than 7 days from monitoring. It will also exclude agents where the [Script - Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) has not run within the scheduled days period, which should match the `p.scriptruntime` set in the monitor.
 
 ## Changelog
+
+### 2026-03-13
+
+- Optimized the SQL query to reduce the monitor set's execution time.
 
 ### 2025-10-22
 
