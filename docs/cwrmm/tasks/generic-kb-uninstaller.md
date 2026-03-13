@@ -6,10 +6,10 @@ title_meta: 'Generic KB Uninstaller'
 keywords: ['uninstall', 'windows', 'update', 'kbid', 'reboot']
 description: 'This task uninstalls a specified Windows update from a machine. It requires the user to provide the KBID (Knowledge Base ID) of the update through a user parameter. Additionally, it also includes an optional setting that allows a system restart if the uninstallation process requires it.'
 tags: ['reboot', 'software', 'uninstallation', 'update', 'windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-03-13
 ---
 
 ## Summary
@@ -25,7 +25,7 @@ This task uninstalls a specified Windows update from a machine. It requires the 
 
 | Name | Example | Required | Default | Type | Description |
 | ---- | ------- |  -------- | ------- | ---- | ----------- |
-| kbID | 545664 | True | - | String | KBID (Knowledge Base Identifier) of the Windows update to uninstall. |
+| KBID | 545664 | True | - | String | KBID (Knowledge Base Identifier) of the Windows update to uninstall. |
 | Reboot | Yes/No | False | False | String | Select `Yes` to facilitate a system reboot when required. `No` to suppress the reboot. |
 
 ## Task Creation
@@ -49,9 +49,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Generic KB Uninstaller`  
-**Description:** `This task uninstalls a specified Windows update from a machine. It requires the user to provide the KBID (Knowledge Base ID) of the update through a user parameter. Additionally, it also includes an optional setting that allows a system restart if the uninstallation process requires it.`  
-**Category:** `Patching`
+- **Name:** `Generic KB Uninstaller`  
+- **Description:** `This task uninstalls a specified Windows update from a machine. It requires the user to provide the KBID (Knowledge Base ID) of the update through a user parameter. Additionally, it also includes an optional setting that allows a system restart if the uninstallation process requires it.`  
+- **Category:** `Patching`
 
 ![Task Creation Step](../../../static/img/docs/971fcd79-6316-43d1-adf3-05e9b2b87539/image1.webp)
 
@@ -61,13 +61,13 @@ Locate the `Add Parameter` button on the right-hand side of the screen and click
 ![AddParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addparameter.webp)
 
 
-### kbID:
+### KBID:
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
 ![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 
-- Set `kbID` in the `Parameter Name` field.
+- Set `KBID` in the `Parameter Name` field.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Enable the `Required Field` button.
 - Click the `Save` button.
@@ -193,4 +193,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-- Initial Version
+### 2026-03-13
+
+- Initial version of the document
