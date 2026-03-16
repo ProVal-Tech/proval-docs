@@ -202,10 +202,10 @@ In the script log message, simply type `%output%` and click the `Save` button.
 
 Click on `Add Logic` > select `If/Then`
 
-#### Row 3a Condition: Output Contains
+#### Row 3a Condition: Output Does Not Contains
 
 - **Condition:** `Output`  
-- **Operator:** `Contains`  
+- **Operator:** `Does Not Contain`  
 - **Input Values:** `Error`
 
 ![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image3.webp)
