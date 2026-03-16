@@ -6,7 +6,7 @@ title_meta: 'User Profile - Get Information'
 keywords: ['user', 'profiles', 'data', 'gather', 'information']
 description: 'This is RMM version of the Get User Profiles script. It gathers information about user profiles and stores the data in the custom field.'
 tags: ['report', 'security', 'windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-11
@@ -60,9 +60,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `User Profile - Get Information`  
-**Description:** `Gathers information about user profiles and stores the data in the custom field.`  
-**Category:** `Custom`
+- **Name:** `User Profile - Get Information`  
+- **Description:** `Gathers information about user profiles and stores the data in the custom field.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131/image1.webp)
 
@@ -230,9 +230,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Task Details
 
-**Name:** `User Profile - Get Information`  
-**Description:** `Gathers information about user profiles and stores the data in the custom field.`  
-**Category:** `Custom`
+- **Name:** `User Profile - Get Information`  
+- **Description:** `Gathers information about user profiles and stores the data in the custom field.`  
+- **Category:** `Custom`
 
 
 ### Schedule

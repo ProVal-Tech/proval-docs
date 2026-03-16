@@ -21,9 +21,9 @@ This Custom Field lists the user Profiles on windows machines.
 
 ## Details
 
-| Name                 | Level                | Type                | Default        | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| User Profiles | Endpoint | Text | blank | False | Yes | List of User Profiles on windows machines.|
+| Name                 | Level                | Type                | Default        |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| User Profiles | Endpoint | Text |  | Yes | List of User Profiles on windows machines.|
 
 ## Creation Process
 

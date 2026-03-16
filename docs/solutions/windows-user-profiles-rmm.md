@@ -20,9 +20,9 @@ Gathers and displays information about Windows user profiles. This solution is f
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Custom Field - User Profiles](/docs/e390856a-cc1c-4dde-93e4-f714f2d08258) | Custom Field | Lists the user Profiles on windows machines. |
-| [Task - User Profile - Get Information](/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131) | Task |  Gathers information about user profiles and stores the data in the custom field. |
-| [Group - Windows Machines (Non‑DC)](/docs/aa76fac8-dac7-44d9-897d-d0f6f15609dc) | Group |  This group contains online windows machines excluding Domain Controllers. |
+| [User Profiles](/docs/e390856a-cc1c-4dde-93e4-f714f2d08258) | Custom Field | Lists the user Profiles on Windows machines. |
+| [User Profile - Get Information](/docs/aeb4ccec-bf76-436d-8b0c-cd3ec3d39131) | Task |  Gathers information about user profiles and stores the data in the custom field. |
+| [Windows Machines (Non‑DC)](/docs/aa76fac8-dac7-44d9-897d-d0f6f15609dc) | Group |  This group contains online windows machines excluding Domain Controllers. |
 
 ## Implementation
 
