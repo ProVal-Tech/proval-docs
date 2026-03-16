@@ -9,7 +9,7 @@ tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-19
+  date: 2026-03-16
 ---
 
 ## Summary
@@ -55,7 +55,7 @@ Normal execution of the script
 
 ## Changelog
 
-### 2026-03-12
+### 2026-03-16
 
 - Signed the PowerShell scripts used by this script.
 
