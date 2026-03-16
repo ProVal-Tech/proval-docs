@@ -20,7 +20,7 @@ This custom field shows the status of the Windows Secure Boot Database (DB) cert
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cpvalWindowsDbCertificate | cPVAL Windows DB Certificate | `Device` | `Text` | False | -- | `Editable` | `Read/Write` | `Read/Write` | This custom field shows the status of the Windows Secure Boot Database (DB) certificate. | Indicates whether the DB certificate is valid and trusted. | Ensures system integrity and secure boot validation. | SecureBoot Audit |
+| cpvalWindowsDbCertificate | cPVAL Windows DB Certificate | `Device` | `Text` | False | -- | `Editable` | `Read/Write` | `Read/Write` | This custom field shows the status of the Windows Secure Boot Database (DB) certificate. | Indicates whether the DB certificate is valid and trusted. | Ensures system integrity and secure boot validation. | SecureBoot Status |
 
 ## Dependencies
 
@@ -37,4 +37,6 @@ This custom field shows the status of the Windows Secure Boot Database (DB) cert
 
 ## Changelog
 
-Initial Version
+### 2026-03-12
+
+- Initial version of the document

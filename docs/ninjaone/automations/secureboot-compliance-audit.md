@@ -18,7 +18,7 @@ This script evaluates whether a Windows device is prepared for the upcoming Micr
 
 Microsoft is replacing legacy Secure Boot certificates with updated 2023-era certificates (KEK and DB). Devices that do not contain these updated certificates may be considered "at risk" once older certificates expire.
 
-The script performs the following checks:
+The script performs the following checks and stores the status in the custom fields:
 
   1. `Secure Boot`
     - Verifies whether Secure Boot is enabled or disabled on the device.
@@ -40,11 +40,7 @@ The script performs the following checks:
 
 ## Dependencies
 
-[Custom Field - cPVAL Secure Boot Status](/docs/1d87004f-2ab3-4dd3-9f62-472172678982)
-[Custom Field - cPVAL Windows Telemetry Status](/docs/e000a063-1286-41e1-a6f5-54afab3939a0)
-[Custom Field - cPVAL Windows KEK Certificate](/docs/d131c730-502b-4f00-8461-ecef6766c161)
-[Custom Field - cPVAL Windows DB Certificate](/docs/1eaeb929-0df9-4482-be5c-f78c6f993487)
-[Solution - Secure Boot Compliance Audit](/docs/b037020a-1af5-4ecb-bb6b-62d59c123937)
+- [Solution - Secure Boot Compliance Audit](/docs/b037020a-1af5-4ecb-bb6b-62d59c123937)
 
 ## Automation Setup/Import
 
@@ -57,4 +53,6 @@ The script performs the following checks:
 
 ## Changelog
 
-- Initial Creation
+### 2026-03-12
+
+- Initial version of the document
