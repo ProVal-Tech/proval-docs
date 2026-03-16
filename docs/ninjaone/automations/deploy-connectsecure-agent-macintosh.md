@@ -4,7 +4,7 @@ slug: /19378af5-7ee0-43b4-8051-58b280467a6c
 title: 'Deploy ConnectSecure Agent [Macintosh]'
 title_meta: 'Deploy ConnectSecure Agent [Macintosh]'
 keywords: ['cybercns', 'connectsecure', 'vulnerability', 'management']
-description: 'Downloads and deploys the ConnectSecure Vulnerability Scan Agent utilizing company-level custom fields for automated authentication.'
+description: 'Downloads and deploys the ConnectSecure Vulnerability Scan Agent utilizing organization-level custom fields for automated authentication.'
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-Downloads and deploys the ConnectSecure Vulnerability Scan Agent utilizing company-level custom fields for automated authentication.
+Downloads and deploys the ConnectSecure Vulnerability Scan Agent utilizing organization-level custom fields for automated authentication.
 
 ## Sample Run
 
@@ -31,9 +31,9 @@ Downloads and deploys the ConnectSecure Vulnerability Scan Agent utilizing compa
 
 | Field Label                      | Required      | Accepted Values | Scope   | Description |
 |----------------------------------|------------------------------|-----------------|---------|-------------|
-| cPVAL Connect Secure Company ID  | True  | **Secure** | Company | The unique identifier mapped to the specific company within the ConnectSecure portal. |
-| cPVAL Connect Secure Tenant ID   | True  | **Secure** | Company | The top-level tenant identifier for the ConnectSecure environment. |
-| cPVAL Connect Secure User Secret | True  | **Secure** | Company | The authentication secret/token required to register the agent to the portal. |
+| cPVAL Connect Secure Company ID  | True  | **Secure** | `Organization`, `Location`, `Device` | The unique identifier mapped to the specific company within the ConnectSecure portal. |
+| cPVAL Connect Secure Tenant ID   | True  | **Secure** | `Organization`, `Location`, `Device` | The top-level tenant identifier for the ConnectSecure environment. |
+| cPVAL Connect Secure User Secret | True  | **Secure** | `Organization`, `Location`, `Device` | The authentication secret/token required to register the agent to the portal. |
 
 > For instructions on obtaining the required IDs for running the script, refer to the *[Instructions section of this article](https://cybercns.atlassian.net/wiki/spaces/CVB/pages/2103410891/How+To+Install+ConnectSecure+Agent#Instructions)*.
 

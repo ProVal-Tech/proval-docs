@@ -9,7 +9,7 @@ tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-17
+  date: 2026-03-16
 ---
 
 ## Purpose
@@ -49,7 +49,7 @@ This solution supports deployment scoping at any level of the NinjaRMM hierarchy
 | ------- | -------- |
 | [Connect Secure Deployment [Windows Workstation]](/docs/65db6f18-c505-4ced-ad51-2964ea516f6b) | Triggers the Windows deployment automation on workstations where deployment is enabled but the agent service is not yet detected |
 | [Connect Secure Deployment [Windows Server]](/docs/0ea70cbf-dc58-4d64-90f8-aff021079fc7) | Triggers the Windows deployment automation on servers where deployment is enabled but the agent service is not yet detected |
-| [Deploy ConnectSecure Agent [Macintosh]](/docs/b5472dc9-11af-4739-af78-7ef7478f6eab) | Triggers the macOS deployment automation on Mac computers where deployment is enabled but the agent service is not yet detected |
+| [Connect Secure Deployment [Macintosh]](/docs/b5472dc9-11af-4739-af78-7ef7478f6eab) | Triggers the macOS deployment automation on Mac computers where deployment is enabled but the agent service is not yet detected |
 
 ## Implementation
 
@@ -69,7 +69,7 @@ This solution supports deployment scoping at any level of the NinjaRMM hierarchy
 
 1. Create the **[Connect Secure Deployment [Windows Workstation]](/docs/65db6f18-c505-4ced-ad51-2964ea516f6b)** compound condition and assign it to the `Windows Workstation Policy [Default]`
 2. Create the **[Connect Secure Deployment [Windows Server]](/docs/0ea70cbf-dc58-4d64-90f8-aff021079fc7)** compound condition and assign it to the `Windows Server Policy [Default]`
-3. Create the **[Deploy ConnectSecure Agent [Macintosh]](/docs/b5472dc9-11af-4739-af78-7ef7478f6eab)** compound condition and assign it to the `Mac Policy [Default]`
+3. Create the **[Connect Secure Deployment [Macintosh]](/docs/b5472dc9-11af-4739-af78-7ef7478f6eab)** compound condition and assign it to the `Mac Policy [Default]`
 
 ### Step 4: Populate Authentication Fields
 

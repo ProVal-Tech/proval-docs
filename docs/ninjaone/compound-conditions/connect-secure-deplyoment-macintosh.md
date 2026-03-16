@@ -1,8 +1,8 @@
 ---
 id: 'b5472dc9-11af-4739-af78-7ef7478f6eab'
 slug: /b5472dc9-11af-4739-af78-7ef7478f6eab
-title: 'Deploy ConnectSecure Agent [Macintosh]'
-title_meta: 'Deploy ConnectSecure Agent [Macintosh]'
+title: 'Connect Secure Deployment [Macintosh]'
+title_meta: 'Connect Secure Deployment [Macintosh]'
 keywords: ['cybercns', 'connectsecure', 'vulnerability', 'management']
 description: 'Initiates the Deploy ConnectSecure Agent [Macintosh] automation on Mac computers where deployment is enabled but the agent is not yet installed.'
 tags: ['vulnerability', 'security']
@@ -30,7 +30,7 @@ Initiates the [Deploy ConnectSecure Agent [Macintosh]](/docs/19378af5-7ee0-43b4-
 
 ## Compound Condition Creation
 
-[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/connect-secure-deploment-macintosh.toml)
+[Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/connect-secure-deployment-macintosh.toml)
 
 ## Changelog
 
