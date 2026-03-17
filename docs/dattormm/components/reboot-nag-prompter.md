@@ -7,7 +7,9 @@ keywords: ['datto', 'prompter', 'nag', 'reboot', 'restart']
 description: 'Displays and manages reboot prompts for Windows systems after patching or based on system uptime and pending reboot status.'
 tags: ['patching', 'windows', 'reboot']
 draft: false
-unlisted: false
+unlisted: false  
+last_update:
+  date: 2026-03-17
 ---
 
 ## Overview  
@@ -82,4 +84,10 @@ StdErr
 
 
 ## Attachments  
-[Reboot Nag[Restart Alert][Prompter]](../../../static/attachments/Reboot%20Nag%20Restart%20Alert%20Prompter.cpt)
+[Reboot Nag[Restart Alert][Prompter]](../../../static/attachments/Reboot%20Nag%20Restart%20Alert%20Prompter.cpt)  
+
+## Changelog
+ 
+### 2026-03-17
+ 
+- Initial version of the document
