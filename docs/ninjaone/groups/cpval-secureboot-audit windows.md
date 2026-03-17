@@ -20,7 +20,7 @@ This group shows all windows devices with Secure Boot status.
 
 | Name | Description |
 | ---------- | ----------- |
-| cPVAL SecureBoot Audit [Windows] | This group shows all windows devices with Secure Boot status. |
+| cPVAL SecureBoot Audit `[Windows]` | This group shows all windows devices with Secure Boot status. |
 
 ## Dependencies
 
