@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Displays the enabled TPM version for the device. The data is collected and stored by the `Get TPM Version` script.
+Displays the enabled TPM version for the device. The data is collected and stored by the [Get TPM Version ](/docs/b30479c4-f701-4558-bc9f-91920f125e6d) script.
 
 ## Details
 

@@ -1,8 +1,8 @@
 ---
 id: '4e26329a-9b34-4330-975b-f8adc71d9449'
 slug: /4e26329a-9b34-4330-975b-f8adc71d9449
-title: 'TPM Version Audit'
-title_meta: 'TPM Version Audit'
+title: 'TPM Version Audit - Workstations'
+title_meta: 'TPM Version Audit - Workstations'
 keywords: ['tpm', 'audit', 'encryption', 'security']
 description: 'Executes `Get TPM Version` script on windows workstations'
 tags: ['database', 'encryption', 'security', 'windows']
@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Executes `Get TPM Version` script on windows workstations
+Executes [Get TPM Version ](/docs/b30479c4-f701-4558-bc9f-91920f125e6d) script on windows workstations
 
 ## Details
 

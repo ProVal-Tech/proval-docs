@@ -1,8 +1,8 @@
 ---
 id: 'c50a99fa-f648-4d2e-9223-62bee5485a9b'
 slug: /c50a99fa-f648-4d2e-9223-62bee5485a9b
-title: 'TPM Version Audit'
-title_meta: 'TPM Version Audit'
+title: 'TPM Version Audit - Servers'
+title_meta: 'TPM Version Audit - Servers'
 keywords: ['tpm', 'audit', 'encryption', 'security']
 description: 'Executes `Get TPM Version` script on windows Servers'
 tags: ['database', 'encryption', 'security', 'windows']
@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Executes `Get TPM Version` script on windows Servers.
+Executes [Get TPM Version ](/docs/b30479c4-f701-4558-bc9f-91920f125e6d) script on windows Servers.
 
 ## Details
 
@@ -28,7 +28,7 @@ Executes `Get TPM Version` script on windows Servers.
 
 ## Scheduled Automations Creation
 
-[Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/tpm-version-audit-Servers.toml)
+[Scheduled Automations Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scheduled-automations/tpm-version-audit-server.toml)
 
 
 ## Changelog
