@@ -8,6 +8,8 @@ description: 'This document provides a summary of endpoints with a valid Azure A
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -36,3 +38,9 @@ This section lists all filters applied to this view.
 ### Export Attachment
 
 Please attach the content XML VSA export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

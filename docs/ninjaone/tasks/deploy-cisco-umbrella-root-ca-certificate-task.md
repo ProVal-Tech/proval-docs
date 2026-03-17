@@ -8,6 +8,8 @@ description: 'Executes Cisco Umbrella Root CA certificate installation script da
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-24
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Executes Cisco Umbrella Root CA certificate installation script daily on machine
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/deploy-cisco-umbrella-root-ca-certificate.toml)
+
+## Changelog
+
+### 2025-11-24
+
+- Initial version of the document

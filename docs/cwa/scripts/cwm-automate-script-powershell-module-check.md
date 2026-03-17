@@ -8,6 +8,8 @@ description: 'This document outlines a function script in ConnectWise Automate d
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - `failstatus` will be false if this script fails.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

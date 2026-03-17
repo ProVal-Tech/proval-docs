@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that checks for the online status
 tags: ['webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This monitor checks the online status of agents where the client EDF "Enable Web
 ## Target
 
 - Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

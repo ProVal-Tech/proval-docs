@@ -8,6 +8,8 @@ description: 'This document provides a method for detecting Hybrid Active Direct
 tags: ['active-directory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role detects Hybrid AD Joined Machines.
 | Detection String                                                                                                                                                                              | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell.exe -nologo -noprofile -command \"$ErrorActionPreference='SilentlyContinue';$DSRegStatus = dsregcmd.exe /status;@('False','True')[($DSRegStatus -like '*AzureAdJoined : YES*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : YES*')]\"}%` | Equals     | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

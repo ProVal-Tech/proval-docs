@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive audit summary of newly adde
 tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This document provides an audit of last month's new computers added to the clien
 | Newly Added Domain User         | List of domain users added in the last month                                 |
 | Newly Added Account Count       | Count of domain users added in the last month                                |
 | Domain Account Creation Date     | Creation dates of domain accounts added in the last month                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

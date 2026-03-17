@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the current and ProV
 tags: ['database', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ Displays the current and ProVal recommended INI settings for CWA.
 | thread_cache_size                 | 38                              | 100                            |
 | tmp_table_size                    | 100663296                       | 100663296                      |
 | wait_timeout                      | 28800                           | 900                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

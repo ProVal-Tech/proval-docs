@@ -8,6 +8,8 @@ description: 'This document outlines the update process for internal monitors in
 tags: ['api', 'connectwise', 'database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Internal Monitor Update Process
@@ -102,3 +104,9 @@ unlisted: false
    ![Image](../../../static/img/docs/b6eac8f7-222b-4c72-8bed-0b81c138074a/image_8.webp)
 
    **IMPORTANT**: If it detects more than 10 results, and it is **targeting to create a ticket or send an email**, please connect with the account manager before enabling it.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

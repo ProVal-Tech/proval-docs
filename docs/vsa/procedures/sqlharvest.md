@@ -8,8 +8,16 @@ description: 'This document provides a comprehensive guide on how to detect and 
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
 
 Detect and Get Information About Installed SQL (Reg key)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

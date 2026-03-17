@@ -8,6 +8,8 @@ description: 'This solution manages network protocols on Windows machines, inclu
 tags: ['windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This solution manages network protocols on Windows machines, including enabling,
      - ProVal - Production - Manage Network Adapters
        - `△ Custom - Execute Script - Manage-NetworkAdapterProtocols` 
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

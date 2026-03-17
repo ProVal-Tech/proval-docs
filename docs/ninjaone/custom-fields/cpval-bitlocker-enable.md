@@ -8,6 +8,8 @@ description: 'Indicates whether BitLocker initialization needs to run on this de
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This custom field is used to trigger the automation for BitLocker initialization
 ## Sample Screenshot
 
 ![cPVAL BitLocker Enable](../../../static/img/docs/c959b82c-fc55-478b-87f1-b9d06cf5a29b/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

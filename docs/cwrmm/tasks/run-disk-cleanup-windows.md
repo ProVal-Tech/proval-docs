@@ -8,6 +8,8 @@ description: 'Runs the Cleanmgr included in Windows. It will set all optional Cl
 tags: ['cleanup','disk-cleanup','disk',]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-11
 ---
 
 ## Summary
@@ -110,3 +112,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-07-10
+
+- Initial version of the document

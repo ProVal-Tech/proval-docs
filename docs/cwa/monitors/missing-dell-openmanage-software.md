@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to check for the absence
 tags: ['dell', 'software', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Managed Servers
 - **Subject:** `SW - Missing Dell OpenManage on %Computername%(%computerid%)`
   
 - **Summary:** To ensure proper monitoring of critical hardware components on this server, it is essential to install Dell OpenManage System Management Software. This software will enable the generation of accurate event log entries in the event of hardware failures. Please proceed with the installation as soon as possible.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

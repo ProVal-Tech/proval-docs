@@ -8,6 +8,8 @@ description: 'Select the required platform to enable Duo to auto-deploy.'
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -111,3 +113,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/image5_1.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to collect and store info
 tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This script collects information about the printer drivers on the target system 
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

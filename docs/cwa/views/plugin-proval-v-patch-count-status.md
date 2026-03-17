@@ -8,6 +8,8 @@ description: 'This document provides a detailed view of the client-level breakdo
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ Sample data:
 | os            | varchar(11)| Operating System (Workstation | Server)                                                     |
 | category      | varchar(18)| Category Name (Full | 1-2 Missing | 3-4 Missing | 5+ Missing | Missing Patch Info)      |
 | Machine Count | int(5)     | Number of machines falling under the concerned category for the client.                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

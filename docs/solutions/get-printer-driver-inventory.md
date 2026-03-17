@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to pull instal
 tags: ['installation', 'networking', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This solution will pull installed print driver version information into Automate
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [CWM - Automate - Script - Update User Permissions for ProVal Custom Tables](/docs/7819fc75-aeae-457b-a451-59221396e900) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

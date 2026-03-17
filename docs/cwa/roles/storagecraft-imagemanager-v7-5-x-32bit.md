@@ -8,6 +8,8 @@ description: 'This document provides a role definition to help track down machin
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role definition helps you track down machines with StorageCraft ImageManage
 | Detection String                                                                                       | Comparator     | Result      | Applicable OS |
 |--------------------------------------------------------------------------------------------------------|----------------|-------------|----------------|
 | `%\\\{@powershell.exe \"(Get-Item 'C://Program Files//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion\"@%}` | Regex Match    | `^7/.5.`    | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

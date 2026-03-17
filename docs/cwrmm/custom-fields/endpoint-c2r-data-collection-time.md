@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the C2R Update C
 tags: ['update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document outlines the time when the C2R Update Channel, C2R Auto Update, an
 ![Screenshot 1](../../../static/img/docs/d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/d6a8abaa-dc34-4f49-8bf6-2bffe1ac40d0/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

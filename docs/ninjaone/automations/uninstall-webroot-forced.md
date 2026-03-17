@@ -8,6 +8,8 @@ description: 'Uninstall Webroot from a device using a forced uninstall method.'
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Overview
@@ -20,3 +22,9 @@ This automation uninstalls Webroot from a device using a forced uninstall method
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

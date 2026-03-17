@@ -8,6 +8,8 @@ description: 'This document provides a role definition that assists in identifyi
 tags: ['office365', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role definition helps you track machines where Microsoft 365 updates are se
 | Detection String                                           | Comparator | Result                                                                                               | Applicable OS |
 |-----------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------|----------------|
 | \\\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Contains   | [http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6](http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6) | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

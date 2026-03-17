@@ -8,6 +8,8 @@ description: 'Automates installation, updating, and execution of Dell Command | 
 tags: ['application', 'installation', 'software', 'dell', 'bios']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Description
@@ -75,3 +77,9 @@ This example checks if Secure Boot is enabled and sets it if necessary.
 ## Task Configuration
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/initialize-dell-command-configure.toml)
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

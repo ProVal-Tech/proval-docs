@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor designed to detect discrep
 tags: ['performance', 'registry', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Windows machine
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to install the Connectwi
 tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -93,3 +95,9 @@ LastStatus    : 7
 
 Transcript stopped, output file is C:/WINDOWS/Temp/Automate_Deploy.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

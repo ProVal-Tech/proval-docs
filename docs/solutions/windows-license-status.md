@@ -8,6 +8,8 @@ description: 'This document outlines a solution for monitoring the Windows Licen
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -38,4 +40,10 @@ The purpose of this solution is to pull the Windows License Status from the comp
 
 **4.** If ticketing is desired for when a machine has an issue with its Windows license (the consultant should specify this):  
 - Apply the following alert template to the remote monitor:  
-  - `△ Custom - Ticket Creation Computer - Warning and Failed`  
+  - `△ Custom - Ticket Creation Computer - Warning and Failed`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

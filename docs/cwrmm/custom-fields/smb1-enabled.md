@@ -8,6 +8,8 @@ description: 'This document provides an overview of a custom field used in Conne
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This custom field is used to store and display the results of the task [CW RMM -
 ## Sample Value
 
 ![Sample Value](../../../static/img/docs/67da04f5-4170-402a-93b3-7e6236937263/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

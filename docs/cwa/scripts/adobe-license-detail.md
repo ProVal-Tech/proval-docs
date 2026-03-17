@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to collect the Adobe lice
 tags: ['adobe', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This script can run on any Windows agent. It first checks whether the agent has 
 - Script log
 - EDF
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

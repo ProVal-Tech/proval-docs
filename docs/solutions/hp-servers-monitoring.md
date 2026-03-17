@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and implementation of a solutio
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -61,3 +63,9 @@ The purpose of this solution is to monitor the hardware alerts generated on HP s
       DELETE FROM groupagents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring';
       DELETE FROM agents WHERE `Name` = 'ProVal - Production - HP Hardware Monitoring' AND computerid > 0;
       ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

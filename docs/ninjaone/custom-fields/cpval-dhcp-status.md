@@ -8,6 +8,8 @@ description: 'Displays whether DHCP is enabled or disabled on the active network
 tags: ['windows','auditing','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-26
 ---
 
 ## Summary
@@ -31,4 +33,10 @@ Displays whether DHCP is enabled or disabled on the active network adapter. Indi
 
 ## Sample Screenshot
 
-![cpval DHCP Server](../../../static/img/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392/dhcp.webp)  
+![cpval DHCP Server](../../../static/img/docs/ce67cff7-8ff2-42a6-8b05-c9dc22bd3392/dhcp.webp)
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

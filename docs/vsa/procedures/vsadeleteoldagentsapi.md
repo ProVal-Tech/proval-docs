@@ -8,6 +8,8 @@ description: 'This document provides a method to purge Kaseya agents that are ol
 tags: ['api', 'kaseya', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
@@ -20,4 +22,10 @@ Purge All Kaseya Agents Over X Days via API
 - **pass**: API authstring  
 - **url**: URL of VSA  
 - **days**: Days old to delete  
-- **exception**: Exceptions to rule  
+- **exception**: Exceptions to rule
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

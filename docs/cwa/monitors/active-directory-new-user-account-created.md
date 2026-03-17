@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that detects new domain user acco
 tags: ['active-directory', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This monitor looks for new domain user accounts that have a creation date within
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

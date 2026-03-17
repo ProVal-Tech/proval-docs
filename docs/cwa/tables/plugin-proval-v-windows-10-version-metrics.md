@@ -8,6 +8,8 @@ description: 'This document provides data used for auditing Windows 10 versions,
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ This document provides data used for auditing Windows 10 versions. It displays i
 | Online Machines W/ Patch Policy     | BIGINT   | The number of online Windows 10 machines with the specified version that have a patching policy. |
 | % Total Online W/Patch Policy       | DECIMAL  | The percent of online Windows 10 machines with the specified version that have a patching policy. |
 | Client_Name                        | VARCHAR  | The name of the audited client.                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

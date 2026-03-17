@@ -8,6 +8,8 @@ description: 'This document provides a role definition for tracking machines tha
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role definition helps you track machines with UEFI BIOS type.
 | Detection String                       | Comparator    | Result | Applicable OS |
 |----------------------------------------|---------------|--------|----------------|
 | \{%@bcdedit | find /i "path"@%}       | Regex Match   | .efi   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

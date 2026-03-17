@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of storing WiFi p
 tags: ['database', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This document stores information about gathered WiFi profiles from [WiFi Profile
 | clientid | INT     | The ClientID associated with the WiFi profile.   |
 | ssid     | VARCHAR | The SSID of the WiFi profile.                    |
 | xml      | BLOB    | The configuration information of the WiFi profile. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

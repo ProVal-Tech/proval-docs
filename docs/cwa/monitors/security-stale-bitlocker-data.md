@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect Windows computers where 
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Global
 *Available for import within the ProSync Plugin.*
 
 Note: Ensure the presence of the [SEC - Encryption - Custom Table - plugin_proval_bitlocker_audit](/docs/bb3eaac8-80f6-43b9-90f1-75886c06bf14) table and the [SEC - Encryption - Script - Bitlocker - Audit](/docs/d7d933e3-9668-4de9-9f44-7452198ab85a) script in the environment before creating the monitor set and importing the alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

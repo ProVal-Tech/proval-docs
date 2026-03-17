@@ -8,6 +8,8 @@ description: 'This document provides a summary of the Power Plan Audit Data View
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ The data view displays the power plan settings gathered by the [Power Plan - Aud
 | On Direct Power Setting (AC) | Value for the Power Setting on the machine when directly connected to electricity. |
 | On Battery Power Setting (DC) | Value for the Power Setting on the machine when running on Battery/UPS power. |
 | Script Run Time           | Data Collection Time                                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to set a homepage i
 tags: ['application', 'firefox', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -175,4 +177,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log  
-![Output Log](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_25.webp)  
+![Output Log](../../../static/img/docs/708255d7-3abc-4e10-b9f5-3f943f435695/image_25.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and dependencies of storing the
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ Stores the output of the `query session` command returned by the [CWM - Automate
 | Type          | varchar(64)  | Type of the session                         |
 | Device        | varchar(64)  | Device of the session                       |
 | ScriptRunTime | DateTime     | Data collection time                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

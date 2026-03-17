@@ -8,6 +8,8 @@ description: 'This script deploys ConnectWise Asio Platform agents to mac endpoi
 tags:  ['installation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-25
 ---
 
 ## Overview
@@ -62,3 +64,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [CW RMM Agent Deployment [MAC]](../../../static/attachments/cw-rmm-agent-deployment-mac.cpt)
+
+## Changelog
+
+### 2025-09-22
+
+- Initial version of the document

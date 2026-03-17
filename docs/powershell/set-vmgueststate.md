@@ -8,6 +8,8 @@ description: 'Documentation for the Set-VMGuestState command to start or stop al
 tags: ['hyper-v', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -53,3 +55,9 @@ Location of output for log, result, and error files.
 .\Set-VMGuestState-log.txt
 .\Set-VMGuestState-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

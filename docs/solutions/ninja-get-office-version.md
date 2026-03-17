@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to check the MS Office Version ins
 tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ The purpose of this solution is to check the MS Office Version installed on the 
 - Create the [Get Office Version](/docs/9224179e-e14d-4fe2-95a3-a2304e31e108) using the implementation instruction provided in the document.
 - Create the [cPVAL Office Version](/docs/4216d707-95cc-414c-8fa5-73fa9606fa97)   using the implementation instruction provided in the document.
 - Create the [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638) using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2025-12-12
+
+- Initial version of the document

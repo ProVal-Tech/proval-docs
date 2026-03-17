@@ -8,6 +8,8 @@ description: 'This document outlines a script that generates client tickets for 
 tags: ['database', 'report', 'ticketing', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ Document the various variables in the script. Delete any section that is not rel
 ![Image](../../../static/img/docs/48e22d95-37d4-453d-a7a4-d816bd9950f9/image_2.webp)
 
 ![Image](../../../static/img/docs/48e22d95-37d4-453d-a7a4-d816bd9950f9/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

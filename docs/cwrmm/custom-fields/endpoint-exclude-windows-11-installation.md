@@ -8,6 +8,8 @@ description: 'This document provides details on how to mark a custom field to ex
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Mark this custom field to exclude the endpoint from the Windows 10 to 11 upgrade
 
 ![Screenshot 1](../../../static/img/docs/c3f83443-09cb-43ef-9c21-501d7f13314e/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/c3f83443-09cb-43ef-9c21-501d7f13314e/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

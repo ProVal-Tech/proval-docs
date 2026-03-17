@@ -8,6 +8,8 @@ description: 'Documentation for the Set-WindowsUpdateShown command to manually u
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -37,3 +39,9 @@ The location of output for log, result, and error files:
 .\Set-WindowsUpdateShown-data.txt
 .\Set-WindowsUpdateShown-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Mark this checkbox to enable BitLocker without forcefully validati
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -30,4 +32,10 @@ Mark this checkbox to enable BitLocker without performing the hardware validatio
 
 ## Sample Screenshot
 
-![cPVAL SkipHardwareTest](../../../static/img/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac/image1.webp)  
+![cPVAL SkipHardwareTest](../../../static/img/docs/e22d7853-1e3c-403c-8ba9-b9b99ba31bac/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script installs the Evo Credential Provider on a Windows mach
 tags: ['software', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-19
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ Run or debug the script on any online Windows machine with the `Set_Environment`
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-08-19
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to audit the NTLM v1.1 status and 
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ The purpose of this NinjaOne solution is to audit the NTLM v1.1 status and disab
     - [Check NTLMv1.1 Status Server ](/docs/f8a02c86-0bec-4a7c-97ab-91e418254024)
     - [Check NTLMv1.1 Status Workstations](/docs/0b4b6dcc-6bde-4766-bf7f-60d146b2fbf9)
 - Create the [Task - Disable NTLMv1.1 ](/docs/2fa3b191-0fe1-4bb9-95fe-517b40794441) using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2026-02-10
+
+- Initial version of the document

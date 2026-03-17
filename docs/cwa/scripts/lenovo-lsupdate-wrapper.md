@@ -8,6 +8,8 @@ description: 'This document provides a guide on using the PowerShell module LSUC
 tags: ['bios', 'firmware', 'lenovo', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ PowerShell Version 5+
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to verify if a machine is domai
 tags: ['dns', 'domain', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -70,3 +72,9 @@ This procedure checks to see if a machine is domain-joined and then verifies the
 ## Output
 
 Procedure log files and other outputs.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

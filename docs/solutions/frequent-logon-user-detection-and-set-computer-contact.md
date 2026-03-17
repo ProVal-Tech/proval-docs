@@ -8,6 +8,8 @@ description: 'This document outlines a solution for gathering frequent domain lo
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This solution is designed to gather the frequent domain logon user on Windows wo
      - [Monitor - Frequent User Detection](/docs/925ec2d0-a4f0-4bff-8482-f0f4137885ce)
        - Set up with the "**△ Custom - Execute Script - Frequent Logon Users**" Alert Template
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to check the Windows reg
 tags: ['registry', 'security', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest:UseLogonCredenti
 | Detection String                                     | Comparator | Result | Applicable OS |
 |-----------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/WDigest:UseLogonCredential-%}` | Equals     | 1      | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

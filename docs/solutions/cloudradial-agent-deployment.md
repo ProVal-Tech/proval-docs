@@ -8,6 +8,8 @@ description: 'The solution outlines the process of auto deploying CloudRadial ag
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Purpose
@@ -95,3 +97,9 @@ A: Supported OS selection is controlled by the `CloudRadial Installation` custom
 
 **Q: Does the installer support verification of successful installation?**  
 A: Yes, both the Windows and Mac logics verify the installation was successful before completing.
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

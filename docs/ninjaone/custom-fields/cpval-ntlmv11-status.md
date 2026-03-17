@@ -8,6 +8,8 @@ description: 'Displays if NTLMv1.1 is enabled or not on windows machines'
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This Custom Field displays if NTLMv1.1 is enabled or not on windows machines. Da
 ## Sample Screenshot
 
 ![Sample ScreenShot](../../../static/img/docs/61a0c2de-fefe-4726-b24e-957a2582117c/image1.webp)
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Join-Domain command to join a computer to a 
 tags: ['active-directory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -56,3 +58,9 @@ This command will use the provided `.txt` file to offline join the computer to t
 - Console: Domain join results, or nothing on error.
 - `.\\Join-Domain-log.txt`
 - `.\\Join-Domain-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

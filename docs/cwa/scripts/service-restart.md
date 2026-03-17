@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to restart one or more se
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Summary
@@ -83,3 +85,9 @@ From Group Monitor:
 - Script log (for detailed information on individual results)
 - Tickets (if enabled)
 - Emails (if enabled)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

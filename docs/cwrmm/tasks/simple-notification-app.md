@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a Simple Notification
 tags: ['email', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-10
 ---
 
 ## Summary
@@ -69,7 +71,7 @@ Using custom value for each parameter.
 
 | Name      | Example                                                                                                       | Required | Description                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------|
-| Message   | This is a test message                                                                                       | True     | The message is displayed to the end user. (Maximum 300 characters).<br/>Replace single quotes with two single quotes.<br/>**Incorrect:** `it's`<br/>**Correct:** `it''s`  |
+| Message   | This is a test message                                                                                       | True     | The message is displayed to the end user. (Maximum 888 characters).<br/>Replace single quotes with two single quotes.<br/>**Incorrect:** `it's`<br/>**Correct:** `it''s`  |
 | ImageURL  | [http://p.favim.com/orig/2018/08/24/cute-beautiful-couple-avatar-Favim.com-6224738.jpg](http://p.favim.com/orig/2018/08/24/cute-beautiful-couple-avatar-Favim.com-6224738.jpg) | False    | The URL for the image to display instead of the default. |
 | Email     | [someone@testing.com](mailto:someone@testing.com)                                                           | False    | The support e-mail address is displayed to the user. |
 | Phone     | 000-000-0000                                                                                                 | False    | The support phone number is displayed to the user.   |
@@ -135,7 +137,6 @@ Using custom value for each parameter.
 
 ```PowerShell
 $ProgressPreference = 'SilentlyContinue'
-$ConfirmPreference = 'None'
 
 $message = '@Message@'
 $image = '@ImageUrl@'
@@ -144,8 +145,8 @@ $phone = '@Phone@'
 
 if ([string]::IsNullOrEmpty($message) -or $message -match 'Message@$') {
     throw 'Error: Message is required to run the task.'
-} elseif ($message.Length -gt 300) {
-    throw 'Error: Message exceeds the maximum length of 300 characters.'
+} elseif ($message.Length -gt 888) {
+    throw 'Error: Message exceeds the maximum length of 888 characters.'
 }
 
 if ($image -match 'ImageUrl@$' -or !$image) {
@@ -273,3 +274,19 @@ try {
 
 - Script Log
 - Popup Message on User's desktop
+
+## Changelog
+
+### 2026-03-10
+
+- Implemented dynamic UI resizing for the notification prompt based on the length of the incoming message.
+- Added three responsive layout tiers: Small (less than equal 300 characters), Medium (between 301-500 characters), and Large (greater than 500 characters).
+- Established a maximum character limit of 888 characters for the Large layout; exceeding text will not be displayed.
+
+### 2025-08-29
+
+- Updated the task to use parameter instead of variable.
+
+### 2025-04-10
+
+- Initial version of the document

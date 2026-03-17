@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the dataview that di
 tags: ['database', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The dataview filters the patches that it displays based on the following require
 | Patch Approved on Date    | The date the patch was approved.                         |
 | Patch Last Attempt Date   | The date the patch installation was attempted last.      |
 | Status                    | The status of the computer at this time (Up To Date or Please Review) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

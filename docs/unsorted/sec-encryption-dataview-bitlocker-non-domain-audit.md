@@ -118,3 +118,9 @@ FROM (
         JOIN clients cl ON c.ClientID = cl.ClientID
 ) dt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

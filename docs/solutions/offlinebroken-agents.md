@@ -8,6 +8,8 @@ description: 'This document outlines a solution for detecting machines that have
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -77,3 +79,9 @@ The purpose of this solution is to detect machines that have been offline in Aut
        - Configure with the alert template: `△ CUSTOM - Autofix - Offline Agent Remediation (RMM+)`
        - Set the required ticket category (to alert on broken agents).
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

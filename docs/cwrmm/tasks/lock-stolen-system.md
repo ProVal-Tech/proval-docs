@@ -8,6 +8,8 @@ description: 'This is the RMM Implementation of Lock Stolen System Script'
 tags: ['connectwise']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-22
 ---
 
 ## Summary
@@ -332,3 +334,9 @@ Then click on Schedule and provide the parameter details as necessary for the sc
 
 - Script Logs  
 - Tickets
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

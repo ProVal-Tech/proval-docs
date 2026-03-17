@@ -8,6 +8,8 @@ description: 'Stores details of weak and duplicate password credentials identifi
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Stores details of weak and duplicate password credentials identified by the [Tes
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/35c7cb4a-f876-4186-8336-c95878622a04/image1.webp)
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

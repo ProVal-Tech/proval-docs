@@ -8,6 +8,8 @@ description: 'Detects specified bloatware (potentially unwanted applications) in
 tags: ['windows', 'setup', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ Detects specified bloatware (potentially unwanted applications) installed on the
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The script manages the removal of predefined bloatware packages or
 tags: ['uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -296,3 +298,9 @@ Click the `Save` button to save the Automation.
 
 ![Image20](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image20.webp)  
 ![Image21](../../../static/img/docs/a69cad76-0704-423b-88af-d23c49c9fc79/image21.webp)
+
+## Changelog
+
+### 2025-03-27
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the best practices for hardening ConnectWis
 tags: ['firewall', 'permissions', 'security', 'tls']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 *Most of these settings apply to the Automate Server as well: [Hardening Automate (on-prem) Servers](/docs/b356a7ff-5336-480e-830c-476bee44cb98)*
@@ -155,3 +157,9 @@ curl -H 'Host:' https://localhost/aspnet_client --http1.0 -I
 - Ensure you have an SSL Certificate setup. Noting that it does not use IIS or other web services. See [Setting up SSL for ScreenConnect](https://docs.connectwise.com/ConnectWise_Control_Documentation/On-premises/Advanced_setup/SSL_certificate_installation) documentation for how set this up
 
 *Original CW Documentation: [ConnectWise Control Comprehensive Security Best Practice Guide](https://university.connectwise.com/content/UserDocs/Business_Knowledge/ConnectWise_Control_Comprehensive_Security_Best_Practice_Guide.pdf)*
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

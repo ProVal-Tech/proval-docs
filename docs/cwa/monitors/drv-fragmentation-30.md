@@ -8,6 +8,8 @@ description: 'This document outlines a method to assess drive fragmentation leve
 tags: ['disk-encryption', 'performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This document uses the `v_defragmentation` table to calculate systems with drive
 ## Target
 
 Workstation Service Plans
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

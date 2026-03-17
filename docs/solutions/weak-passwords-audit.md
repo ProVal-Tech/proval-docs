@@ -8,6 +8,8 @@ description: 'This document outlines a solution for detecting users with potenti
 tags: ['active-directory', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -57,3 +59,9 @@ This solution gathers information on users with potentially compromised password
 
 4. Create and deploy the following task:
    - [CW RMM - Task - Weak Passwords - AD Test](/docs/1d54d079-e038-46a7-8a03-fe6bad481487)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

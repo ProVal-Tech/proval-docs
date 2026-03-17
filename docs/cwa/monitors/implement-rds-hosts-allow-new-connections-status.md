@@ -8,6 +8,8 @@ description: 'This remote monitor checks for the Allow New Connections status of
 tags: ['database', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ INSERT IGNORE INTO `groupagents` (`AgentID`, `GroupID`, `SearchID`, `Name`, `Che
     ![Image](../../../static/img/docs/18fd9d3f-f0cd-4040-b89f-ec059c405609/image_1.webp)
 
 - This needs to be changed to the "Default - Create Automate Ticket" or any other template that the client needs, such as emailing or ticket creation.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of storing inform
 tags: ['database', 'disk-encryption', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This document stores information about disks gathered from Diskpart.
 | PartitionStyle     | VARCHAR | The partition style of the audited disk (RAW, GPT, MBR, etc.) |
 | OperationalStatus   | VARCHAR | Indicates if the disk is offline, online, or disconnected. |
 | HealthStatus       | VARCHAR | Shows the reported health of the audited disk.        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

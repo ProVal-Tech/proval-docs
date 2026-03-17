@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview designed 
 tags: ['cloud', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ None
 | Computer ID    | The ID of the machine where software is detected     |
 | Software Name   | Name of the cloud drive software present on the machine |
 | Version        | Version of the cloud drive software                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

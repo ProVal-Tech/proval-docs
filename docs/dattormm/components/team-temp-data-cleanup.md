@@ -8,6 +8,8 @@ description: 'Cleans up temporary files and cache for the new Microsoft Teams cl
 tags: ['cleanup', 'datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-05
 ---
 
 ## Overview  
@@ -45,3 +47,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 [Teams Temp Data Cleanup](../../../static/attachments/Teams%20Temp%20Data%20Cleanup.cpt)
+
+## Changelog
+
+### 2025-09-05
+
+- Initial version of the document

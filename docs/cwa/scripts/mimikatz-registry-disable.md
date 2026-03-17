@@ -8,6 +8,8 @@ description: 'This document provides an overview of an autofix script designed t
 tags: ['registry', 'security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This autofix script needs to be set up with the monitor @ProVal - Production - S
 
 - Script log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

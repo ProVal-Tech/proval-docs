@@ -8,6 +8,8 @@ description: 'This document outlines a solution for auditing user login and logo
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ This solution performs the user login/logout activity audit. By default, the scr
 - Then, schedule the script on the Windows machines.
 
 **NOTE:** This script is not suitable for execution on the DC servers to avoid the noise of multiple user login/logout traces in the system event log as well as in the database table. The DC server is excluded from the script for execution.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

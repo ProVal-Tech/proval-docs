@@ -8,6 +8,8 @@ description: 'Group of machines where BitLocker is suspended.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ A machine matches the group if it meets ALL criteria in Block 1.
 ## Completed Group
 
 ![Image3](../../../static/img/docs/bafbe683-1e3f-42e1-a500-03910a9fab30/image3.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This monitor detects the Windows agent where the WSL command works
 tags: ['vulnerability', 'cve']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-25
 ---
 
 ## Summary
@@ -199,3 +201,9 @@ Reload the System Cache (Ctrl + R).
 ### Step 7
 
 Find your remote monitor in the group's remote monitors tab, and apply the `△ Custom - Execute Script - Uninstall WSL` alert template to the remote monitor.
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

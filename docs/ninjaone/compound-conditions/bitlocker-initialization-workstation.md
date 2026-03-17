@@ -8,6 +8,8 @@ description: 'This is a compound condition that triggers the BitLocker initializ
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This compound condition controls whether BitLocker initialization runs on Window
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/bitlocker-initialization-workstation.toml)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

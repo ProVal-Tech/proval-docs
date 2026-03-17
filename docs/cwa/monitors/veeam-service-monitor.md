@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a Veeam Service Monit
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Managed Computers with the `VeeamBackupSvc` service.
 ## Implementation
 
 [Import - Remote Monitor - Veeam Service Monitor](/docs/dce82a22-77ba-4133-90d9-78a0a1b88412)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

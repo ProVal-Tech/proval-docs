@@ -8,6 +8,8 @@ description: 'This document provides a guide on using the PowerShell module LSUC
 tags: ['bios', 'drivers', 'firmware', 'installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-22
 ---
 
 ## Summary
@@ -96,3 +98,9 @@ This script uses the PowerShell module `LSUClient` to install available BIOS upd
 - Script Logs
     - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-log.txt`
     - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Install-LenovoUpdates-error.txt`
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

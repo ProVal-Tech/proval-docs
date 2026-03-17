@@ -8,6 +8,8 @@ description: 'This document outlines the process for adding a requested Windows 
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Please reference [Set-PathVariable](/docs/f91caf21-f00c-4459-8b1f-634720a92f4b) 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

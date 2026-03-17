@@ -8,6 +8,8 @@ description: 'Workflow to obtain an API token from SmileBack.'
 tags: [ 'smileback' ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 # Summary
@@ -15,3 +17,9 @@ This workflow is designed to obtain an API token from SmileBack, a customer feed
 
 # Usage
 To use this workflow, follow the steps outlined in the [SmileBack - Getting Started](/docs/68b97a20-372e-4e59-bf1c-425a95bb971b) guide.
+
+## Changelog
+
+### 2025-11-05
+
+- Initial version of the document

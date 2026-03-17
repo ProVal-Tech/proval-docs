@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating a dynamic group in
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -99,3 +101,9 @@ This document houses the computers where the Windows 11 Installer (Beta) task ha
 
 ![Completed Group 1](../../../static/img/docs/9c422249-e949-4bcd-83ea-2c91b8365a96/image_23.webp)  
 ![Completed Group 2](../../../static/img/docs/9c422249-e949-4bcd-83ea-2c91b8365a96/image_24.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for auditing the Clic
 tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ The solution aims to audit the basic information of the installed Click-to-Run v
 
 3. Create and schedule this task as outlined in the document:
    - [Microsoft 365 - Click-to-Run - Get Details](/docs/f5099dd5-8e47-468f-a623-a245c342eb19)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

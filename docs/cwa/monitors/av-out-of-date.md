@@ -8,6 +8,8 @@ description: 'This document outlines the AV - Out of Date Monitor, a tool design
 tags: ['antivirus', 'connectwise', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ None
 ## Target
 
 Should be run against all machines with managed AntiVirus.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

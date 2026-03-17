@@ -8,6 +8,8 @@ description: 'This document provides an overview of a PowerShell script that ass
 tags: ['memory', 'secureboot', 'storage', 'tpm', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -58,3 +60,9 @@ The log indicates that while the system meets the necessary criteria for storage
 ```
 $env:ProgramData/_automation/AgentProcedure/Windows11Compatibility/HardwareReadiness-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

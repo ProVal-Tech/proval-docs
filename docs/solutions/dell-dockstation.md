@@ -8,6 +8,8 @@ description: 'This document outlines the steps to detect Dell Dockstation on Del
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ The purpose of this solution is to detect Dell Dockstation on Dell workstations.
      - [Internal Monitor - Execute Script - Get-DellDockStation](/docs/131057f0-24aa-418c-90f7-b0f316a5b9a8)
        - `△ Custom - Execute Script - Get-DellDockStation`
        - Right-click and select "Run Now" to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

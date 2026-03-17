@@ -8,6 +8,8 @@ description: 'This document outlines the steps to import a remote monitor that d
 tags: ['bluescreen', 'windows', 'alerting']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 #### 1 - Import alert template
@@ -127,3 +129,9 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = '
 #### 6 - Locate your remote monitor by opening the group(s) remote monitors tab. 
 
 Make sure the Alert Template and Limit to search is applied correctly.
+
+## Changelog
+
+### 2025-02-13
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution that detects online m
 tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This monitor will detect online machines where Internet Explorer is installed by
 ## Target
 
 The SQL query limits the results to computers where the "Internet Explorer Installed" role is present.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

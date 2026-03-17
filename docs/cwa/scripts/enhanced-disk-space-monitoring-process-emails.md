@@ -8,6 +8,8 @@ description: 'This document provides a client-specific version of the Enhanced D
 tags: ['disk', 'email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This is a client-specific copy of [Enhanced Disk Space Monitoring Process](/docs
 | Name                     | Example                                                                                         | Required   | Description                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _sysTicketDefaultEmail   | [support@provaltech.com](mailto:support@provaltech.com); [Support@provaltech.com](mailto:Support@provaltech.com); [Alerts@provaltech.com](mailto:Alerts@provaltech.com) | Partially  | Email address to send alerts on failures. Multiple email addresses can be stored by separating them with a semicolon. If the global variable `EmailAddress` is not set, then the script will fall back to this system property. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

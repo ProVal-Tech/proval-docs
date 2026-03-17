@@ -8,6 +8,8 @@ description: 'This document outlines the Disk Monitor Creation Script, which is 
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This script **must** be called by the Agent Monitor Creation script and the Remo
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring the disk health 
 tags: ['disk', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -55,3 +57,9 @@ The purpose of this document is to monitor the disk health of physical machines 
 - `CrystalDiskInfo does not support RAID disks or IDE (Parallel ATA) and Serial ATA disks connected to an external ATA controller.`
 
 Reference: [Crystal Disk Info FAQ](https://crystalmark.info/en/software/crystaldiskinfo/crystaldiskinfo-faq/)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

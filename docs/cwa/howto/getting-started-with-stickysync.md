@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to setting up StickySy
 tags: ['api', 'connectwise', 'database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Getting Started
@@ -67,3 +69,9 @@ unlisted: false
 | Column   | Type    | Example                  |
 |----------|---------|--------------------------|
 | APIKey   | VARCHAR | w1PqyjacT3jUBjQPQDdB4A== |
+
+## Changelog
+
+### 2025-04-09
+
+- Initial version of the document

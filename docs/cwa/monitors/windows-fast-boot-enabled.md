@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that detects machines with Window
 tags: ['windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ Using a role definition, this monitor detects machines where Windows Fast Boot i
 ## Target
 
 Workstations - should be run on non-servers.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that collects the idle time of use
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ The [IdleMon](https://contentrepo.net/repo/app/idlemon.exe) tool must be placed 
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

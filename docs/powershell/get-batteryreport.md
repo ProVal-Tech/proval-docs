@@ -8,6 +8,8 @@ description: 'Documentation for the Get-BatteryReport command to generate and re
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -106,3 +108,9 @@ Returns a system object containing all data from the generated battery report.
         StartFullChargeCapacity
         StartTimestamp
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

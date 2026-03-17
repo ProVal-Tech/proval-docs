@@ -8,6 +8,8 @@ description: 'This monitor set runs the "Install ImmyBot Agent" script on machin
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -125,3 +127,9 @@ if (!$serviceCheck -or !$softwareCheck) {
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/864e8d09-999f-4af5-87cc-1e0ad0222c62/image6.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

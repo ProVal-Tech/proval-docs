@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a monitor that detect
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,4 +25,10 @@ Automate must be gathering event logs into the database for this internal monito
 
 Primarily, this monitor targets servers, but it will work properly for workstations if this data is of value to the MSP.  
 **Servers** - Should be run on servers  
-**Windows Machines** - Should be run on all Windows machines  
+**Windows Machines** - Should be run on all Windows machines
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

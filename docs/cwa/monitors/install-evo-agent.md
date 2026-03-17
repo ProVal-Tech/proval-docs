@@ -8,6 +8,8 @@ description: 'Detects windows machines where Evo Agent deployment is enabled and
 tags: ['software', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-19
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Global
 | Install Evo Agent | Windows Servers and Workstations | Client | Evo Agent | DropDown | Windows Servers and Workstations, Windows Workstations, Windows Servers, Disabled | false | Select OS to enable Evo Agent auto installation. |
 | Exclude - Install Evo Agent | | Location | Exclusions | Checkbox | | false | Flag to exclude the location from auto-deployment. |
 | Exclude - Install Evo Agent | | Computer | Exclusions | Checkbox | | false | Flag to exclude the endpoint from auto-deployment. |
+
+## Changelog
+
+### 2025-08-19
+
+- Initial version of the document

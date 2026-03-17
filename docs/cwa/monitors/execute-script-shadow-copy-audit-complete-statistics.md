@@ -8,6 +8,8 @@ description: 'This document outlines a custom RAWSQL monitor designed to detect 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This Custom RAWSQL monitor detects machines where the [Script - Shadow Copy - Au
 ## Target
 
 Windows Group
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

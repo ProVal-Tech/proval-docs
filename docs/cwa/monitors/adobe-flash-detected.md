@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to detect the 
 tags: ['adobe', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This internal monitor will detect the agent where Adobe Flash is installed.
 ## Target
 
 Windows OS
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

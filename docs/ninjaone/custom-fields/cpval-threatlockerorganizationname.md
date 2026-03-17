@@ -8,6 +8,8 @@ description: 'Organization name to be used for ThreatLocker deployment. If deplo
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Organization name to be used for ThreatLocker deployment. If deploying to an exi
 ## Sample Screenshot
 
 ![Step1](../../../static/img/docs/573751d4-0648-4da9-8ec3-0ab96d4730de/orgname.webp)
+
+## Changelog
+
+### 2025-05-16
+
+- Initial version of the document

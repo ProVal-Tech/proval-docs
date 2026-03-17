@@ -8,6 +8,8 @@ description: 'This document provides information on the Duplicate Password Count
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This document holds the count of accounts with duplicate passwords.
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/98a07020-b4e1-4787-a829-9176de0a8b52/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

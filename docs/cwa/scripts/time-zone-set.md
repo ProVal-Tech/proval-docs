@@ -8,6 +8,8 @@ description: 'This document outlines a script that sets the time zone on a Windo
 tags: ['setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -187,4 +189,10 @@ If the time zone is not accepted, the script will exit with an error message.
 - UTC+13  
 - Tonga Standard Time  
 - Samoa Standard Time  
-- Line Islands Standard Time  
+- Line Islands Standard Time
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

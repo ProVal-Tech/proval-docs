@@ -8,6 +8,8 @@ description: 'This document outlines the steps to perform a Browser Saved Passwo
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -366,3 +368,9 @@ This screen will appear.
 
 - Script log
 - Custom field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

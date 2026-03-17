@@ -8,6 +8,8 @@ description: 'Sets how long (in seconds) the final reboot prompt stays visible o
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Sets how long (in seconds) the final reboot prompt stays visible on the end mach
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/02cc7b8d-28aa-46c6-936b-21786c56206e/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

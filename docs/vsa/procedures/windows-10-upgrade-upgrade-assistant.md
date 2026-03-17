@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to import the P
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Import the Procedure XML
@@ -16,3 +18,9 @@ unlisted: false
 
 1. Import the PS1 to `Managedfiles/Shared/ProValAutomation`
 2. Add Machine Configuration: **xPVAL Windows 10 Build Result**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

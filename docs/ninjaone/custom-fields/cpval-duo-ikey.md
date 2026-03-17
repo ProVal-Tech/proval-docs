@@ -8,6 +8,8 @@ description: 'This is a unique identifier for your integration with Duo’s serv
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/ca460823-862e-4c38-8a30-72474f2b1b5a/image3.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

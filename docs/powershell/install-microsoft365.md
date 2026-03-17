@@ -8,6 +8,8 @@ description: 'Documentation for the Install-Microsoft365 command to install Micr
 tags: ['installation', 'office365', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -50,3 +52,9 @@ Installs Microsoft 365 using the specified XML configuration from a URL and rest
 ## Output
 - .\\Install-Microsoft365-log.txt
 - .\\Install-Microsoft365-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

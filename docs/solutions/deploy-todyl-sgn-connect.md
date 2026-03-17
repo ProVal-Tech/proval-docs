@@ -8,6 +8,8 @@ description: 'The solution outlines the process of auto deploying Todyl SGN Conn
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Purpose
@@ -96,3 +98,9 @@ A: Yes, enable the "Force" runtime parameter when running the install task/scrip
 
 **Q: How does the script determine device type?**  
 A: The script automatically detects whether a device is a server, laptop, or desktop and uses the appropriate deployment key for installation.
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

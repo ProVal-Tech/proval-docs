@@ -8,6 +8,8 @@ description: 'This document outlines the process for updating FileZilla to the l
 tags: ['application', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 ## Purpose
@@ -85,3 +87,9 @@ Yes, the solution is designed to be automated using the internal monitor and ale
 ### What should I do if the update fails?  
 
 If the update fails, check the logs of the [Script - FileZilla - Install/Update](/docs/154e2b72-d73f-4693-a316-7a296e4793ec) for errors.
+
+## Changelog
+
+### 2025-04-04
+
+- Initial version of the document

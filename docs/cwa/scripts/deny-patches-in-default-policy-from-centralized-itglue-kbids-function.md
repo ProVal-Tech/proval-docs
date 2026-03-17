@@ -8,6 +8,8 @@ description: 'This document outlines a function script designed to deny specific
 tags: ['database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Step 2: Runs a loop to deny that KBID for all applicable operating systems.
 ## Output
 
 Denied patches can be checked from the default approval policy.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

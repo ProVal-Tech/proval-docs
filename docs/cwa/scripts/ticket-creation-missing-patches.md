@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed fo
 tags: ['report', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,4 +54,10 @@ The only dependency for this script is that the monitor triggering it must repor
 > - Security Update for Microsoft ASP.NET MVC 3 (KB2993937)  
 > - Microsoft .NET Framework 4.8 for Windows Server 2012 R2 for x64 (KB4486105)  
 > - 2022-05 Servicing Stack Update for Windows Server 2012 R2 for x64-based Systems (KB5014025)  
-> - 2022-05 Security and Quality Rollup for .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 for Windows Server 2012 R2 for x64 (KB5013872)  
+> - 2022-05 Security and Quality Rollup for .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8 for Windows Server 2012 R2 for x64 (KB5013872)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

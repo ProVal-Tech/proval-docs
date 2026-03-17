@@ -8,6 +8,8 @@ description: 'This document provides a streamlined script for resetting the KRBT
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ See [RSM - Active Directory - Agnostic - Reset-KrbtgtKeys](/docs/ae748a86-1683-4
 
 - Script log
 - Local file on the computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a role that detects whether a machine is a 
 tags: ['database', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role detects if the machine is a Nutanix VM and, if so, applies this role i
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | %@powershell.exe "Get-WmiObject -Query 'SELECT Manufacturer FROM Win32_ComputerSystem' | Select-Object -ExpandProperty Manufacturer@% | Equals     | True   | All OS's       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

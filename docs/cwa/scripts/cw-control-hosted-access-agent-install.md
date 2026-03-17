@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on using client level EDFs
 tags: ['connectwise', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ You can get this string by pressing the ![button](../../../static/img/docs/74015
 ## Output
 
 **Script Log**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

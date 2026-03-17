@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on setting up a monito
 tags: ['disk', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ The monitor set will generate an alert for computers in which the custom field [
 
 - [CW RMM - Custom Field - Crystal Disk Info_Disk Health](/docs/1e713ef3-1378-4601-a00a-c8a8ecd60c01)  
 - [CW RMM - Task - Get Crystal Disk Info (Disk Health)](/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a dataview that displays the Webroot hashed
 tags: ['webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This dataview shows the Webroot hashed keycode present on the machine, the statu
 | OS                  | Displays the operating system.                                        |
 | Encrypted Keycode   | Displays the currently present Webroot encrypted keycode.             |
 | KeyCode Status      | Displays the keycode status, indicating whether it matches the keycode setup under the Webroot plugin. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

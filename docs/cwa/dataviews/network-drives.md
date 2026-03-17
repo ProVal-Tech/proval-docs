@@ -8,6 +8,8 @@ description: 'This document provides detailed information about attached network
 tags: ['networking', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This document presents information about attached network drives for Automate ag
 | Shared_Path         | Shared Path of the attached network drive            |
 | Current_Drive_User  | Current user utilizing the network drive             |
 | Last_Contact        | Last contact for the computer with Automate.        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

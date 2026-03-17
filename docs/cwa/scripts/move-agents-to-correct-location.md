@@ -8,6 +8,8 @@ description: 'This document outlines the process and requirements for running th
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The monitor set will call the script, which will move the computer to the new lo
 ## Output
 
 Removal of agents from the monitor set's detection.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

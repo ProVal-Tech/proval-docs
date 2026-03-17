@@ -8,6 +8,8 @@ description: 'SentinelOne Installation token.'
 tags: ['antivirus', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This custom field at the organization level stores the Sentinel Site Key. The Si
   -> Create this custom field and migrate their key from the old to new if possible. Both the contents are using this custom field by default.
 
 [1]: /docs/4e0f294f-9ecf-42a2-9832-497d4305360e
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

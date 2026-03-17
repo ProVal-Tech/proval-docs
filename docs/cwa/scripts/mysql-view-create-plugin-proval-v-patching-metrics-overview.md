@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the process for impo
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This document outlines the process for importing the [plugin_proval_v_patching_m
 ## Output
 
 - View
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

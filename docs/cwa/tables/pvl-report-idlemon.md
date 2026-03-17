@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the IdleMon Re
 tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ Stores the data fetched by the [CWM - Automate - Script - IdleMon Report [Global
 | IsDomainAdmin       | varchar(5)   | Is Domain Admin? (True/False)                                   |
 | IsEnterpriseAdmin    | varchar(5)   | Is Enterprise Admin? (True/False)                               |
 | ScriptRunTime       | datetime      | Data collection time                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

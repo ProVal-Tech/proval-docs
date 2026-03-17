@@ -8,6 +8,8 @@ description: 'This document provides a detailed report on the status of Shadow C
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This report pulls data from the custom table "plugin_proval_shadowcopystats" and
 | Location               | Location Name                                            |
 | Computer               | Computer Name                                            |
 | Shadow Copy Enabled     | Enabled/Disabled status of Shadow Copy on the machine    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

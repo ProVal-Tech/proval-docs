@@ -8,6 +8,8 @@ description: 'This view is a specialized version of the general statistics view,
 tags: ['compliance', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Purpose
@@ -50,3 +52,9 @@ This view is a specialized version of the general statistics view, filtered stri
 | **120PlusDaysCount** | Integer | Count of workstations where the last CU is older than 120 days. |
 | **UnknownCompliantCount** | Integer | Count of supported workstations where the CU install date is missing or unknown. |
 | **CuCompliance** | Decimal | The final weighted "Freshness" score (0-100%) for workstations, calculated using the logic described in the report summary. |
+
+## Changelog
+
+### 2026-01-02
+
+- Initial version of the document

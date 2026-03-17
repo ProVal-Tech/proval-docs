@@ -8,6 +8,8 @@ description: 'This document outlines a role that checks if the primary build num
 tags: ['backup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role will determine if the primary build number for ShadowProtect SPX is ve
 | Detection String                                         | Comparator    | Result | Applicable OS |
 |---------------------------------------------------------|---------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/StorageCraft Technology Corporation/spx:InstalledVersion-%}` | Regex Match   | ^7/..  | Windows OS     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

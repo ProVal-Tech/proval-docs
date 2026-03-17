@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Get-PatchConfig sc
 tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Local file on computer
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: "This document provides a detailed overview of a script that remove
 tags: ['brave', 'browsers', 'chrome', 'edge', 'firefox', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Run with a parameter set to 1 to wipe out the Microsoft Edge Wallet passwords an
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

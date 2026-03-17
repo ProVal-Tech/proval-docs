@@ -8,6 +8,8 @@ description: 'This custom field stores the most recent results of the Soji autom
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-24
 ---
 
 ## Summary
@@ -99,3 +101,9 @@ Set the following details in the `Details` section and click the `Create` button
 ### Example
 
 ![Image](../../../static/img/docs/cpval-soji-result/image-8.png)
+
+## Changelog
+
+### 2025-06-19
+
+- Initial version of the document

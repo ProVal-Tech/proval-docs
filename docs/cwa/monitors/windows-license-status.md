@@ -8,6 +8,8 @@ description: 'This document outlines the implementation details for a remote mon
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -199,3 +201,9 @@ A: Ensure that the [CWM - Automate - Script - Ticket Creation - Computer](/docs/
 
 **Q: How to opt out of Warning alerts?**  
 A: Change the alert template on the group monitor to `△ Custom - Ticket Creation Computer`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

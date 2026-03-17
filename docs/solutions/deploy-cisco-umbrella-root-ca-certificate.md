@@ -8,6 +8,8 @@ description: 'This solution provides a mechanism to automatically deploy the Cis
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-01
 ---
 
 ## Purpose
@@ -109,3 +111,9 @@ To deploy the certificate to an organization:
 ### Q: Does the automation reinstall the certificate every time it runs?
 
 **A:** No. The automation first verifies if the certificate (matching the specific Thumbprint) is already installed and valid. If found, the script exits without making changes. This ensures that the [Install Cisco Umbrella Root CA Certificate [Windows]](/docs/7370c6a3-143b-4062-9c60-6c6b541ff835) and [Install Cisco Umbrella Root CA Certificate [Macintosh]](/docs/0d5c8a73-05ee-4564-acb7-beea45e27bbc) scripts only deploy the certificate when it is missing or invalid.
+
+## Changelog
+
+### 2025-11-24
+
+- Initial version of the document

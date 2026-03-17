@@ -8,6 +8,8 @@ description: 'This document details a remote monitor designed to detect the crea
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ The suggested target for the monitor is Service Plan(s) for Servers and Workstat
 **Examples:**  
 - **Windows Servers**: Should be run on all Windows-based servers.  
 - **Windows Workstations**: Should be run on all Windows workstations (Optional).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

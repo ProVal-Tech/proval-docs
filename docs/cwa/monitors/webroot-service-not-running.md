@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating alerts on targets 
 tags: ['connectwise', 'setup', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This section should list the ITGlue documents referenced in the Related Items si
 ## Target
 
 ConnectWise Automate Group: Webroot
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

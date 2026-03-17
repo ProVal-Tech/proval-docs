@@ -8,6 +8,8 @@ description: 'This document provides an audit overview of DISTINCT computers tha
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ An audit of the DISTINCT computers that failed to sign up.
 | Remote Address   | Remote/router address of the computer.                                           |
 | Latest Attempt  | The last time the installation attempt was made.                                  |
 | Error Message   | The last error message received from the attempted installation.                  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

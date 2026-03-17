@@ -39,3 +39,9 @@ This script scans the device to collect information about its current location. 
 - Script log
 - Dataview
 - Custom table plugin_proval_ipinfo
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

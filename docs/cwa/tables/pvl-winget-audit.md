@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure for storing audit
 tags: ['database', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ This document stores the audit data fetched by the [Winget App Audit](/docs/d5ea
 | Level                | varchar   | Installation level of the application (System/User).                                            |
 | AutoUpdateEnabled      | tinytext  | Is Auto Update enabled for the application? (0/1). Refer to the [Configure Winget Auto Update](/docs/1e0c72c6-b9aa-454a-8643-ac7c7e1e7d55) script's document for detailed instructions on enabling Auto Update. |
 | DataCollectionTime    | datetime  | Data collection time.                                                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

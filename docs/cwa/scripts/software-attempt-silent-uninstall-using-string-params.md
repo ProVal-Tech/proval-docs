@@ -8,6 +8,8 @@ description: 'This document describes a script that fetches the uninstallation s
 tags: ['database', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ When the script runs, it will prompt the user for the parameter `AppName`, which
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

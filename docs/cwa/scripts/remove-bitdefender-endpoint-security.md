@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of the agnostic Remove-B
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Please reference the agnostic content process for complete details.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

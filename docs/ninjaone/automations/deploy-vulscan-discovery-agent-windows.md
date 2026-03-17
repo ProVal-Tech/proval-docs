@@ -8,6 +8,8 @@ description: 'Installs and configures the VulScan Discovery Agent on a Windows m
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Overview
@@ -366,3 +368,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-04-18
+
+- Initial version of the document

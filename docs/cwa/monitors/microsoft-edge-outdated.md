@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to detect mach
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This internal monitor detects machines with outdated Microsoft Edge versions.
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

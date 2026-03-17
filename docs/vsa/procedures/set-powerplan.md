@@ -8,6 +8,8 @@ description: 'This document outlines the process for configuring power plan sett
 tags: ['performance', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Overview
@@ -135,3 +137,9 @@ PS C:/> ./Set-PowerPlanSettings.ps1 -Name 'CustomPlan' -CSVPath 'https://file.pr
 ```
 ## Attachments
 [PowerPlanSettingsTemplate.csv](<../../../static/attachments/itg/14956509/PowerPlanSettingsTemplate.csv>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

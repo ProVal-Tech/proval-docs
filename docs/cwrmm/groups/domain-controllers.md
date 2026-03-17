@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on setting up a dynamic gr
 tags: ['active-directory', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,4 +27,10 @@ This document outlines the steps to set up a dynamic group for Domain Controller
 - **Group Name:** Domain Controllers  
 - **Description:** Contains Domain Controllers  
 - **Criteria Selection:** Select `Service Display Name` as the criteria, `Equal` as the comparator, and type `Active Directory Domain Services` in the condition box.  
-- **Creation:** Click the `Save` button at the top left to create the group.  
+- **Creation:** Click the `Save` button at the top left to create the group.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

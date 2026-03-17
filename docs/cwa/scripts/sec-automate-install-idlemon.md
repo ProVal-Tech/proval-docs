@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing the IdleMon 
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This document describes the installation process for the [IdleMon](https://githu
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description:  'The purpose of this solution is to uninstall Ninja RMM agent from
 tags: ['uninstallation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ The purpose of this solution is to uninstall Ninja RMM agent from Windows machin
 - Create the [Custom Field : cPVAL Uninstall Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0) using the implementation instruction provided in the document.  
 - Create the [Script : Uninstall NinjaOne Agent](/docs/1efc6b0c-bfd0-4d80-b4c5-e32defa31bc6) using the implementation instruction provided in the document.
 - Create the [Group : cPVAL Uninstalled Ninja Agent ](/docs/fa1632f1-0fd8-4cc7-88da-7b2e20e122c0)  using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2025-12-04
+
+- Initial version of the document

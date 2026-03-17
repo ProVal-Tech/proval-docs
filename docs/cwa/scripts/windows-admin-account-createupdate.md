@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Set Admin Accoun
 tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -164,3 +166,9 @@ Attempted credentials are saved as <Title> at the passwords tab of the client in
 ```
 Account Creation/Update Output: <Output of the PowerShell Script>
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

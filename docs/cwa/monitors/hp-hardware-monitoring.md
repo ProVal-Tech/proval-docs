@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring HP server event 
 tags: ['hp', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Event Type: Error
 Message: <Event Message>
 TimeGen: <Time of Generation>
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

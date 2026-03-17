@@ -8,6 +8,8 @@ description: 'This custom field controls IPv6 disablement based on the selected 
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field controls IPv6 disablement based on the selected operating syst
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/060ad5d8-ee1d-4ee2-a92d-7dbc14121bc6/image1.webp)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

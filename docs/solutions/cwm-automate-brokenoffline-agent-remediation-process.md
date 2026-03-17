@@ -8,6 +8,8 @@ description: 'This document outlines a solution to restore the functionality of 
 tags: ['connectwise', 'report', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -28,3 +30,9 @@ It is essential to note that this solution relies on the CW RMM+ plugin and its 
 Write how to implement this solution. Is there any manual configuration that needs to happen for this solution to succeed?
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

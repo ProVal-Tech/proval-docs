@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to identify Windows mach
 tags: ['patching', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ To force update this table:
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines that patch via CW Automate.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

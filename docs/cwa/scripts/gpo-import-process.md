@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on importing a target
 tags: ['active-directory', 'backup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ Imports a target GPO and optionally links it to the root of the domain.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

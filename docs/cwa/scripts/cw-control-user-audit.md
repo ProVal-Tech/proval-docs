@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to run on the ConnectWise
 tags: ['connectwise', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ It displays information in the dataview **@CW Control - User Audit**.
 
 - Script log
 - Dataview **@CW Control - User Audit**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

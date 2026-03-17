@@ -8,6 +8,8 @@ description: 'Documentation for the Disable-PowerShellVersion2 command to disabl
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -31,3 +33,9 @@ This command checks for a version of PowerShell greater than v2. If one is prese
 ## Output
 - .\Disable-PowerShellVersion2-log.txt
 - .\Disable-PowerShellVersion2-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

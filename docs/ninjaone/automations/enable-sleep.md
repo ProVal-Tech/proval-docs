@@ -8,6 +8,8 @@ description: 'Enables sleep in the current Windows power plan by setting Sleep a
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -39,3 +41,9 @@ Enables sleep in the current Windows power plan by setting 'Sleep after' to a sp
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

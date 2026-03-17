@@ -8,6 +8,8 @@ description: 'This document provides an overview of the audited group policy obj
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ This document displays the list of audited group policy objects from the script 
 | ModifiedTime      | DATETIME  | Last time this GPO was modified.                                |
 | ReadTime          | DATETIME  | Last time this GPO was read.                                    |
 | LinksTo           | TEXT      | Comma-separated list of OUs that this GPO links to.            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

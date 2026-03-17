@@ -8,6 +8,8 @@ description: 'This agent procedure is used to check the update channel for Micro
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-30
 ---
 
 ## Overview
@@ -78,3 +80,9 @@ To execute the `component` over a specific machine, follow these steps:
 **A.** The `User-Defined Field X` will still get updated with the `Update channel` value, where X is the UDF number, but the name of the UDFs will show as `User-Defined Field X` and not as `Update M365 Channel`.
   
   `Note`: The script will not break with the Global UDF settings not updated.
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

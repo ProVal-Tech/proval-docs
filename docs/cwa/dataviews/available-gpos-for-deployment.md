@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the GPO Import 
 tags: ['deployment', 'gpo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This dataview provides a complete list of available GPOs for deployment via the 
 | Column | Description |
 |--------|-------------|
 | GPOs   | List of GPOs available for deployment via [GPO Import Process](/docs/6af95203-1e0a-4e2d-8e51-4a3f5a66eba7). |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

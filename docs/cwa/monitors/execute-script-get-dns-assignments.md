@@ -8,6 +8,8 @@ description: 'This document outlines the execution of the EPM - Network - Script
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Managed Windows Servers and Workstations
 ## Alert Template
 
 `△ Custom - Execute Script - Get - DNS Assignments`
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

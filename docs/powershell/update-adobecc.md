@@ -8,6 +8,8 @@ description: 'Documentation for the Update-AdobeCC command to list or update pro
 tags: ['adobe', 'installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -38,3 +40,9 @@ Update-AdobeCC.ps1 -Mode Update
 - .\Update-AdobeCC-log.txt
 - .\Update-AdobeCC-data.txt
 - .\Update-AdobeCC-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

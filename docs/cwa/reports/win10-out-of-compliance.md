@@ -8,6 +8,8 @@ description: 'This document provides a detailed report on the out of compliance 
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Summary
@@ -82,3 +84,9 @@ Attach the export XML of the report to this document.
 ## Attachments
 [out_of_complaince_report.xml](<../../../static/attachments/itg/10672467/out_of_complaince_report.xml>)
 [Win10_Out_of_Compliance.xlsx](<../../../static/attachments/itg/10672467/Win10_Out_of_Compliance.xlsx>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

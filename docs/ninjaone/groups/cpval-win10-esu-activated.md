@@ -8,6 +8,8 @@ description: 'This contains the list of Windows 10 devices where the ESU is acti
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-23
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This contains the list of Windows 10 devices where the ESU is activated.
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-win10-esu-activated.toml)
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

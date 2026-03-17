@@ -8,6 +8,8 @@ description: 'This document provides a script designed to create or remove share
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ The script will execute a PowerShell script, passing the above parameters. The s
 ## Output
 
 Script log messages.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

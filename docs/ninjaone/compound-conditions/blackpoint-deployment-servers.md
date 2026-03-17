@@ -8,6 +8,8 @@ description: 'This compound condition is used to deploy the Blackpoint on window
 tags: ['windows','application','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This compound condition is used to facilitate the automated deployment of Blackp
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/blackpoint-deployment-servers.toml)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

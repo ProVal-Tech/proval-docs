@@ -8,6 +8,8 @@ description: 'This script automates the deployment of the Todyl Agent on Windows
 tags:  ['installation', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ Search and select `SetinelOne Deployment`
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

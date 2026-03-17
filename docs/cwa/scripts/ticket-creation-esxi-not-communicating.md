@@ -8,6 +8,8 @@ description: 'This document details a script designed for creating tickets relat
 tags: ['esxi', 'networking', 'ticketing', 'vmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The only dependency for this script is that the monitor triggering the script mu
 >
 > There is 1 reported VM running on this host, which is displayed below:  
 > \<VM Name>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

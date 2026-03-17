@@ -8,6 +8,8 @@ description: 'This document details the process of initializing TPM as part of t
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -191,4 +193,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log  
-![Output Image](../../../static/img/docs/9cecaa1e-c694-4442-a6a5-948217978e50/image_26.webp)  
+![Output Image](../../../static/img/docs/9cecaa1e-c694-4442-a6a5-948217978e50/image_26.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

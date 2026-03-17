@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to automatically finish t
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Affected Ticket Subject: `UPDATES - 3 Patches Missing on %ClientName%//%Computer
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                       |
 | SQLTicketid | Ticket ID to finish/close                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

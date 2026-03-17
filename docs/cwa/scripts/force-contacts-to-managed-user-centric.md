@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to integrate User-Centric
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This script is for use in conjunction with User-Centric. When users are imported
 ## Output
 
 Manage plugin
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

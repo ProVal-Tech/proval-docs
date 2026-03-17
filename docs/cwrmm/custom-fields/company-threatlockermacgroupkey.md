@@ -8,6 +8,8 @@ description: 'This document provides instructions for storing the ThreatLocker G
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This custom field at the company level stores the ThreatLocker Group key for Mac
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/a9d8b61d-304f-442b-b7e3-54efe8ae150e/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

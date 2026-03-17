@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['installation', 'networking', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script performs the SonicWall NetExtender install/update using Winget. It c
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

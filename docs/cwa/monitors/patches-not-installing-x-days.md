@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring setup to detect machines that 
 tags: ['report', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ SQL is limiting it to machines with a managed patching policy only.
 - hotfixdata
 - hotfix
 - computerpatchpolicies
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a script that disables the NTLMv1.1 protoco
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Domain Controllers
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

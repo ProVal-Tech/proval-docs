@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for checking the Azure AD sta
 tags: ['active-directory', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This solution is used to check the Azure AD status of a machine. An agent proced
 - A view needs to be created.
 - A custom field needs to be created.
 - The agent procedure needs to be run once these are created.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

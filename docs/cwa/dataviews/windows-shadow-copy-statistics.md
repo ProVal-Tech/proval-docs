@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Windows Shadow C
 tags: ['backup', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview displays Windows Shadow Copy statistics for endpoints with Shadow 
 | Shadow Copy Count   | The number of Shadow Copies on the machine                          |
 | Oldest Shadow Copy  | The oldest available Shadow Copy date                               |
 | Latest Shadow Copy  | The most recent available Shadow Copy date                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

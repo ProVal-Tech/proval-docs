@@ -8,6 +8,8 @@ description: 'This document provides a guide on creating a custom field for the 
 tags: ['connectwise', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ This custom field is to be filled with the Huntress Account Key by the partner. 
 **Type:** Text Box  
 **Level:** Company  
 **Description:** Huntress Account Key  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

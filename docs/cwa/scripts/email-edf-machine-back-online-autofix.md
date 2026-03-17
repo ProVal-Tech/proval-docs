@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of a script designed to s
 tags: ['email']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ To be executed as an Autofix script only. The `△ Custom - E-Mail - Machine Bac
 - Email  
   Sample Email:  
   ![Sample Email](../../../static/img/docs/c32c5921-0bd1-4e4a-b605-baa0e958fbc0/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

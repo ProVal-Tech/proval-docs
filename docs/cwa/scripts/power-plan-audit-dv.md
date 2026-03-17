@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Get-PowerPlan scri
 tags: ['database', 'report', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This is an Automate implementation of the agnostic script [Get-PowerPlan](/docs/
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

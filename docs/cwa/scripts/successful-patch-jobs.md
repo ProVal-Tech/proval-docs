@@ -8,6 +8,8 @@ description: 'This document describes an enhanced version of the default "Succes
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This script is a function script called from [Patch Accounting](/docs/53163c7a-3
 | Property                   | Value |
 |---------------------------|-------|
 | _sysPatchAcctTimeToBill   | 1     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

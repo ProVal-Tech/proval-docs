@@ -8,6 +8,8 @@ description: 'The group manages the supported computers for companies that have 
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -127,3 +129,9 @@ Click the `Save` button to save the group.
 ![Image12](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image12.webp)
 
 ![Image13](../../../static/img/docs/1c950fdd-99f2-4943-9617-a1d13a4b87ec/Image13.webp)
+
+## Changelog
+
+### 2025-03-03
+
+- Initial version of the document

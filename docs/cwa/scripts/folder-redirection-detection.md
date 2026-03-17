@@ -8,6 +8,8 @@ description: 'This script performs the folder redirection audit for the redirect
 tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This script downloads the strapper module and executes the Strapper command "Get
 - Script Log
 - Dataview
 - Table pvl_folder_redirection_audit
+
+## Changelog
+
+### 2025-04-29
+
+- Initial version of the document

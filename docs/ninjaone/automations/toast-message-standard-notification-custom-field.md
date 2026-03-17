@@ -8,6 +8,8 @@ description: 'Sends a toast message/notification to the currently signed in user
 tags: ['windows','notifications']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-25
 ---
 
 ## Overview
@@ -514,4 +516,10 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-06-20
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the creation of the CWM - Automate - View -
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This script creates the [View - Plugin_ProVal_V_Patch_Count_Status](/docs/c1fad1
 ## Output
 
 - View
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

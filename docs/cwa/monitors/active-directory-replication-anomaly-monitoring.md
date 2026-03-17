@@ -8,6 +8,8 @@ description: 'This document details the setup for monitoring Active Directory Re
 tags: ['active-directory', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -49,4 +51,10 @@ For a precise understanding of the error codes returned in the `LastError` prope
 
 ## Implementation
 
-[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/495df667-0690-48e0-b929-f7671e9fc92c) 
+[Implement - Remote Monitor - Active Directory Replication Anomaly Monitoring](/docs/495df667-0690-48e0-b929-f7671e9fc92c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

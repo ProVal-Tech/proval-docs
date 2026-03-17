@@ -8,6 +8,8 @@ description: 'This document describes a custom field that tracks the user status
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The custom field contains the user status on the machines.
 | Field Name        | Type of Field (Machine or Organization) | Description                                                                         |
 | ----------------- | --------------------------------------- | ----------------------------------------------------------------------------------- |
 | cPVAL User Status | Machine                                 | It shows the status of the user on the machines: "PCComp is Present / Not Present." |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

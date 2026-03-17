@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to completely remove and 
 tags: ['cleanup', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ This script can be used to completely remove/purge local accounts (including Use
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

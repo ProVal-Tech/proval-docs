@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for Johnson Controls - Launcher'
 tags: ['application', 'installation', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-11
 ---
 
 ## Description
@@ -15,3 +17,9 @@ unlisted: false
 An ImmyBot software installer for [Johnson Controls - Launcher](https://www.johnsoncontrols.com/building-automation-and-controls/metasys-launcher).
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/johnson-controls-launcher.toml)
+
+## Changelog
+
+### 2025-06-11
+
+- Initial version of the document

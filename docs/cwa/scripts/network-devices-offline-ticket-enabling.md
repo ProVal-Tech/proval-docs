@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to set the ale
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -95,3 +97,9 @@ Device-Level EDFs:
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

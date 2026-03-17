@@ -8,6 +8,8 @@ description: 'This document provides a detailed dataview of each KB, including i
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ None
 | SetBy           | The user or 'Auto' that set the patch                    |
 | ApprovalSetting | Approved, Denied, Ignored, or Not Set                     |
 | Impact          | Number of policies where this patch is being applied      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

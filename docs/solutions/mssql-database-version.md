@@ -8,6 +8,8 @@ description: 'This document outlines a solution for centralizing the retrieval o
 tags: ['database', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -46,3 +48,9 @@ The objective of this solution is to centralize the retrieval of MSSQL server ve
      - [Internal Monitor - Execute Script - Get MSSQL Database](/docs/d7ad7eb3-8f39-4798-a80c-f0a6cdae7213)  
        - Configure with the alert template: `△ Custom - Execute Script - Get MSSQL Database Version`
        - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

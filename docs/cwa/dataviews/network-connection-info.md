@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of network connections,
 tags: ['performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The dataview displays detailed information about network connections.
 | DNS Address                | This displays the DNS information of the machine.           |
 | Domain Name                | The domain information of the machine.                      |
 | DHCP State                 | The DHCP state (Static/Dynamic) of the network.            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Specifies the install key for the VulScan Discovery Agent. The Ins
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/ea08b033-7c1f-48e4-a58d-1851ea84932e/image3.webp)
+
+## Changelog
+
+### 2025-04-18
+
+- Initial version of the document

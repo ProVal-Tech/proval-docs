@@ -8,6 +8,8 @@ description: 'The solution outlines the process of backing up BitLocker recovery
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Purpose
@@ -91,3 +93,9 @@ A: Supported OS selection is controlled by the [Enable BitLocker Key Backup](/do
 
 **Q: How can I verify if keys were successfully backed up?**  
 A: Check the [BitLocker Key Backup Status](/docs/362c3958-f97e-4f40-bd1d-89cbfed9b17f) custom field on each endpoint or monitor the [BitLocker Key Backup Successful](/docs/5cedafdb-6a2f-4ec5-9c46-869986eb186e) group.
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

@@ -49,3 +49,9 @@ $updates = Get-LSUpdate -All
 
 GitHub: [https://jantari.github.io/LSUClient-docs/](https://jantari.github.io/LSUClient-docs/)  
 [https://github.com/jantari/LSUClient](https://github.com/jantari/LSUClient)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the patch audit data stored 
 tags: ['report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-27
 ---
 
 ## Summary
@@ -72,3 +74,13 @@ A red cell in the dataview indicates that the values available on that computer 
 | WindowsUpdateDeferQualityUpdatesPeriodInDays | Not Equal | 0 | Red   |
 | UpgradeDisabled                    | Not Equal | 0         | Red   |
 | Needs Adjustment                   | Equals   | 1         | Red   |
+
+## Changelog
+
+### 2025-06-27
+
+- Disabled the Feature Update Defer Registry Value in Patch Config Audit Solution. It is now set to 0 Days so that the feature update can be detected and pushed.
+
+### 2025-04-10
+
+- Initial version of the document

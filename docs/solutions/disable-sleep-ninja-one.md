@@ -8,6 +8,8 @@ description: 'A comprehensive solution for managing sleep settings across Window
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Purpose
@@ -101,3 +103,9 @@ A: Yes, set the custom field to "Windows Workstation" only at the desired config
 A: The script accepts AC Time Out Seconds and DC Time Out Seconds parameters to configure specific timeout values for AC and battery power.
 
 **Note:** Disabling sleep may affect power management policies and user experience. Consider user workflows and application requirements before widespread deployment.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

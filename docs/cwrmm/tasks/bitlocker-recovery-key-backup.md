@@ -8,6 +8,8 @@ description: 'This script verifies whether the device is joined to a domain or A
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -207,3 +209,9 @@ if ($bitlockerInfo) {
 ### Completed Scheduled Task
 
 ![Image10](../../../static/img/docs/b469ea90-0c1b-421b-89e2-be5c91501035/image10.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

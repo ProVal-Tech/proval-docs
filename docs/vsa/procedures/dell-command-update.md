@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for downloading and running D
 tags: ['dell', 'installation', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-13
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This document describes how to download and run DellCMDUpdate from the ProVal Ap
 ## Output
 
 - The log file can be found at: `workingdir/System/DellCMDUpdate-log.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

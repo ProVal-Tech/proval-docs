@@ -8,6 +8,8 @@ description: 'The document provides step-by-step instructions for creating an Im
 tags: [software, application, deployment]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-21
 ---
 
 ## Summary
@@ -68,3 +70,9 @@ If the .toml file mentions any `script` or `logo`, these can also be found in th
 ## Completed Software Example
 
 ![Image7](../../static/img/docs/d482ffa0-210b-4ea6-a18c-a303b9a7c14a/image7.webp)
+
+## Changelog
+
+### 2025-05-20
+
+- Initial version of the document

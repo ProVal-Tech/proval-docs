@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor designed to check the logi
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ Windows Machines
 ## How to Import
 
 [Import - Remote Monitor - Reset Local User Password Age](/docs/adc49b4c-24dc-4bb5-bd88-abddae4a4739)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

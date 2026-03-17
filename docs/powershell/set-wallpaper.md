@@ -8,6 +8,8 @@ description: 'Documentation for the Set-Wallpaper command to set the active desk
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -49,3 +51,9 @@ Downloads the image from the remote server and sets it as the current wallpaper 
 `PSCustomObject`
 
 Returns the registry settings edited by the script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

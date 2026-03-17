@@ -8,6 +8,8 @@ description: 'Automates the process of ensuring a Windows system is running the 
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Overview
@@ -77,3 +79,9 @@ Install the latest cumulative update without rebooting the system.
 
 - Deploy-AvailableCumulativeUpdate-log.txt  
 - Deploy-AvailableCumulativeUpdate-error.txt
+
+## Changelog
+
+### 2025-04-24
+
+- Initial version of the document

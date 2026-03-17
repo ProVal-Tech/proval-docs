@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the File and Storag
 tags: ['windows', 'dynamic-groups', 'ftp']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/58235f08-f095-4242-955f-d369947fb512/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

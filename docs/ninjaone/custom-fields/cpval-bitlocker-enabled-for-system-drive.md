@@ -8,6 +8,8 @@ description: 'A boolean flag indicating if the Operating System drive is activel
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ A boolean flag indicating if the Operating System drive is actively encrypted an
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5/image1.webp)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

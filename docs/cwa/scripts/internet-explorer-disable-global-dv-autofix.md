@@ -8,6 +8,8 @@ description: 'This document outlines a script that disables Internet Explorer on
 tags: ['security', 'setup', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ This script disables Internet Explorer on a Windows machine.
 - Script log
 - EDF
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

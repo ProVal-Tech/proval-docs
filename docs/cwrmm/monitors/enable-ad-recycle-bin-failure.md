@@ -8,6 +8,8 @@ description: 'This document outlines the steps to create a monitor that generate
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,4 +52,10 @@ This monitor will create tickets if the [Task - Enable AD Recycle Bin](/docs/bb5
    ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_7_1.webp)  
 
 8. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
-   ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_8_1.webp)  
+   ![Image](../../../static/img/docs/2d98b419-3d5d-4278-a4ce-f2cacba569c5/image_8_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

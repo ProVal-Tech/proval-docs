@@ -8,6 +8,8 @@ description: 'This document provides details on a script that collects device na
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This script collects information about the device name and version as provided f
 ## Output
 
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

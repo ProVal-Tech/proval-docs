@@ -8,6 +8,8 @@ description: 'Controls whether reboot prompts are skipped on weekends. Options: 
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Controls whether reboot prompts are skipped on weekends. Options: `Enable` or `D
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/01773daf-c7be-4d03-ab86-8b81cc939a83/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

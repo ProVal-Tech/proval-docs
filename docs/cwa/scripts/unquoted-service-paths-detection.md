@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to detect and fix unquote
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,13 @@ The script will fetch the new paths to be set for each unquoted service on the m
 ## Output
 
 Script log
+
+## Changelog
+
+### 2025-09-04
+
+- The script was incorrectly quoting the path if both sys and exe were available in the service path. Updated the PowerShell script at step 3 to enclose the path in quotes if it contains spaces, applying this to whichever comes first between .exe and .sys
+
+### 2025-04-10
+
+- Initial version of the document

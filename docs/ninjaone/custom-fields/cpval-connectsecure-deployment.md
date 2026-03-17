@@ -8,6 +8,8 @@ description: 'This is required to be set for the compound condition to set the C
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Choose the operating system to activate the auto deployment of the `ConnectSecur
 ![Sample Run 1](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image14.webp)
 
 ![Sample Run 2](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image13.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

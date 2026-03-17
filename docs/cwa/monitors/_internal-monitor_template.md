@@ -1,19 +1,14 @@
+---  
+id:  
+title:  
+title_meta:  
+keywords: []  
+description:  
+tags: []  
+draft: true  
+unlisted: false  
 ---
-id: 'New GUID'
-slug: /New GUID
-title: 'Filename'
-title_meta: 'Filename'
-keywords: []
-description: ''
-tags: []
-draft: true
-unlisted: false
----
 
-## Summary
+## Changelog
 
-## Dependencies
-
-## Target
-
-## Implementation
+## Changelog

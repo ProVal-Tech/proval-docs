@@ -8,6 +8,8 @@ description: 'Downloads and installs the Addigy Agent using dynamic NinjaRMM par
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Overview
@@ -44,4 +46,10 @@ Downloads and installs the Addigy Agent using dynamic NinjaRMM parameters (Org I
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

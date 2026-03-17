@@ -8,6 +8,8 @@ description: 'This document provides a detailed analysis of script failures over
 tags: ['performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This Dataview is similar to the [Script Failure Assessment](/docs/0a1ca2b8-1d0e-
 | First Failure Date           | Date of the first failure                                                                            |
 | Last Failure Date            | Date of the last failure                                                                             |
 | Time Period Days             | Number of days since the data collection started                                                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

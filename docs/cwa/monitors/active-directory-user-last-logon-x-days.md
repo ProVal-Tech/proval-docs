@@ -8,6 +8,8 @@ description: 'This document provides a detailed implementation guide for setting
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ User1 (Enabled/Disabled) - Last Login: 6/10/2022
 ## Target
 
 Global - Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

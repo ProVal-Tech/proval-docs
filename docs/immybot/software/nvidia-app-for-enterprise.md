@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for NVIDIA App for Enterprise.'
 tags: ['application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-20
 ---
 
 ## Description
@@ -19,3 +21,13 @@ An ImmyBot software installer for the [NVIDIA App for Enterprise](https://www.nv
 **Configuration:** [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/nvidia-app-for-enterprise.toml)
 
 **Notes:** Use the inbuilt filter script `NVIDIA Graphics Driver Filter` with the deployments.
+
+## Changelog
+
+### 2025-09-19
+
+- The installer was not able to upgarde the software to latest version. Setting the upgrade strategy to "Install Over" resolved the reported issue.
+
+### 2025-06-19
+
+- Initial version of the document

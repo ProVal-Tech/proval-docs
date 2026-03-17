@@ -8,6 +8,8 @@ description: 'Applies registry configurations on systems where both ''Duo Authen
 tags: ['windows', 'registry', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-15
 ---
 
 ## Summary
@@ -181,3 +183,9 @@ Reload the System Cache (Ctrl + R).
 ### Step 7
 
 Find your remote monitor in the group's remote monitors tab. Make sure it is limited to the `Cyber QP and Duo Auth Registry Config` search.
+
+## Changelog
+
+### 2025-10-10
+
+- Initial version of the document

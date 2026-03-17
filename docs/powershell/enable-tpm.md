@@ -8,6 +8,8 @@ description: 'Documentation for the Enable-TPM command to initialize and provisi
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -52,3 +54,9 @@ Initializes TPM but does not allow the provisioning process to clear the TPM, ev
 - `.\Enable-TPM-log.txt`
 - `.\Enable-TPM-data.txt`
 - `.\Enable-TPM-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

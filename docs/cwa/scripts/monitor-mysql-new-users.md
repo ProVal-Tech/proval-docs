@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to check the state of MyS
 tags: ['email', 'mysql', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ unlisted: false
 ## Output
 
 Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

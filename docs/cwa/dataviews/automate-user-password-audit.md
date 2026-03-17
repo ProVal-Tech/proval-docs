@@ -8,6 +8,8 @@ description: 'This document outlines the criteria for determining whether an Aut
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This document outlines the criteria for determining if an Automate user's passwo
 | Username        | User name                                                   |
 | Email           | Email of the user                                           |
 | Password Error  | The password complexity error indicating whether the password is strong or not. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

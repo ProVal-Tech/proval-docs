@@ -8,6 +8,8 @@ description: 'This document outlines a role created to detect the installation o
 tags: ['backup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role is created to detect the agents where the Windows Server Backup featur
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `\{@%powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name Windows-Server-Backup -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Installed"@%}` | Contains   | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

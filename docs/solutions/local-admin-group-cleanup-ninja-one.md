@@ -8,6 +8,8 @@ description: 'This document outlines the steps for implementing the Local Admin 
 tags: ['security', 'cleanup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-05
 ---
 
 ## Purpose
@@ -98,3 +100,9 @@ If the [cPVAL Approved Local Admins](/docs/ead6d2e4-c4a2-442e-8471-09c4e6b78bd4)
 - You do not need to include `Administrator` or `Domain\Domain Admins` in this field. The automation will automatically add `Administrator` and, for domain-joined machines, `Domain\Domain Admins`.
 
 - If this custom field is left blank, the automation will remove all users from the local Administrators group except for 'Administrator' (and 'Domain Admins' on domain-joined machines).
+
+## Changelog
+
+### 2025-06-05
+
+- Initial version of the document

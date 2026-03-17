@@ -8,6 +8,8 @@ description: 'This group contains the Windows 11 incompatible devices detected b
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-24
 ---
 
 ## Summary
@@ -99,3 +101,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Complete Group
 
 ![Complete](../../../static/img/docs/cpval-windows-11-incompatible-device/image-4.png)
+
+## Changelog
+
+### 2025-05-30
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a role definition that identifies which ser
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role definition shows which servers have the RDS Licensing feature enabled.
 | Detection String                                  | Comparator | Result | Applicable OS |
 |--------------------------------------------------|------------|--------|----------------|
 | \{%@powershell "(Get-WindowsFeature RDS-Licensing).Installed"@%} | Equals     | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

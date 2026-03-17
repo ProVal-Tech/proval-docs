@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Dataview feature that di
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Dataview displays information about computers that were previously retired and a
 | Serial Number            | Serial Number of Computer             |
 | Last User Name           | Last logged-in user name              |
 | Retire Comments          | Comments added while retiring          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

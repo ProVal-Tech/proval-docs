@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the default password
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This document provides information about the default password policy in a domain
 | Reverse Encryption Enabled           | Yes/No - Indicates if reverse encryption is enabled on the domain                                            |
 
 (Reference documentation: [Password Policy](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy))
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

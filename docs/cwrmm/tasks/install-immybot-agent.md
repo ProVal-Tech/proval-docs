@@ -8,6 +8,8 @@ description: 'This script automates the installation of the ImmyBot Agent MSI in
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-13
 ---
 
 ## Summary
@@ -444,3 +446,9 @@ Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

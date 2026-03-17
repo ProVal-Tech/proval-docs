@@ -8,6 +8,8 @@ description: 'This document details the OneDrive Sync Monitor, which identifies 
 tags: ['data-collection']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ Sync Status: Error
 ```
 △ Custom - Ticket Creation - Computer
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

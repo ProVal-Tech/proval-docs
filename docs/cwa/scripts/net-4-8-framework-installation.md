@@ -8,6 +8,8 @@ description: 'This document describes a script that checks the installed version
 tags: ['dotnet', 'installation', 'reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ The script checks the version of .NET. If version 4.8 is not installed on the ma
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

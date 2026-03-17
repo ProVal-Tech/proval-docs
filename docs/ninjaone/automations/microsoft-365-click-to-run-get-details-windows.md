@@ -8,6 +8,8 @@ description: 'This script retrieves the installed Microsoft Click-to-Run Office 
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Overview
@@ -34,3 +36,9 @@ This script retrieves the installed Microsoft Click-to-Run Office version on the
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

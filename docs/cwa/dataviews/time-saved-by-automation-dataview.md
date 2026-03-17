@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the accumulated "Tim
 tags: ['mysql', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This document displays the accumulated "Time Saved by Automation" for each scrip
 | Average Weekly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per week since the beginning of data collection. |
 | Average Monthly Minutes Saved    | DOUBLE  | The average number of minutes that the script has saved per month since the beginning of data collection. |
 | Average Yearly Minutes Saved     | DOUBLE  | The average number of minutes that the script has saved per year since the beginning of data collection. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

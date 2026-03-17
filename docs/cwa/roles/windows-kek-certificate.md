@@ -8,6 +8,8 @@ description: 'Automate role to detect if a Windows agent has the updated 2023 KE
 tags: ['windows','uefi','secureboot','certificates']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-03
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Automate role to detect if a Windows agent has the updated 2023 KEK Certificate.
 ### Applicable OS
 
 - `Windows`
+
+## Changelog
+
+### 2025-09-19
+
+- Initial version of the document

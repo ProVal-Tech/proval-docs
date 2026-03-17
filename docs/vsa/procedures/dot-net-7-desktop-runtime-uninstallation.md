@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for uninstalling the Dot NET 
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Agent Procedure Log
 ## Export Attachment
 
 Attach the XML VSA Export content to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a monitor that
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

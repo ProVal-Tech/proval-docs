@@ -8,6 +8,8 @@ description: 'This checks the office bit version (32 / 64), then runs a shell co
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-30
 ---
 
 ## Overview
@@ -52,3 +54,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Microsoft Office - C2R - Repair](../../../static/attachments/Microsoft-Office-C2R-Repair.cpt)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

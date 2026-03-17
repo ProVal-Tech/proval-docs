@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the C2R Office v
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This document provides details about the C2R Office version installed on the mac
 
 ![Screenshot 1](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/9229f1df-c80a-4333-8184-2c54954b4996/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

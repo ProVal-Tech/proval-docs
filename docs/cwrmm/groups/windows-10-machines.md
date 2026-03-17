@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to create a dyn
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ This document outlines the process for creating a dynamic group specifically for
 ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_11.webp)  
 
 ![Image](../../../static/img/docs/8d5c2d6a-5bb8-4720-bd11-4fa7396fbf7a/image_12.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

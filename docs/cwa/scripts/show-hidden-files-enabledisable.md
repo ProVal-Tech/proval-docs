@@ -8,6 +8,8 @@ description: 'This document details a script that allows users to hide or unhide
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The script will hide or unhide hidden files based on the input parameter.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

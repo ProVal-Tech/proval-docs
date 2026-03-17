@@ -8,6 +8,8 @@ description: ''
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Purpose
@@ -221,3 +223,9 @@ To activate the solution:
 ### 31. How does the script handle Domain Controllers?
 
 > Both the Create/Update script and the Password Rotation Check script perform a check on the `DomainRole`. If the device is detected as a Domain Controller (DomainRole >= 4), the scripts will terminate immediately or return an Exit Code 0, preventing any changes to domain accounts.
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

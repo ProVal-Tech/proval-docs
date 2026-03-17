@@ -8,6 +8,8 @@ description: 'This document describes a remote monitor that checks Active Direct
 tags: ['active-directory', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Domain Controllers
 ## How to Import
 
 [Import - Remote Monitor - Reset AD Users Password Age](/docs/da1f5a89-eab2-4fae-8e49-e98c269cf103)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

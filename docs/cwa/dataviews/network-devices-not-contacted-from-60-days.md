@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Dataview de
 tags: ['networking', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This Dataview is part of the solution to remove network devices that have had no
 | Manufacturer Name   | Displays the name of the manufacturer                |
 | Alert Template     | Indicates if an alert template is applied           |
 | Last Date          | Displays the last contact date of the device in Automate |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

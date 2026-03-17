@@ -8,6 +8,8 @@ description: 'This document details the storage of the install date for the late
 tags: ['report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,4 +25,10 @@ Stores the install date of the latest CU performed by the Out of Date Cumulative
 ## Screenshots
 
 ![Screenshot 1](../../../static/img/docs/044210c4-14ae-4996-ab9f-009290bf05e4/image_1_1.webp)  
-![Screenshot 2](../../../static/img/docs/044210c4-14ae-4996-ab9f-009290bf05e4/image_2_1.webp)  
+![Screenshot 2](../../../static/img/docs/044210c4-14ae-4996-ab9f-009290bf05e4/image_2_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

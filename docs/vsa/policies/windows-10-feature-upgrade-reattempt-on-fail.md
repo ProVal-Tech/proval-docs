@@ -8,6 +8,8 @@ description: 'This document outlines the reattempt procedure for Windows 10 feat
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -24,3 +26,9 @@ Reattempts Windows Feature Upgrade using [SEC - Windows Patching - Agent Procedu
   - **Policy Object Settings**:  
     - **Policy Object Members**: [SEC - Windows Patching - Agent Procedure - Windows 10 Feature Upgrade (No Reboot)](/docs/0ecbf1e1-8947-417c-a3ad-952fcf218140)  
       - **Policy Object Member Settings**: Scheduled Monthly, 1st of the month, Do not skip if offline, at midnight.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -40,3 +40,9 @@ This script will find the computer description information from the agent and st
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

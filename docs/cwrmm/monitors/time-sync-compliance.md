@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on creating a Time Syn
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -87,3 +89,9 @@ This monitor will sync the machine's time with us.pool.ntp.org.
 12. Click the `Save` button to save the monitor set.
 
     ![Image](../../../static/img/docs/e6735934-f31f-4993-94b5-c297546ede23/image_13.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

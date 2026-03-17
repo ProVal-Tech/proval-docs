@@ -8,6 +8,8 @@ description: 'This script will create the view plugin_proval_userclasses_group_c
 tags: ['database','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-28
 ---
 
 ## Summary
@@ -25,3 +27,13 @@ This script will create the view [plugin_proval_userclasses_group_client_perm](/
 
 ## Output
 - [View - plugin_proval_userclasses_group_client_perm](/docs/5257f6b1-3afe-484d-87ea-7b1a0a9c850f)
+
+## Changelog
+
+### 2025-11-28
+
+- Created document
+
+### 2025-11-27
+
+- Initial version of the document

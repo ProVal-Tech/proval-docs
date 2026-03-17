@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing BitDefe
 tags: ['installation', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This document outlines the installation of BitDefender Endpoint Security Tools o
 ## Output
 
 Agent procedure log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

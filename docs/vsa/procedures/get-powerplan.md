@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to retrieve detailed informatio
 tags: ['report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -39,3 +41,9 @@ The output log can be found at:
 `$env:ProgramData/_automation/AgentProcedure/GetPowerPlan/Get-PowerPlan-log.txt`
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

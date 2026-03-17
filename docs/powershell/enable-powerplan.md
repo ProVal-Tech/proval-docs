@@ -8,6 +8,8 @@ description: 'Documentation for the Enable-PowerPlan command to set the specifie
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -44,3 +46,9 @@ PS C:> .\Enable-PowerPlan.ps1 -Name 'High Performance'
 
 - .\\Enable-PowerPlan-Log.txt
 - .\\Enable-PowerPlan-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

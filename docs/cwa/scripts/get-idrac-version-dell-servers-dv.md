@@ -8,6 +8,8 @@ description: 'This document outlines a script that retrieves the iDRAC version f
 tags: ['dell']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ The script will fetch the version of iDRAC from Dell servers. The script output 
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

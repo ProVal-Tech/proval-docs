@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that remove
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This script removes a user profile from an endpoint. It prompts the user for con
 ## Output
 
 AP Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

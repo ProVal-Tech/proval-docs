@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to create a schedul
 tags: ['performance', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -73,3 +75,9 @@ Be sure to enter your actions and arguments exactly as you would when writing a 
 
 1. Set the action to **cmd.exe**
 2. Set the arguments to **/c start notepad.exe**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

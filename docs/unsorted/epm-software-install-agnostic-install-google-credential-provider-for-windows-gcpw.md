@@ -61,3 +61,9 @@ The location of output for log, result, and error files is as follows:
 | ConnectWise RMM                               |                                                |
 | Kaseya                                        | [Install Google Credential Provider for Windows (GCPW)](/docs/2e080c81-a143-4fcb-939a-57ada1fae059) |
 | Datto RMM                                     |                                                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

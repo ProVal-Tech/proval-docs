@@ -8,6 +8,8 @@ description: 'Subdomain part of your ImmyBot URL. For "https://xyz.immy.bot", us
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This custom field stores the subdomain part of your ImmyBot URL. For "https://xy
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/2556d27a-3c3c-4437-aa2c-43143b97ff88/image1.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

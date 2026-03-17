@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on uninstalling all instan
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Remove-ScreenConnect-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

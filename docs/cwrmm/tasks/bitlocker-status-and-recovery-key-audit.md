@@ -8,6 +8,8 @@ description: 'This script collects BitLocker encryption details for each drive o
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -175,3 +177,9 @@ return '| {0} |' -f $bitlockerReturnInfo
 ### Completed Scheduled Task
 
 ![Image10](../../../static/img/docs/9682b5a8-d821-43f6-9b77-59d43b6ef015/image10.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

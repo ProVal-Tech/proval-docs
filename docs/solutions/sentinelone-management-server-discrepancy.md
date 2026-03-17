@@ -8,6 +8,8 @@ description: 'This document outlines a solution to identify computers where the 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -39,4 +41,10 @@ The solution aims to find the computers where the installed SentinelOne Manageme
    - [S1 Management Server Discrepancy](/docs/820319b1-66c6-43b0-be35-136ac4c82ccd)  
 
 3. Create and schedule this task:  
-   - [SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079)  
+   - [SentinelOne Management Console Validation](/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

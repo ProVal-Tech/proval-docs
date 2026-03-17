@@ -8,6 +8,8 @@ description: 'Documentation for the Repair-PrintSpooler command to repair and re
 tags: ['print', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -47,3 +49,9 @@ Location of output for log and error files:
 .\Repair-PrintSpooler-log.txt
 .\Repair-PrintSpooler-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

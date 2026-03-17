@@ -8,6 +8,8 @@ description: 'This document describes a remote monitor designed to detect if Win
 tags: ['registry', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ FastBoot is successfully disabled.
 
 Please follow the document below for the implementation steps:  
 [Import - Remote Monitor - Windows Fast Boot Disable](/docs/454d77d4-5cbf-4773-bad1-63a47cfd4342)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

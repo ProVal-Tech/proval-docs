@@ -8,6 +8,8 @@ description: 'This document details a script designed to set the "Vendor Restric
 tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ The system property `PropertyIndex` needs to be set before running the script.
 ## Output
 
 Script log messages only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

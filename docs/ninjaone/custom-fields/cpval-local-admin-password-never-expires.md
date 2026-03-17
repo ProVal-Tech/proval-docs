@@ -8,6 +8,8 @@ description: 'Enable this option to set the local admin password to never expire
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enable this option to set the local admin password to never expire. This setting
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/28f3bc57-90ef-4976-866e-09a57c690bee/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

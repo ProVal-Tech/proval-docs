@@ -8,6 +8,8 @@ description: 'This document outlines a dataview created to verify the applied wo
 tags: ['active-directory', 'compliance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ The dataview is created to verify the workaround applied and the installation of
 | Non-compliant UAC sAMAccountType   | To find computer accounts that have a non-compliant UAC sAMAccountType.                                                                        |
 | Information Update Time             | Run-time of the script.                                                                                                                         |
 | Last Contact                        | Last contact of the Computer.                                                                                                                   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

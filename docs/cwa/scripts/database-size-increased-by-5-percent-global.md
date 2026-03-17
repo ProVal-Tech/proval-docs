@@ -7,7 +7,9 @@ keywords: ['labtech', 'database', 'alert', 'ticket', 'autotask']
 description: 'This document outlines a script designed to monitor the Labtech Database size and create a ticket in AutoTask if the database size increases by a specified threshold within the last 24 hours. The script can be scheduled to run hourly and includes details on variables, global parameters, and the process flow for execution.'
 tags: ['database']
 draft: false
-unlisted: false
+unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ Labtech Database's size increased by SizeToCompare percent within the last Hours
 
 - Script States
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

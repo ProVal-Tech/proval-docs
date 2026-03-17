@@ -8,6 +8,8 @@ description: 'This script removes the HP Wolf Pro Security application from Wind
 tags: ['application', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -45,3 +47,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 [Remove HP Wolf Pro Security](../../../static/attachments/remove-hp-wolf-pro-security.cpt)
+
+## Changelog
+
+### 2025-12-01
+
+- Initial version of the document

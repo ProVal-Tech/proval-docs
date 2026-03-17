@@ -8,6 +8,8 @@ description: 'This monitor detects the online Windows 10/11 where the MSRT disab
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - MSRT Disable/Uninstall`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

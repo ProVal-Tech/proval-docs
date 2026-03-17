@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to set the active d
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This document outlines how to set the active desktop wallpaper for all users fro
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

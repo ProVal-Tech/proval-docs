@@ -8,6 +8,8 @@ description: 'This document outlines the process for scheduling a forced reboot 
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -506,3 +508,9 @@ For example:
 ![Run Task](../../../static/img/docs/26d390ba-1542-4524-b9ff-7a420004cb73/image_47.webp)
 
 - The task will start appearing in the Scheduled Tasks.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

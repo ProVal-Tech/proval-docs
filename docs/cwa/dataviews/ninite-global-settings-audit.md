@@ -8,6 +8,8 @@ description: 'This document provides an audit of all locations that have differe
 tags: ['ninite', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This document presents an audit of all locations that have configurations differ
 | Client Name                  | Name of the client                                              |
 | Different App Configurations  | Applications that differ from global settings in Ninite         |
 | Number of Different Apps      | Total count of applications that differ from global settings     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

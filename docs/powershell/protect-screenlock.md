@@ -8,6 +8,8 @@ description: 'Documentation for the Protect-ScreenLock command to ensure screen 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -75,3 +77,9 @@ Location of output for log, result, and error files.
 .\gpresult_computer.html
 .\gpresult_user.html
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

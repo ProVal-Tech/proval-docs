@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Extradatafi
 tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The purpose of this document is to represent all the details of the Extradatafie
 | Is Editable               | Represents whether the EDF is editable or not                                                   |
 | Is Restricted             | Represents whether the EDF is restricted or not                                                 |
 | (Masked/Password)         | Represents whether the EDF is masked or has a password                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

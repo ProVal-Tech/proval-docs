@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-09-03
 ---
 
 # Summary
@@ -18,3 +20,5 @@ Provide instructions on how to use the script, including any necessary configura
 
 ## Link to Source Control
 https://github.com/ProVal-Tech/rewst/blob/main/scripts/export.json
+
+## Changelog

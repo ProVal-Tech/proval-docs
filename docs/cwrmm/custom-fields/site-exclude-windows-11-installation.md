@@ -8,6 +8,8 @@ description: 'This document explains how to mark a custom field to exclude the e
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Mark this custom field to exclude the endpoints of this site from the Windows 10
 
 ![Screenshot 1](../../../static/img/docs/bb84e821-38c5-4b39-ad4c-894eef47bf79/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/bb84e821-38c5-4b39-ad4c-894eef47bf79/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides details about a script designed to clean up
 tags: ['caching', 'cleanup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This script will clean up the LT caching folder.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

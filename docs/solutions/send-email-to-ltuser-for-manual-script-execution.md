@@ -8,6 +8,8 @@ description: 'This document outlines a solution designed to detect when a user m
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ It is important to note that this solution will send an email for every script i
 
 Remove or comment out the last line in the additional condition of the monitor to disable receiving emails for successful script executions and limit the monitor sets to script failures only.  
 ![Customization Example](../../static/img/docs/6643031d-dcd8-4bec-9d5d-40bb3de1f713/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

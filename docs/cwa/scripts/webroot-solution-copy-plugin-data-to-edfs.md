@@ -8,6 +8,8 @@ description: 'This document outlines a client script that updates the client EDF
 tags: ['update', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This client script updates the client EDFs value from the Webroot plugin only wh
 ## Output
 
 - EDF
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

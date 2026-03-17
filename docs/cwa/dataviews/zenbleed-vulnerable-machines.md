@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive data view of machines that 
 tags: ['amd', 'cpu', 'data-theft', 'performance', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This data view compiles a list of machines that are anticipated to be vulnerable
 | Processor Cache Size      | Cache Size of the Processor                   |
 | Processor Manufacturer     | Manufacturer of the Processor                 |
 | Processor Serial          | Serial Number of the Processor                |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

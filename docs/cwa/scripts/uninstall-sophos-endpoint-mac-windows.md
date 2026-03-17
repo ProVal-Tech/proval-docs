@@ -8,6 +8,8 @@ description: 'This document provides a script for uninstalling Sophos Endpoint P
 tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The script is designed to uninstall Sophos Endpoint Protection from both Mac and
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

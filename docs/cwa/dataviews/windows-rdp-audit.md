@@ -8,6 +8,8 @@ description: 'This document provides a detailed dataview that shows whether RDP 
 tags: ['networking', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This dataview provides information about whether RDP is enabled or disabled on a
 | Operating System    | Operating system of an agent                |
 | Agent Status        | Agent status, whether offline or online     |
 | RDP Status          | RDP status, whether enabled or disabled     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

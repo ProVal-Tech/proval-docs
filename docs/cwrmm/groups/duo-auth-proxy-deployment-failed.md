@@ -8,6 +8,8 @@ description: 'This document outlines the devices where the DUO Security Authenti
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This document contains the devices where the "DUO Security Authentication Proxy"
    - Set `Failed` in the comparison condition.  
    ![Search and Select Custom Field](../../../static/img/docs/2212752f-e9e3-4a12-af3f-f12972cf9fb4/image_7.webp)  
    **Condition:** `Duo Auth Proxy Result` `Does Not Contain any of` `Failed`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

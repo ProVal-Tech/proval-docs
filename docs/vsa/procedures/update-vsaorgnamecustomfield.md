@@ -8,6 +8,8 @@ description: 'This document outlines the process to set the custom field value f
 tags: ['api']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -45,3 +47,9 @@ The location of output for log, result, and error files is as follows:
 ```
 ./Update-VsaOrgNameCustomField-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This solution stores information about the inactive AD users and p
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Purpose
@@ -60,3 +62,9 @@ This solution stores information about the inactive AD users and performs action
 - Reload the System Cache.
 - Apply the `Alert Template - △ Custom - Execute Script - Activate Disabled AD Users` to the internal monitor [Monitor - Enable Inactive Disabled AD Users](/docs/f83e24ad-91fb-46e7-bc93-51e99e1c7f16)
 - Run now and reset the monitor.
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

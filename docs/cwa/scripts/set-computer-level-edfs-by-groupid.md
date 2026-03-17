@@ -8,6 +8,8 @@ description: 'The script offers a faster and more convenient way to assign value
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ Run the script against any client with appropriate arguments.
 ## Output
 
 - Extra Data Fields
+
+## Changelog
+
+### 2025-04-22
+
+- Initial version of the document

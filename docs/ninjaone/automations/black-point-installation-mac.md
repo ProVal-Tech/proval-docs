@@ -8,6 +8,8 @@ description: 'This script is used to the install the BlackPoint AnapAgent on the
 tags:  ['macos', 'security','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Overview
@@ -41,3 +43,9 @@ This script is used to the install the BlackPoint SnapAgent on the MacOS machine
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

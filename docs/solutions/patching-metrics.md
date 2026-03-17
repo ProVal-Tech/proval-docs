@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of patching-relate
 tags: ['database', 'performance', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -43,3 +45,9 @@ You can check the database version from the `Server Status` in Control Center.
 
 ![Image1](../../static/img/docs/e2d2f876-2e03-4d97-b0a1-eb17b666aad2/image_1.webp)  
 ![Image2](../../static/img/docs/e2d2f876-2e03-4d97-b0a1-eb17b666aad2/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

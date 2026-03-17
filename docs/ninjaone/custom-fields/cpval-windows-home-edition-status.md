@@ -8,6 +8,8 @@ description: 'This custom field checks the OS Caption value to determine whether
 tags: ['windows','custom-fields','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ It indicates whether the installed Windows operating system is a Home edition by
 ## Sample Screenshot
 
 ![Home Edition Status](../../../static/img/docs/4a1a47e3-19f1-4dba-be3c-be633cd52979/customfiledrun.webp)
+
+## Changelog
+
+### 2025-12-09
+
+- Initial version of the document

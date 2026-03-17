@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on a script that quer
 tags: ['installation', 'networking', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ The script will push an update to the Windows device if an out-of-date version i
 | ServiceloopCounter       | Variable used to loop for a set amount of time looking for the service to start.                  |
 | FinishStatus             | This variable is used when checking basic PowerShell for common PowerShell issues, e.g., incorrect version, missing modules, etc. |
 | Message                  | Holds the final log message in the event that we finish the install and need to verify.           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

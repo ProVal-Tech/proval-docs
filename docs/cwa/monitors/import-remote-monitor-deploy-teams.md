@@ -8,6 +8,8 @@ description: 'This document outlines the implementation process of the Deploy Te
 tags: ['connectwise', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Implementation Steps
@@ -115,4 +117,10 @@ AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 
 
 - Now execute your query from a RAWSQL monitor set.
 
-- Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required. 
+- Now Locate the Remote monitor on the group(s) and ensure that it's functioning as required.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

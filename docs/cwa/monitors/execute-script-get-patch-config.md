@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect computers where the Get 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Get Patch Config`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

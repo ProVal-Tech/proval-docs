@@ -8,6 +8,8 @@ description: 'This document outlines a solution that allows users to trigger imm
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ This solution allows users to trigger an immediate reboot or schedule it for the
 - Create the [Force Reboot Server With Reboot Windows Verification](/docs/a1fc1dc3-b9aa-414f-bf6e-7a9bf79cedd1) and follow the deployment instructions.
 - Create the [Server Reboot Schedule on Specific Days](/docs/26d390ba-1542-4524-b9ff-7a420004cb73) and follow the deployment instructions.
 - Create the [Workstation Reboot Schedule on Specific Days](/docs/0957012a-a6da-4e1b-abec-936a0a467e6a) and follow the deployment instructions.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

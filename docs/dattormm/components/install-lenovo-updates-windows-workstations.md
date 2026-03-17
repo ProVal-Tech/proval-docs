@@ -8,6 +8,8 @@ description: 'Automates the discovery and installation of Lenovo-specific update
 tags: ['lenovo', 'drivers', 'bios', 'firmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-22
 ---
 
 ## Overview
@@ -77,3 +79,9 @@ stdOut & stdError
 ## Attachments
 
 [Install Lenovo Updates - Windows Workstations](../../../static/attachments/install-lenovo-updates-windows-workstations.cpt)
+
+## Changelog
+
+### 2025-07-22
+
+- Initial version of the document

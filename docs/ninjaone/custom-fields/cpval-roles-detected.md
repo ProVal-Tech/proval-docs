@@ -8,6 +8,8 @@ description: 'This custom field stores the list of roles detected on a Windows s
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Summary
@@ -100,3 +102,9 @@ Set the following details in the `Details` section and click the `Create` button
 ## Example
 
 ![Image10](../../../static/img/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba/image10.webp)
+
+## Changelog
+
+### 2025-03-28
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide for setting up a monit
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ This monitor checks whether SMB1 is enabled on the end machine. It runs the OS v
    **![Image 9](../../../static/img/docs/a42c0ce4-57d8-4e76-b658-9cd2bc7ed62b/image_9.webp)**  
 
 8. Click the `Save` button to save the monitor set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

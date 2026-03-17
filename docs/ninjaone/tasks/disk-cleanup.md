@@ -8,6 +8,8 @@ description: 'This is a task to run Soji from the self help menu in the Ninja tr
 tags: ['cleanup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-24
 ---
 
 ## Summary
@@ -80,3 +82,9 @@ Now that the menu item has been created, you can drag and drop it into place. Th
 ## Completed Task
 
 ![Image](../../../static/img/docs/disk-cleanup/image-7.png)
+
+## Changelog
+
+### 2025-06-20
+
+- Initial version of the document

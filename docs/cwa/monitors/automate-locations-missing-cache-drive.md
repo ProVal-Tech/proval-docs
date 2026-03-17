@@ -8,6 +8,8 @@ description: 'This document describes a monitor designed to check for disk parti
 tags: ['disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This monitor checks for drives other than C: at the location level to ensure tha
 ## Target
 
 Windows Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

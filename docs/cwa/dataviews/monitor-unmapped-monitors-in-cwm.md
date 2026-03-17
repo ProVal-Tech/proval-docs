@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that list
 tags: ['connectwise', 'report', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The ConnectWise Manage Plugin must be installed and configured with imported ser
 | Sub Type        | The sub-type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 | Item            | The item the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
 | Work Type       | The work type the ticket category is mapped to in ConnectWise Manage (This should be blank if the filters are working properly) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

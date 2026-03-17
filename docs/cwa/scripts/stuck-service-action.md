@@ -8,6 +8,8 @@ description: 'This document provides details about a script that detects service
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This script detects any service that is stuck in a state other than Running or S
 - Script log
 - Script state
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

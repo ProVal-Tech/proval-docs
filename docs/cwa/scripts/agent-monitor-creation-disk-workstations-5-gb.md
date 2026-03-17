@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['disk', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ The script runs as a subscript inside the "Agent Monitor Creation - Disk* - WRAP
 ## Output
 
 Creates Disk Space Remote Monitors on the internal drives of a workstation.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

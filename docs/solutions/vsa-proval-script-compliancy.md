@@ -8,6 +8,8 @@ description: 'This document outlines the process for checking if an endpoint ope
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ This document checks whether an endpoint operating system (OS) and PowerPoint ve
 - Ensure the AP has the appropriate CF assigned to `updateSystemInfo()`
 - Run the AP on all endpoints
 - (Optional) Create an automation policy to run this solution on a scheduled basis
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

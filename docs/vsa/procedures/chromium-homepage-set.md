@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for setting the homepage in C
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This procedure utilizes [SWM - Software Configuration - Set-ChromiumHomepage](/d
 ## Output
 
 The output consists of the agent procedure log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

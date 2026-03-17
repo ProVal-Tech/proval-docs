@@ -8,6 +8,8 @@ description: 'This document outlines the process for downloading and installing 
 tags: ['backup', 'installation', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The script will run a command-line argument against the `stccmd` application on 
 ## Output
 
 Script log messages only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

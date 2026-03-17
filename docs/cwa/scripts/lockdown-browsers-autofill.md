@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to configuring lockdo
 tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Step 1
@@ -358,3 +360,9 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 - ProVal - Production - Lockdown Browsers Password Manager
 - ProVal - Production - Lockdown Chromium Browsers Credit Card Autofill
 - ProVal - Production - Lockdown Chromium Browsers Address Autofill
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

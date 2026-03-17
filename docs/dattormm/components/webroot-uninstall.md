@@ -8,6 +8,8 @@ description: 'This script uninstall Webroot Secure Anywhere from Windows machine
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -44,4 +46,10 @@ To execute the `component` over a specific machine, follow these steps:
 - stdError  
 
 ## Attachments
-[Webroot Uninstall](../../../static/attachments/webroot-uninstall.cpt) 
+[Webroot Uninstall](../../../static/attachments/webroot-uninstall.cpt)
+
+## Changelog
+
+### 2025-12-01
+
+- Initial version of the document

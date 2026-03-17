@@ -8,6 +8,8 @@ description: 'This document provides details about the xPVAL Drive List, includi
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Details
@@ -15,3 +17,9 @@ unlisted: false
 | Field Name         | Type of Field (Machine or Organization) | Description                                                                                     | Syntax                     |
 |--------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|----------------------------|
 | xPVAL Drive List   | Machine                                  | Contains all physical non-removable drives with a maximum capacity of over 10GB on the endpoint. | DriveLetter: C: D: E:      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

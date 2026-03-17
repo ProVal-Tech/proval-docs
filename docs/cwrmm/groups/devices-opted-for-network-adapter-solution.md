@@ -8,6 +8,8 @@ description: 'This group contains the machines where `Enable Network Adapter Sol
 tags: ['windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-06-23
 ---
 
 ## Summary
@@ -67,3 +69,9 @@ Add the following criteria as shown:
 ## Completed Group
 
 ![Group](../../../static/img/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55/image1.webp)
+
+## Changelog
+
+### 2025-06-20
+
+- Initial version of the document

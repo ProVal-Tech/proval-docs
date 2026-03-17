@@ -8,6 +8,8 @@ description: 'This script uninstalls the Windows Subsystem Linux (WSL2) as it ha
 tags: ['vulnerability', 'cve']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24084
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

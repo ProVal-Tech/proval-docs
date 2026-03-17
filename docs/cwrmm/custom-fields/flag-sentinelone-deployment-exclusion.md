@@ -8,6 +8,8 @@ description: 'This document provides details on setting a custom flag to exclude
 tags: ['deployment', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Set this custom flag to true to exclude an endpoint from SentinelOne deployment.
 ## Screenshot
 
 ![Screenshot](../../../static/img/docs/a2967009-ef20-4ce5-823e-8b80349325a0/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

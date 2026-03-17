@@ -8,6 +8,8 @@ description: 'Select the theme for the reboot prompt, options: Dark or Light. De
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select the theme for the reboot prompt, options: `Dark` or `Light`. Default is `
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/1cef781e-295c-4cf5-aca5-bea0de5537fc/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

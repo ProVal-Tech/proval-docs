@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to creating a Windows 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -87,3 +89,9 @@ This monitor will identify computers where the license key is reported as inacti
 
 15. Click the `Save` button to save the monitor set.  
     ![Step 15](../../../static/img/docs/7c6678ef-12c5-4e21-a2d2-9fd84a21191e/image_18.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

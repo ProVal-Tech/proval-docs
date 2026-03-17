@@ -8,6 +8,8 @@ description: 'The purpose of this solution is to monitor the recent locked domai
 tags: ['domain','active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ The purpose of this solution is to monitor the recent locked domain admin accoun
 - Create the [Script : Domain Admin Account LockOut](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe23) using the implementation instruction provided in the document.
 - Create the  [Ticket Template : Domain Admin Account LockOut](/docs/4583116e-e1b9-42bc-826d-61ec2785e532) using the implementation instruction provided in the document.
 - Create the [Condition : Domain Admin Account LockOut](/docs/588b31d4-04a3-4b39-af8c-6c1f24da0710) using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2025-10-24
+
+- Initial version of the document

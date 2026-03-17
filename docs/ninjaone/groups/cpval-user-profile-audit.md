@@ -8,6 +8,8 @@ description: 'This includes machines which are opted for User Profile Audit excl
 tags: ['report', 'security', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This includes machines which are opted for User Profile Audit excluding the doma
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-user-profile-audit.toml)
+
+## Changelog
+
+### 2025-12-18
+
+- Initial version of the document

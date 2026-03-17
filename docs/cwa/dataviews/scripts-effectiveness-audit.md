@@ -8,6 +8,8 @@ description: 'This document provides an overview of a Dataview that displays a s
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This Dataview displays a summary of all scripts run over the set script log rete
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/docs/71cf5ece-22b7-4b19-b4e8-6a048b2c2ecc/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

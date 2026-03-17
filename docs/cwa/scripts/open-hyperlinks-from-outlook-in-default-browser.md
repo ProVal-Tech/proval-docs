@@ -8,6 +8,8 @@ description: 'This document describes a script that updates the Outlook options 
 tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ To achieve this, the script likely modifies specific values in the Windows regis
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

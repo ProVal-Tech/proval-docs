@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Infrastructure Masters g
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The group contains the Infrastructure Masters.
 - **Description:** Contains Infrastructure Masters
 - Select the `Is Primary Domain Controller` custom field for criteria, `Equal` for comparator, and type `Yes` in the condition box.
 - Click the `Save` button at the top left to create the group.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

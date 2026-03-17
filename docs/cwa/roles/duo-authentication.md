@@ -8,6 +8,8 @@ description: 'This document provides a summary and settings for detecting the in
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This role denotes that the agent has the Duo Authentication app installed.
 | Detection String                                                                                   |
 |----------------------------------------------------------------------------------------------------|
 | \{%@powershell.exe "Get-ItemProperty HKLM:/SOFTWARE/Microsoft/Windows/CurrentVersion/Uninstall/* | Select-Object DisplayName | Format-Table -autosize" | Find /i "Duo Authentication"@%} |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

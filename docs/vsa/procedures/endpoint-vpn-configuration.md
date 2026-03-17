@@ -8,6 +8,8 @@ description: 'This document details the configuration of a VPN on endpoints usin
 tags: ['networking', 'security', 'setup', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Data must be manually populated in the Managed Variables for the endpoint's grou
 
 - `$env:SystemDrive//Users//Public//Desktop//<VPN_NAME>.lnk`
 - Agent Procedure log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This procedure deploys all updates including BIOS, firmware, and d
 tags: ['hp', 'firmware', 'bios', 'drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-22
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ For complete documentation on supported arguments, refer to: [HP Image Assistant
 - Script Logs
    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-log.txt`
    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-HPImageAssistant-error.txt`
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

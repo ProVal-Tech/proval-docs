@@ -8,6 +8,8 @@ description: 'This will get information about the current number of Hyper-V chec
 tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ This solution is built to get information about the current number of Hyper-V ch
 ## FAQ
 
 - This solution is built to alert for the older Hyper-V Checkpoints only.
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that polls 
 tags: ['disk', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ The script queries the endpoint for physical, non-removable drives with a capaci
 
 Agent Procedure Log  
 [EPM - Disk - Custom Field - xPVAL Drive List](/docs/3b56f103-7e5b-4f5b-a44d-92e5d6872c9a)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

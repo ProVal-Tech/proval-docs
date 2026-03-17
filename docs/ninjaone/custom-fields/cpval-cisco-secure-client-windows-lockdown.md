@@ -8,6 +8,8 @@ description: 'Check this box to lock Cisco Secure Client services and prevent an
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Check this box to lock Cisco Secure Client services and prevent any modification
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/b8b19272-05fb-475c-8837-22eade459b3a/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

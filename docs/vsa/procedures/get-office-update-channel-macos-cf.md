@@ -8,6 +8,8 @@ description: 'This agent procedure checks the update channel for Microsoft Offic
 tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -51,4 +53,10 @@ Agent Procedure Log
 ![Output Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_6.webp)  
 
 Custom Field  
-![Custom Field Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_7.webp)  
+![Custom Field Image 2](../../../static/img/docs/db1a41df-d87a-4a48-adbd-187b7c082834/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

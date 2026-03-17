@@ -8,6 +8,8 @@ description: 'This document describes a script that runs the Crystal Disk Info t
 tags: ['data-collection', 'disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -232,4 +234,10 @@ This pop-up box will appear.
 - Script log  
 ![Script Log Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_39.webp)  
 - Custom Field  
-![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.webp)  
+![Custom Field Output](../../../static/img/docs/37220488-64d2-4de9-8e65-1cd53f5dee3b/image_40.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

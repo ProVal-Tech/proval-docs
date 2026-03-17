@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,4 +56,10 @@ If Computer is selected:
   - If a value is missing for that target:  
     - Create the parameter for that target.  
   - If a value is present for that target:  
-    - Check overwrite; if not 1, exit with an error; otherwise, overwrite the current target's parameter value.  
+    - Check overwrite; if not 1, exit with an error; otherwise, overwrite the current target's parameter value.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

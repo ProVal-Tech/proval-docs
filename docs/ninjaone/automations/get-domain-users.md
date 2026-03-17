@@ -8,6 +8,8 @@ description: 'Exports a detailed report of all domain users to a CSV file from a
 tags: ['security', 'accounts', 'active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-03
 ---
 
 ## Overview
@@ -182,3 +184,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 - Activity Details  
 - C:\ProgramData\_Automation\Script\Get-DomainUsers\DomainUsers.csv
+
+## Changelog
+
+### 2025-06-03
+
+- Initial version of the document

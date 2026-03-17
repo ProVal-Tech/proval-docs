@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on deploying, monitor
 tags: ['custom-fields', 'deployment', 'dynamic-groups', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ Follow the steps below for the implementation:
 - Create Monitor: [CW RMM - Monitor - CRI Agent Deployment Status Check](/docs/9df5a58f-f44f-4af8-8620-c5670c9d8524)
 
 Follow the Monitor and Task implementation to complete the solution.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a monitor that detect
 tags: ['cluster', 'disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Should be targeted to a Cluster Detected group.
 Please follow the implementation document below to install this content:
 
 - [Import - Remote Monitor - Windows Cluster Shared Volume Detection](/docs/2fee5750-3a75-4256-b1b6-fcf2b81dccd6)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

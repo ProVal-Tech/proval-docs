@@ -8,6 +8,8 @@ description: 'Select Yes to exclude the device/location from DUO deployment auto
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/a27efdd4-32a9-4d9f-9aad-094543b49ffa/image5.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

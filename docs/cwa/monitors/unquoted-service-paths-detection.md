@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed to identify services
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ The monitor set will identify any service that has a space in the path but is no
 ## Target
 
 **Windows Machines:** The SQL used in the monitor set is limited to Windows machines only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

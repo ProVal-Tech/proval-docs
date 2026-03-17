@@ -8,6 +8,8 @@ description: 'RMM version of Network Adapter Solution. It manages network protoc
 tags: ['windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-06-23
 ---
 
 ## Purpose
@@ -26,4 +28,10 @@ This is the RMM version of Network Adapter Solution. It manages network protocol
 ## Implementation
 - Import all the custom fields from [Manage - Network Adapter Solutions Custom Field](/docs/97f24a5e-9b01-4a3c-8288-0aef911bf2ad)  
 - Create [Dynamic Group - Devices Opted for Network Adapter Solution](/docs/31025444-7b65-4fa5-9ca3-89d2f5b06a55)  
-- Create the [Task - Manage - Network Adapter Protocols](/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f)  
+- Create the [Task - Manage - Network Adapter Protocols](/docs/2dbbb9c6-8bb7-4f1a-a050-7cb9f4b2382f)
+
+## Changelog
+
+### 2025-06-16
+
+- Initial version of the document

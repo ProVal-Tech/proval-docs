@@ -8,6 +8,8 @@ description: 'This script uninstalls the Evo Credential Provider from Windows ma
 tags: ['software', 'uninstallation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-19
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script is a CW Automate adaptation of the PowerShell script [InstallEvoAgen
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-08-19
+
+- Initial version of the document

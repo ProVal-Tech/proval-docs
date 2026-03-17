@@ -8,6 +8,8 @@ description: 'This document outlines the steps required to apply a remote monito
 tags: ['connectwise', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Steps to Apply Remote Monitor
@@ -90,3 +92,9 @@ Now execute your query from a RAWSQL monitor set.
 ### 5.
 Locate your remote monitor by opening the group(s) remote monitors tab.  
 **DO NOT** apply any alert template to this monitor set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

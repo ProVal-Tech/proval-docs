@@ -8,6 +8,8 @@ description: 'How to create a new document in the documentation system.'
 tags: [ ]
 draft: false
 unlisted: true
+last_update:
+  date: 2025-04-09
 ---
 
 Creating a new document in the documentation system is a simple process. This guide will walk you through the steps to create a new document.
@@ -27,11 +29,31 @@ Creating a new document in the documentation system is a simple process. This gu
 - unlisted - Set to `true` if the document should not be listed in the documentation index.
 
 5. Fill out the document with the appropriate content based on the template.
-6. Commit your changes and push your branch to the repository.
-7. Create a pull request to merge your branch into the `main` branch.
-8. Once your pull request is approved and merged, your document will be live on the documentation site.
+6. Ensure a `## Changelog` section exists at the very bottom of the document. This section is used to track document changes over time and is parsed into the site's JSON data. The format is:
+
+```markdown
+## Changelog
+
+### YYYY-MM-DD
+
+- Description of change
+- Another change
+```
+
+- Each date subheading uses the ISO 8601 format (`YYYY-MM-DD`).
+- Changes are listed as bullet points under the date.
+- Entries are ordered newest-first (most recent date at the top).
+- An empty `## Changelog` section (no entries) is acceptable for new documents. Add entries as changes are made.
+
+7. Commit your changes and push your branch to the repository.
+8. Create a pull request to merge your branch into the `main` branch.
+9. Once your pull request is approved and merged, your document will be live on the documentation site.
 
 # FAQ
+
+### 2025-01-30
+
+- Initial version of the document
 
 ## How do I know which tags to use?
 Tags are listed in the [tags](../tags.yml) file. Choose from the list of available tags there. Try not to exceed 5 tags per document.

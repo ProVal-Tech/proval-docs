@@ -8,6 +8,8 @@ description: 'This document outlines the process of auditing and implementing ha
 tags: ['gpo', 'iis', 'networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This document details the process of auditing and establishing hardening rules a
 ## Output
 
 Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

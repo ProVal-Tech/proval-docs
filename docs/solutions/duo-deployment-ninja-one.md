@@ -8,6 +8,8 @@ description: 'This solution is designed to configure the automatic deployment of
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -121,3 +123,9 @@ Yes, the deployment process can be customized by selecting the appropriate optio
 ### 5. What happens if Duo’s service is unreachable during login?
 
 The `cPVAL DUO FAILOPEN` custom field determines the login behavior when Duo’s service is unavailable. If it is `enabled`, login is permitted; otherwise, access is denied.
+
+## Changelog
+
+### 2025-04-15
+
+- Initial version of the document

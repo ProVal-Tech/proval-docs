@@ -8,6 +8,8 @@ description: 'Automate role to detect if a Windows agent has secure boot enabled
 tags: ['windows','uefi','secureboot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-29
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Automate role to detect if a Windows agent has secure boot enabled. If the Windo
 ### Applicable OS
 
 - `Windows`
+
+## Changelog
+
+### 2025-09-19
+
+- Initial version of the document

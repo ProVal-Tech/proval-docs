@@ -8,6 +8,8 @@ description: 'This custom field controls whether sleep mode is disabled based on
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This custom field controls whether sleep mode is disabled based on the selected 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/b0c22386-feb6-427c-b1fd-e29a9c4863a3/image1.webp)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

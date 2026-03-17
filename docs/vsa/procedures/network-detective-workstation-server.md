@@ -8,6 +8,8 @@ description: 'This document outlines the procedures for deploying the Network De
 tags: ['installation', 'networking', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Network Detective Procedures
@@ -1723,3 +1725,9 @@ Directory: VSASharedFiles/Procedures/Network Detective
     }
 ]
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

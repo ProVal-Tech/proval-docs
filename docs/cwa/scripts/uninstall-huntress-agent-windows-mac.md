@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['security', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This script can be used to uninstall the Huntress Agent from both Windows and Ma
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

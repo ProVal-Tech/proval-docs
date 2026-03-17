@@ -8,6 +8,8 @@ description: 'Enables Windows Firewall on all profiles on the local machine.'
 tags: ['networking', 'security', 'firewall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -29,4 +31,10 @@ Enables Windows Firewall on all profiles on the local machine.
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

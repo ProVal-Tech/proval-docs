@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring event logs gener
 tags: ['networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ The remote monitor should be limited to the `Computers - Dell Servers` search on
 ## Implementation
 
 [Implement - Dell Hardware Monitoring](/docs/2be5ccc9-2700-4f5d-9b77-30567de4cfdf)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

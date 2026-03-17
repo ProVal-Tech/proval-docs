@@ -8,6 +8,8 @@ description: 'Blocker Mode is a required parameter that needs to be passed durin
 tags:  ['security','application','security','application','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-16
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Blocker Mode is a required parameter that needs to be passed during the AutoElev
 ## Sample Screenshot
 
 ![Blocker Mode](../../../static/img/docs/dba79f8f-132d-41cd-ae1c-6da6964bc418/blockermode.webp)
+
+## Changelog
+
+### 2025-11-27
+
+- Initial version of the document

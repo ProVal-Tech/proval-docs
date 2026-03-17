@@ -8,6 +8,8 @@ description: 'Documentation for the Install-SnapAgent command to install SnapAge
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -44,3 +46,9 @@ Installs SnapAgent. A URL is necessary to install it.
 ## Output
 - `.\Install-SnapAgent-Log.txt`
 - `.\Install-SnapAgent-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

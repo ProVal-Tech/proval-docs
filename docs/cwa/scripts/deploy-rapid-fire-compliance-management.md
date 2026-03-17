@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the script used
 tags: ['compliance', 'installation', 'netframework', 'software', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -74,3 +76,9 @@ Failed to install Compliance Management Agent on %computername% at %clientname%.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a script designed to move an agent to reti
 tags: ['database', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This script will move the agent it is run against to retired assets. This can be
 ## Process
 
 This script runs a SQL query against the machine to retire it.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

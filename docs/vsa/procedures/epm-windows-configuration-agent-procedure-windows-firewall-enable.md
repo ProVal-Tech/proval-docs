@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for enabling Windows F
 tags: ['firewall', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -90,3 +92,9 @@ The agent procedure checks whether the machine has the firewall enabled. If not,
 Procedure Logs
 ## Attachments
 [Procedure_Windows_Firewall_Enable_.xml](<../../../static/attachments/itg/11281545/Procedure_Windows_Firewall_Enable_.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

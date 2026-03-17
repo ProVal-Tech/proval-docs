@@ -8,6 +8,8 @@ description: 'Documentation for the Clear-ChromiumCache command to clear browser
 tags: ['chrome', 'setup', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -37,3 +39,9 @@ Clears browser caches for Chromium-based browsers.
 
 ## Output
 `.\Clear-ChromiumCache-log.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

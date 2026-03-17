@@ -8,6 +8,8 @@ description: 'This document outlines a solution that alerts administrators if a 
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This document alerts administrators if a computer or multiple computers have the
 ## Target
 
 This targets the Webroot Group created in the solution document in the Audit Process Setup section.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

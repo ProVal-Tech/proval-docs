@@ -8,6 +8,8 @@ description: 'Documentation for the Get-NewLocalAdmin command to get user accoun
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -35,3 +37,9 @@ If the script has not been run previously, the admin data is saved to the table,
 
 - `Get-NewLocalAdmin_log`
 - `Get-NewLocalAdmin_admins`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

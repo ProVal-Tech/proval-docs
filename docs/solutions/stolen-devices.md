@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for technicians on ho
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ The purpose of this solution is to detect and lockdown machines that are marked 
 - Assign the alert template to the monitor set.
 - Mark the `Mark System As Stolen` EDF on the concerned computers. Marking the `System Lockdown` EDF will enable the script's feature to BitLocker and shutdown the computer.  
   ![Mark System As Stolen](../../static/img/docs/7284d09c-ce9b-4916-847b-b61688aff7f0/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

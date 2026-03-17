@@ -8,6 +8,8 @@ description: 'This document provides a summary of a view that displays all machi
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 # Summary
@@ -21,3 +23,9 @@ The following filters are applied to this view:
 | Filter Name       | Advanced Filter? | Filter Value |
 | ----------------- | ---------------- | ------------ |
 | cPVAL User Status | Yes              | *present*    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

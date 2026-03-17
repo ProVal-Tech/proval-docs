@@ -8,6 +8,8 @@ description: 'This includes the machines where NTLMv1.1 is enabled.'
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This includes the machines where NTLMv1.1 is enabled.
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-machines-with-ntlmv11-enabled.toml)
+
+## Changelog
+
+### 2026-02-06
+
+- Initial version of the document

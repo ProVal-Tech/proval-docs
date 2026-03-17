@@ -8,6 +8,8 @@ description: 'This document provides a temporary workaround for a bug in the CWA
 tags: ['active-directory', 'cleanup', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -101,3 +103,9 @@ The script [CWM - Automate - Clean up AD plugin](/docs/fc26cfc8-33ff-405d-ba3a-b
 ## FAQ
 
 *No FAQs available at this time.*
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

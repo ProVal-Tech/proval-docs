@@ -288,3 +288,9 @@ FROM
       approvalpolicycount = 0
   ) AS CountNotSet
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

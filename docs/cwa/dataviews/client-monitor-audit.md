@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the monitor list at 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This dataview provides a monitor list at the client level. It shows a list of th
 | Monitor Type         | The type of monitor applied.                        |
 | Alert Template Name   | Alert template attached to the monitor.            |
 | Ticket Category      | Ticket category associated with the monitor.       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

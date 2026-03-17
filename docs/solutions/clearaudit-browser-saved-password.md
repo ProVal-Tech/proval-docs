@@ -8,6 +8,8 @@ description: 'This document outlines a solution for clearing or auditing saved p
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ This solution is designed to perform the clearing or auditing of saved passwords
 - (Optional) Create the [Monitor - Browser Saved Password Failure Detection](/docs/62efcaa3-e03b-4500-a48a-f472a82f039f) and follow the deployment instructions. This should be created only if the partner approves it.
 
 ## FAQ
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

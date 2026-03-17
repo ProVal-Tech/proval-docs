@@ -8,6 +8,8 @@ description: 'This document outlines the steps to uninstall the Senteon Agent fr
 tags: ['software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,4 +34,10 @@ Proval Plug & Play Procedure: The agent procedure requires no configuration.
 
 Agent Procedure Log Entry  
 **Success**  
-![Image](../../../static/img/docs/2603fc00-ac56-4466-b220-f2484ceef424/image_3.webp)  
+![Image](../../../static/img/docs/2603fc00-ac56-4466-b220-f2484ceef424/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

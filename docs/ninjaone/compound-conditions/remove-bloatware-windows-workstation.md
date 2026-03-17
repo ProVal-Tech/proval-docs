@@ -8,6 +8,8 @@ description: 'This condition triggers the Remove Bloatware script on Windows wor
 tags: ['windows', 'setup', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This condition triggers the [Remove Bloatware](/docs/e921882d-f1f2-492a-8cd0-58d
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/remove-bloatware-windows-workstation.toml)
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

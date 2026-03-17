@@ -8,6 +8,8 @@ description: 'This document outlines a dataview for detecting whether SMB1 is en
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This dataview will show if SMB1 is enabled on the endpoint. SMB1 has been deprec
 
 - Apply and import the remote monitors to the Managed Service Plan groups' Windows machines.
 - Import the dataview.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

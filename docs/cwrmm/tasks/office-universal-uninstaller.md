@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on using the Office U
 tags: ['setup', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -118,3 +120,9 @@ Then click on **Schedule** and provide the parameter details as necessary for th
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Clear-ChromiumHomepage command to clear enfo
 tags: ['chrome', 'setup', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -30,3 +32,9 @@ Removes enforced homepages in Chrome and Edge. After running, user configuration
 
 ## Output
 `.\\Set-ChromiumHomepage-log.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

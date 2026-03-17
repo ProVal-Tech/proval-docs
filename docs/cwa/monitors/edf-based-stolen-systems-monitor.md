@@ -8,6 +8,8 @@ description: 'This document outlines the execution of the Lock Stolen System scr
 tags: ['encryption', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This document executes the [SEC - Encryption - Script - Lock Stolen System](/doc
 - `Marked as Stolen` Group
 
 ![Image](../../../static/img/docs/c528df82-8309-4fc8-898e-db75e13a594d/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

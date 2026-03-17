@@ -8,6 +8,8 @@ description: 'Runs the Cisco Secure Client - Package Installation [Macintosh] au
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Runs the [Cisco Secure Client - Package Installation [Macintosh]](/docs/33918565
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/cisco-secure-client-package-installation-macintosh.toml)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

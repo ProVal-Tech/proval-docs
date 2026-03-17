@@ -8,6 +8,8 @@ description: 'This document details the implementation of an internet speed audi
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ The internet speed audit solution measures the network speed that the machine is
 6. Assign the monitor to whatever groups you would like audited (e.g., Managed Servers 24x7).  
 7. Assign the Alert Template to the Monitor and validate that there are results showing.  
 8. Run the monitor to begin the auditing.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

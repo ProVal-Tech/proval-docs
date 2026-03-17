@@ -8,6 +8,8 @@ description: 'This PowerShell script automates the configuration of user-level O
 tags: ['storage', 'onedrive', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-09
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ Location of output for log, result, and error files.
     - .\Update-OneDriveStoragePolicy-data.txt
     - .\Update-OneDriveStoragePolicy-error.txt
     - Script log
+
+## Changelog
+
+### 2025-10-01
+
+- Initial version of the document

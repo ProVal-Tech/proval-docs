@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed to detect Hyper-V ho
 tags: ['backup', 'hyper-v', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ TESTDNS01 replication state: Warning
 
 Please follow the article below for the implementation:  
 [Import - Remote Monitor - Hyper-V Replication Status Approved](/docs/f201b6f8-2844-484b-b3f8-79e1fd76e819)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

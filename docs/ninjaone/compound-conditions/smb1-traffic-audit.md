@@ -8,6 +8,8 @@ description: 'This Compound Condition creates an alert on Servers with SMB1 Prot
 tags: ['alerting', 'auditing', 'eventlogs', 'smb']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This Compound Condition creates an alert on Servers with SMB1 Protocol enabled a
 ## Compound Condition Creation 
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/smb1-access-audit-and-detection.toml)
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

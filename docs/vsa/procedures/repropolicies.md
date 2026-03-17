@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the parameters requi
 tags: ['database', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,4 +21,10 @@ Clear Overrides and Reprocess Policies
 - **credtype**: required. Either [sql] or [windows].  
 - **server**: required. The SQL server name.  
 - **user**: required if using SQL authentication. The username of the SQL account.  
-- **password**: required if using SQL authentication. The password of the SQL account.  
+- **password**: required if using SQL authentication. The password of the SQL account.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

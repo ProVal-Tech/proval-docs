@@ -19,3 +19,9 @@ This document provides information on fully decrypting machines using BitLocker.
 | Detection String                                                                                                                                       | Comparator | Result        | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------------|----------------|
 | `%@powershell.exe -nologo -noprofile -command "Get-BitLockerVolume -MountPoint "C:" | Select-Object -ExpandProperty VolumeStatus"@% | Contains    | FullyDecrypted | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

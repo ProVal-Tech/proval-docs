@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the PDC Emulator ro
 tags: ['windows', 'dynamic-groups', 'active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/4cccc5a2-14f6-4fb0-aa05-1697b09b71f3/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script that r
 tags: ['dns', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The script retrieves details about accessible network adapters from a Windows co
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on validating the Sen
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -286,4 +288,10 @@ Click the `Run` button to initiate the schedule.
 ## Output
 
 - Custom Fields  
-![Custom Fields](../../../static/img/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079/image_41.webp)  
+![Custom Fields](../../../static/img/docs/36cc3fe0-538d-49f8-ba2d-1c09c35df079/image_41.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

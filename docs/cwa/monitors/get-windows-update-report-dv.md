@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a monitor set designed to exec
 tags: ['patching', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The purpose of this monitor set is to execute the [CWM - Automate - Script - Win
 ## Target
 
 Limited to the Windows machines with Managed Patch Policy via SQL query.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

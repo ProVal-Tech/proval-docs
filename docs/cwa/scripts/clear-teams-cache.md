@@ -8,6 +8,8 @@ description: 'This document provides a script for clearing the cache of installe
 tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This script clears the cache for installed Microsoft Teams on Windows machines.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to set up a mon
 tags: ['huntress', 'setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Step 1
@@ -122,3 +124,9 @@ Check the concerned groups and ensure the monitor set is created and configured 
 Set the alert template to ` '△ Custom - Ticket Creation - Computer [Failures Only]'` on the monitor 
 
 ![Image](../../../static/img/docs/6c4f37b4-d460-464b-bc03-fd1d46be2b0a/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

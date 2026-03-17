@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Dataview that displays i
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The Dataview displays the installed [Printer Driver](https://www.technipages.com
 | Script Run Time       | Last run time of [CWM - Automate - Script - Get - Printer Driver Inventory [DV]](/docs/92357c7e-dc65-400a-9d61-4d3243a334d4) |
 | Last Contact          | Last Contact with RMM                                |
 | Days Since Last Contact| Days Since Last Contact with RMM                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

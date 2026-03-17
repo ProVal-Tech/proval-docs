@@ -8,6 +8,8 @@ description: 'This script automates health checks, self-healing, and conditional
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -91,3 +93,9 @@ Runs a health check, initiates self-healing actions, and restarts only the speci
 
 - .\Test-ADHealthAndRepair-log.txt
 - .\Test-ADHealthAndRepair-error.txt
+
+## Changelog
+
+### 2025-07-31
+
+- Initial version of the document

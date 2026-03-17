@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the ESXi hosts 
 tags: ['cpu', 'memory', 'storage', 'update', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This dataview shows useful information about ESXi hosts.
 | Is SSD                          | Indicates whether the attached storage device is SSD or not.    |
 | Storage Last Update             | Displays the last time the storage information of the host was updated in Automate. |
 | Last Update                     | Displays the last time the host's information was updated in Automate. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

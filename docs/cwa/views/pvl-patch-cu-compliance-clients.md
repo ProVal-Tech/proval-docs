@@ -8,6 +8,8 @@ description: 'This document outlines the SQL query used for the Patching and CU 
 tags: ['database', 'performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -48,3 +50,9 @@ The data is grouped by client.
 | CU Age - 91-135 %             | Percentage of computers where the installed latest cumulative update's release date falls between 91 to 135 days. ( `CU Age - 91-135` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
 | CU Age - 136+ %               | Percentage of computers where the release date of the installed latest cumulative update is at least 136 days ago. ( `CU Age - 136+` divided by `Supported CU Eligible Computers` multiplied by `100`)  |
 | Total Eligible Computers - CU  | Total number of supported Windows computers that have been online in Automate within the past 30 days and exist in the [pvl_win_latest_installed_cu](/docs/c03e4def-7efe-4a8b-99e9-d99ac2c65f5a) table. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

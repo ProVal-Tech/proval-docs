@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that disp
 tags: ['database', 'patching', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ Sample Screenshot:
 ![Step 2](../../../static/img/docs/bfe883fc-125c-44fc-b2d6-beb27efefd8a/image_3.webp)  
 
 Once you receive the CSV in your email, you can easily apply the required filters.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

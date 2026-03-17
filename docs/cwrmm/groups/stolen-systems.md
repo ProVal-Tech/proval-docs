@@ -8,6 +8,8 @@ description: 'This is the part of Lock Stolen System'
 tags: ['connectwise']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Once the above criteria are met, click the Save button to save the group.
 ![image22](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image22.webp)
 
 ![image23](../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image23.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

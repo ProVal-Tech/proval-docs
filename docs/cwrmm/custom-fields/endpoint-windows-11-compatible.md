@@ -8,6 +8,8 @@ description: 'This document provides a summary and detailed information about th
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The Windows 10/11 compatibility check indicates whether the computer meets the r
 
 ![Screenshot 1](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/99719e54-ce8f-4b76-93f4-cc832a3b88cf/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

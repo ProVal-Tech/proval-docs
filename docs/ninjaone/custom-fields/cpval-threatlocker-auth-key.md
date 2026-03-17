@@ -8,6 +8,8 @@ description: 'Threatlocker Authentication Key to deploy threatlocker Agent on wi
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Threatlocker Authentication Key to deploy ThreatLocker Agent on windows machines
 ## Sample Screenshot
 
 ![Step1](../../../static/img/docs/0ff9eab8-6df8-4154-9ecc-4f5bdedd648a/authkey.webp)
+
+## Changelog
+
+### 2025-05-16
+
+- Initial version of the document

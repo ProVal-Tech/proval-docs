@@ -8,6 +8,8 @@ description: 'This dataview displays the Windows 10 and Windows 2012/2012 R2 ESU
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-23
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview displays the Windows 10 and Windows 2012/2012 R2 ESU extended lice
 | Operating System | Operating system information of the agent |
 | LastContact | Last contact of the agent with the CW Automate |
 | ESU Status | ESU license renewal status of the agent |
+
+## Changelog
+
+### 2025-10-23
+
+- Initial version of the document

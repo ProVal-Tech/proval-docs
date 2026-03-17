@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating Remote Monitors fo
 tags: ['disk', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -142,3 +144,9 @@ If the "Average Disk Queue Length" is greater than 2 per hard disk for a prolong
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

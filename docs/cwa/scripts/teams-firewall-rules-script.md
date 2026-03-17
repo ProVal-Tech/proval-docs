@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script that sets firewall rule
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script executes PowerShell commands that set rules for Teams for all users 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

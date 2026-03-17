@@ -8,6 +8,8 @@ description: 'This document provides details about the User login/logout data ta
 tags: ['database', 'logging', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ This table stores the User login/logout data.
 | ConnectionType    | INT     | An integer value representing the user connection type (e.g., remote, network, or no interaction). |
 | Action            | INT     | Indicates whether the trace found was for login or logout.                                     |
 | ScriptRanDate     | DATETIME| The date when the script last ran.                                                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

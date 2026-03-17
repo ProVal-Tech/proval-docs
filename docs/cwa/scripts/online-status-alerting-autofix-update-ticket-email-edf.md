@@ -1,13 +1,15 @@
 ---
 id: '71b6a39c-0d61-4959-8f1e-69b1cc84d182'
 slug: /71b6a39c-0d61-4959-8f1e-69b1cc84d182
-title: 'Online Status Alerting - Autofix - Update Ticket + Email EDF'
-title_meta: 'Online Status Alerting - Autofix - Update Ticket + Email EDF'
+title: 'Online Status Alerting - Autofix - Update Ticket + Email [EDF]'
+title_meta: 'Online Status Alerting - Autofix - Update Ticket + Email [ED]F'
 keywords: ['online', 'status', 'alerting', 'ticket', 'management', 'notification']
 description: 'This document provides an overview of the Online Status Alerting Auto-Fix script designed to manage ticket statuses when machines come back online or are restarted. It details the required system properties and user parameters, along with dependencies and sample runs to guide users in implementing the script effectively.'
 tags: ['alerting', 'email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -30,7 +32,8 @@ After importing the script, it should either be debugged or run against any comp
 
 ## Dependencies
 
-- [CWM - Automate - Script - Online Status Alerting - Update EDFs [Param]](/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e)
+- [Script - Online Status Alerting - Update EDFs [Param]](/docs/79f11a31-7ae1-4e12-a9d7-581e809aaa2e)
+- [Solution - Online Status Alerting](/docs/a8e69e42-afde-4300-9665-9c1148c8f85e)
 
 ### System Properties
 
@@ -68,3 +71,9 @@ After importing the script, it should either be debugged or run against any comp
 
 - Email
 - Ticket status change to the desired status as per configuration done in the system property "Status_To_Change_To."
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

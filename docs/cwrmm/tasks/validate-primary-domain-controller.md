@@ -8,6 +8,8 @@ description: 'This document outlines the process to validate whether an endpoint
 tags: ['domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -152,3 +154,9 @@ The task will start appearing in the Scheduled Tasks.
 ## Output
 
 - Custom Field ![Custom Field Output](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_30.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

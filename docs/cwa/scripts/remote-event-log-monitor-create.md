@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a state-based 
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -132,3 +134,9 @@ TimeCreated                            Id LevelDisplayName Message
 4/18/2023 9:06:48 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 4/18/2023 9:01:58 AM               7040 Information      The start type of the Background Intelligent Transfer Service s...
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

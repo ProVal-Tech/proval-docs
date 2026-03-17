@@ -8,6 +8,8 @@ description: 'This document outlines the Login Bug Monitor designed to detect ag
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This monitor is a global monitor.
 ## Alert Template
 
 `△ Custom - Ticket Creation - Computer`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

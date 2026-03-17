@@ -8,6 +8,8 @@ description: 'Triggers an alert when any errors are detected in DFS Replication 
 tags: ['auditing','eventlogs','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Triggers an alert when any errors are detected in DFS Replication on the server,
 ## Compound Condition Creation 
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/dfs-replication-health-check.toml)
+
+## Changelog
+
+### 2025-10-07
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Set-NetAdapterDNS command to append a DNS se
 tags: ['dns', 'networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -36,3 +38,9 @@ This command appends the DNS address `1.1.1.1` to the end of all active, physica
 ## Output
 - `.\Set-NetAdapterDNS-log.txt`
 - `.\Set-NetAdapterDNS-data.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

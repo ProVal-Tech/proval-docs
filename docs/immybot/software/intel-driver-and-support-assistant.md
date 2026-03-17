@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for Intel® Driver & Support Assista
 tags: ['drivers', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Description
@@ -15,3 +17,9 @@ unlisted: false
 An ImmyBot software installer for [Intel® Driver & Support Assistant](https://www.intel.com/content/www/us/en/support/intel-driver-support-assistant.html).
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/intel-driver-and-support-assistant.toml)
+
+## Changelog
+
+### 2025-05-09
+
+- Initial version of the document

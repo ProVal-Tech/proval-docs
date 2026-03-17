@@ -8,6 +8,8 @@ description: 'This script automates health checks, self-healing, and conditional
 tags: ['active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Overview
@@ -58,3 +60,13 @@ Set the required arguments and click the `Run` button to run the script.
 - Refer to the logs: "C:\ProgramData\_automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepair-log.txt"
 - Refer to the error logs: "C:\ProgramData\_automation\Script\Test-ADHealthAndRepair\Test-ADHealthAndRepair-error.txt"
 - Custom field - [cPVAL AD Health Repair Result](/docs/8777497d-0dd3-4f6e-af60-31e6d7debe58)
+
+## Changelog
+
+### 2025-12-17
+
+- Updated the script to show the AD health status in the Custom Field `cPVAL AD Health & Repair Result`
+
+### 2025-08-05
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to install or 
 tags: ['installation', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -611,4 +613,10 @@ This screen will appear.
 Custom Field  
 ![Output 1](../../../static/img/docs/47da7c82-7c27-4730-987a-2d32e22415fa/image_77.webp)  
 
-Script Log  
+Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

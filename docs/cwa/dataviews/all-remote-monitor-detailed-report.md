@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of custom remote monito
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Color coding was applied to the columns "Monitor Nature," "Affected Computers," 
 - **Monitor Nature**: The "ProVal Monitor" is highlighted in green to draw attention to the ProVal remote monitors in the environment.
 - **Script Nature**: The "ProVal Script" is highlighted in green to indicate where ProVal scripts are used as an autofix.
 - **Affected Computers**: The "0" is displayed in bold/italic font using red color to indicate remote monitors that are not applied to any computers.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

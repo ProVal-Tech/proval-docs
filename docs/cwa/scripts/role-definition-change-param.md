@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script designed to apply o
 tags: ['database', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ An SQL query is executed against the Automate DB to apply or ignore the role on 
 - **Action Missing** - Action not provided in parameters
   
 - **Exit with Error** - Script failed to execute properly
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of internal monito
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This document lists all the internal monitors that contain 'proval' or 'custom' 
 - plugin_prosync_monitors
 - agents
 - h_agents
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

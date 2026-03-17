@@ -8,6 +8,8 @@ description: 'This solution contains the contents that perform the Datto Windows
 tags: ['datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-07
 ---
 
 ## Purpose
@@ -28,3 +30,9 @@ This solution contains the contents that perform the Datto Windows Agent or Datt
 - Import the [Monitor -Uninstall Datto Backup tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c)
 - Import the **Alert Template** `△ Custom - Execute Script - Uninstall Datto Backup Tool`
 - Follow the [Monitor -Uninstall Datto Backup tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c) documentation to enable its implementation.
+
+## Changelog
+
+### 2025-11-06
+
+- Initial version of the document

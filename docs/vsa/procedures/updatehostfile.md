@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that update
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
@@ -17,4 +19,10 @@ Updates System Hosts File
 ## Parameters:
 
 - **ip**  
-- **host**  
+- **host**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

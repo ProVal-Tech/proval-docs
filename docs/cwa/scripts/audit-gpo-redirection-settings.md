@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to audit registry setting
 tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This script will audit the registry settings associated with any group policy re
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

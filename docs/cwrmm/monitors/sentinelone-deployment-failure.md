@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to create a monitor in
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -57,4 +59,10 @@ This monitor will create tickets if [CW RMM - Task - SentinelOne Deployment](/do
    ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_8.webp)  
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
-   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_9.webp)  
+   ![Image](../../../static/img/docs/9e16691c-a81f-4a59-865c-ac38530ae29f/image_9.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

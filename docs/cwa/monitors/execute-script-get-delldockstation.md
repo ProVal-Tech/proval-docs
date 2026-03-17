@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a monitor that executes the De
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Windows 10 and 11 machines.
 `△ Custom - Execute Script - Get-DellDockStation`
 
 The alert template should execute the [Script - Get-DellDockStation](/docs/910bdf04-c4ab-413d-a1a6-aafcd6d583d0) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process for identifying Windows 10 and 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ This document identifies Windows 10 and 11 computers with the presence of Winget
     **Condition:** `OS` `Contains any of` `Microsoft Windows 10 and 11`
 
 12. Click the `Save` button
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

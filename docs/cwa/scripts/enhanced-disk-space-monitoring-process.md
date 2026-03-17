@@ -8,6 +8,8 @@ description: 'This document details the EPM Disk Internal Monitor Autofix Script
 tags: ['cleanup', 'disk', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -175,3 +177,13 @@ If this is an error, then the compressed logs may be unavailable.
 ![Screenshot 1](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_3.webp)
 
 ![Screenshot 2](../../../static/img/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3/image_4.webp)
+
+## Changelog
+
+### 2026-01-14
+
+- The monitor was inconsistently triggering both failures and successes on machines, even when the drive space was below the defined threshold. This resulted in a large number of unnecessary tickets being generated. To address this, we updated the script to validate the actual drive space before marking a success status and closing the ticket. Additionally, we implemented logic to exit the script immediately if it was already queued as running or scheduled. This prevents duplicate executions and eliminates redundant ticket creation.
+
+### 2025-04-10
+
+- Initial version of the document

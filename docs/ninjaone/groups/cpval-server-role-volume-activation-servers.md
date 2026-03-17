@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Volume Activati
 tags: ['windows', 'dynamic-groups']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/77a5bf0c-9f6e-49ca-aec3-dc22671bc5ac/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

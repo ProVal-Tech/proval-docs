@@ -8,6 +8,8 @@ description: 'This client script creates a ticket if the applied user classes pe
 tags: ['permissions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-07
 ---
 
 ## Summary
@@ -71,3 +73,9 @@ If the changes found then it creates the ticket with the details.
    Automate User(s) Permission Change Detected. Refer to the below logs for the detail:
    
    @PermissionChangeAudit@
+
+## Changelog
+
+### 2025-10-01
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing or upda
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-27
 ---
 
 ## Summary
@@ -108,3 +110,13 @@ duo-win-login-latest.exe /S /V"/qn IKEY=\"Your_IKEY\" SKEY=\"Your_SKEY\" HOST=\"
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-06-27
+
+- `Duo Authentication Version` EDF was introduced as script/monitor was not installing or updating DUO on machines where the application version is not detected in the Software tab. This EDF is filled by the Script itself.
+
+### 2025-04-10
+
+- Initial version of the document

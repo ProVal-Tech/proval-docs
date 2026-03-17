@@ -8,6 +8,8 @@ description: 'This document describes a script designed to check for Hyper-V mac
 tags: ['hyper-v', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The script runs a PowerShell script to get the NumaStatus. The PowerShell then h
 ## Output
 
 - Script state
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

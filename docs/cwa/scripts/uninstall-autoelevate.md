@@ -8,6 +8,8 @@ description: 'This script assists in uninstalling the AutoElevate applications f
 tags: ['uninstallation', 'deployment', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-19
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ If an installation of agent has taken place but has not shown up in the Admin Po
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2026-01-15
+
+- Initial version of the document

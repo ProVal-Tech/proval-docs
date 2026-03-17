@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on removing all McAfee pro
 tags: ['application', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-04
 ---
 
 ## Overview
@@ -48,3 +50,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments
 [Remove McAfee Software](../../../static/attachments/Remove%20McAfee%20Software.cpt)
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

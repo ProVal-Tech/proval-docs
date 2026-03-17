@@ -8,6 +8,8 @@ description: 'This document outlines a solution to gather, store, and display th
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -28,3 +30,9 @@ This solution will gather, store, and display the result of the `query session` 
 - Import the [CWM - Automate - Dataview - Windows Sessions [Script]](/docs/7eb288b7-a87b-4f1a-a3a7-7f785f74150a) dataview.
 - Execute the script against any computer to create the [CWM - Automate - Custom Table - pvl_windows_sessions](/docs/a5bff446-3e21-42cf-8208-d0de57f497ee) table.
 - Reference the dataview for results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

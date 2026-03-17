@@ -37,4 +37,10 @@ Supported Visual Studio versions:
 
 - .\Update-VisualStudio-log.txt  
 - .\Update-VisualStudio-data.txt  
-- .\Update-VisualStudio-error.txt  
+- .\Update-VisualStudio-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

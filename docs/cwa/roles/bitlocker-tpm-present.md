@@ -8,6 +8,8 @@ description: 'This document provides a summary and settings for checking if the 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines whether the agent has Bitlocker TPM present.
 | Detection String                                                                                     | Comparator | Result | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `\{%@C:/WINDOWS/system32/WindowsPowerShell/v1.0/powershell.exe -command "Get-Tpm|select -ExpandProperty TPMPresent"@%}` | Contains   | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Automates BitLocker initialization on Windows devices using NinjaO
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -241,3 +243,9 @@ Create the following compound conditions as described in the documentation:
 ### **Q.** When should I use the "Force" option?
 
 **A:** You should generally leave this unchecked for normal operations. It is best used for troubleshooting or remediating devices with "stuck" or inconsistent encryption states. For example, if you suspect an encrypted drive has a corrupted configuration, enabling **Force** ensures a clean application of your policy from scratch. **Note:** Since this triggers a full decryption and re-encryption cycle, the process can take a significant amount of time to complete.
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

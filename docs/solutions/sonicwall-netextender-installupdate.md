@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing and upd
 tags: ['installation', 'software', 'update', 'sonicwall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ This document provides a comprehensive guide on installing and updating the Soni
    - Set the value to 1 in the highlighted part of the screenshot to install the application on machines that are missing it. Leave it as 0 to only update the application on machines that already have it installed.
 
 ![Image1](../../static/img/docs/70d9b103-f73f-4e68-a4aa-d2651e44d09a/image-1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

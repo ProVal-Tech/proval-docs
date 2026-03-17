@@ -8,6 +8,8 @@ description: 'Documentation for the Sync-ProValScripts command to synchronize a 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -53,3 +55,9 @@ Sets up the environment if required and syncs any new or changed scripts from th
 | `GitHubEmail`     | False     | `'support@provaltech.com'`| String    | The email address to use for the SSH key generation. |
 | `ScriptTypes`     | False     | `('.ps1', '.bat', '.py')` | String[]  | List of extensions that should be synced. |
 | `Force`           | False     |                            | Switch    | Use this switch to force a local diff check between the GitHub repo and the file server repo, even if the origin GitHub repo has no pending changes. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

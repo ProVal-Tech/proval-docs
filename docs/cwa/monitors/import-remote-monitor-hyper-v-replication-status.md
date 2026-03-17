@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on implementing monitoring
 tags: ['sql', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Implementation
@@ -80,3 +82,9 @@ unlisted: false
    ```
 
 3. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

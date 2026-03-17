@@ -8,6 +8,8 @@ description: 'This document outlines a remote PowerShell monitor designed to det
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Windows Machine
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the IdleMon Report, detailin
 tags: ['domain', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The purpose of the dataview is to display the historical data of the user's idle
 ## Sample Screenshot
 
 ![Sample Screenshot](../../../static/img/docs/a9dabf31-db77-49f9-9403-22f1a259678e/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

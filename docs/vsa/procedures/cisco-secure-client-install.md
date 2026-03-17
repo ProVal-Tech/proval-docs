@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing the Cis
 tags: ['installation', 'security', 'software', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -80,3 +82,9 @@ This command will install all modules, including Umbrella, which require the Use
 ./Install-CiscoSecureClient-log.txt
 ./Install-CiscoSecureClient-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

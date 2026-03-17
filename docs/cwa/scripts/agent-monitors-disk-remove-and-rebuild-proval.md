@@ -8,6 +8,8 @@ description: 'This document outlines a script that clears existing Disk Monitors
 tags: ['connectwise', 'deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ It should be run against the service plan for servers and workstations as part o
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

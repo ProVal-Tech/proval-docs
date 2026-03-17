@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to detect agents with Se
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ Equals
 | Detection String                                                                 | Comparator                                   | Result | Applicable OS |
 |----------------------------------------------------------------------------------|----------------------------------------------|--------|---------------|
 | \\\{@%C://WINDOWS//system32//WindowsPowerShell//v1.0//powershell.exe -command "Confirm-SecureBootUEFI"@%} | The expected result of the Detection String | True   | Windows       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Retrieves and/or applies IISCrypto current details on the system'
 tags: ['auditing','iis','networking','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-20
 ---
 
 ## Description
@@ -42,3 +44,9 @@ Location of output for log, result, and error files.
 
     .\Invoke-IISCrypto-log.txt
     .\Invoke-IISCrypto-error.txt
+
+## Changelog
+
+### 2025-05-20
+
+- Initial version of the document

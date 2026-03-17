@@ -8,6 +8,8 @@ description: 'This script monitors the status of the Azure AD Connect synchroniz
 tags: ['azure', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-27
 ---
 
 ## Overview  
@@ -51,3 +53,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments  
 
 [ADSync Monitoring Status Check](../../../static/attachments/ADSync%20Monitoring%20Status%20Check.cpt)
+
+## Changelog
+
+### 2025-08-27
+
+- Initial version of the document

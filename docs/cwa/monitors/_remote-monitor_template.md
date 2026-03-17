@@ -1,30 +1,16 @@
+---  
+id:  
+title:  
+title_meta:  
+keywords: []  
+description:  
+tags: []  
+draft: true  
+unlisted: false  
 ---
-id: 'New GUID'
-slug: /New GUID
-title: 'Filename'
-title_meta: 'Filename'
-keywords: []
-description: ''
-tags: []
-draft: true
-unlisted: false
----
 
-## Summary
+## Changelog
 
-## Details
+## Changelog
 
-**Suggested "Limit to"**: 
-**Suggested Alert Style**: 
-**Suggested Alert Template**: 
-
-
-| Check Action | Server Address | Check Type | Comparator | Interval | Result |
-| ------------ | -------------- | ---------- | ---------- | -------- | ------ |
-|              |                |            |            |          |        |
-
-## Dependencies
-
-## Target
-
-## Implementation
+## Changelog

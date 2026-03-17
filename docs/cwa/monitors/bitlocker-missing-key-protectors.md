@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set that detects computers where 
 tags: ['encryption', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Global
 **Name:** `△ Custom - Execute Script - Bitlocker - Volume - Add Recovery Password`
 
 The script [SEC - Encryption - Script - Bitlocker - Volume - Add Recovery Password [Autofix]](/docs/c2c817db-9667-4e18-864c-11ef0775282c) should be imported before creating or importing the alert template, as the alert template should run this.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

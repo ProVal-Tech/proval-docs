@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for updating third-party appl
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -109,3 +111,9 @@ The following example has been saved in our VSA:
 **File Hash (MD5):** `07DFAD0A66AA5A4B40C946DF727BE3D8`  
 ## Attachments
 [Winget-AutoUpdate.ps1](<../../../static/attachments/itg/18062085/Winget-AutoUpdate.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

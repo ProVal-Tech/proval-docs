@@ -8,6 +8,8 @@ description: 'This is the Account Key that determines which Huntress Account an 
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/2b62c710-cd01-4c0a-ab26-58f637e3226a/image4.webp)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

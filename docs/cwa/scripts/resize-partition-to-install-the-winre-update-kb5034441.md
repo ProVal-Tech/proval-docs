@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['recovery', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ It creates the primary partition with the size increase, and a label 'Windows RE
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

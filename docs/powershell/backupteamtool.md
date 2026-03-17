@@ -8,6 +8,8 @@ description: 'Documentation for the BackupTeamTool command to assist the Backup 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -53,3 +55,9 @@ Enter the choice of action to perform:
 ## Output
 - `BackupTeamTool-log.txt`
 - `BackupTeamTool-Error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

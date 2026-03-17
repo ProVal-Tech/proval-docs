@@ -8,6 +8,8 @@ description: 'This document describes a script that queries the LT database to g
 tags: ['backup', 'database', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This script queries the LT database for each drive letter that is an NTFS volume
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

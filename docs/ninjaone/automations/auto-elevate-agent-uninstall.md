@@ -8,6 +8,8 @@ description: 'This script automates the removal of the AutoElevate agent from Wi
 tags: ['uninstallation','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-08
 ---
 
 ## Overview
@@ -26,4 +28,10 @@ This script automates the removal of the AutoElevate agent from Windows systems.
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-12-08
+
+- Initial version of the document

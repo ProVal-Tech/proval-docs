@@ -8,6 +8,8 @@ description: 'This document outlines the process to monitor and disable SMB1, pr
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -36,3 +38,9 @@ To implement a monitor that identifies machines with SMB1 enabled and subsequent
 
 1. Create the monitor: [CW RMM - Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
 2. Create the task: [CW RMM - Task - Disable SMB1](/docs/10055a68-f513-4580-bdc1-73272516866f)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

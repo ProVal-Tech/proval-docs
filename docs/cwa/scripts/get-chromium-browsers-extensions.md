@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of the EPM - Data Collec
 tags: ['database', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This script is an Automate implementation of the agnostic script [Get-ChromiumEx
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

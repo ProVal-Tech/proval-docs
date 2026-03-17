@@ -8,6 +8,8 @@ description: 'This document describes an internal monitor designed to detect Win
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This internal monitor will detect machines that likely have stalled in their pat
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

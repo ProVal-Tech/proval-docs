@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a solution desi
 tags: ['database', 'report', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ Overall, these tools provide a comprehensive solution for managing and monitorin
 - Debug the script against an online Windows machine to create the table.
 - Check the dataview for the data.
 - Schedule the script against the group of concerned machines to keep the dataview up-to-date.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

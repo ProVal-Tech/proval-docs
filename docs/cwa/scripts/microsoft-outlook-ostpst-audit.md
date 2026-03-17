@@ -8,6 +8,8 @@ description: 'This document describes a script that collects all OST/PST file na
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This script collects all the OST/PST file names and sizes from Windows machines 
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

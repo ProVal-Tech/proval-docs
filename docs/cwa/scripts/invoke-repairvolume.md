@@ -8,6 +8,8 @@ description: 'This document details a script that runs Windows volume repair aga
 tags: ['disk', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Run a scan and repair on all available drives, stopping the drives completely du
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

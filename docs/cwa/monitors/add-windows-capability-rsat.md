@@ -8,6 +8,8 @@ description: 'This document outlines the process for monitoring Windows machines
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ How to enable it manually: https://learn.microsoft.com/en-us/troubleshoot/window
 ## Implementation
 
 [Implement - Remote Monitor - Add Windows Capability - RSAT](/docs/b927b474-abad-4e84-8f39-8995d5ace913)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

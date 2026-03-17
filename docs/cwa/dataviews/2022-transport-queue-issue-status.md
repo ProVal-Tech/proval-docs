@@ -8,6 +8,8 @@ description: 'This document provides a summary of agents where email flow has be
 tags: ['email', 'exchange']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Reference:
 | Operating System   | Operating system of the Exchange server               |
 | Last Contact      | Last contact of the server with RMM                   |
 | Email Status      | Script status return: fixed, not fixed, or not impacted |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

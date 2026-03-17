@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating a desktop
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ The custom icon will need to be uploaded to managed files. Once uploaded, point 
 - New-DesktopUriShortcut-log.txt
 - New-DesktopUriShortcut-error.txt
 - Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process to determine if the C: drive on
 tags: ['bitlocker', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This data is visible in the BitLocker dataviews or the roles tab in Automate.
 | Detection String                                     | Comparator | Result        | Applicable OS |
 |-----------------------------------------------------|------------|---------------|----------------|
 | `\\\{%@manage-bde -status C: | find "Protection Status"@%}` | Contains   | Protection On | Windows OS     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This CF is used to gather the output of the RDP Enable status'
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-10
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This CF is used to gather the output of the RDP Enable status.
 ## Custom Field Creation
 
 [Custom Field Creation](https://github.com/ProVal-Tech/vsax/blob/main/custom-fields/cpval-rdp-enable-status.toml)
+
+## Changelog
+
+### 2025-07-10
+
+- Initial version of the document

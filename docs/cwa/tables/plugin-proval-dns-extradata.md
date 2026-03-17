@@ -8,6 +8,8 @@ description: 'This document outlines the structure and purpose of the DNS data s
 tags: ['database', 'networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -43,3 +45,9 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

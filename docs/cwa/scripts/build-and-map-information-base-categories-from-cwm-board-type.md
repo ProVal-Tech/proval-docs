@@ -8,6 +8,8 @@ description: 'This document details a script designed to optimize ticket routing
 tags: ['connectwise', 'database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ This script only runs SQL against the database. It is set up to dynamically atte
 ## Output
 
 CW Manage Plugin
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

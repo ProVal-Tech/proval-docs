@@ -8,6 +8,8 @@ description: 'This document provides detailed information on the SSL and TLS set
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This document contains the SSL and TLS information set by the dependent script f
 | Contact                      | Last username                                                 |
 | Contact Email                | User's email                                                 |
 | IE Advanced Security Status   | Detailed information on what TLS and SSL settings are configured for Internet Explorer |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

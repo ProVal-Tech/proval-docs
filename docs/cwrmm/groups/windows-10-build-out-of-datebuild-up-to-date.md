@@ -8,6 +8,8 @@ description: 'This document provides a guide on creating two specific device gro
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -73,3 +75,9 @@ When adding criteria, please search for the **OS Version**.
 **Contains any of:** Windows 10  
 
 This group holds all workstations that are not up to the latest feature build.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

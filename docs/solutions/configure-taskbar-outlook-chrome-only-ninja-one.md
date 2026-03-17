@@ -8,6 +8,8 @@ description: 'A comprehensive solution for standardizing the Windows taskbar lay
 tags: ['windows', 'setup', 'application']
 draft: false
 unlisted: false 
+last_update:
+  date: 2025-09-29
 ---
 
 ## Purpose
@@ -90,3 +92,9 @@ A: The script acts on the taskbar of the user who is logged in at the time the s
 A: This specific solution is designed to pin only Chrome and Outlook. Customizing the pinned applications would require modifying the underlying automation scripts.
 
 **Note:** This automation modifies user profile settings. It is recommended to communicate changes to users, especially if they are accustomed to a different taskbar layout.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

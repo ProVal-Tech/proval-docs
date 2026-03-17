@@ -8,6 +8,8 @@ description: 'It holds the company exe value for BlackPoint endpoint for each cl
 tags: ['security', 'custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This field is used to store the company's installer URL value to help download t
 ## Sample Screenshot
 
 ![Companyexe](../../../static/img/docs/dd410db2-6305-425c-93e7-378efbf145c3/exe-client.webp)
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

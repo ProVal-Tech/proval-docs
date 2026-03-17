@@ -8,6 +8,8 @@ description: 'This solution provides an automated, userFriendly mechanism to han
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Purpose
@@ -305,3 +307,9 @@ If a software installation script, a patching automation, or a maintenance task 
 ### **Q.** Will the installation of .NET 8.0 interrupt the user?
 
 **A:** No. The installation is performed silently in the background (`/quiet` and `/norestart` flags are used). The user will not see an installation window, and it does not force a reboot of its own.
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

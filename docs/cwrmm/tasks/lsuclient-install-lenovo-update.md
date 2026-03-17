@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on utilizing the LSU Clien
 tags: ['patching', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -142,3 +144,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

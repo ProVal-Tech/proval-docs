@@ -8,6 +8,8 @@ description: 'Flag this Custom Field to exclude the Device/Endpoint from Todyl S
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this Custom Field to exclude the Device/Endpoint from Todyl SGN Connect age
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/ee6d7b42-0783-422a-a820-8ef36aab0713/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

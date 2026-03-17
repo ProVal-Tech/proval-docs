@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the data stora
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ This document stores the data collected by the [Locate PHP.exe](/docs/174c59f1-8
 | LastWriteTime   | datetime            | File modification date          |
 | Attributes      | varchar             | File's attributes               |
 | ScriptRunTime   | datetime            | Data collection time            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

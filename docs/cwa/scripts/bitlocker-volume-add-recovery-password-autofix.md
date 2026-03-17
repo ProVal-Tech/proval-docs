@@ -8,6 +8,8 @@ description: 'This document describes a script designed to add a recovery passwo
 tags: ['bitlocker', 'encryption', 'security', 'tpm']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The script will initialize the TPM if it is not already initialized, but it will
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

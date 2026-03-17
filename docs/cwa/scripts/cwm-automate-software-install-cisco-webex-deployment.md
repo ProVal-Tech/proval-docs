@@ -8,6 +8,8 @@ description: 'This document provides a script for installing user-based Cisco We
 tags: ['installation', 'networking', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This script installs user-based Cisco Webex on Windows machines.
 If the installer fails to download, you will see the following message:
 
 `Failed to download Webex installer. Please ensure that the following download URL is reachable from the computer: [https://binaries.webex.com/Webex-Desktop-Windows-x64-Combined-Gold/WebexBundle_en.msi](https://binaries.webex.com/Webex-Desktop-Windows-x64-Combined-Gold/WebexBundle_en.msi)`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

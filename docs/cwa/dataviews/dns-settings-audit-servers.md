@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive dataview that displays info
 tags: ['dns', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This dataview displays information for all the Windows servers present in the en
 | DNS_Settings       | DNS addresses.                     |
 | Operating_System    | OS information of the server.      |
 | Last Contact       | Last contact with RMM.             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

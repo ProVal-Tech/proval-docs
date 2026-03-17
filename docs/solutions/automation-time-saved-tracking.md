@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and implementation of tracking 
 tags: ['performance', 'report', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -50,3 +52,9 @@ For all content that needs saved time tracked, and any new content that will sav
 
 #### Monitors & Alerts
 - Set an ATSE action, Script, with the appropriate incremental AP. If the amount of time you wish to set does not exist as an incremental AP, create a new incremental AP with the desired time in minutes.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

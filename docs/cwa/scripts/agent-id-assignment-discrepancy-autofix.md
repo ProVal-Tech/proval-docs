@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['installation']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ Sample Ticket:
 
 - Ticket
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -78,3 +78,9 @@ Script 2: "Move Agent to Retired Assets [Autofix]"
 Folder: ".Monitor Autofixes"
 
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

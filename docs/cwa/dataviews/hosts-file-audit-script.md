@@ -8,6 +8,8 @@ description: 'This document provides a summary of the Host File Audit Dataview, 
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The purpose of this dataview is to show the uncommented content of the host file
 | Last Contact              | Last Contact with RMM                         |
 | Days Since Last Contact   | Days Since Last Contact with RMM              |
 | Last Logged In User       | Last Logged In User                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

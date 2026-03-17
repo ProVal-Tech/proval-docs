@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-McAfeeSoftware command to remove all 
 tags: ['security', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -30,3 +32,9 @@ Runs McAfee's publicly available Removal Tool with parameters to remove all prod
 - .\mccleanup.log
 - .\Remove-McAfeeSoftware-log.txt
 - .\Remove-McAfeeSoftware-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

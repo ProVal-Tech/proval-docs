@@ -8,6 +8,8 @@ description: 'This document provides an overview of the process to remove stagna
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -50,3 +52,9 @@ Location of output for log, result, and error files.
 ```
 ./Remove-VsaStagnantAgent-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

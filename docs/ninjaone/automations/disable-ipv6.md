@@ -8,6 +8,8 @@ description: 'Disables IPv6 protocol binding on all network adapters on the loca
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -30,4 +32,10 @@ Disables IPv6 protocol binding on all network adapters on the local Windows mach
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

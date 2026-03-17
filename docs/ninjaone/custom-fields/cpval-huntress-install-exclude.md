@@ -8,6 +8,8 @@ description: 'Enable this custom field to exclude the location or device from th
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/bdb92684-f093-49f8-9568-09874f9f79d5/image5.webp)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

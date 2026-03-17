@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to repair and reset Windo
 tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -52,3 +54,17 @@ Executes the Agnostic script [Repair-WindowsUpdate](/docs/39345bfd-d9e2-4e68-9d7
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-03-24
+
+- Changes made to the agnostic and implementation script to add the dism feature. The hash changed, sample run demo changed, and addition made for the dism param
+
+### 2025-03-18
+
+- Fixed the Windows Update—Repair [Param] script, removing the execute PowerShell part and converting it to the execution method of write file format to create file hashing. Also, updated the powershell used in the agnostic to Reset the Windows Update Components.

@@ -8,6 +8,8 @@ description: 'Documentation for the Invoke-UninstallHideUpdate command to uninst
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -35,3 +37,9 @@ Location of output for log, result, and error files.
 .\Invoke-UninstallHideUpdate-log.txt
 .\Invoke-UninstallHideUpdate-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

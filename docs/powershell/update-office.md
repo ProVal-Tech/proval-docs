@@ -29,4 +29,10 @@ Launches the Microsoft Update Program to update Office 365.
 
 ## Output  
 - .\Update-Office-log.txt  
-- .\Update-Office-error.txt  
+- .\Update-Office-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

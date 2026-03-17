@@ -8,6 +8,8 @@ description: 'This document provides a procedure to empty all recycle bins on th
 tags: ['cleanup', 'disk', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ Empties all recycle bins on the system drive.
 | 2:49:36 PM 15-Feb-23     | Recycle Bin Empty        | Success THEN               | provaltech.com/dan.hicks |
 | 2:49:36 PM 15-Feb-23     | Recycle Bin Empty        | Recycle Bin has been cleared. | provaltech.com/dan.hicks |
 | 2:49:28 PM 15-Feb-23     | Run Now - Recycle Bin Empty | Admin provaltech.com/dan.hicks |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

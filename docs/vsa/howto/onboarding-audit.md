@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Kaseya Onboarding Audit 
 tags: ['kaseya', 'report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-09
 ---
 
 ## Prep Work
@@ -38,3 +40,9 @@ Move through each sheet in the workbook, filling in the data requested. These sh
 Some data will be gathered manually in VSA and others in the Audit data.
 
 There is no one-size-fits-all for this so I suggest you review previous onboarding audits to help you organize.
+
+## Changelog
+
+### 2025-04-09
+
+- Initial version of the document

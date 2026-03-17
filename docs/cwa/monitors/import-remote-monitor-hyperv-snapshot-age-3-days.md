@@ -8,6 +8,8 @@ description: 'This document outlines the implementation steps for monitoring Hyp
 tags: ['database', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Implementation
@@ -48,3 +50,9 @@ unlisted: false
 2. **Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.**
 
    **Group Path:** `Service Plans/Windows Servers/Server Roles/Windows Servers Core Services/Windows Hyper-V Host Group.`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

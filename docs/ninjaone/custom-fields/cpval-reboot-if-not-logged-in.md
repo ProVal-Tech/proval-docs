@@ -8,6 +8,8 @@ description: 'Forces a reboot if no user is logged in. Available at Client, Loca
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Forces a reboot if no user is logged in. Available at Client, Location, or Devic
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/c1c1cb99-496a-4b3a-9a9c-e0fdf7ee4562/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

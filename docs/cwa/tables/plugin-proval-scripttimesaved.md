@@ -8,6 +8,8 @@ description: 'This document provides detailed information on SQL queries used to
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -61,3 +63,9 @@ N/A - These tables are populated with the associated triggers.
 ## SQL
 
 [Download SQL Queries](https://proval.itglue.com/attachments/6824289)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

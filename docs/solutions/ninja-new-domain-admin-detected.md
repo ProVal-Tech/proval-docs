@@ -8,6 +8,8 @@ description:  'The purpose of this solution is to detect the user or group of us
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-03
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ The purpose of this solution is to detect the user or group of users if its prom
 - Create the [Script : New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a) using the implementation instruction provided in the document.
 - Create the  [Ticket Template : New Domain Admin Detected](/docs/355a03b6-61f8-45c4-92f9-43f13b5dd7ac) using the implementation instruction provided in the document.
 - Create the [Condition : New Domain Admin Detected](/docs/b300f17d-63ee-4c31-b29b-a9fb92a69a89) using the implementation instruction provided in the document.
+
+## Changelog
+
+### 2025-10-24
+
+- Initial version of the document

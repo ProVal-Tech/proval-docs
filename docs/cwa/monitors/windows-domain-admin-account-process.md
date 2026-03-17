@@ -8,6 +8,8 @@ description: 'This document outlines a monitor set designed to identify Domain C
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Domain Controllers belonging to clients that have the `1a. Enable Domain Admin P
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script on the machines detected by the monitor set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

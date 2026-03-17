@@ -8,6 +8,8 @@ description: 'This document outlines a script that manages the installation of a
 tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ A pop-up message will appear at the bottom right corner of the screen to remind 
 
 - Script Log
 - Prompt on End Machine
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

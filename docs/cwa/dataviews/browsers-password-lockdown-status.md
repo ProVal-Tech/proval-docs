@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Password Manager Lockdow
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The dataview exhibits the `Password Manager Lockdown Status` for the computer ob
 | Last Contact                 | Last Contact with RMM                                                                                                       |
 | Last Logged In User          | Last Logged In User                                                                                                         |
 | Password Manager Lockdown Status | Indicates whether the remote monitor has effectively deactivated the password manager for the installed browsers. If not, it provides the names of the specific browsers where the disabling process failed. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

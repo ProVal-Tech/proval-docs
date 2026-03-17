@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of account lock de
 tags: ['sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document provides detailed information about account locks for both local a
 | Password           | Indicates whether the locked user’s password is set    |
 | Account Lock Date  | Date and time when the account was locked              |
 | Script Run Time    | Script run time indicating when the account lock was detected |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

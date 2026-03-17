@@ -8,6 +8,8 @@ description: 'This custom field stores the installed .NET Framework version on a
 tags: ['dotnet','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-19
 ---
 
 ## Summary
@@ -87,3 +89,9 @@ Click on `Create` button to create the Custom Field.
 
 ### Example
 ![Example](../../../static/img/docs/06ee57e9-a6cf-4ee0-9430-8e548fac15fb/image7.webp)
+
+## Changelog
+
+### 2025-05-19
+
+- Initial version of the document

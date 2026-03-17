@@ -8,6 +8,8 @@ description: 'Set CrowdStrike Customer ID for the company.'
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Set CrowdStrike Customer ID for the company.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/28f5fdfd-c11e-4643-ae07-62d6f7007805/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

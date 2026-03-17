@@ -8,6 +8,8 @@ description: 'This solution is designed to configure the automatic deployment of
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -94,3 +96,9 @@ Yes, the deployment process can be customized by selecting the appropriate optio
 ### 5. What happens if the Vulscan service is unreachable during deployment?
 
 If the Vulscan service is unreachable, the deployment process will fail. Ensure that the network connection to the Vulscan service is stable and that the required key is correctly configured.
+
+## Changelog
+
+### 2025-04-18
+
+- Initial version of the document

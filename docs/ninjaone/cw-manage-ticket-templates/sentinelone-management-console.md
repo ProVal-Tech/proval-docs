@@ -8,6 +8,8 @@ description: 'This ticket template configures how a ConnectWise Manage ticket wi
 tags: ['antivirus', 'auditing', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-20
 ---
 
 ## Overview
@@ -27,3 +29,9 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Template Creation
 
 [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/sentinelone-management-console.toml)
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

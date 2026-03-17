@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the custom field
 tags: ['connectwise']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This document provides detailed information about the custom fields associated w
 ![Image2](<../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image2.webp>)
 
 ![Image3](<../../../static/img/docs/ff056937-ea5b-48f4-b76d-74566b981da8/image3.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

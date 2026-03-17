@@ -8,6 +8,8 @@ description: 'This compound condition performs BitLocker and TPM audit once per 
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This compound condition performs BitLocker and TPM audit once per day on Windows
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/bitlocker-audit-servers.toml)
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

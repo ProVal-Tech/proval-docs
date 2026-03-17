@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to create a dyn
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Click the `Save` button to save/create the group.
 
 
 ![Image](../../../static/img/docs/9bfa70b2-a410-45d7-a8cc-a75c8e90c6f5/image32.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

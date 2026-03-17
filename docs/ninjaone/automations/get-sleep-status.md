@@ -8,6 +8,8 @@ description: 'Checks the sleep settings of the current Windows power plan and re
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ Checks the sleep settings of the current Windows power plan and reports if auto 
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

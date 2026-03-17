@@ -8,6 +8,8 @@ description: 'This script will add the Dashlane Credential Protection extension 
 tags: ['extensions','browsers','chrome']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-18
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The configuration token found in step 5 of this process needs to be added as the
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

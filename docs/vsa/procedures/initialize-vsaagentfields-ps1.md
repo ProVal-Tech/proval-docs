@@ -8,6 +8,8 @@ description: 'This document provides an overview of the process for writing the 
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -37,3 +39,9 @@ The VSAAPI module is used to interface with the client environment, setting new 
 - `Initialize-VsaAgentFields-error.txt`
 
 **NOTE:** This can be run from VSA 9.5 by executing the Agent Procedure: Shared > VSA Automation > Stack CF Initialization.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

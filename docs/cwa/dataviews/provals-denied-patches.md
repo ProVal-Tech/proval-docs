@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Denied Patches D
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This Dataview populates information about the [Denied Patches](https://proval.it
 | KBID   | KBID of the Denied Patch.        |
 | Title  | Title of the denied patch.       |
 | Reason | Reason behind denying the patch. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

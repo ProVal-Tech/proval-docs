@@ -8,6 +8,8 @@ description: 'This document provides a summary of the Failed Emails DataView in 
 tags: ['database', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ None
 | Body      | The body of the email                                                                           |
 | FailDate  | The date the email failed to send                                                               |
 | ErrorMsg  | The error message gathered by Automate when the email failed to send                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

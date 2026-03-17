@@ -8,6 +8,8 @@ description: 'Automates the discovery and installation of Lenovo-specific update
 tags: ['lenovo', 'drivers', 'bios', 'firmware']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-21
 ---
 
 ## Overview
@@ -109,3 +111,9 @@ Execute the script with optional parameters to control update behavior:
 ## Documentation Links
 
 - [LSUClient Module Documentation](https://jantari.github.io/LSUClient-docs)
+
+## Changelog
+
+### 2025-07-21
+
+- Initial version of the document

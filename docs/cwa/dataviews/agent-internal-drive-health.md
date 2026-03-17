@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive dataview that displays the 
 tags: ['disk-encryption', 'performance', 'report', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview shows the internal drive health status for all Automate agents.
 | Drive Model          | Displays the model name of the drive.                                     |
 | Drive SSD            | Displays the status of the Drive SSD, indicating True or False.          |
 | Drive Missing        | Displays the status of the drive, indicating if it is missing or connected. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

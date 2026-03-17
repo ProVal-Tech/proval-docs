@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and functionality of a monitor 
 tags: ['networking', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ To use a single router address without quotes, you can uncomment the line `#ON F
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

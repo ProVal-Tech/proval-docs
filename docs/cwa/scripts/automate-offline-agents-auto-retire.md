@@ -8,6 +8,8 @@ description: 'This document outlines the Offline Agents Auto-Retire script for C
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-22
 ---
 
 ## Summary
@@ -144,3 +146,13 @@ Operating System: Microsoft Windows 10 Pro x64
 Last Contact: 2022-09-20 15:49:13
 Last Logged In User: DEV-WIN10-DCJOI/Test
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-02-13
+
+- Added system properties to end the session along with agent retirement and also enable the solution for workstations only and exclude servers.

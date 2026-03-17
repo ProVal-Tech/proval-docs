@@ -8,6 +8,8 @@ description: 'Defines whether TPM initialization or reboot is allowed during Bit
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -37,4 +39,10 @@ Allows the script to attempt initialization of TPM if necessary.
 
 ## Sample Screenshot
 
-![cPVAL Allow TPM Or Reboot](../../../static/img/docs/418f1b8b-14f8-492d-80fc-ea038cff6057/image1.webp)  
+![cPVAL Allow TPM Or Reboot](../../../static/img/docs/418f1b8b-14f8-492d-80fc-ea038cff6057/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

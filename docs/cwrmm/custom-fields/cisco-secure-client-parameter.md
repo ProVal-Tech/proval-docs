@@ -8,6 +8,8 @@ description: 'This document provides detailed instructions on how to store and u
 tags: ['custom-fields', 'installation', 'networking', 'software', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -116,3 +118,9 @@ Different installation parameters can be created by using these parameters from 
 | ISEPosture     | False    |         | String | Custom                | Installs the ISE Posture module.                                                                  |
 | Umbrella       | False    |         | String | Custom                | Installs the Umbrella module. Requires dynamic parameters.                                        |
 | DownloadURL    | True     |         | String | Core, All, Custom, Umbrella | URL to download the [CiscoSecureClient.zip](http://ciscosecureclient.zip/) file.                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

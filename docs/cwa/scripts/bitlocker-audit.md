@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Bitlocker A
 tags: ['backup', 'encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -70,3 +72,9 @@ The Bitlocker Audit script gathers Bitlocker information from the target endpoin
 - Custom table
 - Dataview
 - Backup file under LTShare at `LTShare/Uploads/<ClientName>/<ComputerName (Computerid)>`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

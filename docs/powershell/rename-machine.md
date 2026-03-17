@@ -8,6 +8,8 @@ description: 'The script will first check if the machine is domain joined or not
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -35,3 +37,9 @@ The script needs the newname and the domain credential (only needed in case of d
 - .\Rename-Machine-Log.txt
 - .\Rename-Machine-error.txt
 - .\Rename-Machine-data.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the management of the Huntress EDR agent, d
 tags: ['datto', 'installation', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ StdOut may require you to scroll to view the complete log; you can alternatively
 
 **StdErr**  
 StdErr is not expected.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

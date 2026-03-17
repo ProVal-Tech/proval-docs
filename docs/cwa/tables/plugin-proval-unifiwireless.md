@@ -8,6 +8,8 @@ description: 'This document outlines the structure and purpose of the Child of S
 tags: ['database', 'security', 'unifi', 'wireless']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Child of Solution
@@ -38,3 +40,9 @@ This document holds network data for each controller listed in [EPM - Data Colle
 | IsGuest       | String | True if the network is a guest network; otherwise, false.                                          |
 | Security      | String | The security platform being used by the network.                                                  |
 | WPAMode       | String | The WPA mode being used by the network.                                                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

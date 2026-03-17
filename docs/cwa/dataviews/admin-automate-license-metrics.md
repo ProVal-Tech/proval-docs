@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the available a
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This dataview provides information about available agent licenses in Automate.
 | Total Computers                | Displays the total number of machines in Automate                          |
 | Online Computers (30 Days)     | Displays the number of machines that have contacted the server in the last 30 days |
 | Percentage Online              | Displays the percentage of machines that have contacted the server in the last 30 days |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

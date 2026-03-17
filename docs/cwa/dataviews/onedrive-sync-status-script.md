@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the OneDrive Sy
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ The data view presents the OneDrive Sync Status data stored in the [EPM - Data C
 | Last Contact           | Last Contact with Automate                          |
 | Operating System       | Operating System                                    |
 | Form Factor            | Form Factor of the machine                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

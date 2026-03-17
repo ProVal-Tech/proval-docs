@@ -8,6 +8,8 @@ description: 'This document describes a script that performs repairs on Office p
 tags: ['installation', 'performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ This script runs a repair on Office products; by default, it will perform a quic
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

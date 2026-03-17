@@ -8,6 +8,8 @@ description: 'This document outlines the process of using the Foil wrapper for C
 tags: ['application', 'chocolatey', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ Utilizes the Foil wrapper for Chocolatey to install an application. [Foil GitHub
 4. Installs NuGet if not already installed.
 5. Installs/Updates the Foil Module.
 6. Installs the application using Foil.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

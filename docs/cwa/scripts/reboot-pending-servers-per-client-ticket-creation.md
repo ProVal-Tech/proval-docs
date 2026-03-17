@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to manage client-level ti
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ It is a client script and is suggested to schedule it to run at regular interval
 
 **Computer-Level Ticket:**  
 ![Computer-Level Ticket](../../../static/img/docs/9be930d0-0f3e-40c2-8135-3a77e59a1e9e/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

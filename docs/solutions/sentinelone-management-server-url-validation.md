@@ -8,6 +8,8 @@ description: This solution validates whether the SentinelOne Management Server U
 tags: ['antivirus', 'auditing', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Purpose
@@ -107,3 +109,9 @@ Set runtime parameters:
 - **S1 Key Custom Field Name**:  
   - *Leave blank* if using `cPVAL SentinelOne Key`  
   - *Enter name* of existing custom field if storing token elsewhere
+
+## Changelog
+
+### 2025-08-18
+
+- Initial version of the document

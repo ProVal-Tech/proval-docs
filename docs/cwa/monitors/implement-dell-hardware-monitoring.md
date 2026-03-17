@@ -8,6 +8,8 @@ description: 'This document outlines the steps to set up Dell Hardware Monitorin
 tags: ['setup', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Steps
@@ -119,3 +121,9 @@ Limit to: `Computers - Dell Servers`
 
 ### 8. Set Alert Template
 Set the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

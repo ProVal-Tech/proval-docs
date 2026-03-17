@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to insert imag
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 <div class='text-section scrollable'>
@@ -19,3 +21,9 @@ unlisted: false
 <div class='text-section scrollable'>
 
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

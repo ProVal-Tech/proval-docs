@@ -8,6 +8,8 @@ description: 'This document outlines the configuration process for the Enhanced 
 tags: ['disk']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Simply import this monitor and set the alert template that has been used by the 
 Ensure that the [Script - Enhanced Disk Space Monitoring Process](/docs/8efd9cc2-b054-4dda-a690-bbe1d4bd16b3) uses the same name as the [Internal Monitor - Agent - Enhanced Drive Space Monitor](/docs/f7235a0b-b6b6-456d-8af3-bd3471b1e70f) at line 54. Otherwise, both monitors will not be able to detect the tickets.
 
 ![Image](../../../static/img/docs/4535820b-8254-4b20-bb7c-f68b2f05494e/image_1.webp)
+
+## Changelog
+
+### 2026-01-14
+
+- Initial version of the document

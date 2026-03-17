@@ -8,6 +8,8 @@ description: 'This document provides a script for creating a checkpoint of a vir
 tags: ['backup', 'hyper-v', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ The script can be used to create a checkpoint of a virtual machine hosted on a H
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

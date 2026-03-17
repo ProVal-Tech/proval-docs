@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that creates a back
 tags: ['backup', 'registry', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -62,3 +64,9 @@ Creates a copy of the key `HKLM:\Software\Microsoft\DataAccess` and all its subk
 | ConnectWise RMM                   |                                          |
 | Kaseya                            |                                          |
 | Datto RMM                         |                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script is used to check the status of the RDP enable on the m
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-10
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Navigate to `Actions` > `Run Script`
 - Script logs  
 ![image3](../../../static/img/docs/0de8d08c-4627-4cea-afde-50fc36bdf1da/image3.webp)
 - Custom Fields
+
+## Changelog
+
+### 2025-07-10
+
+- Initial version of the document

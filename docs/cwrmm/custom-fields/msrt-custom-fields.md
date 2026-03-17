@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a custom field
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ Create Exclude MSRT Disable Uninstall
 All MSRT custom fields list
 
 ![All MSRT custom fields](<../../../static/img/docs/c6a36d73-01c8-4ef9-ace2-e9d6a4bc2363/{9E094A20-FA3B-48C8-8B6F-E9D4AEE54AC5}.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

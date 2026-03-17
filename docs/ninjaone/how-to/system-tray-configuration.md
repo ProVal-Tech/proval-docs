@@ -8,6 +8,8 @@ description: 'This document explains how to set up and use the Systray Menu as p
 tags: ['custom-table','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-28
 ---
 
 ## Purpose
@@ -343,3 +345,9 @@ Attachments and screenshots are also supported.
 **Q. Can we re-arrange the menu?**
 
 **A.** Yes, you can drag and drop any menu under any group or re-posistion any option/menu according to you.
+
+## Changelog
+
+### 2026-01-21
+
+- Initial version of the document

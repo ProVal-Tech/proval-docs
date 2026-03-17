@@ -8,6 +8,8 @@ description: 'This document provides a method to determine if the endpoint is us
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document will determine if the endpoint is using TLS version 1.2. This data
 | Detection String                                                                 | Comparator | Result | Applicable OS |
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SYSTEM/CurrentControlSet/Control/SecurityProviders/SCHANNEL/Protocols/TLS 1.2/Client:Enabled-%}` | Equals     | 1      | Windows OS     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

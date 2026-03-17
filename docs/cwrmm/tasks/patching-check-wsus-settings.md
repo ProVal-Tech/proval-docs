@@ -8,6 +8,8 @@ description: 'Determines if Windows Server Update Services (WSUS) settings are c
 tags: ['update','windows','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-05
 ---
 
 ## Summary
@@ -616,3 +618,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 `C:\ProgramData\_Automation\Script\Audit-WSUSSettings\Audit-WSUSSettings-log.txt`
 
 `C:\ProgramData\_Automation\Script\Audit-WSUSSettings\Audit-WSUSSettings-error.txt`
+
+## Changelog
+
+### 2025-08-01
+
+- Initial version of the document

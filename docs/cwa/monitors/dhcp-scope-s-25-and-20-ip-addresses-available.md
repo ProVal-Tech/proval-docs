@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor designed to retrieve infor
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -164,3 +166,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### Step 5
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

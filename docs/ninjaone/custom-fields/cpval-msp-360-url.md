@@ -8,6 +8,8 @@ description: 'MBS backup agent URL. Copy the link from MBS portal in Downloads s
 tags: ['backup', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-25
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This stores the MBS backup agent URL. Copy the link from MBS portal in Downloads
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/7e18083b-6a0e-49da-8a08-cfe9c7fa3378/image1.webp)
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

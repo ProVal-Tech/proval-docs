@@ -8,6 +8,8 @@ description: 'This document presents comprehensive information about Network Pro
 tags: ['deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ Information from the following tabs of a Network Probe settings page is displaye
 | Updated By                      | Last user to make changes to the probe.                                                        |
 | Creation Date                   | Date of creation.                                                                                |
 | Last Update Date                | Last update date for the network probe.                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details a script that checks the configuration of th
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941
 - Script log
 - Script state
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

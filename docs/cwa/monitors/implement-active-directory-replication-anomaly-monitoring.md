@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to set up the ProVal -
 tags: ['active-directory', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Step 1
@@ -85,3 +87,9 @@ Validate the presence of the `ProVal - Production - Active Directory Replication
 
 ## Step 5
 Apply the relevant alert template and ticket category to the remote monitor. It is recommended to utilize the `△ Custom - Ticket Creation Computer - Failures Only` alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

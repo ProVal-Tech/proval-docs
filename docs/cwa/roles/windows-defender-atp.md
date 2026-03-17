@@ -8,6 +8,8 @@ description: 'This document outlines a method to determine if Windows Defender A
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines a method to determine if the device has Windows Defender 
 | Detection String                                                                 | Comparator | Result | Applicable OS |
 |----------------------------------------------------------------------------------|------------|--------|----------------|
 | `{%-HKLM/SOFTWARE/Microsoft/Windows Advanced Threat Protection/Status:OnboardingState-%}` | Equals     | 1      | Windows OS     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

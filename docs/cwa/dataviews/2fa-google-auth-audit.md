@@ -8,6 +8,8 @@ description: 'This document provides a Dataview that displays the status of Goog
 tags: ['connectwise', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -20,3 +22,9 @@ This Dataview shows whether Google Authentication is enabled for Automate users.
 |----------------------|---------------------------------------------------------------|
 | Username             | Displays the name of the Automate user                       |
 | Google Auth Enabled   | Indicates if Google Authentication is enabled for the user   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script automates the discovery and installation of Windows Up
 tags: ['patching', 'windows', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Overview
@@ -77,3 +79,9 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 ## Attachments
 
 [Install-WindowsUpdates](../../../static/attachments/Install-WindowsUpdates.cpt)
+
+## Changelog
+
+### 2025-06-10
+
+- Initial version of the document

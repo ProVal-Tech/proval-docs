@@ -8,6 +8,8 @@ description: 'This document outlines a solution for displaying well-calculated W
 tags: ['database', 'patching', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -40,3 +42,9 @@ This solution displays well-calculated version metrics with multiple filters.
 **A:** Open a RAWSQL monitor set and execute the following queries one after another to find your answer:  
 - `SELECT * FROM [pvl_v_windows_version_metrics](/docs/baeb3063-b28b-4eae-975d-e55af60c0466);`  
 - `SELECT * FROM [plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622);`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

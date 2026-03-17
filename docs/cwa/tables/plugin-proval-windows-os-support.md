@@ -8,6 +8,8 @@ description: 'This document provides a detailed table of Windows operating syste
 tags: ['database', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Purpose
@@ -46,3 +48,9 @@ References:
 ## For CW RMM
 
 Needs Revision
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

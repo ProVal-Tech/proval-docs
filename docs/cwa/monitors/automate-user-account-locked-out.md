@@ -8,6 +8,8 @@ description: 'This document provides a summary of a monitor designed to detect A
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This monitor detects Automate users who have been locked out of logging in.
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

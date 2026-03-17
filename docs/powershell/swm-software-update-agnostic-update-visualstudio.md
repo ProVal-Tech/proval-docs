@@ -8,6 +8,8 @@ description: 'This document provides an overview of the script that automaticall
 tags: ['installation', 'report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Overview
@@ -46,3 +48,9 @@ The output files will be generated as follows:
 ./Update-VisualStudio-data.txt
 ./Update-VisualStudio-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes a task that disables the password manager 
 tags: ['browsers', 'security', 'setup', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ The task can disable the sync between Edge Wallet and the cloud. It should be di
 ## Task Configuration
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/lockdown-browsers-autofill-and-password-manager.toml)
+
+## Changelog
+
+### 2025-05-01
+
+- Initial version of the document

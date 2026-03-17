@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive report on the Office 365 Up
 tags: ['office365', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -126,3 +128,9 @@ FROM
       c.ComputerID
   ) AS dt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

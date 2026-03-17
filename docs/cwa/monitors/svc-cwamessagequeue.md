@@ -4,15 +4,17 @@ slug: /a1fb4b3c-b08f-4090-9df7-66e7d80ca93d
 title: 'SVC-CWAMessageQueue'
 title_meta: 'SVC-CWAMessageQueue'
 keywords: ['cwa', 'monitoring', 'service', 'alert', 'ticket']
-description: 'This document outlines the monitoring setup for the CWAMessageQueue service in ConnectWise Automate. It details the alert configuration, suggested parameters, and target server roles to ensure timely notifications and ticket creation in Autotask when the service becomes unavailable.'
+description: 'This document outlines the monitoring setup for the CWAMessageQueue service in ConnectWise Automate. It details the alert configuration, suggested parameters, and target server roles to ensure timely notifications and ticket creation in Halo when the service becomes unavailable.'
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
 
-CWAMessageQueue is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Autotask portal in the event that the service becomes unavailable. It should be created against the "Labtech Server" group for the on-prem partners only.
+CWAMessageQueue is one of the important services for the Automate server. This monitor is intended to alert on the status of that service and create an urgent ticket in our (ProVal's) Halo PSA in the event that the service becomes unavailable. It should be created against the "Labtech Server" group for the on-prem partners only.
 
 ## Details
 
@@ -26,4 +28,10 @@ CWAMessageQueue is one of the important services for the Automate server. This m
 
 ## Target
 
-Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server  
+Service [Plans.Windows](http://plans.Windows) servers. Server Roles. MSP Specific Servers. Labtech Server
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

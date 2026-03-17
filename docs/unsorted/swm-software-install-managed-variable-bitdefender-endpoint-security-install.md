@@ -28,3 +28,9 @@ unlisted: true
 ### Provide an example of the data contained within the variable, including any required syntax.
 
 </div>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Cleans up and manages the local Administrators group based on appr
 tags: ['cleanup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Overview
@@ -263,3 +265,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-06-05
+
+- Initial version of the document

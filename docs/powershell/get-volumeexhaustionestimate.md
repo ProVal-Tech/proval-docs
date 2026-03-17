@@ -8,6 +8,8 @@ description: 'Documentation for the Get-VolumeExhaustionEstimate command to esti
 tags: ['disk-encryption', 'performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -118,3 +120,9 @@ EstimatedLeadSpace       NoteProperty double          The amount of space estima
 ExhaustionEstimation     NoteProperty System.TimeSpan The amount of estimated time remaining before volume exhaustion.
 ExhaustionEstimationDate NoteProperty System.DateTime The estimated date of volume exhaustion.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

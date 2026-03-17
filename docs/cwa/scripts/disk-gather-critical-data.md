@@ -8,6 +8,8 @@ description: 'This document outlines an Automate Script designed to retrieve dat
 tags: ['disk', 'performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -103,3 +105,9 @@ It appends data from that agnostic script to the created table.
    
 4. **I updated this script to its newest version, and now the script fails every time.**
    - Please set the refresh table to 'Yes' on the first run after a version upgrade of this script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

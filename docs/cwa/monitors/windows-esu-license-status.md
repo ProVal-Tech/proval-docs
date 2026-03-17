@@ -8,6 +8,8 @@ description: 'Executes the auditing script once per week against Windows 10 22H2
 tags: ['licensing', 'windows', 'extensions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-23
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The internal monitor executes the auditing script [ESU License Activation Detect
 ## Alert Template
 
 - `△ Custom - Execute Script - ESU License Activation Detection`
+
+## Changelog
+
+### 2025-12-23
+
+- Initial version of the document

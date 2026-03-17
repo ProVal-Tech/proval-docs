@@ -8,6 +8,8 @@ description: 'Select Operating System to Enable BitLocker Key Backup. The output
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select Operating System to Enable BitLocker Key Backup. The output of the Key Ba
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/14c8ed9d-5357-432d-a8f2-8d522ac9f991/image1.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

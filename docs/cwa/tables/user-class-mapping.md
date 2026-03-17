@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure for storing audit
 tags: ['database', 'permissions']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-07
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This document outlines the purpose and structure for storing audit data of the A
 | classname            | varchar  | Stores the User Class name assigned to the Automate user                                                         |
 | class_permissions                | varchar   | Stores the User Class permissions                                           |
 | permissionshigh      | varchar  | Stores the User Class plugins permissions |
+
+## Changelog
+
+### 2025-10-07
+
+- Initial version of the document

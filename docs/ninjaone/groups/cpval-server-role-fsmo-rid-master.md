@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the RID Master role
 tags: ['windows', 'dynamic-groups', 'active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/06def974-103d-4c54-b227-08ac5c6f2b17/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

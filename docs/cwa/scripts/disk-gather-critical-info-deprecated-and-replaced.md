@@ -8,6 +8,8 @@ description: 'This document outlines the Automate Script designed to handle the 
 tags: ['database', 'disk-encryption', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The location and method by which this script returns data:
 - Script state
 - Local file on computer
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

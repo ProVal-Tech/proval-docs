@@ -8,6 +8,8 @@ description: 'This document outlines the CW RMM task for installing the Huntress
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ The [`CW RMM - Task - Huntress Agent (INSTALL)`](/docs/e1f40d15-13f1-465e-9870-6
 **Type:** Text Box  
 **Level:** Endpoint  
 **Description:** Huntress Deployment Result from Task: Huntress Agent Install  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

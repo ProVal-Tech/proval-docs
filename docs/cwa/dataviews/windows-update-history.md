@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of Windows Update 
 tags: ['performance', 'report', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This document displays information about Windows Update history for agents.
 | Recommended CPU Speed           | Recommended CPU Speed to install the Patch        |
 | Recommended Hard Disk Space     | Recommended Hard Disk Space to Install the Patch  |
 | Recommended Memory              | Recommended Memory to Install the Patch           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

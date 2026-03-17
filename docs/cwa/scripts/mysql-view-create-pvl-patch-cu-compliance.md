@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to create views named `pv
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Run the script on any computer to create the views, and afterward, remove the sc
 ## Output
 
 - Custom Views
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

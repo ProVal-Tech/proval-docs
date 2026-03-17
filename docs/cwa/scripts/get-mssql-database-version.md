@@ -8,6 +8,8 @@ description: 'This document outlines a script that collects the version and patc
 tags: ['database', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Execute the script against the online `MSSQL` servers to gather the version.
 - Script Log
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process of alerting domain users when t
 tags: ['active-directory', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -42,3 +44,9 @@ This document alerts domain users if their domain password is set to expire with
 
 **Q: Users are not receiving emails?**  
 A: Ensure that the user has an email address set for their Active Directory account, the script's global variables are set correctly, and lastly, check that the emails are not failing from Automate.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

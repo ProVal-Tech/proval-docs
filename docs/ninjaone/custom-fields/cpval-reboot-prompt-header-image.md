@@ -8,6 +8,8 @@ description: 'Specifies the local file path or URL for the header image displaye
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Specifies the local file path or URL for the header image displayed on the reboo
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/93363322-3d61-484b-abbd-eb5e28bfb6df/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

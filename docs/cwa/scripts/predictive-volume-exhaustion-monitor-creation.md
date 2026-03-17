@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on setting up the Vol
 tags: ['disk', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -36,12 +38,13 @@ It is a client script and is suggested to schedule it to run once per day for be
 
 ## Dependencies
 
-[EPM - Disk - Agnostic - Get-VolumeExhaustionEstimate](/docs/21bc13d3-b2fb-42d5-8f38-da9b43990e06)
+- [Agnostic - Get-VolumeExhaustionEstimate](/docs/21bc13d3-b2fb-42d5-8f38-da9b43990e06)
+- [Solution - Predictive Volume Space Exhaustion Monitoring](/docs/a367bf9d-8782-4500-a1b8-adbb757f23fc/)
 
 ## Remote Monitors
 
-- [EPM - Disk - Remote Monitor - Volume Space Prediction](/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f)
-- [EPM - Disk - Remote Monitor - Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f)
+- [Volume Space Prediction](/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f)
+- [Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f)
 
 ## User Parameters
 
@@ -124,3 +127,9 @@ It is a client script and is suggested to schedule it to run once per day for be
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

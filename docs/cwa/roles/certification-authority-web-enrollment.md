@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell role designed to detect server
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role is used to detect servers with the Certification Authority Web Enrollm
 | Detection String                                                                                     | Comparator | Result    | Applicable OS |
 |------------------------------------------------------------------------------------------------------|------------|-----------|----------------|
 | \{%@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Web-Enrollment' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%} | Contains    | Installed | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to place virtual machines
 tags: ['hyper-v', 'security', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The script will place the virtual machines hosted on a Hyper-V Host into Mainten
 What will be set on all VMs running with an Automate Agent on the host:
 
 ![Image](../../../static/img/docs/a05e9615-3a00-4b03-96d8-775acd8c2ac1/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

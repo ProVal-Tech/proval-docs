@@ -8,6 +8,8 @@ description: 'Detection script for the "Reboot Pending Prompt" solution. Determi
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-19
 ---
 
 ## Overview
@@ -53,3 +55,9 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 
 - **Activity Details:** Text output indicating if a reboot is required and if conditions were met.
 - **Custom Field:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, and `cPVAL Times Prompted` when resetting state (self-healing).
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

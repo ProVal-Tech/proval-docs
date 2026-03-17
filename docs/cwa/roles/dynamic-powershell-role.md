@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to include the PowerShel
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This document describes how the PowerShell version is incorporated into its seri
 | `{%@powershell.exe -nologo -noprofile -command "$ErrorActionPreference = 'SilentlyContinue'; Write-Host //"$(Get-host).Version.Major).$((Get-Host).Version.Minor).$((Get-Host).version.Build).$((Get-Host).Version.Revision)//" -NoNewLine"@%}` | Exist      | PowerShell Version in Serial Key | Windows        |
 ## Attachments
 [Dynamic_Powershell.sql](<../../../static/attachments/itg/10926872/Dynamic_Powershell.sql>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

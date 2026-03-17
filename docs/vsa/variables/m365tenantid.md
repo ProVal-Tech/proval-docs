@@ -8,6 +8,8 @@ description: 'This document explains the managed variable used to store the part
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ The value for this must be provided by the partner. The partner can get their M3
 | Managed Variable Name | Managed Variable Type | Description |
 |-----------------------|-----------------------|-------------|
 | M365TenantId          | Public                | Used by the agent procedure to specify the partner's M365 Tenant ID. The tenant ID is required for several of the group policies. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

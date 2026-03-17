@@ -8,6 +8,8 @@ description: 'This guide provides step-by-step instructions on how to log in to 
 tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Step 1: Login to the Webroot Portal
@@ -19,3 +21,9 @@ Go to **Manage → Entities → Sites & Groups** and select the group whose code
 ![Image](../../../static/img/docs/4f44f833-a625-46b6-bae7-c74512ff22da/image_1.webp)
 
 Here, you can create a custom group and obtain the code necessary to push installed Webroot agents to that group.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

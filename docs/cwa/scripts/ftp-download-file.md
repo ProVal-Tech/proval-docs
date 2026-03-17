@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['ftp', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This script will download a file from the target FTP server.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

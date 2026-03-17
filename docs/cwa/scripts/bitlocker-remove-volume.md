@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to disable Bit
 tags: ['encryption', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ See process information in the document for [Agnostic - Unprotect-BitLockerVolum
 
 - Script log
 - Local file on computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

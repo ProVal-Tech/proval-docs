@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell remote monitor designed to ens
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -90,3 +92,9 @@ Windows DNS Servers
 
 3. Check the remote monitor and ensure the proper alert template is applied to it.  
    ![Check Remote Monitor](../../../static/img/docs/88f2c503-bd4b-4bb5-83d0-72f5fb6a0137/image_2_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

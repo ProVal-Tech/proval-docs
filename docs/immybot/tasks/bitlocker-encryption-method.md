@@ -8,9 +8,17 @@ description: 'Enforces Bitlocker encryption method. If a machine is found to be 
 tags: ['security', 'encryption']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-11
 ---
 
 ## Description
 Enforces Bitlocker encryption method. If a machine is found to be out of compliance, this task will decrypt the drive and re-encrypt it with the target method using a recovery password as the key protector. If a previous recovery password is detected, it will be used for the new encryption.
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/bitlocker-encryption-method.toml)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

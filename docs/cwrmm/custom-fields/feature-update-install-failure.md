@@ -8,6 +8,8 @@ description: 'This document explains how to create a custom field for tracking t
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ The `Feature Update Install With Tracking` task utilizes this custom field to st
 **Type:** Text Box  
 **Level:** Endpoint  
 **Description:** Feature Update Install Failure Reason for Windows 10/11  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

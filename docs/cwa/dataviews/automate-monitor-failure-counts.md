@@ -8,6 +8,8 @@ description: 'This document describes a dataview that tracks the number of times
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ None
 | Client Name     | Client name                                                         |
 | Type            | Shows 'Internal' or 'Remote' depending on the type of monitor      |
 | Times Failed    | Shows the cumulative number of failures in the last three days     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that prevents a computer from slee
 tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ The script will download the EXE file and execute it.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

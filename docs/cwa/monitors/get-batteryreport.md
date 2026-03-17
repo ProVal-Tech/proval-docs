@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that checks computers for battery
 tags: ['data-collection']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ The purpose of this monitor is to select all computers that have returned a vali
 **Name:** `△ CUSTOM - Execute Script - Get-BatteryReport`
 
 The alert template should run the [EPM - Data Collection - Automate - Script Get - Battery Report](/docs/59738aa7-5495-4e4d-a36a-cc8af2643865) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

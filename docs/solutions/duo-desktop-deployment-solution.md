@@ -8,6 +8,8 @@ description: 'This solution contains the content for the auto-deployment/on dema
 tags: ['software', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-13
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ This solution contains the content for the auto-deployment/on demand execution o
 
 
 ## FAQ
+
+## Changelog
+
+### 2025-05-13
+
+- Initial version of the document

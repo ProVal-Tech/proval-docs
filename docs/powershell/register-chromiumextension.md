@@ -8,6 +8,8 @@ description: 'Documentation for the Register-ChromiumExtension command to add an
 tags: ['chrome', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -42,3 +44,9 @@ The output will be logged in the following file:
 ```
 .\\Register-ChromiumExtension-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

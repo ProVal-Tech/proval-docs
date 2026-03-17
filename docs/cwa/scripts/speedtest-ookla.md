@@ -8,6 +8,8 @@ description: 'This script automates the process of gathering internet speed test
 tags: ['performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ This script downloads the speed test zip file from Ookla and extracts it. After 
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

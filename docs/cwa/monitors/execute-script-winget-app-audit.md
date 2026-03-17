@@ -8,6 +8,8 @@ description: 'This document outlines the process for executing the Winget App Au
 tags: ['security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Winget App Audit`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

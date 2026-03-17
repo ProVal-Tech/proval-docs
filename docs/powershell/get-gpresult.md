@@ -8,6 +8,8 @@ description: 'Documentation for the Get-GPResult command to generate GPRESULT da
 tags: ['report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -143,3 +145,9 @@ $reportOutput = .\\Get-GPResult.ps1 -ReportType PSObject -ExcludeComputer
 - `./gpresult_user.xml`
 - `./gpresult.sql`
 - Returns a simple INSERT statement string with `tablename` and `idvalue` placeholders that can be replaced.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a dataview to identify machines with Open D
 tags: ['networking', 'report', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ None
 | Machine Type   | The type of machine: Server | Workstation | Mac | Linux                                          |
 | Wireless Card   | Checks if any of the cards connected to the endpoint are wireless compatible                   |
 | Umbrella Agent | Indicates if the Open DNS/Umbrella Agent is installed on the endpoint                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

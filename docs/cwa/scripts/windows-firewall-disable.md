@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['firewall', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ The script will execute if the Windows Firewall is enabled on the machine. It ru
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

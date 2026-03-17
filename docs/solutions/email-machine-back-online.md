@@ -8,6 +8,8 @@ description: "This document provides a comprehensive solution for notifying cont
 tags: ['email', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -75,3 +77,9 @@ A: Remove the email address(es) from the EDF.
 ## Sample Email
 
 ![Sample Email](../../static/img/docs/1973f30a-c6dc-4725-90f7-ba081cebf2d7/image_4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

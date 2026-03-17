@@ -8,6 +8,8 @@ description: 'This document outlines the solution for installing and reporting t
 tags: ['reboot', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -85,4 +87,10 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 
 4. Create and deploy the following tasks:  
    - [Out of Date Cumulative Update (Autofix)](/docs/5170978d-feb6-455c-8806-20224e27d923)  
-   - [Out of Date Cumulative Update (Post Reboot Verification)](/docs/34205607-a9c5-463b-9a45-9f7ac02c0d71)  
+   - [Out of Date Cumulative Update (Post Reboot Verification)](/docs/34205607-a9c5-463b-9a45-9f7ac02c0d71)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

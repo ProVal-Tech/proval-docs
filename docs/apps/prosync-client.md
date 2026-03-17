@@ -8,6 +8,8 @@ description: 'The ProSync Client is a ConnectWise Automate plugin designed to co
 tags: ['api', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Overview
@@ -61,3 +63,9 @@ The **Content** section of the **ProSync Client** is where content can be synced
 8. **Sync Button** - Used to sync a single piece of content. <u>***This ignores the Mass Sync status***</u> and will remove content from the client Automate server if it is deprecated.
 9. **Filter Radio Buttons** - Filters the list based on status of the content. Note that this does not filter the targets for the **Mass Sync Button** or the **Remove Button**. These buttons will still target all available content of the selected type.
 10. **Status Label** - Will show the last action taken and a loading spinner while an action is in progress.
+
+## Changelog
+
+### 2025-05-06
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The script configures the supported installed browsers to clear hi
 tags: ['browsers', 'chrome', 'edge', 'firefox']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-03
 ---
 
 ## Summary
@@ -244,3 +246,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-05-28
+
+- Initial version of the document

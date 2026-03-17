@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview that displays inf
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This dataview shows information about GPOs, their applied policies, where they a
 | Modified Time   | GPO last modified date and time                 |
 | Read Time       | GPO last check time                              |
 | OU Links        | Created OUs path                                 |
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

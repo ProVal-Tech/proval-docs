@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to verify if a Window
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ Please follow the [Windows 11 Compatibility Validation](/docs/676de0c3-b6a2-4a82
 I do believe that this could be skirted if you installed the ISO locally. But that is not something we can do, obviously.
 
 Hence, auditing on Windows 11 will also help to find issued Windows 11 machines that gets corrupted or had issues in further upgrades if forcefully updated to 11.
+
+## Changelog
+
+### 2025-08-21
+
+- Initial version of the document

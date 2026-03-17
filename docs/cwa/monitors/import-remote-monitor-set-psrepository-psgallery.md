@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to set the PSGa
 tags: ['connectwise', 'setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Implementation
@@ -85,3 +87,9 @@ unlisted: false
    Then re-open the group where the monitor is created.
 
 5. Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

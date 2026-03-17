@@ -8,6 +8,8 @@ description: 'Update Microsoft 365 Apps to their latest version.'
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-30
 ---
 
 ## Overview
@@ -47,3 +49,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Microsoft Office - C2R - Update](../../../static/attachments/Microsoft-Office-C2R-Update.cpt)
+
+## Changelog
+
+### 2026-01-30
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Windows Update R
 tags: ['report', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ This dataview was created to display a detailed list of patches that are install
 | Recommended Memory              | Recommended Memory to install the Patch             |
 
 **Note:** Any of the aforementioned columns can be added from the Field Chooser if they are not already present in the Dataview.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

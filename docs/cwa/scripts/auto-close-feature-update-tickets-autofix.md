@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to finalize new or open t
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ The purpose of the script is to finish the new or open tickets created by the fe
 | STATUS      | Status returned by the monitor set (FAILED/SUCCESS) |
 | Count       | Number of tickets to finish                     |
 | SQLTicketid | Ticket ID to finish/close                       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

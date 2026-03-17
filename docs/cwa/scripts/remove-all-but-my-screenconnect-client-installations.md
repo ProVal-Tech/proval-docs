@@ -8,6 +8,8 @@ description: 'This document provides a script for removing all instances of Scre
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 <div class='text-section scrollable'>
@@ -90,3 +92,9 @@ This script removes all instances of ScreenConnect from the machine except the o
 </div>
 ## Attachments
 [Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml](<../../../static/attachments/itg/14767921/Remove_-_All_But_My_-_ScreenConnect_Client_Installations.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

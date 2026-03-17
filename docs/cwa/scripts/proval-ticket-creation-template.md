@@ -8,6 +8,8 @@ description: 'This document outlines a new standard for creating tickets for cli
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ This document establishes a new standard for creating tickets for our clients.
 ## Output
 
 - Adds to a variable `VarLog` to be displayed in a parent ticket.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

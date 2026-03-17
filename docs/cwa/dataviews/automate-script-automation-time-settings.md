@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a dataview that disp
 tags: ['report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This dataview will show all the scripts with their defined saved automation time
 | Script Client Only     | Indicates if it's a client-only script. Yes or No.  |
 | Script Notes           | Displays the script notes.                          |
 | Automation Time Minutes | Displays the script's defined saved automation time. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

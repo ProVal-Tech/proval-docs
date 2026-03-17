@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating the Soji 
 tags: ['cleanup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-13
 ---
 
 ## Summary
@@ -286,3 +288,9 @@ Click the `Save` button to save the Task.
 ## Output
 
 ![Script Log Output](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_32.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

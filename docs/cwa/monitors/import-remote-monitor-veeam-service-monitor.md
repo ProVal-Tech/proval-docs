@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to setting up a Veeam 
 tags: ['setup', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Step 1
@@ -145,3 +147,9 @@ The monitor will come up with the search '`VeeamBackupSvc`' added to the LIMIT.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

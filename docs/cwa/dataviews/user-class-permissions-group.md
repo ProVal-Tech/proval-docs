@@ -8,6 +8,8 @@ description: 'This dataview displays the type of permissions applied to each use
 tags: ['database','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-28
 ---
  
 ## Summary
@@ -44,3 +46,13 @@ This dataview displays the type of permissions applied to each user class on a g
 | Clear Alerts | `1` if user class has permission to clear alerts for computers associated with this client. `0` if disabled. |
 | Schedule Scripts | `1` if user class has permission to schedule and run scripts on computers at the client level. `0` if disabled. |
 | Delete Scheduled Scripts | `1` if user class has permission to delete scheduled scripts. `0` if disabled.  |
+
+## Changelog
+
+### 2025-11-28
+
+- Created document
+
+### 2025-11-27
+
+- Initial version of the document

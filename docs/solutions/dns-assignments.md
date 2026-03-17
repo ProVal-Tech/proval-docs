@@ -8,6 +8,8 @@ description: 'This document outlines the process to enhance the existing EPM Net
 tags: ['dns']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ The purpose of this solution is to add to the current Non-Stack dataview [DNS As
 2. Import the dataview [DNS Assignments](/docs/8e53a0ed-4b8a-4aec-9d92-99423964f53c)
 3. Import the monitor [Execute Script - Get - DNS Assignments](/docs/c3e9e7df-9e35-46ab-bca6-a182331ca211)
 4. Enable the monitor with the alert template `△ Custom - Execute Script - Get - DNS Assignments` so that script runs on the detected agent.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

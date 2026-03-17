@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and setup of an internal monito
 tags: ['performance', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ The SQL query limits the monitor set to the patch-managed supported Windows mach
 **Name:** `△ Custom - Execute Script - Get Latest Installed Cumulative Update`
 
 - The alert template should run the [Get Latest Installed Cumulative Update](/docs/bd99d6b2-2d31-4611-9682-3c8518c53998) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

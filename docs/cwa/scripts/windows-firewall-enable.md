@@ -8,6 +8,8 @@ description: 'This document provides a script that enables the Windows firewall 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The script enables the Windows firewall for all profiles, i.e., public, domain, 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Downloads and installs the Cisco Umbrella Root CA certificate to t
 tags: ['cisco', 'certificates', 'security', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-11
 ---
 
 ## Overview
@@ -31,4 +33,10 @@ Downloads and installs the Cisco Umbrella Root CA certificate to the Local Machi
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-24
+
+- Initial version of the document

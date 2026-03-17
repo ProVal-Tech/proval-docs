@@ -8,6 +8,8 @@ description: 'This document outlines the creation of a custom field that indicat
 tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ All content listed in [EPM - Data Collection - Solution - VSA Proval Script Comp
 | Field Name                               | Type of Field (Machine or Organization) | Description / Syntax:                                                                                                   |
 |------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | xPVAL ProVal Compatible Endpoint         | Machine                                 | 'Compatible' OR 'Windows OS Out of Date.' OR 'PowerShell Version Out of Date.' OR 'MacOS Out of Date.' OR 'Unable to get Data from the endpoint'  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

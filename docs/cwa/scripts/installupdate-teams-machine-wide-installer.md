@@ -8,6 +8,8 @@ description: 'This document provides an implementation of the agnostic script fo
 tags: ['deployment', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ An implementation of the agnostic script [Deploy-Teams](/docs/512415ba-2cc0-44bc
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

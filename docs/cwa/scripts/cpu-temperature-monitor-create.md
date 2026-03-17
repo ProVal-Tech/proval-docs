@@ -8,6 +8,8 @@ description: 'This document outlines a script designed for establishing a remote
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -35,6 +37,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 **Note:**
 - It's crucial to follow the specified directory structure and initiate an `iisreset` after placing the tool.
 - The [**`CPUTempMon.exe` tool**](https://proval.itglue.com/attachments/13313008) is attached to this document.
+
+## Dependencies
+
+- [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
 
 ## Sample Run
 
@@ -107,3 +113,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 ## Attachments
 [CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

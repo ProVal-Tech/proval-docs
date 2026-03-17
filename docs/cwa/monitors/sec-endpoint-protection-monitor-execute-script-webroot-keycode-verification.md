@@ -8,6 +8,8 @@ description: 'This document describes the Webroot Keycode Verification Monitor, 
 tags: ['deployment', 'ticketing', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This monitor checks for online agents where the script [EPM - Data Collection - 
 ## Target
 
 - Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

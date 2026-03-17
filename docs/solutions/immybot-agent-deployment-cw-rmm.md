@@ -8,6 +8,8 @@ description: 'The solution outlines the process of auto deploying ImmyBot agent 
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-04
 ---
 
 ## Purpose
@@ -93,3 +95,9 @@ A: Supported OS selection is controlled by the `Deploy ImmyBot` custom field (Wo
 
 **Q: Does the installer support forced reinstallation?**  
 A: Yes, enable the "ReinstallAgent" runtime parameter when running the install task/script to force a reinstall even if the agent is present.
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

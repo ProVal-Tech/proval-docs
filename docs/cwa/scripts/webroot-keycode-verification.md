@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Webroot Keycode Verifica
 tags: ['webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Webroot SecureAnywhere with Utility Plugin
 - Script log
 - EDF
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'NinjaRMM implementation wrapper for the agnostic Test-WeakCredenti
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Overview
@@ -54,3 +56,9 @@ The custom field is updated on every run so administrators always see the latest
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

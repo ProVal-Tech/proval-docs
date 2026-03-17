@@ -8,6 +8,8 @@ description: 'This script deploys ConnectWise Asio Platform agents to windows en
 tags: ['installation', 'application',]
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-14
 ---
 
 ## Summary
@@ -35,3 +37,8 @@ Need to create this variable under the managed files.
 - Script logs.
 - `%ProgramData%_automation\AgentProcedure\CWRMM\AsioAgentInstaller.log`
 
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

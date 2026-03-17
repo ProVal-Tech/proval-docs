@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to check machi
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This internal monitor checks machines for any installed antivirus software, but 
 ## Target
 
 - Global — Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

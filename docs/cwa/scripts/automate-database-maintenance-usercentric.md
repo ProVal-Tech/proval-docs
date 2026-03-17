@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Automate Database Mainte
 tags: ['cleanup', 'database', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script will add the following section to the log variable:
 ![Output Section](../../../static/img/docs/983c0f82-09ce-4570-b7dc-55dfc78678fc/image_1.webp)
 
 Or data if applicable.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

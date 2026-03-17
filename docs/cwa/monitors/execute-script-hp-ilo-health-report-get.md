@@ -8,6 +8,8 @@ description: 'This document outlines the configuration and requirements for the 
 tags: ['networking', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -74,3 +76,9 @@ The alert template should run the [Script - HP iLO - Health Report - Get](/docs/
 
 The ticketing feature of the [HP iLO - Health Report - Get](/docs/f28ef90e-ba80-4ba1-9bd6-e4aa4c2b549a) script can be enabled by setting the ticket category in the monitor set.  
 ![Ticketing Feature](../../../static/img/docs/a8f66140-8915-41fa-805b-64fafbf002fc/image_5.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

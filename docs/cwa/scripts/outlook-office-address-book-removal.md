@@ -8,6 +8,8 @@ description: 'This document provides a script that removes and resets the Offlin
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The script will remove and reset the 'Offline Address Books' folder located at t
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

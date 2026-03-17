@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-UserRegistryValue command to remove s
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -44,3 +46,9 @@ Location of output for log, result, and error files.
 ```
 .\Remove-UserRegistryValue-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

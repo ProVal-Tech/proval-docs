@@ -8,6 +8,8 @@ description: 'Enable this checkbox to activate weak credential monitoring for th
 tags: ['auditing', 'alerting', 'domain', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-21
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enable this checkbox to activate weak credential monitoring for the client's dom
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/60a8bed6-fe7e-49b9-b0b9-d4d4e79cf769/image1.webp)
+
+## Changelog
+
+### 2025-11-21
+
+- Initial version of the document

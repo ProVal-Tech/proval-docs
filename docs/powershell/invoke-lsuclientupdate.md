@@ -8,6 +8,8 @@ description: 'Documentation for the Invoke-LSUClientUpdate command to install ap
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -62,3 +64,9 @@ This command will attempt to install all available and silently installable pack
     LogOutput      :
     Runtime        : 00:00:21.3074228
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

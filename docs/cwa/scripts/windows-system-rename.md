@@ -8,6 +8,8 @@ description: 'This script can be used to rename a windows machine. '
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-16
 ---
 
 ## Summary
@@ -48,3 +50,13 @@ Fill in the `NewName` and `DomainPasswordTitle` while running the script:
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2026-01-16
+
+- Updated the document and script with the latest document URL.
+
+### 2026-01-14
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on creating a dynamic 
 tags: ['connectwise', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ The group contains computers with different SentinelOne management servers as co
 
 ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_10.webp)  
 ![Image](../../../static/img/docs/820319b1-66c6-43b0-be35-136ac4c82ccd/image_11.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

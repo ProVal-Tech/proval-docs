@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on setting up Remote 
 tags: ['networking', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -46,7 +48,7 @@ This document details the procedure for setting up Remote Monitors for Location 
 
 ## Dependencies
 
-[CWM - Automate - Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
+[Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22)
 
 ## User Parameters
 
@@ -95,3 +97,9 @@ This document details the procedure for setting up Remote Monitors for Location 
 ## Output
 
 - Remote Monitors
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

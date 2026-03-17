@@ -8,6 +8,8 @@ description: 'This document details the steps to disable Windows optional automa
 tags: ['patching', 'registry', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -123,4 +125,10 @@ In this window, search for the `Windows Optional Update Disabled` field.
 
 ### Row 6: Complete
 
-![Complete](../../../static/img/docs/1ce60c7e-e23d-4313-bb00-7e89ae031d7f/image_17.webp)  
+![Complete](../../../static/img/docs/1ce60c7e-e23d-4313-bb00-7e89ae031d7f/image_17.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

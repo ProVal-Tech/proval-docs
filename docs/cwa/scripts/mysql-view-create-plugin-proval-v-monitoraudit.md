@@ -8,6 +8,8 @@ description: 'This document explains the process of creating the plugin_proval_v
 tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script creates the plugin_proval_v_monitoraudit View, which populates the d
 ## Output
 
 - View
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

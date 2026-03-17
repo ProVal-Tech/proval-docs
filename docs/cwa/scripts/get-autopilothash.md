@@ -8,6 +8,8 @@ description: 'This script retrieves the Hardware Hash necessary for Autopilot de
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ It is intended to run as an autofix script with [Get - Autopilot Hash](/docs/3ad
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

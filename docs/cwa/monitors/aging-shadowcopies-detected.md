@@ -8,6 +8,8 @@ description: 'This document describes a monitor that detects Windows agents lack
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This monitor will detect agents where shadow copies are not present or are older
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

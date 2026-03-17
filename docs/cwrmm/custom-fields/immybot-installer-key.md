@@ -8,6 +8,8 @@ description: 'The "ImmyBot Installer Key" is a specific identifier used during t
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This custom field stores the "ImmyBot Installer Key" which is a specific identif
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/9449d91e-3a45-4fa2-b0b4-099dc349bb50/image1.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

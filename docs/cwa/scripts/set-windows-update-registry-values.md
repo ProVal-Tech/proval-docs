@@ -8,6 +8,8 @@ description: 'This document details a script designed to remove unnecessary regi
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Furthermore, the script will ensure that patching access is not disabled for the
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-05-02
+
+- Initial version of the document

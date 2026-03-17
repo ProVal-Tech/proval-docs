@@ -8,6 +8,8 @@ description: 'Provide the download URL or local path for the .zip file used to i
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Provide the download URL or local path for the .zip file used to install Cisco S
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/be7067c4-47bf-4422-94d3-99ce33519996/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

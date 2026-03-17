@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Hyper-V Cluster
 tags: ['windows', 'dynamic-groups', 'hyper-v']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/83840fa9-72f2-4bd3-9f9f-353d606d9d3c/image4.webp)
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

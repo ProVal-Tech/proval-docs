@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of Windows 10 buil
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This document contains information about Windows 10 build information and patch 
 | Days Since Last Patched   | Days since last contact with RMM                    |
 | Supported Till            | Support End Date                                    |
 | Is EOL                   | 'Yes' or 'No', depending on the support end date   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

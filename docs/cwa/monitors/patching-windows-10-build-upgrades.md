@@ -8,6 +8,8 @@ description: 'This document outlines a monitoring solution designed to identify 
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ WHERE
     AND computers.computerid IN (SELECT computerid FROM computerpatchpolicies WHERE installpolicy IN (SELECT ID FROM installsoftwarepolicies WHERE updatemode IN (5, 6)))
 LIMIT 10
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

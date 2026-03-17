@@ -8,6 +8,8 @@ description: 'Checks the status of Windows Firewall profiles on the local machin
 tags: ['networking', 'security', 'firewall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ Checks the status of Windows Firewall profiles on the local machine. This script
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

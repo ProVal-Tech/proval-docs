@@ -8,6 +8,8 @@ description: 'The Host Key or API Hostname, which is the endpoint in Duo’s ser
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/b8a5b5bd-a7fe-4cd5-aae4-81a25a0be7fa/image3.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

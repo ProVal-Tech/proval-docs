@@ -24,4 +24,10 @@ Returns all Labtech*.zip files from any Labtech backup location.
 Returns all Labtech backup files.  
 
 ## Output  
-System.Object  
+System.Object
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

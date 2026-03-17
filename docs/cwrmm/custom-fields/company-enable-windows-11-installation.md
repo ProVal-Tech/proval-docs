@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of how to mark a custom
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Mark this custom field to enable Windows 11 installation for the company's Windo
 
 ![Image 1](../../../static/img/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8/image_1.webp)  
 ![Image 2](../../../static/img/docs/2567ed9c-49da-40f2-b566-9d6e8d2f87b8/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

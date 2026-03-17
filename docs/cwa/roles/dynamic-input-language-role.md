@@ -8,6 +8,8 @@ description: 'This document explains how to determine the input language setting
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ For instance, if your system locale is set to English (United States) and your i
 ## Sample
 
 ![Sample Image](../../../static/img/docs/6d8e0943-716a-4ebd-b878-1e648a2ddc56/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

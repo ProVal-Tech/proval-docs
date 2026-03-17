@@ -8,6 +8,8 @@ description: 'This document details a function script designed to operate as an 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This should always run with the [CWA Remote Monitor - Windows Cluster Shared Vol
 
 - Script log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

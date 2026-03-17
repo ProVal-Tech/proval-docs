@@ -8,6 +8,8 @@ description: 'This document provides an overview of patching-related statistics 
 tags: ['patching', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ The approval age is divided into five categories:
 - computerpatchpolicies cpp   
 - InstallSoftwarePolicies isp   
 - rebootpolicies rp
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

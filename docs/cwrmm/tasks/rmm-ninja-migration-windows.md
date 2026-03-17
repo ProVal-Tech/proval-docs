@@ -8,6 +8,8 @@ description: 'This script deploys the NinjaRMMAgent to Windows-supported OS. It 
 tags: ['windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-22
 ---
 
 ## Summary
@@ -346,3 +348,9 @@ It can be scheduled to run every 1 hour. Follow the below deployment step to sch
 
 - Custom field
 - Script Log
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Reports recent error events from the "MsiInstaller" event source a
 tags: ['windows', 'eventlogs', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-30
 ---
 
 ## Summary
@@ -280,3 +282,9 @@ Reload the System Cache (Ctrl + R).
 
 Find your remote monitor in the group's remote monitors tab. Make sure it is limited to the `Msiexec Eventlog Monitoring` search and apply the correct alert template.  
 When assigning the alert template, ensure it does not trigger actions for WARNINGS unless you want notifications for PowerShell errors as well.
+
+## Changelog
+
+### 2025-09-22
+
+- Initial version of the document

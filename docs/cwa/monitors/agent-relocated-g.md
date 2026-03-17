@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitoring solution designed to
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This document describes an internal monitor that detects if an agent has been mo
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

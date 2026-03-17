@@ -8,6 +8,8 @@ description: 'Documentation for the Install-GCPW command to automate the install
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -45,3 +47,9 @@ Installs Google Chrome (if missing), GCPW (if missing), and configures it for th
 ## Output
 - `.\Install-GCPW-log.txt`
 - `.\Install-GCPW-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and dependencies of the PNP Dev
 tags: ['database']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Purpose
@@ -31,3 +33,9 @@ Stores the data collected by the [Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-
 | Status        | varchar(1000) | Current status of the PNP device     |
 | Class         | varchar(1000) | Class of the PNP device               |
 | Date          | datetime     | Script run time                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

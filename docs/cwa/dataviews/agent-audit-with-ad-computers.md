@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the dataview used to
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The dataview can be used to audit the agents in the environment.
 | Last Username                   | The last logged-in user on the computer.           |
 | Last AD Logon                  | The last Active Directory login date.              |
 | Days Since AD Logon            | The number of days since the last Active Directory login. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

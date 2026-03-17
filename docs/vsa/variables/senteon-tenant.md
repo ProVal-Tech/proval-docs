@@ -8,6 +8,8 @@ description: 'This document details the managed variable used to store the Sente
 tags: ['installation', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The value for this must be provided by the partner. The partner can obtain the d
 | Managed Variable Name | Managed Variable Type | Description                                                |
 |-----------------------|-----------------------|------------------------------------------------------------|
 | Senteon_Tenant        | Public                | Used by the agent procedure to specify the tenant during installation |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a solution for auditing folder redirection 
 tags: ['gpo', 'report', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -36,3 +38,9 @@ It can be utilized to visually see users with an effective folder redirection po
 
 **Q.** What happens if I run this on a schedule? Will the table bloat?  
 **A.** Not necessarily. If the script is run multiple times on the same machine, it will update the 'value' column in the custom table only, using the `computerID`, the `User`, and the `PropertyName` as the primary keys. So, unless a new user is added, data will simply be changed rather than added. On average, one computer with one user will render about 16 KiB of data in the table.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

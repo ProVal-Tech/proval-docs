@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of the Disable-DotNet3 a
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document describes the implementation of the Disable-DotNet3 agnostic scrip
 ## Process
 
 Please review the agnostic content documentation for process information.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

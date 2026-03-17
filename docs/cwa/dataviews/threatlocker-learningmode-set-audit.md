@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Threatlocke
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This dataview stores the result of the Threatlocker learning mode setting done v
 | Learning Mode Duration (Hours)   | This shows the learning mode duration in hours                                                            |
 | Learning Mode Set Status         | This stores the learning mode status, indicating whether it was successfully set or failed.               |
 | Learning Mode Log Record         | This stores the learning mode logs of success or failure.                                                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

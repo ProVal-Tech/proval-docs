@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to setting up a remote
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Step 1
@@ -93,3 +95,9 @@ Limit the remote monitor to a search, if necessary.
 
 ## Step 7
 Apply the appropriate alert template to the remote monitors.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

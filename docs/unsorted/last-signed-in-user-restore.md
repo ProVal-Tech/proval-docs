@@ -33,3 +33,9 @@ This script will restore the backup logon user to the login screen of the machin
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

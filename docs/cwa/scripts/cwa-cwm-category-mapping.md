@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to map categor
 tags: ['database', 'setup', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 **Q:** What happens if I set both Subtype and Item to 1?  
 **A:** The script checks for Item first, as it trumps Subtype, and adds both the subtype and the item mapping.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

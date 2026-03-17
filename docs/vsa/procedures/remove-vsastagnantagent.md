@@ -8,6 +8,8 @@ description: 'This document outlines the process for removing VSA agents that ha
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Overview
@@ -49,3 +51,9 @@ The location of output files for log, result, and error files is as follows:
 ```
 ## Attachments
 [Procedure_Stagnant_Agent_Removal_(Deprecated).xml](<../../../static/attachments/itg/10619887/Procedure_Stagnant_Agent_Removal_(Deprecated).xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

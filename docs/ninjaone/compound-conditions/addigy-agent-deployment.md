@@ -8,6 +8,8 @@ description: 'Executes Install Addigy Agent [Macintosh] script on the machines w
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Executes [Install Addigy Agent [Macintosh]](/docs/fd5e79e9-e9bf-4d8a-ba85-d61bf6
 ## Compound Condition Creation
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/addigy-agent-deployment.toml)
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

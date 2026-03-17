@@ -8,6 +8,8 @@ description: 'This document outlines the purpose, dependencies, and structure of
 tags: ['database', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -38,3 +40,9 @@ Stores battery information for each target.
 | RelativeCapacity          | VarChar   | The battery relative capacity.                       |
 | SerialNumber              | VarChar   | The battery serial number.                          |
 | LastScanTime              | DateTime  | The last scan time for the report.                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

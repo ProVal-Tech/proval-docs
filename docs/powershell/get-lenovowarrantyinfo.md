@@ -8,6 +8,8 @@ description: 'Retrieves Lenovo device warranty information using Lenovo''s publi
 tags: ['lenovo', 'api', 'data-collection']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-19
 ---
 
 ## Overview
@@ -98,3 +100,9 @@ The script returns a PowerShell object with the following properties:
 Log and error files:  
 - .\Get-LenovoWarrantyInfo-log.txt  
 - .\Get-LenovoWarrantyInfo-error.txt
+
+## Changelog
+
+### 2025-09-18
+
+- Initial version of the document

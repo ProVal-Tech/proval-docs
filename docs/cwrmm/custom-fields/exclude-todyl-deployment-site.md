@@ -8,6 +8,8 @@ description: 'Flag this Custom Field to exclude the Site from Todyl SGN Connect 
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this Custom Field to exclude the Site from Todyl SGN Connect agent auto-dep
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/b4d717f5-38fe-4eac-83d4-d1cb88e7fe9d/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

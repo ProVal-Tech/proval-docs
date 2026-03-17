@@ -8,6 +8,8 @@ description: 'This monitor is designed to set the automatic deployment of the Ni
 tags: ['application','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-23
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ To enable ticketing please set the `Ticket Category` in the monitor:
 ![alerting tab](../../../static/img/docs/ninjarmm-agent-deployment/image.png)
 
 The ticket creation will be then handled by the Autofix script.
+
+## Changelog
+
+### 2025-05-21
+
+- Initial version of the document

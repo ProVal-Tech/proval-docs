@@ -8,6 +8,8 @@ description: 'This document outlines the process of deploying Evo Agent from CW 
 tags: ['software', 'installation', 'uninstallation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-19
 ---
 
 ## Purpose
@@ -61,3 +63,9 @@ Configure the automation as follow:
 
 Set the client-level deployment and parameter EDFs to initiate the Automation.  
 ![Image3](../../static/img/docs/b1089c56-7d18-11f0-8d05-92000234cfc2/image3.webp)
+
+## Changelog
+
+### 2025-08-19
+
+- Initial version of the document

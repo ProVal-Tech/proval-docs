@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a remote PowerShell 
 tags: ['active-directory', 'recovery', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -35,4 +37,10 @@ Domain Controllers only.
 
 ## Implementation
 
-- [Import - Remote Monitor - AD Recycle Bin State Check](/docs/7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d) 
+- [Import - Remote Monitor - AD Recycle Bin State Check](/docs/7f37dfc1-5f0a-4f7d-bf9f-631ea653a74d)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

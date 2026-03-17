@@ -8,6 +8,8 @@ description: 'This document explains how to use a PowerShell script to disable O
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This script disables Office updates by running a PowerShell command.
 ## Process
 
 - Disables Office updates by running a PowerShell command that updates a registry value at `HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration` and sets the `UpdateEnabled` value to `False`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

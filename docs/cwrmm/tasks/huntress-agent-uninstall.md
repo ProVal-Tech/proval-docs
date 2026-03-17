@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to uninstall the Hu
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -161,3 +163,9 @@ Then click on "Schedule" and provide the parameters details as necessary for the
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

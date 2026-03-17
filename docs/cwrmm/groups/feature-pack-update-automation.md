@@ -8,6 +8,8 @@ description: 'This document outlines the process for organizing computers runnin
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ Click the Save button to save the group.
 ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_12.webp)
 
 ![Image](../../../static/img/docs/b9c9e1fe-57af-4816-befb-f2701ba009ba/image_13.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

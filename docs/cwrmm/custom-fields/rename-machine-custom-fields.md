@@ -8,6 +8,8 @@ description: ''
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This custom fields are needed for the task [Windows - System - Rename](/docs/cd9
 ### Domain_Admin_Pwd
 
 ![Domain_Admin_Pwd](<../../../static/img/docs/ba3c12eb-f166-4982-ab21-a2337a989614/image-1.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

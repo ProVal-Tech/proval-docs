@@ -8,9 +8,17 @@ description: 'An ImmyBot software installer for Lastpass'
 tags: ['application', 'installation', 'uninstallation']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-08-22
 ---
 
 ## Description
 An ImmyBot software installer for Lastpass. LastPass is a password management service that helps users securely store and manage their passwords and other sensitive information
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/lastpass-universal-windows-installer.toml)
+
+## Changelog
+
+### 2025-08-22
+
+- Initial version of the document

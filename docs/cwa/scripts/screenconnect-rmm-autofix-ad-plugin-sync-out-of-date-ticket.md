@@ -8,6 +8,8 @@ description: 'This document details a script designed to automatically fix issue
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -102,3 +104,9 @@ PC Model: @biosname@
 OS: %os%
 S/N OF PC: @biosver@
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

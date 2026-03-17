@@ -8,6 +8,8 @@ description: 'This document provides an overview of a Bitlocker monitoring scrip
 tags: ['compliance', 'database', 'encryption', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -74,3 +76,9 @@ AND (
 ## Ticketing
 
 ![Ticketing Image](../../../static/img/docs/561f5be7-feb7-4c6a-b7b3-5ca93b39a40c/image_1_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

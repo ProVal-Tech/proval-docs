@@ -8,6 +8,8 @@ description: 'This document outlines a script that removes the "Automate Agent D
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ The script runs the appropriate PowerShell command to remove the "Automate Agent
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the functionality and requirements of the O
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ unlisted: false
 ## Target
 
 The only limiting factor will ultimately be the Windows operating system. The reason for this is that the monitor will filter out servers, ARM processors, virtual machines, etc. That being said, even if you were to include a server in the list for this monitor, that server would never trigger the autofix action.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

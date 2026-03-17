@@ -8,6 +8,8 @@ description: 'This document provides a guide on how to create a custom field tha
 tags: ['connectwise', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ Select this custom field to exclude a site from Huntress Deployment. It is being
 **Type:** Flag  
 **Level:** Site  
 **Description:** Select to Exclude Site from Huntress Deployment  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

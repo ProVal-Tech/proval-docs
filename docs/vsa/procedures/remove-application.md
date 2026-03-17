@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to remove appl
 tags: ['performance', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,4 +21,10 @@ This document explains how to remove an application or a list of comma-separated
 This agent procedure is designed as a template and is meant to be exported.  
 **Name:** Remove - Application  
 ![Image](../../../static/img/docs/5197b52f-294e-4b7d-8956-5bc5afc3f51c/image_1.webp)  
-The agent procedure can be customized to fit the needs of various uninstalls. There are four variables within this agent procedure. See the usage for these below.  
+The agent procedure can be customized to fit the needs of various uninstalls. There are four variables within this agent procedure. See the usage for these below.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

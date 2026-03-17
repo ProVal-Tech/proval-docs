@@ -8,6 +8,8 @@ description: 'This document details a script for collecting OneDrive sync status
 tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This document outlines a script designed to collect OneDrive sync status informa
 
 - Script log
 - Script states
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

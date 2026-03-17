@@ -8,6 +8,8 @@ description: 'This document outlines a script that checks for necessary environm
 tags: ['performance', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -97,3 +99,9 @@ Environmental tests failed for the following issues -
 
 UAC Status
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

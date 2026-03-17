@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing the Hun
 tags: ['installation', 'security', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -101,3 +103,9 @@ Output of the installation command:
 
 - Script log
 - Ticket (if enabled)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

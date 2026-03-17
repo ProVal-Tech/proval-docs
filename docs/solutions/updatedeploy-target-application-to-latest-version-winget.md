@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for achieving the app
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ This solution is designed to achieve the appropriate application upgrade to the 
   ![Image](../../static/img/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021/image_3.webp)  
 - Apply the alert template "**△ Custom - Execute Script - Application Latest Version**" with monitor [ProVal - Production - Latest Version Detection](/docs/f5315643-b01b-48e6-ae4c-b89e5c0f20d6) first and run it once before implementing the other monitor so that the system property gets created.
 - Apply the alert template "**△ CUSTOM - Application Install/Update - Winget**" with monitor [ProVal - Production - Install/Update [Winget]](/docs/9b40d1cd-7886-416f-b56e-11ab3a44befb) and make the adjustments as mentioned in the screenshot.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

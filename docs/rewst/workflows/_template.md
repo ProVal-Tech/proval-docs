@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-11-05
 ---
 
 # Summary
@@ -18,3 +20,5 @@ Provide instructions on how to use the workflow, including any necessary configu
 
 # Returned Data
 Describe the data that the workflow returns upon completion, including formats and structures (usually JSON).
+
+## Changelog

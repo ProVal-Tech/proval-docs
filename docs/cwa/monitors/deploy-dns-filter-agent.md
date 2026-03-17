@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of the internal monitor t
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ OR
 
 Failed to install DNS Filter Agent for %ClientName%//%ComputerName%.  
 Installer's Output: %ShellResult%
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

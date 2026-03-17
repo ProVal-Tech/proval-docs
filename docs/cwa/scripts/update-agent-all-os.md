@@ -8,6 +8,8 @@ description: 'This document details a script designed to pull the highest agent 
 tags: ['connectwise', 'performance', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ The script pulls the highest agent version in the environment and attempts to up
 
 - The script runs SQL to pull the highest agent version in the environment and attempts to update the agent using those parameters.
 - The script is intended to be used with ProVal – Production – Agent – Out of Date.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The ProSync Server application (named "ProSync" in the ConnectWise
 tags: ['api', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Overview
@@ -59,3 +61,9 @@ The **API Clients** section of the plugin is where you can add and remove API ac
 1. **Client Addition Section** - Enter a **Client Name**, **Client Secret**, and **confirm the secret**. Then, click the **Add** button to create an API member for the [ProSync Client](/docs/611894b8-9984-4e1e-a061-2753bcf65b28) to use as authentication with the `ProSync API`.
 2. **Client List** - Shows the current list of clients available to authenticate with the API.
 3. **Delete Button** - Select a client in the **Client List** and click the **Delete** button to remove that member's access to the API, preventing further synchronization of content.
+
+## Changelog
+
+### 2025-05-07
+
+- Initial version of the document

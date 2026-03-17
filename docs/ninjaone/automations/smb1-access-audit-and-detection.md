@@ -8,6 +8,8 @@ description: 'Enables SMB1 access auditing if disabled and scans event logs for 
 tags: ['alerting', 'auditing', 'eventlogs', 'smb']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Overview
@@ -33,4 +35,10 @@ Enables SMB1 access auditing if disabled and scans event logs for recent SMB1 ac
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

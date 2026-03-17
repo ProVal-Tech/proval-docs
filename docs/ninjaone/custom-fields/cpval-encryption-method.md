@@ -8,6 +8,8 @@ description: 'Choose the encryption algorithm BitLocker will apply to the select
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-05
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The encryption method that will be used to protect the target volume. Valid opti
 ## Sample Screenshot
 
 ![cPVAL EncryptionMethod](../../../static/img/docs/56fde7c8-f054-4b53-a3a9-d24134fb9cc0/image1.webp)
+
+## Changelog
+
+### 2025-12-16
+
+- Initial version of the document

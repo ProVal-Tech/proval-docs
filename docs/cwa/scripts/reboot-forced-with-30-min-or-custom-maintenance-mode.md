@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['performance', 'reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The script will then issue a Windows CLI command to restart the device and exit 
 ## Output
 
 Script log messages
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

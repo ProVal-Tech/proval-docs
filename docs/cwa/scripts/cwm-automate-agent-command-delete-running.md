@@ -8,6 +8,8 @@ description: 'This document describes a script designed to automatically fix iss
 tags: ['database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This script will execute with the monitor and will delete all the executable com
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

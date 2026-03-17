@@ -8,6 +8,8 @@ description: 'This procedure deploys all updates including BIOS, firmware, and d
 tags: ['deployment', 'software', 'update', 'windows', 'dell']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-22
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 - Script Logs
    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-log.txt`
    - `C:\ProgramData\_automation\AgentProcedure\DellCommandUpdate\Initialize-DellCommandUpdate-error.txt`
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

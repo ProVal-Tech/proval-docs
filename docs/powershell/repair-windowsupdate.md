@@ -8,6 +8,8 @@ description: 'Documentation for the Repair-WindowsUpdate command to reset Window
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -66,3 +68,9 @@ Location of output for log, result, and error files:
 .\Reset-WindowsUpdates-log.txt
 .\Reset-WindowsUpdates-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

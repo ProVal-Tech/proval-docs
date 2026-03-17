@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Windows 10 Version Metri
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -45,3 +47,9 @@ Unsupported for MySQL version < 5.7
 | % Supported Machines                | varchar(27)     | Either 100 or 0 for the release ID row depending upon whether the concerned release ID is supported till today or not. For the Summary row, it's the percentage of the supported Windows 10 out of all the available Windows 10 machines. |
 | % Unsupported Machines              | varchar(31)     | Either 0 or 100 for the release ID row depending upon whether the concerned release ID is supported till today or not. For the Summary row, it's the percentage of the unsupported Windows 10 out of all the available Windows 10 machines. |
 | Build                               | varchar(60)     | Build Number for the concerned release ID. e.g., 10.0.19044, 10.0.19043. It will show 'Windows 10' for the Summary Row.                                                                                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

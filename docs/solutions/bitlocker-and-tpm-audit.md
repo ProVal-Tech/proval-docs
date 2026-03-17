@@ -8,6 +8,8 @@ description: 'This solution provides a comprehensive auditing framework for BitL
 tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -175,3 +177,9 @@ Create the following compound conditions as described in the documentation:
 ### **Q.** Why is the "cPVAL BitLocker Enabled for System Drive" field useful if I already have the full table?
 
 **A:** It is a simple boolean (Checkbox) field. This makes it much easier to use in Condition logic (e.g., "If Checkbox is Unchecked, trigger alert") compared to parsing a full HTML table.
+
+## Changelog
+
+### 2026-01-08
+
+- Initial version of the document

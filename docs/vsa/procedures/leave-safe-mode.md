@@ -8,6 +8,8 @@ description: 'This document describes a procedure for rebooting an endpoint from
 tags: ['performance', 'recovery', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This document outlines the procedure for rebooting an endpoint from safe mode in
 ## Process
 
 This section describes the steps to reboot an endpoint from safe mode into normal mode.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

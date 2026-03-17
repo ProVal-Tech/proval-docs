@@ -8,8 +8,16 @@ description: 'Install the uBlock Origin Lite extension using ImmyBot.'
 tags: ['software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Description
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-extension-ublock-origin-lite.toml)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

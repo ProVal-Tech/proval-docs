@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for setting the wallpaper on 
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -20,3 +22,9 @@ This document explains how to set the wallpaper on a Windows endpoint and option
 |--------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 3:22:38 pm 15-Feb-23    | Wallpaper Set                                 | Success THEN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | provaltech.com/dan.hicks  |
 | 3:22:37 pm 15-Feb-23    | Wallpaper Set-0002                           | Log: 2023-02-15 15:18:52.030 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:52.656 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:18:53.015 -05:00 [INF] Granting public access to 'C:/Windows/TEMP/4844810.jpg'. 2023-02-15 15:22:26.270 -05:00 [INF] Writing user-level script to 'C:/Windows/TEMP/Set-WallpaperUL.ps1'. 2023-02-15 15:22:26.785 -05:00 [INF]  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

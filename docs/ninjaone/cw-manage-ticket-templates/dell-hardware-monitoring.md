@@ -8,6 +8,8 @@ description: 'This ticket template is used to manage the CW Manage ticket genera
 tags: ['dell', 'ticketing', 'cwmanage']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-20
 ---
 
 ## Overview
@@ -76,3 +78,9 @@ Enter the required details and click `Save`.
 ## Completed Template
 
 ![Image2](../../../static/img/docs/c1c2c40f-3a63-4eb8-8460-9f90000337aa/image2.webp)
+
+## Changelog
+
+### 2025-06-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Get-UserProfiles command to gather informati
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -41,3 +43,9 @@ Gathers information about user profiles.
 
 ## Output
 - .\Get-UserProfiles-log.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

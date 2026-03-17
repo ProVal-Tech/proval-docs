@@ -8,6 +8,8 @@ description: 'This document provides a dataview that detects whether a machine a
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This dataview detects if the machine allows local caching of files for offline a
 | Computer             | Computer Name                                               |
 | OS                   | OS installed on the agent                                   |
 | Offline Files Status  | Enabled / Disabled for offline file status (based on role detection) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

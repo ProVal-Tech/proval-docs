@@ -8,6 +8,8 @@ description: 'This document provides an overview of the implementation of the ag
 tags: ['active-directory', 'gpo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This document outlines the implementation of the agnostic script [Start-GPOAudit
 - Custom Table
 - Dataview
 - Script Log
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

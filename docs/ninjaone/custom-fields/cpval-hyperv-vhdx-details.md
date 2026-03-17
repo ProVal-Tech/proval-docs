@@ -8,6 +8,8 @@ description: 'Stores an HTML-formatted inventory of Hyper-V Virtual Hard Disks (
 tags: ['hyper-v', 'auditing', 'disk', 'diskspace']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Stores an HTML-formatted inventory of Hyper-V Virtual Hard Disks (VHD/VHDX). Dat
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/130fecda-6c10-4271-a55e-1aa19c8e8042/image1.webp)
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

@@ -8,11 +8,13 @@ description: 'This document details a script designed for managing emails relate
 tags: ['email']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
 
-This script is an email version of [CWM - Automate - Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22). It will manage emails related to remote ping monitors.
+This script is an email version of [Script - Ticket Creation - Ping Monitor](/docs/7cd1193a-c796-4545-b707-758e1b651c22). It will manage emails related to remote ping monitors.
 
 ## Sample Run
 
@@ -68,3 +70,9 @@ Alert Template: `△ Custom - Email Creation - Ping Monitor`
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

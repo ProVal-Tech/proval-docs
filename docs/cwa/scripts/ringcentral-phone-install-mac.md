@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['application', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The script will put the machine into Fast Talk mode, as this makes the script ru
 ## Output
 
 Script log messages
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

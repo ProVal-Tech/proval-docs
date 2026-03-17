@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of all custom scri
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ Color coding is applied to the columns "# Internal Monitor," "# Remote Monitor,"
 - **Synced/Updated:** Highlights "Yes" in green, "No" in orange, "Client-Specific" in grey, and "Deprecated" in red to easily show whether the script is deprecated, client-specific, or if a non-stack script is properly synced/updated from the ProVal plugin.
 - **Group Scheduled:** Highlights the group full name in green to indicate where the script is scheduled.
 - **Scheduled in Past 6 Months:** Highlights "Recently Added" in green to show which script was either run by the group or manually in the past 6 months, or if the script was running as an autofix via monitors. If any condition is met, it is marked as "Recently Added."
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

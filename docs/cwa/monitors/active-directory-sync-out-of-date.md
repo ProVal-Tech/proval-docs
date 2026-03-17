@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that detects Active Directory ser
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This monitor is dependent on the following items:
 ## Target
 
 The monitor set is explicitly limited to the domain controllers detected in the Active Directory plugin.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

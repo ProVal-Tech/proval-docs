@@ -8,6 +8,8 @@ description: 'This document provides a role definition to help identify and trac
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role definition helps you track machines with legacy BIOS types.
 | Detection String                     | Comparator     | Result | Applicable OS |
 |--------------------------------------|----------------|--------|----------------|
 | \{%@bcdedit | find /i "path"@%}     | Regex Match    | .exe   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

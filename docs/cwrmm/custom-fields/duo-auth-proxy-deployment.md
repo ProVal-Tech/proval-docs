@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the custom field
 tags: ['security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The custom fields listed below are used in the DUO Auth Proxy Deployment Solutio
    **Note:** The description is mandatory to fill out and does not accept **'NEW LINE'**. Write everything in one phrase to describe the details of the custom field.
 
 4. Please follow the same steps to create other custom fields.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

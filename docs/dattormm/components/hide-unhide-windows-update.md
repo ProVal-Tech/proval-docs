@@ -8,6 +8,8 @@ description: 'This script manages the visibility of the Windows Update page in t
 tags: ['datto', 'update', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Overview  
@@ -51,3 +53,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 [Hide-Unhide Windows Update](../../../static/attachments/Hide-Unhide%20Windows%20Update.cpt)
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

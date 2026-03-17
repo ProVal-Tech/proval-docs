@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on creating a dynamic 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ The group contains the computers where the solution to disable FastBoot is enabl
 
 ![Completed Group 1](../../../static/img/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a/image_12.webp)  
 ![Completed Group 2](../../../static/img/docs/df5b7a85-683f-4fd6-9a24-4fc836ccfd8a/image_13.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

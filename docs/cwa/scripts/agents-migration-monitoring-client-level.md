@@ -8,6 +8,8 @@ description: 'This document describes a script designed to identify computers th
 tags: ['setup', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ It is a client script that has to be set up to run on a regular basis, either da
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/docs/1a561427-06ea-4c8c-b752-d1ad312007ab/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

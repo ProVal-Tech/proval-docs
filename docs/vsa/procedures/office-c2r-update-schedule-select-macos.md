@@ -1,13 +1,15 @@
 ---
-id: 'bf426f89-7da1-4f4b-88b7-03983136458c'
-slug: /bf426f89-7da1-4f4b-88b7-03983136458c
-title: 'Office C2R Update Schedule Select (macOS)'
-title_meta: 'Office C2R Update Schedule Select (macOS)'
+id: '47d714f5-714e-4078-9464-54b3e62ae093'
+slug: /47d714f5-714e-4078-9464-54b3e62ae093
+title: 'Office Update Schedule Select (macOS)'
+title_meta: 'Office Update Schedule Select (macOS)'
 keywords: ['office', 'macos', 'update', 'channel', 'procedure']
 description: 'This document outlines the procedure for setting the update channel for Microsoft Office on macOS endpoints, including the available channels and implementation steps for exporting and importing the agent procedure in VSA RMM.'
 tags: ['macos', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-03-11
 ---
 
 ## Summary
@@ -26,23 +28,19 @@ The following [channels](https://learn.microsoft.com/en-us/microsoft-365-apps/in
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
    **Name:** Office Update Schedule Select (macOS)  
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_1.webp)  
+   ![Image](../../../static/img/docs/47d714f5-714e-4078-9464-54b3e62ae093/image1.webp)  
    The export will download the necessary XML file.  
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_2.webp)  
+   ![Image](../../../static/img/docs/47d714f5-714e-4078-9464-54b3e62ae093/image2.webp)  
    
 2. Import this XML file into the partner's VSA RMM instance.  
-   ![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_3.webp)  
+   ![Image](../../../static/img/docs/47d714f5-714e-4078-9464-54b3e62ae093/image3.webp)  
 
 ## Output
 
-The expected Last Exec Status is "success."  
-![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_4.webp)  
+- Agent Procedure Log  
 
-### Agent Procedure Log
+ ## Changelog
 
-Two log entries are expected. The procedure will first check the existing channel.  
-![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_5.webp)  
+ ### 2026-03-11
 
-### Custom Field
-
-![Image](../../../static/img/docs/bf426f89-7da1-4f4b-88b7-03983136458c/image_6.webp)  
+ - Initial version of the document

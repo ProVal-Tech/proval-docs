@@ -8,6 +8,8 @@ description: 'The condition runs the automation once per hour and generates a ti
 tags: ['security', 'accounts', 'eventlogs']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-15
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Ticket Output Example
 ![Image5](../../../static/img/docs/d8ab94a8-8b00-401b-b1a4-48b7fd2713ae/image5.webp)
+
+## Changelog
+
+### 2025-07-07
+
+- Initial version of the document

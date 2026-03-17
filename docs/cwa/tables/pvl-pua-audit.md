@@ -8,6 +8,8 @@ description: 'This document provides details about the audit data collected for 
 tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ The following dependency is required for this audit data:
 | Name                | VARCHAR  | Primary Key, the name of the bloatware. |
 | Category            | VARCHAR  | The category that the PUA belongs to.   |
 | DataCollectionTime  | DateTime | Data collection time.                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for installing the HP
 tags: ['installation', 'software', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Last Login: %lastuser%
 PC Model: @biosname@  
 OS: %os%  
 S/N OF PC: @biosver@
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

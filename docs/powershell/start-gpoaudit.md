@@ -8,6 +8,8 @@ description: 'Documentation for the Show-Prompt command to display a user prompt
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-03-25
 ---
 
 ## Description
@@ -59,3 +61,9 @@ Returns an object containing GPO general settings, detailed settings, links, and
 Location of output for log, result, and error files.
     .\Start-GPOAudit-Log.txt
     .\Start-GPOAudit-Error.txt
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

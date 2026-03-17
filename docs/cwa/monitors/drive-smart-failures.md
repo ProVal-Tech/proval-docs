@@ -8,6 +8,8 @@ description: 'This document provides an overview of a monitor designed to detect
 tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -17,3 +19,9 @@ This monitor will look for any "SMART Failure" on a drive that exceeds the manuf
 ## Target
 
 Windows Machines - This monitor should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

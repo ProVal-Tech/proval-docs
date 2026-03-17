@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the site from the BitLocker Stat
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the site from the [BitLocker Status and Recove
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/fb66191c-89d5-4712-a4a3-e1c90f943b7b/image1.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

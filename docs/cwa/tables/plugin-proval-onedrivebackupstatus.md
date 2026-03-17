@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the redirection 
 tags: ['backup', 'onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This document stores information about the redirection of Desktop, Documents, an
 | PicturesEnabled    | TINYINT  | 1 or 0 indicating if Pictures redirection is enabled or disabled. |
 | PicturesPath     | VARCHAR  | The path to the Pictures redirection.              |
 | TimeStamp        | DATETIME | The date and time of the audit.                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

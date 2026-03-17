@@ -8,6 +8,8 @@ description: 'This document provides details on a remote monitor that checks the
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -147,3 +149,9 @@ Locate your remote monitor by opening the group(s) remote monitors tab, then app
 
 **Q. Will stopping the Update Orchestrator service impact Automate patch management?**  
 **A.** No, Automate's patch management relies solely on the Windows Update service and UI mode (Check for Updates), so stopping the Update Orchestrator won't affect it.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

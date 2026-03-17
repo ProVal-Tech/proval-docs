@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Kaseya Onboarding Audit 
 tags: ['kaseya', 'report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -106,3 +108,9 @@ $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagem
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/SoftwareManagementDeploymentProfiles.csv
 $env:ProgramData/_automation/StackContent/$ClientName/Audit/CSVs/Users.csv
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

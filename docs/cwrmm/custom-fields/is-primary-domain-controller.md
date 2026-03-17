@@ -8,6 +8,8 @@ description: 'This document outlines the process to validate whether a computer 
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The custom field is then used to create the [CW RMM - Machine Group - Infrastruc
 ## Sample Value
 
 ![Sample Value](../../../static/img/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

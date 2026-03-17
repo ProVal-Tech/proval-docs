@@ -49,4 +49,10 @@ This will download the 12GB password list, execute that query to compare values,
 | `Cleanup`    | `C`   | False    |         | String[] | This parameter accepts any combination of its valid set. It is a valid set of 'All', 'Text', 'Zipped'.                       |  
 
 ## Output  
-PSObject  
+PSObject
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

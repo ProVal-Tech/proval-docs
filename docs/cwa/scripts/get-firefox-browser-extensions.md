@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of the agnostic script f
 tags: ['database', 'report', 'security', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ An Automate implementation of the agnostic script [Get-FirefoxExtensions](/docs/
 - Script logs
 - Custom Table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

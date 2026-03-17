@@ -8,6 +8,8 @@ description: 'Enter the username for the local admin account to be created. This
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Enter the username for the local admin account to be created. This name will be 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e1b7982c-35bc-43b4-870f-2f27f8ed582e/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

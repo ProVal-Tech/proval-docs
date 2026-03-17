@@ -8,6 +8,8 @@ description: 'This script automates the deployment of the BlackPoint agent insta
 tags:  ['windows','security','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Overview
@@ -42,3 +44,9 @@ This script automates the deployment of the BlackPoint SnapAgent installation on
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

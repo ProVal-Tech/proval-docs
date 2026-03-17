@@ -8,6 +8,8 @@ description: 'Documentation for the Unprotect-BitLockerVolume command to disable
 tags: ['disk-encryption', 'recovery', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -39,3 +41,9 @@ Disables BitLocker protection on all volumes.
 - `.\Unprotect-BitLockerVolume-log.txt`
 - `.\Unprotect-BitLockerVolume-data.txt`
 - `.\Unprotect-BitLockerVolume-error.txt`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

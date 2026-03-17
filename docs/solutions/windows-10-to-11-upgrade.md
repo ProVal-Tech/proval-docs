@@ -8,6 +8,8 @@ description: 'This document outlines a solution for identifying Windows 10 compu
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -113,3 +115,9 @@ The solution has been updated to use a policy for the Windows 10 to Windows 11 u
    - This policy group document is just for reference.
    - Use the existing policy in conjunction with the policy group if you have not created a new one.
    - The end goal here is to apply an `OS Upgrade` enabled policy against the [Upgrade Enabled Windows 11 Compatible Machines](/docs/9c422249-e949-4bcd-83ea-2c91b8365a96) group.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

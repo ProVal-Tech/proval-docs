@@ -8,6 +8,8 @@ description: 'This document details the "pvl_win_installer_properties" SQL custo
 tags: ['database', 'installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ The "pvl_win_installer_properties" is an SQL custom table that is used in conjun
 | InstallLocation  | varchar(512) | Path to the installed location of the application on the local machine |
 | ScriptRunTime    | datetime     | Data Collection Time                                |
 | SerialNumber     | int          | Auto-incremental column to be used as primary key   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

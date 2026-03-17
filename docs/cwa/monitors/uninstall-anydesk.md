@@ -8,6 +8,8 @@ description: 'This document outlines the setup for a remote monitor designed to 
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ Windows OS
 ## How To Import
 
 [Implement - Remote Monitor - Uninstall Anydesk](/docs/8b658a17-cb91-457a-9efc-4b8f676b0fb0)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

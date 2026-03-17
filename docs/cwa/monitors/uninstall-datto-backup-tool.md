@@ -8,6 +8,8 @@ description: 'This monitor detects the online Windows agent where the Datto Wind
 tags: ['datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-07
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Windows OS
   ![Computer-EDF](../../../static/img/docs/955123e8-cb90-480c-8de5-8ac81d41bdd6/image8.webp)
 
 - Once EDFs are set, the monitor will detect 50 online Windows agents every hour where the Datto Windows Agent or Datto Cloud Continuity are installed and perform the uninstallation by triggering the script [Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc) using **Alert Template** `△ Custom - Execute Script - Uninstall Datto Backup Tool`.
+
+## Changelog
+
+### 2025-11-06
+
+- Initial version of the document

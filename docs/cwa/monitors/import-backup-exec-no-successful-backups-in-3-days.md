@@ -8,6 +8,8 @@ description: 'This document outlines the steps needed to apply a remote monitor 
 tags: ['backup', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Steps to Apply Remote Monitor
@@ -92,3 +94,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ### 5. Locate Your Remote Monitor
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

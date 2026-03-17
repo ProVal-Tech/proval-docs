@@ -8,6 +8,8 @@ description: 'This document outlines a dataview that displays server drives with
 tags: ['disk-encryption', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ None
 | DriveID                | The numerical DB value for the drive                                        |
 | LocationID             | The numerical DB value for the location                                     |
 | Operating System       | The name of the operating system on the computer                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

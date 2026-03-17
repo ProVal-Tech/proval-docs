@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that displays t
 tags: ['application', 'office', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The dataview will display whether the supported versions of Click To Run `Micros
 | Required Version     | Required Version to install                             |
 | Update Status        | Updated / Out Of Date                                  |
 | Recent Script Run Time| Most recent execution time of [SWM - Script - Microsoft Office - Click-to-Run - Update](/docs/8086f53d-c2db-40df-aa54-ea8590800fd3) script |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

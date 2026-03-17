@@ -8,6 +8,8 @@ description: 'This document outlines the steps for implementing the Local Admin 
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -51,3 +53,9 @@ The solution's Extra Data Fields have been modified. Update the [Local Admin Gro
    ![Image](../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_3.webp)
 
 6. Set the appropriate values for the system properties and EDFs defined in the [script's](/docs/e228540f-e4f4-4e67-801f-cdff876f955f) document, which should be provided by the consultant.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

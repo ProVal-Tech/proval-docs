@@ -1,18 +1,20 @@
 ---
 id: 'aff3413b-574f-4399-8f4b-85e04d388c5a'
 slug: /aff3413b-574f-4399-8f4b-85e04d388c5a
-title: 'Email Creation - Computer LTRunByUser'
-title_meta: 'Email Creation - Computer LTRunByUser'
+title: 'Email Creation - Computer [LTRunByUser]'
+title_meta: 'Email Creation - Computer [LTRunByUser]'
 keywords: ['email', 'monitor', 'script', 'status']
 description: 'This document outlines an offline script designed to send emails to users who manually run the script, providing completion notifications. It serves as an autofix for monitoring the Manual Script Schedule - Status Email, ensuring users are kept informed of the script execution status.'
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
 
-This offline script is designed to be used with the monitor [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) to send emails to the user who manually ran the script during its completion.
+This offline script is designed to be used with the internal monitor [Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1) to send emails to the user who manually ran the script during its completion.
 
 ## Sample Run
 
@@ -20,9 +22,15 @@ This script should be utilized as an autofix to monitor [Manual Script Schedule 
 
 ## Dependencies
 
-[CWM - Automate - Internal Monitor - Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1)
+[Internal Monitor - Manual Script Schedule - Status Email](/docs/587dab37-7b57-467f-bcde-b112783f5cf1)
 
 ## Output
 
 - Email
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

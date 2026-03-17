@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to execute the
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Windows Workstations
 **Name:** `△ Custom - Execute Script - Microsoft Office - Click-to-Run - Update (ScriptState)`
 
 The alert template should execute the "Microsoft Office - Click-to-Run - Update (ScriptState)" script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

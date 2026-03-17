@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to enable the Activ
 tags: ['active-directory', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -364,3 +366,9 @@ Then click on Schedule and provide the necessary parameters for script completio
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

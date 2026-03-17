@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the dataview that pu
 tags: ['performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This dataview publishes the defragmentation scan results by using the script @Wi
 | Script Ran Date      | Displays the date when the script ran                   |
 | Drive Fragmented     | Displays the drive letter of the fragmented drive       |
 | Drive Fragment Report | Displays the full report of fragmentation fetched by the script |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document explains how the status of Windows optional updates 
 tags: ['update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This document stores "Disabled" if the Windows optional update is disabled by th
 | Field Name                        | Level      | Type  | Default | Editable | Description                                                                                  |
 |-----------------------------------|------------|-------|---------|----------|----------------------------------------------------------------------------------------------|
 | Windows Optional Update Disabled   | EndPoint   | Text  | NA      | No       | This field stores "Disabled" if the Windows optional update is disabled by the Disable Windows Optional/Automatic Updates task. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

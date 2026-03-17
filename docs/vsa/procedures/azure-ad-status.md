@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to check if a machine is Azure 
 tags: ['azure', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ Solution: [Azure AD Status](/docs/c852661d-3253-466e-ae17-ee2753885920)
 ## Output
 
 Procedure log files and custom fields.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

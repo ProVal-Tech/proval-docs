@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to add the necessar
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-18
 ---
 
 ## Summary
@@ -20,7 +22,7 @@ The goal of this script is to add the [Cipher Suites](https://docs.connectwise.c
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+[RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 ## Variables
 
@@ -40,3 +42,9 @@ The goal of this script is to add the [Cipher Suites](https://docs.connectwise.c
 ## Output
 
 Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Import-Log4JTable command to install and pop
 tags: ['setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -49,3 +51,9 @@ $cred = New-Object System.Management.Automation.PSCredential("MyUsername", (Conv
 - `.\Import-Log4JTable-data.txt`
 - `.\Import-Log4JTable-error.txt`
 - `.\log4jquery.sql`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

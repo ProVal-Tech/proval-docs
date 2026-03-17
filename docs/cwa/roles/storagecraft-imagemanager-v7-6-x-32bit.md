@@ -8,6 +8,8 @@ description: 'This document provides a method to detect if StorageCraft ImageMan
 tags: ['software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines the method to detect if StorageCraft ImageManager v7.6.X 
 | Detection String                                                                                       | Comparator    | Result  | Applicable OS |
 |--------------------------------------------------------------------------------------------------------|---------------|---------|----------------|
 | `\{%@powershell.exe "(Get-Item 'C://Program Files//StorageCraft//ImageManager//ImageManager.exe' | Select -ExpandProperty VersionInfo).ProductVersion"@%}` | Regex Match   | ^7\.6\. | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This view provides a detailed, per-computer analysis of patch heal
 tags: ['compliance', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Purpose
@@ -58,3 +60,9 @@ This view provides a detailed, per-computer analysis of patch health. It lists e
 | **releasedate** | Date | The date Microsoft released the Cumulative Update currently installed on the device. |
 | **Patch[Type]InstallCount** | Integer | Various columns showing the count of installed patches by category (Critical, Important, CVSS High, etc.). |
 | **Patch[Type]FailedCount** | Integer | Various columns showing the count of failed patches by category. |
+
+## Changelog
+
+### 2026-01-02
+
+- Initial version of the document

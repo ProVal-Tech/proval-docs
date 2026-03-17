@@ -8,6 +8,8 @@ description: 'This document details a script used for cleaning up database table
 tags: ['cleanup', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This script is a function script called from **[CWM - Automate - Solution - Auto
 This script will add the following section to the log variable:
 
 ![Output](../../../static/img/docs/2e37903f-6fe2-4764-8cc9-d8e27e596ed9/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

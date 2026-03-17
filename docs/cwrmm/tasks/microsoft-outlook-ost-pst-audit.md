@@ -8,6 +8,8 @@ description: 'This is the RMM Implementation of Microsoft Outlook - OST/PST Audi
 tags: ['microsoft365','office','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -170,3 +172,9 @@ if ( $files ) {
 
 ## Output
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

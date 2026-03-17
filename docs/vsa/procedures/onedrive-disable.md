@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to disallow OneDrive from bei
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -58,3 +60,9 @@ else{
 Attach the content XML VSA Export to this document.
 ## Attachments
 [Procedure_OneDrive_Disable.xml](<../../../static/attachments/itg/10318510/Procedure_OneDrive_Disable.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

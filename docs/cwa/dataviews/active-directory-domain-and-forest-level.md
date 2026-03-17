@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that displays d
 tags: ['active-directory', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The dataview helps to view the domain level and forest level information of the 
 | Domain Level  | Displays the domain functional level of the respective domains.  |
 | Forest Name   | Displays the forest name with respect to the Domain Controller.  |
 | Forest Level  | Displays the forest functional level of the respective domains.  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

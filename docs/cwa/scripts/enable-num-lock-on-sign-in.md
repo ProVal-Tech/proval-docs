@@ -8,6 +8,8 @@ description: 'This document describes a script that enables Num-Lock at the log-
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The script turns on Num-Lock at the log-on screen for Windows machines.
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

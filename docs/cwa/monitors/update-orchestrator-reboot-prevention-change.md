@@ -8,6 +8,8 @@ description: 'This document describes a monitor that renames the reboot file use
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ The reboot file at `C:/Windows/System32/Tasks/Microsoft/Windows/UpdateOrchestrat
 ## Implementation
 
 [Import - Remote Monitor - Windows Update Orchestrator](/docs/95f64d6e-cb10-4c2c-9d40-c55941a7d7bc)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Displays the DNS server address configured on the active network a
 tags: ['windows','auditing','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Indicates whether the IP configuration type is Static or Dynamic (DHCP) for the 
 ## Sample Screenshot
 
 ![cpval IP Type](../../../static/img/docs/9e7a6f5f-f8c7-483d-9b0a-c04dc10f7cb4/ip-type.webp)
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

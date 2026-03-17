@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing the Huntress
 tags: ['installation', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -308,3 +310,9 @@ The other custom fields can be left blank.
 
 **Note:**  
 Huntress_Acct_Key and Huntress_Org_Key are the company custom fields, whereas the Huntress_Tags is the site-level custom field.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

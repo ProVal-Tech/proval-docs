@@ -8,6 +8,8 @@ description: 'This solution automates the detection of new SQL-related Windows U
 tags: ['auditing', 'mssql', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-13
 ---
 
 ## Purpose
@@ -58,3 +60,9 @@ A: On its initial execution, the script checks for SQL-related updates released 
 
 **Q: What are the prerequisites for running the script?**  
 A: The script requires PowerShell 5 or higher on the target SQL servers.
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of an internal monitor d
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ The internal monitor should be explicitly limited to the following groups:
 ## Alert Template
 
 **Name:** △ Custom - Local Machine Certificate Audit
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

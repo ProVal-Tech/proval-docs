@@ -8,6 +8,8 @@ description: 'This document outlines the detection method for verifying if Excha
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document describes the method to detect if Exchange Server 2019 is installe
 | Detection String                                                                                                                                         | Comparator | Result | Applicable OS |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | \{%_and|\{%_eq|\{%-HKLM//Software//Microsoft//ExchangeServer//v15//Setup:MsiProductMajor-%}|15_%}|\{%_eq|\{%-HKLM//Software//Microsoft//ExchangeServer//v15//Setup:MsiProductMinor-%}|2_%}_%} | Equals     | 1      | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

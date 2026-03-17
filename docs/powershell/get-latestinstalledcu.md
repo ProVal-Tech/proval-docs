@@ -8,6 +8,8 @@ description: 'Documentation for the Get-LatestInstalledCU command to retrieve th
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Description
@@ -55,3 +57,9 @@ OSBuild         : 10.0.22621.1702
 ReleaseDate     : 2023-05-09
 KBid            : KB5026372
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

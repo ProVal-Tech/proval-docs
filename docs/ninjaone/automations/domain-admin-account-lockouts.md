@@ -8,6 +8,8 @@ description: 'This script monitors the Security log for recent account lockouts,
 tags: ['domain','active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Overview
@@ -34,4 +36,10 @@ Schedule this script against infrastructure master using the [Condition](/docs/5
 
 ## Output
 
-- Activity Details 
+- Activity Details
+
+## Changelog
+
+### 2025-10-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide to create alerts for m
 tags: ['update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ This document outlines how to set up alerts for computers where the `Feature Upd
 
 10. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
     ![Step 10](../../../static/img/docs/1c9abaeb-17f0-4a3b-86ee-953b5b713dc3/image_12.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

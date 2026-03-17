@@ -8,6 +8,8 @@ description: 'This document provides a detailed report on the installation statu
 tags: ['installation', 'performance', 'report', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This dataview will show the installation status (allowed or not) of Sentinel One
 | Huntress Missing Count      | Count of missing Huntress agents at each location         |
 | SentinelOne Install Count   | Count of SentinelOne agents installed at each location    |
 | SentinelOne Missing Count   | Count of missing SentinelOne agents at each location      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

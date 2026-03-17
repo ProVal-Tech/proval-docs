@@ -8,6 +8,8 @@ description: 'Soji is an intelligent yet simple disk cleanup utility that uses b
 tags: ['disk', 'disk-cleanup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-21
 ---
 
 <br />
@@ -187,3 +189,9 @@ Log and Report Files:
 - [CommandlineParser](https://github.com/commandlineparser/commandline) - Parsing arguments
 - [CSVHelper](https://github.com/JoshClose/CsvHelper) - CSV Report output
 - [BurnBytes](https://github.com/builtbybel/burnbytes) - Base logic for cleanmgr hooks
+
+## Changelog
+
+### 2025-05-06
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitor designed to detect potential thre
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This monitor detects potential threats from MimiKatz based on agent roles.
 ## Target
 
 Windows Agent
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

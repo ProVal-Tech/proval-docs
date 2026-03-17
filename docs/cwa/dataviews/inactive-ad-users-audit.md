@@ -8,6 +8,8 @@ description: 'This dataview stores the data of the users that were either disabl
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This dataview displays the data gathered by the script [Audit - Inactive AD User
 | User Status Change | AD inactive user status change to enabled or disabled using [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Script - Disable - Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) respectively|
 | DistinguishedName | It stores the inactive user's uniquely identifying information that is an entry within a directory service |
 | ScriptRanDate | This has the information of the last script run date when the information was collected via [Script - Enable - Inactive Disabled AD Users - X Days](/docs/7694a01e-f449-40e0-8982-0c351509257a) and [Script - Disable -  Inactive AD Users - X Days](/docs/b793791e-2305-4ac5-ace3-b5737368190e) |
+
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

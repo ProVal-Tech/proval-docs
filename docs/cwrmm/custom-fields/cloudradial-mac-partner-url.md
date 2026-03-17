@@ -8,6 +8,8 @@ description: 'Represents the partner URL for your application. It is used to spe
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Represents the partner URL for your application. It is used to specify the URL o
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/227670ae-62cc-48cb-918a-febbf75711d3/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

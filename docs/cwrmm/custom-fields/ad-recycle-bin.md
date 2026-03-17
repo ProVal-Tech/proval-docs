@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a custom field
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,4 +27,10 @@ The [Task - Enable AD Recycle Bin](/docs/bb53445d-532a-4ec4-b4c5-3f8d0610d6f7) u
 **Level:** Endpoint  
 **Default Value:** 0  
 **Description:** This custom field is used by the Enable Recycle Bin Task to store the Recycle Bin status on AD Infrastructure Masters.  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

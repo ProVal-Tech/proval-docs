@@ -8,6 +8,8 @@ description: 'Creates a ConnectWise Manage ticket with High Priority when trigge
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-21
 ---
 
 ## Overview
@@ -22,3 +24,9 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 ## Template Creation
 
 [P2 - Major](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/p2-major.toml)
+
+## Changelog
+
+### 2025-10-07
+
+- Initial version of the document

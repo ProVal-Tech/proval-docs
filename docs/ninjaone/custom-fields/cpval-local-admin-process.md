@@ -8,6 +8,8 @@ description: 'Select the operating system to enable the "Local Admin Process" so
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select the operating system to enable the [Windows - Local Admin - Process](/doc
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/4383ab0b-5593-4e60-954d-21cf82b2499c/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

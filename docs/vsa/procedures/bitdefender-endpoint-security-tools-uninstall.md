@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for completely removi
 tags: ['security', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Implementation of agnostic content [SWM - Software Uninstall - Agnostic - Remove
 ## Output
 
 Agent Procedure Log Entry & %ProgramData%/_automation/AgentProcedure/RemoveBitdefender
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

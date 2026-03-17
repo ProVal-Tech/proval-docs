@@ -8,6 +8,8 @@ description: 'This document outlines the structure of the table that stores data
 tags: ['database', 'networking', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -48,3 +50,9 @@ The table stores the data gathered by the [EPM - Network - Script - Get - DNS As
 | MacAddress           | varchar(32)   | MAC Address of the network interface                           |
 | SettingID            | varchar(64)   | Interface ID of the network interface                          |
 | DataCollectionTime    | datetime      | Data Collection Time                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

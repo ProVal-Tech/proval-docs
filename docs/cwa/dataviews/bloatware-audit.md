@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Bloatware List Display, 
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ Displays the list of the installed bloatware fetched by the [Remove - PUA](/docs
 | Bloatware                 | Name of the Bloatware                               |
 | Category                  | Category of the Bloatware                           |
 | Data Collection Time      | Data Collection Time                                 |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

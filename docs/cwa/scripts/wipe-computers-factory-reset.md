@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that allows
 tags: ['recovery', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ The script includes an option to initiate a factory reset, which will erase all 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

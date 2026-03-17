@@ -38,3 +38,9 @@ Upon completion, the following log files will be generated:
 ./Uninstall-N-Able-log.txt
 ./Uninstall-N-Able-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

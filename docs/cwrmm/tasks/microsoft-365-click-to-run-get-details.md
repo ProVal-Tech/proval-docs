@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to retrieve th
 tags: ['application', 'office', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -365,4 +367,10 @@ Click the `Run` button to initiate the schedule.
 ![Script Log](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_51.webp)  
 
 - Custom Fields  
-![Custom Fields](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_52.webp)  
+![Custom Fields](../../../static/img/docs/ce16526d-84b5-4e58-928b-13a29195056e/image_52.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

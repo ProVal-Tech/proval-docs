@@ -8,6 +8,8 @@ description: 'This document outlines a solution designed to search for PST files
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -24,3 +26,9 @@ This solution is designed to search for PST files on a computer and save informa
 ## Implementation
 
 Once implemented, the procedure can be run, and the data will be added to the custom field.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

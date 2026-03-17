@@ -8,6 +8,8 @@ description: 'A description of the script.'
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -34,3 +36,5 @@ Describe how the script is executed and if it requires any parameters. Delete th
 
 ## Output
 Describe the output of the content. Delete if not needed.
+
+## Changelog

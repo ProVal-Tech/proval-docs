@@ -8,6 +8,8 @@ description: 'This script is used to update the Custom filed with the leneovo wa
 tags: ['auditing', 'custom-fields', 'lenovo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-15
 ---
 
 ## Summary
@@ -71,3 +73,13 @@ This script is used to update the custom field with the Lenovo warranty end date
 ## Output
 
 Script Logs
+
+## Changelog
+
+### 2025-09-15
+
+- Fixed the PowerShell in the Managed file "get-lenovowarranty.ps1"
+
+### 2025-08-22
+
+- Initial version of the document

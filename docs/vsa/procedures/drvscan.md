@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to retrieve a list 
 tags: ['disk-encryption']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
@@ -17,3 +19,9 @@ Get Drive List for RMM Monitoring
 ## Parameters:
 
 - **-skipsize**: Optional. The minimum drive size in GB to count. Default is 10.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

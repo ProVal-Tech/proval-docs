@@ -8,6 +8,8 @@ description: 'This script sends a popup message to the logged-in user, reminding
 tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ It can only be used as an autofix for monitors that check for machines that have
 
 - The script first verifies if the user is logged in. If not, it exits.
 - If the user is logged in, it sends a popup message to remind them to reboot their machine.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

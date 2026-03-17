@@ -8,6 +8,8 @@ description: ''
 tags: ['security', 'antivirus', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-07
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Uninstalls ESET products from the system, with optional password protection.
 
 - Script Logs
 - Create log file at working directory
+
+## Changelog
+
+### 2025-07-01
+
+- Initial version of the document

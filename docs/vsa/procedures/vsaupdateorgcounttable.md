@@ -8,6 +8,8 @@ description: 'This document provides a guide on how to update the PVALOrgAgentCo
 tags: ['database', 'report', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -18,4 +20,10 @@ Update the PVALOrgAgentCounts Table for Reporting
 
 - **sqlserver**: Server address to access  
 - **sqluser**: Username for SQL access  
-- **sqlpassword**: Password for SQL access  
+- **sqlpassword**: Password for SQL access
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

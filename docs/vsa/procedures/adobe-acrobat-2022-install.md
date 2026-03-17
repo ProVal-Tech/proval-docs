@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the process to insta
 tags: ['adobe', 'installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Downloads the installer from the vendor, performs a quiet no-restart installatio
 ## Output
 
 None
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

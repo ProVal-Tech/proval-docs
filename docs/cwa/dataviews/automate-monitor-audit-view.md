@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Dataview audit process f
 tags: ['mysql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The Dataview audits the monitors in an environment.
 | Category Name           | The category assigned to the alert.                          |
 | Service Board           | The service board that the alert will post to.              |
 | Monitor Run Frequency    | The running interval of the monitor.                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

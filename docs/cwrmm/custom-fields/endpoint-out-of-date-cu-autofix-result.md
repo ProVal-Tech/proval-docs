@@ -8,6 +8,8 @@ description: 'This document outlines the storage of the output from the Out of D
 tags: ['software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This document stores the output of the Out of Date Cumulative Update (Autofix) t
 ![Screenshot 1](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/2d24daab-16cb-4b2d-b7e6-0e757b4f2523/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

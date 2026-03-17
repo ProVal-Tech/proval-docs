@@ -8,6 +8,8 @@ description: 'This document outlines a client script designed for internal devel
 tags: ['autotask', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ It is scheduled in our internal Automate environment to run twice per day.
 
 **Sample Ticket:**  
 ![Sample Ticket](../../../static/img/docs/875584f2-bc8a-44f8-8878-ced46cad6ca4/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

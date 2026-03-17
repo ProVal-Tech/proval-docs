@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on installing Perch L
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -72,3 +74,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

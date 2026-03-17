@@ -8,6 +8,8 @@ description: 'This script identifies unknown user-profiles and generates a ticke
 tags: ['security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 
@@ -328,4 +330,10 @@ Click the `Run` button to initiate the schedule.
 
 ### Sample Ticket
 
-![Image54](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image54.webp)  
+![Image54](../../../static/img/docs/93f21631-9100-46fc-864b-3af17bc91699/Image54.webp)
+
+## Changelog
+
+### 2025-03-03
+
+- Initial version of the document

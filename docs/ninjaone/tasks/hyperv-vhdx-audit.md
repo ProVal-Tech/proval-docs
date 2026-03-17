@@ -8,6 +8,8 @@ description: 'Executes "Audit Hyper-V VHDX" script once per day against Hyper-V 
 tags: ['hyper-v', 'auditing', 'disk', 'diskspace']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-15
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Executes [Audit Hyper-V VHDX](/docs/73c2e2db-d5ee-4d7f-80eb-6593abe5abbf) script
 ## Task Creation
 
 [Task Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/tasks/hyperv-vhdx-audit.toml)
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

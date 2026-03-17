@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Log4Shell Vulnerability 
 tags: ['report', 'security', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ The script will also upload the log files to the LTShare, which can be found in 
 - Local file on computer
 - Dataview
 - EDFs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

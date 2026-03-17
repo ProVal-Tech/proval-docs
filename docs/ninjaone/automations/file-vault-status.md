@@ -8,6 +8,8 @@ description: 'This script is used to show the FileVault status on macOS devices 
 tags: ['macos','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-05
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ Note: `This is only compatible for Mac OS devices.`
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-02
+
+- Initial version of the document

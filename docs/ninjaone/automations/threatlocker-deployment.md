@@ -8,6 +8,8 @@ description: 'This script will check for ThreatLocker and attempt to install if 
 tags: ['security','setup','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Overview
@@ -40,3 +42,13 @@ This script will check for ThreatLocker and attempt to install if not present on
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2026-02-11
+
+- Added `Threatlocker AuthKey` and `ThreatLocker Org Key` script variables to the automation.
+
+### 2025-05-16
+
+- Initial version of the document

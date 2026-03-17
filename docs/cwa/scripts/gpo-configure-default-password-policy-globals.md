@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell script that modifies the prope
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ The script modifies the properties of the default password policy for a domain. 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

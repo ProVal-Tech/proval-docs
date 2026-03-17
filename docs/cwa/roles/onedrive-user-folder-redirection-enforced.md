@@ -8,6 +8,8 @@ description: 'This document outlines the detection of a role on an agent where O
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role will be detected on an agent where OneDrive folder redirection is enab
 | Detection String                                                                                   | Comparator | Result           | Applicable OS |
 |----------------------------------------------------------------------------------------------------|------------|------------------|---------------|
 | `%@reg query "HKLM/SOFTWARE/Policies/Microsoft/OneDrive" /v KFMSilentOptIn | find "KFMSilentOptIn"@%` | Contains   | KFMSilentOptIn | Windows       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

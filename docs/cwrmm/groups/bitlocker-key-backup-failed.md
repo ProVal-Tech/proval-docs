@@ -8,6 +8,8 @@ description: 'Group of machines where BitLocker Key Backup Failed.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ A machine matches the group if it meets ALL criteria in Block 1.
 ## Completed Group
 
 ![Image3](../../../static/img/docs/2e46432a-eb14-4da0-803a-aec15892a6ec/image3.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

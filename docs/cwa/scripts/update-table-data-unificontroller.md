@@ -8,6 +8,8 @@ description: 'This document outlines a script that launches the Get-UnifiControl
 tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Child of Solution
@@ -107,3 +109,9 @@ Describe the steps the script performs to accomplish the desired task. Note that
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Get-UnifiController command to retrieve and 
 tags: ['networking', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -38,3 +40,9 @@ Returns a `unifiController` object containing all site data.
 Location of output for log, result, and error files.
 
 `System.Object`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

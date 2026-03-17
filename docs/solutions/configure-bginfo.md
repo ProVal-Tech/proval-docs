@@ -42,3 +42,13 @@ Execute the [Configure BGInfo](/docs/405866fb-2706-49b3-aed2-3d1f1fea4b4b) scrip
 
 ### Step 5:
 Implement the remote monitor as described in the [Implementation Steps section of the remote monitor's document](/docs/91b463bf-7bb2-4c79-98ca-ef556ea093b0#implementation-steps).
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-03-10
+
+- Created solution document and also updated the script and monitor document with important information.

@@ -8,6 +8,8 @@ description: 'This document details the procedure for uninstalling Adobe Flash f
 tags: ['recovery', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -83,3 +85,9 @@ Flash is detected by gci on all known Flash directories. If detected, the uninst
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

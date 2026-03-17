@@ -8,6 +8,8 @@ description: 'This script uninstalls the Datto Windows Agent or Datto Cloud Cont
 tags: ['datto', 'backup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-07
 ---
 
 ## Summary
@@ -51,3 +53,9 @@ This script uninstalls the Datto Windows Agent or Datto Cloud Continuity or both
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-11-06
+
+- Initial version of the document

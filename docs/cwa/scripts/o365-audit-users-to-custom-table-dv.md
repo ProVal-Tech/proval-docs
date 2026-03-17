@@ -8,6 +8,8 @@ description: 'This document details a script that utilizes O365 admin credential
 tags: ['installation', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Windows OS and PowerShell 5.0 are required.
 ## Output
 
 Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -36,3 +36,9 @@ Provide the configuration of the profile using the following templates based on 
 - Windows Automatic Updates are disabled.
 ## Attachments
 [cPVAL_DuoDogs_Workstations_Patching.xml](<../../static/attachments/itg/11112429/cPVAL_DuoDogs_Workstations_Patching.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

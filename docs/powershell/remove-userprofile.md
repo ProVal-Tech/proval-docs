@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-UserProfile command to delete a user 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Overview
@@ -84,3 +86,9 @@ Remove-UserProfile.ps1 -SID "S-1-5-21-3623811015-3361044348-30300820-1013"
 ## Output
     ./Remove-UserProfile-log.txt
     ./Remove-UserProfile-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script is used to get the local admin data from each machine 
 tags: ['custom-fields', 'data-collection']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-07
 ---
 
 ## Overview  
@@ -52,3 +54,9 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Attachments  
 [Get Local Admin [CF]](../../../static/attachments/Get%20Local%20Admin%20CF.cpt)
+
+## Changelog
+
+### 2025-10-01
+
+- Initial version of the document

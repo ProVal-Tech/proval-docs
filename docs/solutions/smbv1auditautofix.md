@@ -8,6 +8,8 @@ description: 'This document outlines the SMBv1 audit and autofix solution based 
 tags: ['ticketing', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -102,3 +104,9 @@ Optionally, if the client wants, we can enable ticketing to monitor the SMB1 tra
 ![Traffic Detection Ticketing](../../static/img/docs/343654e4-9263-4fec-87c1-3c3401a94e95/image_4.webp)
 
 Note: This should only be implemented if the consultant approves it.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

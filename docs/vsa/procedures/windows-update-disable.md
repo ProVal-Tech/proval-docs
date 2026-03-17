@@ -8,6 +8,8 @@ description: 'This document provides a detailed procedure for disabling Windows 
 tags: ['registry', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This document outlines the procedure to disable Windows Update using the Windows
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

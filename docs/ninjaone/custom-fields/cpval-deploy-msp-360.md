@@ -8,6 +8,8 @@ description: 'Select Operating System to deploy MSP 360 Online Backup Agent.'
 tags: ['backup', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-25
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ This custom field provides options to choose the operating system(s) for deployi
 **Device:**
 
 ![Image3](../../../static/img/docs/294f2f3e-1091-45b0-b764-b16ae054fad7/image3.webp)
+
+## Changelog
+
+### 2025-08-14
+
+- Initial version of the document

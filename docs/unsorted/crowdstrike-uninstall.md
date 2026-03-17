@@ -47,3 +47,9 @@ This document provides a script to uninstall the CrowdStrike Application.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

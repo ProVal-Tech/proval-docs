@@ -8,6 +8,8 @@ description: 'Documentation for the Get-HPiLOHealthReport command to get a healt
 tags: ['networking', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -150,3 +152,9 @@ UUID        Property   string UUID {get;set;}
 .\Get-HPiLOHealthReport-log.txt
 .\Get-HPiLOHealthReport-error.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

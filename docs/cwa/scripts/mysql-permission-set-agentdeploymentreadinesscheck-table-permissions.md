@@ -8,6 +8,8 @@ description: 'This document describes a script that gathers all users in the dat
 tags: ['database', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ The script is converted to a client script and should be scheduled to run every 
 | Name              | Description                                                                                             |
 |-------------------|---------------------------------------------------------------------------------------------------------|
 | UpdateStatements   | This variable will store the SQL result, which will be further used as an update statement to grant permission to the agentdeploymentreadinesscheck table. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

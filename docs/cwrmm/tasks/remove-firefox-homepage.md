@@ -8,6 +8,8 @@ description: 'This document provides an example of a PowerShell script designed 
 tags: ['software', 'windows']  
 draft: false  
 unlisted: false  
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -123,3 +125,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 - Script Log  
     ![alt text](../../../static/img/docs/321f9e4b-75f6-4951-9848-03d5940cc257/image-18.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a dataview that displays the highest detect
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ None
 | Computers Name                  | The name of the machine                             |
 | Computers Last Contact          | The time the computer last contacted Automate      |
 | Inv_OperatingSystem Net_Version | The highest .NET version detected by Automate      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

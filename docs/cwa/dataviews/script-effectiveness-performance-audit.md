@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive summary of all scripts exec
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -49,3 +51,9 @@ The script log retention days can be seen at the Automate location below:
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/docs/5606850a-c68e-4b15-b183-399cded6e601/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

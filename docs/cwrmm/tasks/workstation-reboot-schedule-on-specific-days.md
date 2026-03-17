@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on scheduling a force
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -481,3 +483,9 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

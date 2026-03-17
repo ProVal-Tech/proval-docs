@@ -8,6 +8,8 @@ description: 'This document outlines the setup for a monitor that triggers a scr
 tags: ['database', 'installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ WHERE
 ```
 
 **Note:** Ensure that the [Auto Close - Missing Patch Tickets Autofix](/docs/e1b8cfd0-d42d-4056-ac55-82a30f5bdffd) script is imported before creating the alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

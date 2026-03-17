@@ -8,6 +8,8 @@ description: 'This script uninstalls the Blackpoint SnapAgent by performing stan
 tags:  ['windows','security','uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Overview
@@ -31,4 +33,10 @@ This script uninstalls the Blackpoint SnapAgent by performing standard removal a
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

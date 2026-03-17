@@ -8,6 +8,8 @@ description: 'This document provides a summary of how to detect the agents on wh
 tags: ['virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines how to detect the agents on which the Remote Desktop Virt
 | Detection String                                      | Comparator | Result | Applicable OS |
 |------------------------------------------------------|------------|--------|----------------|
 | `%{@powershell "(Get-WindowsFeature RDS-Virtualization).Installed"@%}` | Equals     | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

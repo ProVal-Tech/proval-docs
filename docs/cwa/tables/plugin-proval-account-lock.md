@@ -8,6 +8,8 @@ description: 'This document outlines the process of auditing locked-out user acc
 tags: ['database', 'report', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ This document collects information about locked-out user accounts (both domain a
 | Account Lock Date  | DATETIME | Account lock date                 |
 | Last Logon         | DATETIME | Account last login date           |
 | Script Run Time    | DATETIME | Script last execution date        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a PowerShell script that enables Internet E
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ Once the setting is done, it checks the computer EDFs for logging in the databas
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

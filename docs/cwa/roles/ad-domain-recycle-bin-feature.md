@@ -8,6 +8,8 @@ description: 'This document outlines the method to detect if the Recycle Bin fea
 tags: ['active-directory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document describes how to detect if the Recycle Bin feature is enabled on t
 | Detection String                                                                                                                                                     | Comparator | Result  | Applicable OS |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------|----------------|
 | `%\\\{@powershell.exe \"$enabledScopes = Get-ADOptionalFeature -Identity 'Recycle Bin Feature'|select -exp enabledscopes|format-list;if ($enabledScopes)\\\{Write-Output -InputObject 'Enabled'}else\\\{Write-Output -InputObject 'Disabled'}\"@%}` | Equals     | Enabled | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process of storing individual patch inf
 tags: ['wmi']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ This document stores individual patch information per computer and their install
 | Title       | VARCHAR  | The title of the audited patch.                      |
 | Result      | VARCHAR  | The current installation status of the audited patch.|
 | Date        | DATETIME | The date and time that the audited patch entered the Result state. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process of setting ThreatLocker to lear
 tags: ['api', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -59,3 +61,9 @@ After setting the keys, it is necessary to whitelist the file hash `9FA61A436668
 **Answer:** Possible error messages include the following:
 
 ![Image](/img/docs/5e48c013-4305-4bfb-9cdd-1aa518d8f729/data4.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

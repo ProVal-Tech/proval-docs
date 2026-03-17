@@ -8,6 +8,8 @@ description: 'Displays the DNS server address configured on the active network a
 tags: ['windows','auditing','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Displays the DNS server address configured on the active network adapter. Shows 
 ## Sample Screenshot
 
 ![cpval DNS server](../../../static/img/docs/050b6b01-ec88-4c11-8e37-f5f34df0daa3/dns-server.webp)
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

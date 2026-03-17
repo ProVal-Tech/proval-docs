@@ -8,6 +8,8 @@ description: 'This document outlines the process for finding and removing unappr
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -62,3 +64,9 @@ The purpose of this solution is to find and remove any unapproved Wi-Fi profiles
      - [Internal Monitor - Wifi Profiles - Add](/docs/3a1d1f7d-a655-40bf-a048-5e861aee00ae)
        - Alert Template: △ Custom - Execute Script - Implement Wifi Profile
        - Right-click and Run Now to start the monitor
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

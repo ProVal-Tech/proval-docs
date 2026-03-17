@@ -8,6 +8,8 @@ description: 'This document details an Automate implementation of a script desig
 tags: ['edge', 'software', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This document outlines an Automate implementation of the agnostic script [SWM - 
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

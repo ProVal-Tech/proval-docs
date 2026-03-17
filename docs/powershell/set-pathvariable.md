@@ -8,6 +8,8 @@ description: 'Documentation for the Set-PathVariable command to set provided pat
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -40,3 +42,9 @@ This command will return the current `$Env:Path` state for the user after adding
 ## Output
 
 Standard Output
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

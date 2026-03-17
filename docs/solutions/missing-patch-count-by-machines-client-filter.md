@@ -8,6 +8,8 @@ description: 'This document outlines a solution for creating a dataview that pro
 tags: ['database', 'report', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -28,3 +30,9 @@ This solution provides a dataview of the client-level breakdown of machines miss
 - Import the [CWM - Automate - Dataview - Dash - Missing Patch - Count by Machines - Client Filter](/docs/0fd0215c-d6d5-40c8-9ba6-79b69721f4c1) Dataview.
 - Execute the script against any random machine and check the dataview for the data.
 - Delete the script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

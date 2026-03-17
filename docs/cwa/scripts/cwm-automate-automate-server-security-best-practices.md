@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to configuring a Conn
 tags: ['backup', 'networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -312,3 +314,9 @@ UmerTuri,snix,KunalMudgal,ITGlue API,AniketSingh,ITGlue API,SawarArora
 ## Reading View
 
 ![Reading View](../../../static/img/docs/f4ed7a7d-baf0-4aa5-8bbe-413fa024fff3/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

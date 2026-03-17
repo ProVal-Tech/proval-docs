@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that sends an email alert for the
 tags: ['email', 'mysql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-16
 ---
 
 ## Summary
@@ -20,8 +22,8 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ## Dependencies
 
-[Scripting Engine Hung - Troubleshooting](/docs/64cf5b44-11bf-42dc-87bc-f1f93582ed8d)  
-**Alert Template:** `△ Custom - Email RAWSQL Monitor set results to ProVal`
+- **Alert Template:** `△ Custom - Email RAWSQL Monitor set results to ProVal`
+- [Script - Email Creation - Computer* [Failure Only]](/docs/901470a2-73d2-4d29-b0d3-c5f15cf19c41)
 
 ## Target
 
@@ -31,14 +33,14 @@ The email is sent to the address specified in the system property `"ProVal_Alert
 
 ### Subject
 ```
-CWA - Scripting Engine Hung
+Urgent! - CWA - Scripting Engine Hung
 ```
 ### Body
 #### Failure
 ```
 %RESULT%
 Troubleshooting Article:
-https://content.provaltech.com/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9#troubleshoot
+https://content.provaltech.com/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9#troubleshooting
 ```
 #### Success
 ```
@@ -55,26 +57,26 @@ Top Script IDs shown below:
 
 ## Troubleshooting
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image1.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image1.webp)
 
 When you see a ticket like the above for any partner please follow the below troubleshooting steps.
 
-1. Navigate to the System >> VNC / Ticket Priority >> MAX Running Scripts. Look for the "MAX Running Scripts" and ensure its value is at least 1/3 of the value of its agent count. This applies only to the environment where you have seen frequent Scripting Engine Hung issues. This is not a stated statement; rather, it is being assumed to prevent situations in the partner environment if they continuously encounter Scripting engine crash issues. Navigate to the System >> Configuration >> Dashboard >> Config >> Configuration >> Properties. Look for the property "LT_MAXRunningScripts" and ensure its value is reflected
+1. Navigate to the `System` >> VNC / `Ticket Priority` >> `MAX Running Scripts`. Look for the "MAX Running Scripts" and ensure its value is at least 1/3 of the value of its agent count. This applies only to the environment where you have seen frequent Scripting Engine Hung issues. This is not a stated statement; rather, it is being assumed to prevent situations in the partner environment if they continuously encounter Scripting engine crash issues. Navigate to the `System` >> `Configuration` >> `Dashboard` >> `Config` >> `Configuration` >> `Properties`. Look for the property "*LT_MAXRunningScripts*" and ensure its value is reflected
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image2.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image2.webp)
 
-2. Navigate to the Automation >> Monitor >> Internal Monitor
+2. Navigate to the `Automation` >> `Monitor` >> `Internal Monitor`
 3. Right-click and select the "New Monitor"
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image3.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image3.webp)
 
 4. Start Fresh >> Next
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image4.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image4.webp)
 
 5. Run the query as mentioned below. Export the list to share with the consultant. Check for the top scripts whose running count is too much figure out why it has been running like that and fix it if found irrelevant. Bring the concern to the consultant with the note point and screenshots.
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image5.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image5.webp)
 
 ```sql
 SELECT 
@@ -103,9 +105,9 @@ ORDER BY
 
 6. Run another query. Follow steps 2-4, then run the below query. Please validate the stuck scripts and get that report exported to Excel to forward to the consultant with your feedback and review analysis reporting.
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image6.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image6.webp)
 
-![image](/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image7.webp)
+![image](../../../static/img/docs/9292f135-cca4-4eba-97ff-cd4276ab62e9/image7.webp)
 
 ```sql
 SELECT 
@@ -127,4 +129,10 @@ WHERE
   AND CASE WHEN c.lastcontact > NOW() - INTERVAL 15 MINUTE THEN l.ScriptFlags = 0 ELSE l.scriptflags = 1 END
 ```
 
-7. **Only if the scripting engine appears to be hung with a lot of scripts reporting in the queue**, Restart the DB Agent service. Navigate to Help >> Server Status >> Restart Database Agent. This will remove all queued scripts and will fix the script engine hung temporarily if the script queuing issue is not fixed from the above query results.
+7. **Only if the scripting engine appears to be hung with a lot of scripts reporting in the queue**, Restart the DB Agent service. Navigate to `Help` >> `Server Status` >> `Restart Database Agent`. This will remove all queued scripts and will fix the script engine hung temporarily if the script queuing issue is not fixed from the above query results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a Dataview that filters script schedules ba
 tags: ['performance', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This Dataview filters the script schedules that are scheduled by a technician, a
 | Targeted Servers Count       | Total servers targeted in the schedule                      |
 | Targeted Workstations Count   | Total workstations targeted in the schedule                 |
 | % Machines Targeted          | Percentage of the machines targeted in the schedule         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

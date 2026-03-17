@@ -8,6 +8,8 @@ description: 'This document provides an overview of Active Directory machines us
 tags: ['active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This dataview displays all AD machines from the AD plugin and provides details a
 | When Changed                       | When agent was last changed in AD plugin            |
 | When Created                       | When agent was created in AD                        |
 | Last Logon                         | Last logon detail of agent in AD                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The username format sent to Duo. One of: 0 for sAMAccountName (nar
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -108,3 +110,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/61453e58-57fd-425e-aa68-0a1e003784d5/image5_1.webp)
+
+## Changelog
+
+### 2025-04-15
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to gather the Power
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -93,3 +95,9 @@ ProVal recommends scheduling this task using a monitor and a machine group. Revi
 
 - Script log
 - Custom Field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

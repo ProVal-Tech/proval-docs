@@ -8,6 +8,8 @@ description: 'This document outlines a method to monitor for online computers th
 tags: ['networking', 'sql', 'unifi']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ AND computers.LastContact > DATE_ADD(NOW(), INTERVAL -15 MINUTE)
 AND computers.os LIKE '%Windows%'
 GROUP BY computers.locationid
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

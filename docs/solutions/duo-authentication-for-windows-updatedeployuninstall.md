@@ -8,6 +8,8 @@ description: 'This document outlines a solution for managing the installation an
 tags: ['application', 'security', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -77,3 +79,9 @@ Configure the solution as outlined below:
     - Ensure `△ Custom - Execute Script - Uninstall DUO` is applied on the monitor
       - And the alert template has the script [CWM - Automate - Script - Uninstall DUO](/docs/4fb8001d-94a0-4867-8776-437c4f6b97cc) bonded to it.
     - Right-click and Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

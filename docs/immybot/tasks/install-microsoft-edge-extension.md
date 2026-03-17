@@ -8,6 +8,8 @@ description: 'This installs the extensions to the Microsoft Edge browser.'
 tags: ['browsers', 'extensions', 'chrome', 'edge']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Description
@@ -21,3 +23,9 @@ This installs the extensions to the Microsoft Edge browser.
 | ExtensionId | Text | True | False | | This is required to install the Edge Extension. String value of an extension ID taken from the Microsoft-Edge-Extensions-Home URL (https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) for the extension." |
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-microsoft-edge-extension.toml)
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This guides with creation of view in group to display custom field
 tags: ['custom-table','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 
@@ -68,3 +70,9 @@ This allows you to include a wide range of attributes such as custom fields, dev
 2. When the hand icon appears, click and hold.
 3. Drag the column up or down to the desired position.
 4. Release to drop it into place.
+
+## Changelog
+
+### 2026-01-20
+
+- Initial version of the document

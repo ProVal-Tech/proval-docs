@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of monitoring solu
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -316,3 +318,9 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Email Creation Computer - Failures Only`**
    - Otherwise, ensure the alert template is set to the following:
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

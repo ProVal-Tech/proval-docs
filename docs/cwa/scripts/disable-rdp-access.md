@@ -8,6 +8,8 @@ description: 'The script disables the RDP access on windows machines.'
 tags: ['windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-04
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ The script disables the RDP access on windows machines.
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-06-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the configuration and details of 25 indepen
 tags: ['storage']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Summary
@@ -39,3 +41,9 @@ This document presents 25 independent policies, one for each drive letter, which
       - **Policy Object Member Settings**: Alarm, Send Email, Script: Soji Disk Cleaner
 ## Attachments
 [Wokstation_Core_HDD_Monitor_Drive_C.xml](<../../../static/attachments/itg/10793261/Wokstation_Core_HDD_Monitor_Drive_C.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

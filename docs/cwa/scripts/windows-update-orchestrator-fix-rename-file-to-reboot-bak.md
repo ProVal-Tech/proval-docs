@@ -8,6 +8,8 @@ description: 'This document describes the Update Orchestrator Autofix Script, de
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ The monitor will check for the condition, and this script will automatically exe
 ## Output
 
 Script log messages only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

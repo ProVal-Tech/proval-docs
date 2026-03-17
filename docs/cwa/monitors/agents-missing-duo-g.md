@@ -8,6 +8,8 @@ description: 'This document outlines the process for targeting clients with Enha
 tags: ['installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This document targets clients with EDFs enabled for the installation of DUO whil
 ## Target
 
 Global - Uses EDFs to scope agents/clients.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

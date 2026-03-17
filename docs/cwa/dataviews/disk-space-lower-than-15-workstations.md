@@ -8,6 +8,8 @@ description: 'This document provides a summary of a dataview that displays all m
 tags: ['database', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ None
 | Drive Type                | Type of drive (virtual drive, physical)         |
 | Operating System          | OS of the machine                                |
 | Agent Last Contact Date   | Last time the agent checked into Automate        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

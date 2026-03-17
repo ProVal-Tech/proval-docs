@@ -8,6 +8,8 @@ description: 'This document provides an overview of how to determine if an agent
 tags: ['performance', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines how to determine if an agent has the Unified Writer Filte
 | Detection String                                                                                          | Comparator | Result | Applicable OS |
 |-----------------------------------------------------------------------------------------------------------|------------|--------|----------------|
 | `\{@%powershell.exe -command "Get-WmiObject -Namespace "root/standardcimv2/embedded" -Class UWF_Filter | select -ExpandProperty CurrentEnabled"@%}` | Equals     | True   | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

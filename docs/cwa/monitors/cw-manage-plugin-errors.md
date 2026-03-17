@@ -7,7 +7,9 @@ keywords: ['monitor', 'notification', 'connectwise', 'alerts', 'plugin', 'error'
 description: 'This document outlines the setup and dependencies for an internal monitor that notifies the specified email address of critical errors or issues related to the ConnectWise Manage Plugin. It includes information on the necessary dependencies and the target configuration for global monitoring.'
 tags: ['connectwise', 'email']
 draft: false
-unlisted: false
+unlisted: True
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Use the “~Custom Email RAWSQL Monitor set results to ProVal” alert template 
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

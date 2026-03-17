@@ -8,6 +8,8 @@ description: 'This document outlines the process for marking a custom field to d
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Marking this custom field will automatically add the machines to the [CW RMM - M
 ![Screenshot 1](../../../static/img/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/a398be5b-5709-4ab5-ac33-7feca8fbc00a/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

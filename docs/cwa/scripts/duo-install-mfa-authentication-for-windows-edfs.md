@@ -8,6 +8,8 @@ description: 'This document outlines the use of Client and Agent Level EDFs alon
 tags: ['installation', 'software', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Sets all variables from EDFs and Script Globals. The process will exit if requir
 
 - Script Log
 - Ticket - Optional
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

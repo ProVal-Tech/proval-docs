@@ -8,6 +8,8 @@ description: 'This document provides an implementation guide for deploying the T
 tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This document outlines the implementation of the [Winget - Install/Update](/docs
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

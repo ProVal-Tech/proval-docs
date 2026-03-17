@@ -8,6 +8,8 @@ description: 'Attempts to install the modules selected in "cPVAL Cisco Secure Cl
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-11
 ---
 
 ## Overview
@@ -48,4 +50,10 @@ Attempts to install the modules selected in [cPVAL Cisco Secure Client Modules](
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

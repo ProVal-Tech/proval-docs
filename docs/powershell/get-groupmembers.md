@@ -8,6 +8,8 @@ description: 'Documentation for the Get-GroupMembers command to return all group
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -49,3 +51,9 @@ This returns a system object of all Azure Active Directory groups and all member
 ```
 Group     /      Members
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

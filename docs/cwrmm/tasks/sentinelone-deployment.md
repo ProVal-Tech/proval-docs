@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on deploying the Sent
 tags: ['installation', 'linux', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -388,3 +390,9 @@ Then click on Schedule and provide the parameters detail as necessary for the sc
 
 - Script Log
 - Custom Field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

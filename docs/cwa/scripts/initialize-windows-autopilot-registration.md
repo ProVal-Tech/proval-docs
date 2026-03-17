@@ -8,6 +8,8 @@ description: 'Automates Windows Autopilot registration by installing and running
 tags: ['autopilot', 'windows', 'azure']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-04
 ---
 
 ## Summary
@@ -55,3 +57,9 @@ It installs the latest Get-WindowsAutopilotInfo PowerShell module from the Power
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-06-04
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to set up a cus
 tags: ['active-directory', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ### Step 1
@@ -69,3 +71,9 @@ Check the `Domain Controllers` group and ensure that the monitor set is created 
 
 ### Step 5
 Assign the required alert template. It is suggested to use `△ Custom - Ticket Creation Computer - Failures Only` for the best results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

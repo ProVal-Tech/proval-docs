@@ -8,6 +8,8 @@ description: 'This PowerShell script retrieves the hardware part number from a p
 tags: ['windows', 'datto']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-08
 ---
 
 ## Overview  
@@ -60,3 +62,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [Get-Device Part Info](../../../static/attachments/get-device-part-info.cpt)
+
+## Changelog
+
+### 2025-07-08
+
+- Initial version of the document

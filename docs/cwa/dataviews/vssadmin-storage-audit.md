@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the VSS admin storag
 tags: ['backup', 'report', 'storage', 'virtualization', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview stores the details of VSS admin storage for all volumes.
 | VSS Allocated Storage   | VSS storage allocated on the disk             |
 | VSS Max Storage         | VSS max storage provided                      |
 | Script Ran Date         | Date when the script last ran on the agent    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

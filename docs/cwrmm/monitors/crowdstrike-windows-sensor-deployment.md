@@ -8,6 +8,8 @@ description: 'Executes task to install CrowdStrike Windows Sensor on machines wh
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-10
 ---
 
 ## Summary
@@ -70,3 +72,9 @@ Executes [task](/docs/7eb5860d-08e2-41cb-b22b-48505618f1ae) to install CrowdStri
 ## Completed Monitor
 
 ![Image6](../../../static/img/docs/ce1b87d4-a1d4-4f37-a03d-3b08c4565086/image6.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

@@ -7,7 +7,9 @@ keywords: ['windows', 'update', 'data', 'epm', 'report']
 description: 'This document provides a comprehensive overview of a script that gathers Windows update data and enters it into the EPM - Custom Table - pvl_windows_updates. It includes details on dependencies, variables, global parameters, and the expected output.'
 tags: ['database', 'report', 'update', 'windows']
 draft: false
-unlisted: false
+unlisted: true
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This document describes a script that gathers Windows update data and enters it 
 
 - Script Log
 - [pvl_windows_updates](/docs/d1791eba-107c-4be0-8048-a1d716dae301)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

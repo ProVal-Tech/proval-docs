@@ -8,6 +8,8 @@ description: 'This document outlines the monitor set designed to execute the Win
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Global
 ## Alert Template
 
 △ Custom - Execute Script - Windows 11 Compatibility Check
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

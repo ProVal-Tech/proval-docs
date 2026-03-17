@@ -8,6 +8,8 @@ description: 'This document provides an overview of how scripts are performing i
 tags: ['performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ None
 | DaysRunning    | The number of days each script has been running in the environment.                             |
 | TotalRuns     | The count of times each script has run                                                          |
 | LastRunDate   | The most recent time the script was run                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

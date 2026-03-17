@@ -8,11 +8,13 @@ description: 'This document outlines an email notification script designed for u
 tags: ['email', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
 
-This script functions similarly to the [CWM - Automate - Script - Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket, it is designed to send an email to the email address provided in the system property.
+This script functions similarly to the [Ticket Creation - Computer](/docs/63beba3c-f4a6-41a5-98e2-d4e4ce885035) script; however, instead of creating a ticket, it is designed to send an email to the email address provided in the system property.
 
 This script sends emails to two different addresses:
 
@@ -60,3 +62,9 @@ Document the various variables in the script. Delete any section that is not rel
 ## Output
 
 - Email
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

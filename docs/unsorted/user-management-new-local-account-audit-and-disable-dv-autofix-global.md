@@ -46,3 +46,9 @@ This script is a function script and it only runs with the dependent remote moni
 - Script log
 - Custom table
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

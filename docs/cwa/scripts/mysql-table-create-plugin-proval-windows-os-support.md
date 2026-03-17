@@ -8,6 +8,8 @@ description: 'This document provides a script designed to insert the latest vers
 tags: ['security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,13 @@ The primary purpose of this script is to insert the latest version of the [SEC -
 ## Sample Run
 
 ![Sample Run](../../../static/img/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1/image_1.webp)
+
+## Changelog
+
+### 2025-10-01
+
+- Updated the script to show data for 25H2.
+
+### 2025-04-10
+
+- Initial version of the document

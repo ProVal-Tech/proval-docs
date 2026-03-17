@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['firewall', 'notifications', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This script will disable the firewall notifications for all users on a Windows s
 ## Output
 
 - Script logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

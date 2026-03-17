@@ -8,6 +8,8 @@ description: 'This document describes a monitor that detects agents based on the
 tags: ['alerting', 'compliance', 'deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Global
 *To create a ticket, please set the ticket category in the alerting section of the monitor.*
 
 ![Image](../../../static/img/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

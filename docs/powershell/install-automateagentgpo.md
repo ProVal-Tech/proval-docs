@@ -8,6 +8,8 @@ description: 'Documentation for the Install-AutomateAgentGPO command to create a
 tags: ['active-directory', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -112,3 +114,9 @@ Creates a Group Policy Object to run a scheduled task that will immediately run 
   The GPO will execute the deployment script (`Automate-Deploy.ps1`) immediately on the end machines with the help of a scheduled task.
 - **Deployment Script:**  
   The deployment script is placed in the NETLOGON folder.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides detailed information about Windows shadow c
 tags: ['backup', 'disk-encryption', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -34,3 +36,9 @@ Stores information about Windows shadow copies.
 | AllocatedSpace   | FLOAT   | Allocated space size for the Shadow Copy in GB.                                               |
 | UsedSpace       | FLOAT   | Used space size by the Shadow Copy in GB.                                                       |
 | MaxSpace        | FLOAT   | Maximum space provided to the Shadow Copy in GB.                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

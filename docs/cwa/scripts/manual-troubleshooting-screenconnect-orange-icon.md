@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide for technicians to man
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -119,3 +121,9 @@ This should turn the ScreenConnect icon green, thereby resolving the problem.
 ## Note
 
 If the above-mentioned steps fail to resolve the problem, then you will have to access the computer manually and ensure that it is able to reach the ScreenConnect Web Portal.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

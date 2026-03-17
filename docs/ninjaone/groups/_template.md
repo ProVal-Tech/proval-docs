@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-07-18
 ---
 
 ## Summary
@@ -22,3 +24,6 @@ unlisted: false
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/_template.toml)
+
+
+## Changelog

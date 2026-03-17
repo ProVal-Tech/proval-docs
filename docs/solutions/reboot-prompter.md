@@ -8,6 +8,8 @@ description: 'This document outlines the Reboot Prompter Solution designed to se
 tags: ['reboot', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Purpose
@@ -57,3 +59,9 @@ The script popup screenshot:
   `Note:` The 5 minutes depends on the value provided in the custom field `RebootForceTimeDelayMinutes`.
 
 ![Screenshot](../../static/img/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5/image_69.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Group of machines where the "BitLocker Status Audit" is enabled.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -61,3 +63,9 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ## Completed Group
 
 ![Image3](../../../static/img/docs/8d034710-66c7-4f8e-8feb-740c9fa109f2/image3.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

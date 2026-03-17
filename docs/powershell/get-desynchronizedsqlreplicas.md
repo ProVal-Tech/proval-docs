@@ -8,6 +8,8 @@ description: 'Documentation for the Get-DesynchronizedSqlReplicas command to ret
 tags: ['database', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -31,3 +33,9 @@ Returns a list of all SQL replication instances that are not synchronized or syn
 Location of output for log, result, and error files:
 - System Object
 - .\Get-DesynchronizedSqlReplicas-log.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

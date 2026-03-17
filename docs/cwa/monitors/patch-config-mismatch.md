@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect machines where the data 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-27
 ---
 
 ## Summary
@@ -27,3 +29,13 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Patch Config Mismatch`
+
+## Changelog
+
+### 2025-06-27
+
+- Disabled the Feature Update Defer Registry Value in Patch Config Audit Solution. It is now set to 0 Days so that the feature update can be detected and pushed.
+
+### 2025-04-10
+
+- Initial version of the document

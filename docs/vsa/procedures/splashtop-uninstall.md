@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the process to unins
 tags: ['performance', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Agent Procedure Log, Remove-Splashtop-log.txt
 ## Export Attachment
 
 Attach the content XML VSA Export to this document.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

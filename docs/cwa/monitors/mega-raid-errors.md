@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a remote monitor that
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -46,3 +48,9 @@ Managed Windows Servers
 
 **Sample RESULT:**  
 ![Sample Result Image](../../../static/img/docs/d2a8f581-37e3-4c27-8e98-2341ec4382ad/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

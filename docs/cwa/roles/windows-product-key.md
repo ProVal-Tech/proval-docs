@@ -8,6 +8,8 @@ description: 'This document outlines a role that utilizes PowerShell to retrieve
 tags: ['security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role runs a PowerShell script to fetch the Windows Product key and matches 
 | Detection String                                                                                   | Comparator    | Result                                        | Applicable OS |
 |----------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------|----------------|
 | `%@C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -Command "(Get-CimInstance -Query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"@%` | Regex Match   | `[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}` | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

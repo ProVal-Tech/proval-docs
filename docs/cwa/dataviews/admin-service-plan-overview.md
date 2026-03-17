@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the service pla
 tags: ['patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,13 @@ This document provides an overview of the service plan status, onboarding, patch
 | Workstations Patching      | Displays the workstations patching status. [Enabled/Disabled]                                        |
 | Administrator Credentials  | Displays the status of admin credentials set in the Deployment & Default tab on Locations.           |
 | Cache Drive                | Displays the status of the location cache drive.                                                     |
+
+## Changelog
+
+### 2025-07-31
+
+- Fixed the DV where the `Not Selected` clients were not highlighting in Red colour.
+
+### 2025-04-10
+
+- Initial version of the document

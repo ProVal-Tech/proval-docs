@@ -8,6 +8,8 @@ description: 'This document provides an overview of a view that displays machine
 tags: ['azure']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -29,3 +31,9 @@ List all filters applied to this view.
 |----------------------------------|------------------|--------------|
 | cPVAL Azure AD Joined            | Y                | *TRUE*      |
 | cPVAL Azure AD Registered        | Y                | *TRUE*      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

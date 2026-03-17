@@ -8,6 +8,8 @@ description: 'Sets the title for the reboot prompt. If left blank, the default t
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Sets the title for the reboot prompt. If left blank, the default title `Updates 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/9003db99-40e0-4450-8ce7-95e273d5c252/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

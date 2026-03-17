@@ -8,6 +8,8 @@ description: 'This script allows you to manage network protocols on Windows mach
 tags: ['dhcp', 'windows','networking']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -56,3 +58,9 @@ Use this script with caution. Disabling IPv4 on the machine may result in a netw
 
 ## Output
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

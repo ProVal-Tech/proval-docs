@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and updates of the Weekly Scrip
 tags: ['database', 'performance', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ The purpose of this script is to create the [pvl_Script_Assessment](/docs/31e58a
 
 Schedule the script to run once per day, preferably around midnight.  
 ![Sample Run](../../../static/img/docs/36a13e9c-fd23-4dae-9979-04a99a787ac0/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

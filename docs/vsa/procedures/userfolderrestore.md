@@ -8,8 +8,16 @@ description: 'This document provides a detailed guide on how to restore backed u
 tags: ['backup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
 
 Restore Backed Up Folders to Current User
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

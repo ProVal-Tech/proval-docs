@@ -8,6 +8,8 @@ description: 'This script is to create and manage toast notifications with custo
 tags:  ['reboot', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-08-14
 ---
 
 ## Overview
@@ -110,3 +112,20 @@ This script is to create and manage toast notifications with customizable option
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-08-14
+
+- Added a Run Script button where a PowerShell script can be triggered via a button click within the notification. 
+And now the dismiss button is optional and can be excluded.
+Notifications can be shown with or without any buttons. 
+Also, added a feature where on clicking Learn More button, it will send a prompt again. Earlier, on clicking on `Learn More` button, the prompt used to vanish. 
+
+Parameters Removed:
+1. SnoozeButton (Was unnecessary)
+2. LearnMoreButton (Removed to adjust new parameters, setting the LearnMoreUrl will enable the button)
+
+### 2025-05-29
+
+- Initial version of the document

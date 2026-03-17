@@ -8,6 +8,8 @@ description: 'A group tailored for Windows Servers that have the Network Policy 
 tags: ['windows', 'dynamic-groups']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -92,3 +94,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/d743519c-45d0-4adb-80c9-775e4b5273d2/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

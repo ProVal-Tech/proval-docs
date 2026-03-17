@@ -8,6 +8,8 @@ description: 'This document outlines a script that changes the IP address of a p
 tags: ['networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This document describes how to change the printer's IP address from `@OldIP@` to
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

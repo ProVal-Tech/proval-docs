@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to reboot workstation end
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -335,3 +337,9 @@ This screen will appear.
 ## Output
 
 - Task & Sequences Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

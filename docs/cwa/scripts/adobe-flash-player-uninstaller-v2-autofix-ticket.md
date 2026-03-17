@@ -8,6 +8,8 @@ description: 'This document describes an Autofix script designed to uninstall Ad
 tags: ['adobe', 'software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ If that fails, it will try to uninstall using the Uninstaller Software script wi
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Detects whether the installed Windows OS is a Home edition and upd
 tags: ['windows','custom-fields','auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-18
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ Detects whether the installed Windows operating system is a Home edition by chec
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-09
+
+- Initial version of the document

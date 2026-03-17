@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Dataview that displays i
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ Dataview displays the information gathered by the [CWM - Automate - Script - Get
 | Model Number             | Computer's Model (From CW Manage)                                                                           |
 | Serial Number            | Serial Number of computer (Hidden)                                                                          |
 | Data Collection Time     | Data Collection Time                                                                                         |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

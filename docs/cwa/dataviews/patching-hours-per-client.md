@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of patching jobs and th
 tags: ['patching', 'performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This document provides an overview of patching jobs and the total patching hours
 | Number of Patch Jobs Last 30 Days  | Number of patch jobs per client in the last 30 days      |
 | Sum of Patching Hours Last 30 Days | Sum of patching hours per client in the last 30 days     |
 | Total Patch Duration               | Total patch duration per client in the last 30 days      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

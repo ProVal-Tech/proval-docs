@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to fully enable Advanced 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ In addition to enabling Advanced Windows Security Auditing, the script is also c
 ## Sample Ticket
 
 ![Sample Ticket](../../../static/img/docs/3c74153d-7575-485c-bd6d-c5e002384cbd/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

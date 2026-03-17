@@ -8,6 +8,8 @@ description: 'This script is used by the ConnectWise Automate to Asio migration 
 tags: ['installation', 'application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ This can  be run outside of the migration, but requires the site RMM Migration E
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-08-22
+
+- Initial version of the document

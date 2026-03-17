@@ -8,6 +8,8 @@ description: 'This document outlines the internal monitor that executes the Micr
 tags: ['office', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Managed Windows Computers
 ## Alert Template
 
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Click-to-Run - Get Details`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

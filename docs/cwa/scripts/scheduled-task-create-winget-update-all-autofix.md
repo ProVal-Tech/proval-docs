@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that establishes sc
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -78,3 +80,9 @@ When the `Winget Update All [Logged on User]` task is enabled, a command window 
 
 - Script log
 - Extra Data Field
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

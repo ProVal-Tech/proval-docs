@@ -8,6 +8,8 @@ description: 'This document provides detailed instructions on how to display inf
 tags: ['database', 'installation', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Purpose
@@ -33,3 +35,9 @@ Displays detailed information on [PnP Devices](https://docs.microsoft.com/en-us/
 
 **Q:** The dataview is not populating anything after running the script for the first time.  
 **A:** It's most likely due to permissions. Try running the [MySQL - Permission - Set Custom Table Permissions](/docs/7819fc75-aeae-457b-a451-59221396e900) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

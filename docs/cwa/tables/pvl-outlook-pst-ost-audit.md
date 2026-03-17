@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of a custom table
 tags: ['database', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ The custom table stores the data gathered by the [EPM - Data Collection - Script
 | Size                | Double   | Size of the file in Megabytes              |
 | ModificationTime    | DateTime | Most recent modification time of the file   |
 | DataCollectionTime  | DateTime | Data Collection Time                        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

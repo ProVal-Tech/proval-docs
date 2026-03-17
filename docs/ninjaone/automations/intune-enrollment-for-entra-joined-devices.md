@@ -8,6 +8,8 @@ description: 'The script automates the Microsoft Intune enrollment process for E
 tags: ['azure', 'registry']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Overview
@@ -165,3 +167,9 @@ If you are prompted to enter your MFA code, provide the code and press the `Cont
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-04-22
+
+- Initial version of the document

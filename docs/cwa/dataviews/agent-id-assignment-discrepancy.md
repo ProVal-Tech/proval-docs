@@ -8,6 +8,8 @@ description: 'This document provides a dataview that displays information about 
 tags: ['networking', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview will show information on any agent that has changed its name five 
 | Last Contact              | Last contact with RMM                                |
 | Days Since Last Contact   | Days since last contact                              |
 | Last User                 | Last logged-in user                                  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This condition ensures that the Disable Windows Firewall script ru
 tags: ['networking', 'security', 'firewall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This condition ensures that the [Disable Windows Firewall](/docs/f13721f2-1a61-4
 ## Compound Condition Creation
 
 [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/turn-off-windows-firewall-windows-server.toml)
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

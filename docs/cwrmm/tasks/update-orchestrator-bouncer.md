@@ -8,6 +8,8 @@ description: 'This document provides instructions on how to implement the Update
 tags: ['patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -66,3 +68,9 @@ This script can also run manually against any Windows-based device.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

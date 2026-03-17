@@ -8,6 +8,8 @@ description: 'Represents the company ID for your application. It is used to iden
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Represents the company ID for your application. It is used to identify a specifi
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/3e4d904f-841c-4888-8b16-b54c4d7cf65c/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details the process of gathering configuration field
 tags: ['report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -35,3 +37,9 @@ List the report parts used. If custom report parts were designed during report c
   - **Advanced Filters (Field, Operator, Value):**
     - xPVAL Azure AD Connect Version | Not Like | 'Not Installed'
     - xPVAL Azure AD Connect Version | Not Like | ""
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Removes Cisco Secure Client from Windows systems by detecting inst
 tags: ['uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Overview
@@ -28,4 +30,10 @@ Removes Cisco Secure Client from Windows systems by detecting installed instance
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

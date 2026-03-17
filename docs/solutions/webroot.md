@@ -8,6 +8,8 @@ description: 'This document outlines the procedures for managing Webroot Softwar
 tags: ['antivirus', 'deployment', 'installation', 'macos', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -93,3 +95,9 @@ The Webroot Plugin provides a way to automatically deploy Webroot by setting the
 #### Implementation Setup
 
 Import the Script [EPM - Data Collection - Script - Webroot Hashed Key Retrieval [DV]](/docs/4d3b24f2-a55a-4f57-8cad-1345d1e85060) and run it.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

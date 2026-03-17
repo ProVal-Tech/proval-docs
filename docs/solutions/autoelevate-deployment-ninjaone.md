@@ -8,6 +8,8 @@ description: 'This solution is designed to configure the automatic deployment of
 tags: ['security','application','deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Purpose
@@ -80,3 +82,9 @@ Blocker Mode controls the behavior when an application is not automatically elev
 ### 7. Can the deployment script be scheduled to run regularly?
 
 Yes, it can be added to a recurring policy so that new machines automatically receive AutoElevate and existing machines can be checked for installation status.
+
+## Changelog
+
+### 2025-12-08
+
+- Initial version of the document

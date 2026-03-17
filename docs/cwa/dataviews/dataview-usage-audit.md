@@ -8,6 +8,8 @@ description: 'This document provides an overview of a Dataview that audits the m
 tags: ['database', 'performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This Dataview audits the Dataviews most frequently accessed by users. It can be 
 | Recently Opened On                   | Most recent date when the Dataview was accessed                                                     |
 | Duration Since Initial Opening (Days) | Number of days since the Dataview was opened for the first time in the last (History Retention) days |
 | History Retention (Days)            | Indicates how many days old the data displayed in the Dataview is (it depends on the data shown in the h_users table) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the Bitlocker a
 tags: ['active-directory', 'backup', 'encryption', 'security', 'tpm']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ This dataview displays the Bitlocker information on all computers that have run 
 | TPM Version            | The TPM Version number.                                                                                             |
 | TPMOwned               | The TPM Owned state of the target.                                                                                  |
 | TPMActivated           | The activation state of the TPM on the target.                                                                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

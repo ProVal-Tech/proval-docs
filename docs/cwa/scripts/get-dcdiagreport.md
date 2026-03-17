@@ -8,6 +8,8 @@ description: 'This document describes an automated wrapper for the agnostic Get-
 tags: ['diagnostic', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -63,3 +65,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 ![Ticketing](../../../static/img/docs/a9e0b7ac-4ce2-4376-ac97-8cdee2d122dc/image_3.webp)  
 **The script will not close or finish any ticket.**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

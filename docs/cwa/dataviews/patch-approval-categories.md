@@ -8,6 +8,8 @@ description: 'This document provides detailed information regarding the auto-app
 tags: ['patching', 'database']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ The [Auto Approval Policies](/docs/1b296878-9915-4c2b-9d2e-f9ee09059cc9) datavie
 | Category                  | Category of the patch, such as Updates, Upgrades, Exchange, Office 365, Bing, Drivers, etc.                       |
 | Category Approval Status   | Indicates whether the auto policy mentioned in the next column is disabled or enabled. This includes whether approval is enabled or disabled, denial is enabled or disabled, or if it is ignored, or if nothing is set against that category for that Approval Policy. |
 | Auto Policy               | The policy applied to that Patch Category for that Approval Policy, such as Approved, Denied, or Ignored.          |
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

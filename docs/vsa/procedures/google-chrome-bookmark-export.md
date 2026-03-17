@@ -8,6 +8,8 @@ description: 'This procedure retrieves the currently logged-in user’s Google C
 tags: ['backup', 'chrome', 'onedrive']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -68,3 +70,9 @@ Otherwise, the script will fall back to the local Documents folder.
 ## Output
 
 Procedure log files and other outputs.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

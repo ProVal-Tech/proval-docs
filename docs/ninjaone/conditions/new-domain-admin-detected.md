@@ -8,6 +8,8 @@ description: 'Runs the New Domain Admin Detected automation every 04 hours on In
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-03
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Runs the [New Domain Admin Detected](/docs/a818ac38-9841-4049-9fda-1b87fa1bd19a)
 ## Condition Creation
 
 [Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/new-domain-admin-detected.toml)
+
+## Changelog
+
+### 2025-10-17
+
+- Initial version of the document

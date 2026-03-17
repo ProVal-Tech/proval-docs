@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-07-23
 ---
 
 ## Overview
@@ -32,3 +34,10 @@ unlisted: false
 
 - Activity Details  
 - Custom Field
+
+<<<<<<< origin-new-script-install-microsoft-365-apps
+## Changelog
+=======
+
+## Changelog
+>>>>>>> main

@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide for implementing the KRBTG
 tags: ['active-directory', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -144,3 +146,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

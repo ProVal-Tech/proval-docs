@@ -8,6 +8,8 @@ description: 'This document outlines the password entries for which the HP iLO H
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This document lists the password entries for which the HP iLO Health Check autom
 | iLO               | Title of the Password Entry                       |
 | PassLastRun       | Last time the check was performed, if any        |
 | ConnectionStatus   | Connection Status during the previous execution    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

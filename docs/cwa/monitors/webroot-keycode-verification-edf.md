@@ -8,6 +8,8 @@ description: 'This document outlines the setup and dependencies for the Webroot 
 tags: ['deployment', 'ticketing', 'webroot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ To set up the ticketing for the keycode mismatch detection, it is mandatory to s
 ## Target
 
 - Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

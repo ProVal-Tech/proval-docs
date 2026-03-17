@@ -8,6 +8,8 @@ description: 'Use this field to specify which modules should be installed. If yo
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-17
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Note: If the Umbrella module is selected, you must configure UserID, Fingerprint
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/e6eb3845-8c47-4791-95d6-a9138e457df9/image1.webp)
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

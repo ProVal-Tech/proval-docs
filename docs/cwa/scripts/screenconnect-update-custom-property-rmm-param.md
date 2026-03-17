@@ -8,6 +8,8 @@ description: 'This document explains how to set a custom property in CW Control 
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ User properties for the Custom Property Index and the Property Value need to be 
 ## Output
 
 Script log messages only.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

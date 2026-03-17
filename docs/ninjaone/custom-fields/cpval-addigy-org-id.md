@@ -8,6 +8,8 @@ description: 'Store the Addigy Organization ID here for automatic application to
 tags: ['installation', 'application', 'macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Store the Addigy Organization ID here for automatic application to all devices. 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/b3a99690-e1d2-40ad-8ee8-9c417330e2b9/image1.webp)
+
+## Changelog
+
+### 2025-11-25
+
+- Initial version of the document

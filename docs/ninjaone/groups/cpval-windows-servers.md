@@ -8,6 +8,8 @@ description: 'A group designated for machines running the Windows Servers.'
 tags: ['windows', 'dynamic-groups']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ Fill in the following details and click the `Save` button to create the group.
 ## Completed Group
 
 ![Image4](../../../static/img/docs/c73e004e-6a9c-40e4-8e74-babb4b729256/image4.webp)
+
+## Changelog
+
+### 2025-03-31
+
+- Initial version of the document

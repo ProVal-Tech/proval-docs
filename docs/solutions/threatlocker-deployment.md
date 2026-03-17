@@ -8,6 +8,8 @@ description: 'This document outlines the process for deploying the Threatlocker 
 tags: ['deployment', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ The purpose of this solution is to deploy the Threatlocker agent on Windows and 
 
 3. Create and deploy the following task:
    - [CW RMM - Task - Threatlocker Deployment](/docs/50838fdf-4f88-4fa4-a3b2-f4827af7a86c)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

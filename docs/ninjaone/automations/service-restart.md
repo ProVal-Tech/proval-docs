@@ -13,6 +13,8 @@ tags: [
 ]
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Overview
@@ -34,3 +36,9 @@ This automation restarts one or more specified Windows services on a target devi
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-12-17
+
+- Initial version of the document

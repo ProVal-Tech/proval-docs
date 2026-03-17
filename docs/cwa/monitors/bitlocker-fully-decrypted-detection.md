@@ -8,6 +8,8 @@ description: 'This document outlines an internal monitor designed to detect the 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This internal monitor detects the agent where the "Bitlocker Fully Decrypted - S
 ## Target
 
 Windows Machines - Should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

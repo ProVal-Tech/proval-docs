@@ -8,6 +8,8 @@ description: 'This script deploys ConnectWise Asio Platform agents to windows en
 tags:  ['installation', 'application']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-09-08
 ---
 
 ## Overview
@@ -68,3 +70,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [CW RMM Agent Deployment](../../../static/attachments/cw-rmm-agent-deployment.cpt)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

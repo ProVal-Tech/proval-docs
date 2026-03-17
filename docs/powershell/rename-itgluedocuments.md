@@ -8,6 +8,8 @@ description: 'Documentation for the Rename-ITGlueDocuments command to bulk renam
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -22,3 +24,9 @@ Parses through CSV exports from the conversion and directly from ITGlue to renam
 ## Output
 - `.\editeddocs.csv`
 - `.\skippeddocs.csv`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

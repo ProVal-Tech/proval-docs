@@ -8,6 +8,8 @@ description: 'This document describes a script that downloads offscrub files and
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This script is designed to run manually on Windows machines as per requirement. 
 
 - Script log  
 - Local file on computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

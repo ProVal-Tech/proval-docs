@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a monitor designed t
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ The intended target of this monitor is Windows-based machines that have had at l
 ```PowerShell
 return (Get-CimInstance -erroraction silentlycontinue -Namespace 'root\SecurityCenter2' -Class AntiVirusProduct | Select-Object -Property DisplayName -Unique | Where-Object -Property DisplayName -ne 'Windows Defender')
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

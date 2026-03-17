@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that config
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This script uses `auditpol.exe` to configure logon auditing for success and fail
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for removing unwanted ScreenC
 tags: ['software', 'sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -53,3 +55,9 @@ LEFT JOIN clients ON clients.clientid = c.clientid
 WHERE software.name LIKE '%screenconnect%' 
 GROUP BY software.name
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

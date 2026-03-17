@@ -8,6 +8,14 @@ description: 'This document outlines the process for denying patches in the defa
 tags: ['database', 'installation', 'security', 'update']
 draft: false
 unlisted: true
+last_update:
+  date: 2025-04-10
 ---
 
 Deprecated
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

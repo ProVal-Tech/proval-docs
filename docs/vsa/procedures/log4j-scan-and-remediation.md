@@ -8,6 +8,8 @@ description: 'This document discusses the use of the revised Datto Scrip, credit
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Uses Revised Datto Scrip
@@ -19,3 +21,9 @@ An email must be specified on line 7 of the script.
 An email notification will be sent if vulnerabilities or attack traces are found. No notification will be sent if no threats exist.
 
 ![Image](../../../static/img/docs/860118db-b386-45bd-8dfc-580742b1f467/image_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

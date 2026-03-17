@@ -8,6 +8,8 @@ description: 'This document provides a guide to categorize Windows 10 and 11 com
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,4 +38,10 @@ This document categorizes Windows 10 and 11 computers where the `Feature Update 
 
 Click the `Save` button to save the group.  
 ![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_6.webp)  
-![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_7.webp)  
+![Image](../../../static/img/docs/1b9f901e-ea4e-4ed0-9b62-01d667196d48/image_7.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

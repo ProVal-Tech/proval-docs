@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on installing the Sentinel
 tags: ['installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Modify **[background.zip](http://background.zip)** to the name of the ZIP file y
 Agent Procedure Log Entry & vAgentConfiguration.agentTempSecureDir/Import-TeamsBackground-log.txt
 ## Attachments
 [Import-TeamsBackground.ps1](<../../../static/attachments/itg/16303277/Import-TeamsBackground.ps1>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

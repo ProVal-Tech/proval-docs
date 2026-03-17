@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide for deploying and man
 tags: ['deployment', 'macos', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -66,3 +68,9 @@ Configure the solution as outlined below:
 ### 6.
 Confirm with the consultant before enabling ticketing by setting a ticket category for the [Deploy Huntress Agent](/docs/8888ddb9-ea31-48cb-a88e-56ff970b0e6c) internal monitor.  
 ![Image](../../static/img/docs/ec2b3583-4c06-40c2-8f2d-55f46f7aeed1/image_3.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

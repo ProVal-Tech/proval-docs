@@ -8,6 +8,8 @@ description: 'This script installs or updates the latest version of the SonicWal
 tags: ['sonicwall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -41,3 +43,14 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-10-30
+
+- Initial version of the document
+- The script has been updated to utilize a unified method for both installation and updates, supporting MSI and EXE formats. This enhancement eliminates the dependency on the Winget script for MSI-based installations.
+
+### 2025-07-21
+
+- Fixed the script where it was not generating a ticket when Winget script was called for MSI update and failed to update SonicWall.

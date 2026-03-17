@@ -8,6 +8,8 @@ description: 'This document outlines the structure of the table that stores info
 tags: ['database', 'disk', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ The table stores the information returned by the [Script - Crystal Disk Info Rep
 | AAM Level            | varchar(64) | AAM Level                                                        |
 | Drive Letter         | varchar(64) | Drive(s) on Disk                                                 |
 | Script Run Time      | datetime    | Data Collection Time                                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

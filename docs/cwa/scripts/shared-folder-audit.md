@@ -8,6 +8,8 @@ description: 'This document describes a script that collects detailed informatio
 tags: ['networking', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ The script will run a PowerShell script to gather data from the endpoint. It wil
 
 - Script States to be displayed in a Dataview
 - Script Log Messages
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

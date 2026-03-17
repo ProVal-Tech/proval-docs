@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the available user p
 tags: ['performance', 'report', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ This document displays all the available user profile sizes on a Windows machine
 | Profile Path     | Displays the user profile folder path.           |
 | Profile Size (MB)| Displays the user profile folder size in MB.    |
 | OS               | Displays the computer operating system.          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

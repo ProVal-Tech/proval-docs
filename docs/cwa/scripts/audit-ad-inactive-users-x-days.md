@@ -8,6 +8,8 @@ description: 'This script detects the inactive users over X days and records the
 tags: ['active-directory', 'accounts']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-01
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ This script detects the inactive users over X days  (configurable via the system
 - [Table - pvl_ad_inactive_users](/docs/2b118df6-1fef-4530-9303-0bb56c478361)
 - [Dataview - AD Inactive Users Audit](/docs/9c9888a7-678a-497f-8f61-11e21e020999)
 - Script Log
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

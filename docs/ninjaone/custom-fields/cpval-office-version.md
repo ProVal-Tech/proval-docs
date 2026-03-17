@@ -8,6 +8,8 @@ description: 'Office version installed on the machine fetched by `Get Office Ver
 tags: ['office365', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Stores the Office version installed on the machine fetched by [Get Office Versio
 
 ## Sample Screenshot
 ![image](../../../static/img/docs/4216d707-95cc-414c-8fa5-73fa9606fa97/image1.webp)
+
+## Changelog
+
+### 2025-12-12
+
+- Initial version of the document

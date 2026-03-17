@@ -8,6 +8,8 @@ description: 'This document outlines the setup and functionality of a monitor de
 tags: ['autopilot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ Global
 ## Alert Template
 
 `△ Custom - Execute Script - Get-AutopilotHash`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

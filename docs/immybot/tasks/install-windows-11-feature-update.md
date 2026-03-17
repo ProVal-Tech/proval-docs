@@ -8,6 +8,8 @@ description: 'The script automates the installation of the latest Windows 11 Fea
 tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Description
@@ -40,3 +42,13 @@ This helps ensure that the update process runs smoothly without being blocked or
 ## Implementation
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-windows-11-feature-update.toml)
+
+## Changelog
+
+### 2025-09-08
+
+- Added `Security Application Guidance` section in the document.
+
+### 2025-06-27
+
+- Initial version of the document

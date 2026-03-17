@@ -8,6 +8,8 @@ description: 'This document outlines a method to detect servers that have the On
 tags: ['installation', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document will detect the servers with the Online Responder Feature installe
 | Detection String                                                                                                                                             | Comparator | Result   | Applicable OS |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------|----------------|
 | `%\{@powershell.exe -nologo -noprofile -command "Get-WindowsFeature -Name 'ADCS-Online-Cert' -ErrorAction 'SilentlyContinue' | Select-Object InstallState | Ft -Hide"@%}` | Contains   | Installed | Windows        |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

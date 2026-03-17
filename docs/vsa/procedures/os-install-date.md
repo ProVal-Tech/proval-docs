@@ -8,6 +8,8 @@ description: 'This document outlines a procedure to determine the initial instal
 tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ The agent procedure requires the custom field to be created in order to successf
 ## Output
 
 The agent procedure updates the custom field.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

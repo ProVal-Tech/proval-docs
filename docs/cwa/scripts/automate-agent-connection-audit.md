@@ -8,6 +8,8 @@ description: 'This document describes a script that generates two custom tables,
 tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The script generates two custom tables: [pvl_automate_connection_audit](/docs/ec
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

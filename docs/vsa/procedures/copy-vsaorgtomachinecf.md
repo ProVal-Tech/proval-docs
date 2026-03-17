@@ -8,6 +8,8 @@ description: 'This document provides an overview of the process to copy organiza
 tags: ['kaseya', 'performance', 'setup', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Overview
@@ -42,3 +44,9 @@ This command sets 'xPVAL Monitoring Managed' to the org CF value from 'Monitorin
 ```
 ./UpdateVsaMonitoringFields-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

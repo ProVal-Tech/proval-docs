@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on creating a monitor that
 tags: ['ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Summary
@@ -60,3 +62,9 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'CW RMM task to execute a DISM repair followed by a SFC scan. This 
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -129,3 +131,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-02-28
+
+- Initial version of the document

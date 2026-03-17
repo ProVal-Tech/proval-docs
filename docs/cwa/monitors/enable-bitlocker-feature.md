@@ -8,6 +8,8 @@ description: 'This document outlines the process to enable various BitLocker fea
 tags: ['encryption', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ Windows Servers
 ## How to Import
 
 [Import - Remote Monitor - Enable BitLocker Feature](/docs/183d5388-764f-4e39-9ddc-2e4212b579e4)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

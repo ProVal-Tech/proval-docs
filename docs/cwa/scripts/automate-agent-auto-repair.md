@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on the Agent Repair S
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -152,3 +154,9 @@ LTService  v230.222   - 7/10/2023 3:37:46 PM   - Heartbeat send Status already s
 LTService  v230.222   - 7/10/2023 3:51:31 PM   - Successfully synchronized monitors with database: Monitors are synchronized with database.:::
 LTService  v230.222   - 7/10/2023 3:55:48 PM   - Heartbeat send Status already sending:::
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

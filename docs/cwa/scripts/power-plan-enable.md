@@ -8,6 +8,8 @@ description: 'This document provides details on the Enable Power Plan script for
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-13
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This script is an Automate implementation of the agnostic script [Agnostic - Ena
 
 - Script Log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of agents configured with Duo M
 tags: ['database', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ FROM
       AND users.userid > 0 
   ) t
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

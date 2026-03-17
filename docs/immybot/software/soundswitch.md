@@ -8,6 +8,8 @@ description: 'An ImmyBot software installer for Soundswitch'
 tags: ['application', 'installation', 'uninstallation']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-09-18
 ---
 
 ## Description
@@ -15,3 +17,9 @@ unlisted: false
 An ImmyBot software installer for SoundSwitch. It is a software and hardware system for creating and controlling automated, synchronized lighting shows with DJ music
 
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/soundswitch.toml)
+
+## Changelog
+
+### 2025-09-16
+
+- Initial version of the document

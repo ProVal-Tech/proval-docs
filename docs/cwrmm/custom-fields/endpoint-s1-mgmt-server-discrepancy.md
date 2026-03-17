@@ -8,6 +8,8 @@ description: 'This document provides an overview of the SentinelOne Management S
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Is the SentinelOne Management Server detected at the computer different from wha
 
 ![Screenshot 1](../../../static/img/docs/c600a6e2-bd09-4172-8784-d969838eea23/image_1.webp)
 ![Screenshot 2](../../../static/img/docs/c600a6e2-bd09-4172-8784-d969838eea23/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

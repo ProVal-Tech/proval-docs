@@ -8,6 +8,8 @@ description: 'Automatically create new users in Office 365 and assign the approp
 tags: ['office365', 'microsoft365']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-06
 ---
 
 # Summary
@@ -141,3 +143,9 @@ Common error codes:
 - `InsufficientLicenses`: Not enough licenses available for assignment
 - `InvalidUsageLocation`: The usage location is required but not provided or invalid
 - `PermissionDenied`: The Rewst integration lacks necessary permissions
+
+## Changelog
+
+### 2026-01-06
+
+- Initial version of the document

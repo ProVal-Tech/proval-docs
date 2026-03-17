@@ -8,6 +8,8 @@ description: 'This document provides a summary of the User Prompt for Reboot sol
 tags: ['performance', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ The dataview tracks the functioning of the [User Prompt for Reboot](/docs/32d225
 | Global Uptime Days to Send Prompts    | Uptime in days set in the `proval_RebootPromptUptimeDays` system property to automatically send the prompt. (0 --> Disabled) |
 | Global Prompt for Reboot Pending      | Is prompting enabled for computers with the reboot flag enabled? Set in the `proval_RebootPromptWhenPendingReboot` system property. |
 | Login Bug                             | True for machines where Automate has attempted to fix the False Login Error for more than 5 times and the issue is still not resolved. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the process to detect computers that are mi
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -43,4 +45,10 @@ Managed Windows Workstations
 ## Implementation
 
 Follow the steps provided in this private document to implement the solution:  
-[**Import - Remote Monitor - Deploy Teams**](/docs/5cc62311-8109-43b8-af64-e0aac4292d19)   
+[**Import - Remote Monitor - Deploy Teams**](/docs/5cc62311-8109-43b8-af64-e0aac4292d19)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

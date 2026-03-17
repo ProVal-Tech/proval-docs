@@ -8,6 +8,8 @@ description: 'This document details the procedure for categorizing servers into 
 tags: ['custom-fields', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Purpose
@@ -148,3 +150,13 @@ Create the following server role groups:
 **Q7. Is this solution compatible with non-Windows servers?**
 
 **A:** No, this solution is specifically designed for Windows Servers and relies on detecting roles that are unique to the Windows Server operating system.
+
+## Changelog
+
+### 2025-05-30
+
+- Added server role for Hyper-V cluster and a group for this role.
+
+### 2025-03-31
+
+- Initial version of the document

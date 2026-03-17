@@ -8,6 +8,8 @@ description: 'This document outlines a script that creates the plugin_proval_win
 tags: ['database', 'report', 'setup', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,13 @@ The script will create the `plugin_proval_windows11_readiness` table if it's mis
 
 Dataview: [Windows 11 Upgrade Compatibility](/docs/36ca4c95-af9e-443b-8fe5-33e910107650)  
 Custom table: [plugin_proval_windows11_readiness](/docs/74cca89e-effd-4af7-a73a-53a30b91c8a7)
+
+## Changelog
+
+### 2025-10-14
+
+- Updated the script to show machines as "Not Capable: Secureboot Disabled" if secureboot is disabled.
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This solution contains the Microsoft 365 - C2R - solution, like (G
 tags: ['office', 'office365', 'microsoft365', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-29
 ---
 
 ## Purpose
@@ -26,3 +28,9 @@ This solution contains the Microsoft 365 - C2R - solution, like (Get, Set, Updat
 ## Implementation
 
 - Follow the component documentation to import and run on-demand
+
+## Changelog
+
+### 2026-01-29
+
+- Initial version of the document

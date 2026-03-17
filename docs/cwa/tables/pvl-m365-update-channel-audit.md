@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and dependencies for storing da
 tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ Stores the data gathered by the [Microsoft 365 - Click-to-Run - Get Details](/do
 | AutoUpdate        | tinyint   | Indicates whether Office Auto Update is enabled on the machine.                                |
 | updateChannel     | varchar   | Update Channel for Office installed on the machine.                                            |
 | dataCollectionDate| datetime  | Last time the [SWM - Data Collection - Script - Microsoft 365 - Click-to-Run - Get Details](/docs/ce16526d-84b5-4e58-928b-13a29195056e) ran on the machine. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

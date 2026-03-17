@@ -8,6 +8,8 @@ description: 'This script will check for the MS Office Version installed on the 
 tags:  ['office365', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-24
 ---
 
 ## Overview
@@ -31,3 +33,9 @@ This script will check for the MS Office Version installed on the windows machin
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-12-12
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Restore Point status for
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ The dataview displays the status of the Restore Point for workstations.
 | Computer Name       | Computer name.                                            |
 | OS                  | Displays the operating system of the agents.               |
 | Restore Point Status | Displays if the Restore Point is enabled or disabled on the computers. |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

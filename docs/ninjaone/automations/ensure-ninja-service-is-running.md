@@ -8,6 +8,8 @@ description: 'This Script creates a scheduled task that will make sure ninja ser
 tags: ['windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-12
 ---
 
 ## Overview
@@ -86,4 +88,10 @@ You will be prompted to enter your MFA code. Provide the code and press the Cont
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-05-09
+
+- Initial version of the document

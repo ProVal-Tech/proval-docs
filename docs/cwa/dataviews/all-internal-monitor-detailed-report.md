@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of custom internal moni
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ Color coding is applied to the columns "Monitor Nature," "Monitor Status," "Scri
 - **Monitor Status**: The "Disabled" font is bold/italic and highlighted in red to draw attention to disabled monitors.
 - **Script Nature**: The "ProVal Script" is highlighted in green to indicate where "ProVal" scripts are used as autofixes.
 - **Synced/Updated**: "Yes" is highlighted in green, "No" in red, and "N/A" in grey to easily indicate whether the monitor is properly synced/updated from the ProVal plugin.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Unregister-ChromiumExtension command to remo
 tags: ['chrome', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -41,3 +43,9 @@ This will remove uBlock Origin and Zoom Meetings from the registered extensions 
 ```
 .\Unregister-ChromiumExtension-log.txt
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

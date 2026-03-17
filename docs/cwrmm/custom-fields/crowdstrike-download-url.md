@@ -8,6 +8,8 @@ description: 'Set download Url for downloading the installer for CrowdStrike Win
 tags: ['application', 'installation', 'security', 'antivirus']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-04
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ Set download Url for downloading the installer for CrowdStrike Windows Sensor.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/ae84e56d-df98-42da-b293-7412c01d7db7/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

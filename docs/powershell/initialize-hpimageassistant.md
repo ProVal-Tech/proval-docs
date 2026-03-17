@@ -8,6 +8,8 @@ description: 'It is a PowerShell automation script designed for IT administrator
 tags: ['hp', 'firmware', 'bios', 'drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Overview
@@ -140,3 +142,9 @@ Url              : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.exe
 ReleastNotesUrl  : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.html
 CvaUrl           : ftp.hp.com/pub/softpaq/sp107501-108000/sp107620.cva
 ...
+
+## Changelog
+
+### 2025-08-06
+
+- Initial version of the document

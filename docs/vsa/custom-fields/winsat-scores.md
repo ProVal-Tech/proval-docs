@@ -8,6 +8,8 @@ description: 'This document outlines a procedure that uses the WinSAT agent to c
 tags: ['performance', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This document uses the agent procedure of the same name and stores the values fr
 | xPVAL Disk Score        | Machine        | Captures the Disk score from WinSAT     |
 | xPVAL Graphics Score     | Machine        | Captures the Graphics score from WinSAT  |
 | xPVAL Memory Score      | Machine        | Captures the Memory score from WinSAT    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

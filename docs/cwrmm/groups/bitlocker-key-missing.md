@@ -8,6 +8,8 @@ description: 'Group of machines where BitLocker Key was not found.'
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-11
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ A machine matches the group if it meets ALL criteria in Block 1.
 ## Completed Group
 
 ![Image3](../../../static/img/docs/819b7ac8-aa64-41b8-84d0-2123df0ef68e/image3.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

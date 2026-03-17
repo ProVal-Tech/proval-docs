@@ -46,3 +46,9 @@ FROM
   JOIN locations l ON l.locationid = c.locationid 
   JOIN plugin_proval_computer_department pp ON pp.computerid = c.computerid
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

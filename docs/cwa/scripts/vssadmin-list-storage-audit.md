@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on using a script to 
 tags: ['backup', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The location and method by which this script returns data:
 - Script log
 - plugin_proval_vssadminstorage
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

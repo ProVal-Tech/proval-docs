@@ -8,6 +8,8 @@ description: 'This document details a script designed to check and uninstall all
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This script checks and uninstalls all installed versions of Java from the target
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -24,3 +26,6 @@ unlisted: false
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/_template.toml)
 
 ## Sample Screenshot
+
+
+## Changelog

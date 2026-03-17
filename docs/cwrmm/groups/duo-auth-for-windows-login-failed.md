@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating a dynamic group th
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ This group records the agents where the "DUO Install & Upgrade - Latest Version"
    - Set `Failed` in the comparison condition.  
    ![Image](../../../static/img/docs/beaa71b6-62a3-4800-9c24-da92d4566965/image_7.webp)  
    **Condition:** `Duo Deployment Result` `Contain any of` `Failed`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

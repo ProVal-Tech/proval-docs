@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that detects online machines wher
 tags: ['ticketing', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Globally (both on Windows and Mac machines)
 ## Ticketing
 
 The tickets will be created by the [CWM - Control - Script - Update ScreenConnect Version](/docs/b04bc7eb-65ce-4684-b787-3b248fcd44f6) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

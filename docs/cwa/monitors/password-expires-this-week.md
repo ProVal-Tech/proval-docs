@@ -8,6 +8,8 @@ description: 'This document describes a Custom RAWSQL monitor that detects users
 tags: ['active-directory', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ This Custom RAWSQL monitor detects users whose passwords are going to expire wit
 ## Target
 
 Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

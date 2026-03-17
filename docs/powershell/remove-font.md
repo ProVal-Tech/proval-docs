@@ -57,4 +57,10 @@ To get the list of installed system fonts, run either of the following PowerShel
 Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts'  
 # or  
 Get-ChildItem -Path (New-Object -ComObject Shell.Application).Namespace(0x14).Self.Path  
-```  
+```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document contains the custom fields that are used in the CW R
 tags: ['macos', 'windows', 'installation', 'deployment', 'application', 'connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Provide the values as provided in the details section to the custom fields requi
 ## Completed Custom Field
 
 ![Complete](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/image.webp)
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

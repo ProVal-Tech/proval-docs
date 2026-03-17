@@ -8,6 +8,8 @@ description: 'This agnostic powershell script is designed to perform the AD Audi
 tags: ['active-directory']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-07-11
 ---
 
 ## Description
@@ -52,3 +54,9 @@ Can restart all or specific services
 ## Output
 - Script Log
 - Log file: C:\ProgramData\_Automation\Script\ADHealthServices.
+
+## Changelog
+
+### 2025-07-11
+
+- Initial version of the document

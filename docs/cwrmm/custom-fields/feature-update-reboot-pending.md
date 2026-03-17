@@ -8,6 +8,8 @@ description: 'This document provides details on the Feature Update Install With 
 tags: ['reboot']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,4 +29,10 @@ The `Feature Update Install With Tracking` script flags a custom field if the in
 **Level:** Endpoint  
 **Default Value:** No  
 **Description:** Will be checked only if the machine has not rebooted since running the Feature Update Install task where the Reboot parameter was not set to reboot.  
-**Editable:** Yes  
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

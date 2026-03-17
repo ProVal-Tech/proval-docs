@@ -8,6 +8,8 @@ description: 'This stores the ConnectSecure deployment Tenant ID.'
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -33,3 +35,9 @@ This stores the ConnectSecure deployment Tenant ID.
 ## Sample Screenshot
 
 ![Sample Run 1](../../../static/img/docs/556a0c6f-20ee-41ed-a802-b844ef54ae55/image16.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

@@ -4,15 +4,17 @@ slug: /f73d6546-470e-448b-b3db-d7b57d3d8df4
 title: 'SVC-CWAIISMgr'
 title_meta: 'SVC-CWAIISMgr'
 keywords: ['monitor', 'service', 'automate', 'ticket', 'labtech', 'server']
-description: 'This document outlines the CWAIISMgr service monitor for the Automate server, detailing its purpose, configuration, and alert settings to ensure timely ticket creation in the Autotask portal when the service is down.'
+description: 'This document outlines the CWAIISMgr service monitor for the Automate server, detailing its purpose, configuration, and alert settings to ensure timely ticket creation in the Halo PSA  when the service is down.'
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
 
-CWAIISMgr is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Autotask portal if it is down. It should be created against the "Labtech Server" group for the on-prem partners only.
+CWAIISMgr is one of the important services for the Automate server. This monitor checks the service status and is intended to create an urgent ticket in our (ProVal's) Halo PSA if it is down. It should be created against the "Labtech Server" group for the on-prem partners only.
 
 ## Details
 
@@ -27,3 +29,9 @@ CWAIISMgr is one of the important services for the Automate server. This monitor
 ## Target
 
 Service Plans. Windows servers. Server Roles. MSP Specific Servers. Labtech Server.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This solution monitors servers for SMB1 protocol usage. It enables
 tags: ['alerting', 'auditing', 'eventlogs', 'smb']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-31
 ---
 
 ## Purpose
@@ -63,3 +65,9 @@ Results are logged within the Ninja environment, and tickets can be configured.
 
 **9. What should I do if SMB1 activity is detected?**  
 If activity is detected, review the source of the access. It’s recommended to disable SMB1 if it’s not required, as it poses a known security risk.
+
+## Changelog
+
+### 2025-10-29
+
+- Initial version of the document

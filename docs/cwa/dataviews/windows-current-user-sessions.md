@@ -8,6 +8,8 @@ description: 'This document provides an overview of the User Session Audit Datav
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The information displayed in this dataview is populated into the custom table `@
 | Location (All Possible Columns) | This dataview includes all possible location details such as location address, location phone number, etc. |
 | Client (All Possible Columns) | Contains all possible client details such as client city, client phone, etc.                 |
 | Computer (All Possible Columns) | Contains all possible computer details such as Computer OS Build, Type, Manufacturer, etc.  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

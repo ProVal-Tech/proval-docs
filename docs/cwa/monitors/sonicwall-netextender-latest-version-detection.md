@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that schedules a script to collec
 tags: ['software', 'update', 'windows', 'sonicwall']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Summary
@@ -22,3 +24,9 @@ This monitor schedules the [Script - Application - Latest Version Detection](/do
 ## Target
 
 Windows Workstation - Only one workstation is needed for this monitor because it is only required to fetch the latest version.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

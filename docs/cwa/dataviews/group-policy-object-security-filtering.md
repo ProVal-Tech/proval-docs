@@ -8,6 +8,8 @@ description: 'This document provides an overview of a dataview that displays inf
 tags: ['active-directory', 'gpo', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This dataview displays information related to Group Policy Objects in Active Dir
 | CreatedTime     | The time when the GPO was created                                                                |
 | ModifiedTime    | The last time this GPO was modified                                                             |
 | ReadTime        | The last time this GPO was read.                                                                |
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

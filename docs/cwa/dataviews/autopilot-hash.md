@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Hardware Hash in
 tags: ['autopilot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This document displays the Hardware Hash details of Windows agents.
 | Model             | Model of the agent within Automate                       |
 | Serial Number     | Serial Number of the agent within Automate               |
 | Autopilot Hash    | Hardware Hash collected by the [Script - Get-AutopilotHash](/docs/9171549a-070a-4346-be90-393416713806) |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

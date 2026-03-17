@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on automating the cle
 tags: ['cleanup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This process cleans well-known directories of aging files and folders on all int
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

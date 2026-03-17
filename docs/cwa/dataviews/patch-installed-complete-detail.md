@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the patching pr
 tags: ['installation', 'patching', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This document contains detailed information about patching on the agent, includi
 | Patching Operation   | Indicates whether the patch is installing, uninstalling, or stuck on rollback                 |
 | Patching Result     | The state of the patch, whether it was successfully installed, is running, or has failed       |
 | Operating System    | The operating system of the agent                                                               |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

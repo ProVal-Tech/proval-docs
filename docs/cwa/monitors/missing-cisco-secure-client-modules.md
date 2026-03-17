@@ -8,6 +8,8 @@ description: 'This document outlines the functionality of the internal monitor t
 tags: ['cisco', 'installation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ It is a global monitor targeting both Windows and MAC machines.
 ## Alert Template
 
 `△ Custom - Execute Script - Cisco Secure Client - Package Installation`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

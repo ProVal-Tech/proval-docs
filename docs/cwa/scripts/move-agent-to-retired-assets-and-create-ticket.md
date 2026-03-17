@@ -8,6 +8,8 @@ description: 'This document outlines a script that automates the process of crea
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script will create a ticket and move the agent it is run against to retired
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

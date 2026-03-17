@@ -8,6 +8,8 @@ description: 'This document provides a summary of a Dataview that displays infor
 tags: ['networking', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ This Dataview shows information about existing network adapters.
 | NIC Name        | Displays the Network adapter name.               |
 | Driver Name     | Displays the Network adapter driver name.        |
 | Driver Version  | Displays the Network adapter driver version.     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

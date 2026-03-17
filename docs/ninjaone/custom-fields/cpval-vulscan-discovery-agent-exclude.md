@@ -8,6 +8,8 @@ description: 'Choose Yes to exclude the Location/Device from the automatic Vulsc
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -107,3 +109,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/685d8bef-ebda-40cb-a997-a7f9a208c837/image5.webp)
+
+## Changelog
+
+### 2025-04-18
+
+- Initial version of the document

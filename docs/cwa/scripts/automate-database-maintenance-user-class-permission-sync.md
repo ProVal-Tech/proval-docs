@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Automate Database Mainte
 tags: ['database', 'security', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ This script is a function script called from [CWM - Automate - Script - Automate
 ## Output
 
 This script will add the logs to the log variable.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details a monitor that identifies devices with disab
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ None.
 All machines with Antivirus installed and/or the managed service plans. 
 
 This monitor will work for all operating systems, but the available Autofix will only run on Windows devices!
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

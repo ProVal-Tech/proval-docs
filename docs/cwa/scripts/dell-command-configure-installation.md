@@ -8,6 +8,8 @@ description: 'This document details a script that installs Dell Command Configur
 tags: ['installation', 'networking', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This script installs version 3 or 4 of Dell Command Configure depending on the a
 ## Output
 
 **Script Log:** Success or Failure
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

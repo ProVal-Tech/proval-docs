@@ -8,6 +8,8 @@ description: 'Stores an HTML-formatted information of User Profiles. Data is pop
 tags: ['report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-25
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Stores an HTML-formatted information of User Profiles. Data is populated via the
 
 ## Sample Screenshot
 ![SampleRun1](../../../static/img/docs/8e0adb65-9df6-4bbf-a1d9-4a32650776aa/image1.webp)
+
+## Changelog
+
+### 2025-12-18
+
+- Initial version of the document

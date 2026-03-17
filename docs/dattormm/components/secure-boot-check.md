@@ -8,6 +8,8 @@ description: 'This Component checks if secure boot is enabled or not.'
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-09
 ---
 
 ## Overview
@@ -32,3 +34,9 @@ Import the [attached component](../../../static/attachments/secure-boot-check.cp
 ## Attachments
 
 [Secure Boot Check](../../../static/attachments/secure-boot-check.cpt)
+
+## Changelog
+
+### 2025-06-02
+
+- Initial version of the document

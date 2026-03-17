@@ -8,6 +8,8 @@ description: 'Sets the custom message displayed to users when prompting for a re
 tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-26
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Sets the custom message displayed to users when prompting for a reboot. Keep it 
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/96249acb-33f6-42ac-bcc1-d37266533397/image1.webp)
+
+## Changelog
+
+### 2025-12-19
+
+- Initial version of the document

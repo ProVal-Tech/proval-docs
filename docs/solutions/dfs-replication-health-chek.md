@@ -8,6 +8,8 @@ description: 'Triggers an alert when any errors are detected in DFS Replication 
 tags: ['auditing','eventlogs','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Purpose
@@ -45,3 +47,9 @@ A: Alerts are triggered if any DFS Replication errors or warnings are detected o
 
 **Q5: Can this solution detect and fix all DFS replication issues?**  
 A: It detects errors and warnings logged in the DFS Replication event log and checks the replication state, but **does not** fix replication issues automatically. Manual intervention or additional troubleshooting may be required.
+
+## Changelog
+
+### 2025-10-07
+
+- Initial version of the document

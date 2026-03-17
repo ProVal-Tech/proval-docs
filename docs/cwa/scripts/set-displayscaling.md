@@ -8,6 +8,8 @@ description: 'This document provides a script to set custom display scaling on e
 tags: ['performance', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ This script sets custom display scaling on existing as well as new users for Win
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

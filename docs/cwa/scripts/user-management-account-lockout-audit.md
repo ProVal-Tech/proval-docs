@@ -8,6 +8,8 @@ description: 'This document provides details on a script that audits locked acco
 tags: ['database', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ Examples:
 - Script log
 - plugin_proval_account_lock
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

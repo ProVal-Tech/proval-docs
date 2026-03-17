@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the process to set b
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ The process involves setting both CFs to 0 for ease of implementation, as empty 
 ## Output
 
 The expected output is the updated Custom Fields.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

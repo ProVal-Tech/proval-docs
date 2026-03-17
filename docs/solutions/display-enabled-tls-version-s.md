@@ -8,6 +8,8 @@ description: 'This document outlines the procedure to display the enabled TLS ve
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -29,3 +31,9 @@ The purpose of this solution is to display the enabled client and server (if app
 - Import both remote monitors to the applicable groups. (Follow the private articles linked to the remote monitor's documents).
 - Import the dataview.
 - Perform a group refresh or wait for 30 minutes to ensure that the dataview starts displaying the expected data.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

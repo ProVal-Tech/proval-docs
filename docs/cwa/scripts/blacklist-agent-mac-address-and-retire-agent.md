@@ -8,6 +8,8 @@ description: 'This document describes a script that blacklists the MAC address o
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -53,3 +55,9 @@ Once the MAC address has been added to the blacklist, the script will move the a
 
 - Script log messages
 - Agent MAC address blacklist
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

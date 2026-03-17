@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a monitor designed to
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This script is only targeted to one machine to fetch the application's latest ve
 ## Implementation
 
 1. Import the monitor using the ProSync Plugin.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the denied cumulativ
 tags: ['patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-03-25
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ This dataview displays the list of denied cumulative updates in the environment.
 | Approval Policy Count | Number of Approval Policies it is denied into.                |
 | Approval Policies    | Name of the approval policies where the patch is denied          |
 | Affected computers    | Number of devices on which this patch is denied                 |
+
+## Changelog
+
+### 2025-03-12
+
+- Initial version of the document

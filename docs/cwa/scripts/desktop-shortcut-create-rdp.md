@@ -8,6 +8,8 @@ description: 'This document explains how to create an RDP shortcut on the deskto
 tags: ['networking', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This document describes a script that creates an RDP shortcut on the desktop of 
 - RDP shortcut on the user's desktop:
   ![Shortcut Image 1](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_2_1.webp)
   ![Shortcut Image 2](../../../static/img/docs/1575f234-039a-4d1c-a4e5-ce0656e82c4f/image_3_1.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

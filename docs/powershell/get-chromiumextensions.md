@@ -8,6 +8,8 @@ description: 'Documentation for the Get-ChromiumExtensions command to gather inf
 tags: ['chrome', 'software', 'web-browser']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -68,3 +70,9 @@ IsDefault               NoteProperty bool IsDefault=False
 ExtensionVersion        NoteProperty string ExtensionVersion=1.12.2
 UserProfilePath         NoteProperty System.String UserProfilePath=C:\\Users\\localadmin
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

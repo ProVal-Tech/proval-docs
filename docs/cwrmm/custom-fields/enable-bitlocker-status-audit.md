@@ -8,6 +8,8 @@ description: 'Select the Operating System to Enable BitLocker Status Audit. BitL
 tags: ['bitlocker', 'security', 'auditing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Select the Operating System to Enable BitLocker Status Audit. BitLocker status a
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/c917557c-89d3-4487-a5f1-56ffd0fdac9c/image1.webp)
+
+## Changelog
+
+### 2025-09-01
+
+- Initial version of the document

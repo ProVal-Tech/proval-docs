@@ -8,6 +8,8 @@ description: 'This dataview assists in auditing control sessions by tracking ess
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ This dataview helps you audit control sessions by tracking details such as parti
 | ConnectedTime     | Displays the time when the participant connected to the session. |
 | DisconnectedTime   | Displays the time when the participant disconnected from the session. |
 | Duration          | Displays the total duration of the connected session.      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

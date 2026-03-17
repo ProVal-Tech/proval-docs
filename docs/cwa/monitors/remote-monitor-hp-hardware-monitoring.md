@@ -8,6 +8,8 @@ description: 'This document outlines the configuration and implementation detail
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -47,3 +49,9 @@ The monitor set should be limited to the `HP Servers` search.
 
 **Body:** `HP Hardware Monitoring has detected an issue with %Computername% at %clientname%. The message details are outlined below:  
 %RESULT%`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

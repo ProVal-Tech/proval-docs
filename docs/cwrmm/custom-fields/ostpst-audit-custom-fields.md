@@ -8,6 +8,8 @@ description: 'This document provides detailed information about the custom field
 tags:  ['microsoft365','office','windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This document provides detailed information about the custom fields associated w
 ![Outlook Data File Paths](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image1.webp>)
 ![Outlook Data File Size](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image2.webp>)
 ![Outlook Data File LWT](<../../../static/img/docs/3eff4a8c-36c3-4fb4-9405-d6ca238b9e05/image3.webp>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

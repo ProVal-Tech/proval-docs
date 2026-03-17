@@ -8,6 +8,8 @@ description: 'This document outlines a script that retrieves API keys from the c
 tags: ['api', 'security', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-30
 ---
 
 ## Summary
@@ -109,3 +111,9 @@ A: Dependencies and errors are as follows:
 - [MAINTENANCEMODEBULK_-_POST_1_.pdf](/attachments/itg/16557697/MAINTENANCEMODEBULK_-_POST_1_.pdf)
 - [REPORTS_-_GET_DATA_(1)_(1).pdf](/attachments/itg/16557697/REPORTS_-_GET_DATA_(1)_(1).pdf)
 - [REQUESTS_-_GET_(1)_(1).pdf](/attachments/itg/16557697/REQUESTS_-_GET_(1)_(1).pdf)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

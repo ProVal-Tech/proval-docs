@@ -8,6 +8,8 @@ description: 'This document outlines the role used to view the status of FileVau
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This role is used to view the status of FileVault on Mac agents.
 | Detection String         | Comparator | Result               | Applicable OS |
 |-------------------------|------------|----------------------|----------------|
 | `%@fdesetup status@%`   | Contains   | FileVault is On      | Mac            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

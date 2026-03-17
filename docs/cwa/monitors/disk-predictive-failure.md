@@ -8,6 +8,8 @@ description: 'This document outlines the setup of a disk health monitor for Wind
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 Windows Machines: This should be run on all the Windows machines covered under the Service Plans.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

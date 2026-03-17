@@ -8,6 +8,8 @@ description: 'This document provides a method to identify machines where command
 tags: ['connectwise', 'recovery', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ It suggests restarting the agent, services, and/or the Automate server as potent
 ## Target
 
 - Global
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

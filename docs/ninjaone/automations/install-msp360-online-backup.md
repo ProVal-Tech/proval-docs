@@ -8,6 +8,8 @@ description: 'Installs the MSP360 PowerShell module and the MSP360 Online Backup
 tags: ['backup', 'application', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-25
 ---
 
 ## Overview
@@ -37,3 +39,9 @@ Installs the MSP360 PowerShell module and the MSP360 Online Backup Agent (MBSAge
 
 - Activity Details  
 - Custom Field
+
+## Changelog
+
+### 2025-08-19
+
+- Initial version of the document

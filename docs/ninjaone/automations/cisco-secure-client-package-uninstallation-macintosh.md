@@ -8,6 +8,8 @@ description: 'Uninstalls all Cisco Secure Client modules from macOS systems usin
 tags: ['uninstallation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-11
 ---
 
 ## Overview
@@ -28,4 +30,10 @@ Uninstalls all Cisco Secure Client modules from macOS systems using the built-in
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the best practices for hardening ConnectWis
 tags: ['firewall', 'permissions', 'security', 'tls']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 *Most of these settings apply to the ScreenConnect Server as well: [Hardening ConnectWise ScreenConnect](/docs/bd187550-7a42-4a72-b872-2a95ce698891)*
@@ -191,3 +193,9 @@ Accessing features of the ConnectWise Control solution requires the user to be a
 ![image](/img/docs/b356a7ff-5336-480e-830c-476bee44cb98/image1.webp)
 
 *Original CW Documentation: [Automate Comprehensive Best Practice Guide](https://university.connectwise.com/content/userdocs/business_knowledge/Automate_Comprehensive_Best_Practice_Guide.pdf)*
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

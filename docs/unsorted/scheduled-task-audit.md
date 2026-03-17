@@ -45,3 +45,9 @@ This script creates a table named "plugin_proval_scheduled_tasks" to store the s
 - plugin_proval_scheduled_tasks
 - Data view
 - etc.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

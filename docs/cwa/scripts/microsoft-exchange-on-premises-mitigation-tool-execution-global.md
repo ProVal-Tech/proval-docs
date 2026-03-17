@@ -8,6 +8,8 @@ description: 'This document describes a script designed to run the Exchange on-p
 tags: ['cve', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This script helps to run the Exchange on-premise mitigation tool provided by Mic
 
 - Script log
 - Log file named `msert.log`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details a script designed to manage local admin grou
 tags: ['cleanup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -115,3 +117,13 @@ The script attempted to ensure that the approved users/groups (@Approved_Members
 
 **Note:** Set a Ticket Category to the [ProVal - Production - Local Admin Group Cleanup](/docs/d49db584-9380-486d-a179-c014352f8be1) monitor set to enable the ticket creation feature of the script.  
 ![Ticketing Note](../../../static/img/docs/e228540f-e4f4-4e67-801f-cdff876f955f/image_12.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
+
+### 2025-03-11
+
+- Updated the script to add user back to local users group after removing it from local admins group.

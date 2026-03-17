@@ -8,6 +8,8 @@ description: 'This solution is designed to configure the automatic deployment of
 tags: ['deployment', 'security', 'windows']
 draft: False
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Purpose
@@ -101,3 +103,9 @@ These values are retrieved dynamically at runtime by the deployment scripts.
 **Q. Does this require user interaction?**
 
 **A.** No. The deployment runs silently in the background via NinjaOne automations and does not require any user interaction.
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

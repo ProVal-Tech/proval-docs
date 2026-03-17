@@ -8,6 +8,8 @@ description: 'Compares the number of installed Cisco Secure Client modules with 
 tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-11
 ---
 
 ## Overview
@@ -35,4 +37,10 @@ Compares the number of installed `Cisco Secure Client` modules with the number o
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a Dataview desi
 tags: ['performance', 'report', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ This Dataview provides patching information for devices online within the last 3
 | Total Per Machine                  | Displays the number of patches per machine that have been online in the last 30 days                 |
 | Total Missing Unfiltered           | Displays the number of patches that are unfiltered                                                   |
 | Reviewed Patch Count               | Displays the total number of patches that have gone through the approval process                     |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

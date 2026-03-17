@@ -8,6 +8,8 @@ description: 'A comprehensive Windows system repair script that checks and resto
 tags: ['windows', 'recovery', 'diagnostic', 'cleanup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -98,3 +100,9 @@ Verification 100% complete.
 
 Windows Resource Protection did not find any integrity violations.
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'The "ImmyBot Installer ID" is a specific identifier used during th
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-12
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This custom field stores the  "ImmyBot Installer ID" which is a specific identif
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/9f10ae6a-e898-4bc6-95cb-946c77abdf2e/image1.webp)
+
+## Changelog
+
+### 2025-08-04
+
+- Initial version of the document

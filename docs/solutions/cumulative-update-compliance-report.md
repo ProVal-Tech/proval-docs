@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of dataviews to present 
 tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -62,3 +64,9 @@ The purpose of the dataviews included in this solution is to present the cumulat
 8. Remove the following scripts:
    - [MySQL - Table - Create (plugin_proval_windows_os_support)](/docs/09d6c579-dbce-4876-81aa-0ab7cf5432b1)
    - [MySQL - View - Create (pvl_cu_compliance)](/docs/c2b0a6aa-75cd-4711-80b6-de9bcfe8ea33)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document details the Office Scrub utility script that automat
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ Based on the version input by the technician, the script will jump to the approp
 
 - Script log
 - Local file on the computer
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

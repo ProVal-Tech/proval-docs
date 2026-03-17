@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -23,3 +25,6 @@ unlisted: false
 ## Compound Condition Creation 
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/_template.toml)
+
+
+## Changelog

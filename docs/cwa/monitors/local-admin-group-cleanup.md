@@ -8,6 +8,8 @@ description: 'This document outlines the internal monitor that detects Windows c
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -25,3 +27,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Local Admin Group Cleanup`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

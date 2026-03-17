@@ -8,6 +8,8 @@ description: 'This script allows you to reboot a machine only if it falls within
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -40,3 +42,9 @@ This script will reboot a machine, but only if it is within a preconfigured time
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

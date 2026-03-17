@@ -8,6 +8,8 @@ description: 'When enabled, Duo authentication is required only for remote login
 tags: ['security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -109,3 +111,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/1bef21cf-30ae-4f56-ab2b-8f2b6165806a/image5.webp)
+
+## Changelog
+
+### 2025-04-14
+
+- Initial version of the document

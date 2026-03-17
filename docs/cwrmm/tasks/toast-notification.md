@@ -8,6 +8,8 @@ description: 'This task is to create and manage toast notifications with customi
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -843,3 +845,17 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-08-14
+
+- Added a Run Script button where a PowerShell script can be triggered via a button click within the notification. And now the dismiss button is optional and can be excluded. Notifications can be shown with or without any buttons. Also, added a feature where on clicking Learn More button, it will send a prompt again. Earlier, on clicking on `Learn More` button, the prompt used to vanish. New Parameters:RunScriptButton, RunScriptButtonText, ScriptPath, ScriptContext, ScriptStyle, HideDismissButton
+
+### 2025-04-16
+
+- Added MaxOccurences parameter that specifies the maximum number of notifications to send before the scheduled task is automatically removed. This works in conjunction with the @Repeat@ parameter, except when @Repeat@ is set to Once.
+
+### 2025-02-27
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a script that sets the maintenance mode for
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ The script sets maintenance mode for 60 minutes on the agent.
 ## Process
 
 - The script runs a default Automate function to set the maintenance mode on the target machine.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This dataview displays the WiFi Profiles information for each comp
 tags: ['setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-03
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ This dataview displays WiFi Profiles information for each computer fetched by th
 | Is Connected          | Is the computer actively using it or not                 |
 | Last Logged In User             | User that logged in recently |
 | Script Run Time        | Data collection time                                    |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

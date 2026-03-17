@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on how to set up a rem
 tags: ['active-directory', 'sql']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Step 1
@@ -117,3 +119,9 @@ Now execute your query from a RAWSQL monitor set.
 
 ## Step 6
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

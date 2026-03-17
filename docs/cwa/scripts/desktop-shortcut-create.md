@@ -8,6 +8,8 @@ description: 'This document provides a guide on how to create a desktop shortcut
 tags: ['setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ This document explains how to create a desktop shortcut for all users.
 ## Process
 
 Please reference the agnostic documentation for the process.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This script identifies the first active network adapter that is up
 tags: ['dhcp','dns','custom-fields','networking']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Overview
@@ -35,3 +37,9 @@ This script identifies the first active network adapter that is up, has an IPv4 
 
 - Activity Details  
 - Custom Fields
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

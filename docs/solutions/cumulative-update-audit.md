@@ -8,6 +8,8 @@ description: ''
 tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ Create the following group:
 
 **Q.** Can the automations be executed manually and independently of the deployment custom fields?  
 **A.** Yes, the automations can be executed manually without relying on the deployment custom fields. If deployment is not enabled or the machine is excluded, the scripts can still be run manually to perform the desired actions.
+
+## Changelog
+
+### 2025-08-13
+
+- Initial version of the document

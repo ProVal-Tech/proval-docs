@@ -8,6 +8,8 @@ description: 'This script performs the installation/upgrade of the DUO Desktop t
 tags: ['software', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-14
 ---
 
 ## Summary
@@ -75,3 +77,9 @@ This script is designed to run on demand, or as an autofix auto-deployment as we
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-05-13
+
+- Initial version of the document

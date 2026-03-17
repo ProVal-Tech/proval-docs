@@ -8,6 +8,8 @@ description: 'This document outlines how to identify and remove additional Scree
 tags: ['screenconnect']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -27,3 +29,9 @@ Global
 ## Alert Template
 
 **Name:** `△ Custom - Remove Additional ScreenConnect Clients`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

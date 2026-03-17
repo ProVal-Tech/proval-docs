@@ -8,6 +8,8 @@ description: 'Provides an overview of the workstations cumulative update complia
 tags: ['compliance', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -96,3 +98,9 @@ For workstations appearing in the "Device Patch Status" list with a high "Days S
 > Click this image to view full report
 
 [![Sample](../../../static/img/docs/bbeeb6dd-3c9b-49f0-ae6d-ef6f543d2174/image1.webp)](../../../static/attachments/6dd7be85-8983-413b-8f56-1426446f25da/cu-compliance-workstations-sample.pdf)
+
+## Changelog
+
+### 2026-01-02
+
+- Initial version of the document

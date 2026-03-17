@@ -8,6 +8,8 @@ description: 'This document details a script for notifying users about upcoming 
 tags: ['alerting', 'email', 'security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -221,3 +223,9 @@ If you believe the password has already been changed or that this is a false ale
 
 Sample:  
 ![Default Email Address](../../../static/img/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432/image_10.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

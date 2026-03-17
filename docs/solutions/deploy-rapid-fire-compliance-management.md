@@ -8,6 +8,8 @@ description: 'This document outlines the process to deploy the Rapid Fire Compli
 tags: ['compliance', 'deployment', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -37,3 +39,9 @@ This solution is built to deploy the Rapid Fire Compliance Management software, 
      - [Internal Monitor - Agents Missing Rapid Fire Compliance Manager](/docs/c9e3891e-1588-4dbc-85eb-dc39a861a433)
        - Set up with the "`△ Custom - Execute Script - Deploy Rapid Fire`" alert template.
        - Right-click and select Run Now to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script designed to retriev
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ This script provides detailed information about the TPM configuration on the end
 - Script log
 - Script state
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

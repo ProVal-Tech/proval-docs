@@ -8,6 +8,8 @@ description: 'Documentation for the Test-InternetSpeed command to run an interne
 tags: ['networking', 'performance', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -39,3 +41,9 @@ result       : @{id=00000000-0000-0000-0000-000000000000; url=https://www.speedt
 downloadMbps : 924.245952
 uploadMbps   : 935.860104
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: ''
 tags: []
 draft: true
 unlisted: false
+last_update:
+  date: 2025-09-01
 ---
 
 ## Purpose
@@ -27,3 +29,5 @@ Describe how to implement this solution. Is there any manual configuration that 
 ## FAQ
 
 <!-- Add frequently asked questions here -->
+
+## Changelog

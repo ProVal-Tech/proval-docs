@@ -8,6 +8,8 @@ description: 'This document details a modified script for the Webroot Plugin ins
 tags: ['connectwise', 'installation', 'registry', 'security', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Document the various variables in the script. Delete any section that is not rel
          - Install for Mac, verify, then exit.
       2. Windows
          - Install for Windows, verify, and exit.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

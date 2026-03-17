@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor designed to retrieve infor
 tags: ['networking', 'ticketing', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ The monitor set is available for import in our (ProVal's) Development environmen
 ## How to Import
 
 Please adhere to the guidelines provided in the article [Import - Remote Monitor - DHCP Scope(s) \< 5 IP Addresses Available](/docs/81c88531-4918-4d74-ac84-efbc2c3cfe51)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

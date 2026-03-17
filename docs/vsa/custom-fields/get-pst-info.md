@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for updating custom fields vi
 tags: ['software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ Custom fields are updated by the agent procedure of this solution.
 | Field Name         | Type of Field (Machine or Organization) | Description            |
 |--------------------|-----------------------------------------|------------------------|
 | cPVAL PST File     | Machine                                 | Used for PST location  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

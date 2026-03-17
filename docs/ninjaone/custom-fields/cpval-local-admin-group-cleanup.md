@@ -8,6 +8,8 @@ description: 'Select the operating system to activate the local admin group clea
 tags: ['cleanup', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-06
 ---
 
 ## Summary
@@ -114,3 +116,9 @@ Click the `Create` button to create the `Custom Field`.
 ## Example
 
 ![Image5](../../../static/img/docs/d39ab865-2fad-461f-8c39-6540e0199b8e/image5.webp)
+
+## Changelog
+
+### 2025-06-05
+
+- Initial version of the document

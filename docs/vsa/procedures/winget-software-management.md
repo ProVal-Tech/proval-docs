@@ -8,6 +8,8 @@ description: 'This document outlines a suite of 5 agent procedures designed for 
 tags: ['installation', 'software', 'uninstallation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -88,3 +90,9 @@ Utilizes Agnostic Content [SWM - Software Management - Powershell - Invoke-Winge
 - Agent Procedure Log
 - Log Files Exported to GetFiles
 - Export JSON Exported to GetFiles and present on endpoint in `%ProgramData%/_automation/AgentProcedure/wingetprocessor`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

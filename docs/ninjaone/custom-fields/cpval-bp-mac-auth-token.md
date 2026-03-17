@@ -8,6 +8,8 @@ description: 'Holds the Blackpoint macOS authorization token for agent deploymen
 tags: ['security','custom-fields','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Stores the Blackpoint MacOS Authorization Token, which is required for automated
 ## Sample Screenshot
 
 ![Companyexe](../../../static/img/docs/7537a07a-9dda-4302-8ef4-b66ae94df2b8/token-mac.webp)
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

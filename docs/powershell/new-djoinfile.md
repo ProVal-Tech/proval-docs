@@ -8,6 +8,8 @@ description: 'Documentation for the New-DJoinFile command to create a new Djoin 
 tags: ['active-directory', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -40,3 +42,9 @@ This will create a file named `Dev-Win10-2-OfflineJoin.txt` in the working direc
 
 **Console:**
 - Djoin.exe command results.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

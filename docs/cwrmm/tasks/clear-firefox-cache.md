@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on how to clear the Gecko 
 tags: ['application', 'logging']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -120,4 +122,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ## Output
 
 - Script Log  
-![Output Image](../../../static/img/docs/b4921df9-1b7e-439a-80b9-28ca3d58f506/image_19.webp)  
+![Output Image](../../../static/img/docs/b4921df9-1b7e-439a-80b9-28ca3d58f506/image_19.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

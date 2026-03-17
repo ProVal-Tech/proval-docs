@@ -8,6 +8,8 @@ description: 'By default, the Huntress Organization key is the name of the Organ
 tags: ['antivirus', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -94,3 +96,9 @@ Fill in the following information in the `Details` section and click the `Create
 ## Example
 
 ![Image4](../../../static/img/docs/a746555d-f311-449f-ace0-c8a3b67a2ba4/image4.webp)
+
+## Changelog
+
+### 2025-04-11
+
+- Initial version of the document

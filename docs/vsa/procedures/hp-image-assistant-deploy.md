@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for deploying HP Image Assist
 tags: ['installation', 'networking', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -62,4 +64,10 @@ C:/HPIA
 
 Line 10 is where the HP commands are customized.  
 Available Commands (Starting at page 20): [HPIA User Guide](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/HPIAUserGuide.pdf)  
-The procedure is set to a default of: /Operation:Analyze /Category:All /selection:All /action:download /silent /AutoCleanup /reportFolder:c:/HPIA/Report /softpaqdownloadfolder:"C:/Windows/temp"  
+The procedure is set to a default of: /Operation:Analyze /Category:All /selection:All /action:download /silent /AutoCleanup /reportFolder:c:/HPIA/Report /softpaqdownloadfolder:"C:/Windows/temp"
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

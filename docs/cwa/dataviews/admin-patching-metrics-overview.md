@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the patching-re
 tags: ['database', 'patching', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The SQL query filters the results for the patch-managed computers only. Removing
 | Missing Per Workstation    | Average number of missing patches per workstation                                                                   |
 | Patching Policy           | Patching Policy (Managed | Unmanaged). By default, the dataview will display the data for the patch-managed computers only |
 | Sort                      | A custom column to sort the dataview in proper order (Hidden)                                                      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

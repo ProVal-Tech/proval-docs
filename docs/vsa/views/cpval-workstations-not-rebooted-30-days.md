@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a view that displays
 tags: ['database', 'performance', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 # Summary
@@ -33,3 +35,9 @@ Below are the filters applied to this view:
 Please attach the content XML VSA Export to this document.
 ## Attachments
 [cPVAL___Workstations_Not_Rebooted_30__Days.xml](<../../../static/attachments/itg/10913901/cPVAL___Workstations_Not_Rebooted_30__Days.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

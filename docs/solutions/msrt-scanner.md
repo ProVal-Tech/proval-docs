@@ -8,6 +8,8 @@ description: 'This document outlines a solution for performing MSRT scanning, in
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -44,3 +46,9 @@ This solution performs MSRT scanning, auto-fixes detected infections as an optio
      ED06AECD5686944B0A5E5D76C1E7A9EA
      C8759C7E4979819C0BB39DAF4DC64124
      ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

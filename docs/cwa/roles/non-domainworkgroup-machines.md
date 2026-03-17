@@ -8,6 +8,8 @@ description: 'This document outlines a PowerShell script that detects machines t
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -23,3 +25,9 @@ This role will detect machines that are not joined to a domain.
 ```powershell
 $ErrorActionPreference='SilentlyContinue'; $DSRegStatus = dsregcmd.exe /status; @('False','True')[($DSRegStatus -like '*AzureAdJoined : NO*') -and ($DSRegStatus -like '*EnterpriseJoined : NO*') -and ($DSRegStatus -like '*DomainJoined : NO*')]
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

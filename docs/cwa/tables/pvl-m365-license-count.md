@@ -8,6 +8,8 @@ description: 'The custom table stores the data fetched by the Office 365 License
 tags:  ['office365','update','windows','software']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-20
 ---
 
 ## Purpose
@@ -32,3 +34,9 @@ The custom table stores the data fetched by the [Office 365 License Count](/docs
 | Available          | int      | Available licenses       |
 | AppliesTo          | varchar  | License applied to       |
 | DataCollectionTime | datetime | Data Collection Time     |
+
+## Changelog
+
+### 2026-01-20
+
+- Initial version of the document

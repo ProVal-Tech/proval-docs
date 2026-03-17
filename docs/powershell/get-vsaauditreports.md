@@ -8,6 +8,8 @@ description: 'Documentation for the Get-VSAAuditReports command to perform a Kas
 tags: ['report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -93,3 +95,9 @@ Location of output for log, result, and error files:
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementByAgentStats.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\SoftwareManagementDeploymentProfiles.csv`
 - `$env:ProgramData\_automation\Audit\CSVs\Users.csv`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

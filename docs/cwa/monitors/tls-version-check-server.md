@@ -8,6 +8,8 @@ description: 'This document outlines the setup and usage of a remote monitor des
 tags: ['exchange', 'iis', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ Wherever you would like to audit the TLS server version.
 ## How to Import
 
 [Import - Remote Monitor - TLS Version Check - Server](/docs/b08343d9-9d4b-4edd-92e2-5941c23d8e43)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

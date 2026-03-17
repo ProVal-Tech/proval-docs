@@ -8,6 +8,8 @@ description: 'This remote monitor automatically configures Mozilla Firefox to cl
 tags: ['browsers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-29
 ---
 
 ## Summary
@@ -139,3 +141,9 @@ Now execute your query from a RAWSQL monitor set.
 ### Step 5
 
 Locate your remote monitor by opening the group(s) remote monitors tab.
+
+## Changelog
+
+### 2025-05-23
+
+- Initial version of the document

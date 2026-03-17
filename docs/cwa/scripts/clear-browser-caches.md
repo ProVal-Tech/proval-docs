@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of a script design
 tags: ['browsers', 'cleanup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-17
 ---
 
 ## Summary
@@ -28,8 +30,8 @@ This script will clear the caches for the following browsers:
 
 ## Sub-Scripts
 
-- [SWM - Software Configuration - Automate - Script - Chromium Caches - Clear](/docs/1edcec5e-4e2d-4edf-b670-1bb81643b4e3)
-- [SWM - Software Configuration - Automate - Script - Gecko Cache - Clear](/docs/b0f8d2f8-6688-4c91-990a-041ad2e9bd3e)
+- [Script - Chromium Caches - Clear](/docs/1edcec5e-4e2d-4edf-b670-1bb81643b4e3)
+- [Script - Gecko Cache - Clear](/docs/b0f8d2f8-6688-4c91-990a-041ad2e9bd3e)
 
 #### User Parameters
 
@@ -40,3 +42,9 @@ This script will clear the caches for the following browsers:
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

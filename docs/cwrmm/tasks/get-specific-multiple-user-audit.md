@@ -8,6 +8,8 @@ description: 'This script is designed to get the specific or multiple user(s) in
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -194,3 +196,9 @@ and click the `Save` button.
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

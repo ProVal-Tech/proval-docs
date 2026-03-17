@@ -8,6 +8,8 @@ description: 'This document outlines the process for executing a scheduled task 
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Managed Windows Workstations
 **Name**: `△ CUSTOM - Execute Script - Scheduled Task - Create - Winget Update All`
 
 The alert template executes the [Script - Scheduled Task - Create - Winget Update All [Autofix]](/docs/4bb08610-f80b-4c5a-8e13-b6db095484c1)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides detailed instructions for the deployment an
 tags: ['deployment', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This solution contains the Network Glue deployment and uninstallation articles.
      - [Internal Monitor - ProVal Production - Network Glue - Deployment](/docs/4e0f7314-bf88-44de-a162-139c191e6e09)  
        - Set up with the "△ Custom - Execute Script - Network Glue Collector - Install" Alert Template
        - Right-click and select "Run Now" to start the monitor.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

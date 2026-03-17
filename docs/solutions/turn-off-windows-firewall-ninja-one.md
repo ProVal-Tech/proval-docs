@@ -8,6 +8,8 @@ description: 'A comprehensive solution for managing Windows Firewall settings ac
 tags: ['security', 'firewall', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Purpose
@@ -101,3 +103,9 @@ A: Yes, set the custom field to "Windows Workstation" only at the desired config
 A: Yes, the solution manages all Windows Firewall profiles (Domain, Private, and Public) simultaneously.
 
 **Important Security Note:** Disabling Windows Firewall reduces network security protection. Only implement this solution in environments where alternative security measures (such as network-level firewalls) are in place. Always test thoroughly before widespread deployment and maintain the ability to quickly re-enable protection if needed.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

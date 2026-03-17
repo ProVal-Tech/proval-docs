@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of the Active Directory
 tags: ['active-directory', 'report', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This Dataview displays any machines found within the Active Directory integratio
 | Parent DN                | Displays whether the Parent DN is enabled or disabled |
 | Object Classes           | Displays the object class of the machine            |
 | Object Type              | Displays the object type of the machine             |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

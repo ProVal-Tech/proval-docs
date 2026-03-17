@@ -8,6 +8,8 @@ description: 'Disables sleep in the current Windows power plan by setting Sleep 
 tags: ['windows', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Overview
@@ -33,3 +35,9 @@ Disables sleep in the current Windows power plan by setting 'Sleep after' to Nev
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

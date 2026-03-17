@@ -8,6 +8,8 @@ description: 'Lists out the machines which has Cumulative Update Installed older
 tags: ['compliance', 'patching', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Summary
@@ -28,4 +30,10 @@ Lists out the machines which has Cumulative Update Installed older than x days.
 
 ## Group Creation
 
-- [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-cumulative-update-older-than-threshold.toml) - Replace x with the actual threshold value 
+- [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-cumulative-update-older-than-threshold.toml) - Replace x with the actual threshold value
+
+## Changelog
+
+### 2025-08-21
+
+- Initial version of the document

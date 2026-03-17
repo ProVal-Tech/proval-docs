@@ -8,6 +8,8 @@ description: 'Set the maximum password length for the local admin account. Appli
 tags: ['accounts', 'windows', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ Set the maximum password length for the local admin account. Applies only to aut
 ## Sample Screenshot
 
 ![Image1](../../../static/img/docs/98ad71a3-d6aa-492b-ac94-71053d1c3211/image1.webp)
+
+## Changelog
+
+### 2025-12-05
+
+- Initial version of the document

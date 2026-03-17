@@ -8,6 +8,8 @@ description: 'This document details the implementation of the Invoke-VcRedistMod
 tags: ['software', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ An Automate implementation of the [Invoke-VcRedistModule](/docs/217e0b39-3b42-40
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

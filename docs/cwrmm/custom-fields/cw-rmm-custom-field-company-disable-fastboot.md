@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of how to enable the so
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,3 +26,9 @@ Check this box to enable the solution to disable fastboot on the client's Window
 
 ![Screenshot 1](../../../static/img/docs/9c1d0f0a-7ae4-46bd-a9a7-ae15df2ca633/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/9c1d0f0a-7ae4-46bd-a9a7-ae15df2ca633/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a guide on how to download and execute Setu
 tags: ['email', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -39,3 +41,9 @@ Download (if necessary) and execute [SetupDiag.exe](https://learn.microsoft.com/
 Outputs to a variable (`SetupDiagResult`) that can be referenced in parent scripts.
 
 See [Invoke-SetupDiag](/docs/43e03fcc-e736-4d19-b231-76403f71c4e2) for additional output information.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

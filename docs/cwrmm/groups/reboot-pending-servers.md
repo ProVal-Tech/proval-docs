@@ -8,6 +8,8 @@ description: 'This document outlines the configuration and details for the Reboo
 tags: ['reboot', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-18
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This group contains the server endpoints where a reboot is pending. It detects o
 - The agent `Available` equals `True`.
 - The `OS` contains any of `Windows 2016`, `Windows 2019`, or `Windows 2022`.
 - The `Exclude reboot` custom field equals `False`.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

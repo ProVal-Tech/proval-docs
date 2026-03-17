@@ -8,6 +8,8 @@ description: 'A comprehensive solution for identifying and removing specified bl
 tags: ['windows', 'security', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-17
 ---
 
 ## Purpose
@@ -110,3 +112,9 @@ A: Yes, set the [cPVAL Remove Bloatware](/docs/4eef200f-a609-4993-9533-b7fce30b2
 A: The compound conditions run continuously, monitoring for specified bloatware applications and applying remediation when detected.
 
 **Important Note:** Carefully test your bloatware list before widespread deployment. Ensure you are not removing applications that are required for business operations or user productivity. Always maintain the ability to quickly reverse the removal if needed.
+
+## Changelog
+
+### 2025-09-17
+
+- Initial version of the document

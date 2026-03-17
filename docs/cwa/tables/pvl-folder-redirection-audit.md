@@ -8,6 +8,8 @@ description: 'This table is build to store the folder redirection of users of th
 tags: ['smb', 'networking', 'windows', 'backup', 'security', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Purpose
@@ -27,3 +29,9 @@ This table is build to store the folder redirection of users of the computers ob
 | FolderName      | VARCHAR  | Stores the name of the folder that was redirected                           |
 | Redirection_Path| VARCHAR  | Stores the path where the folder was redirected for a user on the computer  |
 | ScriptRanDate   | DATETIME | Stores the date and time when the folder redirection was last detected by the [Script - Folder Redirection Detection [DV]](/docs/7ed018ec-c912-4c93-9b90-c74b7b383b69) |
+
+## Changelog
+
+### 2025-04-30
+
+- Initial version of the document

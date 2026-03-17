@@ -8,6 +8,8 @@ description: 'This script automates the discovery and installation of Windows Up
 tags: ['windows', 'patching']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-30
 ---
 
 ## Description
@@ -171,3 +173,9 @@ Log and error files are generated in the script's directory:
 
 - .\Install-WindowsUpdates-log.txt  
 - .\Install-WindowsUpdates-error.txt
+
+## Changelog
+
+### 2025-06-03
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'Documentation for the Get-RecentEventLog command to retrieve event
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -64,3 +66,9 @@ Get events from the Windows event log that have triggered since the last run of 
 
 ## Output
 `System.Diagnostics.Eventing.Reader.EventLogRecord`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

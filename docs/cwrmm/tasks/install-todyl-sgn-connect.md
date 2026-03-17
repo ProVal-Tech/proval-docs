@@ -8,6 +8,8 @@ description: 'Installs the Todyl SGN Connect on Windows systems using the approp
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-09-18
 ---
 
 ## Summary
@@ -318,3 +320,9 @@ Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

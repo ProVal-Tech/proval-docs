@@ -8,6 +8,8 @@ description: 'This document outlines a method to determine the maximum software 
 tags: ['browsers', 'installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -30,3 +32,9 @@ Suggested Autofix - [CWM - Automate - Script - Chromium Browser Update](/docs/a1
 The suggested target for the monitor will be partially generalized, as group names can vary between Automate systems. Examples include:
 
 - Global - Should be run without explicitly defined targets.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

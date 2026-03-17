@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of the database t
 tags: ['database', 'installation', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-07
 ---
 
 ## Purpose
@@ -30,3 +32,9 @@ Stores the data fetched by the [Script - Get Latest Installed Cumulative Update]
 | ScriptRunTime  | datetime    | Last run time of the script                       |
 | KBid           | varchar(128)| KBID of the latest installed Cumulative Update    |
 | ReleaseDate    | date        | Release date of the latest installed Cumulative Update |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

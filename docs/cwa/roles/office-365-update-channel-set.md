@@ -8,6 +8,8 @@ description: 'This document provides details on how to identify whether an agent
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -19,3 +21,9 @@ This document outlines how to determine if an agent has an Office 365 Update Cha
 | Detection String                                          | Comparator | Result | Applicable OS  |
 |----------------------------------------------------------|------------|--------|-----------------|
 | \\\{%-HKLM/SOFTWARE/Microsoft/Office/ClickToRun/Configura... | Exists     |        | Windows OS      |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

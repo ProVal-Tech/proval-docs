@@ -8,6 +8,8 @@ description: 'This document outlines the process for restarting the Windows Upda
 tags: ['update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,4 +61,10 @@ Calls the agnostic content to force a service restart on the endpoint. Performs 
 
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-log.txt  
 - %ProgramData%/_automation/AgentProcedure/ServiceRestart/Invoke-RestartService-UNIXDATE-log.txt (archive of previous log)  
-- Agent Procedure Log  
+- Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

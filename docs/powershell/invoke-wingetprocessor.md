@@ -8,6 +8,8 @@ description: 'Documentation for the Invoke-WingetProcessor command to manage sof
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-19
 ---
 
 ## Description
@@ -172,3 +174,9 @@ Troubleshooting logs are saved to the script's directory (or the current executi
 
 * `.\Invoke-WingetProcessor-log.txt`: Standard success messages and steps.
 * `.\Invoke-WingetProcessor-error.txt`: Details on any failures or crashes.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

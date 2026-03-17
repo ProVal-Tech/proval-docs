@@ -8,6 +8,8 @@ description: 'This script automates health checks, self-healing, and conditional
 tags: ['active-directory', 'domain']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-16
 ---
 
 ## Overview
@@ -78,3 +80,9 @@ Location of output for log and error files:
 
     .\Test-ADHealthAndRepair-log.txt
     .\Test-ADHealthAndRepair-error.txt
+
+## Changelog
+
+### 2025-07-16
+
+- Initial version of the document

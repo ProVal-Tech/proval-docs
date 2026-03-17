@@ -8,6 +8,8 @@ description: 'This document outlines a script created to detect and remediate SM
 tags: ['logging', 'report', 'vulnerability', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -76,3 +78,9 @@ It is required to execute this script after importing it with the setting `SetEn
    - **Body:**  
      The vulnerability has been remediated successfully. Refer to the log information below:  
      @SMB1DisableOutput@
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

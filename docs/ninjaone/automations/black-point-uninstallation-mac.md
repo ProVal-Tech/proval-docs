@@ -8,6 +8,8 @@ description: 'This script fully removes the BlackPoint SNAP agent from macOS sys
 tags:  ['macos','security','uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Overview
@@ -27,4 +29,10 @@ This script fully removes the BlackPoint SnapAgent from MacOS systems, including
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-11-28
+
+- Initial version of the document

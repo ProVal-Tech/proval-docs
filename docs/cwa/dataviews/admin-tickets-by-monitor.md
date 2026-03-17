@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the top talkers
 tags: ['performance', 'report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -26,3 +28,9 @@ None
 | Name                      | Name of the Monitor                                 |
 | Internal                  | 1 = internal monitor; 0 = remote monitor           |
 | TicketCountLast30Days     | Total number of tickets generated in the last 30 days |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

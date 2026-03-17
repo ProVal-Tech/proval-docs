@@ -8,6 +8,8 @@ description: 'This document provides a script that allows users to bulk-clear Ma
 tags: ['connectwise']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ The script will execute the command to remove Maintenance mode from the target m
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

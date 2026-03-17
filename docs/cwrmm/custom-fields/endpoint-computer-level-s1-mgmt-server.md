@@ -8,6 +8,8 @@ description: 'This document provides an overview of the Computer Level SentinelO
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Computer Level SentinelOne Management Server. Updated by the [SentinelOne Manage
 
 ![Screenshot 1](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_1.webp)  
 ![Screenshot 2](../../../static/img/docs/cd0a8207-62e5-41ea-9df9-f9d475ee8866/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

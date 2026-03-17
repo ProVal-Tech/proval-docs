@@ -8,6 +8,8 @@ description: 'This document provides details about the Client Level SentinelOne 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -29,3 +31,9 @@ Client Level SentinelOne Management Server. Updated by [SentinelOne Management C
 ![Screenshot 1](../../../static/img/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/c92218fb-8d9d-45a7-a15b-107ada8141b8/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

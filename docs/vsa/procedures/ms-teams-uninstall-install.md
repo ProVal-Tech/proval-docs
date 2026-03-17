@@ -8,6 +8,8 @@ description: 'This document outlines the procedure for silently uninstalling the
 tags: ['installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -77,3 +79,9 @@ Agent Procedure Log
 Attach the XML VSA export content to this document.
 ## Attachments
 [Procedure_MS_Teams_Uninstall___Install.xml](<../../../static/attachments/itg/18036630/Procedure_MS_Teams_Uninstall___Install.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

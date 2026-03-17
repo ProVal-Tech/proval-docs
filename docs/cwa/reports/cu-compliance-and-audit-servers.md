@@ -8,6 +8,8 @@ description: 'Provides an overview of the servers cumulative update compliance, 
 tags: ['compliance', 'performance', 'report', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-02
 ---
 
 ## Summary
@@ -96,3 +98,9 @@ If servers appear in the "Non-Compliant Devices" list (e.g., Server 2012 R2), im
 > Click this image to view full report
 
 [![Sample](../../../static/img/docs/f2a584ea-6b77-4b95-917a-a658da7a6785/image1.webp)](../../../static/attachments/6dd7be85-8983-413b-8f56-1426446f25da/cu-compliance-servers-sample.pdf)
+
+## Changelog
+
+### 2026-01-02
+
+- Initial version of the document

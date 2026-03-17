@@ -8,6 +8,8 @@ description: 'This document provides a script designed to automate the update pr
 tags: ['software', 'ticketing', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ Suggested for use as an Autofix - [CWM - Software - Monitor - ProVal - Chromium 
 
 - Script log
 - Optional ticketing
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

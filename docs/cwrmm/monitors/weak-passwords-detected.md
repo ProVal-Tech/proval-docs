@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on implementing a monitor 
 tags: ['active-directory', 'security', 'ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ The custom field failed on %computername%
 
 **Body**  
 The custom field failed on %computername%
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

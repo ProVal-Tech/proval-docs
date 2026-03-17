@@ -8,6 +8,8 @@ description: 'This document provides detailed instructions on gathering and disp
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -75,3 +77,9 @@ Gathers and displays information about Windows user profiles.
        - Configure with the alert template: `△ Custom - Ticket Creation - Computer`
        - Right-click and Run Now to start the monitor.
      - Use the mentioned [monitor](/docs/bf518e9f-f93c-451b-a38a-5fc3472cc6f4) to exclude any domain trust relationship issues.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

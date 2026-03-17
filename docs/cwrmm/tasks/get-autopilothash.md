@@ -8,6 +8,8 @@ description: 'This the RMMM version of Automate script [Get-AutopilotHash](/docs
 tags: ['setup']
 draft: False
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -64,3 +66,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

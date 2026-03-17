@@ -8,6 +8,8 @@ description: 'This document outlines the role that determines if the Windows Fas
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ Fast Boot is a Windows 10 feature that puts the system into a deep sleep rather 
 | Detection String                                                                    | Comparator | Result | Applicable OS |
 | ----------------------------------------------------------------------------------- | ---------- | ------ | ------------- |
 | \{%-HKLM/SYSTEM/CurrentControlSet/Control/Session Manager/Power:HiberbootEnabled-%} | Equals     | 1      | Windows       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

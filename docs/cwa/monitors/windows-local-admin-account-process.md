@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and functionality of a monitor 
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 **Name:** `△ CUSTOM - Execute Script - Windows - Admin Account - Create/Update`
 
 The alert template should run the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script on the machines detected by the monitor set.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on implementing a scr
 tags: ['security', 'setup', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -165,3 +167,9 @@ In the script log message, simply type `%output%` so that the script will send t
 ## Output
 
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

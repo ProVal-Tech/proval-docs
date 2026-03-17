@@ -8,6 +8,8 @@ description: 'This document outlines a script that automates the creation of inf
 tags: ['database', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ The script executes several SQL queries.
 ## Output
 
 There is no script output. Please reload the cache and view the info base categories in the system dashboard. Review the CW Manage plugin Ticket category area.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

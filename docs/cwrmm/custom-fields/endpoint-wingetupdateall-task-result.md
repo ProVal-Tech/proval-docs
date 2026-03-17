@@ -8,6 +8,8 @@ description: 'This document describes a custom field that stores the outcome of 
 tags: ['connectwise', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Possible values:
 ![Screenshot 1](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_1.webp)
 
 ![Screenshot 2](../../../static/img/docs/a6ff85ad-b8e9-4e0f-9e2f-db964d483e5f/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

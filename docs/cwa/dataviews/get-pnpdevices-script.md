@@ -8,6 +8,8 @@ description: 'This displays the information of PnP Devices gethered by the scrip
 tags: ['database', 'installation', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 This displays the information of [PnP Devices](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/introduction-to-plug-and-play) gethered by the script [Get-PNPDevices [DV]](/docs/9d2c62e4-37a5-4d37-867c-c0cda13bdef9).
@@ -34,3 +36,9 @@ This displays the information of [PnP Devices](https://docs.microsoft.com/en-us/
 |Status |  Status of PnP devices    |
 |Class   |  Refers to the device setup class, which is a category that defines the type of hardware and its installation requirements    |
 |Last Updated |  The last time script ran updated the table.   |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

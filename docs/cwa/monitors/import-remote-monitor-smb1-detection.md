@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on implementing SMB1 
 tags: ['database', 'security', 'vulnerability']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 ## Step 1: 
 
@@ -182,3 +184,9 @@ Locate your remote monitor by opening the group(s) remote monitors tab.
 ![Remote Monitor](../../../static/img/docs/ec956fa3-ab8c-410c-83d7-9e81f4b1f499/image_1.webp)
 
 Please validate that the Alert Template is properly set to "`Default - Do Nothing`".
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

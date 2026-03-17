@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that perfor
 tags: ['logging', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -95,3 +97,9 @@ Document the various variables in the script. Delete any section that is not rel
 - `C:/Temp/SFC.Log`
 - Application Event log entry 7395 from 'Proval_Script_Monthly_SFC_Scan'
 - Ticket with all related information.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

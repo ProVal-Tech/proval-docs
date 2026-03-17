@@ -8,6 +8,8 @@ description: 'This document provides an overview of all endpoints that have unde
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -21,3 +23,9 @@ The following filters are applied to this view:
 | Filter Name                                                                                      | Advanced Filter? | Filter Value |
 |--------------------------------------------------------------------------------------------------|------------------|--------------|
 | [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070) | Yes              | NOT ""       |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

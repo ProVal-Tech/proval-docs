@@ -8,6 +8,8 @@ description: 'This document outlines the usage of the Prompter application scrip
 tags: ['application']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-14
 ---
 
 ## Summary
@@ -50,3 +52,9 @@ This script is a function script and should not be manually executed. Utilize th
 ## Output
 
 - Script Variable
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

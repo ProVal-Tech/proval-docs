@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the FileVault S
 tags: ['encryption']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview displays the FileVault Status for the MAC computers present in the
 | File Vault Script Run Time | File Vault Script Run Time                  |
 | Last Contact              | Last Contact                                |
 | Last Logon User           | Last Logon User                            |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

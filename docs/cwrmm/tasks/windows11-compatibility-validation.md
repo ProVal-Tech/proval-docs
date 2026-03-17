@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide to verify if a Window
 tags: ['windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-26
 ---
 
 ## Summary
@@ -284,3 +286,13 @@ It is suggested to run the Task once per month against [Windows 10 Machines](/do
 
 - Script Log
 - Custom Field
+
+## Changelog
+
+### 2025-06-30
+
+- The Windows 11 compatibility validation script has been updated to check for 64GB of free space. This will run in addition to the existing total space check, and they can pass/fail independently of each other.
+
+### 2025-05-02
+
+- Initial version of the document

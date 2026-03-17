@@ -8,6 +8,8 @@ description: 'Runs the "Domain Admin Account LockOut" automation every 15 minute
 tags: ['domain','active-directory']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-29
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ Runs the [Domain Admin Account LockOut](/docs/54cb9acb-d11d-4a88-a0ca-92032b46fe
 ## Condition Creation
 
 [Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/domain-admin-account-lockouts.toml)
+
+## Changelog
+
+### 2025-10-17
+
+- Initial version of the document

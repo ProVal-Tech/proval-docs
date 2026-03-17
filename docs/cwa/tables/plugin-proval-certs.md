@@ -8,6 +8,8 @@ description: 'This document outlines the SSL Certificate Audit Solution, detaili
 tags: ['database', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -36,3 +38,9 @@ This table is used in the [SSL Certificate Audit Solution](/docs/1045cfa0-257d-4
 | CertAdded      | DATETIME                                  | When was the certificate added to the system                       |
 | Expiration     | DATETIME                                  | What is the expiration date of the SSL certificate                 |
 | DateUpdated    | DATETIME                                  | When did the script actually add the information into the database  |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

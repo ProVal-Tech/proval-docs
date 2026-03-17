@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script that tests 
 tags: ['active-directory', 'report', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-10
 ---
 
 ## Summary
@@ -32,10 +34,11 @@ This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-b
 2. The machine this script is running on needs to be the Infrastructure Master Active Directory server.
 3. This script is only supported on Server 2016 and above. Server 2012 may work but has not been tested.
 
-- [EPM - Accounts - Agnostic - Script - Test-Credentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc)
+- [Agnostic - Test-Credentials](/docs/9188a8e9-ba15-45aa-9391-d412866b1ebc)
 - [AD - Create Views/Table/Schedule for AD Reporting Solution](/docs/f0b2fe2b-8bd8-4d9a-9428-2123b332aa49)
-- [EPM - Accounts - Report - Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
-- [EPM - Accounts - Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
+- [Report - Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
+- [Report - Active Directory User Assessment](/docs/71ade073-cc5c-4833-bf2c-2d8b13472078)
+- [Active Directory Reporting Solution](/docs/ca5427f7-0efe-499d-9e80-c06698efa5d0)
 
 ## User Parameters
 
@@ -55,3 +58,9 @@ This script utilizes the agnostic script [Test-WeakCredentials](/docs/9188a8e9-b
 This script is designed to output all data into the 'plugin_proval_ad_pwd_audit' table for reporting purposes. If anything fails, it will report that information to the script log.
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

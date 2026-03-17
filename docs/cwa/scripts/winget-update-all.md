@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ Please reference the agnostic content for the process.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

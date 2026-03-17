@@ -8,6 +8,8 @@ description: 'This document outlines the process for initiating a Windows 10 fea
 tags: ['security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -48,3 +50,9 @@ This process starts a job running in the background to execute [SEC - Windows Pa
 - AP Log  
 - [SEC - Windows Patching - Custom Fields - xPVAL Windows Feature Upgrade Status](/docs/1b448856-c7d6-4aed-8080-474f5650a070)  
 - PSOutput Document
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

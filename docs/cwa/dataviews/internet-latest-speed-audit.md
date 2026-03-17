@@ -8,6 +8,8 @@ description: 'This document provides a summary of the latest audited speed test 
 tags: ['database', 'performance']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -52,3 +54,9 @@ This document displays the latest audited speed test information from the last s
 | ResultURL      | The URL of the speed test result.                                            |
 | DownloadMbps   | The download speed detected in Mbps.                                         |
 | UploadMbps     | The upload speed detected in Mbps.                                           |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

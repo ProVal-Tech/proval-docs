@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and functionality of the intern
 tags: ['deployment', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-29
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ Global
 ## Alert Template
 
 `△ Custom - Deploy Huntress Agent`
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

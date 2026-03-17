@@ -8,6 +8,8 @@ description: 'Elevation Mode is a configuration parameter used during the AutoEl
 tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-16
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Elevation Mode is a configuration parameter used during the AutoElevate agent de
 ## Sample Screenshot
 
 ![Elevation Mode](../../../static/img/docs/03094753-93f5-41da-8a0a-d948b1165b88/elevationmode.webp)
+
+## Changelog
+
+### 2025-11-27
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a monitor that creates a ticket for servers
 tags: ['ticketing']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The server %COMPUTERNAME% is currently reporting that it is pending a reboot. Pl
 
 **Success:**  
 Server %COMPUTERNAME% is no longer reporting that it is pending a reboot. Closing the ticket.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

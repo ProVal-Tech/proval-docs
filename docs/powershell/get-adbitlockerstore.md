@@ -8,6 +8,8 @@ description: 'Documentation for the Get-ADBitlockerStore command to return objec
 tags: ['active-directory', 'backup', 'recovery', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -40,3 +42,9 @@ VolumeGUID              : bf089cd1-fd99-4b77-b4f6-f8f2673aa2ae
 ParentDistinguishedName : <redacted>
 ParentSID               : S-1-5-21-3684404077-2748133095-2161390432-2690
 ```
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

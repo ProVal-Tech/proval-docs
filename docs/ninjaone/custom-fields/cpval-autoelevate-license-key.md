@@ -8,6 +8,8 @@ description: 'License Key is a required parameter used during the AutoElevate ag
 tags:  ['security','application','custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ License Key is a required parameter used during the AutoElevate agent deployment
 ## Sample Screenshot
 
 ![Lisence Key](../../../static/img/docs/370d64a2-0799-48ca-9661-d24bd75b7f67/lisensekey.webp)
+
+## Changelog
+
+### 2025-12-10
+
+- Initial version of the document

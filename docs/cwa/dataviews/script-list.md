@@ -8,6 +8,8 @@ description: 'This document provides an overview of the dataview that lists all 
 tags: ['performance', 'security', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,13 @@ This dataview lists all scripts in the environment with details about their scri
 ## Example Screenshot
 
 ![Example Screenshot](../../../static/img/docs/c5c0f740-2981-4557-9fcc-dd2f863a1240/image_4.webp)
+
+## Changelog
+
+### 2025-06-20
+
+- Fixed the issue with the DV it was not displaying the correct value in the 'Edit Permission' column. It was showing either everyone or lists all user classes.
+
+### 2025-04-10
+
+- Initial version of the document

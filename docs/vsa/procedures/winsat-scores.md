@@ -8,6 +8,8 @@ description: 'This document outlines a procedure for collecting WinSAT scores on
 tags: ['performance', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -65,3 +67,9 @@ The procedure utilizes WinSAT and custom fields to store the scores of the machi
 ## Output
 
 Agent Procedure Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide on setting up a monito
 tags: ['update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ The monitor set will generate an alert for computers in which the custom field [
 
 - [CW RMM - Custom Field - Latest Cumulative Update](/docs/67416ac2-2311-43c4-8fbf-c5b0c9a48e71)
 - [CW RMM - Task - Cumulative Update Audit](/docs/685b1f1d-527a-4d66-acb2-d1329ee8a368)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

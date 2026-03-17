@@ -8,6 +8,8 @@ description: 'Todyl Deployment Key for Laptop Agents.'
 tags: ['application', 'installation', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-08-29
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Todyl Deployment Key for Laptop Agents.
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/894b9f2c-e0ac-4351-a312-f7f55865e32a/image1.webp)
+
+## Changelog
+
+### 2025-08-29
+
+- Initial version of the document

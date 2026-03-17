@@ -8,6 +8,8 @@ description: 'This solution performs the ConnectSecure v4 installation for MAC o
 tags: ['vulnerability', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-17
 ---
 
 ## Purpose
@@ -39,3 +41,9 @@ This solution performs the ConnectSecure v4 installation for MAC and Windows.
 - Create the [Compound Condition - ConnectSecure Deployment - Mac](/docs/b5472dc9-11af-4739-af78-7ef7478f6eab)
 - Select the options from the [Custom Field - cPVAL ConnectSecure Deployment](/docs/9065b847-eadf-4f4a-9021-28ef2fc0f6cf)
 options at the organization, site, and endpoint level so that the compound conditions will be activated at the MAC, Windows (Server/Workstations) level automatically to install/reinstall the latest ConnectSecure V4 on the endpoints of the organizations, sites, and endpoints where the companyid and tenantid is also provided at the [Custom Field - cPVAL ConnectSecure CompanyID](/docs/c104e227-d5f3-432b-90fa-f31186536181) and [Custom Field - cPVAL ConnectSecure TenantID](/docs/3d1a16b3-688c-4911-a92d-835a578254a9).
+
+## Changelog
+
+### 2025-12-15
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document describes an enhanced version of the default Patch A
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ This script is called by the default script "Client Scheduled Patch Accounting W
 This script will add the time to the ticket created.
 
 ![Output Image](../../../static/img/docs/53163c7a-3281-4825-ba22-4e22c8c5b35e/image_2.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

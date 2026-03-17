@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to reboot endpoints based
 tags: ['custom-fields']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -330,3 +332,9 @@ For example:
 ## Output
 
 - Task & Sequences Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

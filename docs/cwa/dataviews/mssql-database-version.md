@@ -8,6 +8,8 @@ description: 'This document provides an overview of the version and patch level 
 tags: ['database', 'report', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-08
 ---
 
 ## Summary
@@ -37,3 +39,9 @@ The data view showcases the version and patch level details of MSSQL Servers, ac
 | MSSQL Version        | Version of the MSSQL Instance (Database Version)                 |
 | MSSQL Patch Level    | Patch Level of the MSSQL Instance                                 |
 | Data Collection Time  | Data Collection Time                                              |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

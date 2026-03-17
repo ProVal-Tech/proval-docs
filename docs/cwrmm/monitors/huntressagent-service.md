@@ -8,6 +8,8 @@ description: 'This document outlines the steps to set up monitoring for the Hunt
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -50,4 +52,10 @@ This document provides instructions to set up alerts on machines if the Huntress
    ![](../../../static/img/docs/57b02fcd-0a4e-4c90-93d8-f81caa4c0835/image_8.webp)  
 
 9. Confirm that this is the final appearance of the monitor set, then save it by clicking the **Save** button.  
-   ![](../../../static/img/docs/57b02fcd-0a4e-4c90-93d8-f81caa4c0835/image_9.webp)  
+   ![](../../../static/img/docs/57b02fcd-0a4e-4c90-93d8-f81caa4c0835/image_9.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

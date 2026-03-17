@@ -8,6 +8,8 @@ description: 'This document outlines a remote monitor setup that detects when th
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-04-10
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypas
 ## Target
 
 This monitor should be run on all Windows machines.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['database', 'report', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-12
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This script will collect information about the installed [PnP Devices](https://d
 
 - Script Log
 - Dataview
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

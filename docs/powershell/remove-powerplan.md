@@ -8,6 +8,8 @@ description: 'Documentation for the Remove-PowerPlan command to remove a specifi
 tags: ['performance', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Description
@@ -44,3 +46,9 @@ PS C:> .\Remove-PowerPlan.ps1 -Name 'Balanced'
 
 - .\Remove-PowerPlan-log.txt
 - .\Remove-PowerPlan-Error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

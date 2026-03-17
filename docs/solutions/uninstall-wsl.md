@@ -8,6 +8,8 @@ description: 'This solution provides an option to uninstall WSL manually or usin
 tags: ['vulnerability', 'cve']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-12
 ---
 
 ## Purpose
@@ -28,5 +30,10 @@ https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24084 |  CVE Arti
 - Import the [Script - CVE-2025-24084 - WSL2 Uninstall](/docs/850b68d4-ba80-4807-9588-2263440fe5cc)
 - Create the remote [Monitor - WSL Detection](/docs/cfe1d90a-11be-4ea8-80b3-4d3116358b7d) to the requested Windows group. Refer to the monitor documentation.
 - Import the `Alert Template - △ Custom - Execute Script - Uninstall WSL`
-- Apply the `Alert Template - △ Custom - Execute Script - Uninstall WSL` to the remote monitor [WSL Detection](/docs/cfe1d90a-11be-4ea8-80b3-4d3116358b7d) 
+- Apply the `Alert Template - △ Custom - Execute Script - Uninstall WSL` to the remote monitor [WSL Detection](/docs/cfe1d90a-11be-4ea8-80b3-4d3116358b7d)
 
+## Changelog
+
+### 2025-11-11
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of a remote monitor that
 tags: ['alerting', 'hyper-v', 'ticketing', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -54,3 +56,9 @@ CreationTime: 7/16/2024 2:02 PM
 ## Implementation
 
 [Import - Remote Monitor - HyperV - Snapshot Age > 3 Days](/docs/faf8b7d6-6685-43be-a223-0c6ce7195147)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

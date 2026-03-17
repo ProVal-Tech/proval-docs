@@ -8,6 +8,8 @@ description: 'This document outlines the purpose and structure of a custom table
 tags: ['database', 'installation', 'report', 'security', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -35,3 +37,9 @@ The custom table serves as a container for the data fetched by the [WebP Vulnera
 | vulnerable_cve_2023_4863     | varchar(32) | Vulnerable CVE 2023-4863 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | vulnerable_cve_2023_5217     | varchar(32) | Vulnerable CVE 2023-5217 status available in the [JSON](https://raw.githubusercontent.com/mttaggart/electron-app-tracker/main/electron_apps.json) file for the corresponding application |
 | datetime                     | datetime    | Data collection time from the endpoint                                                          |
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -7,7 +7,9 @@ keywords: ['event', 'logs', 'monitoring', 'alert', 'script']
 description: 'This document describes a script designed to monitor unwanted event logs in the Automate Server environment. It provides details on how the script functions, its dependencies, and the process it follows to alert users when unwanted logs are detected.'
 tags: ['email']
 draft: false
-unlisted: false
+unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ This is an Autofix script, and it is used within the "Automate Server - Event Lo
 ## Output
 
 - **Email**
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

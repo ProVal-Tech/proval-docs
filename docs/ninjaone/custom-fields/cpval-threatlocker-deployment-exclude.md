@@ -8,6 +8,8 @@ description: 'Enable this custom field to exclude the location or device from Th
 tags:  ['security','setup','windows','macos']
 draft: false
 unlisted: true
+last_update:
+  date: 2026-02-11
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ Enable this custom field to exclude the location or device from ThreatLocker Dep
 ## Example
 
 ![Image4](../../../static/img/docs/c3329dd9-bdf8-42f6-aacc-bcfde0fa94da/image4.webp)
+
+## Changelog
+
+### 2025-05-27
+
+- Initial version of the document

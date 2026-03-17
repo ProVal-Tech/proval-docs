@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on using the Chocolat
 tags: ['installation', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary:
@@ -66,4 +68,10 @@ Chocolatey Wrapper for installing programs
 - **-install:** Required. [yes] or [no] Install the app if it doesn't exist? No = upgrade only  
 - **-packages:** Pipe-separated list of packages. If install=no use [\<pkg>,\<displayname>|\<pkg>,\<displayname>]  
 - **-exception:** Pipe-separated list of library packages not to install/upgrade  
-- **-custom:** Pipe-separated list of packages to add to library packages. If install=no use [\<pkg>,\<displayname>]  
+- **-custom:** Pipe-separated list of packages to add to library packages. If install=no use [\<pkg>,\<displayname>]
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

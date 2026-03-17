@@ -8,6 +8,8 @@ description: 'This document explains how to create a custom field to exclude a m
 tags: ['deployment']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -24,4 +26,10 @@ Select this custom field to exclude a machine from Huntress Deployment. It is ut
 **Type:** Flag  \
 **Level:** Endpoint  \
 **Description:** Select to Exclude Endpoint from Huntress Deployment  \
-**Editable:** Yes 
+**Editable:** Yes
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

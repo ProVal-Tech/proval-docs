@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to repair and reset Windo
 tags: ['performance', 'software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -171,4 +173,10 @@ If you are prompted to enter your MFA code, provide the code and press the `Cont
 
 ## Output
 
-- Activity Details  
+- Activity Details
+
+## Changelog
+
+### 2025-04-22
+
+- Initial version of the document

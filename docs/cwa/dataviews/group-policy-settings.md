@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive overview of the GPO Audit D
 tags: ['active-directory', 'gpo']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ This dataview shows information about GPOs, their applied policies, and settings
 | Extension    | Displays GPO extensions.                          |
 | Property     | Displays properties of the Group policies.       |
 | PropertyData | Displays detailed information for the GPO settings. |
+
+## Changelog
+
+### 2025-02-17
+
+- Initial version of the document

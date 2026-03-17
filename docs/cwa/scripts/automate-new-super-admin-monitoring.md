@@ -8,6 +8,8 @@ description: 'This script monitors for the creation of new super admins since th
 tags: ['security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -41,3 +43,9 @@ A temporary custom table is referenced to determine the previous state of the su
 
 - Ticket
 - Script Log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

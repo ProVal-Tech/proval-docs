@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['sql', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -31,3 +33,9 @@ This script helps to override the monitor settings applied by a group, allowing 
 
 - Takes input of the Monitor Name and the Alert Template from the user.
 - Executes SQL queries to set the override and the alert template.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

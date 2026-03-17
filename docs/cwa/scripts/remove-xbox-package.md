@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script designed to
 tags: ['logging', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ This script will remove all Xbox packages, including the Xbox Game Bar, from the
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

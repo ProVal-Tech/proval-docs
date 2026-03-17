@@ -8,6 +8,8 @@ description: 'This document details a script designed for automatic ticket creat
 tags: ['esxi', 'networking', 'ticketing', 'virtualization']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -45,3 +47,9 @@ The only dependency for this script is that the monitor triggering the script mu
 > \<VM Name>  
 >
 > \<Datastores with low disk space listed here>
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

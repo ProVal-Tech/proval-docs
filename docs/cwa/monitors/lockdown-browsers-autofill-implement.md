@@ -8,6 +8,8 @@ description: 'This document provides a step-by-step guide for implementing the L
 tags: ['browsers', 'security', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-29
 ---
 
 ## Step 1
@@ -365,3 +367,9 @@ Confirm the presence of the following remote monitors on the `△ Lockdown Brows
 
 ![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_4.webp)
 ![Image](../../../static/img/docs/864f3eaf-4693-42f5-8852-9e96c451c8e8/image_5.webp)
+
+## Changelog
+
+### 2025-04-09
+
+- Initial version of the document

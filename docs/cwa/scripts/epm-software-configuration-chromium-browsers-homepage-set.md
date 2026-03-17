@@ -8,6 +8,8 @@ description: 'This document outlines the implementation of the Set-ChromiumHomep
 tags: ['chrome', 'edge', 'setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-11-27
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ The `Browser` parameter can be used to specify the browser's name.
 ## Output
 
 - Script Logs
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

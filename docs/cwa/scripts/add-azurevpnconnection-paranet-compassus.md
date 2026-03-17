@@ -8,6 +8,8 @@ description: 'This document provides a detailed guide on setting up the Compassu
 tags: ['azure', 'logging', 'vpn']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -59,3 +61,9 @@ Document the various variables in the script. Delete any section that is not rel
 
 - Script log
 - File in LTSVC/Logs (optional)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

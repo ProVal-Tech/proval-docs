@@ -8,6 +8,8 @@ description: 'The eShare Install script facilitates the silent installation of e
 tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-07
 ---
 
 ## Summary
@@ -36,3 +38,9 @@ The **eShare Install** script silently installs the eShare software on the machi
 - Procedure log
 ## Attachments
 [Procedure_Eshare_install.xml](<../../../static/attachments/itg/9818310/Procedure_Eshare_install.xml>)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

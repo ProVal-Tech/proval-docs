@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on how to install the
 tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -42,3 +44,9 @@ This script will install Exclaimer on both MAC and Windows.
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

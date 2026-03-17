@@ -8,6 +8,8 @@ description: 'This PowerShell script automates the creation of a system restore 
 tags: ['backup', 'windows', 'cleanup', 'cleanup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-04
 ---
 
 ## Overview  
@@ -85,3 +87,9 @@ To execute the `component` over a specific machine, follow these steps:
 ## Attachments
 
 [System Restore Point - Auto Purge after x thresholds](../../../static/attachments/System%20Restore%20Point%20-%20Auto%20Purge%20after%20x%20thresholds.cpt)
+
+## Changelog
+
+### 2025-07-03
+
+- Initial version of the document

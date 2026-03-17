@@ -8,6 +8,8 @@ description: 'This script automates the deployment of the AutoElevate Agent on W
 tags:  ['windows','security','installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-12-10
 ---
 
 ## Overview
@@ -46,3 +48,9 @@ The script is dependent on below custom fileds during the deployment.
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2025-11-27
+
+- Initial version of the document

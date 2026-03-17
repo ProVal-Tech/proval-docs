@@ -8,6 +8,8 @@ description: 'Displays all custom fields related to the network adapter, includi
 tags: ['networking','auditing','windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-26
 ---
 
 ## Summary
@@ -57,3 +59,9 @@ Below Custom fields that needs to add under the Group View:
 This is how the group should looks like after adding the custom fields:
 
 ![Group View](../../../static/img/docs/e30843b6-3891-4793-b1a2-f18a749ac4f5/group%20View.webp)
+
+## Changelog
+
+### 2026-01-19
+
+- Initial version of the document

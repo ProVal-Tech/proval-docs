@@ -8,6 +8,8 @@ description: 'This script deploys ThreatLocker agent on Mac machines'
 tags: ['security','setup','macos']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-02-11
 ---
 
 ## Overview
@@ -38,3 +40,13 @@ This script deploys ThreatLocker agent on Mac machines.
 ## Output
 
 - Activity Details
+
+## Changelog
+
+### 2026-02-11
+
+- Added `Threatlocker Mac Groupkey`  script variable to the automation.
+
+### 2025-05-16
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that downloads and installs the HP
 tags: ['installation', 'logging', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -35,3 +37,9 @@ This script downloads and installs the HP Support Assistant if a user is logged 
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

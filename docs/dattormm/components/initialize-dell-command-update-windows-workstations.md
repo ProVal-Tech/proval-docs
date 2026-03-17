@@ -8,6 +8,8 @@ description: 'Installs, updates, or executes Dell Command | Update (DCU) on Dell
 tags: ['application', 'installation', 'software', 'dell', 'drivers']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-07-24
 ---
 
 ## Overview
@@ -72,3 +74,9 @@ Automates the installation, updating, and execution of Dell Command | Update (DC
 ## Attachments
 
 - [Initialize Dell Command | Update - Windows Workstations](../../../static/attachments/initialize-dell-command-update-windows-workstations.cpt)
+
+## Changelog
+
+### 2025-07-24
+
+- Initial version of the document

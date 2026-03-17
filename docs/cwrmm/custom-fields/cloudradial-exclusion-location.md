@@ -8,6 +8,8 @@ description: 'Flag this custom field to exclude the location from Cloud Radial A
 tags: ['application', 'installation']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-10-08
 ---
 
 ## Summary
@@ -32,3 +34,9 @@ Flag this custom field to exclude the location from Cloud Radial Agent deploymen
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/d05ec922-2013-4947-a7aa-9b8a557b2253/image1.webp)
+
+## Changelog
+
+### 2025-10-08
+
+- Initial version of the document

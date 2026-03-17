@@ -8,6 +8,8 @@ description: 'This document provides a detailed overview of a script used to dis
 tags: ['recovery', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -44,3 +46,9 @@ This script is used to disable the Authenticode verification on Windows machines
 ## Output
 
 Agent procedure log.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

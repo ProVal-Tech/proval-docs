@@ -8,6 +8,8 @@ description: 'This document outlines the internal monitor that executes the Soft
 tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -34,3 +36,9 @@ Windows Machines
 **Name:** `△ Custom - Execute Script - Microsoft 365 - Update Channel - Set - Current`
 
 The alert template should execute the [SWM - Software Configuration - Script - Microsoft 365 - Set Update Channel - Current](/docs/68e362d9-521f-417b-93e3-81adc169b559) script.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

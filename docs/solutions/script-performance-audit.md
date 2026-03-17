@@ -8,6 +8,8 @@ description: 'This document outlines three dataviews designed to showcase the pe
 tags: ['performance', 'setup', 'software']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Purpose
@@ -42,3 +44,9 @@ The solution comprises three dataviews designed to showcase the performance, his
 
 **Q:** Is it feasible to consolidate these dataviews into a single dataview?  
 **A:** While it is technically possible to merge these dataviews into one, it's important to note that the resulting dataview will not function reliably due to the complexity of calculations and the volume of data processed to generate these views.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

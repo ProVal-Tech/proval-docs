@@ -8,6 +8,8 @@ description: 'This document outlines a script designed to uninstall the NinjaRMM
 tags: ['software', 'ticketing', 'uninstallation', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -28,3 +30,9 @@ The script attempts to uninstall the NinjaRMMAgent from the machine. If the glob
 
 - Script Log
 - Ticket
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

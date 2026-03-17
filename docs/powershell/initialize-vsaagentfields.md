@@ -8,6 +8,8 @@ description: 'Documentation for the Initialize-VsaAgentFields command to write t
 tags: []
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Description
@@ -33,3 +35,9 @@ Uses the VSAAPI module to interface with the client environment, setting new Cus
 ## Output
 - Initialize-VsaAgentFields-Log.txt
 - Initialize-VsaAgentFields-error.txt
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

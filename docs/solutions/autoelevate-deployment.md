@@ -8,6 +8,8 @@ description: 'This solution provides feature to install and uninstall the autoel
 tags: ['installation', 'deployment', 'application', 'uninstallation']
 draft: false
 unlisted: false
+last_update:
+  date: 2026-01-19
 ---
 
 ## Purpose
@@ -42,3 +44,9 @@ This solution provides feature to install and uninstall the AutoElevate applicat
 **Q. Can this solution create a ticket during installation failure?**
   
 **A.** Yes, you just need to set the ticket category at the monitor level to receive a failed installation ticket.
+
+## Changelog
+
+### 2026-01-15
+
+- Initial version of the document

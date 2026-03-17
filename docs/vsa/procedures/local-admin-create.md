@@ -8,6 +8,8 @@ description: 'This document outlines the process for creating a new user on a Ma
 tags: ['setup']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -20,3 +22,9 @@ This document explains how to create a new user on a Mac and add that user to th
 2. Create the user structure.
 3. Set the password.
 4. Add the user to the local admin group.
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

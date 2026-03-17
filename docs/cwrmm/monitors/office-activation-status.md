@@ -8,6 +8,8 @@ description: 'This document provides a comprehensive guide on creating a monitor
 tags: ['setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -89,3 +91,9 @@ Generates an alert for any unlicensed Office products on the endpoint.
 
 13. Click the `Save` button to save the monitor set.  
     ![Save Monitor Set](../../../static/img/docs/a4b90ce5-21c6-40c4-9158-ff60bd08a53f/image_14.webp)
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

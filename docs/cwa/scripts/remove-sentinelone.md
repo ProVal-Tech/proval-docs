@@ -8,6 +8,8 @@ description: 'This script uninstall the Sentinel using the agnostic "Remove-Sent
 tags: ['uninstallation', 'antivirus', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-17
 ---
 
 ## Summary
@@ -43,3 +45,9 @@ OR
 
 - Script Logs
 - Log file on the end machine
+
+## Changelog
+
+### 2025-05-26
+
+- Initial version of the document

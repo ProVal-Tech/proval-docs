@@ -8,6 +8,8 @@ description: 'The solution describes how to configure NinjaOne to automatically 
 tags: ['dell', 'ticketing', 'eventlogs', 'security']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-06-20
 ---
 
 ## Purpose
@@ -52,3 +54,9 @@ Create the [Dell OMSA Alerts](/docs/2bff6ade-58ff-4cbf-addc-067b90da09e9) condit
 ![DefaultWindowsServer](../../static/img/docs/a5979a59-7291-42e0-8278-d7c10aa9b557/defaultwindowsservers.webp)
 
 **Note:** The details demonstrated in the document may differ depending on environment. Please verify the required information with consultant or partner before completing these fields.
+
+## Changelog
+
+### 2025-06-17
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines the scheduling of the Automation Time Saved
 tags: ['report']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 # Summary
@@ -29,3 +31,9 @@ Schedules the Report AP [VSA - VSA Host Procedure - Agent Procedure - Automation
   - **Policy Object Name**: Agent Procedures
     - **Policy Object Members**: Automation Time Saved Reports
       - **Policy Object Member Settings**: Monthly, Last Day, Midnight, Do not skip if offline
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

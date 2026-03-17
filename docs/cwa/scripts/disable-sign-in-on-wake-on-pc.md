@@ -8,6 +8,8 @@ description: 'This document provides an overview of a script that disables the S
 tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -21,3 +23,9 @@ This script disables the Sign-In option for all user accounts. It removes the re
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document

@@ -8,6 +8,8 @@ description: 'This document outlines a script that creates the SQL table “@plu
 tags: ['database', 'security', 'setup', 'windows']
 draft: false
 unlisted: false
+last_update:
+  date: 2025-05-09
 ---
 
 ## Summary
@@ -38,3 +40,9 @@ This script will create the SQL table “@plugin_proval_usersessions” if it do
 ## Output
 
 - Script log
+
+## Changelog
+
+### 2025-04-10
+
+- Initial version of the document
