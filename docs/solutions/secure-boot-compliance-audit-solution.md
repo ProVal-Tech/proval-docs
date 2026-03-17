@@ -9,7 +9,7 @@ tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 
+  date: 2026-03-17
 ---
 
 ## Purpose
@@ -37,7 +37,7 @@ This solution checks the Secure Boot status and validates the associated certifi
 
 | Content | Type | Function |
 | ----------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
-| [cPVAL SecureBoot Disabled](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246) | `Group` | Devices with Secure Boot disabled for compliance and security monitoring. |
+| [cPVAL SecureBoot Disabled](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246) | `Group` | This group shows all windows devices with Secure Boot status. |
 
 ### `Task`
 

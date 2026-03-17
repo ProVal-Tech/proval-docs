@@ -1,26 +1,26 @@
 ---
 id: 'f60be794-9c67-48fe-9e2d-694c6ed58246'
 slug: /f60be794-9c67-48fe-9e2d-694c6ed58246
-title: 'cPVAL SecureBoot Disabled'
-title_meta: 'cPVAL SecureBoot Disabled'
+title: 'cPVAL SecureBoot Audit [Windows]'
+title_meta: 'cPVAL SecureBoot Audit [Windows]'
 keywords: ['secure','secure-boot','audit']
 description: 'Devices with Secure Boot disabled for compliance and security monitoring.'
 tags: ['security','custom-fields','secureboot','auditing','certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-12
+  date: 2026-03-17
 ---
 
 ## Summary
 
-Devices with Secure Boot disabled for compliance and security monitoring.
+This group shows all windows devices with Secure Boot status.
 
 ## Details
 
 | Name | Description |
 | ---------- | ----------- |
-| cPVAL SecureBoot Disabled | Devices with Secure Boot disabled for compliance and security monitoring. |
+| cPVAL SecureBoot Audit [Windows] | This group shows all windows devices with Secure Boot status. |
 
 ## Dependencies
 
@@ -32,10 +32,10 @@ Devices with Secure Boot disabled for compliance and security monitoring.
 
 ## Group Creation
 
-[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-secureboot-disabled.toml)
+[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-secureboot-audit.toml)
 
 ## Changelog
 
-### 2026-03-12
+### 2026-03-17
 
 - Initial version of the document
