@@ -11,7 +11,7 @@ unlisted: false
 ---
 
 ## Overview  
-This script displays and manages reboot prompts for Windows systems after patching or based on system uptime and pending reboot status.
+Manages and displays reboot prompts for Windows systems based on pending reboot status or system uptime. The prompts are customized as per the client’s logo and branding. The script runs via Task Scheduler to ensure users are periodically notified, allowing controlled postponement, repeated reminders (nag), and enforced restarts as per defined configuration.
 
 ## Implementation  
 
@@ -40,10 +40,10 @@ To execute the `component` over a specific machine, follow these steps:
 6. Enter the interval time you want the popup to appear again.
 7. You can set the number of days to show if a reboot is pending. 
 ![Image 4](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s1.webp)  
-8. Apart from setting up the days in case of a reboot is pending, you can also the value for the machine which has not beed rebooted for x days.  
+8. Apart from setting up the days in case of a reboot is pending, you can also the value for the machine which has not been rebooted for x days.  
 9. Set the Timeout interval for the regular prompts.
 10. Set the Timeout interval for final prompts.
-11. You can also set the suppress popup time window as well eg. 2100-0700
+11. You can also set the suppress popup time window as well eg. `2100-0700`
 ![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)  
 12. You can also enable the option to skip the weekends to pause the reboot prompts.
 13. You can select the option to forcefully restart the machine if the user is not logged in.
@@ -53,7 +53,7 @@ To execute the `component` over a specific machine, follow these steps:
 16. Below are the examples of how the prompter will look like after configuring the Nag
 ![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)
 ![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)  
-17. This is how the final prompt will look like, where the only the restart option will be present
+17. This is how the final prompt will look like, where only the restart option will be present.
 ![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
 
 
@@ -63,11 +63,11 @@ To execute the `component` over a specific machine, follow these steps:
 | ------------- | ---- | ------- | ----------- |
 |Desktop_reboot_max_postpone|String|4|Number of times the user can postpone the reboot prompt. At 0, the popup is shown repeatedly with no countdown.|
 |Desktop_reboot_popup_mins|String|240|Interval in minutes between reboot prompts.|
-|Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days|String|1|Shows reboot popup if a reboot is pending and the system has not been rebooted for this many days. Set to 0 to disable.|
-|Desktop_reboot_show_popup_if_not_rebooted_days|String|30|Shows reboot popup if the system has not been rebooted for this many days, regardless of pending reboot. Set to 0 to disable.|
-|Desktop_reboot_regular_prompt_timeout|String|3600|Timeout in seconds for the regular prompt.|
-|Desktop_reboot_final_prompt_timeout|String|10800|Time in seconds to wait before forcefully restarting the computer after the final prompt is missed.|
-|Desktop_reboot_suppress_popup_time_windows|String|2100-0700|Time window(s) in 24-hour format (e.g., 1800-0900) during which prompts are suppressed.|
+|Desktop_reboot_show_popup_if_pending_reboot_not_rebooted_days|String|1|Displays a reboot popup when a restart is pending. This also define the number of days after which the reminder (nag) should start appearing. Setting the value to 0 will disable the reminder.|
+|Desktop_reboot_show_popup_if_not_rebooted_days|String|30|Shows reboot popup if the system has not been rebooted for this many days(i.e. Uptime days), regardless of pending reboot. Set to 0 to disable.|
+|Desktop_reboot_regular_prompt_timeout|String|600|Timeout in seconds for the regular prompt.|
+|Desktop_reboot_final_prompt_timeout|String|900|Time in seconds to wait before forcefully restarting the computer after the final prompt is missed.|
+|Desktop_reboot_suppress_popup_time_windows|String||Time window(s) in 24-hour format (e.g., 1800-0900) during which prompts are suppressed.|
 |Desktop_reboot_skip_weekends|Boolean|False| If set, prevents reboot prompts from being shown on Saturdays and Sundays.|
 |Reboot_if_not_logged_in|Boolean|True| If set, forcefully restarts the computer if no user is logged in when prompting conditions are met.|
 |Force|Boolean|False|Forcefully recreates the scheduled task if it already exists. Use this option when updating or modifying the task's arguments.|  
