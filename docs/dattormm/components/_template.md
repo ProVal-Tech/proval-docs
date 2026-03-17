@@ -9,7 +9,7 @@ tags: []
 draft: true
 unlisted: false  
 last_update:
-  date: 20xx-xx-xx
+  date: 2026-03-17
 ---
 
 ## Overview
@@ -52,6 +52,6 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Changelog
  
-### 20xx-xx-xx
+### 2026-03-17
  
 - Initial version of the document
