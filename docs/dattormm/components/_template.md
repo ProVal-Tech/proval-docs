@@ -7,7 +7,9 @@ keywords: []
 description: ''
 tags: []
 draft: true
-unlisted: false
+unlisted: false  
+last_update:
+  date: 20xx-xx-xx
 ---
 
 ## Overview
@@ -46,4 +48,10 @@ To execute the `component` over a specific machine, follow these steps:
 
 ## Output
 
-## Attachments
+## Attachments  
+
+## Changelog
+ 
+### 20xx-xx-xx
+ 
+- Initial version of the document
