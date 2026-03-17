@@ -45,7 +45,7 @@ To execute the `component` over a specific machine, follow these steps:
 10. Set the Timeout interval for final prompts.
 11. You can also set the suppress popup time window as well eg. `2100-0700`
 ![Image 5](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s2.webp)  
-12. You can also enable the option to skip the weekends to pause the reboot prompts.
+12. You also can enable the option to skip the weekends to pause the reboot prompts.
 13. You can select the option to forcefully restart the machine if the user is not logged in.
 14. You can also forcefully executes the scheduled task if it's already exists as the reboot prompter is working after the task is created.
 ![Image 6](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s3.webp)  
