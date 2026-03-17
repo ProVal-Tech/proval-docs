@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-Identifies Windows workstations where automatic `Windows App` deployment is enabled, but the app is not installed or the desktop shortcut is missing or invalid. This monitor evaluates data collected by the [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d6033) remote monitor.
+Identifies Windows workstations where automatic `Windows App` deployment is enabled, but the app is not installed or the desktop shortcut is missing or invalid. This monitor evaluates data collected by the [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) remote monitor.
 
 ## Dependencies
 

@@ -14,11 +14,12 @@ last_update:
 
 ## Summary
 
-Shows whether `Windows App` is installed and whether the desktop shortcut exists for Windows workstations with deployment enabled. This dataview uses data collected by the [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d6033) remote monitor.
+Shows whether `Windows App` is installed and whether the desktop shortcut exists for Windows workstations with deployment enabled. This dataview uses data collected by the [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) remote monitor.
 
 ## Dependencies
 
 - [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336)
+- [Solution: Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
 
 ## Columns
 
