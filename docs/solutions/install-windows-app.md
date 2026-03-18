@@ -28,16 +28,16 @@ The purpose of this solution is to identify, install, and manage `Windows App` d
 
 ## Implementation
 
-1. Import the following script using the `Prosync` plugin:
+1. Import the following script using the `ProSync` plugin:
    - [Script: Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658)
 
-2. Import the following monitors using the `Prosync` plugin:
+2. Import the following monitors using the `ProSync` plugin:
    - [Internal Monitor: Install Windows App](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c)
 
-3. Import the following Alert Template using the `Prosync` plugin:
+3. Import the following Alert Template using the `ProSync` plugin:
    - `△ Custom - Execute Script - Install Windows App`
 
-4. Import the [Dataview: Windows App Installation Audit](/docs/33896d60-d14a-49e0-90b8-605faf96e41f) dataview using the `Prosync` plugin.
+4. Import the [Dataview: Windows App Installation Audit](/docs/33896d60-d14a-49e0-90b8-605faf96e41f) dataview using the `ProSync` plugin.
 
 5. Reload the system cache (`Ctrl + R`)
 
