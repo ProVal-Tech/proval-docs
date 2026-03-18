@@ -20,9 +20,9 @@ The purpose of this solution is to identify, install, and manage `Windows App` d
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658) | Script | Installs Windows App and creates a desktop shortcut for the logged-in user. |
-| [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) | Remote Monitor | Detects Windows workstations where automatic Windows App deployment is enabled and the Windows App is not installed or the desktop shortcut is missing or broken. |
-| [Install Windows App](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c) | Internal Monitor | Identifies Windows workstations where the Windows App needs to be installed based on deployment settings. Triggers the installation script. |
+| [Script: Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658) | Script | Installs Windows App and creates a desktop shortcut for the logged-in user. |
+| [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) | Remote Monitor | Detects Windows workstations where automatic Windows App deployment is enabled and the Windows App is not installed or the desktop shortcut is missing or broken. |
+| [Internal Monitor: Install Windows App](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c) | Internal Monitor | Identifies Windows workstations where the Windows App needs to be installed based on deployment settings. Triggers the installation script. |
 | [Windows App Installation Audit](/docs/33896d60-d14a-49e0-90b8-605faf96e41f) | Dataview | Displays the installation status of Windows App and desktop shortcut configuration for Windows workstations with deployment enabled. |
 | △ Custom - Execute Script - Install Windows App | Alert Template | Executes the Install Windows App script against machines detected by the Monitor. |
 
