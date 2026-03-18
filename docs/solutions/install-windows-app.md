@@ -104,7 +104,7 @@ The purpose of this solution is to identify, install, and manage `Windows App` d
 
 ### How often does the solution check for and install Windows App?
 
-> The [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) runs on an half-hourly schedule by default. The [Internal Monitor: Install Windows App](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c) then detects machines that need the installation and triggers the script.
+> The [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) runs on a half-hourly schedule by default. The [Internal Monitor: Install Windows App](/docs/b22f954e-6a02-46f4-81d3-3f5d18d4991c) then detects machines that need the installation and triggers the script.
 
 ### What happens if the desktop shortcut is missing or broken?
 
