@@ -19,7 +19,7 @@ Identifies Windows workstations where automatic `Windows App` deployment is enab
 ## Dependencies
 
 - [Script: Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658)
-- [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d6033)
+- [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336)
 - Alert Template: `△ Custom - Execute Script - Install Windows App`
 - [Solution: Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
 
