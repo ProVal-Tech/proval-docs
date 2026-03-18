@@ -78,6 +78,14 @@ Manages sleep settings across Windows devices with granular control through cust
 - **Automations:** [Get Fast Boot and Hibernation Status](/docs/9dc318fa-ce35-47ae-9442-f867208cde93), [Enable or Disable Fast Boot [PVAL]](/docs/9aa78588-bc01-4aab-95bd-29b5640975a2)
 - **Compound Conditions:** [FastBoot Config Windows Workstations](/docs/3ac6bda9-175b-4585-b252-b7456a440cdd), [FastBoot Config Windows Server](/docs/95088908-fbea-4007-8914-f5b49d797dfe)
 
+### [Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1)
+
+**Key Components:** 
+
+- **Custom Fields:**  [cPVAL DeferFeatureUpdatesPeriodInDays](/docs/0cb57dd0-6349-4544-a146-f822e6dccceb), [cPVAL DeferFeatureUpdates](/docs/297e4a2e-e7a3-43ea-bbae-a88715d472b4), [cPVAL BranchReadinessLevel](/docs/c4accdf3-29e3-4dda-8a05-eae9093d629e), [cPVAL Feature Update Configuration](/docs/29e44495-0c4b-425c-bb1f-118dab2633e2)
+- **Automations:** [WinUpdate Deferral Audit](/docs/79c86028-fa08-450f-bc45-e2f3f2026732), [Update Windows Deferral Settings](/docs/5d4e1aa7-4ec8-4a7a-ba50-7a93366a232a)
+- **Compound Conditions:** [Feature Update Defer Configuration workstations](/docs/73c10fcb-2102-4e7d-80b6-e051cf8e55ec), [Feature Update Defer Configuration servers](/docs/00483199-7fbc-4838-82e7-32cfa2c626cf)
+
 ## Implementation
 
 Import and configure the required solutions based on organizational needs:
@@ -88,6 +96,7 @@ Import and configure the required solutions based on organizational needs:
 - [Disable IPv6](/docs/1e9dee40-965f-4b6c-a9cf-4cb45162d5ac) - For IPv6 protocol management
 - [Disable Sleep](/docs/a34e3293-b46a-485d-ae72-c30d235a2531) - For power management control
 - [Enable or Disable FastBoot](/docs/0d0fda4d-0f91-4093-bb04-025117299d28) - For centralized Fast Startup Management
+- [Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1) - For feature Update deferral.
 
 Each solution can be implemented independently or as part of a comprehensive device standardization strategy.
 
@@ -114,7 +123,7 @@ A: Regular reviews are recommended—typically quarterly or whenever there are s
 **Q: What happens if a solution causes unexpected issues on some devices?**  
 A: Each solution includes reversal scripts and the ability to quickly exclude affected devices through custom field settings. This allows for rapid remediation without affecting other devices.
 
-**Q: Can we add our own custom solutions to this framework?**   
+**Q: Can we add our own custom solutions to this framework?**  
 A: Yes, the Device Standards framework is designed to be extensible. You can develop additional standardization solutions following the same pattern and incorporate them into your overall device management strategy.
 
 **Q: How do these solutions handle different versions of Windows?**  
@@ -124,6 +133,11 @@ A: The solutions are designed to work across supported versions of Windows, with
 
 ## Changelog
 
+### 2026-03-06
+
+- Added [Solution: Update Windows Deferral Settings](/docs/56e6b247-f80a-4bd8-b2e2-8cf44f76b7e1).
+
 ### 2025-09-17
 
 - Initial version of the document
+

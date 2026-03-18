@@ -17,15 +17,13 @@ last_update:
 Designed to upgrade Windows systems to the latest version. It can be used to:
 
 * Upgrade Windows 10 to Windows 11
-* Install Windows 11 feature updates (e.g., 21H2 → 22H2 → 23H2 → 24H2 → 25H2)
+* Install Windows 11 feature updates (e.g., 21H2 → 22H2 → 23H2 → 24H2)
 
 Supports multiple source types including HTTP/HTTPS URLs, local files, and network shares (UNC paths).
 
 > **Notes:**  
 > • The **Version** and **Uri** parameters should not be used simultaneously. If both are provided, **Version** will override **Uri**.  
 > • If no parameters are supplied, the machine will be upgraded to **24H2** by default.  
-> • The **Version** parameter can be set to **24H2** or **25H2**, depending on your requirement.  
-> • When using the **Version** parameter, you do not need to host an ISO or ZIP file or supply the **Uri**.
 
 ## Sample Run
 
@@ -38,22 +36,21 @@ Running the script without configuring any variables.
 
 * **Behavior:** The script defaults to installing **Windows 11 24H2** from the internal repository. It performs standard hardware compatibility checks (TPM/Secure Boot) and **automatically reboots** the machine upon successful completion.
 
-**Scenario 2: Installing a Specific Version**  
-Targeting a newer or specific build release.
+**Scenario 2: Using a Custom Source (Network Share or URL)**  
+Deploying a custom image or saving bandwidth by using a download url.
 
 * **Variables:**
-* `Version` = `25H2`
+* `Uri` = `https://FileServer/Share/Windows11_25H2.zip`
 
     ![Image2](../../../static/img/docs/63212c33-ce46-4b36-a5d4-505cecdb4bec/image2.webp)
 
-* **Behavior:** Downloads and installs **Windows 11 25H2** from the internal repository. If `Uri` was also accidentally set, it is ignored in favor of this Version setting.
+* **Behavior:** Mounts the Zip from the specified download url and performs the upgrade.
 
 **Scenario 3: Using a Custom Source (Network Share or URL)**  
 Deploying a custom image or saving bandwidth by using a local file server.
 
 * **Variables:**
 * `Uri` = `\\FileServer\Share\Windows11_24H2.iso`
-* `Version` = *(Left Blank)*
 
     ![Image3](../../../static/img/docs/63212c33-ce46-4b36-a5d4-505cecdb4bec/image3.webp)
 
@@ -63,7 +60,6 @@ Deploying a custom image or saving bandwidth by using a local file server.
 Forcing an upgrade on a device that lacks TPM 2.0 or a supported CPU, while preventing an immediate restart.
 
 * **Variables:**
-* `Version` = `24H2`
 * `IgnoreCompat` = `true`
 * `NoReboot` = `true`
 
@@ -81,8 +77,7 @@ Here is the completed parameters table based on the script logic and NinjaRMM co
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Version** | `24H2` | `24H2`, `25H2` | False | `24H2` | Drop-down | The specific Windows 11 version to install from the internal repository. If set, this **overrides** the `Uri` parameter. |
-| **Uri** | `\\Server\Share\Win11.iso` | URL (HTTP/S), UNC Path, Local Path | False | Null | String | Custom source location for the Windows 11 payload (.iso or .zip). Only utilized if `Version` is left blank. |
+| **Uri** | `\\Server\Share\Win11.iso` | URL (HTTP/S), UNC Path, Local Path | False | Null | String | Custom source location for the Windows 11 payload (.iso or .zip). |
 | **NoReboot** | `true` | `true`, `false` | False | `false` | Checkbox | If enabled, prevents the system from automatically rebooting after a successful upgrade. |
 | **IgnoreCompat** | `true` | `true`, `false` | False | `false` | Checkbox | If enabled, bypasses official Windows 11 hardware compatibility checks (TPM, Secure Boot, CPU). |
 
@@ -104,9 +99,6 @@ Here is the completed parameters table based on the script logic and NinjaRMM co
 **Q: Can I use this script on hardware that does not meet Windows 11 requirements (e.g., TPM 2.0 or CPU)?**  
 **A:** Technically, yes, but **we do not recommend it**. While the **IgnoreCompat** option allows the tool to bypass official checks (CPU, TPM, Secure Boot), running Windows 11 on unsupported hardware may lead to stability issues or missing future updates. We strongly recommend upgrading the physical hardware to a compatible device instead of forcing the upgrade.
 
-**Q: I entered a custom URL in the "Uri" field, but it still installed the standard version from the internal repository. Why?**  
-**A:** The **Version** parameter takes precedence over the **Uri** parameter. If the **Version** field has a value (e.g., "24H2"), the script will ignore your custom URI. To use a custom source, ensure the **Version** field is left blank.
-
 **Q: Why did the script fail immediately on a laptop?**  
 **A:** The script includes a safety check that prevents execution if the device is running on battery power. This is to ensure the device does not power off in the middle of a critical OS upgrade. Please ensure the laptop is plugged into AC power and retry.
 
@@ -116,10 +108,15 @@ Here is the completed parameters table based on the script logic and NinjaRMM co
 **Q: What does the "System Reserved Partition" error mean?**  
 **A:** The Windows upgrade process requires at least 15MB of free space on the System Reserved Partition (SRP).
 
-* **On GPT disks:** The script attempts to automatically clear font caches to free up space.
-* **On MBR disks:** The script will fail and exit safely because automated cleanup is risky on MBR. You will need to free up space on that partition manually before retrying.
+- **On GPT disks:** The script attempts to automatically clear font caches to free up space.
+- **On MBR disks:** The script will fail and exit safely because automated cleanup is risky on MBR. You will need to free up space on that partition manually before retrying.
 
 ## Changelog
+
+### 2026-03-12
+
+- Removed the `Version` parameter due to reliability issues with the 25H2 installation method.
+- The script now supports `24H2` installations exclusively; if a custom `Uri` is provided, the script will attempt to install from that source.
 
 ### 2026-01-22
 

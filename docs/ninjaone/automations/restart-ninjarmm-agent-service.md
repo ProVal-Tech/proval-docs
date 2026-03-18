@@ -23,6 +23,20 @@ last_update:
     - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution
 
     - The scheduled task runs as SYSTEM with highest privileges
+  date: 2026-03-13
+---
+
+## Overview
+ This script performs the following actions for NinjaRMMAgent and ncstreamer:
+  - Verifies each service exists on the system
+  - Sets the service startup type to Automatic
+  - Configures Windows Service Recovery settings to restart on failure
+  - Creates a monitoring script that checks service status and restarts if stopped
+  - Registers a scheduled task to run the monitoring script at regular intervals (15 minutes for servers, 60 minutes for workstations).
+  - Attempts to start each service if it's not currently running
+  - Logs events to the Application event log for monitoring purposes.
+    
+The script is designed to ensure the NinjaRMM Agent and Ninja Remote services remains operational and automatically recovers from service failures.
 
 ## Sample Run
 
@@ -49,5 +63,6 @@ last_update:
   - The scheduled task runs as SYSTEM with highest privileges
 
 ### 2026-03-10
+2026-03-13
 
 - Initial version of the document

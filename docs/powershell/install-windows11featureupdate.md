@@ -53,6 +53,7 @@ The script operates in multiple phases to accomplish the upgrade:
 
 3. **Upgrade Execution**:
    - **Windows Update Policies**: Configures Windows Update policies for feature updates.
+   - **Pre-Update Maintenance**: Backs up and restores `dot3svc` policies, and cleans cached directories (`C:\$WINDOWS.~BT` and `C:\$GetCurrent`) to prevent corrupted file issues before initiating the update assistant.
    - **Installation Assistant**: Downloads and runs the Windows 11 Installation Assistant via scheduled tasks.
 
 4. **Post-Install Validation**:
@@ -110,6 +111,12 @@ The script generates the following output files:
 
 ## Changelog
 
+### 2026-03-12
+
+- Implemented logic to backup and restore `dot3svc` policies.
+- Reference: [https://cyberpress.org/windows-11-upgrade-from-23h2-to-25h2-reportedly-disrupts-internet-access](https://cyberpress.org/windows-11-upgrade-from-23h2-to-25h2-reportedly-disrupts-internet-access)
+- Added a routine to clean up cached installation directories (`C:\$WINDOWS.~BT` and `C:\$GetCurrent`) before initiating the Windows Update Assistant to prevent corrupted file issues.
+
 ### 2026-03-06
 
 - Modified the drive space check logic to use version-specific requirements.
@@ -118,7 +125,7 @@ The script generates the following output files:
 
 ### 2025-10-10
 
-- Added 25H2 to windows-os-support.json (https://content.provaltech.com/attachments/windows-os-support.json)
+- Added 25H2 to windows-os-support.json [https://content.provaltech.com/attachments/windows-os-support.json](https://content.provaltech.com/attachments/windows-os-support.json)
 
 ### 2025-09-25
 

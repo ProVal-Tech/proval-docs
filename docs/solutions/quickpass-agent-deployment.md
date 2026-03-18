@@ -23,7 +23,7 @@ Detect Windows endpoints that do not have the QuickPass Agent installed and depl
 | [Deploy QuickPass Agent](/docs/ab838395-dc94-4ceb-986e-99d00b005198) | Script | Downloads and installs the QuickPass Agent; supports initial environment setup via the Set_Environment parameter. |
 | [Agents Missing QuickPass](/docs/b96aee11-a990-4b23-9ba8-afc420225bac) | Internal Monitor | Identifies machines without QuickPass Agent (64-bit) where deployment is enabled. |
 | [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2) | Script | Silently removes the QuickPass Agent from a device when required. |
-| △ Custom - Execute Script - Deploy QuickPass Agent | Alert Template | Executes the deployment script against devices flagged by the internal monitor. |
+| **△ Custom - Execute Script - Deploy QuickPass Agent** | Alert Template | Executes the deployment script against devices flagged by the internal monitor. |
 
 ## Implementation
 
@@ -91,6 +91,13 @@ A: Check the CWA script log for a successful install entry, confirm the `QuickPa
 
 ## Changelog
 
+### 2026-03-06
+
+- Added the EDFs import in the script
+- Added the latest vendor specific logic in the script
+- Modified to fetch the EDFs and properties values using SQL
+- Added the logic to have ticket creation automatically enabled once the `TicketCategory` is set inside the monitor.
+
 ### 2025-10-30
 
 - Added a location-level EDF QuickPass Agent ID to allow overriding the client-level ID when specified. The client-level setting remains in place, but if the location EDF is filled, the script will prioritize it. Additionally, updated the deployment script and monitor to install the "QuickPass Agent (64-bit)" version of QuickPass Agent and remove the older version  "QuickPass Agent", which was not functioning correctly on computers.
@@ -98,3 +105,5 @@ A: Check the CWA script log for a successful install entry, confirm the `QuickPa
 ### 2025-04-10
 
 - Initial version of the document
+
+
