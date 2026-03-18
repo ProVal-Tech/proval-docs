@@ -116,6 +116,14 @@ Initial Message: Critical Service Alert for COMPUTERNAME
 
 ![Image3](../../../static/img/docs/b02333a9-f1fb-4ea4-a659-374a01ecd5ae/image3.webp)
 
+## Sample Script Result Condition Configuration
+
+![Image4](../../../static/img/docs/b02333a9-f1fb-4ea4-a659-374a01ecd5ae/image4.webp)
+
+## Sample Condition Configuration
+
+![Image5](../../../static/img/docs/b02333a9-f1fb-4ea4-a659-374a01ecd5ae/image5.webp)
+
 ## Dependencies
 
 - [Invoke-RestartService](/docs/df5d8267-5836-48d8-8971-a5cc8b33722d)
@@ -182,7 +190,7 @@ When exit code is 1 and a ticket is created, the comment includes:
 ## Setup Checklist for NinjaRMM
 
 ✓ Create **Compound Condition** or **Condition** trigger (if needed)  
-✓ Create **Script Result Condition**
+✓ Create **Script Result Condition**  
 ✓ Add **Service Monitoring** Automation to the condition  
 ✓ Enable **RestartService** parameter  
 ✓ Configure **ServiceName** or **Custom Field Name** mapping  
