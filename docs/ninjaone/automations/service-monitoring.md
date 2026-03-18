@@ -103,7 +103,7 @@ Initial Message: Service Restart Alert - COMPANYNAME at LOCATIONNAME
 Additional Message: If this issue persists, please contact IT support.
 ```
 
-![Image2](../../../static/img/docs/b02333a9-f1fb-4ea4-a659-374a01ecd5ae/image3.webp)
+![Image2](../../../static/img/docs/b02333a9-f1fb-4ea4-a659-374a01ecd5ae/image2.webp)
 
 ### Example 3: Role-Based Service Monitoring
 
@@ -135,7 +135,7 @@ Initial Message: Critical Service Alert for COMPUTERNAME
 | **Service Name** | String/Text | No | (empty) | Specifies the name(s) of the service(s) to monitor. Either this or Custom Field Name must be configured. Use comma-separated values for multiple services. | `Spooler,WinRM,W3SVC` |
 | **Custom Field Name** | String/Text | No | (empty) | Custom field name to retrieve service name(s) from NinjaRMM. When set, this overrides the Service Name parameter. Multiple services should be comma-separated in the custom field. | `cpvalMonitoredServices` |
 | **Restart Service** | CheckBox | No | (unchecked) | Enable automatic restart of non-running services. When disabled, the automation only identifies and reports failed services without attempting restart. | Checked ✓ |
-| **Include Disabled Services** | CheckBox | No | (unchecked) | Enable monitoring of disabled services. When enabled, disables services are automatically set to Automatic startup and started. | Checked ✓ |
+| **Include Disabled Services** | CheckBox | No | (unchecked) | Enable monitoring of disabled services. When enabled, disabled services are automatically set to Automatic startup and started. | Checked ✓ |
 | **Server Role** | String/Text | No | (empty) | Restrict automation execution to specific server roles. Use exact role names from the [cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) custom field. Use comma-separated values for multiple roles. | `Web Servers,File Servers` |
 | **Initial Message** | String/Text | No | (empty) | Custom message displayed at the top of ticket comments and subject line. Supports replacement variables for dynamic content. | `Service Alert - COMPANYNAME at LOCATIONNAME` |
 | **Additional Message** | String/Text | No | (empty) | Additional context message appended to the end of ticket comments. | `Please investigate if issues persist.` |
@@ -273,6 +273,6 @@ When exit code is 1 and a ticket is created, the comment includes:
 
 ## Changelog
 
-### 2025-03-28
+### 2026-03-18
 
 - Initial version of the document
