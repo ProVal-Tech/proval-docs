@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-The **Service Monitoring** automation is a comprehensive service health management workflow within NinjaRMM. It monitors specified Windows services and automatically restarts non-running services when configured to do so. The automation handles server role validation, disabled service management, and generates detailed ticket comments with full diagnostic context.
+The **Service Monitoring** automation is a comprehensive service health management workflow within NinjaRMM. It monitors specified Windows services and automatically restarts non-running services when configured to do so. The automation handles server role validation, disabled service management, and generates detailed ticket comments with full diagnostic context (*when executed from a condition or compound condition and ticketing is enabled*).
 
 ## Recommended Configuration in NinjaRMM
 
@@ -199,6 +199,10 @@ When exit code is 1 and a ticket is created, the comment includes:
 - **Full Context**: Failures include comprehensive diagnostic data collected during the attempt
 - **Role-Based Targeting**: Prevents running on incompatible server types
 - **Self-Contained**: No dependency on additional automations or manual steps
+
+## Automation Setup/Import
+
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/service-monitoring.ps1)
 
 ## Output
 
