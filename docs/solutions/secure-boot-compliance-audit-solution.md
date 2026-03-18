@@ -37,7 +37,7 @@ This solution checks the Secure Boot status and validates the associated certifi
 
 | Content | Type | Function |
 | ----------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
-| [cPVAL SecureBoot Disabled](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246) | `Group` | This group shows all windows devices with Secure Boot status. |
+| [cPVAL SecureBoot Audit [Windows]](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246) | `Group` | This group shows all windows devices with Secure Boot status. |
 
 ### `Task`
 
@@ -61,7 +61,7 @@ This solution checks the Secure Boot status and validates the associated certifi
 
 ### Step 3: Create the following group
 
-- [Group- cPVAL SecureBoot Disabled](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246)
+- [Group- cPVAL SecureBoot Audit [Windows]](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246)
 
 ### Step 4: Create the following Task:
 
@@ -112,25 +112,21 @@ It then updates the related custom fields with the results.
 
 #### Q6. What happens if Secure Boot is disabled on a device?
 
-`Answer:` If Secure Boot is disabled, the device will be identified through the custom field `cPVAL Secure Boot Status` and may appear in the `cPVAL SecureBoot Disabled` device group for further review or remediation.
+`Answer:` If Secure Boot is disabled, the device will be identified through the custom field `cPVAL Secure Boot Status` and may appear in the `cPVAL SecureBoot Audit [Windows]` device group for further review or remediation.
 
-#### Q7. What is the purpose of the device group "cPVAL SecureBoot Disabled"?
-
-`Answer:` This device group is used to identify and monitor systems where Secure Boot is disabled. It helps administrators quickly locate devices that may not meet security or compliance requirements.
-
-#### Q8. What does the task "cPVAL SecureBoot Status" do?
+#### Q7. What does the task "cPVAL SecureBoot Status" do?
 
 `Answer:` This task runs the Secure Boot audit on devices. It checks the Secure Boot configuration and certificate status, then updates the associated custom fields with the results.
 
-#### Q9. Why is Secure Boot certificate validation important?
+#### Q8. Why is Secure Boot certificate validation important?
 
 `Answer:` Secure Boot certificates ensure that only trusted software can run during the system boot process. Validating these certificates helps maintain system integrity and ensures compatibility with upcoming security updates from Microsoft.
 
-#### Q10. When should this solution be deployed?
+#### Q9. When should this solution be deployed?
 
 `Answer:` This solution should be deployed across all Windows devices to ensure they are prepared for the 2026 Microsoft Secure Boot certificate transition and to maintain consistent security compliance across the environment.
 
-#### Q11. What is the benefit of separating audit results into multiple custom fields?
+#### Q10. What is the benefit of separating audit results into multiple custom fields?
 
 `Answer:` Using separate fields improves visibility and reporting. Administrators can easily filter devices based on specific conditions such as:
 
