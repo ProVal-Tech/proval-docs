@@ -48,6 +48,6 @@ last_update:
   - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution
   - The scheduled task runs as SYSTEM with highest privileges
 
-2026-03-10
+### 2026-03-10
 
 - Initial version of the document

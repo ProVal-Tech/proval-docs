@@ -49,6 +49,6 @@ The script is designed to ensure the NinjaRMM Agent and Ninja Remote services re
   - Removed to run only the startup.
   - Attempts to start each service if it's not currently running
 
-2025-05-12
+### 2025-05-12
 
 - Initial version of the document
