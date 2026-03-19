@@ -16,7 +16,7 @@ last_update:
 
 This script installs/updates the latest version of the SonicWall NetExtender dynamically.
 
-**Third Party Urls:**
+**Third-party URLs:**
 
 - [https://api.github.com/repositories/197275551/contents/manifests/s/SonicWall/NetExtender](https://api.github.com/repositories/197275551/contents/manifests/s/SonicWall/NetExtender)
 - [https://software.sonicwall.com/NetExtender](https://software.sonicwall.com/NetExtender)
