@@ -20,7 +20,7 @@ This script fully removes both ConnectWise Automate and ScreenConnect/ConnectWis
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Automate and Screenconnect Uninstaller`
+Search and select `Automate and Screenconnect Uninstaller [macOS]`
 
 ![Image1](../../../static/img/docs/052ad6fb-db8f-41f4-991f-f3c9d73b3b1c/image1.webp)
 

@@ -20,7 +20,7 @@ This script facilitates the complete removal of the ConnectWise Automate agent f
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Automate - Uninstall`
+Search and select `Automate - Uninstall [macOS]`
 
 ![Image1](../../../static/img/docs/55558313-8736-4660-91df-593a84ad1cf3/image1.webp)
 

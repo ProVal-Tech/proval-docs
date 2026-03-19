@@ -20,7 +20,7 @@ This script is designed to remove ScreenConnect (ConnectWise Control) installati
 `Play Button` > `Run Automation` > `Script`  
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
-Search and select `Screenconnect - Uninstall`
+Search and select `Screenconnect - Uninstall [macOS]`
 
 ![Image1](../../../static/img/docs/f44b5186-4991-4b70-ba9c-1559706fcb6a/image1.webp)
 
