@@ -5,7 +5,7 @@ title: 'Cyber QP and Duo Auth Registry Config [Change]'
 title_meta: 'Cyber QP and Duo Auth Registry Config [Change]'
 keywords: ['cyber-qp', 'duo', 'duo-auth', 'duo-authentication-for-windows-logon', 'quickpass']
 description: 'Applies registry configurations on systems where both ''Duo Authentication for Windows Logon x64'' and ''Quickpass'' are installed, enabling Duo Authentication in conjunction with CyberQP End User Elevation and activating the CyberQP Credential Provider for integrated authentication support.'
-tags: ['windows', 'registry', 'security', 'application']
+tags: ['windows', 'registry', 'security', 'application', 'software']
 draft: false
 unlisted: false
 last_update:
@@ -185,6 +185,10 @@ Reload the System Cache (Ctrl + R).
 Find your remote monitor in the group's remote monitors tab. Make sure it is limited to the `Cyber QP and Duo Auth Registry Config` search.
 
 ## Changelog
+
+### 2026-03-19
+
+- Added the cyber qp additional settings for the whitelisting as well as the elevationmode setting.
 
 ### 2025-10-10
 
