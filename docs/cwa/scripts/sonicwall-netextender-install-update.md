@@ -60,7 +60,7 @@ The script supports both MSI and EXE installer formats and automatically detects
 
 ### 2026-03-19
 
-- Added support for ARMx64 processors
+- Added support for ARM64 processors
 - Implemented code signing for PowerShell script
 
 ### 2025-10-30
