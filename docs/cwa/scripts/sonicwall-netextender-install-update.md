@@ -38,7 +38,7 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 
 | Name           | Example | Required                        | Description                                                                                                 |
 |----------------|---------|----------------------------------|-------------------------------------------------------------------------------------------------------------|
-| SetEnvironment| 1       | Need to set to 1 for first-time implementation | Running the script with the user parameter `SetEnvironment` as 1 will import the EDFs needed for the script. |
+| SetEnvironment | 1       | Need to set to 1 for first-time implementation | Running the script with the user parameter `SetEnvironment` as 1 will import the EDFs needed for the script. |
 
 ## Process
 
