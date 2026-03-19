@@ -21,6 +21,10 @@ Applies registry configurations on systems where both 'Duo Authentication for Wi
 - [Using Duo Authentication for Windows with CyberQP End User Elevation](https://support.getquickpass.com/hc/en-us/articles/28134967630743-Using-Duo-Authentication-for-Windows-with-CyberQP-End-User-Elevation)
 - [Enabling the CyberQP Credential Provider while using Duo](https://support.getquickpass.com/hc/en-us/articles/22720858271895-Enabling-the-CyberQP-Credential-Provider-while-using-Duo#h_01HWB3Q6E45JJC9SYE5RG996XT)
 
+## Dependencies
+
+- [Solution: QuickPass Agent Deployment](/docs/65d0dbb6-29c1-4242-841c-1da9b92edab6)
+
 ## Details
 
 **Suggested "Limit to"**: `Cyber QP and Duo Auth Registry Config`  
@@ -188,7 +192,7 @@ Find your remote monitor in the group's remote monitors tab. Make sure it is lim
 
 ### 2026-03-19
 
-- Added the cyber qp additional settings for the whitelisting as well as the elevationmode setting.
+- Included this remote monitor as a part of the solution [QuickPass Agent Deployment](/docs/65d0dbb6-29c1-4242-841c-1da9b92edab6)
 
 ### 2025-10-10
 

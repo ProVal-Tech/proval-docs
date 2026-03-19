@@ -27,6 +27,8 @@ Detect Windows endpoints that do not have the QuickPass Agent installed and depl
 
 ## Additional Content
 
+| Content | Type | Function |
+| ------- | ---- | -------- |
 | [Cyber QP and Duo Auth Registry Config [Change]](/docs/5732e23f-eeb7-4017-ab8c-7b3b7bf25329) | Remote monitor | Applies registry configurations on systems where both 'Duo Authentication for Windows Logon x64' and 'Quickpass' are installed, enabling Duo Authentication in conjunction with CyberQP End User Elevation and activating the CyberQP Credential Provider for integrated authentication support. |
 
 ## Implementation
