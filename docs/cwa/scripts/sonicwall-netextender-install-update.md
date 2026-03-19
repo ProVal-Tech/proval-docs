@@ -50,7 +50,7 @@ This script installs/updates the latest version of the SonicWall NetExtender dyn
 6. Downloads and installs the software silently
 7. Verifies successful installation
 
-The script supports both MSI and EXE installer formats and automatically detects the system architecture to download the correct version. It includes comprehensive error handling and installation verification. MSI version will be installed for the machines where the application is not already installed.
+The script supports both MSI and EXE installer formats and automatically detects the system architecture to download the correct version. It includes comprehensive error handling and installation verification. The MSI version will be installed on machines where the application is not already installed.
 
 ## Output
 
