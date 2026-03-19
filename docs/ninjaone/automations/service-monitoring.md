@@ -237,7 +237,7 @@ When exit code is 1 and a ticket is created, the comment includes:
 
 ### Which server roles are supported by this script?
 
-> This script depends on the [Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6) solution to detect server roles. This fetches server roles stored in custom field [cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba.)
+> This script depends on the [Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6) solution to detect server roles. This fetches server roles stored in custom field [cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba)
 
 ### What does Restart Service actually change?
 
