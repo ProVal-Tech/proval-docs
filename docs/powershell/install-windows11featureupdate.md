@@ -9,7 +9,7 @@ tags: ['installation', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-06
+  date: 2026-03-20
 ---
 
 ## Overview
@@ -110,6 +110,10 @@ The script generates the following output files:
 - [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8cf7)
 
 ## Changelog
+
+### 2026-03-20  
+
+- Added support for the Windows PC Health Check application in Dutch, identified as `Windows pc-statuscontrole.`  
 
 ### 2026-03-12
 
