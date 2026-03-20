@@ -82,7 +82,7 @@ Running the script without passing arguments to perform the auditing and store d
 
 | Name  | Example | Required | Description |
 | ----- | ------- | -------- | ----------- |
-| Debug | <ul><li>`False`</li><li>`True`</li></ul>   | False    | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| `Debug` | <ul><li>`False`</li><li>`True`</li></ul>   | False    | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## EDFs
 
