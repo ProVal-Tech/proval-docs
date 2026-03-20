@@ -4,11 +4,25 @@ slug: /4140af67-f072-4d69-81c1-ee6a4fdd5ba7
 title: 'Restart NinjaRMM Agent Service'
 title_meta: 'Restart NinjaRMM Agent Service'
 keywords: ['service','ninja','rmm']
-description: 'The script is designed to ensure the NinjaRMM Agent and Ninja Remote services remains operational and automatically recovers from service failures.'
+description: 'Schedules a one-time task to restart NinjaRMMAgent and ncstreamer services after 3 minutes.'
 tags: ['application','diagnostic','windows']
 draft: false
 unlisted: false
 last_update:
+  date: 2026-03-18
+---
+
+## Overview
+
+    This script performs the following actions:
+
+    - Checks if the 'EnsureNinjaServiceRunning' scheduled task exists before proceeding
+
+    - Creates a restart script on disk
+
+    - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution
+
+    - The scheduled task runs as SYSTEM with highest privileges
   date: 2026-03-13
 ---
 
@@ -31,7 +45,7 @@ The script is designed to ensure the NinjaRMM Agent and Ninja Remote services re
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/restart-ninjarmm-agent-service.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/restart-ninja-rmm-agent-services.ps1)
 
 ## Output
 
@@ -39,6 +53,16 @@ The script is designed to ensure the NinjaRMM Agent and Ninja Remote services re
 
 ## Changelog
 
+### 2026-03-18
+
+- Changes that were made
+
+  - Checks if the 'EnsureNinjaServiceRunning' scheduled task exists before proceeding
+  - Creates a restart script on disk
+  - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution
+  - The scheduled task runs as SYSTEM with highest privileges
+
+### 2026-03-10
 2026-03-13
 
 - Initial version of the document
