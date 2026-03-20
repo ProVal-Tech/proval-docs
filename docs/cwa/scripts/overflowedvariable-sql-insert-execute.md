@@ -84,7 +84,7 @@ This is a function script and should not be run manually.
 
 - [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
 - [Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
-- [Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276/)
+- [Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276)
 
 ## Changelog
 
