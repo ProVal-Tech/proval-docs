@@ -9,16 +9,12 @@ tags: ['database', 'optimization', 'sql']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-03-20
 ---
 
 ## Summary
 
 Occasionally, a returned SQL insert string may exceed the 65,500 character limit. The intention of this script is to take in a collection of data (from a JSON file stored in the working directory), determine the most efficient number of rows to select for the insert statement, populate that result, execute the insert statement, and continue this process until all items in the file are inserted into the table.
-
-**File Path**: `C:/ProgramData/_Automation/script/Get-PowerPlan/Manage-OverFlowedVariable.ps1`  
-**File Hash (SHA256)**: `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
-**File Hash (MD5)**: `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
 ## Sample Run
 
@@ -84,7 +80,17 @@ This is a function script and should not be run manually.
    - `SQLInsert`  
 10. Return that object.
 
+## Examples
+
+- [Power Plan - Audit [DV]](/docs/6e9ec56b-ba57-48cd-8dff-e659c30d2f3d)
+- [Remove - PUA](/docs/dd7d4c4a-ee5a-46c1-bc19-5cfd16584ecf)
+- [Dell Command Update - Install/Upgrade + Command Handler [DV,Param,Autofix]](/docs/2ab976d5-8a03-49e6-9d72-ad529631d276/)
+
 ## Changelog
+
+### 2026-03-20
+
+- Applied code signing to the PowerShell script.
 
 ### 2025-04-10
 

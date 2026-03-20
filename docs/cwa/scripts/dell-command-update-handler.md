@@ -9,7 +9,7 @@ tags: ['bios', 'firmware', 'installation', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-12
+  date: 2026-03-20
 ---
 
 ## Summary
@@ -30,19 +30,12 @@ This script provide feature to perform the Dell command scanning audit if no arg
 1. The systems must be compatible with the installation of Dell Command Update. For further details on compatible systems, please visit the compatible systems section of the following link: [Dell Command | Update Windows Universal Application | Driver Details | Dell US](https://www.dell.com/support/home/en-us/drivers/DriversDetails?driverId=0XNVX)  
 2. ProVal does not recommend performing BIOS updates remotely. ProVal is not responsible for any failed devices due to remote BIOS updates. BIOS updates are performed at the MSP's risk.
 
-## File Hash
-
-- **File Path:** `C:\ProgramData\_automation\Script\Install-DCU\Initialize-DellCommandUpdate.ps1`  
-- **File Hash (Sha256):** `4DB40E166F5E5F58F083FA8E0470CBA0869B465004502A911230601526DE369E`  
-- **File Hash (MD5):** `995B90C55762ADE9528A1610BE65615D`  
-
-
 ## Dependencies
 
 - [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 - [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c)
+- [Script - OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8)
 - [Solution - Dell Command Update Handler](/docs/5c6d840b-852a-41df-a5e2-08d7d7af564a)
-
 
 ## Sample Run
 
@@ -50,20 +43,20 @@ Run the script with the `SetEnvironment` parameter set to 1 after import to get 
 
 ![SetEnvironment](../../../static/img/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747/image8.webp)  
 
-**Example 1**
+**Example 1:**
 
 Running the script with basic `/scan` command to return the available updates.  
 **Arguments:** `/Scan`  
 ![Image1](../../../static/img/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747/image10.webp)  
 
-**Example 2**
+**Example 2:**
 
 Running the script to install available `bios`, `firmaware`, and `driver` updates.  
 This command will not update any active driver as we are not using the `-forceupdate` switch.  
 **Arguments:** `/applyUpdates -updateType=bios,firmware,driver -silent -reboot=disable`  
 ![Image2](../../../static/img/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747/image11.webp)  
 
-**Example 3**
+**Example 3:**
 
 Running the script to forcefully install all available driver updates.  
 <span style={{color: 'Orange'}}>**Caution:** It is recommended to restart the computer at the earliest convenience after using the `-forceupdate=enable` switch, as this switch updates active drivers as well. An active driver that requires a restart for the update may malfunction if the update is installed without rebooting the computer.</span>
@@ -71,15 +64,12 @@ Running the script to forcefully install all available driver updates.
 **Arguments:** `/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable`  
 ![Image3](../../../static/img/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747/image12.webp)  
 
-
-**Example 4**
+**Example 4:**
 
 Running the script without passing arguments to perform the auditing and store data to the [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c).
 
 **Arguments:** ''  
 ![Image1](../../../static/img/docs/91cc7f02-1c0d-4303-81f2-91fd0d275747/image9.webp)  
-
-
 
 ## User Parameters
 
@@ -87,8 +77,12 @@ Running the script without passing arguments to perform the auditing and store d
 |----------|---------|----------|---------------------------------------------------------------------------------------------------|
 | `SetEnvironment`            | `1`               | `False`      | If set to `1`, it will import the required EDFs for the Dell command scanning and exclusions, and it will also create the [Table - pvl_dellcommand_audit](/docs/21a8afce-3a1c-4bdf-b2d2-a5581583e27c).           |
 | Arguments  | <ul><li>`/version`</li><li>`/scan`</li><li>`/scan -updateType=bios,firmware,driver`</li><li>`/applyUpdates -updateType=bios,firmware -silent -reboot=disable`</li><li>`/applyUpdates -updateType=driver -silent -reboot=disable -forceupdate=enable`</li><li>`/driverInstall -silent -reboot=disable`</li></ul>   | False    | Command to execute on the computer; the /scan command will be executed if this parameter is left blank. <br /> **Reference:** [Supported commands/arguments reference](https://www.dell.com/support/manuals/en-us/command-update/dcu_rg/dell-command-%7C-update-cli-commands?guid=guid-92619086-5f7c-4a05-bce2-0d560c15e8ed&lang=en-us) |
-                  |
 
+## Global Variables
+
+| Name  | Example | Required | Description |
+| ----- | ------- | -------- | ----------- |
+| Debug | <ul><li>`False`</li><li>`True`</li></ul>   | False    | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## EDFs
 
@@ -105,10 +99,19 @@ Running the script without passing arguments to perform the auditing and store d
 
 ## Changelog
 
+### 2026-03-20
+
+- Applied code signing to the PowerShell script.
+- Enhanced logging for improved visibility and troubleshooting.
+- Improved error handling for greater reliability.
+- Resolved an issue where the script failed to invoke the agnostic script with the correct arguments.
+- Resolved an issue where auditing was not performed when the script was triggered from the internal monitor.
+- Updated the script to use [OverFlowedVariable - SQL Insert - Execute](/docs/34cee8fe-1b6b-4558-a890-2face427ceb8) for SQL insert operations.
+
 ### 2026-03-05
 
 - Updated script to use the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f). It will perform the Dell command scan audit if no arguments is passed and install updates using passed arguments.
 
 ### 2025-04-10
 
-- Initial version of the document
+- Initial version of the document.
