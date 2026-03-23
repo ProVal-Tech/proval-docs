@@ -25,6 +25,12 @@ Detect Windows endpoints that do not have the QuickPass Agent installed and depl
 | [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2) | Script | Silently removes the QuickPass Agent from a device when required. |
 | **△ Custom - Execute Script - Deploy QuickPass Agent** | Alert Template | Executes the deployment script against devices flagged by the internal monitor. |
 
+## Additional Content
+
+| Content | Type | Function |
+| ------- | ---- | -------- |
+| [Cyber QP and Duo Auth Registry Config [Change]](/docs/5732e23f-eeb7-4017-ab8c-7b3b7bf25329) | Remote monitor | Applies registry configurations on systems where both 'Duo Authentication for Windows Logon x64' and 'Quickpass' are installed, enabling Duo Authentication in conjunction with CyberQP End User Elevation and activating the CyberQP Credential Provider for integrated authentication support. |
+
 ## Implementation
 
 ### Step 1 — Import
@@ -35,6 +41,7 @@ Import the following assets from the ProSync package or repository:
 - Script - [Uninstall QuickPass](/docs/632a4585-aa0a-11f0-9766-92000234cfc2)
 - Internal Monitor - [Agents Missing QuickPass](/docs/b96aee11-a990-4b23-9ba8-afc420225bac)
 - Alert Template - `△ Custom - Execute Script - Deploy QuickPass Agent`
+- Follow the Remote monitor [Cyber QP and Duo Auth Registry Config [Change]](/docs/5732e23f-eeb7-4017-ab8c-7b3b7bf25329) documentation for importing it to the required group list as requested by the partner.
 
 ### Step 2 — Reload System Cache
 
@@ -90,6 +97,11 @@ Q: How can I verify the upgrade completed successfully?
 A: Check the CWA script log for a successful install entry, confirm the `QuickPass Agent (64-bit)` is listed in installed programs, and validate the agent reports to its management platform.
 
 ## Changelog
+
+### 2026-03-19
+
+- Added the remote monitor [Cyber QP and Duo Auth Registry Config [Change]](/docs/5732e23f-eeb7-4017-ab8c-7b3b7bf25329) that performs registry configurations on systems where both 'Duo Authentication for Windows Logon x64' and 'Quickpass' are installed, enabling Duo Authentication in conjunction with CyberQP End User Elevation and activating the CyberQP Credential Provider for integrated authentication support.
+
 
 ### 2026-03-06
 
