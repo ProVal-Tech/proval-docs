@@ -24,15 +24,15 @@ This script removes specified Foxit applications using the [Remove Application](
 
 ***Uninstall Foxit PDF Editor***
 
-![Image1](../../../static/img/198393c5-26bd-11f1-96dd-005056b4bcca/image1.webp)
+![Image1](../../../static/img/docs/198393c5-26bd-11f1-96dd-005056b4bcca/image1.webp)
 
 ***Uninstall Foxit PDF Editor, Foxit PhantomPDF and create ticket on failure***
 
-![Image2](../../../static/img/198393c5-26bd-11f1-96dd-005056b4bcca/image2.webp)
+![Image2](../../../static/img/docs/198393c5-26bd-11f1-96dd-005056b4bcca/image2.webp)
 
 ***Uninstall Foxit PDF Editor, Foxit PhantomPDF, and Foxit PDF Reader***
 
-![Image3](../../../static/img/198393c5-26bd-11f1-96dd-005056b4bcca/image3.webp)
+![Image3](../../../static/img/docs/198393c5-26bd-11f1-96dd-005056b4bcca/image3.webp)
 
 ## Dependencies
 
