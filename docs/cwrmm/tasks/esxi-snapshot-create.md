@@ -27,7 +27,7 @@ This task can be used to create a snapshot of a machine hosted on an ESXi host s
 | ESXiHost | 111.111.111.111          | True     | Text String | IP Address of ESXi Host. |
 | Username   | ESXIAdmin | True     | Text String | Username to use to connect with the ESXi Host. |
 | Password  | "QWfqw2%R@@$@FQW:RVV!'qwdwq" | True     | Text String | Password to use to connect with the ESXi Host. |
-| SnapshotName   | CW-Automate-Temp-Snapshot_20230501_081958 | False | Text String | Name of the Snapshot to create. By default, script will create snapshot with name "CW-Automate-Temp-Snapshot_yyyyMMdd_HHmmss" |
+| SnapshotName   | CW-RMM-Temp-Snapshot_20230501_081958 | False | Text String | Name of the Snapshot to create. By default, script will create snapshot with name "CW-RMM-Temp-Snapshot_yyyyMMdd_HHmmss" |
 
 ## Task Creation
 
@@ -50,9 +50,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `ESXi - Snapshot Create`  
-**Description:** `This task can be used to create a snapshot of a machine hosted on an ESXi host server. It utilizes the PowerCLI Module to perform the required action.`  
-**Category:** `Custom`
+- **Name:** `ESXi - Snapshot Create`  
+- **Description:** `This task can be used to create a snapshot of a machine hosted on an ESXi host server. It utilizes the PowerCLI Module to perform the required action.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2543f54a-2d4d-46d0-9827-ce94a1ef444d/image1.webp) 
 
@@ -73,7 +73,7 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### ESXiHost
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
+
 
 - Set `ESXiHost` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -85,7 +85,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### Username
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `Username` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -97,7 +96,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### Password
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `Password` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -109,7 +107,7 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### SnapshotName
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
+
 
 - Set `SnapshotName` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -145,7 +143,7 @@ $ConfirmPreference = 'None'
 
 $SnapshotName = "@SnapshotName@"
 if ([string]::IsNullOrEmpty($SnapshotName)) {
-  $SnapshotName = "CW-Automate-Temp-Snapshot_$(Get-Date -Format 'yyyyMMdd_HHmmss')"
+  $SnapshotName = "CW-RMM-Temp-Snapshot_$(Get-Date -Format 'yyyyMMdd_HHmmss')"
 }
 
 $VMName = '@VMName@'
@@ -171,12 +169,12 @@ if ([string]::IsNullOrEmpty($Pwd)) {
 [securestring]$Password= ConvertTo-SecureString $Pwd -AsPlainText -Force
 
 if ((Get-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full').Release -lt 461808)
- {Throw '.Net Version installed on the computer does not meet the minumum criteria of .Net Framework 4.7.2+  (Release: 461808)'} 
- else {'Required .Net Version detected'}
- 
+{Throw '.Net Version installed on the computer does not meet the minumum criteria of .Net Framework 4.7.2+  (Release: 461808)'} 
+else {'Required .Net Version detected'}
+
 if ($PSVersionTable.PSVersion -lt [Version]'5.1') 
- {throw 'PowerShell Version installed on the computer does not meet the minumum criteria of PowerShell v5.1+'} 
- else {'Required PowerShell Version Detected'}
+{throw 'PowerShell Version installed on the computer does not meet the minumum criteria of PowerShell v5.1+'} 
+else {'Required PowerShell Version Detected'}
 
 
 

@@ -46,9 +46,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Hyper-V - Checkpoint Create`  
-**Description:** `The task can be used to create a checkpoint of a virtual machine hosted on a Hyper-V Host Server.`  
-**Category:** `Custom`
+- **Name:** `Hyper-V - Checkpoint Create`  
+- **Description:** `The task can be used to create a checkpoint of a virtual machine hosted on a Hyper-V Host Server.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/f023947e-50a2-4f12-9935-53e6cc373143/image1.webp) 
 

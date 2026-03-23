@@ -27,7 +27,7 @@ This task can be used to delete a snapshot of a machine hosted on an ESXi host s
 | ESXiHost | 111.111.111.111          | True     | Text String | IP Address of ESXi Host. |
 | Username   | ESXIAdmin | True     | Text String | Username to use to connect with the ESXi Host. |
 | Password  | "QWfqw2%R@@$@FQW:RVV!'qwdwq" | True     | Text String | Password to use to connect with the ESXi Host. |
-| SnapshotName   | CW-Automate-Temp-Snapshot_20230501_081958 | False | Text String | Name of the Snapshot to delete |
+| SnapshotName   | CW-RMM-Temp-Snapshot_20230501_081958 | False | Text String | Name of the Snapshot to delete |
 
 ## Task Creation
 
@@ -50,9 +50,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `ESXi - Snapshot Delete`  
-**Description:** `This task can be used to delete a snapshot of a machine hosted on an ESXi host server. It utilizes the PowerCLI Module to perform the required action.`  
-**Category:** `Custom`
+- **Name:** `ESXi - Snapshot Delete`  
+- **Description:** `This task can be used to delete a snapshot of a machine hosted on an ESXi host server. It utilizes the PowerCLI Module to perform the required action.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/afbc69e1-c57a-4421-af83-781dcceea09a/image1.webp) 
 
@@ -61,7 +61,6 @@ Fill in the following details in the `Description` section:
 ### VMName
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `VMName` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -73,7 +72,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### ESXiHost
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `ESXiHost` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -85,7 +83,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### Username
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `Username` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -97,7 +94,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### Password
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `Password` in the `Parameter Name` field.
 - Enable the `Required Field` button.
@@ -109,7 +105,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 ### SnapshotName
 
 The `Add New Script Parameter` page will appear on clicking the `Add Parameter` button.  
-![AddNewScriptParameter](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addnewscriptparameter.webp)
 
 - Set `SnapshotName` in the `Parameter Name` field.
 - Enable the `Required Field` button.
