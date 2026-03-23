@@ -30,6 +30,8 @@ This solution fetches the status of key certificate and configurations that will
 - Create the  [Group : Windows Machines](/docs/222fae1b-23f8-45d8-9bcf-e1974ee8dcea) using the implementation instruction provided in the document.
 - Create the [Task : Windows Secure Boot Audit](/docs/c394b81e-3d3c-4316-8d92-0d243625a02c) using the implementation instruction provided in the document.
 
+## Changelog
+
 ### 2026-03-23
 
 - Initial version of the document
