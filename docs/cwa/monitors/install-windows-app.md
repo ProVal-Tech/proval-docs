@@ -1,43 +1,41 @@
 ---
 id: 'b22f954e-6a02-46f4-81d3-3f5d18d4991c'
 slug: /b22f954e-6a02-46f4-81d3-3f5d18d4991c
-title: 'ProVal - Production - Install Windows Apps'
-title_meta: 'ProVal - Production - Install Windows Apps'
-keywords: ['windows', 'application', 'windows app']
-description: 'This monitor is built to install the Windows App on the computers where the deployment EDFs are checked.'
+title: 'Install Windows App'
+title_meta: 'Install Windows App'
+keywords: ['windows', 'application', 'windows-app']
+description: 'Identifies Windows workstations where automatic Windows App deployment is enabled, but the app is not installed or the desktop shortcut is missing or invalid. This monitor evaluates data collected by the Install Windows App remote monitor.'
 tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-24
+  date: 2026-03-17
 ---
 
 ## Summary
 
-This monitor is built to install the Windows App on the computers where the deployment EDFs are checked.
-It is recommended to set this monitor alert frequency at every 30 days.
+Identifies Windows workstations where automatic `Windows App` deployment is enabled, but the app is not installed or the desktop shortcut is missing or invalid. This monitor evaluates data collected by the [Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336) remote monitor.
 
 ## Dependencies
 
-- [Script - Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658)
-- Alert Template `△ Custom - Execute Script - Install Windows App`
-- [Solution - Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
+- [Script: Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658)
+- [Remote Monitor: Install Windows App](/docs/8bcee6a9-17e9-4cf8-af0f-ae92e7d60336)
+- Alert Template: `△ Custom - Execute Script - Install Windows App`
+- [Solution: Install Windows App](/docs/0d8c4619-b666-44ec-93b1-2d00e4632865)
+
+## Alert Template
+
+`△ Custom - Execute Script - Install Windows App`
 
 ## Target
 
-- Windows OS
-
-## Implementation
-
-- Import the [Script - Install Windows App](/docs/dd28b731-7fbc-4345-8d0b-6875df1d5658) 
-- Import the monitor
-- Import the Alert Template `△ Custom - Execute Script - Install Windows App`
-- Apply the alert template to the monitor.
-- Run now and reset the monitor  
-  ![Sample Run](../../../static/img/docs/e076294e-fe39-44be-9e03-d620431744a3/image6.webp)
-- Enable the EDFs to start deployment.
+- Global (the monitor set is scoped by SQL to Windows workstations with deployment enabled)
 
 ## Changelog
+
+### 2026-03-17
+
+- SQL optimization
 
 ### 2025-12-17
 
