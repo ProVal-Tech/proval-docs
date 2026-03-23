@@ -111,7 +111,7 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
-![Image](../../../static/img/docs/2543f54a-2d4d-46d0-9827-ce94a1ef444d/image6.webp) 
+![Image](../../../static/img/docs/2543f54a-2d4d-46d0-9827-ce94a1ef444d/snapshotname.webp) 
 
 
 ### Script Editor

@@ -110,7 +110,7 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 
 - Set `SnapshotName` in the `Parameter Name` field.
-- Enable the `Required Field` button.
+- Disable the `Required Field` button.
 - Select `Text String` from the `Parameter Type` dropdown menu.
 - Click the `Save` button.
 
