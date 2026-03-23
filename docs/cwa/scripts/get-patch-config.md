@@ -9,20 +9,12 @@ tags: ['database', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-27
+  date: 2026-03-23
 ---
 
 ## Summary
 
 This Automate implementation of the [Get-PatchConfig](/docs/b43fd352-5874-472a-9fd9-02c8aee38515) agnostic script effectively retrieves and stores the essential data needed to validate the changes made by the [WUA Settings Validation](/docs/1f78325c-968a-4a73-ba85-2a18c061063e) script into a custom table.
-
-**File Path:** `C:/ProgramData/_Automation/script/Get-PatchConfig/Get-PatchConfig.ps1`  
-**File Hash (SHA256):** `0273E2B1D4A623A6AFD274B7E861D75225D8A5464FE51A5971ED331C7D7861E2`  
-**File Hash (MD5):** `589E54907484FC449A129BEB2C47D246`  
-
-**File Path:** `C:/ProgramData/_Automation/script/Get-PatchConfig/Get-PatchConfigAI.ps1`  
-**File Hash (SHA256):** `28038C9DD4A966D5C75ECAD5E11D2E3F3A2E3CC93447F26854BB90151441881E`  
-**File Hash (MD5):** `144299C1C2B3EF52723BAABEFF7FAC45`  
 
 ## Update Notice: 29-Oct-2024
 
@@ -44,7 +36,7 @@ Execute the script against any online Windows computer with the `Set_Environment
 
 ## Dependencies
 
-[EPM - Data Collection - Agnostic - Script - Get-PatchConfig](/docs/b43fd352-5874-472a-9fd9-02c8aee38515)  
+[Get-PatchConfig](/docs/b43fd352-5874-472a-9fd9-02c8aee38515)  
 
 ## Variables
 
@@ -68,6 +60,10 @@ Execute the script against any online Windows computer with the `Set_Environment
 - Dataview
 
 ## Changelog
+
+### 2026-03-23
+
+- Code Signed the PowerShell script.
 
 ### 2025-04-10
 

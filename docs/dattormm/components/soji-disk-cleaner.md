@@ -9,7 +9,7 @@ tags: ['cleanup', 'datto', 'disk-cleanup', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-04
+  date: 2026-03-23
 ---
 
 ## Summary
@@ -66,7 +66,7 @@ Soji is an intelligent yet simple disk cleanup utility that uses both native Sys
 
 ## Implementation
 
-Import the [attached component](../../../static/attachments/itg/11821769/soji-disk-cleaner.cpt) into Datto RMM.
+Import the [attached component](../../../static/attachments/soji-disk-cleaner.cpt) into Datto RMM.
 
 ## Output
 
@@ -76,9 +76,14 @@ Import the [attached component](../../../static/attachments/itg/11821769/soji-di
 
 ## Attachments
 
-[Soji Disk Cleaner.cpt](../../../static/attachments/itg/11821769/soji-disk-cleaner.cpt)
+- [Soji Disk Cleaner.cpt](../../../static/attachments/soji-disk-cleaner.cpt)
 
 ## Changelog
+
+### 2026-03-23
+
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
+- Code Signed the PowerShell script
 
 ### 2025-07-08
 

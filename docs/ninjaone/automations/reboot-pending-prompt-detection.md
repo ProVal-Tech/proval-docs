@@ -9,7 +9,7 @@ tags: ['reboot', 'notifications', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-19
+  date: 2026-03-23
 ---
 
 ## Overview
@@ -57,6 +57,11 @@ If the script determines a reboot is needed, the timing is valid, and no conflic
 - **Custom Field:** Updates `cPVAL Pending Reboot`, `cPVAL Last Prompted`, and `cPVAL Times Prompted` when resetting state (self-healing).
 
 ## Changelog
+
+### 2026-03-23
+
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
+- Code Signed the PowerShell script.
 
 ### 2025-12-19
 

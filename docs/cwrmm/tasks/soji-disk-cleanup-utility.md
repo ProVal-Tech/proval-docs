@@ -9,7 +9,7 @@ tags: ['cleanup', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-13
+  date: 2026-03-23
 ---
 
 ## Summary
@@ -22,274 +22,516 @@ Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument
 
 ## Sample Run
 
-![Sample Run 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_1.webp)
+*Clean all fixed drives with all available cleaners:*
 
-![Sample Run 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_2.webp)
+![Image1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image1.webp)
 
-![Sample Run 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_3.webp)
+*Clean the C and F drives:*
+
+![Image2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image2.webp)
+
+*Clean all fixed drives and read back the file JSON report in PowerShell:*
+
+![Image3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image3.webp)
 
 ## Dependencies
 
 - [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc)
 
-## Variables
-
-| Name               | Description                             |
-|--------------------|-----------------------------------------|
-| ProjectName        | Soji                                    |
-| WorkingDirectory    | C:/ProgramData/_automation/app/Soji    |
-
 ### User Parameters
 
-| Name       | Example  | Required | Description                                                                 |
-|------------|----------|----------|-----------------------------------------------------------------------------|
-| Arguments  | --all    | False    | Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage. |
+| Name       | Example  | Required | Default | Description                                                                 |
+|------------|----------|----------|---------|--------------------------------------------------------------------|
+| Arguments  | `--all`   | Yes     | `--all` | Please reference [Soji](/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc) for argument usage. |
 
 **Note:** Arguments are case sensitive.
 
-## Create Script
+## Task Setup Path
 
-Create a new `Script Editor` style script in the system to implement this Task.
+**Tasks Path:** `AUTOMATION` ➞ `Tasks`  
+**Task Type:** `Script Editor`
 
-![Create Script](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_4.webp)
+## Task Creation
 
-![Create Script 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_5.webp)
+### Description
 
-**Name:** `Soji (Disk Cleanup Utility)`
+- **Name:** `Soji (Disk Cleanup Utility)`  
+- **Description:**
 
-**Description:** `Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.`
+```PlainText
+Soji is an intelligent yet simple disk cleanup utility that uses both native System.IO file and directory management and COM references to the deprecated cleanmgr tool to tidy up one or more volumes on a Windows system.
 
-**Category:** `Maintenance`
-
-![Parameters](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_6.webp)
-
-Click the `Add Parameter` button.
-
-![Add Parameter](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_7.webp)
-
-The `Add New Script Parameter` box will appear.
-
-![New Script Parameter](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_8.webp)
-
-In the box, fill in the following details and select `Save` to create the `Arguments` parameter.
-
-**Parameter Name:** `Arguments`
-
-**Required Field:** `True`
-
-**Parameter Type:** `Text String`
-
-**Default Value:** `True`
-
-**Value:** `--All`
-
-![Parameter Details](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_9.webp)
-
-### Script
-
-Start by adding a row. You can do this by clicking the `Add Row` button at the bottom of the script page.
-
-![Add Row](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_10.webp)
-
-#### Row 1 Function: Set User variable
-
-Select `Set User Variable` function.
-
-![Set User Variable](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_11.webp)  
-![Set User Variable 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_12.webp)
-
-![Set User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
-
-Type `ProjectName` in the `Variable Name` field and `Soji` in the `Value` field. Click the `Save` button to create the variable.
-
-![User Variable 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_14.webp)  
-![User Variable 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_15.webp)
-
-#### Row 2 Function: Set User variable
-
-Insert a new row by clicking the `Add Row` button.
-
-![Add Row 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
-
-Select `Set User Variable` function.
-
-![Set User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_11.webp)  
-![Set User Variable 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_12.webp)
-
-![Set User Variable 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_13.webp)
-
-Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
-Type `WorkingDirectory` in the `Variable Name` field and `C:\ProgramData\_automation\app\@ProjectName@` in the `Value` field. Click the `Save` button to create the variable.
-
-![User Variable 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_17.webp)  
-![User Variable 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_18.webp)
-
-#### Row 3 Function: PowerShell Script
-
-Insert a new row by clicking the `Add Row` button.
-
-![Add Row 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
-
-Select `PowerShell Script` function.
-
-![PowerShell Script 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp)  
-![PowerShell Script 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp) ![PowerShell Script 3](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
-
-Paste in the following PowerShell script, set the expected time of script execution to `300` seconds, and click the `Save` button.
-
-```Powershell
-$WorkingDirectory = '@WorkingDirectory@\@ProjectName@'
-
-Remove-Item -Path $WorkingDirectory -Recurse -Force -Confirm:$false -ErrorAction SilentlyContinue
-
-if ( !(Test-Path $WorkingDirectory) ) {
-    try {
-        New-Item -Path $WorkingDirectory -ItemType Directory -Force -Erroraction Stop | Out-Null
-    } catch {
-        throw "Failed to Create $WorkingDirectory. Reason: $($Error[0].Exception.Message)"
-    }
-}
-
-if (-not ( ( ( Get-Acl $WorkingDirectory ).Access | Where-Object { $_.IdentityReference -Match 'Everyone' } ).FileSystemRights -Match 'FullControl' ) ) {
-    $Acl = Get-ACL $WorkingDirectory 
-    $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'none', 'Allow')
-    $Acl.AddAccessRule($AccessRule)
-    Set-Acl  $WorkingDirectory $Acl
-}
+https://content.provaltech.com/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc/
 ```
 
-![PowerShell Script 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_22.webp)  
-![PowerShell Script 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
+- **Category:** `Maintenance`
 
-#### Row 4 Function: PowerShell Script
+![Image4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image4.webp)
 
-Insert a new row by clicking the `Add Row` button.
+### Parameters
 
-![Add Row 4](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
+| Parameter Name | Required Field | Parameter Type | Default Value | Value |
+| -------------- | -------------- | -------------- | ------------- | ----- |
+| Arguments | Enabled | Text String | Enabled | `--all` |
 
-Select `PowerShell Script` function.
+**Arguments:**  
+    ![Image5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image5.webp)
 
-![PowerShell Script 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp)  
-![PowerShell Script 7](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp)  
-![PowerShell Script 8](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
+![Image6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image6.webp)
 
-Paste in the following PowerShell script, set the expected time of script execution to `600` seconds, and click the `Save` button.
+### Script Editor
+
+#### Step 1: Row -> PowerShell script
+
+- **Use Generative AI Assist for script creation:** `False`  
+- **Expected time of script execution in seconds:** `1800`  
+- **Operating System:** `Windows`  
+- **Continue on Failure:** `False`  
+- **Run as:** `System`  
+- **PowerShell Script Editor:**
 
 ```PowerShell
+<#
+.SYNOPSIS
+    Downloads and executes the Soji cleanup tool for ConnectWise RMM endpoints.
+
+.DESCRIPTION
+    This script is designed to run from a ConnectWise RMM task.
+    It downloads Soji from ProVal's repository, ensures .NET Desktop Runtime 8 is available,
+    then executes Soji using the CW RMM task parameter token @Arguments@.
+
+    Behavior:
+    - If @Arguments@ is not set (or still contains the unresolved token text), the script runs
+      Soji with no command-line options, which triggers Soji default cleaning behavior.
+    - If @Arguments@ is set, the script appends that value directly and runs Soji with the
+      provided options.
+
+    High-level workflow:
+    1. Create and validate the working directory under ProgramData.
+    2. Set TLS 1.2/1.3 for secure outbound downloads.
+    3. Install .NET Desktop Runtime 8 if it is missing.
+    4. Download Soji.exe from ProVal content repository.
+    5. Build execution command from @Arguments@.
+    6. Execute Soji and return the logs directory path.
+
+.PARAMETER Arguments
+    ConnectWise RMM task parameter token: @Arguments@
+
+    Pass a Soji argument string exactly as it should be executed.
+    If left blank in the CW RMM task, Soji runs with no arguments.
+
+    Supported Soji options include:
+    - --drives, -d                 Example: C,D
+    - --days, -y                   Example: 10.1
+    - --json, -j
+    - --csv, -c
+    - --systempaths, -p            Example: "Temp|\\.txt$","system32\\Temp"
+    - --userpaths, -u              Example: "AppData\\Local\\Adobe|\\.log$","AppData\\Local\\Microsoft"
+    - --purge-downloads
+    - --clean-winsxs
+    - --run-cleanmgr
+    - --empty-recyclebin
+    - --winsxs-seconds             Default: 300
+    - --all
+    - --debug
+
+.EXAMPLE
+    CW RMM task parameter:
+        @Arguments@ = --all
+
+    Resulting execution:
+        Soji.exe --all
+
+.EXAMPLE
+    CW RMM task parameter:
+        @Arguments@ = --drives C,F
+
+    Resulting execution:
+        Soji.exe --drives C,F
+
+.EXAMPLE
+    CW RMM task parameter:
+        @Arguments@ = --json
+
+    Resulting execution:
+        Soji.exe --json
+
+    JSON reports are generated in SojiLogs under the working directory.
+
+.EXAMPLE
+    CW RMM task parameter:
+        @Arguments@ = --csv -p "MyFolder\MySubfolder|^Arigatou.*\.txt$" -u "AppData\MyAppPath\Logs|\.log$" --days 21.5 --all
+
+    Resulting execution:
+        Soji.exe --csv -p "MyFolder\MySubfolder|^Arigatou.*\.txt$" -u "AppData\MyAppPath\Logs|\.log$" --days 21.5 --all
+
+.OUTPUTS
+    System.String
+
+    Returns:
+        Logs Directory: '<workingDirectory>\Sojilogs'
+
+    Soji log output is written under SojiLogs in the current working directory. When --csv and/or
+    --json are passed, report files are also generated in SojiLogs.
+
+    Common Soji output files:
+    - .\SojiLogs\soji.log
+    - .\SojiLogs\soji-files.csv
+    - .\SojiLogs\soji-directories.csv
+    - .\SojiLogs\soji-volumecaches.csv
+    - .\SojiLogs\soji-summary.csv
+    - .\SojiLogs\soji-files.json
+    - .\SojiLogs\soji-directories.json
+    - .\SojiLogs\soji-volumecaches.json
+    - .\SojiLogs\soji-summary.json
+
+.NOTES
+    - Designed for ConnectWise RMM task execution.
+    - Requires administrative privileges for cleanup operations.
+    - Downloads Soji from ProVal repository:
+      https://content.provaltech.com/docs/c762e174-5262-44b9-a3e9-97ca9ff94afc/
+    - Soji defaults apply when no arguments are provided.
+#>
+
+#region globals
 $ProgressPreference = 'SilentlyContinue'
-$appName = 'dotNet8DesktopRuntime'
-$workingDirectory = 'C:\ProgramData\_automation\app\Prompter'
-$dotnet8path = 'C:\ProgramData\_automation\app\Prompter\dotNet8DesktopRuntime.exe'
+$WarningPreference = 'SilentlyContinue'
+$InformationPreference = 'Continue'
+$ConfirmPreference = 'None'
+#endRegion
 
-Function Install-Check {
+#region Variables
+$appName = 'Soji'
+$workingDirectory = '{0}\_Automation\app\{1}' -f $env:ProgramData, $appName
+$appPath = '{0}\{1}.exe' -f $workingDirectory, $appName
+$logsDirectory = '{0}\{1}logs' -f $workingDirectory, $appName
+$baseUrl = 'https://contentrepo.net/repo'
+$downloadUrl = '{0}/app/{1}.exe' -f $baseUrl, $appName
+#endRegion
+
+#region Functions
+function Install-DotNet8DesktopRunTime {
+    <#
+    .SYNOPSIS
+        Installs the latest available .NET Desktop Runtime 8 version if it is not already installed.
+
+    .DESCRIPTION
+        Checks the local endpoint for installed Microsoft Windows Desktop Runtime versions by calling
+        Get-InstalledDotNetDesktopRuntime. If major version 8 is already installed, the script exits
+        without changes.
+
+        If not installed, the script:
+        - Creates a working directory under ProgramData.
+        - Ensures required ACL permissions on that directory.
+        - Enforces TLS 1.2/1.3 for outbound web requests.
+        - Detects OS architecture and maps it to the appropriate RID.
+        - Retrieves the latest .NET 8 Windows Desktop Runtime installer URL from Microsoft's
+        official release metadata feed.
+        - Downloads and silently installs the runtime.
+        - Verifies installation and cleans up the installer binary.
+
+        This script is intended for automated execution in RMM/automation workflows.
+
+    .EXAMPLE
+        .\Install-dotNet8DesktopRuntime.ps1
+
+        Runs the full detection-and-install workflow. If .NET Desktop Runtime 8 is already installed,
+        the script returns a no-action message.
+
+    .OUTPUTS
+        System.String
+
+        Returns:
+        - '.NET Desktop Runtime 8 is already installed. No action is required.' when no install is needed.
+
+        Writes informational progress messages during install path execution and throws terminating
+        errors when download, install, or verification fails.
+
+    .NOTES
+        - Requires Windows with PowerShell 5.1+.
+        - Requires administrative privileges for install and ProgramData operations.
+        - Uses BITS for download and Start-Process for silent installer execution.
+        - Release metadata source: https://builds.dotnet.microsoft.com/dotnet/release-metadata/8.0/releases.json
+    #>
+
+    [CmdletBinding()]
+    [OutputType([string])]
+    param ()
+
+    begin {
+        #region globals
+        $ProgressPreference = 'SilentlyContinue'
+        $WarningPreference = 'SilentlyContinue'
+        $InformationPreference = 'Continue'
+        #endRegion
+
+        #region variables
+        $appName = 'dotNet8DesktopRuntime'
+        $workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $appName
+        $appPath = '{0}\{1}.exe' -f $workingDirectory, $appName
+        $url = 'https://builds.dotnet.microsoft.com/dotnet/release-metadata/8.0/releases.json'
+        $installerArguments = @(
+            '/install',
+            '/quiet',
+            '/norestart'
+        )
+        #endRegion
+
+        #region function
+        function Get-InstalledDotNetDesktopRuntime {
+            <#
+            .SYNOPSIS
+                Gets installed .NET Windows Desktop Runtime versions from the local endpoint.
+
+            .DESCRIPTION
+                Resolves the path to `dotnet.exe` and executes `dotnet --list-runtimes`, then parses
+                the output and returns only Windows Desktop Runtime entries (Microsoft.WindowsDesktop.App).
+
+                The function returns one object per detected runtime version with friendly name,
+                major version, full version, and installed path.
+
+            .PARAMETER None
+                This function does not accept parameters.
+
+            .OUTPUTS
+                System.Object[]
+
+                Each object contains:
+                - Name          : Friendly display name (for example, Microsoft Windows Desktop Runtime - 8.0.25)
+                - MajorVersion  : Major version number as Int32
+                - Version       : Full semantic version string
+                - InstalledPath : Runtime install path reported by dotnet
+
+            .EXAMPLE
+                $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+
+                Returns all installed Windows Desktop Runtime versions.
+
+            .EXAMPLE
+                Get-InstalledDotNetDesktopRuntime | Where-Object { $_.MajorVersion -eq 8 }
+
+                Returns only .NET 8 Windows Desktop Runtime entries.
+
+            .NOTES
+                Used by this script to verify whether .NET Desktop Runtime 8 is already present
+                before installation and to confirm installation success afterward.
+            #>
+            [CmdletBinding()]
+            [OutputType([System.Object[]])]
+            param()
+
+            #region dotnet path
+            $dotnetCommand = Get-Command 'dotnet' -ErrorAction SilentlyContinue
+            if ($dotnetCommand) {
+                $dotNetExePath = $dotnetCommand.Source
+            } else {
+                $dotNetExePath = '{0}\dotnet\dotnet.exe' -f $env:ProgramFiles
+            }
+            #endRegion
+
+            #region variables
+            $listRuntimesCommand = '{0}{1}{0} --list-runtimes' -f [char]34, $dotNetExePath
+            $installed = @()
+            #endRegion
+
+            #region retrieve installed .net info
+            $runtimes = cmd.exe /c $listRuntimesCommand
+            #endRegion
+
+            #region create installed versions object
+            foreach ($line in $runtimes) {
+                if ($line -match '^((?<Name>.+?)\s+)?(?<Version>\d+\.\d+\.\d+)\s\[(?<Path>[^\]]+)\]$') {
+                    $name = $matches['Name']
+                    $version = $matches['Version']
+                    $path = $matches['Path']
+
+                    if ($path -notmatch 'Microsoft.WindowsDesktop.App') {
+                        continue
+                    }
+                    $name = 'Microsoft Windows Desktop Runtime - {0}' -f $version
+
+                    $obj = [PSCustomObject]@{
+                        Name          = $name
+                        MajorVersion  = ([Version]$version).Major
+                        Version       = $version
+                        InstalledPath = $path
+                    }
+                    $installed += $obj
+                }
+            }
+            #endRegion
+            return $installed
+        }
+        #endRegion
+    } process {
+        #region check if .net desktop runtime 8 is installed
+        $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+        $runtime8Installed = $installedRuntimes | Where-Object { $_.MajorVersion -eq 8 }
+        if ($runtime8Installed) {
+            return '.NET Desktop Runtime 8 is already installed. No action is required.'
+        } else {
+            Write-Information -MessageData '.NET Desktop Runtime 8 is not installed. Proceeding with installation.'
+        }
+
+        #region working directory
+        if (-not (Test-Path -Path $workingDirectory)) {
+            try {
+                New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+            } catch {
+                throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
+            }
+        }
+        #endRegion
+
+        #region get os architecture
+        try {
+            $osArchitecture = (Get-CimInstance -ClassName 'Win32_OperatingSystem' -ErrorAction Stop).OSArchitecture
+        } catch {
+            Write-Information -MessageData 'Failed to determine OS architecture. Defaulting to win-x64.'
+            $osArchitecture = '64-bit'
+        }
+        $rid = if ($osArchitecture -eq '64-bit') {
+            'win-x64'
+        } elseif ($osArchitecture -eq '32-bit') {
+            'win-x86'
+        } else {
+            'win-arm64'
+        }
+        #endRegion
+
+        #region fetch latest download url for .net desktop runtime 8
+        try {
+            $downloadUrl = (Invoke-RestMethod -Uri $url -UseBasicParsing -ErrorAction Stop).releases |
+                Sort-Object -Property 'release-date' -Descending |
+                Select-Object -First 1 |
+                Select-Object -ExpandProperty 'windowsdesktop' |
+                Select-Object -ExpandProperty 'files' |
+                Where-Object { $_.rid -eq $rid -and $_.url -match '\.exe$' } |
+                Select-Object -ExpandProperty 'url'
+        } catch {
+            throw ('Failed to retrieve .NET release information from {0}. Reason: {1}' -f $url, $Error[0].Exception.Message)
+        }
+        if (-not $downloadUrl) {
+            throw ('Failed to find a suitable .NET Desktop Runtime 8 download for RID {0} from {1}' -f $rid, $url)
+        } else {
+            Write-Information -MessageData ('Latest .NET Desktop Runtime 8 installer URL: {0}' -f $downloadUrl)
+        }
+        #endRegion
+
+        #region download installer
+        try {
+            Write-Information -MessageData ('Downloading .NET Desktop Runtime 8 installer from {0}' -f $downloadUrl)
+            Start-BitsTransfer -Source $downloadUrl -Destination $appPath -ErrorAction Stop
+        } catch {
+            throw ('Failed to download .NET Desktop Runtime 8 installer from {0}. Reason: {1}' -f $downloadUrl, $Error[0].Exception.Message)
+        }
+        Unblock-File -Path $appPath -ErrorAction SilentlyContinue
+        #endRegion
+
+        #region install .net desktop runtime 8
+        try {
+            $installCommand = '{0} {1}' -f $appPath, ($installerArguments -join ' ')
+            Write-Information -MessageData ('Executing installer command: {0}' -f $installCommand)
+            Start-Process -FilePath $appPath -ArgumentList $installerArguments -Wait -NoNewWindow
+        } catch {
+            throw ('Failed to execute .NET Desktop Runtime 8 installer. Reason: {0}' -f $Error[0].Exception.Message)
+        }
+        #endRegion
+
+        #region verify installation
+        $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+        $runtime8Installed = $installedRuntimes | Where-Object { $_.MajorVersion -eq 8 }
+        if ($runtime8Installed) {
+            Write-Information -MessageData '.NET Desktop Runtime 8 installation verified successfully.'
+        } else {
+            throw 'Error: .NET Desktop Runtime 8 installation failed or could not be verified.'
+        }
+        #endRegion
+    } end {
+        #region cleanup installer
+        Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
+        #endRegion
+    }
+}
+#endRegion
+
+#region working directory
+if (-not (Test-Path -Path $workingDirectory)) {
     try {
-        $dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '
-    } catch {}
-    
-    if (!($dotNetVersions -match 'WindowsDesktop\.App 8')) {
-        return $true
-    } else {
-        return $false
+        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+    } catch {
+        throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
     }
 }
+#endRegion
 
-$dotnet8url = if ([Environment]::Is64BitOperatingSystem) {
-    'https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe'
+#region set tls policy
+$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
+if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+} elseif ($supportedTLSversions -contains 'Tls12') {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
-    'https://download.visualstudio.microsoft.com/download/pr/6e1f5faf-ee7d-4db0-9111-9e270a458342/4cdcd1af2d6914134308630f048fbdfc/windowsdesktop-runtime-8.0.11-win-x86.exe'
-}
-
-if (!(Test-Path -Path $workingDirectory)) {
-    New-Item -ItemType Directory -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
-}
-
-if (Install-Check) {
-    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Start-BitsTransfer -Source $dotnet8url -Destination $dotnet8path
-    cmd.exe /c $dotnet8path /install /quiet /norestart
-    Start-Sleep -Seconds 5
-    
-    if (Install-Check) {
-        throw 'Error: .Net Desktop Runtime 8.0 installation failed.'
-    } else {
-        return 'Success: .Net Desktop Runtime 8.0 installed'
+    Write-Information -MessageData 'TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!'
+    if ($PSVersionTable.PSVersion.Major -lt 3) {
+        Write-Information -MessageData 'PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.'
     }
+}
+#endRegion
+
+#region .Net Desktop RunTime 8
+try {
+    Install-DotNet8DesktopRunTime -ErrorAction Stop
+} catch {
+    throw ('Error during .NET Desktop Runtime 8 installation: {0}' -f $_)
+}
+#endRegion
+
+#region Parameters
+$arguments = '@Arguments@'
+$commandToExecute = if ([string]::IsNullOrEmpty($arguments) -or $arguments -match 'Arguments') {
+    $appPath
 } else {
-    return 'Success: .Net Desktop Runtime 8.0 is already installed.'
+    '{0} {1}' -f $appPath, $arguments
 }
+#endRegion
+
+#region execute
+Set-Location -Path $workingDirectory
+Write-Information -MessageData ('Executing command: {0}' -f $commandToExecute)
+cmd.exe /c $commandToExecute
+#endRegion
+
+#region logging
+return ('Logs Directory: ''{0}''' -f $logsDirectory)
+#endRegion
 ```
 
-![PowerShell Script 9](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_24.webp)  
-![PowerShell Script 10](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
+![Image7](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image7.webp)
 
-#### Row 5 Function: PowerShell Script
+#### Step 2: Row -> Script Log
 
-Insert a new row by clicking the `Add Row` button.
+- **Script Log Message:** `%Output%`  
+- **Operating System:** `Windows`
+- **Continue on Failure**: `False`
 
-![Add Row 5](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
-
-Select `PowerShell Script` function.
-
-![PowerShell Script 11](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_19.webp)  
-![PowerShell Script 12](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_20.webp)  
-![PowerShell Script 13](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_21.webp)
-
-Paste in the following PowerShell script, set the expected time of script execution to `1800` seconds, and click the `Save` button.
-
-```powershell
-#region Setup - Variables
-$ProjectName = '@ProjectName@'
-$BaseURL = 'https://file.provaltech.com/repo'
-$EXEURL = "$BaseURL/app/$ProjectName.exe"
-$WorkingDirectory = '@WorkingDirectory@'
-$EXEPath = "$WorkingDirectory\$ProjectName.exe"
-#endregion
-
-#region Download - soji
-if (! (Test-Path $ExePath)) {
-  [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-  Invoke-WebRequest -Uri $EXEURL -UseBasicParsing -OutFile $EXEPath
-  if (!(Test-Path -Path $EXEPath)) {
-      Throw "No pre-downloaded app exists and the application '$EXEURL' failed to download. Exiting."
-  }
-}
-#endregion
-cmd.exe /c $EXEPath @Arguments@
-```
-
-![PowerShell Script 14](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_25.webp)  
-![PowerShell Script 15](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_23.webp)
-
-#### Row 6 Function: Script Log
-
-Insert a new row by clicking the `Add Row` button.
-
-![Add Row 6](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_16.webp)
-
-Select `Script Log` function.
-
-![Script Log 1](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_26.webp)  
-![Script Log 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_27.webp)
-
-Paste this line in the `Script Log Message` box and click the `Save` button.  
-`%output%`
-
-![Script Log Message](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_28.webp)  
-![Script Log Message 2](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_29.webp)
-
-Click the `Save` button to save the Task.
-
-![Save Task](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_30.webp)
+![Image8](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image8.webp)
 
 ## Completed Script
 
-![Completed Script](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_31.webp)
+![Image9](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image9.webp)
 
 ## Output
 
-![Script Log Output](../../../static/img/docs/a1d8f066-b016-4654-b855-891518d1f1da/image_32.webp)
+- Script Log
 
 ## Changelog
+
+### 2026-03-23
+
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
+- Structural changes in task
+- Document modifications.
 
 ### 2025-04-10
 

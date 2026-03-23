@@ -9,7 +9,7 @@ tags: ['disk', 'disk-cleanup']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-08-21
+  date: 2026-03-23
 ---
 
 <br />
@@ -48,44 +48,270 @@ winget install Microsoft.DotNet.DesktopRuntime.8
 Or
 
 ```powershell
-# PowerShell installation of .NET Desktop Runtime 8.0.11 on Windows x64
-$ProgressPreference = 'SilentlyContinue'
-$appName = 'dotNet8DesktopRuntime'
-$workingDirectory = 'C:\ProgramData\_automation\app\Prompter'
-$dotnet8path = 'C:\ProgramData\_automation\app\Prompter\dotNet8DesktopRuntime.exe'
-$dotnet8url = 'https://download.visualstudio.microsoft.com/download/pr/27bcdd70-ce64-4049-ba24-2b14f9267729/d4a435e55182ce5424a7204c2cf2b3ea/windowsdesktop-runtime-8.0.11-win-x64.exe'
+# PowerShell installation of .NET Desktop Runtime 8.x.xx (latest version)
+<#
+.SYNOPSIS
+    Installs the latest available .NET Desktop Runtime 8 version if it is not already installed.
 
-Function Install-Check {
+.DESCRIPTION
+    Checks the local endpoint for installed Microsoft Windows Desktop Runtime versions by calling
+    Get-InstalledDotNetDesktopRuntime. If major version 8 is already installed, the script exits
+    without changes.
+
+    If not installed, the script:
+    - Creates a working directory under ProgramData.
+    - Ensures required ACL permissions on that directory.
+    - Enforces TLS 1.2/1.3 for outbound web requests.
+    - Detects OS architecture and maps it to the appropriate RID.
+    - Retrieves the latest .NET 8 Windows Desktop Runtime installer URL from Microsoft's
+      official release metadata feed.
+    - Downloads and silently installs the runtime.
+    - Verifies installation and cleans up the installer binary.
+
+    This script is intended for automated execution in RMM/automation workflows.
+
+.EXAMPLE
+    .\Install-dotNet8DesktopRuntime.ps1
+
+    Runs the full detection-and-install workflow. If .NET Desktop Runtime 8 is already installed,
+    the script returns a no-action message.
+
+.OUTPUTS
+    System.String
+
+    Returns:
+    - '.NET Desktop Runtime 8 is already installed. No action is required.' when no install is needed.
+
+    Writes informational progress messages during install path execution and throws terminating
+    errors when download, install, or verification fails.
+
+.NOTES
+    - Requires Windows with PowerShell 5.1+.
+    - Requires administrative privileges for install and ProgramData operations.
+    - Uses BITS for download and Start-Process for silent installer execution.
+    - Release metadata source: https://builds.dotnet.microsoft.com/dotnet/release-metadata/8.0/releases.json
+#>
+begin {
+    #region globals
+    $ProgressPreference = 'SilentlyContinue'
+    $WarningPreference = 'SilentlyContinue'
+    $InformationPreference = 'Continue'
+    $ConfirmPreference = 'None'
+    #endRegion
+
+    #region variables
+    $appName = 'dotNet8DesktopRuntime'
+    $workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $appName
+    $appPath = '{0}\{1}.exe' -f $workingDirectory, $appName
+    $url = 'https://builds.dotnet.microsoft.com/dotnet/release-metadata/8.0/releases.json'
+    $installerArguments = @(
+        '/install',
+        '/quiet',
+        '/norestart'
+    )
+    #endRegion
+
+    #region function
+    function Get-InstalledDotNetDesktopRuntime {
+        <#
+        .SYNOPSIS
+            Gets installed .NET Windows Desktop Runtime versions from the local endpoint.
+
+        .DESCRIPTION
+            Resolves the path to `dotnet.exe` and executes `dotnet --list-runtimes`, then parses
+            the output and returns only Windows Desktop Runtime entries (Microsoft.WindowsDesktop.App).
+
+            The function returns one object per detected runtime version with friendly name,
+            major version, full version, and installed path.
+
+        .PARAMETER None
+            This function does not accept parameters.
+
+        .OUTPUTS
+            System.Object[]
+
+            Each object contains:
+            - Name          : Friendly display name (for example, Microsoft Windows Desktop Runtime - 8.0.25)
+            - MajorVersion  : Major version number as Int32
+            - Version       : Full semantic version string
+            - InstalledPath : Runtime install path reported by dotnet
+
+        .EXAMPLE
+            $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+
+            Returns all installed Windows Desktop Runtime versions.
+
+        .EXAMPLE
+            Get-InstalledDotNetDesktopRuntime | Where-Object { $_.MajorVersion -eq 8 }
+
+            Returns only .NET 8 Windows Desktop Runtime entries.
+
+        .NOTES
+            Used by this script to verify whether .NET Desktop Runtime 8 is already present
+            before installation and to confirm installation success afterward.
+        #>
+        [CmdletBinding()]
+        [OutputType([System.Object[]])]
+        param()
+
+        #region dotnet path
+        $dotnetCommand = Get-Command 'dotnet' -ErrorAction SilentlyContinue
+        if ($dotnetCommand) {
+            $dotNetExePath = $dotnetCommand.Source
+        } else {
+            $dotNetExePath = '{0}\dotnet\dotnet.exe' -f $env:ProgramFiles
+        }
+        #endRegion
+
+        #region variables
+        $listRuntimesCommand = '{0}{1}{0} --list-runtimes' -f [char]34, $dotNetExePath
+        $installed = @()
+        #endRegion
+
+        #region retrieve installed .net info
+        $runtimes = cmd.exe /c $listRuntimesCommand
+        #endRegion
+
+        #region create installed versions object
+        foreach ($line in $runtimes) {
+            if ($line -match '^((?<Name>.+?)\s+)?(?<Version>\d+\.\d+\.\d+)\s\[(?<Path>[^\]]+)\]$') {
+                $name = $matches['Name']
+                $version = $matches['Version']
+                $path = $matches['Path']
+
+                if ($path -notmatch 'Microsoft.WindowsDesktop.App') {
+                    continue
+                }
+                $name = 'Microsoft Windows Desktop Runtime - {0}' -f $version
+
+                $obj = [PSCustomObject]@{
+                    Name          = $name
+                    MajorVersion  = ([Version]$version).Major
+                    Version       = $version
+                    InstalledPath = $path
+                }
+                $installed += $obj
+            }
+        }
+        #endRegion
+        return $installed
+    }
+    #endRegion
+} process {
+    #region check if .net desktop runtime 8 is installed
+    $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+    $runtime8Installed = $installedRuntimes | Where-Object { $_.MajorVersion -eq 8 }
+    if ($runtime8Installed) {
+        return '.NET Desktop Runtime 8 is already installed. No action is required.'
+    } else {
+        Write-Information -MessageData '.NET Desktop Runtime 8 is not installed. Proceeding with installation.'
+    }
+
+    #region working directory
+    if (-not (Test-Path -Path $workingDirectory)) {
+        try {
+            New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+        } catch {
+            throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
+        }
+    }
+
+    $acl = Get-Acl -Path $workingDirectory
+    $hasFullControl = $acl.Access | Where-Object {
+        $_.IdentityReference -match 'Everyone' -and $_.FileSystemRights -match 'FullControl'
+    }
+    if (-not $hasFullControl) {
+        $accessRule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule(
+            'Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
+        )
+        $acl.AddAccessRule($accessRule)
+        Set-Acl -Path $workingDirectory -AclObject $acl -ErrorAction SilentlyContinue
+    }
+    #endRegion
+
+    #region set tls policy
+    $supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
+    if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+    } elseif ($supportedTLSversions -contains 'Tls12') {
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+    } else {
+        Write-Information -MessageData 'TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!'
+        if ($PSVersionTable.PSVersion.Major -lt 3) {
+            Write-Information -MessageData 'PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.'
+        }
+    }
+    #endRegion
+
+    #region get os architecture
     try {
-        $dotNetVersions = (. "$env:ProgramFiles\dotnet\dotnet.exe" --list-runtimes) -join ' '
-    } catch {}
-    
-    if (!($dotNetVersions -match 'WindowsDesktop\.App 8')) {
-        return $true
-    } else {
-        return $false
+        $osArchitecture = (Get-CimInstance -ClassName 'Win32_OperatingSystem' -ErrorAction Stop).OSArchitecture
+    } catch {
+        Write-Information -MessageData 'Failed to determine OS architecture. Defaulting to win-x64.'
+        $osArchitecture = '64-bit'
     }
-}
-
-if (!(Test-Path -Path $workingDirectory)) {
-    New-Item -ItemType Directory -Path $workingDirectory -Force -ErrorAction SilentlyContinue | Out-Null
-}
-
-if (Install-Check) {
-    [Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072)
-    Start-BitsTransfer -Source $dotnet8url -Destination $dotnet8path
-    cmd.exe /c $dotnet8path /install /quiet /norestart
-    Start-Sleep -Seconds 5
-    
-    if (Install-Check) {
-        return 'Error: .Net Desktop Runtime 8.0 installation failed.'
+    $rid = if ($osArchitecture -eq '64-bit') {
+        'win-x64'
+    } elseif ($osArchitecture -eq '32-bit') {
+        'win-x86'
     } else {
-        return 'Success: .Net Desktop Runtime 8.0 installed'
+        'win-arm64'
     }
-} else {
-    return 'Success: .Net Desktop Runtime 8.0 is already installed.'
-}
+    #endRegion
 
+    #region fetch latest download url for .net desktop runtime 8
+    try {
+        $downloadUrl = (Invoke-RestMethod -Uri $url -UseBasicParsing -ErrorAction Stop).releases |
+            Sort-Object -Property 'release-date' -Descending |
+            Select-Object -First 1 |
+            Select-Object -ExpandProperty 'windowsdesktop' |
+            Select-Object -ExpandProperty 'files' |
+            Where-Object { $_.rid -eq $rid -and $_.url -match '\.exe$' } |
+            Select-Object -ExpandProperty 'url'
+    } catch {
+        throw ('Failed to retrieve .NET release information from {0}. Reason: {1}' -f $url, $Error[0].Exception.Message)
+    }
+    if (-not $downloadUrl) {
+        throw ('Failed to find a suitable .NET Desktop Runtime 8 download for RID {0} from {1}' -f $rid, $url)
+    } else {
+        Write-Information -MessageData ('Latest .NET Desktop Runtime 8 installer URL: {0}' -f $downloadUrl)
+    }
+    #endRegion
+
+    #region download installer
+    try {
+        Write-Information -MessageData ('Downloading .NET Desktop Runtime 8 installer from {0}' -f $downloadUrl)
+        Start-BitsTransfer -Source $downloadUrl -Destination $appPath -ErrorAction Stop
+    } catch {
+        throw ('Failed to download .NET Desktop Runtime 8 installer from {0}. Reason: {1}' -f $downloadUrl, $Error[0].Exception.Message)
+    }
+    Unblock-File -Path $appPath -ErrorAction SilentlyContinue
+    #endRegion
+
+    #region install .net desktop runtime 8
+    try {
+        $installCommand = '{0} {1}' -f $appPath, ($installerArguments -join ' ')
+        Write-Information -MessageData ('Executing installer command: {0}' -f $installCommand)
+        Start-Process -FilePath $appPath -ArgumentList $installerArguments -Wait -NoNewWindow
+    } catch {
+        throw ('Failed to execute .NET Desktop Runtime 8 installer. Reason: {0}' -f $Error[0].Exception.Message)
+    }
+    #endRegion
+
+    #region verify installation
+    $installedRuntimes = Get-InstalledDotNetDesktopRuntime
+    $runtime8Installed = $installedRuntimes | Where-Object { $_.MajorVersion -eq 8 }
+    if ($runtime8Installed) {
+        Write-Information -MessageData '.NET Desktop Runtime 8 installation verified successfully.'
+    } else {
+        throw 'Error: .NET Desktop Runtime 8 installation failed or could not be verified.'
+    }
+    #endRegion
+} end {
+    #region cleanup installer
+    Remove-Item -Path $appPath -Force -ErrorAction SilentlyContinue
+    #endRegion
+}
 ```
 
 ## Usage
@@ -112,19 +338,19 @@ Soji will run just fine without any command-line options passed, but you may wan
 
 ### Examples
 
-*Clean all fixed drives with all available cleaners*
+*Clean all fixed drives with all available cleaners:*
 
 ```shell
 Soji.exe --all
 ```
 
-*Clean the C and F drives*
+*Clean the C and F drives:*
 
 ```shell
 Soji.exe --drives C,F
 ```
 
-*Clean the C drive including all user Download directories in PowerShell*
+*Clean the C drive including all user Download directories in PowerShell:*
 
 ```powershell
 Start-Process -FilePath "Soji.exe" `
@@ -132,7 +358,7 @@ Start-Process -FilePath "Soji.exe" `
               -Wait
 ```
 
-*Clean all fixed drives and read back the file JSON report in PowerShell*
+*Clean all fixed drives and read back the file JSON report in PowerShell:*
 
 ```powershell
 Start-Process -FilePath "$pwd\Soji.exe" `
@@ -191,6 +417,10 @@ Log and Report Files:
 - [BurnBytes](https://github.com/builtbybel/burnbytes) - Base logic for cleanmgr hooks
 
 ## Changelog
+
+### 2026-03-23
+
+- Document modification
 
 ### 2025-05-06
 

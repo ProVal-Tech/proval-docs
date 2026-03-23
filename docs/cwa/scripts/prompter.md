@@ -9,7 +9,7 @@ tags: ['application']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-14
+  date: 2026-03-23
 ---
 
 ## Summary
@@ -54,6 +54,10 @@ This script is a function script and should not be manually executed. Utilize th
 - Script Variable
 
 ## Changelog
+
+### 2026-03-23
+
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
 
 ### 2025-04-10
 
