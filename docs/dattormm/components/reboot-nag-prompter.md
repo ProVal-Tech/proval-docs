@@ -9,21 +9,20 @@ tags: ['patching', 'windows', 'reboot']
 draft: false
 unlisted: false  
 last_update:
-  date: 2026-03-17
+  date: 2026-03-23
 ---
 
-## Overview  
+## Overview
+
 Manages and displays reboot prompts for Windows systems based on pending reboot status or system uptime. The prompts are customized as per the client’s logo and branding. The script runs via Task Scheduler to ensure users are periodically notified, allowing controlled postponement, repeated reminders (nag), and enforced restarts as per defined configuration.
 
 ## Implementation  
 
-1. Download the component [Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/Reboot%20Nag%20Restart%20Alert%20Prompter.cpt) from the attachments.
+1. Download the component [Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/reboot-nag-restart-alert-prompter.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template1.webp)  
-4. Before saving the component within the environment, make sure to change the branding of the `Nag` script.  
-![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s4.webp)
 
 ## Sample Run
 
@@ -31,7 +30,7 @@ To execute the `component` over a specific machine, follow these steps:
 
 1. Select the machine you want to run the `component` on from the Datto RMM.  
 
-2. Click on the `Quick Job` button.    
+2. Click on the `Quick Job` button.
 ![Image 2](../../../static/img/docs/cad55427-9b06-47c0-b675-6b2fb974c1c4/template2.webp)  
 
 3. Search the component `Reboot Nag [Restart Alert] [Prompter]` and click on `Select`.  
@@ -58,7 +57,6 @@ To execute the `component` over a specific machine, follow these steps:
 17. This is how the final prompt will look like, where only the restart option will be present.  
 ![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
 
-
 ## Datto Variables
 
 | Variable Name | Type | Default | Description |
@@ -73,8 +71,11 @@ To execute the `component` over a specific machine, follow these steps:
 |Desktop_reboot_skip_weekends|Boolean|False| If set, prevents reboot prompts from being shown on Saturdays and Sundays.|
 |Reboot_if_not_logged_in|Boolean|True| If set, forcefully restarts the computer if no user is logged in when prompting conditions are met.|
 |Force|Boolean|False|Forcefully recreates the scheduled task if it already exists. Use this option when updating or modifying the task's arguments.|  
+| Icon | String | | Specify the icon URL for the reboot prompt. Example: `https://content.provaltech.com/img/logo_r4.png` |
+| HeaderImage | String | | Specify the header image URL for the reboot prompt. Example: `https://content.provaltech.com/img/logo_r4.png` |
 
 ## Output  
+
 StdOut  
 `A job status of Success is expected.`  
 ![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s5.webp)
@@ -82,12 +83,18 @@ StdOut
 StdErr  
 `StdErr is not expected.`
 
-
 ## Attachments  
-[Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/Reboot%20Nag%20Restart%20Alert%20Prompter.cpt)  
+
+[Reboot Nag [Restart Alert] [Prompter]](../../../static/attachments/reboot-nag-restart-alert-prompter.cpt)  
 
 ## Changelog
- 
+
+### 2026-03-23
+
+- Code Signed the PowerShell script.
+- Converted `Icon` and `HeaderImage` to run-time variables.
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
+
 ### 2026-03-17
- 
+
 - Initial version of the document
