@@ -1,66 +1,76 @@
 ---
 id: '17055496-4065-4329-9d4a-892e28e0cf12'
 slug: /17055496-4065-4329-9d4a-892e28e0cf12
-title: 'Scheduled Task Creation -  CagService'
-title_meta: 'Scheduled Task Creation -  CagService'
+title: 'Scheduled Task Creation - CagService'
+title_meta: 'Scheduled Task Creation - CagService'
 keywords: ['datto', 'task', 'cagservice']
-description: 'This component creates a `Scheduled task` to ensure the Datto RMM service (CagService) starts automatically on a daily basis.'
+description: 'This component creates a `Scheduled task` to ensure the Datto RMM service (CagService) starts automatically on servers and workstations'
 tags: ['windows','datto']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-01
+  date: 2026-03-24
 ---
 
 ## Overview
 
-This component creates a `Scheduled Task` in Task Scheduler to ensure the Datto RMM service (CagService) starts automatically on a daily basis.
+This component creates a `Scheduled Task` in Task Scheduler to ensure the Datto RMM service (CagService) starts automatically.
 
-## Implementation
+This component performs the following actions for DattoRMM Agent service:
 
-1. Import the `Component` [Scheduled Task Creation -  Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt) into Datto RMM.  
-2. Download the attached file > Click on the `Import` button > Select the component to add to the Datto RMM interface.  
+- Verifies service exists on the system
+- Sets the service startup type to Automatic
+- Configures Windows Service Recovery settings to restart on failure
+- Creates a monitoring script that checks service status and restarts if stopped.
+- Registers a scheduled task to run the monitoring script at regular intervals (15 minutes for servers, 60 minutes for workstations)
+- Attempts to start each service if it's not currently running
+- Logs events to the Application event log for monitoring purposes
 
+The script is designed to ensure the DattoRMM Agent service remains operational and automatically recovers from service failures.
+
+## Implementation  
+
+1. Download the component [Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)  from the attachments.
+
+2. After downloading the attached file, click on the `Import` button
+
+3. Select the component just downloaded and add it to the Datto RMM interface.  
 ![Image 1](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/snapshot5.webp)
-
-
 
 ## Sample Run
 
-Go to `Automation`> `Jobs`> Click on `Create Job`.
-![Image 1](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/snapshot1.webp)
+To execute the `component` over a specific machine, follow these steps:  
 
-Into the Job section:-  
-- Step1: Specify the `Name` of the job.  
-- Step2: Under the `Components` section, select the `Schedule Task Creation -  Cagservice` component using `Add Component` button.  
-- Step3: Under the `Targets` section, click on `Add target` button to add device or groups as target.  
+1. Select the machine you want to run the [Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt) on from the Datto RMM.  
 
-![Image 1](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/snapshot2.webp)
+2. Click on the `Quick Job` button.
 
-- `Schedule` the job at a particular time. Select `Immediately` from `Recurrence` dropdwon to execute it right now.  
-- Set the `Expiration` to terminate the job after a certain time.  Select `Never` to run it indefinitely.  
+![Image 2](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/quickjob.webp)  
 
-![Image 1](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/snapshot3.webp)
+3. Search the component name `Scheduled Task Creation - Cagservice` and click on `Select`
 
-After Scheduling and setting expiration:-   
-- Step1: Set the `Notification` if required.  
-- Step2: Set the `Execution` of the job as per the requirement.   
-- Step3: Click on `Create job`.  
-
-![Image 1](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/snapshot4.webp)
-
+![Image 3](../../../static/img/docs/17055496-4065-4329-9d4a-892e28e0cf12/find.webp)
 
 ## Output
 
-- stdOut  
+Activity Log
+
+- stdOut
 - stdError  
 
 ## Attachments
 
-[Scheduled Task Creation -  Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)
+[Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)
 
 ## Changelog
 
+### 2026-03-24
+
+- Changes that were made
+  - Updated the component with the powershell to make sure that the task schedule checks the Datto Agent Service namely "Cagservice" every 15 minutes for servers, and 60 minutes for workstations instead of running at only at startup.
+  - Attempts to start the service if it's not currently running.
+  - Do nothing if the service is in the running state
+
 ### 2025-06-27
 
-- Initial version of the document
+- Initial version of the document.
