@@ -38,6 +38,8 @@ This solution checks the Secure Boot status and validates the associated certifi
 | Content | Type | Function |
 | ----------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
 | [cPVAL SecureBoot Audit [Windows]](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246) | `Group` | This group shows all windows devices with Secure Boot status. |
+| [cPVAL Windows Workstations](/docs/6c0a75ba-68b7-47a5-acb8-17ef303f9422) | `Group`  | A group designated for machines running the Windows workstations.  |
+| [cPVAL Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) | `Group`  | A group designated for machines running the Windows servers.  |
 
 ### `Task`
 
@@ -59,9 +61,11 @@ This solution checks the Secure Boot status and validates the associated certifi
 - [Automation - SecureBoot Compliance - Audit](/docs/33446436-a337-411d-99ae-299046ba30d9)
 
 
-### Step 3: Create the following group
+### Step 3: Create the following groups
 
-- [Group- cPVAL SecureBoot Audit [Windows]](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246)
+- [cPVAL SecureBoot Audit [Windows]](/docs/f60be794-9c67-48fe-9e2d-694c6ed58246)
+- [cPVAL Windows Workstations](/docs/6c0a75ba-68b7-47a5-acb8-17ef303f9422) (If does not exist)
+- [cPVAL Windows Servers](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) (If does not exist)
 
 ### Step 4: Create the following Task:
 
@@ -137,6 +141,10 @@ It then updates the related custom fields with the results.
 This allows more accurate device grouping and compliance monitoring.
 
 ## Changelog
+
+### 2026-03-24
+
+- Added `cPVAL Windows Workstations` and `cPVAL Windows Servers` group dependency for the task `cPVAL SecureBoot Status`.
 
 ### 2026-03-12
 
