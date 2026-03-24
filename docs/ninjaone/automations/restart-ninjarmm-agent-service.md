@@ -14,18 +14,15 @@ last_update:
 
 ## Overview
 
-This script performs the following actions:
+This is an on-demand script that schedules a one-time task to restart `NinjaRMM Agent` and `Ninja Remote services` after 3 minutes. It performs the following actions:
 
-  - The script first Checks if the `EnsureNinjaServiceRunning` scheduled task exists before proceeding.
+  - Checks if the `EnsureNinjaServiceRunning` scheduled task exists before proceeding.
+  - This script will not execute unless the `EnsureNinjaServiceRunning` scheduled task exists.
   - Creates a restart service script on disk.
   - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution from Ninja.
   - The scheduled task runs as SYSTEM with highest privileges
 
-## Important Note
-
-#### - The script `Ensure Ninja Service is Running` must be executed first.
-#### - The `Restart NinjaRMM Agent Service` script will not execute unless the `EnsureNinjaServiceRunning` scheduled task exists.
-#### - If the task `EnsureNinjaServiceRunning` exists, the restart script will proceed with creating the temporary restart task as designed.
+**Please Note:**  If the `EnsureNinjaServiceRunning` scheduled task is missing, the script [Ensure Ninja Service is Running](/docs/cb7a9cf6-e5ea-40db-8249-2daec21d793d) must be executed first.
 
 ## Dependencies
 
@@ -34,6 +31,7 @@ This script performs the following actions:
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/4140af67-f072-4d69-81c1-ee6a4fdd5ba7/sample-run.webp)
 
 ## Automation Setup/Import
@@ -48,15 +46,7 @@ This script performs the following actions:
 
 ### 2026-03-24
 
-- Changes that were made
-
-  - The script first Checks if the `EnsureNinjaServiceRunning` scheduled task exists before proceeding.
-
-  - Creates a restart service script on disk.
-
-  - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution from Ninja.
-
-  - The scheduled task runs as SYSTEM with highest privileges
+  - The script modified to run as an on-demand script to restart the services only when the scheduled task `EnsureNinjaServiceRunning` exists on the computer.
 
 ### 2026-03-10
 

@@ -20,7 +20,7 @@ This script performs the following actions for NinjaRMMAgent and ncstreamer Serv
 - Sets the service startup type to Automatic.
 - Configures Windows Service Recovery settings to restart on failure.
 - Creates a monitoring script that checks service status and restarts if stopped.
-- Registers a scheduled task to run the monitoring script at regular intervals (15 minutes for servers, 60 minutes for workstations).
+- Registers a scheduled task `EnsureNinjaServiceRunning` to run the monitoring script at regular intervals (15 minutes for servers, 60 minutes for workstations).
 - Attempts to start each service if it's not currently running.
 - Logs events to the Application event log for monitoring purposes.
 
@@ -43,10 +43,7 @@ Sample run to make sure Ninja Service is running at startup.
 
 ### 2026-03-24
 
-- Changes that were made
-
-  - Updated the document with the powershell to make sure that the task schedule checks the service 15 minutes for servers, 60 minutes for workstations.
-  - Removed to run only the startup.
+  - Updated the document with the powershell to make sure that the task schedule checks the services every 15 minutes for servers, and 60 minutes for workstations instead of running at only at startup.
   - Attempts to start each service if it's not currently running.
   - Do nothing if the service is in the running state
 
