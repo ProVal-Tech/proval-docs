@@ -43,9 +43,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Windows Secure Boot Audit`  
-**Description:** `Fetches the status of key certificate and configurations that will be needed before the current secure boot certificates expire.`  
-**Category:** `Custom`
+- **Name:** `Windows Secure Boot Audit`  
+- **Description:** `Fetches the status of key certificate and configurations that will be needed before the current secure boot certificates expire.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/c394b81e-3d3c-4316-8d92-0d243625a02c/image1.webp) 
 

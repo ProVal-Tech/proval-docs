@@ -6,7 +6,7 @@ title_meta: 'Windows Secure Boot'
 keywords: ['audit','bios','certificates','secureboot','windows']
 description: 'Details all the Custom Fields related to Windows Secure Boot Audit'
 tags: ['bios','certificates','secureboot','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-23
@@ -17,12 +17,12 @@ The document details all the Custom Fields related Windows Secure Boot Audit.
 
 ## Details
 
-| Name                 | Level   | Type    | Default        | Required | Editable | Description       |
-|----------------------|---------|--------|------------------|----------|----------|----------------|
-| Windows Secure Boot | Endpoint | Text | Blank |False | No   | Displays if Windows agent has secure boot enabled. |
-| Windows Telemetry | Endpoint | Text | Blank |False | No   | Displays if Windows Telemetry is enabled on a windows agent. |
-| Windows DB Certificate | Endpoint | Text | Blank |False | No | Displays if windows agent has the updated 2023 DB Certificate. |
-| Windows KEK Certificate | Endpoint | Text | Blank |False | No   | Displays if windows agent has the updated 2023 KEK Certificate. |
+| Name                 | Level   | Type    | Default        | Editable | Description       |
+|----------------------|---------|--------|------------------|----------|----------------|
+| Windows Secure Boot | Endpoint | Text | Blank  | No   | Displays if Windows agent has secure boot enabled. |
+| Windows Telemetry | Endpoint | Text | Blank | No   | Displays if Windows Telemetry is enabled on a windows agent. |
+| Windows DB Certificate | Endpoint | Text | Blank | No | Displays if windows agent has the updated 2023 DB Certificate. |
+| Windows KEK Certificate | Endpoint | Text | Blank  | No   | Displays if windows agent has the updated 2023 KEK Certificate. |
 
 ## Dependencies
 
@@ -33,12 +33,11 @@ The document details all the Custom Fields related Windows Secure Boot Audit.
 ### Step 1
 
 Navigate to `Settings` ➞ `Custom Fields`  
-![Step1](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step1.webp)
 
 ### Step 2
 
 Locate the `Add Field` button on the right-hand side of the screen and click on it.  
-![Step2](../../../static/img/docs/1b41da88-5b9a-436f-997b-39c8f72615ae/step2.webp)
+
 
 ## Step 3
 
