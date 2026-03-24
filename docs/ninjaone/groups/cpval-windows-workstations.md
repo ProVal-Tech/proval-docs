@@ -3,9 +3,9 @@ id: '6c0a75ba-68b7-47a5-acb8-17ef303f9422'
 slug: /6c0a75ba-68b7-47a5-acb8-17ef303f9422
 title: 'cPVAL Windows Workstations'
 title_meta: 'cPVAL Windows Workstations'
-keywords: [windows, workstations]
+keywords: [windows]
 description: 'A group designated for machines running the Windows workstations.'
-tags: [windows, workstations]
+tags: [windows]
 draft: false
 unlisted: false
 last_update:
