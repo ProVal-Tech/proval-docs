@@ -21,11 +21,11 @@ This script performs the following actions:
   - Registers a one-time scheduled task to restart NinjaRMMAgent and ncstreamer 3 minutes after execution from Ninja.
   - The scheduled task runs as SYSTEM with highest privileges
 
-## Note
+## Important Note
 
-#### Before running the script `Restart NinjaRMM Agent Service`, please run the script `Ensure Ninja Service is Running`. As the `Restart NinjaRMM Agent Service` willnot get executed if the `EnsureNinjaServiceRunning` is not exists.
-
-#### If the `EnsureNinjaServiceRunning` task is exists then script `Restart NinjaRMM Agent Service` will schedule another task to restart the NinjaRMMAgent and ncstreamer Services even if they are running.
+#### - The script `Ensure Ninja Service is Running` must be executed first.
+#### - The `Restart NinjaRMM Agent Service` script will not execute unless the `EnsureNinjaServiceRunning` scheduled task exists.
+#### - If the task `EnsureNinjaServiceRunning` exists, the restart script will proceed with creating the temporary restart task as designed.
 
 ## Dependencies
 
