@@ -9,12 +9,12 @@ tags: ['windows','datto']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-24
+  date: 2026-03-25
 ---
 
 ## Overview
 
-This component creates a `Scheduled Task` in Task Scheduler to ensure the Datto RMM service (CagService) starts automatically.
+This component creates a scheduled task `EnsureDattoServiceRunning` in Task Scheduler to ensure the Datto RMM service (CagService) starts automatically.
 
 This component performs the following actions for DattoRMM Agent service:
 
@@ -30,7 +30,7 @@ The script is designed to ensure the DattoRMM Agent service remains operational 
 
 ## Implementation  
 
-1. Download the component [Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)  from the attachments.
+1. Download the component [Scheduled Task Creation - CagService](../../../static/attachments/schedule-task-creation-cagservice.cpt) from the attachments.
 
 2. After downloading the attached file, click on the `Import` button
 
@@ -41,7 +41,7 @@ The script is designed to ensure the DattoRMM Agent service remains operational 
 
 To execute the `component` over a specific machine, follow these steps:  
 
-1. Select the machine you want to run the [Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt) on from the Datto RMM.  
+1. Select the machine you want to run the [Scheduled Task Creation - CagService](../../../static/attachments/schedule-task-creation-cagservice.cpt) on from the Datto RMM.  
 
 2. Click on the `Quick Job` button.
 
@@ -60,16 +60,14 @@ Activity Log
 
 ## Attachments
 
-[Scheduled Task Creation - Cagservice](../../../static/attachments/schedule-task-creation-cagservice.cpt)
+[Scheduled Task Creation - CagService](../../../static/attachments/schedule-task-creation-cagservice.cpt)
 
 ## Changelog
 
-### 2026-03-24
+### 2026-03-25
 
-- Changes that were made
-  - Updated the component with the powershell to make sure that the task schedule checks the Datto Agent Service namely "Cagservice" every 15 minutes for servers, and 60 minutes for workstations instead of running at only at startup.
-  - Attempts to start the service if it's not currently running.
-  - Do nothing if the service is in the running state
+  - Updated script to ensure continuous monitoring of the Datto Agent service (Cagservice) on both servers and workstations. The previous version only checked and started the service once at system startup.
+  - This update introduces a scheduled self‑healing mechanism that checks the service at regular intervals (15 minutes for servers, 60 minutes for workstations).
 
 ### 2025-06-27
 
