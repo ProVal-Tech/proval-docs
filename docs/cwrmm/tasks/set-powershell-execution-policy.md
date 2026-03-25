@@ -6,14 +6,14 @@ title_meta: 'Set PowerShell Execution Policy'
 keywords: ['powershell','execution','policy']
 description: 'Enforces PowerShell execution policy across the entire machine by directly updating the registry for both 32-bit and 64-bit environments'
 tags: ['windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-24
 ---
 
 ## Summary
-This Script enforces PowerShell execution policy across the entire machine by directly updating the registry for both 32-bit and 64-bit environments.
+This script enforces PowerShell execution policy across the entire machine by directly updating the registry for both 32-bit and 64-bit environments.
 
 ## Sample Run
 
@@ -22,7 +22,7 @@ This Script enforces PowerShell execution policy across the entire machine by di
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 |------|---------|---------|-----|-----|----|------|
-| Policy | `RemoteSigned` | `Unrestricted`, `RemoteSigned`, `AllSigned`, `Restricted`, `Default`, `Bypass`, `Undefined` | False | `RemoteSigned` | Text | Specify PowerShell execution policy to apply on the system. By Default script will apply `RemoteSigned` on the system. Below is each Accepted values description. <br/> - `Unrestricted` : All scripts run, warning for downloaded ones<br/> - `RemoteSigned` : Local scripts run, downloaded scripts must be signed <br/> - `AllSigned` : All scripts must be digitally signed<br/> - `Restricted` : No scripts allowed (default on many systems)<br/> - `Default` : Resets to system default<br/> - `Bypass` : No restrictions, no warnings<br/> - `Undefined` : Removes the policy (falls back to another scope) |
+| Policy | `RemoteSigned` | `Unrestricted`, `RemoteSigned`, `AllSigned`, `Restricted`, `Default`, `Bypass`, `Undefined` | False | `RemoteSigned` | Text | Specify PowerShell execution policy to apply on the system. By default, the script applies `RemoteSigned` to the system. Below are descriptions of each accepted value. <br/> - `Unrestricted` : All scripts run, warning for downloaded ones<br/> - `RemoteSigned` : Local scripts run, downloaded scripts must be signed <br/> - `AllSigned` : All scripts must be digitally signed<br/> - `Restricted` : No scripts allowed (default on many systems)<br/> - `Default` : Resets to system default<br/> - `Bypass` : No restrictions, no warnings<br/> - `Undefined` : Removes the policy (falls back to another scope) |
 
 ## Task Creation
 
