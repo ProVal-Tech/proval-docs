@@ -9,7 +9,7 @@ tags: ['software', 'uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-03-23
 ---
 
 ## Description
@@ -52,36 +52,43 @@ PowerShell V.5
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome', 'Teams Machine-Wide Installer', 'ConnectWise Manage Client 64-bit'
 ```
+
 Will attempt to remove Google Chrome, Teams Machine-Wide Installer, and 'ConnectWise Manage Client 64-bit' applications normally.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome', 'Teams Machine-Wide Installer', 'ConnectWise Manage Client 64-bit' -SystemComponentOverride
 ```
+
 Will attempt to remove Google Chrome, Teams Machine-Wide Installer, and 'ConnectWise Manage Client 64-bit' applications normally. If the application is registered as a system component, it will continue to remove the application.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome'
 ```
+
 Will attempt to remove Google Chrome normally.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome' -Force
 ```
+
 Will attempt to remove Google Chrome normally, but if it fails, it will attempt a forceful removal of the application.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome' -Force -SystemComponentOverride
 ```
+
 Will attempt to remove Google Chrome normally, but if it fails, it will attempt a forceful removal of the application. If the application is registered as a system component, it will continue to remove the application.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Microsoft.BingWeather'
 ```
+
 Will remove Bing Weather.
 
 ```powershell
 .\Remove-Application.ps1 -Name 'Google Chrome' -Switch '--uninstall --multi-install --chrome --system-level --force-uninstall'
 ```
+
 Will attempt to remove Google Chrome using the provided custom switch.
 
 ## Parameters
@@ -99,6 +106,19 @@ Will attempt to remove Google Chrome using the provided custom switch.
 - `.\Remove-Application-error.txt`
 
 ## Changelog
+
+### 2026-03-23
+
+- Expanded registry searching to include the Current User (HKCU) hives for both 32-bit and 64-bit applications.
+- Implemented a two-pass regex strategy in Split-UninstallString to better handle quoted and unquoted file paths.
+- Added logic to prioritize exact application name matches over partial wildcard matches.
+- Improved MSI detection by using GUID pattern matching (8-4-4-4-12) on the PSChildName and UninstallString.
+- Added a 90-second timeout to the uninstallation process to prevent the script from hanging on stuck installers.
+- Enhanced silent switch injection to prevent duplicate switches and ensure whole-token matching.
+- Expanded the forced removal function to include LocalAppData, AppData, and ProgramData directories.
+- Improved AppX removal logic to handle multiple instances of the same package name more effectively.
+- Refined the process loop to better handle single applications versus arrays of names and switches.
+- Formatted script.
 
 ### 2025-04-10
 
