@@ -9,7 +9,7 @@ tags: ['cleanup', 'disk']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-13
+  date: 2026-03-23
 ---
 
 ## Summary
@@ -65,6 +65,11 @@ Describe the steps the script performs to accomplish the desired task. Note that
 - etc.
 
 ## Changelog
+
+### 2026-03-23
+
+- Updated .Net8 Desktop Runtime installation logic to install the latest available version.
+- .Net8 Desktop Runtime Installation Script will be downloaded from Managed Files.
 
 ### 2025-04-10
 
