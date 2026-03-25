@@ -50,11 +50,13 @@ To execute the `component` over a specific machine, follow these steps:
 13. You can select the option to forcefully restart the machine if the user is not logged in.
 14. You can also forcefully execute the scheduled task if it already exists as the reboot prompter is working after the task is created.  
 ![Image 6](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s3.webp)  
-15. Click on `Run` to initiate the component.  
-16. Below are the examples of how the prompter will look like after configuring the Nag.  
+15. Set the Icon and Header image for the prompt.  
+![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/iconheader.webp) 
+16. Click on `Run` to initiate the component.  
+17. Below are the examples of how the prompter will look like after configuring the Nag.  
 ![Image 7](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s11.webp)  
 ![Image 8](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s12.webp)  
-17. This is how the final prompt will look like, where only the restart option will be present.  
+18. This is how the final prompt will look like, where only the restart option will be present.  
 ![Image 9](../../../static/img/docs/127459ab-92af-49ba-bf03-6745ff1f3d4b/s13.webp)
 
 ## Datto Variables
