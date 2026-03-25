@@ -62,6 +62,12 @@ It downloads the msi or sh file from "https://autoelevate-installers.s3.us-east-
 
 ## Changelog
 
+### 2026-03-25
+
+- Added the deployment logic as per the ProVal standard for the deployment.
+- Updated the script with the latest changes in the amazon downloaded URL provided by the vendor.
+- Script is compatible for both Windows and MAC.
+
 ### 2026-01-15
 
 - Initial version of the document

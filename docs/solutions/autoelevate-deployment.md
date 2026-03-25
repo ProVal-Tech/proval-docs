@@ -47,6 +47,10 @@ This solution provides feature to install and uninstall the AutoElevate applicat
 
 ## Changelog
 
+### 2026-03-26
+
+- Not a major change other than the script logic and its troubleshoot related to the MAC deployment failure.
+
 ### 2026-01-15
 
 - Initial version of the document
