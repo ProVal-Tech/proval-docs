@@ -9,10 +9,11 @@ tags: ['security', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-03
+  date: 2026-03-26
 ---
 
 ## Summary
+
 This task lists the local administrators on windows machine and stores the result in a custom field [Local Admins List](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d).
 
 ## Sample Run
@@ -22,8 +23,9 @@ This task lists the local administrators on windows machine and stores the resul
 ![Sample Run 2](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image2.webp)
 
 ## Dependencies
-- [Custom Field - Local Admins List](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d) 
-- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6) 
+
+- [Custom Field - Local Admins List](/docs/03f2a420-5c70-4078-8b71-dc0fd7f6895d)
+- [Solution - Local Administrator Detection](/docs/7e3f8472-2908-4491-b495-b87bd7ad0fe6)
 
 ## Task Creation
 
@@ -69,32 +71,41 @@ A blank function will appear:
 - **PowerShell Script Editor:**
 
 ```PowerShell
+using namespace System.DirectoryServices.AccountManagement
+
+#requires -RunAsAdministrator
+#requires -Version 5
+
 try {
-    $AllUsers = net localgroup administrators 2>&1
-
-    if ($LASTEXITCODE -ne 0) {
-        throw "Result: Failed to execute 'net localgroup administrators'. Output:  $AllUsers"
+    $ErrorActionPreference = 'Stop'
+    $adminGroupMembers = New-Object System.Collections.Generic.List[Object]
+    $localMachinePath = 'WinNT://{0}' -f $env:COMPUTERNAME
+    $localMachine = New-Object System.DirectoryServices.DirectoryEntry($localMachinePath)
+    $adminsSID = (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinAdministratorsSid, $null)).Value
+    $localizedAdmin = (New-Object System.Security.Principal.SecurityIdentifier($adminsSID)).Translate([System.Security.Principal.NTAccount]).Value
+    $localizedAdmin = $localizedAdmin -split '\\|\/' | Select-Object -Last 1
+    $admGroup = $localMachine.Children.Find($localizedAdmin, 'group')
+    $adminMembers = $admGroup.Invoke('members', $null)
+    foreach ($groupMember in $adminMembers) {
+        $member = New-Object System.DirectoryServices.DirectoryEntry($groupMember)
+        $username = if ($member.path -match [regex]::escape($env:COMPUTERNAME)) {
+            ($member.path -split '/')[-1]
+        } else {
+            $member.path -replace [regex]::escape('WinNT://'), ''
+        }
+        $adminGroupMembers.Add([PSCustomObject]@{
+                Name = $username
+            })
     }
-
-    $users = $AllUsers |
-        Where-Object {
-            $_ -and
-            $_ -notmatch 'command completed|---|Alias name|Members|comment'
-        } |
-        ForEach-Object { $_.Trim() }
-
-    if (-not $users -or $users.Count -eq 0) {
-        write-output "Result: No local administrator accounts were found."
-        exit 0
+    if ($adminGroupMembers.Count -eq 0) {
+        return 'Result: No local administrator accounts were found.'
     }
-
-    $users -join '|'
-}
-catch {
-    Write-Error "Result: Error fetching local administrators: $($_.Exception.Message)"
-    throw
+    $adminGroupMembers.Name -join '|'
+} catch {
+    throw ('Result: Error fetching local administrators. Reason: {0}' -f $Error[0].Exception.Message)
 }
 ```
+
 ![image4](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image4.webp)
 
 #### Row 2 Function: Script Log
@@ -113,7 +124,7 @@ Click on `Add Logic` > select `If/Then`
 
 - **Condition:** `Output`  
 - **Operator:** `Does not Contain`  
-- **Input Values:** `Result`
+- **Input Values:** `Result:`
 
 ![Image6](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image6.webp)
 
@@ -134,6 +145,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ![Completed Task](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image8.webp)
 
 ## Output
+
 - Script Log
 
 ## Schedule Task
@@ -167,6 +179,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ![Image12](../../../static/img/docs/11f555cc-79ab-464f-87af-b46c324990ee/image12.webp)
 
 ## Changelog
+
+### 2026-03-26
+
+- Updated the script to function independently of the system's OS language settings.
 
 ### 2026-01-30
 
