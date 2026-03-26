@@ -16,6 +16,8 @@ last_update:
 
 This software deployment includes an installation/uninstallation function for the latest Granola version and updates it whenever a new version is detected.
 
+**NOTE:** A user must be logged in to run the installer.
+
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/granola-ai-desktop.toml)
 
 ## Changelog
