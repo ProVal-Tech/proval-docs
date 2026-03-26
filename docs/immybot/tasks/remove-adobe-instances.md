@@ -14,12 +14,12 @@ last_update:
 
 ## Description
 
-Designed to run from an ImmyBot task using method dispatch via method Logic.
+Designed to run from an ImmyBot task which detectes, removes and validates Adobe Products cleanup.
 
 - Method behavior:
-  - Get: detects whether an Adobe installation root exists.
-  - Test: validates whether Adobe Reader, Acrobat, Creative Cloud, or Acrobat remnants remain.
-  - Set: performs Adobe removal using registry-driven uninstall, Creative Cloud uninstaller, and Adobe AcroCleaner.
+  - Get: Detects whether an Adobe installation root exists.
+  - Test: Validates whether Adobe Reader, Acrobat, Creative Cloud, or Acrobat remnants remain.
+  - Set: Performs Adobe removal using registry-driven uninstall, Creative Cloud uninstaller, and Adobe AcroCleaner.
 Returns Boolean results suitable for ImmyBot Test/Set workflow handling.
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/remove-adobe-acrobat-products.toml)
