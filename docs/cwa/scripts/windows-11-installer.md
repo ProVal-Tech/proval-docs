@@ -9,7 +9,7 @@ tags: ['installation', 'security', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-09
+  date: 2026-03-26
 ---
 
 ## Summary
@@ -17,7 +17,7 @@ last_update:
 Designed to upgrade Windows systems to the latest version. It can be used to:
 
 - Upgrade Windows 10 to Windows 11
-- Install Windows 11 feature updates (e.g., 21H2 → 22H2 → 23H2 → 24H2 → 25H2)
+- Install Windows 11 feature updates (e.g., 21H2 → 22H2 → 23H2 → 24H2)
 
 Supports multiple source types including HTTP/HTTPS URLs, local files, and network shares (UNC paths).
 
@@ -66,6 +66,10 @@ Run the script with the `Set_Environment` parameter set to `1` to generate the r
 - Script log
 
 ## Changelog
+
+### 2026-03-26
+
+- The script now exits when the operating system is Windows 11 24H2 or later.
 
 ### 2026-03-09
 
