@@ -16,6 +16,8 @@ last_update:
 
 This software configuration assists in performing the Notion installation and uninstallation.
 
+**NOTE:** A user must be logged in to run the installer.
+
 [Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/_template.toml)
 
 ## Changelog
