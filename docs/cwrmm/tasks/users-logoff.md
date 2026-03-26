@@ -199,6 +199,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 
 ## Output
+- Script logs
+
+## Changelog
 
 ### 2026-03-26
 
