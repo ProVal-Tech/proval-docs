@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Installs Sysmon application on Windows machines and generates a ticket if the service is found to be stopped.
+Installs Sysmon application on Windows machines.
 
 ## Sample Run
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image9.webp)
