@@ -17,7 +17,7 @@ last_update:
 It installs the AutoElevate to both MAC and Windows OS.  
 **You must have the license key copied into the `Company` > `Info` screen for the script to successfully work.**  
 
-Script downloads and installs the AutoElevate agent and license key.
+> Script downloads and installs the AutoElevate agent and license key.
 This script was updated by Todd Jones of AutoElevate on 11/6/2019 to reflect the new MSI download location on Amazon.  
 
 It was modified by ProVal to set the deployment and automation with ticket handling and EDFs deployment.
@@ -64,9 +64,9 @@ It downloads the msi or sh file from "https://autoelevate-installers.s3.us-east-
 
 ### 2026-03-25
 
+- Fixed installation logic for MacOS.
 - Added the deployment logic as per the ProVal standard for the deployment.
 - Updated the script with the latest changes in the amazon downloaded URL provided by the vendor.
-- Script is compatible for both Windows and MAC.
 
 ### 2026-01-15
 

@@ -1,8 +1,8 @@
 ---
 id: '5ef04731-9532-4b2c-b1fc-d18ad7d7a44e'
 slug: /5ef04731-9532-4b2c-b1fc-d18ad7d7a44e
-title: 'ProVal - Production - AutoElevate Deployment'
-title_meta: 'ProVal - Production - AutoElevate Deployment'
+title: 'AutoElevate Deployment'
+title_meta: 'AutoElevate Deployment'
 keywords: ['autoelevate', 'cyberfox']
 description: 'This monitor helps to deploy the AutoElevate to the Windows and MAC agents'
 tags: ['installation', 'deployment', 'application']
@@ -46,6 +46,10 @@ Note: Ensure to set the EDFs at the client-level to allow it to pick the agents
   ![Ticket](../../../static/img/docs/c034b8a8-9024-47b0-92f7-3b1df4887adc/image7.webp)
 
 ## Changelog
+
+### 2026-03-26
+
+- Updated the monitor to detect computers if service for AutoElevate is missing. Previously the monitor was checking for software name.
 
 ### 2026-01-15
 
