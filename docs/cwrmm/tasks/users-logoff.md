@@ -111,54 +111,111 @@ Requires administrative privileges to execute logoff commands.
 $Users = '@Users@'
 
 if ((-not $Users) -or ($Users).Length -le 2) {
-    return  "No users specified. Exiting script."
+    return "No users specified. Exiting script."
 }
 
 # Normalize input
 $UserArray = $Users -split ',' | ForEach-Object { $_.Trim().Trim("'") } | Where-Object { $_ }
 
-function Invoke-Logoff {
-    param ($accountname)
+# Resolve correct system path (handles 32-bit vs 64-bit PowerShell)
+function Get-SystemCommandPath {
+    param ($exe)
+    if ([Environment]::Is64BitOperatingSystem -and -not [Environment]::Is64BitProcess) {
+        return "$env:WINDIR\Sysnative\$exe"
+    } else {
+        return "$env:WINDIR\System32\$exe"
+    }
+}
 
-    Write-Output "Processing user: $accountname"
+# Get session data safely
+function Get-SessionData {
+    param ($User)
+    $quserPath = Get-SystemCommandPath -exe "quser.exe"
+    $queryPath = Get-SystemCommandPath -exe "query.exe"
 
-    $quserResult = quser $accountname 2>$null
-
-    if ($quserResult) {
-        $quserRegex = $quserResult | ForEach-Object { $_ -replace '\s{2,}', ',' }
-
-        $quserObject = $quserRegex | ConvertFrom-Csv -Header 'USERNAME','SESSIONNAME','ID','STATE','IDLE','LOGONTIME'
-
-        foreach ($session in $quserObject) {
-            if ($session.ID -match '^\d+$') {
-                Write-Output "Logging off session ID: $($session.ID) for user: $accountname"
-                logoff $session.ID
+    try {
+        if (Test-Path $quserPath) {
+            if ($User) {
+                return & $quserPath $User 2>$null
+            } else {
+                return & $quserPath 2>$null
             }
         }
+        elseif (Test-Path $queryPath) {
+            if ($User) {
+                return cmd /c "`"$queryPath`" user $User" 2>$null
+            } else {
+                return cmd /c "`"$queryPath`" user" 2>$null
+            }
+        }
+        else {
+            throw "Neither quser.exe nor query.exe found."
+        }
+    }
+    catch {
+        return $null
+    }
+}
+
+function Invoke-Logoff {
+param ($accountname)
+
+Write-Output "Processing user: $accountname"
+
+$quserResult = Get-SessionData -User $accountname
+
+if ($quserResult) {
+    $quserRegex = $quserResult | ForEach-Object { $_ -replace '\s{2,}', ',' }
+    $quserObject = $quserRegex | ConvertFrom-Csv -Header 'USERNAME','SESSIONNAME','ID','STATE','IDLE','LOGONTIME'
+
+    # Filter valid sessions
+    $validSessions = $quserObject | Where-Object { $_.ID -match '^\d+$' }
+
+    if (-not $validSessions) {
+        Write-Output "User $accountname not logged in."
+        return
+    }
+
+    foreach ($session in $validSessions) {
+        Write-Output "Logging off user: $accountname"
+        logoff $session.ID
+    }
+}
+else {
+    try {
+        $loggedUsers = Get-CimInstance Win32_ComputerSystem -ErrorAction Stop | Select-Object -ExpandProperty UserName
+    }
+    catch {
+        $loggedUsers = $null
+    }
+
+    if ($loggedUsers -and ($loggedUsers -match [regex]::Escape($accountname))) {
+        throw "User '$accountname' appears to be logged in, but session query failed."
     }
     else {
-        Write-Output "User $accountname not logged in or not found."
+        Write-Output "User $accountname not logged in."
     }
+}
 }
 
 # Handle ALL users
 if ($UserArray -contains "ALL") {
+$query = query user
 
-    Write-Output "Logging off ALL users..."
+Write-output "Logging off all users.."
 
-    $quserResult = quser 2>$null
+foreach ($line in $query) {
+    # Skip header line
+    if ($line -match "USERNAME") { continue }
 
-    if ($quserResult) {
-        $quserRegex = $quserResult | ForEach-Object { $_ -replace '\s{2,}', ',' }
+    # Split by whitespace
+    $parts = $line -split "\s+"
 
-        $quserObject = $quserRegex | ConvertFrom-Csv -Header 'USERNAME','SESSIONNAME','ID','STATE','IDLE','LOGONTIME'
-
-        foreach ($session in $quserObject) {
-            if ($session.ID -match '^\d+$') {
-                Write-Output "Logging off session ID: $($session.ID) (User: $($session.USERNAME))"
-                logoff $session.ID
-            }
-        }
+    if ($parts.Length -ge 3) {
+        $username = $parts[0]
+        $sessionId = $parts[2]
+        logoff $sessionId /V
+     }
     }
 }
 else {
