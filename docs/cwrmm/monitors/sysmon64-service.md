@@ -6,14 +6,14 @@ title_meta: 'Sysmon64 Service'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Monitors Sysmon64 Service on 64-bit Windows machines.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
 ---
 
 ## Summary
-Monitors Sysmon64 Service on 64-bit Windows machines.
+Monitors Sysmon64 service on 64-bit windows machines and generates a ticket if the service is found to be stopped.
 
 ## Dependencies
 
@@ -22,7 +22,7 @@ Monitors Sysmon64 Service on 64-bit Windows machines.
 
 ## Target
 
-This monitor should target the group `Machines with Sysmon` as shown below:  
+This monitor should target the group [Machines with Sysmon](/docs/03938ade-e9a6-4f71-b0d6-3208659796f5) as shown below:  
 ![Image](../../../static/img/docs/8e2bc974-4a4e-4d7b-847d-505ff0cf0836/image1.webp)
 
 ## Monitor Creation
@@ -43,11 +43,11 @@ This page will appear after clicking on the `Create Monitor` button:
 ### Step 3
 
 Fill in the mandatory columns on the left side  
-Name: `Sysmon64 Service`  
-Description: `Monitors Sysmon64 Service on 64-bit Windows machines.`  
-Type: `Service`  
-Severity: `Critical Non-Impact Alerts`  
-Family: `Windows Services` 
+- **Name:** `Sysmon64 Service`  
+- **Description:** `Monitors Sysmon64 Service on 64-bit Windows machines.`  
+- **Type:** `Service`  
+- **Severity:** `Critical Non-Impact Alerts`  
+- **Family:** `Windows Services` 
 
 ![Image](../../../static/img/docs/8e2bc974-4a4e-4d7b-847d-505ff0cf0836/image2.webp)
 
@@ -62,18 +62,20 @@ Search and Select `Machines with Sysmon` device group.
 
 ### Step 5
 
-#### Condtions :
+#### Conditions :
 
-Select `Sysmon64` from the Service dropdown.  
-Deselect `Ignore services in disabled state`
+- Select `Sysmon64` from the Service dropdown.  
+- Comparor = `Stopped` 
+- Deselect `Ignore services in disabled state`
+- Enable `Automatically start Sysmon64 when stopped` button
 
-### Ticket Resolution :
+#### Ticket Resolution :
 
-Ensure both the `Automatically start Sysmon64 when stopped` toggle and the `Automatically resolve when Sysmon64 is running` toggle are enabled.  
+- Ensure the `Automatically resolve when Sysmon64 is running` toggle is enabled.  
 
-### Monitor Output :
+#### Monitor Output :
 
-Select `Generate Ticket` from the Output Drop-down Menu
+- Select `Generate Ticket` from the `Output` Drop-down Menu
 
 
 ![Image](../../../static/img/docs/8e2bc974-4a4e-4d7b-847d-505ff0cf0836/image3.webp)

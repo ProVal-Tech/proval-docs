@@ -6,14 +6,14 @@ title_meta: 'Sysmon Deployment'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Contains the machines which are opted for sysmon deployment.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
 ---
 
 ## Summary
-Contains the machines which are opted for sysmon deployment.
+Contains the machines which are opted for Sysmon deployment.
 
 ## Dependencies
 
@@ -43,8 +43,8 @@ The group is defined by the following **criteria** joined by `AND` condition.
 | OS Type  | Equal    | `Windows` |
 | Service Display Name | Does Not Contain any of   | `Sysmon` |
 | Enable Sysmon Installation | Does Not Contain any of   | `True` |
-| Exclude Sysmon Installation | Does Not Contain any of   | `False` |
-| Exclude Sysmon Installation | Does Not Contain any of   | `False` |
+| Exclude Sysmon Installation (Site) | Does Not Contain any of   | `False` |
+| Exclude Sysmon Installation (Endpoint) | Does Not Contain any of   | `False` |
 
 ## Completed Group
 

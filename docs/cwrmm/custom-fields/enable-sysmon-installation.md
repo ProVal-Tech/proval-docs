@@ -6,7 +6,7 @@ title_meta: 'Enable Sysmon Installation'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Custom field to handle installation Sysmon on windows machines.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
@@ -22,8 +22,8 @@ Enable this custom field to install Sysmon on windows machines.
 
 ## Details
 
-| Name                 | Level                | Type                | Default       | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
+| Name                 | Level                | Type                | Default       |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
 | Enable Sysmon Installation | Company | Checkbox | No | True | Yes | Enable this custom field to install Sysmon on windows machines. |
 
 ## Creation Process

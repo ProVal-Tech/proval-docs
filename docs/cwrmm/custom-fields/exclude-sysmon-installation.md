@@ -6,7 +6,7 @@ title_meta: 'Exclude Sysmon Installation'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Enabling this will exclude this site/endpoint from deploying the Sysmon installation.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
@@ -21,10 +21,10 @@ Enabling this will exclude this site/endpoint from deploying the Sysmon installa
 
 ## Details
 
-| Name                 | Level                | Type                | Default?         | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-|Exclude Sysmon Installation | Site | Checkbox | No | False | Yes   | Enabling this will exclude this site from deploying the Sysmon installation on their Windows machines. |
-|Exclude Sysmon Installation | Endpoint | Checkbox | No | False | Yes   | Enabling this will exclude this Endpoint from deploying the Sysmon installation. |
+| Name                 | Level                | Type                | Default?         | Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+|Exclude Sysmon Installation | Site | Checkbox | No |  Yes   | Enabling this will exclude this site from deploying the Sysmon installation on their Windows machines. |
+|Exclude Sysmon Installation | Endpoint | Checkbox | No |  Yes   | Enabling this will exclude this Endpoint from deploying the Sysmon installation. |
 
 ## Creation Process
 

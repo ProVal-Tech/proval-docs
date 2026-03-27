@@ -6,7 +6,7 @@ title_meta: 'Machines with Sysmon'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Includes machines with Sysmon installed on them.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
@@ -40,7 +40,7 @@ The group is defined by the following **criteria** joined by `AND` condition.
 |------------|--------|-----------|
 | Available   | Equal    | `True` |
 | OS Type  | Equal    | `Windows` |
-| Service Display Name | Contains any of  | `Sysmon` |
+| Service Display Name | Contains any of  | `Sysmon`, `Sysmon64` |
 
 
 ## Completed Group

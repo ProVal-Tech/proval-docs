@@ -6,14 +6,15 @@ title_meta: 'Sysmon ConfigFile DownloadURL'
 keywords: ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Specify the file path of the Sysmon configuration file that will be used for applying the Sysmon settings.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
 ---
 
 ## Summary
-Specify the file path of the Sysmon configuration file that will be used for applying the Sysmon settings. If its not filled, script will use the default configuration file https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
+Specify the file path of the Sysmon configuration file that will be used for applying the Sysmon settings. If its not filled, script will use the default configuration file:  
+https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
 
 ## Dependencies
 
@@ -21,9 +22,9 @@ Specify the file path of the Sysmon configuration file that will be used for app
 
 ## Details
 
-| Name                 | Level                | Type                | Default?         | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|------------------|----------|----------|------------------------------------------|
-| Name of Custom Field | Company | Text |  | False | Yes  | Specify the file path of the Sysmon configuration file that will be used for applying the Sysmon settings. If its not filled, script will use the default configuration file 'https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml' |
+| Name                 | Level                | Type                | Default       |  Editable | Description                              |
+|----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
+| Sysmon ConfigFile DownloadURL | Company | Text Box |  | Yes  | Specify the file path of the Sysmon configuration file that will be used for applying the Sysmon settings. If its not filled, script will use the default configuration file 'https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml' |
 
 ## Creation Process
 

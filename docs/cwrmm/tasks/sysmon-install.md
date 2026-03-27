@@ -6,14 +6,14 @@ title_meta: 'Sysmon - Install'
 keywords:  ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'Installs Sysmon application on windows machines.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
 ---
 
 ## Summary
-Installs Sysmon application on windows machines.
+Installs Sysmon application on Windows machines and generates a ticket if the service is found to be stopped.
 
 ## Sample Run
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image9.webp)
@@ -44,9 +44,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Sysmon - Install`  
-**Description:** `Installs Sysmon application on windows machines.`  
-**Category:** `Application`
+- **Name:** `Sysmon - Install`  
+- **Description:** `Installs Sysmon application on windows machines.`  
+- **Category:** `Application`
 
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image1.webp)
 
@@ -65,7 +65,7 @@ A blank function will appear:
 
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image3.webp)
 
-This sets the variable `CustomConfigFile` with the value of a custom field ' Sysmon ConfigFile DownloadURL'
+This sets the variable `CustomConfigFile` with the value of a custom field `Sysmon ConfigFile DownloadURL`
 
 
 #### Row 2 Function: `PowerShell Script`
@@ -204,9 +204,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Task Details
 
-**Name:** `Sysmon - Install`  
-**Description:** `Installs Sysmon application on windows machines.`  
-**Category:** `Application`
+- **Name:** `Sysmon - Install`  
+- **Description:** `Installs Sysmon application on windows machines.`  
+- **Category:** `Application`
 
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image1.webp)
 
@@ -220,9 +220,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image6.webp)
 
-### Targeted Resource
+#### Targeted Resource
 
-**Device Group:** `Sysmon Deployment`
+**Device Group:** [Sysmon Deployment](/docs/424ddb1a-2a1b-47fb-b3cd-89ff4cf8b7a1)
 
 ![Image](../../../static/img/docs/05fe8d4e-6e82-4bb1-a0eb-48c46627132d/image7.webp)
 

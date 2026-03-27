@@ -6,7 +6,7 @@ title_meta: 'Sysmon - Uninstall'
 keywords:  ['sysmon', 'windows','configuration', 'installation', 'endpoint']
 description: 'This script checks if Sysmon is installed and removes it using the built in uninstall switch.'
 tags: ['installation','windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
@@ -46,9 +46,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Sysmon - Uninstall`  
-**Description:** `This script checks if Sysmon is installed and removes it using the built in uninstall switch.`  
-**Category:** `Application`
+- **Name:** `Sysmon - Uninstall`  
+- **Description:** `This script checks if Sysmon is installed and removes it using the built in uninstall switch.`  
+- **Category:** `Application`
 
 ![Image](../../../static/img/docs/01f2be25-7b8c-490e-9f0c-0eff4f1f7925/image2.webp)
 
