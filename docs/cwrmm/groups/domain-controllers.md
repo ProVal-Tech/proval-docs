@@ -16,6 +16,10 @@ last_update:
 
 This document outlines the steps to set up a dynamic group for Domain Controllers in Active Directory.
 
+## Dependencies
+
+- [Solution - New Domain Admins](/docs/35a03717-5ade-46fb-b396-10a277043788)
+
 ## Screenshot
 
 ![Screenshot 1](../../../static/img/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68/image_1.webp)  

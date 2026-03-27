@@ -6,10 +6,10 @@ title_meta: 'Microsoft Office - Uninstall'
 keywords: ['office', 'uninstall', 'utility', 'microsoft', 'script', 'automation']
 description: 'This document details the Office Scrub utility script that automates the uninstallation of specified Microsoft Office products, streamlining the process and saving considerable time. It includes dependencies, user parameters, and output information for effective execution.'
 tags: ['software', 'uninstallation', 'windows']
-draft: false
-unlisted: false
+draft: true
+unlisted: true
 last_update:
-  date: 2025-05-09
+  date: 2026-03-27
 ---
 
 ## Summary
@@ -54,6 +54,10 @@ Based on the version input by the technician, the script will jump to the approp
 - Local file on the computer
 
 ## Changelog
+
+### 2026-03-27
+
+- Deprecated the document
 
 ### 2025-04-10
 

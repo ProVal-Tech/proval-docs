@@ -28,6 +28,7 @@ This task should be scheduled to run once per week or month against the [Domain 
 
 - [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
 - [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
+- [Solution - New Domain Admins](/docs/35a03717-5ade-46fb-b396-10a277043788)
 
 ## Implementation
 

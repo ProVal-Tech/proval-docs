@@ -6,10 +6,10 @@ title_meta: 'New Domain Admins'
 keywords: ['domain', 'admin', 'task', 'monitoring', 'auditing']
 description: 'This document outlines the implementation of a PowerShell script for retrieving information about newly created domain administrators and users added to administrative groups on domain controllers. It includes scheduling instructions, dependencies, and a detailed step-by-step guide for setting up the task effectively.'
 tags: ['active-directory', 'report', 'security', 'windows']
-draft: false
-unlisted: false
+draft: true
+unlisted: true
 last_update:
-  date: 2025-05-09
+  date: 2026-03-27
 ---
 
 ## Summary
@@ -303,6 +303,10 @@ The task will start appearing in the Scheduled Tasks.
 ![Ticket Output](../../../static/img/docs/376db2a5-e76b-426f-b696-6791c83ab626/image_66.webp)
 
 ## Changelog
+
+### 2026-03-27
+
+- Deprecated Script
 
 ### 2025-04-10
 
