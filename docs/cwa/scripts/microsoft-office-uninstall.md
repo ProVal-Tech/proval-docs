@@ -6,7 +6,7 @@ title_meta: 'Microsoft Office - Uninstall'
 keywords: ['office', 'uninstall', 'utility', 'microsoft', 'script', 'automation']
 description: 'This document details the Office Scrub utility script that automates the uninstallation of specified Microsoft Office products, streamlining the process and saving considerable time. It includes dependencies, user parameters, and output information for effective execution.'
 tags: ['software', 'uninstallation', 'windows']
-draft: true
+draft: false
 unlisted: true
 last_update:
   date: 2026-03-27
@@ -36,7 +36,7 @@ See parameters in the "User Parameters" section below.
 
 Please see [Invoke-OffScrub](/docs/e9253255-9a1f-4392-8ec6-9f7fb6e401ed) to review remaining variables.
 
-#### User Parameters
+### User Parameters
 
 | Name        | Example | Required | Description                                                                                       |
 |-------------|---------|----------|---------------------------------------------------------------------------------------------------|

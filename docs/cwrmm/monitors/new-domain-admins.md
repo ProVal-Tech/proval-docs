@@ -6,7 +6,7 @@ title_meta: 'New Domain Admins'
 keywords: ['monitor', 'alert', 'domain', 'admin', 'infrastructure']
 description: 'This document outlines the steps to create a monitor set that generates alerts for the infrastructure master when a new domain admin is detected. It includes dependencies, detailed instructions, and screenshots for each step of the process.'
 tags: ['active-directory', 'security']
-draft: true
+draft: false
 unlisted: true
 last_update:
   date: 2026-03-27

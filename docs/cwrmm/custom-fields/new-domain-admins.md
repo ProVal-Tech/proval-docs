@@ -6,7 +6,7 @@ title_meta: 'New Domain Admins'
 keywords: ['custom', 'field', 'domain', 'admins', 'rmm']
 description: 'This document provides details about the custom field used to store and display results from the CW RMM - Task - New Domain Admins task, including dependencies, field descriptions, and sample values.'
 tags: ['report', 'security', 'windows']
-draft: true
+draft: false
 unlisted: true
 last_update:
   date: 2026-03-27
