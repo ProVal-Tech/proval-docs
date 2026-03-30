@@ -47,6 +47,13 @@ This solution provides feature to install and uninstall the AutoElevate applicat
 
 ## Changelog
 
+### 2026-03-26
+
+- Fixed installation logic for MacOS in the script.
+- Added the deployment logic as per the ProVal standard for the deployment.
+- Updated the script with the latest changes in the amazon downloaded URL provided by the vendor.
+- Updated the monitor to detect computers if service for AutoElevate is missing. Previously the monitor was checking for software name.
+
 ### 2026-01-15
 
 - Initial version of the document
