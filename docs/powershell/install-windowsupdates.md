@@ -9,7 +9,7 @@ tags: ['windows', 'patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-30
+  date: 2026-03-30
 ---
 
 ## Description
@@ -155,6 +155,13 @@ Installs all available updates except preview patches, drivers, and the updates 
 .\Install-WindowsUpdates.ps1 -ExcludeDrivers -ExcludeKBArticleID KB1234567,KB7654321
 ```
 
+### Example 17
+
+Installs all driver updates EXCEPT those containing 'BIOS', 'Firmware', or 'UEFI' in their description, and allows the system to reboot automatically if required.
+
+```powershell
+.\Install-WindowsUpdates.ps1 -Category 'Drivers' -NotDescription '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot
+
 ## Parameters
 
 | Parameter           | Validate Set                                                                                      | Parameter Set Name      | Required | Default | Type      | Description                                                                 |
@@ -162,7 +169,9 @@ Installs all available updates except preview patches, drivers, and the updates 
 | `Category`          | 'Critical Updates', 'Security Updates', 'Update Rollups', 'Feature Packs', 'Service Packs', 'Definition Updates', 'Drivers', 'Tools', 'Updates' | Category               | No       |         | String[]   | One or more update categories to include                                    |
 | `Severity`          | 'Critical', 'Important', 'Low', 'Moderate', 'Unspecified'                                        | Severity               | No       |         | String[]   | One or more update severities to include                                    |
 | `KBArticleID`       |                                                                                                  | KBArticleID            | No       |         | String[]   | One or more KB article IDs to include                                       |
-| `Title`             |                                                                                                  | Title                  | No       |         | String  | Update titles to include                                        |
+| `Title`             |                                                                                                  | Title                  | No       |         | String   | Update title to include (accepts Regex pattern)                                        |
+| `Description`       |                                                                                                  | All, Category, Severity, KBArticleID, Title | No       |         | String    | Regex pattern to filter updates based on their description     |
+| `NotDescription`    |                                                                                                  | All, Category, Severity, KBArticleID, Title | No       |         | String    | Regex pattern to exclude updates based on their description    |
 | `ExcludeDrivers`    |                                                                                                  | All, Severity          | No       | False   | Switch     | Excludes updates in the 'Drivers' category                                  |
 | `ExcludeKBArticleID`|                                                                                                  | All, Category, Severity, Title| No       |         | String[]   | One or more KB article IDs to exclude from installation                     |
 | `AllowReboot`       |                                                                                                  | All, Category, Severity, KBArticleID, Title | No       | False   | Switch     | Allows the computer to reboot automatically if required after updates        |
@@ -175,6 +184,10 @@ Log and error files are generated in the script's directory:
 - .\Install-WindowsUpdates-error.txt
 
 ## Changelog
+
+### 2026-03-30
+
+- Added `Description` and `NotDescription` parameters
 
 ### 2025-06-03
 
