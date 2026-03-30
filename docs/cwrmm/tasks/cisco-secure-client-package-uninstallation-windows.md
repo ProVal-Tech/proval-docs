@@ -15,22 +15,22 @@ last_update:
 ## Summary
 
 This task uninstalls selected Cisco Secure Client modules from a Windows endpoint.  
-The script checks installed Cisco Secure Client components in the uninstall registry, then calls the agnostic Remove-Application PowerShell script to perform the uninstall.  
+The script checks installed Cisco Secure Client components in the uninstall registry, then calls the agnostic `Remove-Application` PowerShell script to perform the uninstall.  
 Only selected and installed modules are targeted. If no selected modules are found, the task exits cleanly with a no-match message. If uninstall verification fails, the task returns an error.
 
 **Parameter usage notes:**
 
-1. All (`All`)
+1. All (`All`)  
 Select to remove all Cisco Secure Client modules found on the machine.  
 This option has highest priority and overrides all other selections.
 
-2. All Except Core VPN (`All_Except_Core_VPN`)
+2. All Except Core VPN (`All_Except_Core_VPN`)  
 Select to remove all Cisco Secure Client modules except Core VPN.  
-This option is only used when All is not selected.
+This option is only used when `All` is not selected.
 
 3. Individual module checkboxes
 
-    When neither All nor All Except Core VPN is selected, the script removes only the modules checked:
+    When neither `All` nor `All Except Core VPN` is selected, the script removes only the modules checked:
 
     - Core VPN (`Core_VPN`)
     - Start Before Login (`Start_Before_Login`)
