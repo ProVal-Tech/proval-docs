@@ -28,7 +28,7 @@ An email will be sent to `Alerts@provaltech.com` if the RMMPlus solution is not 
 **Body**:
 
 RMM_Plus is not properly configured for %redirhostname%. Please get this fixed as soon as you can.  
-Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+Reference: [CW RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 **Time Saved by Automation**: 10 Minutes
 
@@ -53,7 +53,7 @@ Reference: [/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246](/docs/f99ddaae-0cb3-4941
 
 | Name                             | Example                   | Description                                                                                                                                                                                                         |
 |----------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [CWM - Automate - Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642) dataview. |
+| OnlineInScreenConnectSinceMinutes | session not found, 12234, -1213 | Outcome of the plugin result. Usually the time in minutes for which the computer is online in ScreenConnect. (-ve time indicates that the machine is offline for that many minutes). This state is further used as the "Command Result" column of [Dataview - Agent - Agent Check-in Health](/docs/72e598df-0fcf-471d-9ee8-030986141642) dataview. |
 
 ## Output
 
