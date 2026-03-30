@@ -42,9 +42,9 @@ This Script validate the full version of the OS and compares it with Microsoft's
 
 ## Output
 
-- Activity Details
+- Activity Details  
 ![Image1](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image1.webp) 
-- Custom Field  
+- Custom Field   
 ![Image3](../../../static/img/docs/4b49b89f-51f8-4f6b-9f1e-28b8f9800991/Image3.webp)
 
 ## Changelog
@@ -52,7 +52,6 @@ This Script validate the full version of the OS and compares it with Microsoft's
 ### 2026-03-29
 
 - The script previously used exit codes (exit 0 / exit 1) to indicate the monitoring status based on CU age. These exit codes have been removed to prevent potential conflicts with RMM or monitoring systems interpreting the script as a failure when it completes successfully.
-
 - Removed the exit code block; the script now reports status via the Custom Field output only.
 
 ### 2026-01-07
