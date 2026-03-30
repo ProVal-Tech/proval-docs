@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This task validates whether the endpoint is a primary domain controller. It updates the value of the [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) custom field, which is then used to create the [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) group.
+This task validates whether the endpoint is a primary domain controller. It updates the value of the [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae), which is then used to create the [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8).
 
 This task should be scheduled to run once per week or month against the [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) group.
 
@@ -28,6 +28,7 @@ This task should be scheduled to run once per week or month against the [Domain 
 
 - [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68)
 - [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae)
+- [Solution - New Domain Admins](/docs/35a03717-5ade-46fb-b396-10a277043788)
 
 ## Implementation
 
@@ -43,11 +44,9 @@ Create a new `Script Editor` style script in the system to implement this task.
 
 ![Script Editor 2](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_4.webp)
 
-**Name:** Validate Primary Domain Controller
-
-**Description:** Validate whether the endpoint is an infrastructure master or not and mark the `Is Primary Domain Controller` custom field.
-
-**Category:** Custom
+- **Name:** Validate Primary Domain Controller
+- **Description:** Validate whether the endpoint is an infrastructure master or not and mark the `Is Primary Domain Controller` custom field.
+- **Category:** Custom
 
 ![Category Image](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_5.webp)
 
@@ -153,7 +152,9 @@ The task will start appearing in the Scheduled Tasks.
 
 ## Output
 
-- Custom Field ![Custom Field Output](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_30.webp)
+- Custom Field 
+
+![Custom Field Output](../../../static/img/docs/7bc6ac21-322d-4630-836f-f00e93b94168/image_30.webp)
 
 ## Changelog
 

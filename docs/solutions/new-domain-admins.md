@@ -9,7 +9,7 @@ tags: ['active-directory', 'security', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-03-27
 ---
 
 ## Purpose
@@ -20,12 +20,11 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Group | Stores the Domain Controllers in a single place. |
-| [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
-| [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
-| [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Group | Stores all the available infrastructure masters in a single place. |
-| [Custom Field - New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626) | Custom Field | Stores the information of the new domain admins returned by the [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82) task. |
-| [Task - New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82) | Task | Checks and returns the newly detected domain admin(s) since the previous execution of the task. |
+| [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Group | Stores the Domain Controllers in a single place. |
+| [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
+| [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
+| [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Group | Stores all the available infrastructure masters in a single place. |
+| [New Domain Admin](/docs/ecdcdcfa-d6b9-45fb-bace-6baf325f6010) | Monitor | The monitor set will generate an alert for the infrastructure master when a new domain admin is detected. |
 
 ## Implementation
 
@@ -34,12 +33,17 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 - Create the Machine Group: [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68).
 - Create the task: [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168).
 - Create the deployment schedule as described in this document: [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168).
-- Create the custom field: [New Domain Admins](/docs/376db2a5-e76b-426f-b696-6791c83ab626).
+- Create the monitor: [New Domain Admin](/docs/ecdcdcfa-d6b9-45fb-bace-6baf325f6010)
 - Create the Machine Group: [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8).
-- Create the task: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
-- Create the deployment schedule as described in this document: [New Domain Admins](/docs/a96db8f9-87fc-4e02-a1b3-2ed60913fc82).
 
 ## Changelog
+
+### 2026-03-27
+
+- Retired the "New Domain Admins" custom field.
+- Retired the "New Domain Admins" task.
+- Added a new "New Domain Admins" monitor.
+- Shifted monitoring from the task to the monitor because the task was creating irrelevant tickets.
 
 ### 2025-04-10
 
