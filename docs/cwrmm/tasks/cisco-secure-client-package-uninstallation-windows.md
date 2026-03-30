@@ -305,7 +305,7 @@ $uninstallerRegPaths = @(
     'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
 )
 $appsToRemove = @()
-$displayNamePattern = 'Cisco Secure Client - ('
+$displayNamePattern = 'Cisco Secure Client - '
 
 $all = '@All@'
 $allExceptCoreVPN = '@All_Except_Core_VPN@'
@@ -335,6 +335,8 @@ if ($all -match '1|Yes|True') {
         } |
         Select-Object -ExpandProperty DisplayName
 } else {
+    $displayNamePattern += '('
+
     if ($coreVPN -match '1|Yes|True') {
         $displayNamePattern += 'AnyConnect|Core VPN|'
     }
@@ -449,7 +451,7 @@ if (Test-Path -Path $errorLogPath) {
 #endRegion
 
 #region post-removal check
-$appsPostRemoval = Get-ChildItem -Path $uninstallRegPaths -ErrorAction SilentlyContinue |
+$appsPostRemoval = Get-ChildItem -Path $uninstallerRegPaths -ErrorAction SilentlyContinue |
     Get-ItemProperty -ErrorAction SilentlyContinue |
     Where-Object {
         $appsToRemove -contains $_.DisplayName
