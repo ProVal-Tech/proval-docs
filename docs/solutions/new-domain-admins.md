@@ -20,11 +20,11 @@ The purpose of this solution is to monitor for newly created or promoted domain 
 
 | Content | Type | Function |
 |---------|------|----------|
-| [Machine Group - Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Group | Stores the Domain Controllers in a single place. |
-| [Custom Field - Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
-| [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
-| [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Group | Stores all the available infrastructure masters in a single place. |
-| [Monitor - New Domain Admin](/docs/ecdcdcfa-d6b9-45fb-bace-6baf325f6010) | Monitor | The monitor set will generate an alert for the infrastructure master when a new domain admin is detected. |
+| [Domain Controllers](/docs/eeeb4ee0-d683-44fd-81cf-7f8872b71c68) | Group | Stores the Domain Controllers in a single place. |
+| [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae) | Custom Field | Used to determine whether a Domain Controller is an infrastructure master or not. |
+| [Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) | Task | Validates whether a computer is an infrastructure master or not and updates the custom field [Is Primary Domain Controller](/docs/b6a7c804-693c-4cf5-a60e-61dcb10ddcae). |
+| [Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) | Group | Stores all the available infrastructure masters in a single place. |
+| [New Domain Admin](/docs/ecdcdcfa-d6b9-45fb-bace-6baf325f6010) | Monitor | The monitor set will generate an alert for the infrastructure master when a new domain admin is detected. |
 
 ## Implementation
 

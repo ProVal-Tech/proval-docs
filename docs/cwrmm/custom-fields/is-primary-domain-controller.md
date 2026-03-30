@@ -14,9 +14,9 @@ last_update:
 
 ## Summary
 
-This document describes how to validate whether a computer is a primary domain controller. The check is performed by the [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168) task.
+This document describes how to validate whether a computer is a primary domain controller. The check is performed by the [Task - Validate Primary Domain Controller](/docs/7bc6ac21-322d-4630-836f-f00e93b94168).
 
-The custom field is then used to create the [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8) group.
+The custom field is then used to create the [Machine Group - Infrastructure Master](/docs/c2c2d22b-f735-4ec5-91a6-a014ab2e84a8).
 
 ## Dependencies
 
