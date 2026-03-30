@@ -9,7 +9,7 @@ tags:  ['database', 'report', 'setup', 'update', 'windows']
 draft: False
 unlisted: false
 last_update:
-  date: 2026-03-09
+  date: 2026-03-30
 ---
 
 ## Summary
@@ -34,6 +34,10 @@ To ensure a controlled rollout, the monitor selects a randomized batch of machin
 Global
 
 ## Changelog
+
+### 2026-03-30
+
+- Limited the monitor set to patch managed machines.
 
 ### 2026-03-09
 

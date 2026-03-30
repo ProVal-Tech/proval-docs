@@ -32,6 +32,7 @@ There is an option to enable ticketing for machines where automation fails three
 - The [Windows 11 Compatibility Audit](/docs/f0bb3ffc-60cb-484c-b7fa-27a386ac664c) solution should be enabled for both Windows 10 and Windows 11.
 - [Windows 10 ESU Licensing and Auditing](/docs/7fe6a52b-79fd-487b-8009-523996e74d11) should only be enabled if you wish to explicitly exclude ESU-licensed Windows 10 computers from the upgrade; otherwise, ESU-licensed devices will also be targeted.
 - The [plugin_proval_windows_os_support](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) custom table should be kept up-to-date in the environment.
+- Both monitor sets are restricted to patch-managed machines; however, the script can still be executed manually on non–patch-managed machines.
 
 **Key Components**:
 
@@ -181,6 +182,10 @@ There is an option to enable ticketing for machines where automation fails three
     **Note:** This script should only be scheduled after obtaining partner confirmation, as it generates tickets and may produce significant noise.
 
 ## Changelog
+
+### 2026-03-30
+
+- Limited both internal monitors to patch managed machines.
 
 ### 2026-03-09
 
