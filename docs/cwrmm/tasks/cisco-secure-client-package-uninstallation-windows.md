@@ -49,10 +49,9 @@ This option is only used when `All` is not selected.
     - If a selected module is not installed, it is skipped.
     - Core VPN removal may remove bundled Cisco components; DART is standalone and should be selected separately if you also want it removed.
 
-5. Operator guidance
-
-Use All for full removal, All Except Core VPN to preserve VPN connectivity, or individual checkboxes for targeted cleanup.  
-For remote users who rely on VPN, avoid selecting Core VPN unless full Cisco client removal is intended.
+5. Operator guidance  
+    - Use `All` for full removal, `All Except Core VPN` to preserve VPN connectivity, or individual checkboxes for targeted cleanup.  
+    - For remote users who rely on VPN, avoid selecting Core VPN unless full Cisco client removal is intended.
 
 ## Sample Run
 
@@ -344,7 +343,7 @@ if ($all -match '1|Yes|True') {
         $displayNamePattern += 'Start Before Login|'
     }
     if ($dart -match '1|Yes|True') {
-        $displayNamePattern += 'Diagnostic and Reporting Tool|'
+        $displayNamePattern += 'Diagnostics and Reporting Tool|'
     }
     if ($nam -match '1|Yes|True') {
         $displayNamePattern += 'Network Access Manager|'
@@ -362,7 +361,7 @@ if ($all -match '1|Yes|True') {
         $displayNamePattern += 'Umbrella|'
     }
     if ($thousandEyes -match '1|Yes|True') {
-        $displayNamePattern += 'Thousand Eyes Endpoint|'
+        $displayNamePattern += 'ThousandEyes Endpoint|'
     }
     if ($zeroTrust -match '1|Yes|True') {
         $displayNamePattern += 'Zero Trust Access|'
