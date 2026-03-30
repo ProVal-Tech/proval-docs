@@ -3,7 +3,7 @@ id: '13964fea-c4e9-435f-8043-5107efa21592
 slug: /13964fea-c4e9-435f-8043-5107efa21592
 title: 'Hide-Unhide Windows Update Systray Icon'
 title_meta: 'Hide-Unhide Windows Update Systray Icon'
-keywords: ['ninjarmm','windows','windows update','hide','unhide','icon','system','tray]
+keywords: ['ninjarmm','windows','windows update','hide','unhide','icon','system','tray']
 description: 'This script provides features to hide or unhide the Windows update icon from the system tray.'
 tags: ['registry','update','patching']
 draft: false
