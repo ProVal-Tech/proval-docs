@@ -53,8 +53,11 @@ foreach ($doc in $docs) {
         }
     }
 
+    # Check for documents in draft mode that are not unlisted
     $isDraft = $content | Select-String -Pattern '^draft: true'
-    if (($slug -or $id) -and $isDraft) {
+    $isUnlisted = $content | Select-String -Pattern '^unlisted: true'
+
+    if (($slug -or $id) -and $isDraft -and -not $isUnlisted) {
         $errorList += [PSCustomObject]@{
             Path = $doc.FullName
             Type = 'ProductionDocInDraftMode'
