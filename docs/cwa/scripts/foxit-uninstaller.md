@@ -78,6 +78,6 @@ This script removes specified Foxit applications using the [Remove Application](
 
 ## Changelog
 
-## 2026-03-23
+### 2026-03-23
 
 - Initial version of the document

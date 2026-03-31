@@ -110,7 +110,7 @@ Type or paste the command in the command prompt and press the `Enter` button on 
 
 ## Changelog
 
-## 2026-03-23
+### 2026-03-23
 
 - Updated the agnostic script download logic to use the script’s built‑in function instead of relying on the Execute PowerShell Bypass method. This change helps prevent security tools from flagging the script.
 
