@@ -161,7 +161,7 @@ Installs all driver updates EXCEPT those containing 'BIOS', 'Firmware', or 'UEFI
 
 ```powershell
 .\Install-WindowsUpdates.ps1 -Category 'Drivers' -NotDescription '(?i).*BIOS.*|.*Firmware.*|.*UEFI.*' -AllowReboot
-
+```
 ## Parameters
 
 | Parameter           | Validate Set                                                                                      | Parameter Set Name      | Required | Default | Type      | Description                                                                 |
