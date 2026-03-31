@@ -67,6 +67,7 @@ And for upgrade, it is required to pass the arguments, in that case no auditing 
 - Deprecated below:
   - Monitor `Dell Command Update Handler - Run Scan Command`
   - Dataview `Dell Command Update Handler - Audit [Script]`
+  - Script `Dell Command Update - Install/Upgrade + Command Handler [DV,Global,Param,SS,Autofix]]`
 
 ### 2025-04-10
 
