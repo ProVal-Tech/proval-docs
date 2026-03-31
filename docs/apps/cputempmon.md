@@ -14,13 +14,11 @@ last_update:
 
 <br />
 <div align="center">
-    <a href="https://github.com/ProVal-Tech/CPUTempMon">
-        <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/63c35c04-4327-45d0-a249-202cf6c67088/image1.webp" alt="Logo" width="150" height="150">
+    <a href="https://content.provaltech.com/docs/63c35c04-4327-45d0-a249-202cf6c67088">
+        <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/63c35c04-4327-45d0-a249-202cf6c67088/image1.webp" alt="Logo" width="150" height="150" />
     </a>
     <h3 align="center">CPUTempMon</h3>
-    <p align="center">
-      A lightweight Windows CPU temperature retrieval utility.
-    </p>
+    <p align="center">A lightweight Windows CPU temperature retrieval utility.</p>
 </div>
 
 ## About
