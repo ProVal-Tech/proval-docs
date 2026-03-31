@@ -6,7 +6,7 @@ title_meta: 'Users - LogOff'
 keywords:  ['logoff', 'users', 'script', 'windows']
 description: 'Logs off specified users or all active sessions from a Windows system. It provides flexibility in managing user sessions and can be executed with different parameters to target individual users or the entire user base.'
 tags: ['windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
@@ -93,7 +93,7 @@ Paste in the following PowerShell script and set the `Expected time of script ex
 Logs off specified users or all active sessions from a Windows system.
 
 .DESCRIPTION
-This script terminates user sessions on a local or remote Windows machine. It accepts a comma-separated list of usernames and logs off their active sessions using the logoff command. 
+This script terminates user sessions on the local Windows machine where it is executed. It accepts a comma-separated list of usernames and logs off their active sessions using the logoff command. 
 
 If "ALL" is specified as the user parameter, the script will log off all currently active user sessions on the system. For individual users, the script queries active sessions using quser, extracts the session IDs, and terminates each session without user interaction.
 
