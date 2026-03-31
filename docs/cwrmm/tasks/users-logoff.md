@@ -6,7 +6,7 @@ title_meta: 'Users - LogOff'
 keywords:  ['logoff', 'users', 'script', 'windows']
 description: 'Logs off specified users or all active sessions from a Windows system. It provides flexibility in managing user sessions and can be executed with different parameters to target individual users or the entire user base.'
 tags: ['windows']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-26
