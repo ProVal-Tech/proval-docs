@@ -16,21 +16,19 @@ last_update:
 
 Installs Claude Desktop for the currently logged-in user context using a downloaded installer and a temporary scheduled task.
 
-### Workflow
-
-1. Confirms an interactive user session exists.
-2. Creates a working directory under ProgramData and grants broad access needed by scheduled task execution.
-3. Downloads the Claude installer executable from Anthropic.
-4. Enables trusted app sideloading via AppModelUnlock registry settings if needed (we need this to install the application).
-5. Enables the `VirtualMachinePlatform` optional Windows feature (we need this feature to use cowork).
-6. Creates and runs a short-lived scheduled task to launch the installer silently.
-7. Polls for Claude package installation, then removes the temporary scheduled task.
-
 > **Note:** *A user must be logged-in to install the application*
 
 ## Sample Run
 
 ![Image1](../../../static/img/docs/032638bf-0020-4d36-b52a-665e4d62adc3/image1.webp)
+
+## Global Variables
+
+| Name | Value | Accepted Values | Description |
+| ---- | ----- | --------------- | ----------- |
+| Debug | `False` | `False`, `True` | When `True`, enables detailed logging; when `False` (default), additional logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Output
 
