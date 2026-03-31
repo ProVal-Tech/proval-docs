@@ -32,10 +32,9 @@ By default the integration runs in safe listing mode: it reports matching catalo
 
 Queries the catalog for KB5074109, matches it to the current OS, and displays:  
  - Update title
-  - Compatible products
-  - File size
-  - Download URL
-    WITHOUT downloading or installing anything.
+ - Compatible products
+ - File size
+ - Download URL WITHOUT downloading or installing anything.
 
 ![Image1](../../../static/img/docs/f9cc3395-0e6b-11f1-a1aa-92000234cfc2/image1.webp)
 
