@@ -13,12 +13,12 @@ last_update:
 ---
 
 ## Summary
+
 Logs off specified users or all active sessions from a Windows system. It provides flexibility in managing user sessions and can be executed with different parameters to target individual users or the entire user base.
 
 ## Sample Run
 
-![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image5.webp) 
-
+![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image5.webp)
 
 ## User Parameters
 
@@ -51,7 +51,7 @@ Fill in the following details in the `Description` section:
 **Description:** `Logs off specified users or all active sessions from a Windows system.`  
 **Category:** `Custom`
 
-![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image1.webp) 
+![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image1.webp)
 
 ### Parameters
 
@@ -68,7 +68,6 @@ The `Add New Script Parameter` page will appear on clicking the `Add Parameter` 
 
 ![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image2.webp) 
 
-
 ### Script Editor
 
 Click the `Add Row` button in the `Script Editor` section to start creating the script  
@@ -80,7 +79,7 @@ A blank function will appear:
 #### Row 1 Function: `PowerShell Script`
 
 Search and select the `PowerShell Script` function.  
- 
+
 ![PowerShell Function Selected](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addedpowershellfunction.webp)  
 
 The following function will pop up on the screen:  
@@ -226,8 +225,7 @@ else {
 
 ```
 
-![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image3.webp) 
-
+![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image3.webp)
 
 ### Row 2 Function: Script Log
 
@@ -239,11 +237,9 @@ A blank function will appear.
 
 Search and select the `Script Log` function.  
 ![Script Log Search](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/addscriptlogfunction.webp)  
- 
 
 In the script log message, simply type `%output%` and click the `Save` button.  
 ![Script Log Save](../../../static/img/docs/b194bbed-fe64-4ced-8410-21281b08de07/outputscriptlogfunction.webp)
-
 
 ## Save Task
 
@@ -252,10 +248,10 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Completed Task
 
-![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image4.webp) 
-
+![Image](../../../static/img/docs/03e6ab79-bc24-4442-881c-0b18142bfa8c/image4.webp)
 
 ## Output
+
 - Script logs
 
 ## Changelog
