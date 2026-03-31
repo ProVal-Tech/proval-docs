@@ -28,7 +28,6 @@ Installs Claude Desktop for the currently logged-in user context using a downloa
 | ---- | ----- | --------------- | ----------- |
 | Debug | `False` | `False`, `True` | When `True`, enables detailed logging; when `False` (default), additional logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 | ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
-| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 ## Output
 
