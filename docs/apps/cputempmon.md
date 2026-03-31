@@ -4,7 +4,7 @@ slug: /63c35c04-4327-45d0-a249-202cf6c67088
 title: 'CPUTempMon'
 title_meta: 'CPUTempMon'
 keywords: ['cpu', 'cpu-temperature', 'cpu-temp-mon', 'temperature-monitoring', 'libre', 'libre-hardware-monitor']
-description: 'CpuTempMonitor is a simple utility that retrieves CPU temperature data and outputs it as structured JSON. It utilizes a two-tier approach to maximize hardware compatibility across different manufacturer BIOS implementations.'
+description: 'CPUTempMon is a simple utility that retrieves CPU temperature data and outputs it as structured JSON. It utilizes a two-tier approach to maximize hardware compatibility across different manufacturer BIOS implementations.'
 tags: ['cpu', 'monitoring', 'windows']
 draft: false
 unlisted: false
@@ -14,10 +14,10 @@ last_update:
 
 <br />
 <div align="center">
-    <a href="https://github.com/ProVal-Tech/CpuTempMonitor">
+    <a href="https://github.com/ProVal-Tech/CPUTempMon">
         <img src="https://raw.githubusercontent.com/ProVal-Tech/proval-docs/refs/heads/main/static/img/docs/63c35c04-4327-45d0-a249-202cf6c67088/image1.webp" alt="Logo" width="150" height="150">
     </a>
-    <h3 align="center">CpuTempMonitor</h3>
+    <h3 align="center">CPUTempMon</h3>
     <p align="center">
       A lightweight Windows CPU temperature retrieval utility.
     </p>
@@ -25,7 +25,7 @@ last_update:
 
 ## About
 
-CpuTempMonitor is a simple utility that retrieves CPU temperature data and outputs it as structured JSON. It utilizes a two-tier approach to maximize hardware compatibility across different manufacturer BIOS implementations.
+CPUTempMon is a simple utility that retrieves CPU temperature data and outputs it as structured JSON. It utilizes a two-tier approach to maximize hardware compatibility across different manufacturer BIOS implementations.
 
 The primary method uses `LibreHardwareMonitor` for highly accurate, per-core direct hardware access. If the system's firmware blocks this (common on enterprise laptops like Lenovo ThinkPads or Dell Latitudes), the application gracefully falls back to querying Windows Management Instrumentation (`MSAcpi_ThermalZoneTemperature`).
 
@@ -219,18 +219,6 @@ begin {
             throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $Error[0].Exception.Message)
         }
     }
-
-    $acl = Get-Acl -Path $workingDirectory
-    $hasFullControl = $acl.Access | Where-Object {
-        $_.IdentityReference -match 'Everyone' -and $_.FileSystemRights -match 'FullControl'
-    }
-    if (-not $hasFullControl) {
-        $accessRule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule(
-            'Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
-        )
-        $acl.AddAccessRule($accessRule)
-        Set-Acl -Path $workingDirectory -AclObject $acl -ErrorAction SilentlyContinue
-    }
     #endRegion
 
     #region set tls policy
@@ -320,20 +308,20 @@ begin {
 
 ## Usage
 
-CpuTempMonitor does not require any command-line arguments. Simply execute the binary from an elevated terminal and it will output structured JSON to the standard output (STDOUT).
+CPUTempMon does not require any command-line arguments. Simply execute the binary from an elevated terminal and it will output structured JSON to the standard output (STDOUT).
 
 ### Examples
 
 *Run directly in the console:*
 
 ```shell
-CpuTempMonitor.exe
+CPUTempMon.exe
 ```
 
 *Capture the JSON output and parse the CPU Package temperature in PowerShell:*
 
 ```powershell
-$cpuData = CpuTempMonitor.exe | ConvertFrom-Json
+$cpuData = CPUTempMon.exe | ConvertFrom-Json
 $packageTemp = $cpuData.Sensors | Where-Object { $_.Sensor -eq 'CPU Package' }
 return "Current CPU Package Temp: $($packageTemp.Current)°C"
 ```
@@ -341,12 +329,12 @@ return "Current CPU Package Temp: $($packageTemp.Current)°C"
 *Pipe the output directly into a JSON file for logging:*
 
 ```powershell
-CpuTempMonitor.exe > cpu-temp-$(Get-Date -Format 'yyyyMMdd-hhmmss').json
+CPUTempMon.exe > cpu-temp-$(Get-Date -Format 'yyyyMMdd-hhmmss').json
 ```
 
 ## Outputs
 
-Because hardware access varies drastically depending on OEM BIOS implementations, CpuTempMonitor handles three primary scenarios gracefully:
+Because hardware access varies drastically depending on OEM BIOS implementations, CPUTempMon handles three primary scenarios gracefully:
 
 ### Scenario 1: Successful Direct Hardware Access (Ideal)
 
