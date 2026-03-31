@@ -1,5 +1,5 @@
 ---
-id: 'N806cb4b9-2300-4f4c-96c5-c3f504476aa6'
+id: '806cb4b9-2300-4f4c-96c5-c3f504476aa6'
 slug: /806cb4b9-2300-4f4c-96c5-c3f504476aa6
 title: 'Bloatware to Remove'
 title_meta: 'Bloatware to Remove'
