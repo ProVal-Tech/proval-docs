@@ -9,7 +9,7 @@ tags: ['cpu', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-30
+  date: 2026-03-31
 ---
 
 <br />
