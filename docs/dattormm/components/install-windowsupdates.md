@@ -9,7 +9,7 @@ tags: ['patching', 'windows', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-08
+  date: 2026-03-30
 ---
 
 ## Overview
@@ -58,7 +58,6 @@ If no values are entered for any of the variables, the script defaults to perfor
 
 Additionally, the script provides flexibility to exclude specific KBs by using the ExcludeKBArticleID variable. This is helpful when certain KB patches are known to cause issues and should not be installed. Similarly, the ExcludeDrivers variable allows you to skip driver-related updates from being installed, giving you more control over what gets pushed to endpoints.
 
-
 ## Datto Variables
 
 | Variable Name | Type | Default | Description |
@@ -66,10 +65,12 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 | Category | String | | One or more update categories to include:- Critical Updates,Security Updates,Update Rollups,Feature Packs,Service Packs,Definition Updates,Drivers,Tools,Updates |
 | Severity | String | | One or more update severities to include:- Critical,Important,Low,Moderate,Unspecified |
 | KBArticleID | String | | One or more KB article IDs to include |
-| Title | String |  | Update title to include |
+| Title | String | | Update title to include (Supports Regex)|
 | ExcludeDrivers | Selection | False | Excludes updates in the 'Drivers' category |
 | ExcludeKBArticleID | String | | One or more KB article IDs to exclude from installation |
 | AllowReboot | Selection | False | Allows the computer to reboot automatically if required after updates |
+| Description | String | | Specifies a regex pattern to filter updates based on their description. |
+| NotDescription | String | | Specifies a regex pattern to exclude updates based on their description. |
 
 ## Output
 
@@ -81,6 +82,10 @@ Additionally, the script provides flexibility to exclude specific KBs by using t
 [Install-WindowsUpdates](../../../static/attachments/Install-WindowsUpdates.cpt)
 
 ## Changelog
+
+### 2026-03-30
+
+- Added `Description` and `NotDescription` parameters
 
 ### 2025-06-10
 
