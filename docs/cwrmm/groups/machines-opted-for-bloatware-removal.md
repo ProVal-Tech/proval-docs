@@ -6,7 +6,7 @@ title_meta: 'Machines Opted for Bloatware Removal'
 keywords:  ['bloatware', 'pua', 'remove-pua', 'remove-bloatware', 'uninstallation', 'application-management']
 description: 'This includes Windows machines on which bloatware removal is enabled.'
 tags:  ['windows', 'uninstallation', 'application']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-30
@@ -27,8 +27,8 @@ This includes Windows machines on which bloatware removal is enabled.
 
 ## Group Summary
 
-**Group Name:** `Machines Opted for Bloatware Removal`  
-**Description:** `This includes Windows machines on which bloatware removal is enabled.`
+- **Group Name:** `Machines Opted for Bloatware Removal`  
+- **Description:** `This includes Windows machines on which bloatware removal is enabled.`
 
 ![Image1](../../../static/img/docs/9ab7b938-24e3-47dc-b884-487ca0a8188f/image1.webp)
 
@@ -39,14 +39,14 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 | Block | Criteria Name          | Operator        | Value(s)                                 |
 |-------|-----------------------|-----------------|-------------------------------------------|
 | 1     | Enable Bloatware Removal | Contains any of | `Windows Workstations`, `Both`|
-| 1     | Exclude Bloatware Removal | Equal           | `False`              |
-| 1     | Exclude Bloatware Removal | Equal           | `False`              |
+| 1     | Exclude Bloatware Removal (Site) | Equal           | `False`              |
+| 1     | Exclude Bloatware Removal (Endpoint) | Equal           | `False`              |
 | 1     | OS Type                | Equal           | `Windows`       |
 | 1     | Endpoint Type          | Not Equal       | `Server`        |
 | 1     | Available        | Equals     | `True`        |
 | 2     | Enable Bloatware Removal | Contains any of | `Windows Servers`, `Both` |
-| 2     | Exclude Bloatware Removal | Equal           | `False`     |
-| 2     | Exclude Bloatware Removal | Equal           | `False`     |
+| 2     | Exclude Bloatware Removal  (Site) | Equal           | `False`     |
+| 2     | Exclude Bloatware Removal (Endpoint) | Equal           | `False`     |
 | 2     | OS Type                | Equal           | `Windows`     |
 | 2     | Endpoint Type          | Equal           | `Server`      |
 | 2     | Available        | Equals     | `True`        |

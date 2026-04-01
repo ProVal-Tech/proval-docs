@@ -6,7 +6,7 @@ title_meta: 'Enable Bloatware Removal'
 keywords:  ['bloatware', 'pua', 'remove-pua', 'remove-bloatware', 'uninstallation', 'application-management']
 description: 'This custom field removes specified bloatware from the system.'
 tags:  ['windows', 'uninstallation', 'application']
-draft: False
+draft: false
 unlisted: false
 last_update:
   date: 2026-03-30
@@ -24,9 +24,9 @@ This custom field is used to remove specified bloatware applications from the sy
 
 ## Details
 
-| Name                 | Level                | Type         | Options       | Default?         | Required | Editable | Description                              |
-|----------------------|----------------------|---------------------|-------|----------------|----------|----------|------------------------------------------|
-| Enable Bloatware Removal | Company | Dropdown |  <ul><li>None</li><li>Both</li><li>Windows Servers</li><li>Windows Workstations</li></ul>  | blank or Default Value | True | Yes  | Enable this custom field to remove unwanted applications (bloatware) from the system. Select the appropriate operating system from the dropdown menu to ensure the bloatware removal is applied correctly for that OS. |
+| Name                 | Level                | Type         | Options       | Default         | Editable | Description                              |
+|----------------------|----------------------|---------------------|----------------|----------|----------|------------------------------------------|
+| Enable Bloatware Removal | Company | Dropdown |  <ul><li>None</li><li>Both</li><li>Windows Servers</li><li>Windows Workstations</li></ul>  | None | Yes  | Enable this custom field to remove unwanted applications (bloatware) from the system. Select the appropriate operating system from the dropdown menu to ensure the bloatware removal is applied correctly for that OS. |
 
 ## Completed Custom Field
 
