@@ -16,7 +16,7 @@ last_update:
 
 This script identifies and removes ScreenConnect Client installations from a Windows machine using registry-based detection.
 
-If a specific Client ID is provided (via parameter or environment variable),the script will uninstall only that matching ScreenConnect Client instance.
+If a specific Client ID is provided (via parameter or environment variable), the script will uninstall only that matching ScreenConnect Client instance.
 
 If no Client ID is provided, the script will uninstall all detected ScreenConnect Client installations.
 
@@ -29,9 +29,9 @@ In addition to uninstalling via MSI, the script also performs cleanup of remaini
 
 ## Parameters
 
-| Name | Calculated Name | Example | Accepted Values | Required | Default | Type | Description |
-| ---- | --------------- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Client | Client | -- | -- | NO | "" | `String/Text` | To uninstall a specific client/instance enter the value here. By default, all instances will be removed. |
+| Name | Calculated Name | Example | Required | Default | Type | Description |
+| ---- | --------------- | ------- | -------- | ------- | ---- | ----------- |
+| ClientID | ClientID | 7dfy79d12337499f5 | No |  | `String/Text` | To uninstall a specific client/instance enter the instance ID/client ID here. By default, all instances will be removed. |
 
 ## Automation Setup/Import
 
