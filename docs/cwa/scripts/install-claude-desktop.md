@@ -16,7 +16,7 @@ last_update:
 
 Installs Claude Desktop for the currently logged-in user context using a downloaded installer and a temporary scheduled task.
 
-> **Note:** *A user must be logged-in to install the application*
+> **Note:** *A user must be logged in to install the application*
 
 ## Sample Run
 
