@@ -20,7 +20,7 @@ Installs Claude Desktop for the currently logged-in user context using a downloa
 
 ## Sample Run
 
-![Image1](../../../static/img/docs/032638bf-0020-4d36-b52a-665e4d62adc3/image1.webp)
+![Sample run output of the Install Claude Desktop script](../../../static/img/docs/032638bf-0020-4d36-b52a-665e4d62adc3/image1.webp)
 
 ## Global Variables
 
