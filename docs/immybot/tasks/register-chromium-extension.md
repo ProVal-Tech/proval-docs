@@ -1,9 +1,9 @@
 ---
 id: '8aca8419-c848-4ec5-94c0-eda89ca63753'
 slug: /8aca8419-c848-4ec5-94c0-eda89ca63753
-title: 'Install Microsoft Edge Extension'
+title: 'Register Chromium Extension'
 title_meta: 'Register Chromium Extension'
-keywords: ['register', 'extension', 'chromium', 'browser']
+keywords: ['register', 'extension', 'chromium', 'edge', 'chromium', 'brave', 'browser']
 description: 'ImmyBot task to register Chromium browser extensions via policy enforcement. '
 tags: ['chrome', 'web-browser', 'windows']
 draft: false
