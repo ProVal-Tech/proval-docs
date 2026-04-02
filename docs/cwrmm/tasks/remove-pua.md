@@ -161,6 +161,40 @@ The following function will pop up on the screen:
 Paste in the following PowerShell script and set the `Expected time of script execution in seconds` to `3600` seconds. Click the `Save` button.
 
 ```powershell
+<#
+.SYNOPSIS
+Wrapper script that prepares parameters, downloads, and runs the Remove-PUA automation script.
+
+.DESCRIPTION
+This script is an automation wrapper for Remove-PUA operations.
+It reads runtime placeholders from an RMM tool, validates and normalizes user input,
+builds the correct parameter set, prepares a local working directory, ensures TLS support,
+downloads the latest Remove-PUA script from the content repository, executes it with the
+selected parameters, and validates generated logs.
+
+Main workflow blocks:
+1. Globals and user parameters:
+    Reads placeholders such as ListBloatware, Remove, RemoveAll, Category, and Except,
+    then converts them into boolean/array values as needed.
+2. Parameter hash table:
+    Creates one valid parameter set for the downstream script and rejects invalid input.
+3. Variables and working directory setup:
+    Builds file paths under ProgramData and creates the working folder if needed.
+4. Permissions:
+    Ensures the working directory has an Everyone FullControl ACL rule for automation access.
+5. TLS policy:
+    Forces TLS 1.2/1.3 where available so secure download calls can succeed.
+6. Script download and execution:
+    Downloads Remove-PUA.ps1 from the repository and runs it with splatted parameters.
+7. Log verification:
+    Confirms expected log output exists and throws with error log content when failures are detected.
+#>
+
+#region globals
+$ProgressPreference = 'SilentlyContinue'
+$WarningPreference = 'SilentlyContinue'
+#endRegion
+
 #region user parameters
 $ListBloatware = '@ListBloatware@'
 $Remove = '@Remove@'
@@ -224,46 +258,85 @@ if ( $ListBloatware ) {
 }
 #endregion
 
-#region variables
-[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
-$ProjectName = 'Remove-PUA'
-$BaseURL = 'https://file.provaltech.com/repo'
-$PS1URL = "$BaseURL/script/$ProjectName.ps1"
-$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
-$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
-$Workingpath = $WorkingDirectory
-$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
-$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
-#endregion
 
-#region Setup - Folder Structure
-New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
-try {
-    Invoke-WebRequest -Uri $PS1URL -OutFile $PS1path -UseBasicParsing -ErrorAction Stop
-} catch {
-    if (!(Test-Path -Path $PS1Path )) {
-        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $PS1URL, $($Error[0].Exception.Message))
+#region variables
+$projectName = 'Remove-PUA'
+$workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName
+$scriptPath = '{0}\{1}.ps1' -f $workingDirectory, $projectName
+$logPath = '{0}\{1}-log.txt' -f $workingDirectory, $projectName
+$errorLogPath = '{0}\{1}-error.txt' -f $workingDirectory, $projectName
+$baseUrl = 'https://contentrepo.net/repo'
+$scriptUrl = '{0}/script/{1}.ps1' -f $baseUrl, $projectName
+#endRegion
+
+#region working Directory
+if (!(Test-Path -Path $workingDirectory)) {
+    try {
+        New-Item -Path $workingDirectory -ItemType Directory -Force -ErrorAction Stop | Out-Null
+    } catch {
+        throw ('Failed to Create working directory {0}. Reason: {1}' -f $workingDirectory, $($Error[0].Exception.Message))
     }
 }
-#endregion
 
-& $PS1Path @Parameters
-#region Execution
-if ($Parameters) {
-    & $PS1Path @Parameters
+$acl = Get-Acl -Path $workingDirectory
+$hasFullControl = $acl.Access | Where-Object {
+    $_.IdentityReference -match 'Everyone' -and $_.FileSystemRights -match 'FullControl'
+}
+if (-not $hasFullControl) {
+    $accessRule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule(
+        'Everyone', 'FullControl', 'ContainerInherit, ObjectInherit', 'None', 'Allow'
+    )
+    $acl.AddAccessRule($accessRule)
+    Set-Acl -Path $workingDirectory -AclObject $acl -ErrorAction SilentlyContinue
+}
+#endRegion
+
+#region set tls policy
+$supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
+if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+} elseif ($supportedTLSversions -contains 'Tls12') {
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
-    & $PS1Path
+    Write-Information 'TLS 1.2 and/or TLS 1.3 are not supported on this system. This download may fail!' -InformationAction Continue
+    if ($PSVersionTable.PSVersion.Major -lt 3) {
+        Write-Information 'PowerShell 2 / .NET 2.0 doesn''t support TLS 1.2.' -InformationAction Continue
+    }
 }
-#endregion
+#endRegion
 
-if ( !(Test-Path $LogPath) ) {
-    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+#region download script
+try {
+    Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath -UseBasicParsing -ErrorAction Stop
+} catch {
+    if (!(Test-Path -Path $scriptPath)) {
+        throw ('Failed to download the script from ''{0}'', and no local copy of the script exists on the machine. Reason: {1}' -f $scriptUrl, $($Error[0].Exception.Message))
+    }
 }
-if ( Test-Path $ErrorLogPath ) {
-    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
-    throw $ErrorContent
+#endRegion
+
+#region execute script
+if ($parameters) {
+    & $scriptPath @parameters
+} else {
+    & $scriptPath
 }
-Get-Content -Path $LogPath
+#endRegion
+
+#region log verification
+if (!(Test-Path -Path $logPath )) {
+    throw ('Failed to run the agnostic script ''{0}''. A security application seems to have interrupted the script.' -f $scriptPath)
+} else {
+    $content = Get-Content -Path $logPath
+    $logContent = $content[ $($($content.IndexOf($($content -match "$($projectName)$")[-1])) + 1)..$($content.length - 1) ]
+    Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
+}
+
+if ((Test-Path -Path $errorLogPath)) {
+    $errorLogContent = Get-Content -Path $errorLogPath -ErrorAction SilentlyContinue
+    throw ('Error log Content: {0}' -f ($errorLogContent | Out-String -ErrorAction SilentlyContinue))
+}
+#endRegion
 ```
 
 ![Row 1 Image 3](<../../../static/img/docs/5f664f90-26b9-4082-9a99-73954de0c840/image18.webp>)
@@ -307,3 +380,8 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-01
 
 - Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
+
+### 2026-04-02
+
+- Updated the powershell used in the script as per our new standards.
+
