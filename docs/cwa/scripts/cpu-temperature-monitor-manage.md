@@ -9,7 +9,7 @@ tags: ['software', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-10
+  date: 2026-04-02
 ---
 
 ## Summary
@@ -21,7 +21,6 @@ If the script detects that a machine is excluded from monitoring and the monitor
 If the script finds that the configuration of the installed monitor set on the machine differs from the configured EDF or system properties, it executes the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script on the machine to recreate the monitor set with the correct configuration.
 
 The script can also be used to update the monitor set installed on the machines after making any configuration changes. For instance, if a configuration change is made in a client-level EDF, this script can be run against that client, and the changes will be reflected in the end machine's remote monitor after some time.
-
 
 ## Sample Run
 
@@ -36,6 +35,10 @@ For optimal results and to keep the CPU Temperature Monitoring solution up-to-da
 - [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
 
 ## Changelog
+
+### 2026-04-02
+
+- Optimized and Formatted SQL query
 
 ### 2025-04-10
 
