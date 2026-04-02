@@ -42,7 +42,7 @@ This command will add uBlock Origin and Zoom Meetings to the registered extensio
 
 | Parameter         | ValidateSet | Required  | Default   | Type      | Description                               |
 | ----------------- | ----------- | --------- | --------- | --------- | ----------------------------------------- |
-| `ExtensionID`     |             | True      |           | String[]  | Holds the URL id values for the desired extensions to install. |
+| `ExtensionID`     |             | True      |           | String[]  | Holds the URL ID values for the desired extensions to install. |
 | `Target`          | `Chromium`, `Chrome`, `Edge`, `Brave`, `Vivaldi` | False | Defaults to applying settings to all available targets | String[] | Designates the target browser to add the extension to. |
 
 ## Output
