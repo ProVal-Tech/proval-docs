@@ -7,9 +7,9 @@ keywords: ['extension', 'browser', 'edge', 'chrome']
 description: 'This installs the extensions to the Google Chrome browser.'
 tags: ['browsers', 'extensions', 'chrome', 'edge']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-12-24
+  date: 2026-04-02
 ---
 
 ## Description
@@ -25,6 +25,10 @@ This installs the extensions to the Google Chrome browser.
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/install-google-chrome-extension.toml)
 
 ## Changelog
+
+### 2026-04-02
+
+- Deprecated this task
 
 ### 2025-12-15
 

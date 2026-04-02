@@ -5,47 +5,59 @@ title: 'Register-ChromiumExtension'
 title_meta: 'Register-ChromiumExtension'
 keywords: ['register', 'extension', 'chromium', 'browser']
 description: 'Documentation for the Register-ChromiumExtension command to add and mandate extensions in Chromium-based browsers.'
-tags: ['chrome', 'web-browser']
+tags: ['chrome', 'web-browser', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-04-02
 ---
 
 ## Description
+
 Adds one or more extensions to popular Chromium-based browsers.
 
 ## Requirements
-The Extension URL ID must be obtained from the store.
+
+The Extension URL ID must be obtained from [Chrome Web Store](https://chromewebstore.google.com).
 
 ## Usage
+
 1. Verifies and adds an MDM policy if one doesn't exist.
 2. Determines if the app is currently being blocked and removes it if present.
 3. Adds the extension to the target browser(s) force list.
 
 ```powershell
-.\\Register-ChromeExtension.ps1 -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
+.\Register-ChromeExtension.ps1 -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
 ```
+
 This command will add uBlock Origin and Zoom Meetings to the registered extensions in the force list for all popular Chromium-based browsers.
 
 ```powershell
-.\\Register-ChromeExtension.ps1 -Target 'Chrome' -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
+.\Register-ChromeExtension.ps1 -Target 'Chrome' -ExtensionID 'kgjfgplpablkjnlkjmjdecgdpfankdle', 'cjpalhdlnbpafiamejdnhcphjbkeiagm'
 ```
+
 This command will add uBlock Origin and Zoom Meetings to the registered extensions in the force list for just the Chrome browser.
 
 ## Parameters
-| Parameter         | Alias | Required  | Default   | Type      | Description                               |
-| ----------------- | ----- | --------- | --------- | --------- | ----------------------------------------- |
-| `ExtensionID`     |       | True      |           | String[]  | Holds the URL ID values for the desired extensions to install. |
-| `Target`          |       | False     | Defaults to applying settings to all available targets | String[]  | Designates the target browser to add the extension to. |
+
+| Parameter         | ValidateSet | Required  | Default   | Type      | Description                               |
+| ----------------- | ----------- | --------- | --------- | --------- | ----------------------------------------- |
+| `ExtensionID`     |             | True      |           | String[]  | Holds the URL id values for the desired extensions to install. |
+| `Target`          | `Chromium`, `Chrome`, `Edge`, `Brave`, `Vivaldi` | False | Defaults to applying settings to all available targets | String[] | Designates the target browser to add the extension to. |
 
 ## Output
+
 The output will be logged in the following file:
-```
-.\\Register-ChromiumExtension-log.txt
-```
+
+- .\Register-ChromiumExtension-log.txt
+- .\Register-ChromiumExtension-error.txt
 
 ## Changelog
+
+### 2026-04-02
+
+- Resolved an issue that prevented multiple extensions from being installed simultaneously
+- Applied script formatting improvements for consistency and readability
 
 ### 2025-04-10
 
