@@ -81,7 +81,7 @@ fcoeoabgfenejglbffodgkkbkcdhcgfn
 eimadpbcbfnmbkopoojfekhnkhdbieeh
 ```
 
-**Target:** ` `
+**Target:** (leave blank or omit to apply to all supported browsers)
 
 ![Image4](../../../static/img/docs/8aca8419-c848-4ec5-94c0-eda89ca63753/image4.webp)
 
