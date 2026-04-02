@@ -9,12 +9,36 @@ tags: []
 draft: true
 unlisted: false
 last_update:
-  date: 2025-04-10
+  date: 2026-04-02
 ---
 
 ## Summary
 
+
 ## Dependencies
+
+
+## Sample Run
+
+Add screenshot here for the sample run
+
+## User Parameters
+
+| Name | Required | Example | Description   |
+|---------|---------|---------|---------|
+
+
+## Global Parameters
+
+| Name | Required | Example | Description   |
+|---------|---------|---------|---------|
+
+
+## EDFs
+
+| Name | Type | Level | Section | Editable | Required | Description |
+| ------------- | ------ | ------ | ----- | ----- | ----- | -------------------------------------------- |
+
 
 ## Output
 
