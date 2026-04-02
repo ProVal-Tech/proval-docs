@@ -16,12 +16,15 @@ last_update:
 
 TightVNC is a free and open-source remote desktop software that allows users to access and control systems over a network. This script is designed to automate the installation and uninstallation of TightVNC 32-bit, making it easier to manage deployments and removals across multiple machines.
 
-Note: The msi package download link needs to be updated once the new version gets released. Current msi downloader lnk is https://www.tightvnc.com/download/2.8.87/tightvnc-2.8.87-gpl-setup-32bit.msi. Use this URL to download the msi file and then Upload.
+**Note:** 
+- The msi package needs to be updated once the new version gets released. 
+- Current msi downloader link is https://www.tightvnc.com/download/2.8.87/tightvnc-2.8.87-gpl-setup-32bit.msi. 
+- Download the latest version from their official website: https://www.tightvnc.com/download.php
 
-[Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/install-tightvnc-32bit.toml)
+[Software Configuration](https://github.com/ProVal-Tech/immybot/blob/main/software/tightvnc-32-bit.toml)
 
 ## Changelog
 
 ### 2026-04-01
 
-Initial Version of the document.
+- Initial Version of the document.
