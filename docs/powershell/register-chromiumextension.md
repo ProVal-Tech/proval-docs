@@ -47,7 +47,7 @@ This command will add uBlock Origin and Zoom Meetings to the registered extensio
 
 ## Output
 
-The output will be logged in the following file:
+The output will be logged in the following files:
 
 - .\Register-ChromiumExtension-log.txt
 - .\Register-ChromiumExtension-error.txt
