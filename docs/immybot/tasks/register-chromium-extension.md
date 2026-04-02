@@ -89,7 +89,7 @@ eimadpbcbfnmbkopoojfekhnkhdbieeh
 
 | Parameter         | ValidateSet | Required  | Default   | Type      | Description                               |
 | ----------------- | ----------- | --------- | --------- | --------- | ----------------------------------------- |
-| `ExtensionID`     |             | True      |           | String[]  | Holds the URL id values for the desired extensions to install. |
+| `ExtensionID`     |             | True      |           | String[]  | Holds the URL ID values for the desired extensions to install. |
 | `Target`          | `Chromium`, `Chrome`, `Edge`, `Brave`, `Vivaldi` | False | Defaults to applying settings to all available targets | String[] | Designates the target browser to add the extension to. |
 
 [Task Configuration](https://github.com/ProVal-Tech/immybot/blob/main/tasks/register-chromium-extension.toml)
