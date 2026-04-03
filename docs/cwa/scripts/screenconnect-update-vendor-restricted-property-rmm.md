@@ -1,8 +1,8 @@
 ---
 id: '1e1a92d4-008b-4b8e-af9d-3ff9579acb24'
 slug: /1e1a92d4-008b-4b8e-af9d-3ff9579acb24
-title: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
-title_meta: 'ScreenConnect -  Update Vendor Restricted Property RMM+'
+title: 'ScreenConnect -  Update Vendor Restricted Property [RMM+]'
+title_meta: 'ScreenConnect -  Update Vendor Restricted Property [RMM+]'
 keywords: ['duplicate', 'screenconnect', 'custom', 'property', 'vendor', 'restricted', 'access']
 description: 'This document details a script designed to set the "Vendor Restricted" custom property in the CW Control Portal, allowing for the restriction of machine access based on vendor settings. It outlines the necessary system properties, user parameters, and dependencies required for successful execution.'
 tags: ['security', 'setup', 'software']
@@ -26,9 +26,9 @@ The system property `PropertyIndex` needs to be set before running the script.
 
 ## Dependencies
 
-- [CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+- [RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 - [Restrict Vendor Access to Clients](/docs/48cd317b-4188-4881-b9c3-411cd0323508)
-- [CWM - Automate - Internal Monitor - Automatically Restrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
+- [Internal Monitor - Automatically Restrict Vendor Machines in SC](/docs/4a4b5a11-8087-4e0a-b2b1-629d07326dd2)
 
 #### Variables
 
@@ -54,7 +54,7 @@ The system property `PropertyIndex` needs to be set before running the script.
 | Name                           | Example                             | Required | Description                                                                                                                                                                                                                  |
 |--------------------------------|-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `RMMPlus_AccessKey`           | ajw8fh2p93ufn;o31ifu2091j23oif     | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                                                                                                |
-| `RMMPlus_Headers`             | Origin: [site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control.                                                                        |
+| `RMMPlus_Headers`             | Origin:[site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control.                                                                        |
 | `RMMPlus_StaleAgentThreshold`  | 30                                  | True     | The number of days to indicate what a "stale" agent is to the scripts. 30 is the default.                                                                                                                                 |
 | `RMMPlus_Timeout`             | 1000                                | True     | The default timeout for commands run via RMM+ through Automate. 1000 is the default.                                                                                                                                     |
 | `PropertyIndex`               | 5                                   | True     | This is the custom property in CW Control that you want to set. Properties 1-4 are used by the CWA/CWC plugin. It is suggested to start with Properties 5-8. This video can explain how to set them up in CWC. [Watch here](https://www.youtube.com/watch?v=KgtLfEkAdwM) |

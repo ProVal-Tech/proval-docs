@@ -7,9 +7,9 @@ keywords: ['automate', 'agents', 'rmm', 'ticket', 'service', 'monitoring', 'offl
 description: 'This document provides a detailed overview of a script that utilizes the RMM+ extension in CW Control to reinstall Automate Agents. It addresses scenarios where agents are online in Control but offline in Automate, and includes functionality for creating tickets for offline servers or broken agents. The script aims to enhance efficiency by automating the agent restart process and ticket creation for better monitoring and management.'
 tags: []
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-05-09
+  date: 2026-04-03
 ---
 
 ## Summary
@@ -95,6 +95,10 @@ It will clear the `AgentStatus` script state and will finish any open offline se
 - Ticket
 
 ## Changelog
+
+### 2026-04-03
+
+- Deprecated
 
 ### 2025-04-10
 

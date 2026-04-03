@@ -1,8 +1,8 @@
 ---
 id: 'd69c20e1-e605-4cf9-bf35-bbe4c74f134f'
 slug: /d69c20e1-e605-4cf9-bf35-bbe4c74f134f
-title: 'CW Control - Uninstall and Remove from Control Web Portal'
-title_meta: 'CW Control - Uninstall and Remove from Control Web Portal'
+title: 'CW Control - Uninstall and Remove from Control Web Portal [Ticket]'
+title_meta: 'CW Control - Uninstall and Remove from Control Web Portal [Ticket]'
 keywords: ['uninstall', 'cw', 'control', 'rmm', 'script']
 description: 'This document details a script designed to uninstall CW Control and utilize the Offboarding - CW Control RMM+ API - EndSession Command to terminate the session from the CW Control web portal, saving approximately 10 minutes through automation.'
 tags: ['api', 'uninstallation']
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This script will uninstall CW Control and call the [Offboarding - CW Control RMM+ API - EndSession Command](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021) script to end the session from the CW Control web portal.
+This script will uninstall CW Control and call the [ScreenConnect - End Session Command [RMM+]](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021) script to end the session from the CW Control web portal.
 
 **Time Saved by Automation:** 10 Minutes
 
@@ -24,7 +24,7 @@ This script will uninstall CW Control and call the [Offboarding - CW Control RMM
 
 ## Dependencies
 
-[Offboarding - CW Control RMM+ API - EndSession Command](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021)
+- [ScreenConnect - End Session Command [RMM+]](/docs/6357c957-b5b6-42eb-aacc-f4f2a12d3021)
 
 ## Process
 

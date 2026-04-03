@@ -1,8 +1,8 @@
 ---
 id: '43225bbe-98a0-4352-8fb2-79e7431dea10'
 slug: /43225bbe-98a0-4352-8fb2-79e7431dea10
-title: 'ScreenConnect - Repair RMM+, Autofix, Globals'
-title_meta: 'ScreenConnect - Repair RMM+, Autofix, Globals'
+title: 'ScreenConnect - Repair [RMM+, Autofix, Globals]'
+title_meta: 'ScreenConnect - Repair [RMM+, Autofix, Globals]'
 keywords: ['screenconnect', 'repair', 'client', 'automate', 'rmm']
 description: 'This document describes a script that repairs non-functional or broken ScreenConnect clients on both Windows and Mac machines. It verifies the computer’s status in the ScreenConnect portal and creates tickets for any failures, integrating with ProVal’s Autotask for alerting and ticketing purposes.'
 tags: ['email', 'installation', 'ticketing']

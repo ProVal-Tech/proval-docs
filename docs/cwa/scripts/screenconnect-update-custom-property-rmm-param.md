@@ -1,8 +1,8 @@
 ---
 id: 'b634da09-7507-466f-be5e-f7a8d62aacf7'
 slug: /b634da09-7507-466f-be5e-f7a8d62aacf7
-title: 'ScreenConnect - Update Custom Property RMM+,Param'
-title_meta: 'ScreenConnect - Update Custom Property RMM+,Param'
+title: 'ScreenConnect - Update Custom Property [RMM+,Param]'
+title_meta: 'ScreenConnect - Update Custom Property [RMM+,Param]'
 keywords: ['custom', 'property', 'cw', 'control', 'automation']
 description: 'This document explains how to set a custom property in CW Control for a matching system using the matching GUID. It includes sample runs, dependencies, user parameters, system properties, and expected output, making it a comprehensive guide for users looking to automate this process.'
 tags: []
@@ -30,7 +30,7 @@ User properties for the Custom Property Index and the Property Value need to be 
 
 ## Dependencies
 
-[CWM - Automate - RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
+[RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 
 #### Variables
 
@@ -55,7 +55,7 @@ User properties for the Custom Property Index and the Property Value need to be 
 | Name                           | Example                               | Required | Description                                                                                                                                                                                                                     |
 |--------------------------------|---------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RMMPlus_AccessKey              | ajw8fh2p93ufn;o31ifu2091j23oif      | True     | This is the key set up in the CW Control RMM+ Plugin so Automate can reach out to gain access to the API.                                                                                                                    |
-| RMMPlus_Headers                | Origin: [site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control.                                                                           |
+| RMMPlus_Headers                | Origin:[site.site.com](http://site.site.com/) | True     | This is the URL (without http/https) for the CW Control server. This value needs to match the value in the RMM+ Plugin configuration in CW Control.                                                                           |
 | RMMPlus_StaleAgentThreshold     | 30                                    | True     | The number of days to indicate what a "stale" agent is to the scripts. 30 is the default.                                                                                                                                     |
 | RMMPlus_Timeout                | 1000                                  | True     | The default timeout for commands run via RMM+ through Automate. 1000 is the default.                                                                                                                                         |
 
