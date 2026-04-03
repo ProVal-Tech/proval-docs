@@ -373,15 +373,17 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-### 2025-05-02
-
-- Initial version of the document
-
-### 2025-04-01
-
-- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
-
 ### 2026-04-02
 
 - Updated the powershell used in the script as per our new standards.
+
+### 2025-05-02
+
+- Fixed the bug where the script contained several outdated and potentially incorrect AppxPackage IDs in the bloatware removal arrays. Some Microsoft apps have changed their package identifiers in newer Windows versions, and some third-party apps may have incorrect publisher IDs.
+
+### 2025-04-01
+
+- Initial version of the document
+
+
 
