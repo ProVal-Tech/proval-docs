@@ -294,7 +294,7 @@ if (-not $hasFullControl) {
 #region set tls policy
 $supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
 if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
 } elseif ($supportedTLSversions -contains 'Tls12') {
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
@@ -375,7 +375,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### 2026-04-02
 
-- Updated the powershell used in the script as per our new standards.
+- Updated the PowerShell used in the script as per our new standards.
 
 ### 2025-05-02
 
