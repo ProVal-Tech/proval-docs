@@ -16,7 +16,7 @@ last_update:
 
 The remote monitor is designed to clean up any `*.ps1` files older than 1 day located in the `C:\ProgramData\_Automation` directory. Since these scripts are often whitelisted by security applications, it is recommended to remove them from the system after they are run.
 
-**Notes:** The `Winget-AutoUpdate`, `Invoke-ToastNotification`, and `New-ToastNotification` directories, along with their subdirectories, are excluded due to their use in scheduled tasks.
+**Notes:** The `Winget-AutoUpdate`, `Invoke-ToastNotification`, `New-ToastNotification`, and `CPUTempMon` directories, along with their subdirectories, are excluded due to their use in scheduled tasks.
 
 ## Details
 
