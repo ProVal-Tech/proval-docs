@@ -9,37 +9,16 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-10
+  date: 2026-04-02
 ---
 
 ## Summary
 
-This script is designed to establish a remote monitoring system for Windows computers, specifically focusing on tracking CPU temperature. The script utilizes the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) tool to monitor CPU temperatures and generate alerts if any sensor consistently records temperatures exceeding the permissible limit.
-
-**Tool Placement:**
-- Save the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file in the `LTShare` directory (or `Webdav` for hosted partners) under the path `Transfer/Tools/CPUTempMon/CPUTempMon.exe`.
-- Create the `CPUTempMon` folder, place the [**`CPUTempMon.exe`**](https://proval.itglue.com/attachments/13313008) file, unblock the file if it's blocked, and execute an `iisreset` command after placing the file.
-
-![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_1.webp)
-
-**IIS Reload for Hosted Partners:**
-- Hosted partners can utilize the `IIS Reload` option under `Server Status` after completing the tool placement to ensure proper functionality.
-
-![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_2.webp)  
-![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_3.webp)
-
-**Temperature Threshold Calculation:**
-- The permissible limit is determined by subtracting the defined `offset` in Automate. This `offset` can be set either in the system property or the client-level EDF.
-
-**Understanding EDFs and System Properties:**
-- Familiarize yourself with the Extra Data Fields (EDFs) and system properties explained in this document to ensure seamless usage of the solution.
-
-**Note:**
-- It's crucial to follow the specified directory structure and initiate an `iisreset` after placing the tool.
-- The [**`CPUTempMon.exe` tool**](https://proval.itglue.com/attachments/13313008) is attached to this document.
+This script is designed to establish a remote monitoring system for Windows computers, specifically focusing on tracking CPU temperature. The script utilizes the [**`CPUTempMon`**](/docs/63c35c04-4327-45d0-a249-202cf6c67088) tool to monitor CPU temperatures and generate alerts if any sensor consistently records temperatures exceeding the permissible limit.
 
 ## Dependencies
 
+- [CPUTempMon](/docs/63c35c04-4327-45d0-a249-202cf6c67088)
 - [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
 
 ## Sample Run
@@ -51,19 +30,9 @@ This script is designed to establish a remote monitoring system for Windows comp
 **Regular Execution:**  
 ![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_5.webp)
 
-**With Force Parameter:** The script’s general function is to compare the monitor set currently installed on the machine with the configuration in the EDFs and system properties. If discrepancies are detected, the monitor will be re-created. However, the force switch can be used to forcefully re-create the monitor set.
+**With Force Parameter:** The script's general function is to compare the monitor set currently installed on the machine with the configuration in the EDFs and system properties. If discrepancies are detected, the monitor will be re-created. However, the force switch can be used to forcefully re-create the monitor set.
 
 ![Image](../../../static/img/docs/7519f655-224b-4c95-b716-773f59cb7314/image_6.webp)
-
-## Variables
-
-| Name                    | Description                                               |
-|-------------------------|-----------------------------------------------------------|
-| ProjectName             | CPUTempMon                                               |
-| WorkingDirectory         | C:/ProgramData/_Automation/Script/CPUTempMon            |
-| DownloadURL             | [https://redirhostname/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe](https://redirhostname/labtech/transfer/Tools/CPUTempMon/CPUTempMon.exe) |
-| ToolPath                | C:/ProgramData/_Automation/Script/CPUTempMon/CPUTempMon.exe |
-| ScriptPath              | C:/ProgramData/_Automation/Script/CPUTempMon/CPUTempMon.ps1 |
 
 ## User Parameters
 
@@ -111,10 +80,15 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Script Logs
 - Files on Machine
 - Remote Monitor
-## Attachments
-[CPUTempMon.exe](<../../../static/attachments/itg/14323116/CPUTempMon.exe>)
 
 ## Changelog
+
+### 2026-04-02
+
+- Modified and hosted the `CPUTempMon.exe` tool on our file server.
+- Made changes to the PowerShell scripts used in this script accordingly.
+- Code signed the tool.
+- Code signed the PowerShell scripts.
 
 ### 2025-04-10
 
