@@ -9,7 +9,7 @@ tags: ['security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-04-03
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Check the [Script's](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) document for mo
 
 ## Dependencies
 
-[EPM - Windows Configuration - Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c)
+[Script - Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c)
 
 ## Target
 
@@ -35,6 +35,10 @@ With the exception of Domain Controllers, only Windows machines belonging to cli
 The alert template should run the [Windows - Admin Account - Create/Update](/docs/a3038ecc-f851-4327-b1ca-a4ca485f6f9c) script on the machines detected by the monitor set.
 
 ## Changelog
+
+### 2026-04-03
+
+- Optimized SQL query to improve performance
 
 ### 2025-04-10
 
