@@ -68,7 +68,7 @@ The goal of this solution is to monitor the CPU temperature of physical Windows 
 
 ## Updating Existing Deployments
 
-If this solution is already deployed in the environment and has been updated as of 2026-04-02, make sure the updated `CPUTempMon.exe` file and the associated scripts are pushed back out to all applicable machines.
+If this solution was deployed in your environment before 2026-04-02 and you are now upgrading to the updated `CPUTempMon.exe` file and associated scripts, make sure those updated components are pushed back out to all applicable machines.
 
 The recommended method is to make a small change to the `CPUTempMon_Interval_Seconds` system property and then run the [CPU Temperature Monitor - Manage](/docs/56c1260c-a689-45e9-a226-49bf31444750) script. For example, if the current value is `300`, change it to `310` and then execute the Manage script. The Manage script will detect that the existing monitor-set configuration no longer matches the configured values and will automatically run the [CPU Temperature Monitor - Create](/docs/7519f655-224b-4c95-b716-773f59cb7314) script against the affected machines, forcing the monitor set to be recreated and redeploying the updated files.
 
