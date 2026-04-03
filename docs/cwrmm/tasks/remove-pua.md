@@ -383,5 +383,5 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### 2026-04-02
 
-- Updated the powershell used in the script as per our new standards.
+- Updated the PowerShell used in the script as per our new standards.
 
