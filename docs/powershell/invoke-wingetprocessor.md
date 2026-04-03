@@ -20,20 +20,20 @@ This script is built for reliability. It automatically fetches all necessary too
 
 ### Features
 
-* **Zero-Dependency Execution:** Automatically downloads and sets up a portable version of WinGet, 7-Zip, and Microsoft VCLibs.
-* **Flexible Installation:** Install applications by accurate **Package ID** (e.g., `Mozilla.Firefox`) or friendly **Name** (e.g., `Firefox`).
-* **Bulk Updates:** One-click command to update all compatible software on the system.
-* **Import/Export:** Create a "snapshot" of installed apps on one machine (Export) and replicate it on another (Import).
-* **Smart Logic:** Checks if an app is already installed before trying to install it again (idempotency).
-* **Logging:** Generates detailed logs (`Invoke-WingetProcessor-log.txt`) for auditing and troubleshooting.
+- **Zero-Dependency Execution:** Automatically downloads and sets up a portable version of WinGet, 7-Zip, and Microsoft VCLibs.
+- **Flexible Installation:** Install applications by accurate **Package ID** (e.g., `Mozilla.Firefox`) or friendly **Name** (e.g., `Firefox`).
+- **Bulk Updates:** One-click command to update all compatible software on the system.
+- **Import/Export:** Create a "snapshot" of installed apps on one machine (Export) and replicate it on another (Import).
+- **Smart Logic:** Checks if an app is already installed before trying to install it again (idempotency).
+- **Logging:** Generates detailed logs (`Invoke-WingetProcessor-log.txt`) for auditing and troubleshooting.
 
 ---
 
 ## Requirements
 
-* **OS:** Windows 10 Version 1709 or newer.
-* **Permissions:** Must be run as **Administrator** (or SYSTEM context in RMM tools).
-* **Network:** Internet access is required to download the WinGet tools and the applications themselves.
+- **OS:** Windows 10 Version 1709 or newer.
+- **Permissions:** Must be run as **Administrator** (or SYSTEM context in RMM tools).
+- **Network:** Internet access is required to download the WinGet tools and the applications themselves.
 
 ---
 
@@ -45,42 +45,42 @@ The script follows a rigorous 5-stage process to ensure success, even on clean o
 
 Before any changes are made, the script prepares the environment:
 
-* **Security Protocols:** It forces the system to use **TLS 1.2** or **TLS 1.3** for secure network communication. This prevents download errors on older Windows versions.
-* **Logging Module:** It installs or updates a helper module named `Strapper`. This module is responsible for writing clean, readable logs to the disk.
-* **Directory Setup:** It creates a dedicated working folder in `C:\ProgramData\_automation\script\winget`. All temporary files are stored here to avoid cluttering the user's desktop or Temp folders.
+- **Security Protocols:** It forces the system to use **TLS 1.2** or **TLS 1.3** for secure network communication. This prevents download errors on older Windows versions.
+- **Logging Module:** It installs or updates a helper module named `Strapper`. This module is responsible for writing clean, readable logs to the disk.
+- **Directory Setup:** It creates a dedicated working folder in `C:\ProgramData\_automation\script\winget`. All temporary files are stored here to avoid cluttering the user's desktop or Temp folders.
 
 ### 2. Dependency Management (The "Portable" Engine)
 
 The script assumes the computer has *nothing* installed. It builds its own toolkit:
 
-* **WinGet Download:** It fetches the very latest version of the WinGet application directly from the official Microsoft GitHub repository.
-* **Archiving Tools:** It downloads a portable version of **7-Zip**. It does *not* install 7-Zip on the system; it just uses the executable file to open the WinGet installer.
-* **System Libraries:** It checks for **Microsoft VCLibs** and **Visual C++ Redistributables**. If these are missing, the script downloads and installs them silently. WinGet cannot run without these.
+- **WinGet Download:** It fetches the very latest version of the WinGet application directly from the official Microsoft GitHub repository.
+- **Archiving Tools:** It downloads a portable version of **7-Zip**. It does *not* install 7-Zip on the system; it just uses the executable file to open the WinGet installer.
+- **System Libraries:** It checks for **Microsoft VCLibs** and **Visual C++ Redistributables**. If these are missing, the script downloads and installs them silently. WinGet cannot run without these.
 
 ### 3. Extraction & Assembly
 
 Once the files are downloaded, the script assembles them:
 
-* It uses the portable 7-Zip tool to "unzip" the WinGet installer (which is technically an MSIX bundle).
-* It intelligently detects if the computer is **64-bit** or **32-bit** and extracts the correct `AppInstaller` file.
-* It verifies that `winget.exe` is present and functional by running a test command.
+- It uses the portable 7-Zip tool to "unzip" the WinGet installer (which is technically an MSIX bundle).
+- It intelligently detects if the computer is **64-bit** or **32-bit** and extracts the correct `AppInstaller` file.
+- It verifies that `winget.exe` is present and functional by running a test command.
 
 ### 4. Execution Logic
 
 Now that the engine is running, the script performs the task you requested:
 
-* **If Installing:** It checks if the app is already there. If not, it installs it. If it is there, the script checks your settings to see if it should update it or leave it alone.
-* **If Uninstalling:** It verifies the app exists before trying to remove it, preventing "File not found" errors.
-* **If Updating All:** It scans the entire system for outdated software and triggers updates for everything found in the WinGet repository.
-* **If Exporting:** It scans the system and saves a list of all apps to a JSON file (e.g., `C:\Apps.json`).
-* **If Importing:** It reads a JSON file and sequentially installs every app listed inside it.
+- **If Installing:** It checks if the app is already there. If not, it installs it. If it is there, the script checks your settings to see if it should update it or leave it alone.
+- **If Uninstalling:** It verifies the app exists before trying to remove it, preventing "File not found" errors.
+- **If Updating All:** It scans the entire system for outdated software and triggers updates for everything found in the WinGet repository.
+- **If Exporting:** It scans the system and saves a list of all apps to a JSON file (e.g., `C:\Apps.json`).
+- **If Importing:** It reads a JSON file and sequentially installs every app listed inside it.
 
 ### 5. Cleanup
 
 After the job is done, the script is a "good guest":
 
-* It deletes the downloaded installers, zip files, and temporary executables.
-* It leaves the system clean, saving only the Log files for your review.
+- It deletes the downloaded installers, zip files, and temporary executables.
+- It leaves the system clean, saving only the Log files for your review.
 
 ---
 
@@ -172,10 +172,14 @@ Installs an application (e.g., VS Code) for all users (`--scope machine`). If th
 
 Troubleshooting logs are saved to the script's directory (or the current execution path):
 
-* `.\Invoke-WingetProcessor-log.txt`: Standard success messages and steps.
-* `.\Invoke-WingetProcessor-error.txt`: Details on any failures or crashes.
+- `.\Invoke-WingetProcessor-log.txt`: Standard success messages and steps.
+- `.\Invoke-WingetProcessor-error.txt`: Details on any failures or crashes.
 
 ## Changelog
+
+### 2026-04-03
+
+- Updated the script to not fail if the download or extract fails and the Winget.exe already exists on the machine from a previous run
 
 ### 2025-04-10
 
