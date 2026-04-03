@@ -40,6 +40,17 @@ To remove individual AppxPackages installed on the machine like `Microsoft.Micro
 
 [Remove-PUA](/docs/fda5f79b-3e83-4561-af2b-2533f41c7443)
 
+
+## User Parameters
+
+| Name          | Example    | Required | Type        | Description  |
+|---------------|------------|----------|--------------|----------------|
+| ListBloatware  |  Yes  | False | Flag | Select Yes to list installed bloatwares without making changes. |
+| Remove  | Microsoft.MicrosoftOfficeHub,Microsoft.XboxApp  | False | Text | Specify name(s) of the bloatwares to uninstall. |
+| RemoveAll |  Yes | False | Flag | Set it to Yes to remove all bloatware by category or all found bloatware with or without exceptions |
+| Category | XboxFeaturesApps | False | Text | Used with RemoveAll to filter bloatware to a certain category, allowing you to select just a specific category of bloatware. Accepted Values includes <br></br> - MsftBloatApps <br></br> - ThirdPartyBloatApps <br></br> - WindowsStoreApps <br></br> - XboxFeaturesApps <br></br> - NonAppxApps |
+| Except | xboxGameOverlay | False | Text | Used with RemoveAll or Category to remove all except some item(s) from a category or all together |
+
 ## Implementation
 
 ### Script Details
@@ -212,6 +223,8 @@ if ($Remove -and $Remove -notmatch 'Remove' -and $Remove -match '[A-z]') {
     $Remove = $Remove -replace ', ', ',' -replace ' ,', ','
     $Remove = $Remove.Trim()
     $Remove = $Remove.Split(',')
+} else {
+    $Remove =$false
 }
 
 if ($RemoveAll -match '1|True|Yes') {
@@ -294,7 +307,7 @@ if (-not $hasFullControl) {
 #region set tls policy
 $supportedTLSversions = [enum]::GetValues('Net.SecurityProtocolType')
 if (($supportedTLSversions -contains 'Tls13') -and ($supportedTLSversions -contains 'Tls12')) {
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol::Tls13 -bor [System.Net.SecurityProtocolType]::Tls12
 } elseif ($supportedTLSversions -contains 'Tls12') {
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 } else {
