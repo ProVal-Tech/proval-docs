@@ -1,8 +1,8 @@
 ---
 id: '80e9ef78-1a3c-4678-9801-5f60afd0a662'
 slug: /80e9ef78-1a3c-4678-9801-5f60afd0a662
-title: 'Install All Available Updates Force Reboot'
-title_meta: 'Install All Available Updates Force Reboot'
+title: 'Install All Available Updates [Force Reboot]'
+title_meta: 'Install All Available Updates [Force Reboot]'
 keywords: ['windows', 'updates', 'installation', 'script', 'drivers']
 description: 'This document provides a comprehensive guide on a PowerShell script that checks for Windows updates and installs all available updates, including drivers, with a focus on PC staging to ensure a new machine is fully updated. The script includes parameters for ticketing and system properties management.'
 tags: ['security', 'software', 'update']
