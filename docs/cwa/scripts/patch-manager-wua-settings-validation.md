@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-27
+  date: 2026-04-03
 ---
 
 ## Summary
@@ -55,6 +55,10 @@ If you modify the Active Hours from their default, keep in mind that the **Max**
 All output for the PowerShell script results is directed to the Script Log and to the Script State 'PatchSettingCheck'.
 
 ## Changelog
+
+### 2026-04-03
+
+- Updated script to include 2025 servers.
 
 ### 2025-06-27
 
