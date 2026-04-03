@@ -9,7 +9,7 @@ tags: ['update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-06-27
+  date: 2026-04-03
 ---
 
 ## Summary
@@ -56,14 +56,14 @@ All output for the PowerShell script results is directed to the Script Log and t
 
 ## Changelog
 
-### 2025-04-10
+### 2026-04-03
 
-- Initial version of the document
+- Updated script to include 2025 servers.
 
 ### 2025-06-27
 
 - Disabled the Feature Update Defer Registry Value in Patch Config Audit Solution. It is now set to 0 Days so that the feature update can be detected and pushed.
 
-### 2026-04-02
+### 2025-04-10
 
-- Updated script to include 2025 servers.
+- Initial version of the document
