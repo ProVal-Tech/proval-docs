@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-What is the end goal of this solution?
+What is the end goal of this solution? Add platform information. 
 
 ## Associated Content
 

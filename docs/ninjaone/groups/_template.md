@@ -14,10 +14,6 @@ last_update:
 
 ## Summary
 
-## Details
-
-| Name       | Description |
-| ---------- | ----------- |
 
 ## Dependencies
 
