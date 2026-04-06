@@ -14,13 +14,11 @@ last_update:
 
 ## Overview
 
-This script automates the removal of the ConnectWise Automate agent from a Windows machine using Labtech PowerShell Module. It performs the following steps:
-
-  1. Creates the required working directory if it does not already exist.
-  2. Downloads the Agent_Uninstaller.zip from the ConnectWise asset server.
-  3. Extracts the contents of the zip archive to the working directory.
-  4. Locates the uninstaller executable (setup.exe by default, or the first .exe found).
-  5. Runs the uninstaller silently and validates the exit code.
+This script automates the removal of the ConnectWise Automate agent from a Windows machine using Labtech PowerShell Module. 
+- It downloads and imports the LabTech PowerShell module to perform a silent uninstall of the Automate agent. 
+- The script ensures that the required module is available locally before execution and handles secure communication using modern TLS protocols.
+- After initiating the uninstall process, the script validates the removal by checking for any remaining LabTech services and installation directories. 
+- If any components are still present, the script reports the failure to ensure visibility and proper remediation.
   
 ## Sample Run
 
