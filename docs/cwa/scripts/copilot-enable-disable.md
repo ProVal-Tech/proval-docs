@@ -21,17 +21,24 @@ The revert and disable can be scheduled using Autofix monitors.
 
 ## Sample Run
 
+**First Run:** Run this script with `Set_Environment = 1` to create required EDFs
+
 ![Set_Environment](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image.webp>)
+
+Run this script with `Revert = 1` to revert the Copilot changes on deman and ensure it gets enabled and installed.
+
 ![Copilot_Revert](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image-1.webp>)
+
+To disable and uninstall Copilot, run without any parameter:
+
 ![Normal_Execution](<../../../static/img/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7/image-2.webp>)
 
 ## Dependencies
 
-[Monitor_Copilot_Disable_&_Uninstall](/docs/d87e16ae-34f2-43ba-a84d-061abc69d716)
-
-[Monitor_Copilot_Revert_Deployment](/docs/5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2)
-
-[DV_Copilot_Enable_Disable](/docs/eaa46853-c09b-439a-a06b-6388c0a758b6)
+- [Monitor - Copilot Disable and Uninstall](/docs/d87e16ae-34f2-43ba-a84d-061abc69d716)
+- [Monitor - Copilot Revert Deployment](/docs/5dc486d6-d03e-4a76-a1b9-b5cd68c5b2a2)
+- [Dataview - Copilot_Enable_Disable](/docs/eaa46853-c09b-439a-a06b-6388c0a758b6)
+- [Solution - Copilot Disable/Uninstall & Revert](/docs/00a48929-36d7-4435-8113-deb3b05b5bc2)
 
 ## User Parameters
 
@@ -68,8 +75,8 @@ The revert and disable can be scheduled using Autofix monitors.
 
 ### 2025-04-10
 
-- Initial version of the document
+- Updated script by adding the "Microsoft 365 Copilot" application removal and changing the file hash in the document.
 
 ### 2025-03-28
 
-- Updated script by adding the "Microsoft 365 Copilot" application removal and changing the file hash in the document.
+- Initial version of the document

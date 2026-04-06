@@ -26,11 +26,15 @@ It also depends on the following EDFs:
 | Exclude Copilot Revert  | Computer | Checkbox | 1 or 0                         | This excludes the copilot revert action for the computer where it is checked                                     |
 | Exclude Copilot Revert  | Location | Checkbox | 1 or 0                         | This excludes the agents of the location where it is checked                                                     |
 | Copilot Revert Enable   | Client   | Checkbox | 1 or 0                         | This check box allows the agents of clients to revert the Copilot disabling and uninstallation                   |
+
 ## Dependencies
 
-[Script_Copilot_Enable_Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Script - Copilot Enable/Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Solution - Copilot Disable/Uninstall & Revert](/docs/00a48929-36d7-4435-8113-deb3b05b5bc2)
 
-Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
+## Alert Template 
+
+- `△ Custom - Execute Script - Copilot - Enable/Disable`
 
 ## Target
 

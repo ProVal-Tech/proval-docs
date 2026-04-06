@@ -77,8 +77,8 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 
 ### 2025-04-10
 
-- Initial version of the document
+- Adjusted the script to reset the $AutoUpdateRunTime variable in the foreach loop
 
 ### 2025-04-08
 
-- Adjusted the script to reset the $AutoUpdateRunTime variable in the foreach loop
+- Initial version of the document
