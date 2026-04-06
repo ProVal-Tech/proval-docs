@@ -32,8 +32,11 @@ It can be used to audit the agents where sync is failed.
 
 ## Sample Screenshot
 
-
+Custom field screenshot:
 ![Image1](../../../static/img/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56/image.webp)
+
+Possible outcomes of the sync status:
+![Image2](../../../static/img/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56/image2.webp)
 
 ## Changelog
 
