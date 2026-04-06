@@ -9,7 +9,7 @@ tags: ['application', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-30
+  date: 2026-04-06
 ---
 
 ## Summary
@@ -34,6 +34,11 @@ Installs Claude Desktop for the currently logged-in user context using a downloa
 - Script Log
 
 ## Changelog
+
+### 2026-04-06
+
+- Code signed PowerShell script
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2026-03-30
 

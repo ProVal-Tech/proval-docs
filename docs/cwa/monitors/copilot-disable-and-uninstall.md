@@ -29,9 +29,12 @@ It also depends on the following EDFs:
 
 ## Dependencies
 
-[Script_Copilot_Enable_Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Script - Copilot Enable/Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Solution - Copilot Disable/Uninstall & Revert](/docs/00a48929-36d7-4435-8113-deb3b05b5bc2)
 
-Alert Template - `△ Custom - Execute Script - Copilot - Enable/Disable`
+## Alert Template 
+
+- `△ Custom - Execute Script - Copilot - Enable/Disable`
 
 ## Target
 

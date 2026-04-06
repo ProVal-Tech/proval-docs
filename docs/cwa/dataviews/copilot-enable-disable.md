@@ -1,8 +1,8 @@
 ---
 id: 'eaa46853-c09b-439a-a06b-6388c0a758b6'
 slug: /eaa46853-c09b-439a-a06b-6388c0a758b6
-title: 'Copilot Enable/Disable'
-title_meta: 'Copilot Enable/Disable'
+title: 'Copilot Enable/Disable [Script]'
+title_meta: 'Copilot Enable/Disable [Script]'
 keywords: ['Copilot', 'Pilot', 'Microsoft', 'Edge', 'Browser']
 description: 'This dataview contains the detail of action taken on the agent by the script at Copilot'
 tags: ['api', 'edge', 'browsers', 'windows']
@@ -18,7 +18,8 @@ This dataview contains the detail of action taken on the agent by the script at 
 
 ## Dependencies
 
-[Script_Copilot_Disable_Enable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Script - Copilot Enable/Disable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7)
+- [Solution - Copilot Disable/Uninstall & Revert](/docs/00a48929-36d7-4435-8113-deb3b05b5bc2)
 
 ## Columns
 
@@ -30,7 +31,7 @@ This dataview contains the detail of action taken on the agent by the script at 
 | Operating System             | Operating system name of the agent               |
 | LastContact                  | Last contact of the agent with CW Automate       |
 | Copilot Status               | Copilot status of the agent                      |
-| Copilot Status Detection Date| Copilot status changes date made by the [Script_Copilot_Disable_Enable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7) on the agent          |
+| Copilot Status Detection Date| Copilot status changes date made by the [Script - Copilot Disable Enable](/docs/42e9ec1d-84df-11ef-8a0f-8600008a66b7) on the agent          |
 
 ## Changelog
 
