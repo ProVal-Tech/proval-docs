@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This is a function script run by the [CWM - Automate - Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) script. Its purpose is to monitor the repairs carried out by the script. The details of the repaired computer are stored in the [CWM - Automate - Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf) custom table. This information is then displayed by the [CWM - Automate - Dataview - Repaired Agents Last 30 Days](/docs/cafd4aba-ae71-4098-bde5-52173cdc0427) dataview.
+This is a function script run by the [Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c) script. Its purpose is to monitor the repairs carried out by the script. The details of the repaired computer are stored in the [pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf) custom table. This information is then displayed by the [Repaired Agents Last 30 Days](/docs/cafd4aba-ae71-4098-bde5-52173cdc0427) dataview.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
-- [CWM - Automate - Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf)
+- [Script - Automate Agent - Auto Repair](/docs/7c0947f0-306b-4ae0-9bd7-dd15dfb0008c)
+- [Custom Table - pvl_repaired_agents](/docs/1258c674-8d60-446d-a3c6-f3295ee682cf)
 
 ## Output
 
@@ -27,6 +27,10 @@ This is a function script run by the [CWM - Automate - Script - Automate Agent -
 - Dataview
 
 ## Changelog
+
+### 2026-04-06
+
+- Optimized SQL for data import to the custom table.
 
 ### 2025-04-10
 
