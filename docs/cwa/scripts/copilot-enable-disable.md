@@ -9,20 +9,15 @@ tags: ['api', 'edge', 'windows', 'browsers']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-04-06
 ---
 
 ## Summary
+
 This script will uninstall and disable the Microsoft Copilot and Microsoft 365 copilot as well as its functionality in the Edge browser.
 It has the revert option available too to revert the changes to its original state.
 The Copilot changes stores to the computer-EDF from where the data populates to the DV.
 The revert and disable can be scheduled using Autofix monitors.
-
-**Note: please make sure to get the below hash whitelisted if there is any blocking security application:
-
-F02B553A62B90CE5720647FDADB568E8
-
-EEE454AAB028DE1528935E8962FBD775
 
 ## Sample Run
 
@@ -38,8 +33,7 @@ EEE454AAB028DE1528935E8962FBD775
 
 [DV_Copilot_Enable_Disable](/docs/eaa46853-c09b-439a-a06b-6388c0a758b6)
 
-
-#### User Parameters
+## User Parameters
 
 | Name           | Example | Required | Description                                                                                                         |
 |----------------|---------|----------|---------------------------------------------------------------------------------------------------------------------|
@@ -66,6 +60,11 @@ EEE454AAB028DE1528935E8962FBD775
 - Dataview
 
 ## Changelog
+
+### 2026-04-06
+
+- Code signed PowerShell script
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2025-04-10
 

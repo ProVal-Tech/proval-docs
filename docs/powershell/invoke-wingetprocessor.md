@@ -9,7 +9,7 @@ tags: ['installation', 'software', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-19
+  date: 2026-04-06
 ---
 
 ## Description
@@ -176,6 +176,11 @@ Troubleshooting logs are saved to the script's directory (or the current executi
 - `.\Invoke-WingetProcessor-error.txt`: Details on any failures or crashes.
 
 ## Changelog
+
+### 2026-04-06
+
+- Forked 7zip's official Github Repo
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2026-04-03
 

@@ -9,23 +9,16 @@ tags: ['software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-18
+  date: 2026-04-06
 ---
 
 ## Summary
 
 This script is designed to gather the latest version of applications supported by Winget and store them in the system properties created with the name of the PackageID.
 
-## File Hash
-
-- **File Path:** `C:\ProgramData\_automation\Script\Get-WingetPackageLatestVersion\Get-WingetPackageLatestVersion.ps1`  
-- **File Hash (Sha256):** `88C430DB16D0CD9E76C3B3650E76F6D7B06C79F42678F2C65138687EA9C546E7`  
-- **File Hash (MD5):** `885A601D6A2A0EA69C8073C165FBAB54`  
-
 ## Dependencies
 
 - [Solution - Update/Deploy Target Application to Latest Version [Winget]](/docs/2487a1f4-6f85-42f3-91d0-4aab8c875021)
-
 
 ## Sample Run
 
@@ -50,8 +43,8 @@ This script is designed to gather the latest version of applications supported b
 | 7zrExePath                  | C:\ProgramData\_Automation\app\winget\Installers\7zr.exe                                                          | Path to 7zr.exe                                                                                  |
 | 7zrExtra7zPath              | C:\ProgramData\_Automation\app\winget\Installers\7z.7z                                                            | Path to 7z.7z archive                                                                            |
 | 7zaPath                     | C:\ProgramData\_Automation\app\winget\Installers\7za.exe                                                          | Path to 7za.exe                                                                                  |
-| 7zrExeDownloadUrl           | https://www.7-zip.org/a/7zr.exe                                                                                   | Download URL for 7zr.exe                                                                         |
-| 7zrExtra7zDownloadUrl       | https://www.7-zip.org/a/7z2201-extra.7z                                                                           | Download URL for 7z extra archive                                                                |
+| 7zrExeDownloadUrl           | https://github.com/ProVal-Tech/7zip/releases/latest/download/7zr.exe     | Download URL for 7zr.exe                                                                         |
+| 7zrExtra7zDownloadUrl       | https://github.com/ProVal-Tech/7zip/releases/latest/download/7zExtra.7z   | Download URL for 7z extra archive                                                                |
 | appInstallerX64Path         | C:\ProgramData\_Automation\app\winget\Extract\AppInstaller_x64.msix                                               | Path to extracted AppInstaller x64                                                               |
 | appInstallerX86Path         | C:\ProgramData\_Automation\app\winget\Extract\AppInstaller_x86.msix                                               | Path to extracted AppInstaller x86                                                               |
 | vcRunTimePackage            | C:\ProgramData\_Automation\app\winget\Installers\Microsoft.VCLibs.x64.14.00.Desktop.appx                          | Path to VC runtime package                                                                       |
@@ -80,6 +73,11 @@ This script is designed to gather the latest version of applications supported b
 - Script log
 
 ## Changelog
+
+### 2026-04-06
+
+- Code signed PowerShell script
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2025-07-11
 

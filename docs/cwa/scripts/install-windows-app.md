@@ -9,7 +9,7 @@ tags: ['windows', 'application', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-16
+  date: 2026-04-06
 ---
 
 ## Summary
@@ -54,6 +54,11 @@ Normal execution of the script
 - Script Log
 
 ## Changelog
+
+### 2026-04-06
+
+- Code signed PowerShell script
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2026-03-16
 

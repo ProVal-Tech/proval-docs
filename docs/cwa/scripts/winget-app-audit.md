@@ -9,22 +9,12 @@ tags: ['database', 'report', 'setup']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-19
+  date: 2026-04-06
 ---
 
 ## Summary
 
 The script conducts an audit of the computer for applications supported by Winget and stores the information in a custom table called [pvl_winget_audit](/docs/904989a6-fe21-4e40-adb6-17d1168c830e). It retrieves data for both system-level and user-level applications. However, user-level application data will not be retrieved if there are no logged-in users on the computer.
-
-## File Hash
-
-**File Path:** `C:\ProgramData\_automation\Script\Get-WingetReport\Get-WingetReport.ps1`  
-**File Hash (Sha256):** `F18E73FCC5408B6A6B97CCB5CD4DEA642D96857F424D241954A38D018275BE70`  
-**File Hash (MD5):** `77175C42067D17E33644DFE4D12B616C`  
-
-**File Path:** `C:\ProgramData\_automation\Script\Get-WingetReport\Manage-OverFlowedVariable.ps1`  
-**File Hash (Sha256):** `79B76E6780B61ED657C7FC07C5C0D9A0662165066D5BAD95D9D672513BADD674`  
-**File Hash (MD5):** `12B41CDBC04010E638D3FFB8A4BDB1D6`  
 
 ## Update Notice: 02-April-2025
 
@@ -75,6 +65,11 @@ A new column has been introduced to pvl_winget_audit table. To update the table'
 - Dataview
 
 ## Changelog
+
+### 2026-04-06
+
+- Code signed PowerShell script
+- Updated the downloadUrl for both 7zr.exe and 7z.7z
 
 ### 2026-01-20
 
