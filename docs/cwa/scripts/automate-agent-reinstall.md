@@ -30,7 +30,7 @@ This script is used to perform a full uninstall and reinstall of the CWA Agent o
 - [RMM+ Plugin Configuration](/docs/f99ddaae-0cb3-4941-b2aa-dc93671dd246)
 - [Script - ScreenConnect Client - Connectivity - Audit*](/docs/18562eaa-d162-4362-98d3-4bbaa2922458)
 - [Script - ScreenConnect Client - Command - Execute*](/docs/b713bbc8-a1d9-4e08-ac77-d02b634569f6)
-- Agent - Generate Location Installer URL*
+- [Agent - Generate Location Installer URL*](/docs/d4741d52-b4ba-4bb2-af54-4de6fa85a5c9)
 
 #### System Properties
 
