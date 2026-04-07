@@ -9,7 +9,7 @@ tags: ['uninstallation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-27
+  date: 2026-04-02
 ---
 
 ## Summary
@@ -397,6 +397,3 @@ Click the `Save` button at the top-right corner of the screen to save the script
 ### 2025-04-01
 
 - Initial version of the document
-
-
-
