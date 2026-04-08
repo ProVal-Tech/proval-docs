@@ -24,7 +24,7 @@ This is a Ninja RMM solution that uses the [ODSyncUtil](https://github.com/rodne
 |[cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f) | Custom Field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). |
 |[cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) | Custom Field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). It can be used to audit the agents where sync is failed. |
 |[OneDrive Sync Failure Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7) | Group | This group includes agents for which OneDrive is not syncing properly or where the user is not logged in to OneDrive. |
-|[OneDrive Sync Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7)  | Group | This group shows information from the custom field [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) on computers for OneDrive sync auditing. |
+|[OneDrive Sync Audit](/docs/156a5913-4d5d-45ad-9cfc-313bb3b7a21d)  | Group | This group shows information from the custom field [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) on computers for OneDrive sync auditing. |
 
 ## Implementation
 
@@ -34,7 +34,7 @@ This is a Ninja RMM solution that uses the [ODSyncUtil](https://github.com/rodne
   - [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56)
 - Create the below groups:
   - [OneDrive Sync Failure Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7)
-  - [OneDrive Sync Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7)
+  - [OneDrive Sync Audit](/docs/156a5913-4d5d-45ad-9cfc-313bb3b7a21d)
 - Schedule the Automation that triggers the script weekly (recommended) to the target as requested by the client.
 
 ## FAQ
