@@ -4,7 +4,7 @@ slug: /ad629c28-f5f4-432d-93d2-abb3a35e4737
 title: 'cPVAL Windows Update UI State'
 title_meta: 'cPVAL Windows Update UI State'
 keywords: ['windows','updates','patching']
-description: 'This stores the Windows Update UI state audit from the script "Windows Updates - Enable or Disable Settings".'
+description: 'This stores the Windows Update UI state audit from the script `Windows Updates - Enable or Disable Settings`.'
 tags: ['windows','updates','patching']
 draft: false
 unlisted: false
