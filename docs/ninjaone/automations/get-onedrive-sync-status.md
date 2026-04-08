@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-23
+  date: 2026-04-08
 ---
 
 ## Overview
@@ -36,6 +36,8 @@ Set the required arguments and click the `Run` button to run the script.
 
 - [Get-ODStatus](https://github.com/rodneyviana/ODSyncUtil/blob/master/ODSyncUtil/Get-ODStatus.ps1)
 - [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f)
+- [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56)
+- [Solution - Get OneDrive Sync Status](/docs/22d8abe0-2ea4-48e9-8b02-6108cd2de889)
 
 ## Automation Setup/Import
 
@@ -48,6 +50,10 @@ Set the required arguments and click the `Run` button to run the script.
 - Custom Field
 
 ## Changelog
+
+### 2026-04-08
+
+- Added [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) custom field so that it can be used to store the Sync status of OneDrive, which can be further used to apply a filter to audit failed sync status machines.
 
 ### 2026-02-19
 

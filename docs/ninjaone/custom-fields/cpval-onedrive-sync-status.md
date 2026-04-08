@@ -24,6 +24,7 @@ This device custom field stores the OneDrive Sync Status gathered by the automat
 ## Dependencies
 
 - [Script - Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915)
+- [Solution - Get OneDrive Sync Status](/docs/22d8abe0-2ea4-48e9-8b02-6108cd2de889)
 
 ## Custom Field Creation
 
