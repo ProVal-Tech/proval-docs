@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-06
+  date: 2026-04-08
 ---
 
 ## Summary
@@ -20,6 +20,7 @@ This group contains the agent where the onedrive sync state is not synced and is
 
 - [Script - Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915)
 - [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56)
+- [SOlution - Get OneDrive Sync Status](/docs/22d8abe0-2ea4-48e9-8b02-6108cd2de889)
 
 ## Group Creation
 
@@ -28,6 +29,6 @@ This group contains the agent where the onedrive sync state is not synced and is
 
 ## Changelog
 
-### 2026-04-06
+### 2026-04-08
 
-- Added a custom field [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) so that it can be used to store the Sync status of OneDrive, which can be further used to apply a filter to audit failed sync status machines.
+- Initial version of the document

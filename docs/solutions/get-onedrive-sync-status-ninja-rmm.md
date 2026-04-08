@@ -14,16 +14,16 @@ last_update:
 
 ## Purpose
 
-This is a Ninja RMM solution that uses the agnostic ODSyncUtil script to populate the OneDrive sync status of the users and store it to the custom fields.
+This is a Ninja RMM solution that uses the [ODSyncUtil](https://github.com/rodneyviana/ODSyncUtil/tree/master/ODSyncUtil) to populate the OneDrive sync status of the users and store it to the custom fields.
 
 ## Associated Content
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915)     | Script | NinjaRMM wrapper for the agnostic [ODSyncUtil](https://github.com/rodneyviana/ODSyncUtil/tree/master/ODSyncUtil) script that retrieves the OneDrive Sync Status and Quota Information. This data is then stored in a custom field [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f). |
-| [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f) | Custom field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). |
-| [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) | Custom field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). It can be used to audit the agents where sync is failed. |
-| [OneDrive Sync Failure Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7) | Group | This group contains the agent where the onedrive sync state is not synced and is not empty. |
+| [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915)     | Script | NinjaRMM wrapper for the agnostic script [Get-ODStatus](https://github.com/rodneyviana/ODSyncUtil/blob/master/ODSyncUtil/Get-ODStatus.ps1)  that retrieves the OneDrive Sync Status and Quota Information. This data is then stored in a custom field [cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f). |
+|[cPVAL OneDrive Sync Status](/docs/03102a1f-7b86-4528-be18-c30333e6742f) | Custom Field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). |
+|[cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) | Custom Field | This device custom field stores the OneDrive Sync Status gathered by the automation [Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915). It can be used to audit the agents where sync is failed. |
+|[OneDrive Sync Failure Audit](/docs/301bd2d5-ba87-4bf2-ae1b-c1165c7347e7) | Group | This group contains the agent where the OneDrive sync state is not synced and is not empty. |
 
 ## Implementation
 
@@ -35,8 +35,9 @@ This is a Ninja RMM solution that uses the agnostic ODSyncUtil script to populat
 
 ## FAQ
 
-- Does this capture the status for the not signed case where the OneDrive process is running, but no user is signed in?
-- Yes
+**Q.** Does this capture the status for the not signed case where the OneDrive process is running, but no user is signed in?  
+
+**A.** Yes
 
 ## Changelog
 

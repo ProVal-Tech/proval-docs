@@ -9,7 +9,7 @@ tags: ['onedrive']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-23
+  date: 2026-04-08
 ---
 
 ## Summary
@@ -25,6 +25,7 @@ It can be used to audit the agents where sync is failed.
 ## Dependencies
 
 - [Script - Get OneDrive Sync Status](/docs/29e62bb2-d641-472d-a92b-11404471b915)
+- [Solution - Get OneDrive Sync Status](/docs/22d8abe0-2ea4-48e9-8b02-6108cd2de889)
 
 ## Custom Field Creation
 
@@ -40,10 +41,6 @@ Possible outcomes of the sync status:
 
 ## Changelog
 
-### 2026-04-06
-
-- Added a custom field so that it can be used to store the Sync status of OneDrive, which can be further used to apply a filter to audit failed sync status machines.
-
-### 2026-02-19
+### 2026-04-08
 
 - Initial version of the document
