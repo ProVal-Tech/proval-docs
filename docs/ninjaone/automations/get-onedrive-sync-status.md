@@ -53,7 +53,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 ### 2026-04-08
 
-- Added a custom field so that it can be used to store the Sync status of OneDrive, which can be further used to apply a filter to audit failed sync status machines.
+- Added [cPVAL OneDrive Sync Status Audit](/docs/cec3c5c0-10cc-4767-aea2-659f72b5bd56) custom field so that it can be used to store the Sync status of OneDrive, which can be further used to apply a filter to audit failed sync status machines.
 
 ### 2026-02-19
 
