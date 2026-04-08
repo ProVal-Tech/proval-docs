@@ -22,6 +22,10 @@ This document stores the output of the Out of Date Cumulative Update (Autofix) t
 - Reboot Pending
 - Installed
 
+## Dependencies
+
+- [Solution - Autofix - Out of Date Cumulative Update](/docs/6a70396e-c7cc-49d4-9a06-620e2bd462e9/)
+
 ## Details
 
 | Field Name                      | Level    | Type      | Default Value | Description                                                       | Editable |

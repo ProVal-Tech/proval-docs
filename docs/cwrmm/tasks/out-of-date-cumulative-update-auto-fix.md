@@ -30,6 +30,7 @@ Installs the latest available Cumulative Update on the machines where a CU has n
 - [Custom Field - EndPoint - Out_of_Date_CU_Autofix_Date](/docs/044210c4-14ae-4996-ab9f-009290bf05e4)
 - [Device Group - Out of Date CU _ Autofix Required](/docs/7ef49988-2b75-441e-9373-bda734a03ea1)
 - [Custom Fields - Reboot Prompter](/docs/7876f32c-a5ec-4b58-9f7e-b60b710e19d5)
+- [Solution - Autofix - Out of Date Cumulative Update](/docs/6a70396e-c7cc-49d4-9a06-620e2bd462e9/)
 
 ## Variables
 
@@ -233,7 +234,47 @@ The following function will pop up on the screen:
 Paste the following PowerShell script and set the expected time of script execution to `7200` seconds. Click the `Save` button.
 
 ```powershell
-# Needs update to JSON format
+#requires -Version 5
+
+#region Setup - Variables
+$ProjectName = 'Deploy-AvailableCumulativeUpdate'
+[Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072)
+$BaseURL = 'https://file.provaltech.com/repo'
+$PS1URL = "$BaseURL/script/$ProjectName.ps1"
+$WorkingDirectory = "C:\ProgramData\_automation\script\$ProjectName"
+$PS1Path = "$WorkingDirectory\$ProjectName.ps1"
+$LogPath = "$WorkingDirectory\$ProjectName-log.txt"
+$ErrorLogPath = "$WorkingDirectory\$ProjectName-Error.txt"
+#endregion
+#region Setup - Folder Structure
+New-Item -Path $WorkingDirectory -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
+$response = Invoke-WebRequest -Uri $PS1URL -UseBasicParsing
+if (($response.StatusCode -ne 200) -and (!(Test-Path -Path $PS1Path))) {
+    throw "No pre-downloaded script exists and the script '$PS1URL' failed to download. Exiting."
+} elseif ($response.StatusCode -eq 200) {
+    Remove-Item -Path $PS1Path -ErrorAction SilentlyContinue
+    [System.IO.File]::WriteAllLines($PS1Path, $response.Content)
+}
+if (!(Test-Path -Path $PS1Path)) {
+    throw 'An error occurred and the script was unable to be downloaded. Exiting.'
+}
+#endregion
+#region Execution
+& $PS1Path
+#endregion
+#region log verification
+if ( !(Test-Path $LogPath) ) {
+    throw 'PowerShell Failure. A Security application seems to have restricted the execution of the PowerShell Script.'
+}
+if ( Test-Path $ErrorLogPath ) {
+    $ErrorContent = ( Get-Content -Path $ErrorLogPath )
+    Write-Information 'Failed to install the available Cumulative Update.' -InformationAction Continue
+    throw ($ErrorContent | Out-String)
+}
+$content = Get-Content -Path $LogPath
+$logContent = $content[ $($($content.IndexOf($($content -match "$($ProjectName)$")[-1])) + 1)..$($Content.length - 1) ]
+Write-Information ('Log Content: {0}' -f ($logContent | Out-String)) -InformationAction Continue
+#endregion
 ```
 
 ![PowerShell Script](../../../static/img/docs/1d9dbd69-f735-4129-8c9d-e72430313371/image_39.webp)  

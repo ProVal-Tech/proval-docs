@@ -16,6 +16,10 @@ last_update:
 
 Stores the install date of the latest CU performed by the Out of Date Cumulative Update (Autofix) task.
 
+## Dependencies
+
+- [Solution - Autofix - Out of Date Cumulative Update](/docs/6a70396e-c7cc-49d4-9a06-620e2bd462e9/)
+
 ## Details
 
 | Field Name                      | Level    | Type      | Default Value         | Description                                                                 | Editable |
