@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This stores the Windows Update UI state audit from the script "Windows Updates - Enable or Disable Settings".
+This stores the Windows Update UI state audit from the script `Windows Updates - Enable or Disable Settings`.
 
 ## Details
 
