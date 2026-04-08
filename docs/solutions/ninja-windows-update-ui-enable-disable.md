@@ -6,10 +6,10 @@ title_meta: 'Windows Update UI Enable-Disable'
 keywords: ['windows','updates','patching']
 description: 'This solution provides the option to enable/disable the Windows Update UI and also facilitates the Notification level settings with the auditing feature.'
 tags: ['windows','updates','patching']
-draft: true
+draft: false
 unlisted: false
 last_update:
-  date: 2025-09-01
+  date: 2026-04-08
 ---
 
 ## Purpose
