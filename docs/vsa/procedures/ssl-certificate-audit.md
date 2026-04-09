@@ -16,15 +16,27 @@ last_update:
 
 This Script pulls any and all certificates in the personal certificate repository on windows machines that it is run on. Then Creates a CSV file under the `C:\ProgramData\_automation\AgentProcedure\SSLAudit`
 
-## Sample Run
 
-![SampleRun1](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/ssl.webp)
+## Implementation
 
-## Requirement
+1. Export the agent procedure from ProVal's VSA RMM instance.   
+   **Name:** `SSL Certificate Audit`   
+   ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/xml.webp)  
+   The export will download the necessary XML file.   
+   
+2. Import this XML file into the partner's VSA RMM instance.   
 
-Upload the powershell file rom the location `VSASharedFiles\Client Specific Powershell\Groff\Check-SSl-Certificate.ps1` into the client environment's managed files.
+3. Export the `check-ssl-certificate.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
+`Manage Files` > `Shared Files` > `PVAL` > `check-ssl-certificate.ps1`  
 
-Map the ps1 file under the line number 11.
+   ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/managed-files.webp)
+
+4. Map the `check-ssl-certificate.ps1` into the 11th step of the script in the client's environment.
+
+   ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/mapping.webp) 
+
+5. Execute the agent procedure in the partne's VSA RMM and click Submit:
+   ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/ssl.webp)
 
 ## Output
 
