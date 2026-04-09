@@ -158,7 +158,7 @@ If this field is blank or invalid, the script uses `Audit Only`.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/manage-unknown-screenconnect-client-macintosh.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/manage-unknown-screenconnect-client-macintosh.sh)
 
 ## Output
 

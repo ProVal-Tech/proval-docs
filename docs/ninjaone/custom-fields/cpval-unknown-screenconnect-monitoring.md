@@ -42,7 +42,7 @@ This custom field controls how NinjaOne handles unknown or non-approved ScreenCo
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-unknonwn-screenconnect-monitoring.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-unknown-screenconnect-monitoring.toml)
 
 ## Sample Screenshot
 
