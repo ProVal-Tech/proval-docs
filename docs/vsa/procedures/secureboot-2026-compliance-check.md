@@ -90,11 +90,11 @@ The script performs the following checks:
 
 Agent Procedure History Log
 
-![Image 3](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Procedure%20history%20log.webp)
+![Image 3](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Procedure_history_log.webp)
 
 Custom Field
 
-![Image 4](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Custom%20field.webpudf-update.webp)
+![Image 4](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Custom_field.webp)
 
 ## Changelog
 

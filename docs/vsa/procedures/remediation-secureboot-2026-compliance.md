@@ -82,7 +82,7 @@ To execute the `Agent Procedure` over a specific machine, follow these steps:
 
 - Agent Procedure History Log
 
-![Image 3](../../../static/img/docs/28fa1216-33bf-481d-941b-c1e6e1978e44/Procedure_history_log_rmediation.webp.webp)
+![Image 3](../../../static/img/docs/28fa1216-33bf-481d-941b-c1e6e1978e44/Procedure_history_log_rmediation.webp)
 
 ## Changelog
 
