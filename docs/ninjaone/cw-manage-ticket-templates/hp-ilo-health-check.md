@@ -28,6 +28,7 @@ Ensure that the ConnectWise Manage app is enabled and connected.
 
 [CW Manage Ticket Template Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/cw-manage-ticket-templates/hp-ilo-health-check.toml)
 
+## Changelog
 
 ### 2026-04-09
 
