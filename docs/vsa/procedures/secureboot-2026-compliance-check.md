@@ -4,7 +4,7 @@ slug: /6e3a2154-42ba-471c-8cd5-379e95b3732f
 title: 'SecureBoot 2026 Compliance Check'
 title_meta: 'SecureBoot 2026 Compliance Check'
 keywords: ['certificates','compliance','secureboot']
-description: ''This script evaluates whether a Windows device is prepared for the upcoming Microsoft Secure Boot certificate transition scheduled for 2026. Microsoft is replacing legacy Secure Boot certificates with updated 2023-era certificates (KEK and DB). Devices that do not contain these updated certificates may be considered at risk once older certificates expire.'
+description: 'This script evaluates whether a Windows device is prepared for the upcoming Microsoft Secure Boot certificate transition scheduled for 2026. Microsoft is replacing legacy Secure Boot certificates with updated 2023-era certificates (KEK and DB). Devices that do not contain these updated certificates may be considered at risk once older certificates expire.'
 tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
