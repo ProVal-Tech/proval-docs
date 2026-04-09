@@ -4,7 +4,7 @@ slug: /be9fc1ac-d031-4d98-8f80-70bde34e76ce
 title: 'cPVAL Unknown ScreenConnect Installed'
 title_meta: 'cPVAL Unknown ScreenConnect Installed'
 keywords: ['screenconnect', 'unwanted-screenconnect', 'unknown-screenconnect', 'unknown-screenconnect-client']
-description: 'All devices with the 'cPVAL Unknown ScreenConnect Installed' custom field checked will be added to this group. This group is used for monitoring and reporting on devices with detected unknown ScreenConnect instances.'
+description: 'All devices with the cPVAL Unknown ScreenConnect Installed custom field checked will be added to this group. This group is used for monitoring and reporting on devices with detected unknown ScreenConnect instances.'
 tags: ['alerting', 'auditing', 'monitoring', 'security', 'screenconnect']
 draft: false
 unlisted: false
