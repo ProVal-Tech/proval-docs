@@ -20,17 +20,20 @@ This script controls two Windows Update behaviors by configuring supported regis
 
 `Play Button` > `Run Automation` > `Script`  
 
-Select the Button Action and Update Notifications options as required.
+Select the **Button Action** and **Update Notifications Level** options as required.
+
 ![Sample Run](../../../static/img/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb/image.webp)
 
 ## Dependencies
+
+- [Solution - Windows Update UI Enable-Disable](/docs/a6da0735-ac80-40f8-8ad3-375ffa8d0e93)
 
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | Button Action | Enable | Enable, Disable | False |  | DropDown | Specify whether the 'Check for Updates' button should be accessible to all users of this machine. |
-| Update Notification Level | The default Windows Update notification level | The default Windows Update notification level, Disable all notifications including restart prompt, Disable all notifications excluding restart prompt | False |  | DropDown | Specify whether to show or hide all update notifications, including restart warnings. |
+| Update Notification Level | The default Windows Update notification level | `The default Windows Update notification level`, `Disable all notifications including restart prompt`, `Disable all notifications excluding restart prompt` | False |  | DropDown | Specify whether to show or hide all update notifications, including restart warnings. |
 
 ## Automation Setup/Import
 

@@ -18,9 +18,10 @@ This group contains the device where the Windows Update UI is required to be set
 
 ## Dependencies
 
-[Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
-[cPVAL Windows Update UI State](/docs/ad629c28-f5f4-432d-93d2-abb3a35e4737)
-[cPVAL Windows Update Button](/docs/134eb999-a5dd-4599-ae1f-4c0082590007)
+- [Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
+- [cPVAL Windows Update UI State](/docs/ad629c28-f5f4-432d-93d2-abb3a35e4737)
+- [cPVAL Windows Update Button](/docs/134eb999-a5dd-4599-ae1f-4c0082590007)
+- [Solution - Windows Update UI Enable-Disable](/docs/a6da0735-ac80-40f8-8ad3-375ffa8d0e93)
 
 ## Group Creation
 

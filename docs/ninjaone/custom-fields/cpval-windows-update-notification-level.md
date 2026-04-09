@@ -20,11 +20,12 @@ This custom field is used to configure the Windows Updates notification based on
 
 | Label | Field Name | Definition Scope | Type | Required | Option Value | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------ | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Windows Update Notification Level | cpvalWindowsUpdateNotificationLevel | Organization , Location, Device | DropDown | False  | The default Windows Update notification level, Disable all notifications including restart prompt, Disable all notifications excluding restart prompt |  | Editable | Read/Write | Read/Write | This custom field is used to configure the Windows Updates notification based on the selected options. |  |  |  |
+| cPVAL Windows Update Notification Level | cpvalWindowsUpdateNotificationLevel | Organization , Location, Device | DropDown | False  | The default Windows Update notification level, Disable all notifications including restart prompt, Disable all notifications excluding restart prompt |  | Editable | Read/Write | Read/Write | This custom field is used to configure the Windows Updates notification based on the selected options. |  |  | Windows Updates |
 
 ## Dependencies
 
-[Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
+- [Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
+- [Solution - Windows Update UI Enable-Disable](/docs/a6da0735-ac80-40f8-8ad3-375ffa8d0e93)
 
 ## Custom Field Creation
 

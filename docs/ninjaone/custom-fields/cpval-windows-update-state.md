@@ -20,11 +20,12 @@ This stores the Windows Update UI state audit from the script `Windows Updates -
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Windows Update UI State | cpvalWindowsUpdateUiState | Device | Text | False  |  | Editable | Read/Write | Read/Write | This stores the Windows Update UI state audit from the script "Windows Updates - Enable or Disable Settings". |  |  |  |
+| cPVAL Windows Update UI State | cpvalWindowsUpdateUiState | Device | Text | False  |  | Editable | Read/Write | Read/Write | This stores the Windows Update UI state audit from the script "Windows Updates - Enable or Disable Settings". |  |  | Windows Updates |
 
 ## Dependencies
 
-[Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
+- [Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
+- [Solution - Windows Update UI Enable-Disable](/docs/a6da0735-ac80-40f8-8ad3-375ffa8d0e93)
 
 ## Custom Field Creation
 
