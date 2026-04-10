@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-10
 ---
 
 ## Summary
@@ -28,6 +28,6 @@ This document is used to describe a custom field that will be used to gather the
 
 ## Changelog
 
-### 2026-04-09
+### 2026-04-10
 
 - Initial version of the document

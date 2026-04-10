@@ -24,60 +24,26 @@ After the system reboots, the check agent procedure [SecureBoot 2026 Compliance 
 
 ## Dependencies
 
+- PowerShell 5.0+
 - [Agnostic Script - Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c)
 
 ## Implementation  
 
-1. Download the Agent Procedure(XML) `Remediation SecureBoot 2026 Compliance` from the attachments.
+1. Download the Agent Procedure(XML) `Remediation SecureBoot 2026 Compliance` from the attachment of this document.
 
 2. After downloading the attached file, click on the `Import` button into the VSA under agent procedure module.
 ![Image 1](../../../static/img/docs/28fa1216-33bf-481d-941b-c1e6e1978e44/Import_remediation.webp) 
 
 ## Execution Process
 
-To execute the `Agent Procedure` over a specific machine, follow these steps:  
+To Execute the agent procedure in the partne's VSA RMM, follow these steps:  
 
 1. Select the machine you want to run the `Remediation SecureBoot 2026 Compliance` agent procedure from the VSA RMM.  
 
-2. Click on the `Execute` button.  
+2. Click on the `Execute` button and click Submit: 
 ![Image 2](../../../static/img/docs/28fa1216-33bf-481d-941b-c1e6e1978e44/Execute_remediation.webp)  
 
- ## Sample Run
-
-| 9:54:22 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance | Success THEN | kunal.kumar |
-| 9:54:22 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance-0002 | Success ELSE | kunal.kumar |
-| 9:54:22 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance-0001 | Success THEN | kunal.kumar |
-| 9:54:22 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance-0001 | Log: 2026-04-09 09:54:18.156 -04:00 [DBG] Remediate-SecureBootCompliance2026 2026-04-09 09:54:18.684 -04:00 [DBG] System: DEV-WIN11-1 2026-04-09 09:54:18.704 -04:00 [DBG] User: SYSTEM 2026-04-09 09:54:18.726 -04:00 [DBG] OS Bitness: 64 2026-04-09 09:54:18.744 -04:00 [DBG] PowerShell Bitness: 64 2026-04-09 09:54:18.788 -04:00 [DBG] PowerShell Version: 5 2026-04-09 09:54:18.809 -04:00 [INF] ===== Secure Boot 2026 Remediation Started ===== 2026-04-09 09:54:18.979 -04:00 [INF] Secure Boot Enabled - Proceeding 2026-04-09 09:54:19.027 -04:00 [INF] Checking current certificate status... 2026-04-09 09:54:19.100 -04:00 [INF] KEK 2023 Present: True 2026-04-09 09:54:19.118 -04:00 [INF] DB 2023 Present: True 2026-04-09 09:54:19.153 -04:00 [INF] System Already Compliant - No action needed 2026-04-09 09:54:19.173 -04:00 [INF] Compliant - Certificates Already Updated 2026-04-09 09:54:19.194 -04:00 [INF] KEK 2023: Present 2026-04-09 09:54:19.213 -04:00 [INF] DB 2023: Present | kunal.kumar |
-| 9:54:21 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance | Comment at THEN step 12 | kunal.kumar |
-| 9:54:21 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance | powershell.exe -ExecutionPolicy Bypass -command "& %ProgramData%\_automation\AgentProcedure\SecureBootCompliance2026\Remediate-SecureBootCompliance2026.ps1 " | kunal.kumar |
-| 9:54:21 am 9-Apr-26 | Execute Shell command - Get Results to Variable | Success THEN | kunal.kumar |
-| 9:54:21 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0001 | Success THEN | kunal.kumar |
-| 9:54:21 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0010 | Success THEN | kunal.kumar |
-| 9:54:19 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0002 | Success THEN | kunal.kumar |
-| 9:54:19 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0003 | Success THEN | kunal.kumar |
-| 9:54:19 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0004 | Success THEN | kunal.kumar |
-| 9:54:19 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0005 | Success ELSE | kunal.kumar |
-| 9:54:19 am 9-Apr-26 | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: powershell.exe -ExecutionPolicy Bypass -command "& %ProgramData%\_automation\AgentProcedure\SecureBootCompliance2026\Remediate-SecureBootCompliance2026.ps1 " >"c:\kworking\commandresults-2018020156.txt" 2>&1 | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command | Success THEN | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command-0001 | Success THEN | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command-0002 | Success THEN | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command-0011 | Success THEN | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command-0012 | Success ELSE | kunal.kumar |
-| 9:54:00 am 9-Apr-26 | Execute Powershell Command-0011 | Powershell command completed! | kunal.kumar |
-| 9:53:58 am 9-Apr-26 | Execute Powershell Command-0011 | Executing powershell "" -Command "New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name SecureBootCompliance2026" "" | kunal.kumar |
-| 9:53:58 am 9-Apr-26 | Execute Powershell Command-0009 | Success THEN | kunal.kumar |
-| 9:53:58 am 9-Apr-26 | Execute Powershell Command-0010 | Success ELSE | kunal.kumar |
-| 9:53:58 am 9-Apr-26 | Execute Powershell Command-0010 | Not sending output to variable. | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0007 | Success THEN | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0008 | Success THEN | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0008 | New command variable is: -Command "New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name SecureBootCompliance2026" | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0008 | Custom commands detected as New-Item -Type Directory -Path $env:ProgramData\_automation\AgentProcedure -name SecureBootCompliance2026 | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0003 | Success THEN | kunal.kumar |
-| 9:53:57 am 9-Apr-26 | Execute Powershell Command-0004 | Success ELSE | kunal.kumar |
-| 9:53:56 am 9-Apr-26 | Execute Powershell Command-0002 | Powershell is present. | kunal.kumar |
-| 9:53:55 am 9-Apr-26 | Remediation SecureBoot 2026 Compliance | Remediate-SecureBootCompliance2026.ps1 | kunal.kumar |
-| 9:53:47 am 9-Apr-26 | Run Now - Remediation SecureBoot 2026 Compliance | Admin kunal.kumar scheduled procedure Run Now - Remediation SecureBoot 2026 Compliance to run at Apr 9 2026 9:53AM | kunal.kumar |
-
+ 
 ## Output
 
 - Agent Procedure History Log

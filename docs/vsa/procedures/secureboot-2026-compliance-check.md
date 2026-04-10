@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-10
 ---
 
 ## Summary
@@ -29,75 +29,49 @@ The script performs the following checks:
 - Outputs a compact compliance string.
 - Optionally writes the result to a VSA RMM Custom field.
 
+## Dependency
+
+PowerShell 5.0+
+MicrosoftC2RRepair.ps1
 
 ## Implementation
 
-1. Download the Agent procedure `SecureBoot 2026 Compliance Check` from the attachments with PS1.
+1.Export the agent procedure from ProVal's VSA RMM instance.
+Name: `SecureBoot 2026 Compliance Check`
 
-2. After downloading the attached files, click on the `Import` button into the VSA under the agent procedure module and Import the PS1 under the manage file, as well.
-3. Select the Agent procedure just downloaded and `Import` it to the VSA RMM interface.  
-![Image 1](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Import_Check.webp) 
-4. To `Execute`Select the agent procedure and click on run now.
-![Image 2](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Execute_Check.webp) 
+![Image 1](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Export_check.webp) 
+The export will download the necessary XML file.
 
-## Sample Run
+2.`Import` this XML file into the partner's VSA RMM instance. 
+![Image 2](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Import_Check.webp)
 
-| Time                     | Action                           | Result                                                                                                        | User                             |
-|--------------------------|----------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------|
+3.Export the Secureboot.ps1 from the ProVal's Internal VSA. This is also placed under the below path:
+`Manage Files` > `Shared Files` > `PVAL` > `MicrosoftC2RRepair.ps1`
+![Image 3](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Managefiles_ps1.webp)
 
-| 10:56:11 am 8-Apr-26 | SecureBoot 2026 Compliance Check | Success THEN | kunal.kumar |
-| 10:56:11 am 8-Apr-26 | SecureBoot 2026 Compliance Check | Status=Ready | SecureBootEnabled=True | CA2023_KEK=True | CA2023_DB=True | kunal.kumar |
-| 10:56:11 am 8-Apr-26 | Execute Shell command - Get Results to Variable | Success THEN | kunal.kumar |
-| 10:56:11 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0001 | Success THEN | kunal.kumar |
-| 10:56:11 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0010 | Success THEN | kunal.kumar |
-| 10:56:09 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0002 | Success THEN | kunal.kumar |
-| 10:56:09 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0003 | Success THEN | kunal.kumar |
-| 10:56:09 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0004 | Success THEN | kunal.kumar |
-| 10:56:09 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0005 | Success ELSE | kunal.kumar |
-| 10:56:09 am 8-Apr-26 | Execute Shell command - Get Results to Variable-0005 | Executing command in 64-bit shell as system: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command %ProgramData%\_automation\AgentProcedure\SecureBoot\Secureboot.ps1 >"c:\kworking\commandresults-1274069634.txt" 2>&1 | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command | Success THEN | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0001 | Success THEN | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0002 | Success THEN | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0011 | Success THEN | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0012 | Success THEN | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0012 | Results returned to global variable #global:psresult# and saved in Documents tab of server. | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0012 | Informational: GetFile command overwrote the server file C:\Kaseya\UserProfiles\385190429391064\GetFiles\..\docs\psoutput.txt with the new contents from c:\kworking\psoutput.txt in THEN step 2. | kunal.kumar |
-| 10:56:07 am 8-Apr-26 | Execute Powershell Command-0011 | Powershell command completed! | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0011 | Executing powershell "" -Command "New-Item -Type Directory -Path %ProgramData%\_automation\AgentProcedure -Name SecureBoot -ErrorAction SilentlyContinue" >"c:\kworking\psoutput.txt" | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0009 | Success THEN | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0010 | Success THEN | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0010 | Sending output to global variable. | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0007 | Success THEN | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0008 | Success THEN | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0008 | New command variable is: -Command "New-Item -Type Directory -Path %ProgramData%\_automation\AgentProcedure -Name SecureBoot -ErrorAction SilentlyContinue" | kunal.kumar |
-| 10:56:05 am 8-Apr-26 | Execute Powershell Command-0008 | Custom commands detected as New-Item -Type Directory -Path %ProgramData%\_automation\AgentProcedure -Name SecureBoot -ErrorAction SilentlyContinue | kunal.kumar |
-| 10:56:04 am 8-Apr-26 | Execute Powershell Command-0003 | Success THEN | kunal.kumar |
-| 10:56:04 am 8-Apr-26 | Execute Powershell Command-0004 | Success ELSE | kunal.kumar |
-| 10:56:03 am 8-Apr-26 | Execute Powershell Command-0002 | Powershell is present. | kunal.kumar |
-| 10:55:54 am 8-Apr-26 | Run Now - SecureBoot 2026 Compliance Check | Admin kunal.kumar scheduled procedure Run Now - SecureBoot 2026 Compliance Check | kunal.kumar |
+4.Map the `Secureboot.ps1` into the 10th step of the script in the client's environment.
+![Image 4](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Mapping_ps1.webp)
+
+5.To `Execute`Select the agent procedure and click on run now and then submit.
+![Image 5](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Execute_Check.webp)
+![Image 6](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Submit_check.webp)  
 
 ## Dependencies
 
 [Documentation Link](/docs/a79ce245-02ad-425d-81cb-d2fbfdc88820)
 
-## Variables
-
-| Variable Name | Type 
-| ------------- | ---- 
-| cPVAL SecureBoot Check | String |
-
 ## Output
 
 Agent Procedure History Log
 
-![Image 3](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Procedure_history_log.webp)
+![Image 7](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Procedure_history_log.webp)
 
 Custom Field
 
-![Image 4](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Custom_field.webp)
+![Image 8](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/customfield_update.webp)
 
 ## Changelog
 
-### 2026-04-09
+### 2026-04-10
 
 - Initial version of the document
