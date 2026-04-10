@@ -18,7 +18,8 @@ This document is used to describe a custom field that will be used to gather the
 
 ## Dependencies
 
-[Documentation Link](/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f)
+[secureboot-2026-compliance-check](/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f)
+[secureboot-remediation-audit-solution](/cf6ea3e7-854f-4046-bfdd-6f284feb20f8)
 
 ## Details
 

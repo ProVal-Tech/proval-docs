@@ -29,10 +29,13 @@ The script performs the following checks:
 - Outputs a compact compliance string.
 - Optionally writes the result to a VSA RMM Custom field.
 
-## Dependency
+## Dependencies
 
 PowerShell 5.0+
 MicrosoftC2RRepair.ps1
+[cpval-secureboot-check](/docs/a79ce245-02ad-425d-81cb-d2fbfdc88820)
+[remediation-secureboot-2026-compliance](/docs/28fa1216-33bf-481d-941b-c1e6e1978e44)
+[secureboot-remediation-audit-solution](/docs/cf6ea3e7-854f-4046-bfdd-6f284feb20f8)
 
 ## Implementation
 
@@ -46,7 +49,7 @@ The export will download the necessary XML file.
 ![Image 2](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Import_Check.webp)
 
 3.Export the Secureboot.ps1 from the ProVal's Internal VSA. This is also placed under the below path:
-`Manage Files` > `Shared Files` > `PVAL` > `MicrosoftC2RRepair.ps1`
+`Manage Files` > `Shared Files` > `PVAL` > `Secureboot.ps1`
 ![Image 3](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Managefiles_ps1.webp)
 
 4.Map the `Secureboot.ps1` into the 10th step of the script in the client's environment.
@@ -54,11 +57,7 @@ The export will download the necessary XML file.
 
 5.To `Execute`Select the agent procedure and click on run now and then submit.
 ![Image 5](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Execute_Check.webp)
-![Image 6](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Submit_check.webp)  
-
-## Dependencies
-
-[Documentation Link](/docs/a79ce245-02ad-425d-81cb-d2fbfdc88820)
+![Image 6](../../../static/img/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f/Submit_check.webp)
 
 ## Output
 

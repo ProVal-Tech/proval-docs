@@ -6,10 +6,10 @@ title_meta: 'Remediation SecureBoot 2026 Compliance'
 keywords: ['certificates','compliance','secureboot']
 description: 'This script automates the remediation of UEFI Secure Boot certificates required for Windows 2026 compliance. It ensures the system has the latest 2023 UEFI certificates (KEK and db) and configures the system for automatic Microsoft-managed UEFI certificate updates.'
 tags: ['auditing','certificates','secureboot']
-draft: False
+draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-10
 ---
 
 ## Summary
@@ -26,6 +26,8 @@ After the system reboots, the check agent procedure [SecureBoot 2026 Compliance 
 
 - PowerShell 5.0+
 - [Agnostic Script - Remediate-SecureBootCompliance2026](/docs/062c5b72-32b5-4fdb-b48c-5f45a19af42c)
+- [secureBoot-2026-compliance-check](/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f)
+- [secureboot-remediation-audit-solution](/docs/cf6ea3e7-854f-4046-bfdd-6f284feb20f8)
 
 ## Implementation  
 
