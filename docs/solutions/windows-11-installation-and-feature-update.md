@@ -92,7 +92,7 @@ There is an option to enable ticketing for machines where automation fails three
 
 | Content                                                                                                      | Type             | Function                                                                            |
 | ------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------------------------------------------------------------------- |
-| [Windows 11 Installation Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) | Dataview | Provides an overview of the automation process. |
+| [Windows 11 Upgrade Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) | Dataview | Provides an overview of the automation process. |
 
 ### Additional Content
 
