@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This Script pulls any and all certificates in the personal certificate repository on windows machines that it is run on. Then Creates a CSV file under the `C:\ProgramData\_automation\AgentProcedure\SSLAudit`
+This Script pulls any and all certificates in the personal certificate repository on windows machines that it is run on. Then creates a CSV file under the `C:\ProgramData\_automation\AgentProcedure\SSLAudit`
 
 
 ## Implementation
@@ -26,12 +26,12 @@ This Script pulls any and all certificates in the personal certificate repositor
    
 2. Import this XML file into the partner's VSA RMM instance.   
 
-3. Export the `check-ssl-certificate.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
-`Manage Files` > `Shared Files` > `PVAL` > `check-ssl-certificate.ps1`  
+3. Export the `Check-SSL-Certificate.ps1` from the ProVal's Internal VSA. This is also placed under the below path:  
+`Manage Files` > `Shared Files` > `PVAL` > `Check-SSL-Certificate.ps1`  
 
    ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/managed-files.webp)
 
-4. Map the `check-ssl-certificate.ps1` into the 11th step of the script in the client's environment.
+4. Map the `Check-SSL-Certificate.ps1` into the 11th step of the script in the client's environment.
 
    ![Image](../../../static/img/docs/6da85c3b-f91a-4952-b69f-0345c721c6da/mapping.webp) 
 
