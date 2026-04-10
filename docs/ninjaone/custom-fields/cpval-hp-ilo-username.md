@@ -1,8 +1,8 @@
 ---
 id: '8bd67235-7e2d-4c30-a3b5-d6417f9721ea'
 slug: /8bd67235-7e2d-4c30-a3b5-d6417f9721ea
-title: 'cPVAL HP ILO Username'
-title_meta: 'cPVAL HP ILO Username'
+title: 'cPVAL HP iLO Username'
+title_meta: 'cPVAL HP iLO Username'
 keywords: ['ilo', 'health', 'report', 'script', 'monitor', 'automation']
 description: 'Admin username to connect with the HP iLO device.'
 tags: ['networking', 'security', 'software', 'update', 'windows']
@@ -19,7 +19,7 @@ Custom Field to add Admin username to connect with the HP iLO device.
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL HP ILO Username | cpvalHpIloUsername | Device | Text | False |  | Editable | Read_Write | Read_Write | Admin username to connect with the HP iLO device. | Admin username to connect with the HP iLO device. | Admin username to connect with the HP iLO device. | HP ILO |
+| cPVAL HP iLO Username | cpvalHpiloUsername | Device | Text | False |  | Editable | Read_Write | Read_Write | Admin username to connect with the HP iLO device. | Admin username to connect with the HP iLO device. | Admin username to connect with the HP iLO device. | HP iLO |
 
 ## Dependencies
 

@@ -1,10 +1,10 @@
 ---
 id: 'ca9eb915-443d-442d-866f-a653736bd9c3'
 slug: /ca9eb915-443d-442d-866f-a653736bd9c3
-title: 'cPVAL HP ILO Password'
-title_meta: 'cPVAL HP ILO Password'
+title: 'cPVAL HP iLO Password'
+title_meta: 'cPVAL HP iLO Password'
 keywords: ['ilo', 'health', 'report', 'script', 'monitor', 'automation']
-description: 'Password for the HP ILO admin user.'
+description: 'Password for the HP iLO admin user.'
 tags: ['networking', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Custom Field to store Password for the HP ILO admin user.
+Custom Field to store password for the HP iLO admin user.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL HP ILO Password | cpvalHpIloPassword | Device | Secure | False |  | Editable | Read_Write | Read_Write | Password for the HP ILO admin user. | Password for the HP ILO admin user. | Password for the HP ILO admin user. | HP ILO |
+| cPVAL HP iLO Password | cpvalHpIloPassword | Device | Secure | False |  | Editable | Read_Write | Read_Write | Password for the HP iLO admin user. | Password for the HP iLO admin user. | Password for the HP iLO admin user. | HP iLO |
 
 ## Dependencies
 

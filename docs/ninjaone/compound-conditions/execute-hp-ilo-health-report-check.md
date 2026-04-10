@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Triggers the HP iLO – Health Report – Check script on machines where the HP iLO solution is enabled.
+Triggers the [HP iLO - Health Report - Check](/docs/f8af5d3a-b506-49c8-aba7-cfb2f1f2f3b1) script on machines where the HP iLO solution is enabled.
 
 ## Details
 
