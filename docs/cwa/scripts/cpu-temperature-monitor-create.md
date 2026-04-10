@@ -9,7 +9,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-02
+  date: 2026-04-10
 ---
 
 ## Summary
@@ -82,6 +82,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-04-10
+
+- Optimized the Strapper module installation to reduce overall script runtime.
 
 ### 2026-04-02
 
