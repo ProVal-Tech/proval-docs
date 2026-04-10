@@ -9,7 +9,7 @@ tags: ['cpu', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-31
+  date: 2026-04-10
 ---
 
 <br />
@@ -339,28 +339,61 @@ Because hardware access varies drastically depending on OEM BIOS implementations
 When the BIOS allows direct access (common on custom desktops and standard consumer laptops), you get highly accurate, per-core temperatures with historical maximums.
 
 ```json
-[
-  {
-    "Hardware": "12th Gen Intel Core i7-1270P",
-    "Sensors": [
-      {
-        "Sensor": "Core #1",
-        "Current": 45.0,
-        "Maximum": 78.0
-      },
-      {
-        "Sensor": "Core #2",
-        "Current": 42.0,
-        "Maximum": 75.0
-      },
-      {
-        "Sensor": "CPU Package",
-        "Current": 46.0,
-        "Maximum": 80.0
-      }
-    ]
-  }
-]
+{
+  "Hardware": "12th Gen Intel Core i7-1270P",
+  "Sensors": [
+    {
+      "Sensor": "Core Max",
+      "Current": 56,
+      "Maximum": 75
+    },
+    {
+      "Sensor": "Core Average",
+      "Current": 51.58,
+      "Maximum": 55.33
+    },
+    {
+      "Sensor": "P-Core #1",
+      "Current": 56,
+      "Maximum": 75
+    },
+    {
+      "Sensor": "P-Core #2",
+      "Current": 50,
+      "Maximum": 52
+    },
+    {
+      "Sensor": "E-Core #1",
+      "Current": 53,
+      "Maximum": 54
+    },
+    {
+      "Sensor": "E-Core #2",
+      "Current": 53,
+      "Maximum": 54
+    },
+    {
+      "Sensor": "P-Core #1 Distance to TjMax",
+      "Current": 44,
+      "Maximum": 44
+    },
+    {
+      "Sensor": "P-Core #2 Distance to TjMax",
+      "Current": 50,
+      "Maximum": 50
+    },
+    {
+      "Sensor": "E-Core #1 Distance to TjMax",
+      "Current": 47,
+      "Maximum": 47
+    },
+    {
+      "Sensor": "E-Core #2 Distance to TjMax",
+      "Current": 47,
+      "Maximum": 47
+    }
+  ]
+}
 ```
 
 ### Scenario 2: WMI Fallback Triggered
@@ -406,6 +439,10 @@ On highly restricted systems where both direct hardware registers and WMI interf
 - [System.Management](https://learn.microsoft.com/en-us/dotnet/api/system.management) - WMI fallback queries for restricted hardware
 
 ## Changelog
+
+### 2026-04-10
+
+- Resolved an issue that prevented the tool from collecting sensor data
 
 ### 2026-03-31
 
