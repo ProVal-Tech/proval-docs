@@ -9,7 +9,7 @@ tags: ['exchange', 'iis', 'security', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-04-10
 ---
 
 ## Summary
@@ -19,6 +19,8 @@ The purpose of the remote monitor is to check and return the enabled TLS server 
 **Requirements:** PowerShell v2.0+
 
 **CAUTION:** DO NOT APPLY ANY ALERT TEMPLATE TO THIS MONITOR SET. Its only purpose is to fetch the data to be displayed in the [Security - TLS Status](/docs/aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f) dataview. This monitor set should not be used for alerting or ticketing purposes.
+
+**Reference:** [Protocols in TLS/SSL (Schannel SSP)](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-)
 
 ## Details
 
@@ -43,6 +45,10 @@ Wherever you would like to audit the TLS server version.
 [Import - Remote Monitor - TLS Version Check - Server](/docs/b08343d9-9d4b-4edd-92e2-5941c23d8e43)
 
 ## Changelog
+
+### 2026-04-10
+
+- Added TLS 1.3
 
 ### 2025-04-10
 
