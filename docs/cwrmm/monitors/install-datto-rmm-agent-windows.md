@@ -30,7 +30,7 @@ Executes the [installation script](/docs/7920577d-9a4a-48d0-9102-b01c27c2e00f) a
 
 - **Name:** `Install Datto RMM Agent [Windows]`  
 - **Description:** `Executes the installation script against Windows machines where the Datto RMM Agent is not installed.`  
-- **Type:** `File System`  
+- **Type:** `Script`  
 - **Severity:** `Others`  
 - **Family:** `RMM Agent`
 

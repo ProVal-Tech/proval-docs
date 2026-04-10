@@ -29,7 +29,7 @@ License Key is a required parameter used during the AutoElevate agent deployment
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-autoElevate-license-key.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-autoelevate-license-key.toml)
 
 ## Sample Screenshot
 

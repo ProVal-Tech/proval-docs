@@ -65,7 +65,7 @@ It will not work for any out-of-support feature builds of Windows 10 and 11 mach
 
 | Content                                                                  | Type               | Function                                                                                                                                                                                                                      |
 |--------------------------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Windows OS Support Date](/docs/938cd822-f6a3-4ee3-add2-62b407e45622) custom table works for CW Automate. |
+| [Windows OS Support Date](/docs/938cd822-f6a3-4ee3-add2-62b407e45622)| Custom Table | Works for CW Automate. |
 
 ## Implementation
 

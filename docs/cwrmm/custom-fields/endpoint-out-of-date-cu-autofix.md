@@ -16,6 +16,10 @@ last_update:
 
 Use the dropdown menu to enable or disable the autofix on the endpoint. This setting will be forcefully applied to the machine regardless of the options selected in the Company or Site level custom field `Out_of_Date_CU_Autofix`.
 
+## Dependencies
+
+- [Solution - Autofix - Out of Date Cumulative Update](/docs/6a70396e-c7cc-49d4-9a06-620e2bd462e9/)
+
 ## Details
 
 | Field Name                  | Level    | Type      | Options                    | Default Value | Description                                                                                                                                                                                                                                               | Editable |
