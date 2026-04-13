@@ -1,8 +1,8 @@
 ---
 id: 'aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f'
 slug: /aa31f8b3-9d5e-4ad1-98cc-a6e1d329cb1f
-title: 'Security - TLS Status'
-title_meta: 'Security - TLS Status'
+title: 'TLS Status [Remote Monitor]'
+title_meta: 'TLS Status [Remote Monitor]'
 keywords: ['tls', 'audit', 'endpoint', 'version', 'security']
 description: 'This document provides an overview of a dataview that enables auditing of TLS versions on endpoints. It highlights the importance of understanding which versions of TLS are enabled for secure communication between machines and servers. The document also outlines dependencies and provides a detailed description of the columns in the dataview.'
 tags: ['networking', 'security', 'windows']
@@ -20,8 +20,8 @@ This dataview is an easy way to audit which versions of TLS are enabled on the e
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Client](/docs/b0639ecd-38cd-4afd-a764-bcce13fd8ac7)
-- [EPM - Windows Configuration - Remote Monitor - TLS Version Check - Server](/docs/0a19eb90-ba18-4097-ab12-a76efa8e4b83)
+- [Remote Monitor - TLS Version Check - Client](/docs/b0639ecd-38cd-4afd-a764-bcce13fd8ac7)
+- [Remote Monitor - TLS Version Check - Server](/docs/0a19eb90-ba18-4097-ab12-a76efa8e4b83)
 
 ## Columns
 
