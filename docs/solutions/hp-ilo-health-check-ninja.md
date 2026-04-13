@@ -47,6 +47,34 @@ Gathers information and monitors the health status of HP iLO devices.
     - [HP iLO - Health - Check](/docs/4104e6d3-5ecb-4739-9ee3-e70b6d378983)
 - Create the [Ticket Template - HP iLO Health Check](/docs/37018679-316a-4483-9738-6ca679485ef5) using the implementation instruction provided in the document.
 
+## FAQ
+
+
+### Where to enable this solution
+
+> This solution can be enabled on any server from which the respective HP iLO is accessible.
+
+### Is it required to provide port with the IP Address.
+
+> If the iLO IP is bound to a port, it is mandatory to provide the IP with its port in the `cPVAL HP iLO Address` custom field.
+
+### Can this solution be used for both Monitoring and reporting the HP ILO
+
+> Yes, this solution can be used for both depending on the option selected in the `cPVAL Enable HP ILO Solution` custom field.
+
+### How can i determine from the ticket it is for which ILO
+
+> Tickets will include the Device name, you need to check  `cPVAL HP iLO Address` custom field to determine the ILO Device.
+
+### What all things are getting monitored for HP ILO
+
+> We are monitoring HP IlO's connectionstatus, batterystatus, bioshardwarestatus, fanstatus, fanredundancy, memorystatus, networkstatus, powersuppliesstatus, powersuppliesredundancy, powersuppliesmismatch, processorstatus,storagestatus, temperaturestatus.
+
+### How does the Health status appears in the custom field
+
+> If all the above monitoring parameters are in good condition, the script will populate the 'cPVAL HP iLO Health Status' custom field with the word “Healthy”. Otherwise, it will display the status message for each faulty parameter, for example: 'batterystatus : < Problem Detected >'
+
+
 ## Changelog
 
 ### 2026-04-09
