@@ -1,8 +1,8 @@
 ---
 id: 'cf6ea3e7-854f-4046-bfdd-6f284feb20f8'
 slug: /cf6ea3e7-854f-4046-bfdd-6f284feb20f8
-title: 'Secureboot Remediation audit solution'
-title_meta: 'Secureboot Remediation audit solution'
+title: 'Secureboot Remediation audit Solution'
+title_meta: 'Secureboot Remediation audit Solution'
 keywords: ['certificates','compliance','secureboot','solution']
 description: 'This solution checks the Secure Boot status and validates the associated certificates. If the system is using older Secure Boot certificates, the custom fields are updated accordingly. If the system is using updated certificates, the custom fields are updated to reflect the compliant status.'
 tags: ['auditing','certificates','secureboot','solution']
