@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-10
+  date: 2026-04-13
 ---
 
 ## Summary
@@ -54,6 +54,6 @@ To Execute the agent procedure in the partne's VSA RMM, follow these steps:
 
 ## Changelog
 
-### 2026-04-09
+### 2026-04-13
 
 - Initial version of the document

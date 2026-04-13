@@ -9,7 +9,7 @@ tags: ['auditing','certificates','secureboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-10
+  date: 2026-04-13
 ---
 
 ## Summary
@@ -71,6 +71,6 @@ Custom Field
 
 ## Changelog
 
-### 2026-04-10
+### 2026-04-13
 
 - Initial version of the document
