@@ -46,6 +46,6 @@ Post-execution requirement
 
 ## Changelog
 
-*** 2026-04-10
+### 2026-04-10
 
 - Initial version of the document.
