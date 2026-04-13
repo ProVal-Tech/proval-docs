@@ -1,6 +1,9 @@
 ---
 name: "Documentation Standards: Client-Facing Conciseness"
 description: "Guide for generating documentation that is concise, accessible to clients, and focused on practical outcomes rather than internal implementation details. Apply to all documentation creation."
+applyTo:
+  - "docs/**"
+  - "**/*.md"
 ---
 
 # Documentation Standards: Client-Facing Conciseness
