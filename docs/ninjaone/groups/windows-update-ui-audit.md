@@ -4,7 +4,7 @@ slug: /90702d57-0604-4f19-a439-0e2eb001e6f9
 title: 'Windows Update UI Audit'
 title_meta: 'Windows Update UI Audit'
 keywords: ['windows','updates','patching']
-description: 'This group contains the devices with the status of the `Windows State UI` and also shows the custom field `Windows Update Button` status and `Windows Update Notification Level` to show there manual selected options for the automation set.'
+description: 'This group contains the devices with the status of the "Windows State UI" and also shows the custom field "Windows Update Button" status to show if the CF state is set to Enabled or Disabled for it.'
 tags: ['windows','updates','patching']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This group contains the devices with the status of the `Windows State UI` and also shows the custom field `Windows Update Button` status and `Windows Update Notification Level` to show there manual selected options for the automation set.
+This group contains the devices with the status of the "Windows State UI" and also shows the custom field "Windows Update Button" status to show if the CF state is set to Enabled or Disabled for it.
 
 ## Dependencies
 
@@ -28,6 +28,10 @@ This group contains the devices with the status of the `Windows State UI` and al
 
 
 ## Changelog
+
+### 2026-04-13
+
+- Audit version created
 
 ### 2026-04-08
 
