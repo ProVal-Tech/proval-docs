@@ -22,11 +22,9 @@ An ImmyBot software installer for the [Senteon](https://senteon.co/) Agent.
 
 ### 2026-04-13
 
-Bug Reported: The issues occur as the script failed to install the senteon agent. As the script tried to download the latest version but somehow the File hash gets changed.
+- **Bug Reported:** The script was failing to install Senteon Agent while attempting to download the latest version due to change in file hash.
+- **Resolution:** Added Dynamic Version detection to the software configuration that removes the dependency of file hash. 
 
-Resolution:  Added the dynamic version within the software configuration. Now the script uses the dynamic version while checking if the software is present or not.
-
-Updated the Dynamic version within the ImmyBot repo.
 
 ### 2025-04-11
 
