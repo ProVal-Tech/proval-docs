@@ -14,20 +14,17 @@ last_update:
 
 ## Summary
 
-This document is used to describe a custom field that will be used to gather the secureboot status on the machine.
+This custom field shows the SecureBoot compliance status.
 
 ## Dependencies
 
-| Content | Type | Function |
-| ----------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------- |
-| [secureboot-2026-compliance-check](/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f) | `Automation` | This script evaluates whether a Windows device is prepared for the upcoming Microsoft Secure Boot certificate transition scheduled for 2026. |
-| [remediationsecureboot-2026-compliance](/docs/28fa1216-33bf-481d-941b-c1e6e1978e44) | `Automation` | This script automates the remediation of UEFI Secure Boot certificates required for Windows 2026 compliance. It ensures the system has the latest 2023 UEFI certificates (KEK and db) and configures the system for automatic Microsoft-managed UEFI certificate updates. |
-
+- [Script - SecureBoot 2026 Compliance Check](/docs/6e3a2154-42ba-471c-8cd5-379e95b3732f)
+- [Solution - Secureboot Remediation and Audit Solution](/docs/cf6ea3e7-854f-4046-bfdd-6f284feb20f8)
 ## Details
 
 | Field Name | Type of Field (Machine or Organization) | Description |
 | ---------- | --------------------------------------- | ----------- |
-| cPVAL SecureBoot Check | Machine | Used for secureboot status |
+| cPVAL SecureBoot Check | Machine | Used to show SecureBoot compliance status |
 
 ## Changelog
 
