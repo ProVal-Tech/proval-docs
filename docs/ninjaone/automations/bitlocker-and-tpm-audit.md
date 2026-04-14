@@ -74,6 +74,26 @@ This script performs a comprehensive audit of the machine's security posture reg
 
 ## Changelog
 
+
+### 2026-04-14
+
+- Updated the solution to individually update the below custom field.
+- As the script previously update the custom field in HTML format.
+- We need to create group on which the HTML format data is not shows there. 
+- That is reason we have update the individual custom field.
+
+  - cPVAL Audit Encryption Percentage
+  - cPVAL Audit Encryption Method
+  - cPVAl Audit Mount Point	
+  - cPVAL Audit Lock Status
+  - cPVAL Audit Protection Status
+  - cPVAL Audit Volume Status
+
+  - cPVAL Audit TPM Activated
+  - cPVAL Audit TPM Enabled
+  - cPVAL Audit TPM Present
+  - cPVAL Audit TPM Ready
+
 ### 2026-01-08
 
 - Initial version of the document
