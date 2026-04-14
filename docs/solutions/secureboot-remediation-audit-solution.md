@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-This solution checks the Secure Boot status and validates the associated certificates.
+This solution checks the SecureBoot status and validates the associated certificates. Additionally, it performs on-demand remediation when required.
 
 ## Associated Content
 
