@@ -9,7 +9,7 @@ tags: ['networking', 'security', 'software', 'update', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-14
 ---
 
 ## Purpose
@@ -50,33 +50,33 @@ Gathers information and monitors the health status of HP iLO devices.
 ## FAQ
 
 
-### Where to enable this solution
+### Where to enable this solution?
 
 > This solution can be enabled on any server from which the respective HP iLO is accessible.
 
-### Is it required to provide port with the IP Address.
+### Is it required to provide port with the IP Address?
 
-> If the iLO IP is bound to a port, it is mandatory to provide the IP with its port in the `cPVAL HP iLO Address` custom field.
+>If the iLO IP is bound to a port, it is mandatory to provide the IP with its port in the `cPVAL HP iLO Address` custom field.
 
-### Can this solution be used for both Monitoring and reporting the HP ILO
+### Can this solution be used for both Monitoring and reporting the HP ILO?
 
 > Yes, this solution can be used for both depending on the option selected in the `cPVAL Enable HP ILO Solution` custom field.
 
-### How can i determine from the ticket it is for which ILO
+### How can I determine from the ticket it is for which iLO?
 
-> Tickets will include the Device name, you need to check  `cPVAL HP iLO Address` custom field to determine the ILO Device.
+> Tickets will include the Device name, you need to check  `cPVAL HP iLO Address` custom field to determine the iLO Device.
 
-### What all things are getting monitored for HP ILO
+### What all things are getting monitored for HP iLO?
 
-> We are monitoring HP IlO's connectionstatus, batterystatus, bioshardwarestatus, fanstatus, fanredundancy, memorystatus, networkstatus, powersuppliesstatus, powersuppliesredundancy, powersuppliesmismatch, processorstatus,storagestatus, temperaturestatus.
+> We are monitoring HP ilO's connection status, battery status, bios hardware status, fan status, fan redundancy, memory status, network status, power supplies status, power supplies redundancy, power supplies mismatch, processor status,storage status, temperature status.
 
-### How does the Health status appears in the custom field
+### How does the Health status appears in the custom field?
 
-> If all the above monitoring parameters are in good condition, the script will populate the 'cPVAL HP iLO Health Status' custom field with the word “Healthy”. Otherwise, it will display the status message for each faulty parameter, for example: 'batterystatus : < Problem Detected >'
+> If all the above monitoring parameters are in good condition, the script will populate the `cPVAL HP iLO Health Status` custom field with the word “Healthy”. Otherwise, it will display the status message for each faulty parameter, for example: 'batterystatus : < Problem Detected >'
 
 
 ## Changelog
 
-### 2026-04-09
+### 2026-04-14
 
 - Initial version of the document
