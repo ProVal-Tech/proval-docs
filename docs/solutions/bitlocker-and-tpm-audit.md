@@ -38,12 +38,28 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 | [cPVAL BitLocker Enabled for System Drive](/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5) | `False` | `Checked` | Device | No | Automation |
 | [cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9) | - | *HTML Table* | Device | No | Automation |
 | [cPVAL TPM Info](/docs/68c098e2-54f1-40f8-9574-f70f1948e4ba) | - | *HTML Table* | Device | No | Automation |
+| - [Custom Field: cPVAL Audit Encryption Percentage](/docs/1c59227a-466d-4f42-a06f-0c2c0950d07e) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit Encryption Method](/docs/66adc025-26ec-43f9-ae1e-330c422c799c) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAl Audit Mount Point](/docs/ced74400-a022-4fa2-9b72-4c10e92e36ab) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit Lock Status](/docs/52ff36d4-e554-4741-aae1-4bd1a50165ee) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit Protection Status](/docs/dbf6abbd-fff0-4e1f-a6a7-b87994df64ca) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit Volume Status](/docs/916d0353-8a35-4690-8d40-04b2a95112e1) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit TPM Activated](/docs/d7079417-ab2f-460a-ab63-6ec1f7b986ca) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit TPM Enabled](/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit TPM Present](/docs/5014cdab-65a5-45d9-9587-70d354cbe89b) | `False` | -- | Device | No | Automation |
+| - [Custom Field: cPVAL Audit TPM Ready](/docs/878b60d8-f498-4479-85db-43252189026e) | `False` | -- | Device | No | Automation |
 
 ### Automations
 
 | Name | Function |
 | --- | --- |
 | [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) | Performs a comprehensive audit of the machine's security posture. It executes `Get-BitLockerDetail` to scan volumes and `Get-TPMDetail` to retrieve hardware security stats, populating the results into the respective Custom Fields. |
+
+### Group
+
+| Name | Function |
+| --- | --- |
+| - [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) | This group shows the machines on which BitLocker is enabled. |
 
 ### Compound Conditions
 
@@ -62,6 +78,16 @@ Create the following custom fields as described in the documentation:
 * [Custom Field: cPVAL BitLocker Enabled for System Drive](/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5)
 * [Custom Field: cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9)
 * [Custom Field: cPVAL TPM Info](/docs/68c098e2-54f1-40f8-9574-f70f1948e4ba)
+* [Custom Field: cPVAL Audit Encryption Percentage](/docs/1c59227a-466d-4f42-a06f-0c2c0950d07e)
+* [Custom Field: cPVAL Audit Encryption Method](/docs/66adc025-26ec-43f9-ae1e-330c422c799c)
+* [Custom Field: cPVAl Audit Mount Point](/docs/ced74400-a022-4fa2-9b72-4c10e92e36ab)
+* [Custom Field: cPVAL Audit Lock Status](/docs/52ff36d4-e554-4741-aae1-4bd1a50165ee)
+* [Custom Field: cPVAL Audit Protection Status](/docs/dbf6abbd-fff0-4e1f-a6a7-b87994df64ca)
+* [Custom Field: cPVAL Audit Volume Status](/docs/916d0353-8a35-4690-8d40-04b2a95112e1)
+* [Custom Field: cPVAL Audit TPM Activated](/docs/d7079417-ab2f-460a-ab63-6ec1f7b986ca)
+* [Custom Field: cPVAL Audit TPM Enabled](/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923)
+* [Custom Field: cPVAL Audit TPM Present](/docs/5014cdab-65a5-45d9-9587-70d354cbe89b)
+* [Custom Field: cPVAL Audit TPM Ready](/docs/878b60d8-f498-4479-85db-43252189026e)
 
 ### Step 2
 
@@ -70,6 +96,12 @@ Create the following automation as described in the documentation:
 * [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
 
 ### Step 3
+
+Create the following group as described in the documentation:
+ 
+* [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) use [How-to Guide URL](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) while creating group.
+
+### Step 4
 
 Create the following compound conditions as described in the documentation:
 
@@ -179,6 +211,23 @@ Create the following compound conditions as described in the documentation:
 **A:** It is a simple boolean (Checkbox) field. This makes it much easier to use in Condition logic (e.g., "If Checkbox is Unchecked, trigger alert") compared to parsing a full HTML table.
 
 ## Changelog
+
+### 2026-04-15
+
+Updated the newly created Custom field and Group details in this solution.
+
+Custom Field: cPVAL Audit Encryption Percentage
+Custom Field: cPVAL Audit Encryption Method
+Custom Field: cPVAl Audit Mount Point
+Custom Field: cPVAL Audit Lock Status
+Custom Field: cPVAL Audit Protection Status
+Custom Field: cPVAL Audit Volume Status
+Custom Field: cPVAL Audit TPM Activated
+Custom Field: cPVAL Audit TPM Enabled
+Custom Field: cPVAL Audit TPM Present
+Custom Field: cPVAL Audit TPM Ready
+
+Group - cPVAL Bitlocker Audit
 
 ### 2026-01-08
 
