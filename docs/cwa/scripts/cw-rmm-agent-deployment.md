@@ -59,8 +59,19 @@ This can  be run outside of the migration, but requires the site RMM Migration E
 
 ### 2025-04-15
 
-The script using the wrong msi file name. "AsioAgentIinstaller.msi"
-Updated the script to use the correct name.
+- Bug Reported:
+
+    - The script was using an incorrect MSI file name (AsioAgentIinstaller.msi), which caused issues during installation.
+
+- Resolution:
+
+    - Updated the script to use the correct MSI file name.
+
+    - This ensures the SaaS VSA agent installs successfully without errors.
+
+- What steps were changed in the content:
+
+    - Updated the script to replace the incorrect MSI file name with the correct one.
 
 ### 2025-08-22
 
