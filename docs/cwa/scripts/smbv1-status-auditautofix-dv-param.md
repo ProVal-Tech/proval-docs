@@ -1,8 +1,8 @@
 ---
 id: '4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b'
 slug: /4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b
-title: 'SMBv1 Status AuditAutofix DV,Param'
-title_meta: 'SMBv1 Status AuditAutofix DV,Param'
+title: 'SMBv1 Status Audit Autofix DV,Param'
+title_meta: 'SMBv1 Status Audit Autofix DV,Param'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability', 'monitoring']
 description: 'This document outlines a script created to detect and remediate SMBv1 vulnerabilities based on specified settings in the EDF. It details the script execution requirements, dependencies, variables, and output, along with ticketing procedures for successful and failed remediation attempts.'
 tags: ['logging', 'report', 'vulnerability', 'windows']
@@ -24,7 +24,8 @@ It is required to execute this script after importing it with the setting `SetEn
 
 ## Dependencies
 
-[Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Solution - SMBv1 Audit/Autofix ](/docs/343654e4-9263-4fec-87c1-3c3401a94e95)
 
 ## Variables
 
