@@ -36,7 +36,7 @@ This Group shows the machines on which bitlocker is enabled.
 
 ## Group Creation
 
-[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/_template.toml)
+[Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/cpval-bitlocker-audit.toml)
 
 ### Group View
 
