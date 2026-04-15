@@ -19,9 +19,12 @@ This group shows the agents where the "TLS Enabled List Audit" script is execute
 ## Dependencies
 
 [Script - TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53)
+
 [cPVAL TLS Client Enabled](/docs/c7b4badf-49a8-40b7-a6a0-db908b1c0694)
+
 [cPVAL TLS Server Enabled](/docs/0c4cb75a-bc62-4d44-9701-812237e94a36)
-[Solution - Enabled TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
+
+[Solution - TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
 
 ## Group Creation
 

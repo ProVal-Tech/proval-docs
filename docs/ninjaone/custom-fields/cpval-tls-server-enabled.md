@@ -25,7 +25,7 @@ This stores the TLS Server enabled.
 ## Dependencies
 
 [Script - TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53)
-[Solution - Enabled TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
+[Solution - TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
 
 ## Custom Field Creation
 

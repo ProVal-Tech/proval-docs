@@ -31,7 +31,7 @@ Click `Run`
 
 ## Dependencies
 
-[Solution - Enabled TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
+[Solution - TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
 
 ## Automation Setup/Import
 
