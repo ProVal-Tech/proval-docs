@@ -66,6 +66,10 @@ bluescreen:
   label: Blue Screen
   description: Documents related to Blue Screen of Death (BSOD) errors and troubleshooting
 
+status:
+  label: Status
+  description: Documents related to the status of systems or processes
+
 brave:
   label: Brave
   description: Documents covering the Brave web browser and its features
