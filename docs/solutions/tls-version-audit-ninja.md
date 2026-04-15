@@ -1,8 +1,8 @@
 ---
 id: '9882903a-a467-4136-bb9e-7e2c8f25ae01'
 slug: /9882903a-a467-4136-bb9e-7e2c8f25ae01
-title: 'Enable TLS Version Audit'
-title_meta: 'Enable TLS Version Audit'
+title: 'TLS Version Audit'
+title_meta: 'TLS Version Audit'
 keywords: ['tls', 'audit']
 description: 'This solution is built to audit the tls version audit.'
 tags: ['tls', 'audit']
@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-This solution is built to audit the tls version audit.
+This solution is built to audit the installed TLS Client and Server protocol versions and stores the data is custom fields.
 
 ## Associated Content
 
