@@ -5,7 +5,7 @@ title: 'Office Enable Update Status - CF'
 title_meta: 'Office Enable Update Status - CF'
 keywords: ['office', 'update', 'enable', 'procedure', 'cf']
 description: 'This script is used to check the office update status on the machine and update the result into the Custom field on the machine.'
-tags: ['office', 'update', 'enable']
+tags: ['office', 'update']
 draft: false
 unlisted: false
 last_update:
