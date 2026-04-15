@@ -20,7 +20,7 @@ Stores a detailed HTML report of the Trusted Platform Module (TPM) status, inclu
 
 | Label | Field Name | Definition Scope | Type | Required | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL TPM Info | cpvalTpmInfo | `Devices` | WYSIWYG | `False` | | Editable | Read_Write | Read_Write | Stores a detailed HTML report of the Trusted Platform Module (TPM) status, including Manufacturer, Version, Ready State, and Lockout counters. Populated via automation. | Auto-populated HTML table displaying TPM hardware specifications and status. | Read-only. Updated automatically by the [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) script. | BitLocker |
+| cPVAL TPM Info | cpvalTpmInfo | `Devices` | WYSIWYG | `False` | | Editable | Read_Write | Read_Write | Stores a detailed HTML report of the Trusted Platform Module (TPM) status, including Manufacturer, Version, Ready State, and Lockout counters. Populated via automation. | Auto-populated HTML table displaying TPM hardware specifications and status. | Read-only. Updated automatically by the [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) script. | BitLocker Audit |
 
 ## Dependencies
 
