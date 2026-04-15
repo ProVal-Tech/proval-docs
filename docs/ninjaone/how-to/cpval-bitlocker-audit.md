@@ -98,5 +98,7 @@ By using this group, administrators can quickly view and manage systems that hav
 `Ans`:- The status is pulled from the custom field cPVAL BitLocker Enabled for System Drive, which is typically populated via a script or automation that checks the BitLocker state on the endpoint.
 
 ## Changelog
+ 
+### 2026-04-14
 
 - Initial Version of the Document.
