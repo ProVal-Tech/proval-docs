@@ -9,7 +9,7 @@ tags: ['office', 'status']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-14
+  date: 2026-04-15
 ---
 
 ## Summary
@@ -33,10 +33,10 @@ This custom field is used to store the data of the office update status result.
 ## Output
 
 Sample image:  
-![Image](../../../static/img/docs/1be983dd-ef42-4873-a299-a5cd6e44c2ea/Customfield_result.webp)
+![Image](../../../static/img/docs/1be983dd-ef42-4873-a299-a5cd6e44c2ea/samplerun.webp)
 
 ## Changelog
 
-### 2026-04-14
+### 2026-04-15
 
- - Initial version of the document
+- Initial version of the document
