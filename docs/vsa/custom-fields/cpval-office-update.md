@@ -5,7 +5,7 @@ title: 'cPVAL Office Update'
 title_meta: 'cPVAL Office Update'
 keywords: ['cf', 'office', 'update', 'enable']
 description: 'This custom field is used to store the data of the office update status.'
-tags: ['office', 'status']
+tags: ['office', 'update']
 draft: false
 unlisted: false
 last_update:
