@@ -57,6 +57,11 @@ This can  be run outside of the migration, but requires the site RMM Migration E
 
 ## Changelog
 
+### 2025-04-15
+
+The script using the wrong msi file name. "AsioAgentIinstaller.msi"
+Updated the script to use the correct name.
+
 ### 2025-08-22
 
 - Initial version of the document
