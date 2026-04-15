@@ -5,7 +5,7 @@ title: 'Office Update Status Solution'
 title_meta: 'Office Update Status Solution'
 keywords: ['office', 'update', 'cf', 'status']
 description: 'This solution document is retrive the office update status from the machine and update the result into the custom field.'
-tags: ['office', 'update','windows']
+tags: ['office', 'update','windows','workstations']
 draft: false
 unlisted: false
 last_update:
