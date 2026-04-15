@@ -21,7 +21,7 @@ This group shows the agents where the "TLS Enabled List Audit" script is execute
 [Script - TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53)
 [cPVAL TLS Client Enabled](/docs/c7b4badf-49a8-40b7-a6a0-db908b1c0694)
 [cPVAL TLS Server Enabled](/docs/0c4cb75a-bc62-4d44-9701-812237e94a36)
-[cPVAL TLS Details](/docs/37aaa27b-1398-4c9d-a681-39a8c807b635)
+[Solution - Enabled TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
 
 ## Group Creation
 
@@ -44,14 +44,15 @@ Please follow the steps below to add the necessary custom fields or additional c
 Add the below custom fields or additional columns under the Group View:
  
 - > OS Name
--  > cPVAL TLS Details
 -  > cPVAL TLS Client Enabled
 -  > cPVAL TLS Server Enabled
 
 ### Group Screenshot
 
-This is how the group should looks like after adding the custom fields:
-
-> Add group screenshot here
+![Sample Screenshot](../../../static/img/docs/c5ae7def-4145-4f7b-82eb-8f4bfda66c41/image.webp)
 
 ## Changelog
+
+### 2026-04-15
+
+- Initial version of the document

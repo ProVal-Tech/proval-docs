@@ -29,6 +29,10 @@ Click `Run`
 
 ![SampleRun3](../../../static/img/docs/a19fe079-7179-4bdd-9572-248e1a48fb53/image1.webp)
 
+## Dependencies
+
+[Solution - Enabled TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
+
 ## Automation Setup/Import
 
 [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/tls-enabled-list-audit.ps1)
@@ -39,5 +43,7 @@ Click `Run`
 - Custom Field
 
 ## Changelog
+
+### 2026-04-15
 
 - Initial version of the document
