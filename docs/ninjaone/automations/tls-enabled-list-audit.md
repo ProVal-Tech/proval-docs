@@ -9,12 +9,12 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-14
+  date: 2026-04-15
 ---
 
 ## Overview
 
-This PowerShell script shows the list of TLS servers, and client are enabled.
+This script gathers information about the TLS Client and Server protocol versions installed on an endpoint and stores the data in custom fields.
 
 ## Sample Run
 
@@ -23,15 +23,13 @@ This PowerShell script shows the list of TLS servers, and client are enabled.
 
 Search for the `TLS Enable List Audit` and click `Run`
 
-![SampleRun2](../../../static/img/docs/a19fe079-7179-4bdd-9572-248e1a48fb53/image2.webp)
-
 Click `Run`
 
 ![SampleRun3](../../../static/img/docs/a19fe079-7179-4bdd-9572-248e1a48fb53/image1.webp)
 
 ## Dependencies
 
-[Solution - TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
+- [Solution - TLS Version Audit](/docs/9882903a-a467-4136-bb9e-7e2c8f25ae01)
 
 ## Automation Setup/Import
 

@@ -9,7 +9,7 @@ tags: ['tls', 'audit']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-14
+  date: 2026-04-15
 ---
 
 ## Purpose
@@ -20,10 +20,10 @@ This solution is built to audit the tls version audit.
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Script - TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53)    | Script | This PowerShell script shows the list of TLS servers, and client are enabled. |
-| [cPVAL TLS Client Enabled](/docs/c7b4badf-49a8-40b7-a6a0-db908b1c0694) | Custom field | This stores the TLS Client Enabled state. |
-| [cPVAL TLS Server Enabled](/docs/0c4cb75a-bc62-4d44-9701-812237e94a36) | Custom field | This stores the TLS Server enabled. |
-| [Enabled TLS Version Audit](/docs/c5ae7def-4145-4f7b-82eb-8f4bfda66c41) | Group | This group shows the agents where the "TLS Enabled List Audit" script is executed to collect the enabled TLS versions audit list. |
+| [TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53)    | Script | This script gathers information about the TLS Client and Server protocol versions installed on an endpoint and stores the data in custom fields. |
+| [cPVAL TLS Client Enabled](/docs/c7b4badf-49a8-40b7-a6a0-db908b1c0694) | Custom Field | This stores the installed and enabled TLS Client versions on an endpoint. |
+| [cPVAL TLS Server Enabled](/docs/0c4cb75a-bc62-4d44-9701-812237e94a36) | Custom Field | This stores the installed and enabled TLS Server versions on an endpoint. |
+| [Enabled TLS Version Audit](/docs/c5ae7def-4145-4f7b-82eb-8f4bfda66c41) | Group | This group shows the agents where the [TLS Enabled List Audit](/docs/a19fe079-7179-4bdd-9572-248e1a48fb53) script is executed to collect the enabled TLS versions list. |
 
 ## Implementation
 
