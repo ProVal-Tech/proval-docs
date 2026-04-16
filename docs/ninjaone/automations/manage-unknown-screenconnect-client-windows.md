@@ -9,12 +9,12 @@ tags: ['alerting', 'auditing', 'monitoring', 'security', 'screenconnect']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-16
 ---
 
 ## Overview
 
-This automation audits all installed ScreenConnect Client instances on Windows and compares them against approved identifiers.
+Audits, alerts, and optionally remediates non-whitelisted ScreenConnect Client installations including corrupt or broken versions, performing full cleanup of services, registry keys, and install directories, then updates NinjaRMM custom fields with current-state results.
 
 Approved identifiers can come from:
 
@@ -169,6 +169,11 @@ If this field is blank or invalid, the script uses `Audit Only`.
 - Alert-oriented output in `Audit and Alert` and `Autofix and Alert on Failure` when unknown instances are present
 
 ## Changelog
+
+### 2026-04-16
+
+- Included detection and removal of corrupt or broken installations
+- Included full cleanup of related services, registry keys, and install directories.
 
 ### 2026-04-09
 
