@@ -31,7 +31,15 @@ This stores the Windows Update UI state audit from the script `Windows Updates -
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-windows-update-ui-state.toml)
 
+## Sample Screenshot
+
+![Device Level](../../../static/img/docs/134eb999-a5dd-4599-ae1f-4c0082590007/image1.webp)
+
 ## Changelog
+
+### 2026-04-16
+
+- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
 
 ### 2026-04-08
 

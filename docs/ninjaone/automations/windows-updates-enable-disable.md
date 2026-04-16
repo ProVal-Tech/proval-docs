@@ -9,7 +9,7 @@ tags: ['windows','updates','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-08
+  date: 2026-04-16
 ---
 
 ## Overview
@@ -45,5 +45,11 @@ Select the **Button Action** and **Update Notifications Level** options as requi
 - Custom Field
 
 ## Changelog
+
+### 2026-04-16
+
+- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
+
+### 2026-04-08
 
 - Initial version of the document

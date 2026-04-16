@@ -20,14 +20,21 @@ This group contains the devices with the status of the "Windows State UI" and al
 
 [Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
 [cPVAL Windows Update UI State](/docs/ad629c28-f5f4-432d-93d2-abb3a35e4737)
-[cPVAL Windows Update Button](/docs/134eb999-a5dd-4599-ae1f-4c0082590007)
 
 ## Group Creation
 
 [Group Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/groups/windows-update-ui-audit.toml)
 
+## Sample Screenshot
+
+![Sample Screenshot](../../../static/img/docs/90702d57-0604-4f19-a439-0e2eb001e6f9/image.webp)
 
 ## Changelog
+
+### 2026-04-16
+
+- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
+- Added this new custom field to enable the solution based on the OS selection just like the ignite service plan patching for the Windows workstations, and Windows Servers.
 
 ### 2026-04-13
 
