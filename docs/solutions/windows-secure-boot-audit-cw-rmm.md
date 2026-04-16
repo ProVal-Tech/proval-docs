@@ -21,13 +21,13 @@ This solution fetches the status of key certificate and configurations that will
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Windows Secure Boot](/docs/222fae1b-23f8-45d8-9bcf-e1974ee8dcea)      |  Custom Fields           | Custom Fields to display the script output. |
-| [Windows Machines](/docs/222fae1b-23f8-45d8-9bcf-e1974ee8dcea)      |  Group          | Group containing online windows machines. |
+| [Windows Machines](/docs/b0c8b058-2cac-4922-a6a7-1c4275c4be15)      |  Group          | Group containing online windows machines. |
 | [Windows Secure Boot Audit](/docs/c394b81e-3d3c-4316-8d92-0d243625a02c)      |  Task    | This Script fetches the status of key certificate and configurations that will be needed before the current secure boot certificates expire.|
 
 ## Implementation
 
 - Create the [Custom Fields : Windows Secure Boot](/docs/222fae1b-23f8-45d8-9bcf-e1974ee8dcea) using the implementation instruction provided in the document.
-- Create the  [Group : Windows Machines](/docs/222fae1b-23f8-45d8-9bcf-e1974ee8dcea) using the implementation instruction provided in the document.
+- Create the  [Group : Windows Machines](/docs/b0c8b058-2cac-4922-a6a7-1c4275c4be15) using the implementation instruction provided in the document.
 - Create the [Task : Windows Secure Boot Audit](/docs/c394b81e-3d3c-4316-8d92-0d243625a02c) using the implementation instruction provided in the document.
 
 ## Changelog
