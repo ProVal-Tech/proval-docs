@@ -93,7 +93,7 @@ There is an option to enable ticketing for machines where automation fails three
 | Content                                                                                                      | Type             | Function                                                                            |
 | ------------------------------------------------------------------------------------------------------------ | ---------------- | ----------------------------------------------------------------------------------- |
 | [Windows 11 Upgrade Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) | Dataview | Provides an overview of the automation process. |
-| [Win11 Install & Feature Update – EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) | Dataview | Displays the status of all Extra Data Fields used in the solution |
+| [Win11 Install & Feature Update - EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) | Dataview | Displays the status of all Extra Data Fields used in the solution |
 
 ### Additional Content
 
@@ -153,7 +153,7 @@ There is an option to enable ticketing for machines where automation fails three
 
 7. Import the following dataview using the ProSync Plugin:
     - [Dataview: Windows 11 Installation Audit [Compatible Machines]](/docs/a9cf49a9-c8e0-432c-ae8e-9560d38bf1ce) 
-    - [Win11 Install & Feature Update – EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) 
+    - [Win11 Install & Feature Update - EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) 
 
 8. Reload the system cache:  
     ![Image](../../static/img/docs/16acceef-5282-42e0-840c-8b8e5af8058f/image_1.webp)
@@ -187,7 +187,7 @@ There is an option to enable ticketing for machines where automation fails three
 
 ### 2026-04-14
 
-- Added a new dataview [Win11 Install & Feature Update – EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) to display the status of all Extra Data Fields used in the solution
+- Added a new dataview [Win11 Install & Feature Update - EDFs Status](/docs/3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0) to display the status of all Extra Data Fields used in the solution
 
 ### 2026-03-30
 

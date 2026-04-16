@@ -1,8 +1,8 @@
 ---
 id: '3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0'
 slug: /3e7cdd5b-c5ed-498c-bad5-4f9fb71075e0
-title: 'Win11 Install & Feature Update – EDFs Status'
-title_meta: 'Win11 Install & Feature Update – EDFs Status'
+title: 'Win11 Install & Feature Update - EDFs Status'
+title_meta: 'Win11 Install & Feature Update - EDFs Status'
 keywords:  ['windows', 'report', 'edfs','status','upgrade']
 description: 'Displays the status of all Extra Data Fields used in the Windows 11 Installation and Feature Update solution'
 tags: ['installation', 'security', 'update', 'windows']
