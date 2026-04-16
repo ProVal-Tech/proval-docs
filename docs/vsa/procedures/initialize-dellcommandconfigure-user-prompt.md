@@ -1,15 +1,15 @@
 ---
 id: '38c0c930-3178-48a0-83d6-410c303b329b'
 slug: /38c0c930-3178-48a0-83d6-410c303b329b
-title: 'Initialize-DellCommandConfigure | Update [User Prompt]'
-title_meta: 'Initialize-DellCommandConfigure | Update [User Prompt]'
+title: 'Initialize-DellCommandConfigure Update'
+title_meta: 'Initialize-DellCommandConfigure Update'
 keywords: ['dell', 'dcu', 'dell-command', 'dell-command-configure', 'bios-configuration', 'bios']
 description: 'Automates installation, updating, and execution of Dell Command | Configure (DCC) on Dell workstations. Ensures the latest version is present and provides command-line automation for BIOS configuration operations with comprehensive error handling and logging and it will always prompt for parameters.'
 tags: ['application', 'installation', 'software', 'dell', 'bios']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-04-16
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 ## Sample Run
 
-![SampleRun1](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/SampleRUN1.webp)
+![SampleRun1](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/11.webp)
 
 **Note:** `If an argument contains double quotes ("), they must be escaped by using them twice (""silent""). Otherwise, the command will not execute correctly.`
 
@@ -41,17 +41,19 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 1. Export the agent procedure from ProVal's VSA RMM instance.
 
-![Export](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/ExporT_Dell.webp)
+![Export](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/12.webp)
 The export will download the necessary XML file.
 
 2. Import this XML file into the partner's VSA RMM instance.
-![Import](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/Import_Dell.webp)
+![Import](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/13.webp)
 
-3. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
-![Execute with Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/ExecutewithParameter.webp)
+## Examples
 
-4. Execute it Without parameters, defaults to showing help:
-![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/Default_execution.webp)
+1. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
+![Execute with Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/14.webp)
+
+2. Execute it Without parameters, defaults to showing help:
+![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/15.webp)
 
 ## Output
 
@@ -63,4 +65,6 @@ The export will download the necessary XML file.
 
 ## Changelog
 
-date: 2026-04-13
+## 2026-04-16
+
+- Initial version of the document

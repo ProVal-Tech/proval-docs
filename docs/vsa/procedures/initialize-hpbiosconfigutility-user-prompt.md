@@ -1,15 +1,15 @@
 ---
 id: 'f9976787-b457-4661-b325-5a12a5ebb9b4'
 slug: /f9976787-b457-4661-b325-5a12a5ebb9b4
-title: 'Initialize-HPBiosConfigUtility| Update [User Prompt'
-title_meta: 'Initialize-HPBiosConfigUtility| Update [User Prompt'
+title: 'Initialize-HPBiosConfigUtility Update'
+title_meta: 'Initialize-HPBiosConfigUtility Update'
 keywords: ['hp', 'hp-bcu', 'hp-bios-config', 'bios', 'bios-configuration']
 description: 'This script automates downloading/extracting the BCU package, verifying the BCU executable, running BCU to read or apply BIOS settings, and interpreting BCU exit codes into human-readable messages.'
 tags: ['application', 'installation', 'hp', 'bios']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-04-16
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ For complete documentation on supported arguments, refer to: See [HP Documentati
 
 ## Sample Run
 
-![SampleRun1](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/Samplerun_HP.webp)
+![SampleRun1](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/21.webp)
 
 ## Dependencies
 
@@ -40,21 +40,22 @@ For complete documentation on supported arguments, refer to: See [HP Documentati
 
 1. Export the agent procedure from ProVal's VSA RMM instance.
 
-![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/Export_HP.webp)
+![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/22.webp)
 The export will download the necessary XML file.
 
 2. Import this XML file into the partner's VSA RMM instance.
 
-![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/Import_HP.webp)
+![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/23.webp)
 
-3. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
+## Examples
 
-![Execute with Parameter](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/Executewithparameter_HP.webp)
+1. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
 
-4. Execute it Without parameters, defaults to showing help:
-![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/Executewithoutparameter.webp)
+![Execute with Parameter](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/24.webp)
 
-   
+2. Execute it Without parameters, defaults to showing help:
+![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/15.webp)
+
 
 ## Output
 
@@ -66,4 +67,6 @@ The export will download the necessary XML file.
 
 ## Changelog
 
-date: 2026-04-13
+## 2026-04-16
+
+- Initial version of the document
