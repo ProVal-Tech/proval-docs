@@ -34,11 +34,7 @@ This solution document is retrive the office update status from the machine and 
 2. Import the Automation Script:
 [Agent Procedure - Office Enable Update Status - CF](/docs/e4450cc1-05dc-4cc1-8803-3ae7bdbd7e19)
 
-3. Map the Custom field into the Automation Script:
-
-![Image 1](../../../static/img/docs/1626c96c-80e1-45b9-93f3-d1b8237f911f/5.webp)
-
-4. Create the views:
+3. Create the views:
 [Views - cPVAL Office Updates Enabled](/docs/f71462bc-a274-4bee-839e-0f48effe09c6)
 [Views - cPVAL Office Channel Status](/docs/9c5b8f5a-3e80-499a-bcf2-ac376fedd841)
 
