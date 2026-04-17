@@ -9,7 +9,7 @@ tags: ['application', 'installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-08
+  date: 2026-04-17
 ---
 
 ## Purpose
@@ -99,6 +99,10 @@ A: Supported OS selection is controlled by the `CloudRadial Installation` custom
 A: Yes, both the Windows and Mac logics verify the installation was successful before completing.
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the Custom Field's `Windows` option to `Windows Workstation and Server` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstation` from unintentionally including all Windows devices in the group.
 
 ### 2025-10-08
 

@@ -9,7 +9,7 @@ tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-20
+  date: 2026-04-17
 ---
 
 ## Purpose
@@ -80,7 +80,7 @@ Configure the monitor [Certificate Expiration 30 Days](/docs/dc48efed-0e7d-44d4-
 > The **Certificate Expiration Alerts** custom field is configured at the COMPANY level with options to:
 >
 >> - **Disabled** - Monitoring disabled
->> - **Windows** - Monitor all Windows devices (both workstations and servers)
+>> - **Windows Workstations and Servers** - Monitor all Windows devices (both workstations and servers)
 >> - **Windows Workstations** - Monitor workstations only
 >> - **Windows Servers** - Monitor servers only
 
@@ -96,7 +96,7 @@ Configure the monitor [Certificate Expiration 30 Days](/docs/dc48efed-0e7d-44d4-
 
 > For a computer to be monitored, ALL of the following must be true:
 >
->> - The COMPANY-level **Certificate Expiration Alerts** field must be set to `Windows`, `Windows Workstations`, or `Windows Servers`
+>> - The COMPANY-level **Certificate Expiration Alerts** field must be set to `Windows Workstations and Servers`, `Windows Workstations`, or `Windows Servers`
 >> - Both site-level and endpoint-level **Disable Cert Expiration Alerts** fields must be set to `False` (or unchecked)
 >> - The device must match the OS Type and Endpoint Type criteria
 
@@ -112,6 +112,10 @@ Configure the monitor [Certificate Expiration 30 Days](/docs/dc48efed-0e7d-44d4-
 >> - Expiration date (NotAfter)
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the Custom Field's `Windows` option to `Windows Workstations and Servers` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstations` from unintentionally including all Windows devices in the group.
 
 ### 2026-02-19
 

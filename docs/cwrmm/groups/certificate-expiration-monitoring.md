@@ -9,7 +9,7 @@ tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-20
+  date: 2026-04-17
 ---
 
 ## Summary
@@ -40,12 +40,12 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 
 | Block | Criteria Name          | Operator        | Value(s)                                 |
 |-------|-----------------------|-----------------|-------------------------------------------|
-| 1     | Certificate Expiration Alerts         | Contains any of | `Windows`, `Windows Workstations` |
+| 1     | Certificate Expiration Alerts         | Contains any of | `Windows Workstations and Servers`, `Windows Workstations` |
 | 1     | Disable Cert Expiration Alerts | Equal           | `False`                                     |
 | 1     | Disable Cert Expiration Alert | Equal           | `False`                                     |
 | 1     | OS Type                | Equal           | `Windows`                                   |
 | 1     | Endpoint Type          | Not Equal       | `Server`                                    |
-| 2     | Certificate Expiration Alerts         | Contains any of | `Windows`, `Windows Servers` |
+| 2     | Certificate Expiration Alerts         | Contains any of | `Windows Workstations and Servers`, `Windows Servers` |
 | 2     | Disable Cert Expiration Alerts | Equal           | `False`                                     |
 | 2     | Disable Cert Expiration Alert | Equal           | `False`                                     |
 | 2     | OS Type                | Equal           | `Windows`                                   |
@@ -64,6 +64,10 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ![Image3](../../../static/img/docs/0cf27d9a-8aeb-4555-92a2-45e993e1bd87/image3.webp)
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the Custom Field's `Windows` option to `Windows Workstations and Servers` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstations` from unintentionally including all Windows devices in the group.
 
 ### 2026-02-19
 

@@ -9,7 +9,7 @@ tags: ['application', 'installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-08
+  date: 2026-04-17
 ---
 
 ## Summary
@@ -28,13 +28,17 @@ Select operating system to enable Cloud Radial Agent deployment for. This custom
 
 | Name | Level | Type | Options | Default Value | Editable | Description |
 | ---- | ----- | ---- | ------- | ------------- | -------- | ----------- |
-| CloudRadial Installation | COMPANY | Dropdown | <ul><li>None</li><li>All</li><li>Windows</li><li>Windows Workstation and Macintosh</li><li>Windows Workstation</li><li>Windows Server</li><li>Macintosh</li></ul> | | Yes | Select operating system to enable Cloud Radial Agent deployment for. |
+| CloudRadial Installation | COMPANY | Dropdown | <ul><li>None</li><li>All</li><li>Windows Workstation and Server</li><li>Windows Workstation and Macintosh</li><li>Windows Workstation</li><li>Windows Server</li><li>Macintosh</li></ul> | | Yes | Select operating system to enable Cloud Radial Agent deployment for. |
 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/e1ac886a-807a-4c85-9f6a-a1cecbc15910/image1.webp)
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the `Windows` option to `Windows Workstation and Server` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstation` from unintentionally including all Windows devices in the group.
 
 ### 2025-10-08
 
