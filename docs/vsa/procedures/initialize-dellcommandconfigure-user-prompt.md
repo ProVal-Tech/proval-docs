@@ -1,8 +1,8 @@
 ---
 id: '38c0c930-3178-48a0-83d6-410c303b329b'
 slug: /38c0c930-3178-48a0-83d6-410c303b329b
-title: 'Initialize-DellCommandConfigure Update'
-title_meta: 'Initialize-DellCommandConfigure Update'
+title: 'Initialize-DellCommandConfigure'
+title_meta: 'Initialize-DellCommandConfigure'
 keywords: ['dell', 'dcu', 'dell-command', 'dell-command-configure', 'bios-configuration', 'bios']
 description: 'Automates installation, updating, and execution of Dell Command | Configure (DCC) on Dell workstations. Ensures the latest version is present and provides command-line automation for BIOS configuration operations with comprehensive error handling and logging and it will always prompt for parameters.'
 tags: ['application', 'installation', 'software', 'dell', 'bios']

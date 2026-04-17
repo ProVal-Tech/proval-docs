@@ -1,8 +1,8 @@
 ---
 id: 'f9976787-b457-4661-b325-5a12a5ebb9b4'
 slug: /f9976787-b457-4661-b325-5a12a5ebb9b4
-title: 'Initialize-HPBiosConfigUtility Update'
-title_meta: 'Initialize-HPBiosConfigUtility Update'
+title: 'Initialize-HPBiosConfigUtility'
+title_meta: 'Initialize-HPBiosConfigUtility'
 keywords: ['hp', 'hp-bcu', 'hp-bios-config', 'bios', 'bios-configuration']
 description: 'This script automates downloading/extracting the BCU package, verifying the BCU executable, running BCU to read or apply BIOS settings, and interpreting BCU exit codes into human-readable messages.'
 tags: ['application', 'installation', 'hp', 'bios']
