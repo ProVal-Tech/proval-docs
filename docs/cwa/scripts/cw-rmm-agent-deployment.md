@@ -39,7 +39,7 @@ This can  be run outside of the migration, but requires the site RMM Migration E
 
 1. Navigate to `CLIENTS` ➞ `Companies`.
 2. Select Company.
-3. Goto `Agents` tab.
+3. Go to `Agents` tab.
 4. Select a site.
 5. Copy Agent token.
 
@@ -64,12 +64,6 @@ This can  be run outside of the migration, but requires the site RMM Migration E
     - The script was using an incorrect MSI file name (AsioAgentIinstaller.msi), which caused issues during installation.
 
 - Resolution:
-
-    - Updated the script to use the correct MSI file name.
-
-    - This ensures the SaaS VSA agent installs successfully without errors.
-
-- What steps were changed in the content:
 
     - Updated the script to replace the incorrect MSI file name with the correct one.
 
