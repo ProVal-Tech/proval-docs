@@ -63,7 +63,7 @@ The export will download the necessary XML file.
 
 - `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-error.txt`
 
-### Changelog
+## Changelog
 
 ### 2026-04-20
 
