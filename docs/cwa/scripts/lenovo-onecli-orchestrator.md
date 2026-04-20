@@ -69,7 +69,7 @@ Running the script to Apply all downloaded updates:
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| `URL` | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli) <b></b>  <B><U>Note</U></B> : This URL must be changed whenever a new Onecli version is released to keep OneCli up to date. |
+| `URL` | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | <ul>URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli)</ul> <b></b> <ul>**Note**: This URL must be changed whenever a new Onecli version is released to keep OneCli up to date.</ul> |
 
 
 **Notes:**
