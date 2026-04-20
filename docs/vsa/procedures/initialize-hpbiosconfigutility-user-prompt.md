@@ -9,7 +9,7 @@ tags: ['application', 'installation', 'hp', 'bios']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-16
+  date: 2026-04-20
 ---
 
 ## Summary
@@ -26,15 +26,11 @@ For complete documentation on supported arguments, refer to: See [HP Documentati
 
 [Initialize-HPBiosConfigUtility](/docs/b5d53223-2755-48da-b4f5-a1cd5fa9f58f)
 
-## Variables
+## Parameters
 
-## Variables/Parameters
-
-| Parameter  | Required | Example                                                                                          | Type   | Details                                                                                                                                                                                                                                           | Description                                                |
-| ---------- | -------- | ------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `Argument` | False    | `-Argument '/SetConfig:"After Power Loss","Power On"'`                                                                                      | String | arguments to execute. See [HP Documentation](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/BIOS_Configuration_Utility_User_Guide.pdf) for supported parameters. | critical workstations that must stay online 24/7 without human intervention and will back online automatically when power back.                |
-| `Argument` | False    | `'/SetConfig:"After Power Loss","Previous State"'` | String | arguments to execute. See [HP Documentation](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/BIOS_Configuration_Utility_User_Guide.pdf) for supported parameters. | General office workstations where you want to respect whether the user actually wanted the machine running. |
-| `Argument` | False    | `'/SetConfig:"After Power Loss","Power Off"'` | String | arguments to execute. See [HP Documentation](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/BIOS_Configuration_Utility_User_Guide.pdf) for supported parameters. | High-density environments where you want to prevent a massive "power surge" caused by hundreds of machines turning on at the exact same second when the grid comes back online. |
+| Parameter  | Required | Type   | Details                                                                                                                                                                                                                                    | Description                                                |
+| ---------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `Argument` | False    | String | Arguments to execute. See [HP Documentation](https://ftp.hp.com/pub/caps-softpaq/cmit/whitepapers/BIOS_Configuration_Utility_User_Guide.pdf) for supported parameters. | Follow the documentation for more details about the parameters. |        |
 
 ## Implementation
 
@@ -49,24 +45,28 @@ The export will download the necessary XML file.
 
 ## Examples
 
-1. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
+1. Execute it on the machine where its required with the parameter(setvalue:"After Power Loss","Power On").It will enable the Power on setting automatically after outage only on the HP Machines.
 
 ![Execute with Parameter](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/24.webp)
 
-2. Execute it Without parameters, defaults to showing help:
-![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/15.webp)
+2. Execute it without parameters, defaults to showing help that displays the full list of BCU command-line switches.:
+![Export](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/25.webp)
+
+3. Execute it on the machine where its required with the parameter(/setvalue:"Fast Boot","Enable").It will enable the Fast boot on the HP Machines.
+
+![Execute with Parameter](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/26.webp)
 
 
 ## Output
 
 - Script Logs
 
--`C:\ProgramData\_automation\AgentProcedure\HPBiosConfigUtility\Initialize-HPBiosConfigUtility.txt`
+-`C:\ProgramData\_automation\AgentProcedure\HPBiosConfigUtility\Initialize-HPBiosConfigUtility-log.txt`
 
--`C:\ProgramData\_automation\AgentProcedure\HPBiosConfigUtility\Initialize-HPBiosConfigUtility.txt`
+-`C:\ProgramData\_automation\AgentProcedure\HPBiosConfigUtility\Initialize-HPBiosConfigUtility-error.txt`
 
-## Changelog
+### Changelog
 
-## 2026-04-16
+### 2026-04-20
 
 - Initial version of the document

@@ -9,14 +9,14 @@ tags: ['application', 'installation', 'software', 'dell', 'bios']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-16
+  date: 2026-04-20
 ---
 
 ## Summary
 
 Automates installation, updating, and execution of Dell Command | Configure (DCC) on Dell workstations. Ensures the latest version is present and provides command-line automation for BIOS configuration operations with comprehensive error handling and logging.
 
-For complete documentation on supported arguments, refer to: See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters.
+For complete documentation on supported arguments, refer to: See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters.  
 
 ## Sample Run
 
@@ -28,14 +28,11 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 
-## Variables/Parameters
+## Parameters
 
-| Parameter  | Required | Example                                                                                          | Type   | Details                                                                                                                                                                                                                                           | Description                                                |
-| ---------- | -------- | ------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `Argument` | False    |                   `--Absolute`                                                                                      | String | DCU-CLI arguments to execute. See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters. | Enabled, Disabled, and PermanentlyDisabled                |
-| `Argument` | False    | `--AcPwrRcvry` | String | DCU-CLI arguments to execute. See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters. | off, last, on |
-| `Argument` | False    | `--ActivityLed` | String | DCU-CLI arguments to execute. See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters. | ActLed, Wlan, Disabled              |
-| `Argument` | False    | `--AddDevice`                                                                                     | String | DCU-CLI arguments to execute. See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters. | 	Usb                      |
+| Parameter  | Required | Type   | Details                                                                                                                                                                  | Description                                                                      |
+| ---------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| `Argument` | False    | String | DCU-CLI arguments to execute. See [Dell Documentation](https://www.dell.com/support/manuals/en-in/command-configure-v4.2/dcc_cli_4.2/bios-options?guid=guid-44c059be-b76d-4b2f-b8ef-655f736c40ce&lang=en-us) for supported parameters. | Follow the documentation for more details about the parameters |
 
 ## Implementation
 
@@ -52,19 +49,22 @@ The export will download the necessary XML file.
 1. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
 ![Execute with Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/14.webp)
 
-2. Execute it Without parameters, defaults to showing help:
+2. Execute it without parameters, defaults to showing help:
 ![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/15.webp)
+
+3. Execute it with parameters(--ActivityLed ActLed), It will Sets the Activity LED controlled by an Advanced Configuration and Power Interface (ACPI)operating system and driver.:
+![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/16.webp)
 
 ## Output
 
 - Script Logs
 
--`C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure.txt`
+- `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-log.txt`
 
--`C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure.txt`
+- `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-error.txt`
 
-## Changelog
+### Changelog
 
-## 2026-04-16
+### 2026-04-20
 
 - Initial version of the document
