@@ -9,7 +9,7 @@ tags: ['encryption','custom-fields','bitlocker','security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-08
+  date: 2026-04-15
 ---
 
 ## Purpose
@@ -38,16 +38,16 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 | [cPVAL BitLocker Enabled for System Drive](/docs/5f6128a5-4fc8-44b2-adb2-40c2ac92edc5) | `False` | `Checked` | Device | No | Automation |
 | [cPVAL BitLocker Info](/docs/fd545101-1cd5-4d9f-8df7-57c4df1616b9) | - | *HTML Table* | Device | No | Automation |
 | [cPVAL TPM Info](/docs/68c098e2-54f1-40f8-9574-f70f1948e4ba) | - | *HTML Table* | Device | No | Automation |
-| - [Custom Field: cPVAL Audit Encryption Percentage](/docs/1c59227a-466d-4f42-a06f-0c2c0950d07e) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit Encryption Method](/docs/66adc025-26ec-43f9-ae1e-330c422c799c) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAl Audit Mount Point](/docs/ced74400-a022-4fa2-9b72-4c10e92e36ab) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit Lock Status](/docs/52ff36d4-e554-4741-aae1-4bd1a50165ee) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit Protection Status](/docs/dbf6abbd-fff0-4e1f-a6a7-b87994df64ca) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit Volume Status](/docs/916d0353-8a35-4690-8d40-04b2a95112e1) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit TPM Activated](/docs/d7079417-ab2f-460a-ab63-6ec1f7b986ca) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit TPM Enabled](/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit TPM Present](/docs/5014cdab-65a5-45d9-9587-70d354cbe89b) | `False` | -- | Device | No | Automation |
-| - [Custom Field: cPVAL Audit TPM Ready](/docs/878b60d8-f498-4479-85db-43252189026e) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit Encryption Percentage](/docs/1c59227a-466d-4f42-a06f-0c2c0950d07e) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit Encryption Method](/docs/66adc025-26ec-43f9-ae1e-330c422c799c) | `False` | -- | Device | No | Automation |
+| [cPVAl Audit Mount Point](/docs/ced74400-a022-4fa2-9b72-4c10e92e36ab) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit Lock Status](/docs/52ff36d4-e554-4741-aae1-4bd1a50165ee) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit Protection Status](/docs/dbf6abbd-fff0-4e1f-a6a7-b87994df64ca) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit Volume Status](/docs/916d0353-8a35-4690-8d40-04b2a95112e1) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit TPM Activated](/docs/d7079417-ab2f-460a-ab63-6ec1f7b986ca) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit TPM Enabled](/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit TPM Present](/docs/5014cdab-65a5-45d9-9587-70d354cbe89b) | `False` | -- | Device | No | Automation |
+| [cPVAL Audit TPM Ready](/docs/878b60d8-f498-4479-85db-43252189026e) | `False` | -- | Device | No | Automation |
 
 ### Automations
 
@@ -59,7 +59,7 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 
 | Name | Function |
 | --- | --- |
-| - [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) | This group shows the machines on which BitLocker is enabled. |
+| [cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) | This group shows the machines on which BitLocker is enabled. |
 
 ### Compound Conditions
 
