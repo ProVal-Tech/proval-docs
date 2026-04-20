@@ -18,14 +18,12 @@ This document shows all endpoints that have office update is disabled.
 
 ## Dependencies
 
-- [Agent Procedure - Office Enable Update Status - CF](/docs/e4450cc1-05dc-4cc1-8803-3ae7bdbd7e19)
-- [Custom Field - cPVAL Office Update](/docs/1be983dd-ef42-4873-a299-a5cd6e44c2ea)
-- [Views - cPVAL Office Updates Enabled](/docs/f71462bc-a274-4bee-839e-0f48effe09c6)
-- [Solution - 'Office Update Status Solution](/docs/1626c96c-80e1-45b9-93f3-d1b8237f911f)
+- [Custom Field: cPVAL Office Update](/docs/1be983dd-ef42-4873-a299-a5cd6e44c2ea)
+- [Solution: Office Update Status Solution](/docs/1626c96c-80e1-45b9-93f3-d1b8237f911f)
 
 ## View Filters
 
-| Filter Name | Advanced Filter? | Filter Value |
+| Filter Name | Advanced Filter | Filter Value |
 | ----------- | ---------------- | ------------ |
 | cPVAL Office Updates | Yes | Disabled |
 
