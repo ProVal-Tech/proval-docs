@@ -9,12 +9,12 @@ tags: ['vulnerability']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-09
+  date: 2026-04-15
 ---
 
 ## Summary
 
-This dataview gathers data from the script [CWA Script - SMBv1 Enabled Detection & Remediation](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b) and depicts the status of SMB enabled on the agent where it is deployed.
+This dataview gathers data from the script [SMBv1 Status Audit/Autofix [DV,Param]](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b) and depicts the status of SMB enabled on the agent where it is deployed.
 
 ## Dependencies
 
