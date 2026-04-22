@@ -43,7 +43,7 @@ The export will download the necessary XML file.
 
 ## Examples
 
-1. Execute it on the machine where its required with the parameter `setvalue:"After Power Loss","Power On"`. It will enable the Power on setting automatically after outage only on the HP Machines.
+1. Execute it on the machine where its required with the parameter `/setvalue:"After Power Loss","Power On"`. It will enable the Power on setting automatically after outage only on the HP Machines.
 ![Execute with Parameter](../../../static/img/docs/f9976787-b457-4661-b325-5a12a5ebb9b4/24.webp)
 
 2. Execute it without parameters, defaults to showing help that displays the full list of BCU command-line switches:  
