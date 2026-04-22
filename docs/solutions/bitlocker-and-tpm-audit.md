@@ -59,7 +59,7 @@ The solution uses the **[BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-
 
 | Name | Function |
 | --- | --- |
-| [cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) | This group shows the machines on which BitLocker is enabled. |
+| [cPVAL BitLocker Audit](/docs/0360c116-20ea-40ad-a3ab-7c356aba5cbd) | This group shows the BitLocker Audit status of all the machines collected by the script [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592) |
 
 ### Compound Conditions
 
@@ -99,7 +99,7 @@ Create the following automation as described in the documentation:
 
 Create the following group as described in the documentation:
  
-* [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe)
+* [Group - cPVAL BitLocker Audit](/docs/0360c116-20ea-40ad-a3ab-7c356aba5cbd)
 
 ### Step 4
 
