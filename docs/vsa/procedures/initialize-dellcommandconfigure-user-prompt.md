@@ -26,7 +26,7 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 ## Dependencies
 
-[Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
+- [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 
 ## Parameters
 
@@ -36,32 +36,29 @@ For complete documentation on supported arguments, refer to: See [Dell Documenta
 
 ## Implementation
 
-1. Export the agent procedure from ProVal's VSA RMM instance.
-
-![Export](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/12.webp)
+1. Export the agent procedure from ProVal's VSA RMM instance.    
+![Export](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/12.webp)  
 The export will download the necessary XML file.
 
-2. Import this XML file into the partner's VSA RMM instance.
+2. Import this XML file into the partner's VSA RMM instance.  
 ![Import](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/13.webp)
 
 ## Examples
 
-1. Execute it on the machine where its required with the parameter(--AcPwrRcvry on).It will enable the Power on setting automatically after outage only on the Dell Machines.
+1. Execute the script with argument `--AcPwrRcvry on`. This enables the 'Power On after Power Outage' setting
 ![Execute with Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/14.webp)
 
-2. Execute it without parameters, defaults to showing help:
+2. Execute the script without any argument to show help menu  
 ![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/15.webp)
 
-3. Execute it with parameters(--ActivityLed ActLed), It will Sets the Activity LED controlled by an Advanced Configuration and Power Interface (ACPI)operating system and driver.:
+3. Execute the script with argument `--ActivityLed ActLed`. This configures the Network Activity LED to be managed by an Advanced Configuration and Power Interface (ACPI)–compliant operating system and driver.    
 ![Execute without Parameter](../../../static/img/docs/38c0c930-3178-48a0-83d6-410c303b329b/16.webp)
 
 ## Output
 
 - Script Logs
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-log.txt`
-
-- `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-error.txt`
+  - `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-log.txt`
+  - `C:\ProgramData\_automation\AgentProcedure\DellCommandConfigure\Initialize-DellCommandConfigure-error.txt`
 
 ## Changelog
 
