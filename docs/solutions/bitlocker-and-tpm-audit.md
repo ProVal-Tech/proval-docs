@@ -99,7 +99,7 @@ Create the following automation as described in the documentation:
 
 Create the following group as described in the documentation:
  
-* [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) use [How-to Guide URL](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe) while creating group.
+* [Group - cPVAL Bitlocker Audit](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe)
 
 ### Step 4
 
@@ -214,20 +214,18 @@ Create the following compound conditions as described in the documentation:
 
 ### 2026-04-15
 
-Updated the newly created Custom field and Group details in this solution.
-
-Custom Field: cPVAL Audit Encryption Percentage
-Custom Field: cPVAL Audit Encryption Method
-Custom Field: cPVAl Audit Mount Point
-Custom Field: cPVAL Audit Lock Status
-Custom Field: cPVAL Audit Protection Status
-Custom Field: cPVAL Audit Volume Status
-Custom Field: cPVAL Audit TPM Activated
-Custom Field: cPVAL Audit TPM Enabled
-Custom Field: cPVAL Audit TPM Present
-Custom Field: cPVAL Audit TPM Ready
-
-Group - cPVAL Bitlocker Audit
+- Added the below custom fields and group to provide a simplified and consolidated view of BitLocker and TPM details:
+  - Custom Field: cPVAL Audit Encryption Percentage
+  - Custom Field: cPVAL Audit Encryption Method
+  - Custom Field: cPVAl Audit Mount Point
+  - Custom Field: cPVAL Audit Lock Status
+  - Custom Field: cPVAL Audit Protection Status
+  - Custom Field: cPVAL Audit Volume Status
+  - Custom Field: cPVAL Audit TPM Activated
+  - Custom Field: cPVAL Audit TPM Enabled
+  - Custom Field: cPVAL Audit TPM Present
+  - Custom Field: cPVAL Audit TPM Ready
+  - Group - cPVAL Bitlocker Audit
 
 ### 2026-01-08
 
