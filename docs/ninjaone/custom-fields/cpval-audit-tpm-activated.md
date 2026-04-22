@@ -25,7 +25,6 @@ Displays whether the TPM (Trusted Platform Module) is activated on the device. I
 ## Dependencies
 
 - [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
-- [Automation: Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 - [Solution: BitLocker and TPM Audit](/docs/57c787ad-8d22-4ae4-b5e5-dac34fc600fc)
 
 ## Custom Field Creation

@@ -25,7 +25,6 @@ Displays whether the TPM (Trusted Platform Module) is enabled in the system firm
 ## Dependencies
 
 - [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
-- [Automation: Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 - [Solution: BitLocker and TPM Audit](/docs/57c787ad-8d22-4ae4-b5e5-dac34fc600fc)
 
 ## Custom Field Creation
@@ -34,7 +33,7 @@ Displays whether the TPM (Trusted Platform Module) is enabled in the system firm
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923/tmp-enabled.webp)
+![Image1](../../../static/img/docs/20f300a5-65f7-443b-aeeb-16ee9e7dc923/tpm-enabled.webp)
 
 ## Changelog
 

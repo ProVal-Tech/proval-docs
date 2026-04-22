@@ -25,7 +25,6 @@ Displays the encryption method used for BitLocker protection on the selected vol
 ## Dependencies
 
 - [Automation: BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
-- [Automation: Initialize BitLocker](/docs/e3a24552-f347-4117-82f5-7afaaa3fc198)
 - [Solution: BitLocker and TPM Audit](/docs/57c787ad-8d22-4ae4-b5e5-dac34fc600fc)
 
 ## Custom Field Creation
@@ -34,7 +33,7 @@ Displays the encryption method used for BitLocker protection on the selected vol
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/66adc025-26ec-43f9-ae1e-330c422c799c/method.webp)
+![Image1](../../../static/img/docs/66adc025-26ec-43f9-ae1e-330c422c799c/image1.webp)
 
 ## Changelog
 

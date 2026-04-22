@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This group shows the BitLocker Audit status of all the machines collected by the script [         BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
+This group shows the BitLocker Audit status of all the machines collected by the script [BitLocker and TPM Audit](/docs/2d104874-ec69-4d95-b912-7fcd240bf592)
 
 ## Dependencies
 
@@ -38,7 +38,7 @@ This group shows the BitLocker Audit status of all the machines collected by the
 
 ### Group View
 
-Please follow the steps below to add the necessary custom fields or additional columns to the view.
+Please follow the steps below to add the necessary custom fields to the view.
 
 - Create the group and ensure it is saved successfully.
 - Open the newly created group for editing.
@@ -48,7 +48,7 @@ Please follow the steps below to add the necessary custom fields or additional c
 
 ### URL TO THE GUIDE
 
-- [How-to Guide URL](/docs/97dea67a-ad36-4c95-be4a-aa155f3ad1fe)
+- [How-to Guide URL](/docs/71f3f71d-d6d1-4563-8476-92bbe9df55fa)
 
 Add the below custom fields under the Group View:
 

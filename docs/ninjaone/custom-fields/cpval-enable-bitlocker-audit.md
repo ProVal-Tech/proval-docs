@@ -20,7 +20,7 @@ Select the operating system for which BitLocker auditing should be enabled. Use 
 
 | Label | Field Name | Definition Scope | Type | Required | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Enable BitLocker Audit | cpvalEnableBitlockerAudit | `Organizations`,`Devices`,`Location` | Drop-down | `true` | `Windows`, `Windows Servers`, `Windows Workstations`, `Disable` | Editable | Read_Write | Read_Write | Select the operating system for which BitLocker auditing should be enabled. Use this setting to specify the OS where auditing policies will apply. | Choose the OS to enable BitLocker auditing. Select Disable at the location or device level to exclude it from auditing. | Note: If you select Disable at any location or device level, BitLocker auditing will not apply to that scope. | BitLocker |
+| cPVAL Enable BitLocker Audit | cpvalEnableBitlockerAudit | `Organizations`,`Devices`,`Location` | Drop-down | `true` | `Windows`, `Windows Servers`, `Windows Workstations`, `Disable` | Editable | Read_Write | Read_Write | Select the operating system for which BitLocker auditing should be enabled. Use this setting to specify the OS where auditing policies will apply. | Choose the OS to enable BitLocker auditing. Select Disable at the location or device level to exclude it from auditing. | Note: If you select Disable at any location or device level, BitLocker auditing will not apply to that scope. | BitLocker Audit |
 
 ## Dependencies
 
