@@ -19,7 +19,7 @@ This compound conditions executes the script [Windows Updates - Enable or Disabl
 ## Details
 
 - **Name:** `Windows Update UI Settings` 
-- **Description:** `This compound conditions executes the script Windows Updates - Enable or Disable Settings once per day on workstations where the custom field cPVAL Enable Windows Update Management is configured.`
+- **Description:** `This compound conditions executes the script "Windows Updates - Enable or Disable Settings" once per day on workstations where the custom field "cPVAL Enable Windows Update Management" is configured.`
 - **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies

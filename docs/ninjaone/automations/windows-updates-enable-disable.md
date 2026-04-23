@@ -33,7 +33,7 @@ Select the **Button Action** and **Update Notifications Level** options as requi
 | Name | Example | Accepted Values | Required |  Type | Description |
 | ---- | ------- | --------------- | -------- | ---- | ----------- |
 | Button Action | Enable | Enable, Disable | False |   DropDown | Specify whether the 'Check for Updates' button should be accessible to all users of this machine. |
-| Update Notification Level | The default Windows Update notification level |</br>`The default Windows Update notification level`,</br>`Disable all notifications including restart prompt`,</br>`Disable all notifications excluding restart prompt` | False |  DropDown | Specify whether to show or hide all update notifications, including restart warnings. |
+| Update Notification Level | The default Windows Update notification level |<br/>`The default Windows Update notification level`,<br/>`Disable all notifications including restart prompt`,<br/>`Disable all notifications excluding restart prompt` | False |  DropDown | Specify whether to show or hide all update notifications, including restart warnings. |
 
 ## Automation Setup/Import
 
