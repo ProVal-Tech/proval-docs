@@ -9,7 +9,7 @@ tags: ['windows','updates','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-08
+  date: 2026-04-22
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ This Custom field provides the option to "Enable" or "Disable" the Windows Updat
 
 | Label | Field Name | Definition Scope | Type | Required | Option Value | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------ | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Windows Update Button | cpvalWindowsUpdateButton | Organization , Location, Device | DropDown | False  | Enable, Disable |  | Editable | Read/Write | Read/Write | This custom field is used to configure the Windows Updates notification based on the selected options. |  |  |Windows Updates  |
+| cPVAL Windows Update Button | cpvalWindowsUpdateButton | Organization , Location, Device | DropDown | False  | Enable, Disable |  | Editable | Read/Write | Read/Write | This Custom field provides the option to `Enable` or `Disable` the Windows Update (Check for Updates). |This Custom field provides the option to `Enable` or `Disable` the Windows Update (Check for Updates). | This Custom field provides the option to `Enable` or `Disable` the Windows Update (Check for Updates). |Windows Updates  |
 
 ## Dependencies
 
@@ -35,14 +35,8 @@ This Custom field provides the option to "Enable" or "Disable" the Windows Updat
 
 ![Organization/Location level](../../../static/img/docs/134eb999-a5dd-4599-ae1f-4c0082590007/image.webp)
 
-![Device Level](../../../static/img/docs/134eb999-a5dd-4599-ae1f-4c0082590007/image1.webp)
-
 ## Changelog
 
-### 2026-04-16
-
-- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
-
-### 2026-04-08
+### 2026-04-22
 
 - Initial version of the document

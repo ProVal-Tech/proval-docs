@@ -1,15 +1,15 @@
 ---
 id: 'e6260d92-d292-4b89-bd6c-19df1f96939d'
 slug: /e6260d92-d292-4b89-bd6c-19df1f96939d
-title: 'Windows Update UI Settings'
-title_meta: 'Windows Update UI Settings'
+title: 'Windows Update UI Settings - Servers'
+title_meta: 'Windows Update UI Settings - Servers'
 keywords: ['windows','updates','patching']
 description: 'This compound conditions checks for the Windows agent where the `cPVAL Enable Windows Update Management` custom field is set at the `Organization`, `Locations`, or `Device` level.'
 tags: ['windows','updates','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-04-22
 ---
 
 ## Summary
@@ -18,9 +18,9 @@ This compound conditions checks for the Windows agent where the `cPVAL Enable Wi
 
 ## Details
 
-- **Name:*WWindows Updates UI Settings* 
-- **Description:*This compound conditions checks for the Windows agent where the `cPVAL Enable Windows Update Management` custom field is set at the `Organization`, `Locations`, or `Device` level.* 
-- **Recommended Agent Policies:*Windows Server Policy*
+- **Name:** `Windows Update UI Settings` 
+- **Description:** `This compound conditions executes the script "Windows Updates - Enable or Disable Settings" once per day on servers where the custom field "cPVAL Enable Windows Update Management" is configured.`
+- **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 
@@ -33,15 +33,6 @@ This compound conditions checks for the Windows agent where the `cPVAL Enable Wi
 
 ## Changelog
 
-### 2026-04-16
-
-- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
-- Added this new custom field to enable the solution based on the OS selection just like the ignite service plan patching for the Windows workstations, and Windows Servers.
-
-### 2026-04-13
-
-- Audit version created
-
-### 2026-04-08
+### 2026-04-22
 
 - Initial version of the document

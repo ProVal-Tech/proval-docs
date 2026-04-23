@@ -9,18 +9,18 @@ tags: ['windows','updates','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-04-22
 ---
 
 ## Summary
 
-This stores the Windows Update (Check for Updates) notification level state.
+This stores the Windows Update (Check for Updates) notification level state on a device.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Windows Update Notification Setting | cpvalWindowsUpdateNotificationSetting | Device | Text | False  |  | Editable | Read/Write | Read/Write | This stores the Windows Update (Check for Updates) notification level state. |  |  | Windows Updates |
+| cPVAL Windows Update Notification Setting | cpvalWindowsUpdateNotificationSetting | Device | Text | False  |  | Editable | Read/Write | Read/Write | This stores the Windows Update (Check for Updates) notification level state on a device. | This stores the Windows Update (Check for Updates) notification level state on a device.   | This records the current Windows Update “Check for Updates” notification level on the device.  | Windows Updates |
 
 ## Dependencies
 
@@ -29,14 +29,10 @@ This stores the Windows Update (Check for Updates) notification level state.
 
 ## Sample Screenshot
 
-![Device Level](../../../static/img/docs/134eb999-a5dd-4599-ae1f-4c0082590007/image1.webp)
+![Device Level](../../../static/img/docs/96736e81-e157-483b-89e0-449b6c358217/image.webp)
 
 ## Changelog
 
-### 2026-04-16
-
-- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
-
-### 2026-04-08
+### 2026-04-22
 
 - Initial version of the document

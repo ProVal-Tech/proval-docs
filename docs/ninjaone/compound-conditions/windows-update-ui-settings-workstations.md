@@ -1,26 +1,26 @@
 ---
 id: '72550d20-2b73-43c7-982e-7d824ed90fe3'
 slug: /72550d20-2b73-43c7-982e-7d824ed90fe3
-title: 'Windows Update UI Settings'
-title_meta: 'Windows Update UI Settings'
+title: 'Windows Update UI Settings - Workstations'
+title_meta: 'Windows Update UI Settings - Workstations'
 keywords: ['windows','updates','patching']
 description: 'This compound conditions checks for the Windows agent where the `cPVAL Enable Windows Update Management` custom field is set at the `Organization`, `Locations`, or `Device` level.'
 tags: ['windows','updates','patching']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-13
+  date: 2026-04-22
 ---
 
 ## Summary
 
-This compound conditions checks for the Windows agent where the `cPVAL Enable Windows Update Management` custom field is set at the `Organization`, `Locations`, or `Device` level.
+This compound conditions executes the script [Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb) once per day on workstations where the custom field [cPVAL Enable Windows Update Management](/docs/e1a4db82-eea6-4e2b-a687-9fc551d9c884) is configured.
 
 ## Details
 
-- **Name:*WWindows Updates UI Settings* 
-- **Description:*This compound conditions checks for the Windows agent where the `cPVAL Enable Windows Update Management` custom field is set at the `Organization`, `Locations`, or `Device` level.* 
-- **Recommended Agent Policies:*Windows Workstation Policy*
+- **Name:** `Windows Update UI Settings` 
+- **Description:** `This compound conditions executes the script Windows Updates - Enable or Disable Settings once per day on workstations where the custom field cPVAL Enable Windows Update Management is configured.`
+- **Recommended Agent Policies:** `Windows Workstation Policy`
 
 ## Dependencies
 
@@ -33,15 +33,6 @@ This compound conditions checks for the Windows agent where the `cPVAL Enable Wi
 
 ## Changelog
 
-### 2026-04-16
-
-- Removed unnecessary auditing solution, that contains multiple groups, custom fields, and complicated compound conditions.
-- Added this new custom field to enable the solution based on the OS selection just like the ignite service plan patching for the Windows workstations, and Windows Servers.
-
-### 2026-04-13
-
-- Audit version created
-
-### 2026-04-08
+### 2026-04-22
 
 - Initial version of the document
