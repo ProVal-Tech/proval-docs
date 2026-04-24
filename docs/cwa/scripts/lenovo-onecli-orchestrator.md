@@ -29,32 +29,47 @@ Supported Lenovo OneCLI commands can be found at https://pubs.lenovo.com/lxce-on
 
 **Example 1:**
 
-Running the script to return the available updates.   
+Execute the script without any parameter to return the available updates.   
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image1.webp) 
 
-Running the script to Download and immediately apply all updates without any reboot or prompts:  
-**Arguments:** `update flash --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates --noreboot --quiet`  
-**Notes** `--mt`(machines type) and `ostype` varies as per machine.  
+**Example 2:**  
+
+Execute the script with below parameter to download and immediately apply all updates without any reboot or prompts:  
+- **Argument:** `update flash --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates --noreboot --quiet`  
+
+**Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image2.webp) 
 
-Running the script to Download and immediately apply firmware updates without any reboot or prompts:  
-**Arguments:** `update flash --mt 7Z73 --ostype win2022 --scope latest --type fw --dir C:\updates --noreboot --quiet`  
-**Notes** `--mt`(machines type) and `ostype` varies as per machine.  
+**Example 3:**  
+
+Execute the script with below parameter to download and immediately apply firmware updates without any reboot or prompts:  
+- **Argument:** `update flash --mt 7Z73 --ostype win2022 --scope latest --type fw --dir C:\updates --noreboot --quiet`  
+
+**Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image3.webp) 
 
-Running the script to Download and immediately apply driver updates without any reboot or prompts:  
-**Arguments:** `update flash --mt 7Z73 --ostype win2022 --scope latest --type dd --dir C:\updates --noreboot --quiet`  
-**Notes** `--mt`(machines type) and `ostype` varies as per machine.  
+**Example 4:**
+
+Execute the script with below parameter to download and immediately apply driver updates without any reboot or prompts:  
+- **Argument:** `update flash --mt 7Z73 --ostype win2022 --scope latest --type dd --dir C:\updates --noreboot --quiet`  
+
+**Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image4.webp)
 
-Running the script to Download all latest updates:  
-**Arguments:** `update acquire --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates`  
-**Notes** `--mt`(machines type) and `ostype` varies as per machine.  
+**Example 5:**
+
+Execute the script with below parameter to download all latest updates:  
+- **Arguments:** `update acquire --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates`  
+
+**Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image5.webp) 
 
-Running the script to Apply all downloaded updates:  
-**Arguments:** `update flash --dir C:\updates`  
-**Notes** `--mt`(machines type) and `ostype` varies as per machine.  
+**Example 6:**
+
+Execute the script with below parameter to Apply all downloaded updates:  
+- **Arguments:** `update flash --dir C:\updates`  
+
+**Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image6.webp)
 
 ## User Parameters
@@ -69,8 +84,9 @@ Running the script to Apply all downloaded updates:
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| `URL` | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | <ul>URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli)</ul> <b></b> <ul>**Note**: This URL must be changed whenever a new Onecli version is released to keep OneCli up to date.</ul> |
-
+| URL | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli) <br/> <br/>**Note**: This URL must be changed whenever a new Onecli version is released to keep OneCli up to date.</ul> |
+| Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
+| ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
 **Notes:**
 
