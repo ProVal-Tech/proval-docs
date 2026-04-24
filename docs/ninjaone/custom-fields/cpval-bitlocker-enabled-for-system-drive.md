@@ -20,7 +20,7 @@ A boolean flag indicating if the Operating System drive is actively encrypted an
 
 | Label | Field Name | Definition Scope | Type | Required | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL BitLocker Enabled for System Drive | cpvalBitlockerEnabledForSystemDrive | `Devices` | Checkbox | `False` | | Editable | Read_Write | Read_Write | A boolean flag indicating if the Operating System drive is actively encrypted and protected by BitLocker. Useful for conditions and reporting compliance. | Checked (Yes) if the OS Drive is fully protected; Unchecked (No) otherwise. | Read-only. Updated automatically by the BitLocker solution. | BitLocker |
+| cPVAL BitLocker Enabled for System Drive | cpvalBitlockerEnabledForSystemDrive | `Devices` | Checkbox | `False` | | Editable | Read_Write | Read_Write | A boolean flag indicating if the Operating System drive is actively encrypted and protected by BitLocker. Useful for conditions and reporting compliance. | Checked (Yes) if the OS Drive is fully protected; Unchecked (No) otherwise. | Read-only. Updated automatically by the BitLocker solution. | BitLocker Audit |
 
 ## Dependencies
 

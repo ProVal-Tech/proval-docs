@@ -20,7 +20,7 @@ Stores an HTML inventory of BitLocker volumes, including mount points, algorithm
 
 | Label | Field Name | Definition Scope | Type | Required | Available Options | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL BitLocker Info | cpvalBitlockerInfo | `Devices` | WYSIWYG | `False` | | Editable | Read_Write | Read_Write | Stores an HTML inventory of BitLocker volumes, including mount points, algorithms, protection status, and key protector types. Populated automatically by the BitLocker automation script. | Auto-populated HTML table displaying detailed encryption status for all volumes. | Read-only. Data is refreshed by the BitLocker solution. | BitLocker |
+| cPVAL BitLocker Info | cpvalBitlockerInfo | `Devices` | WYSIWYG | `False` | | Editable | Read_Write | Read_Write | Stores an HTML inventory of BitLocker volumes, including mount points, algorithms, protection status, and key protector types. Populated automatically by the BitLocker automation script. | Auto-populated HTML table displaying detailed encryption status for all volumes. | Read-only. Data is refreshed by the BitLocker solution. | BitLocker Audit |
 
 ## Dependencies
 
