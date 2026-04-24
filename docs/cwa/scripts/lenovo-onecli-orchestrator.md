@@ -72,6 +72,12 @@ Execute the script with below parameter to Apply all downloaded updates:
 **Note:** `--mt`(machines type) and `ostype` varies as per machine.  
 ![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image6.webp)
 
+**Example 7:**
+
+Execute the script with `Force = 1` to deploy Lenovo OneCli even if it already exists on the machine.
+
+![Image1](../../../static/img/docs/abe32a62-cd30-469f-80e7-1cf30f33af08/image7.webp)
+
 ## User Parameters
 
 | Name | Required | Example | Description   |
@@ -84,7 +90,7 @@ Execute the script with below parameter to Apply all downloaded updates:
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| URL | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli) <br/> <br/>**Note**: This URL must be changed whenever a new Onecli version is released to keep OneCli up to date.</ul> |
+| URL | True | https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip | URL for the OneCLI ZIP to download. Available from the Lenovo support website (https://support.lenovo.com/solutions/lnvo-tcli) <br/> **Note**: This URL must be changed whenever a new Onecli version is released to keep OneCli up to date.</ul> |
 | Debug | `False` | `False`, `True` | When `True`, enables informational logging; when `False` (default), informational logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 | ScriptEngineEnableLogger | `False` | `False`, `True` | When `True`, enables final (success/failure) logging; when `False` (default), these logs are suppressed to avoid adding entries to the `h_scripts` table. Set to `True` to assist with troubleshooting. |
 
