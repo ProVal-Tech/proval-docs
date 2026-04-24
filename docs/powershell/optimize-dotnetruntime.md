@@ -9,12 +9,12 @@ tags: ['dotnet','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-28
+  date: 2026-04-16
 ---
 
 ## Overview
 
-This script ensures that the system is running the latest supported versions of .NET runtimes and SDKs while removing unsupported versions to maintain a clean and secure environment. It manages the installation, uninstallation, updates, and listing of .NET runtimes and SDKs on a Windows system using official Microsoft release metadata.
+This script keeps your .NET runtimes and SDKs up to date and secure. It automatically installs the latest versions, removes outdated or unsupported versions, and maintains a clean system environment.
 
 ## Requirements
 
@@ -22,121 +22,150 @@ This script ensures that the system is running the latest supported versions of 
 - Administrative Privileges
 - Active Internet Connection (to fetch release metadata and installers)
 
-## Process
+## How It Works
 
-1. **Initialization**
-    - Ensure the script is run with administrative privileges.
-    - Validate PowerShell version (requires version 5 or higher).
-    - Install or update the `Strapper` module for environment setup and logging.
+The script performs these actions:
 
-2. **Parameter Handling**
-    - Accept `Action` and `Type` parameters:
-        - Action: `list`, `install`, `uninstall`, `update`, `renew`.
-        - Type: `sdk`, `runtime`, `desktopRuntime`, `aspNetCoreRuntime`, `all`.
-    - Default values:
-        - `Action`: `list`.
-        - `Type`: `desktopRuntime` (if not specified for install, uninstall, update, or renew).
+1. **Checks your system** for installed .NET components and compares them against Microsoft's official supported versions.
 
-3. **Fetch Supported Versions**
-    - Query the official **[Microsoft release-index.json](https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json)** API.
-    - Dynamically determine the correct download URLs for the system architecture (x64, x86, arm64).
-    - Identify the "Latest Release" and "Latest SDK" for active support channels.
+2. **Lists components** - Shows what's installed and whether each version is still supported or outdated.
 
-4. **List Installed Components**
-    - Use `dotnet --list-runtimes` and `dotnet --list-sdks` to identify installed components.
-    - Categorize components into standard types (`sdk`, `runtime`, `desktopRuntime`, `aspNetCoreRuntime`).
-    - Compare installed versions against the JSON metadata to determine support status.
+3. **Installs updates** - Downloads and installs the latest versions of .NET runtimes and SDKs you specify.
 
-5. **Perform Actions Based on Action Parameter**
-    - `list`:
-        - Display installed .NET components filtered by Type, showing support and update status.
-    - `install`:
-        - Download and install the absolute latest supported version of specified components.
-        - Skip installation if the latest version is already installed.
-    - `update`:
-        - Identify installed supported major versions.
-        - Install the latest patch for that major version.
-        - Remove superseded/older patch versions of the **same** major version to save space.
-    - `uninstall`:
-        - Remove End-of-Life (EOL) or unsupported versions using the **.NET Core Uninstall Tool** (automatically downloaded if missing).
-    - `renew`:
-        - Aggressive maintenance strategy:
-        - Install the latest supported versions.
-        - Remove **ALL** older or unsupported versions.
+4. **Removes outdated versions** - Cleans up unsupported or older patch versions to save disk space and improve security.
 
-6. **Error Handling and Logging**
-    - Log all actions, including successes, failures, and skipped operations using `Write-Log`.
-    - Handle errors gracefully (e.g., download failures, installer exit codes).
+5. **Logs results** - Records all actions so you can verify what was done.
 
-7. **Clean Up**
-    - Ensure temporary files (installers, uninstall tools) in `ProgramData` are managed appropriately.
+**By default**, the script uses these settings:
 
-## Payload Usage
+- **Action**: List installed components
+- **Type**: Desktop Runtime
+- **Version**: All applicable versions
 
-**To List all installed .NET runtimes and SDKs**
+You can customize these using the parameters described below.
+
+## How to Use This Script
+
+**View all installed .NET components and their support status:**
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action list
-
 ```
 
-**To List only installed .NET SDKs**
+**View only .NET SDKs:**
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action list -Type sdk
-
 ```
 
-**To Install the latest supported versions of all .NET components**
+**Install the latest versions of all .NET components:**
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action install -Type all
-
 ```
 
-**To Update SDKs (Install new patch, remove old patches for installed supported versions)**
+**Update SDKs to the latest patch version:**
+
+Installs the newest patch and removes older versions of the same SDK to save space.
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action update -Type sdk
-
 ```
 
-**To Uninstall unsupported versions of ASP.NET Core runtimes**
+**Remove unsupported ASP.NET Core versions:**
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action uninstall -Type aspNetCoreRuntime
-
 ```
 
-**To Remove all unsupported/old versions and install ONLY the latest available version**
+**Perform a full cleanup: remove all old versions and install only the latest:**
+
+Use this to get a completely clean and up-to-date .NET environment.
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action renew -Type all
-
 ```
 
-**To Install the latest .NET Desktop Runtime (Default Type)**
+**Install the latest .NET Desktop Runtime *(default)*:**
 
 ```powershell
 .\Optimize-DotNetRunTime.ps1 -Action install
+```
 
+**Install a specific version of .NET (e.g., .NET 10):**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action install -Type desktopRuntime -Version 10
+```
+
+**Install multiple specific versions at once:**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action install -Type desktopRuntime -Version 8, 10
+```
+
+**Update only .NET 8 to its latest patch:**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action update -Type desktopRuntime -Version 8
+```
+
+**Update multiple specific versions to their latest patches:**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action update -Type all -Version 6, 7, 8, 9
+```
+
+**Remove specific versions of .NET:**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action uninstall -Type all -Version 6, 9
+```
+
+**Keep only specific versions and remove everything else:**
+
+Useful when you need only .NET 8 and 9 and want to clean up all others.
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action renew -Type all -Version 8, 9
+```
+
+**View only specific versions (e.g., .NET 8 and 9):**
+
+```powershell
+.\Optimize-DotNetRunTime.ps1 -Action list -Version 8, 9
 ```
 
 ## Parameters
 
 | Parameter | Alias | Required | Default | Type | Description |
 | --- | --- | --- | --- | --- | --- |
-| `Action` |  | False | List | String | Specifies the action to perform. Valid values are: <br /><br /> - `list`: Lists installed components and support status. <br /><br /> - `install`: Installs the latest supported versions. <br /><br /> - `uninstall`: Uninstalls unsupported versions. <br /><br /> - `update`: Updates to latest patch and removes superseded patches for the installed supported versions. <br /><br /> - `renew`: Removes ALL old/unsupported versions and installs the latest. |
-| `Type` |  | False | desktopRuntime | String | Specifies the type of .NET component to manage. Valid values are: <br /><br /> - `sdk`: Manages .NET SDKs. <br /><br /> - `runtime`: Manages .NET runtimes. <br /><br /> - `desktopRuntime`: Manages .NET desktop runtimes. <br /><br /> - `aspNetCoreRuntime`: Manages ASP.NET Core runtimes. <br /><br /> - `all`: Manages all .NET components. |
+| `Action` |  | False | List | String | What you want the script to do: <br /><br /> - `list`: View all installed .NET components and support status. <br /><br /> - `install`: Install the latest versions. <br /><br /> - `uninstall`: Remove specific versions. <br /><br /> - `update`: Update to latest patches and remove old patches. <br /><br /> - `renew`: Clean everything up, install latest and remove everything else. |
+| `Type` |  | False | desktopRuntime | String[] | Which .NET component(s) to work with: <br /><br /> - `sdk`: .NET SDKs (for developers). <br /><br /> - `runtime`: General .NET runtimes. <br /><br /> - `desktopRuntime`: Desktop app runtimes (default). <br /><br /> - `aspNetCoreRuntime`: Web server runtimes. <br /><br /> - `all`: Everything listed above. |
+| `Version` |  | False | *(not set)* | Int[] | (Optional) Limit the action to specific .NET versions by major version number (e.g., `8`, `9`, or `8, 9, 10`). When you don't specify this, the script applies its default behavior for each action. See the tips table below for details. |
+
+### Tips for `-Version` Behavior
+
+| Action | Without `-Version` | With `-Version` (e.g., `-Version 8, 9`) |
+| --- | --- | --- |
+| `list` | Shows all installed .NET components | Shows only versions 8 and 9 |
+| `install` | Installs the latest supported version | Installs specific versions you choose |
+| `update` | Updates only versions that are still supported | Updates the versions you specify |
+| `uninstall` | Removes only outdated/unsupported versions | Removes exactly the versions you specify |
+| `renew` | Full cleanup: latest versions + remove all others | Keeps only what you specify, removes everything else |
 
 ## Output
 
 The script generates the following output files (via Strapper logs):
 
-* `.\Optimize-DotNetRunTime-log.txt`
-* `.\Optimize-DotNetRunTime-Error.txt`
+- `.\Optimize-DotNetRunTime-log.txt`
+- `.\Optimize-DotNetRunTime-Error.txt`
 
 ## Changelog
+
+### 2026-04-16
+
+- Introduced the `Version` parameter.
 
 ### 2025-05-09
 
