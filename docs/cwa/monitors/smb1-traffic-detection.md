@@ -34,8 +34,9 @@ Insert the details of the monitor in the table below.
 
 ## Dependencies
 
-- [CWM - Automate - Script - Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)
-- [EPM - Windows Configuration - Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Script - Ticket Creation - Computer [Failures Only]](/docs/e14bf501-f10d-44d7-a19a-2284fd5c5cc9)
+- [Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Solution - SMBv1 Audit/Autofix ](/docs/343654e4-9263-4fec-87c1-3c3401a94e95)
 
 ## Target
 
