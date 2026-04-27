@@ -9,7 +9,7 @@ tags: ['custom-fields', 'macos', 'accounts']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-17
+  date: 2026-04-27
 ---
 
 ## Overview
@@ -28,7 +28,7 @@ It excludes the default root account and hidden system users, so you get a clean
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-macos-administrator-accounts.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/get-macos-administrator-accounts.sh)
 
 ## Output
 
@@ -37,6 +37,6 @@ It excludes the default root account and hidden system users, so you get a clean
 
 ## Changelog
 
-### 2026-04-17
+### 2026-04-27
 
 - Initial version of the document.

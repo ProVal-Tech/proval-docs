@@ -9,7 +9,7 @@ tags: ['custom-fields', 'macos', 'accounts']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-17
+  date: 2026-04-27
 ---
 
 ## Summary
@@ -36,6 +36,6 @@ This field stores a comma-separated list of local administrator accounts on this
 
 ## Changelog
 
-### 2026-04-17
+### 2026-04-27
 
 - Initial version of the document.
