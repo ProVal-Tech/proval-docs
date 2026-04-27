@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Select this to exclude site/endpoint from receiving all updates related to Dell, HP, Lenovo and Windows on windows workstations. This is a part of `Install All Updates` solution.
+Select this to exclude site/endpoint from receiving all updates related to Dell, HP, Lenovo and Windows on windows workstations. This is a part of [Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150) solution.
 
 ## Details
 
@@ -21,6 +21,10 @@ Select this to exclude site/endpoint from receiving all updates related to Dell,
 |----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
 | Disable All Updates| Site | Checkbox | No |  Yes   | Select this to exclude site from receiving all updates related to Dell, HP, Lenovo and Windows on windows workstations. This is a part of `Install All Updates` solution. |
 | Disable All Updates| Endpoint | Checkbox | No |  Yes   | Select this to exclude Endpoint from receiving all updates related to Dell, HP, Lenovo and Windows. This is a part of `Install All Updates` solution. |
+
+## Dependencies
+
+- [Solution - Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
 
 ## Creation Process
 
@@ -38,7 +42,11 @@ The `Add new custom field` dialog box will occur
 
 ## Completed Custom Field
 
+**Site:**  
+
 ![Complete Custom field](../../../static/img/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c/image1.webp)
+
+**Endpoint:**
 
 ![Complete Custom field](../../../static/img/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c/image2.webp)
 

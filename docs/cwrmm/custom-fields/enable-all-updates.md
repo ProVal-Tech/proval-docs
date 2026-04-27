@@ -13,13 +13,17 @@ last_update:
 ---
 
 ## Summary
-Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of `Install All Updates` solution.
+Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of [Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150) solution.
 
 ## Details
 
 | Name                 | Level                | Type                | Default       | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
-| Enable All Updates | Company | Checkbox | No |  Yes  | Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of `Install All Updates` solution. |
+| Enable All Updates | Company | Checkbox | No |  Yes  | Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of "Install All Updates" solution. |
+
+## Dependencies
+
+- [Solution - Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
 
 ## Creation Process
 

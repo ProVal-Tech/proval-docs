@@ -1,8 +1,8 @@
 ---
 id: '2a22ec92-5192-44be-989f-9d7467b36a74'
 slug: /2a22ec92-5192-44be-989f-9d7467b36a74
-title: 'Install Updates - Dell,HP,Lenovo,Windows'
-title_meta: 'Install Updates - Dell,HP,Lenovo,Windows'
+title: 'Install Updates - Dell, HP, Lenovo, Windows'
+title_meta: 'Install Updates - Dell, HP, Lenovo, Windows'
 keywords: ['vendor-specific','windows','patching','updates','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
 description: 'This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.'
 tags: ['windows','patching','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
@@ -19,7 +19,6 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
 
 #### Example 1
 
-- Leave all parameters blank to install windows driver updates on machines.
 - Leave all parameters blank to install windows driver updates on machines.
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image15.webp)
 
@@ -45,11 +44,11 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
 | Dell | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to enable updates on dell machines. |
-| Dell_Update_Type | <ul><li>Scan</li><li>All</li><li>bios,firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Dell machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Dell parameter is selected.**  |
+| Dell_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,Firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Dell machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Dell parameter is selected.**  |
 | HP | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to enable updates on HP machines. |
-| HP_Update_Type | <ul><li>Scan</li><li>All</li><li>bios,firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the HP machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic script - Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if HP parameter is selected.**  |
+| HP_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the HP machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic script - Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if HP parameter is selected.**  |
 | Lenovo | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes to enable updates on Lenovo machines. |
-| Lenovo_Update_Type | <ul><li>Scan</li><li>All</li><li>bios,firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Lenovo machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic Script - Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Lenovo parameter is selected.**  |
+| Lenovo_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,Firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Lenovo machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic Script - Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Lenovo parameter is selected.**  |
 | Windows_Update_Type | <ul><li>All</li><li>Critical Updates,drivers,tools</li></ul> | <ul><li>All</li><li>Critical Updates</li><li>Security Updates</li><li>Update Rollups</li><li>Feature Packs</li><li>Service Packs</li><li>Definition Updates</li><li>Drivers</li><li>Tools</li><li>Updates</li></ul> | False |  | Text | Define the type of windows update to install. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `Critical Updates,drivers,tools`. It runs the [Agnostic Script - Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd) for installing the updates. **If left blank, it will install windows driver updates on the machine.**  |
 | Reboot | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to reboot the machine after installing the updates. It applies to all Dell, HP, Lenovo and windows updates. |
 
@@ -76,9 +75,9 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-**Name:** `Install Updates - Dell,HP,Lenovo,Windows`  
-**Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
-**Category:** `Custom`
+- **Name:** `Install Updates - Dell,HP,Lenovo,Windows`  
+- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image1.webp)
 
@@ -493,9 +492,9 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Task Details
 
-**Name:** `Install Updates - Dell,HP,Lenovo,Windows`  
-**Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
-**Category:** `Custom`
+- **Name:** `Install Updates - Dell, HP, Lenovo, Windows`  
+- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
+- **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image1.webp)
 

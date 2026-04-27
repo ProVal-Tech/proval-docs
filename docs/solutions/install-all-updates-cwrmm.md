@@ -20,34 +20,34 @@ This solution provides a simple, centralized way to install updates for Dell, HP
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [ Custom Field : Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)  | Custom Field  | Controls solution deployment across different clients. |
-| [ Custom Field : Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)  | Custom Field  | Controls solution exclusion across Sites/Endpoints. |
-| [ Group : Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Group | Includes Windows workstations that have been opted for the solution. |
-| [ Script : Install Updates - Dell,HP,Lenovo,Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Script | Installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. |
+| [Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)  | Custom Field  | Controls solution deployment across different clients. |
+| [Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)  | Custom Field  | Controls solution exclusion across Sites/Endpoints. |
+| [Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Group | Includes Windows workstations that have been opted for the solution. |
+| [Install Updates - Dell, HP, Lenovo, Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Script | Installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. |
 
 ## Implementation
 
 - Create the below Custom Fields using the implementation instruction provided in the documents.
-  - [ Custom Field : Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)
-  - [ Custom Field : Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)
-- Create [ Group : Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
-- Create [ Script : Install Updates - Dell,HP,Lenovo,Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
+  - [Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)
+  - [Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)
+- Create [ Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
+- Create [Install Updates - Dell, HP, Lenovo, Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
 
 ## FAQ
 
-### What is the Default behaviour of the script
+### What is the Default behaviour of the script?
 
 > If no parameters are selected when running the script, it will install Windows driver updates by default.
 
-### Does Script works for multiple OEM simultaneously
+### Does Script works for multiple OEM simultaneously?
 
 > Yes, the script supports multiple OEMs at the same time. You can choose different update types for each OEM, such as all updates for Dell machines, BIOS and firmware updates for HP machines, and driver updates for Lenovo machines. You can also select the type of Windows updates separately.
 
-### Does windows updates will work if any OEM update is selected for a machine.
+### Does windows updates will work if any OEM update is selected for a machine?
 
 > No, if an OEM update is selected, the script will not run Windows updates. It will only perform the selected OEM updates.
 
-### what is default behaviour for an OEM update if update type is not selected
+### what is default behaviour for an OEM update if update type is not selected?
 
 > If no update type is specified for an OEM, the script will perform driver updates by default.
 
