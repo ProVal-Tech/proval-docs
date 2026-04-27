@@ -97,12 +97,12 @@ Run with custom OneCLI arguments:
 
 - Download and immediately apply all updates:
 ``` powershell
-    .\Invoke-LenovoOneCLI.ps1 -URL 'https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip' -Argument 'update --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates'
+    .\Invoke-LenovoOneCLI.ps1 -URL 'https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip' -Argument 'update flash --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates'
 ```
 
 - With no reboot prompt (useful for scripting):
 ``` powershell
-    .\Invoke-LenovoOneCLI.ps1 -URL 'https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip' -Argument 'update --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates --noreboot'
+    .\Invoke-LenovoOneCLI.ps1 -URL 'https://download.lenovo.com/servers/mig/2025/11/10/63602/lnvgy_utl_lxce_onecli01s-5.4.0_windows_indiv.zip' -Argument 'update flash --mt 7Z73 --ostype win2022 --scope latest --dir C:\updates --noreboot'
 ```
 
 **Notes:**
