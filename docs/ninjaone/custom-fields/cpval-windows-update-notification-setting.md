@@ -27,6 +27,10 @@ This stores the Windows Update (Check for Updates) notification level state on a
 - [Script - Windows Updates - Enable or Disable Settings](/docs/c988cacf-1964-4c9b-8a9f-bb6b43c283cb)
 - [Solution - Windows Update UI Enable-Disable](/docs/a6da0735-ac80-40f8-8ad3-375ffa8d0e93)
 
+## Custom Field Creation
+
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-windows-update-notification-setting.toml)
+
 ## Sample Screenshot
 
 ![Device Level](../../../static/img/docs/96736e81-e157-483b-89e0-449b6c358217/image.webp)

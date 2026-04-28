@@ -92,6 +92,10 @@ Exclusions can be set in the following locations:
 
 ## Changelog
 
+### 2026-04-28
+
+- Fixed an issue where the "Token" user parameter was not replacing the variable in the script when passed with any value.
+
 ### 2025-04-10
 
 - Initial version of the document
