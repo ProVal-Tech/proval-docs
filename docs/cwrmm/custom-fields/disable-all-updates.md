@@ -24,7 +24,7 @@ Select this to exclude site/endpoint from receiving all updates related to Dell,
 
 ## Dependencies
 
-- [Solution - Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
+- [Solution - Unified System Update Orchestrator](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
 
 ## Creation Process
 

@@ -1,8 +1,8 @@
 ---
 id: 'ec240162-384b-4cf1-b111-090b55838dc6'
 slug: /ec240162-384b-4cf1-b111-090b55838dc6
-title: 'Enable All Updates'
-title_meta: 'Enable All Updates'
+title: 'Enable Unified Update Manager'
+title_meta: 'Enable Unified Update Manager'
 keywords: ['vendor-specific','windows','patching','updates','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
 description: 'Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations.'
 tags: ['windows','patching','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
@@ -19,11 +19,11 @@ Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients
 
 | Name                 | Level                | Type                | Default       | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
-| Enable All Updates | Company | Checkbox | No |  Yes  | Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of "Install All Updates" solution. |
+| Enable Unified Update Manager | Company | Checkbox | No |  Yes  | Select this to deploy updates related to Dell, HP, Lenovo and Windows on clients windows workstations. This is a part of `Unified System Update Orchestrator` solution.  |
 
 ## Dependencies
 
-- [Solution - Install All Updates](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
+- [Solution - Unified System Update Orchestrator](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
 
 ## Creation Process
 

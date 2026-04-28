@@ -1,8 +1,8 @@
 ---
 id: '84a1de4d-0f17-407a-8c98-7ffc76e1d150'
 slug: /84a1de4d-0f17-407a-8c98-7ffc76e1d150
-title: 'Install All Updates'
-title_meta: 'Install All Updates'
+title: 'Unified System Update Orchestrator'
+title_meta: 'Unified System Update Orchestrator'
 keywords: ['vendor-specific','windows','patching','updates','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
 description: 'This solution provides a simple, centralized way to install updates for Dell, HP, Lenovo, and Windows systems. It lets users, choose what updates to run using parameters, making the process flexible and consistent. By handling everything in one place, it simplifies maintenance and helps to keep devices up to date.'
 tags: ['windows','patching','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
@@ -34,10 +34,6 @@ This solution provides a simple, centralized way to install updates for Dell, HP
 - Create [Install Updates - Dell, HP, Lenovo, Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
 
 ## FAQ
-
-### What is the Default behaviour of the script?
-
-> If no parameters are selected when running the script, it will install Windows driver updates by default.
 
 ### Does Script works for multiple OEM simultaneously?
 

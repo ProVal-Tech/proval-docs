@@ -1,8 +1,8 @@
 ---
 id: '2a22ec92-5192-44be-989f-9d7467b36a74'
 slug: /2a22ec92-5192-44be-989f-9d7467b36a74
-title: 'Install Updates - Dell, HP, Lenovo, Windows'
-title_meta: 'Install Updates - Dell, HP, Lenovo, Windows'
+title: 'Unified Update Manager'
+title_meta: 'Unified Update Manager'
 keywords: ['vendor-specific','windows','patching','updates','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
 description: 'This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.'
 tags: ['windows','patching','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
@@ -13,7 +13,10 @@ last_update:
 ---
 
 ## Summary
-This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.
+
+This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts 'Initialize-DellCommandUpdate', 'Initialize-HPImageAssistant', 'Install-LenovoUpdates' and 'Install-WindowsUpdates' for updates.
+
+**Note** : If Dell is selected for a dell machine, script will only execute dell updates and not windows updates. Same goes for HP and lenovo.
 
 ## Sample Run
 
@@ -39,6 +42,8 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
 
 ## Dependencies
 
+- [Solution - Unified System Update Orchestrator](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
+
 ## User Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
@@ -47,12 +52,11 @@ This script installs updates for Dell, HP, Lenovo, and Windows based on the para
 | Dell_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,Firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Dell machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Dell parameter is selected.**  |
 | HP | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to enable updates on HP machines. |
 | HP_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the HP machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic script - Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if HP parameter is selected.**  |
-| Lenovo | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes to enable updates on Lenovo machines. |
+| Lenovo | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to enable updates on Lenovo machines. |
 | Lenovo_Update_Type | <ul><li>Scan</li><li>All</li><li>Bios,Firmware</li></ul> | <ul><li>Scan</li><li>All</li><li>Bios</li><li>Firmware</li><li>Driver</li><li>Application</li></ul> | False |  | Text | Define the type of update to install on the Lenovo machine. Setting it to `Scan` will scan the updates. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `bios,firmware,application`. It runs the [Agnostic Script - Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978) for installing the updates. **If left blank, it will install driver updates on the machine. It will only work if Lenovo parameter is selected.**  |
+| Windows_Update | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to enable windows updates on machines. |
 | Windows_Update_Type | <ul><li>All</li><li>Critical Updates,drivers,tools</li></ul> | <ul><li>All</li><li>Critical Updates</li><li>Security Updates</li><li>Update Rollups</li><li>Feature Packs</li><li>Service Packs</li><li>Definition Updates</li><li>Drivers</li><li>Tools</li><li>Updates</li></ul> | False |  | Text | Define the type of windows update to install. `All` will install all the updates. Define multiple updates by separating them with a comma i.e `Critical Updates,drivers,tools`. It runs the [Agnostic Script - Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd) for installing the updates. **If left blank, it will install windows driver updates on the machine.**  |
 | Reboot | <ul><li>Yes</li></ul> | <ul><li>Yes</li><li>No</li></ul> | False |  | Flag | Set it to `Yes` to reboot the machine after installing the updates. It applies to all Dell, HP, Lenovo and windows updates. |
-
-**Note** : If Dell is selected for a dell machine, script will only execute dell updates and not windows updates. Same goes for HP and lenovo
 
 ## Task Creation
 
@@ -75,8 +79,8 @@ The `New Script` page will appear on clicking the `Script Editor` button:
 
 Fill in the following details in the `Description` section:  
 
-- **Name:** `Install Updates - Dell,HP,Lenovo,Windows`  
-- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
+- **Name:** `Unified Update Manager`  
+- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts 'Initialize-DellCommandUpdate', 'Initialize-HPImageAssistant', 'Install-LenovoUpdates' and 'Install-WindowsUpdates' for updates.`  
 - **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image1.webp)
@@ -138,6 +142,7 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image6.webp)
 
+
 #### Lenovo_Update_Type
 
 Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
@@ -147,6 +152,16 @@ Add a new parameter by clicking the `Add Parameter` button present at the top-ri
 - Click the `Save` button.  
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image7.webp)
+
+#### Windows_Update
+
+Add a new parameter by clicking the `Add Parameter` button present at the top-right corner of the screen.  
+
+- Set `Windows_Update` in the `Parameter Name` field.  
+- Select `Flag` from the `Parameter Type` dropdown menu.  
+- Click the `Save` button. 
+
+![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image11.webp)
 
 #### Windows_Update_Type
 
@@ -197,6 +212,7 @@ $Reboot = '@Reboot@'
 $Dell_Update_Type = '@Dell_Update_Type@'
 $HP_Update_Type = '@HP_Update_Type@'
 $Lenovo_Update_Type = '@Lenovo_Update_Type@'
+$Windows_Update = '@Windows_Update@'
 $windows_Update_Type = "@windows_Update_Type@"
 
 $manufacturer = (Get-CimInstance Win32_ComputerSystem).Manufacturer
@@ -226,6 +242,12 @@ $ProjectName = switch -Regex ($manufacturer) {
         }
     }
     default { 'Install-WindowsUpdates' }
+}
+
+$IsWindowsUpdateEnabled = $Windows_Update -match '^(1|Yes|True|Y)$'
+
+if (($ProjectName -eq 'Install-WindowsUpdates') -and (-not $IsWindowsUpdateEnabled)) {
+    return 'No update option selected.'
 }
 
 switch ($ProjectName) {
@@ -492,8 +514,8 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Task Details
 
-- **Name:** `Install Updates - Dell, HP, Lenovo, Windows`  
-- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.`  
+- **Name:** `Unified Update Manager`
+- **Description:** `This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts 'Initialize-DellCommandUpdate', 'Initialize-HPImageAssistant', 'Install-LenovoUpdates' and 'Install-WindowsUpdates' for updates.`  
 - **Category:** `Custom`
 
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image1.webp)
@@ -522,7 +544,7 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ### Completed Scheduled Task
 
-![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image14.webp)
+![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image15.webp)
 
 ## Changelog
 
