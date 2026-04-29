@@ -9,7 +9,7 @@ tags: ['windows','patching','application','installation','software','dell','leno
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-21
+  date: 2026-04-29
 ---
 
 ## Purpose
@@ -20,18 +20,18 @@ This solution provides a simple, centralized way to install updates for Dell, HP
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)  | Custom Field  | Controls solution deployment across different clients. |
+| [Enable Unified Update Manager](/docs/ec240162-384b-4cf1-b111-090b55838dc6)  | Custom Field  | Controls solution deployment across different clients. |
 | [Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)  | Custom Field  | Controls solution exclusion across Sites/Endpoints. |
 | [Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Group | Includes Windows workstations that have been opted for the solution. |
-| [Install Updates - Dell, HP, Lenovo, Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Script | Installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. |
+| [Unified Update Manager](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341)  | Script | Installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. |
 
 ## Implementation
 
 - Create the below Custom Fields using the implementation instruction provided in the documents.
-  - [Enable All Updates](/docs/ec240162-384b-4cf1-b111-090b55838dc6)
+  - [Enable Unified Update Manager](/docs/ec240162-384b-4cf1-b111-090b55838dc6)
   - [Disable All Updates](/docs/5ee16bfb-503e-40e9-a037-868afbc17f0c)
 - Create [ Deploy All Updates](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
-- Create [Install Updates - Dell, HP, Lenovo, Windows](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
+- Create [Unified Update Manager](/docs/f5a97ff3-ac6c-4d50-a826-5fcfa40cb341) using the implementation instruction provided in the documents.
 
 ## FAQ
 
@@ -54,6 +54,6 @@ This solution provides a simple, centralized way to install updates for Dell, HP
 
 ## Changelog
 
-### 2026-04-21
+### 2026-04-29
 
 - Initial version of the document

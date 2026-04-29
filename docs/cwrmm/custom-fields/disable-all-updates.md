@@ -9,7 +9,7 @@ tags: ['windows','patching','application','installation','software','dell','leno
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-21
+  date: 2026-04-29
 ---
 
 ## Summary
@@ -20,7 +20,7 @@ Select this to exclude site/endpoint from receiving all updates related to Dell,
 | Name                 | Level                | Type                | Default       | Editable | Description                              |
 |----------------------|----------------------|---------------------|------------------|----------|------------------------------------------|
 | Disable All Updates| Site | Checkbox | No |  Yes   | Select this to exclude site from receiving all updates related to Dell, HP, Lenovo and Windows on windows workstations. This is a part of `Install All Updates` solution. |
-| Disable All Updates| Endpoint | Checkbox | No |  Yes   | Select this to exclude Endpoint from receiving all updates related to Dell, HP, Lenovo and Windows. This is a part of `Install All Updates` solution. |
+| Disable All Updates| Endpoint | Checkbox | No |  Yes   | Select this to exclude Endpoint from receiving all updates related to Dell, HP, Lenovo and Windows. This is a part of `Unified System Update Orchestrator` solution. |
 
 ## Dependencies
 
@@ -52,6 +52,6 @@ The `Add new custom field` dialog box will occur
 
 ## Changelog
 
-### 2026-04-21
+### 2026-04-29
 
 - Initial version of the document

@@ -4,45 +4,67 @@ slug: /2a22ec92-5192-44be-989f-9d7467b36a74
 title: 'Unified Update Manager'
 title_meta: 'Unified Update Manager'
 keywords: ['vendor-specific','windows','patching','updates','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
-description: 'This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. If no options are specified, it defaults to installing Windows driver updates.'
+description: 'This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts Initialize-DellCommandUpdate, Initialize-HPImageAssistant, Install-LenovoUpdates and Install-WindowsUpdates for updates.'
 tags: ['windows','patching','application','installation','software','dell','lenovo','hp','drivers','bios','firmware']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-21
+  date: 2026-04-29
 ---
 
 ## Summary
 
-This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts 'Initialize-DellCommandUpdate', 'Initialize-HPImageAssistant', 'Install-LenovoUpdates' and 'Install-WindowsUpdates' for updates.
+This script installs updates for Dell, HP, Lenovo, and Windows based on the parameters selected. It uses agnostic scripts [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f), [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff), [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978) and [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd) for updates.
 
-**Note** : If Dell is selected for a dell machine, script will only execute dell updates and not windows updates. Same goes for HP and lenovo.
+**Note** : 
+
+- If no parameter is set, the script will not install any updates
+- The script is designed to handle a single update source at a time, either Dell, Lenovo, HP, or Windows Update.  
+- If Dell is selected for a dell machine, script will only execute dell updates and not windows updates. Same goes for HP and lenovo.
 
 ## Sample Run
 
 #### Example 1
 
-- Leave all parameters blank to install windows driver updates on machines.
-![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image15.webp)
+- Set the below parameters to install Driver updates on Lenovo machines and to not reboot the machine after updates. 
+    - `Lenovo` to `Yes`
+    - `Lenovo_Update_Type` to `Driver`
+    - `Reboot` to `Yes`   
+![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image14.webp)
 
 #### Example 2 
 
-- Set `Windows_Update_Type` to `ALL` to install all types of windows updates and `Reboot` to `Yes` to immediately reboot the machine after windows updates.
+- Set below parameters to install all types of windows updates and immediately reboot the machine after windows updates.  
+    - `Windows_Update` to `Yes`
+    - `Windows_Update_Type` to `ALL`
+    - `Reboot` to `Yes`   
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image16.webp)
 
 #### Example 3
 
-- Set `Dell` to `Yes` and`Dell_Update_Type` to `All` to install all types of Dell updates on Dell machines and `Reboot` to `No` to not reboot the machine after updates.
+- Set the below parameters to install all types of Dell updates on Dell machines and to not reboot the machine after updates. 
+    - `Dell` to `Yes`
+    - `Dell_Update_Type` to `All`
+    - `Reboot` to `No`  
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image17.webp)
 
 #### Example 4
 
-- Set `Dell` to `Yes` and `Dell_Update_Type` to `All` to install all types of Dell updates on Dell machines. Set `HP` to `Yes` and  `HP_Update_Type` to `Bios,Firmware` to install just bios and firmware updates on HP machines and `Reboot` to `No` to not reboot the machine after updates.
+- Set the below parameters to install all types of Dell updates on Dell machines and to install just bios and firmware updates on HP machines without rebooting the machine after updates. This combination can be used to schedule the script on a group where HP and Dell machine are available.
+    - `Dell` to `Yes`
+    - `Dell_Update_Type` to `All`
+    - `HP` to `Yes`
+    - `HP_Update_Type` to `Bios,Firmware` 
+    - `Reboot` to `No`   
 ![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image18.webp)
 
 ## Dependencies
 
 - [Solution - Unified System Update Orchestrator](/docs/84a1de4d-0f17-407a-8c98-7ffc76e1d150)
+- [Agnostic - Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
+- [Agnostic - Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
+- [Agnostic - Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
+- [Agnostic - Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
 
 ## User Parameters
 
@@ -478,7 +500,7 @@ if ((Test-Path -Path $errorLogPath)) {
 
 ```
 
-![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image11.webp)
+![Image](../../../static/img/docs/2a22ec92-5192-44be-989f-9d7467b36a74/image19.webp)
 
 ### Row 2 Function: Script Log
 
@@ -548,6 +570,6 @@ Click the `Save` button at the top-right corner of the screen to save the script
 
 ## Changelog
 
-### 2026-04-21
+### 2026-04-29
 
 - Initial version of the document
