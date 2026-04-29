@@ -7,7 +7,7 @@ keywords: ['smb1', 'monitor', 'server', 'auditing', 'event', 'logs']
 description: 'This document outlines the SMB1 Server Auditing Remote Monitor, which activates auditing for SMB1 connections and reviews event logs for client connection attempts. It serves to identify environments still using the SMB1 protocol before disabling it.'
 tags: ['logging', 'networking', 'security']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-05-07
 ---
@@ -56,6 +56,10 @@ Details: `
 [Implement - Remote Monitor - SMB1 Traffic Detection](/docs/e6d09f37-fd0f-42a6-98a5-449f65673296)
 
 ## Changelog
+
+### 2026-04-29
+
+- Deprecating as we are creating these monitors using [SMB1 Traffic Detection Monitor Creation](/docs/ad0cedcb-352c-48d3-a1b6-a0ddb623b2b9) 
 
 ### 2025-04-10
 
