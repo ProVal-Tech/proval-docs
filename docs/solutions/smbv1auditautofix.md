@@ -9,7 +9,7 @@ tags: ['ticketing', 'vulnerability', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-15
+  date: 2026-04-29
 ---
 
 ## Purpose
@@ -109,7 +109,7 @@ Note: This should only be implemented if the consultant approves it.
 
 ## Changelog
 
-### 2026-04-15
+### 2026-04-29
 
 - Added the missing component [Script - Disable SMB1 ](/docs/70c7fa58-20bf-47b1-bbeb-aae491390406) to the document.
 
