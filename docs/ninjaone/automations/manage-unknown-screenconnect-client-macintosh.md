@@ -9,7 +9,7 @@ tags: ['alerting', 'auditing', 'monitoring', 'security', 'screenconnect']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-09
+  date: 2026-04-24
 ---
 
 ## Overview
@@ -168,6 +168,10 @@ If this field is blank or invalid, the script uses `Audit Only`.
 - Alert-oriented output in `Audit and Alert` and `Autofix and Alert on Failure` when unknown instances are present
 
 ## Changelog
+
+### 2026-04-24
+
+- Added additional checks for the instances installed in directories other than `/applications/`
 
 ### 2026-04-09
 
