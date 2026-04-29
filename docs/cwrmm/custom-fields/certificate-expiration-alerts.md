@@ -9,7 +9,7 @@ tags: ['windows', 'alerting', 'security', 'certificates']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-20
+  date: 2026-04-17
 ---
 
 ## Summary
@@ -28,13 +28,17 @@ Select the operating system to enable monitoring and alerts for certificates tha
 
 | Name | Level | Type | Options | Default Value | Editable | Description |
 | ---- | ----- | ---- | ------- | ------------ | -------- | ----------- |
-| Certificate Expiration Alerts | COMPANY | DropDown | <ul><li>Disabled</li><li>Windows</li><li>Windows Workstations</li><li>Windows Servers</li></ul> | | Yes | Select the operating system to enable monitoring and alerts for certificates that will expire in the next 30 days. |
+| Certificate Expiration Alerts | COMPANY | DropDown | <ul><li>Disabled</li><li>Windows Workstations and Servers</li><li>Windows Workstations</li><li>Windows Servers</li></ul> | | Yes | Select the operating system to enable monitoring and alerts for certificates that will expire in the next 30 days. |
 
 ## Completed Custom Field
 
 ![Image1](../../../static/img/docs/41d685b3-0e7c-41b6-802d-2d1a9b25593c/image1.webp)
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the `Windows` option to `Windows Workstations and Servers` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstations` from unintentionally including all Windows devices in the group.
 
 ### 2026-02-19
 

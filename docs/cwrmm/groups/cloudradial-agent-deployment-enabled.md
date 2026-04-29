@@ -9,7 +9,7 @@ tags: ['application', 'installation']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-08
+  date: 2026-04-17
 ---
 
 ## Summary
@@ -41,12 +41,12 @@ The group is defined by the following **criteria blocks**, joined by an **OR**. 
 
 | Block | Criteria Name          | Operator        | Value(s)                                 |
 |-------|-----------------------|-----------------|-------------------------------------------|
-| 1     | CloudRadial Installation         | Contains any of | `All`, `Windows`, `Windows Workstation and Macintosh`, `Windows Workstation` |
+| 1     | CloudRadial Installation         | Contains any of | `All`, `Windows Workstation and Server`, `Windows Workstation and Macintosh`, `Windows Workstation` |
 | 1     | CloudRadial Exclusion Location | Equal           | `False`                                     |
 | 1     | CloudRadial Exclusion Device | Equal           | `False`                                     |
 | 1     | OS Type                | Equal           | `Windows`                                   |
 | 1     | Endpoint Type          | Not Equal       | `Server`                                    |
-| 2     | CloudRadial Installation         | Contains any of | `All`, `Windows`, `Windows Server` |
+| 2     | CloudRadial Installation         | Contains any of | `All`, `Windows Workstation and Server`, `Windows Server` |
 | 2     | CloudRadial Exclusion Location | Equal           | `False`                                     |
 | 2     | CloudRadial Exclusion Device | Equal           | `False`                                     |
 | 2     | OS Type                | Equal           | `Windows`                                   |
@@ -70,6 +70,10 @@ A machine matches the group if it meets ALL criteria in Block 1 OR ALL criteria 
 ![Image3](../../../static/img/docs/20f0900a-a34c-46c3-9181-ba89b17c14cb/image3.webp)
 
 ## Changelog
+
+### 2026-04-17
+
+- Renamed the Custom Field's `Windows` option to `Windows Workstation and Server` because CW RMM uses wildcard matching in group conditions for dropdown custom fields. This prevents `Windows Workstation` from unintentionally including all Windows devices in the group.
 
 ### 2025-10-08
 
