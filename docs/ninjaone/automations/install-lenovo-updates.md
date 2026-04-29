@@ -22,6 +22,7 @@ This script automates the discovery and installation of Lenovo-specific updates 
 
 ## Dependencies
 
+- [Agnostic - Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978/)
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
@@ -35,7 +36,7 @@ This script automates the discovery and installation of Lenovo-specific updates 
 
 ## Output
 
-- Custom Field
+- Activity Log
 
 ## Changelog
 
