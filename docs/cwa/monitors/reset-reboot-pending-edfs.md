@@ -18,7 +18,8 @@ This internal monitor is designed to detect agents whose reboot was initiated by
 
 ## Dependencies
 
-- [EPM - Windows Configuration - Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
+- [Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
+- [Solution - User Prompt For Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 
 ## Target
 
