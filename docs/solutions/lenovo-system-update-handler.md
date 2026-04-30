@@ -49,7 +49,7 @@ The goal of this solution is to manage, audit, and carry out updates (such as dr
 1. Import the associated scripts, internal monitor, dataview, and alert template from the ProSync plugin.
 
 2. Execute the [Lenovo LSUClient Module - Install + Command Handler [DV,Param,Autofix]](/docs/9c0e2d8e-dccc-4253-9d3c-0f21a7d1f010) script on any online Windows computer. Make sure to set the `SetEnvironment` parameter to `1`. This will automatically create the required EDFs and the [pvl_lsuclient_audit](/docs/14af3c59-efba-4f62-959a-50ad6e382836) custom table.  
-    ![Image1](/static/img/docs/9c0e2d8e-dccc-4253-9d3c-0f21a7d1f010/image1.webp)
+    ![Image1](../../static/img/docs/9c0e2d8e-dccc-4253-9d3c-0f21a7d1f010/image1.webp)
 
 3. Reload the system cache (**Ctrl + R**) and verify the existence of the following Extra Data Fields (EDFs):
    - **Lenovo System Update Audit** (Client Level)

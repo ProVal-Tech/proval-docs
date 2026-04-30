@@ -49,7 +49,7 @@ The goal of this solution is to manage, audit, and carry out updates (such as dr
 1. Import the associates scripts, internal monitor, dataview, and alert template from the ProSync plugin.
 
 2. Execute the [HP Image Assistant - Install+ Command Handler [DV,Param,Autofix]](/docs/8d551cc4-c4db-465a-a0df-2649e0eef711) script on any online Windows computer. Make sure to set the `SetEnvironment` parameter to `1`. This will automatically create the required EDFs and the [pvl_hpimageassistant_audit](/docs/d41f1905-bc6a-412f-9de9-88010c502010) custom table.  
-   ![Image1](/static/img/docs/8d551cc4-c4db-465a-a0df-2649e0eef711/image1.webp)
+   ![Image1](../../static/img/docs/8d551cc4-c4db-465a-a0df-2649e0eef711/image1.webp)
 
 3. Reload the system cache (**Ctrl + R**) and verify the existence of the following Extra Data Fields (EDFs):
    - **HP Image Assistant Update Audit** (Client Level)
