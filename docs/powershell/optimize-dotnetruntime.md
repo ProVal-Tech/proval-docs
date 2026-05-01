@@ -143,25 +143,26 @@ Install and update use the machine's native architecture installer (for example,
 | `uninstall` | Removes unsupported/EOL versions | Removes selected major versions, including supported |
 | `renew` | Installs latest supported and removes unsupported | Keeps only selected versions and removes all others. Fails if any selected version is unsupported |
 
-## Warning: `-Force`
+## `-Force` Switch - Caution
 
-Use `-Force` carefully.
+> **⚠️ WARNING:** The `-Force` switch overrides Windows Installer dependency protection. Use only when you fully understand the implications.
 
-Without `-Force`, Windows Installer can block uninstall of shared .NET components when other apps depend on them. This is a safety feature.
+Without `-Force`, the script respects MSI dependency providers registered by other applications. If software such as Visual Studio, SQL Server, or third-party tools installed a .NET component and registered a dependency on it, the Windows Installer will silently refuse to remove it (returning exit code 0) to protect the dependent application. This is by design.
 
-With `-Force`, the script adds `IGNOREDEPENDENCIES=ALL` to MSI uninstall commands and removes components anyway.
+When `-Force` is specified, the script appends `IGNOREDEPENDENCIES=ALL` to all MSI uninstall commands, which:
+- Bypasses the dependency provider safety check.
+- Forces removal of the .NET component regardless of what other software depends on it.
+- May cause dependent applications to malfunction, fail to start, or require repair/reinstallation.
 
-`-Force` can remove more than what `dotnet --list-runtimes` and `dotnet --list-sdks` show. It can also remove .NET entries found through Windows uninstall registry data and package metadata (for example, entries discovered through `Get-Package`) when cleanup runs.
+**When to use `-Force`:**
+- You are certain no critical software depends on the targeted .NET version.
+- You are performing a controlled upgrade where a newer version will immediately replace the removed one (e.g., `renew -Version 10 -Force` installs .NET 10 before removing older versions).
+- You need to clean up orphaned registry entries from partially removed installations.
 
-This includes shared or prerequisite components that one or more other applications may depend on.
-
-This can break applications that rely on those runtimes, including development tools and business apps.
-
-Use `-Force` only when:
-
-1. You know which apps depend on the targeted .NET versions.
-2. You are performing a controlled replacement or cleanup.
-3. You have a rollback plan if an app needs repair.
+**When NOT to use `-Force`:**
+- On systems with Visual Studio, SQL Server, or other enterprise software that bundles .NET runtimes.
+- On shared/production servers where breaking a dependency could disrupt services.
+- When you are unsure which applications depend on the .NET components being removed.
 
 Examples:
 

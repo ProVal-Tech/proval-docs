@@ -195,24 +195,29 @@ When you run this script, expect software changes on the endpoint. Depending on 
 | `uninstall` | Removes only unsupported/EOL versions | Removes the specified version(s), including supported |
 | `renew` | Installs latest supported + removes all unsupported | Keeps only specified version(s), removes everything else. **Aborts if any version is EOL.** |
 
-## Warning: Force in Automate
+## `Force` Parameter - Caution
 
-Use `Force` only when you fully understand application dependencies.
+> **⚠️ WARNING:** The `Force` parameter overrides Windows Installer dependency protection. Use only when you fully understand the implications.
 
-- `Force = 1` applies forced removal behavior.
-- Any other value (including blank) does not apply force.
+Without `Force` (or `Force = 0` or blank), the script respects MSI dependency providers registered by other applications. If software such as Visual Studio, SQL Server, or third-party tools installed a .NET component and registered a dependency on it, the Windows Installer will silently refuse to remove it (returning exit code 0) to protect the dependent application. This is by design.
 
-With `Force = 1`, cleanup can remove .NET components discovered from uninstall registry keys and package metadata (for example, entries discoverable by `Get-Package`), even when those components are not shown by `dotnet --list-runtimes` or `dotnet --list-sdks`.
+When `Force = 1`, the script appends `IGNOREDEPENDENCIES=ALL` to all MSI uninstall commands, which:
 
-Without force, Windows Installer may keep shared .NET components to protect dependent applications.
+- Bypasses the dependency provider safety check.
+- Forces removal of the .NET component regardless of what other software depends on it.
+- May cause dependent applications to malfunction, fail to start, or require repair/reinstallation.
 
-With force, dependency protection is bypassed and removal can continue. This may remove shared prerequisite components and break one or more applications that depend on them.
+**When to use `Force = 1`:**
 
-Use force only when:
+- You are certain no critical software depends on the targeted .NET version.
+- You are performing a controlled upgrade where a newer version will immediately replace the removed one (e.g., `Action: renew`, `Version: 10`, `Force: 1` installs .NET 10 before removing older versions).
+- You need to clean up orphaned registry entries from partially removed installations.
 
-1. You know which applications depend on the targeted .NET versions.
-2. You are running a controlled cleanup or replacement.
-3. You have a rollback or repair plan.
+**When NOT to use `Force = 1`:**
+
+- On systems with Visual Studio, SQL Server, or other enterprise software that bundles .NET runtimes.
+- On shared or production servers where breaking a dependency could disrupt services.
+- When you are unsure which applications depend on the .NET components being removed.
 
 ## Output
 
