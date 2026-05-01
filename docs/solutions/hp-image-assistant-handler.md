@@ -65,16 +65,16 @@ The goal of this solution is to manage, audit, and carry out updates (such as dr
 
 ## FAQ
 
-**Q:** What types of machines should this solution be applied to?  
+**Q: What types of machines should this solution be applied to?**  
 **A:** This solution is intended exclusively for physical HP workstations running Windows 10 or Windows 11. The script will automatically validate the manufacturer and product ID against HP's official platform compatibility list before running.
 
-**Q:** What happens if the HP Image Assistant application is not installed on the endpoint?  
+**Q: What happens if the HP Image Assistant application is not installed on the endpoint?**  
 **A:** The script checks for the existence of the HP Image Assistant application. If it is missing, the script will automatically install it using Winget.
 
-**Q:** Does this solution automatically install updates or just scan for them?  
+**Q: Does this solution automatically install updates or just scan for them?**  
 **A:** By default, if the script is triggered without any arguments (such as via the daily internal monitor), it performs an audit scan and logs the available updates into the custom table. To automatically install updates, you must manually execute the script and pass specific command-line strings to the `Arguments` parameter (e.g., `/Operation:Analyze /Category:Drivers /Selection:Recommended /Action:Install /Silent /AutoCleanup`).
 
-**Q:** Are BIOS updates supported and recommended through this solution?  
+**Q: Are BIOS updates supported and recommended through this solution?**  
 **A:** While HP Image Assistant can technically handle BIOS updates, ProVal does not recommend performing BIOS updates remotely. ProVal is not responsible for any failed devices due to remote BIOS updates. BIOS updates are performed strictly at the MSP's risk.
 
 ## Changelog

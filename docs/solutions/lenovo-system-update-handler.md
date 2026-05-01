@@ -65,16 +65,16 @@ The goal of this solution is to manage, audit, and carry out updates (such as dr
 
 ## FAQ
 
-**Q:** What types of machines should this solution be applied to?  
+**Q: What types of machines should this solution be applied to?**  
 **A:** This solution is intended exclusively for Lenovo workstations running Windows 10 or Windows 11. The script will automatically verify Lenovo hardware and Windows OS compatibility before running.
 
-**Q:** What happens if the LSUClient module is not installed on the endpoint?  
+**Q: What happens if the LSUClient module is not installed on the endpoint?**  
 **A:** The script automatically installs and maintains the required LSUClient module.
 
-**Q:** Does this solution automatically install updates or just scan for them?  
+**Q: Does this solution automatically install updates or just scan for them?**  
 **A:** By default, if the script is triggered without any arguments (such as via the daily internal monitor), it discovers and lists all available updates without installation and logs them into the custom table. To automatically install updates, you must manually execute the script and pass specific values to the `Type` or `Id` parameters. 
 
-**Q:** Are BIOS updates supported and recommended through this solution?  
+**Q: Are BIOS updates supported and recommended through this solution?**  
 **A:** While the LSUClient module can handle BIOS updates, ProVal does not recommend performing BIOS updates remotely. ProVal is not responsible for any failed devices due to remote BIOS updates. BIOS updates are performed strictly at the MSP's risk. Critical BIOS/firmware updates may initiate low-level hardware restarts that bypass OS-level controls and trigger immediate reboots regardless of the `NoReboot` parameter.
 
 ## Changelog
