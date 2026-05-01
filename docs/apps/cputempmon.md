@@ -9,7 +9,7 @@ tags: ['cpu', 'monitoring', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-10
+  date: 2026-04-30
 ---
 
 <br />
@@ -304,6 +304,12 @@ begin {
 }
 ```
 
+**PawnIO:**
+
+```shell
+winget install namazso.PawnIO
+```
+
 ## Usage
 
 CPUTempMon does not require any command-line arguments. Simply execute the binary from an elevated terminal and it will output structured JSON to the standard output (STDOUT).
@@ -439,6 +445,10 @@ On highly restricted systems where both direct hardware registers and WMI interf
 - [System.Management](https://learn.microsoft.com/en-us/dotnet/api/system.management) - WMI fallback queries for restricted hardware
 
 ## Changelog
+
+### 2026-04-30
+
+- Updated documentation
 
 ### 2026-04-10
 
