@@ -4,19 +4,19 @@ slug: /9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16
 title: 'Manage - .net Runtimes'
 title_meta: 'Manage - .net Runtimes'
 keywords: ['Sdk','runtime','Asp.Net','core','.net']
-description: 'This script ensures that the system is running the latest supported versions of .NET runtimes and SDKs while removing unsupported versions to maintain a clean and secure environment. It manages the installation, uninstallation, and listing of .NET runtimes and SDKs on a Windows system.'
+description: 'Automate implementation for managing .NET runtimes and SDKs on Windows: list, install, update, uninstall, and renew with Version and Force controls.'
 tags: ['dotnet','windows']
 draft: False
 unlisted: false
 last_update:
-  date: 2026-04-16
+  date: 2026-05-01
 ---
 
 ## Summary
 
-This script helps keep .NET on your Windows device clean, current, and secure. It can list installed .NET components, install the latest supported versions, update to newer patch releases, remove unsupported versions, or perform a full cleanup and refresh.
+This Automate implementation helps keep .NET on Windows devices clean, current, and secure. It can list installed .NET components, install the latest supported versions, update patch releases, remove unsupported versions, or perform a full cleanup and refresh.
 
-The script checks Microsoft release data in real time, then uses that information to decide what to install, update, or remove. This helps reduce manual work and lowers the risk of keeping outdated .NET versions that may cause security or compatibility issues.
+The script checks Microsoft release data in real time, then uses that information to decide what to install, update, or remove. This reduces manual effort and lowers the risk of keeping outdated .NET versions.
 
 When you run this script, expect software changes on the endpoint. Depending on the selected action, it may download installers, silently install updates, and remove older versions. A stable internet connection and administrator access are required.
 
@@ -25,9 +25,13 @@ When you run this script, expect software changes on the endpoint. Depending on 
 - Installing or uninstalling `sdk` can also install or remove related `aspNetCoreRuntime`, `desktopRuntime`, and `runtime` components.
 - Installing or uninstalling `desktopRuntime` can also install or remove the related `runtime`.
 - For actions other than `list`, if `Type` is not provided, the script uses `desktopRuntime` by default.
+- Install and update use the machine's native architecture installer (for example, x64 installer on x64 machines).
+- If x86 components already exist on a machine, the script can detect and remove outdated x86 components during `uninstall`, `update`, and `renew`.
 - Use `Version` carefully:
   - For `list`, `install`, `uninstall`, and `update`, you can target specific major versions (including unsupported versions).
   - For `renew` with `Version`, all specified versions must still be supported. If any are unsupported, the action will stop.
+- Set `Force` to `1` to apply force removal behavior. Any other value (or blank) means force is not applied.
+- For `uninstall`, `update`, and `renew`, older-version cleanup primarily targets components detected by `dotnet.exe`. With `Force = 1`, cleanup can also remove .NET entries found through uninstall registry data and package metadata, including components that `dotnet.exe` does not list.
 - `renew` is the most aggressive option. It can remove versions you are not targeting. Review your required application dependencies before using it.
 
 ## Dependencies
@@ -36,11 +40,9 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 ## Sample Run
 
-### Example 1: List all installed .NET components
+> **Note:** *You will notice the Force parameter is missing in screenshots for examples 1 to 15. We spared both your eyes and my wrists from updating 15 screenshots for a value that is not used there. Examples 16 and 17 include Force, so those screenshots show the extra field. :)*
 
-- **Action:** `<Blank>`
-- **Type:** `<Blank>`
-- **Version:** `<Blank>`
+### Example 1: List all installed .NET components
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image1.webp)
 
@@ -48,7 +50,6 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 - **Action:** `list`
 - **Type:** `sdk`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image2.webp)
 
@@ -56,7 +57,6 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 - **Action:** `install`
 - **Type:** `all`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image3.webp)
 
@@ -64,7 +64,6 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 - **Action:** `update`
 - **Type:** `sdk`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image4.webp)
 
@@ -72,7 +71,6 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 - **Action:** `uninstall`
 - **Type:** `aspNetCoreRuntime`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image5.webp)
 
@@ -80,15 +78,12 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 - **Action:** `renew`
 - **Type:** `all`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image6.webp)
 
 ### Example 7: Install the latest .NET Desktop Runtime (default type)
 
 - **Action:** `install`
-- **Type:** `<Blank>`
-- **Version:** `<Blank>`
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image7.webp)
 
@@ -156,6 +151,24 @@ When you run this script, expect software changes on the endpoint. Depending on 
 
 ![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image15.webp)
 
+### Example 16: Force renew to .NET 10 only
+
+- **Action:** `renew`
+- **Type:** `all`
+- **Version:** `10`
+- **Force:** `1`
+
+![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image16.webp)
+
+### Example 17: Force uninstall .NET 8
+
+- **Action:** `uninstall`
+- **Type:** `all`
+- **Version:** `8`
+- **Force:** `1`
+
+![Sample Run](../../../static/img/docs/9b60e7a3-b7e8-4932-90e6-0cc1d13c6f16/image17.webp)
+
 ## Global Variables
 
 | Name | Value | Accepted Values | Description |
@@ -170,6 +183,7 @@ When you run this script, expect software changes on the endpoint. Depending on 
 | `Action` | <ul><li>`list`</li><li>`install`</li><li>`uninstall`</li><li>`update`</li><li>`renew`</li></ul> | False     | Specifies the action to perform. Valid values are: <br /><br /> <ul><li>`list`: Lists all installed .NET runtimes and SDKs.</li><li> `install`: Installs the latest supported versions of .NET runtimes and SDKs. </li><li> `uninstall`: Uninstalls unsupported or specific versions of .NET runtimes and SDKs. </li><li> `update`: Updates to latest patches and removes superseded patches. </li><li> `renew`: Removes all unsupported versions of .NET runtimes and SDKs and installs the latest available version.</li></ul> **Note:** Default Action is `list` |
 | `Type`   | <ul><li>`sdk`</li><li>`runtime`</li><li>`desktopRuntime`</li><li>`aspNetCoreRuntime`</li><li>`all`</li></ul> | False     | Specifies the type of .NET component to manage. Valid values are: <br /><br /> <ul><li>`sdk`: Manages .NET SDKs. </li><li> `runtime`: Manages .NET runtimes. </li><li> `desktopRuntime`: Manages .NET desktop runtimes. </li><li>`aspNetCoreRuntime`: Manages ASP.NET Core runtimes. </li><li>`all`: Manages all .NET components. </li></ul> **Note:** Default Type is `desktopRuntime`|
 | `Version` | <ul><li>`8`</li><li>`9`</li><li>`8, 9`</li></ul> | False     | (Optional) Limit the action to specific .NET versions by major version number (e.g., `8`, `9`, or `8, 9, 10`). When omitted, the script uses its default behavior for each action. Accepts both supported and EOL versions for `list`, `install`, `uninstall`, and `update`. For `renew`, all specified versions must be actively supported. **Note:** Default is not set (all applicable versions are targeted). |
+| `Force` | <ul><li>`1`</li><li>`0`</li><li>`<Blank>`</li></ul> | False | Set `Force` to `1` to apply forced MSI dependency bypass during removal. If `Force` is `0` or blank, normal safe behavior is used. |
 
 ### Tips for `Version` Behavior
 
@@ -181,11 +195,39 @@ When you run this script, expect software changes on the endpoint. Depending on 
 | `uninstall` | Removes only unsupported/EOL versions | Removes the specified version(s), including supported |
 | `renew` | Installs latest supported + removes all unsupported | Keeps only specified version(s), removes everything else. **Aborts if any version is EOL.** |
 
+## Warning: Force in Automate
+
+Use `Force` only when you fully understand application dependencies.
+
+- `Force = 1` applies forced removal behavior.
+- Any other value (including blank) does not apply force.
+
+With `Force = 1`, cleanup can remove .NET components discovered from uninstall registry keys and package metadata (for example, entries discoverable by `Get-Package`), even when those components are not shown by `dotnet --list-runtimes` or `dotnet --list-sdks`.
+
+Without force, Windows Installer may keep shared .NET components to protect dependent applications.
+
+With force, dependency protection is bypassed and removal can continue. This may remove shared prerequisite components and break one or more applications that depend on them.
+
+Use force only when:
+
+1. You know which applications depend on the targeted .NET versions.
+2. You are running a controlled cleanup or replacement.
+3. You have a rollback or repair plan.
+
 ## Output
 
 - Script Logs
 
 ## Changelog
+
+### 2026-05-01
+
+- Improved mixed x64/x86 handling: installs follow machine architecture, while cleanup actions can still remove outdated x86 components.
+- Updated install, update, and removal logic to be architecture-aware for safer results.
+- Improved uninstall reliability by resolving Windows Installer product codes from registry data.
+- Added `Force` parameter to allow dependency bypass for advanced cleanup scenarios.
+- Improved `renew` cleanup to remove orphaned MSI entries using .NET version parsing from package names.
+- Expanded logging for removal operations, including exact uninstall command paths and exit codes.
 
 ### 2026-04-16
 
