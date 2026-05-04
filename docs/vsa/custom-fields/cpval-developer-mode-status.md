@@ -1,8 +1,8 @@
 ---
 id: '7eca9a7b-d09d-416d-8c04-3dab7776ba1b'
 slug: /7eca9a7b-d09d-416d-8c04-3dab7776ba1b
-title: 'cPVAL_Developer_Mode_Status'
-title_meta: 'cPVAL_Developer_Mode_Status'
+title: 'cPVAL Developer Mode Status'
+title_meta: 'cPVAL Developer Mode Status'
 keywords: ['cf', 'dveloper', 'status']
 description: 'This custom field is used to store the data of the dveloper mode status of the machine.'
 tags: ['auditing', 'update']
