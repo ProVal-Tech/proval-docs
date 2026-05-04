@@ -18,6 +18,7 @@ This Script uninstalls any version of Office and installs M365 apps
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/de0e7e1f-6f29-41b2-9d65-164b2e2c4431/image1.webp)
 
 ## Dependenciess
@@ -29,9 +30,9 @@ This Script uninstalls any version of Office and installs M365 apps
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| `Versions to Uninstall` | 2003,2007 | All, 2003, 2007, 2010, 2013, 2016, C2R | False | All     | String | Specifies Office Version that needs to be Uninstalled. Leaving the parameter blank will remove all installed versions. |
-| `XMLPath` | `https://pathtoxml.com` `C:\Temp\FileName.xml` | False | Text String | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. If not provided, a default configuration is used. |
-| `Restart` | `0 - 1` | False | Checkbox | Optional. Performs a system restart after installation. |
+| `Versions to Uninstall` | 2003,2007 | All, 2003, 2007, 2010, 2013, 2016, C2R | False | All     | String/Text | Specifies Office Version that needs to be Uninstalled. Leaving the parameter blank will remove all installed versions. |
+| `XMLPath` | `https://pathtoxml.com` `C:\Temp\FileName.xml` |  |False | | String/Text | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. If not provided, a default configuration is used. |
+| `Restart` | `0 - 1` |    | False |   | Checkbox |  Optional. Performs a system restart after installation. |
 
 
 ## Automation Setup/Import

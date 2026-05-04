@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-Executes the [Script - Office Cleanup and M365 Deployment](/docs/de0e7e1f-6f29-41b2-9d65-164b2e2c4431) only when 'cPVAL Enable Office Cleanup and M365 Deployment' is set to Enable.
+Executes the [Script - Office Cleanup and M365 Deployment](/docs/de0e7e1f-6f29-41b2-9d65-164b2e2c4431) only when custom field [cPVAL Enable Office Cleanup and M365 Deployment](/docs/d39593cb-e6d1-4a2d-b2b0-6ef1e2148a15) is set to `Enable`.
 
 ## Details
 

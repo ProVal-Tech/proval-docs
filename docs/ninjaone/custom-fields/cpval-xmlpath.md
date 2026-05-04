@@ -13,14 +13,14 @@ last_update:
 ---
 
 ## Summary
-Custom Field to specify XML file to be used for Microsoft 365 installation. If this custom field is blank on all device,location and Organization level, [Script - Office Cleanup and M365 Deployment](/docs/de0e7e1f-6f29-41b2-9d65-164b2e2c4431) will use the script parameter `XMLPath`, if its also blank, script will use the default configuration.
+Custom Field to specify XML file to be used for Microsoft 365 installation. If this custom field is blank on all device, location and Organization level, [Script - Office Cleanup and M365 Deployment](/docs/de0e7e1f-6f29-41b2-9d65-164b2e2c4431) will use the script parameter `XMLPath`. And if it is also blank, script will use the default configuration.
 
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAl Xmlpath | cpvalXmlpath | Device/Location/Organization | Drop Down | false | - | Editable | Read_Write | Read_Write | Installs Microsoft 365 using an XML file (local or URL). If none is provided, Office Cleanup and M365 Deployment uses a parameter-defined or default configuration. Device > Location > Organization in precedence. | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. |Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL.| Microsoft 365 |
+| cPVAl Xmlpath | cpvalXmlpath | Device/Location/Organization | Text | False | - | Editable | Read_Write | Read_Write | Installs Microsoft 365 using an XML file (local or URL). If none is provided, Office Cleanup and M365 Deployment uses a parameter-defined or default configuration. Device > Location > Organization in precedence. | Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL. |Installs Microsoft 365 using the specified XML configuration file. Supports both a local file path or a URL.| Microsoft 365 |
 
 ## Dependencies
 
