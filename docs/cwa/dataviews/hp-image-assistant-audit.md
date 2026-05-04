@@ -25,23 +25,27 @@ Displays available HP update information gathered by the [HP Image Assistant](/d
 
 ## Columns
 
-| Column             | Explanation                                                                                                     |
+| Column             | Explanation                                                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------------------------|
-| Client             | The name of the client for this computer.                                                                    |
-| Location           | The name of the location for this computer.                                                                  |
-| Computer Name      | The name of the computer where the scan was performed.                                                       |
-| Type               | The type of update available (e.g., 'Firmware', 'Software', 'Driver').                                      |
-| Id                 | The HP SoftPaq ID associated with the update (e.g., 'sp151063').                                            |
-| Name               | A human-readable description of the update.                                                                 |
-| TargetVersion      | The currently installed version on the endpoint, or 'Not Installed' if absent.                              |
-| ReferenceVersion   | The updated version available from HP.                                                                      |
-| Comments           | The recommendation status from HP (e.g., 'HP update recommended').                                          |
+| Client             | The name of the client for this computer.                                                                   |
+| Location           | The name of the location for this computer.                                                                 |
+| Computer           | The name of the computer where the scan was performed.                                                      |
+| OperatingSystem    | The OS installed on the endpoint.                                                                           |
+| LastContact        | The last check-in date of the agent.                                                                        |
+| LastLoggedInUser   | The last user logged into the device.                                                                       |
+| FormFactor         | The physical form factor of the machine.                                                                    |
+| UpdateType         | The type of update available (e.g., 'Firmware', 'Software', 'Driver').                                      |
+| SoftPaqId          | The HP SoftPaq ID associated with the update (e.g., 'sp151063').                                            |
+| UpdateName         | A human-readable description of the update.                                                                 |
+| CurrentVersion     | The currently installed version on the endpoint, or 'Not Installed' if absent.                              |
+| AvailableVersion   | The updated version available from HP.                                                                      |
+| Recommendations    | The recommendation status from HP (e.g., 'HP update recommended').                                          |
 | SSMCompliant       | Indicates System Software Manager compliance ('True' or 'False').                                           |
 | DPBCompliant       | Indicates Driver Pack Builder compliance ('True' or 'False').                                               |
-| Url                | The direct download URL for the update executable file.                                                     |
+| DownloadUrl        | The direct download URL for the update executable file.                                                     |
 | ReleaseNotesUrl    | The URL to the HTML release notes for the update.                                                           |
 | CvaUrl             | The URL to the CVA configuration file.                                                                      |
-| ScriptRunTime      | The timestamp of when the script executed and populated this record.                                        |
+| ScanDate           | The timestamp of when the script executed and populated this record.                                        |
 
 ## Changelog
 
