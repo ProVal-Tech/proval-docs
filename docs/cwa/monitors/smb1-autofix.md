@@ -20,6 +20,7 @@ This internal monitor detects online Windows agents and performs autofix on comp
 
 - [Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
 - [Script - SMBv1 Status Audit/Autofix [DV, Param]](/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b)
+- [Solution - SMBv1 Audit/Autofix ](/docs/343654e4-9263-4fec-87c1-3c3401a94e95)
 
 ## Target
 

@@ -1,8 +1,8 @@
 ---
 id: '4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b'
 slug: /4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b
-title: 'SMBv1 Status AuditAutofix DV,Param'
-title_meta: 'SMBv1 Status AuditAutofix DV,Param'
+title: 'SMBv1 Status Audit/Autofix [DV,Param]'
+title_meta: 'SMBv1 Status Audit/Autofix [DV,Param]'
 keywords: ['smbv1', 'remediation', 'detection', 'vulnerability', 'monitoring']
 description: 'This document outlines a script created to detect and remediate SMBv1 vulnerabilities based on specified settings in the EDF. It details the script execution requirements, dependencies, variables, and output, along with ticketing procedures for successful and failed remediation attempts.'
 tags: ['logging', 'report', 'vulnerability', 'windows']
@@ -22,9 +22,14 @@ It is required to execute this script after importing it with the setting `SetEn
 
 ![Sample Run](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_1.webp)
 
+Regular run:
+
+![Sample Run](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_4.webp)
+
 ## Dependencies
 
-[Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Remote Monitor - SMB1 Detection](/docs/de67816f-e6ff-4fed-92e1-26fd5ae5359d)
+- [Solution - SMBv1 Audit/Autofix ](/docs/343654e4-9263-4fec-87c1-3c3401a94e95)
 
 ## Variables
 
@@ -39,15 +44,15 @@ It is required to execute this script after importing it with the setting `SetEn
 
 ### EDFs
 
-| Name                                      | Level     | Type     | Example                   | Description                                                                                              |
-|-------------------------------------------|-----------|----------|---------------------------|----------------------------------------------------------------------------------------------------------|
-| SMBv1 Status                              | Computer  | Text     | Remediation Successful     | This stores the status of SMBv1 after script execution.                                                  |
-| SMBv1 Logging                             | Computer  | Text     | @SMB1DisableOutput@       | This stores the script PowerShell execution output for logging.                                        |
-| SMBv1 Detection Date                      | Computer  | Text     | 2024-05-01 00:00:00      | This stores the date and time when the last SMBv1 status was detected via the script.                  |
-| SMBv1 Vulnerability                        | Computer  | Text     | Not Vulnerable            | This shows whether the device is vulnerable or not based on the script output detection.                |
-| SMB1 Vulnerability                         | Client    | Dropdown | Audit Only                | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and location and computer levels are not set to Disabled, then the Audit action or autofix will be performed on the agents of the clients. |
-| SMB1 Vulnerability                         | Location  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and the computer level is not set to Disabled while the client level EDF is not set to any Audit option, then the Audit action or autofix will be performed on the agents of the location. |
-| SMB1 Vulnerability                         | Computer  | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and location and computer levels are not set to any Audit options, then the Audit action or autofix will be performed on the endpoint. |
+| Name                                      | Level     | Section | Type     | Example                   | Description                                                                                              |
+|-------------------------------------------|-----------|----------|----------|---------------------------|----------------------------------------------------------------------------------------------------------|
+| SMBv1 Status                              | Computer  | Vulnerability |Text     | Remediation Successful     | This stores the status of SMBv1 after script execution.                                                  |
+| SMBv1 Logging                             | Computer  | Vulnerability | Text     | @SMB1DisableOutput@       | This stores the script PowerShell execution output for logging.                                        |
+| SMBv1 Detection Date                      | Computer  | Vulnerability | Text     | 2024-05-01 00:00:00      | This stores the date and time when the last SMBv1 status was detected via the script.                  |
+| SMBv1 Vulnerability                        | Computer  | Vulnerability | Text     | Not Vulnerable            | This shows whether the device is vulnerable or not based on the script output detection.                |
+| SMB1 Vulnerability                         | Client    | Vulnerability | Dropdown | Audit Only                | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and location and computer levels are not set to Disabled, then the Audit action or autofix will be performed on the agents of the clients. |
+| SMB1 Vulnerability                         | Location  | Vulnerability | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and the computer level is not set to Disabled while the client level EDF is not set to any Audit option, then the Audit action or autofix will be performed on the agents of the location. |
+| SMB1 Vulnerability                         | Computer  | Vulnerability | Dropdown | Disabled                  | This is a drop-down EDF with available options as ![Options](../../../static/img/docs/4fd2cffe-c41b-4a3c-9b5e-3edb02ad322b/image_2.webp). If it is set to Audit, and location and computer levels are not set to any Audit options, then the Audit action or autofix will be performed on the endpoint. |
 
 ## Output
 

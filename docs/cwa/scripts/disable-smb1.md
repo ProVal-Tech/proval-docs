@@ -16,6 +16,10 @@ last_update:
 
 This script disables the SMB1 protocol on the target machine for both versions below and above '6.3'.
 
+## Dependencies
+
+- [Solution - SMBv1 Audit/Autofix ](/docs/343654e4-9263-4fec-87c1-3c3401a94e95)
+
 ## Target
 
 Windows OS
