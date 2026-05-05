@@ -9,7 +9,7 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-10
+  date: 2026-04-30
 ---
 
 ## Summary
@@ -19,6 +19,7 @@ This script is designed to establish a remote monitoring system for Windows comp
 ## Dependencies
 
 - [CPUTempMon](/docs/63c35c04-4327-45d0-a249-202cf6c67088)
+- [Script - Winget - Install/Update [Autofix,Param]](/docs/dd445ce7-a149-452c-9b35-dc1adbab4e06)
 - [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
 
 ## Sample Run
@@ -82,6 +83,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-04-30
+
+- Updated script to install PawnIO
 
 ### 2026-04-10
 

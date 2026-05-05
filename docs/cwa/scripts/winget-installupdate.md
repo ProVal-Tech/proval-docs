@@ -9,7 +9,7 @@ tags: ['installation', 'software', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-01-05
+  date: 2026-04-30
 ---
 
 ## Summary
@@ -17,12 +17,6 @@ last_update:
 This script is created to install and update applications whose packages are available in Winget.  
 
 Please find the application package at the following URL: [https://winget.run/search](https://winget.run/search)
-
-## File Hash
-
-- **Script Path:**  `C:\ProgramData\_Automation\Script\Invoke-WingetProcessor\Invoke-WingetProcessor.ps1`  
-- **File Hash (SHA256):** `23E874EC415CEEF53A727074F6725B22A3F4DE094C59D20F0FE06F5CA87C267B`  
-- **File Hash (MD5):** `1F5C31B67B6E0DD1FD342709B45DDE1F`
 
 ## Sample Run
 
@@ -64,6 +58,10 @@ Please refer to [Invoke-WingetProcessor](/docs/8496c2e9-0e52-4961-a1f1-4a95296e8
 **A.** No, for auto-deployment you need to copy this script and have to set the OptionalParameter user param to the global parameter with the value set to it and apply that as an autofix because the auto-deployment monitor do not pass the optional parameter value.
 
 ## Changelog
+
+### 2026-04-30
+
+- Code signed the script.
 
 ### 2026-01-05
 
