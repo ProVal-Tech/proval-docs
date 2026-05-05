@@ -4,7 +4,7 @@ slug: /aa52a152-4cf2-4ed2-816b-88201816d69a
 title: 'Enable/Disable Developer Mode'
 title_meta: 'Enable/Disable Developer Mode'
 keywords: ['developer', 'mode', 'enable', 'procedure']
-description: 'This script is used to check the status of Developer mode and if its disable then it will enable on the Windows machine.'
+description: 'This script is used to disable or enable the developer mode on the Windows machine as per the parameter, and before making any changes it will check the current status of developer mode.'
 tags: ['auditing', 'update']
 draft: false
 unlisted: false
@@ -14,12 +14,19 @@ last_update:
 
 ## Summary
 
-This script checks the status of Developer mode and enables it if it is  disabled.
+This script is used to disable or enable the developer mode on the Windows machine as per the parameter, and before making any changes it will check the current status of developer mode.
 
 ## Dependencies
 
 - PowerShell 5.0+
 - [Solution: Enable/Disable Developer Mode](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
+
+## Variable
+
+Enable : It will used to enable the developer mode on the machine
+
+Disable : It will used to disable the developer mode on the machine.
+
 
 ## Implementation
 
@@ -36,6 +43,7 @@ This script checks the status of Developer mode and enables it if it is  disable
 Now, You can execute the script on the machine in which you want to enable the developer mode on the machine.
 
 ![Image 3](../../../static/img/docs/aa52a152-4cf2-4ed2-816b-88201816d69a/3.webp)
+![Image 4](../../../static/img/docs/aa52a152-4cf2-4ed2-816b-88201816d69a/4.webp)
 
 ## Output
 

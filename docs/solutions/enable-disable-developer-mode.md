@@ -4,7 +4,7 @@ slug: /b4452b00-9dfd-4ad8-b4fd-3ba7769ff674
 title: 'Enable/Disable Developer Mode'
 title_meta: 'Enable/Disable Developer Mode'
 keywords: ['developer', 'update', 'cf', 'status']
-description: 'This solution retrives the developer mode status from the machine and updates the result into the custom field. It also provides a script to enable the developer mode on the machine.'
+description: 'This solution retrives the developer mode status from the machine and updates the result into the custom field. It also contains a script that can enable or disable the developer mode on the machine.'
 tags: ['auditing', 'update','windows']
 draft: false
 unlisted: false
@@ -14,7 +14,7 @@ last_update:
 
 ## Purpose
 
-This solution retrives the developer mode status from the machine and updates the result into the custom field. It also provides a script to enable the developer mode on the machine.
+This solution retrives the developer mode status from the machine and updates the result into the custom field. It also contains a script that can enable or disable the developer mode on the machine.
 
 ## Associated Content
 
