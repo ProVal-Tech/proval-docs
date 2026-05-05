@@ -1,8 +1,8 @@
 ---
 id: '7eca9a7b-d09d-416d-8c04-3dab7776ba1b'
 slug: /7eca9a7b-d09d-416d-8c04-3dab7776ba1b
-title: 'cPVAL Developer Mode Status'
-title_meta: 'cPVAL Developer Mode Status'
+title: 'cPVAL_Developer_Mode_Status'
+title_meta: 'cPVAL_Developer_Mode_Status'
 keywords: ['cf', 'dveloper', 'status']
 description: 'This custom field is used to store the data of the dveloper mode status of the machine.'
 tags: ['auditing', 'update']
@@ -14,12 +14,12 @@ last_update:
 
 ## Summary
 
-This custom field is used to store the data of the developer mode status on the machine.
+This custom field stores that Developer Mode status gathered by the script [Check Developer Mode Status - CF](/docs/101362d2-15fb-4f85-b344-08986e7e12f3).
 
 ## Dependencies
 
 - [Agent Procedure: Check Developer Mode Status - CF](/docs/101362d2-15fb-4f85-b344-08986e7e12f3)
-- [Solution: Developer Mode Enable Solution](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
+- [Solution: Enable/Disable Developer Mode](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
 
 ## Details
 

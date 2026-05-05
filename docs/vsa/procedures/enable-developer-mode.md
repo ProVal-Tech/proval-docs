@@ -1,8 +1,8 @@
 ---
 id: 'aa52a152-4cf2-4ed2-816b-88201816d69a'
 slug: /aa52a152-4cf2-4ed2-816b-88201816d69a
-title: 'Enable Developer Mode'
-title_meta: 'Enable Developer Mode'
+title: 'Enable/Disable Developer Mode'
+title_meta: 'Enable/Disable Developer Mode'
 keywords: ['developer', 'mode', 'enable', 'procedure']
 description: 'This script is used to check the status of Developer mode and if its disable then it will enable on the Windows machine.'
 tags: ['auditing', 'update']
@@ -14,17 +14,17 @@ last_update:
 
 ## Summary
 
-This script is used to check the status of Developer mode and if its disable then it will enable on the Windows machine and will also validate after enable.
+This script checks the status of Developer mode and enables it if it is  disabled.
 
 ## Dependencies
 
 - PowerShell 5.0+
-- [Solution: Developer Mode Enable Solution](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
+- [Solution: Enable/Disable Developer Mode](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
 
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
-   **Name:** `Enable Developer Mode`   
+   **Name:** `Enable/Disable Developer Mode`   
    ![Image 1](../../../static/img/docs/aa52a152-4cf2-4ed2-816b-88201816d69a/1.webp)  
    The export will download the necessary XML file.
 

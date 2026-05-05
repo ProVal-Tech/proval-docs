@@ -14,13 +14,20 @@ last_update:
 
 ## Summary
 
-This script used to check the status of developer mode on the machine and update the result into the custom field on the windows machine.
+This script used to check the status of developer mode on the windows machine and update the result into the custom field [cPVAL_Developer_Mode_Status](/docs/7eca9a7b-d09d-416d-8c04-3dab7776ba1b).
 
 ## Dependencies
 
 - PowerShell 5.0+
 - [Custom Field: cPVAL_Developer_Mode_Status](/docs/7eca9a7b-d09d-416d-8c04-3dab7776ba1b)
-- [Solution: Developer Mode Enable Solution](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
+- [Solution: Enable/Disable Developer Mode](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
+
+## Variable
+
+`Developer Mode`: description  
+Accepted Values: 
+  - Enable: description
+  - Disable: Descripton
 
 ## Implementation
 
@@ -41,7 +48,7 @@ Now, You can execute the script on the machine in which you need to check status
 ## Output
 
 - Agent Procedure log
-- Custom Field - cPVAL_Developer_Mode_Status
+- Custom Field: `cPVAL_Developer_Mode_Status`
 
 ## Changelog
 
