@@ -4,17 +4,17 @@ slug: /101362d2-15fb-4f85-b344-08986e7e12f3
 title: 'Check Developer Mode Status - CF'
 title_meta: 'Check Developer Mode Status - CF'
 keywords: ['developer', 'mode', 'enable', 'procedure', 'cf']
-description: 'This script used to check the status of developer mode on the machine and update the result into the custom field on the windows machine.'
+description: 'This script used to check the status of Developer Mode on the machine and update the result into the custom field on the windows machine.'
 tags: ['auditing', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-01
+  date: 2026-05-05
 ---
 
 ## Summary
 
-This script used to check the status of developer mode on the windows machine and update the result into the custom field [cPVAL_Developer_Mode_Status](/docs/7eca9a7b-d09d-416d-8c04-3dab7776ba1b).
+This script used to check the status of Developer Mode on the windows machine and update the result into the custom field [cPVAL_Developer_Mode_Status](/docs/7eca9a7b-d09d-416d-8c04-3dab7776ba1b).
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ This script used to check the status of developer mode on the windows machine an
 
 ## Sample Run
 
-Now, You can execute the script on the machine in which you need to check status of the developer mode and it will update the result into the custom filed.
+Execute the script on the machine in which you need to check status of the Developer Mode and it will update the result into the custom filed.
 
 ![Image 3](../../../static/img/docs/101362d2-15fb-4f85-b344-08986e7e12f3/3.webp)
 
@@ -45,6 +45,6 @@ Now, You can execute the script on the machine in which you need to check status
 
 ## Changelog
 
-### 2026-05-01
+### 2026-05-05
 
   - Initial version of the document

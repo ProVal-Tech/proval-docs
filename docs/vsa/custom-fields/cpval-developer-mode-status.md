@@ -9,7 +9,7 @@ tags: ['auditing', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-01
+  date: 2026-05-05
 ---
 
 ## Summary
@@ -25,7 +25,7 @@ This custom field stores that Developer Mode status gathered by the script [Chec
 
 | Field Name | Type of Field | Description |
 | ---------- | --------------------------------------- | ----------- |
-| cPVAL_Developer_Mode_Status | Machine | Stores the developer mode status |
+| cPVAL_Developer_Mode_Status | Machine | Stores the Developer Mode status |
 
 ## Output
 
@@ -33,6 +33,6 @@ This custom field stores that Developer Mode status gathered by the script [Chec
 
 ## Changelog
 
-### 2026-05-01
+### 2026-05-05
 
 - Initial version of the document

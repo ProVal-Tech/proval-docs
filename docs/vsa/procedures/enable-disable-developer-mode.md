@@ -4,17 +4,17 @@ slug: /aa52a152-4cf2-4ed2-816b-88201816d69a
 title: 'Enable/Disable Developer Mode'
 title_meta: 'Enable/Disable Developer Mode'
 keywords: ['developer', 'mode', 'enable', 'procedure']
-description: 'This script is used to disable or enable the developer mode on the Windows machine as per the parameter, and before making any changes it will check the current status of developer mode.'
+description: 'This script enables or disables Developer Mode on a Windows machine based on the specified parameter.'
 tags: ['auditing', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-01
+  date: 2026-05-05
 ---
 
 ## Summary
 
-This script is used to disable or enable the developer mode on the Windows machine as per the parameter, and before making any changes it will check the current status of developer mode.
+This script enables or disables Developer Mode on a Windows machine based on the specified parameter.
 
 ## Dependencies
 
@@ -23,11 +23,11 @@ This script is used to disable or enable the developer mode on the Windows machi
 
 ## Variable
 
-`Developer Mode`: As per the accepted value, it will enable or disable the developer mode on the machine.
+**`Developer Mode`**: As per the accepted value, it will enable or disable the Developer Mode on the machine.
 
 Accepted Values: 
-  - Enable: It will used to enable the developer mode on the machine
-  - Disable: It will used to disable the developer mode on the machine.
+  - **Enable:** Enables the Developer Mode on the selected machine.
+  - **Disable:** Disables the Developer Mode on the selected machine.
 
 
 ## Implementation
@@ -42,9 +42,14 @@ Accepted Values:
 
 ## Sample Run
 
-Now, You can execute the script on the machine in which you want to enable the developer mode on the machine.
+**Example 1:**  
+Execute the script with `Developer Mode` = `Enable` to enable the Developer Mode on the machine.
 
 ![Image 3](../../../static/img/docs/aa52a152-4cf2-4ed2-816b-88201816d69a/3.webp)
+
+**Example 2:**  
+Execute the script with `Developer Mode` = `Disable` to Disable the Developer Mode on the machine.
+
 ![Image 4](../../../static/img/docs/aa52a152-4cf2-4ed2-816b-88201816d69a/4.webp)
 
 ## Output
@@ -53,6 +58,6 @@ Now, You can execute the script on the machine in which you want to enable the d
 
 ## Changelog
 
-### 2026-05-01
+### 2026-05-05
 
-  - Initial version of the document
+- Initial version of the document
