@@ -4,7 +4,7 @@ slug: /a3b9e312-b86e-4aa8-8fee-403cdf8bb863
 title: 'Clear Oversized Automation Logs'
 title_meta: 'Clear Oversized Automation Logs'
 keywords: ['logs', 'clear-logs', 'oversized-logs', 'automation-logs', 'log-flies']
-description: 'This monitor acts as a daily housekeeper for your computers, making sure our background tools don't leave behind too much clutter.'
+description: 'This monitor acts as a daily housekeeper for your computers, making sure our background tools don''t leave behind too much clutter.'
 tags: ['monitoring', 'windows']
 draft: false
 unlisted: false
