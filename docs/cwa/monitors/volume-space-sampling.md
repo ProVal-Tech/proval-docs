@@ -9,7 +9,7 @@ tags: ['alerting', 'disk', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-17
+  date: 2026-05-05
 ---
 
 ## Summary
@@ -26,7 +26,7 @@ The data returned by the monitor set is displayed by the [Volume Exhaustion Esti
 
 ## Monitor
 
-#### Status
+### Status
 
 ![Status](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_1.webp)
 
@@ -42,14 +42,19 @@ The data returned by the monitor set is displayed by the [Volume Exhaustion Esti
 
 ![Configuration](../../../static/img/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f/image_4.webp)
 
-**Executable/Arguments:** 
+**Executable/Arguments:**
+
 ```shell
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$WarningPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $ProjectName = 'Get-VolumeExhaustionEstimate'; $WorkingDirectory = \"C:\ProgramData\_Automation\Script\$ProjectName\"; $scriptpath = \"$($WorkingDirectory)\$($ProjectName).ps1\"; $scripturl = 'https://file.provaltech.com/repo/script/Get-VolumeExhaustionEstimate.ps1'; if (!(Test-Path $WorkingDirectory)) {mkdir $WorkingDirectory | Out-Null}; (New-Object System.Net.WebClient).DownloadFile($scripturl,$scriptpath); $op = & $scriptpath -MinimumSamples 30 -Path $WorkingDirectory -DaysToReport 14 -DaysToLead 7 -Quiet -Force; $exDate = ($op | Where-Object { $_.DriveLetter -eq 'C' }).ExhaustionEstimationDate; if ($exDate) { ($exdate).ToString('yyyy-MM-dd HH:mm:ss') }"
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "$WarningPreference = 'SilentlyContinue'; $ProgressPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [enum]::ToObject([Net.SecurityProtocolType], 3072); $projectName = 'Get-VolumeExhaustionEstimate'; $workingDirectory = '{0}\_Automation\Script\{1}' -f $env:ProgramData, $projectName; $scriptpath = '{0}\{1}.ps1' -f $workingDirectory, $projectName; $scripturl = 'https://contentrepo.net/repo/script/{0}.ps1' -f $projectName; if(-not (Test-Path -Path $workingDirectory)) { New-Item -Path $workingDirectory -ItemType 'Directory' -Force -Confirm:$false | Out-Null }; try { Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath -UseBasicParsing } catch { if (-not (Test-Path -Path $scriptPath)) { return $Error[0].Exception.Message } }; $op = & $scriptpath -MinimumSamples 30 -Path $WorkingDirectory -DaysToReport 7 -DaysToLead 2 -Quiet -Force; $exDate = ($op | Where-Object { $_.DriveLetter -eq 'C' }).ExhaustionEstimationDate; if ($exDate) { ($exdate).ToString( 'yyyy-MM-dd HH:mm:ss' ) }"
 ```
 
 _The parameter values highlighted in the provided example are regulated by the system properties and the Extra Data Fields (EDFs)._
 
 ## Changelog
+
+### 2026-05-05
+
+- Optimized the command
 
 ### 2025-04-10
 

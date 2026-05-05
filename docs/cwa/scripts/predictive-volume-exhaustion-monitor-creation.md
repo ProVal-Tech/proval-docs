@@ -9,7 +9,7 @@ tags: ['disk', 'setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-02-17
+  date: 2026-05-05
 ---
 
 ## Summary
@@ -17,6 +17,7 @@ last_update:
 The script is designed to set up the [Volume Space Prediction](/docs/e928f9f6-f97d-44f3-aad2-26186416fa1f) Remote Monitor for Windows machines. [Volume Space Sampling](/docs/3a441306-efbc-48a5-8732-06bfd56c9a5f) monitors will be created when the `Auditing` feature is active.
 
 The remote monitors are compatible with the following operating systems:
+
 - Windows 10
 - Windows 11
 - Windows Server 2016
@@ -129,6 +130,10 @@ It is a client script and is suggested to schedule it to run once per day for be
 - Remote Monitors
 
 ## Changelog
+
+### 2026-05-05
+
+- Optimized monitor's command
 
 ### 2025-04-10
 
