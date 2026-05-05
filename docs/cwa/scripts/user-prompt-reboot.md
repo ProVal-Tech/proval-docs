@@ -38,7 +38,7 @@ This script is designed to run only when triggered by [Reboot Pending [Prompt]](
 The following items depend on this script to function correctly:
 
 - [Solution - User Prompt For Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
-- [CWM - Automate - Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
+- [Script - Prompter](/docs/d8a124df-ea81-4194-82fc-a082c7a036d8)
 
 ### System Properties
 

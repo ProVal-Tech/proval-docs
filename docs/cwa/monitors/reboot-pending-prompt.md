@@ -30,11 +30,10 @@ The Monitor has all of the following conditions that must be met before it kicks
 
 ## Dependencies
 
-[Script - User Prompt - Reboot [Reboot, Param, Autofix]](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
-
-[Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
-
-[Monitor - Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18)
+- [Script - User Prompt - Reboot [Reboot, Param, Autofix]](/docs/1789b867-61db-436d-ac0b-07d5aac3f4b8)
+- [Script - Reset Reboot Pending EDFs](/docs/e188d9ff-44e7-40e5-a255-d7d2bf0e2f7c)
+- [Monitor - Reset Reboot Pending EDFs](/docs/79256871-2745-4096-8892-c4554926ed18)
+- [Solution - User Prompt For Reboot](/docs/32d2254e-c2a4-4f2d-a029-b74f6d3c8b1a)
 
 
 ## Target
