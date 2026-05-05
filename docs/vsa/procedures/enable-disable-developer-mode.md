@@ -23,9 +23,11 @@ This script is used to disable or enable the developer mode on the Windows machi
 
 ## Variable
 
-Enable : It will used to enable the developer mode on the machine
+`Developer Mode`: As per the accepted value, it will enable or disable the developer mode on the machine.
 
-Disable : It will used to disable the developer mode on the machine.
+Accepted Values: 
+  - Enable: It will used to enable the developer mode on the machine
+  - Disable: It will used to disable the developer mode on the machine.
 
 
 ## Implementation

@@ -22,13 +22,6 @@ This script used to check the status of developer mode on the windows machine an
 - [Custom Field: cPVAL_Developer_Mode_Status](/docs/7eca9a7b-d09d-416d-8c04-3dab7776ba1b)
 - [Solution: Enable/Disable Developer Mode](/docs/b4452b00-9dfd-4ad8-b4fd-3ba7769ff674)
 
-## Variable
-
-`Developer Mode`: description  
-Accepted Values: 
-  - Enable: description
-  - Disable: Descripton
-
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
