@@ -150,7 +150,7 @@ The CA2023 BIOS lookup data is sourced from official manufacturer support articl
 - **Update Status Check**: Ensure devices are running current cumulative updates
 - **Telemetry Reporting**: Audit telemetry enablement across the device fleet
 
-## Change Log
+## Changelog
 
 ### 2026-05-06
 
