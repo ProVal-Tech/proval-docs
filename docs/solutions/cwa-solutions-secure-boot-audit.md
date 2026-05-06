@@ -7,7 +7,7 @@ keywords: ['audit','bios','certificates','secureboot','windows']
 description: 'This solution helps to display the status of key certificate and configurations that will be needed before the current secure boot certificates expire.'
 tags: ['bios','certificates','secureboot','windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-10-06
 ---

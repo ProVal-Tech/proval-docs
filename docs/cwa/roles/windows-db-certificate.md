@@ -7,7 +7,7 @@ keywords: ['role','audit']
 description: 'Automate role to detect if a Windows agent has the updated 2023 DB Certificate'
 tags: ['windows','uefi','secureboot','certificates']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-10-03
 ---

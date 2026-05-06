@@ -7,7 +7,7 @@ keywords: ['role','audit','secure boot']
 description: 'Automate role to detect if a Windows agent has secure boot enabled'
 tags: ['windows','uefi','secureboot']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-09-29
 ---
