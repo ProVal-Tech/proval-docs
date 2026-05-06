@@ -51,10 +51,10 @@ The purpose of this solution is to identify a curated set of remote access tools
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) | Script | This script performs a comprehensive inventory of endpoints to identify a curated set of remote access tools. Set the `SetEnvironment` parameter to `1` during the initial execution of the script to create the system property. |
-| [Table - pvl_installed_remote_access_tools](/docs/122991ce-8d88-448b-a4a2-4bde95ccc149) | Custom Table | Stores the data to be displayed in the  [Dataview - Remote Access Tools Report](/docs/ee8f046e-a795-4850-b7f8-a18b4e1f2562). It is populated by the [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) |
-| [Dataview - Remote Access Tools Report](/docs/ee8f046e-a795-4850-b7f8-a18b4e1f2562) | Custom Table | Displays the lists remote access tools detected on systems |
-| [Internal Monitor - Execute Script -  Get Installed Remote Access Tools](/docs/c31b954a-fe64-4790-8cc0-5b86f5519ad0) | Internal Monitor | Executes the [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) script once weekly against the Windows machines. |
+| [Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) | Script | This script performs a comprehensive inventory of endpoints to identify a curated set of remote access tools. Set the `SetEnvironment` parameter to `1` during the initial execution of the script to create the system property. |
+| [pvl_installed_remote_access_tools](/docs/122991ce-8d88-448b-a4a2-4bde95ccc149) | Custom Table | Stores the data to be displayed in the  [Dataview - Remote Access Tools Report](/docs/ee8f046e-a795-4850-b7f8-a18b4e1f2562). It is populated by the [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) |
+| [Remote Access Tools Report](/docs/ee8f046e-a795-4850-b7f8-a18b4e1f2562) | Custom Table | Displays the lists remote access tools detected on systems |
+| [Execute Script -  Get Installed Remote Access Tools](/docs/c31b954a-fe64-4790-8cc0-5b86f5519ad0) | Internal Monitor | Executes the [Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a2e-b230-2392f5ad364e) script once weekly against the Windows machines. |
 | **`△ Custom - Execute Script - Get Installed Remote Access Tools`** | Alert Template | Alert Template to be used with [Internal Monitor - Execute Script -  Get Installed Remote Access Tools](/docs/c31b954a-fe64-4790-8cc0-5b86f5519ad0) |
 
 ## Implementation
