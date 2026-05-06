@@ -149,3 +149,9 @@ The CA2023 BIOS lookup data is sourced from official manufacturer support articl
 - **Boot Configuration Review**: Detect unauthorized boot loaders or network boot options
 - **Update Status Check**: Ensure devices are running current cumulative updates
 - **Telemetry Reporting**: Audit telemetry enablement across the device fleet
+
+## Change Log
+
+### 2026-05-06
+
+- Initial version of the document
