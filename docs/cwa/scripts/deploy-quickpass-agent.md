@@ -101,6 +101,10 @@ Failed to download Quickpass-Agent-Setup.exe on %computername% at %clientname%. 
 
 ## Changelog
 
+### 2026-05-07
+
+- Updated the logic to autoclose the existing ticket if the deployment is successful.
+
 ### 2026-03-06
 
 - Updated the script to fetch the EDFs and system property value using SQL rather than script functionality.
