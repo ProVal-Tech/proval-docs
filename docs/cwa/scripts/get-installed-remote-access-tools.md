@@ -17,9 +17,9 @@ This script performs a comprehensive inventory of endpoints to identify a curate
 
 Optional exclusions can be configured using a System Property, allowing flexibility in tailoring the results.
 
-The collected data is then stored in the custom table pvl_installed_remote_access_tools for reporting and further analysis.
+The collected data is then stored in the custom table [pvl_installed_remote_access_tools](/docs/122991ce-8d88-448b-a4a2-4bde95ccc149) for reporting and further analysis.
 
-Supported tool display names (use exact spelling when excluding): 
+Supported tool display names (*use exact spelling when excluding*): 
 
 - `AeroAdmin`
 - `Ammyy Admin`

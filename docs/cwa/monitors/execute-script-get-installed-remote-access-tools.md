@@ -26,7 +26,7 @@ Executes the [Script - Get Installed Remote Access Tools](/docs/f65c8e46-3df5-4a
 
 ## Alert Template
 
-**Name:** `△ Custom - Execute Script - Get Installed Remote Access Tools`
+`△ Custom - Execute Script - Get Installed Remote Access Tools`
 
 ## Changelog
 

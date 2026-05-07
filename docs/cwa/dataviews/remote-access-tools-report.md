@@ -63,6 +63,8 @@ Supported tool display names :
 |  Machine Name       | Name of the machine |
 |  Client             | Name of the client |
 |  Location           | Name of the location |  
+|  OS                 | Name of the operating system |
+|  Last Contact       | Last contact in Automate |
 |  Tool Name          | Name of the Remote Access Tool |
 |  Installed          | Installation status of the Remote Access Tool |
 |  CurrentlyRunning   | Current running status of the Remote Access Tool |
