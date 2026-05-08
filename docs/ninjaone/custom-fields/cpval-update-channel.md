@@ -14,13 +14,18 @@ last_update:
 
 ## Summary
 
-Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None.
+Select the `Update Channel` from the drop-down menu to set for the computer. Available options are: 
+- Current Channel
+- Monthly Enterprise Channel
+- Semi-Annual Enterprise Channel
+- Beta Channel
+- None
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Update Channel | cpvalEndpointUpdateChannel | Organization/Device/Location | Drop-down | False | | `Editable` | `Read/Write` | `Read/Write`| Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None. | Select Channel Type from the drop-down menu for that particular computer. | Select Channel Type from the drop-down menu for that particular computer. | Set Update Channel |
+| cPVAL Update Channel | cpvalEndpointUpdateChannel | Organization/Device/Location | Drop-down | False | | `Editable` | `Read/Write` | `Read/Write`| Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None. | Select Channel Type from the drop-down menu. | Select Channel Type from the drop-down menu. | Set Update Channel |
 
 ## Dependencies
 
