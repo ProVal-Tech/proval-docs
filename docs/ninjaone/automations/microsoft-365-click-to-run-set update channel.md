@@ -43,7 +43,7 @@ If the registry path does not exist, it will be created automatically.
 
 ## Dependencies
 
-
+- [Solution - Microsoft 365 - Click-to-Run - Set Update Channel](/docs/2b379cba-388e-4980-834b-f7f6654efe3b)
 
 ## Parameters
 
@@ -53,7 +53,7 @@ If the registry path does not exist, it will be created automatically.
 
 ## Automation Setup/Import
 
-[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/microsoft-365-click-to-run-set update channel.ps1)
+[Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/microsoft-365-click-to-run-set-update-channel.ps1)
 
 ## Output
 
