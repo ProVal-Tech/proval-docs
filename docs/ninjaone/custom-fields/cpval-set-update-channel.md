@@ -1,8 +1,8 @@
 ---
 id: '203a58a8-4041-4d8a-bbfc-c7f0f6b3531f'
 slug: /203a58a8-4041-4d8a-bbfc-c7f0f6b3531f
-title: 'cPVAL Update Channel'
-title_meta: 'cPVAL Update Channel'
+title: 'cPVAL Set Update Channel'
+title_meta: 'cPVAL Set Update Channel'
 keywords: ['microsoft','update','channel','registry','custom','field']
 description: 'Select Channel Type from the drop-down menu for that particular computer.'
 tags: ['registry','update','custom-fields']
@@ -25,7 +25,7 @@ Select the `Update Channel` from the drop-down menu to set for the computer. Ava
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Update Channel | cpvalEndpointUpdateChannel | Organization/Device/Location | Drop-down | False | | `Editable` | `Read/Write` | `Read/Write`| Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None. | Select Channel Type from the drop-down menu. | Select Channel Type from the drop-down menu. | Set Update Channel |
+| cPVAL Set Update Channel | cpvalSetUpdateChannel | Organization/Device/Location | Drop-down | False | | `Editable` | `Read/Write` | `Read/Write`| Select the Update Channel from the drop-down menu to set for the computer. Available options are: Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, Beta Channel, None. | Select Channel Type from the drop-down menu. | Select Channel Type from the drop-down menu. | Set Update Channel |
 
 ## Dependencies
 
@@ -37,7 +37,7 @@ Select the `Update Channel` from the drop-down menu to set for the computer. Ava
 
 ## Sample Screenshot
 
-![Image1](../../../static/img/docs/203a58a8-4041-4d8a-bbfc-c7f0f6b3531f/update%20channel.webp)
+![Image1](../../../static/img/docs/203a58a8-4041-4d8a-bbfc-c7f0f6b3531f/set-custom-field.webp)
 
 ## Changelog
 
