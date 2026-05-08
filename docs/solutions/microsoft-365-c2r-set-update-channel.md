@@ -60,7 +60,7 @@ Create Automation:
 
 ### Q3. How is the update channel selected?
 
-`Ans:` The update channel is selected using the NinjaOne Custom Field: `cPVAL Update Channel`. The script can also use the environment variable:  `ChannelUpdate`
+`Ans:` The update channel is selected using the NinjaOne Custom Field: `cPVAL Set Update Channel`. The script can also use the environment variable:  `ChannelUpdate`
 
 ### Q4. Does this script require administrator privileges?
 

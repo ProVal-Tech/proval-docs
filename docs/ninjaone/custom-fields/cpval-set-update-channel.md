@@ -33,7 +33,7 @@ Select the `Update Channel` from the drop-down menu to set for the computer. Ava
 
 ## Custom Field Creation
 
-- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/microsoft-365-click-to-run-set-update-channel.toml)
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-set-update-channel.toml)
 
 ## Sample Screenshot
 
