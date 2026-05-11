@@ -6,7 +6,7 @@ title_meta: 'HyperV Replication State Alert'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
 description: 'This compound condition is built to create the ticket if the Hyper-V replicate state is unhealthy.'
 tags: ['hyper-v', 'backup']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2025-12-09

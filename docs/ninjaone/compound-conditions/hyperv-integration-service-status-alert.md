@@ -6,7 +6,7 @@ title_meta: 'HyperV Integration Service Status Alert'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
 description: 'This compound condition is built to create the ticket if the Hyper-V Integration service state is out of date.'
 tags: ['hyper-v', 'backup']
-draft: true
+draft: false
 unlisted: false
 last_update:
   date: 2025-12-09
