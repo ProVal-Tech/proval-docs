@@ -39,9 +39,9 @@ Please follow the steps below to add the necessary custom fields or additional c
 
 - [How-to Guide URL](/docs/71f3f71d-d6d1-4563-8476-92bbe9df55fa)
 
-Add the below custom fields or additional columns under the Group View:
+Add the below custom field under the Group View:
  
-- [Custom Field - cpval Windows License Check](/docs/6d9eacd6-a4e1-474c-bdee-02b753001ac3)
+- [cPVAL Windows License Check](/docs/6d9eacd6-a4e1-474c-bdee-02b753001ac3)
 
 ### Group Screenshot
 

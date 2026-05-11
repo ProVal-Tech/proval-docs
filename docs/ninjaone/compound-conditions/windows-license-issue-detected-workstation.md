@@ -1,8 +1,8 @@
 ---
 id: 'c26e9e39-1e15-44fa-acfe-0deae7c10cdb'
 slug: /c26e9e39-1e15-44fa-acfe-0deae7c10cdb
-title: 'Windows License Issue Detected'
-title_meta: 'Windows License Issue Detected'
+title: 'Windows License Issue Detected - Workstations'
+title_meta: 'Windows License Issue Detected - Workstations'
 keywords: ['licensing', 'windows']
 description: 'This compound condition detects the Windows workstation agent where the license status is `Unlicensed` or `NonGenuineGrace`.'
 tags: ['licensing', 'windows']

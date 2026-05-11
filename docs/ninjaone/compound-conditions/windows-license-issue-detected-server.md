@@ -1,8 +1,8 @@
 ---
 id: '898da82d-b3db-4402-b15d-d62a72dab942'
 slug: /898da82d-b3db-4402-b15d-d62a72dab942
-title: 'Windows License Issue Detected'
-title_meta: 'Windows License Issue Detected'
+title: 'Windows License Issue Detected - Server'
+title_meta: 'Windows License Issue Detected - Server'
 keywords: ['licensing', 'windows']
 description: 'This compound condition detects the Windows server agent where the license status is `Unlicensed` or `NonGenuineGrace`.'
 tags: ['licensing', 'windows']

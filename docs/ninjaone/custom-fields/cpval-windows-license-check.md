@@ -19,7 +19,7 @@ This stores the Windows License Status of the Windows machine.
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cpval Windows License Check | cpvalWindowsLicenseCheck | `Device` | Text | False |  | Read Only | Read/Write | Read/Write | This stores the Windows License Status of the Windows machine. |  |  | Windows Audit |
+| cpval Windows License Check | cpvalWindowsLicenseCheck | `Device` | Text | False |  | Read Only | Read/Write | Read/Write | This stores the Windows License Status of the Windows machine. | This stores the Windows License Status of the Windows machine. | This stores the Windows License Status of the Windows machine. | Windows Audit |
 
 ## Dependencies
 

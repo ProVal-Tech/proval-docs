@@ -14,7 +14,7 @@ last_update:
 
 ## Overview
 
-This script checks and returns the Windows License Status via CIMInstance.
+This script checks and returns the Windows License Status via CIMInstance and updates the [Custom Field - cpval Windows License Check](/docs/6d9eacd6-a4e1-474c-bdee-02b753001ac3).
 
 ## Sample Run
 
