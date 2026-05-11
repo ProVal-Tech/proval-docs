@@ -9,20 +9,18 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-06
+  date: 2026-05-11
 ---
 
 ## Summary
 
 This monitor disables the `Smart App Control` on Windows 11 22H2 and later machines.
 
-**CAUTION :** `Disabling SAC is permanent without a Windows reset, which can cause data loss if files aren’t backed up.`
-
 ## Details
 
 **Suggested "Limit to"**: `Windows 11 22H2 and later`  
 **Suggested Alert Style**: `Once`  
-**Suggested Alert Template**: `-`
+**Suggested Alert Template**: `Default - Do Nothing`
 
 | Check Action | Server Address | Check Type | Execute Info | Comparator | Interval | Result            |
 |--------------|----------------|------------|---------------|------------|----------|-------------------|
@@ -38,11 +36,9 @@ This monitor disables the `Smart App Control` on Windows 11 22H2 and later machi
 
 ![Screenshot](../../../static/img/docs/59d4d082-1d52-4d3f-a070-e327be384177/image2.webp)
 
-## How To Import
+## Implementation
 
-## Steps to Set Up Remote Monitor
-
-### 1. Execute SQL Query to create Search
+### Step 1. Execute SQL Query to create Search
 Run the following SQL query from a RAWSQL monitor set to import the required search:
 
 ```sql
@@ -62,7 +58,7 @@ FROM (SELECT MIN(computerid) FROM computers) a
 WHERE (SELECT COUNT(*) FROM SensorChecks WHERE `GUID` = '734f83ad-cebc-4781-867b-22f01ab40fef') = 0;
 ```
 
-### 2. Execute SQL Query to create Remote Monitor
+### Step 2. Execute SQL Query to create Remote Monitor
 
 Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)**' with the Group ID(s) of the relevant groups:  
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
@@ -70,7 +66,6 @@ Copy the following query and replace '**YOUR COMMA SEPARATED LIST OF GROUPID(S)*
 This will limit the monitor to `Machines eligible to disable Smart App Control` search on the groups.
 
 ```sql
-SET @Groupid = (SELECT GroupID FROM mastergroups WHERE guid = '3ac1c025-f1fb-11e1-b4ec-1231391d2d19');
 SET @Searchid = (SELECT sensid from sensorchecks where GUID = '734f83ad-cebc-4781-867b-22f01ab40fef');
 INSERT INTO groupagents 
  SELECT '' as `AgentID`,
@@ -84,7 +79,7 @@ INSERT INTO groupagents
 '3600' as `interval`,
 '127.0.0.1' as `Where`,
 '7' as `What`,
-'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference=\'Stop\'; $path = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\CI\\Policy\'; $name = \'VerifiedAndReputablePolicyState\';Set-ItemProperty -Path $path -Name  $name -Value 0 -Type DWord;if ((Get-ItemProperty -Path $path  -Name  $name).VerifiedAndReputablePolicyState -ne 0){ throw \'Failed to disable Smart App Control\' }"' as `DataOut`,
+'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy Bypass -Command "$ErrorActionPreference=\'SilentlyContinue\'; $path = \'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\CI\\Policy\'; $name = \'VerifiedAndReputablePolicyState\';Set-ItemProperty -Path $path -Name  $name -Value 0 -Force -Confirm:$false;if ((Get-ItemProperty -Path $path  -Name  $name).$name -ne 0){ throw \'Failed to disable Smart App Control\' }"' as `DataOut`,
 '16' as `Comparor`,
 '10|(^(()%7C %7C(OK)%7C(\\r\\n))$)|11|(^(()%7C %7C(OK)%7C(\\r\\n))$)%7CFailed to disable|10|Failed to disable' as `DataIn`,
 '' as `IDField`,
@@ -102,11 +97,12 @@ WHERE m.groupid IN (YOUR COMMA SEPARATED LIST OF GROUPID(S))
 AND m.groupid NOT IN  (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'ProVal - Production - Disable Smart App Control')
 ```
 
-### 3. Locate Your Remote Monitor
-Locate your remote monitor by opening the group(s) remote monitors tab
+### Step 3. Locate Your Remote Monitor
+
+Locate your remote monitor by opening the group(s) remote monitors tab and confirm that alert template is set to `Default - Do Nothing`
 
 ## Changelog
 
-### 2026-05-06
+### 2026-05-11
 
 - Initial version of the document
