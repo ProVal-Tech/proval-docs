@@ -34,18 +34,7 @@ The purpose of this solution is to check the MS Office Version installed on the 
 - Create the [cPVAL Office Edition](/docs/4fad4211-7766-4d7a-af20-8d00123d2fa1)   using the implementation instruction provided in the document.
 - Create the [cPVAL Windows Office Version](/docs/8e9b5d24-2b9c-46bc-8d3a-5f4f67f1a638) using the implementation instruction provided in the document.
 
-## Changelog
-
-### 2026-05-12
-
-Enhanced Microsoft Office detection script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
-
-### 2025-12-12
-
-- Initial version of the document
-
-
-### FAQ
+## FAQ
 
 Q1: What does this script detect?
 
@@ -70,3 +59,13 @@ Q5: Which custom fields are updated by this script?
 cpvalOfficeVersion
 cpvalOfficeEdition
 cpvalOfficeBitness
+
+## Changelog
+
+### 2026-05-12
+
+Enhanced Microsoft Office detection script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
+
+### 2025-12-12
+
+- Initial version of the document
