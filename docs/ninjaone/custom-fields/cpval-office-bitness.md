@@ -5,7 +5,7 @@ title: 'cPVAL Office Bitness'
 title_meta: 'cPVAL Office Bitness'
 keywords: ['microsoft','365','bitness','office']
 description: 'Office version installed on the machine fetched by `Get Office Version` script.'
-tags: ['office365', 'software', 'update' , 'Custom-fields']
+tags: ['office365', 'software', 'update' , 'custom-fields']
 draft: false
 unlisted: false
 last_update:
