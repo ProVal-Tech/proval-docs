@@ -14,18 +14,18 @@ last_update:
 
 ## Summary
 
-This custom field stores the Hyper-V replication status detail fetched from the [Script - HyperV Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2).
+This custom field stores the Hyper-V replication status detail fetched from the [Script - Hyper-V Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2).
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Hyper-V Replication Status | cpvalHypervReplicationStatus | `Device` | Multi-line | False |  | Read Only | Read/Write | Read/Write | This custom field stores the Hyper-V replication status detail fetched from the [Script - HyperV Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2). |  |  | Hyper-V |
+| cPVAL Hyper-V Replication Status | cpvalHypervReplicationStatus | `Device` | Multi-line | False |  | Read Only | Read/Write | Read/Write | This custom field stores the Hyper-V replication status detail fetched from the [Script - Hyper-V Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2). |  |  | Hyper-V |
 
 ## Dependencies
 
-- [Script - HyperV Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2)
-- [Solution - HyperV Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
+- [Script - Hyper-V Replication Audit](/docs/d3e74048-d274-4fe7-8501-c826822707b2)
+- [Solution - Hyper-V Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
 
 ## Custom Field Creation
 

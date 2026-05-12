@@ -1,8 +1,8 @@
 ---
 id: 'cb29253d-d6da-40c9-981a-d2568ddab859'
 slug: /cb29253d-d6da-40c9-981a-d2568ddab859
-title: 'HyperV Integration Service Status Alert'
-title_meta: 'HyperV Integration Service Status Alert'
+title: 'Hyper-V Integration Service Status Alert'
+title_meta: 'Hyper-V Integration Service Status Alert'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
 description: 'This compound condition is built to create the ticket if the Hyper-V Integration service state is out of date.'
 tags: ['hyper-v', 'backup']
@@ -18,13 +18,13 @@ This compound condition is built to create the ticket if the Hyper-V Integration
 
 ## Details
 
-- **Name:** `HyperV Integration Service Status Alert`
+- **Name:** `Hyper-V Integration Service Status Alert`
 - **Description:** `This compound condition is built to create the ticket if the Hyper-V Integration service state is out of date.`
 - **Recommended Agent Policies:** `Windows Server Policy`
 
 ## Dependencies
 
-- [Solution - HyperV Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
+- [Solution - Hyper-V Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
 
 ## Compound Condition Creation 
 

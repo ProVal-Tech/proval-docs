@@ -1,8 +1,8 @@
 ---
 id: 'b45bf0c6-d41b-474a-bea9-8e8f020fcf02'
 slug: /b45bf0c6-d41b-474a-bea9-8e8f020fcf02
-title: 'HyperV Replication State Alert'
-title_meta: 'HyperV Replication State Alert'
+title: 'Hyper-V Replication State Alert'
+title_meta: 'Hyper-V Replication State Alert'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
 description: 'This compound condition is built to create the ticket if the Hyper-V replicate state is unhealthy.'
 tags: ['hyper-v', 'backup']
@@ -24,7 +24,7 @@ This compound condition is built to create the ticket if the Hyper-V replicate s
 
 ## Dependencies
 
-- [Solution - HyperV Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
+- [Solution - Hyper-V Replication Integration Alert](/docs/4deaf362-a762-4a05-9118-326edc7ff523)
 
 ## Compound Condition Creation 
 
