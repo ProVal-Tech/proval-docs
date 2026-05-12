@@ -14,15 +14,15 @@ last_update:
 
 ## Purpose
 
-This Solution detectes if Huntress Agent is Orphaned or not. By Orphaned it means Huntress has not received a response from the agent within 30 days and the Agent's key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
+This solution detects if Huntress Agent is Orphaned or not. By Orphaned it means Huntress has not received a response from the agent within 30 days and the Agent's key/token has been revoked by Huntress. At that point, the agent is unable to send or receive any data from the Huntress portal and is essentially not performing security tasks anymore.
 
 ## Associated Content
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [Automation - Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1)     | Automation | Detects if Huntress Agent is Orphaned or not.  |
-| [Condition - Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)     | Condition | Executes [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1) automation once in a day on machines with Huntress Agent.  |
-| [Ticket Template - Unresponsive Huntress Agents](/docs/6a332f26-d519-41c2-b38e-7b84ada2edbb)     | Ticket Template | Configures how a ConnectWise Manage ticket will be generated in response to the [Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162) condition. |
+| [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1)     | Automation | Detects if Huntress Agent is Orphaned or not.  |
+| [Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)     | Condition | Executes [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1) automation once in a day on machines with Huntress Agent.  |
+| [Unresponsive Huntress Agents](/docs/6a332f26-d519-41c2-b38e-7b84ada2edbb)     | Ticket Template | Configures how a ConnectWise Manage ticket will be generated in response to the [Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162) condition. |
 
 ## Implementation
 
