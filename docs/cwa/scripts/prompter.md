@@ -9,7 +9,7 @@ tags: ['application']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-03-23
+  date: 2026-05-12
 ---
 
 ## Summary
@@ -24,6 +24,7 @@ This script is a function script and should not be manually executed. Utilize th
 
 - [App - Prompter](/docs/aba254a9-e917-481d-9152-ecb6e990d98c)
 - [Script - Prompter - Template](/docs/e6f6f344-5f75-4794-84d9-86b110206089)
+- [Script - Optimize-DotNetRuntime](/docs/6ec8fb3c-29ef-4b05-b8fd-546eb07176c7)
 
 ## Variables
 
@@ -54,6 +55,11 @@ This script is a function script and should not be manually executed. Utilize th
 - Script Variable
 
 ## Changelog
+
+### 2026-05-12
+
+- Updated the application to automatically support newer .NET versions (like .NET 9 and 10), ensuring long-term stability and preventing future disruptions.
+- Updated the script to install .Net 10 desktop runtime.
 
 ### 2026-03-23
 

