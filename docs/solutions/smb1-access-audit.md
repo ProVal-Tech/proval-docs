@@ -20,19 +20,29 @@ This solution monitors servers for SMB1 protocol usage. It enables SMB1 access a
 
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)      | Automation| Enables SMB1 access auditing if disabled and scans event logs for recent SMB1 access attempts (Event IDs 1001, 3000) within the last hour. Returns exit codes for detection or script failure. |
+| [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)      | Script | Enables SMB1 access auditing if disabled and scans event logs for recent SMB1 access attempts (Event IDs 1001, 3000) within the last hour. Returns exit codes for detection or script failure. |
 |[SMB1 Traffic Audit](/docs/f6b984a2-acbe-40fa-93e3-43682acde7ca)|Compound Condition| This Compound Condition creates an alert on Servers with SMB1 Protocol enabled and if SMB1 access attempts (Event IDs 1001, 3000) is detected within the last hour|
+
+## Additional Content
+
+| Content                                             | Type                                                      | Function                                               |
+|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
+| [Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6)      | Solution | This document details the procedure for categorizing servers into suitable groups according to their installed roles. The above SMB1 solution compound condition is dependent on this solution to run properly so that it can trigger the alert for them once the roles for the SMB1 is detected and stored to the [Custom field - cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba). |
+
 
 ## Implementation
 
 To implement this solution, follow the steps below:
 
-**1. Import the Automation** – Start by importing the [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)
+**1. Import the Solution and schedule the task** – Import the [Solution - Server Roles Detection and Grouping for NinjaOne](/docs/56ed4b40-11ce-4f8d-b1ca-c897d2c496e6).
+Ensure the [Script - Windows Server Roles Detection](/docs/5cda8c79-bcd0-4226-b5a4-db846b9b35a9), [Custom field - cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba), and [Group - cPVAL Windows Server](/docs/c73e004e-6a9c-40e4-8e74-babb4b729256) are created and the [Task - Windows Server Roles Detection](/docs/8bbf34f6-8c05-4776-9f8c-c589944b4042) is scheduled so that [Custom field - cPVAL Roles Detected](/docs/e9ec73dd-98b1-4436-a027-4ee8906f7cba) is updated with the `SMB1 Server` roles.
+
+**2. Import the Automation** – Start by importing the [SMB1 Access Audit And Detection](/docs/a65607e3-42b0-473c-bf09-36e63107a835)
  automation into the Ninja environment.
 
     This script enables SMB1 access auditing (if disabled) and scans for SMB1 access attempts in the last hour.
 
-**2. Import the Compound Condition** – Next, import the [SMB1 Traffic Audit](/docs/f6b984a2-acbe-40fa-93e3-43682acde7ca)
+**3. Import the Compound Condition** – Next, import the [SMB1 Traffic Audit](/docs/f6b984a2-acbe-40fa-93e3-43682acde7ca)
  compound condition.
 
     This condition will trigger an alert when SMB1 is enabled and recent access attempts are detected.
@@ -68,6 +78,10 @@ If activity is detected, review the source of the access. It’s recommended to 
 
 ## Changelog
 
+### 2026-05-12
+
+- Updated the document with the ps1, compound condition, custom field, and various other modifications that was created earlier with the older template.
+  
 ### 2025-10-29
 
 - Initial version of the document

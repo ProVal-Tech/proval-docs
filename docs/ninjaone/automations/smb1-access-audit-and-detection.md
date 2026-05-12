@@ -39,6 +39,10 @@ Enables SMB1 access auditing if disabled and scans event logs for recent SMB1 ac
 
 ## Changelog
 
+### 2026-05-12
+
+- Updated the PS1 file to include the exitcode feature for the Ninja to function properly during compound conditions script results check.
+
 ### 2025-10-29
 
 - Initial version of the document
