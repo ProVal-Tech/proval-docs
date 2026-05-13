@@ -17,9 +17,9 @@ Runs the [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544
 
 ## Details
 
-**Name:** `Detect Unresponsive Huntress Agents`
-**Description:**  `Runs the Unresponsive Huntress Agents automation on machines with Huntress Agent.`
-**Recommended Agent Policies:**  `Windows Workstation\Windows Server`
+- **Name:** `Detect Unresponsive Huntress Agents`
+- **Description:**  `Runs the Unresponsive Huntress Agents automation on machines with Huntress Agent.`
+- **Recommended Agent Policies:**  `Windows Workstation\Windows Server`
 
 ## Dependencies
 
