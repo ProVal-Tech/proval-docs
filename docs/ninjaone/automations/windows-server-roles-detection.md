@@ -9,7 +9,7 @@ tags: ['custom-fields']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-31
+  date: 2026-05-12
 ---
 
 ## Overview
@@ -50,7 +50,7 @@ Search and select `Windows Server Roles Detection`
 
 ### 2026-05-12
 
-- Created the PS1 file and added that to the script to satisfy the new template.
+- Updated the document with configuration steps
 
 ### 2025-10-31
 

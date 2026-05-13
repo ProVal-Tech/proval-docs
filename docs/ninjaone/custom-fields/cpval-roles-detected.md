@@ -18,9 +18,9 @@ This custom field stores the list of roles detected on a Windows server.
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---------- | ---------------- | ---- | -------- |  --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL Roles Detected | cpvalRolesDetected | Device | Multi-line | No | Editable | Read/Write | Read/Write | This custom field stores the list of roles detected on a Windows machine. | Stores the list of roles detected on the computer. | Detected Roles |
+| Label | Field Name | Definition Scope | Type | Required | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | -------- |  --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |----------- |
+| cPVAL Roles Detected | cpvalRolesDetected | Device | Multi-line | No | Editable | Read/Write | Read/Write | This custom field stores the list of roles detected on a Windows machine. | Stores the list of roles detected on the computer. | Detected Roles | Windows Server Roles Detection |
 
 ## Dependencies
 
@@ -39,7 +39,7 @@ This custom field stores the list of roles detected on a Windows server.
 
 ### 2026-05-12
 
-- Created the toml file that was missing and updated the document.
+- Updated the document with the configuration steps 
 
 ### 2025-03-28
 

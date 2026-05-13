@@ -9,7 +9,7 @@ tags: ['alerting', 'auditing', 'eventlogs', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-31
+  date: 2026-05-12
 ---
 
 ## Summary
@@ -33,7 +33,7 @@ This Compound Condition creates an alert on Servers with SMB1 Protocol enabled a
 
 ### 2026-05-12
 
-- Created the compound condition toml file and added the custom field check that was missing from it and updated the document.
+- Updated the document with configuration steps
 
 ### 2025-10-29
 

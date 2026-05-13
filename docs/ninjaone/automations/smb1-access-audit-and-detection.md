@@ -9,7 +9,7 @@ tags: ['alerting', 'auditing', 'eventlogs', 'smb']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-10-29
+  date: 2026-05-12
 ---
 
 ## Overview
@@ -41,7 +41,7 @@ Enables SMB1 access auditing if disabled and scans event logs for recent SMB1 ac
 
 ### 2026-05-12
 
-- Updated the PS1 file to include the exitcode feature for the Ninja to function properly during compound conditions script results check.
+- Updated the script to include the exit code feature for the Ninja to function properly during compound conditions script results check.
 
 ### 2025-10-29
 
