@@ -9,7 +9,7 @@ tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-11
+  date: 2026-05-11
 ---
 
 ## Overview
@@ -53,6 +53,10 @@ Attempts to install the modules selected in [cPVAL Cisco Secure Client Modules](
 - Activity Details
 
 ## Changelog
+
+### 2026-05-11
+
+- Fixed URL comparison Regex
 
 ### 2025-11-17
 
