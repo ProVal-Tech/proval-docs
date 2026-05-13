@@ -9,7 +9,7 @@ tags: ['security','windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-12
+  date: 2026-05-13
 ---
 
 ## Summary
@@ -25,14 +25,13 @@ Runs the [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544
 
 - [Solution - Unresponsive Huntress Agent Detection](/docs/48618a4c-997d-4dbc-83ef-cc1bf1ead6c4)  
 
+## Compound Condition Creation 
 
-## Condition Creation
-
-[Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/conditions/detect-unresponsive-huntress-agents.toml)
+- [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/detect-unresponsive-huntress-agents.toml)
 
 
 ## Changelog
 
-### 2026-05-12
+### 2026-05-13
 
 - Initial version of the document

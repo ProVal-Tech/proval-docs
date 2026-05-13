@@ -21,14 +21,14 @@ This Solution detectes if Huntress Agent is Orphaned or not. By Orphaned it mean
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Automation - Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1)     | Automation | Detects if Huntress Agent is Orphaned or not.  |
-| [Condition - Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)     | Condition | Executes [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1) automation once in a day on machines with Huntress Agent.  |
+| [Compound Condition - Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)     | Compound Condition | Executes [Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1) automation once in a day on machines with Huntress Agent.  |
 | [Ticket Template - Unresponsive Huntress Agents](/docs/6a332f26-d519-41c2-b38e-7b84ada2edbb)     | Ticket Template | Configures how a ConnectWise Manage ticket will be generated in response to the [Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162) condition. |
 
 ## Implementation
 
 - Create the [Automation - Unresponsive Huntress Agents](/docs/30da4898-4cc5-4cd0-9536-f594192544b1) 
 - Create the [Ticket Template - Unresponsive Huntress Agents](/docs/6a332f26-d519-41c2-b38e-7b84ada2edbb)  
-- Create the [Condition - Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)  
+- Create the [Compound Condition - Detect Unresponsive Huntress Agents](/docs/13e97aa8-f0f4-4667-9edd-cbd5f460f162)  
 
 ## Changelog
 
