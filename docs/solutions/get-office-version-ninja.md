@@ -36,35 +36,31 @@ The purpose of this solution is to check the MS Office Version installed on the 
 
 ## FAQ
 
-Q1: What does this script detect?
+**Q1: What does this script detect?**
 
 `Ans`: This script detects the installed Microsoft Office version on a Windows machine, including edition (MSI or Click-to-Run) and bitness (32-bit or 64-bit).
 
-Q2: Does it support Microsoft 365 detection?
+**Q2: Does it support Microsoft 365 detection?**
 
 `Ans`: Yes, the script accurately detects Microsoft 365 Apps using Click-to-Run (C2R) registry information and ProductReleaseIds.
 
-Q3: What happens if Office is not detected?
+**Q3: What happens if Office is not detected?**
 
 `Ans`: If Office is not detected, the custom fields are set to undetermined to ensure consistent output.
 
-Q4: Does the script support both MSI and Click-to-Run installations?
+**Q4: Does the script support both MSI and Click-to-Run installations?**
 
 `Ans`: Yes, the script primarily uses Click-to-Run registry detection and falls back to ASSOC/FTYPE methods for MSI-based installations.
-
-Q5: Which custom fields are updated by this script?
-
-`Ans`: The script updates the following three custom fields:
-
-cpvalOfficeVersion
-cpvalOfficeEdition
-cpvalOfficeBitness
 
 ## Changelog
 
 ### 2026-05-12
 
-Enhanced Microsoft Office detection script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
+- Added two new custom fields: `Office Edition`, and `Office Bitness`
+- Enhanced `Get Office Version` script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. 
+- Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). 
+- Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. 
+- Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
 
 ### 2025-12-12
 

@@ -20,7 +20,7 @@ Stores the Office Edition on the machine fetched by [Get Office Version](/docs/9
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL Office Edition | cpvalOfficeedition | Device | Text | False |  | Editable | Read_Write | Read_Write | Office version detected on the device using the Get-C2RInfo script. | Office version detected using the Get-C2RInfo script. | Office version detected on the device using the Get-C2RInfo script. | Office Version |
+| cPVAL Office Edition | cpvalOfficeedition | Device | Text | False |  | Editable | Read_Write | Read_Write | Office version detected on the device using the `Get Office Bitness` script. | Office version detected using the `Get Office Bitness` script. | Office version detected on the device using the `Get Office Bitness` script. | Office Version |
 
 ## Dependencies
 - [Solution - Get Office Version](/docs/19ca26a2-c4f1-4ce1-99a2-b8d37dccfa04) 

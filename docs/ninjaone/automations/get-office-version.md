@@ -9,7 +9,7 @@ tags:  ['office365', 'software', 'update']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-24
+  date: 2026-05-12
 ---
 
 ## Overview
@@ -40,7 +40,10 @@ This script will check for the MS Office Version installed on the windows machin
 
 ### 2026-05-12
 
-Enhanced Microsoft Office detection script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
+- Enhanced `Get Office Version` script to improve Click-to-Run (C2R) version identification using ProductReleaseIds and CDN channel mapping. 
+- Added accurate detection for Microsoft 365 Apps, Office 2016, 2019, 2021, and 2024 along with improved Office bitness detection (32-bit / 64-bit). 
+- Retained MSI fallback detection using ASSOC/FTYPE and updated Ninja custom field handling with undetermined fallback values for reliability. 
+- Script now updates three separate custom fields for Office Version, Office Edition, and Office Bitness seperately.
 
 ### 2025-12-12
 
