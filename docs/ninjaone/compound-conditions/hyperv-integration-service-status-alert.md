@@ -33,6 +33,10 @@ This compound condition is built to create the ticket if the Hyper-V Integration
 
 ## Changelog
 
+### 2026-05-13
+
+- Updated the compound condition to include the roles detection custom field for validating the Hyper-V roles and the script failure to trigger a ticket properly.
+
 ### 2026-05-11
 
 - Initial version of the document

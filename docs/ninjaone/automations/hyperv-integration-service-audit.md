@@ -4,7 +4,7 @@ slug: /1c8cf2c3-d470-4616-bc27-35e69f274202
 title: 'Hyper-V Integration Service Audit'
 title_meta: 'Hyper-V Integration Service Audit'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
-description: 'This script queries all Hyper-V virtual machines and looks for any VM where the IntegrationServicesState is `Update required`. If any such VM is found, the script stores the VM details in the NinjaOne custom field `cpvalHyperVIntegrationServiceStatus` and exits with code 1. If no VMs require Integration Services updates, the script stores `UpToDate` and exits successfully with code 0.'
+description: 'This script queries all Hyper-V virtual machines and looks for any VM where the IntegrationServicesState is `UpdateRequired` / `Update required`/ `NotPresent`, or `Unknown`. If any such VM is found, the script stores the VM details in the NinjaOne custom field `cpvalHyperVIntegrationServiceStatus` and exits with code 1. If no VMs require Integration Services updates, the script stores `UpToDate` and exits successfully with code 0.'
 tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
@@ -14,9 +14,15 @@ last_update:
 
 ## Overview
 
-This script queries all Hyper-V virtual machines and looks for any VM where the IntegrationServicesState is `Update required`. 
-If any such VM is found, the script stores the VM details in the NinjaOne custom field `cpvalHyperVIntegrationServiceStatus` and exits with code 1. 
+This script queries all Hyper-V virtual machines and looks for any VM where the IntegrationServicesState in:
+- Not enabled (null or blank state)
+- Outdated (`UpdateRequired` / `Update required`)
+- Missing (`NotPresent`)
+- `Unknown`
+If any VM meets the above conditions, the script reports them and sets a failure exit code.
+If all VMs are compliant, it reports `UpToDate`.
 If no VMs require Integration Services updates, the script stores `UpToDate` and exits successfully with code 0.
+It updates the custom field `cpvalHyperVIntegrationServiceStatus` accordingly.
 
 ## Sample Run
 
@@ -44,6 +50,10 @@ Click Run
 - Custom Field
 
 ## Changelog
+
+### 2026-05-13
+
+- Updated the script to include properly audit and error handling with the code signing.
 
 ### 2026-05-11
 

@@ -4,7 +4,7 @@ slug: /d3e74048-d274-4fe7-8501-c826822707b2
 title: 'Hyper-V Replication Audit'
 title_meta: 'Hyper-V Replication Audit'
 keywords: ['hyper-v', 'backup', 'integration', 'replication']
-description: 'This script validates that it is running on a Hyper-V host using the vmms service. If not a Hyper-V host, it exits cleanly. If Hyper-V is present, it checks replication health and flags `Critical` or `Warning` states.'
+description: 'If the system is not a Hyper-V host, the script records `NotAHyperVHost` and exits successfully. If Hyper-V is present, the script evaluates replication status for all VMs where replication is enabled. The script flags VMs that have replication states indicating issues, specifically `Critical` or `Warning`. If any VM is found in an unhealthy replication state, the script reports the affected VMs and sets a failure exit code. If all replication-enabled VMs are healthy, it reports `Healthy`.'
 tags: ['hyper-v', 'backup']
 draft: false
 unlisted: false
@@ -14,8 +14,15 @@ last_update:
 
 ## Overview
 
-This script validates that it is running on a Hyper-V host using the vmms service. If not a Hyper-V host, it exits cleanly. 
-If Hyper-V is present, it checks replication health and flags `Critical` or `Warning` states.
+If the system is not a Hyper-V host, the script records 'NotAHyperVHost'
+and exits successfully.
+If Hyper-V is present, the script evaluates replication status for all VMs
+where replication is enabled.
+The script flags VMs that have replication states indicating issues,
+specifically 'Critical' or 'Warning'.
+If any VM is found in an unhealthy replication state, the script reports
+the affected VMs and sets a failure exit code. If all replication-enabled
+VMs are healthy, it reports 'Healthy'.
 
 ## Sample Run
 
@@ -43,6 +50,10 @@ Click Run
 - Custom Field
 
 ## Changelog
+
+### 2026-05-13
+
+- Updated the script to include properly audit and error handling with the code signing.
 
 ### 2026-05-11
 
