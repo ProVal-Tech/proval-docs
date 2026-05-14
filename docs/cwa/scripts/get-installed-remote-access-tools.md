@@ -73,7 +73,7 @@ Supported tool display names (*use exact spelling when excluding*):
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| WhiteListedRemoteAccessTools | False | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul>  | Optional comma-separated list of remote access tool display names that should be excluded from detection. Use this when specific tools are approved for the site and should not be reported by this script. Different ScreenConnect instances can also be excluded by specifying the instance identifier after ScreenConnect Client, for example: `ScreenConnect Client (3429b39dc0180fcf)`. This allows precise exclusion of individual screenconnect instances.  <B><U>Note  </U> The tools defined in this property will be excluded on all client machines. </B> |
+| WhiteListedRemoteAccessTools | False | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul>  | Optional comma-separated list of remote access tool display names that should be excluded from detection. Use this when specific tools are approved for the site and should not be reported by this script. Different ScreenConnect instances can also be excluded by specifying the instance identifier after ScreenConnect Client, for example: `ScreenConnect Client (3429b39dc0180fcf)`. This allows precise exclusion of individual screenconnect instances.  ***Note : The tools defined in this property will be excluded on all client machines.***|
 
 
 ## Extra Data Fields
