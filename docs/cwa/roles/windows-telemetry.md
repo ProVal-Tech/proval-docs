@@ -7,7 +7,7 @@ keywords: ['role','audit']
 description: 'Automate role to detect if a Windows agent has telemetry enabled'
 tags: ['windows','auditing']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-09-29
 ---

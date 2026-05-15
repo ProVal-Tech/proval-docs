@@ -7,7 +7,7 @@ keywords: ['audit','bios','certificates','secureboot','windows']
 description: 'Dataview to display the status of certificate and configurations needed for secure boot'
 tags: ['bios','certificates','secureboot','windows']
 draft: false
-unlisted: false
+unlisted: true
 last_update:
   date: 2025-09-30
 ---
