@@ -16,7 +16,7 @@ last_update:
 
 Manages prompting end users before OEM BIOS and Firmware upgrades on Windows 10/11 devices. Solves the problem of unattended BIOS/Firmware updates that restart a device without warning, causing data loss and user frustration. The script gives users the ability to postpone the upgrade up to a configurable number of times, then forces the upgrade after all postponements are exhausted.
 
-Designed for RMM platforms (ConnectWise Automate, NinjaRMM, Datto, etc.) that run scripts as SYSTEM. The RMM only needs to deploy and execute the script once; subsequent prompt cycles are handled automatically via self-rescheduling Windows Scheduled Tasks.
+Designed for RMM platforms (ConnectWise, NinjaRMM, Datto, etc.) that run scripts as SYSTEM. The RMM only needs to deploy and execute the script once; subsequent prompt cycles are handled automatically via self-rescheduling Windows Scheduled Tasks.
 
 Prompt messages and button labels are automatically displayed in Dutch when the logged-in user's Windows display language is set to `nl-NL` or `nl-BE`. All other languages default to English.
 
@@ -50,7 +50,7 @@ No manual pre-configuration is needed. All dependencies are bootstrapped by the 
 3. **Existing Task Check** - If `-Force` was not specified and a scheduled task from a previous run already exists, the script logs the current prompt state (prompts sent, interval, timeouts, suppress window, etc.) and exits. This prevents a duplicate prompt cycle from being created when the RMM re-deploys the script. Use `-Force` to clear existing tasks and restart the prompt cycle.
 4. **Dependency Installation** - Installs/updates the Strapper module from PSGallery and .NET Desktop Runtime 10.
 5. **Self-Persistence** - Saves itself to `C:\ProgramData\_Automation\Script\Invoke-OEMUpdatePrompt\Invoke-OEMUpdateWithPrompt.ps1` for future rescheduled runs.
-6. **Prompter Download** - Downloads the Prompter desktop application to `C:\ProgramData\_Automation\App\Prompter\`.
+6. **Prompter Download** - Downloads the Prompter desktop application to `C:\ProgramData\_Automation\App\Prompter\`. If internet connectivity is unavailable at this stage, the script creates a one-time SYSTEM reschedule task for `IntervalMinutes`, then exits.
 7. **Condition Checks** - Evaluates suppress windows, weekend exclusions, locked machine state, and user login state. If conditions are not met, the script reschedules itself at the configured interval and exits.
 8. **Language Detection** - Reads the logged-in user's Windows display language from the registry (`PreferredUILanguages`). If the language matches `nl-NL` or `nl-BE`, all prompt messages and button labels are displayed in Dutch. All other languages default to English.
 9. **Prompt Display** - Creates a scheduled task running in the user session (BUILTIN\Users group) that launches the Prompter application on the user's desktop.
@@ -59,9 +59,10 @@ No manual pre-configuration is needed. All dependencies are bootstrapped by the 
     - **Update Now** - Cleans up all tasks and stored state, then executes the OEM update script immediately.
     - **Final Prompt (Schedule Update)** - User picks a date/time within the next 48 hours. The script saves the selection, schedules itself to run 10 minutes before that time, and exits. On re-launch it shows a reminder prompt, then proceeds with the upgrade.
     - **Final Prompt Timeout** - Waits the configured delay, then forces the upgrade.
+    - **Post-Upgrade Completion Acknowledgement** - If OEM updates complete and no reboot is pending, a completion prompt is shown only when a user is logged in and the machine is unlocked. The prompt stays open until user acknowledgement or `RegularPromptTimeout`.
 11. **Cleanup** - Before any upgrade path executes, all scheduled tasks (Prompter task + reschedule task) are removed and stored prompt data is reset.
 
-> **NOTE:** After the OEM update script completes successfully, a reboot pending check is performed by inspecting Windows registry keys (Component Based Servicing, Windows Update, Session Manager pending file renames, and computer name changes). If a pending reboot is detected, the machine is **forcefully restarted** via `Restart-Computer -Force` to complete the update installation. If the vendor script already triggered a reboot, this check will not execute.
+> **NOTE:** After the OEM update script completes successfully, a reboot pending check is performed by inspecting Windows registry keys (Component Based Servicing, Windows Update, Session Manager pending file renames, and computer name changes). If a pending reboot is detected, the machine is **forcefully restarted** via `Restart-Computer -Force` to complete the update installation. If no reboot is pending, the script shows a completion acknowledgement prompt only when a user is logged in and the machine is unlocked; otherwise it exits silently. If the vendor script already triggered a reboot, this check will not execute.
 
 ## Payload Usage
 
@@ -97,9 +98,9 @@ Run upgrade immediately if no user is logged in:
 .\Invoke-OEMUpdateWithPrompt.ps1 -IfNotLoggedIn -MaxPostpone 5 -IntervalMinutes 240
 ```
 
-### Detailed Example Walkthrough
+## Detailed Example Walkthrough
 
-#### Example 1: Default Behavior (MaxPostpone = 5, IntervalMinutes = 240)
+### Example 1: Default Behavior (MaxPostpone = 5, IntervalMinutes = 240)
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1
@@ -167,7 +168,7 @@ Timeout: 600 seconds (10 minutes)
 
 ---
 
-#### Example 1a: Default Behavior - Dutch Language (nl-NL / nl-BE)
+### Example 1a: Default Behavior - Dutch Language (nl-NL / nl-BE)
 
 When the logged-in user's Windows display language is `nl-NL` or `nl-BE`, the same prompt cycle is shown with Dutch messages and button labels. No additional configuration is needed.
 
@@ -226,7 +227,7 @@ Timeout: 600 seconds (10 minutes)
 
 ---
 
-#### Example 2: Aggressive Schedule with Suppression (MaxPostpone = 3, IntervalMinutes = 120)
+### Example 2: Aggressive Schedule with Suppression (MaxPostpone = 3, IntervalMinutes = 120)
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -MaxPostpone 3 -IntervalMinutes 120 -SkipWeekends -SuppressPopupTimeWindows '1800-0900'
@@ -239,7 +240,7 @@ Timeout: 600 seconds (10 minutes)
 
 ---
 
-#### Example 3: Force Reset After Previous Deployment
+### Example 3: Force Reset After Previous Deployment
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -Force -MaxPostpone 5 -IntervalMinutes 240
@@ -253,7 +254,7 @@ Timeout: 600 seconds (10 minutes)
 
 ---
 
-#### Example 4: Final Prompt Timeout (User Away From Desk)
+### Example 4: Final Prompt Timeout (User Away From Desk)
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -MaxPostpone 5 -IntervalMinutes 240 -FinalPromptTimeout 900 -DelayAfterFinalPrompt 600
@@ -268,7 +269,7 @@ After 5 postponements, the final prompt appears:
 
 ---
 
-#### Example 5: No User Logged In
+### Example 5: No User Logged In
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -IfNotLoggedIn -MaxPostpone 3 -IntervalMinutes 120
@@ -374,11 +375,19 @@ Scheduled_Task_Invoke-OEMUpdatePrompt_Reschedule (Self-rescheduling task - runs 
 ![Image2](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image2.webp)  
 ![Image3](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image3.webp)  
 
+### Completion Acknowledgement Prompt (No Reboot Pending) - English
+
+![Image7](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image7.webp)  
+
 ### Sample Prompts - Dutch
 
 ![Image4](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image4.webp)  
 ![Image5](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image5.webp)  
 ![Image6](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image6.webp)  
+
+#### Completion Acknowledgement Prompt (No Reboot Pending) - Dutch
+
+![Image8](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image8.webp)  
 
 ## Changelog
 
