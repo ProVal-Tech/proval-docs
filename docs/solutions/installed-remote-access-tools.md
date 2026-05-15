@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-05
+  date: 2026-05-15
 ---
 
 ## Purpose
@@ -70,7 +70,7 @@ The purpose of this solution is to identify a curated set of remote access tools
 
 ## Changelog
 
-### 2026-05-14
+### 2026-05-15
 
 - Updated Powershell in the script to display individual ScreenConnect instances instead of simply listing ConnectWise Control and to also detect CW RMM if present on the machine.
 - Introduced Client, Location, and Computer-level EDFs to allow whitelisting at different levels.
