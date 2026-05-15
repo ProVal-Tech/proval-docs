@@ -9,12 +9,13 @@ tags: ['uninstallation','software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-07-23
+  date: 2026-05-13
 ---
 
 ## Overview
 
-This script is used to remove the Immybot Agent completely from the machines.
+This script is used to remove the ImmyBot Agent completely from the Windows machines.
+
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
@@ -32,4 +33,4 @@ This script is used to remove the Immybot Agent completely from the machines.
 
 ### 2026-05-13
 
-Initial Version
+- Initial Version
