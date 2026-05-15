@@ -16,6 +16,10 @@ last_update:
 
 This solution outlines the automated process for auditing the boot environment and security configuration of Windows endpoints using ConnectWise RMM. It executes a comprehensive scan that gathers vital data on Secure Boot status, UEFI certificates (such as CA 2023 readiness), OEM driver updates, Windows telemetry, and firmware boot entries. The collected data is automatically populated into custom fields at the endpoint level, providing a centralized view to monitor your managed fleet's security posture and compliance with modern boot standards.
 
+> **Note:** After importing this solution, it is recommended to disable the existing [Windows Secure Boot Audit](/docs/05b9e73a-64ae-43f6-8ed5-89c952a3aaec) solution to prevent duplicate executions.
+>
+> This solution serves as an enhancement of the earlier [Windows Secure Boot Audit](/docs/05b9e73a-64ae-43f6-8ed5-89c952a3aaec) solution. The previous version remains in production and is not yet deprecated, as it performs partial auditing. It can still be used independently for scenarios where only certificate status checks are required.
+
 ## Associated Content
 
 ### Custom Fields
