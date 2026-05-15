@@ -69,11 +69,12 @@ This solution outlines the automated process for auditing the boot environment a
 *These helper scripts are dynamically leveraged by the primary task to fetch extended data when required:*
 
 - [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
+- [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 - [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
 - [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
 - [Get-LatestInstalledCU](/docs/81d82975-889b-49e4-b229-36d4f162a4ff)
 
-### Implementation
+## Implementation
 
 ### Step 1: Create the Required Custom Fields
 
@@ -186,6 +187,6 @@ To easily monitor the collected data across your managed devices, configure the 
 
 ## Changelog
 
-### 2025-05-14
+### 2026-05-14
 
 - Initial version of the document

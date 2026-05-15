@@ -57,7 +57,7 @@ Once the audit is complete, the script automatically saves all this valuable dat
 - [Custom Field: SB_BucketHash](/docs/d50206c9-70e5-4bcf-8e47-b5ad8343795d)
 - [Custom Field: SB_Data_Collection_Time](/docs/7ec97bea-bba8-4ce7-88c9-1c3dd9b2c3df)
 - [Custom Field: Boot Environment Audit](/docs/1fd6dff7-dd6e-4d0f-921a-e9a62ebb6e47)
-- [Initiaize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
+- [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 - [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
 - [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
 - [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
@@ -1062,6 +1062,6 @@ $jsonPath = '{0}\{1}.json' -f $workingDirectory, $ProjectName
 
 ## Changelog
 
-### 2025-05-14
+### 2026-05-14
 
 - Initial version of the document
