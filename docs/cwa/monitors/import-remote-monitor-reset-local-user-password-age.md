@@ -46,11 +46,10 @@ Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)**
 
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
-```
-SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '20e4fd06-535d-45a2-874e-b77315b50dd9');
-```
 
 ```sql
+SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '20e4fd06-535d-45a2-874e-b77315b50dd9');
+
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -86,11 +85,9 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 ### 4. Example of Monitor Query
 An example of a monitor query with a group ID:
 
-```
-SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '20e4fd06-535d-45a2-874e-b77315b50dd9');
-```
-
 ```sql
+SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '20e4fd06-535d-45a2-874e-b77315b50dd9');
+
 INSERT INTO groupagents 
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
@@ -132,6 +129,10 @@ Now execute your query from a RAWSQL monitor set.
 Locate your remote monitor by opening the group(s) remote monitors tab, then apply the appropriate alert template.
 
 ## Changelog
+
+### 2026-05-18
+
+- Fixed SearchID logic in the SQL
 
 ### 2025-04-10
 

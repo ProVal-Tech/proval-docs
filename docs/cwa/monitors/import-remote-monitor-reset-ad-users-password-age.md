@@ -44,10 +44,12 @@ Copy the following query and replace **YOUR COMMA SEPARATED LIST OF GROUPID(S)**
 (The string to replace can be found at the very bottom of the query, right after **WHERE**)
 
 ```sql
+SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
+
 INSERT INTO groupagents
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
-'648' as `SearchID`,
+@Searchid as `SearchID`,
 'ProVal - Production - Reset AD Users Password Age' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,
@@ -80,10 +82,12 @@ AND m.groupid NOT IN (SELECT DISTINCT groupid FROM groupagents WHERE `Name` = 'P
 An example of a monitor query with a group ID:
 
 ```sql
+SET @Searchid= (SELECT sensid FROM sensorchecks WHERE `GUID` = '430a4640-9c97-4344-bfe8-7a786b110729');
+
 INSERT INTO groupagents
 SELECT '' as `AgentID`,
 `groupid` as `GroupID`,
-'648' as `SearchID`,
+@Searchid as `SearchID`,
 'ProVal - Production - Reset AD Users Password Age' as `Name`,
 '6' as `CheckAction`,
 '1' as `AlertAction`,

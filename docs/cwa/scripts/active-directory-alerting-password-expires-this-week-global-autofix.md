@@ -1,7 +1,7 @@
 ---
 id: '6ad5ccf5-0502-459c-a877-eaeafc0ad432'
 slug: /6ad5ccf5-0502-459c-a877-eaeafc0ad432
-title: 'Active Directory - Alerting - Password Expires This Week Global,Autofix'
+title: 'Active Directory - Alerting - Password Expires This Week [Global,Autofix]'
 title_meta: 'Active Directory - Alerting - Password Expires This Week Global,Autofix'
 keywords: ['password', 'notification', 'ticket', 'email', 'compliance']
 description: 'This document details a script for notifying users about upcoming password expirations. It includes configuration options for alerting, ticket creation, and email notifications, as well as instructions for customizing messages and handling different user scenarios.'
@@ -83,7 +83,7 @@ It is an Autofix script to be executed via `△ Custom - Password Expiration Not
 
 ## Dependencies
 
-[RSM - Active Directory - Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)
+[Internal Monitor - Password Expires This Week [G]](/docs/d002ff1b-cb8c-45db-af82-096e7912db2b)
 
 ## Variables
 
