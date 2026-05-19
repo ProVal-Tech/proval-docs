@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-13
+  date: 2026-05-19
 ---
 
 ## Overview
@@ -60,9 +60,12 @@ No manual pre-configuration is needed. All dependencies are bootstrapped by the 
     - **Final Prompt (Schedule Update)** - User picks a date/time within the next 48 hours. The script saves the selection, schedules itself to run 10 minutes before that time, and exits. On re-launch it shows a reminder prompt, then proceeds with the upgrade.
     - **Final Prompt Timeout** - Waits the configured delay, then forces the upgrade.
     - **Post-Upgrade Completion Acknowledgement** - If OEM updates complete and no reboot is pending, a completion prompt is shown only when a user is logged in and the machine is unlocked. The prompt stays open until user acknowledgement or `RegularPromptTimeout`.
+    - **BitLocker Handling** - If `-HandleBitLocker` is specified, BitLocker protection is suspended on the OS drive (for one reboot cycle) before the vendor script runs. If no reboot is required after the update, BitLocker protection is automatically resumed before the completion prompt is shown.
 11. **Cleanup** - Before any upgrade path executes, all scheduled tasks (Prompter task + reschedule task) are removed and stored prompt data is reset.
 
 > **NOTE:** After the OEM update script completes successfully, a reboot pending check is performed by inspecting Windows registry keys (Component Based Servicing, Windows Update, Session Manager pending file renames, and computer name changes). If a pending reboot is detected, the machine is **forcefully restarted** via `Restart-Computer -Force` to complete the update installation. If no reboot is pending, the script shows a completion acknowledgement prompt only when a user is logged in and the machine is unlocked; otherwise it exits silently. If the vendor script already triggered a reboot, this check will not execute.
+>
+> If `-HandleBitLocker` is specified, BitLocker protection is suspended before the vendor script runs (using `Suspend-BitLocker -RebootCount 1`). If no reboot occurs after the update, BitLocker is automatically resumed via `Resume-BitLocker` before the completion prompt. If a reboot is triggered, BitLocker auto-resumes after that single reboot without requiring manual intervention.
 
 ## Payload Usage
 
@@ -96,6 +99,18 @@ Run upgrade immediately if no user is logged in:
 
 ```powershell
 .\Invoke-OEMUpdateWithPrompt.ps1 -IfNotLoggedIn -MaxPostpone 5 -IntervalMinutes 240
+```
+
+Suspend BitLocker before OEM updates on an encrypted device:
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -HandleBitLocker
+```
+
+Install driver updates via PSWindowsUpdate while excluding BIOS, Firmware, and UEFI updates:
+
+```powershell
+.\Invoke-OEMUpdateWithPrompt.ps1 -UsePsWindowsUpdate -OEMScriptParametersOverride "-Category 'Drivers','Tools' -Description '(?i).*BIOS.*|.*Firmware' -AllowReboot"
 ```
 
 ## Detailed Example Walkthrough
@@ -294,6 +309,8 @@ After 5 postponements, the final prompt appears:
 | `UsePsWindowsUpdate` | `WindowsUpdate` | False | `False` | Switch | Uses the PSWindowsUpdate module instead of OEM-specific scripts (Dell/HP/Lenovo). |
 | `Icon` | `IconUrl`, `IconPath` | False | | String | URL or local file path for the icon displayed in the prompt dialog (e.g., `https://example.com/icon.png` or `C:\Icons\icon.png`). |
 | `HeaderImage` | `HeaderUrl`, `HeaderPath` | False | | String | URL or local file path for the header image displayed at the top of the prompt dialog (e.g., `https://example.com/header.png` or `C:\Images\header.png`). |
+| `HandleBitLocker` | `BitLocker`, `SuspendBitLocker` | False | `False` | Switch | Suspends BitLocker protection on the OS drive for one reboot cycle before OEM updates run. If no reboot is required after the update, BitLocker protection is automatically resumed. |
+| `OEMScriptParametersOverride` | `Override`, `ParamsOverride` | False | | String | Custom parameter string passed to the vendor update script, replacing the default parameter set for the detected manufacturer (e.g., `'/applyUpdates -updateType=bios -silent'` for Dell DCU or `"-Category 'Drivers','Tools' -AllowReboot"` for PSWindowsUpdate). |
 
 ## Output
 
