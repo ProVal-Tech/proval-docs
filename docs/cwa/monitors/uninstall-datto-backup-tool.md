@@ -22,7 +22,7 @@ It has an alert template "△ Custom - Execute Script - Uninstall Datto Backup T
 ## EDFs
 | Name | Level | Type | Section | Description |
 | --------- | --------- | ------------ | --------- | -------------------------------------------- |
-| `Uninstall Datto Backup tool` | Client | Drop-down | Datto | This dropdown allows to select the `Datto Windows Agents` or `Datto Cloud Continuity` or `All` for uninstallation ![Client-EDF](../../../static/img/docs/955123e8-cb90-480c-8de5-8ac81d41bdd6/image7.webp)|
+| `Uninstall Datto Backup tool` | Client | Drop-down | Datto | This dropdown allows to select the  `Datto Endpoint Backup`, `Datto Windows Agents` or `Datto Cloud Continuity` or `All` for uninstallation ![Client-EDF](../../../static/img/docs/955123e8-cb90-480c-8de5-8ac81d41bdd6/image7.webp)|
 | `Exclude Datto Backup tool Removal` | Location | Checkbox | Exclusions | This excludes the location from the uninstallation of Datto Windows Agents or Cloud Continuity ![Location-EDF](../../../static/img/docs/955123e8-cb90-480c-8de5-8ac81d41bdd6/image9.webp)|
 |`Exclude Datto Backup tool Removal` | Computer | Checkbox | Exclusions | This exclude the computer from the uninstallation of Datto Windows Agents or Cloud Continuity ![Computer-EDF](../../../static/img/docs/955123e8-cb90-480c-8de5-8ac81d41bdd6/image8.webp)|
 
@@ -52,6 +52,10 @@ Windows OS
 - Once EDFs are set, the monitor will detect 50 online Windows agents every hour where the Datto Windows Agent or Datto Cloud Continuity are installed and perform the uninstallation by triggering the script [Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc) using **Alert Template** `△ Custom - Execute Script - Uninstall Datto Backup Tool`.
 
 ## Changelog
+
+### 2026-05-19
+
+- Updated the solution to uninstall Datto Endpoint Backup as well.
 
 ### 2025-11-06
 

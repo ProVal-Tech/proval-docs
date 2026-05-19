@@ -13,7 +13,7 @@ last_update:
 ---
 
 ## Summary
-This script uninstalls the Datto Windows Agent or Datto Cloud Continuity or both, depending on the option selected at the `Uninstall Datto Backup Tool` client-level EDF. It then grabs the quietuninstallstring from the registry of the installed application.
+This script uninstalls the Datto Endpoint Backup, Datto Windows Agent or Datto Cloud Continuity or both, depending on the option selected at the `Uninstall Datto Backup Tool` client-level EDF. It then grabs the quietuninstallstring from the registry of the installed application.
 
 ## File Hash
 
@@ -38,14 +38,14 @@ This script uninstalls the Datto Windows Agent or Datto Cloud Continuity or both
 
 | Name                          | Level   | Section    | Description                                                                                           |
 |-------------------------------|---------|---------|-------------------------------------------------------------------------------------------------------|
-|Uninstall Datto Backup Tool |  Client | Datto  | Select the application to uninstall. <br /> Available Options: <br />  - Datto Windows Agent <br /> - Datto Cloud Continuity <br /> - All |
+|Uninstall Datto Backup Tool |  Client | Datto  | Select the application to uninstall. <br /> Available Options: <br />  - Datto Endpoint Backup  <br /> - Datto Windows Agent <br /> - Datto Cloud Continuity <br /> - All |
 |Exclude Datto Backup Tool Removal        |Location     |Exclusions     |This excludes the location from the uninstallation of Datto Windows Agents or Cloud Continuity.        |
 |Exclude Datto Backup Tool Removal      | Computer    | Exclusions        | This excludes the device from the uninstallation of Datto Windows Agents or Cloud Continuity.     |
 
 
 ## Process
 
-- It checks if the agent has `Datto Windows Agent` or `Datto Cloud Continuity` or both installed, depending on the option selected at the `Uninstall Datto Backup Tool` client-level EDF.
+- It checks if the agent has  `Datto Endpoint Backup`, `Datto Windows Agent` or `Datto Cloud Continuity` or both installed, depending on the option selected at the `Uninstall Datto Backup Tool` client-level EDF.
 - If detected, then it writes a PS1 on the agent with file hashes (shown above) that can be used to whitelist if any third-party blocking application is installed in the environment that can restrict the PowerShell execution.
 - The PS1 fetches the quiet uninstall command from the application registry and executes it using the system account, and uninstalls the application.
 - It includes proper error handling
@@ -55,6 +55,10 @@ This script uninstalls the Datto Windows Agent or Datto Cloud Continuity or both
 - Script Log
 
 ## Changelog
+
+### 2026-05-19
+
+- Updated the solution to uninstall Datto Endpoint Backup as well.
 
 ### 2025-11-06
 
