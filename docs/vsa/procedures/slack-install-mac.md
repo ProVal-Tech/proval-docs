@@ -1,8 +1,8 @@
 ---
 id: '4fc95e6d-95b1-4c83-a5b2-c181dca0c2ee'
 slug: /4fc95e6d-95b1-4c83-a5b2-c181dca0c2ee
-title: 'Slack Install MAC'
-title_meta: 'Slack Install MAC'
+title: 'Slack Install - MAC'
+title_meta: 'Slack Install - MAC'
 keywords: ['slack', 'installation', 'software' ]
 description: 'This script is used to check the status of the slack on the mac machine and  if its not available, then it will install it on the mac machine and will validate after the installation.'
 tags: ['installation', 'software']
@@ -14,7 +14,7 @@ last_update:
 
 ## Summary
 
-This script is used to check the status of the slack application on the mac machine and  if its not available, then it will install it on the mac machine and will validate after the installation.
+This script checks the status of the Slack application on the Mac machine. If Slack is not installed, the script automatically downloads and installs the application, and then validates the installation after completion.
 
 ## Implementation
 
