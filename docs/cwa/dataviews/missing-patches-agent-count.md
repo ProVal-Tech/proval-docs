@@ -38,10 +38,6 @@ This dataview shows the missing patches count on total machines, in which it sho
 
 ## Changelog
 
-### 2026-05-19
-
-- QA engineer asked to add a reboot pending sections and get rid of the data that are irrelevant and giving false outcome.
-
 ### 2026-05-18
 
 - Initial version of the documentation.
