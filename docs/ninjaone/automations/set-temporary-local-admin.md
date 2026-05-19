@@ -163,7 +163,10 @@ Keep these points in mind before you run it:
 
 ## Changelog
 
+### 2026-05-19
+
+- Added support for domain-prefixed and Azure AD-prefixed username formats for proper identity resolution on Azure AD joined machines.
+
 ### 2026-04-23
 
 - Initial version of the document.
-- Added support for domain-prefixed and Azure AD-prefixed username formats for proper identity resolution on Azure AD joined machines.
