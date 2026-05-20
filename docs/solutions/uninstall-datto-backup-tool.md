@@ -9,7 +9,7 @@ tags: ['datto']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-11-07
+  date: 2026-05-19
 ---
 
 ## Purpose
@@ -21,21 +21,27 @@ This solution contains the contents that perform the Datto Endpoint Backup, Datt
 | Content                                             | Type                                                      | Function                                               |
 |-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
 | [Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc)      | Script | This script uninstalls the Datto Endpoint Backup, Datto Windows Agent or Datto Cloud Continuity or both, depending on the option selected at the `Uninstall Datto Backup tool` client-level EDF. |
-| [Uninstall Datto Backup tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c) | Internal Monitor | This monitor runs every hour to check for the online Windows agents, where the client EDF `Uninstall Datto Backup tool` option are selected, and location/computer-level exclusion EDF `Exclude Datto Backup tool Removal` are not checked, to uninstall the application. |
-| △ Custom - Execute Script - Uninstall Datto Backup Tool | Alert Template | This alert template triggers the [Script - Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc) on the detected agents of the monitor to perform the uninstallation of the Datto Windows Agent or Datto Cloud Continuity |
+| [Uninstall Datto Backup Tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c) | Internal Monitor | This monitor runs every hour to check for the online Windows agents, where the client EDF `Uninstall Datto Backup tool` option are selected, and location/computer-level exclusion EDF `Exclude Datto Backup tool Removal` are not checked, to uninstall the application. |
+| △ Custom - Execute Script - Uninstall Datto Backup Tool | Alert Template | This alert template triggers the [Script - Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc) on the detected agents of the monitor to perform the uninstallation of the Datto backup tools. |
 
 ## Implementation
 
-- Import the [Script - Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc)
-- Import the [Monitor -Uninstall Datto Backup tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c)
-- Import the **Alert Template** `△ Custom - Execute Script - Uninstall Datto Backup Tool`
-- Follow the [Monitor -Uninstall Datto Backup tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c) documentation to enable its implementation.
+- Import the following:
+    - [Script - Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc)
+    - [Monitor - Uninstall Datto Backup Tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c)
+    - **Alert Template** `△ Custom - Execute Script - Uninstall Datto Backup Tool`
+- Execute the [Script - Uninstall Datto Backup Tool](/docs/c3ad2c46-6bae-4df4-980a-f937faf56dbc) with the user parameter `SetEnvironment` as 1 to import the EDFs needed for the script.
+- Navigating to `Automation` → `Monitors` within the CWA Control Center and set up the below monitor:  
+     - [Uninstall Datto Backup Tool](/docs/34ba8b59-6973-43e5-8729-d821f669a00c)
+        - Configure with the alert template: `△ Custom - Execute Script - Uninstall Datto Backup Tool`
+        - Right-click and Run Now to start the monitor.
+      
 
 ## Changelog
 
 ### 2026-05-19
 
-- Updated the solution to uninstall Datto Endpoint Backup as well.
+- Updated the solution to uninstall `Datto Endpoint Backup` as well.
 
 ### 2025-11-06
 
