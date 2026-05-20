@@ -21,9 +21,9 @@ Use this automation to give a user temporary local administrator access on a Win
 - **Domain-prefixed** (e.g., `CONTOSO\jsmith`) for Active Directory users
 - **Azure AD-prefixed** (e.g., `AzureAD\jsmith`) for Azure AD joined machines
 
-**Important for Azure AD joined machines:** Use the full `AzureAD\username` format when specifying a username. This ensures the script can properly resolve the identity for group membership operations. The script automatically preserves the full prefixed identity for Azure AD and domain users.
+For Azure AD joined machines, enter the full `AzureAD\username` value.
 
-Leave **Username Override** blank to target the user who is currently signed in. The script automatically detects and preserves the full identity (including any `AzureAD\` or domain prefix) from the logged-in session. If no user is signed in and the field is left blank, the automation stops without making changes. If the selected user is already a local administrator, the automation also stops without changing anything.
+Leave **Username Override** blank to target the currently signed-in user. If no user is signed in, the automation stops without making changes. If the selected user is already a local administrator, the automation also stops without making changes.
 
 Choose **Time Limit** carefully:
 
