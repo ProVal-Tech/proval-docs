@@ -7,9 +7,9 @@ keywords: ['active-directory', 'monitoring', 'automate', 'plugin', 'reports']
 description: 'This document provides a comprehensive overview of monitoring solutions for Active Directory environments, including implementation steps, associated content, and reporting solutions. It outlines various internal and remote monitors, scripts, and dataviews necessary for effective Active Directory management.'
 tags: []
 draft: false
-unlisted: false
+unlisted: true
 last_update:
-  date: 2025-05-09
+  date: 2026-05-18
 ---
 
 ## Purpose
@@ -320,6 +320,10 @@ The solutions presented in this section do not rely on any plugin.
      - Alert Template - **`△ Custom - Ticket Creation Computer - Failures Only`**
 
 ## Changelog
+
+### 2026-05-18
+
+- Deprecated as we have another solution [Active Directory & Domain Environment Audit](/docs/dd914cae-33e3-4ac2-8904-c9ef1f4814a3) in place 
 
 ### 2025-04-10
 

@@ -21,7 +21,7 @@ This Custom RAWSQL monitor detects users whose passwords are going to expire wit
 ## Dependencies
 
 - The Active Directory plugin should be configured correctly to ensure the monitor works properly.
-- [CWM - Automate - Script - Active Directory - Alerting - Password Expires This Week [Global, Autofix]](/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432)
+- [Script - Active Directory - Alerting - Password Expires This Week [Global, Autofix]](/docs/6ad5ccf5-0502-459c-a877-eaeafc0ad432)
 
 ## Target
 
