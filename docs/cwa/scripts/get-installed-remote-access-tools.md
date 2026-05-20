@@ -9,7 +9,7 @@ tags: ['windows', 'auditing', 'security']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-05
+  date: 2026-05-15
 ---
 
 ## Summary
@@ -26,7 +26,8 @@ Supported tool display names (*use exact spelling when excluding*):
 - `AnyDesk`
 - `BeyondTrust`
 - `Chrome Remote Desktop`
-- `Connectwise Control`
+- `ScreenConnect`
+- `CW RMM`
 - `DWService`
 - `GoToMyPC`
 - `LiteManager`
@@ -65,16 +66,25 @@ Supported tool display names (*use exact spelling when excluding*):
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| SetEnvironment | False | 1 | Set the `SetEnvironment` parameter to `1` during the initial execution of the script to create the system property. |
+| SetEnvironment | False | 1 | Set the `SetEnvironment` parameter to `1` during the initial execution of the script to create the system property and required EDFs. |
 
 
 ## System Properties
 
 | Name | Required | Example | Description   |
 |---------|---------|---------|---------|
-| WhiteListedRemoteAccessTools | False | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk`</li><li>`Datto RMM`</li></ul>  | Optional comma-separated list of remote access tool display names that should be excluded from detection. Use this when specific tools are approved for the site and should not be reported by this script. |
+| WhiteListedRemoteAccessTools | False | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul>  | Optional comma-separated list of remote access tool display names that should be excluded from detection. Use this when specific tools are approved for the site and should not be reported by this script. Different ScreenConnect instances can also be excluded by specifying the instance identifier after ScreenConnect Client, for example: `ScreenConnect Client (3429b39dc0180fcf)`. This allows precise exclusion of individual screenconnect instances.  ***Note : The tools defined in this property will be excluded on all client machines.***|
 
 
+## Extra Data Fields
+
+| EDF Name                              | Level    | Type      | Section | Example  |Description                                                                                                    |
+|---------------------------------------|----------|-----------|----------|--------- | ---------------------------------------------------------------------------------------------|
+| WhiteListedRemoteAccessTools          | Client   | Text      | Default | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul> | Define Tools name separated by comma to be excluded for a particular client.    |
+| WhiteListedRemoteAccessTools          | Location   | Text      | Default | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul> | Define Tools name separated by comma to be excluded for a particular location.     |
+| WhiteListedRemoteAccessTools          | Computer   | Text      | Default | <ul><li>`Datto RMM, Chrome Remote Desktop, AnyDesk, ScreenConnect Client (3429b39dc0180fcf)`</li><li>`Datto RMM`</li></ul> | Define Tools name separated by comma to be excluded for a particular machine.     |
+
+**Note :** `If tools are whitelisted at the system property, client, location, or machine level, the script will consolidate all entries and whitelist the combined set of tools.`
 
 ## Output
 
@@ -82,6 +92,12 @@ Supported tool display names (*use exact spelling when excluding*):
 - Custom table
 
 ## Changelog
+
+### 2026-05-15
+
+- Updated Powershell to  display individual ScreenConnect instances instead of simply listing ConnectWise Control and to also detect CW RMM if present on the machine.
+- Introduced Client, Location, and Computer-level EDFs to allow whitelisting at different levels.
+- Added CW RMM to the list.
 
 ### 2026-05-05
 
