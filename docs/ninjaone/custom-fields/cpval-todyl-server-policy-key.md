@@ -28,6 +28,10 @@ Todyl Deployment Key for Servers.
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-todyl-server-policy-key.toml)
 
+## Sample Screenshot
+
+![Sample Screenshot](../../../static/img/docs/1a1c87f0-71c8-42c3-8d57-756a4d455b6c/image1.webp)
+
 ## Changelog
 
 ### 2025-08-18

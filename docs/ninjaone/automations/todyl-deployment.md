@@ -2,7 +2,7 @@
 id: '3ed0cf6e-1e51-419e-8fd3-5d689ef6f629'
 slug: /3ed0cf6e-1e51-419e-8fd3-5d689ef6f629
 title: 'Todyl Deployment'
-title_meta: 'Todyl Deployment Script'
+title_meta: 'Todyl Deployment'
 keywords: ['Todyl','Agent','Windows','Deployment']
 description: 'This script automates the deployment of the Todyl Agent on Windows machines by downloading the latest installer, running the installation silently, and validating that the agent has been successfully installed.'
 tags:  ['windows']

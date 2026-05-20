@@ -28,6 +28,10 @@ Todyl Deployment Key for Desktop Agents
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-todyl-desktop-policy-key.toml)
 
+## Sample Screenshot
+
+![Sample Screenshot](../../../static/img/docs/19338eed-96f4-4788-9618-76bf85f8c369/image1.webp)
+
 ## Changelog
 
 ### 2025-08-18

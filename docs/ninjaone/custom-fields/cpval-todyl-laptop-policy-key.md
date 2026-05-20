@@ -28,6 +28,10 @@ Todyl Deployment Key for laptop Agents
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-todyl-laptop-policy-key.toml)
 
+## Sample Screenshot
+
+![Sample Screenshot](../../../static/img/docs/360cd317-be72-47d7-adae-3ed1c00d88b0/image1.webp)
+
 ## Changelog
 
 ### 2025-08-18
