@@ -1,25 +1,25 @@
 ---
 id: '4fc95e6d-95b1-4c83-a5b2-c181dca0c2ee'
 slug: /4fc95e6d-95b1-4c83-a5b2-c181dca0c2ee
-title: 'Slack Install - MAC'
-title_meta: 'Slack Install - MAC'
+title: 'Slack Install - macOS'
+title_meta: 'Slack Install - macOS'
 keywords: ['slack', 'installation', 'software' ]
-description: 'This script is used to check the status of the slack on the mac machine and  if its not available, then it will install it on the mac machine and will validate after the installation.'
+description: 'This script verifies whether the Slack application is installed on a Mac. If Slack is missing, it automatically downloads and installs it, then confirms that the installation was completed successfully.'
 tags: ['installation', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-01
+  date: 2026-05-20
 ---
 
 ## Summary
 
-This script checks the status of the Slack application on the Mac machine. If Slack is not installed, the script automatically downloads and installs the application, and then validates the installation after completion.
+This script verifies whether the Slack application is installed on a Mac. If Slack is missing, it automatically downloads and installs it, then confirms that the installation was completed successfully.
 
 ## Implementation
 
 1. Export the agent procedure from ProVal's VSA RMM instance.  
-Name: `Slack Install MAC`
+Name: `Slack Install - macOS`  
 ![Image 1](../../../static/img/docs/4fc95e6d-95b1-4c83-a5b2-c181dca0c2ee/1.webp)   
 The export will download the necessary XML file.
 
@@ -35,6 +35,6 @@ The export will download the necessary XML file.
 
 ## Changelog
 
-### 2026-05-01
+### 2026-05-20
 
 - Initial version of the document
