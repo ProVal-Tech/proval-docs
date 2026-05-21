@@ -1,8 +1,8 @@
 ---
 id: 'ffa0e6db-0345-493f-a7aa-2566c551880e'
 slug: /ffa0e6db-0345-493f-a7aa-2566c551880e
-title: 'cPVAL Todyl Deployment'
-title_meta: 'cPVAL Todyl Deployment'
+title: 'Todyl Deployment'
+title_meta: 'Todyl Deployment'
 keywords: ['Todyl','Agent','Windows','Deployment']
 description: 'Triggers the `Todyl Deployment` automation on Windows servers where deployment is enabled.'
 tags:  ['windows']
