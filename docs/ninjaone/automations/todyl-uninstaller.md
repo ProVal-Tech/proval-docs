@@ -22,7 +22,7 @@ This script uninstalls Todyl Agent (SGN Connect) and related components on Windo
 
 ## Dependencies
 
-- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+- [Solution: Todyl Agent Manager](/docs/01e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Automation Setup/Import
 
