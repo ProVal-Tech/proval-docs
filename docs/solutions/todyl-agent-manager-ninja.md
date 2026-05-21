@@ -1,6 +1,6 @@
 ---
-id: 'New GUID'
-slug: /New GUID
+id: '01e0e3c8-adc5-4035-84d5-9266e5af0760'
+slug: /01e0e3c8-adc5-4035-84d5-9266e5af0760
 title: 'Todyl Agent Manager'
 title_meta: 'Todyl Agent Manager'
 keywords: ['Todyl','Agent','Windows','Deployment']

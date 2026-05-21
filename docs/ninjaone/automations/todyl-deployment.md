@@ -27,6 +27,7 @@ Search and select `Todyl Deployment`
 - [cPVAL Todyl Desktop Policy Key](/docs/19338eed-96f4-4788-9618-76bf85f8c369)
 - [cPVAL Todyl Laptop Policy Key](/docs/360cd317-be72-47d7-adae-3ed1c00d88b0)
 - [cPVAL Todyl Server Policy Key](/docs/1a1c87f0-71c8-42c3-8d57-756a4d455b6c)
+- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Automation Setup/Import
 

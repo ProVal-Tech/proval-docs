@@ -22,7 +22,9 @@ Todyl Deployment Key for Desktop Agents
 | cPVAL Todyl Desktop Policy Key | cpvalTodylDesktopPolicyKey | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Todyl Deployment Key for Desktop Agents | -        | -           | Todyl Deployment      |
 
 ## Dependencies
+
 - [Todyl Deployment](/docs/3ed0cf6e-1e51-419e-8fd3-5d689ef6f629)
+- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Custom Field Creation
 

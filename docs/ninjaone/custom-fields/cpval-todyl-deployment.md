@@ -23,6 +23,8 @@ Custom Field to install/unintall todyl solution. Select OS to enable auto-deploy
 
 ## Dependencies
 
+- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+
 ## Custom Field Creation
 
 - [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-todyl-deployment.toml)

@@ -24,6 +24,8 @@ Triggers the [Todyl Uninstaller](/docs/f4086020-bdd6-498d-adac-2eeacfbd6ed9) aut
 
 ## Dependencies
 
+- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+
 ## Compound Condition Creation 
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/uninstall-todyl.toml)

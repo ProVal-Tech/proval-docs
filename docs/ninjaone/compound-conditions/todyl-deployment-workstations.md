@@ -24,6 +24,8 @@ Triggers the [Todyl Deployment](/docs/3ed0cf6e-1e51-419e-8fd3-5d689ef6f629) auto
 
 ## Dependencies
 
+- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+
 ## Compound Condition Creation 
 
 - [Compound Condition Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/compound-conditions/todyl-deployment-workstations.toml)
