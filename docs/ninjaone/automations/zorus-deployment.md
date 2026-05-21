@@ -25,8 +25,10 @@ Search and select `Zorus Deployment`
 
 
 ## Dependencies
+
 - [cPVAL Zorus Token Key](/docs/a3bdf78e-b4fd-499e-9e30-3eb49f6653cd)
 - [cPVAL Zorus Uninstallation Password](/docs/a5be5729-cb20-4ab6-834e-d18d361cee97)
+- [Solution: Zorus Agent Manager](/docs/3b1dee7b-3bbb-4122-b33c-da6caa2a2d56)
 
 ## Automation Setup/Import
 
