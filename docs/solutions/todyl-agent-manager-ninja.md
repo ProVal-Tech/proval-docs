@@ -3,7 +3,7 @@ id: '01e0e3c8-adc5-4035-84d5-9266e5af0760'
 slug: /01e0e3c8-adc5-4035-84d5-9266e5af0760
 title: 'Todyl Agent Manager'
 title_meta: 'Todyl Agent Manager'
-keywords: ['Todyl','Agent','Windows','Deployment']
+keywords: ['todyl','agent','windows','deployment']
 description: 'Solution to automate the installation and uninstallation of the Todyl Agent across endpoints.'
 tags:  ['windows']
 draft: false

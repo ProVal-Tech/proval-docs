@@ -3,7 +3,7 @@ id: '7f24e5c5-4609-4f82-a932-5e34f63b6cc3'
 slug: /7f24e5c5-4609-4f82-a932-5e34f63b6cc3
 title: 'cPVAL Todyl Deployment'
 title_meta: 'cPVAL Todyl Deployment'
-keywords: ['Todyl','Agent','Windows','Deployment']
+keywords: ['todyl','agent','windows','deployment']
 description: 'Custom Field for install/unintall todyl solution. '
 tags:  ['windows']
 draft: false
@@ -23,7 +23,7 @@ Custom Field to install/unintall todyl solution. Select OS to enable auto-deploy
 
 ## Dependencies
 
-- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+- [Solution: Todyl Agent Manager](/docs/01e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Custom Field Creation
 

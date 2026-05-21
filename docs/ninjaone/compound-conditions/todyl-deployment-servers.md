@@ -1,9 +1,9 @@
 ---
 id: 'ffa0e6db-0345-493f-a7aa-2566c551880e'
 slug: /ffa0e6db-0345-493f-a7aa-2566c551880e
-title: 'Todyl Deployment'
-title_meta: 'Todyl Deployment'
-keywords: ['Todyl','Agent','Windows','Deployment']
+title: 'Todyl Deployment - Servers'
+title_meta: 'Todyl Deployment - Servers'
+keywords: ['todyl','agent','windows','deployment']
 description: 'Triggers the `Todyl Deployment` automation on Windows servers where deployment is enabled.'
 tags:  ['windows']
 draft: false
@@ -24,7 +24,7 @@ Triggers the [Todyl Deployment](/docs/3ed0cf6e-1e51-419e-8fd3-5d689ef6f629) auto
 
 ## Dependencies
 
-- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+- [Solution: Todyl Agent Manager](/docs/01e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Compound Condition Creation 
 

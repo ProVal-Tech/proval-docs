@@ -3,7 +3,7 @@ id: '5b111cc6-38fc-4197-848f-fe0f74bc5794'
 slug: /5b111cc6-38fc-4197-848f-fe0f74bc5794
 title: 'Uninstall Todyl'
 title_meta: 'Uninstall Todyl'
-keywords: ['Todyl','Agent','Windows','Deployment']
+keywords: ['todyl','agent','windows','deployment']
 description: 'Triggers the `Todyl Uninstaller` automation on Windows servers/workstations where uninstallation is enabled.'
 tags:  ['windows']
 draft: false
@@ -24,7 +24,7 @@ Triggers the [Todyl Uninstaller](/docs/f4086020-bdd6-498d-adac-2eeacfbd6ed9) aut
 
 ## Dependencies
 
-- [Solution - Todyl Agent Manager](/docs/1e0e3c8-adc5-4035-84d5-9266e5af0760)
+- [Solution: Todyl Agent Manager](/docs/01e0e3c8-adc5-4035-84d5-9266e5af0760)
 
 ## Compound Condition Creation 
 
