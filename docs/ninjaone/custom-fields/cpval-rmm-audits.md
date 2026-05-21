@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-This custom field stores the remote management applications list.
+This custom field stores the remote management applications list gathered by the script [Installed Remote Tools Audit](/docs/8111fecc-61de-4c72-933c-b719351b7a1e).
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-| cPVAL RMM Audits | cpvalRmmAudits | `Device` | WYSIWYG | False |  | Read Only | Read/Write | Read/Write | This custom field stores the remote management applications list. |  |  | Audit Information |
+| cPVAL RMM Audits | cpvalRmmAudits | `Device` | WYSIWYG | False |  | Read Only | Read/Write | Read/Write | This custom field stores the remote management applications list. | List of remote management applications installed on the device, collected via 'Installed Remote Tool Audits' script. | List of remote management applications installed on the device, collected via 'Installed Remote Tool Audits' script. | Audit Information |
 
 ## Dependencies
 
