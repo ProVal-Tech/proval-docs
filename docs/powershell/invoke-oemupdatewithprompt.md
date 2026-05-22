@@ -38,7 +38,7 @@ No manual pre-configuration is needed. All dependencies are bootstrapped by the 
 
 - [Prompter](/docs/aba254a9-e917-481d-9152-ecb6e990d98c)
 - [Optimize-DotNetRunTime](/docs/6ec8fb3c-29ef-4b05-b8fd-546eb07176c7)
-- [Initiaize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
+- [Initialize-DellCommandUpdate](/docs/aa963f3d-f149-4bfa-8fdc-30f12c21ce7f)
 - [Initialize-HPImageAssistant](/docs/92b749f0-2e30-4d4d-8916-fb5f30d85bff)
 - [Install-LenovoUpdates](/docs/3640e534-d089-4304-89ba-68d3bc113978)
 - [Install-WindowsUpdates](/docs/3ccc8542-1961-4d3f-a54b-4a1bb9a78edd)
