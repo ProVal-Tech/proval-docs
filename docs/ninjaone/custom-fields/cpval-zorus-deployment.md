@@ -3,8 +3,8 @@ id: '4e8f3cb1-f05c-46a2-9cf3-1ae0170f0cd3'
 slug: /4e8f3cb1-f05c-46a2-9cf3-1ae0170f0cd3
 title: 'cPVAL Zorus Deployment'
 title_meta: 'cPVAL Zorus Deployment'
-keywords: ['Zorus','Agent','Windows','Deployment']
-description: 'Custom Field to install/unintall Zorus Agent.'
+keywords: ['zorus','agent','windows','deployment']
+description: 'Custom Field to install/uninstall Zorus Agent.'
 tags:  ['windows']
 draft: false
 unlisted: false
@@ -14,13 +14,13 @@ last_update:
 
 ## Summary
 
-Custom Field to install/unintall Zorus Agent. Select OS to enable auto-deployment of Zorus agent. Select Uninstall to uninstall Zorus if its already installed on the machines.
+Custom Field to install/uninstall Zorus Agent. Select OS to enable auto-deployment of Zorus agent. Select `Uninstall` to uninstall Zorus if it is already installed on the machines.
 
 ## Details
 
 | Label | Field Name | Definition Scope | Type | Required | Dropdown options |Default Value | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |  Custom Field Tab Name |
 | ----- | ---- | ---------------- | ---- | -------- | ------------- |-----| --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ----------- |
-|cPVAL Zorus Deployment|cpvalZorusDeployment| Organization/Location/Device | drop-down | True(For Auto Deployment or Removal) | `Disabled`, `Windows`, `Windows Servers`, `Windows Workstations`, `Uninstall` | `Disabled` | Editable | Read/Write| Read/Write | Select OS to enable auto-deployment of Zorus agent. Select Uninstall to uninstall Zorus if its already installed on the machines.|Select OS to enable auto-deployment of Zorus agent. Select Uninstall to uninstall Zorus if its already installed on the machines.|Select OS to enable auto-deployment of Zorus agent. Select Uninstall to uninstall Zorus if its already installed on the machines.| Zorus Deployment |
+|cPVAL Zorus Deployment|cpvalZorusDeployment| Organization/Location/Device | drop-down | True(For Auto Deployment or Removal) | `Disabled`, `Windows`, `Windows Servers`, `Windows Workstations`, `Uninstall` | `Disabled` | Editable | Read/Write| Read/Write | Select OS to enable auto-deployment of Zorus agent. Select Uninstall to uninstall Zorus if its already installed on the machines.|Select OS to enable auto-deployment of Zorus agent. Select 'Uninstall' to uninstall Zorus if its already installed on the machines.|Select OS to enable auto-deployment of Zorus agent. Select 'Uninstall' to uninstall Zorus if its already installed on the machines.| Zorus Deployment |
 
 ## Dependencies
 

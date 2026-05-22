@@ -3,7 +3,7 @@ id: 'cf3c9ade-4a3b-42b5-9a79-13235dde86ee'
 slug: /cf3c9ade-4a3b-42b5-9a79-13235dde86ee
 title: 'Zorus Deployment Workstations'
 title_meta: 'Zorus Deployment Workstations'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'Triggers the `Zorus Deployment` automation on Windows workstations where deployment is enabled.'
 tags:  ['windows']
 draft: false

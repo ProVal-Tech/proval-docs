@@ -3,7 +3,7 @@ id: 'da444ba9-ae51-48f8-8913-35f206579b04'
 slug: /da444ba9-ae51-48f8-8913-35f206579b04
 title: 'Zorus Deployment'
 title_meta: 'Zorus Deployment'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'This script automates the deployment of the Zorus agent across Windows machines by downloading the required installer, executing the installation silently, and verifying that the agent is successfully installed.'
 tags:  ['windows']
 draft: false
@@ -18,9 +18,11 @@ This script automates the deployment and update of the Zorus (Archon Agent) acro
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/samplerun1.webp)
 
 Search and select `Zorus Deployment`
+
 ![SampleRun1](../../../static/img/docs/da444ba9-ae51-48f8-8913-35f206579b04/image1.webp)
 
 

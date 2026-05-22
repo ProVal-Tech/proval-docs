@@ -3,7 +3,7 @@ id: '8e9cb6d7-76ed-41b1-999b-e7178007c77b'
 slug: /8e9cb6d7-76ed-41b1-999b-e7178007c77b
 title: 'Uninstall Zorus Agent'
 title_meta: 'Uninstall Zorus Agent'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'This script automates the uninstallation of the Zorus agent (Archon Agent) across Windows machines by downloading the official removal tool, executing it silently, and handling retries and fallback download methods'
 tags:  ['windows']
 draft: false
@@ -19,6 +19,7 @@ This script automates the uninstallation of the Zorus agent (Archon Agent) acros
 ## Sample Run
 
 `Play Button` > `Run Automation` > `Script`  
+
 ![SampleRun1](../../../static/img/docs/8e9cb6d7-76ed-41b1-999b-e7178007c77b/image1.webp)
 
 ## Dependencies

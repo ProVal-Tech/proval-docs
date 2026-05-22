@@ -3,7 +3,7 @@ id: '65acbc53-b954-4c02-b397-9d4c641e759c'
 slug: /65acbc53-b954-4c02-b397-9d4c641e759c
 title: 'Zorus Deployment Servers'
 title_meta: 'Zorus Deployment Servers'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'Triggers the `Zorus Deployment` automation on Windows servers where deployment is enabled.'
 tags:  ['windows']
 draft: false
@@ -20,7 +20,7 @@ Triggers the [Zorus Deployment](/docs/da444ba9-ae51-48f8-8913-35f206579b04) auto
 
 - **Name:** `Zorus Deployment`
 - **Description:** `Triggers the 'Zorus Deployment' automation on Windows servers where deployment is enabled.`
-- **Recommended Agent Policies:** `Windows Workstations`
+- **Recommended Agent Policies:** `Windows Servers`
 
 ## Dependencies
 

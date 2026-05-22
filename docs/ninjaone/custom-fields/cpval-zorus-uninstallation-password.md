@@ -3,7 +3,7 @@ id: 'a5be5729-cb20-4ab6-834e-d18d361cee97'
 slug: /a5be5729-cb20-4ab6-834e-d18d361cee97
 title: 'cPVAL Zorus Uninstallation Password'
 title_meta: 'cPVAL Zorus Uninstallation Password'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'Zorus agent uninstallation password'
 tags: ['windows']
 draft: false
@@ -20,7 +20,7 @@ last_update:
 
 | Label                               | Field Name                       | Definition Scope | Type | Required | Default Value | Technician Permission | Automation Permission | API Permission | Description                                                                                                                                                                                     | Tool Tip | Footer Text | Custom Field Tab Name |
 | ----------------------------------- | -------------------------------- | ---------------- | ---- | -------- | ------------- | --------------------- | --------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- | --------------------- |
-| cPVAL Zorus Uninstallation Password | cpvalZorusUninstallationPassword | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Zorus agent uninstallation password. To utilize this feature set this variable to your desired password. Only use this feature if you have a secure way to store/remember the desired password. | -        | -           | Zorus Deployment      |
+| cPVAL Zorus Uninstallation Password | cpvalZorusUninstallationPassword | Organization     | Text | Yes      | -             | Editable              | Read/Write            | Read/Write     | Zorus agent uninstallation password. To utilize this feature set this variable to your desired password. Use this feature only when you have a secure way to store/remember the desired password. | Provide the Zorus agent uninstallation password.       |  Provide the Zorus agent uninstallation password. Use this feature only when you have a secure way to store/remember the desired password.           | Zorus Deployment      |
 
 ## Dependencies
 

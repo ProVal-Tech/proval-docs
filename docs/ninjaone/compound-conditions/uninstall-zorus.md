@@ -3,7 +3,7 @@ id: '0b345a9b-c5ef-4f3b-8f47-cc87a736432a'
 slug: /0b345a9b-c5ef-4f3b-8f47-cc87a736432a
 title: 'Uninstall Zorus'
 title_meta: 'Uninstall Zorus'
-keywords: ['Zorus','Agent','Windows','Deployment']
+keywords: ['zorus','agent','windows','deployment']
 description: 'Triggers the `Uninstall Zorus Agent` automation on Windows servers where deployment is enabled.'
 tags:  ['windows']
 draft: false
