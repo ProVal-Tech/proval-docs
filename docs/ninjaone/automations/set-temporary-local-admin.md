@@ -16,7 +16,14 @@ last_update:
 
 Use this automation to give a user temporary local administrator access on a Windows device. The access is removed automatically either after a set number of minutes or at the user's next sign-in.
 
-Leave **Username Override** blank to target the user who is currently signed in. If no user is signed in and the field is left blank, the automation stops without making changes. If the selected user is already a local administrator, the automation also stops without changing anything.
+**Username Override** accepts three formats:
+- **Bare username** (e.g., `jsmith`) for local user accounts
+- **Domain-prefixed** (e.g., `CONTOSO\jsmith`) for Active Directory users
+- **Azure AD-prefixed** (e.g., `AzureAD\jsmith`) for Azure AD joined machines
+
+For Azure AD joined machines, enter the full `AzureAD\username` value.
+
+Leave **Username Override** blank to target the currently signed-in user. If no user is signed in, the automation stops without making changes. If the selected user is already a local administrator, the automation also stops without making changes.
 
 Choose **Time Limit** carefully:
 
@@ -46,6 +53,7 @@ Keep these points in mind before you run it:
 - If the user is already signed in, ask them to sign out and sign back in if you want Windows to fully apply the new admin access to that session.
 - Turn on **Log Off** when you want admin access fully cleared at the end of the temporary access window.
 - Leave **Username Override** blank only when you are sure the correct user is currently signed in.
+- For Azure AD joined machines, use the `AzureAD\username` format to ensure proper identity resolution.
 - If the user is already a local administrator, this automation does not refresh or extend their access.
 
 ## Sample Run
@@ -77,20 +85,27 @@ Keep these points in mind before you run it:
 
 ![Image3](../../../static/img/docs/31c49d65-3b5a-43bc-a245-22234ec2937c/image3.webp)
 
-### Example 4: Grant admin for 60 minutes and log the user off when access is revoked
+### Example 4: Grant Azure AD user admin for 60 minutes and log the user off when access is revoked
 
-- **Username Override:** `jsmith`  
+- **Username Override:** `AzureAD\jsmith`  
 - **Time Limit:** `60`  
 - **What If:** `false`  
 - **Log Off:** `true`  
 
-![Image4](../../../static/img/docs/31c49d65-3b5a-43bc-a245-22234ec2937c/image4.webp)
+![Image4](../../../static/img/docs/31c49d65-3b5a-43bc-a245-22234ec2937c/image6.webp)
+
+### Example 5: Grant domain user admin for 90 minutes
+
+- **Username Override:** `CONTOSO\jsmith`  
+- **Time Limit:** `90`  
+- **What If:** `false`  
+- **Log Off:** `false`  
 
 ## Parameters
 
 | Name | Example | Accepted Values | Required | Default | Type | Description |
 | ---- | ------- | --------------- | -------- | ------- | ---- | ----------- |
-| Username Override | jsmith | Blank, local username, or domain-prefixed username | No | Blank | String/Text | Selects the user to receive temporary admin rights. Leave blank to use the currently signed-in user. Domain prefixes are accepted, but only the username is used. |
+| Username Override | AzureAD\jsmith | Blank, bare username, DOMAIN\username, or AzureAD\username | No | Blank | String/Text | Selects the user to receive temporary admin rights. Leave blank to use the currently signed-in user. For Azure AD joined machines, use the AzureAD\username format. Domain prefixes are preserved for proper identity resolution. |
 | Time Limit | 60 | `NextLogon` or any whole number `1` or higher | No | `NextLogon` | String/Text | Controls when admin rights are removed. Use a number for a timed access window, or `NextLogon` to remove access at the next sign-in. |
 | What If | true | `true` or `false` | No | `false` | Checkbox | Preview mode. Shows which user would be targeted and when access would be removed, without changing group membership or creating a scheduled task. |
 | Log Off | true | `true` or `false` | No | `false` | Checkbox | Signs the user out when admin rights are removed. Use this when you want elevated access fully cleared at the end of the temporary access window. |
@@ -107,7 +122,20 @@ Keep these points in mind before you run it:
 
 ### What happens if I leave Username Override blank?
 
-> The automation uses the user who is currently signed in. If no interactive user is signed in, the automation stops and makes no changes.
+> The automation uses the user who is currently signed in. The script automatically detects and preserves the full identity (including any `AzureAD\` or domain prefix) from the logged-in session. If no interactive user is signed in, the automation stops and makes no changes.
+
+### How should I format the username for Azure AD joined machines?
+
+> For Azure AD joined machines, use the full `AzureAD\username` format (e.g., `AzureAD\jsmith`). This ensures the script can properly resolve the identity when adding or removing the user from the Administrators group. The script preserves this full prefixed identity throughout the automation process.
+
+### What username formats are accepted?
+
+> The automation accepts three formats:
+> - **Bare username** (e.g., `jsmith`) for local user accounts
+> - **Domain-prefixed** (e.g., `CONTOSO\jsmith`) for Active Directory users  
+> - **Azure AD-prefixed** (e.g., `AzureAD\jsmith`) for Azure AD joined machines
+>
+> When a domain prefix is present, the full prefixed identity is used for group operations while the bare username is used for display and task naming.
 
 ### Will the user become a full admin immediately?
 
@@ -134,6 +162,10 @@ Keep these points in mind before you run it:
 > Yes. Removing a user from the Administrators group does not end already-open elevated sessions by itself. **Log Off** forces the user to sign out so temporary elevated access is fully cleared.
 
 ## Changelog
+
+### 2026-05-19
+
+- Added support for domain-prefixed and Azure AD-prefixed username formats for proper identity resolution on Azure AD joined machines.
 
 ### 2026-04-23
 
