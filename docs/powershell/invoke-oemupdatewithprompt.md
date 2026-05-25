@@ -9,7 +9,7 @@ tags: ['windows', 'dell', 'lenovo', 'hp', 'notifications', 'drivers', 'bios', 'f
 draft: false
 unlisted: false
 last_update:
-  date: 2026-05-19
+  date: 2026-05-25
 ---
 
 ## Overview
@@ -407,6 +407,10 @@ Scheduled_Task_Invoke-OEMUpdatePrompt_Reschedule (Self-rescheduling task - runs 
 ![Image8](../../static/img/docs/52c50165-38d5-4793-b751-97260ab31f72/image8.webp)  
 
 ## Changelog
+
+### 2026-05-25
+
+- Fixed a bug with the logic used to convert an array to string
 
 ### 2026-05-13
 
