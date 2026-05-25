@@ -9,7 +9,7 @@ tags: ['installation', 'networking', 'security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-12-11
+  date: 2026-05-21
 ---
 
 ## Overview
@@ -40,6 +40,10 @@ Compares the number of installed `Cisco Secure Client` modules with the number o
 - Activity Details
 
 ## Changelog
+
+### 2026-05-21
+
+- Fixed the logic to check the selected modules count
 
 ### 2025-11-17
 
