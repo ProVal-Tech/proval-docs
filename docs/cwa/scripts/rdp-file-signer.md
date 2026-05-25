@@ -163,6 +163,10 @@ Check these logs for details about which files were signed and whether any error
 
 **A:** Yes. Provide the certificate path in SignaturePath (UNC path, local path, or URL) and the password title in PfxPasswordTitle. The script downloads or imports the certificate and uses it to sign RDP files.
 
+**Q: Will the script create a new self-signed certificate every time it runs?**
+
+**A:** No. The script reuses the same valid certificate on that device for future runs. A new self-signed certificate is created only if the existing certificate has expired or if you change the ProviderName value.
+
 **Q: I am storing the PFX file on a file server. What permissions do I need to set?**
 
 **A:** The script runs in the SYSTEM context, so the file server share must grant read access to the SYSTEM account. Share the certificate folder with either `NT AUTHORITY\SYSTEM` or `Everyone` so the device can download or access the certificate file. Do not restrict permissions to domain users only, as the system account will not be able to read the file.
