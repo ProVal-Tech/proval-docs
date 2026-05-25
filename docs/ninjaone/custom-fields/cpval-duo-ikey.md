@@ -9,7 +9,7 @@ tags: ['security', 'software']
 draft: false
 unlisted: false
 last_update:
-  date: 2025-05-07
+  date: 2026-05-25
 ---
 
 ## Summary
@@ -18,86 +18,27 @@ This is a unique identifier for your integration with Duo’s service. It’s us
 
 ## Details
 
-| Label | Field Name | Definition Scope | Type | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text |
-| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- |
-| cPVAL DUO IKEY | cpvalDuoIkey | Organization | Text | False | Editable | Read/Write | Read/Write | This is a unique identifier for your integration with Duo’s service. It’s used to link the authentication requests from your application to the correct Duo account. | Provide the integration key from the Duo Admin Panel. | DUO IKEY |
+| Label | Field Name | Definition Scope | Type | Required  | Technician Permission | Automation Permission | API Permission | Description | Tool Tip | Footer Text | Custom Field Tab Name |
+| ----- | ---------- | ---------------- | ---- | --------- | --------------------- | --------------------- | -------------- | ----------- | -------- | ----------- | ------- |
+| cPVAL DUO IKEY | cpvalDuoIkey | Organization | Text | False | Editable | Read/Write | Read/Write | This is a unique identifier for your integration with Duo’s service. It’s used to link the authentication requests from your application to the correct Duo account. | Provide the integration key from the Duo Admin Panel. | DUO IKEY | DUO | 
+
+## Dependencies
+
+- [Solution - Duo Deployment](/docs/a11cd829-a491-4cb1-a7c1-3f56fa8c7557)
 
 ## Custom Field Creation
 
-### Step 1
+- [Custom Field Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/custom-fields/cpval-duo-Ikey.toml)
 
-Navigate to the `Administration` menu, then proceed to `Devices` and select `Global Custom Fields`.  
-![Step1](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/step1.webp)
-
-### Step 2
-
-Locate the `Add` button on the right-hand side of the screen and click on it.  
-![AddButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/addbutton.webp)  
-
-### Step 3
-
-After clicking the `Add` button, select the `Field` button that appears.  
-![FieldButton](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/fieldbutton.webp)
-
-The following Pop-up screen will appear:  
-![InitialCustomFieldPopup](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/initialcustomfieldpopup.webp)
-
-### Step 4
-
-**Custom Field Type:** `Text`
-
-Select `Text` for the `Custom field type` and click `Continue` to proceed.  
-![Text](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/text.webp)
-
-The following Pop-up screen will appear:  
-![Overview](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/overview.webp)
-
-### Step 5
-
-Set the following details in the `Overview` section and click the `Next` button.
-
-**Label:** `cPVAL DUO IKEY`  
-**Name:** `cpvalDuoIkey`  
-**Definition Scope:** `Organization`  
-**Custom field is required:** `<Leave it unchecked>`
+## Sample Screenshot
 
 ![Image1](../../../static/img/docs/ca460823-862e-4c38-8a30-72474f2b1b5a/image1.webp)
 
-Clicking the `Next` button will take you to the `Permission` section.  
-![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/permissions.webp)
-
-### Step 6
-
-Set the following details in the `Permission` section and click the `Next` button.  
-
-**Technician:** `Editable`  
-**Automation:** `Read/Write`  
-**API:** `Read/Write`
-
-![Permission](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/genericpermissions.webp)
-
-Clicking the `Next` button will take you to the details tab.  
-![Details](../../../static/img/docs/3ce9e690-2bf1-4e78-9e66-04960f3f1b25/details.webp)
-
-### Step 7
-
-Fill in the following information in the `Details` section and click the `Create` button to create the `Custom Field`.
-
-**Description:** `This is a unique identifier for your integration with Duo’s service. It’s used to link the authentication requests from your application to the correct Duo account.`  
-**Tooltip Text:** `Provide the integration key from the Duo Admin Panel.`  
-**Footer Text:** `DUO IKEY`
-
-![Image2](../../../static/img/docs/ca460823-862e-4c38-8a30-72474f2b1b5a/image2.webp)
-
-## Completed Custom Field
-
-![Image3](../../../static/img/docs/ca460823-862e-4c38-8a30-72474f2b1b5a/image4.webp)
-
-## Example
-
-![Image4](../../../static/img/docs/ca460823-862e-4c38-8a30-72474f2b1b5a/image3.webp)
-
 ## Changelog
+
+### 2026-05-25
+
+* Updated the documentation to align with the new documentation format and standards.
 
 ### 2025-04-14
 

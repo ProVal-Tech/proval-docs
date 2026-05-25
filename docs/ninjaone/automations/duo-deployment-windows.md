@@ -36,6 +36,7 @@ Set the required arguments and click the `Run` button to run the script.
 
 ## Dependencies
 
+- [Solution - Duo Deployment](/docs/a11cd829-a491-4cb1-a7c1-3f56fa8c7557)
 - [cPVAL DUO IKEY](/docs/ca460823-862e-4c38-8a30-72474f2b1b5a)  
 - [cPVAL DUO SKEY](/docs/868d35d1-fe4e-4e65-b7a5-7661d0d33405)  
 - [cPVAL DUO HKEY](/docs/b8a5b5bd-a7fe-4cd5-aae4-81a25a0be7fa)  
@@ -53,18 +54,6 @@ Set the required arguments and click the `Run` button to run the script.
 ## Automation Setup/Import
 
 [Automation Configuration](https://github.com/ProVal-Tech/ninjarmm/blob/main/scripts/duo-deployment-windows.ps1)
-
-## Saving the Automation
-
-Click the `Save` button in the top-right corner of the screen to save your automation.  
-![SaveButton](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/savebutton.webp)
-
-You will be prompted to enter your MFA code. Provide the code and press the Continue button to finalize the process.  
-![MFA](../../../static/img/docs/b97b3d2c-ecc6-42ff-9236-36b14765c9b7/mfa.webp)
-
-## Completed Automation
-
-![Image3](../../../static/img/docs/3cc5e786-f5bd-4a86-85c6-89278fccaa65/image3.webp)
 
 ## Output
 
