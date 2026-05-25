@@ -9,17 +9,20 @@ tags: ['setup', 'windows']
 draft: false
 unlisted: false
 last_update:
-  date: 2026-04-30
+  date: 2026-05-22
 ---
 
 ## Summary
 
 This script is designed to establish a remote monitoring system for Windows computers, specifically focusing on tracking CPU temperature. The script utilizes the [**`CPUTempMon`**](/docs/63c35c04-4327-45d0-a249-202cf6c67088) tool to monitor CPU temperatures and generate alerts if any sensor consistently records temperatures exceeding the permissible limit.
 
+> PawnIO application is required to use CPUTempMon.
+> Script will install the latest version of PawnIO if missing.
+> Download Url: https://github.com//namazso/PawnIO.Setup/releases/latest/download/PawnIO_Setup.exe
+
 ## Dependencies
 
 - [CPUTempMon](/docs/63c35c04-4327-45d0-a249-202cf6c67088)
-- [Script - Winget - Install/Update [Autofix,Param]](/docs/dd445ce7-a149-452c-9b35-dc1adbab4e06)
 - [Solution - CPU Temperature Monitoring](/docs/cbd87b6f-563f-4fbb-82cf-2861c671f250)
 
 ## Sample Run
@@ -83,6 +86,10 @@ This script is designed to establish a remote monitoring system for Windows comp
 - Remote Monitor
 
 ## Changelog
+
+### 2026-05-22
+
+- Updated the script to deploy PawnIO via a standalone PowerShell script instead of Winget.
 
 ### 2026-04-30
 
