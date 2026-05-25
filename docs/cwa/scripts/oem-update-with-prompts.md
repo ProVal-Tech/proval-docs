@@ -133,10 +133,10 @@ Expected output:
 | Name | Example | Required | Description |
 | --- | --- | --- | --- |
 | Set_Environment | 1 | True (first run only) | Set to 1 on first run to create required system properties and client-level EDF definitions. |
-| Force | 1 | False | Highest-priority runtime switch. Resets prompt state and recreates scheduled task workflow. |
-| UsePsWindowsUpdate | 1 | False | Highest-priority runtime switch. Uses PSWindowsUpdate path instead of OEM-specific update tools. |
-| IfNotLoggedIn | 1 | False | Highest-priority runtime switch. If no user is logged in, runs update without prompt. |
-| HandleBitLocker | 1 | False | Highest-priority runtime switch. Suspends BitLocker before update execution. |
+| Force | 1 | False | Highest-priority runtime switch. Accepts 0 or 1. Set to 1 to reset prompt state and recreate scheduled task workflow. Set to 0 (or leave blank) for normal behavior. |
+| UsePsWindowsUpdate | 1 | False | Highest-priority runtime switch. Accepts 0 or 1. Set to 1 to use PSWindowsUpdate instead of OEM-specific update tools. Set to 0 to use OEM-specific tools. |
+| IfNotLoggedIn | 0 | False | Highest-priority runtime switch. Accepts 0 or 1. Set to 1 to run updates without prompting when no user session is active. Set to 0 to wait for a logged-in user so prompts can be shown. |
+| HandleBitLocker | 1 | False | Highest-priority runtime switch. Accepts 0 or 1. Set to 1 to suspend BitLocker before update execution. Set to 0 to leave BitLocker handling unchanged. |
 
 ## System Properties
 
@@ -148,10 +148,10 @@ Expected output:
 | OUWP_FinalPromptTimeoutSeconds | 900 | 900 | True | Default timeout for the final scheduling prompt. |
 | OUWP_DelayAfterFinalPromptSeconds | 900 | 600 | True | Default delay before forced execution after final timeout. |
 | OUWP_SuppressPopupTimeWindows | blank | 1800-0900 | False | Optional suppress window in HHmm-HHmm format, for example 1800-0900. |
-| OUWP_SkipWeekends | 0 | 1 | False | Optional weekend suppression switch. |
-| OUWP_IfNotLoggedIn | 1 | 1 | False | Default unattended behavior when no user is logged in. Can be overridden at runtime. |
-| OUWP_UsePsWindowsUpdate | 0 | 1 | False | Default update path selection. Can be overridden at runtime. |
-| OUWP_HandleBitLocker | 0 | 1 | False | Default BitLocker handling behavior. Can be overridden at runtime. |
+| OUWP_SkipWeekends | 0 | 1 | False | Optional switch that accepts 0 or 1. Set to 1 to skip prompts/updates on weekends. Set to 0 to allow weekend processing. |
+| OUWP_IfNotLoggedIn | 1 | 0 | False | Default unattended behavior switch that accepts 0 or 1. Set to 1 to continue when no user is logged in. Set to 0 to wait for an active user session. Can be overridden at client EDF or runtime. |
+| OUWP_UsePsWindowsUpdate | 0 | 1 | False | Default update path switch that accepts 0 or 1. Set to 1 to use PSWindowsUpdate. Set to 0 to use OEM update tools. Can be overridden at client EDF or runtime. |
+| OUWP_HandleBitLocker | 0 | 1 | False | Default BitLocker switch that accepts 0 or 1. Set to 1 to suspend BitLocker before updates. Set to 0 to leave BitLocker handling unchanged. Can be overridden at client EDF or runtime. |
 | OUWP_Icon | https://%redirhostname%/WCC2/Utilities/HeaderImage | https://example.com/icon.png | False | Optional icon source for prompt window. |
 | OUWP_HeaderImage | https://%redirhostname%/WCC2/Utilities/HeaderImage | https://example.com/header.png | False | Optional header image source for prompt window. |
 
@@ -169,10 +169,10 @@ All EDF names below are created in the section OEM Update With Prompts and overr
 | OUWP_FinalPromptTimeoutSeconds | Text | OEM Update With Prompts | 900 | Overrides OUWP_FinalPromptTimeoutSeconds for this client. |
 | OUWP_DelayAfterFinalPromptSeconds | Text | OEM Update With Prompts | 600 | Overrides OUWP_DelayAfterFinalPromptSeconds for this client. |
 | OUWP_SuppressPopupTimeWindows | Text | OEM Update With Prompts | 1800-0900 | Overrides OUWP_SuppressPopupTimeWindows for this client when format is valid. |
-| OUWP_SkipWeekends | Check-Box | OEM Update With Prompts | Marked | Overrides OUWP_SkipWeekends for this client. |
-| OUWP_IfNotLoggedIn | Check-Box | OEM Update With Prompts | Marked | Overrides OUWP_IfNotLoggedIn unless runtime parameter is provided. |
-| OUWP_UsePsWindowsUpdate | Check-Box | OEM Update With Prompts | Marked | Overrides OUWP_UsePsWindowsUpdate unless runtime parameter is provided. |
-| OUWP_HandleBitLocker | Check-Box | OEM Update With Prompts | Marked | Overrides OUWP_HandleBitLocker unless runtime parameter is provided. |
+| OUWP_SkipWeekends | Text | OEM Update With Prompts | 1 | Accepts 0 or 1 for this client. Set to 1 to skip weekend processing for this client only. Set to 0 to allow weekend processing. |
+| OUWP_IfNotLoggedIn | Text | OEM Update With Prompts | 0 | Accepts 0 or 1 for this client. Set to 1 to run when no user is logged in. Set to 0 to wait for a logged-in user. Overrides system property unless runtime parameter is provided. |
+| OUWP_UsePsWindowsUpdate | Text | OEM Update With Prompts | 1 | Accepts 0 or 1 for this client. Set to 1 to use PSWindowsUpdate. Set to 0 to use OEM update tools. Overrides system property unless runtime parameter is provided. |
+| OUWP_HandleBitLocker | Text | OEM Update With Prompts | 0 | Accepts 0 or 1 for this client. Set to 1 to suspend BitLocker before updates. Set to 0 to leave BitLocker handling unchanged. Overrides system property unless runtime parameter is provided. |
 | OUWP_Icon | Text | OEM Update With Prompts | https://example.com/icon.png | Overrides OUWP_Icon for this client. |
 | OUWP_HeaderImage | Text | OEM Update With Prompts | https://example.com/header.png | Overrides OUWP_HeaderImage for this client. |
 
@@ -240,6 +240,36 @@ Recommended vendor-specific solutions:
 - [Dell Command Update Handler](/docs/5c6d840b-852a-41df-a5e2-08d7d7af564a)
 - [HP Image Assistant Handler](/docs/ddf20590-a18c-43f2-9e14-4ce2606187bc)
 - [Lenovo System Update Handler](/docs/d801eded-6c8e-413b-852a-5ff83058667b)
+
+**Q: Which value wins if the same switch exists in runtime parameter, client EDF, and system property?**
+
+**A:** Priority is runtime parameter, then client EDF, then system property.
+
+Example with `IfNotLoggedIn`:
+
+- System property `OUWP_IfNotLoggedIn = 1`
+- Client EDF `OUWP_IfNotLoggedIn = 1`
+- Runtime `IfNotLoggedIn = 0`
+
+Result: runtime value `0` wins for that run.
+
+If runtime is not provided, client EDF wins. If neither runtime nor EDF is provided, system property is used.
+
+**Q: Can I allow unattended installs for all clients, but block unattended installs for one specific client?**
+
+**A:** Yes.
+
+Set global system property `OUWP_IfNotLoggedIn = 1` to allow unattended installs by default.
+Then set that specific client EDF `OUWP_IfNotLoggedIn = 0` to require a logged-in user for that client.
+Do not pass runtime `IfNotLoggedIn = 1` for that execution, because runtime overrides both EDF and property.
+
+**Q: If `IfNotLoggedIn` is enabled and no user is logged in when the next prompt cycle runs, what happens?**
+
+**A:** The script does not wait for another prompt. It starts the update workflow unattended.
+
+**Q: What if `IfNotLoggedIn` is disabled and no one is logged in at that time?**
+
+**A:** The script does not start unattended updates. It waits for a logged-in session so prompts can be shown according to the configured cycle.
 
 ## Changelog
 
